@@ -40,7 +40,7 @@ Every world is open. Pick one and play.
 Don't see what you want? Just say "custom world" (`自定义世界`), name the year and the place, and one is made for you on the spot.
 
 <details>
-<summary><b>See all 90 worlds at a glance (click to open)</b></summary>
+<summary><b>See all 105 worlds at a glance (click to open)</b></summary>
 <br>
 
 | World | In one line |
@@ -135,6 +135,21 @@ Don't see what you want? Just say "custom world" (`自定义世界`), name the y
 | Inquisition Cell (裁判所死牢) | Three hours before the pyre, a young jailer locks the cell from inside and picks the genius witch's anti-magic collar with a mithril needle. |
 | Storm Yacht Citadel (风暴游艇密室) | A typhoon on open sea, the security chief mutinies; the arms heiress and her bodyguard wait in the panic room for the torch to burn through. |
 | Blackout Server Hall (断电机房) | Halon floods a cold aisle under the polar night; the genius hacker and the duty engineer take turns on one gas mask. |
+| Mountain Shrine Slide (山崩神龛) | A mudslide twists an old mountain shrine; a bronze altar pins the head miko's chihaya, and the rite cannot stop. |
+| Blackout Fencing Hall (断电剑馆) | A typhoon kills the power in an underground fencing hall; the falling scoreboard pins the foil champion's leg guard, one lunge from her rival. |
+| Snowpeak Broken Bridge (雪峰断桥) | An avalanche snaps the fortress bridge; the retired knight-commander's plate wedges in the rock with a refugee caravan behind her. |
+| Taisho Mansion (大正洋馆) | On the eve of bankruptcy seizure, a falling camphor bookcase pins the noble heiress's furisode, with the land deed underneath it. |
+| Opera Understage (歌剧院地下) | Premiere night at the Paris Opera; the steam fly-bridge jams below the stage and the prima ballerina's costume is caught in the gears. |
+| Ice Vault Cello (冰窖琴库) | The Paris concert hall's 70th gala; a thunderstorm cuts the power, the ice-vault door bites the principal cellist's gown, and the bells keep ringing. |
+| Plum-Rain Library (梅雨藏书楼) | Floodwater fills a family library; a rosewood screen pins the archivist's skirt as the water creeps toward a Song-dynasty volume. |
+| Cold War Bunker (冷战暗堡) | Flash floods seep into a cipher room 30 m underground; the blast door clamps the chief operator's skirt as a general comes down the ladder. |
+| Waterside Tea House (水榭茶室) | Autumn rain in Arashiyama warps the tea-room door; the heir's sleeve is caught in the rail while the elders slip off their shoes outside. |
+| Ice River Hold (冰河缉私舱) | Pack ice caves in an icebreaker's hold; the undercover customs officer's boot is pinned by a beam as ice water and fuel pour in. |
+| Night Dispensary (夜诊配药厅) | Lightning trips the breakers; the negative-pressure door bites the night chief's white coat, and the review board is coming down the hall. |
+| Mecha Cockpit (机甲座舱) | An air raid drops the maintenance gantry; a two-seat cockpit hangs mid-air with the ace pilot's flight suit caught in the broken canopy latch. |
+| Abyss Lift (深渊吊篮) | Rockfall on the abyss's 99th floor tilts the lift; the exiled saint's robe catches in the winch as inquisitors' torches shine down. |
+| Hanging Monorail (悬空单轨) | A typhoon derails a river-crossing monorail; the gyaru's skirt is caught in the door arm as repair crews sweep their flashlights closer. |
+| Kagura Hall (伏魔神乐殿) | A storm brings down the bronze canopy of the demon-sealing hall; the exorcist miko's sash is pinned as reinforcements cross the corridor. |
 
 </details>
 

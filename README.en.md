@@ -175,7 +175,7 @@ Don't see what you want? Just say "custom world" (`自定义世界`), name the y
 | Cape LNG Carrier (好望角LNG船) | Day 47 at sea rounding the Cape, the cargo tank relief valve ices shut; the chief engineer and the bosun hammer the stem in minus-162-degree fog. |
 | Valley Wind Tunnel (山沟风洞) | Past midnight at an old mountain base, a Mach 10 run swells the nozzle throat; the chief designer and the base-born shift lead force the trim bolt. |
 | Seaside Launch (海边发射场) | The night market is packed with tourists before launch; at T-minus 40 the purge valve freezes, and the chief designer and the fueling lead drive a wrench into the pin. |
-| Scroll Airing Vault (晒画日字画库) | On the sixth-month painting airing, kin eye the inheritance when lightning slams the vault shut; the young mistress and the mounter pry the latch with a copper tea scoop. |
+| Scroll Airing Vault (晒画日字画库) | On the sixth-month painting airing, kin eye the inheritance when lightning slams the vault shut; the young lady of the house and the mounter pry the latch with a copper tea scoop. |
 | Admissions Night (录取夜机房) | Ten minutes before results go live at midnight, lightning trips the data center's gas system; the board chair and the night engineer pry the release with a paper ruler. |
 | Plum-Rain Bookshop (梅雨旧书肆) | A month of plum rain, the river backs up and a bookcase pins the gallery; the cataloguer and the woodworker turn the leveling nut with a brass paperweight. |
 | Storytelling Hall (开书夜书场) | The audience waits for yesterday's cliffhanger when the storm drops the stage frieze; the pingtan singer and the carpenter lever the wood pin with a tuning wrench. |

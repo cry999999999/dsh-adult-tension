@@ -40,7 +40,7 @@ Every world is open. Pick one and play.
 Don't see what you want? Just say "custom world" (`自定义世界`), name the year and the place, and one is made for you on the spot.
 
 <details>
-<summary><b>See all 150 worlds at a glance (click to open)</b></summary>
+<summary><b>See all 165 worlds at a glance (click to open)</b></summary>
 <br>
 
 | World | In one line |
@@ -195,6 +195,21 @@ Don't see what you want? Just say "custom world" (`自定义世界`), name the y
 | Storm Stable (雷雨马厩) | A proud riding heiress who bickered with the equine vet all summer gets trapped with that vet when lightning sets the hayloft ablaze. |
 | Premiere Eve Pit (首演前夜乐池) | Three days before the premiere, the young maestra and the stage machinist are stranded in a stalled orchestra pit, prying a valve in tempo. |
 | Front-Line Field Hospital (前线野战医院) | A surgeon as cold as a scalpel, one bitter coffee per ceasefire; the aid bunker caves in and the sapper lead shares the last of the air. |
+| Auction House Vault (拍卖行金库) | The chief auctioneer drops a hammer worth hundreds of millions; robbers trip the vault, a lead gate falls, and she and the vault architect pry the relief valve with her gavel. |
+| Armistice Envoy (停战使节) | A demon commander lodges in the enemy temple as truce envoy, escorted by a relic-mechanism scholar; a gravity barrier misfires and her spear butt pries the array. |
+| Tomb-Village Shrine Maiden (守陵村巫女) | The tomb village's sword shrine maiden guides a court hydraulic explorer; the underground river bursts and they pry a bronze gate chest-deep in icy water. |
+| Star Tower (观星塔) | The court astrologer and a new astronomer feud over a calendar for a season; on a snowy conjunction night the gears seize and an astrolabe needle pries the pin. |
+| Canopy Ranger (树冠游侠) | An elf ranger guides a human paleobotanist for a season; the World Tree's defenses slam shut and her mithril knife pries the ironwood door. |
+| River-Port Watergate (河港水门) | The river-port cavalry commander and the winch engineer fought all flood season; in a storm her mail hem is caught in the chain wheel as water rises past the waist. |
+| Customs Cutter Deck (缉私船甲板) | A customs cutter chases a smuggler for three days; in a storm a container hangs over the side and the ace officer and the engineer are stuck on its tilted roof. |
+| Moon-Wheel Hall (月轮大殿) | The tsundere elf princess hovers over the human scholar restoring the dome; a tremor closes the mithril petals and they bite into her armor's back clasp. |
+| Century-Old Ryokan (百年风吕旅馆) | The young proprietress of a century-old ryokan hosts a geothermal engineer for a month; a quake seals the spring and boiling water floods the cave. |
+| Ginkgo Slope Reading Hall (银杏坡图书厅) | A classics master's student and an architecture PhD surveying the old building share the reading hall for a term; a typhoon slides the shelves over the only door. |
+| Bayside Garage (湾岸改装工坊) | The cool mechanic and her test-rider partner fought all summer over a race setup; a storm jams the roll-up door forty centimeters high. |
+| Expo Main Stage (漫展主舞台) | A tsundere heiress cosplayer prints her own armor; six minutes before showtime the chestplate jams on a twelve-meter catwalk. |
+| Front-Line Chapel (前线礼拜堂) | The white cleric turns a shelled chapel crypt into an aid station; the barrier overloads and she and the knight captain pry the blast door. |
+| Diving Hall Shaft (跳水馆深井) | The synchronized-swimming champion checks the shaft lights every night; the main valve jams and she picks the latch with the engineer in icy water. |
+| Bund Vault (外滩金库) | A warlord's daughter in Republican Shanghai always asks for the Chinese chief engineer; looters seal the flooding vault and her pistol magazine pries the bolt. |
 
 </details>
 

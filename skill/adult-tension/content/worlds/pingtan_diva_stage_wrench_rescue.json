@@ -469,7 +469,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "在挂落死角紧贴木作师傅胸前，双手叠在木作师傅手背上共同握紧合金调音扳手全力下扳。",
     "dislikes": [
@@ -1193,8 +1193,7 @@
    ],
    "start_minute": 1395,
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "title": "晨间传世红木琵琶校准试音"
   },
@@ -1212,8 +1211,7 @@
    ],
    "start_minute": 1400,
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "title": "台口金丝柚木挂落除尘检视"
   },
@@ -1231,8 +1229,7 @@
    ],
    "start_minute": 1405,
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "title": "戏台立柱承重榫眼紧固保养"
   },
@@ -1303,13 +1300,64 @@
    "hook_ids": [],
    "id": "act_backstage_qipao_buttons",
    "location_ids": [
-    "loc_stage_proscenium_apron"
+    "loc_backstage_mirror_room"
    ],
    "start_minute": 1430,
    "tags": [
     "intimate"
    ],
    "title": "后台妆镜前替女先生解开旗袍盘扣"
+  },
+  {
+   "beats": [
+    "散场后的妆镜间里，女先生抱着琵琶坐在梳妆台前，旗袍的开衩里露出一截白腿，轻拨两下弦试音。",
+    "女先生抬眼一笑：今朝唱一段私房的开篇，不收书钱。……听完了，要拿别的东西来抵。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_mirror_room_private_kaipian",
+   "location_ids": [
+    "loc_backstage_mirror_room"
+   ],
+   "start_minute": 1250,
+   "tags": [
+    "intimate"
+   ],
+   "title": "只唱给一个人的开篇"
+  },
+  {
+   "beats": [
+    "女先生从老街口端回两碗小馄饨，旗袍外披了一件开衫，坐在梳妆台边，一只只吹凉了喂过来。",
+    "女先生用吴语软软地说：吃了我的馄饨，就是我的人了。……侬肯不肯？"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_mirror_room_wonton_night",
+   "location_ids": [
+    "loc_backstage_mirror_room"
+   ],
+   "start_minute": 1370,
+   "tags": [
+    "intimate"
+   ],
+   "title": "宵夜的一碗小馄饨"
+  },
+  {
+   "beats": [
+    "清晨，女先生站在妆镜间的窗前吊嗓子，素着脸，长发随便挽着，只穿一件月白色的睡衣。",
+    "吊完嗓子，女先生回头看人：嗓子开了。……今朝第一句，想唱给你听，侬要听哪段？"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_mirror_room_morning_voice",
+   "location_ids": [
+    "loc_backstage_mirror_room"
+   ],
+   "start_minute": 420,
+   "tags": [
+    "intimate"
+   ],
+   "title": "清晨吊嗓子"
   }
  ],
  "default_npc_gender_mix": {
@@ -1507,6 +1555,15 @@
    "location_ids": [],
    "slot": "diva_su_yunqing",
    "text": "{npc.name}把琵琶递过来，指着一根松动的琴轴：天一潮就松，换了几个师傅都修不好。你懂木头，帮我看看？"
+  },
+  {
+   "id": "hook_yunqing_mirror_room",
+   "kind": "approach",
+   "location_ids": [
+    "loc_backstage_mirror_room"
+   ],
+   "slot": "diva_su_yunqing",
+   "text": "{npc.name}抱着琵琶倚在妆镜间门口：前台散了。……进来，唱一段给你一个人听。"
   }
  ],
  "id": "pingtan_diva_stage_wrench_rescue",
@@ -1548,7 +1605,8 @@
    "detail": "伸入观众席中央的悬空木质古戏台前沿，上方挂落已被震落倾覆，整副长达六米、重达数百公斤的金丝柚木雕花挂落斜砸在台口边缘，死扣住出将入相上下场门通道。",
    "exits": [
     "loc_theater_main_auditorium",
-    "loc_collapsed_frieze_nook"
+    "loc_collapsed_frieze_nook",
+    "loc_backstage_mirror_room"
    ],
    "id": "loc_stage_proscenium_apron",
    "name": "挑空伸出式老戏台台口通廊",
@@ -1589,6 +1647,26 @@
     "intimate"
    ],
    "visibility": "仅靠强光探照笔窄光束照明，近距离能看清彼此面颊上滑落的细腻汗珠、水绿旗袍起伏轮廓与榫卯木销。",
+   "witnesses": []
+  },
+  {
+   "affordances": [
+    "听女先生唱一段开篇",
+    "替女先生解开领口的盘扣",
+    "掩上妆镜间的门"
+   ],
+   "detail": "戏台后面的一间小妆镜间，一面老镜子、一张红木梳妆台、墙上挂着女先生的几件旗袍和那把老琵琶。",
+   "exits": [
+    "loc_stage_proscenium_apron"
+   ],
+   "id": "loc_backstage_mirror_room",
+   "name": "书场后台的妆镜间",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "只开一盏妆镜灯，前台听客散尽，门一掩，屋里只剩琵琶弦偶尔被风碰响的一声。",
    "witnesses": []
   }
  ],
@@ -1936,7 +2014,7 @@
    ],
    "near": {
     "deadline_minutes": 4,
-    "text": "女先生贴在耳边喘着气，唱了半辈子的嗓子，这会儿连一句整话都说不全。"
+    "text": "女先生贴在耳边娇喘细细，湿透的旗袍勾出起伏的胸线，唱了半辈子的嗓子，这会儿连一句整话都说不全。"
    },
    "objective": "在极度贴近的肢体接触与异性荷尔蒙冲击下，克制心神专注机械对位发力。",
    "source": "person",

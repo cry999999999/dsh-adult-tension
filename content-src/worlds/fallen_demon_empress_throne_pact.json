@@ -346,7 +346,7 @@
         "expression": "扬着下巴说命令的话，耳尖却红得像礼服的颜色",
         "desire_range": [
           2,
-          3
+          4
         ],
         "self_control_range": [
           3,
@@ -1469,6 +1469,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_sanctum_pact_ink",
+      "title": "用契墨在锁骨上画契纹",
+      "location_ids": [
+        "loc_altar_secret_sanctum"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1300,
+      "beats": [
+        "暗室里，皇女用指尖蘸着暗红的契墨，在人锁骨上画一道蜿蜒的契纹，自己的礼服领口也松着。",
+        "皇女先说清楚：契纹只是好看，没有约束，你想擦随时擦。……你若不擦，今晚本皇女就当你是我的人。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_sanctum_crown_swap",
+      "title": "把王冠戴到人头上",
+      "location_ids": [
+        "loc_altar_secret_sanctum"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1380,
+      "beats": [
+        "皇女摘下荆棘王冠，踮脚戴到人头上，退后一步打量，红眸里带着坏笑，长发散在雪白的肩头。",
+        "皇女说：今晚你是王，我是败军之将。……你若肯，就命令我，但只说我也想听的那种。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_sanctum_ember_morning",
+      "title": "熔炉余温里的早晨",
+      "location_ids": [
+        "loc_altar_secret_sanctum"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 450,
+      "beats": [
+        "地脉熔炉的余温透进暗室，皇女在黑曜石矮榻上醒来，礼服皱成一团，整个人缠在人身上。",
+        "皇女把脸埋进人怀里闷声说：联军今天不会来。……本皇女命令你，再陪我躺一个时辰。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -1928,6 +1979,15 @@
       "slot": "char_scholar_baal",
       "location_ids": [],
       "text": "{npc.name}从羊皮册后探出头，护目镜滑到鼻尖：当心脚下那块石板，只剩十二息的寿命了。来，帮忙扶住图纸。"
+    },
+    {
+      "id": "hook_iris_sanctum_contract",
+      "kind": "approach",
+      "slot": "char_empress_iris",
+      "location_ids": [
+        "loc_altar_secret_sanctum"
+      ],
+      "text": "{npc.name}站在暗室的门内，用指尖勾了勾：进来。本皇女有一份契约，要你亲自签。"
     }
   ],
   "status": "released",

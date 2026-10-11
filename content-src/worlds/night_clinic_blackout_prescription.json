@@ -308,7 +308,8 @@
       ],
       "exits": [
         "loc_airlock_interlock_sliding_gate",
-        "loc_hvac_control_substation"
+        "loc_hvac_control_substation",
+        "loc_on_call_room"
       ],
       "affordances": [
         "副院长驻足于通道指示牌前听取考评员汇报",
@@ -343,6 +344,26 @@
         "press_airlock_interlock_trap": "泄压阀一旦卡死将导致负压差瞬间激增"
       },
       "tags": []
+    },
+    {
+      "id": "loc_on_call_room",
+      "name": "外廊尽头的值班室",
+      "detail": "洁净区外廊尽头的一间值班室，一张窄床、一张堆满病历的桌子、一台咖啡机，门可以从里面锁上。",
+      "privacy": "private",
+      "visibility": "只开一盏床头灯，呼叫器搁在枕边，走廊上的脚步声一近，屋里的人就屏住呼吸。",
+      "witnesses": [],
+      "exits": [
+        "loc_hospital_rounds_corridor"
+      ],
+      "affordances": [
+        "陪女主任在值班室喝咖啡",
+        "替女主任把白大褂挂起来",
+        "把值班室的门锁上"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
+      ]
     }
   ],
   "character_templates": [
@@ -1590,7 +1611,7 @@
       "id": "act_on_call_room_after_shift",
       "title": "下夜班值班室扣好暗扣",
       "location_ids": [
-        "loc_hospital_rounds_corridor"
+        "loc_on_call_room"
       ],
       "duration_minutes": 30,
       "start_minute": 1410,
@@ -1602,6 +1623,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_on_call_3am_coffee",
+      "title": "凌晨三点两次呼叫之间",
+      "location_ids": [
+        "loc_on_call_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 180,
+      "beats": [
+        "凌晨三点，值班室里只有咖啡机的咕噜声，女主任脱了高跟鞋，把穿着丝袜的脚蜷在椅子上看病历。",
+        "女主任头也不抬：呼叫器二十分钟没响了。……你要是想坐过来，现在可以。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_on_call_stethoscope",
+      "title": "先听心跳再解扣子",
+      "location_ids": [
+        "loc_on_call_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1400,
+      "beats": [
+        "值班室的门锁上了，女主任靠在铁柜上，白大褂下是熨得笔挺的衬衫和铅笔裙，听诊器还挂在脖子上。",
+        "女主任把听诊器摘下来挂到人脖子上：先听听我的心跳，再决定要不要解扣子。……你来决定。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_on_call_before_handover",
+      "title": "交班前的十分钟",
+      "location_ids": [
+        "loc_on_call_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 450,
+      "beats": [
+        "交班前，值班室的窄床上，女主任在人怀里醒来，头发散在枕头上，眼镜不知道丢到了哪里。",
+        "女主任摸到眼镜戴上，看了一眼表：还有十分钟交班。……够了，过来。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -1890,6 +1962,15 @@
         "loc_airlock_interlock_sliding_gate"
       ],
       "text": "{npc.name}注目器械盘内不锈钢截骨锤平柄末端，以笃定眼神示意钝头棱角无坚不摧可全力施为。"
+    },
+    {
+      "id": "hook_lu_on_call_coffee",
+      "kind": "approach",
+      "slot": "char_lu_qingyi_officer",
+      "location_ids": [
+        "loc_on_call_room"
+      ],
+      "text": "{npc.name}从值班室里探出头，压着嗓子：今晚病房很安静。进来，我请你喝杯咖啡。"
     }
   ],
   "twists": [

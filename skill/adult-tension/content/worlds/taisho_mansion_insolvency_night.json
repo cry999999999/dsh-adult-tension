@@ -1228,6 +1228,57 @@
     "intimate"
    ],
    "title": "壁炉边拔下散乱发簪"
+  },
+  {
+   "beats": [
+    "寝室的煤气灯调得很暗，千金站在穿衣镜前，大岛绸和服的腰带在背后打着复杂的结，自己够不着。",
+    "千金从镜子里看着人，声音很轻：女仆也走了。……替我解开，好吗？你说好，我就不回头。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_bedchamber_obi_untie",
+   "location_ids": [
+    "loc_kujo_bedchamber"
+   ],
+   "start_minute": 1320,
+   "tags": [
+    "intimate"
+   ],
+   "title": "寝室里替千金解开腰带"
+  },
+  {
+   "beats": [
+    "千金摇起留声机放了一张旧唱片，向人伸出手，和服的袖子垂下来，露出一截雪白的手腕。",
+    "跳到第二圈，千金把头靠在人肩上：从前的舞会上，我从没想靠在谁身上。……今晚可以吗？"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_bedchamber_gramophone_waltz",
+   "location_ids": [
+    "loc_kujo_bedchamber"
+   ],
+   "start_minute": 1240,
+   "tags": [
+    "intimate"
+   ],
+   "title": "留声机旁的华尔兹"
+  },
+  {
+   "beats": [
+    "台风过后的早晨，窗外一片狼藉，千金在铜床上醒来，长发铺了一枕，睡衣滑下一边肩头。",
+    "千金拉起被子遮住半张脸，小声说：洋馆明天就要交出去了。……所以今天，我只想待在这里。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_bedchamber_after_typhoon",
+   "location_ids": [
+    "loc_kujo_bedchamber"
+   ],
+   "start_minute": 420,
+   "tags": [
+    "intimate"
+   ],
+   "title": "台风过后的早晨"
   }
  ],
  "default_npc_gender_mix": {
@@ -1319,6 +1370,15 @@
    "location_ids": [],
    "slot": "char_lady_kujo_shizuka",
    "text": "当黄铜合页在力矩脆响中骤然解脱的一刹那，那抹自斗篷严密遮掩中顺势优雅侧滚翻跃出、傲骨凌霜的华族名媛身影，将怎样书写大正洋馆的绝境生还传奇？"
+  },
+  {
+   "id": "hook_kujo_bedchamber_lamp",
+   "kind": "approach",
+   "location_ids": [
+    "loc_kujo_bedchamber"
+   ],
+   "slot": "char_lady_kujo_shizuka",
+   "text": "{npc.name}站在寝室门口，手里拿着一盏煤气灯：走廊太黑了。……送我回房，进来坐一会儿也好。"
   }
  ],
  "id": "taisho_mansion_insolvency_night",
@@ -1332,7 +1392,8 @@
    "exits": [
     "loc_tea_reception_salon",
     "loc_basement_steam_vault",
-    "loc_garden_stone_porch"
+    "loc_garden_stone_porch",
+    "loc_kujo_bedchamber"
    ],
    "id": "loc_atrium_library_gallery",
    "name": "洋馆二层挑空中庭回廊书阁",
@@ -1417,6 +1478,26 @@
    "witnesses": [
     "bg_policeman_ogata"
    ]
+  },
+  {
+   "affordances": [
+    "陪千金听一张旧唱片",
+    "替千金解开和服的腰带",
+    "拉上丝绒窗帘"
+   ],
+   "detail": "洋馆二层东翼的一间西式寝室，雕花铜床、一面穿衣镜、一台手摇留声机，窗外是被台风打乱的庭院。",
+   "exits": [
+    "loc_atrium_library_gallery"
+   ],
+   "id": "loc_kujo_bedchamber",
+   "name": "千金的西式寝室",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "煤气灯调得很暗，厚丝绒窗帘一拉，外面的风雨和讨债人都隔在了门外。",
+   "witnesses": []
   }
  ],
  "name_pools": {

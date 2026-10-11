@@ -466,7 +466,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "被从身后紧抱稳住重心抗击震颤冲击，双手叠合在钨钼扳手上一同向下猛力死压。",
     "dislikes": [
@@ -1264,13 +1264,64 @@
    "hook_ids": [],
    "id": "act_bunker_ice_compress",
    "location_ids": [
-    "loc_arc_heater_control_bunker"
+    "loc_bunker_duty_room"
    ],
    "start_minute": 1430,
    "tags": [
     "intimate"
    ],
    "title": "地堡值班室里替女总师冰敷烫红的肩背"
+  },
+  {
+   "beats": [
+    "值班室里，女总师抱着那只印着基地标志的搪瓷缸，茉莉花茶的热气扑上镜片，白大褂底下只穿一件吊带背心。",
+    "女总师把缸子推过来：只有一只缸子，你凑合用。……喝我喝过的地方，不许嫌弃。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_bunker_enamel_mug_tea",
+   "location_ids": [
+    "loc_bunker_duty_room"
+   ],
+   "start_minute": 1220,
+   "tags": [
+    "intimate"
+   ],
+   "title": "搪瓷缸里的茉莉花茶"
+  },
+  {
+   "beats": [
+    "后半夜用电低谷，今晚没有排吹风，女总师摘了眼镜放在桌上，散开盘了一整天的头发。",
+    "女总师傲娇地别过脸：基地的电难得这么闲，我也难得这么闲。……你想要什么，先说出来，我说好才算。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_bunker_off_peak_night",
+   "location_ids": [
+    "loc_bunker_duty_room"
+   ],
+   "start_minute": 1400,
+   "tags": [
+    "intimate"
+   ],
+   "title": "用电低谷的后半夜"
+  },
+  {
+   "beats": [
+    "天快亮，地堡外的山沟里鸟叫成一片，女总师在折叠床上醒来，枕着人的胳膊，盯着天花板发呆。",
+    "女总师小声说：小时候听着吹风的爆鸣睡觉，现在听着你的心跳。……还挺好睡的。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_bunker_mountain_birds",
+   "location_ids": [
+    "loc_bunker_duty_room"
+   ],
+   "start_minute": 330,
+   "tags": [
+    "intimate"
+   ],
+   "title": "山沟里的鸟叫"
   }
  ],
  "default_npc_gender_mix": {
@@ -1468,6 +1519,15 @@
    "location_ids": [],
    "slot": "chief_scientist_su_ruoxi",
    "text": "{npc.name}在吹风间歇推开地堡的铁门，站在山沟的夜风里仰头看星星：城里看不到这么多。你说，十马赫……是不是比流星还快？"
+  },
+  {
+   "id": "hook_ruoxi_bunker_door",
+   "kind": "approach",
+   "location_ids": [
+    "loc_bunker_duty_room"
+   ],
+   "slot": "chief_scientist_su_ruoxi",
+   "text": "{npc.name}从值班室探出头，晃了晃搪瓷缸：今晚不吹风。……进来喝茶，就一只缸子。"
   }
  ],
  "id": "hypersonic_wind_tunnel_nozzle_jam",
@@ -1508,7 +1568,8 @@
    "detail": "位于风洞地下二层的重型防爆加固地堡，厚达一米的防爆玻璃外电弧火光冲天，几十块多功能数字遥测仪表正在闪烁疯狂报警，红色防爆戒严警报灯将四周映照成血色。",
    "exits": [
     "loc_nozzle_throat_adjustment_chamber",
-    "loc_vacuum_sphere_gallery"
+    "loc_vacuum_sphere_gallery",
+    "loc_bunker_duty_room"
    ],
    "id": "loc_arc_heater_control_bunker",
    "name": "电弧加热室防爆应急中央控制地堡",
@@ -1551,6 +1612,26 @@
    "witnesses": [
     "bg_cadet_aerodynamic_xiao_bai"
    ]
+  },
+  {
+   "affordances": [
+    "陪女总师算一组激波数据",
+    "替女总师敷冰降温",
+    "关上值班室的铁门"
+   ],
+   "detail": "控制地堡尽头的一间值班室，一张折叠床、一只印着基地标志的搪瓷缸、一扇封死的观察窗，墙上钉着吹风排班表。",
+   "exits": [
+    "loc_arc_heater_control_bunker"
+   ],
+   "id": "loc_bunker_duty_room",
+   "name": "地堡值班室",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "地堡深埋在山腹里，只开一盏绿罩台灯，铁门一关，山沟里的风声都透不进来。",
+   "witnesses": []
   }
  ],
  "name_pools": {

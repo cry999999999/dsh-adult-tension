@@ -467,7 +467,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "卸下沉重长裙并肩坐在重见天日的王城高塔露台上共赏晨曦",
     "dislikes": [
@@ -1222,7 +1222,7 @@
    ],
    "start_minute": 1430,
    "tags": [
-    "intimate"
+    "workplace"
    ],
    "title": "先帝退位血诏原本与随身信物双重防潮封装"
   },
@@ -1313,13 +1313,64 @@
    "hook_ids": [],
    "id": "act_refuge_wet_gown_change",
    "location_ids": [
-    "loc_basalt_dungeon_hall"
+    "loc_dry_refuge_chamber"
    ],
    "start_minute": 1435,
    "tags": [
     "intimate"
    ],
    "title": "石室里替千金换下湿裙"
+  },
+  {
+   "beats": [
+    "千金坐在火盆边的石榻上，金色长卷发被暗河水泡得打了结，手里攥着一把象牙梳，咬着唇递过来。",
+    "千金扬着下巴说：本小姐的头发，从前只有女仆碰过。……梳的时候要是扯疼我，就罚你亲一下。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_refuge_hair_comb",
+   "location_ids": [
+    "loc_dry_refuge_chamber"
+   ],
+   "start_minute": 1230,
+   "tags": [
+    "intimate"
+   ],
+   "title": "象牙梳与打结的金发"
+  },
+  {
+   "beats": [
+    "千金裹着毛毯坐在石榻上，把一封还没拆封的赦免信递过来，长裙已经烤干，领口微微敞着。",
+    "千金说：你念给我听。……念完了，我就不是罪人了，那今晚我想做什么，只要你也想，就都可以吧？"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_refuge_pardon_letter",
+   "location_ids": [
+    "loc_dry_refuge_chamber"
+   ],
+   "start_minute": 1340,
+   "tags": [
+    "intimate"
+   ],
+   "title": "念一封赦免信"
+  },
+  {
+   "beats": [
+    "清晨，石室里的炭火只剩余烬，千金裹着毛毯醒来，手里攥着一块狱卒留下的黑面包，掰成两半。",
+    "千金嫌弃地咬了一口：难吃死了。……不过和你分着吃，好像也没那么难吃。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_refuge_morning_bread",
+   "location_ids": [
+    "loc_dry_refuge_chamber"
+   ],
+   "start_minute": 420,
+   "tags": [
+    "intimate"
+   ],
+   "title": "分一块黑面包"
   }
  ],
  "default_npc_gender_mix": {
@@ -1503,6 +1554,15 @@
    "location_ids": [],
    "slot": "usurper_legate_kurt_vane",
    "text": "{npc.name}慢条斯理地走近，戴金戒的指节在石栏上敲了两下，压低声音问：想不想听听，今晚怎样才能活着出去？"
+  },
+  {
+   "id": "hook_cecilia_refuge_door",
+   "kind": "approach",
+   "location_ids": [
+    "loc_dry_refuge_chamber"
+   ],
+   "slot": "villainess_noble_cecilia",
+   "text": "{npc.name}站在避难石室门口，裹着披风：火盆生好了。……进来，本小姐允许你坐在旁边。"
   }
  ],
  "id": "villainess_dungeon_pardon_standoff",
@@ -1543,7 +1603,8 @@
    "detail": "悬挑在石厅上方六米处的花岗岩巡逻走廊，铁护栏已被震落的落石砸歪，下方是倒灌的浑浊急流。叛军随从与溃散看守在此处拔剑对峙，雨水顺着天井如瀑布般倾泻而下，雷声震耳欲聋。",
    "exits": [
     "loc_basalt_dungeon_hall",
-    "loc_substage_sluice_channel"
+    "loc_substage_sluice_channel",
+    "loc_dry_refuge_chamber"
    ],
    "id": "loc_dungeon_upper_colonnade",
    "name": "地牢上层悬空挑台看守走廊",
@@ -1582,6 +1643,26 @@
     "intimate"
    ],
    "visibility": "空间低矮潮湿只有微弱火把光亮照射，回荡着怒涛激流奔涌轰鸣，极具私密与隐蔽性。",
+   "witnesses": []
+  },
+  {
+   "affordances": [
+    "陪千金在火盆边烤干长裙",
+    "替千金梳通打结的长发",
+    "闩上避难石室的木门"
+   ],
+   "detail": "死牢上层一间干燥的避难石室，一只铁火盆、一张铺着旧毛毯的石榻、墙上挂着一盏铜油灯，木门能从里面闩上。",
+   "exits": [
+    "loc_dungeon_upper_colonnade"
+   ],
+   "id": "loc_dry_refuge_chamber",
+   "name": "干燥的避难石室",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "火盆里的炭噼啪作响，石墙被烤得温热，门一闩，地下暗河的水声就远了。",
    "witnesses": []
   }
  ],

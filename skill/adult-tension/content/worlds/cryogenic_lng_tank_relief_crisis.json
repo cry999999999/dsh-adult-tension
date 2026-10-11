@@ -466,7 +466,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "被从身后紧抱稳住重心抗击剧烈横摇，双手叠合在耐脆断扳手上一同向下猛力死砸。",
     "dislikes": [
@@ -1256,21 +1256,72 @@
   },
   {
    "beats": [
-    "安全阀破冰泄压、舱压回落之后，女轮机长被人扶进货控室，防寒服外面冻了一层白霜，睫毛上挂着细小的冰晶，整条船还在随浪横摇。",
+    "安全阀破冰泄压、舱压回落之后，女轮机长被人扶回自己的舱室，防寒服外面冻了一层白霜，睫毛上挂着细小的冰晶，整条船还在随浪横摇。",
     "女轮机长靠着控制台站稳，抬起胳膊让人一节节拉开冻硬的拉链，把防寒服剥下来，又把冻得发白的手指揣进对方怀里焐，焐到指尖有了知觉，女轮机长才把脸埋进对方肩窝。",
-    "船又一次横摇，两人一起撞在舱壁上，女轮机长没有松手，贴着耳边低声说：值班表上今晚是大副……货控室的门，从里面锁上。"
+    "船又一次横摇，两人一起撞在舱壁上，女轮机长没有松手，贴着耳边低声说：值班表上今晚是大副……舱室的门，从里面锁上。"
    ],
    "duration_minutes": 30,
    "hook_ids": [],
    "id": "act_cargo_control_suit_unzip",
    "location_ids": [
-    "loc_cargo_compressor_room_catwalk"
+    "loc_chief_engineer_cabin"
    ],
    "start_minute": 1430,
    "tags": [
     "intimate"
    ],
    "title": "货控室里替女轮机长解开冻硬的防寒服"
+  },
+  {
+   "beats": [
+    "女轮机长穿着宽大的船员T恤盘腿坐在床上，拿红笔在床头那张世界地图上画这一趟的航线。",
+    "女轮机长把笔塞过来：你也画一条，画你想去的地方。……画好了，就当我们约好了。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_cabin_map_pins",
+   "location_ids": [
+    "loc_chief_engineer_cabin"
+   ],
+   "start_minute": 1220,
+   "tags": [
+    "intimate"
+   ],
+   "title": "在地图上标航线"
+  },
+  {
+   "beats": [
+    "周六的卡拉OK散了场，女轮机长哼着刚才那首歌回到舱室，脸上带着一点啤酒的红，把人拉进门。",
+    "女轮机长背靠着门笑：刚才那首情歌，是唱给你的，全船都听出来了。……现在没人听了，你要不要回答我？"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_cabin_saturday_karaoke",
+   "location_ids": [
+    "loc_chief_engineer_cabin"
+   ],
+   "start_minute": 1380,
+   "tags": [
+    "intimate"
+   ],
+   "title": "卡拉OK散场后"
+  },
+  {
+   "beats": [
+    "船过好望角，天边泛起金红色，女轮机长裹着被子跪在床上，把脸贴在小圆窗上看日出。",
+    "女轮机长回头伸出手：快来，过了这个角就是印度洋。……这种日出，我想每次都跟你看。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_cabin_cape_sunrise",
+   "location_ids": [
+    "loc_chief_engineer_cabin"
+   ],
+   "start_minute": 360,
+   "tags": [
+    "intimate"
+   ],
+   "title": "好望角的日出"
   }
  ],
  "default_npc_gender_mix": {
@@ -1468,6 +1519,15 @@
    "location_ids": [],
    "slot": "chief_engineer_ye_qingge",
    "text": "{npc.name}周六晚上被船员起哄推到卡拉OK的话筒前，唱了两句就红着脸把话筒塞过来：你来，你唱什么都比我强。"
+  },
+  {
+   "id": "hook_qingge_cabin_door",
+   "kind": "approach",
+   "location_ids": [
+    "loc_chief_engineer_cabin"
+   ],
+   "slot": "chief_engineer_ye_qingge",
+   "text": "{npc.name}靠在舱室门口，手里转着一支红笔：海图上还缺一条航线。……进来帮我画？"
   }
  ],
  "id": "cryogenic_lng_tank_relief_crisis",
@@ -1508,7 +1568,8 @@
    "detail": "位于主甲板下方的双层绝热防爆通廊，窗外巨浪拍打舷窗轰鸣震耳，两台大型低温压缩机正在满负荷运转，红色防爆戒严警报灯将四周映照成血色。",
    "exits": [
     "loc_cargo_tank_dome_cryogenic_nook",
-    "loc_upper_deck_vent_mast_platform"
+    "loc_upper_deck_vent_mast_platform",
+    "loc_chief_engineer_cabin"
    ],
    "id": "loc_cargo_compressor_room_catwalk",
    "name": "货气压缩机房防爆检修主通廊",
@@ -1551,6 +1612,26 @@
    "witnesses": [
     "bg_cadet_cryogenic_xiao_mo"
    ]
+  },
+  {
+   "affordances": [
+    "陪女轮机长在地图上标航线",
+    "替女轮机长焐热冻僵的手",
+    "把舱室的门从里面锁上"
+   ],
+   "detail": "生活区四层的一间船员舱室，一张固定在舱壁上的单人床、一只钉死的小书桌、一扇小圆窗，床头贴着一张世界地图。",
+   "exits": [
+    "loc_cargo_compressor_room_catwalk"
+   ],
+   "id": "loc_chief_engineer_cabin",
+   "name": "女轮机长的船员舱室",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "舱里只开床头一盏阅读灯，船随浪横摇，桌上的水杯在固定圈里轻轻晃。",
+   "witnesses": []
   }
  ],
  "name_pools": {

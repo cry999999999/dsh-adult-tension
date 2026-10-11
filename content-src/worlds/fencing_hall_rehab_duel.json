@@ -289,7 +289,8 @@
       ],
       "exits": [
         "loc_fencing_control_booth",
-        "loc_subterranean_fire_exit"
+        "loc_subterranean_fire_exit",
+        "loc_fencing_medical_room"
       ],
       "affordances": [
         "反握法式花剑将十公分精钢圆盘边棱探入悬臂底座死隙",
@@ -346,6 +347,26 @@
         "press_twenty_five_sec_co2_blast": "闭门电磁继电器倒数吸合声清脆刺耳宣告生路即将封死"
       },
       "tags": []
+    },
+    {
+      "id": "loc_fencing_medical_room",
+      "name": "剑馆医疗室",
+      "detail": "剑道边上的一间小医疗室，一张理疗床、一台制冰机、墙上挂着护具和绷带，门可以从里面反锁。",
+      "privacy": "private",
+      "visibility": "只开一盏理疗灯，外面剑道上的灯一关，这里就只剩两个人的影子，谁的脸红都藏不住。",
+      "witnesses": [],
+      "exits": [
+        "loc_fencing_piste_one"
+      ],
+      "affordances": [
+        "坐在理疗床边替女剑客冰敷",
+        "替女剑客缠护膝",
+        "把医疗室的门反锁"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
+      ]
     }
   ],
   "character_templates": [
@@ -1720,7 +1741,7 @@
       "id": "act_medical_room_knee_wrap",
       "title": "医疗室灯下重新缠护膝",
       "location_ids": [
-        "loc_subterranean_fire_exit"
+        "loc_fencing_medical_room"
       ],
       "duration_minutes": 30,
       "start_minute": 1320,
@@ -1732,6 +1753,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_medical_ice_pack",
+      "title": "赛后替女剑客冰敷大腿",
+      "location_ids": [
+        "loc_fencing_medical_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1260,
+      "beats": [
+        "训练结束，女剑客坐在理疗床边，把剑道服的裤腿卷到大腿根，雪白的腿上一道道全是剑尖留下的红印。",
+        "女剑客别开脸，把冰袋塞过来：自己够不着。……手放上来之前先说一声，不许偷偷碰。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_medical_mask_off",
+      "title": "摘下护面的那个吻",
+      "location_ids": [
+        "loc_fencing_medical_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1330,
+      "beats": [
+        "医疗室的门反锁了，女剑客还穿着白色击剑服，护面夹在腋下，额前的碎发被汗粘成一缕一缕。",
+        "女剑客瞪着人问：你要是想亲，就直说。听见回答，才把护面一扔扑上来，击剑服的拉链被拉开一半。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_medical_morning_stretch",
+      "title": "清晨替女剑客压腿拉伸",
+      "location_ids": [
+        "loc_fencing_medical_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 420,
+      "beats": [
+        "清晨的医疗室里，女剑客趴在理疗床上，紧身训练服勾出腰臀的线条，让人替自己压腿拉伸。",
+        "压到最深处，女剑客把脸埋在枕头里闷声说：再往下一点……疼了我会喊，喊了你就停。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -2020,6 +2092,15 @@
       "kind": "accident",
       "slot": "char_heroine_sheng_chu_xue",
       "text": "当冷轧钢架在力矩声中崩开的一刹那，那抹自毛毯掩护中顺势优雅后滚翻跃出、傲骨凌霜的花剑女皇身影，将怎样书写这场地下剑馆的绝境生还传奇？"
+    },
+    {
+      "id": "hook_shengchuxue_ice_pack",
+      "kind": "approach",
+      "slot": "char_heroine_sheng_chu_xue",
+      "location_ids": [
+        "loc_fencing_medical_room"
+      ],
+      "text": "{npc.name}靠在医疗室门框上，把冰袋往人怀里一扔：膝盖又肿了。……别愣着，进来帮我。"
     }
   ],
   "forbidden_terms": [

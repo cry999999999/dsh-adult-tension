@@ -466,7 +466,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "被从身后紧抱稳住重心抗击激流，双手叠合在合金摇把上一同向死角死转。",
     "dislikes": [
@@ -1264,13 +1264,64 @@
    "hook_ids": [],
    "id": "act_hoist_hall_hair_drying",
    "location_ids": [
-    "loc_dam_crest_hoist_hall_corridor"
+    "loc_hoist_hall_duty_room"
    ],
    "start_minute": 1430,
    "tags": [
     "intimate"
    ],
    "title": "启闭机房值班间里替女总监擦干湿发"
+  },
+  {
+   "beats": [
+    "防汛第十九天，女总监盘腿坐在折叠床上，泡了两碗方便面，往人那碗里多加了一个卤蛋。",
+    "女总监嘴硬：卤蛋是多出来的，不是特意给你的。……吃完了不许走，陪我盯水位。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_duty_room_instant_noodles",
+   "location_ids": [
+    "loc_hoist_hall_duty_room"
+   ],
+   "start_minute": 1210,
+   "tags": [
+    "intimate"
+   ],
+   "title": "防汛夜的泡面"
+  },
+  {
+   "beats": [
+    "女总监换下湿透的雨衣，只穿一件宽大的衬衫站在窗前，背对着人，看半山腰移民村的灯一盏盏灭掉。",
+    "女总监没回头：这十九天，我每天都在想一件事。……你过来抱我，我就告诉你是什么。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_duty_room_rain_confession",
+   "location_ids": [
+    "loc_hoist_hall_duty_room"
+   ],
+   "start_minute": 1370,
+   "tags": [
+    "intimate"
+   ],
+   "title": "雨夜里说出口的话"
+  },
+  {
+   "beats": [
+    "清晨，广播里传来解除防汛响应的通知，女总监在折叠床上醒来，裹着人的外套，头发乱成一团。",
+    "女总监把脸埋进外套里：终于能睡个整觉了。……你也别起来，今天坝上没我们的事。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_duty_room_flood_lifted",
+   "location_ids": [
+    "loc_hoist_hall_duty_room"
+   ],
+   "start_minute": 450,
+   "tags": [
+    "intimate"
+   ],
+   "title": "解除防汛的早晨"
   }
  ],
  "default_npc_gender_mix": {
@@ -1468,6 +1519,15 @@
    "location_ids": [],
    "slot": "director_jiang_yingxue",
    "text": "{npc.name}在廊道里蹲下身，把手电光打在一道正往外渗水的缝上，回头招手：过来，听见水声没有？今晚就靠我们两个守着这道缝。"
+  },
+  {
+   "id": "hook_yingxue_duty_room",
+   "kind": "approach",
+   "location_ids": [
+    "loc_hoist_hall_duty_room"
+   ],
+   "slot": "director_jiang_yingxue",
+   "text": "{npc.name}在值班间门口抖了抖雨衣：水位稳了。……进来，泡面多泡了一碗。"
   }
  ],
  "id": "hydroelectric_penstock_intake_gate_stuck",
@@ -1508,7 +1568,8 @@
    "detail": "位于百米重力坝顶部的巨型钢桁架启闭机大厅，窗外狂风骤雨电闪雷鸣，两台五百吨门式起重机在暴风中轻微晃动，红色防汛戒严警报灯将四周映照成血色。",
    "exits": [
     "loc_intake_gate_gallery_deadlock",
-    "loc_gallery_drainage_sump_catwalk"
+    "loc_gallery_drainage_sump_catwalk",
+    "loc_hoist_hall_duty_room"
    ],
    "id": "loc_dam_crest_hoist_hall_corridor",
    "name": "大坝坝顶启闭机房防爆主控通廊",
@@ -1551,6 +1612,26 @@
    "witnesses": [
     "bg_sump_pump_cadet_xiao_ding"
    ]
+  },
+  {
+   "affordances": [
+    "陪女总监看一夜水位曲线",
+    "替女总监擦干湿透的长发",
+    "锁上值班间的门"
+   ],
+   "detail": "坝顶启闭机房里隔出来的值班间，一张折叠床、一张贴满水位曲线的桌子、一只电热水壶，窗外是半山腰移民村的灯。",
+   "exits": [
+    "loc_dam_crest_hoist_hall_corridor"
+   ],
+   "id": "loc_hoist_hall_duty_room",
+   "name": "启闭机房值班间",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "屋里只开一盏台灯，雨打在窗上沙沙响，门一锁，机房里电机的低鸣就隔成了一层很远的声音。",
+   "witnesses": []
   }
  ],
  "name_pools": {

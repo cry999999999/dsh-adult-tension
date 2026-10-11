@@ -1632,6 +1632,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_still_room_herb_lesson",
+      "title": "蒸馏室里的草药课",
+      "location_ids": [
+        "loc_apothecary_still_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1220,
+      "beats": [
+        "蒸馏室的酒精灯下，千金挽起礼裙的袖子，笨手笨脚地切着药草，被药剂师握住手腕纠正刀法。",
+        "千金涨红了脸：本小姐只是想学，不是想让你握着手。……不过，你要是还想握，也不是不行。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_still_room_rose_oil",
+      "title": "玫瑰精油的第一滴",
+      "location_ids": [
+        "loc_apothecary_still_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1370,
+      "beats": [
+        "蒸馏器滴下第一滴玫瑰精油，千金用指尖蘸了一点，抹在人的手腕上，又抹在自己的颈侧。",
+        "千金扬着下巴说：这样我们就是一个味道了。……平民，凑近闻闻，你想的话，本小姐准了。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_still_room_dawn_herbs",
+      "title": "天不亮去照看药草",
+      "location_ids": [
+        "loc_apothecary_still_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 330,
+      "beats": [
+        "天还没亮，千金就披着斗篷推开蒸馏室的门，回头朝床上的人伸出手，要拉人一起去温室。",
+        "千金小声说：那几株药草，以前都是我一个人照看。……以后，你陪我一起来。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -2067,6 +2118,15 @@
         "loc_rose_tea_terrace"
       ],
       "text": "{npc.name}拉过人的手，看了看指尖被花刺扎出的小口子，拧开一瓶药膏：别动。王宫里的玫瑰刺都带着毒，涂了就不疼了。"
+    },
+    {
+      "id": "hook_seraphina_still_room",
+      "kind": "approach",
+      "slot": "villainess_seraphina",
+      "location_ids": [
+        "loc_apothecary_still_room"
+      ],
+      "text": "{npc.name}站在蒸馏室门口，提着裙摆咳了一声：本小姐路过而已。……你要是请我进去，我也不是不能进。"
     }
   ],
   "twists": [

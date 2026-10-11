@@ -311,7 +311,8 @@
       "exits": [
         "loc_cipher_telegraph_hall",
         "loc_bunker_ventilation_shaft",
-        "loc_emergency_generator_room"
+        "loc_emergency_generator_room",
+        "loc_operator_bunk_room"
       ],
       "affordances": [
         "呈递通信联络密电总簿引开巡查首长视线焦点",
@@ -347,6 +348,26 @@
         "press_shear_arm_collapse": "管网短路电弧过载噼啪作响充满迫近危机"
       },
       "tags": []
+    },
+    {
+      "id": "loc_operator_bunk_room",
+      "name": "报务员值班宿舍",
+      "detail": "暗堡上层的一间小宿舍，两张铁架床、一只搪瓷脸盆、墙上贴着值班表，门背后有一道插销。",
+      "privacy": "private",
+      "visibility": "只开一盏绿罩台灯，隔壁电台的嘀嗒声隐约透过墙传过来，床上的人一抬眼就能看见对方。",
+      "witnesses": [],
+      "exits": [
+        "loc_staff_corridor_stairs"
+      ],
+      "affordances": [
+        "坐在铁架床边分一缸麦乳精",
+        "替报务员把军呢外套挂好",
+        "把门背后的插销拨上"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
+      ]
     }
   ],
   "character_templates": [
@@ -1635,6 +1656,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_bunk_malted_milk",
+      "title": "值班宿舍里冲一缸麦乳精",
+      "location_ids": [
+        "loc_operator_bunk_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1300,
+      "beats": [
+        "下了夜班的报务员坐在铁架床边，脱了军呢外套，衬衫领口松着，两手捂着一只冒热气的搪瓷缸。",
+        "报务员把缸子递过来，等人喝了一口才低声问：今晚能不能别回你那边？你说不，我不怪你。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_bunk_morse_on_palm",
+      "title": "在掌心敲一串电码",
+      "location_ids": [
+        "loc_operator_bunk_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1380,
+      "beats": [
+        "熄灯后，报务员拉过人的手摊开，用指尖在掌心一下一下地敲，长短交替，像在发一封只给一个人的电报。",
+        "报务员先问了一句“可以吗”，得到回答后才凑到耳边，把那串电码一个字一个字念出来，念完便吻了上来。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_bunk_before_reveille",
+      "title": "起床号前的五分钟",
+      "location_ids": [
+        "loc_operator_bunk_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 330,
+      "beats": [
+        "起床号还没吹，宿舍的小气窗透进一点灰白，报务员在窄窄的铁架床上醒来，枕着人的胳膊。",
+        "报务员把被子往上拉，盖住两个人的肩膀，小声说：值班表上我是六点。还有五分钟，谁也别动。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -1952,6 +2024,15 @@
       "slot": "char_chu_xuelan_assistant",
       "location_ids": [],
       "text": "{npc.name}摘下一边耳机递过来，压低声音说：你听，这个台的手法跟上个月不一样。"
+    },
+    {
+      "id": "hook_ye_bunk_bolt",
+      "kind": "approach",
+      "slot": "char_ye_chuwei_operator",
+      "location_ids": [
+        "loc_operator_bunk_room"
+      ],
+      "text": "{npc.name}靠在宿舍门边，把插销拨开又拨上，声音压得很低：今晚隔壁没人值班。要进来坐坐吗？"
     }
   ],
   "twists": [

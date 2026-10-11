@@ -299,7 +299,8 @@
       ],
       "exits": [
         "loc_t_stage_scissor_pinch_nook",
-        "loc_broadcast_master_control_room"
+        "loc_broadcast_master_control_room",
+        "loc_center_private_lounge"
       ],
       "affordances": [
         "查验舞台边缘消防积水排污地漏排水速度",
@@ -363,6 +364,26 @@
       "tags": [
         "workplace",
         "disaster"
+      ]
+    },
+    {
+      "id": "loc_center_private_lounge",
+      "name": "C位的单人休息室",
+      "detail": "演播厅后台尽头的一间单人休息室，一张粉色的懒人沙发、一面贴满粉丝手写信的墙、一台堆着零食的小冰箱。",
+      "privacy": "private",
+      "visibility": "化妆灯调成了暖光，门一反锁，走廊里工作人员的对讲机声音就听不清了。",
+      "witnesses": [],
+      "exits": [
+        "loc_grand_auditorium_stage"
+      ],
+      "affordances": [
+        "陪C位读一封粉丝来信",
+        "替C位挑破脚上的水泡",
+        "反锁休息室的门"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
       ]
     }
   ],
@@ -451,7 +472,7 @@
         "expression": "脱险后温柔地为总监擦去脸上的泥水与机油，主动牵住总监手指轻声呢喃‘有总监在，我什么都不怕’。",
         "desire_range": [
           2,
-          3
+          4
         ],
         "self_control_range": [
           4,
@@ -1562,8 +1583,7 @@
       "hook_ids": [],
       "start_minute": 1330,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1581,8 +1601,7 @@
       "hook_ids": [],
       "start_minute": 1335,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1600,8 +1619,7 @@
       "hook_ids": [],
       "start_minute": 1340,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1677,6 +1695,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_lounge_fried_chicken",
+      "title": "偷吃一盒炸鸡",
+      "location_ids": [
+        "loc_center_private_lounge"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1230,
+      "beats": [
+        "单人休息室里，C位卸了妆，穿着宽大的练习服窝在懒人沙发上，偷偷打开一盒炸鸡，先递一块过来。",
+        "C位压低声音：经纪人姐姐不许我吃。……你吃了就是共犯，共犯要守秘密，还要再陪我做一件坏事。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_lounge_fan_letter",
+      "title": "替C位念一封粉丝来信",
+      "location_ids": [
+        "loc_center_private_lounge"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1350,
+      "beats": [
+        "C位从墙上撕下一封粉丝来信塞给人，自己抱着膝盖坐在沙发上，脸埋在膝头，只露出一双眼睛。",
+        "C位小声说：信里问我有没有喜欢的人。……你念完了，我就回答，答案你想不想听？"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_lounge_comeback_morning",
+      "title": "回归日的早晨",
+      "location_ids": [
+        "loc_center_private_lounge"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 420,
+      "beats": [
+        "回归日的早晨，C位穿着睡衣坐在化妆镜前发呆，看见人推门进来，一下子扑过来抱住不肯松手。",
+        "C位把脸埋在人胸口：紧张得一夜没睡。……抱我三分钟，三分钟以后我就是国民初恋。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -2123,6 +2192,15 @@
       "slot": "stage_machinery_lead_lu",
       "location_ids": [],
       "text": "{npc.name}把一只耳返递过来：刚调好的，你戴上听听，这一版只混了一个人的声音。"
+    },
+    {
+      "id": "hook_xiaoran_lounge_door",
+      "kind": "approach",
+      "slot": "idol_tang_xiaoran",
+      "location_ids": [
+        "loc_center_private_lounge"
+      ],
+      "text": "{npc.name}从休息室门缝里朝人招手：快进来，我偷藏了炸鸡。……别让经纪人姐姐看见。"
     }
   ],
   "twists": [

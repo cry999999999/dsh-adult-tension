@@ -1258,21 +1258,72 @@
   },
   {
    "beats": [
-    "散场后的修琴工坊只剩一盏煤气灯，首席把琴放上案台，裙摆上还留着钢槽咬出的折痕。",
+    "散场后的琴房只剩一盏煤气灯，首席把琴放上案台，裙摆上还留着钢槽咬出的折痕。",
     "首席背过身，请人替自己解开后腰那几根被扯乱的系带，指尖每碰一下，呼吸就停一拍。",
-    "最后一根系带松开时，首席没有回头，只伸手把工坊的门闩推了过来。"
+    "最后一根系带松开时，首席没有回头，只伸手把琴房的门闩推了过来。"
    ],
    "duration_minutes": 30,
    "hook_ids": [],
    "id": "act_workshop_unlace_gown",
    "location_ids": [
-    "loc_vip_corridor"
+    "loc_cellist_practice_room"
    ],
    "start_minute": 1290,
    "tags": [
     "intimate"
    ],
    "title": "修琴工坊解开礼服系带"
+  },
+  {
+   "beats": [
+    "琴房里，首席把大提琴靠在膝间，长裙的裙摆铺了一地，让人替自己给琴弓抹松香。",
+    "首席看着人的手：慢一点，要匀。……你给琴弓上松香的样子，跟碰我的时候一模一样。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_practice_room_rosin",
+   "location_ids": [
+    "loc_cellist_practice_room"
+   ],
+   "start_minute": 1150,
+   "tags": [
+    "intimate"
+   ],
+   "title": "琴房里的松香与琴弓"
+  },
+  {
+   "beats": [
+    "首席把人拉到琴凳前坐下，自己从背后环过来，握着人的手放上琴弦，胸口贴着人的后背。",
+    "首席贴着耳边问：拉完这一段，要不要换我来拉你？……你点头，我就把琴放下。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_practice_room_cello_embrace",
+   "location_ids": [
+    "loc_cellist_practice_room"
+   ],
+   "start_minute": 1330,
+   "tags": [
+    "intimate"
+   ],
+   "title": "从背后握着手拉琴"
+  },
+  {
+   "beats": [
+    "休演日的早晨，首席裹着人的衬衫坐在琴房窗台上，光着腿，抱着大提琴拉一支很慢的摇篮曲。",
+    "一曲拉完，首席把琴靠到墙边，朝人伸出手：今天不练琴了。……过来，陪我把早上浪费掉。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_practice_room_rest_day",
+   "location_ids": [
+    "loc_cellist_practice_room"
+   ],
+   "start_minute": 540,
+   "tags": [
+    "intimate"
+   ],
+   "title": "休演日的摇篮曲"
   }
  ],
  "default_npc_gender_mix": {
@@ -1336,6 +1387,15 @@
    ],
    "slot": "char_su_yuhua_chairwoman",
    "text": "{npc.name}在包厢里放下观剧镜，把副会长递来的纸条揉成一团，起身朝后台的小门走去。"
+  },
+  {
+   "id": "hook_shen_practice_room_door",
+   "kind": "approach",
+   "location_ids": [
+    "loc_cellist_practice_room"
+   ],
+   "slot": "char_shen_weilan_cellist",
+   "text": "{npc.name}抱着大提琴站在琴房门口：这把琴在这间屋里最好听。……进来，我拉给你一个人听。"
   }
  ],
  "id": "symphony_hall_cello_repair_deadline",
@@ -1350,7 +1410,8 @@
    "exits": [
     "loc_climate_vault",
     "loc_vip_corridor",
-    "loc_luthiers_workshop"
+    "loc_luthiers_workshop",
+    "loc_cellist_practice_room"
    ],
    "id": "loc_stage_left_wings",
    "name": "舞台左翼候场区",
@@ -1439,6 +1500,26 @@
     "bg_usher_claire",
     "bg_stagehand_jean"
    ]
+  },
+  {
+   "affordances": [
+    "坐在琴凳上听首席拉一段",
+    "替首席给琴弓抹松香",
+    "关上琴房的隔音门"
+   ],
+   "detail": "音乐厅后楼的一间私人琴房，一把琴凳、一架谱台、墙上挂着几张老唱片的封套，窗台宽得能坐人。",
+   "exits": [
+    "loc_stage_left_wings"
+   ],
+   "id": "loc_cellist_practice_room",
+   "name": "首席的私人琴房",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "煤气灯调得很暗，厚厚的隔音门一关，屋里的琴声和别的声音都传不出去。",
+   "witnesses": []
   }
  ],
  "name_pools": {

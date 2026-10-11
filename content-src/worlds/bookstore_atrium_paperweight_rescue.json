@@ -326,7 +326,8 @@
       ],
       "exits": [
         "loc_bookstore_central_atrium",
-        "loc_collapsed_bookshelf_nook"
+        "loc_collapsed_bookshelf_nook",
+        "loc_bookshop_attic"
       ],
       "affordances": [
         "检查二楼木构地板承重受力形变",
@@ -363,6 +364,26 @@
       },
       "tags": [
         "workplace",
+        "intimate"
+      ]
+    },
+    {
+      "id": "loc_bookshop_attic",
+      "name": "编目员借住的书肆阁楼",
+      "detail": "书肆顶上的小阁楼，一张铁架床、一张堆满家谱抄本的书桌、窗台上卧着书肆的老猫，推开窗就是河埠头。",
+      "privacy": "private",
+      "visibility": "台灯罩着一块旧丝巾，河上的橹声一阵一阵，木梯一收，楼下就没人上得来。",
+      "witnesses": [],
+      "exits": [
+        "loc_second_floor_gallery_hall"
+      ],
+      "affordances": [
+        "陪编目员抄一页家谱",
+        "替编目员擦干长发",
+        "把阁楼的木梯收上来"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
         "intimate"
       ]
     }
@@ -451,7 +472,7 @@
         "expression": "脱险后在回廊轻柔取出手帕替修复员擦拭额角汗水与木屑，温声细语关切修复员伤势，眼波流转满含感激深情。",
         "desire_range": [
           2,
-          3
+          4
         ],
         "self_control_range": [
           4,
@@ -1562,8 +1583,7 @@
       "hook_ids": [],
       "start_minute": 1395,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1581,8 +1601,7 @@
       "hook_ids": [],
       "start_minute": 1400,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1600,8 +1619,7 @@
       "hook_ids": [],
       "start_minute": 1405,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1665,7 +1683,7 @@
       "id": "act_attic_dry_hair",
       "title": "阁楼上替编目员擦干湿透的长发",
       "location_ids": [
-        "loc_second_floor_gallery_hall"
+        "loc_bookshop_attic"
       ],
       "duration_minutes": 30,
       "start_minute": 1430,
@@ -1677,6 +1695,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_attic_reading_aloud",
+      "title": "灯下念一段旧书",
+      "location_ids": [
+        "loc_bookshop_attic"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1240,
+      "beats": [
+        "阁楼的台灯下，编目员趴在铁架床上，翻着一本民国的旧小说，棉布睡裙的裙摆缩到膝弯，小腿翘着晃。",
+        "编目员把书递过来：你念给我听，念到亲嘴那一段就停。……停下以后，换我们自己接着写。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_attic_jiuniang_midnight",
+      "title": "半夜的一碗酒酿",
+      "location_ids": [
+        "loc_bookshop_attic"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1360,
+      "beats": [
+        "半夜，编目员端上来一碗桂花酒酿圆子，盘腿坐在床沿，一勺一勺喂过来，自己的脸先被热气熏红了。",
+        "编目员舔掉勺子上的糖水：酒酿也算酒。……我有点醉了，你要是不想走，就关灯。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_attic_cat_morning",
+      "title": "老猫跳上床的早晨",
+      "location_ids": [
+        "loc_bookshop_attic"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 420,
+      "beats": [
+        "清晨，书肆的老猫跳上铁架床，踩着两个人的被子走过去，编目员被弄醒，迷迷糊糊往人怀里钻。",
+        "编目员闭着眼嘟囔：老猫每天都来叫我起床。……今天不起了，你帮我把猫抱下去。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -1788,7 +1857,7 @@
         "minutes": 2
       },
       "near": {
-        "text": "编目员的脸颊贴在耳侧，喘息里带着旧书的霉味，心跳一下下撞过来。",
+        "text": "编目员的脸颊贴在耳侧，娇喘带着旧书的霉味和微汗，湿透的棉麻长裙下，心跳一下下撞过来。",
         "deadline_minutes": 4
       },
       "far": {
@@ -2125,6 +2194,15 @@
       "slot": "researcher_wen_zhixia",
       "location_ids": [],
       "text": "{npc.name}端着两碗老掌柜做的桂花酒酿从楼梯上来，递一碗过去：梅雨天，喝点热的。今晚雨大，我怕回廊漏水，陪我守一会儿？"
+    },
+    {
+      "id": "hook_zhixia_attic_ladder",
+      "kind": "approach",
+      "slot": "researcher_wen_zhixia",
+      "location_ids": [
+        "loc_bookshop_attic"
+      ],
+      "text": "{npc.name}从阁楼口探下半个身子，手里端着一碗酒酿：楼上暖和。……要不要上来？"
     }
   ],
   "twists": [

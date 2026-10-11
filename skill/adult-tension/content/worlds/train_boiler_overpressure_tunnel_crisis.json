@@ -465,7 +465,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "被从身后环抱稳住剧烈晃动的下盘，双手交扣在梅花扳手上一同向下猛拽。",
     "dislikes": [
@@ -1263,13 +1263,64 @@
    "hook_ids": [],
    "id": "act_caboose_soot_wash",
    "location_ids": [
-    "loc_coal_tender_gangway_platform"
+    "loc_caboose_cabin"
    ],
    "start_minute": 1430,
    "tags": [
     "intimate"
    ],
    "title": "守车里替女司机擦洗煤灰"
+  },
+  {
+   "beats": [
+    "守车的小铁炉烧得通红，女司机把几个土豆埋进炉灰里，摘了大盖帽，短发被汗压得乱翘。",
+    "女司机掰开一个烫手的土豆递过来：高原上就这个最香。……吃完了，后半夜的班我替你值，你陪我。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_caboose_stove_potatoes",
+   "location_ids": [
+    "loc_caboose_cabin"
+   ],
+   "start_minute": 1220,
+   "tags": [
+    "intimate"
+   ],
+   "title": "铁炉边烤土豆"
+  },
+  {
+   "beats": [
+    "女司机脱了帆布工装，只穿一件白背心，靠在守车后窗边，看月光下的铁轨一节一节往后退。",
+    "女司机回过头：开了十年车，从没在守车上过过夜。……今晚想试试，你点头，我就把门插上。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_caboose_rear_window",
+   "location_ids": [
+    "loc_caboose_cabin"
+   ],
+   "start_minute": 1350,
+   "tags": [
+    "intimate"
+   ],
+   "title": "后窗看铁轨退去"
+  },
+  {
+   "beats": [
+    "清晨列车在一个小雪站停靠，女司机裹着军大衣醒来，后窗上结满冰花，一伸手就摸到人的脸。",
+    "女司机把冻红的手贴上来取暖：停站二十分钟。……二十分钟够了，你别起来。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_caboose_snow_station",
+   "location_ids": [
+    "loc_caboose_cabin"
+   ],
+   "start_minute": 400,
+   "tags": [
+    "intimate"
+   ],
+   "title": "雪站停靠的早晨"
   }
  ],
  "default_npc_gender_mix": {
@@ -1460,6 +1511,15 @@
    "location_ids": [],
    "slot": "railway_inspector_geng_weimin",
    "text": "{npc.name}夹着押运单据走过来，扶了扶眼镜：你是随车的？正好，有几个数要跟你对一对。"
+  },
+  {
+   "id": "hook_zhaolie_caboose_stove",
+   "kind": "approach",
+   "location_ids": [
+    "loc_caboose_cabin"
+   ],
+   "slot": "chief_engineer_zhao_lie",
+   "text": "{npc.name}在守车门口跺掉靴子上的雪：炉子烧旺了。……进来暖暖，我烤了土豆。"
   }
  ],
  "id": "train_boiler_overpressure_tunnel_crisis",
@@ -1500,7 +1560,8 @@
    "detail": "连接机车与后部巨大煤水车的铸铁铰接浮动踏板，脚下是高速飞旋的重载车轮与喷溅火花的铁轨，上方堆积着四十吨优质精煤，狂暴的隧道回风夹杂着一氧化碳煤烟呼啸掠过。",
    "exits": [
     "loc_locomotive_driver_cab_chamber",
-    "loc_engine_front_boiler_walkway"
+    "loc_engine_front_boiler_walkway",
+    "loc_caboose_cabin"
    ],
    "id": "loc_coal_tender_gangway_platform",
    "name": "煤水车连接贯通走板与水柜平台",
@@ -1543,6 +1604,26 @@
    "witnesses": [
     "bg_assistant_engineer_xiao_zhao"
    ]
+  },
+  {
+   "affordances": [
+    "陪女司机在铁炉边烤土豆",
+    "替女司机擦净脸上的煤灰",
+    "插上守车的门插销"
+   ],
+   "detail": "挂在列车最末的木制守车，一张条凳、一张折叠铺、一只烧得通红的小铁炉，后窗外是退去的铁轨和雪山。",
+   "exits": [
+    "loc_coal_tender_gangway_platform"
+   ],
+   "id": "loc_caboose_cabin",
+   "name": "列车尾部的守车",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "铁炉的火光映着木板墙，车门插销一插，车轮的哐当声就像一首慢慢摇的曲子。",
+   "witnesses": []
   }
  ],
  "name_pools": {

@@ -301,7 +301,8 @@
       ],
       "exits": [
         "loc_hydrocracking_reactor_seal_skirt",
-        "loc_flare_knockout_drum_corridor"
+        "loc_flare_knockout_drum_corridor",
+        "loc_chief_dormitory_room"
       ],
       "affordances": [
         "按下裙座立柱防爆应急氮气吹扫电掣",
@@ -340,6 +341,26 @@
       "tags": [
         "workplace",
         "disaster"
+      ]
+    },
+    {
+      "id": "loc_chief_dormitory_room",
+      "name": "厂区值班楼的总工单间",
+      "detail": "装置区边上值班楼三层的一间单人宿舍，一张单人床、一只堆满作业票的文件柜、一台老空调，窗外是火炬塔的橘红火光。",
+      "privacy": "private",
+      "visibility": "火炬的光把窗帘映成暖橘色，门一反锁，楼下检修工的说笑声就隔在了走廊那头。",
+      "witnesses": [],
+      "exits": [
+        "loc_reactor_skirt_access_platform"
+      ],
+      "affordances": [
+        "陪女总工签完最后一张作业票",
+        "替女总工冰敷颈后的勒痕",
+        "反锁单间的门"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
       ]
     }
   ],
@@ -426,7 +447,7 @@
         "expression": "脱险进入安全区后，默默撕下自己最干爽的阻燃内衣轻柔擦拭对方被高温气浪灼红的双肩，眼神温软而坚定，把冰毛巾一直按在对方颈后。",
         "desire_range": [
           2,
-          3
+          4
         ],
         "self_control_range": [
           4,
@@ -1614,6 +1635,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_dorm_permit_signatures",
+      "title": "签到第七个名字",
+      "location_ids": [
+        "loc_chief_dormitory_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1230,
+      "beats": [
+        "单间里，女总工换下阻燃服，穿着一件旧工厂T恤盘腿坐在床上，一张张签着明天的动火作业票。",
+        "女总工把最后一张推过来：一张票要七个人签字，第七个名字留给你。……签了，今晚就归你管。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_dorm_flare_window",
+      "title": "火炬光里的窗前",
+      "location_ids": [
+        "loc_chief_dormitory_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1370,
+      "beats": [
+        "女总工关了灯，只穿着吊带背心站在窗前，火炬塔的橘红光把皮肤照得发烫，长发松松地披在肩上。",
+        "女总工没回头：大检修四十天，我没睡过一个整觉。……今晚你在，我想试试，你肯陪就过来。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_dorm_shift_breakfast",
+      "title": "板房村的早点",
+      "location_ids": [
+        "loc_chief_dormitory_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 420,
+      "beats": [
+        "清晨，女总工拎回两份板房村门口的煎饼果子，踢掉安全鞋，坐在床边把一份塞进人手里。",
+        "女总工咬了一口，含糊地说：七点开班前会。……还有四十分钟，吃完了再躺一会儿。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -2058,6 +2130,15 @@
       "slot": "director_bai_yutong",
       "location_ids": [],
       "text": "{npc.name}站在火炬塔下仰头看着夜里那团火，侧脸被映得通红：火炬不灭，说明这座厂还活着。下了班……陪我走一圈装置区？"
+    },
+    {
+      "id": "hook_yutong_dorm_door",
+      "kind": "approach",
+      "slot": "director_bai_yutong",
+      "location_ids": [
+        "loc_chief_dormitory_room"
+      ],
+      "text": "{npc.name}倚在单间门口，手里攥着一沓作业票：还差一个签名。……进来，签完了别急着走。"
     }
   ],
   "twists": [

@@ -301,7 +301,8 @@
       ],
       "exits": [
         "loc_blowout_preventer_cellar_deadlock",
-        "loc_mud_tank_manifold_catwalk"
+        "loc_mud_tank_manifold_catwalk",
+        "loc_geologist_prefab_cabin"
       ],
       "affordances": [
         "按下井口应急高压冷水消防注水喷淋电掣",
@@ -340,6 +341,26 @@
       "tags": [
         "workplace",
         "disaster"
+      ]
+    },
+    {
+      "id": "loc_geologist_prefab_cabin",
+      "name": "总地质师的值班板房",
+      "detail": "钻台下风处的一间值班板房，一张铁架床、一只烧着温泉水的铁炉、满墙钉着岩芯照片，窗外就是那眼野温泉。",
+      "privacy": "private",
+      "visibility": "铁炉的火光暖烘烘的，窗外硫磺味的白汽一缕缕飘过，门闩一插，高原的夜风就只剩门缝里的呜呜声。",
+      "witnesses": [],
+      "exits": [
+        "loc_drill_floor_control_doghouse"
+      ],
+      "affordances": [
+        "陪总地质师看岩芯照片",
+        "替总地质师擦去肩背的泥浆",
+        "插上板房的门闩"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
       ]
     }
   ],
@@ -426,7 +447,7 @@
         "expression": "脱险进入安全区后，默默撕下自己里衣最干爽的棉布轻柔包扎对方被高温蒸汽烫起水泡的双臂，眼神温柔而坚毅。",
         "desire_range": [
           2,
-          3
+          4
         ],
         "self_control_range": [
           4,
@@ -1602,7 +1623,7 @@
       "id": "act_doghouse_mud_wipe",
       "title": "值班板房里替女总地质师擦去泥浆",
       "location_ids": [
-        "loc_drill_floor_control_doghouse"
+        "loc_geologist_prefab_cabin"
       ],
       "duration_minutes": 30,
       "start_minute": 1430,
@@ -1614,6 +1635,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_prefab_spring_water_footbath",
+      "title": "温泉水泡脚",
+      "location_ids": [
+        "loc_geologist_prefab_cabin"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1220,
+      "beats": [
+        "板房里，总地质师打了一盆冒着热气的温泉水，把冻僵的双脚泡进去，又拍了拍身边的小板凳。",
+        "总地质师说：一起泡，地热田唯一的福利。……泡暖和了，有些话我想当面跟你说。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_prefab_oxygen_kiss",
+      "title": "缺氧里的一个吻",
+      "location_ids": [
+        "loc_geologist_prefab_cabin"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1360,
+      "beats": [
+        "四千米的夜里，总地质师坐在铁架床边吸着便携氧气，摘下面罩时喘得厉害，脸颊红得发烫。",
+        "总地质师把面罩递给人，自己却凑过来：先说好，喘不上来我会停。……再亲一下试试，你也想吗？"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_prefab_hot_spring_dawn",
+      "title": "野温泉的清晨",
+      "location_ids": [
+        "loc_geologist_prefab_cabin"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 380,
+      "beats": [
+        "天蒙蒙亮，总地质师裹着军大衣推开板房的门，窗外那眼野温泉冒着白汽，铺了一层薄霜。",
+        "总地质师回头看人：钻井队七点上班，现在去泡一会儿，没人看见。……你来不来？"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -2058,6 +2130,15 @@
       "slot": "geologist_chu_ningshuang",
       "location_ids": [],
       "text": "{npc.name}收工后坐在井场边那眼野温泉旁，裤腿挽到膝盖泡着脚，冲人拍拍身边的石头：坐，高原上就这点好，下了班有热水。"
+    },
+    {
+      "id": "hook_ningshuang_prefab_stove",
+      "kind": "approach",
+      "slot": "geologist_chu_ningshuang",
+      "location_ids": [
+        "loc_geologist_prefab_cabin"
+      ],
+      "text": "{npc.name}站在板房门口，炉子上的水壶嘶嘶冒气：高原夜里冷。……进来烤烤火。"
     }
   ],
   "twists": [

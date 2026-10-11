@@ -332,7 +332,8 @@
       "exits": [
         "loc_main_stage_bridge",
         "loc_understage_pit_vault",
-        "loc_director_box_lounge"
+        "loc_director_box_lounge",
+        "loc_ballerina_dressing_room"
       ],
       "affordances": [
         "在巨幅水晶镜前规整披风仪容",
@@ -343,6 +344,26 @@
         "press_shear_arm_collapse": "焦躁的人群开始向侧门安全出口聚拢"
       },
       "tags": []
+    },
+    {
+      "id": "loc_ballerina_dressing_room",
+      "name": "首席舞者的化妆间",
+      "detail": "镜廊尽头的一间化妆间，一面嵌满灯泡的大镜子、一张天鹅绒矮凳、衣架上挂着天鹅舞裙，门上有一把黄铜小锁。",
+      "privacy": "private",
+      "visibility": "镜前灯一圈暖黄，镜子把屋里的每个人都照了两遍，门外偶尔传来散场观众的笑语。",
+      "witnesses": [],
+      "exits": [
+        "loc_promenade_foyer"
+      ],
+      "affordances": [
+        "替首席舞者解足尖鞋的缎带",
+        "陪首席舞者在镜前卸妆",
+        "把化妆间的黄铜小锁扣上"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
+      ]
     }
   ],
   "character_templates": [
@@ -1605,7 +1626,7 @@
       "id": "act_dressing_room_unhook",
       "title": "镜廊更衣隔间解开暗扣",
       "location_ids": [
-        "loc_promenade_foyer"
+        "loc_ballerina_dressing_room"
       ],
       "duration_minutes": 30,
       "start_minute": 1290,
@@ -1617,6 +1638,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_dressing_pointe_ribbons",
+      "title": "替首席舞者解足尖鞋缎带",
+      "location_ids": [
+        "loc_ballerina_dressing_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1200,
+      "beats": [
+        "化妆间里，首席舞者坐在天鹅绒矮凳上，把一只脚搭在人膝头，足尖鞋的缎带在脚踝上缠了好几圈。",
+        "首席舞者低头看着人：跳了一整晚，脚趾都磨破了。……解缎带的时候，轻一点。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_dressing_premiere_champagne",
+      "title": "首演谢幕后的香槟",
+      "location_ids": [
+        "loc_ballerina_dressing_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1380,
+      "beats": [
+        "首演谢幕后，化妆间里堆满了花束，首席舞者还穿着纱裙，倒了两杯香槟，坐在镜前看着镜子里的人。",
+        "首席舞者举杯问：今晚满场的人都在看我，我只想要一个人的掌声。……你肯不肯关上门，再给我一次？"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_dressing_morning_barre",
+      "title": "清晨扶把练功",
+      "location_ids": [
+        "loc_ballerina_dressing_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 480,
+      "beats": [
+        "清晨的化妆间里，首席舞者扶着墙边的把杆压腿，紧身练功服勾出纤长的腰线，足尖绷得笔直。",
+        "首席舞者从镜子里看着人：过来，扶住我的腰。……手要稳，我说松开再松开。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -1912,6 +1984,15 @@
         "loc_director_box_lounge"
       ],
       "text": "{npc.name}在二层皇家包厢扶手前缓缓放下双筒观剧镜，沉静而深邃地凝视着舞台中央即将到来的惊世脱困一刻。"
+    },
+    {
+      "id": "hook_celeste_dressing_flowers",
+      "kind": "approach",
+      "slot": "char_celeste_ballerina",
+      "location_ids": [
+        "loc_ballerina_dressing_room"
+      ],
+      "text": "{npc.name}倚在化妆间门口，纱裙还没换：花太多了，屋里放不下。进来帮我挑一束最喜欢的。"
     }
   ],
   "twists": [

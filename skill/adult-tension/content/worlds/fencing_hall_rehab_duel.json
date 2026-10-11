@@ -1376,13 +1376,64 @@
    "hook_ids": [],
    "id": "act_medical_room_knee_wrap",
    "location_ids": [
-    "loc_subterranean_fire_exit"
+    "loc_fencing_medical_room"
    ],
    "start_minute": 1320,
    "tags": [
     "intimate"
    ],
    "title": "医疗室灯下重新缠护膝"
+  },
+  {
+   "beats": [
+    "训练结束，女剑客坐在理疗床边，把剑道服的裤腿卷到大腿根，雪白的腿上一道道全是剑尖留下的红印。",
+    "女剑客别开脸，把冰袋塞过来：自己够不着。……手放上来之前先说一声，不许偷偷碰。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_medical_ice_pack",
+   "location_ids": [
+    "loc_fencing_medical_room"
+   ],
+   "start_minute": 1260,
+   "tags": [
+    "intimate"
+   ],
+   "title": "赛后替女剑客冰敷大腿"
+  },
+  {
+   "beats": [
+    "医疗室的门反锁了，女剑客还穿着白色击剑服，护面夹在腋下，额前的碎发被汗粘成一缕一缕。",
+    "女剑客瞪着人问：你要是想亲，就直说。听见回答，才把护面一扔扑上来，击剑服的拉链被拉开一半。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_medical_mask_off",
+   "location_ids": [
+    "loc_fencing_medical_room"
+   ],
+   "start_minute": 1330,
+   "tags": [
+    "intimate"
+   ],
+   "title": "摘下护面的那个吻"
+  },
+  {
+   "beats": [
+    "清晨的医疗室里，女剑客趴在理疗床上，紧身训练服勾出腰臀的线条，让人替自己压腿拉伸。",
+    "压到最深处，女剑客把脸埋在枕头里闷声说：再往下一点……疼了我会喊，喊了你就停。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_medical_morning_stretch",
+   "location_ids": [
+    "loc_fencing_medical_room"
+   ],
+   "start_minute": 420,
+   "tags": [
+    "intimate"
+   ],
+   "title": "清晨替女剑客压腿拉伸"
   }
  ],
  "default_npc_gender_mix": {
@@ -1474,6 +1525,15 @@
    "location_ids": [],
    "slot": "char_heroine_sheng_chu_xue",
    "text": "当冷轧钢架在力矩声中崩开的一刹那，那抹自毛毯掩护中顺势优雅后滚翻跃出、傲骨凌霜的花剑女皇身影，将怎样书写这场地下剑馆的绝境生还传奇？"
+  },
+  {
+   "id": "hook_shengchuxue_ice_pack",
+   "kind": "approach",
+   "location_ids": [
+    "loc_fencing_medical_room"
+   ],
+   "slot": "char_heroine_sheng_chu_xue",
+   "text": "{npc.name}靠在医疗室门框上，把冰袋往人怀里一扔：膝盖又肿了。……别愣着，进来帮我。"
   }
  ],
  "id": "fencing_hall_rehab_duel",
@@ -1486,7 +1546,8 @@
    "detail": "十四米长、两米宽国际标准铝合金编织导电金属网剑道，平铺于地下二层高强度防震龙骨上。道心正上方悬挂两百公斤重型双面LED计分屏，此时屏体失控砸落，右侧重型三角钢构悬臂卡脚深深咬入剑道边缘两毫米接地凹槽中，形成重达两百公斤的刚性死锁剪刀口。",
    "exits": [
     "loc_fencing_control_booth",
-    "loc_subterranean_fire_exit"
+    "loc_subterranean_fire_exit",
+    "loc_fencing_medical_room"
    ],
    "id": "loc_fencing_piste_one",
    "name": "地下剑馆一号标准金属比赛剑道",
@@ -1547,6 +1608,26 @@
    "witnesses": [
     "bg_electrician_du_jian_qiang"
    ]
+  },
+  {
+   "affordances": [
+    "坐在理疗床边替女剑客冰敷",
+    "替女剑客缠护膝",
+    "把医疗室的门反锁"
+   ],
+   "detail": "剑道边上的一间小医疗室，一张理疗床、一台制冰机、墙上挂着护具和绷带，门可以从里面反锁。",
+   "exits": [
+    "loc_fencing_piste_one"
+   ],
+   "id": "loc_fencing_medical_room",
+   "name": "剑馆医疗室",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "只开一盏理疗灯，外面剑道上的灯一关，这里就只剩两个人的影子，谁的脸红都藏不住。",
+   "witnesses": []
   }
  ],
  "name_pools": {

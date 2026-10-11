@@ -1252,6 +1252,57 @@
     "intimate"
    ],
    "title": "更衣舱拆下抗荷服"
+  },
+  {
+   "beats": [
+    "宿舍舱里，王牌机师把两只神经同步头环扔到床上，自己先戴上一只，紧身驾驶服还没换下来。",
+    "王牌机师把另一只递过来：同步率测出来高了，你就别想抵赖。……戴不戴，你自己选。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_quarters_sync_headset",
+   "location_ids": [
+    "loc_ace_pilot_quarters"
+   ],
+   "start_minute": 1240,
+   "tags": [
+    "intimate"
+   ],
+   "title": "宿舍里的同步率对练"
+  },
+  {
+   "beats": [
+    "出击回来，宿舍舱的淋浴间雾气腾腾，王牌机师背对着门站在水下，驾驶服褪到了腰间。",
+    "王牌机师没有回头：想进来，就先说一声。听见人应了，才伸手把人拉进水里，后腰的勒痕在热水里泛红。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_quarters_post_sortie_shower",
+   "location_ids": [
+    "loc_ace_pilot_quarters"
+   ],
+   "start_minute": 1360,
+   "tags": [
+    "intimate"
+   ],
+   "title": "出击回来的淋浴间"
+  },
+  {
+   "beats": [
+    "一夜没有警报，王牌机师在宿舍舱的窄床上醒来，舷窗外是机库的灯，一条腿还搭在人身上。",
+    "王牌机师把脸埋进人颈窝里嘟囔：今天没有出击任务。……你要是愿意，昨晚没做完的事接着做。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_quarters_quiet_morning",
+   "location_ids": [
+    "loc_ace_pilot_quarters"
+   ],
+   "start_minute": 420,
+   "tags": [
+    "intimate"
+   ],
+   "title": "一夜没有警报的早晨"
   }
  ],
  "default_npc_gender_mix": {
@@ -1345,6 +1396,15 @@
    "location_ids": [],
    "slot": "char_elena_medical_officer",
    "text": "{npc.name}拿着体检板走过来，笔尖在名单上一点：轮到你了，坐下，袖子挽起来。"
+  },
+  {
+   "id": "hook_sylvia_quarters_debrief",
+   "kind": "approach",
+   "location_ids": [
+    "loc_ace_pilot_quarters"
+   ],
+   "slot": "char_sylvia_ace_pilot",
+   "text": "{npc.name}倚在宿舍舱门口，驾驶服拉链拉到一半：今晚的复盘，在我这儿做。"
   }
  ],
  "id": "mecha_valkyrie_cockpit_synchronize",
@@ -1406,7 +1466,8 @@
    "detail": "深埋于栈桥下方六米深处之中央液压泵房，重型三相电动机轰鸣运转，地面积存一层受损溢出的防燃液压润滑油。",
    "exits": [
     "loc_gantry_overhead_bridge",
-    "loc_emergency_decompression_airlock"
+    "loc_emergency_decompression_airlock",
+    "loc_ace_pilot_quarters"
    ],
    "id": "loc_ground_hydraulic_station",
    "name": "地下液压动力机房",
@@ -1444,6 +1505,26 @@
     "bg_anna_telemetry_tech",
     "bg_karl_hazmat_squad_leader"
    ]
+  },
+  {
+   "affordances": [
+    "陪王牌机师复盘今天的出击",
+    "替王牌机师拉开驾驶服的拉链",
+    "把舱门的指纹锁按上"
+   ],
+   "detail": "机库上层的一间单人宿舍舱，一张窄床、一面贴满出击记录的墙、一间小小的淋浴间，舱门有指纹锁。",
+   "exits": [
+    "loc_ground_hydraulic_station"
+   ],
+   "id": "loc_ace_pilot_quarters",
+   "name": "王牌机师的单人宿舍舱",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "舷窗外是整备机库的冷白灯光，舱里只开一盏床头灯，舱门一锁，警报声都隔在外面。",
+   "witnesses": []
   }
  ],
  "name_pools": {

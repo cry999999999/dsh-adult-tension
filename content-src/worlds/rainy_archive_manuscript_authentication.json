@@ -286,7 +286,8 @@
       "exits": [
         "loc_archive_ground_gallery",
         "loc_vip_examination_hall",
-        "loc_underground_drainage_culvert"
+        "loc_underground_drainage_culvert",
+        "loc_archivist_garret"
       ],
       "affordances": [
         "展开防潮油蜡双层遮尘避水大氅构筑屏障",
@@ -347,6 +348,26 @@
         "press_shear_arm_collapse": "管网逆流涌浪不断撞击石门发出沉闷轰鸣"
       },
       "tags": []
+    },
+    {
+      "id": "loc_archivist_garret",
+      "name": "藏书楼顶的掌卷人阁楼",
+      "detail": "藏书楼最高一层的小阁楼，斜顶下一张木床、一张矮几、一只红泥小火炉，木窗推开就是江南的雨。",
+      "privacy": "private",
+      "visibility": "只点一盏台灯，雨声把整座藏书楼都罩住了，阁楼里的人说话不必压低声音。",
+      "witnesses": [],
+      "exits": [
+        "loc_scroll_mounting_studio"
+      ],
+      "affordances": [
+        "在矮几前陪掌卷人煮茶听雨",
+        "替掌卷人挽发",
+        "推开木窗看雨"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
+      ]
     }
   ],
   "character_templates": [
@@ -1619,18 +1640,69 @@
       "id": "act_studio_rain_night_sash",
       "title": "雨夜工坊理顺衣带",
       "location_ids": [
-        "loc_scroll_mounting_studio"
+        "loc_archivist_garret"
       ],
       "duration_minutes": 30,
       "start_minute": 1320,
       "beats": [
-        "雨夜的揭裱工坊只剩一盏台灯，掌卷人披着罩衣坐在案边，马面裙的抽绳还缠着铜槽咬出的毛边。",
+        "雨夜的阁楼只剩一盏台灯，掌卷人披着罩衣坐在案边，马面裙的抽绳还缠着铜槽咬出的毛边。",
         "掌卷人背过身，请人替自己把短衫背后那几根系带重新理顺，指尖每碰一下，案上的排笔就轻轻一颤。",
         "最后一根系带打好结时，掌卷人没有回头，只说雨还没停，今夜就别走了。"
       ],
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_garret_rain_tea",
+      "title": "阁楼里听雨煮茶",
+      "location_ids": [
+        "loc_archivist_garret"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1250,
+      "beats": [
+        "阁楼的木窗外下着梅雨，掌卷人换了一件素白棉布睡裙，跪坐在矮几前煮一壶白茶，头发松松挽着。",
+        "掌卷人把茶盏推过来，轻声说：雨这么大，渡船早停了。……你要是不想走，就别走。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_garret_ink_on_wrist",
+      "title": "在手腕内侧题一行小楷",
+      "location_ids": [
+        "loc_archivist_garret"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1340,
+      "beats": [
+        "掌卷人研好墨，拉过人的手腕，用小楷在内侧写了一行字，笔尖凉凉的，痒得人想缩手。",
+        "掌卷人搁下笔问：猜得出写的什么吗？猜不出，我就一个字一个字吻给你看……你说好，我才开始。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_garret_morning_hairpin",
+      "title": "清晨替掌卷人挽发",
+      "location_ids": [
+        "loc_archivist_garret"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 420,
+      "beats": [
+        "清晨，阁楼的窗缝透进一点潮湿的光，掌卷人坐在床边，长发散了满背，手里攥着一支木簪。",
+        "掌卷人把木簪递过来：我自己挽不好。……你来，挽得丑了我也戴着。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -1946,6 +2018,15 @@
       "slot": "char_zhou_wan_ning_assistant",
       "location_ids": [],
       "text": "{npc.name}撑着一把油纸伞小跑过来，把伞往这边倾了倾，自己半边肩膀淋在雨里。"
+    },
+    {
+      "id": "hook_song_garret_stairs",
+      "kind": "approach",
+      "slot": "char_song_zhixia_archivist",
+      "location_ids": [
+        "loc_archivist_garret"
+      ],
+      "text": "{npc.name}站在通往阁楼的木梯口，手里提着一壶茶：楼上清净。……上来坐坐吗？"
     }
   ],
   "twists": [

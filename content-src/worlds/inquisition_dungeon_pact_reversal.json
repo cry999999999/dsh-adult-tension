@@ -346,7 +346,7 @@
         "expression": "耳尖微热、下颌微扬，用审判长的冷淡口吻掩饰心慌",
         "desire_range": [
           2,
-          3
+          4
         ],
         "self_control_range": [
           3,
@@ -1469,6 +1469,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_vault_gloves_off",
+      "title": "暗阁里一根根摘下手套",
+      "location_ids": [
+        "loc_archive_secret_vault"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1200,
+      "beats": [
+        "暗阁的油灯下，女审判长坐在卷宗堆成的矮墙后面，慢慢摘下黑皮手套，一根手指一根手指地往下褪。",
+        "女审判长把手套搁在案卷上，伸出那只冰凉的手：在法庭上，没人碰过这只手。……你要不要试试？"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_vault_mock_trial",
+      "title": "暗阁里的私审",
+      "location_ids": [
+        "loc_archive_secret_vault"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1350,
+      "beats": [
+        "女审判长解了法袍，只穿着真丝内衬坐上高背椅，银白长发披下来，用羽毛笔点了点面前的人。",
+        "女审判长慢条斯理地说：今晚私设一庭，罪名是让本官分心。……认罪的话，就过来领罚，你不认我也不审。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_vault_dawn_bells",
+      "title": "晨钟响起之前",
+      "location_ids": [
+        "loc_archive_secret_vault"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 330,
+      "beats": [
+        "天还没亮，暗阁外传来远远的晨钟声，女审判长在窄榻上醒来，枕着人的肩，长发缠在两人之间。",
+        "女审判长没有睁眼：再响三声，我就要回去当审判官了。……这三声之前，我只是我。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -1574,7 +1625,7 @@
         "minutes": 1
       },
       "near": {
-        "text": "领口暗扣被铁栅刮歪，衣襟一路往下扯，再挣一下就要当众失了体面。",
+        "text": "领口暗扣被铁栅刮歪，法袍衣襟一路滑开，酥胸半露、香肩毕现，再挣一下就要当众失了体面。",
         "deadline_minutes": 2
       },
       "far": {
@@ -1928,6 +1979,15 @@
       "slot": "char_bishop_reynold",
       "location_ids": [],
       "text": "{npc.name}隔着铁栅慢慢转过身，祖母绿戒指在火光下一闪：深夜还留在法庭里？过来，让本主教看看是谁的人。"
+    },
+    {
+      "id": "hook_violette_vault_lamp",
+      "kind": "approach",
+      "slot": "char_inquisitor_violette",
+      "location_ids": [
+        "loc_archive_secret_vault"
+      ],
+      "text": "{npc.name}提着一盏琉璃油灯站在暗阁门口：今晚的卷宗太多。……进来，替我掌灯。"
     }
   ],
   "status": "released",

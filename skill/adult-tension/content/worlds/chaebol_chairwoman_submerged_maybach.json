@@ -1238,6 +1238,57 @@
     "intimate"
    ],
    "title": "休息室里替董事长解开湿透的真丝衬衫"
+  },
+  {
+   "beats": [
+    "休息室里，董事长踢掉高跟鞋，穿着真丝衬衫盘腿坐在沙发上改董事会纪要，丝袜包着的脚趾一下下勾着。",
+    "董事长头也不抬：你站了三年的门，今天坐下来。……坐我旁边，我改完这一页，就听你的。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_rest_room_board_minutes",
+   "location_ids": [
+    "loc_chairwoman_rest_room"
+   ],
+   "start_minute": 1230,
+   "tags": [
+    "intimate"
+   ],
+   "title": "陪董事长改董事会纪要"
+  },
+  {
+   "beats": [
+    "董事长倒了两杯威士忌，赤脚站在落地窗前，整座城市的灯在脚下铺开，真丝衬衫只扣了中间两颗。",
+    "董事长回过头：在董事会我是董事长。……在这里，我只想当二十一岁的自己，你陪不陪？"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_rest_room_whisky_city",
+   "location_ids": [
+    "loc_chairwoman_rest_room"
+   ],
+   "start_minute": 1380,
+   "tags": [
+    "intimate"
+   ],
+   "title": "顶楼的夜景和威士忌"
+  },
+  {
+   "beats": [
+    "清晨，董事长裹着人的西装外套站在镜子前，替人一圈一圈打领带，打歪了又拆开重来。",
+    "董事长踮脚把领结推上去：以后每天早上都我来打。……这是董事长的命令。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_rest_room_morning_tie",
+   "location_ids": [
+    "loc_chairwoman_rest_room"
+   ],
+   "start_minute": 450,
+   "tags": [
+    "intimate"
+   ],
+   "title": "替保镖打领带"
   }
  ],
  "default_npc_gender_mix": {
@@ -1422,6 +1473,15 @@
    ],
    "slot": "personal_bodyguard",
    "text": "{npc.name}解开袖扣，露出小臂上一道旧伤疤：老董事长出事那年，我替大小姐挡的。你想知道那天的事？"
+  },
+  {
+   "id": "hook_gu_rest_room_door",
+   "kind": "approach",
+   "location_ids": [
+    "loc_chairwoman_rest_room"
+   ],
+   "slot": "chairwoman_gu",
+   "text": "{npc.name}推开休息室的门，回头看人：门外不用守了。……进来，陪我坐一会儿。"
   }
  ],
  "id": "chaebol_chairwoman_submerged_maybach",

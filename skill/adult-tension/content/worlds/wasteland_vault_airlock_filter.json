@@ -465,7 +465,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "背靠背哈气擦拭面罩水雾，手把手稳住钛铝支架合力下压撬转伞齿轮。",
     "dislikes": [
@@ -1269,6 +1269,57 @@
     "intimate"
    ],
    "title": "洗消室里替净化师解防化服"
+  },
+  {
+   "beats": [
+    "宿舍舱里，净化师换了一件洗得发白的旧T恤，蹲在补光灯下给番茄苗浇水，高马尾扫过脖颈。",
+    "净化师小心摘下第一颗红透的小番茄，递到人嘴边：避难所里唯一一颗。……甜吗？甜的话，再给我一个吻。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_quarters_tomato_seedling",
+   "location_ids": [
+    "loc_purifier_quarters"
+   ],
+   "start_minute": 1240,
+   "tags": [
+    "intimate"
+   ],
+   "title": "补光灯下的番茄苗"
+  },
+  {
+   "beats": [
+    "净化师按下磁带机的播放键，沙沙的杂音里响起一首末日前的舞曲，光着脚朝人伸出手。",
+    "跳着跳着，净化师把额头抵过来：地表已经没有人跳舞了。……今晚跳完，你想留下的话，我也想。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_quarters_cassette_dance",
+   "location_ids": [
+    "loc_purifier_quarters"
+   ],
+   "start_minute": 1360,
+   "tags": [
+    "intimate"
+   ],
+   "title": "旧磁带机里的舞曲"
+  },
+  {
+   "beats": [
+    "净水配额日的早上，净化师打了一盆干净的温水，拧了毛巾，先替人擦脸，又让人替自己擦后颈。",
+    "净化师笑着说：一个月就这一盆干净水。……分给你一半，是我今年做过最奢侈的事。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_quarters_clean_water_day",
+   "location_ids": [
+    "loc_purifier_quarters"
+   ],
+   "start_minute": 450,
+   "tags": [
+    "intimate"
+   ],
+   "title": "净水配额日"
   }
  ],
  "default_npc_gender_mix": {
@@ -1459,6 +1510,15 @@
    "location_ids": [],
    "slot": "council_inspector_yan",
    "text": "{npc.name}夹着一支特供香烟踱过来，烟头朝人点了点：你是哪个班组的？过来，我问你几句话。"
+  },
+  {
+   "id": "hook_linche_quarters_door",
+   "kind": "approach",
+   "location_ids": [
+    "loc_purifier_quarters"
+   ],
+   "slot": "vault_purification_specialist_lin_che",
+   "text": "{npc.name}靠在宿舍舱门上，晃了晃手里的一颗小番茄：熟了一颗。……进来，分你一半。"
   }
  ],
  "id": "wasteland_vault_airlock_filter",
@@ -1499,7 +1559,8 @@
    "detail": "长达五十米的环形不锈钢消杀通廊，安装有数十组高压去污喷嘴与紫外线灭菌灯，连接气闸内门与避难所核心生活区，地面铺设带排毒地漏的花纹钢板。",
    "exits": [
     "loc_airlock_transit_chamber",
-    "loc_ventilation_shaft_substation"
+    "loc_ventilation_shaft_substation",
+    "loc_purifier_quarters"
    ],
    "id": "loc_vault_decontamination_corridor",
    "name": "喷淋消杀与防辐射过渡长廊",
@@ -1542,6 +1603,26 @@
    "witnesses": [
     "bg_filtration_runner_xiao_wu"
    ]
+  },
+  {
+   "affordances": [
+    "陪净化师给番茄苗浇水",
+    "替净化师拉下防化服拉链",
+    "锁上宿舍舱的门"
+   ],
+   "detail": "消杀长廊尽头的一间宿舍舱，一张铁架床、一盆在补光灯下长着的番茄苗、一台老旧的磁带机，墙上贴着地表的旧照片。",
+   "exits": [
+    "loc_vault_decontamination_corridor"
+   ],
+   "id": "loc_purifier_quarters",
+   "name": "净化师的宿舍舱",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "补光灯是唯一的暖光，舱门一锁，盖革计数器的咔哒声也停了，只剩滤网风扇慢慢地转。",
+   "witnesses": []
   }
  ],
  "name_pools": {

@@ -1252,6 +1252,57 @@
     "intimate"
    ],
    "title": "避风方舱换下破裙"
+  },
+  {
+   "beats": [
+    "公寓的地毯上散着一堆指甲油，辣妹穿着宽松的T恤和热裤，把一只脚搭在人膝上晃来晃去。",
+    "辣妹把一瓶亮粉色塞过来：涂歪了要罚。……罚什么？你先答应，答应了我再告诉你。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_apartment_nail_polish",
+   "location_ids": [
+    "loc_gyaru_apartment"
+   ],
+   "start_minute": 1250,
+   "tags": [
+    "intimate"
+   ],
+   "title": "替辣妹涂脚指甲"
+  },
+  {
+   "beats": [
+    "辣妹卸了浓妆，素着一张脸窝在沙发里，假睫毛扔在茶几上，看起来像把白天那层壳也一起卸了。",
+    "辣妹拽住人的袖子小声问：素颜也可以亲吗？……要说真话。听见回答，才红着脸凑了上去。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_apartment_bare_face",
+   "location_ids": [
+    "loc_gyaru_apartment"
+   ],
+   "start_minute": 1380,
+   "tags": [
+    "intimate"
+   ],
+   "title": "卸了妆的素颜"
+  },
+  {
+   "beats": [
+    "早上辣妹套着人的连帽衫从卧室出来，袖子长得盖住手，下摆底下露出两条光着的长腿。",
+    "辣妹把下巴搁在人肩上打了个哈欠：衣服我不还了。……还有，昨晚那样，今天还想再来一次吗？"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_apartment_borrowed_hoodie",
+   "location_ids": [
+    "loc_gyaru_apartment"
+   ],
+   "start_minute": 480,
+   "tags": [
+    "intimate"
+   ],
+   "title": "穿着人的连帽衫醒来"
   }
  ],
  "default_npc_gender_mix": {
@@ -1345,6 +1396,15 @@
    "location_ids": [],
    "slot": "char_mayu_doctor",
    "text": "{npc.name}抖开一条保温毯走过来，替人披在肩上，顺手掖好了领口。"
+  },
+  {
+   "id": "hook_mina_apartment_keys",
+   "kind": "approach",
+   "location_ids": [
+    "loc_gyaru_apartment"
+   ],
+   "slot": "char_mina_gyaru",
+   "text": "{npc.name}晃着钥匙站在公寓门口，嚼着口香糖：进不进来？我家的指甲油多得能开店。"
   }
  ],
  "id": "gyaru_classmate_stranded_commuter",
@@ -1406,7 +1466,8 @@
    "detail": "坐落于大桥主塔下方之轨道供电维护平台，数台重型变压开关柜轰鸣运转，地面积存一层受台风吹入的雨水与防锈矿物油污。",
    "exits": [
     "loc_highbridge_maintenance_walkway",
-    "loc_substation_refuge_cabin"
+    "loc_substation_refuge_cabin",
+    "loc_gyaru_apartment"
    ],
    "id": "loc_traction_substation_platform",
    "name": "桥墩牵引变电大堂平台",
@@ -1444,6 +1505,26 @@
     "bg_kazuki_firefighter",
     "bg_emi_paramedic"
    ]
+  },
+  {
+   "affordances": [
+    "坐在地毯上替辣妹涂指甲",
+    "陪辣妹在沙发上卸妆",
+    "拉上落地窗的窗帘"
+   ],
+   "detail": "江边一栋公寓的小一居，地毯上堆着时装杂志和指甲油，衣架上挂满亮片短裙，落地窗外是那条单轨线。",
+   "exits": [
+    "loc_traction_substation_platform"
+   ],
+   "id": "loc_gyaru_apartment",
+   "name": "辣妹的单身公寓",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "只开一盏粉色的落地灯，窗帘一拉，整间屋子只剩两个人和一屋子香水味。",
+   "witnesses": []
   }
  ],
  "name_pools": {

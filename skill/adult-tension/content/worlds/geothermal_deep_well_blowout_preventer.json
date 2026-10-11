@@ -466,7 +466,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "被从身后紧抱稳住重心抗击气浪，双手叠合在合金摇把上一同向死角死转。",
     "dislikes": [
@@ -1264,13 +1264,64 @@
    "hook_ids": [],
    "id": "act_doghouse_mud_wipe",
    "location_ids": [
-    "loc_drill_floor_control_doghouse"
+    "loc_geologist_prefab_cabin"
    ],
    "start_minute": 1430,
    "tags": [
     "intimate"
    ],
    "title": "值班板房里替女总地质师擦去泥浆"
+  },
+  {
+   "beats": [
+    "板房里，总地质师打了一盆冒着热气的温泉水，把冻僵的双脚泡进去，又拍了拍身边的小板凳。",
+    "总地质师说：一起泡，地热田唯一的福利。……泡暖和了，有些话我想当面跟你说。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_prefab_spring_water_footbath",
+   "location_ids": [
+    "loc_geologist_prefab_cabin"
+   ],
+   "start_minute": 1220,
+   "tags": [
+    "intimate"
+   ],
+   "title": "温泉水泡脚"
+  },
+  {
+   "beats": [
+    "四千米的夜里，总地质师坐在铁架床边吸着便携氧气，摘下面罩时喘得厉害，脸颊红得发烫。",
+    "总地质师把面罩递给人，自己却凑过来：先说好，喘不上来我会停。……再亲一下试试，你也想吗？"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_prefab_oxygen_kiss",
+   "location_ids": [
+    "loc_geologist_prefab_cabin"
+   ],
+   "start_minute": 1360,
+   "tags": [
+    "intimate"
+   ],
+   "title": "缺氧里的一个吻"
+  },
+  {
+   "beats": [
+    "天蒙蒙亮，总地质师裹着军大衣推开板房的门，窗外那眼野温泉冒着白汽，铺了一层薄霜。",
+    "总地质师回头看人：钻井队七点上班，现在去泡一会儿，没人看见。……你来不来？"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_prefab_hot_spring_dawn",
+   "location_ids": [
+    "loc_geologist_prefab_cabin"
+   ],
+   "start_minute": 380,
+   "tags": [
+    "intimate"
+   ],
+   "title": "野温泉的清晨"
   }
  ],
  "default_npc_gender_mix": {
@@ -1468,6 +1519,15 @@
    "location_ids": [],
    "slot": "geologist_chu_ningshuang",
    "text": "{npc.name}收工后坐在井场边那眼野温泉旁，裤腿挽到膝盖泡着脚，冲人拍拍身边的石头：坐，高原上就这点好，下了班有热水。"
+  },
+  {
+   "id": "hook_ningshuang_prefab_stove",
+   "kind": "approach",
+   "location_ids": [
+    "loc_geologist_prefab_cabin"
+   ],
+   "slot": "geologist_chu_ningshuang",
+   "text": "{npc.name}站在板房门口，炉子上的水壶嘶嘶冒气：高原夜里冷。……进来烤烤火。"
   }
  ],
  "id": "geothermal_deep_well_blowout_preventer",
@@ -1508,7 +1568,8 @@
    "detail": "位于钻台上方边缘的防爆控制室走道，厚重的双层防弹防蒸汽钢化玻璃将下方狂暴喷射的方井隔绝在外，控制台自毁红色旋转警报灯将四周雨幕染成血色。",
    "exits": [
     "loc_blowout_preventer_cellar_deadlock",
-    "loc_mud_tank_manifold_catwalk"
+    "loc_mud_tank_manifold_catwalk",
+    "loc_geologist_prefab_cabin"
    ],
    "id": "loc_drill_floor_control_doghouse",
    "name": "钻台防爆司钻控制值班室长廊",
@@ -1551,6 +1612,26 @@
    "witnesses": [
     "bg_mud_shaker_cadet_xiao_wu"
    ]
+  },
+  {
+   "affordances": [
+    "陪总地质师看岩芯照片",
+    "替总地质师擦去肩背的泥浆",
+    "插上板房的门闩"
+   ],
+   "detail": "钻台下风处的一间值班板房，一张铁架床、一只烧着温泉水的铁炉、满墙钉着岩芯照片，窗外就是那眼野温泉。",
+   "exits": [
+    "loc_drill_floor_control_doghouse"
+   ],
+   "id": "loc_geologist_prefab_cabin",
+   "name": "总地质师的值班板房",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "铁炉的火光暖烘烘的，窗外硫磺味的白汽一缕缕飘过，门闩一插，高原的夜风就只剩门缝里的呜呜声。",
+   "witnesses": []
   }
  ],
  "name_pools": {

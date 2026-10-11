@@ -458,7 +458,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "镜墙前由人替自己拆下珍珠暗扣的近身位",
     "dislikes": [
@@ -1215,13 +1215,64 @@
    "hook_ids": [],
    "id": "act_closet_pearl_unhook",
    "location_ids": [
-    "loc_bedroom_walkin_closet"
+    "loc_heiress_master_bedroom"
    ],
    "start_minute": 1430,
    "tags": [
     "intimate"
    ],
    "title": "衣帽间里替千金拆下变形珍珠暗扣"
+  },
+  {
+   "beats": [
+    "主卧的浴缸放满了热水，千金泡在撒了玫瑰花瓣的水里，香槟杯搁在缸沿，只露出湿漉漉的肩头。",
+    "千金抬眼看着门口的人：水还很热。……想进来，就先问我；我说好，你再脱。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_master_bedroom_bath",
+   "location_ids": [
+    "loc_heiress_master_bedroom"
+   ],
+   "start_minute": 1300,
+   "tags": [
+    "intimate"
+   ],
+   "title": "浴缸里的香槟"
+  },
+  {
+   "beats": [
+    "千金坐在梳妆台前，背对着人撩起长卷发，真丝晨袍滑到肩下，手里捏着一条钻石项链。",
+    "项链扣好，千金握住那只还停在颈后的手，从镜子里看人：扣好了，就别急着拿开。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_master_bedroom_necklace",
+   "location_ids": [
+    "loc_heiress_master_bedroom"
+   ],
+   "start_minute": 1150,
+   "tags": [
+    "intimate"
+   ],
+   "title": "替千金扣项链"
+  },
+  {
+   "beats": [
+    "半山的晨光照进落地窗，海面一片银白，千金在大床上醒来，被单裹到胸口，伸手去摸身边的人。",
+    "千金把脸埋进枕头：今天不见董事会，不见律师。……今天只见你一个。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_master_bedroom_sea_morning",
+   "location_ids": [
+    "loc_heiress_master_bedroom"
+   ],
+   "start_minute": 480,
+   "tags": [
+    "intimate"
+   ],
+   "title": "海景卧室的早晨"
   }
  ],
  "default_npc_gender_mix": {
@@ -1310,6 +1361,15 @@
    "location_ids": [],
    "slot": "char_butler_qin",
    "text": "{npc.name}端着银托盘走过来，扶了扶金丝眼镜：小姐吩咐给您备了热茶。宅子里的路，老朽带您认一认。"
+  },
+  {
+   "id": "hook_snow_bedroom_door",
+   "kind": "approach",
+   "location_ids": [
+    "loc_heiress_master_bedroom"
+   ],
+   "slot": "char_heiress_snow",
+   "text": "{npc.name}倚在主卧门边，真丝晨袍的带子松松系着：保镖换班了。……进来，陪我把这杯香槟喝完。"
   }
  ],
  "id": "heiress_panic_room_stalemate",
@@ -1346,7 +1406,8 @@
    "detail": "两百平米奢华主卧内置多功能开阔衣帽区，高定华服与水晶展柜错落，此时已被荷枪实弹雇佣兵粗暴闯入翻倒一片。",
    "exits": [
     "loc_panic_room_core",
-    "loc_hallway_upper_balcony"
+    "loc_hallway_upper_balcony",
+    "loc_heiress_master_bedroom"
    ],
    "id": "loc_bedroom_walkin_closet",
    "name": "主卧挑高衣帽间",
@@ -1404,6 +1465,26 @@
     "bg_bastian_plumber",
     "bg_grete_medic"
    ]
+  },
+  {
+   "affordances": [
+    "陪千金在落地窗前喝香槟",
+    "替千金扣上项链",
+    "合上落地窗的窗帘"
+   ],
+   "detail": "豪宅二层的主卧，一张能睡四个人的大床、一整面朝海的落地窗、连着一间大理石浴室和那间挑高衣帽间。",
+   "exits": [
+    "loc_bedroom_walkin_closet"
+   ],
+   "id": "loc_heiress_master_bedroom",
+   "name": "千金的主卧",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "落地窗外是半山的夜海，窗帘一合，整间卧室只剩床头一盏水晶灯。",
+   "witnesses": []
   }
  ],
  "name_pools": {

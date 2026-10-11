@@ -449,7 +449,7 @@
         "expression": "脱险后温柔地为侍卫长拂去肩头落雪与冷汗，偏过绯红面庞柔声道‘侍卫长……今日之命，皆卿所赐’。",
         "desire_range": [
           2,
-          3
+          4
         ],
         "self_control_range": [
           4,
@@ -1561,8 +1561,7 @@
       "hook_ids": [],
       "start_minute": 1050,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1580,8 +1579,7 @@
       "hook_ids": [],
       "start_minute": 1055,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1599,8 +1597,7 @@
       "hook_ids": [],
       "start_minute": 1060,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1676,6 +1673,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_vault_last_waltz",
+      "title": "收藏室里的最后一支华尔兹",
+      "location_ids": [
+        "loc_antique_vault_chamber"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1240,
+      "beats": [
+        "古董收藏室里，长皇女给旧八音盒上了发条，一支宫廷华尔兹响起来，墨绿骑马服换成了一件旧日的舞会长裙。",
+        "长皇女向人伸出戴着长手套的手：帝国没了，舞还是要跳的。……跳完这一支，我想听你说一个字，好或不好。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_vault_mulled_wine",
+      "title": "壁炉边的热红酒",
+      "location_ids": [
+        "loc_antique_vault_chamber"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1370,
+      "beats": [
+        "壁炉里的松木噼啪作响，长皇女坐在熊皮地毯上，用银勺搅着一壶热红酒，长发散下来垂到腰际。",
+        "长皇女把杯子递过来：复辟的密信不会来了。……我不想再等一封信，我想要一个人，你愿意吗？"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_vault_snow_window",
+      "title": "雪光里醒来",
+      "location_ids": [
+        "loc_antique_vault_chamber"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 450,
+      "beats": [
+        "雪崩后的第三天早晨，阳光照在雪峰上，收藏室的透气石窗白得晃眼，长皇女在毛毯里醒来，枕着人的胳膊。",
+        "长皇女闭着眼说：从前在皇宫，有一百个人叫我起床。……现在只有你，可我一点也不想起。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -2113,6 +2161,15 @@
       "slot": "sergeant_andrei",
       "location_ids": [],
       "text": "{npc.name}坐在马厩边擦着佩剑，头也不抬：城破那一夜，这把剑砍断过三根门闩。想学的话，我教你握剑。"
+    },
+    {
+      "id": "hook_helena_vault_music_box",
+      "kind": "approach",
+      "slot": "princess_helena",
+      "location_ids": [
+        "loc_antique_vault_chamber"
+      ],
+      "text": "{npc.name}站在收藏室门口，手里托着一只旧八音盒：发条上好了。……进来，陪我跳一支。"
     }
   ],
   "twists": [

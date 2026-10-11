@@ -1046,7 +1046,8 @@
       ],
       "exits": [
         "loc_gantry_overhead_bridge",
-        "loc_emergency_decompression_airlock"
+        "loc_emergency_decompression_airlock",
+        "loc_ace_pilot_quarters"
       ],
       "affordances": [
         "扳动铸铁旁通回油阀强制降低整套管路两兆帕油压",
@@ -1081,6 +1082,26 @@
         "press_airlock_gate_autolock": "全封闭气闸大门处于倒计时自动锁定待避险状态"
       },
       "tags": []
+    },
+    {
+      "id": "loc_ace_pilot_quarters",
+      "name": "王牌机师的单人宿舍舱",
+      "detail": "机库上层的一间单人宿舍舱，一张窄床、一面贴满出击记录的墙、一间小小的淋浴间，舱门有指纹锁。",
+      "privacy": "private",
+      "visibility": "舷窗外是整备机库的冷白灯光，舱里只开一盏床头灯，舱门一锁，警报声都隔在外面。",
+      "witnesses": [],
+      "exits": [
+        "loc_ground_hydraulic_station"
+      ],
+      "affordances": [
+        "陪王牌机师复盘今天的出击",
+        "替王牌机师拉开驾驶服的拉链",
+        "把舱门的指纹锁按上"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
+      ]
     }
   ],
   "cast_combos": [
@@ -1500,6 +1521,57 @@
         "警报解除后的减压舱只剩一盏红色应急灯，王牌机师靠在铁柜上，抗荷服后腰的接驳扣还歪着。",
         "王牌机师背过身，请人替自己把后腰的扣件一节节拆开，导电内衬每松一寸，紧绷的肩胛就放下一分。",
         "最后一节扣件松开时，王牌机师没有回头，只抬手按下了舱门的锁。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_quarters_sync_headset",
+      "title": "宿舍里的同步率对练",
+      "location_ids": [
+        "loc_ace_pilot_quarters"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1240,
+      "beats": [
+        "宿舍舱里，王牌机师把两只神经同步头环扔到床上，自己先戴上一只，紧身驾驶服还没换下来。",
+        "王牌机师把另一只递过来：同步率测出来高了，你就别想抵赖。……戴不戴，你自己选。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_quarters_post_sortie_shower",
+      "title": "出击回来的淋浴间",
+      "location_ids": [
+        "loc_ace_pilot_quarters"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1360,
+      "beats": [
+        "出击回来，宿舍舱的淋浴间雾气腾腾，王牌机师背对着门站在水下，驾驶服褪到了腰间。",
+        "王牌机师没有回头：想进来，就先说一声。听见人应了，才伸手把人拉进水里，后腰的勒痕在热水里泛红。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_quarters_quiet_morning",
+      "title": "一夜没有警报的早晨",
+      "location_ids": [
+        "loc_ace_pilot_quarters"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 420,
+      "beats": [
+        "一夜没有警报，王牌机师在宿舍舱的窄床上醒来，舷窗外是机库的灯，一条腿还搭在人身上。",
+        "王牌机师把脸埋进人颈窝里嘟囔：今天没有出击任务。……你要是愿意，昨晚没做完的事接着做。"
       ],
       "tags": [
         "intimate"
@@ -1990,6 +2062,15 @@
       "slot": "char_elena_medical_officer",
       "location_ids": [],
       "text": "{npc.name}拿着体检板走过来，笔尖在名单上一点：轮到你了，坐下，袖子挽起来。"
+    },
+    {
+      "id": "hook_sylvia_quarters_debrief",
+      "kind": "approach",
+      "slot": "char_sylvia_ace_pilot",
+      "location_ids": [
+        "loc_ace_pilot_quarters"
+      ],
+      "text": "{npc.name}倚在宿舍舱门口，驾驶服拉链拉到一半：今晚的复盘，在我这儿做。"
     }
   ],
   "status": "released",

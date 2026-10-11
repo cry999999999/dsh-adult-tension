@@ -1505,6 +1505,57 @@
         "intimate"
       ],
       "hook_ids": []
+    },
+    {
+      "id": "act_grotto_hot_spring",
+      "title": "石穴温泉里替圣女擦背",
+      "location_ids": [
+        "loc_saintess_refuge_grotto"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1350,
+      "beats": [
+        "石穴深处有一眼温泉，圣女褪下沾满瘴尘的神袍，只披一层薄纱坐在池边，水汽把脸颊蒸得泛红。",
+        "圣女回头问：替我擦一擦背，可以吗？得到回答后才让薄纱滑下肩头，温水顺着脊背淌下去，圣女轻轻吸了口气。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_grotto_dawn_vigil",
+      "title": "晨祷钟响前赖在怀里",
+      "location_ids": [
+        "loc_saintess_refuge_grotto"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 360,
+      "beats": [
+        "晨祷钟还没响，石床窄窄的，圣女醒来时整个人蜷在人怀里，神袍皱成一团压在腰下。",
+        "圣女没有起身，把脸埋进人胸口低声说：主会原谅我多躺一刻钟的。……你也不许先走。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_grotto_prayer_sash",
+      "title": "用祈祷绶带系住手腕",
+      "location_ids": [
+        "loc_saintess_refuge_grotto"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1420,
+      "beats": [
+        "圣女取下一条白色祈祷绶带，在人手腕上松松绕了两圈，眼里带着从没在信众面前露过的笑意。",
+        "圣女先把话说在前面：说一声“阿门”就解开。看人点了头，才俯下身，把吻落在被系住的手腕内侧。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -1990,6 +2041,15 @@
       "slot": "char_elena_healer",
       "location_ids": [],
       "text": "{npc.name}提着药箱走近，不由分说地拉过手腕按住脉门，眉头微微皱起。"
+    },
+    {
+      "id": "hook_cecilia_grotto_door",
+      "kind": "approach",
+      "slot": "char_cecilia_saintess",
+      "location_ids": [
+        "loc_saintess_refuge_grotto"
+      ],
+      "text": "{npc.name}站在石穴门口回头看了一眼：外面的瘴气还没散。……进来吧，门闩我来推。"
     }
   ],
   "status": "released",

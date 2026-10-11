@@ -465,7 +465,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "被对方从身后抱住腰身稳住重心，双手叠合在长摇把上一同猛压旋转。",
     "dislikes": [
@@ -1263,13 +1263,64 @@
    "hook_ids": [],
    "id": "act_cabin_corset_unlace",
    "location_ids": [
-    "loc_airship_keel_catwalk_corridor"
+    "loc_director_officer_cabin"
    ],
    "start_minute": 1430,
    "tags": [
     "intimate"
    ],
    "title": "军官舱里替总监解束腰工装"
+  },
+  {
+   "beats": [
+    "军官舱的舷窗外是一片月光下的云海，总监换下工装，只穿着一件宽大的亚麻衬衫，倒了两杯热朗姆。",
+    "总监把杯子碰过来：敬没炸掉的锅炉。……再敬你，今晚这舱里，我想要的只有一样。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_cabin_rum_cloud_sea",
+   "location_ids": [
+    "loc_director_officer_cabin"
+   ],
+   "start_minute": 1240,
+   "tags": [
+    "intimate"
+   ],
+   "title": "云海上的热朗姆"
+  },
+  {
+   "beats": [
+    "总监趴在黄铜床上改图纸，衬衫下摆卷到腰上，铅笔夹在耳后，图纸铺了一床，连人坐的地方都没有。",
+    "总监头也不抬：把图纸收起来，收完了就躺下。……今晚不画了，我想换个东西研究，你点头就行。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_cabin_blueprint_bed",
+   "location_ids": [
+    "loc_director_officer_cabin"
+   ],
+   "start_minute": 1340,
+   "tags": [
+    "intimate"
+   ],
+   "title": "铺满图纸的床"
+  },
+  {
+   "beats": [
+    "清晨的阳光从舷窗照进来，总监披着人的外套坐在床边，用软布一颗一颗擦着工装上的黄铜扣子。",
+    "总监把擦亮的扣子举到阳光下：亮了。……你也过来，我给你扣上，今天你替我去轮机舱点卯。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_cabin_morning_brass",
+   "location_ids": [
+    "loc_director_officer_cabin"
+   ],
+   "start_minute": 440,
+   "tags": [
+    "intimate"
+   ],
+   "title": "晨光里擦铜扣"
   }
  ],
  "default_npc_gender_mix": {
@@ -1460,6 +1511,15 @@
    "location_ids": [],
    "slot": "naval_inspector_lord_alger",
    "text": "{npc.name}拄着银头手杖踱过来，杖尖在铁甲板上点了两下：你，报上舱位和姓名，督战官有话要问。"
+  },
+  {
+   "id": "hook_eleanor_cabin_latch",
+   "kind": "approach",
+   "location_ids": [
+    "loc_director_officer_cabin"
+   ],
+   "slot": "chief_mechanic_eleanor_lancaster",
+   "text": "{npc.name}在军官舱门口摘下护目镜：锅炉稳了，我也该歇歇。……进来，舱里有朗姆。"
   }
  ],
  "id": "steampunk_airship_furnace_rupture",
@@ -1500,7 +1560,8 @@
    "detail": "悬挂在战舰龙骨下方的狭长格栅走道，两侧是厚重的重晶石水舱与配重弹药库，隔音装甲厚门外传来高空炮火轰鸣，红色自毁警报灯在走廊尽头疯狂旋转。",
    "exits": [
     "loc_furnace_armored_engine_room",
-    "loc_difference_engine_control_room"
+    "loc_difference_engine_control_room",
+    "loc_director_officer_cabin"
    ],
    "id": "loc_airship_keel_catwalk_corridor",
    "name": "飞艇龙骨悬挂走道与水压通廊",
@@ -1543,6 +1604,26 @@
    "witnesses": [
     "bg_engine_calculator_miss_clara"
    ]
+  },
+  {
+   "affordances": [
+    "陪总监在舷窗边喝一杯热朗姆",
+    "替总监擦净护目镜",
+    "推上军官舱的铜闩"
+   ],
+   "detail": "龙骨走道尽头的一间军官舱，一张黄铜床架、一只装满图纸的皮箱、一扇能看见云海的圆舷窗，墙上挂着护目镜。",
+   "exits": [
+    "loc_airship_keel_catwalk_corridor"
+   ],
+   "id": "loc_director_officer_cabin",
+   "name": "总监的军官舱",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "煤气灯罩着琥珀色灯罩，舱门的铜闩一推，轮机舱的轰鸣就只剩地板下细细的震动。",
+   "witnesses": []
   }
  ],
  "name_pools": {

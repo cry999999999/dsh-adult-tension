@@ -466,7 +466,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "被从身后环抱稳住剧烈失衡的下盘，双手叠合在撬杠上一同向死角猛力下压。",
     "dislikes": [
@@ -1264,13 +1264,64 @@
    "hook_ids": [],
    "id": "act_habitat_exosuit_unbuckle",
    "location_ids": [
-    "loc_station_pressurized_command_corridor"
+    "loc_pressurized_habitat_pod"
    ],
    "start_minute": 1430,
    "tags": [
     "intimate"
    ],
    "title": "增压生活舱里替女上尉卸外骨骼"
+  },
+  {
+   "beats": [
+    "生活舱的舷窗外，地平线弯成一道蓝色的弧，女上尉只穿着贴身的保暖内衣，抱膝坐在窗前。",
+    "女上尉没回头：从这里看，地面上的灯像撒了一把盐。……过来，从后面抱着我，我想就这样看一会儿。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_habitat_earthrise",
+   "location_ids": [
+    "loc_pressurized_habitat_pod"
+   ],
+   "start_minute": 1250,
+   "tags": [
+    "intimate"
+   ],
+   "title": "舷窗前看地平线"
+  },
+  {
+   "beats": [
+    "舱里的暖气又出了故障，女上尉拉开自己睡袋的拉链，往里挪了挪，冷着脸朝人抬了抬下巴。",
+    "女上尉说：两个人挤一个睡袋比较暖，这是野外条例。……挤进来以后的事，条例没写，你说了算。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_habitat_one_sleeping_bag",
+   "location_ids": [
+    "loc_pressurized_habitat_pod"
+   ],
+   "start_minute": 1380,
+   "tags": [
+    "intimate"
+   ],
+   "title": "挤进同一个睡袋"
+  },
+  {
+   "beats": [
+    "早上配重环调试，生活舱短暂失重，女上尉的头发和睡袋一起飘起来，被人一把抓住手腕拽回怀里。",
+    "女上尉难得笑出了声：抓紧，别让我飘走。……这几秒钟，我不想当什么上尉。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_habitat_zero_g_morning",
+   "location_ids": [
+    "loc_pressurized_habitat_pod"
+   ],
+   "start_minute": 460,
+   "tags": [
+    "intimate"
+   ],
+   "title": "配重调试时的片刻失重"
   }
  ],
  "default_npc_gender_mix": {
@@ -1461,6 +1512,15 @@
    "location_ids": [],
    "slot": "captain_leng_xuan",
    "text": "{npc.name}拉过人的手，把血氧夹夹在对方指尖上，盯着读数看了一会儿：九十二，还行。出舱回来先到我这儿报到。"
+  },
+  {
+   "id": "hook_lengxuan_habitat_hatch",
+   "kind": "approach",
+   "location_ids": [
+    "loc_pressurized_habitat_pod"
+   ],
+   "slot": "captain_leng_xuan",
+   "text": "{npc.name}站在生活舱的舱门口，手搭着复压锁：外面在刮风暴。……进来，舷窗那边能看见地球。"
   }
  ],
  "id": "orbital_elevator_cable_failure",
@@ -1501,7 +1561,8 @@
    "detail": "位于减压机库内侧的密封观察通廊，厚达三十厘米的高强度透明石英观察窗将万米深渊与暖光控制台隔开，自动防爆安全红灯疯狂旋转，中央广播系统持续传出撤离尖鸣。",
    "exits": [
     "loc_orbital_winch_undercarriage_hangar",
-    "loc_sky_elevator_ballast_catwalk"
+    "loc_sky_elevator_ballast_catwalk",
+    "loc_pressurized_habitat_pod"
    ],
    "id": "loc_station_pressurized_command_corridor",
    "name": "锚定站核心承压指挥观察通廊",
@@ -1544,6 +1605,26 @@
    "witnesses": [
     "bg_ballast_rigger_xiao_liu"
    ]
+  },
+  {
+   "affordances": [
+    "陪女上尉在舷窗前看地球",
+    "替女上尉卸下外骨骼",
+    "扣上生活舱的复压锁"
+   ],
+   "detail": "指挥通廊尽头的增压生活舱，两张嵌在舱壁里的睡袋铺、一扇圆形观景舷窗，窗外是弯曲的地平线和星空。",
+   "exits": [
+    "loc_station_pressurized_command_corridor"
+   ],
+   "id": "loc_pressurized_habitat_pod",
+   "name": "锚定站增压生活舱",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "舱内只亮一圈暖色夜灯，舱门复压锁一扣，外面零下六十度的风暴就只剩舷窗上的霜花。",
+   "witnesses": []
   }
  ],
  "name_pools": {

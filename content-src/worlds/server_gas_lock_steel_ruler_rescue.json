@@ -298,7 +298,8 @@
         "bg_student_council_secretary_lin"
       ],
       "exits": [
-        "loc_main_server_hall"
+        "loc_main_server_hall",
+        "loc_president_rest_room"
       ],
       "affordances": [
         "查验全大学消防联动灭火气体喷洒总进度",
@@ -363,6 +364,26 @@
       },
       "tags": [
         "workplace",
+        "intimate"
+      ]
+    },
+    {
+      "id": "loc_president_rest_room",
+      "name": "理事长办公室的休息室",
+      "detail": "监控大厅楼上理事长办公室里间的休息室，一张皮沙发床、一架摆满历年录取通知书样本的书柜、一扇看得见老钟楼的窗。",
+      "privacy": "private",
+      "visibility": "只开一盏落地灯，钟楼的灯光透进窗来，门一锁，楼下的大屏和电话铃就都隔在了外面。",
+      "witnesses": [],
+      "exits": [
+        "loc_noc_monitoring_center"
+      ],
+      "affordances": [
+        "陪理事长看一夜录取曲线",
+        "替理事长解开湿透的领结",
+        "锁上休息室的门"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
         "intimate"
       ]
     }
@@ -451,7 +472,7 @@
         "expression": "脱险后在走廊红着脸为夜班工程师包扎被金属擦红的手掌，别扭地轻声呢喃‘这次……算你立了大功’。",
         "desire_range": [
           2,
-          3
+          4
         ],
         "self_control_range": [
           4,
@@ -1562,8 +1583,7 @@
       "hook_ids": [],
       "start_minute": 1395,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1600,8 +1620,7 @@
       "hook_ids": [],
       "start_minute": 1405,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1677,6 +1696,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_rest_room_offer_letters",
+      "title": "亲手盖录取通知书",
+      "location_ids": [
+        "loc_president_rest_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1240,
+      "beats": [
+        "休息室里，理事长摘了眼镜，坐在沙发床边，一张张往录取通知书上盖钢印，衬衫袖子挽到手肘。",
+        "理事长把一张空白的通知书推过来：这张是多出来的。……写上你的名字，就当我录取你了，你愿意吗？"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_rest_room_bell_tower",
+      "title": "钟楼敲十二下",
+      "location_ids": [
+        "loc_president_rest_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1400,
+      "beats": [
+        "零点前，理事长解了西装外套，只穿着衬衫站在窗前，看着窗外老钟楼的指针一格一格走向十二点。",
+        "钟声响起来时，理事长回过头：几十万人此刻在查分数。……我只想知道一件事，你今晚留不留下。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_rest_room_campus_jog",
+      "title": "清晨的林荫道",
+      "location_ids": [
+        "loc_president_rest_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 380,
+      "beats": [
+        "清晨，理事长换了一身运动服，站在休息室门口扎头发，窗外林荫道上第一批晨跑的教职工刚刚出门。",
+        "理事长朝人伸手：陪我跑一圈，跑完了一起去食堂吃早饭。……让旁人猜去吧。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -1788,7 +1858,7 @@
         "minutes": 2
       },
       "near": {
-        "text": "理事长的脸贴得太近，眼镜片上全是雾，急促的呼吸压在机柜的嗡鸣底下。",
+        "text": "理事长的脸贴得太近，眼镜片上全是雾，衬衫领口崩开一颗扣子，急促的娇喘压在机柜的嗡鸣底下。",
         "deadline_minutes": 4
       },
       "far": {
@@ -2125,6 +2195,15 @@
       "slot": "president_xiao_ruoqing",
       "location_ids": [],
       "text": "{npc.name}站在信息楼顶的门边看远处滚过来的雷暴云，攥紧手机：零点前要是停电……陪我下去再查一遍机房？"
+    },
+    {
+      "id": "hook_ruoqing_rest_room",
+      "kind": "approach",
+      "slot": "president_xiao_ruoqing",
+      "location_ids": [
+        "loc_president_rest_room"
+      ],
+      "text": "{npc.name}站在休息室门口，手里拿着一叠录取通知书：楼下太吵了。……进来，陪我盖完这一沓。"
     }
   ],
   "twists": [

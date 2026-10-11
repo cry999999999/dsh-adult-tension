@@ -464,7 +464,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "冰水中失衡时被从身后揽住腰身，胸膛相贴合力握紧钛合金指骨下压。",
     "dislikes": [
@@ -1262,13 +1262,64 @@
    "hook_ids": [],
    "id": "act_hyperbaric_rewarming",
    "location_ids": [
-    "loc_station_decompression_corridor"
+    "loc_director_living_module"
    ],
    "start_minute": 1430,
    "tags": [
     "intimate"
    ],
    "title": "加压氧舱里陪总师复温"
+  },
+  {
+   "beats": [
+    "居住舱的观察窗外，一群发光水母慢慢漂过，总师裹着毯子坐在窄床上，把脸贴在冰凉的窗玻璃上。",
+    "总师小声说：这里一万米深，全世界只有我们看得见这些小东西。……你过来，跟我一起看。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_module_jellyfish_window",
+   "location_ids": [
+    "loc_director_living_module"
+   ],
+   "start_minute": 1250,
+   "tags": [
+    "intimate"
+   ],
+   "title": "窗外漂过的发光水母"
+  },
+  {
+   "beats": [
+    "总师泡好两杯热可可，掀开毯子一角朝人示意，紧身潜水内衣外只套了一件宽大的针织开衫。",
+    "总师把可可塞到人手里：喝完暖和了，我们再谈正事。……正事就是，你今晚留不留下。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_module_cocoa_and_blanket",
+   "location_ids": [
+    "loc_director_living_module"
+   ],
+   "start_minute": 1360,
+   "tags": [
+    "intimate"
+   ],
+   "title": "一条毯子两个人"
+  },
+  {
+   "beats": [
+    "清晨的声呐忽然收到一段很远的鲸歌，总师把耳机分一只给人，枕在人肩上闭着眼听。",
+    "总师轻声说：那头鲸在找伴。……我也找着了，所以今天的潜航，推迟一个小时。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_module_sonar_lullaby",
+   "location_ids": [
+    "loc_director_living_module"
+   ],
+   "start_minute": 400,
+   "tags": [
+    "intimate"
+   ],
+   "title": "声呐里的鲸歌"
   }
  ],
  "default_npc_gender_mix": {
@@ -1459,6 +1510,15 @@
    "location_ids": [],
    "slot": "expedition_contractor_plumber_nie",
    "text": "{npc.name}拎着一把旧管钳晃过来，往工作台上一搁：来，{expedition_contractor_plumber_nie.name}教你个听阀门喘气的法子。"
+  },
+  {
+   "id": "hook_binglan_module_window",
+   "kind": "approach",
+   "location_ids": [
+    "loc_director_living_module"
+   ],
+   "slot": "subsea_technical_director_shen_binglan",
+   "text": "{npc.name}站在居住舱门口，手里捧着两杯热可可：窗外来了一群水母。……进来看吗？"
   }
  ],
  "id": "subsea_abyss_airlock_stalemate",
@@ -1499,7 +1559,8 @@
    "detail": "位于气闸舱内门正前方的加压过渡观察通廊，厚达二十厘米的透明有机玻璃观测窗将冰冷水下与干燥暖光的主控区分隔开来，控制台报警红灯疯狂闪烁。",
    "exits": [
     "loc_airlock_decompression_chamber",
-    "loc_submersible_docking_bay"
+    "loc_submersible_docking_bay",
+    "loc_director_living_module"
    ],
    "id": "loc_station_decompression_corridor",
    "name": "科考站核心居住区减压观测廊",
@@ -1542,6 +1603,26 @@
    "witnesses": [
     "bg_docking_crane_rigger_xiao_liu"
    ]
+  },
+  {
+   "affordances": [
+    "陪总师看窗外的发光水母",
+    "替总师焐热冰凉的手",
+    "关上居住舱的气密门"
+   ],
+   "detail": "居住区尽头的一间单人居住舱，一张窄床、一面贴满海底照片的墙、一扇加厚的观察窗，隔壁就是加压氧舱。",
+   "exits": [
+    "loc_station_decompression_corridor"
+   ],
+   "id": "loc_director_living_module",
+   "name": "总师的居住舱",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "舱里只开着观察窗外的探照灯，偶尔有发光的水母漂过，万米海水压在外面，屋里安静得能听见心跳。",
+   "witnesses": []
   }
  ],
  "name_pools": {

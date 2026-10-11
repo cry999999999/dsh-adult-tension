@@ -470,7 +470,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "在暗门夹层背靠侍卫长胸膛，双手叠于侍卫长粗糙大手共同紧握淬火马刺奋力向上撬顶。",
     "dislikes": [
@@ -1195,8 +1195,7 @@
    ],
    "start_minute": 1050,
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "title": "晨间皇家淬火精钢马刺刃口巡检"
   },
@@ -1214,8 +1213,7 @@
    ],
    "start_minute": 1055,
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "title": "古董收藏室铅包木暗门上滑轨巡查"
   },
@@ -1233,8 +1231,7 @@
    ],
    "start_minute": 1060,
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "title": "石室高处通风换气石窗除雪巡查"
   },
@@ -1312,6 +1309,57 @@
     "intimate"
    ],
    "title": "收藏室壁炉边替长皇女解开骑马服"
+  },
+  {
+   "beats": [
+    "古董收藏室里，长皇女给旧八音盒上了发条，一支宫廷华尔兹响起来，墨绿骑马服换成了一件旧日的舞会长裙。",
+    "长皇女向人伸出戴着长手套的手：帝国没了，舞还是要跳的。……跳完这一支，我想听你说一个字，好或不好。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_vault_last_waltz",
+   "location_ids": [
+    "loc_antique_vault_chamber"
+   ],
+   "start_minute": 1240,
+   "tags": [
+    "intimate"
+   ],
+   "title": "收藏室里的最后一支华尔兹"
+  },
+  {
+   "beats": [
+    "壁炉里的松木噼啪作响，长皇女坐在熊皮地毯上，用银勺搅着一壶热红酒，长发散下来垂到腰际。",
+    "长皇女把杯子递过来：复辟的密信不会来了。……我不想再等一封信，我想要一个人，你愿意吗？"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_vault_mulled_wine",
+   "location_ids": [
+    "loc_antique_vault_chamber"
+   ],
+   "start_minute": 1370,
+   "tags": [
+    "intimate"
+   ],
+   "title": "壁炉边的热红酒"
+  },
+  {
+   "beats": [
+    "雪崩后的第三天早晨，阳光照在雪峰上，收藏室的透气石窗白得晃眼，长皇女在毛毯里醒来，枕着人的胳膊。",
+    "长皇女闭着眼说：从前在皇宫，有一百个人叫我起床。……现在只有你，可我一点也不想起。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_vault_snow_window",
+   "location_ids": [
+    "loc_antique_vault_chamber"
+   ],
+   "start_minute": 450,
+   "tags": [
+    "intimate"
+   ],
+   "title": "雪光里醒来"
   }
  ],
  "default_npc_gender_mix": {
@@ -1500,6 +1548,15 @@
    "location_ids": [],
    "slot": "sergeant_andrei",
    "text": "{npc.name}坐在马厩边擦着佩剑，头也不抬：城破那一夜，这把剑砍断过三根门闩。想学的话，我教你握剑。"
+  },
+  {
+   "id": "hook_helena_vault_music_box",
+   "kind": "approach",
+   "location_ids": [
+    "loc_antique_vault_chamber"
+   ],
+   "slot": "princess_helena",
+   "text": "{npc.name}站在收藏室门口，手里托着一只旧八音盒：发条上好了。……进来，陪我跳一支。"
   }
  ],
  "id": "princess_lodge_avalanche_spur_lever",

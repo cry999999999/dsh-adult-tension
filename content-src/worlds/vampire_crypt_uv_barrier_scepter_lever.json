@@ -449,7 +449,7 @@
         "expression": "脱险后温柔地为学者擦去额头冷汗，偏过绯红面颊低声道‘学者……刚才表现还算配得上本小姐的信任’。",
         "desire_range": [
           2,
-          3
+          4
         ],
         "self_control_range": [
           4,
@@ -1560,8 +1560,7 @@
       "hook_ids": [],
       "start_minute": 1320,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1579,8 +1578,7 @@
       "hook_ids": [],
       "start_minute": 1325,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1598,8 +1596,7 @@
       "hook_ids": [],
       "start_minute": 1330,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1675,6 +1672,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_crypt_red_wine_toast",
+      "title": "棺室里的红酒",
+      "location_ids": [
+        "loc_vampire_crypt_chamber"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1260,
+      "beats": [
+        "棺室的白蜡烛下，千金斜倚在天鹅绒棺椁边，蕾丝长裙的领口开得很低，往两只水晶杯里倒满红酒。",
+        "千金举杯：血族已经不喝血了，只喝这个。……猎魔人，你敢不敢跟我碰杯？碰了，就别想全身而退。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_crypt_cold_hand",
+      "title": "冰凉的手",
+      "location_ids": [
+        "loc_vampire_crypt_chamber"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1380,
+      "beats": [
+        "千金摘下蕾丝手套，把冰凉的手贴上人的脸颊，红眸在烛光里一眨不眨，嘴角带着坏笑。",
+        "千金说：血族的体温比人低。……你若愿意替我焐热，就点头，我便不再假装高傲。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_crypt_daylight_curtain",
+      "title": "白昼里的天鹅绒帷幕",
+      "location_ids": [
+        "loc_vampire_crypt_chamber"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 480,
+      "beats": [
+        "外面的太阳升起来了，千金拉紧棺室的天鹅绒帷幕，打着哈欠钻进被子，把人一起拽进来。",
+        "千金闭着眼说：白昼是血族的夜晚。……陪我睡到日落，这是我允许的最高礼遇。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -2113,6 +2161,15 @@
       "slot": "hunter_scholar_rayne",
       "location_ids": [],
       "text": "{npc.name}把胸前的银十字架摘下来，揣进了口袋：在你的地宫里，不戴这个了。省得你离我那么远。"
+    },
+    {
+      "id": "hook_alicia_crypt_candles",
+      "kind": "approach",
+      "slot": "vampire_lady_alicia",
+      "location_ids": [
+        "loc_vampire_crypt_chamber"
+      ],
+      "text": "{npc.name}站在棺室门口，手里捏着一只水晶杯：酒醒好了。……猎魔人，进来陪我喝一杯。"
     }
   ],
   "twists": [

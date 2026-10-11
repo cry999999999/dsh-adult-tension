@@ -466,7 +466,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "被从身后紧抱稳住重心抗击涌浪冲击，双手叠合在加力扳手上一同向下猛力死转。",
     "dislikes": [
@@ -1264,13 +1264,64 @@
    "hook_ids": [],
    "id": "act_drill_shack_salt_rinse",
    "location_ids": [
-    "loc_drill_floor_moonpool_catwalk"
+    "loc_drill_floor_duty_room"
    ],
    "start_minute": 1430,
    "tags": [
     "intimate"
    ],
    "title": "钻台值班间里替女总监擦去盐水"
+  },
+  {
+   "beats": [
+    "值班间里，女总监握着卫星电话，十分钟的通话额度只剩三分钟，抬头看了人一眼，把听筒递过来。",
+    "女总监说：剩下的给你，打给家里吧。……打完了，你欠我三分钟，今晚得还。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_duty_room_satphone_turn",
+   "location_ids": [
+    "loc_drill_floor_duty_room"
+   ],
+   "start_minute": 1230,
+   "tags": [
+    "intimate"
+   ],
+   "title": "让出卫星电话的时间"
+  },
+  {
+   "beats": [
+    "台风在外面咆哮，女总监穿着宽大的平台工T恤，拉开下铺的帘子，往里挪了挪，冷着脸拍了拍床垫。",
+    "女总监嘴硬：上铺晃得厉害，不是我想跟你挤。……不过既然挤了，你想做什么，可以问我。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_duty_room_typhoon_bunk",
+   "location_ids": [
+    "loc_drill_floor_duty_room"
+   ],
+   "start_minute": 1380,
+   "tags": [
+    "intimate"
+   ],
+   "title": "台风夜挤一张下铺"
+  },
+  {
+   "beats": [
+    "台风过境后的早晨，海面平得像镜子，女总监靠在舷窗边喝咖啡，远远听见直升机的旋翼声。",
+    "女总监放下杯子：倒班的直升机来了。……下一个二十八天，你还在不在这座平台上？"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_duty_room_helicopter_wait",
+   "location_ids": [
+    "loc_drill_floor_duty_room"
+   ],
+   "start_minute": 450,
+   "tags": [
+    "intimate"
+   ],
+   "title": "等直升机的早晨"
   }
  ],
  "default_npc_gender_mix": {
@@ -1468,6 +1519,15 @@
    "location_ids": [],
    "slot": "director_gu_hailan",
    "text": "{npc.name}在宿舍走廊的公用电话前排到了，却没拨号，把听筒挂回去，转头冲人笑笑：家里这个点该睡了。陪我去甲板上吹会儿风？"
+  },
+  {
+   "id": "hook_hailan_duty_room",
+   "kind": "approach",
+   "location_ids": [
+    "loc_drill_floor_duty_room"
+   ],
+   "slot": "director_gu_hailan",
+   "text": "{npc.name}站在值班间门口，攥着卫星电话：还剩三分钟。……进来，分你一半。"
   }
  ],
  "id": "offshore_oil_platform_diverter",
@@ -1508,7 +1568,8 @@
    "detail": "位于万吨钻机转盘正下方的重型钢桁架检修栈桥，狂风呼啸暴雨倾盆，两台防爆消防高压水炮正在全负荷喷射除气水幕，红色戒严警报灯将四周映成血色。",
    "exits": [
     "loc_moonpool_diverter_manifold_nook",
-    "loc_mud_diverter_overboard_gallery"
+    "loc_mud_diverter_overboard_gallery",
+    "loc_drill_floor_duty_room"
    ],
    "id": "loc_drill_floor_moonpool_catwalk",
    "name": "钻台月池上方防爆检修主栈桥通廊",
@@ -1551,6 +1612,26 @@
    "witnesses": [
     "bg_cadet_petroleum_xiao_zong"
    ]
+  },
+  {
+   "affordances": [
+    "陪女总监听台风过境",
+    "替女总监擦去肩背的盐粒",
+    "锁上值班间的钢门"
+   ],
+   "detail": "钻台栈桥边的一间值班间，一张上下铺、一台卫星电话、一扇被盐雾糊住的舷窗，墙上贴着倒班直升机的时刻表。",
+   "exits": [
+    "loc_drill_floor_moonpool_catwalk"
+   ],
+   "id": "loc_drill_floor_duty_room",
+   "name": "钻台值班间",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "舷窗外是黑沉沉的海，台风打得整座平台微微晃，钢门一锁，钻机的轰鸣就闷成了一层很远的鼓点。",
+   "witnesses": []
   }
  ],
  "name_pools": {

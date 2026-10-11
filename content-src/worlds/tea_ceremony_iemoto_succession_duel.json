@@ -1606,6 +1606,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_mizuya_whisk_lesson",
+      "title": "水屋里手把手点茶",
+      "location_ids": [
+        "loc_mizuya_prep_pantry"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1100,
+      "beats": [
+        "水屋里，准家元跪坐在人身后，握着人的手执起茶筅，手腕带着手腕，一下一下把抹茶打出细沫。",
+        "准家元的呼吸落在人耳后：手腕要松……像这样。点完这一碗，你想要什么，我都先听你说。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_mizuya_single_robe",
+      "title": "只穿一层单衣的夜",
+      "location_ids": [
+        "loc_mizuya_prep_pantry"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1360,
+      "beats": [
+        "水屋只点一盏纸灯，准家元解下振袖，只穿一层薄薄的白单衣跪坐在竹席上，领口松松地敞着。",
+        "准家元抬眼看人：家元的规矩里没有这一条。……可是你愿意的话，今晚不讲规矩。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_mizuya_first_frost",
+      "title": "初霜的清晨",
+      "location_ids": [
+        "loc_mizuya_prep_pantry"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 390,
+      "beats": [
+        "初霜的清晨，水屋的竹窗上结了一层白，准家元在薄被里醒来，把冰凉的脚贴在人的小腿上取暖。",
+        "准家元闭着眼笑：长老们七点来。……还有一个时辰，你别动，让我再暖一会儿。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -1894,6 +1945,15 @@
         "loc_tea_pavilion_main_chamber"
       ],
       "text": "{npc.name}注目紫檀茶台古铜烹茶釜把手直棱，以笃定眼神示意硬铜材质万无一失尽可发力。"
+    },
+    {
+      "id": "hook_chizuru_mizuya_bowl",
+      "kind": "approach",
+      "slot": "char_kirishima_chizuru",
+      "location_ids": [
+        "loc_mizuya_prep_pantry"
+      ],
+      "text": "{npc.name}拉开水屋的竹门，手里捧着一只茶碗：大典的茶太正式了。……进来，我点一碗只给你喝的。"
     }
   ],
   "twists": [

@@ -469,7 +469,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "在卷门死角紧贴机工胸前，双手紧握听诊器听头由机工从后护持手臂合力猛砸触点。",
     "dislikes": [
@@ -1193,8 +1193,7 @@
    ],
    "start_minute": 1395,
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "title": "晨间减压阀组流体听诊检视"
   },
@@ -1212,8 +1211,7 @@
    ],
    "start_minute": 1400,
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "title": "高压法兰螺栓扭矩防松校验"
   },
@@ -1231,8 +1229,7 @@
    ],
    "start_minute": 1405,
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "title": "防灾电动卷门行程开关测试"
   },
@@ -1303,13 +1300,64 @@
    "hook_ids": [],
    "id": "act_pump_room_wet_uniform",
    "location_ids": [
-    "loc_geothermal_pump_hall"
+    "loc_nurse_duty_room"
    ],
    "start_minute": 1430,
    "tags": [
     "intimate"
    ],
    "title": "泵房值班间里替护士换下湿透的护士服"
+  },
+  {
+   "beats": [
+    "值班间里，护士摘了护士帽，长发散下来，拉过人的手，用指腹把冻疮膏一点点揉进冻红的指节。",
+    "护士低着头揉：林区的冬天要冻掉人一层皮。……揉完了换你给我揉，我腿上也冻了，你别多想。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_duty_room_frostbite_cream",
+   "location_ids": [
+    "loc_nurse_duty_room"
+   ],
+   "start_minute": 1220,
+   "tags": [
+    "intimate"
+   ],
+   "title": "替人涂冻疮膏"
+  },
+  {
+   "beats": [
+    "护士把听诊器挂上耳朵，听头贴到人胸口，护士服的扣子开了两颗，自己的脸却先红了。",
+    "护士小声说：心跳一百二，不正常。……我的也是，你要不要听？听完了，你想怎样都先问我。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_duty_room_blood_pressure",
+   "location_ids": [
+    "loc_nurse_duty_room"
+   ],
+   "start_minute": 1350,
+   "tags": [
+    "intimate"
+   ],
+   "title": "量一次心跳"
+  },
+  {
+   "beats": [
+    "雪停的早晨，远处传来邮车的喇叭声，护士裹着人的棉袄趴在窗台上，看邮车在雪道上慢慢爬。",
+    "护士回头笑：邮车一周才来两趟，我等了三年的信都没你来得准时。……再陪我躺一会儿。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_duty_room_mail_truck",
+   "location_ids": [
+    "loc_nurse_duty_room"
+   ],
+   "start_minute": 450,
+   "tags": [
+    "intimate"
+   ],
+   "title": "邮车上山的早晨"
   }
  ],
  "default_npc_gender_mix": {
@@ -1507,6 +1555,15 @@
    "location_ids": [],
    "slot": "nurse_lin_xinyi",
    "text": "{npc.name}提着手电走在夜班的长走廊上，回头冲人招招手：陪我查一圈房吧，三楼那位老爷子总说半夜听见地底下有声音。"
+  },
+  {
+   "id": "hook_xinyi_duty_room_stove",
+   "kind": "approach",
+   "location_ids": [
+    "loc_nurse_duty_room"
+   ],
+   "slot": "nurse_lin_xinyi",
+   "text": "{npc.name}从值班间门口探出头：炉子烧旺了，外面零下三十度。……快进来暖暖。"
   }
  ],
  "id": "sanatorium_boiler_nurse_rescue",
@@ -1519,7 +1576,8 @@
    ],
    "detail": "地下开阔数百平米的中央供热动力大厅，多组巨型地热水泵与减压阀站错落排列。此刻主减压阀法兰垫片彻底爆开，刺耳啸叫中高达一百三十度的滚烫白雾如巨龙般喷薄翻涌，热浪逼人。",
    "exits": [
-    "loc_steam_damper_doorway"
+    "loc_steam_damper_doorway",
+    "loc_nurse_duty_room"
    ],
    "id": "loc_geothermal_pump_hall",
    "name": "疗养院地下大型地热循环泵房回廊",
@@ -1589,6 +1647,26 @@
     "intimate"
    ],
    "visibility": "仅靠强光探照笔窄光束照明，近距离能看清彼此面颊上滑落的细腻汗珠、湿透护士服起伏曲线与控制开关金属簧片。",
+   "witnesses": []
+  },
+  {
+   "affordances": [
+    "陪夜班护士在炉边烤手",
+    "替夜班护士解开湿透的护士服",
+    "锁上值班间的门"
+   ],
+   "detail": "泵房楼梯口的一间值班间，一张铺着白床单的单人床、一只烧得正旺的铁炉、一张放着血压计的小桌，窗外是林海雪原。",
+   "exits": [
+    "loc_geothermal_pump_hall"
+   ],
+   "id": "loc_nurse_duty_room",
+   "name": "泵房边的护士值班间",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "炉火映着白墙，窗上结着冰花，门一锁，泵房的轰鸣就闷成了脚下一阵阵温热的震动。",
    "witnesses": []
   }
  ],
@@ -1936,7 +2014,7 @@
    ],
    "near": {
     "deadline_minutes": 4,
-    "text": "护士的呼吸乱了，口罩早扯到下巴，热气一阵阵扑在颈侧。"
+    "text": "护士的呼吸乱了，口罩早扯到下巴，湿透的护士服贴出胸前的曲线，娇喘一阵阵扑在颈侧。"
    },
    "objective": "在极度贴近的肢体接触与异性荷尔蒙冲击下，克制心神专注机械对位发力。",
    "source": "person",

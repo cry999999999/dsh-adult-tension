@@ -469,7 +469,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "在祭坛死角紧贴石匠胸前，双手叠在石匠手背上共同握紧短匕十字护手全力下扳。",
     "dislikes": [
@@ -1193,8 +1193,7 @@
    ],
    "start_minute": 1395,
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "title": "晨间纯银仪式短匕淬火锋刃养护"
   },
@@ -1212,8 +1211,7 @@
    ],
    "start_minute": 1400,
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "title": "祭坛平衡石板青铜枢轴校准检"
   },
@@ -1231,8 +1229,7 @@
    ],
    "start_minute": 1405,
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "title": "露天多立克残柱抗雪载承重检"
   },
@@ -1303,13 +1300,64 @@
    "hook_ids": [],
    "id": "act_altar_frozen_robe",
    "location_ids": [
-    "loc_circular_megalith_altar"
+    "loc_leeward_stone_niche"
    ],
    "start_minute": 1430,
    "tags": [
     "intimate"
    ],
    "title": "背风石龛里替圣女解开冻硬的圣袍"
+  },
+  {
+   "beats": [
+    "石龛里，圣女换下圣袍，裹着一件厚厚的羊毛斗篷，跪坐在火盆边，双手捧着一碗酥油茶慢慢喝。",
+    "圣女抬眼看人：戒律说不受凡人触碰。……可是这碗茶，我想和你用一只碗喝，你愿意吗？"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_niche_butter_tea",
+   "location_ids": [
+    "loc_leeward_stone_niche"
+   ],
+   "start_minute": 1220,
+   "tags": [
+    "intimate"
+   ],
+   "title": "火盆边的酥油茶"
+  },
+  {
+   "beats": [
+    "圣女在石榻上坐了很久，终于伸出手，指尖轻轻碰了碰人的手背，又像被烫到一样缩回去。",
+    "圣女垂着眼说：这条戒律，我想自己决定破不破。……你不愿意，就别动；你愿意，就握住我。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_niche_first_touch",
+   "location_ids": [
+    "loc_leeward_stone_niche"
+   ],
+   "start_minute": 1360,
+   "tags": [
+    "intimate"
+   ],
+   "title": "第一次主动伸手"
+  },
+  {
+   "beats": [
+    "天边刚泛白，圣女在石榻上醒来，长发散在牦牛毛毯上，侧头看着睡在身边的人，没有起身去敲晨钟。",
+    "圣女轻声说：朝圣的人还没上山。……晨钟晚一刻钟敲，神明应该不会怪我。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_niche_dawn_bell",
+   "location_ids": [
+    "loc_leeward_stone_niche"
+   ],
+   "start_minute": 360,
+   "tags": [
+    "intimate"
+   ],
+   "title": "晨钟敲响之前"
   }
  ],
  "default_npc_gender_mix": {
@@ -1507,6 +1555,15 @@
    "location_ids": [],
    "slot": "apprentice_mason_karl",
    "text": "{npc.name}从怀里掏出一只扁酒壶，拧开递过来：山下的烈酒，神殿里不让喝。喝一口暖暖身子，我不说出去。"
+  },
+  {
+   "id": "hook_eleonora_niche_curtain",
+   "kind": "approach",
+   "location_ids": [
+    "loc_leeward_stone_niche"
+   ],
+   "slot": "saintess_eleonora",
+   "text": "{npc.name}撩起石龛的毛毡帘：外面风雪大。……进来，火盆生好了。"
   }
  ],
  "id": "alpine_sanctuary_dagger_rescue",
@@ -1548,7 +1605,8 @@
    "detail": "露天平台核心的重力天平式环形石台，由八块数吨重花岗岩平衡石板通过偏心青铜枢轴咬合构成。受暴雪偏载影响，南侧主石板失衡倾覆下滑，砸死祭台下方的圣袍下摆与逃生阶梯口。",
    "exits": [
     "loc_alpine_summit_open_platform",
-    "loc_altar_crushed_nook"
+    "loc_altar_crushed_nook",
+    "loc_leeward_stone_niche"
    ],
    "id": "loc_circular_megalith_altar",
    "name": "残破神殿中央环形巨石祭坛",
@@ -1589,6 +1647,26 @@
     "intimate"
    ],
    "visibility": "仅靠强光探照笔窄光束照明，近距离能看清彼此面颊上滑落的细腻汗珠、素白祭袍起伏轮廓与纯银匕首护手。",
+   "witnesses": []
+  },
+  {
+   "affordances": [
+    "陪圣女在火盆边喝酥油茶",
+    "替圣女换下冻硬的圣袍",
+    "放下石龛的毛毡帘"
+   ],
+   "detail": "神殿背面一间凿进山岩的石龛，一张铺着牦牛毛毯的石榻、一只铜火盆、壁上供着一盏长明的酥油灯。",
+   "exits": [
+    "loc_circular_megalith_altar"
+   ],
+   "id": "loc_leeward_stone_niche",
+   "name": "背风的石龛",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "酥油灯的光晕暖暖的，石龛口挂着厚厚的毛毡帘，风雪在帘外呼啸，帘内只剩火盆噼啪的声音。",
    "witnesses": []
   }
  ],

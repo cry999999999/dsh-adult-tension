@@ -301,7 +301,8 @@
       ],
       "exits": [
         "loc_hoist_cage_plummeting_shaft",
-        "loc_sump_buffer_spring_base"
+        "loc_sump_buffer_spring_base",
+        "loc_lamproom_back_room"
       ],
       "affordances": [
         "拉下井口紧急水力注水喷淋灭火电掣",
@@ -340,6 +341,26 @@
       "tags": [
         "workplace",
         "disaster"
+      ]
+    },
+    {
+      "id": "loc_lamproom_back_room",
+      "name": "灯房后间",
+      "detail": "井口灯房后面的一间小屋，一张长凳、一张行军床、一只烧水的电炉，墙上挂着一排擦得锃亮的矿灯。",
+      "privacy": "private",
+      "visibility": "矿灯的充电指示灯一排排亮着绿光，门一锁，井口天轮的转动声就只剩一点嗡嗡。",
+      "witnesses": [],
+      "exits": [
+        "loc_shaft_collar_headframe_platform"
+      ],
+      "affordances": [
+        "陪女总工喝一杯浓茶",
+        "替女总工擦去脸上的煤灰",
+        "锁上灯房后间的门"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
       ]
     }
   ],
@@ -426,7 +447,7 @@
         "expression": "脱险进入平巷后，默默背过身撕下自己里衣最柔软的干爽布条，红着脸粗暴却轻柔地替对方包扎被火花烫伤的手背。",
         "desire_range": [
           2,
-          3
+          4
         ],
         "self_control_range": [
           4,
@@ -1602,7 +1623,7 @@
       "id": "act_lamproom_coal_dust_wipe",
       "title": "升井后在灯房替女总工擦去煤灰",
       "location_ids": [
-        "loc_shaft_collar_headframe_platform"
+        "loc_lamproom_back_room"
       ],
       "duration_minutes": 30,
       "start_minute": 1430,
@@ -1614,6 +1635,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_lamproom_strong_tea",
+      "title": "电炉上煮浓茶",
+      "location_ids": [
+        "loc_lamproom_back_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1230,
+      "beats": [
+        "灯房后间的电炉上咕嘟咕嘟煮着一壶浓茶，女总工脱了工装外套，只穿一件洗旧的格子衬衫，挽着袖子倒茶。",
+        "女总工把搪瓷缸推过来：下井的人都喝这个提神。……今晚喝了睡不着，你就负责陪我熬着。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_lamproom_brass_tag_game",
+      "title": "下井牌的约定",
+      "location_ids": [
+        "loc_lamproom_back_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1340,
+      "beats": [
+        "女总工把那块刻着自己名字的铜牌挂到人脖子上，又把人的那块挂到自己胸前，两块铜牌叮地碰在一起。",
+        "女总工低头看着：矿上的规矩，牌子在谁身上，人就归谁管。……今晚你管我，我也愿意。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_lamproom_shift_bell",
+      "title": "交班铃响之前",
+      "location_ids": [
+        "loc_lamproom_back_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 400,
+      "beats": [
+        "天刚亮，交班铃还没响，女总工在行军床上醒来，侧身挤在人怀里，安全帽滚到了地上。",
+        "女总工把脸埋进人胸口：再过半小时就得下井。……这半小时，你别松手。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -2058,6 +2130,15 @@
       "slot": "engineer_xiao_muxue",
       "location_ids": [],
       "text": "{npc.name}升井后满脸煤灰，拽着人往澡堂走，走到岔口才停：男澡堂在左……洗完到灯房找我，有张图要你看。"
+    },
+    {
+      "id": "hook_muxue_lamproom_kettle",
+      "kind": "approach",
+      "slot": "engineer_xiao_muxue",
+      "location_ids": [
+        "loc_lamproom_back_room"
+      ],
+      "text": "{npc.name}拉开灯房后间的门，手里拎着一把茶壶：茶煮好了。……进来坐，别站在风口。"
     }
   ],
   "twists": [

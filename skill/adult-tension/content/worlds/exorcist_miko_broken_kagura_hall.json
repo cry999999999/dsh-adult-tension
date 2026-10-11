@@ -1259,6 +1259,57 @@
     "intimate"
    ],
    "title": "神乐库房解下襦袢系带"
+  },
+  {
+   "beats": [
+    "禊祓回来的大巫女跪坐在库房的榻上，湿透的白衣紧贴着身子，勾出起伏的线条，冻得嘴唇发白。",
+    "大巫女把一条干布递过来，轻声问：替我擦一擦……可以吗？等人应了，才把湿衣从肩头褪下去。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_storehouse_after_misogi",
+   "location_ids": [
+    "loc_kagura_storehouse"
+   ],
+   "start_minute": 1320,
+   "tags": [
+    "intimate"
+   ],
+   "title": "禊祓回来替大巫女擦干身子"
+  },
+  {
+   "beats": [
+    "纸灯下，大巫女盘腿坐着缝一只护身符，红线咬在唇间，膝上摊着一块绣了一半的锦布。",
+    "缝好最后一针，大巫女把护身符塞进人的衣襟，手掌在心口按了一会儿：别摘。……今晚也别走。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_storehouse_omamori",
+   "location_ids": [
+    "loc_kagura_storehouse"
+   ],
+   "start_minute": 1200,
+   "tags": [
+    "intimate"
+   ],
+   "title": "纸灯下一起缝护身符"
+  },
+  {
+   "beats": [
+    "大巫女解下神乐铃上的红绳，绕在指间玩了一会儿，抬眼问：你信不信，这根绳能把人留住？",
+    "大巫女先说好：铃一响就停。看人点了头，才把红绳在两人的手腕上缠了一圈，吹暗纸灯，铃声轻轻晃了一下。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_storehouse_bell_cord",
+   "location_ids": [
+    "loc_kagura_storehouse"
+   ],
+   "start_minute": 1400,
+   "tags": [
+    "intimate"
+   ],
+   "title": "神乐铃的红绳"
   }
  ],
  "default_npc_gender_mix": {
@@ -1312,6 +1363,15 @@
    "location_ids": [],
    "slot": "char_kyoka_miko",
    "text": "{npc.name}拨开垂下的注连绳走到祭台边，压低声音问：手还能动吗，要不要帮忙扶住华盖。"
+  },
+  {
+   "id": "hook_kyoka_storehouse_lamp",
+   "kind": "approach",
+   "location_ids": [
+    "loc_kagura_storehouse"
+   ],
+   "slot": "char_kyoka_miko",
+   "text": "{npc.name}在库房门口停下，把纸灯举高了些：祭典的东西还没收完。……你来帮我，好不好？"
   }
  ],
  "id": "exorcist_miko_broken_kagura_hall",

@@ -301,7 +301,8 @@
       ],
       "exits": [
         "loc_meat_locker_main_aisle",
-        "loc_refrigeration_pump_hub"
+        "loc_refrigeration_pump_hub",
+        "loc_night_shift_locker_room"
       ],
       "affordances": [
         "借装卸台工具箱搜寻备用扳手",
@@ -340,6 +341,26 @@
       "tags": [
         "workplace",
         "disaster"
+      ]
+    },
+    {
+      "id": "loc_night_shift_locker_room",
+      "name": "分拣台后的夜班更衣室",
+      "detail": "分拣大平台后面的一间夜班更衣室，一排铁皮储物柜、一张长条木凳、一台嗡嗡响的暖风机，墙上贴着排班表。",
+      "privacy": "private",
+      "visibility": "暖风机吹着热风，玻璃上蒙着一层雾，门一反锁，外面叉车的倒车提示音就隔得很远。",
+      "witnesses": [],
+      "exits": [
+        "loc_cold_chain_sorting_platform"
+      ],
+      "affordances": [
+        "陪女警在暖风机前烤手",
+        "替女警解开冻硬的扣子",
+        "反锁更衣室的门"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
       ]
     }
   ],
@@ -425,7 +446,7 @@
         "expression": "脱困后紧抿嘴唇，用戴着厚手套的指尖默默为对方掸掉肩头落霜。",
         "desire_range": [
           2,
-          3
+          4
         ],
         "self_control_range": [
           4,
@@ -1592,15 +1613,14 @@
       "hook_ids": [],
       "start_minute": 1410,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
       "id": "act_locker_room_hand_warming",
       "title": "更衣室里替女警暖手",
       "location_ids": [
-        "loc_cold_chain_sorting_platform"
+        "loc_night_shift_locker_room"
       ],
       "duration_minutes": 30,
       "start_minute": 1430,
@@ -1612,6 +1632,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_locker_room_cover_story",
+      "title": "对一遍卧底口供",
+      "location_ids": [
+        "loc_night_shift_locker_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1230,
+      "beats": [
+        "更衣室的暖风机嗡嗡响，女警坐在长凳上，报关员的制服外套搭在膝头，压低声音和人对卧底的口供。",
+        "对到一半，女警忽然笑了：按口供，我们俩是一对。……要演得像一点的话，你得先让我练习一下。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_locker_room_steam_shower",
+      "title": "热水澡后的长凳",
+      "location_ids": [
+        "loc_night_shift_locker_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1370,
+      "beats": [
+        "女警冲完热水澡出来，头发还在滴水，只裹着一条毛巾坐在长凳上，肩头被热气蒸得泛红。",
+        "女警伸手拽住人的衣角：冷库里冻了一整夜，现在只想要暖和的东西。……你肯的话，就坐过来。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_locker_room_dawn_handover",
+      "title": "交班前的早餐",
+      "location_ids": [
+        "loc_night_shift_locker_room"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 420,
+      "beats": [
+        "天快亮，夜班要交班了，女警从储物柜里翻出两个包子，掰开一个，热气扑了满脸。",
+        "女警把大的那半塞给人：收网之后，我请你吃顿正经的。……现在先凑合，吃完陪我打个盹。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -2049,6 +2120,15 @@
       "slot": "corrupt_inspector_ma",
       "location_ids": [],
       "text": "{npc.name}搓着手凑过来，抖出一支烟递到跟前，赔着笑脸：天冷，抽一根？今晚的事，咱们好商量。"
+    },
+    {
+      "id": "hook_linxi_locker_room",
+      "kind": "approach",
+      "slot": "undercover_detective_lin_xi",
+      "location_ids": [
+        "loc_night_shift_locker_room"
+      ],
+      "text": "{npc.name}拉开更衣室的门，朝人偏了偏头：暖风机修好了。……进来，顺便把口供对一遍。"
     }
   ],
   "twists": [

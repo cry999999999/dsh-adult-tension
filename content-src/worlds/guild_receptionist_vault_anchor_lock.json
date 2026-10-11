@@ -1626,6 +1626,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_quarters_stamp_on_wrist",
+      "title": "在手腕上盖一枚章",
+      "location_ids": [
+        "loc_clerk_quarters"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1220,
+      "beats": [
+        "值班小屋里，总务长解了发髻，只穿着衬衫坐在窄床上，拉过人的手，在手腕内侧盖了一枚公会印章。",
+        "总务长看着那枚红印笑：三年来给几千张公会卡盖过章。……盖在人身上，这是第一次，你也给我盖一个？"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_quarters_herb_bath",
+      "title": "药草浴的木盆",
+      "location_ids": [
+        "loc_clerk_quarters"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1360,
+      "beats": [
+        "总务长烧了一大木盆热水，撒进冒险者送的安神药草，挽着衬衫袖子试水温，回头看人。",
+        "总务长说：木盆够两个人坐。……我先进去，你想进来，就敲一下盆沿，我说可以你再进。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_quarters_airship_dawn",
+      "title": "飞空艇起航的清晨",
+      "location_ids": [
+        "loc_clerk_quarters"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 420,
+      "beats": [
+        "清晨，第一艘飞空艇从要塞起航，汽笛声震得窗框嗡嗡响，总务长在窄床上醒来，往人怀里缩了缩。",
+        "总务长迷迷糊糊地说：大厅八点开门。……还早，再让我当一会儿不用上班的人。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -2061,6 +2112,15 @@
         "loc_equalizer_wheel_niche"
       ],
       "text": "{npc.name}把额头上的护目镜摘下来替人戴上：码头风大，云层里有冰碴。看那边——今晚第一艘进港的，是我的船。"
+    },
+    {
+      "id": "hook_selphia_quarters_lamp",
+      "kind": "approach",
+      "slot": "clerk_selphia",
+      "location_ids": [
+        "loc_clerk_quarters"
+      ],
+      "text": "{npc.name}在值班小屋门口点起油灯：今天的公会卡盖完了。……进来坐，我泡了茶。"
     }
   ],
   "twists": [

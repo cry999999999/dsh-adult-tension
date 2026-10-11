@@ -348,7 +348,8 @@
         "bg_security_officer_sun"
       ],
       "exits": [
-        "loc_flight_simulator_cabin"
+        "loc_flight_simulator_cabin",
+        "loc_pilot_base_quarters"
       ],
       "affordances": [
         "通过外置无线应急回路向舱内发送机械解锁参数指令",
@@ -361,6 +362,26 @@
       "tags": [
         "workplace",
         "disaster"
+      ]
+    },
+    {
+      "id": "loc_pilot_base_quarters",
+      "name": "女飞官的基地宿舍",
+      "detail": "测控基地宿舍楼顶层的一间单人宿舍，一张单人床、一只挂着飞行头盔的衣帽架、墙上贴满黑障模拟的满分成绩单。",
+      "privacy": "private",
+      "visibility": "窗外是总装大厅彻夜不灭的灯，屋里只开一盏床头灯，门一锁，模拟舱的轰鸣就只剩一点点。",
+      "witnesses": [],
+      "exits": [
+        "loc_aerospace_assembly_hall_floor"
+      ],
+      "affordances": [
+        "陪女飞官喝一杯速溶咖啡",
+        "替女飞官拉开抗荷服的拉链",
+        "锁上宿舍的门"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
       ]
     }
   ],
@@ -449,7 +470,7 @@
         "expression": "脱险后温柔地为总师擦去额头冷汗，偏过绯红面颊低声道‘总师……刚才表现还挺像样’。",
         "desire_range": [
           2,
-          3
+          4
         ],
         "self_control_range": [
           4,
@@ -1560,8 +1581,7 @@
       "hook_ids": [],
       "start_minute": 1250,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1579,8 +1599,7 @@
       "hook_ids": [],
       "start_minute": 1255,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1598,8 +1617,7 @@
       "hook_ids": [],
       "start_minute": 1260,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1675,6 +1693,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_quarters_coffee_scores",
+      "title": "满分成绩单与咖啡",
+      "location_ids": [
+        "loc_pilot_base_quarters"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1230,
+      "beats": [
+        "宿舍里，女飞官穿着宽大的飞行员T恤坐在床上，捧着一杯速溶咖啡，盯着墙上一排满分成绩单。",
+        "女飞官别过脸：三次满分，没一个人夸我。……你夸一句，说得好听的话，我就让你坐过来。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_quarters_helmet_on",
+      "title": "替人戴上飞行头盔",
+      "location_ids": [
+        "loc_pilot_base_quarters"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1370,
+      "beats": [
+        "女飞官把自己的飞行头盔扣到人头上，跨坐在床沿，隔着面罩敲了敲，笑得像赢了一场比赛。",
+        "女飞官说：现在你是我的僚机。……僚机要听长机的，但这一次，你说想要，我才俯冲。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_quarters_hangar_dawn",
+      "title": "总装大厅的清晨",
+      "location_ids": [
+        "loc_pilot_base_quarters"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 440,
+      "beats": [
+        "清晨，女飞官裹着被子靠在窗边，看总装大厅换班的人进进出出，回头把冰凉的脚伸到人腿上。",
+        "女飞官傲娇地说：今天模拟舱检修，我不用飞。……那你也别去上班，陪我。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -2121,6 +2190,15 @@
       "slot": "life_support_lead_shen",
       "location_ids": [],
       "text": "{npc.name}把两份航天营养餐放进微波炉，回头说：少校又没吃晚饭。你帮我送进去，我送进去少校不吃。"
+    },
+    {
+      "id": "hook_tianjiao_quarters_door",
+      "kind": "approach",
+      "slot": "pilot_gu_tianjiao",
+      "location_ids": [
+        "loc_pilot_base_quarters"
+      ],
+      "text": "{npc.name}在宿舍门口把飞行头盔往人怀里一塞：今天又是满分。……进来，夸我。"
     }
   ],
   "twists": [

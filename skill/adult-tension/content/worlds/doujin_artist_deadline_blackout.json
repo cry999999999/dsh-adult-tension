@@ -458,7 +458,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "掌控死线交稿与展位统筹全局节奏之主导位",
     "dislikes": [
@@ -1242,6 +1242,57 @@
     "intimate"
    ],
    "title": "暗房里替画师解开绞皱的吊带"
+  },
+  {
+   "beats": [
+    "画师抱着数位板盘腿坐在床上，宽大的T恤滑下一边肩头，咬着笔头上下打量人：我缺一张参考。",
+    "画师说：你当模特，我只画不碰。……画完了，要不要换我当模特，你说了算。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_bedroom_pose_reference",
+   "location_ids": [
+    "loc_artist_loft_bedroom"
+   ],
+   "start_minute": 1250,
+   "tags": [
+    "intimate"
+   ],
+   "title": "卧室里的人体速写"
+  },
+  {
+   "beats": [
+    "交完稿的画师整个人瘫在床上，黑眼圈重得像熊猫，睡裙皱巴巴地缩到大腿根，连抬手的力气都没有。",
+    "画师把一只胳膊伸过来：抱我。……就抱着，什么都别做，等我睡醒了再说别的。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_bedroom_after_deadline",
+   "location_ids": [
+    "loc_artist_loft_bedroom"
+   ],
+   "start_minute": 1380,
+   "tags": [
+    "intimate"
+   ],
+   "title": "交稿后瘫在床上"
+  },
+  {
+   "beats": [
+    "早上醒来，画师已经趴在枕头边画了好几页速写，画的全是人睡着的样子，见人醒了赶紧用手挡住。",
+    "画师红着脸嘴硬：不许看！……要看也行，你先亲我一下，我再翻给你。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_bedroom_morning_sketchbook",
+   "location_ids": [
+    "loc_artist_loft_bedroom"
+   ],
+   "start_minute": 480,
+   "tags": [
+    "intimate"
+   ],
+   "title": "醒来时被画进速写本"
   }
  ],
  "default_npc_gender_mix": {
@@ -1337,6 +1388,15 @@
    "location_ids": [],
    "slot": "char_daimon_technician",
    "text": "{npc.name}从工具包里翻出一张手绘台的结构图，摊在楼梯台阶上：坐，我给你讲讲这台子是怎么把人咬住的。"
+  },
+  {
+   "id": "hook_alice_upstairs",
+   "kind": "approach",
+   "location_ids": [
+    "loc_artist_loft_bedroom"
+   ],
+   "slot": "char_alice_artist",
+   "text": "{npc.name}从楼梯上探出半个身子，头发乱糟糟的：交稿了！……上来，我想找人一起躺着。"
   }
  ],
  "id": "doujin_artist_deadline_blackout",
@@ -1375,7 +1435,8 @@
    "exits": [
     "loc_loft_drawing_stage",
     "loc_garage_print_ramp",
-    "loc_studio_dark_storage"
+    "loc_studio_dark_storage",
+    "loc_artist_loft_bedroom"
    ],
    "id": "loc_loft_corridor_entrance",
    "name": "画室复式走廊玄关口",
@@ -1434,6 +1495,26 @@
    "witnesses": [
     "bg_fan_volunteer_1"
    ]
+  },
+  {
+   "affordances": [
+    "给画师当一次人体参考",
+    "陪画师瘫在床上",
+    "把卧室的门锁上"
+   ],
+   "detail": "复式画室楼上的小卧室，床上堆着抱枕和画到一半的原稿，墙上贴满角色立绘，窗台上摆着一排手办。",
+   "exits": [
+    "loc_loft_corridor_entrance"
+   ],
+   "id": "loc_artist_loft_bedroom",
+   "name": "画室楼上的卧室",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "只开一盏星星形状的小夜灯，楼下的数位屏还亮着，卧室里乱得只容得下两个人。",
+   "witnesses": []
   }
  ],
  "name_pools": {

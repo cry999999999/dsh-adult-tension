@@ -466,7 +466,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "被从身后紧抱稳住重心抗击气浪，双手叠合在超长扳手上一同猛力死压。",
     "dislikes": [
@@ -1271,6 +1271,57 @@
     "intimate"
    ],
    "title": "检修平台下替女总工卸空气呼吸器"
+  },
+  {
+   "beats": [
+    "单间里，女总工换下阻燃服，穿着一件旧工厂T恤盘腿坐在床上，一张张签着明天的动火作业票。",
+    "女总工把最后一张推过来：一张票要七个人签字，第七个名字留给你。……签了，今晚就归你管。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_dorm_permit_signatures",
+   "location_ids": [
+    "loc_chief_dormitory_room"
+   ],
+   "start_minute": 1230,
+   "tags": [
+    "intimate"
+   ],
+   "title": "签到第七个名字"
+  },
+  {
+   "beats": [
+    "女总工关了灯，只穿着吊带背心站在窗前，火炬塔的橘红光把皮肤照得发烫，长发松松地披在肩上。",
+    "女总工没回头：大检修四十天，我没睡过一个整觉。……今晚你在，我想试试，你肯陪就过来。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_dorm_flare_window",
+   "location_ids": [
+    "loc_chief_dormitory_room"
+   ],
+   "start_minute": 1370,
+   "tags": [
+    "intimate"
+   ],
+   "title": "火炬光里的窗前"
+  },
+  {
+   "beats": [
+    "清晨，女总工拎回两份板房村门口的煎饼果子，踢掉安全鞋，坐在床边把一份塞进人手里。",
+    "女总工咬了一口，含糊地说：七点开班前会。……还有四十分钟，吃完了再躺一会儿。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_dorm_shift_breakfast",
+   "location_ids": [
+    "loc_chief_dormitory_room"
+   ],
+   "start_minute": 420,
+   "tags": [
+    "intimate"
+   ],
+   "title": "板房村的早点"
   }
  ],
  "default_npc_gender_mix": {
@@ -1468,6 +1519,15 @@
    "location_ids": [],
    "slot": "director_bai_yutong",
    "text": "{npc.name}站在火炬塔下仰头看着夜里那团火，侧脸被映得通红：火炬不灭，说明这座厂还活着。下了班……陪我走一圈装置区？"
+  },
+  {
+   "id": "hook_yutong_dorm_door",
+   "kind": "approach",
+   "location_ids": [
+    "loc_chief_dormitory_room"
+   ],
+   "slot": "director_bai_yutong",
+   "text": "{npc.name}倚在单间门口，手里攥着一沓作业票：还差一个签名。……进来，签完了别急着走。"
   }
  ],
  "id": "refinery_hydrocrack_pressure_seal",
@@ -1508,7 +1568,8 @@
    "detail": "位于反应器钢架承重梁外侧的开敞式镀锌钢格板平台，热浪扑面风声呼啸，红色应急声光报警器在雨幕中狂闪，防爆防化应急水幕喷头正向下倾泻大量除毒水雾。",
    "exits": [
     "loc_hydrocracking_reactor_seal_skirt",
-    "loc_flare_knockout_drum_corridor"
+    "loc_flare_knockout_drum_corridor",
+    "loc_chief_dormitory_room"
    ],
    "id": "loc_reactor_skirt_access_platform",
    "name": "反应器裙座下部防爆检修主平台",
@@ -1551,6 +1612,26 @@
    "witnesses": [
     "bg_cadet_petrochemical_xiao_wu"
    ]
+  },
+  {
+   "affordances": [
+    "陪女总工签完最后一张作业票",
+    "替女总工冰敷颈后的勒痕",
+    "反锁单间的门"
+   ],
+   "detail": "装置区边上值班楼三层的一间单人宿舍，一张单人床、一只堆满作业票的文件柜、一台老空调，窗外是火炬塔的橘红火光。",
+   "exits": [
+    "loc_reactor_skirt_access_platform"
+   ],
+   "id": "loc_chief_dormitory_room",
+   "name": "厂区值班楼的总工单间",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "火炬的光把窗帘映成暖橘色，门一反锁，楼下检修工的说笑声就隔在了走廊那头。",
+   "witnesses": []
   }
  ],
  "name_pools": {

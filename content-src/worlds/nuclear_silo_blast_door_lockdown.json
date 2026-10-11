@@ -301,7 +301,8 @@
       ],
       "exits": [
         "loc_blast_door_hydraulic_hall",
-        "loc_silo_cooling_well_catwalk"
+        "loc_silo_cooling_well_catwalk",
+        "loc_commander_duty_cabin"
       ],
       "affordances": [
         "按下主控台应急气动吹洗按钮",
@@ -340,6 +341,26 @@
       "tags": [
         "workplace",
         "disaster"
+      ]
+    },
+    {
+      "id": "loc_commander_duty_cabin",
+      "name": "洗消间隔壁的指挥官值班舱",
+      "detail": "指挥掩体尽头的一间值班舱，一张钢架床、一只军绿铁皮柜、一台老式电子管收音机，隔壁就是洗消间。",
+      "privacy": "private",
+      "visibility": "舱顶只亮一盏防爆灯，承压门一关，整座深井的轰鸣都闷成了很远的心跳。",
+      "witnesses": [],
+      "exits": [
+        "loc_silo_command_bunker_corridor"
+      ],
+      "affordances": [
+        "陪女指挥官听一段收音机",
+        "替女指挥官擦干头发",
+        "把值班舱的承压门锁上"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
       ]
     }
   ],
@@ -426,7 +447,7 @@
         "expression": "脱险进入安全区后，默默撕下自己里衣最干净的棉布替对方包扎手掌，眼神温柔而坚毅。",
         "desire_range": [
           2,
-          3
+          4
         ],
         "self_control_range": [
           4,
@@ -1602,7 +1623,7 @@
       "id": "act_decon_shower_rinse",
       "title": "洗消间里陪女指挥官冲洗",
       "location_ids": [
-        "loc_silo_command_bunker_corridor"
+        "loc_commander_duty_cabin"
       ],
       "duration_minutes": 30,
       "start_minute": 1430,
@@ -1614,6 +1635,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_duty_cabin_radio",
+      "title": "收音机里的老歌",
+      "location_ids": [
+        "loc_commander_duty_cabin"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1260,
+      "beats": [
+        "值班舱里，女指挥官穿着军绿背心盘腿坐在钢架床上，拧着收音机的旋钮，杂音里漏出一支很老的情歌。",
+        "女指挥官把音量调小，拍了拍身边的床：坐过来。……这首歌我听过一百遍，今晚想换个人陪着听。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_duty_cabin_towel_hair",
+      "title": "洗消之后的湿发",
+      "location_ids": [
+        "loc_commander_duty_cabin"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1330,
+      "beats": [
+        "女指挥官刚从洗消间出来，湿发贴在颈后，只裹着一条军用浴巾坐在床沿，把毛巾递给人。",
+        "女指挥官闭着眼任人擦着头发，忽然握住那只手：擦干了就别急着走。……我想要你，你呢？"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_duty_cabin_ration_breakfast",
+      "title": "一盒罐头当早饭",
+      "location_ids": [
+        "loc_commander_duty_cabin"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 420,
+      "beats": [
+        "深井里不分昼夜，女指挥官醒来时裹着人的作训服，用刺刀撬开一盒午餐肉罐头，切成两半。",
+        "女指挥官把一半递过来：地面上的人这会儿在吃豆浆油条。……我们吃这个，也不坏。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -2052,6 +2124,15 @@
       "slot": "inspector_major_pei_guodong",
       "location_ids": [],
       "text": "{npc.name}抱着一只贴满封条的档案箱走过来，往人面前一搁：冷战时期的发射日志，帮我搬到指挥掩体去，别打开看。"
+    },
+    {
+      "id": "hook_qingyao_duty_cabin",
+      "kind": "approach",
+      "slot": "commander_su_qingyao",
+      "location_ids": [
+        "loc_commander_duty_cabin"
+      ],
+      "text": "{npc.name}靠在值班舱门边，手里拎着一台收音机：信号只有这屋里收得到。……进来听？"
     }
   ],
   "twists": [

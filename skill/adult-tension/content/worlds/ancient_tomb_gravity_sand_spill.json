@@ -465,7 +465,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "被从身后揽住纤腰稳住下盘重心，双手叠合在降魔杵上一同向死角猛压枢轴。",
     "dislikes": [
@@ -1263,13 +1263,64 @@
    "hook_ids": [],
    "id": "act_camp_tent_sand_brush",
    "location_ids": [
-    "loc_tomb_corridor_catacomb_gangway"
+    "loc_foothill_camp_tent"
    ],
    "start_minute": 1430,
    "tags": [
     "intimate"
    ],
    "title": "营帐里替女掌门拍净铁砂"
+  },
+  {
+   "beats": [
+    "营帐里点着马灯，女掌门盘腿坐在毡毯上，月白短打敞着领口，拔开酒葫芦的塞子先灌了一口。",
+    "女掌门把葫芦扔过来：下墓前喝一口壮胆，上来了喝一口压惊。……喝完了留不留下，你自己说。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_tent_wine_gourd",
+   "location_ids": [
+    "loc_foothill_camp_tent"
+   ],
+   "start_minute": 1250,
+   "tags": [
+    "intimate"
+   ],
+   "title": "营帐里分一葫芦烧酒"
+  },
+  {
+   "beats": [
+    "女掌门趴在毡毯上摊开一张旧墓图，手指沿着墓道往里划，小腿翘起来晃着，腰线绷成一道弧。",
+    "划到主墓室，女掌门忽然翻过身看人：这张图我看了十年。……今晚换我看你，行不行？"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_tent_tomb_map",
+   "location_ids": [
+    "loc_foothill_camp_tent"
+   ],
+   "start_minute": 1360,
+   "tags": [
+    "intimate"
+   ],
+   "title": "灯下看墓图看到一半"
+  },
+  {
+   "beats": [
+    "天刚亮，山脚起了大雾，营帐湿漉漉的，女掌门在毡毯上醒来，枕着人的胳膊，头发里还有一点铁砂。",
+    "女掌门懒洋洋地说：雾不散，下不了墓。……那就再睡一会儿，你抱紧点。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_tent_mountain_fog",
+   "location_ids": [
+    "loc_foothill_camp_tent"
+   ],
+   "start_minute": 360,
+   "tags": [
+    "intimate"
+   ],
+   "title": "山雾里醒来"
   }
  ],
  "default_npc_gender_mix": {
@@ -1460,6 +1511,15 @@
    "location_ids": [],
    "slot": "warlord_colonel_qian_biao",
    "text": "{npc.name}叼着雪茄踱过来，马靴在石板上踩得咯噔响，斜眼打量：你是哪路的？跟着本团长干，金子少不了你的。"
+  },
+  {
+   "id": "hook_hongling_tent_flap",
+   "kind": "approach",
+   "location_ids": [
+    "loc_foothill_camp_tent"
+   ],
+   "slot": "grandmaster_yue_hongling",
+   "text": "{npc.name}撩开营帐的门帘，晃了晃手里的酒葫芦：山里夜冷。……进来喝一口？"
   }
  ],
  "id": "ancient_tomb_gravity_sand_spill",
@@ -1500,7 +1560,8 @@
    "detail": "通往主殿的青砖墓道已被军阀大炮炸塌半壁，巨型花岗岩条石犬牙交错横亘在断壁残垣间，四周硝烟弥漫伴随刺鼻火药味，流沙正顺着甬道斜坡狂暴漫涌蔓延而来。",
    "exits": [
     "loc_crypt_balance_slab_grand_hall",
-    "loc_crypt_mercury_channel_gate"
+    "loc_crypt_mercury_channel_gate",
+    "loc_foothill_camp_tent"
    ],
    "id": "loc_tomb_corridor_catacomb_gangway",
    "name": "前椁墓道坍塌碎石连廊与甬道",
@@ -1543,6 +1604,26 @@
    "witnesses": [
     "bg_warlord_deputy_guard_qian"
    ]
+  },
+  {
+   "affordances": [
+    "在毡毯上陪女掌门喝一口烧酒",
+    "替女掌门拍净衣上的铁砂",
+    "放下营帐的门帘"
+   ],
+   "detail": "皇陵山脚营地里最大的一顶帆布营帐，毡毯、马灯、一口樟木箱，箱盖上摊着一张发黄的旧墓图。",
+   "exits": [
+    "loc_tomb_corridor_catacomb_gangway"
+   ],
+   "id": "loc_foothill_camp_tent",
+   "name": "山脚营地的掌门营帐",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "马灯挂在帐杆上晃，帐帘一放，外面守夜人的咳嗽声就远了。",
+   "witnesses": []
   }
  ],
  "name_pools": {

@@ -470,7 +470,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "在配电箱死角背靠学者胸膛，双手叠于学者粗糙大手共同紧握权杖长柄奋力向下扳压。",
     "dislikes": [
@@ -1194,8 +1194,7 @@
    ],
    "start_minute": 1320,
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "title": "晨间纯银精钢权杖顶端尖棱巡检"
   },
@@ -1213,8 +1212,7 @@
    ],
    "start_minute": 1325,
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "title": "地宫配电箱偏心防误碰搭扣巡查"
   },
@@ -1232,8 +1230,7 @@
    ],
    "start_minute": 1330,
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "title": "防盗高能水银灯管绝缘耐压巡测"
   },
@@ -1311,6 +1308,57 @@
     "intimate"
    ],
    "title": "棺室烛光下替千金解开蕾丝束腰"
+  },
+  {
+   "beats": [
+    "棺室的白蜡烛下，千金斜倚在天鹅绒棺椁边，蕾丝长裙的领口开得很低，往两只水晶杯里倒满红酒。",
+    "千金举杯：血族已经不喝血了，只喝这个。……猎魔人，你敢不敢跟我碰杯？碰了，就别想全身而退。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_crypt_red_wine_toast",
+   "location_ids": [
+    "loc_vampire_crypt_chamber"
+   ],
+   "start_minute": 1260,
+   "tags": [
+    "intimate"
+   ],
+   "title": "棺室里的红酒"
+  },
+  {
+   "beats": [
+    "千金摘下蕾丝手套，把冰凉的手贴上人的脸颊，红眸在烛光里一眨不眨，嘴角带着坏笑。",
+    "千金说：血族的体温比人低。……你若愿意替我焐热，就点头，我便不再假装高傲。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_crypt_cold_hand",
+   "location_ids": [
+    "loc_vampire_crypt_chamber"
+   ],
+   "start_minute": 1380,
+   "tags": [
+    "intimate"
+   ],
+   "title": "冰凉的手"
+  },
+  {
+   "beats": [
+    "外面的太阳升起来了，千金拉紧棺室的天鹅绒帷幕，打着哈欠钻进被子，把人一起拽进来。",
+    "千金闭着眼说：白昼是血族的夜晚。……陪我睡到日落，这是我允许的最高礼遇。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_crypt_daylight_curtain",
+   "location_ids": [
+    "loc_vampire_crypt_chamber"
+   ],
+   "start_minute": 480,
+   "tags": [
+    "intimate"
+   ],
+   "title": "白昼里的天鹅绒帷幕"
   }
  ],
  "default_npc_gender_mix": {
@@ -1499,6 +1547,15 @@
    "location_ids": [],
    "slot": "hunter_scholar_rayne",
    "text": "{npc.name}把胸前的银十字架摘下来，揣进了口袋：在你的地宫里，不戴这个了。省得你离我那么远。"
+  },
+  {
+   "id": "hook_alicia_crypt_candles",
+   "kind": "approach",
+   "location_ids": [
+    "loc_vampire_crypt_chamber"
+   ],
+   "slot": "vampire_lady_alicia",
+   "text": "{npc.name}站在棺室门口，手里捏着一只水晶杯：酒醒好了。……猎魔人，进来陪我喝一杯。"
   }
  ],
  "id": "vampire_crypt_uv_barrier_scepter_lever",

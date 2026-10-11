@@ -466,7 +466,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "被从身后紧抱稳住重心抗击震颤，双手叠合在插销摇把上一同向死角死压。",
     "dislikes": [
@@ -1271,6 +1271,57 @@
     "intimate"
    ],
    "title": "主操纵室里替女总指挥卸下冻硬的皮袄"
+  },
+  {
+   "beats": [
+    "主操纵室的暖风机呼呼吹着，女总指挥从保温壶里倒出两碗咸奶茶，盘腿坐在操纵台边的皮椅上。",
+    "女总指挥把碗递过来：牧民大姐送的，草原上最暖身子。……喝完了脸红，别赖在奶茶头上。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_cabin_salty_milk_tea",
+   "location_ids": [
+    "loc_operator_cabin_skywalk"
+   ],
+   "start_minute": 1220,
+   "tags": [
+    "intimate"
+   ],
+   "title": "主操纵室里的咸奶茶"
+  },
+  {
+   "beats": [
+    "窗外白毛风卷着雪粒，女总指挥脱了皮袄，只穿一件高领毛衣，倚在操纵室的大玻璃窗前。",
+    "女总指挥回头说：雪停之前，谁也上不来。……这六十米高的地方，现在只有你和我，你想吗？"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_cabin_blizzard_window",
+   "location_ids": [
+    "loc_operator_cabin_skywalk"
+   ],
+   "start_minute": 1360,
+   "tags": [
+    "intimate"
+   ],
+   "title": "白毛风里的窗前"
+  },
+  {
+   "beats": [
+    "风雪停了，太阳从草原尽头升起来，女总指挥裹着皮袄趴在操纵室的窗前，眯着眼看远处的冬窝子。",
+    "女总指挥说：等矿上的活干完，我带你去牧民家住几天。……这是约定，你得点头。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_cabin_grassland_sunrise",
+   "location_ids": [
+    "loc_operator_cabin_skywalk"
+   ],
+   "start_minute": 470,
+   "tags": [
+    "intimate"
+   ],
+   "title": "草原上的日出"
   }
  ],
  "default_npc_gender_mix": {
@@ -1468,6 +1519,15 @@
    "location_ids": [],
    "slot": "commander_lu_binglan",
    "text": "{npc.name}站在排土场边，望着远处冬窝子的一点灯火，把围巾往上拉到鼻尖：这片草原，等煤挖完了是要还回去的。你信不信？"
+  },
+  {
+   "id": "hook_binglan_cabin_thermos",
+   "kind": "approach",
+   "location_ids": [
+    "loc_operator_cabin_skywalk"
+   ],
+   "slot": "commander_lu_binglan",
+   "text": "{npc.name}在主操纵室门口举了举保温壶：咸奶茶还热着。……进来，外面要冻死人了。"
   }
  ],
  "id": "open_pit_coal_excavator_fire",

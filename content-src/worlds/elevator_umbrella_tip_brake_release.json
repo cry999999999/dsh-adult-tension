@@ -470,7 +470,7 @@
         "expression": "脱险后温柔地为维保师傅擦去额头的汗水与雨水，主动牵住维保师傅的手指低声呢喃‘有维保师傅在，我什么都不怕’。",
         "desire_range": [
           2,
-          3
+          4
         ],
         "self_control_range": [
           4,
@@ -1581,8 +1581,7 @@
       "hook_ids": [],
       "start_minute": 1280,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1600,8 +1599,7 @@
       "hook_ids": [],
       "start_minute": 1285,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1619,8 +1617,7 @@
       "hook_ids": [],
       "start_minute": 1290,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1696,6 +1693,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_apartment_cilantro_dinner",
+      "title": "不放香菜的晚饭",
+      "location_ids": [
+        "loc_shared_apartment"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1150,
+      "beats": [
+        "合租公寓的小厨房里，室友系着围裙煮了两碗面，一碗加了香菜，一碗特意没放，端过来时还冒着热气。",
+        "室友把没放香菜的那碗推给人：三年了，你的口味我都记得。……那你记不记得我喜欢什么？"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_apartment_one_blanket_movie",
+      "title": "沙发上一条毯子",
+      "location_ids": [
+        "loc_shared_apartment"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1340,
+      "beats": [
+        "停电的夜里，室友抱着笔记本电脑窝在沙发上，用剩下的电放一部电影，掀开毯子一角朝人示意。",
+        "看到一半，室友把头靠过来：合租守则第十条，不许对室友动心。……那一条，我们今晚撕掉好不好？"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_apartment_duty_chart_morning",
+      "title": "值日表上的新名字",
+      "location_ids": [
+        "loc_shared_apartment"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 480,
+      "beats": [
+        "早上，室友站在冰箱前，拿马克笔把倒垃圾值日表上的两个名字圈在一起，画了一颗歪歪扭扭的心。",
+        "室友回头冲人笑：以后不轮流了，一起倒。……顺便一起做早饭，一起睡懒觉。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -1806,7 +1854,7 @@
         "minutes": 2
       },
       "near": {
-        "text": "室友脸上烧得通红，喘息和心跳混在一起，分不清是怕的，还是别的什么。",
+        "text": "室友脸上烧得通红，湿透的针织长裙裹着柔软的身子，娇喘和心跳混在一起，分不清是怕的，还是别的什么。",
         "deadline_minutes": 4
       },
       "far": {
@@ -2142,6 +2190,15 @@
       "slot": "maintenance_technician_chen",
       "location_ids": [],
       "text": "{npc.name}拿起那把长柄伞掂了掂，挑了挑眉：伞尖是实心钢的？这伞比我工具箱里一半的家伙都结实。"
+    },
+    {
+      "id": "hook_wanqing_apartment_door",
+      "kind": "approach",
+      "slot": "roommate_su_wanqing",
+      "location_ids": [
+        "loc_shared_apartment"
+      ],
+      "text": "{npc.name}从合租公寓的门里探出头：面煮好了，没放香菜。……快进来。"
     }
   ],
   "twists": [

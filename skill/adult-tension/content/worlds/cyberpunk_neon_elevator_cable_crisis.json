@@ -466,7 +466,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "底盘内被对方从身后环抱稳住重心，双手叠合在扳手末端合力砸下死点。",
     "dislikes": [
@@ -1264,13 +1264,64 @@
    "hook_ids": [],
    "id": "act_safehouse_port_bandage",
    "location_ids": [
-    "loc_sky_cable_passenger_cabin"
+    "loc_rebel_safehouse"
    ],
    "start_minute": 1430,
    "tags": [
     "intimate"
    ],
    "title": "安全屋里替女黑客换接口绷带"
+  },
+  {
+   "beats": [
+    "安全屋的百叶窗外闪着霓虹，女黑客盘腿坐在折叠床上，捧着一碗合成面，宽大的旧夹克下只穿一件背心。",
+    "女黑客把筷子递过来：最后一碗了，分你一半。……吃完别急着走，我的防火墙今晚想放个人进来。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_safehouse_noodles",
+   "location_ids": [
+    "loc_rebel_safehouse"
+   ],
+   "start_minute": 1200,
+   "tags": [
+    "intimate"
+   ],
+   "title": "霓虹灯下分一碗合成面"
+  },
+  {
+   "beats": [
+    "女黑客拿出一根双头数据线，一头插进自己后颈的接口，另一头在指间晃：想不想看看我脑子里什么样？",
+    "女黑客说好了：你一说断开，我立刻拔线。等人点头，才把另一头接上，屏幕上的代码一下子乱成一片粉色。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_safehouse_neural_link",
+   "location_ids": [
+    "loc_rebel_safehouse"
+   ],
+   "start_minute": 1330,
+   "tags": [
+    "intimate"
+   ],
+   "title": "神经接口并联"
+  },
+  {
+   "beats": [
+    "酸雨下了一夜，早上终于停了，女黑客在折叠床上醒来，整个人缩在人怀里，终端屏幕还亮着。",
+    "女黑客把终端合上，嘟囔着：今天巨企的巡逻队休整。……所以我也休整，你陪我。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_safehouse_acid_rain_stops",
+   "location_ids": [
+    "loc_rebel_safehouse"
+   ],
+   "start_minute": 450,
+   "tags": [
+    "intimate"
+   ],
+   "title": "酸雨停了的早晨"
   }
  ],
  "default_npc_gender_mix": {
@@ -1461,6 +1512,15 @@
    "location_ids": [],
    "slot": "megacorp_inspector_araska_yan",
    "text": "{npc.name}整了整笔挺的制服领口走过来，指间夹着一张发光的企业通行卡：配合一下调查，对你没坏处。"
+  },
+  {
+   "id": "hook_suye_safehouse_door",
+   "kind": "approach",
+   "location_ids": [
+    "loc_rebel_safehouse"
+   ],
+   "slot": "rebel_tech_hacker_su_ye",
+   "text": "{npc.name}靠在安全屋的铁门上，用指节敲了两下：这里不在任何地图上。……进来，我请你吃面。"
   }
  ],
  "id": "cyberpunk_neon_elevator_cable_crisis",
@@ -1474,7 +1534,8 @@
    "detail": "长十五米、通体由高强度碳纤维与防弹聚碳酸酯构筑的椭圆形双层悬挂车厢，前挡风玻璃已被狂风震裂数道大缝，狂暴冷风撕扯着残破的广告全息投影，车厢严重前倾三十度高速下坠。",
    "exits": [
     "loc_cable_chassis_undercarriage_bay",
-    "loc_sky_cable_roof_inspection_hatch"
+    "loc_sky_cable_roof_inspection_hatch",
+    "loc_rebel_safehouse"
    ],
    "id": "loc_sky_cable_passenger_cabin",
    "name": "千米轨道悬挂穿梭缆车主车厢",
@@ -1543,6 +1604,26 @@
    "witnesses": [
     "bg_roof_antenna_rigger_xiao_wu"
    ]
+  },
+  {
+   "affordances": [
+    "和女黑客分一碗合成面",
+    "替女黑客换接口上的绷带",
+    "把安全屋的铁门锁死"
+   ],
+   "detail": "缆车站底下一间改装过的仓库，一张折叠床、三块拼起来的终端屏幕、墙角堆着合成面箱子，百叶窗外是霓虹。",
+   "exits": [
+    "loc_sky_cable_passenger_cabin"
+   ],
+   "id": "loc_rebel_safehouse",
+   "name": "下层城区的反抗军安全屋",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "霓虹透过百叶窗在墙上划出一道道粉紫色的光，铁门一锁，巨企的无人机也扫不进来。",
+   "witnesses": []
   }
  ],
  "name_pools": {

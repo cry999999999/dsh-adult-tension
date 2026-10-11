@@ -285,7 +285,8 @@
       "exits": [
         "loc_double_bottom_bilge_hold",
         "loc_engine_room_catwalk",
-        "loc_bilge_pump_station"
+        "loc_bilge_pump_station",
+        "loc_undercover_cabin"
       ],
       "affordances": [
         "观测轴隧尽头水密门电动滑轨下落之剩余间隙行程",
@@ -343,6 +344,26 @@
         "press_bilge_beam_crush": "若积水淹没水泵电机将彻底丧失主动排水抗沉手段"
       },
       "tags": []
+    },
+    {
+      "id": "loc_undercover_cabin",
+      "name": "女警官的单人船员舱",
+      "detail": "轮机组舱区尽头的一间单人舱，一张窄铺、一个铁皮衣柜、一扇结满冰花的圆舷窗，舱门可以从里面反锁。",
+      "privacy": "private",
+      "visibility": "舱顶一盏昏黄的小灯随着船身轻轻摇晃，柴油机的嗡鸣盖住了舱里的一切声音。",
+      "witnesses": [],
+      "exits": [
+        "loc_shaft_tunnel_corridor"
+      ],
+      "affordances": [
+        "坐在窄铺边对明天的口供",
+        "隔着舷窗看冰河",
+        "把舱门从里面反锁"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
+      ]
     }
   ],
   "character_templates": [
@@ -1608,6 +1629,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_cabin_porthole_frost",
+      "title": "舷窗结冰的夜里",
+      "location_ids": [
+        "loc_undercover_cabin"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1300,
+      "beats": [
+        "单人舱的舷窗结了一层冰花，女警官换下连体工装，只穿一件宽大的旧毛衣，抱膝坐在铺上。",
+        "女警官掀开被子一角：卧底这么久，船上没人知道我是谁。……你想知道吗？想的话，就自己过来。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_cabin_cover_story",
+      "title": "对口供对到一半",
+      "location_ids": [
+        "loc_undercover_cabin"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1120,
+      "beats": [
+        "女警官把舱门反锁，压低声音和人对明天的口供，说着说着，额头抵在了人的肩上。",
+        "女警官抬起头问：接下来这段不在口供里。……可以吗？得到回答后才吻上来，工装拉链被一点点拉开。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_cabin_engine_dawn",
+      "title": "柴油机换档时醒来",
+      "location_ids": [
+        "loc_undercover_cabin"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 400,
+      "beats": [
+        "天快亮时柴油机换了一档，舱壁跟着嗡嗡地震，女警官在窄铺上醒来，脸贴着人的胸口。",
+        "女警官没睁眼，小声说：再过一个钟头又得装成陌生人。……让我再听一会儿你的心跳。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -1924,6 +1996,15 @@
       "slot": "char_chu_shuanghua_specialist",
       "location_ids": [],
       "text": "{npc.name}抱着平板电脑凑过来，把屏幕转向这边：这组数据，你帮我看看哪里不对。"
+    },
+    {
+      "id": "hook_shen_cabin_safe",
+      "kind": "approach",
+      "slot": "char_shen_bingqing_officer",
+      "location_ids": [
+        "loc_undercover_cabin"
+      ],
+      "text": "{npc.name}在船员舱门口停住，左右看了一眼才压低声音：这里说话安全。进来，把门带上。"
     }
   ],
   "twists": [

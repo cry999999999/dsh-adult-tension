@@ -1244,6 +1244,57 @@
     "intimate"
    ],
    "title": "营房里替骑士长卸下胸甲"
+  },
+  {
+   "beats": [
+    "营房里烧了一桶热水，骑士长只穿着亚麻衬衣跪坐在木桶边，把一头银发浸进水里，回头看人。",
+    "骑士长说：城墙上四十天，头发里全是烟灰。……你来洗，洗干净了，我有话要对你说。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_quarters_hair_wash",
+   "location_ids": [
+    "loc_commander_quarters"
+   ],
+   "start_minute": 1220,
+   "tags": [
+    "intimate"
+   ],
+   "title": "木桶边替骑士长洗头发"
+  },
+  {
+   "beats": [
+    "骑士长解开银色发带，长发披下来，背对着人跪在床上祈祷，祷词念到一半，忽然停住了。",
+    "骑士长回过头：誓言里说，此身只献给圣殿。……我想改一个字，改成什么，要你点头才算。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_quarters_oath_whisper",
+   "location_ids": [
+    "loc_commander_quarters"
+   ],
+   "start_minute": 1370,
+   "tags": [
+    "intimate"
+   ],
+   "title": "低声改一句誓言"
+  },
+  {
+   "beats": [
+    "天还没亮，城头的号角还没吹，骑士长在窄床上醒来，伸手摸到枕边的人，才确定昨晚不是梦。",
+    "骑士长低声说：再过一刻钟，我要上城头点名。……第一个名字，我想先在这里念给你听。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_quarters_roll_call_dawn",
+   "location_ids": [
+    "loc_commander_quarters"
+   ],
+   "start_minute": 330,
+   "tags": [
+    "intimate"
+   ],
+   "title": "点名之前"
   }
  ],
  "default_npc_gender_mix": {
@@ -1429,6 +1480,15 @@
    ],
    "slot": "armory_engineer",
    "text": "{npc.name}把一张画满了齿轮的图纸摊开：这道钢闸是我改的。想知道这道闸怎么救命、又怎么要命吗？"
+  },
+  {
+   "id": "hook_christina_quarters_lamp",
+   "kind": "approach",
+   "location_ids": [
+    "loc_commander_quarters"
+   ],
+   "slot": "knight_commander_christina",
+   "text": "{npc.name}在营房门口提起一盏灯：城墙上点完名了。……进来，替我把这身铠甲卸了。"
   }
  ],
  "id": "silver_paladin_armory_fuse_race",

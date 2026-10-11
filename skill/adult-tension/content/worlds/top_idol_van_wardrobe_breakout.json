@@ -459,7 +459,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "掌控红毯进退全局节奏之主导位",
     "dislikes": [
@@ -1243,6 +1243,57 @@
     "intimate"
    ],
    "title": "VIP休息室里替女星解开变形暗扣"
+  },
+  {
+   "beats": [
+    "VIP休息室里，女星坐在化妆镜前，假睫毛还没摘，把卸妆棉往人手里一塞，闭上眼仰起脸。",
+    "女星闭着眼说：轻一点。……卸完了你就能看见我素颜的样子，全公司只有经纪人见过，你是第二个。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_lounge_makeup_off",
+   "location_ids": [
+    "loc_vip_dressing_lounge"
+   ],
+   "start_minute": 1240,
+   "tags": [
+    "intimate"
+   ],
+   "title": "替女星卸掉舞台妆"
+  },
+  {
+   "beats": [
+    "庆功宴散场后，女星赤着脚站在休息室中央，礼服换成了宽大的卫衣，拿着话筒清唱一支没发表的情歌。",
+    "唱到副歌，女星放下话筒走过来：这首歌是写给谁的，你猜。……猜对了，奖励随你挑，我都愿意。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_lounge_encore_private",
+   "location_ids": [
+    "loc_vip_dressing_lounge"
+   ],
+   "start_minute": 1350,
+   "tags": [
+    "intimate"
+   ],
+   "title": "只唱给一个人的安可"
+  },
+  {
+   "beats": [
+    "难得没有通告的早晨，女星裹着休息室的毯子窝在沙发上，素着脸，头发乱糟糟地翘着。",
+    "女星把手机扔到一边：经纪人说今天放假。……所以今天你也放假，哪儿都不许去。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_lounge_no_schedule_morning",
+   "location_ids": [
+    "loc_vip_dressing_lounge"
+   ],
+   "start_minute": 480,
+   "tags": [
+    "intimate"
+   ],
+   "title": "没有通告的早晨"
   }
  ],
  "default_npc_gender_mix": {
@@ -1338,6 +1389,15 @@
    "location_ids": [],
    "slot": "char_takahashi_engineer",
    "text": "{npc.name}推了推细框眼镜，摊开一张座椅滑轨的拆解图，指尖点着一处棘爪：你看，就是这个小东西，脾气比明星还大。"
+  },
+  {
+   "id": "hook_ruri_lounge_door",
+   "kind": "approach",
+   "location_ids": [
+    "loc_vip_dressing_lounge"
+   ],
+   "slot": "char_ruri_idol",
+   "text": "{npc.name}从VIP休息室门缝里探出头，压低声音：快进来，外面有代拍。……顺便陪我坐会儿。"
   }
  ],
  "id": "top_idol_van_wardrobe_breakout",

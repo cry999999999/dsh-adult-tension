@@ -426,7 +426,7 @@
         "expression": "脱险进入安全减压舱后，默默撕下自己里衣最干爽的棉布轻柔包扎对方被冰水冻裂渗血的双手虎口。",
         "desire_range": [
           2,
-          3
+          4
         ],
         "self_control_range": [
           4,
@@ -1614,6 +1614,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_chamber_helium_voice",
+      "title": "氦气里的情话",
+      "location_ids": [
+        "loc_hyperbaric_decompress_chamber"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1230,
+      "beats": [
+        "饱和舱里，女总监盘腿坐在窄铺上，一开口就是氦氧混合气里尖细走调的声音，自己先笑得停不下来。",
+        "女总监关掉解码器，凑到人耳边：这样说话，水面上的人就听不懂了。……所以我想说什么都可以。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_chamber_porthole_film",
+      "title": "舷窗边看一部旧电影",
+      "location_ids": [
+        "loc_hyperbaric_decompress_chamber"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1360,
+      "beats": [
+        "女总监把平板电脑支在舱里的小桌上，放一部很老的爱情片，裹着加热毯靠在人肩上，膝盖贴着膝盖。",
+        "电影里的人接吻时，女总监转过头：舱里只有我们两个，摄像头我调成了只看仪表。……你想的话，我也想。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_chamber_decompress_count",
+      "title": "减压倒数的早晨",
+      "location_ids": [
+        "loc_hyperbaric_decompress_chamber"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 420,
+      "beats": [
+        "清晨，舱压又往回减了一档，女总监在窄铺上醒来，看着舱壁上的倒数牌，又翻身钻回人怀里。",
+        "女总监小声说：还有六天才能出舱。……六天其实不长，我想每一天都这么过。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -2058,6 +2109,15 @@
       "slot": "director_lin_ruohan",
       "location_ids": [],
       "text": "{npc.name}从潜水钟里爬出来，湿发贴在额前，把一卷焊缝底片塞进人手里：明早潮汐窗口就开，今晚陪我把这四十张看完。"
+    },
+    {
+      "id": "hook_ruohan_chamber_bunk",
+      "kind": "approach",
+      "slot": "director_lin_ruohan",
+      "location_ids": [
+        "loc_hyperbaric_decompress_chamber"
+      ],
+      "text": "{npc.name}在饱和舱的窄铺上拍了拍身边的位置：水面上的人听不懂我们说话。……过来坐。"
     }
   ],
   "twists": [

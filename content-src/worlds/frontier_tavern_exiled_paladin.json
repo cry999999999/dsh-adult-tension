@@ -314,7 +314,8 @@
       "exits": [
         "loc_broken_bridge_abyss",
         "loc_clock_tower_vantage",
-        "loc_ancient_dwarven_thermal_tunnel"
+        "loc_ancient_dwarven_thermal_tunnel",
+        "loc_commander_stone_chamber"
       ],
       "affordances": [
         "取用厚实干燥之羊毛毛毯为脱险人员提供严密保暖裹护",
@@ -372,6 +373,26 @@
         "press_frostbite_hypothermia_shock": "回暖蒸汽在冷凝作用下产生浓密水雾需要持续保持导轨通风"
       },
       "tags": []
+    },
+    {
+      "id": "loc_commander_stone_chamber",
+      "name": "女统领的石室寝居",
+      "detail": "要塞内墙里一间凿出来的石室，铺着熊皮的矮床、一座烧得正旺的壁炉、墙角立着卸下来的秘银甲。",
+      "privacy": "private",
+      "visibility": "炉火把整间石室照成暖橙色，厚重的橡木门一关，风雪声就只剩一点闷响。",
+      "witnesses": [],
+      "exits": [
+        "loc_fortress_hearth_hall"
+      ],
+      "affordances": [
+        "在炉火边替女统领拆辫子",
+        "帮女统领把秘银甲挂上甲架",
+        "往壁炉里添一块木柴"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
+      ]
     }
   ],
   "character_templates": [
@@ -1593,6 +1614,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_chamber_unbraid",
+      "title": "炉火边替女统领拆辫子",
+      "location_ids": [
+        "loc_commander_stone_chamber"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1200,
+      "beats": [
+        "石室里炉火正旺，女统领卸了甲，只穿一件亚麻长衬衣坐在熊皮上，银白的长辫一直垂到腰间。",
+        "女统领把梳子递过来：辫子是副官编的，太紧了。……替我拆开，手可以慢一点。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_chamber_old_scars",
+      "title": "数女统领身上的旧伤",
+      "location_ids": [
+        "loc_commander_stone_chamber"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1350,
+      "beats": [
+        "女统领背对着炉火解开衬衣，后背上横七竖八全是旧伤，在火光里泛着淡淡的白。",
+        "女统领问：想知道每一道是怎么来的吗？等人答应，才拉着那只手，一道一道按在自己身上，从肩胛一路往下。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_chamber_snowed_in",
+      "title": "大雪封门的早晨",
+      "location_ids": [
+        "loc_commander_stone_chamber"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 450,
+      "beats": [
+        "一夜大雪把石室的窗堵了一半，女统领在厚厚的毛皮被下醒来，整个人被人圈在怀里。",
+        "女统领没有动，低声说：雪封了路，今天不用操练。……退队以后，这是我第一次想赖床。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -1881,6 +1953,15 @@
       "kind": "accident",
       "slot": "char_heroine_elenna_griffin",
       "text": "当秘银胸甲在力矩弹响中骤然解脱的一刹那，那抹自大氅裹护中顺势优雅后滚翻跃入门洞、傲骨凌霜的圣骑士身影，将怎样书写极北绝境的生还神话？"
+    },
+    {
+      "id": "hook_elenna_chamber_door",
+      "kind": "approach",
+      "slot": "char_heroine_elenna_griffin",
+      "location_ids": [
+        "loc_commander_stone_chamber"
+      ],
+      "text": "{npc.name}推开石室的门，炉火的热气扑出来：外面冷。进来烤烤火，甲我一个人卸不下来。"
     }
   ],
   "forbidden_terms": [

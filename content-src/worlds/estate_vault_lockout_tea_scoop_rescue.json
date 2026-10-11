@@ -298,7 +298,8 @@
         "bg_deputy_butler_qian"
       ],
       "exits": [
-        "loc_calligraphy_vault_hall"
+        "loc_calligraphy_vault_hall",
+        "loc_courtyard_tea_hut"
       ],
       "affordances": [
         "查验地面火警总控制箱跳闸回路",
@@ -389,6 +390,26 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "loc_courtyard_tea_hut",
+      "name": "中庭边的茶寮",
+      "detail": "老宅中庭一角的小茶寮，一方榻榻米、一只红泥风炉、一幅少夫人自己写的小字，竹帘外是晒画的回廊。",
+      "privacy": "private",
+      "visibility": "风炉的炭火是屋里唯一的光，竹帘一放、木门一合，宗亲们的说话声就隔在了院子那头。",
+      "witnesses": [],
+      "exits": [
+        "loc_grand_atrium_foyer"
+      ],
+      "affordances": [
+        "陪少夫人在风炉边煮茶",
+        "替少夫人解下薄纱披肩",
+        "合上茶寮的木门"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
+      ]
     }
   ],
   "character_templates": [
@@ -475,7 +496,7 @@
         "expression": "脱困后在幽暗回廊轻声唤装裱师名字，亲手递上锦帕替装裱师擦拭额角汗水，眼神中流转着难以言说的托付与柔情。",
         "desire_range": [
           2,
-          3
+          4
         ],
         "self_control_range": [
           4,
@@ -1585,8 +1606,7 @@
       "hook_ids": [],
       "start_minute": 1395,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1604,8 +1624,7 @@
       "hook_ids": [],
       "start_minute": 1400,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1623,8 +1642,7 @@
       "hook_ids": [],
       "start_minute": 1405,
       "tags": [
-        "workplace",
-        "intimate"
+        "workplace"
       ]
     },
     {
@@ -1688,7 +1706,7 @@
       "id": "act_tea_room_shawl",
       "title": "茶寮里替少夫人卸下汗湿的披肩",
       "location_ids": [
-        "loc_grand_atrium_foyer"
+        "loc_courtyard_tea_hut"
       ],
       "duration_minutes": 30,
       "start_minute": 1430,
@@ -1700,6 +1718,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_tea_hut_brush_note",
+      "title": "在扇面上题一句诗",
+      "location_ids": [
+        "loc_courtyard_tea_hut"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1220,
+      "beats": [
+        "茶寮里，少夫人跪坐着研墨，旗袍的高开衩里露出一截白腿，提笔在一柄素白团扇上题了一句诗。",
+        "少夫人把团扇递过来，眼波一转：这句诗的下半句，你来对。……对得好，我替你点一碗茶；对不好，罚你留下。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_tea_hut_hairpin_down",
+      "title": "拔下玉簪的夜",
+      "location_ids": [
+        "loc_courtyard_tea_hut"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1370,
+      "beats": [
+        "夜深了，宗亲们都散了，少夫人抬手拔下发髻上的玉簪，一头乌发散下来，落在旗袍的盘扣上。",
+        "少夫人低声说：在这座老宅里，我是当家的。……在这间茶寮里，我只想做个女人，你肯不肯？"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_tea_hut_sunning_morning",
+      "title": "晒画日的清晨",
+      "location_ids": [
+        "loc_courtyard_tea_hut"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 380,
+      "beats": [
+        "六月初六的清晨，少夫人披着薄纱坐在茶寮门槛上，看回廊上一幅幅铺开的古画，身边留了一个位置。",
+        "少夫人拍了拍身边的门槛：坐。……宗亲们八点才到，在那之前，这座宅子只有我们俩。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -1811,7 +1880,7 @@
         "minutes": 2
       },
       "near": {
-        "text": "少夫人的额头抵在肩上，压着嗓子喘气，发髻上的玉簪硌得人生疼。",
+        "text": "少夫人的额头抵在肩上，压着嗓子娇喘，旗袍高开衩下的腿贴得严丝合缝，发髻上的玉簪硌得人生疼。",
         "deadline_minutes": 4
       },
       "far": {
@@ -2155,6 +2224,15 @@
       "slot": "mistress_shen_wanqing",
       "location_ids": [],
       "text": "{npc.name}在晚宴散后站在廊下看天边的闪电，旗袍外披了一件薄纱：今晚雷大，库里的除湿机最怕停电。陪我下去看一眼？"
+    },
+    {
+      "id": "hook_wanqing_tea_hut_curtain",
+      "kind": "approach",
+      "slot": "mistress_shen_wanqing",
+      "location_ids": [
+        "loc_courtyard_tea_hut"
+      ],
+      "text": "{npc.name}撩起茶寮的竹帘：风炉上的水开了。……进来，我只给你一个人点茶。"
     }
   ],
   "twists": [

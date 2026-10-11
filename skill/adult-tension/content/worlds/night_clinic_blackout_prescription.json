@@ -1245,13 +1245,64 @@
    "hook_ids": [],
    "id": "act_on_call_room_after_shift",
    "location_ids": [
-    "loc_hospital_rounds_corridor"
+    "loc_on_call_room"
    ],
    "start_minute": 1410,
    "tags": [
     "intimate"
    ],
    "title": "下夜班值班室扣好暗扣"
+  },
+  {
+   "beats": [
+    "凌晨三点，值班室里只有咖啡机的咕噜声，女主任脱了高跟鞋，把穿着丝袜的脚蜷在椅子上看病历。",
+    "女主任头也不抬：呼叫器二十分钟没响了。……你要是想坐过来，现在可以。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_on_call_3am_coffee",
+   "location_ids": [
+    "loc_on_call_room"
+   ],
+   "start_minute": 180,
+   "tags": [
+    "intimate"
+   ],
+   "title": "凌晨三点两次呼叫之间"
+  },
+  {
+   "beats": [
+    "值班室的门锁上了，女主任靠在铁柜上，白大褂下是熨得笔挺的衬衫和铅笔裙，听诊器还挂在脖子上。",
+    "女主任把听诊器摘下来挂到人脖子上：先听听我的心跳，再决定要不要解扣子。……你来决定。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_on_call_stethoscope",
+   "location_ids": [
+    "loc_on_call_room"
+   ],
+   "start_minute": 1400,
+   "tags": [
+    "intimate"
+   ],
+   "title": "先听心跳再解扣子"
+  },
+  {
+   "beats": [
+    "交班前，值班室的窄床上，女主任在人怀里醒来，头发散在枕头上，眼镜不知道丢到了哪里。",
+    "女主任摸到眼镜戴上，看了一眼表：还有十分钟交班。……够了，过来。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_on_call_before_handover",
+   "location_ids": [
+    "loc_on_call_room"
+   ],
+   "start_minute": 450,
+   "tags": [
+    "intimate"
+   ],
+   "title": "交班前的十分钟"
   }
  ],
  "default_npc_gender_mix": {
@@ -1315,6 +1366,15 @@
    ],
    "slot": "char_song_sihan_fellow",
    "text": "{npc.name}注目器械盘内不锈钢截骨锤平柄末端，以笃定眼神示意钝头棱角无坚不摧可全力施为。"
+  },
+  {
+   "id": "hook_lu_on_call_coffee",
+   "kind": "approach",
+   "location_ids": [
+    "loc_on_call_room"
+   ],
+   "slot": "char_lu_qingyi_officer",
+   "text": "{npc.name}从值班室里探出头，压着嗓子：今晚病房很安静。进来，我请你喝杯咖啡。"
   }
  ],
  "id": "night_clinic_blackout_prescription",
@@ -1376,7 +1436,8 @@
    "detail": "连接行政主楼与无菌中心的明亮长廊，两侧挂满三甲质控规程图表，数十位身着正装之评审专家正缓步逼近门前。",
    "exits": [
     "loc_airlock_interlock_sliding_gate",
-    "loc_hvac_control_substation"
+    "loc_hvac_control_substation",
+    "loc_on_call_room"
    ],
    "id": "loc_hospital_rounds_corridor",
    "name": "洁净区外廊考评通道",
@@ -1414,6 +1475,26 @@
     "bg_orderly_wang",
     "bg_apprentice_nurse_zheng"
    ]
+  },
+  {
+   "affordances": [
+    "陪女主任在值班室喝咖啡",
+    "替女主任把白大褂挂起来",
+    "把值班室的门锁上"
+   ],
+   "detail": "洁净区外廊尽头的一间值班室，一张窄床、一张堆满病历的桌子、一台咖啡机，门可以从里面锁上。",
+   "exits": [
+    "loc_hospital_rounds_corridor"
+   ],
+   "id": "loc_on_call_room",
+   "name": "外廊尽头的值班室",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "只开一盏床头灯，呼叫器搁在枕边，走廊上的脚步声一近，屋里的人就屏住呼吸。",
+   "witnesses": []
   }
  ],
  "name_pools": {

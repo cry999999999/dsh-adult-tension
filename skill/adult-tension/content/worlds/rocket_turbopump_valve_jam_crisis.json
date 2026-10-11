@@ -466,7 +466,7 @@
     ],
     "desire_range": [
      2,
-     3
+     4
     ],
     "desired_position": "被从身后紧抱稳住重心抗击震颤冲击，双手叠合在钛合金扳手上一同向下猛力死压。",
     "dislikes": [
@@ -1271,6 +1271,57 @@
     "intimate"
    ],
    "title": "撤离通廊里替女总师解开结霜的防护服"
+  },
+  {
+   "beats": [
+    "宿舍里，女总师把镇上大排档打包回来的炒花甲摊在桌上，穿着宽大的发射场纪念T恤，光着腿盘在椅子上。",
+    "女总师剥了一只递过来：游客都在等着看火箭，我只想吃宵夜。……吃完了，陪我做点比发射更让人紧张的事。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_dorm_seafood_takeout",
+   "location_ids": [
+    "loc_launch_site_dorm"
+   ],
+   "start_minute": 1240,
+   "tags": [
+    "intimate"
+   ],
+   "title": "大排档打包的宵夜"
+  },
+  {
+   "beats": [
+    "发射前夜，女总师坐在床沿，盯着窗外灯火通明的发射塔，手指一下下敲着膝盖，睡不着。",
+    "女总师回头说：老规矩，进场前不说完了两个字。……我想换个别的办法安神，你同意，就过来抱我。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_dorm_launch_eve",
+   "location_ids": [
+    "loc_launch_site_dorm"
+   ],
+   "start_minute": 1380,
+   "tags": [
+    "intimate"
+   ],
+   "title": "发射前夜的规矩"
+  },
+  {
+   "beats": [
+    "发射成功后的早晨，女总师裹着被子把窗台上的海螺贴到人耳边，自己的脸也凑过来听。",
+    "女总师小声说：这是第一次发射成功那天捡的。……今天第二只，要你陪我去海边捡。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_dorm_conch_morning",
+   "location_ids": [
+    "loc_launch_site_dorm"
+   ],
+   "start_minute": 400,
+   "tags": [
+    "intimate"
+   ],
+   "title": "海螺里的海浪声"
   }
  ],
  "default_npc_gender_mix": {
@@ -1468,6 +1519,15 @@
    "location_ids": [],
    "slot": "chief_engineer_shen_ruobing",
    "text": "{npc.name}在发射前夜爬上海边的观礼台，望着灯火通明的发射塔，把头靠在栏杆上：每次到这时候都睡不着。陪我在这儿等天亮？"
+  },
+  {
+   "id": "hook_ruobing_dorm_window",
+   "kind": "approach",
+   "location_ids": [
+    "loc_launch_site_dorm"
+   ],
+   "slot": "chief_engineer_shen_ruobing",
+   "text": "{npc.name}靠在宿舍门边，晃了晃一袋打包的宵夜：从这扇窗能看见发射塔。……进来吃？"
   }
  ],
  "id": "rocket_turbopump_valve_jam_crisis",
@@ -1508,7 +1568,8 @@
    "detail": "位于导流槽上方的重型钢桁架回转平台，狂风呼啸警报狂鸣，高压消防水幕喷头正向下倾泻大量防静电雾化水幕，红色射前戒严警报灯将四周映照成血色。",
    "exits": [
     "loc_turbopump_valve_nook",
-    "loc_flame_trench_emergency_tunnel"
+    "loc_flame_trench_emergency_tunnel",
+    "loc_launch_site_dorm"
    ],
    "id": "loc_launch_pad_swing_arm_gantry",
    "name": "发射台回转平台防爆检修主栈桥",
@@ -1551,6 +1612,26 @@
    "witnesses": [
     "bg_cadet_propulsion_xiao_zhong"
    ]
+  },
+  {
+   "affordances": [
+    "陪女总师看窗外的发射塔",
+    "替女总师焐热冻僵的手指",
+    "锁上宿舍的门"
+   ],
+   "detail": "发射场生活区的一间单人宿舍，一张单人床、一面贴满发射纪念章的墙、一扇正对发射塔的窗，窗台上摆着一只海螺。",
+   "exits": [
+    "loc_launch_pad_swing_arm_gantry"
+   ],
+   "id": "loc_launch_site_dorm",
+   "name": "发射场的总师宿舍",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "窗外发射塔的航标灯一闪一闪，海风把窗帘吹得鼓起来，门一锁，倒计时的广播声也传不进来。",
+   "witnesses": []
   }
  ],
  "name_pools": {

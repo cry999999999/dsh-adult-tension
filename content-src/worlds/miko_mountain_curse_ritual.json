@@ -314,7 +314,8 @@
       ],
       "exits": [
         "loc_hanging_kagura_corridor",
-        "loc_mountain_evacuation_path"
+        "loc_mountain_evacuation_path",
+        "loc_miko_living_quarters"
       ],
       "affordances": [
         "架设重型救援绳桥向回廊投射防坠锁扣绳包",
@@ -368,6 +369,26 @@
         "press_twenty_seconds_torrent_breach": "后山泥石流漫灌石阶导致最后安全撤离窗口倒数"
       },
       "tags": []
+    },
+    {
+      "id": "loc_miko_living_quarters",
+      "name": "社务所后的巫女居所",
+      "detail": "社务所后面一间老旧的和室，榻榻米、矮桌、一只炭火盆，拉门外是一条能看见山月的窄廊。",
+      "privacy": "private",
+      "visibility": "纸拉门透进一点月光，炭火盆的红光映在两个人脸上，山里静得能听见彼此的呼吸。",
+      "witnesses": [],
+      "exits": [
+        "loc_sanctuary_outer_terrace"
+      ],
+      "affordances": [
+        "在廊下陪大巫女赏月",
+        "替大巫女重新系好绯袴",
+        "拉上纸拉门"
+      ],
+      "pressure_modifiers": {},
+      "tags": [
+        "intimate"
+      ]
     }
   ],
   "character_templates": [
@@ -1757,6 +1778,57 @@
       "tags": [
         "intimate"
       ]
+    },
+    {
+      "id": "act_quarters_hakama_retie",
+      "title": "替大巫女重新系绯袴",
+      "location_ids": [
+        "loc_miko_living_quarters"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1260,
+      "beats": [
+        "居所的榻榻米上，大巫女跪坐着解开绯袴的系带，雪白的襦袢领口松开，露出一截锁骨。",
+        "大巫女回头轻声问：结打不好……能帮我吗？等人点头，才把系带交到那双手里，身子微微往后靠。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_quarters_moon_sake",
+      "title": "廊下赏月喝御神酒",
+      "location_ids": [
+        "loc_miko_living_quarters"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1320,
+      "beats": [
+        "居所的廊下挂着一轮满月，大巫女把御神酒倒进两只朱漆小杯，脸颊被酒气染得微红。",
+        "喝完第二杯，大巫女把头靠过来：神明看着呢。……可我今晚想做一件不让神明看的事，你肯不肯？"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
+    },
+    {
+      "id": "act_quarters_after_sweeping",
+      "title": "扫完参道回来的清晨",
+      "location_ids": [
+        "loc_miko_living_quarters"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 360,
+      "beats": [
+        "天刚亮，大巫女扫完参道回到居所，拉门一关就从背后抱住了人，竹扫帚还靠在门外。",
+        "大巫女把脸贴在人背上小声说：外面的人都还没醒。……就这一会儿，让我做个普通人。"
+      ],
+      "tags": [
+        "intimate"
+      ],
+      "hook_ids": []
     }
   ],
   "pressures": [
@@ -2045,6 +2117,15 @@
       "kind": "accident",
       "slot": "char_heroine_ye_hua",
       "text": "当整座悬挑回廊在巨响中沉入深渊的一刹那，那抹自铜门中从容闪身跃出、身裹红氅却傲骨凌霜的清冷身影，将怎样改写这场山崩神迹的劫难传奇？"
+    },
+    {
+      "id": "hook_yehua_quarters_tea",
+      "kind": "approach",
+      "slot": "char_heroine_ye_hua",
+      "location_ids": [
+        "loc_miko_living_quarters"
+      ],
+      "text": "{npc.name}在居所的拉门边跪坐下来，替人摆好一双草履：参拜的人都走了。进来喝杯茶吧。"
     }
   ],
   "forbidden_terms": [

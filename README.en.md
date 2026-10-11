@@ -40,7 +40,7 @@ Every world is open. Pick one and play.
 Don't see what you want? Just say "custom world" (`自定义世界`), name the year and the place, and one is made for you on the spot.
 
 <details>
-<summary><b>See all 145 worlds at a glance (click to open)</b></summary>
+<summary><b>See all 150 worlds at a glance (click to open)</b></summary>
 <br>
 
 | World | In one line |
@@ -190,6 +190,11 @@ Don't see what you want? Just say "custom world" (`自定义世界`), name the y
 | After the Broken Engagement (退婚后的温室) | A jilted duke's daughter, accused of poisoning, tends healing herbs before dawn; when the dome falls only the commoner apothecary is beside her. |
 | Storm Culvert (暴雨夜暗渠) | A 21-year-old chaebol chair's car is steered into a flood culvert; with ten centimetres of air she and her bodyguard kick the door open. |
 | Besieged Fortress (被围的要塞) | Day forty of the siege; the temple knight-commander and the armory engineer who talks back are sealed in a powder tunnel. |
+| Library Book Lift (书库升降笼) | After closing, the gentle librarian and the book restorer hang eight metres up in a stuck maintenance cage, wedging a brass date stamp into the pawl. |
+| Snow Line Train (雪国列车) | The conductor who always saves one extra blanket is swept off a cliff edge with the train mechanic, both wrapped in one coat while forcing a frozen door. |
+| Storm Stable (雷雨马厩) | A proud riding heiress who bickered with the equine vet all summer gets trapped with that vet when lightning sets the hayloft ablaze. |
+| Premiere Eve Pit (首演前夜乐池) | Three days before the premiere, the young maestra and the stage machinist are stranded in a stalled orchestra pit, prying a valve in tempo. |
+| Front-Line Field Hospital (前线野战医院) | A surgeon as cold as a scalpel, one bitter coffee per ceasefire; the aid bunker caves in and the sapper lead shares the last of the air. |
 
 </details>
 

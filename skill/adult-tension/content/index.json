@@ -206,6 +206,25 @@
   },
   {
    "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "江南水乡现代古风临河双层复古书店",
+   "id": "bookstore_atrium_paperweight_rescue",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "古书肆双层挑空中庭回廊天井与重型橡木书架死角走道",
+   "status": "released",
+   "summary": "江南临河的百年旧书肆，梅雨下了整整一个月，书页都潮得发软。借住在阁楼上替书肆编家谱目录的研究生，每晚都抄到打烊以后。这一夜河水倒灌，天棚玻璃被雷暴击碎，二楼的橡木书架倾滑卡死回廊。编目员与来修回廊的木作修复员被困在书架死角，只能用一方黄铜镇纸，撬转铁脚螺母。",
+   "title": "文系研究生·临河古书肆挑空中庭"
+  },
+  {
+   "content_tags": [
     "romance_light",
     "intimate",
     "coercion_theme",
@@ -393,6 +412,25 @@
     "intimate"
    ],
    "default_person": "second",
+   "era": "十万吨级薄膜型超低温LNG船深远海远洋航行期",
+   "id": "cryogenic_lng_tank_relief_crisis",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "液货舱圆顶下方零下一百六十二度绝冷盲区",
+   "status": "released",
+   "summary": "远洋航行第四十七天，船过好望角，船员一周只分得到二十分钟卫星电话，周六晚上餐厅的卡拉OK是唯一的消遣。这一夜十万吨薄膜型LNG船撞上十级狂风巨浪，零下一百六十二度液货舱的蒸发气安全阀结霜冰堵，舱压直逼内胆撕裂红线。清冷女轮机长与水手长，把耐脆断加长扳手插进应急复位顶杆的卡槽，合力猛砸压下阀杆，破冰泄压。",
+   "title": "大型LNG运输船·超低温液货舱安全阀冰堵"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
    "era": "近未来赛博朋克巨企垄断与霓虹反抗军纪元",
    "id": "cyberpunk_neon_elevator_cable_crisis",
    "modes": [
@@ -403,6 +441,25 @@
    "status": "released",
    "summary": "高空交火炸断千米跨城穿梭主缆索，重型双层悬挂缆车沿倾斜钢轨疯狂失速滑坠。底盘备用液压制动钳遭电子蠕虫病毒锁死断电，强对流狂风撕裂车顶玻璃，千米高空坠毁倒计时凄厉长鸣。反抗军首席冷艳女黑客技师总监与滞留车厢的退役佣兵，借单兵折叠式电磁破拆重型扳手充当纯机械物理卡销，冒死爬入底盘检修舱强行卡死棘轮轨道制动齿自救。",
    "title": "赛博霓虹·高空缆车悬挂绝境"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "重工业极盛期超深露天矿坑深井竖井开采施工期",
+   "id": "deep_pit_quarry_hoist_brake_failure",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "地下三百米超深采矿竖井悬挂提升斗钢骨吊笼",
+   "status": "released",
+   "summary": "井口灯房的挂牌板上，每个下井的人都挂着一块铜牌，升井才摘。夜班交接时把钩工按了三声铃，三百米深井提升斗载着这一班人全负荷下行，卷扬机减速箱突发打齿碎裂，提升斗失速沿悬挂钢缆向矿井深渊极速坠落。主风压机械抱闸在电涌中烧熔断裂，十吨重矿斗失控下坠。傲娇女总工与井口把钩工长，借高扭矩特种钛合金双向防脱棘轮敲击扳手反向卡死第二级安全导向轮抱闸槽，合力借身体自重强行卡滞导向轴脱险自救。",
+   "title": "深坑矿井·提升斗刹车失灵"
   },
   {
    "content_tags": [
@@ -551,6 +608,25 @@
    "status": "released",
    "summary": "迷宫都市地下三十三层远古神明圣坛突发九级地脉剧震，数百万吨巨石轰然崩塌封死全部折返竖井。年满二十周岁出身圣月王庭高贵名门、早年侍奉月辉女神之神殿首席白袍女祭司长，正独自主持净化上古秽恶源核。年满二十一周岁担任前线重装斥候之后卫持盾年轻骑士，在坍塌前一刻飞身扑向祭坛用塔盾挡下万斤坠石救下女祭司。然而神圣白银法杖当场折断，神圣防御结界碎裂，失控的远古暗蚀瘴气与地脉裂隙喷涌之灼热硫磺岩浆逼近断壁。",
    "title": "失落圣坛：精灵女祭司"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "现代江南名门世家地下字画典藏库",
+   "id": "estate_vault_lockout_tea_scoop_rescue",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "地下大跨度恒湿字画通堂外侧防尘气密卷帘门死角",
+   "status": "released",
+   "summary": "江南老宅每年六月初六开库晒画，宗亲们坐在中庭里喝茶看画，也盯着这份家产怎么分。今年开库当晚，雷暴击中配电房，地下字画库的气密卷帘断电砸死，惰性气体灭火倒计时五分钟。当家大小姐与从苏州请来的装裱师被困在门缝死角，只能用一柄实心紫铜茶则的折沿，撬开变形的锁舌。",
+   "title": "典雅大小姐·古画字画恒湿大库"
   },
   {
    "content_tags": [],
@@ -776,6 +852,25 @@
   },
   {
    "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "深层地热能源大开发超深高温高压定向钻探施工期",
+   "id": "geothermal_deep_well_blowout_preventer",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "深层地热井口超高压液压防喷器与泥浆管汇死角通道",
+   "status": "released",
+   "summary": "海拔四千米的高原地热田上，钻井队的板房挨着一眼冒热气的野温泉，空气里永远一股硫磺味。这一夜千米深井遭遇超高压过热蒸汽与重质泥浆井喷，防喷器液压管线刺漏抱死，闸板无法电控关闭，三百度蒸汽在死角管汇里疯狂喷射，井架濒临掀翻。冷艳女总地质师与钻井队司钻，把耐高温加长丝杠摇把反向插进应急锁紧轴套，合力转动机械丝杠，强行封闭环形闸板。",
+   "title": "地热深井·井口防喷器高压刺漏"
+  },
+  {
+   "content_tags": [
     "romance_light",
     "intimate",
     "violence"
@@ -990,6 +1085,44 @@
    "status": "released",
    "summary": "豪宅遭遇武装突袭断电，重装安全屋气动防盗门偏位死锁夹住吊带睡裙。名门千金临危不乱，以加厚修甲锉平直金属刃插入离合器缝隙短路自检弹开卡栓脱困，在雇佣兵烧穿门板刹那借保镖大氅掩护踏入逃生密道反转破局。",
    "title": "名门千金·绑架暗格·豪宅衣帽间重装安全屋钢栓抱死真丝睡裙暗扣"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "特大型水利枢纽超高混凝土重力坝高水头运行期",
+   "id": "hydroelectric_penstock_intake_gate_stuck",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "水下百米大坝进水口快速启闭门检修排水廊道",
+   "status": "released",
+   "summary": "峡谷里连下十九天暴雨，大坝进入防汛一级响应，所有人吃住在坝上，库区移民村的灯一盏盏亮在半山腰。这一夜洪峰过坝，万吨巨木压垮深孔拦污栅，快速闸门在断电水锤中卡死在导轨中途，高压水头撕扯检修人孔盖，深廊道眼看要被冲垮。傲娇女总监与闸门运行值班长，把加长合金卸荷摇把插进旁通平衡阀的偏心阀腔，合力转开旁通阀平压，让闸门落槽。",
+   "title": "水电站大坝·压力钢管拦污栅卡死"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "十马赫国家级超高声速空气动力学风洞运行期",
+   "id": "hypersonic_wind_tunnel_nozzle_jam",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "喷管喉道两千度极热微米级调节腔狭窄死角",
+   "status": "released",
+   "summary": "西南山沟里的三线老基地，一次吹风要吃掉半座城的电，试验只能排在后半夜用电低谷，基地子弟是听着吹风的爆鸣长大的。这一夜十马赫热障吹风，两千度激波击穿水冷套，喷管可调喉道受热烧蚀膨胀抱死，调节电机烧毁，喷管舱体眼看要憋爆。傲娇女总师与风洞运行值班长，把钨钼合金防烧蚀扳手插进应急微调螺栓，合力顶住热膨胀的阻力，压正喉道。",
+   "title": "超高声速风洞·喷管喉道调节偏心卡死"
   },
   {
    "content_tags": [
@@ -1419,6 +1552,44 @@
    "title": "雪夜战壕：女少校的最后一发"
   },
   {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "超深水半潜式钻井平台深海油气勘探期",
+   "id": "offshore_oil_platform_diverter",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "月池下方分流器环形防喷器液压控制死角",
+   "status": "released",
+   "summary": "平台上的人二十八天一轮换，今天倒班直升机刚落，换班的人拎着行李走下停机坪，台风预警又升了一级。这一夜千米水深的钻井作业撞上浅层高压气包刺漏，月池下方分流器的大胶芯在超压泥浆冲击中膨胀抱死，排气旁通阀动不了，高压气柱眼看要冲毁月池。傲娇女总监与平台吊车司机长，把耐海水双向棘轮加力扳手插进泄压阀的偏心锁紧槽，合力猛转，手动卸压复位。",
+   "title": "海上油气平台·分流器密封胶芯胀死阻断"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "特大型露天煤矿千万吨级连续开采装备运行期",
+   "id": "open_pit_coal_excavator_fire",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "万吨轮斗挖掘机悬空六十米受料臂卷扬机房",
+   "status": "released",
+   "summary": "草原深处的露天煤矿，冬夜零下三十度，白毛风卷着雪粒和煤尘打在脸上，排土场外就是牧民的冬窝子。这一夜煤尘自燃引燃万吨轮斗挖掘机的液压油路，悬空六十米的受料臂在失电水锤中抱死下坠，卷扬机房化成火海。英气女总指挥与斗轮机司机长，把铬钒钢超越离合插销摇把插进应急减速箱的偏心销孔，合力猛转，反向锁死齿圈。",
+   "title": "露天煤矿·万吨轮斗挖掘机受料臂卡死起火"
+  },
+  {
    "content_tags": [],
    "default_person": "second",
    "era": "十九世纪末巴黎大歌剧院繁盛时期",
@@ -1495,6 +1666,25 @@
    "status": "released",
    "summary": "深夜特大雷暴引发电网骤停，负七层国家超导磁约束实验室液氦管道破裂、强磁场泄露，防爆铅门全盘自锁。年满二十三岁的天才冰山女物理学家在抢修主线圈时护目镜碎裂受困，年满二十二岁的青年低温工程师破门会合。舱温跌向零下四十度，供氧只剩两小时，女学者因强磁干扰突发室颤。除颤、复温、泄压、破门——冰山上下级之间的那层冰，要到天亮回到地面才肯裂开。",
    "title": "强磁实验室：冰山女物理学家"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "江南水乡现代古风百年传统戏楼",
+   "id": "pingtan_diva_stage_wrench_rescue",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "古戏楼挑空主戏台与乐池台口落地木质挂落死角",
+   "status": "released",
+   "summary": "江南老街上的百年书场，晚上七点开书，听客们泡一壶茶、抓一把瓜子，等女先生把昨天卖下的关子接着唱下去。这一夜暴雨压城，山墙承重柱错位，台口上方的雕花挂落整片砸落。女先生与正在修台口的木作师傅被困在台基死角，只能用一把淬火的琵琶调音扳手卡进木销暗槽，一点点撬起挂落。",
+   "title": "典雅评弹名伶·古戏楼百年老戏台"
   },
   {
    "content_tags": [
@@ -1575,6 +1765,25 @@
   },
   {
    "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "千万吨级炼化一体化加氢裂化装置高压运行期",
+   "id": "refinery_hydrocrack_pressure_seal",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "四百度加氢反应器底部八角垫检修隔热罩通道",
+   "status": "released",
+   "summary": "化工城的大检修季，装置区搭满脚手架，三千名外协检修工住在厂外板房村，每张动火作业票要七个人签字。这一夜加氢裂化装置紧急停工降温，四百度高压反应器底部主法兰热胀冷缩开裂，高压热氢与硫化氢高频刺漏，隔热罩死角里六十度高温，氢气逼近爆炸极限。冰山女总工与中控室内操主操，把超长棘轮扳手反向对角卡死高压螺母，合力锁紧主法兰止住刺漏。",
+   "title": "炼油化工厂·加氢裂化反应器高压密封面泄漏"
+  },
+  {
+   "content_tags": [
     "romance_light",
     "intimate",
     "coercion_theme",
@@ -1627,6 +1836,63 @@
    "status": "released",
    "summary": "仗打完了，英雄得学着过日子：当年的仇人成了邻居，当年的战友成了债主。",
    "title": "勇者退休以后"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "千吨级商业液体运载火箭高密度发射期",
+   "id": "rocket_turbopump_valve_jam_crisis",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "发射台导流槽下方火箭尾段涡轮泵死角狭缝",
+   "status": "released",
+   "summary": "海边的商业发射场，发射前夜镇上的海鲜大排档坐满了来看火箭的游客，场里的人有个老规矩：进场之前谁也不说完了两个字。倒计时四十秒，一级尾段的液氧吹除阀在零下一百八十三度冷脆和强振里卡死，高压煤油眼看要逆流倒灌、引发全箭殉爆。冷艳女总师与加注班长，把钛合金棘轮套筒扳手插进偏心锁死销孔，合力顶开冷粘连，压下闭合吹除阀。",
+   "title": "商业航天火箭·一级液氧煤油涡轮泵吹除阀卡阻"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "高山温泉度假疗养院地下动力中心",
+   "id": "sanatorium_boiler_nurse_rescue",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "疗养院地下大型地热循环泵房回廊与防灾电动卷门死角",
+   "status": "released",
+   "summary": "东北林区深处的老疗养院，大雪封山，邮车一周才上来两趟，整座院子的暖气全靠地下泵房的地热。这一夜零下三十度，主蒸汽减压阀法兰爆裂，白雾灌满泵房，防灾卷门受震落下一半卡死。夜班护士与锅炉房机工被困在卷门死角，只能用一副实心不锈钢听诊器的听头，一下下敲击卡死的微动开关，让卷门复位升起。",
+   "title": "疗养院护士·地热供暖总泵房"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "顶尖公立大学地下智慧数据中心",
+   "id": "server_gas_lock_steel_ruler_rescue",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "地下高密服务器冷通道机房与防爆气密隔离滑门死角",
+   "status": "released",
+   "summary": "七月的录取查询夜，零点一到，几十万考生和家长会同时涌进学校的查询系统。理事长亲自坐镇地下数据中心，雷暴却在零点前十分钟感应误触发七氟丙烷灭火，防爆滑门断电锁死。理事长与夜班工程师被困在冷通道死角，只能用一把不锈钢裁纸尺，撬起机械释放手柄。",
+   "title": "名门大学理事长·数据中心灭火绝境"
   },
   {
    "content_tags": [
@@ -2021,6 +2287,25 @@
    "status": "released",
    "summary": "暴风雨夜，跨国走私集团加急将伪装在冻肉柜中的走私芯片运出冷库。经侦支队卧底女警正用防爆手电记录货箱编码，外部重型铸铁转轮锁却被巡检员误触死锁，氨气排管轻微结霜渗出刺鼻白雾。零下二十五度极寒降临，女警必须与困在库内的同伴借手电合金攻击头齿纹反向别断百叶窗合页逃生。",
    "title": "卧底刑警·冻库生死线"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "近未来特大跨海沉管隧道深海基槽安装对接施工期",
+   "id": "underwater_pipeline_caisson_burst",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "水下四十米沉管对接接头高压焊接密封隔舱",
+   "status": "released",
+   "summary": "潜水队已经在铺管母船的甲板饱和舱里住了二十一天，呼吸氦氧混合气，说起话来尖细走调，全靠一台氦语音解码器跟水面通话。这一夜八万吨跨海沉管趁潮汐窗口沉放，遭遇深海暗涌，沉箱基槽微滑移导致超重型隔水蝶阀在水击重压下抱死死锁。对接焊缝受剪撕裂，冰冷咸水以狂暴压力倒灌隔舱。深水工程冷艳女总监与饱和潜水长，借超硬质钨钢特种双向反力矩棘轮扳手反向卡死受损蝶阀传动涡轮轴齿，合力借防扭力臂强行锁死阀门阻断倒灌自救。",
+   "title": "水下沉管·沉箱焊缝撕裂"
   },
   {
    "content_tags": [

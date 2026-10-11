@@ -1,0 +1,2130 @@
+{
+  "schema_version": 1,
+  "id": "refinery_hydrocrack_pressure_seal",
+  "title": "炼油化工厂·加氢裂化反应器高压密封面泄漏",
+  "extends": null,
+  "era": "千万吨级炼化一体化加氢裂化装置高压运行期",
+  "region": "四百度加氢反应器底部八角垫检修隔热罩通道",
+  "premise": "化工城的大检修季，装置区搭满脚手架，三千名外协检修工住在厂外板房村，每张动火作业票要七个人签字。这一夜加氢裂化装置紧急停工降温，四百度高压反应器底部主法兰热胀冷缩开裂，高压热氢与硫化氢高频刺漏，隔热罩死角里六十度高温，氢气逼近爆炸极限。冰山女总工与中控室内操主操，把超长棘轮扳手反向对角卡死高压螺母，合力锁紧主法兰止住刺漏。",
+  "tone": [
+    "百公斤高压热氢高频尖啸",
+    "硫化氢微量臭鸡蛋刺鼻焦灼",
+    "隔热罩内窒息滚烫高温热浪",
+    "腰间硫化氢报警器的尖叫"
+  ],
+  "style_hint": "冷硬森严的石化重工硬核工笔，刻画加氢反应器底部逼仄隔热罩内百公斤级热氢刺漏的尖锐啸叫、特种超长棘轮扳手在主法兰对角螺母上合力下压的沉重机械咬合、紧身阻燃防静电工装下被高温与冷汗浸透的起伏身躯，台词充斥着严苛的氢脆压力计算与生死决断。",
+  "clock_start": {
+    "label": "加氢反应器热胀冷缩，主法兰八角垫剧烈刺漏",
+    "minute": 1395
+  },
+  "clock_style": "hm",
+  "default_person": "second",
+  "default_npc_gender_mix": {
+    "female": 0.5,
+    "male": 0.5,
+    "nonbinary": 0.0
+  },
+  "stage_labels": {
+    "stranger": "罩外闻嗅",
+    "acquainted": "看表测氢",
+    "familiar": "灼浪共进",
+    "flirting": "热汗近息",
+    "testing": "同扳大柄",
+    "intimate": "死角封漏",
+    "committed": "安然脱险"
+  },
+  "name_pools": {
+    "family": [
+      "白",
+      "赵",
+      "杜",
+      "严",
+      "霍",
+      "康",
+      "沈",
+      "岳",
+      "裴",
+      "顾",
+      "薛",
+      "聂"
+    ],
+    "given_female": [
+      "羽彤",
+      "静",
+      "雪",
+      "澜",
+      "微",
+      "清",
+      "雁",
+      "莹",
+      "宛",
+      "素",
+      "羽",
+      "瑶"
+    ],
+    "given_male": [
+      "铁山",
+      "建国",
+      "大勇",
+      "长风",
+      "烈",
+      "峰",
+      "猛",
+      "岩",
+      "勇",
+      "雄",
+      "彪",
+      "天成"
+    ],
+    "given_neutral": [
+      "风",
+      "云",
+      "石",
+      "川",
+      "舟",
+      "衡",
+      "野",
+      "朗",
+      "诚",
+      "坚",
+      "原",
+      "毅"
+    ],
+    "nickname_patterns": [
+      {
+        "pattern": "{family}总工",
+        "gender": "any"
+      },
+      {
+        "pattern": "{family}班长",
+        "gender": "any"
+      },
+      {
+        "pattern": "小{family}",
+        "gender": "any"
+      }
+    ]
+  },
+  "rules": [
+    {
+      "id": "r_hydrocracking_reactor_seal_limit",
+      "text": "加氢反应器主法兰泄漏必须在四分钟内完成对角预紧锁死。"
+    },
+    {
+      "id": "r_hot_hydrogen_explosion_limit_code",
+      "text": "隔热罩内热氢浓度超过百分之四时严禁擅自开启强排轴流风机。"
+    },
+    {
+      "id": "r_octagonal_metal_gasket_tightening_rule",
+      "text": "八角形金属密封垫片必须严格遵循十字交叉对称对角紧固法。"
+    },
+    {
+      "id": "r_hydrogen_sulfide_toxic_limit",
+      "text": "硫化氢检测仪报警达到二级时全员必须即刻咬合正压呼吸咬嘴。"
+    }
+  ],
+  "customs": [
+    "进入加氢反应器隔热罩前习惯用手背触碰铜质防静电铜鼻子三次释放躯体静电。",
+    "石化高压管道检修工习惯在防化阻燃服右手腕死扣一条橙色高强耐热防滑腕带。",
+    "女总工习惯将便携式激光拉曼气体分析仪插在胸前阻燃袋随时读取氢气逸出率。",
+    "在高频刺耳的刺漏啸叫中沟通习惯单手按住对方防毒面罩侧壁以气流震颤辨音。"
+  ],
+  "forbidden_terms": [
+    "仙法",
+    "御剑",
+    "银两",
+    "捕快",
+    "镖局",
+    "客栈",
+    "真气",
+    "法宝"
+  ],
+  "player_identities": [
+    {
+      "id": "pi_refinery_reactor_lead_fitter",
+      "role": "加氢裂化联合装置高压法兰检修副工长",
+      "gender": "any",
+      "title_patterns": [
+        {
+          "pattern": "检修长{family}",
+          "gender": "any"
+        },
+        {
+          "pattern": "{family}工长",
+          "gender": "any"
+        }
+      ],
+      "age_range": [
+        28,
+        42
+      ],
+      "social_position": "equal",
+      "baseline": "驻守万吨加氢反应器底部的特级管阀老将，精通高压八角垫冷紧力学。",
+      "resources": [
+        "一柄重达十二公斤的高扭矩特种双向敲击扳手",
+        "两副双层特制耐五百度高温防烫芳纶绝热手套"
+      ],
+      "reputation": "手艺过硬作风沉稳，能在六十度窒息热浪中盲摸对角法兰螺栓。",
+      "risks": [
+        "直接暴露在高压氢气高温喷射死角易遭受严重三度烫伤",
+        "高浓度硫化氢窒息中毒"
+      ]
+    },
+    {
+      "id": "pi_safety_superintendent_officer",
+      "role": "化工厂应急安全生产指挥中心特派安全监察长",
+      "gender": "any",
+      "title_patterns": [
+        {
+          "pattern": "{family}安全监察",
+          "gender": "any"
+        },
+        {
+          "pattern": "{given}总监",
+          "gender": "any"
+        }
+      ],
+      "age_range": [
+        34,
+        48
+      ],
+      "social_position": "high",
+      "baseline": "代表集团安全指挥部巡查装置的官员，掌控紧急气动切断阀与全场火炬放空通报权。",
+      "resources": [
+        "一台便携式多组分有毒有害气体激光检测仪",
+        "一套全封闭式碳纤维高压防爆自救呼吸器"
+      ],
+      "reputation": "教条冷硬讲究避险程序，遭遇重大氢泄漏极易恐慌做出弃装放空的逃跑决断。",
+      "risks": [
+        "不懂八角垫微热膨胀预紧力学容易错判封堵窗口",
+        "极度恐慌诱发换气过度休克"
+      ]
+    },
+    {
+      "id": "pi_cadet_petrochemical_engineer",
+      "role": "石油化工高分子特种工艺青年助理工程师",
+      "gender": "any",
+      "title_patterns": [
+        {
+          "pattern": "{family}助理",
+          "gender": "any"
+        },
+        {
+          "pattern": "{given}工",
+          "gender": "any"
+        }
+      ],
+      "age_range": [
+        21,
+        23
+      ],
+      "social_position": "equal",
+      "baseline": "刚从重点大学化工专业分配进炼厂的优秀毕业生，精通临氢管路应力腐蚀分析。",
+      "resources": [
+        "一盒特种耐高温快速膨胀金属密封修补填料",
+        "一本加氢反应器紧急停工事故排险操作图谱"
+      ],
+      "reputation": "理论扎实但缺乏一线火海热浪实操经验，面对极度刺漏吓得面如土色。",
+      "risks": [
+        "被高温喷射气浪冲倒跌落管廊造成骨折",
+        "高温热辐射导致面部皮肤灼伤"
+      ]
+    },
+    {
+      "id": "pi_veteran_refinery_pipe_rigger",
+      "role": "高压高温加氢管道特级老铆焊工",
+      "gender": "any",
+      "title_patterns": [
+        {
+          "pattern": "{family}师傅",
+          "gender": "any"
+        },
+        {
+          "pattern": "{given}老将",
+          "gender": "any"
+        }
+      ],
+      "age_range": [
+        48,
+        54
+      ],
+      "social_position": "low",
+      "baseline": "在炼化高压火线拼搏三十年的老铆工，单凭金属敲击声就能测算出八角垫受压间隙隙差。",
+      "resources": [
+        "一把大号重型全锻钢高强度活动加力棘轮扳手",
+        "两张耐六百度高温特制金属缠绕石墨防冲衬板"
+      ],
+      "reputation": "沉默刚毅身经百战，视反应器高压密封面为捍卫整座炼厂生命的玄关要塞。",
+      "risks": [
+        "长期吸入催化剂粉尘患有慢性肺气肿耐氧能力较弱",
+        "在灼热隔热罩内体力流失过快濒临虚脱"
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "id": "loc_hydrocracking_reactor_seal_skirt",
+      "name": "加氢反应器底部八角垫检修隔热罩通道",
+      "detail": "高约两米、宽不足一点五米的环形密闭隔热裙座死角空间，头顶是重达五百吨的特厚壁合金反应器下封头，四百摄氏度超高压主法兰八角垫裂隙喷出高达两百公斤压力的灼热氢气射流，尖锐啸叫刺破耳膜，空气温度高达六十度、充斥着刺鼻的硫化氢恶臭，四周镀铝隔热棉在气浪中狂暴翻卷。",
+      "privacy": "semi",
+      "visibility": "dim",
+      "witnesses": [
+        "bg_veteran_refinery_rigger_lao_zhao"
+      ],
+      "exits": [
+        "loc_reactor_skirt_access_platform",
+        "loc_flare_knockout_drum_corridor"
+      ],
+      "affordances": [
+        "抓牢反应器裙座厚壁合金导向安全扶手",
+        "将超长棘轮扳手套筒扣入法兰对角螺母",
+        "查看裙座立柱上红色便携式红外测温枪读数"
+      ],
+      "pressure_modifiers": {
+        "p_hot_hydrogen_jet_explosion_risk": "高压热氢射流以每秒数百米极速狂喷，狭小隔热空间内氢气浓度飙升逼近爆炸下限仅剩四分钟窗口。",
+        "p_octagonal_gasket_shear_blowout": "主法兰八角形金属垫片在非对称热应力下拉伸变形，必须依靠超长力臂扳手合力对角锁紧封死缝隙自救。"
+      },
+      "tags": [
+        "disaster",
+        "workplace"
+      ]
+    },
+    {
+      "id": "loc_reactor_skirt_access_platform",
+      "name": "反应器裙座下部防爆检修主平台",
+      "detail": "位于反应器钢架承重梁外侧的开敞式镀锌钢格板平台，热浪扑面风声呼啸，红色应急声光报警器在雨幕中狂闪，防爆防化应急水幕喷头正向下倾泻大量除毒水雾。",
+      "privacy": "public",
+      "visibility": "clear",
+      "witnesses": [
+        "bg_safety_inspector_deputy_kang",
+        "bg_process_engineer_shen"
+      ],
+      "exits": [
+        "loc_hydrocracking_reactor_seal_skirt",
+        "loc_flare_knockout_drum_corridor"
+      ],
+      "affordances": [
+        "按下裙座立柱防爆应急氮气吹扫电掣",
+        "拉动高压紧急泄压排气放空手动安全手柄",
+        "拿起挂在防爆柜内的备用正压呼吸器面罩"
+      ],
+      "pressure_modifiers": {
+        "p_skirt_platform_thermal_radiation": "反应器底部外壁热辐射高达两百度，检修平台钢格板滚烫灼人逼近人体耐受极限。"
+      },
+      "tags": [
+        "workplace",
+        "crime"
+      ]
+    },
+    {
+      "id": "loc_flare_knockout_drum_corridor",
+      "name": "火炬分液罐排险防爆隔离通廊",
+      "detail": "位于联合装置外围的重型防爆混凝土隔离通道，管道纵横轰鸣震耳，远处千米高空火炬正在猛烈喷射百米烈焰，空气中弥漫着浓烈的重芳烃与重油焦糊气味。",
+      "privacy": "private",
+      "visibility": "dim",
+      "witnesses": [
+        "bg_cadet_petrochemical_xiao_wu"
+      ],
+      "exits": [
+        "loc_hydrocracking_reactor_seal_skirt",
+        "loc_reactor_skirt_access_platform"
+      ],
+      "affordances": [
+        "扳动分液罐底部应急自流凝缩油排污阀",
+        "检查消火栓高压水炮喷淋摆角定位螺栓",
+        "扣紧混凝土防爆墙侧壁高强度防坠安全挂钩"
+      ],
+      "pressure_modifiers": {
+        "p_flare_drum_backpressure_surge": "全装置紧急放空导致火炬总管背压暴涨，分液罐安全阀高频起跳震颤濒临撕裂管线。"
+      },
+      "tags": [
+        "workplace",
+        "disaster"
+      ]
+    }
+  ],
+  "character_templates": [
+    {
+      "id": "director_bai_yutong",
+      "gender": "female",
+      "gender_reason": "加氢精制特种工艺首席女总工",
+      "age_range": [
+        21,
+        21
+      ],
+      "adult_context": "已成年的加氢精制特种工艺特级女总工程师，年满二十一岁，持有国家千万吨炼化突发大事故一级应急处置指挥资质，对加氢装置享有完全决断处置权。",
+      "public_role": "加氢裂化联合装置总工程师",
+      "appearance_options": [
+        "褪去隔热服后内着阻燃速干工装，容貌清冷绝美，两腮带着成年青年女性特有的健康紧致微婴儿肥，在六十度窒息灼浪中，白皙双颊被烘烤得泛起娇艳酡红，晶莹香汗顺着下颌滑入紧绷锁骨。",
+        "湿透的乌黑短发贴在滚烫雪白额头，纤细双臂紧扣长达一米二的特制超长双头棘轮大扭矩液压拉伸辅助锁紧扳手死死别入法兰螺母，面颊在火红警报灯映照下泛出绝不屈服的冰山坚毅，展现出掌控万吨危化装置的绝对工程威严。"
+      ],
+      "identity": {
+        "authority": "对加氢裂化反应器高压主法兰紧固、紧急排空泄压、氮气吹扫系统及现场全部防化抢险突击队员享有最高指挥权与技术决断权。",
+        "resources": [
+          "一柄特制超长双头棘轮大扭矩液压拉伸辅助锁紧扳手（长一米二，特种镍铬钼合金锻造，耐六百度超高温，端部带防滑双向棘爪定位卡槽）",
+          "一盒高压急救便携式快速抗高温热衰竭解痉清凉贴"
+        ],
+        "limits": [
+          "在主法兰彻底对角锁紧前无法离开被高压热氢封死的隔热罩狭缝死角",
+          "长时间暴露在高温热浪与微量硫化氢环境中面临重度脱水热射病休克"
+        ],
+        "obligations": [
+          "确保主法兰八角垫对角锁死彻底阻断氢脆刺漏力保整座炼化基地与周边城区安全"
+        ],
+        "exposure": "为了抢大修进度曾在降温阶段顶着微小热应力下达了提前吹扫指令",
+        "hidden": "阻燃工装贴胸口袋内珍藏着一枚刻有母校高分子催化反应工程实验室徽记的纯钛戒指"
+      },
+      "decision": {
+        "core_value": "高压热氢再暴烈，也逃不过热力学封堵公差，只要这柄超长扳手还在手里，本总工就能把泄漏彻底压回法兰里。",
+        "goal_options": [
+          "利用超长棘轮扳手对角锁紧主法兰八角垫",
+          "在热氢达到爆炸极限前排除刺漏消除爆炸自救"
+        ],
+        "pressure_responses": {
+          "low": "在尖叫刺漏初起时冷静测算氢气泄漏速率与爆炸极限时间",
+          "mid": "果断抽出特制一米二超长扳手找准法兰对角螺栓切角",
+          "high": "整个人扑在超长扳手手柄末端借全身自重与双臂爆发力合力顺时针压死螺母",
+          "breaking": "用牙齿咬破清凉贴按在滚烫额头强行保持清醒继续双臂死扣扳手下压"
+        },
+        "withdrawal": "退守至反应器裙座迎风面防爆角钢凹槽内，单手扶住安全栏杆冷眼注视法兰测温读数。",
+        "relationship_stance": "平日神情冰山冷傲容不得任何人质疑技术规程，但在石化生死绝境中展现出与伙伴同生共死的过人胆魄与统帅决断。",
+        "contrast": "外表冰山美艳，检修季三个月天天跟外协工一起在板房村门口排队打饭，面对超高压加氢反应器时手劲与力学决断远超粗壮管工。",
+        "prefers": [
+          "分秒不差的对角预紧配合",
+          "生死关头敢把后背交出来的铁血搭档"
+        ],
+        "avoids": [
+          "临阵脱逃的懦弱之徒",
+          "以自保名义擅自炸封或弃装置逃跑的官僚"
+        ],
+        "never": [
+          "在主法兰彻底锁死消除刺漏前独自离开隔热罩逃生"
+        ]
+      },
+      "intimacy_tendency": {
+        "attraction_sources": [
+          "在六十度窒息灼浪与死亡刺漏前如定海神针般的如山身躯",
+          "千钧一发之际毫不犹豫用滚烫胸膛为自己挡下高压热浪的舍命相护"
+        ],
+        "likes": [
+          "两人合力压死扳手时胸膛紧贴传来的粗重狂热心跳",
+          "险情排除后彼此抹去面颊热汗与黑灰时的冰山融化羞赧轻笑"
+        ],
+        "dislikes": [
+          "自私逃兵的卑劣出卖",
+          "自恃官威的蛮横瞎指挥"
+        ],
+        "preconditions": [
+          "主法兰对角螺母完全预紧锁死且氢气刺漏完全消除受控",
+          "全员安全撤出隔热罩返回地面控制室完成降温更衣",
+          "两人都清醒，心意出于自己，不是刺漏绝境里的依赖"
+        ],
+        "boundaries": [
+          "严守首席总工程师技术指挥威严不容侵犯",
+          "不以救命功绩索取私人情感屈从"
+        ],
+        "expression": "脱险进入安全区后，默默撕下自己最干爽的阻燃内衣轻柔擦拭对方被高温气浪灼红的双肩，眼神温软而坚定，把冰毛巾一直按在对方颈后。",
+        "desire_range": [
+          2,
+          3
+        ],
+        "self_control_range": [
+          4,
+          5
+        ],
+        "desired_position": "被从身后紧抱稳住重心抗击气浪，双手叠合在超长扳手上一同猛力死压。"
+      },
+      "voices": {
+        "surface": "别管那些喷在面罩上的灼人热浪！把这根一米二的超长扳手扣入五号螺母，跟我数三二一一起用力顺时针死压到底！",
+        "inner": "还有最后四分之一圈螺牙……只要扳手不崩脱，本姑娘绝不会让加氢裂化反应器化作火海，给我压到底！"
+      },
+      "schedule": [
+        {
+          "from": 1395,
+          "to": 1420,
+          "location_id": "loc_hydrocracking_reactor_seal_skirt"
+        },
+        {
+          "from": 1420,
+          "to": 1439,
+          "location_id": "loc_hydrocracking_reactor_seal_skirt"
+        }
+      ],
+      "situation": {
+        "trigger": "反应器降温时主法兰受热应力微变形，超高压热氢八角垫爆裂发生剧烈刺漏。",
+        "pressure": "六十度狭小隔热罩内氢气浓度狂飙逼近爆炸极限，距全面爆炸仅剩四分钟逃生窗口。",
+        "exits": [
+          {
+            "option": "用特制超长双头棘轮大扭矩液压拉伸辅助锁紧扳手顺时针死死压转六十度锁死螺母自救。",
+            "cost": "腰上的硫化氢报警器尖叫不止，超长扳手手柄发生微小塑性微弯，操作人员双手被粗糙防滑纹磨出大面积血泡鲜血浸透阻燃服。"
+          },
+          {
+            "option": "用备用重型敲击扳手直接对准螺母凸耳盲敲震松毛刺强行归位脱险。",
+            "cost": "猛烈敲击造成螺纹产生微细裂纹，飞溅金属火花轻度灼伤操作人员小臂。"
+          }
+        ]
+      },
+      "tags": [
+        "workplace",
+        "disaster",
+        "intimate"
+      ]
+    },
+    {
+      "id": "mechanic_tie_shan",
+      "gender": "male",
+      "gender_reason": "加氢裂化联合装置高压机修老班长",
+      "age_range": [
+        30,
+        36
+      ],
+      "adult_context": "年满三十岁，炼化特种高压管阀特级机修长，具备完全民事行为能力，十年石化高危现场冲锋老将。",
+      "public_role": "中控室内操主操",
+      "appearance_options": [
+        "身材极其魁梧刚劲肩背宽厚如铁塔，身着防油防烫阻燃厚布工作服，双臂青筋暴起肌肉如生铁浇筑，面容粗犷目光如炬。",
+        "板寸短发被滚烫热汗浸透黏在额头，在刺耳狂暴的气浪冲击中双脚如生根地脚螺栓稳稳踩在防滑钢板上。"
+      ],
+      "identity": {
+        "authority": "对隔热罩内特种重型液压机具、防爆风机、氮气压差及抢险人力调配拥有现场绝对实操指挥权。",
+        "resources": [
+          "一柄大号高强度防爆重型敲击梅花扳手",
+          "两副双层特制耐高温绝热隔火石棉帆布手套"
+        ],
+        "limits": [
+          "体能在抗衡六十度高温灼浪与剧烈高压气流冲击中逼近生理耐受极限",
+          "不懂微观金属晶界氢脆断裂力学有限元计算"
+        ],
+        "obligations": [
+          "誓死协助总工女总工压下扳手锁死法兰力保全员平安生还"
+        ],
+        "exposure": "为了赶进度曾违规在带压状态下微调过注水安全阀压盖螺栓",
+        "hidden": "机修背心贴身内袋里珍藏着一张全家在炼化厂高塔前的泛黄合影"
+      },
+      "decision": {
+        "core_value": "法兰就是阵地，只要女总工还在前头拼命，{npc.name}就算拼上这一身蛮力也得把氢气按死在管道里。",
+        "goal_options": [
+          "协助女总工压下超长扳手锁死法兰",
+          "用宽厚脊背挡住狂暴喷射的滚烫热浪气流"
+        ],
+        "pressure_responses": {
+          "low": "在刺漏初现瞬间迅速甩出加厚绝热手套反向塞给女总工",
+          "mid": "用雄厚宽阔的胸膛一把揽住被高温气浪冲得身形摇晃的年轻助理",
+          "high": "隔热罩里热得像蒸笼，双手死死包覆在女总工手背外侧倾注全身近两百斤自重协同压下扳手",
+          "breaking": "用宽厚脊背硬生生挡住上方管道爆开的滚烫蒸汽为女总工撑起发力空间"
+        },
+        "withdrawal": "退守至反应器裙座主承重工字钢立柱内侧，右手握紧大敲击扳手警惕任何螺栓应力飞崩。",
+        "relationship_stance": "在中控室的屏幕前盯了女总工八年的工艺参数，听报警声就知道是哪台阀；这一夜扔下操作台冲进装置区，把女总工从隔热罩里往外护。",
+        "contrast": "看似粗野鲁莽的石化汉子，在配合女总工下压扳手时的下沉重心与力矩把控极其稳健精准。",
+        "prefers": [
+          "干净利落的军令作风",
+          "关键时刻豁出命硬碰硬的真汉子"
+        ],
+        "avoids": [
+          "贪生怕死的软骨头",
+          "遇事推卸责任的官僚客"
+        ],
+        "never": [
+          "在总工程师还在灼浪中死拼时独自松开扳手逃命"
+        ]
+      },
+      "intimacy_tendency": {
+        "attraction_sources": [
+          "在烈焰火海深渊面前横刀立场的非凡帅才魄力",
+          "两具滚烫躯体在狭窄死角中紧密贴合的炽烈生命共鸣"
+        ],
+        "likes": [
+          "战胜死神后痛快豪饮冰镇盐汽水的畅快",
+          "法兰锁死消漏瞬间两人粗重滚烫的胸膛起伏与鼻息交融"
+        ],
+        "dislikes": [
+          "自私逃兵的卑劣行径",
+          "背信弃义的下作小人"
+        ],
+        "preconditions": [
+          "主法兰对角螺栓完全紧固消漏且现场温度受控下降",
+          "全员安全撤出隔热罩返回地面控制室"
+        ],
+        "boundaries": [
+          "恪守石化机修职责从属规矩不越礼数",
+          "不以救命之恩索取私人情感回报"
+        ],
+        "expression": "撕下自己干燥清凉的棉毛汗衫，轻柔却有力地裹在女总工被热浪熏得发烫的白皙后颈上。",
+        "desire_range": [
+          1,
+          2
+        ],
+        "self_control_range": [
+          3,
+          4
+        ],
+        "desired_position": "在隔热裙座内从后方抱紧女总工稳住重心，双手握紧扳手合力向下猛压到底。"
+      },
+      "voices": {
+        "surface": "女总工！找准对角五号和七号位！扳手有我给你托着，你报顺逆，老子就算把这双臂膀压脱臼也给你压到底！",
+        "inner": "女总工是天生的帅才。只要我还有一口气在，这百公斤热氢休想伤女总工半根寒毛。"
+      },
+      "schedule": [
+        {
+          "from": 1395,
+          "to": 1439,
+          "location_id": "loc_hydrocracking_reactor_seal_skirt"
+        }
+      ],
+      "situation": {
+        "trigger": "隔热罩内氢气浓度突破百分之三点五，刺耳尖啸震耳欲聋，法兰垫片受力发生微小抗扭偏斜。",
+        "pressure": "若不能在两分钟内合力下压扳手锁死对角螺母，高压热氢将引爆整座反应器断绝生路。",
+        "exits": [
+          {
+            "option": "腰上的硫化氢报警器尖叫不止，{npc.name}将全身自重压在扳手末端借超长力矩强行带动抱死螺母下旋脱险。",
+            "cost": "腰上的硫化氢报警器尖叫不止，{npc.name}右侧背阔肌纤维严重拉伤撕裂，双手隔着手套被磨出大面积水泡破溃。"
+          },
+          {
+            "option": "用防爆大扳手反向敲击螺母边缘强行震平偏心咬死自救。",
+            "cost": "隔热罩里热得像蒸笼，大扳手受强烈高压反震脱手崩飞划破{npc.name}下颌与手腕。"
+          }
+        ]
+      },
+      "tags": [
+        "disaster",
+        "crime"
+      ]
+    },
+    {
+      "id": "inspector_du_jian",
+      "gender": "male",
+      "gender_reason": "化工厂应急安全生产指挥中心特派安全监察官，在检修季里连轴转了三个月",
+      "age_range": [
+        38,
+        44
+      ],
+      "adult_context": "年满三十八岁，炼化安全生产监察官员，具备完全民事行为能力，掌控紧急气动切断阀与全场火炬放空通报权。",
+      "public_role": "特派高级安全监督官",
+      "appearance_options": [
+        "身穿带有反光警示条的高级防静电阻燃监察风衣，面容白净戴着金丝防爆护目镜，此时被滚烫热浪熏得满脸油汗神色惨白。",
+        "双手死死抓着胸前的多组分便携气体检测仪，眼神在维持官僚威严与抢先逃命间剧烈挣扎。"
+      ],
+      "identity": {
+        "authority": "代表安全指挥部行使重大险情全场紧急停产戒严权、下达全装置弃守引火放空指令的最终签署权。",
+        "resources": [
+          "一台高精度红外热成像多组分气体分析仪",
+          "一枚全装置紧急放空切断安全阀气动遥控钥匙芯片"
+        ],
+        "limits": [
+          "完全不懂高压八角形金属垫片热胀冷缩弹性恢复极限公差机理",
+          "极度恐慌爆炸企图擅自按下全场泄压火炬遥控器单独逃生"
+        ],
+        "obligations": [
+          "保全公文包内加氢裂化装置特种设备安全合规审查原始特许证书"
+        ],
+        "exposure": "为了抢工期曾对加氢反应器底部裙座隔热棉受潮老化单据违规签署放行",
+        "hidden": "暗中启动了呼叫厂区消防指挥车前来平台单人接应的应急加密寻呼机"
+      },
+      "decision": {
+        "core_value": "保全自身性命与监察乌纱帽高于一切，一线机修工的生死不过是安全统计概率报表。",
+        "goal_options": [
+          "强行启动全装置紧急放空遥控器单独逃生",
+          "勒令女总工立刻放弃抢修撤离隔热罩通道"
+        ],
+        "pressure_responses": {
+          "low": "在主平台大声宣读安全生产应急预案推诿责任",
+          "mid": "发现氢气浓度逼近报警红线后歇斯底里试图暴力扳动放空手柄",
+          "high": "被内操主操夺下遥控钥匙按在立柱上后吓得瘫倒在栏杆旁",
+          "breaking": "瘫坐在地板上交出气动切断钥匙换取优先登车撤离权"
+        },
+        "withdrawal": "退缩在防爆通廊后方密封防爆逃生救生室门内，双手死死抱住公文包与自救呼吸器。",
+        "relationship_stance": "将女总工视为恃才傲物不服管束的技术刺头女工程师，对其专业权威既敬畏又嫉恨。",
+        "contrast": "平日在例会上口若悬河大谈安全重于泰山，大难临头时比谁都贪生怕死、丑态百出。",
+        "prefers": [
+          "绝对的官僚服从",
+          "空调清凉的高级指挥中心办公室"
+        ],
+        "avoids": [
+          "六十度窒息灼浪扑面的隔热罩",
+          "与浑身机油汗臭的机修工同甘共苦"
+        ],
+        "never": [
+          "为了挽救同行机修人员而延误自己登上救生车的时间"
+        ]
+      },
+      "intimacy_tendency": {
+        "attraction_sources": [
+          "能保全自身性命与官位的高效铁腕庇护",
+          "迎合其官僚尊严的阿谀奉承"
+        ],
+        "likes": [
+          "被护卫在最安全的防爆监控室",
+          "特供的清凉矿泉水与进口含片"
+        ],
+        "dislikes": [
+          "粗暴的抗命顶撞",
+          "被冰冷扳手与铁拳指着鼻梁的屈辱恐慌"
+        ],
+        "preconditions": [
+          "彻底脱离爆炸危险置身于安全防爆指挥所",
+          "保全既得安全总监官职衔"
+        ],
+        "boundaries": [
+          "严禁任何普通机修工触碰其高级监察制服",
+          "不承担任何同甘共苦抢险义务"
+        ],
+        "expression": "战战兢兢地从口袋里摸出一盒昂贵的高效抗热衰清凉胶囊扔在地上换取机修班长拼命下扳。",
+        "desire_range": [
+          0,
+          0
+        ],
+        "self_control_range": [
+          2,
+          3
+        ],
+        "desired_position": "在主平台外手握对讲机，命令消防队在倒计时归零时立刻引燃高空火炬彻底弃守装置。"
+      },
+      "voices": {
+        "surface": "女总工！内操主操！氢气浓度已经超过百分之三了！立刻放弃锁紧！本监察官命令你们立刻拉下放空自保！",
+        "inner": "这群疯子……反应器要是炸了，整座基地都得被抹平，我必须自己活下去！快放空！"
+      },
+      "schedule": [
+        {
+          "from": 1395,
+          "to": 1439,
+          "location_id": "loc_reactor_skirt_access_platform"
+        }
+      ],
+      "situation": {
+        "trigger": "氢气浓度突破报警上限触发安全指挥中心紧急弃守撤离最高预警预案。",
+        "pressure": "若三分钟内不能锁紧法兰，特派监察官手中的遥控器将直接触发全场放空甚至引燃高空火炬倒灌管线。",
+        "exits": [
+          {
+            "option": "内操主操夺下监察官遥控钥匙并用高强扎带将其捆在栏杆立柱上自救。",
+            "cost": "涉嫌公然抗拒安全监察执法面临事后被停职审查。"
+          },
+          {
+            "option": "女总工以总工程师身份严厉喝退监察随员并亲手切断紧急放空电门脱险。",
+            "cost": "腰上的硫化氢报警器尖叫不止，与监察随员爆发轻微肢体拉扯造成手腕轻度挫伤。"
+          }
+        ]
+      },
+      "tags": [
+        "workplace_power",
+        "crime"
+      ]
+    },
+    {
+      "id": "senior_refinery_pipe_rigger_zhao",
+      "gender": "male",
+      "gender_reason": "加氢装置大修队里资历最老的铆焊工",
+      "age_range": [
+        50,
+        54
+      ],
+      "adult_context": "年满五十岁，加氢装置特级老铆焊工，成年工匠宗师，具备完全民事行为能力。",
+      "public_role": "加氢装置特级老铆焊工长",
+      "appearance_options": [
+        "身穿带有高反光条的洗得发白的阻燃厚帆布工装，满脸被高温烘烤与岁月侵蚀的深刻皱纹，花白短发挂满热汗与灰尘。",
+        "手里稳稳握着一把被摸得发亮的特种纯钢平头对角防偏敲击冲子，眼神在刺目火光与滚烫气浪中如深井磐石般镇定。"
+      ],
+      "identity": {
+        "authority": "对高压八角垫片受力反弹间隙、法兰螺母预紧牙口咬合微米级形变拥有敏锐听觉直觉。",
+        "resources": [
+          "两块耐六百度超高温合成石墨防烫绝热隔板",
+          "一把特制重型纯钢平头防偏敲击冲子"
+        ],
+        "limits": [
+          "年老体衰患有轻度慢性肺气肿无法承受剧烈奔跑",
+          "在高温窒息隔热罩内体液流失极快剧烈咳嗽喘息"
+        ],
+        "obligations": [
+          "将高压密封面热态防脆断紧固绝活传承给年轻工程师"
+        ],
+        "exposure": "曾在检修中为了抢进度少拧过半圈副法兰防松副螺母",
+        "hidden": "深知这座反应器底部主法兰五号螺母在受热膨胀时会有微量向左偏斜的装配暗伤缺陷"
+      },
+      "decision": {
+        "core_value": "金属有脾气，只要给顺了劲，没有扳不动的死螺母。",
+        "goal_options": [
+          "指点女总工找准左偏微倾角扣死扳手",
+          "垫入石墨金属衬板阻滞气浪对冲防滑"
+        ],
+        "pressure_responses": {
+          "low": "在隔热罩边缘用冲子轻敲法兰凭回响判定螺母咬死程度",
+          "mid": "冒着滚烫气浪递上石墨金属防冲衬板塞入刺漏背角",
+          "high": "用沙哑嗓音高呼左偏微倾顺力深咬的最佳起步角度",
+          "breaking": "用身躯稳住超长扳手后部支架为年轻人争取发力空间"
+        },
+        "withdrawal": "躲在隔热裙座承重牛腿背风凹槽内，用厚帆布背心死死护住石墨衬垫与量具盒。",
+        "relationship_stance": "将女总工视为石化界难得一见的巾帼奇才，由衷钦佩年轻女总工沉着镇定的过人定力与铁腕作风。",
+        "contrast": "平日沉默寡言甚至被年轻工人视为顽固老汉的老铆工，面对爆炸绝境时指点沉着如定海神针，听报警声就知道是哪一台阀。",
+        "prefers": [
+          "严谨过硬的工匠手艺",
+          "一诺千金的工程信用"
+        ],
+        "avoids": [
+          "不知变通的教条官僚",
+          "遇到险情就丢盔弃甲的软蛋"
+        ],
+        "never": [
+          "在高温受力关键时刻误报力矩参数"
+        ]
+      },
+      "intimacy_tendency": {
+        "attraction_sources": [
+          "对石化高压热力学的崇高敬畏与共鸣",
+          "在死亡深渊面前毫无娇气的果断坚毅"
+        ],
+        "likes": [
+          "法兰螺母严丝合缝咬死消漏时的清脆沉闷合模轰鸣",
+          "抢修完成后在平台迎风痛饮一壶大红袍凉茶的舒畅"
+        ],
+        "dislikes": [
+          "轻视老工匠经验的傲慢做派",
+          "粗暴破坏昂贵特种螺栓的蛮干盲动"
+        ],
+        "preconditions": [
+          "彻底排除氢气刺漏险情法兰温度平稳受控",
+          "保全全部精密量具完整无损"
+        ],
+        "boundaries": [
+          "恪守老长辈规矩不越礼数",
+          "不介入年轻后辈的私人感情波澜"
+        ],
+        "expression": "用布满厚茧的大手重重拍在女总工肩头，咧开嘴角露出释然欣慰的朴实笑容，事后在火炬塔下陪着站了很久。",
+        "desire_range": [
+          0,
+          0
+        ],
+        "self_control_range": [
+          5,
+          5
+        ],
+        "desired_position": "蹲在裙座钢柱后敲出偏角，把石墨衬板塞进扳手受力的死角。"
+      },
+      "voices": {
+        "surface": "女总工！听{npc.name}的！五号螺母受热往左侧微偏了半度！别死往前硬顶，往左偏一点顺着牙口咬进去再死压！",
+        "inner": "好闺女，手上功夫够硬！这反应器要是毁在老汉眼前，那才是丢尽了老辈铆工的人！"
+      },
+      "schedule": [
+        {
+          "from": 1395,
+          "to": 1439,
+          "location_id": "loc_hydrocracking_reactor_seal_skirt"
+        }
+      ],
+      "situation": {
+        "trigger": "五号螺母在高温热胀冷缩下咬合死角极其顽固，超长扳手面临打滑滑牙。",
+        "pressure": "若无防滑衬垫介入并纠正半度偏角，超长扳手将在百斤爆发力下打滑崩断彻底断送锁紧可能。",
+        "exits": [
+          {
+            "option": "用老铆工私藏的耐六百度石墨金属衬板塞入缝隙协助扳手稳固深咬自救。",
+            "cost": "消耗尽绝版特制高温密封耗材，老工长左手手掌被锋利金属毛刺划破渗血。"
+          },
+          {
+            "option": "指挥内操主操用重型敲击扳手反向震击法兰凸耳震松偏心咬死脱险。",
+            "cost": "猛烈震击导致特种合金表面产生微小应力斑痕轻微受损。"
+          }
+        ]
+      },
+      "tags": [
+        "workplace",
+        "crime"
+      ]
+    },
+    {
+      "id": "cadet_petrochemical_xiao_wu",
+      "gender": "male",
+      "gender_reason": "石油化工特种工艺助理工程师",
+      "age_range": [
+        21,
+        23
+      ],
+      "adult_context": "年满二十一岁，化工大学成年毕业生，初级加氢工艺操作员，具备完全民事行为能力。",
+      "public_role": "加氢联合装置助理技术员",
+      "appearance_options": [
+        "身材单薄，身着带有黄色反光条的浅灰阻燃工作服，面容清秀神情极度惊惶，防爆护目镜歪斜卡在脖子上。",
+        "腰间工具袋胡乱塞着红外测温枪与备用小棘轮，双膝在六十度窒息灼浪中剧烈颤抖、脸色惨白如纸，胸口口袋里露出半张动火作业票。"
+      ],
+      "identity": {
+        "authority": "隔热罩应急微型防爆轴流风机与氮气吹扫注入口的手动启闭权。",
+        "resources": [
+          "一根厚壁加长高强度特种合金空心加力套管",
+          "一卷高抗拉耐高温金属芳纶加固安全牵引带"
+        ],
+        "limits": [
+          "缺乏特大危化爆炸事故实战经验心理防线脆弱",
+          "体质单薄力气严重不足难以单独抗衡高压气浪反冲"
+        ],
+        "obligations": [
+          "按规程记录法兰各测点温度并向总工报告氢气浓度读数"
+        ],
+        "exposure": "因操作生疏曾导致辅助冷氢管线快速接头发生轻微松动渗漏",
+        "hidden": "暗自崇拜英姿飒爽的首席总工女总工将其视为化工界最崇高的精神偶像"
+      },
+      "decision": {
+        "core_value": "保命第一，崇拜并绝对服从女总工的每一道抢险指令。",
+        "goal_options": [
+          "协助女总工寻找加长套管延长扳手力臂",
+          "在隔热罩立柱稳固安全牵引带"
+        ],
+        "pressure_responses": {
+          "low": "腰上的硫化氢报警器尖叫不止，在备件箱内慌乱翻找可以套在扳手末端的加长特种合金空心套管",
+          "mid": "大声向隔热罩内通报红外测温读数与氢气浓度百分比",
+          "high": "鼓起勇气冒着灼热气浪爬过钢格板递送加长套管",
+          "breaking": "跪倒在滚烫的隔热棉旁死死拉紧安全牵引带协助分担气浪冲击"
+        },
+        "withdrawal": "缩在隔热裙座承重钢柱背风死角，紧紧抱住加长合金管浑身哆嗦颤抖。",
+        "relationship_stance": "将女总工视为唯一的救命稻草与崇高统帅，愿为协助脱险拼死效命。",
+        "contrast": "平日胆小怯弱常被老工人责备的年轻助理，在女总工生死存亡关头能爆发出一股冒死送达加长套管的血性胆量，听报警声就知道是哪一台阀。",
+        "prefers": [
+          "清晰明确的指令指导",
+          "平稳清凉的陆上中央控制室"
+        ],
+        "avoids": [
+          "凶神恶煞的监察官咆哮",
+          "六十度窒息灼人的加氢反应器狭缝"
+        ],
+        "never": [
+          "背弃女总工独自放弃求生逃跑"
+        ]
+      },
+      "intimacy_tendency": {
+        "attraction_sources": [
+          "泰山崩于前而色不变的卓越帅才魅力",
+          "在爆炸深渊面前给予同伴的强大安全感"
+        ],
+        "likes": [
+          "被肯定业务能力时的温和颔首",
+          "分到的一枚甘甜提神高能葡萄糖块"
+        ],
+        "dislikes": [
+          "残酷暴力的威逼践踏",
+          "被当作废物累赘抛弃"
+        ],
+        "preconditions": [
+          "彻底排除氢气刺漏险情浓度稳稳受控归零",
+          "确保自身生命安全得到保障"
+        ],
+        "boundaries": [
+          "恪守助手本分不作非分奢望",
+          "严守下级礼节规矩"
+        ],
+        "expression": "双手发颤地将加长套管递过，结结巴巴连连向女总工敬礼并保证坚守岗位。",
+        "desire_range": [
+          1,
+          1
+        ],
+        "self_control_range": [
+          4,
+          4
+        ],
+        "desired_position": "在隔热罩安全扶手上方死死拽紧牵引带，大声为女总工下压扳手报出对角锁死刻度读数。"
+      },
+      "voices": {
+        "surface": "女总工！加长套管找到了！这根合金管能套在超长扳手柄端再延展半米力臂！还有这卷防高温牵引带！",
+        "inner": "只要总工程师还在火海里拼命，我就不能当缩头乌龟，我必须帮着把这个杀人的法兰彻底压死！"
+      },
+      "schedule": [
+        {
+          "from": 1395,
+          "to": 1439,
+          "location_id": "loc_hydrocracking_reactor_seal_skirt"
+        }
+      ],
+      "situation": {
+        "trigger": "隔热罩内照明电缆受高温灼烤绝缘皮熔化短路起火，迸发剧烈电火花。",
+        "pressure": "若不及时手动切断主配电漏电断路器，飞溅电火花将在三秒内直接引爆高浓度热氢彻底毁灭装置。",
+        "exits": [
+          {
+            "option": "{npc.name}用加长合金管绝缘胶垫端砸碎防爆箱电门切断强电自救。",
+            "cost": "{npc.name}手臂被飞溅电弧火花轻度烫伤起泡。"
+          },
+          {
+            "option": "腰上的硫化氢报警器尖叫不止，用阻燃防化外套浸透冷凝水死死捂住短路电缆扑灭电火花脱险。",
+            "cost": "双手手掌被电弧灼伤脱皮。"
+          }
+        ]
+      },
+      "tags": [
+        "workplace",
+        "disaster"
+      ]
+    },
+    {
+      "id": "refinery_medic_officer_chu",
+      "gender": "female",
+      "gender_reason": "炼化基地特种危化创伤急救站女主治医官",
+      "age_range": [
+        26,
+        28
+      ],
+      "adult_context": "年满二十六岁，持有国家职业危化中毒创伤急救专科执业证书的成年女医官，具备完全民事行为能力，签过的作业票能摞成一座小山。",
+      "public_role": "炼化基地危化急救主治医官",
+      "appearance_options": [
+        "身穿带有红十字标识的白色加厚防化阻燃急救常服，面容清秀神情紧绷，戴着医用无菌耐热手套，双手握着便携式高压注氧仪，安全帽带拉到最紧，下巴勒出一道红印。",
+        "神情沉着专注，额前秀发利落束起，脖颈上挂着高敏数字心率血氧监测探头与防毒呼吸罩。"
+      ],
+      "identity": {
+        "authority": "对热射病急救方案、急性硫化氢中毒神经拮抗解毒针剂及特种高压氧舱启闭享有最高医疗处置权。",
+        "resources": [
+          "两支浓缩硫化氢特效解毒剂亚硝酸异戊酯微型吸入气雾剂",
+          "一台便携式微型经皮血氧心电监测仪"
+        ],
+        "limits": [
+          "在六十度高温灼热刺漏区无法实施复杂的静脉穿刺手术",
+          "体能单薄无法搬运重达数十公斤的重型紧固机械"
+        ],
+        "obligations": [
+          "保障全体防化抢险突击队员零重度热射病、零急性中毒脑损伤存活"
+        ],
+        "exposure": "曾私自调用高压氧舱为患有轻度化学灼伤的老工人实施超规理疗",
+        "hidden": "随身急救包内封存着自己亲手调配的高浓度外用透皮抗热衰竭喷剂"
+      },
+      "decision": {
+        "core_value": "生命体征就是最高法典，绝不放弃任何一个尚有微弱脉搏的石化同袍。",
+        "goal_options": [
+          "指导隔热罩内二人通过深腹式呼吸对抗急性高温热衰竭",
+          "在封堵消漏瞬间实施中暑复温降温抢救"
+        ],
+        "pressure_responses": {
+          "low": "在防爆通信频道内持续播报防高温热射病换气口诀",
+          "mid": "隔着观察窗指点内操主操如何按压穴位缓解女总工手臂肌肉痉挛",
+          "high": "将体温快速冷敷降温毯推至隔热罩门前准备承接重度热衰竭伤员",
+          "breaking": "顶着被高温热浪扫视的危险探头向门缝递送应急高压防毒面罩"
+        },
+        "withdrawal": "退守至冷敷急救治疗台前，迅速核对急救舱氧分压配比电磁阀。",
+        "relationship_stance": "将女总工视为情同姐妹的亲密知己与崇敬的工程榜样，对突击队员安危极度挂念。",
+        "contrast": "外表文静纤弱的女医官，在面对万吨炼化大灾难急救时下针稳准狠辣如冰山判官。",
+        "prefers": [
+          "规律平稳的心率波形",
+          "遵从医嘱的冷静配合"
+        ],
+        "avoids": [
+          "情绪失控的盲目挣扎",
+          "隐瞒中毒伤情的蛮干硬撑"
+        ],
+        "never": [
+          "在工人尚有微弱心跳时签署放弃急救证明"
+        ]
+      },
+      "intimacy_tendency": {
+        "attraction_sources": [
+          "在极端高温灼烤下依然坚守的超人意志",
+          "生死关头舍命护持同伴的人性光辉"
+        ],
+        "likes": [
+          "平稳有力的石化机修工人窦性心律",
+          "脱险后第一口冰镇电解质葡萄糖水的吞咽声"
+        ],
+        "dislikes": [
+          "漠视人命的官僚冷血",
+          "因恐惧导致的踩踏推脱"
+        ],
+        "preconditions": [
+          "主法兰完全对角锁死消漏且伤员核心体温恢复正常",
+          "全员脱离急性硫化氢中毒危险期"
+        ],
+        "boundaries": [
+          "严守医患职业伦理道德",
+          "不以医疗资源调配进行私利交换"
+        ],
+        "expression": "用冰凉柔软的掌心轻柔按揉对方滚烫泛红的太阳穴，柔声安抚其紧绷剧烈震颤的神经脉搏。",
+        "desire_range": [
+          0,
+          0
+        ],
+        "self_control_range": [
+          5,
+          5
+        ],
+        "desired_position": "隔着隔热罩观察孔举起冰袋示意，一声声报出吸气与屏息。"
+      },
+      "voices": {
+        "surface": "女总工！看我的手势，跟着报警器的间隔喘气：叫一声吸，停一声呼，千万别张嘴吸那口热氢！",
+        "inner": "只要两人把法兰压死消漏，哪怕浑身脱水热射病了，我也一定把两人从阎罗殿里拉回来。"
+      },
+      "schedule": [
+        {
+          "from": 1395,
+          "to": 1439,
+          "location_id": "loc_reactor_skirt_access_platform"
+        }
+      ],
+      "situation": {
+        "trigger": "隔热罩内人员血氧饱和度跌破百分之八十警戒红线。",
+        "pressure": "若不及时进行减压换气引导，极度高温脱水将诱发重度热射病与心力衰竭休克。",
+        "exits": [
+          {
+            "option": "通过对讲广播引导隔热罩内二人同频深呼吸并相互按压内关穴解痉自救。",
+            "cost": "分担部分抢险精力导致下压扳手节拍轻微延缓。"
+          },
+          {
+            "option": "从投料窗口塞入高效神经解痉含片协助其维持清醒意志脱险。",
+            "cost": "投料口微启导致少量高温蒸汽喷溅损坏医用监测仪外壳。"
+          }
+        ]
+      },
+      "tags": [
+        "workplace",
+        "disaster"
+      ]
+    }
+  ],
+  "background_cast": [
+    {
+      "id": "bg_veteran_refinery_rigger_lao_zhao",
+      "role": "外协检修队老铆焊工老俞",
+      "function": "witness",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "line": "温度飙到六十度了！五号螺母往左侧偏了半度，硬往下压要滑丝啊！",
+      "gender": "male",
+      "age_range": [
+        50,
+        54
+      ],
+      "adult_context": "年满五十岁，加氢检修老骨干，成年公民。",
+      "name": "老俞"
+    },
+    {
+      "id": "bg_safety_inspector_deputy_kang",
+      "role": "安全监察副官康副官",
+      "function": "obstacle",
+      "location_ids": [
+        "loc_reactor_skirt_access_platform"
+      ],
+      "line": "监察官有令！倒计时还剩三分钟，准备按下遥控拉闸放空引火自保！",
+      "gender": "male",
+      "age_range": [
+        28,
+        31
+      ],
+      "adult_context": "年满二十八岁，安全监管随员，成年公职人员。",
+      "name": "康副官"
+    },
+    {
+      "id": "bg_process_engineer_shen",
+      "role": "加氢联合装置总工程师沈工",
+      "function": "helper",
+      "location_ids": [
+        "loc_reactor_skirt_access_platform"
+      ],
+      "line": "高压紧急氮气吹扫已切入！女总工，用一米二超长扳手别住对角位，垫上老铆焊工的石墨板！",
+      "gender": "male",
+      "age_range": [
+        45,
+        49
+      ],
+      "adult_context": "年满四十五岁，炼化工艺技术专家，成年老工程师。",
+      "name": "沈工"
+    },
+    {
+      "id": "bg_cadet_petrochemical_xiao_wu",
+      "role": "外协检修队操作工小蒋",
+      "function": "witness",
+      "location_ids": [
+        "loc_flare_knockout_drum_corridor"
+      ],
+      "line": "氢气浓度突破百分之三点五了！温度还在往上蹿，快把螺母压死啊！",
+      "gender": "male",
+      "age_range": [
+        22,
+        25
+      ],
+      "adult_context": "年满二十二岁，外协检修队操作工，成年公民。",
+      "name": "小蒋"
+    },
+    {
+      "id": "bg_refinery_fire_rescue_captain",
+      "role": "炼厂消防特勤中队长霍队长",
+      "function": "helper",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "line": "水幕喷淋系统已对准隔热罩外围，女总工，务必把扳手压到底阻断刺漏！",
+      "gender": "male",
+      "age_range": [
+        33,
+        37
+      ],
+      "adult_context": "年满三十三岁，石化特种消防救援指挥员，成年军官。",
+      "name": "霍队长"
+    },
+    {
+      "id": "bg_refinery_medic_officer_chu",
+      "role": "厂医院急救医生葛医生",
+      "function": "helper",
+      "location_ids": [
+        "loc_reactor_skirt_access_platform"
+      ],
+      "line": "高压降温解毒冰毯与纯氧吸入器已就位，法兰一锁死立刻开门拉人抢救！",
+      "gender": "female",
+      "age_range": [
+        26,
+        28
+      ],
+      "adult_context": "年满二十六岁，持有危化急救专科执照的女医官，成年公民。",
+      "name": "葛医生"
+    }
+  ],
+  "channels": [
+    {
+      "id": "ch_refinery_skirt_acoustic_intercom",
+      "text": "反应器裙座内部高强度防爆骨传导有线通信网",
+      "reach": "all",
+      "fidelity": "exact"
+    },
+    {
+      "id": "ch_hot_hydrogen_screams_deadlock",
+      "text": "高压热氢极速刺漏尖锐啸叫与安全官惊恐呼叫",
+      "reach": "local",
+      "fidelity": "distorted"
+    }
+  ],
+  "tension_engines": [
+    {
+      "id": "te_hot_hydrogen_vs_long_wrench_turn",
+      "text": "四百度两百公斤超高压热氢刺漏爆炸倒计时与利用超长棘轮扳手合力锁死法兰的机械自救。"
+    },
+    {
+      "id": "te_inspector_flare_dump_vs_rescue",
+      "text": "特派安全监察官企图强行全场泄压弃守逃跑与一线机修突击队誓死保全装置全员生还的生死对决。"
+    },
+    {
+      "id": "te_tsundere_director_pride_vs_mechanic",
+      "text": "冰山冷傲特级女总工的绝对工艺威严与重装机修老班长托付生死的肉体爆发力反差共鸣。"
+    },
+    {
+      "id": "te_roasting_skirt_soak_vs_tight_press",
+      "text": "六十度窒息灼浪窒息虚脱与两人在逼仄死角中紧贴发力合压超长扳手的炽烈生命羁绊。"
+    }
+  ],
+  "cast_combos": [
+    {
+      "id": "cc_director_and_mechanic_wrench_rush",
+      "power_structure": "switchable",
+      "player_positions": [
+        "high",
+        "equal",
+        "low"
+      ],
+      "identity_ids": [],
+      "slots": [
+        "director_bai_yutong",
+        "mechanic_tie_shan"
+      ],
+      "tension_engine_ids": [
+        "te_hot_hydrogen_vs_long_wrench_turn",
+        "te_roasting_skirt_soak_vs_tight_press"
+      ],
+      "chemistry": "冰山女总工与冲出中控室的内操主操在六十度窒息灼浪里背靠背、手扣手，把一米二超长扳手向死角猛压锁死法兰。",
+      "stakes": {
+        "resource_gap": "女总工精通法兰非对称热胀冷缩弹性恢复力矩死穴，机修长拥有惊人的下盘生根肉体爆发力。",
+        "limit_gap": "女总工体能在高温脱水与缺氧下逼近昏厥休克临界，机修长受限于双手二度灼伤血泡破裂剧痛难忍。",
+        "meeting_reason": "大检修第十二天，内操主操在中控室看见反应器底部温度跳红，抓起空气呼吸器就往装置区跑，女总工已经在隔热罩里了。",
+        "irreplaceable_goal": "在热氢达到爆炸极限前，合力用超长扳手将对角螺母下压六十度完全锁死实现法兰消漏脱险。"
+      },
+      "relations": [
+        {
+          "a": "player",
+          "b": "director_bai_yutong",
+          "stage": "testing",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 3
+          },
+          "reason": "灼热绝境中共同测算力矩与偏角，建立起生死托付的工艺共鸣。"
+        },
+        {
+          "a": "player",
+          "b": "mechanic_tie_shan",
+          "stage": "familiar",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 2
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 2
+          },
+          "reason": "同在石化火线摸爬滚打的生死战友，深知对方过硬的铁骨担当。"
+        },
+        {
+          "a": "director_bai_yutong",
+          "b": "mechanic_tie_shan",
+          "stage": "testing",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 3
+          },
+          "reason": "冰山女总工与重装机修老兵在狂暴热浪前结成生死同盟。"
+        }
+      ],
+      "tags": [
+        "workplace",
+        "disaster"
+      ]
+    },
+    {
+      "id": "cc_director_and_cadet_pipe_extension",
+      "power_structure": "player_high",
+      "player_positions": [
+        "high"
+      ],
+      "identity_ids": [],
+      "slots": [
+        "director_bai_yutong",
+        "cadet_petrochemical_xiao_wu"
+      ],
+      "tension_engine_ids": [
+        "te_hot_hydrogen_vs_long_wrench_turn"
+      ],
+      "chemistry": "传奇女总工的从容冷冽稳住吓瘫的新手助理，新手助理冒死送达加长合金空心套管与牵引带，师徒合力化解炼厂爆炸危机。",
+      "stakes": {
+        "resource_gap": "女总工握有核心一米二超长扳手与绝对技术决断权，青年助理掌握加长特种合金空心管与应力手册。",
+        "limit_gap": "成年的青年助理面对六十度窒息灼浪心理防线脆弱，女总工在狂暴颠簸中无法分身捡拾工具。",
+        "meeting_reason": "助理技术员拿着一张还差两个签字的作业票，在反应器平台上找女总工签字。",
+        "irreplaceable_goal": "迅速接驳加长空心力臂协助超长扳手一举压死咬死螺栓。"
+      },
+      "relations": [
+        {
+          "a": "player",
+          "b": "director_bai_yutong",
+          "stage": "familiar",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 2
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 2
+          },
+          "reason": "紧盯女总工的每一个锁紧手势。"
+        },
+        {
+          "a": "player",
+          "b": "cadet_petrochemical_xiao_wu",
+          "stage": "familiar",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 1
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 1
+          },
+          "reason": "鼓励新手助理战胜火海恐惧。"
+        },
+        {
+          "a": "director_bai_yutong",
+          "b": "cadet_petrochemical_xiao_wu",
+          "stage": "acquainted",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 1
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 1
+          },
+          "reason": "师徒传承与工艺庇护。"
+        }
+      ],
+      "tags": [
+        "workplace",
+        "disaster"
+      ]
+    },
+    {
+      "id": "cc_mechanic_and_inspector_flare_clash",
+      "power_structure": "npc_high",
+      "player_positions": [
+        "low",
+        "equal"
+      ],
+      "identity_ids": [],
+      "slots": [
+        "mechanic_tie_shan",
+        "inspector_du_jian"
+      ],
+      "tension_engine_ids": [
+        "te_inspector_flare_dump_vs_rescue"
+      ],
+      "chemistry": "特派监察官歇斯底里要求按下放空遥控器弃守装置逃生，机修工长怒拔大敲击梅花扳手横在其喉结据理力争寸步不让。",
+      "stakes": {
+        "resource_gap": "监察官手握安全指挥部全装置紧急放空切断遥控钥匙芯片，工长拥有全厂机修突击队的绝对现场支持。",
+        "limit_gap": "监察官极度恐惧加氢爆炸粉身碎骨，工长受限于公然违抗安全监察条例的严惩威慑。",
+        "meeting_reason": "监察官带着检修督查组夜查作业票，在装置区门口和内操主操争起了谁有权叫停。",
+        "irreplaceable_goal": "压制官僚逃跑行径为隔热罩内法兰锁紧争取至关重要的三分钟时间。"
+      },
+      "relations": [
+        {
+          "a": "player",
+          "b": "mechanic_tie_shan",
+          "stage": "acquainted",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 1
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 1
+          },
+          "reason": "赞许工长抗命护持全厂同胞的铁骨担当。"
+        },
+        {
+          "a": "player",
+          "b": "inspector_du_jian",
+          "stage": "stranger",
+          "a_to_b": {
+            "trust": 0,
+            "tension": 5
+          },
+          "b_to_a": {
+            "trust": 0,
+            "tension": 5
+          },
+          "reason": "对视一线人命如草芥的自私官僚深恶痛绝。"
+        },
+        {
+          "a": "mechanic_tie_shan",
+          "b": "inspector_du_jian",
+          "stage": "testing",
+          "a_to_b": {
+            "trust": 0,
+            "tension": 5
+          },
+          "b_to_a": {
+            "trust": 0,
+            "tension": 5
+          },
+          "reason": "一线工长与上层逃命官员之间的生死对峙。"
+        }
+      ],
+      "tags": [
+        "workplace_power",
+        "crime"
+      ]
+    },
+    {
+      "id": "cc_director_and_master_zhao_lever",
+      "power_structure": "equal",
+      "player_positions": [
+        "equal"
+      ],
+      "identity_ids": [],
+      "slots": [
+        "director_bai_yutong",
+        "senior_refinery_pipe_rigger_zhao"
+      ],
+      "tension_engine_ids": [
+        "te_hot_hydrogen_vs_long_wrench_turn",
+        "te_inspector_flare_dump_vs_rescue"
+      ],
+      "chemistry": "炼厂老铆工隔着灼热气浪指点偏角递上石墨金属衬板，与隔热罩内死磕扳手的年轻女总工里应外合，协同化解爆炸死局。",
+      "stakes": {
+        "resource_gap": "老铆工握有五号螺母左偏半度偏心口诀与石墨衬板，女总工掌握核心超长扳手与绝对技术决断权。",
+        "limit_gap": "老铆工年迈患有肺气肿无法上前死拼下压，女总工在高温热浪中双眼难辨微米级偏角。",
+        "meeting_reason": "老铆焊工是外协检修队里资历最老的人，二十年来这台反应器每一次大修，螺母都是这双手拧的。",
+        "irreplaceable_goal": "精准将石墨衬板塞入左偏半度法兰受力死角对角锁死脱险。"
+      },
+      "relations": [
+        {
+          "a": "player",
+          "b": "director_bai_yutong",
+          "stage": "familiar",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 2
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 2
+          },
+          "reason": "深信女总工程师神级热态决断力。"
+        },
+        {
+          "a": "player",
+          "b": "senior_refinery_pipe_rigger_zhao",
+          "stage": "familiar",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 1
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 1
+          },
+          "reason": "老铆工的经验指引令人心头大定。"
+        },
+        {
+          "a": "director_bai_yutong",
+          "b": "senior_refinery_pipe_rigger_zhao",
+          "stage": "testing",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 2
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 2
+          },
+          "reason": "两代石化技术人之间的默契互救。"
+        }
+      ],
+      "tags": [
+        "workplace",
+        "crime"
+      ]
+    }
+  ],
+  "daily_activities": [
+    {
+      "id": "act_reactor_flange_torque_log",
+      "title": "晨光未显加氢反应器主法兰间隙巡检",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "duration_minutes": 30,
+      "beats": [
+        "用精密标准塞尺测量主法兰八角垫外露间隙对称度",
+        "擦拭双色石英高温视镜表面积聚的硫磺油垢",
+        "轻扣副放空截止阀螺纹压盖螺栓确认无异常冷凝水"
+      ],
+      "hook_ids": [],
+      "start_minute": 1395,
+      "tags": [
+        "workplace",
+        "disaster"
+      ]
+    },
+    {
+      "id": "act_skirt_cooling_jacket_check",
+      "title": "隔热裙座底部水冷循环降温夹套保养",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "duration_minutes": 35,
+      "beats": [
+        "用铜刮刀清理冷却水管表面附着的锈蚀泥沙",
+        "均匀涂抹耐温特种合成二硫化钼防咬合螺纹润滑脂",
+        "使用全钢棘轮扳手按对称法紧固六颗大号不锈钢螺栓"
+      ],
+      "hook_ids": [],
+      "start_minute": 1400,
+      "tags": [
+        "workplace",
+        "disaster"
+      ]
+    },
+    {
+      "id": "act_skirt_pneumatic_door_test",
+      "title": "防爆检修主平台气动泄压门行程测试",
+      "location_ids": [
+        "loc_reactor_skirt_access_platform"
+      ],
+      "duration_minutes": 25,
+      "beats": [
+        "转动主气动防火水密门重锤锁紧机械棘爪确认自由行程",
+        "检查配重悬挂不锈钢钢丝绳端部马鞍卡扣夹紧力矩",
+        "在特大炼化基地战备施工日志加盖当值监察官电子图章"
+      ],
+      "hook_ids": [],
+      "start_minute": 1398,
+      "tags": [
+        "workplace",
+        "crime"
+      ]
+    },
+    {
+      "id": "act_flare_knockout_drum_drain_tally",
+      "title": "火炬分液罐阻火器高压阻尼器点验",
+      "location_ids": [
+        "loc_flare_knockout_drum_corridor"
+      ],
+      "duration_minutes": 40,
+      "beats": [
+        "用防爆卡尺测量阻火波纹板厚度与装配压紧度",
+        "清理滑轨锁死卡齿表面堆积的微细金属结焦油泥",
+        "在炼化抢险战备行车日志加盖当值专员电子印章"
+      ],
+      "hook_ids": [],
+      "start_minute": 1405,
+      "tags": [
+        "workplace",
+        "disaster"
+      ]
+    },
+    {
+      "id": "act_deep_skirt_nitrogen_supply_tally",
+      "title": "隔热裙座战备自救高压供氧点验",
+      "location_ids": [
+        "loc_flare_knockout_drum_corridor"
+      ],
+      "duration_minutes": 30,
+      "beats": [
+        "测量高压氮气瓶组汇流排输出减压阀动态风压",
+        "检查机库外露救生索端部钛合金自动锁扣夹紧力",
+        "交接挂在备品柜内的特制超长双头棘轮大扭矩液压扳手"
+      ],
+      "hook_ids": [],
+      "start_minute": 1410,
+      "tags": [
+        "workplace",
+        "crime"
+      ]
+    },
+    {
+      "id": "act_flange_face_laser_mapping",
+      "title": "八角垫金属密封面变形激光测绘",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "duration_minutes": 20,
+      "beats": [
+        "测量主法兰左右两侧八角垫受压微米级凹陷差",
+        "清理导向槽表面卡塞的细碎重晶石结焦硬块",
+        "紧固传感器安装支架四颗高强度防锈不锈钢螺栓"
+      ],
+      "hook_ids": [],
+      "start_minute": 1420,
+      "tags": [
+        "workplace_power",
+        "workplace"
+      ]
+    },
+    {
+      "id": "act_platform_scba_unbuckle",
+      "title": "检修平台下替女总工卸空气呼吸器",
+      "location_ids": [
+        "loc_reactor_skirt_access_platform"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1430,
+      "beats": [
+        "主法兰压死、刺漏止住之后，女总工被人从隔热罩里拖出来，阻燃服湿得能拧出水，空气呼吸器的背带在肩上勒出两道紫痕。",
+        "女总工抬起手臂，让人一枚枚解开呼吸器的卡扣，把气瓶从背上卸下来，又拿冰毛巾贴在烫红的颈后，女总工闭上眼，长长呼出一口热气。",
+        "女总工握住对方的手腕，把冰毛巾按在自己锁骨上不让拿开：作业票我签了收工……接下来这段，不用写进记录。"
+      ],
+      "tags": [
+        "intimate"
+      ]
+    }
+  ],
+  "pressures": [
+    {
+      "id": "p_hot_hydrogen_jet_explosion_risk",
+      "title": "高压热氢射流狂喷逼近爆炸极限",
+      "source": "accident",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "trigger": "四百度两百公斤超高压热氢撕裂八角垫缝隙狂喷，狭小隔热罩内氢气浓度暴涨逼近百分之四爆炸下限，六十度窒息高温笼罩死角，距全面爆炸仅剩四分钟。",
+      "objective": "在氢气浓度突破临界值前手动合力用超长扳手压死主法兰螺母自救。",
+      "choice": "等待上方启动全装置泄压弃守引火放空，还是由女总工带队在灼浪中暴力压下扳手脱险。",
+      "immediate": {
+        "text": "震耳欲聋的高频刺漏啸叫刺破耳膜，滚烫灼人的热氢气浪如重锤冲击胸膛，浓度读数以秒为单位飙升。",
+        "minutes": 2
+      },
+      "near": {
+        "text": "隔热罩内氢气浓度逼近百分之三点八，六十度窒息空气夺走人员全部体能，呼吸道剧烈灼痛。",
+        "deadline_minutes": 4
+      },
+      "far": {
+        "trigger": "高压热氢在隔热罩狭小空间内发生剧烈爆轰",
+        "consequence": "数千吨重反应器在惊天烈焰爆轰中撕裂坍塌，整座炼化基地与周边突击全员不幸牺牲殉难。",
+        "due_days": 1
+      },
+      "exits": [
+        {
+          "option": "用特制超长双头棘轮大扭矩液压拉伸辅助锁紧扳手顺时针死死压转六十度锁死法兰脱险。",
+          "cost": "特种扳手套筒出现轻微咬痕磨损，突击人员手臂肌肉严重拉伤疼痛。"
+        },
+        {
+          "option": "用破拆大活动扳手反向砸碎副放空截止阀强行制造局部机械泄压自救。",
+          "cost": "大扳手受强烈反冲脱手崩飞划破在场人员面颊与肩膀。"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [],
+      "start_minute": 1395,
+      "tags": [
+        "disaster",
+        "workplace"
+      ]
+    },
+    {
+      "id": "p_octagonal_gasket_shear_blowout",
+      "title": "八角垫在热应力下发生微米级抗扭变形",
+      "source": "accident",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "trigger": "降温急剧收缩引发法兰螺母单侧受力暴增，重型八角垫片受力偏斜，必须依靠超长力臂扳手合力对角锁紧消除动热间隙。",
+      "objective": "找准主法兰五号螺母左偏半度死角并套上加长管合力顺时针死压到底。",
+      "choice": "强行蛮力硬压博取前三十度位移，还是等待老铆焊工递上石墨金属防冲衬板稳步推进。",
+      "immediate": {
+        "text": "厚达八公分的主螺栓传出一声让人牙酸的金属微应力脆响，表层耐高温镀层爆裂剥落。",
+        "minutes": 3
+      },
+      "near": {
+        "text": "法兰因受热膨胀产生微米级微变形，超长扳手棘爪在螺母棱角边缘发生剧烈打滑火花四溅。",
+        "deadline_minutes": 6
+      },
+      "far": {
+        "trigger": "特种高压合金螺栓在极度剪切偏载下拉伸断裂崩飞",
+        "consequence": "崩断的螺栓如重炮穿透隔热罩钢板，彻底丧失紧固手段导致法兰大面积爆开化为火海。",
+        "due_days": 1
+      },
+      "exits": [
+        {
+          "option": "老铆焊工塞入耐高温石墨金属防冲衬板纠正半度切角协助扳手深咬自救。",
+          "cost": "动火作业票还揣在胸口口袋里，消耗尽绝版特制高温密封耗材，老工长左手手掌被锋利金属毛刺划伤渗血。"
+        },
+        {
+          "option": "内操主操用肩膀顶住超长扳手传动轴消除偏心扭矩为女总工争取旋转角度脱险。",
+          "cost": "内操主操肩部软组织受剧烈反震严重挫伤渗血。"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [],
+      "start_minute": 1398,
+      "tags": [
+        "disaster",
+        "workplace"
+      ]
+    },
+    {
+      "id": "p_skirt_platform_thermal_radiation",
+      "title": "六十度窒息灼浪诱发急性热射病脱水",
+      "source": "nature",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "trigger": "隔热裙座内部受四百度反应器高温烘烤逼近六十度，人员阻燃服被热汗彻底浸透，核心体温急剧飙升突破三十九度，极度脱水导致四肢抽搐。",
+      "objective": "两人紧密贴合屈膝对抗灼热气流并含服清凉解痉药片维持清醒与手劲。",
+      "choice": "退入干燥上层通风走廊，还是咬牙憋住一口热气在灼浪中完成最后六十度下压。",
+      "immediate": {
+        "text": "腰上的硫化氢报警器尖叫不止，女总工面颊被高温烘烤得通红如霞，晶莹香汗顺着下巴不断滴落蒸发。",
+        "minutes": 2
+      },
+      "near": {
+        "text": "肌肉出现严重热衰竭抽搐与麻木乏力，双手抓握力骤降一半以上，视线出现重影晃动。",
+        "deadline_minutes": 5
+      },
+      "far": {
+        "trigger": "核心体温突破四十一度引发热射病昏迷休克",
+        "consequence": "人员在极度高温中当场晕厥倒地窒息，在大爆炸中不幸牺牲殉难。",
+        "due_days": 1
+      },
+      "exits": [
+        {
+          "option": "腰上的硫化氢报警器尖叫不止，两人紧密相贴借彼此肩膀支撑重心双手死扣超长扳手以自重猛压脱险。",
+          "cost": "衣衫被汗水浸透黏在肌肤上，双臂遭受轻度高温气浪灼红脱皮。"
+        },
+        {
+          "option": "从药盒取出高效神经解痉清凉贴贴在额头维持清醒意志脱险。",
+          "cost": "手忙脚乱弄洒了小半瓶药水导致部分急救配额受损。"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [],
+      "start_minute": 1400,
+      "tags": [
+        "disaster"
+      ]
+    },
+    {
+      "id": "p_flare_drum_backpressure_surge",
+      "title": "放空管线受到数十吨异常高频动载震颤",
+      "source": "accident",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_flare_knockout_drum_corridor"
+      ],
+      "trigger": "主法兰刺漏使全厂火炬总管背压暴涨，粗大高压放空管线在管架上发生剧烈水击式横向晃动，即将撕裂膨胀节横扫隔离通廊。",
+      "objective": "在放空管线崩裂前完成主法兰锁死切断超压源头。",
+      "choice": "向调度室请求强行开启全场二级事故火炬，还是在裙座内争分夺秒完成刚性锁紧。",
+      "immediate": {
+        "text": "粗壮的钢管在管架上发出沉闷震颤巨响，滑动支座固定螺栓被拉断一颗。",
+        "minutes": 3
+      },
+      "near": {
+        "text": "腰上的硫化氢报警器尖叫不止，管廊钢梁受力严重扭曲呻吟，主放空管道波纹补偿器拉伸极限即将彻底撕裂。",
+        "deadline_minutes": 7
+      },
+      "far": {
+        "trigger": "主放空管道波纹补偿器彻底撕裂爆开",
+        "consequence": "数十吨高压易燃瓦斯从破口瞬间倾泻引发全厂大火灾，隔离通廊全员殉难。",
+        "due_days": 1
+      },
+      "exits": [
+        {
+          "option": "沈工在平台用防爆气动绞盘快速固定受损放空管托消除晃动自救。",
+          "cost": "绞盘反冲拉伤沈工手腕，飞溅金属碎屑轻微划伤脸部。"
+        },
+        {
+          "option": "女总工爆发全力旋转扳手锁紧法兰切断超压瓦斯动载脱险。",
+          "cost": "女总工双手虎口被合金扳手粗糙手柄磨破鲜血淋漓。"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [],
+      "start_minute": 1402,
+      "tags": [
+        "disaster",
+        "workplace"
+      ]
+    },
+    {
+      "id": "p_wrench_alloy_ratchet_yield",
+      "title": "超长扳手棘爪在热氢里濒临崩裂",
+      "source": "accident",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "trigger": "受损五号螺母内部积聚的金属毛刺使紧固扭矩暴增数倍，一米二超长扳手头部双向棘爪承受了超负荷剪切，合金表面浮现微细疲劳白斑发出尖锐哀鸣。",
+      "objective": "套上加长合金空心套管延长力臂并将发力点移至轴心消除冲击偏载。",
+      "choice": "孤注一掷加大肉身压载强拧，还是稍微回退半寸套入助理技术员送来的加长套管。",
+      "immediate": {
+        "text": "扳手头部传出一声让人心悸的合金棘爪咬死脆响，表层耐磨镀层脱落。",
+        "minutes": 2
+      },
+      "near": {
+        "text": "火炬塔的火光把装置区映得通红，超长扳手手柄发生超过十度的明显塑性微弯，棘爪末端即将崩脱滑出卡槽。",
+        "deadline_minutes": 5
+      },
+      "far": {
+        "trigger": "超长扳手头部棘爪彻底粉碎崩飞",
+        "consequence": "崩裂的合金碎片如子弹穿透操作手胸膛，丧失唯一紧固机具彻底断绝生路。",
+        "due_days": 1
+      },
+      "exits": [
+        {
+          "option": "助理技术员送达加长合金套管套在扳手末端分担应力合力下压撬平自锁脱险。",
+          "cost": "动火作业票还揣在胸口口袋里，套管在高压下咬死变形彻底无法从扳手柄端拔脱。"
+        },
+        {
+          "option": "女总工与内操主操调整站位将发力点向扳手根部收缩以肉体爆发力强行压死轴齿自救。",
+          "cost": "两臂肘关节承受数十公斤剧烈反震导致软组织挫伤渗血。"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [],
+      "start_minute": 1404,
+      "tags": [
+        "disaster",
+        "workplace"
+      ]
+    },
+    {
+      "id": "p_inspector_flare_dump_countdown",
+      "title": "安全监察官按下全装置紧急放空遥控倒计时",
+      "source": "institution",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_reactor_skirt_access_platform"
+      ],
+      "trigger": "特派安全监察官认定法兰刺漏已无法挽回，在检修平台按开遥控放空电掣，启动了三分钟彻底引燃全装置放空火炬弃守全场的倒计时。",
+      "objective": "在倒计时归零前完成主法兰锁死并勒令监察官停掣。",
+      "choice": "由内操主操在门外用大敲击扳手砸烂监察官遥控器，还是在裙座内抢先完成扳手下压化解危机。",
+      "immediate": {
+        "text": "平台顶角响起尖锐的红色弃厂放空紧急声光警报，放空引信电磁阀发出短促倒数蜂鸣。",
+        "minutes": 2
+      },
+      "near": {
+        "text": "放空倒计时仅剩最后三十秒，火炬总管旁通切断电磁阀哧哧动作冒出白烟。",
+        "deadline_minutes": 4
+      },
+      "far": {
+        "trigger": "全装置紧急放空系统彻底启动引火放空",
+        "consequence": "万吨原料油在管线内暴沸倒灌引发全系统连锁爆燃，隔热罩突击全员葬身火海。",
+        "due_days": 1
+      },
+      "exits": [
+        {
+          "option": "内操主操夺下监察官遥控器砸碎引信线路强行拔掉熔断保险丝争取生机。",
+          "cost": "内操主操面临违抗安全监察条例的严重纪律问责。"
+        },
+        {
+          "option": "女总工以总工程师身份喝退随身监察随员并亲手扯断放空继电器脱险。",
+          "cost": "近身对抗导致女总工右手腕被尖锐外壳划伤渗血。"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [],
+      "start_minute": 1406,
+      "tags": [
+        "workplace_power",
+        "crime"
+      ]
+    }
+  ],
+  "hooks": [
+    {
+      "id": "hook_hot_hydrogen_screams_roaring",
+      "kind": "approach",
+      "slot": "director_bai_yutong",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "text": "{director_bai_yutong.name}单手按住剧烈颤动的防爆裙座立柱，抹开额前热汗：四百度热氢把八角垫冲出微裂纹了！主法兰松动了，把这一米二的超长扳手扣入五号螺母，跟我死压！"
+    },
+    {
+      "id": "hook_director_taps_torque_gauge",
+      "kind": "approach",
+      "slot": "director_bai_yutong",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "text": "{director_bai_yutong.name}置身于六十度滚烫窒息的灼浪中，超长扳手卡槽咔哒一声咬死螺母角部：看准左偏微倾角，顺着法兰对角线，听我口令一起往死里压！"
+    },
+    {
+      "id": "hook_hot_steam_scorches_skin",
+      "kind": "approach",
+      "slot": "director_bai_yutong",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "text": "{director_bai_yutong.name}在高温灼热的气浪狂潮里咬紧银牙，面颊在火光映照下泛出娇艳酡红与晶莹香汗：别怕烫！抓紧扳手手柄，把全身重量砸下来！"
+    },
+    {
+      "id": "hook_wrench_groans_bending_limit",
+      "kind": "approach",
+      "slot": "director_bai_yutong",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "text": "{director_bai_yutong.name}整个人扑在超长扳手柄端，双手虎口鲜血淋漓：五号螺母在进牙了！老铆焊工，把你那两百斤蛮力全压上来，顺时针压到底锁死！"
+    },
+    {
+      "id": "hook_mechanic_grips_wrench_firmly",
+      "kind": "approach",
+      "slot": "mechanic_tie_shan",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "text": "{mechanic_tie_shan.name}跨步踏入灼浪正中，粗壮的大手一把覆在女总工手背外侧：女总工，稳住套筒！剩下的千斤下沉重量交给我，谁也别想松手！"
+    },
+    {
+      "id": "hook_flange_bolts_groan_shear",
+      "kind": "approach",
+      "slot": "director_bai_yutong",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "text": "{director_bai_yutong.name}猛然抬头凝视门外缓缓闪烁的红光，眼神冰山冷冽如刃：监察官要弃厂放空了！还有最后十五度，哪怕把扳手压断也得给我锁死！"
+    },
+    {
+      "id": "hook_flare_pipe_groans_shaking",
+      "kind": "approach",
+      "slot": "mechanic_tie_shan",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "text": "{mechanic_tie_shan.name}反手抽出大敲击梅花扳手别在立柱角钢之间，低沉怒吼：热氢再暴虐又怎样！就靠这一米二的合金大柄了，跟我一起下压，锁死这道法兰！"
+    },
+    {
+      "id": "hook_inspector_threatens_flare_dump",
+      "kind": "approach",
+      "slot": "inspector_du_jian",
+      "location_ids": [
+        "loc_reactor_skirt_access_platform"
+      ],
+      "text": "{inspector_du_jian.name}惨白着脸握紧放空电门遥控器，尖叫连连：加氢反应器要炸了！卫队，立刻按下遥控电门引火放空，绝不能让整座基地陪葬！"
+    },
+    {
+      "id": "hook_zhao_stuffs_graphite_gasket",
+      "kind": "approach",
+      "slot": "senior_refinery_pipe_rigger_zhao",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "text": "{senior_refinery_pipe_rigger_zhao.name}将耐高温石墨金属防冲衬板狠狠塞入槽口缝隙：往槽里塞！左偏半度的死角找到了，垫上我的石墨板，顺着力道往下压！"
+    },
+    {
+      "id": "hook_cadet_fetches_extension_pipe",
+      "kind": "request",
+      "slot": "director_bai_yutong",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "text": "{director_bai_yutong.name}抹去脸上的热汗与黑灰，急促喘息着看向助理技术员：去备件箱把特种合金加长套管取来接上，我们需要更长的一米半力臂！"
+    },
+    {
+      "id": "hook_wu_brings_alloy_pipe",
+      "kind": "request",
+      "slot": "cadet_petrochemical_xiao_wu",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "text": "{cadet_petrochemical_xiao_wu.name}双手抱着一根厚壁加长套管滚入隔热罩死角，眼眶通红：女总工！合金管拿来了！还有一卷耐高温牵引带！"
+    },
+    {
+      "id": "hook_tie_joins_pipe_extension",
+      "kind": "request",
+      "slot": "mechanic_tie_shan",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "text": "{mechanic_tie_shan.name}把套管套上扳手末端，攥住女总工的手腕吼：力臂接长了！别吸那口热氢，听我数三二一，一起砸下去！"
+    },
+    {
+      "id": "hook_medic_guides_anti_heat_breathing",
+      "kind": "request",
+      "slot": "director_bai_yutong",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "text": "{director_bai_yutong.name}隔着观察窗向医官打出确认手势，口中含服清凉解痉药片：对角锁紧在建立了，我们做最后一轮压死下转！"
+    },
+    {
+      "id": "hook_observe_skirt_hot_hydrogen_screams",
+      "kind": "observe",
+      "slot": "director_bai_yutong",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "text": "{director_bai_yutong.name}挺立在六十度窒息灼浪与尖锐刺漏中，阻燃工装下面庞在防爆探照灯映照下冰山冷冽，眼神如出鞘霜雪般坚不可摧。"
+    },
+    {
+      "id": "hook_observe_wrench_locks_reactor_flange",
+      "kind": "observe",
+      "slot": "director_bai_yutong",
+      "location_ids": [
+        "loc_hydrocracking_reactor_seal_skirt"
+      ],
+      "text": "特制超长双头棘轮大扭矩液压拉伸辅助锁紧扳手深深咬死法兰螺母，伴随着一声沉闷坚实的金属合模轰鸣，主法兰五号与七号对角螺母完全预紧锁死，高压热氢刺漏瞬间彻底平息归零，全员安然脱险生还。"
+    },
+    {
+      "id": "hook_yutong_work_permit",
+      "kind": "approach",
+      "slot": "director_bai_yutong",
+      "location_ids": [],
+      "text": "{npc.name}把一张作业票按在人胸口的写字板上，笔帽咬在嘴里：签字栏还空着一个，就差你的。签了，今晚这台反应器我们一起下。"
+    },
+    {
+      "id": "hook_tieshan_dcs_screens",
+      "kind": "approach",
+      "slot": "mechanic_tie_shan",
+      "location_ids": [],
+      "text": "{npc.name}从中控室的转椅上转过身，摘下耳麦，指了指满墙的屏幕：别站门口，进来坐。今晚这四十块屏，陪我一起盯。"
+    },
+    {
+      "id": "hook_zhao_tea_camp",
+      "kind": "approach",
+      "slot": "senior_refinery_pipe_rigger_zhao",
+      "location_ids": [],
+      "text": "{npc.name}坐在板房村门口的马扎上，就着一壶浓茶抬头看人：新来的？检修季三个月，不认识老家伙的人，在这厂里拧不动一颗螺母。"
+    },
+    {
+      "id": "hook_xiaowu_gas_alarm",
+      "kind": "approach",
+      "slot": "cadet_petrochemical_xiao_wu",
+      "location_ids": [],
+      "text": "{npc.name}手忙脚乱地拍打腰上的硫化氢报警器，报警器还在叫：这玩意儿是不是坏了……一路走过来叫了三回，你的响没响？"
+    },
+    {
+      "id": "hook_du_chin_strap",
+      "kind": "approach",
+      "slot": "inspector_du_jian",
+      "location_ids": [],
+      "text": "{npc.name}拦住人，伸手要过安全帽，把帽带拉到最紧才还回来：检修季一天三起违章，帽带松一指就是一起。你，叫什么名字？"
+    },
+    {
+      "id": "hook_yutong_flare_walk",
+      "kind": "approach",
+      "slot": "director_bai_yutong",
+      "location_ids": [],
+      "text": "{npc.name}站在火炬塔下仰头看着夜里那团火，侧脸被映得通红：火炬不灭，说明这座厂还活着。下了班……陪我走一圈装置区？"
+    }
+  ],
+  "twists": [
+    {
+      "id": "tw_flange_eccentric_groove_located",
+      "category": "信息",
+      "requires": [
+        "director_bai_yutong"
+      ],
+      "text": "{director_bai_yutong.name}在受损主法兰侧壁摸出了当年设备制造厂预留的手动防扭矩反向反力矩安全卡止暗槽。"
+    },
+    {
+      "id": "tw_mechanic_disarms_corrupt_inspector",
+      "category": "人事",
+      "requires": [
+        "mechanic_tie_shan"
+      ],
+      "text": "{mechanic_tie_shan.name}反手夺下特派安全监察官的放空遥控钥匙，全面接管加氢反应器抢险最高战时处置权。"
+    },
+    {
+      "id": "tw_anti_heat_spray_distributed",
+      "category": "资源",
+      "requires": [
+        "director_bai_yutong"
+      ],
+      "text": "{director_bai_yutong.name}掰开贴身药盒，将四支高效神经舒缓抗热衰喷剂分发给现场力竭同伴对抗急性高温虚脱抽搐。"
+    },
+    {
+      "id": "tw_graphite_gasket_stops_gas_leak",
+      "category": "制度",
+      "requires": [
+        "senior_refinery_pipe_rigger_zhao"
+      ],
+      "text": "{senior_refinery_pipe_rigger_zhao.name}用冲子撬开备用自流平衡通气孔，依法平衡法兰内外热胀冷缩应力化解了螺栓单向极度受拉。"
+    },
+    {
+      "id": "tw_emergency_bypass_drops_skirt_temp",
+      "category": "时限",
+      "requires": [
+        "director_bai_yutong"
+      ],
+      "text": "{director_bai_yutong.name}利用扳手柄端挑开了备用低温惰性氮气管道，强行为受损密封面压制住最后三十秒超温自燃窗口。"
+    },
+    {
+      "id": "tw_mechanic_shields_director_heat_blast",
+      "category": "关系",
+      "requires": [
+        "director_bai_yutong",
+        "mechanic_tie_shan"
+      ],
+      "text": "{mechanic_tie_shan.name}在高温热浪大面积喷涌瞬间挺身扑在{director_bai_yutong.name}上方，用加厚阻燃工装与宽厚背脊死死挡下灼人热浪。"
+    },
+    {
+      "id": "tw_flange_locks_refinery_saved",
+      "category": "意外",
+      "requires": [
+        "director_bai_yutong"
+      ],
+      "text": "顺时针死死压平的主法兰在超长棘轮扳手与石墨衬板的强力咬合下彻底锁死密封，高压热氢刺漏与毒气警报完全平息归零，万吨加氢联合装置安然脱险平息生还。"
+    }
+  ],
+  "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+  ],
+  "status": "released",
+  "notes": "按原稿加入，保留加氢裂化反应器主法兰刺漏、隔热罩死角高温与女总工用超长棘轮扳手对角压死螺母的骨架。同一批里有十个同源的工业事故世界，这里把开局放到化工城的大检修季：装置区搭满脚手架、三千名外协检修工住在厂外板房村、每张动火作业票要七个人签字、腰上的硫化氢报警器动不动就叫、火炬塔的火终夜不灭，用倒班、作业票和气味与风洞世界的山沟科研气质拉开；搭档写成中控室内操主操，从屏幕前扔下耳麦冲进装置区，开局钩子、相遇缘由和背景人物围着检修季重写。写死的人名改为身份称呼，背景人物里与模板重名的改名；婴儿肥只留在外貌描写里；人物组合按权力结构放开玩家身份，压力与日常不再锁死钩子，并加了几个不限地点的靠近型钩子；女总工亲密前提写明刺漏止住、双方清醒自愿；新增一个检修平台下替女总工卸空气呼吸器的亲密日常。"
+}

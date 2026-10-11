@@ -1,0 +1,2130 @@
+{
+  "schema_version": 1,
+  "id": "open_pit_coal_excavator_fire",
+  "title": "露天煤矿·万吨轮斗挖掘机受料臂卡死起火",
+  "extends": null,
+  "era": "特大型露天煤矿千万吨级连续开采装备运行期",
+  "region": "万吨轮斗挖掘机悬空六十米受料臂卷扬机房",
+  "premise": "草原深处的露天煤矿，冬夜零下三十度，白毛风卷着雪粒和煤尘打在脸上，排土场外就是牧民的冬窝子。这一夜煤尘自燃引燃万吨轮斗挖掘机的液压油路，悬空六十米的受料臂在失电水锤中抱死下坠，卷扬机房化成火海。英气女总指挥与斗轮机司机长，把铬钒钢超越离合插销摇把插进应急减速箱的偏心销孔，合力猛转，反向锁死齿圈。",
+  "tone": [
+    "悬空六十米狂风烈焰爆燃",
+    "万吨钢构断裂刺耳金属悲鸣",
+    "煤尘窒息浓烟滚烫弥漫",
+    "白毛风里斗轮机的轰鸣"
+  ],
+  "style_hint": "冷硬森严的重型矿山机械硬核工笔，刻画悬空六十米卷扬机房内万吨钢桁架受烈火烘烤与自重下坠撕扯的剧烈震颤、特种插销摇把在减速箱偏心齿圈内合力下压的沉重机械咬合、紧身阻燃防尘服下被高温汗水浸透的英武身躯，台词充斥着严苛的矿机力学计算与生死决断。",
+  "clock_start": {
+    "label": "受料臂液压油爆燃，卷扬机制动闸抱死下坠",
+    "minute": 1395
+  },
+  "clock_style": "hm",
+  "default_person": "second",
+  "default_npc_gender_mix": {
+    "female": 0.5,
+    "male": 0.5,
+    "nonbinary": 0.0
+  },
+  "stage_labels": {
+    "stranger": "登梯探火",
+    "acquainted": "看表测坠",
+    "familiar": "灼浪共攀",
+    "flirting": "热汗近息",
+    "testing": "同握大摇",
+    "intimate": "高空锁死",
+    "committed": "安然踏地"
+  },
+  "name_pools": {
+    "family": [
+      "陆",
+      "魏",
+      "彭",
+      "段",
+      "樊",
+      "项",
+      "柴",
+      "鲍",
+      "耿",
+      "寇",
+      "卓",
+      "屠"
+    ],
+    "given_female": [
+      "冰岚",
+      "英",
+      "霜",
+      "澜",
+      "微",
+      "清",
+      "雁",
+      "莹",
+      "宛",
+      "素",
+      "羽",
+      "瑶"
+    ],
+    "given_male": [
+      "铁柱",
+      "大川",
+      "长风",
+      "山河",
+      "烈",
+      "峰",
+      "猛",
+      "岩",
+      "勇",
+      "雄",
+      "彪",
+      "天成"
+    ],
+    "given_neutral": [
+      "风",
+      "云",
+      "石",
+      "川",
+      "舟",
+      "衡",
+      "野",
+      "朗",
+      "诚",
+      "坚",
+      "原",
+      "毅"
+    ],
+    "nickname_patterns": [
+      {
+        "pattern": "{family}总指挥",
+        "gender": "any"
+      },
+      {
+        "pattern": "{family}工长",
+        "gender": "any"
+      },
+      {
+        "pattern": "小{family}",
+        "gender": "any"
+      }
+    ]
+  },
+  "rules": [
+    {
+      "id": "r_excavator_boom_winch_limit",
+      "text": "受料臂悬臂卷扬机失电时必须在四分钟内插入应急锁定插销。"
+    },
+    {
+      "id": "r_coal_dust_flashover_code",
+      "text": "卷扬机房煤尘浓度超过爆炸极限时严禁使用明火切割工具。"
+    },
+    {
+      "id": "r_overrunning_clutch_lock_rule",
+      "text": "旋转锁定插销摇把时必须确保双向卡槽完全咬合减速齿圈。"
+    },
+    {
+      "id": "r_pit_safety_harness_lock_rule",
+      "text": "在高空悬臂作业时必须全程将双钩防坠器挂在主承重桁架上。"
+    }
+  ],
+  "customs": [
+    "进入高空卷扬机房前习惯用钢丝手套重拍机舱门防静电接地排三次确认静电释放。",
+    "露天矿重机检修工习惯在右手防尘阻燃服袖口死扣一条黄色高强度荧光安全带圈。",
+    "女总指挥习惯将折叠式超声波应力探测仪插在贴身抗震插袋随时测算桁架拉伸应变。",
+    "在震耳欲聋的风暴与大火咆哮中沟通习惯单手按住对方安全帽耳廓大声吼叫读数。"
+  ],
+  "forbidden_terms": [
+    "仙法",
+    "御剑",
+    "银两",
+    "捕快",
+    "镖局",
+    "客栈",
+    "真气",
+    "法宝"
+  ],
+  "player_identities": [
+    {
+      "id": "pi_open_pit_winch_lead_fitter",
+      "role": "万吨轮斗挖掘机卷扬机构当值检修副工长",
+      "gender": "any",
+      "title_patterns": [
+        {
+          "pattern": "检修长{family}",
+          "gender": "any"
+        },
+        {
+          "pattern": "{family}工长",
+          "gender": "any"
+        }
+      ],
+      "age_range": [
+        28,
+        42
+      ],
+      "social_position": "equal",
+      "baseline": "驻守万吨巨型矿机高空悬臂的老将，精通大吨位行星减速箱超越离合锁死力学。",
+      "resources": [
+        "一柄重达十公斤的高强度特种双向敲击扳手",
+        "两副双层特制耐高温防刺割芳纶阻燃手套"
+      ],
+      "reputation": "作风泼辣手艺过硬，能在六十米高空烈焰晃动中盲插减速箱定位插销。",
+      "risks": [
+        "直接暴露在高空烈火灼烤死角易遭受严重三度烧伤",
+        "悬臂折断高空坠落粉身碎骨"
+      ]
+    },
+    {
+      "id": "pi_safety_superintendent_officer",
+      "role": "露天矿安全监督指挥中心特派监察官",
+      "gender": "any",
+      "title_patterns": [
+        {
+          "pattern": "{family}监察官",
+          "gender": "any"
+        },
+        {
+          "pattern": "{given}总监",
+          "gender": "any"
+        }
+      ],
+      "age_range": [
+        34,
+        48
+      ],
+      "social_position": "high",
+      "baseline": "代表集团安全指挥部进驻矿山的官员，掌控悬臂紧急爆破脱扣与整机弃守通报权。",
+      "resources": [
+        "一台便携式多组分矿山有毒气体检测仪",
+        "一套高空逃生速降阻尼安全自救缓降器"
+      ],
+      "reputation": "高高在上讲究逃生程序，遭遇重大火灾极易恐慌做出炸断受料臂弃机的自保决断。",
+      "risks": [
+        "不懂矿机超越离合器微差咬合力学容易错判自救窗口",
+        "极度恐慌诱发心脏早搏眩晕"
+      ]
+    },
+    {
+      "id": "pi_cadet_mining_machinery_engineer",
+      "role": "露天采矿机械工程专业青年助理技师",
+      "gender": "any",
+      "title_patterns": [
+        {
+          "pattern": "{family}助理",
+          "gender": "any"
+        },
+        {
+          "pattern": "{given}工",
+          "gender": "any"
+        }
+      ],
+      "age_range": [
+        21,
+        23
+      ],
+      "social_position": "equal",
+      "baseline": "刚分配进特大露天矿的青年大学毕业生，精通重型钢结构受热弯曲与断裂有限元分析。",
+      "resources": [
+        "一盒特种耐高温快速膨胀金属修补胶",
+        "一本万吨轮斗机卷扬系统应急工况速查手册"
+      ],
+      "reputation": "理论知识丰富但缺乏高空火海抢险实操经验，面对剧烈震颤吓得面如土色。",
+      "risks": [
+        "被滚烫浓烟熏倒跌出机房造成高空坠亡",
+        "飞溅燃烧液压油灼伤面部"
+      ]
+    },
+    {
+      "id": "pi_veteran_coal_rig_rigger",
+      "role": "特大型露天矿机特级老铆装工长",
+      "gender": "any",
+      "title_patterns": [
+        {
+          "pattern": "{family}师傅",
+          "gender": "any"
+        },
+        {
+          "pattern": "{given}老将",
+          "gender": "any"
+        }
+      ],
+      "age_range": [
+        48,
+        54
+      ],
+      "social_position": "low",
+      "baseline": "在露天煤矿高空机械一线摸爬滚打三十年的老钳工，单凭震颤声就能听出减速箱齿轮脱扣游隙。",
+      "resources": [
+        "一把大号重型全钢防脱手动丝杠棘轮加力扳手",
+        "两块特制耐六百度高温石棉隔热缓冲衬板"
+      ],
+      "reputation": "沉默刚毅经验老到，视万吨矿机为工业巨兽般了如指掌。",
+      "risks": [
+        "长期煤尘环境患有慢性尘肺病耐受浓烟能力较弱",
+        "在高空晃动中风湿发作四肢僵直"
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "id": "loc_bucket_wheel_winch_cabin",
+      "name": "万吨轮斗机悬空六十米受料臂卷扬机房",
+      "detail": "悬空在六十米高空的狭窄钢制机房，四壁被下方剧烈燃烧的液压油与煤尘烈焰烧得滚烫通红，整座机舱随着受料臂的失控下滑剧烈颠簸震颤，主减速箱齿圈在抱死摩擦中火星狂飙，浓烟翻滚刺鼻窒息，距下方排土场悬崖仅有一步之遥。",
+      "privacy": "semi",
+      "visibility": "dim",
+      "witnesses": [
+        "bg_veteran_rigger_lao_peng"
+      ],
+      "exits": [
+        "loc_boom_counterweight_platform",
+        "loc_operator_cabin_skywalk"
+      ],
+      "affordances": [
+        "抓牢机房厚壁合金防坠安全扶手",
+        "将特种插销摇把对准减速箱偏心插销孔",
+        "查看墙壁上红色卷扬机钢缆受拉机械指针"
+      ],
+      "pressure_modifiers": {
+        "p_boom_cable_snap_fall_risk": "悬空臂受自重撕扯以每秒半米加速下滑，机舱震颤倾斜距彻底崩塌坠毁仅剩四分钟窗口。",
+        "p_hydraulic_oil_fire_flashover": "泄漏的高压液压油在六百度高温下发生闪燃，狭小机舱内烈火封门氧气即将耗尽自救。"
+      },
+      "tags": [
+        "disaster",
+        "workplace"
+      ]
+    },
+    {
+      "id": "loc_boom_counterweight_platform",
+      "name": "受料臂主配重钢结构检修主平台",
+      "detail": "位于卷扬机房后方的重型混凝土与铸铁配重块平台，狂风夹杂着冰冷煤粉呼啸吹拂，下方数千吨配重因悬臂受力不均在导轨上剧烈晃动，红色战备戒严警报灯将四周映成血色。",
+      "privacy": "public",
+      "visibility": "clear",
+      "witnesses": [
+        "bg_safety_inspector_deputy_duan",
+        "bg_mining_electrical_engineer_fan"
+      ],
+      "exits": [
+        "loc_bucket_wheel_winch_cabin",
+        "loc_operator_cabin_skywalk"
+      ],
+      "affordances": [
+        "按下配重块应急重力锁死电掣",
+        "拉动备用气动灭火喷淋手动安全手柄",
+        "拿起挂在防爆柜内的备用正压呼吸器面罩"
+      ],
+      "pressure_modifiers": {
+        "p_counterweight_cable_snap_risk": "配重块悬挂钢缆受到数十吨异常动载拉扯，滑轮导槽出现严重啃道濒临崩绳。"
+      },
+      "tags": [
+        "workplace",
+        "crime"
+      ]
+    },
+    {
+      "id": "loc_operator_cabin_skywalk",
+      "name": "主操纵室高空悬空应急走廊栈桥",
+      "detail": "悬挂在半空中的网状镀锌钢格板悬空走廊，脚下是深达百米的露天矿巨大坑口，狂风将走廊吹得剧烈摇晃，远处十几台大型自卸车正在紧急倒车避险撤离。",
+      "privacy": "private",
+      "visibility": "dim",
+      "witnesses": [
+        "bg_cadet_mining_xiao_chai"
+      ],
+      "exits": [
+        "loc_bucket_wheel_winch_cabin",
+        "loc_boom_counterweight_platform"
+      ],
+      "affordances": [
+        "扳动栈桥下部自流应急干粉喷淋阀",
+        "检查安全走廊钢索卡扣紧固力矩",
+        "扣紧走廊侧壁高空防坠自锁挂钩扣环"
+      ],
+      "pressure_modifiers": {
+        "p_cabin_smoke_suffocation_shock": "高空浓烟翻滚弥漫加剧了悬空走廊的窒息危机，空气中氧气急剧耗竭逼近昏迷极限。"
+      },
+      "tags": [
+        "workplace",
+        "disaster"
+      ]
+    }
+  ],
+  "character_templates": [
+    {
+      "id": "commander_lu_binglan",
+      "gender": "female",
+      "gender_reason": "重型露天采掘装备女总指挥",
+      "age_range": [
+        21,
+        21
+      ],
+      "adult_context": "已成年的特大型露天煤矿万吨采掘装备特级女总工程师兼现场总指挥，年满二十一岁，持有国家特种矿山大型重机突发大事故一级应急处置执照，享有完全决断指挥权。",
+      "public_role": "采掘装备现场总指挥",
+      "appearance_options": [
+        "褪去防火风衣后内着阻燃工装背心，清冷绝美神情英气，两腮带着成年青年女性特有的健康紧致微婴儿肥，在烈火浓烟与颠簸机舱的急促喘息中，白皙双颊被烘烤得泛起娇艳酡红，晶莹热汗顺着下颌滑入紧绷锁骨。",
+        "乌黑长发干练扎成利落马尾，纤细双臂紧扣长达八十公分的超硬铬钒钢特种双向手动超越离合锁定插销摇把死死别入减速箱偏心插销孔，面颊在火红火光映照下泛出绝不屈服的英武英气，展现出统帅万吨重机的绝对指挥威严。"
+      ],
+      "identity": {
+        "authority": "对万吨轮斗挖掘机悬臂系统、卷扬应急抱闸、火灾处置及现场全部突击检修人员享有最高战术决断权与工程否决权。",
+        "resources": [
+          "一把超硬铬钒钢特种双向手动超越离合锁定插销摇把（长八十公分，超硬度特种合金整体锻造，耐高温耐高扭矩，端部带防滑双向棘爪定位卡块）",
+          "一罐高压军用便携式快速抗高温清凉醒脑舒缓喷雾"
+        ],
+        "limits": [
+          "在受料臂彻底锁死下坠前无法离开烈焰封门的悬空卷扬机房",
+          "长时间吸入高温煤尘与焦糊烟气面临急性肺水肿与缺氧虚脱"
+        ],
+        "obligations": [
+          "确保悬臂锁死制止下坠力保价值数亿元的万吨国宝矿机与下方作业人员安全"
+        ],
+        "exposure": "为了抢采煤进度曾在高温天气下顶着油温微高超负荷运转受料臂",
+        "hidden": "工装背心贴胸口袋内装着一枚刻有露天矿首批万吨矿机出厂纪念铭文的纯钛钥匙扣"
+      },
+      "decision": {
+        "core_value": "万吨巨兽再疯狂，也必须服从机械咬合力矩，只要插销摇把还在手里，本总指挥就能把这掉下悬崖的受料臂死死锁在半空。",
+        "goal_options": [
+          "利用插销摇把插入减速箱锁死齿圈",
+          "在悬臂坠毁前排除抱死制止下滑自救"
+        ],
+        "pressure_responses": {
+          "low": "在火势初起时冷静测算悬臂下滑速度与钢缆受拉极限",
+          "mid": "果断抽出八十公分插销摇把找准偏心插销孔切角",
+          "high": "整个人扑在摇把末端借全身自重与双臂爆发力合力顺时针压死摇把",
+          "breaking": "用牙齿咬破清凉喷雾含服强行保持清醒继续双掌死扣摇把下旋"
+        },
+        "withdrawal": "退守至卷扬机房迎风面防爆承重立柱内侧，单臂挽住安全扶手冷眼注视钢缆张力表。",
+        "relationship_stance": "平日神情英姿飒爽容不得半点违章违规，但面对高空生死火海展现出同生共死的过人胆魄与统帅担当。",
+        "contrast": "外表英气美艳，冬夜里裹着羊皮袄爬受料臂，眉毛睫毛挂满白霜也不肯下来，面对万吨矿机失控时手劲与力学决断胜过粗壮矿工。",
+        "prefers": [
+          "分秒不差的机械咬合配合",
+          "生死关头敢把后背交出来的铁血搭档"
+        ],
+        "avoids": [
+          "推诿责任的懦夫",
+          "打着保命旗号擅自炸断设备的官僚"
+        ],
+        "never": [
+          "在受料臂彻底锁死制止下滑前独自弃机逃生"
+        ]
+      },
+      "intimacy_tendency": {
+        "attraction_sources": [
+          "在六十米高空烈焰晃动中如泰山般巍峨的身躯",
+          "千钧一发之际毫不犹豫用滚烫胸膛为自己阻挡爆燃烈焰的舍命相护"
+        ],
+        "likes": [
+          "两人合力压死摇把时胸膛紧贴传来的粗重狂热心跳",
+          "险情排除后彼此抹去面颊黑灰与热汗时的英气羞怯相视一笑"
+        ],
+        "dislikes": [
+          "自私逃兵的卑劣行径",
+          "自恃官威的蛮横乱命"
+        ],
+        "preconditions": [
+          "受料臂完全机械锁死且机房火势完全被扑灭受控",
+          "全员安全降落地面控制室完成洗消换衣",
+          "两人都清醒，心意出于自己，不是悬空烈火里的依赖"
+        ],
+        "boundaries": [
+          "严守总指挥调度威严不容侵犯",
+          "不以救命功绩索取私人情感屈从"
+        ],
+        "expression": "脱险进入安全区后，默默撕下自己最干爽的背心棉布轻柔包扎对方被火光灼伤的宽厚手背，眼神温柔而坚毅。",
+        "desire_range": [
+          2,
+          3
+        ],
+        "self_control_range": [
+          4,
+          5
+        ],
+        "desired_position": "被从身后紧抱稳住重心抗击震颤，双手叠合在插销摇把上一同向死角死压。"
+      },
+      "voices": {
+        "surface": "别管那些烧进机舱的火苗！把这根八十公分的插销摇把对准偏心孔，跟我数三二一一起用力顺时针死压到底！",
+        "inner": "还有最后四分之一圈齿牙……只要摇把不崩断，本小姐绝不会让万吨矿机摔成废铁，给我压到底！"
+      },
+      "schedule": [
+        {
+          "from": 1395,
+          "to": 1420,
+          "location_id": "loc_bucket_wheel_winch_cabin"
+        },
+        {
+          "from": 1420,
+          "to": 1439,
+          "location_id": "loc_bucket_wheel_winch_cabin"
+        }
+      ],
+      "situation": {
+        "trigger": "煤尘引燃液压油路，悬空六十米受料臂卷扬机制动瓦抱死烧熔加速下坠。",
+        "pressure": "悬臂下滑撕扯机房钢构，距整体断裂坠入百米悬崖仅剩四分钟逃生窗口。",
+        "exits": [
+          {
+            "option": "用超硬铬钒钢特种双向手动超越离合锁定插销摇把顺时针死压锁死齿圈自救。",
+            "cost": "插销摇把手柄发生微小弯曲变形，操作人员双手被粗糙防滑纹磨出大面积血泡鲜血浸透阻燃服。"
+          },
+          {
+            "option": "用备用重型大扳手强行塞入卷扬卷筒大齿圈轮辐制造机械抱死脱险。",
+            "cost": "猛烈冲击导致齿圈断裂一颗齿牙，崩飞金属碎片划破操作人员面颊与肩膀。"
+          }
+        ]
+      },
+      "tags": [
+        "workplace",
+        "disaster",
+        "intimate"
+      ]
+    },
+    {
+      "id": "mechanic_wei_tianzhu",
+      "gender": "male",
+      "gender_reason": "万吨轮斗挖掘机当值特级机修老工长",
+      "age_range": [
+        30,
+        36
+      ],
+      "adult_context": "年满三十岁，露天矿特种重型采掘设备特级机修长，具备完全民事行为能力，十年高空矿机摸爬滚打老将。",
+      "public_role": "斗轮机司机长",
+      "appearance_options": [
+        "身材极其魁梧刚劲肩背宽厚如山，身着带有加厚芳纶内衬的防烫阻燃厚工作服，手臂青筋暴起肌肉如坚硬铁木，面容粗犷目光冷峻。",
+        "板寸短发挂满黑灰与滚烫汗珠，在六十米高空剧烈颠簸中双脚如生根道钉稳稳咬在防滑钢格板上。"
+      ],
+      "identity": {
+        "authority": "对高空机房内重型抢修工具调用、液压手动卸荷阀及应急防坠缆索拥有现场绝对处置权。",
+        "resources": [
+          "一柄大号高强度耐高温特种重型梅花敲击扳手",
+          "两卷带有耐温加厚橡胶涂层的高抗拉防滑包扎绑带，排土场外的冬窝子都认得这张脸"
+        ],
+        "limits": [
+          "体能在抗衡浓烟窒息与高空六十米剧烈震荡颠簸中逼近体力极限",
+          "不懂微观金属疲劳裂纹扩展有限元应力积分"
+        ],
+        "obligations": [
+          "誓死协助总指挥女总指挥压下摇把锁死悬臂力保全员平安生还"
+        ],
+        "exposure": "为了抢工期曾违规在带温状态下手动调整过离合器刹车皮间隙",
+        "hidden": "机修背心贴身内袋里珍藏着一枚女总指挥首次指挥万吨矿机破土时授予的标兵勋章"
+      },
+      "decision": {
+        "core_value": "战位就是矿工的阵地，只要女总指挥还在前头拼命，{npc.name}就算拼上这条命也得顶住万吨重机。",
+        "goal_options": [
+          "协助女总指挥压下插销摇把锁死齿圈",
+          "用宽厚身躯挡住狂暴喷射的爆燃液压油"
+        ],
+        "pressure_responses": {
+          "low": "在火情初现瞬间迅速甩出加厚耐高温手套反向塞给女总指挥",
+          "mid": "用雄厚宽阔的胸膛一把捞住被剧烈震颤冲倒的年轻助理",
+          "high": "双手死死包覆在女总指挥手背外侧倾注全身近两百斤自重协同压下摇把",
+          "breaking": "用宽厚脊背硬生生挡住上方管道爆开的高温火流为女总指挥撑起发力屏障"
+        },
+        "withdrawal": "退守至机房主承重工字钢角梁内侧，右手握紧大敲击扳手警惕任何螺栓崩飞。",
+        "relationship_stance": "在斗轮机驾驶室里一坐就是十二个钟头，雪夜里跟女总指挥隔着对讲机说的话，比白天当面说的还多；女总指挥一上受料臂，眼睛就离不开后视镜。",
+        "contrast": "看似粗野鲁莽的北方矿山汉子，在配合女总指挥压下摇把时的力道控制精妙绝伦分毫不差。",
+        "prefers": [
+          "干净利落的军令作风",
+          "关键时刻豁出命硬碰硬的汉子"
+        ],
+        "avoids": [
+          "前怕狼后怕虎的逃兵",
+          "遇事推诿责任的空谈客"
+        ],
+        "never": [
+          "在总指挥还在火海中死拼时独自松开摇把逃跑"
+        ]
+      },
+      "intimacy_tendency": {
+        "attraction_sources": [
+          "在悬空六十米火海地狱面前横刀立马的非凡霸气",
+          "两具滚烫身躯在失速震颤中紧密贴合的炽烈生命羁绊"
+        ],
+        "likes": [
+          "战胜死神后痛快大喝冰镇热茶的畅快",
+          "减速箱齿圈咬死制动瞬间两人粗重滚烫的胸膛起伏与鼻息共鸣"
+        ],
+        "dislikes": [
+          "临阵脱逃的自私懦夫",
+          "背信弃义的下作小人"
+        ],
+        "preconditions": [
+          "受料臂完全机械锁死且机房险情完全排除受控",
+          "全员安全撤出机房返回地面值班室"
+        ],
+        "boundaries": [
+          "恪守矿机机修职责从属规矩不越礼数",
+          "不以救命恩情索取私人情感"
+        ],
+        "expression": "撕下自己干燥的保暖内胆，轻柔却有力地裹在女总指挥被浓烟熏烫的香肩上。",
+        "desire_range": [
+          1,
+          2
+        ],
+        "self_control_range": [
+          3,
+          4
+        ],
+        "desired_position": "在摇晃的机房底板上从后方抱紧女总指挥稳住重心，双手全力握紧摇把合力向下猛压到底。"
+      },
+      "voices": {
+        "surface": "女总指挥！找准那个偏心插销孔！摇把有{npc.name}给你托着，你报顺逆，老子就算把双臂骨头压断也给你压到底！",
+        "inner": "女总指挥是天生的帅才。只要我还有一口气在，这万吨塌陷休想伤女总指挥半根毫毛。"
+      },
+      "schedule": [
+        {
+          "from": 1395,
+          "to": 1439,
+          "location_id": "loc_bucket_wheel_winch_cabin"
+        }
+      ],
+      "situation": {
+        "trigger": "卷扬机钢缆受拉极限告警，机房倾斜达十二度，减速箱受强烈冲击偏载。",
+        "pressure": "若不能在两分钟内合力压下摇把锁死偏心齿圈，受料臂将彻底断裂拖翻整机殉难。",
+        "exits": [
+          {
+            "option": "白毛风卷着雪粒和煤尘打在脸上，{npc.name}将全身自重压在摇把末端借杠杆力矩强行带动抱死齿圈反转脱险。",
+            "cost": "{npc.name}右侧肩袖肌腱严重拉伤撕裂，双手隔着手套被磨出大面积水泡破溃。"
+          },
+          {
+            "option": "用破拆大扳手卡死连杆偏心转销强行制造机械死点阻止反冲自救。",
+            "cost": "大扳手受强烈高压反震脱手崩飞划破{npc.name}下巴与肩膀。"
+          }
+        ]
+      },
+      "tags": [
+        "disaster",
+        "crime"
+      ]
+    },
+    {
+      "id": "inspector_duan_chao",
+      "gender": "male",
+      "gender_reason": "煤炭工业集团特派高级安全监察官",
+      "age_range": [
+        38,
+        44
+      ],
+      "adult_context": "年满三十八岁，矿山安全生产监察官员，具备完全民事行为能力，掌控悬臂紧急爆破脱扣与整机弃守通报权。",
+      "public_role": "特派高级矿山监督官",
+      "appearance_options": [
+        "身穿带有高反光条的高级防风呢绒监察风衣，面容白净戴着金丝防尘眼镜，此时被滚烫浓烟熏得浑身黑灰战栗不已。",
+        "双手死死抓着胸前的速降缓降器背带，眼神在保全自身性命与维持官方威严间剧烈战栗，眉毛睫毛上挂满了白霜。"
+      ],
+      "identity": {
+        "authority": "代表集团指挥部行使矿山突发事故最高戒严权、判定是否爆破炸断受料臂弃机的最终签署权。",
+        "resources": [
+          "一台便携式多功能矿山气体记录仪",
+          "一枚受料臂紧急火工切割炸断钥匙芯片"
+        ],
+        "limits": [
+          "完全不懂大型矿机超越离合器手动逆止齿隙力学特性",
+          "极度恐慌坠毁企图强行启动悬臂水下割切电爆自毁弃机"
+        ],
+        "obligations": [
+          "保全公文包内特大型露天矿安全合规审查原始特许批文"
+        ],
+        "exposure": "为了抢进度曾对万吨矿机卷扬机制动闸瓦磨损超限整改单据违规签署放行",
+        "hidden": "暗中启动了呼叫地面特种吊车前来悬空走廊单人接应的应急加密寻呼机"
+      },
+      "decision": {
+        "core_value": "保全自身性命与监察官阶高于一切，底层矿机工与技师不过是安全统计报表数字。",
+        "goal_options": [
+          "强行开启悬臂炸断闸刀引爆炸药炸断受料臂单独逃生",
+          "勒令女总指挥立刻放弃抢修撤退至配重平台"
+        ],
+        "pressure_responses": {
+          "low": "在主平台大声宣读安全生产规章推卸责任",
+          "mid": "发现机房倾斜加剧后歇斯底里试图暴力扳动炸断电掣",
+          "high": "被司机长夺下钥匙按在角钢上后吓得瘫倒在栏杆旁",
+          "breaking": "瘫坐在地板上交出气动切断钥匙换取优先速降撤离权"
+        },
+        "withdrawal": "受料臂在狂风里吱嘎摇晃，退缩在主平台后方密封防爆逃生救生舱内，双手死死抱住公文包与自救呼吸器。",
+        "relationship_stance": "将女总指挥视为恃才傲物目无尊长的小丫头刺头工程师，对其专业权威既畏惧又嫉恨。",
+        "contrast": "平日在发布会上冠冕堂皇大谈安全责任重于泰山，大难临头时比谁都贪生怕死、丑态百出，驾驶室里一坐就是十二个钟头。",
+        "prefers": [
+          "绝对的官僚顺从",
+          "温暖干爽的矿业集团总部VIP包房"
+        ],
+        "avoids": [
+          "悬空六十米摇摇欲坠的火海机房",
+          "与浑身煤黑机油的机修工同舟共济"
+        ],
+        "never": [
+          "为了挽救同行机修人员而延误自己速降逃生的时间"
+        ]
+      },
+      "intimacy_tendency": {
+        "attraction_sources": [
+          "能让其保全官位与性命的强力铁腕",
+          "迎合其官僚尊严的阿谀奉承"
+        ],
+        "likes": [
+          "被护卫在最安全的地面防爆指挥车",
+          "特供的高级雪茄与热茶"
+        ],
+        "dislikes": [
+          "粗暴的抗命顶撞",
+          "被冰冷工具与铁拳指着鼻梁的屈辱恐慌"
+        ],
+        "preconditions": [
+          "彻底脱离矿机坠毁危险置身于矿山总指挥部",
+          "保全既得安全总监官职衔"
+        ],
+        "boundaries": [
+          "严禁任何普通矿工触碰其高级监察制服",
+          "不承担任何同舟共济义务"
+        ],
+        "expression": "战战兢兢地从口袋里摸出一盒昂贵的高效抗热含片扔在地上换取机修工长拼命下扳制动。",
+        "desire_range": [
+          0,
+          0
+        ],
+        "self_control_range": [
+          2,
+          3
+        ],
+        "desired_position": "在主平台外手握对讲机，命令地面在倒计时归零时立刻引爆炸断炸药彻底炸毁悬臂。"
+      },
+      "voices": {
+        "surface": "女总指挥！司机长！悬臂下滑已经超过两米了！立刻放弃手动锁死！本专员命令你们立刻拉下炸断电掣自保！",
+        "inner": "这群疯子……万吨矿机要是塌了，整座作业面都得被砸烂，我必须自己活下去！快炸断！"
+      },
+      "schedule": [
+        {
+          "from": 1395,
+          "to": 1439,
+          "location_id": "loc_boom_counterweight_platform"
+        }
+      ],
+      "situation": {
+        "trigger": "悬臂下滑倾斜触发安全监督指挥部紧急弃机炸断最高预警条例。",
+        "pressure": "若三分钟内不能锁死减速齿圈，特派专员手中的终端将直接触发受料臂火工炸药彻底炸断悬臂断绝生路。",
+        "exits": [
+          {
+            "option": "司机长夺下专员炸药钥匙并用安全绳将其捆死在角钢立柱上自救。",
+            "cost": "涉嫌公然抗拒安全监察执法面临事后被移送司法机关。"
+          },
+          {
+            "option": "女总指挥大声以现场总指挥身份动员全班接管控制箱强行掐断引爆线脱险。",
+            "cost": "与专员随身随从爆发激烈肢体拉扯造成手腕轻微挫伤。"
+          }
+        ]
+      },
+      "tags": [
+        "workplace_power",
+        "crime"
+      ]
+    },
+    {
+      "id": "senior_coal_rig_rigger_peng",
+      "gender": "male",
+      "gender_reason": "特大型露天矿机特级老铆装工长老装配工",
+      "age_range": [
+        50,
+        54
+      ],
+      "adult_context": "年满五十岁，万吨矿机特级老装配工，成年工匠宗师，具备完全民事行为能力。",
+      "public_role": "万吨矿机特级老装配工长",
+      "appearance_options": [
+        "身穿带有黄色反光条的破旧加厚阻燃工程防寒棉背心，满脸被矿山风沙与高温烈焰侵蚀的深刻皱纹，花白胡须挂满煤尘黑灰。",
+        "手里握着一把被摩挲得发亮的纯钢平头防脱手动丝杠棘轮加力扳手，眼神在烈火与晃动中如高山岩石般沉静坚定。"
+      ],
+      "identity": {
+        "authority": "对大型行星减速箱双向超越离合器卡齿微观形变公差、偏心插销孔受力退让间隙拥有绝对听觉直觉。",
+        "resources": [
+          "两张耐六百度超高温合成石棉防滑耐磨垫片",
+          "一把特制重型纯钢平头偏心防滑敲击冲子"
+        ],
+        "limits": [
+          "年老体衰患有严重的慢性尘肺病无法承受剧烈奔跑",
+          "在浓烟烈火中体液流失极快剧烈咳嗽喘息"
+        ],
+        "obligations": [
+          "将万吨重机抢险绝活经验传承给年轻一代工程师"
+        ],
+        "exposure": "曾在检修中为了省事私下在卷扬机大齿圈联轴器螺栓上少拧过半圈防松垫片",
+        "hidden": "深知这座减速箱在受火热膨胀时偏心插销孔会向右侧偏斜三度的装配暗伤缺陷"
+      },
+      "decision": {
+        "core_value": "机械结构不骗人，只要给对力道没有插不进的偏心孔。",
+        "goal_options": [
+          "指点女总指挥找准右偏三度切入角插入摇把",
+          "垫入石棉衬板阻滞齿圈反冲打滑"
+        ],
+        "pressure_responses": {
+          "low": "在机房角落用冲子敲击护栏凭回音辨识减速箱偏位游隙",
+          "mid": "冒着滚烫浓烟递上石棉防滑衬板塞入咬合盲区",
+          "high": "用沙哑嗓音高呼右侧偏三度顺力死压的最佳起步方位",
+          "breaking": "用身躯抵住脱脱晃动的平衡支架为年轻人争取发力时间"
+        },
+        "withdrawal": "躲在机房承重立柱背火凹槽内，用厚棉背心死死护住冲子与备件盒。",
+        "relationship_stance": "将女总指挥视为中国矿山机械界难得一见的巾帼奇才，由衷赞佩年轻女总指挥的从容定力与过硬铁腕。",
+        "contrast": "平日沉默寡言甚至被年轻工人视为古板老头的老铆工，在面对高空大坍塌时指点沉着如定海神针。",
+        "prefers": [
+          "严丝合缝的工匠本色",
+          "一诺千金的工程信义"
+        ],
+        "avoids": [
+          "不知变通的教条官僚",
+          "遇到大难就弃机逃跑的软蛋"
+        ],
+        "never": [
+          "在机械受力关键时刻误报公差参数"
+        ]
+      },
+      "intimacy_tendency": {
+        "attraction_sources": [
+          "对万吨宏伟矿业重工业的崇高敬畏与共鸣",
+          "在死亡深渊面前毫无娇气的果断坚毅"
+        ],
+        "likes": [
+          "减速箱严丝合缝咬死制动时的清脆合模轰鸣",
+          "抢修完成后在坑口抽上一口老旱烟的惬意从容"
+        ],
+        "dislikes": [
+          "轻视老工人经验的狂妄做派",
+          "粗暴破坏昂贵重型矿机齿轮的蛮干行径"
+        ],
+        "preconditions": [
+          "彻底排除悬臂下滑险情万吨矿机回归平稳",
+          "保全全部精密量具完整无损"
+        ],
+        "boundaries": [
+          "恪守老长辈规矩不越礼数",
+          "不介入年轻后辈的私人情感波澜"
+        ],
+        "expression": "用布满老茧和黑灰的大手重重拍在女总指挥肩头，咧开嘴角露出释然欣慰的笑容。",
+        "desire_range": [
+          0,
+          0
+        ],
+        "self_control_range": [
+          5,
+          5
+        ],
+        "desired_position": "在立柱后敲击钢柱指点偏斜角度，将石棉垫片精准塞入女总指挥握持的摇把下方。"
+      },
+      "voices": {
+        "surface": "女总指挥！听{npc.name}的！那个受热膨胀的偏心孔往右侧偏了三度！别死往前硬怼，往右偏三度顺着牙口咬进去再死压！",
+        "inner": "好姑娘，手上功夫够硬！这万吨矿机要是毁在老汉眼前，那才是天理难容！"
+      },
+      "schedule": [
+        {
+          "from": 1395,
+          "to": 1439,
+          "location_id": "loc_bucket_wheel_winch_cabin"
+        }
+      ],
+      "situation": {
+        "trigger": "偏心插销孔在高温膨胀与巨震中咬合极深，摇把面临卡死打滑。",
+        "pressure": "若无防滑介质介入并纠正三度偏角，摇把将在数吨反冲扭矩下折裂彻底断送锁紧希望。",
+        "exits": [
+          {
+            "option": "用老铆工私藏的耐六百度石棉防滑衬板塞入缝隙协助摇把稳固深咬自救。",
+            "cost": "消耗尽绝版高耐温密封耗材，老工长左手手掌被锋利金属毛刺划破渗血。"
+          },
+          {
+            "option": "火光映在漫天飞雪里，指挥司机长用大敲击扳手反向敲击偏心凸耳震松咬死轴套脱险。",
+            "cost": "猛烈敲击造成铸钢外壳产生微小应力裂纹降低防爆耐压等级。"
+          }
+        ]
+      },
+      "tags": [
+        "workplace",
+        "crime"
+      ]
+    },
+    {
+      "id": "cadet_mining_xiao_chai",
+      "gender": "male",
+      "gender_reason": "露天采矿机械工程青年助理技师",
+      "age_range": [
+        21,
+        23
+      ],
+      "adult_context": "年满二十一岁，矿业大学矿山机械工程学院应届毕业生，初级大型采掘机维护员，具备完全民事行为能力。",
+      "public_role": "露天矿机助理技术员",
+      "appearance_options": [
+        "身材单薄，身着带有黄色反光条的紧身阻燃防尘工作服，面容清秀神情极度慌恐，防尘护目镜歪斜挂在脖颈上。",
+        "腰间工具袋胡乱插着红外测温枪与备用小棘轮，双膝在六十米高空颠簸中剧烈颤抖、脸色惨白如纸。"
+      ],
+      "identity": {
+        "authority": "机房应急微型防爆排烟风机与备用液压截止阀的手动闭合权。",
+        "resources": [
+          "一根厚壁加长特种高强度空心镀锌合金加力套管",
+          "一卷高抗拉耐温石棉加固高空安全牵引带"
+        ],
+        "limits": [
+          "缺乏特大矿机失火坠毁生死事故实战经验心理防线脆弱",
+          "体质单薄力气严重不足难以单独抗衡高空狂风震颤"
+        ],
+        "obligations": [
+          "按规程记录悬臂下滑位移表读数并向总指挥报告钢构应变"
+        ],
+        "exposure": "因操作生疏曾导致辅助冷油循环接头发生轻微渗漏",
+        "hidden": "暗自崇拜英姿飒爽的总指挥女总指挥将其视为矿山界最崇高的精神偶像"
+      },
+      "decision": {
+        "core_value": "保命第一，崇拜并绝对服从女总指挥的每一道抢险指令。",
+        "goal_options": [
+          "协助女总指挥寻找加长套管延长摇把力臂",
+          "在机房立柱稳固安全牵引带"
+        ],
+        "pressure_responses": {
+          "low": "在工具箱内慌乱翻找可以套在摇把末端的加长特种合金套管",
+          "mid": "大声向机房通报悬臂下滑速度与减速箱偏心齿轮位移",
+          "high": "鼓起勇气冒着灼热浓烟爬过倾斜格板递送加长套管",
+          "breaking": "跪倒在剧烈震颤的机房地板上死死拉紧安全牵引带协助分担剧烈冲击"
+        },
+        "withdrawal": "缩在机房承重立柱背火死角，紧紧抱住加长合金管浑身哆嗦。",
+        "relationship_stance": "将女总指挥视为唯一的救命稻草与崇高统帅，愿为协助脱险拼死效命。",
+        "contrast": "平日胆小怯弱常被老工人训斥的年轻新手，在女总指挥生死存亡关头能爆发出一股冒死送达加长套管的血性胆魄。",
+        "prefers": [
+          "清晰明确的指令指导",
+          "平稳清凉的地面总调度室"
+        ],
+        "avoids": [
+          "凶神恶煞的监察官咆哮",
+          "悬空六十米烈焰腾空的卷扬机房"
+        ],
+        "never": [
+          "背弃女总指挥独自放弃求生逃跑"
+        ]
+      },
+      "intimacy_tendency": {
+        "attraction_sources": [
+          "泰山崩于前而色不变的卓越帅才魅力",
+          "在深渊面前给予同伴的强大安全感"
+        ],
+        "likes": [
+          "被肯定业务能力时的温和颔首",
+          "分到的一枚甘甜提神高能葡萄糖块"
+        ],
+        "dislikes": [
+          "残酷暴力的威逼践踏",
+          "被当作废物累赘抛弃"
+        ],
+        "preconditions": [
+          "彻底排除悬臂下滑险情万吨矿机稳稳受控",
+          "确保自身生命安全得到保障"
+        ],
+        "boundaries": [
+          "恪守助手本分不作非分奢望",
+          "严守下级礼节规矩"
+        ],
+        "expression": "双手发颤地将加长套管递过，结结巴巴连连向女总指挥敬礼并保证坚守岗位，事后在操纵室的暖风机前替对方焐了很久的手。",
+        "desire_range": [
+          1,
+          1
+        ],
+        "self_control_range": [
+          4,
+          4
+        ],
+        "desired_position": "在机房安全扶手上方死死拽紧牵引带，大声为女总指挥下压摇把报出锁死刻度读数。"
+      },
+      "voices": {
+        "surface": "女总指挥！加长套管找到了！这根合金管能套在插销摇把柄端当加长力臂！还有这卷防坠牵引带！",
+        "inner": "只要总指挥还在火海里拼命，我就不能当缩头乌龟，我必须帮着把这个杀人的悬臂彻底锁死！"
+      },
+      "schedule": [
+        {
+          "from": 1395,
+          "to": 1439,
+          "location_id": "loc_bucket_wheel_winch_cabin"
+        }
+      ],
+      "situation": {
+        "trigger": "机房内部电缆受火烤绝缘皮熔化短路，引燃泄漏的高压液压油引发剧烈明火。",
+        "pressure": "若不及时手动切断主配电漏电断路器，飞溅电火花将在十秒内彻底引爆机油箱炸穿机舱。",
+        "exits": [
+          {
+            "option": "{npc.name}用加长合金管绝缘端砸碎配电箱熔断器切断高压电自救。",
+            "cost": "白毛风卷着雪粒和煤尘打在脸上，{npc.name}手臂被飞溅电弧火花轻度灼伤起泡。"
+          },
+          {
+            "option": "用防火外套沾湿灭火剂死死捂住着火电缆阻断短路火花蔓延脱险。",
+            "cost": "双手手掌被电弧轻度击伤脱皮。"
+          }
+        ]
+      },
+      "tags": [
+        "workplace",
+        "disaster"
+      ]
+    },
+    {
+      "id": "mining_medic_officer_fan",
+      "gender": "female",
+      "gender_reason": "露天煤矿特种重伤创伤急救站女主治医官",
+      "age_range": [
+        26,
+        28
+      ],
+      "adult_context": "年满二十六岁，持有国家职业矿山创伤急救专科执业证书的成年女医官，具备完全民事行为能力，排土场外的冬窝子都认得这张脸。",
+      "public_role": "矿山特勤急救女主治医官",
+      "appearance_options": [
+        "身穿带有红十字标识的白色加厚防尘阻燃医官保暖常服，面容清秀神情紧绷，戴着医用无菌防寒手套，双手握着便携式高压注氧仪。",
+        "神情专注沉稳，额前秀发整齐束起，脖颈上挂着高敏数字心率血氧监测探头与防毒呼吸罩。"
+      ],
+      "identity": {
+        "authority": "对高空急性烟气窒息急救方案、抗烧伤神经保护针剂及重症高压氧舱启闭享有最高医疗处置权。",
+        "resources": [
+          "两支浓缩神经保护抗休克急救针剂",
+          "一台便携式微型经皮血氧红外连续监测仪"
+        ],
+        "limits": [
+          "在六十米高空烈焰晃动机房无法实施侵入性外科手术",
+          "体能单薄无法搬运重型破拆工装"
+        ],
+        "obligations": [
+          "保障全体矿机抢险突击队员零重伤残疾、零急性烟气窒息存活"
+        ],
+        "exposure": "曾私自调用高压加压舱为患有重度粉尘窒息的老矿工实施超规理疗",
+        "hidden": "随身急救包内封存着自己亲手调配的高浓度外用神经解痉透皮喷剂"
+      },
+      "decision": {
+        "core_value": "生命体征就是最高法典，绝不放弃任何一个尚有微弱脉搏的矿山同袍。",
+        "goal_options": [
+          "指导机房内二人通过深腹式呼吸节律对抗急性烟气窒息",
+          "在制动锁死瞬间实施重度灼伤复温抢救"
+        ],
+        "pressure_responses": {
+          "low": "在通信频道内持续播报防浓烟窒息换气口诀",
+          "mid": "隔窗指点司机长如何按压穴位缓解女总指挥手臂肌肉痉挛",
+          "high": "将体温复苏水热毯推至主平台前准备承接重度灼伤伤员",
+          "breaking": "顶着被高温浓烟扫视的危险探头向门缝递送应急高压呼吸面罩"
+        },
+        "withdrawal": "退守至复温治疗台前，迅速核对加压舱氧分压配比电磁阀。",
+        "relationship_stance": "将女总指挥视为情同手足的亲密姐妹与崇敬的工程楷模，对突击队员安危极度牵挂，驾驶室里一坐就是十二个钟头。",
+        "contrast": "外表文静纤弱的书生女医官，在面对万吨矿机大坍塌急救时下针稳准狠辣如冰山判官。",
+        "prefers": [
+          "稳定规律的心率曲线",
+          "遵从医嘱的冷静配合"
+        ],
+        "avoids": [
+          "情绪失控的盲目挣扎",
+          "隐瞒伤情的蛮干硬撑"
+        ],
+        "never": [
+          "在工人尚有呼吸时签署放弃抢救书面证明"
+        ]
+      },
+      "intimacy_tendency": {
+        "attraction_sources": [
+          "在极端高空烈焰剧痛下依然保持的超人意志",
+          "生死关头舍命护持同伴的人性光芒"
+        ],
+        "likes": [
+          "平稳有力的矿工窦性心律",
+          "脱险后第一口温热电解质葡萄糖水的吞咽声"
+        ],
+        "dislikes": [
+          "漠视人命的官僚冷血",
+          "因恐惧造成的踩踏推诿"
+        ],
+        "preconditions": [
+          "受料臂完全机械锁死且伤员生命体征恢复平稳",
+          "全员脱离急性烟气中毒危险期"
+        ],
+        "boundaries": [
+          "严守医患职业伦理道德",
+          "不以医疗资源调配进行私利交换"
+        ],
+        "expression": "用温热的手掌轻柔按揉对方熏烫泛红的太阳穴，柔声安抚其紧绷剧烈震颤的神经脉搏。",
+        "desire_range": [
+          0,
+          0
+        ],
+        "self_control_range": [
+          5,
+          5
+        ],
+        "desired_position": "在操纵室门外顶着白毛风拍打玻璃，一下下打出呼吸节拍。"
+      },
+      "voices": {
+        "surface": "女总指挥！看着我的呼吸手势！深吸气、屏息三秒、慢呼气！千万不要剧烈咳嗽，压住喉咙浓烟灼痛！",
+        "inner": "只要两人把受料臂锁死，哪怕全身脱水灼伤了，我也一定把两人从阎王爷手里抢回来。"
+      },
+      "schedule": [
+        {
+          "from": 1395,
+          "to": 1439,
+          "location_id": "loc_boom_counterweight_platform"
+        }
+      ],
+      "situation": {
+        "trigger": "机房内人员血氧饱和度跌破百分之七十五警戒红线。",
+        "pressure": "若不及时进行减压深呼引导，剧烈高温浓烟将诱发不可逆窒息昏迷休克。",
+        "exits": [
+          {
+            "option": "通过对讲广播引导机房二人同频深呼吸并相互按压合谷穴解痉自救。",
+            "cost": "分担部分抢险精力导致压下摇把节拍轻微延缓。"
+          },
+          {
+            "option": "从投料窗口塞入高效神经解痉含片协助其维持清醒意志脱险。",
+            "cost": "投料口微启导致少量高温油烟喷溅损坏医用监测仪外壳。"
+          }
+        ]
+      },
+      "tags": [
+        "workplace",
+        "disaster"
+      ]
+    }
+  ],
+  "background_cast": [
+    {
+      "id": "bg_veteran_rigger_lao_peng",
+      "role": "万吨矿机老铆工老包",
+      "function": "witness",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "line": "机房倾斜十二度了！偏心插销孔受热往右偏了三度，硬插插不进去啊！",
+      "gender": "male",
+      "age_range": [
+        50,
+        54
+      ],
+      "adult_context": "年满五十岁，矿山机修老骨干，成年公民。",
+      "name": "老包"
+    },
+    {
+      "id": "bg_safety_inspector_deputy_duan",
+      "role": "安全监察副官段副官",
+      "function": "obstacle",
+      "location_ids": [
+        "loc_boom_counterweight_platform"
+      ],
+      "line": "监察官有令！倒计时还剩三分钟，准备拉下炸断闸刀炸毁受料臂自保！",
+      "gender": "male",
+      "age_range": [
+        28,
+        31
+      ],
+      "adult_context": "年满二十八岁，安全监管随员，成年公职人员。",
+      "name": "段副官"
+    },
+    {
+      "id": "bg_mining_electrical_engineer_fan",
+      "role": "露天矿电气大班邬工程师",
+      "function": "helper",
+      "location_ids": [
+        "loc_boom_counterweight_platform"
+      ],
+      "line": "高压应急氮气灭火已启动！女总指挥，用特种插销摇把别住偏心槽，垫上老装配工的石棉板！",
+      "gender": "male",
+      "age_range": [
+        45,
+        49
+      ],
+      "adult_context": "年满四十五岁，矿山电气主管，成年老工程师。",
+      "name": "邬工程师"
+    },
+    {
+      "id": "bg_cadet_mining_xiao_chai",
+      "role": "排土场推土机手小牛",
+      "function": "witness",
+      "location_ids": [
+        "loc_operator_cabin_skywalk"
+      ],
+      "line": "悬臂下滑速度达到每秒半米了！走廊快被撕裂了，快把插销压死啊！",
+      "gender": "male",
+      "age_range": [
+        22,
+        25
+      ],
+      "adult_context": "年满二十二岁，排土场推土机操作工，成年公民。",
+      "name": "小牛"
+    },
+    {
+      "id": "bg_mining_fire_captain",
+      "role": "露天矿特勤消防中队长寇队长",
+      "function": "helper",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "line": "高空泡沫水炮已对准卷扬机房，女总指挥，务必把摇把压到底制止下坠！",
+      "gender": "male",
+      "age_range": [
+        33,
+        37
+      ],
+      "adult_context": "年满三十三岁，特勤消防指挥员，成年军官。",
+      "name": "寇队长"
+    },
+    {
+      "id": "bg_mining_medic_officer_fan",
+      "role": "矿区卫生院医生苗医生",
+      "function": "helper",
+      "location_ids": [
+        "loc_boom_counterweight_platform"
+      ],
+      "line": "高空急救担架与纯氧呼吸机已就位，悬臂一锁死立刻拉人抢救！",
+      "gender": "female",
+      "age_range": [
+        26,
+        28
+      ],
+      "adult_context": "年满二十六岁，持有创伤急救专科执照的女医官，成年公民。",
+      "name": "苗医生"
+    }
+  ],
+  "channels": [
+    {
+      "id": "ch_excavator_cabin_intercom",
+      "text": "万吨轮斗机高空悬臂防爆骨传导有线通信网",
+      "reach": "all",
+      "fidelity": "exact"
+    },
+    {
+      "id": "ch_winch_screams_deadlock",
+      "text": "万吨钢构撕裂剧烈尖叫与监察官惊恐呼叫",
+      "reach": "local",
+      "fidelity": "distorted"
+    }
+  ],
+  "tension_engines": [
+    {
+      "id": "te_boom_fall_vs_winch_lever_lock",
+      "text": "受料臂下滑坠毁与烈火封门绝命倒计时与利用特种插销摇把合力锁死齿圈的机械自救。"
+    },
+    {
+      "id": "te_inspector_blowup_boom_vs_rescue",
+      "text": "特派安全监察官企图强行炸毁受料臂弃机逃生与一线突击队誓死保全全机生还的生死对决。"
+    },
+    {
+      "id": "te_tsundere_director_pride_vs_mechanic",
+      "text": "英气冷傲特级女总指挥的绝对调度威严与重装机修老工长托付性命的肉体爆发力反差共鸣。"
+    },
+    {
+      "id": "te_roasting_cabin_soak_vs_tight_press",
+      "text": "高空烈焰浓烟窒息虚脱与两人在颠簸机房中紧贴发力合压插销摇把的炽烈生命羁绊。"
+    }
+  ],
+  "cast_combos": [
+    {
+      "id": "cc_commander_and_mechanic_rush",
+      "power_structure": "switchable",
+      "player_positions": [
+        "high",
+        "equal",
+        "low"
+      ],
+      "identity_ids": [],
+      "slots": [
+        "commander_lu_binglan",
+        "mechanic_wei_tianzhu"
+      ],
+      "tension_engine_ids": [
+        "te_boom_fall_vs_winch_lever_lock",
+        "te_roasting_cabin_soak_vs_tight_press"
+      ],
+      "chemistry": "英气女总指挥与斗轮机司机长在悬空六十米的烈火和白毛风里背靠背、手扣手，把插销摇把向死角猛压锁死减速箱。",
+      "stakes": {
+        "resource_gap": "女总指挥精通矿机超越离合非对称冲击力矩死穴，机修长拥有惊人的下盘千斤坠肉身爆发力。",
+        "limit_gap": "女总指挥体能在浓烟窒息与缺氧下逼近昏厥临界，机修长受限于双手严重灼伤血泡破裂剧痛难忍。",
+        "meeting_reason": "白毛风夜班，女总指挥爬上六十米受料臂查卷扬机，斗轮机司机长从驾驶室跟了出来。",
+        "irreplaceable_goal": "在悬臂彻底崩断前，合力用插销摇把将偏心齿圈下压锁死实现悬臂制动脱险。"
+      },
+      "relations": [
+        {
+          "a": "player",
+          "b": "commander_lu_binglan",
+          "stage": "testing",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 3
+          },
+          "reason": "烈火绝境中共同测算力矩与偏角，建立起生死托付的机械共鸣，在草原上熬过好几个白毛风季。"
+        },
+        {
+          "a": "player",
+          "b": "mechanic_wei_tianzhu",
+          "stage": "familiar",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 2
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 2
+          },
+          "reason": "同在矿山火线摸爬滚打的生死战友，深知对方过硬的铁骨担当。"
+        },
+        {
+          "a": "commander_lu_binglan",
+          "b": "mechanic_wei_tianzhu",
+          "stage": "testing",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 3
+          },
+          "reason": "英气女总指挥与重装机修老兵在狂暴火海前结成生死同盟。"
+        }
+      ],
+      "tags": [
+        "workplace",
+        "disaster"
+      ]
+    },
+    {
+      "id": "cc_commander_and_cadet_pipe_extension",
+      "power_structure": "player_high",
+      "player_positions": [
+        "high"
+      ],
+      "identity_ids": [],
+      "slots": [
+        "commander_lu_binglan",
+        "cadet_mining_xiao_chai"
+      ],
+      "tension_engine_ids": [
+        "te_boom_fall_vs_winch_lever_lock"
+      ],
+      "chemistry": "传奇女总指挥的从容冷冽稳住吓瘫的新手助理，新手助理冒死送达加长合金空心套管与牵引带，师徒合力化解矿机坍塌危机。",
+      "stakes": {
+        "resource_gap": "女总指挥握有核心八十公分插销摇把与绝对技术决断权，青年助理掌握加长合金空心管与应力手册。",
+        "limit_gap": "成年的青年助理面对悬空六十米烈火颠簸心理防线脆弱，女总指挥在狂暴晃动中无法分身捡拾工具。",
+        "meeting_reason": "助理技术员被白毛风困在受料臂的走廊上，是女总指挥顺着安全绳摸过去把人领回来的。",
+        "irreplaceable_goal": "迅速接驳加长空心力臂协助插销摇把一举压死咬死齿圈。"
+      },
+      "relations": [
+        {
+          "a": "player",
+          "b": "commander_lu_binglan",
+          "stage": "familiar",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 2
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 2
+          },
+          "reason": "紧盯女总指挥的每一个锁死手势。"
+        },
+        {
+          "a": "player",
+          "b": "cadet_mining_xiao_chai",
+          "stage": "familiar",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 1
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 1
+          },
+          "reason": "鼓励新手助理战胜深渊恐惧。"
+        },
+        {
+          "a": "commander_lu_binglan",
+          "b": "cadet_mining_xiao_chai",
+          "stage": "acquainted",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 1
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 1
+          },
+          "reason": "师徒传承与工程庇护。"
+        }
+      ],
+      "tags": [
+        "workplace",
+        "disaster"
+      ]
+    },
+    {
+      "id": "cc_mechanic_and_inspector_clash",
+      "power_structure": "npc_high",
+      "player_positions": [
+        "low",
+        "equal"
+      ],
+      "identity_ids": [],
+      "slots": [
+        "mechanic_wei_tianzhu",
+        "inspector_duan_chao"
+      ],
+      "tension_engine_ids": [
+        "te_inspector_blowup_boom_vs_rescue"
+      ],
+      "chemistry": "特派监察官歇斯底里要求引爆炸药炸断受料臂逃生，机修工长怒拔大敲击扳手横在其喉结据理力争寸步不让。",
+      "stakes": {
+        "resource_gap": "监察官手握集团指挥部悬臂紧急爆破钥匙芯片，工长拥有全矿机修突击队的绝对现场支持。",
+        "limit_gap": "监察官极度恐惧万吨巨兽坍塌粉身碎骨，工长受限于公然违抗安全监察条例的严重威慑。",
+        "meeting_reason": "监察官的越野车陷在排土场的雪窝里，是斗轮机司机长开着推土机去拖出来的，拖完两人就吵上了。",
+        "irreplaceable_goal": "压制官僚逃跑行径为机房内齿圈锁死争取至关重要的三分钟时间。"
+      },
+      "relations": [
+        {
+          "a": "player",
+          "b": "mechanic_wei_tianzhu",
+          "stage": "acquainted",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 1
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 1
+          },
+          "reason": "赞许工长抗命护持全机同袍的铁骨担当。"
+        },
+        {
+          "a": "player",
+          "b": "inspector_duan_chao",
+          "stage": "stranger",
+          "a_to_b": {
+            "trust": 0,
+            "tension": 5
+          },
+          "b_to_a": {
+            "trust": 0,
+            "tension": 5
+          },
+          "reason": "对视一线人命如草芥的自私官僚深恶痛绝。"
+        },
+        {
+          "a": "mechanic_wei_tianzhu",
+          "b": "inspector_duan_chao",
+          "stage": "testing",
+          "a_to_b": {
+            "trust": 0,
+            "tension": 5
+          },
+          "b_to_a": {
+            "trust": 0,
+            "tension": 5
+          },
+          "reason": "一线工长与上层逃命官员之间的生死对峙。"
+        }
+      ],
+      "tags": [
+        "workplace_power",
+        "crime"
+      ]
+    },
+    {
+      "id": "cc_commander_and_master_peng_lever",
+      "power_structure": "equal",
+      "player_positions": [
+        "equal"
+      ],
+      "identity_ids": [],
+      "slots": [
+        "commander_lu_binglan",
+        "senior_coal_rig_rigger_peng"
+      ],
+      "tension_engine_ids": [
+        "te_boom_fall_vs_winch_lever_lock",
+        "te_inspector_blowup_boom_vs_rescue"
+      ],
+      "chemistry": "矿山老铆工隔着滚烫浓烟指点偏角递上石棉防滑衬板，与机房内死磕摇把的年轻女总指挥里应外合，协同化解坍塌死局。",
+      "stakes": {
+        "resource_gap": "老铆工握有减速箱右偏三度偏心口诀与石棉防滑衬板，女总指挥掌握核心插销摇把与绝对技术决断权。",
+        "limit_gap": "老铆工年迈患有尘肺病无法上前死拼下压，女总指挥在浓烟中双眼难辨毫米级偏角。",
+        "meeting_reason": "老装配工当年在这片草原上把万吨斗轮机一颗螺栓一颗螺栓拼起来，退休了还住在矿区边上不肯走。",
+        "irreplaceable_goal": "精准将石棉衬板塞入右偏三度偏心孔撬平反扣脱险。"
+      },
+      "relations": [
+        {
+          "a": "player",
+          "b": "commander_lu_binglan",
+          "stage": "familiar",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 2
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 2
+          },
+          "reason": "深信女总指挥神级机械决断力。"
+        },
+        {
+          "a": "player",
+          "b": "senior_coal_rig_rigger_peng",
+          "stage": "familiar",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 1
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 1
+          },
+          "reason": "老铆工的经验指引令人心头大定。"
+        },
+        {
+          "a": "commander_lu_binglan",
+          "b": "senior_coal_rig_rigger_peng",
+          "stage": "testing",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 2
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 2
+          },
+          "reason": "两代矿山机械人之间的默契互救。"
+        }
+      ],
+      "tags": [
+        "workplace",
+        "crime"
+      ]
+    }
+  ],
+  "daily_activities": [
+    {
+      "id": "act_winch_drum_cable_log",
+      "title": "晨光未显受料臂卷扬卷筒钢缆巡检",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "duration_minutes": 30,
+      "beats": [
+        "用精密标准游标卡尺测量主钢缆受拉外径微米级磨损",
+        "擦拭双色石英高温视镜表面积聚的煤尘油垢",
+        "轻扣副放空截止阀螺纹压盖螺栓确认无异常冷凝水"
+      ],
+      "hook_ids": [],
+      "start_minute": 1395,
+      "tags": [
+        "workplace",
+        "disaster"
+      ]
+    },
+    {
+      "id": "act_winch_gearbox_greasing",
+      "title": "大型减速箱超越离合器耐磨润滑维护",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "duration_minutes": 35,
+      "beats": [
+        "用铜刮刀清理减速箱齿圈表面附着的水锈泥沙",
+        "均匀涂抹耐温特种合成二硫化钼极压防咬合润滑脂",
+        "使用全钢棘轮扳手按对称法紧固六颗大号不锈钢螺栓"
+      ],
+      "hook_ids": [],
+      "start_minute": 1400,
+      "tags": [
+        "workplace",
+        "disaster"
+      ]
+    },
+    {
+      "id": "act_counterweight_damper_test",
+      "title": "配重平台抗震阻尼器自由行程测试",
+      "location_ids": [
+        "loc_boom_counterweight_platform"
+      ],
+      "duration_minutes": 25,
+      "beats": [
+        "转动主气动防火水密门重锤锁紧机械棘爪确认自由行程",
+        "检查配重悬挂不锈钢钢丝绳端部马鞍卡扣夹紧力矩",
+        "在特大露天矿战备施工日志加盖当值监察官电子图章"
+      ],
+      "hook_ids": [],
+      "start_minute": 1398,
+      "tags": [
+        "workplace",
+        "crime"
+      ]
+    },
+    {
+      "id": "act_boom_hydraulic_oil_cooler_tally",
+      "title": "受料臂主液压油冷却器阻尼点验",
+      "location_ids": [
+        "loc_operator_cabin_skywalk"
+      ],
+      "duration_minutes": 40,
+      "beats": [
+        "用防爆卡尺测量减震弹簧自由高度与预压压缩量",
+        "清理滑轨锁死卡齿表面堆积的微细金属冰晶霜花",
+        "在矿山抢险战备行车日志加盖当值专员电子印章"
+      ],
+      "hook_ids": [],
+      "start_minute": 1405,
+      "tags": [
+        "workplace",
+        "disaster"
+      ]
+    },
+    {
+      "id": "act_high_skywalk_oxygen_supply_tally",
+      "title": "高空栈桥战备自救高压供氧点验",
+      "location_ids": [
+        "loc_operator_cabin_skywalk"
+      ],
+      "duration_minutes": 30,
+      "beats": [
+        "测量高压氧气储罐汇流排输出减压阀动态风压",
+        "检查机库外露救生索端部钛合金自动锁扣夹紧力",
+        "交接挂在备品柜内的特种实心加长插销摇把"
+      ],
+      "hook_ids": [],
+      "start_minute": 1410,
+      "tags": [
+        "workplace",
+        "crime"
+      ]
+    },
+    {
+      "id": "act_boom_girder_laser_mapping",
+      "title": "受料臂主桁架弯曲变形激光测绘",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "duration_minutes": 20,
+      "beats": [
+        "测量悬臂左右两侧桁架受热微米级挠度差",
+        "清理导向槽表面卡塞的细碎重晶石泥浆残渣",
+        "紧固传感器安装支架四颗高强度防锈不锈钢螺栓"
+      ],
+      "hook_ids": [],
+      "start_minute": 1420,
+      "tags": [
+        "workplace_power",
+        "workplace"
+      ]
+    },
+    {
+      "id": "act_cab_fur_coat_thaw",
+      "title": "主操纵室里替女总指挥卸下冻硬的皮袄",
+      "location_ids": [
+        "loc_operator_cabin_skywalk"
+      ],
+      "duration_minutes": 30,
+      "start_minute": 1430,
+      "beats": [
+        "受料臂锁死、火扑灭之后，女总指挥被人搀进主操纵室，皮袄外面冻了一层冰壳，脸上黑一道白一道，全是煤灰和霜。",
+        "暖风机开到最大，女总指挥抬起胳膊，让人把冻硬的皮袄一点点剥下来，又拿热毛巾焐住冻木的手指，焐到指尖发红，女总指挥才长长出了口气。",
+        "窗外白毛风还在刮，女总指挥把操纵室的帘子拉上：交班的人雪停才上得来……这几个钟头，你哪儿也别去。"
+      ],
+      "tags": [
+        "intimate"
+      ]
+    }
+  ],
+  "pressures": [
+    {
+      "id": "p_boom_cable_snap_fall_risk",
+      "title": "悬空受料臂失速下滑拖翻整机坠崖",
+      "source": "nature",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "trigger": "万吨轮斗挖掘机悬空六十米受料臂在制动失效中断崖式下滑，钢缆以每秒半米加速放绳，机房倾斜达十二度，距悬臂断裂砸塌排土场仅剩四分钟。",
+      "objective": "在悬臂坠毁前手动旋转插销摇把反向咬死超越离合器自救。",
+      "choice": "等待上方启动炸药炸断悬臂弃机，还是由女总指挥带队在机房烈火中暴力压下摇把脱险。",
+      "immediate": {
+        "text": "震耳欲聋的钢结构扭曲呻吟如山崩地裂，滚烫灼人的热浪席卷狭小机房，倾斜角度不断恶化。",
+        "minutes": 2
+      },
+      "near": {
+        "text": "机舱倾斜突破十五度，浓烟烈焰彻底阻断逃生舱门，人员四肢被高温烘烤得剧痛难忍。",
+        "deadline_minutes": 4
+      },
+      "far": {
+        "trigger": "受料臂钢桁架在极限动载下拉伸断裂",
+        "consequence": "重达数千吨的受料臂轰然砸向排土场百米深渊，万吨矿机翻覆，突击全员不幸牺牲殉难。",
+        "due_days": 1
+      },
+      "exits": [
+        {
+          "option": "用超硬铬钒钢特种双向手动超越离合锁定插销摇把顺时针死压到底制动脱险。",
+          "cost": "插销摇把发生微小塑性微弯，操作人员双手被粗暴防滑纹磨出大面积水泡破裂。"
+        },
+        {
+          "option": "用破拆大活动扳手反向砸碎主液压蓄能器排油阀强行制造局部机械制动自救。",
+          "cost": "大扳手受强烈反震脱手崩飞划破在场人员面颊与肩膀。"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [],
+      "start_minute": 1395,
+      "tags": [
+        "disaster",
+        "workplace"
+      ]
+    },
+    {
+      "id": "p_hydraulic_oil_fire_flashover",
+      "title": "泄漏的高压液压油在高温下猛烈闪燃",
+      "source": "accident",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "trigger": "高压液压管路爆裂喷出的数百升抗磨液压油在六百度减速箱表面瞬间闪燃，烈焰封死卷扬机房出口，浓烟翻滚氧气即将耗尽。",
+      "objective": "找准减速箱偏心插销孔右偏三度死角并套上加长管合力顺时针猛压到底。",
+      "choice": "强行蛮力硬拧博取前三十度位移，还是等待老装配工递上石棉防滑衬板稳步推进。",
+      "immediate": {
+        "text": "厚达六公分的减速箱外壳传出一声让人牙酸的金属摩擦尖叫，表层耐磨漆爆裂脱落。",
+        "minutes": 3
+      },
+      "near": {
+        "text": "箱体因受火烤膨胀产生微米级变形，摇把定位卡块在偏心孔边缘发生剧烈打滑火花四溅。",
+        "deadline_minutes": 6
+      },
+      "far": {
+        "trigger": "特种合金插销在极度剪切偏载下拉伸断裂崩飞",
+        "consequence": "崩断的合金插销如穿甲弹贯穿机舱，丧失唯一自锁手段导致悬臂彻底坠毁化为火海。",
+        "due_days": 1
+      },
+      "exits": [
+        {
+          "option": "老装配工塞入高强度石棉防滑衬板纠正三度切角协助摇把深咬自救。",
+          "cost": "火光映在漫天飞雪里，消耗尽绝版高耐温密封耗材，老工长左手手掌被锋利金属毛刺划伤渗血。"
+        },
+        {
+          "option": "司机长用肩膀顶住插销摇把传动轴消除偏心扭矩为女总指挥争取旋转角度脱险。",
+          "cost": "白毛风卷着雪粒和煤尘打在脸上，司机长肩部软组织受剧烈反震严重挫伤渗血。"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [],
+      "start_minute": 1398,
+      "tags": [
+        "disaster",
+        "workplace"
+      ]
+    },
+    {
+      "id": "p_cabin_smoke_suffocation_shock",
+      "title": "高空封闭机房滚烫煤尘诱发急性窒息",
+      "source": "nature",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "trigger": "六十米高空机房内煤尘浓烟温度逼近七十度，人员阻燃背心被热汗彻底浸透，极度缺氧与热衰竭导致意识模糊视线重影。",
+      "objective": "两人紧密贴合屈膝对抗机房剧烈晃动并含服高能清凉药片维持清醒与手劲。",
+      "choice": "退入狭小配重走廊，还是咬牙憋住一口热气在灼浪中完成最后三圈下旋。",
+      "immediate": {
+        "text": "女总指挥面颊被浓烟热浪熏得通红泛紫，牙齿咬破下唇渗出鲜血。",
+        "minutes": 2
+      },
+      "near": {
+        "text": "肌肉出现严重热衰竭痉挛与麻木乏力，双手抓握力骤降一半以上，呼吸道剧烈灼痛。",
+        "deadline_minutes": 5
+      },
+      "far": {
+        "trigger": "核心体温超标伴随急性一氧化碳中毒昏迷",
+        "consequence": "人员在极度高温浓烟中当场窒息晕厥，在大坍塌中不幸牺牲殉难。",
+        "due_days": 1
+      },
+      "exits": [
+        {
+          "option": "两人紧密相贴借彼此肩膀支撑重心双手死扣摇把以自重猛压脱险。",
+          "cost": "衣衫被汗水浸透黏在肌肤上，双臂遭受重度高温浅表灼伤。"
+        },
+        {
+          "option": "从药盒取出高效神经解痉含片含服协助其维持清醒意志脱险。",
+          "cost": "手忙脚乱弄洒了小半瓶药水导致部分急救配额受损。"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [],
+      "start_minute": 1400,
+      "tags": [
+        "disaster"
+      ]
+    },
+    {
+      "id": "p_counterweight_cable_snap_risk",
+      "title": "配重块悬挂钢缆受到数十吨异常动载拉扯",
+      "source": "accident",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_boom_counterweight_platform"
+      ],
+      "trigger": "受料臂下坠使数千吨配重在导轨上狂暴颠簸，主悬挂钢丝绳受强烈冲击载荷，滑轮导向板开裂即将崩绳砸穿主塔架。",
+      "objective": "在配重钢缆崩断前完成减速箱锁死消除动载拉扯。",
+      "choice": "向调度室请求强行开启全场事故急停，还是在机房内争分夺秒完成刚性锁卡。",
+      "immediate": {
+        "text": "粗壮的钢丝绳在狂风中发出令人毛骨悚然的金属拉伸啸叫，卷筒导向轮螺栓断裂一颗。",
+        "minutes": 3
+      },
+      "near": {
+        "text": "配重塔架钢梁受力严重扭曲呻吟，主提升钢丝绳毛刺根根竖立即将彻底崩裂。",
+        "deadline_minutes": 7
+      },
+      "far": {
+        "trigger": "配重塔架主提升钢索彻底绷断抽击",
+        "consequence": "数千吨铸铁配重如陨石砸穿整座矿机中央回转平台，万吨装备全员殉难。",
+        "due_days": 1
+      },
+      "exits": [
+        {
+          "option": "零下三十度的寒气冻得手指发木，樊工程师在平台用气割枪快速切断悬空偏心牵引副索消除回弹自救。",
+          "cost": "白毛风卷着雪粒和煤尘打在脸上，割枪反喷烧毁配电箱，樊工程师右手背被飞溅火花轻度烫伤。"
+        },
+        {
+          "option": "女总指挥爆发全力旋转插销摇把锁死悬臂切断钢索动载拉力脱险。",
+          "cost": "女总指挥双手虎口被特种合金摇把粗糙手柄磨破鲜血淋漓。"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [],
+      "start_minute": 1402,
+      "tags": [
+        "disaster",
+        "workplace"
+      ]
+    },
+    {
+      "id": "p_lever_alloy_pin_shear_yield",
+      "title": "特种合金插销定位卡块承受超载剪切濒裂",
+      "source": "accident",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "trigger": "受损减速箱内部积聚的高温煤焦使卡齿阻力暴增数倍，八十公分插销摇把头部卡块承受了极限剪切，特种合金表面浮现微细疲劳晶斑发出尖锐金铁哀鸣。",
+      "objective": "套上加长合金空心套管延长力臂并将发力点移至轴心消除冲击偏载。",
+      "choice": "受料臂在狂风里吱嘎摇晃，孤注一掷加大肉身压载强拧，还是稍微回退半寸套入助理技术员送来的加长钢管。",
+      "immediate": {
+        "text": "火光映在漫天飞雪里，摇把头部传出一声让人心悸的合金棘爪咬死脆响，表层耐磨镀层脱落。",
+        "minutes": 2
+      },
+      "near": {
+        "text": "摇把手柄发生超过十五度的明显塑性弯曲，卡块末端即将崩脱滑出偏心孔。",
+        "deadline_minutes": 5
+      },
+      "far": {
+        "trigger": "插销摇把头部定位卡块彻底粉碎崩飞",
+        "consequence": "崩断的高速合金利刃击穿操作手胸膛，丧失唯一紧固机具彻底断绝生路。",
+        "due_days": 1
+      },
+      "exits": [
+        {
+          "option": "助理技术员送达加长特种钢管套在摇把末端分担应力合力下旋撬平自锁脱险。",
+          "cost": "钢管在高压下咬死变形彻底无法从摇把上拔脱。"
+        },
+        {
+          "option": "女总指挥与司机长调整站位将发力点向摇把根部收缩以肉体爆发力强行压死轴齿自救。",
+          "cost": "两臂肘关节承受数十吨极度反震导致软组织严重挫伤渗血。"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [],
+      "start_minute": 1404,
+      "tags": [
+        "disaster",
+        "workplace"
+      ]
+    },
+    {
+      "id": "p_inspector_explosive_boom_countdown",
+      "title": "安全监察官拉下受料臂火工炸断倒计时",
+      "source": "institution",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_boom_counterweight_platform"
+      ],
+      "trigger": "特派安全监察官认定受料臂已经无法抢救，在配重平台按开炸断电掣，防爆雷管启动了三分钟彻底引爆炸断受料臂钢桁架弃机的自毁倒计时。",
+      "objective": "在炸药引爆前完成减速箱锁死制动并勒令监察官停掣。",
+      "choice": "由司机长在门外用大敲击扳手砸烂专员控制箱，还是在机房内抢先完成摇把下压化解危机。",
+      "immediate": {
+        "text": "平台顶角响起尖叫的红色悬臂紧急炸断警报，雷管起爆继电器发出短促的倒数蜂鸣。",
+        "minutes": 2
+      },
+      "near": {
+        "text": "炸断倒计时仅剩最后三十秒，桁架火工引信开始哧哧燃烧冒出刺鼻白烟。",
+        "deadline_minutes": 4
+      },
+      "far": {
+        "trigger": "受料臂火工炸药彻底引爆炸碎悬臂钢桁架",
+        "consequence": "数千吨钢结构在惊天巨爆中齐根切断坠崖，卷扬机房突击全员粉身碎骨殉难。",
+        "due_days": 1
+      },
+      "exits": [
+        {
+          "option": "司机长夺下专员钥匙砸碎自毁继电器强行拔掉熔断保险丝争取生机。",
+          "cost": "司机长面临违抗安全监察条例的严重纪律问责。"
+        },
+        {
+          "option": "女总指挥以现场总指挥身份喝退随身近卫并亲手扯断自毁继电器脱险。",
+          "cost": "近身对抗导致女总指挥右手腕被尖锐外壳划伤渗血。"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [],
+      "start_minute": 1406,
+      "tags": [
+        "workplace_power",
+        "crime"
+      ]
+    }
+  ],
+  "hooks": [
+    {
+      "id": "hook_boom_groans_falling_roaring",
+      "kind": "approach",
+      "slot": "commander_lu_binglan",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "text": "{commander_lu_binglan.name}单手按住剧烈颤动的防爆机舱立柱，抹开额前热汗：六十米受料臂在下坠了！卷扬机制动瓦全烧毁了，把这根八十公分的插销摇把对准偏心孔，跟我死压！"
+    },
+    {
+      "id": "hook_commander_taps_cable_gauge",
+      "kind": "approach",
+      "slot": "commander_lu_binglan",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "text": "{commander_lu_binglan.name}置身于烈火浓烟与倾斜机房中，特种插销摇把咔哒一声咬死偏心槽口：看准右侧偏三度，顺着齿圈咬合线，听我口令一起往死里压！"
+    },
+    {
+      "id": "hook_smoke_chills_lungs",
+      "kind": "approach",
+      "slot": "commander_lu_binglan",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "text": "{commander_lu_binglan.name}在高温滚烫的浓烟狂潮里咬紧银牙，面颊在火光映照下泛出娇艳酡红与晶莹热汗：别怕烟！抓紧摇把手柄，把全身重量砸下来！"
+    },
+    {
+      "id": "hook_lever_groans_bending_limit",
+      "kind": "approach",
+      "slot": "commander_lu_binglan",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "text": "{commander_lu_binglan.name}整个人扑在插销摇把柄端，双手虎口鲜血淋漓：超越离合器在咬牙了！司机长，把你那一身蛮力全压上来，顺时针压到底锁死！"
+    },
+    {
+      "id": "hook_mechanic_grips_pin_lever_firmly",
+      "kind": "approach",
+      "slot": "mechanic_wei_tianzhu",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "text": "{mechanic_wei_tianzhu.name}跨步踏入火浪正中，粗壮的大手一把覆在女总工手背外侧：女总指挥，稳住轴心！剩下的千斤下沉重量交给我，谁也别想松手！"
+    },
+    {
+      "id": "hook_gearbox_groans_shear",
+      "kind": "approach",
+      "slot": "commander_lu_binglan",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "text": "{commander_lu_binglan.name}猛然抬头凝视门外缓缓闪烁的红光，眼神英气冷冽如刀：监察官要炸断悬臂了！还有最后半圈，哪怕把手柄压断也得给我锁死！"
+    },
+    {
+      "id": "hook_counterweight_cable_groans",
+      "kind": "approach",
+      "slot": "mechanic_wei_tianzhu",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "text": "{mechanic_wei_tianzhu.name}反手抽出大梅花敲击扳手别在立柱角钢之间，低沉怒吼：矿机再发狂又怎样！就靠这根特种合金摇把了，跟我一起下压，锁死这根插销！"
+    },
+    {
+      "id": "hook_inspector_threatens_explosive_boom",
+      "kind": "approach",
+      "slot": "inspector_duan_chao",
+      "location_ids": [
+        "loc_boom_counterweight_platform"
+      ],
+      "text": "{inspector_duan_chao.name}惨白着脸握紧炸断电掣芯片，尖叫连连：整座矿机要被拖翻了！卫队，立刻按下引爆电掣炸断受料臂，绝不能让整座装备陪葬！"
+    },
+    {
+      "id": "hook_peng_stuffs_asbestos_gasket",
+      "kind": "approach",
+      "slot": "senior_coal_rig_rigger_peng",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "text": "{senior_coal_rig_rigger_peng.name}将耐高温石棉防滑衬板狠狠塞入槽口缝隙：往槽里塞！右偏三度的死角找到了，垫上我的石棉垫，顺着力道往下压！"
+    },
+    {
+      "id": "hook_cadet_fetches_extension_pipe",
+      "kind": "request",
+      "slot": "commander_lu_binglan",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "text": "{commander_lu_binglan.name}抹去脸上的黑灰与热汗，急促喘息着看向助理技术员：去工具箱把备用特种合金加长套管取来接上，我们需要更长的一米力臂！"
+    },
+    {
+      "id": "hook_chai_brings_steel_pipe",
+      "kind": "request",
+      "slot": "cadet_mining_xiao_chai",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "text": "{cadet_mining_xiao_chai.name}双手抱着一根厚壁加长套管滚入机舱死角，眼眶通红：女总指挥！合金管拿来了！还有一卷高抗拉安全牵引带！"
+    },
+    {
+      "id": "hook_wei_joins_pipe_extension",
+      "kind": "request",
+      "slot": "mechanic_wei_tianzhu",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "text": "{mechanic_wei_tianzhu.name}接过套管狠狠套在摇把手柄末端，按住女总指挥的玉手咆哮：套管接上了！力臂延长了！女总指挥，我们数三二一，一起把全身重量砸下去！"
+    },
+    {
+      "id": "hook_medic_guides_anti_smoke_breathing",
+      "kind": "request",
+      "slot": "commander_lu_binglan",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "text": "{commander_lu_binglan.name}隔着观察窗向医官打出确认手势，口中含服清凉解痉药片：机械自锁在建立了，我们做最后一轮压死下旋！"
+    },
+    {
+      "id": "hook_observe_cabin_gale_fire",
+      "kind": "observe",
+      "slot": "commander_lu_binglan",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "text": "{commander_lu_binglan.name}挺立在悬空六十米倾斜烈焰与刺鼻浓烟中，阻燃工装背心下侧颜在火光映照下英姿勃发，眼神如出鞘寒刃般坚不可摧。"
+    },
+    {
+      "id": "hook_observe_lever_locks_boom_winch",
+      "kind": "observe",
+      "slot": "commander_lu_binglan",
+      "location_ids": [
+        "loc_bucket_wheel_winch_cabin"
+      ],
+      "text": "超硬铬钒钢特种双向手动超越离合锁定插销摇把深深咬死减速箱偏心齿圈，伴随着一声洪钟般的重型减速机自锁合模轰鸣，失控下坠的受料臂轰然止动稳稳锁死在悬空半空，烈焰被阻火隔离彻底扑灭，全员安然脱险生还。"
+    },
+    {
+      "id": "hook_binglan_salty_milk_tea",
+      "kind": "approach",
+      "slot": "commander_lu_binglan",
+      "location_ids": [],
+      "text": "{npc.name}从受料臂上爬下来，眉毛睫毛上全挂着白霜，把一只军用保温壶塞给人：奶茶，牧民家刚送来的，咸的。喝完再上去。"
+    },
+    {
+      "id": "hook_tianzhu_cab_heater",
+      "kind": "approach",
+      "slot": "mechanic_wei_tianzhu",
+      "location_ids": [],
+      "text": "{npc.name}从斗轮机驾驶室的窗口探出半个身子，冲人喊：上来！外头零下三十度，驾驶室里有暖风——顺便替我盯着左边那个斗。"
+    },
+    {
+      "id": "hook_peng_shop_bench",
+      "kind": "approach",
+      "slot": "senior_coal_rig_rigger_peng",
+      "location_ids": [],
+      "text": "{npc.name}裹着羊皮袄坐在矿区小卖部门口，用手套拍拍身边的空凳子：坐。这台斗轮机是我拼起来的，哪颗螺栓爱松，问我。"
+    },
+    {
+      "id": "hook_xiaochai_frozen_glove",
+      "kind": "approach",
+      "slot": "cadet_mining_xiao_chai",
+      "location_ids": [],
+      "text": "{npc.name}把冻成冰坨的手套举给人看，哭笑不得：一摘下来就冻在栏杆上了……能借一只吗？"
+    },
+    {
+      "id": "hook_duan_snow_boots",
+      "kind": "approach",
+      "slot": "inspector_duan_chao",
+      "location_ids": [],
+      "text": "{npc.name}跺着脚上的雪走进调度室，摘下皮帽，鼻尖冻得通红：你们这儿的除尘记录……先别管记录了，有热水没有？"
+    },
+    {
+      "id": "hook_binglan_grassland_promise",
+      "kind": "approach",
+      "slot": "commander_lu_binglan",
+      "location_ids": [],
+      "text": "{npc.name}站在排土场边，望着远处冬窝子的一点灯火，把围巾往上拉到鼻尖：这片草原，等煤挖完了是要还回去的。你信不信？"
+    }
+  ],
+  "twists": [
+    {
+      "id": "tw_clutch_eccentric_groove_located",
+      "category": "信息",
+      "requires": [
+        "commander_lu_binglan"
+      ],
+      "text": "{commander_lu_binglan.name}在受损减速箱侧壁摸出了当年设备制造厂预留的手动防扭矩反向反力矩安全卡止暗槽。"
+    },
+    {
+      "id": "tw_mechanic_disarms_corrupt_inspector",
+      "category": "人事",
+      "requires": [
+        "mechanic_wei_tianzhu"
+      ],
+      "text": "{mechanic_wei_tianzhu.name}反手夺下特派安全监察官的炸药引爆芯片，全面接管万吨矿机高空抢险最高战时处置权。"
+    },
+    {
+      "id": "tw_anti_smoke_spray_distributed",
+      "category": "资源",
+      "requires": [
+        "commander_lu_binglan"
+      ],
+      "text": "{commander_lu_binglan.name}掰开贴身药盒，将四支高效神经舒缓抗热喷雾分发给现场力竭同伴对抗急性浓烟热衰竭抽搐。"
+    },
+    {
+      "id": "tw_asbestos_gasket_stops_winch_slip",
+      "category": "制度",
+      "requires": [
+        "senior_coal_rig_rigger_peng"
+      ],
+      "text": "{senior_coal_rig_rigger_peng.name}用冲子撬开备用自流平衡通气孔，依法平衡减速箱内外热胀冷缩应力化解了齿圈单向极度受剪。"
+    },
+    {
+      "id": "tw_emergency_bypass_drops_gear_load",
+      "category": "时限",
+      "requires": [
+        "commander_lu_binglan"
+      ],
+      "text": "{commander_lu_binglan.name}利用摇把柄端挑开了备用排油旁通管道，强行为受损齿圈压制住最后三十秒超温抱死窗口。"
+    },
+    {
+      "id": "tw_mechanic_shields_commander_fire_shock",
+      "category": "关系",
+      "requires": [
+        "commander_lu_binglan",
+        "mechanic_wei_tianzhu"
+      ],
+      "text": "{mechanic_wei_tianzhu.name}在爆燃烈焰大面积喷涌瞬间挺身扑在{commander_lu_binglan.name}上方，用加厚阻燃工装与宽阔背脊死死挡下火舌灼烤。"
+    },
+    {
+      "id": "tw_boom_winch_locks_excavator_saved",
+      "category": "意外",
+      "requires": [
+        "commander_lu_binglan"
+      ],
+      "text": "顺时针死死压平的偏心插销摇把在超硬铬钒钢与石棉衬板的强力咬合下彻底锁死减速齿圈，失速下滑的受料臂稳稳悬停在半空制动消除险情，万吨连续采掘装备安然脱险平息生还。"
+    }
+  ],
+  "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+  ],
+  "status": "released",
+  "notes": "按原稿加入，保留特大露天煤矿万吨轮斗挖掘机受料臂爆燃下坠与女总指挥用插销摇把反向锁死减速箱齿圈的骨架。同一批里有十个同源的工业事故世界，这里把开局放到草原深处的冬夜：零下三十度、白毛风卷着雪粒和煤尘、排土场外就是牧民的冬窝子、驾驶室里一坐十二个钟头、牧民送来的咸奶茶；搭档写成斗轮机司机长，开局钩子、相遇缘由和背景人物围着草原矿区的冬天重写。写死的人名改为身份称呼，背景人物里与模板重名的改名；婴儿肥只留在外貌描写里；人物组合按权力结构放开玩家身份，压力与日常不再锁死钩子，并加了几个不限地点的靠近型钩子；女总指挥亲密前提写明火灭臂停、双方清醒自愿；新增一个主操纵室里替女总指挥卸下冻硬皮袄的亲密日常。"
+}

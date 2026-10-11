@@ -40,7 +40,7 @@ Every world is open. Pick one and play.
 Don't see what you want? Just say "custom world" (`自定义世界`), name the year and the place, and one is made for you on the spot.
 
 <details>
-<summary><b>See all 120 worlds at a glance (click to open)</b></summary>
+<summary><b>See all 135 worlds at a glance (click to open)</b></summary>
 <br>
 
 | World | In one line |
@@ -165,6 +165,21 @@ Don't see what you want? Just say "custom world" (`自定义世界`), name the y
 | Tomb Quicksand (皇陵流沙) | Warlord sappers crack an imperial tomb; quicksand pours in and the gravity flap tilts toward the spike pit as the tomb-raider matriarch jams the pivot. |
 | Orbital Elevator (轨道电梯) | The main cable tears thirty kilometres up; every slip of the arm throws the hangar weightless as the captain and an engineer lock the rail. |
 | Silo Blast Door (核井闸门) | A Cold War alarm misfires in an abandoned missile silo; the hundred-ton blast door sinks shut as the commander and the sergeant crank the relief valve. |
+| Saturation Dive (饱和潜水沉箱) | Day 21 in the saturation chamber, an undersea tunnel weld tears open; the director and the dive chief lock the butterfly valve through helium-squeaked shouts. |
+| Pit Brass Tag (深井铜牌) | Three bells send the cage down; the hoist brake fails in a 300-meter shaft, and the chief engineer and the banksman jam a wrench into the guide-wheel brake. |
+| Plateau Geothermal (高原地热井) | A blowout at 4,000 meters sends sulfur steam over the wild hot spring; the chief geologist and the driller crank the preventer with oxygen bottles on their backs. |
+| Flood Season Dam (汛期坝闸) | Day 19 of rain and the flood crest arrives; the intake gate jams halfway, and the director and the gate shift lead go down the gallery to open the bypass. |
+| Turnaround Refinery (大检修炼厂) | Turnaround season, the contractor camp lit up; the hydrocracker flange starts leaking and the H2S alarms scream as the chief engineer and the board operator crawl under the heat shield. |
+| Whiteout Coal Mine (白毛风煤矿) | Minus thirty on a grassland winter night, the bucket-wheel boom catches fire and drops; the commander and the operator lock the ring gear in the whiteout. |
+| Typhoon Platform (台风平台) | The crew-change helicopter leaves and the typhoon arrives; the diverter packer swells shut, the director rides the basket down, and the crane operator watches from above. |
+| Cape LNG Carrier (好望角LNG船) | Day 47 at sea rounding the Cape, the cargo tank relief valve ices shut; the chief engineer and the bosun hammer the stem in minus-162-degree fog. |
+| Valley Wind Tunnel (山沟风洞) | Past midnight at an old mountain base, a Mach 10 run swells the nozzle throat; the chief designer and the base-born shift lead force the trim bolt. |
+| Seaside Launch (海边发射场) | The night market is packed with tourists before launch; at T-minus 40 the purge valve freezes, and the chief designer and the fueling lead drive a wrench into the pin. |
+| Scroll Airing Vault (晒画日字画库) | On the sixth-month painting airing, kin eye the inheritance when lightning slams the vault shut; the young mistress and the mounter pry the latch with a copper tea scoop. |
+| Admissions Night (录取夜机房) | Ten minutes before results go live at midnight, lightning trips the data center's gas system; the board chair and the night engineer pry the release with a paper ruler. |
+| Plum-Rain Bookshop (梅雨旧书肆) | A month of plum rain, the river backs up and a bookcase pins the gallery; the cataloguer and the woodworker turn the leveling nut with a brass paperweight. |
+| Storytelling Hall (开书夜书场) | The audience waits for yesterday's cliffhanger when the storm drops the stage frieze; the pingtan singer and the carpenter lever the wood pin with a tuning wrench. |
+| Snowbound Sanatorium (雪夜疗养院) | A forest sanatorium snowed in, the pump room bursts with steam and the shutter jams; the night nurse and the boiler mechanic hammer the switch with a stethoscope. |
 
 </details>
 

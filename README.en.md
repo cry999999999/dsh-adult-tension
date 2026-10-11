@@ -40,7 +40,7 @@ Every world is open. Pick one and play.
 Don't see what you want? Just say "custom world" (`自定义世界`), name the year and the place, and one is made for you on the spot.
 
 <details>
-<summary><b>See all 135 worlds at a glance (click to open)</b></summary>
+<summary><b>See all 145 worlds at a glance (click to open)</b></summary>
 <br>
 
 | World | In one line |
@@ -180,6 +180,16 @@ Don't see what you want? Just say "custom world" (`自定义世界`), name the y
 | Plum-Rain Bookshop (梅雨旧书肆) | A month of plum rain, the river backs up and a bookcase pins the gallery; the cataloguer and the woodworker turn the leveling nut with a brass paperweight. |
 | Storytelling Hall (开书夜书场) | The audience waits for yesterday's cliffhanger when the storm drops the stage frieze; the pingtan singer and the carpenter lever the wood pin with a tuning wrench. |
 | Snowbound Sanatorium (雪夜疗养院) | A forest sanatorium snowed in, the pump room bursts with steam and the shutter jams; the night nurse and the boiler mechanic hammer the switch with a stethoscope. |
+| Snowline Temple (雪线神殿) | A temple open one season a year; the saint who may not be touched by mortals is trapped and must take a stonemason's hand to pry the frozen door. |
+| Typhoon Elevator (台风夜电梯) | Flatmates of three years ride a glass elevator home with storm supplies; it stalls mid-air and an umbrella tip pries the brake. |
+| Comeback Eve Studio (回归前夜演播厅) | Dress rehearsal the night before a comeback stage; a rig drops and the girl-group centre and the stage director lever the ratchet. |
+| Simulator Pod (测控中心模拟舱) | A top pilot who won't sign off despite perfect scores is trapped with the chief designer in a runaway motion simulator. |
+| Exiled Lodge (流亡行宫) | Third winter after the empire fell; the crown princess and the guard captain who carried her over the palace wall are sealed in by an avalanche. |
+| Vampire Crypt (血族地宫) | The last daughter of a fallen vampire house and a hunter-scholar caught on crypt stairs under a UV lattice. |
+| Sky Fortress Guild (飞空要塞公会) | The guild clerk whose stamp always lands half a beat late, trapped in a hanging hold with the airship mechanic who always queues at her desk. |
+| After the Broken Engagement (退婚后的温室) | A jilted duke's daughter, accused of poisoning, tends healing herbs before dawn; when the dome falls only the commoner apothecary is beside her. |
+| Storm Culvert (暴雨夜暗渠) | A 21-year-old chaebol chair's car is steered into a flood culvert; with ten centimetres of air she and her bodyguard kick the door open. |
+| Besieged Fortress (被围的要塞) | Day forty of the siege; the temple knight-commander and the armory engineer who talks back are sealed in a powder tunnel. |
 
 </details>
 

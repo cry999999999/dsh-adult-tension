@@ -64,6 +64,25 @@
   },
   {
    "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "当代近未来商业航天超高音速测控基地",
+   "id": "aerospace_simulator_pod_gauge_release",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "大跨度总装测试大厅悬空六自由度模拟飞行球舱内部",
+   "status": "released",
+   "summary": "商业航天测控基地的总装大厅里，全动模拟球舱一天要跑二十个小时。傲娇的首席女飞官连着三次在黑障模拟里拿了满分，还是不肯签字收工，非要再跑一遍。这一夜超高音速再入模拟过载，球舱主气锁高温膨胀抱死，控制回路烧毁，舱温直逼窒息线。女飞官与环控总师被困在座舱里，只能把女飞官那把硬质合金航图测角规插进泄压阀暗槽，合力旋转卸压。",
+   "title": "空天女飞官·商业航天测控中心模拟舱"
+  },
+  {
+   "content_tags": [
     "intimate",
     "workplace",
     "workplace_power",
@@ -105,6 +124,25 @@
    "status": "released",
    "summary": "深夜的地下炼药暗室里，古代共鸣秘药的琉璃导管突然爆裂。二十一岁的冷面首席魔导师吸入药雾，魔力回路过载高烧，金边制服崩开扣子，把纯银法杖塞进后辈搭档手里。龙鳞闸门自锁，四十分钟后灭魔秘银水灌顶——等药性退尽，那本丝绒日记里写的人，就站在面前。",
    "title": "禁书库炼药台：冷面首席的高热"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "极寒雪山绝顶古代石构神殿遗址",
+   "id": "alpine_sanctuary_dagger_rescue",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "雪山巅峰开阔露天平台与残破环形巨石祭坛死角",
+   "status": "released",
+   "summary": "海拔四千米的雪线神殿，一年只在夏至前后开山，朝圣者踩着冰阶上来求一句祝福。神殿的圣女守着一条戒律：不受凡人触碰。这一夜世纪暴雪压顶，环形巨石祭坛的重力天平偏心倾覆，石板压住了圣袍和通道。圣女与山下来修神殿的石匠被困在祭坛死角，只能用圣女随身的纯银仪式短匕，以十字护手撬脱调平滑槽。",
+   "title": "圣山雪线圣女·绝顶露天残破神殿"
   },
   {
    "content_tags": [
@@ -242,6 +280,25 @@
    "status": "released",
    "summary": "一张脸可以卖三次：银幕一次，街墙一次，舞池一次；演员、画师、大班和侦探都在算这张脸到底归谁。",
    "title": "月份牌"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "现代都市豪门商战与极端暴雨防汛时代",
+   "id": "chaebol_chairwoman_submerged_maybach",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "暴雨泄洪排涝地下暗渠受困防弹防暴豪华轿车座舱",
+   "status": "released",
+   "summary": "父亲猝逝后，二十一岁的长女接下了千亿财阀，董事会里叔叔一派虎视眈眈，只等新任董事长出一次错。暴雨夜从董事会回来的路上，防弹座驾被导进了地下泄洪暗渠，山洪倒灌，电路死火，浑水漫过车窗。董事长与父亲生前亲自挑选的贴身保镖被困在后座，残存空气只剩十公分，只能用董事长手袋里的钨钢安全锤尖锥别进三角窗泄压槽，平衡水压，合力踹开车门。",
+   "title": "千亿财阀女掌舵人·泄洪暗渠防弹座驾淹没"
   },
   {
    "content_tags": [
@@ -586,6 +643,25 @@
    "status": "released",
    "summary": "地下大迷宫突发地脉震荡引发大面积塌方，远征队被阻断于十层禁区。年满二十一岁的黑暗精灵女斥候为掩护侧翼皮甲破损、魔力回路逆流过载。青年调查官与女斥候退入荧光苔藓避难石室，外有魔兽搜寻，内无火种。学者布下同调法阵，调查官隔着护手扣住女斥候的手腕把魔火引入基岩；等魔纹褪尽、神志清明，种族戒备与心跳防线才在破晓前真正交锋。",
    "title": "遗迹石室：黑暗精灵斥候"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "当代沿海特大城市高层商住综合体",
+   "id": "elevator_umbrella_tip_brake_release",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "外挂全景双层观光玻璃电梯轿厢与百米高空井道",
+   "status": "released",
+   "summary": "沿海大城市的高层公寓里，两人合租了三年，冰箱上还贴着轮流倒垃圾的值日表。台风登陆这一夜，两人去楼下超市囤完泡面和蜡烛，搭外挂观光电梯回家，电涌一闪，轿厢在三十层半空失电悬停，安全钳咬死导轨。同困轿厢的还有大楼的电梯维保师傅，三人只能把室友那把长柄雨伞的实心钢伞尖插进检修孔，一点点旋松松闸螺母。",
+   "title": "温柔合租室友·观光玻璃电梯半空悬停"
   },
   {
    "content_tags": [
@@ -976,6 +1052,25 @@
    "status": "released",
    "summary": "S级讨伐任务遭遇深渊埋伏全灭，唯一的残存者被公会宪兵拖入地底暗室。三百万金币的违约赔偿协议拍在冷硬石案上，反魔导符文压制了体内所有魔力。天明鸡鸣前若凑不齐首期违约金，将被打上奴隶烙印送往魔晶矿坑；唯一的生路，是签下一份九死一生的深渊第十层绝密活体盗掘委托。",
    "title": "冒险者公会暗室：破产黑账与禁忌深渊委托"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "奇幻蒸汽魔导与飞空艇公会全盛时代",
+   "id": "guild_receptionist_vault_anchor_lock",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "边境公会悬空锚定转台与重型魔导绞盘底舱机房",
+   "status": "released",
+   "summary": "边境的飞空要塞里，公会大厅从早到晚挤满冒险者，柜台后那位温婉的总务长，三年来给每一张公会卡盖过章。这一夜高空魔导气流狂暴冲击，锚定转台被震脱主导轨，万钧钢缆咬死在偏心防坠棘爪上。总务长与飞空艇机械师被困在不足三平米的液压底舱，空气越来越少，只能用总务长随身的合金账务硬笔卡进棘爪咬合缝，合力撬下防脱卡扣。",
+   "title": "公会看板娘·飞空艇锚定悬空转台卡死"
   },
   {
    "content_tags": [],
@@ -1688,6 +1783,25 @@
   },
   {
    "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "近代欧洲帝国风雪避难所",
+   "id": "princess_lodge_avalanche_spur_lever",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "阿尔卑斯雪峰行宫古董收藏室暗门铅铸夹层",
+   "status": "released",
+   "summary": "帝国覆灭后的第三个冬天，流亡的长皇女带着最后一队近卫，躲在阿尔卑斯雪峰上的旧日行宫里，等一封永远来不及送到的复辟密信。这一夜万吨雪崩压顶，主电网切断，外廊坍塌，古董收藏室的铅包暗门导轨压弯咬死。长皇女与近卫侍卫长被困在暗门夹层，只能用长皇女骑兵马靴上的淬火马刺，卡进导轨槽孔，合力顶开偏心死扣。",
+   "title": "帝国长皇女·雪崩行宫古董收藏室暗门"
+  },
+  {
+   "content_tags": [
     "romance_light",
     "intimate",
     "coercion_theme",
@@ -1940,6 +2054,25 @@
   },
   {
    "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "中世纪冷兵器要塞防御与魔导火药战争时代",
+   "id": "silver_paladin_armory_fuse_race",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "要塞地下五十米玄武岩军械密库狭窄弹药转运检修坑道",
+   "status": "released",
+   "summary": "边境要塞被围的第四十天，圣殿派来的女骑士长守着最后一道城墙，每夜亲自登上城头点一遍名。这一夜敌军的投石机把火油弹砸进了地下军械库，导火索走火，万斤防爆钢闸轰然下坠咬死滑轨。骑士长与要塞的军械工学官被困在转运坑道里，引信的火光一寸寸逼近，只能用骑士长重剑的十字护手别进闸门的偏心棘爪，合力压断限位销，撬起钢闸。",
+   "title": "清冷银铠女骑士·要塞地下军械密库引信赛跑"
+  },
+  {
+   "content_tags": [
     "explicit",
     "coercion_theme",
     "violence",
@@ -1981,6 +2114,25 @@
    "status": "released",
    "summary": "暴风雪横扫极夜荒原，极地快车穿越无人冻土区。年满二十二岁的王牌女谍报员“夜莺”带着停火密码胶卷突围，闯进七号一等软卧，撞上年满二十一岁的中立国外交随员。宪兵队正挨个包厢查验夫妻证件，离七号只剩三节车厢。女特工收起枪，开口求一个陌生人陪自己演一场新婚夫妻——同裹一床毛毯、在砸门声里假装接吻，脚踝的枪套抵着对方小腿。戏是假的，心跳是真的，答不答应，由你。",
    "title": "极地快车包厢：冷酷女谍报员"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "当代广电传媒中心特大型综艺演播大厅",
+   "id": "stage_mic_pack_clip_ratchet_release",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "万人演播大厅挑高舞台区与倾斜电动升降T台死角",
+   "status": "released",
+   "summary": "回归打歌舞台的前一夜，广电大厦一号演播厅还在带妆彩排，台下只有经纪人和几块提前送到的应援灯牌。女团C位唱完最后一段副歌，顶上的喷淋水幕管路突然暴走，数吨积水灌满舞台，电动升降T台滑轮脱绳倾斜，卡死了C位的打歌舞鞋。C位与舞台机械总监被困在水幕深处，只能用无线耳麦腰包的钢背夹，逆向撬开托台的安全棘轮。",
+   "title": "国民初恋爱豆·大型演播厅水幕排练场"
   },
   {
    "content_tags": [
@@ -2309,6 +2461,25 @@
   },
   {
    "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "近现代哥特奇幻地下炼金避难所",
+   "id": "vampire_crypt_uv_barrier_scepter_lever",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "古老哥特地宫大理石石室与高能紫外线回廊死角",
+   "status": "released",
+   "summary": "哥特古堡的地宫里，没落的血族名门只剩下最后一位真祖千金，靠变卖祖传藏品和一杯杯红酒熬过漫长的白昼。来地宫考察的猎魔人学者，本该是血族的宿敌。这一夜防盗机关电涌误触，高能紫外线水银灯网强行亮起，断龙石下坠咬死通道。千金与猎魔人学者被困在石阶死角，只能用千金的纯银权杖，把尖棱卡进配电闸刀的搭扣，合力扳断断电。",
+   "title": "吸血鬼真祖千金·地宫紫外线熔断绝境"
+  },
+  {
+   "content_tags": [
     "intimate",
     "workplace",
     "workplace_power",
@@ -2349,6 +2520,25 @@
    "status": "released",
    "summary": "王位政变在黎明爆发，被构陷定罪的公爵千金被关押在地下深处的重水压死牢石厅。王城被围狱卒溃散，重型水压断头台牵引滑轮绳索断裂，巨大的平衡配重铁闸轰然砸落咬死牢门栅栏，地下暗河水位上涨，青年看守骑士与恶役千金在水淹重厅的绝境中展开硬核滑轮销轴机械破拆自救。",
    "title": "恶役千金·断头台前夜死牢"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "奇幻宫廷魔导工学与草药炼金时代",
+   "id": "villainess_greenhouse_barrier_collapse",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "皇家魔导晶石穹顶植栽园底层狭窄排水检修廊道",
+   "status": "released",
+   "summary": "被王太子当众退婚的第七天，满宫都在传公爵千金给圣女候补下过毒。没人知道，皇家植栽园里那几株救命的药草，是千金天不亮就来亲手照看的。这一夜地脉晶石过载，透光穹顶局部坍塌，倒下的花架压住了千金的拖尾礼裙。千金与平民出身的宫廷药剂师被困在排水夹道里，只能用千金随身的合金修枝重剪卡进梁销暗槽，合力撬起横梁、关掉泄汽阀。",
+   "title": "傲娇恶役千金·皇家晶石穹顶植栽园坍塌"
   },
   {
    "content_tags": [

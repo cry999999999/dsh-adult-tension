@@ -40,7 +40,7 @@ Every world is open. Pick one and play.
 Don't see what you want? Just say "custom world" (`自定义世界`), name the year and the place, and one is made for you on the spot.
 
 <details>
-<summary><b>See all 195 worlds at a glance (click to open)</b></summary>
+<summary><b>See all 211 worlds at a glance (click to open)</b></summary>
 <br>
 
 | World | In one line |
@@ -240,6 +240,22 @@ Don't see what you want? Just say "custom world" (`自定义世界`), name the y
 | Champagne Tower (世纪婚礼香槟塔) | A socialite MC is pranked into silver cuffs that snag the champagne tower's tassel as the director counts ten; a pearl hairpin slips the latch. |
 | Esports Curtain Call (电竞夺冠谢幕) | A sweet top streamer stands to bow and her headset cable winds her bell choker into the chair frame, twenty seconds before the close-up; a keycap puller opens the ring. |
 | Auto Show Splitter (车展导流板) | A cool supercar model shifts pose and her ankle chain locks into the concept car's splitter as the VP climbs up with champagne; her titanium heel tip pops the clip. |
+| ER Rail (急诊站滑轨) | A trainee ER nurse's white garter is bitten by the crash cart's damped rail, skirt hiked high, the old director's rounds eight meters off; a curved hemostat pries the spring. |
+| Street Studio (临街直播间) | A late-night radio host's platinum nipple chain jams in the mic boom's gear, fifteen seconds to air as the new producer opens the door; a steel hairpin pops the catch. |
+| Luo Shen Pavilion (水榭洛神) | The Luo Shen dance premieres on the water; an eave bell snarls the silver chain of her silk dudou as a VP climbs the zigzag bridge; a silver hairpin cuts the wire ring. |
+| Night Cooler (夜班冷柜) | A night-shift clerk's skirt and cat tail are pinned in the cooler's spring hinge as the inspector walks in five steps away; a box-cutter scraper levers the pawl. |
+| HKEX Bell (港交所敲钟) | An IB partner on the HKEX bell stage has her skirt torn by the big screen arm's clamp as the fund's vice chair climbs up; a presenter's battery cover flips the lock. |
+| Climate Vitrine (恒湿展柜) | A painting restorer's nipple-ring chain winds into the vitrine's rising glass hood as the foundation chair walks over; a horn mounting knife cuts the damper cord. |
+| Taiko Dojo (武道馆太鼓) | A corporate-league kendo captain's gi is wound into the great drum's hoist, the nipple bells under her armor about to ring; a shinai pin and rubber ring lever the spring. |
+| Pet Spa (宠物水疗舱) | A pet spa director's platinum chain hooks on the bath arm and her collar tears, a VIP client three meters away; round-tip steel shears lever the hook. |
+| Coming-of-Age Hall (明伦堂成人礼) | At an academy coming-of-age rite the lecturer's steel-ball clamps lock to the electromagnetic lectern, the old dean climbing up; an agarwood ruler breaks the field. |
+| Golden Hall (金色大厅) | A cellist's lost-bet chastity belt is caught in the endpin track as the old maestro raises the baton for a fifteen-second count; her bow's frog screw lifts the spring. |
+| Garden Water Stage (园林水景戏台) | A Kunqu ingenue's lost-bet nipple chain in her water sleeve hooks a mist arm, twenty seconds before the guest of honor arrives; a gilded fan's brass tip levers the pawl. |
+| Bund Pastry Bar (外滩甜品台) | A three-star pastry chef pulls a soufflé and the oven hinge bites the lace corset she lost a bet over, the head critic counting down; a sugar-art spatula pries the catch. |
+| Republic Library (民国藏书楼) | A rare-book librarian atop a five-meter bronze ladder has her silver collar chain caught in the roller, readers below and the old curator's steps closing in; a brass bookmark lifts the pawl. |
+| Net Anchor (沙排球网地锚) | A national beach volleyball hitter dives and her swimsuit cord, with the toy's tail she wore in secret, tangles in the net anchor as the umpire whistles; a ceramic blade cuts the line. |
+| Pink Diamond Finale (粉钻压轴) | A jeweler's own pink diamond closes the sale and the rotating plinth bites the gold chain she wears, thirty seconds to take the stage; her titanium loupe handle trips the switch. |
+| Festival Lift (万人盛典升降台) | A top idol dancer bows out as the stage lift sinks and its seal bites her white lace garter, thirty million streaming; a steel hairpin from her bow lifts the tongue. |
 
 </details>
 

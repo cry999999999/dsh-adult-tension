@@ -1,0 +1,2338 @@
+{
+ "background_cast": [
+  {
+   "adult_context": "便利店夜班调度主管年满二十七周岁，依法担任门店夜间安全负责人。",
+   "age_range": [
+    27,
+    27
+   ],
+   "function": "helper",
+   "gender": "male",
+   "id": "bg_night_supervisor_jiang",
+   "line": "冷链自检程序运转良好，店员专心清点鲜奶箱，通道入口由领班负责接待！",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "name": "阿凯",
+   "role": "夜班副领班"
+  },
+  {
+   "adult_context": "前台收银员年满二十五周岁，具备完整民事自立能力。",
+   "age_range": [
+    25,
+    25
+   ],
+   "function": "helper",
+   "gender": "female",
+   "id": "bg_cashier_wen_ruo_xi",
+   "line": "店员别慌，收银员把巨幅促销立牌全架在路口了，巡查督导被收银员拖在前台了，快用刮刀别开！",
+   "location_ids": [
+    "loc_cashier_counter_front_desk"
+   ],
+   "name": "小琪",
+   "role": "收银台值班联络员"
+  },
+  {
+   "adult_context": "商超冷链五金维保毕业，年满三十二周岁，持有特种机械维保执照。",
+   "age_range": [
+    32,
+    32
+   ],
+   "function": "helper",
+   "gender": "male",
+   "id": "bg_mechanic_du_tie_jun",
+   "line": "合页底板已经暗中托稳，店员用刮刀挑断卡爪的力矩角度极准！",
+   "location_ids": [
+    "loc_cooler_door_hydraulic_hinge_alcove"
+   ],
+   "name": "阿明",
+   "role": "冷库巡检特约工匠"
+  },
+  {
+   "adult_context": "新闻传播毕业，年满二十六周岁，享有完整法定民事行为权利。",
+   "age_range": [
+    26,
+    26
+   ],
+   "function": "witness",
+   "gender": "female",
+   "id": "bg_street_vlogger_ye_xiao_zhou",
+   "line": "云台光轴已经全部抬高对准天花板，通道绝对安全，严禁任何人打扰店员理货！",
+   "location_ids": [
+    "loc_front_glass_door_entrance"
+   ],
+   "name": "小蓝",
+   "role": "青年自媒体摄像记者"
+  },
+  {
+   "adult_context": "商圈长跑协会成年队长年满三十周岁，依法参加健康晨昏锻炼。",
+   "age_range": [
+    30,
+    30
+   ],
+   "function": "obstacle",
+   "gender": "male",
+   "id": "bg_campus_night_runner_lead",
+   "line": "跑友们在外面歇一下，便利店灯火通明，进去买几瓶电解质水补补水！",
+   "location_ids": [
+    "loc_front_glass_door_entrance"
+   ],
+   "name": "赵队长",
+   "role": "夜跑队伍领队代表"
+  },
+  {
+   "adult_context": "商圈督导巡查官年满三十周岁整，具备完整法定侵权诉讼抗辩能力。",
+   "age_range": [
+    30,
+    30
+   ],
+   "function": "rumor_source",
+   "gender": "male",
+   "id": "bg_supervisor_xue_tian_cheng",
+   "line": "督导说了，冷柜前那个店员趴着半天不起来，必须进去当场查清楚。",
+   "location_ids": [
+    "loc_front_glass_door_entrance"
+   ],
+   "name": "阿彪",
+   "role": "督导的随行助理"
+  }
+ ],
+ "cast_combos": [
+  {
+   "chemistry": "高冷领班在对讲机里的沉稳倒数，化作店员指尖刮刀破拆的定海神针；店员后腰紧绷的每一下微颤，皆牵动着领班心头最深沉的守护涟漪。",
+   "id": "combo_clerk_and_supervisor_trust",
+   "identity_ids": [],
+   "player_positions": [
+    "high",
+    "equal",
+    "low"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "convenience_clerk_an_xiao_nian",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "在通道转角密切注视店员刮刀破拆进展并协同控制照明屏障。",
+     "stage": "testing"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 4
+     },
+     "b": "night_supervisor_jiang_lin_chuan",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 4
+     },
+     "reason": "同为夜班运行骨干保持绝对的战术配合与信任。",
+     "stage": "familiar"
+    },
+    {
+     "a": "convenience_clerk_an_xiao_nian",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "night_supervisor_jiang_lin_chuan",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "通宵值班生死相托的顶尖搭档，眼神呼应便明进退。",
+     "stage": "stranger"
+    }
+   ],
+   "slots": [
+    "convenience_clerk_an_xiao_nian",
+    "night_supervisor_jiang_lin_chuan"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "确保冷链设备完好无损且纯情店员完美脱困迎检。",
+    "limit_gap": "进店迎宾叮咚脆响读秒与后腰金属插销咬死剧痛的极限拉锯",
+    "meeting_reason": "凌晨两点的补货时间，夜班领班在仓库门口清点鲜奶箱，喊店员先补冷柜最下面一层。",
+    "resource_gap": "调度主管对门店智能照明与监控遮蔽的绝对调配权与冰柜合页缝隙两毫米微观物理自救空间的巨大反差"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_cooler_hinge_tail_snag_jam",
+    "eng_supervisor_five_step_arrival"
+   ]
+  },
+  {
+   "chemistry": "闺蜜特大号咖啡展板的大气阻隔与店员沉着自救的侧颜交织，空气中充斥着绝处逢生的姐妹默契。",
+   "id": "combo_clerk_and_cashier_shield",
+   "identity_ids": [],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "convenience_clerk_an_xiao_nian",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "协助掩护店员自救并严密监控玄关督导动向。",
+     "stage": "testing"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 4
+     },
+     "b": "cashier_wen_ruo_xi",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 4
+     },
+     "reason": "配合前台收银员调整咖啡展板角度掩盖通道微弱金属别撬动静。",
+     "stage": "familiar"
+    },
+    {
+     "a": "convenience_clerk_an_xiao_nian",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "cashier_wen_ruo_xi",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "同窗同寝的深厚姐妹情谊在突发危机考验下的绝对信任与生死依靠。",
+     "stage": "stranger"
+    }
+   ],
+   "slots": [
+    "convenience_clerk_an_xiao_nian",
+    "cashier_wen_ruo_xi"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "在不惊动门外过路年轻人的前提下悄无声息消弭这场社死风暴。",
+    "limit_gap": "商圈督导登堂入室的步步紧逼与受困店员绝境中的超常冷静应变",
+    "meeting_reason": "收银员从前台探出头，看见店员的裙子被冷柜合页扯住，抱起促销立牌就往通道口挡。",
+    "resource_gap": "前台展板与热咖啡的正面拦截调动与工牌钛合金刮刀的微观力学破拆自救"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_skirt_lift_modesty_collapse",
+    "eng_cooler_hinge_tail_snag_jam"
+   ]
+  },
+  {
+   "chemistry": "冷链技师在侧壁死角以手掌稳稳托住合页底板，店员手腕运力刮刀精准下压别开卡爪，两人形成严丝合缝的力学平衡默契。",
+   "id": "combo_mechanic_and_clerk_support",
+   "identity_ids": [],
+   "player_positions": [
+    "high",
+    "equal",
+    "low"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "convenience_clerk_an_xiao_nian",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "在机械主管托住门轴下协同店员完成微观力矩解脱。",
+     "stage": "testing"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 4
+     },
+     "b": "mechanic_du_tie_jun",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 4
+     },
+     "reason": "同为保障店内冷链设备平稳运行的技术骨干保持高度专业默契。",
+     "stage": "familiar"
+    },
+    {
+     "a": "convenience_clerk_an_xiao_nian",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "mechanic_du_tie_jun",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "对工程师关键时刻在暗处稳住合页底板心怀深深谢意。",
+     "stage": "stranger"
+    }
+   ],
+   "slots": [
+    "convenience_clerk_an_xiao_nian",
+    "mechanic_du_tie_jun"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "在合页弹簧发生结构崩脱前彻底切断束缚。",
+    "limit_gap": "合页弹簧八公斤抗剪极限与钛合金刮刀三牛顿微撬力的精密抗衡",
+    "meeting_reason": "冷链维修技师来做夜间巡检，一眼看出合页卡爪锁死了，蹲下来暗中托住柜门。",
+    "resource_gap": "机械主管对重型冷柜门轴受力的绝对把控与纯情姑娘后腰死锁的微观盲拆"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_cooler_hinge_tail_snag_jam",
+    "eng_skirt_lift_modesty_collapse"
+   ]
+  },
+  {
+   "chemistry": "巡查督导每迈出一步发出的皮鞋声，都如同踏在店员命悬一线的神经末梢上，逼迫店员加快刮刀刃角向上微别的频率。",
+   "id": "combo_clerk_and_supervisor_clash",
+   "identity_ids": [],
+   "player_positions": [
+    "low",
+    "equal"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "convenience_clerk_an_xiao_nian",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "严密警戒巡查督导动线并配合博主实施机位角度拦截。",
+     "stage": "testing"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 2
+     },
+     "b": "supervisor_xue_tian_cheng",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 2
+     },
+     "reason": "依规提醒领导注意脚下防滑地面防止外人违规擅闯理货区。",
+     "stage": "familiar"
+    },
+    {
+     "a": "convenience_clerk_an_xiao_nian",
+     "a_to_b": {
+      "tension": 5,
+      "trust": 1
+     },
+     "b": "supervisor_xue_tian_cheng",
+     "b_to_a": {
+      "tension": 5,
+      "trust": 1
+     },
+     "reason": "高度戒备厌恶，誓死捍卫职业尊严与身体名誉不受冒犯。",
+     "stage": "stranger"
+    }
+   ],
+   "slots": [
+    "convenience_clerk_an_xiao_nian",
+    "supervisor_xue_tian_cheng"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "在督导完全踏入通道前彻底切断猫尾底座与阻尼卡爪的咬合连接。",
+    "limit_gap": "大步逼近的脚步声与百褶短裙后摆濒临撕裂的极端社死风险",
+    "meeting_reason": "商圈巡查督导推开感应门，说要抽查冷链通道的补货规范。",
+    "resource_gap": "商圈督导肆无忌惮的巡查特权与纯情店员动弹不得的被动拘束绝境"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_window_student_gaze_dread",
+    "eng_skirt_lift_modesty_collapse"
+   ]
+  },
+  {
+   "chemistry": "工科衬衫的高冷主管与傲慢资方二世祖在狭窄通道入口形成的如冰对峙，以流程铁壁硬生生截断了窥探脚步。",
+   "id": "combo_supervisor_vs_director_clash",
+   "identity_ids": [],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 5,
+      "trust": 1
+     },
+     "b": "supervisor_xue_tian_cheng",
+     "b_to_a": {
+      "tension": 5,
+      "trust": 1
+     },
+     "reason": "配合主管果断对擅入者下达理货安全警示并出具自检记录。",
+     "stage": "testing"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 4
+     },
+     "b": "night_supervisor_jiang_lin_chuan",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 4
+     },
+     "reason": "坚决执行主管防线指令构筑坚不可摧的团队屏障。",
+     "stage": "familiar"
+    },
+    {
+     "a": "supervisor_xue_tian_cheng",
+     "a_to_b": {
+      "tension": 5,
+      "trust": 1
+     },
+     "b": "night_supervisor_jiang_lin_chuan",
+     "b_to_a": {
+      "tension": 5,
+      "trust": 1
+     },
+     "reason": "傲慢二世祖遭遇冷面技术骨干铁腕后的羞怒与忌惮。",
+     "stage": "stranger"
+    }
+   ],
+   "slots": [
+    "supervisor_xue_tian_cheng",
+    "night_supervisor_jiang_lin_chuan"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "将督导死死挡在通道口为店员筑牢最后两米绝对体面防线。",
+    "limit_gap": "维护门店二十四小时稳定营业秩序与抵御无关人员违规侵扰的严正交锋",
+    "meeting_reason": "夜班领班把督导引到收银台核对冷链记录，替店员争出半分钟。",
+    "resource_gap": "现场运行调度绝对安全掌控权与二世祖资本特权的正面碰撞"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_window_student_gaze_dread",
+    "eng_supervisor_five_step_arrival"
+   ]
+  },
+  {
+   "chemistry": "在通宵便利店方寸极限空间内，店员与值班团队呼吸相闻，以超越常理的沉稳机智共同谱写绝处逢生的破拆传奇。",
+   "id": "combo_clerk_and_player_rescue",
+   "identity_ids": [],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 4
+     },
+     "b": "convenience_clerk_an_xiao_nian",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "在极度危机中以无声默契结下的患难真诚之约。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "convenience_clerk_an_xiao_nian"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "在督导完全踏入通道的刹那助店员重获自由从容迎检。",
+    "limit_gap": "全玻璃落地窗注视下的绝对隐秘自救要求不得产生半丝突兀动静",
+    "meeting_reason": "凌晨四点没有客人，领班和店员蹲在门口台阶上，分一份关东煮看天慢慢亮起来。",
+    "resource_gap": "店员受制于铰链死锁而值班团队拥有全套照明与陈列物料遮掩资源"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "eng_cooler_hinge_tail_snag_jam",
+    "eng_skirt_lift_modesty_collapse"
+   ]
+  }
+ ],
+ "channels": [
+  {
+   "fidelity": "distorted",
+   "id": "ch_convenience_store_ambient_pa_sound",
+   "reach": "覆盖货架走廊与全通透落地玻璃幕墙内外，清晰播放叮咚迎宾提示音与轻柔日系旋律",
+   "text": "二十四小时便利店全域轻音乐背景广播系统"
+  },
+  {
+   "fidelity": "exact",
+   "id": "ch_shift_crew_internal_talkback_line",
+   "reach": "调度主管领班手持机与店员领夹耳麦之间的毫秒级加密指令链路",
+   "text": "便利店值班组专属数字降噪微型对讲专网"
+  }
+ ],
+ "character_templates": [
+  {
+   "adult_context": "数字媒体专业毕业一年，白天接插画单，夜里在通宵便利店值夜班，穿什么、玩什么、跟谁亲近都由本人拿主意。",
+   "age_range": [
+    23,
+    25
+   ],
+   "appearance_options": [
+    "身穿蓝白拼色纯棉便利店短款工装围裙配纯白百褶短裙，乌黑齐肩短发别着草莓发夹，面容娇憨纯欲，两颊带有天然紧致微婴儿肥与饱满水润胶原蛋白的反差娇颜，白皙双腿裹着纯白棉线短袜。",
+    "工装百褶裙后摆被重型冷柜阻尼铰链死死咬住扯起，露出一截雪白纤细的大腿根部与紧绷的贴身安全裤边沿；上身被迫大幅度前倾趴在饮料箱上，整个人紧绷微颤却拼死咬紧下唇维持镇定。"
+   ],
+   "decision": {
+    "avoids": [
+     "盲目蛮力撕破百褶裙",
+     "在便利店通道发出难堪尖叫",
+     "被巡查督导开除通报"
+    ],
+    "contrast": "平时看似软萌娇憨的小白兔学妹，面对灭顶走光危机时指尖却展现出极其惊人的机械冷酷与微观撬锁魄力。",
+    "core_value": "誓死捍卫大学城纯情姑娘的尊严与名誉，绝不向任何人求救，纯靠过人机械智慧自救脱困。",
+    "goal_options": [
+     "在督导跨入通道前用工号牌刮刀刃角别开合页卡爪脱钩并迅速拉拢裙摆",
+     "趴在饮料箱上假装清点库存条码绝不让玄关脚步声察觉后腰死锁"
+    ],
+    "never": [
+     "放弃自尊向轻浮纨绔妥协",
+     "让纯洁圣洁的名誉蒙受恶俗非议"
+    ],
+    "prefers": [
+     "绝对精密的微观物理自救",
+     "体面规范的服务礼仪",
+     "克制深沉的无声守护"
+    ],
+    "pressure_responses": {
+     "breaking": "在气阀泄压瞬间反向推脱横臂抱箍并接应宋婉儿递来的磁吸扣迅速扣好前襟",
+     "high": "在导播推流读秒长鸣刹那同搭档一同垂直下压背夹克服八百牛顶力",
+     "low": "双手死死按在讲台木质边缘以极低气声下达排障破拆指令掩饰内心惊涛骇浪",
+     "mid": "忍受胸衣金属骨架勒紧压迫紧贴讲台内侧配合搭档调整翻页笔背夹插入角度"
+    },
+    "relationship_stance": "对熟客笑得甜，对夜班领班却总是嘴硬；凌晨四点最困的时候，会偷偷把关东煮里最大的萝卜留给领班。",
+    "withdrawal": "双手按在饮料纸箱边缘稳住重心，侧颜对着货架假装核对保质期，反手从工牌极自然地拔出钛合金刮刀。"
+   },
+   "gender": "female",
+   "gender_reason": "通宵便利店的纯欲夜班店员，白天是插画师。",
+   "id": "convenience_clerk_an_xiao_nian",
+   "identity": {
+    "authority": "冷藏商品保质期核验权与货架陈列规范自主权。",
+    "exposure": "私下配合社团穿戴的毛绒猫尾一旦在全玻璃便利店大庭广众下曝光，纯情名誉将瞬间粉碎沦为恶俗话题。",
+    "hidden": "别在胸前工牌内侧的拆箱刮刀采用两毫米淬火航空钛合金工艺，头部微翘带有平头硬角，实为撬开铰链阻尼卡爪的强力微观杠杆。",
+    "limits": [
+     "百褶裙后摆被冷柜机械铰链死死咬住无法挺直站立",
+     "严禁在落地玻璃窗前与进店巡查督导面前露出私密物件"
+    ],
+    "obligations": [
+     "维系通宵便利店纯情优秀店员的体面声誉",
+     "十秒内解除死锁抚平百褶裙迎客"
+    ],
+    "resources": [
+     "工号牌夹层内置特制航空钛合金极硬拆箱刮刀",
+     "娇小玲珑且柔韧性极佳的芭蕾基本功身形"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "在危难之际以宽阔肩背恰到好处挡住落地窗视线的沉稳男子气概",
+     "彼此心照不宣的眼神默契"
+    ],
+    "boundaries": [
+     "严禁外人触碰工装百褶裙摆与私密后腰防走光衬底"
+    ],
+    "desire_range": [
+     2,
+     4
+    ],
+    "desired_position": "成为全商圈最受尊重与喜爱的纯情自立模范女性。",
+    "dislikes": [
+     "借巡查之名居心叵测挑剔的傲慢二世祖",
+     "恶俗无下限的偷窥视线",
+     "轻浮油腻之辈"
+    ],
+    "expression": "粉唇微咬泛起倔强红晕，眼神温润平视货架，右手食指与拇指娴熟反握钛合金刮刀向下探入撬动铰链卡爪。",
+    "likes": [
+     "沉稳可靠的幕后默默相助",
+     "懂分寸知轻重的绅士举动",
+     "纯粹坦荡的同门战友情"
+    ],
+    "preconditions": [
+     "冷柜死锁顺利化解且巡查考核满分通过",
+     "两人都清醒，心意出于自己，不是绝境里的依赖"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "通宵便利店纯欲夜班店员",
+   "schedule": [
+    {
+     "from": 120,
+     "location_id": "loc_convenience_cooler_aisle_center",
+     "to": 130
+    },
+    {
+     "from": 130,
+     "location_id": "loc_convenience_cooler_aisle_center",
+     "to": 135
+    },
+    {
+     "from": 135,
+     "location_id": "loc_convenience_cooler_aisle_center",
+     "to": 140
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "后臀雪白肌肤被冷柜溢出冷气激起层层鸡皮疙瘩且单手盲操指尖微酸。",
+      "option": "反握工号牌内置钛合金刮刀以铰链外缘为支点施加三牛顿力矩撬开缓冲卡爪脱钩脱险。"
+     },
+     {
+      "cost": "突然调暗灯光可能引来督导关于店内照明合规性的当场扣分质询。",
+      "option": "向夜班主管投去求助眼神借关闭通道射灯调暗光线争取缓冲时间。"
+     }
+    ],
+    "pressure": "商圈督导巡查督导已推开感应门踏入玄关仅剩五步，百褶裙受拉掀起大半，冷柜开门蜂鸣倒数进入最后十秒。",
+    "trigger": "弯腰将整箱鲜奶推入冷柜底盘时毛绒猫尾金属插销滑入重型回弹铰链咬合齿缝死锁。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "voices": {
+    "inner": "猫尾底座被重型冰柜合页死死咬住了，督导推门进来了，钛合金刮刀只要探进卡爪缝隙向上一别就能弹开！",
+    "surface": "欢迎光临，今日鲜奶与热饮均已补齐，请问需要加热饭团吗？"
+   }
+  },
+  {
+   "adult_context": "物流工程专业毕业，在连锁便利店做了六年，现在是这家旗舰店的夜班领班，具备完全民事行为能力。",
+   "age_range": [
+    27,
+    30
+   ],
+   "appearance_options": [
+    "身穿藏青色利落工装衬衫配黑框平光眼镜，身形高大挺拔，下颌线刚毅沉稳，眼神睿智机敏，周身透着工科生的严谨从容。",
+    "手持无线手持终端，立于冷柜通道转角处，目光深邃沉静地注视着全场每一个微小动向，散发着让人心安的可靠气场。"
+   ],
+   "decision": {
+    "avoids": [
+     "任何粗暴失控的营业翻车事故",
+     "轻浮纨绔对女性店员的恶意刁难",
+     "推诿扯皮"
+    ],
+    "contrast": "平时看似少言寡语的高冷学长，在学妹遭遇绝境时展现出的战术掩护却极尽周密果决。",
+    "core_value": "以极度严谨的工科调度捍卫团队安全，誓死守护单纯善良的小学妹不受半点委屈。",
+    "goal_options": [
+     "以递交本周补货单为由大步横跨在通道入口处截停督导巡查督导的步伐",
+     "巧妙按动调光手柄将冷柜通道顶灯切换为柔和漫反射护眼模式降低通透反光"
+    ],
+    "never": [
+     "坐视小学妹在公众前出丑受辱",
+     "对违规滥权的官威妥协退让"
+    ],
+    "prefers": [
+     "分毫不差的流程控制",
+     "临危不乱的机械解构",
+     "克制深沉的深情守护"
+    ],
+    "pressure_responses": {
+     "breaking": "在顾冷霜清冷发声瞬间停住脚步退回侧幕维持同僚体面",
+     "high": "迈步登上红地毯台阶准备直接切入讲台中央核心演讲区",
+     "low": "在对讲机中平稳催促台前人员汇报讲台升降测试状态",
+     "mid": "迈步逼近侧翼台阶手持备用麦克风大声询问会长是否身体不适"
+    },
+    "relationship_stance": "排班表上永远把自己和店员排在同一个夜班，嘴上说是人手不够。",
+    "withdrawal": "单手插兜从容立于通道中线，用极度冷峻威严的目光平视进店督导，言辞滴水不漏掌控主动权。"
+   },
+   "gender": "male",
+   "gender_reason": "通宵便利店的夜班领班，管排班、冷链和门店安全。",
+   "id": "night_supervisor_jiang_lin_chuan",
+   "identity": {
+    "authority": "店内照明智能调节权与冷链机组紧急停机叫停权。",
+    "exposure": "若巡查中被抓到店内安全事故将承担取消年度优秀店长评选资格处分。",
+    "hidden": "早已在通道高位广角镜中察觉店员下装受困险情，果断大步迈出以宽阔身躯挡住督导直视通道的视线。",
+    "limits": [
+     "严禁在顾客进店时公然违规遮挡闭路监控探头",
+     "不得在营业期间擅自离开岗位"
+    ],
+    "obligations": [
+     "确保价值数十万元高端冷链资产平稳运转",
+     "捍卫夜班团队全员职业安全与体面"
+    ],
+    "resources": [
+     "门店通道高位漫反射照明控制器",
+     "智能冷柜门锁远控发射器"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "娇弱外表下运用钛合金刮刀微观撬开合页的极客反差魅力",
+     "坚毅清纯的目光"
+    ],
+    "boundaries": [
+     "严守职场边界，在非危急时刻保持克制得体的守护距离"
+    ],
+    "desire_range": [
+     2,
+     4
+    ],
+    "desired_position": "成为店员身后最坚实可靠的硬核护航者。",
+    "dislikes": [
+     "狗仗人势的纨绔二世祖",
+     "借工作之名行骚扰之实的小人",
+     "自以为是的浮躁之辈"
+    ],
+    "expression": "自然上前一步用高大身躯形成天然视线屏障，同时平稳开口：“薛督导来得正好，夜班冷链温控记录正准备向汇报。”",
+    "likes": [
+     "店员纯情清澈的娇憨笑容",
+     "在危急时刻展现出的惊人自救智慧",
+     "心领神会的默契配合"
+    ],
+    "preconditions": [
+     "合页死锁彻底解除且夜巡考核拿到最高评级",
+     "对方点了头，出于本心"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "便利店夜班调度领班",
+   "schedule": [
+    {
+     "from": 120,
+     "location_id": "loc_convenience_cooler_aisle_center",
+     "to": 130
+    },
+    {
+     "from": 130,
+     "location_id": "loc_front_glass_door_entrance",
+     "to": 135
+    },
+    {
+     "from": 135,
+     "location_id": "loc_convenience_cooler_aisle_center",
+     "to": 140
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "可能被巡查督导借题发挥批评阻挡领导检查视线。",
+      "option": "手持补货平板大步跨至通道转角以汇报冷链温控为由截停巡查督导。"
+     },
+     {
+      "cost": "轻微灯光变动可能引来督导关于照明合规的口头质询。",
+      "option": "通过智能面板切断通道直射聚光灯切换至漫射模式弱化反光曝光。"
+     }
+    ],
+    "pressure": "商圈督导巡查督导手持巡检仪昂首跨入玄关仅剩五步，全景落地窗外人流穿梭。",
+    "trigger": "巡视探头捕捉到冷柜回弹门反常悬停夹角，广角镜反射出店员下装受拉紧绷险境。"
+   },
+   "tags": [],
+   "voices": {
+    "inner": "店员的裙摆被重型合页卡住了，督导只差五步，{npc.name}得用送检表挡在路口，帮店员争取十秒！",
+    "surface": "系统温控正常，冷藏柜已进入深夜化霜预备程序，各通道状态良好。"
+   }
+  },
+  {
+   "adult_context": "机械电子工程毕业，年满二十八周岁整，持有国家特种设备检验上岗证，负责商圈制冷机组日常巡修。",
+   "age_range": [
+    28,
+    31
+   ],
+   "appearance_options": [
+    "身穿带有深蓝工装反光条的维保连体服，身姿粗壮魁梧，腰间佩戴专业五金工具快拔套，眼神质朴沉稳如山。",
+    "半蹲在冷柜侧翼电控箱旁，目光专注地审视着立式冷柜重型阻尼合页的受力应力分布与卡爪抗剪极限。"
+   ],
+   "decision": {
+    "avoids": [
+     "蛮力拉扯损坏合页轴心",
+     "设备失修引发安全事故",
+     "轻浮喧闹"
+    ],
+    "contrast": "外表憨厚硬朗，关键时刻对合页力道承托与卡爪间隙的微调却极尽大师级精微。",
+    "core_value": "恪守工匠精神与机械精准，以过硬技术守护每一台冷链设备的平稳运转。",
+    "goal_options": [
+     "在冷柜侧后方暗处用手掌稳住合页底板协助吸收刮刀撬动下压力矩",
+     "借检查冷柜防踢脚线为由半蹲在通道外侧巧妙分担部分斜向视线"
+    ],
+    "never": [
+     "坐视设备故障危及人身安全",
+     "在突发险情面前临阵退缩"
+    ],
+    "prefers": [
+     "分毫不差的机械结构",
+     "利落高效的自救破拆",
+     "沉稳严谨的技术协作"
+    ],
+    "pressure_responses": {
+     "breaking": "看到顾冷霜完成暗扣闭合瞬间果断下推T杆完成神级切镜",
+     "high": "在团委催促推流指令下强行插入两秒礼堂全景空镜头过渡",
+     "low": "在耳麦中短促播报推流倒计时并督促台前清场",
+     "mid": "发现特写画面纽扣脱落异样时右手悬停在T型推杆上暂缓切镜"
+    },
+    "relationship_stance": "对店员机敏沉稳的力学解构由衷佩服，对二世祖巡查督导的官僚作风充满防备。",
+    "withdrawal": "单手持润滑剂沉稳立于冷柜侧壁盲区，目光如炬专注关注合页微观形变。"
+   },
+   "gender": "male",
+   "gender_reason": "商超冷链五金机械成年维保技师由年满二十八周岁成年男性担任",
+   "id": "mechanic_du_tie_jun",
+   "identity": {
+    "authority": "冷柜机械构件紧急检修权与铰链阻尼系数调校权。",
+    "exposure": "若因五金卡滞导致店员受伤将面临维保公司通报扣减评级。",
+    "hidden": "早已看出店员正运用刮刀微翘刃角以杠杆原理自救，暗中借巡检侧箱之名用手掌在侧后方稳住合页底板防晃。",
+    "limits": [
+     "严禁在营业补货高峰期公然拆卸冷柜主承重门轴",
+     "不得发出剧烈金属敲击噪音"
+    ],
+    "obligations": [
+     "确保整排冷柜自锁密封阻尼零故障运行",
+     "杜绝合页卡死引发玻璃门脱落事故"
+    ],
+    "resources": [
+     "合页轴承专用防锈速效喷雾",
+     "扁平加厚硬质碳钢撬针"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "外表柔弱甜美却能以小巧刮刀精准破拆重型合页的极客硬核魅力",
+     "清澈坚毅的神采"
+    ],
+    "boundaries": [
+     "恪守冷链维保人员与前台店员之间的专业安全操作边界"
+    ],
+    "desire_range": [
+     1,
+     2
+    ],
+    "desired_position": "默默构筑冷链设备万无一失的坚实机械后盾。",
+    "dislikes": [
+     "缺乏常识乱踢冷柜门的傲慢家伙",
+     "自以为是的纨绔子弟",
+     "浮躁推诿之徒"
+    ],
+    "expression": "在侧壁阴影处轻轻将手掌贴在合页固定架边缘，以无声动作承受下压支点冲击力。",
+    "likes": [
+     "临危不乱懂机械受力的聪慧女生",
+     "从容冷静的破拆自救",
+     "纯粹坦率的技术切磋"
+    ],
+    "preconditions": [
+     "冷柜合页卡滞死锁警报彻底解除"
+    ],
+    "self_control_range": [
+     4,
+     5
+    ]
+   },
+   "public_role": "商超制冷设备机电技师",
+   "schedule": [
+    {
+     "from": 120,
+     "location_id": "loc_cooler_door_hydraulic_hinge_alcove",
+     "to": 130
+    },
+    {
+     "from": 130,
+     "location_id": "loc_cooler_door_hydraulic_hinge_alcove",
+     "to": 135
+    },
+    {
+     "from": 135,
+     "location_id": "loc_convenience_cooler_aisle_center",
+     "to": 140
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "可能被进店督导抓到未佩戴防尘帽的微弱操作瑕疵。",
+      "option": "手持润滑喷雾半跪于侧后方假装检修实则用手掌托住合页底板分担撬动力矩。"
+     },
+     {
+      "cost": "需要维保人员承担擅自介入店面接待流程的纪律质询风险。",
+      "option": "站在冷柜通道斜角借巡视之名用健硕身躯阻挡外场视线。"
+     }
+    ],
+    "pressure": "一旦合页阻尼在受力中彻底崩裂断开，重达八十公斤双层中空玻璃门可能反向弹脱砸落。",
+    "trigger": "门轴张力感应器发出轻微阻尼过载蜂鸣，显示合页卡爪遭遇异常外力嵌顿。"
+   },
+   "tags": [],
+   "voices": {
+    "inner": "合页缓冲卡爪被店员用刮刀精准顶住受力点了，{npc.name}在暗处顶住门轴防止门体下坠！",
+    "surface": "立式冷柜二号门阻尼弹簧处于标准弹性区间，请勿暴力冲撞门体。"
+   }
+  },
+  {
+   "adult_context": "国际经济与贸易专业毕业，年满三十二周岁整，享有完整法定自主行为资格，担任通宵便利店前台收银员兼店员挚友。",
+   "age_range": [
+    32,
+    35
+   ],
+   "appearance_options": [
+    "身穿同款蓝白拼色工装围裙，内衬天青色纯棉长袖衬衫，高马尾利落甩动，容貌清丽温婉，双眸机敏灵动透着年轻人的蓬勃朝气。",
+    "挺拔立于收银台前，眼神敏锐察觉冷饮柜通道异样，果断单手举起特大号咖啡促销立牌，从容调整步法构筑视线盲区。"
+   ],
+   "decision": {
+    "avoids": [
+     "现场走光翻车沦为谈资",
+     "好闺蜜在轻浮领导前受辱",
+     "被恶俗舆论大肆传播"
+    ],
+    "contrast": "平时看似文静甜美的邻家女孩，面对突发危机时瞬间展现出极强的情商控场魄力与临场应变。",
+    "core_value": "誓死为店员打好掩护，以高超情商与机敏反应为闺蜜争取脱困黄金时间。",
+    "goal_options": [
+     "以热饮新品试饮为由双手端起热咖啡热情迎上前阻断督导直扑通道动线",
+     "迅速调转收银台特大号立牌角度恰到好处遮蔽落地大玻璃对准通道的视线"
+    ],
+    "never": [
+     "在危机面前退缩自保",
+     "出卖同门姐妹个人名誉与尊严"
+    ],
+    "prefers": [
+     "天衣无缝的姐妹配合",
+     "润物无声的巧妙解围",
+     "体面得体的职场风范"
+    ],
+    "pressure_responses": {
+     "breaking": "在讲台侧后方用红丝绒托盘斜立遮挡光线以极快手法递入暗扣",
+     "high": "迈开优雅端庄的礼仪步伐抢在陆晨舟之前从侧翼台阶移步登台",
+     "low": "在侧幕边缘端正托盘平稳呼吸密切注视讲台前襟状态",
+     "mid": "发现纽扣崩落瞬间悄悄从夹层扣出磁吸扣捏在掌心手汗中"
+    },
+    "relationship_stance": "对店员充满姐妹深情与由衷爱护，对巡查督导的官威做派充满戒备与周旋巧劲。",
+    "withdrawal": "面带春风般灿烂笑容立于通道转角处，双手交叠于腹前呈现无可挑剔的迎宾规范姿态。"
+   },
+   "gender": "female",
+   "gender_reason": "便利店前台收银结算搭档由年满三十二周岁女性担任",
+   "id": "cashier_wen_ruo_xi",
+   "identity": {
+    "authority": "前台进店迎宾礼仪引导权与收银台促销物料调配权。",
+    "exposure": "若前台出现收款漏洞或走光违纪将面临商圈连带通报批评。",
+    "hidden": "正是自己刚才拜托店员帮忙搬最后一箱鲜奶，此时愧疚万分，正以极度热情的咖啡试饮推荐主动迎向巡查督导。",
+    "limits": [
+     "严禁无故擅离收银结算操作台超过一分钟",
+     "不得与进店督导发生言语顶撞"
+    ],
+    "obligations": [
+     "维系前台收银台账分毫不差",
+     "协同守护闺蜜搭档的职业安全与尊严"
+    ],
+    "resources": [
+     "大幅面落地式促销宣传板",
+     "便携式收银台手持扫码终端"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "店员在绝境中单手盲操刮刀自救的非凡魄力",
+     "纯洁无瑕的真挚眼神"
+    ],
+    "boundaries": [
+     "誓死捍卫好闺蜜的体面与人格尊严不受侵害"
+    ],
+    "desire_range": [
+     1,
+     3
+    ],
+    "desired_position": "成为店员身边最值得托付后背的坚实闺蜜战友。",
+    "dislikes": [
+     "借端茶之名居心叵测揩油的傲慢纨绔",
+     "钻营下三路的偷窥狂",
+     "挑拨离间之辈"
+    ],
+    "expression": "端着热气腾腾的现磨咖啡大步迎上，笑容明媚大方：“薛督导辛苦了！刚出炉的烘焙现磨请您品鉴！”",
+    "likes": [
+     "店员纯洁善良的娇憨本色",
+     "并肩值班的互助默契",
+     "患难与共的真挚姐妹情谊"
+    ],
+    "preconditions": [
+     "合页死锁彻底解除且夜巡检查平稳过关"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "前台收银结算员",
+   "schedule": [
+    {
+     "from": 120,
+     "location_id": "loc_cashier_counter_front_desk",
+     "to": 130
+    },
+    {
+     "from": 130,
+     "location_id": "loc_front_glass_door_entrance",
+     "to": 135
+    },
+    {
+     "from": 135,
+     "location_id": "loc_convenience_cooler_aisle_center",
+     "to": 140
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "可能遭受巡查督导关于不按规矩站岗的轻微训诫。",
+      "option": "端着热咖啡大步跨出收银台假意呈递新品恰到好处挡在督导面前。"
+     },
+     {
+      "cost": "需要极快的手速与强装镇定的面部微表情管理。",
+      "option": "借调整促销立牌为由将一米八高KT板横移半米阻隔视线盲区。"
+     }
+    ],
+    "pressure": "商圈督导推门进店仅隔五步，一旦直行三步即可看清店员裙摆掀开受困惨状。",
+    "trigger": "抬头核对账目时敏锐察觉冷饮柜通道内店员下装受拉紧绷，整个人趴伏在货箱上无法起立。"
+   },
+   "tags": [],
+   "voices": {
+    "inner": "店员千万别慌，{npc.name}把咖啡展板全横过来了，督导已经被{npc.name}拖在前台了，快用刮刀把合页别开！",
+    "surface": "薛督导您好，前台已为您准备好本季新品品鉴样杯，请先移步这边指导！"
+   }
+  },
+  {
+   "adult_context": "影视编导系毕业，年满二十五周岁整，持有合法校媒见习记者证，依法展开夜间商圈文明风貌纪实。",
+   "age_range": [
+    25,
+    28
+   ],
+   "appearance_options": [
+    "身穿利落的军绿色多口袋摄影马甲配工装短裤，佩戴降噪耳麦，手持微型手持云台相机，眼神澄澈英挺，举手投足透着传媒学子的专业风度。",
+    "紧随督导身后踏入店内，目光机敏敏锐地扫过店内陈设，迅速捕捉到冷柜通道的反光异样与同龄姐妹的紧张掩护动向。"
+   ],
+   "decision": {
+    "avoids": [
+     "恶意炒作博眼球",
+     "侵犯肖像权益",
+     "虚伪浮夸的场面文章"
+    ],
+    "contrast": "平时看似沉迷拍摄的自媒体博主，遇到伦理危机时展现出极强的新闻正义感与惊人护花智慧。",
+    "core_value": "恪守新闻职业道德，用专业镜头记录美好，坚决捍卫女性在公众镜头前的尊严不受践踏。",
+    "goal_options": [
+     "以抓拍督导指导工作特写为由调转机位将镜头正对督导脸部引导其转身配合",
+     "迅速展开手持便携柔光板假装补光实则挡住侧翼落地玻璃窗的视线死角"
+    ],
+    "never": [
+     "用女性受困画面牟利",
+     "在强权面前曲笔逢迎"
+    ],
+    "prefers": [
+     "真实纯粹的纪实镜头",
+     "严谨体面的职业伦理",
+     "青年一代的守望相助"
+    ],
+    "pressure_responses": {
+     "breaking": "在听到气压释放嘶鸣声后迅速闭合地槽动力断路器完成排障",
+     "high": "在耳麦中大声指挥台前人员借激光笔淬火背夹下压挑卡簧",
+     "low": "在耳麦中短促通报电机短路电磁阀烧结警报并要求台前切勿强拔",
+     "mid": "快速查阅管路图纸找出立柱内侧两毫米应急泄压孔确切方位"
+    },
+    "relationship_stance": "对店员与收银员的自立坚守深表钦佩呵护，对巡查督导的傲慢虚荣充满敏锐审视。",
+    "withdrawal": "双手平举云台立于大门玄关侧方，眼神清朗果决向店内同龄姐妹投去信任坚定的眼神。"
+   },
+   "gender": "female",
+   "gender_reason": "大学城街景记录与巡查随行见证员由年满二十五周岁新闻传播学女性担任",
+   "id": "street_vlogger_ye_xiao_zhou",
+   "identity": {
+    "authority": "商圈夜间经济纪实拍摄权与随行纪实镜头光轴控制权。",
+    "exposure": "若拍摄中涉嫌侵犯肖像权将被平台封禁账号并承担法律诉讼。",
+    "hidden": "早已察觉店员下装受困的灭顶危机，果断将云台镜头光轴向上微仰对准吊顶照明系统，同时展开柔光板遮挡落地玻璃反光。",
+    "limits": [
+     "严禁未经许可将非公开敏感画面上传网络",
+     "不得干扰店内正常运营秩序"
+    ],
+    "obligations": [
+     "维系商圈夜巡报道的客观真实性",
+     "坚决杜绝低俗恶意窥探与恶意剪辑"
+    ],
+    "resources": [
+     "折叠便携式半透明散光幕布",
+     "微型无线领夹收音麦克风"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "在极端危机下依然顽强自救的纯洁神韵",
+     "女性相互扶持的温暖力量"
+    ],
+    "boundaries": [
+     "严守镜头不拍敏感角度的绝对底线"
+    ],
+    "desire_range": [
+     1,
+     2
+    ],
+    "desired_position": "成为商圈青年夜间风貌最真实温暖的见证者与守护者。",
+    "dislikes": [
+     "下流无耻的街拍狗仔",
+     "自以为是的傲慢资本家",
+     "弄虚作假之徒"
+    ],
+    "expression": "高声向督导提问：“薛督导，请您谈谈对二十四小时青年暖心服务站的建设构想！”顺势引导其面向镜头转身。",
+    "likes": [
+     "自食其力辛勤打工的自立青年",
+     "临危不乱的机敏女性",
+     "正直有担当的同龄青年"
+    ],
+    "preconditions": [
+     "夜巡纪实圆满完成且店内名誉安全未受丝毫侵犯"
+    ],
+    "self_control_range": [
+     4,
+     5
+    ]
+   },
+   "public_role": "商圈纪实自媒体见习记者",
+   "schedule": [
+    {
+     "from": 120,
+     "location_id": "loc_front_glass_door_entrance",
+     "to": 130
+    },
+    {
+     "from": 130,
+     "location_id": "loc_front_glass_door_entrance",
+     "to": 135
+    },
+    {
+     "from": 135,
+     "location_id": "loc_cashier_counter_front_desk",
+     "to": 140
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "可能遭受巡查督导关于擅自打乱视察节奏的口头微词。",
+      "option": "高举云台假装调整对焦跨前半步引导巡查督导面向大门回身阐述政绩理念。"
+     },
+     {
+      "cost": "手持柔光板需要消耗较多腕力且操作必须极其自然得体。",
+      "option": "展开手持柔光板借补充面光为由遮蔽落地玻璃窗的穿透视野。"
+     }
+    ],
+    "pressure": "十秒内巡查督导一旦踏入通道，整个受困场景将直接暴露在同行人员众目睽睽之下。",
+    "trigger": "云台高位监视屏反光中捕捉到冷柜通道内店员下装受拉与裙摆掀翻异常。"
+   },
+   "tags": [],
+   "voices": {
+    "inner": "冷柜那边店员裙子被夹住了，巡查督导想往通道里钻，{npc.name}必须用专访采访将巡查督导卡在门边，店员快脱困！",
+    "surface": "薛督导请看这边镜头，这一组纪实特写将作为商圈文明典范在头条发布！"
+   }
+  },
+  {
+   "adult_context": "文创投资集团青年督导巡查官年满三十四周岁整，享有完全民事诉讼权利与全店巡查考核否决全权，主导夜间商圈风貌督查。",
+   "age_range": [
+    34,
+    37
+   ],
+   "appearance_options": [
+    "身穿剪裁考究的深灰高级定制修身西装，佩戴金丝无框眼镜，神情矜贵自负，嘴角挂着挑剔傲慢的官腔笑意，浑身散发着名门二世祖的倨傲特权感。",
+    "阔步迈入便利店感应门，皮鞋踩在瓷砖上发出清脆踏步声，双眼如猎鹰般肆无忌惮地扫视着店内每一个角落，流露出居高临下的挑刺与玩味。"
+   ],
+   "decision": {
+    "avoids": [
+     "当众被反驳颜面扫地",
+     "被媒体抓拍到丑态公关崩盘",
+     "被集团高层严肃问责"
+    ],
+    "contrast": "人前摆出年轻有为、秉公执法的精英儒商姿态，背地里却习惯以巡查考核特权压迫年轻兼职人员顺从。",
+    "core_value": "迷恋资本与官威赋予的绝对支配快感，习惯以俯视姿态审视并掌控年轻绝色尤物。",
+    "goal_options": [
+     "借巡查冷藏柜温控陈列之名大步踏入主通道近距离审视店员的补货身段",
+     "在遭遇值班团队软钉子阻拦后以资方考核权威严厉施压迫使员工退让"
+    ],
+    "never": [
+     "真正触犯重大违规红线",
+     "在高清摄像机镜头前公然失控动粗"
+    ],
+    "prefers": [
+     "万众敬畏的领导威严",
+     "支配纯情少女的成就感",
+     "不可忤逆的管理特权"
+    ],
+    "pressure_responses": {
+     "breaking": "在顾冷霜清冷庄重开口发声后满意点头向校领导躬身汇报",
+     "high": "在耳麦中严厉提醒导播台按预定时间点准点切屏不得延误",
+     "low": "在贵宾席前平稳确认领导座次并用手势示意各单位倒计时开场",
+     "mid": "察觉讲台略有偏高时抬眼注视台前要求副主席做好应急准备"
+    },
+    "relationship_stance": "将店员视作触手可及的玩物与挑刺目标，对领班的工科傲骨充满排斥与警惕。",
+    "withdrawal": "在校媒镜头特写与员工滴水不漏的职业应对下悻悻然收敛轻佻，摆出严格公正的领导官腔完成签到。"
+   },
+   "gender": "male",
+   "gender_reason": "大学城商圈青年督导巡查官由年满三十四周岁青年男性高管担任",
+   "id": "supervisor_xue_tian_cheng",
+   "identity": {
+    "authority": "全店月度星级考核终审权与违纪员工辞退通报权。",
+    "exposure": "若在视察中被曝光恶意挑刺刁难打工人员的丑闻将被集团董事局当场通报撤职。",
+    "hidden": "企图借深夜突击检查之名，近距离挑刺刁难纯情店员的狼狈之态，满足内心的特权支配欲。",
+    "limits": [
+     "受制于全网青年媒体监督与集团纪检规范不敢公然动粗",
+     "忌惮引发全网舆论翻车"
+    ],
+    "obligations": [
+     "按规程完成夜间商圈例行风貌抽查",
+     "维系集团年轻有为管理新贵的体面人设"
+    ],
+    "resources": [
+     "掌握全商圈便利店经营生死大权的行政考核权",
+     "豪门家族在商圈深厚的商业投资资源"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "店员纯情清澈宛若栀子花般的绝美娇憨颜容",
+     "工装短裙包裹下的纤细柔韧身姿"
+    ],
+    "boundaries": [
+     "不敢公然触犯国家劳动合规与公众伦理底线"
+    ],
+    "desire_range": [
+     1,
+     2
+    ],
+    "desired_position": "自诩为主宰全店命运并让绝色店员屈尊恭迎的顶级商圈新贵。",
+    "dislikes": [
+     "被人当众冷漠无视",
+     "桀骜不驯软硬不吃的硬茬",
+     "脱离掌控的意外场面"
+    ],
+    "expression": "抬手扶了扶金丝眼镜，嘴角勾起一抹胜券在握的玩味冷笑，径直向前迈出步子：“店员在冰柜前忙什么呢，本督导正好过去看看。”",
+    "likes": [
+     "绝色女孩在受窘绝境下的慌乱无助",
+     "高高在上的绝对掌控感",
+     "被年轻人员仰望服从的虚荣"
+    ],
+    "preconditions": [
+     "自以为凭借商圈巡查高管光环能够随意操纵普通店员前途"
+    ],
+    "self_control_range": [
+     4,
+     5
+    ]
+   },
+   "public_role": "商圈文创集团青年巡查督导",
+   "schedule": [
+    {
+     "from": 120,
+     "location_id": "loc_front_glass_door_entrance",
+     "to": 130
+    },
+    {
+     "from": 130,
+     "location_id": "loc_front_glass_door_entrance",
+     "to": 135
+    },
+    {
+     "from": 135,
+     "location_id": "loc_convenience_cooler_aisle_center",
+     "to": 140
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "被领班严密的工程温控数据正面堵得哑口无言。",
+      "option": "借着询问冷链巡检记录假意停步在通道口与夜班主管冷言对质试探。"
+     },
+     {
+      "cost": "彻底丧失近距离窥探纯情姑娘受困窘态的唯一机会。",
+      "option": "在镜头特写前维持体面笑容接过咖啡在巡查本上签下合规字样离开。"
+     }
+    ],
+    "pressure": "领班高大挺拔的身躯横阻在通道入口，校媒博主的摄像机与前台热咖啡已迎面围拢。",
+    "trigger": "踏入玄关后目光如鹰隼般直刺冷饮柜主通道，企图快步切入主通道探查究竟。"
+   },
+   "tags": [],
+   "voices": {
+    "inner": "这平时在学校里对人不假辞色的纯情姑娘趴在冰柜前半天不起来，{npc.name}倒要走到眼前看看到底在搞什么鬼！",
+    "surface": "今晚例行夜巡，冷链温控和陈列规范是重中之重，本督导亲自进通道检查。"
+   }
+  }
+ ],
+ "clock_start": {
+  "label": "凌晨两点补货，猫尾底座卡进冷柜合页",
+  "minute": 1140
+ },
+ "clock_style": "hm",
+ "content_tags": [],
+ "custom": false,
+ "customs": [
+  "商圈全通透便利店每逢深夜两点开启主通道冰柜集中理货补货的规程",
+  "夜班店员习惯在胸牌挂绳内侧别一枚特制航空钛合金超薄拆箱刮刀拆封纸箱的风尚",
+  "夜班领班在进店感应门提示音响起时第一时间向货架通道投去安全确认目光的惯例",
+  "主干道夜跑青年与通宵加班族隔着落地窗打量明亮便利店货架的常态景象"
+ ],
+ "daily_activities": [
+  {
+   "beats": [
+    "成年维保技师使用量规检测双层玻璃门合页间隙",
+    "成年维保人员俯身调整阻尼缓冲弹簧自锁卡爪受力平整度"
+   ],
+   "duration_minutes": 15,
+   "hook_ids": [],
+   "id": "act_convenience_cooler_hinge_pre_check",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "start_minute": 120,
+   "tags": [],
+   "title": "立式冷藏柜重型阻尼合页气密回弹检查"
+  },
+  {
+   "beats": [
+    "店员在通道搬运乳品胶筐并向领班核对先进先出温控数据",
+    "各层货架排列严整确保玻璃外立面陈列美观如新"
+   ],
+   "duration_minutes": 10,
+   "hook_ids": [],
+   "id": "act_fresh_milk_stocking_calibration",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "start_minute": 125,
+   "tags": [],
+   "title": "冷藏柜鲜奶与热饮深夜集中保质期轮换"
+  },
+  {
+   "beats": [
+    "领班在智能控台精准校准电磁门温湿度倒数频段",
+    "提示屏实时显示巡查督导进店考评进入最后十秒紧张关口"
+   ],
+   "duration_minutes": 12,
+   "hook_ids": [],
+   "id": "act_chime_ten_second_sync",
+   "location_ids": [
+    "loc_front_glass_door_entrance"
+   ],
+   "start_minute": 128,
+   "tags": [],
+   "title": "冷柜开门过久蜂鸣报警系统十秒倒计时同步"
+  },
+  {
+   "beats": [
+    "店员弯腰双手推移重型牛奶筐微调底层货位最佳间距",
+    "裙底毛绒猫尾合金插销在身体前倾间不慎滑入合页咬合齿缝"
+   ],
+   "duration_minutes": 8,
+   "hook_ids": [],
+   "id": "act_clerk_crouch_pose_incident",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "start_minute": 130,
+   "tags": [],
+   "title": "店员弯腰将鲜奶箱推入冰柜底层死角"
+  },
+  {
+   "beats": [
+    "自锁卡爪反向绞死将店员百褶裙后摆向上猛烈拉拽掀起",
+    "冷风吹拂双腿导致店员上身被迫趴伏在纸箱上动弹不得"
+   ],
+   "duration_minutes": 5,
+   "hook_ids": [],
+   "id": "act_cooler_hinge_tail_snag_incident",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "start_minute": 132,
+   "tags": [],
+   "title": "重型合页缓冲卡爪死死咬住金属插销"
+  },
+  {
+   "beats": [
+    "青年督导巡查督导昂首挺胸推开双开感应玻璃门踏入玄关",
+    "领班高大挺拔身形骤然跨出冷厉阻断督导前行脚步"
+   ],
+   "duration_minutes": 10,
+   "hook_ids": [],
+   "id": "act_supervisor_entrance_approach",
+   "location_ids": [
+    "loc_front_glass_door_entrance"
+   ],
+   "start_minute": 133,
+   "tags": [],
+   "title": "商圈督导推门进店巡视考评"
+  },
+  {
+   "beats": [
+    "凌晨三点没客人，店员从货架上摸出一盒今天到期的布丁，掰开两把小勺。",
+    "店员舀一勺喂你，又舀一勺自己吃，舔着勺子小声说：你吃过的勺子，我也要用。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_stock_pudding",
+   "location_ids": [
+    "loc_store_back_stockroom"
+   ],
+   "start_minute": 180,
+   "tags": [
+    "intimate"
+   ],
+   "title": "分吃一盒临期布丁"
+  },
+  {
+   "beats": [
+    "店员背过身，撩起制服的下摆，那条毛茸茸的猫尾还拖在身后，脸红得能滴血。",
+    "店员回头看你，声音发颤：自己摘不下来……你帮我，慢一点。我说停你就停。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_stock_tail_off",
+   "location_ids": [
+    "loc_store_back_stockroom"
+   ],
+   "start_minute": 210,
+   "tags": [
+    "intimate"
+   ],
+   "title": "替店员摘下那条猫尾"
+  },
+  {
+   "beats": [
+    "店员把两个饭团塞进微波炉，靠在你身边等着，叮的一声响，店员顺势踮脚在你脸上亲了一下。",
+    "店员假装什么都没发生，把热饭团塞进你手里：……找零不用给了。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_stock_microwave",
+   "location_ids": [
+    "loc_store_back_stockroom"
+   ],
+   "start_minute": 150,
+   "tags": [
+    "intimate"
+   ],
+   "title": "一起热两个饭团"
+  },
+  {
+   "beats": [
+    "早班还有一个小时才来，店员把头枕在你腿上，猫耳发箍歪到一边。",
+    "店员闭着眼睛拉过你的手，放在自己脸颊上：就一会儿……到点了你叫我。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_stock_dawn_shift",
+   "location_ids": [
+    "loc_store_back_stockroom"
+   ],
+   "start_minute": 330,
+   "tags": [
+    "intimate"
+   ],
+   "title": "早班来之前靠着打个盹"
+  }
+ ],
+ "default_npc_gender_mix": {
+  "female": 0.5,
+  "male": 0.5,
+  "nonbinary": 0.0
+ },
+ "default_person": "second",
+ "era": "当代杭州大学城商圈，通宵便利店凌晨两点",
+ "extends": null,
+ "forbidden_terms": [
+  "他",
+  "她",
+  "他们的",
+  "她们的",
+  "幼态",
+  "幼女",
+  "少女感",
+  "催情",
+  "迷乱",
+  "欲火"
+ ],
+ "hooks": [
+  {
+   "id": "hook_01_cooler_hinge_tail_snag_groan",
+   "kind": "approach",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "slot": "convenience_clerk_an_xiao_nian",
+   "text": "耳麦里传来领班低沉沉稳的迎宾提醒，{convenience_clerk_an_xiao_nian.name}弯腰推移牛奶箱时后腰却被一股冰冷阻力反向拉扯，整扇重型冷柜门随之发出沉闷轻颤！"
+  },
+  {
+   "id": "hook_02_skirt_strain_jam",
+   "kind": "approach",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "slot": "convenience_clerk_an_xiao_nian",
+   "text": "{convenience_clerk_an_xiao_nian.name}微微咬住粉唇维持清纯微笑，裙底毛绒猫尾金属插销不知何时深深卡入了冷柜合页阻尼卡爪缝隙，纯白百褶裙后摆被猛烈掀起紧绷欲裂动弹不得！"
+  },
+  {
+   "id": "hook_03_scraper_blade_lever_extract",
+   "kind": "approach",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "slot": "convenience_clerk_an_xiao_nian",
+   "text": "{convenience_clerk_an_xiao_nian.name}双手按在饮料箱上稳如磐石维持趴伏姿态，右手极度自然优雅地探向胸前工号牌，别在夹层间的特制航空钛合金拆箱刮刀瞬间反握在指尖！"
+  },
+  {
+   "id": "hook_04_supervisor_iron_standoff",
+   "kind": "approach",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "slot": "night_supervisor_jiang_lin_chuan",
+   "text": "{night_supervisor_jiang_lin_chuan.name}手持巡检平板高大身形一步跨至主通道入口正前方，如铁壁般横在通道处冷声向大步踏来的督导汇报自检参数阻断逼近脚步！"
+  },
+  {
+   "id": "hook_05_cashier_board_shield",
+   "kind": "approach",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "slot": "cashier_wen_ruo_xi",
+   "text": "{cashier_wen_ruo_xi.name}站在前台敏锐察觉异样，干练迈步将大幅面咖啡促销展板高高举起，严严实实挡住落地大玻璃一切斜向窥探视线！"
+  },
+  {
+   "id": "hook_06_scraper_blade_into_hinge_gap",
+   "kind": "approach",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "slot": "convenience_clerk_an_xiao_nian",
+   "text": "航空钛合金刮刀两毫米扁平微翘刃角顺着狭小合页缝隙精准探入阻尼卡爪下方，指尖清晰感知到弹簧受压卡紧的极大弹性阻尼刚性！"
+  },
+  {
+   "id": "hook_07_supervisor_footsteps_entrance",
+   "kind": "approach",
+   "location_ids": [
+    "loc_front_glass_door_entrance"
+   ],
+   "slot": "supervisor_xue_tian_cheng",
+   "text": "青年督导{supervisor_xue_tian_cheng.name}昂首傲慢逼近，皮鞋踏在便利店瓷砖上发出清脆步声，距离受困通道仅剩最后三步！"
+  },
+  {
+   "id": "hook_08_mechanic_supports_hinge_plate",
+   "kind": "approach",
+   "location_ids": [
+    "loc_cooler_door_hydraulic_hinge_alcove"
+   ],
+   "slot": "mechanic_du_tie_jun",
+   "text": "维保技师手持无尘布半掩在冷柜侧壁阴影处假装巡检，暗中借厚手套替店员托住合页受力底板分担下压破拆负荷！"
+  },
+  {
+   "id": "hook_09_wrist_twist_scraper_pop",
+   "kind": "approach",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "slot": "convenience_clerk_an_xiao_nian",
+   "text": "{convenience_clerk_an_xiao_nian.name}美眸沉静粉唇微抿，单手运力稳如泰山，右手腕借冷柜门轴外缘作为支点向斜上方施加三牛顿强劲微挑力矩！"
+  },
+  {
+   "id": "hook_10_metal_tail_plug_snaps_free",
+   "kind": "approach",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "slot": "convenience_clerk_an_xiao_nian",
+   "text": "一声极细微的金属卡爪弹开清脆轻响迸发，咬死的阻尼缓冲卡爪被精准别开，金属插销瞬间脱扣滑出，百褶短裙重获自由彻底解除死锁！"
+  },
+  {
+   "id": "hook_11_clerk_stands_tall_and_free",
+   "kind": "accident",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "slot": "convenience_clerk_an_xiao_nian",
+   "text": "解脱瞬间{convenience_clerk_an_xiao_nian.name}优雅直身顺手抚平纯棉围裙与百褶短裙，顺势关上冰柜门，迎着转过通道的督导露出无可挑剔的清纯甜美微笑！"
+  },
+  {
+   "id": "hook_12_flawless_clerk_poise_captured",
+   "kind": "observe",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "slot": "night_supervisor_jiang_lin_chuan",
+   "text": "便利店明亮灯光下的店员甜美纯洁仪态端庄宛若邻家姑娘，从容大方的气质引得随行校媒博主按动快门定格下最美店员瞬间！"
+  },
+  {
+   "id": "hook_13_grand_inspection_on_air_applause",
+   "kind": "observe",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "slot": "convenience_clerk_an_xiao_nian",
+   "text": "货架上方温控指示灯亮起安全绿光，感应门提示音清脆悦耳，{convenience_clerk_an_xiao_nian.name}微笑着递上合格陈列记录，定格下模范便利店神级迎检高光！"
+  },
+  {
+   "id": "hook_14_supervisor_retreats_in_awe",
+   "kind": "request",
+   "location_ids": [
+    "loc_front_glass_door_entrance"
+   ],
+   "slot": "supervisor_xue_tian_cheng",
+   "text": "被主管冷峻气场正面迫退且被女店员无瑕清纯风采震撼的督导只得悻悻收起轻佻，规规矩矩在巡检平板上签下满分考评！"
+  },
+  {
+   "id": "hook_15_scraper_tucked_whisper_smile",
+   "kind": "request",
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "slot": "convenience_clerk_an_xiao_nian",
+   "text": "音乐流淌夜色温柔间隙{convenience_clerk_an_xiao_nian.name}优雅将钛合金刮刀重新悄悄插回工号牌内侧，隔着货架与领班甜美相视一笑尽显默契的守护温情！"
+  },
+  {
+   "id": "hook_store_stockroom_door",
+   "kind": "approach",
+   "location_ids": [
+    "loc_store_back_stockroom"
+   ],
+   "slot": "convenience_clerk_an_xiao_nian",
+   "text": "{npc.name}从仓库门口探出半个身子，猫耳发箍还戴着：没客人了……进来歇会儿？"
+  }
+ ],
+ "id": "convenience_clerk_cooler_tail_jam",
+ "locations": [
+  {
+   "affordances": [
+    "以弯腰整理饮料箱姿态维持身体前倾掩饰后部受困",
+    "反手从胸牌摘下钛合金拆箱刮刀实施微观撬脱自救"
+   ],
+   "detail": "整排通透玻璃立式冷藏柜前的狭窄通道，冷气从柜内丝丝溢出，头顶高亮白光日光灯无死角照射，地面铺设防滑瓷砖，正对着街面通透落地大玻璃。",
+   "exits": [
+    "loc_cooler_door_hydraulic_hinge_alcove",
+    "loc_front_glass_door_entrance",
+    "loc_cashier_counter_front_desk"
+   ],
+   "id": "loc_convenience_cooler_aisle_center",
+   "name": "立式冷藏饮料展示柜中央补货通道",
+   "pressure_modifiers": {
+    "press_cooler_hinge_tail_pinch": "阻尼合页死死夹住猫尾底座加剧后臀受拉与短裙掀开恐慌",
+    "press_supervisor_five_step_arrival": "督导推门脚步逼近加剧五步之内迎面撞破的绝境"
+   },
+   "privacy": "public",
+   "tags": [],
+   "visibility": "面对马路落地玻璃幕墙毫无遮拦，夜跑青年转头即可一览无余，店内头顶两百万像素超清监控摄像头正对通道。",
+   "witnesses": [
+    "bg_night_supervisor_jiang",
+    "bg_cashier_wen_ruo_xi"
+   ]
+  },
+  {
+   "affordances": [
+    "借开着的冰柜门体外缘作为刮刀撬柄杠杆支点",
+    "在死角内调整呼吸集中指尖微观发力"
+   ],
+   "detail": "两扇厚重双层中空玻璃门之间的镀铬自锁阻尼铰链缝隙，强力弹簧与缓冲卡爪咬死成死角，正将毛绒猫尾的金属插销牢牢锁住。",
+   "exits": [
+    "loc_convenience_cooler_aisle_center",
+    "loc_front_glass_door_entrance",
+    "loc_cashier_counter_front_desk"
+   ],
+   "id": "loc_cooler_door_hydraulic_hinge_alcove",
+   "name": "冷柜重型阻尼回弹合页侧方死角",
+   "pressure_modifiers": {
+    "press_scraper_blade_slip_risk": "冰柜冷凝水附着合页导致金属刮刀打滑加剧破拆失败危机",
+    "press_window_student_gaze_dread": "主干道青年目光投向玻璃窗加剧私密底座外露羞耻"
+   },
+   "privacy": "semi",
+   "tags": [],
+   "visibility": "侧面货架阻挡视线，但若从收银台通道迎面走来，百褶裙摆向上掀翻露出的纯白内衬一目了然。",
+   "witnesses": [
+    "bg_mechanic_du_tie_jun",
+    "bg_street_vlogger_ye_xiao_zhou"
+   ]
+  },
+  {
+   "affordances": [
+    "以礼貌欢迎光临声浪掩盖合页卡爪脱开清脆微响",
+    "倾听皮鞋踏地步数精准计算自救秒数"
+   ],
+   "detail": "通往商圈主干道的全透明电动平移感应门，进门叮咚迎宾提示音极度清脆，商圈督导巡查督导正手持巡查平板昂首踏入。",
+   "exits": [
+    "loc_convenience_cooler_aisle_center",
+    "loc_cooler_door_hydraulic_hinge_alcove",
+    "loc_cashier_counter_front_desk"
+   ],
+   "id": "loc_front_glass_door_entrance",
+   "name": "便利店自动感应双开玻璃大门玄关",
+   "pressure_modifiers": {
+    "press_skirt_lift_modesty_collapse": "裙摆被拉高至大腿根部加剧纯情名誉当场崩塌绝望",
+    "press_supervisor_five_step_arrival": "巡查高管踏入玄关加剧当场开除辞退与行业通报严罚"
+   },
+   "privacy": "public",
+   "tags": [],
+   "visibility": "迎面正对冷饮柜主通道，进店第一眼便能洞穿通道内店员工作状态与身姿仪态。",
+   "witnesses": [
+    "bg_supervisor_xue_tian_cheng",
+    "bg_night_supervisor_jiang"
+   ]
+  },
+  {
+   "affordances": [
+    "借端递热咖啡为由上前阻挡督导视线",
+    "敲击收银台键盘声浪分散全场注意力"
+   ],
+   "detail": "紧邻大门的收银台区域，摆放着双屏收银机与关东煮保温槽，收银员正守在台前焦急注视着冷柜通道店员的异常背影。",
+   "exits": [
+    "loc_convenience_cooler_aisle_center",
+    "loc_cooler_door_hydraulic_hinge_alcove",
+    "loc_front_glass_door_entrance",
+    "loc_store_back_stockroom"
+   ],
+   "id": "loc_cashier_counter_front_desk",
+   "name": "便利店前台L型收银结算服务台",
+   "pressure_modifiers": {
+    "press_cooler_open_chime_ten_second_rush": "冷柜开门过久蜂鸣报警声持续鸣响加剧十秒绝境",
+    "press_window_student_gaze_dread": "落地玻璃通透照明加剧过路顾客窥视恐慌"
+   },
+   "privacy": "semi",
+   "tags": [],
+   "visibility": "收银台显示器与促销立牌能够对玄关形成斜向半遮挡视线掩护。",
+   "witnesses": [
+    "bg_cashier_wen_ruo_xi",
+    "bg_street_vlogger_ye_xiao_zhou"
+   ]
+  },
+  {
+   "affordances": [
+    "和店员分吃临期布丁",
+    "帮店员取下毛茸茸的尾巴",
+    "锁上休息间的门"
+   ],
+   "detail": "便利店仓库后面隔出的一间小屋，一张旧沙发、一台微波炉、货架上堆着临期的饭团和布丁，墙上贴着排班表。",
+   "exits": [
+    "loc_cashier_counter_front_desk"
+   ],
+   "id": "loc_store_back_stockroom",
+   "name": "便利店后面的员工休息间",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "门一锁，前厅的到店提示音只剩隐隐约约的叮咚声。",
+   "witnesses": []
+  }
+ ],
+ "name_pools": {
+  "family": [
+   "安",
+   "江",
+   "薛",
+   "温",
+   "杜",
+   "叶",
+   "林",
+   "陈",
+   "苏",
+   "楚",
+   "梁",
+   "沈",
+   "魏",
+   "柳",
+   "顾",
+   "白"
+  ],
+  "given_female": [
+   "小念",
+   "若溪",
+   "小舟",
+   "萌萌",
+   "浅雪",
+   "芷琳",
+   "知微",
+   "清婉",
+   "映月",
+   "诗音",
+   "羽灵",
+   "静姝",
+   "司徒",
+   "语晴",
+   "晨曦",
+   "雅纯"
+  ],
+  "given_male": [
+   "临川",
+   "天成",
+   "铁军",
+   "长青",
+   "景行",
+   "文瀚",
+   "天麟",
+   "铁峰",
+   "景深",
+   "博庸",
+   "少卿",
+   "承宇",
+   "逸轩",
+   "霆威",
+   "修远",
+   "致远"
+  ],
+  "given_neutral": [
+   "星芒",
+   "微光",
+   "清和",
+   "子墨",
+   "安然",
+   "星澜",
+   "沐川",
+   "青霄",
+   "千寻",
+   "若水",
+   "素风",
+   "清欢",
+   "景澄",
+   "秋水",
+   "云帆",
+   "明月"
+  ],
+  "nickname_patterns": [
+   {
+    "gender": "female",
+    "pattern": "{family}店员"
+   },
+   {
+    "gender": "male",
+    "pattern": "{family}领班"
+   },
+   {
+    "gender": "male",
+    "pattern": "{family}师傅"
+   },
+   {
+    "gender": "female",
+    "pattern": "{family}收银"
+   },
+   {
+    "gender": "female",
+    "pattern": "小{given}"
+   },
+   {
+    "gender": "male",
+    "pattern": "{family}督导"
+   }
+  ],
+  "order": "family_first"
+ },
+ "notes": "按原稿加入，保留商圈全落地窗的通宵便利店冷藏区、门外通宵的年轻客流、纯欲店员弯腰补货时百褶裙下毛绒猫尾肛塞的合金底座卡进重型冷柜回弹合页、短裙被掀起大半、冷气扑在肌肤上站不起来、巡查督导推开感应门只隔五步、用胸牌上的钛合金拆箱刮刀别开缓冲卡爪的骨架与纯欲反差的味道。原稿的时代、地点、开局时刻和基调是从学生会长世界复制的，已按通宵便利店重写；背景人物里与主要角色同名的几位改成了独立的人。女主从在读兼职生改成毕业一年的夜班店员，年龄二十三到二十五岁，夜班领班二十七到三十岁。用户已放开内容限制、色情尺度优先，只守红线；卡住的险情期间不写性互动。新增便利店二楼的员工休息间与四个亲密日常。",
+ "player_identities": [
+  {
+   "age_range": [
+    32,
+    36
+   ],
+   "baseline": "仓储与供应链学科毕业，年满三十二周岁整，持有商用连锁经营调度师资质，全盘掌管便利店补货监控与智能门禁系统。",
+   "gender": "any",
+   "id": "pi_night_shift_supervisor",
+   "reputation": "对便利店冷链动线与机械结构了如指掌的运营骨干",
+   "resources": [
+    "便利店通道灯光集中调光面板",
+    "冷藏柜电磁门锁无线遥控手柄"
+   ],
+   "risks": [
+    "若门店内发生违纪走光事故将面临商圈督导降职追责"
+   ],
+   "role": "便利店夜班运行调度主管",
+   "social_position": "high",
+   "title_patterns": [
+    {
+     "gender": "any",
+     "pattern": "{family}领班"
+    },
+    {
+     "gender": "any",
+     "pattern": "{given}哥"
+    }
+   ]
+  },
+  {
+   "age_range": [
+    26,
+    30
+   ],
+   "baseline": "应用语言学科毕业，年满二十六周岁整，享有完整法定民事行为自立能力，负责前台收银扫码与进店客流接待引导。",
+   "gender": "any",
+   "id": "pi_cashier_clerk_companion",
+   "reputation": "反应机敏且极具同理心的值班好闺蜜",
+   "resources": [
+    "加厚硬质促销立牌宣传板",
+    "前台紧急呼叫无线对讲手柄"
+   ],
+   "risks": [
+    "前台脱岗引发顾客投诉将承担当月绩效扣减处分"
+   ],
+   "role": "前台收银结算与货架值班搭档",
+   "social_position": "high",
+   "title_patterns": [
+    {
+     "gender": "any",
+     "pattern": "{family}收银"
+    },
+    {
+     "gender": "any",
+     "pattern": "{given}"
+    }
+   ]
+  },
+  {
+   "age_range": [
+    28,
+    32
+   ],
+   "baseline": "动力工程学科毕业达到法定成年标准，依法享有完全民事责任自立资格，负责全店立式冰柜铰链与回弹阻尼维护。",
+   "gender": "any",
+   "id": "pi_cold_chain_mechanic_inspector",
+   "reputation": "专治各类冷柜门合页卡阻死锁的维保行家",
+   "resources": [
+    "食品级无色无味铰链润滑喷雾",
+    "高硬度微型不锈钢平头撬棒"
+   ],
+   "risks": [
+    "冷柜合页故障导致漏冷将承担赔偿维修工时费处分"
+   ],
+   "role": "商超冷链五金机械成年维保技师",
+   "social_position": "equal",
+   "title_patterns": [
+    {
+     "gender": "any",
+     "pattern": "{family}师傅"
+    },
+    {
+     "gender": "any",
+     "pattern": "{given}工"
+    }
+   ]
+  },
+  {
+   "age_range": [
+    26,
+    30
+   ],
+   "baseline": "网络与新媒体系毕业，年满二十六周岁成年人，享有法律赋予的合法采访报道权益，随行记录商圈夜间秩序并拍摄纪实视频。",
+   "gender": "any",
+   "id": "pi_campus_street_vlogger_escort",
+   "reputation": "在青年群体中拥有良好公信力的自媒体博主",
+   "resources": [
+    "防逆光大号便携补光折叠柔光板",
+    "自媒体采访证件与广角云台"
+   ],
+   "risks": [
+    "违规拍摄非公开敏感画面将承担法律追责"
+   ],
+   "role": "大学城街景记录与巡查随行见证员",
+   "social_position": "low",
+   "title_patterns": [
+    {
+     "gender": "any",
+     "pattern": "{family}记者"
+    },
+    {
+     "gender": "any",
+     "pattern": "小{given}"
+    }
+   ]
+  }
+ ],
+ "premise": "凌晨两点，大学城商圈的通宵便利店全落地窗亮得像玻璃盒子，门外夜跑和宵夜的年轻人来来往往。纯欲夜班店员弯腰往冷柜里补鲜奶，百褶裙下塞着的毛绒猫尾肛塞，合金底座偏偏卡死在冷柜回弹合页的夹缝里。短裙被掀起大半，冷气扑在光裸的大腿上，人弯着腰站不起来。商圈的巡查督导刚推开感应门，只隔五步。店员只能拔出胸牌上的钛合金拆箱刮刀，把微翘的刃角插进合页缝，别开缓冲卡爪。",
+ "pressures": [
+  {
+   "choice": "选择借刮刀微翘硬角杠杆下压撬开卡爪，抑或盲目硬扯导致百褶裙崩线当众露底走光。",
+   "exits": [
+    {
+     "cost": "大腿后侧雪白肌肤被冷风吹得满是鸡皮疙瘩且单手盲操指尖酸麻。",
+     "option": "借助工牌加厚航空钛合金拆箱刮刀找准三牛顿力矩精准别开卡爪自救脱钩。"
+    },
+    {
+     "cost": "需要技师承担未经报备介入营业区维保的微弱违纪风险。",
+     "option": "由维保技师冷链技师在暗处用手掌稳住合页门轴分担下压破拆扭矩。"
+    }
+   ],
+   "far": {
+    "consequence": "造成灾难性门店名誉事故，兼职生涯彻底终结遭行业封杀。",
+    "due_days": 1,
+    "trigger": "女店员在全落地玻璃窗前狼狈崩裙走光"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "press_cooler_hinge_tail_pinch",
+   "immediate": {
+    "minutes": 1,
+    "text": "坚硬金属合页死死咬住插销，短裙后摆被反向拽翻，动弹不得。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "near": {
+    "deadline_minutes": 2,
+    "text": "若无法在十秒内解除绞合，上身站直将直接扯碎百褶裙露出贴身春光引发全网轰动。"
+   },
+   "objective": "在百褶裙彻底开裂前用工牌钛合金刮刀扁平刃角别开自锁卡爪脱钩自救。",
+   "source": "accident",
+   "start_minute": 132,
+   "tags": [
+    "disaster"
+   ],
+   "title": "重型合页咬死猫尾金属插销剧痛",
+   "trigger": "弯腰推移牛奶箱动作导致猫尾合金底座被合页强力卡爪死死卡在机械缝隙。"
+  },
+  {
+   "choice": "选择争分夺秒单手盲操刮刀自救，抑或在通道内惊呼引发全店围观大乱。",
+   "exits": [
+    {
+     "cost": "若最终仍未解脱将承担顶撞督导领导的当场问责处分。",
+     "option": "夜班主管领班以汇报冷链温控自检为由挺身横阻在督导身前争取时间。"
+    },
+    {
+     "cost": "承受超负荷心理紧绷与指骨极度酸痛。",
+     "option": "店员指尖爆发极强稳定性在倒数第三秒挑落金属插销从容拉平短裙。"
+    }
+   ],
+   "far": {
+    "consequence": "当场遭遇辞退处分，门店被扣减星级面临巨额商业连带问责。",
+    "due_days": 1,
+    "trigger": "督导现场目击店员受困衣衫不整丑态"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "press_supervisor_five_step_arrival",
+   "immediate": {
+    "minutes": 1,
+    "text": "门铃叮咚声与皮鞋声清晰可闻，督导挑剔傲慢的目光正隔着货架扫视通道。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_front_glass_door_entrance"
+   ],
+   "near": {
+    "deadline_minutes": 2,
+    "text": "五步踏完若店员呈现身体受拽下装掀翻姿态，迎面撞见的视线将把受困丑态暴露无遗。"
+   },
+   "objective": "在督导完全踏入通道前解除束缚并抚平百褶裙从容站立迎检了结危机。",
+   "source": "institution",
+   "start_minute": 133,
+   "tags": [],
+   "title": "商圈巡查督导进店考评五步逼近",
+   "trigger": "领班在耳麦中确认督导推门进店，皮鞋踏地步数正一步一步向主通道逼近。"
+  },
+  {
+   "choice": "选择由前台闺蜜高举展板阻挡，抑或任由路人目光捕捉到受困细节沦为论坛热帖。",
+   "exits": [
+    {
+     "cost": "可能遭受督导关于促销物料违规摆放的口头批评。",
+     "option": "收银员双手高举大幅面促销宣传展板恰到好处遮挡落地玻璃斜向视线。"
+    },
+    {
+     "cost": "需要自媒体人员承担来自随行人员的质疑压力。",
+     "option": "随行记录员自媒体记者展开便携式散光幕布彻底阻断前沿玻璃反光穿透视线。"
+    }
+   ],
+   "far": {
+    "consequence": "纯情姑娘名誉瞬间粉碎，遭遇恶俗网络非议声讨。",
+    "due_days": 1,
+    "trigger": "受困走光细节被路人拍照大肆散播"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "press_window_student_gaze_dread",
+   "immediate": {
+    "minutes": 1,
+    "text": "窗外夜跑交谈声隔着玻璃传来，白光照射下，后背与短裙细节无处遁形。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "near": {
+    "deadline_minutes": 2,
+    "text": "路人只要停步转头即可看清店员下装受拉后背紧绷的窘态并聚众围观。"
+   },
+   "objective": "在路人看清后腰金属插销与短裙掀高前构筑遮挡防线或完成自救脱钩。",
+   "source": "person",
+   "start_minute": 133,
+   "tags": [],
+   "title": "落地玻璃幕墙外主干道夜跑青年投来注视",
+   "trigger": "落地玻璃外主干道数十名夜跑青年放慢脚步，视线透过通透玻璃直扫冷饮柜陈列。"
+  },
+  {
+   "choice": "选择调整呼吸沉稳发力微撬，抑或因刮刀打滑脱落彻底丧失唯一工具并划破工装百褶裙。",
+   "exits": [
+    {
+     "cost": "消耗最后宝贵的两秒钟并加大指骨关节受压酸胀。",
+     "option": "手腕向内微旋用刮刀钛合金扁刃微翘硬角死死咬稳卡爪凹槽下压微撬。"
+    },
+    {
+     "cost": "需要技师极度隐蔽配合防止引来督导视线。",
+     "option": "维保技师冷链技师在暗处用手掌协助固定卡爪基座防止刮刀滑动。"
+    }
+   ],
+   "far": {
+    "consequence": "只能任由进店人员与路人全景围观惨烈社死。",
+    "due_days": 1,
+    "trigger": "刮刀脱落或割破工装短裙大面积走光"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "press_scraper_blade_slip_risk",
+   "immediate": {
+    "minutes": 1,
+    "text": "钛合金刮刀在冰冷金属合页上发出极轻微滑动微响，心跳几乎停滞。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "near": {
+    "deadline_minutes": 2,
+    "text": "若刮刀滑脱落地，不仅无法撬开卡爪更会导致身体受惯性反弹扯烂整条百褶裙。"
+   },
+   "objective": "稳住指尖发力反手以刮刀平头硬角死死咬住卡爪根部精准向上挑起。",
+   "source": "person",
+   "start_minute": 134,
+   "tags": [],
+   "title": "冷柜冷凝水附着合页导致金属刮刀打滑",
+   "trigger": "紧张冷汗与冷柜冷凝水导致钛合金刮刀微翘刃角在合页卡爪边缘产生滑动。"
+  },
+  {
+   "choice": "选择忍受牵拉维持前倾姿态，抑或动作变形导致短裙开裂春光大泄。",
+   "exits": [
+    {
+     "cost": "手臂因别扭承重姿势产生剧烈酸痛感。",
+     "option": "用双手自然按在饮料纸箱边缘为身体平衡分担倾斜拉力。"
+    },
+    {
+     "cost": "双人贴身站位过紧可能略微影响货架正常展示。",
+     "option": "闺蜜收银员并肩侧立以自身工作围裙下摆恰到好处遮蔽店员侧翼。"
+    }
+   ],
+   "far": {
+    "consequence": "优秀模范称号当场吊销，身败名裂面临商圈议论。",
+    "due_days": 1,
+    "trigger": "女店员工装短裙在众目睽睽下当场撕裂走光"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "press_skirt_lift_modesty_collapse",
+   "immediate": {
+    "minutes": 1,
+    "text": "纯白百褶短裙后襟极度紧绷，大腿受拉，内衬边缘岌岌可危。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "near": {
+    "deadline_minutes": 2,
+    "text": "缝线一旦绷断整条短裙将直接向后扯脱大面积暴露贴身春光。"
+   },
+   "objective": "在百褶裙彻底撕裂露底走光前完成脱扣并迅速拉拢裙摆恢复端庄站姿。",
+   "source": "nature",
+   "start_minute": 134,
+   "tags": [
+    "disaster"
+   ],
+   "title": "纯白百褶短裙后摆掀翻走光濒临崩线",
+   "trigger": "插销被死死扣住而身体受前推力道牵引导致百褶裙腰线发出紧绷脆响。"
+  },
+  {
+   "choice": "选择顶住急促警报完成微观刮刀撬别，抑或被恐怖高压击垮彻底慌乱失措。",
+   "exits": [
+    {
+     "cost": "需要极强的专业心理素质瞬间切换神态展现一线店员风范。",
+     "option": "挑落插销瞬间以无瑕的清纯甜美微笑顺势合上玻璃门解除报警。"
+    },
+    {
+     "cost": "需要调度领班承担微弱程序瑕疵责任。",
+     "option": "由主管领班高声汇报系统温控数据争取三秒缓冲。"
+    }
+   ],
+   "far": {
+    "consequence": "便利店品牌形象遭受严重打击，当事团队遭受集团严厉通报惩处。",
+    "due_days": 1,
+    "trigger": "冷柜报警引爆走光丑闻翻车现场"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "press_cooler_open_chime_ten_second_rush",
+   "immediate": {
+    "minutes": 1,
+    "text": "冷柜红灯闪烁蜂鸣刺耳，全店人员的注意力瞬间被急促警报吸引。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_convenience_cooler_aisle_center"
+   ],
+   "near": {
+    "deadline_minutes": 2,
+    "text": "若督导闻声快步转过通道转角，店员受困拉扯僵硬的身姿将当场暴露。"
+   },
+   "objective": "在报警声彻底引来督导快步冲入通道前完成硬核刮刀自救甩开束缚关门。",
+   "source": "person",
+   "start_minute": 135,
+   "tags": [],
+   "title": "冷柜开门过久蜂鸣警报响彻店内重压",
+   "trigger": "冷柜电磁感应蜂鸣器发出急促滴滴报警声，开门温控倒计时切入最后关头。"
+  }
+ ],
+ "region": "通宵便利店：冷藏饮料补货通道、冷柜合页死角、感应玻璃门与收银台",
+ "rules": [
+  {
+   "id": "rule_convenience_store_service_decorum",
+   "text": "二十四小时便利店仪容规范：营业期间店员必须保持制服严整与规范服务站姿，严禁衣衫不整、下装歪斜或发出非业务喧哗。"
+  },
+  {
+   "id": "rule_heavy_cooler_hydraulic_hinge_code",
+   "text": "立式冷柜重型阻尼合页构件严禁使用钝器盲目硬拽，防止损坏十万元级高精度气密冷封系统导致冷媒泄漏。"
+  },
+  {
+   "id": "rule_front_glass_window_modesty_strict",
+   "text": "面向街道全通透落地玻璃幕墙区域要求绝对严谨防走光，严禁出现任何敏感贴身私密物件外露暴露于公众视线。"
+  },
+  {
+   "id": "rule_adult_clerk_legal_code",
+   "text": "通宵值班人员均为年满二十周岁完全民事行为能力人，擅离职守或破坏冷链设备将依法承担赔偿责任与连带纪律处分。"
+  }
+ ],
+ "schema_version": 1,
+ "stage_labels": {
+  "acquainted": "组织规约",
+  "committed": "金石同盟",
+  "familiar": "台容核检",
+  "flirting": "暗光对视",
+  "intimate": "俯仰共济",
+  "stranger": "初登讲台",
+  "testing": "执夹撬簧"
+ },
+ "status": "draft",
+ "style_hint": "全落地窗的冷白灯光与门外年轻客流的目光。写夜班店员婴儿肥两颊的羞红、被掀起的百褶裙下翘起的毛绒猫尾与冷得发颤的雪白大腿、咬着唇的喘息，动作落在拆箱刮刀别卡爪上。",
+ "tension_engines": [
+  {
+   "id": "eng_cooler_hinge_tail_snag_jam",
+   "text": "毛绒猫尾肛塞的合金底座卡入重型冷柜阻尼回弹合页咬合齿缝，稍有直身即引发百褶裙撕裂大面积走光与八十公斤双层中空玻璃门回弹脱轴之恐怖机械死锁威压。"
+  },
+  {
+   "id": "eng_supervisor_five_step_arrival",
+   "text": "商圈巡查高管踏入玄关与冷柜开门十秒倒计时无情流逝，与纯情店员反手持工牌钛合金拆箱刮刀微观杠杆下压别开卡爪自救形成的秒级生死时速对抗。"
+  },
+  {
+   "id": "eng_window_student_gaze_dread",
+   "text": "全落地通透玻璃幕墙外主干道夜跑青年与路人目光穿透，与受困店员贴身短裙体面濒临失守带来的极端职业名誉社死心理拉锯。"
+  },
+  {
+   "id": "eng_skirt_lift_modesty_collapse",
+   "text": "纯白百褶短裙后摆被拉扯掀高，成年纯情模范兼职青年以非凡坚韧与机械智慧捍卫尊严神格之绝境自救。"
+  }
+ ],
+ "title": "纯欲夜班店员·冷柜合页咬死猫尾肛塞",
+ "tone": [
+  "冷气扑上大腿",
+  "猫尾卡进合页",
+  "督导推门五步",
+  "拆箱刮刀别卡爪"
+ ],
+ "twists": [
+  {
+   "category": "信息",
+   "id": "tw_info_scraper_blade_craft",
+   "requires": [
+    "convenience_clerk_an_xiao_nian"
+   ],
+   "text": "店员胸前工号牌夹层随身佩戴的特制航空钛合金拆箱刮刀采用两毫米加厚工艺，硬度极高且头部微翘带有平头硬角，专为微观杠杆破拆设计成自救利器。"
+  },
+  {
+   "category": "人事",
+   "id": "tw_spatial_cooler_hinge_bracket_shadow",
+   "requires": [
+    "mechanic_du_tie_jun"
+   ],
+   "text": "冷饮柜立式门框与货架侧板之间形成一处天然光影遮蔽盲区，为维保技师暗中托住门轴与店员下肢站立提供了物理隐蔽屏障。"
+  },
+  {
+   "category": "资源",
+   "id": "tw_supervisor_exclusive_veto_ban",
+   "requires": [
+    "night_supervisor_jiang_lin_chuan"
+   ],
+   "text": "巡查督导企图借职务之便违规擅闯补货工作通道的行径被随行记者当场记录，现场取消其单方面干预通道运营的特权。"
+  },
+  {
+   "category": "制度",
+   "id": "tw_psychological_pure_clerk_grit_burst",
+   "requires": [
+    "convenience_clerk_an_xiao_nian"
+   ],
+   "text": "看似甜美娇憨柔弱的纯情店员在死锁与督导逼近绝境中迸发出惊人冷静意志，单手运刀微观撬开合页展现出令人心折的极品坚韧。"
+  },
+  {
+   "category": "时限",
+   "id": "tw_director_water_curtain_buffer",
+   "requires": [
+    "night_supervisor_jiang_lin_chuan"
+   ],
+   "text": "领班在对讲机中果断下令通道灯光切换柔和漫射模式并挺身阻截督导，为店员刮刀撬开合页争取到无价黄金时间窗。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_social_mechanic_hinge_plate_brace",
+   "requires": [
+    "mechanic_du_tie_jun"
+   ],
+   "text": "看似少言寡语的商超冷链维保技师借巡检为由用厚手套死死托住合页受力底板，以硬核职业操守构筑最稳固操作后盾。"
+  },
+  {
+   "category": "意外",
+   "id": "tw_anti_pinch_gear_spring_yield",
+   "requires": [
+    "cashier_wen_ruo_xi"
+   ],
+   "text": "冷柜阻尼卡爪在航空钛合金刮刀三牛顿垂直杠杆力矩下顺畅别开弹起，毛绒猫尾金属插销顺势脱扣滑出化解百褶短裙撕裂危局。"
+  }
+ ]
+}

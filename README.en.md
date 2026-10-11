@@ -40,7 +40,7 @@ Every world is open. Pick one and play.
 Don't see what you want? Just say "custom world" (`自定义世界`), name the year and the place, and one is made for you on the spot.
 
 <details>
-<summary><b>See all 180 worlds at a glance (click to open)</b></summary>
+<summary><b>See all 195 worlds at a glance (click to open)</b></summary>
 <br>
 
 | World | In one line |
@@ -225,6 +225,21 @@ Don't see what you want? Just say "custom world" (`自定义世界`), name the y
 | Alpine Crystal Mine (阿尔卑斯矿洞) | A haughty gem appraiser grades a giant smoky quartz in a century-old Alpine crystal mine; a quake seals the airlock and her tungsten pen pries the catch. |
 | Merch Shop Loft (谷子店阁楼) | The night before a limited badge launch, with fans camping outside, a gentle shop owner and the electrician sort stock; the lift weight jams the loft and her press bar pries it. |
 | Expo Dressing Room (漫展更衣间) | A game voice actress cosplays Genshin's Kamisato Ayaka as a guest with the stage director at her side; at closing her armour zipper and the door lock at once. |
+| Late-Night Booth (深夜录音棚) | An otome voice actress is on take eleven of the final confession while the director watches through the glass; the airlock door seals under vacuum and a mic-stand wrench frees the valve. |
+| Palace Hair Room (大殿梳头间) | A period-drama hairdresser dresses the lead's headpiece while the art director nitpicks daily; an iron bar jams the hall door and her pin pliers lever out the bolt. |
+| Anniversary Corridor (周年庆更衣通道) | On the maid café's third anniversary the tsundere star finishes the encore with the manager waiting; a toppled locker pins the door and a square wrench pries the angle iron. |
+| Livestream Mishap Studio (画室投屏社死) | A guofeng illustrator's skirt is caught in the mounting press while her R-18 fan art plays on the living-room screen; her roommate is at the door, and a titanium spatula pries the plate. |
+| First Recital (首场独奏会) | A newly graduated heiress pianist gives her first solo recital with the butler in the wings; the piano linkage snags her leather choker and a steel score clip levers the crank. |
+| Welcome Podium (迎新讲台) | Mid-speech, the graduate union president's podium shoots up and clamps her blazer, popping buttons over a boned corset; a laser-pointer clip flips the catch. |
+| Fashion Week Backstage (时装周后台) | A blonde gyaru designer's debut show, run by her old senior as show director; a steel locker topples onto her skirt and an awl pries the back panel. |
+| Midnight Mass (子夜弥撒) | A choir's soprano cantor catches her collar on a brass hook in the organ duct as the organist plays the prelude; a steel score clip lifts the hook. |
+| Water-Mirror Tea Stage (镜面水景茶席) | A tea-school mistress performs at a heritage gala when the pump shaft winds up her qipao; her silver double-edged tea needle frees the jammed shaft. |
+| Sky Bar (万米空中吧台) | A first-class purser bends for a bottle and the chiller drawer rail bites her scarf choker, her partner in the galley; a double-hinged wine tool pries the damper. |
+| West Lake Challenge (西湖擂台赛) | China's woman champion in the China–Japan Go challenge snags her corset ties in the heated door track; an agate stone wedges in and lifts the cord. |
+| Universiade Umpire Chair (大运会裁判椅) | A grad-student campus star reaches the Universiade final, and between games the umpire-chair hook catches her skirt; a sweatband safety pin picks the knot. |
+| Champagne Tower (世纪婚礼香槟塔) | A socialite MC is pranked into silver cuffs that snag the champagne tower's tassel as the director counts ten; a pearl hairpin slips the latch. |
+| Esports Curtain Call (电竞夺冠谢幕) | A sweet top streamer stands to bow and her headset cable winds her bell choker into the chair frame, twenty seconds before the close-up; a keycap puller opens the ring. |
+| Auto Show Splitter (车展导流板) | A cool supercar model shifts pose and her ankle chain locks into the concept car's splitter as the VP climbs up with champagne; her titanium heel tip pops the clip. |
 
 </details>
 

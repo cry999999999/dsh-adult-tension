@@ -1810,7 +1810,7 @@
     "deadline_minutes": 8,
     "text": "考评组的记录员已经在本子上记了一笔。"
    },
-   "objective": "在流言传到考评组之前把它压下去。",
+   "objective": "在流言传到考评组之前把风声压下去。",
    "source": "rumor",
    "start_minute": 1405,
    "tags": [],

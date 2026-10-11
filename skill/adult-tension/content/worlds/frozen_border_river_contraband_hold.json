@@ -1844,7 +1844,7 @@
     "deadline_minutes": 10,
     "text": "闲话传到驾驶台，头目就会下来亲自看。"
    },
-   "objective": "在闲话传到走私团伙头目耳朵里之前把它掐断。",
+   "objective": "在闲话传到走私团伙头目耳朵里之前把话头掐断。",
    "source": "rumor",
    "start_minute": 1405,
    "tags": [],

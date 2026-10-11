@@ -1912,7 +1912,7 @@
     "deadline_minutes": 10,
     "text": "特使下车时要从茶馆门口走过。"
    },
-   "objective": "在议论传进特使耳朵之前把它压下去。",
+   "objective": "在议论传进特使耳朵之前把风声压下去。",
    "source": "rumor",
    "start_minute": 1226,
    "tags": [],

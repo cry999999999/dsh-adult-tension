@@ -1875,7 +1875,7 @@
     "deadline_minutes": 8,
     "text": "首长若在穿廊里听见这话，视察就会改成搜查。"
    },
-   "objective": "在流言传到首长耳朵里之前把它压下去。",
+   "objective": "在流言传到首长耳朵里之前把风声压下去。",
    "source": "rumor",
    "start_minute": 1225,
    "tags": [],

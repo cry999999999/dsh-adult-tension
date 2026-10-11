@@ -62,6 +62,13 @@ class ConstraintTest(unittest.TestCase):
         self.assertEqual(caught.exception.code, "NO_MATCH")
         self.assertTrue(caught.exception.extra["relax"])
 
+    def test_no_identity_for_the_player_gender_gives_no_match(self):
+        pack = dict(PACK, player_identities=[dict(i, gender="male") for i in PACK["player_identities"]])
+        conditions = opening.normalize_conditions({"mode": "daily", "locks": {"world_id": WORLD}, "player": {"gender": "female"}})
+        with self.assertRaises(AppError) as caught:
+            opening.plan(pack, 6, conditions)
+        self.assertEqual(caught.exception.code, "NO_MATCH")
+
     def test_leverage_pressure_registers_leverage_and_basis(self):
         state, _ = build("pressure", 2, locks={"pressure_id": "p_owner_men"})
         (lv,) = state["leverage"].values()

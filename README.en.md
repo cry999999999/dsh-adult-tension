@@ -40,7 +40,7 @@ Every world is open. Pick one and play.
 Don't see what you want? Just say "custom world" (`自定义世界`), name the year and the place, and one is made for you on the spot.
 
 <details>
-<summary><b>See all 165 worlds at a glance (click to open)</b></summary>
+<summary><b>See all 180 worlds at a glance (click to open)</b></summary>
 <br>
 
 | World | In one line |
@@ -210,6 +210,21 @@ Don't see what you want? Just say "custom world" (`自定义世界`), name the y
 | Front-Line Chapel (前线礼拜堂) | The white cleric turns a shelled chapel crypt into an aid station; the barrier overloads and she and the knight captain pry the blast door. |
 | Diving Hall Shaft (跳水馆深井) | The synchronized-swimming champion checks the shaft lights every night; the main valve jams and she picks the latch with the engineer in icy water. |
 | Bund Vault (外滩金库) | A warlord's daughter in Republican Shanghai always asks for the Chinese chief engineer; looters seal the flooding vault and her pistol magazine pries the bolt. |
+| Suzhou Embroidery Loft (姑苏绣轩) | A Suzhou embroidery heir and a timber-frame builder share a clan-hall loft through the plum rains; a Taihu flood jams the carved door and her steel shears pry the mortise pin. |
+| Mogao Buddha Hall (莫高窟大佛阁) | A fresco restorer and the cliff-top geotech engineer have been neighbours for two years; a black sandstorm seals Cave 96 and her titanium spatula turns the jammed bolt. |
+| Tsing Yi Floating Dock (青衣浮坞) | A Hong Kong shipping heiress inspects the family freighter in dry dock with the bosun; a signal-10 storm surge floats the ship and her sextant wrench opens the manhole. |
+| Dali Court Ice Cellar (大理寺冰鉴) | In a Tang summer the court coroner guards a poisoned corpse in the city's coolest cellar while the vice-minister visits daily; assassins seal the door and her probe flips the lock. |
+| Imperial Observatory (钦天监摘星楼) | A Tang astronomer keeps the water clock while her partner keeps the armillary gears; a summer lightning storm locks the gears on her sash and a bronze rule pries them apart. |
+| Changbai Crevasse (长白山天坑) | A late-Qing ginseng-hunter chief guides a geology survey to Heaven Lake; an avalanche crushes the rope carabiner and her bone-handled knife pries it open. |
+| Qinhuai Pleasure Boat (秦淮画舫) | A Ming-era pipa courtesan plays nightly while a river constable guards the bow; a grain barge rams the boat and her silver tuning key frees her pinned skirt. |
+| Lujiazui Skybridge (陆家嘴天桥) | A top-firm M&A partner negotiates for three weeks on a 62nd-floor glass skybridge; a typhoon slams the fire door on her skirt and her pen clip trips the switch. |
+| Awards Stage (颁奖礼转台) | A triple-crown film queen and the lighting designer who built her winning spotlight; a riot jams the revolving stage on her gown and her trophy pries the cam. |
+| Sea Launch Platform (海上发射平台) | A rocket chief engineer waits out a launch window on a South China Sea platform; lightning jams the 50 m service cradle and her steel probe flips the pawl. |
+| Wire-Flying Studio (影棚威亚) | A hanfu model has spent two weeks on wires with the stunt choreographer below; a blown light stalls the winch and her brass brooch hook picks the knot. |
+| GK Spray Booth (GK喷漆房) | A figure painter on her fifth all-nighter and the HVAC engineer who keeps "fixing" the fan; the booth door locks under vacuum and her airbrush needle pries the rail. |
+| Alpine Crystal Mine (阿尔卑斯矿洞) | A haughty gem appraiser grades a giant smoky quartz in a century-old Alpine crystal mine; a quake seals the airlock and her tungsten pen pries the catch. |
+| Merch Shop Loft (谷子店阁楼) | The night before a limited badge launch, with fans camping outside, a gentle shop owner and the electrician sort stock; the lift weight jams the loft and her press bar pries it. |
+| Expo Dressing Room (漫展更衣间) | A game voice actress cosplays Genshin's Kamisato Ayaka as a guest with the stage director at her side; at closing her armour zipper and the door lock at once. |
 
 </details>
 

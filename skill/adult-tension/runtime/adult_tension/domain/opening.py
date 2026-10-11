@@ -137,6 +137,8 @@ def plan_candidates(pack, mode, conditions):
             continue
         if not _combo_gender_ok(pack, combo, preference):
             continue
+        if not identities and custom_identity is None:
+            continue
         if identities and not any(_identity_fits(i, combo) for i in identities):
             continue
         combos.append(combo)

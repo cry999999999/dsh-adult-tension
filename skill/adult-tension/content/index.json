@@ -108,6 +108,25 @@
   },
   {
    "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "乱世军阀混战与前朝皇陵古墓机关探险期",
+   "id": "ancient_tomb_gravity_sand_spill",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "千尺地下皇陵地宫悬空玄武岩天平翻板大殿",
+   "status": "released",
+   "summary": "军阀盗墓工兵开炮炸裂地下承重天花石券，千尺皇陵悬空玄武岩巨殿遭遇万钧流沙倒灌自毁。中央重力天平翻板自锁机关在失衡偏载冲击下枢轴抱死，两翼翻板正以倾角三十度缓缓倾覆滑向深渊毒刺陷坑，穹顶赤红铁砂如瀑布倾泻漫过膝盖。发丘摸金当任女掌门与同门摸金校尉，借发丘天官纯金降魔杵卡入翻板枢轴配重暗孔，借纯力学力矩合力撬正平衡卡榫自救。",
+   "title": "皇陵地宫·流沙翻板重力死局"
+  },
+  {
+   "content_tags": [
     "intimate",
     "workplace",
     "workplace_power",
@@ -368,6 +387,25 @@
   },
   {
    "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "近未来赛博朋克巨企垄断与霓虹反抗军纪元",
+   "id": "cyberpunk_neon_elevator_cable_crisis",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "千米高空跨城轨道重型悬挂穿梭缆车车厢",
+   "status": "released",
+   "summary": "高空交火炸断千米跨城穿梭主缆索，重型双层悬挂缆车沿倾斜钢轨疯狂失速滑坠。底盘备用液压制动钳遭电子蠕虫病毒锁死断电，强对流狂风撕裂车顶玻璃，千米高空坠毁倒计时凄厉长鸣。反抗军首席冷艳女黑客技师总监与滞留车厢的退役佣兵，借单兵折叠式电磁破拆重型扳手充当纯机械物理卡销，冒死爬入底盘检修舱强行卡死棘轮轨道制动齿自救。",
+   "title": "赛博霓虹·高空缆车悬挂绝境"
+  },
+  {
+   "content_tags": [
     "intimate",
     "workplace",
     "workplace_power",
@@ -433,6 +471,20 @@
    "status": "released",
    "summary": "万米高空遭遇超级雷暴，私人公务机连番失重下坠。二十三岁的冷傲女总裁幽闭恐惧发作，扯下特助的真丝领带缠在两人手腕上当救命的锚，在颠簸的真皮大床上缩进特助怀里。主从地位倒转，傲慢的面具一层层剥落。",
    "title": "万米高空：女总裁与领带"
+  },
+  {
+   "content_tags": [],
+   "default_person": "second",
+   "era": "现代都市·漫展开展前夜",
+   "id": "doujin_artist_deadline_blackout",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "都市创意园区·复式LOFT画室核心区",
+   "status": "released",
+   "summary": "漫展前夜凌晨暴雨跳闸断电，复式画室六十公斤手绘台多轴悬臂伺服电机抱死，齿轮槽紧紧咬住神级同人女画师真丝睡裙吊带。截稿印厂快递员楼下按铃倒计时唯余二十秒，走廊催稿编辑皮鞋踏地声逼近仅剩十五息；画师冷静自持，倒执随身数位笔将纯钛金属卡筒切入齿隙死穴，手腕施展特定杠杆巧劲挑退防逆棘爪从容脱困抢工。",
+   "title": "同人画师·漫展前夜死线·手绘台多轴升降悬臂卡死真丝吊带睡裙"
   },
   {
    "content_tags": [
@@ -513,6 +565,20 @@
    "status": "released",
    "summary": "连日暴雨地脉震荡神乐殿结界微晃，伏魔殿挑空八角神乐主祭台重型鎏金青铜华盖受震倾坠，铜柱卡舌死死咬扣大巫女之羽二重长襦袢系带。殿顶瓦砾崩塌二十秒倒数警报急促，外围增援防灾队脚步声穿过回廊逼近唯余十五息；大巫女沉着不乱，倒执随身法器将合金转轴硬角切入卡榫死穴，手腕施展特定杠杆巧劲挑退锁舌从容脱困迎客。",
    "title": "退魔巫女·残破神乐·伏魔殿八角祭台青铜华盖断裂咬死白丝千早"
+  },
+  {
+   "content_tags": [],
+   "default_person": "second",
+   "era": "神魔旧纪元末期",
+   "id": "fallen_demon_empress_throne_pact",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "悬空神殿残破王座大厅",
+   "status": "released",
+   "summary": "悬空石砌神殿遭光矛轰击震塌拱顶，精金王座受冲击形变死死咬合暗红礼服裙摆。纯血魔王千金皇女临危不乱，反持王冠以淬火硬角探入精金凹槽借杠杆偏转力道顶退卡块脱身，在联军圣骑士破门瞬间在护卫大氅遮蔽下从容撤离反转破局。",
+   "title": "败北魔王·契约倒错·残破神殿精金王座扶手形变夹死暗红礼服裙摆"
   },
   {
    "content_tags": [
@@ -912,6 +978,20 @@
    "title": "沉船压载舱：冷傲千金"
   },
   {
+   "content_tags": [],
+   "default_person": "second",
+   "era": "近现代豪门博弈时期",
+   "id": "heiress_panic_room_stalemate",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "半山临海独栋豪宅安全屋",
+   "status": "released",
+   "summary": "豪宅遭遇武装突袭断电，重装安全屋气动防盗门偏位死锁夹住吊带睡裙。名门千金临危不乱，以加厚修甲锉平直金属刃插入离合器缝隙短路自检弹开卡栓脱困，在雇佣兵烧穿门板刹那借保镖大氅掩护踏入逃生密道反转破局。",
+   "title": "名门千金·绑架暗格·豪宅衣帽间重装安全屋钢栓抱死真丝睡裙暗扣"
+  },
+  {
    "content_tags": [
     "intimate",
     "workplace",
@@ -955,6 +1035,20 @@
    "status": "released",
    "summary": "帝国凛冬政变，年满二十一岁的第一顺位继承人金发皇女在近卫军覆灭后浑身湿透，与年满二十岁的戴罪流放游侠逃进被雪崩封门的废弃猎人小屋。皇女跌落雪谷严重失温，结冰的鲸骨胸衣嵌进皮肉，只能命这个贱民用猎刀从背后割开。熊皮毯、最后三根松木、门外的叛军火把——这一夜只为活命；皇冠与贱籍之间那道墙，要等天亮才倒。",
    "title": "雪山猎屋：傲慢皇女"
+  },
+  {
+   "content_tags": [],
+   "default_person": "second",
+   "era": "欧式古典裁判所时期",
+   "id": "inquisition_dungeon_pact_reversal",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "圣殿裁判所阶梯大厅",
+   "status": "released",
+   "summary": "欧式石砌审判大殿底槽突发水银漫灌，防护重门失控卡死黑金长袍与纯银锁扣。前首席女法官沉着反握圣痕徽章以倒角钢轴撬起卡爪脱扣，在死线倒数与武装骑士逼近前脱险反转控场。",
+   "title": "异端审判·反转牢笼·圣殿裁判所铸铁旋转重闸咬死黑金法袍暗扣"
   },
   {
    "content_tags": [
@@ -1263,6 +1357,25 @@
   },
   {
    "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "冷战末期地下战略核工程与废弃核井封存期",
+   "id": "nuclear_silo_blast_door_lockdown",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "地下百米核发射井超重型碳化钨防爆闸门大厅",
+   "status": "released",
+   "summary": "冷战年代封存至今的废弃核导弹发射深井里，一台老式电子管告警机被电磁脉冲误触，地下自毁密封程序被激活。百吨级碳化钨防核爆滑动闸门断电沿重力斜轨缓慢下沉闭锁，主液压站电磁溢流阀抱死，水泵停摆迫使井底冷却系统逼近临界点。退役发射指挥女军官与核防化士官长，借发射台镀铬高强度合金重型手动复位把手插入液压应急释压孔，合力以纯力学力矩摇动减压阀阻卡自救。",
+   "title": "废弃核井·防爆闸门死锁"
+  },
+  {
+   "content_tags": [
     "intimate",
     "workplace",
     "workplace_power",
@@ -1318,6 +1431,25 @@
    "status": "released",
    "summary": "巴黎歌剧院首演盛典之夜宾朋满座，浮华台面之下庞大蒸汽液压齿轨与二十米飞桥悬空运转，各方名流暗潮涌动。",
    "title": "古典戏剧·巴黎魅影·大剧院升降乐池机械飞桥卡滞"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "近未来深空天梯轨道建设与空天防御纪元",
+   "id": "orbital_elevator_cable_failure",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "三万米高空轨道电梯对流层重型配重锚定外露机库",
+   "status": "released",
+   "summary": "近地轨道袭击引爆外层配重环，三万米对流层顶端主碳纳米缆绳发生局部撕裂偏载。重型电磁张力绞盘在电涌中烧毁抱死断电，千吨级悬臂导轨正向虚空滑脱，悬臂每往下滑一段，整座机库就随之短暂失重，零下六十度风暴与三万米坠落绝境一齐压来。空天防卫军冰山女上尉与当值机动工程兵，借特勤外骨骼实心钛钽合金加长破拆撬杠卡入绞盘偏心释放槽，以纯机械力矩合力强行撬转离合脱扣自救。",
+   "title": "轨道电梯·对流层锚定断缆"
   },
   {
    "content_tags": [
@@ -1608,6 +1740,44 @@
   },
   {
    "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "蒸汽机械工业革命与皇家浮空战舰空战纪元",
+   "id": "steampunk_airship_furnace_rupture",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "皇家无畏级重型浮空战舰主蒸汽动力防爆轮机舱",
+   "status": "released",
+   "summary": "高空炮战弹片击穿皇家飞艇主冷凝循环管，巨型差动式高压蒸汽锅炉安全阀主弹簧在超温中脆性崩断。主防爆截止阀铸铁手轮在六十个大气压冲击下过载断裂崩飞，两百二十度过热干蒸汽疯狂喷涌，压力表指针直逼炸膛红线。帝国空勤首席女机械师总监与当值炉头，借特制高强度淬火空心套管长摇把插进阀杆偏心内六角暗槽，借力矩强拧阀杆合力闭气卸压自救。",
+   "title": "蒸汽朋克·飞艇主炉防爆舱"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "近未来深海万米科考与深渊勘探纪元",
+   "id": "subsea_abyss_airlock_stalemate",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "万米海沟深海科考站双向耐压减压气闸舱",
+   "status": "released",
+   "summary": "深渊断裂带强震撕裂外层声呐浮标基座，万米深海科考站双向耐压减压气闸过渡舱遭遇超高压海水微渗。双向水力平衡减压阀主轴在大压差下产生两毫米金属塑性形变抱死，舱内冰冷刺骨的高压海水持续暴涨，急速减压病与深海挤压双重绝境笼罩。首席深潜技术主管总师与同舱副驾驶员借深潜器钛合金多功能取样机械爪实心指骨充当撬杠，反向卡入水压蝶阀复位卡槽撬正阀芯自救。",
+   "title": "深海潜航·减压阀绝境"
+  },
+  {
+   "content_tags": [
     "intimate",
     "workplace",
     "workplace_power",
@@ -1801,6 +1971,58 @@
    "title": "特搜审讯室：冷艳侧写官与戴铐队长"
   },
   {
+   "content_tags": [],
+   "default_person": "second",
+   "era": "现代都市·万人盛典之夜",
+   "id": "top_idol_van_wardrobe_breakout",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "盛典会展中心·地下贵宾停车匝道",
+   "status": "released",
+   "summary": "红毯盛典地库出口狂热围堵砸窗，豪华保姆车急刹导致中排座椅滑轨发生严重扭曲抱死，钢槽紧紧咬住顶流女星高定礼服后腰真丝飘带。盛典压轴倒计时唯余二十秒，车外代拍长焦手电强光晃动逼近仅剩十五息；女星冷静自持，倒执随身化妆工具将合金铲刃切入导轨死穴，手腕施展特定杠杆巧劲挑退防逆棘齿从容脱困迎检。",
+   "title": "偶像女星·保姆车暗角·豪华保姆车电动旋转座椅导轨咬死真丝礼服"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "重工业干线大提速与高原重载蒸汽列车时代",
+   "id": "train_boiler_overpressure_tunnel_crisis",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "高原特长单线闭塞隧道内万吨重联重型蒸汽机车驾驶舱",
+   "status": "released",
+   "summary": "高原特长单线隧道内突发落石塌方砸断排汽支管，万吨重载列车困于封闭隧道深处。主调速汽阀拉杆在剧烈颠簸中脱销抱死，锅炉全开暴冲加速直奔前方塌方石堆。驾驶室内两百四十度高温过热蒸汽疯狂喷涌，浓烟与缺氧步步紧逼。高原首任女机车司机与当值老司炉长，借司炉重型高碳钢加长双头梅花扳手卡入截断阀芯曲轴死角，以纯力学力矩合力强行旋转曲轴关闭主汽阀脱困自救。",
+   "title": "铁道惊魂·高原隧道锅炉超压"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "现代都市保税港区经侦交锋期",
+   "id": "undercover_detective_meat_locker",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "滨海万吨肉联厂大型零下25℃排管冷库主通道",
+   "status": "released",
+   "summary": "暴风雨夜，跨国走私集团加急将伪装在冻肉柜中的走私芯片运出冷库。经侦支队卧底女警正用防爆手电记录货箱编码，外部重型铸铁转轮锁却被巡检员误触死锁，氨气排管轻微结霜渗出刺鼻白雾。零下二十五度极寒降临，女警必须与困在库内的同伴借手电合金攻击头齿纹反向别断百叶窗合页逃生。",
+   "title": "卧底刑警·冻库生死线"
+  },
+  {
    "content_tags": [
     "intimate",
     "workplace",
@@ -1823,6 +2045,25 @@
    "status": "released",
    "summary": "大革命暴民围城前夜凡尔赛宫化装舞会，二十八岁冷傲公爵夫人身怀调动王室近卫军阻截暴动之密诏，在偏殿更衣室内迫使二十九岁御前侍卫长以佩剑挑断紧绷之鲸骨胸衣系带。门外是随时冲入抓捕叛国者的国民议会搜查队，门内是决定波旁王朝最后生机的密函。在宫廷倾覆与阶级毁灭之窒息死局中，两个心怀私密野心之成熟男女在香粉与铁锈硝烟中展开势均力敌之生死盟约与野性较量。",
    "title": "凡尔赛更衣室：冷傲公爵夫人与御前侍卫长"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "intimate",
+    "workplace_power"
+   ],
+   "default_person": "second",
+   "era": "欧式古典宫廷暗黑奇幻纪元（王城政变前夜）",
+   "id": "villainess_dungeon_pardon_standoff",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "王城皇家地下玄武岩重型死牢石厅",
+   "status": "released",
+   "summary": "王位政变在黎明爆发，被构陷定罪的公爵千金被关押在地下深处的重水压死牢石厅。王城被围狱卒溃散，重型水压断头台牵引滑轮绳索断裂，巨大的平衡配重铁闸轰然砸落咬死牢门栅栏，地下暗河水位上涨，青年看守骑士与恶役千金在水淹重厅的绝境中展开硬核滑轮销轴机械破拆自救。",
+   "title": "恶役千金·断头台前夜死牢"
   },
   {
    "content_tags": [
@@ -1865,6 +2106,25 @@
    "status": "released",
    "summary": "强酸暴雨锈死地下负三层重力隔离门之夜，二十七岁冷傲首席女医官长手握避难所仅存的三支纯净抗辐射血清与每日氧气配额开关。二十八岁的重装拾荒突击队长因肺部急性吸入放射性酸尘濒死闯入诊疗所，怀中揣着从地表禁区拼死带回的军规核电池。外有残暴安全保卫长企图以戒严军令强抢血清与能源，内有冰冷铁床前尊严剥离的清醒对峙。在窒息倒计时前，两个背负血海宿怨的孤狼在狭小诊室展开绝望而炽热的同盟缔结。",
    "title": "酸雨避难所：冷傲女军医与濒死拾荒队长"
+  },
+  {
+   "content_tags": [
+    "workplace",
+    "disaster",
+    "crime",
+    "intimate"
+   ],
+   "default_person": "second",
+   "era": "核冬天末世辐射尘暴与地下废土期",
+   "id": "wasteland_vault_airlock_filter",
+   "modes": [
+    "daily",
+    "pressure"
+   ],
+   "region": "第07号地下重型防辐射避难所双向气闸大厅",
+   "status": "released",
+   "summary": "辐射酸雨风暴撕裂外层滤网，第07号避难所重型双向防辐射气闸大厅遭遇毒气回灌。主控室电控重型齿轮气阀电机在雷击电涌中烧毁抱死，外界超标千倍的放射性粉尘逼近气闸外层。驻所首席女净化师手持辐射探测仪，与滞留在气闸过渡区的荒野游侠借探测器实心钛铝合金加长支架充当撬杠，合力强拧手动复位伞齿轮脱困。",
+   "title": "废土末日·避难所气密门"
   },
   {
    "content_tags": [

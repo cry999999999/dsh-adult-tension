@@ -40,7 +40,7 @@ Every world is open. Pick one and play.
 Don't see what you want? Just say "custom world" (`自定义世界`), name the year and the place, and one is made for you on the spot.
 
 <details>
-<summary><b>See all 105 worlds at a glance (click to open)</b></summary>
+<summary><b>See all 120 worlds at a glance (click to open)</b></summary>
 <br>
 
 | World | In one line |
@@ -150,6 +150,21 @@ Don't see what you want? Just say "custom world" (`自定义世界`), name the y
 | Abyss Lift (深渊吊篮) | Rockfall on the abyss's 99th floor tilts the lift; the exiled saint's robe catches in the winch as inquisitors' torches shine down. |
 | Hanging Monorail (悬空单轨) | A typhoon derails a river-crossing monorail; the gyaru's skirt is caught in the door arm as repair crews sweep their flashlights closer. |
 | Kagura Hall (伏魔神乐殿) | A storm brings down the bronze canopy of the demon-sealing hall; the exorcist miko's sash is pinned as reinforcements cross the corridor. |
+| Idol Van (顶流保姆车) | Paparazzi swarm the gala's garage exit; the van's seat rail bites the star's mermaid gown with twenty seconds to the closing walk. |
+| Con Eve Blackout (漫展前夜) | A storm kills the power the night before the con; the drawing arm pins the doujin artist's nightgown strap as the print courier rings below. |
+| Tribunal Mercury (审判庭水银) | Mercury floods the tribunal hall; the rotating gate bites the inquisitor's black-gold robe while the bishop's knights batter the door. |
+| Fallen Demon Throne (败北魔王) | A lance of light shatters the floating temple; the throne arm clamps the demon princess's gown as the paladins read the last line of surrender. |
+| Mansion Panic Room (豪宅安全屋) | Raiders cut the power to a hillside mansion; the panic-room bolt clamps the heiress's slip while a cutting torch eats through the door. |
+| Villainess Cell (恶役千金死牢) | At a coup's dawn the guillotine counterweight seals the cell and the river floods in; a young guard and the framed duke's daughter must strip the pulleys themselves. |
+| Meat Locker (冷库卧底) | A storm night at a smuggling cold store; the wheel lock seals shut on an undercover detective and a partner at minus twenty-five. |
+| Neon Cable Car (霓虹缆车) | The main cable snaps a kilometre up; the double-deck car slides, and a hacker chief and an ex-merc crawl underneath to jam the ratchet. |
+| Airship Boiler (飞艇锅炉) | Shrapnel breaks a royal airship's condenser and the safety valve snaps; the chief engineer and the stoker wrench the valve with a long crank. |
+| Tunnel Boiler (隧道锅炉) | A landslide in a highland tunnel jams a heavy train's throttle toward the rubble; the driver and the old fireman fight for the cut-off valve in the steam. |
+| Abyss Airlock (深海气闸) | A quake bends the decompression valve of a deep-sea station; seawater floods the lock as the chief engineer and the co-pilot pry with a sampling claw. |
+| Vault Airlock (避难所气闸) | An acid storm tears the filters and fries the airlock motor; the purifier and a wasteland ranger crank the manual bevel gear together. |
+| Tomb Quicksand (皇陵流沙) | Warlord sappers crack an imperial tomb; quicksand pours in and the gravity flap tilts toward the spike pit as the tomb-raider matriarch jams the pivot. |
+| Orbital Elevator (轨道电梯) | The main cable tears thirty kilometres up; every slip of the arm throws the hangar weightless as the captain and an engineer lock the rail. |
+| Silo Blast Door (核井闸门) | A Cold War alarm misfires in an abandoned missile silo; the hundred-ton blast door sinks shut as the commander and the sergeant crank the relief valve. |
 
 </details>
 

@@ -419,6 +419,26 @@ class StatusTest(unittest.TestCase):
         near = next(e for e in self.state["events"].values() if e["tier"] == "near")
         self.assertIn(near["title"], text)
 
+    def test_relationship_stages_use_the_plain_words(self):
+        # A world's own stage names ("共顶钨钢") are flavor for the narrator; a receipt
+        # the model repeats verbatim says 陌生、认识…… (D85).
+        from adult_tension.domain import state as SS
+        from adult_tension.domain import structure as ST
+
+        own = dict(zip(ST.STAGES, ("共顶钨钢", "摸索泄孔", "同舟共济", "心照不宣", "试锋", "同衾", "契约")))
+        styled = dict(self.content, world=dict(self.content["world"], stage_labels=own))
+        npc = next(c for c in self.state["scene"]["present"] if c != "player" and SS.edge(self.state, c, "player"))
+        self.state, _ = apply(self.state, commit("attempt", [{"op": "npc_response", "npc_id": npc, "response": "genuine", "note": "接过了"}, {"op": "relationship", "from": npc, "to": "player", "trust_delta": 1, "reason": "你帮了一把"}], acts_on=[npc]))
+        lines = STATUS.lines(self.state, styled)
+        sections = STATUS.detail_sections(self.state, styled)
+        text = "".join(lines) + "".join(item for section in sections for item in section["items"])
+        for word in own.values():
+            self.assertNotIn(word, text)
+        stage = SS.edge(self.state, npc, "player")["stage"]
+        self.assertIn("（%s）" % ST.STAGE_LABELS[stage], lines[2])
+        changes = next(s for s in sections if s["title"] == "关系变化的原因")["items"]
+        self.assertTrue(any("（%s）：" % ST.STAGE_LABELS[stage] in item for item in changes), changes)
+
     def test_detail_lists_only_what_the_player_knows(self):
         sections = STATUS.detail_sections(self.state, self.content)
         secrets = next(s for s in sections if s["title"] == "你知道的秘密")["items"]

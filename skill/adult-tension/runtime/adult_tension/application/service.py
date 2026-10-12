@@ -435,6 +435,8 @@ def get_context(ctx, payload):
         out["commit_template"] = CX.commit_template(state)
     if preview_time is not None:
         out["preview"] = simulation.preview(state, content["world"], preview_time)
+        # its own key: the next ordinary turn still fills the commit_template
+        out["skip_template"] = CX.skip_template(state, preview_time, out["preview"])
     if payload["want_twist"]:
         candidates, note = simulation.requested_twists(state, content["world"])
         out["twist_candidates"] = candidates

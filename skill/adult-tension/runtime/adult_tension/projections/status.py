@@ -1,7 +1,9 @@
 """`status` views: six plain lines, 状态+ sections, and the debug view.
 
 Plain-language views never show field names or relationship numbers, and
-状态+ lists only what the player character knows.
+状态+ lists only what the player character knows. Relationship stages use the
+plain words (陌生、认识……): a world's own stage names are flavor for the
+narrator, often action phrases, and read wrong in a receipt.
 """
 
 from ..domain import clock as CL
@@ -83,7 +85,7 @@ def lines(state, content):
         tension = tension_words(edge["tension"])
         if tension:
             words.append(tension)
-        relations.append("%s%s（%s）" % (_name(state, cid), "，".join(words), SS.stage_label(world, edge["stage"])))
+        relations.append("%s%s（%s）" % (_name(state, cid), "，".join(words), ST.STAGE_LABELS[edge["stage"]]))
     out.append("关系：%s" % ("；".join(relations) if relations else "身边没有人"))
     now = CL.to_abs(state["clock"])
     todo = ["%s（%s）" % (e["title"], remaining(CL.to_abs(e["due"]) - now)) for e in _player_events(state)[:3]]
@@ -118,7 +120,7 @@ def detail_sections(state, content):
             continue
         reasons = [h["reason"] for h in edge["history"][-2:]]
         if reasons:
-            changes.append("%s（%s）：%s" % (_name(state, edge["from"]), SS.stage_label(world, edge["stage"]), "；".join(reasons)))
+            changes.append("%s（%s）：%s" % (_name(state, edge["from"]), ST.STAGE_LABELS[edge["stage"]], "；".join(reasons)))
     sections.append({"title": "关系变化的原因", "items": changes or ["还没有值得一提的变化"]})
     deadlines = []
     for event in _player_events(state):

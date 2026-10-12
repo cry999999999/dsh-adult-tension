@@ -53,6 +53,29 @@ def new_game(data_dir, seed=5, mode="daily", rid="req_new_000001", **extra):
     return env["data"]
 
 
+def fill_template(value, data):
+    """A commit_template filled in mechanically: every placeholder gets a plain
+    value and "a|b" its first choice."""
+    if isinstance(value, dict):
+        return {k: fill_template(v, data) for k, v in value.items()}
+    if isinstance(value, list):
+        return [fill_template(v, data) for v in value]
+    if isinstance(value, str):
+        if value.startswith("<上一次返回的 next_request_id"):
+            return data["next_request_id"]
+        if value.startswith("<上一次返回的 revision"):
+            return data["revision"]
+        if value.startswith("<小写点分键"):
+            return "template.first.detail"
+        if value.startswith("<-2..2"):
+            return 1
+        if value.startswith("<"):
+            return "照模板写的一句"
+        if "|" in value:
+            return value.split("|")[0]
+    return value
+
+
 class ConcurrencyAndCrashTest(unittest.TestCase):
     def test_two_processes_commit_the_same_revision(self):
         with temp_dir() as tmp:
@@ -169,26 +192,6 @@ class EncodingAndInputTest(unittest.TestCase):
     def test_the_commit_template_passes_once_filled_in(self):
         # new-game hands back a commit-turn input to fill in; filled mechanically it must pass,
         # so it can never drift from the operation schemas.
-        def fill(value, data):
-            if isinstance(value, dict):
-                return {k: fill(v, data) for k, v in value.items()}
-            if isinstance(value, list):
-                return [fill(v, data) for v in value]
-            if isinstance(value, str):
-                if value.startswith("<上一次返回的 next_request_id"):
-                    return data["next_request_id"]
-                if value.startswith("<上一次返回的 revision"):
-                    return data["revision"]
-                if value.startswith("<小写点分键"):
-                    return "template.first.detail"
-                if value.startswith("<-2..2"):
-                    return 1
-                if value.startswith("<"):
-                    return "照模板写的一句"
-                if "|" in value:
-                    return value.split("|")[0]
-            return value
-
         with temp_dir() as tmp:
             data_dir = os.path.join(tmp, "data")
             opened = new_game(data_dir)
@@ -197,10 +200,11 @@ class EncodingAndInputTest(unittest.TestCase):
             self.assertEqual(template["session_id"], opened["session_id"])
             present = [cid for cid in opened["context"]["scene"]["present"] if cid != "player"]
             self.assertEqual(template["acts_on"], present[:1])
-            body = json.dumps(fill(template, opened), ensure_ascii=False).encode("utf-8")
+            body = json.dumps(fill_template(template, opened), ensure_ascii=False).encode("utf-8")
             code, env, _raw = run_cli(["commit-turn", "--input-file", "-"], data_dir, stdin_bytes=body, env=ENV)
             self.assertEqual(code, 0, env)
             self.assertEqual([a["op"] for a in env["data"]["applied"]][:5], ["npc_response", "npc_action", "add_fact", "relationship", "advance_time"])
+            self.assertEqual(env["data"]["context"]["last_quotes"], ["照模板写的一句"])  # quotes are plain strings (D83)
 
     def test_input_errors_have_json_paths(self):
         with temp_dir() as tmp:
@@ -320,6 +324,51 @@ class TimeCommandsTest(unittest.TestCase):
             self.assertTrue(again["data"]["replayed"])  # a retried undo does not undo twice
             code, env, _raw = run_cli(["undo-turn"], data_dir, payload=dict(undo, request_id="req_undo_00002", expected_revision=env["data"]["revision"]), env=ENV)
             self.assertEqual((code, env["error"]["code"]), (10, "INVARIANT_VIOLATION"))
+
+
+    def test_the_fast_forward_template_passes_once_filled_in(self):
+        # A preview comes with the commit for that skip: advance_time as previewed, then one
+        # offscreen beat per required NPC (D86). Filled in mechanically it must pass.
+        with temp_dir() as tmp:
+            data_dir = os.path.join(tmp, "data")
+            opened = new_game(data_dir, seed=11, mode="pressure", rid="req_new_time02")
+            sid = opened["session_id"]
+            state, content, revision = db_state(data_dir, sid)
+            npc = next(c for c in state["scene"]["present"] if c != "player")
+            away = next(loc["id"] for loc in content["world"]["locations"] if loc["id"] != state["scene"]["location_id"])
+            leave = {
+                "session_id": sid,
+                "request_id": opened["next_request_id"],
+                "expected_revision": revision,
+                "action_mode": "continue",
+                "player_input": "继续",
+                "operations": [{"op": "exit_scene", "character_id": npc, "to_location_id": away}],
+                "content_tags": [],
+                "summary": "有人先走了。",
+                "open_action": "门还开着",
+            }
+            code, env, _raw = run_cli(["commit-turn"], data_dir, payload=leave, env=ENV)
+            self.assertEqual(code, 0, env)
+            left = env["data"]
+            code, env, _raw = run_cli(["get-context"], data_dir, payload={"session_id": sid, "preview_time": {"days": 1}}, env=ENV)
+            self.assertEqual(code, 0, env)
+            preview, template = env["data"]["preview"], env["data"]["skip_template"]
+            self.assertNotIn("requests", preview)  # they bind the commit after the skip, not this one
+            self.assertNotIn("commit_template", env["data"])  # the ordinary turns keep theirs
+            self.assertEqual(template["operations"][0], {"op": "advance_time", "days": 1})
+            beats = [op for op in template["operations"] if op["op"] == "offscreen_beat"]
+            self.assertTrue(beats)
+            self.assertEqual([b["npc_id"] for b in beats], [p["npc_id"] for p in preview["required_beats"]])
+            self.assertEqual((template["action_mode"], template["acts_on"]), ("continue", []))
+            self.assertNotIn("player_authorized", template)
+            self.assertNotIn("chapter_summary", template)
+            body = json.dumps(fill_template(template, left), ensure_ascii=False).encode("utf-8")
+            code, env, _raw = run_cli(["commit-turn", "--input-file", "-"], data_dir, stdin_bytes=body, env=ENV)
+            self.assertEqual(code, 0, env)
+            self.assertEqual(env["data"]["resolved_events"], preview["resolved_events"])
+            self.assertTrue(env["data"]["context"]["requests"]["chapter_summary"])
+            code, env, _raw = run_cli(["get-context"], data_dir, payload={"session_id": sid, "depth": "full"}, env=ENV)
+            self.assertIn("chapter_summary", env["data"]["commit_template"])  # asked of the next commit
 
 
 class CustomWorldTest(unittest.TestCase):

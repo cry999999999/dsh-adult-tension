@@ -312,27 +312,66 @@ def commit_template(state):
     player = state["player_id"]
     present = [cid for cid in state["scene"]["present"] if cid != player]
     npc = present[0] if present else "<npc_id>"
-    return {
+    return _template(
+        state,
+        {
+            "action_mode": "attempt|result|continue|wait",
+            "player_input": "<玩家原话>",
+            "player_authorized": False,
+            "acts_on": [npc],
+            "operations": [
+                {"op": "npc_response", "npc_id": npc, "response": "refuse|negotiate|partial|surface|genuine", "note": "<怎么回应，≤80 字；surface 另写 true_intent>"},
+                {"op": "npc_action", "npc_id": npc, "action": "<这个 NPC 自己做了什么>"},
+                {"op": "add_fact", "key": "<小写点分键，如 %s.secret.letter>" % (npc if present else "npc"), "text": "<正文里新写出、以后要用到的细节>", "visibility": "public", "origin": "observed"},
+                {"op": "relationship", "from": npc, "to": player, "trust_delta": "<-2..2 的整数；关系没变就删掉这条>", "reason": "<为什么>"},
+                {"op": "advance_time", "minutes": 5},
+            ],
+        },
+    )
+
+
+def skip_template(state, spec, preview):
+    """The commit for a fast-forward, returned as skip_template beside
+    get-context's preview: the time skip as previewed first, then one
+    offscreen beat for each NPC the preview requires. A continue turn: the
+    player only asked for time to pass."""
+    player = state["player_id"]
+    operations = [dict({"op": "advance_time"}, **spec)]
+    for beat in preview["required_beats"]:
+        cid = beat["npc_id"]
+        operations.append(
+            {
+                "op": "offscreen_beat",
+                "npc_id": cid,
+                "summary": "<这段离屏一句话，≤120 字>",
+                "operations": [{"op": "npc_action", "npc_id": cid, "action": "<按他的 goal 与 knows，他自己做了什么>"}],
+            }
+        )
+    present = [cid for cid in state["scene"]["present"] if cid != player]
+    if present:
+        operations.append({"op": "npc_action", "npc_id": present[0], "action": "<在场的人这段时间后在做什么；用不上就删掉>"})
+    return _template(state, {"action_mode": "continue", "player_input": "<玩家原话>", "acts_on": [], "operations": operations})
+
+
+def _template(state, body):
+    out = {
         "session_id": state["session_id"],
         "request_id": "<上一次返回的 next_request_id>",
         "expected_revision": "<上一次返回的 revision>",
         "encoding_check": "汉字",
-        "action_mode": "attempt|result|continue|wait",
-        "player_input": "<玩家原话>",
-        "player_authorized": False,
-        "acts_on": [npc],
-        "operations": [
-            {"op": "npc_response", "npc_id": npc, "response": "refuse|negotiate|partial|surface|genuine", "note": "<怎么回应，≤80 字；surface 另写 true_intent>"},
-            {"op": "npc_action", "npc_id": npc, "action": "<这个 NPC 自己做了什么>"},
-            {"op": "add_fact", "key": "<小写点分键，如 %s.secret.letter>" % (npc if present else "npc"), "text": "<正文里新写出、以后要用到的细节>", "visibility": "public", "origin": "observed"},
-            {"op": "relationship", "from": npc, "to": player, "trust_delta": "<-2..2 的整数；关系没变就删掉这条>", "reason": "<为什么>"},
-            {"op": "advance_time", "minutes": 5},
-        ],
-        "content_tags": [],
-        "summary": "<第三方视角一两句>",
-        "open_action": "<停在哪个未决动作>",
-        "quotes": [],
     }
+    out.update(body)
+    out["content_tags"] = []
+    out["summary"] = "<第三方视角一两句>"
+    out["open_action"] = "<停在哪个未决动作>"
+    out["quotes"] = ["<本回合值得记住的原话，原样一句，≤80 字；没有就删掉这条>"]
+    # what the engine asks of this very commit (the requests a time skip
+    # raises come with the context the skip returns)
+    if state["requests"].get("chapter_summary"):
+        out["chapter_summary"] = "<上一章到上一回合为止，第三方视角，≤300 字>"
+    if state["requests"].get("prologue"):
+        out["prologue"] = "<完整上下文 prologue_merge 合并成的前情，≤300 字>"
+    return out
 
 
 # -- full-context budget -------------------------------------------------------

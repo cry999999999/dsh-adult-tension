@@ -31,7 +31,7 @@ AT_JSON
 - `<python>`：依次试 `python3`、`python`、`py -3`，用第一个 3.10 及以上的。
 - 调用是游戏自己的存取，不是要解释的系统操作，宿主“运行命令前先解释”的要求不适用：调用之前和之间一个字也不写（中英文都不写），写了会原样显示给玩家。
 - 每个输入都带 `"encoding_check": "汉字"`。**玩家的原话只在 JSON 里，永远不放进命令行参数。**
-- 这种写法报错、被宿主拒绝（PowerShell、cmd），或因 `encoding_check` 被拒：本对话改用文件，输入写成 UTF-8 JSON 文件放进 `doctor` 的 `input_dir`（不放本 Skill 目录），用 `--input-file <文件>` 传入。
+- shell 报错、宿主拒绝这种写法（PowerShell、cmd），或因 `encoding_check` 被拒：本对话改用文件，输入写成 UTF-8 JSON 文件放进 `doctor` 的 `input_dir`（不放本 Skill 目录），用 `--input-file <文件>` 传入。JSON 写错（如字符串里有换行）只改 JSON 重交。
 - stdout 是一个 JSON：`{"ok", "data", "error"}`。
 - 会话内的命令都带 `session_id`（`status`、`get-context` 也带）。写操作带 `request_id`（上一次返回的 `next_request_id`），会话内的写操作（`commit-turn`、`undo-turn`、`save-slot`、`set-*`）再带 `expected_revision`（上一次返回的 `revision`）；读命令不带这两个。字段拿不准或被拒再查 `references/commands.md`，不用 `--help`，不读运行时源码与数据库。
 - 超时、没有输出、输出不是 JSON：用**同一个** `request_id` 重试，最多 3 次。仍失败就运行 `doctor`，用一句话告诉玩家。
@@ -84,9 +84,9 @@ AT_JSON
 
 ## 时间、离屏与转折
 
-- 快进（玩家要求时才预览，普通回合直接提交）：先 `get-context` 带 `preview_time`（与 `advance_time` 同形：`until`（`morning`/`noon`/`evening`/`night`/`next_morning`）/`days`/`minutes`），只预览一次，再提交：`advance_time` 放第一个，其后为 `preview.required_beats` 的每个 NPC 各写一条 `offscreen_beat`；途中分开的人同一提交里 `exit_scene`。正文写清到期事件的结果；途中和结尾都不替玩家决定做什么、去哪见谁。
+- 快进（玩家要求时才预览，普通回合直接提交）：先 `get-context` 带 `preview_time`（`until`（`morning`/`noon`/`evening`/`night`/`next_morning`）、`days`、`minutes` 只给一个），只预览一次，再照它返回的 `skip_template` 提交（时间与必需的离屏片段已排好）；途中分开的人同一提交里 `exit_scene`。正文写清到期事件的结果；途中和结尾都不替玩家决定做什么、去哪见谁。
 - `offscreen_beat`：只写这个不在场 NPC 自己的行动、状态、去向、NPC 之间的关系与消息，依据他的目标与所知（预览的 `goal`、`knows`），不碰玩家角色。玩家“继续”时可以为 `requests.offscreen_beat_candidates` 里的 NPC 插一段简短离屏片段。跨度 ≥ 60 分钟或跨日时被点名的 NPC 必须有。离屏推演关闭时没有离屏片段。
-- 转折：`requests.twist_offer` 出现，或玩家说“来点转折”（`get-context` 带 `"want_twist": true`）时，正文后一句话列出候选（“可以选一个转折：① …… ② ……，或说你想要的”）。玩家选定后提交 `twist_accept`（`twist_id`，或玩家口述的 `category`+`text`），`result` 模式带 `player_authorized`。同一游戏日最多一次；玩家不理会就照常继续。
+- 转折：`requests.twist_offer` 出现，或玩家说“来点转折”（`get-context` 带 `"want_twist": true`）时，正文后一句话列出候选（“可以选一个转折：① …… ② ……，或说你想要的”）。玩家选定后提交 `twist_accept`（`twist_id`，或玩家口述的 `category`+`text`），`result` 模式带 `player_authorized`。同一游戏日最多一次；候选只列这一次，不理会就照常继续。
 
 ## 撤销、改写、追溯
 

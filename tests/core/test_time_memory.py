@@ -197,7 +197,9 @@ class TwistTest(unittest.TestCase):
         self.assertEqual(len({t["category"] for t in offer}), len(offer))
         self.assertTrue(state["counters"]["twists"]["auto_offered"])
         state, _ = apply(state, commit("continue", [act(a)], chapter_summary="第一夜过去了。"))
-        self.assertEqual(state["requests"]["twist_offer"], offer)  # kept until taken or the next day
+        self.assertIsNone(state["requests"]["twist_offer"])  # shown once: the next commit lets it go
+        state, result = apply(state, commit("result", [{"op": "twist_accept", "twist_id": offer[1]["id"]}], player_authorized=True))
+        self.assertEqual(result["twist"]["twist_id"], offer[1]["id"])  # a shown candidate stays acceptable
         state, _ = apply(state, commit("continue", [{"op": "advance_time", "days": 1}, act(a)]))
         self.assertIsNone(state["requests"]["twist_offer"])  # offered once per game
 

@@ -325,7 +325,7 @@ def commit_template(state):
             {"op": "npc_response", "npc_id": npc, "response": "refuse|negotiate|partial|surface|genuine", "note": "<怎么回应，≤80 字；surface 另写 true_intent>"},
             {"op": "npc_action", "npc_id": npc, "action": "<这个 NPC 自己做了什么>"},
             {"op": "add_fact", "key": "<小写点分键，如 %s.secret.letter>" % (npc if present else "npc"), "text": "<正文里新写出、以后要用到的细节>", "visibility": "public", "origin": "observed"},
-            {"op": "relationship", "from": npc, "to": player, "trust_delta": 1, "reason": "<为什么>"},
+            {"op": "relationship", "from": npc, "to": player, "trust_delta": "<-2..2 的整数；关系没变就删掉这条>", "reason": "<为什么>"},
             {"op": "advance_time", "minutes": 5},
         ],
         "content_tags": [],

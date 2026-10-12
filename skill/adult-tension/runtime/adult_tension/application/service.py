@@ -430,6 +430,9 @@ def get_context(ctx, payload):
         "turn": session["turn"],
         "context": project(state, content, save_info(session)),
     }
+    if payload["depth"] == "full":
+        # "继续上次" starts a conversation with a full context: it gets the template too.
+        out["commit_template"] = CX.commit_template(state)
     if preview_time is not None:
         out["preview"] = simulation.preview(state, content["world"], preview_time)
     if payload["want_twist"]:

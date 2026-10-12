@@ -181,6 +181,8 @@ class EncodingAndInputTest(unittest.TestCase):
                     return data["revision"]
                 if value.startswith("<小写点分键"):
                     return "template.first.detail"
+                if value.startswith("<-2..2"):
+                    return 1
                 if value.startswith("<"):
                     return "照模板写的一句"
                 if "|" in value:

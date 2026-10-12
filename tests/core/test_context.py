@@ -86,6 +86,9 @@ class Game:
     def commit(self, ops):
         info = repo.load_session(self.ctx.db(), self.sid)
         body = {"action_mode": "continue", "player_input": "……", "operations": ops, "content_tags": [], "summary": "有人来了", "open_action": "场面停住"}
+        if info["state"]["requests"].get("chapter_summary"):
+            # A world that opens just before midnight crosses the day early.
+            body["chapter_summary"] = "第一夜：几个人先后到了这里。"
         return service.commit_turn(self.ctx, dict(body, session_id=self.sid, request_id=self.ids(), expected_revision=info["revision"]))
 
     def play(self, turns):
@@ -151,7 +154,7 @@ class FullContextBudgetTest(unittest.TestCase):
         return full
 
     def test_three_person_combos_with_newcomers_stay_within_budget(self):
-        self.assertEqual(len(TRIOS), 24)
+        self.assertEqual(len(TRIOS), 92)
         for world_id, combo_id in TRIOS:
             for mode in ("pressure", "daily"):
                 with app() as ctx:
@@ -183,10 +186,21 @@ class FullContextBudgetTest(unittest.TestCase):
             info = game.state()
             full = CX.full(info["state"], info["content"])
             self.assertLess(CX.size_of(full), CX.FULL_LIMIT)
-            self.assertIn("known_facts", full)
-            self.assertIn("due_soon", full)
             self.assertTrue(all("detail" not in c for c in full["characters"]))
             self.assertTrue(all("detail" in loc for loc in full["locations"]))
+
+    def test_the_full_context_does_not_repeat_the_brief_lists(self):
+        # known_facts and due_soon are the head of player_facts and events.
+        with app() as ctx:
+            game = Game(ctx, "harbor_night_shift", "combo_tower_night", "pressure", 3)
+            info = game.state()
+            brief = CX.brief(info["state"], info["content"])
+            full = CX.full(info["state"], info["content"])
+            self.assertTrue(brief["known_facts"] and brief["due_soon"])
+            self.assertNotIn("known_facts", full)
+            self.assertNotIn("due_soon", full)
+            self.assertEqual(full["player_facts"][: len(brief["known_facts"])], brief["known_facts"])
+            self.assertEqual(full["events"][: len(brief["due_soon"])], brief["due_soon"])
 
 
 if __name__ == "__main__":

@@ -270,6 +270,10 @@ def full(state, content, save=None):
         for key, e in sorted(state["relationships"].items())
         if e["from"] in relevant and e["to"] in relevant
     ]
+    # The brief lists are the head of these full lists; carrying both would
+    # only repeat them.
+    context.pop("known_facts", None)
+    context.pop("due_soon", None)
     context["player_facts"] = player_facts(state, 30)
     context["events"] = _events(state, world)
     context["leverage_all"] = _leverage(state)
@@ -334,6 +338,22 @@ def _card_compact(card):
     return out
 
 
+def _card_core(card):
+    """A person on stage in the tightest budget: a summary card plus pressure
+    responses, what they will never do, boundaries and the present situation."""
+    if card.get("detail") == "roster":
+        return card
+    out = _card_summary(card)
+    decision = card.get("decision") or {}
+    if "pressure_responses" in decision:
+        out.setdefault("decision", {})["pressure_responses"] = decision["pressure_responses"]
+    situation = card.get("situation") or {}
+    if situation.get("trigger"):
+        out["situation"] = {"trigger": situation["trigger"]}
+    out["detail"] = "core"
+    return out
+
+
 def _roster_line(card):
     return dict({k: card[k] for k in ROSTER_KEYS if k in card}, detail="roster")
 
@@ -361,6 +381,12 @@ def _card_order(context, state, present):
     return [c["id"] for c in sorted(context["characters"], key=key) if bool(c.get("present")) == present]
 
 
+def _drop_goal(context, cid):
+    for npc in context.get("present_npcs", []):
+        if npc["id"] == cid:
+            npc.pop("goal", None)
+
+
 def _replace_card(context, cid, shrink):
     context["characters"] = [shrink(c) if c["id"] == cid else c for c in context["characters"]]
 
@@ -372,9 +398,6 @@ def _full_steps(context, state):
     for loc in context["locations"]:
         if loc["id"] == here:
             nearby = set(loc.get("exits", []))
-
-    def drop(key):
-        return lambda: context.pop(key, None)
 
     def pop_to(key, floor, holder=None):
         def step():
@@ -404,6 +427,25 @@ def _full_steps(context, state):
         for edge in context["relationships"]:
             edge["recent"] = edge["recent"][-1:]
 
+    def drop_nearby():
+        # Who is next door is also in characters and background (location_id)
+        # and in the locations' exits.
+        context.pop("nearby", None)
+
+    def background_sample_lines():
+        for item in context["background"]:
+            item.pop("line", None)
+
+    def reasons_offstage():
+        onstage = set(state["scene"]["present"])
+        for edge in context["relationships"]:
+            if not ({edge["from"], edge["to"]} & (onstage - {state["player_id"]})):
+                edge.pop("recent", None)
+
+    def npc_edges():
+        player = state["player_id"]
+        context["relationships"] = [e for e in context["relationships"] if player in (e["from"], e["to"])]
+
     def edges_elsewhere():
         onstage = set(state["scene"]["present"])
         context["relationships"] = [e for e in context["relationships"] if e["from"] in onstage or e["to"] in onstage]
@@ -419,9 +461,6 @@ def _full_steps(context, state):
     def shrink_cards(present, shrink):
         return [lambda cid=cid: _replace_card(context, cid, shrink) for cid in _card_order(context, state, present)]
 
-    # No information lost: the full lists carry these.
-    yield drop("known_facts")
-    yield drop("due_soon")
     # Far from the scene.
     yield background_lines
     yield far_locations({here} | nearby)
@@ -445,6 +484,18 @@ def _full_steps(context, state):
     for shrink in (_card_summary, _roster_line):
         for cid in crowd:
             yield lambda cid=cid, shrink=shrink: _replace_card(context, cid, shrink)
+    # Still too big (long world texts and many important people): what the
+    # rest of the context already says goes first, then detail.
+    yield drop_nearby
+    yield background_sample_lines
+    yield npc_edges
+    yield reasons_offstage
+    # The people on stage keep what the next beat needs: decision with
+    # pressure responses, boundaries, and their stance and mood.
+    for cid in crowd:
+        yield lambda cid=cid: _drop_goal(context, cid)
+    for cid in _card_order(context, state, True):
+        yield lambda cid=cid: _replace_card(context, cid, _card_core)
 
 
 def _fit_full(context, state):

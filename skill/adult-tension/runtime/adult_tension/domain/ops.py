@@ -178,8 +178,12 @@ def op_advance_time(ctx, op, path):
 def advance(ctx, minutes, path, default=False):
     report = settlement.advance(ctx.state, minutes, ctx.turn, ctx.hooks)
     report["default"] = default
-    report["preview"] = simulation.preview_payload(ctx.state, ctx.world, report)
     offscreen = report.get("offscreen") or {}
+    if offscreen.get("required"):
+        # Someone introduced or promoted in this commit has no skipped time to
+        # account for, wherever the skip sits in the operation list.
+        offscreen["required"] = [npc for npc in offscreen["required"] if npc not in ctx.new_characters]
+    report["preview"] = simulation.preview_payload(ctx.state, ctx.world, report)
     for npc in offscreen.get("required", []):
         if npc not in ctx.required_beats:
             ctx.required_beats.append(npc)

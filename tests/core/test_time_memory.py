@@ -142,6 +142,26 @@ class OffscreenTest(unittest.TestCase):
         self.assertIn("goal", preview["required_beats"][0])
         self.assertEqual(preview, simulation.preview(self.state, content()["world"], {"minutes": 90}))
 
+    def test_people_introduced_in_the_commit_owe_no_beat(self):
+        # The default 3 minutes cross midnight: the absent major who was already
+        # there owes a beat, someone introduced offstage in the same commit has
+        # no skipped time to account for (and a beat for them is refused).
+        from test_people_safety import major_card
+
+        to_late = ST.MINUTES_PER_DAY - self.state["clock"]["minute"] - 2
+        state, _ = apply(self.state, commit("continue", [{"op": "advance_time", "minutes": to_late}, beat(self.b), act(self.a)]))
+        self.assertEqual(state["clock"]["minute"], ST.MINUTES_PER_DAY - 2)
+        newcomer = major_card(present=False, location_id=elsewhere(state))
+        err = rejected(state, commit("continue", [newcomer, act(self.a)]))
+        self.assertEqual([p["npc_id"] for p in err.extra["preview"]["required_beats"]], [self.b])
+        for ops in (
+            [{"op": "advance_time", "minutes": 3}, beat(self.b), newcomer, act(self.a)],
+            [newcomer, {"op": "advance_time", "minutes": 3}, beat(self.b), act(self.a)],
+            [newcomer, act(self.a), {"op": "advance_time", "minutes": 3}, beat(self.b)],
+        ):
+            new, _ = apply(state, commit("continue", ops))
+            self.assertEqual((new["clock"]["day"], new["characters"]["new_face"]["tier"]), (state["clock"]["day"] + 1, "major"))
+
     def test_beats_stay_offscreen_and_about_that_npc(self):
         skip90 = {"op": "advance_time", "minutes": 90}
         err = rejected(self.state, commit("continue", [skip90, beat(self.b, [{"op": "relationship", "from": self.b, "to": "player", "trust_delta": 1, "reason": "想起他"}]), act(self.a)]))

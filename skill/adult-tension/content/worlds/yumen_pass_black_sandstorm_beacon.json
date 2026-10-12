@@ -1846,7 +1846,7 @@
     "beacon_middle_arsenal_hall"
    ],
    "id": "beacon_rooftop_signal_platform",
-   "name": "绝壁烽火台露天狼烟瞭望顶",
+   "name": "烽火台顶",
    "pressure_modifiers": {
     "p_signal_fire_extinguish_crisis": "狂暴沙暴巨风连续三次吹灭火星，油脂包外层已受潮结冰。",
     "p_turkic_cavalry_cliff_assault": "一支突厥重箭带着凄厉破空声洞穿石垛正中狼烟油锅。"
@@ -1872,7 +1872,7 @@
     "beacon_middle_arsenal_hall"
    ],
    "id": "cliff_secret_crevice_path",
-   "name": "烽燧后山断崖风蚀石缝暗道",
+   "name": "石缝暗道",
    "pressure_modifiers": {
     "p_mutiny_surrender_plot": "叛兵已摸至暗道入口企图斩断唯一的逃生牛皮吊绳。",
     "p_storm_black_sand_burial": "绝壁上方滚落的塌方碎石不断砸落，石缝正被流沙迅速填平。"

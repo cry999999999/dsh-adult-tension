@@ -264,7 +264,7 @@
   "locations": [
     {
       "id": "loc_hoist_cage_plummeting_shaft",
-      "name": "地下三百米采矿竖井悬挂提升斗内",
+      "name": "提升斗内",
       "detail": "高约三米、宽约两米的重型钢格栅悬空吊笼，四周是坚硬漆黑的玄武岩深井岩壁在狂风中飞速向上倒退，脚底钢板因失速狂坠剧烈颠簸颤鸣，正上方减速齿轮箱碎裂喷出的火花与润滑油浓烟如火雨般狂灌而下，耳膜被气流压得生疼。",
       "privacy": "semi",
       "visibility": "dim",
@@ -291,7 +291,7 @@
     },
     {
       "id": "loc_shaft_collar_headframe_platform",
-      "name": "地表矿井井口钢结构天轮平台",
+      "name": "井口天轮台",
       "detail": "高悬在矿坑顶部的巨型钢桁架平台，直径四米的天轮正在空转飞旋发出令人胆寒的刺耳啸叫，断裂的主提升钢丝绳毛刺像钢刷般胡乱甩打钢梁，警报红灯将雨幕染成血色。",
       "privacy": "public",
       "visibility": "clear",
@@ -319,7 +319,7 @@
     },
     {
       "id": "loc_sump_buffer_spring_base",
-      "name": "三百米井底受矿水窝缓冲弹簧坑",
+      "name": "井底弹簧坑",
       "detail": "竖井正下方终点的坚硬玄武岩蓄水坑，安置着四组直径一米的重型合金抗冲击螺旋弹簧座，积聚的暗黑矿水在上方强风压迫下剧烈翻滚排浪。",
       "privacy": "private",
       "visibility": "dim",

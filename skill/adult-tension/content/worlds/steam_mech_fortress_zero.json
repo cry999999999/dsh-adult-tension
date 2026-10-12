@@ -1603,7 +1603,7 @@
     "furnace_boiler_room"
    ],
    "id": "fortress_rampart_parapet",
-   "name": "绝壁要塞外城墙主阵地与胸墙",
+   "name": "外城墙阵地",
    "pressure_modifiers": {
     "p_enemy_armor_breach_wave": "敌军第一波蒸汽铁骑已冲至要塞吊桥残垣展开攀登撞击。",
     "p_last_artillery_shell_gambit": "阵地急需测距员报出绝对死守坐标召唤决死覆盖炮火。"
@@ -1631,7 +1631,7 @@
     "cliffside_ammo_magazine"
    ],
    "id": "mech_hangar_workshop",
-   "name": "断裂机甲抢修车间与吊运台",
+   "name": "机甲抢修车间",
    "pressure_modifiers": {
     "p_mech_core_meltdown_overload": "机甲蒸汽反应核心已烧至通红濒临彻底熔解自毁。"
    },
@@ -1657,7 +1657,7 @@
     "cliffside_ammo_magazine"
    ],
    "id": "furnace_boiler_room",
-   "name": "地底要塞重力主熔炉压力室",
+   "name": "主熔炉室",
    "pressure_modifiers": {
     "p_boiler_superpressure_catastrophe": "主锅炉气压表针已狠狠顶死在极限红线上随时引爆全塞。"
    },
@@ -1683,7 +1683,7 @@
     "furnace_boiler_room"
    ],
    "id": "cliffside_ammo_magazine",
-   "name": "悬崖死角重装弹药库与指挥所",
+   "name": "悬崖弹药库",
    "pressure_modifiers": {
     "p_bridge_demolition_betrayal": "后方关隘提前下达了炸毁最后撤退缆索的绝杀电报。",
     "p_last_bullets_starvation": "全队仅剩最后两百发机枪子弹与三发要塞巨炮重弹。"

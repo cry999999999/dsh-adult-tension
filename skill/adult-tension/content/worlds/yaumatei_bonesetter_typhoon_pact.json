@@ -1807,7 +1807,7 @@
     "clinic_rear_herb_storage_parlor"
    ],
    "id": "clinic_front_bonesetting_hall",
-   "name": "保和堂临街跌打正骨前堂接骨厅",
+   "name": "正骨前堂",
    "pressure_modifiers": {
     "p_triad_axe_gang_street_sweep_deadline": "铁卷闸门外不时传来砍刀劈砍铁栏与马仔踩水呼哨之刺耳回响。",
     "p_typhoon_signal8_storm_surge_inundation": "街面积水已顺着门槛漫过脚踝，地面积水泛起混浊红花油泡沫。"
@@ -1837,7 +1837,7 @@
     "clinic_rear_alley_fruit_market_tunnel"
    ],
    "id": "clinic_rear_herb_storage_parlor",
-   "name": "医馆后堂百子药柜熬药暗室兼避雨暖阁",
+   "name": "后堂药房",
    "pressure_modifiers": {
     "p_anti_triad_police_warrantless_raid": "前厅传来硬底皮靴暴力踹踢卷闸门的沉闷震响与勒令开门之官话斥责。",
     "p_red_pole_shattered_shoulder_gangrene": "伤员左臂已发黑浮肿如腕粗，高热不退牙关打颤陷入濒死谵妄。"
@@ -1863,7 +1863,7 @@
     "clinic_rear_herb_storage_parlor"
    ],
    "id": "clinic_attic_secret_sleeping_chamber",
-   "name": "阁楼堂主私人卧房兼暴雨避难阁楼",
+   "name": "堂主阁楼",
    "pressure_modifiers": {
     "p_red_pole_shattered_shoulder_gangrene": "伤员在竹榻上因失血过多剧烈战栗，急需持续体温贴身保暖防休克。",
     "p_triad_axe_gang_street_sweep_deadline": "瓦片缝隙中隐隐透出楼下后巷马仔手电筒晃动的冷白光柱。"
@@ -1889,7 +1889,7 @@
     "clinic_rear_herb_storage_parlor"
    ],
    "id": "clinic_rear_alley_fruit_market_tunnel",
-   "name": "医馆后门窄巷通往果栏之生铁暗门",
+   "name": "后门铁暗门",
    "pressure_modifiers": {
     "p_anti_triad_police_warrantless_raid": "暗巷尽头隐隐可见皇家警察冲锋车爆闪之红蓝警灯光晕。",
     "p_typhoon_signal8_storm_surge_inundation": "天井暴雨排水口已被落叶烂泥堵塞，倒灌积水已漫至生铁暗门第二道插销。"

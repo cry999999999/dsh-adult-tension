@@ -1645,7 +1645,7 @@
     "loc_glass_catwalk_outer_corridor"
    ],
    "id": "loc_suspended_glass_broadcast_studio",
-   "name": "全景玻璃悬空演播大厅中央对局室",
+   "name": "玻璃对局室",
    "pressure_modifiers": {
     "press_go_clock_ten_second_countdown": "棋钟红字进入最后十秒蜂鸣每秒鸣响一次带来窒息压迫",
     "press_tatami_door_corset_hook_jam": "紫光檀移门导轨热胀冷缩咬死和服内皮衣搭扣拖拽身躯"
@@ -1669,7 +1669,7 @@
     "loc_go_master_rest_anteroom"
    ],
    "id": "loc_tatami_sliding_door_alcove",
-   "name": "对局室紫光檀移门地热导槽死角",
+   "name": "移门导槽",
    "pressure_modifiers": {
     "press_fingertip_sweat_stone_slippage": "掌心细汗与极度羞耻导致玛瑙棋子抓握切削打滑危险",
     "press_sheer_sweat_silk_transparency": "地热升温导致和服内衬汗湿紧贴雪肌透光社死危机"
@@ -1695,7 +1695,7 @@
     "loc_challenger_hotel_room"
    ],
    "id": "loc_go_master_rest_anteroom",
-   "name": "女擂主专属候场屏风静心阁",
+   "name": "屏风静心阁",
    "pressure_modifiers": {
     "press_referee_chief_approaching_steps": "主裁判在屏风外威严询问声回荡逼近带来法度重压",
     "press_sheer_sweat_silk_transparency": "穿衣镜中映出和服半透明紧缚丰盈轮廓加剧女擂主极致羞耻"
@@ -1719,7 +1719,7 @@
     "loc_go_master_rest_anteroom"
    ],
    "id": "loc_glass_catwalk_outer_corridor",
-   "name": "全景悬空玻璃环形观摩外廊",
+   "name": "观摩外廊",
    "pressure_modifiers": {
     "press_go_clock_ten_second_countdown": "千万直播间弹幕倒数与千万观众屏息心跳在高空气流中回荡",
     "press_referee_chief_approaching_steps": "裁判长手持执裁计时手柄步入对局室玻璃门正前方"

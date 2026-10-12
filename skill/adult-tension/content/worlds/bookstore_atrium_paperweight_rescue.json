@@ -1580,7 +1580,7 @@
     "loc_second_floor_gallery_hall"
    ],
    "id": "loc_bookstore_central_atrium",
-   "name": "临河古书肆双层挑空中庭天井",
+   "name": "挑空天井",
    "pressure_modifiers": {
     "p_floodwater_level_rising_rush": "暴雨导致天井地面水位以每分钟两公分速度激增，水流冲击书架底座引发微小位移。",
     "p_timber_creaking_structural_groan": "狂风撕扯受损天棚玻璃边框，细密碎玻璃与雨水在强风中扫荡大厅造成梁柱震颤。"
@@ -1610,7 +1610,7 @@
     "loc_bookshop_attic"
    ],
    "id": "loc_second_floor_gallery_hall",
-   "name": "二楼挑空回廊古籍展陈大厅",
+   "name": "二楼回廊",
    "pressure_modifiers": {
     "p_bookshelf_deadweight_collapse_pinch": "数百公斤重型橡木书架向外侧回廊倾倒四十五度，自重压迫木立柱发出不堪重负的嘎吱声。",
     "p_floodwater_level_rising_rush": "雨水漫入二楼走道地板，木质青砖表面极度湿滑增加了作业脱扣难度。"
@@ -1637,7 +1637,7 @@
     "loc_second_floor_gallery_hall"
    ],
    "id": "loc_collapsed_bookshelf_nook",
-   "name": "倾倒橡木书架与墙面夹角死角",
+   "name": "书架夹角",
    "pressure_modifiers": {
     "p_bookshelf_deadweight_collapse_pinch": "数百公斤书柜重心持续偏向走廊外侧，反向力矩若有丝毫偏斜便可能导致整个书架轰然砸坍。",
     "p_close_contact_body_heat_tension": "在四十公分极限死角内编目员与修复员肌肤完全贴伏，湿透衣裙与体温激烈对冲，滚烫急促的吐息拂过颈侧锁骨。"

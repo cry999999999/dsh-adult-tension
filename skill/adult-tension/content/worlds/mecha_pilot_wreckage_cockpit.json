@@ -1630,7 +1630,7 @@
     "external_canopy_inspection_hatch"
    ],
    "id": "wreckage_cockpit_central_capsule",
-   "name": "重型突击机甲主驾驶逃生核心密封舱",
+   "name": "主驾驶舱",
    "pressure_modifiers": {
     "p_cabin_slow_decompression_micro_punctur": "舱压正顺着左侧装甲接缝微小裂纹以每刻钟十毫米汞柱匀速泄压。",
     "p_single_oxygen_bottle_depletion_countdo": "备用氧气瓶压力表指针正缓缓滑向红色骷髅警戒死线。"
@@ -1659,7 +1659,7 @@
     "external_canopy_inspection_hatch"
    ],
    "id": "avionics_maintenance_crawlway_bay",
-   "name": "机甲尾部航电总线与环控微型检修夹道",
+   "name": "尾部检修夹道",
    "pressure_modifiers": {
     "p_hypothermia_liquid_cooling_gel_freezin": "检修舱内壁已降至零下三十度徒手触碰金属皮肉瞬间粘连冻伤。",
     "p_rebel_recon_drone_active_radar_sweep": "外壳金属敲击声若超过四十分贝将直接触发雷达被动声呐警报。"
@@ -1686,7 +1686,7 @@
     "avionics_maintenance_crawlway_bay"
    ],
    "id": "external_canopy_inspection_hatch",
-   "name": "驾驶舱正面强化石英复合舱盖观察盲窗",
+   "name": "舱盖观察窗",
    "pressure_modifiers": {
     "p_orbital_decay_atmospheric_reentry_burn": "观察窗边缘隔热涂层在残余重力拉扯下正隐隐剥落发烫。",
     "p_rebel_recon_drone_active_radar_sweep": "无人机红外光斑数次从石英观察窗表面掠过带来灭顶死影。"

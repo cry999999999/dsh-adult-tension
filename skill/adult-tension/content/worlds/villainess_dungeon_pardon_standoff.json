@@ -1611,7 +1611,7 @@
     "loc_dry_refuge_chamber"
    ],
    "id": "loc_dungeon_upper_colonnade",
-   "name": "地牢上层悬空挑台看守走廊",
+   "name": "上层看守走廊",
    "pressure_modifiers": {
     "p_usurper_execution_order_threat": "摄政王特使正在看台签署即刻沉牢命令威胁下闸灭口。"
    },
@@ -1637,7 +1637,7 @@
     "loc_dungeon_upper_colonnade"
    ],
    "id": "loc_substage_sluice_channel",
-   "name": "重型水压机械地下回水暗道",
+   "name": "回水暗道",
    "pressure_modifiers": {
     "p_toxic_corrosive_gas_leak": "暗河受阻释放的刺激性硫化气体正在向密闭暗道蔓延。"
    },

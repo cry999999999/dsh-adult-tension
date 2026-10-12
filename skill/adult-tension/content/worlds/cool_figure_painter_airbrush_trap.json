@@ -1785,7 +1785,7 @@
     "loc_studio_loft_bedroom"
    ],
    "id": "loc_figure_model_cleanroom_drying_aisle",
-   "name": "手办恒温无尘风淋烘干缓冲走廊",
+   "name": "烘干走廊",
    "pressure_modifiers": {
     "p_masterpiece_gk_model_scratch_peril": "室内限量孤品手办漆膜未固化，碰撞或溶剂熏蒸将导致表面起泡报废。"
    },

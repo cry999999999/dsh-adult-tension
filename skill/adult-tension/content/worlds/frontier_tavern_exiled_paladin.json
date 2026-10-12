@@ -1399,7 +1399,7 @@
     "loc_clock_tower_vantage"
    ],
    "id": "loc_broken_bridge_abyss",
-   "name": "风雪要塞外层悬空石桥断崖口",
+   "name": "断桥崖口",
    "pressure_modifiers": {
     "press_avalanche_thirty_sec_deadline": "山体剧烈震颤显示第二波万吨雪暴将在三十秒内抹平断桥",
     "press_chain_corset_strangle_peril": "生铁锚链受拉力持续下坠剧烈勒压锁骨并撕扯武装衣领口"
@@ -1425,7 +1425,7 @@
     "loc_commander_stone_chamber"
    ],
    "id": "loc_fortress_hearth_hall",
-   "name": "要塞内侧避难前厅炉火大堂",
+   "name": "炉火大堂",
    "pressure_modifiers": {
     "press_iron_gate_emergency_drop": "沉重防暴铁闸双轴自锁滚轮轰鸣下落仅留最后半米生死缝隙",
     "press_refugee_unrest_quell_duty": "避难人群中潜藏骚动需要威严将领立威震慑维持治安"
@@ -1450,7 +1450,7 @@
     "loc_ancient_dwarven_thermal_tunnel"
    ],
    "id": "loc_clock_tower_vantage",
-   "name": "要塞悬崖哨戒发条机械钟楼",
+   "name": "悬崖钟楼",
    "pressure_modifiers": {
     "press_avalanche_thirty_sec_deadline": "巨大钟锤以极高频率摆动宣告雪暴主峰正加速撞向要塞"
    },
@@ -1473,7 +1473,7 @@
     "loc_clock_tower_vantage"
    ],
    "id": "loc_ancient_dwarven_thermal_tunnel",
-   "name": "要塞基底远古矮人地热逃生隧道",
+   "name": "矮人地热隧道",
    "pressure_modifiers": {
     "press_frostbite_hypothermia_shock": "回暖蒸汽在冷凝作用下产生浓密水雾需要持续保持导轨通风"
    },

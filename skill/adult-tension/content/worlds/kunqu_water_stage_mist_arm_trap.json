@@ -1681,7 +1681,7 @@
     "loc_underwater_pump_control_room"
    ],
    "id": "loc_water_mirror_stage_center",
-   "name": "露天园林水景镜面戏台正中央",
+   "name": "水镜戏台",
    "pressure_modifiers": {
     "press_flower_presentation_twenty_seconds": "主礼长官步步拾级而上加剧倒数催命压迫",
     "press_mist_arm_chain_deadlock": "机械臂咬死银链拉扯水袖暗纹加剧前襟破损风险"
@@ -1707,7 +1707,7 @@
     "loc_kunqu_dressing_chamber"
    ],
    "id": "loc_backstage_covered_corridor",
-   "name": "后台古建水榭穿斗雕花回廊",
+   "name": "后台回廊",
    "pressure_modifiers": {
     "press_mist_arm_chain_deadlock": "阴影掩蔽便于传递破拆角度指引"
    },
@@ -1730,7 +1730,7 @@
     "loc_underwater_pump_control_room"
    ],
    "id": "loc_marble_bridge_audience_deck",
-   "name": "九曲汉白玉亲水观礼主台阶",
+   "name": "汉白玉台阶",
    "pressure_modifiers": {
     "press_flower_presentation_twenty_seconds": "脚步逼近台面使最后倒数秒数压迫感成倍放大"
    },
@@ -1753,7 +1753,7 @@
     "loc_marble_bridge_audience_deck"
    ],
    "id": "loc_underwater_pump_control_room",
-   "name": "池底水景造雾泵房机电控制室",
+   "name": "池底泵房",
    "pressure_modifiers": {
     "press_mist_arm_chain_deadlock": "切断水雾动力后机械阻尼更易被物理卡片撬开"
    },

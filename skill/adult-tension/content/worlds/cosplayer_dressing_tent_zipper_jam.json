@@ -1522,7 +1522,7 @@
     "loc_backstage_vertical_ladder_well"
    ],
    "id": "loc_catwalk_above_mainstage",
-   "name": "万人会展中心主舞台上方十二米悬空马道",
+   "name": "舞台上方马道",
    "pressure_modifiers": {
     "p_cosplay_armor_trapped_against_railing": "重型钛铝合金胸甲受压变形死死咬死在镀锌护栏钢柱死角，身体被强力箍紧无法前后挪移。",
     "p_stage_spotlight_heat_and_dazzle": "数万瓦特电脑摇头追光灯聚焦马道散发滚烫灼热辐射，强光眩目汗水浸透全身。"
@@ -1550,7 +1550,7 @@
     "loc_backstage_vertical_ladder_well"
    ],
    "id": "loc_wire_rigging_control_catwalk",
-   "name": "威亚特技悬挂电动绞盘检修操作平台",
+   "name": "威亚绞盘平台",
    "pressure_modifiers": {
     "p_winch_cable_loose_whip_risk": "脱槽的威亚细钢缆在主马道外侧如同狂鞭般随风微摆，极易刮擦或抽中格栅上人员。"
    },
@@ -1578,7 +1578,7 @@
     "loc_backstage_dressing_tent"
    ],
    "id": "loc_backstage_vertical_ladder_well",
-   "name": "舞台侧翼通顶垂直安全爬梯立井",
+   "name": "侧翼爬梯井",
    "pressure_modifiers": {
     "p_expo_security_abort_curtain_threat": "现场安全主管已在梯井入口举起对讲机准备宣布演出事故叫停切电。"
    },

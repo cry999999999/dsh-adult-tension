@@ -1538,7 +1538,7 @@
     "loc_submersible_docking_bay"
    ],
    "id": "loc_airlock_decompression_chamber",
-   "name": "万米耐压双向减压过渡气闸舱",
+   "name": "减压气闸舱",
    "pressure_modifiers": {
     "p_hydraulic_valve_shaft_bend_jam": "水力平衡减压阀主轴受压严重形变两毫米，内部不锈钢阀芯咬死无法通过手轮转动。",
     "p_ice_cold_seawater_submersion_rise": "深渊零下二度高压海水以每分钟三厘米速度暴涨，舱内空气被持续压缩水温骤降。"
@@ -1566,7 +1566,7 @@
     "loc_director_living_module"
    ],
    "id": "loc_station_decompression_corridor",
-   "name": "科考站核心居住区减压观测廊",
+   "name": "观测廊",
    "pressure_modifiers": {
     "p_habitat_quarantine_magnetic_deadlock": "内门中央微机启动了海水防漫灌倒计时，电磁锁舌即将彻底切断两舱通路。"
    },

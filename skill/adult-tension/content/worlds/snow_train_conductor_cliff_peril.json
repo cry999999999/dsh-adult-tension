@@ -1493,7 +1493,7 @@
     "loc_brake_valve_hatch"
    ],
    "id": "loc_hanging_rear_cabin",
-   "name": "半悬空倾斜尾厢乘务操作间",
+   "name": "倾斜尾厢值班室",
    "pressure_modifiers": {
     "p_cliff_hang_sway": "每一阵风，车厢就往崖外荡一下，挂钩发出刺耳的尖响。",
     "p_hypothermia_drain": "暖气早断了，呵出的气在空中就结成了霜。"
@@ -1517,7 +1517,7 @@
     "loc_hanging_rear_cabin"
    ],
    "id": "loc_frost_door_rail",
-   "name": "气动防寒滑门死卡轨道插销",
+   "name": "滑门插销",
    "pressure_modifiers": {
     "p_cabin_cold_embrace": "两人挤在防寒门边，乘务长整个人缩进对方的大衣里，冻得发抖的身子贴得严丝合缝。",
     "p_ticket_pliers_bend": "钳柄被冻得又脆又滑，稍一用力就往外滑。"

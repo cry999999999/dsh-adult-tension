@@ -1679,7 +1679,7 @@
     "bell_tower_stone_staircase"
    ],
    "id": "sacred_cedar_boundary_gate",
-   "name": "御神木注连绳残破鸟居阶前",
+   "name": "鸟居阶前",
    "pressure_modifiers": {
     "p_demon_pack_clawing_lattice_doors": "数头体型壮硕的山岳妖狼已越过崩塌石灯笼逼近阶前。",
     "p_mudslide_severing_mountain_path": "台阶下泥石流已彻底吞没上山最后一道青石栈道。"

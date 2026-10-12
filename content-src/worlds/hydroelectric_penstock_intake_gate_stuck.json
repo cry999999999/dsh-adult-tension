@@ -264,7 +264,7 @@
   "locations": [
     {
       "id": "loc_intake_gate_gallery_deadlock",
-      "name": "水下百米大坝进水口快速启闭门检修廊道",
+      "name": "进水口检修廊道",
       "detail": "高约三米、宽约四米的深层大坝混凝土防渗廊道，头顶是重达数十吨的快速启闭平板钢闸门斜卡在滑道中途，狂暴的高压射流从缝隙中如暴龙咆哮喷涌，冰冷刺骨的大江渗水已漫过膝盖，四周高标号混凝土墙壁在万吨水压下发出沉闷呻吟。",
       "privacy": "semi",
       "visibility": "dim",
@@ -291,7 +291,7 @@
     },
     {
       "id": "loc_dam_crest_hoist_hall_corridor",
-      "name": "大坝坝顶启闭机房防爆主控通廊",
+      "name": "坝顶机房通廊",
       "detail": "位于百米重力坝顶部的巨型钢桁架启闭机大厅，窗外狂风骤雨电闪雷鸣，两台五百吨门式起重机在暴风中轻微晃动，红色防汛戒严警报灯将四周映照成血色。",
       "privacy": "public",
       "visibility": "clear",
@@ -319,7 +319,7 @@
     },
     {
       "id": "loc_gallery_drainage_sump_catwalk",
-      "name": "廊道集水井强排排水泵站栈桥",
+      "name": "集水井栈桥",
       "detail": "位于大坝廊道最底层的深水积水坑栈桥，三台特大型深井离心泵正在全负荷轰鸣排水，四周空气中弥漫着浓烈的水雾与潮湿苔藓气味。",
       "privacy": "private",
       "visibility": "dim",

@@ -1585,7 +1585,7 @@
     "loc_center_private_lounge"
    ],
    "id": "loc_grand_auditorium_stage",
-   "name": "万人演播大厅挑高二十米舞台主区域",
+   "name": "演播厅主舞台",
    "pressure_modifiers": {
     "p_t_stage_deadweight_collapse_crush": "升降T台偏载倾斜受力不均，剪叉撑杆发出令人牙酸的金属扭曲呻吟。",
     "p_water_curtain_deluge_flood_surge": "水幕喷淋以每分钟数吨水量疯狂倾泻，舞台积水持续上升，水流冲击力不断增强。"
@@ -1613,7 +1613,7 @@
     "loc_grand_auditorium_stage"
    ],
    "id": "loc_t_stage_scissor_pinch_nook",
-   "name": "倾斜升降T台剪叉撑杆死角狭缝",
+   "name": "T台下狭缝",
    "pressure_modifiers": {
     "p_close_contact_body_heat_tension": "在四十公分逼仄水下死角内两人身体彻底贴伏，C位急促滚烫的吐息拂过颈侧，湿透打歌服传递着惊人的异性体温。",
     "p_t_stage_deadweight_collapse_crush": "数吨重T台若因悬索彻底断裂发生二次坠落，死角内人员将被完全压扁砸死。"
@@ -1637,7 +1637,7 @@
     "loc_grand_auditorium_stage"
    ],
    "id": "loc_broadcast_master_control_room",
-   "name": "演播厅后方二层舞美总控机房",
+   "name": "舞美总控室",
    "pressure_modifiers": {
     "p_water_curtain_deluge_flood_surge": "管道减压阀机械抱死无法远程切断，积水仍在高速上涨。"
    },

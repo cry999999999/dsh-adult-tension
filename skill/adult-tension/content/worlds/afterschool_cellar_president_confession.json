@@ -1793,7 +1793,7 @@
     "clocktower_cable_catacomb"
    ],
    "id": "subterranean_boiler_room",
-   "name": "报废蒸汽锅炉与水管总阀室",
+   "name": "锅炉总阀室",
    "pressure_modifiers": {
     "p_circuit_breaker_tension_fatigue": "高压水雾喷洒在配电箱外壳引发剧烈蓝色电火花爆鸣。",
     "p_waterpipe_hammering_rupture_hazard": "主管道法兰盘螺栓在剧烈水锤冲击下连续崩断两根。"
@@ -1819,7 +1819,7 @@
     "clocktower_cable_catacomb"
    ],
    "id": "demolition_staging_ground",
-   "name": "旧校舍前庭重型拆迁警戒区",
+   "name": "前庭拆迁区",
    "pressure_modifiers": {
     "p_discipline_patrol_padlock_curfew": "施工领班正与风纪队长签署外围全面清场断电协议。",
     "p_heavy_excavator_wall_crush_threat": "重型破碎锤已经抵在旧校舍西侧承重墙红砖裂缝上。"

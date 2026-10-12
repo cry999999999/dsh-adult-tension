@@ -1564,7 +1564,7 @@
     "loc_understage_control_pit"
    ],
    "id": "loc_hydraulic_stage_center",
-   "name": "万人盛典中央圆形液压升降台",
+   "name": "中央升降台",
    "pressure_modifiers": {
     "press_fifteen_seconds_countdown_alarm": "下沉深度持续拉伸吊袜带导致裙摆撕扯形变加剧",
     "press_rubber_gap_pinch_shear_escalation": "胶缝摩擦阻尼呈指数级暴增致使贴身金属扣咬合死锁"
@@ -1612,7 +1612,7 @@
     "loc_hydraulic_stage_center"
    ],
    "id": "loc_understage_control_pit",
-   "name": "舞台地下负一层机械伺服暗井",
+   "name": "台下暗井",
    "pressure_modifiers": {
     "press_understage_plc_limit_switch": "剪叉臂折叠逼近终点常闭触点彻底封死垂直行程裕量"
    },
@@ -1635,7 +1635,7 @@
     "loc_lolita_dressing_room"
    ],
    "id": "loc_live_broadcast_ob_van",
-   "name": "场馆外转播广场超高清4K转播车",
+   "name": "转播车",
    "pressure_modifiers": {
     "press_camera_one_tight_headshot_lock": "十六路监视大屏同步放大面部毫厘神态严禁一丝痛楚流露"
    },
@@ -1657,7 +1657,7 @@
     "loc_fixed_outer_stage"
    ],
    "id": "loc_vip_front_moshpit",
-   "name": "内场前排狂热应援粉丝方阵",
+   "name": "前排应援区",
    "pressure_modifiers": {
     "press_crowd_two_moshpit_screaming_wave": "两万人齐声声浪震颤耳膜催逼神经防线几近崩溃"
    },

@@ -264,7 +264,7 @@
   "locations": [
     {
       "id": "loc_furnace_armored_engine_room",
-      "name": "战舰主蒸汽动力防爆轮机舱",
+      "name": "主轮机舱",
       "detail": "高十米、通体由三层覆铜厚装甲钢铆接成型的椭圆形防爆舱，中央矗立着重达五十吨的双联装主蒸汽锅炉，四根粗如巨树的高压蒸汽主管道在刺耳爆鸣中剧烈震颤，两百二十度白雾弥漫遮目。",
       "privacy": "semi",
       "visibility": "dim",
@@ -291,7 +291,7 @@
     },
     {
       "id": "loc_airship_keel_catwalk_corridor",
-      "name": "飞艇龙骨悬挂走道与水压通廊",
+      "name": "龙骨走道",
       "detail": "悬挂在战舰龙骨下方的狭长格栅走道，两侧是厚重的重晶石水舱与配重弹药库，隔音装甲厚门外传来高空炮火轰鸣，红色自毁警报灯在走廊尽头疯狂旋转。",
       "privacy": "public",
       "visibility": "clear",
@@ -319,7 +319,7 @@
     },
     {
       "id": "loc_difference_engine_control_room",
-      "name": "动力差分机机械演算主控室",
+      "name": "差分机主控室",
       "detail": "充满黄铜齿轮咬合与打孔纸带沙沙声的精密中枢，数千枚黄铜齿轮在垂直传动轴带动下疯狂运转，墙面上密密麻麻排列着数十只水银差压计与气阀开度指示滑尺。",
       "privacy": "private",
       "visibility": "clear",

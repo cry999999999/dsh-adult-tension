@@ -1693,7 +1693,7 @@
     "loc_prop_workbench_refit_depot"
    ],
    "id": "loc_iron_locker_assembly_bay",
-   "name": "重型角铁更衣柜检修背板区",
+   "name": "铁柜背板区",
    "pressure_modifiers": {
     "press_fingertip_sweat_slippage": "狭窄检修道高湿度环境加剧微型刀柄表面指尖打滑概率",
     "press_magnetic_force_heat_lock": "冷轧钢合页在背板窄道产生高频金属干摩擦微观变形"

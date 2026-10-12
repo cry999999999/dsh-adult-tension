@@ -1521,7 +1521,7 @@
     "loc_embroidery_back_bedroom"
    ],
    "id": "loc_ancestral_embroidery_loft",
-   "name": "临水宗祠二层挑空大绣轩与抱柱主堂",
+   "name": "二层大绣轩",
    "pressure_modifiers": {
     "p_flood_water_surging_stairwell": "倒灌太湖水顺着楼梯迅猛上涨漫过二层门槛，浑水深度已达二十公分。",
     "p_timber_frame_cantilever_creak": "下层悬挑石牛腿在洪峰冲刷下松动倾斜，绣轩整体发生三度危险侧倾。"
@@ -1548,7 +1548,7 @@
     "loc_flooded_stone_stairwell"
    ],
    "id": "loc_riverfront_carved_veranda",
-   "name": "挑空大绣轩临河美人靠雕花飞廊",
+   "name": "临河飞廊",
    "pressure_modifiers": {
     "p_storm_gust_tearing_veranda_roof": "十级太湖阵风掀开飞廊青瓦，大片瓦当砸落水中并威胁木结构整体稳定性。"
    },
@@ -1575,7 +1575,7 @@
     "loc_riverfront_carved_veranda"
    ],
    "id": "loc_flooded_stone_stairwell",
-   "name": "宗祠后堂通往底层的青石马道天井",
+   "name": "后堂青石天井",
    "pressure_modifiers": {
     "p_flood_water_surging_stairwell": "回旋急流在天井形成危险漩涡，倒灌浑水正以每分钟五公分疯狂淹没台阶。"
    },

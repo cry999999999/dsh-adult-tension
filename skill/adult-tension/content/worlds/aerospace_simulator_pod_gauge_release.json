@@ -1584,7 +1584,7 @@
     "loc_aerospace_assembly_hall_floor"
    ],
    "id": "loc_flight_simulator_cabin",
-   "name": "悬空全动模拟飞行球舱内部",
+   "name": "模拟球舱",
    "pressure_modifiers": {
     "p_cabin_overheat_hypoxia_surge": "座舱温度飙升且环控失效，氧气分压急剧暴跌，闷热窒息感疯狂侵袭人体神经。",
     "p_pneumatic_lock_thermal_expansion_jam": "特种三元乙丙密封胶条因摩擦高热膨胀变形抱死，主门摇臂咬死在偏心锁止槽内无法电动弹开。"
@@ -1609,7 +1609,7 @@
     "loc_flight_simulator_cabin"
    ],
    "id": "loc_simulator_relief_valve_nook",
-   "name": "球舱气密门侧壁手动偏心泄压阀死角",
+   "name": "泄压阀死角",
    "pressure_modifiers": {
     "p_close_contact_body_heat_tension": "在三十五公分逼仄死角内两人身体彻底贴伏，女飞官急促滚烫的吐息拂过颈侧，湿透抗荷服传递着惊人的异性体温。",
     "p_pneumatic_lock_thermal_expansion_jam": "内外压差持续累积导致偏心销咬合摩擦力倍增，杠杆反扭阻尼逼近极限。"
@@ -1634,7 +1634,7 @@
     "loc_pilot_base_quarters"
    ],
    "id": "loc_aerospace_assembly_hall_floor",
-   "name": "测控中心大跨度总装测试大厅地面",
+   "name": "总装大厅",
    "pressure_modifiers": {
     "p_cabin_overheat_hypoxia_surge": "登高车升起需要八分钟，外部救援速度无法赶在舱内人员窒息前完成开启。"
    },

@@ -1731,7 +1731,7 @@
     "loc_skybridge_high_elevator_lobby"
    ],
    "id": "loc_skybridge_glass_gallery_hall",
-   "name": "62层全景玻璃悬空天桥观景连廊",
+   "name": "玻璃空中连廊",
    "pressure_modifiers": {
     "p_heavy_fire_door_pinching_designer_suit": "门框受侧向挤压发生八毫米肉眼可见形变，伺服电机过载保护彻底抱死门锁。",
     "p_skybridge_damping_excessive_twist": "双子塔摆幅持续扩大，连廊受剪切力矩拉扯导致玻璃幕墙嵌缝密封胶不断开裂。"
@@ -1759,7 +1759,7 @@
     "loc_skybridge_high_elevator_lobby"
    ],
    "id": "loc_refuge_floor_electrical_control_room",
-   "name": "62层核心筒避难层设备控制室",
+   "name": "避难层控制室",
    "pressure_modifiers": {
     "p_electrical_overload_short_circuit_fire": "应急变压器负荷激增冒出丝丝白烟，若十分钟内不切断部分回路将引发母线自燃。"
    },
@@ -1787,7 +1787,7 @@
     "loc_tower_executive_suite"
    ],
    "id": "loc_skybridge_high_elevator_lobby",
-   "name": "62层天桥高空观景穿梭电梯厅",
+   "name": "穿梭电梯厅",
    "pressure_modifiers": {
     "p_high_rise_panicked_crowd_corridor_jam": "撤离人员拥挤在防烟楼梯间入口导致通道狭窄，踩踏风险随风雨轰鸣急剧攀升。"
    },

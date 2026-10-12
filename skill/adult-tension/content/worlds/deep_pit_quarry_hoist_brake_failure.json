@@ -1546,7 +1546,7 @@
     "loc_sump_buffer_spring_base"
    ],
    "id": "loc_hoist_cage_plummeting_shaft",
-   "name": "地下三百米采矿竖井悬挂提升斗内",
+   "name": "提升斗内",
    "pressure_modifiers": {
     "p_gearbox_fire_molten_sparks": "上方减速箱主轴崩碎引燃润滑油，漫天飞溅的滚烫火花与焦黑机油倾盆泼洒舱内。",
     "p_hoist_plummeting_impact_countdown": "十吨提升斗以每秒十五米速度狂坠，距离井底万吨撞击粉碎仅剩九十秒。"
@@ -1574,7 +1574,7 @@
     "loc_lamproom_back_room"
    ],
    "id": "loc_shaft_collar_headframe_platform",
-   "name": "地表矿井井口钢结构天轮平台",
+   "name": "井口天轮台",
    "pressure_modifiers": {
     "p_quarry_headframe_cable_snap_rebound": "受损天轮轴承剧烈晃动，崩断的百米主缆即将脱槽横扫全台。"
    },
@@ -1601,7 +1601,7 @@
     "loc_shaft_collar_headframe_platform"
    ],
    "id": "loc_sump_buffer_spring_base",
-   "name": "三百米井底受矿水窝缓冲弹簧坑",
+   "name": "井底弹簧坑",
    "pressure_modifiers": {
     "p_freefall_weightless_hypoxia_shock": "井底暗河冷气与狂暴风压激起万千水沫，强气流冲击加剧了人员下坠减速时的缺氧眩晕风险。"
    },

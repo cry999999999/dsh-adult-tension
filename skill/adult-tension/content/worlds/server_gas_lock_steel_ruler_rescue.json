@@ -1582,7 +1582,7 @@
     "loc_president_rest_room"
    ],
    "id": "loc_noc_monitoring_center",
-   "name": "地面网络运营监控总值班大厅",
+   "name": "监控大厅",
    "pressure_modifiers": {
     "p_fm200_discharge_countdown": "NOC主控屏上的灭火充气倒计时以每秒一次的尖锐滴答声催逼，剩余时间不断缩水。",
     "p_server_rack_overheat_flashover": "超算集群因防爆门紧闭散热受阻，监控屏上机柜温度曲线急剧攀升泛出猩红警示。"
@@ -1611,7 +1611,7 @@
     "loc_datacenter_cold_aisle"
    ],
    "id": "loc_main_server_hall",
-   "name": "地下主服务器机柜通廊大厅",
+   "name": "主服务器大厅",
    "pressure_modifiers": {
     "p_door_electric_deadlock_jam": "数百公斤防爆重型金属滑门断电下压，双向导向棘轮与电磁常闭锁舌咬死导轨槽。",
     "p_fm200_discharge_countdown": "顶棚气体灭火喷嘴发出高压微泄露嘶嘶风鸣，空气中氧气浓度伴随白雾扩散逐渐降低。"
@@ -1638,7 +1638,7 @@
     "loc_main_server_hall"
    ],
    "id": "loc_datacenter_cold_aisle",
-   "name": "地下数据中心高密冷通道死角",
+   "name": "冷通道死角",
    "pressure_modifiers": {
     "p_cold_aisle_close_body_tension": "在八十公分逼仄死角内理事长与夜班工程师前胸后背紧贴，制服湿透体温猛烈对冲，急促滚烫的喘息交织在耳际。",
     "p_door_electric_deadlock_jam": "机械释放阀受到内部高压气体压迫死死顶住棘爪，单人力量根本无法扳动分毫。"

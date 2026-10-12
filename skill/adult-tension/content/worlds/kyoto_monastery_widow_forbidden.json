@@ -1787,7 +1787,7 @@
     "monastery_covered_cypress_veranda"
    ],
    "id": "monastery_main_buddha_altar_hall",
-   "name": "紫云院中庭大雄宝殿本尊法堂",
+   "name": "本尊法堂",
    "pressure_modifiers": {
     "p_midnight_hundred_days_judgment_deadl": "大殿巨型青铜香炉内最后三炷线香已燃去大半，终局钟声即将鸣响。",
     "p_mudslide_mountain_isolation_crisis": "殿外中庭天井积水已没过青石台阶，泥浆正顺着回廊漫入殿门。"
@@ -1816,7 +1816,7 @@
     "monastery_abbot_seclusion_pavilion"
    ],
    "id": "monastery_covered_cypress_veranda",
-   "name": "连接法堂与僧寮之桧木风雨长廊",
+   "name": "桧木长廊",
    "pressure_modifiers": {
     "p_chastity_scandal_shaming_plot": "叔母在长廊拐角处正指使心腹婆子暗中窥探当主房门人影。",
     "p_collateral_uncle_forced_remarriage_t": "两名身材魁梧的分家恶奴手提灯笼在长廊上来回梭巡截断退路。"
@@ -1844,7 +1844,7 @@
     "monastery_covered_cypress_veranda"
    ],
    "id": "monastery_widow_chaste_inner_chamber",
-   "name": "未亡人家主清修独居配殿偏房",
+   "name": "清修偏房",
    "pressure_modifiers": {
     "p_chastity_scandal_shaming_plot": "门外长廊传来婆子放轻的蹑手蹑脚之声，正试图用唾沫浸润障子纸窥探室内。",
     "p_midnight_hundred_days_judgment_deadl": "古刹祈福大钟发出悠远沉闷的午夜倒数轰鸣，震撼室内障子门微微颤动。"
@@ -1870,7 +1870,7 @@
     "monastery_covered_cypress_veranda"
    ],
    "id": "monastery_abbot_seclusion_pavilion",
-   "name": "后山断崖方丈闭关方丈室禅房",
+   "name": "断崖方丈室",
    "pressure_modifiers": {
     "p_abbot_strict_inquisition_threat": "方丈手中沉重铁梨木戒尺猛地重重击在案几之上，厉声喝问清白。",
     "p_mudslide_mountain_isolation_crisis": "飞瀑激流夹带碎石撞击方丈室立柱，木结构房屋发出令人牙酸的嘎吱震颤。"

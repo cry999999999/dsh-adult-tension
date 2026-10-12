@@ -1636,7 +1636,7 @@
     "chapel_nave_pulpit_hall"
    ],
    "id": "wooden_confessional_screen_alcove",
-   "name": "黑石圣堂闭锁忏悔室双人隔间",
+   "name": "忏悔室",
    "pressure_modifiers": {
     "p_inquisition_zealot_altar_search": "圣堂外巡查修士的沉重皮靴踩踏声正一步步逼近忏悔室门扉。",
     "p_raging_blizzard_subzero_freeze": "门缝灌入的刺骨暴雪寒气正迅速剥夺二人四肢指节知觉。"
@@ -1664,7 +1664,7 @@
     "chapel_nave_pulpit_hall"
    ],
    "id": "catacomb_scriptorium_crypt",
-   "name": "修道院地下石窟抄经地窖暗室",
+   "name": "抄经地窖",
    "pressure_modifiers": {
     "p_candle_fuel_exhaustion_darkness": "地下暗室蜡烛即将燃尽四周即将陷入彻底幽闭黑暗。",
     "p_raging_blizzard_subzero_freeze": "通风竖井倒灌的极寒风雪正在石壁上结出一层厚厚白霜。"
@@ -1691,7 +1691,7 @@
     "catacomb_scriptorium_crypt"
    ],
    "id": "chapel_nave_pulpit_hall",
-   "name": "圣玛利亚大堂主祭坛回音中殿",
+   "name": "圣堂中殿",
    "pressure_modifiers": {
     "p_inquisition_zealot_altar_search": "裁判所搜捕修士正举着火把在长椅间逐排用长戟戳刺搜查。",
     "p_stained_glass_collapse_snowdrift": "高空玫瑰花窗在狂风重压下发出龟裂脆响随时可能整面坍塌。"

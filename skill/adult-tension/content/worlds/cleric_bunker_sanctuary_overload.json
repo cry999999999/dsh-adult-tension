@@ -1550,7 +1550,7 @@
     "loc_fortress_outer_counterscarp_tunnel"
    ],
    "id": "loc_sacred_spring_cistern_catacomb",
-   "name": "礼拜堂地下的圣泉井与引水廊道",
+   "name": "圣泉引水廊",
    "pressure_modifiers": {
     "p_water_surge_cistern_overflow_flood": "地下水脉受压倒灌漫过走道台阶，浑浊冰水即将没过人员膝盖导致失稳。"
    },

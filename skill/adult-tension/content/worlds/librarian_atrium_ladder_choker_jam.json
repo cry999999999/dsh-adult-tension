@@ -1614,7 +1614,7 @@
     "loc_mep_ladder_service_bay"
    ],
    "id": "loc_atrium_ladder_high_platform",
-   "name": "挑空藏书楼五米古铜书梯高台踏板",
+   "name": "书梯顶台",
    "pressure_modifiers": {
     "pres_fifteen_second_curator_approach": "长辈巡检脚步声回荡石阶加剧倒计时心理威压",
     "pres_pulley_gear_choker_deadlock": "铜轮齿槽持续咬住素银项圈致使前胸衣物撕扯走光加剧"
@@ -1664,7 +1664,7 @@
     "loc_mep_ladder_service_bay"
    ],
    "id": "loc_stacks_fifth_rare_aisle",
-   "name": "特藏善本第五排纵深红木书廊",
+   "name": "第五排书廊",
    "pressure_modifiers": {
     "pres_fifteen_second_curator_approach": "老馆长巡视脚步已迈过汉白玉阶梯逼近最后拐角"
    },
@@ -1687,7 +1687,7 @@
     "loc_stacks_fifth_rare_aisle"
    ],
    "id": "loc_mep_ladder_service_bay",
-   "name": "特藏书库设备维保隐蔽立柱凹室",
+   "name": "立柱凹室",
    "pressure_modifiers": {
     "pres_pulley_gear_choker_deadlock": "通过机械参数测算提供精准施力角度缓解金属卡滞"
    },

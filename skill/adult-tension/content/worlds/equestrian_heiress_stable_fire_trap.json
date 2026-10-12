@@ -1541,7 +1541,7 @@
     "loc_paddock_arena"
    ],
    "id": "loc_gate_release_latch",
-   "name": "底层重力防压机械解脱卡扣",
+   "name": "吊闸解脱卡扣",
    "pressure_modifiers": {
     "p_horses_panic": "外面的人在拼命牵马，可受惊的赛马根本不听使唤。"
    },

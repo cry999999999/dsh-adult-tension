@@ -1645,7 +1645,7 @@
     "loc_media_camera_director_front_pit"
    ],
    "id": "loc_roadshow_center_circular_stage",
-   "name": "五十亿上市敲钟仪式发布会圆环讲台",
+   "name": "敲钟圆台",
    "pressure_modifiers": {
     "press_chairman_twenty_second_stairs_rush": "副主席皮鞋踏上讲台台阶加剧二十秒逼近绝境",
     "press_display_arm_garter_clip_pinch": "机械臂滑轨咬住吊袜带钢夹加剧铅笔裙受拉紧绷与撕裂恐慌"
@@ -1670,7 +1670,7 @@
     "loc_media_camera_director_front_pit"
    ],
    "id": "loc_display_arm_damping_track_alcove",
-   "name": "大屏多轴阻尼滑轨机械臂侧壁死角",
+   "name": "机械臂死角",
    "pressure_modifiers": {
     "press_battery_cap_lever_slip_risk": "钛合金电池盖在镀铬导轨曲面上打滑加剧撬断失败风险",
     "press_media_long_lens_scrutiny_dread": "前排财经长焦大炮锁焦加剧贴身吊袜带曝光恐慌"
@@ -1695,7 +1695,7 @@
     "loc_media_camera_director_front_pit"
    ],
    "id": "loc_boardroom_stairs_entrance",
-   "name": "敲钟仪式讲台贵宾席迎宾三级铺毯石阶",
+   "name": "贵宾席台阶",
    "pressure_modifiers": {
     "press_chairman_twenty_second_stairs_rush": "董事局高管登台迫近加剧商业形象崩塌与巨额赔偿危机",
     "press_pencil_skirt_split_tear_panic": "牵拉导致高开叉缝线断裂微响加剧当众撕裂露底恐惧"
@@ -1721,7 +1721,7 @@
     "loc_partner_hotel_suite"
    ],
    "id": "loc_media_camera_director_front_pit",
-   "name": "敲钟仪式前排长焦财经机位与速记席",
+   "name": "前排机位席",
    "pressure_modifiers": {
     "press_battery_cap_lever_slip_risk": "上身维持单臂讲解侧立加剧单腿与后腰肌肉酸胀",
     "press_media_long_lens_scrutiny_dread": "长焦大炮密集抓拍加剧西装撕裂沦为头条丑闻恐慌"
@@ -1745,7 +1745,7 @@
     "loc_media_camera_director_front_pit"
    ],
    "id": "loc_partner_hotel_suite",
-   "name": "交易所对面酒店的合伙人套房",
+   "name": "酒店套房",
    "pressure_modifiers": {},
    "privacy": "private",
    "tags": [

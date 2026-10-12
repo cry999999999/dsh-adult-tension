@@ -1681,7 +1681,7 @@
     "loc_backstage_instrument_depot"
    ],
    "id": "loc_golden_hall_solo_stage",
-   "name": "金色大厅独奏席红毯中心台",
+   "name": "独奏台",
    "pressure_modifiers": {
     "press_baton_fifteen_seconds_deadline": "指挥棒高悬半空加剧起拍时限紧迫压迫",
     "press_cellopicker_tailpin_damage": "尾针咬死锁壳阻尼加剧真丝礼服撕裂风险"
@@ -1730,7 +1730,7 @@
     "loc_backstage_instrument_depot"
    ],
    "id": "loc_conductor_rostrum_podium",
-   "name": "双层实木首席指挥专用挑台",
+   "name": "指挥台",
    "pressure_modifiers": {
     "press_baton_fifteen_seconds_deadline": "挑台视线高压使倒数时间流逝感倍增"
    },
@@ -1775,7 +1775,7 @@
     "loc_side_stage_tuning_alcove"
    ],
    "id": "loc_soloist_green_room",
-   "name": "音乐厅后台的独奏家休息室",
+   "name": "独奏家休息室",
    "pressure_modifiers": {},
    "privacy": "private",
    "tags": [

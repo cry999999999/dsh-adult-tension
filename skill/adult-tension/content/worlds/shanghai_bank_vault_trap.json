@@ -1522,7 +1522,7 @@
     "loc_security_grille_sluice_gate"
    ],
    "id": "loc_shanghai_bank_underground_rotunda",
-   "name": "外滩泰丰银行地下八米挑高金库环形回廊",
+   "name": "金库环形回廊",
    "pressure_modifiers": {
     "p_fire_pipe_water_surge_inundation": "爆裂高压水管以每分钟三百加仑向回廊倾泻，水位暴涨过膝逼近蓄电池组。",
     "p_warlord_mob_dynamite_detonation_risk": "地面乱军正在大楼正门安装烈性炸药，沉闷震波沿承重墙传导濒临引发大塌方。"
@@ -1549,7 +1549,7 @@
     "loc_security_grille_sluice_gate"
    ],
    "id": "loc_bank_vault_water_pipe_mezzanine",
-   "name": "金库后侧水暖管道地下夹层检修阀室",
+   "name": "管道夹层阀室",
    "pressure_modifiers": {
     "p_steam_water_vapor_asphyxiation": "高压水雾混合地下陈年热气充斥狭小夹层，氧气稀薄令人呼吸剧烈窒息咳嗽。"
    },
@@ -1577,7 +1577,7 @@
     "loc_bund_hotel_suite"
    ],
    "id": "loc_security_grille_sluice_gate",
-   "name": "金库主通道重力防盗生铁栅栏水密门",
+   "name": "生铁栅栏门",
    "pressure_modifiers": {
     "p_security_grille_hydrostatic_jamming": "漫延的水流在格栅门单侧形成强大静水推力，锁舌受横向强压咬死极难别动。"
    },
@@ -1603,7 +1603,7 @@
     "loc_security_grille_sluice_gate"
    ],
    "id": "loc_bund_hotel_suite",
-   "name": "外滩饭店里督军府长包的套房",
+   "name": "外滩饭店套房",
    "pressure_modifiers": {},
    "privacy": "private",
    "tags": [

@@ -1658,7 +1658,7 @@
     "loc_pet_owner_lounge_observation_deck"
    ],
    "id": "loc_pet_spa_glass_hall_center",
-   "name": "全通透落地钢化玻璃宠物水疗大厅",
+   "name": "玻璃水疗大厅",
    "pressure_modifiers": {
     "press_scrub_suit_collar_tear_exposure": "液压机械臂咬死项圈细链加剧刷手服领口撕裂走光风险",
     "press_vip_client_fifteen_second_approach": "名媛客户皮鞋踏上水磨石台阶加剧十五秒逼近绝境"
@@ -1683,7 +1683,7 @@
     "loc_pet_owner_lounge_observation_deck"
    ],
    "id": "loc_hydrotherapy_tub_hydraulic_nook",
-   "name": "洗狗舱伸缩旋转机械臂关节死角",
+   "name": "机械臂关节死角",
    "pressure_modifiers": {
     "press_collar_chain_strangulation_panic": "细链持续受拉加剧锁骨受勒剧痛与窒息恐慌",
     "press_golden_retriever_bark_struggle": "名贵犬因水流停滞焦躁挣扎加剧器械扭动风险"
@@ -1708,7 +1708,7 @@
     "loc_pet_owner_lounge_observation_deck"
    ],
    "id": "loc_spa_glass_door_entrance_step",
-   "name": "水疗大厅双开防烟雾磨砂玻璃大门踏步",
+   "name": "大门踏步",
    "pressure_modifiers": {
     "press_telephoto_camera_outside_window": "玻璃门推开缝隙加剧外圈长焦镜头直射风险",
     "press_vip_client_fifteen_second_approach": "客户推门进场加剧名誉事故危机"
@@ -1734,7 +1734,7 @@
     "loc_vet_director_office"
    ],
    "id": "loc_pet_owner_lounge_observation_deck",
-   "name": "落地玻璃窗外贵宾休息区长焦机位点",
+   "name": "贵宾休息区",
    "pressure_modifiers": {
     "press_scrub_suit_collar_tear_exposure": "强光照射加剧领口开裂透光羞耻",
     "press_telephoto_camera_outside_window": "长焦镜头连拍加剧私密项圈与内衬曝光恐慌"

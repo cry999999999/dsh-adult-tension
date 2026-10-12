@@ -1654,7 +1654,7 @@
     "loc_athletes_tunnel_screen_corner"
    ],
    "id": "loc_arena_center_tatami_platform",
-   "name": "全通透武道馆枫木决胜擂台木地板",
+   "name": "决胜擂台",
    "pressure_modifiers": {
     "press_chief_umpire_footstep_rush": "裁判长皮鞋踏上木地板加剧二十秒逼近绝境",
     "press_kimono_collar_tearing_slip": "卷扬机滑轮咬死系带加剧道服前襟撕裂与走光风险"
@@ -1679,7 +1679,7 @@
     "loc_athletes_tunnel_screen_corner"
    ],
    "id": "loc_scoreboard_winch_corridor_edge",
-   "name": "大太鼓吊架卷扬机台口死锁点",
+   "name": "太鼓吊架台口",
    "pressure_modifiers": {
     "press_countdown_twenty_second_buzzer": "大屏高音倒计时蜂鸣加剧超时弃权判罚风险",
     "press_silver_bell_chime_panic": "外围长焦大炮锁焦加剧胸前纯银乳铃爆响与走光恐慌"
@@ -1704,7 +1704,7 @@
     "loc_athletes_tunnel_screen_corner"
    ],
    "id": "loc_umpire_judging_seat_front",
-   "name": "终审裁判长红木席位正前沿",
+   "name": "裁判席前",
    "pressure_modifiers": {
     "press_chief_umpire_footstep_rush": "裁判长登台迫近加剧取消参赛资格危机",
     "press_countdown_twenty_second_buzzer": "倒计时红字闪烁加剧发令鸣哨迫近"
@@ -1730,7 +1730,7 @@
     "loc_dojo_captain_room"
    ],
    "id": "loc_athletes_tunnel_screen_corner",
-   "name": "运动员通道宽大幅面队旗遮挡拐角",
+   "name": "通道拐角",
    "pressure_modifiers": {
     "press_kimono_collar_tearing_slip": "撕裂布料拉扯加剧胴甲脱扣危机",
     "press_silver_bell_chime_panic": "通道强风加剧纯银乳铃晃动爆响恐慌"

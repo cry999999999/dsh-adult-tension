@@ -1729,7 +1729,7 @@
     "loc_studio_costume_vip_dressing_room"
    ],
    "id": "loc_studio_high_fly_wire_stage",
-   "name": "巨幅国风实景影棚悬空飞天威亚区",
+   "name": "飞天威亚区",
    "pressure_modifiers": {
     "p_uninflated_cushion_ground_fall": "地面充气气垫成型度不足百分之四十，直接坠落面临水泥地面冲击骨折险情。",
     "p_wire_ribbon_knot_strangle_hazard": "高空悬挂拉力使丝绸死结越收越紧，暗系带深陷腰际带来严重勒紧压迫。"
@@ -1757,7 +1757,7 @@
     "loc_studio_costume_vip_dressing_room"
    ],
    "id": "loc_studio_lighting_control_truss",
-   "name": "影棚顶层钢架马道与卷扬机检修台",
+   "name": "顶层马道",
    "pressure_modifiers": {
     "p_high_power_stage_light_overheat": "顶层马道镝灯灯架温度高达九十度，电缆外皮受热碳化散发有毒烟雾。"
    },
@@ -1785,7 +1785,7 @@
     "loc_model_private_dressing_room"
    ],
    "id": "loc_studio_costume_vip_dressing_room",
-   "name": "影棚一层特装汉服贵宾更衣化妆间",
+   "name": "贵宾化妆间",
    "pressure_modifiers": {
     "p_commercial_shooting_delay_penalty": "品牌方高层在门外紧迫催促，停机超过十分钟将触发违约重罚。"
    },

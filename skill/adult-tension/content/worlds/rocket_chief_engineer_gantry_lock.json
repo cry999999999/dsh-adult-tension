@@ -1700,7 +1700,7 @@
     "loc_launch_tower_level7_swing_arm"
    ],
    "id": "loc_gantry_50m_suspended_cradle",
-   "name": "发射塔五十米露天检修吊笼",
+   "name": "五十米吊笼",
    "pressure_modifiers": {
     "p_fall_arrest_ratchet_cable_jam": "偏心防坠棘爪因超速惯性自锁死死咬住滑轮绳槽，手动下放完全卡死。",
     "p_gantry_typhoon_gust_sway_hazard": "五十米高空阵风时速突破一百公里，吊笼横摆倾斜角扩大至二十度。"
@@ -1729,7 +1729,7 @@
     "loc_platform_living_cabin"
    ],
    "id": "loc_launch_tower_level7_swing_arm",
-   "name": "发射塔七级低温加注回转平台",
+   "name": "七级回转平台",
    "pressure_modifiers": {
     "p_cryogenic_liquid_oxygen_mist_fog": "低温泄压白雾笼罩平台，富氧浓度激增且能见度锐减至两米以内。",
     "p_rocket_launch_countdown_cliff": "不可逆加注程序倒计时红字迫近，单向发射窗口关闭进入读秒。"

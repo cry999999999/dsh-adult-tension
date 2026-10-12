@@ -1607,7 +1607,7 @@
     "ballista_cliff_turret"
    ],
    "id": "fallen_dragon_crater_basin",
-   "name": "巨龙坠地核心陨坑与玄冰祭坛",
+   "name": "坠龙陨坑",
    "pressure_modifiers": {
     "p_dragon_breath_hellfire_surge": "古龙咽喉金炎每逢咆哮便引发覆盖陨坑全域的毁灭火瀑。",
     "p_tail_sweep_shatter_strike": "暴虐巨尾狂乱横扫将百吨巨石轰成漫天致命冰雹。"
@@ -1662,7 +1662,7 @@
     "canyon_rampart_command"
    ],
    "id": "ballista_cliff_turret",
-   "name": "万仞悬崖巨型破龙弑神弩台",
+   "name": "悬崖弩台",
    "pressure_modifiers": {
     "p_cliff_avalanche_icefall": "绝壁万载玄冰在巨龙长啸震颤下正化作滔天雪崩狂暴倾泻。"
    },

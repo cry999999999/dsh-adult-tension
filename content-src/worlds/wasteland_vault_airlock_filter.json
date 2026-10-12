@@ -291,7 +291,7 @@
     },
     {
       "id": "loc_vault_decontamination_corridor",
-      "name": "喷淋消杀与防辐射过渡长廊",
+      "name": "消杀长廊",
       "detail": "长达五十米的环形不锈钢消杀通廊，安装有数十组高压去污喷嘴与紫外线灭菌灯，连接气闸内门与避难所核心生活区，地面铺设带排毒地漏的花纹钢板。",
       "privacy": "public",
       "visibility": "clear",

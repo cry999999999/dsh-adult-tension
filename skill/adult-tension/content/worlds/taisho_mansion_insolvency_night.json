@@ -1401,7 +1401,7 @@
     "loc_kujo_bedchamber"
    ],
    "id": "loc_atrium_library_gallery",
-   "name": "洋馆二层挑空中庭回廊书阁",
+   "name": "二层回廊书阁",
    "pressure_modifiers": {
     "press_fire_electrical_arc_deadline": "古籍羊皮纸燃烧散发刺鼻焦糊浓烟提示半分钟内火势将吞没整个回廊",
     "press_kimono_modesty_tear_risk": "三百公斤书柜重力拉扯和服右袖导致真丝长襦袢贴身接缝濒临撕脱崩解"
@@ -1426,7 +1426,7 @@
     "loc_garden_stone_porch"
    ],
    "id": "loc_tea_reception_salon",
-   "name": "一层红茶接待沙龙与壁炉暖阁",
+   "name": "红茶沙龙",
    "pressure_modifiers": {
     "press_creditor_bailiff_intrusive_gaze": "门外抵押清算债权代表正焦躁催促交割地契随时可能强行闯入"
    },
@@ -1450,7 +1450,7 @@
     "loc_garden_stone_porch"
    ],
    "id": "loc_basement_steam_vault",
-   "name": "底层洋馆管家机械地牢供暖锅炉房",
+   "name": "地下锅炉房",
    "pressure_modifiers": {
     "press_fire_electrical_arc_deadline": "烟道通风负压剧增警示上层火情已蔓延至回廊夹层"
    },
@@ -1473,7 +1473,7 @@
     "loc_basement_steam_vault"
    ],
    "id": "loc_garden_stone_porch",
-   "name": "府邸后庭石造防雨廊下逃生门",
+   "name": "后庭廊下",
    "pressure_modifiers": {
     "press_creditor_bailiff_intrusive_gaze": "前门庭院嘈杂马蹄声表明清算法警已封锁正门通道"
    },

@@ -1566,7 +1566,7 @@
     "loc_purifier_quarters"
    ],
    "id": "loc_vault_decontamination_corridor",
-   "name": "喷淋消杀与防辐射过渡长廊",
+   "name": "消杀长廊",
    "pressure_modifiers": {
     "p_vault_quarantine_override_countdown": "内侧装甲隔离门启动了气密闭锁倒计时警报，刺耳红光照亮整条长廊。"
    },

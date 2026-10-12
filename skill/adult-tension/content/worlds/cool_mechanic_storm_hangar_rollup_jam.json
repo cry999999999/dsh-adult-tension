@@ -1497,7 +1497,7 @@
     "loc_hangar_loading_dock"
    ],
    "id": "loc_hangar_rollup_door",
-   "name": "断电积水机库大厅主卷帘门前",
+   "name": "卷帘门前",
    "pressure_modifiers": {
     "p_fire_toward_tank": "火光又近了一截，焦糊味顺着门缝灌进来。",
     "p_live_water_floor": "门边的积水里噼啪闪了一下，两人一起缩了缩手。"
@@ -1521,7 +1521,7 @@
     "loc_hangar_rollup_door"
    ],
    "id": "loc_rollup_floor_gap",
-   "name": "离地四十公分狭窄地槽与导轨死角",
+   "name": "门底地槽",
    "pressure_modifiers": {
     "p_wrench_chest_press": "女机械师趴在试车手身上，后背贴着对方胸口，四只手叠在扳手长柄上，湿透的背心贴着对方的骑行服。",
     "p_wrench_handle_bend": "扳手的棘轮头被偏心销压出一道裂纹，再硬压可能整个崩开。"
@@ -1545,7 +1545,7 @@
     "loc_workshop_front_lot"
    ],
    "id": "loc_hangar_loading_dock",
-   "name": "机库外侧防雨连廊装卸水泥平台",
+   "name": "装卸平台",
    "pressure_modifiers": {
     "p_crew_outside_gate": "车友们在外面扯着门底梁往上拽，消防车被倒下的树堵在半路上。"
    },

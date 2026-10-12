@@ -1518,7 +1518,7 @@
     "loc_filtration_plant_backwash_mezzanine"
    ],
    "id": "loc_diving_pool_bottom_vault",
-   "name": "国家跳水馆地下十米减压井池底阀室",
+   "name": "池底阀室",
    "pressure_modifiers": {
     "p_hypothermia_cold_water_spasm_risk": "十四度深井地下冷水侵袭带走体温，四肢末梢迅速麻木颤抖，动作严重迟缓。",
     "p_pool_water_surge_submerging_catwalk": "高压水流以每分钟二十公分疯狂暴涨，检修台已被冰冷水流彻底淹没过腰。"
@@ -1546,7 +1546,7 @@
     "loc_athlete_apartment_room"
    ],
    "id": "loc_underwater_viewing_tunnel",
-   "name": "水下观察训练窗口减压密封通廊",
+   "name": "水下观察廊",
    "pressure_modifiers": {
     "p_airlock_door_hydrostatic_deadlock": "内外水位压差逼近警戒线，外层双向水密逃生舱门即将因单向超压而彻底抱死无法推开。"
    },
@@ -1573,7 +1573,7 @@
     "loc_underwater_viewing_tunnel"
    ],
    "id": "loc_filtration_plant_backwash_mezzanine",
-   "name": "石英砂重力反冲洗地下夹层泵房",
+   "name": "夹层泵房",
    "pressure_modifiers": {
     "p_duty_officer_kill_switch_threat": "安保指挥官威胁在三分钟后强制拉下总电闸切断全舱排水电力以防机房起火。"
    },

@@ -264,7 +264,7 @@
   "locations": [
     {
       "id": "loc_diving_pool_bottom_vault",
-      "name": "国家跳水馆地下十米减压井池底阀室",
+      "name": "池底阀室",
       "detail": "位于跳水馆地下十米正下方的承压水泥密封舱，巨大的耐压钢筒直插地底，正中央是直径一米二的高压主进水管，水循环主阀因气蚀抱死卡在全开位置，冰冷的水柱如喷泉般从法兰缝隙喷涌，水位正疯狂漫过金属镂空检修栈桥。",
       "privacy": "semi",
       "visibility": "dim",
@@ -291,7 +291,7 @@
     },
     {
       "id": "loc_underwater_viewing_tunnel",
-      "name": "水下观察训练窗口减压密封通廊",
+      "name": "水下观察廊",
       "detail": "紧邻池底阀室的高强度亚克力透视观察长廊，厚达三十公分的防爆透明玻璃将翻滚的水流隔绝在侧，控制台急促的黄色渗漏警报灯在水波折射下投射出摇曳水纹。",
       "privacy": "public",
       "visibility": "clear",
@@ -319,7 +319,7 @@
     },
     {
       "id": "loc_filtration_plant_backwash_mezzanine",
-      "name": "石英砂重力反冲洗地下夹层泵房",
+      "name": "夹层泵房",
       "detail": "布满密密麻麻粗壮管道的管廊夹层，四台大型立式循环泵正发出因空化引发的沉闷震鸣，总值班长正手握对讲机在防汛铁门外准备拉下切电电闸。",
       "privacy": "private",
       "visibility": "dim",

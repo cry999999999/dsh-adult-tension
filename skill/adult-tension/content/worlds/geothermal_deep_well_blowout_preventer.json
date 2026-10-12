@@ -1546,7 +1546,7 @@
     "loc_mud_tank_manifold_catwalk"
    ],
    "id": "loc_blowout_preventer_cellar_deadlock",
-   "name": "地热井口防喷器下层泥浆管汇死角通道",
+   "name": "防喷器方井",
    "pressure_modifiers": {
     "p_geothermal_steam_blowout_erupt": "过热蒸汽以每秒数百公斤的狂暴压力喷涌扩散，逼仄方井内温度直逼一百二十度仅剩五分钟闭锁窗口。",
     "p_hydraulic_rupture_deadlock_crush": "主液压控制管束在狂暴刺漏中彻底失压抱死，防喷器闸板必须依靠手动机械丝杠纯人力旋转三十圈强行锁死。"
@@ -1574,7 +1574,7 @@
     "loc_geologist_prefab_cabin"
    ],
    "id": "loc_drill_floor_control_doghouse",
-   "name": "钻台防爆司钻控制值班室长廊",
+   "name": "司钻房走廊",
    "pressure_modifiers": {
     "p_doghouse_manifold_overpressure_risk": "副放喷管线在七十兆帕超高压下剧烈震颤，三通球阀壳体浮现网状应力疲劳裂纹濒临炸裂。"
    },
@@ -1601,7 +1601,7 @@
     "loc_drill_floor_control_doghouse"
    ],
    "id": "loc_mud_tank_manifold_catwalk",
-   "name": "泥浆循环罐固控高架排砂栈桥",
+   "name": "泥浆罐栈桥",
    "pressure_modifiers": {
     "p_steam_heatstroke_asphyxiation_shock": "泥浆池沸腾散发出高热硫化氢与水汽，环境温度居高不下加剧了人员中暑热衰竭的晕厥危险。"
    },

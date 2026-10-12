@@ -1521,7 +1521,7 @@
     "loc_engine_room_pipe_tunnel_corridor"
    ],
    "id": "loc_cargo_hold_double_bottom_vault",
-   "name": "万吨散货轮三号开阔平底主货舱底板区",
+   "name": "三号货舱底",
    "pressure_modifiers": {
     "p_cargo_hold_inundation_rising_water": "破损压载管海水以每分钟十吨疯狂漫灌，底舱积水急剧暴涨逼近蓄电池组。",
     "p_freighter_hull_extreme_rolling_torque": "横摇幅度达到惊人的三十度，倾覆的集装箱在冰冷浑水中发生二次滑动碾压。"
@@ -1549,7 +1549,7 @@
     "loc_owner_suite_cabin"
    ],
    "id": "loc_cargo_hold_escape_trunk_manhole",
-   "name": "通往隔离空舱的椭圆逃生人孔竖井口",
+   "name": "逃生人孔",
    "pressure_modifiers": {
     "p_manhole_cover_hydrostatic_jamming": "舱内上涨水流在盖板单侧形成数吨静水推力，锁扣摩擦力倍增濒临彻底抱死。"
    },
@@ -1576,7 +1576,7 @@
     "loc_cargo_hold_escape_trunk_manhole"
    ],
    "id": "loc_engine_room_pipe_tunnel_corridor",
-   "name": "双层底贯通式管隧穿舱检修黑暗长廊",
+   "name": "双层底管隧",
    "pressure_modifiers": {
     "p_tunnel_pipe_burst_asphyxiation": "压载管水雾与残余油气在封闭狭小长廊弥漫，氧气稀薄令人呼吸困难剧烈呛咳。"
    },

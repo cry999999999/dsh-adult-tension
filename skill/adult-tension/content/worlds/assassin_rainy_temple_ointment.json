@@ -1633,7 +1633,7 @@
     "back_courtyard_dry_well_tunnel"
    ],
    "id": "ancient_temple_side_hall_warm_room",
-   "name": "荒废兰若古刹偏殿暖阁残室",
+   "name": "偏殿暖阁",
    "pressure_modifiers": {
     "p_hound_scent_tracking_siege": "山门方向不断传来猎犬狂吠撕扯夜幕的尖利凶响。",
     "p_poison_spreading_paralysis_clock": "透骨钉周围乌黑死肉正以肉眼可见速度向肩胛经络扩散蔓延。"
@@ -1661,7 +1661,7 @@
     "back_courtyard_dry_well_tunnel"
    ],
    "id": "main_shrine_collapsed_nave",
-   "name": "古刹前殿断壁残垣大雄宝殿",
+   "name": "坍塌的正殿",
    "pressure_modifiers": {
     "p_hound_scent_tracking_siege": "东厂缇骑火把已连成火龙将前殿大门死死围困。",
     "p_temple_timber_roof_collapse_risk": "倾斜承重梁在暴雨冲刷下不断掉落碎瓦发出危险断裂呻吟。"
@@ -1690,7 +1690,7 @@
     "main_shrine_collapsed_nave"
    ],
    "id": "back_courtyard_dry_well_tunnel",
-   "name": "后院青苔枯井地宫逃生暗道",
+   "name": "枯井暗道",
    "pressure_modifiers": {
     "p_mountain_torrent_tunnel_inundation": "山洪泄洪暗涌正顺着地道尽头以极快速度倒灌漫上石阶。",
     "p_poison_spreading_paralysis_clock": "女刺客因剧毒攻心四肢麻木步履踉跄几乎无法涉水。"

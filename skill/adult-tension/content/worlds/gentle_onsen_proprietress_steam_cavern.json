@@ -1498,7 +1498,7 @@
     "loc_drain_cold_vent"
    ],
    "id": "loc_spring_cavern_ledge",
-   "name": "十米高天然钟乳石引水溶洞石台",
+   "name": "溶洞石台",
    "pressure_modifiers": {
     "p_boiling_water_creep": "沸泉又漫上来一指，石台边缘冒着细密的气泡。",
     "p_steam_scald": "一股热雾翻上来，脸上像被烫了一下。"
@@ -1522,7 +1522,7 @@
     "loc_spring_cavern_ledge"
    ],
    "id": "loc_drain_gate_slot",
-   "name": "引流暗渠铸铁重力闸板滑槽",
+   "name": "闸板滑槽",
    "pressure_modifiers": {
     "p_rod_chest_press": "少老板娘背贴在工程师胸前，四只手叠在测温棒上，湿透的浴衣贴着对方的工作服。",
     "p_rod_tip_bend": "测温棒的扁头被闸板压出一道弯，再硬别可能整个折掉。"

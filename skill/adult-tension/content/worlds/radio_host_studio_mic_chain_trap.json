@@ -1645,7 +1645,7 @@
     "loc_street_glass_facade_sidewalk"
    ],
    "id": "loc_street_studio_main_mic_desk",
-   "name": "临街全景直播室主控播音台前",
+   "name": "播音台前",
    "pressure_modifiers": {
     "press_live_hotline_fifteen_second_rush": "千万热线大屏幕红字倒数声加剧十五秒倒计时绝境",
     "press_mic_arm_chain_snag_choke": "万向阻尼齿轮紧紧卡住细链加剧领口撕裂与胸骨压痛"
@@ -1670,7 +1670,7 @@
     "loc_street_glass_facade_sidewalk"
    ],
    "id": "loc_mic_boom_damping_joint_shadow",
-   "name": "麦克风悬臂转轴下方死角盲区",
+   "name": "悬臂转轴下",
    "pressure_modifiers": {
     "press_general_producer_entry_crisis": "新任总监制皮鞋踏在隔音地毯脚步声加剧推门即至危机",
     "press_hairpin_lever_slip_risk": "发夹扁平柄端与蜗轮光滑金属面打滑加剧挑开失败风险"
@@ -1695,7 +1695,7 @@
     "loc_street_glass_facade_sidewalk"
    ],
    "id": "loc_studio_soundproof_glass_entrance",
-   "name": "播音室双层隔音玻璃推门通道",
+   "name": "隔音玻璃门",
    "pressure_modifiers": {
     "press_general_producer_entry_crisis": "集团总监制大步踏入加剧开播走光被当场除名惩戒恐慌",
     "press_silk_blouse_strain_tear_panic": "牵扯导致衬衫领口暗扣开裂声加剧内衬暴露恐惧"
@@ -1721,7 +1721,7 @@
     "loc_radio_green_room"
    ],
    "id": "loc_street_glass_facade_sidewalk",
-   "name": "临街落地大玻璃窗外粉丝人行道",
+   "name": "窗外人行道",
    "pressure_modifiers": {
     "press_hairpin_lever_slip_risk": "上身维持近麦前倾端坐加剧后背与颈椎肌肉酸痛",
     "press_street_fan_scrutiny_dread": "窗外数十家长焦大炮长距离锁焦加剧镜头特写社死恐惧"

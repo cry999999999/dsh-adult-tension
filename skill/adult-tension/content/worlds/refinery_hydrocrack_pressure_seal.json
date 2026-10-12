@@ -1545,7 +1545,7 @@
     "loc_flare_knockout_drum_corridor"
    ],
    "id": "loc_hydrocracking_reactor_seal_skirt",
-   "name": "加氢反应器底部八角垫检修隔热罩通道",
+   "name": "反应器裙座内",
    "pressure_modifiers": {
     "p_hot_hydrogen_jet_explosion_risk": "高压热氢射流以每秒数百米极速狂喷，狭小隔热空间内氢气浓度飙升逼近爆炸下限仅剩四分钟窗口。",
     "p_octagonal_gasket_shear_blowout": "主法兰八角形金属垫片在非对称热应力下拉伸变形，必须依靠超长力臂扳手合力对角锁紧封死缝隙自救。"
@@ -1573,7 +1573,7 @@
     "loc_chief_dormitory_room"
    ],
    "id": "loc_reactor_skirt_access_platform",
-   "name": "反应器裙座下部防爆检修主平台",
+   "name": "裙座检修平台",
    "pressure_modifiers": {
     "p_skirt_platform_thermal_radiation": "反应器底部外壁热辐射高达两百度，检修平台钢格板滚烫灼人逼近人体耐受极限。"
    },
@@ -1600,7 +1600,7 @@
     "loc_reactor_skirt_access_platform"
    ],
    "id": "loc_flare_knockout_drum_corridor",
-   "name": "火炬分液罐排险防爆隔离通廊",
+   "name": "分液罐通廊",
    "pressure_modifiers": {
     "p_flare_drum_backpressure_surge": "全装置紧急放空导致火炬总管背压暴涨，分液罐安全阀高频起跳震颤濒临撕裂管线。"
    },

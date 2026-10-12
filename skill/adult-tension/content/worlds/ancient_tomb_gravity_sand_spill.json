@@ -1538,7 +1538,7 @@
     "loc_crypt_mercury_channel_gate"
    ],
    "id": "loc_crypt_balance_slab_grand_hall",
-   "name": "地宫中央悬空玄武岩天平翻板巨殿",
+   "name": "翻板大殿",
    "pressure_modifiers": {
     "p_fulcrum_axle_deadlock_sand_jam": "极细铁砂渗入青铜枢轴轴承导致转轴抱死，常规工具完全无法撼动分毫。",
     "p_sand_spill_burial_weight_tilt": "万钧流沙从天花石缝疯狂下灌，翻板倾角直逼三十五度濒临自滑翻覆边缘。"
@@ -1566,7 +1566,7 @@
     "loc_foothill_camp_tent"
    ],
    "id": "loc_tomb_corridor_catacomb_gangway",
-   "name": "前椁墓道坍塌碎石连廊与甬道",
+   "name": "坍塌墓道",
    "pressure_modifiers": {
     "p_warlord_dynamite_retaliation_collapse": "军阀卫兵在墓道口点燃了整箱苦味酸炸药雷管，轰然巨响倒计时逼近引发主殿穹顶总塌方。"
    },
@@ -1593,7 +1593,7 @@
     "loc_tomb_corridor_catacomb_gangway"
    ],
    "id": "loc_crypt_mercury_channel_gate",
-   "name": "后殿水银泄洪渠防爆双向石闸门",
+   "name": "水银渠石闸",
    "pressure_modifiers": {
     "p_mercury_vapor_toxic_spill_fumes": "泄洪渠水银受高温气浪烘烤急速挥发，高浓度汞蒸气顺着闸门裂缝倒灌入殿内。"
    },

@@ -1632,7 +1632,7 @@
     "rear_observation_lounge_car"
    ],
    "id": "compartment_seven_luxury_sleeper",
-   "name": "七号一等软卧车厢双人间豪华包厢",
+   "name": "七号包厢",
    "pressure_modifiers": {
     "p_ankle_holster_exposure_inspection_risk": "稍有不慎翻动毛毯便会将勒在脚踝处的牛皮枪套暴露于灯光下。",
     "p_gendarme_door_to_door_sweep_clock": "走廊外宪兵队粗暴砸门盘问声正以每分钟逼近一间的速度推进。"
@@ -1659,7 +1659,7 @@
     "rear_observation_lounge_car"
    ],
    "id": "sleeper_car_narrow_corridor",
-   "name": "七号车厢窄长全景实木过道长廊",
+   "name": "七号车厢过道",
    "pressure_modifiers": {
     "p_blizzard_wind_chill_corridor_freeze": "车厢两端连接处密封胶条冻裂正不断灌入零下四十度极寒阴风。",
     "p_gendarme_door_to_door_sweep_clock": "全副武装的宪兵队巡逻组正牵着黑色警犬在此通道内逐一核查。"
@@ -1688,7 +1688,7 @@
     "sleeper_car_narrow_corridor"
    ],
    "id": "rear_observation_lounge_car",
-   "name": "极地快车车尾弧形全景观景吸烟沙龙",
+   "name": "车尾观景沙龙",
    "pressure_modifiers": {
     "p_border_checkpoint_dawn_deadline": "距离列车越过中立国国境线破晓查验仅剩最后三十公里里程。",
     "p_secret_police_informer_tail_risk": "沙龙角落正坐着两名戴黑呢软帽、手持报纸暗中窥探的便衣特务。"

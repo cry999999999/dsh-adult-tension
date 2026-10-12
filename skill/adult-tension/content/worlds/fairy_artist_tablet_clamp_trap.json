@@ -1641,7 +1641,7 @@
     "loc_fairy_studio_mounting_darkroom"
    ],
    "id": "loc_fairy_studio_digital_workzone",
-   "name": "挑空落地窗画室数位工作区",
+   "name": "数位工作区",
    "pressure_modifiers": {
     "p_heavy_tablet_arm_clamp_jam": "裱画机压板高压爆裂下沉咬死裙角，人被钉在画案旁动弹不得。",
     "p_roommate_key_turning_lock_crisis": "门外黄铜钥匙转动第二圈发出清脆弹簧脆鸣，推门入室仅剩数秒。"
@@ -1665,7 +1665,7 @@
     "loc_fairy_studio_mounting_darkroom"
    ],
    "id": "loc_fairy_studio_living_screencast",
-   "name": "玄关走廊与百寸大屏投屏客厅",
+   "name": "投屏客厅",
    "pressure_modifiers": {
     "p_cast_screen_exposed_social_death": "百寸巨幕狂暴推流同人草稿，稍有瞥见即引发毁灭性社会性死亡。",
     "p_front_door_entering_visitors": "学术部部长与商业经纪人随同登门，名门仙女声誉面临终极审视。"
@@ -1691,7 +1691,7 @@
     "loc_painter_attic_bedroom"
    ],
    "id": "loc_fairy_studio_mounting_darkroom",
-   "name": "暗房水洗与手工装裱操作区",
+   "name": "装裱暗房",
    "pressure_modifiers": {
     "p_solvent_paper_spill_risk": "托裱案有机清洗溶剂倾倒流淌，刺鼻挥发气体飘散威胁名贵宣纸。",
     "p_tools_access_urgent_run": "狭窄过道折返递送纯钛刮刀分秒必争，任何迟疑都将葬送脱困窗口。"

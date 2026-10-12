@@ -1629,7 +1629,7 @@
     "air_duct_maintenance_shaft_chambers"
    ],
    "id": "autopsy_theatre_one_operating_suite",
-   "name": "地下二层第一恒温无菌法医主解剖操作大厅",
+   "name": "一号解剖大厅",
    "pressure_modifiers": {
     "p_magnetic_interlock_battery_drain_deadl": "大门红灯正急促闪烁发出三十秒后自动电磁熔断死锁蜂鸣。",
     "p_toxic_smoke_backdraft_vent_suffocation": "通风口正源源不断喷出刺鼻白烟导致泪流满面剧烈呛咳。"
@@ -1659,7 +1659,7 @@
     "air_duct_maintenance_shaft_chambers"
    ],
    "id": "morgue_refrigeration_vault_corridor",
-   "name": "地下冷藏停尸长廊与深冷冷冻抽屉库",
+   "name": "停尸长廊",
    "pressure_modifiers": {
     "p_cadaver_autolysis_temperature_rise_lim": "冷藏柜温度表红色水银柱正急速攀升逼近失真临界点。",
     "p_intruder_assassin_crowbar_ambush_dange": "沉重战术靴踏水声正从长廊另一端不紧不慢逼近。"
@@ -1686,7 +1686,7 @@
     "morgue_refrigeration_vault_corridor"
    ],
    "id": "air_duct_maintenance_shaft_chambers",
-   "name": "地下综合管廊通风竖井与强电电缆夹层",
+   "name": "通风竖井",
    "pressure_modifiers": {
     "p_flooding_backflow_submersion_drown_clo": "倒灌的山洪积水正以每分钟五厘米速度淹没管廊底部。",
     "p_intruder_assassin_crowbar_ambush_dange": "凶手正手持消音手枪在爬梯下方踩着铁栏连环开火。"

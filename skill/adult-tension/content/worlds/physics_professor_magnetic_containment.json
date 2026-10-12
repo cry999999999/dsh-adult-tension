@@ -1632,7 +1632,7 @@
     "emergency_airlock_containment_corridor"
    ],
    "id": "superconducting_tokamak_core_chamber",
-   "name": "地下负七层环形超导托卡马克主机舱",
+   "name": "托卡马克主机舱",
    "pressure_modifiers": {
     "p_cardiac_arrhythmia_defibrillation_cloc": "强磁场感应使得女学者心率跌至每分钟三十五次随时可能心室停搏。",
     "p_cryogenic_hypothermia_freezing_room": "环境温度已暴跌至零下二十八度且冷凝水正迅速结成坚硬黑冰。"
@@ -1660,7 +1660,7 @@
     "emergency_airlock_containment_corridor"
    ],
    "id": "liquid_helium_control_substation",
-   "name": "副控冷凝加压与备用配电隔离配电舱",
+   "name": "副控配电舱",
    "pressure_modifiers": {
     "p_cryogenic_hypothermia_freezing_room": "配电舱暖风机完全停摆温度正以每分钟两度速度持续狂降。",
     "p_oxygen_depletion_asphyxiation_countdow": "排风扇倒灌使得舱内含氧百分比已跌破百分之十四安全红线。"
@@ -1688,7 +1688,7 @@
     "liquid_helium_control_substation"
    ],
    "id": "emergency_airlock_containment_corridor",
-   "name": "地下防爆重型双层铅闸气密隔离通道",
+   "name": "铅门气密通道",
    "pressure_modifiers": {
     "p_heavy_lead_door_auto_weld_lock": "铅门内部电子防爆锁死机构已启动机械自锁销死进程。",
     "p_induced_high_voltage_arc_explosion_haz": "高压电缆外皮在强磁切割下不断爆出半米长的高压火花。"

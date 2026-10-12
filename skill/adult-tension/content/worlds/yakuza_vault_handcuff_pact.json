@@ -1809,7 +1809,7 @@
     "flooded_vip_casino_gaming_hall"
    ],
    "id": "reinforced_vault_inner_sanctum",
-   "name": "地下二层防爆精钢重金库兼抵押拘禁密室",
+   "name": "地下金库",
    "pressure_modifiers": {
     "p_mutinous_enforcers_shotgun_breach": "门外观察窗防弹玻璃已被重型霰弹枪轰出蛛网状密密麻麻的白色裂纹。",
     "p_seawater_inundation_vault_submersion": "门缝下方已开始汩汩渗入冰冷咸涩的东京湾海水，水位正以肉眼可见速度漫过脚踝。"
@@ -1837,7 +1837,7 @@
     "submerged_cargo_pier_emergency_wharf"
    ],
    "id": "flooded_vip_casino_gaming_hall",
-   "name": "积水倒灌之地下贵宾赌场大厅与长吧台",
+   "name": "贵宾赌场大厅",
    "pressure_modifiers": {
     "p_live_wire_electrocution_in_standing": "吊顶上一根裸露的四百伏高压电缆在水面上空剧烈晃动，火花四溅。",
     "p_mutinous_enforcers_shotgun_breach": "大厅两侧已被极道枪手架起两挺轻机枪形成交叉封锁火力网。"
@@ -1865,7 +1865,7 @@
     "flooded_vip_casino_gaming_hall"
    ],
    "id": "drainage_pump_room_maintenance_tunnel",
-   "name": "码头地下市政主抽水机房兼设备检修暗道",
+   "name": "抽水机房",
    "pressure_modifiers": {
     "p_live_wire_electrocution_in_standing": "配电铁柜底座已被积水浸泡，金属外壳带电发出微弱电离嗡鸣。",
     "p_seawater_inundation_vault_submersion": "一台抽水机马达因被塑料杂物卡死冒出滚滚黑烟，排水量骤降一半。"
@@ -1891,7 +1891,7 @@
     "flooded_vip_casino_gaming_hall"
    ],
    "id": "submerged_cargo_pier_emergency_wharf",
-   "name": "地下货运码头应急走私快艇密闭泊位",
+   "name": "快艇泊位",
    "pressure_modifiers": {
     "p_police_harbor_patrol_encirclement_raid": "东京湾外海已有水上警察署两艘巡逻艇拉响刺耳防空警报冒暴雨合围封锁航道。",
     "p_seawater_inundation_vault_submersion": "外海巨浪已漫过船坞防波堤，整座泊位海水深度已达两米面临全面沉没。"

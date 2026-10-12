@@ -1497,7 +1497,7 @@
     "loc_moon_wheel_counterweight_lever"
    ],
    "id": "loc_moon_wheel_altar",
-   "name": "月轮大殿合拢中的花瓣穹顶下",
+   "name": "花瓣穹顶下",
    "pressure_modifiers": {
     "p_altar_tilting": "祭台又歪了一点，脚下的石面滑得站不住。",
     "p_petals_closing": "花瓣又合拢了一格，锯齿边缘擦着头顶过去。"
@@ -1521,7 +1521,7 @@
     "loc_moon_wheel_altar"
    ],
    "id": "loc_armor_latch_petal_hinge",
-   "name": "秘银轻甲护背暗扣与花瓣铰链齿槽",
+   "name": "花瓣铰链齿槽",
    "pressure_modifiers": {
     "p_bow_chest_press": "王女背贴在学者胸前，四只手叠在弓身上，秘银轻甲贴着对方的衬衫。",
     "p_bow_tip_bending": "弓梢的直角卡榫被暗扣压出一道弧，再硬别可能整个弯掉。"

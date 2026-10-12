@@ -1735,7 +1735,7 @@
     "ventilation_maintenance_crawlspace"
    ],
    "id": "reinforced_titanium_vault_chamber",
-   "name": "地下五层钛合金重型安防金库",
+   "name": "钛合金金库",
    "pressure_modifiers": {
     "p_oxygen_circulation_depletion_crisis": "气密室内空气逐渐稀薄二氧化碳浓度持续攀升。",
     "p_thermite_torch_breach_countdown": "三尺防爆钢闸外传来刺耳的热熔焊枪高温切割火花声。"
@@ -1790,7 +1790,7 @@
     "subterranean_corridor_lift_lobby"
    ],
    "id": "ventilation_maintenance_crawlspace",
-   "name": "金库顶层狭窄通风检修夹层",
+   "name": "通风检修夹层",
    "pressure_modifiers": {
     "p_electrical_arc_short_circuit_fire": "头顶动力高压电缆因电弧冲击开始火花四溅冒烟。",
     "p_oxygen_circulation_depletion_crisis": "通风管道内空气流通停滞温度逼近四十度高温。"

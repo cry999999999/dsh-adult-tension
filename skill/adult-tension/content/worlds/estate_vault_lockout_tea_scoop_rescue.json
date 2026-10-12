@@ -1588,7 +1588,7 @@
     "loc_courtyard_tea_hut"
    ],
    "id": "loc_grand_atrium_foyer",
-   "name": "字画大库地面挑空检视中庭大堂",
+   "name": "检视大堂",
    "pressure_modifiers": {
     "p_structural_aftershock_creak": "强雷电引发的电涌震动顺着承重立柱传导，天花板回廊发出细微震颤。",
     "p_vault_inert_gas_purge_timer": "火警系统总控倒计时在大堂显示屏上飞速跳动，警报蜂鸣震耳欲聋。"
@@ -1618,7 +1618,7 @@
     "loc_nanmu_antique_rack_zone"
    ],
    "id": "loc_calligraphy_vault_hall",
-   "name": "地下大跨度恒湿字画典藏库通堂",
+   "name": "字画库通堂",
    "pressure_modifiers": {
     "p_door_deadweight_rail_deformation": "数百公斤卷帘横梁压得导轨铝合金卡扣发出不堪重负的嘎吱牙酸声，变形不断挤压狭窄脱困缝隙。",
     "p_vault_inert_gas_purge_timer": "火警警报闪烁刺眼红光，惰性气体预充压力泵的低频轰鸣在空旷通堂内回荡，倒计时读秒紧迫逼人。"
@@ -1645,7 +1645,7 @@
     "loc_calligraphy_vault_hall"
    ],
    "id": "loc_airlock_gate_crawlspace",
-   "name": "气密防火卷帘下三十公分死角狭缝",
+   "name": "卷帘下狭缝",
    "pressure_modifiers": {
     "p_close_contact_body_heat_tension": "在逼仄死角内两人肢体完全重叠贴伏，旗袍丝滑微凉与汗湿体温猛烈交织，急促滚烫的吐息直接喷洒在颈侧与锁骨上。",
     "p_door_deadweight_rail_deformation": "卷帘门重力直接下压在挑杠支点上，反向推力若有丝毫偏差便可能导致工具滑脱被瞬间彻底死锁。"
@@ -1669,7 +1669,7 @@
     "loc_calligraphy_vault_hall"
    ],
    "id": "loc_nanmu_antique_rack_zone",
-   "name": "深处楠木高大博古架与长卷储藏区",
+   "name": "楠木博古架区",
    "pressure_modifiers": {
     "p_masterpiece_heritage_acid_risk": "排风百叶窗已自动全部锁死，空气滞重而冷冽，氧气即将被惰性气体全面替换。"
    },

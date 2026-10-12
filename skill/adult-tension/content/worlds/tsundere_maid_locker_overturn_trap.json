@@ -1701,7 +1701,7 @@
     "loc_mall_underground_service_corridor"
    ],
    "id": "loc_maid_backstage_locker_aisle",
-   "name": "地下一层狭窄更衣储物通道",
+   "name": "更衣储物通道",
    "pressure_modifiers": {
     "p_mall_fire_shutter_curfew_countdown": "距商厦防火卷帘完全接地断电仅剩十二分钟，更衣室内升温缺氧紧迫。",
     "p_overturned_steel_locker_jam": "两百公斤倾覆钢柜角钢死死咬死移门地轨，机械门舌受数吨剪力抱死。"
@@ -1727,7 +1727,7 @@
     "loc_maid_star_rest_room"
    ],
    "id": "loc_maid_cafe_stage_antechamber",
-   "name": "咖啡馆主舞台备场侧翼前厅",
+   "name": "舞台侧翼前厅",
    "pressure_modifiers": {
     "p_fire_shutter_gravity_lock_hazard": "防火卷帘门重力自锁下坠，若彻底闭合将形成永久防爆物理隔离。"
    },
@@ -1751,7 +1751,7 @@
     "loc_maid_cafe_stage_antechamber"
    ],
    "id": "loc_mall_underground_service_corridor",
-   "name": "商厦地下机电后勤运维连廊",
+   "name": "地下后勤连廊",
    "pressure_modifiers": {
     "p_service_panel_overload_trip_risk": "备电配电箱继电器过热微鸣，备用电源回路随时面临跳闸断电。"
    },

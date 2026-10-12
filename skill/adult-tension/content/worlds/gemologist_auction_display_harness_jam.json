@@ -1617,7 +1617,7 @@
     "loc_mep_vault_hydraulic_control_bay"
    ],
    "id": "loc_pink_diamond_rotating_plinth",
-   "name": "粉钻重型旋转防弹展台中央区",
+   "name": "粉钻展台",
    "pressure_modifiers": {
     "pres_pneumatic_seal_harness_deadlock": "充气胶条死咬脚踝细链致使高开叉裙摆受拉撕扯开裂加剧",
     "pres_thirty_second_gavel_countdown": "拍卖台秒表每秒递减催逼终极宣读节点"
@@ -1643,7 +1643,7 @@
     "loc_designer_atelier"
    ],
    "id": "loc_vip_collectors_auction_floor",
-   "name": "全球顶级藏家与媒体环形席位",
+   "name": "环形竞价席",
    "pressure_modifiers": {
     "pres_global_tycoons_intense_gaze": "数十位巨贾锐利目光带来极度高压之名誉审判威慑"
    },
@@ -1666,7 +1666,7 @@
     "loc_mep_vault_hydraulic_control_bay"
    ],
    "id": "loc_auctioneer_rostrum_podium",
-   "name": "拍卖大师金槌主讲台与侧阶",
+   "name": "拍卖台",
    "pressure_modifiers": {
     "pres_thirty_second_gavel_countdown": "金槌敲击预备提示音构成最后压迫死线"
    },
@@ -1689,7 +1689,7 @@
     "loc_auctioneer_rostrum_podium"
    ],
    "id": "loc_mep_vault_hydraulic_control_bay",
-   "name": "展厅地下特种液压机电总控室",
+   "name": "地下液压控制室",
    "pressure_modifiers": {
     "pres_pneumatic_seal_harness_deadlock": "通过机械泄压微调有效削弱硅胶条对金属细链之死锁咬合力"
    },
@@ -1711,7 +1711,7 @@
     "loc_vip_collectors_auction_floor"
    ],
    "id": "loc_designer_atelier",
-   "name": "拍卖行楼上的设计师工作室",
+   "name": "设计师工作室",
    "pressure_modifiers": {},
    "privacy": "private",
    "tags": [

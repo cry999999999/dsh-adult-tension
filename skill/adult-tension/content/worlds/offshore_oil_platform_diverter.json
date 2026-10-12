@@ -1546,7 +1546,7 @@
     "loc_mud_diverter_overboard_gallery"
    ],
    "id": "loc_moonpool_diverter_manifold_nook",
-   "name": "月池底部环形防喷分流管排悬空死角",
+   "name": "月池分流器死角",
    "pressure_modifiers": {
     "p_diverter_packing_hydraulic_deadlock": "分流器环形胶芯在非对称高压泥浆挤压下拉伸抱死，必须依靠特种扳手合力顺时针猛转释放液压油自救。",
     "p_shallow_gas_blowout_surge": "千米深海浅层高压气柱以每秒上百米极速冲关，狭小管排死角内气压飙升距全面井喷仅剩四分钟窗口。"
@@ -1574,7 +1574,7 @@
     "loc_drill_floor_duty_room"
    ],
    "id": "loc_drill_floor_moonpool_catwalk",
-   "name": "钻台月池上方防爆检修主栈桥通廊",
+   "name": "月池栈桥",
    "pressure_modifiers": {
     "p_derrick_riser_tension_snap_risk": "主隔水管顶部悬挂钢缆受到数十吨异常动载拉扯，张紧器缓冲缸液压油温飙升濒临崩绳。"
    },
@@ -1601,7 +1601,7 @@
     "loc_drill_floor_moonpool_catwalk"
    ],
    "id": "loc_mud_diverter_overboard_gallery",
-   "name": "舷外泥浆分流通海管汇隔离走廊",
+   "name": "舷外排浆走廊",
    "pressure_modifiers": {
     "p_cold_hypothermia_moonpool_shock": "冰冷海浪飞沫剧烈喷溅加剧了通廊的严寒侵袭，体温过快流失增加了失温休克的危险。"
    },

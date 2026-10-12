@@ -1615,7 +1615,7 @@
     "loc_mep_sand_tension_control_hub"
    ],
    "id": "loc_beach_center_net_anchor",
-   "name": "中央沙滩球场球网防风地锚区",
+   "name": "球网地锚区",
    "pressure_modifiers": {
     "pres_anchor_hook_vibe_snag": "地锚钢钩受拉向外撕扯比基尼侧边泳裤加剧走光危机",
     "pres_twenty_second_serve_clock": "发球钟刺眼红字每秒递减催逼极限抉择"
@@ -1641,7 +1641,7 @@
     "loc_beach_player_cabin"
    ],
    "id": "loc_beach_volleyball_grandstand",
-   "name": "万人露天环形看台与转播席",
+   "name": "环形看台",
    "pressure_modifiers": {
     "pres_ten_thousand_spectator_gaze": "上万观众注视与长焦镜头带来无处遁形之公众审视窒息感"
    },
@@ -1664,7 +1664,7 @@
     "loc_mep_sand_tension_control_hub"
    ],
    "id": "loc_players_bench_shaded_canopy",
-   "name": "场边教练席遮阳顶棚与战术区",
+   "name": "教练席",
    "pressure_modifiers": {
     "pres_twenty_second_serve_clock": "边线主教练挥臂倒数提示战术最后节点"
    },
@@ -1687,7 +1687,7 @@
     "loc_players_bench_shaded_canopy"
    ],
    "id": "loc_mep_sand_tension_control_hub",
-   "name": "场地沙下缆绳机电控制凹箱",
+   "name": "沙下控制箱",
    "pressure_modifiers": {
     "pres_anchor_hook_vibe_snag": "通过机械力学卸载减缓地锚倒钩对泳裤布料之撕扯剪切力"
    },

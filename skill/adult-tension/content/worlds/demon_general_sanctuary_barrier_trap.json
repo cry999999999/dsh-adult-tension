@@ -1522,7 +1522,7 @@
     "loc_gravity_altar_pit"
    ],
    "id": "loc_gravity_ratchet_slot",
-   "name": "重力阵盘偏心自锁棘齿卡槽",
+   "name": "阵盘棘齿槽",
    "pressure_modifiers": {
     "p_spear_butt_bend": "枪镦的倒钩被棘齿压出了一道豁口，再硬别可能整片崩掉。",
     "p_spear_chest_press": "女将军俯卧着后背紧贴在机关学者胸前，四只手叠在矛杆上，薄薄的战袍贴着对方的长衫。"

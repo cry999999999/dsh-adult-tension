@@ -1740,7 +1740,7 @@
     "broken_window_snowdrift_exit"
    ],
    "id": "derailed_passenger_cabin_middle",
-   "name": "滞留单节柴油客车中段双人软座区",
+   "name": "中段软座区",
    "pressure_modifiers": {
     "p_blizzard_cracking_cabin_window": "狂风卷着断枝猛烈撞击左侧车窗玻璃发出刺耳蜘蛛网状开裂声。",
     "p_generator_diesel_freeze_blackout": "暖风机熄火后车内温度每十分钟下降三度，座椅扶手已结出硬霜。"
@@ -1768,7 +1768,7 @@
     "exterior_snowdrift_embankment"
    ],
    "id": "diesel_engine_compartment_vestibule",
-   "name": "客车前端司机室与柴油机发电机舱",
+   "name": "司机室机舱",
    "pressure_modifiers": {
     "p_generator_diesel_freeze_blackout": "柴油机输油管严重蜡化堵塞若不能在一小时内化开将彻底报废。",
     "p_subzero_hypothermia_coma_peril": "操作金属扳手五分钟手指即与冰铁冻连造成严重皮肉撕脱撕裂。"
@@ -1796,7 +1796,7 @@
     "exterior_snowdrift_embankment"
    ],
    "id": "broken_window_snowdrift_exit",
-   "name": "列车尾部破损贯通门与积雪斜坡",
+   "name": "破损尾门",
    "pressure_modifiers": {
     "p_blizzard_cracking_cabin_window": "风雪强压正不断将车尾贯通门铰链撕扯脱扣导致灌雪加剧。",
     "p_secondary_avalanche_slope_hazard": "后方山体上层厚积雪在狂风吹拂下出现松动滑移隆隆闷响。"
@@ -1823,7 +1823,7 @@
     "broken_window_snowdrift_exit"
    ],
    "id": "exterior_snowdrift_embankment",
-   "name": "列车外侧齐腰深积雪路基与道岔立柱",
+   "name": "积雪路基",
    "pressure_modifiers": {
     "p_dawn_snowplow_rescue_missing_signal": "若立柱红灯未在破晓点亮除雪车将无法减速可能发生二次冲撞。",
     "p_secondary_avalanche_slope_hazard": "山坡积雪若发生大面积雪崩将在数十秒内将整节车厢整体推下路堤。"

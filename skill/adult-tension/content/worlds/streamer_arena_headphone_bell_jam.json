@@ -1644,7 +1644,7 @@
     "loc_arena_center_walkway_ramp"
    ],
    "id": "loc_esports_arena_glass_booth",
-   "name": "中央对战隔音玻璃房与解说席",
+   "name": "对战玻璃房",
    "pressure_modifiers": {
     "press_arena_screen_countdown_panic": "环形巨幕二十秒倒计时红字闪烁加剧时间枯竭窒息恐慌",
     "press_choker_cable_strangle_dread": "凯夫拉线缆紧紧勒压颈动脉加剧身体受困脱力眩晕"
@@ -1670,7 +1670,7 @@
     "loc_streamer_backstage_lounge"
    ],
    "id": "loc_stage_cable_trench_corner",
-   "name": "玻璃房后侧弱电线槽与设备暗角",
+   "name": "线槽暗角",
    "pressure_modifiers": {
     "press_fingertip_sweat_tool_slip": "指尖微汗导致不锈钢撬针在金属环边缘打滑加剧解脱失败风险",
     "press_playboy_intrusion_exposure": "皮鞋踏地声步步逼近加剧隐私失守社死恐慌"
@@ -1695,7 +1695,7 @@
     "loc_arena_center_walkway_ramp"
    ],
    "id": "loc_arena_vip_front_lounge",
-   "name": "万人场馆首排科技赞助商贵宾席",
+   "name": "首排贵宾席",
    "pressure_modifiers": {
     "press_arena_screen_countdown_panic": "全场万名观众狂热呼喊衬托玻璃房内绝境尤为孤立无援",
     "press_sponsor_dignity_scrutiny": "财团高层长辈审视目光加剧偶像主播职业生涯覆灭危机"
@@ -1720,7 +1720,7 @@
     "loc_arena_vip_front_lounge"
    ],
    "id": "loc_arena_center_walkway_ramp",
-   "name": "主舞台延伸升降坡道与礼花发射台",
+   "name": "舞台坡道",
    "pressure_modifiers": {
     "press_playboy_intrusion_exposure": "二世祖快步逼近加剧玻璃房防线被撕破的恐惧",
     "press_uniform_collar_stretch_panic": "紧绷水手服领口向上拉扯加剧锁骨肌肤暴露羞耻"

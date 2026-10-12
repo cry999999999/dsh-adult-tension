@@ -1524,7 +1524,7 @@
     "loc_vip_examination_hall"
    ],
    "id": "loc_underground_drainage_culvert",
-   "name": "藏书阁基底暗渠排涝水闸口",
+   "name": "暗渠水闸口",
    "pressure_modifiers": {
     "press_shear_arm_collapse": "管网逆流涌浪不断撞击石门发出沉闷轰鸣"
    },

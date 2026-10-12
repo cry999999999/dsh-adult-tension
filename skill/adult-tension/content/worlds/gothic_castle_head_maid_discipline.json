@@ -1806,7 +1806,7 @@
     "castle_master_bedchamber_suite"
    ],
    "id": "castle_grand_hearth_great_hall",
-   "name": "古堡一层石砌双柱巨型壁炉主宴会大厅",
+   "name": "壁炉大厅",
    "pressure_modifiers": {
     "p_blizzard_suspension_bridge_collapse": "暴风雪呼啸震碎了大厅一扇高窗玻璃，刺骨暴风雪夹带冰渣呼啸卷入。",
     "p_inheritance_tax_midnight_default_dea": "大厅巨型青铜座钟指针正一步步逼近午夜十二点，分秒流逝无情审判。"
@@ -1836,7 +1836,7 @@
     "castle_stone_corridor_dungeon_keep"
    ],
    "id": "castle_master_bedchamber_suite",
-   "name": "城堡二层领主主卧寝殿套房",
+   "name": "领主主卧",
    "pressure_modifiers": {
     "p_dowager_regent_palace_coup_usurpation": "摄政夫人手下猎兵已进驻主卧外廊，皮靴踏在石板上的声音清晰可闻。",
     "p_head_maid_severe_rule_discipline_con": "女仆长手握钥匙串立在房门前，冷声宣布对少爷实施古老家规禁足令。"
@@ -1862,7 +1862,7 @@
     "castle_master_bedchamber_suite"
    ],
    "id": "castle_head_maid_dressing_wardrobe_sec",
-   "name": "主卧内嵌三折试衣落地大镜更衣暗室",
+   "name": "更衣暗室",
    "pressure_modifiers": {
     "p_head_maid_severe_rule_discipline_con": "女仆长已将十字钥匙插进暗门反锁，将少爷彻底幽禁在更衣暗室内立规矩。",
     "p_inheritance_tax_midnight_default_dea": "暗室墙角精巧发条座钟发出清脆滴答声，倒数距离午夜终局仅余半小时。"
@@ -1888,7 +1888,7 @@
     "castle_master_bedchamber_suite"
    ],
    "id": "castle_stone_corridor_dungeon_keep",
-   "name": "古堡后翼积雪断桥回廊与地下石牢要冲",
+   "name": "断桥回廊",
    "pressure_modifiers": {
     "p_blizzard_suspension_bridge_collapse": "回廊外悬崖暴风雪愈演愈烈，积雪已达膝盖深阻断通行。",
     "p_dowager_regent_palace_coup_usurpation": "摄政夫人手下猎兵正手持火把在回廊尽头搜索前进搜缴火药库。"

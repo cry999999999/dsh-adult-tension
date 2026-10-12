@@ -1590,7 +1590,7 @@
     "monastery_sub_level_sewer_escape_tunnel"
    ],
    "id": "inquisition_subterranean_dungeon_cell_ei",
-   "name": "裁判所地底百尺第八号花岗岩死囚单间",
+   "name": "八号死囚室",
    "pressure_modifiers": {
     "p_anti_magic_collar_thermal_strangulatio": "反魔颈圈因外部法阵感应正微微发烫勒紧纤细脖颈令呼吸困难。",
     "p_inquisitor_midnight_torture_inspection": "门廊外审判官铁底马靴声正顺着石梯一步步清脆逼近死牢。"
@@ -1619,7 +1619,7 @@
     "monastery_sub_level_sewer_escape_tunnel"
    ],
    "id": "dungeon_vault_corridor_interrogation_hal",
-   "name": "地牢拱券十字回廊与刑具陈列前厅",
+   "name": "十字回廊",
    "pressure_modifiers": {
     "p_dawn_pyre_execution_deadline_countdown": "杂役正来回搬运浸透火油的松木柴捆从前厅运往地表广场。",
     "p_inquisitor_midnight_torture_inspection": "巡逻队长正手持点名册逐一核验每间牢房锁闭封条。"
@@ -1646,7 +1646,7 @@
     "dungeon_vault_corridor_interrogation_hal"
    ],
    "id": "monastery_sub_level_sewer_escape_tunnel",
-   "name": "修道院地下排污暗渠与古代蓄水池暗道",
+   "name": "排污暗渠",
    "pressure_modifiers": {
     "p_dawn_pyre_execution_deadline_countdown": "地表钟楼已敲响四更钟声距离第一缕晨曦仅剩半柱香功夫。",
     "p_inquisitor_midnight_torture_inspection": "猎犬狂吠声与搜捕火把倒影已在暗渠水面上游晃动追来。"

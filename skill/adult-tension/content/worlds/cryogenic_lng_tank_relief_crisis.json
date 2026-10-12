@@ -1545,7 +1545,7 @@
     "loc_upper_deck_vent_mast_platform"
    ],
    "id": "loc_cargo_tank_dome_cryogenic_nook",
-   "name": "液货舱圆顶下方超低温绝冷检修盲区",
+   "name": "圆顶检修盲区",
    "pressure_modifiers": {
     "p_boil_off_gas_overpressure_surge": "超低温天然气蒸发气以每秒数十立方米极速膨胀，舱内压力逼近薄膜内胆破裂极限仅剩四分钟窗口。",
     "p_relief_valve_cryogenic_ice_jam": "安全阀顶杆在深海盐雾凝华与超低温反向对冲下抱死，必须依靠特种扳手合力敲击破冰压下自救。"
@@ -1573,7 +1573,7 @@
     "loc_chief_engineer_cabin"
    ],
    "id": "loc_cargo_compressor_room_catwalk",
-   "name": "货气压缩机房防爆检修主通廊",
+   "name": "压缩机房通廊",
    "pressure_modifiers": {
     "p_cold_hypothermia_dome_shock": "刺骨深冷伴随巨浪拍打加剧了通廊的冻僵风险，体温过快流失增加了失温休克的危险。"
    },
@@ -1600,7 +1600,7 @@
     "loc_cargo_compressor_room_catwalk"
    ],
    "id": "loc_upper_deck_vent_mast_platform",
-   "name": "主甲板高耸放空桅防爆隔离平台",
+   "name": "放空桅平台",
    "pressure_modifiers": {
     "p_vent_mast_vibration_fatigue": "狂风与高压放空气流造成放空桅剧烈横向晃动，拉索张力逼近极限濒临失稳。"
    },

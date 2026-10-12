@@ -1734,7 +1734,7 @@
     "loc_awards_green_room_vip_tunnel"
    ],
    "id": "loc_awards_stage_revolving_platform",
-   "name": "大剧院挑空三十米主旋转舞台中央区",
+   "name": "旋转舞台中央",
    "pressure_modifiers": {
     "p_couture_gown_caught_in_track_gears": "真丝礼裙被齿轨导轮死死夹紧，任何蛮力拉扯都将导致坚硬鱼骨勒伤腹部与腰部骨骼。",
     "p_revolving_platform_hydraulic_crush": "舞台地下液压升降柱进入自动归位泄压倒计时，五分钟后立柱将开始下沉压平缝隙。"
@@ -1762,7 +1762,7 @@
     "loc_awards_green_room_vip_tunnel"
    ],
    "id": "loc_backstage_underground_mach_aisle",
-   "name": "主旋转台地下机械传动齿轨暗道",
+   "name": "台下齿轨暗道",
    "pressure_modifiers": {
     "p_high_voltage_spotlight_heat_hazard": "舞台上方高聚光灯热辐射穿透缝隙，基坑内部温度飙升至四十度加剧机油挥发。"
    },
@@ -1790,7 +1790,7 @@
     "loc_actress_private_dressing_room"
    ],
    "id": "loc_awards_green_room_vip_tunnel",
-   "name": "贵宾候场区特装防暴气密安全通道",
+   "name": "贵宾候场通道",
    "pressure_modifiers": {
     "p_riot_security_gate_deadlock_stampede": "防暴大闸闭锁引发后场演职人员恐慌，通道狭窄产生轻微推挤踩踏风险。"
    },

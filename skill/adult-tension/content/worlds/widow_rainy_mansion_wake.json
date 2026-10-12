@@ -1648,7 +1648,7 @@
     "tea_ceremony_alcove_hiding"
    ],
    "id": "buddhist_shrine_wake_hall",
-   "name": "数寄屋老宅深处守灵大佛堂",
+   "name": "守灵佛堂",
    "pressure_modifiers": {
     "p_branch_family_banging_doors": "旁系长房正在纸门外挥动拐杖猛烈敲击叫骂逼交金库钥匙。",
     "p_candle_flame_flickering_blackout": "穿堂冷风裹挟暴雨不断穿透破损木格窗摇撼长明烛火。"
@@ -1676,7 +1676,7 @@
     "ancestral_vault_stone_storehouse"
    ],
    "id": "tatami_corridor_sliding_doors",
-   "name": "通往中庭暴雨回廊与雕花拉门",
+   "name": "中庭回廊",
    "pressure_modifiers": {
     "p_debt_syndicate_armed_intrusion": "带刀打手已越过中庭石桥进入回廊西侧准备破门搜查。",
     "p_rainstorm_flash_flood_severing_bridge": "中庭回廊台阶下积水已漫过脚踝即将倒灌浸泡榻榻米。"
@@ -1704,7 +1704,7 @@
     "tatami_corridor_sliding_doors"
    ],
    "id": "tea_ceremony_alcove_hiding",
-   "name": "佛堂后方三叠半茶道秘室水屋",
+   "name": "三叠半茶室",
    "pressure_modifiers": {
     "p_branch_family_banging_doors": "打手脚步声就在一板之隔的纸门外来回徘徊审视。",
     "p_widow_hypothermia_tremor_collapse": "未亡人因极度受冻与紧张心悸浑身战栗呼吸急促。"
@@ -1730,7 +1730,7 @@
     "tatami_corridor_sliding_doors"
    ],
    "id": "ancestral_vault_stone_storehouse",
-   "name": "后院重装花岗岩土藏金库大门前",
+   "name": "土藏门前",
    "pressure_modifiers": {
     "p_dawn_notary_fraudulent_decree": "伪造遗嘱公证书正被贪腐律师高举在雨中准备签字盖章。",
     "p_debt_syndicate_armed_intrusion": "高利贷头目正指挥打手用氧气割枪准备强行切断大门铜锁。"

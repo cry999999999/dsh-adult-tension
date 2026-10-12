@@ -1765,7 +1765,7 @@
     "superconducting_magnet_service_corridor"
    ],
    "id": "quantum_core_control_deck",
-   "name": "地下三层中央量子对撞主控观测大厅",
+   "name": "主控观测大厅",
    "pressure_modifiers": {
     "p_neural_feedback_fever": "两人手环之间的量子纠缠微电流发出高频滋滋声，空气弥漫着强烈的电离焦糊味。",
     "p_twelve_minute_collapse": "主屏幕正上方的时间定格倒计时血红数字正在一秒一秒无情流逝。"
@@ -1794,7 +1794,7 @@
     "subterranean_magnetic_monorail_slipway"
    ],
    "id": "cryogenic_liquid_nitrogen_service_well",
-   "name": "环形磁道超导液氮备用排气与加压竖井",
+   "name": "液氮竖井",
    "pressure_modifiers": {
     "p_nitrogen_valve_ice_jam": "转轮表面结有三厘米厚坚硬如铁的重度冰壳，冰晶不断吸收周围微弱热量。",
     "p_soaked_suit_hypothermia": "女主管湿透的衬衫在极寒下迅速硬化，肌肤大面积泛起冻伤苍白。"
@@ -1821,7 +1821,7 @@
     "subterranean_magnetic_monorail_slipway"
    ],
    "id": "superconducting_magnet_service_corridor",
-   "name": "超导粒子环形跑道外圈防爆环廊",
+   "name": "外圈环廊",
    "pressure_modifiers": {
     "p_static_flashover_storm": "回廊两侧金属扶手不时跳动着蓝紫色的高压静电火花，空气电位逼近击穿临界点。",
     "p_twelve_minute_collapse": "走廊尽头的时空防护壁边缘开始浮现出微弱的彩色像素化撕裂噪点。"
@@ -1848,7 +1848,7 @@
     "superconducting_magnet_service_corridor"
    ],
    "id": "subterranean_magnetic_monorail_slipway",
-   "name": "地下三层绝密磁悬浮紧急逃生滑轨站台",
+   "name": "逃生单轨站台",
    "pressure_modifiers": {
     "p_shuttle_catapult_lock": "电磁弹射卡爪死死咬在导轨上，身后的蓝色激波光芒越来越亮。",
     "p_twelve_minute_collapse": "隧道口上方的承重岩层开始掉落碎石，时停边界正在剧烈动荡收缩。"

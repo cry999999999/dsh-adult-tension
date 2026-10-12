@@ -1557,7 +1557,7 @@
     "loc_abyss_mountain_torrent"
    ],
    "id": "loc_hanging_kagura_corridor",
-   "name": "主殿挑空十二米长廊悬空神乐台",
+   "name": "悬空神乐台",
    "pressure_modifiers": {
     "press_corridor_wooden_collapse_groan": "挑梁榫卯在扭矩撕扯下爆出木屑脆响预示结构终极解体",
     "press_twenty_seconds_torrent_breach": "山体滚石再度撞击立柱导致台面斜度每两秒倾斜半度"
@@ -1582,7 +1582,7 @@
     "loc_miko_living_quarters"
    ],
    "id": "loc_sanctuary_outer_terrace",
-   "name": "祭殿坚实岩石地基外侧观礼平台",
+   "name": "观礼平台",
    "pressure_modifiers": {
     "press_reporter_telephoto_spotlight_lock": "强光探照灯呈圆锥状死死照准祭袍受力撕扯破口",
     "press_twenty_seconds_torrent_breach": "平台边缘泥浆溢出倒数警报音响彻底淹没环境音"
@@ -1606,7 +1606,7 @@
     "loc_hanging_kagura_corridor"
    ],
    "id": "loc_abyss_mountain_torrent",
-   "name": "挑梁正下方深渊峡谷泥石流洪峰",
+   "name": "峡谷泥石流",
    "pressure_modifiers": {
     "press_abyss_plummet_fatal_fall_threat": "下方十二米万吨山洪咆哮将心理恐惧推向绝对极点"
    },
@@ -1627,7 +1627,7 @@
     "loc_sanctuary_outer_terrace"
    ],
    "id": "loc_mountain_evacuation_path",
-   "name": "后山通往避难直升机坪石阶古道",
+   "name": "后山石阶古道",
    "pressure_modifiers": {
     "press_twenty_seconds_torrent_breach": "后山泥石流漫灌石阶导致最后安全撤离窗口倒数"
    },

@@ -1629,7 +1629,7 @@
     "underfloor_root_cellar_hatch"
    ],
    "id": "abandoned_hearth_cabin_main_room",
-   "name": "黑松林绝壁废弃护林员原木小屋主起居室",
+   "name": "小屋起居室",
    "pressure_modifiers": {
     "p_hypothermia_lung_edema_collapse_clock": "皇女核心体温正随浸湿衣衫以每刻钟两度的致命速度极速跌落。",
     "p_last_three_firewood_burnout_clock": "壁炉内干燥松木以肉眼可见速度碳化缩小光亮与温度逐渐微弱。"
@@ -1657,7 +1657,7 @@
     "underfloor_root_cellar_hatch"
    ],
    "id": "attic_drying_loft_dormer",
-   "name": "原木小屋二层干草储藏阁楼与烟囱天窗",
+   "name": "干草阁楼",
    "pressure_modifiers": {
     "p_rebel_cavalry_torch_search_siege": "叛军追兵骑兵队举着熊熊火把正牵着猎犬沿雪蹄印逼近木屋。",
     "p_roof_snowpack_structural_cave_in": "屋顶积雪重逾数吨正压迫横梁发出令人心惊的断裂悲鸣。"
@@ -1686,7 +1686,7 @@
     "attic_drying_loft_dormer"
    ],
    "id": "underfloor_root_cellar_hatch",
-   "name": "地表之下避寒地窖与逃生岩缝暗道",
+   "name": "地窖暗道",
    "pressure_modifiers": {
     "p_last_three_firewood_burnout_clock": "地窖缺乏火源全凭二人肉身相贴抱团取暖维系生机。",
     "p_rebel_cavalry_torch_search_siege": "即便上方木屋被叛军纵火地窖亦能为二人争取一刻钟生机。"

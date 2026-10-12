@@ -1634,7 +1634,7 @@
     "ammo_depot_collapsed_cellar"
    ],
    "id": "bunker_core_blast_shelter",
-   "name": "十四号混凝土掩体防爆深坑核心室",
+   "name": "十四号掩体",
    "pressure_modifiers": {
     "p_enemy_armor_searchlight_sweep": "敌军装甲车探照灯惨白强光正自射击死角规律扫过掩体观察狭缝。",
     "p_generator_exhaust_hypothermia": "暖气锅炉彻底熄火室内气温已跌破零下二十五度金属刺骨发青。"
@@ -1662,7 +1662,7 @@
     "ammo_depot_collapsed_cellar"
    ],
    "id": "trench_firing_step_parapet",
-   "name": "前沿重机枪射击台与冻土胸墙",
+   "name": "机枪射击台",
    "pressure_modifiers": {
     "p_assault_pioneer_flamethrower_approach": "敌军喷火兵正借弹坑烟雾向胸墙死角推进至三十米投掷距离。",
     "p_enemy_armor_searchlight_sweep": "敌军坦克高爆炮弹在胸墙前沿十米处接连炸起冲天冻土碎块。"
@@ -1690,7 +1690,7 @@
     "ammo_depot_collapsed_cellar"
    ],
    "id": "communication_trench_choke_point",
-   "name": "第七突出部曲折交通壕扼守拐角",
+   "name": "交通壕拐角",
    "pressure_modifiers": {
     "p_assault_pioneer_flamethrower_approach": "敌军掷弹兵正向拐角后方盲区连续投掷发烟手雷封锁退路。",
     "p_dawn_artillery_barrage_countdown": "敌军大口径迫击炮正以徐进弹幕沿交通壕向掩体核心延伸射击。"
@@ -1719,7 +1719,7 @@
     "communication_trench_choke_point"
    ],
    "id": "ammo_depot_collapsed_cellar",
-   "name": "地下弹药库半坍塌储备地窖",
+   "name": "坍塌弹药库",
    "pressure_modifiers": {
     "p_generator_exhaust_hypothermia": "地窖通风孔彻底被冻结冰雪封死空气稀薄呼吸困难。",
     "p_last_cartridge_magazine_depletion": "地窖内仅剩最后三个三十发备用步枪弹匣弹药告罄迫在眉睫。"

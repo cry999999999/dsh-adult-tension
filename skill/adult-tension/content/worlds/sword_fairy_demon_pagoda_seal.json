@@ -1631,7 +1631,7 @@
     "ancient_array_maintenance_alcove"
    ],
    "id": "blood_pool_array_core_chamber",
-   "name": "锁妖塔第七重极阴血池阵枢石台密室",
+   "name": "血池石台",
    "pressure_modifiers": {
     "p_blood_pool_evil_miasma_mind_erosion": "血池翻腾溢出之浓稠血煞瘴气正不断侵蚀神志诱发癫狂幻觉。",
     "p_spiritual_reflux_meridian_explosion_cl": "女剑仙体内暴走乱窜之狂暴灵力正以每刻钟翻倍速度冲击天灵识海。"
@@ -1660,7 +1660,7 @@
     "ancient_array_maintenance_alcove"
    ],
    "id": "subterranean_iron_pillar_chasm",
-   "name": "万年玄铁镇煞铜柱深渊悬空铁链索道",
+   "name": "铁链索道",
    "pressure_modifiers": {
     "p_demon_emperor_phantom_breakout_siege": "太古妖皇血色巨爪正自深渊深处不断攀爬撕扯铁链锁网。",
     "p_severed_dragon_stone_air_depletion": "地穴封闭导致稀薄氧气被地火极速消耗呼吸愈发窒息。"
@@ -1688,7 +1688,7 @@
     "subterranean_iron_pillar_chasm"
    ],
    "id": "ancient_array_maintenance_alcove",
-   "name": "祖师手植降魔古松残根修葺石龛暗室",
+   "name": "古松石龛",
    "pressure_modifiers": {
     "p_outer_traitor_collapse_trigger_clock": "塔顶魔宗内应正引爆雷珠企图彻底将第七重地穴整体塌方活埋。",
     "p_spiritual_reflux_meridian_explosion_cl": "女剑仙身子冰寒发颤急需至阳体温与真气源源不断输入维系心脉。"

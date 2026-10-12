@@ -1580,7 +1580,7 @@
     "loc_stage_proscenium_apron"
    ],
    "id": "loc_theater_main_auditorium",
-   "name": "百年古戏楼挑空观众大厅与乐池",
+   "name": "观众大厅",
    "pressure_modifiers": {
     "p_floodwater_level_rising_rush": "暴雨导致戏楼大厅积水以每分钟两公分速度激增，水流冲击戏台台基引发微小震颤。",
     "p_timber_creaking_structural_groan": "狂风撕扯古戏楼屋脊琉璃瓦，梁架承重节点在阵风中发出沉闷悲鸣。"
@@ -1610,7 +1610,7 @@
     "loc_backstage_mirror_room"
    ],
    "id": "loc_stage_proscenium_apron",
-   "name": "挑空伸出式老戏台台口通廊",
+   "name": "戏台台口",
    "pressure_modifiers": {
     "p_floodwater_level_rising_rush": "雨水漫入戏台氍毹地毯，木质台面极度湿滑增加了自救支撑难度。",
     "p_frieze_deadweight_collapse_pinch": "数百公斤重型雕花大挂落偏心倾压台口立柱，自重咬死榫眼凹槽无法撼动。"
@@ -1637,7 +1637,7 @@
     "loc_stage_proscenium_apron"
    ],
    "id": "loc_collapsed_frieze_nook",
-   "name": "砸落雕花挂落与台口台基死角狭缝",
+   "name": "挂落下的狭缝",
    "pressure_modifiers": {
     "p_close_contact_body_heat_tension": "在三十五公分极限死角内名伶与木作师傅肌肤完全贴伏，旗袍薄汗与工装体温激烈对冲，滚烫急促的吐息拂过颈侧锁骨。",
     "p_frieze_deadweight_collapse_pinch": "数百公斤挂落重心持续偏向台口外侧，反向力矩若有丝毫偏斜便可能导致整个大挂落彻底拍碎台板。"

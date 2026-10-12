@@ -1492,7 +1492,7 @@
     "loc_vent_louver_latch"
    ],
    "id": "loc_collapsed_triage_corner",
-   "name": "坍塌急救室狭小生存三角区",
+   "name": "急救室三角区",
    "pressure_modifiers": {
     "p_aftershock_settle": "每一阵余震，头顶的水泥板就往下沉一点，碎石哗哗地往下落。",
     "p_air_running_out": "空气闷得像捂在棉被里，每吸一口都带着生石灰的苦味。"
@@ -1516,7 +1516,7 @@
     "loc_collapsed_triage_corner"
    ],
    "id": "loc_blast_door_bolt",
-   "name": "重型防爆铁门死卡偏心插销",
+   "name": "防爆门插销",
    "pressure_modifiers": {
     "p_chisel_chip": "凿刃的硬质刃口被插销崩掉了一个小口，再硬撬可能整片崩裂。",
     "p_triangle_chest_press": "军医后背紧紧贴在工兵组长胸前，四只手叠在凿柄上，汗湿的军服贴着对方的作训服。"
@@ -1540,7 +1540,7 @@
     "loc_field_hospital_tent"
    ],
    "id": "loc_vent_louver_latch",
-   "name": "应急通风百叶滑板破碎卡扣",
+   "name": "通风百叶卡扣",
    "pressure_modifiers": {
     "p_wounded_outside": "外面的人在拼命扒瓦砾，可刚扒开一块，余震又震下来一片。"
    },

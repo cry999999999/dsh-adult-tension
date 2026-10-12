@@ -1547,7 +1547,7 @@
     "loc_operator_cabin_skywalk"
    ],
    "id": "loc_bucket_wheel_winch_cabin",
-   "name": "万吨轮斗机悬空六十米受料臂卷扬机房",
+   "name": "卷扬机房",
    "pressure_modifiers": {
     "p_boom_cable_snap_fall_risk": "悬空臂受自重撕扯以每秒半米加速下滑，机舱震颤倾斜距彻底崩塌坠毁仅剩四分钟窗口。",
     "p_hydraulic_oil_fire_flashover": "泄漏的高压液压油在六百度高温下发生闪燃，狭小机舱内烈火封门氧气即将耗尽自救。"
@@ -1574,7 +1574,7 @@
     "loc_operator_cabin_skywalk"
    ],
    "id": "loc_boom_counterweight_platform",
-   "name": "受料臂主配重钢结构检修主平台",
+   "name": "配重平台",
    "pressure_modifiers": {
     "p_counterweight_cable_snap_risk": "配重块悬挂钢缆受到数十吨异常动载拉扯，滑轮导槽出现严重啃道濒临崩绳。"
    },
@@ -1601,7 +1601,7 @@
     "loc_boom_counterweight_platform"
    ],
    "id": "loc_operator_cabin_skywalk",
-   "name": "主操纵室高空悬空应急走廊栈桥",
+   "name": "操纵室栈桥",
    "pressure_modifiers": {
     "p_cabin_smoke_suffocation_shock": "高空浓烟翻滚弥漫加剧了悬空走廊的窒息危机，空气中氧气急剧耗竭逼近昏迷极限。"
    },

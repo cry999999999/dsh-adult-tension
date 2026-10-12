@@ -1668,7 +1668,7 @@
     "loc_choir_vestry_prep_annex"
    ],
    "id": "loc_choir_cantor_front_rail",
-   "name": "挑空圣咏阁楼前挑大理石栏杆",
+   "name": "圣咏阁栏杆",
    "pressure_modifiers": {
     "press_deacon_curtain_inspection": "执事长皮鞋踏上大理石台阶声音在回音穹顶下清晰可闻",
     "press_organ_air_reservoir_blast": "管风琴十吨气压前奏暴烈震响倒计时逼近引发栏杆高频共振"

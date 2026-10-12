@@ -1634,7 +1634,7 @@
     "main_saloon_bullet_riddled_gallery"
    ],
    "id": "panic_room_command_citadel_deck_three",
-   "name": "游艇三层防暴钛合金中央安全屋主控密室",
+   "name": "安全屋",
    "pressure_modifiers": {
     "p_panic_room_oxygen_scrubber_failure_clo": "气瓶阀门受损舱内二氧化碳浓度急剧飙升导致面颊潮红呼吸困难。",
     "p_pirate_thermite_torch_breach_clock": "门缝外铝热剂气割枪白热烈焰正以每分钟两毫米切穿门锁插销。"
@@ -1663,7 +1663,7 @@
     "main_saloon_bullet_riddled_gallery"
    ],
    "id": "yacht_lower_bilge_engine_compartment",
-   "name": "游艇底层底舱双发重型柴油机密闭轮机舱",
+   "name": "底舱轮机舱",
    "pressure_modifiers": {
     "p_engine_bilge_pump_overload_short_clock": "舱底进水速度已漫过电机接线盒即将引发全船高压短路大火。",
     "p_reef_collision_drift_deadline_clock": "雷达警报蜂鸣游艇距离暗礁群仅剩最后八百米浪头已撞击船底。"
@@ -1690,7 +1690,7 @@
     "yacht_lower_bilge_engine_compartment"
    ],
    "id": "main_saloon_bullet_riddled_gallery",
-   "name": "游艇二层弹痕累累主沙龙宴会大厅与尾板回廊",
+   "name": "主沙龙",
    "pressure_modifiers": {
     "p_pirate_thermite_torch_breach_clock": "海盗援兵正顺着外挂旋梯源源不断涌入沙龙大厅。",
     "p_reef_collision_drift_deadline_clock": "剧烈偏航侧翻使大厅重型家具如炮弹般在光滑地面横飞撞击。"

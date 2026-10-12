@@ -1582,7 +1582,7 @@
     "loc_circular_megalith_altar"
    ],
    "id": "loc_alpine_summit_open_platform",
-   "name": "海拔四千米雪山巅峰开阔露天平台",
+   "name": "绝顶平台",
    "pressure_modifiers": {
     "p_hypothermia_blizzard_surge": "零下三十度极寒冻气以狂风速度灌入，人体核心体温在风寒效应下极速流失。",
     "p_megalith_deadweight_collapse_pinch": "风雪重载压迫祭坛巨石基座，花岗岩梁架发出沉闷刺耳的应力摩擦碎响。"
@@ -1612,7 +1612,7 @@
     "loc_leeward_stone_niche"
    ],
    "id": "loc_circular_megalith_altar",
-   "name": "残破神殿中央环形巨石祭坛",
+   "name": "环形祭坛",
    "pressure_modifiers": {
     "p_hypothermia_blizzard_surge": "狂暴回旋风将积雪推入祭坛石缝，冰渣持续刮擦皮肤造成严重刺痛。",
     "p_megalith_deadweight_collapse_pinch": "数吨重巨大石板偏心倾覆自重咬死地面平衡槽，普通人力完全无法推动分毫。"
@@ -1639,7 +1639,7 @@
     "loc_circular_megalith_altar"
    ],
    "id": "loc_altar_crushed_nook",
-   "name": "倾倒巨石板与祭坛底座死角狭缝",
+   "name": "祭坛底缝",
    "pressure_modifiers": {
     "p_close_contact_body_heat_tension": "在三十五公分极限死角内圣女与石匠肌肤完全贴伏，薄汗与工装体温激烈对冲，滚烫急促的吐息拂过颈侧锁骨。",
     "p_megalith_deadweight_collapse_pinch": "数吨重石板若因积雪增厚进一步下沉，脱困撬杠将彻底折断被压碎封死。"

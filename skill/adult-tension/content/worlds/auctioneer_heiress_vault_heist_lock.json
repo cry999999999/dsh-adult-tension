@@ -1498,7 +1498,7 @@
     "loc_exhaust_release_valve"
    ],
    "id": "loc_vault_gallery",
-   "name": "恒温恒湿特级艺术品金库展厅",
+   "name": "金库展厅",
    "pressure_modifiers": {
     "p_halon_rising": "气体从地面一层层往上漫，蹲下去就头晕，只能贴着展柜往高处站。",
     "p_lead_gate_creep": "铅闸每往下沉一寸，展厅里就更暗一分，门缝的光越来越窄。"
@@ -1522,7 +1522,7 @@
     "loc_vault_gallery"
    ],
    "id": "loc_exhaust_pawl_slot",
-   "name": "应急排风阀重力棘爪咬死暗槽",
+   "name": "排风阀棘爪槽",
    "pressure_modifiers": {
     "p_gavel_chest_press": "拍卖师后背紧贴在安保架构师胸前，四只手叠在槌柄上，丝绒礼服贴着对方的西装衬衫。",
     "p_gavel_corner_bend": "纯银包角在棘爪上压出了一道弯痕，再硬别可能整片撕开。"
@@ -1546,7 +1546,7 @@
     "loc_auction_salesroom"
    ],
    "id": "loc_exhaust_release_valve",
-   "name": "纯机械排气孔旋转释放手柄",
+   "name": "排气释放手柄",
    "pressure_modifiers": {
     "p_robbers_upstairs": "楼上劫匪还没撤，外面的人进不来，只能隔着铅闸喊话。"
    },

@@ -1497,7 +1497,7 @@
     "loc_reading_hall_sliding_door"
    ],
    "id": "loc_top_floor_reading_hall",
-   "name": "顶层四面开敞落地木格窗借阅大厅",
+   "name": "顶层借阅大厅",
    "pressure_modifiers": {
     "p_ceiling_peeling": "头顶又一块吊顶板被风掀起来，啪地砸在书架上。",
     "p_rain_chill": "一阵穿堂风卷着冷雨扑过来，浑身一激灵。"
@@ -1521,7 +1521,7 @@
     "loc_top_floor_reading_hall"
    ],
    "id": "loc_bookshelf_caster_brake",
-   "name": "实木书架底脚重型万向轮刹车暗槽",
+   "name": "书架脚轮刹车",
    "pressure_modifiers": {
     "p_ruler_chest_press": "女主角背贴在博士生胸前，两人的脚叠在铜尺的长臂上，湿透的白衬衫贴着对方的衬衫。",
     "p_ruler_edge_bend": "铜尺的直角厚边被棘爪压出一道弯，再硬踩可能整根折掉。"
@@ -1545,7 +1545,7 @@
     "loc_ginkgo_slope"
    ],
    "id": "loc_reading_hall_sliding_door",
-   "name": "逃生通道落地木移门逃生缝隙",
+   "name": "木移门缝隙",
    "pressure_modifiers": {
     "p_others_on_stairs": "楼下还有几个留在楼里赶论文的人，保安在楼梯间里一边喊一边找人。"
    },

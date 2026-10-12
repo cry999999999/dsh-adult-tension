@@ -264,7 +264,7 @@
   "locations": [
     {
       "id": "loc_blast_door_hydraulic_hall",
-      "name": "地下百米核发射井碳化钨防爆门大厅",
+      "name": "防爆门大厅",
       "detail": "挑高十五米、完全由重晶石高标号防核爆混凝土整体浇筑的地下巨型转换大厅，正前方是厚达两米、重达百吨的碳化钨滑动防爆门，门体在重力斜轨上发出金属呻吟缓慢下沉，高压液压管路爆裂喷出的雾化矿物油如暴雨般洒落。",
       "privacy": "semi",
       "visibility": "dim",
@@ -291,7 +291,7 @@
     },
     {
       "id": "loc_silo_command_bunker_corridor",
-      "name": "深井核心指挥掩体承压通廊",
+      "name": "指挥掩体通廊",
       "detail": "位于防爆大厅内侧的密封观察长廊，厚达五十厘米的双层防弹防辐射石英玻璃将喷油大厅隔绝在外，控制台自毁红色旋转警报灯将四周染成一片猩红血色。",
       "privacy": "public",
       "visibility": "clear",
@@ -319,7 +319,7 @@
     },
     {
       "id": "loc_silo_cooling_well_catwalk",
-      "name": "核弹头水冷循环竖井检修栈桥",
+      "name": "冷却竖井栈桥",
       "detail": "悬挂在百米深渊发射井内部核心的镂空格栅走道，下方是幽暗深邃的核导弹发射筒，水泵停摆导致冷却水箱温度急剧飙升，刺鼻的放射性水汽在冷热交锋中升腾。",
       "privacy": "private",
       "visibility": "dim",
@@ -345,7 +345,7 @@
     },
     {
       "id": "loc_commander_duty_cabin",
-      "name": "洗消间隔壁的指挥官值班舱",
+      "name": "指挥官值班舱",
       "detail": "指挥掩体尽头的一间值班舱，一张钢架床、一只军绿铁皮柜、一台老式电子管收音机，隔壁就是洗消间。",
       "privacy": "private",
       "visibility": "舱顶只亮一盏防爆灯，承压门一关，整座深井的轰鸣都闷成了很远的心跳。",

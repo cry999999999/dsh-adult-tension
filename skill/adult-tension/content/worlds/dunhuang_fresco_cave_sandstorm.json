@@ -1520,7 +1520,7 @@
     "loc_flooded_sand_gate_vestibule"
    ],
    "id": "loc_cave_96_giant_buddha_chamber",
-   "name": "第96窟通顶三十米大佛主窟悬挑脚手架区",
+   "name": "大佛窟脚手架",
    "pressure_modifiers": {
     "p_sandstorm_inundation_seals_doors": "流沙以每分钟数吨顺着前室倒灌，底层木门已被沙山彻底顶死埋没。",
     "p_scaffold_frame_torsional_collapse": "钢管脚手架受风压冲击发生两度扭转侧倾，斜支撑立杆承重逼近失稳压屈临界。"
@@ -1548,7 +1548,7 @@
     "loc_staff_dormitory_room"
    ],
    "id": "loc_ninth_floor_observation_dormer",
-   "name": "九层楼飞檐顶层第二十米透光检修天窗",
+   "name": "九层楼天窗",
    "pressure_modifiers": {
     "p_gale_gust_tearing_wind_screens": "气流倒灌在窟顶形成强力旋涡负压，随时可能吸翻顶层作业跳板坠落。"
    },
@@ -1575,7 +1575,7 @@
     "loc_ninth_floor_observation_dormer"
    ],
    "id": "loc_flooded_sand_gate_vestibule",
-   "name": "大佛阁底层通往外界的前室流沙回廊",
+   "name": "底层流沙回廊",
    "pressure_modifiers": {
     "p_cave_air_suffocation_threat": "底层门窗全闭导致三十米窟内空气含氧量急剧滑落，沙尘粉末令人剧烈呛咳窒息。"
    },

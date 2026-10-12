@@ -264,7 +264,7 @@
   "locations": [
     {
       "id": "loc_crypt_balance_slab_grand_hall",
-      "name": "地宫中央悬空玄武岩天平翻板巨殿",
+      "name": "翻板大殿",
       "detail": "挑高十丈、完全由整块巨型玄武岩承重雕凿而成的八角形悬空巨殿，正中横陈着两丈见方的失衡重力翻板，下方是深达八丈布满淬毒幽冥铁蒺藜的万刃死坑，穹顶石瓮被炸裂，万吨赤红赤砂如瀑布倾泻漫入。",
       "privacy": "semi",
       "visibility": "dim",
@@ -291,7 +291,7 @@
     },
     {
       "id": "loc_tomb_corridor_catacomb_gangway",
-      "name": "前椁墓道坍塌碎石连廊与甬道",
+      "name": "坍塌墓道",
       "detail": "通往主殿的青砖墓道已被军阀大炮炸塌半壁，巨型花岗岩条石犬牙交错横亘在断壁残垣间，四周硝烟弥漫伴随刺鼻火药味，流沙正顺着甬道斜坡狂暴漫涌蔓延而来。",
       "privacy": "public",
       "visibility": "clear",
@@ -319,7 +319,7 @@
     },
     {
       "id": "loc_crypt_mercury_channel_gate",
-      "name": "后殿水银泄洪渠防爆双向石闸门",
+      "name": "水银渠石闸",
       "detail": "位于翻板大殿后方的密封青石隔墙，下凿双联水银环形防护渠，重达万斤的雕花防沙石闸因配重偏载卡死在半落悬空位置，银亮刺目的水银蒸气在冷风中蒸腾泛起幽蓝死光。",
       "privacy": "private",
       "visibility": "dim",

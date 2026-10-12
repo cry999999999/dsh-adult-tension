@@ -328,7 +328,7 @@
     },
     {
       "id": "loc_iron_locker_assembly_bay",
-      "name": "重型角铁更衣柜检修背板区",
+      "name": "铁柜背板区",
       "detail": "贴近展厅水泥承重墙的窄小维修空隙，角铁更衣柜的生锈合页与铆接背板裸露在外，强排风管道在此轰鸣振动，散落着工业扎带与备用铜合页螺丝。",
       "privacy": "private",
       "visibility": "dim",

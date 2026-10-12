@@ -1640,7 +1640,7 @@
     "loc_stage_wing_vip_aisle"
    ],
    "id": "loc_auditorium_main_podium_center",
-   "name": "千人大礼堂中央升降讲台演讲区",
+   "name": "礼堂讲台",
    "pressure_modifiers": {
     "press_broadcast_camera_countdown": "一号机特写镜头毫秒级逼近，主大屏推流十秒倒计时进入绝命区间。",
     "press_podium_motor_short_circuit": "气动电机短路八百牛顶力狂暴咬合，麦克风横杆死死咬紧西装下摆。"
@@ -1691,7 +1691,7 @@
     "loc_grad_union_chair_office"
    ],
    "id": "loc_stage_wing_vip_aisle",
-   "name": "侧幕贵宾礼仪候场检录通道",
+   "name": "侧幕候场通道",
    "pressure_modifiers": {
     "press_disciplinary_board_storm": "团委老师在通道巡视，一旦被撞破将触发风纪问责风暴。",
     "press_suit_button_shatter_corset": "西装纽扣崩飞导致真皮鱼骨胸衣金属扣外露，急需磁吸扣补救。"

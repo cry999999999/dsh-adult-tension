@@ -1591,7 +1591,7 @@
     "loc_armillary_clockwork_machinery_vault"
    ],
    "id": "loc_armillary_sphere_open_air_platform",
-   "name": "摘星楼三十丈高空开敞式露天浑天台",
+   "name": "露天浑天台",
    "pressure_modifiers": {
     "p_armillary_sphere_gear_seizure": "重型青铜齿轮节圆因雷击热胀变形死死抱死，衣物被绞入深处无法自拔。",
     "p_high_altitude_gale_lightning_strike": "三十丈露天高台狂风撕扯，雷电不断劈向避雷铜柱，电光火石闪烁夺目。"
@@ -1618,7 +1618,7 @@
     "loc_armillary_clockwork_machinery_vault"
    ],
    "id": "loc_observatory_observation_deck_edge",
-   "name": "摘星楼八角露天栏杆与防雷引铜缆转角区",
+   "name": "引雷铜缆转角",
    "pressure_modifiers": {
     "p_observatory_thunderbolt_direct_strike": "云层高度逼近高台顶端，第二道万钧重雷即将劈下引爆全场设施。"
    },
@@ -1646,7 +1646,7 @@
     "loc_water_clock_duty_room"
    ],
    "id": "loc_armillary_clockwork_machinery_vault",
-   "name": "浑天台正下方水运天街传动机械齿轮暗室",
+   "name": "齿轮暗室",
    "pressure_modifiers": {
     "p_clockwork_water_wheel_overload_torque": "传动主轴受外部死卡剧烈扭转，铸铁转轴传出嘎吱悲鸣随时崩断飞溅。"
    },

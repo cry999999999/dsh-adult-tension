@@ -1751,7 +1751,7 @@
     "loc_sound_master_control_mixing_room"
    ],
    "id": "loc_hvac_plant_antechamber",
-   "name": "音频中心地下暖通机房前室",
+   "name": "暖通机房前室",
    "pressure_modifiers": {
     "p_hvac_breaker_overload_trip_hazard": "配电柜继电器过载发烫，若不及时断电可能引发风机绕组短路烧毁。"
    },

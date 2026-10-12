@@ -1645,7 +1645,7 @@
     "loc_macro_lens_camera_media_pit"
    ],
    "id": "loc_atrium_transparent_stage_center",
-   "name": "全通透悬空全景玻璃书画修复中庭",
+   "name": "玻璃修复中庭",
    "pressure_modifiers": {
     "press_mounting_roller_gold_chain_pinch": "电动升降罩死死绞住纯金乳环链加剧工装前襟撕裂与勒痛",
     "press_trustee_twenty_second_rush": "文保高管皮鞋踏上连廊台阶加剧二十秒逼近绝境"
@@ -1670,7 +1670,7 @@
     "loc_macro_lens_camera_media_pit"
    ],
    "id": "loc_roller_gear_housing_shadow_alcove",
-   "name": "升降罩齿轮箱侧壁遮蔽死角",
+   "name": "齿轮箱死角",
    "pressure_modifiers": {
     "press_horn_knife_blade_slip_risk": "起画刀刃端在光滑镀铬导轨上打滑加剧划破真迹风险",
     "press_macro_lens_scrutiny_dread": "外围长焦大炮锁焦加剧乳环金链与内衬曝光恐慌"
@@ -1695,7 +1695,7 @@
     "loc_macro_lens_camera_media_pit"
    ],
    "id": "loc_bridge_inspection_corridor_entrance",
-   "name": "空中观摩连廊通往中庭三级铺毡石阶",
+   "name": "观摩连廊石阶",
    "pressure_modifiers": {
     "press_silk_robe_strain_tear_panic": "牵拉导致真丝工装缝线断裂微响加剧当众撕裂露底恐惧",
     "press_trustee_twenty_second_rush": "文保高管登台迫近加剧开除通报与行业除名危机"
@@ -1721,7 +1721,7 @@
     "loc_restorer_studio_loft"
    ],
    "id": "loc_macro_lens_camera_media_pit",
-   "name": "悬空玻璃幕墙外圈长焦微距机位席",
+   "name": "媒体机位席",
    "pressure_modifiers": {
     "press_horn_knife_blade_slip_risk": "上身维持单手托纸前倾侧立加剧单足与腰部肌肉酸胀",
     "press_macro_lens_scrutiny_dread": "长焦镜头密集抓拍加剧私密乳环金链曝光沦为八卦头条恐慌"

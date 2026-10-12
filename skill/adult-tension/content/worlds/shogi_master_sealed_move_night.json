@@ -1788,7 +1788,7 @@
     "shogi_archive_secret_vault"
    ],
    "id": "yugen_inner_tatami_chamber",
-   "name": "幽玄之室核心十二叠榻榻米对弈殿堂",
+   "name": "幽玄之室",
    "pressure_modifiers": {
     "p_mechanical_clock_sixty_second_byoyomi": "每一手读秒至五十秒时发条钟发出刺耳簧片蜂鸣。",
     "p_rainwater_seepage_cypress_board_hazard": "屋顶瓦片移位导致冰冷雨水正沿着横梁向名盘上方渗透滴落。"
@@ -1815,7 +1815,7 @@
     "zen_stone_courtyard_rain_gate"
    ],
    "id": "cypress_veranda_rain_corridor",
-   "name": "会馆顶层外挑桧木回廊与暴雨避雨沿侧",
+   "name": "桧木回廊",
    "pressure_modifiers": {
     "p_rainwater_seepage_cypress_board_hazard": "木廊地面积水漫过门槛逼近幽玄室内蔺草榻榻米边缘。",
     "p_typhoon_gust_shattering_shoji_screen": "狂暴阵风正猛烈撞击木廊外侧木板发出沉闷摇晃巨响。"
@@ -1843,7 +1843,7 @@
     "zen_stone_courtyard_rain_gate"
    ],
    "id": "shogi_archive_secret_vault",
-   "name": "将棋会馆顶层古籍与封手重装保密库",
+   "name": "封手保密库",
    "pressure_modifiers": {
     "p_sealed_move_envelope_counterfeit_consp": "门外传来可疑脚步声企图趁乱调换保险柜内的封手信封。",
     "p_subzero_hypothermia_coma_peril": "保密室备用蓄电池电量耗尽在即光线正逐渐暗淡熄灭。"
@@ -1870,7 +1870,7 @@
     "shogi_archive_secret_vault"
    ],
    "id": "zen_stone_courtyard_rain_gate",
-   "name": "枯山水雨夜庭院与闭锁门扉前庭",
+   "name": "枯山水庭院",
    "pressure_modifiers": {
     "p_dawn_snowplow_rescue_missing_signal": "铜门外水位已上涨至小腿若不加高挡板将倒灌前庭。",
     "p_typhoon_gust_shattering_shoji_screen": "庭院古枫断枝被狂风卷起直接飞撞向二楼回廊窗户。"

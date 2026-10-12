@@ -1829,7 +1829,7 @@
     "dali_central_flagstone_corridor"
    ],
    "id": "underground_heavy_dungeon",
-   "name": "大理寺地下天牢水牢水闸口",
+   "name": "水牢闸口",
    "pressure_modifiers": {
     "p_gate_iron_lockdown": "地下水位已漫过台阶三级，闸口铁轮在巨大水压下剧烈颤抖。",
     "p_private_army_breach": "水闸暗渠外传来潜水死士凿击铁栅栏的清脆钢锉声。"

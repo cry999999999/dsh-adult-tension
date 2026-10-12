@@ -1498,7 +1498,7 @@
     "loc_winch_emergency_drop_pin"
    ],
    "id": "loc_watergate_winch_room",
-   "name": "河港水门吊桥重型链轮机房",
+   "name": "水门链轮机房",
    "pressure_modifiers": {
     "p_chain_wheel_reverses": "链轮又反转了半圈，铁链抽在石柱上火星四溅。",
     "p_flood_to_chest": "水位又涨了一指，浑水拍到胸口上。"
@@ -1522,7 +1522,7 @@
     "loc_watergate_winch_room"
    ],
    "id": "loc_winch_reverse_gear_gap",
-   "name": "起闭绞盘反转齿轮啮合缝隙",
+   "name": "绞盘齿轮缝",
    "pressure_modifiers": {
     "p_crossguard_chest_press": "女统领背贴在工程师胸前，四只手叠在剑柄上，湿透的战袍贴着对方的衣衫。",
     "p_crossguard_chipping": "十字剑格的直角凸缘被齿尖啃出一道缺口，再硬别可能整块崩掉。"
@@ -1546,7 +1546,7 @@
     "loc_river_port_wharf"
    ],
    "id": "loc_winch_emergency_drop_pin",
-   "name": "机房应急重力隔断水闸落销",
+   "name": "水闸落销",
    "pressure_modifiers": {
     "p_barges_ram_watergate": "上游冲下来的驳船一下下撞着水门，外面的人在拼命拉缆绳。"
    },

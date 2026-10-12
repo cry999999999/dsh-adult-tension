@@ -255,7 +255,7 @@
   "locations": [
     {
       "id": "loc_crevasse_bottom_boulder_shelter",
-      "name": "天坑万年冰川裂隙底部避风石崖凹槽",
+      "name": "天坑底石崖",
       "detail": "海拔两千米开阔天然大天坑最深处，周围是高达数十丈的垂直淡蓝色透光坚硬冰壁。暴风雪呼啸在天坑上方发出怒吼，崩落的乱木巨石将出口完全封死。一块百吨重玄武岩巨石斜架在冰壁上，形成约三平米的悬空安全夹角。落石将登山主绳锁扣死死咬在巨石缝隙里，刀削般的石缝中渗着彻骨冷水。",
       "privacy": "semi",
       "visibility": "dim",
@@ -283,7 +283,7 @@
     },
     {
       "id": "loc_vertical_ice_wall_climbing_pitch",
-      "name": "通往坑顶安全冰壁攀登垂直通道",
+      "name": "冰壁攀登道",
       "detail": "高约数十丈的垂直天然坚硬冰壁，是脱离天坑唯一的出路。冰面晶莹剔透质地坚硬，风雪顺着壁面刮落形成强劲气流。冰壁边缘悬垂着摇摇欲坠的冰檐巨石，随时可能发生二次坍塌。",
       "privacy": "public",
       "visibility": "clear",
@@ -310,7 +310,7 @@
     },
     {
       "id": "loc_subterranean_ice_cave_bivouac",
-      "name": "避风石崖内侧避险冰穴营地",
+      "name": "冰穴营地",
       "detail": "巨石与冰壁深处交汇形成的天然狭小避险暗穴，空间约四平米，避风遮雪。石壁上覆盖着厚厚一层白霜，地面铺着干枯松针碎石，散发着天然干松脂清香。",
       "privacy": "private",
       "visibility": "dark",

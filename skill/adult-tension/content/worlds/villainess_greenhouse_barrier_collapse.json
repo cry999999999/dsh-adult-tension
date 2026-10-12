@@ -1555,7 +1555,7 @@
     "loc_rose_tea_terrace"
    ],
    "id": "loc_steam_valve_niche",
-   "name": "地热蒸汽旁通截止手柄凹壁",
+   "name": "旁通阀凹壁",
    "pressure_modifiers": {
     "p_steam_scald": "外面的人想关总阀，可总阀在坍塌区另一头，过不去。"
    },

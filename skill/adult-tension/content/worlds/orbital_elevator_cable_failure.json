@@ -1540,7 +1540,7 @@
     "loc_sky_elevator_ballast_catwalk"
    ],
    "id": "loc_orbital_winch_undercarriage_hangar",
-   "name": "三万米锚定节点外露减压机库",
+   "name": "减压机库",
    "pressure_modifiers": {
     "p_cable_snap_asymmetric_load_drift": "碳纳米主缆偏载张力突破四千五百吨极值，整座减压机库以每秒三米速度向外倾斜滑脱。",
     "p_stratosphere_freezing_wind_shear": "三万米极寒强风切变倒灌气温骤降至零下六十五度，面罩外部迅速凝结厚重白霜。"
@@ -1568,7 +1568,7 @@
     "loc_pressurized_habitat_pod"
    ],
    "id": "loc_station_pressurized_command_corridor",
-   "name": "锚定站核心承压指挥观察通廊",
+   "name": "指挥观察通廊",
    "pressure_modifiers": {
     "p_station_emergency_jettison_deadlock": "指挥台自沉倒计时已切入最后三百秒，两枚三千千牛实心电磁锁栓即将切断救援通道。"
    },
@@ -1595,7 +1595,7 @@
     "loc_station_pressurized_command_corridor"
    ],
    "id": "loc_sky_elevator_ballast_catwalk",
-   "name": "重型配重悬臂外挂检修栈桥",
+   "name": "配重悬臂栈桥",
    "pressure_modifiers": {
     "p_hypoxia_decompression_sickness_peak": "外舱微压环境导致人员血液中氮气微气泡析出，剧烈关节骨痛与高空缺氧濒临窒息。"
    },

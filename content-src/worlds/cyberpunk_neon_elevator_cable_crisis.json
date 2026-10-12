@@ -264,7 +264,7 @@
   "locations": [
     {
       "id": "loc_sky_cable_passenger_cabin",
-      "name": "千米轨道悬挂穿梭缆车主车厢",
+      "name": "缆车车厢",
       "detail": "长十五米、通体由高强度碳纤维与防弹聚碳酸酯构筑的椭圆形双层悬挂车厢，前挡风玻璃已被狂风震裂数道大缝，狂暴冷风撕扯着残破的广告全息投影，车厢严重前倾三十度高速下坠。",
       "privacy": "semi",
       "visibility": "dim",
@@ -318,7 +318,7 @@
     },
     {
       "id": "loc_sky_cable_roof_inspection_hatch",
-      "name": "车顶受电弓与副悬挂天窗台",
+      "name": "车顶天窗台",
       "detail": "暴风肆虐的车厢外顶金属平台，粗如立柱的双向主悬臂在风阻中剧烈扭曲，上方仅剩一根带电辅助钢缆在滑轮组上摩擦发出雷鸣般的巨响，千米下方是流光溢彩的深渊霓虹街景。",
       "privacy": "public",
       "visibility": "clear",

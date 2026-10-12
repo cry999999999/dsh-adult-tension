@@ -1540,7 +1540,7 @@
     "loc_difference_engine_control_room"
    ],
    "id": "loc_furnace_armored_engine_room",
-   "name": "战舰主蒸汽动力防爆轮机舱",
+   "name": "主轮机舱",
    "pressure_modifiers": {
     "p_boiler_superheat_overpressure_burst": "主蒸汽表压突破六兆帕极值红线，铆钉接缝处喷射出数米长的高温干蒸汽刀。",
     "p_cast_iron_handwheel_fracture_jam": "铸铁手轮过载断裂残端死死卡在阀轴螺纹上，常规工具无法转动阀门半分。"
@@ -1568,7 +1568,7 @@
     "loc_director_officer_cabin"
    ],
    "id": "loc_airship_keel_catwalk_corridor",
-   "name": "飞艇龙骨悬挂走道与水压通廊",
+   "name": "龙骨走道",
    "pressure_modifiers": {
     "p_firewall_quarantine_hydraulic_drop": "液压防火装甲隔离门启动了五分钟不可逆切断倒计时，重型闸门在重锤驱动下缓缓下沉。"
    },
@@ -1595,7 +1595,7 @@
     "loc_airship_keel_catwalk_corridor"
    ],
    "id": "loc_difference_engine_control_room",
-   "name": "动力差分机机械演算主控室",
+   "name": "差分机主控室",
    "pressure_modifiers": {
     "p_difference_engine_gear_shear_jam": "高速运转的黄铜齿轮副因过载产生刺耳尖叫，主差动齿轮随时可能崩齿飞出。"
    },

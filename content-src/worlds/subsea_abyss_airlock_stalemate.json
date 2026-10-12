@@ -264,7 +264,7 @@
   "locations": [
     {
       "id": "loc_airlock_decompression_chamber",
-      "name": "万米耐压双向减压过渡气闸舱",
+      "name": "减压气闸舱",
       "detail": "由高强度纯钛复合钢板热卷成型的圆柱形耐压过渡舱，直径四米，中央矗立着双向水力平衡球阀组，四周布满密密麻麻的高压注排水管路与红色紧急释压截止阀，舱底冰冷海水已漫过膝盖。",
       "privacy": "semi",
       "visibility": "dim",
@@ -291,7 +291,7 @@
     },
     {
       "id": "loc_station_decompression_corridor",
-      "name": "科考站核心居住区减压观测廊",
+      "name": "观测廊",
       "detail": "位于气闸舱内门正前方的加压过渡观察通廊，厚达二十厘米的透明有机玻璃观测窗将冰冷水下与干燥暖光的主控区分隔开来，控制台报警红灯疯狂闪烁。",
       "privacy": "public",
       "visibility": "clear",

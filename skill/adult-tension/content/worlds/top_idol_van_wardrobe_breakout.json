@@ -1489,7 +1489,7 @@
     "loc_garage_entrance_ramp"
    ],
    "id": "loc_vip_dressing_lounge",
-   "name": "红毯后台VIP更衣休息室",
+   "name": "VIP休息室",
    "pressure_modifiers": {
     "press_seat_slider_jam": "无外部直接物理压迫，环境安详稳固"
    },

@@ -1682,7 +1682,7 @@
     "loc_media_camera_crane_pit"
    ],
    "id": "loc_holographic_podium_magnet_nook",
-   "name": "电磁讲案强磁屏蔽罩咬合死角",
+   "name": "讲案夹缝",
    "pressure_modifiers": {
     "press_hologram_light_beam_scrutiny": "电磁投影光束聚焦加剧真丝衣料半透光羞耻",
     "press_magnetic_clamp_pinch_pain_panic": "强磁持续吸附加剧前胸雪肌剧痛与走光恐慌"
@@ -1707,7 +1707,7 @@
     "loc_media_camera_crane_pit"
    ],
    "id": "loc_lecturer_rostrum_side_steps",
-   "name": "主讲席侧翼三级迎宾铺毡红木台阶",
+   "name": "侧翼台阶",
    "pressure_modifiers": {
     "press_cheongsam_silk_strain_tear_risk": "射灯全开加剧旗袍真丝开裂走光风险",
     "press_host_twenty_five_second_countdown": "长者登台颁证加剧声誉坍塌危机"
@@ -1733,7 +1733,7 @@
     "loc_academy_lecturer_study"
    ],
    "id": "loc_media_camera_crane_pit",
-   "name": "外圈千人观摩席长焦摇臂转播机位点",
+   "name": "摇臂机位",
    "pressure_modifiers": {
     "press_cheongsam_silk_strain_tear_risk": "正面高亮追光加剧旗袍领口开线透光羞耻",
     "press_hologram_light_beam_scrutiny": "超长焦镜头连拍加剧私密磁珠轮廓曝光恐慌"

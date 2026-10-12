@@ -1731,7 +1731,7 @@
     "loc_painted_boat_stern_mechanic_deck"
    ],
    "id": "loc_painted_boat_top_balcony_main_hall",
-   "name": "画舫二层开敞式雕花观景主厅",
+   "name": "画舫顶楼主厅",
    "pressure_modifiers": {
     "p_boat_hull_tilt_and_flooding_sink": "二层雕花地板失衡剧烈倾斜，立足湿滑难稳。",
     "p_heavy_screen_crushing_silk_gown_trap": "二层主厅地面倾斜不断加剧，沉香重屏受自重挤压导致铜转轴咬合愈发紧闭。"
@@ -1759,7 +1759,7 @@
     "loc_painted_boat_stern_mechanic_deck"
    ],
    "id": "loc_painted_boat_first_floor_cabin",
-   "name": "画舫一层水线平层大宴饮客舱",
+   "name": "一层宴饮舱",
    "pressure_modifiers": {
     "p_boat_hull_tilt_and_flooding_sink": "倒灌江水迅速涌入，一层漫过膝弯的积水加剧了整船下沉与失衡倾侧。"
    },
@@ -1787,7 +1787,7 @@
     "loc_painted_boat_rear_boudoir"
    ],
    "id": "loc_painted_boat_stern_mechanic_deck",
-   "name": "画舫尾部露天水作舵轮备用甲板",
+   "name": "船尾舵轮甲板",
    "pressure_modifiers": {
     "p_bridge_pier_collision_disaster": "水流湍急迫近石拱桥孔，尾舵操控失灵加剧撞击风险。"
    },

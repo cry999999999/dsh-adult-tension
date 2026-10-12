@@ -1540,7 +1540,7 @@
     "loc_silo_cooling_well_catwalk"
    ],
    "id": "loc_blast_door_hydraulic_hall",
-   "name": "地下百米核发射井碳化钨防爆门大厅",
+   "name": "防爆门大厅",
    "pressure_modifiers": {
     "p_blast_door_gravity_nosedive_seal": "百吨碳化钨重型大门沿三十度斜轨疯狂下沉，距离彻底切死地面仅剩最后四十公分。",
     "p_hydraulic_oil_line_burst_mist": "高压液压管路爆裂喷出雾化阻燃矿物油充斥大厅，浓烟弥漫视线不足一米呼吸困难。"
@@ -1568,7 +1568,7 @@
     "loc_commander_duty_cabin"
    ],
    "id": "loc_silo_command_bunker_corridor",
-   "name": "深井核心指挥掩体承压通廊",
+   "name": "指挥掩体通廊",
    "pressure_modifiers": {
     "p_concrete_quarantine_hopper_deadlock": "穹顶快凝重晶石混凝土料斗启动了五分钟自沉倒计时，重型注浆阀门开始在气缸驱动下缓缓开启。"
    },
@@ -1595,7 +1595,7 @@
     "loc_silo_command_bunker_corridor"
    ],
    "id": "loc_silo_cooling_well_catwalk",
-   "name": "核弹头水冷循环竖井检修栈桥",
+   "name": "冷却竖井栈桥",
    "pressure_modifiers": {
     "p_radiation_leak_ozone_asphyxiation": "井底循环水温度逼近沸点溢出高浓度臭氧与放射性气溶胶，环境本底读数持续飙升。"
    },
@@ -1620,7 +1620,7 @@
     "loc_silo_command_bunker_corridor"
    ],
    "id": "loc_commander_duty_cabin",
-   "name": "洗消间隔壁的指挥官值班舱",
+   "name": "指挥官值班舱",
    "pressure_modifiers": {},
    "privacy": "private",
    "tags": [

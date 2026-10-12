@@ -1776,7 +1776,7 @@
     "clinic_operating_ward_iron_bed"
    ],
    "id": "clinic_triage_decontamination_airlock",
-   "name": "地下负三层双重防爆负压除污喷淋气闸舱",
+   "name": "除污气闸舱",
    "pressure_modifiers": {
     "p_acid_rain_heavy_lead_gate_seizure_cr": "外侧重型铅门液压机发出不堪重负之凄厉摩擦异响，酸液正顺着门缝渗透。",
     "p_fallout_air_filter_cartridge_failure": "气闸舱内空气压差表指针已跌入黄色危险区，外界毒尘正微量渗入。"
@@ -1805,7 +1805,7 @@
     "clinic_power_substation_ventilation_sh"
    ],
    "id": "clinic_operating_ward_iron_bed",
-   "name": "战地诊所单人除污抢救铁床手术监护室",
+   "name": "铁床抢救室",
    "pressure_modifiers": {
     "p_scavenger_leader_acute_pulmonary_ede": "心电监护仪报警红灯狂闪，伤员血氧饱和度已暴跌至百分之六十五濒死线。",
     "p_security_commander_martial_lockdown": "门外防暴警棍敲击铅皮门板的沉闷巨响震得手术刀架叮当乱响。"
@@ -1832,7 +1832,7 @@
     "clinic_operating_ward_iron_bed"
    ],
    "id": "clinic_chief_dispensary_refrigerated_v",
-   "name": "医官长专属抗辐射血清冷藏密室兼更衣休息室",
+   "name": "血清冷藏室",
    "pressure_modifiers": {
     "p_fallout_air_filter_cartridge_failure": "室内独立氧气浓度表指针已开始缓慢下滑，失氧窒息感步步紧逼。",
     "p_scavenger_leader_acute_pulmonary_ede": "针剂配伍操作进入最后三分钟读秒，稍有差错药剂氧化失效。"
@@ -1858,7 +1858,7 @@
     "clinic_operating_ward_iron_bed"
    ],
    "id": "clinic_power_substation_ventilation_sh",
-   "name": "地下负三层空气循环机房与排烟维修竖井",
+   "name": "空气循环机房",
    "pressure_modifiers": {
     "p_acid_rain_heavy_lead_gate_seizure_cr": "排风竖井顶部正渗漏下滚烫高浓度酸雨，腐蚀穿透外层钢管滴落浓烟。",
     "p_fallout_air_filter_cartridge_failure": "滤芯净化差压已飙升至红线极限，巨型离心机发出濒临抱死之刺耳金属尖叫。"

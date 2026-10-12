@@ -264,7 +264,7 @@
   "locations": [
     {
       "id": "loc_catwalk_above_mainstage",
-      "name": "万人会展中心主舞台上方十二米悬空马道",
+      "name": "舞台上方马道",
       "detail": "挑高三十米的现代化钢桁架通顶大厅中央，悬挂在主舞台上方十二米处的镀锌镂空格栅通道，宽度仅八十公分，两侧是双层防坠金属护栏，下方是黑压压一片、呼声如潮的十万漫展观众席，头顶两万瓦舞台电脑追光灯正缓慢回转预热。",
       "privacy": "semi",
       "visibility": "clear",
@@ -292,7 +292,7 @@
     },
     {
       "id": "loc_wire_rigging_control_catwalk",
-      "name": "威亚特技悬挂电动绞盘检修操作平台",
+      "name": "威亚绞盘平台",
       "detail": "紧邻主马道尽头的独立钢构平台，四台大型伺服威亚绞盘正发出微弱变频嗡鸣，受损的钢缆斜挂在上方导向滑轮边沿，悬空平台因下方重低音音响震动而产生规律微颤。",
       "privacy": "private",
       "visibility": "clear",
@@ -319,7 +319,7 @@
     },
     {
       "id": "loc_backstage_vertical_ladder_well",
-      "name": "舞台侧翼通顶垂直安全爬梯立井",
+      "name": "侧翼爬梯井",
       "detail": "依附于巨型混凝土抗震主剪力墙边缘的垂直检修钢梯，四周由重型防坠钢丝笼网包裹，贯通从十二米马道至地表后台快速化妆间的安全通道，冷风从通风百叶窗中灌入。",
       "privacy": "public",
       "visibility": "dim",

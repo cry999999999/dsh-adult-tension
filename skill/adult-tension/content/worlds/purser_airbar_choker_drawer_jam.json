@@ -1648,7 +1648,7 @@
     "loc_spiral_staircase_landing"
    ],
    "id": "loc_first_class_circular_skybar",
-   "name": "波音777跃层环形贵宾吧台",
+   "name": "环形吧台",
    "pressure_modifiers": {
     "press_drawer_handle_chain_jam": "抽屉自锁滑轨锁舌偏心咬合将白金饰链死死卡在死点拖拽制服",
     "press_first_class_service_call_bell": "客舱呼叫铃声在星空顶回荡每隔五秒鸣响一次逼近极限"
@@ -1722,7 +1722,7 @@
     "loc_upper_suite_corridor"
    ],
    "id": "loc_spiral_staircase_landing",
-   "name": "挑空旋转步梯跃层交汇平台",
+   "name": "旋梯平台",
    "pressure_modifiers": {
     "press_approaching_vip_footsteps": "楼梯上方换班机长的沉稳脚步声逼近跃层平台带来暴露威压",
     "press_two_minute_turbulence_drop": "高空颠簸导致旋转楼梯钢架微微颤鸣加剧身体不稳摇晃"

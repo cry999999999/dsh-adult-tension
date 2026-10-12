@@ -1544,7 +1544,7 @@
     "central_network_operations_security_pod"
    ],
    "id": "supercomputer_cold_aisle_sealed_corridor",
-   "name": "超算中枢A区封闭式精密冷通道隔离间",
+   "name": "A区冷通道",
    "pressure_modifiers": {
     "p_halon_gas_suppression_respiratory_thre": "门缝外高浓度哈龙阻燃气体正缓缓渗透进来引发咽喉剧烈刺痛咳嗽。",
     "p_ups_battery_thermal_runaway_deadline_c": "机柜散发之高热使冷通道内气温每三分钟攀升摄氏五度如置身蒸笼。"
@@ -1573,7 +1573,7 @@
     "central_network_operations_security_pod"
    ],
    "id": "ups_battery_room_thermal_hazard_corridor",
-   "name": "地下二层后备不间断电源高压锂电蓄电池室",
+   "name": "蓄电池室",
    "pressure_modifiers": {
     "p_ups_battery_thermal_runaway_deadline_c": "三号电池柜电芯温度已逼近摄氏六十五度热失控临界阈值。"
    },
@@ -1599,7 +1599,7 @@
     "ups_battery_room_thermal_hazard_corridor"
    ],
    "id": "central_network_operations_security_pod",
-   "name": "全地下网络运行总控指挥中心与物理警卫哨舱",
+   "name": "总控指挥中心",
    "pressure_modifiers": {
     "p_hacker_apt_root_key_exfiltration_clock": "敌方数据渗出进度条已突破百分之八十五距离主根密钥失窃仅剩最后三分钟。",
     "p_mercenary_angle_grinder_breach_clock": "巡逻枪手正顺着电缆桥架朝冷通道入口逐一拉动枪栓排查。"

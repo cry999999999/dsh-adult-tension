@@ -264,7 +264,7 @@
   "locations": [
     {
       "id": "loc_caisson_docking_joint_airlock",
-      "name": "水下四十米沉管对接接头焊接隔舱",
+      "name": "对接隔舱",
       "detail": "高约四米、宽约六米的厚重高强耐压钢板焊接密封隔舱，脚下是冰冷漆黑的海水正在迅速漫过膝盖，狂暴的高压射流从受损蝶阀侧壁如巨龙般狂喷咆哮，隔舱四周角钢与工字梁在八万吨沉管的剪切挤压下发出刺耳金属扭曲呻吟。",
       "privacy": "semi",
       "visibility": "dim",
@@ -291,7 +291,7 @@
     },
     {
       "id": "loc_pipeline_dry_catwalk_hall",
-      "name": "沉管中空干坞管廊主通风栈道",
+      "name": "管廊栈道",
       "detail": "位于密封隔舱内侧的百米干态行车道预制长廊，巨型防爆排风风筒呼啸作响，厚重的铸铁水密大门已经关闭，仅留观察圆窗透出后方白炽探照灯的冰冷光柱。",
       "privacy": "public",
       "visibility": "clear",
@@ -318,7 +318,7 @@
     },
     {
       "id": "loc_hyperbaric_decompress_chamber",
-      "name": "沉箱应急高压医用过渡减压舱",
+      "name": "医用减压舱",
       "detail": "圆柱形厚壁双层钢制过渡加压舱室，配备多路呼吸气体汇流排与恒温加热电热毯，是深水工程人员脱险后进行阶梯减压与体温复苏的唯一生命安全岛。",
       "privacy": "private",
       "visibility": "clear",

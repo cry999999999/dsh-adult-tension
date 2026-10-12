@@ -1866,7 +1866,7 @@
     "vip_carpeted_corridor"
    ],
    "id": "daughter_in_law_boudoir",
-   "name": "长媳主卧套房与步入式衣帽间",
+   "name": "长媳主卧",
    "pressure_modifiers": {
     "p_husband_sober_up": "少爷剧烈翻身，床头的水晶酒瓶滚落摔碎。",
     "p_steward_keycard_patrol": "金卡刷开起居室外门的提示音清晰可闻。"

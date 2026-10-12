@@ -1728,7 +1728,7 @@
     "engine_auxiliary_boiler_room"
    ],
    "id": "flooded_cargo_bilge_cell",
-   "name": "水下三层压载水舱拘禁隔舱",
+   "name": "压载隔舱",
    "pressure_modifiers": {
     "p_ballast_tank_flood_drowning_surge": "漫过小腿的冰冷海水正以每分钟两厘米速度急剧上涨。",
     "p_interrogation_sodium_pentothal_inquest": "隔壁传讯室传来电击测谎仪的高频蜂鸣与皮鞭抽打声。"
@@ -1755,7 +1755,7 @@
     "upper_weather_deck_cargo_gangway"
    ],
    "id": "submerged_pipe_maintenance_shaft",
-   "name": "水下通海管道检修纵向竖井",
+   "name": "管道检修竖井",
    "pressure_modifiers": {
     "p_ballast_tank_flood_drowning_surge": "管道底部积水漫延已将竖井第一截铁梯彻底淹没。",
     "p_cargo_hold_airlock_sealing_lockdown": "水密气密天窗自锁电磁阀门发出刺耳的通电锁死声响。"

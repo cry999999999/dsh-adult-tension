@@ -1778,7 +1778,7 @@
     "loc_loft_vertical_lift_shaft_landing"
    ],
    "id": "loc_backstage_merch_inspection_aisle",
-   "name": "阁楼外侧钢梯走火检修通道",
+   "name": "外侧钢梯",
    "pressure_modifiers": {
     "p_limited_edition_badges_scratch_risk": "首发限量稀缺徽章一旦遭受高温或跌落撞击将引发严重折价损毁。"
    },

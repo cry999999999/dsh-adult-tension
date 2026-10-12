@@ -1496,7 +1496,7 @@
     "loc_container_descent_rail"
    ],
    "id": "loc_container_roof_edge",
-   "name": "三十米高空悬空倾斜箱顶外沿",
+   "name": "倾斜箱顶",
    "pressure_modifiers": {
     "p_gale_on_slope": "一阵狂风刮过来，靴底在湿滑的箱顶上往下滑了半尺。",
     "p_last_cable_tearing": "又一股钢丝崩断，箱子猛地往下一沉。"
@@ -1520,7 +1520,7 @@
     "loc_container_roof_edge"
    ],
    "id": "loc_corner_casting_lock",
-   "name": "集装箱铸钢角件吊孔咬合死角",
+   "name": "角件锁扣",
    "pressure_modifiers": {
     "p_breaker_teeth_wear": "破窗齿的钨钢尖被卡舌磨平了一颗，再硬顶可能整个崩掉。",
     "p_flashlight_chest_press": "女警官趴在工程师身前，后背贴着对方胸口，四只手叠在手电筒身上，湿透的战术背心贴着对方的工装。"
@@ -1544,7 +1544,7 @@
     "loc_cutter_aft_deck"
    ],
    "id": "loc_container_descent_rail",
-   "name": "箱体侧面应急安全缓降滑轨",
+   "name": "缓降滑轨",
    "pressure_modifiers": {
     "p_smugglers_on_deck": "货轮甲板上的走私船员还在跟登临组扭打，有人想去扳吊机的放缆手柄。"
    },

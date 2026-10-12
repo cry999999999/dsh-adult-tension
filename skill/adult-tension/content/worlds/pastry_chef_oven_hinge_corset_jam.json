@@ -1681,7 +1681,7 @@
     "loc_facility_mep_control_room"
    ],
    "id": "loc_open_pastry_kitchen_island",
-   "name": "全景玻璃开放式主厨铁板甜品台",
+   "name": "甜品岛台",
    "pressure_modifiers": {
     "press_oven_hinge_corset_deadlock": "重力铰链死死咬住蕾丝暗带加剧主厨服前襟撕裂走光风险",
     "press_souffle_collapse_twenty_five": "舒芙蕾秒级塌陷与评委拍照加剧时间催命压迫"
@@ -1707,7 +1707,7 @@
     "loc_chef_rest_room"
    ],
    "id": "loc_cold_prep_pastry_kitchen",
-   "name": "后厨恒温冷加工无菌备餐操作间",
+   "name": "冷加工间",
    "pressure_modifiers": {
     "press_oven_hinge_corset_deadlock": "背光遮蔽便于传递微观力学破拆图解"
    },
@@ -1730,7 +1730,7 @@
     "loc_facility_mep_control_room"
    ],
    "id": "loc_marble_tasting_counter_front",
-   "name": "环形大理石名流贵宾品鉴席",
+   "name": "品鉴席",
    "pressure_modifiers": {
     "press_souffle_collapse_twenty_five": "评委屏幕倒数光亮让秒数流逝感成倍放大"
    },
@@ -1753,7 +1753,7 @@
     "loc_marble_tasting_counter_front"
    ],
    "id": "loc_facility_mep_control_room",
-   "name": "后勤商用机电设备与配电总控室",
+   "name": "配电总控室",
    "pressure_modifiers": {
     "press_oven_hinge_corset_deadlock": "远离喧嚣能够极度冷静推导阻尼别退力学公式"
    },

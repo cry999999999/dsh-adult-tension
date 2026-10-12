@@ -1523,7 +1523,7 @@
     "loc_subterranean_ice_storage_gallery"
    ],
    "id": "loc_ice_vault_coroner_central_hall",
-   "name": "大理寺地下十丈玄武岩开阔冰鉴停尸正厅",
+   "name": "冰鉴正厅",
    "pressure_modifiers": {
     "p_ice_vault_hypothermia_freezing": "万斤坚冰寒气急剧吸走石室热量，呵气成霜，手脚关节迅速僵化冻麻。",
     "p_poison_gas_creeping_inundation": "鸩毒烟气自顶壁风孔不断灌入，空气含毒量攀升，眼鼻喉咙灼痛如裂。"
@@ -1551,7 +1551,7 @@
     "loc_court_rear_duty_room"
    ],
    "id": "loc_iron_gate_heavy_deadlock_threshold",
-   "name": "千斤锻铁防爆双合门与暗榫地锁门槛处",
+   "name": "铁门门槛",
    "pressure_modifiers": {
     "p_iron_deadlock_spring_seizure": "地锁内部弹簧受剧烈卡滞阻尼增加，稍有不慎探针折断将成绝对死扣。"
    },
@@ -1578,7 +1578,7 @@
     "loc_iron_gate_heavy_deadlock_threshold"
    ],
    "id": "loc_subterranean_ice_storage_gallery",
-   "name": "冰鉴后方万斤坚冰堆叠与排水石渠回廊",
+   "name": "藏冰回廊",
    "pressure_modifiers": {
     "p_ice_vault_water_channel_flooding": "石渠融冰水倒灌加剧地面湿滑，积水逼近地锁卡槽槽口。"
    },

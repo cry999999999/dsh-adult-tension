@@ -1582,7 +1582,7 @@
     "loc_building_ground_control_center"
    ],
    "id": "loc_sightseeing_glass_elevator_car",
-   "name": "三十层外挂双层观光电梯轿厢",
+   "name": "观光电梯轿厢",
    "pressure_modifiers": {
     "p_high_voltage_interlock_battery_drain": "轿厢应急照明与对讲电池仅能维持十几分钟电量，耗尽后将陷入绝对黑暗。",
     "p_typhoon_storm_high_altitude_sway": "十四级台风带来剧烈高空风切变，玻璃轿厢左右摇摆倾斜达十五度，重力失衡引发极度眩晕。"
@@ -1607,7 +1607,7 @@
     "loc_sightseeing_glass_elevator_car"
    ],
    "id": "loc_car_floor_maintenance_hatch",
-   "name": "轿厢地板下方安全钳底梁狭窄检修死角",
+   "name": "轿底检修口",
    "pressure_modifiers": {
     "p_close_quarters_flesh_contact_heat": "在不足半平米的地板检修口旁两人身体彻底交叠贴伏，室友温热急促的喘息拂过耳畔，湿透衣物传递着惊人的异性体温。",
     "p_safety_wedge_deadlock_rail_crush": "轿厢晃动导致安全钳楔块越夹越死，偏心螺母咬合阻尼逼近金属屈服极限。"
@@ -1632,7 +1632,7 @@
     "loc_shared_apartment"
    ],
    "id": "loc_building_ground_control_center",
-   "name": "大厦一层中央消防与电梯监控调度大厅",
+   "name": "一楼中控大厅",
    "pressure_modifiers": {
     "p_typhoon_storm_high_altitude_sway": "大风导致室外升降作业车完全无法起吊施救，外界物理救援途径彻底阻断。"
    },

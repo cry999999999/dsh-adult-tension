@@ -1647,7 +1647,7 @@
     "loc_grand_ballroom_center_aisle"
    ],
    "id": "loc_grand_hall_main_stage",
-   "name": "金色宴会厅百米主舞台与香槟塔边缘",
+   "name": "香槟塔边",
    "pressure_modifiers": {
     "press_champagne_tower_collapse_panic": "十二层水晶杯共振脆响加剧香槟塔坍塌恐慌负荷",
     "press_wedding_guests_stare_dread": "千人名流宾客凝望视线加剧成年名媛极致社死心理重压"
@@ -1673,7 +1673,7 @@
     "loc_host_upstairs_dressing_room"
    ],
    "id": "loc_stage_wing_control_corner",
-   "name": "舞台右侧候场侧幕导播控台暗角",
+   "name": "侧幕暗角",
    "pressure_modifiers": {
     "press_director_headset_countdown": "耳麦秒级倒数读秒催促加剧破拆时间枯竭绝境",
     "press_fingertip_sweat_hairpin_slippage": "手心微汗导致发簪尖端在锁孔间隙滑动加剧脱扣失败风险"
@@ -1698,7 +1698,7 @@
     "loc_grand_ballroom_center_aisle"
    ],
    "id": "loc_banquet_vip_front_tables",
-   "name": "千人金色大厅首排至尊贵宾席位区",
+   "name": "首排贵宾席",
    "pressure_modifiers": {
     "press_director_headset_countdown": "全场寂静无声衬托耳麦读秒声尤为刺耳惊心",
     "press_wedding_guests_stare_dread": "财阀家族长辈审视目光加剧名媛职业前程覆灭危机"
@@ -1723,7 +1723,7 @@
     "loc_banquet_vip_front_tables"
    ],
    "id": "loc_grand_ballroom_center_aisle",
-   "name": "水晶镜面中轴主花道与迎宾拱门",
+   "name": "中轴花道",
    "pressure_modifiers": {
     "press_backless_gown_tear_panic": "紧绷鱼尾长裙限制快步行走加剧动作变形窘迫",
     "press_groomsman_step_intrusion": "皮鞋踏地声逼近加剧侧幕隐私防线失守恐慌"

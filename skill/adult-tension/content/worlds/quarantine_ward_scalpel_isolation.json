@@ -1817,7 +1817,7 @@
     "airlock_decontamination_corridor"
    ],
    "id": "underground_generator_control_hub",
-   "name": "地下柴油动力与主排风控制室",
+   "name": "柴油机房",
    "pressure_modifiers": {
     "p_generator_exhaust_hypoxia_hazard": "排气阀门堵塞导致一氧化碳与未燃柴油浓烟急剧积聚。",
     "p_negative_pressure_filter_shutdown": "柴油日用油箱液位计浮球已跌破最后红色警戒死线。"

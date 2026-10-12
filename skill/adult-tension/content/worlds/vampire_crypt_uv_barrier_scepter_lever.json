@@ -1600,7 +1600,7 @@
     "loc_vampire_crypt_chamber"
    ],
    "id": "loc_crypt_circuit_breaker_nook",
-   "name": "配电闸刀偏心搭扣三十公分死角",
+   "name": "闸刀死角",
    "pressure_modifiers": {
     "p_circuit_breaker_magnetic_jam": "电磁铁吸力与弹簧形变应力叠加，杠杆反扭阻尼逼近金属疲劳极限。",
     "p_close_contact_body_heat_tension": "在三十公分狭窄死角中两人身躯紧紧相贴，千金急促滚烫的吐息与颤抖娇躯依偎在学者怀前，湿透蕾丝裙下传来的惊人体温令人心悸。"
@@ -1624,7 +1624,7 @@
     "loc_vampire_crypt_chamber"
    ],
    "id": "loc_crypt_antechamber_passage",
-   "name": "地宫外围石砌拱廊避难前室",
+   "name": "拱廊前室",
    "pressure_modifiers": {
     "p_uv_light_radiation_skin_burn": "外侧人员无法突破万斤断龙石，救援耗时无法赶在千金表皮深度灼伤前完成开启。"
    },

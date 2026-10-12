@@ -1515,7 +1515,7 @@
     "loc_suspended_lift_cage"
    ],
    "id": "loc_lift_pawl_slot",
-   "name": "悬臂防坠偏心棘爪咬合卡槽",
+   "name": "棘爪卡槽",
    "pressure_modifiers": {
     "p_cage_body_close": "两人挤在吊笼角落，管理员的后背贴着对方的胸口，湿透的衬衫下体温一阵阵透过来。",
     "p_seal_edge_slip": "重印的折沿又光又滑，稍一偏就会从齿缝里滑出去。"
@@ -1539,7 +1539,7 @@
     "loc_reading_hall"
    ],
    "id": "loc_shelving_release_pedal",
-   "name": "密集书架机械阻尼脱扣踏板",
+   "name": "脱扣踏板",
    "pressure_modifiers": {
     "p_shelving_crush": "外面的人想手摇书架，可摇柄被卡死了，书架还在往里合。"
    },

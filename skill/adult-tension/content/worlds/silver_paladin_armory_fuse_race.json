@@ -1555,7 +1555,7 @@
     "loc_fortress_parade_ground"
    ],
    "id": "loc_vent_crank_niche",
-   "name": "泄爆百叶铜质复位摇柄凹壁",
+   "name": "摇柄凹壁",
    "pressure_modifiers": {
     "p_sulfur_smoke": "外面的人想打开排烟百叶，可摇柄卡死了，烟只能往坑道里灌。"
    },

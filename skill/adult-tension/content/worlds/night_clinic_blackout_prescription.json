@@ -1397,7 +1397,7 @@
     "loc_hvac_control_substation"
    ],
    "id": "loc_sterile_dispensing_hall",
-   "name": "全封闭负压无菌配制操作主舱",
+   "name": "无菌配药大厅",
    "pressure_modifiers": {
     "press_airlock_interlock_trap": "舱内压差急剧攀升致使联锁棘爪紧紧咬死衣带"
    },

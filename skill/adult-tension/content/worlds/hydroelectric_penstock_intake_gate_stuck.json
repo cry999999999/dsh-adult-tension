@@ -1546,7 +1546,7 @@
     "loc_gallery_drainage_sump_catwalk"
    ],
    "id": "loc_intake_gate_gallery_deadlock",
-   "name": "水下百米大坝进水口快速启闭门检修廊道",
+   "name": "进水口检修廊道",
    "pressure_modifiers": {
     "p_hydraulic_piston_deadlock_crush": "主提升液压缸在狂暴水锤重击中抱死卡阻，平板闸门必须依靠手动旋转旁通阀注水平压实现重力自沉。",
     "p_water_hammer_burst_surge": "百米水头高压射流以每秒四十吨威力倒灌，逼仄廊道内水位急速漫过胸口仅剩四分钟逃生窗口。"
@@ -1574,7 +1574,7 @@
     "loc_hoist_hall_duty_room"
    ],
    "id": "loc_dam_crest_hoist_hall_corridor",
-   "name": "大坝坝顶启闭机房防爆主控通廊",
+   "name": "坝顶机房通廊",
    "pressure_modifiers": {
     "p_dam_crest_gate_cable_snap_risk": "门机主钢丝绳受到数十吨异常上拉动载拉扯，卷筒排绳器滑脱三道槽口濒临崩绳。"
    },
@@ -1601,7 +1601,7 @@
     "loc_dam_crest_hoist_hall_corridor"
    ],
    "id": "loc_gallery_drainage_sump_catwalk",
-   "name": "廊道集水井强排排水泵站栈桥",
+   "name": "集水井栈桥",
    "pressure_modifiers": {
     "p_cold_hypothermia_paralysis_shock": "积水坑冰冷水雾弥漫加剧了低层栈桥的严寒侵袭，体温过快流失增加了失温休克的危险。"
    },

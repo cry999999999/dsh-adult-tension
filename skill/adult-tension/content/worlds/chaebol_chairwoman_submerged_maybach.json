@@ -1501,7 +1501,7 @@
     "loc_door_release_recess"
    ],
    "id": "loc_flooded_rear_cabin",
-   "name": "淹没防弹座舱后排逼仄空间",
+   "name": "淹水的后排",
    "pressure_modifiers": {
     "p_air_pocket_shrink": "空气层只剩一掌宽，呼出的白气都撞在车顶上。",
     "p_culvert_flood_rise": "洪水每涨一寸，顶棚下的空气就少一寸，两人只能仰着头贴近车顶。"
@@ -1549,7 +1549,7 @@
     "loc_tower_sky_lounge"
    ],
    "id": "loc_door_release_recess",
-   "name": "装甲车门机械应急开启把手内凹槽",
+   "name": "车门应急把手",
    "pressure_modifiers": {
     "p_door_water_lock": "外面的救援队想用液压钳，可暗渠水流太急，靠不上来。"
    },
@@ -1602,7 +1602,7 @@
     "loc_tower_sky_lounge"
    ],
    "id": "loc_chairwoman_rest_room",
-   "name": "董事长办公室里间的休息室",
+   "name": "董事长休息室",
    "pressure_modifiers": {},
    "privacy": "private",
    "tags": [

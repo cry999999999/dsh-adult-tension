@@ -1601,7 +1601,7 @@
     "loc_antique_vault_chamber"
    ],
    "id": "loc_lead_lined_door_gap",
-   "name": "暗门上导轨滑轮偏心齿狭小死角",
+   "name": "暗门导轨夹层",
    "pressure_modifiers": {
     "p_close_contact_body_heat_tension": "在四十公分狭小夹层中两人身躯紧紧相贴，长皇女高贵端庄的急促呼气拂在耳畔，羊毛大衣下的柔软体温成为严寒中唯一的生机。",
     "p_lead_door_track_crush_jam": "数千磅铅包木门自重与上部雪压合力叠加，反向杠杆扭矩极其沉重。"
@@ -1625,7 +1625,7 @@
     "loc_antique_vault_chamber"
    ],
    "id": "loc_hunting_lodge_grand_salon",
-   "name": "行宫一层残存中央壁炉大沙龙",
+   "name": "壁炉大沙龙",
    "pressure_modifiers": {
     "p_avalanche_hypothermia_frostbite_surge": "外侧仆从缺乏大型起重工具，无法单凭人力从外部拉开数吨重的铅包滑拉门。"
    },

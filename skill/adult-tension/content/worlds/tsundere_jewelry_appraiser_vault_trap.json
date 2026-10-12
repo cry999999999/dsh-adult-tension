@@ -1754,7 +1754,7 @@
     "loc_mine_mouth_chalet"
    ],
    "id": "loc_swiss_vault_hydraulic_lock_aisle",
-   "name": "重型防爆门液压锁栓检修回廊",
+   "name": "锁栓检修回廊",
    "pressure_modifiers": {
     "p_door_outer_winch_tension_imbalance": "外门牵引钢缆张紧嗡鸣，力矩稍有失衡便有拉断门轴之虞。"
    },
@@ -1778,7 +1778,7 @@
     "loc_swiss_vault_hydraulic_lock_aisle"
    ],
    "id": "loc_swiss_vault_cryogenic_air_room",
-   "name": "矿洞顶层低温防潮换气机房",
+   "name": "换气机房",
    "pressure_modifiers": {
     "p_subzero_cryogenic_frost_fog_hazard": "零下极寒持续蔓延，金属管道迅速结霜加剧设备冻结风险。"
    },

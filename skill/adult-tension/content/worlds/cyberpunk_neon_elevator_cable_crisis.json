@@ -1540,7 +1540,7 @@
     "loc_rebel_safehouse"
    ],
    "id": "loc_sky_cable_passenger_cabin",
-   "name": "千米轨道悬挂穿梭缆车主车厢",
+   "name": "缆车车厢",
    "pressure_modifiers": {
     "p_cable_snap_nosedive_freefall": "车厢沿三十度倾斜导轨呈抛物线加速下冲，失重感如潮水般撕扯内脏器官。",
     "p_high_altitude_wind_shear_freeze": "千米高空零下二十度强对流暴风狂涌而入，呼啸气流剥夺视线与肢体温度。"
@@ -1593,7 +1593,7 @@
     "loc_cable_chassis_undercarriage_bay"
    ],
    "id": "loc_sky_cable_roof_inspection_hatch",
-   "name": "车顶受电弓与副悬挂天窗台",
+   "name": "车顶天窗台",
    "pressure_modifiers": {
     "p_laser_interceptor_targeting_lock": "下层防空激光炮台的主动雷达照射红斑已锁定车顶，两分钟后将启动饱和集束齐射。"
    },

@@ -1646,7 +1646,7 @@
     "loc_umpire_ladder_back_shadow"
    ],
    "id": "loc_centre_court_umpire_chair_base",
-   "name": "中央球场主裁判高脚椅底座横梁",
+   "name": "裁判椅底座",
    "pressure_modifiers": {
     "press_shot_clock_forty_five_countdown": "发球钟红字急促跳秒进入最后倒数每秒蜂鸣加剧窒息压力",
     "press_skirt_snap_hook_jam_strain": "冲压倒钩死死咬住百褶裙暗扣受颠簸拉扯向上剧烈形变"
@@ -1670,7 +1670,7 @@
     "loc_umpire_ladder_back_shadow"
    ],
    "id": "loc_player_rest_bench_canopy",
-   "name": "球员局间休息遮阳伞休息椅",
+   "name": "选手休息椅",
    "pressure_modifiers": {
     "press_skirt_sheer_tight_exposure_panic": "百褶裙被倒钩扯起露出贴身安全裤雪白大腿加剧校花极致社死负荷",
     "press_umpire_whistle_imminent": "主裁判起身手搭口哨威严下望带来执裁重压"
@@ -1695,7 +1695,7 @@
     "loc_athlete_village_room"
    ],
    "id": "loc_court_side_tunnel_entrance",
-   "name": "中央球场主运动员出入通道口",
+   "name": "球员通道口",
    "pressure_modifiers": {
     "press_shot_clock_forty_five_countdown": "全场一万名观众的倒数助威声在通道拱顶形成轰鸣共振",
     "press_sponsor_vip_court_side_intrusion": "赞助商贵宾皮鞋踩过地胶逼近场边广告牌探头窥探"
@@ -1720,7 +1720,7 @@
     "loc_court_side_tunnel_entrance"
    ],
    "id": "loc_umpire_ladder_back_shadow",
-   "name": "高脚裁判椅蹬梯背板后侧阴影夹缝",
+   "name": "蹬梯后夹缝",
    "pressure_modifiers": {
     "press_fingertip_sweat_pin_slippage": "手心细汗与极度紧张导致不锈钢别针抓握受力打滑险情",
     "press_skirt_snap_hook_jam_strain": "冲压倒钩微观毛刺死死卡入尼龙暗带受拉濒临撕裂极限"

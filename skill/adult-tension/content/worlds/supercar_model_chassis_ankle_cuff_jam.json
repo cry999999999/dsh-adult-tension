@@ -1647,7 +1647,7 @@
     "loc_media_pit_cordon_front"
    ],
    "id": "loc_supercar_rotating_stage_center",
-   "name": "中央超跑旋转展台与前唇导流板旁",
+   "name": "旋转展台",
    "pressure_modifiers": {
     "press_chassis_bolt_ankle_snag_pain": "碳纤维导流板金属螺栓紧紧卡住脚踝银锁加剧牵拉剧痛",
     "press_media_flash_scrutiny_dread": "数百长焦连拍白昼光芒加剧高开叉撕裂走光社死恐慌"
@@ -1673,7 +1673,7 @@
     "loc_model_upstairs_lounge"
    ],
    "id": "loc_stage_chassis_blind_zone",
-   "name": "超跑前唇底盘阴影与车轮三角盲区",
+   "name": "前轮盲区",
    "pressure_modifiers": {
     "press_heel_tip_slip_risk": "高光展台镜面导致钛合金跟尖边缘打滑加剧顶开卡簧失败风险",
     "press_president_champagne_arrival": "总裁皮鞋踏上展台台阶脚步声加剧三十秒倒计时枯竭绝境"
@@ -1698,7 +1698,7 @@
     "loc_media_pit_cordon_front"
    ],
    "id": "loc_supercar_vip_podium_stairs",
-   "name": "贵宾红毯登台步道与总裁候场区",
+   "name": "红毯登台步道",
    "pressure_modifiers": {
     "press_dress_slit_tear_panic": "换腿动作牵引导致开叉边缘开裂声加剧衣物彻底破损恐惧",
     "press_president_champagne_arrival": "跨国总裁端酒临近加剧近距离合影走光曝光危机"
@@ -1723,7 +1723,7 @@
     "loc_supercar_vip_podium_stairs"
    ],
    "id": "loc_media_pit_cordon_front",
-   "name": "长焦媒体席前沿警戒线通道",
+   "name": "媒体警戒线",
    "pressure_modifiers": {
     "press_heel_tip_slip_risk": "单腿站立在十二厘米细高跟上加剧小腿肌肉抽筋紧绷",
     "press_media_flash_scrutiny_dread": "长焦镜头连拍快门声加剧身体重心失衡摔倒恐惧"

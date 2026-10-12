@@ -264,7 +264,7 @@
   "locations": [
     {
       "id": "loc_hydrocracking_reactor_seal_skirt",
-      "name": "加氢反应器底部八角垫检修隔热罩通道",
+      "name": "反应器裙座内",
       "detail": "高约两米、宽不足一点五米的环形密闭隔热裙座死角空间，头顶是重达五百吨的特厚壁合金反应器下封头，四百摄氏度超高压主法兰八角垫裂隙喷出高达两百公斤压力的灼热氢气射流，尖锐啸叫刺破耳膜，空气温度高达六十度、充斥着刺鼻的硫化氢恶臭，四周镀铝隔热棉在气浪中狂暴翻卷。",
       "privacy": "semi",
       "visibility": "dim",
@@ -291,7 +291,7 @@
     },
     {
       "id": "loc_reactor_skirt_access_platform",
-      "name": "反应器裙座下部防爆检修主平台",
+      "name": "裙座检修平台",
       "detail": "位于反应器钢架承重梁外侧的开敞式镀锌钢格板平台，热浪扑面风声呼啸，红色应急声光报警器在雨幕中狂闪，防爆防化应急水幕喷头正向下倾泻大量除毒水雾。",
       "privacy": "public",
       "visibility": "clear",
@@ -319,7 +319,7 @@
     },
     {
       "id": "loc_flare_knockout_drum_corridor",
-      "name": "火炬分液罐排险防爆隔离通廊",
+      "name": "分液罐通廊",
       "detail": "位于联合装置外围的重型防爆混凝土隔离通道，管道纵横轰鸣震耳，远处千米高空火炬正在猛烈喷射百米烈焰，空气中弥漫着浓烈的重芳烃与重油焦糊气味。",
       "privacy": "private",
       "visibility": "dim",

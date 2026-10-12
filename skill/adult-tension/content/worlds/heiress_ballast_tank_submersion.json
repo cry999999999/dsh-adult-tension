@@ -1664,7 +1664,7 @@
     "upper_lifeboat_launch_platform"
    ],
    "id": "vertical_pipe_escape_shaft",
-   "name": "贯通三层水密检修纵向垂直竖井",
+   "name": "检修竖井",
    "pressure_modifiers": {
     "p_airlock_pneumatic_door_jam": "上方水密天窗受船体扭曲挤压产生严重机械卡死歪斜。",
     "p_ballast_inrush_water_level_surge": "下方回旋漩涡正如同巨口般疯狂向上吞噬梯级。"
@@ -1691,7 +1691,7 @@
     "upper_lifeboat_launch_platform"
    ],
    "id": "flooded_bilge_pump_corridor",
-   "name": "底层大口径排水泵过水走廊",
+   "name": "排水泵走廊",
    "pressure_modifiers": {
     "p_kidnapper_armed_checkpoint_ambush": "绑匪打手正守在走廊铁门外准备截杀逃脱者抢夺账册。",
     "p_short_circuit_live_wire_electrocution": "裸露高压电缆落入水中正将电弧顺着水流迅速传导蔓延。"
@@ -1718,7 +1718,7 @@
     "flooded_bilge_pump_corridor"
    ],
    "id": "upper_lifeboat_launch_platform",
-   "name": "露天右舷救生艇起吊机逃生平台",
+   "name": "救生艇平台",
    "pressure_modifiers": {
     "p_hull_keel_fracture_final_plunge": "万吨船体龙骨发出最后断裂哀鸣即将整体翻扣入海。",
     "p_kidnapper_armed_checkpoint_ambush": "走投无路的匪首在暴风雨中举枪对准救生艇展开最后疯狂。"

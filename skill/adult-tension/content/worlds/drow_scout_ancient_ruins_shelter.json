@@ -1742,7 +1742,7 @@
     "crystal_crevice_narrow_tunnel"
    ],
    "id": "moss_ruins_sanctuary_chamber",
-   "name": "荧光苔藓断壁古代精灵避难石室",
+   "name": "苔藓石室",
    "pressure_modifiers": {
     "p_beast_claw_battering_sanctuary_barrier": "石缝外侧狂暴巨兽不断以重爪拍击封门巨石发出惊心动魄巨响。",
     "p_mana_overload_circuit_meltdown": "石室内微弱地脉共鸣正加速斥候体内魔力逆流，皮肤赤红纹路每十分钟蔓延一寸。"
@@ -1770,7 +1770,7 @@
     "subterranean_toxic_miasma_abyss"
    ],
    "id": "collapsed_tunnel_rubble_barrier",
-   "name": "十层主坑道万斤巨石塌方阻绝断壁",
+   "name": "塌方断壁",
    "pressure_modifiers": {
     "p_beast_claw_battering_sanctuary_barrier": "碎石堆另一侧聚集的魔兽正试图扒开较小碎石钻入石室。",
     "p_secondary_cavein_ceiling_collapse": "山体地脉剧烈震动正导致上方重达数吨之巨大钟乳石产生裂纹松动。"
@@ -1798,7 +1798,7 @@
     "subterranean_toxic_miasma_abyss"
    ],
    "id": "crystal_crevice_narrow_tunnel",
-   "name": "紫晶矿脉陡峭夹缝与排风死角",
+   "name": "紫晶夹缝",
    "pressure_modifiers": {
     "p_mana_overload_circuit_meltdown": "紫晶矿脉的高纯度魔力辐射正轻微缓解魔毒蔓延速度。",
     "p_toxic_miasma_creeping_flood": "毒瘴气正沿着地裂缝隙向低洼岩台缓慢渗透蔓延。"
@@ -1825,7 +1825,7 @@
     "crystal_crevice_narrow_tunnel"
    ],
    "id": "subterranean_toxic_miasma_abyss",
-   "name": "地底断裂深渊边缘与紫雾瘴气溶洞",
+   "name": "瘴气深渊边",
    "pressure_modifiers": {
     "p_beast_claw_battering_sanctuary_barrier": "断崖对岸的暴风魔狼正沿着石藤索桥悄无声息攀爬逼近。",
     "p_toxic_miasma_creeping_flood": "下沉气流正将深渊底部的剧毒紫雾迅速抬升压向石室通气孔。"

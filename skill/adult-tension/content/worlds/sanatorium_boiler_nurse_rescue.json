@@ -1582,7 +1582,7 @@
     "loc_nurse_duty_room"
    ],
    "id": "loc_geothermal_pump_hall",
-   "name": "疗养院地下大型地热循环泵房回廊",
+   "name": "地热泵房",
    "pressure_modifiers": {
     "p_steam_pressure_rupture_rush": "破裂法兰喷射的高温蒸汽流量以每秒十立方米剧增，室内环境温度极速逼近人体耐受极限。",
     "p_thermal_blindness_whiteout": "高密度白雾吞没整条回廊，冷凝水沿金属管道暴雨般下落，视线严重受阻。"
@@ -1611,7 +1611,7 @@
     "loc_door_jam_crawlspace_nook"
    ],
    "id": "loc_steam_damper_doorway",
-   "name": "防灾电动隔断金属卷门通道口",
+   "name": "卷帘门通道口",
    "pressure_modifiers": {
     "p_damper_door_thermal_jam_pinch": "数百公斤金属卷门自重下压，导轨受热膨胀卡爪咬死使下坠停止亦无法依靠普通人力抬起。",
     "p_steam_pressure_rupture_rush": "滚烫蒸汽受到半截卷门阻挡在门洞前形成强烈对流漩涡，空气灼痛呼吸道。"
@@ -1638,7 +1638,7 @@
     "loc_steam_damper_doorway"
    ],
    "id": "loc_door_jam_crawlspace_nook",
-   "name": "卡死卷帘门底与控制盒死角狭缝",
+   "name": "卷帘门下狭缝",
    "pressure_modifiers": {
     "p_close_contact_body_heat_tension": "在一米死角内护士与机工肌肤紧贴完全伏卧，湿透护士服薄汗与机工体温激烈对冲，滚烫急促的吐息拂过颈侧锁骨。",
     "p_damper_door_thermal_jam_pinch": "金属卷门若受热进一步形变彻底咬死控制触点，自救回路将彻底丧失功能。"

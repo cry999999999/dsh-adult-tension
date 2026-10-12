@@ -1728,7 +1728,7 @@
     "loc_expo_security_monitoring_antechamber"
    ],
    "id": "loc_vip_cosplayer_dressing_booth",
-   "name": "展厅后台VIP特邀更衣间",
+   "name": "VIP更衣间",
    "pressure_modifiers": {
     "p_curfew_infrared_lockdown_countdown": "全馆红外微波布防倒计时步步逼近，警报声令室内气氛高度凝固。",
     "p_heavy_armor_zipper_teeth_deadlock": "战袍金属齿轮与内衬织锦死死咬结，贴身紧缚限制受困者大幅肢体动作。"

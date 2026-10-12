@@ -1742,7 +1742,7 @@
     "villa_second_floor_long_corridor"
    ],
    "id": "villa_master_bedroom_western_suite",
-   "name": "别庄二楼西洋式主寝室套房",
+   "name": "二楼主寝室",
    "pressure_modifiers": {
     "p_bank_midnight_foreclosure_deadline": "壁炉上方古典摆钟沉闷敲响，距离午夜终局清算仅余两刻钟。",
     "p_typhoon_mudslide_blackout_crisis": "狂风撞裂寝室阳台外层百叶窗，冷风暴雨卷入吹得烛火疯狂摇曳。"
@@ -1770,7 +1770,7 @@
     "villa_detached_bamboo_tea_pavilion"
    ],
    "id": "villa_second_floor_long_corridor",
-   "name": "别庄二楼红木长廊回音过道",
+   "name": "二楼长廊",
    "pressure_modifiers": {
     "p_cousin_military_seizure_threat": "两名佩枪宪兵大头皮鞋在走廊那头踏出刺耳踏步声，正逐间搜查门房。",
     "p_notary_solicitor_bribe_defect": "律师在走廊阴暗拐角处被陆军少佐按在墙上拔枪威逼。"
@@ -1825,7 +1825,7 @@
     "villa_second_floor_long_corridor"
    ],
    "id": "villa_detached_bamboo_tea_pavilion",
-   "name": "别庄悬崖附属幽竹和风茶室",
+   "name": "悬崖茶室",
    "pressure_modifiers": {
     "p_concubine_son_will_forgery": "暗格内被雨水打湿的真正遗嘱底页在地炉炭火烘烤下逐渐显出暗墨伪造痕迹。",
     "p_cousin_military_seizure_threat": "回廊木地板传来急促刺耳军靴踩踏声，搜查脚步正逼近茶室障子门。"

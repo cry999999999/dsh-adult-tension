@@ -1631,7 +1631,7 @@
     "ancient_templar_crypt_escape_drain"
    ],
    "id": "collapsed_moonlight_altar_triangular_voi",
-   "name": "失落古神圣坛中央大理石断壁三角避难空腔",
+   "name": "断柱三角空腔",
    "pressure_modifiers": {
     "p_abyssal_shadow_miasma_air_choke_clock": "毒瘴正透过石缝如毒蛇般盘旋涌入导致呼吸急促面色发紫。",
     "p_overhead_megalith_secondary_collapse_r": "头顶巨石在重压下发出令人牙酸的嘎吱崩裂声随时将砸落万斤。"
@@ -1661,7 +1661,7 @@
     "ancient_templar_crypt_escape_drain"
    ],
    "id": "abyssal_lava_chasm_fissure_ledge",
-   "name": "地下深渊地热裂隙赤红熔岩断崖边缘",
+   "name": "熔岩断崖",
    "pressure_modifiers": {
     "p_corrupted_shadow_inquisitor_assassinat": "暗影死士的弩箭正穿透烟雾连环射击在龙鳞塔盾表面火花四溅。",
     "p_magma_surge_thermal_creeping_flood": "岩浆液面正以每刻钟两尺速度上涨热浪已将衣角烤焦。"
@@ -1688,7 +1688,7 @@
     "abyssal_lava_chasm_fissure_ledge"
    ],
    "id": "ancient_templar_crypt_escape_drain",
-   "name": "古代圣堂殉道者地下墓窖暗门排水水道",
+   "name": "墓窖排水暗沟",
    "pressure_modifiers": {
     "p_abyssal_shadow_miasma_air_choke_clock": "暗沟水面上方积聚的阴沉寒瘴令人四肢麻木失温。",
     "p_corrupted_shadow_inquisitor_assassinat": "追兵的猎犬正顺着水流咆哮扑杀逼近。"

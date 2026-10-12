@@ -1673,7 +1673,7 @@
     "loc_ginseng_dugout_hut"
    ],
    "id": "loc_crevasse_bottom_boulder_shelter",
-   "name": "天坑万年冰川裂隙底部避风石崖凹槽",
+   "name": "天坑底石崖",
    "pressure_modifiers": {
     "p_avalanche_boulder_carabiner_jam": "数十吨巨石将金属锁扣死死压在岩壁槽内，无法徒手拉开。",
     "p_crevasse_blizzard_hypothermia_freezing": "天坑底部气温骤降至零下三十度，狂风穿堂而过，手指关节迅速冻木迟缓。"
@@ -1700,7 +1700,7 @@
     "loc_subterranean_ice_cave_bivouac"
    ],
    "id": "loc_vertical_ice_wall_climbing_pitch",
-   "name": "通往坑顶安全冰壁攀登垂直通道",
+   "name": "冰壁攀登道",
    "pressure_modifiers": {
     "p_hanging_ice_cornice_secondary_collapse": "坑顶冰檐被狂风持续侵蚀发出断裂声，随时可能坠落封死通道。"
    },
@@ -1727,7 +1727,7 @@
     "loc_vertical_ice_wall_climbing_pitch"
    ],
    "id": "loc_subterranean_ice_cave_bivouac",
-   "name": "避风石崖内侧避险冰穴营地",
+   "name": "冰穴营地",
    "pressure_modifiers": {
     "p_blizzard_air_intake_snow_choke": "狂风卷入细雪灌入冰穴入口，积雪厚度逐步挤压呼吸空间。"
    },

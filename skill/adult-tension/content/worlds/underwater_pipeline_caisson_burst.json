@@ -1545,7 +1545,7 @@
     "loc_hyperbaric_decompress_chamber"
    ],
    "id": "loc_caisson_docking_joint_airlock",
-   "name": "水下四十米沉管对接接头焊接隔舱",
+   "name": "对接隔舱",
    "pressure_modifiers": {
     "p_caisson_joint_flood_surge_surge": "高压射流以每秒三十吨的狂暴威力喷涌倒灌，冰冷海水已漫过腰际距离淹没头顶仅剩十分钟。",
     "p_caisson_shear_creak_crush": "八万吨混凝土沉箱在暗涌下发生微滑移，重型隔水蝶阀传动涡轮轴受到数十吨非对称横向剪力濒临彻底咬死崩断。"
@@ -1572,7 +1572,7 @@
     "loc_hyperbaric_decompress_chamber"
    ],
    "id": "loc_pipeline_dry_catwalk_hall",
-   "name": "沉管中空干坞管廊主通风栈道",
+   "name": "管廊栈道",
    "pressure_modifiers": {
     "p_dry_catwalk_bulkhead_buckle_risk": "干坞隔离舱水密门钢板受到千吨级单向背水压推挤发生微小穹曲，中央观察窗石英玻璃浮现白色裂纹。"
    },
@@ -1599,7 +1599,7 @@
     "loc_pipeline_dry_catwalk_hall"
    ],
    "id": "loc_hyperbaric_decompress_chamber",
-   "name": "沉箱应急高压医用过渡减压舱",
+   "name": "医用减压舱",
    "pressure_modifiers": {
     "p_freezing_water_hypothermia_shock": "加压舱外部海水温度逼近零度极寒，备用恒温加热毯受潮短路加剧了重度失温的救治风险。"
    },

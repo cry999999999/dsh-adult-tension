@@ -1521,7 +1521,7 @@
     "loc_bronze_gate_ledge"
    ],
    "id": "loc_bronze_gate_cam_slot",
-   "name": "青铜巨闸偏心防逆转自锁齿槽",
+   "name": "巨闸齿槽",
    "pressure_modifiers": {
     "p_scabbard_band_bend": "紫铜底箍被卡齿压出一道凹痕，再硬别可能整圈翻卷。",
     "p_scabbard_chest_press": "剑巫女背贴在探险家胸前，四只手叠在剑鞘上，湿透的巫女袍贴着对方的衣衫。"

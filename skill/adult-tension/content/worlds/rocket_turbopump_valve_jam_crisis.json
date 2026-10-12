@@ -1546,7 +1546,7 @@
     "loc_flame_trench_emergency_tunnel"
    ],
    "id": "loc_turbopump_valve_nook",
-   "name": "导流槽下方火箭尾段涡轮泵狭窄死角",
+   "name": "涡轮泵死角",
    "pressure_modifiers": {
     "p_purge_valve_cryogenic_deadlock": "吹除阀阀芯在零下一百八十三度极低温下发生微米级冷粘连，必须依靠特种扳手合力强行下压闭合自救。",
     "p_rocket_turbopump_backflow_explosion": "点火倒计时四十秒绝命迫近，高压煤油一旦倒灌进入液氧吹除管路将引发整箭瞬间殉爆自救。"
@@ -1574,7 +1574,7 @@
     "loc_launch_site_dorm"
    ],
    "id": "loc_launch_pad_swing_arm_gantry",
-   "name": "发射台回转平台防爆检修主栈桥",
+   "name": "回转平台栈桥",
    "pressure_modifiers": {
     "p_pad_water_curtain_pump_surge": "消音降噪大流量水幕主泵受到强烈压力反冲，高压输水管法兰产生微量刺漏。"
    },
@@ -1601,7 +1601,7 @@
     "loc_launch_pad_swing_arm_gantry"
    ],
    "id": "loc_flame_trench_emergency_tunnel",
-   "name": "导流槽排险防爆混凝土隔离逃生通廊",
+   "name": "导流槽逃生通廊",
    "pressure_modifiers": {
     "p_trench_hypothermia_shock": "刺骨深冷伴随白雾扩散加剧了通廊的冻僵风险，体温过快流失增加了失温休克的危险。"
    },

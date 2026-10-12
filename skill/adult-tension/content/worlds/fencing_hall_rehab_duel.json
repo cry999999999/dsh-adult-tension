@@ -1555,7 +1555,7 @@
     "loc_fencing_medical_room"
    ],
    "id": "loc_fencing_piste_one",
-   "name": "地下剑馆一号标准金属比赛剑道",
+   "name": "一号剑道",
    "pressure_modifiers": {
     "press_battery_acid_drip_threat": "上方破损电池盒稀硫酸液顺着钢架每秒滴落加速逼近雪肤",
     "press_twenty_five_sec_co2_blast": "中控排气电磁阀震颤蜂鸣提醒喷射仅剩二十五秒生死窗口"
@@ -1579,7 +1579,7 @@
     "loc_subterranean_fire_exit"
    ],
    "id": "loc_fencing_control_booth",
-   "name": "剑道侧方挑空主裁判监控台操作台",
+   "name": "裁判台",
    "pressure_modifiers": {
     "press_camera_telephoto_framing_risk": "高倍率长焦镜头正自侧向斜后角推近紧咬马裤撕扯紧绷受力点",
     "press_twenty_five_sec_co2_blast": "墙面二十五秒倒数红色LED倒数钟以毫秒级流逝步步紧逼"
@@ -1603,7 +1603,7 @@
     "loc_fencing_control_booth"
    ],
    "id": "loc_subterranean_fire_exit",
-   "name": "地下二层通往地面避难防爆气密门",
+   "name": "气密防火门",
    "pressure_modifiers": {
     "press_twenty_five_sec_co2_blast": "闭门电磁继电器倒数吸合声清脆刺耳宣告生路即将封死"
    },

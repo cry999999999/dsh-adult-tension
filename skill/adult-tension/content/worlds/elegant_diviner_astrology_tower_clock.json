@@ -1497,7 +1497,7 @@
     "loc_orrery_brake_rail"
    ],
    "id": "loc_observatory_terrace_edge",
-   "name": "百米占星台悬空露台断崖边缘",
+   "name": "露台边缘",
    "pressure_modifiers": {
     "p_blizzard_frostbite": "一阵狂风卷着冰碴扑过来，脸上像被刀割。",
     "p_orrery_ring_tilts": "黄铜重环又往外倾了一寸，吱嘎声刺得人牙酸。"
@@ -1521,7 +1521,7 @@
     "loc_observatory_terrace_edge"
    ],
    "id": "loc_zodiac_gear_slot",
-   "name": "黄道十二宫偏心差速齿轮槽",
+   "name": "黄道齿轮槽",
    "pressure_modifiers": {
     "p_astrolabe_chest_press": "占星术士背贴在天文学者胸前，两人裹在一件斗篷里，四只手叠在星盘指针上。",
     "p_needle_tip_bend": "银指针的翘头被齿槽压出一道弧，再硬别可能整个弯折。"
@@ -1545,7 +1545,7 @@
     "loc_star_academy_gallery"
    ],
    "id": "loc_orrery_brake_rail",
-   "name": "应急防坠重力自锁制动导轨",
+   "name": "制动导轨",
    "pressure_modifiers": {
     "p_court_awaits_omen": "国王派来的侍从在内梯下面催，奏报要在晨钟前送到。"
    },

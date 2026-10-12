@@ -264,7 +264,7 @@
   "locations": [
     {
       "id": "loc_orbital_winch_undercarriage_hangar",
-      "name": "三万米锚定节点外露减压机库",
+      "name": "减压机库",
       "detail": "高十二米、通体由钛合金抗压桁架与复合装甲板构筑的半开放式外露减压大厅，正前方是粗如巨塔的碳纳米主缆与轰鸣巨响的电磁张紧绞盘，两侧防风壁已被狂暴风切变吹裂大半，零下六十度极寒强风卷着冰晶疯狂倒灌。",
       "privacy": "semi",
       "visibility": "dim",
@@ -291,7 +291,7 @@
     },
     {
       "id": "loc_station_pressurized_command_corridor",
-      "name": "锚定站核心承压指挥观察通廊",
+      "name": "指挥观察通廊",
       "detail": "位于减压机库内侧的密封观察通廊，厚达三十厘米的高强度透明石英观察窗将万米深渊与暖光控制台隔开，自动防爆安全红灯疯狂旋转，中央广播系统持续传出撤离尖鸣。",
       "privacy": "public",
       "visibility": "clear",
@@ -319,7 +319,7 @@
     },
     {
       "id": "loc_sky_elevator_ballast_catwalk",
-      "name": "重型配重悬臂外挂检修栈桥",
+      "name": "配重悬臂栈桥",
       "detail": "悬挑在三万米虚空正上方的狭窄镂性格栅走道，下方是厚重翻滚的云海与苍茫蔚蓝地平线，两侧悬挂着数千吨钨合金重力配重块，狂风撕扯着安全索发出凄厉哀鸣。",
       "privacy": "private",
       "visibility": "dim",

@@ -1644,7 +1644,7 @@
     "loc_cashier_counter_front_desk"
    ],
    "id": "loc_convenience_cooler_aisle_center",
-   "name": "立式冷藏饮料展示柜中央补货通道",
+   "name": "冷柜通道",
    "pressure_modifiers": {
     "press_cooler_hinge_tail_pinch": "阻尼合页死死夹住猫尾底座加剧后臀受拉与短裙掀开恐慌",
     "press_supervisor_five_step_arrival": "督导推门脚步逼近加剧五步之内迎面撞破的绝境"
@@ -1669,7 +1669,7 @@
     "loc_cashier_counter_front_desk"
    ],
    "id": "loc_cooler_door_hydraulic_hinge_alcove",
-   "name": "冷柜重型阻尼回弹合页侧方死角",
+   "name": "冷柜合页死角",
    "pressure_modifiers": {
     "press_scraper_blade_slip_risk": "冰柜冷凝水附着合页导致金属刮刀打滑加剧破拆失败危机",
     "press_window_student_gaze_dread": "主干道青年目光投向玻璃窗加剧私密底座外露羞耻"
@@ -1694,7 +1694,7 @@
     "loc_cashier_counter_front_desk"
    ],
    "id": "loc_front_glass_door_entrance",
-   "name": "便利店自动感应双开玻璃大门玄关",
+   "name": "店门口",
    "pressure_modifiers": {
     "press_skirt_lift_modesty_collapse": "裙摆被拉高至大腿根部加剧纯情名誉当场崩塌绝望",
     "press_supervisor_five_step_arrival": "巡查高管踏入玄关加剧当场开除辞退与行业通报严罚"
@@ -1720,7 +1720,7 @@
     "loc_store_back_stockroom"
    ],
    "id": "loc_cashier_counter_front_desk",
-   "name": "便利店前台L型收银结算服务台",
+   "name": "收银台",
    "pressure_modifiers": {
     "press_cooler_open_chime_ten_second_rush": "冷柜开门过久蜂鸣报警声持续鸣响加剧十秒绝境",
     "press_window_student_gaze_dread": "落地玻璃通透照明加剧过路顾客窥视恐慌"

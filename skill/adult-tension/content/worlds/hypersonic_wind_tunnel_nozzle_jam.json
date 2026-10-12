@@ -1545,7 +1545,7 @@
     "loc_vacuum_sphere_gallery"
    ],
    "id": "loc_nozzle_throat_adjustment_chamber",
-   "name": "喷管喉道微米级机械调节传动死角",
+   "name": "喉道调节腔",
    "pressure_modifiers": {
     "p_hypersonic_overpressure_burst_risk": "两千度极热激波气压以每秒数十兆帕极速狂飙，狭小调节腔内气压逼近喷管承压极限仅剩四分钟窗口。",
     "p_throat_block_thermal_expansion_jam": "喷管喉道滑动块在非对称超高温热流下膨胀卡死，必须依靠特种扳手合力压下消除热卡阻自救。"
@@ -1573,7 +1573,7 @@
     "loc_bunker_duty_room"
    ],
    "id": "loc_arc_heater_control_bunker",
-   "name": "电弧加热室防爆应急中央控制地堡",
+   "name": "电弧控制地堡",
    "pressure_modifiers": {
     "p_chamber_heat_stroke_shock": "喷管外壁两千度热辐射急剧加剧了地堡通道的灼热危机，空气温度飙升增加了热衰竭休克的危险。"
    },
@@ -1600,7 +1600,7 @@
     "loc_arc_heater_control_bunker"
    ],
    "id": "loc_vacuum_sphere_gallery",
-   "name": "万方真空球罐抽吸旁通隔离通廊",
+   "name": "真空球罐通廊",
    "pressure_modifiers": {
     "p_vacuum_butterfly_vibration_fatigue": "狂暴气流引发主真空蝶阀高频震颤，阀杆轴承承受超载剪切濒临崩断。"
    },

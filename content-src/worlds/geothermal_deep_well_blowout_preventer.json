@@ -264,7 +264,7 @@
   "locations": [
     {
       "id": "loc_blowout_preventer_cellar_deadlock",
-      "name": "地热井口防喷器下层泥浆管汇死角通道",
+      "name": "防喷器方井",
       "detail": "高约两米半、宽约三米的深井钻台下部密闭钢结构方井，正中央是重达三十吨的超高压环形与闸板防喷器组，三百度过热蒸汽正从高压液压管路刺漏处疯狂狂喷咆哮，滚烫的重晶石泥浆如黑雨般漫天泼洒，四周空气被加热到百度以上令人窒息。",
       "privacy": "semi",
       "visibility": "dim",
@@ -291,7 +291,7 @@
     },
     {
       "id": "loc_drill_floor_control_doghouse",
-      "name": "钻台防爆司钻控制值班室长廊",
+      "name": "司钻房走廊",
       "detail": "位于钻台上方边缘的防爆控制室走道，厚重的双层防弹防蒸汽钢化玻璃将下方狂暴喷射的方井隔绝在外，控制台自毁红色旋转警报灯将四周雨幕染成血色。",
       "privacy": "public",
       "visibility": "clear",
@@ -319,7 +319,7 @@
     },
     {
       "id": "loc_mud_tank_manifold_catwalk",
-      "name": "泥浆循环罐固控高架排砂栈桥",
+      "name": "泥浆罐栈桥",
       "detail": "悬挂在重晶石泥浆加重储备罐上方的镂空格栅走道，下方是沸腾冒泡的深井返出泥浆，刺鼻的硫化氢气味与热浪交织蒸腾，蒸汽管线在此剧烈抖动震鸣。",
       "privacy": "private",
       "visibility": "dim",

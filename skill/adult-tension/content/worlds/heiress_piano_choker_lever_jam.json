@@ -1636,7 +1636,7 @@
     "loc_tuning_maintenance_chamber"
    ],
    "id": "loc_solo_piano_central_stage",
-   "name": "挑高独奏琴房施坦威九尺钢琴区",
+   "name": "独奏琴房",
    "pressure_modifiers": {
     "p_butler_doorbell_curfew_countdown": "门外管家门铃连续长鸣，距总卡刷开门锁仅剩最后三分钟紧急倒计时。",
     "p_choker_d_ring_piano_lever_jam": "项圈D型环死死卡入踏板曲柄，五十公斤阻尼预紧弹簧咬死无法仰头。"
@@ -1661,7 +1661,7 @@
     "loc_pianist_green_room"
    ],
    "id": "loc_piano_salon_waiting_foyer",
-   "name": "琴房隔音会客前厅与门禁走廊",
+   "name": "琴房前厅",
    "pressure_modifiers": {
     "p_butler_doorbell_curfew_countdown": "总管家率领后勤随从登门送衣，一旦撞破真相将引爆豪门社会性死亡风暴。",
     "p_rival_pianist_duet_inquiry": "双人协奏嘉宾步入前厅催场，骄横千金的人设面临粉碎性危机。"
@@ -1686,7 +1686,7 @@
     "loc_piano_salon_waiting_foyer"
    ],
    "id": "loc_tuning_maintenance_chamber",
-   "name": "恒温乐谱与调律器械维修库",
+   "name": "调律维修库",
    "pressure_modifiers": {
     "p_lubricant_wood_spill_hazard": "琴底润滑作业若滴落名贵实木音板将面临损毁传世名琴的严峻风险。",
     "p_tuning_tools_access_sprint": "折返维修库取用淬火乐谱夹分秒必争，任何迟疑都将葬送脱困窗口。"
@@ -1710,7 +1710,7 @@
     "loc_piano_salon_waiting_foyer"
    ],
    "id": "loc_pianist_green_room",
-   "name": "音乐厅后台的独奏家休息室",
+   "name": "独奏家休息室",
    "pressure_modifiers": {},
    "privacy": "private",
    "tags": [

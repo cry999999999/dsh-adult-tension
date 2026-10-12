@@ -1517,7 +1517,7 @@
     "loc_tilted_pit_floor"
    ],
    "id": "loc_pawl_relief_valve",
-   "name": "防坠棘爪偏心安全卸荷滑阀",
+   "name": "棘爪卸荷阀",
    "pressure_modifiers": {
     "p_baton_bend": "钛合金棒身被压得微微发颤，发出细细的嗡鸣。",
     "p_pit_back_embrace": "指挥家脊背紧紧靠在机械师胸前，四只手叠在指挥棒上，油雾打湿的衬衫贴着对方的工装。"
@@ -1541,7 +1541,7 @@
     "loc_rehearsal_hall"
    ],
    "id": "loc_gravity_drain_lever",
-   "name": "重力机械放油管路复位扳把",
+   "name": "放油扳把",
    "pressure_modifiers": {
     "p_stage_beam_crack": "上面的人想用千斤顶撑住承重梁，可液压一断，千斤顶也使不上劲。"
    },

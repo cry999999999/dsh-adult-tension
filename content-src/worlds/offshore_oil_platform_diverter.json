@@ -264,7 +264,7 @@
   "locations": [
     {
       "id": "loc_moonpool_diverter_manifold_nook",
-      "name": "月池底部环形防喷分流管排悬空死角",
+      "name": "月池分流器死角",
       "detail": "高约两米、宽不足一点五米的狭窄悬空防爆格板死角，头顶是重达数十吨的万吨井口分流器环形防喷器，下方是翻滚着数百米深墨黑海水的月池深渊，数百公斤高压气液混合泥浆从破损法兰处如暴龙咆哮喷涌，冰冷刺骨的海水飞沫与滚烫气浪交织翻腾，四周高压钢管在剧烈水锤中疯狂震颤。",
       "privacy": "semi",
       "visibility": "dim",
@@ -291,7 +291,7 @@
     },
     {
       "id": "loc_drill_floor_moonpool_catwalk",
-      "name": "钻台月池上方防爆检修主栈桥通廊",
+      "name": "月池栈桥",
       "detail": "位于万吨钻机转盘正下方的重型钢桁架检修栈桥，狂风呼啸暴雨倾盆，两台防爆消防高压水炮正在全负荷喷射除气水幕，红色戒严警报灯将四周映成血色。",
       "privacy": "public",
       "visibility": "clear",
@@ -319,7 +319,7 @@
     },
     {
       "id": "loc_mud_diverter_overboard_gallery",
-      "name": "舷外泥浆分流通海管汇隔离走廊",
+      "name": "舷外排浆走廊",
       "detail": "位于平台甲板底部的舷外排气通廊，粗大的十二寸排气管正向暴风雨中的海面猛烈喷射高压黑泥浆，四周空气中弥漫着浓烈的柴油基泥浆与重油焦糊气味。",
       "privacy": "private",
       "visibility": "dim",

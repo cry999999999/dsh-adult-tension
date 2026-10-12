@@ -1831,7 +1831,7 @@
     "sleeper_corridor_car7"
    ],
    "id": "caboose_guard_van",
-   "name": "列车尾部守车与应急手摇制动室",
+   "name": "尾部守车",
    "pressure_modifiers": {
     "p_armed_hijack_rumor": "瞭望窗外雪原树林中隐隐有手电筒反光闪动，逼近车尾。",
     "p_telegram_order_interception": "手摇发报机耳机中正不断传来沿线局调度室催问现场情况的急促蜂鸣声。"

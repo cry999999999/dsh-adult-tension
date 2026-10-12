@@ -1497,7 +1497,7 @@
     "loc_ironwood_gate_draft_gap"
    ],
    "id": "loc_heartwood_hollow_ledge",
-   "name": "地下千米世界树芯空洞木台",
+   "name": "树芯木台",
    "pressure_modifiers": {
     "p_air_running_thin": "空气又稀了一分，胸口闷得发疼。",
     "p_thorns_close_in": "荆棘又往里收了一寸，毒刺擦着衣角过去。"

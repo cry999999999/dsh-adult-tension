@@ -1566,7 +1566,7 @@
     "loc_caboose_cabin"
    ],
    "id": "loc_coal_tender_gangway_platform",
-   "name": "煤水车连接贯通走板与水柜平台",
+   "name": "煤水车走板",
    "pressure_modifiers": {
     "p_tunnel_rockfall_blockage_collision": "前方八百米弯道处塌方巨石堆已进入机车前大灯照射视野，撞击倒计时凄厉迫近。"
    },
@@ -1593,7 +1593,7 @@
     "loc_coal_tender_gangway_platform"
    ],
    "id": "loc_engine_front_boiler_walkway",
-   "name": "机车车头两侧前伸检修舷台",
+   "name": "车头舷台",
    "pressure_modifiers": {
     "p_carbon_monoxide_asphyxiation_peak": "隧道内密闭煤烟无法排出，一氧化碳与二氧化硫浓度突破急性致死危险阈值。"
    },

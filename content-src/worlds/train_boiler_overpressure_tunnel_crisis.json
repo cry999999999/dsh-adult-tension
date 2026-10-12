@@ -291,7 +291,7 @@
     },
     {
       "id": "loc_coal_tender_gangway_platform",
-      "name": "煤水车连接贯通走板与水柜平台",
+      "name": "煤水车走板",
       "detail": "连接机车与后部巨大煤水车的铸铁铰接浮动踏板，脚下是高速飞旋的重载车轮与喷溅火花的铁轨，上方堆积着四十吨优质精煤，狂暴的隧道回风夹杂着一氧化碳煤烟呼啸掠过。",
       "privacy": "public",
       "visibility": "clear",
@@ -319,7 +319,7 @@
     },
     {
       "id": "loc_engine_front_boiler_walkway",
-      "name": "机车车头两侧前伸检修舷台",
+      "name": "车头舷台",
       "detail": "悬挂在滚烫锅炉外壳两侧的狭窄花纹钢走台，宽度仅容一人侧身通行，外侧是幽深死寂的隧道岩壁，近在咫尺的岩石裂缝不断有碎石因狂暴风压脱落砸在走台上。",
       "privacy": "private",
       "visibility": "dim",

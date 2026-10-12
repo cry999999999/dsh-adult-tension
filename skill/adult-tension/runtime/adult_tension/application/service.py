@@ -241,6 +241,17 @@ def seed_stream():
         yield 1 + int.from_bytes(os.urandom(4), "big") % 999999
 
 
+def _unknown_excluded_tags(ctx, tags):
+    """An unknown tag would exclude nothing, so the player's "不要 X" would silently fail."""
+    labels = {t["id"]: t["label"] for t in ctx.content().tags()["tags"] if t["id"] != "custom"}
+    hint = "可用：" + "、".join("%s（%s）" % (tid, label) for tid, label in labels.items())
+    return [
+        detail("$.excludes.content_tags[%d]" % i, "未知内容标签：%s" % tag, hint, INVALID_INPUT)
+        for i, tag in enumerate(tags)
+        if tag not in labels
+    ]
+
+
 def new_game(ctx, payload):
     from ..domain import opening
 
@@ -256,6 +267,7 @@ def new_game(ctx, payload):
             problems.append(detail("$.replay", "自定义世界没有开局记录，不能“重开 N 号”", "带同一个 custom_world 与 seed 重新开局即可复现", INVALID_INPUT))
         if payload["locks"].get("world_id") or payload["excludes"].get("world_ids"):
             problems.append(detail("$.locks.world_id", "自定义世界不和现有世界一起锁定或排除", "去掉 world_id 的锁定与排除", INVALID_INPUT))
+    problems.extend(_unknown_excluded_tags(ctx, payload["excludes"].get("content_tags") or []))
     if problems:
         raise AppError(INVALID_INPUT, problems[0]["reason"], problems)
     conditions = opening.normalize_conditions(payload)

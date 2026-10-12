@@ -231,6 +231,24 @@ class NewGameCommandTest(unittest.TestCase):
                 service.new_game(ctx, {"request_id": "req_nomode_1", "include_drafts": True})
             self.assertEqual(caught.exception.details[0]["path"], "$.mode")
 
+    def test_unknown_excluded_tags_are_rejected_with_the_tag_list(self):
+        # A misspelt tag excludes nothing; the player's "不要 X" must not fail silently.
+        with app() as ctx:
+            with self.assertRaises(AppError) as caught:
+                service.new_game(ctx, {"request_id": "req_badtag_1", "mode": "daily", "excludes": {"content_tags": ["workplace", "office_job"]}})
+            err = caught.exception
+            self.assertEqual(err.code, "INVALID_INPUT")
+            self.assertEqual([d["path"] for d in err.details], ["$.excludes.content_tags[1]"])
+            for tag in STORE.tags()["tags"]:
+                if tag["id"] != "custom":
+                    self.assertIn("%s（%s）" % (tag["id"], tag["label"]), err.details[0]["hint"])
+            with self.assertRaises(AppError):
+                service.new_game(ctx, {"request_id": "req_badtag_2", "mode": "daily", "excludes": {"content_tags": ["custom"]}})
+            opened = service.new_game(ctx, {"request_id": "req_badtag_3", "mode": "daily", "excludes": {"content_tags": ["workplace"]}})
+            world_id = opened["opening"]["signature"].split("|")[0]
+            entry = next(w for w in STORE.index()["worlds"] if w["id"] == world_id)
+            self.assertNotIn("workplace", entry["content_tags"])
+
     def test_replay_restores_the_recorded_conditions(self):
         with app() as ctx:
             ids = Ids()

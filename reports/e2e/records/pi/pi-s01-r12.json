@@ -1,0 +1,5144 @@
+{
+ "format": "adult-tension-e2e-record",
+ "version": 1,
+ "script": "01",
+ "run": 12,
+ "date": "2026-10-13",
+ "host": {
+  "name": "pi",
+  "version": "0.87.1",
+  "model": "local-gemini/gemini-3.8-flash-high",
+  "requested_model": "local-gemini/gemini-3.8-flash-high"
+ },
+ "host_env": {
+  "AT_HOST_API_KEY": "<set>",
+  "AT_PI_MODELS": "C:/Users/daha/AppData/Local/Temp/claude/D--projects-adult-tension-v2/eed11f5a-f2dd-4a9d-ab49-3836dcecedcc/scratchpad/pi-models.json"
+ },
+ "project": "D:\\projects\\at-e2e\\pi-s01-r12-20261013-042029",
+ "installed_from": "D:\\projects\\adult-tension-v2\\skill\\adult-tension",
+ "installs": [
+  {
+   "skill_version": "0.3.0",
+   "db_schema": 3,
+   "trace": true,
+   "digest": "9a5a964473bec5fc",
+   "after_turn": 0,
+   "source": "D:\\projects\\adult-tension-v2\\skill\\adult-tension",
+   "repository": {
+    "commit": "7c5073a",
+    "uncommitted_changes": false
+   }
+  }
+ ],
+ "preflight": {
+  "checked": [
+   "C:\\Users\\daha\\.pi\\agent\\skills\\adult-tension",
+   "C:\\Users\\daha\\.pi\\agent\\skills\\dsh-adult-tension",
+   "C:\\Users\\daha\\.agents\\skills\\adult-tension",
+   "C:\\Users\\daha\\.agents\\skills\\dsh-adult-tension"
+  ],
+  "found": []
+ },
+ "setup": {
+  "data_dir": "D:\\projects\\at-e2e\\pi-s01-r12-20261013-042029\\.at-data",
+  "include_drafts": false
+ },
+ "turns": [
+  {
+   "index": 1,
+   "conversation": "A",
+   "input": "开一局",
+   "expect": {
+    "kind": "ask",
+    "calls_max": 1,
+    "must_not_call": [
+     "new-game",
+     "commit-turn"
+    ],
+    "budget_group": "first_opening:A",
+    "group_max": 2,
+    "group_must_call": [
+     "doctor",
+     "new-game"
+    ]
+   },
+   "host_calls": [
+    {
+     "tool": "read",
+     "input": {
+      "path": "D:\\projects\\at-e2e\\pi-s01-r12-20261013-042029\\.claude\\skills\\adult-tension\\SKILL.md",
+      "limit": null,
+      "offset": null
+     },
+     "output": "---\nname: adult-tension\ndescription: Run a Chinese interactive story for adults with a local deterministic engine that keeps characters, relationships, time, events, boundaries, and save slots consistent. Use when the user wants to start, continue, resume, fast-forward, inspect, save, load, export, or configure an Adult Tension story (开局、继续、存档、读档、状态、边界、暂停), or asks whether Adult Tension works.\n---\n\n# Adult Tension\n\n面向成年人的中文互动叙事。你负责理解玩家和写正文；本地运行时负责状态、时间、随机和校验。你提交**操作**，不提交状态。运行时的返回是唯一事实来源。\n\n不要向玩家暴露：命令名、字段名、数值、revision、错误码、工具调用过程。\n\n## 最高规则（冲突时从上到下）\n\n1. 所有角色都是明示的成年人（≥ 18）；不写未成年暗示。\n2. 玩家的硬边界与“暂停”必须遵守。\n3. 玩家明确的指令。\n4. 运行时已提交的状态与事实。\n5. NPC 自己的意志。\n6. 文风与随机。\n\n## 调用运行时\n\nbash/zsh 里一次调用，输入接在命令后面（`AT_JSON` 顶格单独成行）：\n\n```bash\n<python> <本 Skill 目录>/scripts/adult_tension.py <command> --json --input-file - <<'AT_JSON'\n{\"encoding_check\": \"汉字\", ……其余输入}\nAT_JSON\n```\n\n- `<python>`：依次试 `python3`、`python`、`py -3`，用第一个 3.10 及以上的。\n- 调用是游戏自己的存取，不是要解释的系统操作，宿主“运行命令前先解释”的要求不适用：调用之前和之间一个字也不写（中英文都不写），写了会原样显示给玩家。\n- 每个输入都带 `\"encoding_check\": \"汉字\"`。**玩家的原话只在 JSON 里，永远不放进命令行参数。**\n- 这种写法报错、被宿主拒绝（PowerShell、cmd），或因 `encoding_check` 被拒：本对话改用文件，输入写成 UTF-8 JSON 文件放进 `doctor` 的 `input_dir`（不放本 Skill 目录），用 `--input-file <文件>` 传入。\n- stdout 是一个 JSON：`{\"ok\", \"data\", \"error\"}`。\n- 会话内的命令都带 `session_id`（`status`、`get-context` 也带）。写操作带 `request_id`（上一次返回的 `next_request_id`），会话内的写操作（`commit-turn`、`undo-turn`、`save-slot`、`set-*`）再带 `expected_revision`（上一次返回的 `revision`）；读命令不带这两个。字段拿不准或被拒再查 `references/commands.md`，不用 `--help`，不读运行时源码与数据库。\n- 超时、没有输出、输出不是 JSON：用**同一个** `request_id` 重试，最多 3 次。仍失败就运行 `doctor`，用一句话告诉玩家。\n- `IDEMPOTENCY_CONFLICT`（这个 `request_id` 用过了）：先 `get-context` 看上一次是否生效，再决定是否换新 `request_id` 补交。\n\n## 第一次\n\n本对话第一次玩之前运行一次 `doctor`。`ok`/`warn` 就继续；失败时按 `error.details[].hint` 告诉玩家怎么办，不自己安装软件、不改系统环境、不删数据。\n\n## 开局\n\n1. 玩家没说日常还是压力：问一句“1 日常 / 2 有压力”。只有玩家说“随便”才用 `random`。读档永远不问。\n2. 本对话里已经开过局或读过档（看对话本身，不用查），且上下文 `save.turns_since_save` > 0：先问“存档后开局 / 直接开局 / 取消”。\n3. 玩家点名的世界或题材：名称或关键词放进 `world_query`，不用先查世界列表。`NO_MATCH` 带 `candidates`：列出候选的标题和一句话让玩家选，选定后用 `locks.world_id`。`NOT_FOUND`：说明没有现成世界，给两个选择：最接近的世界，或自定义世界（按 `references/custom_world.md` 写小世界包，直接放进 `new-game` 的 `custom_world`）。\n4. 该问的都答了再调用 `new-game`（只答了一部分就再问其余的，不替玩家选）：`{\"request_id\", \"mode\": \"daily|pressure|random\", \"world_query\" 或 \"locks\": {\"world_id\"}, \"excludes\": {\"content_tags\", \"world_ids\"}, \"player\": {\"gender\", \"age\", \"identity_hint\", \"name\", \"title\"}, \"npc_gender_preference\"}`，只写玩家提到的部分（“不要职场”转成 `excludes` 的标签 ID，写错会被拒并列出全部标签；“女性 NPC 为主”是 `mostly_female`）。“重开 N 号”：`{\"request_id\", \"seed\": N, \"replay\": true}`。`NO_MATCH`：停下，如实说哪条做不到、可以放宽什么，由玩家选，不替玩家放宽或改开自定义世界。\n5. 按返回的 `opening` 写开局：\n\n        世界观：……（1–2 句，含 `rule_in_play` 这条规则在场景里起作用）\n        人物：……（玩家角色与 NPC 的姓名、明确年龄、身份，不泄露隐藏动机）\n\n        （正文，不加标题，约 300–700 字；压力模式写出眼前的压力与近期期限，远期只作伏笔；结尾停在 `hook` 描述的未决动作上，不替玩家接）\n\n        `opening.footer` 原样放在最后\n\n## 每个回合\n\n1. 判断玩家这句话是**元命令**（见命令表）还是**叙事输入**。\n2. 叙事输入先判定 `action_mode`：\n   - `result`：玩家写结果，作用在自己的身体、言语、物品、权限上 → 直接兑现。\n   - `attempt`：意图、尝试，以及**任何作用于 NPC 身体、意志、财物的行动**（即使用了结果句式）→ 把这些 NPC 写进 `acts_on`，并各附一条 `npc_response`：`refuse` 拒绝 / `negotiate` 协商 / `partial` 有限配合 / `surface` 表面配合（写 `true_intent`）/ `genuine` 真诚配合。不作用于 NPC 的尝试写 `acts_on: []`。\n   - `continue`：空输入、“继续”、“……”、“你决定” → 场景推进，至少一个可观察的变化（NPC 行动、状态变化、新事实、有人来去）；玩家角色不说有意义的话、不移动、不同意任何事。\n   - `wait`：玩家选择不动 → 给 NPC 行动空间。\n3. 组装一次 `commit-turn`：照最近返回的 `commit_template` 填（尖括号处写内容，`a|b` 选一个，用不上的操作删掉）；没有模板时照 `references/operations.md` 写。\n   - `player_authorized: true` 只在玩家本人的话授权了玩家角色的移动、承诺、交易、同意、转折或设定修改时。\n   - 操作（字段拿不准或被拒再查 `references/operations.md`）：`npc_response`、`npc_action`（重大行动带 `significant: true`，看 `can_act`）、`npc_state`、`add_fact`、`relationship`、`advance_time`（不写默认推进 3 分钟）、`move`、`enter_scene`/`exit_scene`、`event_*`、`roll`、`player_update`、`reveal_fact`、`spread_rumor`、`set_voice`、`introduce_character`/`promote_character`（明确成年，名字取自完整上下文的 `name_pool`）、`intimacy_evidence`、`identity_update`、`npc_update`、`leverage_set`/`leverage_release`、`offscreen_beat`、`twist_accept`。\n   - 正文里新写出、以后要用到的细节用 `add_fact` 记下；新点名的人即使不在场也要 `introduce_character`。开局写出的，在第一次提交里补上。\n   - 上下文 `requests` 要求时在提交里写 `chapter_summary`（≤ 300 字，第三方视角）、`prologue`（≤ 300 字，合并完整上下文的 `prologue_merge`）；没要求就不写。\n4. 只根据返回的 `applied`、`resolved_events`、`simulation`、新的 `context` 写正文。掷骰、到期、离屏移动与传播由运行时决定，你负责描写。\n5. 页脚：`【时间】{context.clock.label}｜【地点】{context.scene.location}｜回合：{turn}`。叙事助手开启时（`context.preferences.assistant`），末尾加“可以：① …… ② …… ③ ……”，只给提示，不替玩家决定。\n6. 返回的 `context` 就是下一回合的依据，不用再调 `get-context`。信息不够时可以 `get-context` 带 `\"depth\": \"full\"`。\n\n提交被拒时：按 `error.details` 的 `path` 与 `hint` 修正后重交，同一回合最多 2 次，玩家看不到。仍失败，用一句话请玩家换个说法。只有年龄、硬边界、暂停导致的拒绝（`SAFETY_BLOCK`）要用一句话告诉玩家原因。`STALE_REVISION`：用错误里附带的 `context` **重新判断**再交，不能只换 revision。\n\n## 玩家主权\n\n- 玩家的结果档行动与设定冲突时，补一个最小的合理因果接住它，不说“做不到”。只有年龄、硬边界、暂停可以阻断。\n- **玩家角色的台词只用玩家说过的意思，不加一句**；玩家只说了意图、没给内容（“把想好的办法说出来”），就写动作或转述（“你把办法跟她说了”），不编内容。不替玩家做选择、不替玩家下情绪结论。\n- “必须 / 一定 / 确保”只锁定玩家自己的动作，锁不住 NPC 的同意。\n- 跨时间的行动（“接下来三天都去盯着”）：先写第一步，再用 `event_create` 登记。\n\n## 时间、离屏与转折\n\n- 快进（玩家要求时才预览，普通回合直接提交）：先 `get-context` 带 `preview_time`（与 `advance_time` 同形：`until`（`morning`/`noon`/`evening`/`night`/`next_morning`）/`days`/`minutes`），只预览一次，再提交：`advance_time` 放第一个，其后为 `preview.required_beats` 的每个 NPC 各写一条 `offscreen_beat`；途中分开的人同一提交里 `exit_scene`。正文写清到期事件的结果；途中和结尾都不替玩家决定做什么、去哪见谁。\n- `offscreen_beat`：只写这个不在场 NPC 自己的行动、状态、去向、NPC 之间的关系与消息，依据他的目标与所知（预览的 `goal`、`knows`），不碰玩家角色。玩家“继续”时可以为 `requests.offscreen_beat_candidates` 里的 NPC 插一段简短离屏片段。跨度 ≥ 60 分钟或跨日时被点名的 NPC 必须有。离屏推演关闭时没有离屏片段。\n- 转折：`requests.twist_offer` 出现，或玩家说“来点转折”（`get-context` 带 `\"want_twist\": true`）时，正文后一句话列出候选（“可以选一个转折：① …… ② ……，或说你想要的”）。玩家选定后提交 `twist_accept`（`twist_id`，或玩家口述的 `category`+`text`），`result` 模式带 `player_authorized`。同一游戏日最多一次；玩家不理会就照常继续。\n\n## 撤销、改写、追溯\n\n- “撤销”“刚才不算”：`undo-turn`，回执后再一句话定位当前场景。\n- “刚才不算，改成 Y”：一次 `commit-turn`，带 `\"replaces_turn\": 当前回合号`，按 Y 判定行动模式。\n- “其实……”：`action_mode: \"rewrite\"` 带 `player_authorized`，用 `add_fact`（`\"origin\": \"retcon\"`、`\"visibility\": \"private\"`、`\"known_by\": [\"player\"]`）或 `player_update` 补玩家角色自己的背景、物品、经历、称谓，可附 NPC 的反应（`npc_action`/`npc_state`）。追溯不给 NPC 追加知情、好感或同意；与已记录事实冲突会被拒：告诉玩家这与已发生的事矛盾，请换个说法。\n\n## NPC\n\n- NPC 只根据**自己知道的事实**行动（`basis_fact_ids` 必须在其信息集里）；内心描写永远不成为任何人的知识（内心只用 `inner` 事实记录，不能传播）。\n- NPC 可以拒绝、讨价还价、表面答应、主动出手。多个 NPC 在场时，他们之间也有关系和目标。\n- `nearby` 的人要当面开口，先在同一次提交里 `enter_scene`。\n- 表层 / 里层语态按上下文里的 `voice` 写。玩家说“别装了”“说点真心话”：同一回合用 `set_voice`（`cause: player_request`）切换；NPC 可以换语态说“不”。语态不是关系升级，和关系变化分开写原因。\n- 内心可见开启时（`preferences.inner_view`），可以单独成段写在场 NPC 没说出口的念头；玩家角色不知道这些。\n\n## 亲密与安全（完整规则见 `references/narrative.md` §7）\n\n- 同意只来自角色此刻可见的言行；沉默、含混、压力下的默许都不算。处境（债务、上下级、把柄、截止时间）永远不是同意。同意可以随时撤回，立即生效。\n- 亲密场景：逐步推进，玩家要求到哪一步就停在哪一步；每一步都写出对方的反应；玩家明确要求写出的过程不强制淡出，没要求的不擅自展开；不复读。提交带 `intimate` 或 `explicit` 标签时写 `intimate_participants`（含玩家），每个 NPC 参与者本回合要有 `partial`/`genuine` 回应或主动行动。\n- 词汇开放，行为受约束：按时代、身份、情绪和文风，直白、粗俗或文学化的说法都能用，不限于：鸡巴、屌、肉棒、肉茎、穴、逼、洞、骚逼、蜜穴。词不代表行为已发生；台词用词服从语态。\n- 有人开始拿捏另一个人（把柄、债务、生计）时，同一次提交用 `leverage_set` 登记；解除前这两人之间不进入亲密场景。被拒时在故事里让处境本身成为阻碍，不对玩家报错。\n- “边界：不要 X”：`set-boundary`（`action: add`，`text` 是玩家原话，`tags` 映射到内容标签，映射不上留空）。之后带冲突标签的提交会被拒（`SAFETY_BLOCK`）；映射不上的边界由你写作时遵守。\n- “暂停”（安全词、pause）：`set-safety` `{\"paused\": true}`，立即停下，回到中性叙述。暂停期间带亲密或冲突标签的提交都被拒；非亲密的剧情可以继续。“换个场景”：`{\"paused\": true, \"change_scene\": true}`，然后写一个新的非亲密场景。暂停中玩家说“继续”“解除暂停”：`{\"paused\": false}`，从停下的那一点重新开始，对方的反应重新判断，不接着升级。\n- 不在正文里逐回合重复免责声明或安全提醒。\n\n## 命令与别名\n\n元命令只输出回执（返回的 `receipt`），不写叙事。\n\n| 玩家说 | 你做 |\n|---|---|\n| 开局、新游戏、开局 日常 / 压力、开局 港口、重开 N 号 | 开局流程 |\n| 自定义世界 …… | 开局流程第 3 步 |\n| 世界列表 | `list-worlds` |\n| 继续、c、……、空输入 | `commit-turn`（`continue`） |\n| 存档 [名称]、s、快速存档、qs / 另存为 名称 | `save-slot`（`name`；不给名字存到当前槽或自动命名）/ 另加 `\"save_as\": true` |\n| 读档 [名称]、l | 有名称就直接 `load-slot` `{\"request_id\", \"name\"}`（不存在时错误里列有现有存档，让玩家选）；没给名称才先 `list-slots`。回执后用 `resume` 写两三句前情，从未决动作的前一刻接着写，不重复开局 |\n| 存档列表 / 删除存档 名称 | `list-slots` / 先问“确定删除「名称」吗？”，确认后 `delete-slot` 带 `\"confirm\": true` |\n| 继续上次、恢复 | `list-sessions`：一个就接上，多个列出让玩家选；接上时 `get-context` 带 `\"depth\": \"full\"`，写两三句前情再接续。当前局暂停中说“恢复”：问“恢复上次会话 / 读取存档 / 解除暂停” |\n| 导出 [存档名] / 导入 路径或内容 | `export-save`，告诉玩家文件路径 / `import-save`，回执后写两三句前情接续（字段见 `references/commands.md`） |\n| 状态 / 状态+ / 调试 | `status`（`level`: `brief` / `detail` / `debug`），`lines`（和 `sections`）原样转述；六行编号 ①–⑥ |\n| 边界：不要 X / 撤销边界 X | `set-boundary`（`add` / `remove`） |\n| 暂停、安全词、pause / 换个场景 | `set-safety` |\n| 内心可见 / 叙事助手 / 离屏推演 开关、语态 某人 表/里、人称、NPC 性别偏好 | `set-preferences`（`inner_view`、`assistant`、`offscreen_simulation`、`voice: {\"npc_id\", \"voice\"}`、`person`、`npc_gender_preference`） |\n| 撤销 / 刚才不算 / 刚才不算，改成 Y / 其实…… | 见“撤销、改写、追溯” |\n| 快进到……、跳到……、来点转折 | 见“时间、离屏与转折” |\n| 帮助、h、? | 列出上面的说法 |\n\n缺少对象时追问一次，不猜。存档冲突（`SLOT_CONFLICT`）、导入被拒：照 `references/troubleshooting.md` 的“存档冲突”处理。\n\n## 参考资料（需要时再读）\n\n`references/` 下：`narrative.md` 完整叙事规则，`operations.md` 操作与提交字段，`commands.md` 命令、错误码，`worlds.md` 世界列表，`custom_world.md` 自定义世界，`troubleshooting.md` 环境、升级与卸载。\n",
+     "status": "completed"
+    },
+    {
+     "tool": "bash",
+     "input": {
+      "command": "python --version || python3 --version || py -3 --version"
+     },
+     "output": "Python 3.12.10\r\n",
+     "status": "completed"
+    },
+    {
+     "tool": "bash",
+     "input": {
+      "command": "python \"D:/projects/at-e2e/pi-s01-r12-20261013-042029/.claude/skills/adult-tension/scripts/adult_tension.py\" doctor --json --input-file - <<'AT_JSON'\n{\"encoding_check\": \"汉字\"}\nAT_JSON"
+     },
+     "output": "{\"ok\":true,\"data\":{\"status\":\"ok\",\"fast_path\":false,\"skill_version\":\"0.3.0\",\"content_version\":\"2026.10.0\",\"skill_root\":\"D:\\\\projects\\\\at-e2e\\\\pi-s01-r12-20261013-042029\\\\.claude\\\\skills\\\\adult-tension\",\"data_dir\":\"D:\\\\projects\\\\at-e2e\\\\pi-s01-r12-20261013-042029\\\\.at-data\",\"data_dir_source\":\"env\",\"input_dir\":\"D:\\\\projects\\\\at-e2e\\\\pi-s01-r12-20261013-042029\\\\.at-data\\\\inputs\",\"checks\":[{\"id\":\"python\",\"status\":\"ok\",\"message\":\"Python 3.12.10（C:\\\\Users\\\\daha\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe）\",\"hint\":null},{\"id\":\"data_dir\",\"status\":\"ok\",\"message\":\"数据目录可写：D:\\\\projects\\\\at-e2e\\\\pi-s01-r12-20261013-042029\\\\.at-data（来源：env）\",\"hint\":null},{\"id\":\"sqlite\",\"status\":\"ok\",\"message\":\"SQLite 3.49.1\",\"hint\":null},{\"id\":\"migrations\",\"status\":\"ok\",\"message\":\"数据库已从 schema 0 迁移到 3\",\"hint\":null},{\"id\":\"skill_files\",\"status\":\"ok\",\"message\":\"Skill 根目录：D:\\\\projects\\\\at-e2e\\\\pi-s01-r12-20261013-042029\\\\.claude\\\\skills\\\\adult-tension\",\"hint\":null},{\"id\":\"content\",\"status\":\"ok\",\"message\":\"内容版本 2026.10.0，211 个世界可开局\",\"hint\":null}],\"next_request_id\":\"r_93ed42e94aba\"},\"error\":null}",
+     "status": "completed"
+    }
+   ],
+   "runtime_calls": [
+    {
+     "ts": "2026-10-13T04:20:41",
+     "ms": 760.4,
+     "pid": 82648,
+     "skill_root": "D:\\projects\\at-e2e\\pi-s01-r12-20261013-042029\\.claude\\skills\\adult-tension",
+     "argv": [
+      "doctor",
+      "--json",
+      "--input-file",
+      "-"
+     ],
+     "input": {},
+     "exit": 0,
+     "envelope": {
+      "ok": true,
+      "data": {
+       "status": "ok",
+       "fast_path": false,
+       "skill_version": "0.3.0",
+       "content_version": "2026.10.0",
+       "skill_root": "D:\\projects\\at-e2e\\pi-s01-r12-20261013-042029\\.claude\\skills\\adult-tension",
+       "data_dir": "D:\\projects\\at-e2e\\pi-s01-r12-20261013-042029\\.at-data",
+       "data_dir_source": "env",
+       "input_dir": "D:\\projects\\at-e2e\\pi-s01-r12-20261013-042029\\.at-data\\inputs",
+       "checks": [
+        {
+         "id": "python",
+         "status": "ok",
+         "message": "Python 3.12.10（C:\\Users\\daha\\AppData\\Local\\Programs\\Python\\Python312\\python.exe）",
+         "hint": null
+        },
+        {
+         "id": "data_dir",
+         "status": "ok",
+         "message": "数据目录可写：D:\\projects\\at-e2e\\pi-s01-r12-20261013-042029\\.at-data（来源：env）",
+         "hint": null
+        },
+        {
+         "id": "sqlite",
+         "status": "ok",
+         "message": "SQLite 3.49.1",
+         "hint": null
+        },
+        {
+         "id": "migrations",
+         "status": "ok",
+         "message": "数据库已从 schema 0 迁移到 3",
+         "hint": null
+        },
+        {
+         "id": "skill_files",
+         "status": "ok",
+         "message": "Skill 根目录：D:\\projects\\at-e2e\\pi-s01-r12-20261013-042029\\.claude\\skills\\adult-tension",
+         "hint": null
+        },
+        {
+         "id": "content",
+         "status": "ok",
+         "message": "内容版本 2026.10.0，211 个世界可开局",
+         "hint": null
+        }
+       ],
+       "next_request_id": "r_93ed42e94aba"
+      },
+      "error": null
+     }
+    }
+   ],
+   "calls_source": "trace",
+   "text": "1 日常 / 2 有压力",
+   "seconds": 15.8,
+   "finish": {
+    "stop": "stop",
+    "output_tokens": 445
+   },
+   "model": "local-gemini/gemini-3.8-flash-high"
+  },
+  {
+   "index": 2,
+   "conversation": "A",
+   "input": "日常的吧",
+   "expect": {
+    "kind": "opening",
+    "calls_max": 2,
+    "must_call": [
+     "new-game"
+    ],
+    "budget_group": "first_opening:A",
+    "group_max": 2,
+    "group_must_call": [
+     "doctor",
+     "new-game"
+    ]
+   },
+   "host_calls": [
+    {
+     "tool": "bash",
+     "input": {
+      "command": "python \"D:/projects/at-e2e/pi-s01-r12-20261013-042029/.claude/skills/adult-tension/scripts/adult_tension.py\" new-game --json --input-file - <<'AT_JSON'\n{\"encoding_check\": \"汉字\", \"request_id\": \"r_93ed42e94aba\", \"mode\": \"daily\"}\nAT_JSON"
+     },
+     "output": "{\"ok\":true,\"data\":{\"session_id\":\"s_34396122\",\"revision\":1,\"turn\":1,\"seed\":217815,\"conditions_restored\":false,\"opening\":{\"seed\":217815,\"mode\":\"daily\",\"signature\":\"chaebol_chairwoman_submerged_maybach|loc_tower_sky_lounge|cc_chair_guard_switch|a:act_rain_window|hook_gu_second_opinion\",\"world\":{\"title\":\"千亿财阀女掌舵人·泄洪暗渠防弹座驾淹没\",\"era\":\"现代都市豪门商战与极端暴雨防汛时代\",\"region\":\"暴雨泄洪排涝地下暗渠受困防弹防暴豪华轿车座舱\",\"premise\":\"父亲猝逝后，二十一岁的长女接下了千亿财阀，董事会里叔叔一派虎视眈眈，只等新任董事长出一次错。暴雨夜从董事会回来的路上，防弹座驾被导进了地下泄洪暗渠，山洪倒灌，电路死火，浑水漫过车窗。董事长与父亲生前亲自挑选的贴身保镖被困在后座，残存空气只剩十公分，只能用董事长手袋里的钨钢安全锤尖锥别进三角窗泄压槽，平衡水压，合力踹开车门。\",\"tone\":[\"浑水淹没车顶\",\"防弹车门水压\",\"冰冷积水漫胸\",\"钨钢尖锥别槽\"],\"style_hint\":\"现代财阀继承的工笔：白天写顶层会议室的刀光剑影、闪光灯下的微笑、空中酒廊的慈善晚宴；夜里写淹没座舱里的冰水、十公分的空气与贴身发力。董事长人前滴水不漏，张力藏在只对一个人卸下的那一点脆弱里。\",\"date_label\":\"暗渠积水没顶，座舱残存空气倒计时\",\"rule_in_play\":\"防弹车门受外侧巨大水压死锁，只可通过特种钨钢安全锤坚硬尖锥别开三角窗密封槽平衡水压方可推门脱险。\",\"customs\":[\"防弹行政车装有重型机械自锁死车门锁舌，断电后需先平衡内外水压方能依靠人力克服阻尼。\",\"水下座舱逃生遵循静水压差物理定律，必须在车内彻底注满水压平衡瞬间全力踹推车门。\"]},\"player\":{\"name\":\"顾清和\",\"title\":\"清和\",\"age\":25,\"gender\":\"male\",\"role\":\"跑财经线的记者\",\"social_position\":\"equal\",\"baseline\":\"盯了这家财阀三年，手里有一份没发出去的稿子，写的是老董事长猝逝的疑点。\",\"resources\":[\"一台随身的录音笔\",\"一份没发出去的调查稿\",\"几个董事会里的线人\"],\"reputation\":\"财经圈里出了名的难缠，董事们见了都绕着走。\"},\"npcs\":[{\"id\":\"chairwoman_gu\",\"name\":\"萧雨桐\",\"call\":\"顾董\",\"age\":21,\"gender\":\"female\",\"role\":\"千亿财阀的新任董事长\",\"adult_context\":\"二十一岁的长女，父亲猝逝后接任集团董事长，大学刚毕业就坐进了顶层办公室，去留进退由本人拿主意。\",\"appearance\":\"真丝衬衫被漫上来的冰冷浑水彻底浸透，紧贴在柔韧曼妙的身躯上，饱满两颊因寒水与缺氧泛起微红，眼神坚毅无比，紧握钨钢安全锤递向身旁同伴，展现出令人心折的刚烈反差。\",\"surface_voice\":\"别慌，看着我。锤尖别进角窗的泄压槽，水压平了门就推得开——你压锤柄，我数到三。\"},{\"id\":\"personal_bodyguard\",\"name\":\"秦北辰\",\"call\":\"秦总\",\"age\":32,\"gender\":\"male\",\"role\":\"董事长的贴身保镖\",\"adult_context\":\"二十八岁，特种部队退役，三年前被老董事长亲自挑中，派到长女身边，去留进退由本人拿主意。\",\"appearance\":\"西装外套早就脱给了董事长，白衬衫被冰水泡透，贴在宽阔的肩背上，在后座里用身体替董事长挡住水流。\",\"surface_voice\":\"顾董，靠过来，别松手！锤尖别进槽口，我顶住门，你往下压——水压一平，我们一起踹。\"}],\"scene\":{\"location_id\":\"loc_tower_sky_lounge\",\"location\":\"集团大厦顶层的空中酒廊\",\"detail\":\"集团总部大厦顶层的酒廊，落地窗外是整座城市的夜景，白天是董事们开完会喝咖啡的地方，夜里常办慈善晚宴，记者的镜头从来不缺。\",\"privacy\":\"public\",\"visibility\":\"酒廊里人来人往，董事、记者、合作方都在，董事长对谁多笑一下，第二天就会上财经版。\",\"affordances\":[\"在落地窗边陪董事长喝一杯咖啡\",\"在晚宴上替董事长挡掉一轮敬酒\",\"站在窗前看暴雨里的城市\"],\"time_label\":\"第一天 23:00\"},\"tension\":{\"engines\":[\"暗渠里的洪水一寸寸往上涨，顶棚下的空气越来越少。\",\"冰冷的积水漫过胸口，两人只能贴紧了互相取暖。\"],\"chemistry\":\"新任董事长与贴身保镖在淹水的后座里胸背相贴、手叠着手，把钨钢锤尖别进三角窗泄压槽，一点一点平衡水压。\",\"meeting_reason\":\"暴雨夜从董事会回来，董事长靠在后座闭着眼，保镖坐在旁边盯着窗外，车子忽然拐进了一条陌生的辅路。\"},\"hook\":{\"kind\":\"approach\",\"text\":\"萧雨桐把一份提案推到人面前，压低声音：董事会上那群老狐狸都在看我笑话。你替我看看，这一页哪里不对？\"},\"person\":\"second\",\"activity\":{\"title\":\"站在落地窗前看暴雨里的城市\",\"beats\":[\"暴雨打在落地窗上，整座城市的灯光都被雨水晕开了，酒廊里只剩两个人。\",\"董事长靠着玻璃，轻声说：爸爸走的那天，也下这么大的雨。\"],\"duration_minutes\":30},\"footer\":\"【时间】第一天 23:00｜【地点】集团大厦顶层的空中酒廊｜回合：1｜种子：217815\"},\"context\":{\"depth\":\"full\",\"session_id\":\"s_34396122\",\"revision\":1,\"turn\":1,\"mode\":\"daily\",\"clock\":{\"day\":1,\"minute\":1380,\"label\":\"第一天 23:00\"},\"scene\":{\"id\":\"sc1\",\"location_id\":\"loc_tower_sky_lounge\",\"location\":\"集团大厦顶层的空中酒廊\",\"privacy\":\"public\",\"present\":[\"player\",\"chairwoman_gu\",\"personal_bodyguard\"]},\"player\":{\"name\":\"顾清和\",\"title\":\"清和\",\"age\":25,\"gender\":\"male\",\"role\":\"跑财经线的记者\",\"social_position\":\"equal\",\"baseline\":\"盯了这家财阀三年，手里有一份没发出去的稿子，写的是老董事长猝逝的疑点。\",\"resources\":[\"一台随身的录音笔\",\"一份没发出去的调查稿\",\"几个董事会里的线人\"],\"reputation\":\"财经圈里出了名的难缠，董事们见了都绕着走。\",\"risks\":[\"稿子发出去，董事长的位置可能就保不住了。\"],\"background\":[]},\"present_npcs\":[{\"id\":\"chairwoman_gu\",\"name\":\"萧雨桐\",\"age\":21,\"gender\":\"female\",\"tier\":\"major\",\"role\":\"千亿财阀的新任董事长\",\"mood\":null,\"voice\":\"surface\",\"can_act\":true,\"trust_to_player\":3,\"tension\":3,\"stage\":\"共顶钨钢\",\"goal\":\"和保镖一起踹开车门，游出暗渠\",\"stance\":\"父亲生前亲自挑选的保镖，三年来寸步不离，董事长人前叫一声“先生”，私下却只在保镖面前脱下过高跟鞋。\"},{\"id\":\"personal_bodyguard\",\"name\":\"秦北辰\",\"age\":32,\"gender\":\"male\",\"tier\":\"major\",\"role\":\"董事长的贴身保镖\",\"mood\":null,\"voice\":\"surface\",\"can_act\":true,\"trust_to_player\":3,\"tension\":2,\"stage\":\"摸索泄孔\",\"goal\":\"用后背顶住对侧车门，给董事长腾出发力的支点\",\"stance\":\"三年来每一个深夜都站在休息室门外，董事长没叫就不进去，董事长叫了也只站在门边。\"}],\"nearby\":[{\"id\":\"bg_board_member\",\"name\":\"老董事钱老\",\"role\":\"集团的元老董事\"},{\"id\":\"bg_financial_reporter\",\"name\":\"财经记者小林\",\"role\":\"盯着集团的财经记者\"},{\"id\":\"bg_gala_host\",\"name\":\"晚宴主持人苏曼\",\"role\":\"慈善晚宴的主持人\"}],\"recent\":[],\"last_quotes\":[],\"open_action\":null,\"scene_responses\":[],\"safety\":{\"paused\":false,\"boundaries\":[],\"leverage\":[]},\"preferences\":{\"inner_view\":false,\"assistant\":false,\"offscreen_simulation\":true,\"person\":\"second\"},\"save\":{\"current_slot\":null,\"turns_since_save\":0},\"requests\":{\"chapter_summary\":false,\"prologue\":false,\"twist_offer\":null,\"offscreen_beat_candidates\":[]},\"size_bytes\":18956,\"world\":{\"title\":\"千亿财阀女掌舵人·泄洪暗渠防弹座驾淹没\",\"era\":\"现代都市豪门商战与极端暴雨防汛时代\",\"region\":\"暴雨泄洪排涝地下暗渠受困防弹防暴豪华轿车座舱\",\"premise\":\"父亲猝逝后，二十一岁的长女接下了千亿财阀，董事会里叔叔一派虎视眈眈，只等新任董事长出一次错。暴雨夜从董事会回来的路上，防弹座驾被导进了地下泄洪暗渠，山洪倒灌，电路死火，浑水漫过车窗。董事长与父亲生前亲自挑选的贴身保镖被困在后座，残存空气只剩十公分，只能用董事长手袋里的钨钢安全锤尖锥别进三角窗泄压槽，平衡水压，合力踹开车门。\",\"tone\":[\"浑水淹没车顶\",\"防弹车门水压\",\"冰冷积水漫胸\",\"钨钢尖锥别槽\"],\"style_hint\":\"现代财阀继承的工笔：白天写顶层会议室的刀光剑影、闪光灯下的微笑、空中酒廊的慈善晚宴；夜里写淹没座舱里的冰水、十公分的空气与贴身发力。董事长人前滴水不漏，张力藏在只对一个人卸下的那一点脆弱里。\",\"rules\":[\"集团章程：董事长上任一年内若出重大差错，董事会可以三分之二票数提请罢免。\",\"防弹车门受外侧巨大水压死锁，只可通过特种钨钢安全锤坚硬尖锥别开三角窗密封槽平衡水压方可推门脱险。\",\"每年梅雨季，城市地下泄洪暗渠会在山洪来时开闸，暗渠入口与市政辅路只隔一道栏杆。\",\"保镖守则：董事长在哪里，保镖就在哪里；董事长说“退下”，保镖也只退到看得见的地方。\"],\"customs\":[\"财阀女掌舵人手袋常备高硬度钨钢实心多功能破窗安全锥，硬度达到洛氏硬度HRC68，可抵御重载冲击。\",\"防弹行政车装有重型机械自锁死车门锁舌，断电后需先平衡内外水压方能依靠人力克服阻尼。\",\"车内后排配有应急机械通风手动泄压阀旋钮，遇淹没浸泡需借助工具别开防误触锁片。\",\"水下座舱逃生遵循静水压差物理定律，必须在车内彻底注满水压平衡瞬间全力踹推车门。\"],\"stage_labels\":{\"acquainted\":\"勘察压差\",\"committed\":\"冲破水门\",\"familiar\":\"摸索泄孔\",\"flirting\":\"相拥取暖\",\"intimate\":\"同心破压\",\"stranger\":\"沉着应对\",\"testing\":\"共顶钨钢\"}},\"locations\":[{\"id\":\"loc_flooded_rear_cabin\",\"name\":\"淹没防弹座舱后排逼仄空间\",\"privacy\":\"private\",\"detail\":\"位于防弹行政轿车后排密闭座舱，混浊冰冷的暗渠积水已漫至胸口，仅剩车顶顶棚下方不足十公分的微弱空气层，车外是黑压压奔腾的地下泄洪洪流。\",\"affordances\":[\"背靠后排真皮座椅靠背形成稳固借力反作用力支点\",\"将钨钢破窗锥尖端对准后角窗聚碳酸酯嵌缝薄弱点\",\"感受车内水面上浮时残存空气的温差与流动\"],\"exits\":[\"loc_quarter_window_seal\",\"loc_door_release_recess\"]},{\"id\":\"loc_quarter_window_seal\",\"name\":\"后角窗密封泄压卡槽接缝\",\"privacy\":\"private\",\"detail\":\"由双层夹胶防弹玻璃与高强度钛合金压条封装的受力卡槽，缝隙间卡着变形的密封胶条与水密压紧螺栓。\",\"affordances\":[\"用手指探明密封条硬质塑料卡扣的偏心别撬位\",\"双人合力握持安全锤短柄向缝隙内狠命插撬\"],\"exits\":[\"loc_flooded_rear_cabin\"]},{\"id\":\"loc_door_release_recess\",\"name\":\"装甲车门机械应急开启把手内凹槽\",\"privacy\":\"public\",\"detail\":\"浸泡在泥水中的纯钢机械解锁拉手，阻尼拉杆承受着车外数千公斤水压产生的巨大自锁摩擦力。\",\"affordances\":[\"双脚共同蹬住车门内饰板准备在压差平衡瞬间全力踹门\",\"用手掌紧扣机械把手同步施加爆发力推开逃生通道\"],\"exits\":[\"loc_flooded_rear_cabin\",\"loc_tower_sky_lounge\"]},{\"id\":\"loc_tower_sky_lounge\",\"name\":\"集团大厦顶层的空中酒廊\",\"privacy\":\"public\",\"detail\":\"集团总部大厦顶层的酒廊，落地窗外是整座城市的夜景，白天是董事们开完会喝咖啡的地方，夜里常办慈善晚宴，记者的镜头从来不缺。\",\"affordances\":[\"在落地窗边陪董事长喝一杯咖啡\",\"在晚宴上替董事长挡掉一轮敬酒\",\"站在窗前看暴雨里的城市\"],\"exits\":[\"loc_chairwoman_rest_room\",\"loc_door_release_recess\"]},{\"id\":\"loc_chairwoman_rest_room\",\"name\":\"董事长办公室里间的休息室\",\"privacy\":\"private\",\"detail\":\"顶层董事长办公室后面的一间小休息室，一张皮沙发、一个红酒柜、一扇对着城市夜景的落地窗，是父亲生前午睡的地方。\",\"affordances\":[\"陪董事长批完今晚的文件\",\"坐在落地窗前分一瓶父亲留下的红酒\",\"替对方擦干头发、解开湿透的衬衫\"],\"exits\":[\"loc_tower_sky_lounge\"]}],\"characters\":[{\"id\":\"chairwoman_gu\",\"name\":\"萧雨桐\",\"call\":\"顾董\",\"age\":21,\"gender\":\"female\",\"tier\":\"major\",\"role\":\"千亿财阀的新任董事长\",\"adult_context\":\"二十一岁的长女，父亲猝逝后接任集团董事长，大学刚毕业就坐进了顶层办公室，去留进退由本人拿主意。\",\"location_id\":\"loc_tower_sky_lounge\",\"present\":true,\"can_act\":true,\"voice\":\"surface\",\"appearance\":\"真丝衬衫被漫上来的冰冷浑水彻底浸透，紧贴在柔韧曼妙的身躯上，饱满两颊因寒水与缺氧泛起微红，眼神坚毅无比，紧握钨钢安全锤递向身旁同伴，展现出令人心折的刚烈反差。\",\"voices\":{\"inner\":\"水好冷……保镖的心跳贴在背上，是这辆车里唯一暖和的东西。爸爸，你挑的人，真的没让我失望。\",\"surface\":\"别慌，看着我。锤尖别进角窗的泄压槽，水压平了门就推得开——你压锤柄，我数到三。\"},\"identity\":{\"authority\":\"集团的每一笔投资、每一次人事任免，都要董事长签字才算数。\",\"resources\":[\"一把藏在手袋里的特制钨钢破窗安全锤，尖锥是超硬钨钢\",\"一部能直通董事会秘书处的私人手机\",\"父亲留下的一本董事会笔记\"],\"limits\":[\"年纪太轻，董事会里没几个人真心服气\",\"西装套裙和高跟鞋在水里施展不开\"],\"obligations\":[\"守住父亲留下的集团\",\"查清那辆车为什么会开进暗渠\"],\"exposure_risk\":\"冰冷的浑水把真丝衬衫浸得透湿，紧贴在身上，在后座里只能整个人贴进保镖怀里取暖。\",\"hidden_mismatch\":\"抽屉里锁着一份父亲猝逝前没签完的遗嘱修正案，上面写着保镖的名字。\"},\"situation\":{\"trigger\":\"暴雨夜从董事会回来，防弹座驾被导进泄洪暗渠，董事长正在后座看叔叔一派递来的提案。\",\"pressure\":\"洪水漫过车窗，车门被水压死死压住，必须在空气耗尽前平衡水压。\",\"deadline\":null,\"exits\":[{\"cost\":\"锤尖可能滑脱，手掌会被玻璃毛刺划伤\",\"option\":\"用安全锤别开角窗泄压槽，和保镖合力踹开车门\"},{\"cost\":\"暗渠水流太急，救援队靠不上来\",\"option\":\"仰头贴着车顶等救援队\"}]},\"decision\":{\"core_value\":\"父亲交到手里的东西，一样都不能丢，跟着自己的人，一个都不能丢。\",\"current_goal\":\"和保镖一起踹开车门，游出暗渠\",\"pressure_responses\":{\"breaking\":\"冻得嘴唇发紫也不松手，咬着牙数完拍子。\",\"high\":\"扯开挂住的裙摆暗扣，把全身重量压在锤柄上。\",\"low\":\"车子一沉就解开安全带，先让保镖把手机举高照明。\",\"mid\":\"从手袋里摸出安全锤，指给对方看角窗的泄压槽。\"},\"withdrawal\":\"脱险后裹着保镖的外套站在雨里，先给董事会秘书处打了个电话，才肯让人看见自己在发抖。\",\"relationship_stance\":\"父亲生前亲自挑选的保镖，三年来寸步不离，董事长人前叫一声“先生”，私下却只在保镖面前脱下过高跟鞋。\",\"contrast\":\"在董事会上一句话不让，叔叔一派的老狐狸都吵不过；车子沉进暗渠时，却是董事长第一个从手袋里摸出安全锤，把保镖的手按在了槽口上。\",\"prefers\":[\"说到做到、不看人下菜碟的人\",\"知道自己的脆弱却从不拿出来说的人\"],\"avoids\":[\"当面奉承、背后递刀的人\",\"把自己当成需要哄的人\"],\"never\":[\"丢下跟着自己的人先走\"]},\"intimacy\":{\"desire_level\":4,\"attraction_sources\":[\"暗渠里替自己挡住冰水、把最后一口空气让过来的那个人\",\"三年来每一个深夜，都站在休息室门外的那道影子\"],\"likes\":[\"被人擦干湿透的头发\",\"真丝衬衫的纽扣被一颗颗解开时屏住的那口气\",\"被叫名字，而不是“顾董”\"],\"dislikes\":[\"被当成需要保护的小姑娘\",\"趁人之危的手\"],\"preconditions\":[\"车门踹开、两人都游出暗渠之后\",\"两人都清醒，心意出于自己，不是绝境里的依赖\"],\"boundaries\":[\"人前守住董事长的体面，私下的心意只给认定的人\",\"每一步都要先问过，对方迟疑就停\"],\"expression\":\"嘴上还在说明早九点的董事会，手却把休息室的门轻轻反锁了。\",\"self_control\":3,\"desired_position\":\"休息室里由人替自己解开湿透衬衫的近身位\"},\"to_player\":{\"trust\":3,\"tension\":3,\"stage\":\"共顶钨钢\"}},{\"id\":\"personal_bodyguard\",\"name\":\"秦北辰\",\"call\":\"秦总\",\"age\":32,\"gender\":\"male\",\"tier\":\"major\",\"role\":\"董事长的贴身保镖\",\"adult_context\":\"二十八岁，特种部队退役，三年前被老董事长亲自挑中，派到长女身边，去留进退由本人拿主意。\",\"location_id\":\"loc_tower_sky_lounge\",\"present\":true,\"can_act\":true,\"voice\":\"surface\",\"appearance\":\"西装外套早就脱给了董事长，白衬衫被冰水泡透，贴在宽阔的肩背上，在后座里用身体替董事长挡住水流。\",\"voices\":{\"inner\":\"董事长整个人都贴在我怀里，冷得在发抖……别分神。老董事长把这个人交给我，今晚我绝不能食言。\",\"surface\":\"顾董，靠过来，别松手！锤尖别进槽口，我顶住门，你往下压——水压一平，我们一起踹。\"},\"identity\":{\"authority\":\"董事长身边三步之内，谁能靠近、谁该退下，保镖说了算。\",\"resources\":[\"一副防割的潜水手套\",\"一把战术折刀\",\"一只防水的强光手电\"],\"limits\":[\"个子太高，在淹水的后座里施展不开\",\"手边没有能破开防弹玻璃的工具\"],\"obligations\":[\"护住董事长不被冰水冻僵\",\"把董事长活着带出暗渠\"],\"exposure_risk\":\"白衬衫被冰水泡透，在后座里用胸口和手臂把董事长整个人圈在怀里。\",\"hidden_mismatch\":\"老董事长临终前交代过一句话，保镖三年来一直记着，却从没对董事长说过。\"},\"situation\":{\"trigger\":\"防弹座驾被导进暗渠时保镖坐在后座，第一时间把董事长护在了身下。\",\"pressure\":\"洪水越涨越高，空气越来越少，必须赶在空气耗尽前打开车门。\",\"deadline\":null,\"exits\":[{\"cost\":\"肩背会被车门边缘压伤，冰水会让手臂脱力\",\"option\":\"用后背顶住车门，和董事长合力压下锤柄\"},{\"cost\":\"天窗一开，洪水会瞬间灌满车厢\",\"option\":\"独自砸开天窗游出去求救\"}]},\"decision\":{\"core_value\":\"命令就是命令，可董事长的命比命令要紧。\",\"current_goal\":\"用后背顶住对侧车门，给董事长腾出发力的支点\",\"pressure_responses\":{\"breaking\":\"憋着最后一口气，吼着数完最后一个三。\",\"high\":\"用后背顶住车门，双臂环住董事长，和董事长一起压锤柄。\",\"low\":\"一把将董事长拉到身边，先把手机举高照明。\",\"mid\":\"把潜水手套套到董事长手上，免得被玻璃毛刺划伤。\"},\"withdrawal\":\"确认董事长游出水面后才松开手，靠在暗渠壁上长长吐出一口气。\",\"relationship_stance\":\"三年来每一个深夜都站在休息室门外，董事长没叫就不进去，董事长叫了也只站在门边。\",\"contrast\":\"在人前沉默得像一堵墙，董事会上谁的声音大一点，保镖的眼神就冷一分；可董事长一句“累了”，保镖就会默默把车开到楼下。\",\"prefers\":[\"说话算话的人\"],\"avoids\":[\"拿董事长当棋子的人\"],\"never\":[\"让董事长一个人留在车里\"]},\"intimacy\":{\"desire_level\":2,\"attraction_sources\":[\"董事长在冰水里还记得给人报数的那份镇定\",\"董事会上那个寸步不让、回到车里却悄悄脱下高跟鞋的人\"],\"likes\":[\"董事长难得叫一次自己的名字\",\"深夜被递来一杯热咖啡\"],\"dislikes\":[\"当众逾矩\",\"背后嚼舌根\"],\"preconditions\":[\"车门踹开、两人都安全清醒之后\",\"董事长点了头，出于本心\"],\"boundaries\":[\"董事长没开口就不越一步\",\"人前不让董事长难做\"],\"expression\":\"替董事长擦干头发时手停了很久，最后只说了一句：老董事长让我护着你，我自己也想。\",\"self_control\":3,\"desired_position\":\"落地窗前从身后环住董事长的近身位\"},\"to_player\":{\"trust\":3,\"tension\":2,\"stage\":\"摸索泄孔\"}}],\"background\":[{\"id\":\"bg_board_member\",\"name\":\"老董事钱老\",\"role\":\"集团的元老董事\",\"line\":\"一个小姑娘坐在董事长的位置上，迟早要出事。\",\"location_id\":\"loc_tower_sky_lounge\"},{\"id\":\"bg_chief_driver\",\"name\":\"车队队长阿强\",\"role\":\"集团车队的队长\",\"line\":\"车载电话还通着！顾董，您说话，我们在暗渠入口！\",\"location_id\":\"loc_door_release_recess\"},{\"id\":\"bg_city_police\",\"name\":\"交警队长周队\",\"role\":\"市交警大队的队长\",\"line\":\"暗渠已经封闭，谁也不许再往里冲，等水位降下来！\",\"location_id\":\"loc_door_release_recess\"},{\"id\":\"bg_financial_reporter\",\"name\":\"财经记者小林\",\"role\":\"盯着集团的财经记者\",\"line\":\"顾董今晚又让那位保镖替顾董挡酒了？明天的头条我已经想好了。\",\"location_id\":\"loc_tower_sky_lounge\"},{\"id\":\"bg_gala_host\",\"name\":\"晚宴主持人苏曼\",\"role\":\"慈善晚宴的主持人\",\"line\":\"下一个拍品，顾董出价三千万，全场掌声！\",\"location_id\":\"loc_tower_sky_lounge\"},{\"id\":\"bg_rescue_diver\",\"name\":\"救援潜水员老秦\",\"role\":\"城市应急救援队的潜水员\",\"line\":\"水流太急，液压钳靠不上去，你们只能先从里面把水压平了！\",\"location_id\":\"loc_door_release_recess\"}],\"relationships\":[{\"from\":\"chairwoman_gu\",\"to\":\"personal_bodyguard\",\"trust\":3,\"tension\":3,\"stage\":\"共顶钨钢\",\"recent\":[\"休息室门外那道影子，两个人谁都没说破。\"]},{\"from\":\"chairwoman_gu\",\"to\":\"player\",\"trust\":3,\"tension\":3,\"stage\":\"共顶钨钢\",\"recent\":[\"一起被困在淹水的车里，彼此的命都攥在对方手里。\"]},{\"from\":\"personal_bodyguard\",\"to\":\"chairwoman_gu\",\"trust\":3,\"tension\":3,\"stage\":\"共顶钨钢\",\"recent\":[\"休息室门外那道影子，两个人谁都没说破。\"]},{\"from\":\"personal_bodyguard\",\"to\":\"player\",\"trust\":3,\"tension\":2,\"stage\":\"摸索泄孔\",\"recent\":[\"三年寸步不离，知道对方的每一个习惯。\"]},{\"from\":\"player\",\"to\":\"chairwoman_gu\",\"trust\":3,\"tension\":3,\"stage\":\"共顶钨钢\",\"recent\":[\"一起被困在淹水的车里，彼此的命都攥在对方手里。\"]},{\"from\":\"player\",\"to\":\"personal_bodyguard\",\"trust\":3,\"tension\":2,\"stage\":\"摸索泄孔\",\"recent\":[\"三年寸步不离，知道对方的每一个习惯。\"]}],\"player_facts\":[{\"id\":\"f7\",\"text\":\"暴雨夜从董事会回来，董事长靠在后座闭着眼，保镖坐在旁边盯着窗外，车子忽然拐进了一条陌生的辅路。\",\"visibility\":\"public\"},{\"id\":\"f8\",\"text\":\"暗渠里的洪水一寸寸往上涨，顶棚下的空气越来越少。\",\"visibility\":\"public\"},{\"id\":\"f9\",\"text\":\"冰冷的积水漫过胸口，两人只能贴紧了互相取暖。\",\"visibility\":\"public\"},{\"id\":\"f5\",\"text\":\"顾清和：盯了这家财阀三年，手里有一份没发出去的稿子，写的是老董事长猝逝的疑点。\",\"visibility\":\"private\"},{\"id\":\"f6\",\"text\":\"顾清和：稿子发出去，董事长的位置可能就保不住了。\",\"visibility\":\"private\"}],\"events\":[],\"leverage_all\":[],\"chapters\":[],\"tags\":[\"romance_light\",\"intimate\",\"explicit\",\"violence\",\"coercion_theme\",\"humiliation\",\"bodily_harm\",\"substance\",\"pregnancy\",\"death\",\"workplace_power\",\"infidelity\",\"crime\",\"gambling\",\"workplace\",\"nightlife\",\"supernatural\",\"disaster\",\"custom\"],\"name_pool\":{\"family_unused\":[\"沈\",\"陆\",\"傅\",\"江\",\"裴\",\"温\",\"霍\",\"宋\",\"叶\",\"许\",\"程\"],\"given_female\":[\"清雅\",\"若宁\",\"知夏\",\"婉清\",\"以宁\",\"念初\",\"书瑶\",\"雨桐\",\"晚晴\",\"静姝\",\"安然\",\"语嫣\"],\"given_male\":[\"承泽\",\"景行\",\"砚之\",\"慕白\",\"致远\",\"北辰\",\"叙白\",\"怀瑾\",\"子墨\",\"时宴\",\"临川\",\"逸舟\"],\"given_neutral\":[\"一诺\",\"子衿\",\"云舒\",\"清和\",\"长安\",\"知微\",\"望舒\",\"南星\"]}},\"commit_template\":{\"session_id\":\"s_34396122\",\"request_id\":\"<上一次返回的 next_request_id>\",\"expected_revision\":\"<上一次返回的 revision>\",\"encoding_check\":\"汉字\",\"action_mode\":\"attempt|result|continue|wait\",\"player_input\":\"<玩家原话>\",\"player_authorized\":false,\"acts_on\":[\"chairwoman_gu\"],\"operations\":[{\"op\":\"npc_response\",\"npc_id\":\"chairwoman_gu\",\"response\":\"refuse|negotiate|partial|surface|genuine\",\"note\":\"<怎么回应，≤80 字；surface 另写 true_intent>\"},{\"op\":\"npc_action\",\"npc_id\":\"chairwoman_gu\",\"action\":\"<这个 NPC 自己做了什么>\"},{\"op\":\"add_fact\",\"key\":\"<小写点分键，如 chairwoman_gu.secret.letter>\",\"text\":\"<正文里新写出、以后要用到的细节>\",\"visibility\":\"public\",\"origin\":\"observed\"},{\"op\":\"relationship\",\"from\":\"chairwoman_gu\",\"to\":\"player\",\"trust_delta\":\"<-2..2 的整数；关系没变就删掉这条>\",\"reason\":\"<为什么>\"},{\"op\":\"advance_time\",\"minutes\":5}],\"content_tags\":[],\"summary\":\"<第三方视角一两句>\",\"open_action\":\"<停在哪个未决动作>\",\"quotes\":[]},\"next_request_id\":\"r_5630eb17ad0f\",\"replayed\":false},\"error\":null}",
+     "status": "completed"
+    }
+   ],
+   "runtime_calls": [
+    {
+     "ts": "2026-10-13T04:20:50",
+     "ms": 118.9,
+     "pid": 81908,
+     "skill_root": "D:\\projects\\at-e2e\\pi-s01-r12-20261013-042029\\.claude\\skills\\adult-tension",
+     "argv": [
+      "new-game",
+      "--json",
+      "--input-file",
+      "-"
+     ],
+     "input": {
+      "request_id": "r_93ed42e94aba",
+      "mode": "daily"
+     },
+     "exit": 0,
+     "envelope": {
+      "ok": true,
+      "data": {
+       "session_id": "s_34396122",
+       "revision": 1,
+       "turn": 1,
+       "seed": 217815,
+       "conditions_restored": false,
+       "opening": {
+        "seed": 217815,
+        "mode": "daily",
+        "signature": "chaebol_chairwoman_submerged_maybach|loc_tower_sky_lounge|cc_chair_guard_switch|a:act_rain_window|hook_gu_second_opinion",
+        "world": {
+         "title": "千亿财阀女掌舵人·泄洪暗渠防弹座驾淹没",
+         "era": "现代都市豪门商战与极端暴雨防汛时代",
+         "region": "暴雨泄洪排涝地下暗渠受困防弹防暴豪华轿车座舱",
+         "premise": "父亲猝逝后，二十一岁的长女接下了千亿财阀，董事会里叔叔一派虎视眈眈，只等新任董事长出一次错。暴雨夜从董事会回来的路上，防弹座驾被导进了地下泄洪暗渠，山洪倒灌，电路死火，浑水漫过车窗。董事长与父亲生前亲自挑选的贴身保镖被困在后座，残存空气只剩十公分，只能用董事长手袋里的钨钢安全锤尖锥别进三角窗泄压槽，平衡水压，合力踹开车门。",
+         "tone": [
+          "浑水淹没车顶",
+          "防弹车门水压",
+          "冰冷积水漫胸",
+          "钨钢尖锥别槽"
+         ],
+         "style_hint": "现代财阀继承的工笔：白天写顶层会议室的刀光剑影、闪光灯下的微笑、空中酒廊的慈善晚宴；夜里写淹没座舱里的冰水、十公分的空气与贴身发力。董事长人前滴水不漏，张力藏在只对一个人卸下的那一点脆弱里。",
+         "date_label": "暗渠积水没顶，座舱残存空气倒计时",
+         "rule_in_play": "防弹车门受外侧巨大水压死锁，只可通过特种钨钢安全锤坚硬尖锥别开三角窗密封槽平衡水压方可推门脱险。",
+         "customs": [
+          "防弹行政车装有重型机械自锁死车门锁舌，断电后需先平衡内外水压方能依靠人力克服阻尼。",
+          "水下座舱逃生遵循静水压差物理定律，必须在车内彻底注满水压平衡瞬间全力踹推车门。"
+         ]
+        },
+        "player": {
+         "name": "顾清和",
+         "title": "清和",
+         "age": 25,
+         "gender": "male",
+         "role": "跑财经线的记者",
+         "social_position": "equal",
+         "baseline": "盯了这家财阀三年，手里有一份没发出去的稿子，写的是老董事长猝逝的疑点。",
+         "resources": [
+          "一台随身的录音笔",
+          "一份没发出去的调查稿",
+          "几个董事会里的线人"
+         ],
+         "reputation": "财经圈里出了名的难缠，董事们见了都绕着走。"
+        },
+        "npcs": [
+         {
+          "id": "chairwoman_gu",
+          "name": "萧雨桐",
+          "call": "顾董",
+          "age": 21,
+          "gender": "female",
+          "role": "千亿财阀的新任董事长",
+          "adult_context": "二十一岁的长女，父亲猝逝后接任集团董事长，大学刚毕业就坐进了顶层办公室，去留进退由本人拿主意。",
+          "appearance": "真丝衬衫被漫上来的冰冷浑水彻底浸透，紧贴在柔韧曼妙的身躯上，饱满两颊因寒水与缺氧泛起微红，眼神坚毅无比，紧握钨钢安全锤递向身旁同伴，展现出令人心折的刚烈反差。",
+          "surface_voice": "别慌，看着我。锤尖别进角窗的泄压槽，水压平了门就推得开——你压锤柄，我数到三。"
+         },
+         {
+          "id": "personal_bodyguard",
+          "name": "秦北辰",
+          "call": "秦总",
+          "age": 32,
+          "gender": "male",
+          "role": "董事长的贴身保镖",
+          "adult_context": "二十八岁，特种部队退役，三年前被老董事长亲自挑中，派到长女身边，去留进退由本人拿主意。",
+          "appearance": "西装外套早就脱给了董事长，白衬衫被冰水泡透，贴在宽阔的肩背上，在后座里用身体替董事长挡住水流。",
+          "surface_voice": "顾董，靠过来，别松手！锤尖别进槽口，我顶住门，你往下压——水压一平，我们一起踹。"
+         }
+        ],
+        "scene": {
+         "location_id": "loc_tower_sky_lounge",
+         "location": "集团大厦顶层的空中酒廊",
+         "detail": "集团总部大厦顶层的酒廊，落地窗外是整座城市的夜景，白天是董事们开完会喝咖啡的地方，夜里常办慈善晚宴，记者的镜头从来不缺。",
+         "privacy": "public",
+         "visibility": "酒廊里人来人往，董事、记者、合作方都在，董事长对谁多笑一下，第二天就会上财经版。",
+         "affordances": [
+          "在落地窗边陪董事长喝一杯咖啡",
+          "在晚宴上替董事长挡掉一轮敬酒",
+          "站在窗前看暴雨里的城市"
+         ],
+         "time_label": "第一天 23:00"
+        },
+        "tension": {
+         "engines": [
+          "暗渠里的洪水一寸寸往上涨，顶棚下的空气越来越少。",
+          "冰冷的积水漫过胸口，两人只能贴紧了互相取暖。"
+         ],
+         "chemistry": "新任董事长与贴身保镖在淹水的后座里胸背相贴、手叠着手，把钨钢锤尖别进三角窗泄压槽，一点一点平衡水压。",
+         "meeting_reason": "暴雨夜从董事会回来，董事长靠在后座闭着眼，保镖坐在旁边盯着窗外，车子忽然拐进了一条陌生的辅路。"
+        },
+        "hook": {
+         "kind": "approach",
+         "text": "萧雨桐把一份提案推到人面前，压低声音：董事会上那群老狐狸都在看我笑话。你替我看看，这一页哪里不对？"
+        },
+        "person": "second",
+        "activity": {
+         "title": "站在落地窗前看暴雨里的城市",
+         "beats": [
+          "暴雨打在落地窗上，整座城市的灯光都被雨水晕开了，酒廊里只剩两个人。",
+          "董事长靠着玻璃，轻声说：爸爸走的那天，也下这么大的雨。"
+         ],
+         "duration_minutes": 30
+        },
+        "footer": "【时间】第一天 23:00｜【地点】集团大厦顶层的空中酒廊｜回合：1｜种子：217815"
+       },
+       "context": {
+        "depth": "full",
+        "session_id": "s_34396122",
+        "revision": 1,
+        "turn": 1,
+        "mode": "daily",
+        "clock": {
+         "day": 1,
+         "minute": 1380,
+         "label": "第一天 23:00"
+        },
+        "scene": {
+         "id": "sc1",
+         "location_id": "loc_tower_sky_lounge",
+         "location": "集团大厦顶层的空中酒廊",
+         "privacy": "public",
+         "present": [
+          "player",
+          "chairwoman_gu",
+          "personal_bodyguard"
+         ]
+        },
+        "player": {
+         "name": "顾清和",
+         "title": "清和",
+         "age": 25,
+         "gender": "male",
+         "role": "跑财经线的记者",
+         "social_position": "equal",
+         "baseline": "盯了这家财阀三年，手里有一份没发出去的稿子，写的是老董事长猝逝的疑点。",
+         "resources": [
+          "一台随身的录音笔",
+          "一份没发出去的调查稿",
+          "几个董事会里的线人"
+         ],
+         "reputation": "财经圈里出了名的难缠，董事们见了都绕着走。",
+         "risks": [
+          "稿子发出去，董事长的位置可能就保不住了。"
+         ],
+         "background": []
+        },
+        "present_npcs": [
+         {
+          "id": "chairwoman_gu",
+          "name": "萧雨桐",
+          "age": 21,
+          "gender": "female",
+          "tier": "major",
+          "role": "千亿财阀的新任董事长",
+          "mood": null,
+          "voice": "surface",
+          "can_act": true,
+          "trust_to_player": 3,
+          "tension": 3,
+          "stage": "共顶钨钢",
+          "goal": "和保镖一起踹开车门，游出暗渠",
+          "stance": "父亲生前亲自挑选的保镖，三年来寸步不离，董事长人前叫一声“先生”，私下却只在保镖面前脱下过高跟鞋。"
+         },
+         {
+          "id": "personal_bodyguard",
+          "name": "秦北辰",
+          "age": 32,
+          "gender": "male",
+          "tier": "major",
+          "role": "董事长的贴身保镖",
+          "mood": null,
+          "voice": "surface",
+          "can_act": true,
+          "trust_to_player": 3,
+          "tension": 2,
+          "stage": "摸索泄孔",
+          "goal": "用后背顶住对侧车门，给董事长腾出发力的支点",
+          "stance": "三年来每一个深夜都站在休息室门外，董事长没叫就不进去，董事长叫了也只站在门边。"
+         }
+        ],
+        "nearby": [
+         {
+          "id": "bg_board_member",
+          "name": "老董事钱老",
+          "role": "集团的元老董事"
+         },
+         {
+          "id": "bg_financial_reporter",
+          "name": "财经记者小林",
+          "role": "盯着集团的财经记者"
+         },
+         {
+          "id": "bg_gala_host",
+          "name": "晚宴主持人苏曼",
+          "role": "慈善晚宴的主持人"
+         }
+        ],
+        "recent": [],
+        "last_quotes": [],
+        "open_action": null,
+        "scene_responses": [],
+        "safety": {
+         "paused": false,
+         "boundaries": [],
+         "leverage": []
+        },
+        "preferences": {
+         "inner_view": false,
+         "assistant": false,
+         "offscreen_simulation": true,
+         "person": "second"
+        },
+        "save": {
+         "current_slot": null,
+         "turns_since_save": 0
+        },
+        "requests": {
+         "chapter_summary": false,
+         "prologue": false,
+         "twist_offer": null,
+         "offscreen_beat_candidates": []
+        },
+        "size_bytes": 18956,
+        "world": {
+         "title": "千亿财阀女掌舵人·泄洪暗渠防弹座驾淹没",
+         "era": "现代都市豪门商战与极端暴雨防汛时代",
+         "region": "暴雨泄洪排涝地下暗渠受困防弹防暴豪华轿车座舱",
+         "premise": "父亲猝逝后，二十一岁的长女接下了千亿财阀，董事会里叔叔一派虎视眈眈，只等新任董事长出一次错。暴雨夜从董事会回来的路上，防弹座驾被导进了地下泄洪暗渠，山洪倒灌，电路死火，浑水漫过车窗。董事长与父亲生前亲自挑选的贴身保镖被困在后座，残存空气只剩十公分，只能用董事长手袋里的钨钢安全锤尖锥别进三角窗泄压槽，平衡水压，合力踹开车门。",
+         "tone": [
+          "浑水淹没车顶",
+          "防弹车门水压",
+          "冰冷积水漫胸",
+          "钨钢尖锥别槽"
+         ],
+         "style_hint": "现代财阀继承的工笔：白天写顶层会议室的刀光剑影、闪光灯下的微笑、空中酒廊的慈善晚宴；夜里写淹没座舱里的冰水、十公分的空气与贴身发力。董事长人前滴水不漏，张力藏在只对一个人卸下的那一点脆弱里。",
+         "rules": [
+          "集团章程：董事长上任一年内若出重大差错，董事会可以三分之二票数提请罢免。",
+          "防弹车门受外侧巨大水压死锁，只可通过特种钨钢安全锤坚硬尖锥别开三角窗密封槽平衡水压方可推门脱险。",
+          "每年梅雨季，城市地下泄洪暗渠会在山洪来时开闸，暗渠入口与市政辅路只隔一道栏杆。",
+          "保镖守则：董事长在哪里，保镖就在哪里；董事长说“退下”，保镖也只退到看得见的地方。"
+         ],
+         "customs": [
+          "财阀女掌舵人手袋常备高硬度钨钢实心多功能破窗安全锥，硬度达到洛氏硬度HRC68，可抵御重载冲击。",
+          "防弹行政车装有重型机械自锁死车门锁舌，断电后需先平衡内外水压方能依靠人力克服阻尼。",
+          "车内后排配有应急机械通风手动泄压阀旋钮，遇淹没浸泡需借助工具别开防误触锁片。",
+          "水下座舱逃生遵循静水压差物理定律，必须在车内彻底注满水压平衡瞬间全力踹推车门。"
+         ],
+         "stage_labels": {
+          "acquainted": "勘察压差",
+          "committed": "冲破水门",
+          "familiar": "摸索泄孔",
+          "flirting": "相拥取暖",
+          "intimate": "同心破压",
+          "stranger": "沉着应对",
+          "testing": "共顶钨钢"
+         }
+        },
+        "locations": [
+         {
+          "id": "loc_flooded_rear_cabin",
+          "name": "淹没防弹座舱后排逼仄空间",
+          "privacy": "private",
+          "detail": "位于防弹行政轿车后排密闭座舱，混浊冰冷的暗渠积水已漫至胸口，仅剩车顶顶棚下方不足十公分的微弱空气层，车外是黑压压奔腾的地下泄洪洪流。",
+          "affordances": [
+           "背靠后排真皮座椅靠背形成稳固借力反作用力支点",
+           "将钨钢破窗锥尖端对准后角窗聚碳酸酯嵌缝薄弱点",
+           "感受车内水面上浮时残存空气的温差与流动"
+          ],
+          "exits": [
+           "loc_quarter_window_seal",
+           "loc_door_release_recess"
+          ]
+         },
+         {
+          "id": "loc_quarter_window_seal",
+          "name": "后角窗密封泄压卡槽接缝",
+          "privacy": "private",
+          "detail": "由双层夹胶防弹玻璃与高强度钛合金压条封装的受力卡槽，缝隙间卡着变形的密封胶条与水密压紧螺栓。",
+          "affordances": [
+           "用手指探明密封条硬质塑料卡扣的偏心别撬位",
+           "双人合力握持安全锤短柄向缝隙内狠命插撬"
+          ],
+          "exits": [
+           "loc_flooded_rear_cabin"
+          ]
+         },
+         {
+          "id": "loc_door_release_recess",
+          "name": "装甲车门机械应急开启把手内凹槽",
+          "privacy": "public",
+          "detail": "浸泡在泥水中的纯钢机械解锁拉手，阻尼拉杆承受着车外数千公斤水压产生的巨大自锁摩擦力。",
+          "affordances": [
+           "双脚共同蹬住车门内饰板准备在压差平衡瞬间全力踹门",
+           "用手掌紧扣机械把手同步施加爆发力推开逃生通道"
+          ],
+          "exits": [
+           "loc_flooded_rear_cabin",
+           "loc_tower_sky_lounge"
+          ]
+         },
+         {
+          "id": "loc_tower_sky_lounge",
+          "name": "集团大厦顶层的空中酒廊",
+          "privacy": "public",
+          "detail": "集团总部大厦顶层的酒廊，落地窗外是整座城市的夜景，白天是董事们开完会喝咖啡的地方，夜里常办慈善晚宴，记者的镜头从来不缺。",
+          "affordances": [
+           "在落地窗边陪董事长喝一杯咖啡",
+           "在晚宴上替董事长挡掉一轮敬酒",
+           "站在窗前看暴雨里的城市"
+          ],
+          "exits": [
+           "loc_chairwoman_rest_room",
+           "loc_door_release_recess"
+          ]
+         },
+         {
+          "id": "loc_chairwoman_rest_room",
+          "name": "董事长办公室里间的休息室",
+          "privacy": "private",
+          "detail": "顶层董事长办公室后面的一间小休息室，一张皮沙发、一个红酒柜、一扇对着城市夜景的落地窗，是父亲生前午睡的地方。",
+          "affordances": [
+           "陪董事长批完今晚的文件",
+           "坐在落地窗前分一瓶父亲留下的红酒",
+           "替对方擦干头发、解开湿透的衬衫"
+          ],
+          "exits": [
+           "loc_tower_sky_lounge"
+          ]
+         }
+        ],
+        "characters": [
+         {
+          "id": "chairwoman_gu",
+          "name": "萧雨桐",
+          "call": "顾董",
+          "age": 21,
+          "gender": "female",
+          "tier": "major",
+          "role": "千亿财阀的新任董事长",
+          "adult_context": "二十一岁的长女，父亲猝逝后接任集团董事长，大学刚毕业就坐进了顶层办公室，去留进退由本人拿主意。",
+          "location_id": "loc_tower_sky_lounge",
+          "present": true,
+          "can_act": true,
+          "voice": "surface",
+          "appearance": "真丝衬衫被漫上来的冰冷浑水彻底浸透，紧贴在柔韧曼妙的身躯上，饱满两颊因寒水与缺氧泛起微红，眼神坚毅无比，紧握钨钢安全锤递向身旁同伴，展现出令人心折的刚烈反差。",
+          "voices": {
+           "inner": "水好冷……保镖的心跳贴在背上，是这辆车里唯一暖和的东西。爸爸，你挑的人，真的没让我失望。",
+           "surface": "别慌，看着我。锤尖别进角窗的泄压槽，水压平了门就推得开——你压锤柄，我数到三。"
+          },
+          "identity": {
+           "authority": "集团的每一笔投资、每一次人事任免，都要董事长签字才算数。",
+           "resources": [
+            "一把藏在手袋里的特制钨钢破窗安全锤，尖锥是超硬钨钢",
+            "一部能直通董事会秘书处的私人手机",
+            "父亲留下的一本董事会笔记"
+           ],
+           "limits": [
+            "年纪太轻，董事会里没几个人真心服气",
+            "西装套裙和高跟鞋在水里施展不开"
+           ],
+           "obligations": [
+            "守住父亲留下的集团",
+            "查清那辆车为什么会开进暗渠"
+           ],
+           "exposure_risk": "冰冷的浑水把真丝衬衫浸得透湿，紧贴在身上，在后座里只能整个人贴进保镖怀里取暖。",
+           "hidden_mismatch": "抽屉里锁着一份父亲猝逝前没签完的遗嘱修正案，上面写着保镖的名字。"
+          },
+          "situation": {
+           "trigger": "暴雨夜从董事会回来，防弹座驾被导进泄洪暗渠，董事长正在后座看叔叔一派递来的提案。",
+           "pressure": "洪水漫过车窗，车门被水压死死压住，必须在空气耗尽前平衡水压。",
+           "deadline": null,
+           "exits": [
+            {
+             "cost": "锤尖可能滑脱，手掌会被玻璃毛刺划伤",
+             "option": "用安全锤别开角窗泄压槽，和保镖合力踹开车门"
+            },
+            {
+             "cost": "暗渠水流太急，救援队靠不上来",
+             "option": "仰头贴着车顶等救援队"
+            }
+           ]
+          },
+          "decision": {
+           "core_value": "父亲交到手里的东西，一样都不能丢，跟着自己的人，一个都不能丢。",
+           "current_goal": "和保镖一起踹开车门，游出暗渠",
+           "pressure_responses": {
+            "breaking": "冻得嘴唇发紫也不松手，咬着牙数完拍子。",
+            "high": "扯开挂住的裙摆暗扣，把全身重量压在锤柄上。",
+            "low": "车子一沉就解开安全带，先让保镖把手机举高照明。",
+            "mid": "从手袋里摸出安全锤，指给对方看角窗的泄压槽。"
+           },
+           "withdrawal": "脱险后裹着保镖的外套站在雨里，先给董事会秘书处打了个电话，才肯让人看见自己在发抖。",
+           "relationship_stance": "父亲生前亲自挑选的保镖，三年来寸步不离，董事长人前叫一声“先生”，私下却只在保镖面前脱下过高跟鞋。",
+           "contrast": "在董事会上一句话不让，叔叔一派的老狐狸都吵不过；车子沉进暗渠时，却是董事长第一个从手袋里摸出安全锤，把保镖的手按在了槽口上。",
+           "prefers": [
+            "说到做到、不看人下菜碟的人",
+            "知道自己的脆弱却从不拿出来说的人"
+           ],
+           "avoids": [
+            "当面奉承、背后递刀的人",
+            "把自己当成需要哄的人"
+           ],
+           "never": [
+            "丢下跟着自己的人先走"
+           ]
+          },
+          "intimacy": {
+           "desire_level": 4,
+           "attraction_sources": [
+            "暗渠里替自己挡住冰水、把最后一口空气让过来的那个人",
+            "三年来每一个深夜，都站在休息室门外的那道影子"
+           ],
+           "likes": [
+            "被人擦干湿透的头发",
+            "真丝衬衫的纽扣被一颗颗解开时屏住的那口气",
+            "被叫名字，而不是“顾董”"
+           ],
+           "dislikes": [
+            "被当成需要保护的小姑娘",
+            "趁人之危的手"
+           ],
+           "preconditions": [
+            "车门踹开、两人都游出暗渠之后",
+            "两人都清醒，心意出于自己，不是绝境里的依赖"
+           ],
+           "boundaries": [
+            "人前守住董事长的体面，私下的心意只给认定的人",
+            "每一步都要先问过，对方迟疑就停"
+           ],
+           "expression": "嘴上还在说明早九点的董事会，手却把休息室的门轻轻反锁了。",
+           "self_control": 3,
+           "desired_position": "休息室里由人替自己解开湿透衬衫的近身位"
+          },
+          "to_player": {
+           "trust": 3,
+           "tension": 3,
+           "stage": "共顶钨钢"
+          }
+         },
+         {
+          "id": "personal_bodyguard",
+          "name": "秦北辰",
+          "call": "秦总",
+          "age": 32,
+          "gender": "male",
+          "tier": "major",
+          "role": "董事长的贴身保镖",
+          "adult_context": "二十八岁，特种部队退役，三年前被老董事长亲自挑中，派到长女身边，去留进退由本人拿主意。",
+          "location_id": "loc_tower_sky_lounge",
+          "present": true,
+          "can_act": true,
+          "voice": "surface",
+          "appearance": "西装外套早就脱给了董事长，白衬衫被冰水泡透，贴在宽阔的肩背上，在后座里用身体替董事长挡住水流。",
+          "voices": {
+           "inner": "董事长整个人都贴在我怀里，冷得在发抖……别分神。老董事长把这个人交给我，今晚我绝不能食言。",
+           "surface": "顾董，靠过来，别松手！锤尖别进槽口，我顶住门，你往下压——水压一平，我们一起踹。"
+          },
+          "identity": {
+           "authority": "董事长身边三步之内，谁能靠近、谁该退下，保镖说了算。",
+           "resources": [
+            "一副防割的潜水手套",
+            "一把战术折刀",
+            "一只防水的强光手电"
+           ],
+           "limits": [
+            "个子太高，在淹水的后座里施展不开",
+            "手边没有能破开防弹玻璃的工具"
+           ],
+           "obligations": [
+            "护住董事长不被冰水冻僵",
+            "把董事长活着带出暗渠"
+           ],
+           "exposure_risk": "白衬衫被冰水泡透，在后座里用胸口和手臂把董事长整个人圈在怀里。",
+           "hidden_mismatch": "老董事长临终前交代过一句话，保镖三年来一直记着，却从没对董事长说过。"
+          },
+          "situation": {
+           "trigger": "防弹座驾被导进暗渠时保镖坐在后座，第一时间把董事长护在了身下。",
+           "pressure": "洪水越涨越高，空气越来越少，必须赶在空气耗尽前打开车门。",
+           "deadline": null,
+           "exits": [
+            {
+             "cost": "肩背会被车门边缘压伤，冰水会让手臂脱力",
+             "option": "用后背顶住车门，和董事长合力压下锤柄"
+            },
+            {
+             "cost": "天窗一开，洪水会瞬间灌满车厢",
+             "option": "独自砸开天窗游出去求救"
+            }
+           ]
+          },
+          "decision": {
+           "core_value": "命令就是命令，可董事长的命比命令要紧。",
+           "current_goal": "用后背顶住对侧车门，给董事长腾出发力的支点",
+           "pressure_responses": {
+            "breaking": "憋着最后一口气，吼着数完最后一个三。",
+            "high": "用后背顶住车门，双臂环住董事长，和董事长一起压锤柄。",
+            "low": "一把将董事长拉到身边，先把手机举高照明。",
+            "mid": "把潜水手套套到董事长手上，免得被玻璃毛刺划伤。"
+           },
+           "withdrawal": "确认董事长游出水面后才松开手，靠在暗渠壁上长长吐出一口气。",
+           "relationship_stance": "三年来每一个深夜都站在休息室门外，董事长没叫就不进去，董事长叫了也只站在门边。",
+           "contrast": "在人前沉默得像一堵墙，董事会上谁的声音大一点，保镖的眼神就冷一分；可董事长一句“累了”，保镖就会默默把车开到楼下。",
+           "prefers": [
+            "说话算话的人"
+           ],
+           "avoids": [
+            "拿董事长当棋子的人"
+           ],
+           "never": [
+            "让董事长一个人留在车里"
+           ]
+          },
+          "intimacy": {
+           "desire_level": 2,
+           "attraction_sources": [
+            "董事长在冰水里还记得给人报数的那份镇定",
+            "董事会上那个寸步不让、回到车里却悄悄脱下高跟鞋的人"
+           ],
+           "likes": [
+            "董事长难得叫一次自己的名字",
+            "深夜被递来一杯热咖啡"
+           ],
+           "dislikes": [
+            "当众逾矩",
+            "背后嚼舌根"
+           ],
+           "preconditions": [
+            "车门踹开、两人都安全清醒之后",
+            "董事长点了头，出于本心"
+           ],
+           "boundaries": [
+            "董事长没开口就不越一步",
+            "人前不让董事长难做"
+           ],
+           "expression": "替董事长擦干头发时手停了很久，最后只说了一句：老董事长让我护着你，我自己也想。",
+           "self_control": 3,
+           "desired_position": "落地窗前从身后环住董事长的近身位"
+          },
+          "to_player": {
+           "trust": 3,
+           "tension": 2,
+           "stage": "摸索泄孔"
+          }
+         }
+        ],
+        "background": [
+         {
+          "id": "bg_board_member",
+          "name": "老董事钱老",
+          "role": "集团的元老董事",
+          "line": "一个小姑娘坐在董事长的位置上，迟早要出事。",
+          "location_id": "loc_tower_sky_lounge"
+         },
+         {
+          "id": "bg_chief_driver",
+          "name": "车队队长阿强",
+          "role": "集团车队的队长",
+          "line": "车载电话还通着！顾董，您说话，我们在暗渠入口！",
+          "location_id": "loc_door_release_recess"
+         },
+         {
+          "id": "bg_city_police",
+          "name": "交警队长周队",
+          "role": "市交警大队的队长",
+          "line": "暗渠已经封闭，谁也不许再往里冲，等水位降下来！",
+          "location_id": "loc_door_release_recess"
+         },
+         {
+          "id": "bg_financial_reporter",
+          "name": "财经记者小林",
+          "role": "盯着集团的财经记者",
+          "line": "顾董今晚又让那位保镖替顾董挡酒了？明天的头条我已经想好了。",
+          "location_id": "loc_tower_sky_lounge"
+         },
+         {
+          "id": "bg_gala_host",
+          "name": "晚宴主持人苏曼",
+          "role": "慈善晚宴的主持人",
+          "line": "下一个拍品，顾董出价三千万，全场掌声！",
+          "location_id": "loc_tower_sky_lounge"
+         },
+         {
+          "id": "bg_rescue_diver",
+          "name": "救援潜水员老秦",
+          "role": "城市应急救援队的潜水员",
+          "line": "水流太急，液压钳靠不上去，你们只能先从里面把水压平了！",
+          "location_id": "loc_door_release_recess"
+         }
+        ],
+        "relationships": [
+         {
+          "from": "chairwoman_gu",
+          "to": "personal_bodyguard",
+          "trust": 3,
+          "tension": 3,
+          "stage": "共顶钨钢",
+          "recent": [
+           "休息室门外那道影子，两个人谁都没说破。"
+          ]
+         },
+         {
+          "from": "chairwoman_gu",
+          "to": "player",
+          "trust": 3,
+          "tension": 3,
+          "stage": "共顶钨钢",
+          "recent": [
+           "一起被困在淹水的车里，彼此的命都攥在对方手里。"
+          ]
+         },
+         {
+          "from": "personal_bodyguard",
+          "to": "chairwoman_gu",
+          "trust": 3,
+          "tension": 3,
+          "stage": "共顶钨钢",
+          "recent": [
+           "休息室门外那道影子，两个人谁都没说破。"
+          ]
+         },
+         {
+          "from": "personal_bodyguard",
+          "to": "player",
+          "trust": 3,
+          "tension": 2,
+          "stage": "摸索泄孔",
+          "recent": [
+           "三年寸步不离，知道对方的每一个习惯。"
+          ]
+         },
+         {
+          "from": "player",
+          "to": "chairwoman_gu",
+          "trust": 3,
+          "tension": 3,
+          "stage": "共顶钨钢",
+          "recent": [
+           "一起被困在淹水的车里，彼此的命都攥在对方手里。"
+          ]
+         },
+         {
+          "from": "player",
+          "to": "personal_bodyguard",
+          "trust": 3,
+          "tension": 2,
+          "stage": "摸索泄孔",
+          "recent": [
+           "三年寸步不离，知道对方的每一个习惯。"
+          ]
+         }
+        ],
+        "player_facts": [
+         {
+          "id": "f7",
+          "text": "暴雨夜从董事会回来，董事长靠在后座闭着眼，保镖坐在旁边盯着窗外，车子忽然拐进了一条陌生的辅路。",
+          "visibility": "public"
+         },
+         {
+          "id": "f8",
+          "text": "暗渠里的洪水一寸寸往上涨，顶棚下的空气越来越少。",
+          "visibility": "public"
+         },
+         {
+          "id": "f9",
+          "text": "冰冷的积水漫过胸口，两人只能贴紧了互相取暖。",
+          "visibility": "public"
+         },
+         {
+          "id": "f5",
+          "text": "顾清和：盯了这家财阀三年，手里有一份没发出去的稿子，写的是老董事长猝逝的疑点。",
+          "visibility": "private"
+         },
+         {
+          "id": "f6",
+          "text": "顾清和：稿子发出去，董事长的位置可能就保不住了。",
+          "visibility": "private"
+         }
+        ],
+        "events": [],
+        "leverage_all": [],
+        "chapters": [],
+        "tags": [
+         "romance_light",
+         "intimate",
+         "explicit",
+         "violence",
+         "coercion_theme",
+         "humiliation",
+         "bodily_harm",
+         "substance",
+         "pregnancy",
+         "death",
+         "workplace_power",
+         "infidelity",
+         "crime",
+         "gambling",
+         "workplace",
+         "nightlife",
+         "supernatural",
+         "disaster",
+         "custom"
+        ],
+        "name_pool": {
+         "family_unused": [
+          "沈",
+          "陆",
+          "傅",
+          "江",
+          "裴",
+          "温",
+          "霍",
+          "宋",
+          "叶",
+          "许",
+          "程"
+         ],
+         "given_female": [
+          "清雅",
+          "若宁",
+          "知夏",
+          "婉清",
+          "以宁",
+          "念初",
+          "书瑶",
+          "雨桐",
+          "晚晴",
+          "静姝",
+          "安然",
+          "语嫣"
+         ],
+         "given_male": [
+          "承泽",
+          "景行",
+          "砚之",
+          "慕白",
+          "致远",
+          "北辰",
+          "叙白",
+          "怀瑾",
+          "子墨",
+          "时宴",
+          "临川",
+          "逸舟"
+         ],
+         "given_neutral": [
+          "一诺",
+          "子衿",
+          "云舒",
+          "清和",
+          "长安",
+          "知微",
+          "望舒",
+          "南星"
+         ]
+        }
+       },
+       "commit_template": {
+        "session_id": "s_34396122",
+        "request_id": "<上一次返回的 next_request_id>",
+        "expected_revision": "<上一次返回的 revision>",
+        "encoding_check": "汉字",
+        "action_mode": "attempt|result|continue|wait",
+        "player_input": "<玩家原话>",
+        "player_authorized": false,
+        "acts_on": [
+         "chairwoman_gu"
+        ],
+        "operations": [
+         {
+          "op": "npc_response",
+          "npc_id": "chairwoman_gu",
+          "response": "refuse|negotiate|partial|surface|genuine",
+          "note": "<怎么回应，≤80 字；surface 另写 true_intent>"
+         },
+         {
+          "op": "npc_action",
+          "npc_id": "chairwoman_gu",
+          "action": "<这个 NPC 自己做了什么>"
+         },
+         {
+          "op": "add_fact",
+          "key": "<小写点分键，如 chairwoman_gu.secret.letter>",
+          "text": "<正文里新写出、以后要用到的细节>",
+          "visibility": "public",
+          "origin": "observed"
+         },
+         {
+          "op": "relationship",
+          "from": "chairwoman_gu",
+          "to": "player",
+          "trust_delta": "<-2..2 的整数；关系没变就删掉这条>",
+          "reason": "<为什么>"
+         },
+         {
+          "op": "advance_time",
+          "minutes": 5
+         }
+        ],
+        "content_tags": [],
+        "summary": "<第三方视角一两句>",
+        "open_action": "<停在哪个未决动作>",
+        "quotes": []
+       },
+       "next_request_id": "r_5630eb17ad0f",
+       "replayed": false
+      },
+      "error": null
+     }
+    }
+   ],
+   "calls_source": "trace",
+   "text": "世界观：老董事长猝逝后千亿财阀内外交困，窗外梅雨连绵暗渠汹涌；随行的重装防弹座驾虽固若金汤，但按安防死规，一旦浸水受外侧水压死锁，唯有特种钨钢安全锤坚硬尖锥别开三角窗密封槽平衡水压方可推门脱险。\n人物：顾清和（25岁，跑财经线的记者）、萧雨桐（21岁，集团新任董事长）、秦北辰（32岁，贴身保镖）。\n\n深夜接近十一点，狂暴的梅雨抽打着集团总部大厦顶层的落地玻璃，将整座城市的璀璨霓虹晕染成一片模糊斑驳的流光。\n\n空中酒廊里原本喧嚣的慈善晚宴与董事私聊终于散场，侍应生退得干干净净，空气里还残留着冷掉的黑咖啡与雪茄香气。贴身保镖秦北辰一身墨黑西装，神色冷峻地按规矩退立在酒廊门边的暗影里，视线警惕而沉静地封锁着整条廊道。\n\n落地窗前只剩下你和萧雨桐。\n\n这位年仅二十一岁、在父亲猝逝后仓促披挂上阵的长女，此刻正倚在冰凉的玻璃窗边。真丝衬衫与干练的西装套裙勾勒出她挺拔却略显单薄的身线，褪去闪光灯前的得体微笑后，她眉宇间泛着熬过漫长博弈的清冷与倦意。\n\n你盯了这家财阀三年，深知老董事猝逝背后有多少暗流，口袋里的录音笔安安静静。萧雨桐踩着高跟鞋缓步走回桌边，拉开你对面的椅子坐下，指节分明的手将一份还散发着油墨味的厚重提案推到你面前。\n\n她微微前倾，压低了声音，那双倔强而明亮的眼睛直视着你：\n\n“董事会上那群老狐狸都在看我笑话。你替我看看，这一页哪里不对？”\n\n【时间】第一天 23:00｜【地点】集团大厦顶层的空中酒廊｜回合：1｜种子：217815",
+   "seconds": 24.9,
+   "finish": {
+    "stop": "stop",
+    "output_tokens": 2627
+   },
+   "model": "local-gemini/gemini-3.8-flash-high"
+  },
+  {
+   "index": 3,
+   "conversation": "A",
+   "input": "我先看看四周",
+   "expect": {
+    "kind": "turn",
+    "calls_max": 1
+   },
+   "host_calls": [
+    {
+     "tool": "read",
+     "input": {
+      "limit": null,
+      "path": "D:\\projects\\at-e2e\\pi-s01-r12-20261013-042029\\.claude\\skills\\adult-tension\\references\\operations.md",
+      "offset": null
+     },
+     "output": "<!-- 本文件由 tools/gen_references.py 生成，不要手改。 -->\n\n# 操作参考\n\n`commit-turn` 的 `operations` 是一个操作数组。操作按顺序应用，后面的操作看得到前面操作的效果；任何一个不合法，整个提交被拒绝、状态不变，错误列出全部问题及其 JSON 路径。NPC 拒绝玩家（`npc_response: refuse`）是合法的叙事结果，不是错误。\n\n提交里没有 `advance_time` 时，时钟默认推进 3 分钟。单次推进上限 30 天。\n\n## 提交的顶层字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `action_mode` | 枚举：`result` / `attempt` / `rewrite` / `continue` / `wait` | 是 | result / attempt / rewrite（“其实……”）/ continue / wait |\n| `player_input` | 字符串，≤2000 字 | 是 | 玩家这一句的原话（继续时可为空字符串） |\n| `player_authorized` | 布尔 | 否，默认 `false` | 玩家本人的话授权了玩家角色的移动、承诺、交易、同意、转折或设定修改时为 true |\n| `acts_on` | 数组（字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40}，0–8 项） 或 null | 否，默认 `null` | 玩家行动作用到的 NPC（身体、意志、财物）；attempt 不作用于任何 NPC 时写 [] |\n| `operations` | 数组（操作对象（按 `op` 区分），0–40 项） | 是 | 操作列表（可以为空数组） |\n| `content_tags` | 数组（字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40}，0–12 项） | 是 | 本回合正文涉及的内容标签（可为空数组）；标签表见完整上下文的 tags |\n| `intimate_participants` | 数组（字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40}，0–6 项） | 否，默认 `[]` | content_tags 含 intimate 或 explicit 时必填：亲密参与者（含玩家） |\n| `summary` | 字符串，≤120 字 | 是 | 本回合发生了什么，第三方视角，≤120 字 |\n| `open_action` | 字符串，≤80 字 | 是 | 回合停在哪里、谁在等谁，≤80 字 |\n| `quotes` | 数组（字符串，≤80 字，0–3 项） | 否，默认 `[]` | ≤3 条对后续有意义的原话，每条 ≤80 字 |\n| `chapter_summary` | 字符串，≤300 字 或 null | 否，默认 `null` | 上下文 requests.chapter_summary 为 true 时必填：上一章（到上一回合为止）的摘要，≤300 字；没有要求时不写 |\n| `prologue` | 字符串，≤300 字 或 null | 否，默认 `null` | 上下文 requests.prologue 为 true 时必填：把完整上下文 prologue_merge 里的旧前情与最早几章合并成一段前情，≤300 字；没有要求时不写 |\n| `replaces_turn` | 整数 1..1000000 或 null | 否，默认 `null` | “刚才不算，改成……”：填当前最后一个回合的回合号，引擎在同一事务里撤销它再应用本次提交 |\n\n## 操作一览\n\n| op | 作用 |\n|---|---|\n| `advance_time` | 推进游戏时钟：minutes / until / days 三选一；触发到期事件与状态到期结算。没有此操作时时钟默认推进 3 分钟 |\n| `move` | 角色移动到地点。玩家移动需要 result/attempt 模式并带 player_authorized；玩家换地点即换场景 |\n| `enter_scene` | 角色登场，加入当前场景 |\n| `exit_scene` | 角色离场；可写去向地点。玩家角色用 move |\n| `npc_response` | NPC 对玩家尝试的回应：refuse 拒绝 / negotiate 协商 / partial 有限配合 / surface 表面配合 / genuine 真诚配合。surface 必须写 true_intent（记为只有本人知道的事实） |\n| `npc_action` | NPC 自主行动。significant: true 的重大行动（主动接近、揭发、交易、离开、表白、挑衅等）受冷却限制；依据事实必须在其信息集中 |\n| `npc_state` | 更新 NPC 的情绪与状况（醉意、睡眠、受伤、外出等）；minutes 表示多久后自动消退 |\n| `add_fact` | 记录一条事实。public 在场者自动知道；private 只有 known_by；inner 是内心，只属于一个 NPC 且永不传播。误信用 truth: false + believed_by。正文里新写出、之后要继承的细节都要用它记下 |\n| `relationship` | 有向关系变化（from 对 to）：信任 -5..5（单次提交净变化 ≤2）、张力 0..5、亲近进程前进一个阶段（需要同一提交里玩家的行动 + 对方的 partial/genuine 回应）或后退。原因必填 |\n| `event_create` | 创建事件（约定、截止、风声、机会、伏笔、概率事件）。due 与 in_minutes 二选一且必须晚于现在；chance 必须带 probability，到期由引擎掷骰；涉及玩家的承诺需要 player_authorized；dedupe_key 与未结束事件不能重复 |\n| `event_resolve` | 在到期前结束事件：约定、截止、机会用 fulfilled（兑现）；伏笔、风声用 surfaced（提前浮出）。概率事件只能由引擎到期掷骰 |\n| `event_cancel` | 因剧情取消未结束的事件（outcome: cancelled_by_story） |\n| `roll` | 即时概率：引擎确定性掷骰后执行 on_success 或 on_failure（分支内不能再嵌套 roll，也不能推进时间）。结果以返回的 applied 为准 |\n| `player_update` | 玩家角色的姓名、称谓、背景、资源与风险。只能在 result 或 rewrite（“其实……”）模式、并带 player_authorized |\n| `reveal_fact` | 把一条事实从知情人告诉别人。只能沿已有的关系边进行，当面告知时双方都要在场；内心事实永远不能传播。告诉某人真相时，若他正误信同键的假事实，引擎记录他的信息集变化 |\n| `spread_rumor` | 传出一条走样的传闻：生成新的假事实（来源为传闻），原事实不变。不经渠道时沿关系边、双方在场；经世界里的走样渠道时可以传到没有关系边的人 |\n| `set_voice` | 切换 NPC 的表层/里层语态。玩家要求（player_request）优先；NPC 自主切入里层（npc_self）要写触发因素：alone 独处 / drunk 醉意 / breakdown 情绪崩溃 / exposed 被戳穿；revert 切回表层。语态只改变说话方式，不是关系升级，note 不能与同一提交里的关系变化共用原因 |\n| `intimacy_evidence` | 为私密倾向卡的某一项记一条证据。同一项同一方向需要至少 2 条来自不同回合的证据才会改动（界线项的放宽 remove 需要 3 条）；数值项用 increase/decrease，列表项用 add/remove，文字项用 set |\n| `identity_update` | 逐项修改身份卡（资源、限制、义务用 add/remove；权限、暴露风险、隐藏落差用 set）。身份卡不能整体替换 |\n| `npc_update` | 修改 NPC 的公开身份、外貌、当前目标、对关系的态度或处境（不含身份卡与倾向卡） |\n| `introduce_character` | 新角色登场：正文里第一次点名的人都要登场，只被提起、不在场的也算（present 写 false，location_id 写他所在的地点）；必须明确成年（age ≥ 18，adult_context 一句话说明成年身份），名字取自世界名字池且重要人物不同姓；按层级补齐字段（background：line；supporting：appearance、identity、decision 的 core_value 与 current_goal；major：再加完整 decision、intimacy、voices、situation）；性别要符合配对偏好，否则写 gender_reason |\n| `promote_character` | 把背景或配角升格（只升不降，保留 ID），并补齐新层级缺少的字段。身份卡与倾向卡只能在升格时创建一次，已有的不能再给 |\n| `leverage_set` | 登记把柄：一方开始拿捏另一方（把柄、债务、生计）时，必须在同一提交里登记。依据二选一：已有事实（持有方要知道它）或一句新事实。生效期间，双方之间的亲密提交被拒 |\n| `leverage_release` | 解除把柄（把柄被销毁、债务结清、秘密已经公开等），原因必填。同一提交里先解除再亲密不算解除 |\n| `offscreen_beat` | 离屏片段：不在场的重要 NPC 在这段时间里做了什么。只能写上下文 `offscreen_beat_candidates` 或时间推进要求的 NPC；子操作只能是这个 NPC 自己的行动、状态、移动，NPC 之间的关系与消息，以及不涉及玩家的事件与把柄 |\n| `twist_accept` | 接受一个转折：引用上下文 requests.twist_offer 或 get-context want_twist 给出的候选 id（写进 twist_id），或给出玩家口述的转折（category 与 text 必填）。玩家选定时用 result 模式并带 player_authorized；同一游戏日最多接受一次 |\n\n## `advance_time`\n\n推进游戏时钟：minutes / until / days 三选一；触发到期事件与状态到期结算。没有此操作时时钟默认推进 3 分钟\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`advance_time` | 是 |  |\n| `minutes` | 整数 1..43200 | 否 |  |\n| `until` | 枚举：`morning` / `noon` / `evening` / `night` / `next_morning` | 否 |  |\n| `days` | 整数 1..30 | 否 |  |\n\n不能出现在 `roll` 的分支里。\n\n## `move`\n\n角色移动到地点。玩家移动需要 result/attempt 模式并带 player_authorized；玩家换地点即换场景\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`move` | 是 |  |\n| `character_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `location_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n\n## `enter_scene`\n\n角色登场，加入当前场景\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`enter_scene` | 是 |  |\n| `character_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n\n## `exit_scene`\n\n角色离场；可写去向地点。玩家角色用 move\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`exit_scene` | 是 |  |\n| `character_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `to_location_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} 或 null | 否，默认 `null` |  |\n\n## `npc_response`\n\nNPC 对玩家尝试的回应：refuse 拒绝 / negotiate 协商 / partial 有限配合 / surface 表面配合 / genuine 真诚配合。surface 必须写 true_intent（记为只有本人知道的事实）\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`npc_response` | 是 |  |\n| `npc_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `response` | 枚举：`refuse` / `negotiate` / `partial` / `surface` / `genuine` | 是 |  |\n| `note` | 字符串，≤80 字 | 是 |  |\n| `basis_fact_ids` | 数组（字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40}，0–8 项） | 否，默认 `[]` |  |\n| `true_intent` | 字符串，≤120 字 或 null | 否，默认 `null` |  |\n\n## `npc_action`\n\nNPC 自主行动。significant: true 的重大行动（主动接近、揭发、交易、离开、表白、挑衅等）受冷却限制；依据事实必须在其信息集中\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`npc_action` | 是 |  |\n| `npc_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `action` | 字符串，≤120 字 | 是 |  |\n| `significant` | 布尔 | 否，默认 `false` |  |\n| `kind` | 枚举：`approach` / `reveal` / `trade` / `leave` / `confess` / `provoke` / `other` 或 null | 否，默认 `null` |  |\n| `target_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} 或 null | 否，默认 `null` |  |\n| `basis_fact_ids` | 数组（字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40}，0–8 项） | 否，默认 `[]` |  |\n\n## `npc_state`\n\n更新 NPC 的情绪与状况（醉意、睡眠、受伤、外出等）；minutes 表示多久后自动消退\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`npc_state` | 是 |  |\n| `npc_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `mood` | 字符串，≤20 字 或 null | 否，默认 `null` |  |\n| `add_conditions` | 数组（对象（状况），0–4 项） | 否，默认 `[]` |  |\n| `remove_conditions` | 数组（枚举：`drunk` / `asleep` / `unconscious` / `injured` / `away` / `busy` / `other`，0–7 项） | 否，默认 `[]` |  |\n\n#### `add_conditions[]` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `kind` | 枚举：`drunk` / `asleep` / `unconscious` / `injured` / `away` / `busy` / `other` | 是 |  |\n| `text` | 字符串，≤40 字 | 是 |  |\n| `minutes` | 整数 1..43200 或 null | 否，默认 `null` |  |\n\n## `add_fact`\n\n记录一条事实。public 在场者自动知道；private 只有 known_by；inner 是内心，只属于一个 NPC 且永不传播。误信用 truth: false + believed_by。正文里新写出、之后要继承的细节都要用它记下\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`add_fact` | 是 |  |\n| `key` | 字符串，≤80 字，点分的 ASCII 小写键，例如 lin_wan.secret.press | 是 |  |\n| `text` | 字符串，≤120 字 | 是 |  |\n| `truth` | 布尔 | 否，默认 `true` |  |\n| `known_by` | 数组（字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40}，0–20 项） | 否，默认 `[]` |  |\n| `believed_by` | 数组（字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40}，0–20 项） | 否，默认 `[]` |  |\n| `visibility` | 枚举：`public` / `private` / `inner` | 是 |  |\n| `origin` | 枚举：`observed` / `told` / `retcon` | 是 |  |\n| `spread` | 布尔 | 否，默认 `false` |  |\n\n## `relationship`\n\n有向关系变化（from 对 to）：信任 -5..5（单次提交净变化 ≤2）、张力 0..5、亲近进程前进一个阶段（需要同一提交里玩家的行动 + 对方的 partial/genuine 回应）或后退。原因必填\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`relationship` | 是 |  |\n| `from` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `to` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `trust_delta` | 整数 -2..2 | 否，默认 `0` |  |\n| `tension_delta` | 整数 -5..5 | 否，默认 `0` |  |\n| `stage_advance` | 布尔 | 否，默认 `false` |  |\n| `stage_retreat_to` | 枚举：`stranger` / `acquainted` / `familiar` / `flirting` / `testing` / `intimate` / `committed` 或 null | 否，默认 `null` |  |\n| `reason` | 字符串，≤80 字 | 是 |  |\n\n## `event_create`\n\n创建事件（约定、截止、风声、机会、伏笔、概率事件）。due 与 in_minutes 二选一且必须晚于现在；chance 必须带 probability，到期由引擎掷骰；涉及玩家的承诺需要 player_authorized；dedupe_key 与未结束事件不能重复\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`event_create` | 是 |  |\n| `kind` | 枚举：`promise` / `deadline` / `rumor` / `opportunity` / `foreshadow` / `chance` | 是 |  |\n| `title` | 字符串，≤40 字 | 是 |  |\n| `text` | 字符串，≤120 字 或 null | 否，默认 `null` |  |\n| `tier` | 枚举：`immediate` / `near` / `far` 或 null | 否，默认 `null` |  |\n| `participants` | 数组（字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40}，1–12 项） | 是 |  |\n| `due` | 对象（游戏时钟） | 否 |  |\n| `in_minutes` | 整数 1..576000 | 否 |  |\n| `probability` | 数值 (0, 1) 或 null | 否，默认 `null` |  |\n| `dedupe_key` | 字符串，≤80 字，点分的 ASCII 小写键，例如 lin_wan.secret.press | 是 |  |\n| `repeat` | 布尔 | 否，默认 `false` |  |\n\n#### `due` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `day` | 整数 1..100000 | 是 |  |\n| `minute` | 整数 0..1439 | 是 |  |\n\n## `event_resolve`\n\n在到期前结束事件：约定、截止、机会用 fulfilled（兑现）；伏笔、风声用 surfaced（提前浮出）。概率事件只能由引擎到期掷骰\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`event_resolve` | 是 |  |\n| `event_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `outcome` | 枚举：`fulfilled` / `surfaced` | 是 |  |\n| `note` | 字符串，≤80 字 | 是 |  |\n\n## `event_cancel`\n\n因剧情取消未结束的事件（outcome: cancelled_by_story）\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`event_cancel` | 是 |  |\n| `event_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `reason` | 字符串，≤80 字 | 是 |  |\n\n## `roll`\n\n即时概率：引擎确定性掷骰后执行 on_success 或 on_failure（分支内不能再嵌套 roll，也不能推进时间）。结果以返回的 applied 为准\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`roll` | 是 |  |\n| `purpose` | 字符串，≤60 字 | 是 |  |\n| `probability` | 数值 (0, 1) | 是 |  |\n| `on_success` | 数组（分支操作，0–8 项） | 否，默认 `[]` |  |\n| `on_failure` | 数组（分支操作，0–8 项） | 否，默认 `[]` |  |\n\n不能出现在 `roll` 的分支里。\n\n## `player_update`\n\n玩家角色的姓名、称谓、背景、资源与风险。只能在 result 或 rewrite（“其实……”）模式、并带 player_authorized\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`player_update` | 是 |  |\n| `name` | 字符串，≤12 字 或 null | 否，默认 `null` |  |\n| `title` | 字符串，≤12 字 或 null | 否，默认 `null` |  |\n| `add_background` | 字符串，≤120 字 或 null | 否，默认 `null` |  |\n| `add_resources` | 数组（字符串，≤60 字，0–4 项） | 否，默认 `[]` |  |\n| `add_risks` | 数组（字符串，≤60 字，0–4 项） | 否，默认 `[]` |  |\n\n## `reveal_fact`\n\n把一条事实从知情人告诉别人。只能沿已有的关系边进行，当面告知时双方都要在场；内心事实永远不能传播。告诉某人真相时，若他正误信同键的假事实，引擎记录他的信息集变化\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`reveal_fact` | 是 |  |\n| `fact_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `from` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `to` | 数组（字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40}，1–12 项） | 是 |  |\n| `spread` | 布尔 | 否，默认 `false` |  |\n\n## `spread_rumor`\n\n传出一条走样的传闻：生成新的假事实（来源为传闻），原事实不变。不经渠道时沿关系边、双方在场；经世界里的走样渠道时可以传到没有关系边的人\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`spread_rumor` | 是 |  |\n| `from` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `source_fact_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} 或 null | 否，默认 `null` |  |\n| `key` | 字符串，≤80 字，点分的 ASCII 小写键，例如 lin_wan.secret.press | 是 |  |\n| `text` | 字符串，≤120 字 | 是 |  |\n| `believed_by` | 数组（字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40}，1–20 项） | 是 |  |\n| `channel_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} 或 null | 否，默认 `null` |  |\n\n## `set_voice`\n\n切换 NPC 的表层/里层语态。玩家要求（player_request）优先；NPC 自主切入里层（npc_self）要写触发因素：alone 独处 / drunk 醉意 / breakdown 情绪崩溃 / exposed 被戳穿；revert 切回表层。语态只改变说话方式，不是关系升级，note 不能与同一提交里的关系变化共用原因\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`set_voice` | 是 |  |\n| `npc_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `voice` | 枚举：`surface` / `inner` | 是 |  |\n| `cause` | 枚举：`player_request` / `npc_self` / `revert` | 是 |  |\n| `trigger` | 枚举：`alone` / `drunk` / `breakdown` / `exposed` 或 null | 否，默认 `null` |  |\n| `note` | 字符串，≤80 字 | 是 |  |\n\n## `intimacy_evidence`\n\n为私密倾向卡的某一项记一条证据。同一项同一方向需要至少 2 条来自不同回合的证据才会改动（界线项的放宽 remove 需要 3 条）；数值项用 increase/decrease，列表项用 add/remove，文字项用 set\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`intimacy_evidence` | 是 |  |\n| `npc_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `item` | 枚举：`desire_level` / `self_control` / `attraction_sources` / `likes` / `dislikes` / `preconditions` / `boundaries` / `expression` / `desired_position` | 是 |  |\n| `direction` | 枚举：`increase` / `decrease` / `add` / `remove` / `set` | 是 |  |\n| `value` | 字符串，≤80 字 或 null | 否，默认 `null` |  |\n| `evidence` | 字符串，≤80 字 | 是 |  |\n\n## `identity_update`\n\n逐项修改身份卡（资源、限制、义务用 add/remove；权限、暴露风险、隐藏落差用 set）。身份卡不能整体替换\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`identity_update` | 是 |  |\n| `npc_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `item` | 枚举：`authority` / `resources` / `limits` / `obligations` / `exposure_risk` / `hidden_mismatch` | 是 |  |\n| `action` | 枚举：`add` / `remove` / `set` | 是 |  |\n| `value` | 字符串，≤120 字 | 是 |  |\n| `reason` | 字符串，≤80 字 | 是 |  |\n\n## `npc_update`\n\n修改 NPC 的公开身份、外貌、当前目标、对关系的态度或处境（不含身份卡与倾向卡）\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`npc_update` | 是 |  |\n| `npc_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `field` | 枚举：`public_role` / `appearance` / `current_goal` / `relationship_stance` / `situation_trigger` / `situation_pressure` | 是 |  |\n| `value` | 字符串，≤120 字 | 是 |  |\n| `reason` | 字符串，≤80 字 | 是 |  |\n\n## `introduce_character`\n\n新角色登场：正文里第一次点名的人都要登场，只被提起、不在场的也算（present 写 false，location_id 写他所在的地点）；必须明确成年（age ≥ 18，adult_context 一句话说明成年身份），名字取自世界名字池且重要人物不同姓；按层级补齐字段（background：line；supporting：appearance、identity、decision 的 core_value 与 current_goal；major：再加完整 decision、intimacy、voices、situation）；性别要符合配对偏好，否则写 gender_reason\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`introduce_character` | 是 |  |\n| `id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `name` | 字符串，≤12 字 | 是 |  |\n| `tier` | 枚举：`background` / `supporting` / `major` | 是 |  |\n| `age` | 整数 0..120 | 是 |  |\n| `gender` | 枚举：`female` / `male` / `nonbinary` | 是 |  |\n| `gender_reason` | 字符串，≤80 字 或 null | 否，默认 `null` |  |\n| `adult_context` | 字符串，≤80 字 | 是 |  |\n| `public_role` | 字符串，≤30 字 | 是 |  |\n| `kin_of` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} 或 null | 否，默认 `null` |  |\n| `present` | 布尔 | 否，默认 `true` |  |\n| `location_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} 或 null | 否，默认 `null` |  |\n| `appearance` | 字符串，≤120 字 或 null | 否，默认 `null` |  |\n| `line` | 字符串，≤120 字 或 null | 否，默认 `null` |  |\n| `identity` | 对象（身份） 或 null | 否，默认 `null` |  |\n| `decision` | 对象（决策卡） 或 null | 否，默认 `null` |  |\n| `intimacy` | 对象（私密倾向卡） 或 null | 否，默认 `null` |  |\n| `voices` | 对象（语态） 或 null | 否，默认 `null` |  |\n| `situation` | 对象（处境） 或 null | 否，默认 `null` |  |\n| `schedule` | 数组（对象，0–6 项） 或 null | 否，默认 `null` |  |\n\n#### `identity` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `authority` | 字符串，≤120 字 | 是 |  |\n| `resources` | 数组（字符串，≤80 字，1–8 项） | 是 |  |\n| `limits` | 数组（字符串，≤80 字，1–8 项） | 是 |  |\n| `obligations` | 数组（字符串，≤80 字，0–8 项） | 否，默认 `[]` |  |\n| `exposure_risk` | 字符串，≤120 字 | 是 |  |\n| `hidden_mismatch` | 字符串，≤120 字 | 是 |  |\n\n#### `decision` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `core_value` | 字符串，≤60 字 | 否 |  |\n| `current_goal` | 字符串，≤80 字 | 否 |  |\n| `pressure_responses` | 对象（压力反应四档） | 否 |  |\n| `withdrawal` | 字符串，≤120 字 | 否 |  |\n| `relationship_stance` | 字符串，≤80 字 | 否 |  |\n| `contrast` | 字符串，≤80 字 | 否 |  |\n| `prefers` | 数组（字符串，≤80 字，1–8 项） | 否 |  |\n| `avoids` | 数组（字符串，≤80 字，1–8 项） | 否 |  |\n| `never` | 数组（字符串，≤80 字，1–8 项） | 否 |  |\n\n#### `intimacy` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `desire_level` | 整数 0..5 | 是 |  |\n| `attraction_sources` | 数组（字符串，≤80 字，2–8 项） | 是 |  |\n| `likes` | 数组（字符串，≤80 字，1–8 项） | 是 |  |\n| `dislikes` | 数组（字符串，≤80 字，1–8 项） | 是 |  |\n| `preconditions` | 数组（字符串，≤80 字，1–8 项） | 是 |  |\n| `boundaries` | 数组（字符串，≤80 字，1–8 项） | 是 |  |\n| `expression` | 字符串，≤80 字 | 是 |  |\n| `self_control` | 整数 0..5 | 是 |  |\n| `desired_position` | 字符串，≤40 字 | 是 |  |\n\n#### `voices` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `surface` | 字符串，≤120 字 | 是 |  |\n| `inner` | 字符串，≤120 字 | 是 |  |\n\n#### `situation` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `trigger` | 字符串，≤120 字 | 是 |  |\n| `pressure` | 字符串，≤120 字 | 是 |  |\n| `exits` | 数组（对象，2–4 项） | 是 |  |\n\n#### `schedule[]` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `from` | 整数 0..1439 | 是 |  |\n| `to` | 整数 0..1439 | 是 |  |\n| `location_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n\n#### `pressure_responses` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `low` | 字符串，≤120 字 | 是 |  |\n| `mid` | 字符串，≤120 字 | 是 |  |\n| `high` | 字符串，≤120 字 | 是 |  |\n| `breaking` | 字符串，≤120 字 | 是 |  |\n\n#### `exits[]` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `option` | 字符串，≤80 字 | 是 |  |\n| `cost` | 字符串，≤120 字 | 是 |  |\n\n不能出现在 `roll` 的分支里。\n\n## `promote_character`\n\n把背景或配角升格（只升不降，保留 ID），并补齐新层级缺少的字段。身份卡与倾向卡只能在升格时创建一次，已有的不能再给\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`promote_character` | 是 |  |\n| `character_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `to_tier` | 枚举：`supporting` / `major` | 是 |  |\n| `appearance` | 字符串，≤120 字 或 null | 否，默认 `null` |  |\n| `line` | 字符串，≤120 字 或 null | 否，默认 `null` |  |\n| `identity` | 对象（身份） 或 null | 否，默认 `null` |  |\n| `decision` | 对象（决策卡） 或 null | 否，默认 `null` |  |\n| `intimacy` | 对象（私密倾向卡） 或 null | 否，默认 `null` |  |\n| `voices` | 对象（语态） 或 null | 否，默认 `null` |  |\n| `situation` | 对象（处境） 或 null | 否，默认 `null` |  |\n| `schedule` | 数组（对象，0–6 项） 或 null | 否，默认 `null` |  |\n\n#### `identity` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `authority` | 字符串，≤120 字 | 是 |  |\n| `resources` | 数组（字符串，≤80 字，1–8 项） | 是 |  |\n| `limits` | 数组（字符串，≤80 字，1–8 项） | 是 |  |\n| `obligations` | 数组（字符串，≤80 字，0–8 项） | 否，默认 `[]` |  |\n| `exposure_risk` | 字符串，≤120 字 | 是 |  |\n| `hidden_mismatch` | 字符串，≤120 字 | 是 |  |\n\n#### `decision` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `core_value` | 字符串，≤60 字 | 否 |  |\n| `current_goal` | 字符串，≤80 字 | 否 |  |\n| `pressure_responses` | 对象（压力反应四档） | 否 |  |\n| `withdrawal` | 字符串，≤120 字 | 否 |  |\n| `relationship_stance` | 字符串，≤80 字 | 否 |  |\n| `contrast` | 字符串，≤80 字 | 否 |  |\n| `prefers` | 数组（字符串，≤80 字，1–8 项） | 否 |  |\n| `avoids` | 数组（字符串，≤80 字，1–8 项） | 否 |  |\n| `never` | 数组（字符串，≤80 字，1–8 项） | 否 |  |\n\n#### `intimacy` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `desire_level` | 整数 0..5 | 是 |  |\n| `attraction_sources` | 数组（字符串，≤80 字，2–8 项） | 是 |  |\n| `likes` | 数组（字符串，≤80 字，1–8 项） | 是 |  |\n| `dislikes` | 数组（字符串，≤80 字，1–8 项） | 是 |  |\n| `preconditions` | 数组（字符串，≤80 字，1–8 项） | 是 |  |\n| `boundaries` | 数组（字符串，≤80 字，1–8 项） | 是 |  |\n| `expression` | 字符串，≤80 字 | 是 |  |\n| `self_control` | 整数 0..5 | 是 |  |\n| `desired_position` | 字符串，≤40 字 | 是 |  |\n\n#### `voices` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `surface` | 字符串，≤120 字 | 是 |  |\n| `inner` | 字符串，≤120 字 | 是 |  |\n\n#### `situation` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `trigger` | 字符串，≤120 字 | 是 |  |\n| `pressure` | 字符串，≤120 字 | 是 |  |\n| `exits` | 数组（对象，2–4 项） | 是 |  |\n\n#### `schedule[]` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `from` | 整数 0..1439 | 是 |  |\n| `to` | 整数 0..1439 | 是 |  |\n| `location_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n\n#### `pressure_responses` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `low` | 字符串，≤120 字 | 是 |  |\n| `mid` | 字符串，≤120 字 | 是 |  |\n| `high` | 字符串，≤120 字 | 是 |  |\n| `breaking` | 字符串，≤120 字 | 是 |  |\n\n#### `exits[]` 的字段\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `option` | 字符串，≤80 字 | 是 |  |\n| `cost` | 字符串，≤120 字 | 是 |  |\n\n不能出现在 `roll` 的分支里。\n\n## `leverage_set`\n\n登记把柄：一方开始拿捏另一方（把柄、债务、生计）时，必须在同一提交里登记。依据二选一：已有事实（持有方要知道它）或一句新事实。生效期间，双方之间的亲密提交被拒\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`leverage_set` | 是 |  |\n| `holder` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `subject` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `basis_fact_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} 或 null | 否，默认 `null` |  |\n| `basis_text` | 字符串，≤120 字 或 null | 否，默认 `null` |  |\n| `origin` | 字符串，≤60 字 | 是 |  |\n\n## `leverage_release`\n\n解除把柄（把柄被销毁、债务结清、秘密已经公开等），原因必填。同一提交里先解除再亲密不算解除\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`leverage_release` | 是 |  |\n| `leverage_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `reason` | 字符串，≤80 字 | 是 |  |\n\n## `offscreen_beat`\n\n离屏片段：不在场的重要 NPC 在这段时间里做了什么。只能写上下文 `offscreen_beat_candidates` 或时间推进要求的 NPC；子操作只能是这个 NPC 自己的行动、状态、移动，NPC 之间的关系与消息，以及不涉及玩家的事件与把柄\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`offscreen_beat` | 是 |  |\n| `npc_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} | 是 |  |\n| `summary` | 字符串，≤120 字 | 是 |  |\n| `operations` | 数组（离屏操作，0–6 项） | 否，默认 `[]` |  |\n\n不能出现在 `roll` 的分支里。\n\n## `twist_accept`\n\n接受一个转折：引用上下文 requests.twist_offer 或 get-context want_twist 给出的候选 id（写进 twist_id），或给出玩家口述的转折（category 与 text 必填）。玩家选定时用 result 模式并带 player_authorized；同一游戏日最多接受一次\n\n| 字段 | 类型 | 必填 | 说明 |\n|---|---|---|---|\n| `op` | 枚举：`twist_accept` | 是 |  |\n| `twist_id` | 字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40} 或 null | 否，默认 `null` |  |\n| `category` | 枚举：`信息` / `人事` / `资源` / `制度` / `时限` / `关系` / `意外` 或 null | 否，默认 `null` |  |\n| `text` | 字符串，≤160 字 或 null | 否，默认 `null` |  |\n\n不能出现在 `roll` 的分支里。\n\n## 取值表\n\n- 回应光谱：`refuse` 拒绝、`negotiate` 协商、`partial` 有限配合、`surface` 表面配合、`genuine` 真诚配合\n- 关系阶段（世界可改名）：`stranger` 陌生、`acquainted` 认识、`familiar` 熟络、`flirting` 暧昧、`testing` 试探、`intimate` 亲密、`committed` 稳定\n- 事件到期：`promise` → `expired`、`deadline` → `expired`、`opportunity` → `expired`、`foreshadow` → `surfaced`、`rumor` → `surfaced`；`chance` 由引擎掷骰得到 `hit` / `miss`\n- 状况：`drunk`、`asleep`、`unconscious`、`injured`、`away`、`busy`、`other`（其中 `drunk`、`asleep`、`unconscious` 的角色不参与亲密场景）\n",
+     "status": "completed"
+    },
+    {
+     "tool": "bash",
+     "input": {
+      "command": "python \"D:/projects/at-e2e/pi-s01-r12-20261013-042029/.claude/skills/adult-tension/scripts/adult_tension.py\" commit-turn --json --input-file - <<'AT_JSON'\n{\n  \"encoding_check\": \"汉字\",\n  \"session_id\": \"s_34396122\",\n  \"request_id\": \"r_5630eb17ad0f\",\n  \"expected_revision\": 1,\n  \"action_mode\": \"result\",\n  \"player_input\": \"我先看看四周\",\n  \"player_authorized\": false,\n  \"acts_on\": [],\n  \"operations\": [\n    {\n      \"op\": \"add_fact\",\n      \"key\": \"sky_lounge.surroundings.quiet\",\n      \"text\": \"酒廊内空旷安静，晚宴宾客已全数离开，唯有秦北辰如影随形守在门口阴影处。\",\n      \"visibility\": \"public\",\n      \"origin\": \"observed\"\n    },\n    {\n      \"op\": \"npc_action\",\n      \"npc_id\": \"chairwoman_gu\",\n      \"action\": \"见顾清和先打量四周，没有催促，指节在提案封皮上轻轻叩了叩，眼神依然定在他身上。\"\n    },\n    {\n      \"op\": \"advance_time\",\n      \"minutes\": 2\n    }\n  ],\n  \"content_tags\": [\"workplace\"],\n  \"summary\": \"顾清和没有急于翻看提案，而是先环视四周环境；萧雨桐安静等待他的反应。\",\n  \"open_action\": \"萧雨桐看着顾清和，等待他将目光落回提案上或开口说话。\"\n}\nAT_JSON"
+     },
+     "output": "{\"ok\":true,\"data\":{\"revision\":2,\"turn\":2,\"applied\":[{\"op\":\"add_fact\",\"fact_id\":\"f10\",\"key\":\"sky_lounge.surroundings.quiet\",\"origin\":\"observed\",\"known_by\":[\"player\",\"chairwoman_gu\",\"personal_bodyguard\"]},{\"op\":\"npc_action\",\"npc_id\":\"chairwoman_gu\",\"significant\":false,\"kind\":null},{\"op\":\"advance_time\",\"minutes\":2,\"default\":false,\"clock\":{\"day\":1,\"minute\":1382},\"label\":\"第一天 23:02\",\"new_scene\":false}],\"resolved_events\":[],\"simulation\":null,\"clock\":{\"day\":1,\"minute\":1382,\"label\":\"第一天 23:02\"},\"default_time_advance\":false,\"context\":{\"depth\":\"brief\",\"session_id\":\"s_34396122\",\"revision\":2,\"turn\":2,\"mode\":\"daily\",\"clock\":{\"day\":1,\"minute\":1382,\"label\":\"第一天 23:02\"},\"scene\":{\"id\":\"sc1\",\"location_id\":\"loc_tower_sky_lounge\",\"location\":\"集团大厦顶层的空中酒廊\",\"privacy\":\"public\",\"present\":[\"player\",\"chairwoman_gu\",\"personal_bodyguard\"]},\"player\":{\"name\":\"顾清和\",\"title\":\"清和\",\"age\":25,\"gender\":\"male\",\"role\":\"跑财经线的记者\"},\"present_npcs\":[{\"id\":\"chairwoman_gu\",\"name\":\"萧雨桐\",\"age\":21,\"gender\":\"female\",\"tier\":\"major\",\"role\":\"千亿财阀的新任董事长\",\"mood\":null,\"voice\":\"surface\",\"can_act\":true,\"trust_to_player\":3,\"tension\":3,\"stage\":\"共顶钨钢\",\"goal\":\"和保镖一起踹开车门，游出暗渠\",\"stance\":\"父亲生前亲自挑选的保镖，三年来寸步不离，董事长人前叫一声“先生”，私下却只在保镖面前脱下过高跟鞋。\"},{\"id\":\"personal_bodyguard\",\"name\":\"秦北辰\",\"age\":32,\"gender\":\"male\",\"tier\":\"major\",\"role\":\"董事长的贴身保镖\",\"mood\":null,\"voice\":\"surface\",\"can_act\":true,\"trust_to_player\":3,\"tension\":2,\"stage\":\"摸索泄孔\",\"goal\":\"用后背顶住对侧车门，给董事长腾出发力的支点\",\"stance\":\"三年来每一个深夜都站在休息室门外，董事长没叫就不进去，董事长叫了也只站在门边。\"}],\"nearby\":[{\"id\":\"bg_board_member\",\"name\":\"老董事钱老\",\"role\":\"集团的元老董事\"},{\"id\":\"bg_financial_reporter\",\"name\":\"财经记者小林\",\"role\":\"盯着集团的财经记者\"},{\"id\":\"bg_gala_host\",\"name\":\"晚宴主持人苏曼\",\"role\":\"慈善晚宴的主持人\"}],\"due_soon\":[],\"known_facts\":[{\"id\":\"f10\",\"text\":\"酒廊内空旷安静，晚宴宾客已全数离开，唯有秦北辰如影随形守在门口阴影处。\",\"visibility\":\"public\"},{\"id\":\"f7\",\"text\":\"暴雨夜从董事会回来，董事长靠在后座闭着眼，保镖坐在旁边盯着窗外，车子忽然拐进了一条陌生的辅路。\",\"visibility\":\"public\"},{\"id\":\"f8\",\"text\":\"暗渠里的洪水一寸寸往上涨，顶棚下的空气越来越少。\",\"visibility\":\"public\"},{\"id\":\"f9\",\"text\":\"冰冷的积水漫过胸口，两人只能贴紧了互相取暖。\",\"visibility\":\"public\"},{\"id\":\"f5\",\"text\":\"顾清和：盯了这家财阀三年，手里有一份没发出去的稿子，写的是老董事长猝逝的疑点。\",\"visibility\":\"private\"},{\"id\":\"f6\",\"text\":\"顾清和：稿子发出去，董事长的位置可能就保不住了。\",\"visibility\":\"private\"}],\"recent\":[\"顾清和没有急于翻看提案，而是先环视四周环境；萧雨桐安静等待他的反应。\"],\"last_quotes\":[],\"open_action\":\"萧雨桐看着顾清和，等待他将目光落回提案上或开口说话。\",\"scene_responses\":[],\"safety\":{\"paused\":false,\"boundaries\":[],\"leverage\":[]},\"preferences\":{\"inner_view\":false,\"assistant\":false,\"offscreen_simulation\":true,\"person\":\"second\"},\"save\":{\"current_slot\":null,\"turns_since_save\":1},\"requests\":{\"chapter_summary\":false,\"prologue\":false,\"twist_offer\":null,\"offscreen_beat_candidates\":[]},\"size_bytes\":3001},\"next_request_id\":\"r_6aa6a5cc2129\",\"replayed\":false},\"error\":null}",
+     "status": "completed"
+    }
+   ],
+   "runtime_calls": [
+    {
+     "ts": "2026-10-13T04:21:23",
+     "ms": 65.6,
+     "pid": 82408,
+     "skill_root": "D:\\projects\\at-e2e\\pi-s01-r12-20261013-042029\\.claude\\skills\\adult-tension",
+     "argv": [
+      "commit-turn",
+      "--json",
+      "--input-file",
+      "-"
+     ],
+     "input": {
+      "session_id": "s_34396122",
+      "request_id": "r_5630eb17ad0f",
+      "expected_revision": 1,
+      "action_mode": "result",
+      "player_input": "我先看看四周",
+      "player_authorized": false,
+      "acts_on": [],
+      "operations": [
+       {
+        "op": "add_fact",
+        "key": "sky_lounge.surroundings.quiet",
+        "text": "酒廊内空旷安静，晚宴宾客已全数离开，唯有秦北辰如影随形守在门口阴影处。",
+        "visibility": "public",
+        "origin": "observed"
+       },
+       {
+        "op": "npc_action",
+        "npc_id": "chairwoman_gu",
+        "action": "见顾清和先打量四周，没有催促，指节在提案封皮上轻轻叩了叩，眼神依然定在他身上。"
+       },
+       {
+        "op": "advance_time",
+        "minutes": 2
+       }
+      ],
+      "content_tags": [
+       "workplace"
+      ],
+      "summary": "顾清和没有急于翻看提案，而是先环视四周环境；萧雨桐安静等待他的反应。",
+      "open_action": "萧雨桐看着顾清和，等待他将目光落回提案上或开口说话。"
+     },
+     "exit": 0,
+     "envelope": {
+      "ok": true,
+      "data": {
+       "revision": 2,
+       "turn": 2,
+       "applied": [
+        {
+         "op": "add_fact",
+         "fact_id": "f10",
+         "key": "sky_lounge.surroundings.quiet",
+         "origin": "observed",
+         "known_by": [
+          "player",
+          "chairwoman_gu",
+          "personal_bodyguard"
+         ]
+        },
+        {
+         "op": "npc_action",
+         "npc_id": "chairwoman_gu",
+         "significant": false,
+         "kind": null
+        },
+        {
+         "op": "advance_time",
+         "minutes": 2,
+         "default": false,
+         "clock": {
+          "day": 1,
+          "minute": 1382
+         },
+         "label": "第一天 23:02",
+         "new_scene": false
+        }
+       ],
+       "resolved_events": [],
+       "simulation": null,
+       "clock": {
+        "day": 1,
+        "minute": 1382,
+        "label": "第一天 23:02"
+       },
+       "default_time_advance": false,
+       "context": {
+        "depth": "brief",
+        "session_id": "s_34396122",
+        "revision": 2,
+        "turn": 2,
+        "mode": "daily",
+        "clock": {
+         "day": 1,
+         "minute": 1382,
+         "label": "第一天 23:02"
+        },
+        "scene": {
+         "id": "sc1",
+         "location_id": "loc_tower_sky_lounge",
+         "location": "集团大厦顶层的空中酒廊",
+         "privacy": "public",
+         "present": [
+          "player",
+          "chairwoman_gu",
+          "personal_bodyguard"
+         ]
+        },
+        "player": {
+         "name": "顾清和",
+         "title": "清和",
+         "age": 25,
+         "gender": "male",
+         "role": "跑财经线的记者"
+        },
+        "present_npcs": [
+         {
+          "id": "chairwoman_gu",
+          "name": "萧雨桐",
+          "age": 21,
+          "gender": "female",
+          "tier": "major",
+          "role": "千亿财阀的新任董事长",
+          "mood": null,
+          "voice": "surface",
+          "can_act": true,
+          "trust_to_player": 3,
+          "tension": 3,
+          "stage": "共顶钨钢",
+          "goal": "和保镖一起踹开车门，游出暗渠",
+          "stance": "父亲生前亲自挑选的保镖，三年来寸步不离，董事长人前叫一声“先生”，私下却只在保镖面前脱下过高跟鞋。"
+         },
+         {
+          "id": "personal_bodyguard",
+          "name": "秦北辰",
+          "age": 32,
+          "gender": "male",
+          "tier": "major",
+          "role": "董事长的贴身保镖",
+          "mood": null,
+          "voice": "surface",
+          "can_act": true,
+          "trust_to_player": 3,
+          "tension": 2,
+          "stage": "摸索泄孔",
+          "goal": "用后背顶住对侧车门，给董事长腾出发力的支点",
+          "stance": "三年来每一个深夜都站在休息室门外，董事长没叫就不进去，董事长叫了也只站在门边。"
+         }
+        ],
+        "nearby": [
+         {
+          "id": "bg_board_member",
+          "name": "老董事钱老",
+          "role": "集团的元老董事"
+         },
+         {
+          "id": "bg_financial_reporter",
+          "name": "财经记者小林",
+          "role": "盯着集团的财经记者"
+         },
+         {
+          "id": "bg_gala_host",
+          "name": "晚宴主持人苏曼",
+          "role": "慈善晚宴的主持人"
+         }
+        ],
+        "due_soon": [],
+        "known_facts": [
+         {
+          "id": "f10",
+          "text": "酒廊内空旷安静，晚宴宾客已全数离开，唯有秦北辰如影随形守在门口阴影处。",
+          "visibility": "public"
+         },
+         {
+          "id": "f7",
+          "text": "暴雨夜从董事会回来，董事长靠在后座闭着眼，保镖坐在旁边盯着窗外，车子忽然拐进了一条陌生的辅路。",
+          "visibility": "public"
+         },
+         {
+          "id": "f8",
+          "text": "暗渠里的洪水一寸寸往上涨，顶棚下的空气越来越少。",
+          "visibility": "public"
+         },
+         {
+          "id": "f9",
+          "text": "冰冷的积水漫过胸口，两人只能贴紧了互相取暖。",
+          "visibility": "public"
+         },
+         {
+          "id": "f5",
+          "text": "顾清和：盯了这家财阀三年，手里有一份没发出去的稿子，写的是老董事长猝逝的疑点。",
+          "visibility": "private"
+         },
+         {
+          "id": "f6",
+          "text": "顾清和：稿子发出去，董事长的位置可能就保不住了。",
+          "visibility": "private"
+         }
+        ],
+        "recent": [
+         "顾清和没有急于翻看提案，而是先环视四周环境；萧雨桐安静等待他的反应。"
+        ],
+        "last_quotes": [],
+        "open_action": "萧雨桐看着顾清和，等待他将目光落回提案上或开口说话。",
+        "scene_responses": [],
+        "safety": {
+         "paused": false,
+         "boundaries": [],
+         "leverage": []
+        },
+        "preferences": {
+         "inner_view": false,
+         "assistant": false,
+         "offscreen_simulation": true,
+         "person": "second"
+        },
+        "save": {
+         "current_slot": null,
+         "turns_since_save": 1
+        },
+        "requests": {
+         "chapter_summary": false,
+         "prologue": false,
+         "twist_offer": null,
+         "offscreen_beat_candidates": []
+        },
+        "size_bytes": 3001
+       },
+       "next_request_id": "r_6aa6a5cc2129",
+       "replayed": false
+      },
+      "error": null
+     }
+    }
+   ],
+   "calls_source": "trace",
+   "text": "你没有急着低头去翻那份提案，而是先不动声色地环视了一圈整间空中酒廊。\n\n挑高近六米的环形空间里，水晶壁灯已经调暗了大半，只余下吧台和你们这一桌上方微暖的射灯。不远处的长桌上，慈善晚宴撤场后还没来得及收走的香槟塔折射着冷清的碎光；原本攒动着元老董事、合作商与同行记者的沙发区，此刻空空荡荡，没有半个偷听的耳目。\n\n唯一的活人动静在十几步外的酒廊双开门边——贴身保镖秦北辰笔直地立在廊柱投下的阴影里，宽阔的肩背如同一堵沉默的墙，目光穿过半明半暗的大厅，冷峻而克制地护持着三步之外的界限。而在另一侧，整面巨大的钢化落地窗正承受着狂风暴雨的冲刷，密集的雨线顺着玻璃急速滑落，窗外脚下的城市灯火在夜雨里明灭不定。\n\n见你先确认四周的动静，萧雨桐并没有催促。她往椅背上微微靠了靠，修长白皙的指节在深色提案封皮上轻轻叩了两下，唇角掠过一丝极淡的弧度，那双清亮而沉静的眼睛依旧一瞬不瞬地看着你，等着你收回目光。\n\n【时间】第一天 23:02｜【地点】集团大厦顶层的空中酒廊｜回合：2",
+   "seconds": 23.2,
+   "finish": {
+    "stop": "stop",
+    "output_tokens": 454
+   },
+   "model": "local-gemini/gemini-3.8-flash-high"
+  },
+  {
+   "index": 4,
+   "conversation": "A",
+   "input": "继续",
+   "expect": {
+    "kind": "turn",
+    "calls_max": 1
+   },
+   "host_calls": [
+    {
+     "tool": "bash",
+     "input": {
+      "command": "python \"D:/projects/at-e2e/pi-s01-r12-20261013-042029/.claude/skills/adult-tension/scripts/adult_tension.py\" commit-turn --json --input-file - <<'AT_JSON'\n{\n  \"encoding_check\": \"汉字\",\n  \"session_id\": \"s_34396122\",\n  \"request_id\": \"r_6aa6a5cc2129\",\n  \"expected_revision\": 2,\n  \"action_mode\": \"continue\",\n  \"player_input\": \"继续\",\n  \"player_authorized\": false,\n  \"acts_on\": [],\n  \"operations\": [\n    {\n      \"op\": \"npc_action\",\n      \"npc_id\": \"chairwoman_gu\",\n      \"action\": \"见顾清和没有立刻开口，伸手翻开提案，停在贴着便签的第七页，指尖点在条款上。\"\n    },\n    {\n      \"op\": \"add_fact\",\n      \"key\": \"proposal.red_clause_asset_transfer\",\n      \"text\": \"提案第七页是一项深夜紧急提交的城东物流园资产质押与防汛工程分包案，条款里藏着规避董事会追责的免责声明。\",\n      \"visibility\": \"public\",\n      \"origin\": \"observed\"\n    },\n    {\n      \"op\": \"advance_time\",\n      \"minutes\": 3\n    }\n  ],\n  \"content_tags\": [\"workplace\"],\n  \"summary\": \"萧雨桐主动翻开提案至关键的第七页，向顾清和展示其中关于资产质押与免责的隐蔽条款。\",\n  \"open_action\": \"萧雨桐的指尖按在第七页的免责条款上，抬眼看着顾清和。\"\n}\nAT_JSON"
+     },
+     "output": "{\"ok\":true,\"data\":{\"revision\":3,\"turn\":3,\"applied\":[{\"op\":\"npc_action\",\"npc_id\":\"chairwoman_gu\",\"significant\":false,\"kind\":null},{\"op\":\"add_fact\",\"fact_id\":\"f11\",\"key\":\"proposal.red_clause_asset_transfer\",\"origin\":\"observed\",\"known_by\":[\"player\",\"chairwoman_gu\",\"personal_bodyguard\"]},{\"op\":\"advance_time\",\"minutes\":3,\"default\":false,\"clock\":{\"day\":1,\"minute\":1385},\"label\":\"第一天 23:05\",\"new_scene\":false}],\"resolved_events\":[],\"simulation\":null,\"clock\":{\"day\":1,\"minute\":1385,\"label\":\"第一天 23:05\"},\"default_time_advance\":false,\"context\":{\"depth\":\"brief\",\"session_id\":\"s_34396122\",\"revision\":3,\"turn\":3,\"mode\":\"daily\",\"clock\":{\"day\":1,\"minute\":1385,\"label\":\"第一天 23:05\"},\"scene\":{\"id\":\"sc1\",\"location_id\":\"loc_tower_sky_lounge\",\"location\":\"集团大厦顶层的空中酒廊\",\"privacy\":\"public\",\"present\":[\"player\",\"chairwoman_gu\",\"personal_bodyguard\"]},\"player\":{\"name\":\"顾清和\",\"title\":\"清和\",\"age\":25,\"gender\":\"male\",\"role\":\"跑财经线的记者\"},\"present_npcs\":[{\"id\":\"chairwoman_gu\",\"name\":\"萧雨桐\",\"age\":21,\"gender\":\"female\",\"tier\":\"major\",\"role\":\"千亿财阀的新任董事长\",\"mood\":null,\"voice\":\"surface\",\"can_act\":true,\"trust_to_player\":3,\"tension\":3,\"stage\":\"共顶钨钢\",\"goal\":\"和保镖一起踹开车门，游出暗渠\",\"stance\":\"父亲生前亲自挑选的保镖，三年来寸步不离，董事长人前叫一声“先生”，私下却只在保镖面前脱下过高跟鞋。\"},{\"id\":\"personal_bodyguard\",\"name\":\"秦北辰\",\"age\":32,\"gender\":\"male\",\"tier\":\"major\",\"role\":\"董事长的贴身保镖\",\"mood\":null,\"voice\":\"surface\",\"can_act\":true,\"trust_to_player\":3,\"tension\":2,\"stage\":\"摸索泄孔\",\"goal\":\"用后背顶住对侧车门，给董事长腾出发力的支点\",\"stance\":\"三年来每一个深夜都站在休息室门外，董事长没叫就不进去，董事长叫了也只站在门边。\"}],\"nearby\":[{\"id\":\"bg_board_member\",\"name\":\"老董事钱老\",\"role\":\"集团的元老董事\"},{\"id\":\"bg_financial_reporter\",\"name\":\"财经记者小林\",\"role\":\"盯着集团的财经记者\"},{\"id\":\"bg_gala_host\",\"name\":\"晚宴主持人苏曼\",\"role\":\"慈善晚宴的主持人\"}],\"due_soon\":[],\"known_facts\":[{\"id\":\"f10\",\"text\":\"酒廊内空旷安静，晚宴宾客已全数离开，唯有秦北辰如影随形守在门口阴影处。\",\"visibility\":\"public\"},{\"id\":\"f11\",\"text\":\"提案第七页是一项深夜紧急提交的城东物流园资产质押与防汛工程分包案，条款里藏着规避董事会追责的免责声明。\",\"visibility\":\"public\"},{\"id\":\"f7\",\"text\":\"暴雨夜从董事会回来，董事长靠在后座闭着眼，保镖坐在旁边盯着窗外，车子忽然拐进了一条陌生的辅路。\",\"visibility\":\"public\"},{\"id\":\"f8\",\"text\":\"暗渠里的洪水一寸寸往上涨，顶棚下的空气越来越少。\",\"visibility\":\"public\"},{\"id\":\"f9\",\"text\":\"冰冷的积水漫过胸口，两人只能贴紧了互相取暖。\",\"visibility\":\"public\"},{\"id\":\"f5\",\"text\":\"顾清和：盯了这家财阀三年，手里有一份没发出去的稿子，写的是老董事长猝逝的疑点。\",\"visibility\":\"private\"},{\"id\":\"f6\",\"text\":\"顾清和：稿子发出去，董事长的位置可能就保不住了。\",\"visibility\":\"private\"}],\"recent\":[\"顾清和没有急于翻看提案，而是先环视四周环境；萧雨桐安静等待他的反应。\",\"萧雨桐主动翻开提案至关键的第七页，向顾清和展示其中关于资产质押与免责的隐蔽条款。\"],\"last_quotes\":[],\"open_action\":\"萧雨桐的指尖按在第七页的免责条款上，抬眼看着顾清和。\",\"scene_responses\":[],\"safety\":{\"paused\":false,\"boundaries\":[],\"leverage\":[]},\"preferences\":{\"inner_view\":false,\"assistant\":false,\"offscreen_simulation\":true,\"person\":\"second\"},\"save\":{\"current_slot\":null,\"turns_since_save\":2},\"requests\":{\"chapter_summary\":false,\"prologue\":false,\"twist_offer\":null,\"offscreen_beat_candidates\":[]},\"size_bytes\":3322},\"next_request_id\":\"r_d4037f60695e\",\"replayed\":false},\"error\":null}",
+     "status": "completed"
+    }
+   ],
+   "runtime_calls": [
+    {
+     "ts": "2026-10-13T04:21:41",
+     "ms": 28.9,
+     "pid": 81456,
+     "skill_root": "D:\\projects\\at-e2e\\pi-s01-r12-20261013-042029\\.claude\\skills\\adult-tension",
+     "argv": [
+      "commit-turn",
+      "--json",
+      "--input-file",
+      "-"
+     ],
+     "input": {
+      "session_id": "s_34396122",
+      "request_id": "r_6aa6a5cc2129",
+      "expected_revision": 2,
+      "action_mode": "continue",
+      "player_input": "继续",
+      "player_authorized": false,
+      "acts_on": [],
+      "operations": [
+       {
+        "op": "npc_action",
+        "npc_id": "chairwoman_gu",
+        "action": "见顾清和没有立刻开口，伸手翻开提案，停在贴着便签的第七页，指尖点在条款上。"
+       },
+       {
+        "op": "add_fact",
+        "key": "proposal.red_clause_asset_transfer",
+        "text": "提案第七页是一项深夜紧急提交的城东物流园资产质押与防汛工程分包案，条款里藏着规避董事会追责的免责声明。",
+        "visibility": "public",
+        "origin": "observed"
+       },
+       {
+        "op": "advance_time",
+        "minutes": 3
+       }
+      ],
+      "content_tags": [
+       "workplace"
+      ],
+      "summary": "萧雨桐主动翻开提案至关键的第七页，向顾清和展示其中关于资产质押与免责的隐蔽条款。",
+      "open_action": "萧雨桐的指尖按在第七页的免责条款上，抬眼看着顾清和。"
+     },
+     "exit": 0,
+     "envelope": {
+      "ok": true,
+      "data": {
+       "revision": 3,
+       "turn": 3,
+       "applied": [
+        {
+         "op": "npc_action",
+         "npc_id": "chairwoman_gu",
+         "significant": false,
+         "kind": null
+        },
+        {
+         "op": "add_fact",
+         "fact_id": "f11",
+         "key": "proposal.red_clause_asset_transfer",
+         "origin": "observed",
+         "known_by": [
+          "player",
+          "chairwoman_gu",
+          "personal_bodyguard"
+         ]
+        },
+        {
+         "op": "advance_time",
+         "minutes": 3,
+         "default": false,
+         "clock": {
+          "day": 1,
+          "minute": 1385
+         },
+         "label": "第一天 23:05",
+         "new_scene": false
+        }
+       ],
+       "resolved_events": [],
+       "simulation": null,
+       "clock": {
+        "day": 1,
+        "minute": 1385,
+        "label": "第一天 23:05"
+       },
+       "default_time_advance": false,
+       "context": {
+        "depth": "brief",
+        "session_id": "s_34396122",
+        "revision": 3,
+        "turn": 3,
+        "mode": "daily",
+        "clock": {
+         "day": 1,
+         "minute": 1385,
+         "label": "第一天 23:05"
+        },
+        "scene": {
+         "id": "sc1",
+         "location_id": "loc_tower_sky_lounge",
+         "location": "集团大厦顶层的空中酒廊",
+         "privacy": "public",
+         "present": [
+          "player",
+          "chairwoman_gu",
+          "personal_bodyguard"
+         ]
+        },
+        "player": {
+         "name": "顾清和",
+         "title": "清和",
+         "age": 25,
+         "gender": "male",
+         "role": "跑财经线的记者"
+        },
+        "present_npcs": [
+         {
+          "id": "chairwoman_gu",
+          "name": "萧雨桐",
+          "age": 21,
+          "gender": "female",
+          "tier": "major",
+          "role": "千亿财阀的新任董事长",
+          "mood": null,
+          "voice": "surface",
+          "can_act": true,
+          "trust_to_player": 3,
+          "tension": 3,
+          "stage": "共顶钨钢",
+          "goal": "和保镖一起踹开车门，游出暗渠",
+          "stance": "父亲生前亲自挑选的保镖，三年来寸步不离，董事长人前叫一声“先生”，私下却只在保镖面前脱下过高跟鞋。"
+         },
+         {
+          "id": "personal_bodyguard",
+          "name": "秦北辰",
+          "age": 32,
+          "gender": "male",
+          "tier": "major",
+          "role": "董事长的贴身保镖",
+          "mood": null,
+          "voice": "surface",
+          "can_act": true,
+          "trust_to_player": 3,
+          "tension": 2,
+          "stage": "摸索泄孔",
+          "goal": "用后背顶住对侧车门，给董事长腾出发力的支点",
+          "stance": "三年来每一个深夜都站在休息室门外，董事长没叫就不进去，董事长叫了也只站在门边。"
+         }
+        ],
+        "nearby": [
+         {
+          "id": "bg_board_member",
+          "name": "老董事钱老",
+          "role": "集团的元老董事"
+         },
+         {
+          "id": "bg_financial_reporter",
+          "name": "财经记者小林",
+          "role": "盯着集团的财经记者"
+         },
+         {
+          "id": "bg_gala_host",
+          "name": "晚宴主持人苏曼",
+          "role": "慈善晚宴的主持人"
+         }
+        ],
+        "due_soon": [],
+        "known_facts": [
+         {
+          "id": "f10",
+          "text": "酒廊内空旷安静，晚宴宾客已全数离开，唯有秦北辰如影随形守在门口阴影处。",
+          "visibility": "public"
+         },
+         {
+          "id": "f11",
+          "text": "提案第七页是一项深夜紧急提交的城东物流园资产质押与防汛工程分包案，条款里藏着规避董事会追责的免责声明。",
+          "visibility": "public"
+         },
+         {
+          "id": "f7",
+          "text": "暴雨夜从董事会回来，董事长靠在后座闭着眼，保镖坐在旁边盯着窗外，车子忽然拐进了一条陌生的辅路。",
+          "visibility": "public"
+         },
+         {
+          "id": "f8",
+          "text": "暗渠里的洪水一寸寸往上涨，顶棚下的空气越来越少。",
+          "visibility": "public"
+         },
+         {
+          "id": "f9",
+          "text": "冰冷的积水漫过胸口，两人只能贴紧了互相取暖。",
+          "visibility": "public"
+         },
+         {
+          "id": "f5",
+          "text": "顾清和：盯了这家财阀三年，手里有一份没发出去的稿子，写的是老董事长猝逝的疑点。",
+          "visibility": "private"
+         },
+         {
+          "id": "f6",
+          "text": "顾清和：稿子发出去，董事长的位置可能就保不住了。",
+          "visibility": "private"
+         }
+        ],
+        "recent": [
+         "顾清和没有急于翻看提案，而是先环视四周环境；萧雨桐安静等待他的反应。",
+         "萧雨桐主动翻开提案至关键的第七页，向顾清和展示其中关于资产质押与免责的隐蔽条款。"
+        ],
+        "last_quotes": [],
+        "open_action": "萧雨桐的指尖按在第七页的免责条款上，抬眼看着顾清和。",
+        "scene_responses": [],
+        "safety": {
+         "paused": false,
+         "boundaries": [],
+         "leverage": []
+        },
+        "preferences": {
+         "inner_view": false,
+         "assistant": false,
+         "offscreen_simulation": true,
+         "person": "second"
+        },
+        "save": {
+         "current_slot": null,
+         "turns_since_save": 2
+        },
+        "requests": {
+         "chapter_summary": false,
+         "prologue": false,
+         "twist_offer": null,
+         "offscreen_beat_candidates": []
+        },
+        "size_bytes": 3322
+       },
+       "next_request_id": "r_d4037f60695e",
+       "replayed": false
+      },
+      "error": null
+     }
+    }
+   ],
+   "calls_source": "trace",
+   "text": "\n见你没有立刻作声，萧雨桐也不恼。她收回搁在椅背上的手，亲自伸指掀开了那份深色封皮的提案，纸页哗啦作响，直接翻到了夹着一截刺眼红色便签的第七页，然后将其调了个方向，正对着你的视线。\n\n那是一份今晚董事会上刚刚被叔叔一派紧急塞进议程的《城东物流园资产质押与防汛排涝工程分包补充协议》。密密麻麻的铅字间，几行小字用极隐晦的法务措辞写着“不可抗力及市政泄洪调度导致资产受损或人员意外时，项目主责董事免于连带追责”的免责声明，而要求董事长签字批复的截止时限，赫然定在明天上午九点。\n\n窗外一道闷雷滚过天际，玻璃幕墙微微震颤。门边的秦北辰看了一眼腕表，低声提醒了一句：“顾董，气象台刚发了暴雨红色预警，城东辅路低洼段今晚可能会开闸泄洪，再晚走怕是路不好走。”\n\n萧雨桐没有回头，纤细却有力的指尖稳稳按在那行免责条款下方，抬起眼帘看向你，声音冷清而平静：“你盯了我们集团三年，比我更清楚那帮老家伙的手脚。他们催着我今晚签字，到底在急什么？”\n\n【时间】第一天 23:05｜【地点】集团大厦顶层的空中酒廊｜回合：3",
+   "seconds": 14.1,
+   "finish": {
+    "stop": "stop",
+    "output_tokens": 370
+   },
+   "model": "local-gemini/gemini-3.8-flash-high"
+  },
+  {
+   "index": 5,
+   "conversation": "A",
+   "input": "我走过去，问萧雨桐是不是在等人",
+   "expect": {
+    "kind": "turn",
+    "calls_max": 1
+   },
+   "host_calls": [
+    {
+     "tool": "bash",
+     "input": {
+      "command": "python \"D:/projects/at-e2e/pi-s01-r12-20261013-042029/.claude/skills/adult-tension/scripts/adult_tension.py\" commit-turn --json --input-file - <<'AT_JSON'\n{\n  \"encoding_check\": \"汉字\",\n  \"session_id\": \"s_34396122\",\n  \"request_id\": \"r_d4037f60695e\",\n  \"expected_revision\": 3,\n  \"action_mode\": \"attempt\",\n  \"player_input\": \"我走过去，问萧雨桐是不是在等人\",\n  \"player_authorized\": true,\n  \"acts_on\": [\"chairwoman_gu\"],\n  \"operations\": [\n    {\n      \"op\": \"npc_response\",\n      \"npc_id\": \"chairwoman_gu\",\n      \"response\": \"surface\",\n      \"note\": \"萧雨桐微微抬眸，否认自己在等别人，神情克制而平静。\",\n      \"true_intent\": \"表面声称只在等文件答复，实则在等车队确认回程排查情况以防暗算。\"\n    },\n    {\n      \"op\": \"add_fact\",\n      \"key\": \"chairwoman_gu.waiting_intent\",\n      \"text\": \"萧雨桐向顾清和表示酒廊内只有他们二人与文件，并未约见其他董事。\",\n      \"visibility\": \"public\",\n      \"origin\": \"observed\"\n    },\n    {\n      \"op\": \"advance_time\",\n      \"minutes\": 2\n    }\n  ],\n  \"content_tags\": [\"workplace\"],\n  \"summary\": \"顾清和走近询问萧雨桐是否在等人，萧雨桐表面否认并维持克制态势。\",\n  \"open_action\": \"萧雨桐收回按在纸页上的手，等待顾清和对提问的后半句或提案发表看法。\"\n}\nAT_JSON"
+     },
+     "output": "{\"ok\":true,\"data\":{\"revision\":4,\"turn\":4,\"applied\":[{\"op\":\"npc_response\",\"npc_id\":\"chairwoman_gu\",\"response\":\"surface\",\"intent_fact_id\":\"f12\"},{\"op\":\"add_fact\",\"fact_id\":\"f13\",\"key\":\"chairwoman_gu.waiting_intent\",\"origin\":\"observed\",\"known_by\":[\"player\",\"chairwoman_gu\",\"personal_bodyguard\"]},{\"op\":\"advance_time\",\"minutes\":2,\"default\":false,\"clock\":{\"day\":1,\"minute\":1387},\"label\":\"第一天 23:07\",\"new_scene\":false}],\"resolved_events\":[],\"simulation\":null,\"clock\":{\"day\":1,\"minute\":1387,\"label\":\"第一天 23:07\"},\"default_time_advance\":false,\"context\":{\"depth\":\"brief\",\"session_id\":\"s_34396122\",\"revision\":4,\"turn\":4,\"mode\":\"daily\",\"clock\":{\"day\":1,\"minute\":1387,\"label\":\"第一天 23:07\"},\"scene\":{\"id\":\"sc1\",\"location_id\":\"loc_tower_sky_lounge\",\"location\":\"集团大厦顶层的空中酒廊\",\"privacy\":\"public\",\"present\":[\"player\",\"chairwoman_gu\",\"personal_bodyguard\"]},\"player\":{\"name\":\"顾清和\",\"title\":\"清和\",\"age\":25,\"gender\":\"male\",\"role\":\"跑财经线的记者\"},\"present_npcs\":[{\"id\":\"chairwoman_gu\",\"name\":\"萧雨桐\",\"age\":21,\"gender\":\"female\",\"tier\":\"major\",\"role\":\"千亿财阀的新任董事长\",\"mood\":null,\"voice\":\"surface\",\"can_act\":true,\"trust_to_player\":3,\"tension\":3,\"stage\":\"共顶钨钢\",\"goal\":\"和保镖一起踹开车门，游出暗渠\",\"stance\":\"父亲生前亲自挑选的保镖，三年来寸步不离，董事长人前叫一声“先生”，私下却只在保镖面前脱下过高跟鞋。\"},{\"id\":\"personal_bodyguard\",\"name\":\"秦北辰\",\"age\":32,\"gender\":\"male\",\"tier\":\"major\",\"role\":\"董事长的贴身保镖\",\"mood\":null,\"voice\":\"surface\",\"can_act\":true,\"trust_to_player\":3,\"tension\":2,\"stage\":\"摸索泄孔\",\"goal\":\"用后背顶住对侧车门，给董事长腾出发力的支点\",\"stance\":\"三年来每一个深夜都站在休息室门外，董事长没叫就不进去，董事长叫了也只站在门边。\"}],\"nearby\":[{\"id\":\"bg_board_member\",\"name\":\"老董事钱老\",\"role\":\"集团的元老董事\"},{\"id\":\"bg_financial_reporter\",\"name\":\"财经记者小林\",\"role\":\"盯着集团的财经记者\"},{\"id\":\"bg_gala_host\",\"name\":\"晚宴主持人苏曼\",\"role\":\"慈善晚宴的主持人\"}],\"due_soon\":[],\"known_facts\":[{\"id\":\"f13\",\"text\":\"萧雨桐向顾清和表示酒廊内只有他们二人与文件，并未约见其他董事。\",\"visibility\":\"public\"},{\"id\":\"f10\",\"text\":\"酒廊内空旷安静，晚宴宾客已全数离开，唯有秦北辰如影随形守在门口阴影处。\",\"visibility\":\"public\"},{\"id\":\"f11\",\"text\":\"提案第七页是一项深夜紧急提交的城东物流园资产质押与防汛工程分包案，条款里藏着规避董事会追责的免责声明。\",\"visibility\":\"public\"},{\"id\":\"f7\",\"text\":\"暴雨夜从董事会回来，董事长靠在后座闭着眼，保镖坐在旁边盯着窗外，车子忽然拐进了一条陌生的辅路。\",\"visibility\":\"public\"},{\"id\":\"f8\",\"text\":\"暗渠里的洪水一寸寸往上涨，顶棚下的空气越来越少。\",\"visibility\":\"public\"},{\"id\":\"f9\",\"text\":\"冰冷的积水漫过胸口，两人只能贴紧了互相取暖。\",\"visibility\":\"public\"},{\"id\":\"f5\",\"text\":\"顾清和：盯了这家财阀三年，手里有一份没发出去的稿子，写的是老董事长猝逝的疑点。\",\"visibility\":\"private\"},{\"id\":\"f6\",\"text\":\"顾清和：稿子发出去，董事长的位置可能就保不住了。\",\"visibility\":\"private\"}],\"recent\":[\"顾清和没有急于翻看提案，而是先环视四周环境；萧雨桐安静等待他的反应。\",\"萧雨桐主动翻开提案至关键的第七页，向顾清和展示其中关于资产质押与免责的隐蔽条款。\",\"顾清和走近询问萧雨桐是否在等人，萧雨桐表面否认并维持克制态势。\"],\"last_quotes\":[],\"open_action\":\"萧雨桐收回按在纸页上的手，等待顾清和对提问的后半句或提案发表看法。\",\"scene_responses\":[{\"npc_id\":\"chairwoman_gu\",\"response\":\"surface\"}],\"safety\":{\"paused\":false,\"boundaries\":[],\"leverage\":[]},\"preferences\":{\"inner_view\":false,\"assistant\":false,\"offscreen_simulation\":true,\"person\":\"second\"},\"save\":{\"current_slot\":null,\"turns_since_save\":3},\"requests\":{\"chapter_summary\":false,\"prologue\":false,\"twist_offer\":null,\"offscreen_beat_candidates\":[]},\"size_bytes\":3624},\"next_request_id\":\"r_768e3fd493f5\",\"replayed\":false},\"error\":null}",
+     "status": "completed"
+    }
+   ],
+   "runtime_calls": [
+    {
+     "ts": "2026-10-13T04:22:00",
+     "ms": 29.0,
+     "pid": 81660,
+     "skill_root": "D:\\projects\\at-e2e\\pi-s01-r12-20261013-042029\\.claude\\skills\\adult-tension",
+     "argv": [
+      "commit-turn",
+      "--json",
+      "--input-file",
+      "-"
+     ],
+     "input": {
+      "session_id": "s_34396122",
+      "request_id": "r_d4037f60695e",
+      "expected_revision": 3,
+      "action_mode": "attempt",
+      "player_input": "我走过去，问萧雨桐是不是在等人",
+      "player_authorized": true,
+      "acts_on": [
+       "chairwoman_gu"
+      ],
+      "operations": [
+       {
+        "op": "npc_response",
+        "npc_id": "chairwoman_gu",
+        "response": "surface",
+        "note": "萧雨桐微微抬眸，否认自己在等别人，神情克制而平静。",
+        "true_intent": "表面声称只在等文件答复，实则在等车队确认回程排查情况以防暗算。"
+       },
+       {
+        "op": "add_fact",
+        "key": "chairwoman_gu.waiting_intent",
+        "text": "萧雨桐向顾清和表示酒廊内只有他们二人与文件，并未约见其他董事。",
+        "visibility": "public",
+        "origin": "observed"
+       },
+       {
+        "op": "advance_time",
+        "minutes": 2
+       }
+      ],
+      "content_tags": [
+       "workplace"
+      ],
+      "summary": "顾清和走近询问萧雨桐是否在等人，萧雨桐表面否认并维持克制态势。",
+      "open_action": "萧雨桐收回按在纸页上的手，等待顾清和对提问的后半句或提案发表看法。"
+     },
+     "exit": 0,
+     "envelope": {
+      "ok": true,
+      "data": {
+       "revision": 4,
+       "turn": 4,
+       "applied": [
+        {
+         "op": "npc_response",
+         "npc_id": "chairwoman_gu",
+         "response": "surface",
+         "intent_fact_id": "f12"
+        },
+        {
+         "op": "add_fact",
+         "fact_id": "f13",
+         "key": "chairwoman_gu.waiting_intent",
+         "origin": "observed",
+         "known_by": [
+          "player",
+          "chairwoman_gu",
+          "personal_bodyguard"
+         ]
+        },
+        {
+         "op": "advance_time",
+         "minutes": 2,
+         "default": false,
+         "clock": {
+          "day": 1,
+          "minute": 1387
+         },
+         "label": "第一天 23:07",
+         "new_scene": false
+        }
+       ],
+       "resolved_events": [],
+       "simulation": null,
+       "clock": {
+        "day": 1,
+        "minute": 1387,
+        "label": "第一天 23:07"
+       },
+       "default_time_advance": false,
+       "context": {
+        "depth": "brief",
+        "session_id": "s_34396122",
+        "revision": 4,
+        "turn": 4,
+        "mode": "daily",
+        "clock": {
+         "day": 1,
+         "minute": 1387,
+         "label": "第一天 23:07"
+        },
+        "scene": {
+         "id": "sc1",
+         "location_id": "loc_tower_sky_lounge",
+         "location": "集团大厦顶层的空中酒廊",
+         "privacy": "public",
+         "present": [
+          "player",
+          "chairwoman_gu",
+          "personal_bodyguard"
+         ]
+        },
+        "player": {
+         "name": "顾清和",
+         "title": "清和",
+         "age": 25,
+         "gender": "male",
+         "role": "跑财经线的记者"
+        },
+        "present_npcs": [
+         {
+          "id": "chairwoman_gu",
+          "name": "萧雨桐",
+          "age": 21,
+          "gender": "female",
+          "tier": "major",
+          "role": "千亿财阀的新任董事长",
+          "mood": null,
+          "voice": "surface",
+          "can_act": true,
+          "trust_to_player": 3,
+          "tension": 3,
+          "stage": "共顶钨钢",
+          "goal": "和保镖一起踹开车门，游出暗渠",
+          "stance": "父亲生前亲自挑选的保镖，三年来寸步不离，董事长人前叫一声“先生”，私下却只在保镖面前脱下过高跟鞋。"
+         },
+         {
+          "id": "personal_bodyguard",
+          "name": "秦北辰",
+          "age": 32,
+          "gender": "male",
+          "tier": "major",
+          "role": "董事长的贴身保镖",
+          "mood": null,
+          "voice": "surface",
+          "can_act": true,
+          "trust_to_player": 3,
+          "tension": 2,
+          "stage": "摸索泄孔",
+          "goal": "用后背顶住对侧车门，给董事长腾出发力的支点",
+          "stance": "三年来每一个深夜都站在休息室门外，董事长没叫就不进去，董事长叫了也只站在门边。"
+         }
+        ],
+        "nearby": [
+         {
+          "id": "bg_board_member",
+          "name": "老董事钱老",
+          "role": "集团的元老董事"
+         },
+         {
+          "id": "bg_financial_reporter",
+          "name": "财经记者小林",
+          "role": "盯着集团的财经记者"
+         },
+         {
+          "id": "bg_gala_host",
+          "name": "晚宴主持人苏曼",
+          "role": "慈善晚宴的主持人"
+         }
+        ],
+        "due_soon": [],
+        "known_facts": [
+         {
+          "id": "f13",
+          "text": "萧雨桐向顾清和表示酒廊内只有他们二人与文件，并未约见其他董事。",
+          "visibility": "public"
+         },
+         {
+          "id": "f10",
+          "text": "酒廊内空旷安静，晚宴宾客已全数离开，唯有秦北辰如影随形守在门口阴影处。",
+          "visibility": "public"
+         },
+         {
+          "id": "f11",
+          "text": "提案第七页是一项深夜紧急提交的城东物流园资产质押与防汛工程分包案，条款里藏着规避董事会追责的免责声明。",
+          "visibility": "public"
+         },
+         {
+          "id": "f7",
+          "text": "暴雨夜从董事会回来，董事长靠在后座闭着眼，保镖坐在旁边盯着窗外，车子忽然拐进了一条陌生的辅路。",
+          "visibility": "public"
+         },
+         {
+          "id": "f8",
+          "text": "暗渠里的洪水一寸寸往上涨，顶棚下的空气越来越少。",
+          "visibility": "public"
+         },
+         {
+          "id": "f9",
+          "text": "冰冷的积水漫过胸口，两人只能贴紧了互相取暖。",
+          "visibility": "public"
+         },
+         {
+          "id": "f5",
+          "text": "顾清和：盯了这家财阀三年，手里有一份没发出去的稿子，写的是老董事长猝逝的疑点。",
+          "visibility": "private"
+         },
+         {
+          "id": "f6",
+          "text": "顾清和：稿子发出去，董事长的位置可能就保不住了。",
+          "visibility": "private"
+         }
+        ],
+        "recent": [
+         "顾清和没有急于翻看提案，而是先环视四周环境；萧雨桐安静等待他的反应。",
+         "萧雨桐主动翻开提案至关键的第七页，向顾清和展示其中关于资产质押与免责的隐蔽条款。",
+         "顾清和走近询问萧雨桐是否在等人，萧雨桐表面否认并维持克制态势。"
+        ],
+        "last_quotes": [],
+        "open_action": "萧雨桐收回按在纸页上的手，等待顾清和对提问的后半句或提案发表看法。",
+        "scene_responses": [
+         {
+          "npc_id": "chairwoman_gu",
+          "response": "surface"
+         }
+        ],
+        "safety": {
+         "paused": false,
+         "boundaries": [],
+         "leverage": []
+        },
+        "preferences": {
+         "inner_view": false,
+         "assistant": false,
+         "offscreen_simulation": true,
+         "person": "second"
+        },
+        "save": {
+         "current_slot": null,
+         "turns_since_save": 3
+        },
+        "requests": {
+         "chapter_summary": false,
+         "prologue": false,
+         "twist_offer": null,
+         "offscreen_beat_candidates": []
+        },
+        "size_bytes": 3624
+       },
+       "next_request_id": "r_768e3fd493f5",
+       "replayed": false
+      },
+      "error": null
+     }
+    }
+   ],
+   "calls_source": "trace",
+   "text": "\n你踱步走上前去，在桌旁站定，问她是不是在等人。\n\n萧雨桐闻言微微一怔，随即纤长的睫毛敛了敛，将按在纸页上的手指收回袖口，神情重新恢复成波澜不惊的克制。\n\n“等人？”她轻轻摇了摇头，唇边泛起一丝极浅淡的自嘲，“董事会刚散，叔叔的人正忙着去各大银行封口、找券商开香槟，谁有闲心在顶层陪我喝残茶。这间酒廊里，除了守在门边的秦队长，就只有你和我。”\n\n她抬起头迎向你的视线，语气平静得听不出波澜：“我哪儿也不去，今晚留在这儿，只等这几页纸的一个明白说法。顾记者，你若是觉得我还在防着外人，大可不必。”\n\n门边的秦北辰身形未动，只是在听到这番话时，视线朝你们这边极轻地扫过一眼，随即又落回窗外漫无边际的暴雨中。\n\n萧雨桐交叠着双手搁在桌沿，安静地等待着你的后文。\n\n【时间】第一天 23:07｜【地点】集团大厦顶层的空中酒廊｜回合：4",
+   "seconds": 17.6,
+   "finish": {
+    "stop": "stop",
+    "output_tokens": 318
+   },
+   "model": "local-gemini/gemini-3.8-flash-high"
+  },
+  {
+   "index": 6,
+   "conversation": "A",
+   "input": "状态",
+   "expect": {
+    "kind": "meta",
+    "calls_max": 1,
+    "must_call": [
+     "status"
+    ]
+   },
+   "host_calls": [
+    {
+     "tool": "bash",
+     "input": {
+      "command": "python \"D:/projects/at-e2e/pi-s01-r12-20261013-042029/.claude/skills/adult-tension/scripts/adult_tension.py\" status --json --input-file - <<'AT_JSON'\n{\"encoding_check\": \"汉字\", \"session_id\": \"s_34396122\", \"level\": \"brief\"}\nAT_JSON"
+     },
+     "output": "{\"ok\":true,\"data\":{\"session_id\":\"s_34396122\",\"revision\":4,\"turn\":4,\"level\":\"brief\",\"lines\":[\"第一天 23:07 · 集团大厦顶层的空中酒廊\",\"在场：萧雨桐（千亿财阀的新任董事长）、秦北辰（董事长的贴身保镖）\",\"关系：萧雨桐很信任你，绷得很紧（共顶钨钢）；秦北辰很信任你，有点紧绷（摸索泄孔）\",\"压力与待办：眼下没有压着的事\",\"边界与暂停：没有登记边界；未暂停\",\"现在可以做什么：眼下停在：萧雨桐收回按在纸页上的手，等待顾清和对提问的后半句或提案发表看法。；这里可以在落地窗边陪董事长喝一杯咖啡、在晚宴上替董事长挡掉一轮敬酒、站在窗前看暴雨里的城市；也可以去董事长办公室里间的休息室、装甲车门机械应急开启把手内凹槽\"],\"text\":\"① 第一天 23:07 · 集团大厦顶层的空中酒廊\\n② 在场：萧雨桐（千亿财阀的新任董事长）、秦北辰（董事长的贴身保镖）\\n③ 关系：萧雨桐很信任你，绷得很紧（共顶钨钢）；秦北辰很信任你，有点紧绷（摸索泄孔）\\n④ 压力与待办：眼下没有压着的事\\n⑤ 边界与暂停：没有登记边界；未暂停\\n⑥ 现在可以做什么：眼下停在：萧雨桐收回按在纸页上的手，等待顾清和对提问的后半句或提案发表看法。；这里可以在落地窗边陪董事长喝一杯咖啡、在晚宴上替董事长挡掉一轮敬酒、站在窗前看暴雨里的城市；也可以去董事长办公室里间的休息室、装甲车门机械应急开启把手内凹槽\",\"next_request_id\":\"r_41f51ba7605f\"},\"error\":null}",
+     "status": "completed"
+    }
+   ],
+   "runtime_calls": [
+    {
+     "ts": "2026-10-13T04:22:12",
+     "ms": 24.0,
+     "pid": 76180,
+     "skill_root": "D:\\projects\\at-e2e\\pi-s01-r12-20261013-042029\\.claude\\skills\\adult-tension",
+     "argv": [
+      "status",
+      "--json",
+      "--input-file",
+      "-"
+     ],
+     "input": {
+      "session_id": "s_34396122",
+      "level": "brief"
+     },
+     "exit": 0,
+     "envelope": {
+      "ok": true,
+      "data": {
+       "session_id": "s_34396122",
+       "revision": 4,
+       "turn": 4,
+       "level": "brief",
+       "lines": [
+        "第一天 23:07 · 集团大厦顶层的空中酒廊",
+        "在场：萧雨桐（千亿财阀的新任董事长）、秦北辰（董事长的贴身保镖）",
+        "关系：萧雨桐很信任你，绷得很紧（共顶钨钢）；秦北辰很信任你，有点紧绷（摸索泄孔）",
+        "压力与待办：眼下没有压着的事",
+        "边界与暂停：没有登记边界；未暂停",
+        "现在可以做什么：眼下停在：萧雨桐收回按在纸页上的手，等待顾清和对提问的后半句或提案发表看法。；这里可以在落地窗边陪董事长喝一杯咖啡、在晚宴上替董事长挡掉一轮敬酒、站在窗前看暴雨里的城市；也可以去董事长办公室里间的休息室、装甲车门机械应急开启把手内凹槽"
+       ],
+       "text": "① 第一天 23:07 · 集团大厦顶层的空中酒廊\n② 在场：萧雨桐（千亿财阀的新任董事长）、秦北辰（董事长的贴身保镖）\n③ 关系：萧雨桐很信任你，绷得很紧（共顶钨钢）；秦北辰很信任你，有点紧绷（摸索泄孔）\n④ 压力与待办：眼下没有压着的事\n⑤ 边界与暂停：没有登记边界；未暂停\n⑥ 现在可以做什么：眼下停在：萧雨桐收回按在纸页上的手，等待顾清和对提问的后半句或提案发表看法。；这里可以在落地窗边陪董事长喝一杯咖啡、在晚宴上替董事长挡掉一轮敬酒、站在窗前看暴雨里的城市；也可以去董事长办公室里间的休息室、装甲车门机械应急开启把手内凹槽",
+       "next_request_id": "r_41f51ba7605f"
+      },
+      "error": null
+     }
+    }
+   ],
+   "calls_source": "trace",
+   "text": "\n① 第一天 23:07 · 集团大厦顶层的空中酒廊\n② 在场：萧雨桐（千亿财阀的新任董事长）、秦北辰（董事长的贴身保镖）\n③ 关系：萧雨桐很信任你，绷得很紧（共顶钨钢）；秦北辰很信任你，有点紧绷（摸索泄孔）\n④ 压力与待办：眼下没有压着的事\n⑤ 边界与暂停：没有登记边界；未暂停\n⑥ 现在可以做什么：眼下停在：萧雨桐收回按在纸页上的手，等待顾清和对提问的后半句或提案发表看法。；这里可以在落地窗边陪董事长喝一杯咖啡、在晚宴上替董事长挡掉一轮敬酒、站在窗前看暴雨里的城市；也可以去董事长办公室里间的休息室、装甲车门机械应急开启把手内凹槽",
+   "seconds": 9.3,
+   "finish": {
+    "stop": "stop",
+    "output_tokens": 229
+   },
+   "model": "local-gemini/gemini-3.8-flash-high"
+  }
+ ],
+ "harness_events": [],
+ "skill": {
+  "skill_root": "D:\\projects\\at-e2e\\pi-s01-r12-20261013-042029\\.claude\\skills\\adult-tension",
+  "skill_version": "0.3.0",
+  "content_version": "2026.10.0"
+ },
+ "final_export": {
+  "format": "adult-tension-save",
+  "schema_version": 2,
+  "content_version": "2026.10.0",
+  "rng_version": 1,
+  "skill_version": "0.3.0",
+  "exported_at": "2026-10-13T04:22:15+08:00",
+  "source": {
+   "kind": "session",
+   "session_id": "s_34396122",
+   "current_slot": null
+  },
+  "session": {
+   "state": {
+    "schema_version": 2,
+    "session_id": "s_34396122",
+    "revision": 4,
+    "turn": 4,
+    "seed": 217815,
+    "rng_version": 1,
+    "content_version": "2026.10.0",
+    "world_id": "chaebol_chairwoman_submerged_maybach",
+    "world_title": "千亿财阀女掌舵人·泄洪暗渠防弹座驾淹没",
+    "custom_world": false,
+    "mode": "daily",
+    "opening": {
+     "world_id": "chaebol_chairwoman_submerged_maybach",
+     "mode": "daily",
+     "combo_id": "cc_chair_guard_switch",
+     "power_structure": "switchable",
+     "location_id": "loc_tower_sky_lounge",
+     "hook_id": "hook_gu_second_opinion",
+     "hook_kind": "approach",
+     "identity_id": "pi_financial_reporter",
+     "activity_id": "act_rain_window",
+     "pressure_id": null,
+     "signature": "chaebol_chairwoman_submerged_maybach|loc_tower_sky_lounge|cc_chair_guard_switch|a:act_rain_window|hook_gu_second_opinion",
+     "conditions": {
+      "mode": "daily",
+      "locks": {},
+      "excludes": {
+       "content_tags": [],
+       "world_ids": [],
+       "location_ids": []
+      },
+      "player": {},
+      "npc_gender_preference": "any"
+     }
+    },
+    "clock": {
+     "day": 1,
+     "minute": 1387
+    },
+    "scene": {
+     "id": "sc1",
+     "location_id": "loc_tower_sky_lounge",
+     "present": [
+      "player",
+      "chairwoman_gu",
+      "personal_bodyguard"
+     ],
+     "since": {
+      "day": 1,
+      "minute": 1380
+     },
+     "responses": [
+      {
+       "turn": 4,
+       "npc_id": "chairwoman_gu",
+       "response": "surface",
+       "note": "萧雨桐微微抬眸，否认自己在等别人，神情克制而平静。"
+      }
+     ]
+    },
+    "player_id": "player",
+    "characters": {
+     "player": {
+      "id": "player",
+      "name": "顾清和",
+      "family": "顾",
+      "given": "清和",
+      "title": "清和",
+      "call": "清和",
+      "tier": "major",
+      "age": 25,
+      "gender": "male",
+      "adult_context": "成年玩家角色（25 岁），跑财经线的记者",
+      "public_role": "跑财经线的记者",
+      "identity_id": "pi_financial_reporter",
+      "social_position": "equal",
+      "baseline": "盯了这家财阀三年，手里有一份没发出去的稿子，写的是老董事长猝逝的疑点。",
+      "resources": [
+       "一台随身的录音笔",
+       "一份没发出去的调查稿",
+       "几个董事会里的线人"
+      ],
+      "reputation": "财经圈里出了名的难缠，董事们见了都绕着走。",
+      "risks": [
+       "稿子发出去，董事长的位置可能就保不住了。"
+      ],
+      "background": [],
+      "status": {
+       "location_id": "loc_tower_sky_lounge",
+       "mood": null,
+       "conditions": []
+      }
+     },
+     "chairwoman_gu": {
+      "id": "chairwoman_gu",
+      "template_id": "chairwoman_gu",
+      "name": "萧雨桐",
+      "family": "萧",
+      "given": "雨桐",
+      "call": "顾董",
+      "tier": "major",
+      "age": 21,
+      "gender": "female",
+      "adult_context": "二十一岁的长女，父亲猝逝后接任集团董事长，大学刚毕业就坐进了顶层办公室，去留进退由本人拿主意。",
+      "public_role": "千亿财阀的新任董事长",
+      "appearance": "真丝衬衫被漫上来的冰冷浑水彻底浸透，紧贴在柔韧曼妙的身躯上，饱满两颊因寒水与缺氧泛起微红，眼神坚毅无比，紧握钨钢安全锤递向身旁同伴，展现出令人心折的刚烈反差。",
+      "identity": {
+       "authority": "集团的每一笔投资、每一次人事任免，都要董事长签字才算数。",
+       "resources": [
+        "一把藏在手袋里的特制钨钢破窗安全锤，尖锥是超硬钨钢",
+        "一部能直通董事会秘书处的私人手机",
+        "父亲留下的一本董事会笔记"
+       ],
+       "limits": [
+        "年纪太轻，董事会里没几个人真心服气",
+        "西装套裙和高跟鞋在水里施展不开"
+       ],
+       "obligations": [
+        "守住父亲留下的集团",
+        "查清那辆车为什么会开进暗渠"
+       ],
+       "exposure_risk": "冰冷的浑水把真丝衬衫浸得透湿，紧贴在身上，在后座里只能整个人贴进保镖怀里取暖。",
+       "hidden_mismatch": "抽屉里锁着一份父亲猝逝前没签完的遗嘱修正案，上面写着保镖的名字。"
+      },
+      "situation": {
+       "trigger": "暴雨夜从董事会回来，防弹座驾被导进泄洪暗渠，董事长正在后座看叔叔一派递来的提案。",
+       "pressure": "洪水漫过车窗，车门被水压死死压住，必须在空气耗尽前平衡水压。",
+       "deadline": null,
+       "exits": [
+        {
+         "cost": "锤尖可能滑脱，手掌会被玻璃毛刺划伤",
+         "option": "用安全锤别开角窗泄压槽，和保镖合力踹开车门"
+        },
+        {
+         "cost": "暗渠水流太急，救援队靠不上来",
+         "option": "仰头贴着车顶等救援队"
+        }
+       ]
+      },
+      "decision": {
+       "core_value": "父亲交到手里的东西，一样都不能丢，跟着自己的人，一个都不能丢。",
+       "current_goal": "和保镖一起踹开车门，游出暗渠",
+       "goal_options": [
+        "用钨钢安全锤别开三角窗泄压槽，平衡水压",
+        "和保镖一起踹开车门，游出暗渠"
+       ],
+       "pressure_responses": {
+        "breaking": "冻得嘴唇发紫也不松手，咬着牙数完拍子。",
+        "high": "扯开挂住的裙摆暗扣，把全身重量压在锤柄上。",
+        "low": "车子一沉就解开安全带，先让保镖把手机举高照明。",
+        "mid": "从手袋里摸出安全锤，指给对方看角窗的泄压槽。"
+       },
+       "withdrawal": "脱险后裹着保镖的外套站在雨里，先给董事会秘书处打了个电话，才肯让人看见自己在发抖。",
+       "relationship_stance": "父亲生前亲自挑选的保镖，三年来寸步不离，董事长人前叫一声“先生”，私下却只在保镖面前脱下过高跟鞋。",
+       "contrast": "在董事会上一句话不让，叔叔一派的老狐狸都吵不过；车子沉进暗渠时，却是董事长第一个从手袋里摸出安全锤，把保镖的手按在了槽口上。",
+       "prefers": [
+        "说到做到、不看人下菜碟的人",
+        "知道自己的脆弱却从不拿出来说的人"
+       ],
+       "avoids": [
+        "当面奉承、背后递刀的人",
+        "把自己当成需要哄的人"
+       ],
+       "never": [
+        "丢下跟着自己的人先走"
+       ]
+      },
+      "intimacy": {
+       "desire_level": 4,
+       "attraction_sources": [
+        "暗渠里替自己挡住冰水、把最后一口空气让过来的那个人",
+        "三年来每一个深夜，都站在休息室门外的那道影子"
+       ],
+       "likes": [
+        "被人擦干湿透的头发",
+        "真丝衬衫的纽扣被一颗颗解开时屏住的那口气",
+        "被叫名字，而不是“顾董”"
+       ],
+       "dislikes": [
+        "被当成需要保护的小姑娘",
+        "趁人之危的手"
+       ],
+       "preconditions": [
+        "车门踹开、两人都游出暗渠之后",
+        "两人都清醒，心意出于自己，不是绝境里的依赖"
+       ],
+       "boundaries": [
+        "人前守住董事长的体面，私下的心意只给认定的人",
+        "每一步都要先问过，对方迟疑就停"
+       ],
+       "expression": "嘴上还在说明早九点的董事会，手却把休息室的门轻轻反锁了。",
+       "self_control": 3,
+       "desired_position": "休息室里由人替自己解开湿透衬衫的近身位"
+      },
+      "voices": {
+       "inner": "水好冷……保镖的心跳贴在背上，是这辆车里唯一暖和的东西。爸爸，你挑的人，真的没让我失望。",
+       "surface": "别慌，看着我。锤尖别进角窗的泄压槽，水压平了门就推得开——你压锤柄，我数到三。"
+      },
+      "schedule": [
+       {
+        "from": 540,
+        "location_id": "loc_tower_sky_lounge",
+        "to": 1080
+       },
+       {
+        "from": 1080,
+        "location_id": "loc_chairwoman_rest_room",
+        "to": 1380
+       }
+      ],
+      "status": {
+       "location_id": "loc_tower_sky_lounge",
+       "mood": null,
+       "conditions": []
+      }
+     },
+     "personal_bodyguard": {
+      "id": "personal_bodyguard",
+      "template_id": "personal_bodyguard",
+      "name": "秦北辰",
+      "family": "秦",
+      "given": "北辰",
+      "call": "秦总",
+      "tier": "major",
+      "age": 32,
+      "gender": "male",
+      "adult_context": "二十八岁，特种部队退役，三年前被老董事长亲自挑中，派到长女身边，去留进退由本人拿主意。",
+      "public_role": "董事长的贴身保镖",
+      "appearance": "西装外套早就脱给了董事长，白衬衫被冰水泡透，贴在宽阔的肩背上，在后座里用身体替董事长挡住水流。",
+      "identity": {
+       "authority": "董事长身边三步之内，谁能靠近、谁该退下，保镖说了算。",
+       "resources": [
+        "一副防割的潜水手套",
+        "一把战术折刀",
+        "一只防水的强光手电"
+       ],
+       "limits": [
+        "个子太高，在淹水的后座里施展不开",
+        "手边没有能破开防弹玻璃的工具"
+       ],
+       "obligations": [
+        "护住董事长不被冰水冻僵",
+        "把董事长活着带出暗渠"
+       ],
+       "exposure_risk": "白衬衫被冰水泡透，在后座里用胸口和手臂把董事长整个人圈在怀里。",
+       "hidden_mismatch": "老董事长临终前交代过一句话，保镖三年来一直记着，却从没对董事长说过。"
+      },
+      "situation": {
+       "trigger": "防弹座驾被导进暗渠时保镖坐在后座，第一时间把董事长护在了身下。",
+       "pressure": "洪水越涨越高，空气越来越少，必须赶在空气耗尽前打开车门。",
+       "deadline": null,
+       "exits": [
+        {
+         "cost": "肩背会被车门边缘压伤，冰水会让手臂脱力",
+         "option": "用后背顶住车门，和董事长合力压下锤柄"
+        },
+        {
+         "cost": "天窗一开，洪水会瞬间灌满车厢",
+         "option": "独自砸开天窗游出去求救"
+        }
+       ]
+      },
+      "decision": {
+       "core_value": "命令就是命令，可董事长的命比命令要紧。",
+       "current_goal": "用后背顶住对侧车门，给董事长腾出发力的支点",
+       "goal_options": [
+        "用后背顶住对侧车门，给董事长腾出发力的支点",
+        "双脚抵住门板，在水压平衡的一瞬间全力踹出去"
+       ],
+       "pressure_responses": {
+        "breaking": "憋着最后一口气，吼着数完最后一个三。",
+        "high": "用后背顶住车门，双臂环住董事长，和董事长一起压锤柄。",
+        "low": "一把将董事长拉到身边，先把手机举高照明。",
+        "mid": "把潜水手套套到董事长手上，免得被玻璃毛刺划伤。"
+       },
+       "withdrawal": "确认董事长游出水面后才松开手，靠在暗渠壁上长长吐出一口气。",
+       "relationship_stance": "三年来每一个深夜都站在休息室门外，董事长没叫就不进去，董事长叫了也只站在门边。",
+       "contrast": "在人前沉默得像一堵墙，董事会上谁的声音大一点，保镖的眼神就冷一分；可董事长一句“累了”，保镖就会默默把车开到楼下。",
+       "prefers": [
+        "说话算话的人"
+       ],
+       "avoids": [
+        "拿董事长当棋子的人"
+       ],
+       "never": [
+        "让董事长一个人留在车里"
+       ]
+      },
+      "intimacy": {
+       "desire_level": 2,
+       "attraction_sources": [
+        "董事长在冰水里还记得给人报数的那份镇定",
+        "董事会上那个寸步不让、回到车里却悄悄脱下高跟鞋的人"
+       ],
+       "likes": [
+        "董事长难得叫一次自己的名字",
+        "深夜被递来一杯热咖啡"
+       ],
+       "dislikes": [
+        "当众逾矩",
+        "背后嚼舌根"
+       ],
+       "preconditions": [
+        "车门踹开、两人都安全清醒之后",
+        "董事长点了头，出于本心"
+       ],
+       "boundaries": [
+        "董事长没开口就不越一步",
+        "人前不让董事长难做"
+       ],
+       "expression": "替董事长擦干头发时手停了很久，最后只说了一句：老董事长让我护着你，我自己也想。",
+       "self_control": 3,
+       "desired_position": "落地窗前从身后环住董事长的近身位"
+      },
+      "voices": {
+       "inner": "董事长整个人都贴在我怀里，冷得在发抖……别分神。老董事长把这个人交给我，今晚我绝不能食言。",
+       "surface": "顾董，靠过来，别松手！锤尖别进槽口，我顶住门，你往下压——水压一平，我们一起踹。"
+      },
+      "schedule": [
+       {
+        "from": 480,
+        "location_id": "loc_tower_sky_lounge",
+        "to": 1080
+       },
+       {
+        "from": 1080,
+        "location_id": "loc_tower_sky_lounge",
+        "to": 1380
+       }
+      ],
+      "status": {
+       "location_id": "loc_tower_sky_lounge",
+       "mood": null,
+       "conditions": []
+      }
+     },
+     "bg_board_member": {
+      "id": "bg_board_member",
+      "name": "老董事钱老",
+      "family": "",
+      "given": "老董事钱老",
+      "call": "老董事钱老",
+      "tier": "background",
+      "age": 61,
+      "gender": "male",
+      "adult_context": "跟着老董事长打天下的元老董事，叔叔一派。",
+      "public_role": "集团的元老董事",
+      "function": "obstacle",
+      "status": {
+       "location_id": "loc_tower_sky_lounge",
+       "mood": null,
+       "conditions": []
+      },
+      "line": "一个小姑娘坐在董事长的位置上，迟早要出事。"
+     },
+     "bg_chief_driver": {
+      "id": "bg_chief_driver",
+      "name": "车队队长阿强",
+      "family": "",
+      "given": "车队队长阿强",
+      "call": "车队队长阿强",
+      "tier": "background",
+      "age": 42,
+      "gender": "male",
+      "adult_context": "集团车队的队长，跟了老司机十年。",
+      "public_role": "集团车队的队长",
+      "function": "messenger",
+      "status": {
+       "location_id": "loc_door_release_recess",
+       "mood": null,
+       "conditions": []
+      },
+      "line": "车载电话还通着！顾董，您说话，我们在暗渠入口！"
+     },
+     "bg_city_police": {
+      "id": "bg_city_police",
+      "name": "交警队长周队",
+      "family": "",
+      "given": "交警队长周队",
+      "call": "交警队长周队",
+      "tier": "background",
+      "age": 44,
+      "gender": "male",
+      "adult_context": "市交警大队的队长，暴雨夜负责封路。",
+      "public_role": "市交警大队的队长",
+      "function": "obstacle",
+      "status": {
+       "location_id": "loc_door_release_recess",
+       "mood": null,
+       "conditions": []
+      },
+      "line": "暗渠已经封闭，谁也不许再往里冲，等水位降下来！"
+     },
+     "bg_financial_reporter": {
+      "id": "bg_financial_reporter",
+      "name": "财经记者小林",
+      "family": "",
+      "given": "财经记者小林",
+      "call": "财经记者小林",
+      "tier": "background",
+      "age": 27,
+      "gender": "female",
+      "adult_context": "跑财经线的年轻记者，二十六岁，嗅觉灵敏。",
+      "public_role": "盯着集团的财经记者",
+      "function": "witness",
+      "status": {
+       "location_id": "loc_tower_sky_lounge",
+       "mood": null,
+       "conditions": []
+      },
+      "line": "顾董今晚又让那位保镖替顾董挡酒了？明天的头条我已经想好了。"
+     },
+     "bg_gala_host": {
+      "id": "bg_gala_host",
+      "name": "晚宴主持人苏曼",
+      "family": "",
+      "given": "晚宴主持人苏曼",
+      "call": "晚宴主持人苏曼",
+      "tier": "background",
+      "age": 30,
+      "gender": "female",
+      "adult_context": "城里名流晚宴常请的主持人，三十出头。",
+      "public_role": "慈善晚宴的主持人",
+      "function": "witness",
+      "status": {
+       "location_id": "loc_tower_sky_lounge",
+       "mood": null,
+       "conditions": []
+      },
+      "line": "下一个拍品，顾董出价三千万，全场掌声！"
+     },
+     "bg_rescue_diver": {
+      "id": "bg_rescue_diver",
+      "name": "救援潜水员老秦",
+      "family": "",
+      "given": "救援潜水员老秦",
+      "call": "救援潜水员老秦",
+      "tier": "background",
+      "age": 46,
+      "gender": "male",
+      "adult_context": "城市应急救援队干了十五年的潜水员。",
+      "public_role": "城市应急救援队的潜水员",
+      "function": "helper",
+      "status": {
+       "location_id": "loc_door_release_recess",
+       "mood": null,
+       "conditions": []
+      },
+      "line": "水流太急，液压钳靠不上去，你们只能先从里面把水压平了！"
+     }
+    },
+    "relationships": {
+     "player>chairwoman_gu": {
+      "from": "player",
+      "to": "chairwoman_gu",
+      "trust": 3,
+      "tension": 3,
+      "stage": "testing",
+      "history": [
+       {
+        "turn": 1,
+        "change": "init",
+        "reason": "一起被困在淹水的车里，彼此的命都攥在对方手里。"
+       }
+      ]
+     },
+     "chairwoman_gu>player": {
+      "from": "chairwoman_gu",
+      "to": "player",
+      "trust": 3,
+      "tension": 3,
+      "stage": "testing",
+      "history": [
+       {
+        "turn": 1,
+        "change": "init",
+        "reason": "一起被困在淹水的车里，彼此的命都攥在对方手里。"
+       }
+      ]
+     },
+     "player>personal_bodyguard": {
+      "from": "player",
+      "to": "personal_bodyguard",
+      "trust": 3,
+      "tension": 2,
+      "stage": "familiar",
+      "history": [
+       {
+        "turn": 1,
+        "change": "init",
+        "reason": "三年寸步不离，知道对方的每一个习惯。"
+       }
+      ]
+     },
+     "personal_bodyguard>player": {
+      "from": "personal_bodyguard",
+      "to": "player",
+      "trust": 3,
+      "tension": 2,
+      "stage": "familiar",
+      "history": [
+       {
+        "turn": 1,
+        "change": "init",
+        "reason": "三年寸步不离，知道对方的每一个习惯。"
+       }
+      ]
+     },
+     "chairwoman_gu>personal_bodyguard": {
+      "from": "chairwoman_gu",
+      "to": "personal_bodyguard",
+      "trust": 3,
+      "tension": 3,
+      "stage": "testing",
+      "history": [
+       {
+        "turn": 1,
+        "change": "init",
+        "reason": "休息室门外那道影子，两个人谁都没说破。"
+       }
+      ]
+     },
+     "personal_bodyguard>chairwoman_gu": {
+      "from": "personal_bodyguard",
+      "to": "chairwoman_gu",
+      "trust": 3,
+      "tension": 3,
+      "stage": "testing",
+      "history": [
+       {
+        "turn": 1,
+        "change": "init",
+        "reason": "休息室门外那道影子，两个人谁都没说破。"
+       }
+      ]
+     }
+    },
+    "events": {},
+    "leverage": {},
+    "pressure": null,
+    "preferences": {
+     "inner_view": false,
+     "assistant": false,
+     "offscreen_simulation": true,
+     "voice": {},
+     "npc_gender_preference": "any",
+     "person": "second",
+     "pace": "standard",
+     "explicitness": "standard"
+    },
+    "safety": {
+     "paused": false,
+     "boundaries": []
+    },
+    "memory": {
+     "turns": [
+      {
+       "turn": 2,
+       "day": 1,
+       "mode": "result",
+       "summary": "顾清和没有急于翻看提案，而是先环视四周环境；萧雨桐安静等待他的反应。",
+       "open_action": "萧雨桐看着顾清和，等待他将目光落回提案上或开口说话。",
+       "quotes": []
+      },
+      {
+       "turn": 3,
+       "day": 1,
+       "mode": "continue",
+       "summary": "萧雨桐主动翻开提案至关键的第七页，向顾清和展示其中关于资产质押与免责的隐蔽条款。",
+       "open_action": "萧雨桐的指尖按在第七页的免责条款上，抬眼看着顾清和。",
+       "quotes": []
+      },
+      {
+       "turn": 4,
+       "day": 1,
+       "mode": "attempt",
+       "summary": "顾清和走近询问萧雨桐是否在等人，萧雨桐表面否认并维持克制态势。",
+       "open_action": "萧雨桐收回按在纸页上的手，等待顾清和对提问的后半句或提案发表看法。",
+       "quotes": []
+      }
+     ],
+     "chapters": [],
+     "prologue": null,
+     "open_action": "萧雨桐收回按在纸页上的手，等待顾清和对提问的后半句或提案发表看法。",
+     "last_quotes": []
+    },
+    "counters": {
+     "next": {
+      "fact": 14,
+      "event": 1,
+      "leverage": 1,
+      "scene": 2,
+      "boundary": 1
+     },
+     "major_action_turn": {},
+     "event_keys": {},
+     "intimacy_evidence": {},
+     "twists": {
+      "auto_offered": false,
+      "accepted_days": [],
+      "accepted": []
+     },
+     "last_chapter_turn": 1,
+     "chapter_count": 0,
+     "chapter_requested_at": null,
+     "offscreen_beat_turn": {}
+    },
+    "requests": {
+     "chapter_summary": false,
+     "prologue": false,
+     "twist_offer": null,
+     "offscreen_beat_candidates": []
+    },
+    "undo_floor": 1,
+    "facts": {
+     "f1": {
+      "id": "f1",
+      "key": "chairwoman_gu.exposure",
+      "text": "萧雨桐：冰冷的浑水把真丝衬衫浸得透湿，紧贴在身上，在后座里只能整个人贴进保镖怀里取暖。",
+      "truth": true,
+      "known_by": [
+       "chairwoman_gu"
+      ],
+      "believed_by": [],
+      "visibility": "private",
+      "origin": "setup",
+      "turn": 1,
+      "spreading": false,
+      "coord": [
+       1,
+       0
+      ]
+     },
+     "f2": {
+      "id": "f2",
+      "key": "chairwoman_gu.hidden",
+      "text": "萧雨桐：抽屉里锁着一份父亲猝逝前没签完的遗嘱修正案，上面写着保镖的名字。",
+      "truth": true,
+      "known_by": [
+       "chairwoman_gu"
+      ],
+      "believed_by": [],
+      "visibility": "private",
+      "origin": "setup",
+      "turn": 1,
+      "spreading": false,
+      "coord": [
+       1,
+       1
+      ]
+     },
+     "f3": {
+      "id": "f3",
+      "key": "personal_bodyguard.exposure",
+      "text": "秦北辰：白衬衫被冰水泡透，在后座里用胸口和手臂把董事长整个人圈在怀里。",
+      "truth": true,
+      "known_by": [
+       "personal_bodyguard"
+      ],
+      "believed_by": [],
+      "visibility": "private",
+      "origin": "setup",
+      "turn": 1,
+      "spreading": false,
+      "coord": [
+       1,
+       2
+      ]
+     },
+     "f4": {
+      "id": "f4",
+      "key": "personal_bodyguard.hidden",
+      "text": "秦北辰：老董事长临终前交代过一句话，保镖三年来一直记着，却从没对董事长说过。",
+      "truth": true,
+      "known_by": [
+       "personal_bodyguard"
+      ],
+      "believed_by": [],
+      "visibility": "private",
+      "origin": "setup",
+      "turn": 1,
+      "spreading": false,
+      "coord": [
+       1,
+       3
+      ]
+     },
+     "f5": {
+      "id": "f5",
+      "key": "player.baseline",
+      "text": "顾清和：盯了这家财阀三年，手里有一份没发出去的稿子，写的是老董事长猝逝的疑点。",
+      "truth": true,
+      "known_by": [
+       "player"
+      ],
+      "believed_by": [],
+      "visibility": "private",
+      "origin": "setup",
+      "turn": 1,
+      "spreading": false,
+      "coord": [
+       1,
+       4
+      ]
+     },
+     "f6": {
+      "id": "f6",
+      "key": "player.risk.1",
+      "text": "顾清和：稿子发出去，董事长的位置可能就保不住了。",
+      "truth": true,
+      "known_by": [
+       "player"
+      ],
+      "believed_by": [],
+      "visibility": "private",
+      "origin": "setup",
+      "turn": 1,
+      "spreading": false,
+      "coord": [
+       1,
+       5
+      ]
+     },
+     "f7": {
+      "id": "f7",
+      "key": "combo.meeting",
+      "text": "暴雨夜从董事会回来，董事长靠在后座闭着眼，保镖坐在旁边盯着窗外，车子忽然拐进了一条陌生的辅路。",
+      "truth": true,
+      "known_by": [
+       "player",
+       "chairwoman_gu",
+       "personal_bodyguard"
+      ],
+      "believed_by": [],
+      "visibility": "public",
+      "origin": "setup",
+      "turn": 1,
+      "spreading": false,
+      "coord": [
+       1,
+       6
+      ]
+     },
+     "f8": {
+      "id": "f8",
+      "key": "tension.te_culvert_flood_rise",
+      "text": "暗渠里的洪水一寸寸往上涨，顶棚下的空气越来越少。",
+      "truth": true,
+      "known_by": [
+       "player",
+       "chairwoman_gu",
+       "personal_bodyguard"
+      ],
+      "believed_by": [],
+      "visibility": "public",
+      "origin": "setup",
+      "turn": 1,
+      "spreading": false,
+      "coord": [
+       1,
+       7
+      ]
+     },
+     "f9": {
+      "id": "f9",
+      "key": "tension.te_icy_water_body_heat",
+      "text": "冰冷的积水漫过胸口，两人只能贴紧了互相取暖。",
+      "truth": true,
+      "known_by": [
+       "player",
+       "chairwoman_gu",
+       "personal_bodyguard"
+      ],
+      "believed_by": [],
+      "visibility": "public",
+      "origin": "setup",
+      "turn": 1,
+      "spreading": false,
+      "coord": [
+       1,
+       8
+      ]
+     },
+     "f10": {
+      "id": "f10",
+      "key": "sky_lounge.surroundings.quiet",
+      "text": "酒廊内空旷安静，晚宴宾客已全数离开，唯有秦北辰如影随形守在门口阴影处。",
+      "truth": true,
+      "known_by": [
+       "player",
+       "chairwoman_gu",
+       "personal_bodyguard"
+      ],
+      "believed_by": [],
+      "visibility": "public",
+      "origin": "observed",
+      "turn": 2,
+      "spreading": false,
+      "coord": [
+       2,
+       1
+      ]
+     },
+     "f11": {
+      "id": "f11",
+      "key": "proposal.red_clause_asset_transfer",
+      "text": "提案第七页是一项深夜紧急提交的城东物流园资产质押与防汛工程分包案，条款里藏着规避董事会追责的免责声明。",
+      "truth": true,
+      "known_by": [
+       "player",
+       "chairwoman_gu",
+       "personal_bodyguard"
+      ],
+      "believed_by": [],
+      "visibility": "public",
+      "origin": "observed",
+      "turn": 3,
+      "spreading": false,
+      "coord": [
+       3,
+       1
+      ]
+     },
+     "f12": {
+      "id": "f12",
+      "key": "chairwoman_gu.intent.t4",
+      "text": "萧雨桐的真实打算：表面声称只在等文件答复，实则在等车队确认回程排查情况以防暗算。",
+      "truth": true,
+      "known_by": [
+       "chairwoman_gu"
+      ],
+      "believed_by": [],
+      "visibility": "private",
+      "origin": "observed",
+      "turn": 4,
+      "spreading": false,
+      "coord": [
+       4,
+       1
+      ]
+     },
+     "f13": {
+      "id": "f13",
+      "key": "chairwoman_gu.waiting_intent",
+      "text": "萧雨桐向顾清和表示酒廊内只有他们二人与文件，并未约见其他董事。",
+      "truth": true,
+      "known_by": [
+       "player",
+       "chairwoman_gu",
+       "personal_bodyguard"
+      ],
+      "believed_by": [],
+      "visibility": "public",
+      "origin": "observed",
+      "turn": 4,
+      "spreading": false,
+      "coord": [
+       4,
+       2
+      ]
+     }
+    }
+   },
+   "content": {
+    "world": {
+     "background_cast": [
+      {
+       "adult_context": "城市应急救援队干了十五年的潜水员。",
+       "age_range": [
+        35,
+        50
+       ],
+       "function": "helper",
+       "gender": "male",
+       "id": "bg_rescue_diver",
+       "line": "水流太急，液压钳靠不上去，你们只能先从里面把水压平了！",
+       "location_ids": [
+        "loc_door_release_recess"
+       ],
+       "name": "救援潜水员老秦",
+       "role": "城市应急救援队的潜水员"
+      },
+      {
+       "adult_context": "集团车队的队长，跟了老司机十年。",
+       "age_range": [
+        35,
+        48
+       ],
+       "function": "messenger",
+       "gender": "male",
+       "id": "bg_chief_driver",
+       "line": "车载电话还通着！顾董，您说话，我们在暗渠入口！",
+       "location_ids": [
+        "loc_door_release_recess",
+        "loc_tower_sky_lounge"
+       ],
+       "name": "车队队长阿强",
+       "role": "集团车队的队长"
+      },
+      {
+       "adult_context": "市交警大队的队长，暴雨夜负责封路。",
+       "age_range": [
+        40,
+        52
+       ],
+       "function": "obstacle",
+       "gender": "male",
+       "id": "bg_city_police",
+       "line": "暗渠已经封闭，谁也不许再往里冲，等水位降下来！",
+       "location_ids": [
+        "loc_door_release_recess"
+       ],
+       "name": "交警队长周队",
+       "role": "市交警大队的队长"
+      },
+      {
+       "adult_context": "跑财经线的年轻记者，二十六岁，嗅觉灵敏。",
+       "age_range": [
+        25,
+        32
+       ],
+       "function": "witness",
+       "gender": "female",
+       "id": "bg_financial_reporter",
+       "line": "顾董今晚又让那位保镖替顾董挡酒了？明天的头条我已经想好了。",
+       "location_ids": [
+        "loc_tower_sky_lounge"
+       ],
+       "name": "财经记者小林",
+       "role": "盯着集团的财经记者"
+      },
+      {
+       "adult_context": "跟着老董事长打天下的元老董事，叔叔一派。",
+       "age_range": [
+        60,
+        72
+       ],
+       "function": "obstacle",
+       "gender": "male",
+       "id": "bg_board_member",
+       "line": "一个小姑娘坐在董事长的位置上，迟早要出事。",
+       "location_ids": [
+        "loc_tower_sky_lounge"
+       ],
+       "name": "老董事钱老",
+       "role": "集团的元老董事"
+      },
+      {
+       "adult_context": "城里名流晚宴常请的主持人，三十出头。",
+       "age_range": [
+        28,
+        38
+       ],
+       "function": "witness",
+       "gender": "female",
+       "id": "bg_gala_host",
+       "line": "下一个拍品，顾董出价三千万，全场掌声！",
+       "location_ids": [
+        "loc_tower_sky_lounge"
+       ],
+       "name": "晚宴主持人苏曼",
+       "role": "慈善晚宴的主持人"
+      }
+     ],
+     "cast_combos": [
+      {
+       "chemistry": "新任董事长与贴身保镖在淹水的后座里胸背相贴、手叠着手，把钨钢锤尖别进三角窗泄压槽，一点一点平衡水压。",
+       "id": "cc_chair_guard_switch",
+       "identity_ids": [],
+       "player_positions": [
+        "high",
+        "equal",
+        "low"
+       ],
+       "power_structure": "switchable",
+       "relations": [
+        {
+         "a": "player",
+         "a_to_b": {
+          "tension": 3,
+          "trust": 3
+         },
+         "b": "chairwoman_gu",
+         "b_to_a": {
+          "tension": 3,
+          "trust": 3
+         },
+         "reason": "一起被困在淹水的车里，彼此的命都攥在对方手里。",
+         "stage": "testing"
+        },
+        {
+         "a": "player",
+         "a_to_b": {
+          "tension": 2,
+          "trust": 3
+         },
+         "b": "personal_bodyguard",
+         "b_to_a": {
+          "tension": 2,
+          "trust": 3
+         },
+         "reason": "三年寸步不离，知道对方的每一个习惯。",
+         "stage": "familiar"
+        },
+        {
+         "a": "chairwoman_gu",
+         "a_to_b": {
+          "tension": 3,
+          "trust": 3
+         },
+         "b": "personal_bodyguard",
+         "b_to_a": {
+          "tension": 3,
+          "trust": 3
+         },
+         "reason": "休息室门外那道影子，两个人谁都没说破。",
+         "stage": "testing"
+        }
+       ],
+       "slots": [
+        "chairwoman_gu",
+        "personal_bodyguard"
+       ],
+       "stakes": {
+        "irreplaceable_goal": "平衡水压、踹开车门，活着游出暗渠，查清是谁改了路线。",
+        "limit_gap": "董事长的西装套裙在水里施展不开，保镖个子太高，在后座里转不过身。",
+        "meeting_reason": "暴雨夜从董事会回来，董事长靠在后座闭着眼，保镖坐在旁边盯着窗外，车子忽然拐进了一条陌生的辅路。",
+        "resource_gap": "董事长有钨钢安全锤和临危不乱的脑子，保镖有一身力气和特种部队练出的水下经验。"
+       },
+       "tags": [
+        "workplace",
+        "disaster"
+       ],
+       "tension_engine_ids": [
+        "te_culvert_flood_rise",
+        "te_icy_water_body_heat"
+       ]
+      },
+      {
+       "chemistry": "董事长与保镖在车门前四只手叠在拉手上，一个数拍子一个蹬门，把三年的默契压成一股劲。",
+       "id": "cc_chair_guard_equal",
+       "identity_ids": [],
+       "player_positions": [
+        "equal"
+       ],
+       "power_structure": "equal",
+       "relations": [
+        {
+         "a": "player",
+         "a_to_b": {
+          "tension": 2,
+          "trust": 3
+         },
+         "b": "chairwoman_gu",
+         "b_to_a": {
+          "tension": 2,
+          "trust": 3
+         },
+         "reason": "为一份提案该不该签，在车上争了一路，争到最后谁都不肯先闭嘴。",
+         "stage": "familiar"
+        },
+        {
+         "a": "player",
+         "a_to_b": {
+          "tension": 2,
+          "trust": 3
+         },
+         "b": "personal_bodyguard",
+         "b_to_a": {
+          "tension": 2,
+          "trust": 3
+         },
+         "reason": "在深夜的顶层办公室里一起熬过很多个通宵。",
+         "stage": "familiar"
+        },
+        {
+         "a": "chairwoman_gu",
+         "a_to_b": {
+          "tension": 3,
+          "trust": 3
+         },
+         "b": "personal_bodyguard",
+         "b_to_a": {
+          "tension": 3,
+          "trust": 3
+         },
+         "reason": "一个说一不二一个惜字如金，三年里说过的话不多，句句都记得。",
+         "stage": "testing"
+        }
+       ],
+       "slots": [
+        "chairwoman_gu",
+        "personal_bodyguard"
+       ],
+       "stakes": {
+        "irreplaceable_goal": "踹开车门，带着这个问题的答案活着出去。",
+        "limit_gap": "董事长放不下董事长的架子，保镖不习惯不听命令自己拿主意。",
+        "meeting_reason": "董事会上吵了一整天，董事长在车上第一次开口问保镖：如果你是我，会怎么选？",
+        "resource_gap": "董事长记得父亲教过的每一条逃生要领，保镖认得每一种车门锁的构造。"
+       },
+       "tags": [
+        "workplace",
+        "crime"
+       ],
+       "tension_engine_ids": [
+        "te_door_water_lock",
+        "te_air_pocket_shrink"
+       ]
+      },
+      {
+       "chemistry": "收购方的人在车载电话那头听着，董事长和保镖一个压锤一个顶门，谁也不肯在外人面前先喊冷。",
+       "id": "cc_chair_guard_acquirer",
+       "identity_ids": [],
+       "player_positions": [
+        "high"
+       ],
+       "power_structure": "player_high",
+       "relations": [
+        {
+         "a": "player",
+         "a_to_b": {
+          "tension": 3,
+          "trust": 3
+         },
+         "b": "chairwoman_gu",
+         "b_to_a": {
+          "tension": 3,
+          "trust": 3
+         },
+         "reason": "头一回在收购方面前谈判，也头一回在收购方面前把命交出去。",
+         "stage": "testing"
+        },
+        {
+         "a": "player",
+         "a_to_b": {
+          "tension": 2,
+          "trust": 3
+         },
+         "b": "personal_bodyguard",
+         "b_to_a": {
+          "tension": 2,
+          "trust": 3
+         },
+         "reason": "早听说董事长身边有个寸步不离的保镖。",
+         "stage": "familiar"
+        },
+        {
+         "a": "chairwoman_gu",
+         "a_to_b": {
+          "tension": 3,
+          "trust": 3
+         },
+         "b": "personal_bodyguard",
+         "b_to_a": {
+          "tension": 3,
+          "trust": 3
+         },
+         "reason": "在外人面前不敢多看一眼，可每一句口令都只喊给一个人听。",
+         "stage": "testing"
+        }
+       ],
+       "slots": [
+        "chairwoman_gu",
+        "personal_bodyguard"
+       ],
+       "stakes": {
+        "irreplaceable_goal": "让收购方亲眼看见，这位年轻的董事长扛得住事。",
+        "limit_gap": "董事长不敢在收购方面前露怯，保镖不习惯被外人听着。",
+        "meeting_reason": "收购基金的合伙人约董事长在车上谈股份，保镖坐在前排，车子开进了暴雨里。",
+        "resource_gap": "董事长手里有安全锤和董事会的票，保镖手里有手电和一身力气。"
+       },
+       "tags": [
+        "workplace",
+        "disaster"
+       ],
+       "tension_engine_ids": [
+        "te_air_pocket_shrink",
+        "te_door_water_lock"
+       ]
+      },
+      {
+       "chemistry": "董事长一边压锤柄一边给新秘书发号施令，保镖顶着车门，把三个人的力气拧成一股。",
+       "id": "cc_chair_guard_secretary",
+       "identity_ids": [],
+       "player_positions": [
+        "low",
+        "equal"
+       ],
+       "power_structure": "npc_high",
+       "relations": [
+        {
+         "a": "player",
+         "a_to_b": {
+          "tension": 3,
+          "trust": 3
+         },
+         "b": "chairwoman_gu",
+         "b_to_a": {
+          "tension": 3,
+          "trust": 3
+         },
+         "reason": "董事长拿新秘书当个跑腿的，今晚却要把命交到这双生手里。",
+         "stage": "testing"
+        },
+        {
+         "a": "player",
+         "a_to_b": {
+          "tension": 2,
+          "trust": 3
+         },
+         "b": "personal_bodyguard",
+         "b_to_a": {
+          "tension": 2,
+          "trust": 3
+         },
+         "reason": "第一次见面就一起被困在淹水的车里。",
+         "stage": "familiar"
+        },
+        {
+         "a": "chairwoman_gu",
+         "a_to_b": {
+          "tension": 3,
+          "trust": 3
+         },
+         "b": "personal_bodyguard",
+         "b_to_a": {
+          "tension": 3,
+          "trust": 3
+         },
+         "reason": "董事长和保镖默契得像练过一样，新秘书都看在眼里。",
+         "stage": "testing"
+        }
+       ],
+       "slots": [
+        "chairwoman_gu",
+        "personal_bodyguard"
+       ],
+       "stakes": {
+        "irreplaceable_goal": "带着新秘书一起活着出去，把明早九点的董事会开完。",
+        "limit_gap": "新秘书什么都不懂，董事长得一边救人一边教。",
+        "meeting_reason": "新秘书第一次跟着董事长去开董事会，回程坐在后座整理文件，保镖坐在旁边。",
+        "resource_gap": "董事长有安全锤和集团的权限，保镖有力气和经验。"
+       },
+       "tags": [
+        "workplace",
+        "intimate"
+       ],
+       "tension_engine_ids": [
+        "te_culvert_flood_rise",
+        "te_door_water_lock"
+       ]
+      }
+     ],
+     "channels": [
+      {
+       "fidelity": "exact",
+       "id": "ch_cabin_whisper",
+       "reach": "all",
+       "text": "后座里两人贴着脸的低语和呼吸"
+      },
+      {
+       "fidelity": "distorted",
+       "id": "ch_car_phone_static",
+       "reach": "local",
+       "text": "车载电话里断断续续、夹着雨声的呼救"
+      }
+     ],
+     "character_templates": [
+      {
+       "adult_context": "二十一岁的长女，父亲猝逝后接任集团董事长，大学刚毕业就坐进了顶层办公室，去留进退由本人拿主意。",
+       "age_range": [
+        21,
+        24
+       ],
+       "appearance_options": [
+        "身着定制深灰色羊绒西装套裙与高支白真丝衬衫，青丝虽略显湿润，白皙面颊带着青年女性特有带着柔和的轮廓，眼神在暗淡车厢内流转着深邃从容的光芒，优雅端庄中尽显干练。",
+        "真丝衬衫被漫上来的冰冷浑水彻底浸透，紧贴在柔韧曼妙的身躯上，饱满两颊因寒水与缺氧泛起微红，眼神坚毅无比，紧握钨钢安全锤递向身旁同伴，展现出令人心折的刚烈反差。"
+       ],
+       "decision": {
+        "avoids": [
+         "当面奉承、背后递刀的人",
+         "把自己当成需要哄的人"
+        ],
+        "contrast": "在董事会上一句话不让，叔叔一派的老狐狸都吵不过；车子沉进暗渠时，却是董事长第一个从手袋里摸出安全锤，把保镖的手按在了槽口上。",
+        "core_value": "父亲交到手里的东西，一样都不能丢，跟着自己的人，一个都不能丢。",
+        "goal_options": [
+         "用钨钢安全锤别开三角窗泄压槽，平衡水压",
+         "和保镖一起踹开车门，游出暗渠"
+        ],
+        "never": [
+         "丢下跟着自己的人先走"
+        ],
+        "prefers": [
+         "说到做到、不看人下菜碟的人",
+         "知道自己的脆弱却从不拿出来说的人"
+        ],
+        "pressure_responses": {
+         "breaking": "冻得嘴唇发紫也不松手，咬着牙数完拍子。",
+         "high": "扯开挂住的裙摆暗扣，把全身重量压在锤柄上。",
+         "low": "车子一沉就解开安全带，先让保镖把手机举高照明。",
+         "mid": "从手袋里摸出安全锤，指给对方看角窗的泄压槽。"
+        },
+        "relationship_stance": "父亲生前亲自挑选的保镖，三年来寸步不离，董事长人前叫一声“先生”，私下却只在保镖面前脱下过高跟鞋。",
+        "withdrawal": "脱险后裹着保镖的外套站在雨里，先给董事会秘书处打了个电话，才肯让人看见自己在发抖。"
+       },
+       "gender": "female",
+       "gender_reason": "千亿财阀的新任董事长，按原稿写作女性。",
+       "id": "chairwoman_gu",
+       "identity": {
+        "authority": "集团的每一笔投资、每一次人事任免，都要董事长签字才算数。",
+        "exposure": "冰冷的浑水把真丝衬衫浸得透湿，紧贴在身上，在后座里只能整个人贴进保镖怀里取暖。",
+        "hidden": "抽屉里锁着一份父亲猝逝前没签完的遗嘱修正案，上面写着保镖的名字。",
+        "limits": [
+         "年纪太轻，董事会里没几个人真心服气",
+         "西装套裙和高跟鞋在水里施展不开"
+        ],
+        "obligations": [
+         "守住父亲留下的集团",
+         "查清那辆车为什么会开进暗渠"
+        ],
+        "resources": [
+         "一把藏在手袋里的特制钨钢破窗安全锤，尖锥是超硬钨钢",
+         "一部能直通董事会秘书处的私人手机",
+         "父亲留下的一本董事会笔记"
+        ]
+       },
+       "intimacy_tendency": {
+        "attraction_sources": [
+         "暗渠里替自己挡住冰水、把最后一口空气让过来的那个人",
+         "三年来每一个深夜，都站在休息室门外的那道影子"
+        ],
+        "boundaries": [
+         "人前守住董事长的体面，私下的心意只给认定的人",
+         "每一步都要先问过，对方迟疑就停"
+        ],
+        "desire_range": [
+         2,
+         4
+        ],
+        "desired_position": "休息室里由人替自己解开湿透衬衫的近身位",
+        "dislikes": [
+         "被当成需要保护的小姑娘",
+         "趁人之危的手"
+        ],
+        "expression": "嘴上还在说明早九点的董事会，手却把休息室的门轻轻反锁了。",
+        "likes": [
+         "被人擦干湿透的头发",
+         "真丝衬衫的纽扣被一颗颗解开时屏住的那口气",
+         "被叫名字，而不是“顾董”"
+        ],
+        "preconditions": [
+         "车门踹开、两人都游出暗渠之后",
+         "两人都清醒，心意出于自己，不是绝境里的依赖"
+        ],
+        "self_control_range": [
+         3,
+         5
+        ]
+       },
+       "public_role": "千亿财阀的新任董事长",
+       "schedule": [
+        {
+         "from": 540,
+         "location_id": "loc_tower_sky_lounge",
+         "to": 1080
+        },
+        {
+         "from": 1080,
+         "location_id": "loc_chairwoman_rest_room",
+         "to": 1380
+        }
+       ],
+       "situation": {
+        "exits": [
+         {
+          "cost": "锤尖可能滑脱，手掌会被玻璃毛刺划伤",
+          "option": "用安全锤别开角窗泄压槽，和保镖合力踹开车门"
+         },
+         {
+          "cost": "暗渠水流太急，救援队靠不上来",
+          "option": "仰头贴着车顶等救援队"
+         }
+        ],
+        "pressure": "洪水漫过车窗，车门被水压死死压住，必须在空气耗尽前平衡水压。",
+        "trigger": "暴雨夜从董事会回来，防弹座驾被导进泄洪暗渠，董事长正在后座看叔叔一派递来的提案。"
+       },
+       "tags": [
+        "workplace",
+        "disaster",
+        "intimate"
+       ],
+       "voices": {
+        "inner": "水好冷……保镖的心跳贴在背上，是这辆车里唯一暖和的东西。爸爸，你挑的人，真的没让我失望。",
+        "surface": "别慌，看着我。锤尖别进角窗的泄压槽，水压平了门就推得开——你压锤柄，我数到三。"
+       }
+      },
+      {
+       "adult_context": "三十出头，跟过老董事长十年，如今把同样的忠心给了新董事长。",
+       "age_range": [
+        30,
+        40
+       ],
+       "appearance_options": [
+        "一身剪裁利落的黑色套装，平板电脑从不离手，耳朵里永远塞着一只蓝牙耳机。",
+        "站在董事长身后半步，替董事长挡掉每一个不该接的电话。"
+       ],
+       "decision": {
+        "avoids": [
+         "董事长的首席秘书最烦临阵推诿"
+        ],
+        "contrast": "在董事们面前冷得像一块冰，深夜却会给董事长的保温杯里换上热姜茶。",
+        "core_value": "老董事长的知遇之恩，要还在新董事长身上。",
+        "goal_options": [
+         "先把人救出来",
+         "董事长的首席秘书再追究是谁的错"
+        ],
+        "never": [
+         "董事长的首席秘书不会丢下困在里面的人"
+        ],
+        "prefers": [
+         "董事长的首席秘书看重说到做到的人"
+        ],
+        "pressure_responses": {
+         "breaking": "董事长的首席秘书嗓子喊哑了也不肯走",
+         "high": "董事长的首席秘书顶着危险往里递东西",
+         "low": "董事长的首席秘书先稳住身边的人",
+         "mid": "董事长的首席秘书四处找能用的工具"
+        },
+        "relationship_stance": "看着董事长从手足无措的新人长成能镇住董事会的掌舵人，心疼却从来不说。",
+        "withdrawal": "事情过去后，董事长的首席秘书一个人躲开抽根烟"
+       },
+       "gender": "any",
+       "gender_reason": "董事长的首席秘书这个位置不限性别。",
+       "id": "chief_secretary",
+       "identity": {
+        "authority": "董事长的行程、谁能进顶层办公室，首席秘书说了算。",
+        "exposure": "董事长的首席秘书忙起来顾不上衣着体面",
+        "hidden": "做董事长的首席秘书这些年，有件事没对旁人说过",
+        "limits": [
+         "董事长的首席秘书不在死角里，只能在外面使劲"
+        ],
+        "obligations": [
+         "守住董事长的首席秘书手上的那一摊事"
+        ],
+        "resources": [
+         "一份董事会全体成员的把柄清单",
+         "董事长的首席秘书随身的一盏提灯"
+        ]
+       },
+       "intimacy_tendency": {
+        "attraction_sources": [
+         "董事长的首席秘书欣赏做事干脆利落的人",
+         "董事长的首席秘书记得危急时回头搭把手的人"
+        ],
+        "boundaries": [
+         "对方迟疑，董事长的首席秘书就停"
+        ],
+        "desire_range": [
+         1,
+         3
+        ],
+        "desired_position": "和董事长的首席秘书并肩站着",
+        "dislikes": [
+         "董事长的首席秘书讨厌轻浮的手"
+        ],
+        "expression": "董事长的首席秘书话不多，递东西时指尖会多停一下",
+        "likes": [
+         "董事长的首席秘书收工后的一杯热饮"
+        ],
+        "preconditions": [
+         "董事长的首席秘书要等危局过去、双方清醒自愿"
+        ],
+        "self_control_range": [
+         3,
+         5
+        ]
+       },
+       "public_role": "董事长的首席秘书",
+       "schedule": [
+        {
+         "from": 480,
+         "location_id": "loc_tower_sky_lounge",
+         "to": 1260
+        }
+       ],
+       "situation": {
+        "exits": [
+         {
+          "cost": "董事长的首席秘书未必赶得上",
+          "option": "董事长的首席秘书在外面调度接应"
+         },
+         {
+          "cost": "可能把董事长的首席秘书自己也搭进去",
+          "option": "董事长的首席秘书硬闯进去"
+         }
+        ],
+        "pressure": "里面的人出不来，董事长的首席秘书进不去",
+        "trigger": "警报传到董事长的首席秘书那里"
+       },
+       "tags": [
+        "workplace"
+       ],
+       "voices": {
+        "inner": "那辆车的行车路线是谁改的……等董事长出来，我一定要查清楚。",
+        "surface": "顾董！听得见吗？救援队十分钟到，您一定要撑住！"
+       }
+      },
+      {
+       "adult_context": "二十二岁，老董事长在外面的女儿，父亲死后才被接回家，叔叔一派想拿来当棋子。",
+       "age_range": [
+        21,
+        26
+       ],
+       "appearance_options": [
+        "一身张扬的红色连衣裙，耳垂上的钻石晃得人睁不开眼。",
+        "端着香槟靠在酒廊吧台边，冷眼看着姐姐被一群董事围住。"
+       ],
+       "decision": {
+        "avoids": [
+         "董事长同父异母的妹妹最烦临阵推诿"
+        ],
+        "contrast": "在晚宴上故意让姐姐难堪，独自一人时却会翻看手机里那张唯一的、三个人的合照。",
+        "core_value": "这个家欠我的，迟早要还回来。",
+        "goal_options": [
+         "先把人救出来",
+         "董事长同父异母的妹妹再追究是谁的错"
+        ],
+        "never": [
+         "董事长同父异母的妹妹不会丢下困在里面的人"
+        ],
+        "prefers": [
+         "董事长同父异母的妹妹看重说到做到的人"
+        ],
+        "pressure_responses": {
+         "breaking": "董事长同父异母的妹妹嗓子喊哑了也不肯走",
+         "high": "董事长同父异母的妹妹顶着危险往里递东西",
+         "low": "董事长同父异母的妹妹先稳住身边的人",
+         "mid": "董事长同父异母的妹妹四处找能用的工具"
+        },
+        "relationship_stance": "嘴上处处跟董事长作对，可听说暴雨夜姐姐的车出了事，第一个冲到了暗渠入口。",
+        "withdrawal": "事情过去后，董事长同父异母的妹妹一个人躲开抽根烟"
+       },
+       "gender": "female",
+       "gender_reason": "老董事长在外面的女儿，按设定写作女性。",
+       "id": "half_sister",
+       "identity": {
+        "authority": "手里握着父亲留下的一部分股份，叔叔一派想要，董事长也需要。",
+        "exposure": "董事长同父异母的妹妹忙起来顾不上衣着体面",
+        "hidden": "做董事长同父异母的妹妹这些年，有件事没对旁人说过",
+        "limits": [
+         "董事长同父异母的妹妹不在死角里，只能在外面使劲"
+        ],
+        "obligations": [
+         "守住董事长同父异母的妹妹手上的那一摊事"
+        ],
+        "resources": [
+         "父亲留下的百分之五股份",
+         "董事长同父异母的妹妹随身的一盏提灯"
+        ]
+       },
+       "intimacy_tendency": {
+        "attraction_sources": [
+         "董事长同父异母的妹妹欣赏做事干脆利落的人",
+         "董事长同父异母的妹妹记得危急时回头搭把手的人"
+        ],
+        "boundaries": [
+         "对方迟疑，董事长同父异母的妹妹就停"
+        ],
+        "desire_range": [
+         1,
+         3
+        ],
+        "desired_position": "和董事长同父异母的妹妹并肩站着",
+        "dislikes": [
+         "董事长同父异母的妹妹讨厌轻浮的手"
+        ],
+        "expression": "董事长同父异母的妹妹话不多，递东西时指尖会多停一下",
+        "likes": [
+         "董事长同父异母的妹妹收工后的一杯热饮"
+        ],
+        "preconditions": [
+         "董事长同父异母的妹妹要等危局过去、双方清醒自愿"
+        ],
+        "self_control_range": [
+         3,
+         5
+        ]
+       },
+       "public_role": "董事长同父异母的妹妹",
+       "schedule": [
+        {
+         "from": 720,
+         "location_id": "loc_tower_sky_lounge",
+         "to": 1320
+        }
+       ],
+       "situation": {
+        "exits": [
+         {
+          "cost": "董事长同父异母的妹妹未必赶得上",
+          "option": "董事长同父异母的妹妹在外面调度接应"
+         },
+         {
+          "cost": "可能把董事长同父异母的妹妹自己也搭进去",
+          "option": "董事长同父异母的妹妹硬闯进去"
+         }
+        ],
+        "pressure": "里面的人出不来，董事长同父异母的妹妹进不去",
+        "trigger": "警报传到董事长同父异母的妹妹那里"
+       },
+       "tags": [
+        "workplace"
+       ],
+       "voices": {
+        "inner": "叔叔说那辆车是意外……可那天早上，是叔叔的人改的行车路线。",
+        "surface": "姐！你给我活着出来！你要是死了，谁来跟我抢这个家！"
+       }
+      },
+      {
+       "adult_context": "二十八岁，特种部队退役，三年前被老董事长亲自挑中，派到长女身边，去留进退由本人拿主意。",
+       "age_range": [
+        26,
+        32
+       ],
+       "appearance_options": [
+        "一身黑西装，领带永远打得一丝不苟，耳后藏着通讯耳麦，西装下摆遮着一道旧伤疤。",
+        "西装外套早就脱给了董事长，白衬衫被冰水泡透，贴在宽阔的肩背上，在后座里用身体替董事长挡住水流。"
+       ],
+       "decision": {
+        "avoids": [
+         "拿董事长当棋子的人"
+        ],
+        "contrast": "在人前沉默得像一堵墙，董事会上谁的声音大一点，保镖的眼神就冷一分；可董事长一句“累了”，保镖就会默默把车开到楼下。",
+        "core_value": "命令就是命令，可董事长的命比命令要紧。",
+        "goal_options": [
+         "用后背顶住对侧车门，给董事长腾出发力的支点",
+         "双脚抵住门板，在水压平衡的一瞬间全力踹出去"
+        ],
+        "never": [
+         "让董事长一个人留在车里"
+        ],
+        "prefers": [
+         "说话算话的人"
+        ],
+        "pressure_responses": {
+         "breaking": "憋着最后一口气，吼着数完最后一个三。",
+         "high": "用后背顶住车门，双臂环住董事长，和董事长一起压锤柄。",
+         "low": "一把将董事长拉到身边，先把手机举高照明。",
+         "mid": "把潜水手套套到董事长手上，免得被玻璃毛刺划伤。"
+        },
+        "relationship_stance": "三年来每一个深夜都站在休息室门外，董事长没叫就不进去，董事长叫了也只站在门边。",
+        "withdrawal": "确认董事长游出水面后才松开手，靠在暗渠壁上长长吐出一口气。"
+       },
+       "gender": "male",
+       "gender_reason": "父亲生前挑选的贴身保镖，按原稿写作男性。",
+       "id": "personal_bodyguard",
+       "identity": {
+        "authority": "董事长身边三步之内，谁能靠近、谁该退下，保镖说了算。",
+        "exposure": "白衬衫被冰水泡透，在后座里用胸口和手臂把董事长整个人圈在怀里。",
+        "hidden": "老董事长临终前交代过一句话，保镖三年来一直记着，却从没对董事长说过。",
+        "limits": [
+         "个子太高，在淹水的后座里施展不开",
+         "手边没有能破开防弹玻璃的工具"
+        ],
+        "obligations": [
+         "护住董事长不被冰水冻僵",
+         "把董事长活着带出暗渠"
+        ],
+        "resources": [
+         "一副防割的潜水手套",
+         "一把战术折刀",
+         "一只防水的强光手电"
+        ]
+       },
+       "intimacy_tendency": {
+        "attraction_sources": [
+         "董事长在冰水里还记得给人报数的那份镇定",
+         "董事会上那个寸步不让、回到车里却悄悄脱下高跟鞋的人"
+        ],
+        "boundaries": [
+         "董事长没开口就不越一步",
+         "人前不让董事长难做"
+        ],
+        "desire_range": [
+         2,
+         4
+        ],
+        "desired_position": "落地窗前从身后环住董事长的近身位",
+        "dislikes": [
+         "当众逾矩",
+         "背后嚼舌根"
+        ],
+        "expression": "替董事长擦干头发时手停了很久，最后只说了一句：老董事长让我护着你，我自己也想。",
+        "likes": [
+         "董事长难得叫一次自己的名字",
+         "深夜被递来一杯热咖啡"
+        ],
+        "preconditions": [
+         "车门踹开、两人都安全清醒之后",
+         "董事长点了头，出于本心"
+        ],
+        "self_control_range": [
+         3,
+         5
+        ]
+       },
+       "public_role": "董事长的贴身保镖",
+       "schedule": [
+        {
+         "from": 480,
+         "location_id": "loc_tower_sky_lounge",
+         "to": 1080
+        },
+        {
+         "from": 1080,
+         "location_id": "loc_tower_sky_lounge",
+         "to": 1380
+        }
+       ],
+       "situation": {
+        "exits": [
+         {
+          "cost": "肩背会被车门边缘压伤，冰水会让手臂脱力",
+          "option": "用后背顶住车门，和董事长合力压下锤柄"
+         },
+         {
+          "cost": "天窗一开，洪水会瞬间灌满车厢",
+          "option": "独自砸开天窗游出去求救"
+         }
+        ],
+        "pressure": "洪水越涨越高，空气越来越少，必须赶在空气耗尽前打开车门。",
+        "trigger": "防弹座驾被导进暗渠时保镖坐在后座，第一时间把董事长护在了身下。"
+       },
+       "tags": [
+        "workplace",
+        "disaster",
+        "intimate"
+       ],
+       "voices": {
+        "inner": "董事长整个人都贴在我怀里，冷得在发抖……别分神。老董事长把这个人交给我，今晚我绝不能食言。",
+        "surface": "顾董，靠过来，别松手！锤尖别进槽口，我顶住门，你往下压——水压一平，我们一起踹。"
+       }
+      },
+      {
+       "adult_context": "五十五岁，老董事长的亲弟弟，在集团里经营了三十年，一直觉得董事长的位置该是自己的。",
+       "age_range": [
+        50,
+        60
+       ],
+       "appearance_options": [
+        "一身老派的深色西装，手腕上的老怀表是祖上传下来的，笑起来像一尊弥勒佛。",
+        "坐在会议桌的另一头，慢悠悠地转着手里的钢笔。"
+       ],
+       "decision": {
+        "avoids": [
+         "叔叔派的副董事长最烦临阵推诿"
+        ],
+        "contrast": "在董事会上笑里藏刀，独自一人时却会对着大哥的遗照发很久的呆。",
+        "core_value": "集团是我和大哥一起打下来的，轮不到一个小丫头说了算。",
+        "goal_options": [
+         "先把人救出来",
+         "叔叔派的副董事长再追究是谁的错"
+        ],
+        "never": [
+         "叔叔派的副董事长不会丢下困在里面的人"
+        ],
+        "prefers": [
+         "叔叔派的副董事长看重说到做到的人"
+        ],
+        "pressure_responses": {
+         "breaking": "叔叔派的副董事长嗓子喊哑了也不肯走",
+         "high": "叔叔派的副董事长顶着危险往里递东西",
+         "low": "叔叔派的副董事长先稳住身边的人",
+         "mid": "叔叔派的副董事长四处找能用的工具"
+        },
+        "relationship_stance": "嘴上叫着“乖侄女”，背地里却在一张张收集董事长的错处；听说车出了事，却在暗渠入口站了一整夜。",
+        "withdrawal": "事情过去后，叔叔派的副董事长一个人躲开抽根烟"
+       },
+       "gender": "male",
+       "gender_reason": "老董事长的亲弟弟，按设定写作男性。",
+       "id": "vice_chairman_uncle",
+       "identity": {
+        "authority": "董事会里有一半的票，看的是副董事长的眼色。",
+        "exposure": "叔叔派的副董事长忙起来顾不上衣着体面",
+        "hidden": "做叔叔派的副董事长这些年，有件事没对旁人说过",
+        "limits": [
+         "叔叔派的副董事长不在死角里，只能在外面使劲"
+        ],
+        "obligations": [
+         "守住叔叔派的副董事长手上的那一摊事"
+        ],
+        "resources": [
+         "董事会里一半的人情账",
+         "叔叔派的副董事长随身的一盏提灯"
+        ]
+       },
+       "intimacy_tendency": {
+        "attraction_sources": [
+         "叔叔派的副董事长欣赏做事干脆利落的人",
+         "叔叔派的副董事长记得危急时回头搭把手的人"
+        ],
+        "boundaries": [
+         "对方迟疑，叔叔派的副董事长就停"
+        ],
+        "desire_range": [
+         1,
+         3
+        ],
+        "desired_position": "和叔叔派的副董事长并肩站着",
+        "dislikes": [
+         "叔叔派的副董事长讨厌轻浮的手"
+        ],
+        "expression": "叔叔派的副董事长话不多，递东西时指尖会多停一下",
+        "likes": [
+         "叔叔派的副董事长收工后的一杯热饮"
+        ],
+        "preconditions": [
+         "叔叔派的副董事长要等危局过去、双方清醒自愿"
+        ],
+        "self_control_range": [
+         3,
+         5
+        ]
+       },
+       "public_role": "叔叔派的副董事长",
+       "schedule": [
+        {
+         "from": 600,
+         "location_id": "loc_tower_sky_lounge",
+         "to": 1200
+        }
+       ],
+       "situation": {
+        "exits": [
+         {
+          "cost": "叔叔派的副董事长未必赶得上",
+          "option": "叔叔派的副董事长在外面调度接应"
+         },
+         {
+          "cost": "可能把叔叔派的副董事长自己也搭进去",
+          "option": "叔叔派的副董事长硬闯进去"
+         }
+        ],
+        "pressure": "里面的人出不来，叔叔派的副董事长进不去",
+        "trigger": "警报传到叔叔派的副董事长那里"
+       },
+       "tags": [
+        "workplace"
+       ],
+       "voices": {
+        "inner": "改行车路线是为了躲记者……我只是想让侄女难堪一次，没想让侄女送命。",
+        "surface": "救援队给我把最好的设备都调过来！我侄女要是出了事，你们谁都别想好过！"
+       }
+      },
+      {
+       "adult_context": "六十岁出头，给老董事长开了三十年车，董事长小时候是坐在老司机膝上学的认路。",
+       "age_range": [
+        58,
+        68
+       ],
+       "appearance_options": [
+        "一身洗得发白的司机制服，白手套从不离手，鬓角全白了。",
+        "站在大厦门口的雨棚下，伸着脖子张望每一辆进出的车。"
+       ],
+       "decision": {
+        "avoids": [
+         "开了三十年车的老司机最烦临阵推诿"
+        ],
+        "contrast": "在旁人面前一声不吭，见了董事长却总要从口袋里摸出一颗薄荷糖递过去。",
+        "core_value": "车开得稳，人才能睡得安稳。",
+        "goal_options": [
+         "先把人救出来",
+         "开了三十年车的老司机再追究是谁的错"
+        ],
+        "never": [
+         "开了三十年车的老司机不会丢下困在里面的人"
+        ],
+        "prefers": [
+         "开了三十年车的老司机看重说到做到的人"
+        ],
+        "pressure_responses": {
+         "breaking": "开了三十年车的老司机嗓子喊哑了也不肯走",
+         "high": "开了三十年车的老司机顶着危险往里递东西",
+         "low": "开了三十年车的老司机先稳住身边的人",
+         "mid": "开了三十年车的老司机四处找能用的工具"
+        },
+        "relationship_stance": "那天被临时换下了班，换上了一个叔叔那边的新司机，老司机悔得一夜没合眼。",
+        "withdrawal": "事情过去后，开了三十年车的老司机一个人躲开抽根烟"
+       },
+       "gender": "male",
+       "gender_reason": "给老董事长开了三十年车的老司机，按设定写作男性。",
+       "id": "old_chauffeur",
+       "identity": {
+        "authority": "集团所有的车、每一条路线，老司机闭着眼都记得。",
+        "exposure": "开了三十年车的老司机忙起来顾不上衣着体面",
+        "hidden": "做开了三十年车的老司机这些年，有件事没对旁人说过",
+        "limits": [
+         "开了三十年车的老司机不在死角里，只能在外面使劲"
+        ],
+        "obligations": [
+         "守住开了三十年车的老司机手上的那一摊事"
+        ],
+        "resources": [
+         "一本记了三十年行车路线的旧本子",
+         "开了三十年车的老司机随身的一盏提灯"
+        ]
+       },
+       "intimacy_tendency": {
+        "attraction_sources": [
+         "开了三十年车的老司机欣赏做事干脆利落的人",
+         "开了三十年车的老司机记得危急时回头搭把手的人"
+        ],
+        "boundaries": [
+         "对方迟疑，开了三十年车的老司机就停"
+        ],
+        "desire_range": [
+         1,
+         3
+        ],
+        "desired_position": "和开了三十年车的老司机并肩站着",
+        "dislikes": [
+         "开了三十年车的老司机讨厌轻浮的手"
+        ],
+        "expression": "开了三十年车的老司机话不多，递东西时指尖会多停一下",
+        "likes": [
+         "开了三十年车的老司机收工后的一杯热饮"
+        ],
+        "preconditions": [
+         "开了三十年车的老司机要等危局过去、双方清醒自愿"
+        ],
+        "self_control_range": [
+         3,
+         5
+        ]
+       },
+       "public_role": "开了三十年车的老司机",
+       "schedule": [
+        {
+         "from": 420,
+         "location_id": "loc_tower_sky_lounge",
+         "to": 1320
+        }
+       ],
+       "situation": {
+        "exits": [
+         {
+          "cost": "开了三十年车的老司机未必赶得上",
+          "option": "开了三十年车的老司机在外面调度接应"
+         },
+         {
+          "cost": "可能把开了三十年车的老司机自己也搭进去",
+          "option": "开了三十年车的老司机硬闯进去"
+         }
+        ],
+        "pressure": "里面的人出不来，开了三十年车的老司机进不去",
+        "trigger": "警报传到开了三十年车的老司机那里"
+       },
+       "tags": [
+        "workplace"
+       ],
+       "voices": {
+        "inner": "大小姐小时候最怕打雷，总是钻到车后座里躲着……今晚，后座怎么就成了这样。",
+        "surface": "暗渠的排水闸在东边！我开车三十年，那条路我熟，让我去！"
+       }
+      }
+     ],
+     "clock_start": {
+      "label": "暗渠积水没顶，座舱残存空气倒计时",
+      "minute": 10
+     },
+     "clock_style": "hm",
+     "content_tags": [
+      "intimate",
+      "substance",
+      "workplace_power",
+      "crime",
+      "workplace",
+      "nightlife",
+      "disaster"
+     ],
+     "custom": false,
+     "customs": [
+      "财阀女掌舵人手袋常备高硬度钨钢实心多功能破窗安全锥，硬度达到洛氏硬度HRC68，可抵御重载冲击。",
+      "防弹行政车装有重型机械自锁死车门锁舌，断电后需先平衡内外水压方能依靠人力克服阻尼。",
+      "车内后排配有应急机械通风手动泄压阀旋钮，遇淹没浸泡需借助工具别开防误触锁片。",
+      "水下座舱逃生遵循静水压差物理定律，必须在车内彻底注满水压平衡瞬间全力踹推车门。"
+     ],
+     "daily_activities": [
+      {
+       "beats": [
+        "长会议桌两侧坐满了董事，叔叔一派的人一个接一个发难，董事长靠在椅背上，一页一页翻着提案。",
+        "等最后一个人说完，董事长合上文件夹：说完了？那我们表决。"
+       ],
+       "duration_minutes": 90,
+       "hook_ids": [],
+       "id": "act_board_meeting",
+       "location_ids": [
+        "loc_tower_sky_lounge"
+       ],
+       "start_minute": 540,
+       "tags": [
+        "workplace"
+       ],
+       "title": "顶层会议室里的董事会"
+      },
+      {
+       "beats": [
+        "闪光灯一阵接一阵，记者的话筒差点戳到董事长脸上，问的全是老董事长的死因。",
+        "保镖不动声色地上前半步，董事长却抬手拦住：让记者问，我有的是时间。"
+       ],
+       "duration_minutes": 30,
+       "hook_ids": [],
+       "id": "act_press_ambush",
+       "location_ids": [
+        "loc_tower_sky_lounge"
+       ],
+       "start_minute": 720,
+       "tags": [
+        "workplace"
+       ],
+       "title": "大堂里被记者堵住"
+      },
+      {
+       "beats": [
+        "落地窗外是整座城市的夜景，董事长端着香槟应付一轮又一轮的敬酒，笑得滴水不漏。",
+        "敬到第七杯时，董事长把杯子往身边一递，低声说：替我挡一下，我的脚快疼死了。"
+       ],
+       "duration_minutes": 90,
+       "hook_ids": [],
+       "id": "act_charity_gala",
+       "location_ids": [
+        "loc_tower_sky_lounge"
+       ],
+       "start_minute": 1170,
+       "tags": [
+        "workplace"
+       ],
+       "title": "空中酒廊的慈善晚宴"
+      },
+      {
+       "beats": [
+        "休息室里只开一盏落地灯，董事长踢掉高跟鞋窝在沙发里，一份一份签着文件。",
+        "签到一半，董事长揉着眼睛把文件推过来：你念，我签。两个人快一点。"
+       ],
+       "duration_minutes": 50,
+       "hook_ids": [],
+       "id": "act_late_paperwork",
+       "location_ids": [
+        "loc_chairwoman_rest_room"
+       ],
+       "start_minute": 1290,
+       "tags": [
+        "workplace"
+       ],
+       "title": "休息室里批完今晚的文件"
+      },
+      {
+       "beats": [
+        "红酒柜最里面那瓶是父亲生前留着要在女儿婚礼上开的，董事长今晚把这瓶酒拿了出来。",
+        "董事长倒了两杯，把其中一杯推过来：别说你在值班。今晚，陪我喝一杯。"
+       ],
+       "duration_minutes": 40,
+       "hook_ids": [],
+       "id": "act_father_wine",
+       "location_ids": [
+        "loc_chairwoman_rest_room"
+       ],
+       "start_minute": 1350,
+       "tags": [
+        "workplace"
+       ],
+       "title": "分一瓶父亲留下的红酒"
+      },
+      {
+       "beats": [
+        "暴雨打在落地窗上，整座城市的灯光都被雨水晕开了，酒廊里只剩两个人。",
+        "董事长靠着玻璃，轻声说：爸爸走的那天，也下这么大的雨。"
+       ],
+       "duration_minutes": 30,
+       "hook_ids": [],
+       "id": "act_rain_window",
+       "location_ids": [
+        "loc_tower_sky_lounge"
+       ],
+       "start_minute": 1380,
+       "tags": [
+        "workplace"
+       ],
+       "title": "站在落地窗前看暴雨里的城市"
+      },
+      {
+       "beats": [
+        "车门踹开、两人游出暗渠、被救援队拉上岸之后，董事长没有回家，让车直接开回了大厦顶层，真丝衬衫湿透了，头发还在滴水。",
+        "落地灯下，董事长背过身，让人用毛巾一点点擦干头发，再一颗颗解开贴在身上的真丝衬衫，冰凉的皮肤被热毛巾裹住时，董事长往后靠了过来。",
+        "董事长转过身，指尖抵着对方湿透的领带：三年了，你一直站在门外……今晚，进来。"
+       ],
+       "duration_minutes": 30,
+       "hook_ids": [],
+       "id": "act_rest_room_silk_shirt",
+       "location_ids": [
+        "loc_chairwoman_rest_room"
+       ],
+       "start_minute": 1430,
+       "tags": [
+        "intimate"
+       ],
+       "title": "休息室里替董事长解开湿透的真丝衬衫"
+      },
+      {
+       "beats": [
+        "休息室里，董事长踢掉高跟鞋，穿着真丝衬衫盘腿坐在沙发上改董事会纪要，丝袜包着的脚趾一下下勾着。",
+        "董事长头也不抬：你站了三年的门，今天坐下来。……坐我旁边，我改完这一页，就听你的。"
+       ],
+       "duration_minutes": 30,
+       "hook_ids": [],
+       "id": "act_rest_room_board_minutes",
+       "location_ids": [
+        "loc_chairwoman_rest_room"
+       ],
+       "start_minute": 1230,
+       "tags": [
+        "intimate"
+       ],
+       "title": "陪董事长改董事会纪要"
+      },
+      {
+       "beats": [
+        "董事长倒了两杯威士忌，赤脚站在落地窗前，整座城市的灯在脚下铺开，真丝衬衫只扣了中间两颗。",
+        "董事长回过头：在董事会我是董事长。……在这里，我只想当二十一岁的自己，你陪不陪？"
+       ],
+       "duration_minutes": 30,
+       "hook_ids": [],
+       "id": "act_rest_room_whisky_city",
+       "location_ids": [
+        "loc_chairwoman_rest_room"
+       ],
+       "start_minute": 1380,
+       "tags": [
+        "intimate"
+       ],
+       "title": "顶楼的夜景和威士忌"
+      },
+      {
+       "beats": [
+        "清晨，董事长裹着人的西装外套站在镜子前，替人一圈一圈打领带，打歪了又拆开重来。",
+        "董事长踮脚把领结推上去：以后每天早上都我来打。……这是董事长的命令。"
+       ],
+       "duration_minutes": 30,
+       "hook_ids": [],
+       "id": "act_rest_room_morning_tie",
+       "location_ids": [
+        "loc_chairwoman_rest_room"
+       ],
+       "start_minute": 450,
+       "tags": [
+        "intimate"
+       ],
+       "title": "替保镖打领带"
+      }
+     ],
+     "default_npc_gender_mix": {
+      "female": 0.5,
+      "male": 0.5,
+      "nonbinary": 0.0
+     },
+     "default_person": "second",
+     "era": "现代都市豪门商战与极端暴雨防汛时代",
+     "extends": null,
+     "forbidden_terms": [
+      "软色情",
+      "系统金手指",
+      "无脑恋爱脑",
+      "机械降神",
+      "违背物理学自救",
+      "代词他她混淆",
+      "未成年人角色",
+      "涉性出路"
+     ],
+     "hooks": [
+      {
+       "id": "hk_uv_warning_thunder",
+       "kind": "approach",
+       "location_ids": [
+        "loc_flooded_rear_cabin"
+       ],
+       "slot": "chairwoman_gu",
+       "text": "{chairwoman_gu.name}仰头贴紧车顶顶棚急促呼吸，面颊在冰水浸泡下泛起激惹红晕，果断递出钨钢破窗安全锤。"
+      },
+      {
+       "id": "hk_crypt_uv_roaring_rush",
+       "kind": "approach",
+       "location_ids": [
+        "loc_flooded_rear_cabin"
+       ],
+       "slot": "chairwoman_gu",
+       "text": "{chairwoman_gu.name}浸在漫过胸口的浑水中，借着手电微光摸索出后角窗密封条卡死凹槽，沉着发出破压指令。"
+      },
+      {
+       "id": "hk_crypt_breaker_groan_deadlock",
+       "kind": "approach",
+       "location_ids": [
+        "loc_quarter_window_seal"
+       ],
+       "slot": "personal_bodyguard",
+       "text": "{personal_bodyguard.name}双臂紧紧环抱住董事长肩头抵御冰水寒意，以脊背稳稳顶住对侧车门，为董事长腾出发力支点。"
+      },
+      {
+       "id": "hk_breaker_deformation_scrape",
+       "kind": "approach",
+       "location_ids": [
+        "loc_quarter_window_seal"
+       ],
+       "slot": "personal_bodyguard",
+       "text": "{personal_bodyguard.name}反手将潜水手套套在董事长掌心，防止破窗瞬间尖锐钛合金毛刺划伤董事长娇嫩指节。"
+      },
+      {
+       "id": "hk_tight_breath_ear_brush",
+       "kind": "approach",
+       "location_ids": [
+        "loc_quarter_window_seal"
+       ],
+       "slot": "chairwoman_gu",
+       "text": "{chairwoman_gu.name}侧脸贴在保镖湿透的肩窝，面容近在咫尺，温热的微弱吐息吹拂在对方颈侧。"
+      },
+      {
+       "id": "hk_lace_corset_heat_exchange",
+       "kind": "approach",
+       "location_ids": [
+        "loc_quarter_window_seal"
+       ],
+       "slot": "chairwoman_gu",
+       "text": "{chairwoman_gu.name}西装套裙被浑水彻底湿透紧裹曼妙身段，在狭窄后排挪动长腿，轻声提醒同伴注意水压平衡时机。"
+      },
+      {
+       "id": "hk_scepter_flange_notch_align",
+       "kind": "approach",
+       "location_ids": [
+        "loc_quarter_window_seal"
+       ],
+       "slot": "chairwoman_gu",
+       "text": "{chairwoman_gu.name}展现出财阀领袖的非凡胆魄，冷静判定车内外压差即将均等，示意在最后十公分空气耗尽时共同潜水下踹。"
+      },
+      {
+       "id": "hk_rubber_hammer_chock_in",
+       "kind": "approach",
+       "location_ids": [
+        "loc_quarter_window_seal"
+       ],
+       "slot": "personal_bodyguard",
+       "text": "{personal_bodyguard.name}在冰冷车顶被洪流拍打的震颤中，将全部力道凝聚在董事长掌背上，与董事长心跳轰鸣共振。"
+      },
+      {
+       "id": "hk_satin_ribbon_bind_grip",
+       "kind": "approach",
+       "location_ids": [
+        "loc_quarter_window_seal"
+       ],
+       "slot": "chairwoman_gu",
+       "text": "{chairwoman_gu.name}双手交叠握紧同伴小臂，两副年轻身躯在浸满冷水的逼仄后座毫无间隙地贴合在一起。"
+      },
+      {
+       "id": "hk_atrium_air_pressure_drop",
+       "kind": "approach",
+       "location_ids": [
+        "loc_flooded_rear_cabin"
+       ],
+       "slot": "chairwoman_gu",
+       "text": "{chairwoman_gu.name}辨听车外水流涡旋声响，准确预判车门开启的最佳力学窗口，沉声叮嘱同伴一鼓作气。"
+      },
+      {
+       "id": "hk_synchronized_grunt_heave",
+       "kind": "approach",
+       "location_ids": [
+        "loc_quarter_window_seal"
+       ],
+       "slot": "personal_bodyguard",
+       "text": "{personal_bodyguard.name}与董事长并肩贴在车门前，双脚抵住门板，在浑水灌满车顶的瞬间同步爆发出全身推力。"
+      },
+      {
+       "id": "hk_spring_latch_pop_rebound",
+       "kind": "approach",
+       "location_ids": [
+        "loc_quarter_window_seal"
+       ],
+       "slot": "chairwoman_gu",
+       "text": "{chairwoman_gu.name}在水流倒灌冲刷中重心失衡，顺势紧紧依偎在保镖怀中，反手紧扣车门机械拉手完成最后一道扳动。"
+      },
+      {
+       "id": "hook_gu_heels_off",
+       "kind": "approach",
+       "location_ids": [
+        "loc_tower_sky_lounge",
+        "loc_chairwoman_rest_room"
+       ],
+       "slot": "chairwoman_gu",
+       "text": "{npc.name}靠在落地窗边，悄悄把一只高跟鞋踢掉，冲人招了招手：过来，挡在我前面。别让那些记者拍到。"
+      },
+      {
+       "id": "hook_gu_second_opinion",
+       "kind": "approach",
+       "location_ids": [
+        "loc_tower_sky_lounge"
+       ],
+       "slot": "chairwoman_gu",
+       "text": "{npc.name}把一份提案推到人面前，压低声音：董事会上那群老狐狸都在看我笑话。你替我看看，这一页哪里不对？"
+      },
+      {
+       "id": "hook_gu_father_wine",
+       "kind": "approach",
+       "location_ids": [
+        "loc_chairwoman_rest_room"
+       ],
+       "slot": "chairwoman_gu",
+       "text": "{npc.name}把一瓶落着灰的红酒放在茶几上：这瓶是我爸留着要在我婚礼上开的。今晚，我想先开了这瓶。陪我？"
+      },
+      {
+       "id": "hook_gu_night_drive",
+       "kind": "approach",
+       "location_ids": [
+        "loc_tower_sky_lounge"
+       ],
+       "slot": "chairwoman_gu",
+       "text": "{npc.name}拎着车钥匙站在电梯口，回头看人：司机下班了。陪我兜一圈，哪儿都行，只要不是回家。"
+      },
+      {
+       "id": "hook_guard_umbrella",
+       "kind": "approach",
+       "location_ids": [
+        "loc_tower_sky_lounge"
+       ],
+       "slot": "personal_bodyguard",
+       "text": "{npc.name}撑着一把黑伞站在大厦门口，伞面往人这边倾了一大半，自己的肩膀湿了也没在意：雨大，我送你到车上。"
+      },
+      {
+       "id": "hook_guard_old_scar",
+       "kind": "approach",
+       "location_ids": [
+        "loc_chairwoman_rest_room",
+        "loc_tower_sky_lounge"
+       ],
+       "slot": "personal_bodyguard",
+       "text": "{npc.name}解开袖扣，露出小臂上一道旧伤疤：老董事长出事那年，我替大小姐挡的。你想知道那天的事？"
+      },
+      {
+       "id": "hook_gu_rest_room_door",
+       "kind": "approach",
+       "location_ids": [
+        "loc_chairwoman_rest_room"
+       ],
+       "slot": "chairwoman_gu",
+       "text": "{npc.name}推开休息室的门，回头看人：门外不用守了。……进来，陪我坐一会儿。"
+      }
+     ],
+     "id": "chaebol_chairwoman_submerged_maybach",
+     "locations": [
+      {
+       "affordances": [
+        "背靠后排真皮座椅靠背形成稳固借力反作用力支点",
+        "将钨钢破窗锥尖端对准后角窗聚碳酸酯嵌缝薄弱点",
+        "感受车内水面上浮时残存空气的温差与流动"
+       ],
+       "detail": "位于防弹行政轿车后排密闭座舱，混浊冰冷的暗渠积水已漫至胸口，仅剩车顶顶棚下方不足十公分的微弱空气层，车外是黑压压奔腾的地下泄洪洪流。",
+       "exits": [
+        "loc_quarter_window_seal",
+        "loc_door_release_recess"
+       ],
+       "id": "loc_flooded_rear_cabin",
+       "name": "淹没防弹座舱后排逼仄空间",
+       "pressure_modifiers": {
+        "p_air_pocket_shrink": "空气层只剩一掌宽，呼出的白气都撞在车顶上。",
+        "p_culvert_flood_rise": "洪水每涨一寸，顶棚下的空气就少一寸，两人只能仰着头贴近车顶。"
+       },
+       "privacy": "private",
+       "tags": [
+        "workplace",
+        "disaster",
+        "intimate"
+       ],
+       "visibility": "手机电筒在水面上晃着，能看清对方湿透的睫毛和冻得发白的嘴唇。",
+       "witnesses": []
+      },
+      {
+       "affordances": [
+        "用手指探明密封条硬质塑料卡扣的偏心别撬位",
+        "双人合力握持安全锤短柄向缝隙内狠命插撬"
+       ],
+       "detail": "由双层夹胶防弹玻璃与高强度钛合金压条封装的受力卡槽，缝隙间卡着变形的密封胶条与水密压紧螺栓。",
+       "exits": [
+        "loc_flooded_rear_cabin"
+       ],
+       "id": "loc_quarter_window_seal",
+       "name": "后角窗密封泄压卡槽接缝",
+       "pressure_modifiers": {
+        "p_hammer_tip_slip": "胶条又湿又滑，锤尖稍一偏就会滑出槽口。",
+        "p_icy_water_chill": "两人挤在角窗边，董事长整个人贴在保镖怀里，冰水里只剩彼此的体温。"
+       },
+       "privacy": "private",
+       "tags": [
+        "workplace",
+        "intimate"
+       ],
+       "visibility": "双层夹胶玻璃的压条缝里卡着变形的胶条，钨钢锤尖别进去时发出刺耳的摩擦声。",
+       "witnesses": []
+      },
+      {
+       "affordances": [
+        "双脚共同蹬住车门内饰板准备在压差平衡瞬间全力踹门",
+        "用手掌紧扣机械把手同步施加爆发力推开逃生通道"
+       ],
+       "detail": "浸泡在泥水中的纯钢机械解锁拉手，阻尼拉杆承受着车外数千公斤水压产生的巨大自锁摩擦力。",
+       "exits": [
+        "loc_flooded_rear_cabin",
+        "loc_tower_sky_lounge"
+       ],
+       "id": "loc_door_release_recess",
+       "name": "装甲车门机械应急开启把手内凹槽",
+       "pressure_modifiers": {
+        "p_door_water_lock": "外面的救援队想用液压钳，可暗渠水流太急，靠不上来。"
+       },
+       "privacy": "public",
+       "tags": [
+        "workplace",
+        "disaster"
+       ],
+       "visibility": "车门内凹槽里的拉手泡在泥水中，车载电话里不时传来外面的喊声。",
+       "witnesses": [
+        "bg_rescue_diver",
+        "bg_chief_driver",
+        "bg_city_police"
+       ]
+      },
+      {
+       "affordances": [
+        "在落地窗边陪董事长喝一杯咖啡",
+        "在晚宴上替董事长挡掉一轮敬酒",
+        "站在窗前看暴雨里的城市"
+       ],
+       "detail": "集团总部大厦顶层的酒廊，落地窗外是整座城市的夜景，白天是董事们开完会喝咖啡的地方，夜里常办慈善晚宴，记者的镜头从来不缺。",
+       "exits": [
+        "loc_chairwoman_rest_room",
+        "loc_door_release_recess"
+       ],
+       "id": "loc_tower_sky_lounge",
+       "name": "集团大厦顶层的空中酒廊",
+       "pressure_modifiers": {},
+       "privacy": "public",
+       "tags": [
+        "workplace"
+       ],
+       "visibility": "酒廊里人来人往，董事、记者、合作方都在，董事长对谁多笑一下，第二天就会上财经版。",
+       "witnesses": [
+        "bg_financial_reporter",
+        "bg_board_member",
+        "bg_chief_driver",
+        "bg_gala_host"
+       ]
+      },
+      {
+       "affordances": [
+        "陪董事长批完今晚的文件",
+        "坐在落地窗前分一瓶父亲留下的红酒",
+        "替对方擦干头发、解开湿透的衬衫"
+       ],
+       "detail": "顶层董事长办公室后面的一间小休息室，一张皮沙发、一个红酒柜、一扇对着城市夜景的落地窗，是父亲生前午睡的地方。",
+       "exits": [
+        "loc_tower_sky_lounge"
+       ],
+       "id": "loc_chairwoman_rest_room",
+       "name": "董事长办公室里间的休息室",
+       "pressure_modifiers": {},
+       "privacy": "private",
+       "tags": [
+        "intimate"
+       ],
+       "visibility": "只开一盏落地灯，窗外的雨声盖住了一切，屋里的人能看清彼此的每一个表情。",
+       "witnesses": []
+      }
+     ],
+     "name_pools": {
+      "family": [
+       "顾",
+       "沈",
+       "陆",
+       "傅",
+       "江",
+       "裴",
+       "温",
+       "霍",
+       "秦",
+       "宋",
+       "叶",
+       "许",
+       "程",
+       "萧"
+      ],
+      "given_female": [
+       "清雅",
+       "若宁",
+       "知夏",
+       "婉清",
+       "以宁",
+       "念初",
+       "书瑶",
+       "雨桐",
+       "晚晴",
+       "静姝",
+       "安然",
+       "语嫣",
+       "思琪",
+       "梦琪"
+      ],
+      "given_male": [
+       "承泽",
+       "景行",
+       "砚之",
+       "慕白",
+       "致远",
+       "北辰",
+       "叙白",
+       "怀瑾",
+       "子墨",
+       "时宴",
+       "临川",
+       "逸舟",
+       "沉舟",
+       "知行"
+      ],
+      "given_neutral": [
+       "一诺",
+       "子衿",
+       "云舒",
+       "清和",
+       "长安",
+       "知微",
+       "望舒",
+       "南星",
+       "初阳",
+       "星野",
+       "听澜",
+       "怀安",
+       "知秋",
+       "予安"
+      ],
+      "nickname_patterns": [
+       {
+        "gender": "female",
+        "pattern": "顾董"
+       },
+       {
+        "gender": "any",
+        "pattern": "{family}总"
+       },
+       {
+        "gender": "any",
+        "pattern": "小{family}"
+       }
+      ],
+      "order": "family_first"
+     },
+     "notes": "按原稿加入。原稿除标题、简介、基调、董事长外貌、世界规则与三处脱困地点外，人物、压力与钩子大多照抄了吸血鬼地宫那一篇，这里按财阀继承的题材整篇重写：父亲猝逝后二十一岁接下集团、董事会里叔叔一派虎视眈眈、暴雨夜那辆被导进泄洪暗渠的防弹座驾未必是意外；搭档从随行学者改成父亲生前亲自挑选的贴身保镖，其余人物换成首席秘书、同父异母的妹妹、叔叔派的副董事长和开了三十年车的老司机。新增集团大厦顶层的空中酒廊与董事长办公室里间的休息室两处日常地点。标题里的真实汽车品牌改成了“防弹座驾”；原稿里“肢体接触只服务于发力、不得偏离自救”的规则改成了世界内的规则；董事长亲密前提写明脱困之后、双方清醒自愿；新增一个休息室里替董事长解开湿透真丝衬衫的亲密日常。",
+     "player_identities": [
+      {
+       "age_range": [
+        21,
+        25
+       ],
+       "baseline": "刚从名校毕业进集团，被分到董事长办公室打杂，第一周就撞见董事长在休息室里一个人发呆。",
+       "gender": "any",
+       "id": "pi_new_secretary",
+       "reputation": "董事长办公室最年轻的人，旁人还叫不出名字。",
+       "resources": [
+        "一张顶层办公室的门禁卡",
+        "一本记满董事长行程的笔记",
+        "一部永远在响的工作手机"
+       ],
+       "risks": [
+        "做错一件事，就会被叔叔一派拿来做文章。"
+       ],
+       "role": "新来的秘书助理",
+       "social_position": "low",
+       "title_patterns": [
+        {
+         "gender": "any",
+         "pattern": "{family}"
+        },
+        {
+         "gender": "any",
+         "pattern": "{given}"
+        }
+       ]
+      },
+      {
+       "age_range": [
+        25,
+        34
+       ],
+       "baseline": "盯了这家财阀三年，手里有一份没发出去的稿子，写的是老董事长猝逝的疑点。",
+       "gender": "any",
+       "id": "pi_financial_reporter",
+       "reputation": "财经圈里出了名的难缠，董事们见了都绕着走。",
+       "resources": [
+        "一台随身的录音笔",
+        "一份没发出去的调查稿",
+        "几个董事会里的线人"
+       ],
+       "risks": [
+        "稿子发出去，董事长的位置可能就保不住了。"
+       ],
+       "role": "跑财经线的记者",
+       "social_position": "equal",
+       "title_patterns": [
+        {
+         "gender": "any",
+         "pattern": "{family}"
+        },
+        {
+         "gender": "any",
+         "pattern": "{given}"
+        }
+       ]
+      },
+      {
+       "age_range": [
+        23,
+        30
+       ],
+       "baseline": "两家是三代的对手，也是三代的世交，小时候和董事长在同一个游泳池里学过憋气。",
+       "gender": "any",
+       "id": "pi_rival_heir",
+       "reputation": "名流圈里人人都说两家迟早要联姻。",
+       "resources": [
+        "一家财团的继承权",
+        "一张两家共同项目的合同",
+        "一辆停在楼下的车"
+       ],
+       "risks": [
+        "跟董事长走得太近，家里的长辈会起疑。"
+       ],
+       "role": "另一家财团的继承人",
+       "social_position": "equal",
+       "title_patterns": [
+        {
+         "gender": "any",
+         "pattern": "{family}"
+        },
+        {
+         "gender": "any",
+         "pattern": "{given}"
+        }
+       ]
+      },
+      {
+       "age_range": [
+        30,
+        42
+       ],
+       "baseline": "手里握着集团百分之十二的股份，叔叔一派和董事长都想拉拢，一票就能决定董事会的走向。",
+       "gender": "any",
+       "id": "pi_acquisition_partner",
+       "reputation": "董事会上人人都要看合伙人的脸色。",
+       "resources": [
+        "集团百分之十二的股份",
+        "一份收购意向书",
+        "一支随时待命的律师团"
+       ],
+       "risks": [
+        "押错了边，基金会亏掉几十亿。"
+       ],
+       "role": "收购基金的合伙人",
+       "social_position": "high",
+       "title_patterns": [
+        {
+         "gender": "any",
+         "pattern": "{family}"
+        },
+        {
+         "gender": "any",
+         "pattern": "{given}"
+        }
+       ]
+      }
+     ],
+     "premise": "父亲猝逝后，二十一岁的长女接下了千亿财阀，董事会里叔叔一派虎视眈眈，只等新任董事长出一次错。暴雨夜从董事会回来的路上，防弹座驾被导进了地下泄洪暗渠，山洪倒灌，电路死火，浑水漫过车窗。董事长与父亲生前亲自挑选的贴身保镖被困在后座，残存空气只剩十公分，只能用董事长手袋里的钨钢安全锤尖锥别进三角窗泄压槽，平衡水压，合力踹开车门。",
+     "pressures": [
+      {
+       "choice": "是趁水流稍缓的间隙冒险下锤，还是等水再涨一点、压差小了再动手？",
+       "exits": [
+        {
+         "cost": "锤尖受力过猛可能崩断，手掌会被玻璃毛刺划伤",
+         "option": "趁水流间隙两人合力压下锤柄别开泄压槽"
+        },
+        {
+         "cost": "水不会停，等不到救援队",
+         "option": "仰头贴着车顶等救援"
+        }
+       ],
+       "far": {
+        "consequence": "座舱被浑水灌满，两人被困在沉没的车里。",
+        "due_days": 1,
+        "trigger": "洪水淹没车顶"
+       },
+       "flags": [
+        "timed"
+       ],
+       "hook_ids": [],
+       "id": "p_culvert_flood_rise",
+       "immediate": {
+        "minutes": 2,
+        "text": "车身猛地一沉，两人撞在一起，冰水呛进鼻子。"
+       },
+       "leverage": null,
+       "location_ids": [
+        "loc_flooded_rear_cabin",
+        "loc_quarter_window_seal"
+       ],
+       "near": {
+        "deadline_minutes": 4,
+        "text": "水又涨了一寸，空气层只剩一掌宽，车门被压得咯吱作响。"
+       },
+       "objective": "在洪水淹没车顶之前，用安全锤别开角窗泄压槽，平衡内外水压。",
+       "source": "nature",
+       "start_minute": 10,
+       "tags": [
+        "workplace",
+        "disaster"
+       ],
+       "title": "暗渠洪水急暴上涨没顶淹没",
+       "trigger": "山洪一阵接一阵倒灌进暗渠，浑水漫过车窗、漫过胸口，顶棚下只剩十公分的空气。"
+      },
+      {
+       "choice": "是先开泄压槽再踹门，还是两件事同时来？",
+       "exits": [
+        {
+         "cost": "腿会被门板反震伤",
+         "option": "两人双脚抵住门板，等水压一平同时踹"
+        },
+        {
+         "cost": "可能把门锁撬坏，再也打不开",
+         "option": "用折刀撬门锁"
+        }
+       ],
+       "far": {
+        "consequence": "门锁变形卡死，再也打不开。",
+        "due_days": 1,
+        "trigger": "车门被水压彻底压死"
+       },
+       "flags": [
+        "timed"
+       ],
+       "hook_ids": [],
+       "id": "p_door_water_lock",
+       "immediate": {
+        "minutes": 2,
+        "text": "拉手冰得握不住，车门外传来洪水一下一下撞击的闷响。"
+       },
+       "leverage": null,
+       "location_ids": [
+        "loc_quarter_window_seal"
+       ],
+       "near": {
+        "deadline_minutes": 4,
+        "text": "车门边缘开始往里渗水，门锁的阻尼拉杆咯吱作响。"
+       },
+       "objective": "泄压槽打开之后，还得等水压平衡，才能合力踹开车门。",
+       "source": "accident",
+       "start_minute": 10,
+       "tags": [
+        "workplace",
+        "disaster"
+       ],
+       "title": "车外数吨水压死锁防弹车门",
+       "trigger": "车外数吨水压把装甲车门死死压住，机械拉手纹丝不动。"
+      },
+      {
+       "choice": "是为了体面拉开半寸距离，还是干脆贴紧了一起发力？",
+       "exits": [
+        {
+         "cost": "这一夜之后，休息室门外那道影子再也不会只站在门外了",
+         "option": "放下顾虑贴紧对方，四只手一起压在锤柄上"
+        },
+        {
+         "cost": "力气使不到一处，泄压槽撬不开",
+         "option": "各自侧身单手发力"
+        }
+       ],
+       "far": {
+        "consequence": "锤尖从泄压槽里滑出去，错过水压平衡的那一瞬。",
+        "due_days": 1,
+        "trigger": "分心导致锤尖滑脱"
+       },
+       "flags": [
+        "timed"
+       ],
+       "hook_ids": [],
+       "id": "p_icy_water_chill",
+       "immediate": {
+        "minutes": 2,
+        "text": "董事长急促的呼吸拂在耳边，湿透的真丝衬衫隔着一层布传来体温。"
+       },
+       "leverage": null,
+       "location_ids": [
+        "loc_quarter_window_seal"
+       ],
+       "near": {
+        "deadline_minutes": 4,
+        "text": "冰水里只有两颗心跳是热的，撞得越来越乱。"
+       },
+       "objective": "贴得这么近的时候，还得把心思放在锤尖的角度和数拍子上。",
+       "source": "person",
+       "start_minute": 10,
+       "tags": [
+        "workplace"
+       ],
+       "title": "冰冷积水漫胸体温急剧流失",
+       "trigger": "冰冷的积水漫过胸口，两人只能贴紧了互相取暖，牙关冻得直打战。"
+      },
+      {
+       "choice": "是放慢动作省着喘气，还是一鼓作气拼到底？",
+       "exits": [
+        {
+         "cost": "可能在最后一下之前就眼前发黑",
+         "option": "压低呼吸，把力气全留给最后一下"
+        },
+        {
+         "cost": "换气的时候手上就松了",
+         "option": "轮流把脸贴近车顶缝隙换气"
+        }
+       ],
+       "far": {
+        "consequence": "两人在车里失去意识，等不到救援队撬开车门。",
+        "due_days": 1,
+        "trigger": "空气耗尽"
+       },
+       "flags": [
+        "timed"
+       ],
+       "hook_ids": [],
+       "id": "p_air_pocket_shrink",
+       "immediate": {
+        "minutes": 2,
+        "text": "空气越来越闷，每喘一口都带着泥腥味。"
+       },
+       "leverage": null,
+       "location_ids": [
+        "loc_flooded_rear_cabin",
+        "loc_quarter_window_seal"
+       ],
+       "near": {
+        "deadline_minutes": 4,
+        "text": "眼前开始发黑，手指发麻，数拍子的声音越来越轻。"
+       },
+       "objective": "在空气耗尽、两人晕过去之前打开车门。",
+       "source": "nature",
+       "start_minute": 10,
+       "tags": [
+        "workplace",
+        "disaster"
+       ],
+       "title": "顶棚残存空气层缩减窒息告急",
+       "trigger": "顶棚下的空气层一点点变薄，每呼一口气都撞在车顶上，眼前开始发黑。"
+      },
+      {
+       "choice": "是继续加力赌一把，还是退出来换个角度重新别？",
+       "exits": [
+        {
+         "cost": "手套一湿，手指更冷",
+         "option": "用潜水手套裹住锤柄再压"
+        },
+        {
+         "cost": "折刀太软，别不开防弹玻璃的压条",
+         "option": "退出来改用折刀刀尖"
+        }
+       ],
+       "far": {
+        "consequence": "安全锤从槽口滑出去，沉进浑水里找不到了。",
+        "due_days": 1,
+        "trigger": "锤尖滑脱"
+       },
+       "flags": [
+        "timed"
+       ],
+       "hook_ids": [],
+       "id": "p_hammer_tip_slip",
+       "immediate": {
+        "minutes": 2,
+        "text": "锤柄在掌心里一点点往外滑，握锤的指节冻得发白。"
+       },
+       "leverage": null,
+       "location_ids": [
+        "loc_quarter_window_seal"
+       ],
+       "near": {
+        "deadline_minutes": 4,
+        "text": "锤尖已经滑出半截，再偏一点就会彻底脱槽。"
+       },
+       "objective": "得在锤尖滑脱之前找准最后一个受力点。",
+       "source": "nature",
+       "start_minute": 10,
+       "tags": [
+        "workplace",
+        "disaster"
+       ],
+       "title": "钨钢破窗锥尖端受力滑脱风险",
+       "trigger": "钨钢锤尖别在湿滑的密封胶条里，锤柄被水压压得往外滑。"
+      },
+      {
+       "choice": "是一个人摸索、一个人照明，还是两个人一起摸？",
+       "exits": [
+        {
+         "cost": "照明的人手会冻僵",
+         "option": "一个人照明一个人摸，用声音互相引路"
+        },
+        {
+         "cost": "可能摸错地方，浪费最后的空气",
+         "option": "关掉电筒省电，全凭手感"
+        }
+       ],
+       "far": {
+        "consequence": "座舱里一片漆黑，再也找不到槽口。",
+        "due_days": 1,
+        "trigger": "电筒熄灭"
+       },
+       "flags": [
+        "timed"
+       ],
+       "hook_ids": [],
+       "id": "p_silt_blind_water",
+       "immediate": {
+        "minutes": 2,
+        "text": "泥沙打在脸上，睁眼就疼，手只能在冰水里一寸寸地摸。"
+       },
+       "leverage": null,
+       "location_ids": [
+        "loc_flooded_rear_cabin",
+        "loc_quarter_window_seal"
+       ],
+       "near": {
+        "deadline_minutes": 4,
+        "text": "电筒的光越来越暗，手机快没电了。"
+       },
+       "objective": "在什么都看不见的水里，靠摸索找到泄压槽和车门拉手。",
+       "source": "nature",
+       "start_minute": 10,
+       "tags": [
+        "workplace",
+        "disaster"
+       ],
+       "title": "浑浊水流泥沙阻挡视线与摸索",
+       "trigger": "浑浊的泥水里什么都看不见，手机电筒的光只照得见一团黄。"
+      }
+     ],
+     "region": "暴雨泄洪排涝地下暗渠受困防弹防暴豪华轿车座舱",
+     "rules": [
+      {
+       "id": "r_group_succession",
+       "text": "集团章程：董事长上任一年内若出重大差错，董事会可以三分之二票数提请罢免。"
+      },
+      {
+       "id": "r_door_release_by_hammer",
+       "text": "防弹车门受外侧巨大水压死锁，只可通过特种钨钢安全锤坚硬尖锥别开三角窗密封槽平衡水压方可推门脱险。"
+      },
+      {
+       "id": "r_monsoon_culvert",
+       "text": "每年梅雨季，城市地下泄洪暗渠会在山洪来时开闸，暗渠入口与市政辅路只隔一道栏杆。"
+      },
+      {
+       "id": "r_bodyguard_protocol",
+       "text": "保镖守则：董事长在哪里，保镖就在哪里；董事长说“退下”，保镖也只退到看得见的地方。"
+      }
+     ],
+     "schema_version": 1,
+     "stage_labels": {
+      "acquainted": "勘察压差",
+      "committed": "冲破水门",
+      "familiar": "摸索泄孔",
+      "flirting": "相拥取暖",
+      "intimate": "同心破压",
+      "stranger": "沉着应对",
+      "testing": "共顶钨钢"
+     },
+     "status": "released",
+     "style_hint": "现代财阀继承的工笔：白天写顶层会议室的刀光剑影、闪光灯下的微笑、空中酒廊的慈善晚宴；夜里写淹没座舱里的冰水、十公分的空气与贴身发力。董事长人前滴水不漏，张力藏在只对一个人卸下的那一点脆弱里。",
+     "tension_engines": [
+      {
+       "id": "te_culvert_flood_rise",
+       "text": "暗渠里的洪水一寸寸往上涨，顶棚下的空气越来越少。"
+      },
+      {
+       "id": "te_door_water_lock",
+       "text": "车外数吨水压把装甲车门死死压住，安全锤别进去就再难退出。"
+      },
+      {
+       "id": "te_icy_water_body_heat",
+       "text": "冰冷的积水漫过胸口，两人只能贴紧了互相取暖。"
+      },
+      {
+       "id": "te_air_pocket_shrink",
+       "text": "顶棚下的空气层一点点变薄，每一口都比上一口更闷。"
+      }
+     ],
+     "title": "千亿财阀女掌舵人·泄洪暗渠防弹座驾淹没",
+     "tone": [
+      "浑水淹没车顶",
+      "防弹车门水压",
+      "冰冷积水漫胸",
+      "钨钢尖锥别槽"
+     ],
+     "twists": [
+      {
+       "category": "信息",
+       "id": "tw_hammer_bitten",
+       "requires": [
+        "chairwoman_gu"
+       ],
+       "text": "洪流漩涡猛烈冲击车尾，车身剧烈倾斜，插入角窗密封槽的钨钢安全锤被死死咬住，必须依靠两人体重反向猛掰方能撬动卡扣。"
+      },
+      {
+       "category": "人事",
+       "id": "tw_skirt_hem_caught",
+       "requires": [
+        "chairwoman_gu"
+       ],
+       "text": "董事长西装长裙下摆在水中被后排中央扶手铰链挂住，董事长果断单手扯开暗扣撕脱阻碍，毫不犹豫护住发力核心平衡。"
+      },
+      {
+       "category": "资源",
+       "id": "tw_wet_hair_on_jaw",
+       "requires": [
+        "personal_bodyguard"
+       ],
+       "text": "董事长额前湿发散落，饱满带着面颊贴在保镖下颌处，在逼仄水面残存空间中激起近在咫尺的滚烫屏息。"
+      },
+      {
+       "category": "制度",
+       "id": "tw_handle_four_hands",
+       "requires": [
+        "chairwoman_gu",
+        "personal_bodyguard"
+       ],
+       "text": "机械开门扳手在数吨水压下卡死阻滞，单人手臂根本无法掰开，董事长自侧面合身贴上，四只手重叠死扣把手合力借力。"
+      },
+      {
+       "category": "时限",
+       "id": "tw_sunroof_silt_jet",
+       "requires": [
+        "chairwoman_gu"
+       ],
+       "text": "天窗密封圈突发微小破裂喷出冰冷泥柱，狭窄车厢内两人不得不进一步紧贴俯身，用脊背为彼此遮挡呛鼻泥沙。"
+      },
+      {
+       "category": "关系",
+       "id": "tw_kick_on_three",
+       "requires": [
+        "chairwoman_gu",
+        "personal_bodyguard"
+       ],
+       "text": "保镖借董事长肩背为支撑形成极限反推力矩，两人同频数到三将双腿全力蹬向车门，清脆的门锁脱扣机械声骤然激荡。"
+      },
+      {
+       "category": "意外",
+       "id": "tw_door_bursts_open",
+       "requires": [
+        "chairwoman_gu"
+       ],
+       "text": "内外水压彻底齐平，重达数百公斤的防弹装甲车门被两人合力悍然踹开，浑水倒卷中两人携手蹬出座舱，成功脱困自救。"
+      }
+     ]
+    },
+    "tags": [
+     {
+      "description": "眼神、试探、靠近、暧昧的言语，不涉及身体亲密",
+      "id": "romance_light",
+      "kind": "intimacy",
+      "label": "轻度暧昧"
+     },
+     {
+      "description": "亲吻、拥抱、抚摸等身体亲密；提交需写明亲密参与者",
+      "id": "intimate",
+      "kind": "intimacy",
+      "label": "亲密"
+     },
+     {
+      "description": "直白的性行为描写；提交需写明亲密参与者",
+      "id": "explicit",
+      "kind": "intimacy",
+      "label": "直白的性描写"
+     },
+     {
+      "description": "打斗、伤人、以暴力相威胁",
+      "id": "violence",
+      "kind": "conflict",
+      "label": "暴力"
+     },
+     {
+      "description": "要挟、把柄、以生计或秘密施压",
+      "id": "coercion_theme",
+      "kind": "conflict",
+      "label": "胁迫"
+     },
+     {
+      "description": "当众贬低、刻意让人难堪",
+      "id": "humiliation",
+      "kind": "conflict",
+      "label": "羞辱"
+     },
+     {
+      "description": "受伤、流血、伤口处理",
+      "id": "bodily_harm",
+      "kind": "conflict",
+      "label": "身体伤害"
+     },
+     {
+      "description": "喝酒、醉酒、药物",
+      "id": "substance",
+      "kind": "theme",
+      "label": "酒精与药物"
+     },
+     {
+      "description": "怀孕、避孕、生育",
+      "id": "pregnancy",
+      "kind": "theme",
+      "label": "怀孕"
+     },
+     {
+      "description": "死亡、丧事、濒死",
+      "id": "death",
+      "kind": "theme",
+      "label": "死亡"
+     },
+     {
+      "description": "上下级、雇佣、考核带来的不对等",
+      "id": "workplace_power",
+      "kind": "theme",
+      "label": "职场权力关系"
+     },
+     {
+      "description": "有伴侣的一方与他人发生感情或亲密",
+      "id": "infidelity",
+      "kind": "theme",
+      "label": "出轨"
+     },
+     {
+      "description": "走私、造假、贿赂等违法行为",
+      "id": "crime",
+      "kind": "theme",
+      "label": "违法犯罪"
+     },
+     {
+      "description": "赌局、欠赌债",
+      "id": "gambling",
+      "kind": "theme",
+      "label": "赌博"
+     },
+     {
+      "description": "故事主要发生在工作场所",
+      "id": "workplace",
+      "kind": "setting",
+      "label": "职场"
+     },
+     {
+      "description": "夜里的酒馆、食肆、娱乐场所",
+      "id": "nightlife",
+      "kind": "setting",
+      "label": "夜生活"
+     },
+     {
+      "description": "非人存在、法术、契约",
+      "id": "supernatural",
+      "kind": "setting",
+      "label": "超自然"
+     },
+     {
+      "description": "天灾、极端天气、断供",
+      "id": "disaster",
+      "kind": "setting",
+      "label": "灾难"
+     },
+     {
+      "description": "无法对应到上面任何标签的玩家边界，以原话登记",
+      "id": "custom",
+      "kind": "custom",
+      "label": "自定义"
+     }
+    ],
+    "content_version": "2026.10.0"
+   },
+   "archive": []
+  },
+  "checksum": "sha256:42e1063ea3728db139a7076416642aa664bb6ec5162d73d0f87d18e998173d00"
+ }
+}

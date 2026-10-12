@@ -6,6 +6,7 @@ The data directory never lives inside the Skill directory.
 
 import os
 import sys
+import time
 
 APP_DIR_NAME = "adult-tension"
 ENV_VAR = "ADULT_TENSION_HOME"
@@ -68,6 +69,31 @@ def inputs_dir(data_dir):
     what the player said, so they are user data: in the data directory,
     never in the Skill directory (SKILL_PACKAGING.md 1)."""
     return os.path.join(data_dir, "inputs")
+
+
+INPUT_KEEP_SECONDS = 24 * 3600
+
+
+def prune_inputs(data_dir, now=None):
+    """Delete input files (*.json) older than a day: they hold what the
+    player said and nothing reads them after the call they were written for.
+    Only that folder, only regular files; failures are ignored."""
+    folder = inputs_dir(data_dir)
+    try:
+        names = os.listdir(folder)
+    except OSError:
+        return 0
+    cutoff = (time.time() if now is None else now) - INPUT_KEEP_SECONDS
+    removed = 0
+    for name in names:
+        path = os.path.join(folder, name)
+        try:
+            if name.lower().endswith(".json") and os.path.isfile(path) and not os.path.islink(path) and os.path.getmtime(path) < cutoff:
+                os.remove(path)
+                removed += 1
+        except OSError:
+            continue
+    return removed
 
 
 def marker_path(data_dir):

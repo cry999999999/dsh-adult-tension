@@ -137,7 +137,27 @@ def read_payload(command, options, stdin):
     payload = loads_strict(text, label)
     if not isinstance(payload, dict):
         raise AppError(INVALID_INPUT, "输入必须是 JSON 对象", [detail("$", "顶层应为对象", None)])
+    _check_encoding(payload)
     return payload
+
+
+ENCODING_CHECK = "汉字"
+
+
+def _check_encoding(payload):
+    """Any input may carry "encoding_check": "汉字". A terminal that mangles
+    Chinese on the way in (PowerShell 5.1 pipes turn it into "??") still
+    yields valid JSON, so without this the player's words would be saved
+    broken. The field is removed before the command sees the input."""
+    if "encoding_check" not in payload:
+        return
+    got = payload.pop("encoding_check")
+    if got != ENCODING_CHECK:
+        raise AppError(
+            INVALID_INPUT,
+            "中文在传入途中被改坏了",
+            [detail("$.encoding_check", "应为“%s”，收到 %s" % (ENCODING_CHECK, json.dumps(got, ensure_ascii=False)), "这个终端改坏了中文：把 JSON 写进 UTF-8 文件，用 --input-file 传入", INVALID_INPUT)],
+        )
 
 
 def merge_flags(payload, flags):

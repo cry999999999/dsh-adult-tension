@@ -16,6 +16,7 @@ import os
 import re
 from datetime import datetime
 
+from .. import paths
 from .. import schema as S
 from ..errors import (
     CONTENT_ERROR,
@@ -256,6 +257,7 @@ def new_game(ctx, payload):
     from ..domain import opening
 
     payload = validate(specs.NEW_GAME, payload)
+    paths.prune_inputs(ctx.data_dir)
     problems = []
     if payload["replay"] and payload["seed"] is None:
         problems.append(detail("$.seed", "“重开 N 号”必须给出种子编号", None, INVALID_INPUT))
@@ -612,6 +614,7 @@ def _resume(state):
 
 def load_slot(ctx, payload):
     payload = validate(specs.LOAD_SLOT, payload)
+    paths.prune_inputs(ctx.data_dir)
     name = normalize_slot_name(payload["name"])
 
     def handler(conn, now):
@@ -761,6 +764,7 @@ def import_save(ctx, payload):
     from . import transfer
 
     payload = validate(specs.IMPORT_SAVE, payload)
+    paths.prune_inputs(ctx.data_dir)
     if (payload["path"] is None) == (payload["data"] is None):
         raise AppError(INVALID_INPUT, "path 与 data 必须且只能给一个", [detail("$", "给出导出文件的路径，或粘贴的导出内容", None, INVALID_INPUT)])
     slot_name = normalize_slot_name(payload["slot"], "$.slot") if payload["slot"] is not None else None

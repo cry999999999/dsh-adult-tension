@@ -5,6 +5,7 @@
 调用：`<python> scripts/adult_tension.py <command> --json [--input-file PATH] [--data-dir PATH]`
 
 - 输入是一个 JSON 对象，来自 `--input-file`（UTF-8，可带 BOM）。需要输入的命令在没有 `--input-file` 且 stdin 不是终端时读取 stdin；可选输入只从 `--input-file` 读取（`--input-file -` 表示 stdin）。
+- 任何输入都可以带 `"encoding_check": "汉字"`。值不对说明中文在传入途中被终端改坏（例如 PowerShell 5.1 的管道把中文变成 `?`），命令被拒（`INVALID_INPUT`，路径 `$.encoding_check`），改用 `--input-file` 传 UTF-8 文件。这个字段在命令处理之前去掉。
 - 输出是一个信封 `{"ok", "data", "error"}`，以 UTF-8 字节写到 stdout。成功与失败都附带 `next_request_id`（成功在 `data` 里，失败在 `error` 里），下一次写操作直接用它。
 - 全局参数：`--json`（输出 JSON，始终如此）、`--pretty`（缩进输出）、`--debug`、`--input-file PATH`、`--data-dir PATH`。
 - 写操作都带 `request_id`；会话内的写操作还带 `session_id` 与 `expected_revision`。同一 `request_id` + 同一输入重放时返回原响应并标记 `replayed: true`。

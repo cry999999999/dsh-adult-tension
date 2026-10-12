@@ -2,10 +2,11 @@
 
 import json
 import os
+import time
 import unittest
 
 import _bootstrap  # noqa: F401
-from adult_tension import DB_SCHEMA_VERSION
+from adult_tension import DB_SCHEMA_VERSION, paths
 from adult_tension.application import service
 from adult_tension.application.context import Context
 from adult_tension.domain.state import digest as state_digest_of
@@ -248,6 +249,33 @@ class NewGameCommandTest(unittest.TestCase):
             world_id = opened["opening"]["signature"].split("|")[0]
             entry = next(w for w in STORE.index()["worlds"] if w["id"] == world_id)
             self.assertNotIn("workplace", entry["content_tags"])
+
+    def test_starting_or_loading_prunes_input_files_older_than_a_day(self):
+        # Input files carry what the player said; nothing reads them after their call.
+        with app() as ctx:
+            folder = paths.inputs_dir(ctx.data_dir)
+            os.makedirs(os.path.join(folder, "kept_dir.json"), exist_ok=True)
+            day_old = time.time() - paths.INPUT_KEEP_SECONDS - 60
+
+            def put(name, old):
+                path = os.path.join(folder, name)
+                with open(path, "w", encoding="utf-8") as handle:
+                    handle.write("{}")
+                if old:
+                    os.utime(path, (day_old, day_old))
+
+            put("old_turn.json", True)
+            put("fresh_turn.json", False)
+            put("old_notes.txt", True)
+            os.utime(os.path.join(folder, "kept_dir.json"), (day_old, day_old))
+            ids = Ids()
+            sid = open_game(ctx, ids)["session_id"]
+            self.assertEqual(sorted(os.listdir(folder)), ["fresh_turn.json", "kept_dir.json", "old_notes.txt"])
+            service.save_slot(ctx, {"session_id": sid, "request_id": ids(), "expected_revision": 1, "name": "清理"})
+            put("old_load.json", True)
+            service.load_slot(ctx, {"request_id": ids(), "name": "清理"})
+            self.assertNotIn("old_load.json", os.listdir(folder))
+            self.assertIn("fresh_turn.json", os.listdir(folder))
 
     def test_replay_restores_the_recorded_conditions(self):
         with app() as ctx:

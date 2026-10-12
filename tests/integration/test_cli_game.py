@@ -2,6 +2,8 @@
 
 import json
 import os
+import shlex
+import shutil
 import sqlite3
 import subprocess
 import sys
@@ -129,6 +131,40 @@ class EncodingAndInputTest(unittest.TestCase):
             code, env2, raw2 = run_cli(["get-context", "--input-file", "-"], data_dir, stdin_bytes=bom, env=ENV)
             self.assertEqual(code, 0, env2)
             self.assertIn("罗秀英".encode("utf-8"), raw2)
+
+    def test_encoding_check_rejects_input_a_terminal_mangled(self):
+        with temp_dir() as tmp:
+            data_dir = os.path.join(tmp, "data")
+            player = {"name": "罗秀英", "title": "罗师傅", "gender": "female", "age": 45}
+            good = {"request_id": "req_check_00001", "mode": "daily", "seed": 6, "player": player, "encoding_check": "汉字"}
+            code, env, _raw = run_cli(["new-game", "--input-file", "-"], data_dir, stdin_bytes=json.dumps(good, ensure_ascii=False).encode("utf-8"), env=ENV)
+            self.assertEqual(code, 0, env)
+            self.assertEqual(env["data"]["opening"]["player"]["title"], "罗师傅")
+            # What a PowerShell 5.1 pipe makes of it: still valid JSON, every Chinese character a "?".
+            mangled = json.dumps(dict(good, request_id="req_check_00002"), ensure_ascii=False)
+            mangled = "".join("?" if ord(ch) > 127 else ch for ch in mangled).encode("ascii")
+            code, env, _raw = run_cli(["new-game", "--input-file", "-"], data_dir, stdin_bytes=mangled, env=ENV)
+            self.assertEqual((code, env["error"]["code"]), (10, "INVALID_INPUT"))
+            self.assertEqual([d["path"] for d in env["error"]["details"]], ["$.encoding_check"])
+            self.assertIn("--input-file", env["error"]["details"][0]["hint"])
+            # Commands without input accept the field alone.
+            code, env, _raw = run_cli(["version", "--input-file", "-"], data_dir, stdin_bytes='{"encoding_check": "汉字"}'.encode("utf-8"), env=ENV)
+            self.assertEqual(code, 0, env)
+
+    def test_a_bash_here_document_carries_chinese_in_one_call(self):
+        # SKILL.md: in bash the input follows the command as a quoted here-document.
+        bash = shutil.which("bash")
+        self.assertIsNotNone(bash, "bash is needed for the here-document path")
+        with temp_dir() as tmp:
+            data_dir = os.path.join(tmp, "data")
+            body = json.dumps({"request_id": "req_heredoc_001", "mode": "daily", "seed": 6, "player": {"name": "罗秀英", "title": "罗师傅", "gender": "female", "age": 45}, "encoding_check": "汉字"}, ensure_ascii=False)
+            script = "%s %s new-game --json --data-dir %s --input-file - <<'AT_JSON'\n%s\nAT_JSON\n" % (
+                shlex.quote(sys.executable.replace("\\", "/")), shlex.quote(ENTRY.replace("\\", "/")), shlex.quote(data_dir.replace("\\", "/")), body)
+            proc = subprocess.run([bash, "-c", script], stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=ENV, timeout=60)
+            env = json.loads(proc.stdout.decode("utf-8"))
+            self.assertEqual(proc.returncode, 0, (env, proc.stderr[:300]))
+            self.assertEqual(env["data"]["context"]["player"]["name"], "罗秀英")
+            self.assertEqual(env["data"]["opening"]["player"]["title"], "罗师傅")
 
     def test_input_errors_have_json_paths(self):
         with temp_dir() as tmp:

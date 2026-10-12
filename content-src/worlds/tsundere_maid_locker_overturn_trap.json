@@ -1201,10 +1201,10 @@
       "name": "小爱",
       "gender": "female",
       "age_range": [
-        35,
-        35
+        25,
+        25
       ],
-      "adult_context": "现年满三十五岁，外语学院毕业后勤演出助理，具备完全民事行为能力。",
+      "adult_context": "现年满二十五岁，外语学院毕业后勤演出助理，具备完全民事行为能力。",
       "role": "首席台柱随行道具助理",
       "function": "witness",
       "location_ids": [

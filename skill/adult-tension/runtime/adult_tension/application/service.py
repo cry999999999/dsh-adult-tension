@@ -398,6 +398,7 @@ def new_game(ctx, payload):
             "conditions_restored": restored,
             "opening": opening_payload,
             "context": CX.full(state, content, {"current_slot": None, "turns_since_save": 0}),
+            "commit_template": CX.commit_template(state),
         }
 
     return create_write(ctx, "new-game", payload, handler)
@@ -717,6 +718,7 @@ def load_slot(ctx, payload):
             "receipt": "已读取「%s」·第 %d 回合" % (name, state["turn"]),
             "resume": _resume(state),
             "context": CX.full(state, slot["content"], {"current_slot": name, "turns_since_save": 0}),
+            "commit_template": CX.commit_template(state),
         }
 
     return create_write(ctx, "load-slot", payload, handler)
@@ -882,6 +884,7 @@ def import_save(ctx, payload):
             "receipt": "已导入「%s」·第 %d 回合" % (state["world_title"], state["turn"]),
             "resume": _resume(state),
             "context": CX.full(state, content, save),
+            "commit_template": CX.commit_template(state),
         }
 
     return create_write(ctx, "import-save", payload, handler)

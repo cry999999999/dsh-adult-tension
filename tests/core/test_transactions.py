@@ -130,6 +130,8 @@ class SaveLoadTest(unittest.TestCase):
             loaded = service.load_slot(ctx, {"request_id": ids(), "name": "港口-第一夜"})
             self.assertNotEqual(loaded["session_id"], sid)
             self.assertEqual(loaded["turn"], 2)
+            # A new conversation that loads gets the commit template for the new session.
+            self.assertEqual(loaded["commit_template"]["session_id"], loaded["session_id"])
             self.assertEqual(loaded["resume"]["open_action"], "对方的目光停在窗上")
             original = session(ctx, sid)["state"]
             copy = session(ctx, loaded["session_id"])["state"]

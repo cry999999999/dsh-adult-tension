@@ -300,6 +300,41 @@ def full(state, content, save=None):
     return context
 
 
+# -- commit template -----------------------------------------------------------
+
+
+def commit_template(state):
+    """A commit-turn input to fill in, returned when a session starts (new
+    game, load, import): the session filled in, the person on stage first,
+    and the operations most turns need, so the first turn needs no reading
+    of operations.md. Angle brackets mark what to write; "a|b" means pick
+    one. It sits beside the context and does not count toward its budget."""
+    player = state["player_id"]
+    present = [cid for cid in state["scene"]["present"] if cid != player]
+    npc = present[0] if present else "<npc_id>"
+    return {
+        "session_id": state["session_id"],
+        "request_id": "<上一次返回的 next_request_id>",
+        "expected_revision": "<上一次返回的 revision>",
+        "encoding_check": "汉字",
+        "action_mode": "attempt|result|continue|wait",
+        "player_input": "<玩家原话>",
+        "player_authorized": False,
+        "acts_on": [npc],
+        "operations": [
+            {"op": "npc_response", "npc_id": npc, "response": "refuse|negotiate|partial|surface|genuine", "note": "<怎么回应，≤80 字；surface 另写 true_intent>"},
+            {"op": "npc_action", "npc_id": npc, "action": "<这个 NPC 自己做了什么>"},
+            {"op": "add_fact", "key": "<小写点分键，如 %s.secret.letter>" % (npc if present else "npc"), "text": "<正文里新写出、以后要用到的细节>", "visibility": "public", "origin": "observed"},
+            {"op": "relationship", "from": npc, "to": player, "trust_delta": 1, "reason": "<为什么>"},
+            {"op": "advance_time", "minutes": 5},
+        ],
+        "content_tags": [],
+        "summary": "<第三方视角一两句>",
+        "open_action": "<停在哪个未决动作>",
+        "quotes": [],
+    }
+
+
 # -- full-context budget -------------------------------------------------------
 
 CARD_SUMMARY_KEYS = ("id", "name", "call", "age", "gender", "tier", "role", "adult_context", "location_id", "present", "can_act", "voice", "to_player")

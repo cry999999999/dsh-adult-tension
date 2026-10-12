@@ -166,6 +166,40 @@ class EncodingAndInputTest(unittest.TestCase):
             self.assertEqual(env["data"]["context"]["player"]["name"], "罗秀英")
             self.assertEqual(env["data"]["opening"]["player"]["title"], "罗师傅")
 
+    def test_the_commit_template_passes_once_filled_in(self):
+        # new-game hands back a commit-turn input to fill in; filled mechanically it must pass,
+        # so it can never drift from the operation schemas.
+        def fill(value, data):
+            if isinstance(value, dict):
+                return {k: fill(v, data) for k, v in value.items()}
+            if isinstance(value, list):
+                return [fill(v, data) for v in value]
+            if isinstance(value, str):
+                if value.startswith("<上一次返回的 next_request_id"):
+                    return data["next_request_id"]
+                if value.startswith("<上一次返回的 revision"):
+                    return data["revision"]
+                if value.startswith("<小写点分键"):
+                    return "template.first.detail"
+                if value.startswith("<"):
+                    return "照模板写的一句"
+                if "|" in value:
+                    return value.split("|")[0]
+            return value
+
+        with temp_dir() as tmp:
+            data_dir = os.path.join(tmp, "data")
+            opened = new_game(data_dir)
+            template = opened["commit_template"]
+            self.assertLessEqual(len(json.dumps(template, ensure_ascii=False).encode("utf-8")), 1200)
+            self.assertEqual(template["session_id"], opened["session_id"])
+            present = [cid for cid in opened["context"]["scene"]["present"] if cid != "player"]
+            self.assertEqual(template["acts_on"], present[:1])
+            body = json.dumps(fill(template, opened), ensure_ascii=False).encode("utf-8")
+            code, env, _raw = run_cli(["commit-turn", "--input-file", "-"], data_dir, stdin_bytes=body, env=ENV)
+            self.assertEqual(code, 0, env)
+            self.assertEqual([a["op"] for a in env["data"]["applied"]][:5], ["npc_response", "npc_action", "add_fact", "relationship", "advance_time"])
+
     def test_input_errors_have_json_paths(self):
         with temp_dir() as tmp:
             data_dir = os.path.join(tmp, "data")

@@ -231,6 +231,7 @@ class PlayTest(unittest.TestCase):
                 out = service.export_save(ctx, {"session_id": sid})
                 imported = service.import_save(ctx, {"request_id": ids(), "path": out["path"]})
                 copy_info = session(ctx, imported["session_id"])
+                self.assertEqual(imported["commit_template"]["session_id"], imported["session_id"])
                 self.assertTrue(copy_info["content"]["world"]["custom"])
                 self.assertEqual(SS.digest(copy_info["state"]), SS.digest(session(ctx, sid)["state"]))
                 self.assertEqual(repo.opening_history(ctx.db()), [])

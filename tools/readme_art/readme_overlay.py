@@ -119,7 +119,7 @@ defs = '''<filter id="g3" x="-50%" y="-50%" width="200%" height="200%"><feGaussi
     <linearGradient id="lineg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a874ff"/><stop offset="0.5" stop-color="#ff6fae"/><stop offset="1" stop-color="#a874ff"/></linearGradient>
     <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="0.08"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>'''
 svg = pk.svg_doc(W, ns["H2"], "Adult Tension",
-                 "像素风黄昏卧室：一个人坐在床边抱着红色电吉他，大窗外是粉紫色的霓虹城市，书桌上亮着显示器，墙上贴满海报。窗外楼灯明灭、霓虹招牌呼吸闪烁，闹钟秒数在跳，显示器微光起伏，笔记本上的柱状图上下跳动，灯光里浮着细尘，吉他上飘出像素音符。人物右侧的窗上是逐字点亮的黑色粗体字 ADULT TENSION；人物左侧是逐字打出的两行像素字：专为高张力、强连续性成人互动叙事打造。图下一行：18+、尺度全开、真实成人互动、Claude Opus 5.5 从零重构。再下方三栏：活人感 NPC、数十个深度世界、自运行状态机。",
+                 "像素风黄昏卧室：一个人坐在床边抱着红色电吉他，大窗外是粉紫色的霓虹城市，书桌上亮着显示器，墙上贴满海报。窗外楼灯明灭、霓虹招牌呼吸闪烁，闹钟秒数在跳，显示器微光起伏，笔记本上的柱状图上下跳动，灯光里浮着细尘，吉他上飘出像素音符。人物右侧的窗上是逐字点亮的黑色粗体字 ADULT TENSION；人物左侧是逐字打出的两行像素字：专为高张力、强连续性成人互动叙事打造。图下一行：18+、尺度全开、真实成人互动、Claude Opus 5.5 从零重构。再下方三栏：活人感 NPC、数百个深度世界、自运行状态机。",
                  defs, body)
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 open(OUT, "w", encoding="utf-8", newline="\n").write(svg)

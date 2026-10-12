@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/readme-lofi/hero.svg" width="100%" alt="Adult Tension. A pixel-art bedroom at dusk: someone sits on the edge of the bed playing a red electric guitar, a neon city outside the window, ADULT TENSION written on the glass. To the left: built for high-tension, strongly continuous adult interactive storytelling. 18+, no holds barred, real adult interaction, rebuilt from scratch by Claude Opus 5.5. Three panels below: NPCs that feel alive, dozens of deep worlds, a self-running state machine.">
+  <img src=".github/readme-lofi/hero.svg?v=211" width="100%" alt="Adult Tension. A pixel-art bedroom at dusk: someone sits on the edge of the bed playing a red electric guitar, a neon city outside the window, ADULT TENSION written on the glass. To the left: built for high-tension, strongly continuous adult interactive storytelling. 18+, no holds barred, real adult interaction, rebuilt from scratch by Claude Opus 5.5. Three panels below: NPCs that feel alive, hundreds of deep worlds, a self-running state machine.">
 </p>
 
 <div align="center">

@@ -491,7 +491,7 @@ PAL = {"npc": {"X": "#ffc54a", "O": "#3a2412", "E": "#fff4dc", "H": "#ff6fae"},
        "world": {"X": "#ffc54a", "G": "#4feedd", "B": "#1d3a6a"},
        "engine": {"X": "#ffc54a", "O": "#5a3a14", "H": "#fff4dc"}}
 FEATS = [("npc", "活人感 NPC", "嘴上一套心里一套，心里话你看得见"),
-         ("world", "数十个深度世界", "地点、人物、规矩、暗流，各有一整套"),
+         ("world", "数百个深度世界", "地点、人物、规矩、暗流，各有一整套"),
          ("engine", "自运行状态机", "本地记账，关系和后果都不会忘")]
 
 
@@ -537,7 +537,7 @@ defs = f'''<filter id="g6" x="-50%" y="-50%" width="200%" height="200%"><feGauss
     <radialGradient id="vig" cx="0.5" cy="0.45" r="0.78"><stop offset="0.62" stop-color="#05020a" stop-opacity="0"/><stop offset="1" stop-color="#05020a" stop-opacity="0.5"/></radialGradient>
     <clipPath id="glass"><rect x="{WX0 * C}" y="{WY0 * C}" width="{(WX1 - WX0) * C}" height="{(WY1 - WY0) * C}"/></clipPath>'''
 svg = pk.svg_doc(W, H2, "Adult Tension：这次，NPC 是活人。",
-                 "像素风黄昏房间：大窗外是粉紫色的霓虹城市和落日，楼顶亮着 ADULT TENSION 的招牌，一列电车从高架上驶过；窗台上一只猫背对着我们；有人盘腿坐在床上低头看发光的手机；书桌显示器里是一来一回的对话；墙上挂着灯会、港口、雪夜的小海报，和一块写着“这次，NPC 是活人。”的霓虹灯牌。底部一行：18+、尺度全开、真实成人互动、Claude Opus 5.5 从零重构。再往下三栏：活人感 NPC、数十个深度世界、自运行状态机。",
+                 "像素风黄昏房间：大窗外是粉紫色的霓虹城市和落日，楼顶亮着 ADULT TENSION 的招牌，一列电车从高架上驶过；窗台上一只猫背对着我们；有人盘腿坐在床上低头看发光的手机；书桌显示器里是一来一回的对话；墙上挂着灯会、港口、雪夜的小海报，和一块写着“这次，NPC 是活人。”的霓虹灯牌。底部一行：18+、尺度全开、真实成人互动、Claude Opus 5.5 从零重构。再往下三栏：活人感 NPC、数百个深度世界、自运行状态机。",
                  defs, body)
 svg = svg.replace(f'viewBox="0 0 {W} {H2}" width="{W}" height="{H2}"', f'viewBox="0 {TOP} {W} {H2 - TOP}" width="{W}" height="{H2 - TOP}"', 1)
 svg = svg.replace(f'<clipPath id="frame"><rect width="{W}" height="{H2}" rx="16"/>', f'<clipPath id="frame"><rect y="{TOP}" width="{W}" height="{H2 - TOP}" rx="16"/>', 1)

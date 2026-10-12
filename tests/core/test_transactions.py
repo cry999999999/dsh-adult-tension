@@ -277,6 +277,42 @@ class NewGameCommandTest(unittest.TestCase):
             self.assertNotIn("old_load.json", os.listdir(folder))
             self.assertIn("fresh_turn.json", os.listdir(folder))
 
+    def test_a_named_world_opens_from_the_players_words(self):
+        def world_of(opened):
+            return opened["opening"]["signature"].split("|")[0]
+
+        with app() as ctx:
+            ids = Ids()
+            for query, world_id in (
+                ("港口夜班", "harbor_night_shift"),  # the title
+                ("《港口夜班》那个世界", "harbor_night_shift"),  # the title inside the player's words
+                ("凡尔赛", "versailles_corset_wardrobe_secret"),  # part of one title
+                ("harbor_night_shift", "harbor_night_shift"),  # the ID
+                ("长安洗冤局", "chang_an_rainy_dali_temple_inquest"),  # pieces of one title, clearly ahead
+            ):
+                opened = service.new_game(ctx, {"request_id": ids(), "mode": "daily", "world_query": query})
+                self.assertEqual(world_of(opened), world_id, query)
+            # The resolved world is what gets recorded: "重开 N 号" opens it again.
+            first = service.new_game(ctx, {"request_id": ids(), "mode": "pressure", "seed": 5150, "world_query": "凡尔赛"})
+            again = service.new_game(ctx, {"request_id": ids(), "seed": 5150, "replay": True})
+            self.assertEqual(again["opening"]["signature"], first["opening"]["signature"])
+
+    def test_a_world_query_never_picks_for_the_player(self):
+        with app() as ctx:
+            with self.assertRaises(AppError) as caught:
+                service.new_game(ctx, {"request_id": "req_query_00001", "mode": "daily", "world_query": "雪山"})
+            err = caught.exception
+            self.assertEqual((err.code, err.details[0]["path"]), ("NO_MATCH", "$.world_query"))
+            self.assertEqual({c["world_id"] for c in err.extra["candidates"]}, {"imperial_princess_cabin_warmth", "yakuza_daughter_hideout_ointment"})
+            self.assertTrue(all(c["title"] and c["summary"] for c in err.extra["candidates"]))
+            with self.assertRaises(AppError) as caught:
+                service.new_game(ctx, {"request_id": "req_query_00002", "mode": "daily", "world_query": "修仙"})
+            self.assertEqual((caught.exception.code, caught.exception.details[0]["path"]), ("NOT_FOUND", "$.world_query"))
+            for extra in ({"locks": {"world_id": "harbor_night_shift"}}, {"replay": True, "seed": 3}):
+                with self.assertRaises(AppError) as caught:
+                    service.new_game(ctx, dict({"request_id": "req_query_00003", "mode": "daily", "world_query": "港口"}, **extra))
+                self.assertEqual((caught.exception.code, caught.exception.details[-1]["path"]), ("INVALID_INPUT", "$.world_query"))
+
     def test_replay_restores_the_recorded_conditions(self):
         with app() as ctx:
             ids = Ids()

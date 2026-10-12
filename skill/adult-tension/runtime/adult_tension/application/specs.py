@@ -62,6 +62,12 @@ NEW_GAME = _obj(
         "mode": F(S.Nullable(S.Enum("daily", "pressure", "random")), required=False, default=None, desc="daily 日常 / pressure 有压力 / random 玩家明确说“随便”时；replay 时可省略"),
         "seed": F(S.Nullable(S.Int(1, 999999)), required=False, default=None),
         "replay": F(S.Bool(), required=False, default=False, desc="“重开 N 号”：按本机记录的该种子开局条件复现"),
+        "world_query": F(
+            S.Nullable(S.Str(1, 40)),
+            required=False,
+            default=None,
+            desc="玩家点名的世界名称或关键词（例如“港口夜班”“凡尔赛”），运行时按标题、时代、地方、一句话匹配；对得上一个就开局，对得上几个返回 NO_MATCH 附 candidates，对不上返回 NOT_FOUND。不与 locks.world_id、custom_world、replay 同用",
+        ),
         "locks": F(LOCKS, required=False, default={}),
         "excludes": F(EXCLUDES, required=False, default={}),
         "player": F(PLAYER, required=False, default={}),

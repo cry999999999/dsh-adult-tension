@@ -134,6 +134,7 @@
 | `mode` | 枚举：`daily` / `pressure` / `random` 或 null | 否，默认 `null` | daily 日常 / pressure 有压力 / random 玩家明确说“随便”时；replay 时可省略 |
 | `seed` | 整数 1..999999 或 null | 否，默认 `null` |  |
 | `replay` | 布尔 | 否，默认 `false` | “重开 N 号”：按本机记录的该种子开局条件复现 |
+| `world_query` | 字符串，≤40 字 或 null | 否，默认 `null` | 玩家点名的世界名称或关键词（例如“港口夜班”“凡尔赛”），运行时按标题、时代、地方、一句话匹配；对得上一个就开局，对得上几个返回 NO_MATCH 附 candidates，对不上返回 NOT_FOUND。不与 locks.world_id、custom_world、replay 同用 |
 | `locks` | 对象（锁定） | 否，默认 `{}` |  |
 | `excludes` | 对象（排除） | 否，默认 `{}` |  |
 | `player` | 对象（玩家设定） | 否，默认 `{}` |  |

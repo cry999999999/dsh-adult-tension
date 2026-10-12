@@ -23,6 +23,7 @@ from ..errors import (
     IDEMPOTENCY_CONFLICT,
     INVALID_INPUT,
     INVARIANT_VIOLATION,
+    NO_MATCH,
     NOT_FOUND,
     SAFETY_BLOCK,
     SLOT_CONFLICT,
@@ -190,7 +191,7 @@ def _plan_across(ctx, world_ids, seed, conditions):
         try:
             return pack, opening.plan(pack, seed, conditions)
         except AppError as err:
-            if err.code != "NO_MATCH":
+            if err.code != NO_MATCH:
                 raise
             reasons.extend("%s：%s" % (pack["title"], d["reason"]) for d in err.details)
     raise opening.no_match(reasons or ["没有可用的世界"], conditions["locks"].get("world_id"), conditions)
@@ -242,6 +243,72 @@ def seed_stream():
         yield 1 + int.from_bytes(os.urandom(4), "big") % 999999
 
 
+QUERY_NOISE = re.compile(r"[\s，。、·:：;；!！?？\"'“”‘’()（）《》【】\[\]<>—\-_/|｜]+")
+QUERY_CANDIDATES = 5
+
+
+def _norm_query(text):
+    return QUERY_NOISE.sub("", text or "").lower()
+
+
+def world_query_matches(entries, query):
+    """(score, entry) for the worlds a player's name or keyword points at,
+    best first. 1000: the title or ID itself; 500+: the title contains the
+    query or the query the title; below: shared two-character pieces, title
+    weighted over place and era over the one-line summary, kept only when at
+    least half of the query's pieces are found."""
+    raw = query.strip().lower()
+    q = _norm_query(query)
+    if q.endswith("世界") and len(q) > 2:
+        q = q[:-2]
+    if not q:
+        return []
+    grams = {q[i : i + 2] for i in range(len(q) - 1)} or {q}
+    scored = []
+    for entry in entries:
+        title = _norm_query(entry["title"])
+        if q == title or raw == entry["id"]:
+            score = 1000
+        elif q in title or (len(title) >= 2 and title in q) or (raw.isascii() and raw in entry["id"]):
+            score = 500 + len(q)
+        else:
+            fields = ((title, 3), (_norm_query(entry["region"]) + _norm_query(entry["era"]), 2), (_norm_query(entry["summary"]), 1))
+            found = [g for g in grams if any(g in text for text, _w in fields)]
+            if len(found) * 2 < len(grams):
+                continue
+            score = sum(weight for g in grams for text, weight in fields if g in text)
+        scored.append((score, entry))
+    scored.sort(key=lambda item: (-item[0], item[1]["id"]))
+    return scored
+
+
+def _match_world_query(ctx, query, drafts):
+    """One world: open it. Several: NO_MATCH with candidates for the player
+    to choose from. None: NOT_FOUND."""
+    entries = [w for w in ctx.content().index()["worlds"] if drafts or w["status"] == "released"]
+    scored = world_query_matches(entries, query)
+    if not scored:
+        raise AppError(
+            NOT_FOUND,
+            "没有和“%s”对得上的世界" % query,
+            [detail("$.world_query", "没有和“%s”对得上的世界" % query, "换个说法，或用 list-worlds 查看全部；都没有就提议最接近的世界或自定义世界，由玩家选", NOT_FOUND)],
+        )
+    strong = [item for item in scored if item[0] >= 500]
+    if strong:
+        scored = strong
+    best = scored[0]
+    if len(scored) == 1 or (not strong and best[0] >= 2 * scored[1][0]):
+        return best[1]["id"]
+    shown = scored[:QUERY_CANDIDATES]
+    candidates = [{"world_id": e["id"], "title": e["title"], "summary": e["summary"]} for _s, e in shown]
+    raise AppError(
+        NO_MATCH,
+        "“%s”对得上 %d 个世界" % (query, len(scored)),
+        [detail("$.world_query", "对得上的世界：%s" % "、".join(c["title"] for c in candidates), "把候选列给玩家选，选定后用 locks.world_id 开局；不替玩家选", NO_MATCH)],
+        candidates=candidates,
+    )
+
+
 def _unknown_excluded_tags(ctx, tags):
     """An unknown tag would exclude nothing, so the player's "不要 X" would silently fail."""
     labels = {t["id"]: t["label"] for t in ctx.content().tags()["tags"] if t["id"] != "custom"}
@@ -270,8 +337,16 @@ def new_game(ctx, payload):
         if payload["locks"].get("world_id") or payload["excludes"].get("world_ids"):
             problems.append(detail("$.locks.world_id", "自定义世界不和现有世界一起锁定或排除", "去掉 world_id 的锁定与排除", INVALID_INPUT))
     problems.extend(_unknown_excluded_tags(ctx, payload["excludes"].get("content_tags") or []))
+    if payload["world_query"] is not None:
+        clash = [name for name, given in (("locks.world_id", payload["locks"].get("world_id")), ("custom_world", payload["custom_world"] is not None), ("replay", payload["replay"])) if given]
+        if clash:
+            problems.append(detail("$.world_query", "world_query 不和 %s 同用" % "、".join(clash), "已知世界 ID 时只用 locks.world_id", INVALID_INPUT))
     if problems:
         raise AppError(INVALID_INPUT, problems[0]["reason"], problems)
+    if payload["world_query"] is not None:
+        # Resolved before the conditions are recorded, so "重开 N 号" replays the world itself.
+        world_id = _match_world_query(ctx, payload["world_query"], include_drafts(ctx, payload))
+        payload["locks"] = dict(payload["locks"], world_id=world_id)
     conditions = opening.normalize_conditions(payload)
     if payload["custom_world"] is not None:
         custom = _custom_world(ctx, payload["custom_world"], conditions)

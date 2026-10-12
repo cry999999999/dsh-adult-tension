@@ -1324,7 +1324,12 @@
   "minute": 1260
  },
  "clock_style": "hm",
- "content_tags": [],
+ "content_tags": [
+  "intimate",
+  "workplace_power",
+  "workplace",
+  "disaster"
+ ],
  "custom": false,
  "customs": [
   "谷子店长拆封珍藏吧唧前习惯佩戴高弹超细纤维白手套仔细擦拭金属表面浮尘",

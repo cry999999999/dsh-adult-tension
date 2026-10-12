@@ -1447,11 +1447,14 @@
  "clock_style": "hm",
  "content_tags": [
   "intimate",
-  "workplace",
-  "workplace_power",
   "violence",
+  "coercion_theme",
   "bodily_harm",
+  "substance",
+  "death",
+  "workplace_power",
   "crime",
+  "workplace",
   "disaster"
  ],
  "custom": false,

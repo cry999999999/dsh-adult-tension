@@ -1324,7 +1324,12 @@
   "minute": 1140
  },
  "clock_style": "hm",
- "content_tags": [],
+ "content_tags": [
+  "intimate",
+  "bodily_harm",
+  "workplace_power",
+  "disaster"
+ ],
  "custom": false,
  "customs": [
   "顶级古风大片登台起吊前由服化道总监亲自检查模特胸前仿古金属压襟吊坠硬度与佩戴牢固度",

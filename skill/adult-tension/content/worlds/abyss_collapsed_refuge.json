@@ -1320,12 +1320,14 @@
  "clock_style": "hm",
  "content_tags": [
   "violence",
+  "coercion_theme",
   "bodily_harm",
-  "disaster",
   "substance",
-  "workplace",
+  "death",
   "workplace_power",
-  "coercion_theme"
+  "workplace",
+  "supernatural",
+  "disaster"
  ],
  "custom": false,
  "customs": [

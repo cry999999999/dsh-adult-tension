@@ -1164,7 +1164,14 @@
   "minute": 1340
  },
  "clock_style": "hm",
- "content_tags": [],
+ "content_tags": [
+  "intimate",
+  "violence",
+  "humiliation",
+  "workplace_power",
+  "workplace",
+  "disaster"
+ ],
  "custom": true,
  "customs": [
   "地下暗堡报务员在发报前须独自闭目校准发报机音膜三分钟，手持纯钢拆卸扳手检核电子管座真空密封状态。",

@@ -1448,14 +1448,17 @@
  "clock_style": "hm",
  "content_tags": [
   "intimate",
-  "workplace",
-  "workplace_power",
-  "violence",
-  "bodily_harm",
-  "crime",
-  "disaster",
   "explicit",
-  "death"
+  "violence",
+  "coercion_theme",
+  "bodily_harm",
+  "substance",
+  "death",
+  "workplace_power",
+  "crime",
+  "gambling",
+  "workplace",
+  "disaster"
  ],
  "custom": false,
  "customs": [

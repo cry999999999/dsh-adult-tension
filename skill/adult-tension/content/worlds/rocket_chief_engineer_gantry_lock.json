@@ -1296,7 +1296,11 @@
   "minute": 1380
  },
  "clock_style": "hm",
- "content_tags": [],
+ "content_tags": [
+  "intimate",
+  "workplace",
+  "disaster"
+ ],
  "custom": false,
  "customs": [
   "进入发射塔高空防区前由防静电安全员逐一清空口袋并手检防坠吊带确保零杂物带入塔架",

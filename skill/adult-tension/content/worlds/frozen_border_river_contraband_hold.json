@@ -1141,7 +1141,13 @@
   "minute": 1380
  },
  "clock_style": "hm",
- "content_tags": [],
+ "content_tags": [
+  "intimate",
+  "violence",
+  "humiliation",
+  "crime",
+  "workplace"
+ ],
  "custom": true,
  "customs": [
   "夜航巡更人员进底舱前必须在气密门日志簿签注代号，佩戴便携式多功能气体监测仪并敲击龙骨三声确认应答。",

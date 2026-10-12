@@ -1100,7 +1100,15 @@
   "minute": 300
  },
  "clock_style": "hm",
- "content_tags": [],
+ "content_tags": [
+  "intimate",
+  "violence",
+  "coercion_theme",
+  "humiliation",
+  "bodily_harm",
+  "supernatural",
+  "disaster"
+ ],
  "custom": true,
  "customs": [
   "皇女升座之时全殿侍从必须屈膝抚胸致敬之古老血脉仪轨。",

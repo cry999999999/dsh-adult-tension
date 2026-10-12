@@ -1127,9 +1127,13 @@
  },
  "clock_style": "hm",
  "content_tags": [
+  "intimate",
+  "violence",
+  "bodily_harm",
+  "death",
   "workplace",
-  "disaster",
-  "intimate"
+  "supernatural",
+  "disaster"
  ],
  "custom": false,
  "customs": [

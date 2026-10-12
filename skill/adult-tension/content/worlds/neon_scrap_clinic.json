@@ -1308,12 +1308,13 @@
  },
  "clock_style": "hm",
  "content_tags": [
-  "workplace",
-  "crime",
+  "intimate",
+  "violence",
   "coercion_theme",
   "bodily_harm",
   "substance",
-  "intimate"
+  "crime",
+  "workplace"
  ],
  "custom": false,
  "customs": [

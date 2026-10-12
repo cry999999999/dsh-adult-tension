@@ -1318,12 +1318,14 @@
  },
  "clock_style": "hm",
  "content_tags": [
-  "crime",
-  "coercion_theme",
   "violence",
+  "coercion_theme",
   "bodily_harm",
-  "disaster",
-  "workplace"
+  "substance",
+  "death",
+  "crime",
+  "workplace",
+  "disaster"
  ],
  "custom": false,
  "customs": [

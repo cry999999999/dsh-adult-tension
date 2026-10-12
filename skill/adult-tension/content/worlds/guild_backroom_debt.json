@@ -1394,13 +1394,15 @@
  },
  "clock_style": "hm",
  "content_tags": [
-  "crime",
-  "coercion_theme",
   "violence",
+  "coercion_theme",
   "bodily_harm",
-  "workplace",
   "substance",
-  "workplace_power"
+  "death",
+  "workplace_power",
+  "crime",
+  "workplace",
+  "supernatural"
  ],
  "custom": false,
  "customs": [

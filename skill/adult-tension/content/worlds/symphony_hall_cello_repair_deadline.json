@@ -1156,7 +1156,12 @@
   "minute": 1165
  },
  "clock_style": "hm",
- "content_tags": [],
+ "content_tags": [
+  "intimate",
+  "substance",
+  "workplace_power",
+  "disaster"
+ ],
  "custom": true,
  "customs": [
   "大提琴首席独奏大师登台前需独自在调温密库默坐三分钟，以纯银校音叉测定琴马共鸣频率，由专职琴工陪同见证签收名琴。",

@@ -1313,11 +1313,13 @@
  },
  "clock_style": "hm",
  "content_tags": [
-  "nightlife",
-  "workplace",
-  "crime",
+  "intimate",
+  "violence",
   "coercion_theme",
-  "intimate"
+  "substance",
+  "crime",
+  "workplace",
+  "nightlife"
  ],
  "custom": false,
  "customs": [

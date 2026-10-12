@@ -1402,11 +1402,13 @@
  "clock_style": "hm",
  "content_tags": [
   "intimate",
-  "workplace",
-  "workplace_power",
   "violence",
   "bodily_harm",
+  "substance",
+  "workplace_power",
   "crime",
+  "gambling",
+  "workplace",
   "disaster"
  ],
  "custom": false,

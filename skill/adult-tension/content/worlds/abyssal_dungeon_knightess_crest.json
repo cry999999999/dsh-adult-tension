@@ -1490,14 +1490,15 @@
  "clock_style": "hm",
  "content_tags": [
   "intimate",
-  "workplace",
-  "workplace_power",
+  "explicit",
   "violence",
   "bodily_harm",
+  "death",
+  "workplace_power",
   "crime",
-  "disaster",
-  "explicit",
-  "death"
+  "workplace",
+  "supernatural",
+  "disaster"
  ],
  "custom": false,
  "customs": [

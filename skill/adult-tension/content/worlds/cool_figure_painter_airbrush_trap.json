@@ -1324,7 +1324,12 @@
   "minute": 1260
  },
  "clock_style": "hm",
- "content_tags": [],
+ "content_tags": [
+  "intimate",
+  "bodily_harm",
+  "workplace",
+  "disaster"
+ ],
  "custom": false,
  "customs": [
   "顶级手办涂装师调配重工珠光漆料前习惯用不锈钢通针把手反复校核喷嘴同轴同心度",

@@ -1100,7 +1100,13 @@
   "minute": 300
  },
  "clock_style": "hm",
- "content_tags": [],
+ "content_tags": [
+  "intimate",
+  "violence",
+  "coercion_theme",
+  "humiliation",
+  "workplace"
+ ],
  "custom": true,
  "customs": [
   "首席法官步入法庭升座之时全员必须肃立低头静默致敬之崇高规程。",

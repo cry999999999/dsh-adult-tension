@@ -1324,7 +1324,11 @@
   "minute": 1260
  },
  "clock_style": "hm",
- "content_tags": [],
+ "content_tags": [
+  "intimate",
+  "substance",
+  "disaster"
+ ],
  "custom": false,
  "customs": [
   "双层超细纤维白手套执拿礼节：鉴定师在触摸稀世名钻时必须全程保持手套干燥无尘，呼吸不可直接喷溅在宝石刻面之上",

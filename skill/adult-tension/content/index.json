@@ -5,12 +5,14 @@
   {
    "content_tags": [
     "violence",
+    "coercion_theme",
     "bodily_harm",
-    "disaster",
     "substance",
-    "workplace",
+    "death",
     "workplace_power",
-    "coercion_theme"
+    "workplace",
+    "supernatural",
+    "disaster"
    ],
    "default_person": "second",
    "era": "剑与魔法鼎盛纪元（迷宫都市深渊层）",
@@ -25,7 +27,12 @@
    "title": "迷宫深层：坍塌安全区与溃灭远征队"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "supernatural",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "剑与魔法奇幻",
    "id": "abyss_dungeon_exiled_saintess",
@@ -41,14 +48,15 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
+    "explicit",
     "violence",
     "bodily_harm",
+    "death",
+    "workplace_power",
     "crime",
-    "disaster",
-    "explicit",
-    "death"
+    "workplace",
+    "supernatural",
+    "disaster"
    ],
    "default_person": "second",
    "era": "中世纪低魔黑暗帝国边境黑曜石要塞断罪地牢血月之夜",
@@ -64,10 +72,13 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
+    "death",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "当代近未来商业航天超高音速测控基地",
@@ -84,11 +95,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -106,11 +118,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "workplace_power",
     "crime",
+    "workplace",
+    "supernatural",
     "disaster"
    ],
    "default_person": "second",
@@ -127,10 +140,13 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
+    "death",
     "crime",
-    "intimate"
+    "workplace",
+    "supernatural",
+    "disaster"
    ],
    "default_person": "second",
    "era": "极寒雪山绝顶古代石构神殿遗址",
@@ -146,10 +162,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "violence",
+    "bodily_harm",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "乱世军阀混战与前朝皇陵古墓机关探险期",
@@ -166,11 +184,13 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "substance",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -186,7 +206,14 @@
    "title": "风暴游艇密室：千金军火商"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "coercion_theme",
+    "humiliation",
+    "workplace_power",
+    "crime",
+    "workplace"
+   ],
    "default_person": "second",
    "era": "当代北京国家博物馆宋画特展，开幕揭幕前二十秒",
    "id": "art_restorer_roller_piercing_jam",
@@ -220,11 +247,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "substance",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -241,9 +269,10 @@
   },
   {
    "content_tags": [
+    "intimate",
+    "death",
     "workplace",
-    "disaster",
-    "intimate"
+    "disaster"
    ],
    "default_person": "second",
    "era": "大唐盛世开元年间国家皇家天文台与观象授时巅峰期",
@@ -259,10 +288,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "violence",
+    "substance",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "近现代顶级跨国艺术品拍卖行与超高防等级地下金库时代",
@@ -279,7 +310,8 @@
   {
    "content_tags": [
     "romance_light",
-    "violence"
+    "violence",
+    "substance"
    ],
    "default_person": "second",
    "era": "幕末（文久三年，1863 年）",
@@ -294,7 +326,11 @@
    "title": "幕末町屋与道场"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "workplace_power"
+   ],
    "default_person": "second",
    "era": "当代三亚，海滨国际沙滩排球公开赛女子决赛的赛点",
    "id": "beach_volleyball_anchor_vibe_trap",
@@ -309,10 +345,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "江南水乡现代古风临河双层复古书店",
@@ -347,7 +384,12 @@
    "title": "月份牌"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "workplace_power",
+    "gambling"
+   ],
    "default_person": "second",
    "era": "当代维也纳金色大厅，大提琴协奏曲首演起拍前十五秒",
    "id": "cellist_hall_tailpin_lock_jam",
@@ -362,10 +404,13 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "substance",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "nightlife",
+    "disaster"
    ],
    "default_person": "second",
    "era": "现代都市豪门商战与极端暴雨防汛时代",
@@ -382,11 +427,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
+    "coercion_theme",
     "bodily_harm",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -404,11 +450,14 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
+    "coercion_theme",
     "bodily_harm",
+    "substance",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -425,9 +474,11 @@
   },
   {
    "content_tags": [
+    "intimate",
+    "violence",
+    "bodily_harm",
     "workplace",
-    "disaster",
-    "intimate"
+    "disaster"
    ],
    "default_person": "second",
    "era": "清末民初关东长白山老林放山采参与高山冰川科考探险期",
@@ -443,12 +494,14 @@
   },
   {
    "content_tags": [
-    "crime",
-    "coercion_theme",
     "violence",
+    "coercion_theme",
     "bodily_harm",
-    "disaster",
-    "workplace"
+    "substance",
+    "death",
+    "crime",
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "明末天启年间（风雪绝壁孤庙）",
@@ -465,11 +518,13 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
+    "humiliation",
     "bodily_harm",
+    "substance",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -486,9 +541,13 @@
   },
   {
    "content_tags": [
+    "intimate",
+    "violence",
+    "bodily_harm",
+    "death",
     "workplace",
-    "disaster",
-    "intimate"
+    "supernatural",
+    "disaster"
    ],
    "default_person": "second",
    "era": "边境战争与符文结界纪元",
@@ -521,7 +580,13 @@
    "title": "机械马戏"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "coercion_theme",
+    "humiliation",
+    "workplace_power",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "当代顶尖高等学府千人迎新典礼开幕式致辞倒计时阶段",
    "id": "cold_president_podium_harness_jam",
@@ -535,7 +600,14 @@
    "title": "冷面研究生会主席·大礼堂讲台拘束胸衣咬死"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "violence",
+    "humiliation",
+    "workplace_power",
+    "workplace",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "现代冷战",
    "id": "cold_war_bunker_cipher_incineration",
@@ -550,10 +622,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "近现代前线残酷要塞攻防与地下野战医疗卫勤时代",
@@ -569,11 +642,13 @@
   },
   {
    "content_tags": [
-    "nightlife",
-    "workplace",
-    "crime",
+    "intimate",
+    "violence",
     "coercion_theme",
-    "intimate"
+    "substance",
+    "crime",
+    "workplace",
+    "nightlife"
    ],
    "default_person": "second",
    "era": "1940（租界变天前夕）",
@@ -588,7 +663,13 @@
    "title": "末代法租界的暗房与沙龙"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "coercion_theme",
+    "humiliation",
+    "workplace_power",
+    "workplace"
+   ],
    "default_person": "second",
    "era": "当代杭州大学城商圈，通宵便利店凌晨两点",
    "id": "convenience_clerk_cooler_tail_jam",
@@ -622,10 +703,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
     "crime",
-    "intimate"
+    "workplace",
+    "supernatural",
+    "disaster"
    ],
    "default_person": "second",
    "era": "古典奇幻世界树远古自然秘境与铁化木机关文明时代",
@@ -640,7 +722,12 @@
    "title": "清冷精灵游侠·世界树根系空洞荆棘闭锁"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "bodily_harm",
+    "workplace",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "当代顶级GK手办模玩工作室高定展品终期涂装封釉阶段",
    "id": "cool_figure_painter_airbrush_trap",
@@ -654,7 +741,12 @@
    "title": "手办涂装师·专业级大型工业负压喷漆房"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "workplace_power",
+    "workplace",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "当代国际动漫游戏博览会压轴日闭馆清场与红外布防交接阶段",
    "id": "cool_genshin_cosplayer_zipper_trap",
@@ -669,10 +761,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "现代重型机车改装与工坊时代",
@@ -688,9 +781,12 @@
   },
   {
    "content_tags": [
-    "workplace",
+    "intimate",
+    "violence",
+    "bodily_harm",
+    "death",
     "crime",
-    "intimate"
+    "workplace"
    ],
    "default_person": "second",
    "era": "大唐盛世贞观年间大理寺最高司法勘验与玄武岩地下冰库期",
@@ -706,9 +802,12 @@
   },
   {
    "content_tags": [
+    "intimate",
+    "humiliation",
+    "bodily_harm",
+    "workplace_power",
     "workplace",
-    "disaster",
-    "intimate"
+    "disaster"
    ],
    "default_person": "second",
    "era": "当代大型国际动漫盛会与现代化演艺工程期",
@@ -725,11 +824,13 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "substance",
+    "workplace_power",
     "crime",
+    "gambling",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -746,10 +847,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "十万吨级薄膜型超低温LNG船深远海远洋航行期",
@@ -765,10 +867,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "violence",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "近未来赛博朋克巨企垄断与霓虹反抗军纪元",
@@ -784,10 +888,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
+    "death",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "重工业极盛期超深露天矿坑深井竖井开采施工期",
@@ -804,14 +910,15 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
+    "explicit",
     "violence",
     "bodily_harm",
+    "death",
+    "workplace_power",
     "crime",
-    "disaster",
-    "explicit",
-    "death"
+    "workplace",
+    "supernatural",
+    "disaster"
    ],
    "default_person": "second",
    "era": "现代偏远山林暴雨午夜（废弃稻荷神社后山禁地结界破碎前夕）",
@@ -827,10 +934,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "violence",
     "crime",
-    "intimate"
+    "workplace",
+    "supernatural",
+    "disaster"
    ],
    "default_person": "second",
    "era": "奇幻剑与魔法帝国圣战与古老魔导机关文明时代",
@@ -847,11 +956,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "workplace_power",
     "crime",
+    "workplace",
+    "supernatural",
     "disaster"
    ],
    "default_person": "second",
@@ -869,11 +979,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "substance",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -889,7 +1000,12 @@
    "title": "万米高空：女总裁与领带"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "workplace_power",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "现代都市·漫展开展前夜",
    "id": "doujin_artist_deadline_blackout",
@@ -905,12 +1021,13 @@
   {
    "content_tags": [
     "violence",
+    "coercion_theme",
     "bodily_harm",
-    "disaster",
     "substance",
-    "workplace",
     "workplace_power",
-    "coercion_theme"
+    "workplace",
+    "supernatural",
+    "disaster"
    ],
    "default_person": "second",
    "era": "神代黄昏凡人弑神史诗纪元",
@@ -927,11 +1044,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "workplace_power",
     "crime",
+    "workplace",
+    "supernatural",
     "disaster"
    ],
    "default_person": "second",
@@ -948,9 +1066,11 @@
   },
   {
    "content_tags": [
+    "intimate",
+    "violence",
+    "bodily_harm",
     "workplace",
-    "disaster",
-    "intimate"
+    "disaster"
    ],
    "default_person": "second",
    "era": "当代丝绸之路世界文化遗产保护与莫高窟崖体综合治理期",
@@ -966,10 +1086,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "近现代国家级宏伟歌剧院与重型机械化升降舞台时代",
@@ -985,10 +1107,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "substance",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "古典奇幻皇家天文占星与宏大精密天体仪机关时代",
@@ -1004,10 +1127,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "当代沿海特大城市高层商住综合体",
@@ -1024,11 +1148,13 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
+    "supernatural",
     "disaster"
    ],
    "default_person": "second",
@@ -1045,10 +1171,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "近现代顶级欧洲风情私人马术庄园与现代化赛马俱乐部时代",
@@ -1064,10 +1191,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "现代江南名门世家地下字画典藏库",
@@ -1082,7 +1211,10 @@
    "title": "典雅少夫人·古画字画恒湿大库"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation"
+   ],
    "default_person": "second",
    "era": "当代湖南千年古书院，成人礼大典的礼仪示范前二十五秒",
    "id": "etiquette_podium_magnet_trap",
@@ -1096,7 +1228,12 @@
    "title": "端庄国学礼仪讲师·明伦堂电磁讲案吸死钢珠乳夹"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "supernatural",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "现代神道特区·暴雨受灾深夜",
    "id": "exorcist_miko_broken_kagura_hall",
@@ -1110,7 +1247,13 @@
    "title": "退魔巫女·残破神乐·伏魔殿八角祭台青铜华盖断裂咬死白丝千早"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "death",
+    "workplace_power",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "当代艺术大学科技文化双创园区挑空艺术工坊画室黄昏入夜时段",
    "id": "fairy_artist_tablet_clamp_trap",
@@ -1124,7 +1267,15 @@
    "title": "国风仙女画师·裱画机咬裙与十八禁投屏社死"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "violence",
+    "coercion_theme",
+    "humiliation",
+    "bodily_harm",
+    "supernatural",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "神魔旧纪元末期",
    "id": "fallen_demon_empress_throne_pact",
@@ -1140,11 +1291,14 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
+    "coercion_theme",
     "bodily_harm",
+    "substance",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -1162,11 +1316,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
+    "coercion_theme",
     "bodily_harm",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -1182,7 +1337,12 @@
    "title": "货舱密审：女特工与冰海"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "crime",
+    "disaster"
+   ],
    "default_person": "third",
    "era": "当代夏夜台风暴雨侵袭突发断电之暗夜死线",
    "id": "fencing_hall_rehab_duel",
@@ -1197,9 +1357,13 @@
   },
   {
    "content_tags": [
+    "intimate",
+    "violence",
+    "bodily_harm",
+    "substance",
+    "workplace_power",
     "workplace",
-    "disaster",
-    "intimate"
+    "disaster"
    ],
    "default_person": "second",
    "era": "当代国际电影节颁奖典礼终局盛典期",
@@ -1216,14 +1380,15 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
+    "explicit",
     "violence",
     "bodily_harm",
+    "death",
+    "workplace_power",
     "crime",
-    "disaster",
-    "explicit",
-    "death"
+    "workplace",
+    "supernatural",
+    "disaster"
    ],
    "default_person": "second",
    "era": "魔导蒸汽朋克帝国三千米浮空枢纽绝密禁术研究院雷暴夜",
@@ -1278,14 +1443,16 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
-    "violence",
-    "bodily_harm",
-    "crime",
-    "disaster",
     "explicit",
-    "death"
+    "violence",
+    "coercion_theme",
+    "bodily_harm",
+    "death",
+    "workplace_power",
+    "crime",
+    "workplace",
+    "supernatural",
+    "disaster"
    ],
    "default_person": "second",
    "era": "明清架空皇朝大雪封城太上皇病危宫门夜禁夺嫡政变时期",
@@ -1302,11 +1469,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -1322,7 +1490,14 @@
    "title": "雷暴解剖中心：清冷女法医"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "violence",
+    "humiliation",
+    "bodily_harm",
+    "death",
+    "disaster"
+   ],
    "default_person": "third",
    "era": "极北寒冬暴风雪侵袭万吨雪崩压塌要塞外桥之生死死线",
    "id": "frontier_tavern_exiled_paladin",
@@ -1336,7 +1511,13 @@
    "title": "暗黑奇幻·退队女骑士·雪峰要塞悬桥断裂重甲咬死石缝"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "violence",
+    "humiliation",
+    "crime",
+    "workplace"
+   ],
    "default_person": "second",
    "era": "当代近未来",
    "id": "frozen_border_river_contraband_hold",
@@ -1350,7 +1531,13 @@
    "title": "边境关卡·缉私暗舱·万吨破冰船双层底舱挤压钢梁咬死绝缘工装长靴"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "substance",
+    "workplace_power",
+    "workplace"
+   ],
    "default_person": "second",
    "era": "当代香港秋季拍卖夜，压轴粉钻项链开拍前三十秒",
    "id": "gemologist_auction_display_harness_jam",
@@ -1364,7 +1551,12 @@
    "title": "高傲珠宝设计师·粉钻展台胶条咬死纯金脚踝镣铐"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "workplace_power",
+    "workplace",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "当代大型动漫文化街区独栋周边集合店首发通宵理货上架阶段",
    "id": "gentle_merch_shop_loft_latch_trap",
@@ -1379,10 +1571,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "现代和风温泉山庄与天然地热溶洞水工时代",
@@ -1398,10 +1592,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "coercion_theme",
+    "bodily_harm",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "深层地热能源大开发超深高温高压定向钻探施工期",
@@ -1436,15 +1632,17 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
+    "coercion_theme",
+    "humiliation",
     "bodily_harm",
-    "crime",
-    "disaster",
-    "death",
     "substance",
-    "nightlife"
+    "death",
+    "workplace_power",
+    "crime",
+    "workplace",
+    "nightlife",
+    "disaster"
    ],
    "default_person": "second",
    "era": "当代东京银座顶级地下政商俱乐部深夜闭门清算时段",
@@ -1459,7 +1657,12 @@
    "title": "银座暴雨夜：冷血女社长与被裁审计官"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "coercion_theme",
+    "humiliation",
+    "workplace_power"
+   ],
    "default_person": "second",
    "era": "当代杭州棋院，中日围棋擂台赛决胜局的最后读秒",
    "id": "go_master_tatami_corset_trap",
@@ -1475,13 +1678,15 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
+    "coercion_theme",
     "bodily_harm",
+    "substance",
+    "death",
+    "workplace_power",
     "crime",
-    "disaster",
-    "death"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "十九世纪末欧陆边陲黑森林哥特断壁古堡暴雪封山时期",
@@ -1497,10 +1702,12 @@
   },
   {
    "content_tags": [
-    "intimate",
-    "workplace",
-    "workplace_power",
     "romance_light",
+    "intimate",
+    "coercion_theme",
+    "substance",
+    "workplace_power",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -1517,13 +1724,15 @@
   },
   {
    "content_tags": [
-    "crime",
-    "coercion_theme",
     "violence",
+    "coercion_theme",
     "bodily_harm",
-    "workplace",
     "substance",
-    "workplace_power"
+    "death",
+    "workplace_power",
+    "crime",
+    "workplace",
+    "supernatural"
    ],
    "default_person": "second",
    "era": "剑与魔法鼎盛纪元（边境公会暗室）",
@@ -1539,10 +1748,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "substance",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "奇幻蒸汽魔导与飞空艇公会全盛时代",
@@ -1557,7 +1768,13 @@
    "title": "公会看板娘·飞空艇锚定悬空转台卡死"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "workplace_power",
+    "workplace",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "现代都市",
    "id": "gyaru_classmate_stranded_commuter",
@@ -1613,7 +1830,13 @@
    "title": "半条街"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "coercion_theme",
+    "humiliation",
+    "workplace_power",
+    "crime"
+   ],
    "default_person": "second",
    "era": "当代江南古风影视城，古典舞《洛神》水上首演开场前十五秒",
    "id": "hanfu_fairy_pavilion_bell_dudou_jam",
@@ -1646,11 +1869,13 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
+    "coercion_theme",
     "bodily_harm",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -1666,7 +1891,17 @@
    "title": "沉船压载舱：冷傲千金"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "violence",
+    "coercion_theme",
+    "humiliation",
+    "substance",
+    "workplace_power",
+    "crime",
+    "workplace",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "近现代豪门博弈时期",
    "id": "heiress_panic_room_stalemate",
@@ -1680,7 +1915,10 @@
    "title": "名门千金·绑架暗格·豪宅衣帽间重装安全屋钢栓抱死真丝睡裙暗扣"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "workplace_power"
+   ],
    "default_person": "second",
    "era": "当代顶级音乐学院，千金第一场个人独奏专场开演前的深夜候场",
    "id": "heiress_piano_choker_lever_jam",
@@ -1695,9 +1933,11 @@
   },
   {
    "content_tags": [
+    "intimate",
+    "bodily_harm",
+    "workplace_power",
     "workplace",
-    "disaster",
-    "intimate"
+    "disaster"
    ],
    "default_person": "second",
    "era": "当代香港船王家族与青衣船厂的十号风球风暴潮之夜",
@@ -1713,10 +1953,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "coercion_theme",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "特大型水利枢纽超高混凝土重力坝高水头运行期",
@@ -1732,10 +1974,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "十马赫国家级超高声速空气动力学风洞运行期",
@@ -1775,11 +2018,13 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "substance",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -1795,7 +2040,13 @@
    "title": "雪山猎屋：傲慢皇女"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "violence",
+    "coercion_theme",
+    "humiliation",
+    "workplace"
+   ],
    "default_person": "second",
    "era": "欧式古典裁判所时期",
    "id": "inquisition_dungeon_pact_reversal",
@@ -1811,11 +2062,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
+    "coercion_theme",
     "bodily_harm",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -1831,7 +2083,11 @@
    "title": "红叶别庄夜雾：华族女家督与债主执事"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "workplace_power"
+   ],
    "default_person": "second",
    "era": "当代杭州百年木造武道馆，全国剑道锦标赛女子团体决赛开赛前二十秒",
    "id": "kendo_captain_scoreboard_bell_trap",
@@ -1862,7 +2118,12 @@
    "title": "喫茶街"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "workplace_power",
+    "gambling"
+   ],
    "default_person": "second",
    "era": "当代苏州古典园林，昆曲《牡丹亭》水上夜演谢幕前二十秒",
    "id": "kunqu_water_stage_mist_arm_trap",
@@ -1878,11 +2139,14 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
+    "coercion_theme",
+    "humiliation",
     "bodily_harm",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -1935,7 +2199,12 @@
    "title": "最后一期"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "bodily_harm",
+    "workplace"
+   ],
    "default_person": "second",
    "era": "当代宁波，民国藏书楼改建的古籍特藏馆，周五夜读会",
    "id": "librarian_atrium_ladder_choker_jam",
@@ -1949,7 +2218,12 @@
    "title": "清冷古籍馆员·藏书楼铜书梯咬死素银项圈胸链"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "workplace_power",
+    "workplace"
+   ],
    "default_person": "third",
    "era": "当代盛夏，ACG夏日嘉年华万人盛典之夜",
    "id": "lolita_stage_lift_garter_trap",
@@ -1965,11 +2239,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -1985,7 +2260,13 @@
    "title": "轨道残骸：王牌女机师"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "bodily_harm",
+    "workplace",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "硬核科幻",
    "id": "mecha_valkyrie_cockpit_synchronize",
@@ -2039,7 +2320,12 @@
    "title": "八十八层封楼夜：社长与离岸账本"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "supernatural",
+    "disaster"
+   ],
    "default_person": "third",
    "era": "当代夏秋之交百年一遇特大山洪暴雨狂澜之夜",
    "id": "miko_mountain_curse_ritual",
@@ -2073,11 +2359,12 @@
   },
   {
    "content_tags": [
-    "intimate",
     "romance_light",
-    "workplace",
-    "workplace_power",
+    "intimate",
     "coercion_theme",
+    "workplace_power",
+    "workplace",
+    "supernatural",
     "disaster"
    ],
    "default_person": "second",
@@ -2095,11 +2382,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
+    "coercion_theme",
     "bodily_harm",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -2116,12 +2404,13 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "crime",
+    "intimate",
+    "violence",
     "coercion_theme",
     "bodily_harm",
     "substance",
-    "intimate"
+    "crime",
+    "workplace"
    ],
    "default_person": "second",
    "era": "末世浩劫后（辐射海湾沉船城）",
@@ -2136,7 +2425,13 @@
    "title": "酸雨沉船城与神经诊所"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "substance",
+    "workplace",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "现代都市",
    "id": "night_clinic_blackout_prescription",
@@ -2171,10 +2466,13 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "violence",
+    "bodily_harm",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "冷战末期地下战略核工程与废弃核井封存期",
@@ -2191,11 +2489,13 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "substance",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -2211,7 +2511,12 @@
    "title": "雪夜告解室：纯白修女"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "workplace_power",
+    "workplace"
+   ],
    "default_person": "second",
    "era": "当代上海三甲医院急诊大楼，早交班前的八分钟",
    "id": "nurse_station_cart_garter_clip_jam",
@@ -2227,11 +2532,13 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "substance",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -2248,10 +2555,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "超深水半潜式钻井平台深海油气勘探期",
@@ -2267,10 +2576,13 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "violence",
+    "coercion_theme",
+    "bodily_harm",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "特大型露天煤矿千万吨级连续开采装备运行期",
@@ -2285,7 +2597,13 @@
    "title": "露天煤矿·万吨轮斗挖掘机受料臂卡死起火"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "substance",
+    "workplace_power",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "十九世纪末巴黎大歌剧院繁盛时期",
    "id": "opera_house_understage_mechanism",
@@ -2300,10 +2618,13 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "violence",
+    "death",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "近未来深空天梯轨道建设与空天防御纪元",
@@ -2319,10 +2640,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "古典奇幻边境河港驻防与大型水利机械防御枢纽时代",
@@ -2339,11 +2662,13 @@
   {
    "content_tags": [
     "intimate",
-    "workplace_power",
-    "workplace",
     "violence",
+    "coercion_theme",
     "bodily_harm",
+    "substance",
+    "workplace_power",
     "crime",
+    "workplace",
     "nightlife",
     "disaster"
    ],
@@ -2360,7 +2685,14 @@
    "title": "百乐门香闺：76号女处长与军统潜伏者"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "coercion_theme",
+    "humiliation",
+    "substance",
+    "workplace_power",
+    "workplace"
+   ],
    "default_person": "second",
    "era": "当代香港中环交易所上市大厅，敲钟仪式前二十秒",
    "id": "partner_boardroom_arm_lace_jam",
@@ -2374,7 +2706,12 @@
    "title": "高冷投行女合伙人·港交所敲钟台机械臂咬死蕾丝吊袜带"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "workplace_power",
+    "gambling"
+   ],
    "default_person": "second",
    "era": "当代上海外滩米其林三星法餐厅，评审品鉴前二十五秒",
    "id": "pastry_chef_oven_hinge_corset_jam",
@@ -2390,11 +2727,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -2411,10 +2749,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "江南水乡现代古风百年传统戏楼",
@@ -2430,10 +2769,13 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "violence",
+    "bodily_harm",
+    "substance",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "近代欧洲帝国风雪避难所",
@@ -2448,7 +2790,12 @@
    "title": "帝国长皇女·雪崩行宫古董收藏室暗门"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "coercion_theme",
+    "humiliation",
+    "workplace_power"
+   ],
    "default_person": "second",
    "era": "当代海港城市的百年大教堂，主日大弥撒开场前三分钟",
    "id": "pure_choir_sister_organ_choker_jam",
@@ -2462,7 +2809,12 @@
    "title": "圣洁女高音领唱·大教堂管风琴铃铛颈带锁死"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "bodily_harm",
+    "workplace_power",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "当代顶级国风数字影视文化传媒基地商业大片拍摄期",
    "id": "pure_hanfu_model_wire_ribbon_knot_jam",
@@ -2496,10 +2848,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "现代成年高等教育校区旧式近代历史建筑与古典图书阅览馆时代",
@@ -2514,7 +2867,13 @@
    "title": "成年文学少女·旧教学楼顶层四面开敞露台图书厅"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "coercion_theme",
+    "humiliation",
+    "workplace_power",
+    "crime"
+   ],
    "default_person": "second",
    "era": "当代大运会网球女单决赛，万人露天中央球场的决胜盘局间休息",
    "id": "pure_tennis_idol_umpire_hook_trap",
@@ -2528,7 +2887,12 @@
    "title": "初恋网球校花·决赛裁判椅倒钩挂裙"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "workplace_power",
+    "workplace",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "当代顶级声音工程制作基地深夜乙女游戏年度资料片压轴配音阶段",
    "id": "pure_voice_actress_booth_lock",
@@ -2542,7 +2906,15 @@
    "title": "清纯乙游声优·深夜录音棚气密门负压死锁"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "coercion_theme",
+    "humiliation",
+    "substance",
+    "workplace_power",
+    "crime",
+    "workplace"
+   ],
    "default_person": "second",
    "era": "当代跨洋航线，万米高空的波音777头等舱夜航",
    "id": "purser_airbar_choker_drawer_jam",
@@ -2557,9 +2929,10 @@
   },
   {
    "content_tags": [
+    "intimate",
     "workplace",
-    "disaster",
-    "intimate"
+    "nightlife",
+    "disaster"
    ],
    "default_person": "second",
    "era": "明末清初金陵秦淮河风雅极盛与漕运通衢期",
@@ -2577,6 +2950,7 @@
    "content_tags": [
     "romance_light",
     "intimate",
+    "violence",
     "coercion_theme",
     "bodily_harm"
    ],
@@ -2595,11 +2969,13 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "substance",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -2615,7 +2991,14 @@
    "title": "隔离病栋：冷面女主刀"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "coercion_theme",
+    "humiliation",
+    "workplace_power",
+    "crime",
+    "workplace"
+   ],
    "default_person": "second",
    "era": "当代上海临街电台直播间，午夜热线开播前十五秒",
    "id": "radio_host_studio_mic_chain_trap",
@@ -2629,7 +3012,10 @@
    "title": "知性深夜电台女主播·临街直播间麦克风咬死白金乳链"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation"
+   ],
    "default_person": "second",
    "era": "现代江南",
    "id": "rainy_archive_manuscript_authentication",
@@ -2666,9 +3052,10 @@
   },
   {
    "content_tags": [
+    "intimate",
+    "workplace_power",
     "workplace",
-    "disaster",
-    "intimate"
+    "disaster"
    ],
    "default_person": "second",
    "era": "当代陆家嘴金融中心超高层跨国并购谈判期",
@@ -2684,10 +3071,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "千万吨级炼化一体化加氢裂化装置高压运行期",
@@ -2742,7 +3130,8 @@
     "romance_light",
     "intimate",
     "violence",
-    "coercion_theme"
+    "coercion_theme",
+    "supernatural"
    ],
    "default_person": "second",
    "era": "剑与魔法，魔王死后第十年",
@@ -2757,7 +3146,11 @@
    "title": "勇者退休以后"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "workplace",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "当代南海海上航天发射平台的临射倒计时终局阶段",
    "id": "rocket_chief_engineer_gantry_lock",
@@ -2772,10 +3165,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "千吨级商业液体运载火箭高密度发射期",
@@ -2791,10 +3186,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
+    "death",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "高山温泉度假疗养院地下动力中心",
@@ -2810,10 +3207,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "顶尖公立大学地下智慧数据中心",
@@ -2829,9 +3227,12 @@
   },
   {
    "content_tags": [
+    "intimate",
+    "violence",
+    "bodily_harm",
+    "workplace_power",
     "workplace",
-    "disaster",
-    "intimate"
+    "disaster"
    ],
    "default_person": "second",
    "era": "民国时期远东金融中心外滩万国建筑博览群与租界特殊工程期",
@@ -2870,11 +3271,13 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
+    "coercion_theme",
     "bodily_harm",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -2891,10 +3294,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "coercion_theme",
+    "bodily_harm",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "中世纪冷兵器要塞防御与魔导火药战争时代",
@@ -2910,10 +3315,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "substance",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "近现代高山极地齿轨观光铁路与重型雪国列车时代",
@@ -2930,12 +3337,13 @@
   {
    "content_tags": [
     "explicit",
-    "coercion_theme",
     "violence",
-    "substance",
+    "coercion_theme",
     "humiliation",
+    "bodily_harm",
+    "substance",
     "infidelity",
-    "bodily_harm"
+    "crime"
    ],
    "default_person": "second",
    "era": "1980 年代末深冬（暴雪封山第 3 夜）",
@@ -2952,11 +3360,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "substance",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -2973,10 +3382,13 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
+    "death",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "当代广电传媒中心特大型综艺演播大厅",
@@ -2993,12 +3405,13 @@
   {
    "content_tags": [
     "violence",
+    "coercion_theme",
     "bodily_harm",
-    "disaster",
     "substance",
-    "workplace",
+    "death",
     "workplace_power",
-    "coercion_theme"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "重工业蒸汽装甲战争纪元",
@@ -3014,10 +3427,14 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "violence",
+    "coercion_theme",
+    "bodily_harm",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "蒸汽机械工业革命与皇家浮空战舰空战纪元",
@@ -3032,7 +3449,12 @@
    "title": "蒸汽朋克·飞艇主炉防爆舱"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "coercion_theme",
+    "humiliation",
+    "workplace_power"
+   ],
    "default_person": "second",
    "era": "当代上海万人电竞馆，总决赛夺冠后的谢幕直播",
    "id": "streamer_arena_headphone_bell_jam",
@@ -3047,10 +3469,13 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "violence",
+    "death",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "近未来深海万米科考与深渊勘探纪元",
@@ -3065,7 +3490,15 @@
    "title": "深海潜航·减压阀绝境"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "coercion_theme",
+    "humiliation",
+    "substance",
+    "workplace_power",
+    "crime",
+    "workplace"
+   ],
    "default_person": "second",
    "era": "当代上海国际车展，概念超跑全球首发合影前三十秒",
    "id": "supercar_model_chassis_ankle_cuff_jam",
@@ -3102,9 +3535,11 @@
   },
   {
    "content_tags": [
+    "intimate",
+    "violence",
+    "bodily_harm",
     "workplace",
-    "disaster",
-    "intimate"
+    "disaster"
    ],
    "default_person": "second",
    "era": "当代江南太湖流域非物质文化遗产活态保护与古建修缮期",
@@ -3121,11 +3556,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "workplace_power",
     "crime",
+    "workplace",
+    "supernatural",
     "disaster"
    ],
    "default_person": "second",
@@ -3142,10 +3578,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "东方奇幻上古王陵地宫与机关神道暗河秘境时代",
@@ -3160,7 +3597,12 @@
    "title": "清纯剑巫女·水淹地宫青铜闸门脱扣"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "substance",
+    "workplace_power",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "十九世纪末巴黎，电灯刚装进音乐厅、雷暴还能让全城断电的年代",
    "id": "symphony_hall_cello_repair_deadline",
@@ -3192,7 +3634,12 @@
    "title": "花样游泳女冠军·国家跳水馆地下深潜水池"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "bodily_harm",
+    "disaster"
+   ],
    "default_person": "third",
    "era": "大正末年台风暴雨侵袭华族洋馆突发火警之暗夜死线",
    "id": "taisho_mansion_insolvency_night",
@@ -3206,7 +3653,12 @@
    "title": "大正浪漫·破产华族千金·暴雨洋馆倾斜樟木书柜咬死和服振袖"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "bodily_harm",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "现代古典",
    "id": "tea_ceremony_iemoto_succession_duel",
@@ -3220,7 +3672,13 @@
    "title": "京都茶室·家元宗争·开敞式水榭回廊移门地轨变形抱死丝绸茶服襦袢系带"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "coercion_theme",
+    "humiliation",
+    "workplace_power",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "当代江南非遗文化博览会，闭幕大典开场前的最后彩排",
    "id": "tea_mistress_water_piercing_pump_jam",
@@ -3342,7 +3800,12 @@
    "title": "特搜审讯室：冷艳侧写官与戴铐队长"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "workplace_power",
+    "workplace"
+   ],
    "default_person": "second",
    "era": "现代都市·万人盛典之夜",
    "id": "top_idol_van_wardrobe_breakout",
@@ -3357,10 +3820,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
+    "death",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "重工业干线大提速与高原重载蒸汽列车时代",
@@ -3376,10 +3841,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
     "crime",
-    "intimate"
+    "workplace",
+    "supernatural",
+    "disaster"
    ],
    "default_person": "second",
    "era": "古典奇幻精灵王宫与远古月轮机关时代",
@@ -3394,7 +3860,11 @@
    "title": "纯血精灵王女·王宫月轮大殿花瓣穹顶合拢"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "workplace_power",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "当代影视城深夜，古装巨制压轴夜戏开机前的清场",
    "id": "tsundere_hanfu_makeup_bolt_jam",
@@ -3408,7 +3878,11 @@
    "title": "傲娇古装剧梳头师·大殿生铁门栓咬死"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "substance",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "当代瑞士阿尔卑斯百年水晶矿洞的孤品原石评级阶段",
    "id": "tsundere_jewelry_appraiser_vault_trap",
@@ -3422,7 +3896,12 @@
    "title": "顶级珠宝鉴定师·阿尔卑斯水晶矿洞气密门"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "workplace_power",
+    "workplace",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "当代商圈二次元街区，女仆咖啡馆三周年庆舞会散场后的深夜",
    "id": "tsundere_maid_locker_overturn_trap",
@@ -3437,10 +3916,12 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "violence",
+    "bodily_harm",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "现代都市保税港区经侦交锋期",
@@ -3456,10 +3937,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "近未来特大跨海沉管隧道深海基槽安装对接施工期",
@@ -3475,10 +3957,13 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
+    "substance",
+    "death",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "近现代哥特奇幻地下炼金避难所",
@@ -3495,14 +3980,16 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
-    "violence",
-    "bodily_harm",
-    "crime",
-    "disaster",
     "explicit",
-    "death"
+    "violence",
+    "coercion_theme",
+    "bodily_harm",
+    "substance",
+    "death",
+    "workplace_power",
+    "crime",
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "1789年法国大革命前夕凡尔赛宫盛大化装舞会与三级会议暴动前夜",
@@ -3517,7 +4004,12 @@
    "title": "凡尔赛更衣室：冷傲公爵夫人与御前侍卫长"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "crime",
+    "workplace"
+   ],
    "default_person": "second",
    "era": "当代上海高奢名宠水疗会馆，贵宾犬出浴前十五秒",
    "id": "vet_spa_salon_collar_chain_jam",
@@ -3532,10 +4024,14 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
     "intimate",
-    "workplace_power"
+    "violence",
+    "coercion_theme",
+    "bodily_harm",
+    "substance",
+    "workplace_power",
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "欧式古典宫廷暗黑奇幻纪元（王城政变前夜）",
@@ -3551,10 +4047,11 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "bodily_harm",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "奇幻宫廷魔导工学与草药炼金时代",
@@ -3589,14 +4086,15 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
+    "coercion_theme",
     "bodily_harm",
-    "crime",
-    "disaster",
+    "substance",
     "death",
-    "substance"
+    "workplace_power",
+    "crime",
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "核冬天酸雨纪元地下重度污染工业避难所孤立停运时期",
@@ -3612,10 +4110,13 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "disaster",
+    "intimate",
+    "violence",
+    "bodily_harm",
+    "workplace_power",
     "crime",
-    "intimate"
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "核冬天末世辐射尘暴与地下废土期",
@@ -3630,7 +4131,13 @@
    "title": "废土末日·避难所气密门"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "humiliation",
+    "substance",
+    "workplace_power",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "当代上海外滩的超五星酒店，豪门世纪婚礼开场前十秒",
    "id": "wedding_hostess_champagne_handcuff_jam",
@@ -3646,11 +4153,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -3666,7 +4174,14 @@
    "title": "山宅守灵：素白未亡人"
   },
   {
-   "content_tags": [],
+   "content_tags": [
+    "intimate",
+    "coercion_theme",
+    "humiliation",
+    "workplace_power",
+    "workplace",
+    "disaster"
+   ],
    "default_person": "second",
    "era": "当代国际时装周，青年新锐设计师联合大秀开场前的后台",
    "id": "wild_gyaru_harness_cabinet_jam",
@@ -3699,11 +4214,13 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
+    "supernatural",
     "disaster"
    ],
    "default_person": "second",
@@ -3720,12 +4237,13 @@
   },
   {
    "content_tags": [
-    "workplace",
-    "crime",
+    "intimate",
     "coercion_theme",
     "bodily_harm",
     "substance",
-    "intimate"
+    "crime",
+    "workplace",
+    "supernatural"
    ],
    "default_person": "second",
    "era": "黑暗奇幻末期（迷雾纪元末叶）",
@@ -3742,14 +4260,17 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
-    "violence",
-    "bodily_harm",
-    "crime",
-    "disaster",
     "explicit",
-    "death"
+    "violence",
+    "coercion_theme",
+    "bodily_harm",
+    "substance",
+    "death",
+    "workplace_power",
+    "crime",
+    "gambling",
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "当代公海暴风雨超豪华私人游艇顶层连通贵宾套房午夜",
@@ -3766,11 +4287,13 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "substance",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -3810,15 +4333,17 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
+    "explicit",
     "violence",
     "bodily_harm",
+    "substance",
+    "death",
+    "workplace_power",
     "crime",
-    "disaster",
-    "explicit",
     "gambling",
-    "nightlife"
+    "workplace",
+    "nightlife",
+    "disaster"
    ],
    "default_person": "second",
    "era": "1990年代初泡沫破裂前夕东京湾暴风雨夜黑市赌场洗钱风暴时期",
@@ -3835,11 +4360,12 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
     "bodily_harm",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",
@@ -3857,14 +4383,16 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
-    "violence",
-    "bodily_harm",
-    "crime",
-    "disaster",
     "explicit",
-    "death"
+    "violence",
+    "coercion_theme",
+    "bodily_harm",
+    "substance",
+    "death",
+    "workplace_power",
+    "crime",
+    "workplace",
+    "disaster"
    ],
    "default_person": "second",
    "era": "1980年代末香港油麻地老街八号风球暴雨封街江湖动荡时期",
@@ -3898,11 +4426,14 @@
   {
    "content_tags": [
     "intimate",
-    "workplace",
-    "workplace_power",
     "violence",
+    "coercion_theme",
     "bodily_harm",
+    "substance",
+    "death",
+    "workplace_power",
     "crime",
+    "workplace",
     "disaster"
    ],
    "default_person": "second",

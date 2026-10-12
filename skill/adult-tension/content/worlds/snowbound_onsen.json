@@ -1285,12 +1285,13 @@
  "clock_style": "hm",
  "content_tags": [
   "explicit",
-  "coercion_theme",
   "violence",
-  "substance",
+  "coercion_theme",
   "humiliation",
+  "bodily_harm",
+  "substance",
   "infidelity",
-  "bodily_harm"
+  "crime"
  ],
  "custom": false,
  "customs": [

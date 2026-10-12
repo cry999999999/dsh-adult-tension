@@ -1100,7 +1100,17 @@
   "minute": 300
  },
  "clock_style": "hm",
- "content_tags": [],
+ "content_tags": [
+  "intimate",
+  "violence",
+  "coercion_theme",
+  "humiliation",
+  "substance",
+  "workplace_power",
+  "crime",
+  "workplace",
+  "disaster"
+ ],
  "custom": true,
  "customs": [
   "豪门千金归邸就寝之时全宅安保必须撤至警戒线外之私密规矩。",

@@ -1104,7 +1104,14 @@
   "minute": 1080
  },
  "clock_style": "hm",
- "content_tags": [],
+ "content_tags": [
+  "intimate",
+  "violence",
+  "humiliation",
+  "bodily_harm",
+  "death",
+  "disaster"
+ ],
  "custom": false,
  "customs": [
   "极北断崖要塞在遭遇二级以上雪崩警报时须在三十秒内落下重型铸铁防暴闸门以保全主堡平民安全。",

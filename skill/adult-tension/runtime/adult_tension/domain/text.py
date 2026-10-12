@@ -19,6 +19,8 @@ def pronoun(gender):
 def gendered_pronoun_positions(text):
     """Indexes of hard-coded 他/她 that refer to a person."""
     hits = []
+    if "她" not in text and "他" not in text:
+        return hits
     for index, char in enumerate(text):
         if char == "她":
             hits.append(index)

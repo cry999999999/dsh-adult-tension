@@ -50,8 +50,16 @@ def decode_bytes(raw, source="input"):
 
 def loads_strict(text, source="input"):
     """Parse JSON text; raise INVALID_INPUT on syntax errors or duplicate keys."""
+    found_dups = []
+
+    def hook(pairs):
+        obj = _pairs_hook(pairs)
+        if obj.dup_keys:
+            found_dups.append(obj)
+        return obj
+
     try:
-        obj = json.loads(text, object_pairs_hook=_pairs_hook, parse_constant=_reject_constant)
+        obj = json.loads(text, object_pairs_hook=hook, parse_constant=_reject_constant)
     except ValueError as exc:
         line = getattr(exc, "lineno", None)
         col = getattr(exc, "colno", None)
@@ -61,7 +69,9 @@ def loads_strict(text, source="input"):
             "%s 不是合法的 JSON%s" % (source, where),
             [detail("$", str(exc), "检查引号、逗号与括号；字符串里的换行写成 \\n")],
         )
-    problems = duplicate_key_details(obj)
+    # Walking the whole tree for the paths is needed only when a duplicate
+    # was seen while parsing.
+    problems = duplicate_key_details(obj) if found_dups else []
     if problems:
         raise AppError(INVALID_INPUT, "JSON 中有重复键", problems)
     return obj

@@ -355,13 +355,17 @@ SHOWN_AS_WRITTEN = {
 }
 
 
+FIELD_END_RE = re.compile(r"[.\[]")
+MINOR_TERMS_RE = re.compile("|".join(map(re.escape, MINOR_TERMS)))
+
+
 def _field_after(path, match):
     rest = path[match.end():].lstrip(".")
-    return re.split(r"[.\[]", rest, 1)[0]
+    return FIELD_END_RE.split(rest, 1)[0]
 
 
 def _shown_as_written(path):
-    match = re.match(r"\$\.(\w+)\[(\d+)\]", path)
+    match = ITEM_PATH_RE.match(path)
     return bool(match) and _field_after(path, match) in SHOWN_AS_WRITTEN.get(match.group(1), ())
 NEAR_DUP_THRESHOLD = 0.85
 NEAR_DUP_MIN_LEN = 16
@@ -372,7 +376,8 @@ def _problem(path, reason, hint=None):
 
 
 def walk_texts(pack):
-    """Yield (path, text) for every string in the pack except ids and enums."""
+    """(path, text) for every string in the pack except ids and enums, in
+    document order."""
     skip_keys = {
         "id",
         "schema_version",
@@ -412,24 +417,29 @@ def walk_texts(pack):
         "identity_ids",
     }
 
+    found = []
+
+    # Plain recursion into one list: nested generators made this the slowest
+    # part of validating a pack.
     def rec(node, path, key):
         if isinstance(node, str):
             if key not in skip_keys:
-                yield path, node
+                found.append((path, node))
         elif isinstance(node, dict):
             for k, v in node.items():
                 if k in skip_keys and not (k == "exits" and isinstance(v, list) and v and isinstance(v[0], dict)):
                     continue
                 if k == "pressure_modifiers":
                     for pk, pv in v.items():
-                        yield "%s.%s.%s" % (path, k, pk), pv
+                        found.append(("%s.%s.%s" % (path, k, pk), pv))
                     continue
-                yield from rec(v, "%s.%s" % (path, k), k)
+                rec(v, "%s.%s" % (path, k), k)
         elif isinstance(node, list):
             for i, v in enumerate(node):
-                yield from rec(v, "%s[%d]" % (path, i), key)
+                rec(v, "%s[%d]" % (path, i), key)
 
-    yield from rec(pack, "$", None)
+    rec(pack, "$", None)
+    return found
 
 
 def _ids(items):
@@ -448,6 +458,8 @@ class _Checker:
         self.hooks = {h["id"]: h for h in pack["hooks"]}
         self.pressures = {p["id"]: p for p in pack["pressures"]}
         self.engines = {e["id"]: e for e in pack["tension_engines"]}
+        self._texts = None
+        self._scope_cache = {}
 
     def add(self, path, reason, hint=None):
         self.problems.append(_problem(path, reason, hint))
@@ -734,32 +746,21 @@ class _Checker:
 
     # -- text ------------------------------------------------------------------
 
+    def texts(self):
+        if self._texts is None:
+            self._texts = walk_texts(self.pack)
+        return self._texts
+
     def text_checks(self):
         p = self.pack
         template_gender = {t["id"]: t["gender"] for t in p["character_templates"]}
         seen_sentences = {}
-        for path, text in walk_texts(p):
+        for path, text in self.texts():
             stripped = text.strip()
             if stripped in PLACEHOLDER_JUNK or stripped.lower() == path.rsplit(".", 1)[-1].split("[")[0].lower():
                 self.add(path, "占位式内容：%r" % text, "写成真正可以进入回合的内容")
-            for brace in stray_braces(text):
-                self.add(path, "无法识别的占位：%s" % brace, "可用：{npc.name}、{npc.ta}、{槽位.name}、{player.name} 等")
-            allowed = self._scopes_for(path)
-            for scope, attr in placeholders(text):
-                if scope is None:
-                    if not (".nickname_patterns" in path or ".title_patterns" in path):
-                        self.add(path, "{%s} 只能用在称呼模板里" % attr, None)
-                    continue
-                if scope not in allowed:
-                    if path.startswith("$.twists[") and scope in self.templates:
-                        hint = "把 %s 写进这个转折的 requires，它只在这个人物在局时出现" % scope
-                    elif _shown_as_written(path):
-                        hint = "这个字段原样显示，不做占位替换；直接写，不用代词"
-                    else:
-                        hint = "这里可用的作用域：%s" % ("、".join(sorted(allowed)) or "无")
-                    self.add(path, "占位 {%s.%s} 在这里无法解析" % (scope, attr), hint)
-                elif attr not in ("name", "ta", "family", "given", "call", "role", "title", "称呼"):
-                    self.add(path, "未知占位属性：%s" % attr, "可用：name、ta、family、given、call、role、title")
+            if "{" in text:
+                self._placeholder_checks(path, text)
             if self._pronoun_checked(path, template_gender) and gendered_pronoun_positions(text):
                 self.add(path, "可变性别的文本里写死了“他/她”：%s" % text[:40], "用 {npc.ta} 或 {槽位.ta} 代替，或直接写名字")
             if path.endswith(".pattern"):
@@ -771,13 +772,39 @@ class _Checker:
                         self.add(path, "与 %s 重复整句：%s" % (seen_sentences[sentence], sentence[:30]), "同一包内不写重复的句子")
                     seen_sentences.setdefault(sentence, path)
 
+    def _placeholder_checks(self, path, text):
+        """Only texts with a brace can hold a placeholder or a stray one."""
+        for brace in stray_braces(text):
+            self.add(path, "无法识别的占位：%s" % brace, "可用：{npc.name}、{npc.ta}、{槽位.name}、{player.name} 等")
+        allowed = self._scopes_for(path)
+        for scope, attr in placeholders(text):
+            if scope is None:
+                if not (".nickname_patterns" in path or ".title_patterns" in path):
+                    self.add(path, "{%s} 只能用在称呼模板里" % attr, None)
+                continue
+            if scope not in allowed:
+                if path.startswith("$.twists[") and scope in self.templates:
+                    hint = "把 %s 写进这个转折的 requires，它只在这个人物在局时出现" % scope
+                elif _shown_as_written(path):
+                    hint = "这个字段原样显示，不做占位替换；直接写，不用代词"
+                else:
+                    hint = "这里可用的作用域：%s" % ("、".join(sorted(allowed)) or "无")
+                self.add(path, "占位 {%s.%s} 在这里无法解析" % (scope, attr), hint)
+            elif attr not in ("name", "ta", "family", "given", "call", "role", "title", "称呼"):
+                self.add(path, "未知占位属性：%s" % attr, "可用：name、ta、family、given、call、role、title")
+
     def _scopes_for(self, path):
-        p = self.pack
-        match = re.match(r"\$\.(\w+)\[(\d+)\]", path)
+        match = ITEM_PATH_RE.match(path)
         if not match:
             return set()
-        group, index = match.group(1), int(match.group(2))
-        if _field_after(path, match) in SHOWN_AS_WRITTEN.get(group, ()):
+        key = (match.group(1), int(match.group(2)), _field_after(path, match))
+        if key not in self._scope_cache:
+            self._scope_cache[key] = self._scopes(*key)
+        return self._scope_cache[key]
+
+    def _scopes(self, group, index, field):
+        p = self.pack
+        if field in SHOWN_AS_WRITTEN.get(group, ()):
             return set()
         item = p[group][index]
         if group in ("character_templates", "background_cast"):
@@ -800,7 +827,7 @@ class _Checker:
         return set()
 
     def _pronoun_checked(self, path, template_gender):
-        match = re.match(r"\$\.(\w+)\[(\d+)\]", path)
+        match = ITEM_PATH_RE.match(path)
         if match and match.group(1) in ("character_templates", "background_cast"):
             item = self.pack[match.group(1)][int(match.group(2))]
             return item["gender"] == "any"
@@ -808,17 +835,20 @@ class _Checker:
 
     def forbidden_terms(self):
         terms = self.pack["forbidden_terms"]
-        for path, text in walk_texts(self.pack):
-            for term in terms:
-                if term in text:
-                    self.add(path, "出现本世界的禁用词“%s”" % term, "这个词不属于本世界的时代与地域")
-            if any(term in text for term in MINOR_TERMS):
+        # One search per text finds the few texts worth a term-by-term look.
+        any_term = re.compile("|".join(map(re.escape, terms))) if terms else None
+        for path, text in self.texts():
+            if any_term is not None and any_term.search(text):
+                for term in terms:
+                    if term in text:
+                        self.add(path, "出现本世界的禁用词“%s”" % term, "这个词不属于本世界的时代与地域")
+            if MINOR_TERMS_RE.search(text):
                 context = text + self._adult_context_for(path)
                 if not any(marker in context for marker in ADULT_MARKERS):
                     self.add(path, "出现校园、师生、学徒类意象却没有明示成年语境：%s" % text[:30], "写明成年身份（如成人夜校、研究生、年满十八的正式学徒）")
 
     def _adult_context_for(self, path):
-        match = re.match(r"\$\.(\w+)\[(\d+)\]", path)
+        match = ITEM_PATH_RE.match(path)
         if match and match.group(1) in ("character_templates", "background_cast"):
             return self.pack[match.group(1)][int(match.group(2))].get("adult_context", "")
         return ""

@@ -176,7 +176,7 @@
    ]
   },
   {
-   "chemistry": "后辈两米加厚队旗的决绝阻隔与主将沉着自救的侧颜交织，空气中充斥着绝处逢生的队友死守默契。",
+   "chemistry": "学妹两米加厚队旗的决绝阻隔与主将沉着自救的侧颜交织，空气中充斥着绝处逢生的队友死守默契。",
    "id": "combo_captain_and_assistant_shield",
    "identity_ids": [],
    "player_positions": [
@@ -2249,7 +2249,7 @@
   },
   {
    "id": "rule_adult_athlete_legal_code",
-   "text": "参赛主将与裁判组全员皆为完全民事责任人，扰乱赛场秩序或损坏公用特种设备须依法严厉追责。"
+   "text": "参赛主将与裁判组全员皆为年满二十周岁完全民事责任人，扰乱赛场秩序或损坏公用特种设备须依法严厉追责。"
   }
  ],
  "schema_version": 1,
@@ -2262,7 +2262,7 @@
   "stranger": "初登讲台",
   "testing": "执夹撬簧"
  },
- "status": "draft",
+ "status": "released",
  "style_hint": "百年武道馆的木香与太鼓声里的屏息。写元气女主将婴儿肥两颊的红晕、滑落的道服下雪白香肩与真空胴甲里轻颤的乳铃、憋着不敢喘的气，动作落在竹剑销钉挑锁止簧片上。",
  "tension_engines": [
   {

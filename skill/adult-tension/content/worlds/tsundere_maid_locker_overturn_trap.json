@@ -49,10 +49,10 @@
    "role": "地下商街应急值班电工"
   },
   {
-   "adult_context": "现年满二十五岁，外语学院毕业后勤演出助理，具备完全民事行为能力。",
+   "adult_context": "现年满三十五岁，外语学院毕业后勤演出助理，具备完全民事行为能力。",
    "age_range": [
-    25,
-    25
+    35,
+    35
    ],
    "function": "witness",
    "gender": "female",
@@ -2291,7 +2291,7 @@
   "stranger": "初入更衣",
   "testing": "扳手撬柜"
  },
- "status": "draft",
+ "status": "released",
  "style_hint": "散场后的二次元咖啡馆：彩灯还没关，地下通道只剩应急灯。写傲娇女仆蕾丝围裙下的身段、婴儿肥上没卸净的腮红与喘息，动作落在棘轮扳手撬柜角上。",
  "tension_engines": [
   {

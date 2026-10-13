@@ -354,24 +354,26 @@ def skip_template(state, spec, preview):
 
 
 def _template(state, body):
-    out = {
+    """A record (DATA_CONTRACTS 6.3) holding one turn: the model copies the
+    turn once for each turn it has kept back."""
+    turn = dict(body)
+    turn["content_tags"] = []
+    turn["summary"] = "<第三方视角一两句>"
+    turn["open_action"] = "<停在哪个未决动作>"
+    turn["quotes"] = ["<本回合值得记住的原话，原样一句，≤80 字；没有就删掉这条>"]
+    # what the engine asks of the first turn of the next record (the requests
+    # a time skip raises come with the context the skip returns)
+    if state["requests"].get("chapter_summary"):
+        turn["chapter_summary"] = "<上一章到上一回合为止，第三方视角，≤300 字>"
+    if state["requests"].get("prologue"):
+        turn["prologue"] = "<完整上下文 prologue_merge 合并成的前情，≤300 字>"
+    return {
         "session_id": state["session_id"],
         "request_id": "<上一次返回的 next_request_id>",
         "expected_revision": "<上一次返回的 revision>",
         "encoding_check": "汉字",
+        "turns": [turn],
     }
-    out.update(body)
-    out["content_tags"] = []
-    out["summary"] = "<第三方视角一两句>"
-    out["open_action"] = "<停在哪个未决动作>"
-    out["quotes"] = ["<本回合值得记住的原话，原样一句，≤80 字；没有就删掉这条>"]
-    # what the engine asks of this very commit (the requests a time skip
-    # raises come with the context the skip returns)
-    if state["requests"].get("chapter_summary"):
-        out["chapter_summary"] = "<上一章到上一回合为止，第三方视角，≤300 字>"
-    if state["requests"].get("prologue"):
-        out["prologue"] = "<完整上下文 prologue_merge 合并成的前情，≤300 字>"
-    return out
 
 
 # -- full-context budget -------------------------------------------------------

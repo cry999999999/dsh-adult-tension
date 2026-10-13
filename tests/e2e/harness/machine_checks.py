@@ -37,6 +37,7 @@ WRITE_COMMANDS = ("new-game", "commit-turn", "undo-turn", "save-slot", "load-slo
 # cannot be had it owns up to (RUNTIME_PROTOCOL 4.3).
 PLAYER_DECIDES_CODES = ("SAFETY_BLOCK", "SLOT_CONFLICT", "NO_MATCH")
 EXTRA_CALLS_AFTER_REJECTION = 2
+RECORD_ONLY_KINDS = ("meta", "load", "ask", "undo", "resume")
 REPEAT_WINDOW = 10
 MIN_SENTENCE = 10
 FOOTER_RE = re.compile(r"【时间】(?P<time>[^｜\n]+)｜【地点】(?P<place>[^｜\n]+)｜回合：(?P<turn>\d+)(?:｜种子：(?P<seed>\d+))?")
@@ -169,8 +170,26 @@ def finding(check, turn, message):
     return {"check": check, "turn": turn, "message": message}
 
 
-def narrative_calls(turn):
+def recording_calls(turn):
     return [c for c in turn.get("runtime_calls") or [] if R.command_of(c) in NARRATIVE_COMMANDS and R.ok_data(c) is not None]
+
+
+def narrative_calls(turn):
+    """The calls the turn's story was written from. A commit-turn before a meta
+    command or a load only records the turns kept back (DATA_CONTRACTS 6): that
+    reply is no story."""
+    calls = recording_calls(turn)
+    if (turn.get("expect") or {}).get("kind") in RECORD_ONLY_KINDS:
+        calls = [c for c in calls if R.command_of(c) != "commit-turn"]
+    return calls
+
+
+def is_narrative(turn):
+    """A turn the player reads as story: one that recorded or opened, or an
+    ordinary turn written ahead of its record (DATA_CONTRACTS 6: prose first)."""
+    if narrative_calls(turn):
+        return True
+    return (turn.get("expect") or {}).get("kind") == "turn" and not turn.get("runtime_calls")
 
 
 def prose_lines(text):
@@ -211,7 +230,10 @@ def check_structure(record):
             group["turns"].append(index)
         budget = expect.get("calls_max")
         if budget is not None:
-            allowed = budget + (EXTRA_CALLS_AFTER_REJECTION if rejections else 0)
+            # a record of the turns kept back, made before a meta command,
+            # fast-forward or load (DATA_CONTRACTS 6), is the record's call
+            flush = 1 if expect.get("kind") != "turn" and len(commands) > 1 and commands[0] == "commit-turn" else 0
+            allowed = budget + flush + (EXTRA_CALLS_AFTER_REJECTION if rejections else 0)
             if len(calls) > allowed:
                 out.append(finding("structure", index, "工具调用 %d 次，超过这一步的预算 %d（ACCEPTANCE §5）" % (len(calls), allowed)))
         if rejections:
@@ -243,7 +265,7 @@ def check_leakage(record):
     out = []
     for turn in record["turns"]:
         index = turn["index"]
-        narrative = bool(narrative_calls(turn))
+        narrative = is_narrative(turn)
         lines = prose_lines(turn.get("text"))
         text = "\n".join(lines)
         for name in VOCAB["codes"]:
@@ -373,6 +395,10 @@ def check_footer_and_time(record):
         index = turn["index"]
         calls = narrative_calls(turn)
         if not calls:
+            # written ahead of its record: the footer is the model's own reckoning
+            text = (turn.get("text") or "").strip()
+            if is_narrative(turn) and text and not FOOTER_RE.search(text):
+                out.append(finding("footer", index, "叙事回合没有页脚"))
             continue
         last = calls[-1]
         data = R.ok_data(last)
@@ -483,7 +509,7 @@ def check_ventriloquism(record):
     others = objects = None
     known = None
     for turn in record["turns"]:
-        if not narrative_calls(turn):
+        if not is_narrative(turn):
             continue
         source = _bigrams(turn.get("input") or "")
         if known is None:
@@ -547,9 +573,17 @@ def check_unknown_people(record):
     pools = world["name_pools"]
     givens = pools["given_female"] + pools["given_male"] + pools["given_neutral"]
     known = _known_names(record)
+    # turns after a conversation's last record are still kept back (DATA_CONTRACTS 6):
+    # the people they name are introduced when those turns are recorded
+    recorded = {}
+    for turn in record["turns"]:
+        if recording_calls(turn):
+            recorded[turn.get("conversation")] = turn["index"]
     out = []
     seen = set()
     for turn in record["turns"]:
+        if turn["index"] > recorded.get(turn.get("conversation"), -1):
+            continue
         text = "\n".join(prose_lines(turn.get("text")))
         for family in pools["family"]:
             for given in givens:
@@ -592,12 +626,12 @@ def check_repetition(record):
     out = []
     history = []  # (turn index, sentence, bigrams)
     scene_lines = {}
-    game = None
+    game = scene = None
     for turn in record["turns"]:
         index = turn["index"]
-        calls = narrative_calls(turn)
-        if not calls:
+        if not is_narrative(turn):
             continue
+        calls = narrative_calls(turn)
         lines = prose_lines(turn.get("text"))
         for sentence in set(_sentences(lines)):
             grams = _bigrams(sentence)
@@ -611,10 +645,12 @@ def check_repetition(record):
             if len(earlier_turns) >= 2:
                 out.append(finding("repetition", index, "10 个回合内第 %d 次出现（第 %s 轮已有）：%s" % (len(earlier_turns) + 1, "、".join(str(t) for t in sorted(earlier_turns)), sentence[:30])))
             history.append((index, sentence, grams))
-        data = R.ok_data(calls[-1]) or {}
-        context = data.get("context") or {}
-        game = context.get("session_id") or data.get("session_id") or game
-        seen = scene_lines.setdefault((game, (context.get("scene") or {}).get("id")), {})
+        if calls:  # a turn written ahead of its record stays in the scene last recorded
+            data = R.ok_data(calls[-1]) or {}
+            context = data.get("context") or {}
+            game = context.get("session_id") or data.get("session_id") or game
+            scene = (context.get("scene") or {}).get("id")
+        seen = scene_lines.setdefault((game, scene), {})
         for line in lines:
             for match in QUOTE_RE.finditer(line):
                 quote = match.group(1)

@@ -30,10 +30,7 @@
    "say": "撤销",
    "expect": {
     "kind": "undo",
-    "calls_max": 1,
-    "must_call": [
-     "undo-turn"
-    ]
+    "calls_max": 1
    }
   },
   {

@@ -507,71 +507,120 @@ def commit_turn(ctx, payload):
 
 
 def _commit_turn(ctx, payload):
-    from ..domain import turn
-
-    payload = validate(specs.COMMIT_TURN, payload)
-    commit = {key: payload[key] for key in DOMAIN_KEYS}
+    batch = isinstance(payload, dict) and "turns" in payload
+    payload = validate(specs.COMMIT_BATCH if batch else specs.COMMIT_TURN, payload)
+    items = payload["turns"] if batch else [payload]
+    commits = [{key: item[key] for key in DOMAIN_KEYS} for item in items]
+    late = ["$.turns[%d].replaces_turn" % i for i, c in enumerate(commits) if i and c["replaces_turn"] is not None]
+    if late:
+        problems = [detail(path, "只有第一项可以改写上一回合", "去掉它；还没记录的回合直接改写正文", INVALID_INPUT) for path in late]
+        raise AppError(INVALID_INPUT, problems[0]["reason"], problems)
 
     def handler(conn, session, now):
         sid = session["session_id"]
         state = session["state"]
-        snapshot = None
-        replacing = commit["replaces_turn"]
-        if replacing is not None:
-            snapshot = repo.undo_point(conn, sid, replacing)
-            if replacing == state["turn"] and snapshot is not None:
-                # Undo the replaced turn in this same transaction (RUNTIME_PROTOCOL 8):
-                # its facts first, so the domain sees the facts from before it.
-                repo.revert_turn_facts(conn, sid, replacing)
-                state["facts"] = repo.FactSource(conn, sid)
-        new_state, result = turn.commit_turn(state, session["content"], commit, snapshot)
         failed_before = repo.take_commit_failure(conn, sid) is not None
-        replaced = result["replaced_turn"]
-        if replaced is not None:
-            repo.mark_turn_undone(conn, sid, replaced)
-            repo.delete_archive_turn(conn, sid, replaced)
-            repo.put_undo_point(conn, sid, new_state["turn"], result["undo_base"])
-        else:
-            repo.save_undo_point_from_session(conn, sid, new_state["turn"])
-        repo.write_fact_changes(conn, sid, new_state["turn"], new_state["facts"])
-        repo.trim_undo_points(conn, sid, turn.UNDO_KEEP)
-        unsaved = session["turns_since_save"] + 1
-        repo.update_session(conn, new_state, now, turns_since_save=unsaved)
-        for item in result["archive"]:
-            repo.add_archive(conn, sid, item["kind"], new_state["turn"], item["payload"], now)
-        repo.insert_turn_log(
-            conn,
-            new_state["session_id"],
-            new_state["turn"],
-            new_state["revision"],
-            "commit",
-            commit["action_mode"],
-            commit["player_input"],
-            {"operations": commit["operations"], "applied": result["applied"], "resolved_events": result["resolved_events"], "content_tags": commit["content_tags"]},
-            commit["summary"],
-            commit["open_action"],
-            now,
-        )
+        unsaved = session["turns_since_save"]
+        steps = []
+        for index, commit in enumerate(commits):
+            unsaved += 1
+            try:
+                state, result = _apply_turn(conn, session, state, commit, unsaved, now, index > 0)
+            except AppError as err:
+                if batch:
+                    _in_batch(err, index)
+                raise
+            steps.append((state["turn"], result))
         if fault("kill_in_commit"):
             os._exit(137)  # test hook: the process dies inside the write transaction
-        depth = choose_depth(new_state, result, failed_before)
-        project = CX.full if depth == "full" else CX.brief
-        response = {
-            "revision": new_state["revision"],
-            "turn": new_state["turn"],
-            "applied": result["applied"],
-            "resolved_events": result["resolved_events"],
-            "simulation": result["simulation"],
-            "clock": result["clock"],
-            "default_time_advance": result["default_time_advance"],
-            "context": project(new_state, session["content"], {"current_slot": session["current_slot"], "turns_since_save": unsaved}),
+        slot = {"current_slot": session["current_slot"], "turns_since_save": unsaved}
+        last = steps[-1][1]
+        if not batch:
+            depth = choose_depth(state, last, failed_before)
+            project = CX.full if depth == "full" else CX.brief
+            response = {"revision": state["revision"], "turn": state["turn"]}
+            response.update(_turn_result(last))
+            response["clock"] = last["clock"]
+            response["context"] = project(state, session["content"], slot)
+            return response
+        # Several turns recorded at once: the model wrote them from memory, so
+        # it gets the full context back.
+        return {
+            "revision": state["revision"],
+            "turn": state["turn"],
+            "turns": [dict(_turn_result(result), turn=number) for number, result in steps],
+            "clock": last["clock"],
+            "context": CX.full(state, session["content"], slot),
         }
-        for key in ("chapter", "twist", "replaced_turn"):
-            if result[key] is not None:
-                response[key] = result[key]
-        return response
 
     return session_write(ctx, "commit-turn", payload, handler)
+
+
+def _apply_turn(conn, session, state, commit, unsaved, now, defer_requests=False):
+    """One turn inside the commit transaction: domain commit, undo point,
+    facts, session row, archive and turn log."""
+    from ..domain import turn
+
+    sid = session["session_id"]
+    snapshot = None
+    replacing = commit["replaces_turn"]
+    if replacing is not None:
+        snapshot = repo.undo_point(conn, sid, replacing)
+        if replacing == state["turn"] and snapshot is not None:
+            # Undo the replaced turn in this same transaction (RUNTIME_PROTOCOL 8):
+            # its facts first, so the domain sees the facts from before it.
+            repo.revert_turn_facts(conn, sid, replacing)
+            state["facts"] = repo.FactSource(conn, sid)
+    new_state, result = turn.commit_turn(state, session["content"], commit, snapshot, defer_requests)
+    replaced = result["replaced_turn"]
+    if replaced is not None:
+        repo.mark_turn_undone(conn, sid, replaced)
+        repo.delete_archive_turn(conn, sid, replaced)
+        repo.put_undo_point(conn, sid, new_state["turn"], result["undo_base"])
+    else:
+        repo.save_undo_point_from_session(conn, sid, new_state["turn"])
+    repo.write_fact_changes(conn, sid, new_state["turn"], new_state["facts"])
+    repo.trim_undo_points(conn, sid, turn.UNDO_KEEP)
+    repo.update_session(conn, new_state, now, turns_since_save=unsaved)
+    for item in result["archive"]:
+        repo.add_archive(conn, sid, item["kind"], new_state["turn"], item["payload"], now)
+    repo.insert_turn_log(
+        conn,
+        new_state["session_id"],
+        new_state["turn"],
+        new_state["revision"],
+        "commit",
+        commit["action_mode"],
+        commit["player_input"],
+        {"operations": commit["operations"], "applied": result["applied"], "resolved_events": result["resolved_events"], "content_tags": commit["content_tags"]},
+        commit["summary"],
+        commit["open_action"],
+        now,
+    )
+    # The next turn of a batch reads the facts as just written.
+    new_state["facts"] = repo.FactSource(conn, sid)
+    return new_state, result
+
+
+def _turn_result(result):
+    out = {
+        "applied": result["applied"],
+        "resolved_events": result["resolved_events"],
+        "simulation": result["simulation"],
+        "default_time_advance": result["default_time_advance"],
+    }
+    for key in ("chapter", "twist", "replaced_turn"):
+        if result[key] is not None:
+            out[key] = result[key]
+    return out
+
+
+def _in_batch(err, index):
+    """Point a rejected batch's problems at the item that caused them."""
+    for item in err.details:
+        if isinstance(item, dict) and str(item.get("path", "")).startswith("$"):
+            item["path"] = "$.turns[%d]%s" % (index, item["path"][1:])
+    err.message = "第 %d 项：%s" % (index + 1, err.message)
 
 
 # ---------------------------------------------------------------------------

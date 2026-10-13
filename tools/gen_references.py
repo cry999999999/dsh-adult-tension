@@ -75,7 +75,7 @@ def render_commands():
     lines.append("- 输出是一个信封 `{\"ok\", \"data\", \"error\"}`，以 UTF-8 字节写到 stdout。成功与失败都附带 `next_request_id`（成功在 `data` 里，失败在 `error` 里），下一次写操作直接用它。\n")
     lines.append("- 全局参数：`--json`（输出 JSON，始终如此）、`--pretty`（缩进输出）、`--debug`、`--input-file PATH`、`--data-dir PATH`。\n")
     lines.append("- 写操作都带 `request_id`；会话内的写操作还带 `session_id` 与 `expected_revision`。同一 `request_id` + 同一输入重放时返回原响应并标记 `replayed: true`。\n")
-    lines.append("- 开局、读档、导入（`new-game`、`load-slot`、`import-save`）与带 `\"depth\": \"full\"` 的 `get-context` 另外返回 `commit_template`：会话号已填好的 `commit-turn` 输入，带在场的人和最常用的操作；尖括号是要写的内容，`a|b` 表示选一个，用不上的操作删掉。带 `preview_time` 的 `get-context` 另外返回 `skip_template`：这次快进的 `commit-turn` 输入，`advance_time` 与每条必需的 `offscreen_beat` 已排好。\n")
+    lines.append("- 开局、读档、导入（`new-game`、`load-slot`、`import-save`）与带 `\"depth\": \"full\"` 的 `get-context` 另外返回 `commit_template`：会话号已填好的一次记录，`turns` 里是一个回合的样子（在场的人和最常用的操作），每个攒下的回合照它写一项；尖括号是要写的内容，`a|b` 表示选一个，用不上的操作删掉。带 `preview_time` 的 `get-context` 另外返回 `skip_template`：快进这一回合的记录，`advance_time` 与每条必需的 `offscreen_beat` 已排好（攒下的回合要先记录，再预览）。\n")
     lines.append("- 开发开关（环境变量，由测试环境设置，玩家不需要）：`ADULT_TENSION_HOME` 指定数据目录；`ADULT_TENSION_INCLUDE_DRAFTS=1` 让未发布的世界参与开局与世界列表；`ADULT_TENSION_TRACE=<文件>` 把每次调用（参数、输入、信封、耗时）追加到该文件，供端到端评测采集。\n\n")
     lines.append("## 命令一览\n\n| 命令 | 类别 | 输入 | 作用 | 专用参数 |\n|---|---|---|---|---|\n")
     input_names = {"none": "无", "optional": "可选", "required": "必填"}
@@ -92,6 +92,12 @@ def render_commands():
         if name == "commit-turn":
             lines.append("操作列表的字段见 `references/operations.md`。\n\n")
         lines.append(render_spec(getattr(specs, cmd.spec)))
+        if name == "commit-turn":
+            lines.append(
+                "\n**一次记录几个回合**：顶层只写 `session_id`、`request_id`、`expected_revision` 和 `turns`（1–%d 项，按发生的顺序；每项的字段与上表相同，不含这三个）。"
+                "引擎逐项应用，每项是一个回合，各自可以撤销；任何一项不合法，整批被拒、状态不变，错误路径以 `$.turns[i]` 开头。"
+                "只有第一项可以写 `replaces_turn`；`requests` 要求的章节摘要、前情只写在第一项，批内新出现的留到下一次记录。返回 `turns`（每项的 `turn`、`applied`、`resolved_events`、`simulation`）和完整上下文。\n" % specs.BATCH_MAX_TURNS
+            )
     lines.append("\n## 错误码\n\n| 码 | 含义 | 退出码 |\n|---|---|---|\n")
     for code, text in errors.ERROR_DESCRIPTIONS.items():
         lines.append("| `%s` | %s | %d |\n" % (code, _escape(text), errors.exit_code_for(code)))

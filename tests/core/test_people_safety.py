@@ -286,19 +286,27 @@ class LeverageAndIntimacyTest(unittest.TestCase):
         bg = next(c for c in self.state["characters"].values() if c["tier"] == "background")
         err = rejected(self.state, self.intimate(participants=["player", self.a, bg["id"]]))
         self.assertIn("不是重要角色", reasons(err))
-        self.state["characters"][self.a]["status"]["conditions"].append({"kind": "drunk", "text": "醉了", "until": None, "since_turn": 1})
-        err = rejected(self.state, self.intimate())
-        self.assertIn("醉了", reasons(err))
 
-    def test_participants_age_is_checked_by_the_intimacy_gate(self):
+    def test_lucidity_is_the_model_s_judgement_not_the_gate_s(self):
+        # DATA_CONTRACTS 6: the engine no longer checks drunk/asleep/unconscious
+        # participants; SKILL.md tells the model not to write such scenes.
+        self.state["characters"][self.a]["status"]["conditions"].append({"kind": "drunk", "text": "醉了", "until": None, "since_turn": 1})
+        state, _ = apply(self.state, self.intimate())
+        self.assertEqual(state["characters"][self.a]["status"]["conditions"][-1]["kind"], "drunk")
+
+    def test_a_minor_anywhere_in_the_state_blocks_every_commit(self):
+        # Adulthood is checked when people are created and by the state
+        # invariants on every commit, intimate or not.
         self.state["characters"][self.a]["age"] = 17
-        err = rejected(self.state, self.intimate())
-        self.assertEqual(err.code, "SAFETY_BLOCK")
-        self.assertIn("$.intimate_participants[1]", [d["path"] for d in err.details])
+        path = "$.state.characters.%s.age" % self.a
+        for attempt in (self.intimate(), commit("continue", [{"op": "npc_action", "npc_id": self.b, "action": "倒了杯茶"}])):
+            err = rejected(self.state, attempt)
+            self.assertEqual(err.code, "SAFETY_BLOCK")
+            self.assertIn(path, [d["path"] for d in err.details])
         del self.state["characters"][self.a]["age"]
         err = rejected(self.state, self.intimate())
-        self.assertIn("年龄不明确", reasons(err))
-        self.assertIn("$.intimate_participants[1]", [d["path"] for d in err.details])
+        self.assertIn("缺少明确年龄", reasons(err))
+        self.assertIn(path, [d["path"] for d in err.details])
 
     def test_absent_participant_and_player_consent_outside_player_modes(self):
         state, _ = apply(self.state, commit("continue", [{"op": "exit_scene", "character_id": self.b}]))
@@ -307,7 +315,7 @@ class LeverageAndIntimacyTest(unittest.TestCase):
         err = rejected(self.state, commit("continue", [{"op": "npc_action", "npc_id": self.a, "action": "靠近"}], tags=["intimate"], intimate_participants=["player", self.a]))
         self.assertIn("玩家角色的同意", reasons(err))
 
-    def test_leverage_blocks_intimacy_even_if_released_in_the_same_commit(self):
+    def test_leverage_is_recorded_but_no_longer_gates_intimacy(self):
         secret = next(f for f in self.state["facts"].values() if f["known_by"] == [self.a])
         lever = {"op": "leverage_set", "holder": self.b, "subject": self.a, "basis_fact_id": secret["id"], "origin": "偷看到了"}
         err = rejected(self.state, commit("continue", [lever]))
@@ -316,13 +324,14 @@ class LeverageAndIntimacyTest(unittest.TestCase):
         lever = {"op": "leverage_set", "holder": self.a, "subject": "player", "basis_text": "%s撞见了玩家收红包" % self.state["characters"][self.a]["name"], "origin": "撞见"}
         state, result = apply(self.state, commit("continue", [lever, {"op": "npc_action", "npc_id": self.a, "action": "意味深长地笑"}]))
         lid = result["applied"][0]["leverage_id"]
-        err = rejected(state, self.intimate())
-        self.assertIn("处境不是同意", " ".join(d["hint"] or "" for d in err.details) + reasons(err))
+        self.assertEqual(state["leverage"][lid]["state"], "active")
+        # DATA_CONTRACTS 6: "a situation is never consent" is the model's rule
+        # now; the record stays and the engine does not refuse the step.
+        after, _ = apply(state, self.intimate())
+        self.assertEqual(after["leverage"][lid]["state"], "active")
         release = {"op": "leverage_release", "leverage_id": lid, "reason": "当着面把账本烧了"}
-        err = rejected(state, self.intimate(ops=[release, {"op": "npc_response", "npc_id": self.a, "response": "genuine", "note": "靠了过来"}]))
-        self.assertIn("把柄", reasons(err))
         released, _ = apply(state, commit("continue", [release, {"op": "npc_action", "npc_id": self.a, "action": "烧掉账本"}]))
-        apply(released, self.intimate())
+        self.assertEqual(released["leverage"][lid]["state"], "released")
         del player_secret
 
     def test_player_as_holder_needs_the_players_own_command(self):

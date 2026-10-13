@@ -103,6 +103,59 @@ class WritePathTest(unittest.TestCase):
             open_game(self.ctx, lambda: rid, mode="daily", seed=5)
         self.assertEqual(caught.exception.code, "IDEMPOTENCY_CONFLICT")
 
+    def batch(self, request_id, revision, items):
+        return {"session_id": self.sid, "request_id": request_id, "expected_revision": revision, "turns": items}
+
+    def item(self, npc=None, text="看了一眼窗外", **extra):
+        body = continue_commit(self.state, npc or self.npc, "unused", 1, text)
+        for key in ("session_id", "request_id", "expected_revision"):
+            del body[key]
+        body.update(extra)
+        return body
+
+    def test_a_batch_records_several_turns_in_one_transaction(self):
+        revision, turn, _, _ = self.snapshot()
+        texts = ("看了一眼窗外", "给自己倒了杯水", "把椅子往里推了推")
+        out = service.commit_turn(self.ctx, self.batch(self.ids(), revision, [self.item(text=t) for t in texts]))
+        self.assertEqual(out["turn"], turn + 3)
+        self.assertEqual([t["turn"] for t in out["turns"]], [turn + 1, turn + 2, turn + 3])
+        self.assertTrue(all(t["applied"][0]["op"] == "npc_action" for t in out["turns"]))
+        self.assertEqual(out["context"]["depth"], "full")
+        info = session(self.ctx, self.sid)
+        self.assertEqual((info["revision"], info["turn"]), (out["revision"], turn + 3))
+        self.assertEqual(info["state"]["memory"]["turns"][-1]["summary"], "对方看了一眼窗外。")
+        self.assertEqual(info["turns_since_save"], 3)
+        # Each recorded turn keeps its own undo point.
+        undone = service.undo_turn(self.ctx, {"session_id": self.sid, "request_id": self.ids(), "expected_revision": out["revision"]})
+        self.assertEqual(undone["turn"], turn + 2)
+
+    def test_a_chapter_asked_for_inside_a_batch_is_owed_by_the_next_record(self):
+        revision, turn, _, _ = self.snapshot()
+        overnight = self.item()
+        overnight["operations"].insert(0, {"op": "advance_time", "until": "next_morning"})
+        out = service.commit_turn(self.ctx, self.batch(self.ids(), revision, [overnight, self.item(), self.item(text="伸了个懒腰")]))
+        self.assertEqual(out["turn"], turn + 3)
+        self.assertTrue(session(self.ctx, self.sid)["state"]["requests"]["chapter_summary"])
+        with self.assertRaises(AppError) as caught:
+            service.commit_turn(self.ctx, self.batch(self.ids(), out["revision"], [self.item()]))
+        self.assertEqual(caught.exception.details[0]["path"], "$.turns[0].chapter_summary")
+        paid = service.commit_turn(self.ctx, self.batch(self.ids(), out["revision"], [self.item(chapter_summary="一夜过去，几个人各自收拾。")]))
+        self.assertEqual(paid["turns"][0]["chapter"]["to_turn"], turn + 3)
+        self.assertFalse(session(self.ctx, self.sid)["state"]["requests"]["chapter_summary"])
+
+    def test_a_rejected_batch_item_changes_nothing_and_says_which(self):
+        before = self.snapshot()
+        with self.assertRaises(AppError) as caught:
+            service.commit_turn(self.ctx, self.batch(self.ids(), before[0], [self.item(), self.item(npc="nobody")]))
+        self.assertTrue(caught.exception.message.startswith("第 2 项"))
+        self.assertTrue(all(d["path"].startswith("$.turns[1].") for d in caught.exception.details))
+        with self.assertRaises(AppError) as caught:
+            service.commit_turn(self.ctx, self.batch(self.ids(), before[0], [self.item(), self.item(replaces_turn=before[1])]))
+        self.assertEqual([d["path"] for d in caught.exception.details], ["$.turns[1].replaces_turn"])
+        with self.assertRaises(AppError):
+            service.commit_turn(self.ctx, self.batch(self.ids(), before[0], [self.item()] * 13))
+        self.assertEqual(self.snapshot(), before)
+
     def test_idempotency_records_are_bounded(self):
         conn = self.ctx.db()
         conn.execute("BEGIN IMMEDIATE")

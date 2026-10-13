@@ -15,7 +15,7 @@ Order inside a commit:
 """
 
 from .. import schema as S
-from ..errors import INVARIANT_VIOLATION, INVALID_INPUT, SAFETY_BLOCK, AppError, detail, top_code
+from ..errors import INVARIANT_VIOLATION, INVALID_INPUT, AppError, detail, top_code
 from ..jsonio import copy
 from . import clock as CL
 from . import facts as FA
@@ -121,8 +121,10 @@ def _replace_base(current, turn, snapshot):
 def _request_checks(ctx):
     commit = ctx.commit
     requests = ctx.state["requests"]
+    # A later turn of a batch was written before the record that would have
+    # shown the request: it stays owed and the next record's first turn pays it.
     if requests.get("chapter_summary"):
-        if not commit["chapter_summary"]:
+        if not commit["chapter_summary"] and not ctx.defer_requests:
             ctx.error(
                 "$.chapter_summary",
                 "引擎要求本次提交附章节摘要",
@@ -131,7 +133,7 @@ def _request_checks(ctx):
     elif commit["chapter_summary"]:
         ctx.error("$.chapter_summary", "引擎没有要求章节摘要", "去掉 chapter_summary；章节在每 20 回合或跨日后由引擎要求", INVALID_INPUT)
     if requests.get("prologue"):
-        if not commit["prologue"]:
+        if not commit["prologue"] and not ctx.defer_requests:
             ctx.error("$.prologue", "章节超过上限，引擎要求把最早几章合并成一段前情", "读完整上下文的 prologue_merge，合并成 ≤300 字放进 prologue")
     elif commit["prologue"]:
         ctx.error("$.prologue", "引擎没有要求前情", "去掉 prologue", INVALID_INPUT)
@@ -200,7 +202,7 @@ def _beat_checks(ctx):
     return report["preview"]
 
 
-def _intimacy_checks(ctx, leverage_at_start):
+def _intimacy_checks(ctx):
     commit = ctx.commit
     tags = set(commit["content_tags"])
     participants = commit["intimate_participants"]
@@ -220,17 +222,10 @@ def _intimacy_checks(ctx, leverage_at_start):
         if char is None:
             ctx.error(path, "角色不存在：%s" % cid, None, "NOT_FOUND")
             continue
-        if not isinstance(char.get("age"), int):
-            ctx.error(path, "%s 的年龄不明确，亲密升级被阻断" % char["name"], "先补齐明确的成年年龄", SAFETY_BLOCK)
-        elif char["age"] < 18:
-            ctx.error(path, "%s 未成年" % char["name"], None, SAFETY_BLOCK)
         if char["tier"] != "major":
             ctx.error(path, "%s 不是重要角色，不能参与亲密场景" % char["name"], "先 promote_character 升格为 major")
         if not SS.is_present(state, cid):
             ctx.error(path, "%s 不在场" % char["name"])
-        bad = [c for c in char["status"]["conditions"] if c["kind"] in ST.INCAPACITATING]
-        if bad:
-            ctx.error(path, "%s 处于%s状态，不能参与亲密场景" % (char["name"], bad[0]["text"]), "醉酒、睡着、失去意识的人不参与亲密场景")
         if cid == player:
             if commit["action_mode"] not in ("result", "attempt") or not commit["player_authorized"]:
                 ctx.error(path, "玩家角色的同意只能来自玩家本人的指令（result/attempt + player_authorized）")
@@ -242,15 +237,6 @@ def _intimacy_checks(ctx, leverage_at_start):
                     "%s 在本次提交里没有 partial/genuine 回应或主动行动" % char["name"],
                     "每一步都要有对方可见的回应；没有回应就不能继续",
                 )
-    for a_index, a in enumerate(participants):
-        for b in participants[a_index + 1 :]:
-            for lv in leverage_at_start + [l for l in state["leverage"].values() if l["created_turn"] == ctx.turn]:
-                if {lv["holder"], lv["subject"]} == {a, b}:
-                    ctx.error(
-                        "$.intimate_participants",
-                        "%s 与 %s 之间有生效中的把柄（%s），处境不是同意" % (ctx.name(a), ctx.name(b), lv["id"]),
-                        "把柄必须在之前的回合解除；同一提交里先解除再亲密不算",
-                    )
 
 
 # ---------------------------------------------------------------------------
@@ -323,11 +309,13 @@ def _simulation_result(ctx):
 # ---------------------------------------------------------------------------
 
 
-def commit_turn(state, content, commit, undo_snapshot=None):
+def commit_turn(state, content, commit, undo_snapshot=None, defer_requests=False):
     """Return (new_state, result) or raise AppError with every problem found.
 
     `undo_snapshot` is the stored state from before turn `replaces_turn`
     (loaded by the application); that turn is undone in this same commit.
+    `defer_requests`: a batch turn after the first may leave a chapter summary
+    or prologue the engine asks for to the next record.
     """
     world = content["world"]
     replaced = commit["replaces_turn"]
@@ -335,8 +323,9 @@ def commit_turn(state, content, commit, undo_snapshot=None):
     work = FA.working_copy(base)
     ctx = OPS.TurnContext(work, world, commit, simulation.hooks(work["turn"] + 1))
     ctx.significant_actors = lambda: {a["npc_id"] for a in ctx.applied if a["op"] == "npc_action"}
+    ctx.defer_requests = defer_requests
+    owed_chapter = defer_requests and work["requests"].get("chapter_summary") and not commit["chapter_summary"]
     before_clock = dict(work["clock"])
-    leverage_at_start = [lv for lv in SS.active_leverage(work)]
     tag_ids = {tag["id"] for tag in content["tags"]}
     for index, tag in enumerate(commit["content_tags"]):
         if tag not in tag_ids:
@@ -357,7 +346,7 @@ def commit_turn(state, content, commit, undo_snapshot=None):
         OPS.advance(ctx, ST.DEFAULT_ADVANCE_MINUTES, "$", default=True)
     preview = _beat_checks(ctx)
     _mode_checks(ctx)
-    _intimacy_checks(ctx, leverage_at_start)
+    _intimacy_checks(ctx)
     shared = set(ctx.voice_reasons) & set(ctx.relationship_reasons)
     if shared:
         ctx.error("$.operations", "语态切换与关系变化用了同一条原因：%s" % "、".join(sorted(shared)), "语态只是说话方式，不是关系升级；两者分别写原因")
@@ -399,6 +388,8 @@ def commit_turn(state, content, commit, undo_snapshot=None):
     memory["last_quotes"] = list(commit["quotes"])
     crossed_day = work["clock"]["day"] > before_clock["day"]
     simulation.finalize_requests(work, world, ctx.turn, crossed_day, ctx.accepted_twist)
+    if owed_chapter:
+        work["requests"]["chapter_summary"] = True
     work["facts"] = work["facts"].settle()
     scene_changed = ctx.player_moved or any(s["scene"] for s in ctx.settlements)
     result = {

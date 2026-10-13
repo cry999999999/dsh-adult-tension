@@ -199,11 +199,11 @@ class EncodingAndInputTest(unittest.TestCase):
             self.assertLessEqual(len(json.dumps(template, ensure_ascii=False).encode("utf-8")), 1200)
             self.assertEqual(template["session_id"], opened["session_id"])
             present = [cid for cid in opened["context"]["scene"]["present"] if cid != "player"]
-            self.assertEqual(template["acts_on"], present[:1])
+            self.assertEqual(template["turns"][0]["acts_on"], present[:1])
             body = json.dumps(fill_template(template, opened), ensure_ascii=False).encode("utf-8")
             code, env, _raw = run_cli(["commit-turn", "--input-file", "-"], data_dir, stdin_bytes=body, env=ENV)
             self.assertEqual(code, 0, env)
-            self.assertEqual([a["op"] for a in env["data"]["applied"]][:5], ["npc_response", "npc_action", "add_fact", "relationship", "advance_time"])
+            self.assertEqual([a["op"] for a in env["data"]["turns"][0]["applied"]][:5], ["npc_response", "npc_action", "add_fact", "relationship", "advance_time"])
             self.assertEqual(env["data"]["context"]["last_quotes"], ["照模板写的一句"])  # quotes are plain strings (D83)
 
     def test_input_errors_have_json_paths(self):
@@ -355,20 +355,21 @@ class TimeCommandsTest(unittest.TestCase):
             preview, template = env["data"]["preview"], env["data"]["skip_template"]
             self.assertNotIn("requests", preview)  # they bind the commit after the skip, not this one
             self.assertNotIn("commit_template", env["data"])  # the ordinary turns keep theirs
-            self.assertEqual(template["operations"][0], {"op": "advance_time", "days": 1})
-            beats = [op for op in template["operations"] if op["op"] == "offscreen_beat"]
+            skip = template["turns"][0]
+            self.assertEqual(skip["operations"][0], {"op": "advance_time", "days": 1})
+            beats = [op for op in skip["operations"] if op["op"] == "offscreen_beat"]
             self.assertTrue(beats)
             self.assertEqual([b["npc_id"] for b in beats], [p["npc_id"] for p in preview["required_beats"]])
-            self.assertEqual((template["action_mode"], template["acts_on"]), ("continue", []))
-            self.assertNotIn("player_authorized", template)
-            self.assertNotIn("chapter_summary", template)
+            self.assertEqual((skip["action_mode"], skip["acts_on"]), ("continue", []))
+            self.assertNotIn("player_authorized", skip)
+            self.assertNotIn("chapter_summary", skip)
             body = json.dumps(fill_template(template, left), ensure_ascii=False).encode("utf-8")
             code, env, _raw = run_cli(["commit-turn", "--input-file", "-"], data_dir, stdin_bytes=body, env=ENV)
             self.assertEqual(code, 0, env)
-            self.assertEqual(env["data"]["resolved_events"], preview["resolved_events"])
+            self.assertEqual(env["data"]["turns"][0]["resolved_events"], preview["resolved_events"])
             self.assertTrue(env["data"]["context"]["requests"]["chapter_summary"])
             code, env, _raw = run_cli(["get-context"], data_dir, payload={"session_id": sid, "depth": "full"}, env=ENV)
-            self.assertIn("chapter_summary", env["data"]["commit_template"])  # asked of the next commit
+            self.assertIn("chapter_summary", env["data"]["commit_template"]["turns"][0])  # asked of the next record
 
 
 class CustomWorldTest(unittest.TestCase):

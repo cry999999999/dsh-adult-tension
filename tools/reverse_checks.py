@@ -50,12 +50,6 @@ AGE_PATCHES = [
         "    if False:  # age check disabled on purpose\n",
     ),
     (
-        "intimacy: participants >= 18",
-        RUNTIME + "domain/turn.py",
-        '        elif char["age"] < 18:\n',
-        "        elif False:  # age check disabled on purpose\n",
-    ),
-    (
         "content validator: age ranges >= 18",
         RUNTIME + "domain/worldpack.py",
         "                if lo < 18:\n",

@@ -9,7 +9,7 @@
 - 输出是一个信封 `{"ok", "data", "error"}`，以 UTF-8 字节写到 stdout。成功与失败都附带 `next_request_id`（成功在 `data` 里，失败在 `error` 里），下一次写操作直接用它。
 - 全局参数：`--json`（输出 JSON，始终如此）、`--pretty`（缩进输出）、`--debug`、`--input-file PATH`、`--data-dir PATH`。
 - 写操作都带 `request_id`；会话内的写操作还带 `session_id` 与 `expected_revision`。同一 `request_id` + 同一输入重放时返回原响应并标记 `replayed: true`。
-- 开局、读档、导入（`new-game`、`load-slot`、`import-save`）与带 `"depth": "full"` 的 `get-context` 另外返回 `commit_template`：会话号已填好的 `commit-turn` 输入，带在场的人和最常用的操作；尖括号是要写的内容，`a|b` 表示选一个，用不上的操作删掉。带 `preview_time` 的 `get-context` 另外返回 `skip_template`：这次快进的 `commit-turn` 输入，`advance_time` 与每条必需的 `offscreen_beat` 已排好。
+- 开局、读档、导入（`new-game`、`load-slot`、`import-save`）与带 `"depth": "full"` 的 `get-context` 另外返回 `commit_template`：会话号已填好的一次记录，`turns` 里是一个回合的样子（在场的人和最常用的操作），每个攒下的回合照它写一项；尖括号是要写的内容，`a|b` 表示选一个，用不上的操作删掉。带 `preview_time` 的 `get-context` 另外返回 `skip_template`：快进这一回合的记录，`advance_time` 与每条必需的 `offscreen_beat` 已排好（攒下的回合要先记录，再预览）。
 - 开发开关（环境变量，由测试环境设置，玩家不需要）：`ADULT_TENSION_HOME` 指定数据目录；`ADULT_TENSION_INCLUDE_DRAFTS=1` 让未发布的世界参与开局与世界列表；`ADULT_TENSION_TRACE=<文件>` 把每次调用（参数、输入、信封、耗时）追加到该文件，供端到端评测采集。
 
 ## 命令一览
@@ -61,6 +61,8 @@
 | `chapter_summary` | 字符串，≤300 字 或 null | 否，默认 `null` | 上下文 requests.chapter_summary 为 true 时必填：上一章（到上一回合为止）的摘要，≤300 字；没有要求时不写 |
 | `prologue` | 字符串，≤300 字 或 null | 否，默认 `null` | 上下文 requests.prologue 为 true 时必填：把完整上下文 prologue_merge 里的旧前情与最早几章合并成一段前情，≤300 字；没有要求时不写 |
 | `replaces_turn` | 整数 1..1000000 或 null | 否，默认 `null` | “刚才不算，改成……”：填当前最后一个回合的回合号，引擎在同一事务里撤销它再应用本次提交 |
+
+**一次记录几个回合**：顶层只写 `session_id`、`request_id`、`expected_revision` 和 `turns`（1–12 项，按发生的顺序；每项的字段与上表相同，不含这三个）。引擎逐项应用，每项是一个回合，各自可以撤销；任何一项不合法，整批被拒、状态不变，错误路径以 `$.turns[i]` 开头。只有第一项可以写 `replaces_turn`；`requests` 要求的章节摘要、前情只写在第一项，批内新出现的留到下一次记录。返回 `turns`（每项的 `turn`、`applied`、`resolved_events`、`simulation`）和完整上下文。
 
 ### `delete-slot`
 

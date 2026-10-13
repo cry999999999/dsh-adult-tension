@@ -371,6 +371,29 @@ class MachineCheckTest(unittest.TestCase):
         grouped["turns"][1]["expect"].update(budget_group="first", group_max=2)
         self.assertIn(("structure", 2), names(M.check(grouped)))
 
+    def test_turns_written_ahead_of_their_record_are_checked_and_cost_nothing(self):
+        # DATA_CONTRACTS 6: an ordinary turn is written first and recorded later; turn 3 records
+        rec = clean_record()
+        rec["turns"][1]["runtime_calls"] = []
+        result = M.check(rec)
+        self.assertEqual(result["findings"], [])
+        self.assertEqual(result["stats"]["average_calls"], 0.5)
+        # its prose still answers for the footer and for what the player said
+        rec["turns"][1]["text"] = "你说：“我早就想走了，这地方一点意思都没有。”对方没有马上回答。"
+        self.assertEqual(sorted(names(M.check(rec))), [("footer", 2), ("ventriloquism", 2)])
+        # recording the kept-back turns before a meta command is the record's call, not the command's,
+        # and the receipt is not a story turn that needs a footer
+        save = {"argv": ["save-slot"], "input": {}, "exit": 0, "envelope": envelope({"receipt": "已保存到「夜班」·第 3 回合"})}
+        flushed = clean_record()
+        flushed["turns"][1]["runtime_calls"] = flushed["turns"][2]["runtime_calls"] = []
+        flushed["turns"].append({"index": 4, "conversation": "A", "input": "存档", "expect": {"kind": "meta", "calls_max": 1},
+                                 "host_calls": [], "runtime_calls": [commit_call(3, 1210), save], "text": "已保存到「夜班」·第 3 回合"})
+        result = M.check(flushed)
+        self.assertEqual(result["findings"], [])
+        self.assertEqual(result["stats"]["average_calls"], 0.0)
+        flushed["turns"][3]["runtime_calls"].insert(0, {"argv": ["get-context"], "input": {}, "exit": 0, "envelope": envelope({})})
+        self.assertIn(("structure", 4), names(M.check(flushed)))
+
     def test_the_first_opening_of_a_conversation_runs_doctor_and_new_game(self):
         rec = clean_record()
         rec["turns"][0]["expect"].update(budget_group="first_opening:A", group_max=2, group_must_call=["doctor", "new-game"])
@@ -471,8 +494,11 @@ class ReportTest(unittest.TestCase):
         return temp
 
     def record(self, host, run=1, digest="d1"):
-        """clean_record as run RUN on HOST, of the Skill with DIGEST."""
+        """clean_record as run RUN on HOST, of the Skill with DIGEST: its two
+        ordinary turns written ahead of their record (DATA_CONTRACTS 6)."""
         rec = clean_record()
+        for turn in rec["turns"][1:]:
+            turn["runtime_calls"] = []
         rec["host"]["name"], rec["run"], rec["installs"] = host, run, [{"digest": digest}]
         return rec
 
@@ -623,7 +649,7 @@ class ReportTest(unittest.TestCase):
         built = self.build(records, reviews, calibration)
         self.assertEqual(built["hosts"]["h1"], [["1", "m", "2026-10-01"]])
         self.assertEqual(built["first_run_machine_pass"], "2/2")
-        self.assertEqual(built["average_calls_per_ordinary_turn"], 1.0)
+        self.assertEqual(built["average_calls_per_ordinary_turn"], 0.0)
         self.assertEqual(sorted(built["ceiling"]), sorted(report.DIMENSIONS))
         self.assertTrue(built["pass"])
         # the median of six fives is printed as 5, not 5.0
@@ -784,7 +810,7 @@ class ReportTest(unittest.TestCase):
         built = self.build(records, reviews, calibration)
         self.assertEqual((built["counted_runs"], built["pass"]), (6, True))
         # so is a run that also failed on another turn (the next turn redoes what the empty one left): still listed
-        built = rewrite(lambda turns: (empty(turns), turns[1]["runtime_calls"].insert(0, {"argv": ["get-context"], "input": {}, "exit": 0, "envelope": envelope({})})))
+        built = rewrite(lambda turns: (empty(turns), turns[1]["runtime_calls"].extend([{"argv": ["get-context"], "input": {}, "exit": 0, "envelope": envelope({})}] * 2)))
         self.assertEqual((built["made_up"], built["machine_failures"], built["pass"]), (["h1-st-r2.json"], [], True))
         listed = [f for f in built["failures_and_fixes"] if f["file"] == "h1-st-r2.json"][0]
         self.assertFalse(listed["counted"])

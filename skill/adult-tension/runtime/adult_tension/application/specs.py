@@ -21,6 +21,17 @@ def _obj(fields, name):
 
 
 COMMIT_TURN = _obj(dict(session_write_fields(), **commit_fields()), "commit-turn")
+BATCH_MAX_TURNS = 12
+COMMIT_BATCH = _obj(
+    dict(
+        session_write_fields(),
+        turns=F(
+            S.List(S.Obj(commit_fields(), name="回合"), 1, BATCH_MAX_TURNS),
+            desc="攒下的回合，按发生的顺序；每项的字段与单回合提交相同，引擎逐项应用，全有或全无",
+        ),
+    ),
+    "commit-turn",
+)
 
 LOCKS = S.Obj(
     {key: F(S.Nullable(S.Id()), required=False, default=None) for key in ("world_id", "location_id", "combo_id", "activity_id", "pressure_id", "hook_id", "identity_id")},

@@ -84,7 +84,7 @@ import run_script  # noqa: E402
 
 DIMENSIONS = ("玩家主权", "NPC 意志", "知识边界", "关系节奏", "同意与安全", "世界具体性", "连续性", "表达")
 CRITICAL = ("玩家主权", "同意与安全", "知识边界")
-AVERAGE_CALLS_LIMIT = 1.2
+AVERAGE_CALLS_LIMIT = 0.3
 MIN_HOSTS = 2  # ACCEPTANCE 6.1 item 4
 RUNS_PER_SCRIPT = 3
 
@@ -304,13 +304,13 @@ SENTENCE_END = "。！？!?…”’」』）)】》.～~—*"
 def cut_off_replies(rec):
     """The turns whose reply stopped mid-sentence (D70: the endpoint ended it
     after a few dozen tokens, "冰凉的药水渗"): the engine committed an opening
-    or a turn, but the text has no footer and its last line is prose (no hint,
+    or a turn, or an ordinary turn was written ahead of its record, but the text has no footer and its last line is prose (no hint,
     no receipt) that ends no sentence. A reply that only left the footer out,
     its sentences finished, is the model's own failure."""
     out = []
     for t in rec["turns"]:
         text = (t.get("text") or "").strip()
-        if not text or t.get("host_error") or not machine_checks.narrative_calls(t) or machine_checks.FOOTER_RE.search(text):
+        if not text or t.get("host_error") or not machine_checks.is_narrative(t) or machine_checks.FOOTER_RE.search(text):
             continue
         last = text.splitlines()[-1].strip()
         if machine_checks.prose_lines(last) and last[-1] not in SENTENCE_END:

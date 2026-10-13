@@ -189,6 +189,22 @@ class FullContextBudgetTest(unittest.TestCase):
             self.assertTrue(all("detail" not in c for c in full["characters"]))
             self.assertTrue(all("detail" in loc for loc in full["locations"]))
 
+    def test_side_details_go_before_the_cards_on_stage_shrink(self):
+        # Long cards on stage: nearby, sample lines and edges between NPCs go
+        # first; the people on stage are cut only after that.
+        with app() as ctx:
+            game = Game(ctx, TRIOS[0][0], TRIOS[0][1])
+            game.introduce(2, "major", True, 120, salt=7)
+            info = game.state()
+            state = info["state"]
+            full = self.check(info, "long cards on stage")
+            on_stage = [c for c in full["characters"] if c["present"]]
+            self.assertTrue(any("detail" in c for c in on_stage))
+            self.assertNotIn("nearby", full)
+            self.assertTrue(all("line" not in item for item in full["background"]))
+            player = state["player_id"]
+            self.assertTrue(all(player in (e["from"], e["to"]) for e in full["relationships"]))
+
     def test_the_full_context_does_not_repeat_the_brief_lists(self):
         # known_facts and due_soon are the head of player_facts and events.
         with app() as ctx:

@@ -547,23 +547,25 @@ def _full_steps(context, state):
     yield pop_to("customs", CUSTOMS_FLOOR, holder="world")
     yield pop_to("player_facts", PLAYER_FACTS_FLOORS[1])
     yield far_locations({here})
-    # Only now the people on stage lose flavour, then absent people shrink
-    # to a roster line and edges between absent people go.
-    yield from shrink_cards(True, _card_compact)
+    # Absent people shrink to a roster line, then what the cards on stage
+    # can do without goes: edges between absent people, nearby places,
+    # sample lines, edges between NPCs, reasons off stage. Only then do the
+    # people on stage lose flavour.
     yield from shrink_cards(False, _roster_line)
     yield edges_elsewhere
+    yield drop_nearby
+    yield background_sample_lines
+    yield npc_edges
+    yield reasons_offstage
+    yield from shrink_cards(True, _card_compact)
     # A crowded scene: everyone on stage but the most relevant person keeps
     # a summary, then a roster line.
     crowd = _card_order(context, state, True)[:-1]
     for shrink in (_card_summary, _roster_line):
         for cid in crowd:
             yield lambda cid=cid, shrink=shrink: _replace_card(context, cid, shrink)
-    # Still too big (long world texts and many important people): what the
-    # rest of the context already says goes first, then detail.
-    yield drop_nearby
-    yield background_sample_lines
-    yield npc_edges
-    yield reasons_offstage
+    # Still too big (long world texts and many important people): goals of
+    # the crowd go, then detail.
     # The people on stage keep what the next beat needs: decision with
     # pressure responses, boundaries, and their stance and mood.
     for cid in crowd:

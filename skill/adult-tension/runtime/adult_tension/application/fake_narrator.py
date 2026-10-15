@@ -21,6 +21,11 @@ LIKES = ("被人记住随口说过的话", "安静的陪伴", "直来直去的�
 INVALID_VARIANTS = 7
 
 
+def record(session_id, request_id, revision, *turns):
+    """A commit-turn payload: one record holding these turns (DATA_CONTRACTS 6)."""
+    return {"session_id": session_id, "request_id": request_id, "expected_revision": revision, "turns": list(turns)}
+
+
 def _pending_key(state, key):
     return any(e["state"] == "pending" and e["dedupe_key"].split("#")[0] == key for e in state["events"].values())
 

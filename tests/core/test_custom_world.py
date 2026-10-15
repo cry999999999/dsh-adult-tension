@@ -18,7 +18,7 @@ from adult_tension.errors import AppError
 from adult_tension.persistence import repo
 from helpers.cli import REPO_ROOT
 from helpers.domain import STORE
-from helpers.service import Ids, app, open_game, session
+from helpers.service import Ids, app, open_game, record, session
 
 EXAMPLE_PATH = os.path.join(REPO_ROOT, "content-src", "examples", "custom_world.json")
 TAG_IDS = {t["id"] for t in STORE.tags()["tags"]}
@@ -212,7 +212,7 @@ class PlayTest(unittest.TestCase):
         for _ in range(turns):
             info = repo.load_session(ctx.db(), sid)
             payload = narrator.commit(info["state"], info["content"])
-            service.commit_turn(ctx, dict(payload, session_id=sid, request_id=ids(), expected_revision=info["revision"]))
+            service.commit_turn(ctx, record(sid, ids(), info["revision"], payload))
 
     def test_a_custom_game_plays_saves_loads_exports_and_imports(self):
         for mode, seed in (("pressure", 3), ("daily", 4)):

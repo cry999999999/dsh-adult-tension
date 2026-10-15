@@ -202,8 +202,10 @@ def cli_checks():
         npc = next(c for c in session["context"]["scene"]["present"] if c != "player")
         commit = {
             "session_id": session["session_id"], "request_id": "rev_turn_00001", "expected_revision": session["revision"],
-            "action_mode": "continue", "player_input": "继续", "operations": [{"op": "npc_action", "npc_id": npc, "action": "看了看表"}],
-            "content_tags": [], "summary": "有人看表。", "open_action": "表针在走",
+            "turns": [{
+                "action_mode": "continue", "player_input": "继续", "operations": [{"op": "npc_action", "npc_id": npc, "action": "看了看表"}],
+                "content_tags": [], "summary": "有人看表。", "open_action": "表针在走",
+            }],
         }
         _cli(["commit-turn"], data, commit)
         code, env = _cli(["commit-turn"], data, dict(commit, request_id="rev_turn_00002"))

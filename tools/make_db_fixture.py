@@ -19,7 +19,7 @@ _runtime.use_runtime()
 from adult_tension import DB_SCHEMA_VERSION  # noqa: E402
 from adult_tension.application import service  # noqa: E402
 from adult_tension.application.context import Context  # noqa: E402
-from adult_tension.application.fake_narrator import FakeNarrator  # noqa: E402
+from adult_tension.application.fake_narrator import FakeNarrator, record  # noqa: E402
 from adult_tension.persistence import repo  # noqa: E402
 
 
@@ -34,7 +34,7 @@ def main(argv):
     for index in range(turns):
         info = repo.load_session(ctx.db(), sid)
         commit = narrator.commit(info["state"], info["content"])
-        service.commit_turn(ctx, dict(commit, session_id=sid, request_id="fixture_turn_%04d" % index, expected_revision=info["revision"]))
+        service.commit_turn(ctx, record(sid, "fixture_turn_%04d" % index, info["revision"], commit))
     info = repo.load_session(ctx.db(), sid)
     service.save_slot(ctx, {"session_id": sid, "request_id": "fixture_save_0001", "expected_revision": info["revision"], "name": "旧版本的存档"})
     ctx.close()

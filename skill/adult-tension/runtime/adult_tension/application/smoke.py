@@ -15,7 +15,7 @@ from ..errors import AppError
 from ..persistence import repo
 from . import service, specs
 from .context import Context
-from .fake_narrator import FakeNarrator
+from .fake_narrator import FakeNarrator, record
 
 
 class _Counter:
@@ -49,10 +49,10 @@ def play(ctx, seed, turns, mode="pressure"):
         state, content = _state(ctx, session_id)
         commit = narrator.commit(state, content)
         request_id = ids.next("turn")
-        payload = dict(commit, session_id=session_id, request_id=request_id, expected_revision=revision)
+        payload = record(session_id, request_id, revision, commit)
         result = service.commit_turn(ctx, payload)
         revision = result["revision"]
-        steps.append({"step": "commit", "turn": result["turn"], "mode": commit["action_mode"], "applied": len(result["applied"])})
+        steps.append({"step": "commit", "turn": result["turn"], "mode": commit["action_mode"], "applied": len(result["turns"][0]["applied"])})
         if not replay_checked:
             again = service.commit_turn(ctx, payload)
             assert again["replayed"] is True and again["revision"] == revision, "replay changed state"
@@ -70,7 +70,7 @@ def play(ctx, seed, turns, mode="pressure"):
             state, content = _state(ctx, session_id)
             bad = narrator.invalid_commit(state, content, 0)
             try:
-                service.commit_turn(ctx, dict(bad, session_id=session_id, request_id=ids.next("bad"), expected_revision=revision))
+                service.commit_turn(ctx, record(session_id, ids.next("bad"), revision, bad))
                 raise AssertionError("invalid commit accepted")
             except AppError as err:
                 after, _content = _state(ctx, session_id)

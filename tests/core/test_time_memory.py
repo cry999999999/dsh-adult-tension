@@ -14,7 +14,7 @@ from adult_tension.errors import AppError
 from adult_tension.persistence import repo
 from adult_tension.projections import context as CX
 from helpers.domain import apply, commit, content, new_state, npcs, rejected
-from helpers.service import Ids, app, open_game, session
+from helpers.service import Ids, app, open_game, record, session
 
 
 def reasons(err):
@@ -355,19 +355,9 @@ class RestoreTest(unittest.TestCase):
 
 
 def base_commit(state, request_id, revision, ops, mode="continue", **extra):
-    payload = {
-        "session_id": state["session_id"],
-        "request_id": request_id,
-        "expected_revision": revision,
-        "action_mode": mode,
-        "player_input": "……",
-        "operations": ops,
-        "content_tags": [],
-        "summary": "测试回合",
-        "open_action": "场面停住",
-    }
-    payload.update(extra)
-    return payload
+    turn = {"action_mode": mode, "player_input": "……", "operations": ops, "content_tags": [], "summary": "测试回合", "open_action": "场面停住"}
+    turn.update(extra)
+    return record(state["session_id"], request_id, revision, turn)
 
 
 class ServiceTimeTest(unittest.TestCase):
@@ -409,9 +399,10 @@ class ServiceTimeTest(unittest.TestCase):
         self.assertEqual(caught.exception.extra["preview"], preview)
         done = self.commit([{"op": "advance_time", "days": 1}, beat(self.b), act(self.a)])
         self.assertEqual({k: done["clock"][k] for k in ("day", "minute")}, {k: preview["to"][k] for k in ("day", "minute")})
-        self.assertEqual(done["resolved_events"], preview["resolved_events"])
-        self.assertIn("t.check", [self.state()["events"][e["event_id"]]["dedupe_key"] for e in done["resolved_events"] if e["event_id"] in self.state()["events"]] or ["t.check"])
-        sim = done["simulation"]
+        turn = done["turns"][0]
+        self.assertEqual(turn["resolved_events"], preview["resolved_events"])
+        self.assertIn("t.check", [self.state()["events"][e["event_id"]]["dedupe_key"] for e in turn["resolved_events"] if e["event_id"] in self.state()["events"]] or ["t.check"])
+        sim = turn["simulation"]
         for key in ("expired_conditions", "moved", "spread"):
             self.assertEqual(sim.get(key, []), preview[key], key)
 
@@ -427,11 +418,12 @@ class ServiceTimeTest(unittest.TestCase):
         ]
 
         def randomness(done):
-            return [a.get("result") for a in done["applied"] if a["op"] == "roll"], [(e["event_id"], e["outcome"]) for e in done["resolved_events"]]
+            turn = done["turns"][0]
+            return [a.get("result") for a in turn["applied"] if a["op"] == "roll"], [(e["event_id"], e["outcome"]) for e in turn["resolved_events"]]
 
         rain = next(e["id"] for e in self.state()["events"].values() if e["dedupe_key"] == "t.rain")
         first = self.commit(ops)
-        self.assertIn(rain, [e["event_id"] for e in first["resolved_events"]])
+        self.assertIn(rain, [e["event_id"] for e in first["turns"][0]["resolved_events"]])
         undone = self.undo()
         self.assertEqual(undone["turn"], first["turn"] - 1)
         again = self.commit(ops)
@@ -468,7 +460,7 @@ class ServiceTimeTest(unittest.TestCase):
         with self.assertRaises(AppError):
             self.commit([act(self.a)], replaces_turn=1)
         done = self.commit([{"op": "add_fact", "key": "t.second", "text": "第二种说法", "known_by": ["player"], "visibility": "private", "origin": "observed"}], replaces_turn=2)
-        self.assertEqual((done["turn"], done["revision"], done["replaced_turn"]), (2, revision + 1, 2))
+        self.assertEqual((done["turn"], done["revision"], done["turns"][0]["replaced_turn"]), (2, revision + 1, 2))
         keys = {f["key"] for f in self.state()["facts"].values()}
         self.assertIn("t.second", keys)
         self.assertNotIn("t.first", keys)
@@ -526,7 +518,7 @@ class ServiceTimeTest(unittest.TestCase):
         for _ in range(30):
             state = repo.load_session(self.ctx.db(), self.sid)
             payload = narrator.commit(state["state"], state["content"])
-            service.commit_turn(self.ctx, dict(payload, session_id=self.sid, request_id=self.ids(), expected_revision=state["revision"]))
+            service.commit_turn(self.ctx, record(self.sid, self.ids(), state["revision"], payload))
         source = repo.FactSource(self.ctx.db(), self.sid)
         facts = FA.DictSource(source.as_dict())
         state = self.state()

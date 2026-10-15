@@ -20,14 +20,13 @@ def _obj(fields, name):
     return S.Obj(fields, name=name)
 
 
-COMMIT_TURN = _obj(dict(session_write_fields(), **commit_fields()), "commit-turn")
-BATCH_MAX_TURNS = 12
-COMMIT_BATCH = _obj(
+RECORD_MAX_TURNS = 12
+COMMIT_TURN = _obj(
     dict(
         session_write_fields(),
         turns=F(
-            S.List(S.Obj(commit_fields(), name="回合"), 1, BATCH_MAX_TURNS),
-            desc="攒下的回合，按发生的顺序；每项的字段与单回合提交相同，引擎逐项应用，全有或全无",
+            S.List(S.Obj(commit_fields(), name="回合"), 1, RECORD_MAX_TURNS),
+            desc="这次记录的回合，按发生的顺序；引擎逐项应用，全有或全无",
         ),
     ),
     "commit-turn",

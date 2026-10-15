@@ -41,13 +41,19 @@
 
 ### `commit-turn`
 
-操作列表的字段见 `references/operations.md`。
+每个回合的字段与操作列表见 `references/operations.md`。
 
 | 字段 | 类型 | 必填 | 说明 |
 |---|---|---|---|
 | `session_id` | 字符串，≤40 字，会话 ID，形如 s_1a2b3c4d | 是 |  |
 | `request_id` | 字符串，≤64 字，8–64 位 [A-Za-z0-9_-]；直接用上一次返回的 next_request_id | 是 |  |
 | `expected_revision` | 整数 1..1000000000 | 是 | 上一次返回的 revision |
+| `turns` | 数组（对象（回合），1–12 项） | 是 | 这次记录的回合，按发生的顺序；引擎逐项应用，全有或全无 |
+
+#### `turns[]` 的字段
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
 | `action_mode` | 枚举：`result` / `attempt` / `rewrite` / `continue` / `wait` | 是 | result / attempt / rewrite（“其实……”）/ continue / wait |
 | `player_input` | 字符串，≤2000 字 | 是 | 玩家这一句的原话（继续时可为空字符串） |
 | `player_authorized` | 布尔 | 否，默认 `false` | 玩家本人的话授权了玩家角色的移动、承诺、交易、同意、转折或设定修改时为 true |
@@ -58,11 +64,11 @@
 | `summary` | 字符串，≤120 字 | 是 | 本回合发生了什么，第三方视角，≤120 字 |
 | `open_action` | 字符串，≤80 字 | 是 | 回合停在哪里、谁在等谁，≤80 字 |
 | `quotes` | 数组（字符串，≤80 字，0–3 项） | 否，默认 `[]` | ≤3 条对后续有意义的原话，每条 ≤80 字 |
-| `chapter_summary` | 字符串，≤300 字 或 null | 否，默认 `null` | 上下文 requests.chapter_summary 为 true 时必填：上一章（到上一回合为止）的摘要，≤300 字；没有要求时不写 |
-| `prologue` | 字符串，≤300 字 或 null | 否，默认 `null` | 上下文 requests.prologue 为 true 时必填：把完整上下文 prologue_merge 里的旧前情与最早几章合并成一段前情，≤300 字；没有要求时不写 |
-| `replaces_turn` | 整数 1..1000000 或 null | 否，默认 `null` | “刚才不算，改成……”：填当前最后一个回合的回合号，引擎在同一事务里撤销它再应用本次提交 |
+| `chapter_summary` | 字符串，≤300 字 或 null | 否，默认 `null` | 上下文 requests.chapter_summary 为 true 时在记录的第一项必填：上一章（到上一回合为止）的摘要，≤300 字；没有要求时不写 |
+| `prologue` | 字符串，≤300 字 或 null | 否，默认 `null` | 上下文 requests.prologue 为 true 时在记录的第一项必填：把完整上下文 prologue_merge 里的旧前情与最早几章合并成一段前情，≤300 字；没有要求时不写 |
+| `replaces_turn` | 整数 1..1000000 或 null | 否，默认 `null` | “刚才不算，改成……”：填当前最后一个回合的回合号，只能写在记录的第一项，引擎在同一事务里撤销它再应用这次记录 |
 
-**一次记录几个回合**：顶层只写 `session_id`、`request_id`、`expected_revision` 和 `turns`（1–12 项，按发生的顺序；每项的字段与上表相同，不含这三个）。引擎逐项应用，每项是一个回合，各自可以撤销；任何一项不合法，整批被拒、状态不变，错误路径以 `$.turns[i]` 开头。只有第一项可以写 `replaces_turn`；`requests` 要求的章节摘要、前情只写在第一项，批内新出现的留到下一次记录。返回 `turns`（每项的 `turn`、`applied`、`resolved_events`、`simulation`）和完整上下文。
+**一次记录**：一次 `commit-turn` 记录 `turns` 里的回合（1–12 项，按发生的顺序）。引擎逐项应用，每项是一个回合，各自可以撤销；任何一项不合法，整次记录被拒、状态不变，错误路径以 `$.turns[i]` 开头。只有第一项可以写 `replaces_turn`。上下文 `requests` 要求的章节摘要、前情写在第一项；记录中途引擎新提出的要求在记录结束时才出现，由下一次记录的第一项补上。返回 `turns`（每项的 `turn`、`applied`、`resolved_events`、`simulation`）、时钟和下一回合的上下文（记了几个回合时是完整上下文）。
 
 ### `delete-slot`
 

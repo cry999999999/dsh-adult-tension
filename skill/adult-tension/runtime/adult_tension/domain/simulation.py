@@ -195,7 +195,7 @@ def eligible_twist(state, world, twist_id):
 
 
 def settlement_requests(state, report, turn):
-    """Step 6: what this time skip asks of the next commit. The commit's end
+    """Step 6: what this time skip asks of the next record. The record's end
     (finalize_requests) sets the actual requests, after every operation."""
     return {
         "chapter_summary": report["crossed_day"] or (turn - state["counters"]["last_chapter_turn"] >= CHAPTER_EVERY),
@@ -204,15 +204,16 @@ def settlement_requests(state, report, turn):
     }
 
 
-def finalize_requests(state, world, turn, crossed_day, accepted_twist):
-    """Step 6, run once at the end of every commit."""
+def finalize_requests(state, world, crossed_day, accepted_twist):
+    """Step 6, run once at the end of every record (turn.close_record); the
+    offscreen candidates are set after every turn."""
     requests = state["requests"]
     counters = state["counters"]
     memory = state["memory"]
-    requests["chapter_summary"] = crossed_day or (turn - counters["last_chapter_turn"] >= CHAPTER_EVERY)
+    requests["chapter_summary"] = crossed_day or (state["turn"] - counters["last_chapter_turn"] >= CHAPTER_EVERY)
     requests["prologue"] = len(memory["chapters"]) > CHAPTER_CAP
-    # An offer is shown once: in the context the day-crossing commit returns.
-    # The next commit takes it or lets it go; a candidate's id can still be
+    # An offer is shown once: in the context the day-crossing record returns.
+    # The next record takes it or lets it go; a candidate's id can still be
     # accepted after that (twist_accept checks the world, not the offer).
     requests["twist_offer"] = None
     if crossed_day and not accepted_twist and state["mode"] == "pressure" and not counters["twists"]["auto_offered"]:
@@ -220,7 +221,6 @@ def finalize_requests(state, world, turn, crossed_day, accepted_twist):
         if offer:
             requests["twist_offer"] = offer
             counters["twists"]["auto_offered"] = True
-    requests["offscreen_beat_candidates"] = beat_candidates(state, turn + 1)
 
 
 def prologue_source(state):

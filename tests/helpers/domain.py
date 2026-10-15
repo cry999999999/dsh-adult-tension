@@ -47,7 +47,11 @@ def commit(mode="continue", ops=(), **extra):
 
 
 def apply(state, c, world_id=WORLD):
-    return turn.commit_turn(state, content(world_id), c)
+    """Commit `c` as a record of one turn."""
+    world = content(world_id)
+    new, result = turn.commit_turn(state, world, c)
+    turn.close_record(new, world["world"], [result])
+    return new, result
 
 
 def rejected(state, c, world_id=WORLD):

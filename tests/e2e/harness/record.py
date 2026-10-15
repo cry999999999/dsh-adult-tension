@@ -67,6 +67,16 @@ def command_of(call):
     return argv[0] if argv else None
 
 
+def committed_turns(call):
+    """The turns a commit-turn input holds. Runs made before the record form
+    (and the calibration set) hold one turn flat."""
+    data = call.get("input")
+    if not isinstance(data, dict):
+        return []
+    turns = data.get("turns")
+    return [t for t in turns if isinstance(t, dict)] if isinstance(turns, list) else [data]
+
+
 def ok_data(call):
     envelope = call.get("envelope") or {}
     return envelope.get("data") if envelope.get("ok") else None
@@ -286,7 +296,7 @@ def _brief_call(call):
         out["result"] = "宿主的记录里没有可解析的返回"
     elif envelope.get("ok"):
         data = envelope.get("data") or {}
-        out["result"] = {k: data[k] for k in ("receipt", "turn", "revision", "applied", "resolved_events", "clock") if k in data}
+        out["result"] = {k: data[k] for k in ("receipt", "turn", "revision", "turns", "applied", "resolved_events", "clock") if k in data}
     else:
         error = envelope.get("error") or {}
         out["error"] = {"code": error.get("code"), "message": error.get("message"), "details": (error.get("details") or [])[:5]}

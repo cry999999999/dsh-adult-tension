@@ -9,6 +9,7 @@ import unittest
 
 import _bootstrap  # noqa: F401
 from adult_tension import DB_SCHEMA_VERSION
+from adult_tension.application.fake_narrator import record
 from helpers.cli import ENTRY, SKILL_ROOT, clean_env, run_cli
 from helpers.fs import copy_skill, temp_dir, unwritable_dir
 
@@ -153,17 +154,14 @@ class DoctorTest(unittest.TestCase):
             self.assertTrue(any(removed in (d["reason"] + d["path"]) for d in env["error"]["details"]), env["error"]["details"][:5])
             state = opened["data"]
             npc = next(c for c in state["context"]["scene"]["present"] if c != "player")
-            commit = {
-                "session_id": state["session_id"],
-                "request_id": "req_after_tamper",
-                "expected_revision": state["revision"],
+            commit = record(state["session_id"], "req_after_tamper", state["revision"], {
                 "action_mode": "continue",
                 "player_input": "继续",
                 "operations": [{"op": "npc_action", "npc_id": npc, "action": "看了看天"}],
                 "content_tags": [],
                 "summary": "天色变了。",
                 "open_action": "有人抬头看天",
-            }
+            })
             code, env, _raw = run_cli(["commit-turn"], data_dir, payload=commit, env=env_drafts, entry=entry)
             self.assertEqual(code, 0, env)  # the game uses its own content snapshot
 

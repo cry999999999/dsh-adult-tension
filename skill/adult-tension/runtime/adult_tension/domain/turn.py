@@ -5,13 +5,17 @@ caller's state is untouched (the working copy is discarded).
 
 Order inside a commit:
   1. replaces_turn: restore the state before the replaced turn (same commit)
-  2. the previous commit's requests (chapter summary, prologue)
+  2. the requests the record was written from (chapter summary, prologue):
+     its first turn pays them, so the later turns see none
   3. operations in order; advance_time settles in the fixed order of
      RUNTIME_PROTOCOL 6.1 (offscreen and propagation run as hooks); without
      one the clock moves the default 3 minutes after the operations
   4. required offscreen beats, action mode, intimacy and safety checks
   5. invariants, then bookkeeping: memory, chapter archive, prologue and the
-     requests for the next commit
+     offscreen candidates for the next turn
+
+close_record runs once after the last turn of a record and sets what the
+engine asks of the next record (DATA_CONTRACTS 6.3).
 """
 
 from .. import schema as S
@@ -43,9 +47,9 @@ def commit_fields():
         "summary": F(S.Str(1, 120), desc="本回合发生了什么，第三方视角，≤120 字"),
         "open_action": F(S.Str(1, 80), desc="回合停在哪里、谁在等谁，≤80 字"),
         "quotes": F(S.List(S.Str(1, 80), max_items=3), required=False, default=[], desc="≤3 条对后续有意义的原话，每条 ≤80 字"),
-        "chapter_summary": F(S.Nullable(S.Str(1, 300)), required=False, default=None, desc="上下文 requests.chapter_summary 为 true 时必填：上一章（到上一回合为止）的摘要，≤300 字；没有要求时不写"),
-        "prologue": F(S.Nullable(S.Str(1, 300)), required=False, default=None, desc="上下文 requests.prologue 为 true 时必填：把完整上下文 prologue_merge 里的旧前情与最早几章合并成一段前情，≤300 字；没有要求时不写"),
-        "replaces_turn": F(S.Nullable(S.Int(1, 1000000)), required=False, default=None, desc="“刚才不算，改成……”：填当前最后一个回合的回合号，引擎在同一事务里撤销它再应用本次提交"),
+        "chapter_summary": F(S.Nullable(S.Str(1, 300)), required=False, default=None, desc="上下文 requests.chapter_summary 为 true 时在记录的第一项必填：上一章（到上一回合为止）的摘要，≤300 字；没有要求时不写"),
+        "prologue": F(S.Nullable(S.Str(1, 300)), required=False, default=None, desc="上下文 requests.prologue 为 true 时在记录的第一项必填：把完整上下文 prologue_merge 里的旧前情与最早几章合并成一段前情，≤300 字；没有要求时不写"),
+        "replaces_turn": F(S.Nullable(S.Int(1, 1000000)), required=False, default=None, desc="“刚才不算，改成……”：填当前最后一个回合的回合号，只能写在记录的第一项，引擎在同一事务里撤销它再应用这次记录"),
     }
 
 
@@ -121,19 +125,17 @@ def _replace_base(current, turn, snapshot):
 def _request_checks(ctx):
     commit = ctx.commit
     requests = ctx.state["requests"]
-    # A later turn of a batch was written before the record that would have
-    # shown the request: it stays owed and the next record's first turn pays it.
     if requests.get("chapter_summary"):
-        if not commit["chapter_summary"] and not ctx.defer_requests:
+        if not commit["chapter_summary"]:
             ctx.error(
                 "$.chapter_summary",
-                "引擎要求本次提交附章节摘要",
+                "引擎要求这次记录的第一个回合附章节摘要",
                 "把第 %d–%d 回合写成 ≤300 字的章节摘要，放进 chapter_summary" % (chapter_start(ctx.state), ctx.turn - 1),
             )
     elif commit["chapter_summary"]:
-        ctx.error("$.chapter_summary", "引擎没有要求章节摘要", "去掉 chapter_summary；章节在每 20 回合或跨日后由引擎要求", INVALID_INPUT)
+        ctx.error("$.chapter_summary", "引擎没有要求章节摘要", "去掉 chapter_summary；章节在每 20 回合或跨日后由引擎要求，要求在记录结束时出现，由下一次记录的第一项补上", INVALID_INPUT)
     if requests.get("prologue"):
-        if not commit["prologue"] and not ctx.defer_requests:
+        if not commit["prologue"]:
             ctx.error("$.prologue", "章节超过上限，引擎要求把最早几章合并成一段前情", "读完整上下文的 prologue_merge，合并成 ≤300 字放进 prologue")
     elif commit["prologue"]:
         ctx.error("$.prologue", "引擎没有要求前情", "去掉 prologue", INVALID_INPUT)
@@ -234,7 +236,7 @@ def _intimacy_checks(ctx):
             if not cooperative and cid not in ctx.significant_actors():
                 ctx.error(
                     path,
-                    "%s 在本次提交里没有 partial/genuine 回应或主动行动" % char["name"],
+                    "%s 在这一回合里没有 partial/genuine 回应或主动行动" % char["name"],
                     "每一步都要有对方可见的回应；没有回应就不能继续",
                 )
 
@@ -309,13 +311,11 @@ def _simulation_result(ctx):
 # ---------------------------------------------------------------------------
 
 
-def commit_turn(state, content, commit, undo_snapshot=None, defer_requests=False):
+def commit_turn(state, content, commit, undo_snapshot=None):
     """Return (new_state, result) or raise AppError with every problem found.
 
     `undo_snapshot` is the stored state from before turn `replaces_turn`
     (loaded by the application); that turn is undone in this same commit.
-    `defer_requests`: a batch turn after the first may leave a chapter summary
-    or prologue the engine asks for to the next record.
     """
     world = content["world"]
     replaced = commit["replaces_turn"]
@@ -323,8 +323,6 @@ def commit_turn(state, content, commit, undo_snapshot=None, defer_requests=False
     work = FA.working_copy(base)
     ctx = OPS.TurnContext(work, world, commit, simulation.hooks(work["turn"] + 1))
     ctx.significant_actors = lambda: {a["npc_id"] for a in ctx.applied if a["op"] == "npc_action"}
-    ctx.defer_requests = defer_requests
-    owed_chapter = defer_requests and work["requests"].get("chapter_summary") and not commit["chapter_summary"]
     before_clock = dict(work["clock"])
     tag_ids = {tag["id"] for tag in content["tags"]}
     for index, tag in enumerate(commit["content_tags"]):
@@ -377,8 +375,10 @@ def commit_turn(state, content, commit, undo_snapshot=None, defer_requests=False
     chapter = None
     if commit["chapter_summary"]:
         chapter, archive = _close_chapter(work, ctx.turn, commit["chapter_summary"])
+        work["requests"]["chapter_summary"] = False
     if commit["prologue"]:
         archive.extend(_merge_prologue(work, commit["prologue"]))
+        work["requests"]["prologue"] = False
     memory["turns"].append(entry)
     overflow = memory["turns"][:-MAX_MEMORY_TURNS]
     if overflow:
@@ -387,9 +387,7 @@ def commit_turn(state, content, commit, undo_snapshot=None, defer_requests=False
     memory["open_action"] = commit["open_action"]
     memory["last_quotes"] = list(commit["quotes"])
     crossed_day = work["clock"]["day"] > before_clock["day"]
-    simulation.finalize_requests(work, world, ctx.turn, crossed_day, ctx.accepted_twist)
-    if owed_chapter:
-        work["requests"]["chapter_summary"] = True
+    work["requests"]["offscreen_beat_candidates"] = simulation.beat_candidates(work, ctx.turn + 1)
     work["facts"] = work["facts"].settle()
     scene_changed = ctx.player_moved or any(s["scene"] for s in ctx.settlements)
     result = {
@@ -411,3 +409,12 @@ def commit_turn(state, content, commit, undo_snapshot=None, defer_requests=False
         "undo_base": base if replaced is not None else None,
     }
     return work, result
+
+
+def close_record(state, world, results):
+    """After the last turn of a record, in place: what the engine asks of the
+    next record (DATA_CONTRACTS 6.3). A request raised by a turn in the middle
+    waits until here, so the next record's first turn is the one that pays it."""
+    crossed_day = any(result["crossed_day"] for result in results)
+    accepted_twist = next((result["twist"] for result in results if result["twist"]), None)
+    simulation.finalize_requests(state, world, crossed_day, accepted_twist)

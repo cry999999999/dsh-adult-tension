@@ -6,6 +6,7 @@ import tempfile
 
 from adult_tension.application import service
 from adult_tension.application.context import Context
+from adult_tension.application.fake_narrator import record  # noqa: F401  (a commit-turn payload)
 from adult_tension.domain import facts as FA
 from adult_tension.persistence import repo
 

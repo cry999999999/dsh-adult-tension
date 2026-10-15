@@ -13,7 +13,7 @@ import unittest
 import zlib
 
 import _bootstrap  # noqa: F401
-from adult_tension.application.fake_narrator import FakeNarrator
+from adult_tension.application.fake_narrator import FakeNarrator, record
 from helpers.cli import ENTRY, clean_env, run_cli
 from helpers.domain import state_digest
 from helpers.fs import temp_dir
@@ -90,7 +90,7 @@ class ConcurrencyAndCrashTest(unittest.TestCase):
 
                 def worker(slot):
                     commit = narrator.commit(state, content, force_kind="continue")
-                    payload = dict(commit, session_id=sid, request_id="req_race_%d_%d" % (round_no, slot), expected_revision=revision)
+                    payload = record(sid, "req_race_%d_%d" % (round_no, slot), revision, commit)
                     results[slot] = run_cli(["commit-turn"], data_dir, payload=payload, env=ENV)
 
                 threads = [threading.Thread(target=worker, args=(slot,)) for slot in (0, 1)]
@@ -113,7 +113,7 @@ class ConcurrencyAndCrashTest(unittest.TestCase):
             state, content, revision = db_state(data_dir, sid)
             before = counts(data_dir, sid)
             commit = FakeNarrator(2).commit(state, content, force_kind="continue")
-            payload = dict(commit, session_id=sid, request_id="req_killed_0001", expected_revision=revision)
+            payload = record(sid, "req_killed_0001", revision, commit)
             handle = tempfile.NamedTemporaryFile("wb", suffix=".json", delete=False)
             handle.write(json.dumps(payload, ensure_ascii=False).encode("utf-8"))
             handle.close()
@@ -210,10 +210,7 @@ class EncodingAndInputTest(unittest.TestCase):
         with temp_dir() as tmp:
             data_dir = os.path.join(tmp, "data")
             sid = new_game(data_dir)["session_id"]
-            bad = {
-                "session_id": sid,
-                "request_id": "req_bad_00000001",
-                "expected_revision": 1,
+            turn = {
                 "action_mode": "continue",
                 "player_input": "继续",
                 "operations": [{"op": "advance_time", "minutes": 999999}, {"op": "fly"}],
@@ -222,12 +219,14 @@ class EncodingAndInputTest(unittest.TestCase):
                 "open_action": "o",
                 "extra_field": True,
             }
+            bad = dict(record(sid, "req_bad_00000001", 1, turn), surprise=1)
             code, env, _raw = run_cli(["commit-turn"], data_dir, payload=bad, env=ENV)
             self.assertEqual(code, 10)
             paths = sorted(d["path"] for d in env["error"]["details"])
-            self.assertIn("$.extra_field", paths)
-            self.assertIn("$.operations[0].minutes", paths)
-            self.assertIn("$.operations[1].op", paths)
+            self.assertIn("$.surprise", paths)
+            self.assertIn("$.turns[0].extra_field", paths)
+            self.assertIn("$.turns[0].operations[0].minutes", paths)
+            self.assertIn("$.turns[0].operations[1].op", paths)
             handle = tempfile.NamedTemporaryFile("wb", suffix=".json", delete=False)
             handle.write(b'{"session_id": "s_1", "session_id": "s_2"}')
             handle.close()
@@ -246,7 +245,7 @@ class LongRouteTest(unittest.TestCase):
         for index in range(turns):
             state, content, revision = db_state(data_dir, sid)
             commit = narrator.commit(state, content)
-            payload = dict(commit, session_id=sid, request_id="req_%s_%04d" % (tag, index), expected_revision=revision)
+            payload = record(sid, "req_%s_%04d" % (tag, index), revision, commit)
             code, env, _raw = run_cli(["commit-turn"], data_dir, payload=payload, env=ENV)
             self.assertEqual(code, 0, env)
 
@@ -300,20 +299,17 @@ class TimeCommandsTest(unittest.TestCase):
             ]
             state, _content, revision = db_state(data_dir, sid)
             npc = next(c for c in state["scene"]["present"] if c != "player")
-            fast = {
-                "session_id": sid,
-                "request_id": "req_fast_00001",
-                "expected_revision": revision,
+            fast = record(sid, "req_fast_00001", revision, {
                 "action_mode": "continue",
                 "player_input": "快进到第二天早上",
                 "operations": [{"op": "advance_time", "until": "next_morning"}] + beats + [{"op": "npc_action", "npc_id": npc, "action": "伸了个懒腰"}],
                 "content_tags": [],
                 "summary": "一夜过去。",
                 "open_action": "天亮了，码头还没开工",
-            }
+            })
             code, env, _raw = run_cli(["commit-turn"], data_dir, payload=fast, env=ENV)
             self.assertEqual(code, 0, env)
-            self.assertEqual(env["data"]["resolved_events"], preview["resolved_events"])
+            self.assertEqual(env["data"]["turns"][0]["resolved_events"], preview["resolved_events"])
             self.assertEqual(env["data"]["context"]["depth"], "full")  # a new day
             self.assertTrue(env["data"]["context"]["requests"]["chapter_summary"])
             undo = {"session_id": sid, "request_id": "req_undo_00001", "expected_revision": env["data"]["revision"]}
@@ -336,17 +332,14 @@ class TimeCommandsTest(unittest.TestCase):
             state, content, revision = db_state(data_dir, sid)
             npc = next(c for c in state["scene"]["present"] if c != "player")
             away = next(loc["id"] for loc in content["world"]["locations"] if loc["id"] != state["scene"]["location_id"])
-            leave = {
-                "session_id": sid,
-                "request_id": opened["next_request_id"],
-                "expected_revision": revision,
+            leave = record(sid, opened["next_request_id"], revision, {
                 "action_mode": "continue",
                 "player_input": "继续",
                 "operations": [{"op": "exit_scene", "character_id": npc, "to_location_id": away}],
                 "content_tags": [],
                 "summary": "有人先走了。",
                 "open_action": "门还开着",
-            }
+            })
             code, env, _raw = run_cli(["commit-turn"], data_dir, payload=leave, env=ENV)
             self.assertEqual(code, 0, env)
             left = env["data"]

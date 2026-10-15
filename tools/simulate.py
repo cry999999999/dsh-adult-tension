@@ -48,7 +48,7 @@ _runtime.use_runtime()
 import benchmark  # noqa: E402
 from adult_tension.application import service  # noqa: E402
 from adult_tension.application.context import Context  # noqa: E402
-from adult_tension.application.fake_narrator import FakeNarrator  # noqa: E402
+from adult_tension.application.fake_narrator import FakeNarrator, record  # noqa: E402
 from adult_tension.domain import invariants  # noqa: E402
 from adult_tension.domain import state as SS  # noqa: E402
 from adult_tension.errors import AppError  # noqa: E402
@@ -77,8 +77,9 @@ def _load(ctx, sid):
     return info["state"], info["content"], info
 
 
-def _randomness(result, state):
+def _randomness(done, state):
     """The random results of one commit, without ids that a redo reallocates."""
+    result = done["turns"][0]
     rolls = [a["result"] for a in result["applied"] if a["op"] == "roll"]
     due = [(e["event_id"], e["outcome"]) for e in result["resolved_events"]]
     sim = result.get("simulation") or {}
@@ -125,13 +126,16 @@ class Route:
         body = dict(payload, session_id=self.sid, request_id=self.rid(tag), expected_revision=info["revision"])
         return func(self.ctx, body)
 
+    def commit(self, turn, tag):
+        return self.write(service.commit_turn, {"turns": [turn]}, tag)
+
     def inject_invalid(self, variant):
         state, content, _info = _load(self.ctx, self.sid)
         before = SS.digest(state), state["revision"]
         bad = self.narrator.invalid_commit(state, content, variant)
         self.stats["invalid_injected"] += 1
         try:
-            self.write(service.commit_turn, bad, "bad")
+            self.commit(bad, "bad")
         except AppError as err:
             if err.code in REJECT_CODES:
                 self.stats["invalid_rejected"] += 1
@@ -146,12 +150,12 @@ class Route:
             self.inject_invalid(turn // INVALID_EVERY)
             state, content, _info = _load(self.ctx, self.sid)
         commit = self.narrator.commit(state, content)
-        first = self.write(service.commit_turn, commit, "turn")
+        first = self.commit(commit, "turn")
         if turn % UNDO_AT[0] == UNDO_AT[1]:
             after_first = _load(self.ctx, self.sid)[0]
             undone = self.write(service.undo_turn, {}, "undo")
             back = _load(self.ctx, self.sid)[0]
-            again = self.write(service.commit_turn, commit, "redo")
+            again = self.commit(commit, "redo")
             after_again = _load(self.ctx, self.sid)[0]
             self.stats["undo_redo_checks"] += 1
             if undone["turn"] != turn - 1 or back["turn"] != turn - 1 or _randomness(first, after_first) != _randomness(again, after_again):
@@ -159,7 +163,7 @@ class Route:
         elif turn % REPLACE_AT[0] == REPLACE_AT[1]:
             replacement = self.narrator.commit(state, content, force_kind="continue")
             replacement["replaces_turn"] = turn
-            replaced = self.write(service.commit_turn, replacement, "replace")
+            replaced = self.commit(replacement, "replace")
             self.stats["replace_checks"] += 1
             log = repo.recent_turn_log(self.ctx.db(), self.sid, 2)
             if replaced["turn"] != turn or replaced["revision"] != first["revision"] + 1 or not log[1]["undone"]:
@@ -254,13 +258,12 @@ class LatencyPoint:
     def write(self, commit):
         self.n += 1
         revision = repo.load_session(self.ctx.db(), self.sid, with_content=False)["revision"]
-        payload = dict(commit, session_id=self.sid, request_id="lat_%s_%05d" % (self.label, self.n), expected_revision=revision)
-        return service.commit_turn(self.ctx, payload)
+        return service.commit_turn(self.ctx, record(self.sid, "lat_%s_%05d" % (self.label, self.n), revision, commit))
 
     def sample(self, commit=None):
         self.n += 1
         revision = repo.load_session(self.ctx.db(), self.sid, with_content=False)["revision"]
-        payload = dict(commit or self.commit, session_id=self.sid, request_id="lat_%s_%05d" % (self.label, self.n), expected_revision=revision)
+        payload = record(self.sid, "lat_%s_%05d" % (self.label, self.n), revision, commit or self.commit)
         started = time.perf_counter()
         done = service.commit_turn(self.ctx, payload)
         elapsed = (time.perf_counter() - started) * 1000.0
@@ -272,7 +275,7 @@ class LatencyPoint:
         """One commit through a fresh process (then an in-process undo)."""
         self.n += 1
         revision = repo.load_session(self.ctx.db(), self.sid, with_content=False)["revision"]
-        payload = dict(self.commit, session_id=self.sid, request_id="cold_%s_%05d" % (self.label, self.n), expected_revision=revision)
+        payload = record(self.sid, "cold_%s_%05d" % (self.label, self.n), revision, self.commit)
         path = os.path.join(workdir, "cold-%s.json" % self.label)
         with open(path, "wb") as handle:
             handle.write(json.dumps(payload, ensure_ascii=False).encode("utf-8"))

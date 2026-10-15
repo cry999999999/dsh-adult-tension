@@ -17,6 +17,7 @@ import zlib
 
 import _bootstrap  # noqa: F401
 from adult_tension import DB_SCHEMA_VERSION
+from adult_tension.application.fake_narrator import record
 from helpers.cli import REPO_ROOT, clean_env, run_cli
 from helpers.fs import temp_dir
 
@@ -130,17 +131,14 @@ def old_revision(db, session_id):
 
 
 def continue_commit(session_id, request_id, revision, npc):
-    return {
-        "session_id": session_id,
-        "request_id": request_id,
-        "expected_revision": revision,
+    return record(session_id, request_id, revision, {
         "action_mode": "continue",
         "player_input": "继续",
         "operations": [{"op": "npc_action", "npc_id": npc, "action": "揉了揉眼睛"}],
         "content_tags": [],
         "summary": "迁移之后继续。",
         "open_action": "有人揉了揉眼睛",
-    }
+    })
 
 
 class MigrationTest(unittest.TestCase):
@@ -188,17 +186,7 @@ class MigrationTest(unittest.TestCase):
             loaded = env["data"]
             self.assertEqual(loaded["turn"], 7)
             npc = next(c for c in loaded["context"]["scene"]["present"] if c != "player")
-            commit = {
-                "session_id": loaded["session_id"],
-                "request_id": "req_turn_after_migrate",
-                "expected_revision": loaded["revision"],
-                "action_mode": "continue",
-                "player_input": "继续",
-                "operations": [{"op": "npc_action", "npc_id": npc, "action": "揉了揉眼睛"}],
-                "content_tags": [],
-                "summary": "迁移之后继续。",
-                "open_action": "有人揉了揉眼睛",
-            }
+            commit = continue_commit(loaded["session_id"], "req_turn_after_migrate", loaded["revision"], npc)
             code, env, _raw = run_cli(["commit-turn"], data_dir, payload=commit)
             self.assertEqual(code, 0, env)
             self.assertEqual(env["data"]["turn"], 8)

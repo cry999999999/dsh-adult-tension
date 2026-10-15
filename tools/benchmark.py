@@ -136,7 +136,7 @@ def _timed(func, *args):
 
 def bench_inprocess(samples, workdir):
     from adult_tension.application import service
-    from adult_tension.application.fake_narrator import FakeNarrator
+    from adult_tension.application.fake_narrator import FakeNarrator, record
     from adult_tension.persistence import repo
 
     ctx = _app(workdir, "inproc")
@@ -156,7 +156,7 @@ def bench_inprocess(samples, workdir):
     for index in range(samples):
         info = repo.load_session(ctx.db(), sid)
         commit = narrator.commit(info["state"], info["content"])
-        payload = dict(commit, session_id=sid, request_id="bench_turn_%06d" % index, expected_revision=info["revision"])
+        payload = record(sid, "bench_turn_%06d" % index, info["revision"], commit)
         elapsed, _ = _timed(service.commit_turn, ctx, payload)
         commit_times.append(elapsed)
     results["commit_turn"] = summarize(commit_times, INPROC_THRESHOLDS["commit_turn"])
@@ -193,7 +193,7 @@ def _payload_file(workdir, payload):
 
 def bench_cold_game(samples, workdir):
     _runtime.use_runtime()
-    from adult_tension.application.fake_narrator import FakeNarrator
+    from adult_tension.application.fake_narrator import FakeNarrator, record
     from adult_tension.persistence import repo
 
     data_dir = os.path.join(workdir, "cold-game")
@@ -213,7 +213,7 @@ def bench_cold_game(samples, workdir):
     for index in range(samples):
         info = repo.load_session(ctx.db(), session_id)
         commit = narrator.commit(info["state"], info["content"])
-        path = _payload_file(workdir, dict(commit, session_id=session_id, request_id="cold_turn_%06d" % index, expected_revision=info["revision"]))
+        path = _payload_file(workdir, record(session_id, "cold_turn_%06d" % index, info["revision"], commit))
         ctx.close()
         elapsed, _ = cold_call(["commit-turn"], data_dir, path, extra_env)
         commits.append(elapsed)

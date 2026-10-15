@@ -266,6 +266,16 @@ PREVIOUS_TURNS = (
 PREVIOUS_ALONE = ("{player}在原地待了一会儿，四周没什么动静", "{player}还没拿定主意")
 
 
+def commit_input(opened, session_id, request_id, revision, turn):
+    """A commit-turn input holding one turn, in the form of the Skill that
+    returned `opened` (new-game or load-slot): a record of turns when its
+    commit template is one, the turn's fields flat for Skills from before
+    the record form (the harness also drives older Skills)."""
+    if "turns" in (opened.get("commit_template") or {}):
+        return {"session_id": session_id, "request_id": request_id, "expected_revision": revision, "turns": [turn]}
+    return dict(turn, session_id=session_id, request_id=request_id, expected_revision=revision)
+
+
 def play_previous(project, env, step):
     """The part of a script before the upgrade, played on the older Skill's
     runtime with no model (PROGRESS P7, option C): doctor, an opening in
@@ -294,11 +304,10 @@ def play_previous(project, env, step):
             ops = [{"op": "npc_action", "npc_id": present[0]["id"], "action": action.format(**names)}]
         else:
             (summary, open_action), names, ops = PREVIOUS_ALONE, {"player": player}, []
-        data = call(["commit-turn"], {
-            "request_id": data["next_request_id"], "session_id": session, "expected_revision": data["revision"],
+        data = call(["commit-turn"], commit_input(opened, session, data["next_request_id"], data["revision"], {
             "action_mode": "continue", "player_input": "继续", "content_tags": [], "operations": ops,
             "summary": summary.format(**names), "open_action": open_action.format(**names),
-        })
+        }))
     call(["save-slot"], {"request_id": data["next_request_id"], "session_id": session, "expected_revision": data["revision"], "name": step["save"]})
     world = ((opened.get("opening") or {}).get("world") or {}).get("title")
     return {"session_id": session, "seed": opened.get("seed"), "world": world, "turn": data.get("turn"), "slot": step["save"], "calls": done}
@@ -390,7 +399,7 @@ class FakeHost:
             opening = data["opening"]
             body = "世界观：%s\n人物：%s\n\n%s\n\n%s" % (opening["world"]["premise"], opening["player"]["name"], opening["hook"]["text"], opening["footer"])
         if load or state is None:
-            state = {"sid": data["session_id"], "revision": data["revision"], "next": data["next_request_id"], "context": data["context"]}
+            state = {"sid": data["session_id"], "revision": data["revision"], "next": data["next_request_id"], "context": data["context"], "opened": data}
             self.sessions[conversation] = state
             return self._reply(started, state, log, body)
         if save:
@@ -402,18 +411,17 @@ class FakeHost:
             return self._reply(started, state, log, data["text"])
         present = [n["id"] for n in state["context"].get("present_npcs") or []]
         ops = [{"op": "npc_action", "npc_id": present[0], "action": "看了一眼门口"}] if present else []
-        commit = {
-            "request_id": state["next"], "session_id": state["sid"], "expected_revision": state["revision"],
+        turn = {
             "action_mode": "continue", "player_input": text, "operations": ops, "content_tags": [],
             "summary": "场面往前走了一点", "open_action": "场面停住",
         }
-        # what the engine asks to be written with this commit (a long run reaches both)
+        # what the engine asks of this record's first turn (a long run reaches both)
         asked = state["context"].get("requests") or {}
         if asked.get("chapter_summary"):
-            commit["chapter_summary"] = "这一章里场面一点点往前走，没有人把话说破"
+            turn["chapter_summary"] = "这一章里场面一点点往前走，没有人把话说破"
         if asked.get("prologue"):
-            commit["prologue"] = "此前几章里场面一点点往前走，没有人把话说破"
-        data = self._call(log, ["commit-turn"], commit)
+            turn["prologue"] = "此前几章里场面一点点往前走，没有人把话说破"
+        data = self._call(log, ["commit-turn"], commit_input(state["opened"], state["sid"], state["next"], state["revision"], turn))
         state.update(revision=data["revision"], next=data["next_request_id"], context=data["context"])
         return self._reply(started, state, log, "门口有人影晃了一下。\n\n" + self._footer(data))
 

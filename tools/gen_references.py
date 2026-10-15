@@ -90,13 +90,14 @@ def render_commands():
             continue
         lines.append("\n### `%s`\n\n" % name)
         if name == "commit-turn":
-            lines.append("操作列表的字段见 `references/operations.md`。\n\n")
+            lines.append("每个回合的字段与操作列表见 `references/operations.md`。\n\n")
         lines.append(render_spec(getattr(specs, cmd.spec)))
         if name == "commit-turn":
             lines.append(
-                "\n**一次记录几个回合**：顶层只写 `session_id`、`request_id`、`expected_revision` 和 `turns`（1–%d 项，按发生的顺序；每项的字段与上表相同，不含这三个）。"
-                "引擎逐项应用，每项是一个回合，各自可以撤销；任何一项不合法，整批被拒、状态不变，错误路径以 `$.turns[i]` 开头。"
-                "只有第一项可以写 `replaces_turn`；`requests` 要求的章节摘要、前情只写在第一项，批内新出现的留到下一次记录。返回 `turns`（每项的 `turn`、`applied`、`resolved_events`、`simulation`）和完整上下文。\n" % specs.BATCH_MAX_TURNS
+                "\n**一次记录**：一次 `commit-turn` 记录 `turns` 里的回合（1–%d 项，按发生的顺序）。"
+                "引擎逐项应用，每项是一个回合，各自可以撤销；任何一项不合法，整次记录被拒、状态不变，错误路径以 `$.turns[i]` 开头。"
+                "只有第一项可以写 `replaces_turn`。上下文 `requests` 要求的章节摘要、前情写在第一项；记录中途引擎新提出的要求在记录结束时才出现，由下一次记录的第一项补上。"
+                "返回 `turns`（每项的 `turn`、`applied`、`resolved_events`、`simulation`）、时钟和下一回合的上下文（记了几个回合时是完整上下文）。\n" % specs.RECORD_MAX_TURNS
             )
     lines.append("\n## 错误码\n\n| 码 | 含义 | 退出码 |\n|---|---|---|\n")
     for code, text in errors.ERROR_DESCRIPTIONS.items():
@@ -116,7 +117,7 @@ def render_operations():
     lines = [GENERATED_NOTE, "# 操作参考\n\n"]
     lines.append("`commit-turn` 的 `operations` 是一个操作数组。操作按顺序应用，后面的操作看得到前面操作的效果；任何一个不合法，整个提交被拒绝、状态不变，错误列出全部问题及其 JSON 路径。NPC 拒绝玩家（`npc_response: refuse`）是合法的叙事结果，不是错误。\n\n")
     lines.append("提交里没有 `advance_time` 时，时钟默认推进 %d 分钟。单次推进上限 %d 天。\n\n" % (structure.DEFAULT_ADVANCE_MINUTES, structure.MAX_ADVANCE_MINUTES // structure.MINUTES_PER_DAY))
-    lines.append("## 提交的顶层字段\n\n")
+    lines.append("## 每个回合的字段\n\n`commit-turn` 的 `turns` 里每一项：\n\n")
     from adult_tension.domain.turn import commit_fields
 
     lines.append(render_spec(S.Obj(commit_fields()), 2))

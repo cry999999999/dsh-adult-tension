@@ -255,7 +255,7 @@
 
 ## 6. 回合提交
 
-一次叙事回合 = 一项回合记录。模型先写正文，回合里发生的事留在对话里，攒满 10 个回合后在正文之后用一次 `commit-turn` 记录（单回合用下面的格式，几个回合用 §6.3 的批量格式）。
+一次叙事回合 = 一项回合记录。模型先写正文，回合里发生的事留在对话里，攒满 10 个回合后在正文之后用一次 `commit-turn` 记录：`turns` 里每个回合一项，按发生的顺序（一次记录 1–12 个回合，引擎如何应用见 §6.3）。
 
 以下情况先记录（攒下的回合连同这一回合），再按返回结果写正文，因为结果要由引擎决定：
 
@@ -271,48 +271,54 @@
   "session_id": "s_7f3a",
   "request_id": "r_0142",
   "expected_revision": 12,
-  "action_mode": "attempt",
-  "player_input": "我把外套搭在她肩上，问她要不要一起走一段",
-  "player_authorized": true,
-  "operations": [
-    {"op": "advance_time", "minutes": 10},
-    {"op": "npc_response", "npc_id": "lin_wan", "response": "partial", "basis_fact_ids": ["f3"], "note": "收下外套，但只肯走到街口"},
-    {"op": "relationship", "from": "lin_wan", "to": "player", "trust_delta": 1, "tension_delta": 0, "reason": "他没有借机提名单的事"},
-    {"op": "roll", "purpose": "巡警是否注意到两人", "probability": 0.3,
-     "on_success": [{"op": "add_fact", "key": "patrol.saw_pair", "text": "巡警看见两人一起离开", "truth": true, "known_by": ["patrol_wu"], "visibility": "private", "origin": "observed"}],
-     "on_failure": []}
-  ],
-  "content_tags": ["romance_light"],
-  "summary": "你把外套给了林婉，她同意陪你走到街口。",
-  "open_action": "林婉在街口停下，等你开口",
-  "quotes": ["“只到街口。”"],
-  "chapter_summary": null,
-  "replaces_turn": null
+  "turns": [
+    {
+      "action_mode": "attempt",
+      "player_input": "我把外套搭在她肩上，问她要不要一起走一段",
+      "player_authorized": true,
+      "operations": [
+        {"op": "advance_time", "minutes": 10},
+        {"op": "npc_response", "npc_id": "lin_wan", "response": "partial", "basis_fact_ids": ["f3"], "note": "收下外套，但只肯走到街口"},
+        {"op": "relationship", "from": "lin_wan", "to": "player", "trust_delta": 1, "tension_delta": 0, "reason": "他没有借机提名单的事"},
+        {"op": "roll", "purpose": "巡警是否注意到两人", "probability": 0.3,
+         "on_success": [{"op": "add_fact", "key": "patrol.saw_pair", "text": "巡警看见两人一起离开", "truth": true, "known_by": ["patrol_wu"], "visibility": "private", "origin": "observed"}],
+         "on_failure": []}
+      ],
+      "content_tags": ["romance_light"],
+      "summary": "你把外套给了林婉，她同意陪你走到街口。",
+      "open_action": "林婉在街口停下，等你开口",
+      "quotes": ["“只到街口。”"],
+      "chapter_summary": null,
+      "replaces_turn": null
+    }
+  ]
 }
 ```
 
-必填：`session_id`、`request_id`、`expected_revision`、`action_mode`、`player_input`、`operations`（可以为空数组）、`content_tags`（可以为空数组）、`summary`、`open_action`。
+记录必填：`session_id`、`request_id`、`expected_revision`、`turns`（1–12 项）。
 
-条件必填：`content_tags` 含 `intimate` 或 `explicit` 时必须有 `intimate_participants`（角色 ID 数组，含玩家）；引擎在 `requests` 中提出要求时，必须有 `chapter_summary` 或对应的 `offscreen_beat` 操作（见 `RUNTIME_PROTOCOL.md` §5）。
+每个回合必填：`action_mode`、`player_input`、`operations`（可以为空数组）、`content_tags`（可以为空数组）、`summary`、`open_action`。
+
+条件必填：`content_tags` 含 `intimate` 或 `explicit` 时，那一回合必须有 `intimate_participants`（角色 ID 数组，含玩家）；引擎在 `requests` 中要求章节摘要或前情时，记录的第一项必须有 `chapter_summary` 或 `prologue`（见 `RUNTIME_PROTOCOL.md` §5）；推进 ≥ 60 分钟或跨日的回合，必须为引擎指定的 NPC 附 `offscreen_beat`（`RUNTIME_PROTOCOL.md` §6.2）。
 
 - `summary`：本回合发生了什么，≤ 120 字，第三方可读，用于记忆与读档。
 - `open_action`：回合停在哪里、谁在等谁，≤ 80 字，用于读档后接续与“继续”。
 - `quotes`：≤ 3 条、每条 ≤ 80 字的原话，只收对后续有意义的台词。
 - 提交中没有 `advance_time` 时，引擎按默认值推进时钟（`DESIGN_DECISIONS.md` 默认值表），并在返回中注明。
 
-`replaces_turn`：改写（“刚才不算，改成 Y”）时填上一回合的回合号，引擎在同一事务中撤销该回合再应用本次提交。
+`replaces_turn`：改写（“刚才不算，改成 Y”）时填上一回合的回合号，只能写在记录的第一项；引擎在同一事务中撤销该回合再应用这次记录。
 
-**全有或全无**：提交中任何一个操作不合法，整个提交被拒绝，状态不变，错误列出全部问题。NPC 拒绝玩家是合法的叙事结果（`npc_response: refuse`），不是错误。
+**全有或全无**：记录中任何一个回合的任何一个操作不合法，整次记录被拒绝，状态不变，错误列出全部问题。NPC 拒绝玩家是合法的叙事结果（`npc_response: refuse`），不是错误。
 
-**亲密场景的结构信号**：`content_tags` 含 `intimate` 或 `explicit` 的提交必须附 `intimate_participants`。引擎检查：
+**亲密场景的结构信号**：`content_tags` 含 `intimate` 或 `explicit` 的回合必须附 `intimate_participants`。引擎检查：
 
 - 每个参与者都是 `major` 且在场；
 - 当前不在暂停中，且标签不与硬边界冲突；
 - 每个 NPC 参与者在同一回合有 `npc_response`（`partial` 或 `genuine`）或主动的 `npc_action`。
 
-参与者成年由角色创建时的检查和每次提交的状态不变量保证（任何角色年龄缺失或小于 18，提交都被拒）。参与者是否清醒、彼此之间有没有生效中的把柄（§5.3），由模型按 `NARRATIVE_RULES.md` §7.1 判断，引擎不拦。
+参与者成年由角色创建时的检查和每个回合的状态不变量保证（任何角色年龄缺失或小于 18，记录都被拒）。参与者是否清醒、彼此之间有没有生效中的把柄（§5.3），由模型按 `NARRATIVE_RULES.md` §7.1 判断，引擎不拦。
 
-这保证“反应持续可见”在结构上成立。这个检查只针对本次提交，不产生任何可以延续到之后回合的同意记录。
+这保证“反应持续可见”在结构上成立。这个检查只针对这一回合，不产生任何可以延续到之后回合的同意记录。
 
 ### 6.1 操作表（P0 最小集合）
 
@@ -328,7 +334,7 @@
 | `npc_state` | 情绪与状况 | 只改 `status` |
 | `set_voice` | 语态切换 | `cause`：`player_request`/`npc_self`/`revert`；`npc_self` 需填 `trigger` |
 | `add_fact` / `reveal_fact` / `spread_rumor` | 知识变化 | 见 §5.1 |
-| `relationship` | 关系变化 | 幅度限制；原因必填；`stage_advance: true` 需要同一提交中的对应 `npc_response` |
+| `relationship` | 关系变化 | 幅度限制；原因必填；`stage_advance: true` 需要同一回合中的对应 `npc_response` |
 | `intimacy_evidence` | 倾向卡证据 | 指明项、方向与证据；满足证据数后由引擎应用改动 |
 | `event_create` / `event_resolve` / `event_cancel` | 事件 | 去重；涉及玩家的承诺需授权 |
 | `roll` | 即时概率 | 引擎掷骰并执行 `on_success` 或 `on_failure` 分支（分支内不能再嵌套 `roll`） |
@@ -339,41 +345,42 @@
 
 实现者可以增加操作，但不能让操作绕开上述约束。
 
-### 6.2 提交的返回
+### 6.2 记录的返回
 
 ```json
 {
   "revision": 13,
   "turn": 7,
-  "applied": [
-    {"op": "npc_response", "npc_id": "lin_wan", "response": "partial"},
-    {"op": "roll", "purpose": "巡警是否注意到两人", "result": "failure"}
+  "turns": [
+    {
+      "turn": 7,
+      "applied": [
+        {"op": "npc_response", "npc_id": "lin_wan", "response": "partial"},
+        {"op": "roll", "purpose": "巡警是否注意到两人", "result": "failure"}
+      ],
+      "resolved_events": [],
+      "simulation": null
+    }
   ],
-  "resolved_events": [],
-  "simulation": null,
+  "clock": {"label": "周二 21:40"},
   "context": {"depth": "brief"},
   "next_request_id": "r_0143",
   "replayed": false
 }
 ```
 
-- `applied` 是模型写正文的唯一事实依据；`roll` 的结果、到期事件、离屏推演结果都在这里。
+- `turn` 是记录后的最后一个回合号；`turns` 按顺序给出每个回合的结果。
+- `applied` 是模型写正文的唯一事实依据；`roll` 的结果、到期事件、离屏推演结果都在这里。先记录再写正文时，看 `turns` 的最后一项。
 - `next_request_id` 是引擎建议的下一个请求号，模型可以直接使用，省去自己生成；`replayed: true` 表示这是同一 `request_id` 的重放结果，状态没有再次变化。
-- `context` 是下一回合所需的上下文（§7），模型不需要再调用 `get-context`。
+- `context` 是下一回合所需的上下文（§7），模型不需要再调用 `get-context`；记录了不止一个回合时是完整上下文。
 
-### 6.3 一次记录几个回合
+### 6.3 一次记录里的回合
 
-```json
-{"session_id": "s_7f3a", "request_id": "r_0150", "expected_revision": 12,
- "turns": [{"action_mode": "continue", "player_input": "继续", "operations": [], "content_tags": [], "summary": "……", "open_action": "……"}, {"action_mode": "attempt", "…": "…"}]}
-```
-
-- `turns`：1–12 项，按发生的顺序；每项的字段与单回合提交相同，不含 `session_id`、`request_id`、`expected_revision`。
-- 引擎逐项应用，每项是一个回合（回合号依次加一，各自可以撤销）；每项的检查与单回合提交相同，后一项看得到前一项的结果。
-- 全有或全无：任何一项不合法，整批被拒，状态不变；错误路径以 `$.turns[i]` 开头。
+- 引擎逐项应用，每项是一个回合（回合号依次加一，各自可以撤销）；后一项看得到前一项的结果。
+- 全有或全无：任何一项不合法，整次记录被拒，状态不变；错误路径以 `$.turns[i]` 开头，指向那一项。
 - 只有第一项可以写 `replaces_turn`。
-- 引擎的 `requests`（章节摘要、前情）只约束第一项：之后的项在写的时候看不到，批内新出现的要求留到下一次记录的第一项。
-- 返回 `turns`（每项的 `turn`、`applied`、`resolved_events`、`simulation`）和完整上下文。
+- `requests` 里的章节摘要、前情和转折候选在一次记录结束时才结算：记录之前已有的要求由第一项兑现；记录中途跨日、满一章等新产生的要求和转折候选在记录结束时出现，由下一次记录的第一项兑现或接受。之后的项写的时候看不到新要求，写了没有要求的章节摘要或前情会被拒。离屏片段候选每个回合之后更新。
+- 撤销记录中的某一回合，状态回到“只记录了它之前那几项”时的样子，包括那时会出现的要求。
 
 ## 7. 上下文
 

@@ -559,9 +559,12 @@ def _known_names(record):
                         names.add(person["name"])
             if (context.get("player") or {}).get("name"):
                 names.add(context["player"]["name"])
-            for op in (call.get("input") or {}).get("operations") or []:
-                if op.get("op") == "introduce_character" and R.ok_data(call) is not None:
-                    names.add(op.get("name"))
+            if R.ok_data(call) is None or R.command_of(call) != "commit-turn":
+                continue
+            for turn_input in R.committed_turns(call):
+                for op in turn_input.get("operations") or []:
+                    if isinstance(op, dict) and op.get("op") == "introduce_character":
+                        names.add(op.get("name"))
     names.discard(None)
     return names
 

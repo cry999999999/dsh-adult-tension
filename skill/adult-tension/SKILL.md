@@ -70,7 +70,7 @@ AT_JSON
    - 操作（字段见 `references/operations.md`）：`npc_response`、`npc_action`（重大的带 `significant: true`，看 `can_act`）、`npc_state`、`add_fact`、`relationship`、`advance_time`（默认 3 分钟）、`move`、`enter_scene`/`exit_scene`、`event_*`、`roll`、`player_update`、`reveal_fact`、`spread_rumor`、`set_voice`、`introduce_character`/`promote_character`（明确成年，名字取自 `name_pool`）、`intimacy_evidence`、`identity_update`、`npc_update`、`leverage_set`/`_release`、`offscreen_beat`、`twist_accept`。
    - 正文里新写出、以后要用到的细节用 `add_fact` 记下；新点名的人即使不在场也要 `introduce_character`。开局写出的，在第一次记录里补上。
    - 上下文 `requests` 要求时在下次记录的第一项写 `chapter_summary`（≤ 300 字，第三方视角）、`prologue`（≤ 300 字，合并完整上下文的 `prologue_merge`）；没要求就不写。
-5. 先记录的回合，按返回的 `applied`、`resolved_events`、`simulation`、`context` 写正文：掷骰、到期、离屏移动与传播由运行时决定。
+5. 先记录时，按 `context` 和 `turns` 末项的 `applied`、`resolved_events`、`simulation` 写正文：掷骰、到期、离屏移动与传播由运行时决定。
 6. 页脚：`【时间】……｜【地点】……｜回合：N`。记录后用 `context.clock.label`、`context.scene.location`、`turn`；之间自己推算（回合号逐回合加一）。叙事助手开启时（`preferences.assistant`），末尾加“可以：① …… ② …… ③ ……”，只给提示，不替玩家决定。
 7. 返回的 `context` 就是之后的依据；信息不够时 `get-context` 带 `"depth": "full"`。
 

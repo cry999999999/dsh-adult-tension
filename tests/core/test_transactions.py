@@ -15,14 +15,11 @@ from adult_tension.persistence import repo
 from helpers.cli import clean_env
 from helpers.domain import STORE
 from helpers.fs import copy_skill, temp_dir
-from helpers.service import Ids, app, open_game, session, table_counts
+from helpers.service import Ids, app, open_game, record, session, table_counts
 
 
-def continue_commit(state, npc, request_id, revision, text="看了一眼窗外"):
-    return {
-        "session_id": state["session_id"],
-        "request_id": request_id,
-        "expected_revision": revision,
+def continue_turn(npc, text="看了一眼窗外", **extra):
+    turn = {
         "action_mode": "continue",
         "player_input": "继续",
         "operations": [{"op": "npc_action", "npc_id": npc, "action": text}],
@@ -30,6 +27,12 @@ def continue_commit(state, npc, request_id, revision, text="看了一眼窗外")
         "summary": "对方看了一眼窗外。",
         "open_action": "对方的目光停在窗上",
     }
+    turn.update(extra)
+    return turn
+
+
+def continue_commit(state, npc, request_id, revision, text="看了一眼窗外"):
+    return record(state["session_id"], request_id, revision, continue_turn(npc, text))
 
 
 class WritePathTest(unittest.TestCase):
@@ -57,6 +60,10 @@ class WritePathTest(unittest.TestCase):
         shape_bad = dict(continue_commit(self.state, self.npc, self.ids(), 1), surprise=1)
         with self.assertRaises(AppError):
             service.commit_turn(self.ctx, shape_bad)
+        flat = dict(continue_turn(self.npc), session_id=self.sid, request_id=self.ids(), expected_revision=1)
+        with self.assertRaises(AppError) as caught:
+            service.commit_turn(self.ctx, flat)  # one form only: a record
+        self.assertIn("$.turns", [d["path"] for d in caught.exception.details])
         self.assertEqual(self.snapshot(), before)
 
     def test_replay_returns_the_same_response_without_advancing(self):
@@ -103,20 +110,16 @@ class WritePathTest(unittest.TestCase):
             open_game(self.ctx, lambda: rid, mode="daily", seed=5)
         self.assertEqual(caught.exception.code, "IDEMPOTENCY_CONFLICT")
 
-    def batch(self, request_id, revision, items):
-        return {"session_id": self.sid, "request_id": request_id, "expected_revision": revision, "turns": items}
+    def record(self, request_id, revision, turns):
+        return record(self.sid, request_id, revision, *turns)
 
     def item(self, npc=None, text="看了一眼窗外", **extra):
-        body = continue_commit(self.state, npc or self.npc, "unused", 1, text)
-        for key in ("session_id", "request_id", "expected_revision"):
-            del body[key]
-        body.update(extra)
-        return body
+        return continue_turn(npc or self.npc, text, **extra)
 
-    def test_a_batch_records_several_turns_in_one_transaction(self):
+    def test_a_record_holds_several_turns_in_one_transaction(self):
         revision, turn, _, _ = self.snapshot()
         texts = ("看了一眼窗外", "给自己倒了杯水", "把椅子往里推了推")
-        out = service.commit_turn(self.ctx, self.batch(self.ids(), revision, [self.item(text=t) for t in texts]))
+        out = service.commit_turn(self.ctx, self.record(self.ids(), revision, [self.item(text=t) for t in texts]))
         self.assertEqual(out["turn"], turn + 3)
         self.assertEqual([t["turn"] for t in out["turns"]], [turn + 1, turn + 2, turn + 3])
         self.assertTrue(all(t["applied"][0]["op"] == "npc_action" for t in out["turns"]))
@@ -129,31 +132,40 @@ class WritePathTest(unittest.TestCase):
         undone = service.undo_turn(self.ctx, {"session_id": self.sid, "request_id": self.ids(), "expected_revision": out["revision"]})
         self.assertEqual(undone["turn"], turn + 2)
 
-    def test_a_chapter_asked_for_inside_a_batch_is_owed_by_the_next_record(self):
+    def test_requests_are_set_when_a_record_ends_and_paid_by_the_next_one(self):
         revision, turn, _, _ = self.snapshot()
         overnight = self.item()
         overnight["operations"].insert(0, {"op": "advance_time", "until": "next_morning"})
-        out = service.commit_turn(self.ctx, self.batch(self.ids(), revision, [overnight, self.item(), self.item(text="伸了个懒腰")]))
+        # The day is crossed by the first turn; the turns after it were written
+        # without seeing the request, so nothing is asked of them.
+        out = service.commit_turn(self.ctx, self.record(self.ids(), revision, [overnight, self.item(), self.item(text="伸了个懒腰")]))
         self.assertEqual(out["turn"], turn + 3)
         self.assertTrue(session(self.ctx, self.sid)["state"]["requests"]["chapter_summary"])
+        # Undoing the last turn leaves the game as a record of the first two would have.
+        undone = service.undo_turn(self.ctx, {"session_id": self.sid, "request_id": self.ids(), "expected_revision": out["revision"]})
+        self.assertTrue(session(self.ctx, self.sid)["state"]["requests"]["chapter_summary"])
         with self.assertRaises(AppError) as caught:
-            service.commit_turn(self.ctx, self.batch(self.ids(), out["revision"], [self.item()]))
+            service.commit_turn(self.ctx, self.record(self.ids(), undone["revision"], [self.item()]))
         self.assertEqual(caught.exception.details[0]["path"], "$.turns[0].chapter_summary")
-        paid = service.commit_turn(self.ctx, self.batch(self.ids(), out["revision"], [self.item(chapter_summary="一夜过去，几个人各自收拾。")]))
-        self.assertEqual(paid["turns"][0]["chapter"]["to_turn"], turn + 3)
+        paid = service.commit_turn(self.ctx, self.record(self.ids(), undone["revision"], [self.item(chapter_summary="一夜过去，几个人各自收拾。")]))
+        self.assertEqual(paid["turns"][0]["chapter"]["to_turn"], turn + 2)
         self.assertFalse(session(self.ctx, self.sid)["state"]["requests"]["chapter_summary"])
+        # A later turn never carries one: the engine had asked for nothing when it was written.
+        with self.assertRaises(AppError) as caught:
+            service.commit_turn(self.ctx, self.record(self.ids(), paid["revision"], [self.item(), self.item(chapter_summary="写在第二项的章节。")]))
+        self.assertEqual([d["path"] for d in caught.exception.details], ["$.turns[1].chapter_summary"])
 
-    def test_a_rejected_batch_item_changes_nothing_and_says_which(self):
+    def test_a_rejected_turn_changes_nothing_and_says_which(self):
         before = self.snapshot()
         with self.assertRaises(AppError) as caught:
-            service.commit_turn(self.ctx, self.batch(self.ids(), before[0], [self.item(), self.item(npc="nobody")]))
+            service.commit_turn(self.ctx, self.record(self.ids(), before[0], [self.item(), self.item(npc="nobody")]))
         self.assertTrue(caught.exception.message.startswith("第 2 项"))
         self.assertTrue(all(d["path"].startswith("$.turns[1].") for d in caught.exception.details))
         with self.assertRaises(AppError) as caught:
-            service.commit_turn(self.ctx, self.batch(self.ids(), before[0], [self.item(), self.item(replaces_turn=before[1])]))
+            service.commit_turn(self.ctx, self.record(self.ids(), before[0], [self.item(), self.item(replaces_turn=before[1])]))
         self.assertEqual([d["path"] for d in caught.exception.details], ["$.turns[1].replaces_turn"])
         with self.assertRaises(AppError):
-            service.commit_turn(self.ctx, self.batch(self.ids(), before[0], [self.item()] * 13))
+            service.commit_turn(self.ctx, self.record(self.ids(), before[0], [self.item()] * 13))
         self.assertEqual(self.snapshot(), before)
 
     def test_idempotency_records_are_bounded(self):

@@ -89,7 +89,7 @@ def op_offscreen_beat(ctx, op, path):
         errs.append(detail(path + ".npc_id", "角色不存在：%s" % npc, None, NOT_FOUND))
     else:
         if npc in ctx.beat_npcs:
-            errs.append(detail(path + ".npc_id", "同一提交里 %s 只能有一段离屏片段" % ctx.name(npc), None, INVARIANT_VIOLATION))
+            errs.append(detail(path + ".npc_id", "同一回合里 %s 只能有一段离屏片段" % ctx.name(npc), None, INVARIANT_VIOLATION))
         if npc not in ctx.beat_candidates and npc not in ctx.required_beats:
             hint = "只能写上下文 requests.offscreen_beat_candidates 或推进时间后要求的 NPC"
             if ctx.time_ops == 0:

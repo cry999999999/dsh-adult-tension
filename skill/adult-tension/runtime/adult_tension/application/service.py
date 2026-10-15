@@ -32,7 +32,7 @@ from ..errors import (
     AppError,
     detail,
 )
-from ..jsonio import canonical
+from ..jsonio import canonical, copy
 from ..persistence import db, repo
 from ..projections import context as CX
 from . import specs
@@ -468,10 +468,14 @@ FAILURE_CODES = (INVALID_INPUT, INVARIANT_VIOLATION, NOT_FOUND, SAFETY_BLOCK)
 SESSION_ID_RE = re.compile(r"s_[a-z0-9]{2,38}")
 
 
-def choose_depth(state, result, failed_before=False):
-    """DESIGN_DECISIONS defaults: full after a failed commit, on a new place,
-    a new character or a new day, every 5 turns, and when a prologue is due."""
-    if failed_before or result["location_changed"] or result["new_characters"] or result["crossed_day"]:
+def choose_depth(state, results, failed_before=False):
+    """DESIGN_DECISIONS defaults: full after a failed commit, after a record of
+    several turns (the model wrote them from memory), on a new place, a new
+    character or a new day, every 5 turns, and when a prologue is due."""
+    if failed_before or len(results) > 1:
+        return "full"
+    result = results[0]
+    if result["location_changed"] or result["new_characters"] or result["crossed_day"]:
         return "full"
     if state["requests"].get("prologue") or state["turn"] % 5 == 0:
         return "full"
@@ -507,10 +511,10 @@ def commit_turn(ctx, payload):
 
 
 def _commit_turn(ctx, payload):
-    batch = isinstance(payload, dict) and "turns" in payload
-    payload = validate(specs.COMMIT_BATCH if batch else specs.COMMIT_TURN, payload)
-    items = payload["turns"] if batch else [payload]
-    commits = [{key: item[key] for key in DOMAIN_KEYS} for item in items]
+    from ..domain import turn
+
+    payload = validate(specs.COMMIT_TURN, payload)
+    commits = [{key: item[key] for key in DOMAIN_KEYS} for item in payload["turns"]]
     late = ["$.turns[%d].replaces_turn" % i for i, c in enumerate(commits) if i and c["replaces_turn"] is not None]
     if late:
         problems = [detail(path, "只有第一项可以改写上一回合", "去掉它；还没记录的回合直接改写正文", INVALID_INPUT) for path in late]
@@ -521,44 +525,46 @@ def _commit_turn(ctx, payload):
         state = session["state"]
         failed_before = repo.take_commit_failure(conn, sid) is not None
         unsaved = session["turns_since_save"]
-        steps = []
+        results = []
         for index, commit in enumerate(commits):
             unsaved += 1
+            # Undoing a later turn of a record goes back to where a record of
+            # the turns before it would have left the game, requests included.
+            undo_base = _record_end(state, session["content"]["world"], results) if results else None
             try:
-                state, result = _apply_turn(conn, session, state, commit, unsaved, now, index > 0)
+                state, result = _apply_turn(conn, session, state, commit, unsaved, now, undo_base)
             except AppError as err:
-                if batch:
-                    _in_batch(err, index)
+                _at_turn(err, index)
                 raise
-            steps.append((state["turn"], result))
+            results.append(result)
+        turn.close_record(state, session["content"]["world"], results)
+        repo.update_session(conn, state, now, turns_since_save=unsaved)
         if fault("kill_in_commit"):
             os._exit(137)  # test hook: the process dies inside the write transaction
-        slot = {"current_slot": session["current_slot"], "turns_since_save": unsaved}
-        last = steps[-1][1]
-        if not batch:
-            depth = choose_depth(state, last, failed_before)
-            project = CX.full if depth == "full" else CX.brief
-            response = {"revision": state["revision"], "turn": state["turn"]}
-            response.update(_turn_result(last))
-            response["clock"] = last["clock"]
-            response["context"] = project(state, session["content"], slot)
-            return response
-        # Several turns recorded at once: the model wrote them from memory, so
-        # it gets the full context back.
+        depth = choose_depth(state, results, failed_before)
+        project = CX.full if depth == "full" else CX.brief
         return {
             "revision": state["revision"],
             "turn": state["turn"],
-            "turns": [dict(_turn_result(result), turn=number) for number, result in steps],
-            "clock": last["clock"],
-            "context": CX.full(state, session["content"], slot),
+            "turns": [_turn_result(result) for result in results],
+            "clock": results[-1]["clock"],
+            "context": project(state, session["content"], {"current_slot": session["current_slot"], "turns_since_save": unsaved}),
         }
 
     return session_write(ctx, "commit-turn", payload, handler)
 
 
-def _apply_turn(conn, session, state, commit, unsaved, now, defer_requests=False):
-    """One turn inside the commit transaction: domain commit, undo point,
-    facts, session row, archive and turn log."""
+def _record_end(state, world, results):
+    from ..domain import turn
+
+    base = dict(state, requests=copy(state["requests"]), counters=copy(state["counters"]))
+    turn.close_record(base, world, results)
+    return base
+
+
+def _apply_turn(conn, session, state, commit, unsaved, now, undo_base=None):
+    """One turn of a record inside the commit transaction: domain commit, undo
+    point, facts, session row, archive and turn log."""
     from ..domain import turn
 
     sid = session["session_id"]
@@ -571,12 +577,14 @@ def _apply_turn(conn, session, state, commit, unsaved, now, defer_requests=False
             # its facts first, so the domain sees the facts from before it.
             repo.revert_turn_facts(conn, sid, replacing)
             state["facts"] = repo.FactSource(conn, sid)
-    new_state, result = turn.commit_turn(state, session["content"], commit, snapshot, defer_requests)
+    new_state, result = turn.commit_turn(state, session["content"], commit, snapshot)
     replaced = result["replaced_turn"]
     if replaced is not None:
         repo.mark_turn_undone(conn, sid, replaced)
         repo.delete_archive_turn(conn, sid, replaced)
         repo.put_undo_point(conn, sid, new_state["turn"], result["undo_base"])
+    elif undo_base is not None:
+        repo.put_undo_point(conn, sid, new_state["turn"], undo_base)
     else:
         repo.save_undo_point_from_session(conn, sid, new_state["turn"])
     repo.write_fact_changes(conn, sid, new_state["turn"], new_state["facts"])
@@ -597,13 +605,14 @@ def _apply_turn(conn, session, state, commit, unsaved, now, defer_requests=False
         commit["open_action"],
         now,
     )
-    # The next turn of a batch reads the facts as just written.
+    # The next turn of the record reads the facts as just written.
     new_state["facts"] = repo.FactSource(conn, sid)
     return new_state, result
 
 
 def _turn_result(result):
     out = {
+        "turn": result["turn"],
         "applied": result["applied"],
         "resolved_events": result["resolved_events"],
         "simulation": result["simulation"],
@@ -615,8 +624,8 @@ def _turn_result(result):
     return out
 
 
-def _in_batch(err, index):
-    """Point a rejected batch's problems at the item that caused them."""
+def _at_turn(err, index):
+    """Point a rejected record's problems at the turn that caused them."""
     for item in err.details:
         if isinstance(item, dict) and str(item.get("path", "")).startswith("$"):
             item["path"] = "$.turns[%d]%s" % (index, item["path"][1:])

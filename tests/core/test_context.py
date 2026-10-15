@@ -17,7 +17,7 @@ from adult_tension.domain.text import full_name
 from adult_tension.persistence import repo
 from adult_tension.projections import context as CX
 from helpers.domain import STORE
-from helpers.service import Ids, app, session
+from helpers.service import Ids, app, record, session
 
 TRIOS = sorted(
     (pack["id"], combo["id"])
@@ -89,13 +89,13 @@ class Game:
         if info["state"]["requests"].get("chapter_summary"):
             # A world that opens just before midnight crosses the day early.
             body["chapter_summary"] = "第一夜：几个人先后到了这里。"
-        return service.commit_turn(self.ctx, dict(body, session_id=self.sid, request_id=self.ids(), expected_revision=info["revision"]))
+        return service.commit_turn(self.ctx, record(self.sid, self.ids(), info["revision"], body))
 
     def play(self, turns):
         for _ in range(turns):
             info = repo.load_session(self.ctx.db(), self.sid)
             payload = self.narrator.commit(info["state"], info["content"])
-            service.commit_turn(self.ctx, dict(payload, session_id=self.sid, request_id=self.ids(), expected_revision=info["revision"]))
+            service.commit_turn(self.ctx, record(self.sid, self.ids(), info["revision"], payload))
 
     def introduce(self, count, tier, present, length, salt=0):
         info = self.state()

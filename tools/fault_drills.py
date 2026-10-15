@@ -93,10 +93,7 @@ def prepared(root, entry=ENTRY):
 
 
 def commit(sid, rid, revision, npc):
-    return {
-        "session_id": sid,
-        "request_id": rid,
-        "expected_revision": revision,
+    turn = {
         "action_mode": "continue",
         "player_input": "继续",
         "operations": [{"op": "npc_action", "npc_id": npc, "action": "看了一眼门口"}],
@@ -104,6 +101,7 @@ def commit(sid, rid, revision, npc):
         "summary": "有人看了一眼门口。",
         "open_action": "门口没有动静",
     }
+    return {"session_id": sid, "request_id": rid, "expected_revision": revision, "turns": [turn]}
 
 
 def save_intact(data_dir, entry=ENTRY):

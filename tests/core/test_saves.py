@@ -46,7 +46,7 @@ class Game:
     def turn(self, ops, sid=None, mode="continue", **extra):
         body = {"action_mode": mode, "player_input": "……", "operations": ops, "content_tags": [], "summary": "测试回合", "open_action": "场面停住"}
         body.update(extra)
-        return self.write(service.commit_turn, body, sid)
+        return self.write(service.commit_turn, {"turns": [body]}, sid)
 
     def save(self, name=None, **extra):
         body = dict(extra)

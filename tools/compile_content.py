@@ -29,7 +29,7 @@ from adult_tension import schema as S  # noqa: E402
 from adult_tension.domain import structure as ST  # noqa: E402
 from adult_tension.domain import opening, worldpack  # noqa: E402
 from adult_tension.errors import AppError  # noqa: E402
-from adult_tension.jsonio import decode_bytes, loads_strict, plain  # noqa: E402
+from adult_tension.jsonio import decode_bytes, loads_strict  # noqa: E402
 
 SRC = os.path.join(_runtime.REPO_ROOT, "content-src")
 LOCK = os.path.join(SRC, "content.lock.json")
@@ -146,7 +146,7 @@ def load_sources():
     problems = []
     meta = read_json(os.path.join(SRC, "content.json"))
     tags_raw = read_json(os.path.join(SRC, "tags.json"))
-    tags, errs = S.validate(TAGS_SPEC, plain(tags_raw))
+    tags, errs = S.validate(TAGS_SPEC, tags_raw)
     for e in errs:
         problems.append(dict(e, world="tags.json"))
     tag_ids = {t["id"] for t in (tags or {"tags": []})["tags"]}
@@ -158,7 +158,7 @@ def load_sources():
     if os.path.isdir(base_dir):
         for name in sorted(os.listdir(base_dir)):
             if name.endswith(".json"):
-                raw = plain(read_json(os.path.join(base_dir, name)))
+                raw = read_json(os.path.join(base_dir, name))
                 base, errs = S.validate(BASE_SPEC, raw)
                 for e in errs:
                     problems.append(dict(e, world="bases/" + name))
@@ -173,7 +173,7 @@ def load_sources():
     for name in sorted(os.listdir(world_dir)):
         if not name.endswith(".json"):
             continue
-        raw = plain(read_json(os.path.join(world_dir, name)))
+        raw = read_json(os.path.join(world_dir, name))
         if raw.get("extends"):
             base = bases.get(raw["extends"])
             if base is None:

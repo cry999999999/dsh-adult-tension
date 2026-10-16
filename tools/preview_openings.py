@@ -22,7 +22,7 @@ _runtime.use_runtime()
 from adult_tension.content.store import ContentStore  # noqa: E402
 from adult_tension.domain import opening, worldpack  # noqa: E402
 from adult_tension.errors import AppError  # noqa: E402
-from adult_tension.jsonio import decode_bytes, loads_strict, plain  # noqa: E402
+from adult_tension.jsonio import decode_bytes, loads_strict  # noqa: E402
 
 
 def load_pack(world_id, path):
@@ -30,7 +30,7 @@ def load_pack(world_id, path):
     if path is None:
         return store.world(world_id), store.index()["content_version"]
     with open(path, "rb") as handle:
-        raw = plain(loads_strict(decode_bytes(handle.read(), path), path))
+        raw = loads_strict(decode_bytes(handle.read(), path), path)
     pack, problems = worldpack.validate_world(raw, custom=raw.get("custom"), tag_ids=[t["id"] for t in store.tags()["tags"]])
     if pack is None:
         raise AppError("CONTENT_ERROR", "世界包有 %d 处问题；先用 verify-content --file 修好" % len(problems), problems)

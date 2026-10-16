@@ -20,7 +20,7 @@ from .. import RNG_VERSION, SAVE_FORMAT, SKILL_VERSION, STATE_SCHEMA_VERSION, pa
 from ..domain import state_check, worldpack
 from ..domain.upgrade import upgrade
 from ..errors import CONTENT_ERROR, INVALID_INPUT, UNSUPPORTED_VERSION, AppError, detail, fail
-from ..jsonio import canonical, decode_bytes, dumps, loads_strict, plain
+from ..jsonio import canonical, decode_bytes, dumps, loads_strict
 
 MAX_IMPORT_BYTES = 32 * 1024 * 1024
 DOC_KEYS = ("format", "schema_version", "content_version", "rng_version", "skill_version", "exported_at", "source", "session", "checksum")
@@ -119,7 +119,7 @@ def read_source(payload):
         with open(path, "rb") as handle:
             raw = handle.read()
         try:
-            return plain(loads_strict(decode_bytes(raw, "导入文件"), "导入文件")), raw
+            return loads_strict(decode_bytes(raw, "导入文件"), "导入文件"), raw
         except AppError as err:
             fail([dict(d, hint=d.get("hint") or "文件不完整或已损坏：请重新导出") for d in err.details] or [detail("$", err.message, "文件不完整或已损坏", INVALID_INPUT)])
     return payload["data"], None

@@ -162,7 +162,15 @@ class FullContextBudgetTest(unittest.TestCase):
         self.assertEqual([loc["id"] for loc in full["locations"]], [loc["id"] for loc in world["locations"]], label)
         pending = {e["id"] for e in state["events"].values() if e["state"] == "pending"}
         self.assertEqual({e["id"] for e in full["events"]}, pending, label)
-        self.assertEqual({lv["id"] for lv in full["leverage_all"]}, {lv["id"] for lv in SS.active_leverage(state)}, label)
+        # Every active leverage is listed; only after every other step does what
+        # touches no one on stage get cut, and the cut is counted.
+        active = SS.active_leverage(state)
+        listed = [lv["id"] for lv in full["leverage_all"]]
+        omitted = full.get("leverage_omitted", {}).get("count", 0)
+        self.assertLessEqual(set(listed), {lv["id"] for lv in active}, label)
+        self.assertEqual(len(listed) + omitted, len(active), label)
+        onstage = set(state["scene"]["present"])
+        self.assertLessEqual({lv["id"] for lv in active if {lv["holder"], lv["subject"]} & onstage}, set(listed), label)
         with_player = {(e["from"], e["to"]) for e in state["relationships"].values() if player in (e["from"], e["to"]) and ({e["from"], e["to"]} - {player}) <= people}
         self.assertEqual({(e["from"], e["to"]) for e in full["relationships"] if player in (e["from"], e["to"])}, with_player, label)
         if state["memory"]["chapters"]:
@@ -225,6 +233,34 @@ class FullContextBudgetTest(unittest.TestCase):
             self.assertTrue(all("line" not in item for item in full["background"]))
             player = state["player_id"]
             self.assertTrue(all(player in (e["from"], e["to"]) for e in full["relationships"]))
+
+    def test_many_people_holding_much_leverage_still_fit(self):
+        # Found by fuzzing: 17 important people and 43 active leverage after 700
+        # turns came to 21 KB. The leverage touching someone on stage was listed
+        # twice (safety.leverage and leverage_all) and none of it ever shrank.
+        with app() as ctx:
+            game = Game(ctx, CASTS[0][0], CASTS[0][1])
+            game.introduce(4, "major", True, 40, salt=8)
+            game.introduce(4, "major", False, 40, salt=9)
+            state = game.state()["state"]
+            player = state["player_id"]
+            here = sorted(cid for cid in state["scene"]["present"] if cid != player)
+            away = sorted(cid for cid in state["characters"] if cid not in state["scene"]["present"])
+            # Like the game the fuzzer found: a dozen touching people on stage,
+            # the rest held between people elsewhere (two over each pair).
+            pairs = ([(a, b) for a in here for b in away][:12] + [(a, b) for a in away for b in away if a != b] * 2)[:48]
+            for start in range(0, len(pairs), 12):
+                ops = [{"op": "leverage_set", "holder": a, "subject": b, "basis_text": "%s欠着一笔说不得的账" % fill(6, start + i), "origin": "账本"} for i, (a, b) in enumerate(pairs[start : start + 12])]
+                game.commit(ops + [{"op": "npc_action", "npc_id": here[0], "action": "翻了一页账本"}])
+            info = game.state()
+            self.assertGreaterEqual(len(SS.active_leverage(info["state"])), 48)
+            full = self.check(info, "leverage")
+            self.assertGreater(full["leverage_omitted"]["count"], 0)
+            brief = CX.brief(info["state"], info["content"])
+            self.assertTrue(brief["safety"]["leverage"])
+            self.assertNotIn("leverage", full["safety"])
+            onstage = [lv["id"] for lv in brief["safety"]["leverage"]]
+            self.assertEqual([lv["id"] for lv in full["leverage_all"][: len(onstage)]], onstage)
 
     def test_the_full_context_does_not_repeat_the_brief_lists(self):
         # known_facts and due_soon are the head of player_facts and events.

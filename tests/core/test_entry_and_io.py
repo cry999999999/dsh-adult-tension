@@ -67,6 +67,26 @@ class StrictJsonTest(unittest.TestCase):
             with self.assertRaises(AppError):
                 jsonio.loads_strict(text)
 
+    def test_a_lone_surrogate_escape_is_an_input_error_with_its_path(self):
+        # Valid JSON that no UTF-8 output can carry: a model that cut an emoji's escape in half.
+        text = '{"a": ["ok", "\\ud83d"], "\\udc00k": 1, "e": "\\ud83d\\ude00"}'
+        with self.assertRaises(AppError) as caught:
+            jsonio.loads_strict(text)
+        self.assertEqual(caught.exception.code, "INVALID_INPUT")
+        paths = [d["path"] for d in caught.exception.details]
+        self.assertEqual(paths, ["$.a[1]", "$.\\udc00k"])
+        json.dumps(caught.exception.to_dict(), ensure_ascii=False).encode("utf-8")  # the error itself can be written
+        self.assertEqual(jsonio.loads_strict('{"e": "\\ud83d\\ude00"}'), {"e": "\U0001F600"})  # a whole pair is fine
+
+    def test_nesting_beyond_the_limit_is_an_input_error(self):
+        deep = lambda n: '{"a": ' + "[" * n + "]" * n + "}"  # noqa: E731
+        jsonio.loads_strict(deep(jsonio.MAX_DEPTH - 1))
+        for n in (jsonio.MAX_DEPTH, 100000):  # the second one is past the parser's own recursion
+            with self.assertRaises(AppError) as caught:
+                jsonio.loads_strict(deep(n))
+            self.assertEqual(caught.exception.code, "INVALID_INPUT")
+            self.assertEqual(len(caught.exception.details), 1)
+
     def test_bom_tolerated_and_non_utf8_rejected(self):
         text = jsonio.decode_bytes(b"\xef\xbb\xbf" + '{"名":"林婉"}'.encode("utf-8"))
         self.assertEqual(jsonio.loads_strict(text), {"名": "林婉"})

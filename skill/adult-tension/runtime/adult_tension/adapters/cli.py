@@ -26,7 +26,7 @@ from ..errors import (
     detail,
     exit_code_for,
 )
-from ..jsonio import decode_bytes, dumps, loads_strict, plain
+from ..jsonio import copy, decode_bytes, dumps, loads_strict
 
 GLOBAL_FLAGS = {
     "--json": "bool",
@@ -188,14 +188,16 @@ def log_internal_error(data_dir, error_id, text):
             os.replace(path, path + ".1")
         with open(path, "ab") as handle:
             stamp = time.strftime("%Y-%m-%dT%H:%M:%S")
-            handle.write(("[%s] %s\n%s\n" % (stamp, error_id, text)).encode("utf-8"))
+            handle.write(("[%s] %s\n%s\n" % (stamp, error_id, text)).encode("utf-8", "backslashreplace"))
         return path
     except OSError:
         return None
 
 
 def write_text(stream, text):
-    stream.write(text.encode("utf-8"))
+    # Input with a lone surrogate is refused, but a path from the file system
+    # can still carry one; written as a \u escape it keeps the JSON valid.
+    stream.write(text.encode("utf-8", "backslashreplace"))
     stream.flush()
 
 
@@ -241,7 +243,9 @@ def execute(argv, skill_root, stdin=None, environ=None):
         if environ.get("ADULT_TENSION_FAULT") == "internal_error":
             raise RuntimeError("injected internal error")  # test hook: exercises the INTERNAL_ERROR path
         module = __import__(command.module, fromlist=[command.func])
-        data = getattr(module, command.func)(ctx, plain(payload))
+        # the command works on its own copy (an import upgrades an old state in
+        # place); the trace records the input as it was given
+        data = getattr(module, command.func)(ctx, copy(payload))
         if environ.get("ADULT_TENSION_FAULT") == "unserializable_result":
             data["probe"] = object()  # test hook: a result that cannot become JSON
         if "next_request_id" not in data:

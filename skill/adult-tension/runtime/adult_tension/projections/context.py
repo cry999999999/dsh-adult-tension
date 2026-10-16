@@ -7,7 +7,9 @@ The brief context trims lists in a fixed order. The full context degrades
 detail step by step (_full_steps), least relevant first, and never drops a
 section the contract names: every major or supporting NPC keeps at least a
 summary card, every pending event and active leverage, every world rule and
-location, the latest chapter and a name pool to draw new names from.
+location, the latest chapter and a name pool to draw new names from. Only a
+game that piled up leverage, after every other step, has the leverage that
+touches no one on stage cut and counted (leverage_omitted).
 """
 
 import json
@@ -99,13 +101,17 @@ def _events(state, world, limit=None):
 
 
 def _leverage(state, only_present=False):
+    """Active leverage touching someone on stage, then (unless only_present)
+    the rest: the brief list is the head of the full one."""
     present = set(state["scene"]["present"])
-    out = []
+    out, rest = [], []
     for lv in SS.active_leverage(state):
-        if only_present and not ({lv["holder"], lv["subject"]} & present):
-            continue
-        out.append({"id": lv["id"], "holder": lv["holder"], "subject": lv["subject"], "basis_fact_id": lv["basis_fact_id"]})
-    return out
+        item = {"id": lv["id"], "holder": lv["holder"], "subject": lv["subject"], "basis_fact_id": lv["basis_fact_id"]}
+        if {lv["holder"], lv["subject"]} & present:
+            out.append(item)
+        elif not only_present:
+            rest.append(item)
+    return out + rest
 
 
 def _voice(state, cid):
@@ -275,6 +281,7 @@ def full(state, content, save=None):
     # only repeat them.
     context.pop("known_facts", None)
     context.pop("due_soon", None)
+    context["safety"].pop("leverage", None)
     context["player_facts"] = player_facts(state, 30)
     context["events"] = _events(state, world)
     context["leverage_all"] = _leverage(state)
@@ -534,6 +541,22 @@ def _full_steps(context, state):
             if not ({edge["from"], edge["to"]} & (onstage - {state["player_id"]})):
                 edge.pop("recent", None)
 
+    def leverage_offstage():
+        # Who holds whom stays; what it rests on matters once one of them is here.
+        onstage = set(state["scene"]["present"])
+        for lv in context["leverage_all"]:
+            if not ({lv["holder"], lv["subject"]} & onstage):
+                lv.pop("basis_fact_id", None)
+
+    def leverage_cut():
+        onstage = set(state["scene"]["present"])
+        items = context["leverage_all"]
+        cut = 0
+        while items and not ({items[-1]["holder"], items[-1]["subject"]} & onstage) and size_of(context) > FULL_LIMIT - SIZE_FIELD_RESERVE:
+            items.pop()
+            cut += 1
+            context["leverage_omitted"] = {"count": cut, "hint": "另有 %d 条不涉及在场者的生效把柄没列出；需要时用 status（level: debug）看 state.leverage" % cut}
+
     def npc_edges():
         player = state["player_id"]
         context["relationships"] = [e for e in context["relationships"] if player in (e["from"], e["to"])]
@@ -575,6 +598,7 @@ def _full_steps(context, state):
     yield background_sample_lines
     yield npc_edges
     yield reasons_offstage
+    yield leverage_offstage
     yield from shrink_cards(True, _card_compact)
     # A crowded scene: everyone on stage but the most relevant person keeps
     # a summary, then a roster line.
@@ -596,6 +620,10 @@ def _full_steps(context, state):
     yield from shrink_cards(False, _roster_clipped)
     for cid in crowd:
         yield lambda cid=cid: _replace_card(context, cid, _roster_clipped)
+    # A game that piled up leverage: what touches no one on stage is cut from
+    # the end, and the cut is counted (status lists it all). Whatever touches
+    # someone on stage always stays.
+    yield leverage_cut
 
 
 def _fit_full(context, state):

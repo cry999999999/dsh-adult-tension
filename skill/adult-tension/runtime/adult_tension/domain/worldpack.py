@@ -420,12 +420,10 @@ def walk_texts(pack):
     found = []
 
     # Plain recursion into one list: nested generators made this the slowest
-    # part of validating a pack.
+    # part of validating a pack. A path is built only for a string or a
+    # container (doctor walks every installed pack).
     def rec(node, path, key):
-        if isinstance(node, str):
-            if key not in skip_keys:
-                found.append((path, node))
-        elif isinstance(node, dict):
+        if isinstance(node, dict):
             for k, v in node.items():
                 if k in skip_keys and not (k == "exits" and isinstance(v, list) and v and isinstance(v[0], dict)):
                     continue
@@ -433,10 +431,17 @@ def walk_texts(pack):
                     for pk, pv in v.items():
                         found.append(("%s.%s.%s" % (path, k, pk), pv))
                     continue
-                rec(v, "%s.%s" % (path, k), k)
+                if isinstance(v, str):
+                    found.append(("%s.%s" % (path, k), v))
+                elif isinstance(v, (dict, list)):
+                    rec(v, "%s.%s" % (path, k), k)
         elif isinstance(node, list):
             for i, v in enumerate(node):
-                rec(v, "%s[%d]" % (path, i), key)
+                if isinstance(v, str):
+                    if key not in skip_keys:
+                        found.append(("%s[%d]" % (path, i), v))
+                elif isinstance(v, (dict, list)):
+                    rec(v, "%s[%d]" % (path, i), key)
 
     rec(pack, "$", None)
     return found
@@ -757,11 +762,12 @@ class _Checker:
         seen_sentences = {}
         for path, text in self.texts():
             stripped = text.strip()
-            if stripped in PLACEHOLDER_JUNK or stripped.lower() == path.rsplit(".", 1)[-1].split("[")[0].lower():
+            # field names are ASCII ids, so only an ASCII text can repeat one
+            if stripped in PLACEHOLDER_JUNK or (stripped.isascii() and stripped.lower() == path.rsplit(".", 1)[-1].split("[")[0].lower()):
                 self.add(path, "占位式内容：%r" % text, "写成真正可以进入回合的内容")
             if "{" in text:
                 self._placeholder_checks(path, text)
-            if self._pronoun_checked(path, template_gender) and gendered_pronoun_positions(text):
+            if gendered_pronoun_positions(text) and self._pronoun_checked(path, template_gender):
                 self.add(path, "可变性别的文本里写死了“他/她”：%s" % text[:40], "用 {npc.ta} 或 {槽位.ta} 代替，或直接写名字")
             if path.endswith(".pattern"):
                 continue

@@ -1,5 +1,6 @@
 """Saves, sessions, export and import (ACCEPTANCE.md 2 "存档"; RUNTIME_PROTOCOL 9)."""
 
+import io
 import json
 import os
 import shutil
@@ -10,11 +11,12 @@ import zlib
 
 import _bootstrap  # noqa: F401
 from adult_tension import STATE_SCHEMA_VERSION
+from adult_tension.adapters import cli
 from adult_tension.application import service, transfer
 from adult_tension.domain import state as SS
 from adult_tension.errors import AppError
 from adult_tension.persistence import repo
-from helpers.cli import REPO_ROOT, SKILL_ROOT
+from helpers.cli import REPO_ROOT, SKILL_ROOT, clean_env
 from helpers.service import Ids, app, open_game, session
 
 V1_FIXTURE = os.path.join(REPO_ROOT, "tests", "fixtures", "db_v1", "adult_tension.db")
@@ -264,12 +266,20 @@ class ExportImportTest(unittest.TestCase):
             "session": {"state": state, "content": json.loads(zlib.decompress(content_blob)), "archive": json.loads(zlib.decompress(archive_blob))},
         }
         doc["checksum"] = transfer.checksum(doc)
+        body = json.dumps({"request_id": "import_old_cli", "data": doc}, ensure_ascii=False).encode("utf-8")
         done = self.importing(data=doc)
         self.assertEqual(done["upgraded_from"], 1)
         self.assertTrue(os.path.isfile(done["backup"]))
         self.assertEqual(self.game.state(done["session_id"])["schema_version"], STATE_SCHEMA_VERSION)
         npc = next(c for c in self.game.state(done["session_id"])["scene"]["present"] if c != "player")
         self.game.turn([act(npc)], sid=done["session_id"])
+        # The import upgrades the state in place, on the command's own copy: the
+        # input the command line hands back (the evaluation trace records it)
+        # is still the one given.
+        argv = ["import-save", "--json", "--data-dir", os.path.join(self.tmp, "cli-data"), "--input-file", "-"]
+        envelope, _code, _options, _text, given = cli.execute(argv, SKILL_ROOT, io.BytesIO(body), clean_env())
+        self.assertTrue(envelope["ok"], envelope)
+        self.assertEqual(given["data"]["session"]["state"]["schema_version"], 1)
 
     def test_export_paths(self):
         for bad in ("relative.json", os.path.join(self.tmp, "..", "x.json"), os.path.join(self.tmp, "x.txt"), os.path.join(SKILL_ROOT, "x.json"), os.path.join(self.tmp, "no-such-dir", "x.json")):

@@ -10,7 +10,7 @@ of producing a broken opening.
 import os
 
 from ..errors import CONTENT_ERROR, AppError, detail
-from ..jsonio import decode_bytes, loads_strict, plain
+from ..jsonio import decode_bytes, loads_strict
 
 
 class ContentStore:
@@ -32,7 +32,7 @@ class ContentStore:
                 [detail("content/%s" % rel, str(exc.strerror or exc), "重新安装 Skill 目录")],
             )
         try:
-            return plain(loads_strict(decode_bytes(raw, "content/%s" % rel), "content/%s" % rel))
+            return loads_strict(decode_bytes(raw, "content/%s" % rel), "content/%s" % rel)
         except AppError as err:
             raise AppError(
                 CONTENT_ERROR,

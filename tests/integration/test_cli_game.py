@@ -174,6 +174,18 @@ class EncodingAndInputTest(unittest.TestCase):
             code, env, _raw = run_cli(["version", "--input-file", "-"], data_dir, stdin_bytes='{"encoding_check": "汉字"}'.encode("utf-8"), env=ENV)
             self.assertEqual(code, 0, env)
 
+    def test_input_no_output_can_carry_still_gets_one_envelope(self):
+        # A lone surrogate escape used to crash the process with nothing on stdout,
+        # and deep nesting came back as INTERNAL_ERROR.
+        with temp_dir() as tmp:
+            data_dir = os.path.join(tmp, "data")
+            surrogate = b'{"request_id": "req_surr_000001", "mode": "daily", "world_query": "\\ud800"}'
+            deep = b'{"request_id": "req_deep_000001", "mode": "daily", "x": ' + b"[" * 50000 + b"]" * 50000 + b"}"
+            for body, path in ((surrogate, "$.world_query"), (deep, "$")):
+                code, env, _raw = run_cli(["new-game", "--input-file", "-"], data_dir, stdin_bytes=body, env=ENV)
+                self.assertEqual((code, env["error"]["code"]), (10, "INVALID_INPUT"), env)
+                self.assertEqual(env["error"]["details"][0]["path"][: len(path)], path)
+
     def test_a_bash_here_document_carries_chinese_in_one_call(self):
         # SKILL.md: in bash the input follows the command as a quoted here-document.
         bash = shutil.which("bash")

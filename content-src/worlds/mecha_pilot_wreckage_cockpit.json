@@ -1665,15 +1665,15 @@
   "daily_activities": [
     {
       "id": "a_cockpit_blackout_suit_breach_cutaway",
-      "title": "座舱断电凝胶泄漏剪刀破拆抗荷服",
+      "title": "漂流第三天的配给",
       "location_ids": [
         "wreckage_cockpit_central_capsule"
       ],
       "duration_minutes": 25,
       "beats": [
-        "动力堆被击穿、主电熄灭，少校因抗荷服凝胶泄漏冻伤、呼吸困难，瘫在驾驶座上仍在报故障代码。",
-        "青年迅速持绝缘剪刀上前单膝跨在座椅边缘，少校忍羞命令其沿脊椎导轨挑断后背二十四道减压锁扣。",
-        "锋利剪刀精准切断紧绷尼龙带，冰凉破损抗荷服剥落，二人赤足挤入单人减震缓冲座拉紧束带贴身相拥。"
+        "漂流第三天，救生舱里的灯调到了最低，少校和机械士分着一管营养膏。",
+        "少校说营养膏是草莓味的，可吃起来像牙膏。机械士笑出了声。",
+        "吃完，少校把空管子塞进回收口，说母港的食堂今天应该有咖喱。"
       ],
       "hook_ids": [
         "h_lin_cut_suit_whisper",
@@ -1731,20 +1731,18 @@
     },
     {
       "id": "a_climax_rebel_corvette_sniping_battle",
-      "title": "石英裂纹隔窗盲狙引爆敌舰燃料堆",
+      "title": "舱盖窗外的地球",
       "location_ids": [
         "external_canopy_inspection_hatch"
       ],
       "duration_minutes": 30,
       "beats": [
-        "叛军赵舰长率隐形舰抵近企图破窗抓捕，青年钻入检修隔舱引爆高压液氢射流炸飞破窗无人机。",
-        "少校在双人神经同调加持下反扣激光手枪隔着石英窗蛛网裂纹一枪精准穿透敌舰反物质喷口引发核殉爆。",
-        "绚烂核火球照亮近地轨道亿万星辰，叛乱搜捕战舰凌空解体化为宇宙尘埃，深空重归安宁死寂。"
+        "救生舱慢慢转过来，舱盖窗外出现了一大片蓝色的地球。",
+        "少校贴着窗看了很久，说开了五年机甲，从没这样安静地看过它。",
+        "机械士凑过来，两人的肩膀挨在一起，谁也没有挪开。"
       ],
       "hook_ids": [
-        "h_zhao_radar_scan_howl",
-        "h_lin_laser_pistol_draw",
-        "h_chen_tugboat_horn_howl"
+        "h_zhao_radar_scan_howl"
       ],
       "start_minute": 95,
       "tags": [
@@ -1753,20 +1751,19 @@
     },
     {
       "id": "a_dawn_atmospheric_entry_tugboat_docking",
-      "title": "大气层摩擦边缘救援拖船极限对接",
+      "title": "修好一盏灯",
       "location_ids": [
-        "external_canopy_inspection_hatch"
+        "avionics_maintenance_crawlway_bay"
       ],
       "duration_minutes": 20,
       "beats": [
-        "逃生舱无动力坠入地球平流层外沿，外壳摩擦生热泛起耀眼橘红火光，重力加速度将二人死死压紧在座椅上。",
-        "老陈驾驶重型救援拖船破空杀至，发射纳米引力索强行捕捉住翻滚的逃生舱完成加压气密对接。",
-        "纯净高压空气涌入座舱，少校抚摸青年脸上血痕泪眼微泛，沙哑许下若归母港定生死相随之终身誓言。"
+        "机械士钻进尾部检修夹道，花了一个小时修好了一盏备用灯。",
+        "灯亮起来时，少校在座舱里鼓了两下掌，说你总算有点用了。",
+        "机械士爬回来，满脸油污，少校拿袖子替机械士擦了一下。"
       ],
       "hook_ids": [
-        "h_lin_iron_cross_pin_whisper",
-        "h_chen_tugboat_horn_howl",
-        "h_eva_cadence_countdown"
+        "h_lin_neural_overload_whisper",
+        "h_zhao_radar_scan_howl"
       ],
       "start_minute": 125,
       "tags": [

@@ -1665,19 +1665,18 @@
   "daily_activities": [
     {
       "id": "a_altar_collapse_ankle_splint_first_aid",
-      "title": "落石崩塌断壁避难单膝正骨敷药",
+      "title": "圣坛前的净化仪式",
       "location_ids": [
         "collapsed_moonlight_altar_triangular_voi"
       ],
       "duration_minutes": 25,
       "beats": [
-        "地脉剧震万吨巨石倾塌，青年飞身以龙鳞重盾挡下落石，圣女长裙碎裂足踝脱位跌入青年怀中。",
-        "青年把圣女扶到神像后，单膝跪地，以军旅推拿手法咔嚓一声完成踝骨复位。",
-        "圣女疼得泪光盈盈，咬着下唇一声不吭，素手死死攥紧青年肩甲，二人背靠背守在冰冷石壁下。"
+        "女祭司长在月神圣坛前主持净化仪式，白袍拖在古老的石阶上。",
+        "护卫的青年站在石柱边，按规矩背对着祭坛。",
+        "仪式结束，女祭司长唤青年过来，把一枚月辉石放进对方掌心：护身用的。"
       ],
       "hook_ids": [
         "h_celestia_whisper_broken_staff",
-        "h_malakor_crowbar_creak_hiss",
         "h_gawain_horn_distant_call"
       ],
       "start_minute": 0,
@@ -1709,20 +1708,23 @@
     },
     {
       "id": "a_lava_ledge_shield_bash_ambush_counter",
-      "title": "熔岩断崖龙鳞重盾狂暴击退暗影死士",
+      "title": "崖边看熔岩河",
       "location_ids": [
         "abyssal_lava_chasm_fissure_ledge"
       ],
       "duration_minutes": 35,
       "beats": [
-        "暗影裁决官率死士自熔岩裂隙扑杀突袭，青年持重盾暴起发难如钢铁狂潮般将数名刺客撞飞入火海。",
-        "圣女在断壁后挥动断杖释放神圣烈阳闪光致盲全场，青年反手一记重锤将裁决官护心镜当场砸得粉碎。",
-        "二人背靠赤红滚烫熔岩悬崖相视喘息，在火光与血雨中淬炼出性命相托之绝对信任与释然。"
+        "女祭司长想看一眼地底的熔岩河，青年陪着走到崖边。",
+        "热浪扑面，女祭司长的银发被吹乱，青年下意识挡在了外侧。",
+        "女祭司长看着那片红光，说古书上写这是女神流下的泪。"
       ],
       "hook_ids": [
-        "h_malakor_crowbar_creak_hiss",
-        "h_celestia_staff_gleam_draw",
-        "h_gawain_horn_distant_call"
+        "hd_high_priestess_celestia_elven_pure",
+        "hd_paladin_commander_gawain_rescue_dawn",
+        "hd_corrupted_shadow_inquisitor_malakor",
+        "hd_defecting_shadow_acolyte_nyx",
+        "hd_corrupt_archbishop_emissary_belial",
+        "hd_labyrinth_guide_freya"
       ],
       "start_minute": 60,
       "tags": [
@@ -1731,15 +1733,15 @@
     },
     {
       "id": "a_crypt_aqueduct_carry_escape_breakthrou",
-      "title": "殉道墓窖横抱涉水重锤轰塌石闸",
+      "title": "墓窖里祭奠先贤",
       "location_ids": [
         "ancient_templar_crypt_escape_drain"
       ],
       "duration_minutes": 30,
       "beats": [
-        "熔岩上涨逼近，青年弯腰将行动不便之圣女轻柔横抱在坚实胸膛涉过冰凉刺骨之地下暗河水。",
-        "面对卡死之古代石闸，青年单手抱紧圣女另一手抡起矮人战锤狂暴连续轰击数十锤将石闸强行轰塌。",
-        "高文骑士团长率精锐圣白银骑士破门杀入，耀眼日光如金瀑般照亮相依相偎浑身是伤的二人。"
+        "女祭司长在殉道骑士的墓窖里点起长明灯，为先贤祈祷。",
+        "青年跟着单膝跪下，女祭司长说这里埋着自己的老师。",
+        "祈祷结束，两人沿着暗沟边的石路慢慢走回去。"
       ],
       "hook_ids": [
         "h_gawain_horn_distant_call",
@@ -1753,15 +1755,15 @@
     },
     {
       "id": "a_ground_encampment_unmasking_trial_triu",
-      "title": "地上中军大帐当众亮证斩断伪善权杖",
+      "title": "仪式间隙的干果",
       "location_ids": [
         "collapsed_moonlight_altar_triangular_voi"
       ],
       "duration_minutes": 20,
       "beats": [
-        "贝利亚副主教企图封锁消息强令封井，圣女在青年护卫下昂首步入大帐当众掷出通敌传导水晶。",
-        "青年展示断裂战锤与重盾上留存之暗影符文铁证如山，高文团长当场拔剑将贝利亚权杖斩断收押入狱。",
-        "全军数千名圣骑士整齐划一单膝跪地举剑向二人在深渊绝境捍卫神圣之壮举致以至高军礼。"
+        "仪式的间隙，女祭司长坐在圣坛边的台阶上，吃着青年带来的干果。",
+        "青年说起地面上骑士团的日子，女祭司长听得很认真。",
+        "女祭司长忽然问：你有没有想过，不当骑士？"
       ],
       "hook_ids": [
         "h_belial_crystal_trigger_screech",
@@ -1775,15 +1777,15 @@
     },
     {
       "id": "a_dawn_cathedral_eternal_covenant_corona",
-      "title": "王都大圣堂晨曦破晓授勋神圣血契",
+      "title": "女祭司长的祝福",
       "location_ids": [
         "collapsed_moonlight_altar_triangular_voi"
       ],
       "duration_minutes": 25,
       "beats": [
-        "晨光穿透大圣堂千瓣琉璃窗洒落神坛，特大平叛与深渊远征大典盛大举行，万众欢呼响彻云霄。",
-        "圣女将佩戴在胸前心口之月神命符亲手为青年挂在颈间，公开宣布青年为终身独一守护圣殿骑士长。",
-        "二人并肩立于月神圣像前相视凝眸深情浅笑，开启涤荡世间黑暗、执手护佑苍生之辉煌崭新传奇篇章。"
+        "净化仪式圆满结束，女祭司长按王庭的惯例，为护卫者祝福。",
+        "女祭司长把手按在青年额前，念完祝词，手却迟迟没有拿开。",
+        "青年抬起头，女祭司长红着脸说：这一句……不是祝词里的。"
       ],
       "hook_ids": [
         "h_celestia_chest_amulet_pin_whisper",
@@ -2222,6 +2224,42 @@
         "collapsed_moonlight_altar_triangular_voi"
       ],
       "text": "{high_priestess_celestia_elven_pure.name}双手因剧痛与寒气发抖，转头看着你，把你的手拉过来覆在半截法杖上：“……握住法杖，和我一起。神器碎了，只能借两个人的力量……最后一次神圣破邪圣光，就现在！”"
+    },
+    {
+      "id": "hd_high_priestess_celestia_elven_pure",
+      "kind": "approach",
+      "slot": "high_priestess_celestia_elven_pure",
+      "text": "{high_priestess_celestia_elven_pure.name}捧着一盏月光灯走到你身边：“晚祷结束了。陪我在回廊里走一走吧。”"
+    },
+    {
+      "id": "hd_paladin_commander_gawain_rescue_dawn",
+      "kind": "approach",
+      "slot": "paladin_commander_gawain_rescue_dawn",
+      "text": "{paladin_commander_gawain_rescue_dawn.name}摘下头盔，冲你笑：“今日休沐，去城里喝一杯？”"
+    },
+    {
+      "id": "hd_corrupted_shadow_inquisitor_malakor",
+      "kind": "approach",
+      "slot": "corrupted_shadow_inquisitor_malakor",
+      "text": "{corrupted_shadow_inquisitor_malakor.name}把一本教典放在你面前：“读过吗？我想听听你的看法。”"
+    },
+    {
+      "id": "hd_defecting_shadow_acolyte_nyx",
+      "kind": "approach",
+      "slot": "defecting_shadow_acolyte_nyx",
+      "text": "{defecting_shadow_acolyte_nyx.name}抱着一捧白花站在门口：“神殿的花开了，给你留了几枝。”"
+    },
+    {
+      "id": "hd_corrupt_archbishop_emissary_belial",
+      "kind": "approach",
+      "slot": "corrupt_archbishop_emissary_belial",
+      "text": "{corrupt_archbishop_emissary_belial.name}斟了两杯葡萄酒，示意你坐：“例行巡视而已，放轻松。”"
+    },
+    {
+      "id": "hd_labyrinth_guide_freya",
+      "kind": "approach",
+      "slot": "labyrinth_guide_freya",
+      "text": "{labyrinth_guide_freya.name}摊开一张旧地图冲你招手：“下回出发前，先把路线对一遍。”"
     }
   ],
   "twists": [

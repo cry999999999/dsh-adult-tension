@@ -1753,34 +1753,42 @@
     },
     {
       "id": "act_pulley_chain_jam_crisis",
-      "title": "高空突发滚轮锁链绞死险情",
+      "title": "书梯上取书",
       "location_ids": [
         "loc_atrium_ladder_high_platform",
         "loc_stacks_fifth_rare_aisle"
       ],
       "duration_minutes": 15,
-      "start_minute": 630,
+      "start_minute": 900,
       "beats": [
-        "馆员探身取下第四层清代孤本善本瞬间书梯阻尼铜轮发生回弹偏位",
-        "梯架棘齿逆向卡死衣领内细银饰链并持续往深处咬合",
-        "棉麻前襟受拉扯大敞露出雪白肩颈且娇躯紧贴书梯无法后退",
-        "走廊尽头皮鞋踏地之清脆声响步步紧逼仅剩十五秒大关"
+        "周五下午，馆员登上黄铜书梯，从顶层取下几部要晒的清代善本。",
+        "书梯滑动时发出轻微的吱呀声，馆员一手扶梯一手抱书，动作很稳。",
+        "下来时馆员把书递给等在下面的人：小心，比你想的重。"
+      ],
+      "hook_ids": [
+        "hook_2",
+        "hook_3",
+        "hook_5"
       ]
     },
     {
       "id": "act_brass_bookmark_glide_escape",
-      "title": "黄铜书签微观杠杆破拆脱困",
+      "title": "夜读会开始前",
       "location_ids": [
         "loc_atrium_ladder_high_platform",
         "loc_ground_reading_atrium_hall"
       ],
       "duration_minutes": 20,
-      "start_minute": 645,
+      "start_minute": 1110,
       "beats": [
-        "师兄高举经卷封面构筑视界死角同时前台馆员快步拦截老馆长递交公文",
-        "馆员纤手自袖筒摸出两毫米冷轧纯黄铜直角古籍借阅平签",
-        "将书签硬棱直角精准探入铜轮齿隙逆止簧片斜向施加三点八牛顿剪切力矩",
-        "轻响中簧片挑开脱钩，馆员瞬息合拢开衫单手托善本滑降落地脱险"
+        "夜读会开始前，馆员在天井阅览厅里摆椅子，给每个座位放一张手写的书签。",
+        "师兄来帮忙，问书签上写的是什么，馆员说是今晚要读的那首诗。",
+        "读者陆续进来，馆员站在门口，轻声提醒每个人关掉手机。"
+      ],
+      "hook_ids": [
+        "hook_2",
+        "hook_3",
+        "hook_5"
       ]
     },
     {

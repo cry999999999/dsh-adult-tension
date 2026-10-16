@@ -1443,9 +1443,9 @@
   },
   {
    "beats": [
-    "花洒拧至最大喷洒出滚烫水汽，轰鸣水流彻底淹没一切窃听可能。",
-    "两人背靠大理石墙面并肩而立，指尖蘸水在镜面推演撤离路线图。",
-    "搭档神情严肃利落拆解备用手枪，低声交代遭遇伏击时的自卫要领。"
+    "登船第一晚，两人在蜜月套房的浴室里打开花洒，借着水声对一遍假夫妻的口供。",
+    "认识几年、在哪里求婚、谁先说的我爱你，一条条对下来，搭档背得比你还熟。",
+    "对完最后一条，搭档关掉花洒，说：明天早餐，记得叫我亲爱的。"
    ],
    "duration_minutes": 50,
    "hook_ids": [
@@ -1457,33 +1457,36 @@
    "location_ids": [
     "ensuite_marble_bathroom"
    ],
-   "start_minute": 25,
+   "start_minute": 1320,
    "tags": [
     "intimate"
    ],
-   "title": "水雾浴室死角密谋"
+   "title": "浴室里对口供"
   },
   {
    "beats": [
-    "狂风暴雨横扫柚木甲板，特工借挽手散步掩护接近三号救生艇架。",
-    "探照灯光柱交替掠过舷窗，两人借救生艇阴影迅速避开哨兵视线。",
-    "指尖暗中测试救生艇手动脱钩钢索，确认下水撤离通路畅通。"
+    "傍晚的头等舱散步甲板上，乘客们三三两两吹着海风，乐队在远处奏着爵士。",
+    "两人挽着手慢慢走，搭档笑着跟每一对擦肩而过的夫妻点头。",
+    "走到船尾，搭档靠在栏杆上看落日，低声说：演得不错，继续保持。"
    ],
    "duration_minutes": 55,
    "hook_ids": [
-    "h_kane_patrol_interrogate",
-    "h_clara_cigarette_offer",
-    "h_viktor_cocktail_knife_slide"
+    "hd_senior_spy_partner_elena",
+    "hd_security_chief_inquisitor_kane",
+    "hd_arms_heiress_guest_clara",
+    "hd_purser_code_operator_marcus",
+    "hd_disavowed_cleaner_viktor",
+    "hd_casino_card_counter_lucas"
    ],
    "id": "a_deck_storm_recon",
    "location_ids": [
     "deck_first_class_promenade"
    ],
-   "start_minute": 85,
+   "start_minute": 1110,
    "tags": [
     "workplace_power"
    ],
-   "title": "甲板风暴雨夜侦查"
+   "title": "甲板上散步"
   },
   {
    "beats": [
@@ -1531,9 +1534,9 @@
   },
   {
    "beats": [
-    "天际微露晨曦，暴风雨渐歇，全船雷达盲区进入最后五分钟倒数。",
-    "发报完成的确认回执信号自耳机传来，母港接应潜艇已抵达预定浮标。",
-    "特工二人整理衣冠并肩走向撤离通道，成功瓦解敌方全盘围猎阴谋。"
+    "清晨，甲板上只有几个晨跑的人，两人端着咖啡坐在躺椅上看海。",
+    "搭档把墨镜推到头顶，说这是自己出任务以来第一次真正看日出。",
+    "服务生走过来问要不要续杯，搭档挽住你的胳膊：我先生也要一杯。"
    ],
    "duration_minutes": 35,
    "hook_ids": [
@@ -1545,11 +1548,11 @@
    "location_ids": [
     "deck_first_class_promenade"
    ],
-   "start_minute": 225,
+   "start_minute": 400,
    "tags": [
     "workplace_power"
    ],
-   "title": "破晓盲区脱出收网"
+   "title": "清晨的甲板咖啡"
   }
  ],
  "default_npc_gender_mix": {
@@ -1728,6 +1731,48 @@
    ],
    "slot": "disavowed_cleaner_viktor",
    "text": "{disavowed_cleaner_viktor.name}正倚在吧台前以亚麻布一丝不苟地擦拭调酒器，动作优雅至极，身侧冰桶下却隐约露出一截锋利细钢丝。"
+  },
+  {
+   "id": "hd_senior_spy_partner_elena",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "senior_spy_partner_elena",
+   "text": "{senior_spy_partner_elena.name}挽住你的胳膊，笑着凑到你耳边：“今晚只是度假，别绷着脸，亲爱的。”"
+  },
+  {
+   "id": "hd_security_chief_inquisitor_kane",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "security_chief_inquisitor_kane",
+   "text": "{security_chief_inquisitor_kane.name}在走廊里冲你点头致意：“晚宴八点开始，祝两位今晚尽兴。”"
+  },
+  {
+   "id": "hd_arms_heiress_guest_clara",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "arms_heiress_guest_clara",
+   "text": "{arms_heiress_guest_clara.name}隔着阳台冲你举了举杯：“邻居，一起看日落吗？”"
+  },
+  {
+   "id": "hd_purser_code_operator_marcus",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "purser_code_operator_marcus",
+   "text": "{purser_code_operator_marcus.name}递上一份船上活动表：“明天有品酒会，需要为两位预留座位吗？”"
+  },
+  {
+   "id": "hd_disavowed_cleaner_viktor",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "disavowed_cleaner_viktor",
+   "text": "{disavowed_cleaner_viktor.name}擦着酒杯，把一杯新调的酒推到你面前：“本店招待，尝尝。”"
+  },
+  {
+   "id": "hd_casino_card_counter_lucas",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "casino_card_counter_lucas",
+   "text": "{casino_card_counter_lucas.name}洗着一副扑克牌冲你笑：“来一局？不赌钱，就玩玩。”"
   }
  ],
  "id": "cruise_spy_honeymoon_suite",

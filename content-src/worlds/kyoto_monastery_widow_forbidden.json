@@ -1901,88 +1901,89 @@
     },
     {
       "id": "act_veranda_night_interception",
-      "title": "红桧木风雨长廊阻击投毒恶仆",
+      "title": "长廊下的雨帘",
       "location_ids": [
         "monastery_covered_cypress_veranda"
       ],
       "duration_minutes": 65,
       "beats": [
-        "梅雨迷蒙竹帘滴水，侍女在长廊拐角处截获企图向偏房茶壶投下迷陀药粉之分家家丁",
-        "持棍打手凶相毕露拔刀威逼，推官自阴影中闪身而出反扣其手腕夺下淬毒瓷瓶",
-        "老行者在长廊尽头击响木鱼引来当值僧兵，打手仓皇翻翻下庭院假山逃窜"
+        "梅雨不停，侍女在桧木长廊下挂起竹帘，雨水顺着帘子滴成一串串。",
+        "当主坐在廊下抄经，推官隔着两根柱子坐着，替当主研墨。",
+        "老行者经过时敲了一下木鱼，说雨天抄经最能静心。"
       ],
       "hook_ids": [
-        "hk_maid_herb_approach",
-        "hk_magistrate_knife_approach",
-        "hk_abbot_bell_request"
+        "hd_ex_magistrate_adoptive_brother",
+        "hd_corrupt_collateral_uncle_heir",
+        "hd_repressed_chaste_widow_head",
+        "hd_austere_abbot_moral_arbiter",
+        "hd_malicious_collateral_dowager_aunt",
+        "hd_mute_confidante_scullery_maid"
       ],
-      "start_minute": 15,
+      "start_minute": 840,
       "tags": [
         "workplace"
       ]
     },
     {
       "id": "act_abbot_seclusion_inquisition",
-      "title": "断崖方丈室禅房直面大和尚戒律大审",
+      "title": "方丈室里喝茶",
       "location_ids": [
         "monastery_abbot_seclusion_pavilion"
       ],
       "duration_minutes": 80,
       "beats": [
-        "万丈深渊飞瀑轰鸣，方丈大和尚手握铁梨木戒尺端坐蒲团，双眸如炬审视阶下当主与推官",
-        "推官当堂呈阅上代当主生前亲笔信托法旨，并出示叔父倒卖救灾物资确凿公函",
-        "大和尚长叹一声敲响达摩磬铜音，当面宣布行使护法铁券推翻分家一切非法非议"
+        "方丈大和尚请当主到断崖方丈室喝茶，窗外飞瀑的声音隐隐传来。",
+        "大和尚说起亡故的上代当主年轻时也常来这里下棋。",
+        "当主低头喝茶，没有说话，大和尚也不再问，只给当主续了一杯。"
       ],
       "hook_ids": [
         "hk_abbot_ruler_approach",
-        "hk_magistrate_briefcase_approach",
-        "hk_abbot_bell_request"
+        "hk_magistrate_briefcase_approach"
       ],
-      "start_minute": 105,
+      "start_minute": 900,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "act_dowager_aunt_frameup_clash",
-      "title": "偏房榻榻米恶毒叔母破门栽赃发难",
+      "title": "偏房里叠法衣",
       "location_ids": [
         "monastery_widow_chaste_inner_chamber"
       ],
       "duration_minutes": 75,
       "beats": [
-        "叔母率恶婆子强行撞开偏房障子门，将伪造艳诗手帕猛力甩在榻榻米上尖叫抓奸",
-        "当主面若冰霜长身而起当众狠掴叔母一记响亮耳光，厉声呵斥名门家规不容玷污",
-        "推官手握放大镜当场揭穿手帕墨迹未干系临时伪造，婆子吓得面如土色纷纷跪倒"
+        "百日大祭前，当主在清修偏房里叠明天法会要用的法衣，一件件理平折好。",
+        "侍女说叔母那边派人来问法会的座次，当主头也不抬：照旧。",
+        "叠完最后一件，当主揉了揉手腕，望着窗外的雨出了一会儿神。"
       ],
       "hook_ids": [
         "hk_aunt_fan_approach",
         "hk_widow_chaste_approach",
         "hk_maid_key_request"
       ],
-      "start_minute": 195,
+      "start_minute": 1020,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "act_dawn_chaste_liberation_flight",
-      "title": "后山断崖竹林冒雨破关奔赴自由",
+      "title": "清晨的后山竹林",
       "location_ids": [
         "monastery_abbot_seclusion_pavilion"
       ],
       "duration_minutes": 50,
       "beats": [
-        "晨曦微露山雨初歇，侍女用铁钥匙转开后山竹林暗门，推官紧握当主素手踏上险径",
-        "大殿终局祈福钟声破晓鸣响，分家恶霸在僧兵戒严下束手就擒，宗族牢笼彻底瓦解",
-        "当主回首撕下发间白纸捻抛入山谷飞瀑，在推官护卫下并肩向山下广阔天地大步前行"
+        "雨停的清晨，当主带着侍女到后山竹林里采笋，竹叶上的水珠落了一身。",
+        "推官远远跟在后面，替两人提着竹篮。",
+        "当主采到一根很大的笋，回头举给推官看，难得笑出了声。"
       ],
       "hook_ids": [
         "hk_widow_chaste_approach",
-        "hk_magistrate_knife_approach",
         "hk_maid_herb_approach"
       ],
-      "start_minute": 285,
+      "start_minute": 360,
       "tags": [
         "intimate"
       ]
@@ -2427,6 +2428,42 @@
         "monastery_covered_cypress_veranda"
       ],
       "text": "偏房薄薄障子门紧闭，清晰可见{repressed_chaste_widow_head.name}正缓缓解下颈间厚重纸捻，素手按在冰冷经案上无声战栗，剪影随着狂风摇曳不定，散发着窒息诱人却又神圣不可侵犯之禁忌官能美。"
+    },
+    {
+      "id": "hd_ex_magistrate_adoptive_brother",
+      "kind": "approach",
+      "slot": "ex_magistrate_adoptive_brother",
+      "text": "{ex_magistrate_adoptive_brother.name}在廊下坐下，把一盏新茶推到你面前：“雨小了。陪我坐一会儿。”"
+    },
+    {
+      "id": "hd_corrupt_collateral_uncle_heir",
+      "kind": "approach",
+      "slot": "corrupt_collateral_uncle_heir",
+      "text": "{corrupt_collateral_uncle_heir.name}拄着手杖慢慢走来，难得和颜悦色：“法会的布置，你辛苦了。”"
+    },
+    {
+      "id": "hd_repressed_chaste_widow_head",
+      "kind": "approach",
+      "slot": "repressed_chaste_widow_head",
+      "text": "{repressed_chaste_widow_head.name}把一卷抄好的经文递给你，垂着眼轻声说：“帮我看看，字可还端正？”"
+    },
+    {
+      "id": "hd_austere_abbot_moral_arbiter",
+      "kind": "approach",
+      "slot": "austere_abbot_moral_arbiter",
+      "text": "{austere_abbot_moral_arbiter.name}合掌一礼：“山中清寂，施主若无事，来方丈室喝杯茶。”"
+    },
+    {
+      "id": "hd_malicious_collateral_dowager_aunt",
+      "kind": "approach",
+      "slot": "malicious_collateral_dowager_aunt",
+      "text": "{malicious_collateral_dowager_aunt.name}摇着折扇在你身边站定：“这梅雨天真闷，陪我说说话。”"
+    },
+    {
+      "id": "hd_mute_confidante_scullery_maid",
+      "kind": "approach",
+      "slot": "mute_confidante_scullery_maid",
+      "text": "{mute_confidante_scullery_maid.name}端来一碟新蒸的点心，放在你手边，轻轻欠了欠身。"
     }
   ],
   "twists": [

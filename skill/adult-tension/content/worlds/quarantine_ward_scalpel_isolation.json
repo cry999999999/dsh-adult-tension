@@ -1448,25 +1448,24 @@
   },
   {
    "beats": [
-    "零号发狂感染病患用生铁输液架狂暴砸击强化玻璃门导致网状裂纹蔓延，主任手持高纯度镇静剂立于门前对峙。",
-    "青年学者在后方利用负压调节手轮手动平衡处置室压差，稳住发颤的手指协助主任排尽注射器内空气气泡。",
-    "护士长月子在气闸走廊冒险拉下应急减压阀门，水汽弥漫中向处置室内二人投以坚毅目光确认防化服密封完好。"
+    "大雪封山之前，神谷主任在负压处置室里给青年研究员换手臂上的药。",
+    "主任的动作又快又准，研究员疼得抽气，主任冷冷地说：忍着。",
+    "药换好了，主任把用过的纱布扔进黄色垃圾桶，说三天后再来。"
    ],
    "duration_minutes": 40,
    "hook_ids": [
     "h_kuroda_poison_gas_ultimatum_broadcast",
-    "h_tsukiko_airlock_intercom_tray_knock",
     "h_chifuyu_scalpel_grip_whisper_stand"
    ],
    "id": "a_maniac_glass_slam_sedative_standoff",
    "location_ids": [
     "negative_pressure_procedure_room"
    ],
-   "start_minute": 1380,
+   "start_minute": 900,
    "tags": [
     "intimate"
    ],
-   "title": "防暴玻璃撞击针尖对赌"
+   "title": "处置室里的换药"
   },
   {
    "beats": [
@@ -1492,69 +1491,73 @@
   },
   {
    "beats": [
-    "技师健手持生铁撬棍在滚烫机油烟雾中死死顶住排气阀门，配合赶到的特派督察官短路烧毁甲醛控制继电器。",
-    "理事长企图开枪射击配电箱阻断生路，被警卫队长柴田飞身扑倒夺下自卫手枪按翻在油污地面扣押伏法。",
-    "主排风机在抗凝柴油强行注入后重新爆发欢快轰鸣，高压新鲜空气瞬间倒灌地下二层吹散浓烟毒雾。"
+    "技师健每周一都要下到柴油机房，给备用发电机试车。",
+    "警卫队长柴田路过，靠在门边跟技师聊起山下的新开的拉面店。",
+    "发电机轰鸣了十分钟，技师关掉开关，在记录本上签了名。"
    ],
    "duration_minutes": 35,
    "hook_ids": [
-    "h_ken_generator_wrench_oil_shout",
-    "h_goro_riot_shield_iron_slam",
     "h_kuroda_poison_gas_ultimatum_broadcast"
    ],
    "id": "a_generator_hub_bypass_valve_sabotage",
    "location_ids": [
     "underground_generator_control_hub"
    ],
-   "start_minute": 30,
+   "start_minute": 600,
    "tags": [
     "workplace_power"
    ],
-   "title": "柴油机房手动破障排气"
+   "title": "柴油机房的周检"
   },
   {
    "beats": [
-    "技师用撬棍彻底砸烂四号排风管道顶端的加固铁栅，露出直通雪山后坡陡峭铁梯与漫天呼啸狂暴风雪。",
-    "主任在青年学者托举保护下顶着零下二十度刺骨严寒一步步攀登，沿途互相拍打受冻手掌传递温存热度。",
-    "护士长与药剂师携带着原始实验账册随后跟进，警卫队长手持防暴盾牌在井底建立阻击阵地从容断后。"
+    "四号排风竖井下面是疗养院里唯一能偷偷抽烟的地方。",
+    "技师健蹲在铁梯边点了一支烟，看见护士长月子走过来，赶紧把烟藏到身后。",
+    "月子瞪了技师一眼，最后伸手说：给我也来一支。"
    ],
    "duration_minutes": 40,
    "hook_ids": [
-    "h_chifuyu_scalpel_grip_whisper_stand",
-    "h_ken_generator_wrench_oil_shout",
-    "h_ayane_pipette_freezer_tearful_plea"
+    "hd_cold_surgeon_director_chifuyu",
+    "hd_head_nurse_tsukiko",
+    "hd_sanatorium_director_kuroda",
+    "hd_quarantine_security_chief_goro",
+    "hd_intern_pharmacist_ayane",
+    "hd_veteran_facility_engineer_ken"
    ],
    "id": "a_shaft_ladder_snowbound_breakout",
    "location_ids": [
     "underground_generator_control_hub"
    ],
-   "start_minute": 65,
+   "start_minute": 1140,
    "tags": [
     "workplace_power"
    ],
-   "title": "排风竖井生铁天梯攀爬"
+   "title": "排风竖井下抽烟"
   },
   {
    "beats": [
-    "全员冲出竖井积雪掩体登上银装素裹的雪山之巅，厚生省重型除雪车破雪开道的大灯光柱刺破漫天风雪。",
-    "初升红日从冰封海平面跃出万丈霞光洒满雪原，神谷主任拉下口罩向身旁青年递过听诊器微抿朱唇紧扣双手。",
-    "救护车汽笛长鸣响彻山谷，正义之师全面接管封锁地下生化罪证，生还传奇在漫天朝霞中盛大定格。"
+    "第一场大雪停了，山道上传来除雪车的轰鸣，疗养院里的人都跑到窗边看。",
+    "神谷主任站在柴油机房的门口，难得没有板着脸。",
+    "研究员递过去一杯热咖啡，主任接过来说：这个冬天会很长。"
    ],
    "duration_minutes": 30,
    "hook_ids": [
-    "h_chifuyu_dawn_snow_stethoscope_vow",
-    "h_tsukiko_airlock_intercom_tray_knock",
-    "h_goro_riot_shield_iron_slam"
+    "hd_cold_surgeon_director_chifuyu",
+    "hd_head_nurse_tsukiko",
+    "hd_sanatorium_director_kuroda",
+    "hd_quarantine_security_chief_goro",
+    "hd_intern_pharmacist_ayane",
+    "hd_veteran_facility_engineer_ken"
    ],
    "id": "a_dawn_snowplow_salute_triumph",
    "location_ids": [
     "underground_generator_control_hub"
    ],
-   "start_minute": 105,
+   "start_minute": 480,
    "tags": [
     "workplace_power"
    ],
-   "title": "雪山之巅晨光漫天受勋"
+   "title": "雪后的早晨"
   }
  ],
  "default_npc_gender_mix": {
@@ -1719,6 +1722,48 @@
    ],
    "slot": "veteran_facility_engineer_ken",
    "text": "{veteran_facility_engineer_ken.name}布满厚厚老茧与烫伤疤痕的右手死死焊在柴油机调速手柄上，任由滚烫机油溅在粗壮前臂上滋滋作响，黝黑面庞在炉火映射下犹如生铁铸就的神像，透着底层工匠最纯粹的浩然大义。"
+  },
+  {
+   "id": "hd_cold_surgeon_director_chifuyu",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "cold_surgeon_director_chifuyu",
+   "text": "{cold_surgeon_director_chifuyu.name}把一份病历推到你面前：“这几份的记录，你帮我整理一下。”"
+  },
+  {
+   "id": "hd_head_nurse_tsukiko",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "head_nurse_tsukiko",
+   "text": "{head_nurse_tsukiko.name}端来一杯热姜茶：“外面雪大，喝点暖暖身子。”"
+  },
+  {
+   "id": "hd_sanatorium_director_kuroda",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "sanatorium_director_kuroda",
+   "text": "{sanatorium_director_kuroda.name}把一份季度报表递给你：“例行签阅，看完放回我桌上。”"
+  },
+  {
+   "id": "hd_quarantine_security_chief_goro",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "quarantine_security_chief_goro",
+   "text": "{quarantine_security_chief_goro.name}巡完一圈，在你旁边坐下：“今晚太平，聊会儿？”"
+  },
+  {
+   "id": "hd_intern_pharmacist_ayane",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "intern_pharmacist_ayane",
+   "text": "{intern_pharmacist_ayane.name}抱着一盒药品清单凑过来：“帮我对一下数，我总是数错。”"
+  },
+  {
+   "id": "hd_veteran_facility_engineer_ken",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "veteran_facility_engineer_ken",
+   "text": "{veteran_facility_engineer_ken.name}擦着手走过来：“暖气调好了，今晚不会冷。”"
   }
  ],
  "id": "quarantine_ward_scalpel_isolation",

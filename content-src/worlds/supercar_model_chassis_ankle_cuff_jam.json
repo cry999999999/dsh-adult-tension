@@ -1765,17 +1765,24 @@
     },
     {
       "id": "act_carbon_splitter_bolt_jam_incident",
-      "title": "导流板螺栓与弹簧卡簧死锁绞合",
+      "title": "开馆前的试妆走位",
       "location_ids": [
         "loc_supercar_rotating_stage_center"
       ],
       "duration_minutes": 5,
       "beats": [
-        "纯银小锁链死死咬住防松螺栓将车模右脚踝紧扣在碳纤维底盘上",
-        "暗银金属高开叉长裙向上拉扯绷紧导致车模下肢无法挪移"
+        "开馆前一小时，车模在旋转展台上试走位，摄影师在台下调试灯光。",
+        "展台慢慢转了一圈，车模在每个角度停下来摆一个姿势。",
+        "走位结束，车模跳下展台，向工作人员要了一瓶冰水。"
       ],
-      "hook_ids": [],
-      "start_minute": 614,
+      "hook_ids": [
+        "hd_supercar_model_situ_xue",
+        "hd_supercar_aero_chief_gu_ling_xiao",
+        "hd_model_partner_bai_fei_fei",
+        "hd_chassis_mechanic_lei_lie",
+        "hd_president_thomas_moreau"
+      ],
+      "start_minute": 510,
       "tags": []
     },
     {
@@ -1901,7 +1908,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_01_ankle_chain_snag_groan",
+        "hook_02_slit_dress_strain_jam",
+        "hook_03_titanium_heel_lever_extract",
+        "hook_04_director_iron_standoff",
+        "hook_05_partner_skirt_shield",
+        "hook_06_heel_prong_slips_into_gap",
+        "hook_07_president_footsteps_stairs",
+        "hook_08_mechanic_supports_splitter",
+        "hook_09_ankle_twist_lever_pop",
+        "hook_10_silver_cuff_slips_free",
+        "hook_11_giant_flash_applause_roars",
+        "hook_12_flawless_model_grace_captured",
+        "hook_13_auto_show_ovation_thunders",
+        "hook_14_president_retreats_in_awe",
+        "hook_15_heel_tip_tucked_whisper",
+        "hook_model_lounge_door"
+      ],
       "start_minute": 614,
       "tags": [
         "disaster"
@@ -1944,7 +1968,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_01_ankle_chain_snag_groan",
+        "hook_02_slit_dress_strain_jam",
+        "hook_03_titanium_heel_lever_extract",
+        "hook_04_director_iron_standoff",
+        "hook_05_partner_skirt_shield",
+        "hook_06_heel_prong_slips_into_gap",
+        "hook_07_president_footsteps_stairs",
+        "hook_08_mechanic_supports_splitter",
+        "hook_09_ankle_twist_lever_pop",
+        "hook_10_silver_cuff_slips_free",
+        "hook_11_giant_flash_applause_roars",
+        "hook_12_flawless_model_grace_captured",
+        "hook_13_auto_show_ovation_thunders",
+        "hook_14_president_retreats_in_awe",
+        "hook_15_heel_tip_tucked_whisper",
+        "hook_model_lounge_door"
+      ],
       "start_minute": 615,
       "tags": []
     },
@@ -1985,7 +2026,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_01_ankle_chain_snag_groan",
+        "hook_02_slit_dress_strain_jam",
+        "hook_03_titanium_heel_lever_extract",
+        "hook_04_director_iron_standoff",
+        "hook_05_partner_skirt_shield",
+        "hook_06_heel_prong_slips_into_gap",
+        "hook_07_president_footsteps_stairs",
+        "hook_08_mechanic_supports_splitter",
+        "hook_09_ankle_twist_lever_pop",
+        "hook_10_silver_cuff_slips_free",
+        "hook_11_giant_flash_applause_roars",
+        "hook_12_flawless_model_grace_captured",
+        "hook_13_auto_show_ovation_thunders",
+        "hook_14_president_retreats_in_awe",
+        "hook_15_heel_tip_tucked_whisper",
+        "hook_model_lounge_door"
+      ],
       "start_minute": 615,
       "tags": []
     },
@@ -2026,7 +2084,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_01_ankle_chain_snag_groan",
+        "hook_02_slit_dress_strain_jam",
+        "hook_03_titanium_heel_lever_extract",
+        "hook_04_director_iron_standoff",
+        "hook_05_partner_skirt_shield",
+        "hook_06_heel_prong_slips_into_gap",
+        "hook_07_president_footsteps_stairs",
+        "hook_08_mechanic_supports_splitter",
+        "hook_09_ankle_twist_lever_pop",
+        "hook_10_silver_cuff_slips_free",
+        "hook_11_giant_flash_applause_roars",
+        "hook_12_flawless_model_grace_captured",
+        "hook_13_auto_show_ovation_thunders",
+        "hook_14_president_retreats_in_awe",
+        "hook_15_heel_tip_tucked_whisper",
+        "hook_model_lounge_door"
+      ],
       "start_minute": 616,
       "tags": []
     },
@@ -2067,7 +2142,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_01_ankle_chain_snag_groan",
+        "hook_02_slit_dress_strain_jam",
+        "hook_03_titanium_heel_lever_extract",
+        "hook_04_director_iron_standoff",
+        "hook_05_partner_skirt_shield",
+        "hook_06_heel_prong_slips_into_gap",
+        "hook_07_president_footsteps_stairs",
+        "hook_08_mechanic_supports_splitter",
+        "hook_09_ankle_twist_lever_pop",
+        "hook_10_silver_cuff_slips_free",
+        "hook_11_giant_flash_applause_roars",
+        "hook_12_flawless_model_grace_captured",
+        "hook_13_auto_show_ovation_thunders",
+        "hook_14_president_retreats_in_awe",
+        "hook_15_heel_tip_tucked_whisper",
+        "hook_model_lounge_door"
+      ],
       "start_minute": 616,
       "tags": [
         "disaster"
@@ -2110,7 +2202,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_01_ankle_chain_snag_groan",
+        "hook_02_slit_dress_strain_jam",
+        "hook_03_titanium_heel_lever_extract",
+        "hook_04_director_iron_standoff",
+        "hook_05_partner_skirt_shield",
+        "hook_06_heel_prong_slips_into_gap",
+        "hook_07_president_footsteps_stairs",
+        "hook_08_mechanic_supports_splitter",
+        "hook_09_ankle_twist_lever_pop",
+        "hook_10_silver_cuff_slips_free",
+        "hook_11_giant_flash_applause_roars",
+        "hook_12_flawless_model_grace_captured",
+        "hook_13_auto_show_ovation_thunders",
+        "hook_14_president_retreats_in_awe",
+        "hook_15_heel_tip_tucked_whisper",
+        "hook_model_lounge_door"
+      ],
       "start_minute": 617,
       "tags": []
     }
@@ -2259,6 +2368,36 @@
         "loc_model_upstairs_lounge"
       ],
       "text": "{npc.name}倚在休息室门口，手里拎着一双细高跟：展台熄灯了。……进来坐吧，脚好疼。"
+    },
+    {
+      "id": "hd_supercar_model_situ_xue",
+      "kind": "approach",
+      "slot": "supercar_model_situ_xue",
+      "text": "{supercar_model_situ_xue.name}把一瓶矿泉水递给你，语气冷淡：“多拿了一瓶。拿着。”"
+    },
+    {
+      "id": "hd_supercar_aero_chief_gu_ling_xiao",
+      "kind": "approach",
+      "slot": "supercar_aero_chief_gu_ling_xiao",
+      "text": "{supercar_aero_chief_gu_ling_xiao.name}拿着一张设计图冲你招手：“来看看这条曲线，漂不漂亮？”"
+    },
+    {
+      "id": "hd_model_partner_bai_fei_fei",
+      "kind": "approach",
+      "slot": "model_partner_bai_fei_fei",
+      "text": "{model_partner_bai_fei_fei.name}凑过来挽住你的胳膊：“收工了，一起去吃饭吧？”"
+    },
+    {
+      "id": "hd_chassis_mechanic_lei_lie",
+      "kind": "approach",
+      "slot": "chassis_mechanic_lei_lie",
+      "text": "{chassis_mechanic_lei_lie.name}擦着手上的油污：“车调好了，明天开展前再看一遍。”"
+    },
+    {
+      "id": "hd_president_thomas_moreau",
+      "kind": "approach",
+      "slot": "president_thomas_moreau",
+      "text": "{president_thomas_moreau.name}冲你点头：“今天辛苦了，晚上的酒会一起来吧。”"
     }
   ],
   "twists": [

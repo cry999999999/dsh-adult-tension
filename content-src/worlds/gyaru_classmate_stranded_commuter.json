@@ -1447,34 +1447,42 @@
     },
     {
       "id": "act_commuter_smartband_audit",
-      "title": "遇险名媛腕带生理体征检视",
+      "title": "救护方舱里的值班",
       "location_ids": [
         "loc_substation_refuge_cabin"
       ],
       "duration_minutes": 20,
       "beats": [
-        "平复辣妹手腕脉搏并测定基础心率与皮温数值",
-        "把保温毯按急救箱的格子叠好，一张都不能少",
-        "对便携纯氧呼吸罐喷嘴实施无菌医用棉球擦拭"
+        "台风还没来，桥塔下的救护方舱里，值班护士在整理药品柜。",
+        "辣妹是来做志愿者登记的，坐在折叠椅上刷手机，等着护士叫自己的名字。",
+        "护士叫到名字，辣妹抬头一笑，说自己其实是被朋友拉来的。"
       ],
-      "hook_ids": [],
-      "start_minute": 1390,
+      "hook_ids": [
+        "hook_all_clear_triumphant_salute",
+        "hook_chiyo_snack_share",
+        "hook_fujiwara_radio_pause"
+      ],
+      "start_minute": 900,
       "tags": []
     },
     {
       "id": "act_mechanic_pawl_safing",
-      "title": "单轨滑靴防脱导向销紧固核验",
+      "title": "末班车上的检修",
       "location_ids": [
         "loc_monorail_suspended_car"
       ],
       "duration_minutes": 15,
       "beats": [
-        "将鲜红安全警示防滑插销插入门锁连杆缝隙",
-        "用长起子调一调车门锁舌弹簧的松紧",
-        "向车厢受困人员当面通报车体悬挂稳固度"
+        "末班车开过之后，检修师傅登上停在高架上的尾部车厢，一扇扇检查车门。",
+        "师傅说这条线开了十二年，每晚都要有人这样走一遍。",
+        "检修做完，师傅坐在车厢座椅上歇了一会儿，看着江面上的灯一盏盏熄灭。"
       ],
-      "hook_ids": [],
-      "start_minute": 1415,
+      "hook_ids": [
+        "hook_chiyo_snack_share",
+        "hook_chiyo_tactical_shroud",
+        "hook_fujiwara_radio_pause"
+      ],
+      "start_minute": 1410,
       "tags": []
     },
     {

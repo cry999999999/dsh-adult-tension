@@ -1951,110 +1951,115 @@
     },
     {
       "id": "act_wardrobe_mirror_discipline_parley",
-      "title": "更衣暗室三折落地全身镜前极限规训",
+      "title": "更衣暗室里试礼服",
       "location_ids": [
         "castle_head_maid_dressing_wardrobe_sec"
       ],
       "duration_minutes": 70,
       "beats": [
-        "暗门反锁烛火摇曳，女仆长冷面命少爷脱去军大衣在三米全身镜前站直接受家规审视",
-        "女仆长亲手为少爷系紧硬挺衬衫领带近身逼视，少爷反手握住其钥匙串将其抵在镜前",
-        "门外传来猎兵巡查脚步声，两人在狭窄密室内气息交织，主仆支配界限剧烈倒错撕扯"
+        "继承仪式前三天，女仆长在更衣暗室里替少爷试新做的礼服。",
+        "女仆长替少爷系好领结，退后一步打量，说肩线还要再收半寸。",
+        "少爷看着镜子里的女仆长，说你小时候也这样给我穿过衣服。女仆长没有接话。"
       ],
       "hook_ids": [
-        "hk_head_maid_corset_approach",
         "hk_young_lord_wardrobe_request",
         "hk_head_maid_mirror_observe"
       ],
-      "start_minute": 1365,
+      "start_minute": 900,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "act_dungeon_keep_arsenal_defense",
-      "title": "后翼断桥回廊与军械库老兵防线布设",
+      "title": "回廊里的老总管",
       "location_ids": [
         "castle_stone_corridor_dungeon_keep"
       ],
       "duration_minutes": 65,
       "beats": [
-        "暴风雪穿堂呼啸回廊积雪没踝，老总管拄拐指挥老民兵推上军械库生铁落闸封死要塞",
-        "王都猎兵手持火把企图强行破拆抢夺燧发枪，老总管举枪立于断崖石栏前厉声喝退暴徒",
-        "少爷持剑自暗道赶到，飞身出剑挑落猎兵队长火把，彻底稳固后翼军械库防线"
+        "雪停了两天，老总管拄着拐杖巡视后翼回廊，让老民兵把积雪铲干净。",
+        "老总管看见少爷，絮絮叨叨地说起少爷小时候在这条回廊上摔过的跤。",
+        "少爷笑着扶老总管坐下，两人在石栏边晒了一会儿太阳。"
       ],
       "hook_ids": [
-        "hk_seneschal_cane_approach",
-        "hk_young_lord_sword_approach",
-        "hk_seneschal_gate_request"
+        "hd_austere_head_maid_governess",
+        "hd_ambitious_dowager_duchess_regent",
+        "hd_impoverished_heir_young_lord",
+        "hd_loyal_crippled_castle_seneschal",
+        "hd_jaeger_captain_secret_provost",
+        "hd_scheming_tax_notary_bailiff"
       ],
-      "start_minute": 15,
+      "start_minute": 600,
       "tags": [
         "workplace"
       ]
     },
     {
       "id": "act_master_suite_secret_vault_opening",
-      "title": "主卧寝殿暗格开启万枚纯金金币起运",
+      "title": "主卧里换帷幔",
       "location_ids": [
         "castle_master_bedchamber_suite"
       ],
       "duration_minutes": 80,
       "beats": [
-        "天鹅绒重幔紧闭，老总管与女仆长合力转动紫檀雕花立柱暗钮，开启地下暗格生铁厚门",
-        "十只装满纯金金币的重型沉木箱被绳索绞起，金光在微弱炭火下照亮三张坚毅脸庞",
-        "少爷将第一枚重磅金币郑重置入女仆长掌心，完成家族财产所有权之终极信托交付"
+        "入冬前，女仆长带着女仆们给主卧换上厚重的天鹅绒帷幔。",
+        "少爷想帮忙挂帷幔，被女仆长一句话挡了回去：这不是主人该做的事。",
+        "帷幔挂好了，女仆长亲手点燃壁炉，主卧里一下子暖了起来。"
       ],
       "hook_ids": [
         "hk_head_maid_keys_approach",
         "hk_seneschal_cane_approach",
         "hk_young_lord_wardrobe_request"
       ],
-      "start_minute": 105,
+      "start_minute": 960,
       "tags": [
         "workplace"
       ]
     },
     {
       "id": "act_great_hall_tax_notary_clearing",
-      "title": "主宴会大厅长桌前当堂过秤清缴继承税",
+      "title": "大厅里的晚餐",
       "location_ids": [
         "castle_grand_hearth_great_hall"
       ],
       "duration_minutes": 75,
       "beats": [
-        "十箱纯金金币轰然砸在黑胡桃木长桌之上震碎茶盏，少爷拔出刺剑插在税务官案前",
-        "女仆长冷面宣读帝国税务核定基准原本，当众戳穿税务官虚增税额私收回扣之舞弊罪证",
-        "税务官在白刃与铁证逼视下面色惨白，颤抖着在正式完税公证书上加盖双头鹰红火漆印"
+        "城堡的长桌上只摆了一副餐具，少爷坚持让女仆长坐下陪自己吃。",
+        "女仆长站着不动，说主仆不同席是家规。",
+        "少爷放下刀叉，说那我也站着吃。女仆长瞪了少爷一眼，终于在下首坐了下来。"
       ],
       "hook_ids": [
-        "hk_notary_seal_approach",
-        "hk_young_lord_sword_approach",
-        "hk_dowager_fan_approach"
+        "hd_austere_head_maid_governess",
+        "hd_ambitious_dowager_duchess_regent",
+        "hd_impoverished_heir_young_lord",
+        "hd_loyal_crippled_castle_seneschal",
+        "hd_jaeger_captain_secret_provost",
+        "hd_scheming_tax_notary_bailiff"
       ],
-      "start_minute": 195,
+      "start_minute": 1140,
       "tags": [
         "workplace_power"
       ]
     },
     {
       "id": "act_dawn_hearth_great_hall_triumph",
-      "title": "暴雪初歇大厅壁炉前宣布霍恩洛厄中兴",
+      "title": "暴雪后的清晨",
       "location_ids": [
         "castle_grand_hearth_great_hall"
       ],
       "duration_minutes": 50,
       "beats": [
-        "晨曦穿透彩绘玻璃窗洒满石砌大厅，摄政夫人与贪腐税务官在老民兵押解下狼狈退入偏院",
-        "钟楼破晓祈福钟声激昂回荡黑森林峡谷，少爷当着全体仆役之面将城堡铁十字母钥匙郑重挂回女仆长腰间",
-        "两人在巨型壁炉火光前执手并肩而立，在全城堡忠臣欢呼声中开启古老名门之全新篇章"
+        "暴雪过后的清晨，彩绘玻璃窗洒下五颜六色的光，女仆们在大厅里扫雪水。",
+        "女仆长把铁十字母钥匙系在腰间，一把把地核对城堡里每一道门。",
+        "少爷靠在壁炉边看着，说这串钥匙你戴着最好看。"
       ],
       "hook_ids": [
         "hk_young_lord_sword_approach",
         "hk_head_maid_keys_approach",
         "hk_seneschal_cane_approach"
       ],
-      "start_minute": 285,
+      "start_minute": 420,
       "tags": [
         "workplace_power"
       ]
@@ -2518,6 +2523,42 @@
         "castle_grand_hearth_great_hall"
       ],
       "text": "{jaeger_captain_secret_provost.name}挡在回廊风雪口，马刀没出鞘，只用刀鞘轻轻拦住你：“夫人要我搜军械库。我会搜得很慢，你们最好在我数到三百之前把该藏的东西藏好。”"
+    },
+    {
+      "id": "hd_austere_head_maid_governess",
+      "kind": "approach",
+      "slot": "austere_head_maid_governess",
+      "text": "{austere_head_maid_governess.name}把一套熨好的衣服放在你床边：“明天穿这身。早餐七点。”"
+    },
+    {
+      "id": "hd_ambitious_dowager_duchess_regent",
+      "kind": "approach",
+      "slot": "ambitious_dowager_duchess_regent",
+      "text": "{ambitious_dowager_duchess_regent.name}在炉边放下茶杯，示意你坐：“陪我下一盘棋。”"
+    },
+    {
+      "id": "hd_impoverished_heir_young_lord",
+      "kind": "approach",
+      "slot": "impoverished_heir_young_lord",
+      "text": "{impoverished_heir_young_lord.name}抱着一摞旧书走过来：“藏书室里翻出来的，你喜欢哪本？”"
+    },
+    {
+      "id": "hd_loyal_crippled_castle_seneschal",
+      "kind": "approach",
+      "slot": "loyal_crippled_castle_seneschal",
+      "text": "{loyal_crippled_castle_seneschal.name}拄着手杖在你身边停下：“雪停了，去院子里走走吧。”"
+    },
+    {
+      "id": "hd_jaeger_captain_secret_provost",
+      "kind": "approach",
+      "slot": "jaeger_captain_secret_provost",
+      "text": "{jaeger_captain_secret_provost.name}拎着两只野兔走进来：“今晚加菜，你也有份。”"
+    },
+    {
+      "id": "hd_scheming_tax_notary_bailiff",
+      "kind": "approach",
+      "slot": "scheming_tax_notary_bailiff",
+      "text": "{scheming_tax_notary_bailiff.name}把一本账册摊开：“例行核账，劳烦你在旁边作个见证。”"
     }
   ],
   "twists": [

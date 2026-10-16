@@ -1541,113 +1541,128 @@
  "daily_activities": [
   {
    "beats": [
-    "除湿冷光惨白无声，女若头真丝和服半褪露出后背滴血般若刺青，单手握枪将精算师铐在合金钢柱前",
-    "精算师从容推了推金丝眼镜，指尖轻敲手铐链条，逐条报出离岸洗钱账目致命漏洞反向施压",
-    "门外传来杂乱皮鞋踏水声与霰弹枪上膛脆响，两人距离寸寸逼近呼吸相闻，野性荷尔蒙疯狂暗涌"
+    "台风来临前一周，精算师第一次被请进地下金库，女若头把一摞账本推到精算师面前。",
+    "精算师一页页翻着，女若头坐在对面抽烟，烟灰掉在和服上也不在意。",
+    "翻完最后一页，精算师推了推眼镜：账做得很漂亮，可惜漏洞也很漂亮。"
    ],
    "duration_minutes": 70,
    "hook_ids": [
-    "hk_yakuza_vice_boss_handcuff_approach",
-    "hk_accountant_ledger_approach",
-    "hk_yakuza_vice_boss_vault_observe"
+    "hd_cunning_black_market_forensic_account",
+    "hd_mutinous_senior_yakuza_enforcer",
+    "hd_ruthless_yakuza_heiress_vice_boss",
+    "hd_veteran_harbor_police_detective",
+    "hd_loyal_wounded_wakashu_guard",
+    "hd_underground_casino_inside_croupier"
    ],
    "id": "act_vault_sanctum_handcuff_interrogation",
    "location_ids": [
     "reinforced_vault_inner_sanctum"
    ],
-   "start_minute": 1395,
+   "start_minute": 1260,
    "tags": [
     "intimate"
    ],
-   "title": "防爆金库合金柱手铐拘禁与底片假账对质"
+   "title": "金库里对账"
   },
   {
    "beats": [
-    "门外霰弹枪猛烈轰击观察窗玻璃碎片飞溅，精算师一把将女若头拉入保险柜死角用身体死死护住",
-    "手铐链条拉扯间女若头和服彻底散开，滚烫紧致的胴体与精算师西装衬衫紧紧贴合心跳共振",
-    "女若头单手拽住精算师领带反客为主狠狠吻上去，两人在硝烟与刺鼻血腥中彻底打破心理防线"
+    "对账对到深夜，女若头让人送来两碗拉面，在金库的长桌上摆开。",
+    "精算师吃得很斯文，女若头看了一会儿，说你吃面像在算账。",
+    "精算师抬起头，说若头吃面像在打架。女若头愣了一下，笑出了声。"
    ],
    "duration_minutes": 65,
    "hook_ids": [
-    "hk_yakuza_vice_boss_kiss_request",
-    "hk_accountant_protect_approach",
-    "hk_accountant_suit_observe"
+    "hd_cunning_black_market_forensic_account",
+    "hd_mutinous_senior_yakuza_enforcer",
+    "hd_ruthless_yakuza_heiress_vice_boss",
+    "hd_veteran_harbor_police_detective",
+    "hd_loyal_wounded_wakashu_guard",
+    "hd_underground_casino_inside_croupier"
    ],
    "id": "act_vault_inner_bomb_shelter_flesh_tan",
    "location_ids": [
     "reinforced_vault_inner_sanctum"
    ],
-   "start_minute": 30,
+   "start_minute": 1380,
    "tags": [
     "intimate"
    ],
-   "title": "保险柜狭小避弹死角相拥取暖与野性温存"
+   "title": "金库里的宵夜"
   },
   {
    "beats": [
-    "浑浊海水已漫过膝盖，吊灯短路火花爆闪，女若头与精算师并肩涉水突围，利用倾倒赌台做掩护",
-    "若头辅佐手持机枪疯狂扫射，精算师精准测算弹道，女若头探身甩出两枚手雷炸翻机枪阵地",
-    "女荷官从吧台死角冒死递上地下后门暗锁磁卡，三人合力击毙阻截枪手杀出大厅"
+    "周末的贵宾赌场大厅里灯火通明，荷官们在赌台前熟练地发牌。",
+    "女若头带着精算师在大厅里转了一圈，指着每张台子讲今晚的流水。",
+    "女荷官冲精算师眨眨眼，女若头哼了一声，把精算师拉走了。"
    ],
    "duration_minutes": 60,
    "hook_ids": [
-    "hk_enforcer_shotgun_approach",
-    "hk_croupier_keycard_approach",
-    "hk_enforcer_hall_observe"
+    "hd_cunning_black_market_forensic_account",
+    "hd_mutinous_senior_yakuza_enforcer",
+    "hd_ruthless_yakuza_heiress_vice_boss",
+    "hd_veteran_harbor_police_detective",
+    "hd_loyal_wounded_wakashu_guard",
+    "hd_underground_casino_inside_croupier"
    ],
    "id": "act_gaming_hall_flooded_firefight_coun",
    "location_ids": [
     "flooded_vip_casino_gaming_hall"
    ],
-   "start_minute": 105,
+   "start_minute": 1320,
    "tags": [
     "workplace_power"
    ],
-   "title": "积水贵宾大厅涉水潜行与雷管反杀伏击战"
+   "title": "赌场大厅的营业夜"
   },
   {
    "beats": [
-    "柴油机泵轰鸣震耳欲聋，老巡查部长在机房阴影中现身，拔枪与二人对峙达成紧急停火协议",
-    "老巡查操纵红色重型液压剪精准咔哒一声剪断两人之间连接之精钢手铐链环，重获行动自由",
-    "若头辅佐引燃乙炔大火杀到，老巡查扳动排污蒸汽阀喷射滚烫气浪，三人联手封死追兵生路"
+    "码头地下的抽水机房里，老巡查部长坐在角落里喝茶，说是来例行检查。",
+    "女若头带着精算师经过，老巡查抬起头，说：九条家的丫头，又长高了。",
+    "女若头冷着脸点了点头，走远了才说：那老头，看着我长大的。"
    ],
    "duration_minutes": 60,
    "hook_ids": [
-    "hk_detective_revolver_approach",
-    "hk_accountant_protect_approach",
-    "hk_detective_tunnel_observe"
+    "hd_cunning_black_market_forensic_account",
+    "hd_mutinous_senior_yakuza_enforcer",
+    "hd_ruthless_yakuza_heiress_vice_boss",
+    "hd_veteran_harbor_police_detective",
+    "hd_loyal_wounded_wakashu_guard",
+    "hd_underground_casino_inside_croupier"
    ],
    "id": "act_pump_room_hydraulic_cutter_handcuf",
    "location_ids": [
     "drainage_pump_room_maintenance_tunnel"
    ],
-   "start_minute": 170,
+   "start_minute": 960,
    "tags": [
     "workplace"
    ],
-   "title": "市政主抽水机房高压蒸汽与液压剪断铐脱困"
+   "title": "抽水机房的老巡查"
   },
   {
    "beats": [
-    "外海狂浪拍击水闸轰鸣如雷，女若头输入密码启动纯黑快艇双发八百马力引擎发出狂暴轰鸣",
-    "精算师在船尾引爆预设炸药炸塌地下泊位混凝土主梁，将追击的极道余孽与魔窟彻底埋入海底",
-    "快艇撞开液压铁闸如离弦之箭冲入暴风雨咆哮的东京湾巨浪，迎着第一缕破晓晨曦驶向千叶外海"
+    "地下泊位里停着一艘纯黑快艇，女若头蹲在船边，亲手擦着船身。",
+    "精算师问这艘船多久开一次，女若头说从没开过，是父亲留给自己的。",
+    "擦完，女若头站起来拍拍手：哪天风平浪静，我带你出海。"
    ],
    "duration_minutes": 55,
    "hook_ids": [
-    "hk_yakuza_vice_boss_handcuff_approach",
-    "hk_accountant_ledger_approach",
-    "hk_yakuza_vice_boss_vault_observe"
+    "hd_cunning_black_market_forensic_account",
+    "hd_mutinous_senior_yakuza_enforcer",
+    "hd_ruthless_yakuza_heiress_vice_boss",
+    "hd_veteran_harbor_police_detective",
+    "hd_loyal_wounded_wakashu_guard",
+    "hd_underground_casino_inside_croupier"
    ],
    "id": "act_wharf_speedboat_watergate_breakout",
    "location_ids": [
     "submerged_cargo_pier_emergency_wharf"
    ],
-   "start_minute": 235,
+   "start_minute": 1020,
    "tags": [
     "workplace"
    ],
-   "title": "地下泊位双发快艇水闸爆破与外海生死冲浪"
+   "title": "泊位上的快艇"
   },
   {
    "beats": [
@@ -1867,6 +1882,48 @@
    ],
    "slot": "ruthless_yakuza_heiress_vice_boss",
    "text": "{ruthless_yakuza_heiress_vice_boss.name}背对着你褪下半边和服，般若刺青在冷光下像活过来一般，回眸一笑：“看够了吗？这背上每一针，都是拿命换的。你那双算账的手，敢不敢摸一摸？”"
+  },
+  {
+   "id": "hd_cunning_black_market_forensic_account",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "cunning_black_market_forensic_accountant",
+   "text": "{cunning_black_market_forensic_accountant.name}推了推眼镜，把一杯茶推给你：“账做完了。喝杯茶再走。”"
+  },
+  {
+   "id": "hd_mutinous_senior_yakuza_enforcer",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "mutinous_senior_yakuza_enforcer",
+   "text": "{mutinous_senior_yakuza_enforcer.name}在你身边坐下，倒了两杯清酒：“今晚没事，陪我喝。”"
+  },
+  {
+   "id": "hd_ruthless_yakuza_heiress_vice_boss",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "ruthless_yakuza_heiress_vice_boss",
+   "text": "{ruthless_yakuza_heiress_vice_boss.name}靠在沙发里，拍了拍身边的位置：“过来坐。今晚不谈生意。”"
+  },
+  {
+   "id": "hd_veteran_harbor_police_detective",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "veteran_harbor_police_detective",
+   "text": "{veteran_harbor_police_detective.name}在路边摊冲你招手：“一起吃碗拉面？我请。”"
+  },
+  {
+   "id": "hd_loyal_wounded_wakashu_guard",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "loyal_wounded_wakashu_guard",
+   "text": "{loyal_wounded_wakashu_guard.name}给你倒了杯热茶：“大小姐说让你歇一会儿。”"
+  },
+  {
+   "id": "hd_underground_casino_inside_croupier",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "underground_casino_inside_croupier",
+   "text": "{underground_casino_inside_croupier.name}洗着牌冲你笑：“散场了，来一局不赌钱的？”"
   }
  ],
  "id": "yakuza_vault_handcuff_pact",

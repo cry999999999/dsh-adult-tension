@@ -1755,18 +1755,24 @@
     },
     {
       "id": "act_diving_anchor_vibe_snag_crisis",
-      "title": "飞身扑救与地锚死勾比基尼险情",
+      "title": "半决赛后的加练",
       "location_ids": [
-        "loc_beach_center_net_anchor",
-        "loc_players_bench_shaded_canopy"
+        "loc_beach_center_net_anchor"
       ],
       "duration_minutes": 15,
-      "start_minute": 630,
+      "start_minute": 1050,
       "beats": [
-        "主攻为救必死之球飞身鱼跃鱼扑翻滚，侧腰系带猛然撞上防风地锚",
-        "合金钢钩倒角死死绞咬比基尼侧绳及内嵌跳蛋细线并向外持续撕拽",
-        "竞技泳裤侧边受拉撕扯外露大片娇嫩雪肌且跳蛋轮廓凸起隐隐若现",
-        "发球读秒时钟无情跳入二十秒红区，主裁判口含鸣哨催促起身发球"
+        "半决赛打完，主攻留在场上加练鱼跃扑球，一次次扑进白沙里。",
+        "教练在网边抛球，喊着再低一点、再快一点。",
+        "练到天色发暗，主攻躺在沙子上喘气，让人把毛巾扔过来。"
+      ],
+      "hook_ids": [
+        "hd_volleyball_star_jiang_chu_chu",
+        "hd_partner_duan_ling_fei",
+        "hd_coach_lu_hai_cheng",
+        "hd_engineer_fang_zhen_dong",
+        "hd_umpire_yan_song",
+        "hd_cameraman_he_zi_lang"
       ]
     },
     {
@@ -1920,6 +1926,19 @@
           "option": "暗示搭档跨步上前与主裁判交涉申诉海风强劲争取五秒缓冲时间",
           "cost": "可能导致搭档替自己承受主裁判对违规交涉的黄牌警告"
         }
+      ],
+      "hook_ids": [
+        "hook_1",
+        "hook_2",
+        "hook_3",
+        "hook_4",
+        "hook_5",
+        "hook_6",
+        "hook_7",
+        "hook_8",
+        "hook_9",
+        "hook_10",
+        "hook_beach_cabin_door"
       ]
     },
     {
@@ -1954,6 +1973,19 @@
           "option": "引导张力工程师向地下控制箱拍下气动微调泄压阀释放钢缆拉力",
           "cost": "球网微颤可能引起主裁判警觉招致现场技术重赛判定"
         }
+      ],
+      "hook_ids": [
+        "hook_1",
+        "hook_2",
+        "hook_3",
+        "hook_4",
+        "hook_5",
+        "hook_6",
+        "hook_7",
+        "hook_8",
+        "hook_9",
+        "hook_10",
+        "hook_beach_cabin_door"
       ]
     },
     {
@@ -1988,6 +2020,19 @@
           "option": "默契配合搭档高举双臂向看台鼓掌调动观众节奏掩盖身下破拆",
           "cost": "可能打破专注备战节奏导致全队注意力分散"
         }
+      ],
+      "hook_ids": [
+        "hook_1",
+        "hook_2",
+        "hook_3",
+        "hook_4",
+        "hook_5",
+        "hook_6",
+        "hook_7",
+        "hook_8",
+        "hook_9",
+        "hook_10",
+        "hook_beach_cabin_door"
       ]
     },
     {
@@ -2022,6 +2067,19 @@
           "option": "脱困后先打战术手势将球传给搭档完成战术转移二次进攻",
           "cost": "后排二次进攻威力较弱易被对方双人拦网封死"
         }
+      ],
+      "hook_ids": [
+        "hook_1",
+        "hook_2",
+        "hook_3",
+        "hook_4",
+        "hook_5",
+        "hook_6",
+        "hook_7",
+        "hook_8",
+        "hook_9",
+        "hook_10",
+        "hook_beach_cabin_door"
       ]
     },
     {
@@ -2056,6 +2114,19 @@
           "option": "以左手狠抓一把滚烫干沙以刺痛感驱散杂念果断推切出刀",
           "cost": "沙粒摩擦可能擦伤手掌娇嫩表皮"
         }
+      ],
+      "hook_ids": [
+        "hook_1",
+        "hook_2",
+        "hook_3",
+        "hook_4",
+        "hook_5",
+        "hook_6",
+        "hook_7",
+        "hook_8",
+        "hook_9",
+        "hook_10",
+        "hook_beach_cabin_door"
       ]
     },
     {
@@ -2090,6 +2161,19 @@
           "option": "改用食指与中指形成剪刀差硬锁陶瓷刀背以垂直下推发力",
           "cost": "手指发力空间极为狭窄操作难度倍增"
         }
+      ],
+      "hook_ids": [
+        "hook_1",
+        "hook_2",
+        "hook_3",
+        "hook_4",
+        "hook_5",
+        "hook_6",
+        "hook_7",
+        "hook_8",
+        "hook_9",
+        "hook_10",
+        "hook_beach_cabin_door"
       ]
     }
   ],
@@ -2162,6 +2246,42 @@
         "loc_beach_player_cabin"
       ],
       "text": "{npc.name}靠在小木屋门口，头发还湿着：比完了。……进来冲个凉？"
+    },
+    {
+      "id": "hd_volleyball_star_jiang_chu_chu",
+      "kind": "approach",
+      "slot": "volleyball_star_jiang_chu_chu",
+      "text": "{volleyball_star_jiang_chu_chu.name}把一瓶冰水贴到你脸上，笑得眯起眼：“发什么呆，陪我练一会儿垫球。”"
+    },
+    {
+      "id": "hd_partner_duan_ling_fei",
+      "kind": "approach",
+      "slot": "partner_duan_ling_fei",
+      "text": "{partner_duan_ling_fei.name}在你身边的沙地上坐下，递来一瓶防晒霜：“背上够不着，帮个忙。”"
+    },
+    {
+      "id": "hd_coach_lu_hai_cheng",
+      "kind": "approach",
+      "slot": "coach_lu_hai_cheng",
+      "text": "{coach_lu_hai_cheng.name}把记分板夹在腋下，冲你点头：“今天加练取消，大家都歇歇。”"
+    },
+    {
+      "id": "hd_engineer_fang_zhen_dong",
+      "kind": "approach",
+      "slot": "engineer_fang_zhen_dong",
+      "text": "{engineer_fang_zhen_dong.name}拿着检修单走过来：“网柱我刚调过，你来试试手感。”"
+    },
+    {
+      "id": "hd_umpire_yan_song",
+      "kind": "approach",
+      "slot": "umpire_yan_song",
+      "text": "{umpire_yan_song.name}摘下墨镜，冲你笑笑：“明天的规则说明会，你也来听听吧。”"
+    },
+    {
+      "id": "hd_cameraman_he_zi_lang",
+      "kind": "approach",
+      "slot": "cameraman_he_zi_lang",
+      "text": "{cameraman_he_zi_lang.name}把相机屏幕转给你看：“今天这张逆光拍得不错，你觉得呢？”"
     }
   ],
   "twists": [

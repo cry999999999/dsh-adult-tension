@@ -1643,21 +1643,23 @@
     },
     {
       "id": "act_stage_blackout_evac_drill",
-      "title": "演播厅暴雨倒灌舞台人员紧急疏散演练",
+      "title": "彩排间隙的应援灯牌",
       "location_ids": [
         "loc_grand_auditorium_stage"
       ],
       "duration_minutes": 20,
       "beats": [
-        "重申舞台严重积水二级防灾断电撤离演练规程",
-        "演练剪叉升降台狭小死角双人卧倒避险标准自救力矩姿态",
-        "核对配电房应急强光探照灯与绝缘抢险长靴存放坐标"
+        "彩排间隙，女团C位坐在舞台边上，看经纪人把粉丝送来的应援灯牌一块块拆开。",
+        "其中一块写着自己的名字，C位拿起来看了很久，说这个字体好可爱。",
+        "导演喊继续，C位把灯牌小心地靠在墙边，跑回了舞台中央。"
       ],
-      "hook_ids": [],
-      "start_minute": 1350,
+      "hook_ids": [
+        "hd_idol_tang_xiaoran",
+        "hd_stage_machinery_lead_lu"
+      ],
+      "start_minute": 1200,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {
@@ -1787,7 +1789,30 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_rainstorm_warning_thunder",
+        "hk_countdown_reading_rush",
+        "hk_bookshelf_groan_deadlock",
+        "hk_rail_deformation_scrape",
+        "hk_tight_breath_ear_brush",
+        "hk_dress_sweat_heat_exchange",
+        "hk_brass_paperweight_flange_align",
+        "hk_rubber_hammer_chock_in",
+        "hk_satin_ribbon_bind_grip",
+        "hk_water_curtain_roaring_rush",
+        "hk_atrium_air_pressure_drop",
+        "hk_synchronized_grunt_heave",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hk_end_relief_praise",
+        "hook_xiaoran_fried_chicken",
+        "hook_xiaoran_signal",
+        "hook_xiaoran_light_stick",
+        "hook_xiaoran_blister",
+        "hook_lu_lift_speed",
+        "hook_lu_in_ear",
+        "hook_xiaoran_lounge_door"
+      ],
       "start_minute": 1330,
       "tags": [
         "workplace",
@@ -1831,7 +1856,30 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_rainstorm_warning_thunder",
+        "hk_countdown_reading_rush",
+        "hk_bookshelf_groan_deadlock",
+        "hk_rail_deformation_scrape",
+        "hk_tight_breath_ear_brush",
+        "hk_dress_sweat_heat_exchange",
+        "hk_brass_paperweight_flange_align",
+        "hk_rubber_hammer_chock_in",
+        "hk_satin_ribbon_bind_grip",
+        "hk_water_curtain_roaring_rush",
+        "hk_atrium_air_pressure_drop",
+        "hk_synchronized_grunt_heave",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hk_end_relief_praise",
+        "hook_xiaoran_fried_chicken",
+        "hook_xiaoran_signal",
+        "hook_xiaoran_light_stick",
+        "hook_xiaoran_blister",
+        "hook_lu_lift_speed",
+        "hook_lu_in_ear",
+        "hook_xiaoran_lounge_door"
+      ],
       "start_minute": 1330,
       "tags": [
         "workplace",
@@ -1875,7 +1923,30 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_rainstorm_warning_thunder",
+        "hk_countdown_reading_rush",
+        "hk_bookshelf_groan_deadlock",
+        "hk_rail_deformation_scrape",
+        "hk_tight_breath_ear_brush",
+        "hk_dress_sweat_heat_exchange",
+        "hk_brass_paperweight_flange_align",
+        "hk_rubber_hammer_chock_in",
+        "hk_satin_ribbon_bind_grip",
+        "hk_water_curtain_roaring_rush",
+        "hk_atrium_air_pressure_drop",
+        "hk_synchronized_grunt_heave",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hk_end_relief_praise",
+        "hook_xiaoran_fried_chicken",
+        "hook_xiaoran_signal",
+        "hook_xiaoran_light_stick",
+        "hook_xiaoran_blister",
+        "hook_lu_lift_speed",
+        "hook_lu_in_ear",
+        "hook_xiaoran_lounge_door"
+      ],
       "start_minute": 1330,
       "tags": [
         "workplace"
@@ -1919,7 +1990,30 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_rainstorm_warning_thunder",
+        "hk_countdown_reading_rush",
+        "hk_bookshelf_groan_deadlock",
+        "hk_rail_deformation_scrape",
+        "hk_tight_breath_ear_brush",
+        "hk_dress_sweat_heat_exchange",
+        "hk_brass_paperweight_flange_align",
+        "hk_rubber_hammer_chock_in",
+        "hk_satin_ribbon_bind_grip",
+        "hk_water_curtain_roaring_rush",
+        "hk_atrium_air_pressure_drop",
+        "hk_synchronized_grunt_heave",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hk_end_relief_praise",
+        "hook_xiaoran_fried_chicken",
+        "hook_xiaoran_signal",
+        "hook_xiaoran_light_stick",
+        "hook_xiaoran_blister",
+        "hook_lu_lift_speed",
+        "hook_lu_in_ear",
+        "hook_xiaoran_lounge_door"
+      ],
       "start_minute": 1330,
       "tags": [
         "workplace",
@@ -1963,7 +2057,30 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_rainstorm_warning_thunder",
+        "hk_countdown_reading_rush",
+        "hk_bookshelf_groan_deadlock",
+        "hk_rail_deformation_scrape",
+        "hk_tight_breath_ear_brush",
+        "hk_dress_sweat_heat_exchange",
+        "hk_brass_paperweight_flange_align",
+        "hk_rubber_hammer_chock_in",
+        "hk_satin_ribbon_bind_grip",
+        "hk_water_curtain_roaring_rush",
+        "hk_atrium_air_pressure_drop",
+        "hk_synchronized_grunt_heave",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hk_end_relief_praise",
+        "hook_xiaoran_fried_chicken",
+        "hook_xiaoran_signal",
+        "hook_xiaoran_light_stick",
+        "hook_xiaoran_blister",
+        "hook_lu_lift_speed",
+        "hook_lu_in_ear",
+        "hook_xiaoran_lounge_door"
+      ],
       "start_minute": 1330,
       "tags": [
         "workplace",
@@ -2007,7 +2124,30 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_rainstorm_warning_thunder",
+        "hk_countdown_reading_rush",
+        "hk_bookshelf_groan_deadlock",
+        "hk_rail_deformation_scrape",
+        "hk_tight_breath_ear_brush",
+        "hk_dress_sweat_heat_exchange",
+        "hk_brass_paperweight_flange_align",
+        "hk_rubber_hammer_chock_in",
+        "hk_satin_ribbon_bind_grip",
+        "hk_water_curtain_roaring_rush",
+        "hk_atrium_air_pressure_drop",
+        "hk_synchronized_grunt_heave",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hk_end_relief_praise",
+        "hook_xiaoran_fried_chicken",
+        "hook_xiaoran_signal",
+        "hook_xiaoran_light_stick",
+        "hook_xiaoran_blister",
+        "hook_lu_lift_speed",
+        "hook_lu_in_ear",
+        "hook_xiaoran_lounge_door"
+      ],
       "start_minute": 1330,
       "tags": [
         "workplace",
@@ -2249,6 +2389,18 @@
         "loc_center_private_lounge"
       ],
       "text": "{npc.name}从休息室门缝里朝人招手：快进来，我偷藏了炸鸡。……别让经纪人姐姐看见。"
+    },
+    {
+      "id": "hd_idol_tang_xiaoran",
+      "kind": "approach",
+      "slot": "idol_tang_xiaoran",
+      "text": "{idol_tang_xiaoran.name}拎着两杯奶茶跑过来，塞给你一杯：“彩排结束啦，请你的，别客气。”"
+    },
+    {
+      "id": "hd_stage_machinery_lead_lu",
+      "kind": "approach",
+      "slot": "stage_machinery_lead_lu",
+      "text": "{stage_machinery_lead_lu.name}拿着检修单走过来：“明天的升降台，你也来看看走位。”"
     }
   ],
   "twists": [

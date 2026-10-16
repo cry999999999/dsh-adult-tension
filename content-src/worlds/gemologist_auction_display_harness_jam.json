@@ -1754,34 +1754,42 @@
     },
     {
       "id": "act_plinth_seal_harness_trap_crisis",
-      "title": "展台闭合与胶条咬死金链险情",
+      "title": "拍卖前一天的走台",
       "location_ids": [
         "loc_pink_diamond_rotating_plinth",
         "loc_auctioneer_rostrum_podium"
       ],
       "duration_minutes": 15,
-      "start_minute": 630,
+      "start_minute": 900,
       "beats": [
-        "设计师按动电钮降下防弹罩瞬间重型气囊密封硅胶槽突发气压倒吸",
-        "胶条深处缝隙死死咬卡高开叉长裙摆内纯金脚踝细链及镣铐卡榫",
-        "真丝晚礼裙受拉紧绷侧边开叉受外力强扯开裂即将暴露私密金链",
-        "读秒屏幕红色数字疯狂锐减，主讲台黄金小木槌悬于半空催逼进场"
+        "拍卖前一天，设计师在特展厅里走台，旋转展台慢慢转了一圈。",
+        "拍卖官在主讲台上试槌，小木槌敲在桌面上，声音清脆。",
+        "设计师站在展台中央，看着空荡荡的竞价席，说明晚这里会坐满五十个人。"
+      ],
+      "hook_ids": [
+        "hook_2",
+        "hook_5",
+        "hook_10"
       ]
     },
     {
       "id": "act_titanium_edge_escape_triumph",
-      "title": "验宝镜钛金属手柄直边撬阀脱困",
+      "title": "师兄带来的咖啡",
       "location_ids": [
         "loc_pink_diamond_rotating_plinth",
         "loc_vip_collectors_auction_floor"
       ],
       "duration_minutes": 20,
-      "start_minute": 645,
+      "start_minute": 1320,
       "beats": [
-        "师兄微展丝绒托盘挡住长焦视线同时专场助理快步登阶呈递文书截停",
-        "设计师反转蔡司放大镜以手柄坚硬纯钛直角棱角探入胶槽施加杠杆力矩",
-        "施加四点二牛顿推力顶退常闭排气微动触点，气囊嘶声骤降脱钩解放",
-        "设计师优雅抚平礼裙高开叉在第二十九秒从容登台呈递无瑕证书成就传奇"
+        "布展到深夜，师兄提着两杯咖啡走进展厅，把其中一杯递给设计师。",
+        "设计师接过咖啡，嫌太甜，还是喝了一半。",
+        "师兄问紧不紧张，设计师说：我设计它用了三年，它值得这一晚。"
+      ],
+      "hook_ids": [
+        "hook_2",
+        "hook_5",
+        "hook_10"
       ]
     },
     {

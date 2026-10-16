@@ -1255,22 +1255,25 @@
   },
   {
    "beats": [
-    "重申河道倒灌三级防汛演练避险疏散路线",
-    "演练台口狭小死角双人卧倒自救标准力矩姿态",
-    "核对乐池墙壁应急照明与防雨应急苫布存放位置"
+    "傍晚六点，书场的伙计在观众大厅里摆好茶碗和瓜子碟。",
+    "老听客们陆续进来，熟门熟路地坐到自己的老位子上，跟伙计寒暄几句。",
+    "后台传来三弦调音的声音，大厅里渐渐安静下来。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_tingyu_back_row",
+    "hook_tingyu_wood_pin",
+    "hook_yunqing_guanzi"
+   ],
    "id": "act_troupe_flood_evac_drill",
    "location_ids": [
     "loc_theater_main_auditorium"
    ],
-   "start_minute": 1415,
+   "start_minute": 1080,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "老戏楼山墙失衡防汛应急讲"
+   "title": "开书前的大厅"
   },
   {
    "beats": [

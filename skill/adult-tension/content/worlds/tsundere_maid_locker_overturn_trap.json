@@ -1340,41 +1340,47 @@
  "daily_activities": [
   {
    "beats": [
-    "使用特种铬钼钢直角棘轮扳手深入倾覆钢柜角钢与门框死角缝隙",
-    "二人合力向下方倾斜三十度施加静载杠杆力矩顶起沉重钢柜重心",
-    "在地轨受压释放瞬间合力向外侧拉开平移移门完成逃生"
+    "周年庆舞会前两天，台柱女仆在地下更衣通道里卸妆，对着储物柜上的小镜子擦口红。",
+    "储物柜门上贴满了客人送的贴纸，台柱一张张看过去，嘴角翘了起来。",
+    "卸完妆，台柱把女仆装挂进柜子，换上自己的卫衣，伸了个懒腰。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_bai_anchors_stool_iron_base",
+    "hook_bai_hands_wet_wipe_water",
+    "hook_qiao_cleans_rail_and_oils_corner"
+   ],
    "id": "act_xia_yu_bing_pries_steel_locker",
    "location_ids": [
     "loc_maid_backstage_locker_aisle"
    ],
-   "start_minute": 1360,
+   "start_minute": 1320,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "通道直角扳手下压撬偏倾覆钢柜角钢"
+   "title": "更衣通道里卸妆"
   },
   {
    "beats": [
-    "店长在前厅用加长六角扳手快速卸下外门滑轨两颗偏心限位螺栓",
-    "手持对讲机向商厦消控室申请防火卷帘门延迟五分钟并通报进度",
-    "通过门缝微孔清晰指示地轨松脱的瞬间向外同向推门"
+    "周年庆前一周，店长在舞台侧翼前厅里陪台柱排压轴的三支舞。",
+    "台柱跳错了一个动作，懊恼地跺脚，店长笑着说再来一遍。",
+    "排完最后一遍，店长递过去一瓶运动饮料：周年庆就靠你了。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_an_pries_door_bottom_ready",
+    "hook_lan_loosens_door_limit_bolts",
+    "hook_observe_lan_and_patrol_haul_door"
+   ],
    "id": "act_lan_calls_fire_center_and_loosens",
    "location_ids": [
     "loc_maid_cafe_stage_antechamber"
    ],
-   "start_minute": 1362,
+   "start_minute": 1260,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "前厅拆除移门限位螺栓并手台调度"
+   "title": "前厅里排舞"
   },
   {
    "beats": [
@@ -1434,22 +1440,25 @@
   },
   {
    "beats": [
-    "特勤队员双手扣死防暴撬杠深入门底外槽将门扇强力预顶起微隙",
-    "以军旅铿锵倒数读秒引导内外两侧人员毫秒级同步爆发发力",
-    "在移门脱扣洞开瞬间单手推门大开果断接应受困人员迅速撤出"
+    "舞台前厅里堆着周年庆要用的道具箱，彩带、气球和一块写着三周年的灯牌。",
+    "保安小安帮着把箱子搬到墙边，台柱在一旁拆气球，吹得满脸通红。",
+    "小安接过打气筒，说你吹到明天也吹不完。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_an_pries_door_bottom_ready",
+    "hook_lan_loosens_door_limit_bolts",
+    "hook_observe_lan_and_patrol_haul_door"
+   ],
    "id": "act_an_heaves_door_bottom_with_bar",
    "location_ids": [
     "loc_maid_cafe_stage_antechamber"
    ],
-   "start_minute": 1364,
+   "start_minute": 1200,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "备场前厅防暴撬杠外侧托举移门下沿"
+   "title": "前厅的道具箱"
   },
   {
    "beats": [

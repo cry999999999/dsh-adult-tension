@@ -1311,98 +1311,113 @@
  "daily_activities": [
   {
    "beats": [
-    "使用万用表淬火不锈钢探针硬柄精准插入防坠导向轮狭缝",
-    "二人合力以探针作为杠杆反向别撬偏心轴受阻卡销",
-    "在导轨棘爪脱扣瞬间双手后仰拉紧副绳启动受控滑降"
+    "窗口期的第五天，女总师和索具总工乘吊笼上到五十米，检查塔架上的光路。",
+    "吊笼慢慢升起，海面在脚下铺开，女总师说每次上来都觉得像在飞。",
+    "总工指着远处的渔船，说那是镇上老陈家的，天天来看火箭。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_cheng_flying_fish",
+    "hook_shen_braces_partner_in_violent_gust",
+    "hook_shen_inspects_jammed_ratchet_cable"
+   ],
    "id": "act_gantry_cradle_probe_pry_escape",
    "location_ids": [
     "loc_gantry_50m_suspended_cradle"
    ],
-   "start_minute": 1380,
+   "start_minute": 600,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "高空吊笼万用表绝缘探针挑拨自锁棘爪破拆"
+   "title": "乘吊笼上塔架"
   },
   {
    "beats": [
-    "手持防爆热氮喷枪对回转平台冰封阀门进行精准吹扫加温",
-    "测定平台富氧白雾浓度并启动侧向强制防爆风机稀释通风",
-    "在金属跳板表面铺设阻燃耐低温防滑橡胶垫开辟安全走廊"
+    "中午，女总师和总工在七级回转平台上吃盒饭，海风吹得饭盒盖直响。",
+    "总工把自己的红烧肉夹给女总师，说你上午爬了三趟，多吃点。",
+    "女总师嘴上说不要，筷子却已经夹过去了。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_cheng_flying_fish",
+    "hook_gao_secures_arrestor_arrest_cables",
+    "hook_xuan_deck_stars"
+   ],
    "id": "act_launch_tower_cryo_valve_defrost",
    "location_ids": [
     "loc_launch_tower_level7_swing_arm"
    ],
-   "start_minute": 1382,
+   "start_minute": 720,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "七级平台液氧超压排气阀热氮除冰应急处置"
+   "title": "回转平台上的午饭"
   },
   {
    "beats": [
-    "气象与调度人员紧盯雷达风向风速反演曲线锁定低风速窗口",
-    "测算雷暴地闪先导到达时间并向塔架下发脱险倒计时口令",
-    "调配舱底应急配电柜频率参数保障塔架提升母线电压稳定"
+    "舱底指挥舱里，气象员把明天的风场图投在大屏上，一条条曲线密密麻麻。",
+    "女总师端着茶杯看了很久，说窗口还要再等两天。",
+    "调度员叹了口气，说家里孩子又问自己什么时候回去。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_cheng_flying_fish",
+    "hook_lin_relays_radar_gust_interval",
+    "hook_song_announces_launch_cliff"
+   ],
    "id": "act_command_radar_window_countdown",
    "location_ids": [
     "loc_underground_launch_command_bunker"
    ],
-   "start_minute": 1380,
+   "start_minute": 1020,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "舱底指挥舱多普勒风场微隙秒级倒计时抢算"
+   "title": "指挥舱里看天气"
   },
   {
    "beats": [
-    "抢险队员迎着强阵风在七级平台外缘张拉抗冲击芳纶缓冲网",
-    "使用高强动力绳向晃动的吊笼抛掷配重导向拉绳稳固重心",
-    "锁定双重安全挂钩构筑刚性三角受力点准备接应滑降人员"
+    "索具总工每天早上都要爬上七级平台，一根根检查吊笼的钢缆。",
+    "女总师在下面喊总工下来吃早饭，总工摆摆手，说还剩两根。",
+    "检查完，总工下来时手上全是油，女总师递过去一块毛巾。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_cheng_flying_fish",
+    "hook_gao_secures_arrestor_arrest_cables",
+    "hook_xuan_deck_stars"
+   ],
    "id": "act_gantry_rigging_safety_net_deploy",
    "location_ids": [
     "loc_launch_tower_level7_swing_arm"
    ],
-   "start_minute": 1385,
+   "start_minute": 420,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "桁架立柱防坠阻尼缓冲安全网高空架设"
+   "title": "索具总工的一天"
   },
   {
    "beats": [
-    "在舱底动力机房手动调整配电盘频率与整流励磁电流",
-    "强行切除次要生活负荷确保发射塔特种索具提升回路用电",
-    "监测柴油机组排气温度防止高压过载引发设备严重回火"
+    "平台舱底的动力机房里，老电工在给柴油机组换机油，收音机里放着粤剧。",
+    "女总师下来送一份新的用电计划，老电工看了一眼，说没问题。",
+    "女总师在机房门口站了一会儿，跟着收音机哼了两句。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_cheng_flying_fish",
+    "hook_lin_relays_radar_gust_interval",
+    "hook_song_announces_launch_cliff"
+   ],
    "id": "act_emergency_generator_bus_load_switch",
    "location_ids": [
     "loc_underground_launch_command_bunker"
    ],
-   "start_minute": 1386,
+   "start_minute": 900,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "备用柴油机组应急动力母线带载合闸强投"
+   "title": "舱底的电工房"
   },
   {
    "beats": [

@@ -1359,41 +1359,47 @@
   },
   {
    "beats": [
-    "使用二氧化碳灭火器扑灭顶层配电柜电缆接头冒烟明火",
-    "拉下主断路器隔离开关强行切除过热影视镝灯供电回路",
-    "启动马道强力防排烟抽风机驱散积聚有毒塑料绝缘浓烟"
+    "开拍前，灯光师在顶层马道上一盏盏调镝灯的角度，底下的模特等着试光。",
+    "灯光师喊一声，模特就转一下身，大袖在光里像水一样流过去。",
+    "灯调好了，灯光师从马道上探头说：这一束光，是专门为你打的。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_qianyue_flying_pose",
+    "hook_qianyue_hairpin",
+    "hook_qianyue_wire_bruise"
+   ],
    "id": "act_truss_switchboard_fire_suppress",
    "location_ids": [
     "loc_studio_lighting_control_truss"
    ],
-   "start_minute": 1142,
+   "start_minute": 600,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "顶层马道配电箱电缆短路明火扑灭与除烟"
+   "title": "马道上调灯"
   },
   {
    "beats": [
-    "清理影棚地面纵横交错的杂乱电缆与造雾干冰喷洒管路",
-    "合抱移动式铝合金特种接应踏步云梯推至模特正下方",
-    "四角锁定防滑万向脚轮为悬空受困人员筑牢硬支撑台面"
+    "武术指导在跳架上教模特走飞天的身段，一步一步扶着模特的腰。",
+    "模特练了十几遍，终于在半空中稳稳回了一次眸。",
+    "武术指导在下面鼓掌，模特落地时脸红扑扑的，说明天还要再练。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_lei_climbs_stunt_scaffold_to_brace",
+    "hook_qianyue_flying_pose",
+    "hook_qianyue_hairpin"
+   ],
    "id": "act_scenic_stepladder_rapid_deployment",
    "location_ids": [
     "loc_studio_high_fly_wire_stage"
    ],
-   "start_minute": 1144,
+   "start_minute": 840,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "实景影棚模块化仿古楼阁接应步梯推移"
+   "title": "威亚区的跳架练习"
   },
   {
    "beats": [
@@ -1416,22 +1422,25 @@
   },
   {
    "beats": [
-    "调试手持便携工业防爆冷光源光斑光束汇聚至一寸直径",
-    "避开人员眼部直射高角度投亮悬空暗系带死结内部空隙",
-    "通过高清监视器十倍变焦画面口头复诵细弯钩前进路线"
+    "收工前，模特和武术指导挤在监视器前看今天拍的回放。",
+    "看到自己飞起来的那一段，模特捂着脸说太丢人了。",
+    "武术指导把那段又放了一遍，说：这是我今年见过最好看的飞天。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_lei_climbs_stunt_scaffold_to_brace",
+    "hook_qianyue_flying_pose",
+    "hook_qianyue_hairpin"
+   ],
    "id": "act_macro_spotlight_alignment_guidance",
    "location_ids": [
     "loc_studio_high_fly_wire_stage"
    ],
-   "start_minute": 1141,
+   "start_minute": 1140,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "工业级调焦冷光手电高位微观死结投射"
+   "title": "监视器前看回放"
   },
   {
    "beats": [

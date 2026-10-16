@@ -1911,23 +1911,25 @@
     },
     {
       "id": "a_dawn_slave_branding_prep",
-      "title": "公会大门前奴隶烙印火盆预热",
+      "title": "暗室里的账本",
       "location_ids": [
         "debt_settlement_chamber"
       ],
       "duration_minutes": 25,
       "beats": [
-        "生铁火盆内木炭被吹得通红照亮几柄带尖刺的公会所有权火印",
-        "奴隶贩子翻动厚厚的人身买卖契约发出尖锐刺耳的嗤笑声",
-        "长案前执刑官的大剑重重归鞘震慑得所有被押者双膝发软"
+        "清算暗室的长案上摆着厚厚的账本，执事一页页翻着，嘴里念着欠债人的名字。",
+        "执事念到一个名字停下来，说这人上个月还了一半，下个月应该能还清。",
+        "账本合上，执事吹灭蜡烛，说今天就到这里。"
       ],
       "hook_ids": [
-        "h_mistress_abacus_snap",
-        "h_inquisitor_hammer_lean",
-        "h_scout_bandage_glow",
-        "h_scout_potion_beg"
+        "hd_cold_eyed_guildmistress",
+        "hd_scarred_guild_enforcer",
+        "hd_fallen_high_mage",
+        "hd_desperate_scout_survivor",
+        "hd_disgraced_holy_inquisitor",
+        "hd_black_market_apothecary"
       ],
-      "start_minute": 1435,
+      "start_minute": 1080,
       "tags": [
         "coercion_theme"
       ]
@@ -2323,6 +2325,42 @@
         "contract_vault_archives"
       ],
       "text": "{fallen_high_mage.name}把一枚用血写满密文的纽扣悄悄踢到你的鞋边，压低声线急促道：“把这个交给外头后巷的中间人，对方会带爆破炸药来接应我们，快！”"
+    },
+    {
+      "id": "hd_cold_eyed_guildmistress",
+      "kind": "approach",
+      "slot": "cold_eyed_guildmistress",
+      "text": "{cold_eyed_guildmistress.name}把一杯热麦酒推到你面前：“今天不谈债。坐下，喝完再走。”"
+    },
+    {
+      "id": "hd_scarred_guild_enforcer",
+      "kind": "approach",
+      "slot": "scarred_guild_enforcer",
+      "text": "{scarred_guild_enforcer.name}在你旁边坐下，啃着面包：“今天没活儿，清闲。”"
+    },
+    {
+      "id": "hd_fallen_high_mage",
+      "kind": "approach",
+      "slot": "fallen_high_mage",
+      "text": "{fallen_high_mage.name}把一张写满算式的羊皮纸递给你：“帮我验算一下，脑子不够用了。”"
+    },
+    {
+      "id": "hd_desperate_scout_survivor",
+      "kind": "approach",
+      "slot": "desperate_scout_survivor",
+      "text": "{desperate_scout_survivor.name}抱着膝盖坐在你身边：“陪我说说话吧，一个人待着闷。”"
+    },
+    {
+      "id": "hd_disgraced_holy_inquisitor",
+      "kind": "approach",
+      "slot": "disgraced_holy_inquisitor",
+      "text": "{disgraced_holy_inquisitor.name}擦着一枚旧圣徽，抬头看你：“你信神吗？随便问问。”"
+    },
+    {
+      "id": "hd_black_market_apothecary",
+      "kind": "approach",
+      "slot": "black_market_apothecary",
+      "text": "{black_market_apothecary.name}把一小罐蜂蜜膏推给你：“新熬的，润嗓子。”"
     }
   ],
   "twists": [

@@ -1857,110 +1857,122 @@
   "daily_activities": [
     {
       "id": "act_arrowhead_excising_treatment",
-      "title": "夯土暗室借烈酒与火刃剜取倒刺箭头",
+      "title": "暗室里煮茶",
       "location_ids": [
         "beacon_rammed_earth_shelter"
       ],
       "duration_minutes": 85,
       "beats": [
-        "司药女史在跳跃炭盆前将短唐刀烧至焦红，都尉咬紧一根生牛皮带汗如雨下任其切开肩胛皮肉",
-        "长公主双膝跪地双手死死按住都尉颤抖的右臂，以素绢浸透西域烈酒擦拭涌出之乌黑污血",
-        "暗室外狂暴沙暴如万雷擂鼓，伴随清脆金石之音，一枚淬毒倒刺箭头被生生夹出落入铜盘"
+        "和亲仪仗出发前，长公主在烽燧暗室里歇脚，司药女史在炭盆上煮一壶西域的奶茶。",
+        "守将都尉站在门口，长公主问都尉守这座烽燧多久了。",
+        "都尉说三年，长公主捧着茶碗说：三年，够把一个人的心磨硬了。"
       ],
       "hook_ids": [
-        "hk_princess_knife_approach",
-        "hk_renegade_blade_approach",
-        "hk_physician_scalpel_observe"
+        "hd_imperial_peace_princess",
+        "hd_frontier_corrupt_patrol_general",
+        "hd_renegade_fortress_commander",
+        "hd_veteran_signal_fire_keeper",
+        "hd_sogdian_caravan_master",
+        "hd_royal_female_physician_scribe"
       ],
-      "start_minute": 1320,
+      "start_minute": 1020,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "act_middle_hall_cliff_repel",
-      "title": "中层穿堂架设滚石阻击攀岩突厥死士",
+      "title": "穿堂里擦甲",
       "location_ids": [
         "beacon_middle_arsenal_hall"
       ],
       "duration_minutes": 70,
       "beats": [
-        "突厥先锋死士抛掷百具生铁飞爪挂上射击石孔，数十柄淬毒弯刀迎着沙暴从悬崖裂隙涌出",
-        "逃亡都尉与老烽帅合力斩断飞爪生麻绳，长公主亲自弯弓搭箭连续射穿两名突入敌兵咽喉",
-        "两百斤重的落石擂木轰然砸下悬崖峭壁，碎骨与惨嚎声在漫天风沙呼啸中瞬间被暴风吞没"
+        "烽燧中层的军械穿堂里，老烽帅带着几个兵擦拭铠甲和弓弩。",
+        "长公主上来看，老烽帅连忙行礼，说这里脏，殿下别弄污了衣裳。",
+        "长公主拿起一张弓试着拉了拉，说小时候跟着哥哥们学过射箭。"
       ],
       "hook_ids": [
         "hk_renegade_bow_approach",
         "hk_corrupt_general_parley_approach",
         "hk_signal_fire_bell_request"
       ],
-      "start_minute": 1425,
+      "start_minute": 900,
       "tags": [
         "workplace"
       ]
     },
     {
       "id": "act_rooftop_signal_triple_smoke",
-      "title": "绝壁烽火台顶风引燃三束告警狼烟",
+      "title": "烽火台顶看落日",
       "location_ids": [
         "beacon_rooftop_signal_platform"
       ],
       "duration_minutes": 90,
       "beats": [
-        "八级黑风暴撕碎羊皮防风罩，老烽帅用身躯挡住怒号狂风，火石火星三次吹灭火绒受潮告急",
-        "长公主扯下名贵金丝大氅浸透西域猛火油抛入火灶，都尉挥臂将火把砸入灶膛引燃冲天烈焰",
-        "三股刺目深黑的狼烟在夜空暴风中笔直冲天而起，破空青烟化作大唐边防永不沉沦的求救神剑"
+        "傍晚，长公主登上烽火台顶，看着落日一点点沉进大漠。",
+        "都尉陪在一旁，指着远处说那是西去的商道，再往西就是长公主要去的地方。",
+        "长公主望着那条路看了很久，说：从这里看，路好短。"
       ],
       "hook_ids": [
-        "hk_signal_keeper_torch_approach",
-        "hk_princess_beacon_request",
-        "hk_sogdian_wine_approach"
+        "hd_imperial_peace_princess",
+        "hd_frontier_corrupt_patrol_general",
+        "hd_renegade_fortress_commander",
+        "hd_veteran_signal_fire_keeper",
+        "hd_sogdian_caravan_master",
+        "hd_royal_female_physician_scribe"
       ],
-      "start_minute": 75,
+      "start_minute": 1110,
       "tags": [
         "workplace"
       ]
     },
     {
       "id": "act_cliff_secret_crevice_scouting",
-      "title": "后山断崖风蚀石缝探寻突围暗道虚实",
+      "title": "石缝里的泉水",
       "location_ids": [
         "cliff_secret_crevice_path"
       ],
       "duration_minutes": 65,
       "beats": [
-        "都尉与长公主侧身贴紧覆满盐硝的冰冷绝壁，借着牛皮悬索试探下方深渊流沙坑分布走势",
-        "一道强风裹挟碎石砸落擦破脸颊，两人在不足半尺的立足石台上紧紧相拥以防坠入万丈深渊",
-        "下方荒漠隐约显露突厥伏击骑兵移动火把序列，两人屏息凝神借岩壁死角默记敌军包围空当"
+        "都尉带长公主走进后山的石缝，说里面有一眼泉水，是整座烽燧唯一的水源。",
+        "泉水清凉，长公主捧起来喝了一口，说比宫里的井水还甜。",
+        "都尉在泉边站着，说三年来，自己每天都来这里打水。"
       ],
       "hook_ids": [
-        "hk_renegade_blade_approach",
-        "hk_physician_herb_approach",
-        "hk_renegade_cliff_observe"
+        "hd_imperial_peace_princess",
+        "hd_frontier_corrupt_patrol_general",
+        "hd_renegade_fortress_commander",
+        "hd_veteran_signal_fire_keeper",
+        "hd_sogdian_caravan_master",
+        "hd_royal_female_physician_scribe"
       ],
-      "start_minute": 180,
+      "start_minute": 960,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "act_arsenal_hall_mutiny_clash",
-      "title": "中层军械穿堂正堂夺门内讧生死大审",
+      "title": "中郎将的晚宴",
       "location_ids": [
         "beacon_middle_arsenal_hall"
       ],
       "duration_minutes": 75,
       "beats": [
-        "统兵中郎将纠集十余名亲兵拔刀围困千斤闸绞盘，妄图趁风暴斩断铁锁开门迎敌乞降求生",
-        "长公主出示天子和亲金印厉声宣布按大唐军律夺其军权，羽林老士卒纷纷倒戈横刀相向",
-        "都尉飞身跃下石梯一脚踹飞叛兵伍长，雁翎刀出鞘三寸寒芒毕现，当堂迫降全员收缴兵符"
+        "仪仗统兵中郎将在军械穿堂里摆了一桌简陋的晚宴，为长公主饯行。",
+        "席间中郎将频频敬酒，说着长安城里的旧事，都尉坐在末席一言不发。",
+        "散席时，长公主走过都尉身边，低声说：明日启程，你送我一程。"
       ],
       "hook_ids": [
-        "hk_corrupt_general_parley_approach",
-        "hk_princess_knife_approach",
-        "hk_signal_fire_bell_request"
+        "hd_imperial_peace_princess",
+        "hd_frontier_corrupt_patrol_general",
+        "hd_renegade_fortress_commander",
+        "hd_veteran_signal_fire_keeper",
+        "hd_sogdian_caravan_master",
+        "hd_royal_female_physician_scribe"
       ],
-      "start_minute": 265,
+      "start_minute": 1140,
       "tags": [
         "workplace"
       ]
@@ -2424,6 +2436,42 @@
         "beacon_rooftop_signal_platform"
       ],
       "text": "一道惨白的闪电撕裂昏黄风暴，清晰可见{renegade_fortress_commander.name}正半蹲在绝壁不足一尺宽的风蚀石台上，玄黑战甲覆满白霜盐硝，右手紧紧握着六石桑木硬弓，狂风狂乱吹扯其狼皮大氅，身形宛若与绝壁万仞融为一体。"
+    },
+    {
+      "id": "hd_imperial_peace_princess",
+      "kind": "approach",
+      "slot": "imperial_peace_princess",
+      "text": "{imperial_peace_princess.name}倚着城垛望着远处的驼队，回头看你：“陪我看一会儿。今天的天很蓝。”"
+    },
+    {
+      "id": "hd_frontier_corrupt_patrol_general",
+      "kind": "approach",
+      "slot": "frontier_corrupt_patrol_general",
+      "text": "{frontier_corrupt_patrol_general.name}拎着一壶葡萄酒走来：“西域的酒，尝尝。”"
+    },
+    {
+      "id": "hd_renegade_fortress_commander",
+      "kind": "approach",
+      "slot": "renegade_fortress_commander",
+      "text": "{renegade_fortress_commander.name}在你身边坐下，指着远处：“那座雪山，叫祁连。”"
+    },
+    {
+      "id": "hd_veteran_signal_fire_keeper",
+      "kind": "approach",
+      "slot": "veteran_signal_fire_keeper",
+      "text": "{veteran_signal_fire_keeper.name}递给你一块烤馕：“刚出炉的，趁热吃。”"
+    },
+    {
+      "id": "hd_sogdian_caravan_master",
+      "kind": "approach",
+      "slot": "sogdian_caravan_master",
+      "text": "{sogdian_caravan_master.name}打开一只锦盒冲你笑：“新到的香料，闻闻看。”"
+    },
+    {
+      "id": "hd_royal_female_physician_scribe",
+      "kind": "approach",
+      "slot": "royal_female_physician_scribe",
+      "text": "{royal_female_physician_scribe.name}把一卷誊好的文书递给你：“劳烦过目，可有错字？”"
     }
   ],
   "twists": [

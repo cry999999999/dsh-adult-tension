@@ -1339,41 +1339,46 @@
  "daily_activities": [
   {
    "beats": [
-    "使用特种加厚冷锻拔销斜嘴钳深入生铁抱肚偏心凹槽锁定铜套暗销",
-    "两人一起把拔销钳往下斜压，铁销在铜套里一点点退出来，发出刺耳的摩擦声",
-    "在暗销弹退生铁门栓松脱瞬间合抱向上托起门栓推门完成逃生"
+    "夜戏开机前三个钟头，梳头师在东暖阁里给女一号梳发髻，一缕缕盘上去，插上点翠头面。",
+    "女一号坐得腰都酸了，梳头师嘴上嫌对方乱动，手下却一点没停。",
+    "发髻梳好，梳头师退后一步看了看，难得夸了一句：今晚的戏，你最好看。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_bai_calibrates_vertical_heave_line",
+    "hook_bai_couples_extension_tube",
+    "hook_chu_and_crew_thrust_downward_pulse"
+   ],
    "id": "act_chu_ning_shuang_pries_iron_bolt",
    "location_ids": [
     "loc_ancient_hall_makeup_booth"
    ],
-   "start_minute": 1290,
+   "start_minute": 1080,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "厢房拔销钳斜口下压撬退偏心生铁暗销"
+   "title": "暖阁里梳发髻"
   },
   {
    "beats": [
-    "总监在回廊用加长六角扳手快速卸下外侧防风木戗底座两颗定位偏心螺栓",
-    "手持对讲机向点火组申请十分钟安全延时并向门内通报读秒进度",
-    "通过门缝微孔清晰指示门栓松脱的瞬间向外同向推门"
+    "大殿前厅回廊里，总监拿着流程单跟各组对夜戏的时间。",
+    "梳头师从暖阁里探出头，问发髻还要不要再加一支簪子。",
+    "总监看了一眼监视器，说不用加，梳头师哼了一声，缩回去了。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_shen_pries_door_bottom_ready",
+    "hook_observe_xiao_and_patrol_haul_door"
+   ],
    "id": "act_xiao_calls_pyro_and_unscrews_strut",
    "location_ids": [
     "loc_ancient_hall_corridor_antechamber"
    ],
-   "start_minute": 1292,
+   "start_minute": 1140,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "回廊拆除防风木戗螺栓并对讲调度"
+   "title": "回廊里对流程"
   },
   {
    "beats": [
@@ -1433,22 +1438,24 @@
   },
   {
    "beats": [
-    "特勤队员双手扣死防暴撬杠深入门底外槽将门扇强力预顶起微隙",
-    "以军旅铿锵倒数读秒引导内外两侧人员毫秒级同步爆发发力",
-    "在门栓脱扣洞开瞬间单手推门大开果断接应受困人员迅速撤出"
+    "开机前的饭点，剧组的人在大殿前厅回廊下蹲着吃盒饭。",
+    "特勤队员端着饭盒凑过来，说今晚的风大，道具组得把门窗都固定好。",
+    "梳头师把自己盒饭里的鸡腿夹给了累了一天的小助理。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_shen_pries_door_bottom_ready",
+    "hook_observe_xiao_and_patrol_haul_door"
+   ],
    "id": "act_shen_heaves_door_bottom_with_bar",
    "location_ids": [
     "loc_ancient_hall_corridor_antechamber"
    ],
-   "start_minute": 1294,
+   "start_minute": 1110,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "前厅回廊防暴撬杠外侧托举樟木大门"
+   "title": "回廊下的盒饭"
   },
   {
    "beats": [

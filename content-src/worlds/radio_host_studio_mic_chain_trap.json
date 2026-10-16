@@ -1765,17 +1765,22 @@
     },
     {
       "id": "act_boom_gear_chain_snag_incident",
-      "title": "防夹自锁转轴齿轮死锁细链咬合",
+      "title": "开播前调麦",
       "location_ids": [
         "loc_street_studio_main_mic_desk"
       ],
       "duration_minutes": 5,
       "beats": [
-        "白金乳链死死绞入齿缝将女主播真丝衬衫领口向下拉拽紧绷",
-        "月白重工真丝衬衫前襟受拉紧绷导致女主播上身无法后仰直立"
+        "零点开播前十分钟，女主播坐在播音台前调整悬臂麦克风的高度。",
+        "窗外已经站了几个粉丝，女主播抬头朝窗外的人笑了笑，挥了挥手。",
+        "导播在对讲里倒数，女主播戴上耳机，深吸一口气。"
       ],
-      "hook_ids": [],
-      "start_minute": 1428,
+      "hook_ids": [
+        "hook_01_mic_arm_chain_snag_groan",
+        "hook_02_silk_blouse_strain_jam",
+        "hook_03_hairpin_tip_lever_extract"
+      ],
+      "start_minute": 1430,
       "tags": []
     },
     {

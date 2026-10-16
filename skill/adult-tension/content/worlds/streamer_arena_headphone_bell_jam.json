@@ -1351,33 +1351,43 @@
   },
   {
    "beats": [
-    "决胜局水晶枢纽爆破瞬间主播激动起立与搭档解说击掌欢呼",
-    "加粗双绞耳机线在大幅度动作中猛烈回弹卡入椅背钢架死角"
+    "总决赛开始前两小时，主播和搭档解说在玻璃房里对稿，一页页过今晚的台词。",
+    "搭档说到一个梗，主播笑得前仰后合，说这个一定要留着。",
+    "对完稿，主播戴上耳机试音，冲着空荡荡的观众席比了个心。"
    ],
    "duration_minutes": 8,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_02_choker_bell_cable_snag",
+    "hook_03_keycap_puller_extracted",
+    "hook_04_lead_iron_shield_standoff"
+   ],
    "id": "act_partner_script_high_five_celebrate",
    "location_ids": [
     "loc_esports_arena_glass_booth"
    ],
-   "start_minute": 1272,
+   "start_minute": 1020,
    "tags": [],
-   "title": "解说席搭档欢呼起立击掌庆祝仪式"
+   "title": "决赛前的对稿"
   },
   {
    "beats": [
-    "耳机线死死咬住纯银铃铛开口环将主播后颈拽紧在电竞椅上",
-    "粉白水手服领口向上拉扯勒紧锁骨导致主播呼吸急促受阻"
+    "主播坐在解说席上试耳机，导播在对讲里一遍遍调音量。",
+    "耳机线太长，主播绕了两圈缠在手腕上，嘟囔着说下回要换无线的。",
+    "调试完毕，导播竖起大拇指，主播回了一个歪头的表情。"
    ],
    "duration_minutes": 5,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_02_choker_bell_cable_snag",
+    "hook_03_keycap_puller_extracted",
+    "hook_04_lead_iron_shield_standoff"
+   ],
    "id": "act_headphone_cable_steel_slot_jam",
    "location_ids": [
     "loc_esports_arena_glass_booth"
    ],
-   "start_minute": 1274,
+   "start_minute": 1050,
    "tags": [],
-   "title": "凯夫拉线缆与冲压钢架槽死锁绞合"
+   "title": "导播台前试设备"
   },
   {
    "beats": [

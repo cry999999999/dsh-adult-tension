@@ -1901,22 +1901,25 @@
     },
     {
       "id": "act_heating_pipe_emergency_repair",
-      "title": "七号车厢地板下层通气管路排险抢修",
+      "title": "走廊里修暖气",
       "location_ids": [
         "sleeper_corridor_car7"
       ],
       "duration_minutes": 70,
       "beats": [
-        "检修师掀开走廊厚地毯与活动钢板，跳入弥漫着蒸汽与煤灰的车底狭窄检修槽内寻找漏气源头",
-        "列车员打着手电筒趴在槽口协助递送大号管钳，冰冷刺骨的穿堂风冻得两人手背通红",
-        "扳手扭动锈死法兰盘时突然发现通风口滤网内被人为塞入了一团浸满剧毒药油的医用棉纱"
+        "列车停在雪原上的第二天，检修师在七号车厢走廊里掀开地板修暖气管。",
+        "列车员趴在槽口递工具，嘴里念叨着这趟车跑了二十年，头一回停这么久。",
+        "暖气重新热起来，走廊里的乘客纷纷探出头道谢。"
       ],
       "hook_ids": [
-        "hk_technician_wrench_approach",
-        "hk_forensic_scalpel_entry",
-        "hk_marshal_patrol_corner"
+        "hd_chief_forensic_pathologist",
+        "hd_railway_marshal_captain",
+        "hd_border_trade_magnate",
+        "hd_veteran_train_master",
+        "hd_senior_sleeper_attendant",
+        "hd_rehabilitated_camp_medic"
       ],
-      "start_minute": 345,
+      "start_minute": 840,
       "tags": [
         "workplace"
       ]
@@ -2387,6 +2390,42 @@
         "dining_car_service_counter"
       ],
       "text": "透过餐车操作台厚重的防风帆布帘缝隙，清晰可见{border_trade_magnate.name}正背对着过道坐在最靠窗的位置，神色阴沉严峻如暴风雪前夕的黑夜。"
+    },
+    {
+      "id": "hd_chief_forensic_pathologist",
+      "kind": "approach",
+      "slot": "chief_forensic_pathologist",
+      "text": "{chief_forensic_pathologist.name}把一杯热茶推到你面前：“车上无事，陪我坐坐。”"
+    },
+    {
+      "id": "hd_railway_marshal_captain",
+      "kind": "approach",
+      "slot": "railway_marshal_captain",
+      "text": "{railway_marshal_captain.name}巡完一节车厢，在你对面坐下：“今晚太平，下盘棋？”"
+    },
+    {
+      "id": "hd_border_trade_magnate",
+      "kind": "approach",
+      "slot": "border_trade_magnate",
+      "text": "{border_trade_magnate.name}掏出一包外国糖果递给你：“尝尝，那边带回来的。”"
+    },
+    {
+      "id": "hd_veteran_train_master",
+      "kind": "approach",
+      "slot": "veteran_train_master",
+      "text": "{veteran_train_master.name}拿着一份运行图冲你点头：“正点运行，明早到站。”"
+    },
+    {
+      "id": "hd_senior_sleeper_attendant",
+      "kind": "approach",
+      "slot": "senior_sleeper_attendant",
+      "text": "{senior_sleeper_attendant.name}提着热水壶过来：“给您续点水，夜里干。”"
+    },
+    {
+      "id": "hd_rehabilitated_camp_medic",
+      "kind": "approach",
+      "slot": "rehabilitated_camp_medic",
+      "text": "{rehabilitated_camp_medic.name}合上一本旧书，冲你笑笑：“睡不着？聊聊天吧。”"
     }
   ],
   "twists": [

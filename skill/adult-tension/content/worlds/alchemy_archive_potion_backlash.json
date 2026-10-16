@@ -1506,15 +1506,18 @@
  "daily_activities": [
   {
    "beats": [
-    "水晶分馏塔谐振爆裂，粉色药雾席卷暗室，首席吸入药雾，风衣纽扣崩落",
-    "搭档按住导流法阵防魔火外溢，首席把银法杖死死按进对方掌心",
-    "幽紫光里，首席把滚烫的脸埋在对方胸口，呓语断断续续，听不清一句完整的话"
+    "首席在炼药台前调试分馏塔，琉璃导管里的药液一滴滴落进烧瓶。",
+    "后辈搭档负责记录温度，首席每报一个数字，都要搭档复述一遍。",
+    "实验告一段落，首席摘下护目镜，说今晚的数据比上回准了三成。"
    ],
    "duration_minutes": 60,
    "hook_ids": [
-    "hk_ayaka_uniform_approach",
-    "hk_yuma_grounding_approach",
-    "hk_ayaka_stockings_observe"
+    "hd_first_seat_ayaka",
+    "hd_commander_reinhard",
+    "hd_junior_partner_yuma",
+    "hd_lecturer_clara",
+    "hd_adjutant_cecilia",
+    "hd_engineer_bruno"
    ],
    "id": "act_lab_rupture_grounding",
    "location_ids": [
@@ -1524,13 +1527,13 @@
    "tags": [
     "intimate"
    ],
-   "title": "导管爆裂与法杖相托"
+   "title": "深夜的分馏实验"
   },
   {
    "beats": [
-    "搭档背着虚弱的首席躲进书案后，丝绒日记从震落的铁匣里滑出，银锁崩开",
-    "摊开的那一页写满搭档的名字，搭档把日记合上，没有再看",
-    "首席在对方肩上微微清醒，看见合上的日记，红了眼眶"
+    "首席要找一卷三百年前的配方残本，让搭档举着灯跟在身后。",
+    "书架最底层压着一只银锁铁匣，首席看了一眼就说不用管。",
+    "残本找到了，首席抱着书走在前面，耳朵却有点红。"
    ],
    "duration_minutes": 65,
    "hook_ids": [
@@ -1546,19 +1549,22 @@
    "tags": [
     "intimate"
    ],
-   "title": "密室找到日记"
+   "title": "密室里找一卷残本"
   },
   {
    "beats": [
-    "团长挥圣剑劈砍锁槽，工匠把破锁锥卡进门缝合力猛撬",
-    "副官压制外溢魔气，搭档在门内用撬棍顶住锁舌，锁销应声断裂",
-    "闸门滑开一道缝，讲师顺着门缝送进圣露与防护水符"
+    "进出禁书库都要在龙鳞闸门前登记，守门的老讲师慢吞吞地翻着名册。",
+    "首席不耐烦地敲着桌面，搭档替两人签好了名。",
+    "老讲师抬眼看了看两人，意味深长地说：又是你们俩，这礼拜第五次了。"
    ],
    "duration_minutes": 55,
    "hook_ids": [
-    "hk_commander_blade_approach",
-    "hk_engineer_hammer_approach",
-    "hk_vestibule_lock_observe"
+    "hd_first_seat_ayaka",
+    "hd_commander_reinhard",
+    "hd_junior_partner_yuma",
+    "hd_lecturer_clara",
+    "hd_adjutant_cecilia",
+    "hd_engineer_bruno"
    ],
    "id": "act_vestibule_gate_breach",
    "location_ids": [
@@ -1568,19 +1574,22 @@
    "tags": [
     "workplace_power"
    ],
-   "title": "龙鳞闸门破障"
+   "title": "闸门前登记"
   },
   {
    "beats": [
-    "讲师冒着烫伤爬上铸铁平台撬动卡死的齿轮",
-    "工匠一锤砸碎变形导管，风机恢复运转，粉色药雾被抽吸一空",
-    "冷冽的夜风从天井灌下，暗室的热度迅速退去"
+    "每月一次的排烟夹层清扫轮到首席这一组，工匠领着两人爬上铸铁平台。",
+    "首席嫌灰大，用手帕捂着口鼻指挥，搭档一个人扫完了半边。",
+    "下来时搭档满脸是灰，首席忍着笑把手帕递了过去。"
    ],
    "duration_minutes": 50,
    "hook_ids": [
-    "hk_lecturer_potion_approach",
-    "hk_adjutant_scale_approach",
-    "hk_flue_pipe_observe"
+    "hd_first_seat_ayaka",
+    "hd_commander_reinhard",
+    "hd_junior_partner_yuma",
+    "hd_lecturer_clara",
+    "hd_adjutant_cecilia",
+    "hd_engineer_bruno"
    ],
    "id": "act_flue_unclogging",
    "location_ids": [
@@ -1590,17 +1599,16 @@
    "tags": [
     "workplace"
    ],
-   "title": "排烟夹层疏通风机"
+   "title": "排烟夹层的月度清扫"
   },
   {
    "beats": [
-    "讲师把天青醒神圣露喂进首席口中，搭档掌心抵住后心引导药力",
-    "暴走的火毒顺着法杖泄进黑曜石台，首席脸上的绯红褪尽",
-    "首席睁开眼，眼神清明，第一句话是“日记你看了吗”"
+    "实验做到深夜，讲师送来两碗热汤面，放在炼药台边。",
+    "首席一边吃一边翻笔记，汤汁溅到了纸上也不在意。",
+    "搭档吃完先收拾碗筷，首席头也不抬地说：明晚还是这个时间。"
    ],
    "duration_minutes": 45,
    "hook_ids": [
-    "hk_lecturer_potion_approach",
     "hk_ayaka_clear_confession_approach",
     "hk_chamber_glow_observe"
    ],
@@ -1612,7 +1620,7 @@
    "tags": [
     "intimate"
    ],
-   "title": "圣露中和与清醒"
+   "title": "炼药台边的宵夜"
   },
   {
    "beats": [
@@ -1811,6 +1819,48 @@
    ],
    "slot": "junior_partner_yuma",
    "text": "中庭千年钟楼的露台上，金色朝阳从雪山之巅升起，万道金光刺破晨雾，把整座魔法城堡镀上金顶，晨风掠过发梢。"
+  },
+  {
+   "id": "hd_first_seat_ayaka",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "first_seat_ayaka",
+   "text": "{first_seat_ayaka.name}把一本笔记推到你面前，语气平淡：“这几页的配比，你替我再核一遍。”"
+  },
+  {
+   "id": "hd_commander_reinhard",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "commander_reinhard",
+   "text": "{commander_reinhard.name}巡完一圈回来，在你桌边停下：“还在抄书？我陪你坐一会儿。”"
+  },
+  {
+   "id": "hd_junior_partner_yuma",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "junior_partner_yuma",
+   "text": "{junior_partner_yuma.name}端着两杯热可可挤到你身边：“前辈，休息一下吧，今天的书抄不完的。”"
+  },
+  {
+   "id": "hd_lecturer_clara",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "lecturer_clara",
+   "text": "{lecturer_clara.name}把一枚干花书签夹进你的书里：“上次借你的那本，读到哪儿了？”"
+  },
+  {
+   "id": "hd_adjutant_cecilia",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "adjutant_cecilia",
+   "text": "{adjutant_cecilia.name}把一份例行登记表放在你面前：“签个名就好，今天只是走个过场。”"
+  },
+  {
+   "id": "hd_engineer_bruno",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "engineer_bruno",
+   "text": "{engineer_bruno.name}擦着手上的油污走过来：“工坊新做了几盏符文灯，挑一盏拿去用。”"
   }
  ],
  "id": "alchemy_archive_potion_backlash",

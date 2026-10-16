@@ -1639,21 +1639,24 @@
   "daily_activities": [
     {
       "id": "act_mountain_crevasse_blizzard_audit",
-      "title": "天坑底部避风石崖气温与冰岩裂缝排查",
+      "title": "地窨子里看山图",
       "location_ids": [
-        "loc_crevasse_bottom_boulder_shelter"
+        "loc_ginseng_dugout_hut"
       ],
       "duration_minutes": 25,
       "beats": [
-        "使用水银温度计记录天坑底部背风石隙极寒气温",
-        "使用索罗棍敲击巨石底部排查震落冰挂松动裂纹",
-        "在关东采参客腰间加系红丝绳标记彼此避险站位"
+        "进山前一晚，女把头在地窨子里摊开一张手绘的山图，给考察队讲哪道沟里有参。",
+        "地质学者指着图上的冰川问能不能绕过去，女把头说那地方连老把头都不去。",
+        "灯油快烧完了，女把头卷起山图，叮嘱大家明早五更出发。"
       ],
-      "hook_ids": [],
-      "start_minute": 960,
+      "hook_ids": [
+        "hook_hanzhou_sketch",
+        "hook_xueyuan_dugout_curtain",
+        "hook_xueyuan_hot_spring"
+      ],
+      "start_minute": 1260,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {
@@ -1733,21 +1736,24 @@
     },
     {
       "id": "act_mountain_ranger_rescue_harness_check",
-      "title": "天坑边缘巡逻队员安全牵引主绳与套环排查",
+      "title": "整理放山的家什",
       "location_ids": [
-        "loc_subterranean_ice_cave_bivouac"
+        "loc_ginseng_dugout_hut"
       ],
       "duration_minutes": 15,
       "beats": [
-        "排查麻绳在暴风雪刷洗下的受冻抗拉伸强度",
-        "检查防滑铜扣与锁销在低温下的灵活转动状态",
-        "在坚固石崖固定备用双人救援牵引主绳"
+        "女把头把索罗棍、鹿骨签子和红绳一样样摆在炕上，挨个检查。",
+        "考察队的人好奇地拿起红绳，女把头说这是拴参用的，见了参先拴住，它就跑不了。",
+        "家什收进背篓，女把头拍了拍手：明天让你们开开眼。"
       ],
-      "hook_ids": [],
-      "start_minute": 985,
+      "hook_ids": [
+        "hook_hanzhou_sketch",
+        "hook_xueyuan_dugout_curtain",
+        "hook_xueyuan_hot_spring"
+      ],
+      "start_minute": 1200,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {

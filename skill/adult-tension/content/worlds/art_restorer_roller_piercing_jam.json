@@ -1368,18 +1368,23 @@
   },
   {
    "beats": [
-    "伺服阻尼死死绞住细链将修复师真丝工装前襟猛烈拉拽掀起",
-    "前襟缝线断裂导致修复师上身受拉无法直身挺拔站立"
+    "特展揭幕前三天，修复师在玻璃中庭里对着宋画演练补笔的每一个动作。",
+    "工程师在一旁调试恒湿展柜的升降罩，两人隔着玻璃比着手势。",
+    "演练结束，修复师摘下手套，说这幅画在库房里等了八百年才见光。"
    ],
    "duration_minutes": 5,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_01_mounting_roller_chain_snag_groan",
+    "hook_02_silk_robe_strain_jam",
+    "hook_03_horn_knife_lever_extract"
+   ],
    "id": "act_roller_chain_snag_incident",
    "location_ids": [
     "loc_atrium_transparent_stage_center"
    ],
    "start_minute": 132,
    "tags": [],
-   "title": "升降罩导轨自锁死死咬住纯金细链"
+   "title": "揭幕前的补笔演练"
   },
   {
    "beats": [

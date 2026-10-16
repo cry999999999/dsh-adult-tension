@@ -1328,9 +1328,9 @@
  "daily_activities": [
   {
    "beats": [
-    "特大雷暴撕裂货轮外壳，海水倒灌负四层压载隔舱漫过膝盖，水密门自锁断绝退路。",
-    "千金的真丝裙摆被冲进铁梯角钢夹缝死死卡住，侍从潜入浑浊冰水中以合金折刀小心割断。",
-    "裙摆割断瞬间千金脱力下沉，侍从将其托上铁梯平台，裹上防水毛毡抵御刺骨寒潮。"
+    "邮轮出港第二天，千金心血来潮要看船的底舱，侍从只好陪着走下负四层。",
+    "轮机长指着一排排压载舱介绍，说这艘船的平稳全靠这些水。",
+    "千金听得认真，出来时却嫌机油味重，让侍从回去给自己换一条裙子。"
    ],
    "duration_minutes": 45,
    "hook_ids": [
@@ -1342,11 +1342,11 @@
    "location_ids": [
     "ballast_tank_watertight_hold"
    ],
-   "start_minute": 1380,
+   "start_minute": 900,
    "tags": [
     "intimate"
    ],
-   "title": "负四层进水水密隔舱割裙脱困"
+   "title": "底舱里的参观"
   },
   {
    "beats": [
@@ -1372,57 +1372,54 @@
   },
   {
    "beats": [
-    "工程师从上方敲开竖井检修天窗，抛下高浮力救生尼龙织带将二人腰身死死相连。",
-    "侍从在下方用肩膀托举千金双足对抗倒灌漩涡拉力，千金忍受脚踝剧痛一步步攀上湿滑铁梯。",
-    "绑匪在下方开枪射穿铁板，子弹擦着梯级飞过，全员合力翻入三层干燥过道反手锁死天窗。"
+    "检修竖井边，工程师正在给铁梯刷防锈漆，看见千金下来，连忙放下刷子。",
+    "千金问工程师在这条船上干了几年，工程师说八年，比船长还久。",
+    "侍从递过去一瓶水，工程师道了谢，说难得有乘客愿意下来看看。"
    ],
    "duration_minutes": 45,
    "hook_ids": [
     "h_tian_pipe_wrench_tapping_morse",
-    "h_mingyue_pearl_necklace_tear_whisper",
     "h_scarface_thermite_torch_slam_shout"
    ],
    "id": "a_shaft_ladder_vertical_escape_climb",
    "location_ids": [
     "vertical_pipe_escape_shaft"
    ],
-   "start_minute": 25,
+   "start_minute": 930,
    "tags": [
     "workplace"
    ],
-   "title": "检修垂直竖井绳索攀爬突围"
+   "title": "竖井边的工程师"
   },
   {
    "beats": [
-    "三层走廊积水漫过小腿，断裂电缆在水面上炸开蓝色高压电弧阻断通往甲板之通路。",
-    "工程师冒险用绝缘管钳挑开带电线缆，侍从扶着千金踩着漂浮木箱在电光闪烁间极限涉水穿行。",
-    "千金亲手拉下走廊防火分电闸阻断漏电源，为后方幸存人员开辟安全通道。"
+    "千金非要自己找回去的路，结果在排水泵走廊里绕了三圈。",
+    "侍从跟在后面不敢说话，千金终于停下来，板着脸问：上楼往哪边走？",
+    "侍从指了指左边，千金哼了一声，走在了前面。"
    ],
    "duration_minutes": 35,
    "hook_ids": [
     "h_tian_pipe_wrench_tapping_morse",
-    "h_haoran_swordstick_railing_strike",
     "h_mingyue_silk_dress_tied_chin_lift"
    ],
    "id": "a_corridor_live_wire_pump_sabotage",
    "location_ids": [
     "flooded_bilge_pump_corridor"
    ],
-   "start_minute": 70,
+   "start_minute": 960,
    "tags": [
     "workplace"
    ],
-   "title": "积水走廊避开漏电短接启泵"
+   "title": "排水泵走廊里迷路"
   },
   {
    "beats": [
-    "全员冲上倾斜三十五度的露天甲板，狂风暴雨怒号，少东家挥动手杖剑斩断卡死副缆。",
-    "绑匪头目持枪冲上甲板企图抢夺快艇，被千金掷出的生铁挂锁重重砸中面门跌入惊涛巨浪。",
-    "机动救生艇成功脱钩轰然砸入大海，推进器爆发怒吼顶着十级黑浪全速冲出沉船漩涡。"
+    "傍晚，千金独自站在救生艇平台上看海，晚宴的礼服外披着一条披肩。",
+    "侍从送来一杯热茶，千金接过去，说宴会厅里的人太吵了。",
+    "两人并肩站了一会儿，千金忽然问：你以后想做什么？"
    ],
    "duration_minutes": 30,
    "hook_ids": [
-    "h_haoran_swordstick_railing_strike",
     "h_mingyue_dawn_blanket_triumph_vow",
     "h_tian_pipe_wrench_tapping_morse"
    ],
@@ -1430,33 +1427,36 @@
    "location_ids": [
     "upper_lifeboat_launch_platform"
    ],
-   "start_minute": 105,
+   "start_minute": 1080,
    "tags": [
     "workplace_power"
    ],
-   "title": "露天甲板巨浪搏击斩缆下海"
+   "title": "救生艇平台上看海"
   },
   {
    "beats": [
-    "暴风雨骤停破晓红日跃出大洋海平线，晨曦金光洒满在海面平稳起伏的机动救生艇上。",
-    "大小姐亲手将救生防寒毯裹在青年侍从肩头，靠在同伴胸前紧扣其缠满黑珍珠之手掌。",
-    "远方海警巡逻舰鸣响悠长汽笛迎面驶来，公海海难惊天危机在朝霞与真情定格中胜利落幕。"
+    "清晨，千金难得早起，拉着侍从到救生艇平台上看日出。",
+    "海面上的雾慢慢散开，太阳从海平线上跳出来，千金眯着眼笑了。",
+    "千金把披肩分给侍从一半，说：别误会，我只是冷。"
    ],
    "duration_minutes": 25,
    "hook_ids": [
-    "h_mingyue_dawn_blanket_triumph_vow",
-    "h_haoran_swordstick_railing_strike",
-    "h_mingyue_pearl_necklace_tear_whisper"
+    "hd_proud_heiress_mingyue",
+    "hd_cadet_salvage_engineer_tian",
+    "hd_ruthless_kidnapper_boss_scarface",
+    "hd_ship_surgeon_rescue_lin",
+    "hd_rival_shipping_scion_haoran",
+    "hd_coast_guard_rescue_swimmer_jun"
    ],
    "id": "a_dawn_ocean_blanket_vow_triumph",
    "location_ids": [
     "upper_lifeboat_launch_platform"
    ],
-   "start_minute": 135,
+   "start_minute": 330,
    "tags": [
     "workplace_power"
    ],
-   "title": "破晓怒海同披毯相拥终身盟誓"
+   "title": "平台上的日出"
   }
  ],
  "default_npc_gender_mix": {
@@ -1621,6 +1621,48 @@
    ],
    "slot": "cadet_salvage_engineer_tian",
    "text": "{cadet_salvage_engineer_tian.name}浑身湿透站在齐腰浊浪中，手持生铁管钳猛烈敲击电缆支架阻断漏电，机油与汗水混杂在黝黑面庞上，眼神沉稳如山，宛若一尊守护底舱生还通道的年轻钢铁战神。"
+  },
+  {
+   "id": "hd_proud_heiress_mingyue",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "proud_heiress_mingyue",
+   "text": "{proud_heiress_mingyue.name}把一杯热可可塞到你手里，扬起下巴：“晚宴太无聊，陪我出来透透气。”"
+  },
+  {
+   "id": "hd_cadet_salvage_engineer_tian",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "cadet_salvage_engineer_tian",
+   "text": "{cadet_salvage_engineer_tian.name}拿着检修单冲你招手：“例行巡检，你来帮我记一下读数。”"
+  },
+  {
+   "id": "hd_ruthless_kidnapper_boss_scarface",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "ruthless_kidnapper_boss_scarface",
+   "text": "{ruthless_kidnapper_boss_scarface.name}靠在吧台边冲你举杯：“一个人喝没意思，过来坐。”"
+  },
+  {
+   "id": "hd_ship_surgeon_rescue_lin",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "ship_surgeon_rescue_lin",
+   "text": "{ship_surgeon_rescue_lin.name}递给你一片晕船药：“海上第一天，备着总没错。”"
+  },
+  {
+   "id": "hd_rival_shipping_scion_haoran",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "rival_shipping_scion_haoran",
+   "text": "{rival_shipping_scion_haoran.name}在你身边停下，望着海面：“难得天气好，打一局桌球？”"
+  },
+  {
+   "id": "hd_coast_guard_rescue_swimmer_jun",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "coast_guard_rescue_swimmer_jun",
+   "text": "{coast_guard_rescue_swimmer_jun.name}冲你挥挥手：“例行登船检查，顺便来打个招呼。”"
   }
  ],
  "id": "heiress_ballast_tank_submersion",

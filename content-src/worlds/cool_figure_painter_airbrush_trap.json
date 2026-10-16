@@ -1709,59 +1709,68 @@
   "daily_activities": [
     {
       "id": "act_airbrush_needle_handle_door_pry",
-      "title": "负压喷涂室通针硬柄下压撬动门轨轴承",
+      "title": "喷涂室里上底漆",
       "location_ids": [
         "loc_airbrush_booth_spray_chamber"
       ],
       "duration_minutes": 15,
       "beats": [
-        "使用高硬度合金喷笔淬火不锈钢通针把手插入门槽偏心缝隙",
-        "二人合力向下方倾斜三十度施加静载杠杆力矩顶开卡锁销",
-        "在导轮脱扣受力松脱瞬间合抱不锈钢平移门向外推开逃生"
+        "涂装师把限量GK的白模固定在转台上，一层层喷上灰色底漆。",
+        "暖通总工在门口探头，说排风机今天又响了一下午。",
+        "涂装师头也不回：修好它，展前我请你吃饭。"
       ],
-      "hook_ids": [],
-      "start_minute": 1260,
+      "hook_ids": [
+        "hook_lingxi_figure_face",
+        "hook_lingxi_late_takeout",
+        "hook_tianheng_fan_fixed"
+      ],
+      "start_minute": 1200,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {
       "id": "act_rooftop_exhaust_duct_valve_relief",
-      "title": "顶层机房排风风道应急旁路手动蝶阀泄压",
+      "title": "顶层机房修风机",
       "location_ids": [
         "loc_airbrush_booth_exhaust_duct_room"
       ],
       "duration_minutes": 15,
       "beats": [
-        "检修工在顶层机房合抱加长加力杠杆旋转旁路排气手轮",
-        "实时监测管道风压表指针向零点回落平衡室内外负压吸力",
-        "通过防爆对讲机向下方操作室通报偏心锁舌泄载减载时机"
+        "暖通总工在顶层机房拆开排风机的外壳，轴承上全是黑色的油泥。",
+        "涂装师端着两杯冰美式上来，坐在铁梯上看总工干活。",
+        "总工换下旧轴承递过去，涂装师说：这东西转了八年，比我还能熬。"
       ],
-      "hook_ids": [],
-      "start_minute": 1262,
+      "hook_ids": [
+        "hook_chu_rotates_bypass_damper_wheel",
+        "hook_lingxi_figure_face",
+        "hook_lingxi_late_takeout"
+      ],
+      "start_minute": 900,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {
       "id": "act_cleanroom_macro_gas_hazard_monitor",
-      "title": "走廊观察窗光离子化挥发性气体浓度监视",
+      "title": "烘干走廊里挑成品",
       "location_ids": [
         "loc_figure_model_cleanroom_drying_aisle"
       ],
       "duration_minutes": 15,
       "beats": [
-        "手持精密光离子检测仪紧贴观察窗换气孔检测稀释剂ppm值",
-        "隔窗向室内展示防爆黄色警示牌指导避开金属干摩擦撞击",
-        "启动缓冲走廊防爆排风负压隔离风幕防止有害气体外溢"
+        "烘干走廊的架子上排着一排刚上完色的手办，灯光一照，漆面亮得像瓷。",
+        "涂装师一件件拿起来检查，发现一处流漆就皱着眉放回去。",
+        "总工指着其中一件说这个最好看，涂装师说那是自己的私藏，不卖。"
       ],
-      "hook_ids": [],
-      "start_minute": 1261,
+      "hook_ids": [
+        "hook_bai_monitors_gas_ppm_warning",
+        "hook_cheng_sprays_moly_lubricant",
+        "hook_lingxi_figure_face"
+      ],
+      "start_minute": 1020,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {
@@ -1785,21 +1794,24 @@
     },
     {
       "id": "act_masterpiece_figure_stand_secure",
-      "title": "旋转展示台限量手办托盘磁力固定与防护",
+      "title": "第五个通宵",
       "location_ids": [
         "loc_airbrush_booth_spray_chamber"
       ],
       "duration_minutes": 15,
       "beats": [
-        "迅速调转操作台气动磁吸定位底座将手办托盘牢牢锁死",
-        "放下防爆聚碳酸酯透光防护防尘罩遮蔽未固化漆膜表面",
-        "检查白模重心平稳确保在破门震动冲击下绝不产生位移"
+        "展前第五个通宵，涂装师趴在操作台上，手里还捏着一支细喷笔。",
+        "总工轻手轻脚地进来，把一条毯子搭在涂装师背上。",
+        "涂装师迷迷糊糊地睁眼，嘟囔了一句：别碰我的漆……然后又睡着了。"
       ],
-      "hook_ids": [],
-      "start_minute": 1263,
+      "hook_ids": [
+        "hook_lingxi_figure_face",
+        "hook_lingxi_late_takeout",
+        "hook_tianheng_fan_fixed"
+      ],
+      "start_minute": 240,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {

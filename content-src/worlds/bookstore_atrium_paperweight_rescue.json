@@ -1643,21 +1643,24 @@
     },
     {
       "id": "act_flood_drainage_drill_simulation",
-      "title": "临河暴雨内涝排水应急讲",
+      "title": "中庭里整理旧书",
       "location_ids": [
         "loc_bookstore_central_atrium"
       ],
       "duration_minutes": 15,
       "beats": [
-        "重申河道倒灌三级防汛人员避险撤离路线",
-        "演练密闭夹缝狭窄空间双人卧倒自救标准姿态",
-        "核对墙壁应急手电与手动排水分流阀位"
+        "梅雨天的下午，书肆的挑空中庭里没什么客人，研究生坐在长桌边给新收的旧书编目。",
+        "老板娘端来一杯桂花茶，翻着一本民国的诗集，说这本可以单独标个好价钱。",
+        "雨打在天窗上，两人就这样一个编目一个翻书，消磨了整个下午。"
       ],
-      "hook_ids": [],
-      "start_minute": 1415,
+      "hook_ids": [
+        "hook_zhixia_card_note",
+        "hook_zhixia_lamp_brush",
+        "hook_zhixia_shop_cat"
+      ],
+      "start_minute": 900,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {

@@ -1339,25 +1339,28 @@
  "daily_activities": [
   {
    "beats": [
-    "湛蓝色的太古符文石刻光芒如风中残烛般微弱闪烁不定",
-    "高阶法师指尖凝结魔力光点触碰碑体发出刺耳能量蜂鸣",
-    "重剑团长按刀立于碑前冰冷计算结界彻底崩溃的剩余分秒"
+    "下潜第三天，远征队在安全区的方尖碑下扎营，碑上的符文亮着平稳的蓝光。",
+    "高阶法师给每个人的水囊施了净水术，重剑团长靠着石碑擦拭剑身。",
+    "有人哼起地面酒馆里的小调，跑调的地方大家一起笑出了声。"
    ],
    "duration_minutes": 45,
    "hook_ids": [
-    "h_commander_blade_slam",
-    "h_arcanist_flesh_claw",
-    "h_dwarf_booze_offer"
+    "hd_cold_blooded_crusade_commander",
+    "hd_arrogant_high_elf_arcanist",
+    "hd_traumatized_holy_paladin",
+    "hd_shadow_assassin_infiltrator",
+    "hd_cynical_dwarf_shieldbreaker",
+    "hd_veteran_dungeon_trapper"
    ],
    "id": "a_obelisk_energy_titration",
    "location_ids": [
     "sanctuary_obelisk_hall"
    ],
-   "start_minute": 1340,
+   "start_minute": 1260,
    "tags": [
     "workplace"
    ],
-   "title": "方尖碑太古遗迹魔力残量勘验"
+   "title": "安全区里的休整夜"
   },
   {
    "beats": [
@@ -1383,15 +1386,18 @@
   },
   {
    "beats": [
-    "纯银细长探针刺入最后两支救命圣水水晶瓶勘验药效纯度",
-    "被刀切成极薄薄片的坚硬黑麦肉干在油灯下按人头严苛分配",
-    "重伤垂死武士的干裂嘴唇凑在空水袋口贪婪舔舐微弱水汽"
+    "后室里码着出发前采购的干粮和药水，后勤官按人头分装进背包。",
+    "后勤官一边记账一边抱怨，公会这回给的圣水又少了两瓶。",
+    "黑麦面包切成厚片，谁多拿了一片，就得替大家守下半夜。"
    ],
    "duration_minutes": 40,
    "hook_ids": [
-    "h_paladin_blade_shiver",
-    "h_dwarf_hammer_slam",
-    "h_paladin_scroll_trust"
+    "hd_cold_blooded_crusade_commander",
+    "hd_arrogant_high_elf_arcanist",
+    "hd_traumatized_holy_paladin",
+    "hd_shadow_assassin_infiltrator",
+    "hd_cynical_dwarf_shieldbreaker",
+    "hd_veteran_dungeon_trapper"
    ],
    "id": "a_supply_ration_inspection",
    "location_ids": [
@@ -1401,40 +1407,45 @@
    "tags": [
     "substance"
    ],
-   "title": "病榻后室仅存圣水与干粮过秤"
+   "title": "清点下潜补给"
   },
   {
    "beats": [
-    "冰冷湿滑的暗渠碎石在铁拐与撬棍奋力撬动下滚落万丈深渊",
-    "刺鼻的地底硫磺毒气自裂缝深处呼啸倒卷熏得众人双眼血红",
-    "暗部刺客倒悬在石梁阴影处无声飞速标记垂直攀爬借力凹槽"
+    "安全区后面的暗渠流着地下的冷泉，远征队每天轮流去打水。",
+    "暗部刺客坐在石梁上垂下钓线，说渠里有一种盲鱼烤着很香。",
+    "水桶装满了，两个人坐在渠边的石阶上，听着水声说了一会儿闲话。"
    ],
    "duration_minutes": 35,
    "hook_ids": [
-    "h_assassin_shadow_glide",
-    "h_paladin_blade_shiver",
-    "h_paladin_scroll_trust"
+    "hd_cold_blooded_crusade_commander",
+    "hd_arrogant_high_elf_arcanist",
+    "hd_traumatized_holy_paladin",
+    "hd_shadow_assassin_infiltrator",
+    "hd_cynical_dwarf_shieldbreaker",
+    "hd_veteran_dungeon_trapper"
    ],
    "id": "a_aqueduct_rubble_clearing",
    "location_ids": [
     "drainage_aqueduct_tunnel"
    ],
    "start_minute": 1395,
-   "tags": [
-    "disaster"
-   ],
-   "title": "泄洪暗渠地脉危岩清理排查"
+   "tags": [],
+   "title": "暗渠边打水"
   },
   {
    "beats": [
-    "锋利的纯钢解剖刀在火上烤红后生生划开手臂肿胀的黑色经脉",
-    "散发着刺鼻苦杏仁味的浓稠黑血喷溅在石板上冒起白烟",
-    "伤员死死咬住皮带浑身青筋暴起从喉咙深处发出痛苦闷哼"
+    "白天有人被洞穴蝙蝠抓破了手臂，医疗兵在病榻边替伤员清洗伤口。",
+    "伤员嫌药膏太凉，龇牙咧嘴地讨价还价，想换一口烈酒。",
+    "药换好了，医疗兵把最后一卷绷带塞进你手里：下回轮到你包。"
    ],
    "duration_minutes": 30,
    "hook_ids": [
-    "h_arcanist_flesh_claw",
-    "h_assassin_shadow_glide"
+    "hd_cold_blooded_crusade_commander",
+    "hd_arrogant_high_elf_arcanist",
+    "hd_traumatized_holy_paladin",
+    "hd_shadow_assassin_infiltrator",
+    "hd_cynical_dwarf_shieldbreaker",
+    "hd_veteran_dungeon_trapper"
    ],
    "id": "a_black_blood_incision_surgery",
    "location_ids": [
@@ -1444,17 +1455,16 @@
    "tags": [
     "bodily_harm"
    ],
-   "title": "石柱阴影处深渊魔毒黑血排脓"
+   "title": "病榻边换药"
   },
   {
    "beats": [
-    "粗壮的生铁门栓被大锤重重夯入花岗岩石壁凹槽内迸溅火星",
-    "受损变形的齿轮在劣质机油浇淋下发出令人心悸的卡滞呻吟",
-    "门外巨兽突然爆发出震耳欲聋的狂暴嘶吼震落满室碎石烟尘"
+    "安全区的花岗岩石门是古人留下的，远征队轮流在门边值夜。",
+    "门外的回廊很安静，偶尔传来水滴落进深处的回声。",
+    "值夜的两个人分一壶热茶，小声猜着下一层会有什么。"
    ],
    "duration_minutes": 25,
    "hook_ids": [
-    "h_dwarf_hammer_slam",
     "h_trapper_wrench_tap"
    ],
    "id": "a_gate_reinforcement_drill",
@@ -1465,7 +1475,7 @@
    "tags": [
     "violence"
    ],
-   "title": "机械绞盘钢缆最后加固抢修"
+   "title": "石门前值夜"
   }
  ],
  "default_npc_gender_mix": {
@@ -1586,6 +1596,48 @@
    ],
    "slot": "traumatized_holy_paladin",
    "text": "{traumatized_holy_paladin.name}将怀中封存完好的大驱散术羊皮筒硬塞进你的怀里，眼神带着乞求与绝望：“拿着它……我的手在抖，已经感应不到神明了。如果真到了最后一刻，由你来撕开它……保护大家，好吗？”"
+  },
+  {
+   "id": "hd_cold_blooded_crusade_commander",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "cold_blooded_crusade_commander",
+   "text": "{cold_blooded_crusade_commander.name}把一碗热麦粥放在你手边，难得没有下命令：“先吃。今天没什么要紧事。”"
+  },
+  {
+   "id": "hd_arrogant_high_elf_arcanist",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "arrogant_high_elf_arcanist",
+   "text": "{arrogant_high_elf_arcanist.name}合上法术书，挑眉看你：“你那盏灯的符文画歪了，过来，我教你一遍。”"
+  },
+  {
+   "id": "hd_traumatized_holy_paladin",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "traumatized_holy_paladin",
+   "text": "{traumatized_holy_paladin.name}擦着盾牌，抬头冲你笑了一下：“今天睡得好吗？我难得一觉到天亮。”"
+  },
+  {
+   "id": "hd_shadow_assassin_infiltrator",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "shadow_assassin_infiltrator",
+   "text": "{shadow_assassin_infiltrator.name}不知什么时候坐到了你旁边，抛给你一个苹果：“偷偷留的，别声张。”"
+  },
+  {
+   "id": "hd_cynical_dwarf_shieldbreaker",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "cynical_dwarf_shieldbreaker",
+   "text": "{cynical_dwarf_shieldbreaker.name}拍了拍身边的空木箱：“坐。陪我喝一口，今天的麦酒还不算太酸。”"
+  },
+  {
+   "id": "hd_veteran_dungeon_trapper",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "veteran_dungeon_trapper",
+   "text": "{veteran_dungeon_trapper.name}把一卷新画的地图摊在你面前：“帮我看看，这几条路我标得清不清楚。”"
   }
  ],
  "id": "abyss_collapsed_refuge",

@@ -1870,22 +1870,25 @@
     },
     {
       "id": "a_stealth_lockpick_operation",
-      "title": "暗影潜行盲挑手枷",
+      "title": "狱卒送来的早饭",
       "location_ids": [
         "flooded_iron_dungeon_cell"
       ],
       "duration_minutes": 55,
       "beats": [
-        "斥候自暗渠水下无声探出身躯，以高碳钢针插入秘银手铐内部机关细细探听弹子回声。",
-        "同伴张开湿透大衣挡住走廊铁栏视线，用手心死死捂住金属弹簧崩解发出的脆鸣。",
-        "骑士长深吸一口气咬破下唇忍耐手腕皮肉剧痛，第一副沉重生铁手铐无声脱落滑入水中。"
+        "清晨，年轻狱卒端着一碗燕麦粥走下石阶，隔着铁栏递给骑士长。",
+        "骑士长接过碗，问外面的雪停了没有，狱卒犹豫了一下，说还没停。",
+        "粥是温的，骑士长一口口喝完，把空碗放回铁栏边。"
       ],
       "hook_ids": [
-        "h_kyle_needle_click_whisper",
-        "h_cecilia_herb_balm_wipe",
-        "h_roland_copper_whistle_pledge"
+        "hd_captured_knight_captain_orphea",
+        "hd_hostile_inquisitor_albert",
+        "hd_rebellious_guard_sergeant_roland",
+        "hd_cunning_shadow_infiltrator_kyle",
+        "hd_ruthless_vanguard_centurion_vargas",
+        "hd_compassionate_sister_cecilia"
       ],
-      "start_minute": 70,
+      "start_minute": 420,
       "tags": [
         "intimate"
       ]
@@ -1914,44 +1917,50 @@
     },
     {
       "id": "a_sluice_floodgate_crank",
-      "title": "排污暗渠扳动绞盘",
+      "title": "闸门边的清淤工",
       "location_ids": [
         "drainage_sluice_sluicegate"
       ],
       "duration_minutes": 35,
       "beats": [
-        "清淤工人在暗河角落悄悄卸下铁链卡榫，递上重型生铁撬棍协助撬开生锈绞盘。",
-        "同伴合力将全身力气压在沉重手柄上，止逆齿轮发出一寸寸咬合上升的艰涩摩擦巨响。",
-        "冰冷的护城河活水自铁闸底部轰然喷涌倒灌，在水牢地面掀起三尺高的翻滚白浪。"
+        "暗河转角，清淤工人坐在闸门边的石台上啃黑面包，铁锹靠在一旁。",
+        "老工人说这道闸二十年没开过了，护城河的水都是从这儿往外排的。",
+        "工人把半块面包掰下来，问新来的人饿不饿。"
       ],
       "hook_ids": [
-        "h_orphea_chain_shoulder_rest",
-        "h_kyle_dagger_gift_parting",
-        "h_cecilia_cross_prayer_hush"
+        "hd_captured_knight_captain_orphea",
+        "hd_hostile_inquisitor_albert",
+        "hd_rebellious_guard_sergeant_roland",
+        "hd_cunning_shadow_infiltrator_kyle",
+        "hd_ruthless_vanguard_centurion_vargas",
+        "hd_compassionate_sister_cecilia"
       ],
-      "start_minute": 165,
+      "start_minute": 720,
       "tags": [
         "workplace"
       ]
     },
     {
       "id": "a_dawn_breakout_deluge",
-      "title": "破晓水幕全线破网",
+      "title": "晨钟响起的时候",
       "location_ids": [
-        "drainage_sluice_sluicegate"
+        "flooded_iron_dungeon_cell"
       ],
       "duration_minutes": 30,
       "beats": [
-        "晨钟轰鸣破晓第一缕曦光穿透石缝，要塞各处警钟疯狂大作全面搜捕越狱战俘。",
-        "骑士长手持断裂铁链在水幕掩护下击退尾随追兵，与同伴纵身跃入湍急暗河漩涡。",
-        "冰浪席卷着重获新生的人群冲出要塞地底深渊，迎向北方广袤无垠的茫茫雪原。"
+        "晨钟响了，第一缕光从石缝里漏进地牢，落在骑士长的脸上。",
+        "骑士长闭着眼听钟声，数到第七下，低声说故乡的钟楼也是七响。",
+        "巡逻的脚步声远了，地牢里只剩下水滴落下的声音。"
       ],
       "hook_ids": [
-        "h_orphea_chain_shoulder_rest",
-        "h_albert_quill_tap_ultimatum",
-        "h_vargas_axe_smash_roar"
+        "hd_captured_knight_captain_orphea",
+        "hd_hostile_inquisitor_albert",
+        "hd_rebellious_guard_sergeant_roland",
+        "hd_cunning_shadow_infiltrator_kyle",
+        "hd_ruthless_vanguard_centurion_vargas",
+        "hd_compassionate_sister_cecilia"
       ],
-      "start_minute": 200,
+      "start_minute": 360,
       "tags": [
         "workplace"
       ]
@@ -2396,6 +2405,42 @@
         "dungeon_guard_corridor"
       ],
       "text": "{ruthless_vanguard_centurion_vargas.name}正坐在火盆边一块断裂石墩上，拿着粗糙磨刀石发狠打磨着六尺双刃战斧的巨大缺口，火星飞溅中嘴角挂着嗜血狞笑，每磨一下都像是在预演切断仇敌颈项的暴虐快感。"
+    },
+    {
+      "id": "hd_captured_knight_captain_orphea",
+      "kind": "approach",
+      "slot": "captured_knight_captain_orphea",
+      "text": "{captured_knight_captain_orphea.name}靠着石壁，把半块黑面包掰给你：“分你一半。今天不想吵架。”"
+    },
+    {
+      "id": "hd_hostile_inquisitor_albert",
+      "kind": "approach",
+      "slot": "hostile_inquisitor_albert",
+      "text": "{hostile_inquisitor_albert.name}把一份例行笔录推到你面前：“签个名，今天的问话到此为止。”"
+    },
+    {
+      "id": "hd_rebellious_guard_sergeant_roland",
+      "kind": "approach",
+      "slot": "rebellious_guard_sergeant_roland",
+      "text": "{rebellious_guard_sergeant_roland.name}拎着一壶麦酒走过来：“值完班了，陪我喝两口。”"
+    },
+    {
+      "id": "hd_cunning_shadow_infiltrator_kyle",
+      "kind": "approach",
+      "slot": "cunning_shadow_infiltrator_kyle",
+      "text": "{cunning_shadow_infiltrator_kyle.name}倚在墙边冲你眨眨眼：“城里集市今天开张，想不想去逛逛？”"
+    },
+    {
+      "id": "hd_ruthless_vanguard_centurion_vargas",
+      "kind": "approach",
+      "slot": "ruthless_vanguard_centurion_vargas",
+      "text": "{ruthless_vanguard_centurion_vargas.name}在你身边坐下，啃着一只苹果：“今天没仗打，无聊得很。”"
+    },
+    {
+      "id": "hd_compassionate_sister_cecilia",
+      "kind": "approach",
+      "slot": "compassionate_sister_cecilia",
+      "text": "{compassionate_sister_cecilia.name}端来一碗热汤，轻声说：“趁热喝。今天的汤里有肉。”"
     }
   ],
   "twists": [

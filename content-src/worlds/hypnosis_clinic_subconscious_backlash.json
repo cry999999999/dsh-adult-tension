@@ -1928,93 +1928,90 @@
  ],
  "daily_activities": [
   {
-   "id": "act_chamber_backlash_watch",
-   "title": "躺椅反噬与怀表相托",
-   "location_ids": [
-    "hypnosis_consultation_chamber"
-   ],
-   "duration_minutes": 60,
-   "beats": [
-    "脑波仪高频短路，研究员眼神失焦，白大褂领扣崩开，滑进躺椅凹陷处",
-    "受试者按住贴片导线防电弧，研究员把银怀表死死按进对方掌心",
-    "淡蓝冷光里，研究员把脸埋在对方颈窝，呓语断断续续，听不清一句完整的话"
-   ],
-   "hook_ids": [
-    "hk_shiori_white_coat_approach",
-    "hk_yuma_anchor_approach",
-    "hk_shiori_torn_stocking_observe"
-   ],
-   "start_minute": 10,
-   "tags": [
-    "intimate"
-   ]
-  },
+      "id": "act_chamber_backlash_watch",
+      "title": "躺椅上的放松训练",
+      "location_ids": [
+        "hypnosis_consultation_chamber"
+      ],
+      "duration_minutes": 60,
+      "beats": [
+        "白天的诊室里，研究员给受试研究生做一次普通的放松训练。",
+        "银怀表在受试者眼前慢慢摇晃，研究员的声音平稳得像在读说明书。",
+        "训练结束，受试者睁开眼，说刚才差点真的睡着了。研究员在记录本上写下一个数字。"
+      ],
+      "hook_ids": [
+        "hk_shiori_white_coat_approach",
+        "hk_yuma_anchor_approach"
+      ],
+      "start_minute": 900,
+      "tags": [
+        "intimate"
+      ]
+    },
   {
-   "id": "act_archive_diary_found",
-   "title": "档案密室找到日记",
-   "location_ids": [
-    "restricted_case_file_archive"
-   ],
-   "duration_minutes": 65,
-   "beats": [
-    "受试者背着虚脱的研究员躲进密集架深处，日记的铜锁在震颤中崩开",
-    "台灯下翻开的那一页写满受试者的名字，受试者把日记合上，没有再看",
-    "研究员在对方肩上微微清醒过来，看见合上的日记，红了眼眶"
-   ],
-   "hook_ids": [
-    "hk_shiori_fever_request",
-    "hk_yuma_breath_command_approach",
-    "hk_archive_diary_observe"
-   ],
-   "start_minute": 20,
-   "tags": [
-    "intimate"
-   ]
-  },
+      "id": "act_archive_diary_found",
+      "title": "档案室里归档",
+      "location_ids": [
+        "restricted_case_file_archive"
+      ],
+      "duration_minutes": 65,
+      "beats": [
+        "研究员抱着一摞病历走进档案密室，让受试者帮忙把它们按编号上架。",
+        "受试者看到架子最深处放着一本带铜锁的日记，研究员说那是私人物品，别碰。",
+        "上完架，研究员顺手把那本日记往里推了推。"
+      ],
+      "hook_ids": [
+        "hk_shiori_fever_request",
+        "hk_yuma_breath_command_approach",
+        "hk_archive_diary_observe"
+      ],
+      "start_minute": 1020,
+      "tags": [
+        "intimate"
+      ]
+    },
   {
-   "id": "act_booth_flashover_fight",
-   "title": "机房电弧扑救",
-   "location_ids": [
-    "neuro_monitoring_control_booth"
-   ],
-   "duration_minutes": 55,
-   "beats": [
-    "主服务器机柜过载起火，副教授与技术员合力挥舞灭火器",
-    "技术员拔掉起火铜排，副教授抢出记录真实波谱的磁带",
-    "消磁警报红光大作，受试者从门缝递出备份硬盘，三人隔窗结成同盟"
-   ],
-   "hook_ids": [
-    "hk_associate_keys_approach",
-    "hk_technician_prybar_approach",
-    "hk_booth_server_observe"
-   ],
-   "start_minute": 35,
-   "tags": [
-    "workplace_power"
-   ]
-  },
+      "id": "act_booth_flashover_fight",
+      "title": "机房里的数据备份",
+      "location_ids": [
+        "neuro_monitoring_control_booth"
+      ],
+      "duration_minutes": 55,
+      "beats": [
+        "每周五傍晚，技术员都要在脑电遥测机房里做一次数据备份。",
+        "副教授端着咖啡进来，看着一盘盘磁带说：这些东西比我们都值钱。",
+        "备份做完，技术员把硬盘锁进柜子，三人在机房门口聊了一会儿周末的安排。"
+      ],
+      "hook_ids": [
+        "hk_associate_keys_approach",
+        "hk_technician_prybar_approach",
+        "hk_booth_server_observe"
+      ],
+      "start_minute": 1080,
+      "tags": [
+        "workplace_power"
+      ]
+    },
   {
-   "id": "act_vestibule_hydraulic_breach",
-   "title": "气密门液压破拆",
-   "location_ids": [
-    "soundproof_acoustic_vestibule"
-   ],
-   "duration_minutes": 50,
-   "beats": [
-    "技术员把液压钳卡进锁孔，副教授在后方用肩膀顶住剪把",
-    "监察官在门外合力扳动把手，十公分粗的钢销应声崩断",
-    "门滑开一道缝，浓烟涌出，实习医师推着急救车冲进来"
-   ],
-   "hook_ids": [
-    "hk_monitor_badge_approach",
-    "hk_intern_syringe_approach",
-    "hk_vestibule_pins_observe"
-   ],
-   "start_minute": 50,
-   "tags": [
-    "workplace"
-   ]
-  },
+      "id": "act_vestibule_hydraulic_breach",
+      "title": "前厅换鞋",
+      "location_ids": [
+        "soundproof_acoustic_vestibule"
+      ],
+      "duration_minutes": 50,
+      "beats": [
+        "进隔音诊室前，所有人都要在前厅换上软底鞋。",
+        "受试者弯腰换鞋，研究员站在一旁看着手表，说今天迟到了两分钟。",
+        "受试者道歉，研究员推开气密门：进来吧，下不为例。"
+      ],
+      "hook_ids": [
+        "hk_intern_syringe_approach"
+      ],
+      "start_minute": 890,
+      "tags": [
+        "workplace"
+      ]
+    },
   {
    "id": "act_chamber_clear_awakening",
    "title": "诊室推针与清醒",

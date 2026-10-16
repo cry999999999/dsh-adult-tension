@@ -1239,25 +1239,26 @@
  "daily_activities": [
   {
    "beats": [
-    "断电落锁毒气喷淋青年将唯一防毒面具扣在姑娘脸上，二人挤在八十公分机柜狭缝中身躯紧贴。",
-    "姑娘轻叩青年手背示意换气二人轮流吸入宝贵纯氧，姑娘双颊泛起潮红长睫带泪急促喘息。",
-    "青年以后背紧紧抵住发烫机柜以自身坚实胸膛为姑娘隔绝外部震荡，倾听彼此如雷心跳。"
+    "极夜的下午，姑娘裹着厚羽绒服在A区冷通道里巡检，一排排机柜的指示灯一闪一闪。",
+    "青年跟在后面抱着笔记本记录温度，冷得直跺脚。",
+    "姑娘回头看了一眼，从口袋里掏出一个暖宝宝，丢进青年怀里。"
    ],
    "duration_minutes": 25,
    "hook_ids": [
-    "h_lin_ling_whisper_broken_glasses",
-    "h_zhao_kun_angle_grinder_shriek_hiss",
-    "h_chen_gang_intercom_standoff_call"
+    "hd_hacker_chief_architect_lin_ling",
+    "hd_hardened_veteran_datacenter_guard_che",
+    "hd_traitorous_infrastructure_director_zh",
+    "hd_external_cyber_rescue_leader_captain_"
    ],
    "id": "a_cold_aisle_mask_sharing_respiratory_cy",
    "location_ids": [
     "supercomputer_cold_aisle_sealed_corridor"
    ],
-   "start_minute": 0,
+   "start_minute": 900,
    "tags": [
     "intimate"
    ],
-   "title": "狭窄冷通道防毒面罩叩击轮换呼吸"
+   "title": "冷通道里的巡检"
   },
   {
    "beats": [
@@ -1283,25 +1284,26 @@
   },
   {
    "beats": [
-    "门锁被切断瞬间青年怒吼举起六十公斤重型干粉灭火器狂暴撞开大门将门外枪手轰翻在地。",
-    "姑娘疾速甩出光纤测试激光笔超频直射后方暴徒双眼致盲，青年顺势夺枪一记战术折刀制伏首恶。",
-    "二人交替掩护迅速穿越弹痕狼藉之中控走廊，直扑地下二层高压蓄电池机房抢修主电源。"
+    "冷通道尽头有一台老咖啡机，是值班的人自己凑钱买的。",
+    "姑娘一边等咖啡一边跟青年吐槽总部又改了安全规范。",
+    "咖啡好了，姑娘先递给青年一杯，说这台机器比总部靠谱多了。"
    ],
    "duration_minutes": 25,
    "hook_ids": [
-    "h_zhao_kun_angle_grinder_shriek_hiss",
-    "h_lin_ling_code_aim_draw",
-    "h_chen_gang_intercom_standoff_call"
+    "hd_hacker_chief_architect_lin_ling",
+    "hd_hardened_veteran_datacenter_guard_che",
+    "hd_traitorous_infrastructure_director_zh",
+    "hd_external_cyber_rescue_leader_captain_"
    ],
    "id": "a_breach_counter_ambush_firefight_brawl",
    "location_ids": [
     "supercomputer_cold_aisle_sealed_corridor"
    ],
-   "start_minute": 55,
+   "start_minute": 960,
    "tags": [
     "intimate"
    ],
-   "title": "防爆移门切断瞬间灭火器重装冲撞反杀"
+   "title": "机柜边的速溶咖啡"
   },
   {
    "beats": [
@@ -1327,25 +1329,26 @@
   },
   {
    "beats": [
-    "二人杀回主控大厅将带有青年心跳哈希签名的终极防御内核强行灌入主交换机根目录。",
-    "大屏幕上嘲讽骷髅画面瞬间碎裂瓦解，反向超载数据流以光速顺藤摸瓜引爆境外敌方主控服务器。",
-    "全球三十万亿金融清算系统警报全线转绿彻底解除瘫痪危机，二人虚脱脱力瘫坐在工位上相视大笑。"
+    "总控指挥中心的大屏上，全球清算系统的流量图平稳地起伏着。",
+    "姑娘把脚翘在桌上写代码，青年在旁边吃泡面，说外面的雪下了一整天。",
+    "姑娘头也不抬地说：在这底下，下不下雪都一样。"
    ],
    "duration_minutes": 20,
    "hook_ids": [
-    "h_chen_gang_intercom_standoff_call",
-    "h_song_captain_swat_radio_boom",
-    "h_lin_ling_necklace_pin_whisper"
+    "hd_hacker_chief_architect_lin_ling",
+    "hd_hardened_veteran_datacenter_guard_che",
+    "hd_traitorous_infrastructure_director_zh",
+    "hd_external_cyber_rescue_leader_captain_"
    ],
    "id": "a_root_key_antivirus_c2_meltdown_strike",
    "location_ids": [
     "central_network_operations_security_pod"
    ],
-   "start_minute": 110,
+   "start_minute": 1320,
    "tags": [
     "workplace_power"
    ],
-   "title": "主根密钥全网广播反向熔断黑客主控集群"
+   "title": "总控中心的夜班"
   },
   {
    "beats": [
@@ -1528,6 +1531,34 @@
    ],
    "slot": "hacker_chief_architect_lin_ling",
    "text": "{hacker_chief_architect_lin_ling.name}站在大屏幕绿色代码如瀑布般辉煌奔涌之中控大厅中央：“握紧我的手……小陆！从今往后，不管是在代码的虚拟世界还是现实的地狱人间，你都不准放开我！”"
+  },
+  {
+   "id": "hd_hacker_chief_architect_lin_ling",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "hacker_chief_architect_lin_ling",
+   "text": "{hacker_chief_architect_lin_ling.name}把一杯咖啡推到你面前，眼睛没离开屏幕：“帮我看看这段代码，我盯太久了。”"
+  },
+  {
+   "id": "hd_hardened_veteran_datacenter_guard_che",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "hardened_veteran_datacenter_guard_chen_g",
+   "text": "{hardened_veteran_datacenter_guard_chen_g.name}巡完一圈，在你旁边坐下：“今晚太平，聊会儿？”"
+  },
+  {
+   "id": "hd_traitorous_infrastructure_director_zh",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "traitorous_infrastructure_director_zhao",
+   "text": "{traitorous_infrastructure_director_zhao.name}把一份例行巡检报告递给你：“签个字，下班前交。”"
+  },
+  {
+   "id": "hd_external_cyber_rescue_leader_captain_",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "external_cyber_rescue_leader_captain_son",
+   "text": "{external_cyber_rescue_leader_captain_son.name}冲你点头：“例行演练做完了，一起去吃个夜宵？”"
   }
  ],
  "id": "hacker_datacenter_cold_corridor_blackout",

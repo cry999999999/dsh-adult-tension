@@ -1643,21 +1643,24 @@
     },
     {
       "id": "act_thermal_burn_first_aid_drill",
-      "title": "高温高压蒸汽烫伤应急急救讲",
+      "title": "泵房里烤红薯",
       "location_ids": [
         "loc_geothermal_pump_hall"
       ],
       "duration_minutes": 15,
       "beats": [
-        "重申地热蒸汽大泄漏二级防灾人员撤离演练规程",
-        "演练密闭门洞狭窄空间双人卧倒避险标准自救姿态",
-        "核对墙壁应急急救药箱与医用降温凝胶敷料数量"
+        "大雪封山的午后，锅炉师傅在泵房的蒸汽管边上烤了几个红薯。",
+        "夜班护士下来抄读数，闻到香味，站在门口不肯走了。",
+        "师傅掰了一半递过去，护士捧着烫手的红薯，说这比食堂的饭好吃多了。"
       ],
-      "hook_ids": [],
-      "start_minute": 1415,
+      "hook_ids": [
+        "hook_fangyuan_frozen_pear",
+        "hook_fangyuan_radiator",
+        "hook_xinyi_blood_pressure"
+      ],
+      "start_minute": 900,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {

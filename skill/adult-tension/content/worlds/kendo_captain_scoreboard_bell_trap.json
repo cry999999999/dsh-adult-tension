@@ -1365,18 +1365,23 @@
   },
   {
    "beats": [
-    "伺服阻尼死死绞住系带将主将粗棉道袍前襟猛烈拉拽掀起",
-    "前襟缝线断裂导致主将上身受拉无法挺拔站立"
+    "决赛前一天，工作人员在武道馆里挂太鼓，女主将在台口帮着扶吊索。",
+    "太鼓挂好了，女主将敲了一下，鼓声在空荡荡的馆里回响了很久。",
+    "女主将笑着说：明天赢了，我要亲手敲三下。"
    ],
    "duration_minutes": 5,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_01_winch_pulley_snag_groan",
+    "hook_03_bamboo_pin_lever_extract",
+    "hook_06_steel_pin_blade_into_pulley_gap"
+   ],
    "id": "act_winch_reverse_lock_incident",
    "location_ids": [
     "loc_scoreboard_winch_corridor_edge"
    ],
-   "start_minute": 132,
+   "start_minute": 960,
    "tags": [],
-   "title": "滑轮自锁棘爪死死咬住道服系带"
+   "title": "决赛前的场地布置"
   },
   {
    "beats": [

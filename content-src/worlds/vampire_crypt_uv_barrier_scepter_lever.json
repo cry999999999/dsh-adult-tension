@@ -1620,21 +1620,23 @@
     },
     {
       "id": "act_crypt_burn_evac_drill",
-      "title": "地宫强光灼伤紧急防光疏散演练",
+      "title": "地宫里的红酒",
       "location_ids": [
         "loc_vampire_crypt_chamber"
       ],
       "duration_minutes": 20,
       "beats": [
-        "重申地宫电涌失控二级防灾遮光与自救逃生规程",
-        "演练配电箱狭小死角双人卧倒避光标准自救力矩姿态",
-        "核对石室侧壁应急石棉防光斗篷存放坐标"
+        "白昼漫长，真祖千金坐在地宫石阶上，一小口一小口地喝着红酒。",
+        "猎魔人学者坐在下面几级台阶上翻笔记，千金问学者今天又查到了什么。",
+        "学者念了一段古文，千金听完轻笑：那是我曾祖母写的情诗。"
       ],
-      "hook_ids": [],
-      "start_minute": 1340,
+      "hook_ids": [
+        "hd_vampire_lady_alicia",
+        "hd_hunter_scholar_rayne"
+      ],
+      "start_minute": 840,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {
@@ -1764,7 +1766,29 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_uv_warning_thunder",
+        "hk_crypt_uv_roaring_rush",
+        "hk_crypt_breaker_groan_deadlock",
+        "hk_breaker_deformation_scrape",
+        "hk_tight_breath_ear_brush",
+        "hk_lace_corset_heat_exchange",
+        "hk_scepter_flange_notch_align",
+        "hk_rubber_hammer_chock_in",
+        "hk_satin_ribbon_bind_grip",
+        "hk_atrium_air_pressure_drop",
+        "hk_synchronized_grunt_heave",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hk_end_relief_praise",
+        "hook_alicia_red_wine",
+        "hook_alicia_garlic",
+        "hook_alicia_velvet_curtain",
+        "hook_alicia_cold_hand",
+        "hook_rayne_rubbing",
+        "hook_rayne_silver_cross",
+        "hook_alicia_crypt_candles"
+      ],
       "start_minute": 1320,
       "tags": [
         "workplace",
@@ -1808,7 +1832,29 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_uv_warning_thunder",
+        "hk_crypt_uv_roaring_rush",
+        "hk_crypt_breaker_groan_deadlock",
+        "hk_breaker_deformation_scrape",
+        "hk_tight_breath_ear_brush",
+        "hk_lace_corset_heat_exchange",
+        "hk_scepter_flange_notch_align",
+        "hk_rubber_hammer_chock_in",
+        "hk_satin_ribbon_bind_grip",
+        "hk_atrium_air_pressure_drop",
+        "hk_synchronized_grunt_heave",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hk_end_relief_praise",
+        "hook_alicia_red_wine",
+        "hook_alicia_garlic",
+        "hook_alicia_velvet_curtain",
+        "hook_alicia_cold_hand",
+        "hook_rayne_rubbing",
+        "hook_rayne_silver_cross",
+        "hook_alicia_crypt_candles"
+      ],
       "start_minute": 1320,
       "tags": [
         "workplace",
@@ -1852,7 +1898,29 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_uv_warning_thunder",
+        "hk_crypt_uv_roaring_rush",
+        "hk_crypt_breaker_groan_deadlock",
+        "hk_breaker_deformation_scrape",
+        "hk_tight_breath_ear_brush",
+        "hk_lace_corset_heat_exchange",
+        "hk_scepter_flange_notch_align",
+        "hk_rubber_hammer_chock_in",
+        "hk_satin_ribbon_bind_grip",
+        "hk_atrium_air_pressure_drop",
+        "hk_synchronized_grunt_heave",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hk_end_relief_praise",
+        "hook_alicia_red_wine",
+        "hook_alicia_garlic",
+        "hook_alicia_velvet_curtain",
+        "hook_alicia_cold_hand",
+        "hook_rayne_rubbing",
+        "hook_rayne_silver_cross",
+        "hook_alicia_crypt_candles"
+      ],
       "start_minute": 1320,
       "tags": [
         "workplace"
@@ -1896,7 +1964,29 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_uv_warning_thunder",
+        "hk_crypt_uv_roaring_rush",
+        "hk_crypt_breaker_groan_deadlock",
+        "hk_breaker_deformation_scrape",
+        "hk_tight_breath_ear_brush",
+        "hk_lace_corset_heat_exchange",
+        "hk_scepter_flange_notch_align",
+        "hk_rubber_hammer_chock_in",
+        "hk_satin_ribbon_bind_grip",
+        "hk_atrium_air_pressure_drop",
+        "hk_synchronized_grunt_heave",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hk_end_relief_praise",
+        "hook_alicia_red_wine",
+        "hook_alicia_garlic",
+        "hook_alicia_velvet_curtain",
+        "hook_alicia_cold_hand",
+        "hook_rayne_rubbing",
+        "hook_rayne_silver_cross",
+        "hook_alicia_crypt_candles"
+      ],
       "start_minute": 1320,
       "tags": [
         "workplace",
@@ -1940,7 +2030,29 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_uv_warning_thunder",
+        "hk_crypt_uv_roaring_rush",
+        "hk_crypt_breaker_groan_deadlock",
+        "hk_breaker_deformation_scrape",
+        "hk_tight_breath_ear_brush",
+        "hk_lace_corset_heat_exchange",
+        "hk_scepter_flange_notch_align",
+        "hk_rubber_hammer_chock_in",
+        "hk_satin_ribbon_bind_grip",
+        "hk_atrium_air_pressure_drop",
+        "hk_synchronized_grunt_heave",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hk_end_relief_praise",
+        "hook_alicia_red_wine",
+        "hook_alicia_garlic",
+        "hook_alicia_velvet_curtain",
+        "hook_alicia_cold_hand",
+        "hook_rayne_rubbing",
+        "hook_rayne_silver_cross",
+        "hook_alicia_crypt_candles"
+      ],
       "start_minute": 1320,
       "tags": [
         "workplace",
@@ -1985,7 +2097,29 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_uv_warning_thunder",
+        "hk_crypt_uv_roaring_rush",
+        "hk_crypt_breaker_groan_deadlock",
+        "hk_breaker_deformation_scrape",
+        "hk_tight_breath_ear_brush",
+        "hk_lace_corset_heat_exchange",
+        "hk_scepter_flange_notch_align",
+        "hk_rubber_hammer_chock_in",
+        "hk_satin_ribbon_bind_grip",
+        "hk_atrium_air_pressure_drop",
+        "hk_synchronized_grunt_heave",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hk_end_relief_praise",
+        "hook_alicia_red_wine",
+        "hook_alicia_garlic",
+        "hook_alicia_velvet_curtain",
+        "hook_alicia_cold_hand",
+        "hook_rayne_rubbing",
+        "hook_rayne_silver_cross",
+        "hook_alicia_crypt_candles"
+      ],
       "start_minute": 1320,
       "tags": [
         "workplace",
@@ -2218,6 +2352,18 @@
         "loc_vampire_crypt_chamber"
       ],
       "text": "{npc.name}站在棺室门口，手里捏着一只水晶杯：酒醒好了。……猎魔人，进来陪我喝一杯。"
+    },
+    {
+      "id": "hd_vampire_lady_alicia",
+      "kind": "approach",
+      "slot": "vampire_lady_alicia",
+      "text": "{vampire_lady_alicia.name}倚在书架边，把一本旧书递给你：“读给我听。今晚月色很好。”"
+    },
+    {
+      "id": "hd_hunter_scholar_rayne",
+      "kind": "approach",
+      "slot": "hunter_scholar_rayne",
+      "text": "{hunter_scholar_rayne.name}摊开一本考察笔记：“这几幅壁画的拓本，你帮我对一对。”"
     }
   ],
   "twists": [

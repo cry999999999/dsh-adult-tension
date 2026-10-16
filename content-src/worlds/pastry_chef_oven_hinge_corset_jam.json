@@ -1792,32 +1792,45 @@
     },
     {
       "id": "act_daily_hinge_corset_deadlock",
-      "title": "开箱取盘暗带遭重力铰链咬死",
+      "title": "开餐前试烤舒芙蕾",
       "location_ids": [
         "loc_open_pastry_kitchen_island"
       ],
       "duration_minutes": 5,
       "beats": [
-        "俯身端盘当口烤箱弹簧门合页回咬猛扣，死死夹困系身暗带",
-        "丝制主厨工服前襟纽结崩断外敞露出雪白肌肤与黑色束胸排骨"
+        "下午四点，女主厨在甜品岛台前试烤今晚的舒芙蕾，烤箱的灯亮着暖黄的光。",
+        "第一炉出来塌了一点，主厨皱着眉看了几秒，把它推到一边。",
+        "第二炉完美地鼓起来，主厨终于露出一点笑意，切了一小块给帮厨尝。"
       ],
-      "hook_ids": [],
-      "start_minute": 137,
+      "hook_ids": [
+        "hook_cameraman_ethical_choice",
+        "hook_oven_heat_thrill",
+        "hook_sous_chef_silent_vow"
+      ],
+      "start_minute": 960,
       "tags": []
     },
     {
       "id": "act_daily_critic_countdown_advance",
-      "title": "主评委按动秒表二十五秒倒数",
+      "title": "品鉴席的摆台",
       "location_ids": [
         "loc_marble_tasting_counter_front"
       ],
       "duration_minutes": 5,
       "beats": [
-        "主评审举表对镜卡点迈入最后二十五秒下榻致命节点",
-        "主厨巧用钛质抹刀微翘棱角深入轴隙挑开卡扣脱困"
+        "开餐前，服务生在大理石品鉴席上摆好二十套银器，主厨亲自过来检查。",
+        "主厨挪了挪一只甜品勺的位置，说差了半厘米也看得出来。",
+        "摆台完成，主厨看了一眼手表：还有一小时，大家去吃点东西。"
       ],
-      "hook_ids": [],
-      "start_minute": 139,
+      "hook_ids": [
+        "hd_chef_pei_luo_shen",
+        "hd_sous_chef_lu_chen_feng",
+        "hd_assistant_jiang_cai_wei",
+        "hd_critic_pierre_dupuis",
+        "hd_engineer_song_bo_han",
+        "hd_blogger_chen_zi_mo"
+      ],
+      "start_minute": 1020,
       "tags": []
     },
     {
@@ -1927,7 +1940,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_pastry_chef_corset_trap_start",
+        "hook_towel_stand_blindspot_aid",
+        "hook_broadcast_zoom_in_crisis",
+        "hook_spatula_titanium_lever_mechanics",
+        "hook_tray_sway_camouflage",
+        "hook_souffle_finale_cadenza",
+        "hook_secret_goddess_blush_relief",
+        "hook_backstage_prank_secret_guilt",
+        "hook_engineer_gesture_cipher",
+        "hook_cameraman_ethical_choice",
+        "hook_critic_iron_protocol_test",
+        "hook_silk_costume_tension_limit",
+        "hook_oven_heat_thrill",
+        "hook_michelin_standing_ovation_triumph",
+        "hook_sous_chef_silent_vow",
+        "hook_chef_rest_room_door"
+      ],
       "start_minute": 136,
       "tags": [
         "disaster"
@@ -1970,7 +2000,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_pastry_chef_corset_trap_start",
+        "hook_towel_stand_blindspot_aid",
+        "hook_broadcast_zoom_in_crisis",
+        "hook_spatula_titanium_lever_mechanics",
+        "hook_tray_sway_camouflage",
+        "hook_souffle_finale_cadenza",
+        "hook_secret_goddess_blush_relief",
+        "hook_backstage_prank_secret_guilt",
+        "hook_engineer_gesture_cipher",
+        "hook_cameraman_ethical_choice",
+        "hook_critic_iron_protocol_test",
+        "hook_silk_costume_tension_limit",
+        "hook_oven_heat_thrill",
+        "hook_michelin_standing_ovation_triumph",
+        "hook_sous_chef_silent_vow",
+        "hook_chef_rest_room_door"
+      ],
       "start_minute": 138,
       "tags": []
     },
@@ -2011,7 +2058,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_pastry_chef_corset_trap_start",
+        "hook_towel_stand_blindspot_aid",
+        "hook_broadcast_zoom_in_crisis",
+        "hook_spatula_titanium_lever_mechanics",
+        "hook_tray_sway_camouflage",
+        "hook_souffle_finale_cadenza",
+        "hook_secret_goddess_blush_relief",
+        "hook_backstage_prank_secret_guilt",
+        "hook_engineer_gesture_cipher",
+        "hook_cameraman_ethical_choice",
+        "hook_critic_iron_protocol_test",
+        "hook_silk_costume_tension_limit",
+        "hook_oven_heat_thrill",
+        "hook_michelin_standing_ovation_triumph",
+        "hook_sous_chef_silent_vow",
+        "hook_chef_rest_room_door"
+      ],
       "start_minute": 136,
       "tags": []
     },
@@ -2052,7 +2116,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_pastry_chef_corset_trap_start",
+        "hook_towel_stand_blindspot_aid",
+        "hook_broadcast_zoom_in_crisis",
+        "hook_spatula_titanium_lever_mechanics",
+        "hook_tray_sway_camouflage",
+        "hook_souffle_finale_cadenza",
+        "hook_secret_goddess_blush_relief",
+        "hook_backstage_prank_secret_guilt",
+        "hook_engineer_gesture_cipher",
+        "hook_cameraman_ethical_choice",
+        "hook_critic_iron_protocol_test",
+        "hook_silk_costume_tension_limit",
+        "hook_oven_heat_thrill",
+        "hook_michelin_standing_ovation_triumph",
+        "hook_sous_chef_silent_vow",
+        "hook_chef_rest_room_door"
+      ],
       "start_minute": 137,
       "tags": [
         "disaster"
@@ -2095,7 +2176,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_pastry_chef_corset_trap_start",
+        "hook_towel_stand_blindspot_aid",
+        "hook_broadcast_zoom_in_crisis",
+        "hook_spatula_titanium_lever_mechanics",
+        "hook_tray_sway_camouflage",
+        "hook_souffle_finale_cadenza",
+        "hook_secret_goddess_blush_relief",
+        "hook_backstage_prank_secret_guilt",
+        "hook_engineer_gesture_cipher",
+        "hook_cameraman_ethical_choice",
+        "hook_critic_iron_protocol_test",
+        "hook_silk_costume_tension_limit",
+        "hook_oven_heat_thrill",
+        "hook_michelin_standing_ovation_triumph",
+        "hook_sous_chef_silent_vow",
+        "hook_chef_rest_room_door"
+      ],
       "start_minute": 138,
       "tags": []
     },
@@ -2136,7 +2234,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_pastry_chef_corset_trap_start",
+        "hook_towel_stand_blindspot_aid",
+        "hook_broadcast_zoom_in_crisis",
+        "hook_spatula_titanium_lever_mechanics",
+        "hook_tray_sway_camouflage",
+        "hook_souffle_finale_cadenza",
+        "hook_secret_goddess_blush_relief",
+        "hook_backstage_prank_secret_guilt",
+        "hook_engineer_gesture_cipher",
+        "hook_cameraman_ethical_choice",
+        "hook_critic_iron_protocol_test",
+        "hook_silk_costume_tension_limit",
+        "hook_oven_heat_thrill",
+        "hook_michelin_standing_ovation_triumph",
+        "hook_sous_chef_silent_vow",
+        "hook_chef_rest_room_door"
+      ],
       "start_minute": 137,
       "tags": [
         "disaster"
@@ -2287,6 +2402,42 @@
         "loc_chef_rest_room"
       ],
       "text": "{npc.name}倚在休息室门口，厨师服的扣子松了两颗：收工了。……进来尝样东西？"
+    },
+    {
+      "id": "hd_chef_pei_luo_shen",
+      "kind": "approach",
+      "slot": "chef_pei_luo_shen",
+      "text": "{chef_pei_luo_shen.name}把一小块新做的挞递到你嘴边，语气平淡：“尝尝。甜度合不合适，直说。”"
+    },
+    {
+      "id": "hd_sous_chef_lu_chen_feng",
+      "kind": "approach",
+      "slot": "sous_chef_lu_chen_feng",
+      "text": "{sous_chef_lu_chen_feng.name}擦着台面冲你点头：“今天收工早，一起去喝一杯？”"
+    },
+    {
+      "id": "hd_assistant_jiang_cai_wei",
+      "kind": "approach",
+      "slot": "assistant_jiang_cai_wei",
+      "text": "{assistant_jiang_cai_wei.name}抱着一本配方本凑过来：“这个新配方，你帮我看看比例。”"
+    },
+    {
+      "id": "hd_critic_pierre_dupuis",
+      "kind": "approach",
+      "slot": "critic_pierre_dupuis",
+      "text": "{critic_pierre_dupuis.name}在吧台边坐下，冲你微笑：“今天只是私人拜访，来一杯咖啡就好。”"
+    },
+    {
+      "id": "hd_engineer_song_bo_han",
+      "kind": "approach",
+      "slot": "engineer_song_bo_han",
+      "text": "{engineer_song_bo_han.name}拿着检修单走过来：“例行保养做完了，签个字就行。”"
+    },
+    {
+      "id": "hd_blogger_chen_zi_mo",
+      "kind": "approach",
+      "slot": "blogger_chen_zi_mo",
+      "text": "{blogger_chen_zi_mo.name}举起相机冲你晃了晃：“给这道甜品拍张照，你帮我打一下光。”"
     }
   ],
   "twists": [

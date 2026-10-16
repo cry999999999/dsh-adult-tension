@@ -1666,42 +1666,45 @@
   "daily_activities": [
     {
       "id": "a_entry_warm_room_sword_draw_cauterize",
-      "title": "破庙暖阁狭路相逢软剑入鞘对峙",
+      "title": "暖阁里煎药",
       "location_ids": [
         "ancient_temple_side_hall_warm_room"
       ],
       "duration_minutes": 45,
       "beats": [
-        "特大暴雨山洪爆发断绝出山要道，负伤女刺客潜入暖阁，软剑横于青年医者颈侧三寸严词质问。",
-        "医者坦然亮出药箱银刀表明身家底细，见刺客毒发后背溃烂，主动提出以祖传秘法除钉拔毒。",
-        "女刺客收剑入鞘以示信任，窗外电闪雷鸣，室内二人围着微弱炭火达成生死互保约定。"
+        "山雨停了两天，医者在暖阁的小炉上煎药，药香飘满了偏殿。",
+        "女刺客靠在榻上看着，忽然问医者学医学了几年。",
+        "药煎好了，医者吹凉了才递过去，女刺客皱着眉一口喝干。"
       ],
       "hook_ids": [
         "h_wanxue_sword_neck_confrontation_whispe",
         "h_zhao_hound_shout_arson_threat",
         "h_huitong_staff_ground_strike_buddha"
       ],
-      "start_minute": 1380,
+      "start_minute": 600,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "a_warm_room_bare_shoulder_bone_scrape",
-      "title": "残室炭火褪半肩黑衣剔骨敷药",
+      "title": "拆布换药",
       "location_ids": [
         "ancient_temple_side_hall_warm_room"
       ],
       "duration_minutes": 40,
       "beats": [
-        "沈挽雪解开玄黑劲装束腰，褪下半边肩袖露出削瘦雪白脊背与深陷骨髓之乌黑透骨钉创口。",
-        "医者以烈火淬过银刀凝神切除烂肉挑出铁钉，刺客忍受剧痛反扣同伴手腕，冷汗湿透彼此掌心。",
-        "敷上清凉雄黄散后，二人背靠背坐在火堆两侧，一个守门一个守窗，静听屋外风雨与犬吠。"
+        "伤口开始结痂，医者替女刺客拆开旧布条，换上新药。",
+        "女刺客背对着医者，说起小时候第一次受伤，是师父给包的。",
+        "包扎好了，女刺客回头道了声谢，声音比前几天软了许多。"
       ],
       "hook_ids": [
-        "h_wanxue_bare_shoulder_clench_wrist_whis",
-        "h_zhao_hound_shout_arson_threat",
-        "h_chufeng_sword_clash_shout_standoff"
+        "hd_cold_assassin_shen_wanxue",
+        "hd_righteous_young_monk_huitong",
+        "hd_ruthless_dongchang_commander_zhao",
+        "hd_censor_aide_judge_lu",
+        "hd_righteous_swordsman_companion_chufeng",
+        "hd_teahouse_contact_madam_liu"
       ],
       "start_minute": 1425,
       "tags": [
@@ -1710,66 +1713,65 @@
     },
     {
       "id": "a_main_hall_arson_blockade_defense",
-      "title": "正殿前庭泥浆扑火飞剑阻截缇骑",
+      "title": "正殿里擦佛像",
       "location_ids": [
         "main_shrine_collapsed_nave"
       ],
       "duration_minutes": 45,
       "beats": [
-        "东厂百户指挥缇骑纵火焚庙，医者奋勇以草席湿泥扑打门缝火苗阻断烈油倒灌。",
-        "武僧慧通挥动乌木长棍如狂风扫叶横扫突入番子，游侠楚长风青锋剑芒化解屋顶连发重弩箭雨。",
-        "沈挽雪强抑内力飞剑穿透窗棂击杀放火小旗，全员合力在火海浓烟中守住暖阁最后生机防线。"
+        "武僧慧通在正殿里收拾倒下的木梁，把佛像上的泥一点点擦干净。",
+        "医者过来帮忙扶梯子，武僧说这尊佛像比庙里所有人都老。",
+        "擦完最后一块，武僧合掌念了一句佛号，两人在台阶上坐着歇了一会儿。"
       ],
       "hook_ids": [
         "h_huitong_staff_ground_strike_buddha",
         "h_wanxue_bare_shoulder_clench_wrist_whis",
         "h_zhao_hound_shout_arson_threat"
       ],
-      "start_minute": 25,
+      "start_minute": 660,
       "tags": [
         "workplace_power"
       ]
     },
     {
       "id": "a_courtyard_well_millstone_seal_breakout",
-      "title": "后院枯井推移万斤磨盘遁入地宫",
+      "title": "后院推磨",
       "location_ids": [
         "back_courtyard_dry_well_tunnel"
       ],
       "duration_minutes": 35,
       "beats": [
-        "全员护卫刺客撤至后院枯井，武僧掀开井底厚重青石木盖露出直通后山的泄洪排险暗道。",
-        "东厂恶犬循血迹狂吠扑来，医者洒出辛辣药散阻断嗅觉，全员依次跃入枯井避风地道。",
-        "武僧与游侠合力推动井旁万斤石磨压死井口，将狂暴追兵与满天雷雨彻底隔绝在地面之上。"
+        "后院的石磨还能用，武僧把晒干的豆子倒进去，让医者帮着推。",
+        "女刺客坐在井沿上看两人推磨，嘴上说庙里的日子太闷。",
+        "豆浆煮好了，女刺客第一个伸手要了一碗。"
       ],
       "hook_ids": [
         "h_chufeng_sword_clash_shout_standoff",
         "h_zhao_hound_shout_arson_threat",
         "h_wanxue_sword_neck_confrontation_whispe"
       ],
-      "start_minute": 70,
+      "start_minute": 480,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "a_tunnel_underground_river_raft_escape",
-      "title": "暗道石窟暗河破浪飞舟突围",
+      "title": "井边晾草药",
       "location_ids": [
         "back_courtyard_dry_well_tunnel"
       ],
       "duration_minutes": 30,
       "beats": [
-        "地道暗河暴涨，全员登上盲眼老僧预留之坚固杉木排筏，顺着奔腾地下泄洪急流飞驰穿梭。",
-        "沈挽雪吞下还魂丹靠着石壁调息，医者握住刺客手腕数着脉搏，在惊涛拍岸中一刻不敢松懈。",
-        "木排破开地道水栅冲出后山悬崖峭壁飞流瀑布，在万顷碧波与水汽中安然平稳滑入竹林缓滩。"
+        "医者把从后山采来的草药铺在枯井边的石板上晾晒。",
+        "女刺客认得其中几味，说江湖上有人拿它配迷药。",
+        "医者笑着把那几味挑出来收好：在我这儿，它只用来止疼。"
       ],
       "hook_ids": [
         "h_chufeng_sword_clash_shout_standoff",
-        "h_wanxue_sword_tassel_pledge_whisper",
         "h_huitong_staff_ground_strike_buddha"
       ],
-      "start_minute": 105,
+      "start_minute": 720,
       "tags": [
         "intimate"
       ]
@@ -2224,6 +2226,42 @@
         "main_shrine_collapsed_nave"
       ],
       "text": "{righteous_young_monk_huitong.name}横棍立于积水大殿之中，灰布僧袍受暴雨泥浆浸透贴在宽阔胸膛上，雨水混杂着汗珠顺着刚毅下巴滴落，宛如一尊守护落难苍生的无畏降魔金刚。"
+    },
+    {
+      "id": "hd_cold_assassin_shen_wanxue",
+      "kind": "approach",
+      "slot": "cold_assassin_shen_wanxue",
+      "text": "{cold_assassin_shen_wanxue.name}坐在檐下看雨，把身边的蒲团往外推了推：“坐吧，雨还要下一阵。”"
+    },
+    {
+      "id": "hd_righteous_young_monk_huitong",
+      "kind": "approach",
+      "slot": "righteous_young_monk_huitong",
+      "text": "{righteous_young_monk_huitong.name}捧着一壶新沏的粗茶过来，合掌道：“施主，喝口热茶暖暖身子。”"
+    },
+    {
+      "id": "hd_ruthless_dongchang_commander_zhao",
+      "kind": "approach",
+      "slot": "ruthless_dongchang_commander_zhao",
+      "text": "{ruthless_dongchang_commander_zhao.name}在你对面坐下，自斟一杯：“今日不办差，只喝酒。”"
+    },
+    {
+      "id": "hd_censor_aide_judge_lu",
+      "kind": "approach",
+      "slot": "censor_aide_judge_lu",
+      "text": "{censor_aide_judge_lu.name}把一卷誊好的公文递给你：“劳烦过目，看看有没有错字。”"
+    },
+    {
+      "id": "hd_righteous_swordsman_companion_chufeng",
+      "kind": "approach",
+      "slot": "righteous_swordsman_companion_chufeng",
+      "text": "{righteous_swordsman_companion_chufeng.name}拍了拍你的肩：“雨停了去镇上吃碗面？我请。”"
+    },
+    {
+      "id": "hd_teahouse_contact_madam_liu",
+      "kind": "approach",
+      "slot": "teahouse_contact_madam_liu",
+      "text": "{teahouse_contact_madam_liu.name}端上一碟桂花糕，笑着坐下：“新做的，尝尝甜不甜。”"
     }
   ],
   "twists": [

@@ -1340,22 +1340,28 @@
  "daily_activities": [
   {
    "beats": [
-    "使用高硬度铬钒钢快拆扳钳斜口硬柄深入拉头齿缝与内衬夹缝",
-    "二人合力向下方倾斜三十度施加静载杠杆力矩顶开卡死铜齿",
-    "在拉头弹退滑轨松脱瞬间合抱移门地槽撬退地锁完成逃生"
+    "签售开始前一小时，声优在VIP更衣间里换上神里绫华的重工战袍。",
+    "背后的系带太多，声优隔着帘子喊执行总监进来帮忙。",
+    "系带一根根扎好，声优对着镜子转了一圈，问：像不像？"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hd_cool_cosplayer_situ_xue",
+    "hd_stage_director_ling_yun_che",
+    "hd_armor_tailor_dantai_yue",
+    "hd_prop_mechanic_murong_xiu_yuan",
+    "hd_security_patrol_officer_chu_tian_heng",
+    "hd_vip_dressing_maid_shen_ruo_wei"
+   ],
    "id": "act_situ_xue_pries_zipper_lock",
    "location_ids": [
     "loc_vip_cosplayer_dressing_booth"
    ],
-   "start_minute": 1260,
+   "start_minute": 780,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "更衣室扳钳斜口下压撬动咬死战袍拉头"
+   "title": "更衣间里换战袍"
   },
   {
    "beats": [
@@ -1415,22 +1421,25 @@
   },
   {
    "beats": [
-    "特勤队员将合金折叠撬杠深入外侧移门底缝向上强力预顶起微隙",
-    "隔着门缝以军旅铿锵倒数读秒引导内外两侧人员毫秒级同步发力",
-    "在门缝初开瞬间合力扣住外门把手向外侧拉开生路迎接脱险人员"
+    "主舞台上主持人还在暖场，声优在隔音走廊里一遍遍念着待会儿要说的台词。",
+    "执行总监拿着流程单在旁边计时，说还有四分钟。",
+    "声优深吸一口气，把台本塞进总监手里：替我拿着，我上去了。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_chu_calibrates_bar_lift_run",
+    "hook_ling_sprays_lubricant_rail_call",
+    "hook_xue_hotel_window"
+   ],
    "id": "act_chu_pries_door_bottom_with_bar",
    "location_ids": [
     "loc_stage_backstage_curfew_corridor"
    ],
-   "start_minute": 1264,
+   "start_minute": 840,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "备演走廊防暴撬杠外侧托举移门下沿"
+   "title": "候场走廊里背台词"
   },
   {
    "beats": [
@@ -1712,6 +1721,48 @@
    ],
    "slot": "cool_cosplayer_situ_xue",
    "text": "{npc.name}倚在套房门口，把一张房卡晃了晃：签售累死了。……进来陪我坐会儿。"
+  },
+  {
+   "id": "hd_cool_cosplayer_situ_xue",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "cool_cosplayer_situ_xue",
+   "text": "{cool_cosplayer_situ_xue.name}把一份签名海报塞到你手里，语气冷淡：“多出来的，拿去。”"
+  },
+  {
+   "id": "hd_stage_director_ling_yun_che",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "stage_director_ling_yun_che",
+   "text": "{stage_director_ling_yun_che.name}翻着流程单冲你招手：“明天的彩排，你帮我对一下时间。”"
+  },
+  {
+   "id": "hd_armor_tailor_dantai_yue",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "armor_tailor_dantai_yue",
+   "text": "{armor_tailor_dantai_yue.name}拿着软尺走过来：“站好，新的一套要量一下尺寸。”"
+  },
+  {
+   "id": "hd_prop_mechanic_murong_xiu_yuan",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "prop_mechanic_murong_xiu_yuan",
+   "text": "{prop_mechanic_murong_xiu_yuan.name}把一把刚打磨好的道具弓递给你：“试试手感，轻了还是重了？”"
+  },
+  {
+   "id": "hd_security_patrol_officer_chu_tian_heng",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "security_patrol_officer_chu_tian_heng",
+   "text": "{security_patrol_officer_chu_tian_heng.name}巡完一圈，在你旁边停下：“今天人少，难得清闲。”"
+  },
+  {
+   "id": "hd_vip_dressing_maid_shen_ruo_wei",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "vip_dressing_maid_shen_ruo_wei",
+   "text": "{vip_dressing_maid_shen_ruo_wei.name}端来一杯温水，轻声说：“嘉宾休息时间，您也坐一会儿吧。”"
   }
  ],
  "id": "cool_genshin_cosplayer_zipper_trap",
@@ -2041,7 +2092,28 @@
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_situ_takes_down_chrome_wrench",
+    "hook_ling_sprays_lubricant_rail_call",
+    "hook_dantai_softens_zipper_knot",
+    "hook_murong_places_bench_fulcrum",
+    "hook_chu_calibrates_bar_lift_run",
+    "hook_shen_hands_wet_wipe_water",
+    "hook_situ_exhorts_partner_to_hold_steady",
+    "hook_ling_shouts_counter_torque_ready",
+    "hook_dantai_wipes_sweat_situ_brow",
+    "hook_murong_shores_up_bench_fulcrum",
+    "hook_situ_and_crew_thrust_downward",
+    "hook_observe_dressing_door_pops_open",
+    "hook_observe_ling_and_crew_haul_door",
+    "hook_observe_chu_restores_fresh_air",
+    "hook_observe_situ_embraces_triumph",
+    "hook_xue_voice_line",
+    "hook_xue_wig_off",
+    "hook_xue_hotel_window",
+    "hook_yunche_warm_water",
+    "hook_xue_hotel_door"
+   ],
    "id": "p_curfew_infrared_lockdown_countdown",
    "immediate": {
     "minutes": 3,
@@ -2085,7 +2157,28 @@
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_situ_takes_down_chrome_wrench",
+    "hook_ling_sprays_lubricant_rail_call",
+    "hook_dantai_softens_zipper_knot",
+    "hook_murong_places_bench_fulcrum",
+    "hook_chu_calibrates_bar_lift_run",
+    "hook_shen_hands_wet_wipe_water",
+    "hook_situ_exhorts_partner_to_hold_steady",
+    "hook_ling_shouts_counter_torque_ready",
+    "hook_dantai_wipes_sweat_situ_brow",
+    "hook_murong_shores_up_bench_fulcrum",
+    "hook_situ_and_crew_thrust_downward",
+    "hook_observe_dressing_door_pops_open",
+    "hook_observe_ling_and_crew_haul_door",
+    "hook_observe_chu_restores_fresh_air",
+    "hook_observe_situ_embraces_triumph",
+    "hook_xue_voice_line",
+    "hook_xue_wig_off",
+    "hook_xue_hotel_window",
+    "hook_yunche_warm_water",
+    "hook_xue_hotel_door"
+   ],
    "id": "p_heavy_armor_zipper_teeth_deadlock",
    "immediate": {
     "minutes": 3,
@@ -2129,7 +2222,28 @@
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_situ_takes_down_chrome_wrench",
+    "hook_ling_sprays_lubricant_rail_call",
+    "hook_dantai_softens_zipper_knot",
+    "hook_murong_places_bench_fulcrum",
+    "hook_chu_calibrates_bar_lift_run",
+    "hook_shen_hands_wet_wipe_water",
+    "hook_situ_exhorts_partner_to_hold_steady",
+    "hook_ling_shouts_counter_torque_ready",
+    "hook_dantai_wipes_sweat_situ_brow",
+    "hook_murong_shores_up_bench_fulcrum",
+    "hook_situ_and_crew_thrust_downward",
+    "hook_observe_dressing_door_pops_open",
+    "hook_observe_ling_and_crew_haul_door",
+    "hook_observe_chu_restores_fresh_air",
+    "hook_observe_situ_embraces_triumph",
+    "hook_xue_voice_line",
+    "hook_xue_wig_off",
+    "hook_xue_hotel_window",
+    "hook_yunche_warm_water",
+    "hook_xue_hotel_door"
+   ],
    "id": "p_door_floor_deadbolt_gravity_jam",
    "immediate": {
     "minutes": 3,
@@ -2173,7 +2287,28 @@
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_situ_takes_down_chrome_wrench",
+    "hook_ling_sprays_lubricant_rail_call",
+    "hook_dantai_softens_zipper_knot",
+    "hook_murong_places_bench_fulcrum",
+    "hook_chu_calibrates_bar_lift_run",
+    "hook_shen_hands_wet_wipe_water",
+    "hook_situ_exhorts_partner_to_hold_steady",
+    "hook_ling_shouts_counter_torque_ready",
+    "hook_dantai_wipes_sweat_situ_brow",
+    "hook_murong_shores_up_bench_fulcrum",
+    "hook_situ_and_crew_thrust_downward",
+    "hook_observe_dressing_door_pops_open",
+    "hook_observe_ling_and_crew_haul_door",
+    "hook_observe_chu_restores_fresh_air",
+    "hook_observe_situ_embraces_triumph",
+    "hook_xue_voice_line",
+    "hook_xue_wig_off",
+    "hook_xue_hotel_window",
+    "hook_yunche_warm_water",
+    "hook_xue_hotel_door"
+   ],
    "id": "p_backstage_ventilation_heat_buildup",
    "immediate": {
     "minutes": 3,
@@ -2217,7 +2352,28 @@
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_situ_takes_down_chrome_wrench",
+    "hook_ling_sprays_lubricant_rail_call",
+    "hook_dantai_softens_zipper_knot",
+    "hook_murong_places_bench_fulcrum",
+    "hook_chu_calibrates_bar_lift_run",
+    "hook_shen_hands_wet_wipe_water",
+    "hook_situ_exhorts_partner_to_hold_steady",
+    "hook_ling_shouts_counter_torque_ready",
+    "hook_dantai_wipes_sweat_situ_brow",
+    "hook_murong_shores_up_bench_fulcrum",
+    "hook_situ_and_crew_thrust_downward",
+    "hook_observe_dressing_door_pops_open",
+    "hook_observe_ling_and_crew_haul_door",
+    "hook_observe_chu_restores_fresh_air",
+    "hook_observe_situ_embraces_triumph",
+    "hook_xue_voice_line",
+    "hook_xue_wig_off",
+    "hook_xue_hotel_window",
+    "hook_yunche_warm_water",
+    "hook_xue_hotel_door"
+   ],
    "id": "p_chrome_vanadium_tool_shear_risk",
    "immediate": {
     "minutes": 3,
@@ -2261,7 +2417,28 @@
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_situ_takes_down_chrome_wrench",
+    "hook_ling_sprays_lubricant_rail_call",
+    "hook_dantai_softens_zipper_knot",
+    "hook_murong_places_bench_fulcrum",
+    "hook_chu_calibrates_bar_lift_run",
+    "hook_shen_hands_wet_wipe_water",
+    "hook_situ_exhorts_partner_to_hold_steady",
+    "hook_ling_shouts_counter_torque_ready",
+    "hook_dantai_wipes_sweat_situ_brow",
+    "hook_murong_shores_up_bench_fulcrum",
+    "hook_situ_and_crew_thrust_downward",
+    "hook_observe_dressing_door_pops_open",
+    "hook_observe_ling_and_crew_haul_door",
+    "hook_observe_chu_restores_fresh_air",
+    "hook_observe_situ_embraces_triumph",
+    "hook_xue_voice_line",
+    "hook_xue_wig_off",
+    "hook_xue_hotel_window",
+    "hook_yunche_warm_water",
+    "hook_xue_hotel_door"
+   ],
    "id": "p_door_cadence_mismatch_jam_risk",
    "immediate": {
     "minutes": 3,

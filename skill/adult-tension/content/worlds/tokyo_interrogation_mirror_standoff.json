@@ -1530,31 +1530,34 @@
   },
   {
    "beats": [
-    "电锯火花喷进门缝，侧写官咔哒一声解开队长的手铐，审讯就此结束",
-    "重获自由的队长扣住侧写官的手腕拉向自己，两人在单向镜的反光里额头相抵",
-    "队长贴着侧写官耳边说出底片坐标，侧写官回吻唇角，定下生死同盟"
+    "侧写官提前半小时走进第七审讯室，调整桌椅的角度，把测谎仪摆好。",
+    "侧写官坐在嫌疑人的椅子上试了试，说这个位置看镜子刚好。",
+    "门开了，戴着手铐的队长被带进来，看了侧写官一眼：又是你。"
    ],
    "duration_minutes": 60,
    "hook_ids": [
-    "hk_profiler_whisper_request",
-    "hk_leader_protect_approach",
-    "hk_leader_muscles_observe"
+    "hd_sat_team_leader",
+    "hd_corrupt_ia_inspector",
+    "hd_loyal_squad_detective",
+    "hd_cold_female_profiler",
+    "hd_defense_attorney",
+    "hd_forensic_chief_tech"
    ],
    "id": "act_tk_handcuff_unlock",
    "location_ids": [
     "special_interrogation_room_07"
    ],
-   "start_minute": 20,
+   "start_minute": 1260,
    "tags": [
     "intimate"
    ],
-   "title": "解铐后的反客为主"
+   "title": "审讯前的准备"
   },
   {
    "beats": [
-    "积水淹过脚踝，配电盘过载手柄扳下，整条走廊在电弧炸裂中陷入黑暗",
-    "突击队长在黑暗里猎豹般突进，绞住带头督察的手臂夺下防暴枪",
-    "两人背靠背交替开火，且战且退撞进物证库的厚门"
+    "审讯间隙，侧写官在羁押回廊的自动贩卖机前买咖啡，按了两次。",
+    "侧写官把其中一罐递给看守，让看守带给审讯室里的队长。",
+    "看守问为什么，侧写官说：疲劳的人说不出真话。"
    ],
    "duration_minutes": 55,
    "hook_ids": [
@@ -1566,43 +1569,45 @@
    "location_ids": [
     "sublevel2_secure_corridor"
    ],
-   "start_minute": 85,
+   "start_minute": 1320,
    "tags": [
     "workplace_power"
    ],
-   "title": "积水回廊短路夺枪"
+   "title": "羁押回廊里的咖啡"
   },
   {
    "beats": [
-    "暴雨顺着竖井倒灌，主任点燃焊笔喷出白炽烈焰",
-    "生铁扇叶被烧穿熔断，铁水溅进积水哧哧作响",
-    "队长用背心挡住熔渣，扳断最后一段铁梁露出爬梯"
+    "侧写官去科搜研物证库调一份旧档案，主任从一排排铁架间翻出一只纸箱。",
+    "主任说这起案子十年了，当年的特警队长就是现在楼下那个人。",
+    "侧写官打开纸箱看了很久，把一张照片夹进了自己的笔记本。"
    ],
    "duration_minutes": 50,
    "hook_ids": [
-    "hk_tech_box_approach",
-    "hk_tech_panic_request",
-    "hk_tech_lab_observe"
+    "hd_sat_team_leader",
+    "hd_corrupt_ia_inspector",
+    "hd_loyal_squad_detective",
+    "hd_cold_female_profiler",
+    "hd_defense_attorney",
+    "hd_forensic_chief_tech"
    ],
    "id": "act_tk_thermite_severing",
    "location_ids": [
     "forensic_vent_shaft"
    ],
-   "start_minute": 140,
+   "start_minute": 1020,
    "tags": [
     "workplace"
    ],
-   "title": "两千度熔断排风钢梁"
+   "title": "物证库里调档"
   },
   {
    "beats": [
-    "水密门在身后轰然闭锁，四人顶着倒灌的暴雨向上攀登",
-    "队长单手托住体力透支的侧写官，用背替侧写官挡下坠落的碎石",
-    "铸铁井盖被一拳顶开，所有人跃进后巷，冲上黑色越野车"
+    "审讯告一段落，侧写官从警视厅后门出来，外面下着细雨。",
+    "主任撑着伞等在后巷，说一起去吃碗拉面吧。",
+    "两人并肩走进雨里，侧写官说今天那个人，好像有话没说完。"
    ],
    "duration_minutes": 50,
    "hook_ids": [
-    "hk_detective_keys_approach",
     "hk_leader_handcuff_approach",
     "hk_profiler_mirror_observe"
    ],
@@ -1610,11 +1615,11 @@
    "location_ids": [
     "forensic_vent_shaft"
    ],
-   "start_minute": 195,
+   "start_minute": 1380,
    "tags": [
     "workplace"
    ],
-   "title": "暴雨竖井攀梯冲刺"
+   "title": "下班后的雨夜"
   },
   {
    "beats": [
@@ -1834,6 +1839,48 @@
    ],
    "slot": "forensic_chief_tech",
    "text": "竖井呼啸的气流里，{forensic_chief_tech.name}把银色物证箱护在大褂下，护目镜映着白炽火光，单薄的身体发抖却寸步不退。"
+  },
+  {
+   "id": "hd_sat_team_leader",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "sat_team_leader",
+   "text": "{sat_team_leader.name}把一罐热咖啡放在你面前，靠着墙：“下班了。陪我喝完这罐。”"
+  },
+  {
+   "id": "hd_corrupt_ia_inspector",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "corrupt_ia_inspector",
+   "text": "{corrupt_ia_inspector.name}把一份例行报告递给你：“签个字，今天的事就结了。”"
+  },
+  {
+   "id": "hd_loyal_squad_detective",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "loyal_squad_detective",
+   "text": "{loyal_squad_detective.name}拎着两份便当走进来：“还没吃吧？一起。”"
+  },
+  {
+   "id": "hd_cold_female_profiler",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "cold_female_profiler",
+   "text": "{cold_female_profiler.name}把一本心理学期刊推到你面前：“这篇不错，有空读读。”"
+  },
+  {
+   "id": "hd_defense_attorney",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "defense_attorney",
+   "text": "{defense_attorney.name}在你对面坐下，冲你微笑：“今天不谈案子。喝杯咖啡？”"
+  },
+  {
+   "id": "hd_forensic_chief_tech",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "forensic_chief_tech",
+   "text": "{forensic_chief_tech.name}把一份报告递给你：“例行复核，你帮我看看格式。”"
   }
  ],
  "id": "tokyo_interrogation_mirror_standoff",

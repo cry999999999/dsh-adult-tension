@@ -1346,35 +1346,33 @@
  "daily_activities": [
   {
    "beats": [
-    "年轻未亡人身着素白双层和服丧服独守佛堂蒲团，山洪暴发冲垮下山石桥，电线断裂全宅陷入黑暗。",
-    "青年近侍单膝下跪为未亡人修剪长明生铁烛台，双手手背轻托未亡人腰后素白丝带重新系紧以御寒意。",
-    "未亡人贝齿紧咬朱唇浑身微颤，在水汽寒意与线香弥漫中反手攥紧随侍衣角，共听纸门外异动。"
+    "老家主去世的第一夜，雨还没下，未亡人跪坐在佛堂里，看着长明烛台的火苗。",
+    "青年近侍跪在一旁修剪烛芯，动作很轻，生怕惊动了什么。",
+    "未亡人轻声说：老爷生前最怕黑，这盏灯，不能灭。"
    ],
    "duration_minutes": 45,
    "hook_ids": [
     "h_yukino_white_sash_shiver_glance",
-    "h_yukino_incense_smoke_chin_lift",
     "h_goro_cane_pounding_door_roar"
    ],
    "id": "a_entry_wake_hall_candle_vigil",
    "location_ids": [
     "buddhist_shrine_wake_hall"
    ],
-   "start_minute": 1425,
+   "start_minute": 1320,
    "tags": [
     "intimate"
    ],
-   "title": "佛堂长明烛台修剪与素服守灵"
+   "title": "守灵第一夜的烛台"
   },
   {
    "beats": [
-    "外侧打手开始撞击佛堂正门，青年近侍护卫未亡人自暗门退入狭小茶室水屋屏息隐蔽。",
-    "在绝对黑暗中二人呼吸相闻促膝下蹲，近侍借机关铜钥匙自地炉暗坑下摸索起获老家主真正遗嘱原件。",
-    "未亡人靠着青年随侍的肩稳住身形，指尖摸索着遗嘱上的朱红私印两相誓约。"
+    "葬礼前一天的午后，未亡人在三叠半茶室里为自己点了一碗茶。",
+    "近侍守在门外，听见茶筅搅动的细碎声音。",
+    "未亡人推开纸门，把第二碗茶递给近侍：老爷说过，你点的茶最难喝。"
    ],
    "duration_minutes": 40,
    "hook_ids": [
-    "h_yukino_incense_smoke_chin_lift",
     "h_chiyo_copper_lamp_tea_whisper",
     "h_goro_cane_pounding_door_roar"
    ],
@@ -1382,11 +1380,11 @@
    "location_ids": [
     "tea_ceremony_alcove_hiding"
    ],
-   "start_minute": 30,
+   "start_minute": 900,
    "tags": [
     "intimate"
    ],
-   "title": "三叠半茶室暗格真遗嘱起获"
+   "title": "三叠半茶室点茶"
   },
   {
    "beats": [
@@ -1412,13 +1410,12 @@
   },
   {
    "beats": [
-    "侍药医师自后殿赶至花岗岩金库大门前，当着全族出示刺入老家主药盏后彻底变黑之验毒银针。",
-    "公证特派员高举东京地方法院二十四小时刑事侦查保全令，当场勒令全场打手放下武器就擒。",
-    "分家少爷眼见弑兄投毒真相败露面如死灰瘫倒在泥水之中，被赶到的忠诚家丁当场生擒反剪双臂。"
+    "晴朗的早晨，侍药医师帮着未亡人把土藏里的家谱搬出来晾晒。",
+    "未亡人翻到自己嫁进来那年的一页，上面写着自己的名字。",
+    "医师说老家主生前常说，娶了雪乃是九条家的福气。未亡人低头没有说话。"
    ],
    "duration_minutes": 35,
    "hook_ids": [
-    "h_shinsuke_blackened_needle_proclamation",
     "h_ryosuke_court_seal_notary_standoff",
     "h_takuya_heavy_axe_beam_strike"
    ],
@@ -1426,11 +1423,11 @@
    "location_ids": [
     "ancestral_vault_stone_storehouse"
    ],
-   "start_minute": 120,
+   "start_minute": 600,
    "tags": [
     "workplace_power"
    ],
-   "title": "土藏金库阶前揭露投毒铁证"
+   "title": "土藏前晒家谱"
   },
   {
    "beats": [
@@ -1456,9 +1453,9 @@
   },
   {
    "beats": [
-    "暴风雨骤停破晓红日初升，金光穿透数寄屋老宅飞檐洒满八十叠纯蔺草榻榻米佛堂。",
-    "九条雪乃当众解下发间白山茶花饰佩在身旁青年随侍胸前，牵起青年五指并肩踏上正殿中庭回廊。",
-    "全宅上下爆发出雷鸣般的庆贺欢呼，守灵夜惊天风暴在晨曦万丈与终生定情中盛大圆满定格。"
+    "雨后的清晨，阳光照在佛堂外的庭院里，白山茶开了一树。",
+    "九条雪乃折下一枝山茶，插在老家主的遗像前。",
+    "近侍在回廊下扫着落叶，雪乃站在近侍身边看了一会儿，说：这个家，以后要靠我们了。"
    ],
    "duration_minutes": 25,
    "hook_ids": [
@@ -1470,11 +1467,11 @@
    "location_ids": [
     "buddhist_shrine_wake_hall"
    ],
-   "start_minute": 185,
+   "start_minute": 390,
    "tags": [
     "intimate"
    ],
-   "title": "破晓庭院并肩执掌门楣誓约"
+   "title": "清晨的庭院"
   }
  ],
  "default_npc_gender_mix": {

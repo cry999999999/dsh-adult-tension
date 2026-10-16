@@ -1154,19 +1154,23 @@
   },
   {
    "beats": [
-    "老勋爵要塞长调配老弱妇孺入堡路线与干粮配给",
-    "游侠测读雪峰第二道冰川应力裂纹位移速度",
-    "副官清点急救草药油膏与备用羊毛毯储备"
+    "每月初一是要塞的集市日，炉火大堂里挤满了来换盐和铁器的山民。",
+    "老勋爵坐在长桌一头记账，女统领站在门边，替抱孩子的妇人挡开拥挤的人群。",
+    "傍晚人散了，游侠端来一杯热麦酒，说今天卖出了三张狼皮。"
    ],
    "duration_minutes": 35,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_cold_paladin_chubby_cheeks",
+    "hook_ranger_voice_through_blizzard",
+    "hook_squire_warm_cloak_shield"
+   ],
    "id": "act_refugee_wagon_convoy_intake",
    "location_ids": [
     "loc_fortress_hearth_hall"
    ],
-   "start_minute": 1050,
+   "start_minute": 600,
    "tags": [],
-   "title": "极寒雪崩预警下难民马车避难统筹入堡"
+   "title": "集市日的大堂"
   },
   {
    "beats": [

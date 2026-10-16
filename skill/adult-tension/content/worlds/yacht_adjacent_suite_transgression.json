@@ -1514,9 +1514,9 @@
   },
   {
    "beats": [
-    "管家举起万能金卡，安保队长适时制造短路，走廊灯光剧烈闪烁",
-    "队长以防漏电为由挡在门前与管家激烈交锋",
-    "长媳整好睡袍从容开门，端着空酒杯冷冷喝退管家"
+    "出海第一天的傍晚，长媳在顶层回廊里碰见管家，管家恭敬地问晚餐想吃什么。",
+    "长媳说随便，管家又问少爷今晚回不回主卧，长媳没有回答。",
+    "安保队长从走廊另一头走来，冲长媳点头致意，管家识趣地退下了。"
    ],
    "duration_minutes": 50,
    "hook_ids": [
@@ -1528,17 +1528,17 @@
    "location_ids": [
     "vip_carpeted_corridor"
    ],
-   "start_minute": 115,
+   "start_minute": 1080,
    "tags": [
     "workplace_power"
    ],
-   "title": "走廊门禁声东击西"
+   "title": "走廊里遇见管家"
   },
   {
    "beats": [
-    "巨浪掀翻防风玻璃，游艇极限侧倾，长媳滑向断裂的护栏",
-    "顾问飞扑扣住长媳的手腕，卡在门框里把人生生拉回怀中",
-    "海水浇透两人，真丝与白衬衫紧贴肌肤，劫后余生的热吻"
+    "风暴来临前的黄昏，海面平静得像一面镜子，长媳一个人站在共用阳台上。",
+    "隔壁的移门开了，顾问端着一杯咖啡走出来，看见长媳，愣了一下。",
+    "两人隔着阳台中间的花架站着，长媳先开口：好久不见。"
    ],
    "duration_minutes": 55,
    "hook_ids": [
@@ -1550,17 +1550,17 @@
    "location_ids": [
     "connecting_balcony"
    ],
-   "start_minute": 170,
+   "start_minute": 1110,
    "tags": [
     "workplace"
    ],
-   "title": "三十度侧倾舍命拉拽"
+   "title": "阳台上看海"
   },
   {
    "beats": [
-    "丈夫摇晃着拔出手枪冲上阳台，满嘴酒气逼问",
-    "顾问挡在长媳身前，把资金冻结公告与赌债账单砸在地上",
-    "少爷在帝国崩塌的事实前丢下枪，长媳退下弹夹宣布离婚"
+    "清晨，长媳在主卧里醒来，丈夫的那半边床是空的，被子还是叠好的。",
+    "长媳拉开窗帘，海上的太阳刚刚升起来。",
+    "女佣送来早餐，说少爷昨晚在牌室睡的，长媳点点头，什么也没说。"
    ],
    "duration_minutes": 50,
    "hook_ids": [
@@ -1572,33 +1572,32 @@
    "location_ids": [
     "daughter_in_law_boudoir"
    ],
-   "start_minute": 230,
+   "start_minute": 420,
    "tags": [
     "workplace"
    ],
-   "title": "丈夫持枪当面摊牌"
+   "title": "主卧里的早晨"
   },
   {
    "beats": [
-    "风暴平息晨曦初露，队长放下快艇，长媳换上风衣与顾问十指相扣登艇",
-    "全船广播响起做空通告，裴氏神话在晨光中灰飞烟灭",
-    "快艇劈开金色浪花驶向国际货轮，两人迎着海风相视而笑"
+    "风平浪静的早晨，长媳在共用阳台上吃早餐，海鸥绕着游艇飞。",
+    "顾问也出来吃早餐，两人隔着花架各坐一边，偶尔说一两句话。",
+    "长媳把一碟草莓推过花架：你小时候最爱吃这个。"
    ],
    "duration_minutes": 40,
    "hook_ids": [
     "hk_second_heiress_corridor_approach",
-    "hk_bodyguard_alert_approach",
-    "hk_heiress_balcony_observe"
+    "hk_bodyguard_alert_approach"
    ],
    "id": "act_yt_dawn_speedboat",
    "location_ids": [
     "connecting_balcony"
    ],
-   "start_minute": 285,
+   "start_minute": 480,
    "tags": [
     "workplace"
    ],
-   "title": "破晓快艇弹射脱险"
+   "title": "阳台上的早餐"
   }
  ],
  "default_npc_gender_mix": {

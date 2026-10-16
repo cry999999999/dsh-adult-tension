@@ -1327,15 +1327,18 @@
  "daily_activities": [
   {
    "beats": [
-    "万斤断龙石轰然坠落砸死退路，洛清璇以身抗雷佩剑含光崩裂三截，口喷精血跌坐石台。",
-    "煞毒狂暴倒灌气海，洛清璇反手以断刃横于守阁青年咽喉，逼其运转纯阳功法上前护道。",
-    "青年坦荡自若盘膝坐下伸出双手，二人在煞气翻滚中达成同生共死导气疗伤之约定。"
+    "每月初一，洛清璇都要下到锁妖塔第七重，巡视血池阵枢的封印。",
+    "守阁青年早已候在石台边，把这个月的阵纹记录双手奉上。",
+    "洛清璇翻看一遍，淡淡说了一句：守得不错。青年愣了很久才回过神来。"
    ],
    "duration_minutes": 25,
    "hook_ids": [
-    "h_luo_broken_blade_throat_whisper",
-    "h_gu_specter_blood_wave_shout",
-    "h_shen_needle_guard_shout"
+    "hd_cold_sword_fairy_luo_qingxuan",
+    "hd_righteous_herbalist_senior_sister_she",
+    "hd_array_tinkerer_disciple_chu",
+    "hd_corrupted_elder_specter_gu_yan",
+    "hd_traitor_inner_disciple_mo",
+    "hd_enforcement_hall_elder_ning"
    ],
    "id": "a_pagoda_gate_shut_sword_breaks_throat_p",
    "location_ids": [
@@ -1345,19 +1348,22 @@
    "tags": [
     "intimate"
    ],
-   "title": "断龙石坠本命剑折断刃抵喉威逼"
+   "title": "血池阵枢的例行巡视"
   },
   {
    "beats": [
-    "洛清璇素白剑袍撕裂微敞，与青年双掌相抵十指死死扣合，纯阳与玄阴两股浩荡真元疯狂交融。",
-    "经脉撕裂带来万蚁噬心剧痛，洛清璇身子战栗咬紧下唇发出隐忍喘息，额头抵上青年肩窝。",
-    "暴烈煞毒被纯阳真气如烈日熔雪般寸寸化解，二人神识在至阳至纯交融中产生前所未有之灵魂共振。"
+    "巡视完毕，洛清璇在石台边看青年练剑，看了三招就皱起眉。",
+    "洛清璇走过去，握住青年的手腕，把剑尖往下压了半寸：这样。",
+    "青年再练一遍，剑意果然顺了许多，洛清璇已经转身走向石龛。"
    ],
    "duration_minutes": 35,
    "hook_ids": [
-    "h_luo_interlocked_fingers_breath_whisper",
-    "h_gu_specter_blood_wave_shout",
-    "h_shen_needle_guard_shout"
+    "hd_cold_sword_fairy_luo_qingxuan",
+    "hd_righteous_herbalist_senior_sister_she",
+    "hd_array_tinkerer_disciple_chu",
+    "hd_corrupted_elder_specter_gu_yan",
+    "hd_traitor_inner_disciple_mo",
+    "hd_enforcement_hall_elder_ning"
    ],
    "id": "a_palms_interlock_guide_pure_yang_circul",
    "location_ids": [
@@ -1367,19 +1373,22 @@
    "tags": [
     "intimate"
    ],
-   "title": "双掌十指紧扣太极石台经脉周天共济"
+   "title": "石台边的指点"
   },
   {
    "beats": [
-    "沈师妹引导二人移步石龛净土，升起古松炭火驱散彻骨玄阴寒气，为洛清璇止血包扎。",
-    "青年取来温热布条细致擦拭女剑仙唇角血迹与纤细手掌创口，洛清璇美眸泛红耳根飞起红霞。",
-    "二人在温暖松香与跳跃炭火旁并肩端坐共参合璧心法，高冷剑仙初启心扉轻诉身世过往。"
+    "沈师妹从宗门带来新采的雪芽，在古松石龛里生起炭火煮茶。",
+    "洛清璇难得坐下来喝了一杯，听沈师妹讲山上的趣事。",
+    "青年在一旁添炭，沈师妹偷偷冲青年眨眼，被洛清璇看了个正着。"
    ],
    "duration_minutes": 35,
    "hook_ids": [
-    "h_luo_rib_wound_wipe_request",
-    "h_chu_compass_mechanism_shout",
-    "h_shen_needle_guard_shout"
+    "hd_cold_sword_fairy_luo_qingxuan",
+    "hd_righteous_herbalist_senior_sister_she",
+    "hd_array_tinkerer_disciple_chu",
+    "hd_corrupted_elder_specter_gu_yan",
+    "hd_traitor_inner_disciple_mo",
+    "hd_enforcement_hall_elder_ning"
    ],
    "id": "a_alcove_pine_root_dressing_wound_warmth",
    "location_ids": [
@@ -1389,19 +1398,22 @@
    "tags": [
     "workplace"
    ],
-   "title": "石龛残根松火烤衣包扎手掌剑伤"
+   "title": "石龛里煮茶"
   },
   {
    "beats": [
-    "魔阵长老掀起九幽滔天血浪扑向石龛，楚言澈以玄铁钎定住阵眼破开魔煞防御死角。",
-    "青年与洛清璇凌空飞渡十指紧扣引动阴阳太极剑罡，断剑迸发出千丈纯阳烈日神芒凌空腰斩阵魔。",
-    "魔念残躯在浩然烈阳真火中惨嚎化为灰烬，万丈血池煞浪被至阳剑意彻底平息化为清池。"
+    "铁链索道连着塔心和崖壁，青年每天都要沿着索道检查一遍锁链。",
+    "洛清璇站在索道尽头，看着脚下翻涌的云雾，说小时候最怕这条索道。",
+    "青年笑着说现在您是剑仙了，洛清璇瞥了一眼：剑仙也会怕。"
    ],
    "duration_minutes": 30,
    "hook_ids": [
-    "h_gu_specter_blood_wave_shout",
-    "h_luo_interlocked_fingers_breath_whisper",
-    "h_chu_compass_mechanism_shout"
+    "hd_cold_sword_fairy_luo_qingxuan",
+    "hd_righteous_herbalist_senior_sister_she",
+    "hd_array_tinkerer_disciple_chu",
+    "hd_corrupted_elder_specter_gu_yan",
+    "hd_traitor_inner_disciple_mo",
+    "hd_enforcement_hall_elder_ning"
    ],
    "id": "a_climax_battle_specter_annihilation",
    "location_ids": [
@@ -1411,7 +1423,7 @@
    "tags": [
     "workplace_power"
    ],
-   "title": "深渊锁链正邪终局合璧浩然斩魔"
+   "title": "索道上看云"
   },
   {
    "beats": [
@@ -1437,15 +1449,18 @@
   },
   {
    "beats": [
-    "重登昆仑绝顶万丈云海，晨曦霞光洒满素衣白裙，宗门万千同门与掌门真人齐聚恭迎英豪。",
-    "洛清璇在万众瞩目下解下本命剑柄素白流苏系于青年剑鞘，轻许此生同道相随永不分离。",
-    "煞毒拔尽、神识清明，洛清璇把剑穗系在青年剑鞘上，十指相扣，在山巅罡风里第一次主动吻了上去。"
+    "巡视结束，洛清璇要回昆仑绝顶了，青年送到血池石台边。",
+    "洛清璇看见青年剑鞘上的旧剑穗磨断了，皱眉说：堂堂守阁人，像什么样子。",
+    "下个月再来时，洛清璇随手丢给青年一条新剑穗，素白的流苏，和自己剑上的一样。"
    ],
    "duration_minutes": 25,
    "hook_ids": [
-    "h_luo_sword_tassel_vow_whisper",
-    "h_luo_broken_blade_throat_whisper",
-    "h_shen_needle_guard_shout"
+    "hd_cold_sword_fairy_luo_qingxuan",
+    "hd_righteous_herbalist_senior_sister_she",
+    "hd_array_tinkerer_disciple_chu",
+    "hd_corrupted_elder_specter_gu_yan",
+    "hd_traitor_inner_disciple_mo",
+    "hd_enforcement_hall_elder_ning"
    ],
    "id": "a_dawn_summit_sword_tassel_pledge_vow",
    "location_ids": [
@@ -1455,7 +1470,7 @@
    "tags": [
     "intimate"
    ],
-   "title": "破晓晨曦剑穗系鞘结为同道仙侣"
+   "title": "临别时的剑穗"
   }
  ],
  "default_npc_gender_mix": {
@@ -1615,6 +1630,48 @@
    ],
    "slot": "array_tinkerer_disciple_chu",
    "text": "{array_tinkerer_disciple_chu.name}单手按在轰鸣旋转的巨大机关青铜齿轮之上，道袍被火星烧出数个破洞，目光狂热紧盯罗盘指针跳动，周身星图光芒璀璨夺目，展现出算无遗策的天地神算气度。"
+  },
+  {
+   "id": "hd_cold_sword_fairy_luo_qingxuan",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "cold_sword_fairy_luo_qingxuan",
+   "text": "{cold_sword_fairy_luo_qingxuan.name}收剑立定，把一枚青果抛给你：“晨课结束。吃吧。”"
+  },
+  {
+   "id": "hd_righteous_herbalist_senior_sister_she",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "righteous_herbalist_senior_sister_shen",
+   "text": "{righteous_herbalist_senior_sister_shen.name}捧着一壶新煮的雪芽茶过来：“刚采的，尝尝。”"
+  },
+  {
+   "id": "hd_array_tinkerer_disciple_chu",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "array_tinkerer_disciple_chu",
+   "text": "{array_tinkerer_disciple_chu.name}捧着一块刻满纹路的玉简凑过来：“这个阵图，你帮我推一推。”"
+  },
+  {
+   "id": "hd_corrupted_elder_specter_gu_yan",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "corrupted_elder_specter_gu_yan",
+   "text": "{corrupted_elder_specter_gu_yan.name}倚在松下，冲你招手：“小友，陪老夫下一局棋。”"
+  },
+  {
+   "id": "hd_traitor_inner_disciple_mo",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "traitor_inner_disciple_mo",
+   "text": "{traitor_inner_disciple_mo.name}拎着一坛酒在你身边坐下：“今日休沐，喝两杯？”"
+  },
+  {
+   "id": "hd_enforcement_hall_elder_ning",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "enforcement_hall_elder_ning",
+   "text": "{enforcement_hall_elder_ning.name}把一卷门规递给你：“例行抄录，抄完交来便是。”"
   }
  ],
  "id": "sword_fairy_demon_pagoda_seal",

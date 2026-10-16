@@ -1326,25 +1326,28 @@
  "daily_activities": [
   {
    "beats": [
-    "超导磁体严重失超液氦泄漏，铅门自动落锁封闭，季微凉护目镜碎裂因室颤倒在控制台前。",
-    "工程师照医学物理师的口令从领口剪开阻燃服，按标准位置贴上陶瓷电极，充能两百焦耳放电。",
-    "心电波形重新跳回窦律，季微凉咬着嘴唇睁开眼，第一句话是问主线圈的温度，两人立下天亮前一起出去的约定。"
+    "雷暴季之前，季微凉在托卡马克主机舱里盯着一次例行降温，屏幕上的温度曲线一点点往下走。",
+    "低温工程师站在一旁报数，季微凉嫌报得慢，自己凑过去看。",
+    "降温完成，季微凉摘下护目镜，说今天的曲线是今年最漂亮的一条。"
    ],
    "duration_minutes": 40,
    "hook_ids": [
-    "h_weiliang_suit_tear_defibrillate_whispe",
-    "h_zhao_intercom_lockdown_shout",
-    "h_lin_defibrillator_charge_shout"
+    "hd_cold_physicist_ji_weiliang",
+    "hd_young_medical_physicist_companion_lin",
+    "hd_containment_facility_chief_director_z",
+    "hd_science_commission_liaison_qin",
+    "hd_reformed_cryogenic_cadet_helper_chen",
+    "hd_surface_rescue_captain_he"
    ],
    "id": "a_quench_lockdown_suit_tear_defibrillate",
    "location_ids": [
     "superconducting_tokamak_core_chamber"
    ],
-   "start_minute": 0,
+   "start_minute": 900,
    "tags": [
     "intimate"
    ],
-   "title": "事故闭锁撕衣除颤心跳对赌"
+   "title": "主机舱里的例行降温"
   },
   {
    "beats": [
@@ -1414,47 +1417,45 @@
   },
   {
    "beats": [
-    "内外人员通力协作，三台重型液压顶杆以千吨之力强行撑开厚重防爆铅门自锁机构。",
-    "新鲜空气灌入负七层驱散白雾冷霜，工程师横抱起虚弱之女学者稳步迈过高耸门槛。",
-    "全舱警报由红转绿，医疗队一拥而上为全员披上厚实保暖大衣送上温热生理盐水。"
+    "每天晚上八点，进出负七层的人都要在铅门前登记交接。",
+    "季微凉签完名，看见工程师的签名写歪了，随手在旁边画了一个问号。",
+    "工程师哭笑不得，季微凉已经头也不回地走进了通道。"
    ],
    "duration_minutes": 20,
    "hook_ids": [
     "h_weiliang_eyewear_gift_vow_whisper",
-    "h_zhao_intercom_lockdown_shout",
     "h_chen_frozen_valve_wrench_shout"
    ],
    "id": "a_hydraulic_jack_door_breach_escape",
    "location_ids": [
     "emergency_airlock_containment_corridor"
    ],
-   "start_minute": 140,
+   "start_minute": 1200,
    "tags": [
     "workplace_power"
    ],
-   "title": "液压重撑扩张铅门合力脱困破防"
+   "title": "铅门前的交接"
   },
   {
    "beats": [
-    "地表暴风雨彻底退散，金色晨曦透过实验中心巨大采光玻璃穹顶温热洒落。",
-    "季微凉当着数百名科研同袍之面，亲手将碎裂钛合金护目镜系在工程师手腕结成誓约。",
-    "回到地面晒着太阳，季微凉把碎护目镜系在工程师腕上，在所有人的口哨声里吻了上去，然后若无其事地说：实验记录我来写。"
+    "加了一整夜的班，季微凉和工程师走出铅门通道，天井里的晨光照下来。",
+    "季微凉眯着眼睛伸了个懒腰，说在地下待久了，都快忘了太阳长什么样。",
+    "工程师递过去一盒牛奶，季微凉接过去，难得说了声谢谢。"
    ],
    "duration_minutes": 20,
    "hook_ids": [
     "h_weiliang_eyewear_gift_vow_whisper",
-    "h_chen_frozen_valve_wrench_shout",
-    "h_weiliang_suit_tear_defibrillate_whispe"
+    "h_chen_frozen_valve_wrench_shout"
    ],
    "id": "a_surface_dawn_sunlight_tether_pledge",
    "location_ids": [
     "emergency_airlock_containment_corridor"
    ],
-   "start_minute": 160,
+   "start_minute": 390,
    "tags": [
     "workplace_power"
    ],
-   "title": "破晓天井晨光系碎护目镜定情盟誓"
+   "title": "通道尽头的天井"
   }
  ],
  "default_npc_gender_mix": {
@@ -1616,6 +1617,48 @@
    ],
    "slot": "reformed_cryogenic_cadet_helper_chen",
    "text": "{reformed_cryogenic_cadet_helper_chen.name}从高处梯架滑落而下，整张脸庞被冷气冻得铁青，但双手依然死死抱住卸下的结冰法兰盘，嘴角咧开露出一抹胜利的灿烂憨笑。"
+  },
+  {
+   "id": "hd_cold_physicist_ji_weiliang",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "cold_physicist_ji_weiliang",
+   "text": "{cold_physicist_ji_weiliang.name}把一叠数据推到你面前：“帮我核一下这组数，我眼睛花了。”"
+  },
+  {
+   "id": "hd_young_medical_physicist_companion_lin",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "young_medical_physicist_companion_lin",
+   "text": "{young_medical_physicist_companion_lin.name}端着两杯热牛奶走过来：“夜班长，喝点暖暖胃。”"
+  },
+  {
+   "id": "hd_containment_facility_chief_director_z",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "containment_facility_chief_director_zhao",
+   "text": "{containment_facility_chief_director_zhao.name}把一份值班表递给你：“下周的班，你看看有没有冲突。”"
+  },
+  {
+   "id": "hd_science_commission_liaison_qin",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "science_commission_liaison_qin",
+   "text": "{science_commission_liaison_qin.name}冲你点头：“例行走访，随便聊聊课题进展。”"
+  },
+  {
+   "id": "hd_reformed_cryogenic_cadet_helper_chen",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "reformed_cryogenic_cadet_helper_chen",
+   "text": "{reformed_cryogenic_cadet_helper_chen.name}抱着一盒零食凑过来：“食堂关门了，分你一点。”"
+  },
+  {
+   "id": "hd_surface_rescue_captain_he",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "surface_rescue_captain_he",
+   "text": "{surface_rescue_captain_he.name}在你身边坐下：“例行演练结束，一起去吃碗面？”"
   }
  ],
  "id": "physics_professor_magnetic_containment",

@@ -1556,69 +1556,78 @@
   },
   {
    "beats": [
-    "钢门被破魔钻凿穿，机枪与重弩齐射，卫队长挥剑格挡跳弹",
-    "学者顺着豁口掷出三瓶水银炸弹，白炽烈焰吞没先锋宪兵",
-    "两人拉下转盘把毒气反吹向敌阵，封死外廊"
+    "每天傍晚，卫队长都要在过渡舱里和白班的卫兵交接，核对进出工房的名册。",
+    "首席从工房里探出头，问今天有没有新到的药材。",
+    "卫队长把一只小木箱递过去，首席打开看了一眼，难得笑了。"
    ],
    "duration_minutes": 50,
    "hook_ids": [
-    "hk_governor_gas_approach",
-    "hk_overseer_drill_approach",
-    "hk_governor_pistol_observe"
+    "hd_grand_alchemist_scholar",
+    "hd_paranoid_fortress_governor",
+    "hd_chief_engine_engineer",
+    "hd_holy_blood_royal_captain",
+    "hd_fanatical_heresy_overseer",
+    "hd_airship_smuggler_helmsman"
    ],
    "id": "act_fl_mercury_firewall",
    "location_ids": [
     "decompression_airlock"
    ],
-   "start_minute": 65,
+   "start_minute": 1080,
    "tags": [
     "workplace"
    ],
-   "title": "过渡舱水银火墙反击"
+   "title": "过渡舱的交接"
   },
   {
    "beats": [
-    "三十米风速下步道剧烈倾斜，卫队长用皮带把虚弱的学者绑在背上",
-    "单手扣着结冰的索道在电弧中攀爬，子弹擦着钢梁迸火",
-    "断索一刻，飞艇贴着步道冲来，两人荡进机房通风口"
+    "雷暴季还没到，云海平静得像一片白色的湖。",
+    "首席难得走出工房，靠在高空回廊的栏杆上透气，卫队长站在一步之外。",
+    "首席指着远处一座浮岛，说小时候以为那里住着神仙。"
    ],
    "duration_minutes": 55,
    "hook_ids": [
-    "hk_helmsman_anchor_approach",
-    "hk_engineer_boiler_request",
-    "hk_engineer_tools_observe"
+    "hd_grand_alchemist_scholar",
+    "hd_paranoid_fortress_governor",
+    "hd_chief_engine_engineer",
+    "hd_holy_blood_royal_captain",
+    "hd_fanatical_heresy_overseer",
+    "hd_airship_smuggler_helmsman"
    ],
    "id": "act_fl_catwalk_crossing",
    "location_ids": [
     "parapet_catwalk"
    ],
-   "start_minute": 120,
+   "start_minute": 1050,
    "tags": [
     "workplace_power"
    ],
-   "title": "高空回廊钢缆横渡"
+   "title": "高空回廊上看云海"
   },
   {
    "beats": [
-    "蒸汽弥漫，仪表全线爆表，动力长抡扳手与宪兵殊死搏斗",
-    "卫队长从天而降斩断枪管，学者扑向主控台用带血的手重组接线",
-    "三人扳下重锤排气阀，金色蒸汽冲天而起，要塞重新稳稳悬浮"
+    "塔底炉心车间每月一次例行检修，动力长带着值班技师挨个检查仪表。",
+    "首席下来送一张新的符文图纸，动力长接过去，说这回的线路画得漂亮。",
+    "检修完毕，炉心的嗡鸣声平稳得像在打鼾。"
    ],
    "duration_minutes": 50,
    "hook_ids": [
-    "hk_engineer_wrench_approach",
-    "hk_overseer_drill_approach",
-    "hk_overseer_robe_observe"
+    "hd_grand_alchemist_scholar",
+    "hd_paranoid_fortress_governor",
+    "hd_chief_engine_engineer",
+    "hd_holy_blood_royal_captain",
+    "hd_fanatical_heresy_overseer",
+    "hd_airship_smuggler_helmsman"
    ],
    "id": "act_fl_boiler_stabilization",
    "location_ids": [
     "boiler_core_hall"
    ],
-   "start_minute": 180,
+   "start_minute": 900,
    "tags": [
     "workplace"
    ],
-   "title": "机房重锤泄压肉搏"
+   "title": "炉心车间的月检"
   },
   {
    "beats": [
@@ -1837,6 +1846,48 @@
    ],
    "slot": "chief_engine_engineer",
    "text": "{chief_engine_engineer.name}盯着在猩红区狂颤的表针，回头冲你吼：“压力还能撑六分钟！你们要往上走就现在，我替你们把蒸汽压住！”"
+  },
+  {
+   "id": "hd_grand_alchemist_scholar",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "grand_alchemist_scholar",
+   "text": "{grand_alchemist_scholar.name}把一本实验笔记推到你面前：“今天的数据，你帮我誊一份。”"
+  },
+  {
+   "id": "hd_paranoid_fortress_governor",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "paranoid_fortress_governor",
+   "text": "{paranoid_fortress_governor.name}把一份巡视报告递给你：“例行签阅，看完放回我桌上。”"
+  },
+  {
+   "id": "hd_chief_engine_engineer",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "chief_engine_engineer",
+   "text": "{chief_engine_engineer.name}擦着扳手冲你点头：“检修完了，一切正常，来喝杯茶？”"
+  },
+  {
+   "id": "hd_holy_blood_royal_captain",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "holy_blood_royal_captain",
+   "text": "{holy_blood_royal_captain.name}在你身边停下，望向窗外的云海：“今天的云真好看。”"
+  },
+  {
+   "id": "hd_fanatical_heresy_overseer",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "fanatical_heresy_overseer",
+   "text": "{fanatical_heresy_overseer.name}把一份例行登记表放在你面前：“签个名，例行公事。”"
+  },
+  {
+   "id": "hd_airship_smuggler_helmsman",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "airship_smuggler_helmsman",
+   "text": "{airship_smuggler_helmsman.name}抛给你一个油纸包：“下城捎来的点心，尝尝。”"
   }
  ],
  "id": "floating_city_alchemist_isolation",

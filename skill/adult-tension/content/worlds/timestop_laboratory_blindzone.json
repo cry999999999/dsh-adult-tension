@@ -1457,57 +1457,57 @@
   },
   {
    "beats": [
-    "两人并肩穿行于静止在半空的子弹火舌与队员雕塑之间，每一次擦身都能感到高温等离子的炙烤",
-    "一号防爆门断电锁死，特战队长启动外骨骼破障刀迸出刺耳火花，强行割开半米宽的缝隙",
-    "工程师护着女主管侧身挤过门缝，衬衫被挂破一角，手环把彼此急促的心跳原样传了过去"
+    "地下八十米没有日出，女主管习惯每天早上在超导环廊里跑两圈。",
+    "工程主管刚好下夜班，在环廊转角碰见，被女主管拉着一起跑了一圈。",
+    "跑完两人靠着墙喘气，女主管说：你的体能，该练练了。"
    ],
    "duration_minutes": 65,
    "hook_ids": [
-    "hk_commander_exoskeleton_approach",
-    "hk_director_glasses_approach",
-    "hk_frozen_bullets_observe"
+    "hk_commander_exoskeleton_approach"
    ],
    "id": "act_corridor_frozen_gunfire",
    "location_ids": [
     "superconducting_magnet_service_corridor"
    ],
-   "start_minute": 1,
+   "start_minute": 360,
    "tags": [
     "workplace_power"
    ],
-   "title": "回廊穿越定格枪火"
+   "title": "环廊里的晨跑"
   },
   {
    "beats": [
-    "两人顺着垂直爬梯下潜到零下三十五度的冰雾深处，老物理学家用铜冲子敲出冰堵核心",
-    "女主管湿透的衣衫在极寒中迅速硬化浑身剧颤，工程师从身后把其整个裹进工装大氅里急救取暖",
-    "两人双手同时按上转轮冰壳，在倒计时读秒中齐声暴喝以全身重量扳动转轮，液氮回路轰鸣重启"
+    "老物理学家带着工程主管下到液氮竖井，检查冷却回路的转轮。",
+    "老人一边敲着管道一边讲这套系统是三十年前自己亲手设计的。",
+    "检查完毕，老人从口袋里摸出两颗糖，递给工程主管一颗。"
    ],
    "duration_minutes": 55,
    "hook_ids": [
-    "hk_physicist_tongs_approach",
-    "hk_engineer_embrace_protect_approach",
-    "hk_frozen_nitrogen_cloud_observe"
+    "hd_renegade_chief_executive_scientist",
+    "hd_renegade_board_inspection_specialist",
+    "hd_lead_quantum_hardware_engineer",
+    "hd_cynical_chief_cryogenic_physicist",
+    "hd_elite_security_tactical_commander",
+    "hd_subordinate_data_analyst_apprentice"
    ],
    "id": "act_cryogenic_well_deicing",
    "location_ids": [
     "cryogenic_liquid_nitrogen_service_well"
    ],
-   "start_minute": 3,
+   "start_minute": 900,
    "tags": [
     "intimate"
    ],
-   "title": "极寒竖井破冰加压"
+   "title": "液氮竖井的月检"
   },
   {
    "beats": [
-    "监察官顶着四溅的电火花拔出特制线缆，强行镜像封存董事会篡改参数的原始黑匣子",
-    "女主管赶来出示首席私钥解除底层加密，宣布愿在战后作为主证人出庭指控财阀",
-    "监察官收起公文包向女主管郑重致意，两代知识分子在废墟中达成守护真理的同盟"
+    "周一上午，主控观测大厅里开周会，女主管站在大屏前讲本周的实验计划。",
+    "监察官坐在后排记笔记，偶尔抬头问一个尖锐的问题。",
+    "女主管一一答完，散会时监察官走过来说：你的数据很干净。"
    ],
    "duration_minutes": 50,
    "hook_ids": [
-    "hk_inspector_briefcase_approach",
     "hk_analyst_laptop_approach",
     "hk_blackbox_sparking_observe"
    ],
@@ -1515,33 +1515,32 @@
    "location_ids": [
     "quantum_core_control_deck"
    ],
-   "start_minute": 5,
+   "start_minute": 540,
    "tags": [
     "intimate"
    ],
-   "title": "黑匣子数据抢拔对峙"
+   "title": "主控大厅的周会"
   },
   {
    "beats": [
-    "穿梭机在月台抱死，算法研究员抱着滚烫的笔记本飞速敲代码解锁电磁防爆程序",
-    "工程师冒着高压电弧把手环共振回路强行桥接进穿梭机应急启动手柄，打通最后的动力",
-    "双联电机发出低沉的蜂鸣，舱门自动滑开，绿色就绪指示灯刺破深邃黑暗"
+    "下班时间，女主管和工程主管在逃生单轨站台上等穿梭机回地面。",
+    "算法研究员抱着笔记本跑过来，追着女主管问一个参数。",
+    "穿梭机到站，女主管一边上车一边回答，工程主管替两人按住了车门。"
    ],
    "duration_minutes": 45,
    "hook_ids": [
     "hk_analyst_laptop_approach",
-    "hk_engineer_calibrator_approach",
     "hk_shuttle_green_light_observe"
    ],
    "id": "act_shuttle_power_bridge",
    "location_ids": [
     "subterranean_magnetic_monorail_slipway"
    ],
-   "start_minute": 7,
+   "start_minute": 1140,
    "tags": [
     "workplace"
    ],
-   "title": "穿梭机应急电源飞线"
+   "title": "单轨站台等车"
   },
   {
    "beats": [
@@ -1749,6 +1748,48 @@
    ],
    "slot": "lead_quantum_hardware_engineer",
    "text": "隧道出口外，东京湾破晓的第一缕金色朝阳穿透海雾，咸湿海风涌进舱内，把身后无声湮灭的蓝白尘埃吹散在晨光里。"
+  },
+  {
+   "id": "hd_renegade_chief_executive_scientist",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "renegade_chief_executive_scientist",
+   "text": "{renegade_chief_executive_scientist.name}把一杯咖啡放在你桌上，语气平淡：“顺手冲的。这份数据你帮我核一下。”"
+  },
+  {
+   "id": "hd_renegade_board_inspection_specialist",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "renegade_board_inspection_specialist",
+   "text": "{renegade_board_inspection_specialist.name}把一份例行审计表递给你：“签个字，今天就到这儿。”"
+  },
+  {
+   "id": "hd_lead_quantum_hardware_engineer",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "lead_quantum_hardware_engineer",
+   "text": "{lead_quantum_hardware_engineer.name}捧着一块电路板凑过来：“新焊的，你看看走线。”"
+  },
+  {
+   "id": "hd_cynical_chief_cryogenic_physicist",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "cynical_chief_cryogenic_physicist",
+   "text": "{cynical_chief_cryogenic_physicist.name}在你旁边坐下，叹了口气：“又是加班的一天，聊会儿？”"
+  },
+  {
+   "id": "hd_elite_security_tactical_commander",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "elite_security_tactical_commander",
+   "text": "{elite_security_tactical_commander.name}巡完一圈，冲你点头：“今晚太平，早点下班。”"
+  },
+  {
+   "id": "hd_subordinate_data_analyst_apprentice",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "subordinate_data_analyst_apprentice",
+   "text": "{subordinate_data_analyst_apprentice.name}抱着笔记本跑过来：“这张图表，你帮我看看配色。”"
   }
  ],
  "id": "timestop_laboratory_blindzone",

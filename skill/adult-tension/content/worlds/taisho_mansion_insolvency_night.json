@@ -1154,19 +1154,22 @@
   },
   {
    "beats": [
-    "藤原管家率仆从检查回廊挑空彩色窗户加固木条",
-    "巡官巡查员测读洋馆木石交接处受台风风压震颤参数",
-    "女仆准备急救蜡烛与防风汽灯储备"
+    "梅雨间隙的晴天，藤原管家带着仆从把回廊书阁里的旧书搬出来晒。",
+    "千金也来帮忙，翻到一本祖父的手札，坐在地上看得入了神。",
+    "管家没有催，只在千金身边放了一杯红茶。"
    ],
    "duration_minutes": 30,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_inspector_voice_through_storm",
+    "hook_glorious_roll_escape_nobility"
+   ],
    "id": "act_typhoon_window_shutter_drill",
    "location_ids": [
     "loc_atrium_library_gallery"
    ],
-   "start_minute": 1280,
+   "start_minute": 600,
    "tags": [],
-   "title": "暴风雨夜洋馆回廊百叶铁窗联动闭锁演练"
+   "title": "回廊书阁里晒书"
   },
   {
    "beats": [

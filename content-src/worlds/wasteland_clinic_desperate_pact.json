@@ -1849,22 +1849,22 @@
     },
     {
       "id": "act_iron_bed_triage_resuscitation_parley",
-      "title": "单人除污生铁抢救床前极限清创与尊严博弈",
+      "title": "铁床边的复诊",
       "location_ids": [
         "clinic_operating_ward_iron_bed"
       ],
       "duration_minutes": 75,
       "beats": [
-        "墨绿帆布围帘紧闭无影灯昏黄，医官长冷面用手术剪粗暴剪开队长紧身服露胸清创",
-        "队长剧痛呛血反手攥住医官长白大褂衣领将其拉近，两人在铁床头气息交织目光如火",
-        "心电监护仪报警声中，队长展示手提箱内幽蓝氚核电池，医官长眼神剧烈震颤"
+        "酸雨季之前，拾荒队长来诊疗所复诊，坐在铁床边让医官长检查肺部。",
+        "医官长听完冷冷地说：再去地表吸一个月酸尘，下次就不用来了。",
+        "队长笑着从背包里掏出一罐真正的咖啡豆，放在医官长的桌上。"
       ],
       "hook_ids": [
         "hk_doctor_scalpel_approach",
         "hk_scavenger_lead_box_request",
         "hk_doctor_ward_observe"
       ],
-      "start_minute": 1425,
+      "start_minute": 900,
       "tags": [
         "workplace"
       ]
@@ -1915,44 +1915,50 @@
     },
     {
       "id": "act_operating_ward_junta_counterstrike",
-      "title": "战地抢救室正面阻击保卫部武装破门叛乱",
+      "title": "抢救室的整理日",
       "location_ids": [
         "clinic_operating_ward_iron_bed"
       ],
       "duration_minutes": 60,
       "beats": [
-        "保卫长率防暴士兵轰塌铅皮外门，霰弹枪喷射火舌击碎点滴架与天花板防爆灯",
-        "老机师启动重型动力装甲自机房轰然杀出，液压铁拳一记横扫将带头士兵砸飞贴墙",
-        "队长持高压电弧短刀飞身暴起，一刀斩断保卫长防暴枪管将其制伏于生铁床前"
+        "每周三是抢救室的整理日，医官长带着护工清点器械，把消过毒的剪刀一把把挂好。",
+        "老机师来修天花板上的灯，一边拧螺丝一边讲上层又涨了氧气价。",
+        "灯修好了，医官长破例分给老机师一小杯纯净水。"
       ],
       "hook_ids": [
-        "hk_commander_shotgun_approach",
-        "hk_scavenger_geiger_approach",
-        "hk_doctor_scalpel_approach"
+        "hd_austere_chief_medical_officer",
+        "hd_tyrannical_security_chief_commander",
+        "hd_dying_scavenger_raider_leader",
+        "hd_grizzled_ex_power_armor_engineer",
+        "hd_security_vanguard_defector_sergeant",
+        "hd_cunning_black_market_scrip_boss"
       ],
-      "start_minute": 225,
+      "start_minute": 840,
       "tags": [
         "workplace"
       ]
     },
     {
       "id": "act_dawn_airlock_shelter_rebirth",
-      "title": "酸雨初歇气闸门前宣布第七避难所新生",
+      "title": "气闸舱的早班",
       "location_ids": [
         "clinic_triage_decontamination_airlock"
       ],
       "duration_minutes": 50,
       "beats": [
-        "重力铅门液压机重新注入高压蒸汽发出厚重轰鸣，酸雨减弱晨曦隐现于防爆观察窗",
-        "残暴保卫长被缴械戴上手铐关入隔离舱，黑市私藏纯水被全数分发给下层劳工",
-        "队长与医官长并肩立于除污气闸平台之上，在全避难所军民欢呼声中开启新秩序之门"
+        "清晨，除污气闸舱开放的时间到了，拾荒者们排着队等着出去。",
+        "医官长站在气闸边给每个人发一片防辐射药，挨个叮嘱早点回来。",
+        "队长走到最后，接过药片，问医官长想要地表带回点什么。"
       ],
       "hook_ids": [
-        "hk_doctor_scalpel_approach",
-        "hk_scavenger_geiger_approach",
-        "hk_engineer_wrench_approach"
+        "hd_austere_chief_medical_officer",
+        "hd_tyrannical_security_chief_commander",
+        "hd_dying_scavenger_raider_leader",
+        "hd_grizzled_ex_power_armor_engineer",
+        "hd_security_vanguard_defector_sergeant",
+        "hd_cunning_black_market_scrip_boss"
       ],
-      "start_minute": 300,
+      "start_minute": 360,
       "tags": [
         "workplace_power"
       ]
@@ -2416,6 +2422,42 @@
         "clinic_triage_decontamination_airlock"
       ],
       "text": "{security_vanguard_defector_sergeant.name}从竖井阴影里闪出，摘下头盔露出满是酸疤的脸，把一把阀门钥匙塞给你：“保卫长扣着我的家人，我没法明着帮你们。这把钥匙能让外头的喷枪全部熄火。”"
+    },
+    {
+      "id": "hd_austere_chief_medical_officer",
+      "kind": "approach",
+      "slot": "austere_chief_medical_officer",
+      "text": "{austere_chief_medical_officer.name}把一杯热水放在你手边：“今天病人少。坐下，歇一会儿。”"
+    },
+    {
+      "id": "hd_tyrannical_security_chief_commander",
+      "kind": "approach",
+      "slot": "tyrannical_security_chief_commander",
+      "text": "{tyrannical_security_chief_commander.name}把一份配给表递给你：“例行核对，看完签字。”"
+    },
+    {
+      "id": "hd_dying_scavenger_raider_leader",
+      "kind": "approach",
+      "slot": "dying_scavenger_raider_leader",
+      "text": "{dying_scavenger_raider_leader.name}抛给你一个罐头：“地面上捡的，桃子味，尝尝。”"
+    },
+    {
+      "id": "hd_grizzled_ex_power_armor_engineer",
+      "kind": "approach",
+      "slot": "grizzled_ex_power_armor_engineer",
+      "text": "{grizzled_ex_power_armor_engineer.name}擦着扳手冲你点头：“检修做完了，喝杯茶？”"
+    },
+    {
+      "id": "hd_security_vanguard_defector_sergeant",
+      "kind": "approach",
+      "slot": "security_vanguard_defector_sergeant",
+      "text": "{security_vanguard_defector_sergeant.name}在你身边坐下：“轮休，聊会儿天。”"
+    },
+    {
+      "id": "hd_cunning_black_market_scrip_boss",
+      "kind": "approach",
+      "slot": "cunning_black_market_scrip_boss",
+      "text": "{cunning_black_market_scrip_boss.name}把一小包茶叶推给你：“新到的货，送你尝尝。”"
     }
   ],
   "twists": [

@@ -1714,40 +1714,46 @@
   "daily_activities": [
     {
       "id": "act_qinhuai_painted_boat_deck_tilt_audit",
-      "title": "画舫二层开敞主厅倾斜角度与受损屏风排查",
+      "title": "顶楼主厅调弦",
       "location_ids": [
         "loc_painted_boat_top_balcony_main_hall"
       ],
       "duration_minutes": 15,
       "beats": [
-        "使用鲁班水准墨斗测量二层雕花地板失衡倾角",
-        "细致检查倒伏沉香木屏风铜绞链转轴卡死形变深度",
-        "在倾斜主厅立柱系上醒目救生粗麻绳指明避险通道"
+        "傍晚开席前，行首在画舫顶楼主厅里调琵琶的弦，河上的风吹着纱帘。",
+        "几个名士早早上了船，坐在屏风前品茶，等着今夜的第一曲。",
+        "弦调好了，行首轻轻拨了一声，满座都安静下来。"
       ],
-      "hook_ids": [],
-      "start_minute": 1230,
+      "hook_ids": [
+        "hook_gu_calculates_lever_fulcrum",
+        "hook_guard_bow_deck",
+        "hook_jin_orders_cabin_evacuation"
+      ],
+      "start_minute": 1080,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {
       "id": "act_bilge_water_leakage_drain_patrol",
-      "title": "画舫一层客舱破损裂缝堵漏与积水淘排",
+      "title": "宴饮舱里备席",
       "location_ids": [
         "loc_painted_boat_first_floor_cabin"
       ],
       "duration_minutes": 20,
       "beats": [
-        "组织随船工匠使用加捻麻丝与生桐油加急填塞外舷裂缝",
-        "指挥底舱水手以双重大水瓢协同将漫膝倒灌江水快速排出",
-        "固定客舱内漂浮滚动的重型花梨木条案防止二次撞击"
+        "一层宴饮舱里，厨娘们在花梨木条案上摆好今夜的菜：盐水鸭、鸡汤干丝、桂花糖藕。",
+        "船家在舱口张罗着点灯，一盏盏纱灯挂起来，映得满舱暖黄。",
+        "行首下楼来看了一眼，嘱咐把那道糖藕放在盐商老爷手边。"
       ],
-      "hook_ids": [],
-      "start_minute": 1235,
+      "hook_ids": [
+        "hook_bilge_water_rises_past_ankles",
+        "hook_guard_bow_deck",
+        "hook_xianxian_lantern_river"
+      ],
+      "start_minute": 1050,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {
@@ -1789,37 +1795,44 @@
     },
     {
       "id": "act_qinhuai_lantern_night_crowd_alert",
-      "title": "两岸观潮士庶秩序整肃与救生小舟引导",
+      "title": "顶楼看两岸灯火",
       "location_ids": [
         "loc_painted_boat_top_balcony_main_hall"
       ],
       "duration_minutes": 15,
       "beats": [
-        "高擎巡江司防汛明角风灯向两岸高声呼喝肃清河道",
-        "引导对岸巡防营轻巧救生快艇靠近画舫外侧下风处",
-        "高敲紫铜战锣三声警告临近花舫切勿盲目贴舷靠拢"
+        "曲子唱完一轮，行首倚在顶楼栏杆边歇气，两岸的灯火倒映在河里。",
+        "对岸有人放河灯，一盏盏顺着水漂过来，行首看得出神。",
+        "一个名士走过来递上一杯酒，行首接过，却没有喝。"
       ],
-      "hook_ids": [],
-      "start_minute": 1250,
+      "hook_ids": [
+        "hook_gu_calculates_lever_fulcrum",
+        "hook_guard_bow_deck",
+        "hook_jin_orders_cabin_evacuation"
+      ],
+      "start_minute": 1260,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {
       "id": "act_tea_service_first_aid_preparation",
-      "title": "主厅散落碎瓷清理与温茶金创药剂分发",
+      "title": "散席后的主厅",
       "location_ids": [
         "loc_painted_boat_top_balcony_main_hall"
       ],
       "duration_minutes": 15,
       "beats": [
-        "迅速用竹扫帚扫清红地毯上散落的尖锐琉璃茶盏碎片",
-        "为擦伤手掌的乐工与水手敷上随身常备的秘制金创散",
-        "温热一大壶浓郁姜汤供涉水抢险众人驱逐江水寒气"
+        "宾客散尽，丫鬟们在顶楼主厅里收拾茶盏，扫去一地瓜子壳。",
+        "行首坐在屏风后卸下钗环，揉着弹了一夜琵琶的手指。",
+        "船家端来一碗热姜汤，说今夜河上风凉，喝了好睡。"
       ],
-      "hook_ids": [],
-      "start_minute": 1255,
+      "hook_ids": [
+        "hook_gu_calculates_lever_fulcrum",
+        "hook_guard_bow_deck",
+        "hook_jin_orders_cabin_evacuation"
+      ],
+      "start_minute": 1410,
       "tags": [
         "workplace"
       ]

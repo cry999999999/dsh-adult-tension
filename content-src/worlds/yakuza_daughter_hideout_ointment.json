@@ -1811,44 +1811,50 @@
   "daily_activities": [
     {
       "id": "a_entry_hearth_cloth_stripping",
-      "title": "木屋验伤取弹",
+      "title": "木屋里烧水",
       "location_ids": [
         "hunter_cabin_hearth_room"
       ],
       "duration_minutes": 45,
       "beats": [
-        "近卫护送失血虚脱的大小姐撞开木屋原木大门反手闩上重铁门栓。",
-        "大小姐咬牙忍痛褪下被鲜血完全浸透的黑风衣，露出雪背上翻卷狰狞的鬼百合刺青与焦黑弹孔。",
-        "近卫倒出半碗伏特加递到大小姐唇边一饮而尽，在暗红火光前完成性命相托誓约。"
+        "躲进木屋的第三天，大小姐背上的伤开始结痂，坐在地炉边看近卫烧水。",
+        "近卫往水里扔了几片姜，大小姐嫌弃地皱眉：你当这是煮汤？",
+        "水开了，近卫盛了一碗递过去，大小姐嘴上抱怨，还是捧着喝完了。"
       ],
       "hook_ids": [
-        "h_akane_strip_bloody_coat_tremble",
-        "h_goro_hearth_charcoal_pour",
-        "h_tetsuo_hound_scratch_door_growl"
+        "hd_tsundere_yakuza_princess_akane",
+        "hd_mountain_hermit_hunter_goro",
+        "hd_rebel_traitor_lieutenant_ryuji",
+        "hd_traitor_bloodhound_tracker_tetsuo",
+        "hd_undercover_special_investigator_kurok",
+        "hd_loyal_apprentice_geisha_informant_chi"
       ],
-      "start_minute": 1335,
+      "start_minute": 600,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "a_hearth_blade_bullet_extraction",
-      "title": "地炉烧刃剔骨取弹",
+      "title": "地炉边换药",
       "location_ids": [
         "hunter_cabin_hearth_room"
       ],
       "duration_minutes": 50,
       "beats": [
-        "近卫在地炉烈火中将胁差短刃烧至通红，用烈酒浇淋刀刃与自己的双手完成野战消毒。",
-        "大小姐俯卧在熊皮毯上死死咬住近卫肩膀衣料，短刃切开皮肉刮除嵌在肩胛骨深处的铅弹弹片。",
-        "清脆弹片当啷落入生铁瓷盘，大小姐浑身湿透力竭虚脱，伏在兽皮毯上大口喘息。"
+        "近卫替大小姐换药，把旧纱布一层层揭下来，动作很轻。",
+        "大小姐趴在熊皮毯上，问近卫跟着父亲几年了。",
+        "近卫说十年，大小姐沉默了一会儿：那你比我还了解父亲。"
       ],
       "hook_ids": [
-        "h_akane_bite_shoulder_silent_cry",
-        "h_goro_hunter_gun_cock_whisper",
-        "h_ryuji_shotgun_rack_porch_shout"
+        "hd_tsundere_yakuza_princess_akane",
+        "hd_mountain_hermit_hunter_goro",
+        "hd_rebel_traitor_lieutenant_ryuji",
+        "hd_traitor_bloodhound_tracker_tetsuo",
+        "hd_undercover_special_investigator_kurok",
+        "hd_loyal_apprentice_geisha_informant_chi"
       ],
-      "start_minute": 1380,
+      "start_minute": 900,
       "tags": [
         "intimate"
       ]
@@ -1877,66 +1883,75 @@
     },
     {
       "id": "a_porch_rigged_trap_defense",
-      "title": "外廊机关浴血阻犬",
+      "title": "外廊劈柴",
       "location_ids": [
         "narrow_snowy_porch_entry"
       ],
       "duration_minutes": 35,
       "beats": [
-        "追兵恶犬循着血味扑向外廊木柴堆，近卫手持烧红木桩与短刃破门而出迎头痛击。",
-        "猎户在阁楼射击孔果断开火轰碎领头恶犬，近卫借势将烈酒与火油泼向雪地筑起烈焰火墙阻断追兵。",
-        "追兵突击队长在风雪中暴跳如雷，挥舞霰弹枪连连扫射木廊压制防线。"
+        "雪停的午后，近卫在外廊下劈柴，猎户在一旁帮着码柴堆。",
+        "大小姐裹着毯子坐在门槛上看，说想试试劈一根。",
+        "近卫把斧子递过去，大小姐劈了三下才劈开，得意地扬起下巴。"
       ],
       "hook_ids": [
-        "h_tetsuo_hound_scratch_door_growl",
-        "h_ryuji_shotgun_rack_porch_shout",
-        "h_goro_hunter_gun_cock_whisper"
+        "hd_tsundere_yakuza_princess_akane",
+        "hd_mountain_hermit_hunter_goro",
+        "hd_rebel_traitor_lieutenant_ryuji",
+        "hd_traitor_bloodhound_tracker_tetsuo",
+        "hd_undercover_special_investigator_kurok",
+        "hd_loyal_apprentice_geisha_informant_chi"
       ],
-      "start_minute": 30,
+      "start_minute": 840,
       "tags": [
         "workplace"
       ]
     },
     {
       "id": "a_attic_window_undercover_parley",
-      "title": "阁楼暗窗警匪结盟",
+      "title": "阁楼上看雪",
       "location_ids": [
         "attic_drying_loft_hideaway"
       ],
       "duration_minutes": 30,
       "beats": [
-        "潜伏刑警趁乱摸至阁楼暗窗外侧，用手电筒闪烁三下敲击暗号确认彼此身份。",
-        "大小姐在近卫搀扶下登上阁楼，亲手将藏在和服内衬的机密底片账册递出窗外交付警方。",
-        "刑警出示空中直升机搜救坐标频率，约定破晓吊桥对面平地引导迫降接应。"
+        "大小姐爬上二层阁楼，从小窗往外看，满山都是白的。",
+        "近卫跟上来，说外面冷，大小姐说在东京从没见过这么多雪。",
+        "两人挤在小窗前看了很久，谁也没有提下山的事。"
       ],
       "hook_ids": [
-        "h_kuroki_window_tap_code",
-        "h_akane_ledger_film_deliver",
-        "h_ryuji_door_kick_timber_crack"
+        "hd_tsundere_yakuza_princess_akane",
+        "hd_mountain_hermit_hunter_goro",
+        "hd_rebel_traitor_lieutenant_ryuji",
+        "hd_traitor_bloodhound_tracker_tetsuo",
+        "hd_undercover_special_investigator_kurok",
+        "hd_loyal_apprentice_geisha_informant_chi"
       ],
-      "start_minute": 65,
+      "start_minute": 960,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "a_dawn_rope_bridge_sever_escape",
-      "title": "拂晓断桥绝壁突围",
+      "title": "断崖边的日出",
       "location_ids": [
         "cliffside_abandoned_rope_bridge"
       ],
       "duration_minutes": 40,
       "beats": [
-        "全员护卫大小姐冲出木屋踏上剧烈晃荡的绝壁铁索吊桥，顶着深渊狂风冒死向对岸疾行。",
-        "追兵尾随冲上桥头隘口，猎户与近卫双双举起重型开山斧合力劈断吊桥主缆钢索。",
-        "轰然巨响中千斤铁索坠入万丈深渊彻底阻断追兵，朝阳跃出雪峰洒满对岸直升机接应机坪。"
+        "清晨，近卫带大小姐走到绝壁吊桥边，说这里能看见最好的日出。",
+        "太阳从雪峰后面升起来，把整座山谷染成金色。",
+        "大小姐看着日出，忽然说：等这事了结了，我想回来再看一次。"
       ],
       "hook_ids": [
-        "h_akane_bridge_look_back_smile",
-        "h_chiyo_geisha_sachet_pass",
-        "h_kuroki_window_tap_code"
+        "hd_tsundere_yakuza_princess_akane",
+        "hd_mountain_hermit_hunter_goro",
+        "hd_rebel_traitor_lieutenant_ryuji",
+        "hd_traitor_bloodhound_tracker_tetsuo",
+        "hd_undercover_special_investigator_kurok",
+        "hd_loyal_apprentice_geisha_informant_chi"
       ],
-      "start_minute": 95,
+      "start_minute": 390,
       "tags": [
         "workplace_power"
       ]
@@ -2372,6 +2387,42 @@
         "cliffside_abandoned_rope_bridge"
       ],
       "text": "{undercover_special_investigator_kuroki.name}单膝跪在悬崖绝壁风雪呼啸的巨石掩体后方，借着暴风雪掩护悄然启动手中的微型红外遇险信标，向黑沉沉的群山夜空无声发出三长两短的直升机空中搜救坐标。"
+    },
+    {
+      "id": "hd_tsundere_yakuza_princess_akane",
+      "kind": "approach",
+      "slot": "tsundere_yakuza_princess_akane",
+      "text": "{tsundere_yakuza_princess_akane.name}把一碗热味噌汤推到你面前，别过脸：“多煮了。不喝就倒掉。”"
+    },
+    {
+      "id": "hd_mountain_hermit_hunter_goro",
+      "kind": "approach",
+      "slot": "mountain_hermit_hunter_goro",
+      "text": "{mountain_hermit_hunter_goro.name}拎着一串晒干的柿饼走进来：“山里的，尝尝。”"
+    },
+    {
+      "id": "hd_rebel_traitor_lieutenant_ryuji",
+      "kind": "approach",
+      "slot": "rebel_traitor_lieutenant_ryuji",
+      "text": "{rebel_traitor_lieutenant_ryuji.name}靠在门边，冲你扬扬下巴：“陪我抽完这一根。”"
+    },
+    {
+      "id": "hd_traitor_bloodhound_tracker_tetsuo",
+      "kind": "approach",
+      "slot": "traitor_bloodhound_tracker_tetsuo",
+      "text": "{traitor_bloodhound_tracker_tetsuo.name}蹲在门口逗着一只野猫，抬头看你：“它好像喜欢你。”"
+    },
+    {
+      "id": "hd_undercover_special_investigator_kurok",
+      "kind": "approach",
+      "slot": "undercover_special_investigator_kuroki",
+      "text": "{undercover_special_investigator_kuroki.name}把一杯热茶递给你：“天冷，喝点暖的。”"
+    },
+    {
+      "id": "hd_loyal_apprentice_geisha_informant_chi",
+      "kind": "approach",
+      "slot": "loyal_apprentice_geisha_informant_chiyo",
+      "text": "{loyal_apprentice_geisha_informant_chiyo.name}抱着三味线坐下：“想听什么曲子？我奏给你听。”"
     }
   ],
   "twists": [

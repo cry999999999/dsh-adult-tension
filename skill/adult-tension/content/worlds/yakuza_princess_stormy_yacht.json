@@ -1469,25 +1469,28 @@
   },
   {
    "beats": [
-    "蒸汽从泄压阀里喷出，走廊一片白",
-    "铁格栅下的积水被踩得四溅",
-    "锤子砸在钢管上，火星照亮了整条走廊"
+    "出海的第二天，保镖去底层轮机走廊给轮机长送午饭，铁格栅被踩得叮当响。",
+    "轮机长接过饭盒，说当家的千金是第一次上这条船吧。",
+    "保镖点点头，轮机长说那就让大小姐多去甲板上晒晒太阳，船上的日子闷。"
    ],
    "duration_minutes": 35,
    "hook_ids": [
-    "h_goda_hammer_smash",
-    "h_shibata_door_threat",
-    "h_mashima_note"
+    "hd_yakuza_heiress_akaho",
+    "hd_family_doctor_morita",
+    "hd_hammer_enforcer_goda",
+    "hd_traitor_lieutenant_shibata",
+    "hd_loyal_helmsman_goro",
+    "hd_radio_officer_mashima"
    ],
    "id": "a_corridor_skirmish",
    "location_ids": [
     "yacht_bilge_engineering_corridor"
    ],
-   "start_minute": 60,
+   "start_minute": 720,
    "tags": [
     "violence"
    ],
-   "title": "轮机走廊的遭遇"
+   "title": "轮机走廊里送饭"
   },
   {
    "beats": [
@@ -1699,6 +1702,48 @@
    ],
    "slot": "hammer_enforcer_goda",
    "text": "红灯下，{hammer_enforcer_goda.name}把一整瓶伏特加浇在自己头上，提着锤子一步一个水花地走过来。"
+  },
+  {
+   "id": "hd_yakuza_heiress_akaho",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "yakuza_heiress_akaho",
+   "text": "{yakuza_heiress_akaho.name}晃着一杯清酒，冲你扬了扬下巴：“今晚没事。坐下，陪我喝。”"
+  },
+  {
+   "id": "hd_family_doctor_morita",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "family_doctor_morita",
+   "text": "{family_doctor_morita.name}递给你一片晕船药：“海上第一天，备着总没错。”"
+  },
+  {
+   "id": "hd_hammer_enforcer_goda",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "hammer_enforcer_goda",
+   "text": "{hammer_enforcer_goda.name}在甲板上钓着鱼，冲你招手：“来，帮我看着竿。”"
+  },
+  {
+   "id": "hd_traitor_lieutenant_shibata",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "traitor_lieutenant_shibata",
+   "text": "{traitor_lieutenant_shibata.name}把一份航程表递给你：“明天的安排，你也过一遍。”"
+  },
+  {
+   "id": "hd_loyal_helmsman_goro",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "loyal_helmsman_goro",
+   "text": "{loyal_helmsman_goro.name}握着舵冲你笑：“风平浪静，来试试掌舵？”"
+  },
+  {
+   "id": "hd_radio_officer_mashima",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "radio_officer_mashima",
+   "text": "{radio_officer_mashima.name}摘下一边耳机：“收到一个放老歌的电台，你也听听。”"
   }
  ],
  "id": "yakuza_princess_stormy_yacht",

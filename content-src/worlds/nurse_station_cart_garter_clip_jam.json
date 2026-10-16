@@ -1750,17 +1750,22 @@
     },
     {
       "id": "act_nurse_cart_position_wheel_shift",
-      "title": "推移八十公斤急救车归位定点交接",
+      "title": "交班前的抢救车",
       "location_ids": [
         "loc_er_central_nurse_station"
       ],
       "duration_minutes": 8,
       "beats": [
-        "护士弯腰推动重型推车进入凹槽并试图锁紧右侧滑轨抽屉",
-        "护士裙摆内侧不锈钢鸭嘴夹在推移间被阻尼卡爪死死咬住"
+        "早交班前，小护士推着抢救车回到护士站的凹槽，一层层核对抽屉里的药品。",
+        "带教老师在旁边看着，提醒小护士别忘了在交接本上签字。",
+        "签完字，小护士长出一口气，说夜班总算熬过去了。"
       ],
-      "hook_ids": [],
-      "start_minute": 492,
+      "hook_ids": [
+        "hook_02_uniform_skirt_strain_jam",
+        "hook_03_hemostat_tip_lever_extract",
+        "hook_04_resident_iron_standoff"
+      ],
+      "start_minute": 450,
       "tags": []
     },
     {

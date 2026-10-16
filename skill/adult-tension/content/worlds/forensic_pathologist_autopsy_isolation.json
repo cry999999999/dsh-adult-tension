@@ -1325,47 +1325,53 @@
  "daily_activities": [
   {
    "beats": [
-    "发电机爆炸全区陷入绝对黑暗，温法医后背被飞溅玻璃划开深口，鲜血染透贴身针织衫瘫倒在解剖台前。",
-    "青年迅速持强光防爆手电单膝跪地，法医忍痛命令其用无菌剪刀剪开破损大褂以碘伏棉球擦拭清创。",
-    "青年用碘伏棉球擦净伤口血污，法医疼得咬紧下唇一声不吭，二人背靠背守在解剖台下盯着两扇门。"
+    "台风到来前一周，温法医在一号解剖大厅里给实习生讲课，讲台上摆着一副人体骨骼模型。",
+    "温法医讲得很快，一个实习生没跟上，温法医停下来，又讲了一遍。",
+    "下课后，青年留下来帮忙收拾器械，温法医随口问了一句：你也是政法大学的？"
    ],
    "duration_minutes": 25,
    "hook_ids": [
-    "h_wen_scalpel_reverse_whisper",
-    "h_qiao_crowbar_creak_howl",
-    "h_lu_megaphone_breach_howl"
+    "hd_chief_pathologist_wen_zhiwei",
+    "hd_senior_detective_captain_lu_zheng",
+    "hd_hitman_cleaning_agent_qiao_biao",
+    "hd_toxicology_night_tech_fang",
+    "hd_corrupt_deputy_director_song_peihan",
+    "hd_discipline_inspector_gu_lan"
    ],
    "id": "a_blackout_glass_puncture_wound_dressing",
    "location_ids": [
     "autopsy_theatre_one_operating_suite"
    ],
-   "start_minute": 0,
+   "start_minute": 540,
    "tags": [
     "intimate"
    ],
-   "title": "断电爆炸碎玻璃划伤大褂持刀清创"
+   "title": "解剖大厅的早会"
   },
   {
    "beats": [
-    "第三具遗体胃部切开面临变质死线，青年大手握紧法医冰凉的手稳住刀锋一刀精准划开胃窦粘膜层。",
-    "沾满组织液的黑色防水密封胶卷筒自胃腔滑出，二人佩戴无菌丁腈手套双人双签完成物证袋红印封装。",
-    "法医因失血眩晕险些跌倒，青年一把扶住，让法医靠着自己的肩膀缓一口气，再接着报参数。"
+    "一具普通的交通事故遗体送进解剖大厅，温法医和青年按规矩双人执刀。",
+    "青年手有点抖，温法医冷冷地说：手稳一点，死者不会喊疼。",
+    "鉴定做完，两人在报告上签了名，温法医看了一眼青年的签名，说字写得还行。"
    ],
    "duration_minutes": 35,
    "hook_ids": [
-    "h_wen_film_pack_whisper",
-    "h_qiao_crowbar_creak_howl",
-    "h_lu_megaphone_breach_howl"
+    "hd_chief_pathologist_wen_zhiwei",
+    "hd_senior_detective_captain_lu_zheng",
+    "hd_hitman_cleaning_agent_qiao_biao",
+    "hd_toxicology_night_tech_fang",
+    "hd_corrupt_deputy_director_song_peihan",
+    "hd_discipline_inspector_gu_lan"
    ],
    "id": "a_joint_scalpel_gastric_film_extraction",
    "location_ids": [
     "autopsy_theatre_one_operating_suite"
    ],
-   "start_minute": 25,
+   "start_minute": 840,
    "tags": [
     "intimate"
    ],
-   "title": "单束冷光交接双人执刀胃壁取样胶卷"
+   "title": "双人签名的例行鉴定"
   },
   {
    "beats": [
@@ -1391,25 +1397,28 @@
   },
   {
    "beats": [
-    "内鬼遥控关闭通风阀施放二氧化碳，青年冒死爬上铁梯短接电缆，双手被高压电火花大面积灼伤。",
-    "陆队长率特警突击队以重型破门攻城槌悍然轰塌铅门，刺目消防探照灯光芒如利剑般撕裂地下黑暗。",
-    "特警冲锋枪横扫全场清空威胁，陆队脱下警服战术风衣亲手披在浑身血污却相依相偎的二人肩头。"
+    "鉴定中心一年一度的设备年检，青年跟着维修师傅爬进通风竖井检查风阀。",
+    "竖井里很窄，师傅一边干活一边说温法医当年也是从实习生熬上来的。",
+    "检完出来，青年满头是灰，温法医路过时看了一眼，递过来一包湿巾。"
    ],
    "duration_minutes": 30,
    "hook_ids": [
-    "h_lu_megaphone_breach_howl",
-    "h_song_co2_valve_screech",
-    "h_wen_wrist_watch_pin_whisper"
+    "hd_chief_pathologist_wen_zhiwei",
+    "hd_senior_detective_captain_lu_zheng",
+    "hd_hitman_cleaning_agent_qiao_biao",
+    "hd_toxicology_night_tech_fang",
+    "hd_corrupt_deputy_director_song_peihan",
+    "hd_discipline_inspector_gu_lan"
    ],
    "id": "a_air_duct_flame_breach_ladder_rescue",
    "location_ids": [
     "air_duct_maintenance_shaft_chambers"
    ],
-   "start_minute": 95,
+   "start_minute": 1000,
    "tags": [
     "workplace_power"
    ],
-   "title": "通风竖井大火浓烟破门大锤破障会师"
+   "title": "通风竖井的年检"
   },
   {
    "beats": [
@@ -1613,6 +1622,48 @@
    ],
    "slot": "chief_pathologist_wen_zhiwei",
    "text": "{chief_pathologist_wen_zhiwei.name}右手因失血微微发抖，转头看着你，把你的手拉过来覆在自己执刀的手背上：“……帮我稳住。刀路我来定，力道你来给……我们一起，划开最后这一刀。”"
+  },
+  {
+   "id": "hd_chief_pathologist_wen_zhiwei",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "chief_pathologist_wen_zhiwei",
+   "text": "{chief_pathologist_wen_zhiwei.name}把一份报告推到你面前：“这几页的措辞，你帮我顺一下。”"
+  },
+  {
+   "id": "hd_senior_detective_captain_lu_zheng",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "senior_detective_captain_lu_zheng",
+   "text": "{senior_detective_captain_lu_zheng.name}拎着两份盒饭走进来：“还没吃吧？一起。”"
+  },
+  {
+   "id": "hd_hitman_cleaning_agent_qiao_biao",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "hitman_cleaning_agent_qiao_biao",
+   "text": "{hitman_cleaning_agent_qiao_biao.name}在走廊里冲你笑了笑：“楼下咖啡机修好了，要不要来一杯？”"
+  },
+  {
+   "id": "hd_toxicology_night_tech_fang",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "toxicology_night_tech_fang",
+   "text": "{toxicology_night_tech_fang.name}打着哈欠把一杯热茶推给你：“夜班漫长，喝点提提神。”"
+  },
+  {
+   "id": "hd_corrupt_deputy_director_song_peihan",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "corrupt_deputy_director_song_peihan",
+   "text": "{corrupt_deputy_director_song_peihan.name}把一份季度考核表递给你：“例行填写，下班前交给我。”"
+  },
+  {
+   "id": "hd_discipline_inspector_gu_lan",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "discipline_inspector_gu_lan",
+   "text": "{discipline_inspector_gu_lan.name}在你对面坐下，翻开笔记本：“例行谈话，随便聊聊就好。”"
   }
  ],
  "id": "forensic_pathologist_autopsy_isolation",

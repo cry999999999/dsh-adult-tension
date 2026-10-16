@@ -1701,56 +1701,66 @@
   "daily_activities": [
     {
       "id": "act_lin_man_ning_pries_lock_notch",
-      "title": "鉴证舱钨钢刻度笔硬柄下压撬动止逆卡销",
+      "title": "鉴证舱里看烟晶",
       "location_ids": [
         "loc_swiss_vault_central_gem_chamber"
       ],
       "duration_minutes": 15,
       "beats": [
-        "使用高硬度特种高碳碳化钨测试笔硬柄探入副泄压孔内侧缝隙",
-        "二人合力向下方倾斜三十度施加静载杠杆力矩顶开棘爪卡扣",
-        "在止逆脱扣气压爆鸣瞬间合力推开厚重防爆大门完成逃生"
+        "鉴定师在鉴证舱的无影台前，一寸寸检查那颗刚取出的巨型烟晶。",
+        "安防总工站在一旁，鉴定师头也不抬地让总工把灯再调暗一点。",
+        "烟晶在暗光里透出深褐色的火彩，鉴定师轻声说：它在山里等了几百万年。"
       ],
-      "hook_ids": [],
-      "start_minute": 1260,
+      "hook_ids": [
+        "hook_keller_headlamp",
+        "hook_lin_and_crew_thrust_downward",
+        "hook_lin_exhorts_partner_to_hold_steady"
+      ],
+      "start_minute": 900,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {
       "id": "act_keller_heats_hydraulic_valve",
-      "title": "检修回廊热风枪加温融解液压副阀结霜",
+      "title": "回廊里的锁匠",
       "location_ids": [
         "loc_swiss_vault_hydraulic_lock_aisle"
       ],
       "duration_minutes": 15,
       "beats": [
-        "锁匠在回廊手把热风枪对准副泄压阀法兰盘均匀吹扫融解坚冰",
-        "高力矩套筒扳手套在传动连杆六角螺母上施加顺时针预紧力",
-        "通过防爆对讲机向核心舱通报副阀排气与减阻卸载的最佳时机"
+        "锁匠凯勒每周都要来检修回廊里的液压锁栓，工具箱里叮叮当当响。",
+        "鉴定师路过，停下来看了一会儿，说你的手比我的还稳。",
+        "凯勒笑着说干了四十年锁匠，这双手只会开锁，不会发抖。"
       ],
-      "hook_ids": [],
-      "start_minute": 1262,
+      "hook_ids": [
+        "hook_keller_headlamp",
+        "hook_keller_heats_hydraulic_valve_core",
+        "hook_manning_crystal_gift"
+      ],
+      "start_minute": 960,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {
       "id": "act_sophia_stows_diamond_case",
-      "title": "无影台前百克拉稀世烟晶铅封盒加固防护",
+      "title": "收工时封存宝石",
       "location_ids": [
         "loc_swiss_vault_central_gem_chamber"
       ],
       "duration_minutes": 15,
       "beats": [
-        "细心将璀璨烟晶推入特制凹槽并扣上双重防磁密封保险锁扣",
-        "半蹲在鉴定师身后高举战术强光手电照亮副孔内部狭窄卡槽",
-        "抽出丝帕替鉴定师拂去额角凝霜轻声细语安抚团队紧张情绪"
+        "傍晚收工，助手索菲亚把烟晶放进铅封盒，扣上双重锁扣。",
+        "鉴定师在封条上签名，索菲亚在一旁小声说今天的数据记得很完整。",
+        "封存完毕，两人一起乘升降梯回到矿洞口，外面正下着细雪。"
       ],
-      "hook_ids": [],
-      "start_minute": 1261,
+      "hook_ids": [
+        "hook_keller_headlamp",
+        "hook_lin_and_crew_thrust_downward",
+        "hook_lin_exhorts_partner_to_hold_steady"
+      ],
+      "start_minute": 1080,
       "tags": [
         "workplace"
       ]
@@ -1776,21 +1786,24 @@
     },
     {
       "id": "act_hans_calibrates_winch_cable",
-      "title": "检修回廊十吨电动绞盘钢缆校准与对讲指挥",
+      "title": "绞盘的周检",
       "location_ids": [
         "loc_swiss_vault_hydraulic_lock_aisle"
       ],
       "duration_minutes": 15,
       "beats": [
-        "安保指挥官手握防爆对讲机话筒凝视张紧的重型合金防爆钢缆",
-        "根据舱内回传口令实施微动脉冲收紧保持两百千牛预拉力稳定",
-        "三秒倒数同步引导全员内外发力将厚重门扉顺畅滑开一道生路线"
+        "安保指挥官汉斯在检修回廊里校准十吨电动绞盘，钢缆慢慢收紧又放松。",
+        "鉴定师端着咖啡站在旁边，问这台绞盘是做什么用的。",
+        "汉斯说开那扇大门用的，一年也开不了几次，鉴定师说：那你很闲嘛。"
       ],
-      "hook_ids": [],
-      "start_minute": 1264,
+      "hook_ids": [
+        "hook_keller_headlamp",
+        "hook_keller_heats_hydraulic_valve_core",
+        "hook_manning_crystal_gift"
+      ],
+      "start_minute": 840,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {

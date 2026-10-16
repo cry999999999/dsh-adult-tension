@@ -1792,17 +1792,22 @@
     },
     {
       "id": "act_daily_pin_sliding_deadlock",
-      "title": "落座展开尾针突发死锁",
+      "title": "首演前的走台",
       "location_ids": [
         "loc_golden_hall_solo_stage"
       ],
       "duration_minutes": 5,
       "beats": [
-        "调整坐姿抽拉尾针瞬间淬火卡榫滑脱死死咬入合金锁槽",
-        "晚礼服真丝薄料受力拉扯撕开细微缝线面临走光"
+        "首演前一天下午，大提琴女神在空荡荡的金色大厅里走台试音。",
+        "舞台监督调整座椅高度，女神试了三次才点头。",
+        "最后一个长音在大厅里回荡了很久，女神放下琴弓，望着空座位出神。"
       ],
-      "hook_ids": [],
-      "start_minute": 137,
+      "hook_ids": [
+        "hook_broadcast_zoom_in_crisis",
+        "hook_cameraman_ethical_choice",
+        "hook_peccatte_screw_mechanics"
+      ],
+      "start_minute": 900,
       "tags": []
     },
     {

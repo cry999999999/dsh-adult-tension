@@ -1716,66 +1716,75 @@
   "daily_activities": [
     {
       "id": "a_veranda_miasma_purge_ritual",
-      "title": "回廊檐下推砂拔毒",
+      "title": "回廊下养伤",
       "location_ids": [
         "kagura_main_hall_veranda"
       ],
       "duration_minutes": 45,
       "beats": [
-        "女剑士带伤退入神乐殿回廊，佩刀断折灵力溃散，右臂至前襟被紫黑瘴气侵蚀剧痛难耐。",
-        "青年巫祝将白瓷神水洗手净面，以双手蘸取纯朱砂粉，沿剑士右臂经络寸寸推拿逼毒。",
-        "剑士贝齿紧咬朱唇浑身微颤冷汗淋漓，反手紧握巫祝前臂，在回廊风雨滴漏中咬牙熬过一轮寒战。"
+        "斩妖之后的第三天，女剑士坐在回廊下晒太阳，右臂还缠着白布。",
+        "青年巫祝送来一碗药汤，女剑士闻了闻，说比昨天的苦。",
+        "巫祝说苦才有用，女剑士瞪了一眼，还是一口喝完了。"
       ],
       "hook_ids": [
-        "h_kanna_veranda_wound_shiver_glance",
-        "h_kanna_cinnabar_touch_chin_lift",
-        "h_sojiro_heavy_blade_block_gate"
+        "hd_demon_slayer_kanna",
+        "hd_veteran_ronin_sojiro",
+        "hd_swordsmith_prodigy_ren",
+        "hd_court_inspector_toshiki",
+        "hd_ascetic_herbalist_shinya",
+        "hd_apprentice_miko_shiori"
       ],
-      "start_minute": 1350,
+      "start_minute": 600,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "a_inner_sanctuary_reforging_chant",
-      "title": "内殿神前血誓重铸",
+      "title": "看刀匠接续断刀",
       "location_ids": [
         "inner_sanctuary_lattice_room"
       ],
       "duration_minutes": 40,
       "beats": [
-        "二人相互搀扶退入闭锁内殿，刀匠在神火前备好鹿角砥石与白磷焊剂，小心接续断折太刀残刃。",
-        "女剑士割破手心以宗家本命剑血浇灌刀身，巫祝在侧手持神符高声诵念降神祝词稳固剑灵。",
-        "断太刀爆发出璀璨如星的森白霜芒，金属龙吟回响整座大殿，群妖在格子门外发出惊惧嚎叫。"
+        "刀匠在内殿的神火前接续断刀，火星一下下溅起来。",
+        "女剑士跪坐在一旁看着，说这把刀跟了自己十年。",
+        "刀匠头也不抬：修好了，还能再跟你十年。"
       ],
       "hook_ids": [
-        "h_kanna_cinnabar_touch_chin_lift",
-        "h_shiori_kagura_bell_trembling_prayer",
-        "h_ren_whetstone_sparks_blade_reforge"
+        "hd_demon_slayer_kanna",
+        "hd_veteran_ronin_sojiro",
+        "hd_swordsmith_prodigy_ren",
+        "hd_court_inspector_toshiki",
+        "hd_ascetic_herbalist_shinya",
+        "hd_apprentice_miko_shiori"
       ],
-      "start_minute": 1395,
+      "start_minute": 840,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "a_cedar_gate_ronin_blood_standoff",
-      "title": "鸟居阶前浪人横刀断后",
+      "title": "鸟居下的浪人",
       "location_ids": [
         "sacred_cedar_boundary_gate"
       ],
       "duration_minutes": 45,
       "beats": [
-        "佩刀浪人风间宗次郎独身镇守神乐殿鸟居石阶，浑身浴血横刀狂笑，连斩三头突击妖狼。",
-        "泥石流咆哮崩塌冲垮下山栈道，浪人踢翻生铁灯笼以烈油引燃木栏，筑起熊熊火墙阻断追兵。",
-        "猎户在上方绝壁连发重箭狙击高空飞翼妖魔，为内殿重铸名刀争取到至关重要的最后喘息。"
+        "一个佩刀浪人在鸟居石阶上坐了一下午，说是来还愿的。",
+        "浪人请女剑士喝了一口酒，说起自己当年也在这座神社求过平安。",
+        "日落前浪人起身告辞，在功德箱里放了一枚旧铜钱。"
       ],
       "hook_ids": [
-        "h_sojiro_heavy_blade_block_gate",
-        "h_toshiki_court_seal_proclamation",
-        "h_shinya_nine_ring_staff_demon_slam"
+        "hd_demon_slayer_kanna",
+        "hd_veteran_ronin_sojiro",
+        "hd_swordsmith_prodigy_ren",
+        "hd_court_inspector_toshiki",
+        "hd_ascetic_herbalist_shinya",
+        "hd_apprentice_miko_shiori"
       ],
-      "start_minute": 1435,
+      "start_minute": 960,
       "tags": [
         "workplace"
       ]
@@ -1804,44 +1813,50 @@
     },
     {
       "id": "a_lattice_room_court_decree_enactment",
-      "title": "内殿神前宣读勘定功勋",
+      "title": "御史宣读功勋",
       "location_ids": [
         "inner_sanctuary_lattice_room"
       ],
       "duration_minutes": 30,
       "beats": [
-        "御史黑泽俊树在神案前展开朝廷金印卷轴，正式盖章核准司徒绫乃斩妖功勋并免除其断刀之责。",
-        "药师为剑士敷上最后一剂辟毒雪莲散，缠上洁白绷带，剑士面色红润气脉通畅灵力重回巅峰。",
-        "全员手按兵刃列阵于回廊格子门后，静待黎明破晓第一缕纯阳天光降临展开最终反击。"
+        "朝廷的御史来到神乐殿，在神案前展开卷轴，宣读女剑士斩妖的功勋。",
+        "药师替女剑士换上新的绷带，女剑士跪着听完，叩首谢恩。",
+        "御史走后，女剑士把卷轴随手放在一边，问巫祝晚饭吃什么。"
       ],
       "hook_ids": [
-        "h_toshiki_court_seal_proclamation",
-        "h_kanna_veranda_wound_shiver_glance",
-        "h_ren_whetstone_sparks_blade_reforge"
+        "hd_demon_slayer_kanna",
+        "hd_veteran_ronin_sojiro",
+        "hd_swordsmith_prodigy_ren",
+        "hd_court_inspector_toshiki",
+        "hd_ascetic_herbalist_shinya",
+        "hd_apprentice_miko_shiori"
       ],
-      "start_minute": 65,
+      "start_minute": 660,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "a_dawn_breakthrough_kagura_triumph",
-      "title": "破晓晨光长廊出鞘破阵",
+      "title": "雨后的清晨",
       "location_ids": [
         "kagura_main_hall_veranda"
       ],
       "duration_minutes": 25,
       "beats": [
-        "暴风雨骤停破晓红日自东方绝壁磅礴跃出，万道金光穿透神乐殿破损廊檐洒满朱漆地板。",
-        "司徒绫乃双手紧扣巫祝十指携手推开格子大门，重铸神太刀龙吟出鞘，一道雪亮剑芒荡平阶前百妖。",
-        "巫女与僧侣齐声敲响神鼓神乐，群妖在天光与剑芒中灰飞烟灭，二人相视而笑定格永恒誓约。"
+        "雨停后的清晨，神乐殿的回廊上洒满阳光，朱漆地板还带着水汽。",
+        "女剑士和巫祝并肩坐在廊下，看山道上的雾一点点散开。",
+        "远处传来神鼓声，女剑士说，那是山下村子的早祭。"
       ],
       "hook_ids": [
-        "h_kanna_dawn_blade_reforge_vow",
-        "h_sojiro_heavy_blade_block_gate",
-        "h_shiori_kagura_bell_trembling_prayer"
+        "hd_demon_slayer_kanna",
+        "hd_veteran_ronin_sojiro",
+        "hd_swordsmith_prodigy_ren",
+        "hd_court_inspector_toshiki",
+        "hd_ascetic_herbalist_shinya",
+        "hd_apprentice_miko_shiori"
       ],
-      "start_minute": 95,
+      "start_minute": 360,
       "tags": [
         "intimate"
       ]
@@ -2268,6 +2283,42 @@
         "kagura_main_hall_veranda"
       ],
       "text": "{demon_slayer_kanna.name}贝齿死死咬破下唇渗出血丝，避开视线低声开口：“……毒气冲到肩井穴了。你、你的手……别颤抖……蘸着朱砂顺着手臂经络往下推……推完就去守门，别管我……”"
+    },
+    {
+      "id": "hd_demon_slayer_kanna",
+      "kind": "approach",
+      "slot": "demon_slayer_kanna",
+      "text": "{demon_slayer_kanna.name}收剑入鞘，把一块饭团递给你：“晨练结束了。吃吧，别客气。”"
+    },
+    {
+      "id": "hd_veteran_ronin_sojiro",
+      "kind": "approach",
+      "slot": "veteran_ronin_sojiro",
+      "text": "{veteran_ronin_sojiro.name}拎着一壶清酒在你身边坐下：“今晚月亮好，陪我喝一杯。”"
+    },
+    {
+      "id": "hd_swordsmith_prodigy_ren",
+      "kind": "approach",
+      "slot": "swordsmith_prodigy_ren",
+      "text": "{swordsmith_prodigy_ren.name}捧着一把新磨的短剑凑过来：“你看看这刃纹，好不好看？”"
+    },
+    {
+      "id": "hd_court_inspector_toshiki",
+      "kind": "approach",
+      "slot": "court_inspector_toshiki",
+      "text": "{court_inspector_toshiki.name}把一本记事簿递给你：“例行记录，帮我把今天的事补上。”"
+    },
+    {
+      "id": "hd_ascetic_herbalist_shinya",
+      "kind": "approach",
+      "slot": "ascetic_herbalist_shinya",
+      "text": "{ascetic_herbalist_shinya.name}端来一碗药汤：“补身子的，不苦，喝了吧。”"
+    },
+    {
+      "id": "hd_apprentice_miko_shiori",
+      "kind": "approach",
+      "slot": "apprentice_miko_shiori",
+      "text": "{apprentice_miko_shiori.name}拿着一枝刚折的桔梗跑过来：“插在神乐殿里，好看吗？”"
     }
   ],
   "twists": [

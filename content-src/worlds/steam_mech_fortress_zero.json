@@ -1703,88 +1703,100 @@
   "daily_activities": [
     {
       "id": "a_boiler_pressure_release_drill",
-      "title": "地底主重力熔炉超温强行排压",
+      "title": "熔炉室里的晚饭",
       "location_ids": [
         "furnace_boiler_room"
       ],
       "duration_minutes": 40,
       "beats": [
-        "千度高压蒸汽从铜阀缝隙中发出刺耳欲聋的尖啸白烟",
-        "疯匠抡动巨型扳手迎着滚烫热浪疯狂敲击卡死法兰盘",
-        "司炉工兵大口咳着煤灰将冰雪成桶浇在通红的主轴承上"
+        "敌军还没压上来的夜晚，番队的人挤在主熔炉室里取暖，司炉工兵在炉口边烤土豆。",
+        "疯匠拿扳手敲着铜管打拍子，几个死囚跟着哼起家乡的小调。",
+        "土豆熟了，每人分到一个，烫得在手里来回倒。"
       ],
       "hook_ids": [
-        "h_artisan_wrench_strike",
-        "h_leader_blade_rally",
-        "h_knight_halberd_ground",
-        "h_artisan_fuse_trust"
+        "hd_fanatic_squad_leader",
+        "hd_crazed_steam_artisan",
+        "hd_iron_hearted_vanguard_knight",
+        "hd_grim_heavy_gunner",
+        "hd_last_defense_combat_medic",
+        "hd_last_steam_cavalry_pilot"
       ],
-      "start_minute": 1355,
+      "start_minute": 1170,
       "tags": [
         "workplace"
       ]
     },
     {
       "id": "a_rampart_parapet_fire_defense",
-      "title": "城墙主胸墙豁口重火网阻击",
+      "title": "城墙上的哨班",
       "location_ids": [
         "fortress_rampart_parapet"
       ],
       "duration_minutes": 55,
       "beats": [
-        "重机枪火舌在暴风雪夜空中拉出上百米长的不绝猩红弹道",
-        "敌军蒸汽装甲车的七十五毫米火炮正面轰碎胸墙石垛掀起烟尘",
-        "重装骑士横盾挺身挡在破口处用短斧劈碎突入敌兵的钢盔"
+        "风雪暂歇的下午，重装骑士在外城墙上站哨，望着山脊下空荡荡的雪原。",
+        "老兵拄着拐杖上来送热汤，说敌军至少还要三天才到。",
+        "两人靠着胸墙喝汤，老兵说起年轻时在这座要塞第一次站哨的事。"
       ],
       "hook_ids": [
-        "h_gunner_barrel_burn",
-        "h_knight_halberd_ground",
-        "h_pilot_lance_clash"
+        "hd_fanatic_squad_leader",
+        "hd_crazed_steam_artisan",
+        "hd_iron_hearted_vanguard_knight",
+        "hd_grim_heavy_gunner",
+        "hd_last_defense_combat_medic",
+        "hd_last_steam_cavalry_pilot"
       ],
-      "start_minute": 1375,
+      "start_minute": 900,
       "tags": [
         "violence"
       ]
     },
     {
       "id": "a_mech_armor_rivet_repair",
-      "title": "破损单兵机甲红热铆钉紧急抢修",
+      "title": "车间里修机甲",
       "location_ids": [
         "mech_hangar_workshop"
       ],
       "duration_minutes": 45,
       "beats": [
-        "烧红的精钢铆钉在重锤狂暴夯打下溅出万道绚烂金色火花",
-        "断裂的液压油管被工匠直接用皮带与铁丝生生勒紧止漏",
-        "驾驶员扣死面甲齿轮拉动气阀让机甲双臂轰鸣抬起测试"
+        "机甲抢修车间里，工匠们给一台旧机甲换新的关节，铆钉一颗颗敲进去。",
+        "驾驶员坐在一旁擦面甲，说这台机甲是从废料堆里捡回来的，现在跟亲兄弟一样。",
+        "修好了，驾驶员爬进座舱活动了一下双臂，车间里响起一片口哨声。"
       ],
       "hook_ids": [
-        "h_artisan_wrench_strike",
-        "h_pilot_lance_clash",
-        "h_medic_scalpel_iron"
+        "hd_fanatic_squad_leader",
+        "hd_crazed_steam_artisan",
+        "hd_iron_hearted_vanguard_knight",
+        "hd_grim_heavy_gunner",
+        "hd_last_defense_combat_medic",
+        "hd_last_steam_cavalry_pilot"
       ],
-      "start_minute": 1390,
+      "start_minute": 840,
       "tags": [
         "workplace"
       ]
     },
     {
       "id": "a_artillery_spotting_signal",
-      "title": "绝壁前沿重炮盲区试射标定",
+      "title": "测距员的星空",
       "location_ids": [
         "fortress_rampart_parapet"
       ],
       "duration_minutes": 35,
       "beats": [
-        "高空纯镁照明弹在千米深渊上空爆开照彻惨白狰狞的雪峰",
-        "测距员趴在悬崖胸墙外嘶声对着传声铜管报出落弹坐标修正",
-        "要塞仅存的重型加农炮发出天崩地裂的怒吼将敌军冲锋排炸碎"
+        "晴朗的夜里，测距员趴在胸墙上看星星，传声铜管里传来值班员的哈欠声。",
+        "测距员说家乡的星星没有这里多，因为那里的天总是灰的。",
+        "旁边的人递过来一块干饼，两人就着星光慢慢嚼。"
       ],
       "hook_ids": [
-        "h_gunner_barrel_burn",
-        "h_leader_whiskey_offer"
+        "hd_fanatic_squad_leader",
+        "hd_crazed_steam_artisan",
+        "hd_iron_hearted_vanguard_knight",
+        "hd_grim_heavy_gunner",
+        "hd_last_defense_combat_medic",
+        "hd_last_steam_cavalry_pilot"
       ],
-      "start_minute": 1405,
+      "start_minute": 1320,
       "tags": [
         "violence"
       ]
@@ -1812,21 +1824,25 @@
     },
     {
       "id": "a_ammo_cache_count_ration",
-      "title": "仅存穿甲重弹过秤与同归爆破布设",
+      "title": "弹药库里清点",
       "location_ids": [
         "cliffside_ammo_magazine"
       ],
       "duration_minutes": 25,
       "beats": [
-        "金漆穿甲弹壳被一发发擦净机油压入最后两个重装弹药箱",
-        "队长将雷管导火索细致捆扎在要塞地基承重岩梁的炸药包上",
-        "战士们在弹壳上用指甲刻下战死同胞与家乡母亲的名字"
+        "队长带着两个人在悬崖弹药库里清点弹药，一箱箱打开再封好。",
+        "一个年轻的战士在弹壳上刻家乡的地名，队长看见了，没有制止。",
+        "清点完毕，队长在本子上记下数字，说省着点用，够撑一阵子。"
       ],
       "hook_ids": [
-        "h_leader_blade_rally",
-        "h_artisan_fuse_trust"
+        "hd_fanatic_squad_leader",
+        "hd_crazed_steam_artisan",
+        "hd_iron_hearted_vanguard_knight",
+        "hd_grim_heavy_gunner",
+        "hd_last_defense_combat_medic",
+        "hd_last_steam_cavalry_pilot"
       ],
-      "start_minute": 1430,
+      "start_minute": 600,
       "tags": [
         "substance"
       ]
@@ -2217,6 +2233,42 @@
         "cliffside_ammo_magazine"
       ],
       "text": "昏暗的弹药库一角，{grim_heavy_gunner.name}正用短刀发狠地在最后一枚两百四十毫米巨型炮弹的铜壳上，一笔一划生生刻下‘血债血偿’四个深可见铁的狂暴大字。"
+    },
+    {
+      "id": "hd_fanatic_squad_leader",
+      "kind": "approach",
+      "slot": "fanatic_squad_leader",
+      "text": "{fanatic_squad_leader.name}把一碗热汤塞到你手里：“今晚没任务。喝完早点睡。”"
+    },
+    {
+      "id": "hd_crazed_steam_artisan",
+      "kind": "approach",
+      "slot": "crazed_steam_artisan",
+      "text": "{crazed_steam_artisan.name}捧着一只铜制小玩意凑过来：“新做的八音盒，你听听响不响。”"
+    },
+    {
+      "id": "hd_iron_hearted_vanguard_knight",
+      "kind": "approach",
+      "slot": "iron_hearted_vanguard_knight",
+      "text": "{iron_hearted_vanguard_knight.name}在你身边坐下，擦着头盔：“今天天气不错，难得。”"
+    },
+    {
+      "id": "hd_grim_heavy_gunner",
+      "kind": "approach",
+      "slot": "grim_heavy_gunner",
+      "text": "{grim_heavy_gunner.name}掏出一副旧扑克牌：“轮休，来两局？”"
+    },
+    {
+      "id": "hd_last_defense_combat_medic",
+      "kind": "approach",
+      "slot": "last_defense_combat_medic",
+      "text": "{last_defense_combat_medic.name}递给你一小罐药膏：“冻疮用的，每晚抹一次。”"
+    },
+    {
+      "id": "hd_last_steam_cavalry_pilot",
+      "kind": "approach",
+      "slot": "last_steam_cavalry_pilot",
+      "text": "{last_steam_cavalry_pilot.name}靠着机甲的腿冲你招手：“来，坐上来看看驾驶舱。”"
     }
   ],
   "twists": [

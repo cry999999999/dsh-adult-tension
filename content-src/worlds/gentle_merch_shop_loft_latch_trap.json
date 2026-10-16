@@ -1700,56 +1700,66 @@
   "daily_activities": [
     {
       "id": "act_gu_wan_qing_pries_latch_tongue",
-      "title": "仓储阁楼冲压钢杆下压撬动重力自锁舌",
+      "title": "阁楼里清点吧唧",
       "location_ids": [
         "loc_anime_merch_loft_storage_floor"
       ],
       "duration_minutes": 15,
       "beats": [
-        "使用淬火高碳合金钢冲压手柄硬柄深深插入吊门导轨底槽限位孔内",
-        "二人合力向下方倾斜三十度施加静载杠杆力矩顶起抱死重力舌",
-        "在自锁卡爪退齿气压松脱瞬间合抱不锈钢吊门向外推开完成逃生"
+        "首发前一晚，店长坐在二楼阁楼的理货台前，把几千枚吧唧按角色分装进小袋。",
+        "店长一边装一边念叨每个角色的名字，碰到自己最喜欢的那个，会多看两眼。",
+        "装完一箱，店长伸了个懒腰，说今晚大概又要通宵了。"
       ],
-      "hook_ids": [],
-      "start_minute": 1260,
+      "hook_ids": [
+        "hook_bai_hands_wet_towel_water",
+        "hook_bozhou_lift_excuse",
+        "hook_gu_and_crew_thrust_downward"
+      ],
+      "start_minute": 1200,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {
       "id": "act_ruan_loosens_rail_bracket_bolts",
-      "title": "井口平台快速旋松导轨侧向定位夹紧螺栓",
+      "title": "师傅来修吊门",
       "location_ids": [
         "loc_loft_vertical_lift_shaft_landing"
       ],
       "duration_minutes": 15,
       "beats": [
-        "工程师在井口用长柄套筒扳手连续旋松门框四枚受热膨胀螺栓",
-        "向紧咬的铸铁滑道槽内注入高压渗透润滑剂化解金属干涩摩擦",
-        "通过防爆对讲机向内侧通报自锁重锤咬合阻力已降低的下压时机"
+        "机电师傅被叫来修货运吊门，一边拧螺丝一边说这门比自己的年纪还大。",
+        "店长端来一杯热奶茶，师傅说不喝甜的，店长又去换了一杯茶。",
+        "修好了，吊门上下跑了两趟，师傅收拾工具说：以后有事再喊我。"
       ],
-      "hook_ids": [],
-      "start_minute": 1262,
+      "hook_ids": [
+        "hook_bozhou_lift_excuse",
+        "hook_ruan_loosens_rail_bolts_call",
+        "hook_wanqing_hidden_badge"
+      ],
+      "start_minute": 1140,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {
       "id": "act_xu_seals_badge_box_securely",
-      "title": "理货台前限量首发马口铁徽章硬箱防护",
+      "title": "帮店长打包",
       "location_ids": [
         "loc_anime_merch_loft_storage_floor"
       ],
       "duration_minutes": 15,
       "beats": [
-        "细心将整箱首发限量珍藏吧唧推入高密度防震密封硬质周转箱内",
-        "半蹲在店长身后高举战术防爆手电将雪亮光束聚焦在导轨限位孔",
-        "抽出浸湿丝帕覆在店长口鼻处轻声鼓励稳住团队情绪"
+        "排队的老顾客实在等不住，跑上阁楼来帮店长打包。",
+        "两人一个装袋一个封口，配合得越来越快，店长笑着说要给帮手发工资。",
+        "封完最后一箱，帮手问能不能先买一枚，店长假装板起脸：明早排队去。"
       ],
-      "hook_ids": [],
-      "start_minute": 1261,
+      "hook_ids": [
+        "hook_bai_hands_wet_towel_water",
+        "hook_bozhou_lift_excuse",
+        "hook_gu_and_crew_thrust_downward"
+      ],
+      "start_minute": 1260,
       "tags": [
         "workplace"
       ]
@@ -1775,21 +1785,24 @@
     },
     {
       "id": "act_song_deploys_smoke_exhaust_fan",
-      "title": "检修走廊便携式防爆正压排烟风机架设",
+      "title": "钢梯边的长队",
       "location_ids": [
         "loc_backstage_merch_inspection_aisle"
       ],
       "duration_minutes": 15,
       "beats": [
-        "特勤队员将大风量排烟风机对准百叶窗风道接通风管全功率抽吸",
-        "手握对讲手咪隔着观察窗向内侧沉着倒数读秒引导双侧同步发力",
-        "在门缝初开瞬间合力拉动外门把手协助将沉重吊门顺畅推开生路"
+        "店门外的长队从傍晚排到了街角，有人带着折叠椅和睡袋准备通宵。",
+        "店长从外侧钢梯走下来，给排队的人每人发一瓶热饮。",
+        "队伍里有人认出店长，喊着加油，店长红着脸挥了挥手。"
       ],
-      "hook_ids": [],
-      "start_minute": 1264,
+      "hook_ids": [
+        "hook_bozhou_lift_excuse",
+        "hook_song_calibrates_smoke_fan_run",
+        "hook_wanqing_hidden_badge"
+      ],
+      "start_minute": 1170,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {

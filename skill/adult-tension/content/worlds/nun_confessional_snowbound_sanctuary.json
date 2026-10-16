@@ -1329,25 +1329,28 @@
  "daily_activities": [
   {
    "beats": [
-    "暴风雪封山孤立修道院，负伤青年学者逃入昏暗忏悔室告解席，修女隔着木格栅聆听喘息。",
-    "见学者受冻濒死，修女手画十字掰开仅存未发酵圣餐面饼，从格栅缝隙小心捧送喂入其唇中。",
-    "暴风雪撞裂窗棂吹熄蜡烛，严寒侵袭，二人隔着雕花木格栅伸出冻僵手指紧紧相扣传递微温。"
+    "雪封山的第二天清晨，艾格尼丝在告解室里做晨祷，烛火在格栅上投下细细的影子。",
+    "学者坐在格栅另一侧，安静地听着修女念完祷词。",
+    "祷告结束，艾格尼丝隔着格栅递过来半块刚烤的面包：吃吧，还热着。"
    ],
    "duration_minutes": 45,
    "hook_ids": [
-    "h_agnes_sacramental_bread_break_whisper",
-    "h_malachi_iron_blade_strike_shout",
-    "h_elias_ointment_jar_tapping_whisper"
+    "hd_pure_novice_nun_agnes",
+    "hd_apothecary_herbalist_cadet_elias",
+    "hd_inquisition_zealot_prior_malachi",
+    "hd_vice_abbess_ursula_keys",
+    "hd_knight_deserter_protector_reinhart",
+    "hd_mountain_guide_brandt_rescue"
    ],
    "id": "a_entry_confessional_screen_bread_sharin",
    "location_ids": [
     "wooden_confessional_screen_alcove"
    ],
-   "start_minute": 1380,
+   "start_minute": 360,
    "tags": [
     "intimate"
    ],
-   "title": "闭锁告解木室格栅分食圣餐面饼"
+   "title": "告解室里的晨祷"
   },
   {
    "beats": [
@@ -1395,31 +1398,30 @@
   },
   {
    "beats": [
-    "审判官率领行刑卫士持火把踹开忏悔室空门，发现血迹一路追踪至地下石窟铁闸入口。",
-    "骑士莱因哈特阔剑暴鸣一剑削断敌酋钉头锤，学者与修女合力在门内斩断钢缆拉下生铁落闸。",
-    "追兵被彻底阻绝在厚重铁闸之外，愤怒的咒骂声在空旷哥特式拱顶大殿内无力回荡。"
+    "风雪从破窗灌进来，在中殿的石地上积了薄薄一层。",
+    "骑士莱因哈特拿着扫帚扫雪，学者和修女在一旁用木板钉住窗棂。",
+    "活干完了，三人坐在讲坛的台阶上分一壶热葡萄酒。"
    ],
    "duration_minutes": 35,
    "hook_ids": [
     "h_reinhart_greatsword_stone_strike",
-    "h_malachi_iron_blade_strike_shout",
     "h_agnes_sacramental_bread_break_whisper"
    ],
    "id": "a_nave_corridor_zealot_ambush_repelled",
    "location_ids": [
     "chapel_nave_pulpit_hall"
    ],
-   "start_minute": 70,
+   "start_minute": 720,
    "tags": [
     "workplace_power"
    ],
-   "title": "圣殿大堂回廊飞剑断闸阻截狂徒"
+   "title": "中殿里扫雪"
   },
   {
    "beats": [
-    "全员来到后山石窟暗门，狂风暴雪中下方是深达百丈但覆盖松软厚雪的山谷斜坡。",
-    "骑士将牛皮长索固定在千年石柱上，学者用安全索把修女系在自己身前，二人合力顺着绳索索降。",
-    "绳索摩擦出白烟，二人在风雪呼啸中安然落入厚达数尺的松软雪窝之中顺利脱险。"
+    "抄经地窖里只有一盏油灯，艾格尼丝伏在长桌上抄写今年的圣歌集。",
+    "学者坐在对面，替修女研磨墨水，偶尔指出一个拼错的拉丁词。",
+    "艾格尼丝红着脸改过来，小声说：你懂的东西真多。"
    ],
    "duration_minutes": 30,
    "hook_ids": [
@@ -1431,17 +1433,17 @@
    "location_ids": [
     "catacomb_scriptorium_crypt"
    ],
-   "start_minute": 105,
+   "start_minute": 900,
    "tags": [
     "intimate"
    ],
-   "title": "后山绝壁牛皮长索暴雪索降逃生"
+   "title": "地窖里抄经"
   },
   {
    "beats": [
-    "暴风雪骤停，朝阳金辉普照阿尔卑斯雄浑雪峰，山谷林间升起静谧炊烟与鸟鸣。",
-    "艾格尼丝暖过身子、神志清明，亲手摘下洁白修女头巾任青丝披散，将银质十字架戴在身旁青年颈间，含泪吻了上去。",
-    "学者展开油布星图指向东方开阔大道，二人相视含笑，携手踏上前往自由城邦之崭新人生旅程。"
+    "雪终于停了，艾格尼丝爬上钟楼敲响了晨钟，钟声在雪谷里回荡。",
+    "学者站在告解室门口，看着阳光照在雪峰上。",
+    "艾格尼丝下来时脸冻得通红，笑着说：山下的人听到钟声，就知道我们还好。"
    ],
    "duration_minutes": 25,
    "hook_ids": [
@@ -1453,11 +1455,11 @@
    "location_ids": [
     "wooden_confessional_screen_alcove"
    ],
-   "start_minute": 135,
+   "start_minute": 420,
    "tags": [
     "intimate"
    ],
-   "title": "破晓雪岭解冠卸巾终身盟誓"
+   "title": "雪停后的钟声"
   }
  ],
  "default_npc_gender_mix": {
@@ -1620,6 +1622,48 @@
    ],
    "slot": "apothecary_herbalist_cadet_elias",
    "text": "{apothecary_herbalist_cadet_elias.name}守在石窟拱门石壁拐角，双手合拢呵出白汽温热药罐，眼神清澈纯善，在摇曳昏黄油灯映照下宛若一位守护黑夜生机的年轻引路使者。"
+  },
+  {
+   "id": "hd_pure_novice_nun_agnes",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "pure_novice_nun_agnes",
+   "text": "{pure_novice_nun_agnes.name}捧着一盏新点的烛台走到你身边，小声说：“晚祷前还有一会儿，陪我坐坐好吗？”"
+  },
+  {
+   "id": "hd_apothecary_herbalist_cadet_elias",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "apothecary_herbalist_cadet_elias",
+   "text": "{apothecary_herbalist_cadet_elias.name}把一包晒干的薄荷递给你：“泡水喝，冬天嗓子不干。”"
+  },
+  {
+   "id": "hd_inquisition_zealot_prior_malachi",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "inquisition_zealot_prior_malachi",
+   "text": "{inquisition_zealot_prior_malachi.name}把一本祈祷书放在你面前：“今日的经文，你来念一段。”"
+  },
+  {
+   "id": "hd_vice_abbess_ursula_keys",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "vice_abbess_ursula_keys",
+   "text": "{vice_abbess_ursula_keys.name}把一串钥匙挂回腰间，冲你点头：“厨房留了热汤，去喝一碗。”"
+  },
+  {
+   "id": "hd_knight_deserter_protector_reinhart",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "knight_deserter_protector_reinhart",
+   "text": "{knight_deserter_protector_reinhart.name}劈完一堆柴，在你身边坐下：“雪停了，山景不错。”"
+  },
+  {
+   "id": "hd_mountain_guide_brandt_rescue",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "mountain_guide_brandt_rescue",
+   "text": "{mountain_guide_brandt_rescue.name}把一副新编的雪鞋递给你：“试试合不合脚。”"
   }
  ],
  "id": "nun_confessional_snowbound_sanctuary",

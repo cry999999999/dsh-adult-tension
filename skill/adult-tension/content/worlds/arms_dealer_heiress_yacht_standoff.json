@@ -1350,47 +1350,53 @@
   },
   {
    "beats": [
-    "气割火焰烧穿门缝，千金从晚礼服内衬暗袋拆出微型芯片，按上指纹塞进青年战术背心，完成授权。",
-    "千金从高跟鞋暗格拔出备用弹匣递给青年，二人并肩在红光下压弹上膛做最后殊死一搏准备。",
-    "青年将防暴小盾卡在门前，千金手握自卫手枪将身子紧紧贴在青年战甲阴影后屏息凝神。"
+    "台风来临前，千金带着贴身保镖巡视游艇的安全屋，检查通讯和备用电源。",
+    "千金拿起桌上的芯片盒晃了晃，说这东西比整艘船都值钱。",
+    "检查做完，千金在安全屋的沙发上坐下，让保镖陪自己喝一杯。"
    ],
    "duration_minutes": 30,
    "hook_ids": [
-    "h_kristina_chip_whisper",
-    "h_marcus_thermite_torch_creak_hiss",
-    "h_eriksen_intercom_reef_call"
+    "hd_arms_dealer_heiress_kristina_vance",
+    "hd_senior_yacht_captain_eriksen_loyal",
+    "hd_mutinous_security_director_marcus_bla",
+    "hd_defecting_sniper_kasim",
+    "hd_naval_fleet_rescue_commander_valentin",
+    "hd_yacht_medic_signe"
    ],
    "id": "a_chip_transfer_and_slide_rack_reload",
    "location_ids": [
     "panic_room_command_citadel_deck_three"
    ],
-   "start_minute": 25,
+   "start_minute": 1140,
    "tags": [
     "intimate"
    ],
-   "title": "晚礼服内衬暗袋取出芯片压弹待命"
+   "title": "巡视安全屋"
   },
   {
    "beats": [
-    "门板崩飞瞬间青年举盾冲撞撞翻打头暴徒，千金单手据枪连开三枪精准爆头击毙两名海盗。",
-    "青年甩出战术折刀将马库斯手枪斩落，反手一记重拳将其轰翻在地彻底瓦解外围防线。",
-    "二人交替掩护穿过弹痕累累之主沙龙大厅，迅速沿着逃生检修梯滑入底层漆黑轮机舱。"
+    "风暴前最后一个平静的傍晚，主沙龙里摆好了长桌晚餐，船长和千金分坐两端。",
+    "千金挑剔地退回了一瓶红酒，换上自己带上船的那一瓶。",
+    "晚餐后，千金把保镖叫到舷窗边，指着远处说那片云明天会变成台风。"
    ],
    "duration_minutes": 25,
    "hook_ids": [
-    "h_marcus_thermite_torch_creak_hiss",
-    "h_kristina_glock_aim_draw",
-    "h_eriksen_intercom_reef_call"
+    "hd_arms_dealer_heiress_kristina_vance",
+    "hd_senior_yacht_captain_eriksen_loyal",
+    "hd_mutinous_security_director_marcus_bla",
+    "hd_defecting_sniper_kasim",
+    "hd_naval_fleet_rescue_commander_valentin",
+    "hd_yacht_medic_signe"
    ],
    "id": "a_corridor_saloon_door_breach_firefight",
    "location_ids": [
     "panic_room_command_citadel_deck_three"
    ],
-   "start_minute": 55,
+   "start_minute": 1110,
    "tags": [
     "intimate"
    ],
-   "title": "装甲门开瞬间双枪齐射破门反杀"
+   "title": "主沙龙的晚餐"
   },
   {
    "beats": [
@@ -1416,25 +1422,28 @@
   },
   {
    "beats": [
-    "二人冲入主驾驶台协助身负重伤之埃里克森船长，三人合力拼死转动舵轮将舵角打满到极致。",
-    "游艇剧烈侧倾带起滔天浪花与黑鲨礁尖锐岩角以三米距离险险擦肩而过，保全全船龙骨完好。",
-    "游艇终于冲出暴风雨最猛烈锋面穿入平静台风眼，三人脱力瘫坐在驾驶台上相视开怀大笑。"
+    "千金难得走进底舱，看轮机长检查两台主机。",
+    "轰鸣声里说话要贴着耳朵，千金凑过来问保镖：你会修这个吗？",
+    "轮机长笑着递来一副耳罩，千金戴上后安静地看完了整个检修。"
    ],
    "duration_minutes": 20,
    "hook_ids": [
-    "h_eriksen_intercom_reef_call",
-    "h_valentin_fleet_radio_boom",
-    "h_kristina_necklace_pin_whisper"
+    "hd_arms_dealer_heiress_kristina_vance",
+    "hd_senior_yacht_captain_eriksen_loyal",
+    "hd_mutinous_security_director_marcus_bla",
+    "hd_defecting_sniper_kasim",
+    "hd_naval_fleet_rescue_commander_valentin",
+    "hd_yacht_medic_signe"
    ],
    "id": "a_wheelhouse_full_rudder_evasion_clash",
    "location_ids": [
-    "main_saloon_bullet_riddled_gallery"
+    "yacht_lower_bilge_engine_compartment"
    ],
-   "start_minute": 110,
+   "start_minute": 900,
    "tags": [
     "workplace_power"
    ],
-   "title": "驾驶台拼死打满满舵险避暗礁绝壁"
+   "title": "轮机舱里看检修"
   },
   {
    "beats": [
@@ -1618,6 +1627,48 @@
    ],
    "slot": "arms_dealer_heiress_kristina_vance",
    "text": "{arms_dealer_heiress_kristina_vance.name}站在破晓金色阳光洒满之停机坪边缘，仰起清冷美眸凝视青年绝美浅笑：“握紧我的手……罗兰！从今往后，无论是公海风浪还是豪门血雨，你都休想再离开我身边半步！”"
+  },
+  {
+   "id": "hd_arms_dealer_heiress_kristina_vance",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "arms_dealer_heiress_kristina_vance",
+   "text": "{arms_dealer_heiress_kristina_vance.name}晃着一杯香槟走到你身边：“今天不谈生意。陪我看会儿海。”"
+  },
+  {
+   "id": "hd_senior_yacht_captain_eriksen_loyal",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "senior_yacht_captain_eriksen_loyal",
+   "text": "{senior_yacht_captain_eriksen_loyal.name}把航海日志合上，冲你点头：“今天风平浪静，来驾驶舱看看？”"
+  },
+  {
+   "id": "hd_mutinous_security_director_marcus_bla",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "mutinous_security_director_marcus_black",
+   "text": "{mutinous_security_director_marcus_black.name}靠着栏杆点了支雪茄，示意你过来：“聊两句，不谈公事。”"
+  },
+  {
+   "id": "hd_defecting_sniper_kasim",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "defecting_sniper_kasim",
+   "text": "{defecting_sniper_kasim.name}坐在甲板角落拉着一把旧手风琴，抬头看你：“想听什么？我只会三首。”"
+  },
+  {
+   "id": "hd_naval_fleet_rescue_commander_valentin",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "naval_fleet_rescue_commander_valentin",
+   "text": "{naval_fleet_rescue_commander_valentin.name}把一杯热咖啡递给你：“例行巡航，顺路来看看你们。”"
+  },
+  {
+   "id": "hd_yacht_medic_signe",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "yacht_medic_signe",
+   "text": "{yacht_medic_signe.name}拿着体检表冲你招手：“例行检查，五分钟就好，坐下吧。”"
   }
  ],
  "id": "arms_dealer_heiress_yacht_standoff",

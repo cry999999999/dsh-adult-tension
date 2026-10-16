@@ -1465,9 +1465,9 @@
  "daily_activities": [
   {
    "beats": [
-    "八重结界崩塌，巫女长断刀脱力，白衣撕裂，两人挤入半平米神龛石龛帷幔死角",
-    "巫女长因狐火高热滚烫如炉，剑士自后方以胸膛贴住其后背，掌心按覆腰间纯铜神乐铃",
-    "障子门外恶鬼尖爪刮擦而过，巫女长咬住剑士肩头衣料硬忍不发声，两人在咫尺呼吸中运功拔毒"
+    "清晨，巫女长在奥之宫的帷幔后换上新的供花，神乐铃挂在腰间轻轻作响。",
+    "护卫剑士守在帷幔外，听着铃声数着时辰。",
+    "供奉完毕，巫女长掀开帷幔走出来，对剑士说今天的花开得很好。"
    ],
    "duration_minutes": 60,
    "hook_ids": [
@@ -1479,99 +1479,106 @@
    "location_ids": [
     "inner_sanctum_altar_curtain_alcove"
    ],
-   "start_minute": 1430,
+   "start_minute": 360,
    "tags": [
     "intimate"
    ],
-   "title": "神龛帷幔压铃拔毒"
+   "title": "奥之宫的晨间供奉"
   },
   {
    "beats": [
-    "大殿正门被巨鬼轰碎，暴雨倾盆，阴阳巡捕使在断柱后引动冰魄阵盘布下极寒陷阱",
-    "三头嗜血狼妖循血腥味扑入殿内，剑士暴起出刀，拔刀术如惊雷掠空瞬斩双狼",
-    "巫女长勉力运转恢复的三成灵力拾取血泊中的破魔神符，众人合力将功德箱推至残门阻断敌锋"
+    "本殿的榻榻米上，巫女长一遍遍练着秋祭要跳的神乐舞。",
+    "剑士坐在角落里擦刀，偶尔抬头看一眼。",
+    "一曲跳完，巫女长微微喘着气，问剑士哪一段跳得不好。"
    ],
    "duration_minutes": 65,
    "hook_ids": [
-    "hk_inspector_seal_approach",
-    "hk_guard_spear_approach",
-    "hk_honden_blood_observe"
+    "hd_defeated_maiden_head_shizuka",
+    "hd_frontier_court_young_onmyoji_inspecto",
+    "hd_shrine_lodging_swordsman",
+    "hd_herbal_medicine_drifter_wanderer",
+    "hd_loyal_shrine_guard",
+    "hd_disgraced_branch_family_scion"
    ],
    "id": "act_honden_gate_clash",
    "location_ids": [
     "honden_central_tatami_hall"
    ],
-   "start_minute": 5,
+   "start_minute": 900,
    "tags": [
     "workplace"
    ],
-   "title": "暴雨破殿伏击斩妖"
+   "title": "本殿里练神乐舞"
   },
   {
    "beats": [
-    "回廊栈道滑腻如油外临百丈深渊，四只鸦天狗持铁叉自暴雨中俯冲突袭",
-    "旁系少爷拆下廊柱铜管自侧翼掷出毒烟，剑士单臂揽住巫女长贴壁滑行",
-    "近卫长枪挑落领头天狗，全员抢在泥石流冲垮栈道前跃入地下暗渠石门"
+    "梅雨天，巫女长坐在朱红回廊下，看雨水顺着檐角滴成一串。",
+    "剑士端来两杯热茶，在巫女长身边隔着一拳坐下。",
+    "巫女长捧着茶杯，说小时候最喜欢在这里听雨。"
    ],
    "duration_minutes": 55,
    "hook_ids": [
-    "hk_scion_lockpick_approach",
-    "hk_wanderer_needle_approach",
-    "hk_veranda_lanterns_observe"
+    "hd_defeated_maiden_head_shizuka",
+    "hd_frontier_court_young_onmyoji_inspecto",
+    "hd_shrine_lodging_swordsman",
+    "hd_herbal_medicine_drifter_wanderer",
+    "hd_loyal_shrine_guard",
+    "hd_disgraced_branch_family_scion"
    ],
    "id": "act_veranda_tengu_advance",
    "location_ids": [
     "veranda_rain_swept_corridor"
    ],
-   "start_minute": 20,
+   "start_minute": 960,
    "tags": [
     "workplace_power"
    ],
-   "title": "悬崖栈道突破空袭"
+   "title": "回廊下听雨"
   },
   {
    "beats": [
-    "众人抵达地底玄冰寒泉，医者将灵药洒入冰池，剑士将浑身滚烫脱力的巫女长抱入浅滩",
-    "寒泉与妖毒剧烈冲撞引发经脉剧痛，巫女长咬牙忍痛，在剑士臂弯里一寸寸排尽残毒",
-    "双头神蛇被唤醒吐出灵珠，巫女长体温回落、眼神恢复清明，红着脸第一次叫了剑士的名字"
+    "每月朔日，巫女长要在后山寒泉里行禊礼洁身。",
+    "剑士守在秘窟入口，背对着泉水，听见身后的水声停了才敢开口。",
+    "巫女长披着白衣出来，发梢还滴着水，轻声说：走吧，回去了。"
    ],
    "duration_minutes": 50,
    "hook_ids": [
-    "hk_shizuka_awake_request",
-    "hk_swordsman_protect_approach",
     "hk_spring_crystal_observe"
    ],
    "id": "act_spring_vault_cleansing",
    "location_ids": [
     "hidden_underground_spring_vault"
    ],
-   "start_minute": 35,
+   "start_minute": 330,
    "tags": [
     "intimate"
    ],
-   "title": "寒泉药浴洗髓排毒"
+   "title": "寒泉边的禊礼"
   },
   {
    "beats": [
-    "暴雨雷鸣达到极值，最后一道神石即将开裂，巡捕使与旁系少爷合力启动齿轮抬升阵台",
-    "巫女长手持破邪御神印，剑士将纯阳真气与巫女长神血融汇，共同按下阵眼枢纽",
-    "冲天而起的金色华光撕裂地底黑暗贯穿山峰，八重守御天幕轰然重构"
+    "巫女长带着剑士检查寒泉边的白玉阵台，用手抚过每一块封印石。",
+    "有一块石头的纹路淡了，巫女长皱起眉，说秋祭之前得重新描一遍。",
+    "剑士举着灯照着，巫女长用朱砂一笔一笔描完了。"
    ],
    "duration_minutes": 45,
    "hook_ids": [
-    "hk_inspector_seal_approach",
-    "hk_scion_lockpick_approach",
-    "hk_bell_resonance_observe"
+    "hd_defeated_maiden_head_shizuka",
+    "hd_frontier_court_young_onmyoji_inspecto",
+    "hd_shrine_lodging_swordsman",
+    "hd_herbal_medicine_drifter_wanderer",
+    "hd_loyal_shrine_guard",
+    "hd_disgraced_branch_family_scion"
    ],
    "id": "act_spring_altar_reforging",
    "location_ids": [
     "hidden_underground_spring_vault"
    ],
-   "start_minute": 50,
+   "start_minute": 840,
    "tags": [
     "intimate"
    ],
-   "title": "白玉阵台合掌重铸"
+   "title": "描封印石"
   },
   {
    "beats": [
@@ -1771,6 +1778,48 @@
    ],
    "slot": "shrine_lodging_swordsman",
    "text": "破晓的第一道霞光刺破大殿残破的屋脊，将古老神社沐浴在庄严晨晖之中，暴雨后的山林弥漫着清冽的松柏香，朱红鸟居屹立不倒。"
+  },
+  {
+   "id": "hd_defeated_maiden_head_shizuka",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "defeated_maiden_head_shizuka",
+   "text": "{defeated_maiden_head_shizuka.name}把扫帚靠在廊柱上，看了你一眼：“落叶扫不完的。歇一会儿，喝杯茶。”"
+  },
+  {
+   "id": "hd_frontier_court_young_onmyoji_inspecto",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "frontier_court_young_onmyoji_inspector",
+   "text": "{frontier_court_young_onmyoji_inspector.name}把一叠空白符纸递给你：“帮我裁一下，要整齐些。”"
+  },
+  {
+   "id": "hd_shrine_lodging_swordsman",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "shrine_lodging_swordsman",
+   "text": "{shrine_lodging_swordsman.name}坐在檐下擦剑，往旁边让了让，示意你坐下。"
+  },
+  {
+   "id": "hd_herbal_medicine_drifter_wanderer",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "herbal_medicine_drifter_wanderer",
+   "text": "{herbal_medicine_drifter_wanderer.name}把一小包晒干的草药塞给你：“泡水喝，睡得好些。”"
+  },
+  {
+   "id": "hd_loyal_shrine_guard",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "loyal_shrine_guard",
+   "text": "{loyal_shrine_guard.name}提着一篮刚摘的柿子走来：“后山的，熟透了，挑两个。”"
+  },
+  {
+   "id": "hd_disgraced_branch_family_scion",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "disgraced_branch_family_scion",
+   "text": "{disgraced_branch_family_scion.name}倚着鸟居打了个哈欠：“这山里闷得很，陪我说说话。”"
   }
  ],
  "id": "defeated_shrine_broken_barrier",

@@ -1341,70 +1341,78 @@
  "daily_activities": [
   {
    "beats": [
-    "粗壮的浸毒黑钢缆在万斤巨力拉扯下迸出刺目幽蓝静电火花",
-    "重装勇士双手合抱生铁转轮迎风怒吼合力咬死逆止齿轮",
-    "冰寒烈酒成桶泼在滚烫吃紧的钢缆制动鼓上冒出冲天白汽"
+    "大战前三天，重装勇士们在巨锚阵地上点名，绞盘边堆满了刚运到的黑钢缆。",
+    "老兵给新兵演示怎么缠缆，新兵手忙脚乱地跟着学。",
+    "点完名，伙夫抬来一桶热汤，众人围着绞盘喝了个精光。"
    ],
    "duration_minutes": 45,
    "hook_ids": [
-    "h_marshal_blade_oath",
-    "h_shield_wall_slam",
-    "h_valkyrie_spear_leap",
-    "h_marshal_horn_pass"
+    "hd_grand_marshal_augustus",
+    "hd_valkyrie_blade_maiden",
+    "hd_veteran_shield_wall_colossus",
+    "hd_unyielding_blood_banner_herald",
+    "hd_crazed_ballista_engineer",
+    "hd_apothecary_blood_alchemist"
    ],
    "id": "a_anchor_cable_tension_lock",
    "location_ids": [
     "abyssal_anchor_redoubt"
    ],
-   "start_minute": 1385,
+   "start_minute": 420,
    "tags": [
     "workplace"
    ],
-   "title": "地渊三十六巨锚受力绞盘巡检"
+   "title": "巨锚阵地的晨点"
   },
   {
    "beats": [
-    "万度流金劫炎如火瀑狂暴倾泻将玄冰熔化为百米深渊沸水",
-    "先锋突击手踏碎碎冰在龙尾横扫间隙递出折断的精钢长枪",
-    "古龙狂暴嘶吼震碎千斤岩壁激起漫天绚烂致命冰雹风暴"
+    "黄昏时，先锋队沿着陨坑边缘巡营，坑底积着冰冷的雪水。",
+    "突击手捡起一块被龙焰烧成琉璃的石头，说要带回家给妹妹。",
+    "巡营结束，几个人坐在坑边分一壶酒，谁也没提三天后的事。"
    ],
    "duration_minutes": 55,
    "hook_ids": [
-    "h_valkyrie_spear_leap",
-    "h_herald_banner_roar",
-    "h_shield_wall_slam",
-    "h_marshal_horn_pass"
+    "hd_grand_marshal_augustus",
+    "hd_valkyrie_blade_maiden",
+    "hd_veteran_shield_wall_colossus",
+    "hd_unyielding_blood_banner_herald",
+    "hd_crazed_ballista_engineer",
+    "hd_apothecary_blood_alchemist"
    ],
    "id": "a_crater_basin_hellfire_skirmish",
    "location_ids": [
     "fallen_dragon_crater_basin"
    ],
-   "start_minute": 1405,
+   "start_minute": 1050,
    "tags": [
     "violence"
    ],
-   "title": "深坑熔岩火海先锋破鳞突刺"
+   "title": "陨坑边巡营"
   },
   {
    "beats": [
-    "十米长的流星陨铁长箭在滑轮组牵引下发出沉重金属铿锵",
-    "疯匠转动黄铜测距镜迎着狂风暴雪大声报出下坠射角参数",
-    "重锤狠狠砸下将涂满灭神剧毒的箭簇卡入击发卡榫滑槽"
+    "疯匠在悬崖弩台上调试新到的重弩，嘴里念叨着射角和风速。",
+    "来帮忙的人被支使着搬了一下午箭杆，累得坐在地上。",
+    "疯匠扔过来一块干肉：干得不错，明天还来。"
    ],
    "duration_minutes": 40,
    "hook_ids": [
-    "h_engineer_wrench_slam",
-    "h_valkyrie_hairband_trust"
+    "hd_grand_marshal_augustus",
+    "hd_valkyrie_blade_maiden",
+    "hd_veteran_shield_wall_colossus",
+    "hd_unyielding_blood_banner_herald",
+    "hd_crazed_ballista_engineer",
+    "hd_apothecary_blood_alchemist"
    ],
    "id": "a_ballista_cliff_turret_elevation",
    "location_ids": [
     "ballista_cliff_turret"
    ],
-   "start_minute": 1420,
+   "start_minute": 840,
    "tags": [
     "workplace"
    ],
-   "title": "绝壁高空裂星重箭滑轨校准"
+   "title": "弩台上调试重弩"
   },
   {
    "beats": [
@@ -1431,44 +1439,48 @@
   },
   {
    "beats": [
-    "纯银弯刀直接划开被龙火烧熔铁甲下的焦黑皮肉引流浓毒",
-    "药剂师将冰髓软膏大把抹在伤员溃烂前胸激起刺鼻白烟",
-    "重伤勇士死死咬碎嘴里战刀握柄浑身肌肉紧绷一声不吭"
+    "前几天的小规模冲突留下了几个伤兵，药剂师在帐篷里挨个换药。",
+    "伤兵们嚷着要喝酒，药剂师只给了每人半杯。",
+    "有人唱起家乡的歌，帐篷里慢慢安静了下来。"
    ],
    "duration_minutes": 30,
    "hook_ids": [
-    "h_alchemist_scalpel_quench"
+    "hd_grand_marshal_augustus",
+    "hd_valkyrie_blade_maiden",
+    "hd_veteran_shield_wall_colossus",
+    "hd_unyielding_blood_banner_herald",
+    "hd_crazed_ballista_engineer",
+    "hd_apothecary_blood_alchemist"
    ],
    "id": "a_dragonblood_cauterization_triage",
    "location_ids": [
     "abyssal_anchor_redoubt"
    ],
-   "start_minute": 5,
+   "start_minute": 1200,
    "tags": [
     "bodily_harm"
    ],
-   "title": "深渊阵地玄冰扑火与沸血急救"
+   "title": "伤兵帐里换药"
   },
   {
    "beats": [
-    "粗粝金刚石在长达两米的神圣巨剑刃口上拉出炽烈金色火星",
-    "大统领割破掌心以自身精血顺着七重破邪金符文逐一抹过",
-    "剑身在鲜血与极光映照下迸发出如繁星般璀璨的白炽剑芒"
+    "大统领在集结台上用磨石打磨那把两米长的圣剑，一下一下很有耐心。",
+    "传令兵送来家书，大统领看完折好，放进胸甲里。",
+    "磨完剑，大统领抬头看着峡谷上空的极光，说今晚的天真好看。"
    ],
    "duration_minutes": 25,
    "hook_ids": [
-    "h_marshal_blade_oath",
-    "h_alchemist_scalpel_quench"
+    "h_marshal_blade_oath"
    ],
    "id": "a_godfall_sacred_blade_tuning",
    "location_ids": [
     "canyon_rampart_command"
    ],
-   "start_minute": 15,
+   "start_minute": 1260,
    "tags": [
     "substance"
    ],
-   "title": "天谴断罪两米双手圣剑开刃血祭"
+   "title": "集结台上磨剑"
   }
  ],
  "default_npc_gender_mix": {
@@ -1591,6 +1603,48 @@
    ],
    "slot": "unyielding_blood_banner_herald",
    "text": "在火浪滚滚的战旗高台边缘，{unyielding_blood_banner_herald.name}正独自用干裂淌血的嘴唇，颤抖而虔诚地长久亲吻那面被龙火焚得焦黑破碎、却依旧迎风猎猎狂舞的纯金日轮图案。"
+  },
+  {
+   "id": "hd_grand_marshal_augustus",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "grand_marshal_augustus",
+   "text": "{grand_marshal_augustus.name}把一碗热汤递到你手里：“今天不操练。喝完陪我在营地里走走。”"
+  },
+  {
+   "id": "hd_valkyrie_blade_maiden",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "valkyrie_blade_maiden",
+   "text": "{valkyrie_blade_maiden.name}坐在你身边，把发辫解开又重新编好：“帮我看看，后面歪了没有？”"
+  },
+  {
+   "id": "hd_veteran_shield_wall_colossus",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "veteran_shield_wall_colossus",
+   "text": "{veteran_shield_wall_colossus.name}拍拍身边的木墩：“坐，给你讲讲我年轻时候的事。”"
+  },
+  {
+   "id": "hd_unyielding_blood_banner_herald",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "unyielding_blood_banner_herald",
+   "text": "{unyielding_blood_banner_herald.name}把军旗卷好放在一旁：“陪我唱支家乡的歌吧，你会吗？”"
+  },
+  {
+   "id": "hd_crazed_ballista_engineer",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "crazed_ballista_engineer",
+   "text": "{crazed_ballista_engineer.name}拿着一张图纸冲你招手：“来来，你看我这个新绞盘，妙不妙？”"
+  },
+  {
+   "id": "hd_apothecary_blood_alchemist",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "apothecary_blood_alchemist",
+   "text": "{apothecary_blood_alchemist.name}递给你一小瓶药膏：“冻疮用的，每晚抹一次。”"
   }
  ],
  "id": "dragonsfall_blood_banner",

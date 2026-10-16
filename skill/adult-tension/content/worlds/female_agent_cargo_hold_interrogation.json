@@ -1463,31 +1463,34 @@
   },
   {
    "beats": [
-    "机械师海燕顺着竖井铁梯探身而下，递过专用润滑松锈剂与生铁重锤协助卡死进水阀连杆。",
-    "破译员潜入水底在少校脚力借力蹬踏下猛烈转动旁通手轮，滚滚激流喷涌冲击被成功压制半数流量。",
-    "脚镣最后一道卡齿伴随清脆机械脆响终于应声弹开，少校重获自由在水底与同伴十指紧扣浮出水面。"
+    "风暴来临前三天，机械师海燕顺着竖井铁梯下到管道层，给每一道阀门上油。",
+    "海燕一边干活一边哼着家乡的渔歌，扳手敲在铁管上当拍子。",
+    "检修做完，海燕爬上来擦着手说：这条破船，全靠我这双手撑着。"
    ],
    "duration_minutes": 50,
    "hook_ids": [
-    "h_leona_shaft_wrench_tapping_signal",
-    "h_ruobing_knife_grip_barefoot_stand",
-    "h_viktor_electric_prod_water_arc"
+    "hd_tsundere_elite_agent_ruobing",
+    "hd_undercover_ship_mechanic_leona",
+    "hd_interrogation_officer_viktor",
+    "hd_rival_intelligence_analyst_marcus",
+    "hd_renegade_arms_heiress_clara",
+    "hd_veteran_quartermaster_hans"
    ],
    "id": "a_flood_intake_bypass_valve_sabotage",
    "location_ids": [
     "submerged_pipe_maintenance_shaft"
    ],
-   "start_minute": 1405,
+   "start_minute": 900,
    "tags": [
     "workplace"
    ],
-   "title": "通海截门手动破障"
+   "title": "竖井里的例行检修"
   },
   {
    "beats": [
-    "脱困二人翻越水密天窗潜入辅机锅炉舱，机器轰鸣声中热浪水汽蒸腾令人视线受阻。",
-    "敌对机构专员马库斯在转角拔枪逼退尾随雇佣兵，配合二人合力拉下高压主变压器紧急制动断路电闸。",
-    "全船探照灯与监控系统瞬间炸碎火花陷入绝对漆黑，暴风雨中唯有枪火如闪电般在走廊频频亮起。"
+    "辅机锅炉舱里热得像蒸笼，值班的人光着膀子靠在配电柜边打牌。",
+    "马库斯输了三把，把烟盒往桌上一扔，说今天手气背到家了。",
+    "有人推门进来送冰水，锅炉舱里一阵欢呼。"
    ],
    "duration_minutes": 35,
    "hook_ids": [
@@ -1499,39 +1502,42 @@
    "location_ids": [
     "engine_auxiliary_boiler_room"
    ],
-   "start_minute": 15,
+   "start_minute": 840,
    "tags": [
     "workplace"
    ],
-   "title": "锅炉机舱拉闸断电"
+   "title": "锅炉舱的午后"
   },
   {
    "beats": [
-    "冲上露天主甲板的特工二人直面数米高狂涛黑浪拍击，军火商千金克拉拉操持重机枪扫清艇库通道。",
-    "匪首维克托率领残余亡命徒在集装箱后疯狂扫射阻击，被少校甩出的钛合金短刀精准贯穿手腕击落枪械。",
-    "老士官汉斯用身体死死挡住卡死的脱钩缆绳，挥动军刀割断起吊缆绳将突击快艇猛烈砸入怒海波涛。"
+    "海面平静的傍晚，船员们三三两两坐在集装箱边吹风，克拉拉靠着栏杆抽烟。",
+    "老士官汉斯在一旁钓鱼，钓上来一条巴掌大的鲭鱼，引得一片起哄。",
+    "太阳沉进海里，汉斯收起鱼竿，说明天的风向要变了。"
    ],
    "duration_minutes": 40,
    "hook_ids": [
-    "h_clara_whisky_bottle_smash_roar",
-    "h_hans_scuba_pack_lower_hatch",
-    "h_viktor_truth_serum_syringe_flick"
+    "hd_tsundere_elite_agent_ruobing",
+    "hd_undercover_ship_mechanic_leona",
+    "hd_interrogation_officer_viktor",
+    "hd_rival_intelligence_analyst_marcus",
+    "hd_renegade_arms_heiress_clara",
+    "hd_veteran_quartermaster_hans"
    ],
    "id": "a_deck_gangway_typhoon_firefight",
    "location_ids": [
     "upper_weather_deck_cargo_gangway"
    ],
-   "start_minute": 50,
+   "start_minute": 1080,
    "tags": [
     "workplace_power"
    ],
-   "title": "狂暴主甲板起吊交火"
+   "title": "甲板上看落日"
   },
   {
    "beats": [
-    "全员飞身纵跃跳入怒涛快艇，双发大马力柴油引擎爆发出万钧怒吼迎着十级巨浪破浪狂飙腾空。",
-    "翻沉中的万吨间谍货轮在身后爆炸断裂沉入千米海沟，巨型漩涡被快艇喷射推进器远远甩在身后。",
-    "初升旭日穿透公海铅云万丈霞光洒满大洋，突击艇平稳靠上我方万吨巡逻舰舷梯，少校昂首敬礼同袍相拥凯旋。"
+    "天刚亮，甲板上的露水还没干，起重机走道上空荡荡的。",
+    "少校端着一杯速溶咖啡走上甲板，看着远处海天交界处一线鱼肚白。",
+    "身后传来脚步声，少校没回头，只说：这个时间的海最好看。"
    ],
    "duration_minutes": 30,
    "hook_ids": [
@@ -1543,11 +1549,11 @@
    "location_ids": [
     "upper_weather_deck_cargo_gangway"
    ],
-   "start_minute": 90,
+   "start_minute": 330,
    "tags": [
     "workplace_power"
    ],
-   "title": "晨曦怒涛登舰凯旋"
+   "title": "清晨的甲板"
   }
  ],
  "default_npc_gender_mix": {
@@ -1712,6 +1718,48 @@
    ],
    "slot": "veteran_quartermaster_hans",
    "text": "{veteran_quartermaster_hans.name}单手死死拽住快艇起吊钢缆，任由崩断的铁丝在满是弹片疤痕的面颊上划开血痕，魁梧如铁塔般的身躯巍然屹立在滔天巨浪之前，眼神透着视死如归的悲壮决绝。"
+  },
+  {
+   "id": "hd_tsundere_elite_agent_ruobing",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "tsundere_elite_agent_ruobing",
+   "text": "{tsundere_elite_agent_ruobing.name}把一杯热咖啡放在你桌上，别过脸：“多冲了一杯，不喝就倒掉。”"
+  },
+  {
+   "id": "hd_undercover_ship_mechanic_leona",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "undercover_ship_mechanic_leona",
+   "text": "{undercover_ship_mechanic_leona.name}擦着手上的油污冲你招手：“来帮我扶一下这块挡板。”"
+  },
+  {
+   "id": "hd_interrogation_officer_viktor",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "interrogation_officer_viktor",
+   "text": "{interrogation_officer_viktor.name}把一份船员名册递给你：“例行点名，帮我核一下。”"
+  },
+  {
+   "id": "hd_rival_intelligence_analyst_marcus",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "rival_intelligence_analyst_marcus",
+   "text": "{rival_intelligence_analyst_marcus.name}靠在舷窗边冲你举杯：“同行，今天不谈公事，喝一杯？”"
+  },
+  {
+   "id": "hd_renegade_arms_heiress_clara",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "renegade_arms_heiress_clara",
+   "text": "{renegade_arms_heiress_clara.name}晃着一杯红酒走过来：“船上无聊得很，陪我聊聊天。”"
+  },
+  {
+   "id": "hd_veteran_quartermaster_hans",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "veteran_quartermaster_hans",
+   "text": "{veteran_quartermaster_hans.name}把一件干净的工作服丢给你：“换上，你那件该洗了。”"
   }
  ],
  "id": "female_agent_cargo_hold_interrogation",

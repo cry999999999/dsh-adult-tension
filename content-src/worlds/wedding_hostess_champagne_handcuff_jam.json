@@ -1767,17 +1767,22 @@
     },
     {
       "id": "act_wing_shadow_drape_snag_incident",
-      "title": "候场侧幕鱼尾裙走位与流苏死锁绞合",
+      "title": "婚礼前的彩排",
       "location_ids": [
         "loc_stage_wing_control_corner"
       ],
       "duration_minutes": 5,
       "beats": [
-        "司仪步入候场通道时鱼尾长裙裙摆拂过香槟塔底座滑轮边缘",
-        "后腰纯银手铐细链猛烈刮蹭加重金丝绒桌布的镂空铜质倒钩卡死"
+        "婚礼前一天，首席司仪在侧幕里走位，对着空荡荡的宴会厅念开场白。",
+        "工作人员在主舞台上搭香槟塔，一只只水晶杯小心地摞上去。",
+        "司仪念完开场白，转身看着那座香槟塔，说明天它会是全场最亮的东西。"
       ],
-      "hook_ids": [],
-      "start_minute": 1155,
+      "hook_ids": [
+        "hook_02_silk_velvet_drape_entangle",
+        "hook_03_silver_hairpin_drawn",
+        "hook_04_director_protective_blockade"
+      ],
+      "start_minute": 900,
       "tags": []
     },
     {

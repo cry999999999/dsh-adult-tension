@@ -1427,113 +1427,123 @@
  "daily_activities": [
   {
    "beats": [
-    "随侍护送千金退入地下五层钛合金重型金库，反手锁死第一道防爆泄压转轮手栓。",
-    "千金双手被真丝领带死结缠掌在核心保险箱铜把手旁，昂起绝美下巴严令随侍立刻割断绳结。",
-    "随侍顶住锁杆持刀割断领带，彼此在冷白灯光下心跳呼吸近在咫尺。"
+    "控股权转让签约前夜，千金带着法务秘书下到金库，核对保险箱里的原件。",
+    "千金一页页翻着股权证书，秘书在旁边逐项打勾。",
+    "核对完毕，千金合上箱子，说明天之后这里的一切就都归自己了。"
    ],
    "duration_minutes": 45,
    "hook_ids": [
-    "h_eunchae_tie_bound_chin_lift",
-    "h_minjun_thermite_torch_spark_shout",
-    "h_sung_intercom_sweet_betrayal"
+    "hd_tsundere_chaebol_heiress_eunchae",
+    "hd_vault_designer_engineer_jisoo",
+    "hd_traitorous_managing_director_sung",
+    "hd_rebel_heist_leader_minjun",
+    "hd_undercover_prosecutor_liaison_dohyun",
+    "hd_loyal_senior_chauffeur_uncle_bae"
    ],
    "id": "a_entry_tie_binding_hostage_parley",
    "location_ids": [
     "reinforced_titanium_vault_chamber"
    ],
-   "start_minute": 1360,
+   "start_minute": 1260,
    "tags": [
     "intimate"
    ],
-   "title": "金库缠掌领带对峙"
+   "title": "签约前夜核对原件"
   },
   {
    "beats": [
-    "主控台氧气储量指针暴跌至红线临界点，室内二氧化碳浓度急剧升高引发剧烈缺氧头痛。",
-    "随侍解下千金身上的高定西装外套覆在其颤抖双肩，将唯一的便携式纯氧面罩先行为千金戴好。",
-    "千金脱力滑落坐在金砖箱旁，拉下半边面罩递给随侍，两人促膝轮流平分微弱氧气。"
+    "文件太多，两人在金库的长桌边坐到了深夜。",
+    "秘书去电梯厅的咖啡机买了两杯，千金嫌太甜，还是喝完了。",
+    "千金靠着椅背揉着眉心，难得说了一句：辛苦你了。"
    ],
    "duration_minutes": 40,
    "hook_ids": [
-    "h_eunchae_oxygen_mask_share_blush",
-    "h_jisoo_duct_wrench_tap_signal",
-    "h_bae_intercom_maybach_roar"
+    "hd_tsundere_chaebol_heiress_eunchae",
+    "hd_vault_designer_engineer_jisoo",
+    "hd_traitorous_managing_director_sung",
+    "hd_rebel_heist_leader_minjun",
+    "hd_undercover_prosecutor_liaison_dohyun",
+    "hd_loyal_senior_chauffeur_uncle_bae"
    ],
    "id": "a_oxygen_dial_triage_embrace",
    "location_ids": [
     "reinforced_titanium_vault_chamber"
    ],
-   "start_minute": 1405,
+   "start_minute": 1350,
    "tags": [
     "intimate"
    ],
-   "title": "氧气失衡促膝相依"
+   "title": "金库长桌边的咖啡"
   },
   {
    "beats": [
-    "门外雇佣兵动用铝热剂高频电弧焊枪全功率切穿第一道机械锁孔，炽烈赤红火花顺缝狂飙喷涌。",
-    "随侍与千金合力扳动减压前厅的灭火高压泄压手柄，滚滚极寒二氧化碳与阻燃干粉向外猛烈倒灌喷射。",
-    "门外匪徒被白雾吞噬发出凄厉惨嚎，高频焊枪电缆短路爆炸，切割作业被迫全面暂停十五分钟。"
+    "金库前厅里，安保主管向千金汇报今晚的值班安排。",
+    "千金听完只问了一句：签约那天的车安排好了吗。",
+    "秘书在旁边记下每一个名字，千金看了一眼秘书的笔记，满意地点点头。"
    ],
    "duration_minutes": 50,
    "hook_ids": [
-    "h_minjun_shotgun_butt_glass_slam",
-    "h_dohyun_prosecutor_badge_revolver",
-    "h_sung_cheque_paper_threat"
+    "hd_tsundere_chaebol_heiress_eunchae",
+    "hd_vault_designer_engineer_jisoo",
+    "hd_traitorous_managing_director_sung",
+    "hd_rebel_heist_leader_minjun",
+    "hd_undercover_prosecutor_liaison_dohyun",
+    "hd_loyal_senior_chauffeur_uncle_bae"
    ],
    "id": "a_thermite_breach_halon_counter",
    "location_ids": [
     "vault_airlock_decompression_foyer"
    ],
-   "start_minute": 5,
+   "start_minute": 1230,
    "tags": [
     "workplace"
    ],
-   "title": "电弧破门干粉反制"
+   "title": "前厅的值班交接"
   },
   {
    "beats": [
-    "工程师从顶棚打开狭小检修天窗，随侍托举千金率先爬入低矮闷热的金属通风管道夹层避难。",
-    "两人在仅容单人匍匐的狭小管道内紧贴贴身爬行，千金双手攀住随侍结实肩膀借力向前挪移。",
-    "透过管道底板缝隙俯瞰下方走廊匪徒交火，彼此屏息凝神十指紧扣压制全部恐惧颤抖。"
+    "深夜的地下五层只剩电梯厅亮着灯，千金和秘书并肩等电梯。",
+    "电梯迟迟不来，千金低头看了看自己的高跟鞋，说脚疼。",
+    "秘书蹲下来替千金换上随身带的平底鞋，千金没有拒绝。"
    ],
    "duration_minutes": 35,
    "hook_ids": [
-    "h_jisoo_duct_wrench_tap_signal",
-    "h_eunchae_duct_crawl_shoulder_grip",
-    "h_minjun_thermite_torch_spark_shout"
+    "h_eunchae_duct_crawl_shoulder_grip"
    ],
    "id": "a_vent_duct_crawl_recon",
    "location_ids": [
-    "ventilation_maintenance_crawlspace"
+    "subterranean_corridor_lift_lobby"
    ],
-   "start_minute": 55,
+   "start_minute": 1380,
    "tags": [
     "intimate"
    ],
-   "title": "狭小通风管道攀爬"
+   "title": "电梯厅里换鞋"
   },
   {
    "beats": [
-    "首尔特搜部检察官率领国家特警防暴小组从废墟电梯竖井索降突入，枪火与催泪弹照亮走廊。",
-    "反叛常务董事企图携款逃窜，被特警狙击手一枪击穿膝盖惨叫跌入积水废墟当场生擒。",
-    "匪首Minjun率领残部退至地下车道负隅顽抗，被特警防弹盾牌步步合围压缩在死角。"
+    "电梯门打开，走出来的是首尔特搜部的检察官，说是来做签约前的例行核查。",
+    "千金客气地寒暄了几句，眼神却一直盯着对方手里的公文包。",
+    "检察官走后，千金低声对秘书说：明天之前，查清楚是谁请来的。"
    ],
    "duration_minutes": 40,
    "hook_ids": [
-    "h_dohyun_prosecutor_badge_revolver",
-    "h_bae_maybach_front_bumper_smash",
-    "h_sung_cheque_paper_threat"
+    "hd_tsundere_chaebol_heiress_eunchae",
+    "hd_vault_designer_engineer_jisoo",
+    "hd_traitorous_managing_director_sung",
+    "hd_rebel_heist_leader_minjun",
+    "hd_undercover_prosecutor_liaison_dohyun",
+    "hd_loyal_senior_chauffeur_uncle_bae"
    ],
    "id": "a_lift_lobby_prosecutor_standoff",
    "location_ids": [
     "subterranean_corridor_lift_lobby"
    ],
-   "start_minute": 90,
+   "start_minute": 1200,
    "tags": [
     "workplace_power"
    ],
-   "title": "电梯竖井特警突入"
+   "title": "电梯厅遇见检察官"
   },
   {
    "beats": [
@@ -1719,6 +1729,48 @@
    ],
    "slot": "undercover_prosecutor_liaison_dohyun",
    "text": "{undercover_prosecutor_liaison_dohyun.name}单膝隐蔽在水泥梁柱阴影深处，战术卫星对讲机上的绿色微光在硝烟中规律闪烁，沉着果断地向大厦天台盘旋的突击直升机打出三长两短的终极攻坚索降光信号。"
+  },
+  {
+   "id": "hd_tsundere_chaebol_heiress_eunchae",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "tsundere_chaebol_heiress_eunchae",
+   "text": "{tsundere_chaebol_heiress_eunchae.name}把一份文件丢到你面前，别过头：“帮我看看。不是信任你，只是懒得找别人。”"
+  },
+  {
+   "id": "hd_vault_designer_engineer_jisoo",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "vault_designer_engineer_jisoo",
+   "text": "{vault_designer_engineer_jisoo.name}抱着一卷图纸凑过来：“新的门禁方案，你帮我挑挑毛病。”"
+  },
+  {
+   "id": "hd_traitorous_managing_director_sung",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "traitorous_managing_director_sung",
+   "text": "{traitorous_managing_director_sung.name}端着两杯咖啡走过来，递给你一杯：“加班辛苦，聊两句？”"
+  },
+  {
+   "id": "hd_rebel_heist_leader_minjun",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "rebel_heist_leader_minjun",
+   "text": "{rebel_heist_leader_minjun.name}靠在路边的车门上，冲你扬了扬下巴：“顺路，载你一程？”"
+  },
+  {
+   "id": "hd_undercover_prosecutor_liaison_dohyun",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "undercover_prosecutor_liaison_dohyun",
+   "text": "{undercover_prosecutor_liaison_dohyun.name}把一张名片推到你面前：“例行拜访，以后可能常打交道。”"
+  },
+  {
+   "id": "hd_loyal_senior_chauffeur_uncle_bae",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "loyal_senior_chauffeur_uncle_bae",
+   "text": "{loyal_senior_chauffeur_uncle_bae.name}拉开车门，笑着说：“今天路上不堵，想去哪儿兜一圈？”"
   }
  ],
  "id": "chaebol_heiress_vault_hostage",

@@ -1259,22 +1259,25 @@
   },
   {
    "beats": [
-    "重申行宫雪崩掩埋二级防灾保暖与自救逃生规程",
-    "演练狭窄夹层死角双人背靠背相互取暖标准杠杆姿态",
-    "核对暗门夹层应急防风火折与备用撬具存放坐标"
+    "长皇女在收藏室里擦拭一只旧日皇宫带出来的银烛台，擦得很慢。",
+    "近卫队长在一旁站着，长皇女说这只烛台曾经放在母后的梳妆台上。",
+    "擦完了，长皇女把烛台放回架上，看了很久。"
    ],
    "duration_minutes": 20,
-   "hook_ids": [],
+   "hook_ids": [
+    "hk_atrium_air_pressure_drop",
+    "hk_end_relief_praise",
+    "hook_andrei_door_lamp"
+   ],
    "id": "act_frostbite_evac_drill",
    "location_ids": [
     "loc_antique_vault_chamber"
    ],
-   "start_minute": 1070,
+   "start_minute": 900,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "极寒雪灾人员紧急御寒避难演练"
+   "title": "收藏室里擦古董"
   },
   {
    "beats": [

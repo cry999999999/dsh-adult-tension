@@ -1580,18 +1580,22 @@
     },
     {
       "id": "act_flooded_stairwell_water_gauging",
-      "title": "青石马道天井倒灌水位上升流速测录",
+      "title": "天井里晾绣线",
       "location_ids": [
         "loc_flooded_stone_stairwell"
       ],
       "duration_minutes": 20,
       "beats": [
-        "用带刻度红木标尺测量青石台阶淹没级数变化",
-        "记录太湖浊水倒灌产生的暗涵涡流旋向与频率",
-        "在宗祠防洪图纸上标记下层石牛腿受浸泡高度"
+        "梅雨难得停了半天，绣娘把受潮的丝线挂在后堂青石天井里晾。",
+        "营造师从梁上下来，看着满天井五颜六色的丝线，说像挂了一院子的彩虹。",
+        "绣娘把一束最好看的胭脂红递给营造师：拿去，给你家里人。"
       ],
-      "hook_ids": [],
-      "start_minute": 920,
+      "hook_ids": [
+        "hook_cheng_bamboo_pattern",
+        "hook_ruolan_biluochun",
+        "hook_ruolan_needle_hand"
+      ],
+      "start_minute": 840,
       "tags": [
         "workplace",
         "crime"
@@ -1599,21 +1603,24 @@
     },
     {
       "id": "act_heritage_rescue_radio_log",
-      "title": "文保抢险对讲集群信号与航标巡查",
+      "title": "临河飞廊上吃茶",
       "location_ids": [
         "loc_riverfront_carved_veranda"
       ],
       "duration_minutes": 15,
       "beats": [
-        "通过防汛无线手台核对太湖大闸泄洪流量峰值",
-        "校准对岸千瓦氙气探照灯穿透雨幕的聚焦光斑",
-        "向水警搜救艇发送宗祠绣轩受困人员健康指征"
+        "傍晚，绣娘和营造师坐在临河飞廊上吃茶，河上摇过几只乌篷船。",
+        "营造师说起飞廊的木料是清朝的老杉木，比宗祠里任何一件东西都老。",
+        "绣娘听着，给营造师续了一杯碧螺春。"
       ],
-      "hook_ids": [],
-      "start_minute": 925,
+      "hook_ids": [
+        "hook_cheng_bamboo_pattern",
+        "hook_ruolan_biluochun",
+        "hook_ruolan_needle_hand"
+      ],
+      "start_minute": 1050,
       "tags": [
-        "workplace_power",
-        "disaster"
+        "workplace_power"
       ]
     },
     {

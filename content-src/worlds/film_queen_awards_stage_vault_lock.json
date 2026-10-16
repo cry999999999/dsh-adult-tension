@@ -1808,18 +1808,22 @@
     },
     {
       "id": "act_backstage_medical_first_aid_deploy",
-      "title": "侧幕急救医疗组进场布设与外伤冰敷备勤",
+      "title": "候场通道里补妆",
       "location_ids": [
         "loc_awards_green_room_vip_tunnel"
       ],
       "duration_minutes": 15,
       "beats": [
-        "开启便携式急救氧气枕供低血糖晕眩服装助理平卧吸氧",
-        "为双手沾满油污与挫伤的机械工匠涂抹医用消炎油膏",
-        "备齐高纯度医用生理盐水与无菌纱布以备脱困后清洗包扎"
+        "彩排间隙，影后坐在贵宾候场通道的折叠椅上，让化妆师补一补眼妆。",
+        "灯光总设计拿着平板过来，给影后看今晚追光的角度。",
+        "影后看完点点头，说第三段的光再暖一点，像傍晚。"
       ],
-      "hook_ids": [],
-      "start_minute": 1375,
+      "hook_ids": [
+        "hook_lu_side_light",
+        "hook_wei_secures_vip_tunnel_corridor",
+        "hook_yunshu_spotlight"
+      ],
+      "start_minute": 1020,
       "tags": [
         "workplace"
       ]

@@ -1666,22 +1666,21 @@
   "daily_activities": [
     {
       "id": "a_blizzard_avalanche_cabin_breach",
-      "title": "雪崩封门破屋避难解脱浸湿冰裙",
+      "title": "烤干那件礼裙",
       "location_ids": [
         "abandoned_hearth_cabin_main_room"
       ],
       "duration_minutes": 25,
       "beats": [
-        "三米厚雪崩积雪瞬间砸死木屋大门，皇女浑身湿透嘴唇发紫瘫倒在熊皮地毯上剧烈战栗。",
-        "青年迅速点燃仅存松木引燃壁炉，以猎刀反手递上表明身份，皇女咬唇命令其上前割断胸衣。",
-        "锋利刀尖割断后背三十六道结冰丝绳，湿重沉重之深蓝礼裙滑落，二人同裹熊皮毯抢救失温。"
+        "住进猎屋的第三天，雪还在下，皇女的深蓝礼裙挂在壁炉边慢慢烤干。",
+        "皇女裹着熊皮毯坐在火边，嫌弃地看着青年煮的燕麦糊。",
+        "最后还是吃完了，皇女把空碗递回去：明天要放点蜂蜜。"
       ],
       "hook_ids": [
         "h_princess_cut_corset_whisper",
-        "h_captain_torch_howl",
         "h_sofia_medicine_pledge"
       ],
-      "start_minute": 0,
+      "start_minute": 540,
       "tags": [
         "intimate"
       ]
@@ -1710,44 +1709,42 @@
     },
     {
       "id": "a_boris_pine_knot_snow_rubbing_treatment",
-      "title": "老猎人投松节碎雪搓揉救治冻僵双足",
+      "title": "老猎人教下套",
       "location_ids": [
         "abandoned_hearth_cabin_main_room"
       ],
       "duration_minutes": 35,
       "beats": [
-        "老猎人鲍里斯自地窖现身向壁炉添入耐烧浸油松木，传授以洁净干雪轻轻搓揉白斑冻疮之法。",
-        "青年用粗糙老茧手掌捧起皇女冰凉柔嫩玉足细致搓揉至泛起血色，皇女耳根通红强忍娇羞与战栗。",
-        "老猎人递上滚烫鹿血热汤，二人共饮补充热量，室内温度终于回升至安全区间脱离濒死危局。"
+        "老猎人鲍里斯坐在火边，教青年怎么用细铁丝编兔子套。",
+        "皇女在一旁看着，忍不住伸手要了一根铁丝，编得歪歪扭扭。",
+        "鲍里斯哈哈大笑，说这个套子只能抓住笨兔子。皇女瞪了老人一眼。"
       ],
       "hook_ids": [
         "h_boris_pine_smoke_grunt",
         "h_princess_ankles_snow_rub_request",
         "h_sofia_medicine_pledge"
       ],
-      "start_minute": 60,
+      "start_minute": 840,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "a_climax_rebel_dynamite_ambush_battle",
-      "title": "叛军引爆炸药地窖突袭手刃叛将",
+      "title": "雪停的午后",
       "location_ids": [
         "abandoned_hearth_cabin_main_room"
       ],
       "duration_minutes": 30,
       "beats": [
-        "叛军上尉在木屋雪墙安放火药企图活埋，青年自地窖裂隙悄然潜出以飞刀割喉突袭引爆敌后方火药包。",
-        "爆炸震塌半边雪墙，皇女披着熊皮单手持金匕首下达皇家绝杀令，索菲娅开枪击毙敌副官配合反击。",
-        "全歼三十名追兵，叛军连长咽喉中刀毙命雪地，黑松林重新回归暴雪呼啸之肃穆死寂。"
+        "雪终于停了，阳光照在小屋前的积雪上，亮得睁不开眼。",
+        "青年在门口劈柴，皇女披着熊皮站在门边看，说宫里从没见过人这样劈柴。",
+        "青年把一块劈好的松木递给皇女，让皇女亲手放进壁炉。"
       ],
       "hook_ids": [
-        "h_captain_torch_howl",
-        "h_princess_gold_dagger_draw",
         "h_sofia_medicine_pledge"
       ],
-      "start_minute": 95,
+      "start_minute": 780,
       "tags": [
         "intimate"
       ]

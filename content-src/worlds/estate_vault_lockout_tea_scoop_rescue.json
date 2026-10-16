@@ -1666,21 +1666,23 @@
     },
     {
       "id": "act_emergency_drill_briefing",
-      "title": "惰性气体充气应急讲",
+      "title": "开库前的晒画清单",
       "location_ids": [
         "loc_calligraphy_vault_hall"
       ],
       "duration_minutes": 15,
       "beats": [
-        "重申全淹没灭火预警倒计时五分钟规程",
-        "强调断电失控时门下死角三十公分避险姿态",
-        "核对墙壁应急呼吸面罩与手动排气旁路阀位"
+        "六月初六前一天，少夫人在字画库通堂里对着清单，一卷卷核对明天要请出来晒的画。",
+        "老管家报一个名字，少夫人就在清单上勾一笔，偶尔停下来摸一摸画匣上的旧题签。",
+        "清单核完，少夫人说今年的宗亲比往年多，茶寮里的茶要多备两壶。"
       ],
-      "hook_ids": [],
-      "start_minute": 1415,
+      "hook_ids": [
+        "hd_mistress_shen_wanqing",
+        "hd_apprentice_mounter_lu"
+      ],
+      "start_minute": 1020,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {
@@ -1811,7 +1813,31 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_inert_gas_warning_beeps",
+        "hk_countdown_reading_rush",
+        "hk_door_deadweight_groan",
+        "hk_rail_deformation_scrape",
+        "hk_close_breath_ear_brush",
+        "hk_silk_sweat_heat_exchange",
+        "hk_copper_scoop_flange_align",
+        "hk_steel_knife_slide_pad",
+        "hk_brass_block_chock_in",
+        "hk_silk_sash_bind_grip",
+        "hk_nanmu_antique_rack_shadow",
+        "hk_vault_air_pressure_drop",
+        "hk_synchronized_heave_grunt",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hook_wanqing_tea_room",
+        "hook_wanqing_kin_ledger",
+        "hook_wanqing_sunning_scroll",
+        "hook_chengan_paste_bowl",
+        "hook_chengan_back_paper",
+        "hook_chengan_silk_gloves",
+        "hook_wanqing_thunder_eaves",
+        "hook_wanqing_tea_hut_curtain"
+      ],
       "start_minute": 1395,
       "tags": [
         "workplace",
@@ -1855,7 +1881,31 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_inert_gas_warning_beeps",
+        "hk_countdown_reading_rush",
+        "hk_door_deadweight_groan",
+        "hk_rail_deformation_scrape",
+        "hk_close_breath_ear_brush",
+        "hk_silk_sweat_heat_exchange",
+        "hk_copper_scoop_flange_align",
+        "hk_steel_knife_slide_pad",
+        "hk_brass_block_chock_in",
+        "hk_silk_sash_bind_grip",
+        "hk_nanmu_antique_rack_shadow",
+        "hk_vault_air_pressure_drop",
+        "hk_synchronized_heave_grunt",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hook_wanqing_tea_room",
+        "hook_wanqing_kin_ledger",
+        "hook_wanqing_sunning_scroll",
+        "hook_chengan_paste_bowl",
+        "hook_chengan_back_paper",
+        "hook_chengan_silk_gloves",
+        "hook_wanqing_thunder_eaves",
+        "hook_wanqing_tea_hut_curtain"
+      ],
       "start_minute": 1395,
       "tags": [
         "workplace",
@@ -1899,7 +1949,31 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_inert_gas_warning_beeps",
+        "hk_countdown_reading_rush",
+        "hk_door_deadweight_groan",
+        "hk_rail_deformation_scrape",
+        "hk_close_breath_ear_brush",
+        "hk_silk_sweat_heat_exchange",
+        "hk_copper_scoop_flange_align",
+        "hk_steel_knife_slide_pad",
+        "hk_brass_block_chock_in",
+        "hk_silk_sash_bind_grip",
+        "hk_nanmu_antique_rack_shadow",
+        "hk_vault_air_pressure_drop",
+        "hk_synchronized_heave_grunt",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hook_wanqing_tea_room",
+        "hook_wanqing_kin_ledger",
+        "hook_wanqing_sunning_scroll",
+        "hook_chengan_paste_bowl",
+        "hook_chengan_back_paper",
+        "hook_chengan_silk_gloves",
+        "hook_wanqing_thunder_eaves",
+        "hook_wanqing_tea_hut_curtain"
+      ],
       "start_minute": 1395,
       "tags": [
         "workplace"
@@ -1943,7 +2017,31 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_inert_gas_warning_beeps",
+        "hk_countdown_reading_rush",
+        "hk_door_deadweight_groan",
+        "hk_rail_deformation_scrape",
+        "hk_close_breath_ear_brush",
+        "hk_silk_sweat_heat_exchange",
+        "hk_copper_scoop_flange_align",
+        "hk_steel_knife_slide_pad",
+        "hk_brass_block_chock_in",
+        "hk_silk_sash_bind_grip",
+        "hk_nanmu_antique_rack_shadow",
+        "hk_vault_air_pressure_drop",
+        "hk_synchronized_heave_grunt",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hook_wanqing_tea_room",
+        "hook_wanqing_kin_ledger",
+        "hook_wanqing_sunning_scroll",
+        "hook_chengan_paste_bowl",
+        "hook_chengan_back_paper",
+        "hook_chengan_silk_gloves",
+        "hook_wanqing_thunder_eaves",
+        "hook_wanqing_tea_hut_curtain"
+      ],
       "start_minute": 1395,
       "tags": [
         "workplace",
@@ -1987,7 +2085,31 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_inert_gas_warning_beeps",
+        "hk_countdown_reading_rush",
+        "hk_door_deadweight_groan",
+        "hk_rail_deformation_scrape",
+        "hk_close_breath_ear_brush",
+        "hk_silk_sweat_heat_exchange",
+        "hk_copper_scoop_flange_align",
+        "hk_steel_knife_slide_pad",
+        "hk_brass_block_chock_in",
+        "hk_silk_sash_bind_grip",
+        "hk_nanmu_antique_rack_shadow",
+        "hk_vault_air_pressure_drop",
+        "hk_synchronized_heave_grunt",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hook_wanqing_tea_room",
+        "hook_wanqing_kin_ledger",
+        "hook_wanqing_sunning_scroll",
+        "hook_chengan_paste_bowl",
+        "hook_chengan_back_paper",
+        "hook_chengan_silk_gloves",
+        "hook_wanqing_thunder_eaves",
+        "hook_wanqing_tea_hut_curtain"
+      ],
       "start_minute": 1395,
       "tags": [
         "workplace",
@@ -2032,7 +2154,31 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hk_inert_gas_warning_beeps",
+        "hk_countdown_reading_rush",
+        "hk_door_deadweight_groan",
+        "hk_rail_deformation_scrape",
+        "hk_close_breath_ear_brush",
+        "hk_silk_sweat_heat_exchange",
+        "hk_copper_scoop_flange_align",
+        "hk_steel_knife_slide_pad",
+        "hk_brass_block_chock_in",
+        "hk_silk_sash_bind_grip",
+        "hk_nanmu_antique_rack_shadow",
+        "hk_vault_air_pressure_drop",
+        "hk_synchronized_heave_grunt",
+        "hk_spring_latch_pop_rebound",
+        "hk_vault_escape_roll_fresh_air",
+        "hook_wanqing_tea_room",
+        "hook_wanqing_kin_ledger",
+        "hook_wanqing_sunning_scroll",
+        "hook_chengan_paste_bowl",
+        "hook_chengan_back_paper",
+        "hook_chengan_silk_gloves",
+        "hook_wanqing_thunder_eaves",
+        "hook_wanqing_tea_hut_curtain"
+      ],
       "start_minute": 1395,
       "tags": [
         "workplace",
@@ -2282,6 +2428,18 @@
         "loc_courtyard_tea_hut"
       ],
       "text": "{npc.name}撩起茶寮的竹帘：风炉上的水开了。……进来，我只给你一个人点茶。"
+    },
+    {
+      "id": "hd_mistress_shen_wanqing",
+      "kind": "approach",
+      "slot": "mistress_shen_wanqing",
+      "text": "{mistress_shen_wanqing.name}把一盏新沏的龙井放到你手边，抬眼一笑：“装裱辛苦，先歇口气，尝尝今年的新茶。”"
+    },
+    {
+      "id": "hd_apprentice_mounter_lu",
+      "kind": "approach",
+      "slot": "apprentice_mounter_lu",
+      "text": "{apprentice_mounter_lu.name}捧着一卷刚托好的画芯过来：“你看这一块补得匀不匀？”"
     }
   ],
   "twists": [

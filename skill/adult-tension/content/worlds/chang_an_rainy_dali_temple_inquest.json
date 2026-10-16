@@ -1445,25 +1445,28 @@
   },
   {
    "beats": [
-    "相府死士手持淬毒短刃逼近石室重门，回廊青石漫水没膝，带刀捕快与禁军铁甲卫士拉弓对峙",
-    "雨水冲刷着台阶上的斑驳血迹，门监手按千斤铜闸号角厉声警告来犯者擅闯法司等同叛逆",
-    "闪电照亮两军拔刀出鞘之雪白寒芒，杀意在呼啸雨幕中降至冰点，一触即发"
+    "雨后的大理寺回廊积着水，书吏抱着厚厚的案卷来回奔走。",
+    "女官在廊下拦住推官，把一份新调来的口供塞进对方手里。",
+    "两人站在廊柱边低声对了几句，各自转身去办差。"
    ],
    "duration_minutes": 60,
    "hook_ids": [
-    "hk_retainer_dagger_approach",
-    "hk_jailer_iron_keys_approach",
-    "hk_jinwu_crossbow_request"
+    "hd_chief_judicial_judge_lady",
+    "hd_senior_dali_court_chief",
+    "hd_prime_minister_deadly_retainer",
+    "hd_veteran_dungeon_jailer_chief",
+    "hd_righteous_disgraced_inquest_scholar",
+    "hd_imperial_physician_court_rival"
    ],
    "id": "act_corridor_retainer_standoff",
    "location_ids": [
     "dali_central_flagstone_corridor"
    ],
-   "start_minute": 100,
+   "start_minute": 600,
    "tags": [
     "workplace"
    ],
-   "title": "青石穿堂长廊横刀对峙相府死士"
+   "title": "回廊里递案卷"
   },
   {
    "beats": [
@@ -1533,9 +1536,9 @@
   },
   {
    "beats": [
-    "五更破晓鼓楼隐隐传来第一声沉闷雷音，案上烛火燃尽，青石案前结状公文已然笔力如铁撰写完毕",
-    "主审女官与前推官同时刺破中指，在朱砂大印旁郑重印下属于两人的鲜红血印结契",
-    "推开沉重石门，大雨初歇长安城晨光破晓如金戈破空，众人拔刀上马直冲大明宫承天门决死一击"
+    "五更天，女官在验尸房里写完最后一份结状，案上的蜡烛已经燃尽。",
+    "推官端来两碗热粥，放在青石案的另一头。",
+    "女官放下笔喝了一口，说这是三天来第一顿热饭。"
    ],
    "duration_minutes": 50,
    "hook_ids": [
@@ -1547,11 +1550,11 @@
    "location_ids": [
     "stone_inquest_chamber"
    ],
-   "start_minute": 425,
+   "start_minute": 300,
    "tags": [
     "intimate"
    ],
-   "title": "验尸石室绝命结状血印与破晓决死盟约"
+   "title": "验尸房的清晨"
   }
  ],
  "default_npc_gender_mix": {
@@ -1732,6 +1735,48 @@
    ],
    "slot": "prime_minister_deadly_retainer",
    "text": "借着回廊穿堂一道惨白的惊雷闪电，清晰可见{prime_minister_deadly_retainer.name}正半蹲在两丈外的滴水屋檐兽吻阴影之下，玄色雨披如大蝠展翼，如鹰隼潜伏死死锁定着验尸房紧闭的雕花重门。"
+  },
+  {
+   "id": "hd_chief_judicial_judge_lady",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "chief_judicial_judge_lady",
+   "text": "{chief_judicial_judge_lady.name}把一卷旧案卷宗推到你面前：“闲来无事，陪我理一理这些陈年旧档。”"
+  },
+  {
+   "id": "hd_senior_dali_court_chief",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "senior_dali_court_chief",
+   "text": "{senior_dali_court_chief.name}在廊下煮茶，招手叫你过去：“今日无案，坐下喝一盏。”"
+  },
+  {
+   "id": "hd_prime_minister_deadly_retainer",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "prime_minister_deadly_retainer",
+   "text": "{prime_minister_deadly_retainer.name}拱手道：“相府新得了几坛好酒，主人请你去尝尝。”"
+  },
+  {
+   "id": "hd_veteran_dungeon_jailer_chief",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "veteran_dungeon_jailer_chief",
+   "text": "{veteran_dungeon_jailer_chief.name}拎着一包胡饼走过来：“西市新开的铺子，趁热吃。”"
+  },
+  {
+   "id": "hd_righteous_disgraced_inquest_scholar",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "righteous_disgraced_inquest_scholar",
+   "text": "{righteous_disgraced_inquest_scholar.name}把一本手抄的律疏递给你：“这几条注解，你看我写得对不对。”"
+  },
+  {
+   "id": "hd_imperial_physician_court_rival",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "imperial_physician_court_rival",
+   "text": "{imperial_physician_court_rival.name}把一包药茶放在你案上：“入秋了，每日一包，安神的。”"
   }
  ],
  "id": "chang_an_rainy_dali_temple_inquest",

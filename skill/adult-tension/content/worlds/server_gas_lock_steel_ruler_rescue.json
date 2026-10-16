@@ -1256,22 +1256,24 @@
   },
   {
    "beats": [
-    "重申七氟丙烷气体误喷倒计时九十秒逃生规程",
-    "演练密闭冷通道内部双人卧倒避险标准姿态",
-    "核对墙壁应急供氧面罩与手动排气阀操作要领"
+    "录取查询前一周，工程师在主服务器大厅里跑压力测试，屏幕上的并发曲线一路往上爬。",
+    "理事长下来视察，站在工程师身后看了很久，问能不能扛住几十万人。",
+    "工程师说能，理事长没说话，只把手里的咖啡放在了工程师桌上。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hd_president_xiao_ruoqing",
+    "hd_apprentice_admin_chen_mo"
+   ],
    "id": "act_emergency_drill_simulation",
    "location_ids": [
     "loc_main_server_hall"
    ],
-   "start_minute": 1415,
+   "start_minute": 1260,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "机房失电断路应急推演"
+   "title": "查询夜前的压力测试"
   },
   {
    "beats": [
@@ -1566,6 +1568,20 @@
    ],
    "slot": "president_xiao_ruoqing",
    "text": "{npc.name}站在休息室门口，手里拿着一叠录取通知书：楼下太吵了。……进来，陪我盖完这一沓。"
+  },
+  {
+   "id": "hd_president_xiao_ruoqing",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "president_xiao_ruoqing",
+   "text": "{president_xiao_ruoqing.name}把一杯热咖啡放在你桌上，语气平淡：“值班辛苦。顺路带的，别多想。”"
+  },
+  {
+   "id": "hd_apprentice_admin_chen_mo",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "apprentice_admin_chen_mo",
+   "text": "{apprentice_admin_chen_mo.name}把巡检表递过来：“机房今晚一切正常，你签个字吧。”"
   }
  ],
  "id": "server_gas_lock_steel_ruler_rescue",
@@ -1914,7 +1930,30 @@
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
+   "hook_ids": [
+    "hk_fm200_warning_beeps",
+    "hk_countdown_reading_rush",
+    "hk_door_groan_deadlock",
+    "hk_rail_deformation_scrape",
+    "hk_tight_breath_ear_brush",
+    "hk_shirt_sweat_heat_exchange",
+    "hk_steel_ruler_slot_align",
+    "hk_brass_block_chock_in",
+    "hk_silk_sash_bind_grip",
+    "hk_cold_aisle_blue_glow",
+    "hk_vault_air_pressure_drop",
+    "hk_synchronized_grunt_heave",
+    "hk_spring_latch_pop_rebound",
+    "hk_vault_escape_roll_fresh_air",
+    "hk_end_relief_praise",
+    "hook_ruoqing_instant_noodles",
+    "hook_ruoqing_admission_curve",
+    "hook_chenmo_spare_coat",
+    "hook_chenmo_cable_tag",
+    "hook_ruoqing_offer_cards",
+    "hook_ruoqing_rooftop_storm",
+    "hook_ruoqing_rest_room"
+   ],
    "id": "p_fm200_discharge_countdown",
    "immediate": {
     "minutes": 2,
@@ -1960,7 +1999,30 @@
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
+   "hook_ids": [
+    "hk_fm200_warning_beeps",
+    "hk_countdown_reading_rush",
+    "hk_door_groan_deadlock",
+    "hk_rail_deformation_scrape",
+    "hk_tight_breath_ear_brush",
+    "hk_shirt_sweat_heat_exchange",
+    "hk_steel_ruler_slot_align",
+    "hk_brass_block_chock_in",
+    "hk_silk_sash_bind_grip",
+    "hk_cold_aisle_blue_glow",
+    "hk_vault_air_pressure_drop",
+    "hk_synchronized_grunt_heave",
+    "hk_spring_latch_pop_rebound",
+    "hk_vault_escape_roll_fresh_air",
+    "hk_end_relief_praise",
+    "hook_ruoqing_instant_noodles",
+    "hook_ruoqing_admission_curve",
+    "hook_chenmo_spare_coat",
+    "hook_chenmo_cable_tag",
+    "hook_ruoqing_offer_cards",
+    "hook_ruoqing_rooftop_storm",
+    "hook_ruoqing_rest_room"
+   ],
    "id": "p_door_electric_deadlock_jam",
    "immediate": {
     "minutes": 2,
@@ -2004,7 +2066,30 @@
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
+   "hook_ids": [
+    "hk_fm200_warning_beeps",
+    "hk_countdown_reading_rush",
+    "hk_door_groan_deadlock",
+    "hk_rail_deformation_scrape",
+    "hk_tight_breath_ear_brush",
+    "hk_shirt_sweat_heat_exchange",
+    "hk_steel_ruler_slot_align",
+    "hk_brass_block_chock_in",
+    "hk_silk_sash_bind_grip",
+    "hk_cold_aisle_blue_glow",
+    "hk_vault_air_pressure_drop",
+    "hk_synchronized_grunt_heave",
+    "hk_spring_latch_pop_rebound",
+    "hk_vault_escape_roll_fresh_air",
+    "hk_end_relief_praise",
+    "hook_ruoqing_instant_noodles",
+    "hook_ruoqing_admission_curve",
+    "hook_chenmo_spare_coat",
+    "hook_chenmo_cable_tag",
+    "hook_ruoqing_offer_cards",
+    "hook_ruoqing_rooftop_storm",
+    "hook_ruoqing_rest_room"
+   ],
    "id": "p_cold_aisle_close_body_tension",
    "immediate": {
     "minutes": 2,
@@ -2047,7 +2132,30 @@
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
+   "hook_ids": [
+    "hk_fm200_warning_beeps",
+    "hk_countdown_reading_rush",
+    "hk_door_groan_deadlock",
+    "hk_rail_deformation_scrape",
+    "hk_tight_breath_ear_brush",
+    "hk_shirt_sweat_heat_exchange",
+    "hk_steel_ruler_slot_align",
+    "hk_brass_block_chock_in",
+    "hk_silk_sash_bind_grip",
+    "hk_cold_aisle_blue_glow",
+    "hk_vault_air_pressure_drop",
+    "hk_synchronized_grunt_heave",
+    "hk_spring_latch_pop_rebound",
+    "hk_vault_escape_roll_fresh_air",
+    "hk_end_relief_praise",
+    "hook_ruoqing_instant_noodles",
+    "hook_ruoqing_admission_curve",
+    "hook_chenmo_spare_coat",
+    "hook_chenmo_cable_tag",
+    "hook_ruoqing_offer_cards",
+    "hook_ruoqing_rooftop_storm",
+    "hook_ruoqing_rest_room"
+   ],
    "id": "p_server_rack_overheat_flashover",
    "immediate": {
     "minutes": 2,
@@ -2092,7 +2200,30 @@
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
+   "hook_ids": [
+    "hk_fm200_warning_beeps",
+    "hk_countdown_reading_rush",
+    "hk_door_groan_deadlock",
+    "hk_rail_deformation_scrape",
+    "hk_tight_breath_ear_brush",
+    "hk_shirt_sweat_heat_exchange",
+    "hk_steel_ruler_slot_align",
+    "hk_brass_block_chock_in",
+    "hk_silk_sash_bind_grip",
+    "hk_cold_aisle_blue_glow",
+    "hk_vault_air_pressure_drop",
+    "hk_synchronized_grunt_heave",
+    "hk_spring_latch_pop_rebound",
+    "hk_vault_escape_roll_fresh_air",
+    "hk_end_relief_praise",
+    "hook_ruoqing_instant_noodles",
+    "hook_ruoqing_admission_curve",
+    "hook_chenmo_spare_coat",
+    "hook_chenmo_cable_tag",
+    "hook_ruoqing_offer_cards",
+    "hook_ruoqing_rooftop_storm",
+    "hook_ruoqing_rest_room"
+   ],
    "id": "p_cramp_under_high_static_stress",
    "immediate": {
     "minutes": 2,
@@ -2136,7 +2267,30 @@
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
+   "hook_ids": [
+    "hk_fm200_warning_beeps",
+    "hk_countdown_reading_rush",
+    "hk_door_groan_deadlock",
+    "hk_rail_deformation_scrape",
+    "hk_tight_breath_ear_brush",
+    "hk_shirt_sweat_heat_exchange",
+    "hk_steel_ruler_slot_align",
+    "hk_brass_block_chock_in",
+    "hk_silk_sash_bind_grip",
+    "hk_cold_aisle_blue_glow",
+    "hk_vault_air_pressure_drop",
+    "hk_synchronized_grunt_heave",
+    "hk_spring_latch_pop_rebound",
+    "hk_vault_escape_roll_fresh_air",
+    "hk_end_relief_praise",
+    "hook_ruoqing_instant_noodles",
+    "hook_ruoqing_admission_curve",
+    "hook_chenmo_spare_coat",
+    "hook_chenmo_cable_tag",
+    "hook_ruoqing_offer_cards",
+    "hook_ruoqing_rooftop_storm",
+    "hook_ruoqing_rest_room"
+   ],
    "id": "p_intercom_screaming_static_rush",
    "immediate": {
     "minutes": 2,

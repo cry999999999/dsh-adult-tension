@@ -1714,21 +1714,24 @@
   "daily_activities": [
     {
       "id": "act_skybridge_deflection_audit",
-      "title": "62层悬空天桥阻尼位移与幕墙挠度激光巡测",
+      "title": "天桥里的谈判间隙",
       "location_ids": [
         "loc_skybridge_glass_gallery_hall"
       ],
       "duration_minutes": 15,
       "beats": [
-        "使用高精度激光测距仪测定天桥端部伸缩缝瞬时摆幅",
-        "细致检查电动防火门铰链销轴受力变形开裂深度",
-        "在连廊两侧立柱贴附荧光安全引导标识指示脱困路线"
+        "谈判进行到第三周，女律师在玻璃天桥里站着喝咖啡，脚下是两百多米的高空。",
+        "结构总工路过，顺便检查了一下天桥的阻尼铰链，跟女律师点头打招呼。",
+        "女律师问总工这座桥能撑多大的风，总工笑着说：比你们的谈判结实。"
       ],
-      "hook_ids": [],
-      "start_minute": 1020,
+      "hook_ids": [
+        "hook_chengzhi_hinge_check",
+        "hook_lin_analyzes_microswitch_gap",
+        "hook_lin_braces_door_frame_strain"
+      ],
+      "start_minute": 960,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {
@@ -1752,21 +1755,24 @@
     },
     {
       "id": "act_elevator_lobby_evacuation_marshaling",
-      "title": "62层穿梭电梯厅撤离人流整肃与楼梯分流",
+      "title": "电梯厅里的寒暄",
       "location_ids": [
         "loc_skybridge_high_elevator_lobby"
       ],
       "duration_minutes": 25,
       "beats": [
-        "组织安保队员拉起隔离带封锁停运高速客梯入口",
-        "手持喊话器指导滞留商务人士沿防烟楼梯间有序下行",
-        "为恐慌高管发放防烟面罩与防滑雨靴避免踩踏事故"
+        "下班高峰，穿梭电梯厅里挤满了西装革履的人。",
+        "女律师在等电梯时碰见对方的首席财务官，两人客气地聊了几句天气。",
+        "电梯来了，两人一前一后走进去，谁也没提谈判的事。"
       ],
-      "hook_ids": [],
-      "start_minute": 1030,
+      "hook_ids": [
+        "hook_chengzhi_hinge_check",
+        "hook_gu_marshals_lobby_crowd",
+        "hook_ruoxi_bund_lights"
+      ],
+      "start_minute": 1110,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {
@@ -1808,18 +1814,22 @@
     },
     {
       "id": "act_high_altitude_medical_first_aid_prep",
-      "title": "避难层应急急救药箱与氧气吸入设备分发",
+      "title": "避难层的值班室",
       "location_ids": [
         "loc_refuge_floor_electrical_control_room"
       ],
       "duration_minutes": 15,
       "beats": [
-        "开启医用便携式高压氧气罐为低血糖晕眩法务吸氧",
-        "为手臂受钝伤工匠涂抹医用云南白药止血化瘀喷雾",
-        "调配高浓度葡萄糖电解质温开水恢复受困人员体能"
+        "避难层的值班室里，物业的老师傅在泡茶，墙上挂着一排对讲机。",
+        "女律师加班到深夜，下来找热水，老师傅给女律师倒了一杯普洱。",
+        "老师傅说这栋楼的灯每晚亮到最晚的，就是女律师那一层。"
       ],
-      "hook_ids": [],
-      "start_minute": 1045,
+      "hook_ids": [
+        "hook_chengzhi_hinge_check",
+        "hook_ruoxi_bund_lights",
+        "hook_ruoxi_heels_off"
+      ],
+      "start_minute": 1350,
       "tags": [
         "workplace"
       ]

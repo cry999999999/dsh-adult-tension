@@ -1666,22 +1666,22 @@
   "daily_activities": [
     {
       "id": "a_entry_compartment_gun_draw_lock_door",
-      "title": "狭小包厢闯入者收枪求助",
+      "title": "包厢里的晚餐",
       "location_ids": [
         "compartment_seven_luxury_sleeper"
       ],
       "duration_minutes": 25,
       "beats": [
-        "特大暴风雪列车穿行极夜荒原，女特工潜入七号包厢，消音勃朗宁手枪横于青年外交官咽喉。",
-        "青年神色自若亮出免检外交护照表明身家，听闻宪兵搜车，提出假扮蜜月夫妻掩护过关。",
-        "女特工收敛杀机反锁包厢暗锁，解开水貂风衣，露出真丝晚礼裙与脚踝皮套达成生死互保约定。"
+        "列车驶出首都的第一个夜晚，外交随员在七号包厢里吃着餐车送来的晚餐。",
+        "窗外的荒原一望无际，随员一边吃一边翻着一本诗集。",
+        "有人敲门，是列车员来送热水，顺便说今晚可能会下雪。"
       ],
       "hook_ids": [
         "h_vera_gun_neck_whisper",
         "h_karl_boot_kick_door_shout",
         "h_elena_tea_distract_shout"
       ],
-      "start_minute": 0,
+      "start_minute": 1140,
       "tags": [
         "intimate"
       ]
@@ -1710,22 +1710,25 @@
     },
     {
       "id": "a_lounge_bar_arms_broker_diversion",
-      "title": "车尾沙龙黑市掮客点燃火海断道",
+      "title": "观景沙龙里的牌局",
       "location_ids": [
         "rear_observation_lounge_car"
       ],
       "duration_minutes": 35,
       "beats": [
-        "宪兵副手起疑欲调集机枪封锁七号车厢，黑市军火掮客维克多在车尾沙龙引燃整桶干邑白兰地。",
-        "熊熊火墙与浓烟逼退宪兵机枪小队，外交随员趁乱切断发电机大轴电缆制造整列车厢黑暗大停电。",
-        "薇拉在黑暗中以绝妙身法击晕守在过道的两名便衣暗哨，彻底瓦解宪兵对七号车厢的二次合围。"
+        "车尾观景沙龙里，军火掮客维克多在吧台边组了一场牌局，输赢不过几瓶干邑。",
+        "一个穿水貂风衣的女人坐在角落里看书，偶尔抬头看一眼牌桌。",
+        "维克多输光了筹码，大笑着请全场每人一杯酒。"
       ],
       "hook_ids": [
-        "h_victor_cigar_firewall_shout",
-        "h_vera_bed_embrace_ankle_holster_whisper",
-        "h_karl_boot_kick_door_shout"
+        "hd_cold_spy_vera_kamil",
+        "hd_righteous_sleeping_car_steward_elena",
+        "hd_brutal_gendarme_commander_karl",
+        "hd_train_conductor_moravec",
+        "hd_neutral_arms_broker_passenger_victor",
+        "hd_legation_cipher_clerk_ingrid"
       ],
-      "start_minute": 60,
+      "start_minute": 1260,
       "tags": [
         "workplace"
       ]
@@ -1776,22 +1779,22 @@
     },
     {
       "id": "a_dawn_border_station_pearl_tether_vow",
-      "title": "破晓晨曦赠佩珍珠胸针定情盟誓",
+      "title": "清晨的包厢",
       "location_ids": [
         "compartment_seven_luxury_sleeper"
       ],
       "duration_minutes": 25,
       "beats": [
-        "暴风雪骤停红日破晓，金色朝霞洒满七号包厢红木桌面，中立国边防军官登车敬礼迎接外交使团。",
-        "薇拉亲手解下领口鸢尾花珍珠胸针系在青年腕间，拉下包厢百叶帘，这一次没有观众，吻得比昨夜任何一场戏都久。",
-        "乘务员与掮客举杯祝贺，二人挽手踏上下客站台，迎着破晓晨光迈向自由与和平之全新生活。"
+        "清晨，雪原上的天空泛起淡金色，七号包厢的百叶帘透进一道道光。",
+        "随员醒来泡了一杯茶，看着窗外一群驯鹿在雪地里奔跑。",
+        "过道里传来列车员的声音：前方停靠边境站，停车二十分钟。"
       ],
       "hook_ids": [
         "h_vera_pearl_brooch_gift_vow_whisper",
         "h_elena_tea_distract_shout",
         "h_vera_gun_neck_whisper"
       ],
-      "start_minute": 145,
+      "start_minute": 390,
       "tags": [
         "intimate"
       ]
@@ -2223,6 +2226,42 @@
         "rear_observation_lounge_car"
       ],
       "text": "{neutral_arms_broker_passenger_victor.name}倚在熊熊火海与全景车窗之间，雪茄烟草红星在昏暗沙龙中忽明忽暗，名贵粗花呢大衣下摆随风烈烈作响，宛若一位掌控极夜快车命运的优雅黑夜君王。"
+    },
+    {
+      "id": "hd_cold_spy_vera_kamil",
+      "kind": "approach",
+      "slot": "cold_spy_vera_kamil",
+      "text": "{cold_spy_vera_kamil.name}挽住你的胳膊，低声笑道：“今晚只是旅行，亲爱的，放松些。”"
+    },
+    {
+      "id": "hd_righteous_sleeping_car_steward_elena",
+      "kind": "approach",
+      "slot": "righteous_sleeping_car_steward_elena",
+      "text": "{righteous_sleeping_car_steward_elena.name}端来两杯热茶：“夜里冷，给两位暖暖手。”"
+    },
+    {
+      "id": "hd_brutal_gendarme_commander_karl",
+      "kind": "approach",
+      "slot": "brutal_gendarme_commander_karl",
+      "text": "{brutal_gendarme_commander_karl.name}在过道里冲你点头致意：“例行查票，打扰了。”"
+    },
+    {
+      "id": "hd_train_conductor_moravec",
+      "kind": "approach",
+      "slot": "train_conductor_moravec",
+      "text": "{train_conductor_moravec.name}看了看怀表，笑着说：“正点，明早九点到站。”"
+    },
+    {
+      "id": "hd_neutral_arms_broker_passenger_victor",
+      "kind": "approach",
+      "slot": "neutral_arms_broker_passenger_victor",
+      "text": "{neutral_arms_broker_passenger_victor.name}冲你举杯：“长夜漫漫，来打一局牌？”"
+    },
+    {
+      "id": "hd_legation_cipher_clerk_ingrid",
+      "kind": "approach",
+      "slot": "legation_cipher_clerk_ingrid",
+      "text": "{legation_cipher_clerk_ingrid.name}合上手里的小说，冲你笑笑：“你也睡不着？”"
     }
   ],
   "twists": [

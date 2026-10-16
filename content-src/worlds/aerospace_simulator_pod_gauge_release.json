@@ -1641,21 +1641,24 @@
     },
     {
       "id": "act_pod_blackout_evac_drill",
-      "title": "航天模拟舱高温失压人员紧急疏散演练",
+      "title": "模拟舱里的例行训练",
       "location_ids": [
         "loc_flight_simulator_cabin"
       ],
       "duration_minutes": 20,
       "beats": [
-        "重申球舱气密抱死二级防灾断电撤离演练规程",
-        "演练偏心泄压阀狭小死角双人卧倒避险标准自救力矩姿态",
-        "核对座舱侧壁应急强光电筒与防毒面具存放坐标"
+        "上午九点，女飞官钻进模拟舱做每周例行的对接训练，舱外的屏幕跟着亮起来。",
+        "测控台的人在耳机里报数据，女飞官一边操纵一边回报，声音平稳得像在聊天。",
+        "训练结束，女飞官从舱里爬出来，摘下头盔甩了甩汗湿的头发：再来一遍。"
       ],
-      "hook_ids": [],
-      "start_minute": 1270,
+      "hook_ids": [
+        "hk_atrium_air_pressure_drop",
+        "hk_countdown_reading_rush",
+        "hk_end_relief_praise"
+      ],
+      "start_minute": 540,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {

@@ -1257,22 +1257,25 @@
   },
   {
    "beats": [
-    "重申暴雪封山二级防灾人员撤离演练规程",
-    "演练祭坛狭小死角双人卧倒避险标准自救力矩姿态",
-    "核对岩洞墙壁应急探照灯与防冻急救药品存放位置"
+    "晴朗的清晨，圣女登上绝顶露天平台，等着太阳从雪峰后升起。",
+    "守殿的老僧在一旁煮着酥油茶，说今年的雪比往年来得晚。",
+    "太阳升起来，雪峰一下子亮成金色，圣女合掌低声念了一段晨祷。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_eleonora_butter_tea",
+    "hook_eleonora_dawn_bell",
+    "hook_eleonora_steady_hand"
+   ],
    "id": "act_alpine_frostbite_evac_drill",
    "location_ids": [
     "loc_alpine_summit_open_platform"
    ],
-   "start_minute": 1415,
+   "start_minute": 390,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "雪山神殿山体微震防风雪应急讲"
+   "title": "绝顶平台上看日出"
   },
   {
    "beats": [

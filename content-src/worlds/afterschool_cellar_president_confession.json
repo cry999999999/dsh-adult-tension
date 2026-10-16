@@ -1820,88 +1820,94 @@
   "daily_activities": [
     {
       "id": "a_entry_cellar_ribbon_tether_crisis",
-      "title": "地窖暗室内发带缠掌",
+      "title": "地窖里清查旧账",
       "location_ids": [
         "cellar_archive_vault"
       ],
       "duration_minutes": 45,
       "beats": [
-        "研究生会女会长在老课桌前清点历年黑账底册，地基微沉防盗门轰然咬合反锁，配电箱主闸短路剧烈打火。",
-        "会长为防纸质机密烧毁，用真丝发带将双手缠带在生铁水管旁拼死拉住闸刀，汗水浸透单薄白衬衫。",
-        "青年干事从昏暗中赶至水管旁，借着红色应急灯光从后方握住闸柄，让会长一圈圈松开掌心发带。"
+        "旧校舍下周就要拆了，会长带着干事下到地窖，把历年账册一箱箱搬上桌。",
+        "会长用发带把长发束起来，翻得很快，偶尔停下来皱一皱眉。",
+        "干事递过一杯自动贩卖机买的奶茶，会长看了一眼，接过去没说谢谢。"
       ],
       "hook_ids": [
-        "h_ayaka_ribbon_bound_chin_lift",
-        "h_ayaka_cold_pipe_chest_warmth_tremor",
-        "h_ren_nightstick_padlock_iron_slam"
+        "hd_proud_president_ayaka",
+        "hd_discipline_chief_ren",
+        "hd_demolition_crew_boss_goro",
+        "hd_vice_president_yui",
+        "hd_student_journalist_reina",
+        "hd_veteran_alumnus_mentor_daiki"
       ],
-      "start_minute": 1065,
+      "start_minute": 960,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "a_breaker_spark_confession_standoff",
-      "title": "短路火花下放学后真言对赌",
+      "title": "账册里的旧照片",
       "location_ids": [
         "cellar_archive_vault"
       ],
       "duration_minutes": 40,
       "beats": [
-        "水管剧烈水锤震颤导致发带磨破会长掌心鲜血渗出，会长咬紧朱唇靠着青年肩头喘息。",
-        "青年用随身自制铜撬针接替会长死死卡住闸刀绝缘木柄，两人在红丝绒桌前呼吸相闻倾吐放学后未尽心声。",
-        "外侧风纪队长用对讲机通报大门机械锁舌卡死，水管水雾弥漫中二人十指紧扣誓死不弃。"
+        "一本二十年前的账册里夹着一张泛黄的合影，是当年研究生会的成员。",
+        "会长看着照片出神，说自己当年就是看了这样一张照片才决定进研究生会。",
+        "干事想把照片收好，会长却把它夹进了自己的笔记本。"
       ],
       "hook_ids": [
         "h_ayaka_ribbon_bound_chin_lift",
         "h_goro_bulldozer_diesel_roar_shout",
         "h_yui_tea_thermos_soft_voice"
       ],
-      "start_minute": 1110,
+      "start_minute": 1020,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "a_boiler_room_hammering_sabotage",
-      "title": "废弃机房水管总阀关闭",
+      "title": "锅炉房的旧铭牌",
       "location_ids": [
         "subterranean_boiler_room"
       ],
       "duration_minutes": 45,
       "beats": [
-        "工读干事穿过钟楼通道潜入蒸汽锅炉房，高压水雾漫天飞卷中合力抱住生锈纯铜主阀手轮。",
-        "施工帮工暗中递过生铁管钳，青年咬紧牙关旋死阀门终结水锤爆裂险情，保全地窖电气绝缘安全。",
-        "挖掘机重铲撞击外墙的沉闷轰鸣在头顶骤响，青年抄起铁管原路返回地窖护卫会长。"
+        "锅炉房早就停用了，铜阀门上还挂着建校那年的铭牌。",
+        "干事拿手机替铭牌拍照存档，会长说拆楼之前想把它留下来。",
+        "两人商量着怎么跟施工队开口，最后决定明天一起去。"
       ],
       "hook_ids": [
         "h_goro_bulldozer_diesel_roar_shout",
         "h_ren_nightstick_padlock_iron_slam",
         "h_daiki_silver_cane_legal_proclamation"
       ],
-      "start_minute": 1150,
+      "start_minute": 1000,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "a_catacomb_ladder_cable_breakout",
-      "title": "钟楼竖井逃生天梯攀登",
+      "title": "爬上钟楼看夕阳",
       "location_ids": [
         "clocktower_cable_catacomb"
       ],
       "duration_minutes": 40,
       "beats": [
-        "发带彻底解开后会长披散青丝在青年搀扶下冲入钟楼配线廊，副会长白鸟由实早已在铁梯处接应。",
-        "摄影女记者玲奈在梯顶用闪光灯照亮陡峭红砖铁梯，青年在下方用双臂托住脱力会长一步步攀爬。",
-        "施工领班手持铁钳企图切断逃生扶手，被赶到的风纪委员长橘率队持盾死死撞开压制伏法。"
+        "钟楼里的铁梯通到楼顶，会长说这是旧校舍最后一个没人知道的地方。",
+        "干事在下面扶着梯子，会长爬到一半回头催：快点，太阳要落山了。",
+        "楼顶上能看见整片旧校舍，会长靠着栏杆说，拆了之后就再也看不到这个角度了。"
       ],
       "hook_ids": [
-        "h_reina_camera_flash_shutter_roar",
-        "h_yui_tea_thermos_soft_voice",
-        "h_ren_nightstick_padlock_iron_slam"
+        "hd_proud_president_ayaka",
+        "hd_discipline_chief_ren",
+        "hd_demolition_crew_boss_goro",
+        "hd_vice_president_yui",
+        "hd_student_journalist_reina",
+        "hd_veteran_alumnus_mentor_daiki"
       ],
-      "start_minute": 1195,
+      "start_minute": 1050,
       "tags": [
         "workplace"
       ]
@@ -1930,22 +1936,22 @@
     },
     {
       "id": "a_dawn_courtyard_reign_triumph",
-      "title": "晨曦广场重新束发定情",
+      "title": "拆楼前的最后一张合影",
       "location_ids": [
         "demolition_staging_ground"
       ],
       "duration_minutes": 30,
       "beats": [
-        "暴雨初歇红日初升，金光洒满百年旧校舍沧桑红砖外立面，全体教职员与研究生爆发出雷鸣般的胜利欢呼。",
-        "神宫寺绫香当众摘下缠绕在青年腕间的黑缎真丝发带，动作优雅轻柔端正系回青丝发梢。",
-        "会长当着全校高层之面牵起青年干事双手并肩步入大礼堂，名门传奇在晨光万丈中盛大定格。"
+        "前庭拉起了拆迁围挡，研究生会的人在旧校舍门前排好队拍最后一张合影。",
+        "摄影的女记者喊着往中间靠，会长被挤到了干事身边。",
+        "快门按下的那一刻，会长悄悄把发带系在了干事的手腕上。"
       ],
       "hook_ids": [
         "h_ayaka_dawn_ribbon_retie_vow",
         "h_yui_tea_thermos_soft_voice",
         "h_daiki_silver_cane_legal_proclamation"
       ],
-      "start_minute": 1270,
+      "start_minute": 540,
       "tags": [
         "workplace_power"
       ]
@@ -2381,6 +2387,42 @@
         "cellar_archive_vault"
       ],
       "text": "{proud_president_ayaka.name}贝齿紧咬下唇，指节攥得微微泛白，避开视线低声开口：“……手快没知觉了。你从后面握住闸柄……等你接稳了，我再一圈圈把发带松开……慢一点……别让火花溅起来……”"
+    },
+    {
+      "id": "hd_proud_president_ayaka",
+      "kind": "approach",
+      "slot": "proud_president_ayaka",
+      "text": "{proud_president_ayaka.name}把一摞旧档案放到你面前，别过脸：“这些你帮忙整理一下。……谢了。”"
+    },
+    {
+      "id": "hd_discipline_chief_ren",
+      "kind": "approach",
+      "slot": "discipline_chief_ren",
+      "text": "{discipline_chief_ren.name}靠在门边，把一罐热咖啡丢给你：“加班的人有份，别多想。”"
+    },
+    {
+      "id": "hd_demolition_crew_boss_goro",
+      "kind": "approach",
+      "slot": "demolition_crew_boss_goro",
+      "text": "{demolition_crew_boss_goro.name}摘下安全帽擦了擦汗，冲你扬扬下巴：“这栋老楼，你以前常来？”"
+    },
+    {
+      "id": "hd_vice_president_yui",
+      "kind": "approach",
+      "slot": "vice_president_yui",
+      "text": "{vice_president_yui.name}端着两杯红茶走过来，递给你一杯：“会长又在逞强了，我们先歇一会儿吧。”"
+    },
+    {
+      "id": "hd_student_journalist_reina",
+      "kind": "approach",
+      "slot": "student_journalist_reina",
+      "text": "{student_journalist_reina.name}举起相机冲你晃了晃：“借你当一下模特，就一张，拍完请你吃饭。”"
+    },
+    {
+      "id": "hd_veteran_alumnus_mentor_daiki",
+      "kind": "approach",
+      "slot": "veteran_alumnus_mentor_daiki",
+      "text": "{veteran_alumnus_mentor_daiki.name}翻着资产清册，抬头看你：“这里的老物件，你能帮我认一认吗？”"
     }
   ],
   "twists": [

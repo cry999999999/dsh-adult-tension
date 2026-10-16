@@ -1340,41 +1340,47 @@
  "daily_activities": [
   {
    "beats": [
-    "使用高硬度防震架调校扁平扳手深入门框胶条下角单向均压孔",
-    "二人合力向下方倾斜三十度施加静载杠杆力矩顶开卡死橡胶阀片",
-    "在气流啸叫倒灌均压瞬间合抱推门卸除负压完成逃生"
+    "开录前，声优在录音间里试麦，念了几句游戏里的台词。",
+    "主控室里的录音导演点点头，又让声优把告白那句换个语气再试一次。",
+    "第三遍念完，导演在对讲里说：就是这个感觉，记住它。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_bai_aligns_vertical_force_axis",
+    "hook_bai_couples_secondary_extension",
+    "hook_su_and_crew_thrust_downward_pulse"
+   ],
    "id": "act_su_qing_han_pries_airtight_valve",
    "location_ids": [
     "loc_master_recording_dubbing_booth"
    ],
-   "start_minute": 1380,
+   "start_minute": 1260,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "录音棚防震架扳手下压挑脱气密胶阀"
+   "title": "录音间里试麦"
   },
   {
    "beats": [
-    "总监在主控室压下双爪工业真空吸盘扳把牢牢吸附外门受力中线",
-    "手持对讲麦克风向录音间内高声宣读气压下降曲线与避险口诀",
-    "通过观察窗清晰指示均压气流喷涌的瞬间向外猛拉大门"
+    "录到午夜，总监提着两袋关东煮走进主控室，招呼大家歇一歇。",
+    "声优从录音间里出来，捧着一碗关东煮缩在沙发上，说嗓子快哑了。",
+    "总监给声优泡了一杯胖大海，说终章那段不急，明晚再录也行。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_cheng_attaches_vacuum_cups_call",
+    "hook_ye_points_laser_to_valve_slot",
+    "hook_observe_cheng_and_patrol_haul_door"
+   ],
    "id": "act_cheng_attaches_vacuum_cups_and_calls",
    "location_ids": [
     "loc_sound_master_control_mixing_room"
    ],
-   "start_minute": 1382,
+   "start_minute": 1380,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "主控室锁紧工业吸盘并对讲广播调度"
+   "title": "主控室的宵夜"
   },
   {
    "beats": [
@@ -1434,22 +1440,25 @@
   },
   {
    "beats": [
-    "特勤队员双手扣死吸盘把手将身躯向后倾斜施加两百公斤外拉峰值",
-    "以军旅铿锵倒数读秒引导内外两侧人员毫秒级同步爆发发力",
-    "在门缝洞开瞬间单手推门大开果断接应受困人员迅速撤出"
+    "录音导演把今晚录的几段剪成小样，在主控室里放给大家听。",
+    "声优听到自己的声音，紧张地攥着衣角，等导演的评价。",
+    "导演听完摘下耳机：比上一版好，告白那句再录两遍就收工。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_cheng_attaches_vacuum_cups_call",
+    "hook_ye_points_laser_to_valve_slot",
+    "hook_observe_cheng_and_patrol_haul_door"
+   ],
    "id": "act_mo_drags_door_with_vacuum_cups",
    "location_ids": [
     "loc_sound_master_control_mixing_room"
    ],
-   "start_minute": 1384,
+   "start_minute": 1320,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "主控室双爪真空吸盘外向爆发力牵引"
+   "title": "主控室里听小样"
   },
   {
    "beats": [

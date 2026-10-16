@@ -1876,66 +1876,75 @@
   "daily_activities": [
     {
       "id": "a_blackout_candlelight_sealed_move_vigil",
-      "title": "幽玄室断电和纸烛台绝密封手签字加印",
+      "title": "第一日的封手",
       "location_ids": [
         "yugen_inner_tatami_chamber"
       ],
       "duration_minutes": 45,
       "beats": [
-        "特大台风雷击切断会馆主电网，十二叠和室陷入昏暗，仅存一盏摇曳生铁和纸长明烛台照亮榧木名盘。",
-        "女棋圣端坐榻榻米上凝神静思，在红纸上亲笔写下绝密封手落点并装入特制双重信封之内。",
-        "立会人手持红蜡火漆手枪在信封封口滴下滚烫红蜡，二人共同加盖私印锁入金属保险箱。"
+        "头衔战第一日的傍晚，女棋圣在幽玄之室里写下封手，装进双重信封。",
+        "立会人在信封封口滴上红蜡，两人各自加盖私印。",
+        "封手锁进保险箱，女棋圣起身行礼，说明早九点，再会。"
       ],
       "hook_ids": [
-        "h_yukiko_candlelight_shogi_finger_breath",
-        "h_yukiko_kimono_obi_whisper",
-        "h_ryo_iron_fan_shout"
+        "hd_proud_female_meijin_yukiko",
+        "hd_senior_titleholder_rival_ryo",
+        "hd_federation_arbiter_master_soji",
+        "hd_traditional_kimono_dresser_chiyo",
+        "hd_zen_tea_master_confidant_kurenai",
+        "hd_shogi_reporter_chronicler_shin"
       ],
-      "start_minute": 0,
+      "start_minute": 1080,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "a_veranda_typhoon_screen_fortification",
-      "title": "桧木回廊破裂木梁与漏水排险加固",
+      "title": "回廊里的休息时间",
       "location_ids": [
         "cypress_veranda_rain_corridor"
       ],
       "duration_minutes": 40,
       "beats": [
-        "狂暴台风掀翻回廊铜瓦，冰冷雨水自横梁缝隙激射倒灌，立会人冒雨登上梯子用木楔加固梁柱。",
-        "挑战者手持铁骨折扇在木廊巡视，协助工匠用防风帆布遮盖破损木格窗阻断穿堂风浪。",
-        "女棋圣立于门侧持烛火亲自打光照亮险情，全员合力终于将雨水排空在木廊外侧导流渠内。"
+        "午休时间，女棋圣坐在桧木回廊下吃会馆准备的便当，庭院里的枯山水被雨打湿了。",
+        "立会人端着茶走过来，在不远处坐下，两人隔着两根柱子各吃各的。",
+        "女棋圣吃完，忽然说：下午那一手，我想了一上午。"
       ],
       "hook_ids": [
-        "h_ryo_iron_fan_shout",
-        "h_soji_stopwatch_statute_shout",
-        "h_yukiko_candlelight_shogi_finger_breath"
+        "hd_proud_female_meijin_yukiko",
+        "hd_senior_titleholder_rival_ryo",
+        "hd_federation_arbiter_master_soji",
+        "hd_traditional_kimono_dresser_chiyo",
+        "hd_zen_tea_master_confidant_kurenai",
+        "hd_shogi_reporter_chronicler_shin"
       ],
-      "start_minute": 45,
+      "start_minute": 750,
       "tags": [
         "workplace"
       ]
     },
     {
       "id": "a_vault_sealed_move_audit_defense",
-      "title": "保密暗室黑客侵入与外敌企图调换封手阻击",
+      "title": "保密库的交接",
       "location_ids": [
         "shogi_archive_secret_vault"
       ],
       "duration_minutes": 45,
       "beats": [
-        "黑道暗桩撬开后门企图趁黑调换保险柜内的封手信封，总监查亮出紧急牙牌厉声斥退暴徒。",
-        "立会人以身体死死顶住厚重生铁大门，配合挑战者将领头歹徒击翻在门槛外扣押凶器。",
-        "保险柜双重密码重新校准完毕，绝密封手完好无损重归铁柜宣告盘外阴谋彻底破产。"
+        "第二日清晨，总监查带着立会人打开封手保密库，确认保险箱的封蜡完好。",
+        "女棋圣站在门口看着，脸色平静，手里却攥着一把折扇。",
+        "封蜡验过，总监查点点头：对局可以继续。"
       ],
       "hook_ids": [
-        "h_soji_stopwatch_statute_shout",
-        "h_yukiko_kimono_obi_whisper",
-        "h_chiyo_warm_tea_kimono_whisper"
+        "hd_proud_female_meijin_yukiko",
+        "hd_senior_titleholder_rival_ryo",
+        "hd_federation_arbiter_master_soji",
+        "hd_traditional_kimono_dresser_chiyo",
+        "hd_zen_tea_master_confidant_kurenai",
+        "hd_shogi_reporter_chronicler_shin"
       ],
-      "start_minute": 85,
+      "start_minute": 510,
       "tags": [
         "intimate"
       ]
@@ -2435,6 +2444,42 @@
         "yugen_inner_tatami_chamber"
       ],
       "text": "{traditional_kimono_dresser_chiyo.name}跪在榻榻米边，将干棉巾压入女棋圣颈后衣领缝隙，抬头轻声嘱咐：“立会人大人，请把羽织下摆收拢压紧，一点冷风都不能漏进大人的腰间！”"
+    },
+    {
+      "id": "hd_proud_female_meijin_yukiko",
+      "kind": "approach",
+      "slot": "proud_female_meijin_yukiko",
+      "text": "{proud_female_meijin_yukiko.name}把一副棋盘摆好，抬眼看你：“离对局还早。陪我下一盘练手棋。”"
+    },
+    {
+      "id": "hd_senior_titleholder_rival_ryo",
+      "kind": "approach",
+      "slot": "senior_titleholder_rival_ryo",
+      "text": "{senior_titleholder_rival_ryo.name}拎着一袋烤团子在你身边坐下：“吃点甜的，脑子转得灵。”"
+    },
+    {
+      "id": "hd_federation_arbiter_master_soji",
+      "kind": "approach",
+      "slot": "federation_arbiter_master_soji",
+      "text": "{federation_arbiter_master_soji.name}把一份对局规程递给你：“例行确认，看完签个名。”"
+    },
+    {
+      "id": "hd_traditional_kimono_dresser_chiyo",
+      "kind": "approach",
+      "slot": "traditional_kimono_dresser_chiyo",
+      "text": "{traditional_kimono_dresser_chiyo.name}捧着一件叠好的羽织走过来：“新熨的，您试试合不合身。”"
+    },
+    {
+      "id": "hd_zen_tea_master_confidant_kurenai",
+      "kind": "approach",
+      "slot": "zen_tea_master_confidant_kurenai",
+      "text": "{zen_tea_master_confidant_kurenai.name}点好一碗抹茶，双手奉到你面前：“请。静一静心。”"
+    },
+    {
+      "id": "hd_shogi_reporter_chronicler_shin",
+      "kind": "approach",
+      "slot": "shogi_reporter_chronicler_shin",
+      "text": "{shogi_reporter_chronicler_shin.name}翻着笔记本冲你招手：“明天的稿子，你帮我看看标题。”"
     }
   ],
   "twists": [

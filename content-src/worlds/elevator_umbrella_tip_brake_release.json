@@ -1641,21 +1641,24 @@
     },
     {
       "id": "act_typhoon_blackout_evac_drill",
-      "title": "大厦台风断电高空滞留防灾演练",
+      "title": "观光电梯里看夜景",
       "location_ids": [
         "loc_sightseeing_glass_elevator_car"
       ],
       "duration_minutes": 20,
       "beats": [
-        "重申电梯悬停期间双人贴地避险标准受力姿势",
-        "演练纯机械工具插入底梁螺栓手动松闸操作规程",
-        "核对随身强光电筒与保暖衣物快速分配调度机制"
+        "下班回家，室友和你一起乘观光玻璃电梯上楼，城市的灯火在脚下一层层铺开。",
+        "室友贴着玻璃看，说住了三年，还是觉得这一段最好看。",
+        "电梯到了三十层，室友却按住开门键，说再看一会儿。"
       ],
-      "hook_ids": [],
-      "start_minute": 1300,
+      "hook_ids": [
+        "hk_atrium_air_pressure_drop",
+        "hk_countdown_reading_rush",
+        "hk_end_relief_praise"
+      ],
+      "start_minute": 1260,
       "tags": [
-        "workplace",
-        "disaster"
+        "workplace"
       ]
     },
     {

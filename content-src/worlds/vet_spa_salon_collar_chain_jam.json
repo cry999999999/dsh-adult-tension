@@ -1769,17 +1769,24 @@
     },
     {
       "id": "act_hydraulic_arm_lock_incident",
-      "title": "液压悬臂自锁死死咬住项圈细链",
+      "title": "开馆前调试水疗舱",
       "location_ids": [
         "loc_hydrotherapy_tub_hydraulic_nook"
       ],
       "duration_minutes": 5,
       "beats": [
-        "伺服阻尼死死绞住细链将院长速干刷手服前襟猛烈拉拽掀起",
-        "前襟缝线断裂导致院长上身受拽无法直身抬头"
+        "开馆前，院长在水疗舱边调试机械臂，一遍遍试着升降和伸缩。",
+        "第一只来做水疗的是一只金毛，等不及地在门口摇着尾巴。",
+        "院长笑着蹲下来摸摸金毛的头：马上就好，今天给你用最舒服的水温。"
       ],
-      "hook_ids": [],
-      "start_minute": 132,
+      "hook_ids": [
+        "hd_vet_director_xu_an_ran",
+        "hd_clinical_director_lin_jing_xing",
+        "hd_concierge_lead_an_xiao_nian",
+        "hd_vip_client_mrs_song",
+        "hd_media_photographer_zhao_xiu_yuan"
+      ],
+      "start_minute": 540,
       "tags": []
     },
     {
@@ -1904,7 +1911,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_01_hydraulic_arm_groan_snag",
+        "hook_02_scrub_suit_strain_jam",
+        "hook_03_scissors_lever_extract",
+        "hook_04_director_lin_standoff",
+        "hook_05_concierge_towel_shield",
+        "hook_06_scissors_spine_into_nook_gap",
+        "hook_07_mrs_song_footsteps_stairs",
+        "hook_08_mechanic_braces_arm_bracket",
+        "hook_09_wrist_twist_scissors_pop",
+        "hook_10_collar_chain_snaps_free",
+        "hook_11_director_stands_tall_and_free",
+        "hook_12_flawless_director_poise_captured",
+        "hook_13_grand_spa_standing_ovation",
+        "hook_14_mrs_song_retreats_in_awe",
+        "hook_15_scissors_tucked_whisper_smile",
+        "hook_vet_office_door"
+      ],
       "start_minute": 132,
       "tags": [
         "disaster"
@@ -1947,7 +1971,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_01_hydraulic_arm_groan_snag",
+        "hook_02_scrub_suit_strain_jam",
+        "hook_03_scissors_lever_extract",
+        "hook_04_director_lin_standoff",
+        "hook_05_concierge_towel_shield",
+        "hook_06_scissors_spine_into_nook_gap",
+        "hook_07_mrs_song_footsteps_stairs",
+        "hook_08_mechanic_braces_arm_bracket",
+        "hook_09_wrist_twist_scissors_pop",
+        "hook_10_collar_chain_snaps_free",
+        "hook_11_director_stands_tall_and_free",
+        "hook_12_flawless_director_poise_captured",
+        "hook_13_grand_spa_standing_ovation",
+        "hook_14_mrs_song_retreats_in_awe",
+        "hook_15_scissors_tucked_whisper_smile",
+        "hook_vet_office_door"
+      ],
       "start_minute": 133,
       "tags": []
     },
@@ -1988,7 +2029,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_01_hydraulic_arm_groan_snag",
+        "hook_02_scrub_suit_strain_jam",
+        "hook_03_scissors_lever_extract",
+        "hook_04_director_lin_standoff",
+        "hook_05_concierge_towel_shield",
+        "hook_06_scissors_spine_into_nook_gap",
+        "hook_07_mrs_song_footsteps_stairs",
+        "hook_08_mechanic_braces_arm_bracket",
+        "hook_09_wrist_twist_scissors_pop",
+        "hook_10_collar_chain_snaps_free",
+        "hook_11_director_stands_tall_and_free",
+        "hook_12_flawless_director_poise_captured",
+        "hook_13_grand_spa_standing_ovation",
+        "hook_14_mrs_song_retreats_in_awe",
+        "hook_15_scissors_tucked_whisper_smile",
+        "hook_vet_office_door"
+      ],
       "start_minute": 133,
       "tags": []
     },
@@ -2029,7 +2087,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_01_hydraulic_arm_groan_snag",
+        "hook_02_scrub_suit_strain_jam",
+        "hook_03_scissors_lever_extract",
+        "hook_04_director_lin_standoff",
+        "hook_05_concierge_towel_shield",
+        "hook_06_scissors_spine_into_nook_gap",
+        "hook_07_mrs_song_footsteps_stairs",
+        "hook_08_mechanic_braces_arm_bracket",
+        "hook_09_wrist_twist_scissors_pop",
+        "hook_10_collar_chain_snaps_free",
+        "hook_11_director_stands_tall_and_free",
+        "hook_12_flawless_director_poise_captured",
+        "hook_13_grand_spa_standing_ovation",
+        "hook_14_mrs_song_retreats_in_awe",
+        "hook_15_scissors_tucked_whisper_smile",
+        "hook_vet_office_door"
+      ],
       "start_minute": 134,
       "tags": []
     },
@@ -2070,7 +2145,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_01_hydraulic_arm_groan_snag",
+        "hook_02_scrub_suit_strain_jam",
+        "hook_03_scissors_lever_extract",
+        "hook_04_director_lin_standoff",
+        "hook_05_concierge_towel_shield",
+        "hook_06_scissors_spine_into_nook_gap",
+        "hook_07_mrs_song_footsteps_stairs",
+        "hook_08_mechanic_braces_arm_bracket",
+        "hook_09_wrist_twist_scissors_pop",
+        "hook_10_collar_chain_snaps_free",
+        "hook_11_director_stands_tall_and_free",
+        "hook_12_flawless_director_poise_captured",
+        "hook_13_grand_spa_standing_ovation",
+        "hook_14_mrs_song_retreats_in_awe",
+        "hook_15_scissors_tucked_whisper_smile",
+        "hook_vet_office_door"
+      ],
       "start_minute": 134,
       "tags": [
         "disaster"
@@ -2113,7 +2205,24 @@
         }
       ],
       "leverage": null,
-      "hook_ids": [],
+      "hook_ids": [
+        "hook_01_hydraulic_arm_groan_snag",
+        "hook_02_scrub_suit_strain_jam",
+        "hook_03_scissors_lever_extract",
+        "hook_04_director_lin_standoff",
+        "hook_05_concierge_towel_shield",
+        "hook_06_scissors_spine_into_nook_gap",
+        "hook_07_mrs_song_footsteps_stairs",
+        "hook_08_mechanic_braces_arm_bracket",
+        "hook_09_wrist_twist_scissors_pop",
+        "hook_10_collar_chain_snaps_free",
+        "hook_11_director_stands_tall_and_free",
+        "hook_12_flawless_director_poise_captured",
+        "hook_13_grand_spa_standing_ovation",
+        "hook_14_mrs_song_retreats_in_awe",
+        "hook_15_scissors_tucked_whisper_smile",
+        "hook_vet_office_door"
+      ],
       "start_minute": 135,
       "tags": []
     }
@@ -2262,6 +2371,36 @@
         "loc_vet_director_office"
       ],
       "text": "{npc.name}抱着布偶猫站在休息室门口：打烊了。……进来坐会儿？"
+    },
+    {
+      "id": "hd_vet_director_xu_an_ran",
+      "kind": "approach",
+      "slot": "vet_director_xu_an_ran",
+      "text": "{vet_director_xu_an_ran.name}把一杯温水放在你手边，摘下手套：“今天预约少，坐下歇会儿。”"
+    },
+    {
+      "id": "hd_clinical_director_lin_jing_xing",
+      "kind": "approach",
+      "slot": "clinical_director_lin_jing_xing",
+      "text": "{clinical_director_lin_jing_xing.name}拿着一份病历走过来：“这只猫的复诊，你帮我排个时间。”"
+    },
+    {
+      "id": "hd_concierge_lead_an_xiao_nian",
+      "kind": "approach",
+      "slot": "concierge_lead_an_xiao_nian",
+      "text": "{concierge_lead_an_xiao_nian.name}捧着一束花走过来：“客户送的，放你桌上吧。”"
+    },
+    {
+      "id": "hd_vip_client_mrs_song",
+      "kind": "approach",
+      "slot": "vip_client_mrs_song",
+      "text": "{vip_client_mrs_song.name}抱着贵宾犬冲你笑：“今天就是来坐坐，陪我聊聊天。”"
+    },
+    {
+      "id": "hd_media_photographer_zhao_xiu_yuan",
+      "kind": "approach",
+      "slot": "media_photographer_zhao_xiu_yuan",
+      "text": "{media_photographer_zhao_xiu_yuan.name}举起相机：“光线正好，帮我抱一下这只小狗。”"
     }
   ],
   "twists": [

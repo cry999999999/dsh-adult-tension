@@ -1435,15 +1435,18 @@
  "daily_activities": [
   {
    "beats": [
-    "大塌方巨响震荡地脉，避难石室被封死，幽蓝荧光苔藓冷光下，女斥候皮甲染血魔纹暴走发烫。",
-    "调查官小心割开卡死皮甲铜扣，学者在祭台布下同调法阵，调查官隔着护手扣住女斥候手腕把逆流魔火引入基岩。",
-    "魔纹渐褪、神志清明后，女斥候握紧同伴手腕，低声推演破晓生门，确立战地生死血契。"
+    "远征队在苔藓石室里休整，女斥候坐在荧光下修补皮甲上的裂口。",
+    "调查官凑过来看，女斥候冷冷地说：手别碰，针上有倒刺。",
+    "皮甲补好了，女斥候披在身上试了试，难得没有赶人走。"
    ],
    "duration_minutes": 45,
    "hook_ids": [
-    "h_valeria_glowing_moss_breath_fever",
-    "h_valeria_adamantine_dagger_whisper",
-    "h_garrick_greatsword_stone_shout"
+    "hd_proud_drow_scout_valeria",
+    "hd_veteran_mercenary_leader_garrick",
+    "hd_arcane_scholar_maiden_elise",
+    "hd_frontier_cleric_maiden_aria",
+    "hd_royal_sapper_captain_brenn",
+    "hd_dungeon_trapper_rogue_kyle"
    ],
    "id": "a_moss_chamber_armor_unbuckling_mana_flo",
    "location_ids": [
@@ -1453,35 +1456,34 @@
    "tags": [
     "intimate"
    ],
-   "title": "荧光石室破损皮甲解扣与法阵导魔"
+   "title": "苔藓石室里补皮甲"
   },
   {
    "beats": [
-    "余震导致巨石缝隙不断渗出浑浊泥流，重步兵队长手持破甲大剑斩断凸起棱角开辟稳固支撑点。",
-    "调查官以折叠撬棍在石缝间敲击三长两短求救信标，女斥候持短刃在旁敏锐倾听岩层回音变化。",
-    "碎石堆在木桩支撑下稳固成型，通风孔成功打通，前线突击队微弱回敲声隐隐穿透岩层传来。"
+    "远征队在石室中央生起小炉，重步兵队长煮了一锅肉汤。",
+    "女斥候端着碗坐得远远的，调查官把自己碗里的那块肉夹了过去。",
+    "女斥候盯着那块肉看了一会儿，小声说：……谢谢。"
    ],
    "duration_minutes": 40,
    "hook_ids": [
     "h_garrick_greatsword_stone_shout",
-    "h_elise_star_staff_formula_shout",
-    "h_valeria_glowing_moss_breath_fever"
+    "h_elise_star_staff_formula_shout"
    ],
    "id": "a_rubble_barrier_rock_clearing_reinforce",
    "location_ids": [
-    "collapsed_tunnel_rubble_barrier"
+    "moss_ruins_sanctuary_chamber"
    ],
    "start_minute": 45,
    "tags": [
     "workplace"
    ],
-   "title": "塌方主坑道巨石裂缝通气孔排险加固"
+   "title": "石室里的晚饭"
   },
   {
    "beats": [
-    "盗贼在狭窄紫晶石缝中飞速布设纯钢绊马索与倒钩飞刃，构筑起阻绝深渊毒物的立体杀阵。",
-    "潜行杀手企图趁黑摸入，女斥候甩出暗影飞刀将其钉在岩壁，调查官飞身上前缴下凶器与密卷。",
-    "紫晶矿脉在法术激荡下折射出璀璨星芒，退路威胁被连根拔起宣告后方防线彻底稳如泰山。"
+    "调查官要采一块紫晶样本，女斥候领着人钻进狭窄的石缝。",
+    "紫晶在灯光下折射出星点，女斥候说地面上的人从没见过这种颜色。",
+    "样本装进木盒，女斥候顺手掰下一小块，塞进了调查官的口袋。"
    ],
    "duration_minutes": 45,
    "hook_ids": [
@@ -1497,19 +1499,18 @@
    "tags": [
     "intimate"
    ],
-   "title": "紫晶裂隙机关绊索布设与潜伏杀手阻击"
+   "title": "紫晶缝里采样"
   },
   {
    "beats": [
-    "祭台符文石板破裂濒临熄灭，学者割破手腕以魔血搭桥，调查官全力灌注精神力稳固法阵中枢。",
-    "女斥候在纯净光幕笼罩下魔毒尽退，灰白肌肤恢复温润光泽，含泪反拥同伴脖颈倾诉多年孤寂。",
-    "女斥候咬破指尖在青年手背绘制暗夜血契图腾，立下破晓之后无论世俗目光一生相随之重誓。"
+    "学者在石室深处的古祭台前拓印符文，调查官帮忙举着灯。",
+    "女斥候认出其中一个符文，说那是黑暗精灵古语里的约定。",
+    "学者请女斥候念一遍，女斥候念完，别过脸去不再说话。"
    ],
    "duration_minutes": 35,
    "hook_ids": [
     "h_valeria_adamantine_dagger_whisper",
-    "h_aria_silver_chalice_prayer_whisper",
-    "h_valeria_glowing_moss_breath_fever"
+    "h_aria_silver_chalice_prayer_whisper"
    ],
    "id": "a_altar_mana_resonance_purification_vow",
    "location_ids": [
@@ -1519,7 +1520,7 @@
    "tags": [
     "intimate"
    ],
-   "title": "残破古祭台魔血修补与心跳同调盟誓"
+   "title": "拓印古祭台的符文"
   },
   {
    "beats": [
@@ -1726,6 +1727,48 @@
    ],
    "slot": "arcane_scholar_maiden_elise",
    "text": "{arcane_scholar_maiden_elise.name}单手按着发热水晶，抬头急切道：“调查官！把我右侧腰包里的水属性魔石递过来！快！祭台核心需要降温，我抽不开手，帮我塞进基座凹槽里！”"
+  },
+  {
+   "id": "hd_proud_drow_scout_valeria",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "proud_drow_scout_valeria",
+   "text": "{proud_drow_scout_valeria.name}把一块烤好的蘑菇递给你，语气冷淡：“多烤了一块。别浪费。”"
+  },
+  {
+   "id": "hd_veteran_mercenary_leader_garrick",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "veteran_mercenary_leader_garrick",
+   "text": "{veteran_mercenary_leader_garrick.name}在营火边坐下，冲你举了举酒囊：“轮休，喝一口？”"
+  },
+  {
+   "id": "hd_arcane_scholar_maiden_elise",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "arcane_scholar_maiden_elise",
+   "text": "{arcane_scholar_maiden_elise.name}捧着一块刻满符文的石板过来：“你看这几个字，像不像古精灵语？”"
+  },
+  {
+   "id": "hd_frontier_cleric_maiden_aria",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "frontier_cleric_maiden_aria",
+   "text": "{frontier_cleric_maiden_aria.name}把一条干净的毯子递给你：“晚上凉，盖着睡。”"
+  },
+  {
+   "id": "hd_royal_sapper_captain_brenn",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "royal_sapper_captain_brenn",
+   "text": "{royal_sapper_captain_brenn.name}擦着工具冲你点头：“今天活儿干完了，坐下聊聊？”"
+  },
+  {
+   "id": "hd_dungeon_trapper_rogue_kyle",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "dungeon_trapper_rogue_kyle",
+   "text": "{dungeon_trapper_rogue_kyle.name}抛着一枚古金币冲你笑：“猜猜正反面，猜中了归你。”"
   }
  ],
  "id": "drow_scout_ancient_ruins_shelter",

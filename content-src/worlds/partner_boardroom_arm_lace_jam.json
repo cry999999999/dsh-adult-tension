@@ -1765,17 +1765,22 @@
     },
     {
       "id": "act_arm_garter_clip_snag_incident",
-      "title": "机械臂滑轨自锁卡爪咬死吊袜带钢夹",
+      "title": "敲钟前的彩排",
       "location_ids": [
         "loc_roadshow_center_circular_stage"
       ],
       "duration_minutes": 5,
       "beats": [
-        "伺服阻尼死死绞住钢夹将合伙人羊绒铅笔裙后侧猛烈拉拽掀起",
-        "开叉缝线断裂导致合伙人单腿受拉无法迈步站直身躯"
+        "上市前一天，合伙人在交易所的敲钟圆台上彩排致辞，大屏上滚动着公司的标志。",
+        "合伙人念到一半停下来，让工作人员把提词器的字号调大一号。",
+        "彩排结束，合伙人站在台上看着空荡荡的大厅，说明天这里会挤满人。"
       ],
-      "hook_ids": [],
-      "start_minute": 132,
+      "hook_ids": [
+        "hook_01_arm_garter_clip_snag_groan",
+        "hook_03_battery_cap_lever_extract",
+        "hook_04_architect_iron_standoff"
+      ],
+      "start_minute": 900,
       "tags": []
     },
     {

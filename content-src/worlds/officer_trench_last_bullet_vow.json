@@ -1689,132 +1689,150 @@
   "daily_activities": [
     {
       "id": "a_entry_blast_shelter_trench_vigil",
-      "title": "防爆坑长官呢大衣背靠背取暖合温",
+      "title": "掩体里烤火",
       "location_ids": [
         "bunker_core_blast_shelter"
       ],
       "duration_minutes": 45,
       "beats": [
-        "年轻女少校身着深蓝呢大衣独坐掩体沙袋旁，零下三十度暴风雪呼啸，右肩弹片贯穿创口渗血战栗。",
-        "青年机枪副手单膝跪地以左肩贴靠少校背脊合盖大衣，双手手背轻托武装带重新扣紧以御严寒。",
-        "少校贝齿咬紧下唇微促喘息，在水汽寒意与硝烟弥漫中反手攥紧副手衣角，共听外侧敌军履带异动。"
+        "合围前的平静夜晚，十四号掩体里的锅炉烧得正旺，士兵们围着火烤冻僵的手。",
+        "瓦莲京娜少校坐在沙袋边看家信，副手在一旁替少校热一壶黑咖啡。",
+        "少校看完信折好，难得说了一句：我妹妹要结婚了。"
       ],
       "hook_ids": [
-        "h_valeria_greatcoat_shiver_glance",
-        "h_valeria_revolver_cylinder_closure",
-        "h_victor_commissar_drawn_pistol"
+        "hd_valeria_major_commander",
+        "hd_boris_heavy_gunner_sergeant",
+        "hd_dietrich_sapper_pioneer",
+        "hd_victor_commissar_captain",
+        "hd_erena_field_medic_lieutenant",
+        "hd_charlotte_signal_officer"
       ],
-      "start_minute": 225,
+      "start_minute": 1260,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "a_deep_bunker_sidearm_succession",
-      "title": "防爆深坑纯钢转轮配枪郑重交托",
+      "title": "擦拭配枪",
       "location_ids": [
         "bunker_core_blast_shelter"
       ],
       "duration_minutes": 40,
       "beats": [
-        "外侧敌军重迫击炮弹连番轰击掩体顶层，女少校在昏暗马灯下取出象征指挥大权的纯钢转轮配枪。",
-        "在死寂防爆坑内二人呼吸相闻掌心相叠，副手亲手将装满穿甲弹的铜弹巢推入卡槽发出清脆咬合响动。",
-        "少校靠着青年副手的肩稳住身形，指尖按在配枪握把上共同立下死守盟誓。"
+        "马灯下，少校拆开那把转轮配枪，一个零件一个零件地擦。",
+        "副手在一旁看着，少校说这把枪是父亲留下的，打了三场仗还没出过故障。",
+        "枪装好了，少校在手里掂了掂，把它放回枪套。"
       ],
       "hook_ids": [
-        "h_valeria_revolver_cylinder_closure",
-        "h_erena_medic_cross_whisper",
-        "h_victor_commissar_drawn_pistol"
+        "hd_valeria_major_commander",
+        "hd_boris_heavy_gunner_sergeant",
+        "hd_dietrich_sapper_pioneer",
+        "hd_victor_commissar_captain",
+        "hd_erena_field_medic_lieutenant",
+        "hd_charlotte_signal_officer"
       ],
-      "start_minute": 270,
+      "start_minute": 1320,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "a_parapet_heavy_machinegun_defense",
-      "title": "战壕胸墙重机枪短点射压制突击",
+      "title": "射击台上的哨班",
       "location_ids": [
         "trench_firing_step_parapet"
       ],
       "duration_minutes": 45,
       "beats": [
-        "敌军先锋步兵借照明弹强光发起集团冲锋，机枪班长鲍里斯与装填手合力操纵重机枪喷吐暗红火舌。",
-        "副手以身躯死死压住跳动机枪三脚架，女少校拔出卡宾枪傲然立于门后精准点射带头敌兵。",
-        "敌军投弹手在密集火网覆盖下死伤惨重，攻势受阻暂时退回外围弹坑盲区。"
+        "前线难得安静，机枪班长鲍里斯趴在射击台上，用望远镜看对面的雪原。",
+        "装填手在一旁啃黑面包，问班长战争结束后想做什么。",
+        "鲍里斯说想回家开一间面包店，装填手笑得差点把面包掉进雪里。"
       ],
       "hook_ids": [
-        "h_boris_heavy_gunner_roar",
-        "h_erena_medic_cross_whisper",
-        "h_valeria_greatcoat_shiver_glance"
+        "hd_valeria_major_commander",
+        "hd_boris_heavy_gunner_sergeant",
+        "hd_dietrich_sapper_pioneer",
+        "hd_victor_commissar_captain",
+        "hd_erena_field_medic_lieutenant",
+        "hd_charlotte_signal_officer"
       ],
-      "start_minute": 315,
+      "start_minute": 600,
       "tags": [
         "workplace_power"
       ]
     },
     {
       "id": "a_choke_point_sapper_demolition",
-      "title": "交通壕拐角反坦克雷场定向起爆",
+      "title": "交通壕里修铁丝网",
       "location_ids": [
         "communication_trench_choke_point"
       ],
       "duration_minutes": 35,
       "beats": [
-        "敌军重型装甲车压碎铁丝网逼近交通壕，工兵中士迪特里希在冻土暗坑飞速连接发爆器导线。",
-        "副手冒着车载机枪火网将集束手雷精准塞入敌车履带，工兵按动发爆器瞬间引爆路基炸药将敌车炸成火球。",
-        "冲天烈焰照亮极寒夜空，敌军后续装甲步兵在熊熊火海前丧胆溃退。"
+        "工兵中士迪特里希带着几个人在交通壕拐角修补被风雪压垮的铁丝网。",
+        "副手来帮忙，手套被铁刺勾破了，迪特里希扔过来一双自己的旧手套。",
+        "活干完了，几个人蹲在壕沟里分了一支烟。"
       ],
       "hook_ids": [
-        "h_dietrich_sapper_axe_strike",
-        "h_victor_commissar_drawn_pistol",
-        "h_boris_heavy_gunner_roar"
+        "hd_valeria_major_commander",
+        "hd_boris_heavy_gunner_sergeant",
+        "hd_dietrich_sapper_pioneer",
+        "hd_victor_commissar_captain",
+        "hd_erena_field_medic_lieutenant",
+        "hd_charlotte_signal_officer"
       ],
-      "start_minute": 350,
+      "start_minute": 840,
       "tags": [
         "workplace"
       ]
     },
     {
       "id": "a_signal_radio_breakthrough_flare",
-      "title": "通气孔顶层重接天线接通主力装甲车",
+      "title": "电台前的夏洛特",
       "location_ids": [
         "bunker_core_blast_shelter"
       ],
       "duration_minutes": 30,
       "beats": [
-        "通信女少尉夏洛特在副手冒死抢修天线配合下，在狂暴电磁杂波中成功捕获帝国装甲列车接应波段。",
-        "装甲列车总指挥部确认第十四号掩体坐标，宣布重炮兵群已完成射击诸元诸准备即将提供徐进弹幕。",
-        "掩体全员群情振奋，原本绝望濒死的断后官兵爆发出视死如归的昂扬斗志。"
+        "通信少尉夏洛特戴着耳机调电台，杂音里偶尔漏出后方电台的音乐。",
+        "夏洛特把音量调大一点，掩体里的人都安静下来听。",
+        "一首老歌放完，夏洛特摘下耳机，说后方的人还在跳舞呢。"
       ],
       "hook_ids": [
-        "h_charlotte_signal_code_flash",
-        "h_valeria_greatcoat_shiver_glance",
-        "h_erena_medic_cross_whisper"
+        "hd_valeria_major_commander",
+        "hd_boris_heavy_gunner_sergeant",
+        "hd_dietrich_sapper_pioneer",
+        "hd_victor_commissar_captain",
+        "hd_erena_field_medic_lieutenant",
+        "hd_charlotte_signal_officer"
       ],
-      "start_minute": 385,
+      "start_minute": 1200,
       "tags": [
         "intimate"
       ]
     },
     {
       "id": "a_dawn_trench_counterattack_triumph",
-      "title": "破晓信号弹升起并肩登上胸墙凯旋",
+      "title": "胸墙上的日出",
       "location_ids": [
         "trench_firing_step_parapet"
       ],
       "duration_minutes": 25,
       "beats": [
-        "东方天际三联装红色高空信号弹冲天而起，破晓金红朝阳刺破北境暴风雪洒满十四号阵地。",
-        "瓦莲京娜少校在青年机枪副手搀扶下并肩登上机枪胸墙，牵起副手五指迎向赶来接应的友军先锋装甲车队。",
-        "全连幸存将士脱帽欢呼，极寒死线守灵夜在浩瀚朝霞与终生定情誓约中盛大圆满定格。"
+        "风雪暂歇的清晨，瓦莲京娜少校站在胸墙上，看着东边的天一点点变红。",
+        "副手爬上来，递给少校一杯热水，两人并肩站着谁也没说话。",
+        "太阳升起来，少校说：今天是我的生日。"
       ],
       "hook_ids": [
-        "h_valeria_dawn_flask_toast_vow",
-        "h_erena_medic_cross_whisper",
-        "h_boris_heavy_gunner_roar"
+        "hd_valeria_major_commander",
+        "hd_boris_heavy_gunner_sergeant",
+        "hd_dietrich_sapper_pioneer",
+        "hd_victor_commissar_captain",
+        "hd_erena_field_medic_lieutenant",
+        "hd_charlotte_signal_officer"
       ],
-      "start_minute": 415,
+      "start_minute": 390,
       "tags": [
         "workplace_power"
       ]
@@ -2251,6 +2269,42 @@
         "bunker_core_blast_shelter"
       ],
       "text": "{valeria_major_commander.name}贝齿轻打冷颤，避开视线低声轻喘：“……手指快冻僵了，拉不开枪机……把野战炉推过来……替我把枪机拉开……别多想，只是为了能握稳手枪射击……听懂了吗？”"
+    },
+    {
+      "id": "hd_valeria_major_commander",
+      "kind": "approach",
+      "slot": "valeria_major_commander",
+      "text": "{valeria_major_commander.name}把一杯热茶递到你手里，难得没有下命令：“今晚安静。坐下陪我喝完。”"
+    },
+    {
+      "id": "hd_boris_heavy_gunner_sergeant",
+      "kind": "approach",
+      "slot": "boris_heavy_gunner_sergeant",
+      "text": "{boris_heavy_gunner_sergeant.name}从怀里掏出一块巧克力掰成两半：“家里寄来的，分你一半。”"
+    },
+    {
+      "id": "hd_dietrich_sapper_pioneer",
+      "kind": "approach",
+      "slot": "dietrich_sapper_pioneer",
+      "text": "{dietrich_sapper_pioneer.name}拿着一张家书冲你招手：“帮我看看，这几个字写得像样吗？”"
+    },
+    {
+      "id": "hd_victor_commissar_captain",
+      "kind": "approach",
+      "slot": "victor_commissar_captain",
+      "text": "{victor_commissar_captain.name}在你身边坐下，翻开一本旧诗集：“听过这首吗？我念给你听。”"
+    },
+    {
+      "id": "hd_erena_field_medic_lieutenant",
+      "kind": "approach",
+      "slot": "erena_field_medic_lieutenant",
+      "text": "{erena_field_medic_lieutenant.name}把一双干袜子塞给你：“换上，脚冻坏了可不行。”"
+    },
+    {
+      "id": "hd_charlotte_signal_officer",
+      "kind": "approach",
+      "slot": "charlotte_signal_officer",
+      "text": "{charlotte_signal_officer.name}摘下一边耳机递给你：“后方电台在放音乐，你也听听。”"
     }
   ],
   "twists": [

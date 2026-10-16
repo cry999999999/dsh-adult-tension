@@ -1582,18 +1582,22 @@
     },
     {
       "id": "act_rotunda_acoustic_echo_calibration",
-      "title": "地下八米回廊声波测距与暗道探听",
+      "title": "回廊里等盖印",
       "location_ids": [
         "loc_shanghai_bank_underground_rotunda"
       ],
       "duration_minutes": 20,
       "beats": [
-        "敲击花岗岩廊柱记录回声衰减秒数判定外围坍塌点",
-        "将耳朵贴在排水铁管上监听上方街道装甲车震鸣",
-        "在随身蓝图上标出可能被水流冲塌的砖石薄弱隔墙"
+        "金库环形回廊里，大小姐坐在丝绒椅上，等柜员把军饷提存单送来盖印。",
+        "总工程师站在一旁，大小姐问总工留洋那几年最想念上海的什么。",
+        "总工想了想，说是城隍庙的生煎。大小姐笑了，说下回带你去吃。"
       ],
-      "hook_ids": [],
-      "start_minute": 980,
+      "hook_ids": [
+        "hook_chuchu_dance_floor",
+        "hook_chuchu_old_photo",
+        "hook_chuchu_rickshaw"
+      ],
+      "start_minute": 660,
       "tags": [
         "workplace",
         "crime"
@@ -1601,21 +1605,24 @@
     },
     {
       "id": "act_concession_police_curfew_check",
-      "title": "工部局宵禁警戒铜牌与暗号交接巡查",
+      "title": "铁栅门前的巡捕",
       "location_ids": [
         "loc_security_grille_sluice_gate"
       ],
       "duration_minutes": 15,
       "beats": [
-        "通过铁门窥视孔查验外侧巡捕当班督察领章编号",
-        "核准外滩沿线装甲防暴车巡逻交接班声响节拍",
-        "向门外执勤哨兵报备地下金库内部受困中方人员名单"
+        "傍晚，大小姐从金库出来，铁栅门外当班的巡捕敬了个礼。",
+        "巡捕说今晚宵禁提前了，请大小姐早点回府。",
+        "总工替大小姐叫了黄包车，大小姐上车前回头说：下个月，还是你陪我下库。"
       ],
-      "hook_ids": [],
-      "start_minute": 985,
+      "hook_ids": [
+        "hook_chuchu_dance_floor",
+        "hook_chuchu_old_photo",
+        "hook_chuchu_rickshaw"
+      ],
+      "start_minute": 1080,
       "tags": [
-        "workplace_power",
-        "disaster"
+        "workplace_power"
       ]
     },
     {

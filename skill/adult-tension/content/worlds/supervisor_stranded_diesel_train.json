@@ -1433,57 +1433,54 @@
  "daily_activities": [
   {
    "beats": [
-    "极北暴风雪撕扯车厢，柴油发电机熄火断暖，车内温度骤降至零下二十度，天鹅绒软座扶手结满硬霜。",
-    "女部长傲然端坐检查公文箱手铐密码，因连续受寒双肩战栗，副官脱下羊毛大衣盖到长官肩上。",
-    "女部长在冷香与寒气里握紧副官递来的热咖啡罐，二人共裹一条薄毯，在昏暗钨丝灯下低声推演签约死线。"
+    "暴风雪来临前的午后，女部长和副官坐在单节柴油车的软座上，窗外是一望无际的林海。",
+    "女部长翻着签约底稿，副官在对面剥橘子，剥好一瓣就放到部长手边。",
+    "女部长头也不抬地吃着，说这趟车比飞机慢，可是安静。"
    ],
    "duration_minutes": 45,
    "hook_ids": [
     "h_reiko_greatcoat_shiver_frost_breath",
-    "h_reiko_briefcase_handcuff_whisper",
     "h_goro_wrench_pipe_shout"
    ],
    "id": "a_entry_cabin_greatcoat_sharing_vigil",
    "location_ids": [
     "derailed_passenger_cabin_middle"
    ],
-   "start_minute": 30,
+   "start_minute": 840,
    "tags": [
     "intimate"
    ],
-   "title": "中段座席大衣同裹御寒与底稿锁腕"
+   "title": "出差路上的午后"
   },
   {
    "beats": [
-    "司机室狂风呼啸，柴油滤清器内部彻底被析出石蜡硬化堵塞，车长双手冻僵无法旋转生铁卸压阀门。",
-    "副官与车长合力用明火喷灯小心烘烤油管化蜡，女部长立于门槛处持手电筒亲自为二人打光照明。",
-    "管路重新流出通畅柴油发出清脆滴答声，二人迅速连接供油高压回路准备进行人工盘车起动。"
+    "副官去司机室送一杯茶，老车长正哼着小调开车，仪表盘上的指针稳稳地跳着。",
+    "车长说这条线开了二十年，闭着眼都知道哪里有弯。",
+    "副官回到座位，告诉部长车长是个有意思的人，部长难得笑了一下。"
    ],
    "duration_minutes": 40,
    "hook_ids": [
     "h_goro_wrench_pipe_shout",
-    "h_daiki_ice_spade_rope_crawl",
     "h_reiko_greatcoat_shiver_frost_breath"
    ],
    "id": "a_engine_room_paraffin_defrosting",
    "location_ids": [
     "diesel_engine_compartment_vestibule"
    ],
-   "start_minute": 75,
+   "start_minute": 900,
    "tags": [
     "workplace"
    ],
-   "title": "司机室柴油机喷油嘴喷灯化蜡排险"
+   "title": "司机室里的车长"
   },
   {
    "beats": [
-    "狂风卷着断枝击碎后方车窗玻璃，零下二十五度风雪狂涌倒灌，地面红地毯瞬间被厚厚白雪覆盖。",
-    "副官掀起沉重天鹅绒座垫冒着玻璃毛刺死死卡入窗框，女部长以自身大衣和身躯充当防风肉盾死守底稿。",
-    "巡道工自外侧拉上防风防水油布协助固定，狂暴穿堂风终于被成功截断在车厢后部通道。"
+    "女部长看底稿看累了，起身走到车尾门边，透过窗户看飞速后退的雪林。",
+    "副官跟过来站在一旁，部长说小时候坐过这样的车去外婆家。",
+    "窗外闪过一只白狐，两人同时转头去看，又同时笑了。"
    ],
    "duration_minutes": 45,
    "hook_ids": [
-    "h_daiki_ice_spade_rope_crawl",
     "h_reiko_greatcoat_shiver_frost_breath",
     "h_aoi_glucose_blanket_whisper"
    ],
@@ -1491,43 +1488,45 @@
    "location_ids": [
     "broken_window_snowdrift_exit"
    ],
-   "start_minute": 115,
+   "start_minute": 960,
    "tags": [
     "workplace"
    ],
-   "title": "车尾破损车窗座垫强行封堵防风雪"
+   "title": "尾门边看风景"
   },
   {
    "beats": [
-    "巡道工在暴雪深坑中冒着滑坠危险将重型钢缆一端死死缠绕在路基内侧钢轨底座之上。",
-    "副官在倾斜车体下方协助挂扣高强度纯铜卡槽，女部长在车内组织乘客右倾配重抗衡倾斜重心。",
-    "整节客车在钢缆拉紧后发出沉闷金属落位声恢复稳固，彻底排除了侧翻滚落深谷之灭顶危机。"
+    "列车在一个林场小站停了十分钟，巡道工踩着积雪沿着路基检查铁轨。",
+    "副官下车买了两个热烤红薯，部长站在车门口，接过一个捧在手里取暖。",
+    "汽笛响了，巡道工挥着小旗示意出发，部长回到座位上，把红薯吃了个干净。"
    ],
    "duration_minutes": 35,
    "hook_ids": [
-    "h_daiki_ice_spade_rope_crawl",
-    "h_goro_wrench_pipe_shout",
-    "h_reiko_briefcase_handcuff_whisper"
+    "hd_proud_supervisor_reiko",
+    "hd_veteran_conductor_driver_goro",
+    "hd_rival_corporate_spy_kenji",
+    "hd_senior_trackwalker_scout_daiki",
+    "hd_paramedic_volunteer_girl_aoi",
+    "hd_snowplow_rescue_captain_mika"
    ],
    "id": "a_slope_steel_cable_anchor_securing",
    "location_ids": [
     "exterior_snowdrift_embankment"
    ],
-   "start_minute": 160,
+   "start_minute": 1020,
    "tags": [
     "workplace_power"
    ],
-   "title": "外侧路基转向架防倾覆钢缆加固"
+   "title": "小站停车的十分钟"
   },
   {
    "beats": [
-    "女部长体温降至严重失温临界点陷入神志昏沉，医学研究生指导副官用大衣、保温毯与暖水袋实施核心复温。",
-    "副官扶起女部长一小口一小口喂下温热浓糖水，女部长在体温回升中泪流满面攥紧副官袖口。",
-    "二人背靠背坐在软座深处，部长腕间的手铐叮当作响，二人约定天亮后再把没说完的话说完。"
+    "傍晚，女部长靠在软座上睡着了，底稿还压在膝盖上。",
+    "副官把底稿轻轻抽出来收进公文箱，又把自己的大衣盖在部长身上。",
+    "部长醒来时天已经黑了，看着身上的大衣愣了一下，没有还回去。"
    ],
    "duration_minutes": 30,
    "hook_ids": [
-    "h_reiko_briefcase_handcuff_whisper",
     "h_aoi_glucose_blanket_whisper",
     "h_reiko_greatcoat_shiver_frost_breath"
    ],
@@ -1535,33 +1534,32 @@
    "location_ids": [
     "derailed_passenger_cabin_middle"
    ],
-   "start_minute": 195,
+   "start_minute": 1080,
    "tags": [
     "intimate"
    ],
-   "title": "软座区复温抢救与天明之约"
+   "title": "软座上的小憩"
   },
   {
    "beats": [
-    "破晓晨曦六点整第一缕血色晨光穿透暴风雪云层普照茫茫雪原铁道。",
-    "车长在车顶成功点亮红色应急警示信标灯，巨型双螺旋除雪车轰鸣破雪抵达会师。",
-    "女部长挽着副官臂弯在全车乘客欢呼中昂首踏上签约专列，百亿跨国底稿完好无损迎来辉煌凯旋定格。"
+    "列车在中途站过夜，清晨副官下车透气，路基上的积雪被晨光照得发亮。",
+    "车长在车顶检查信号灯，跟副官打招呼说今天天气好，中午就能到。",
+    "女部长裹着大衣走下来，站在副官身边呼出一口白气，说：今天要签字了。"
    ],
    "duration_minutes": 25,
    "hook_ids": [
     "h_reiko_dawn_parapet_smile_vow",
-    "h_goro_wrench_pipe_shout",
-    "h_daiki_ice_spade_rope_crawl"
+    "h_goro_wrench_pipe_shout"
    ],
    "id": "a_dawn_snowplow_beacon_counterattack",
    "location_ids": [
     "exterior_snowdrift_embankment"
    ],
-   "start_minute": 225,
+   "start_minute": 390,
    "tags": [
     "workplace_power"
    ],
-   "title": "破晓除雪专列会师与红顶信标点亮"
+   "title": "清晨的路基"
   }
  ],
  "default_npc_gender_mix": {
@@ -1724,6 +1722,48 @@
    ],
    "slot": "paramedic_volunteer_girl_aoi",
    "text": "{paramedic_volunteer_girl_aoi.name}跪在软座旁，将铝箔保温毯边角压入座椅缝隙，抬头轻声嘱咐：“副官，请把脚收拢一点，把毯子边缘压严实，一点风都不能漏进去！”"
+  },
+  {
+   "id": "hd_proud_supervisor_reiko",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "proud_supervisor_reiko",
+   "text": "{proud_supervisor_reiko.name}把一份报告推到你面前，看着窗外：“路上无事，帮我看看这几页。”"
+  },
+  {
+   "id": "hd_veteran_conductor_driver_goro",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "veteran_conductor_driver_goro",
+   "text": "{veteran_conductor_driver_goro.name}端着两杯热茶走过来：“车开得稳，喝口热的。”"
+  },
+  {
+   "id": "hd_rival_corporate_spy_kenji",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "rival_corporate_spy_kenji",
+   "text": "{rival_corporate_spy_kenji.name}在你对面坐下，冲你笑笑：“出差？巧了，我也是。”"
+  },
+  {
+   "id": "hd_senior_trackwalker_scout_daiki",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "senior_trackwalker_scout_daiki",
+   "text": "{senior_trackwalker_scout_daiki.name}指着窗外的林海：“那片是白桦林，秋天最好看。”"
+  },
+  {
+   "id": "hd_paramedic_volunteer_girl_aoi",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "paramedic_volunteer_girl_aoi",
+   "text": "{paramedic_volunteer_girl_aoi.name}递给你一颗薄荷糖：“坐久了容易乏，含一颗。”"
+  },
+  {
+   "id": "hd_snowplow_rescue_captain_mika",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "snowplow_rescue_captain_mika",
+   "text": "{snowplow_rescue_captain_mika.name}冲你挥挥手：“例行巡线，顺路来打个招呼。”"
   }
  ],
  "id": "supervisor_stranded_diesel_train",

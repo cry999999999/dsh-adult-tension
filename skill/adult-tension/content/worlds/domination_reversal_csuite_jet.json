@@ -1506,25 +1506,28 @@
  "daily_activities": [
   {
    "beats": [
-    "急坠中香槟杯碎裂，总裁尖叫着扯下特助的领带，在两人腕上胡乱打了个结",
-    "失重把两人抛起又砸回床面，总裁把滚烫的脸埋进对方怀里，衬衫纽扣崩落",
-    "特助搂紧总裁的腰，贴在耳边一遍遍报着呼吸的节拍，直到那阵痉挛过去"
+    "起飞前，女总裁在机尾套卧里换下高跟鞋，让特助把明早的日程念一遍。",
+    "念到第三项，总裁打断说：这个推掉，我不想见那个人。",
+    "特助记下来，总裁靠在床头闭上眼：到了叫我。"
    ],
    "duration_minutes": 60,
    "hook_ids": [
-    "hk_rena_tie_anchor_approach",
-    "hk_hayato_embrace_approach",
-    "hk_rena_torn_stocking_observe"
+    "hd_csuite_heiress_rena",
+    "hd_renegade_aviation_copilot_officer",
+    "hd_executive_assistant_hayato",
+    "hd_conglomerate_legal_counsel_tpl",
+    "hd_vip_purser_tpl",
+    "hd_avionics_engineer_tpl"
    ],
    "id": "act_stateroom_tie_anchor",
    "location_ids": [
     "executive_owner_stateroom"
    ],
-   "start_minute": 15,
+   "start_minute": 1260,
    "tags": [
     "intimate"
    ],
-   "title": "套卧领带为锚"
+   "title": "起飞前的套卧"
   },
   {
    "beats": [
@@ -1550,53 +1553,59 @@
   },
   {
    "beats": [
-    "过道配电盘被雷击爆出电火花，乘务长抱住脱落的高压氧气瓶",
-    "工程师钻进机腹，特助在门边稳住配电盘框架挡住火星",
-    "主逆变器轰鸣重启，客舱照明从血红切回柔和的绿光"
+    "平飞以后，乘务长在备餐通道里热了一份海鲜粥，问特助总裁吃不吃。",
+    "特助尝了一口，说太咸，总裁不会吃。",
+    "乘务长笑着重新煮了一份，说这么多年也就特助摸得清总裁的口味。"
    ],
    "duration_minutes": 55,
    "hook_ids": [
-    "hk_purser_oxygen_approach",
-    "hk_engineer_multimeter_approach",
-    "hk_galley_panel_observe"
+    "hd_csuite_heiress_rena",
+    "hd_renegade_aviation_copilot_officer",
+    "hd_executive_assistant_hayato",
+    "hd_conglomerate_legal_counsel_tpl",
+    "hd_vip_purser_tpl",
+    "hd_avionics_engineer_tpl"
    ],
    "id": "act_galley_bypass_firefight",
    "location_ids": [
     "galley_service_vestibule"
    ],
-   "start_minute": 40,
+   "start_minute": 1320,
    "tags": [
     "workplace"
    ],
-   "title": "配电盘起火与跳线"
+   "title": "备餐通道里的夜宵"
   },
   {
    "beats": [
-    "右发喷出十米长的火舌，副机长满脸是汗单臂拉住操纵杆抗偏航",
-    "特助护着总裁坐进观察员席，领带还缠在两人腕上",
-    "航电重新加载，副机长捕获海岸盲降下滑道，全机俯冲穿云"
+    "总裁睡不着，让特助陪着去驾驶舱看云海。",
+    "副机长指着窗外说那是正在落下的月亮，总裁看了很久没说话。",
+    "回去时总裁走在前面，忽然说：小时候想当飞行员。"
    ],
    "duration_minutes": 50,
    "hook_ids": [
-    "hk_copilot_column_approach",
-    "hk_hayato_command_approach",
-    "hk_cockpit_stall_observe"
+    "hd_csuite_heiress_rena",
+    "hd_renegade_aviation_copilot_officer",
+    "hd_executive_assistant_hayato",
+    "hd_conglomerate_legal_counsel_tpl",
+    "hd_vip_purser_tpl",
+    "hd_avionics_engineer_tpl"
    ],
    "id": "act_cockpit_glide_alignment",
    "location_ids": [
     "flight_deck_cockpit"
    ],
-   "start_minute": 55,
+   "start_minute": 1380,
    "tags": [
     "intimate"
    ],
-   "title": "驾驶舱对准下滑道"
+   "title": "驾驶舱里看云海"
   },
   {
    "beats": [
-    "飞机从千米低空钻出雷暴云，海岸线上的城市灯火扑面而来",
-    "起落架落锁的三声咔嗒，三盏绿灯全亮",
-    "总裁攥着领带的手终于松了一点，十指扣进了对方掌心"
+    "离降落还有半小时，城市的灯火在云层下若隐若现。",
+    "总裁补好妆，把领带递给特助：帮我检查一下，你的歪了。",
+    "特助低头一看，总裁已经伸手替特助把领带重新系好。"
    ],
    "duration_minutes": 45,
    "hook_ids": [
@@ -1608,11 +1617,11 @@
    "location_ids": [
     "flight_deck_cockpit"
    ],
-   "start_minute": 70,
+   "start_minute": 300,
    "tags": [
     "intimate"
    ],
-   "title": "穿云放下起落架"
+   "title": "降落前的半小时"
   },
   {
    "beats": [
@@ -1803,6 +1812,48 @@
    ],
    "slot": "renegade_aviation_copilot_officer",
    "text": "穿出积雨云的一刻，千米之下铺开海岸线与金色的备降跑道灯，数千盏导航灯像两道利剑划开雨夜，向这架遍体鳞伤的飞机敞开怀抱。"
+  },
+  {
+   "id": "hd_csuite_heiress_rena",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "csuite_heiress_rena",
+   "text": "{csuite_heiress_rena.name}把文件夹合上，抬眼看你：“落地前没别的事了。陪我喝一杯。”"
+  },
+  {
+   "id": "hd_renegade_aviation_copilot_officer",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "renegade_aviation_copilot_officer",
+   "text": "{renegade_aviation_copilot_officer.name}从驾驶舱探出头：“航线平稳，想来看看云海吗？”"
+  },
+  {
+   "id": "hd_executive_assistant_hayato",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "executive_assistant_hayato",
+   "text": "{executive_assistant_hayato.name}把明天的日程表递给你：“社长的行程，您过目一下。”"
+  },
+  {
+   "id": "hd_conglomerate_legal_counsel_tpl",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "conglomerate_legal_counsel_tpl",
+   "text": "{conglomerate_legal_counsel_tpl.name}把一份合同推到你面前：“例行条款，签之前你也看看。”"
+  },
+  {
+   "id": "hd_vip_purser_tpl",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "vip_purser_tpl",
+   "text": "{vip_purser_tpl.name}端上一杯热茶，微笑着说：“离降落还有两小时，您可以休息一下。”"
+  },
+  {
+   "id": "hd_avionics_engineer_tpl",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "avionics_engineer_tpl",
+   "text": "{avionics_engineer_tpl.name}拿着平板走过来：“例行巡检做完了，一切正常。”"
   }
  ],
  "id": "domination_reversal_csuite_jet",

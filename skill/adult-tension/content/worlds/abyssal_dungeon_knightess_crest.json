@@ -1510,15 +1510,18 @@
  "daily_activities": [
   {
    "beats": [
-    "血月子夜钟鸣，赤红魔纹在女武神锁骨间如火蔓延，铁链剧烈震颤，女武神咬破嘴唇不肯出声",
-    "审判官刀尖蘸着极寒药露，一寸寸刺进魔纹核心放血排毒，两人呼吸近在咫尺",
-    "魔纹终于黯下，审判官抛出教皇通敌的罪证，女武神清醒过来，傲岸地反唇相讥"
+    "审讯暂停的间隙，审判官让狱卒端来一碗热汤，放在女骑士长够得着的石台上。",
+    "女骑士长盯着汤看了很久，冷笑说审判官的手段还真是体贴。",
+    "汤还是喝完了，女骑士长把空碗推回来，第一次问起审判官的名字。"
    ],
    "duration_minutes": 65,
    "hook_ids": [
-    "hk_knight_crest_approach",
-    "hk_inquisitor_blade_approach",
-    "hk_knight_chains_observe"
+    "hd_templar_knight_commander",
+    "hd_zealot_garrison_commander",
+    "hd_renegade_grand_inquisitor",
+    "hd_heretic_apothecary",
+    "hd_disgraced_squire_jailer",
+    "hd_templar_lieutenant_outrider"
    ],
    "id": "act_ab_crest_acupressure",
    "location_ids": [
@@ -1528,13 +1531,13 @@
    "tags": [
     "intimate"
    ],
-   "title": "子夜魔纹与刻刀刺穴"
+   "title": "提审间隙的一碗热汤"
   },
   {
    "beats": [
-    "攻城槌重击门板，审判官一剑斩断吊索，脱力的女武神被稳稳接进怀里",
-    "魔纹已平、神智清明，两人在石柱阴影里额头相抵，女武神低声说出抵抗军的撤退暗记",
-    "审判官把白银断剑交还女武神手中，在烛火下吻去女武神唇角的血痕，定下弑神之约"
+    "女骑士长的手腕被铁链磨破了皮，审判官命人换一副缠着软布的镣铐。",
+    "换镣铐时审判官亲手托着那只手腕，女骑士长没有挣开。",
+    "狱卒退出去后，女骑士长低声问：你这样做，教廷会怎么看你。"
    ],
    "duration_minutes": 60,
    "hook_ids": [
@@ -1550,19 +1553,22 @@
    "tags": [
     "intimate"
    ],
-   "title": "斩断铁索石台定誓"
+   "title": "换一副软镣铐"
   },
   {
    "beats": [
-    "石门崩塌，女武神一脚踹翻青铜熔炉，炭火漫天飞溅引燃通道",
-    "两人背靠背在火海里挥剑，斩杀带头的三名重装狂信徒",
-    "看守长抡锤砸碎追兵盾牌，三人且战且退冲进暗渠闸门后"
+    "外殿的刑具都蒙着灰，看守长在炭盆边烤着黑面包，顺手分了一块给新来的人。",
+    "看守长说这些刑具十年没用过了，审判官从不来这一套。",
+    "面包烤得焦香，墙上的铁器在炭光里一闪一闪。"
    ],
    "duration_minutes": 55,
    "hook_ids": [
-    "hk_garrison_axe_approach",
-    "hk_jailer_key_approach",
-    "hk_garrison_armor_observe"
+    "hd_templar_knight_commander",
+    "hd_zealot_garrison_commander",
+    "hd_renegade_grand_inquisitor",
+    "hd_heretic_apothecary",
+    "hd_disgraced_squire_jailer",
+    "hd_templar_lieutenant_outrider"
    ],
    "id": "act_ab_brazier_breakout",
    "location_ids": [
@@ -1572,7 +1578,7 @@
    "tags": [
     "workplace_power"
    ],
-   "title": "打翻熔炉白刃突围"
+   "title": "外殿的炭盆"
   },
   {
    "beats": [
@@ -1598,9 +1604,9 @@
   },
   {
    "beats": [
-    "众人顺着落水链在暴风雪中攀上断崖平台",
-    "女武神吹响纯银狮鹫哨，山谷密林里亮起八百柄马刀与火把",
-    "副官率轻骑踏雪而至，把战马缰绳与统帅大氅披到两人肩头"
+    "废弃的熔岩暗渠早就冷了，狱卒们拿它当晾衣服的地方。",
+    "女骑士长被允许出来透一口气，站在暗渠口望着头顶一线天光。",
+    "审判官陪在一旁，两人谁也没提审讯的事，只说起各自家乡的雪。"
    ],
    "duration_minutes": 50,
    "hook_ids": [
@@ -1612,17 +1618,17 @@
    "location_ids": [
     "magma_drainage_channel"
    ],
-   "start_minute": 195,
+   "start_minute": 600,
    "tags": [
     "intimate"
    ],
-   "title": "绝壁攀爬铁骑接应"
+   "title": "暗渠口透气"
   },
   {
    "beats": [
-    "晨霞刺破风雪，黑曜石要塞火光冲天陷入内乱",
-    "女武神把折断的圣十字徽记踏碎在积雪里，与审判官在马上十指相扣",
-    "八百铁骑齐声怒吼，誓师南下"
+    "盲井尽头的炼金暗室里，审判官亲手研磨缓解魔纹灼痛的药粉。",
+    "女骑士长靠着门框看了一会儿，说这味药草在边境只长在雪线以上。",
+    "药粉装进小瓷瓶，审判官把瓶子放进女骑士长手心：子夜前服下。"
    ],
    "duration_minutes": 45,
    "hook_ids": [
@@ -1638,7 +1644,7 @@
    "tags": [
     "intimate"
    ],
-   "title": "破晓雪原重立战旗"
+   "title": "炼金暗室里配药"
   }
  ],
  "default_npc_gender_mix": {
@@ -1839,6 +1845,48 @@
    ],
    "slot": "disgraced_squire_jailer",
    "text": "千斤闸崩落的烟尘里，{disgraced_squire_jailer.name}单膝跪撑在石面上，骨骼在万斤重压下悲鸣，双手仍死扣战锤，含泪带笑。"
+  },
+  {
+   "id": "hd_templar_knight_commander",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "templar_knight_commander",
+   "text": "{templar_knight_commander.name}把擦好的长剑横放在膝上，侧头看你：“陪我坐一会儿。今天不谈审判。”"
+  },
+  {
+   "id": "hd_zealot_garrison_commander",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "zealot_garrison_commander",
+   "text": "{zealot_garrison_commander.name}把一份换防名单递给你，语气难得平和：“明早的班你来排，我信得过你。”"
+  },
+  {
+   "id": "hd_renegade_grand_inquisitor",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "renegade_grand_inquisitor",
+   "text": "{renegade_grand_inquisitor.name}把一杯热葡萄酒推到你面前：“审了一夜卷宗，陪我喝一杯再走。”"
+  },
+  {
+   "id": "hd_heretic_apothecary",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "heretic_apothecary",
+   "text": "{heretic_apothecary.name}捧着一把刚晒好的草药凑过来：“闻闻看，这一批是不是比上回的香？”"
+  },
+  {
+   "id": "hd_disgraced_squire_jailer",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "disgraced_squire_jailer",
+   "text": "{disgraced_squire_jailer.name}把钥匙串挂回墙上，冲你点点头：“今晚轮我值班，你要是睡不着，过来聊聊。”"
+  },
+  {
+   "id": "hd_templar_lieutenant_outrider",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "templar_lieutenant_outrider",
+   "text": "{templar_lieutenant_outrider.name}牵着马从你身边经过，停下来问：“明早去集市，要不要一起？”"
   }
  ],
  "id": "abyssal_dungeon_knightess_crest",

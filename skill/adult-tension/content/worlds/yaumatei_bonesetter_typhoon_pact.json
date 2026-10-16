@@ -1555,47 +1555,53 @@
   },
   {
    "beats": [
-    "天井积水没膝落叶打旋，老炮拔出生铁插销推开沉重暗门，巷口闪烁红蓝警灯与砍刀白光",
-    "数十名提刀马仔踹塌院墙杀入，老机师启动大飞马达轰鸣，红棍持刀飞身暴起刀芒如练",
-    "女堂主手持短解刀斩断竹筐缆绳，成吨烂果木箱轰然坍塌将追兵死死压在暗巷泥泞之中"
+    "风球来之前的早晨，果栏的伙计在医馆后巷卸货，一箱箱芒果和荔枝码得老高。",
+    "女掌柜从后门出来，跟果栏老板讨价还价，买了一箱荔枝分给街坊。",
+    "老炮蹲在门口剥荔枝，说今年的荔枝比去年甜。"
    ],
    "duration_minutes": 60,
    "hook_ids": [
-    "hk_smuggler_herbal_approach",
-    "hk_redpole_knife_approach",
-    "hk_bonesetter_mallet_approach"
+    "hd_resolute_female_bonesetter_head",
+    "hd_ruthless_anti_triad_senior_inspector",
+    "hd_defector_axe_vanguard_lieutenant",
+    "hd_wounded_elite_red_pole_fighter",
+    "hd_cunning_deceased_tycoon_widow",
+    "hd_kowloon_walled_city_herbal_smuggler"
    ],
    "id": "act_rear_alley_fruit_market_breakout",
    "location_ids": [
     "clinic_rear_alley_fruit_market_tunnel"
    ],
-   "start_minute": 165,
+   "start_minute": 480,
    "tags": [
     "workplace"
    ],
-   "title": "后门天井暴雨积水设伏与果栏暗道突围"
+   "title": "后巷的果栏"
   },
   {
    "beats": [
-    "暴雨渐歇东方微白，街面积水顺着排水沟退去，警署廉政公署专车呼啸而至扣押腐败督察",
-    "二路元帅恶徒被全数缴械关押，老龙头未亡人当众宣读由红棍与堂主共掌公账之遗令",
-    "保和堂百年红底金字招牌重新擦亮，两人并肩立于前厅门廊，在晨风中迎来全港新生"
+    "清晨，女掌柜卸下医馆的门板，前堂里飘着跌打药酒的味道。",
+    "第一个来看病的是隔壁卖鱼蛋的阿伯，扭了腰，哎哟哎哟地坐下。",
+    "女掌柜三两下替阿伯正好了骨，阿伯连声道谢，留下一袋鱼蛋当诊金。"
    ],
    "duration_minutes": 50,
    "hook_ids": [
-    "hk_bonesetter_mallet_approach",
-    "hk_redpole_knife_approach",
-    "hk_widow_silk_approach"
+    "hd_resolute_female_bonesetter_head",
+    "hd_ruthless_anti_triad_senior_inspector",
+    "hd_defector_axe_vanguard_lieutenant",
+    "hd_wounded_elite_red_pole_fighter",
+    "hd_cunning_deceased_tycoon_widow",
+    "hd_kowloon_walled_city_herbal_smuggler"
    ],
    "id": "act_dawn_typhoon_shelter_triumph",
    "location_ids": [
     "clinic_front_bonesetting_hall"
    ],
-   "start_minute": 240,
+   "start_minute": 480,
    "tags": [
     "workplace_power"
    ],
-   "title": "九号风球初歇油麻地老街新秩序之门开启"
+   "title": "前堂开门"
   }
  ],
  "default_npc_gender_mix": {
@@ -1792,6 +1798,48 @@
    ],
    "slot": "resolute_female_bonesetter_head",
    "text": "{resolute_female_bonesetter_head.name}落下阁楼翻板，雨声砸在瓦上如万马奔腾，抬手拔下沉香木簪，长发散落肩头：“烧退了，骨也接上了。这回，你不是我的病人。”"
+  },
+  {
+   "id": "hd_resolute_female_bonesetter_head",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "resolute_female_bonesetter_head",
+   "text": "{resolute_female_bonesetter_head.name}把一碗凉茶推到你面前：“今天病人少，饮完先走。”"
+  },
+  {
+   "id": "hd_ruthless_anti_triad_senior_inspector",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "ruthless_anti_triad_senior_inspector",
+   "text": "{ruthless_anti_triad_senior_inspector.name}在茶餐厅里冲你招手：“坐，一齐饮杯奶茶。”"
+  },
+  {
+   "id": "hd_defector_axe_vanguard_lieutenant",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "defector_axe_vanguard_lieutenant",
+   "text": "{defector_axe_vanguard_lieutenant.name}靠在街口冲你点头：“食咗饭未？一齐去食碗云吞面。”"
+  },
+  {
+   "id": "hd_wounded_elite_red_pole_fighter",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "wounded_elite_red_pole_fighter",
+   "text": "{wounded_elite_red_pole_fighter.name}在你身边坐下，剥着花生：“今晚得闲，倾下偈。”"
+  },
+  {
+   "id": "hd_cunning_deceased_tycoon_widow",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "cunning_deceased_tycoon_widow",
+   "text": "{cunning_deceased_tycoon_widow.name}把一本账簿推到你面前：“例行对数，劳烦你睇下。”"
+  },
+  {
+   "id": "hd_kowloon_walled_city_herbal_smuggler",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "kowloon_walled_city_herbal_smuggler",
+   "text": "{kowloon_walled_city_herbal_smuggler.name}塞给你一包陈皮：“新货，煲汤好用。”"
   }
  ],
  "id": "yaumatei_bonesetter_typhoon_pact",

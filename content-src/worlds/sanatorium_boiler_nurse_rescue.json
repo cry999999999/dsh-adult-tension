@@ -2015,6 +2015,54 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_patients_gossip",
+      "title": "疗养员们的闲话",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_nurse_duty_room"
+      ],
+      "trigger": "暖气恢复后的第二天早上，老疗养员们在走廊里嚼开了舌头：昨夜暖气停了六个钟头，是值夜班的护士丢下病房，溜去泵房找那个年轻机工",
+      "objective": "在何主任把这事报给宋院长之前，让大家知道那一夜泵房里到底出了什么事",
+      "choice": "请司炉工周师傅出来作证，还是由护士自己去院长办公室说明",
+      "immediate": {
+        "text": "护士小刘端着体温计进来，小声说三号楼的老太太在骂人",
+        "minutes": 5
+      },
+      "near": {
+        "text": "下午两点，何主任去见宋院长",
+        "deadline_minutes": 360
+      },
+      "far": {
+        "trigger": "闲话报到院长那里",
+        "consequence": "护士被调去山下的分院，机工的合同到期不再续",
+        "due_days": 7
+      },
+      "exits": [
+        {
+          "option": "请周师傅作证",
+          "cost": "周师傅得承认那一夜自己喝了酒、没守在锅炉房"
+        },
+        {
+          "option": "自己去说明",
+          "cost": "就得讲清楚两个人在卷门下那几个钟头是怎么过的"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_xinyi_frostbite_cream",
+        "hook_xinyi_blood_pressure",
+        "hook_xinyi_mail_truck",
+        "hook_fangyuan_radiator",
+        "hook_fangyuan_frozen_pear",
+        "hook_xinyi_night_round"
+      ],
+      "start_minute": 480,
+      "tags": []
     }
   ],
   "hooks": [

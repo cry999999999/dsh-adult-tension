@@ -2089,6 +2089,56 @@
    ],
    "title": "深潜器固定缆索在海浪震荡中即将崩断",
    "trigger": "舱内地面积水涌动导致数吨重的深潜器在基座上发生微小侧倾，紧绷的四道高强度编织钢缆发出即将断裂的刺耳尖啸，摇摇欲坠砸向减压阀门。"
+  },
+  {
+   "choice": "从科考经费里挪钱付三倍津贴，还是请聂师傅留下、私下劝其他人",
+   "exits": [
+    {
+     "cost": "断裂带的取样计划要砍掉一半",
+     "option": "挪用科考经费"
+    },
+    {
+     "cost": "聂师傅要总监在合同上写明，出了事由总监一个人担责",
+     "option": "请聂师傅留下"
+    }
+   ],
+   "far": {
+    "consequence": "站上没人修管网，科考站提前一个季度关站，总监三年的观测中断",
+    "due_days": 14,
+    "trigger": "外包工撤走"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_binglan_cocoa_mug",
+    "hook_lu_porthole_point",
+    "hook_lu_zz_seal",
+    "hook_gu_log_review",
+    "hook_nie_wrench_lesson",
+    "hook_binglan_module_window"
+   ],
+   "id": "p_contractor_hazard_pay",
+   "immediate": {
+    "minutes": 5,
+    "text": "老马敲开居住舱的门，说外包工们已经在收拾铺盖"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_director_living_module"
+   ],
+   "near": {
+    "deadline_minutes": 1380,
+    "text": "明早八点，补给潜器出发"
+   },
+   "objective": "在补给潜器明早出发之前，回复外包公司",
+   "source": "money",
+   "start_minute": 540,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "外包公司的条件",
+   "trigger": "气闸修好后的第二天，外包公司从水面发来电报：站上出了这么大的事故，管网工的风险津贴要翻三倍，否则下一班补给潜器把外包工全部接走"
   }
  ],
  "region": "万米海沟深海科考站双向耐压减压气闸舱",

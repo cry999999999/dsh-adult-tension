@@ -2070,6 +2070,53 @@
    ],
    "title": "水循环管网严重水锤效应濒临炸裂",
    "trigger": "进水阀受阻引发主干管道内形成高达三十公斤的超重水锤脉冲波，铸铁管壁如打雷般剧烈轰鸣，法兰连接处螺栓根根紧绷颤动，一旦炸裂将击穿舱室。"
+  },
+  {
+   "choice": "请深潜机械师出一份证明，还是认下这次失误",
+   "exits": [
+    {
+     "cost": "证明上要写清楚两个人在井底一直待到天亮",
+     "option": "请机械师出证明"
+    },
+    {
+     "cost": "林教练会知道女冠军夜里没在宿舍",
+     "option": "认下这次失误"
+    }
+   ],
+   "far": {
+    "consequence": "再有两次就要禁赛，世锦赛的双人名单上可能换人",
+    "due_days": 10,
+    "trigger": "失误记录在案"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_qianqian_poolside_stretch",
+    "hook_qianqian_cocoa",
+    "hook_qianqian_curfew",
+    "hook_haochuan_valve_light",
+    "hook_qianqian_dorm_door"
+   ],
+   "id": "p_whereabouts_failure",
+   "immediate": {
+    "minutes": 5,
+    "text": "检查官把记录表摊在桌上，空着的那一栏写着二十二点"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_athlete_apartment_room"
+   ],
+   "near": {
+    "deadline_minutes": 480,
+    "text": "下午三点，检查官提交报告"
+   },
+   "objective": "在检查官下午提交报告之前，证明那一夜女冠军在哪里",
+   "source": "institution",
+   "start_minute": 420,
+   "tags": [],
+   "title": "行踪申报",
+   "trigger": "被救上来的第二天早上，反兴奋剂中心的检查官敲开了公寓的门：昨夜十点女冠军申报在宿舍，检查官上门扑了个空，按规定这算一次行踪失误"
   }
  ],
  "region": "国家跳水馆地下十米深潜减压井池底与循环阀室",

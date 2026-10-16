@@ -1951,6 +1951,51 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_countess_daughter_gossip",
+      "title": "伯爵小姐的闲话",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_apothecary_still_room"
+      ],
+      "trigger": "穹顶塌下来的第二天，伯爵小姐克洛艾在茶会上说开了：是公爵千金弄坏了地脉晶石，想毁掉圣女候补的救命药草",
+      "objective": "在今晚的宫廷舞会之前，让大家知道千金那一夜在温室里做什么",
+      "choice": "让药剂师当众说出千金天天来照看药草，还是由千金自己在舞会上澄清",
+      "immediate": {
+        "text": "小女仆妮可躲在蒸馏室门口，说满宫的人都在议论",
+        "minutes": 5
+      },
+      "near": {
+        "text": "今晚八点，宫廷舞会",
+        "deadline_minutes": 600
+      },
+      "far": {
+        "trigger": "闲话传到王太后耳中",
+        "consequence": "千金被逐出王都，药草园交到圣女候补手里",
+        "due_days": 7
+      },
+      "exits": [
+        {
+          "option": "药剂师当众说出",
+          "cost": "药剂师就得承认那一夜也在温室里"
+        },
+        {
+          "option": "千金自己澄清",
+          "cost": "傲气的千金得在退婚的王太子面前低头解释"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_seraphina_cocoa",
+        "hook_apothecary_herb_thanks",
+        "hook_seraphina_still_room"
+      ],
+      "start_minute": 600,
+      "tags": []
     }
   ],
   "hooks": [

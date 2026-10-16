@@ -2128,6 +2128,54 @@
    ],
    "title": "石室应急火把渐微视线受阻",
    "trigger": "石室内氧气随电弧燃烧急剧消耗，备用火把即将熄灭，面临强光与死黑交替的视神经失明危险。"
+  },
+  {
+   "choice": "报上地宫的方位，还是烧掉召令、从此不再是猎魔人",
+   "exits": [
+    {
+     "cost": "千金会知道是谁出卖了这座地宫",
+     "option": "报上方位"
+    },
+    {
+     "cost": "学者从此没有身份，只能留在古堡里",
+     "option": "烧掉召令"
+    }
+   ],
+   "far": {
+    "consequence": "古堡被围，千金失去最后的藏身之处，学者被公会追杀",
+    "due_days": 3,
+    "trigger": "公会派猎手上门"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_alicia_red_wine",
+    "hook_alicia_garlic",
+    "hook_alicia_velvet_curtain",
+    "hook_alicia_cold_hand",
+    "hook_rayne_rubbing",
+    "hook_rayne_silver_cross"
+   ],
+   "id": "p_hunters_guild_summons",
+   "immediate": {
+    "minutes": 5,
+    "text": "阿洛伊斯管家把召令放在银盘里送来，信封上的火漆还没干"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_crypt_antechamber_passage"
+   ],
+   "near": {
+    "deadline_minutes": 180,
+    "text": "月出，公会的猎手出发"
+   },
+   "objective": "在月出之前，给公会一个回复",
+   "source": "institution",
+   "start_minute": 1200,
+   "tags": [],
+   "title": "猎魔人公会的召令",
+   "trigger": "灯网熄灭后的第二天入夜，猎魔人公会的信鸽落在古堡窗台：学者必须在月出前报上地宫的方位和真祖的下落，否则以叛会论处，银十字收回"
   }
  ],
  "region": "古老哥特地宫大理石石室与高能紫外线回廊死角",

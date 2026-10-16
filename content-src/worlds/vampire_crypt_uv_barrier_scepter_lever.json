@@ -1991,6 +1991,54 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_hunters_guild_summons",
+      "title": "猎魔人公会的召令",
+      "source": "institution",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_crypt_antechamber_passage"
+      ],
+      "trigger": "灯网熄灭后的第二天入夜，猎魔人公会的信鸽落在古堡窗台：学者必须在月出前报上地宫的方位和真祖的下落，否则以叛会论处，银十字收回",
+      "objective": "在月出之前，给公会一个回复",
+      "choice": "报上地宫的方位，还是烧掉召令、从此不再是猎魔人",
+      "immediate": {
+        "text": "阿洛伊斯管家把召令放在银盘里送来，信封上的火漆还没干",
+        "minutes": 5
+      },
+      "near": {
+        "text": "月出，公会的猎手出发",
+        "deadline_minutes": 180
+      },
+      "far": {
+        "trigger": "公会派猎手上门",
+        "consequence": "古堡被围，千金失去最后的藏身之处，学者被公会追杀",
+        "due_days": 3
+      },
+      "exits": [
+        {
+          "option": "报上方位",
+          "cost": "千金会知道是谁出卖了这座地宫"
+        },
+        {
+          "option": "烧掉召令",
+          "cost": "学者从此没有身份，只能留在古堡里"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_alicia_red_wine",
+        "hook_alicia_garlic",
+        "hook_alicia_velvet_curtain",
+        "hook_alicia_cold_hand",
+        "hook_rayne_rubbing",
+        "hook_rayne_silver_cross"
+      ],
+      "start_minute": 1200,
+      "tags": []
     }
   ],
   "hooks": [

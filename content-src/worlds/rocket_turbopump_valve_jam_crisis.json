@@ -1950,6 +1950,54 @@
         "workplace_power",
         "crime"
       ]
+    },
+    {
+      "id": "p_investor_pulls_out",
+      "title": "投资人的撤资函",
+      "source": "money",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_launch_site_dorm"
+      ],
+      "trigger": "中止发射后的第二天上午，领投的基金合伙人把撤资函拍在总师宿舍的桌上：四十秒中止的录像已经传遍了圈子，下周的融资签约取消，除非一个月内复飞",
+      "objective": "在投资人坐下午的航班离开之前，定下复飞的日子",
+      "choice": "答应一个月内复飞，还是如实说涡轮泵要返厂、至少等三个月",
+      "immediate": {
+        "text": "基金合伙人的助理守在宿舍门口，手里拿着返程机票",
+        "minutes": 5
+      },
+      "near": {
+        "text": "下午四点，投资人的航班起飞",
+        "deadline_minutes": 420
+      },
+      "far": {
+        "trigger": "融资取消",
+        "consequence": "公司发不出下季度的工资，发射场一半的人要去找新东家",
+        "due_days": 14
+      },
+      "exits": [
+        {
+          "option": "答应一个月复飞",
+          "cost": "吹除阀只能在场里修，加注班长得陪总师在泵房守一个月"
+        },
+        {
+          "option": "如实说要三个月",
+          "cost": "投资人要总师写一份承担技术责任的承诺书"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_tianzhou_cryo_gloves",
+        "hook_xiaozhong_mission_patch",
+        "hook_lu_visitor_badge",
+        "hook_ruobing_dorm_window"
+      ],
+      "start_minute": 540,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

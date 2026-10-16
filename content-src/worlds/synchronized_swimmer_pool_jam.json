@@ -1951,6 +1951,53 @@
         "disaster",
         "workplace"
       ]
+    },
+    {
+      "id": "p_whereabouts_failure",
+      "title": "行踪申报",
+      "source": "institution",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_athlete_apartment_room"
+      ],
+      "trigger": "被救上来的第二天早上，反兴奋剂中心的检查官敲开了公寓的门：昨夜十点女冠军申报在宿舍，检查官上门扑了个空，按规定这算一次行踪失误",
+      "objective": "在检查官下午提交报告之前，证明那一夜女冠军在哪里",
+      "choice": "请深潜机械师出一份证明，还是认下这次失误",
+      "immediate": {
+        "text": "检查官把记录表摊在桌上，空着的那一栏写着二十二点",
+        "minutes": 5
+      },
+      "near": {
+        "text": "下午三点，检查官提交报告",
+        "deadline_minutes": 480
+      },
+      "far": {
+        "trigger": "失误记录在案",
+        "consequence": "再有两次就要禁赛，世锦赛的双人名单上可能换人",
+        "due_days": 10
+      },
+      "exits": [
+        {
+          "option": "请机械师出证明",
+          "cost": "证明上要写清楚两个人在井底一直待到天亮"
+        },
+        {
+          "option": "认下这次失误",
+          "cost": "林教练会知道女冠军夜里没在宿舍"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_qianqian_poolside_stretch",
+        "hook_qianqian_cocoa",
+        "hook_qianqian_curfew",
+        "hook_haochuan_valve_light",
+        "hook_qianqian_dorm_door"
+      ],
+      "start_minute": 420,
+      "tags": []
     }
   ],
   "hooks": [

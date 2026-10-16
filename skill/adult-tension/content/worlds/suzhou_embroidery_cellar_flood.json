@@ -2071,6 +2071,53 @@
    ],
    "title": "高碳钢折合剪在剧烈反别中濒临脆断",
    "trigger": "黄杨木坚硬如铁，两人施加的全身反向力矩让这柄百年古法夹钢剪刀承受了极限抗弯剪切力，厚达四毫米的刀背发出尖锐微鸣，金属晶格濒临达到塑性脆断临界点。"
+  },
+  {
+   "choice": "卖掉祖传的双面绣修绣轩，还是自己一针一针补",
+   "exits": [
+    {
+     "cost": "绣娘家传了四百年的东西，从此挂在别人的展柜里",
+     "option": "卖掉双面绣"
+    },
+    {
+     "cost": "补完要两年，营造师得陪着在漏雨的绣轩里再待一个冬天",
+     "option": "自己一针一针补"
+    }
+   ],
+   "far": {
+    "consequence": "宗祠收回绣轩改作茶室，非遗工坊只能搬去镇外的厂房",
+    "due_days": 14,
+    "trigger": "绣轩修不起"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_ruolan_biluochun",
+    "hook_ruolan_wupeng",
+    "hook_ruolan_needle_hand",
+    "hook_cheng_bamboo_pattern",
+    "hook_ruolan_bedroom_door"
+   ],
+   "id": "p_auction_house_offer",
+   "immediate": {
+    "minutes": 5,
+    "text": "老周头送来一壶碧螺春，说拍卖行的人在前厅等着"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_embroidery_back_bedroom"
+   ],
+   "near": {
+    "deadline_minutes": 480,
+    "text": "傍晚，拍卖行的经理回上海"
+   },
+   "objective": "在拍卖行的经理傍晚回上海之前，决定那幅绣品卖不卖",
+   "source": "money",
+   "start_minute": 600,
+   "tags": [],
+   "title": "拍卖行的报价",
+   "trigger": "洪水退下去的第二天，上海拍卖行的经理坐着乌篷船来了：泡过水的那幅明代双面绣，拍卖行愿意出八十万收走，钱当场就付，正好够修绣轩"
   }
  ],
  "region": "姑苏古镇临水百年沈氏宗祠二层挑空大绣轩与临河雕花飞廊",

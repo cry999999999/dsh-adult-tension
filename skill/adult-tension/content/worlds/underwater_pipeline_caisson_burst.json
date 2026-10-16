@@ -2074,6 +2074,55 @@
    ],
    "title": "海事监督官拉下气动关门电闸倒计时",
    "trigger": "特派监督官认定沉管已经无法抢救，在干坞拉下气动隔离电闸，高压气动大门启动了三分钟彻底锁死逃生通道的自毁倒计时。"
+  },
+  {
+   "choice": "拿出那一夜蝶阀抱死的全部数据，证明工程队处置得当，还是让郭局长接手",
+   "exits": [
+    {
+     "cost": "数据里有女总监越过监督官、强令潜水长下水的那条指令",
+     "option": "拿出全部数据"
+    },
+    {
+     "cost": "潜水队在饱和舱里住的二十一天，就都算在了别人的账上",
+     "option": "让郭局长接手"
+    }
+   ],
+   "far": {
+    "consequence": "沉管工程署上打捞局的名字，女总监和潜水队只能看着别人把最后一节放下去",
+    "due_days": 14,
+    "trigger": "指挥权交出去"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_ruohan_whiteboard_note",
+    "hook_dahai_helium_voice",
+    "hook_wu_chalk_joint",
+    "hook_xiaotang_letter_lock",
+    "hook_ruohan_chamber_bunk"
+   ],
+   "id": "p_salvage_chief_takeover",
+   "immediate": {
+    "minutes": 5,
+    "text": "梁姐隔着减压舱的玻璃比划，说郭局长在会议室等着"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_hyperbaric_decompress_chamber"
+   ],
+   "near": {
+    "deadline_minutes": 300,
+    "text": "下午两点，沉放方案会"
+   },
+   "objective": "在郭局长下午开会定下沉放方案之前，保住工程队的指挥权",
+   "source": "person",
+   "start_minute": 540,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "郭局长要接手",
+   "trigger": "隔舱保住后的第二天，打捞局的郭局长登上母船：下一个潮汐窗口的沉放由打捞局接手，原来的工程队只负责打下手"
   }
  ],
  "region": "水下四十米沉管对接接头高压焊接密封隔舱",

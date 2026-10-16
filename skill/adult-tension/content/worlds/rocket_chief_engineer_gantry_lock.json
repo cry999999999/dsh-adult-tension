@@ -2267,6 +2267,55 @@
    ],
    "title": "塔尖避雷针强电磁脉冲放电威胁",
    "trigger": "雷暴正极性地闪先导在塔尖汇聚，强电磁脉冲使吊笼四周空气高度电离。"
+  },
+  {
+   "choice": "把吊笼里那一夜的处置过程原原本本写给总部，还是请索具总工替自己说话",
+   "exits": [
+    {
+     "cost": "报告里要写明是总师自己决定在雷暴里上塔的",
+     "option": "原原本本写给总部"
+    },
+    {
+     "cost": "索具总工得在协调会上和总部的人当面顶起来",
+     "option": "请索具总工说话"
+    }
+   ],
+   "far": {
+    "consequence": "女总师跟了八年的这枚火箭交给别人发射，自己坐下一班补给船回陆地",
+    "due_days": 5,
+    "trigger": "测控岗位换人"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_xuan_ginger_tea",
+    "hook_xuan_deck_stars",
+    "hook_xuan_hair_tie",
+    "hook_cheng_flying_fish",
+    "hook_xuan_cabin_door"
+   ],
+   "id": "p_hq_deputy_takeover",
+   "immediate": {
+    "minutes": 5,
+    "text": "宋调度长在舱门外敲了两下，说副总指挥请总师过去喝茶"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_platform_living_cabin"
+   ],
+   "near": {
+    "deadline_minutes": 600,
+    "text": "晚上七点，平台协调会"
+   },
+   "objective": "在副总指挥晚上召开的协调会之前，保住下一个窗口的测控岗位",
+   "source": "person",
+   "start_minute": 540,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "总部来的副总指挥",
+   "trigger": "台风过境后的第二天，总部派来的副总指挥坐交通艇上了平台：下一个发射窗口由总部的人接管测控，女总师回北京写检查"
   }
  ],
  "region": "南海海上发射平台八号大推力运载火箭发射塔高空钢梁桁架与吊笼作业区",

@@ -2270,6 +2270,50 @@
     "disaster",
     "bodily_harm"
    ]
+  },
+  {
+    "id": "p_inspector_black_box",
+    "title": "监察官的黑匣子",
+    "source": "institution",
+    "flags": [
+      "timed"
+    ],
+    "location_ids": [
+      "subterranean_magnetic_monorail_slipway"
+    ],
+    "trigger": "穿梭机冲出隧道停在东京湾的码头，国际监察专员拎着铅封黑匣子站在舱门口：财阀超频实验的全部参数都在里面，女主管作为签字人，要随专员去日内瓦作证",
+    "objective": "在监察局的接人船靠岸之前，决定那份证词怎么说",
+    "choice": "把财阀的违规实验全部说出来，还是只承认自己的签字",
+    "immediate": {
+      "text": "专员把黑匣子放在膝上，说接人船二十分钟后到",
+      "minutes": 5
+    },
+    "near": {
+      "text": "早上七点，监察局的船靠岸",
+      "deadline_minutes": 60
+    },
+    "far": {
+      "trigger": "证词送到日内瓦",
+      "consequence": "女主管被吊销研究资格，研究所剩下的人全部接受审查",
+      "due_days": 5
+    },
+    "exits": [
+      {
+        "option": "全部说出来",
+        "cost": "财阀不会放过一个出卖自己的主管，往后女主管身边要有人一直守着"
+      },
+      {
+        "option": "只认自己的签字",
+        "cost": "那十二分钟里死去的人，就永远没人替那些人讨说法"
+      }
+    ],
+    "leverage": null,
+    "hook_ids": [
+      "hk_director_shuttle_confession_approach",
+      "hk_inspector_briefcase_approach"
+    ],
+    "start_minute": 360,
+    "tags": []
   }
  ],
  "hooks": [

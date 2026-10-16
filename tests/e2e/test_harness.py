@@ -1559,6 +1559,11 @@ class RunnerTest(unittest.TestCase):
 
 
 
+    def test_an_npc_trimmed_to_its_mood_is_named_from_the_character_card(self):
+        context = {"characters": [{"id": "c_a", "name": "林晚"}], "present_npcs": [{"id": "c_a", "mood": "平静"}]}
+        self.assertEqual(run_script.npc_name(context, context["present_npcs"][0]), "林晚")
+        self.assertEqual(run_script.npc_name({}, {"id": "c_b", "name": "陈默"}), "陈默")
+
 class BatchTest(unittest.TestCase):
     def test_a_script_is_done_once_a_run_of_the_candidate_counts(self):
         temp = tempfile.mkdtemp(prefix="at-batch-")

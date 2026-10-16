@@ -2189,6 +2189,52 @@
       "tags": [
         "workplace_power"
       ]
+    },
+    {
+      "id": "p_trust_wants_top_grade",
+      "title": "委托方的要价",
+      "source": "money",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_mine_mouth_chalet"
+      ],
+      "trigger": "强震后的第二天上午，银行财团的特使韦伯来到木屋：那颗烟晶在防震盒里磕出一道细纹，财团要鉴定师照原样评最高级，评级费翻五倍",
+      "objective": "在韦伯明早带着烟晶离开之前，签下评级证书",
+      "choice": "照实评级写上那道细纹，还是收下五倍的评级费",
+      "immediate": {
+        "text": "韦伯把空白的证书和一支金笔放在壁炉边的桌上",
+        "minutes": 5
+      },
+      "near": {
+        "text": "明早九点，韦伯带烟晶下山",
+        "deadline_minutes": 1440
+      },
+      "far": {
+        "trigger": "财团另请鉴定师",
+        "consequence": "鉴定师的名字从财团的名单上划掉，往后再接不到孤品",
+        "due_days": 10
+      },
+      "exits": [
+        {
+          "option": "照实评级",
+          "cost": "财团的拍卖少了上千万，韦伯会让整个圈子知道是谁坏的事"
+        },
+        {
+          "option": "收下评级费",
+          "cost": "证书上签的是鉴定师的名字，那道细纹迟早有人看得见"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_manning_mulled_wine",
+        "hook_manning_crystal_gift",
+        "hook_manning_ski_slope",
+        "hook_keller_headlamp"
+      ],
+      "start_minute": 540,
+      "tags": []
     }
   ],
   "hooks": [

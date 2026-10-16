@@ -2157,6 +2157,55 @@
         "disaster",
         "workplace"
       ]
+    },
+    {
+      "id": "p_seller_board_whispers",
+      "title": "卖方董事会的猜疑",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_tower_executive_suite"
+      ],
+      "trigger": "台风过后第二天上午，卖方董事会里传开了：买方律师故意把签约拖到台风夜，好借天桥事故把价格压下来",
+      "objective": "在卖方董事会下午三点表决之前，让对方相信这只是一场意外",
+      "choice": "当众放弃那条压价条款，还是请天桥总工出一份事故报告",
+      "immediate": {
+        "text": "助理小苏推门进来，说卖方首席财务官的电话已经打了三遍",
+        "minutes": 5
+      },
+      "near": {
+        "text": "下午三点，卖方董事会表决",
+        "deadline_minutes": 360
+      },
+      "far": {
+        "trigger": "卖方退出交易",
+        "consequence": "三周的谈判作废，女合伙人在所里的合伙人考核直接降档",
+        "due_days": 7
+      },
+      "exits": [
+        {
+          "option": "放弃压价条款",
+          "cost": "买方要多付八个亿，客户那边得女合伙人亲自去解释"
+        },
+        {
+          "option": "请总工出事故报告",
+          "cost": "报告要写明那一夜两个人被困在天桥里的每一个钟点"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_ruoxi_midnight_coffee",
+        "hook_ruoxi_heels_off",
+        "hook_ruoxi_bund_lights",
+        "hook_chengzhi_hinge_check",
+        "hook_ruoxi_suite_door"
+      ],
+      "start_minute": 540,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

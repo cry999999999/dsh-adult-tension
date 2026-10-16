@@ -2015,6 +2015,51 @@
       "tags": [
         "disaster"
       ]
+    },
+    {
+      "id": "p_privy_council_retrial",
+      "title": "枢密院的重审",
+      "source": "institution",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_dry_refuge_chamber"
+      ],
+      "trigger": "政变平息后的第二天，枢密院的维尔纳大律师送来消息：公爵千金的案子中午重审，只要有一个证人说出那一夜死牢里叛将做了什么，构陷的罪名就能翻过来",
+      "objective": "在中午开庭之前，找到一个肯出庭的证人",
+      "choice": "让那一夜的看守骑士出庭，还是请女仆克莱尔去作证",
+      "immediate": {
+        "text": "老狱卒汉斯提着灯进来，说法庭的马车已经备好",
+        "minutes": 5
+      },
+      "near": {
+        "text": "中午，枢密院开庭",
+        "deadline_minutes": 120
+      },
+      "far": {
+        "trigger": "没有证人出庭",
+        "consequence": "罪名维持原判，千金从死牢改关进北方的修道院，终身不得出",
+        "due_days": 7
+      },
+      "exits": [
+        {
+          "option": "让看守骑士出庭",
+          "cost": "骑士要承认那一夜违令打开了千金的牢门"
+        },
+        {
+          "option": "请克莱尔作证",
+          "cost": "克莱尔当夜不在死牢，证词经不起盘问"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_cecilia_cloak_offer",
+        "hook_albert_wrench_show",
+        "hook_bruno_blanket_round"
+      ],
+      "start_minute": 600,
+      "tags": []
     }
   ],
   "hooks": [

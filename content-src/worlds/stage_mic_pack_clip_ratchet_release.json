@@ -2013,6 +2013,54 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_fansite_swap_rumor",
+      "title": "站姐的爆料",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_center_private_lounge"
+      ],
+      "trigger": "彩排出事后的第二天上午，一个大站的站姐发了一条爆料：C位彩排时受伤被人抱下台，公司已经决定回归舞台换人站C",
+      "objective": "在公司下午开会定回归站位之前，让粉丝和公司都相信C位能上台",
+      "choice": "当着镜头跳一遍完整的舞，还是请舞台机械总监出面说明那一夜是设备事故",
+      "immediate": {
+        "text": "陈经纪人推门进来，把平板上的热搜榜翻给C位看",
+        "minutes": 5
+      },
+      "near": {
+        "text": "下午三点，公司开会定站位",
+        "deadline_minutes": 300
+      },
+      "far": {
+        "trigger": "站位换人",
+        "consequence": "回归舞台的C位给了队里的妹妹，练了半年的独舞段落被删掉",
+        "due_days": 5
+      },
+      "exits": [
+        {
+          "option": "当着镜头跳完整的舞",
+          "cost": "脚踝的伤还没好，跳完可能要歇一个月"
+        },
+        {
+          "option": "请机械总监出面",
+          "cost": "总监要承认升降台是自己那一组没检修到位"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_xiaoran_fried_chicken",
+        "hook_xiaoran_signal",
+        "hook_xiaoran_light_stick",
+        "hook_xiaoran_blister",
+        "hook_lu_lift_speed",
+        "hook_xiaoran_lounge_door"
+      ],
+      "start_minute": 600,
+      "tags": []
     }
   ],
   "hooks": [

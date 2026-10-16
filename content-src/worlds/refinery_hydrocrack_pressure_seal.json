@@ -1950,6 +1950,55 @@
         "workplace_power",
         "crime"
       ]
+    },
+    {
+      "id": "p_contractor_wages",
+      "title": "三千人的工钱",
+      "source": "money",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_chief_dormitory_room"
+      ],
+      "trigger": "法兰止漏后的第二天早上，装置停工整改，外协公司的老板堵在值班楼下：停一天工，三千个检修工的工钱就白付一天，厂里不签停工补偿，明天就把人全拉走",
+      "objective": "在外协老板中午拉人之前，谈出停工补偿怎么算",
+      "choice": "签下停工补偿，还是向厂里申请提前复工",
+      "immediate": {
+        "text": "小蒋在楼道里喊，板房村的人已经坐上了大巴",
+        "minutes": 5
+      },
+      "near": {
+        "text": "中午十二点，外协的大巴开出厂门",
+        "deadline_minutes": 240
+      },
+      "far": {
+        "trigger": "检修队撤走",
+        "consequence": "大检修整整拖后一个月，总工今年的考核和年终奖一起泡汤",
+        "due_days": 7
+      },
+      "exits": [
+        {
+          "option": "签停工补偿",
+          "cost": "补偿款从装置的检修预算里出，后面几台设备只能拖到明年"
+        },
+        {
+          "option": "申请提前复工",
+          "cost": "整改单上要总工签字担保那道法兰不会再漏"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_yutong_work_permit",
+        "hook_tieshan_dcs_screens",
+        "hook_zhao_tea_camp",
+        "hook_xiaowu_gas_alarm",
+        "hook_yutong_dorm_door"
+      ],
+      "start_minute": 480,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

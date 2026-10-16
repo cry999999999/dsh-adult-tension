@@ -2075,6 +2075,52 @@
    ],
    "title": "极度失温与核心体能加速耗尽",
    "trigger": "暖气断了快一个小时，两人的体温一点点流失，手脚开始发麻，眼皮越来越沉。"
+  },
+  {
+   "choice": "照着记录签字，还是坚持写明防寒门是雪崩的冲击震脱的",
+   "exits": [
+    {
+     "cost": "记录上写的是机械师当班时没有检查门锁",
+     "option": "照着签字"
+    },
+    {
+     "cost": "得把那一夜的门锁检修单交出来，单子上有两个人的签名",
+     "option": "坚持写明是雪崩"
+    }
+   ],
+   "far": {
+    "consequence": "乘务长调去售票窗口，随车机械师被铁路公司辞退",
+    "due_days": 7,
+    "trigger": "事故定性"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_bai_last_blanket",
+    "hook_mechanic_photo"
+   ],
+   "id": "p_railway_inquiry",
+   "immediate": {
+    "minutes": 5,
+    "text": "副列车长老孟把事故记录放在休息铺上，上面已经圈好了签名的地方"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_crew_berth"
+   ],
+   "near": {
+    "deadline_minutes": 480,
+    "text": "傍晚，调查组坐最后一班车下山"
+   },
+   "objective": "在调查组傍晚离开之前，决定这份记录签不签",
+   "source": "institution",
+   "start_minute": 600,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "铁路公司的事故调查",
+   "trigger": "列车被拖回垭口站的第二天，铁路公司的调查组上了车：尾厢防寒门没按规程上锁，按条例要有人担责，调查组请乘务长在事故记录上签字"
   }
  ],
  "region": "海拔三千米雪山千仞悬崖半悬空脱轨列车尾厢与狭窄连廊",

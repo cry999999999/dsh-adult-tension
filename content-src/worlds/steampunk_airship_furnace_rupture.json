@@ -1950,6 +1950,55 @@
         "disaster",
         "workplace"
       ]
+    },
+    {
+      "id": "p_builder_voids_warranty",
+      "title": "造船厂的账单",
+      "source": "money",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_director_officer_cabin"
+      ],
+      "trigger": "飞艇泊进锚塔的第二天，造船厂的代表登上了舰：锅炉安全阀被人改过弹簧，保修作废，大修的四万镑要由海军部出，海军部又把账单转给了动力总监",
+      "objective": "在海军部的听证会之前，证明安全阀的弹簧不是总监改的",
+      "choice": "交出差分机里那一夜的纸带记录，还是请炉长作证弹簧是造船厂出厂时装错的",
+      "immediate": {
+        "text": "霍普中尉把账单放在舱桌上，说舰长请总监尽快回话",
+        "minutes": 5
+      },
+      "near": {
+        "text": "明天上午，海军部听证会",
+        "deadline_minutes": 1440
+      },
+      "far": {
+        "trigger": "账单落到总监头上",
+        "consequence": "动力总监的薪俸和退休金扣到二十年后，总监的位子也保不住",
+        "due_days": 10
+      },
+      "exits": [
+        {
+          "option": "交出纸带记录",
+          "cost": "纸带上也印着总监那一夜违令超压运行的半个钟头"
+        },
+        {
+          "option": "请炉长作证",
+          "cost": "炉长要在听证会上当面指认造船厂，从此再难上别的船"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_eleanor_goggles_wipe",
+        "hook_arthur_flask_share",
+        "hook_clara_punchcard_show",
+        "hook_george_rope_tie",
+        "hook_eleanor_cabin_latch"
+      ],
+      "start_minute": 540,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

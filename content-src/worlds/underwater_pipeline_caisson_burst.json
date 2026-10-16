@@ -1929,6 +1929,55 @@
         "workplace_power",
         "crime"
       ]
+    },
+    {
+      "id": "p_salvage_chief_takeover",
+      "title": "郭局长要接手",
+      "source": "person",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_hyperbaric_decompress_chamber"
+      ],
+      "trigger": "隔舱保住后的第二天，打捞局的郭局长登上母船：下一个潮汐窗口的沉放由打捞局接手，原来的工程队只负责打下手",
+      "objective": "在郭局长下午开会定下沉放方案之前，保住工程队的指挥权",
+      "choice": "拿出那一夜蝶阀抱死的全部数据，证明工程队处置得当，还是让郭局长接手",
+      "immediate": {
+        "text": "梁姐隔着减压舱的玻璃比划，说郭局长在会议室等着",
+        "minutes": 5
+      },
+      "near": {
+        "text": "下午两点，沉放方案会",
+        "deadline_minutes": 300
+      },
+      "far": {
+        "trigger": "指挥权交出去",
+        "consequence": "沉管工程署上打捞局的名字，女总监和潜水队只能看着别人把最后一节放下去",
+        "due_days": 14
+      },
+      "exits": [
+        {
+          "option": "拿出全部数据",
+          "cost": "数据里有女总监越过监督官、强令潜水长下水的那条指令"
+        },
+        {
+          "option": "让郭局长接手",
+          "cost": "潜水队在饱和舱里住的二十一天，就都算在了别人的账上"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_ruohan_whiteboard_note",
+        "hook_dahai_helium_voice",
+        "hook_wu_chalk_joint",
+        "hook_xiaotang_letter_lock",
+        "hook_ruohan_chamber_bunk"
+      ],
+      "start_minute": 540,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

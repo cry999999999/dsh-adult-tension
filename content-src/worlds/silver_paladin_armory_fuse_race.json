@@ -1950,6 +1950,50 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_mercenary_back_pay",
+      "title": "三个月的饷银",
+      "source": "money",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_commander_quarters"
+      ],
+      "trigger": "军械库保住后的第二天，佣兵们在营房外排成一排：三个月的饷银一个铜板都没见到，军械库差点炸了，再不发饷，今晚就开城门出去另找雇主",
+      "objective": "在佣兵们天黑开城门之前，凑出一部分饷银",
+      "choice": "卖掉圣殿赐给骑士长的那柄重剑，还是写信向王都借钱",
+      "immediate": {
+        "text": "军士长布洛克在门口低声说，佣兵队长已经把行囊收拾好了",
+        "minutes": 5
+      },
+      "near": {
+        "text": "天黑，佣兵们要开城门",
+        "deadline_minutes": 480
+      },
+      "far": {
+        "trigger": "佣兵出城",
+        "consequence": "城墙上少了一半守军，要塞撑不过下一次攻城",
+        "due_days": 3
+      },
+      "exits": [
+        {
+          "option": "卖掉重剑",
+          "cost": "骑士长从此只能拿一柄普通的剑登上城头点名"
+        },
+        {
+          "option": "写信向王都借钱",
+          "cost": "信要送到王都，得有人穿过敌营"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_christina_unsent_letter",
+        "hook_christina_quarters_lamp"
+      ],
+      "start_minute": 600,
+      "tags": []
     }
   ],
   "hooks": [

@@ -1942,6 +1942,52 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_railway_inquiry",
+      "title": "铁路公司的事故调查",
+      "source": "institution",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_crew_berth"
+      ],
+      "trigger": "列车被拖回垭口站的第二天，铁路公司的调查组上了车：尾厢防寒门没按规程上锁，按条例要有人担责，调查组请乘务长在事故记录上签字",
+      "objective": "在调查组傍晚离开之前，决定这份记录签不签",
+      "choice": "照着记录签字，还是坚持写明防寒门是雪崩的冲击震脱的",
+      "immediate": {
+        "text": "副列车长老孟把事故记录放在休息铺上，上面已经圈好了签名的地方",
+        "minutes": 5
+      },
+      "near": {
+        "text": "傍晚，调查组坐最后一班车下山",
+        "deadline_minutes": 480
+      },
+      "far": {
+        "trigger": "事故定性",
+        "consequence": "乘务长调去售票窗口，随车机械师被铁路公司辞退",
+        "due_days": 7
+      },
+      "exits": [
+        {
+          "option": "照着签字",
+          "cost": "记录上写的是机械师当班时没有检查门锁"
+        },
+        {
+          "option": "坚持写明是雪崩",
+          "cost": "得把那一夜的门锁检修单交出来，单子上有两个人的签名"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_bai_last_blanket",
+        "hook_mechanic_photo"
+      ],
+      "start_minute": 600,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

@@ -1949,6 +1949,56 @@
         "disaster",
         "crime"
       ]
+    },
+    {
+      "id": "p_contractor_hazard_pay",
+      "title": "外包公司的条件",
+      "source": "money",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_director_living_module"
+      ],
+      "trigger": "气闸修好后的第二天，外包公司从水面发来电报：站上出了这么大的事故，管网工的风险津贴要翻三倍，否则下一班补给潜器把外包工全部接走",
+      "objective": "在补给潜器明早出发之前，回复外包公司",
+      "choice": "从科考经费里挪钱付三倍津贴，还是请聂师傅留下、私下劝其他人",
+      "immediate": {
+        "text": "老马敲开居住舱的门，说外包工们已经在收拾铺盖",
+        "minutes": 5
+      },
+      "near": {
+        "text": "明早八点，补给潜器出发",
+        "deadline_minutes": 1380
+      },
+      "far": {
+        "trigger": "外包工撤走",
+        "consequence": "站上没人修管网，科考站提前一个季度关站，总监三年的观测中断",
+        "due_days": 14
+      },
+      "exits": [
+        {
+          "option": "挪用科考经费",
+          "cost": "断裂带的取样计划要砍掉一半"
+        },
+        {
+          "option": "请聂师傅留下",
+          "cost": "聂师傅要总监在合同上写明，出了事由总监一个人担责"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_binglan_cocoa_mug",
+        "hook_lu_porthole_point",
+        "hook_lu_zz_seal",
+        "hook_gu_log_review",
+        "hook_nie_wrench_lesson",
+        "hook_binglan_module_window"
+      ],
+      "start_minute": 540,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

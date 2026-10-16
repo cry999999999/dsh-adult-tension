@@ -2331,6 +2331,52 @@
    ],
    "title": "公估人的三个问题",
    "trigger": "获救后的第二天，保险公估人敲开矿洞口的木屋，第一个问题是：地震的时候，那颗烟晶为什么不在保险柜里，而在鉴定台上"
+  },
+  {
+   "choice": "照实评级写上那道细纹，还是收下五倍的评级费",
+   "exits": [
+    {
+     "cost": "财团的拍卖少了上千万，韦伯会让整个圈子知道是谁坏的事",
+     "option": "照实评级"
+    },
+    {
+     "cost": "证书上签的是鉴定师的名字，那道细纹迟早有人看得见",
+     "option": "收下评级费"
+    }
+   ],
+   "far": {
+    "consequence": "鉴定师的名字从财团的名单上划掉，往后再接不到孤品",
+    "due_days": 10,
+    "trigger": "财团另请鉴定师"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_manning_mulled_wine",
+    "hook_manning_crystal_gift",
+    "hook_manning_ski_slope",
+    "hook_keller_headlamp"
+   ],
+   "id": "p_trust_wants_top_grade",
+   "immediate": {
+    "minutes": 5,
+    "text": "韦伯把空白的证书和一支金笔放在壁炉边的桌上"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_mine_mouth_chalet"
+   ],
+   "near": {
+    "deadline_minutes": 1440,
+    "text": "明早九点，韦伯带烟晶下山"
+   },
+   "objective": "在韦伯明早带着烟晶离开之前，签下评级证书",
+   "source": "money",
+   "start_minute": 540,
+   "tags": [],
+   "title": "委托方的要价",
+   "trigger": "强震后的第二天上午，银行财团的特使韦伯来到木屋：那颗烟晶在防震盒里磕出一道细纹，财团要鉴定师照原样评最高级，评级费翻五倍"
   }
  ],
  "region": "瑞士阿尔卑斯山腹两百米深的百年水晶矿洞、宝石切磨工坊与鉴证舱",

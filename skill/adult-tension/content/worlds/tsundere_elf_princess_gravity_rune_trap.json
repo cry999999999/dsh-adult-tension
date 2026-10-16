@@ -2079,6 +2079,51 @@
    ],
    "title": "殿门外大臣问罪学者",
    "trigger": "殿门外首席大臣的人和王宫卫队吵成一团，有人说是人类学者故意触发了机关，要把学者抓起来问罪，卫队长拦着不让进。"
+  },
+  {
+   "choice": "公开说学者是为了救王女才被困在花瓣下，还是请学者立刻离开王都",
+   "exits": [
+    {
+     "cost": "就得承认王女那一夜被人类抱在怀里",
+     "option": "公开说是为了救王女"
+    },
+    {
+     "cost": "月轮穹顶修到一半，再没人修得好",
+     "option": "请学者离开"
+    }
+   ],
+   "far": {
+    "consequence": "学者被赶出王都，月蚀庆典上王女要和精灵贵族订婚",
+    "due_days": 7,
+    "trigger": "女王听信私语"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_elvira_bow_offer",
+    "hook_elvira_chamber_door",
+    "hook_mechanist_archer_sketch"
+   ],
+   "id": "p_court_whispers_human",
+   "immediate": {
+    "minutes": 5,
+    "text": "老侍女替王女梳着头，说女王傍晚要召见"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_princess_bedchamber"
+   ],
+   "near": {
+    "deadline_minutes": 480,
+    "text": "傍晚，女王召见"
+   },
+   "objective": "在女王召见之前，让宫廷里的人闭嘴",
+   "source": "rumor",
+   "start_minute": 600,
+   "tags": [],
+   "title": "宫廷里的私语",
+   "trigger": "穹顶停下来的第二天，宫廷里传开了：第一王女和那个人类学者在合拢的花瓣下待了一整夜，人类使团是想借这件事把王女娶回人类王国"
   }
  ],
  "region": "精灵王都王宫深处月轮大殿合拢中的秘银花瓣穹顶与月轮配重手柄",

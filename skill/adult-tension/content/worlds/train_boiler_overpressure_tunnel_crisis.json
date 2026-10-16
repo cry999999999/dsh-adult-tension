@@ -2089,6 +2089,55 @@
    ],
    "title": "监察特派员恐慌企图强行拔脱挂钩解体列车",
    "trigger": "监察特派员在极度恐慌中失去理智，拔出扳手企图在高速滑行中强开煤水车挂钩连杆单独抛下后部车厢逃命，面临引发全列粉碎性追尾颠覆。"
+  },
+  {
+   "choice": "请司炉长出面讲清那一夜是落石砸断了排汽管，还是主动申请再跑一趟夜车给大家看",
+   "exits": [
+    {
+     "cost": "司炉长要和段里的老司机们当面翻脸",
+     "option": "请司炉长出面"
+    },
+    {
+     "cost": "车还没大修，司炉长得陪着在锅炉前守一整夜",
+     "option": "再跑一趟夜车"
+    }
+   ],
+   "far": {
+    "consequence": "女司机被调去调车场开小火车，等了十年的高原线就此让出去",
+    "due_days": 7,
+    "trigger": "包乘排到别人"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_zhaolie_cap_tilt",
+    "hook_dahai_sweet_potato",
+    "hook_xiaoliu_notebook",
+    "hook_oldma_lantern_walk",
+    "hook_zhaolie_caboose_stove"
+   ],
+   "id": "p_depot_doubts_woman_driver",
+   "immediate": {
+    "minutes": 5,
+    "text": "小刘把一张食堂里传开的纸条递进守车，上面写着女司机下车"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_caboose_cabin"
+   ],
+   "near": {
+    "deadline_minutes": 360,
+    "text": "下午三点，段长排包乘"
+   },
+   "objective": "在段长下午排下一轮包乘之前，保住正司机的位子",
+   "source": "rumor",
+   "start_minute": 540,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "机务段的风言风语",
+   "trigger": "列车拖出隧道的第二天，机务段里传开了：高原线上头一个女司机，头一趟重载就差点把车开进塌方堆，女人就不该开这条线"
   }
  ],
  "region": "高原特长单线闭塞隧道内万吨重联重型蒸汽机车驾驶舱",

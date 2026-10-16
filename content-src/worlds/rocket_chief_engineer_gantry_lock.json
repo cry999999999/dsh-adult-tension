@@ -2128,6 +2128,55 @@
         "disaster",
         "workplace"
       ]
+    },
+    {
+      "id": "p_hq_deputy_takeover",
+      "title": "总部来的副总指挥",
+      "source": "person",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_platform_living_cabin"
+      ],
+      "trigger": "台风过境后的第二天，总部派来的副总指挥坐交通艇上了平台：下一个发射窗口由总部的人接管测控，女总师回北京写检查",
+      "objective": "在副总指挥晚上召开的协调会之前，保住下一个窗口的测控岗位",
+      "choice": "把吊笼里那一夜的处置过程原原本本写给总部，还是请索具总工替自己说话",
+      "immediate": {
+        "text": "宋调度长在舱门外敲了两下，说副总指挥请总师过去喝茶",
+        "minutes": 5
+      },
+      "near": {
+        "text": "晚上七点，平台协调会",
+        "deadline_minutes": 600
+      },
+      "far": {
+        "trigger": "测控岗位换人",
+        "consequence": "女总师跟了八年的这枚火箭交给别人发射，自己坐下一班补给船回陆地",
+        "due_days": 5
+      },
+      "exits": [
+        {
+          "option": "原原本本写给总部",
+          "cost": "报告里要写明是总师自己决定在雷暴里上塔的"
+        },
+        {
+          "option": "请索具总工说话",
+          "cost": "索具总工得在协调会上和总部的人当面顶起来"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_xuan_ginger_tea",
+        "hook_xuan_deck_stars",
+        "hook_xuan_hair_tie",
+        "hook_cheng_flying_fish",
+        "hook_xuan_cabin_door"
+      ],
+      "start_minute": 540,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

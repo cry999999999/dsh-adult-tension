@@ -2160,6 +2160,54 @@
    ],
    "title": "消防广播倒计时警报高频轰鸣",
    "trigger": "机房广播中高分贝警报声与急促读秒声反复回荡，耳膜剧痛造成极大心理恐慌。"
+  },
+  {
+   "choice": "公开数据中心那一夜的全部日志，还是请省考试院派人来核对",
+   "exits": [
+    {
+     "cost": "日志里也记着理事长和夜班工程师在冷通道里被困的那几个钟头",
+     "option": "公开全部日志"
+    },
+    {
+     "cost": "核对要三天，这三天里理事长不能对外说一个字",
+     "option": "请考试院核对"
+    }
+   ],
+   "far": {
+    "consequence": "省里派工作组进校，理事长停职接受调查",
+    "due_days": 7,
+    "trigger": "横幅上了新闻"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_ruoqing_instant_noodles",
+    "hook_ruoqing_admission_curve",
+    "hook_chenmo_spare_coat",
+    "hook_chenmo_cable_tag",
+    "hook_ruoqing_offer_cards",
+    "hook_ruoqing_rest_room"
+   ],
+   "id": "p_parents_group_rumor",
+   "immediate": {
+    "minutes": 5,
+    "text": "林干事把手机递给理事长，群里的截图已经转了上万次"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_president_rest_room"
+   ],
+   "near": {
+    "deadline_minutes": 240,
+    "text": "中午十二点，家长聚到校门口"
+   },
+   "objective": "在家长们中午聚到校门口之前，让大家相信录取名单没人动过",
+   "source": "rumor",
+   "start_minute": 480,
+   "tags": [],
+   "title": "家长群里的说法",
+   "trigger": "查询系统瘫了一夜，第二天早上家长群里传开了：学校故意关掉系统，趁夜里改了录取名单，有人已经约好中午到校门口拉横幅"
   }
  ],
  "region": "地下高密服务器冷通道机房与防爆气密隔离滑门死角",

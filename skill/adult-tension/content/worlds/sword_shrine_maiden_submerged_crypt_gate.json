@@ -2079,6 +2079,50 @@
    ],
    "title": "神道顶上空气将尽",
    "trigger": "神道顶上那一尺空气越来越少，喘气都带着水腥味，外面的鼓声一阵比一阵急，泄洪口还没挖开。"
+  },
+  {
+   "choice": "剑巫女以守陵人的身份作保，还是交出探险家画的水道图证明暗河是自己决堤的",
+   "exits": [
+    {
+     "cost": "探险家往后出了任何事，剑巫女都要一起领罪",
+     "option": "剑巫女作保"
+    },
+    {
+     "cost": "图上画着地宫里所有的暗道，从此谁都知道怎么进王陵",
+     "option": "交出水道图"
+    }
+   ],
+   "far": {
+    "consequence": "盗陵是死罪，剑巫女带路进了地宫，也要被守陵司革去巫女之位",
+    "due_days": 5,
+    "trigger": "探险家被押走"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_ruoxue_sword_tip",
+    "hook_explorer_map_back"
+   ],
+   "id": "p_county_grave_robbing",
+   "immediate": {
+    "minutes": 5,
+    "text": "老周在院门口搓着手，说县太爷只给了半天的工夫"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_shrine_maiden_courtyard"
+   ],
+   "near": {
+    "deadline_minutes": 480,
+    "text": "傍晚，差役押人去县衙"
+   },
+   "objective": "在差役傍晚押人上路之前，替探险家洗清盗墓的罪名",
+   "source": "institution",
+   "start_minute": 600,
+   "tags": [],
+   "title": "县衙的拘票",
+   "trigger": "暗河退水后的第二天，差役老周拿着县衙的拘票进了守陵小院：地宫进了水，朝廷怪罪下来，县太爷说是勘察的水工探险家挖开了暗河，要押去县衙问罪"
   }
  ],
  "region": "水淹王陵地宫神道尽头万斤蟠龙青铜升降巨闸底槽与急流泄水口",

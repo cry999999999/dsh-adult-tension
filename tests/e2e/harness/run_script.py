@@ -276,6 +276,14 @@ def commit_input(opened, session_id, request_id, revision, turn):
     return dict(turn, session_id=session_id, request_id=request_id, expected_revision=revision)
 
 
+def npc_name(context, npc):
+    """The name of an NPC on stage: a full context over its budget keeps it
+    only on the character card."""
+    if npc.get("name"):
+        return npc["name"]
+    return {c["id"]: c["name"] for c in context.get("characters") or []}[npc["id"]]
+
+
 def play_previous(project, env, step):
     """The part of a script before the upgrade, played on the older Skill's
     runtime with no model (PROGRESS P7, option C): doctor, an opening in
@@ -297,10 +305,11 @@ def play_previous(project, env, step):
     data = opened = call(["new-game"], {"request_id": "harness_%s" % uuid.uuid4().hex[:12], "mode": step.get("mode", "daily")})
     session, player = data["session_id"], ((data.get("opening") or {}).get("player") or {}).get("name")
     for n in range(step.get("turns", 3)):
-        present = (data.get("context") or {}).get("present_npcs") or []
+        context = data.get("context") or {}
+        present = context.get("present_npcs") or []
         if present:
             action, summary, open_action = PREVIOUS_TURNS[n % len(PREVIOUS_TURNS)]
-            names = {"npc": present[0]["name"], "player": player}
+            names = {"npc": npc_name(context, present[0]), "player": player}
             ops = [{"op": "npc_action", "npc_id": present[0]["id"], "action": action.format(**names)}]
         else:
             (summary, open_action), names, ops = PREVIOUS_ALONE, {"player": player}, []

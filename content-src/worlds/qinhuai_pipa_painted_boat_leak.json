@@ -2159,6 +2159,52 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_salt_merchant_repairs",
+      "title": "盐商的修船银子",
+      "source": "money",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_painted_boat_rear_boudoir"
+      ],
+      "trigger": "漕船撞舫后的第二天上午，金掌事算清了修船的账：三百两银子，教坊司一文不出。座上的盐商托人递话，修船的银子全包，只要行首去盐商府上唱一个月的堂会",
+      "objective": "在盐商的轿子傍晚来接人之前，凑出修船的银子",
+      "choice": "应下这一个月的堂会，还是当掉那面传世的螺钿琵琶",
+      "immediate": {
+        "text": "金掌事把账单压在闺阁的妆台上，说盐商的管家就在船头等回话",
+        "minutes": 5
+      },
+      "near": {
+        "text": "傍晚，盐商的轿子停到码头",
+        "deadline_minutes": 480
+      },
+      "far": {
+        "trigger": "画舫修不起",
+        "consequence": "画舫被卖给邻舫，行首和一船的乐师都要另找东家",
+        "due_days": 10
+      },
+      "exits": [
+        {
+          "option": "应下堂会",
+          "cost": "一个月里行首只能在盐商府上唱，盐商府上的规矩谁都知道"
+        },
+        {
+          "option": "当掉螺钿琵琶",
+          "cost": "孙老汉说那面琵琶一当出去，就再也赎不回来"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_xianxian_last_tune",
+        "hook_xianxian_osmanthus_wine",
+        "hook_xianxian_lantern_river",
+        "hook_xianxian_boudoir_curtain"
+      ],
+      "start_minute": 600,
+      "tags": []
     }
   ],
   "hooks": [

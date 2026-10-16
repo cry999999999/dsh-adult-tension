@@ -2089,6 +2089,50 @@
    ],
    "title": "缺氧环境下体力迅速流失透支",
    "trigger": "坑道里的空气越来越稀，被围四十天的身体本来就透支了，每用一次力都眼前发黑。"
+  },
+  {
+   "choice": "卖掉圣殿赐给骑士长的那柄重剑，还是写信向王都借钱",
+   "exits": [
+    {
+     "cost": "骑士长从此只能拿一柄普通的剑登上城头点名",
+     "option": "卖掉重剑"
+    },
+    {
+     "cost": "信要送到王都，得有人穿过敌营",
+     "option": "写信向王都借钱"
+    }
+   ],
+   "far": {
+    "consequence": "城墙上少了一半守军，要塞撑不过下一次攻城",
+    "due_days": 3,
+    "trigger": "佣兵出城"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_christina_unsent_letter",
+    "hook_christina_quarters_lamp"
+   ],
+   "id": "p_mercenary_back_pay",
+   "immediate": {
+    "minutes": 5,
+    "text": "军士长布洛克在门口低声说，佣兵队长已经把行囊收拾好了"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_commander_quarters"
+   ],
+   "near": {
+    "deadline_minutes": 480,
+    "text": "天黑，佣兵们要开城门"
+   },
+   "objective": "在佣兵们天黑开城门之前，凑出一部分饷银",
+   "source": "money",
+   "start_minute": 600,
+   "tags": [],
+   "title": "三个月的饷银",
+   "trigger": "军械库保住后的第二天，佣兵们在营房外排成一排：三个月的饷银一个铜板都没见到，军械库差点炸了，再不发饷，今晚就开城门出去另找雇主"
   }
  ],
  "region": "要塞地下五十米玄武岩军械密库狭窄弹药转运检修坑道",

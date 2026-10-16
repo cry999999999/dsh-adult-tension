@@ -1950,6 +1950,55 @@
         "crime",
         "workplace_power"
       ]
+    },
+    {
+      "id": "p_depot_doubts_woman_driver",
+      "title": "机务段的风言风语",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_caboose_cabin"
+      ],
+      "trigger": "列车拖出隧道的第二天，机务段里传开了：高原线上头一个女司机，头一趟重载就差点把车开进塌方堆，女人就不该开这条线",
+      "objective": "在段长下午排下一轮包乘之前，保住正司机的位子",
+      "choice": "请司炉长出面讲清那一夜是落石砸断了排汽管，还是主动申请再跑一趟夜车给大家看",
+      "immediate": {
+        "text": "小刘把一张食堂里传开的纸条递进守车，上面写着女司机下车",
+        "minutes": 5
+      },
+      "near": {
+        "text": "下午三点，段长排包乘",
+        "deadline_minutes": 360
+      },
+      "far": {
+        "trigger": "包乘排到别人",
+        "consequence": "女司机被调去调车场开小火车，等了十年的高原线就此让出去",
+        "due_days": 7
+      },
+      "exits": [
+        {
+          "option": "请司炉长出面",
+          "cost": "司炉长要和段里的老司机们当面翻脸"
+        },
+        {
+          "option": "再跑一趟夜车",
+          "cost": "车还没大修，司炉长得陪着在锅炉前守一整夜"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_zhaolie_cap_tilt",
+        "hook_dahai_sweet_potato",
+        "hook_xiaoliu_notebook",
+        "hook_oldma_lantern_walk",
+        "hook_zhaolie_caboose_stove"
+      ],
+      "start_minute": 540,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

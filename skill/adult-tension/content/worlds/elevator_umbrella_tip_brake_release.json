@@ -2155,6 +2155,53 @@
    ],
    "title": "观光幕墙钢化夹胶玻璃微裂",
    "trigger": "高空飞石与极端风切变击打在轿厢外层钢化玻璃上，边缘出现蛛网状微小裂纹。"
+  },
+  {
+   "choice": "一起多付房租留下，还是趁这次各自搬走",
+   "exits": [
+    {
+     "cost": "两人的存款都得动，年底回家的机票就买不起了",
+     "option": "一起多付房租"
+    },
+    {
+     "cost": "赵主任要两人在业主大会上替物业说话",
+     "option": "请物业的赵主任拿电梯赔偿抵房租"
+    }
+   ],
+   "far": {
+    "consequence": "合租三年的屋子退掉，冰箱上那张值日表也得撕下来",
+    "due_days": 14,
+    "trigger": "到了月底"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_wanqing_duty_chart",
+    "hook_wanqing_cilantro",
+    "hook_chen_water_bottle",
+    "hook_chen_umbrella",
+    "hook_wanqing_apartment_door"
+   ],
+   "id": "p_landlord_raises_rent",
+   "immediate": {
+    "minutes": 5,
+    "text": "房东的语音一条接一条，冰箱上的值日表被门缝的风吹得哗哗响"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_shared_apartment"
+   ],
+   "near": {
+    "deadline_minutes": 360,
+    "text": "下午三点，房东带中介来看房"
+   },
+   "objective": "在房东下午带中介来看房之前，决定这间合租屋还住不住",
+   "source": "money",
+   "start_minute": 540,
+   "tags": [],
+   "title": "房东的电话",
+   "trigger": "台风过后第二天上午，房东在业主群里看到电梯困人的新闻，打来电话：这套房年底要卖，两人月底前搬走，除非每月多付两千"
   }
  ],
  "region": "外挂全景双层观光玻璃电梯轿厢与百米高空井道",

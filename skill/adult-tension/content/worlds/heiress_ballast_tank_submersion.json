@@ -2248,6 +2248,50 @@
    ],
    "title": "万吨船体龙骨彻底断裂终极翻扣死线",
    "trigger": "邮轮主龙骨在三十米狂涛中发出天崩地裂般的最后断裂巨响，船尾高高翘起指向夜空，整艘万吨巨轮将在十五分钟内彻底翻扣沉入深海海沟。"
+  },
+  {
+   "choice": "当众说出绑匪是二叔请来的，还是先装作什么都不知道、回去再算账",
+   "exits": [
+    {
+     "cost": "没有证据，二叔会反说千金受了惊吓、神志不清",
+     "option": "当众说出"
+    },
+    {
+     "cost": "上岸要跟二叔握手道谢，还要坐进二叔安排的车",
+     "option": "先装不知道"
+    }
+   ],
+   "far": {
+    "consequence": "航运集团归二叔代管，跟着千金逃出来的人也会被二叔一个个记下",
+    "due_days": 2,
+    "trigger": "董事会表决代管人"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "h_mingyue_dawn_blanket_triumph_vow",
+    "h_mingyue_mouth_air_request"
+   ],
+   "id": "p_uncle_takes_the_board",
+   "immediate": {
+    "minutes": 5,
+    "text": "电话那头是秘书压低的声音，说二叔的车已经在码头等着"
+   },
+   "leverage": null,
+   "location_ids": [
+    "upper_lifeboat_launch_platform"
+   ],
+   "near": {
+    "deadline_minutes": 90,
+    "text": "早上七点，船靠岸"
+   },
+   "objective": "在船靠岸、二叔的人接走千金之前，想好上岸后第一句话说什么",
+   "source": "person",
+   "start_minute": 330,
+   "tags": [],
+   "title": "二叔的董事会",
+   "trigger": "破晓时分，救生艇被海警船拖着往港口走，卫星电话接通了家族总部：千金失踪的这一夜，二叔已经在董事会上提议由自己代管航运集团"
   }
  ],
  "region": "北大西洋公海十级风暴中即将沉没的奢华邮轮负四层水密压载隔舱与受损管道夹层",

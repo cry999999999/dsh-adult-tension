@@ -2091,6 +2091,53 @@
    ],
    "title": "外挂配重悬臂固定钢缆即将断裂横扫",
    "trigger": "配重悬臂晃动导致数吨重的钨合金配重块在滑轨上发生侧倾，紧绷的四道重型承载钢缆发出即将绷断的凄厉尖啸，一旦断裂将横扫机库大厅。"
+  },
+  {
+   "choice": "公开录像的全部内容，还是只说是一次例行演练",
+   "exits": [
+    {
+     "cost": "录像里有机库失重时两个人抱在一起的那一段",
+     "option": "公开全部录像"
+    },
+    {
+     "cost": "上尉要在镜头前撒一次谎，以后每个记者都会追着问",
+     "option": "说成例行演练"
+    }
+   ],
+   "far": {
+    "consequence": "天梯停运整顿，上尉的突击队调回地面待命",
+    "due_days": 5,
+    "trigger": "声明发出"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_shang_visor_knock",
+    "hook_smith_graphite_gift",
+    "hook_xiaoyuan_float_pen",
+    "hook_lengxuan_oximeter_clip",
+    "hook_lengxuan_habitat_hatch"
+   ],
+   "id": "p_newsfeed_footage",
+   "immediate": {
+    "minutes": 5,
+    "text": "阿萝把平板递进生活舱，评论区里有人认出了上尉的脸"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_pressurized_habitat_pod"
+   ],
+   "near": {
+    "deadline_minutes": 240,
+    "text": "中午十二点，闻大校发布声明"
+   },
+   "objective": "在闻大校对外发布声明之前，决定那段失重录像怎么解释",
+   "source": "rumor",
+   "start_minute": 480,
+   "tags": [],
+   "title": "新闻台的画面",
+   "trigger": "断缆事故后第二天，地面的新闻台播出一段画面：天梯顶端的机库倾斜失重，播报员说防卫军隐瞒了袭击，一千万张船票的预约一夜退了一半"
   }
  ],
  "region": "三万米高空轨道电梯对流层重型配重锚定外露机库",

@@ -2153,6 +2153,51 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_publisher_recast",
+      "title": "换人重录",
+      "source": "money",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_voice_actress_lounge"
+      ],
+      "trigger": "录音棚出事后的第二天上午，发行方的赵代表在楼上休息室等着：终章告白没录完，资料片就上不了线，要么今晚补录，要么换人重录整个角色",
+      "objective": "在发行方晚上的上线评审之前，把告白那段录完",
+      "choice": "嗓子还哑着就进棚补录，还是让出这个角色",
+      "immediate": {
+        "text": "赵代表把排期表推到声优面前，晚上七点那一格空着",
+        "minutes": 5
+      },
+      "near": {
+        "text": "晚上七点，发行方上线评审",
+        "deadline_minutes": 540
+      },
+      "far": {
+        "trigger": "角色换人",
+        "consequence": "签约第五年的主役没了，声优的名字从片头里拿掉",
+        "due_days": 7
+      },
+      "exits": [
+        {
+          "option": "哑着嗓子补录",
+          "cost": "录音导演得陪着一遍遍重来，直到天亮"
+        },
+        {
+          "option": "换人重录",
+          "cost": "违约金要声优自己出一半"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_voice_actress_lounge_door"
+      ],
+      "start_minute": 600,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

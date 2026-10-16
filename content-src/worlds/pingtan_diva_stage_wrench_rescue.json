@@ -2015,6 +2015,55 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_owner_stops_shows",
+      "title": "停书告示",
+      "source": "money",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_backstage_mirror_room"
+      ],
+      "trigger": "暴雨过去第二天上午，书场的东家来到后台：台口挂落砸坏了，修台要停半个月，女先生这半个月的包银停发，听客的书票也要一张张退",
+      "objective": "在东家贴出停书告示之前，想个法子让书照开",
+      "choice": "挪到茶馆的小台子上接着唱，还是等木作师傅把台口修好",
+      "immediate": {
+        "text": "剧务小何捧着一摞退票，站在妆镜间门口",
+        "minutes": 5
+      },
+      "near": {
+        "text": "中午，东家要贴停书告示",
+        "deadline_minutes": 180
+      },
+      "far": {
+        "trigger": "停书半个月",
+        "consequence": "卖了一半的长篇断了关子，老听客散了，女先生的场子让给别家",
+        "due_days": 14
+      },
+      "exits": [
+        {
+          "option": "挪去茶馆唱",
+          "cost": "茶馆嘈杂，压不住琵琶，秦老先生不肯去"
+        },
+        {
+          "option": "让木作师傅连夜赶工",
+          "cost": "木作师傅要女先生每晚散场后陪着在台口掌灯"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_yunqing_kaipian",
+        "hook_yunqing_guanzi",
+        "hook_yunqing_wonton",
+        "hook_tingyu_wood_pin",
+        "hook_tingyu_back_row",
+        "hook_yunqing_pipa_peg",
+        "hook_yunqing_mirror_room"
+      ],
+      "start_minute": 600,
+      "tags": []
     }
   ],
   "hooks": [

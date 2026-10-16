@@ -2265,6 +2265,51 @@
    ],
    "title": "暖通配电总柜过载跳闸后应急照明失电恐慌",
    "trigger": "强电断路器跳闸可能瞬间引发地下二层走廊与机房局部照明失电，昏暗环境下救援视线严重受阻。"
+  },
+  {
+   "choice": "嗓子还哑着就进棚补录，还是让出这个角色",
+   "exits": [
+    {
+     "cost": "录音导演得陪着一遍遍重来，直到天亮",
+     "option": "哑着嗓子补录"
+    },
+    {
+     "cost": "违约金要声优自己出一半",
+     "option": "换人重录"
+    }
+   ],
+   "far": {
+    "consequence": "签约第五年的主役没了，声优的名字从片头里拿掉",
+    "due_days": 7,
+    "trigger": "角色换人"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_voice_actress_lounge_door"
+   ],
+   "id": "p_publisher_recast",
+   "immediate": {
+    "minutes": 5,
+    "text": "赵代表把排期表推到声优面前，晚上七点那一格空着"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_voice_actress_lounge"
+   ],
+   "near": {
+    "deadline_minutes": 540,
+    "text": "晚上七点，发行方上线评审"
+   },
+   "objective": "在发行方晚上的上线评审之前，把告白那段录完",
+   "source": "money",
+   "start_minute": 600,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "换人重录",
+   "trigger": "录音棚出事后的第二天上午，发行方的赵代表在楼上休息室等着：终章告白没录完，资料片就上不了线，要么今晚补录，要么换人重录整个角色"
   }
  ],
  "region": "国家数字音频制作中心地下二层专业级母带录音棚与主控混音控制室",

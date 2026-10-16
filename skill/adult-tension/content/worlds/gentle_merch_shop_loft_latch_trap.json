@@ -2330,6 +2330,53 @@
    "tags": [],
    "title": "黄牛传言",
    "trigger": "早上八点，排队群里有人贴出一张阁楼货架的照片，说限量款早被店里留给了黄牛，门外的队伍开始骚动"
+  },
+  {
+   "choice": "自己吞下这笔钱，还是去跟代理商说是升降机出了事",
+   "exits": [
+    {
+     "cost": "店里这个月的房租就交不上了",
+     "option": "自己买下这箱吧唧"
+    },
+    {
+     "cost": "机电师傅的维保公司会因此被大厦解约",
+     "option": "请机电师傅写一份升降机故障说明"
+    }
+   ],
+   "far": {
+    "consequence": "开了四年的小店只能靠旧货撑，合伙人也在考虑退股",
+    "due_days": 7,
+    "trigger": "下一批联名断货"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_wanqing_warm_tea",
+    "hook_wanqing_hidden_badge",
+    "hook_wanqing_queue_night",
+    "hook_bozhou_lift_excuse",
+    "hook_wanqing_loft_curtain"
+   ],
+   "id": "p_scratched_badges",
+   "immediate": {
+    "minutes": 5,
+    "text": "手机上是代理商发来的报价单，数字后面三个零"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_loft_little_bedroom"
+   ],
+   "near": {
+    "deadline_minutes": 720,
+    "text": "明早九点，代理商的人来清点"
+   },
+   "objective": "在代理商明早清点之前，决定这箱吧唧怎么办",
+   "source": "money",
+   "start_minute": 1290,
+   "tags": [],
+   "title": "一箱划花的吧唧",
+   "trigger": "首发那天晚上，版权代理打来电话：一箱限量吧唧在阁楼里压出了划痕，店里要按零售价全部买下，否则下一批联名不再给货"
   }
  ],
  "region": "动漫街区旗舰店二层钢结构周边仓储阁楼与货运升降吊门通道",

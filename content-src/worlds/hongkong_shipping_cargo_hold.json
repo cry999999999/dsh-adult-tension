@@ -1994,6 +1994,53 @@
       "tags": [
         "workplace_power"
       ]
+    },
+    {
+      "id": "p_tabloid_photo",
+      "title": "周刊的照片",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_owner_suite_cabin"
+      ],
+      "trigger": "风球过后第三天晚上，八卦周刊登了一张照片：船王千金凌晨从浮坞里被抬出来，身上裹着水手长的外套，标题问船东为何深夜留在船上",
+      "objective": "在明早股东早餐会之前，把照片的说法讲圆",
+      "choice": "公开说那一夜是在船上验收，还是去求周刊撤稿",
+      "immediate": {
+        "text": "阿宝把周刊摊在套房桌上，家族的群组已经炸了",
+        "minutes": 5
+      },
+      "near": {
+        "text": "明早八点，股东早餐会",
+        "deadline_minutes": 720
+      },
+      "far": {
+        "trigger": "股东们定下接班人选",
+        "consequence": "千金接班的事再拖一年，水手长被调去跑最远的航线",
+        "due_days": 5
+      },
+      "exits": [
+        {
+          "option": "公开说明",
+          "cost": "就得解释为什么验收要验到凌晨"
+        },
+        {
+          "option": "请周刊撤稿",
+          "cost": "周刊老板要千金接受一次独家专访"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_mingchu_winter_melon",
+        "hook_mingchu_star_ferry",
+        "hook_mingchu_gantry_night",
+        "hook_yuan_rope_knot",
+        "hook_mingchu_suite_door"
+      ],
+      "start_minute": 1200,
+      "tags": []
     }
   ],
   "hooks": [

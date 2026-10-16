@@ -1947,6 +1947,51 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_engineer_spy_rumor",
+      "title": "奸细的传言",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_commander_watergate_quarters"
+      ],
+      "trigger": "暴风雨过后第二天，码头酒馆里传开了：水门的主钢缆是王都来的工程师故意锯断的，那人是对岸派来的奸细",
+      "objective": "在骑兵们把工程师押去审问之前，让码头上的人知道钢缆是怎么断的",
+      "choice": "女统领出面担保工程师，还是让工程师去码头当众把断口给人看",
+      "immediate": {
+        "text": "骑兵汤米敲开营房的门，说码头上有人拿着绳子在等",
+        "minutes": 5
+      },
+      "near": {
+        "text": "中午，驻防营的老军士要来带人",
+        "deadline_minutes": 240
+      },
+      "far": {
+        "trigger": "工程师被押去王都受审",
+        "consequence": "水门改造半途而废，女统领也要被问为什么把奸细留在身边一个汛期",
+        "due_days": 5
+      },
+      "exits": [
+        {
+          "option": "女统领出面担保",
+          "cost": "以后工程师出了任何事，女统领都要一起担"
+        },
+        {
+          "option": "当众把断口给人看",
+          "cost": "断口证明是钢缆老化，那批旧料是女统领亲手批的"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_gwendolyn_ride_offer",
+        "hook_gwendolyn_quarters_door",
+        "hook_engineer_drawing_back"
+      ],
+      "start_minute": 480,
+      "tags": []
     }
   ],
   "hooks": [

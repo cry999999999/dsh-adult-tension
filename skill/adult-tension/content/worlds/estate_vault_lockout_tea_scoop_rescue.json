@@ -2190,6 +2190,55 @@
    ],
    "title": "建筑地基雷击电涌微沉降挤压",
    "trigger": "雷暴连续击中宅邸地基避雷带，地质微震导致门框立柱承受附加剪切应力。"
+  },
+  {
+   "choice": "请装裱师当众说清长卷修得回来，还是把那一夜库门为什么没锁好交代清楚",
+   "exits": [
+    {
+     "cost": "装裱师得当着宗亲限期一个月修好，修不好就赔",
+     "option": "让装裱师当众打包票"
+    },
+    {
+     "cost": "冯伯得指认三房的孙子",
+     "option": "请冯伯说出那天是谁动了库门的锁"
+    }
+   ],
+   "far": {
+    "consequence": "少夫人交出库房钥匙，装裱师这趟活计结不到工钱就得回苏州",
+    "due_days": 2,
+    "trigger": "宗亲议定换人"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_wanqing_tea_room",
+    "hook_wanqing_kin_ledger",
+    "hook_wanqing_sunning_scroll",
+    "hook_chengan_paste_bowl",
+    "hook_chengan_back_paper",
+    "hook_chengan_silk_gloves",
+    "hook_wanqing_tea_hut_curtain"
+   ],
+   "id": "p_clan_elders_meet",
+   "immediate": {
+    "minutes": 5,
+    "text": "冯伯掀开茶寮的帘子，说三房叔公请少夫人去中庭"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_courtyard_tea_hut"
+   ],
+   "near": {
+    "deadline_minutes": 240,
+    "text": "午饭后，宗亲议定"
+   },
+   "objective": "在宗亲们午饭后议定之前，保住当家的位子",
+   "source": "person",
+   "start_minute": 600,
+   "tags": [],
+   "title": "宗亲议事",
+   "trigger": "开库出事后的第二天上午，宗亲们在中庭里坐成一排：库里那卷宋人长卷被灭火气体熏黄了，三房的叔公说少夫人管不住家产，要另选当家人"
   }
  ],
  "region": "地下大跨度恒湿字画通堂外侧防尘气密卷帘门死角",

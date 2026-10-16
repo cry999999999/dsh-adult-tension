@@ -2096,6 +2096,54 @@
    ],
    "title": "防汛特派督察官拉下深孔炸封电闸倒计时",
    "trigger": "特派防汛专员认定快速启闭门已经无法抢救，在坝顶按开深孔炸封电闸，防爆雷管启动了三分钟彻底引爆炸毁进水塔封闭深孔的自毁倒计时。"
+  },
+  {
+   "choice": "当面把调度记录摊开给村民看，还是等调查组来了再交",
+   "exits": [
+    {
+     "cost": "记录上那一道开闸令，是女总监顶着防汛督察的命令下的",
+     "option": "当面给村民看调度记录"
+    },
+    {
+     "cost": "老马要把自家那块被淹的地也报进赔偿里",
+     "option": "请老马回村说情"
+    }
+   ],
+   "far": {
+    "consequence": "女总监背处分，调度令上签字的值班长也要停职",
+    "due_days": 5,
+    "trigger": "调查组定责"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_yingxue_wet_logbook",
+    "hook_zhenchuan_duty_roster",
+    "hook_ma_village_lights",
+    "hook_xiaoding_instant_noodles",
+    "hook_fang_dispatch_order",
+    "hook_yingxue_duty_room"
+   ],
+   "id": "p_village_flood_rumor",
+   "immediate": {
+    "minutes": 5,
+    "text": "小丁跑进值班间，说村民在坝顶拉了横幅"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_hoist_hall_duty_room"
+   ],
+   "near": {
+    "deadline_minutes": 360,
+    "text": "下午两点，县里的调查组到坝上"
+   },
+   "objective": "在县里的调查组下来之前，让村民看到那一夜的开闸记录",
+   "source": "rumor",
+   "start_minute": 480,
+   "tags": [],
+   "title": "移民村的横幅",
+   "trigger": "洪峰过后第二天早上，库区移民村的村民上了坝：那一夜下游淹了三百亩田，村里传说是坝上为保大坝故意多开了闸"
   }
  ],
  "region": "水下百米大坝进水口快速启闭门检修排水廊道",

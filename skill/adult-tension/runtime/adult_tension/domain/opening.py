@@ -846,7 +846,7 @@ def penalty(result, history):
             score += 2
         if last.get("disaster") and result.get("disaster"):
             score += 3
-    if len(history) > 1 and history[1]["power_structure"] == result["power_structure"]:
+    if any(h["power_structure"] == result["power_structure"] for h in history[1:3]):
         score += 1
     if result["hook_kind"] != "approach" and any(h["hook_kind"] != "approach" for h in history[:2]):
         score += 2

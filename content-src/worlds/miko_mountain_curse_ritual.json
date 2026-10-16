@@ -2034,6 +2034,49 @@
           "cost": "丧失最后自救希望只能绝望等待坠崖解体"
         }
       ]
+    },
+    {
+      "id": "p_cultural_agency_review",
+      "title": "文化厅的审定",
+      "source": "institution",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_miko_living_quarters"
+      ],
+      "trigger": "山崩后的第三天，文化厅派人到了社务所：神乐回廊塌了，古社的重要文化财资格要重新审定，审定期间不许再办祭典",
+      "objective": "在文化厅的人下山之前，保住明年春天的大祭",
+      "choice": "让浅井记者把那一夜拍下的照片交给文化厅，还是由大巫女亲自去东京陈情",
+      "immediate": {
+        "text": "藤原宫司在居所门外轻咳一声，说文化厅的人在等回话",
+        "minutes": 5
+      },
+      "near": {
+        "text": "傍晚，文化厅的人坐最后一班缆车下山",
+        "deadline_minutes": 540
+      },
+      "far": {
+        "trigger": "审定结果下来",
+        "consequence": "千年古社停办祭典，大巫女要离开神社回到俗世",
+        "due_days": 14
+      },
+      "exits": [
+        {
+          "option": "交出浅井记者的照片",
+          "cost": "照片里也有大巫女祭袍湿透、被人抱出回廊的那一张"
+        },
+        {
+          "option": "亲自去东京陈情",
+          "cost": "大巫女得第一次离开这座山，独自去见那些官员"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_yehua_quarters_tea"
+      ],
+      "start_minute": 480,
+      "tags": []
     }
   ],
   "twists": [

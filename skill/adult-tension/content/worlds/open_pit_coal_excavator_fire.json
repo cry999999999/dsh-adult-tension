@@ -2076,6 +2076,56 @@
    ],
    "title": "安全监察官拉下受料臂火工炸断倒计时",
    "trigger": "特派安全监察官认定受料臂已经无法抢救，在配重平台按开炸断电掣，防爆雷管启动了三分钟彻底引爆炸断受料臂钢桁架弃机的自毁倒计时。"
+  },
+  {
+   "choice": "交出那份过期的验收单，还是让司机长说那一夜的灭火系统是自己关的",
+   "exits": [
+    {
+     "cost": "续期没批下来的那一栏，签的是总指挥的名字",
+     "option": "交出过期的验收单"
+    },
+    {
+     "cost": "司机长要调离斗轮机，三十年的手艺就此放下",
+     "option": "让司机长担下"
+    }
+   ],
+   "far": {
+    "consequence": "露天矿停产一冬，几百个工人回家过年拿不到年终奖",
+    "due_days": 10,
+    "trigger": "督察结论公开"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_binglan_salty_milk_tea",
+    "hook_tianzhu_cab_heater",
+    "hook_peng_shop_bench",
+    "hook_xiaochai_frozen_glove",
+    "hook_duan_snow_boots",
+    "hook_binglan_cabin_thermos"
+   ],
+   "id": "p_environment_inspectors",
+   "immediate": {
+    "minutes": 5,
+    "text": "邬工程师在栈桥口跺着雪，说督察组点名要见总指挥"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_operator_cabin_skywalk"
+   ],
+   "near": {
+    "deadline_minutes": 420,
+    "text": "下午三点，督察组封存现场"
+   },
+   "objective": "在督察组下午封存现场之前，把防火验收的材料补齐",
+   "source": "institution",
+   "start_minute": 480,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "环保督察",
+   "trigger": "斗轮机起火后的第二天上午，环保督察组的车开进了矿区：黑烟烧了一夜，几十里外的牧民都看得见，督察组要查这台挖掘机的防火验收"
   }
  ],
  "region": "万吨轮斗挖掘机悬空六十米受料臂卷扬机房",

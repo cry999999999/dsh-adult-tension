@@ -1950,6 +1950,54 @@
         "workplace_power",
         "crime"
       ]
+    },
+    {
+      "id": "p_herders_yaks",
+      "title": "牧民的牦牛",
+      "source": "person",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_geologist_prefab_cabin"
+      ],
+      "trigger": "井喷过后第二天早上，山下的牧民赶着牦牛堵在井场门口：那一夜的硫化氢飘下山，死了十几头牦牛，要钻井队赔",
+      "objective": "在牧民去县里上访之前，谈出一个赔法",
+      "choice": "按牧民说的数照赔，还是请县里来人测牦牛的死因",
+      "immediate": {
+        "text": "央金医生掀开板房门帘，说牧民里有个老阿妈也晕倒了",
+        "minutes": 5
+      },
+      "near": {
+        "text": "中午，牧民的拖拉机要开去县城",
+        "deadline_minutes": 240
+      },
+      "far": {
+        "trigger": "上访到了县里",
+        "consequence": "地热田停钻整顿，总地质师这口井三年的数据全部封存",
+        "due_days": 7
+      },
+      "exits": [
+        {
+          "option": "照数赔",
+          "cost": "赔款从钻井队全年的奖金里出，队里人都会知道是为什么"
+        },
+        {
+          "option": "请县里来人测死因",
+          "cost": "真要测出跟井喷有关，那一夜的处置记录也得一起交上去"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_ningshuang_cuttings_bag",
+        "hook_tianxuan_oxygen_can",
+        "hook_zhao_spring_eggs",
+        "hook_xiaowu_altitude_noodles",
+        "hook_zhao_inspector_gasp",
+        "hook_ningshuang_hot_spring"
+      ],
+      "start_minute": 480,
+      "tags": []
     }
   ],
   "hooks": [

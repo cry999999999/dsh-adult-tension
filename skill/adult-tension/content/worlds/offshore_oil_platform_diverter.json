@@ -2096,6 +2096,57 @@
    ],
    "title": "海事安全监察官拉下隔水管火工炸断倒计时",
    "trigger": "特派海事监察官认定井喷已经无法控制，在主栈桥按开隔水管水下炸断电掣，防爆雷管启动了三分钟彻底引爆炸药炸断千米隔水管弃平台的自毁倒计时。"
+  },
+  {
+   "choice": "按总部的期限复钻，还是坚持等新的胶芯运上平台",
+   "exits": [
+    {
+     "cost": "旧胶芯撑不撑得住没人敢说，只有司机长肯陪着守在月池边",
+     "option": "按期复钻"
+    },
+    {
+     "cost": "女总监的名字会第一个出现在总部的问责名单上",
+     "option": "坚持等新胶芯"
+    }
+   ],
+   "far": {
+    "consequence": "平台上一百多人的饭碗跟着走，下个月的倒班直升机只接人不送人",
+    "due_days": 7,
+    "trigger": "合同转给别家"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_hailan_helideck_welcome",
+    "hook_changhai_basket_hook",
+    "hook_qi_cancelled_leave",
+    "hook_xiaozong_ice_cream",
+    "hook_feng_roster_mismatch",
+    "hook_hailan_payphone_queue",
+    "hook_hailan_duty_room"
+   ],
+   "id": "p_operator_restart_deadline",
+   "immediate": {
+    "minutes": 5,
+    "text": "尚工程师把一张停钻损失表贴在值班间墙上"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_drill_floor_duty_room"
+   ],
+   "near": {
+    "deadline_minutes": 780,
+    "text": "晚上九点，和总部开电话会"
+   },
+   "objective": "在今晚的电话会之前，给总部一个复钻的日子",
+   "source": "money",
+   "start_minute": 480,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "复钻期限",
+   "trigger": "井涌压住后的第二天，油公司总部来了电话：这口井停钻一天就是两百万，限四十八小时复钻，否则平台的承包合同转给别家"
   }
  ],
  "region": "月池下方分流器环形防喷器液压控制死角",

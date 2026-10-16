@@ -2084,6 +2084,51 @@
    ],
    "title": "千米高空冰冷强风灌入失温",
    "trigger": "格栅下的云海被暴风搅动，千米高空的冷风从缝隙里一阵阵灌进底舱。"
+  },
+  {
+   "choice": "从公会的储备金里先垫，还是查明转台是谁没按期保养",
+   "exits": [
+    {
+     "cost": "储备金账上的签名是总务长自己的",
+     "option": "动用储备金垫付"
+    },
+    {
+     "cost": "记录会显示机械师上个月为了赶工跳过一次检修",
+     "option": "请老机工奥斯卡查保养记录"
+    }
+   ],
+   "far": {
+    "consequence": "储备金的窟窿要总务长担着，可能被调去偏远的分会",
+    "due_days": 5,
+    "trigger": "会长回来清算"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_selphia_hairpin_pen",
+    "hook_selphia_first_flight",
+    "hook_selphia_quarters_lamp"
+   ],
+   "id": "p_shipowners_bill",
+   "immediate": {
+    "minutes": 5,
+    "text": "值班员诺拉敲门，说柜台前已经排了二十几个船主"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_clerk_quarters"
+   ],
+   "near": {
+    "deadline_minutes": 600,
+    "text": "傍晚，会长的飞空艇回港"
+   },
+   "objective": "在会长回来之前，把船主们的赔偿摊清楚",
+   "source": "money",
+   "start_minute": 480,
+   "tags": [],
+   "title": "船主们的账单",
+   "trigger": "风暴过去第二天，飞空艇船主们拿着账单涌进公会：锚定转台停用的三天里，所有货船困在要塞，误了货期的损失要公会赔"
   }
  ],
  "region": "边境公会悬空锚定转台与重型魔导绞盘底舱机房",

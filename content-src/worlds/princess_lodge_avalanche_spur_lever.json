@@ -1991,6 +1991,53 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_republic_envoy",
+      "title": "共和国的特使",
+      "source": "person",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_hunting_lodge_grand_salon"
+      ],
+      "trigger": "雪崩过后第三天，山下的共和国派来一位特使，踩着积雪上了行宫：只要长皇女签字放弃复辟，近卫们都能拿到通行证，否则雪化以后上山的就是宪兵",
+      "objective": "在特使下山之前，给出一个回答",
+      "choice": "签字换近卫们一条生路，还是卖掉收藏室里的古董，再撑一个冬天",
+      "immediate": {
+        "text": "卡尔大管家把特使引进壁炉大沙龙，特使的靴子还在滴雪水",
+        "minutes": 10
+      },
+      "near": {
+        "text": "明早天亮，特使下山",
+        "deadline_minutes": 1260
+      },
+      "far": {
+        "trigger": "雪化",
+        "consequence": "宪兵上山，近卫们以叛乱罪论处，长皇女被押回首都受审",
+        "due_days": 14
+      },
+      "exits": [
+        {
+          "option": "签字",
+          "cost": "长皇女从此只是一个没有名号的流亡女人"
+        },
+        {
+          "option": "卖掉收藏室的古董",
+          "cost": "那些都是父皇留下的东西，买家要侍卫长亲自押送下山"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_helena_last_waltz",
+        "hook_helena_riding_boots",
+        "hook_helena_mulled_wine",
+        "hook_andrei_door_lamp",
+        "hook_andrei_sword"
+      ],
+      "start_minute": 600,
+      "tags": []
     }
   ],
   "hooks": [

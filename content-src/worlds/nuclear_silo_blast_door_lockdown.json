@@ -1951,6 +1951,54 @@
         "disaster",
         "crime"
       ]
+    },
+    {
+      "id": "p_town_warhead_rumor",
+      "title": "镇上的传言",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_commander_duty_cabin"
+      ],
+      "trigger": "自毁程序关停后的第二天，附近镇上传开了：废弃核井昨夜差点炸了，井里还藏着没拆的弹头，镇民要求连夜搬迁",
+      "objective": "在镇上开居民大会之前，让镇上的人相信井里是空的",
+      "choice": "带镇长下井亲眼看，还是请阵地长出一份保密的说明",
+      "immediate": {
+        "text": "梅姐敲开值班舱，说镇上的人把井口的铁丝网围住了",
+        "minutes": 5
+      },
+      "near": {
+        "text": "晚上七点，镇上开居民大会",
+        "deadline_minutes": 660
+      },
+      "far": {
+        "trigger": "居民大会决定上访",
+        "consequence": "核井被永久填埋，女军官守了十年的这座井连同那些档案一起封进水泥",
+        "due_days": 7
+      },
+      "exits": [
+        {
+          "option": "带镇长下井",
+          "cost": "要打开那扇刚撬开的防爆门，镇长会看到井里的一切"
+        },
+        {
+          "option": "请杭大校出保密说明",
+          "cost": "杭大校要女军官签一份永不对外谈论此事的保证"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_qingyao_pocket_watch",
+        "hook_tianxiong_canteen",
+        "hook_smith_tube_console",
+        "hook_xiaoyuan_dosimeter",
+        "hook_pei_archive_box",
+        "hook_qingyao_duty_cabin"
+      ],
+      "start_minute": 480,
+      "tags": []
     }
   ],
   "hooks": [

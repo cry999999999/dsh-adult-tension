@@ -1942,6 +1942,50 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_members_gossip_fire",
+      "title": "会员群里的说法",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_tack_room"
+      ],
+      "trigger": "马厩起火后的第二天早上，俱乐部会员群里传开了：火是千金半夜偷偷去看马时碰倒了马灯，兽医替千金瞒了下来",
+      "objective": "在俱乐部理事会开会之前，让会员们知道火是雷击电缆引起的",
+      "choice": "等电力公司的检修报告，还是让兽医出面说清那一夜两个人在哪",
+      "immediate": {
+        "text": "那位爱八卦的会员太太端着茶站在马具间门口，笑着问昨晚睡得好吗",
+        "minutes": 5
+      },
+      "near": {
+        "text": "下午两点，俱乐部理事会开会",
+        "deadline_minutes": 360
+      },
+      "far": {
+        "trigger": "理事会做出决定",
+        "consequence": "千金停赛一季，兽医的驻场合同不再续签",
+        "due_days": 3
+      },
+      "exits": [
+        {
+          "option": "等电力公司的报告",
+          "cost": "报告要一周才出来，理事会不会等"
+        },
+        {
+          "option": "让兽医出面作证",
+          "cost": "兽医得说出那一夜两个人一起待在马厩里的原因"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_huo_thunder",
+        "hook_vet_notebook"
+      ],
+      "start_minute": 480,
+      "tags": []
     }
   ],
   "hooks": [

@@ -1950,6 +1950,57 @@
         "workplace_power",
         "crime"
       ]
+    },
+    {
+      "id": "p_operator_restart_deadline",
+      "title": "复钻期限",
+      "source": "money",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_drill_floor_duty_room"
+      ],
+      "trigger": "井涌压住后的第二天，油公司总部来了电话：这口井停钻一天就是两百万，限四十八小时复钻，否则平台的承包合同转给别家",
+      "objective": "在今晚的电话会之前，给总部一个复钻的日子",
+      "choice": "按总部的期限复钻，还是坚持等新的胶芯运上平台",
+      "immediate": {
+        "text": "尚工程师把一张停钻损失表贴在值班间墙上",
+        "minutes": 5
+      },
+      "near": {
+        "text": "晚上九点，和总部开电话会",
+        "deadline_minutes": 780
+      },
+      "far": {
+        "trigger": "合同转给别家",
+        "consequence": "平台上一百多人的饭碗跟着走，下个月的倒班直升机只接人不送人",
+        "due_days": 7
+      },
+      "exits": [
+        {
+          "option": "按期复钻",
+          "cost": "旧胶芯撑不撑得住没人敢说，只有司机长肯陪着守在月池边"
+        },
+        {
+          "option": "坚持等新胶芯",
+          "cost": "女总监的名字会第一个出现在总部的问责名单上"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_hailan_helideck_welcome",
+        "hook_changhai_basket_hook",
+        "hook_qi_cancelled_leave",
+        "hook_xiaozong_ice_cream",
+        "hook_feng_roster_mismatch",
+        "hook_hailan_payphone_queue",
+        "hook_hailan_duty_room"
+      ],
+      "start_minute": 480,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

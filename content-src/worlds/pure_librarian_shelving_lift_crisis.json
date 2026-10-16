@@ -1942,6 +1942,52 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_restoration_budget_cut",
+      "title": "挪走的修复经费",
+      "source": "money",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_restoration_studio"
+      ],
+      "trigger": "雷雨过去第二天，财务处送来通知：修中庭的吊笼要花六十万，今年古籍修复的经费先挪过去，修复室下半年的宣纸和浆糊都没了着落",
+      "objective": "在馆务会定下挪用之前，替修复室把这笔钱保下来",
+      "choice": "去求老教授追加捐款，还是把吊笼故障的责任写清楚，让保险公司来赔",
+      "immediate": {
+        "text": "书库员小杨把通知贴在修复室门上，修复技师看了一眼没说话",
+        "minutes": 5
+      },
+      "near": {
+        "text": "下午三点，馆务会",
+        "deadline_minutes": 360
+      },
+      "far": {
+        "trigger": "经费挪走",
+        "consequence": "修到一半的那部明刻本只能锁进柜子，那本借了三年的诗集也要调去别馆",
+        "due_days": 10
+      },
+      "exits": [
+        {
+          "option": "求老教授追加捐款",
+          "cost": "老教授要管理员每周去家里替老人整理藏书"
+        },
+        {
+          "option": "写清楚吊笼故障的责任",
+          "cost": "报告里要写明那一夜两个人为什么还在书库里"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_su_glasses",
+        "hook_su_poem_margin",
+        "hook_restorer_paste",
+        "hook_restorer_tea"
+      ],
+      "start_minute": 540,
+      "tags": []
     }
   ],
   "hooks": [

@@ -2095,6 +2095,56 @@
    ],
    "title": "国防安全监察官按下应急爆破卸压倒计时",
    "trigger": "特派监察官认定风洞已无法挽回，在地堡按开遥控爆破电掣，启动了三分钟彻底引爆爆破片炸毁喷管弃洞的倒计时。"
+  },
+  {
+   "choice": "抢修三天就重吹，还是照实说喷管要换、至少等一个月",
+   "exits": [
+    {
+     "cost": "喷管带伤再吹一次，值班长得陪着守一整夜",
+     "option": "三天后重吹"
+    },
+    {
+     "cost": "楚工要女总师把下一个课题让给电弧加热段",
+     "option": "请楚工出面跟甲方解释"
+    }
+   ],
+   "far": {
+    "consequence": "基地今年的经费缺一大块，年轻人的补贴和老职工的取暖费都要砍",
+    "due_days": 7,
+    "trigger": "尾款作废"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_ruoxi_enamel_mug",
+    "hook_changkong_bicycle",
+    "hook_cheng_faded_slogan",
+    "hook_yue_mountain_road",
+    "hook_ruoxi_bunker_stars",
+    "hook_ruoxi_bunker_door"
+   ],
+   "id": "p_client_final_payment",
+   "immediate": {
+    "minutes": 5,
+    "text": "甲方经理把合同摊在值班室桌上，手指点着违约条款"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_bunker_duty_room"
+   ],
+   "near": {
+    "deadline_minutes": 720,
+    "text": "晚上八点，甲方经理的车出山"
+   },
+   "objective": "在甲方经理今晚出山之前，定下重吹的日子",
+   "source": "money",
+   "start_minute": 480,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "三千万尾款",
+   "trigger": "喷管出事后第二天上午，甲方的项目经理坐着越野车进了山沟：十马赫那一车数据作废了，合同上写着，下周再交不出数据，三千万的尾款就不付"
   }
  ],
  "region": "喷管喉道两千度极热微米级调节腔狭窄死角",

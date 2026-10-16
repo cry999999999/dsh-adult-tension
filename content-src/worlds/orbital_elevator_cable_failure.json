@@ -1951,6 +1951,53 @@
         "disaster",
         "crime"
       ]
+    },
+    {
+      "id": "p_newsfeed_footage",
+      "title": "新闻台的画面",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_pressurized_habitat_pod"
+      ],
+      "trigger": "断缆事故后第二天，地面的新闻台播出一段画面：天梯顶端的机库倾斜失重，播报员说防卫军隐瞒了袭击，一千万张船票的预约一夜退了一半",
+      "objective": "在闻大校对外发布声明之前，决定那段失重录像怎么解释",
+      "choice": "公开录像的全部内容，还是只说是一次例行演练",
+      "immediate": {
+        "text": "阿萝把平板递进生活舱，评论区里有人认出了上尉的脸",
+        "minutes": 5
+      },
+      "near": {
+        "text": "中午十二点，闻大校发布声明",
+        "deadline_minutes": 240
+      },
+      "far": {
+        "trigger": "声明发出",
+        "consequence": "天梯停运整顿，上尉的突击队调回地面待命",
+        "due_days": 5
+      },
+      "exits": [
+        {
+          "option": "公开全部录像",
+          "cost": "录像里有机库失重时两个人抱在一起的那一段"
+        },
+        {
+          "option": "说成例行演练",
+          "cost": "上尉要在镜头前撒一次谎，以后每个记者都会追着问"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_shang_visor_knock",
+        "hook_smith_graphite_gift",
+        "hook_xiaoyuan_float_pen",
+        "hook_lengxuan_oximeter_clip",
+        "hook_lengxuan_habitat_hatch"
+      ],
+      "start_minute": 480,
+      "tags": []
     }
   ],
   "hooks": [

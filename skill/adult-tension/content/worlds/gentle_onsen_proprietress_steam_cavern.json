@@ -2080,6 +2080,51 @@
    ],
    "title": "露天风吕客人未撤",
    "trigger": "地震把热水从露天风吕的地底下顶了上来，还有客人没撤出去，外面的人一边疏散一边挖出水口，旅馆的铜铃响个不停。"
+  },
+  {
+   "choice": "让工程师照实写泉道塌了一半，还是求工程师把话写得宽一点",
+   "exits": [
+    {
+     "cost": "旅馆至少停业半年，母亲留下的老客人会一个个走掉",
+     "option": "照实写"
+    },
+    {
+     "cost": "报告上签的是工程师的名字，往后出一点事都算在工程师头上",
+     "option": "求工程师把话写宽一点"
+    }
+   ],
+   "far": {
+    "consequence": "百年旅馆这个旺季没有露天风吕，少老板娘接手的第三年就要关门",
+    "due_days": 7,
+    "trigger": "审查会定下停业"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_ayaka_amazake",
+    "hook_ayaka_annex_door",
+    "hook_engineer_yukata_sketch"
+   ],
+   "id": "p_prefecture_closure",
+   "immediate": {
+    "minutes": 5,
+    "text": "田中在离屋门口鞠了一躬，把通知放在榻榻米上"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_proprietress_annex"
+   ],
+   "near": {
+    "deadline_minutes": 2880,
+    "text": "周六上午，县厅开审查会"
+   },
+   "objective": "在县厅周六的审查会之前，让工程师的报告写出能重开的结论",
+   "source": "institution",
+   "start_minute": 480,
+   "tags": [],
+   "title": "县厅的停业通知",
+   "trigger": "地震过后第二天，县厅的田中送来一份通知：后山溶洞列入危险区，露天风吕停业，要等地热工程师的勘察报告签了字才能重开"
   }
  ],
  "region": "露天风吕后山挑高十米天然钟乳石引水溶洞与引流暗渠闸槽",

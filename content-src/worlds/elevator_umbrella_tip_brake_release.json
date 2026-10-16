@@ -2011,6 +2011,53 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_landlord_raises_rent",
+      "title": "房东的电话",
+      "source": "money",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_shared_apartment"
+      ],
+      "trigger": "台风过后第二天上午，房东在业主群里看到电梯困人的新闻，打来电话：这套房年底要卖，两人月底前搬走，除非每月多付两千",
+      "objective": "在房东下午带中介来看房之前，决定这间合租屋还住不住",
+      "choice": "一起多付房租留下，还是趁这次各自搬走",
+      "immediate": {
+        "text": "房东的语音一条接一条，冰箱上的值日表被门缝的风吹得哗哗响",
+        "minutes": 5
+      },
+      "near": {
+        "text": "下午三点，房东带中介来看房",
+        "deadline_minutes": 360
+      },
+      "far": {
+        "trigger": "到了月底",
+        "consequence": "合租三年的屋子退掉，冰箱上那张值日表也得撕下来",
+        "due_days": 14
+      },
+      "exits": [
+        {
+          "option": "一起多付房租",
+          "cost": "两人的存款都得动，年底回家的机票就买不起了"
+        },
+        {
+          "option": "请物业的赵主任拿电梯赔偿抵房租",
+          "cost": "赵主任要两人在业主大会上替物业说话"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_wanqing_duty_chart",
+        "hook_wanqing_cilantro",
+        "hook_chen_water_bottle",
+        "hook_chen_umbrella",
+        "hook_wanqing_apartment_door"
+      ],
+      "start_minute": 540,
+      "tags": []
     }
   ],
   "hooks": [

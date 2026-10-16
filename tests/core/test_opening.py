@@ -161,6 +161,14 @@ class RandomSeedTest(unittest.TestCase):
             seen.append(result["signature"])
             history.insert(0, result)
 
+    def test_power_structures_rotate_through_the_last_three(self):
+        def result(structure, n):
+            return {"signature": n, "power_structure": structure, "identity_id": n, "combo_id": n, "hook_kind": "approach"}
+
+        history = [result("equal", 1), result("npc_high", 2), result("player_high", 3)]
+        self.assertEqual(opening.penalty(result("switchable", 4), history), 0)
+        self.assertGreater(opening.penalty(result("player_high", 5), history), 0)
+
     def test_candidates_exhausted_accepts_a_repeat(self):
         conditions = opening.normalize_conditions(
             {"mode": "daily", "locks": {"world_id": WORLD, "combo_id": "combo_tower_night", "activity_id": "a_supper", "hook_id": "h_thermos"}}

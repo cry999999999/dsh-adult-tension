@@ -2118,6 +2118,53 @@
    ],
    "title": "货主的索赔函",
    "trigger": "风球除下的第二天早上，郑襄理把一封索赔函放在船东套房的茶几上：货损三千万，要霍家先认，再去谈保险"
+  },
+  {
+   "choice": "公开说那一夜是在船上验收，还是去求周刊撤稿",
+   "exits": [
+    {
+     "cost": "就得解释为什么验收要验到凌晨",
+     "option": "公开说明"
+    },
+    {
+     "cost": "周刊老板要千金接受一次独家专访",
+     "option": "请周刊撤稿"
+    }
+   ],
+   "far": {
+    "consequence": "千金接班的事再拖一年，水手长被调去跑最远的航线",
+    "due_days": 5,
+    "trigger": "股东们定下接班人选"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_mingchu_winter_melon",
+    "hook_mingchu_star_ferry",
+    "hook_mingchu_gantry_night",
+    "hook_yuan_rope_knot",
+    "hook_mingchu_suite_door"
+   ],
+   "id": "p_tabloid_photo",
+   "immediate": {
+    "minutes": 5,
+    "text": "阿宝把周刊摊在套房桌上，家族的群组已经炸了"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_owner_suite_cabin"
+   ],
+   "near": {
+    "deadline_minutes": 720,
+    "text": "明早八点，股东早餐会"
+   },
+   "objective": "在明早股东早餐会之前，把照片的说法讲圆",
+   "source": "rumor",
+   "start_minute": 1200,
+   "tags": [],
+   "title": "周刊的照片",
+   "trigger": "风球过后第三天晚上，八卦周刊登了一张照片：船王千金凌晨从浮坞里被抬出来，身上裹着水手长的外套，标题问船东为何深夜留在船上"
   }
  ],
  "region": "香港青衣霍家船厂浮船坞里进坞大修的三万吨级散货轮二十米深主货舱底板区",

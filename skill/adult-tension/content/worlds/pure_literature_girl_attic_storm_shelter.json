@@ -2079,6 +2079,51 @@
    ],
    "title": "楼下保安找人难上",
    "trigger": "楼下还有几个留在旧楼里赶论文的人，保安在楼梯间里一边喊一边找，副校长的人在楼下拦着不让再上人。"
+  },
+  {
+   "choice": "用博士生的测绘数据证明旧楼还能修，还是先把古籍搬走",
+   "exits": [
+    {
+     "cost": "数据也记着书架台风前就没锁刹车，管刹车的是图书厅",
+     "option": "拿出测绘数据"
+    },
+    {
+     "cost": "就等于认了这栋楼该拆",
+     "option": "先搬古籍"
+    }
+   ],
+   "far": {
+    "consequence": "百年旧楼拆平，没编完的古籍目录和一学期的测绘一起作废",
+    "due_days": 5,
+    "trigger": "推土机进场"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_mao_poem_offer",
+    "hook_mao_apartment_door",
+    "hook_doctoral_profile_sketch"
+   ],
+   "id": "p_demolition_notice",
+   "immediate": {
+    "minutes": 5,
+    "text": "一楼的邻居敲门，说总务科长打了三次电话找人"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_mao_old_apartment"
+   ],
+   "near": {
+    "deadline_minutes": 1440,
+    "text": "明天上午，校务会讨论旧楼"
+   },
+   "objective": "在下周一推土机进场之前，让学校改主意",
+   "source": "institution",
+   "start_minute": 540,
+   "tags": [],
+   "title": "拆楼告示",
+   "trigger": "台风过后第二天，总务科长在旧楼门口贴了告示：顶层图书厅定为危房，下周一开拆，楼里的藏书三天内搬空"
   }
  ],
  "region": "旧教学楼顶层大开间四面落地木格窗图书大厅与逃生移门",

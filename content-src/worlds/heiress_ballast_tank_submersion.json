@@ -2134,6 +2134,50 @@
         "disaster",
         "bodily_harm"
       ]
+    },
+    {
+      "id": "p_uncle_takes_the_board",
+      "title": "二叔的董事会",
+      "source": "person",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "upper_lifeboat_launch_platform"
+      ],
+      "trigger": "破晓时分，救生艇被海警船拖着往港口走，卫星电话接通了家族总部：千金失踪的这一夜，二叔已经在董事会上提议由自己代管航运集团",
+      "objective": "在船靠岸、二叔的人接走千金之前，想好上岸后第一句话说什么",
+      "choice": "当众说出绑匪是二叔请来的，还是先装作什么都不知道、回去再算账",
+      "immediate": {
+        "text": "电话那头是秘书压低的声音，说二叔的车已经在码头等着",
+        "minutes": 5
+      },
+      "near": {
+        "text": "早上七点，船靠岸",
+        "deadline_minutes": 90
+      },
+      "far": {
+        "trigger": "董事会表决代管人",
+        "consequence": "航运集团归二叔代管，跟着千金逃出来的人也会被二叔一个个记下",
+        "due_days": 2
+      },
+      "exits": [
+        {
+          "option": "当众说出",
+          "cost": "没有证据，二叔会反说千金受了惊吓、神志不清"
+        },
+        {
+          "option": "先装不知道",
+          "cost": "上岸要跟二叔握手道谢，还要坐进二叔安排的车"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "h_mingyue_dawn_blanket_triumph_vow",
+        "h_mingyue_mouth_air_request"
+      ],
+      "start_minute": 330,
+      "tags": []
     }
   ],
   "hooks": [

@@ -2186,6 +2186,51 @@
    ],
    "title": "双人神经漫游同调超脑载荷脑细胞烧蚀死线",
    "trigger": "为了在断电状态下手动操纵姿态喷嘴，青年与少校神经接口强行直连，庞大战术数据流正以每秒四百兆兆次脉冲冲击青年大脑，十分钟内若不解除同调脑突触将被高压电流彻底烧蚀脑死亡。"
+  },
+  {
+   "choice": "少校出面说直连是自己下的命令，还是让损管兵自己担下",
+   "exits": [
+    {
+     "cost": "少校要当着整个大队承认在舱里破了规矩",
+     "option": "少校出面担下"
+    },
+    {
+     "cost": "记录里有舱里那几个小时的每一句话",
+     "option": "交出黑匣子的完整记录"
+    }
+   ],
+   "far": {
+    "consequence": "损管兵刑期加倍发配矿星，少校的王牌编号被收回",
+    "due_days": 7,
+    "trigger": "军事法庭开庭"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "h_lin_iron_cross_pin_whisper"
+   ],
+   "id": "p_court_martial_recorder",
+   "immediate": {
+    "minutes": 10,
+    "text": "调查官带着两名宪兵站在救生舱外，手里拿着拆卸工具"
+   },
+   "leverage": null,
+   "location_ids": [
+    "wreckage_cockpit_central_capsule"
+   ],
+   "near": {
+    "deadline_minutes": 420,
+    "text": "下午四点，黑匣子封存送审"
+   },
+   "objective": "在黑匣子送到军法处之前，决定舱里那几个小时怎么交代",
+   "source": "institution",
+   "start_minute": 540,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "军法处要黑匣子",
+   "trigger": "被拖回母舰的第二天，军法处的调查官来到机库，要拆下救生舱的黑匣子：戴罪的损管兵擅自和少校神经直连，按条例要上军事法庭"
   }
  ],
  "region": "拉格朗日L2点同步轨道残骸带漂流之破损重型突击机甲狭小密封双人逃生驾驶舱",

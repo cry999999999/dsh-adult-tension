@@ -2078,6 +2078,51 @@
         "disaster",
         "bodily_harm"
       ]
+    },
+    {
+      "id": "p_court_martial_recorder",
+      "title": "军法处要黑匣子",
+      "source": "institution",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "wreckage_cockpit_central_capsule"
+      ],
+      "trigger": "被拖回母舰的第二天，军法处的调查官来到机库，要拆下救生舱的黑匣子：戴罪的损管兵擅自和少校神经直连，按条例要上军事法庭",
+      "objective": "在黑匣子送到军法处之前，决定舱里那几个小时怎么交代",
+      "choice": "少校出面说直连是自己下的命令，还是让损管兵自己担下",
+      "immediate": {
+        "text": "调查官带着两名宪兵站在救生舱外，手里拿着拆卸工具",
+        "minutes": 10
+      },
+      "near": {
+        "text": "下午四点，黑匣子封存送审",
+        "deadline_minutes": 420
+      },
+      "far": {
+        "trigger": "军事法庭开庭",
+        "consequence": "损管兵刑期加倍发配矿星，少校的王牌编号被收回",
+        "due_days": 7
+      },
+      "exits": [
+        {
+          "option": "少校出面担下",
+          "cost": "少校要当着整个大队承认在舱里破了规矩"
+        },
+        {
+          "option": "交出黑匣子的完整记录",
+          "cost": "记录里有舱里那几个小时的每一句话"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "h_lin_iron_cross_pin_whisper"
+      ],
+      "start_minute": 540,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

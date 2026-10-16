@@ -4,7 +4,7 @@
  "focus": "转折候选、同日上限、转折落地",
  "steps": [
   {
-   "say": "开一局，要有压力的",
+   "say": "开一局，要有压力的，我玩男的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

@@ -6,7 +6,7 @@
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，雪夜战壕：女少校的最后一发，日常",
+   "say": "开一局，雪夜战壕：女少校的最后一发，日常，我玩男的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

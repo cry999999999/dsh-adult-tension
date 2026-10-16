@@ -6,7 +6,7 @@
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，圣山雪线圣女·绝顶露天残破神殿，要有压力的",
+   "say": "开一局，圣山雪线圣女·绝顶露天残破神殿，要有压力的，我玩男的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

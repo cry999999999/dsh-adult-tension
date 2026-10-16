@@ -353,13 +353,12 @@ def new_game(ctx, payload):
 
     def handler(conn, now):
         seed = payload["seed"]
-        restored = False
+        restored = None
         if payload["replay"]:
-            stored = repo.conditions_for_seed(conn, seed)
-            if stored is not None:
+            restored = repo.opening_for_seed(conn, seed)
+            if restored is not None:
                 conditions.clear()
-                conditions.update(stored)
-                restored = True
+                conditions.update(restored["conditions"])
             elif payload["mode"] is None:
                 raise AppError(
                     NOT_FOUND,
@@ -381,6 +380,11 @@ def new_game(ctx, payload):
             pack, planned = _plan_across(ctx, worlds, seed, conditions)
         content = _content_snapshot(ctx, pack)
         state, opening_payload = opening.instantiate(pack, seed, conditions, planned, content["content_version"])
+        # Updated content can open the same seed differently; the footer, which
+        # the model copies as it is, tells the player (DESIGN_DECISIONS D10).
+        changed = restored is not None and restored["signature"] != planned[0]["signature"]
+        if changed:
+            opening_payload["footer"] += "（内容已更新，和之前的 %d 号开局不同）" % seed
         state["session_id"] = new_session_id(conn)
         prefs = payload["preferences"]
         for key in ("inner_view", "assistant", "offscreen_simulation", "person"):
@@ -395,7 +399,8 @@ def new_game(ctx, payload):
             "revision": state["revision"],
             "turn": state["turn"],
             "seed": seed,
-            "conditions_restored": restored,
+            "conditions_restored": restored is not None,
+            "replay_changed": changed,
             "opening": opening_payload,
             "context": CX.full(state, content, {"current_slot": None, "turns_since_save": 0}),
             "commit_template": CX.commit_template(state),

@@ -7,8 +7,15 @@ Sources are JSON. Era base packs (content-src/bases/) are merged into the
 worlds that `extends` them at compile time; the runtime only sees complete
 packs. Output is deterministic (sorted keys, LF, trailing newline), so the
 same sources always produce byte-identical files.
+
+The same content version and seed must give the same opening (DESIGN_DECISIONS
+D10). content-src/content.lock.json pairs the version with a fingerprint of
+the compiled content and of a fixed sample of openings, so a change to either
+the content or the opening algorithm stops the compile until content.json
+gets a new content_version.
 """
 
+import hashlib
 import json
 import os
 import sys
@@ -20,11 +27,12 @@ _runtime.use_runtime()
 
 from adult_tension import schema as S  # noqa: E402
 from adult_tension.domain import structure as ST  # noqa: E402
-from adult_tension.domain import worldpack  # noqa: E402
+from adult_tension.domain import opening, worldpack  # noqa: E402
 from adult_tension.errors import AppError  # noqa: E402
 from adult_tension.jsonio import decode_bytes, loads_strict, plain  # noqa: E402
 
 SRC = os.path.join(_runtime.REPO_ROOT, "content-src")
+LOCK = os.path.join(SRC, "content.lock.json")
 OUT = os.path.join(_runtime.SKILL_ROOT, "content")
 
 F = S.Field
@@ -85,6 +93,53 @@ def merge(base, world):
         else:
             out[key] = value
     return out
+
+
+def fingerprint(files):
+    """The compiled content, without its version, and the openings it gives
+    for a fixed seed in each mode for each player gender."""
+    digest = hashlib.sha256()
+    for rel in sorted(files):
+        data = files[rel]
+        if rel == "index.json":
+            index = json.loads(data.decode("utf-8"))
+            index.pop("content_version")
+            data = dump(index)
+        digest.update(rel.encode("utf-8") + b"\0" + data + b"\0")
+    for rel in sorted(files):
+        if not rel.startswith("worlds/"):
+            continue
+        pack = json.loads(files[rel].decode("utf-8"))
+        for mode in ("daily", "pressure"):
+            for gender in (None, "male", "female"):
+                conditions = opening.normalize_conditions({"mode": mode, "player": {"gender": gender}})
+                try:
+                    _state, payload = opening.build(pack, 7, conditions, "")
+                except AppError as err:
+                    payload = {"error": err.code}
+                digest.update(json.dumps(payload, ensure_ascii=False, sort_keys=True).encode("utf-8") + b"\0")
+    return digest.hexdigest()
+
+
+def _next_version(version):
+    head, _, last = version.rpartition(".")
+    return "%s.%d" % (head, int(last) + 1) if head and last.isdigit() else version + ".1"
+
+
+def version_check(version, files):
+    """(lock to write or None, problem or None)."""
+    current = fingerprint(files)
+    lock = read_json(LOCK) if os.path.exists(LOCK) else None
+    if lock and lock["content_version"] == version:
+        if lock["fingerprint"] == current:
+            return None, None
+        return None, {
+            "world": "content.json",
+            "path": "$.content_version",
+            "reason": "内容或开局算法变了，同一种子会开出不同的局，但内容版本还是 %s" % version,
+            "hint": "在 content-src/content.json 把 content_version 改成新的版本号（例如 %s → %s）再编译" % (version, _next_version(version)),
+        }
+    return {"content_version": version, "fingerprint": current}, None
 
 
 def load_sources():
@@ -186,6 +241,10 @@ def main(argv):
             sys.stdout.buffer.write((line + "\n").encode("utf-8"))
         sys.stdout.buffer.write(("%d problem(s); nothing written\n" % len(problems)).encode("utf-8"))
         return 1
+    lock, problem = version_check(json.loads(files["index.json"].decode("utf-8"))["content_version"], files)
+    if problem:
+        sys.stdout.buffer.write(("[%s] %s: %s —— %s\nnothing written\n" % (problem["world"], problem["path"], problem["reason"], problem["hint"])).encode("utf-8"))
+        return 1
     stale = []
     existing = set()
     for base, _dirs, names in os.walk(OUT):
@@ -205,6 +264,12 @@ def main(argv):
         stale.append(rel + " (stale)")
         if "--check" not in argv:
             os.remove(os.path.join(OUT, rel))
+    if lock:
+        # a new content_version: pair it with what it now gives
+        stale.append("content-src/content.lock.json")
+        if "--check" not in argv:
+            with open(LOCK, "wb") as handle:
+                handle.write(dump(lock))
     if "--check" in argv:
         print("stale: " + ", ".join(stale) if stale else "up to date")
         return 1 if stale else 0

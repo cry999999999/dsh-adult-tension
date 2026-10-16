@@ -6,7 +6,7 @@
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，名门大学理事长·数据中心灭火绝境，要有压力的",
+   "say": "开一局，名门大学理事长·数据中心灭火绝境，要有压力的，我玩男的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

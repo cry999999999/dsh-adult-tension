@@ -6,7 +6,7 @@
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，旧校舍地窖：会长的发带，要有压力的",
+   "say": "开一局，旧校舍地窖：会长的发带，要有压力的，我玩女的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

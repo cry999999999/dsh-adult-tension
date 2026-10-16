@@ -17,6 +17,7 @@ from ..domain import facts as FA
 from ..domain import simulation
 from ..domain import state as SS
 from ..domain import structure as ST
+from ..domain.turn import chapter_start
 
 BRIEF_LIMIT = 6 * 1024
 FULL_LIMIT = 20 * 1024
@@ -364,7 +365,9 @@ def _template(state, body):
     # what the engine asks of the first turn of the next record (the requests
     # a time skip raises come with the context the skip returns)
     if state["requests"].get("chapter_summary"):
-        turn["chapter_summary"] = "<上一章到上一回合为止，第三方视角，≤300 字>"
+        # the chapter closes where the request came, not where the model
+        # gets round to writing it
+        turn["chapter_summary"] = "<第 %d–%d 回合的摘要，不含之后的事，第三方视角，≤300 字>" % (chapter_start(state), state["turn"])
     if state["requests"].get("prologue"):
         turn["prologue"] = "<完整上下文 prologue_merge 合并成的前情，≤300 字>"
     return {

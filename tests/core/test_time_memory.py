@@ -247,6 +247,8 @@ class ChapterTest(unittest.TestCase):
         err = rejected(state, commit("continue", [act(a)]))
         self.assertIn("章节摘要", reasons(err))
         self.assertIn("第 1–3 回合", " | ".join(d["hint"] or "" for d in err.details))
+        # the template names the same range, however many turns the model keeps back first
+        self.assertIn("第 1–3 回合", CX.commit_template(state)["turns"][0]["chapter_summary"])
 
     def test_every_twenty_turns_a_chapter_archives_its_turns_and_ended_events(self):
         state, _ = new_state("pressure", seed=11)

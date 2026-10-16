@@ -6,7 +6,7 @@
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，水电站大坝·压力钢管拦污栅卡死，日常",
+   "say": "开一局，水电站大坝·压力钢管拦污栅卡死，日常，我玩男的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

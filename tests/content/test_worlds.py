@@ -170,6 +170,25 @@ class CompilerTest(unittest.TestCase):
         for rel, data in first.items():
             with open(os.path.join(compile_content.OUT, rel), "rb") as handle:
                 self.assertEqual(handle.read(), data, rel)
+        # and the version they carry is the one locked to what they give
+        version = json.loads(first["index.json"].decode("utf-8"))["content_version"]
+        self.assertEqual(compile_content.version_check(version, first), (None, None))
+
+    def test_changed_content_needs_a_new_version(self):
+        # DESIGN_DECISIONS D10: same content version + same seed -> same opening
+        files, _ = compile_content.compile_all()
+        version = json.loads(files["index.json"].decode("utf-8"))["content_version"]
+        rel = "worlds/harbor_night_shift.json"
+        pack = json.loads(files[rel].decode("utf-8"))
+        pack["character_templates"][0]["appearance_options"].reverse()
+        files[rel] = compile_content.dump(pack)
+        lock, problem = compile_content.version_check(version, files)
+        self.assertIsNone(lock)
+        self.assertEqual(problem["path"], "$.content_version")
+        self.assertIn(version, problem["hint"])
+        lock, problem = compile_content.version_check(version + ".9", files)
+        self.assertIsNone(problem)
+        self.assertEqual(lock["content_version"], version + ".9")
 
 
 class ReverseVerificationTest(unittest.TestCase):

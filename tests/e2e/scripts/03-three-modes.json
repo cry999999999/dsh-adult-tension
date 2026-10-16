@@ -4,7 +4,7 @@
  "focus": "三档判定、锁定措辞、最小因果桥",
  "steps": [
   {
-   "say": "开一局，日常",
+   "say": "开一局，日常，我玩女的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

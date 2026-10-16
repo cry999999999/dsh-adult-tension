@@ -6,7 +6,7 @@
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，大型LNG运输船·超低温液货舱安全阀冰堵，要有压力的",
+   "say": "开一局，大型LNG运输船·超低温液货舱安全阀冰堵，要有压力的，我玩女的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

@@ -6,7 +6,7 @@
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，铁道惊魂·高原隧道锅炉超压，日常",
+   "say": "开一局，铁道惊魂·高原隧道锅炉超压，日常，我玩男的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

@@ -14,7 +14,9 @@ import unittest
 import _bootstrap  # noqa: F401
 from adult_tension.application import service
 from adult_tension.application.fake_narrator import FakeNarrator
+from adult_tension.domain import simulation
 from adult_tension.domain import state as SS
+from adult_tension.domain import structure as ST
 from adult_tension.domain.text import full_name
 from adult_tension.persistence import repo
 from adult_tension.projections import context as CX
@@ -99,6 +101,12 @@ class Game:
 
     def commit(self, ops):
         info = repo.load_session(self.ctx.db(), self.sid)
+        # Crossing midnight asks for a beat from every major who is away, as a
+        # model would read it off the preview (RUNTIME_PROTOCOL 6.2).
+        preview = simulation.preview(info["state"], info["content"]["world"], {"minutes": ST.DEFAULT_ADVANCE_MINUTES})
+        beats = [{"op": "offscreen_beat", "npc_id": p["npc_id"], "summary": "在别处忙自己的事", "operations": []} for p in preview["required_beats"]]
+        if beats:
+            ops = [{"op": "advance_time", "minutes": ST.DEFAULT_ADVANCE_MINUTES}] + beats + ops
         body = {"action_mode": "continue", "player_input": "……", "operations": ops, "content_tags": [], "summary": "有人来了", "open_action": "场面停住"}
         if info["state"]["requests"].get("chapter_summary"):
             # A world that opens just before midnight crosses the day early.

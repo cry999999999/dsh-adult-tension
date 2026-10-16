@@ -431,6 +431,15 @@ class NewGameCommandTest(unittest.TestCase):
             again = service.new_game(ctx, {"request_id": ids(), "seed": 4242, "replay": True, "include_drafts": True})
             self.assertTrue(again["conditions_restored"])
             self.assertEqual(again["opening"]["signature"], first["opening"]["signature"])
+            self.assertFalse(again["replay_changed"])
+            self.assertNotIn("内容已更新", again["opening"]["footer"])
+            # content updated since: the same seed opens differently, and the footer says so
+            conn = ctx.db()
+            with conn:
+                conn.execute("UPDATE opening_history SET signature = 'before the update' WHERE seed = 4242")
+            changed = service.new_game(ctx, {"request_id": ids(), "seed": 4242, "replay": True, "include_drafts": True})
+            self.assertTrue(changed["replay_changed"])
+            self.assertTrue(changed["opening"]["footer"].endswith("（内容已更新，和之前的 4242 号开局不同）"))
 
     def test_unreleased_worlds_need_include_drafts(self):
         # CONTENT_BIBLE 7: a world under review opens only with --include-drafts (or the

@@ -6,7 +6,7 @@
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，冷艳原神声优·漫展VIP更衣室金属拉链死锁，日常",
+   "say": "开一局，冷艳原神声优·漫展VIP更衣室金属拉链死锁，日常，我玩男的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

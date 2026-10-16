@@ -6,7 +6,7 @@
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，雷暴解剖中心：清冷女法医，日常",
+   "say": "开一局，雷暴解剖中心：清冷女法医，日常，我玩男的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

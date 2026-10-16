@@ -6,7 +6,7 @@
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，废土末日·避难所气密门，日常",
+   "say": "开一局，废土末日·避难所气密门，日常，我玩男的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

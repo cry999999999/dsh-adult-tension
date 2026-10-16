@@ -47,7 +47,7 @@ def commit_fields():
         "summary": F(S.Str(1, 120), desc="本回合发生了什么，第三方视角，≤120 字"),
         "open_action": F(S.Str(1, 80), desc="回合停在哪里、谁在等谁，≤80 字"),
         "quotes": F(S.List(S.Str(1, 80), max_items=3), required=False, default=[], desc="≤3 条对后续有意义的原话，每条 ≤80 字"),
-        "chapter_summary": F(S.Nullable(S.Str(1, 300)), required=False, default=None, desc="上下文 requests.chapter_summary 为 true 时在记录的第一项必填：上一章（到上一回合为止）的摘要，≤300 字；没有要求时不写"),
+        "chapter_summary": F(S.Nullable(S.Str(1, 300)), required=False, default=None, desc="上下文 requests.chapter_summary 为 true 时在记录的第一项必填：上一章的摘要（模板写明回合范围：到上一次记录的最后一回合为止，不含这次记录的回合），≤300 字；没有要求时不写"),
         "prologue": F(S.Nullable(S.Str(1, 300)), required=False, default=None, desc="上下文 requests.prologue 为 true 时在记录的第一项必填：把完整上下文 prologue_merge 里的旧前情与最早几章合并成一段前情，≤300 字；没有要求时不写"),
         "replaces_turn": F(S.Nullable(S.Int(1, 1000000)), required=False, default=None, desc="“刚才不算，改成……”：填当前最后一个回合的回合号，只能写在记录的第一项，引擎在同一事务里撤销它再应用这次记录"),
     }

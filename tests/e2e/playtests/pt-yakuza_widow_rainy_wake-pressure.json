@@ -6,7 +6,7 @@
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，雨夜守灵：少夫人与黑金印，要有压力的",
+   "say": "开一局，雨夜守灵：少夫人与黑金印，要有压力的，我玩女的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

@@ -547,6 +547,7 @@ def opening_history(conn, limit=HISTORY_KEEP):
     return out
 
 
-def conditions_for_seed(conn, seed):
-    row = conn.execute("SELECT conditions FROM opening_history WHERE seed=? ORDER BY id DESC LIMIT 1", (seed,)).fetchone()
-    return json.loads(row[0]) if row else None
+def opening_for_seed(conn, seed):
+    """The latest opening this machine made from `seed`: its conditions and signature."""
+    row = conn.execute("SELECT conditions, signature FROM opening_history WHERE seed=? ORDER BY id DESC LIMIT 1", (seed,)).fetchone()
+    return {"conditions": json.loads(row[0]), "signature": row[1]} if row else None

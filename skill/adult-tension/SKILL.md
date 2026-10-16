@@ -43,7 +43,7 @@ AT_JSON
 
 ## 开局
 
-1. 玩家没说日常还是压力：问一句“1 日常 / 2 有压力”。只有玩家说“随便”才用 `random`。定下后玩家没说自己的性别：再问“1 男 / 2 女”，写进 `player.gender`。读档永远不问。
+1. 玩家没说日常还是压力：问一句“1 日常 / 2 有压力”。只有玩家说“随便”才用 `random`。定下后玩家在本对话里没说过自己的性别：再问“1 男 / 2 女”，写进 `player.gender`。读档、重开 N 号不问。
 2. 本对话里已经开过局或读过档（看对话本身，不用查），且有没存的回合（上下文 `save.turns_since_save` > 0，或有攒着没记录的）：先问“存档后开局 / 直接开局 / 取消”。
 3. 玩家点名的世界或题材：名称或关键词放进 `world_query`，不用先查世界列表。`NO_MATCH` 带 `candidates`：列出候选的标题和一句话让玩家选，选定后用 `locks.world_id`。`NOT_FOUND`：给两个选择：最接近的世界，或自定义世界（按 `references/custom_world.md` 写，放进 `new-game` 的 `custom_world`）。
 4. 该问的都答了再调用 `new-game`（只答了一部分就再问其余的，不替玩家选）：`{"request_id", "mode": "daily|pressure|random", "world_query" 或 "locks": {"world_id"}, "excludes": {"content_tags", "world_ids"}, "player": {"gender", "age", "identity_hint", "name", "title"}, "npc_gender_preference"}`，只写玩家提到的部分（“不要职场”转成 `excludes` 的标签 ID；“女性 NPC 为主”是 `mostly_female`）。“重开 N 号”：`{"request_id", "seed": N, "replay": true}`。`NO_MATCH`：停下，如实说哪条做不到、可以放宽什么，由玩家选，不替玩家放宽或改开自定义世界。
@@ -64,10 +64,10 @@ AT_JSON
    - `attempt`：意图、尝试，以及**任何作用于 NPC 身体、意志、财物的行动**（即使用了结果句式）→ 把这些 NPC 写进 `acts_on`，并各附一条 `npc_response`：`refuse` 拒绝 / `negotiate` 协商 / `partial` 有限配合 / `surface` 表面配合（写 `true_intent`）/ `genuine` 真诚配合。不作用于 NPC 的尝试写 `acts_on: []`。
    - `continue`：空输入、“继续”、“……”、“你决定” → 场景推进，至少一个可观察的变化（NPC 行动、状态变化、新事实、有人来去）；玩家角色不说有意义的话、不移动、不同意任何事。
    - `wait`：玩家选择不动 → 给 NPC 行动空间。
-3. **正文先行，攒着记录**：普通回合直接写正文，不调用运行时。攒满 10 个回合，在正文之后用一次 `commit-turn` 记录（`turns` 每回合一项，按顺序，≤ 12 项）。先记录（攒下的连同这一回合）再按返回写正文的情况：时间会到达或越过最早的待办事件（`due_soon` 第一项；记录前正文不越过它）或跨过午夜；一次推进 ≥ 60 分钟；要 `roll`；快进、接受转折、存档、读档、状态、导出、暂停、边界、偏好设置之前；玩家说先到这、下次再玩。
+3. **正文先行，攒着记录**：普通回合直接写正文，不调用运行时。攒满 10 个回合，在正文之后用一次 `commit-turn` 记录（`turns` 每回合一项，按顺序，≤ 12 项）。先记录（攒下的连同这一回合）再按返回写正文的情况：时间会到达或越过最早的待办事件（`due_soon` 第一项，或攒着的回合里登记的；记录前正文不越过它）或跨过午夜；一次推进 ≥ 60 分钟；要 `roll`；快进、接受转折、存档、读档、状态、导出、暂停、边界、偏好设置之前；玩家说先到这、下次再玩。
 4. 照最近返回的 `commit_template` 写，每个回合复制一份 `turns` 里那一项（尖括号处写内容，`a|b` 选一个，用不上的操作删掉）；没有模板时照 `references/operations.md` 写。
    - `player_authorized: true` 只在玩家本人的话授权了玩家角色的移动、承诺、交易、同意、转折或设定修改时。
-   - 操作（字段见 `references/operations.md`）：`npc_response`、`npc_action`（重大的带 `significant: true`，看 `can_act`）、`npc_state`、`add_fact`、`relationship`、`advance_time`（默认 3 分钟）、`move`、`enter_scene`/`exit_scene`、`event_*`、`roll`、`player_update`、`reveal_fact`、`spread_rumor`、`set_voice`、`introduce_character`/`promote_character`（明确成年，名字取自 `name_pool`）、`intimacy_evidence`、`identity_update`、`npc_update`、`leverage_set`/`_release`、`offscreen_beat`、`twist_accept`。
+   - 操作：`npc_response`、`npc_action`（重大的带 `significant: true`，看 `can_act`）、`npc_state`、`add_fact`、`relationship`、`advance_time`（默认 3 分钟）、`move`、`enter_scene`/`exit_scene`、`event_*`、`roll`、`player_update`、`reveal_fact`、`spread_rumor`、`set_voice`、`introduce_character`/`promote_character`（明确成年，名字取自 `name_pool`）、`intimacy_evidence`、`identity_update`、`npc_update`、`leverage_set`/`_release`、`offscreen_beat`、`twist_accept`。
    - 正文里新写出、以后要用到的细节用 `add_fact` 记下；新点名的人即使不在场也要 `introduce_character`。开局写出的，在第一次记录里补上。
    - 上下文 `requests` 要求时在下次记录的第一项写 `chapter_summary`（≤ 300 字，第三方视角）、`prologue`（≤ 300 字，合并完整上下文的 `prologue_merge`）；没要求就不写。
 5. 先记录时，按 `context` 和 `turns` 末项的 `applied`、`resolved_events`、`simulation` 写正文：掷骰、到期、离屏移动与传播由运行时决定。

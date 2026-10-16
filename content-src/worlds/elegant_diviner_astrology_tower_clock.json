@@ -1947,6 +1947,51 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_stars_failed_rumor",
+      "title": "星象失灵",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_astrologer_tower_chamber"
+      ],
+      "trigger": "九星连珠那一夜过去，宫里传开了：大占星术士没能报出那场暴风雪，星象学一派要失宠了",
+      "objective": "在国王召见之前，想好新历法该署谁的名字",
+      "choice": "和天文学者一起署名新历法，还是独自去宫里替星象学辩护",
+      "immediate": {
+        "text": "侍从莉娜在塔楼门口传话，国王午后要见大占星术士",
+        "minutes": 5
+      },
+      "near": {
+        "text": "午后，国王在书房召见",
+        "deadline_minutes": 360
+      },
+      "far": {
+        "trigger": "国王的裁定",
+        "consequence": "星象学院撤去一半俸禄，大占星术士搬出这座塔楼",
+        "due_days": 3
+      },
+      "exits": [
+        {
+          "option": "一起署名新历法",
+          "cost": "宫廷里的老派会说大占星术士向天文学者低了头"
+        },
+        {
+          "option": "独自去宫里辩护",
+          "cost": "辩护时得解释为什么那一夜两个人在露台上待到天亮"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_eleanor_astrolabe_tip",
+        "hook_eleanor_tower_door",
+        "hook_astronomer_poem_note"
+      ],
+      "start_minute": 480,
+      "tags": []
     }
   ],
   "hooks": [

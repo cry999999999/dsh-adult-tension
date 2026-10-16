@@ -1947,6 +1947,53 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_consignor_claim",
+      "title": "委托人索赔",
+      "source": "money",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_auctioneer_preview_room"
+      ],
+      "trigger": "劫案过去第二天上午，委托那幅宋画的老藏家钱先生带着律师坐进预展室：画框在金库里被灭火气体蚀了一角，要拍卖行按估价的两倍赔",
+      "objective": "在秋拍图录付印之前，和钱先生谈出一个结果",
+      "choice": "照价赔，还是拿出金库那一夜的监控，证明画是在劫匪手里坏的",
+      "immediate": {
+        "text": "律师把一份索赔函推到拍卖师面前",
+        "minutes": 5
+      },
+      "near": {
+        "text": "下午五点，秋拍图录付印",
+        "deadline_minutes": 480
+      },
+      "far": {
+        "trigger": "索赔函递到法院",
+        "consequence": "秋拍开不了槌，首席拍卖师的位子要在董事会上换人",
+        "due_days": 10
+      },
+      "exits": [
+        {
+          "option": "调出金库那一夜的监控",
+          "cost": "监控也拍下了展柜后面那十几分钟"
+        },
+        {
+          "option": "答应钱先生的条件私了",
+          "cost": "秋拍压轴那一槌要让给钱先生的侄女来敲"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_lin_hoarse_voice",
+        "hook_lin_preview_door",
+        "hook_architect_old_catalog"
+      ],
+      "start_minute": 540,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

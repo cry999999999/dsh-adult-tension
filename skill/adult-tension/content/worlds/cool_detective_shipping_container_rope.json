@@ -2078,6 +2078,53 @@
    ],
    "title": "走私船员扑向吊机",
    "trigger": "货轮甲板上，走私船员还在跟登临组扭打，有人扑向吊机的控制台，想扳下放缆手柄把箱子连人一起扔进海里。"
+  },
+  {
+   "choice": "照实写是自己下令先救人，还是写成钢缆断得太快来不及",
+   "exits": [
+    {
+     "cost": "记录仪拍下了箱顶上两个人最后那十几分钟",
+     "option": "交出随身执法记录仪"
+    },
+    {
+     "cost": "老马得承认当时是自己没拦住登临组往箱顶爬",
+     "option": "请水手长老马作证"
+    }
+   ],
+   "far": {
+    "consequence": "这次远海追缉算失败，女警官的王牌名号和下个月的升职一起作废",
+    "due_days": 7,
+    "trigger": "督察组定性"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_qinghan_drill_offer",
+    "hook_qinghan_cabin_door",
+    "hook_engineer_sugar_note"
+   ],
+   "id": "p_inspection_team_cable",
+   "immediate": {
+    "minutes": 10,
+    "text": "报务员阿梅把电报送到舱门口，说督察组等着回电"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_officer_cabin"
+   ],
+   "near": {
+    "deadline_minutes": 240,
+    "text": "中午十二点，督察组的快艇靠舷"
+   },
+   "objective": "在督察组的快艇靠舷之前，把那一夜的登临记录补齐",
+   "source": "institution",
+   "start_minute": 480,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "督察组的电报",
+   "trigger": "风暴过去第二天，缉私局督察组的电报发到船上：那只冷藏箱最后掉进了海里，箱里的货算不算查获，要女警官当面说清楚"
   }
  ],
  "region": "远海风暴中走私货轮吊机舷外悬空冷藏集装箱倾斜外壁与角件锁扣滑道",

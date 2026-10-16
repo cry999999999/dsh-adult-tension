@@ -1950,6 +1950,54 @@
         "workplace_power",
         "crime"
       ]
+    },
+    {
+      "id": "p_families_at_lamproom",
+      "title": "灯房外的家属",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_lamproom_back_room"
+      ],
+      "trigger": "提升斗出事后的第二天清早，灯房外面站满了下井工人的家属：有人传话说，减速箱早就报过修，是总工压着没停产",
+      "objective": "在家属们去矿务局之前，让大家知道那份报修单的真相",
+      "choice": "把报修单拿出来，还是替签字不停产的人担下",
+      "immediate": {
+        "text": "老鲍从人群里挤进灯房后间，说有人要砸井口的挂牌板",
+        "minutes": 5
+      },
+      "near": {
+        "text": "上午十点，家属们要坐车去矿务局",
+        "deadline_minutes": 180
+      },
+      "far": {
+        "trigger": "矿务局派人下来",
+        "consequence": "全矿停产整顿，女总工的工程师证要吊销",
+        "due_days": 5
+      },
+      "exits": [
+        {
+          "option": "拿出报修单",
+          "cost": "单子上批了不停产的，是矿长的亲弟弟"
+        },
+        {
+          "option": "请把钩工长对着家属讲那一夜的经过",
+          "cost": "把钩工长得说出那三声铃是自己按的"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_muxue_brass_tag",
+        "hook_wanshan_signal_bell",
+        "hook_tian_rope_listen",
+        "hook_lu_overload_roster",
+        "hook_muxue_bathhouse_fork",
+        "hook_muxue_lamproom_kettle"
+      ],
+      "start_minute": 420,
+      "tags": []
     }
   ],
   "hooks": [

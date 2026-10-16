@@ -1950,6 +1950,54 @@
         "disaster",
         "workplace"
       ]
+    },
+    {
+      "id": "p_tomb_keeper_demands",
+      "title": "看陵人讨说法",
+      "source": "person",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_foothill_camp_tent"
+      ],
+      "trigger": "出了地宫的第二天清早，看陵的白长老带着十几个族人堵在营地外：地宫里少了一尊镇墓的金蟾，要发丘门交人",
+      "objective": "在白长老去县城报官之前，把金蟾的下落说清楚",
+      "choice": "护着自己门里的人，还是把那一夜在地宫里见到的事全说出来",
+      "immediate": {
+        "text": "白长老把拐杖往营帐门口一戳，要进帐搜",
+        "minutes": 5
+      },
+      "near": {
+        "text": "午时，白长老的侄子骑马去县城",
+        "deadline_minutes": 360
+      },
+      "far": {
+        "trigger": "县衙的告示贴出来",
+        "consequence": "发丘门三代的名号成了盗陵贼，往后再没人请这一门看风水",
+        "due_days": 4
+      },
+      "exits": [
+        {
+          "option": "让人进帐搜",
+          "cost": "帐里那只从地宫带出来的木匣也得打开"
+        },
+        {
+          "option": "请鲁老汉出面作证",
+          "cost": "鲁老汉得承认当年修陵的图纸是自己卖给军阀的"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_hongling_wine_gourd",
+        "hook_changfeng_rope_check",
+        "hook_xiaowu_map_unroll",
+        "hook_sun_chisel_tap",
+        "hook_qian_cigar_offer",
+        "hook_hongling_tent_flap"
+      ],
+      "start_minute": 360,
+      "tags": []
     }
   ],
   "hooks": [

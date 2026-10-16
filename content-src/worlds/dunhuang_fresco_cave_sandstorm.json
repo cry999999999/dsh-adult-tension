@@ -1993,6 +1993,53 @@
       "tags": [
         "workplace_power"
       ]
+    },
+    {
+      "id": "p_fresco_ruined_rumor",
+      "title": "壁画被毁的视频",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_staff_dormitory_room"
+      ],
+      "trigger": "沙暴过后第二天晚上，一条短视频在网上传开：第96窟的壁画被沙暴毁了，是修复师为了赶工擅自进的窟",
+      "objective": "在研究院明早回应媒体之前，把壁画到底伤没伤说清楚",
+      "choice": "带记者进窟看，还是先在宿舍里把受损记录整理好交上去",
+      "immediate": {
+        "text": "小唐敲门，举着手机，评论已经过了两万条",
+        "minutes": 5
+      },
+      "near": {
+        "text": "明早九点，研究院要回应媒体",
+        "deadline_minutes": 750
+      },
+      "far": {
+        "trigger": "研究院照着传言回应",
+        "consequence": "第96窟闭窟三年，修复师调离一线",
+        "due_days": 5
+      },
+      "exits": [
+        {
+          "option": "带记者进窟拍",
+          "cost": "镜头会拍到脚手架上那颗还没换的扣件"
+        },
+        {
+          "option": "请白工拿出当夜的气象记录",
+          "cost": "白工得承认沙暴预警晚发了一个钟头"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_qingxian_sunset_dune",
+        "hook_qingxian_cinnabar",
+        "hook_qingxian_night_market",
+        "hook_tianyu_sand_jujube",
+        "hook_qingxian_dorm_curtain"
+      ],
+      "start_minute": 1230,
+      "tags": []
     }
   ],
   "hooks": [

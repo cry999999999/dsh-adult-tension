@@ -2075,6 +2075,53 @@
    ],
    "title": "十万观众重低音超低频共振致马道剧晃",
    "trigger": "万人主舞台开场前奏超大功率重低音线阵列音响全开，超低音频段声波引发挑高钢桁架产生强烈共振，十二米悬空马道如波浪般剧烈起伏晃动。"
+  },
+  {
+   "choice": "照价赔，还是穿着拆坏的机甲照常上台，替赞助商再做一次宣传",
+   "exits": [
+    {
+     "cost": "威亚得重新挂，机械师要陪着在马道上再试一遍",
+     "option": "穿拆坏的机甲上台"
+    },
+    {
+     "cost": "花絮里会有两个人在马道上贴在一起拧螺栓的镜头",
+     "option": "请林导把事故剪进官方视频当花絮"
+    }
+   ],
+   "far": {
+    "consequence": "千金只能动家里的钱，父亲就会知道女儿还在玩Cos，下一届不许再来",
+    "due_days": 7,
+    "trigger": "赔偿款结算"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_yunli_signing_line",
+    "hook_yunli_tent_mirror",
+    "hook_yunli_bbq_stall",
+    "hook_yang_program_book",
+    "hook_yunli_tent_curtain"
+   ],
+   "id": "p_sponsor_wants_paid",
+   "immediate": {
+    "minutes": 5,
+    "text": "周经理把合同翻到最后一页，用笔圈出赔偿那一条"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_backstage_dressing_tent"
+   ],
+   "near": {
+    "deadline_minutes": 240,
+    "text": "下午两点，主舞台下午场开演"
+   },
+   "objective": "在下午场开演之前，和赞助商谈好这套机甲怎么办",
+   "source": "money",
+   "start_minute": 600,
+   "tags": [],
+   "title": "样品机甲要赔",
+   "trigger": "漫展第二天上午，道具赞助商的周经理进了更衣帐篷：那套钛铝合金机甲是借给千金的样品，胸甲拆坏了，合同上写着按原价赔"
   }
  ],
  "region": "万人会展中心主舞台上方十二米悬空马道与威亚检修台",

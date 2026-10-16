@@ -2074,6 +2074,51 @@
    ],
    "title": "余震不断与体力耗竭窒息濒危",
    "trigger": "急救站里还躺着几个没来得及转出去的伤员，外面的人在拼命扒瓦砾，可余震一来又震下来一片。"
+  },
+  {
+   "choice": "照实说那一夜给谁打了针，还是替工兵组长瞒下伤情",
+   "exits": [
+    {
+     "cost": "空瓶比那晚用掉的多出两支",
+     "option": "把药箱的空瓶一个个摆出来对账"
+    },
+    {
+     "cost": "老马得说出那晚自己其实没受伤，是躲进急救站的",
+     "option": "请伤员老马作证吗啡给了急救站的伤员"
+    }
+   ],
+   "far": {
+    "consequence": "军医调去后方，工兵组长的伤情写进档案，再也上不了前线",
+    "due_days": 5,
+    "trigger": "盘库报告送到师部"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_leng_half_coffee",
+    "hook_leng_name_list",
+    "hook_sapper_painkiller"
+   ],
+   "id": "p_missing_morphine",
+   "immediate": {
+    "minutes": 10,
+    "text": "护士小周把盘库单塞进掩蔽部门缝，脸色发白"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_surgeon_dugout"
+   ],
+   "near": {
+    "deadline_minutes": 420,
+    "text": "下午两点，后勤处的人来盘库"
+   },
+   "objective": "在后勤处来盘库之前，把那箱吗啡的去向说清楚",
+   "source": "rumor",
+   "start_minute": 420,
+   "tags": [],
+   "title": "少了一箱吗啡",
+   "trigger": "从塌了的急救站里被挖出来的第三天，账上少了一箱吗啡，医院里有人小声说是军医在废墟里给工兵组长用掉了"
   }
  ],
  "region": "地下深层重型混凝土防空掩体深处塌陷急救室与扭曲防爆门夹道",

@@ -2011,6 +2011,54 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_insurer_refuses_claim",
+      "title": "拒赔",
+      "source": "money",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_aerospace_assembly_hall_floor"
+      ],
+      "trigger": "球舱出事后第二天早上八点，保险公司的理赔员拿着合同站在总装大厅：事故当晚加跑的那一遍模拟不在报备科目里，三千万的维修费一分不赔",
+      "objective": "在理赔员下午离开基地之前，证明那一遍加跑是批准过的",
+      "choice": "说出是女飞官自己坚持再跑一遍，还是把加跑算在指挥中心的口头批准上",
+      "immediate": {
+        "text": "理赔员要调当晚的舱内录音",
+        "minutes": 10
+      },
+      "near": {
+        "text": "下午四点，理赔员的车开出基地",
+        "deadline_minutes": 480
+      },
+      "far": {
+        "trigger": "拒赔函寄到集团",
+        "consequence": "球舱停飞半年，女飞官的首席位置要让出来",
+        "due_days": 7
+      },
+      "exits": [
+        {
+          "option": "交出舱内录音",
+          "cost": "录音里有两个人最后十分钟的喘息和说话"
+        },
+        {
+          "option": "请赵总指挥补签加跑的批准单",
+          "cost": "赵总指挥要女飞官在全中队面前念检讨"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_tianjiao_coffee",
+        "hook_tianjiao_fathers_gauge",
+        "hook_shen_oxygen_curve",
+        "hook_shen_ration"
+      ],
+      "start_minute": 480,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

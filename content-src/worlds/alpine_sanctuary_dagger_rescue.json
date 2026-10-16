@@ -2015,6 +2015,53 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_touched_saintess_rumor",
+      "title": "圣女被碰过",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_circular_megalith_altar"
+      ],
+      "trigger": "暴雪停后的清晨，朝圣的人在冰阶上传开了：昨夜有人看见石匠抱着圣女从祭坛底缝里出来",
+      "objective": "在老主教晨祷结束、当众问话之前，想好怎么回答",
+      "choice": "承认那一夜的触碰是为了活命，还是让圣女一个人去发誓什么都没发生",
+      "immediate": {
+        "text": "修女安娜跑上来，说朝圣者已经围住了祭坛",
+        "minutes": 10
+      },
+      "near": {
+        "text": "晨祷结束，阿尔伯特老主教要当众问话",
+        "deadline_minutes": 90
+      },
+      "far": {
+        "trigger": "老主教在信众面前定论",
+        "consequence": "圣女要下山去修道院闭关三年，石匠再也不许踏上这座山",
+        "due_days": 3
+      },
+      "exits": [
+        {
+          "option": "请向导老汉斯作证",
+          "cost": "老汉斯得承认那一夜是自己没守住下山的冰阶"
+        },
+        {
+          "option": "由石匠认下，说是硬把人拖出来的",
+          "cost": "石匠在山下的名声和修殿的活计一起没了"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_eleonora_butter_tea",
+        "hook_eleonora_dawn_bell",
+        "hook_eleonora_steady_hand",
+        "hook_karl_snow_hare",
+        "hook_karl_flask"
+      ],
+      "start_minute": 420,
+      "tags": []
     }
   ],
   "hooks": [

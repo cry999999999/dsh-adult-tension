@@ -1947,6 +1947,50 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_demon_king_letter",
+      "title": "魔王的信",
+      "source": "person",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_envoy_guest_quarters"
+      ],
+      "trigger": "结界误启后的第二天清晨，女将军的副官莉拉带来魔王的一封信：圣殿想在谈判桌上害死使节，魔军三日后开拔",
+      "objective": "在信使回魔军大营之前，让停战还有得谈",
+      "choice": "替圣殿作保，还是先查出是谁误启了结界",
+      "immediate": {
+        "text": "莉拉单膝跪在客居门口，等将军的回信",
+        "minutes": 5
+      },
+      "near": {
+        "text": "正午，信使要骑马出城",
+        "deadline_minutes": 300
+      },
+      "far": {
+        "trigger": "魔军开拔",
+        "consequence": "十年圣战重开，女将军回国要受叛逆之审",
+        "due_days": 3
+      },
+      "exits": [
+        {
+          "option": "写信替圣殿作保",
+          "cost": "魔军里会传女将军被人类迷住了"
+        },
+        {
+          "option": "请敲钟人老约翰说出那一夜谁进过钟楼",
+          "cost": "老约翰要女将军保下自己在魔军里当俘虏的儿子"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_camilla_spear_tip",
+        "hook_scholar_sketch"
+      ],
+      "start_minute": 480,
+      "tags": []
     }
   ],
   "hooks": [

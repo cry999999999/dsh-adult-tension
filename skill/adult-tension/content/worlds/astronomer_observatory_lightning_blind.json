@@ -2193,6 +2193,51 @@
    ],
    "title": "漏报的一刻",
    "trigger": "五更时分，内侍省的廖太监带着两个小黄门上了摘星楼，手里拿着昨夜各坊的更筹记录：子时那一通鼓，全城晚了一刻"
+  },
+  {
+   "choice": "向崔监正开口，还是去西市找胡商赊铜",
+   "exits": [
+    {
+     "cost": "那是女官母亲留下的唯一一样东西",
+     "option": "押上女官那面铜镜"
+    },
+    {
+     "cost": "康大郎要每月初一上摘星楼看一回星",
+     "option": "向西市胡商康大郎赊铜"
+    }
+   ],
+   "far": {
+    "consequence": "浑天仪停一季，长安的时辰只靠漏刻，女官每夜都得守在值房里合不了眼",
+    "due_days": 5,
+    "trigger": "炉子一封就到秋后"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_zhaohua_night_market",
+    "hook_zhaohua_star_point",
+    "hook_cang_star_chart"
+   ],
+   "id": "p_bronze_for_new_axle",
+   "immediate": {
+    "minutes": 10,
+    "text": "账房先生坐在齿轮暗室门口，算盘打得噼啪响"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_armillary_clockwork_machinery_vault"
+   ],
+   "near": {
+    "deadline_minutes": 420,
+    "text": "日落，将作监的炉子封火"
+   },
+   "objective": "在将作监封炉之前，把差的两百贯凑出来",
+   "source": "money",
+   "start_minute": 840,
+   "tags": [],
+   "title": "三百贯铜钱",
+   "trigger": "雷火过后第三天，将作监的账房送来一张单子：重铸主轴要铜八百斤、钱三百贯，钦天监今年的公廨钱只剩一百贯"
   }
  ],
  "region": "长安城南郊皇室观象台摘星楼三十丈高空开敞式露天浑天台",

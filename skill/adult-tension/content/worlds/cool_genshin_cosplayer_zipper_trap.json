@@ -2284,6 +2284,55 @@
    ],
    "title": "内外推拉力矩节奏偏差导致地销二次咬合危机",
    "trigger": "若外侧特勤过早猛烈外拉移门而内侧地销未完全脱离地孔，反向剪力将把销轴死死别在槽沿倒齿内。"
+  },
+  {
+   "choice": "让声优出面发一段道谢视频，还是把责任推给展馆断电",
+   "exits": [
+    {
+     "cost": "评论区会开始猜那个人是谁",
+     "option": "拍一段道谢视频，提到陪着困在里面的那个人"
+    },
+    {
+     "cost": "组委会的钱女士就不会再请声优来下一届",
+     "option": "发声明怪展馆断电"
+    }
+   ],
+   "far": {
+    "consequence": "声优要赔违约金，下季度的两部新番配音也会换人",
+    "due_days": 5,
+    "trigger": "撤约函发出"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_xue_voice_line",
+    "hook_xue_wig_off",
+    "hook_xue_hotel_window",
+    "hook_yunche_warm_water",
+    "hook_xue_hotel_door"
+   ],
+   "id": "p_brand_pulls_endorsement",
+   "immediate": {
+    "minutes": 5,
+    "text": "程经理把平板电脑放在茶几上，热搜第三条就是声优的名字"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_expo_hotel_suite"
+   ],
+   "near": {
+    "deadline_minutes": 300,
+    "text": "下午三点，品牌方开会"
+   },
+   "objective": "在品牌方开会定下撤约之前，把这件事讲成一件好事",
+   "source": "money",
+   "start_minute": 600,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "代言要撤",
+   "trigger": "被困更衣间的事第二天上了热搜，经纪公司的程经理一早敲开套房的门：品牌方看到战袍拉链坏掉的照片，要撤掉下个月的代言"
   }
  ],
  "region": "国家会展中心主展厅二层VIP特邀嘉宾独立更衣间与后台备演连廊",

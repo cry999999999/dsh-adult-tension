@@ -2080,6 +2080,53 @@
    ],
    "title": "劫匪未撤救援难下",
    "trigger": "楼上的劫匪还没撤干净，警察在外面封锁了金库入口，谁也下不来，对讲机里只剩值班队长一个人在喊。"
+  },
+  {
+   "choice": "照价赔，还是拿出金库那一夜的监控，证明画是在劫匪手里坏的",
+   "exits": [
+    {
+     "cost": "监控也拍下了展柜后面那十几分钟",
+     "option": "调出金库那一夜的监控"
+    },
+    {
+     "cost": "秋拍压轴那一槌要让给钱先生的侄女来敲",
+     "option": "答应钱先生的条件私了"
+    }
+   ],
+   "far": {
+    "consequence": "秋拍开不了槌，首席拍卖师的位子要在董事会上换人",
+    "due_days": 10,
+    "trigger": "索赔函递到法院"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_lin_hoarse_voice",
+    "hook_lin_preview_door",
+    "hook_architect_old_catalog"
+   ],
+   "id": "p_consignor_claim",
+   "immediate": {
+    "minutes": 5,
+    "text": "律师把一份索赔函推到拍卖师面前"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_auctioneer_preview_room"
+   ],
+   "near": {
+    "deadline_minutes": 480,
+    "text": "下午五点，秋拍图录付印"
+   },
+   "objective": "在秋拍图录付印之前，和钱先生谈出一个结果",
+   "source": "money",
+   "start_minute": 540,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "委托人索赔",
+   "trigger": "劫案过去第二天上午，委托那幅宋画的老藏家钱先生带着律师坐进预展室：画框在金库里被灭火气体蚀了一角，要拍卖行按估价的两倍赔"
   }
  ],
  "region": "地下百米恒温恒湿特级艺术品保险金库展示厅与密闭气闸走廊",

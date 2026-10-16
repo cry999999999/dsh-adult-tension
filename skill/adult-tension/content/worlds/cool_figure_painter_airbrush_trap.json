@@ -2341,6 +2341,52 @@
    ],
    "title": "监修意见",
    "trigger": "展前一天上午，版权方的郑监修发来一页意见：配色和官方设定差了两个色号，不改就不给授权编号，尾款也一起压着"
+  },
+  {
+   "choice": "放出完整的原片，还是去求小敏自己删掉",
+   "exits": [
+    {
+     "cost": "原片里也有两个人在喷漆房里靠在一起喘气的那一段",
+     "option": "放出完整原片"
+    },
+    {
+     "cost": "小敏要独家拍下这尊手办的全部完成过程",
+     "option": "请小敏删掉视频"
+    }
+   ],
+   "far": {
+    "consequence": "工作室的预售全部退款，园区不再续租喷漆房",
+    "due_days": 3,
+    "trigger": "主办方的声明发出来"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_lingxi_late_takeout",
+    "hook_lingxi_figure_face",
+    "hook_tianheng_fan_fixed",
+    "hook_lingxi_loft_curtain"
+   ],
+   "id": "p_vlogger_cut",
+   "immediate": {
+    "minutes": 5,
+    "text": "手机在床头震个不停，评论区开始有人要退订金"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_studio_loft_bedroom"
+   ],
+   "near": {
+    "deadline_minutes": 840,
+    "text": "明早十点，主办方要发声明"
+   },
+   "objective": "在展会主办方发声明之前，把这条视频的说法改过来",
+   "source": "rumor",
+   "start_minute": 1290,
+   "tags": [],
+   "title": "五十万播放",
+   "trigger": "喷漆房出事后的第二天晚上，跟拍博主小敏发了一条剪辑，标题说涂装师为了赶展把人锁在喷漆房里，播放量一夜过了五十万"
   }
  ],
  "region": "国家级数字文创园区大型不锈钢防爆双工位负压喷涂车间与风淋风道区",

@@ -2195,6 +2195,52 @@
       "tags": [
         "workplace_power"
       ]
+    },
+    {
+      "id": "p_vlogger_cut",
+      "title": "五十万播放",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_studio_loft_bedroom"
+      ],
+      "trigger": "喷漆房出事后的第二天晚上，跟拍博主小敏发了一条剪辑，标题说涂装师为了赶展把人锁在喷漆房里，播放量一夜过了五十万",
+      "objective": "在展会主办方发声明之前，把这条视频的说法改过来",
+      "choice": "放出完整的原片，还是去求小敏自己删掉",
+      "immediate": {
+        "text": "手机在床头震个不停，评论区开始有人要退订金",
+        "minutes": 5
+      },
+      "near": {
+        "text": "明早十点，主办方要发声明",
+        "deadline_minutes": 840
+      },
+      "far": {
+        "trigger": "主办方的声明发出来",
+        "consequence": "工作室的预售全部退款，园区不再续租喷漆房",
+        "due_days": 3
+      },
+      "exits": [
+        {
+          "option": "放出完整原片",
+          "cost": "原片里也有两个人在喷漆房里靠在一起喘气的那一段"
+        },
+        {
+          "option": "请小敏删掉视频",
+          "cost": "小敏要独家拍下这尊手办的全部完成过程"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_lingxi_late_takeout",
+        "hook_lingxi_figure_face",
+        "hook_tianheng_fan_fixed",
+        "hook_lingxi_loft_curtain"
+      ],
+      "start_minute": 1290,
+      "tags": []
     }
   ],
   "hooks": [

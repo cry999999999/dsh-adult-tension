@@ -2079,6 +2079,51 @@
    ],
    "title": "晨钟前奏报未送",
    "trigger": "国王在等九星连珠的奏报，侍从在内梯下面一声声地催，晨钟敲响之前送不到，占星术士在宫里的位置就保不住了。"
+  },
+  {
+   "choice": "和天文学者一起署名新历法，还是独自去宫里替星象学辩护",
+   "exits": [
+    {
+     "cost": "宫廷里的老派会说大占星术士向天文学者低了头",
+     "option": "一起署名新历法"
+    },
+    {
+     "cost": "辩护时得解释为什么那一夜两个人在露台上待到天亮",
+     "option": "独自去宫里辩护"
+    }
+   ],
+   "far": {
+    "consequence": "星象学院撤去一半俸禄，大占星术士搬出这座塔楼",
+    "due_days": 3,
+    "trigger": "国王的裁定"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_eleanor_astrolabe_tip",
+    "hook_eleanor_tower_door",
+    "hook_astronomer_poem_note"
+   ],
+   "id": "p_stars_failed_rumor",
+   "immediate": {
+    "minutes": 5,
+    "text": "侍从莉娜在塔楼门口传话，国王午后要见大占星术士"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_astrologer_tower_chamber"
+   ],
+   "near": {
+    "deadline_minutes": 360,
+    "text": "午后，国王在书房召见"
+   },
+   "objective": "在国王召见之前，想好新历法该署谁的名字",
+   "source": "rumor",
+   "start_minute": 480,
+   "tags": [],
+   "title": "星象失灵",
+   "trigger": "九星连珠那一夜过去，宫里传开了：大占星术士没能报出那场暴风雪，星象学一派要失宠了"
   }
  ],
  "region": "百米高空皇家占星台悬空露台边缘与黄道偏心差速齿轮枢纽",

@@ -1947,6 +1947,53 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_inspection_team_cable",
+      "title": "督察组的电报",
+      "source": "institution",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_officer_cabin"
+      ],
+      "trigger": "风暴过去第二天，缉私局督察组的电报发到船上：那只冷藏箱最后掉进了海里，箱里的货算不算查获，要女警官当面说清楚",
+      "objective": "在督察组的快艇靠舷之前，把那一夜的登临记录补齐",
+      "choice": "照实写是自己下令先救人，还是写成钢缆断得太快来不及",
+      "immediate": {
+        "text": "报务员阿梅把电报送到舱门口，说督察组等着回电",
+        "minutes": 10
+      },
+      "near": {
+        "text": "中午十二点，督察组的快艇靠舷",
+        "deadline_minutes": 240
+      },
+      "far": {
+        "trigger": "督察组定性",
+        "consequence": "这次远海追缉算失败，女警官的王牌名号和下个月的升职一起作废",
+        "due_days": 7
+      },
+      "exits": [
+        {
+          "option": "交出随身执法记录仪",
+          "cost": "记录仪拍下了箱顶上两个人最后那十几分钟"
+        },
+        {
+          "option": "请水手长老马作证",
+          "cost": "老马得承认当时是自己没拦住登临组往箱顶爬"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_qinghan_drill_offer",
+        "hook_qinghan_cabin_door",
+        "hook_engineer_sugar_note"
+      ],
+      "start_minute": 480,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

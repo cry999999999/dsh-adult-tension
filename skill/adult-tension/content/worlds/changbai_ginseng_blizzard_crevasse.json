@@ -2269,6 +2269,53 @@
    "tags": [],
    "title": "坏了山规的传言",
    "trigger": "下山回屯子的第二天晌午，参帮的老把头们在地窨子外头蹲了一排：有人传话说，考察队在天池边敲石头，惊了山神，这才招来那场冰崩"
+  },
+  {
+   "choice": "拿考察队的酬金先抵账，还是押上女把头那张祖传的参场图",
+   "exits": [
+    {
+     "cost": "图上标着的老参窝，往后就归参行",
+     "option": "押上祖传参场图"
+    },
+    {
+     "cost": "宋教授要女把头明年夏天再带队进一趟老林子",
+     "option": "请宋教授预支考察队的酬金"
+    }
+   ],
+   "far": {
+    "consequence": "参帮十几户人家开春没有口粮，女把头的位子也坐不稳",
+    "due_days": 7,
+    "trigger": "参行收回预支"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_xueyuan_roe_deer",
+    "hook_xueyuan_hot_spring",
+    "hook_xueyuan_red_rope",
+    "hook_hanzhou_sketch",
+    "hook_xueyuan_dugout_curtain"
+   ],
+   "id": "p_ginseng_house_debt",
+   "immediate": {
+    "minutes": 5,
+    "text": "二掌柜把算盘往炕桌上一放，说今天不走了"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_ginseng_dugout_hut"
+   ],
+   "near": {
+    "deadline_minutes": 720,
+    "text": "明早天亮，二掌柜要套车回营口"
+   },
+   "objective": "在二掌柜回营口之前，给参帮今年的账找个说法",
+   "source": "money",
+   "start_minute": 1080,
+   "tags": [],
+   "title": "参行的账",
+   "trigger": "下山第五天傍晚，营口参行的二掌柜带着账本进了地窨子：参帮今年预支的八百块大洋，一棵六品叶也没交上来"
   }
  ],
  "region": "长白山天池万年冰川海拔两千米开阔天然大天坑底部石缝裂隙区",

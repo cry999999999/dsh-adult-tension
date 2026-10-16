@@ -2095,6 +2095,57 @@
    ],
    "title": "海事监察官按下弃船救生艇脱钩倒计时",
    "trigger": "特派海事监察官认定液货舱已无法挽回，在通廊按开遥控脱钩电掣，启动了三分钟彻底引爆救生艇脱钩装置全员弃船的倒计时。"
+  },
+  {
+   "choice": "签下认错，还是把公司压掉的那一次换件申请拿出来",
+   "exits": [
+    {
+     "cost": "滞期费从轮机长和水手长两年的奖金里扣",
+     "option": "签字认错"
+    },
+    {
+     "cost": "公司以后不会再雇这条船上任何一个签过名的人",
+     "option": "拿出被压掉的换件申请"
+    }
+   ],
+   "far": {
+    "consequence": "女轮机长下船后不再续约，这是女轮机长第一次当上轮机长的船",
+    "due_days": 14,
+    "trigger": "船东定责"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_qingge_satphone_minutes",
+    "hook_tiesheng_lifeline_knot",
+    "hook_han_last_voyage",
+    "hook_xiaomo_seasick_day3",
+    "hook_qingge_karaoke_mic",
+    "hook_ling_pilot_ladder",
+    "hook_qingge_cabin_door"
+   ],
+   "id": "p_owner_demurrage",
+   "immediate": {
+    "minutes": 5,
+    "text": "船长的电话打进舱室，问字签了没有"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_chief_engineer_cabin"
+   ],
+   "near": {
+    "deadline_minutes": 240,
+    "text": "中午十二点，船长要回电"
+   },
+   "objective": "在船长回电给船东之前，决定这个字签不签",
+   "source": "money",
+   "start_minute": 480,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "滞期费",
+   "trigger": "冰堵过后第二天早上，船东发来卫星传真：这一趟晚到港三天要赔租家滞期费，公司要轮机长签字承认安全阀保养不到位"
   }
  ],
  "region": "液货舱圆顶下方零下一百六十二度绝冷盲区",

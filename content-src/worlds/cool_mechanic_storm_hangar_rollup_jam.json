@@ -1938,6 +1938,53 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_port_office_seal",
+      "title": "港区的封条",
+      "source": "institution",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_workshop_front_lot"
+      ],
+      "trigger": "风暴过去第二天上午，港区管理处的人来贴封条：老机库里还存着航煤油罐，算违规仓储，工坊要停业整改",
+      "objective": "在封条贴上卷帘门之前，把开幕赛要用的那台赛车弄出来",
+      "choice": "认下违规，还是说出油罐是机库原主人留下的、从没人告诉过工坊",
+      "immediate": {
+        "text": "管理处的科长已经在停车坪上拍照",
+        "minutes": 10
+      },
+      "near": {
+        "text": "中午十二点，管理处正式贴封条",
+        "deadline_minutes": 180
+      },
+      "far": {
+        "trigger": "工坊被查封",
+        "consequence": "赛车错过开幕赛，合伙三年的工坊只能散伙",
+        "due_days": 14
+      },
+      "exits": [
+        {
+          "option": "连夜把赛车推进隔壁轮胎店藏起来",
+          "cost": "轮胎店的阿大会把这件事讲给整条街听"
+        },
+        {
+          "option": "请港区消防分队出一份情况说明",
+          "cost": "消防队要女机械师给队里的老车免费修一年"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_haruka_two_coffees",
+        "hook_haruka_where_rider",
+        "hook_haruka_ride_offer",
+        "hook_rider_last_page",
+        "hook_rider_dock_note"
+      ],
+      "start_minute": 540,
+      "tags": []
     }
   ],
   "hooks": [

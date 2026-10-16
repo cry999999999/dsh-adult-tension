@@ -1952,6 +1952,55 @@
         "workplace",
         "crime"
       ]
+    },
+    {
+      "id": "p_ministry_memorial",
+      "title": "刑部的折子",
+      "source": "institution",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_court_rear_duty_room"
+      ],
+      "trigger": "冰鉴大堂出事后第二天，刑部的崔侍郎递了折子：大理寺用女子做仵作，又与少卿同困一室一夜，有违礼法，请革去女仵作的职",
+      "objective": "在御史台议这道折子之前，把毒杀案的验尸格目写完呈上去",
+      "choice": "把验出的鸩毒来历写进格目，还是先保住自己的职位",
+      "immediate": {
+        "text": "老赵把折子的抄本塞进值房，压低声音说刑部的人就在门外",
+        "minutes": 5
+      },
+      "near": {
+        "text": "明日早朝，御史台议折子",
+        "deadline_minutes": 1380
+      },
+      "far": {
+        "trigger": "折子准了",
+        "consequence": "女仵作革职还乡，毒杀案交给刑部，那具尸身再没人替死者说话",
+        "due_days": 2
+      },
+      "exits": [
+        {
+          "option": "把鸩毒来历写进格目",
+          "cost": "那味毒只有宫里的尚药局才有"
+        },
+        {
+          "option": "请陆御医在格目上联署",
+          "cost": "陆御医要把这一案的功劳记在太医署名下"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_qingshuang_ice_cane",
+        "hook_qingshuang_lotus_pond",
+        "hook_qingshuang_wrist_pulse",
+        "hook_xuan_xiezhi_carving",
+        "hook_qingshuang_duty_room"
+      ],
+      "start_minute": 480,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

@@ -2159,6 +2159,54 @@
    ],
    "title": "木构走廊受压超载骨架断裂",
    "trigger": "倾斜书架巨大的偏心弯矩持续挤压外侧回廊挑梁，木梁榫卯节点发出令人心惊的开裂脆响。"
+  },
+  {
+   "choice": "卖掉阁楼里那套泡过水的家谱底本，还是让陆伯去求房东",
+   "exits": [
+    {
+     "cost": "编目员两年的抄录就没了对照的原本",
+     "option": "卖掉那套家谱底本"
+    },
+    {
+     "cost": "地契上写着这间铺子是陆伯当年赌输给房东祖父的",
+     "option": "请陆伯拿老地契跟房东争"
+    }
+   ],
+   "far": {
+    "consequence": "百年书肆关门，编目员搬出阁楼，编了一半的家谱目录只能装箱",
+    "due_days": 3,
+    "trigger": "约一签下"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_zhixia_shop_cat",
+    "hook_zhixia_lamp_brush",
+    "hook_zhixia_card_note",
+    "hook_zhouyue_mortise",
+    "hook_zhouyue_shaving_curl",
+    "hook_zhixia_attic_ladder"
+   ],
+   "id": "p_landlord_takes_back",
+   "immediate": {
+    "minutes": 10,
+    "text": "估价师已经在阁楼楼梯口量尺寸"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_bookshop_attic"
+   ],
+   "near": {
+    "deadline_minutes": 1680,
+    "text": "明天中午，房东和茶楼老板在河对岸吃饭定约"
+   },
+   "objective": "在房东跟茶楼老板定约之前，把这间书肆保下来",
+   "source": "money",
+   "start_minute": 480,
+   "tags": [],
+   "title": "房东收铺",
+   "trigger": "河水退下去的第二天早上，书肆的房东带着估价师上了门：一楼泡了水，正好收回铺面改成茶楼，除非三天里补齐拖欠的半年房租"
   }
  ],
  "region": "古书肆双层挑空中庭回廊天井与重型橡木书架死角走道",

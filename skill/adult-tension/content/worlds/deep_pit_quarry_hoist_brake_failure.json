@@ -2096,6 +2096,54 @@
    ],
    "title": "矿山特派专员拉下气动切缆电闸倒计时",
    "trigger": "特派监察专员认定提升斗已经无法抢救，在铁笼内按开气动切缆电闸，井口电火工切缆刀启动了三十秒彻底斩断悬挂钢索的自沉倒计时。"
+  },
+  {
+   "choice": "把报修单拿出来，还是替签字不停产的人担下",
+   "exits": [
+    {
+     "cost": "单子上批了不停产的，是矿长的亲弟弟",
+     "option": "拿出报修单"
+    },
+    {
+     "cost": "把钩工长得说出那三声铃是自己按的",
+     "option": "请把钩工长对着家属讲那一夜的经过"
+    }
+   ],
+   "far": {
+    "consequence": "全矿停产整顿，女总工的工程师证要吊销",
+    "due_days": 5,
+    "trigger": "矿务局派人下来"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_muxue_brass_tag",
+    "hook_wanshan_signal_bell",
+    "hook_tian_rope_listen",
+    "hook_lu_overload_roster",
+    "hook_muxue_bathhouse_fork",
+    "hook_muxue_lamproom_kettle"
+   ],
+   "id": "p_families_at_lamproom",
+   "immediate": {
+    "minutes": 5,
+    "text": "老鲍从人群里挤进灯房后间，说有人要砸井口的挂牌板"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_lamproom_back_room"
+   ],
+   "near": {
+    "deadline_minutes": 180,
+    "text": "上午十点，家属们要坐车去矿务局"
+   },
+   "objective": "在家属们去矿务局之前，让大家知道那份报修单的真相",
+   "source": "rumor",
+   "start_minute": 420,
+   "tags": [],
+   "title": "灯房外的家属",
+   "trigger": "提升斗出事后的第二天清早，灯房外面站满了下井工人的家属：有人传话说，减速箱早就报过修，是总工压着没停产"
   }
  ],
  "region": "地下三百米超深采矿竖井悬挂提升斗钢骨吊笼",

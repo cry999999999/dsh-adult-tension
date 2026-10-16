@@ -2079,6 +2079,53 @@
    ],
    "title": "魔兽撞击头顶根道",
    "trigger": "头顶的根道里，暴动的魔兽一下下撞着树根，外面的游侠一边打一边挖，号角声一阵比一阵急。"
+  },
+  {
+   "choice": "把学者的根系笔记当众摊开，还是让游侠以巡林队的名义担保",
+   "exits": [
+    {
+     "cost": "笔记里也画着世界树防御机关的位置",
+     "option": "当众摊开根系笔记"
+    },
+    {
+     "cost": "往后学者在林城里出一点事，都算在游侠头上",
+     "option": "由游侠以巡林队的名义担保"
+    }
+   ],
+   "far": {
+    "consequence": "学者三日内离开林城，游侠被收回巡林的弓",
+    "due_days": 3,
+    "trigger": "长老会定下驱逐令"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_seranie_extra_honey",
+    "hook_seranie_where_botanist",
+    "hook_seranie_bow_offer",
+    "hook_botanist_silver_leaf",
+    "hook_botanist_vent_note"
+   ],
+   "id": "p_human_scholar_rumor",
+   "immediate": {
+    "minutes": 5,
+    "text": "卖蜜的伊芙把摊子往后挪了一步，不肯再卖给人类"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_elven_canopy_market"
+   ],
+   "near": {
+    "deadline_minutes": 540,
+    "text": "日落时，长老会在大树下议事"
+   },
+   "objective": "在长老会下驱逐令之前，让集市上的人听到另一种说法",
+   "source": "rumor",
+   "start_minute": 540,
+   "tags": [],
+   "title": "集市上的传言",
+   "trigger": "地下暴动平息后的第二天，树冠集市上传开了：魔兽是被人类学者在根系里刻的标记引出来的"
   }
  ],
  "region": "地下千米世界树根系空腔树芯密室木台与万年铁木重闸滑道",

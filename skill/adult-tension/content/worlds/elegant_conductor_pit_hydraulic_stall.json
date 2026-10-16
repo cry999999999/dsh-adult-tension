@@ -2075,6 +2075,53 @@
    ],
    "title": "刺鼻化学油气窒息与体能急剧耗竭",
    "trigger": "舞台上方的巨型水晶吊灯被震得剧烈晃动，碎玻璃一阵阵从井口洒下来。"
+  },
+  {
+   "choice": "改用不升降的平地乐池将就着演，还是逼着机械师两天里把液压查清",
+   "exits": [
+    {
+     "cost": "乐声出不来深坑的味道，乐评人会写得很难听",
+     "option": "改用平地乐池演"
+    },
+    {
+     "cost": "机械师要指挥家每晚陪在乐池底下递工具",
+     "option": "让机械师连轴两天查液压"
+    }
+   ],
+   "far": {
+    "consequence": "首席指挥的第一部新制作就此作废，乐团的合同季也跟着悬了",
+    "due_days": 2,
+    "trigger": "首演取消"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_shen_bow_tie",
+    "hook_shen_last_beat",
+    "hook_machinist_poster"
+   ],
+   "id": "p_fire_department_notice",
+   "immediate": {
+    "minutes": 5,
+    "text": "副舞台监督小葛拿着通知书站在门口，说乐团的人都在走廊里等消息"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_maestra_dressing_room"
+   ],
+   "near": {
+    "deadline_minutes": 1800,
+    "text": "明天下午，消防支队来复查"
+   },
+   "objective": "在消防支队复查之前，让首演照常",
+   "source": "institution",
+   "start_minute": 600,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "整改通知",
+   "trigger": "乐池出事后的第二天上午，消防支队下了整改通知：液压系统没查清之前，歌剧院不准开演，离首演只剩两天"
   }
  ],
  "region": "百年歌剧院地下十米完全沉降液压乐池深井逼仄检修底坑与变形悬臂台",

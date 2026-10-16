@@ -2080,6 +2080,50 @@
    ],
    "title": "圣殿卫队与魔军对峙",
    "trigger": "圣殿卫队和魔军随从在外面吵成一团，都说对方使坏，谁也不肯先让对方的人下去救人。"
+  },
+  {
+   "choice": "替圣殿作保，还是先查出是谁误启了结界",
+   "exits": [
+    {
+     "cost": "魔军里会传女将军被人类迷住了",
+     "option": "写信替圣殿作保"
+    },
+    {
+     "cost": "老约翰要女将军保下自己在魔军里当俘虏的儿子",
+     "option": "请敲钟人老约翰说出那一夜谁进过钟楼"
+    }
+   ],
+   "far": {
+    "consequence": "十年圣战重开，女将军回国要受叛逆之审",
+    "due_days": 3,
+    "trigger": "魔军开拔"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_camilla_spear_tip",
+    "hook_scholar_sketch"
+   ],
+   "id": "p_demon_king_letter",
+   "immediate": {
+    "minutes": 5,
+    "text": "莉拉单膝跪在客居门口，等将军的回信"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_envoy_guest_quarters"
+   ],
+   "near": {
+    "deadline_minutes": 300,
+    "text": "正午，信使要骑马出城"
+   },
+   "objective": "在信使回魔军大营之前，让停战还有得谈",
+   "source": "person",
+   "start_minute": 480,
+   "tags": [],
+   "title": "魔王的信",
+   "trigger": "结界误启后的第二天清晨，女将军的副官莉拉带来魔王的一封信：圣殿想在谈判桌上害死使节，魔军三日后开拔"
   }
  ],
  "region": "远古圣殿中庭广场深处重力水晶祭坛凹陷底坑与自锁导轨",

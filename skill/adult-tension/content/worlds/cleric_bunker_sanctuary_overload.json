@@ -2075,6 +2075,50 @@
    ],
    "title": "救护所穹顶中央承重拱顶核心闭门巨石将坠",
    "trigger": "六米挑高穹顶中央重达五吨的拱顶主楔石出现放射状裂缝，碎石如暴雨般倾泻，数道两米长的裂缝迅速向四周扩散，即将泰山压顶般整块崩落。"
+  },
+  {
+   "choice": "承认救过敌方伤兵，还是把那个伤兵连夜送出去",
+   "exits": [
+    {
+     "cost": "伤口还没缝完，人能不能活过三天说不准",
+     "option": "连夜把那名敌方伤兵送出交通壕"
+    },
+    {
+     "cost": "哈根得承认那晚自己在岗上喝了酒",
+     "option": "请哈根作证结界是炮弹震爆的"
+    }
+   ],
+   "far": {
+    "consequence": "救护所换人接管，女牧师要押回后方的修院受审",
+    "due_days": 3,
+    "trigger": "军法官的报告送到后方"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_elena_stitches",
+    "hook_elena_bread"
+   ],
+   "id": "p_enemy_wounded_rumor",
+   "immediate": {
+    "minutes": 10,
+    "text": "修女莉莎跑进来，说有两个伤兵不肯再让牧师换药"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_chapel_bell_tower_cell"
+   ],
+   "near": {
+    "deadline_minutes": 240,
+    "text": "中午，军法官带着卫兵下到救护所"
+   },
+   "objective": "在军法官下来问话之前，让伤兵和修女们说出同一句真话",
+   "source": "rumor",
+   "start_minute": 480,
+   "tags": [],
+   "title": "给敌人换药的传言",
+   "trigger": "救护所撑过那一夜的第二天早上，前线传开一句话：结界是有人故意弄爆的，女牧师那晚在地下也给敌方伤兵换了药"
   }
  ],
  "region": "前线村庄礼拜堂地下墓室改成的野战救护所与防爆滑门",

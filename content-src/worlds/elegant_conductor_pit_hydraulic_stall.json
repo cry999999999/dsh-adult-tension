@@ -1942,6 +1942,53 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_fire_department_notice",
+      "title": "整改通知",
+      "source": "institution",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_maestra_dressing_room"
+      ],
+      "trigger": "乐池出事后的第二天上午，消防支队下了整改通知：液压系统没查清之前，歌剧院不准开演，离首演只剩两天",
+      "objective": "在消防支队复查之前，让首演照常",
+      "choice": "改用不升降的平地乐池将就着演，还是逼着机械师两天里把液压查清",
+      "immediate": {
+        "text": "副舞台监督小葛拿着通知书站在门口，说乐团的人都在走廊里等消息",
+        "minutes": 5
+      },
+      "near": {
+        "text": "明天下午，消防支队来复查",
+        "deadline_minutes": 1800
+      },
+      "far": {
+        "trigger": "首演取消",
+        "consequence": "首席指挥的第一部新制作就此作废，乐团的合同季也跟着悬了",
+        "due_days": 2
+      },
+      "exits": [
+        {
+          "option": "改用平地乐池演",
+          "cost": "乐声出不来深坑的味道，乐评人会写得很难听"
+        },
+        {
+          "option": "让机械师连轴两天查液压",
+          "cost": "机械师要指挥家每晚陪在乐池底下递工具"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": [
+        "hook_shen_bow_tie",
+        "hook_shen_last_beat",
+        "hook_machinist_poster"
+      ],
+      "start_minute": 600,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

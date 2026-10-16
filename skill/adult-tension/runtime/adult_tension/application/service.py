@@ -390,7 +390,15 @@ def new_game(ctx, payload):
                 raise opening.no_match(["排除之后没有可选的世界"], None, conditions)
             if seed is None:
                 history = repo.opening_history(conn)
-                seed, _result = opening.choose_seed(lambda s: _plan_across(ctx, worlds, s, conditions)[1][0], seed_stream(), history)
+                disaster = {w["id"] for w in ctx.content().index()["worlds"] if opening.DISASTER in w["content_tags"]}
+                for item in history:
+                    item["disaster"] = item["world_id"] in disaster
+
+                def evaluate(candidate):
+                    pack, planned = _plan_across(ctx, worlds, candidate, conditions)
+                    return dict(planned[0], disaster=opening.DISASTER in pack["content_tags"])
+
+                seed, _result = opening.choose_seed(evaluate, seed_stream(), history)
             pack, planned = _plan_across(ctx, worlds, seed, conditions)
         content = _content_snapshot(ctx, pack)
         state, opening_payload = opening.instantiate(pack, seed, conditions, planned, content["content_version"])

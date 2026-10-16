@@ -15,6 +15,9 @@ from . import structure as ST
 from .text import binding, full_name, render, render_name_pattern, split_name
 
 LOCK_KEYS = ("world_id", "location_id", "combo_id", "activity_id", "pressure_id", "hook_id", "identity_id")
+# Most worlds trap two people in a disaster; random openings take turns
+# with the others so that one game after another does not feel the same.
+DISASTER = "disaster"
 HOOK_WEIGHT = {"approach": 4.0, "observe": 1.0, "request": 1.0, "accident": 1.0}
 
 
@@ -841,6 +844,8 @@ def penalty(result, history):
             score += 2
         if last.get("combo_id") == result["combo_id"]:
             score += 2
+        if last.get("disaster") and result.get("disaster"):
+            score += 3
     if len(history) > 1 and history[1]["power_structure"] == result["power_structure"]:
         score += 1
     if result["hook_kind"] != "approach" and any(h["hook_kind"] != "approach" for h in history[:2]):

@@ -539,6 +539,19 @@ class NewGameCommandTest(unittest.TestCase):
                 guide.run(ctx, {"level": "full"})
             self.assertEqual(caught.exception.code, "INVALID_INPUT")
 
+    def test_random_openings_take_turns_with_worlds_that_are_not_disasters(self):
+        # Most worlds trap two people in a disaster: one random opening after
+        # another should not all be one.
+        with app() as ctx:
+            ids = Ids()
+            disaster = {w["id"] for w in ctx.content().index()["worlds"] if "disaster" in w["content_tags"]}
+            self.assertGreater(len(disaster), len(ctx.content().index()["worlds"]) / 2)
+            for _ in range(16):
+                service.new_game(ctx, {"request_id": ids(), "mode": "daily"})
+            flags = [h["world_id"] in disaster for h in reversed(repo.opening_history(ctx.db(), 16))]
+            self.assertLessEqual(sum(1 for a, b in zip(flags, flags[1:]) if a and b), 2, flags)
+            self.assertTrue(any(flags), flags)
+
     def test_replay_restores_the_recorded_conditions(self):
         with app() as ctx:
             ids = Ids()

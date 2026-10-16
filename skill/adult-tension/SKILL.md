@@ -46,7 +46,7 @@ AT_JSON
 1. 玩家没说日常还是压力：问一句“1 日常 / 2 有压力”。只有玩家说“随便”才用 `random`。不问玩家性别（没说就默认男性，玩家说了才写进 `player.gender`）。读档永远不问。
 2. 本对话已开过局或读过档，且有没存的回合（`save.turns_since_save` > 0 或有攒着没记录的）：先问“存档后开局 / 直接开局 / 取消”。
 3. 玩家点名的世界或题材：名称或关键词放进 `world_query`，不用先查世界列表。`NO_MATCH` 带 `candidates`：列出标题和一句话让玩家选，选定后用 `locks.world_id`。`NOT_FOUND`：提议最接近的世界或自定义世界（`references/custom_world.md`，放进 `custom_world`）。
-4. 该问的都答了再调用 `new-game`（只答了一部分就再问其余的，不替玩家选）：`{"request_id", "mode": "daily|pressure|random", "world_query" 或 "locks": {"world_id"}, "excludes": {"content_tags", "world_ids"}, "player": {"gender", "age", "identity_hint", "name", "title"}, "npc_gender_preference"}`，只写玩家提到的部分（“不要职场”转成 `excludes` 的标签 ID；“女性 NPC 为主”是 `mostly_female`）。“重开 N 号”：`{"request_id", "seed": N, "replay": true}`。`NO_MATCH`：停下，如实说哪条做不到、可以放宽什么，由玩家选，不替玩家放宽或改开自定义世界。
+4. 该问的都答了再调用 `new-game`（只答了一部分就再问其余的，不替玩家选）：`{"request_id", "mode": "daily|pressure|random", "world_query" 或 "locks": {"world_id"}, "excludes": {"content_tags", "world_ids"}, "player": {"gender", "age", "identity_hint", "name", "title"}, "npc_gender_preference"}`，只写玩家提到的部分（“不要职场”转成 `excludes` 的标签 ID，“轻松点”“不要灾难”是 `disaster`；“女性 NPC 为主”是 `mostly_female`）。“重开 N 号”：`{"request_id", "seed": N, "replay": true}`。`NO_MATCH`：停下，如实说哪条做不到、可以放宽什么，由玩家选，不替玩家放宽或改开自定义世界。
 5. 按返回的 `opening` 写开局：
 
         世界观：……（1–2 句，含 `rule_in_play` 这条规则在场景里起作用）

@@ -285,11 +285,11 @@
     },
     {
      "pattern": "{family}先生",
-     "gender": "any"
+     "gender": "male"
     },
     {
      "pattern": "{family}女士",
-     "gender": "any"
+     "gender": "female"
     }
    ],
    "age_range": [

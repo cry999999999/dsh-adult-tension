@@ -322,6 +322,32 @@ class MetaCommandTest(unittest.TestCase):
             json.dumps(debug_view, ensure_ascii=False)  # the whole view can be written out
             self.assertEqual(session(ctx, sid)["turn"], 1)
 
+    def test_style_preferences_change_how_it_is_written_not_the_game(self):
+        # PRODUCT_SPEC 4.4: pace and explicitness only shape the writing.
+        with app() as ctx:
+            ids = Ids()
+            sid = open_game(ctx, ids, mode="daily", seed=12, preferences={"pace": "slow"})["session_id"]
+            shown = service.get_context(ctx, {"session_id": sid})["context"]["preferences"]
+            self.assertEqual(shown["pace"], "slow")
+            self.assertNotIn("explicitness", shown)  # absent means standard
+            before = session(ctx, sid)["state"]
+            changed = service.set_preferences(ctx, {"session_id": sid, "request_id": ids(), "expected_revision": 1, "pace": "direct", "explicitness": "explicit"})
+            self.assertEqual(changed["receipt"], "节奏：直接；尺度：直白")
+            self.assertEqual((changed["preferences"]["pace"], changed["preferences"]["explicitness"]), ("direct", "explicit"))
+            self.assertEqual((changed["revision"], changed["turn"]), (2, 1))
+            self.assertEqual((changed["context"]["preferences"]["pace"], changed["context"]["preferences"]["explicitness"]), ("direct", "explicit"))
+            after = session(ctx, sid)["state"]
+            for key in set(before) - {"preferences", "revision", "requests"}:
+                self.assertEqual(after[key], before[key], key)
+            self.assertEqual({k: v for k, v in after["preferences"].items() if k not in ("pace", "explicitness")}, {k: v for k, v in before["preferences"].items() if k not in ("pace", "explicitness")})
+            settings = [s for s in service.status(ctx, {"session_id": sid, "level": "detail"})["sections"] if s["title"] == "设置"][0]["items"]
+            self.assertIn("节奏：直接", settings)
+            self.assertIn("尺度：直白", settings)
+            with self.assertRaises(AppError) as caught:
+                service.set_preferences(ctx, {"session_id": sid, "request_id": ids(), "expected_revision": 2, "pace": "fast"})
+            self.assertEqual(caught.exception.details[0]["path"], "$.pace")
+            self.assertEqual(session(ctx, sid)["revision"], 2)
+
     def test_bad_meta_inputs(self):
         with app() as ctx:
             ids = Ids()
@@ -447,6 +473,40 @@ class NewGameCommandTest(unittest.TestCase):
             self.assertIn("自定义世界", none["hint"])
             # under the development switch each world says whether it is released
             self.assertTrue(all("status" in w for w in service.list_worlds(ctx, {"include_drafts": True})["worlds"]))
+
+    def test_the_world_list_browses_by_content_tag(self):
+        released = {w["id"]: w for w in STORE.index()["worlds"] if w["status"] == "released"}
+        labels = {t["id"]: t["label"] for t in STORE.tags()["tags"]}
+        with app() as ctx:
+            listed = service.list_worlds(ctx, {})
+            counts = {t["id"]: t["count"] for t in listed["tag_counts"]}
+            self.assertEqual(counts["supernatural"], sum("supernatural" in w["content_tags"] for w in released.values()))
+            self.assertEqual([t["count"] for t in listed["tag_counts"]], sorted(counts.values(), reverse=True))
+            self.assertTrue(all(t["label"] == labels[t["id"]] for t in listed["tag_counts"]))
+            # with: every listed world carries all the tags
+            uncanny = service.list_worlds(ctx, {"tags": ["supernatural"]})
+            self.assertEqual(uncanny["matched"], counts["supernatural"])
+            self.assertEqual(len(uncanny["worlds"]), counts["supernatural"])
+            self.assertTrue(all("supernatural" in released[w["id"]]["content_tags"] for w in uncanny["worlds"]))
+            self.assertEqual({t["id"]: t["count"] for t in uncanny["tag_counts"]}["supernatural"], counts["supernatural"])
+            # without: none of the listed worlds carries any of them
+            calm = service.list_worlds(ctx, {"exclude_tags": ["disaster", "violence"]})
+            self.assertEqual(calm["matched"], sum(not {"disaster", "violence"} & set(w["content_tags"]) for w in released.values()))
+            self.assertTrue(all(not {"disaster", "violence"} & set(released[w["id"]]["content_tags"]) for w in calm["worlds"]))
+            self.assertNotIn("disaster", {t["id"] for t in calm["tag_counts"]})
+            # tags narrow first, then the query ranks what is left
+            both = service.list_worlds(ctx, {"query": "港口", "exclude_tags": ["disaster"]})
+            self.assertTrue(all("disaster" not in released[w["id"]]["content_tags"] for w in both["worlds"]))
+            self.assertLessEqual(both["matched"], service.list_worlds(ctx, {"query": "港口"})["matched"])
+            nothing = service.list_worlds(ctx, {"tags": ["supernatural", "infidelity", "gambling"]})
+            if not nothing["worlds"]:
+                self.assertEqual(nothing["matched"], 0)
+                self.assertIn("标签", nothing["hint"])
+            # an unknown tag would silently filter nothing: refused with the list
+            with self.assertRaises(AppError) as caught:
+                service.list_worlds(ctx, {"tags": ["ghosts"], "exclude_tags": ["supernatural", "nope"]})
+            self.assertEqual([d["path"] for d in caught.exception.details], ["$.tags[0]", "$.exclude_tags[1]"])
+            self.assertIn("supernatural（超自然）", caught.exception.details[0]["hint"])
 
     def test_replay_restores_the_recorded_conditions(self):
         with app() as ctx:

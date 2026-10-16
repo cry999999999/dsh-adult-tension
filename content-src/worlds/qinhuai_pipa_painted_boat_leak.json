@@ -214,7 +214,7 @@
         },
         {
           "pattern": "{given}公子",
-          "gender": "any"
+          "gender": "male"
         }
       ],
       "age_range": [
@@ -240,7 +240,7 @@
       "title_patterns": [
         {
           "pattern": "{family}水哥",
-          "gender": "any"
+          "gender": "male"
         },
         {
           "pattern": "{given}水手",
@@ -1297,7 +1297,7 @@
       "stakes": {
         "resource_gap": "行首随身带有特制传世纯银拔销扳手，掌墨工匠具备丰富的榫卯应力化解手法与器械破拆技巧。",
         "limit_gap": "行首被咬死裙摆牵绊无法挪步，船体持续倾斜导致立足点日益湿滑狭小。",
-        "meeting_reason": "巡江官差奉命随船巡防，第一夜就站在船头听完了一整曲《十面埋伏》，行首谢幕时冷冷问了一句：官爷也懂琵琶？",
+        "meeting_reason": "巡江官差奉命随船巡防，第一夜就站在船头听完了一整曲《十面埋伏》，行首谢幕时冷冷问了一句：大人也懂琵琶？",
         "irreplaceable_goal": "在江水漫过二层楼板前撬脱转轴铜销，助行首脱困并保全名琴无虞。"
       },
       "relations": [
@@ -2309,7 +2309,7 @@
       "kind": "approach",
       "slot": "courtesan_liu_xianxian",
       "location_ids": [],
-      "text": "{npc.name}把一杯桂花酿推过来，杏眼一挑：官爷不喝，是嫌奴家的酒不干净？"
+      "text": "{npc.name}把一杯桂花酿推过来，杏眼一挑：大人不喝，是嫌奴家的酒不干净？"
     },
     {
       "id": "hook_xianxian_lantern_river",

@@ -2284,6 +2284,52 @@
    ],
    "title": "内外推拉力矩节奏失衡导致卡舌反咬危机",
    "trigger": "若外侧人员过早暴力外拉门扇而内侧自锁舌未完全挑出卡槽，巨力将把楔块死死别在倒钩齿内无法复位。"
+  },
+  {
+   "choice": "把阁楼上的货当众搬下来点数，还是先查出照片是谁拍的",
+   "exits": [
+    {
+     "cost": "开门要晚一个钟头，排了一夜的人会骂一整天",
+     "option": "当众开箱点数"
+    },
+    {
+     "cost": "照片是店里自己人拍的，店里要少一个人",
+     "option": "查出照片是谁拍的"
+    }
+   ],
+   "far": {
+    "consequence": "首发当天就上了热搜，品牌方收回下一季的首发授权",
+    "due_days": 3,
+    "trigger": "传言没压下去"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_wanqing_warm_tea",
+    "hook_wanqing_hidden_badge",
+    "hook_wanqing_loft_curtain"
+   ],
+   "id": "p_scalper_rumor",
+   "immediate": {
+    "minutes": 5,
+    "text": "收银主管在楼下喊，有人在拍卷帘门"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_loft_little_bedroom",
+    "loc_anime_merch_loft_storage_floor"
+   ],
+   "near": {
+    "deadline_minutes": 120,
+    "text": "十点开门"
+   },
+   "objective": "在十点开门之前，让门外的长队相信每一枚都在这里",
+   "source": "rumor",
+   "start_minute": 480,
+   "tags": [],
+   "title": "黄牛传言",
+   "trigger": "早上八点，排队群里有人贴出一张阁楼货架的照片，说限量款早被店里留给了黄牛，门外的队伍开始骚动"
   }
  ],
  "region": "动漫街区旗舰店二层钢结构周边仓储阁楼与货运升降吊门通道",

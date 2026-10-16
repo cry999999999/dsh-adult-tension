@@ -1879,7 +1879,7 @@
     "pattern": "阿{given_last}"
    },
    {
-    "gender": "any",
+    "gender": "female",
     "pattern": "{family}家少夫人"
    },
    {

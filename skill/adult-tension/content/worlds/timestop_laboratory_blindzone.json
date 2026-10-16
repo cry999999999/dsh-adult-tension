@@ -1924,7 +1924,7 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "any",
+    "gender": "female",
     "pattern": "女皇总监"
    },
    {

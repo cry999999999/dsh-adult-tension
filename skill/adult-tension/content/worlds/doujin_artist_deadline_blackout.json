@@ -1646,7 +1646,7 @@
      "pattern": "{family}老师"
     },
     {
-     "gender": "any",
+     "gender": "female",
      "pattern": "{given}太太"
     }
    ]
@@ -1671,7 +1671,7 @@
    "social_position": "equal",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}先生"
     },
     {

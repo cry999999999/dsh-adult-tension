@@ -2072,6 +2072,52 @@
    ],
    "title": "航海六分仪特制合金钢扳手濒临屈服断裂",
    "trigger": "蝶形螺母极为坚硬，两人施加的全身反向力矩让这柄三毫米厚特制淬火铬钒钢扳手承受了超过六百兆帕的极限抗弯剪切力，卡槽边缘发出尖锐微鸣濒临塑性脆断。"
+  },
+  {
+   "choice": "以接班人的名义先签字认下，还是查清货损是不是风暴之前就有",
+   "exits": [
+    {
+     "cost": "叔伯们会说，接班人第一次掌船就赔了三千万",
+     "option": "签字先认下"
+    },
+    {
+     "cost": "日志里也记着你们两个那一夜在哪里",
+     "option": "请老陈翻机舱日志"
+    }
+   ],
+   "far": {
+    "consequence": "这笔账若算在验收的人头上，水手长的牌照和千金的接班都要重新讨论",
+    "due_days": 4,
+    "trigger": "董事会表决"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_mingchu_winter_melon",
+    "hook_yuan_rope_knot"
+   ],
+   "id": "p_cargo_damage_claim",
+   "immediate": {
+    "minutes": 5,
+    "text": "郑襄理不肯坐，站在门边等回复"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_owner_suite_cabin"
+   ],
+   "near": {
+    "deadline_minutes": 180,
+    "text": "中午十二点，霍家董事会开会"
+   },
+   "objective": "在霍家董事会开会之前，决定这三千万由谁来认",
+   "source": "money",
+   "start_minute": 540,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "货主的索赔函",
+   "trigger": "风球除下的第二天早上，郑襄理把一封索赔函放在船东套房的茶几上：货损三千万，要霍家先认，再去谈保险"
   }
  ],
  "region": "香港青衣霍家船厂浮船坞里进坞大修的三万吨级散货轮二十米深主货舱底板区",

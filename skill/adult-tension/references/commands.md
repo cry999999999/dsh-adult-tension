@@ -29,7 +29,7 @@
 | `new-game` | create | 必填 | 开局 | `--include-drafts` |
 | `save-slot` | session_write | 必填 | 存档（省略名字时存到当前槽或自动命名） | — |
 | `set-boundary` | session_write | 必填 | 登记或撤销硬边界 | — |
-| `set-preferences` | session_write | 必填 | 内心可见、叙事助手、离屏推演、语态、人称、配对偏好 | — |
+| `set-preferences` | session_write | 必填 | 内心可见、叙事助手、离屏推演、语态、人称、配对偏好、节奏、尺度 | — |
 | `set-safety` | session_write | 必填 | 暂停、恢复、换个场景 | — |
 | `smoke` | dev | 可选 | 在临时数据目录用假叙述者跑一条短局 | `--seed`、`--turns` |
 | `status` | read | 必填 | 状态：brief 六行 / detail 状态+ / debug 调试 | — |
@@ -128,6 +128,8 @@
 |---|---|---|---|
 | `include_drafts` | 布尔 | 否，默认 `false` |  |
 | `query` | 字符串，≤40 字 或 null | 否，默认 `null` | 玩家问某类题材、时代、地方时的关键词（例如“港口”“民国”），与 new-game 的 world_query 同一套匹配；只列出对得上的世界，最相关的在前，最多 20 个 |
+| `tags` | 数组（字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40}，0–10 项） | 否，默认 `[]` | 内容标签 ID（见返回的 tag_counts），只列出全都带的世界；“有超自然的”是 supernatural |
+| `exclude_tags` | 数组（字符串，≤40 字，ASCII 小写短标识 [a-z0-9_]{1,40}，0–20 项） | 否，默认 `[]` | 内容标签 ID，只列出一个都不带的世界；“不要灾难”是 disaster |
 
 ### `load-slot`
 
@@ -193,6 +195,8 @@
 | `assistant` | 布尔 | 否 |  |
 | `offscreen_simulation` | 布尔 | 否 |  |
 | `person` | 枚举：`second` / `first` / `third` | 否 |  |
+| `pace` | 枚举：`slow` / `standard` / `direct` | 否 | 节奏：slow 慢热 / standard 标准 / direct 直接；只影响写法 |
+| `explicitness` | 枚举：`subtle` / `standard` / `explicit` | 否 | 尺度：subtle 含蓄 / standard 标准 / explicit 直白；只影响写法 |
 
 ### `save-slot`
 
@@ -229,6 +233,8 @@
 | `offscreen_simulation` | 布尔 | 否 |  |
 | `person` | 枚举：`second` / `first` / `third` | 否 |  |
 | `npc_gender_preference` | 枚举：`any` / `mostly_female` / `mostly_male` / `female_only` / `male_only` / `mixed` | 否 |  |
+| `pace` | 枚举：`slow` / `standard` / `direct` | 否 | 节奏：slow 慢热 / standard 标准 / direct 直接；只影响写法，不影响规则 |
+| `explicitness` | 枚举：`subtle` / `standard` / `explicit` | 否 | 尺度：subtle 含蓄 / standard 标准 / explicit 直白；只影响写法，不影响规则 |
 | `voice` | 对象（语态） | 否 |  |
 
 #### `voice` 的字段

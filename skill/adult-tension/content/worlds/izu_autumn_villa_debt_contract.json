@@ -1613,7 +1613,7 @@
     "villa_master_bedroom_western_suite"
    ],
    "slot": "silent_tea_master_maid_confidante",
-   "text": "{silent_tea_master_maid_confidante.name}手托黑漆描金茶盘无声步出回廊暗影，黑色长袍制服一丝不苟，借递送热毛巾之机以极低语调平静开口：“执事先生，大小姐今夜滴水未进，方才在梳妆台前咳了血。”"
+   "text": "{silent_tea_master_maid_confidante.name}手托黑漆描金茶盘无声步出回廊暗影，黑色长袍制服一丝不苟，借递送热毛巾之机以极低语调平静开口：“执事大人，大小姐今夜滴水未进，方才在梳妆台前咳了血。”"
   },
   {
    "id": "hk_aunt_rosary_approach",
@@ -1664,7 +1664,7 @@
     "villa_second_floor_long_corridor"
    ],
    "slot": "destitute_family_notary_solicitor",
-   "text": "{destitute_family_notary_solicitor.name}满头虚汗连滚带爬奔至你身侧，拉住你的衣角哀求：“特使先生！当主阁下！少佐的枪已经上了膛，那是真敢开枪杀人的疯子！随便在草案上签个字罢，在下上有八十老母啊！”"
+   "text": "{destitute_family_notary_solicitor.name}满头虚汗连滚带爬奔至你身侧，拉住你的衣角哀求：“特使大人！当主阁下！少佐的枪已经上了膛，那是真敢开枪杀人的疯子！随便在草案上签个字罢，在下上有八十老母啊！”"
   },
   {
    "id": "hk_aunt_whisper_approach",
@@ -1695,7 +1695,7 @@
     "villa_detached_bamboo_tea_pavilion"
    ],
    "slot": "silent_tea_master_maid_confidante",
-   "text": "{silent_tea_master_maid_confidante.name}在长廊转角把一串黄铜钥匙塞入你掌心，神情沉毅低语：“特使先生！宪兵正在撬一楼酒窖搜枪柜，快拿这把十字铜钥匙登上茶室顶棚截断退路，老奴在楼下替您拖十分钟！”"
+   "text": "{silent_tea_master_maid_confidante.name}在长廊转角把一串黄铜钥匙塞入你掌心，神情沉毅低语：“特使大人！宪兵正在撬一楼酒窖搜枪柜，快拿这把十字铜钥匙登上茶室顶棚截断退路，老奴在楼下替您拖十分钟！”"
   },
   {
    "id": "hk_lawyer_briefcase_request",
@@ -1908,7 +1908,7 @@
     "pattern": "{family}执事"
    },
    {
-    "gender": "any",
+    "gender": "female",
     "pattern": "大小姐"
    },
    {
@@ -1948,7 +1948,7 @@
      "pattern": "{family}执事"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}先生"
     }
    ]
@@ -1977,7 +1977,7 @@
      "pattern": "{family}当主"
     },
     {
-     "gender": "any",
+     "gender": "female",
      "pattern": "大小姐"
     }
    ]
@@ -2006,7 +2006,7 @@
      "pattern": "{family}少佐"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}少爷"
     }
    ]
@@ -2035,7 +2035,7 @@
      "pattern": "{family}掌事"
     },
     {
-     "gender": "any",
+     "gender": "female",
      "pattern": "{family}女史"
     }
    ]
@@ -2064,7 +2064,7 @@
      "pattern": "{family}律师"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}先生"
     }
    ]

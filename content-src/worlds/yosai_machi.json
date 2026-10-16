@@ -198,7 +198,7 @@
     },
     {
      "pattern": "{family}先生",
-     "gender": "any"
+     "gender": "male"
     }
    ],
    "age_range": [
@@ -256,7 +256,7 @@
     },
     {
      "pattern": "{family}先生",
-     "gender": "any"
+     "gender": "male"
     }
    ],
    "age_range": [

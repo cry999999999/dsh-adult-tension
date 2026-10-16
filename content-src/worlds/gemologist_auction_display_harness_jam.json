@@ -170,7 +170,7 @@
         },
         {
           "pattern": "{given}先生",
-          "gender": "any"
+          "gender": "male"
         }
       ],
       "age_range": [
@@ -195,7 +195,7 @@
       "title_patterns": [
         {
           "pattern": "{family}小姐",
-          "gender": "any"
+          "gender": "female"
         },
         {
           "pattern": "{given}",

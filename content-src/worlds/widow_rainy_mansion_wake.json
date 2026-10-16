@@ -93,7 +93,7 @@
     "nickname_patterns": [
       {
         "pattern": "{family}夫人",
-        "gender": "any"
+        "gender": "female"
       },
       {
         "pattern": "{family}少掌柜",
@@ -204,7 +204,7 @@
       "title_patterns": [
         {
           "pattern": "分家少爷",
-          "gender": "any"
+          "gender": "male"
         },
         {
           "pattern": "旁系青年",
@@ -216,7 +216,7 @@
         23
       ],
       "social_position": "high",
-      "baseline": "年满二十一周岁出身九条分家但厌恶父辈巧取豪夺行径的年轻公子，不顾家族逼迫执意留在灵堂护佑遗孀。",
+      "baseline": "年满二十一周岁出身九条分家但厌恶父辈巧取豪夺行径的年轻子弟，不顾家族逼迫执意留在灵堂护佑遗孀。",
       "resources": [
         "一柄随身携带的防身纯银雕花手杖剑",
         "一枚在九条旗下银座洋行拥有大额提现权的分家金质印章"

@@ -2146,6 +2146,49 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_adjuster_questions",
+      "title": "公估人的三个问题",
+      "source": "person",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_mine_mouth_chalet"
+      ],
+      "trigger": "获救后的第二天，保险公估人敲开矿洞口的木屋，第一个问题是：地震的时候，那颗烟晶为什么不在保险柜里，而在鉴定台上",
+      "objective": "在公估报告发回苏黎世之前，让理赔不落空",
+      "choice": "承认是自己不肯中断评级，还是说那是安防总工的安排",
+      "immediate": {
+        "text": "公估人把录音笔放在桌上，说只问三个问题",
+        "minutes": 5
+      },
+      "near": {
+        "text": "晚上八点，公估报告发回苏黎世",
+        "deadline_minutes": 600
+      },
+      "far": {
+        "trigger": "报告认定违规操作",
+        "consequence": "理赔被拒，鉴定师的签名三年内在业内没人敢用",
+        "due_days": 7
+      },
+      "exits": [
+        {
+          "option": "承认是自己的决定",
+          "cost": "你的评级证书上会多一行备注"
+        },
+        {
+          "option": "交出安防日志",
+          "cost": "日志里有总工替你关掉一次警报的记录"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": ["hook_manning_mulled_wine", "hook_manning_crystal_gift", "hook_manning_chalet_door"],
+      "start_minute": 600,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

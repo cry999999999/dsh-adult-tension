@@ -176,6 +176,10 @@ def brief(state, content, save=None):
         "save": save or {"current_slot": None, "turns_since_save": 0},
         "requests": dict(state["requests"]),
     }
+    # Style preferences appear only when the player changed them: absent means standard.
+    for key in ("pace", "explicitness"):
+        if state["preferences"][key] != "standard":
+            context["preferences"][key] = state["preferences"][key]
     chapters = state["memory"]["chapters"]
     if chapters and len(context["recent"]) < LIMITS["recent"]:
         # Right after a chapter closes its turns are archived; the chapter
@@ -541,6 +545,16 @@ def _full_steps(context, state):
             if not ({edge["from"], edge["to"]} & (onstage - {state["player_id"]})):
                 edge.pop("recent", None)
 
+    def present_npcs_carded():
+        # Everyone on stage with a card already has name, role, voice, stance
+        # and standing with the player there; the brief line keeps what the
+        # card lacks (mood, conditions).
+        carded = {c["id"] for c in context["characters"]}
+        context["present_npcs"] = [
+            {k: v for k, v in npc.items() if k in ("id", "mood", "conditions")} if npc["id"] in carded else npc
+            for npc in context["present_npcs"]
+        ]
+
     def leverage_offstage():
         # Who holds whom stays; what it rests on matters once one of them is here.
         onstage = set(state["scene"]["present"])
@@ -599,6 +613,7 @@ def _full_steps(context, state):
     yield npc_edges
     yield reasons_offstage
     yield leverage_offstage
+    yield present_npcs_carded
     yield from shrink_cards(True, _card_compact)
     # A crowded scene: everyone on stage but the most relevant person keeps
     # a summary, then a roster line.

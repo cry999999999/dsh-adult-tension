@@ -93,7 +93,7 @@
     "nickname_patterns": [
       {
         "pattern": "少夫人",
-        "gender": "any"
+        "gender": "female"
       },
       {
         "pattern": "首席顾问",
@@ -101,7 +101,7 @@
       },
       {
         "pattern": "大少爷",
-        "gender": "any"
+        "gender": "male"
       },
       {
         "pattern": "总管家",
@@ -146,7 +146,7 @@
       "title_patterns": [
         {
           "pattern": "{family}夫人",
-          "gender": "any"
+          "gender": "female"
         },
         {
           "pattern": "名门长媳",
@@ -204,7 +204,7 @@
       "title_patterns": [
         {
           "pattern": "{family}大少爷",
-          "gender": "any"
+          "gender": "male"
         },
         {
           "pattern": "裴大少",

@@ -224,7 +224,7 @@
       "title_patterns": [
         {
           "pattern": "{family}先生",
-          "gender": "any"
+          "gender": "male"
         },
         {
           "pattern": "{given}",

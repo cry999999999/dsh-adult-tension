@@ -58,7 +58,7 @@ _register("export-save", APP + "service", "export_save", "required", "read", "�
 _register("import-save", APP + "service", "import_save", "required", "create", "导入导出文件，得到一个新会话（可同时写入存档槽）", spec="IMPORT_SAVE")
 _register("set-boundary", APP + "service", "set_boundary", "required", "session_write", "登记或撤销硬边界", spec="SET_BOUNDARY")
 _register("set-safety", APP + "service", "set_safety", "required", "session_write", "暂停、恢复、换个场景", spec="SET_SAFETY")
-_register("set-preferences", APP + "service", "set_preferences", "required", "session_write", "内心可见、叙事助手、离屏推演、语态、人称、配对偏好", spec="SET_PREFERENCES")
+_register("set-preferences", APP + "service", "set_preferences", "required", "session_write", "内心可见、叙事助手、离屏推演、语态、人称、配对偏好、节奏、尺度", spec="SET_PREFERENCES")
 _register("status", APP + "service", "status", "required", "read", "状态：brief 六行 / detail 状态+ / debug 调试", spec="STATUS")
 _register(
     "verify-content",

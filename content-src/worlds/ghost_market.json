@@ -173,7 +173,7 @@
     },
     {
      "pattern": "卖水的{given}郎",
-     "gender": "any"
+     "gender": "male"
     }
    ],
    "age_range": [

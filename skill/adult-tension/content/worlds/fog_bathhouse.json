@@ -2048,7 +2048,7 @@
    "social_position": "equal",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{given}先生"
     },
     {
@@ -2106,12 +2106,16 @@
    "social_position": "high",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}先生"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{given}先生"
+    },
+    {
+     "gender": "female",
+     "pattern": "{family}女士"
     }
    ]
   },
@@ -2139,7 +2143,7 @@
      "pattern": "{family}副局长"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}先生"
     }
    ]

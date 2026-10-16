@@ -88,6 +88,12 @@ SCENE_BREAK_MINUTES = 60
 COOLDOWN_TURNS = 3
 MAX_FIX_ATTEMPTS = 2
 
+# Text ceilings, in characters without IDs and tags: a card or a pressure on
+# stage goes into every full context (20 KB), so a long one squeezes the
+# others (PROGRESS: 全部按建议执行（2026-10-16）).
+TEMPLATE_TEXT_MAX = 1800
+PRESSURE_TEXT_MAX = 450
+
 # Content minimums (CONTENT_BIBLE.md sections 3 and 5)
 FULL_MINIMUMS = {
     "rules": 4,

@@ -1778,7 +1778,7 @@
     "pattern": "{family}队长"
    },
    {
-    "gender": "any",
+    "gender": "female",
     "pattern": "{family}小姐"
    },
    {

@@ -1,5 +1,6 @@
 """doctor / version through the real entry script in fresh processes."""
 
+import hashlib
 import json
 import os
 import sqlite3
@@ -10,6 +11,8 @@ import unittest
 import _bootstrap  # noqa: F401
 from adult_tension import DB_SCHEMA_VERSION
 from adult_tension.application.fake_narrator import record
+from adult_tension.content.store import ContentStore
+from adult_tension.content.verify import verify_installed
 from helpers.cli import ENTRY, SKILL_ROOT, clean_env, run_cli
 from helpers.fs import copy_skill, temp_dir, unwritable_dir
 
@@ -131,6 +134,47 @@ class DoctorTest(unittest.TestCase):
             self.assertEqual(code, 10)
             self.assertEqual(env["error"]["code"], "CONTENT_ERROR")
             self.assertTrue(any("ghost_world" in d["path"] for d in env["error"]["details"]))
+
+    def test_only_worlds_changed_since_compile_are_validated_again(self):
+        # the compiler validated every world and recorded its digest; doctor
+        # validates only what differs, an opening still validates its world
+        with temp_dir() as tmp:
+            skill = copy_skill(tmp)
+            content_dir = os.path.join(skill, "content")
+            problems, summary = verify_installed(ContentStore(content_dir))
+            self.assertEqual((problems, summary["validated_worlds"]), ([], 0))
+            self.assertGreater(summary["released_worlds"], 0)
+            index_path = os.path.join(content_dir, "index.json")
+            with open(index_path, encoding="utf-8") as handle:
+                index = json.load(handle)
+            del index["worlds"][0]["sha256"]  # content compiled before digests: validated in full
+            with open(index_path, "w", encoding="utf-8") as handle:
+                json.dump(index, handle, ensure_ascii=False)
+            problems, summary = verify_installed(ContentStore(content_dir))
+            self.assertEqual((problems, summary["validated_worlds"]), ([], 1))
+            # a world broken together with its digest gets past doctor, never into a game
+            world_path = os.path.join(content_dir, "worlds", "harbor_night_shift.json")
+            with open(world_path, encoding="utf-8") as handle:
+                world = json.load(handle)
+            world["pressures"] = world["pressures"][:1] + [dict(world["pressures"][0], id="dangling", location_ids=["nowhere"])]
+            data = (json.dumps(world, ensure_ascii=False) + "\n").encode("utf-8")
+            with open(world_path, "wb") as handle:
+                handle.write(data)
+            entry = next(w for w in index["worlds"] if w["id"] == "harbor_night_shift")
+            entry["sha256"] = hashlib.sha256(data).hexdigest()
+            with open(index_path, "w", encoding="utf-8") as handle:
+                json.dump(index, handle, ensure_ascii=False)
+            self.assertEqual(verify_installed(ContentStore(content_dir))[0], [])
+            entry["sha256"] = "0" * 64  # its digest no longer matches: doctor reports it
+            with open(index_path, "w", encoding="utf-8") as handle:
+                json.dump(index, handle, ensure_ascii=False)
+            self.assertTrue(any("nowhere" in d["reason"] + d["path"] for d in verify_installed(ContentStore(content_dir))[0]))
+            entry["sha256"] = hashlib.sha256(data).hexdigest()
+            with open(index_path, "w", encoding="utf-8") as handle:
+                json.dump(index, handle, ensure_ascii=False)
+            payload = {"request_id": "req_broken_world", "mode": "pressure", "locks": {"world_id": "harbor_night_shift"}, "include_drafts": True}
+            code, env, _raw = run_cli(["new-game"], os.path.join(tmp, "data"), payload=payload, entry=os.path.join(skill, "scripts", "adult_tension.py"))
+            self.assertEqual((code, env["error"]["code"]), (10, "CONTENT_ERROR"))
 
     def test_a_deleted_location_is_reported_and_existing_games_play_on(self):
         # SKILL_PACKAGING.md 10: compiled content tampered after a game started

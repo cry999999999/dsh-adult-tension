@@ -1862,7 +1862,7 @@
      "pattern": "{family}学者"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{given}先生"
     }
    ]
@@ -1922,7 +1922,7 @@
      "pattern": "{family}老弟"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{given}小哥"
     }
    ]
@@ -2223,6 +2223,52 @@
    ],
    "title": "天坑直壁湿滑冰壁攀登滑坠深渊风险",
    "trigger": "数十丈垂直坚冰在强风撕扯下极度湿滑，解开锁扣后单绳攀登稍有踩空便会摔落天坑底部碎石堆。"
+  },
+  {
+   "choice": "护着考察队，还是交出那块从天池边敲下来的石头",
+   "exits": [
+    {
+     "cost": "宋教授的考察记录就缺了最要紧的一页",
+     "option": "交出那块石头"
+    },
+    {
+     "cost": "佟老爹得把自己年轻时坏过山规的旧事当众抖出来",
+     "option": "请佟老爹出面说情"
+    }
+   ],
+   "far": {
+    "consequence": "女把头的把头位子要被收回，考察队往后再也进不了这片老林子",
+    "due_days": 3,
+    "trigger": "拜山定下规矩"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_xueyuan_roe_deer",
+    "hook_xueyuan_red_rope",
+    "hook_hanzhou_sketch",
+    "hook_xueyuan_dugout_curtain"
+   ],
+   "id": "p_mountain_rule_rumor",
+   "immediate": {
+    "minutes": 10,
+    "text": "佟老爹在门外咳了一声，说他们是带着香和红绳来的"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_ginseng_dugout_hut"
+   ],
+   "near": {
+    "deadline_minutes": 300,
+    "text": "日头落山前，要在老爷府前拜山定规矩"
+   },
+   "objective": "在老把头们去老爷府拜山之前，把放山的规矩和考察队的事一起说清楚",
+   "source": "rumor",
+   "start_minute": 720,
+   "tags": [],
+   "title": "坏了山规的传言",
+   "trigger": "下山回屯子的第二天晌午，参帮的老把头们在地窨子外头蹲了一排：有人传话说，考察队在天池边敲石头，惊了山神，这才招来那场冰崩"
   }
  ],
  "region": "长白山天池万年冰川海拔两千米开阔天然大天坑底部石缝裂隙区",

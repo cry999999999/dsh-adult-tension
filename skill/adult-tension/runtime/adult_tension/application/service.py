@@ -11,6 +11,7 @@ The response (including the next context) is built before COMMIT so that the
 idempotency record stores exactly what the caller received.
 """
 
+import collections
 import hashlib
 import os
 import re
@@ -319,12 +320,12 @@ def _match_world_query(ctx, query, drafts):
     )
 
 
-def _unknown_excluded_tags(ctx, tags):
+def _unknown_excluded_tags(ctx, tags, path="$.excludes.content_tags"):
     """An unknown tag would exclude nothing, so the player's "不要 X" would silently fail."""
     labels = {t["id"]: t["label"] for t in ctx.content().tags()["tags"] if t["id"] != "custom"}
     hint = "可用：" + "、".join("%s（%s）" % (tid, label) for tid, label in labels.items())
     return [
-        detail("$.excludes.content_tags[%d]" % i, "未知内容标签：%s" % tag, hint, INVALID_INPUT)
+        detail("%s[%d]" % (path, i), "未知内容标签：%s" % tag, hint, INVALID_INPUT)
         for i, tag in enumerate(tags)
         if tag not in labels
     ]
@@ -397,7 +398,7 @@ def new_game(ctx, payload):
             opening_payload["footer"] += "（内容已更新，和之前的 %d 号开局不同）" % seed
         state["session_id"] = new_session_id(conn)
         prefs = payload["preferences"]
-        for key in ("inner_view", "assistant", "offscreen_simulation", "person"):
+        for key in ("inner_view", "assistant", "offscreen_simulation", "person", "pace", "explicitness"):
             if key in prefs:
                 state["preferences"][key] = prefs[key]
         repo.insert_session(conn, state, content, "new_game", now)
@@ -995,15 +996,27 @@ def list_worlds(ctx, payload):
     payload = validate(specs.LIST_WORLDS, payload)
     index = ctx.content().index()
     drafts = include_drafts(ctx, payload)
+    problems = _unknown_excluded_tags(ctx, payload["tags"], "$.tags") + _unknown_excluded_tags(ctx, payload["exclude_tags"], "$.exclude_tags")
+    if problems:
+        raise AppError(INVALID_INPUT, problems[0]["reason"], problems)
     worlds = [w for w in index["worlds"] if drafts or w["status"] == "released"]
     out = {"content_version": index["content_version"], "total": len(worlds)}
+    wanted, unwanted = set(payload["tags"]), set(payload["exclude_tags"])
+    if wanted or unwanted:
+        worlds = [w for w in worlds if wanted <= set(w["content_tags"]) and not unwanted & set(w["content_tags"])]
+    # what the listed worlds carry, for browsing by tag (before the query cut)
+    counts = collections.Counter(tag for w in worlds for tag in w["content_tags"])
+    labels = {t["id"]: t["label"] for t in ctx.content().tags()["tags"]}
+    out["tag_counts"] = [{"id": tag, "label": labels[tag], "count": n} for tag, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))]
     if payload["query"] is not None:
         # matched against the whole entry (title, era, place, full summary)
         scored = world_query_matches(worlds, payload["query"])
-        out["matched"] = len(scored)
         worlds = [entry for _score, entry in scored[:LIST_QUERY_LIMIT]]
-        if not scored:
-            out["hint"] = "没有对得上的世界：换个关键词，或不带 query 列出全部；都没有就提议最接近的世界或自定义世界，由玩家选"
+        out["matched"] = len(scored)
+    elif wanted or unwanted:
+        out["matched"] = len(worlds)
+    if "matched" in out and not out["matched"]:
+        out["hint"] = "没有对得上的世界：换个关键词或标签，或不带条件列出全部；都没有就提议最接近的世界或自定义世界，由玩家选"
     keys = ("id", "title", "modes", "status") if drafts else ("id", "title", "modes")
     out["worlds"] = [dict({k: w[k] for k in keys}, summary=one_line(w["summary"])) for w in worlds]
     return out

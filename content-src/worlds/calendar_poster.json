@@ -90,11 +90,11 @@
   "nickname_patterns": [
    {
     "pattern": "{family}先生",
-    "gender": "any"
+    "gender": "male"
    },
    {
     "pattern": "{family}小姐",
-    "gender": "any"
+    "gender": "female"
    },
    {
     "pattern": "阿{given_last}",
@@ -226,11 +226,11 @@
    "title_patterns": [
     {
      "pattern": "{family}先生",
-     "gender": "any"
+     "gender": "male"
     },
     {
      "pattern": "{family}小姐",
-     "gender": "any"
+     "gender": "female"
     }
    ],
    "age_range": [
@@ -259,11 +259,11 @@
     },
     {
      "pattern": "{family}先生",
-     "gender": "any"
+     "gender": "male"
     },
     {
      "pattern": "{family}小姐",
-     "gender": "any"
+     "gender": "female"
     }
    ],
    "age_range": [
@@ -288,7 +288,7 @@
    "title_patterns": [
     {
      "pattern": "{family}先生",
-     "gender": "any"
+     "gender": "male"
     },
     {
      "pattern": "{family}经理",

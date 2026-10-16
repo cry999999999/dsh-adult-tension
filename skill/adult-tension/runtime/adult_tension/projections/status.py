@@ -8,6 +8,7 @@ narrator, often action phrases, and read wrong in a receipt.
 
 from ..domain import clock as CL
 from ..domain import facts as FA
+from ..domain import meta
 from ..domain import state as SS
 from ..domain import structure as ST
 from . import context as CX
@@ -146,7 +147,8 @@ def detail_sections(state, content):
         {
             "title": "设置",
             "items": ["%s：%s" % (label, "开" if prefs[key] else "关") for key, label in PREFERENCE_WORDS.items()]
-            + ["人称：%s" % {"second": "第二人称", "first": "第一人称", "third": "第三人称"}[prefs["person"]]],
+            + ["人称：%s" % {"second": "第二人称", "first": "第一人称", "third": "第三人称"}[prefs["person"]]]
+            + ["节奏：%s" % meta.PACE_LABELS[prefs["pace"]], "尺度：%s" % meta.EXPLICITNESS_LABELS[prefs["explicitness"]]],
         }
     )
     return sections

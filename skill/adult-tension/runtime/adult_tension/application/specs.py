@@ -62,6 +62,8 @@ PREFERENCES = S.Obj(
         "assistant": F(S.Bool(), required=False),
         "offscreen_simulation": F(S.Bool(), required=False),
         "person": F(S.Enum(*ST.PERSONS), required=False),
+        "pace": F(S.Enum(*ST.PACES), required=False, desc="节奏：slow 慢热 / standard 标准 / direct 直接；只影响写法"),
+        "explicitness": F(S.Enum(*ST.EXPLICITNESS), required=False, desc="尺度：subtle 含蓄 / standard 标准 / explicit 直白；只影响写法"),
     },
     name="偏好",
 )
@@ -164,6 +166,8 @@ LIST_WORLDS = _obj(
             default=None,
             desc="玩家问某类题材、时代、地方时的关键词（例如“港口”“民国”），与 new-game 的 world_query 同一套匹配；只列出对得上的世界，最相关的在前，最多 20 个",
         ),
+        "tags": F(S.List(S.Id(), max_items=10, unique=True), required=False, default=[], desc="内容标签 ID（见返回的 tag_counts），只列出全都带的世界；“有超自然的”是 supernatural"),
+        "exclude_tags": F(S.List(S.Id(), max_items=20, unique=True), required=False, default=[], desc="内容标签 ID，只列出一个都不带的世界；“不要灾难”是 disaster"),
     },
     "list-worlds",
 )
@@ -207,6 +211,8 @@ SET_PREFERENCES = _obj(
         offscreen_simulation=F(S.Bool(), required=False),
         person=F(S.Enum(*ST.PERSONS), required=False),
         npc_gender_preference=F(S.Enum(*ST.NPC_GENDER_PREFERENCES), required=False),
+        pace=F(S.Enum(*ST.PACES), required=False, desc="节奏：slow 慢热 / standard 标准 / direct 直接；只影响写法，不影响规则"),
+        explicitness=F(S.Enum(*ST.EXPLICITNESS), required=False, desc="尺度：subtle 含蓄 / standard 标准 / explicit 直白；只影响写法，不影响规则"),
         voice=F(VOICE_CHANGE, required=False),
     ),
     "set-preferences",

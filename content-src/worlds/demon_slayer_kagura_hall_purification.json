@@ -101,7 +101,7 @@
       },
       {
         "pattern": "{family}师姐",
-        "gender": "any"
+        "gender": "female"
       },
       {
         "pattern": "{family}大人",

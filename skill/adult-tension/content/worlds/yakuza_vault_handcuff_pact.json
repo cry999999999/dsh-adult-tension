@@ -581,6 +581,79 @@
     "te_handcuff_bound_flesh_vs_yakuza_heir",
     "te_typhoon_seawater_inundation_vs_subm"
    ]
+  },
+  {
+   "chemistry": "台风把你困在了九条组的地下赌场里，警徽在这里一文不值。{ruthless_yakuza_heiress_vice_boss.name}让人收走了你的配枪，又亲手倒了一杯酒推过来；换牌间的衣柜后面，{underground_casino_inside_croupier.name}攥着一盘录像带，看你的眼神像看最后一条船。",
+   "id": "combo_7_npc_high_detective",
+   "identity_ids": [
+    "pc_veteran_harbor_police_detective"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 1
+     },
+     "b": "ruthless_yakuza_heiress_vice_boss",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 1
+     },
+     "reason": "你在码头盯了九条组五年，{ruthless_yakuza_heiress_vice_boss.name}的名字在你的卷宗里，你的脸也在九条组的照片墙上",
+     "stage": "acquainted"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 1
+     },
+     "b": "underground_casino_inside_croupier",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 2
+     },
+     "reason": "荷官认得你那件常年在港口晃的旧风衣，把你当成唯一能把录像带带出去的人",
+     "stage": "stranger"
+    },
+    {
+     "a": "ruthless_yakuza_heiress_vice_boss",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 1
+     },
+     "b": "underground_casino_inside_croupier",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 2
+     },
+     "reason": "荷官怕这位女若头，女若头也知道荷官在藏东西",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
+    "ruthless_yakuza_heiress_vice_boss",
+    "underground_casino_inside_croupier"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你要抓的是若头辅佐，不是眼前这两个人——可要抓到人，先得活着出去",
+    "limit_gap": "你不能空手回警署，也不能在这里动手抓人；{ruthless_yakuza_heiress_vice_boss.name}不能让组里知道自己跟条子做交易",
+    "meeting_reason": "你追着洗钱线索进赌场的那一刻，海水封死了出口",
+    "resource_gap": "{ruthless_yakuza_heiress_vice_boss.name}有赌场的人手和唯一的快艇，{underground_casino_inside_croupier.name}有若头辅佐出千的录像带，你只有警徽和二十年的码头人脉"
+   },
+   "tags": [
+    "crime",
+    "workplace_power"
+   ],
+   "tension_engine_ids": [
+    "te_police_harbor_dragnet_vs_speedboat",
+    "te_typhoon_seawater_inundation_vs_subm"
+   ]
   }
  ],
  "channels": [
@@ -2016,7 +2089,7 @@
      "pattern": "{family}老师"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}先生"
     }
    ]
@@ -2045,7 +2118,7 @@
      "pattern": "{family}若头"
     },
     {
-     "gender": "any",
+     "gender": "female",
      "pattern": "大姐头"
     }
    ]
@@ -2074,7 +2147,7 @@
      "pattern": "{family}组长"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}哥"
     }
    ]
@@ -2114,7 +2187,7 @@
     33
    ],
    "baseline": "一身紧身深红丝绒兔女郎削肩礼服，黑色丝袜多处被刮破，赤着双脚瑟瑟发抖蜷缩在换牌间衣柜后，面容娇媚却满是惊恐泪痕，手中紧紧攥着一把用于开启地下贵宾室后门的小型铜钥匙，掌握着若头辅佐出千贪污的直接证据。",
-   "gender": "any",
+   "gender": "female",
    "id": "pc_underground_casino_inside_croupier",
    "reputation": "手速飞快的王牌发牌手，在权贵与极道夹缝中卖笑求生，极具察言观色本领。",
    "resources": [
@@ -2128,11 +2201,11 @@
    "social_position": "low",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "female",
      "pattern": "荷官小姐"
     },
     {
-     "gender": "any",
+     "gender": "female",
      "pattern": "{family}小姐"
     }
    ]
@@ -2144,7 +2217,7 @@
    "choice": "是冒险开启被水压死死顶住的金库大门逆流涉水突围，还是手动过载抽水泵排空积水？",
    "exits": [
     {
-     "cost": "精算师右肩关节在剧烈水流对冲中受严重撞击挫伤脱臼，且大量污冰水倒灌冲毁部分现钞",
+     "cost": "精算师右肩关节在剧烈水流对冲中撞伤脱臼，且大量污冰水倒灌冲毁部分现钞",
      "option": "两人合力以钢管撬动金库减压平衡阀引入局部空气降低内外压差强行顶开大门"
     },
     {
@@ -2185,7 +2258,7 @@
     "bodily_harm"
    ],
    "title": "东京湾海水倒灌地下二层灭顶沉没危机",
-   "trigger": "超级台风海神引发五米风暴潮，东京湾海水突破防波堤疯狂灌入地下赌场排水管网，地下二层水位正以每五分钟上涨二十公分之恐怖速度攀升，一旦水位淹没金库防爆门通气孔，金库内人员将在冰冷咸水中彻底窒息溺亡。"
+   "trigger": "超级台风海神引发五米风暴潮，东京湾海水突破防波堤疯狂灌入地下赌场排水管网，地下二层水位正以每五分钟上涨二十公分的速度攀升，一旦水位淹没金库防爆门通气孔，金库内人员将在冰冷咸水中彻底窒息溺亡。"
   },
   {
    "choice": "是在钢门被切穿瞬间引爆防暴手雷反向轰杀枪手，还是利用通风管道绕后伏击？",
@@ -2279,7 +2352,7 @@
     "bodily_harm"
    ],
    "title": "积水大厅四百伏高压电缆断裂触电灭绝险情",
-   "trigger": "赌场大厅吊顶天花板在暴风雨中大面积垮塌，一根粗壮的四百伏主供电高压动力电缆砸落水中，电缆外皮破损滋滋作响在积水表面激荡起狂暴的高压漏电电弧，积水已具有致命高压，任何人涉水踏入均将瞬间被电击心脏骤停毙命。"
+   "trigger": "赌场大厅吊顶天花板在暴风雨中大面积垮塌，一根四百伏动力电缆砸落水中，破皮处滋滋作响，在积水表面激起漏电电弧，任何人涉水踏入都会被电得心脏骤停。"
   },
   {
    "choice": "是利用老巡查的警用通讯频道发布假警情调离警艇，还是强行驾快艇利用重装机动撞击突围？",
@@ -2290,11 +2363,11 @@
     },
     {
      "cost": "老巡查部长公然违抗警务条令放走重犯将面临警视厅开除公职取消全额退休金之严厉处分",
-     "option": "老巡查部长在泊位码头鸣枪以最高指挥官身份大声下令警艇让开航道声称正在执行特勤卧底押送"
+     "option": "老巡查部长在码头鸣枪，以指挥官身份喝令警艇让开航道，谎称正在执行卧底押送"
     }
    ],
    "far": {
-    "consequence": "全员被戴上手铐押上警车送入东京拘置所，面临终身监禁与极道总本部狱中刺杀之凄惨结局。",
+    "consequence": "全员被戴上手铐押上警车送入东京拘置所，面临终身监禁与总本部的狱中刺杀。",
     "due_days": 1,
     "trigger": "水警机动队完成全面合围收网"
    },
@@ -2316,7 +2389,7 @@
    ],
    "near": {
     "deadline_minutes": 35,
-    "text": "若半时辰内未能冲破水闸，重装特警机动队将投掷震撼弹空降强攻搜剿，彻底断绝出海生路。"
+    "text": "若半时辰内未能冲破水闸，特警机动队将投震撼弹强攻，彻底断绝出海生路。"
    },
    "objective": "引爆预设水雷炸开水闸防潜网，利用台风风浪盲区驾艇突破包围圈。",
    "source": "institution",
@@ -2326,7 +2399,7 @@
     "crime"
    ],
    "title": "东京水上警察署重装机动队封锁水闸包围网",
-   "trigger": "水上警察署两艘配备重机枪与大功率探照灯之大型巡逻艇已冒台风进驻品川码头外海出口，并在地下泊位出口水闸外布设钢丝防潜网，机动队已荷枪实弹封锁全部航道，勒令水下船坞内所有人员在十分钟内投降受审。"
+   "trigger": "水上警察署两艘架着重机枪和探照灯的巡逻艇冒着台风堵在品川码头外海，在泊位水闸外布下钢丝防潜网，机动队封锁全部航道，勒令船坞内的人十分钟内投降。"
   },
   {
    "choice": "是用金库内珍藏的烈性伏特加酒清洗脱水，还是利用雪茄打火机烘烤定影？",
@@ -2373,7 +2446,7 @@
     "bodily_harm"
    ],
    "title": "洗钱母账微缩胶卷底片受潮字迹乳化危机",
-   "trigger": "藏匿母账的特种塑料保护盒在争夺中被枪托砸裂一道微小缝隙，高盐分咸海水渗入胶卷内部，特种感光乳剂正在迅速起泡软化，若不立刻在十五分钟内用无水乙醇脱水并用强光固定，记载百亿黑金账户的唯一证据将化作一团漆黑废塑料胶水。"
+   "trigger": "藏匿母账的塑料保护盒在争夺中被枪托砸出一道细缝，咸海水渗入胶卷，特种感光乳剂正在迅速起泡软化，若不立刻在十五分钟内用无水乙醇脱水并用强光固定，记载百亿黑金账户的唯一证据将化作一团废胶。"
   },
   {
    "choice": "是两人卸去湿冷衣物在机房柴油机散热排气口旁贴身紧拥互相取暖，还是点燃木箱残骸取暖？",
@@ -2420,7 +2493,7 @@
     "bodily_harm"
    ],
    "title": "海水浸泡失温与重创失血性休克绝命状态",
-   "trigger": "连续四个小时浸泡在摄氏六度的冰冷海水中，加之手腕手铐勒伤撕裂与弹片创伤失血，女若头与精算师嘴唇青紫牙关剧烈打颤，核心体温已跌破三十五度重度失温警戒线，意识出现严重恍惚谵妄，随时面临心脏骤停与昏迷休克。"
+   "trigger": "在六度的海水里泡了四个小时，加上手铐勒伤与弹片失血，女若头与精算师嘴唇青紫牙关剧烈打颤，核心体温已跌破三十五度重度失温警戒线，意识恍惚谵妄，随时面临心脏骤停与昏迷休克。"
   }
  ],
  "region": "1990年代初东京湾品川废弃码头地下二层黑市赌场与重金库",

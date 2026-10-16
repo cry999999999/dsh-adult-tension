@@ -1645,7 +1645,7 @@
    "baseline": "每周三晚来教千金弹肖邦的钢琴教师，台风封路，只得留宿洋馆。",
    "gender": "any",
    "id": "pi_seneschal_fujiwara_tadashi",
-   "reputation": "温和守礼，府里上下都说这位先生看人不带轻慢。",
+   "reputation": "温和守礼，府里上下都说此人看人不带轻慢。",
    "resources": [
     "一架熟悉的贝森朵夫钢琴和琴凳下的工具匣",
     "千金练琴时说过的许多心事"
@@ -1657,7 +1657,7 @@
    "social_position": "equal",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}先生"
     },
     {

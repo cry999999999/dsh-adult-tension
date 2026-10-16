@@ -237,7 +237,7 @@
       "title_patterns": [
         {
           "pattern": "{family}修女",
-          "gender": "any"
+          "gender": "female"
         },
         {
           "pattern": "{given}助手",

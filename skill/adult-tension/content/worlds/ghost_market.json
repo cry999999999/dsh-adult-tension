@@ -2150,7 +2150,7 @@
      "pattern": "阿{given}"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "卖水的{given}郎"
     }
    ]

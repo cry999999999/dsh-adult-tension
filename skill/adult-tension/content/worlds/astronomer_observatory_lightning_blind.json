@@ -1777,7 +1777,7 @@
    "social_position": "high",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}灵台郎"
     },
     {
@@ -2142,6 +2142,57 @@
    ],
    "title": "高台湿滑狂风肆虐濒临坠下三十丈悬崖",
    "trigger": "暴雨将汉白玉与青铜平台冲刷得如同冰面般湿滑，狂风呼啸阵风达十二级，两人在施加杠杆力矩时下盘立足不稳，身体被狂风卷向只有半人高栏杆的高台边缘。"
+  },
+  {
+   "choice": "照实说是雷火咬死了齿轮，还是让一个人把错扛下来",
+   "exits": [
+    {
+     "cost": "簿上昨夜有一段两个人都停了笔的空白",
+     "option": "交出漏刻簿原本"
+    },
+    {
+     "cost": "老卢得承认那根主轴早该换，是自己拖了半年",
+     "option": "请老卢作证齿轮是被雷火烧坏的"
+    },
+    {
+     "cost": "你三年报时从无差错的名声，到今天为止",
+     "option": "自己在奏状上署名担下"
+    }
+   ],
+   "far": {
+    "consequence": "若没人担下这一刻，整个钦天监本季的俸禄都要罚，灵台的齿轮也不许再改一颗",
+    "due_days": 2,
+    "trigger": "奏状递到御前"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_zhaohua_water_clock",
+    "hook_cang_star_chart",
+    "hook_zhaohua_clock_room"
+   ],
+   "id": "p_late_quarter_inquiry",
+   "immediate": {
+    "minutes": 10,
+    "text": "廖太监站在漏刻值房门口，要看昨夜的漏刻簿原本"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_water_clock_duty_room"
+   ],
+   "near": {
+    "deadline_minutes": 180,
+    "text": "辰时，崔监正要把奏状递进宫"
+   },
+   "objective": "在监正把奏状递进宫之前，把晚了的那一刻说清楚",
+   "source": "institution",
+   "start_minute": 300,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "漏报的一刻",
+   "trigger": "五更时分，内侍省的廖太监带着两个小黄门上了摘星楼，手里拿着昨夜各坊的更筹记录：子时那一通鼓，全城晚了一刻"
   }
  ],
  "region": "长安城南郊皇室观象台摘星楼三十丈高空开敞式露天浑天台",

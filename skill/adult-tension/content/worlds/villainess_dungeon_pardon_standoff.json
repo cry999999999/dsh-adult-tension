@@ -2255,7 +2255,7 @@
    "requires": [
     "villainess_noble_cecilia"
    ],
-   "text": "在铁门弹开石门轰然大启的刹那，{villainess_noble_cecilia.name}脱力扑入怀中，微喘着气将额头贴在颈窝，轻声许诺今后骑士之誓只为先生一人而拔。"
+   "text": "在铁门弹开石门轰然大启的刹那，{villainess_noble_cecilia.name}脱力扑入怀中，微喘着气将额头贴在颈窝，轻声许诺今后骑士之誓只为你一人而拔。"
   },
   {
    "category": "意外",

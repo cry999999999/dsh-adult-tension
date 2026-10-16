@@ -1806,7 +1806,7 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "any",
+    "gender": "female",
     "pattern": "{family}夫人"
    },
    {
@@ -1893,7 +1893,7 @@
     21,
     23
    ],
-   "baseline": "年满二十一周岁出身九条分家但厌恶父辈巧取豪夺行径的年轻公子，不顾家族逼迫执意留在灵堂护佑遗孀。",
+   "baseline": "年满二十一周岁出身九条分家但厌恶父辈巧取豪夺行径的年轻子弟，不顾家族逼迫执意留在灵堂护佑遗孀。",
    "gender": "any",
    "id": "branch_cadet_rebellious_heir",
    "reputation": "性格孤傲桀骜不驯，常年游历海外思想开明，深知年轻夫人的委屈与坚忍。",
@@ -1908,7 +1908,7 @@
    "social_position": "high",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "分家少爷"
     },
     {

@@ -12,6 +12,23 @@ PRONOUN = {"female": "她", "male": "他", "nonbinary": "TA"}
 TA_COMPOUNDS = ("其他", "他人", "他乡", "他处", "他日", "他国", "他物", "吉他", "他方", "利他", "排他", "他们", "他杀", "无他", "他念")
 
 
+# Address terms that tell a person's gender ("{family}先生"): a title or
+# nickname pattern holding one must say whose gender it is for.
+MALE_ADDRESS = ("先生", "少爷", "公子", "老爷", "相公", "王子", "少帅", "哥", "兄", "郎", "爷", "叔", "伯", "男")
+FEMALE_ADDRESS = ("小姐", "夫人", "太太", "女士", "姑娘", "公主", "千金", "娘", "姐", "妹", "嫂", "婶", "姨", "女")
+# compounds that hold one of those characters without a gender
+NEUTRAL_ADDRESS = ("郎中",)
+
+
+def address_gender(text):
+    """"male" / "female" / "mixed" for a text holding gendered address terms, else None."""
+    for neutral in NEUTRAL_ADDRESS:
+        text = text.replace(neutral, "")
+    male = any(term in text for term in MALE_ADDRESS)
+    female = any(term in text for term in FEMALE_ADDRESS)
+    return "mixed" if male and female else "male" if male else "female" if female else None
+
+
 def pronoun(gender):
     return PRONOUN.get(gender, "TA")
 

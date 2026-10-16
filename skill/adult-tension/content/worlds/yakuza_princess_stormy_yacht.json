@@ -1866,7 +1866,7 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "any",
+    "gender": "female",
     "pattern": "{family}大小姐"
    },
    {
@@ -1997,7 +1997,7 @@
    "social_position": "high",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}先生"
     },
     {

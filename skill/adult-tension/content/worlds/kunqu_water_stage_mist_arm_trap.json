@@ -1912,7 +1912,7 @@
      "pattern": "{family}总"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{given}先生"
     }
    ]
@@ -1995,7 +1995,7 @@
    "social_position": "low",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "female",
      "pattern": "{family}船娘"
     },
     {

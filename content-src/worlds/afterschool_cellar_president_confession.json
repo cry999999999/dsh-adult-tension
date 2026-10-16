@@ -204,7 +204,7 @@
       "title_patterns": [
         {
           "pattern": "名门公子",
-          "gender": "any"
+          "gender": "male"
         },
         {
           "pattern": "副干事长",

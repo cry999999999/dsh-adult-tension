@@ -93,7 +93,7 @@
     "nickname_patterns": [
       {
         "pattern": "圣女{family}",
-        "gender": "any"
+        "gender": "female"
       },
       {
         "pattern": "{family}阁下",

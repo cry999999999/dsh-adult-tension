@@ -1846,7 +1846,7 @@
      "pattern": "{family}主任"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{given}先生"
     }
    ]

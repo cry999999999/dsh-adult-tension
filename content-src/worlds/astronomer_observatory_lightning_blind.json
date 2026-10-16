@@ -147,7 +147,7 @@
       "title_patterns": [
         {
           "pattern": "{family}灵台郎",
-          "gender": "any"
+          "gender": "male"
         },
         {
           "pattern": "{given}大人",
@@ -2021,6 +2021,53 @@
       "tags": [
         "disaster",
         "workplace"
+      ]
+    },
+    {
+      "id": "p_late_quarter_inquiry",
+      "title": "漏报的一刻",
+      "source": "institution",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_water_clock_duty_room"
+      ],
+      "trigger": "五更时分，内侍省的廖太监带着两个小黄门上了摘星楼，手里拿着昨夜各坊的更筹记录：子时那一通鼓，全城晚了一刻",
+      "objective": "在监正把奏状递进宫之前，把晚了的那一刻说清楚",
+      "choice": "照实说是雷火咬死了齿轮，还是让一个人把错扛下来",
+      "immediate": {
+        "text": "廖太监站在漏刻值房门口，要看昨夜的漏刻簿原本",
+        "minutes": 10
+      },
+      "near": {
+        "text": "辰时，崔监正要把奏状递进宫",
+        "deadline_minutes": 180
+      },
+      "far": {
+        "trigger": "奏状递到御前",
+        "consequence": "若没人担下这一刻，整个钦天监本季的俸禄都要罚，灵台的齿轮也不许再改一颗",
+        "due_days": 2
+      },
+      "exits": [
+        {
+          "option": "交出漏刻簿原本",
+          "cost": "簿上昨夜有一段两个人都停了笔的空白"
+        },
+        {
+          "option": "请老卢作证齿轮是被雷火烧坏的",
+          "cost": "老卢得承认那根主轴早该换，是自己拖了半年"
+        },
+        {
+          "option": "自己在奏状上署名担下",
+          "cost": "你三年报时从无差错的名声，到今天为止"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": ["hook_zhaohua_water_clock", "hook_cang_star_chart", "hook_zhaohua_clock_room"],
+      "start_minute": 300,
+      "tags": [
+        "workplace_power"
       ]
     }
   ],

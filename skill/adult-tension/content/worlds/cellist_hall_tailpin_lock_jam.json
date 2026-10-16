@@ -1912,7 +1912,7 @@
      "pattern": "{family}总经理"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{given}先生"
     }
    ]

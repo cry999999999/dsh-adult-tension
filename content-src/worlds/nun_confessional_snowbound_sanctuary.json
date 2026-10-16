@@ -93,7 +93,7 @@
     "nickname_patterns": [
       {
         "pattern": "{family}修女",
-        "gender": "any"
+        "gender": "female"
       },
       {
         "pattern": "{family}修士",

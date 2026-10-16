@@ -2079,11 +2079,11 @@
      "pattern": "{family}总"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}先生"
     },
     {
-     "gender": "any",
+     "gender": "female",
      "pattern": "{family}女士"
     }
    ]

@@ -2154,6 +2154,47 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_license_review_rejected",
+      "title": "监修意见",
+      "source": "person",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": ["loc_studio_loft_bedroom"],
+      "trigger": "展前一天上午，版权方的郑监修发来一页意见：配色和官方设定差了两个色号，不改就不给授权编号，尾款也一起压着",
+      "objective": "在展会锁定展品名单之前，让这尊手办拿到授权编号",
+      "choice": "按官方设定连夜重喷，还是拿着配色稿去跟版权方硬谈",
+      "immediate": {
+        "text": "郑监修的视频电话已经在桌上震了第三遍",
+        "minutes": 3
+      },
+      "near": {
+        "text": "下午六点，展会锁定展品名单",
+        "deadline_minutes": 480
+      },
+      "far": {
+        "trigger": "展品名单锁定",
+        "consequence": "展位空着，五个通宵的尾款和下一单合作一起没了",
+        "due_days": 2
+      },
+      "exits": [
+        {
+          "option": "连夜按官方设定重喷",
+          "cost": "手调的那层渐变要全部洗掉，再熬第六个通宵"
+        },
+        {
+          "option": "把跟拍博主录的上色过程发给版权方看",
+          "cost": "视频里也拍到了喷漆房出事那一夜"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": ["hook_lingxi_mask_mark", "hook_lingxi_figure_face", "hook_lingxi_loft_curtain"],
+      "start_minute": 600,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

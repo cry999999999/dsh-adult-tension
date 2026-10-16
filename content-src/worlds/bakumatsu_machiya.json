@@ -187,7 +187,7 @@
       "title_patterns": [
         {
           "pattern": "{family}兄",
-          "gender": "any"
+          "gender": "male"
         },
         {
           "pattern": "{given}",
@@ -216,7 +216,7 @@
       "title_patterns": [
         {
           "pattern": "{family}先生",
-          "gender": "any"
+          "gender": "male"
         },
         {
           "pattern": "{given}",
@@ -245,7 +245,7 @@
       "title_patterns": [
         {
           "pattern": "{family}先生",
-          "gender": "any"
+          "gender": "male"
         },
         {
           "pattern": "阿{given}",

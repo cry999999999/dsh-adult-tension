@@ -1800,7 +1800,7 @@
    "social_position": "low",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "female",
      "pattern": "{family}修女"
     },
     {

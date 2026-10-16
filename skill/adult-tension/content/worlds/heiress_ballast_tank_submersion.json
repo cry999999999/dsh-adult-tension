@@ -1795,11 +1795,11 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "any",
+    "gender": "female",
     "pattern": "{family}大小姐"
    },
    {
-    "gender": "any",
+    "gender": "male",
     "pattern": "{family}少爷"
    },
    {

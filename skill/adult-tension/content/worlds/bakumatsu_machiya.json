@@ -2233,7 +2233,7 @@
    "social_position": "low",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}兄"
     },
     {
@@ -2262,7 +2262,7 @@
    "social_position": "equal",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}先生"
     },
     {
@@ -2291,7 +2291,7 @@
    "social_position": "equal",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}先生"
     },
     {

@@ -1588,7 +1588,7 @@
     "compartment_seven_luxury_sleeper"
    ],
    "slot": "brutal_gendarme_commander_karl",
-   "text": "{brutal_gendarme_commander_karl.name}枪口顶在公文箱锁扣上冷笑道：“外交官先生，别装睡了！把你的结婚证明和随行夫人的护照拿出来！若是名字对不上一个字母，老子立刻请你们下车吃枪子！”"
+   "text": "{brutal_gendarme_commander_karl.name}枪口顶在公文箱锁扣上冷笑道：“外交官，别装睡了！把你的结婚证明和随行夫人的护照拿出来！若是名字对不上一个字母，老子立刻请你们下车吃枪子！”"
   },
   {
    "id": "h_victor_flask_toss_request",
@@ -1764,11 +1764,11 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "any",
+    "gender": "female",
     "pattern": "{family}夫人"
    },
    {
-    "gender": "any",
+    "gender": "male",
     "pattern": "{family}先生"
    },
    {
@@ -1837,7 +1837,7 @@
    "social_position": "low",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "记者先生"
     },
     {
@@ -1895,7 +1895,7 @@
    "social_position": "high",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "伯爵阁下"
     },
     {
@@ -1911,7 +1911,7 @@
    "choice": "是答应这位陌生的女特工演一场夫妻戏，还是把人藏进行李架、自己独自应付宪兵？",
    "exits": [
     {
-     "cost": "青年面颊被女特工慌乱中锐利发夹划出一道深长血口鲜血浸透衣领受剧痛折磨，只争眼前这一刻。",
+     "cost": "青年面颊被女特工慌乱中锐利发夹划出一道深长血口鲜血浸透衣领，只争眼前这一刻。",
      "option": "青年拉开门栓半敞衣襟侧身将微敞礼裙之女特工紧拥在怀热吻掩护，分秒都耽搁不起。"
     },
     {
@@ -1952,7 +1952,7 @@
     "bodily_harm"
    ],
    "title": "宪兵队挨门破门排查搜捕十分钟死线",
-   "trigger": "宪兵队长率手持冲锋枪的卫兵正在一等车厢挨个踢门检查双人结婚证件，距七号包厢仅剩最后两间，若不在此刻完成脱衣同榻假扮夫妻，十分钟内破门搜身将当场暴露枪套与胶卷。"
+   "trigger": "宪兵队长率持冲锋枪的卫兵在一等车厢挨个踢门查验结婚证件，距七号包厢仅剩最后两间，若不在此刻完成脱衣同榻假扮夫妻，十分钟内破门搜身将当场暴露枪套与胶卷。"
   },
   {
    "choice": "是让薇拉佯装重感冒死死缩在被窝里侧，还是由随员挡在床前破口大骂？",

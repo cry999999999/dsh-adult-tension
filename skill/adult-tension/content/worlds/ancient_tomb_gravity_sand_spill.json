@@ -1728,7 +1728,7 @@
      "pattern": "校尉{family}"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}二爷"
     }
    ]
@@ -1784,7 +1784,7 @@
    "social_position": "equal",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}小哥"
     },
     {

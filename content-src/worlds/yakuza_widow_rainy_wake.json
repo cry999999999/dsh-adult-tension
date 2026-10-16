@@ -101,7 +101,7 @@
       },
       {
         "pattern": "{family}家少夫人",
-        "gender": "any"
+        "gender": "female"
       },
       {
         "pattern": "少当家",

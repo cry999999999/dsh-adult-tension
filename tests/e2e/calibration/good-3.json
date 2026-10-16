@@ -12,7 +12,7 @@
  "skill": {
   "skill_root": null,
   "skill_version": null,
-  "content_version": "2026.10.2"
+  "content_version": "2026.10.3"
  },
  "turns": [
   {
@@ -2637,7 +2637,7 @@
        "social_position": "low",
        "title_patterns": [
         {
-         "gender": "any",
+         "gender": "male",
          "pattern": "{family}兄"
         },
         {
@@ -2666,7 +2666,7 @@
        "social_position": "equal",
        "title_patterns": [
         {
-         "gender": "any",
+         "gender": "male",
          "pattern": "{family}先生"
         },
         {
@@ -2695,7 +2695,7 @@
        "social_position": "equal",
        "title_patterns": [
         {
-         "gender": "any",
+         "gender": "male",
          "pattern": "{family}先生"
         },
         {

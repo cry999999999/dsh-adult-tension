@@ -170,7 +170,7 @@
         },
         {
           "pattern": "{given}哥",
-          "gender": "any"
+          "gender": "male"
         }
       ],
       "age_range": [

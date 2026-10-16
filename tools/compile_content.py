@@ -214,6 +214,8 @@ def compile_all():
                     "status": pack["status"],
                     "default_person": pack["default_person"],
                     "content_tags": pack["content_tags"],
+                    # doctor checks only the worlds whose bytes differ from what was validated here
+                    "sha256": hashlib.sha256(dump(pack)).hexdigest(),
                 }
                 for pack in sorted(packs.values(), key=lambda p: p["id"])
             ],

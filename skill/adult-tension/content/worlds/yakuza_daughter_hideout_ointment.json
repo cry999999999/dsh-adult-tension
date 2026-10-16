@@ -1887,11 +1887,11 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "any",
+    "gender": "female",
     "pattern": "{family}大小姐"
    },
    {
-    "gender": "any",
+    "gender": "male",
     "pattern": "{family}大哥"
    },
    {
@@ -2022,7 +2022,7 @@
      "pattern": "年轻少主"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "结义结拜义兄"
     }
    ]

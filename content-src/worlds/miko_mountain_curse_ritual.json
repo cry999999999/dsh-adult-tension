@@ -199,7 +199,7 @@
         },
         {
           "pattern": "{given}先生",
-          "gender": "any"
+          "gender": "male"
         }
       ],
       "age_range": [

@@ -34,7 +34,7 @@
     "given_male": ["一马", "吾朗", "大河", "修平", "龙司", "慎吾", "健二", "隆史", "宗介", "大介", "胜弘", "孝之"],
     "given_neutral": ["司", "怜", "莲", "夜", "影", "刹那", "苍", "戒", "岚", "凛", "镜", "渚"],
     "nickname_patterns": [
-      {"pattern": "{family}大小姐", "gender": "any"},
+      {"pattern": "{family}大小姐", "gender": "female"},
       {"pattern": "若头{family}", "gender": "any"},
       {"pattern": "{given_last}头目", "gender": "any"},
       {"pattern": "保镖{family}", "gender": "any"},
@@ -132,7 +132,7 @@
       "role": "九条家重金聘来的独行剑客",
       "gender": "any",
       "title_patterns": [
-        {"pattern": "{family}先生", "gender": "any"},
+        {"pattern": "{family}先生", "gender": "male"},
         {"pattern": "剑客{given_last}", "gender": "any"}
       ],
       "age_range": [30, 42],

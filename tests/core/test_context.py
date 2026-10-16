@@ -217,6 +217,7 @@ class FullContextBudgetTest(unittest.TestCase):
             self.assertLess(CX.size_of(full), CX.FULL_LIMIT)
             self.assertTrue(all("detail" not in c for c in full["characters"]))
             self.assertTrue(all("detail" in loc for loc in full["locations"]))
+            self.assertTrue(all("name" in npc for npc in full["present_npcs"]))
 
     def test_side_details_go_before_the_cards_on_stage_shrink(self):
         # Long cards on stage: nearby, sample lines and edges between NPCs go
@@ -229,6 +230,13 @@ class FullContextBudgetTest(unittest.TestCase):
             full = self.check(info, "long cards on stage")
             on_stage = [c for c in full["characters"] if c["present"]]
             self.assertTrue(any("detail" in c for c in on_stage))
+            # Before a card on stage shrinks, the brief line of everyone with a
+            # card loses what the card already says; mood stays.
+            carded = {c["id"] for c in full["characters"]}
+            for npc in full["present_npcs"]:
+                if npc["id"] in carded:
+                    self.assertLessEqual(set(npc), {"id", "mood", "conditions"})
+                    self.assertEqual(npc["mood"], state["characters"][npc["id"]]["status"]["mood"])
             self.assertNotIn("nearby", full)
             self.assertTrue(all("line" not in item for item in full["background"]))
             player = state["player_id"]

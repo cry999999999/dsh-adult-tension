@@ -151,7 +151,7 @@
         },
         {
           "pattern": "{family}二爷",
-          "gender": "any"
+          "gender": "male"
         }
       ],
       "age_range": [
@@ -207,7 +207,7 @@
       "title_patterns": [
         {
           "pattern": "{family}小哥",
-          "gender": "any"
+          "gender": "male"
         },
         {
           "pattern": "{given}徒儿",

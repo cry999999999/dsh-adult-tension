@@ -34,7 +34,7 @@ AT_JSON
 - shell 报错、宿主拒绝这种写法（PowerShell、cmd），或因 `encoding_check` 被拒：本对话改用文件，输入写成 UTF-8 JSON 文件放进 `doctor` 的 `input_dir`（不放本 Skill 目录），用 `--input-file <文件>` 传入。JSON 写错（如字符串里有换行）只改 JSON 重交。
 - stdout 是一个 JSON：`{"ok", "data", "error"}`。
 - 会话内的命令都带 `session_id`。写操作带 `request_id`（上次返回的 `next_request_id`），会话内的写操作再带 `expected_revision`（上次返回的 `revision`）；读命令不带这两个。字段拿不准或被拒再查 `references/commands.md`，不用 `--help`，不读运行时源码与数据库。
-- 超时、没有输出、输出不是 JSON：用**同一个** `request_id` 重试，最多 3 次。仍失败就运行 `doctor`，用一句话告诉玩家。
+- 超时、没有输出、输出不是 JSON：用**同一个** `request_id` 重试，最多 3 次，仍失败就运行 `doctor`，一句话告诉玩家。
 - `IDEMPOTENCY_CONFLICT`（这个 `request_id` 用过了）：先 `get-context` 看上一次是否生效，再决定是否换新 `request_id` 补交。
 
 ## 第一次
@@ -44,8 +44,8 @@ AT_JSON
 ## 开局
 
 1. 玩家没说日常还是压力：问一句“1 日常 / 2 有压力”。只有玩家说“随便”才用 `random`。不问玩家性别（没说就默认男性，玩家说了才写进 `player.gender`）。读档永远不问。
-2. 本对话里已经开过局或读过档（看对话本身，不用查），且有没存的回合（上下文 `save.turns_since_save` > 0，或有攒着没记录的）：先问“存档后开局 / 直接开局 / 取消”。
-3. 玩家点名的世界或题材：名称或关键词放进 `world_query`，不用先查世界列表。`NO_MATCH` 带 `candidates`：列出候选的标题和一句话让玩家选，选定后用 `locks.world_id`。`NOT_FOUND`：给两个选择：最接近的世界，或自定义世界（按 `references/custom_world.md` 写，放进 `new-game` 的 `custom_world`）。
+2. 本对话已开过局或读过档，且有没存的回合（`save.turns_since_save` > 0 或有攒着没记录的）：先问“存档后开局 / 直接开局 / 取消”。
+3. 玩家点名的世界或题材：名称或关键词放进 `world_query`，不用先查世界列表。`NO_MATCH` 带 `candidates`：列出标题和一句话让玩家选，选定后用 `locks.world_id`。`NOT_FOUND`：提议最接近的世界或自定义世界（`references/custom_world.md`，放进 `custom_world`）。
 4. 该问的都答了再调用 `new-game`（只答了一部分就再问其余的，不替玩家选）：`{"request_id", "mode": "daily|pressure|random", "world_query" 或 "locks": {"world_id"}, "excludes": {"content_tags", "world_ids"}, "player": {"gender", "age", "identity_hint", "name", "title"}, "npc_gender_preference"}`，只写玩家提到的部分（“不要职场”转成 `excludes` 的标签 ID；“女性 NPC 为主”是 `mostly_female`）。“重开 N 号”：`{"request_id", "seed": N, "replay": true}`。`NO_MATCH`：停下，如实说哪条做不到、可以放宽什么，由玩家选，不替玩家放宽或改开自定义世界。
 5. 按返回的 `opening` 写开局：
 
@@ -69,7 +69,7 @@ AT_JSON
    - `player_authorized: true` 只在玩家本人的话授权了玩家角色的移动、承诺、交易、同意、转折或设定修改时。
    - 操作：`npc_response`、`npc_action`（重大的带 `significant: true`，看 `can_act`）、`npc_state`、`add_fact`、`relationship`、`advance_time`（默认 3 分钟）、`move`、`enter_scene`/`exit_scene`、`event_*`、`roll`、`player_update`、`reveal_fact`、`spread_rumor`、`set_voice`、`introduce_character`/`promote_character`（明确成年，名字取自 `name_pool`）、`intimacy_evidence`、`identity_update`、`npc_update`、`leverage_set`/`_release`、`offscreen_beat`、`twist_accept`。
    - 正文里新写出、以后要用到的细节用 `add_fact` 记下；新点名的人即使不在场也要 `introduce_character`。开局写出的，在第一次记录里补上。
-   - 上下文 `requests` 要求时在下次记录的第一项写 `chapter_summary`（≤ 300 字，第三方视角）、`prologue`（≤ 300 字，合并完整上下文的 `prologue_merge`）；没要求就不写。
+   - 模板里有 `chapter_summary`、`prologue` 才写（运行时要求的），照尖括号里的说明。
 5. 先记录时，按 `context` 和 `turns` 末项的 `applied`、`resolved_events`、`simulation` 写正文：掷骰、到期、离屏移动与传播由运行时决定。
 6. 页脚：`【时间】……｜【地点】……｜回合：N`。记录后用 `context.clock.label`、`context.scene.location`、`turn`；之间自己推算（回合号逐回合加一）。叙事助手开启时（`preferences.assistant`），末尾加“可以：① …… ② …… ③ ……”，只给提示，不替玩家决定。
 7. 返回的 `context` 就是之后的依据；信息不够时 `get-context` 带 `"depth": "full"`。
@@ -83,17 +83,13 @@ AT_JSON
 - “必须 / 一定 / 确保”只锁定玩家自己的动作，锁不住 NPC 的同意。
 - 跨时间的行动（“接下来三天都去盯着”）：先写第一步，再用 `event_create` 登记。
 
-## 时间、离屏与转折
+## 时间、离屏、转折、撤销（细节见 `references/flows.md` §1–§3）
 
-- 快进（玩家要求时才预览）：`get-context` 带 `preview_time`（`until`: `morning`/`noon`/`evening`/`night`/`next_morning`，或 `days`、`minutes`，只给一个），只预览一次，照返回的 `skip_template` 记录（时间与必需的离屏片段已排好）；途中分开的人同时 `exit_scene`。正文写清到期事件的结果，不替玩家决定做什么、去哪见谁。
-- `offscreen_beat`：只写这个不在场 NPC 自己的行动、状态、去向、NPC 之间的关系与消息，依据他的目标与所知（预览的 `goal`、`knows`），不碰玩家角色。玩家“继续”时可以为 `requests.offscreen_beat_candidates` 里的 NPC 插一段简短离屏片段。跨度 ≥ 60 分钟或跨日时被点名的 NPC 必须有。离屏推演关闭时不写。
-- 转折：`requests.twist_offer` 出现，或玩家说“来点转折”（`get-context` 带 `"want_twist": true`）时，正文后一句话列出候选（“① …… ② ……，或说你想要的”）。玩家选定后记录 `twist_accept`（`twist_id`，或玩家口述的 `category`+`text`），`result` 模式带 `player_authorized`。每游戏日最多一次；不理会就照常继续。
-
-## 撤销、改写、追溯
-
-- “撤销”“刚才不算”：还没记录的回合直接改写正文；已记录的用 `undo-turn`，回执后再一句话定位当前场景。
-- “刚才不算，改成 Y”：还没记录的直接按 Y 重写；已记录的最后一回合立即记录一次，第一项带 `"replaces_turn": 该回合号`，按 Y 判定行动模式。
-- “其实……”：补玩家角色自己的背景、物品、经历、称谓，记法见 `references/narrative.md` §2。不给 NPC 追加知情、好感或同意；与已发生的事矛盾的，请玩家换个说法。
+- 快进只在玩家要求时：`get-context` 带 `preview_time` 预览一次，照返回的 `skip_template` 记录；不替玩家决定做什么、见谁。
+- `offscreen_beat` 只写不在场 NPC 自己的行动与去向（依据其 `goal`、`knows`），不碰玩家角色；离屏推演关闭时不写。
+- 转折：`requests.twist_offer` 出现或玩家说“来点转折”（`"want_twist": true`）时，正文后一句话列出候选，选定后记录 `twist_accept`。
+- “撤销 / 刚才不算（改成 Y）”：没记录的直接改写正文；已记录的用 `undo-turn`，或立即记录一次、第一项带 `replaces_turn`。
+- “其实……”只补玩家角色自己的背景、物品、经历、称谓，不给 NPC 追加知情、好感或同意。
 
 ## NPC
 
@@ -112,6 +108,7 @@ AT_JSON
 - “边界：不要 X”：`set-boundary`（`action: add`，`text` 是玩家原话，`tags` 映射到内容标签，映射不上留空）。写作时遵守全部边界；带冲突标签的记录会被拒（`SAFETY_BLOCK`）。
 - “暂停”（安全词、pause）：`set-safety` `{"paused": true}`，立即停下，回到中性叙述。暂停期间不写亲密或冲突内容，别的剧情可以继续。“换个场景”：`{"paused": true, "change_scene": true}`，然后写一个新的非亲密场景。暂停中玩家说“继续”“解除暂停”：`{"paused": false}`，从停下处重新开始，对方的反应重新判断，不接着升级。
 - 不在正文里逐回合重复免责声明或安全提醒。
+- 风格偏好（上下文 `preferences.pace` 节奏、`explicitness` 尺度，没有就是标准）只调篇幅、推进快慢和直白程度（`references/flows.md` §5），不改变同意、边界和逐步推进。
 
 ## 命令与别名
 
@@ -120,23 +117,21 @@ AT_JSON
 | 玩家说 | 你做 |
 |---|---|
 | 开局、新游戏、开局 日常 / 压力、开局 港口、重开 N 号、自定义世界 …… | 开局流程 |
-| 世界列表 [题材] | `list-worlds` [`query`] |
+| 世界列表 [题材 / 有…的 / 不要…的] | `list-worlds` [`query`、`tags`、`exclude_tags`（内容标签 ID）] |
 | 继续、c、……、空输入 | `continue` 回合 |
 | 存档 [名称]、s、快速存档、qs / 另存为 名称 | `save-slot`（`name` 可省）/ 另加 `"save_as": true` |
-| 读档 [名称]、l | 有名称就直接 `load-slot` `{"request_id", "name"}`；没给名称才先 `list-slots`。回执后用 `resume` 写两三句前情，从未决动作的前一刻接着写，不重复开局 |
-| 存档列表 / 删除存档 名称 | `list-slots` / 先问“确定删除「名称」吗？”，确认后 `delete-slot` 带 `"confirm": true` |
-| 继续上次、恢复 | `list-sessions`：一个就接上，多个列出让玩家选；接上时 `get-context` 带 `"depth": "full"`，写两三句前情再接续。当前局暂停中说“恢复”：问“恢复上次会话 / 读取存档 / 解除暂停” |
-| 导出 [存档名] / 导入 路径或内容 | `export-save`，告诉玩家文件路径 / `import-save`，回执后写两三句前情接续 |
+| 读档 [名称]、l / 继续上次、恢复 | 有名称就 `load-slot`，没有先 `list-slots` / `list-sessions`；接续写法见 `references/flows.md` §4 |
+| 存档列表 / 删除存档 名称 | `list-slots` / 问“确定删除「名称」吗？”，确认后 `delete-slot` 带 `"confirm": true` |
+| 导出 [存档名] / 导入 路径或内容 | `export-save`（告诉玩家文件路径）/ `import-save`，回执后写两三句前情 |
 | 状态 / 状态+ / 调试 | `status`（`level`: `brief` / `detail` / `debug`），`lines`（和 `sections`）原样转述；六行编号 ①–⑥ |
 | 边界：不要 X / 撤销边界 X | `set-boundary`（`add` / `remove`） |
 | 暂停、安全词、pause / 换个场景 | `set-safety` |
-| 内心可见 / 叙事助手 / 离屏推演 开关、语态 某人 表/里、人称、NPC 性别偏好 | `set-preferences`（`inner_view`、`assistant`、`offscreen_simulation`、`voice: {"npc_id", "voice"}`、`person`、`npc_gender_preference`） |
-| 撤销 / 刚才不算 / 刚才不算，改成 Y / 其实…… | 见“撤销、改写、追溯” |
-| 快进到……、跳到……、来点转折 | 见“时间、离屏与转折” |
+| 内心可见 / 叙事助手 / 离屏推演 开关、语态 某人 表/里、人称、NPC 性别偏好、节奏、尺度 | `set-preferences`（`inner_view`、`assistant`、`offscreen_simulation`、`voice: {"npc_id", "voice"}`、`person`、`npc_gender_preference`、`pace`、`explicitness`） |
+| 撤销、刚才不算、其实……、快进到……、来点转折 | 见“时间、离屏、转折、撤销” |
 | 帮助、h、? | 列出上面的说法 |
 
-缺少对象时追问一次，不猜。存档冲突（`SLOT_CONFLICT`）、导入被拒：照 `references/troubleshooting.md` 的“存档冲突”处理。
+缺少对象时追问一次，不猜。存档冲突（`SLOT_CONFLICT`）、导入被拒：照 `references/troubleshooting.md` 的“存档冲突”。
 
 ## 参考资料（需要时再读）
 
-`references/` 下：`narrative.md` 完整叙事规则，`operations.md` 操作与提交字段，`commands.md` 命令、错误码，`worlds.md` 世界列表，`custom_world.md` 自定义世界，`troubleshooting.md` 环境、升级与卸载。
+`references/` 下：`narrative.md` 完整叙事规则，`flows.md` 快进、转折、撤销、读档导入、风格偏好，`operations.md` 操作与提交字段，`commands.md` 命令、错误码，`worlds.md` 世界列表，`custom_world.md` 自定义世界，`troubleshooting.md` 环境、升级与卸载。

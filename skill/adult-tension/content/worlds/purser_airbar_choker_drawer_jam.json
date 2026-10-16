@@ -1883,7 +1883,7 @@
      "pattern": "{family}乘务"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{given}哥"
     }
    ]

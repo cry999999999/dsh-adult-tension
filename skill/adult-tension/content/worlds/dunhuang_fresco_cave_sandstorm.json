@@ -2071,6 +2071,53 @@
    ],
    "title": "纯钛合金平铲刀在猛烈反扳中濒临屈服断裂",
    "trigger": "T型螺栓极为坚硬，两人施加的全身反向力矩使得这柄四毫米厚特制钛合金平铲承受了超过七百兆帕的极限抗弯剪切力，钛合金刀身发出尖锐微鸣濒临产生不可逆塑性折弯。"
+  },
+  {
+   "choice": "照实说是自己坚持进窟，还是让签字的人自己去解释",
+   "exits": [
+    {
+     "cost": "本子上那天的出窟时间一栏是空的",
+     "option": "交出原始登记本"
+    },
+    {
+     "cost": "老马头得承认那次验收是在电话里答应的",
+     "option": "请老马头作证脚手架当天验收过"
+    }
+   ],
+   "far": {
+    "consequence": "九层楼的修复项目停一季，报告上写着谁的名字，谁就离开这个洞窟",
+    "due_days": 5,
+    "trigger": "说明会定责"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_qingxian_cinnabar",
+    "hook_tianyu_sand_jujube",
+    "hook_qingxian_dorm_curtain"
+   ],
+   "id": "p_incident_hearing",
+   "immediate": {
+    "minutes": 10,
+    "text": "赵处长在宿舍楼下等着，要那天的进窟登记本"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_staff_dormitory_room"
+   ],
+   "near": {
+    "deadline_minutes": 360,
+    "text": "下午三点开说明会"
+   },
+   "objective": "在说明会开始之前，把那一夜进窟的签字理清楚",
+   "source": "institution",
+   "start_minute": 540,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "事故说明会",
+   "trigger": "沙暴过去第三天，研究院贴出通知召开事故说明会，要讲清两件事：当晚是谁批准进窟，脚手架的验收单是谁签的字"
   }
  ],
  "region": "敦煌莫高窟第96窟九层楼三十三米通顶大佛阁与挑空钢管脚手架区",

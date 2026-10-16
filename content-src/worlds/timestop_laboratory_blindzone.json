@@ -94,7 +94,7 @@
   "nickname_patterns": [
    {
     "pattern": "女皇总监",
-    "gender": "any"
+    "gender": "female"
    },
    {
     "pattern": "首席",

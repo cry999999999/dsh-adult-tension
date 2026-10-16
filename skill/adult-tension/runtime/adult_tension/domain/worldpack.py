@@ -10,7 +10,7 @@ import re
 from .. import schema as S
 from ..errors import CONTENT_ERROR, detail
 from . import structure as ST
-from .text import PLACEHOLDER_RE, gendered_pronoun_positions, placeholders, stray_braces
+from .text import FEMALE_ADDRESS, MALE_ADDRESS, PLACEHOLDER_RE, address_gender, gendered_pronoun_positions, placeholders, stray_braces
 
 F = S.Field
 
@@ -445,6 +445,65 @@ def walk_texts(pack):
 
     rec(pack, "$", None)
     return found
+
+
+def text_chars(node):
+    """Characters of text in an item, IDs and tags left out."""
+    if isinstance(node, str):
+        return len(node)
+    if isinstance(node, list):
+        return sum(text_chars(v) for v in node)
+    if isinstance(node, dict):
+        return sum(text_chars(v) for k, v in node.items() if k not in ("id", "tags") and not k.endswith(("_id", "_ids")))
+    return 0
+
+
+GENDER_LABELS = {"male": "男性", "female": "女性"}
+PLAYER_ADDRESSED = re.compile(r"\{player\.[a-z_]+\}(%s)" % "|".join(sorted(MALE_ADDRESS + FEMALE_ADDRESS, key=len, reverse=True)))
+
+
+def address_problems(pack, texts):
+    """Gendered address terms only where the gender is known (P16): a title or
+    nickname pattern that says 先生 or 小姐 is marked for that gender, a role
+    open to any player has a title for male and for female players, and no
+    text puts such a term right after a player placeholder."""
+    problems = []
+
+    def pattern(path, item):
+        if item["gender"] == "any" and address_gender(item["pattern"]):
+            problems.append(_problem(path + ".gender", "称呼“%s”带性别，却标为 any" % item["pattern"], "按称呼标上 male 或 female；不限性别的人另给一个不带性别的称呼"))
+
+    for i, item in enumerate(pack["name_pools"]["nickname_patterns"]):
+        pattern("$.name_pools.nickname_patterns[%d]" % i, item)
+    for i, ident in enumerate(pack["player_identities"]):
+        if ident["gender"] != "any":
+            continue
+        for j, item in enumerate(ident["title_patterns"]):
+            pattern("$.player_identities[%d].title_patterns[%d]" % (i, j), item)
+        # a pattern marked any still only fits the gender its words say
+        covered = set()
+        for item in ident["title_patterns"]:
+            said = item["gender"] if item["gender"] != "any" else address_gender(item["pattern"])
+            covered.update(GENDER_LABELS if said in (None, "mixed") else (said,))
+        missing = [GENDER_LABELS[g] for g in GENDER_LABELS if g not in covered]
+        if missing:
+            problems.append(_problem("$.player_identities[%d].title_patterns" % i, "不限性别的身份没有给%s玩家的称呼" % "、".join(missing), "加一个不带性别的称呼（例如 {family}老师），或给这个身份标上性别"))
+    for path, text in texts:
+        if "{player." in text and ".title_patterns" not in path:
+            for m in PLAYER_ADDRESSED.finditer(text):
+                problems.append(_problem(path, "把玩家写成了“%s”：%s" % (m.group(1), text[max(0, m.start() - 10) : m.end() + 6]), "玩家的性别由玩家定：用 {player.title} 或 {player.call}"))
+    return problems
+
+
+def length_problems(pack):
+    """Cards and pressures over their text ceilings."""
+    problems = []
+    for group, ceiling, label in (("character_templates", ST.TEMPLATE_TEXT_MAX, "人物模板"), ("pressures", ST.PRESSURE_TEXT_MAX, "压力")):
+        for i, item in enumerate(pack[group]):
+            have = text_chars(item)
+            if have > ceiling:
+                problems.append(_problem("$.%s[%d]" % (group, i), "%s文字太长：%d 字 > %d" % (label, have, ceiling), "删去重复或可有可无的说法，压到 %d 字以内（不含 ID 与标签）" % ceiling))
+    return problems
 
 
 def _ids(items):
@@ -908,6 +967,8 @@ def _validate_world(raw, custom, tag_ids):
     checker.references()
     checker.semantics()
     checker.text_checks()
+    checker.problems.extend(length_problems(pack))
+    checker.problems.extend(address_problems(pack, checker.texts()))
     checker.forbidden_terms()
     problems.extend(checker.problems)
     if tag_ids is not None:
@@ -997,4 +1058,7 @@ def world_stats(pack):
         "hook_kinds": dict(Counter(h["kind"] for h in pack["hooks"])),
         "social_positions": dict(Counter(i["social_position"] for i in pack["player_identities"])),
         "background_functions": dict(Counter(b["function"] for b in pack["background_cast"])),
+        # CONTENT_BIBLE §2 leans on people and institutions (查柜、债主、流言), not only weather
+        "pressure_sources": dict(Counter(p["source"] for p in pack["pressures"])),
+        "leverage_pressures": sum(1 for p in pack["pressures"] if p.get("leverage")),
     }

@@ -232,7 +232,7 @@
     },
     {
      "pattern": "{family}先生",
-     "gender": "any"
+     "gender": "male"
     }
    ],
    "age_range": [
@@ -257,7 +257,7 @@
    "title_patterns": [
     {
      "pattern": "{family}先生",
-     "gender": "any"
+     "gender": "male"
     },
     {
      "pattern": "{family}老板",
@@ -290,7 +290,7 @@
     },
     {
      "pattern": "{family}先生",
-     "gender": "any"
+     "gender": "male"
     }
    ],
    "age_range": [

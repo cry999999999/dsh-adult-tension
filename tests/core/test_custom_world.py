@@ -13,6 +13,7 @@ import _bootstrap  # noqa: F401
 from adult_tension.application import service
 from adult_tension.application.fake_narrator import FakeNarrator
 from adult_tension.domain import state as SS
+from adult_tension.domain import structure as ST
 from adult_tension.domain import worldpack
 from adult_tension.errors import AppError
 from adult_tension.persistence import repo
@@ -165,6 +166,74 @@ class ValidationTest(unittest.TestCase):
             self.assertIn(path, found)
         self.assertTrue(all(d["path"].startswith("$.custom_world") for d in err.details))
         self.assertEqual(err.message, "自定义世界有 %d 处问题" % len(err.details))
+
+    def test_overlong_cards_and_pressures_are_refused(self):
+        # A card or pressure on stage goes into every full context; the
+        # ceilings keep one long item from squeezing the others.
+        world = example()
+        template, pressure = world["character_templates"][0], world["pressures"][0]
+        template["situation"]["pressure"] += "风" * (ST.TEMPLATE_TEXT_MAX - worldpack.text_chars(template) + 1)
+        pressure["trigger"] += "雨" * (ST.PRESSURE_TEXT_MAX - worldpack.text_chars(pressure) + 1)
+        reasons = {p["path"]: p["reason"] for p in worldpack.length_problems(world)}
+        self.assertEqual(set(reasons), {"$.character_templates[0]", "$.pressures[0]"})
+        self.assertIn("%d 字 > %d" % (ST.TEMPLATE_TEXT_MAX + 1, ST.TEMPLATE_TEXT_MAX), reasons["$.character_templates[0]"])
+        self.assertIn("%d 字 > %d" % (ST.PRESSURE_TEXT_MAX + 1, ST.PRESSURE_TEXT_MAX), reasons["$.pressures[0]"])
+        template["situation"]["pressure"] = template["situation"]["pressure"][:-1]
+        pressure["trigger"] = pressure["trigger"][:-1]
+        self.assertEqual(worldpack.length_problems(world), [])
+        # IDs and tags do not count.
+        pressure["tags"] = ["violence"] * 500
+        self.assertEqual(worldpack.length_problems(world), [])
+
+    def test_the_validator_applies_the_text_ceilings(self):
+        world = example()
+        lowest = min(worldpack.text_chars(t) for t in world["character_templates"])
+        saved = ST.TEMPLATE_TEXT_MAX
+        ST.TEMPLATE_TEXT_MAX = lowest - 1
+        try:
+            _pack, problems = worldpack.validate_world(world, custom=True, tag_ids=TAG_IDS)
+        finally:
+            ST.TEMPLATE_TEXT_MAX = saved
+        self.assertEqual({p["path"] for p in problems}, {"$.character_templates[%d]" % i for i in range(len(world["character_templates"]))})
+        with app() as ctx:
+            ST.TEMPLATE_TEXT_MAX = lowest - 1
+            try:
+                err = refused(self, ctx, Ids(), world)
+            finally:
+                ST.TEMPLATE_TEXT_MAX = saved
+        self.assertIn("$.custom_world.character_templates[0]", paths(err))
+
+    def test_gendered_address_needs_a_known_gender(self):
+        # The player is not asked their gender, so 先生 or 小姐 may only
+        # address someone whose gender the world fixes (P16).
+        world = example()
+        world["name_pools"]["nickname_patterns"].append({"pattern": "{family}哥", "gender": "any"})
+        world["player_identities"][0]["title_patterns"] = [{"pattern": "{family}先生", "gender": "any"}]
+        world["hooks"][0]["text"] = "{npc.name}朝{player.name}先生点了点头"
+        _pack, problems = worldpack.validate_world(world, custom=True, tag_ids=TAG_IDS)
+        reasons = {p["path"]: p["reason"] for p in problems}
+        self.assertEqual(
+            set(reasons),
+            {
+                "$.name_pools.nickname_patterns[1].gender",
+                "$.player_identities[0].title_patterns[0].gender",
+                "$.player_identities[0].title_patterns",
+                "$.hooks[0].text",
+            },
+        )
+        self.assertIn("女性", reasons["$.player_identities[0].title_patterns"])
+        self.assertIn("先生", reasons["$.hooks[0].text"])
+        # Marked for its gender, with a title for the other one: accepted.
+        world["name_pools"]["nickname_patterns"][1]["gender"] = "male"
+        world["player_identities"][0]["title_patterns"] = [{"pattern": "{family}先生", "gender": "male"}, {"pattern": "{family}小姐", "gender": "female"}]
+        world["hooks"][0]["text"] = "{npc.name}朝{player.title}点了点头"
+        _pack, problems = worldpack.validate_world(world, custom=True, tag_ids=TAG_IDS)
+        self.assertEqual(problems, [])
+        # An identity whose gender is fixed needs no title for the other one.
+        world["player_identities"][0]["gender"] = "male"
+        world["player_identities"][0]["title_patterns"] = [{"pattern": "{family}先生", "gender": "any"}]
+        _pack, problems = worldpack.validate_world(world, custom=True, tag_ids=TAG_IDS)
+        self.assertEqual(problems, [])
 
     def test_missing_ages_unknown_fields_and_bad_shapes_are_refused(self):
         world = example()

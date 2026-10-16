@@ -16,6 +16,9 @@ PREFERENCE_LABELS = {
     "male_only": "只要男性",
     "mixed": "男女都有",
 }
+PACE_LABELS = {"slow": "慢热", "standard": "标准", "direct": "直接"}
+EXPLICITNESS_LABELS = {"subtle": "含蓄", "standard": "标准", "explicit": "直白"}
+SHOWN_PREFERENCES = ("inner_view", "assistant", "offscreen_simulation", "person", "npc_gender_preference", "pace", "explicitness")
 BOUNDARY_PREFIXES = ("不想看到", "不想要", "不要", "别写", "别", "不许")
 
 
@@ -106,6 +109,13 @@ def set_preferences(state, content, changes):
     if "npc_gender_preference" in changes:
         prefs["npc_gender_preference"] = changes["npc_gender_preference"]
         receipts.append("配对偏好：%s" % PREFERENCE_LABELS[changes["npc_gender_preference"]])
+    # Style preferences change how the story is written, never the rules (PRODUCT_SPEC 4.4).
+    if "pace" in changes:
+        prefs["pace"] = changes["pace"]
+        receipts.append("节奏：%s" % PACE_LABELS[changes["pace"]])
+    if "explicitness" in changes:
+        prefs["explicitness"] = changes["explicitness"]
+        receipts.append("尺度：%s" % EXPLICITNESS_LABELS[changes["explicitness"]])
     voice = changes.get("voice")
     if voice:
         npc = voice["npc_id"]
@@ -122,4 +132,4 @@ def set_preferences(state, content, changes):
         raise AppError(problems[0]["code"], problems[0]["reason"], problems)
     if not receipts:
         raise AppError(INVALID_INPUT, "没有要改的设置", [detail("$", "至少给一个设置", None, INVALID_INPUT)])
-    return _bump(work), {"receipt": "；".join(receipts), "preferences": {k: prefs[k] for k in ("inner_view", "assistant", "offscreen_simulation", "person", "npc_gender_preference")}, "changed": True}
+    return _bump(work), {"receipt": "；".join(receipts), "preferences": {k: prefs[k] for k in SHOWN_PREFERENCES}, "changed": True}

@@ -38,6 +38,8 @@
 - **时代**：`forbidden_terms` 写本世界不该出现的词（器物、说法），校验器扫描全部文本。
 - **有内容**：不写空串、“待补”“TODO”“—”或与字段名相同的文字；同一包内不写重复的整句。地点至少一个 `public`、一个 `semi` 或 `private`，任意两个地点的 `privacy`、`visibility`、`affordances` 不能完全相同。
 - **压力**：五拍齐全，`near.deadline_minutes` 大于 `immediate.minutes`，出路至少两条且各有代价；带 `leverage` 标记的压力写明 `leverage` 的双方与依据，双方要同在某个人物组合里。
+- **篇幅**：一个人物模板的全部文字合计 ≤ 1800 字，一个压力 ≤ 450 字（不含 ID 与标签）——在场的人物卡与压力每回合都进上下文，太长会挤掉别人。
+- **称呼**：带性别的称呼（先生、小姐、少爷、哥、姐……）只给性别已定的人：这样的称呼与绰号模板要标上 `male` 或 `female`；不限性别的玩家身份要同时有给男、女玩家的称呼；正文里不写“{player.name}先生”，用 `{player.title}` 或 `{player.call}`。
 - **标签**：`content_tags` 与各处 `tags` 只能用内容标签表里的 ID：`romance_light` 轻度暧昧、`intimate` 亲密、`explicit` 直白的性描写、`violence` 暴力、`coercion_theme` 胁迫、`humiliation` 羞辱、`bodily_harm` 身体伤害、`substance` 酒精与药物、`pregnancy` 怀孕、`death` 死亡、`workplace_power` 职场权力关系、`infidelity` 出轨、`crime` 违法犯罪、`gambling` 赌博、`workplace` 职场、`nightlife` 夜生活、`supernatural` 超自然、`disaster` 灾难、`custom` 自定义。
 
 ## 字段

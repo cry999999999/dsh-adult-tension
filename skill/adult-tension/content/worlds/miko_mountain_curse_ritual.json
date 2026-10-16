@@ -1816,7 +1816,7 @@
      "pattern": "{family}工程师"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{given}先生"
     }
    ]

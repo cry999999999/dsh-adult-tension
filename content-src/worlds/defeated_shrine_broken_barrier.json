@@ -98,7 +98,7 @@
       },
       {
         "pattern": "巫女长",
-        "gender": "any"
+        "gender": "female"
       },
       {
         "pattern": "护卫长",
@@ -176,7 +176,7 @@
       "title_patterns": [
         {
           "pattern": "{family}巫女长",
-          "gender": "any"
+          "gender": "female"
         },
         {
           "pattern": "神子大人",
@@ -263,7 +263,7 @@
       "title_patterns": [
         {
           "pattern": "{family}少爷",
-          "gender": "any"
+          "gender": "male"
         },
         {
           "pattern": "旁系执事",

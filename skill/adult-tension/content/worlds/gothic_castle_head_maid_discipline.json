@@ -581,6 +581,78 @@
     "te_wardrobe_mirror_intimacy_vs_master",
     "te_midnight_inheritance_tax_default_vs"
    ]
+  },
+  {
+   "chemistry": "你带着双头鹰公证印章和查封令进了城堡，暴雪却把你和{austere_head_maid_governess.name}一起关在了账房。金库账册在{austere_head_maid_governess.name}手里，查封令在你手里；老总管{loyal_crippled_castle_seneschal.name}守在门外，拐杖一下下敲着石阶，等着看你先翻哪一页。",
+   "id": "combo_7_equal_notary",
+   "identity_ids": [
+    "pc_scheming_tax_notary_bailiff"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 0
+     },
+     "b": "austere_head_maid_governess",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 0
+     },
+     "reason": "{austere_head_maid_governess.name}把你当来抢城堡的人，你把这位女仆长当最难啃的一本账",
+     "stage": "stranger"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 0
+     },
+     "b": "loyal_crippled_castle_seneschal",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 0
+     },
+     "reason": "老总管第一眼就认出你靴子是王都的样式，从头到尾一句话没说",
+     "stage": "stranger"
+    },
+    {
+     "a": "austere_head_maid_governess",
+     "a_to_b": {
+      "tension": 1,
+      "trust": 5
+     },
+     "b": "loyal_crippled_castle_seneschal",
+     "b_to_a": {
+      "tension": 1,
+      "trust": 5
+     },
+     "reason": "两人一起守了这座城堡十年，账册上的每一笔都对过",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
+    "austere_head_maid_governess",
+    "loyal_crippled_castle_seneschal"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想弄清这份查封令背后是谁在做假账——那个人连你也一起算计了",
+    "limit_gap": "你查封不成就交不了差，债阀许下的佣金也拿不到；{austere_head_maid_governess.name}交出账册就保不住领地，不交就是抗法",
+    "meeting_reason": "暴雪封死了吊桥，查封只能在城堡里当面清点，账房是唯一烧着炉子的屋子",
+    "resource_gap": "你有帝国公证印章和午夜生效的查封令，{austere_head_maid_governess.name}有金库钥匙和三十年的账册，{loyal_crippled_castle_seneschal.name}有全城堡老仆的忠心"
+   },
+   "tags": [
+    "workplace_power"
+   ],
+   "tension_engine_ids": [
+    "te_feudal_rule_discipline_vs_arrogant",
+    "te_midnight_inheritance_tax_default_vs"
+   ]
   }
  ],
  "channels": [
@@ -1639,7 +1711,7 @@
     "castle_stone_corridor_dungeon_keep"
    ],
    "slot": "austere_head_maid_governess",
-   "text": "{austere_head_maid_governess.name}一袭深黑紧绷束腰长裙一丝不苟，双手交叠于腹前，微微屈膝行三十度古典主从礼，清冷嗓音带着不可侵犯之森严法度：“少爷，按霍恩洛厄家训第三条，仪容不整、身带污泥者不得踏入正堂！”"
+   "text": "{austere_head_maid_governess.name}一袭深黑紧绷束腰长裙一丝不苟，双手交叠于腹前，微微屈膝行三十度古典主从礼，清冷嗓音带着不可侵犯之森严法度：“少主，按霍恩洛厄家训第三条，仪容不整、身带污泥者不得踏入正堂！”"
   },
   {
    "id": "hk_dowager_fan_approach",
@@ -1660,7 +1732,7 @@
     "castle_grand_hearth_great_hall"
    ],
    "slot": "loyal_crippled_castle_seneschal",
-   "text": "{loyal_crippled_castle_seneschal.name}拄着粗重黑胡桃木拐杖沉重踏过石板地面：“少爷！老夫还活着呢！当年随老爵爷在战壕里打滚的时候，什么恶狼老夫没见过！军械库里那二十支线膛枪老夫全擦得锃亮！”"
+   "text": "{loyal_crippled_castle_seneschal.name}拄着粗重黑胡桃木拐杖沉重踏过石板地面：“少主！老夫还活着呢！当年随老爵爷在战壕里打滚的时候，什么恶狼老夫没见过！军械库里那二十支线膛枪老夫全擦得锃亮！”"
   },
   {
    "id": "hk_notary_seal_approach",
@@ -1680,7 +1752,7 @@
     "castle_master_bedchamber_suite"
    ],
    "slot": "austere_head_maid_governess",
-   "text": "{austere_head_maid_governess.name}反手将更衣暗室厚重橡木门轰然反锁，素手轻抬优雅解下黑色羊皮手套，直视你的双眸呼吸微促，清冷而带着颤抖低语：“少爷，这扇门已经锁死了。今夜在这间镜子里，只有您和我两个人。”"
+   "text": "{austere_head_maid_governess.name}反手将更衣暗室厚重橡木门轰然反锁，素手轻抬优雅解下黑色羊皮手套，直视你的双眸呼吸微促，清冷而带着颤抖低语：“少主，这扇门已经锁死了。今夜在这间镜子里，只有您和我两个人。”"
   },
   {
    "id": "hk_young_lord_wardrobe_request",
@@ -1700,7 +1772,7 @@
     "castle_grand_hearth_great_hall"
    ],
    "slot": "loyal_crippled_castle_seneschal",
-   "text": "{loyal_crippled_castle_seneschal.name}在断桥要塞生铁钉板门前抹去额角被风雪冻结的血沫，喘息如破风箱低吼：“少爷！雪崩把断桥石墩压裂了！快帮老夫合力绞起这道防风生铁闸！”"
+   "text": "{loyal_crippled_castle_seneschal.name}在断桥要塞生铁钉板门前抹去额角被风雪冻结的血沫，喘息如破风箱低吼：“少主！雪崩把断桥石墩压裂了！快帮老夫合力绞起这道防风生铁闸！”"
   },
   {
    "id": "hk_dowager_wine_request",
@@ -1964,15 +2036,15 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "any",
+    "gender": "male",
     "pattern": "{family}少爷"
    },
    {
-    "gender": "any",
+    "gender": "female",
     "pattern": "{family}女仆长"
    },
    {
-    "gender": "any",
+    "gender": "female",
     "pattern": "{family}夫人"
    },
    {
@@ -1994,7 +2066,7 @@
     34
    ],
    "baseline": "在外游历从军多年后归来接掌风雨飘摇之祖传古堡，表面桀骜不驯不可一世，实则因王都投机失败背负巨额债务，急需在暴雪夜夺回城堡财权与家督尊严。",
-   "gender": "any",
+   "gender": "male",
    "id": "pc_impoverished_heir_young_lord",
    "reputation": "王都社交界传闻中放浪形骸、挥金如土但剑术通神之危险贵胄少爷。",
    "resources": [
@@ -2008,7 +2080,7 @@
    "social_position": "high",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}少爷"
     },
     {
@@ -2023,7 +2095,7 @@
     35
    ],
    "baseline": "一袭笔挺深黑紧身长裙，腰悬沉重铁十字钥匙串，面容清冷绝美如霜雪雕琢，行事苛刻古板一丝不苟，手握城堡金库与全盘地契，以严苛家规冷酷规训归来少爷。",
-   "gender": "any",
+   "gender": "female",
    "id": "pc_austere_head_maid_governess",
    "reputation": "黑森林方圆百里闻名之铁血女仆长，不讲私情、手段极其严苛无情之城堡守护神。",
    "resources": [
@@ -2037,11 +2109,11 @@
    "social_position": "equal",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "female",
      "pattern": "{family}女仆长"
     },
     {
-     "gender": "any",
+     "gender": "female",
      "pattern": "{family}女士"
     }
    ]
@@ -2066,7 +2138,7 @@
    "social_position": "high",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "female",
      "pattern": "{family}夫人"
     },
     {
@@ -2149,7 +2221,7 @@
     }
    ],
    "far": {
-    "consequence": "霍恩洛厄古堡被帝国皇家法庭强制拍卖肢解，少爷沦为无地流民贵族并投监服苦役，百年门楣彻底覆灭。",
+    "consequence": "霍恩洛厄古堡被帝国法庭强制拍卖，少爷沦为无地流民贵族并投监服苦役，百年门楣彻底覆灭。",
     "due_days": 1,
     "trigger": "午夜零点查封令正式盖印生效"
    },
@@ -2181,7 +2253,7 @@
     "crime"
    ],
    "title": "帝国税务法庭午夜零点继承税违约查封死线",
-   "trigger": "帝国皇家税务署法令规定，若新任男爵在继承法定期限最后一日午夜钟声前无法当堂缴清一万金币继承税，帝国查封印章将即刻生效，古堡连同领地将由摄政团全盘接管拍卖。"
+   "trigger": "帝国税法规定，新任男爵若在继承期限最后一日午夜钟声前缴不清一万金币继承税，帝国查封印章将即刻生效，古堡连同领地将由摄政团全盘接管拍卖。"
   },
   {
    "choice": "是少爷以武力强行拔剑威逼女仆长交出钥匙，还是在三面全身镜前以尊严与心意正面将其降伏？",

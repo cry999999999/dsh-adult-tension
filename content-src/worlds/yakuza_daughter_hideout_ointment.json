@@ -93,11 +93,11 @@
     "nickname_patterns": [
       {
         "pattern": "{family}大小姐",
-        "gender": "any"
+        "gender": "female"
       },
       {
         "pattern": "{family}大哥",
-        "gender": "any"
+        "gender": "male"
       },
       {
         "pattern": "小{family}",
@@ -237,7 +237,7 @@
         },
         {
           "pattern": "结义结拜义兄",
-          "gender": "any"
+          "gender": "male"
         }
       ],
       "age_range": [

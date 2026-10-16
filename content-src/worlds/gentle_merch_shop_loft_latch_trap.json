@@ -2144,6 +2144,45 @@
         "workplace",
         "disaster"
       ]
+    },
+    {
+      "id": "p_scalper_rumor",
+      "title": "黄牛传言",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": ["loc_loft_little_bedroom", "loc_anime_merch_loft_storage_floor"],
+      "trigger": "早上八点，排队群里有人贴出一张阁楼货架的照片，说限量款早被店里留给了黄牛，门外的队伍开始骚动",
+      "objective": "在十点开门之前，让门外的长队相信每一枚都在这里",
+      "choice": "把阁楼上的货当众搬下来点数，还是先查出照片是谁拍的",
+      "immediate": {
+        "text": "收银主管在楼下喊，有人在拍卷帘门",
+        "minutes": 5
+      },
+      "near": {
+        "text": "十点开门",
+        "deadline_minutes": 120
+      },
+      "far": {
+        "trigger": "传言没压下去",
+        "consequence": "首发当天就上了热搜，品牌方收回下一季的首发授权",
+        "due_days": 3
+      },
+      "exits": [
+        {
+          "option": "当众开箱点数",
+          "cost": "开门要晚一个钟头，排了一夜的人会骂一整天"
+        },
+        {
+          "option": "查出照片是谁拍的",
+          "cost": "照片是店里自己人拍的，店里要少一个人"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": ["hook_wanqing_warm_tea", "hook_wanqing_hidden_badge", "hook_wanqing_loft_curtain"],
+      "start_minute": 480,
+      "tags": []
     }
   ],
   "hooks": [

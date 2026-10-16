@@ -105,7 +105,7 @@
       },
       {
         "pattern": "{family}小姐",
-        "gender": "any"
+        "gender": "female"
       },
       {
         "pattern": "{family}阁下",

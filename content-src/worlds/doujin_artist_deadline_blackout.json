@@ -188,7 +188,7 @@
         },
         {
           "pattern": "{given}太太",
-          "gender": "any"
+          "gender": "female"
         }
       ],
       "age_range": [
@@ -213,7 +213,7 @@
       "title_patterns": [
         {
           "pattern": "{family}先生",
-          "gender": "any"
+          "gender": "male"
         },
         {
           "pattern": "阿{given}",

@@ -2156,7 +2156,7 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "any",
+    "gender": "male",
     "pattern": "{family}先生"
    },
    {
@@ -2196,7 +2196,7 @@
    "social_position": "low",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}先生"
     },
     {
@@ -2254,7 +2254,7 @@
    "social_position": "equal",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}先生"
     },
     {
@@ -2283,7 +2283,7 @@
    "social_position": "equal",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}先生"
     },
     {
@@ -2316,7 +2316,7 @@
      "pattern": "{family}主笔"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}先生"
     }
    ]
@@ -2345,7 +2345,7 @@
      "pattern": "{family}少东家"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}先生"
     }
    ]

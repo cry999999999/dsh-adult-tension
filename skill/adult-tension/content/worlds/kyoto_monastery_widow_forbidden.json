@@ -1945,7 +1945,7 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "any",
+    "gender": "female",
     "pattern": "{family}夫人"
    },
    {
@@ -1975,7 +1975,7 @@
     36
    ],
    "baseline": "与上代当主同龄成年之义弟，自幼被一条家收养，曾任京都裁判所刑法推官，因不肯包庇分家走私大案被陷害罢官，今受密函重返宗祠协助法会。",
-   "gender": "any",
+   "gender": "male",
    "id": "pc_ex_magistrate_adoptive_brother",
    "reputation": "名门宗族眼中桀骜不驯、离经叛道之刑法怪杰，但在下人眼中是唯一公正清廉的少爷。",
    "resources": [
@@ -1993,7 +1993,7 @@
      "pattern": "{family}推官"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}兄"
     }
    ]
@@ -2018,7 +2018,7 @@
    "social_position": "high",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "female",
      "pattern": "{family}夫人"
     },
     {
@@ -2105,7 +2105,7 @@
    "social_position": "low",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "female",
      "pattern": "{family}侍女"
     },
     {

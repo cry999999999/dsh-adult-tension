@@ -93,11 +93,11 @@
     "nickname_patterns": [
       {
         "pattern": "{family}大小姐",
-        "gender": "any"
+        "gender": "female"
       },
       {
         "pattern": "{family}少爷",
-        "gender": "any"
+        "gender": "male"
       },
       {
         "pattern": "{family}管家",

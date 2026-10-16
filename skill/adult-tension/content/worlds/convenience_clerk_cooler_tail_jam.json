@@ -1881,7 +1881,7 @@
      "pattern": "{family}领班"
     },
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{given}哥"
     }
    ]

@@ -93,11 +93,11 @@
     "nickname_patterns": [
       {
         "pattern": "{family}夫人",
-        "gender": "any"
+        "gender": "female"
       },
       {
         "pattern": "{family}先生",
-        "gender": "any"
+        "gender": "male"
       },
       {
         "pattern": "{family}随员",
@@ -175,7 +175,7 @@
       "title_patterns": [
         {
           "pattern": "记者先生",
-          "gender": "any"
+          "gender": "male"
         },
         {
           "pattern": "特约摄影师",
@@ -233,7 +233,7 @@
       "title_patterns": [
         {
           "pattern": "伯爵阁下",
-          "gender": "any"
+          "gender": "male"
         },
         {
           "pattern": "少尉随从",
@@ -1808,7 +1808,7 @@
       "location_ids": [
         "compartment_seven_luxury_sleeper"
       ],
-      "trigger": "宪兵队长率手持冲锋枪的卫兵正在一等车厢挨个踢门检查双人结婚证件，距七号包厢仅剩最后两间，若不在此刻完成脱衣同榻假扮夫妻，十分钟内破门搜身将当场暴露枪套与胶卷。",
+      "trigger": "宪兵队长率持冲锋枪的卫兵在一等车厢挨个踢门查验结婚证件，距七号包厢仅剩最后两间，若不在此刻完成脱衣同榻假扮夫妻，十分钟内破门搜身将当场暴露枪套与胶卷。",
       "objective": "在十分钟内褪去外衣与女特工同卧在下铺毛毯内，完成亲昵夫妻伪装并备齐外交豁免护照。",
       "choice": "是答应这位陌生的女特工演一场夫妻戏，还是把人藏进行李架、自己独自应付宪兵？",
       "immediate": {
@@ -1827,7 +1827,7 @@
       "exits": [
         {
           "option": "青年拉开门栓半敞衣襟侧身将微敞礼裙之女特工紧拥在怀热吻掩护，分秒都耽搁不起。",
-          "cost": "青年面颊被女特工慌乱中锐利发夹划出一道深长血口鲜血浸透衣领受剧痛折磨，只争眼前这一刻。"
+          "cost": "青年面颊被女特工慌乱中锐利发夹划出一道深长血口鲜血浸透衣领，只争眼前这一刻。"
         },
         {
           "option": "外交随员神色傲慢亮出中立国免检公文与未填配偶名之最高通关金印，退路已经断了。",
@@ -2195,7 +2195,7 @@
       "location_ids": [
         "compartment_seven_luxury_sleeper"
       ],
-      "text": "{brutal_gendarme_commander_karl.name}枪口顶在公文箱锁扣上冷笑道：“外交官先生，别装睡了！把你的结婚证明和随行夫人的护照拿出来！若是名字对不上一个字母，老子立刻请你们下车吃枪子！”"
+      "text": "{brutal_gendarme_commander_karl.name}枪口顶在公文箱锁扣上冷笑道：“外交官，别装睡了！把你的结婚证明和随行夫人的护照拿出来！若是名字对不上一个字母，老子立刻请你们下车吃枪子！”"
     },
     {
       "id": "h_victor_flask_toss_request",

@@ -93,15 +93,15 @@
     "nickname_patterns": [
       {
         "pattern": "{family}少爷",
-        "gender": "any"
+        "gender": "male"
       },
       {
         "pattern": "{family}女仆长",
-        "gender": "any"
+        "gender": "female"
       },
       {
         "pattern": "{family}夫人",
-        "gender": "any"
+        "gender": "female"
       },
       {
         "pattern": "{family}总管",
@@ -142,11 +142,11 @@
     {
       "id": "pc_impoverished_heir_young_lord",
       "role": "自王都归来继承破败领地的落魄少爷",
-      "gender": "any",
+      "gender": "male",
       "title_patterns": [
         {
           "pattern": "{family}少爷",
-          "gender": "any"
+          "gender": "male"
         },
         {
           "pattern": "领主阁下",
@@ -171,15 +171,15 @@
     {
       "id": "pc_austere_head_maid_governess",
       "role": "执掌铁十字钥匙与家规的冷酷女仆长",
-      "gender": "any",
+      "gender": "female",
       "title_patterns": [
         {
           "pattern": "{family}女仆长",
-          "gender": "any"
+          "gender": "female"
         },
         {
           "pattern": "{family}女士",
-          "gender": "any"
+          "gender": "female"
         }
       ],
       "age_range": [
@@ -204,7 +204,7 @@
       "title_patterns": [
         {
           "pattern": "{family}夫人",
-          "gender": "any"
+          "gender": "female"
         },
         {
           "pattern": "摄政殿下",
@@ -1852,6 +1852,78 @@
         "workplace_power",
         "crime"
       ]
+    },
+    {
+      "id": "combo_7_equal_notary",
+      "power_structure": "equal",
+      "player_positions": [
+        "equal"
+      ],
+      "identity_ids": [
+        "pc_scheming_tax_notary_bailiff"
+      ],
+      "slots": [
+        "austere_head_maid_governess",
+        "loyal_crippled_castle_seneschal"
+      ],
+      "tension_engine_ids": [
+        "te_feudal_rule_discipline_vs_arrogant",
+        "te_midnight_inheritance_tax_default_vs"
+      ],
+      "chemistry": "你带着双头鹰公证印章和查封令进了城堡，暴雪却把你和{austere_head_maid_governess.name}一起关在了账房。金库账册在{austere_head_maid_governess.name}手里，查封令在你手里；老总管{loyal_crippled_castle_seneschal.name}守在门外，拐杖一下下敲着石阶，等着看你先翻哪一页。",
+      "stakes": {
+        "resource_gap": "你有帝国公证印章和午夜生效的查封令，{austere_head_maid_governess.name}有金库钥匙和三十年的账册，{loyal_crippled_castle_seneschal.name}有全城堡老仆的忠心",
+        "limit_gap": "你查封不成就交不了差，债阀许下的佣金也拿不到；{austere_head_maid_governess.name}交出账册就保不住领地，不交就是抗法",
+        "meeting_reason": "暴雪封死了吊桥，查封只能在城堡里当面清点，账房是唯一烧着炉子的屋子",
+        "irreplaceable_goal": "你想弄清这份查封令背后是谁在做假账——那个人连你也一起算计了"
+      },
+      "relations": [
+        {
+          "a": "player",
+          "b": "austere_head_maid_governess",
+          "stage": "stranger",
+          "a_to_b": {
+            "trust": 0,
+            "tension": 4
+          },
+          "b_to_a": {
+            "trust": 0,
+            "tension": 4
+          },
+          "reason": "{austere_head_maid_governess.name}把你当来抢城堡的人，你把这位女仆长当最难啃的一本账"
+        },
+        {
+          "a": "player",
+          "b": "loyal_crippled_castle_seneschal",
+          "stage": "stranger",
+          "a_to_b": {
+            "trust": 0,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 0,
+            "tension": 4
+          },
+          "reason": "老总管第一眼就认出你靴子是王都的样式，从头到尾一句话没说"
+        },
+        {
+          "a": "austere_head_maid_governess",
+          "b": "loyal_crippled_castle_seneschal",
+          "stage": "familiar",
+          "a_to_b": {
+            "trust": 5,
+            "tension": 1
+          },
+          "b_to_a": {
+            "trust": 5,
+            "tension": 1
+          },
+          "reason": "两人一起守了这座城堡十年，账册上的每一笔都对过"
+        }
+      ],
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "daily_activities": [
@@ -1999,7 +2071,7 @@
       "location_ids": [
         "castle_grand_hearth_great_hall"
       ],
-      "trigger": "帝国皇家税务署法令规定，若新任男爵在继承法定期限最后一日午夜钟声前无法当堂缴清一万金币继承税，帝国查封印章将即刻生效，古堡连同领地将由摄政团全盘接管拍卖。",
+      "trigger": "帝国税法规定，新任男爵若在继承期限最后一日午夜钟声前缴不清一万金币继承税，帝国查封印章将即刻生效，古堡连同领地将由摄政团全盘接管拍卖。",
       "objective": "在午夜零点钟声敲响前筹措并交付合法税金或取得正式合法延期文书。",
       "choice": "是少爷妥协在铁矿二十年低价抵税开采协议上签字，还是拼死开启地下暗格起运先父密藏金币？",
       "immediate": {
@@ -2012,7 +2084,7 @@
       },
       "far": {
         "trigger": "午夜零点查封令正式盖印生效",
-        "consequence": "霍恩洛厄古堡被帝国皇家法庭强制拍卖肢解，少爷沦为无地流民贵族并投监服苦役，百年门楣彻底覆灭。",
+        "consequence": "霍恩洛厄古堡被帝国法庭强制拍卖，少爷沦为无地流民贵族并投监服苦役，百年门楣彻底覆灭。",
         "due_days": 1
       },
       "exits": [
@@ -2294,7 +2366,7 @@
         "castle_master_bedchamber_suite",
         "castle_stone_corridor_dungeon_keep"
       ],
-      "text": "{austere_head_maid_governess.name}一袭深黑紧绷束腰长裙一丝不苟，双手交叠于腹前，微微屈膝行三十度古典主从礼，清冷嗓音带着不可侵犯之森严法度：“少爷，按霍恩洛厄家训第三条，仪容不整、身带污泥者不得踏入正堂！”"
+      "text": "{austere_head_maid_governess.name}一袭深黑紧绷束腰长裙一丝不苟，双手交叠于腹前，微微屈膝行三十度古典主从礼，清冷嗓音带着不可侵犯之森严法度：“少主，按霍恩洛厄家训第三条，仪容不整、身带污泥者不得踏入正堂！”"
     },
     {
       "id": "hk_dowager_fan_approach",
@@ -2315,7 +2387,7 @@
         "castle_master_bedchamber_suite",
         "castle_grand_hearth_great_hall"
       ],
-      "text": "{loyal_crippled_castle_seneschal.name}拄着粗重黑胡桃木拐杖沉重踏过石板地面：“少爷！老夫还活着呢！当年随老爵爷在战壕里打滚的时候，什么恶狼老夫没见过！军械库里那二十支线膛枪老夫全擦得锃亮！”"
+      "text": "{loyal_crippled_castle_seneschal.name}拄着粗重黑胡桃木拐杖沉重踏过石板地面：“少主！老夫还活着呢！当年随老爵爷在战壕里打滚的时候，什么恶狼老夫没见过！军械库里那二十支线膛枪老夫全擦得锃亮！”"
     },
     {
       "id": "hk_notary_seal_approach",
@@ -2335,7 +2407,7 @@
         "castle_head_maid_dressing_wardrobe_sec",
         "castle_master_bedchamber_suite"
       ],
-      "text": "{austere_head_maid_governess.name}反手将更衣暗室厚重橡木门轰然反锁，素手轻抬优雅解下黑色羊皮手套，直视你的双眸呼吸微促，清冷而带着颤抖低语：“少爷，这扇门已经锁死了。今夜在这间镜子里，只有您和我两个人。”"
+      "text": "{austere_head_maid_governess.name}反手将更衣暗室厚重橡木门轰然反锁，素手轻抬优雅解下黑色羊皮手套，直视你的双眸呼吸微促，清冷而带着颤抖低语：“少主，这扇门已经锁死了。今夜在这间镜子里，只有您和我两个人。”"
     },
     {
       "id": "hk_young_lord_wardrobe_request",
@@ -2355,7 +2427,7 @@
         "castle_stone_corridor_dungeon_keep",
         "castle_grand_hearth_great_hall"
       ],
-      "text": "{loyal_crippled_castle_seneschal.name}在断桥要塞生铁钉板门前抹去额角被风雪冻结的血沫，喘息如破风箱低吼：“少爷！雪崩把断桥石墩压裂了！快帮老夫合力绞起这道防风生铁闸！”"
+      "text": "{loyal_crippled_castle_seneschal.name}在断桥要塞生铁钉板门前抹去额角被风雪冻结的血沫，喘息如破风箱低吼：“少主！雪崩把断桥石墩压裂了！快帮老夫合力绞起这道防风生铁闸！”"
     },
     {
       "id": "hk_dowager_wine_request",

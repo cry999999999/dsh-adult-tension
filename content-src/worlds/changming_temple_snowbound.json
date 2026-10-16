@@ -109,7 +109,7 @@
       },
       {
         "pattern": "{family}先生",
-        "gender": "any"
+        "gender": "male"
       },
       {
         "pattern": "掌柜{family}",

@@ -1950,6 +1950,49 @@
         "disaster",
         "workplace"
       ]
+    },
+    {
+      "id": "p_incident_hearing",
+      "title": "事故说明会",
+      "source": "institution",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_staff_dormitory_room"
+      ],
+      "trigger": "沙暴过去第三天，研究院贴出通知召开事故说明会，要讲清两件事：当晚是谁批准进窟，脚手架的验收单是谁签的字",
+      "objective": "在说明会开始之前，把那一夜进窟的签字理清楚",
+      "choice": "照实说是自己坚持进窟，还是让签字的人自己去解释",
+      "immediate": {
+        "text": "赵处长在宿舍楼下等着，要那天的进窟登记本",
+        "minutes": 10
+      },
+      "near": {
+        "text": "下午三点开说明会",
+        "deadline_minutes": 360
+      },
+      "far": {
+        "trigger": "说明会定责",
+        "consequence": "九层楼的修复项目停一季，报告上写着谁的名字，谁就离开这个洞窟",
+        "due_days": 5
+      },
+      "exits": [
+        {
+          "option": "交出原始登记本",
+          "cost": "本子上那天的出窟时间一栏是空的"
+        },
+        {
+          "option": "请老马头作证脚手架当天验收过",
+          "cost": "老马头得承认那次验收是在电话里答应的"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": ["hook_qingxian_cinnabar", "hook_tianyu_sand_jujube", "hook_qingxian_dorm_curtain"],
+      "start_minute": 540,
+      "tags": [
+        "workplace_power"
+      ]
     }
   ],
   "hooks": [

@@ -169,7 +169,7 @@
     },
     {
      "pattern": "{family}郎君",
-     "gender": "any"
+     "gender": "male"
     }
    ],
    "age_range": [
@@ -198,11 +198,11 @@
     },
     {
      "pattern": "{family}娘子",
-     "gender": "any"
+     "gender": "female"
     },
     {
      "pattern": "{family}郎",
-     "gender": "any"
+     "gender": "male"
     }
    ],
    "age_range": [
@@ -231,7 +231,7 @@
     },
     {
      "pattern": "{family}先生",
-     "gender": "any"
+     "gender": "male"
     }
    ],
    "age_range": [
@@ -285,7 +285,7 @@
    "title_patterns": [
     {
      "pattern": "{family}大郎",
-     "gender": "any"
+     "gender": "male"
     },
     {
      "pattern": "{family}东家",

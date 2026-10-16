@@ -1950,7 +1950,7 @@
     "pattern": "神子大人"
    },
    {
-    "gender": "any",
+    "gender": "female",
     "pattern": "巫女长"
    },
    {
@@ -2019,7 +2019,7 @@
    "social_position": "high",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "female",
      "pattern": "{family}巫女长"
     },
     {
@@ -2106,7 +2106,7 @@
    "social_position": "low",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{family}少爷"
     },
     {

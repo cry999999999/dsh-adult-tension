@@ -1584,7 +1584,7 @@
     "creaky_communal_hallway"
    ],
    "slot": "troubled_neighbor_wife_yui",
-   "text": "{troubled_neighbor_wife_yui.name}轻叩薄墙三下，移步到门缝前拉开半寸看向你，眼睫含泪低语：“隔壁的先生……讨债人又上楼了，求你别出声，别让那帮人伤着你。”"
+   "text": "{troubled_neighbor_wife_yui.name}轻叩薄墙三下，移步到门缝前拉开半寸看向你，眼睫含泪低语：“邻居……讨债人又上楼了，求你别出声，别让那帮人伤着你。”"
   },
   {
    "id": "h_yui_bento_plate_pass",
@@ -1902,11 +1902,11 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "any",
+    "gender": "female",
     "pattern": "隔壁的{family}太太"
    },
    {
-    "gender": "any",
+    "gender": "male",
     "pattern": "{family}先生"
    },
    {
@@ -2000,7 +2000,7 @@
    "social_position": "low",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "邮政小哥"
     },
     {

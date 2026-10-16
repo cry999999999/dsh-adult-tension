@@ -2294,6 +2294,53 @@
    ],
    "title": "风淋走廊双向风幕失衡漆雾反串回流",
    "trigger": "若喷漆室大门在负压未平衡时突然暴力撬开，高浓度漆雾将因瞬时气流卷吸反冲污染百级无尘风淋走廊。"
+  },
+  {
+   "choice": "按官方设定连夜重喷，还是拿着配色稿去跟版权方硬谈",
+   "exits": [
+    {
+     "cost": "手调的那层渐变要全部洗掉，再熬第六个通宵",
+     "option": "连夜按官方设定重喷"
+    },
+    {
+     "cost": "视频里也拍到了喷漆房出事那一夜",
+     "option": "把跟拍博主录的上色过程发给版权方看"
+    }
+   ],
+   "far": {
+    "consequence": "展位空着，五个通宵的尾款和下一单合作一起没了",
+    "due_days": 2,
+    "trigger": "展品名单锁定"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_lingxi_mask_mark",
+    "hook_lingxi_figure_face",
+    "hook_lingxi_loft_curtain"
+   ],
+   "id": "p_license_review_rejected",
+   "immediate": {
+    "minutes": 3,
+    "text": "郑监修的视频电话已经在桌上震了第三遍"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_studio_loft_bedroom"
+   ],
+   "near": {
+    "deadline_minutes": 480,
+    "text": "下午六点，展会锁定展品名单"
+   },
+   "objective": "在展会锁定展品名单之前，让这尊手办拿到授权编号",
+   "source": "person",
+   "start_minute": 600,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "监修意见",
+   "trigger": "展前一天上午，版权方的郑监修发来一页意见：配色和官方设定差了两个色号，不改就不给授权编号，尾款也一起压着"
   }
  ],
  "region": "国家级数字文创园区大型不锈钢防爆双工位负压喷涂车间与风淋风道区",

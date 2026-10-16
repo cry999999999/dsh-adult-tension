@@ -142,10 +142,17 @@ def render_worlds():
     from adult_tension.application.service import one_line
     from adult_tension.content.store import ContentStore
 
-    index = ContentStore(os.path.join(_runtime.SKILL_ROOT, "content")).index()
+    store = ContentStore(os.path.join(_runtime.SKILL_ROOT, "content"))
+    index = store.index()
     lines = [GENERATED_NOTE, "# 世界列表\n\n"]
     lines.append("内容版本：`%s`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。" % index["content_version"])
-    lines.append("玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。\n\n")
+    lines.append("玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。")
+    lines.append("“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。\n\n")
+    released = [w for w in index["worlds"] if w["status"] == "released"]
+    lines.append("| 内容标签 | ID | 已发布世界数 |\n|---|---|---|\n")
+    for tag in store.tags()["tags"]:
+        lines.append("| %s | `%s` | %d |\n" % (tag["label"], tag["id"], sum(tag["id"] in w["content_tags"] for w in released)))
+    lines.append("\n")
     lines.append("| 世界 | ID | 一句话 | 模式 | 状态 |\n|---|---|---|---|---|\n")
     modes = {"daily": "日常", "pressure": "有压力"}
     for world in index["worlds"]:
@@ -219,6 +226,14 @@ def render_custom_world():
         "地点至少一个 `public`、一个 `semi` 或 `private`，任意两个地点的 `privacy`、`visibility`、`affordances` 不能完全相同。\n"
     )
     lines.append("- **压力**：五拍齐全，`near.deadline_minutes` 大于 `immediate.minutes`，出路至少两条且各有代价；带 `leverage` 标记的压力写明 `leverage` 的双方与依据，双方要同在某个人物组合里。\n")
+    lines.append(
+        "- **篇幅**：一个人物模板的全部文字合计 ≤ %d 字，一个压力 ≤ %d 字（不含 ID 与标签）——在场的人物卡与压力每回合都进上下文，太长会挤掉别人。\n"
+        % (worldpack.ST.TEMPLATE_TEXT_MAX, worldpack.ST.PRESSURE_TEXT_MAX)
+    )
+    lines.append(
+        "- **称呼**：带性别的称呼（先生、小姐、少爷、哥、姐……）只给性别已定的人：这样的称呼与绰号模板要标上 `male` 或 `female`；"
+        "不限性别的玩家身份要同时有给男、女玩家的称呼；正文里不写“{player.name}先生”，用 `{player.title}` 或 `{player.call}`。\n"
+    )
     tags = ContentStore(os.path.join(_runtime.SKILL_ROOT, "content")).tags()["tags"]
     lines.append("- **标签**：`content_tags` 与各处 `tags` 只能用内容标签表里的 ID：%s。\n\n" % "、".join("`%s` %s" % (t["id"], t["label"]) for t in tags))
     lines.append("## 字段\n\n")

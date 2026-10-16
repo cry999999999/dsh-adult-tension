@@ -142,7 +142,7 @@
         },
         {
           "pattern": "{given}先生",
-          "gender": "any"
+          "gender": "male"
         }
       ],
       "age_range": [
@@ -202,7 +202,7 @@
         },
         {
           "pattern": "{given}小哥",
-          "gender": "any"
+          "gender": "male"
         }
       ],
       "age_range": [
@@ -2084,6 +2084,47 @@
         "disaster",
         "workplace"
       ]
+    },
+    {
+      "id": "p_mountain_rule_rumor",
+      "title": "坏了山规的传言",
+      "source": "rumor",
+      "flags": [
+        "timed"
+      ],
+      "location_ids": [
+        "loc_ginseng_dugout_hut"
+      ],
+      "trigger": "下山回屯子的第二天晌午，参帮的老把头们在地窨子外头蹲了一排：有人传话说，考察队在天池边敲石头，惊了山神，这才招来那场冰崩",
+      "objective": "在老把头们去老爷府拜山之前，把放山的规矩和考察队的事一起说清楚",
+      "choice": "护着考察队，还是交出那块从天池边敲下来的石头",
+      "immediate": {
+        "text": "佟老爹在门外咳了一声，说他们是带着香和红绳来的",
+        "minutes": 10
+      },
+      "near": {
+        "text": "日头落山前，要在老爷府前拜山定规矩",
+        "deadline_minutes": 300
+      },
+      "far": {
+        "trigger": "拜山定下规矩",
+        "consequence": "女把头的把头位子要被收回，考察队往后再也进不了这片老林子",
+        "due_days": 3
+      },
+      "exits": [
+        {
+          "option": "交出那块石头",
+          "cost": "宋教授的考察记录就缺了最要紧的一页"
+        },
+        {
+          "option": "请佟老爹出面说情",
+          "cost": "佟老爹得把自己年轻时坏过山规的旧事当众抖出来"
+        }
+      ],
+      "leverage": null,
+      "hook_ids": ["hook_xueyuan_roe_deer", "hook_xueyuan_red_rope", "hook_hanzhou_sketch", "hook_xueyuan_dugout_curtain"],
+      "start_minute": 720,
+      "tags": []
     }
   ],
   "hooks": [

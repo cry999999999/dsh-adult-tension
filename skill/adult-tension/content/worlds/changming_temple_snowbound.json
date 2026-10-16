@@ -1831,7 +1831,7 @@
     "pattern": "老{family}"
    },
    {
-    "gender": "any",
+    "gender": "male",
     "pattern": "{family}先生"
    },
    {

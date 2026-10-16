@@ -7,6 +7,7 @@ compiled file changed after the build is reported with its location instead
 of producing a broken opening.
 """
 
+import hashlib
 import os
 
 from ..errors import CONTENT_ERROR, AppError, detail
@@ -69,6 +70,14 @@ class ContentStore:
                 )
             self._worlds[world_id] = raw
         return self._worlds[world_id]
+
+    def world_digest(self, world_id):
+        """SHA-256 of the compiled world file as it is on disk; None when unreadable."""
+        try:
+            with open(os.path.join(self.content_dir, "worlds", world_id + ".json"), "rb") as handle:
+                return hashlib.sha256(handle.read()).hexdigest()
+        except OSError:
+            return None
 
     def files(self):
         """Relative paths of every compiled content file, sorted."""

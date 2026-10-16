@@ -2284,6 +2284,53 @@
    ],
    "title": "外部牵引绞盘力矩失衡撕裂门轴危机",
    "trigger": "外部十吨钢丝绳过早猛烈绞紧而内部止逆未完全脱扣，巨力将瞬间拉断铰链偏心轴造成永久卡死。"
+  },
+  {
+   "choice": "承认是自己不肯中断评级，还是说那是安防总工的安排",
+   "exits": [
+    {
+     "cost": "你的评级证书上会多一行备注",
+     "option": "承认是自己的决定"
+    },
+    {
+     "cost": "日志里有总工替你关掉一次警报的记录",
+     "option": "交出安防日志"
+    }
+   ],
+   "far": {
+    "consequence": "理赔被拒，鉴定师的签名三年内在业内没人敢用",
+    "due_days": 7,
+    "trigger": "报告认定违规操作"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_manning_mulled_wine",
+    "hook_manning_crystal_gift",
+    "hook_manning_chalet_door"
+   ],
+   "id": "p_adjuster_questions",
+   "immediate": {
+    "minutes": 5,
+    "text": "公估人把录音笔放在桌上，说只问三个问题"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_mine_mouth_chalet"
+   ],
+   "near": {
+    "deadline_minutes": 600,
+    "text": "晚上八点，公估报告发回苏黎世"
+   },
+   "objective": "在公估报告发回苏黎世之前，让理赔不落空",
+   "source": "person",
+   "start_minute": 600,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "公估人的三个问题",
+   "trigger": "获救后的第二天，保险公估人敲开矿洞口的木屋，第一个问题是：地震的时候，那颗烟晶为什么不在保险柜里，而在鉴定台上"
   }
  ],
  "region": "瑞士阿尔卑斯山腹两百米深的百年水晶矿洞、宝石切磨工坊与鉴证舱",

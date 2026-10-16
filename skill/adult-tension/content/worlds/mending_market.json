@@ -2046,11 +2046,11 @@
    "social_position": "equal",
    "title_patterns": [
     {
-     "gender": "any",
+     "gender": "male",
      "pattern": "{given}哥"
     },
     {
-     "gender": "any",
+     "gender": "female",
      "pattern": "{given}姐"
     }
    ]

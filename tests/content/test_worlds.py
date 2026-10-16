@@ -98,6 +98,18 @@ class WorldPackTest(unittest.TestCase):
                     self.assertEqual([t for t in pack["forbidden_terms"] if t in text], [], (pack["id"], mode, seed))
                     self.assertEqual(payload["world"]["era"], pack["era"])
 
+    def test_every_world_opens_for_each_player_gender_its_identities_allow(self):
+        # The default opening NPC is the other gender of the player's character
+        # (opening.npc_preference); that must never close a world to a player.
+        for pack in worlds():
+            for gender in ("male", "female"):
+                if not any(i["gender"] in ("any", gender) for i in pack["player_identities"]):
+                    continue
+                for mode in ("daily", "pressure"):
+                    conditions = opening.normalize_conditions({"mode": mode, "locks": {"world_id": pack["id"]}, "player": {"gender": gender}})
+                    tuples, reasons = opening.plan_candidates(pack, mode, conditions)
+                    self.assertTrue(tuples, (pack["id"], gender, mode, reasons))
+
     def test_diversity_gate(self):
         for pack in worlds():
             for mode in ("daily", "pressure"):

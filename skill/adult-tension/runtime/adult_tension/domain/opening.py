@@ -97,10 +97,13 @@ OPPOSITE = {"female": "male", "male": "female"}
 
 def npc_preference(preference, player_gender):
     """The gender rule for the opening NPCs: the player's own preference when
-    they set one; otherwise the opposite of the player's character."""
+    they set one; otherwise the other gender of the player's character
+    ("other_female" / "other_male"): an NPC whose gender the world leaves open
+    takes it, a card with a fixed gender keeps its own, and a combo needs
+    someone who can be of the other gender."""
     if preference not in ("any", "mixed") or player_gender not in OPPOSITE:
         return preference
-    return OPPOSITE[player_gender] + "_only"
+    return "other_" + OPPOSITE[player_gender]
 
 
 def _player_gender(pack, combo, identity, seed, given):
@@ -129,6 +132,8 @@ def _combo_gender_ok(pack, combo, preference):
         want = "female" if preference == "mostly_female" else "male"
         quota = max(1, math.ceil(0.6 * n))
         return n - sum(1 for g in fixed if g != want) >= quota
+    if preference in ("other_female", "other_male"):
+        return len(fixed) < n or preference[len("other_"):] in fixed
     return True
 
 
@@ -347,8 +352,8 @@ def _npc_genders(pack, combo, seed, preference):
         weights = [mix["female"], mix["male"], mix["nonbinary"]]
         return rng.weighted(seed, "opening.gender", items, weights, slot)
 
-    if preference in ("female_only", "male_only"):
-        want = "female" if preference == "female_only" else "male"
+    if preference in ("female_only", "male_only", "other_female", "other_male"):
+        want = "female" if preference in ("female_only", "other_female") else "male"
         for slot in free:
             genders[slot] = want
     elif preference in ("mostly_female", "mostly_male"):

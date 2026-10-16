@@ -917,8 +917,8 @@
     "relationship_stance": "将底层工人和流民视为随时可以牺牲的数字耗材，对技术骨干表面客气实则严密监控。",
     "withdrawal": "退回第二道防爆气密门后方，命令卫兵组成人墙护卫自己。"
    },
-   "gender": "male",
-   "gender_reason": "避难所最高议会特命现场督察高官",
+   "gender": "any",
+   "gender_reason": null,
    "id": "council_inspector_yan",
    "identity": {
     "authority": "代表避难所最高议会行使战时戒严法权与永久封闭外围隔离区的终决权。",

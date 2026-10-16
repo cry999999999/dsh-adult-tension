@@ -630,8 +630,7 @@
     },
     {
       "id": "senior_dungeon_blacksmith_albert",
-      "gender": "male",
-      "gender_reason": "王城地下机械营造四十载资深老工匠长",
+      "gender": "any",
       "age_range": [
         58,
         66
@@ -671,7 +670,7 @@
         },
         "withdrawal": "退入干燥看台台阶旁擦拭汗水调理呼吸。",
         "relationship_stance": "硬汉工匠风骨重诺守信，鄙薄贪生怕死的小人，看重敢于拼命的技术实干家。",
-        "contrast": "平日脾气暴躁对谁都不假辞色，在看到千金遇险时敢一把推开私兵的战斧厉声喝令滚开别挡老子救人。",
+        "contrast": "平日脾气暴躁对谁都不假辞色，在看到千金遇险时敢一把推开私兵的战斧厉声喝令滚开别挡着救人。",
         "prefers": [
           "严丝合缝的力学咬合",
           "毫不惜力的扎实干劲"
@@ -715,7 +714,7 @@
       },
       "voices": {
         "surface": "听老头子号令！金印手柄短头卡进卡槽斜面，借身体重力狠命往上挑，别蛮干！",
-        "inner": "老夫亲手浇筑的这道重型铁闸，绝不能看着千金这刚烈丫头被这道闸卡死在冷水里！"
+        "inner": "我亲手浇筑的这道重型铁闸，绝不能看着千金这刚烈丫头被这道闸卡死在冷水里！"
       },
       "schedule": [
         {
@@ -2044,7 +2043,7 @@
       "location_ids": [
         "loc_basalt_dungeon_hall"
       ],
-      "text": "{senior_dungeon_blacksmith_albert.name}抹去满脸雨水指着锁槽大喝听老夫口令，转轴往右斜插两毫米，对准退让销顺势狠命压！"
+      "text": "{senior_dungeon_blacksmith_albert.name}抹去满脸雨水指着锁槽大喝听我口令，转轴往右斜插两毫米，对准退让销顺势狠命压！"
     },
     {
       "id": "h_04_claire_deliver_kit",

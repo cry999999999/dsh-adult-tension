@@ -657,8 +657,7 @@
     },
     {
       "id": "engineer_song_ting_feng",
-      "gender": "male",
-      "gender_reason": "工业气动控制工程专业全日制本科学成满二十六岁成年男工匠",
+      "gender": "any",
       "age_range": [
         26,
         26

@@ -612,8 +612,7 @@
     },
     {
       "id": "earth_defense_inspector_major_di",
-      "gender": "male",
-      "gender_reason": "地月联合防卫司令部特派监察少校",
+      "gender": "any",
       "age_range": [
         38,
         42

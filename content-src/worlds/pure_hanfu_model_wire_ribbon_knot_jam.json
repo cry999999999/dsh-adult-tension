@@ -891,8 +891,7 @@
     },
     {
       "id": "electric_safety_chief_qin_wei",
-      "gender": "male",
-      "gender_reason": "基地机电安全工程主管二十七岁电气控制学骨干。",
+      "gender": "any",
       "age_range": [
         27,
         27

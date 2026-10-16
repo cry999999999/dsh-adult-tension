@@ -709,8 +709,8 @@
     "relationship_stance": "三顾苏州才把这位梳头师请进组，挨骂挨得心甘情愿，暖阁的灯不灭，总监就不走。",
     "withdrawal": "靠在回廊朱红立柱旁摘下对讲耳机长舒一口气欣慰展颜微笑。"
    },
-   "gender": "male",
-   "gender_reason": "古装巨制剧组的执行美术总监。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "art_director_xiao_tian_yi",
    "identity": {
     "authority": "对明清大殿实景机关拆改、现场道具复原及外侧破拆力度把控享有全权交涉权。",

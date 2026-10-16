@@ -734,8 +734,7 @@
     },
     {
       "id": "castellanus_lord_valentin",
-      "gender": "male",
-      "gender_reason": "边防集团军直属战备督导官",
+      "gender": "any",
       "age_range": [
         40,
         46

@@ -709,8 +709,8 @@
     "relationship_stance": "店是为一支舞开的，四年来每场压轴都站在侧幕最暗的地方看，从没跟人说过。",
     "withdrawal": "靠在备场前厅受力立柱边摘下耳机长舒一口气宽慰展颜微笑。"
    },
-   "gender": "male",
-   "gender_reason": "女仆咖啡馆的执行店长兼舞台总监。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "cafe_manager_lan_tian_yi",
    "identity": {
     "authority": "对咖啡馆全场演艺物资调度、通道安全巡查及防火卷帘门应急协调享有全权决策权。",

@@ -812,8 +812,8 @@
     "relationship_stance": "将台前技术人员视作并肩作战的默契搭档，用导播技术筑牢最后一道防护堤。",
     "withdrawal": "摘下耳机长舒一口气，稳稳靠在导播转椅上将事故记录日志做自动覆盖清零。"
    },
-   "gender": "male",
-   "gender_reason": "数字媒体技术毕业，年满三十二周岁融媒体中心总控台长成年男子。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "broadcast_director_chen_zi_mo",
    "identity": {
     "authority": "掌控全礼堂四块千寸大屏推流信号源切换、机位构图调取及应急黑场裁量权。",

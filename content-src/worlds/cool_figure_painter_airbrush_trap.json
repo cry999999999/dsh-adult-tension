@@ -503,8 +503,7 @@
     },
     {
       "id": "hvac_mechanic_chu_tian_heng",
-      "gender": "male",
-      "gender_reason": "文创园区车间暖通通风动力机电总工程师二十六岁青年骨干。",
+      "gender": "any",
       "age_range": [
         26,
         26

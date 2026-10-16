@@ -1194,8 +1194,8 @@
     "relationship_stance": "对住院总的医术骨气颇为器重，对护士等青年实习生秉持最严苛的考核打磨眼光。",
     "withdrawal": "在交接核查单完美呈递后微微颔首收敛严厉威压，露出一抹极其罕见的赞许之色。"
    },
-   "gender": "male",
-   "gender_reason": "三甲医院特聘名誉副院长兼急诊巡查总督导由年满三十周岁成年男性青年名医担任",
+   "gender": "any",
+   "gender_reason": null,
    "id": "dean_qin_tian_lin",
    "identity": {
     "authority": "全院规培实习人员留院录用一票否决权与急诊医疗质量红牌处罚权。",

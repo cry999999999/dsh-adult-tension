@@ -681,8 +681,8 @@
     "relationship_stance": "将女总工视为恃才傲物不服管束的技术刺头女工程师，对其专业权威既敬畏又嫉恨。",
     "withdrawal": "退缩在防爆通廊后方密封防爆逃生救生室门内，双手死死抱住公文包与自救呼吸器。"
    },
-   "gender": "male",
-   "gender_reason": "化工厂应急安全生产指挥中心特派安全监察官，在检修季里连轴转了三个月",
+   "gender": "any",
+   "gender_reason": null,
    "id": "inspector_du_jian",
    "identity": {
     "authority": "代表安全指挥部行使重大险情全场紧急停产戒严权、下达全装置弃守引火放空指令的最终签署权。",

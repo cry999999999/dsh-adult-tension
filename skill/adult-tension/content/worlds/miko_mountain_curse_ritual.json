@@ -827,8 +827,8 @@
     "relationship_stance": "将大巫女视作不可侵犯的名门大巫女并抱以崇高敬仰与保护欲",
     "withdrawal": "协助大巫女撤入石阶后迅速砍断回廊连接拉索实施弃险避灾"
    },
-   "gender": "male",
-   "gender_reason": "古建筑结构营造工匠工长年届双十有六岁青年男工师",
+   "gender": "any",
+   "gender_reason": null,
    "id": "char_carpenter_takahashi",
    "identity": {
     "authority": "掌控回廊现场木构榫卯破拆与受力点调整指挥",

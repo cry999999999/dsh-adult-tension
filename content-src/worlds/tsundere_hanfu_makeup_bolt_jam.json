@@ -502,8 +502,7 @@
     },
     {
       "id": "art_director_xiao_tian_yi",
-      "gender": "male",
-      "gender_reason": "古装巨制剧组的执行美术总监。",
+      "gender": "any",
       "age_range": [
         30,
         34

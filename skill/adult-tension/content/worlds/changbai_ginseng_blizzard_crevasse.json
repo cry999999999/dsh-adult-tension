@@ -703,8 +703,8 @@
     "relationship_stance": "跟着女把头在老林子里走了一个月，学者的测绘本子后头，画满了女把头的侧影。",
     "withdrawal": "退至冰穴角落仔细检查主绳编织纤维磨损状况。"
    },
-   "gender": "male",
-   "gender_reason": "关东探险队负责岩层测绘的青年男学者",
+   "gender": "any",
+   "gender_reason": null,
    "id": "explorer_lu_hanzhou",
    "identity": {
     "authority": "对全队冰岩力学测算、锚点安全承载与地质标本安全负有专业评定权。",

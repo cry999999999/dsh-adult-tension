@@ -919,8 +919,7 @@
     },
     {
       "id": "critic_pierre_dupuis",
-      "gender": "male",
-      "gender_reason": "美食指南学会终身理事年届五十八周岁法籍成年首席评委",
+      "gender": "any",
       "age_range": [
         58,
         58

@@ -535,8 +535,7 @@
     },
     {
       "id": "av_architect_lu_jing_xing",
-      "gender": "male",
-      "gender_reason": "上市大厅的视听总工程师，机械臂大屏的设计者。",
+      "gender": "any",
       "age_range": [
         32,
         36

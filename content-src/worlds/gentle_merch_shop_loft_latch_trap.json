@@ -753,8 +753,7 @@
     },
     {
       "id": "fire_patrol_officer_song_chen_yi",
-      "gender": "male",
-      "gender_reason": "文化街区特勤微型消防站巡查二十二岁退役消防特勤骨干队员。",
+      "gender": "any",
       "age_range": [
         22,
         22

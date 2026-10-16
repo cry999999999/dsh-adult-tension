@@ -493,8 +493,7 @@
     },
     {
       "id": "master_scout_huo_changfeng",
-      "gender": "male",
-      "gender_reason": "发丘摸金门首席重装探路校尉",
+      "gender": "any",
       "age_range": [
         28,
         32
@@ -529,7 +528,7 @@
         ],
         "pressure_responses": {
           "low": "在翻板倾斜瞬间利落甩出飞天抓索扣紧石殿铜环稳固阵脚",
-          "mid": "用雄厚胸膛一把拉住失足滑向深渊陷坑的年轻学徒",
+          "mid": "用结实臂膀一把拉住失足滑向深渊陷坑的年轻学徒",
           "high": "双手覆在女掌门手背外侧倾注全身数百公斤蛮力协同下压",
           "breaking": "用宽阔身躯死死挡住穹顶砸下的千斤断石为女掌门遮蔽危险"
         },
@@ -2015,7 +2014,7 @@
       "location_ids": [
         "loc_crypt_balance_slab_grand_hall"
       ],
-      "text": "{master_scout_huo_changfeng.name}撑开重型金刚伞挡在女掌门身前遮蔽倒灌毒雾，沉声低喝：含服清灵散！毒烟呛不死人，翻板还没平，掌门还在死战，谁敢乱动老子把闹事者扔下深坑！"
+      "text": "{master_scout_huo_changfeng.name}撑开重型金刚伞挡在女掌门身前遮蔽倒灌毒雾，沉声低喝：含服清灵散！毒烟呛不死人，翻板还没平，掌门还在死战，谁敢乱动我就把闹事者扔下深坑！"
     },
     {
       "id": "hook_paraffin_melts_floor_slips_deadly",

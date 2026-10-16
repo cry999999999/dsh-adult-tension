@@ -1194,8 +1194,8 @@
     "relationship_stance": "将车模视作衬托超跑的无价艺术展品与猎艳目标，对总监的技术傲骨充满嫉意与排斥。",
     "withdrawal": "在安保严密守卫与镜头全景推进下悻悻然收敛轻佻，挂上无可挑剔的商业假笑举杯示意。"
    },
-   "gender": "male",
-   "gender_reason": "跨国超跑车企亚太区青年副总裁由年满三十二周岁青年男性担任",
+   "gender": "any",
+   "gender_reason": null,
    "id": "president_thomas_moreau",
    "identity": {
     "authority": "品牌发布会揭幕最终决策权与全球商业代言人拍板权。",
@@ -1207,7 +1207,7 @@
     ],
     "obligations": [
      "代表品牌完成揭幕演讲并与第一车模合影",
-     "维系跨国车企贵公子的上流风度"
+     "维系跨国车企贵胄的上流风度"
     ],
     "resources": [
      "跨国车企数百亿级商业推广资本",

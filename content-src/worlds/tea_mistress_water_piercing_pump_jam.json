@@ -1055,8 +1055,7 @@
     },
     {
       "id": "sponsor_rep_song_zi_ang",
-      "gender": "male",
-      "gender_reason": "茶业文旅集团青年成年少东家代表年届三十二周岁。",
+      "gender": "any",
       "age_range": [
         32,
         35
@@ -1148,7 +1147,7 @@
       },
       "voices": {
         "surface": "若夫人，{npc.name}可是注资了一千万！听说水台茶具出了点小麻烦，作为金主，{npc.name}亲自上台帮衬帮衬难道不合情理？",
-        "inner": "听说那个平日连正眼都不瞧{npc.name}的若夫人旗袍卷进水泵里了？正好！{npc.name}现在掀开水雾拍几张，看若夫人还怎么在老子面前装圣女！"
+        "inner": "听说那个平日连正眼都不瞧{npc.name}的若夫人旗袍卷进水泵里了？正好！{npc.name}现在掀开水雾拍几张，看若夫人还怎么在我面前装圣女！"
       },
       "schedule": [
         {

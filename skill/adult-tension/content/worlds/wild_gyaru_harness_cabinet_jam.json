@@ -672,8 +672,8 @@
     "relationship_stance": "从大学起就看着这个金发学妹熬夜打版，嘴上叫一声丫头，今晚这场秀的每一道灯都是替学妹排的。",
     "withdrawal": "独自站在主控台强光灯照不到的暗影处大口灌冰水平复心跳。"
    },
-   "gender": "male",
-   "gender_reason": "时装周秀场执行总监，设计师大学时的学长。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "runway_director_lu_yun_xiao",
    "identity": {
     "authority": "全秀场后台人员出入审查与直接叫停走秀环节最高决策权。",

@@ -919,8 +919,7 @@
     },
     {
       "id": "conductor_carl_von_hohenberg",
-      "gender": "male",
-      "gender_reason": "欧陆乐坛功勋元老达到五十八岁之资深指挥巨擘",
+      "gender": "any",
       "age_range": [
         58,
         58

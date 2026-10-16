@@ -674,8 +674,8 @@
     "relationship_stance": "三年里在国际赛上和女擂主下了九盘，输五赢四，最想赢的是这一盘，最不想赢的也是这一盘。",
     "withdrawal": "在观战席闭目静坐，双手抚膝默诵古典棋谱心诀。"
    },
-   "gender": "male",
-   "gender_reason": "日本棋院的职业九段，擂台赛日方主将。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "go_rival_hara_sosuke",
    "identity": {
     "authority": "擂台赛决胜局对弈选手同等权利与申请棋钟技术暂停复核权。",

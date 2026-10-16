@@ -1098,8 +1098,8 @@
     "relationship_stance": "对年轻女主厨持有泰山北斗式的严酷审视与恨铁不成钢的高标期待。",
     "withdrawal": "在评审席稍作凝滞，以犀利目光环视全场令二十位名流评审重归绝对肃静。"
    },
-   "gender": "male",
-   "gender_reason": "美食指南学会终身理事年届五十八周岁法籍成年首席评委",
+   "gender": "any",
+   "gender_reason": null,
    "id": "critic_pierre_dupuis",
    "identity": {
     "authority": "米其林三星终极评星一票否决权与甜品出品时效裁量大权",

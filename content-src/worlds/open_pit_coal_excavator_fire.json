@@ -591,8 +591,7 @@
     },
     {
       "id": "inspector_duan_chao",
-      "gender": "male",
-      "gender_reason": "煤炭工业集团特派高级安全监察官",
+      "gender": "any",
       "age_range": [
         38,
         44

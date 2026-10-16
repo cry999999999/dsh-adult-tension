@@ -831,8 +831,8 @@
     "relationship_stance": "敬重馆员对书的那份痴，从不多话，书梯却永远保养得最好。",
     "withdrawal": "回到维保凹室，一言不发地给滚轮重新上油"
    },
-   "gender": "male",
-   "gender_reason": "特种机电设备专业毕业届满二十五岁之成年男性技术骨干",
+   "gender": "any",
+   "gender_reason": null,
    "id": "engineer_zhao_tian_yuan",
    "identity": {
     "authority": "后厨重型设备安全检修认定权与突发器械卡死处置权",

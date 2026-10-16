@@ -98,12 +98,25 @@ class PeopleTest(unittest.TestCase):
         # A preference the player set comes first.
         state, _ = build("daily", 3, player={"gender": "male"}, npc_gender_preference="male_only")
         self.assertEqual({c["gender"] for c in state["characters"].values() if c["tier"] == "major" and c["id"] != "player"}, {"male"})
-        # No gender given: the player's character is still the other gender of the NPCs.
-        for seed in range(1, 15):
-            state, _ = build("daily", seed)
-            player = state["characters"]["player"]["gender"]
-            genders = {c["gender"] for c in state["characters"].values() if c["tier"] == "major" and c["id"] != "player"}
-            self.assertNotIn(player, genders, seed)
+        # No gender given: the player's character is male, the NPCs female.
+        for mode in ("daily", "pressure"):
+            for seed in range(1, 15):
+                state, _ = build(mode, seed)
+                self.assertEqual(state["characters"]["player"]["gender"], "male", (mode, seed))
+                genders = {c["gender"] for c in state["characters"].values() if c["tier"] == "major" and c["id"] != "player"}
+                self.assertEqual(genders, {"female"}, (mode, seed))
+
+    def test_a_world_without_a_male_identity_opens_by_its_identities(self):
+        pack = dict(PACK, player_identities=[dict(i, gender="female") for i in PACK["player_identities"]])
+        conditions = opening.normalize_conditions({"mode": "daily", "locks": {"world_id": WORLD}})
+        state, _ = opening.build(pack, 6, conditions, "test")
+        self.assertEqual(state["characters"]["player"]["gender"], "female")
+        # The world's own identity for the player's wish comes before a custom one.
+        first = PACK["player_identities"][0]
+        pack = dict(PACK, player_identities=[dict(first, gender="female")] + PACK["player_identities"][1:])
+        conditions = opening.normalize_conditions({"mode": "daily", "locks": {"world_id": WORLD}, "player": {"identity_hint": first["id"]}})
+        state, _ = opening.build(pack, 6, conditions, "test")
+        self.assertEqual((state["characters"]["player"]["gender"], state["opening"]["identity_id"]), ("female", first["id"]))
 
     def test_player_settings_are_respected(self):
         state, payload = build("daily", 4, player={"gender": "female", "age": 45, "identity_hint": "裁缝", "name": "罗秀英", "title": "罗师傅"})

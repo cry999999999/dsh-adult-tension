@@ -612,8 +612,7 @@
     },
     {
       "id": "inspector_lu_weimin",
-      "gender": "male",
-      "gender_reason": "矿山安全生产特派高级监察专员",
+      "gender": "any",
       "age_range": [
         38,
         44

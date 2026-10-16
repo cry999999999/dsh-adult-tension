@@ -849,8 +849,7 @@
     },
     {
       "id": "council_inspector_yan",
-      "gender": "male",
-      "gender_reason": "避难所最高议会特命现场督察高官",
+      "gender": "any",
       "age_range": [
         45,
         48

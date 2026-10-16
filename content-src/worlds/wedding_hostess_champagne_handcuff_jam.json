@@ -536,8 +536,7 @@
     },
     {
       "id": "director_lu_yun_shen",
-      "gender": "male",
-      "gender_reason": "世纪婚礼的总策划总监兼现场导播。",
+      "gender": "any",
       "age_range": [
         30,
         34

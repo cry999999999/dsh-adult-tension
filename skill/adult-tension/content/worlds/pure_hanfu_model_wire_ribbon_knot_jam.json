@@ -1097,8 +1097,8 @@
     "relationship_stance": "严守规程同时全力为现场抢险大局开辟绿色通道，以高度负责态度托底。",
     "withdrawal": "在马道栏杆旁取下绝缘手套抹去额头热汗沉着通报安全。"
    },
-   "gender": "male",
-   "gender_reason": "基地机电安全工程主管二十七岁电气控制学骨干。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "electric_safety_chief_qin_wei",
    "identity": {
     "authority": "对影棚高压强电回路切断、应急柴油机组强励合闸与机械马道紧急封锁享有全权决策权。",

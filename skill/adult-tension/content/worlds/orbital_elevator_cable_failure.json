@@ -681,8 +681,8 @@
     "relationship_stance": "将女上尉视为恃才傲物不服管教的刺头女军官，对其既畏惧其铁腕又嫉妒其高超军功威望。",
     "withdrawal": "退缩在承压指挥室后排逃生密封舱内，双手死死抱住公文箱与救生呼吸器。"
    },
-   "gender": "male",
-   "gender_reason": "地月联合防卫司令部特派监察少校",
+   "gender": "any",
+   "gender_reason": null,
    "id": "earth_defense_inspector_major_di",
    "identity": {
     "authority": "代表防卫司令部行使战时戒严法权、判定是否自沉炸断锚定机库单独逃生的终决权。",

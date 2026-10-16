@@ -612,8 +612,7 @@
     },
     {
       "id": "inspector_yue_zheng",
-      "gender": "male",
-      "gender_reason": "科研试验指挥中心特派高级安全监察官",
+      "gender": "any",
       "age_range": [
         38,
         44

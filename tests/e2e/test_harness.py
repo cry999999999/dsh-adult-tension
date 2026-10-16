@@ -1441,7 +1441,7 @@ class RunnerTest(unittest.TestCase):
         script = run_script.load_script("01")
         path, rec = run_script.run(script, "fake", 1, None, os.path.join(temp, "projects"), os.path.join(temp, "records"))
         self.assertEqual(R.validate(rec), [])
-        self.assertEqual([len(t["runtime_calls"]) for t in rec["turns"]], [2, 1, 1, 1, 1, 1, 1])
+        self.assertEqual([len(t["runtime_calls"]) for t in rec["turns"]], [2, 1, 1, 1, 1, 1])
         self.assertEqual({t["calls_source"] for t in rec["turns"]}, {"trace"})
         for turn in rec["turns"]:
             # what the host's own record shows is what the engine traced

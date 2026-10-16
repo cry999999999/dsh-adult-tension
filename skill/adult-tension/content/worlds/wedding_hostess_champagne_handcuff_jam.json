@@ -674,8 +674,8 @@
     "relationship_stance": "替别人办了几百场婚礼，每场都把司仪的站位排在追光最好的地方，从没问过司仪自己想要什么样的婚礼。",
     "withdrawal": "站在总控台话筒前微微压低嗓音，用沉稳有力的低音节奏掌控全场呼吸。"
    },
-   "gender": "male",
-   "gender_reason": "世纪婚礼的总策划总监兼现场导播。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "director_lu_yun_shen",
    "identity": {
     "authority": "现场声光电总调度权与卫星转播镜头切换绝对指令权。",

@@ -535,8 +535,7 @@
     },
     {
       "id": "night_supervisor_jiang_lin_chuan",
-      "gender": "male",
-      "gender_reason": "通宵便利店的夜班领班，管排班、冷链和门店安全。",
+      "gender": "any",
       "age_range": [
         27,
         30

@@ -709,8 +709,8 @@
     "relationship_stance": "对着耳机里那把声音挑剔了五年，挑到后来，最怕的是哪天棚里换了别人。",
     "withdrawal": "摘下耳机倚在混音台旁大口喘息欣慰向声优点头致意。"
    },
-   "gender": "male",
-   "gender_reason": "乙女游戏音频制作总监兼录音导演。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "sound_director_cheng_huai_an",
    "identity": {
     "authority": "对录音母带审听、录音棚声学安全设备调用及外侧吸盘破拆协调享有最高指挥权。",
@@ -734,7 +734,7 @@
      "隔窗相对时彼此眼神中倾注的绝对信赖与共克时艰意志"
     ],
     "boundaries": [
-     "恪守音频总监职业操守与绅士品格底线",
+     "恪守音频总监职业操守与做人底线",
      "绝不允许违背自愿原则的越界行径"
     ],
     "desire_range": [

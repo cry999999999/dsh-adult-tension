@@ -457,7 +457,7 @@
    "intimacy_tendency": {
     "attraction_sources": [
      "在冰冷浊流与绝境中犹如铁塔般的沉稳庇护",
-     "合力握紧合金弹匣撬锁时肌肤相亲传来的灼热体温与男人雄浑心跳"
+     "合力握紧合金弹匣撬锁时肌肤相亲传来的灼热体温与对方雄浑心跳"
     ],
     "boundaries": [
      "严守大家闺秀名节与未婚礼仪分寸",
@@ -800,8 +800,8 @@
     "relationship_stance": "崇洋媚外欺软怕硬，既垂涎督军府的权势又鄙视华人工程师，在生死大难面前极度自私丑态毕露。",
     "withdrawal": "缩在回廊最高处的大理石迎客条案背后，用账本挡住头部。"
    },
-   "gender": "male",
-   "gender_reason": "外滩泰丰银行华人总买办兼董事襄理",
+   "gender": "any",
+   "gender_reason": null,
    "id": "comprador_mr_edward_tang",
    "identity": {
     "authority": "对金库董事会的商业密押密码与保险库私人物品清册享有独占的知情权。",

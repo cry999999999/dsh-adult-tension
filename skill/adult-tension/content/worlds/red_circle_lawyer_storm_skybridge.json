@@ -714,8 +714,8 @@
     "relationship_stance": "三周来天天上天桥查铰链，查到后来连保洁阿姨都知道，结构总工查的不全是铰链。",
     "withdrawal": "立于核心筒防火门前最后一次核对结构传感器读数。"
    },
-   "gender": "male",
-   "gender_reason": "超高层建筑结构专业名校毕业的二十六岁青年结构总工程师。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "architect_lin_chengzhi",
    "identity": {
     "authority": "对悬空天桥结构安全评估、紧急封桥指令下达及机电破拆方案拥有现场总指挥权。",

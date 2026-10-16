@@ -681,8 +681,8 @@
     "relationship_stance": "将反抗军与街头佣兵视为恐怖分子与底层臭虫，对其抱有刻骨的优越感与恐惧。",
     "withdrawal": "缩在车厢最上端豪华包厢防滚架内，双手死死抱住公文包与降落伞。"
    },
-   "gender": "male",
-   "gender_reason": "天轨巨企安全运行部特派督察总监",
+   "gender": "any",
+   "gender_reason": null,
    "id": "megacorp_inspector_araska_yan",
    "identity": {
     "authority": "代表巨企董事会行使高空危急状态下载具自毁、弃车断缆与人员隔离特权。",

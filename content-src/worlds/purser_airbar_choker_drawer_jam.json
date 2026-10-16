@@ -534,8 +534,7 @@
     },
     {
       "id": "flight_attendant_xiao_yi_fei",
-      "gender": "male",
-      "gender_reason": "头等舱随班乘务员，乘务长的固定搭档。",
+      "gender": "any",
       "age_range": [
         27,
         30

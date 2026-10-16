@@ -484,8 +484,7 @@
     },
     {
       "id": "explorer_lu_hanzhou",
-      "gender": "male",
-      "gender_reason": "关东探险队负责岩层测绘的青年男学者",
+      "gender": "any",
       "age_range": [
         26,
         29

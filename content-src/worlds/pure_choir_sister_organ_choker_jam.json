@@ -532,8 +532,7 @@
     },
     {
       "id": "master_organist_jia_bai_lie",
-      "gender": "male",
-      "gender_reason": "大教堂驻堂管风琴首席。",
+      "gender": "any",
       "age_range": [
         30,
         34

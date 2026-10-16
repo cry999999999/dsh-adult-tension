@@ -1063,8 +1063,8 @@
     "relationship_stance": "将千金视作全场的核心票房号召力与灵魂主角，一心保驾护航演出顺利进行。",
     "withdrawal": "站在后台侧幕监视器旁按住耳麦长舒一口气，向对讲机发出开演倒数指令。"
    },
-   "gender": "male",
-   "gender_reason": "大剧院青年舞台监督总指挥三十八岁成年男子。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "concert_director_qiao_jing_chen",
    "identity": {
     "authority": "掌控大剧院独奏专场全场演出时间表、主舞台机械调度及前后台紧急联络。",

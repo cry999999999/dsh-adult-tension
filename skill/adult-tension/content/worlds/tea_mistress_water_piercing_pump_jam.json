@@ -1195,8 +1195,8 @@
     "relationship_stance": "将若夫人视作待价而沽的禁脔猎物，对后台机电工匠极尽傲慢蔑视。",
     "withdrawal": "在贵宾观景台包厢冷眼晃动威士忌酒杯对下属怒斥办事不力。"
    },
-   "gender": "male",
-   "gender_reason": "茶业文旅集团青年成年少东家代表年届三十二周岁。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "sponsor_rep_song_zi_ang",
    "identity": {
     "authority": "年度千万非遗文旅基金独家冠名权与代言人一票指定权。",
@@ -1281,7 +1281,7 @@
    },
    "tags": [],
    "voices": {
-    "inner": "听说那个平日连正眼都不瞧{npc.name}的若夫人旗袍卷进水泵里了？正好！{npc.name}现在掀开水雾拍几张，看若夫人还怎么在老子面前装圣女！",
+    "inner": "听说那个平日连正眼都不瞧{npc.name}的若夫人旗袍卷进水泵里了？正好！{npc.name}现在掀开水雾拍几张，看若夫人还怎么在我面前装圣女！",
     "surface": "若夫人，{npc.name}可是注资了一千万！听说水台茶具出了点小麻烦，作为金主，{npc.name}亲自上台帮衬帮衬难道不合情理？"
    }
   }

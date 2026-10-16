@@ -561,8 +561,8 @@
     "relationship_stance": "将船王千金视作毕生守护的海上明月，嘴上一口一个大小姐，心里早把人放在了所有缆绳的前头。",
     "withdrawal": "退守在横向强力舱壁立柱背风面凹槽内，双手死死攥住防浪扶手稳固重心。"
    },
-   "gender": "male",
-   "gender_reason": "远洋重型集装箱船首席甲板总管",
+   "gender": "any",
+   "gender_reason": null,
    "id": "bosun_lu_yuan_deck",
    "identity": {
     "authority": "对主货舱集装箱受损隔离、压载水舱重力自流平衡、人孔破障规程拥有第一现场技术处置权。",
@@ -593,7 +593,7 @@
      2,
      4
     ],
-    "desired_position": "将千金拥入胸膛稳在人孔门槛前，大手包覆姑娘柔荑，借重力大力下压扳手柄。",
+    "desired_position": "将千金护在身前稳在人孔门槛前，双手包覆千金的手，借重力大力下压扳手柄。",
     "dislikes": [
      "官僚的教条规章",
      "见风使舵的投机嘴脸"

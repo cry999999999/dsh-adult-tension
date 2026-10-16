@@ -673,8 +673,8 @@
     "relationship_stance": "当年在赛场上是主播的偶像，后来退了役，每场主播解说的比赛都要自己坐导播台。",
     "withdrawal": "按住单边耳机站在玻璃房正前方，用冷若冰霜的威严目光逼退所有骚扰者。"
    },
-   "gender": "male",
-   "gender_reason": "退役冠军队长，总决赛的直转播主理人。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "broadcast_lead_chu_lie",
    "identity": {
     "authority": "转播镜头切换绝对指令权与主舞台安保物理封锁叫停权。",

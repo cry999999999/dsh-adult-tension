@@ -910,7 +910,7 @@
     38
    ],
    "appearance_options": [
-    "留着略显沧桑的络腮短胡茬，眼眶深陷带少许血丝，戴一副细黑框近视眼镜",
+    "面容略显沧桑，眼眶深陷带少许血丝，戴一副细黑框近视眼镜",
     "中等身形，常年熬夜略显清瘦但精神极度亢奋",
     "深灰色导演工装夹克内搭纯黑圆领T恤，胸前佩戴特级导演通行证"
    ],
@@ -945,8 +945,8 @@
     "relationship_stance": "对舞见顶级职业偶像素养充满由衷赞赏，对转播团队实行铁血军事化纪律",
     "withdrawal": "演出结束倒数归零准时推送演职员滚屏并切出直播信号"
    },
-   "gender": "male",
-   "gender_reason": "大型文娱盛典总策划总导演年满三十八岁成年男导演",
+   "gender": "any",
+   "gender_reason": null,
    "id": "char_director_chen_shao_hui",
    "identity": {
     "authority": "对转播车十六路视频源主切信号与音响字幕推流拥有终审决断权",
@@ -1798,7 +1798,7 @@
     41
    ],
    "baseline": "游戏公司市场部出身，这届嘉年华从招商到排期都由此人拍板，压轴独舞也是此人亲自定的。",
-   "gender": "female",
+   "gender": "any",
    "id": "pi_lolita_dancer_tian_tian",
    "reputation": "一句话能定下压轴人选的品牌总监",
    "resources": [
@@ -1827,7 +1827,7 @@
     38
    ],
    "baseline": "退伍后做了十年大型活动安保，内场前排和台口的每一个岗都归此人管。",
-   "gender": "female",
+   "gender": "any",
    "id": "pi_backup_dancer_xiao_man",
    "reputation": "说一不二、对谁都板着脸的安保主管",
    "resources": [

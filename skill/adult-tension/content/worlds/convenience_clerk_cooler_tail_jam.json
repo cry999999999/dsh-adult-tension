@@ -673,8 +673,8 @@
     "relationship_stance": "排班表上永远把自己和店员排在同一个夜班，嘴上说是人手不够。",
     "withdrawal": "单手插兜从容立于通道中线，用极度冷峻威严的目光平视进店督导，言辞滴水不漏掌控主动权。"
    },
-   "gender": "male",
-   "gender_reason": "通宵便利店的夜班领班，管排班、冷链和门店安全。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "night_supervisor_jiang_lin_chuan",
    "identity": {
     "authority": "店内照明智能调节权与冷链机组紧急停机叫停权。",

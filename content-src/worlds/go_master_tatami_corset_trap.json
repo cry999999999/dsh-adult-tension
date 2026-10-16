@@ -534,8 +534,7 @@
     },
     {
       "id": "go_rival_hara_sosuke",
-      "gender": "male",
-      "gender_reason": "日本棋院的职业九段，擂台赛日方主将。",
+      "gender": "any",
       "age_range": [
         27,
         31

@@ -681,8 +681,8 @@
     "relationship_stance": "将女总监视为恃才傲物目无官威的技术刺头女工程师，对其专业权威既畏惧又嫉恨，防汛值班表上的名字十九天没断过。",
     "withdrawal": "退缩在坝顶主控室后方密封防爆逃生救生舱内，双手死死抱住公文包与自救呼吸器。"
    },
-   "gender": "male",
-   "gender_reason": "防汛抗旱指挥部大坝特派高级防汛督察官",
+   "gender": "any",
+   "gender_reason": null,
    "id": "inspector_fang_chuan",
    "identity": {
     "authority": "代表防汛指挥部行使大坝突发事故最高戒严权、判定是否炸毁进水塔封闭深孔的最终签署权。",

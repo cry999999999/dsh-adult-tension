@@ -556,13 +556,13 @@
      "breaking": "用宽阔身躯死死挡住穹顶砸下的千斤断石为女掌门遮蔽危险",
      "high": "双手覆在女掌门手背外侧倾注全身数百公斤蛮力协同下压",
      "low": "在翻板倾斜瞬间利落甩出飞天抓索扣紧石殿铜环稳固阵脚",
-     "mid": "用雄厚胸膛一把拉住失足滑向深渊陷坑的年轻学徒"
+     "mid": "用结实臂膀一把拉住失足滑向深渊陷坑的年轻学徒"
     },
     "relationship_stance": "对女掌门超绝的机关天赋与绝不退缩的霸道英气由衷敬重钦佩，愿在生死关头为其甘当人形盾牌。",
     "withdrawal": "退守至玄武岩翻板中轴枢纽石阶上，单手按住金刚伞柄戒备任何流沙暗坑塌陷。"
    },
-   "gender": "male",
-   "gender_reason": "发丘摸金门首席重装探路校尉",
+   "gender": "any",
+   "gender_reason": null,
    "id": "master_scout_huo_changfeng",
    "identity": {
     "authority": "对探路先锋班组调配、防倒斗机关暗道勘查及重型破障工具调用拥有绝对一线指挥权。",
@@ -1405,7 +1405,7 @@
     "loc_crypt_balance_slab_grand_hall"
    ],
    "slot": "master_scout_huo_changfeng",
-   "text": "{master_scout_huo_changfeng.name}撑开重型金刚伞挡在女掌门身前遮蔽倒灌毒雾，沉声低喝：含服清灵散！毒烟呛不死人，翻板还没平，掌门还在死战，谁敢乱动老子把闹事者扔下深坑！"
+   "text": "{master_scout_huo_changfeng.name}撑开重型金刚伞挡在女掌门身前遮蔽倒灌毒雾，沉声低喝：含服清灵散！毒烟呛不死人，翻板还没平，掌门还在死战，谁敢乱动我就把闹事者扔下深坑！"
   },
   {
    "id": "hook_paraffin_melts_floor_slips_deadly",

@@ -1098,8 +1098,8 @@
     "relationship_stance": "对年轻独奏家持有泰山北斗式的严酷审视与恨铁不成钢的高标期待。",
     "withdrawal": "在指挥挑台稍作凝滞，以犀利目光环视全场令千名观众重归绝对肃静。"
    },
-   "gender": "male",
-   "gender_reason": "欧陆乐坛功勋元老达到五十八岁之资深指挥巨擘",
+   "gender": "any",
+   "gender_reason": null,
    "id": "conductor_carl_von_hohenberg",
    "identity": {
     "authority": "金色大厅开场挥棒绝对裁量权与乐团全体演奏起止生杀大权",

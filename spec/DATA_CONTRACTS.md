@@ -65,7 +65,7 @@
 }
 ```
 
-- `npc_gender_preference`：`any`、`mostly_female`、`mostly_male`、`female_only`、`male_only`、`mixed`。开局时，玩家设了偏好（`any`、`mixed` 以外）就按偏好；没设时，性别不限的开局 NPC 取玩家角色的异性，人物卡定了性别的照卡片，组合里至少要有一个能与玩家异性的人（这条只挑组合、定性别，不让任何世界因此开不了局）。玩家没给自己的性别时，取身份池的固定性别，否则取世界固定性别的 NPC 的异性，再否则随机。背景人物不受这条约束。
+- `npc_gender_preference`：`any`、`mostly_female`、`mostly_male`、`female_only`、`male_only`、`mixed`。开局时，玩家设了偏好（`any`、`mixed` 以外）就按偏好；没设时，性别不限的开局 NPC 取玩家角色的异性，人物卡定了性别的照卡片，组合里至少要有一个能与玩家异性的人（这条只挑组合、定性别，不让任何世界因此开不了局）。玩家没给自己的性别时默认男性；世界没有男性可用的玩家身份时，取身份池的固定性别。背景人物不受这条约束。
 - `person`：称呼玩家角色的人称，`second`（默认）、`first` 或 `third`；NPC 始终用第三人称。开局时取世界包的 `default_person`，玩家可以改。
 - `pace`、`explicitness` 为 P1，P0 阶段固定为 `standard`，但字段从第一天存在。
 

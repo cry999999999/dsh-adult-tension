@@ -502,8 +502,7 @@
     },
     {
       "id": "cafe_manager_lan_tian_yi",
-      "gender": "male",
-      "gender_reason": "女仆咖啡馆的执行店长兼舞台总监。",
+      "gender": "any",
       "age_range": [
         28,
         32

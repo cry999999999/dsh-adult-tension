@@ -658,8 +658,7 @@
     },
     {
       "id": "engineer_zhao_tian_yuan",
-      "gender": "male",
-      "gender_reason": "特种机电设备专业毕业届满二十五岁之成年男性技术骨干",
+      "gender": "any",
       "age_range": [
         25,
         25

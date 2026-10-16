@@ -674,8 +674,8 @@
     "relationship_stance": "六年来每个主日都在键盘后听那把嗓子，前奏的速度从来是照着领唱的呼吸定的。",
     "withdrawal": "在琴室暗处用鹿皮布反复擦拭琴键琴谱久久沉默不语。"
    },
-   "gender": "male",
-   "gender_reason": "大教堂驻堂管风琴首席。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "master_organist_jia_bai_lie",
    "identity": {
     "authority": "管风琴全部音栓编组与前奏奏鸣开始时刻绝对控制权。",

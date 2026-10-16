@@ -636,8 +636,7 @@
     },
     {
       "id": "char_carpenter_takahashi",
-      "gender": "male",
-      "gender_reason": "古建筑结构营造工匠工长年届双十有六岁青年男工师",
+      "gender": "any",
       "age_range": [
         26,
         26

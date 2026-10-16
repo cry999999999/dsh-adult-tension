@@ -535,8 +535,7 @@
     },
     {
       "id": "broadcast_lead_chu_lie",
-      "gender": "male",
-      "gender_reason": "退役冠军队长，总决赛的直转播主理人。",
+      "gender": "any",
       "age_range": [
         29,
         33

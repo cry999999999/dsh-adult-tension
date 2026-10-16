@@ -800,8 +800,8 @@
     "relationship_stance": "将水下抢修视为不知死活的冒险蛮干，对可能引发连带责任事故极度敏感戒备。",
     "withdrawal": "退缩在夹层总配电箱高台上，双手死死按在绝缘拉闸手柄上方。"
    },
-   "gender": "male",
-   "gender_reason": "水上运动中心特派值班安保指挥长",
+   "gender": "any",
+   "gender_reason": null,
    "id": "director_zheng_weiguo",
    "identity": {
     "authority": "对全馆高压供电、消防联动应急切电及突发事故封闭清场拥有现场终决权。",

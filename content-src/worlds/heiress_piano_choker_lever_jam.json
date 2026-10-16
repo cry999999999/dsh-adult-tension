@@ -878,8 +878,7 @@
     },
     {
       "id": "concert_director_qiao_jing_chen",
-      "gender": "male",
-      "gender_reason": "大剧院青年舞台监督总指挥三十八岁成年男子。",
+      "gender": "any",
       "age_range": [
         38,
         41

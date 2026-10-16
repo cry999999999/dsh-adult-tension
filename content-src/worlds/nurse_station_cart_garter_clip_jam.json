@@ -1056,8 +1056,7 @@
     },
     {
       "id": "dean_qin_tian_lin",
-      "gender": "male",
-      "gender_reason": "三甲医院特聘名誉副院长兼急诊巡查总督导由年满三十周岁成年男性青年名医担任",
+      "gender": "any",
       "age_range": [
         30,
         33

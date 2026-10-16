@@ -612,8 +612,7 @@
     },
     {
       "id": "inspector_fang_chuan",
-      "gender": "male",
-      "gender_reason": "防汛抗旱指挥部大坝特派高级防汛督察官",
+      "gender": "any",
       "age_range": [
         38,
         44

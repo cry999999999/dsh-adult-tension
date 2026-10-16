@@ -95,6 +95,18 @@ def _identity_fits(identity, combo):
 OPPOSITE = {"female": "male", "male": "female"}
 
 
+def with_player_gender(pack, conditions):
+    """The player's character is male unless the player said otherwise, or
+    the world has no identity a man can take (then the identity decides).
+    An identity the world has for the player's wish comes before a custom one."""
+    if conditions["player"].get("gender"):
+        return conditions
+    male = dict(conditions, player=dict(conditions["player"], gender="male"))
+    if _identity_candidates(pack, male) or not _identity_candidates(pack, conditions):
+        return male
+    return conditions
+
+
 def npc_preference(preference, player_gender):
     """The gender rule for the opening NPCs: the player's own preference when
     they set one; otherwise the other gender of the player's character
@@ -106,18 +118,12 @@ def npc_preference(preference, player_gender):
     return "other_" + OPPOSITE[player_gender]
 
 
-def _player_gender(pack, combo, identity, seed, given):
-    """Given by the player, fixed by the identity, the opposite of an NPC whose
-    gender the world fixes, or a coin flip."""
+def _player_gender(identity, given):
+    """Given by the player (with_player_gender defaults it to male), else
+    fixed by the identity."""
     if given:
         return given
-    if identity["gender"] != "any":
-        return identity["gender"]
-    templates = {t["id"]: t for t in pack["character_templates"]}
-    fixed = {templates[s]["gender"] for s in combo["slots"]} - {"any"}
-    if len(fixed) == 1 and fixed <= set(OPPOSITE):
-        return OPPOSITE[fixed.pop()]
-    return rng.pick(seed, "player.gender", ["female", "male"])
+    return identity["gender"] if identity["gender"] != "any" else "male"
 
 
 def _combo_gender_ok(pack, combo, preference):
@@ -139,6 +145,7 @@ def _combo_gender_ok(pack, combo, preference):
 
 def plan_candidates(pack, mode, conditions):
     """All compatible (combo, item, location, hook) tuples, plus why none exist."""
+    conditions = with_player_gender(pack, conditions)
     excluded = set(conditions["excludes"]["content_tags"])
     locks = conditions["locks"]
     preference = npc_preference(conditions["npc_gender_preference"], conditions["player"].get("gender"))
@@ -247,6 +254,7 @@ def resolve_mode(seed, mode):
 
 def plan(pack, seed, conditions):
     """Choose the opening skeleton; raise NO_MATCH when constraints cannot be met."""
+    conditions = with_player_gender(pack, conditions)
     mode = resolve_mode(seed, conditions["mode"])
     tuples, reasons = plan_candidates(pack, mode, conditions)
     if not tuples:
@@ -408,6 +416,7 @@ def _render_tree(node, scopes):
 
 def instantiate(pack, seed, conditions, planned, content_version, tag_ids=None):
     """Build the initial session state (without session_id) and the opening payload."""
+    conditions = with_player_gender(pack, conditions)
     result, combo, item, hook, identity = planned
     mode = result["mode"]
     player_req = conditions["player"]
@@ -419,7 +428,7 @@ def instantiate(pack, seed, conditions, planned, content_version, tag_ids=None):
     now = {"day": 1, "minute": start_minute}
 
     # -- player ---------------------------------------------------------------
-    gender = _player_gender(pack, combo, identity, seed, player_req.get("gender"))
+    gender = _player_gender(identity, player_req.get("gender"))
     age = player_req.get("age")
     if age is None:
         lo, hi = identity["age_range"]

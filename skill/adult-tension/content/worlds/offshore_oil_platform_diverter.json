@@ -681,8 +681,8 @@
     "relationship_stance": "将女总监视为恃才傲物不服管束的技术刺头女总监，对其专业权威既敬畏又嫉恨。",
     "withdrawal": "整座平台在风里微微发颤，退缩在防爆通廊后方密封防爆逃生救生室内，双手死死抱住公文包与自救呼吸器。"
    },
-   "gender": "male",
-   "gender_reason": "海事与能源安全指挥中心特派安全监察官，在平台上过了不知多少个二十八天",
+   "gender": "any",
+   "gender_reason": null,
    "id": "inspector_feng_bo",
    "identity": {
     "authority": "代表海事监管部门行使重大险情全平台紧急解脱戒严权、下达炸断隔水管弃平台的最终签署权。",

@@ -920,8 +920,8 @@
     "relationship_stance": "崇敬少卿的铁面正气与女仵作的明察秋毫，在危难关头不负文臣风骨拼死效力。",
     "withdrawal": "倚靠在冰鉴西侧石壁，死死抱住卷轴大口深呼吸。"
    },
-   "gender": "male",
-   "gender_reason": "大理寺刑部专职验尸文书书吏",
+   "gender": "any",
+   "gender_reason": null,
    "id": "scribe_su_justice_recorder",
    "identity": {
     "authority": "对验尸现场呈堂证供文字记录、官印封存与归档具备公证权。",

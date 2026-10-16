@@ -673,8 +673,8 @@
     "relationship_stance": "三年里给合伙人的每一场敲钟仪式调过大屏，从不提别的，只记得合伙人喜欢的屏幕亮度。",
     "withdrawal": "单手插兜从容立于台阶侧翼，用极度冷峻威严的目光逼退台下躁动视线，掌控全场主动。"
    },
-   "gender": "male",
-   "gender_reason": "上市大厅的视听总工程师，机械臂大屏的设计者。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "av_architect_lu_jing_xing",
    "identity": {
     "authority": "机械臂伺服电机紧急闭锁权与讲台灯光聚焦点控权。",

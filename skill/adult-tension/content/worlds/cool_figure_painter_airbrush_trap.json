@@ -709,8 +709,8 @@
     "relationship_stance": "修了一礼拜风机，其实第三天就修好了，往后四天只是找个理由在机房里多待一会儿。",
     "withdrawal": "在风机平台长椅上坐下摘下手套大口喝水平复剧烈心跳。"
    },
-   "gender": "male",
-   "gender_reason": "文创园区车间暖通通风动力机电总工程师二十六岁青年骨干。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "hvac_mechanic_chu_tian_heng",
    "identity": {
     "authority": "对全车间通风管网风压调配、风机应急启闭及气动阀门安全互锁享有全权技术指挥权。",

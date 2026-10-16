@@ -674,8 +674,8 @@
     "relationship_stance": "跟着乘务长飞了四年，挨训挨得最多，排班表上永远把自己的名字写在乘务长旁边。",
     "withdrawal": "在配餐间深处背对操作台默默深呼吸平复心绪。"
    },
-   "gender": "male",
-   "gender_reason": "头等舱随班乘务员，乘务长的固定搭档。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "flight_attendant_xiao_yi_fei",
    "identity": {
     "authority": "客舱吧台饮品调配与迎宾屏风开关操作权。",

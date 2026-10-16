@@ -530,8 +530,7 @@
     },
     {
       "id": "runway_director_lu_yun_xiao",
-      "gender": "male",
-      "gender_reason": "时装周秀场执行总监，设计师大学时的学长。",
+      "gender": "any",
       "age_range": [
         27,
         30

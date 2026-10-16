@@ -161,7 +161,7 @@
     {
       "id": "pi_lolita_dancer_tian_tian",
       "role": "盛典主办方的品牌总监",
-      "gender": "female",
+      "gender": "any",
       "title_patterns": [
         {
           "pattern": "{family}总监",
@@ -190,7 +190,7 @@
     {
       "id": "pi_backup_dancer_xiao_man",
       "role": "场馆的安保主管",
-      "gender": "female",
+      "gender": "any",
       "title_patterns": [
         {
           "pattern": "{family}主管",
@@ -783,8 +783,7 @@
     },
     {
       "id": "char_director_chen_shao_hui",
-      "gender": "male",
-      "gender_reason": "大型文娱盛典总策划总导演年满三十八岁成年男导演",
+      "gender": "any",
       "age_range": [
         38,
         38
@@ -792,7 +791,7 @@
       "adult_context": "执导过数十场万人级全国大型晚会的三十八岁资深成年主创，享有独立民事法定地位",
       "public_role": "ACG夏日嘉年华万人盛典执行总导演",
       "appearance_options": [
-        "留着略显沧桑的络腮短胡茬，眼眶深陷带少许血丝，戴一副细黑框近视眼镜",
+        "面容略显沧桑，眼眶深陷带少许血丝，戴一副细黑框近视眼镜",
         "中等身形，常年熬夜略显清瘦但精神极度亢奋",
         "深灰色导演工装夹克内搭纯黑圆领T恤，胸前佩戴特级导演通行证"
       ],

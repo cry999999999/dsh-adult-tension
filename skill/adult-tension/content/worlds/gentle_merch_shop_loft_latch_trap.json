@@ -968,8 +968,8 @@
     "relationship_stance": "极度敬佩店长与同伴临危不乱的自救魄力，视其为具备过硬自救素养的优秀市民。",
     "withdrawal": "向协同抢险的各路人员敬礼致意后靠在受力钢柱旁摘盔平复呼吸。"
    },
-   "gender": "male",
-   "gender_reason": "文化街区特勤微型消防站巡查二十二岁退役消防特勤骨干队员。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "fire_patrol_officer_song_chen_yi",
    "identity": {
     "authority": "对商厦现场火险警戒、疏散引导及便携式正压排烟设备调配下达执行指令。",

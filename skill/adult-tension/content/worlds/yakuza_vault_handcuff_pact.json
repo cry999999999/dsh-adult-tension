@@ -99,7 +99,7 @@
  ],
  "cast_combos": [
   {
-   "chemistry": "女若头握着金库、十亿现钞与快艇钥匙，把精算师{cunning_black_market_forensic_accountant.name}铐在承重柱前审讯，钥匙却当面塞进对方口袋。门外叛变的若头辅佐{mutinous_senior_yakuza_enforcer.name}带人霰弹枪轰门。若头既要以极道威严压住精算师的智谋反噬，又要在门板将破时面对这个寸步不让的男人。",
+   "chemistry": "女若头握着金库、十亿现钞与快艇钥匙，把精算师{cunning_black_market_forensic_accountant.name}铐在承重柱前审讯，钥匙却当面塞进对方口袋。门外叛变的若头辅佐{mutinous_senior_yakuza_enforcer.name}带人霰弹枪轰门。若头既要以极道威严压住精算师的智谋反噬，又要在门板将破时面对这个寸步不让的对手。",
    "id": "combo_1_player_high",
    "identity_ids": [
     "pc_ruthless_yakuza_heiress_vice_boss"
@@ -630,15 +630,15 @@
      "为了苟活向叛徒下跪，或出卖死忠的兄弟"
     ],
     "prefers": [
-     "临危不乱、智谋绝顶、敢拿命和她对赌的男人"
+     "临危不乱、智谋绝顶、敢拿命和她对赌的人"
     ],
     "pressure_responses": {
-     "breaking": "看着精算师替她挡下散弹破片血流如注，扔了枪扑上去撕下和服替他包扎。",
+     "breaking": "看着精算师替她挡下散弹破片血流如注，扔了枪扑上去撕下和服替对方包扎。",
      "high": "拔发簪刺瞎冲进来的刺客，单手连开两枪击毙强攻枪手，浴血不改色。",
      "low": "单手退下弹匣检查又推回去，倚着保险箱吐一口雪茄烟，冷声讥讽。",
      "mid": "猛拽手铐链把精算师拉到胸前，枪管抵着喉结厉声喝问。"
     },
-    "relationship_stance": "痛恨背叛家门的若头辅佐和贪婪的政客，心底又渴望一个能和她在血雨里平分秋色的男人。",
+    "relationship_stance": "痛恨背叛家门的若头辅佐和贪婪的政客，心底又渴望一个能和她在血雨里平分秋色的人。",
     "withdrawal": "退到保险柜最深处的避弹死角，背靠铁板点上雪茄平复喘息，绝不向谁乞怜。"
    },
    "gender": "female",
@@ -775,13 +775,13 @@
      "breaking": "眼看底片要滑进排污口，失态扑过去，手指死扣铁栅磨得鲜血淋漓。",
      "high": "爆炸中把女若头压在身下护住要害，后背硬扛碎石，一声不吭。",
      "low": "推推眼镜扶着承重柱，平静地列出对方三十秒后会被总本部处死的全部财务死穴。",
-     "mid": "无视抵在喉结的枪口，反手一拉手铐链把对方逼退半步，寸步不让。"
+     "mid": "无视抵在咽喉的枪口，反手一拉手铐链把对方逼退半步，寸步不让。"
     },
-    "relationship_stance": "深知极道翻脸无情，却在近身相触中被她野性难驯的魅力吸引。",
+    "relationship_stance": "深知极道翻脸无情，却在近身相触中被女枭雄野性难驯的魅力吸引。",
     "withdrawal": "靠着保险箱闭目调息，飞快推算门外枪手的弹药消耗和破门概率。"
    },
-   "gender": "male",
-   "gender_reason": "与女若头铐在一处、原稿以“真正的男人”书写的精算师，标题人物、外貌、台词与关系都按此性别书写，因此固定。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "cunning_black_market_forensic_accountant",
    "identity": {
     "authority": "行使洗钱母账破译权、跨国资金流向冻结权与金库机械密码解码权",
@@ -789,7 +789,7 @@
     "hidden": "西装内衬皮带扣内部暗嵌一枚极度坚硬之金刚石微型玻璃割刀。",
     "limits": [
      "被手铐困在十米见方的金库里，手上没有重火力",
-     "极道火并中各方都想抢他、灭他的口"
+     "极道火并中各方都想抢人、灭口"
     ],
     "obligations": [
      "凭算力和心理战在死局里保住性命和尊严，合法脱身拿回佣金。"
@@ -806,7 +806,7 @@
     ],
     "boundaries": [
      "不突破身为顶尖专业精算师之理智底线",
-     "恪守男人在狂澜面前之担当与傲骨"
+     "恪守在狂澜面前之担当与傲骨"
     ],
     "desire_range": [
      3,
@@ -1296,7 +1296,7 @@
    ],
    "voices": {
     "inner": "到处都是血……到处都是枪声。我不能死在这里，我存折里的钱还没花完，我一定要活着看到明天的太阳！",
-    "surface": "“大姐头！精算师先生！开门，是我，贵宾室的荷官！辅佐那个畜生把姐妹们全杀了！我有他偷换底牌、做假账暗算老组长的录像带！求你们开门！”"
+    "surface": "“大姐头！精算师！开门，是我，贵宾室的荷官！辅佐那个畜生把姐妹们全杀了！我有他偷换底牌、做假账暗算老组长的录像带！求你们开门！”"
    }
   },
   {
@@ -1629,7 +1629,7 @@
     "submerged_cargo_pier_emergency_wharf"
    ],
    "slot": "ruthless_yakuza_heiress_vice_boss",
-   "text": "{ruthless_yakuza_heiress_vice_boss.name}一袭深黑真丝和服右肩滑落，红唇扬起一抹残忍却美得窒息的野性冷笑：“精算师先生，算盘打得挺响啊？把我们九条组的离岸底片揣在怀里，就想拍拍屁股走人？”"
+   "text": "{ruthless_yakuza_heiress_vice_boss.name}一袭深黑真丝和服右肩滑落，红唇扬起一抹残忍却美得窒息的野性冷笑：“精算师，算盘打得挺响啊？把我们九条组的离岸底片揣在怀里，就想拍拍屁股走人？”"
   },
   {
    "id": "hk_accountant_ledger_approach",
@@ -1671,7 +1671,7 @@
     "reinforced_vault_inner_sanctum"
    ],
    "slot": "underground_casino_inside_croupier",
-   "text": "{underground_casino_inside_croupier.name}一身紧身兔女郎礼服多处撕裂：“大姐头！精算师先生！开门啊！求求你们救救我！辅佐把看台的姐妹全杀了……我手里有辅佐在牌桌上做手脚暗算老组长的红外母带！”"
+   "text": "{underground_casino_inside_croupier.name}一身紧身兔女郎礼服多处撕裂：“大姐头！精算师！开门啊！求求你们救救我！辅佐把看台的姐妹全杀了……我手里有辅佐在牌桌上做手脚暗算老组长的红外母带！”"
   },
   {
    "id": "hk_yakuza_vice_boss_kiss_request",
@@ -1712,7 +1712,7 @@
     "flooded_vip_casino_gaming_hall"
    ],
    "slot": "underground_casino_inside_croupier",
-   "text": "{underground_casino_inside_croupier.name}浑身湿透瑟瑟发抖蜷缩在蒸汽机管道阀门旁：“大姐头！精算师先生！快退进水闸暗道！这个总蒸汽阀门我能拧开！只要我扳下去，滚烫的开水蒸汽就能把整条走廊封死！”"
+   "text": "{underground_casino_inside_croupier.name}浑身湿透瑟瑟发抖蜷缩在蒸汽机管道阀门旁：“大姐头！精算师！快退进水闸暗道！这个总蒸汽阀门我能拧开！只要我扳下去，滚烫的开水蒸汽就能把整条走廊封死！”"
   },
   {
    "id": "hk_enforcer_dynamite_approach",

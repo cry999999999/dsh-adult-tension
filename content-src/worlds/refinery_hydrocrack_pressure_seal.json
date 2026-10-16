@@ -612,8 +612,7 @@
     },
     {
       "id": "inspector_du_jian",
-      "gender": "male",
-      "gender_reason": "化工厂应急安全生产指挥中心特派安全监察官，在检修季里连轴转了三个月",
+      "gender": "any",
       "age_range": [
         38,
         44

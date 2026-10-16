@@ -733,8 +733,7 @@
     },
     {
       "id": "director_zheng_weiguo",
-      "gender": "male",
-      "gender_reason": "水上运动中心特派值班安保指挥长",
+      "gender": "any",
       "age_range": [
         42,
         48

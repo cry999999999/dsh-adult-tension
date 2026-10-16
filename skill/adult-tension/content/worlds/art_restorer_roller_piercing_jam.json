@@ -673,8 +673,8 @@
     "relationship_stance": "把中庭的温湿度调到修复师最顺手的数字，一调就是三年，从没说为什么。",
     "withdrawal": "单手插兜从容立于台阶侧翼，用极度冷峻威严的目光扫视外围长焦机群压制躁动。"
    },
-   "gender": "male",
-   "gender_reason": "修复中庭的技术总调度，管恒湿展柜和升降罩。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "env_director_xie_lin_chuan",
    "identity": {
     "authority": "中庭升降罩动力源紧急叫停权与悬空柔光滤镜调校权。",

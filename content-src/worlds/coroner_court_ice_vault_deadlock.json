@@ -851,8 +851,7 @@
     },
     {
       "id": "scribe_su_justice_recorder",
-      "gender": "male",
-      "gender_reason": "大理寺刑部专职验尸文书书吏",
+      "gender": "any",
       "age_range": [
         25,
         29

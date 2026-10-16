@@ -800,8 +800,8 @@
     "relationship_stance": "将神官长视为不遵军令的麻烦异类，既垂涎其绝美容貌又畏惧其在军民中的崇高威望。",
     "withdrawal": "退缩在防炮斜道最上层铁门后，双手死死按在起爆拉索手柄上方。"
    },
-   "gender": "male",
-   "gender_reason": "边防集团军直属战备督导官",
+   "gender": "any",
+   "gender_reason": null,
    "id": "castellanus_lord_valentin",
    "identity": {
     "authority": "代表统帅部掌握前线坑道紧急封死爆破裁决权、战时擅自脱离阵地立斩决断权。",

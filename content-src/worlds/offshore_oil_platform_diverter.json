@@ -612,8 +612,7 @@
     },
     {
       "id": "inspector_feng_bo",
-      "gender": "male",
-      "gender_reason": "海事与能源安全指挥中心特派安全监察官，在平台上过了不知多少个二十八天",
+      "gender": "any",
       "age_range": [
         38,
         44

@@ -503,8 +503,7 @@
     },
     {
       "id": "architect_lin_chengzhi",
-      "gender": "male",
-      "gender_reason": "超高层建筑结构专业名校毕业的二十六岁青年结构总工程师。",
+      "gender": "any",
       "age_range": [
         26,
         26

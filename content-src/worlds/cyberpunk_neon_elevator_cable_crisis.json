@@ -611,8 +611,7 @@
     },
     {
       "id": "megacorp_inspector_araska_yan",
-      "gender": "male",
-      "gender_reason": "天轨巨企安全运行部特派督察总监",
+      "gender": "any",
       "age_range": [
         40,
         44

@@ -426,7 +426,7 @@
       "intimacy_tendency": {
         "attraction_sources": [
           "在冰冷浊流与绝境中犹如铁塔般的沉稳庇护",
-          "合力握紧合金弹匣撬锁时肌肤相亲传来的灼热体温与男人雄浑心跳"
+          "合力握紧合金弹匣撬锁时肌肤相亲传来的灼热体温与对方雄浑心跳"
         ],
         "likes": [
           "锁舌咔嗒一声被别断时对方眼中绽放的璀璨光芒",
@@ -733,8 +733,7 @@
     },
     {
       "id": "comprador_mr_edward_tang",
-      "gender": "male",
-      "gender_reason": "外滩泰丰银行华人总买办兼董事襄理",
+      "gender": "any",
       "age_range": [
         45,
         52

@@ -674,7 +674,7 @@
      "纸上谈兵的虚伪官话",
      "不懂装懂的狂徒瞎指挥"
     ],
-    "contrast": "平日脾气暴躁对谁都不假辞色，在看到千金遇险时敢一把推开私兵的战斧厉声喝令滚开别挡老子救人。",
+    "contrast": "平日脾气暴躁对谁都不假辞色，在看到千金遇险时敢一把推开私兵的战斧厉声喝令滚开别挡着救人。",
     "core_value": "技术有道，人命第一，真正的工匠绝不让自己的造物沦为卡死同胞的杀人凶器。",
     "goal_options": [
      "指导青年骑士与千金准确利用纯金印柄挑开滑轮轴销自救",
@@ -696,8 +696,8 @@
     "relationship_stance": "硬汉工匠风骨重诺守信，鄙薄贪生怕死的小人，看重敢于拼命的技术实干家。",
     "withdrawal": "退入干燥看台台阶旁擦拭汗水调理呼吸。"
    },
-   "gender": "male",
-   "gender_reason": "王城地下机械营造四十载资深老工匠长",
+   "gender": "any",
+   "gender_reason": null,
    "id": "senior_dungeon_blacksmith_albert",
    "identity": {
     "authority": "对石厅机械设施运行状态、受力校准与机械排险拥有最高技术裁决权。",
@@ -780,7 +780,7 @@
     "disaster"
    ],
    "voices": {
-    "inner": "老夫亲手浇筑的这道重型铁闸，绝不能看着千金这刚烈丫头被这道闸卡死在冷水里！",
+    "inner": "我亲手浇筑的这道重型铁闸，绝不能看着千金这刚烈丫头被这道闸卡死在冷水里！",
     "surface": "听老头子号令！金印手柄短头卡进卡槽斜面，借身体重力狠命往上挑，别蛮干！"
    }
   },
@@ -1421,7 +1421,7 @@
     "loc_basalt_dungeon_hall"
    ],
    "slot": "senior_dungeon_blacksmith_albert",
-   "text": "{senior_dungeon_blacksmith_albert.name}抹去满脸雨水指着锁槽大喝听老夫口令，转轴往右斜插两毫米，对准退让销顺势狠命压！"
+   "text": "{senior_dungeon_blacksmith_albert.name}抹去满脸雨水指着锁槽大喝听我口令，转轴往右斜插两毫米，对准退让销顺势狠命压！"
   },
   {
    "id": "h_04_claire_deliver_kit",

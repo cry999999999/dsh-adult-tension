@@ -4,7 +4,7 @@
  "focus": "未存档确认、包外题材的两个选择、自定义世界、NO_MATCH 如实告知、种子复现",
  "steps": [
   {
-   "say": "开一局，日常，我玩男的",
+   "say": "开一局，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

@@ -6,7 +6,7 @@
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，大型LNG运输船·超低温液货舱安全阀冰堵，日常，我玩男的",
+   "say": "开一局，大型LNG运输船·超低温液货舱安全阀冰堵，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

@@ -6,7 +6,7 @@
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，典雅评弹名伶·古戏楼百年老戏台，日常，我玩男的",
+   "say": "开一局，典雅评弹名伶·古戏楼百年老戏台，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

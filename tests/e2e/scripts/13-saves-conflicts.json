@@ -4,7 +4,7 @@
  "focus": "回执、A/B/C、恢复歧义、读档前情",
  "steps": [
   {
-   "say": "开一局，日常，我玩男的",
+   "say": "开一局，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

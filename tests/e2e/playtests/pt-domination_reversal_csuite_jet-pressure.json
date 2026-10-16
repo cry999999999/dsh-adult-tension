@@ -6,7 +6,7 @@
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，万米高空：女总裁与领带，要有压力的，我玩女的",
+   "say": "开一局，万米高空：女总裁与领带，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

@@ -6,7 +6,7 @@
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，强磁实验室：冰山女物理学家，日常，我玩男的",
+   "say": "开一局，强磁实验室：冰山女物理学家，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

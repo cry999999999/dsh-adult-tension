@@ -6,7 +6,7 @@
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，航天女总师·海上发射平台高空吊笼，要有压力的，我玩女的",
+   "say": "开一局，航天女总师·海上发射平台高空吊笼，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

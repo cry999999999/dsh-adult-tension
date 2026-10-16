@@ -6,7 +6,7 @@
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，深坑矿井·提升斗刹车失灵，要有压力的，我玩女的",
+   "say": "开一局，深坑矿井·提升斗刹车失灵，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

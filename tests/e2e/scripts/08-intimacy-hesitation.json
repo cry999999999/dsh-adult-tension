@@ -4,7 +4,7 @@
  "focus": "逐步推进、反应可见、停在玩家要求处、撤回立即生效",
  "steps": [
   {
-   "say": "开一局，日常，我玩男的",
+   "say": "开一局，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

@@ -14,8 +14,9 @@ repaired, call budget, ACCEPTANCE 5),
 leakage (field names, numbers, error codes, commands, revision), footer and
 time words against the engine clock, ventriloquism (the player character's
 lines come from the player), unknown people (a named person the engine
-never heard of), repetition (the same sentence within 10 turns, the same
-line twice in one scene).
+never heard of), opening people (the opening's 人物 paragraph gives
+everyone it names a gender), repetition (the same sentence within 10 turns,
+the same line twice in one scene).
 """
 
 import json
@@ -134,6 +135,8 @@ DIALOGUE_SLACK = 60
 # (NARRATIVE_RULES 9): "凌晨两点所有人必须到控制塔签到" there is a rule of the
 # world, not the time now.
 OPENING_HEADS = ("世界观：", "人物：")
+# What says a person's gender in that 人物 paragraph (SKILL.md: 姓名、性别、明确年龄、身份).
+GENDER_RE = re.compile(r"非二元|男|女|先生|小姐|姑娘")
 
 
 def _says_now(line, start, end, in_dialogue):
@@ -597,6 +600,35 @@ def check_unknown_people(record):
     return out, {"ran": True}
 
 
+# -- opening people --------------------------------------------------------------------------------
+
+
+def check_opening_people(record):
+    """An opening the player saw has a 人物 paragraph that gives everyone it
+    names a gender (NARRATIVE_RULES 9: 姓名、性别、明确年龄、身份): at least as
+    many gender words as people named, the player counting as named by name
+    or by 你."""
+    out = []
+    for turn in record["turns"]:
+        openings = [o for o in ((R.ok_data(c) or {}).get("opening") for c in turn.get("runtime_calls") or []) if o]
+        text = turn.get("text") or ""
+        if not openings or not text.strip():
+            continue
+        at = text.find("人物：")
+        if at < 0:
+            out.append(finding("opening", turn["index"], "开局没有“人物：”一段"))
+            continue
+        paragraph = re.split(r"\n\s*\n", text[at:])[0]
+        opening = openings[-1]
+        player = (opening.get("player") or {}).get("name")
+        named = int(bool(player and player in paragraph) or "你" in paragraph)
+        named += sum(1 for npc in opening.get("npcs") or [] if npc.get("name") and npc["name"] in paragraph)
+        said = len(GENDER_RE.findall(paragraph))
+        if said < named:
+            out.append(finding("opening", turn["index"], "开局的“人物”一段提到 %d 个人，只写了 %d 处性别" % (named, said)))
+    return out
+
+
 # -- repetition ------------------------------------------------------------------------------------
 
 
@@ -713,6 +745,7 @@ def check(record):
     findings.extend(check_ventriloquism(record))
     people, people_stats = check_unknown_people(record)
     findings.extend(people)
+    findings.extend(check_opening_people(record))
     findings.extend(check_repetition(record))
     stats["unknown_people_check"] = people_stats["ran"]
     return {"pass": not findings, "findings": findings, "stats": stats}

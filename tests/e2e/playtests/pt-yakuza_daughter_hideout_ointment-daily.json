@@ -6,7 +6,7 @@
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，雪山木屋：组长千金与药膏，日常，我玩男的",
+   "say": "开一局，雪山木屋：组长千金与药膏，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

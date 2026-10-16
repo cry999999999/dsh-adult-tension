@@ -6,7 +6,7 @@
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，六叠合租：青梅与末班车，日常，我玩男的",
+   "say": "开一局，六叠合租：青梅与末班车，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

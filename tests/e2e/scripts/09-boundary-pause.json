@@ -4,7 +4,7 @@
  "focus": "阻断与告知、暂停语义、状态六行",
  "steps": [
   {
-   "say": "开一局，要有压力的，我玩男的",
+   "say": "开一局，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

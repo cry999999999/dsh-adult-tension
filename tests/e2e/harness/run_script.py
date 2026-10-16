@@ -397,7 +397,8 @@ class FakeHost:
         elif state is None:
             data = self._call(log, ["new-game"], {"request_id": "fake_new_%s" % conversation, "mode": "daily", "seed": 7})
             opening = data["opening"]
-            body = "世界观：%s\n人物：%s\n\n%s\n\n%s" % (opening["world"]["premise"], opening["player"]["name"], opening["hook"]["text"], opening["footer"])
+            people = "；".join("%s，%s" % (p["name"], {"female": "女", "male": "男"}.get(p["gender"], "非二元")) for p in [opening["player"]] + opening["npcs"])
+            body = "世界观：%s\n人物：%s\n\n%s\n\n%s" % (opening["world"]["premise"], people, opening["hook"]["text"], opening["footer"])
         if load or state is None:
             state = {"sid": data["session_id"], "revision": data["revision"], "next": data["next_request_id"], "context": data["context"], "opened": data}
             self.sessions[conversation] = state

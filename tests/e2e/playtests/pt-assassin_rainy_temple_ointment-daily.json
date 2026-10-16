@@ -6,7 +6,7 @@
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，梅雨古庙：负伤女刺客，日常，我玩男的",
+   "say": "开一局，梅雨古庙：负伤女刺客，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

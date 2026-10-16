@@ -6,7 +6,7 @@
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，台风断电夜：青梅竹马的隔壁邻居，要有压力的，我玩女的",
+   "say": "开一局，台风断电夜：青梅竹马的隔壁邻居，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

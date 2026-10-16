@@ -6,7 +6,7 @@
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，长明古刹：雪夜借宿与钦犯名册，要有压力的，我玩女的",
+   "say": "开一局，长明古刹：雪夜借宿与钦犯名册，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

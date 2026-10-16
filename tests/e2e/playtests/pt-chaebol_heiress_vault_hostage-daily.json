@@ -6,7 +6,7 @@
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，财阀金库：千金与断电之夜，日常，我玩男的",
+   "say": "开一局，财阀金库：千金与断电之夜，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

@@ -73,7 +73,7 @@ def clean_record():
     turns = [
         {"index": 1, "conversation": "A", "input": "开一局，日常", "expect": {"kind": "opening", "calls_max": 2},
          "host_calls": [], "runtime_calls": [{"argv": ["doctor"], "input": {}, "exit": 0, "envelope": envelope({"status": "ok"})}, opening_call()],
-         "text": "世界观：码头的夜班。\n人物：%s。\n\n吊臂的影子扫过地面，有人把保温杯推到你面前。\n\n【时间】第一天 20:00｜【地点】七号泊位｜回合：1｜种子：7" % (FAMILY + GIVEN)},
+         "text": "世界观：码头的夜班。\n人物：你是%s，女；梁志强，男。\n\n吊臂的影子扫过地面，有人把保温杯推到你面前。\n\n【时间】第一天 20:00｜【地点】七号泊位｜回合：1｜种子：7" % (FAMILY + GIVEN)},
         {"index": 2, "conversation": "A", "input": "我说：“你要是不愿意，现在就说。”", "expect": {"kind": "turn", "calls_max": 1},
          "host_calls": [], "runtime_calls": [commit_call(2, 1205)],
          "text": "你说：“你要是不愿意，现在就说。”对方没有马上回答，把杯盖拧紧了。\n\n" + footer(2, 1205)},
@@ -291,6 +291,15 @@ class MachineCheckTest(unittest.TestCase):
         introduced = copy.deepcopy(rec)
         introduced["turns"][2]["runtime_calls"][0]["input"]["operations"] = [{"op": "introduce_character", "name": STRANGER}]
         self.assertNotIn(("unknown_people", 3), names(M.check(introduced)))
+
+    def test_the_opening_gives_everyone_it_names_a_gender(self):
+        rec = clean_record()
+        people = "你是%s，女；梁志强，男。" % (FAMILY + GIVEN)
+        for text in ("你是%s，女；梁志强。" % (FAMILY + GIVEN), "你是%s；梁志强，男。" % (FAMILY + GIVEN)):
+            rec["turns"][0]["text"] = clean_record()["turns"][0]["text"].replace(people, text)
+            self.assertEqual(names(M.check(rec)), [("opening", 1)], text)
+        rec["turns"][0]["text"] = clean_record()["turns"][0]["text"].replace("人物：" + people, "")
+        self.assertEqual(names(M.check(rec)), [("opening", 1)])
 
     def test_boilerplate_three_times_in_ten_turns_and_repeated_lines_in_a_scene(self):
         rec = clean_record()

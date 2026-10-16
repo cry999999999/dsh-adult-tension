@@ -4,7 +4,7 @@
  "focus": "时钟推进、NPC 主动、玩家不被代言、助手提示不替玩家做决定",
  "steps": [
   {
-   "say": "开一局，日常，我玩男的",
+   "say": "开一局，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

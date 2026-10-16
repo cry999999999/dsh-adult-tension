@@ -6,7 +6,7 @@
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，迷宫深层：坍塌安全区与溃灭远征队，要有压力的，我玩女的",
+   "say": "开一局，迷宫深层：坍塌安全区与溃灭远征队，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

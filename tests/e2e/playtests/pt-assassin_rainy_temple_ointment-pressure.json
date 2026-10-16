@@ -6,7 +6,7 @@
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，梅雨古庙：负伤女刺客，要有压力的，我玩女的",
+   "say": "开一局，梅雨古庙：负伤女刺客，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

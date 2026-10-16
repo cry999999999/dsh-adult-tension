@@ -4,7 +4,7 @@
  "focus": "撤销与改写的原子性、追溯冲突的处理",
  "steps": [
   {
-   "say": "开一局，日常，我玩男的",
+   "say": "开一局，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

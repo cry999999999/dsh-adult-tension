@@ -6,7 +6,7 @@
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，赛博霓虹·高空缆车悬挂绝境，要有压力的，我玩女的",
+   "say": "开一局，赛博霓虹·高空缆车悬挂绝境，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

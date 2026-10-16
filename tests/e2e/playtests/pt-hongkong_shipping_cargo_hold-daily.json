@@ -6,7 +6,7 @@
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，港岛船王千金·浮坞货轮深舱，日常，我玩男的",
+   "say": "开一局，港岛船王千金·浮坞货轮深舱，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

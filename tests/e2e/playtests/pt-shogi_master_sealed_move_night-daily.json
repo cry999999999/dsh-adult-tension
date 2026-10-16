@@ -6,7 +6,7 @@
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，台风棋室：九段女棋圣的封手，日常，我玩男的",
+   "say": "开一局，台风棋室：九段女棋圣的封手，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

@@ -166,7 +166,47 @@ class WritePathTest(unittest.TestCase):
         self.assertEqual([d["path"] for d in caught.exception.details], ["$.turns[1].replaces_turn"])
         with self.assertRaises(AppError):
             service.commit_turn(self.ctx, self.record(self.ids(), before[0], [self.item()] * 13))
+        with self.assertRaises(AppError) as caught:
+            service.commit_turn(self.ctx, self.record(self.ids(), before[0], []))
+        self.assertEqual([d["path"] for d in caught.exception.details], ["$.turns"])
         self.assertEqual(self.snapshot(), before)
+
+    def test_a_record_replays_without_advancing(self):
+        revision, turn, _, _ = self.snapshot()
+        payload = self.record(self.ids(), revision, [self.item(), self.item(text="给自己倒了杯水"), self.item(text="伸了个懒腰")])
+        first = service.commit_turn(self.ctx, payload)
+        after = self.snapshot()
+        second = service.commit_turn(self.ctx, payload)
+        self.assertTrue(second["replayed"])
+        self.assertEqual(second["turns"], first["turns"])
+        self.assertEqual(after[1], turn + 3)
+        self.assertEqual(self.snapshot(), after)
+
+    def test_an_outcome_the_engine_decides_ends_the_record(self):
+        before = self.snapshot()
+        roll = {"op": "roll", "purpose": "对方是否注意到", "probability": 0.5,
+                "on_success": [{"op": "npc_action", "npc_id": self.npc, "action": "注意到了"}], "on_failure": []}
+        rolled = self.item()
+        rolled["operations"].insert(0, roll)
+        # The prose of a later turn would have been written before the roll was cast.
+        with self.assertRaises(AppError) as caught:
+            service.commit_turn(self.ctx, self.record(self.ids(), before[0], [rolled, self.item()]))
+        self.assertEqual([d["path"] for d in caught.exception.details], ["$.turns[0]"])
+        self.assertEqual(self.snapshot(), before)
+        out = service.commit_turn(self.ctx, self.record(self.ids(), before[0], [self.item(), rolled]))
+        self.assertEqual(out["turn"], before[1] + 2)
+        # An event coming due is the same: it can only fall in the last turn.
+        promise = self.item()
+        promise["operations"].insert(0, {"op": "event_create", "kind": "promise", "title": "有人来敲门", "in_minutes": 10,
+                                         "participants": [self.npc], "dedupe_key": "door.knock"})
+        out = service.commit_turn(self.ctx, self.record(self.ids(), out["revision"], [promise]))
+        waited = self.item()
+        waited["operations"].insert(0, {"op": "advance_time", "minutes": 30})
+        with self.assertRaises(AppError) as caught:
+            service.commit_turn(self.ctx, self.record(self.ids(), out["revision"], [waited, self.item()]))
+        self.assertEqual([d["path"] for d in caught.exception.details], ["$.turns[0]"])
+        due = service.commit_turn(self.ctx, self.record(self.ids(), out["revision"], [waited]))
+        self.assertTrue(due["turns"][0]["resolved_events"])
 
     def test_idempotency_records_are_bounded(self):
         conn = self.ctx.db()

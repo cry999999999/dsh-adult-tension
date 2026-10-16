@@ -169,7 +169,7 @@ def op_advance_time(ctx, op, path):
         errs.append(detail(path, "minutes、until、days 必须且只能给一个", None, INVARIANT_VIOLATION))
     ctx.time_ops += 1
     if ctx.time_ops > 1:
-        errs.append(detail(path, "一次提交最多一个 advance_time", "把两段时间合并成一次推进", INVARIANT_VIOLATION))
+        errs.append(detail(path, "一个回合最多一个 advance_time", "把两段时间合并成一次推进", INVARIANT_VIOLATION))
     if not _flush(ctx, errs):
         return
     advance(ctx, settlement.minutes_for(ctx.state["clock"], op), path)
@@ -536,7 +536,7 @@ def op_add_fact(ctx, op, path):
         "stage_retreat_to": F(S.Nullable(S.Enum(*ST.STAGES)), required=False, default=None),
         "reason": F(S.Str(1, 80)),
     },
-    "有向关系变化（from 对 to）：信任 -5..5（单次提交净变化 ≤2）、张力 0..5、亲近进程前进一个阶段（需要同一提交里玩家的行动 + 对方的 partial/genuine 回应）或后退。原因必填",
+    "有向关系变化（from 对 to）：信任 -5..5（一个回合净变化 ≤2）、张力 0..5、亲近进程前进一个阶段（需要同一回合里玩家的行动 + 对方的 partial/genuine 回应）或后退。原因必填",
 )
 def op_relationship(ctx, op, path):
     errs = []
@@ -568,7 +568,7 @@ def op_relationship(ctx, op, path):
     if not ST.TRUST_RANGE[0] <= new_trust <= ST.TRUST_RANGE[1]:
         errs.append(detail(path + ".trust_delta", "信任将变成 %d，超出 -5..5" % new_trust, "不会自动截断，换一个幅度", INVARIANT_VIOLATION))
     elif abs(new_trust - start) > ST.MAX_TRUST_DELTA:
-        errs.append(detail(path + ".trust_delta", "单次提交中信任净变化不能超过 %d" % ST.MAX_TRUST_DELTA, None, INVARIANT_VIOLATION))
+        errs.append(detail(path + ".trust_delta", "一个回合里信任净变化不能超过 %d" % ST.MAX_TRUST_DELTA, None, INVARIANT_VIOLATION))
     if not ST.TENSION_RANGE[0] <= new_tension <= ST.TENSION_RANGE[1]:
         errs.append(detail(path + ".tension_delta", "张力将变成 %d，超出 0..5" % new_tension, "不会自动截断，换一个幅度", INVARIANT_VIOLATION))
     pair = frozenset((a, b))
@@ -579,7 +579,7 @@ def op_relationship(ctx, op, path):
         if index + 1 >= len(ST.STAGES):
             errs.append(detail(path + ".stage_advance", "已经是最后一个阶段", None, INVARIANT_VIOLATION))
         elif pair in ctx.stage_pairs:
-            errs.append(detail(path + ".stage_advance", "同一提交中这对关系只能前进一个阶段", None, INVARIANT_VIOLATION))
+            errs.append(detail(path + ".stage_advance", "同一回合里这对关系只能前进一个阶段", None, INVARIANT_VIOLATION))
         else:
             new_stage = ST.STAGES[index + 1]
             evidence = _stage_evidence(ctx, a, b, path, errs)
@@ -634,7 +634,7 @@ def _stage_evidence(ctx, a, b, path, errs):
             errs.append(
                 detail(
                     path + ".stage_advance",
-                    "亲近进程前进需要同一提交里 %s 的 partial 或 genuine 回应" % ctx.name(npc),
+                    "亲近进程前进需要同一回合里 %s 的 partial 或 genuine 回应" % ctx.name(npc),
                     "先写 npc_response；阶段是双方共同经历的历史，不是一方说了算",
                     INVARIANT_VIOLATION,
                 )
@@ -642,7 +642,7 @@ def _stage_evidence(ctx, a, b, path, errs):
             return None
         return {"player_action_turn": ctx.turn, "npc_response": cooperative[-1]}
     if a not in ctx.actors or b not in ctx.actors:
-        errs.append(detail(path + ".stage_advance", "两名 NPC 之间的阶段前进需要双方本提交都有行动或回应", None, INVARIANT_VIOLATION))
+        errs.append(detail(path + ".stage_advance", "两名 NPC 之间的阶段前进需要双方本回合都有行动或回应", None, INVARIANT_VIOLATION))
         return None
     return {"npc_actions_turn": ctx.turn}
 

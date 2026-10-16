@@ -43,14 +43,14 @@ AT_JSON
 
 ## 开局
 
-1. 玩家没说日常还是压力：问一句“1 日常 / 2 有压力”。只有玩家说“随便”才用 `random`。读档永远不问。
+1. 玩家没说日常还是压力：问一句“1 日常 / 2 有压力”。只有玩家说“随便”才用 `random`。定下后玩家没说自己的性别：再问“1 男 / 2 女”，写进 `player.gender`。读档永远不问。
 2. 本对话里已经开过局或读过档（看对话本身，不用查），且有没存的回合（上下文 `save.turns_since_save` > 0，或有攒着没记录的）：先问“存档后开局 / 直接开局 / 取消”。
 3. 玩家点名的世界或题材：名称或关键词放进 `world_query`，不用先查世界列表。`NO_MATCH` 带 `candidates`：列出候选的标题和一句话让玩家选，选定后用 `locks.world_id`。`NOT_FOUND`：给两个选择：最接近的世界，或自定义世界（按 `references/custom_world.md` 写，放进 `new-game` 的 `custom_world`）。
 4. 该问的都答了再调用 `new-game`（只答了一部分就再问其余的，不替玩家选）：`{"request_id", "mode": "daily|pressure|random", "world_query" 或 "locks": {"world_id"}, "excludes": {"content_tags", "world_ids"}, "player": {"gender", "age", "identity_hint", "name", "title"}, "npc_gender_preference"}`，只写玩家提到的部分（“不要职场”转成 `excludes` 的标签 ID；“女性 NPC 为主”是 `mostly_female`）。“重开 N 号”：`{"request_id", "seed": N, "replay": true}`。`NO_MATCH`：停下，如实说哪条做不到、可以放宽什么，由玩家选，不替玩家放宽或改开自定义世界。
 5. 按返回的 `opening` 写开局：
 
         世界观：……（1–2 句，含 `rule_in_play` 这条规则在场景里起作用）
-        人物：……（玩家角色与 NPC 的姓名、明确年龄、身份，不泄露隐藏动机）
+        人物：……（玩家角色与 NPC 的姓名、性别、明确年龄、身份，不泄露隐藏动机）
 
         （正文，不加标题，约 300–700 字；压力模式写出眼前的压力与近期期限，远期只作伏笔；结尾停在 `hook` 描述的未决动作上，不替玩家接）
 
@@ -64,7 +64,7 @@ AT_JSON
    - `attempt`：意图、尝试，以及**任何作用于 NPC 身体、意志、财物的行动**（即使用了结果句式）→ 把这些 NPC 写进 `acts_on`，并各附一条 `npc_response`：`refuse` 拒绝 / `negotiate` 协商 / `partial` 有限配合 / `surface` 表面配合（写 `true_intent`）/ `genuine` 真诚配合。不作用于 NPC 的尝试写 `acts_on: []`。
    - `continue`：空输入、“继续”、“……”、“你决定” → 场景推进，至少一个可观察的变化（NPC 行动、状态变化、新事实、有人来去）；玩家角色不说有意义的话、不移动、不同意任何事。
    - `wait`：玩家选择不动 → 给 NPC 行动空间。
-3. **正文先行，攒着记录**：普通回合直接写正文，不调用运行时。攒满 10 个回合，在正文之后用一次 `commit-turn` 记录（`turns` 每回合一项，按顺序，≤ 12 项）。先记录（攒下的连同这一回合）再按返回写正文的情况：时间会到达或越过最早的待办事件（`due_soon` 第一项；记录前正文不越过它）或跨过午夜；要 `roll`；快进、接受转折、存档、读档、状态、导出之前。
+3. **正文先行，攒着记录**：普通回合直接写正文，不调用运行时。攒满 10 个回合，在正文之后用一次 `commit-turn` 记录（`turns` 每回合一项，按顺序，≤ 12 项）。先记录（攒下的连同这一回合）再按返回写正文的情况：时间会到达或越过最早的待办事件（`due_soon` 第一项；记录前正文不越过它）或跨过午夜；一次推进 ≥ 60 分钟；要 `roll`；快进、接受转折、存档、读档、状态、导出、暂停、边界、偏好设置之前；玩家说先到这、下次再玩。
 4. 照最近返回的 `commit_template` 写，每个回合复制一份 `turns` 里那一项（尖括号处写内容，`a|b` 选一个，用不上的操作删掉）；没有模板时照 `references/operations.md` 写。
    - `player_authorized: true` 只在玩家本人的话授权了玩家角色的移动、承诺、交易、同意、转折或设定修改时。
    - 操作（字段见 `references/operations.md`）：`npc_response`、`npc_action`（重大的带 `significant: true`，看 `can_act`）、`npc_state`、`add_fact`、`relationship`、`advance_time`（默认 3 分钟）、`move`、`enter_scene`/`exit_scene`、`event_*`、`roll`、`player_update`、`reveal_fact`、`spread_rumor`、`set_voice`、`introduce_character`/`promote_character`（明确成年，名字取自 `name_pool`）、`intimacy_evidence`、`identity_update`、`npc_update`、`leverage_set`/`_release`、`offscreen_beat`、`twist_accept`。
@@ -85,7 +85,7 @@ AT_JSON
 
 ## 时间、离屏与转折
 
-- 快进（玩家要求时才预览）：先记录攒下的回合，再 `get-context` 带 `preview_time`（`until`: `morning`/`noon`/`evening`/`night`/`next_morning`，或 `days`、`minutes`，只给一个），只预览一次，照返回的 `skip_template` 记录（时间与必需的离屏片段已排好）；途中分开的人同时 `exit_scene`。正文写清到期事件的结果，不替玩家决定做什么、去哪见谁。
+- 快进（玩家要求时才预览）：`get-context` 带 `preview_time`（`until`: `morning`/`noon`/`evening`/`night`/`next_morning`，或 `days`、`minutes`，只给一个），只预览一次，照返回的 `skip_template` 记录（时间与必需的离屏片段已排好）；途中分开的人同时 `exit_scene`。正文写清到期事件的结果，不替玩家决定做什么、去哪见谁。
 - `offscreen_beat`：只写这个不在场 NPC 自己的行动、状态、去向、NPC 之间的关系与消息，依据他的目标与所知（预览的 `goal`、`knows`），不碰玩家角色。玩家“继续”时可以为 `requests.offscreen_beat_candidates` 里的 NPC 插一段简短离屏片段。跨度 ≥ 60 分钟或跨日时被点名的 NPC 必须有。离屏推演关闭时不写。
 - 转折：`requests.twist_offer` 出现，或玩家说“来点转折”（`get-context` 带 `"want_twist": true`）时，正文后一句话列出候选（“① …… ② ……，或说你想要的”）。玩家选定后记录 `twist_accept`（`twist_id`，或玩家口述的 `category`+`text`），`result` 模式带 `player_authorized`。每游戏日最多一次；不理会就照常继续。
 
@@ -93,13 +93,13 @@ AT_JSON
 
 - “撤销”“刚才不算”：还没记录的回合直接改写正文；已记录的用 `undo-turn`，回执后再一句话定位当前场景。
 - “刚才不算，改成 Y”：还没记录的直接按 Y 重写；已记录的最后一回合立即记录一次，第一项带 `"replaces_turn": 该回合号`，按 Y 判定行动模式。
-- “其实……”：`action_mode: "rewrite"` 带 `player_authorized`，用 `add_fact`（`"origin": "retcon"`、`"visibility": "private"`、`"known_by": ["player"]`）或 `player_update` 补玩家角色自己的背景、物品、经历、称谓，可附 NPC 的反应。追溯不给 NPC 追加知情、好感或同意；与已发生的事矛盾的，告诉玩家并请他换个说法。
+- “其实……”：补玩家角色自己的背景、物品、经历、称谓，记法见 `references/narrative.md` §2。不给 NPC 追加知情、好感或同意；与已发生的事矛盾的，请玩家换个说法。
 
 ## NPC
 
 - NPC 只根据**自己知道的事实**行动（`basis_fact_ids` 必须在其信息集里）；内心描写永远不成为任何人的知识（内心只用 `inner` 事实记录，不能传播）。
 - NPC 可以拒绝、讨价还价、表面答应、主动出手。多个 NPC 在场时，他们之间也有关系和目标。
-- `nearby` 的人要当面开口，先在同一次提交里 `enter_scene`。
+- `nearby` 的人要当面开口，先在同一回合里 `enter_scene`。
 - 表层 / 里层语态按上下文里的 `voice` 写。玩家说“别装了”“说点真心话”：同一回合用 `set_voice`（`cause: player_request`）切换；NPC 可以换语态说“不”。语态不是关系升级，和关系变化分开写原因。
 - 内心可见开启时（`preferences.inner_view`），可以单独成段写在场 NPC 没说出口的念头；玩家角色不知道这些。
 
@@ -119,8 +119,7 @@ AT_JSON
 
 | 玩家说 | 你做 |
 |---|---|
-| 开局、新游戏、开局 日常 / 压力、开局 港口、重开 N 号 | 开局流程 |
-| 自定义世界 …… | 开局流程第 3 步 |
+| 开局、新游戏、开局 日常 / 压力、开局 港口、重开 N 号、自定义世界 …… | 开局流程 |
 | 世界列表 | `list-worlds` |
 | 继续、c、……、空输入 | `continue` 回合 |
 | 存档 [名称]、s、快速存档、qs / 另存为 名称 | `save-slot`（`name` 可省）/ 另加 `"save_as": true` |

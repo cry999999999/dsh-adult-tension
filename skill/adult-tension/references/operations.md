@@ -38,7 +38,7 @@
 | `npc_action` | NPC 自主行动。significant: true 的重大行动（主动接近、揭发、交易、离开、表白、挑衅等）受冷却限制；依据事实必须在其信息集中 |
 | `npc_state` | 更新 NPC 的情绪与状况（醉意、睡眠、受伤、外出等）；minutes 表示多久后自动消退 |
 | `add_fact` | 记录一条事实。public 在场者自动知道；private 只有 known_by；inner 是内心，只属于一个 NPC 且永不传播。误信用 truth: false + believed_by。正文里新写出、之后要继承的细节都要用它记下 |
-| `relationship` | 有向关系变化（from 对 to）：信任 -5..5（单次提交净变化 ≤2）、张力 0..5、亲近进程前进一个阶段（需要同一提交里玩家的行动 + 对方的 partial/genuine 回应）或后退。原因必填 |
+| `relationship` | 有向关系变化（from 对 to）：信任 -5..5（一个回合净变化 ≤2）、张力 0..5、亲近进程前进一个阶段（需要同一回合里玩家的行动 + 对方的 partial/genuine 回应）或后退。原因必填 |
 | `event_create` | 创建事件（约定、截止、风声、机会、伏笔、概率事件）。due 与 in_minutes 二选一且必须晚于现在；chance 必须带 probability，到期由引擎掷骰；涉及玩家的承诺需要 player_authorized；dedupe_key 与未结束事件不能重复 |
 | `event_resolve` | 在到期前结束事件：约定、截止、机会用 fulfilled（兑现）；伏笔、风声用 surfaced（提前浮出）。概率事件只能由引擎到期掷骰 |
 | `event_cancel` | 因剧情取消未结束的事件（outcome: cancelled_by_story） |
@@ -46,14 +46,14 @@
 | `player_update` | 玩家角色的姓名、称谓、背景、资源与风险。只能在 result 或 rewrite（“其实……”）模式、并带 player_authorized |
 | `reveal_fact` | 把一条事实从知情人告诉别人。只能沿已有的关系边进行，当面告知时双方都要在场；内心事实永远不能传播。告诉某人真相时，若他正误信同键的假事实，引擎记录他的信息集变化 |
 | `spread_rumor` | 传出一条走样的传闻：生成新的假事实（来源为传闻），原事实不变。不经渠道时沿关系边、双方在场；经世界里的走样渠道时可以传到没有关系边的人 |
-| `set_voice` | 切换 NPC 的表层/里层语态。玩家要求（player_request）优先；NPC 自主切入里层（npc_self）要写触发因素：alone 独处 / drunk 醉意 / breakdown 情绪崩溃 / exposed 被戳穿；revert 切回表层。语态只改变说话方式，不是关系升级，note 不能与同一提交里的关系变化共用原因 |
+| `set_voice` | 切换 NPC 的表层/里层语态。玩家要求（player_request）优先；NPC 自主切入里层（npc_self）要写触发因素：alone 独处 / drunk 醉意 / breakdown 情绪崩溃 / exposed 被戳穿；revert 切回表层。语态只改变说话方式，不是关系升级，note 不能与同一回合里的关系变化共用原因 |
 | `intimacy_evidence` | 为私密倾向卡的某一项记一条证据。同一项同一方向需要至少 2 条来自不同回合的证据才会改动（界线项的放宽 remove 需要 3 条）；数值项用 increase/decrease，列表项用 add/remove，文字项用 set |
 | `identity_update` | 逐项修改身份卡（资源、限制、义务用 add/remove；权限、暴露风险、隐藏落差用 set）。身份卡不能整体替换 |
 | `npc_update` | 修改 NPC 的公开身份、外貌、当前目标、对关系的态度或处境（不含身份卡与倾向卡） |
 | `introduce_character` | 新角色登场：正文里第一次点名的人都要登场，只被提起、不在场的也算（present 写 false，location_id 写他所在的地点）；必须明确成年（age ≥ 18，adult_context 一句话说明成年身份），名字取自世界名字池且重要人物不同姓；按层级补齐字段（background：line；supporting：appearance、identity、decision 的 core_value 与 current_goal；major：再加完整 decision、intimacy、voices、situation）；性别要符合配对偏好，否则写 gender_reason |
 | `promote_character` | 把背景或配角升格（只升不降，保留 ID），并补齐新层级缺少的字段。身份卡与倾向卡只能在升格时创建一次，已有的不能再给 |
-| `leverage_set` | 登记把柄：一方开始拿捏另一方（把柄、债务、生计）时，必须在同一提交里登记。依据二选一：已有事实（持有方要知道它）或一句新事实。生效期间，双方之间的亲密提交被拒 |
-| `leverage_release` | 解除把柄（把柄被销毁、债务结清、秘密已经公开等），原因必填。同一提交里先解除再亲密不算解除 |
+| `leverage_set` | 登记把柄：一方开始拿捏另一方（把柄、债务、生计）时，必须在同一回合里登记。依据二选一：已有事实（持有方要知道它）或一句新事实。生效期间，双方之间的亲密回合被拒 |
+| `leverage_release` | 解除把柄（把柄被销毁、债务结清、秘密已经公开等），原因必填。同一回合里先解除再亲密不算解除 |
 | `offscreen_beat` | 离屏片段：不在场的重要 NPC 在这段时间里做了什么。只能写上下文 `offscreen_beat_candidates` 或时间推进要求的 NPC；子操作只能是这个 NPC 自己的行动、状态、移动，NPC 之间的关系与消息，以及不涉及玩家的事件与把柄 |
 | `twist_accept` | 接受一个转折：引用上下文 requests.twist_offer 或 get-context want_twist 给出的候选 id（写进 twist_id），或给出玩家口述的转折（category 与 text 必填）。玩家选定时用 result 模式并带 player_authorized；同一游戏日最多接受一次 |
 
@@ -164,7 +164,7 @@ NPC 自主行动。significant: true 的重大行动（主动接近、揭发、�
 
 ## `relationship`
 
-有向关系变化（from 对 to）：信任 -5..5（单次提交净变化 ≤2）、张力 0..5、亲近进程前进一个阶段（需要同一提交里玩家的行动 + 对方的 partial/genuine 回应）或后退。原因必填
+有向关系变化（from 对 to）：信任 -5..5（一个回合净变化 ≤2）、张力 0..5、亲近进程前进一个阶段（需要同一回合里玩家的行动 + 对方的 partial/genuine 回应）或后退。原因必填
 
 | 字段 | 类型 | 必填 | 说明 |
 |---|---|---|---|
@@ -278,7 +278,7 @@ NPC 自主行动。significant: true 的重大行动（主动接近、揭发、�
 
 ## `set_voice`
 
-切换 NPC 的表层/里层语态。玩家要求（player_request）优先；NPC 自主切入里层（npc_self）要写触发因素：alone 独处 / drunk 醉意 / breakdown 情绪崩溃 / exposed 被戳穿；revert 切回表层。语态只改变说话方式，不是关系升级，note 不能与同一提交里的关系变化共用原因
+切换 NPC 的表层/里层语态。玩家要求（player_request）优先；NPC 自主切入里层（npc_self）要写触发因素：alone 独处 / drunk 醉意 / breakdown 情绪崩溃 / exposed 被戳穿；revert 切回表层。语态只改变说话方式，不是关系升级，note 不能与同一回合里的关系变化共用原因
 
 | 字段 | 类型 | 必填 | 说明 |
 |---|---|---|---|
@@ -534,7 +534,7 @@ NPC 自主行动。significant: true 的重大行动（主动接近、揭发、�
 
 ## `leverage_set`
 
-登记把柄：一方开始拿捏另一方（把柄、债务、生计）时，必须在同一提交里登记。依据二选一：已有事实（持有方要知道它）或一句新事实。生效期间，双方之间的亲密提交被拒
+登记把柄：一方开始拿捏另一方（把柄、债务、生计）时，必须在同一回合里登记。依据二选一：已有事实（持有方要知道它）或一句新事实。生效期间，双方之间的亲密回合被拒
 
 | 字段 | 类型 | 必填 | 说明 |
 |---|---|---|---|
@@ -547,7 +547,7 @@ NPC 自主行动。significant: true 的重大行动（主动接近、揭发、�
 
 ## `leverage_release`
 
-解除把柄（把柄被销毁、债务结清、秘密已经公开等），原因必填。同一提交里先解除再亲密不算解除
+解除把柄（把柄被销毁、债务结清、秘密已经公开等），原因必填。同一回合里先解除再亲密不算解除
 
 | 字段 | 类型 | 必填 | 说明 |
 |---|---|---|---|

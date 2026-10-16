@@ -380,6 +380,7 @@ def _template(state, body):
 
 CARD_SUMMARY_KEYS = ("id", "name", "call", "age", "gender", "tier", "role", "adult_context", "location_id", "present", "can_act", "voice", "to_player")
 ROSTER_KEYS = ("id", "name", "tier", "role", "adult_context", "location_id", "present", "to_player")
+ROSTER_CLIP = 24
 NAME_POOL_FLOOR = {"family_unused": 6, "given_female": 4, "given_male": 4, "given_neutral": 3}
 PLAYER_FACTS_FLOORS = (16, 8)
 CUSTOMS_FLOOR = 2
@@ -432,6 +433,18 @@ def _card_core(card):
 
 def _roster_line(card):
     return dict({k: card[k] for k in ROSTER_KEYS if k in card}, detail="roster")
+
+
+def _roster_clipped(card):
+    """The last resort for a crowd of long cards: a roster line whose role and
+    adult context are cut to their opening words."""
+    if card.get("detail") not in ("roster", "core"):
+        return card
+    out = _roster_line(card)
+    for key in ("role", "adult_context"):
+        if isinstance(out.get(key), str) and len(out[key]) > ROSTER_CLIP:
+            out[key] = out[key][:ROSTER_CLIP] + "…"
+    return out
 
 
 def _card_order(context, state, present):
@@ -574,6 +587,12 @@ def _full_steps(context, state):
         yield lambda cid=cid: _drop_goal(context, cid)
     for cid in _card_order(context, state, True):
         yield lambda cid=cid: _replace_card(context, cid, _card_core)
+    # A crowd of long cards in a world of long texts: roster lines keep only
+    # the opening words of role and adult context, absent people first; the
+    # most relevant person on stage keeps a core card.
+    yield from shrink_cards(False, _roster_clipped)
+    for cid in crowd:
+        yield lambda cid=cid: _replace_card(context, cid, _roster_clipped)
 
 
 def _fit_full(context, state):

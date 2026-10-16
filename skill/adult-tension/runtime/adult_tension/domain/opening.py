@@ -92,6 +92,31 @@ def _identity_fits(identity, combo):
     return not combo.get("identity_ids") or identity["id"] in combo["identity_ids"]
 
 
+OPPOSITE = {"female": "male", "male": "female"}
+
+
+def npc_preference(preference, player_gender):
+    """The gender rule for the opening NPCs: the player's own preference when
+    they set one; otherwise the opposite of the player's character."""
+    if preference not in ("any", "mixed") or player_gender not in OPPOSITE:
+        return preference
+    return OPPOSITE[player_gender] + "_only"
+
+
+def _player_gender(pack, combo, identity, seed, given):
+    """Given by the player, fixed by the identity, the opposite of an NPC whose
+    gender the world fixes, or a coin flip."""
+    if given:
+        return given
+    if identity["gender"] != "any":
+        return identity["gender"]
+    templates = {t["id"]: t for t in pack["character_templates"]}
+    fixed = {templates[s]["gender"] for s in combo["slots"]} - {"any"}
+    if len(fixed) == 1 and fixed <= set(OPPOSITE):
+        return OPPOSITE[fixed.pop()]
+    return rng.pick(seed, "player.gender", ["female", "male"])
+
+
 def _combo_gender_ok(pack, combo, preference):
     templates = {t["id"]: t for t in pack["character_templates"]}
     fixed = [templates[s]["gender"] for s in combo["slots"] if templates[s]["gender"] != "any"]
@@ -111,7 +136,7 @@ def plan_candidates(pack, mode, conditions):
     """All compatible (combo, item, location, hook) tuples, plus why none exist."""
     excluded = set(conditions["excludes"]["content_tags"])
     locks = conditions["locks"]
-    preference = conditions["npc_gender_preference"]
+    preference = npc_preference(conditions["npc_gender_preference"], conditions["player"].get("gender"))
     reasons = []
     if _excluded(pack["content_tags"], excluded):
         return [], ["世界 %s 带有被排除的标签：%s" % (pack["id"], "、".join(sorted(set(pack["content_tags"]) & excluded)))]
@@ -143,7 +168,7 @@ def plan_candidates(pack, mode, conditions):
             continue
         combos.append(combo)
     if not combos:
-        reasons.append("没有满足锁定、排除、性别偏好与玩家身份的人物组合")
+        reasons.append("没有满足锁定、排除、性别偏好（没设偏好时与玩家角色异性）与玩家身份的人物组合")
     if mode == "daily":
         items = [a for a in pack["daily_activities"] if not _excluded(a["tags"], excluded)]
         key = "activity_id"
@@ -389,9 +414,7 @@ def instantiate(pack, seed, conditions, planned, content_version, tag_ids=None):
     now = {"day": 1, "minute": start_minute}
 
     # -- player ---------------------------------------------------------------
-    gender = player_req.get("gender")
-    if not gender:
-        gender = identity["gender"] if identity["gender"] != "any" else rng.pick(seed, "player.gender", ["female", "male"])
+    gender = _player_gender(pack, combo, identity, seed, player_req.get("gender"))
     age = player_req.get("age")
     if age is None:
         lo, hi = identity["age_range"]
@@ -442,7 +465,7 @@ def instantiate(pack, seed, conditions, planned, content_version, tag_ids=None):
 
     # -- NPCs -----------------------------------------------------------------
     templates = {t["id"]: t for t in pack["character_templates"]}
-    genders = _npc_genders(pack, combo, seed, preference)
+    genders = _npc_genders(pack, combo, seed, npc_preference(preference, gender))
     characters = {"player": player}
     scopes = {"player": player_scope}
     for slot in combo["slots"]:

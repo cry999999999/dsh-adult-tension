@@ -65,7 +65,7 @@
 }
 ```
 
-- `npc_gender_preference`：`any`、`mostly_female`、`mostly_male`、`female_only`、`male_only`、`mixed`。
+- `npc_gender_preference`：`any`、`mostly_female`、`mostly_male`、`female_only`、`male_only`、`mixed`。开局时，玩家设了偏好（`any`、`mixed` 以外）就按偏好；没设时开局 NPC 与玩家角色异性。玩家没给自己的性别时，取身份池的固定性别，否则取世界固定性别的 NPC 的异性，再否则随机。背景人物不受这条约束。
 - `person`：称呼玩家角色的人称，`second`（默认）、`first` 或 `third`；NPC 始终用第三人称。开局时取世界包的 `default_person`，玩家可以改。
 - `pace`、`explicitness` 为 P1，P0 阶段固定为 `standard`，但字段从第一天存在。
 
@@ -261,7 +261,10 @@
 
 - 时间推进会到达或越过上下文里最早一件待办事件的到期时间（简要上下文 `due_soon`、完整上下文 `events` 的第一项）；记录之前，正文里的时间不越过它；
 - 跨过午夜（引擎随后要求章节摘要，并可能给出转折候选）；
+- 一次推进 ≥ 60 分钟（哪些离屏 NPC 必须有离屏片段，由记录前一刻的状态决定）；
 - 快进、接受转折、存档、读档、查状态、导出之前；
+- 暂停、设硬边界、改偏好之前（攒下的回合是按设置前的规则写的，留到设置之后记录会被新设置拒绝）；
+- 玩家说先到这、下次再玩（攒下的回合只在对话里，对话关掉就没了）；
 - 回合里用了 `roll`。
 
 “刚才不算”针对还没记录的回合时，模型直接改写正文；针对已记录的最后一回合时用 `replaces_turn` 或 `undo-turn`。
@@ -379,6 +382,7 @@
 - 引擎逐项应用，每项是一个回合（回合号依次加一，各自可以撤销）；后一项看得到前一项的结果。
 - 全有或全无：任何一项不合法，整次记录被拒，状态不变；错误路径以 `$.turns[i]` 开头，指向那一项。
 - 只有第一项可以写 `replaces_turn`。
+- 要由引擎决定结果的回合（用了 `roll`、接受转折、有事件到期）只能是最后一项：它之前的回合写正文时还不知道结果。不在最后一项时整次记录被拒，错误指向那一项。
 - `requests` 里的章节摘要、前情和转折候选在一次记录结束时才结算：记录之前已有的要求由第一项兑现；记录中途跨日、满一章等新产生的要求和转折候选在记录结束时出现，由下一次记录的第一项兑现或接受。之后的项写的时候看不到新要求，写了没有要求的章节摘要或前情会被拒。离屏片段候选每个回合之后更新。
 - 撤销记录中的某一回合，状态回到“只记录了它之前那几项”时的样子，包括那时会出现的要求。
 
@@ -590,7 +594,7 @@
 - **张力引擎**：独立于压力的、持续制造张力的结构（同一张值班表、同住一个院子、共同的秘密）。日常模式的张力主要来自这里。
 - **人物组合**：`power_structure` 取 `player_high`、`npc_high`、`equal`、`switchable`；`slots` 引用人物模板；必须至少引用一个张力引擎。
 - **压力五拍**：`trigger`（发生了什么）、`objective`（要在什么之前做到什么）、`choice`（真正的两难）、`immediate`（本场景内）、`near`（带 `deadline_minutes`）、`far`（`trigger` 与 `consequence`，开局时生成 `foreshadow` 事件）。`exits` 至少两条，每条都有代价。
-- **压力标记**：`flags` 可含 `timed`（有明确倒计时）与 `leverage`（一方握有另一方的把柄或生计）。带 `leverage` 的压力必须声明 `leverage: {"holder", "subject", "basis"}`：`holder`、`subject` 取人物组合的槽位或 `player`，`basis` 是构成把柄的一句事实。开局时引擎据此生成事实与把柄记录（§5.3）。把柄生效期间，双方之间的亲密提交被拒（`INVARIANT_VIOLATION`，提示“处境不是同意”），直到把柄被解除；这把 `NARRATIVE_RULES.md` §7.1 的“处境永远不是同意”落到结构上。
+- **压力标记**：`flags` 可含 `timed`（有明确倒计时）与 `leverage`（一方握有另一方的把柄或生计）。带 `leverage` 的压力必须声明 `leverage: {"holder", "subject", "basis"}`：`holder`、`subject` 取人物组合的槽位或 `player`，`basis` 是构成把柄的一句事实。开局时引擎据此生成事实与把柄记录（§5.3）。把柄生效期间，双方之间的亲密回合被拒（`INVARIANT_VIOLATION`，提示“处境不是同意”），直到把柄被解除；这把 `NARRATIVE_RULES.md` §7.1 的“处境永远不是同意”落到结构上。
 - **钩子**：`kind` 取 `approach`（非交易性的靠近）、`observe`、`request`、`accident`。开局收尾优先用 `approach`。
 - **转折**：`category` 取七类之一（信息、人事、资源、制度、时限、关系、意外）；`requires` 可以限定只在压力模式或只在日常模式出现。
 - **禁用词表与状态**：`forbidden_terms` 是本世界不该出现的词，供跨世界扫描（`CONTENT_BIBLE.md` §6）；`status` 取 `draft`、`review`、`released`（`CONTENT_BIBLE.md` §7）。

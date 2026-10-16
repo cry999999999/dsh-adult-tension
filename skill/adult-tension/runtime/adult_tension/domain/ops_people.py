@@ -29,7 +29,7 @@ def _card_budget(ctx, npc, path, errs):
     used = ctx.card_ops.get(npc, 0) + 1
     ctx.card_ops[npc] = used
     if used > MAX_CARD_OPS_PER_NPC:
-        errs.append(detail(path, "一次提交里 %s 的身份/倾向卡最多改 %d 项" % (ctx.name(npc), MAX_CARD_OPS_PER_NPC), "卡片只能逐项演化，不能一次重写", INVARIANT_VIOLATION))
+        errs.append(detail(path, "一个回合里 %s 的身份/倾向卡最多改 %d 项" % (ctx.name(npc), MAX_CARD_OPS_PER_NPC), "卡片只能逐项演化，不能一次重写", INVARIANT_VIOLATION))
 
 
 # ---------------------------------------------------------------------------
@@ -177,7 +177,7 @@ def op_spread_rumor(ctx, op, path):
         "trigger": F(S.Nullable(S.Enum("alone", "drunk", "breakdown", "exposed")), required=False, default=None),
         "note": F(S.Str(1, 80)),
     },
-    "切换 NPC 的表层/里层语态。玩家要求（player_request）优先；NPC 自主切入里层（npc_self）要写触发因素：alone 独处 / drunk 醉意 / breakdown 情绪崩溃 / exposed 被戳穿；revert 切回表层。语态只改变说话方式，不是关系升级，note 不能与同一提交里的关系变化共用原因",
+    "切换 NPC 的表层/里层语态。玩家要求（player_request）优先；NPC 自主切入里层（npc_self）要写触发因素：alone 独处 / drunk 醉意 / breakdown 情绪崩溃 / exposed 被戳穿；revert 切回表层。语态只改变说话方式，不是关系升级，note 不能与同一回合里的关系变化共用原因",
 )
 def op_set_voice(ctx, op, path):
     errs = []
@@ -538,7 +538,7 @@ def op_promote_character(ctx, op, path):
         "basis_text": F(S.Nullable(S.Str(1, 120)), required=False, default=None),
         "origin": F(S.Str(1, 60)),
     },
-    "登记把柄：一方开始拿捏另一方（把柄、债务、生计）时，必须在同一提交里登记。依据二选一：已有事实（持有方要知道它）或一句新事实。生效期间，双方之间的亲密提交被拒",
+    "登记把柄：一方开始拿捏另一方（把柄、债务、生计）时，必须在同一回合里登记。依据二选一：已有事实（持有方要知道它）或一句新事实。生效期间，双方之间的亲密回合被拒",
 )
 def op_leverage_set(ctx, op, path):
     errs = []
@@ -596,7 +596,7 @@ def op_leverage_set(ctx, op, path):
 @register(
     "leverage_release",
     {"leverage_id": F(S.Id()), "reason": F(S.Str(1, 80))},
-    "解除把柄（把柄被销毁、债务结清、秘密已经公开等），原因必填。同一提交里先解除再亲密不算解除",
+    "解除把柄（把柄被销毁、债务结清、秘密已经公开等），原因必填。同一回合里先解除再亲密不算解除",
 )
 def op_leverage_release(ctx, op, path):
     errs = []

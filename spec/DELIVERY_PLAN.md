@@ -58,7 +58,7 @@
 
 - 知识边界：`reveal_fact`、`spread_rumor`、误信、内心事实。
 - 表层与里层语态、内心可见、倾向卡与证据、关系阶段与证据。
-- 把柄记录（`DATA_CONTRACTS.md` §5.3）与亲密提交的结构检查。
+- 把柄记录（`DATA_CONTRACTS.md` §5.3）与亲密回合的结构检查。
 - 新角色登场与升格：`introduce_character`、`promote_character`；登场同样做年龄检查。
 - 硬边界、暂停与“换个场景”；场景切换后清空互动判断。
 - 行动模式的结构约束：`attempt` 必须有 NPC 回应；`continue` 与 `wait` 不替玩家行动。

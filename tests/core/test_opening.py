@@ -89,6 +89,22 @@ class PeopleTest(unittest.TestCase):
             majors = [c["gender"] for c in state["characters"].values() if c["tier"] == "major" and c["id"] != "player"]
             self.assertGreater(majors.count("male") * 2, len(majors))
 
+    def test_without_a_preference_the_npcs_are_the_other_gender(self):
+        for player_gender, other in (("male", "female"), ("female", "male")):
+            for seed in range(1, 15):
+                state, _ = build("daily", seed, player={"gender": player_gender})
+                genders = {c["gender"] for c in state["characters"].values() if c["tier"] == "major" and c["id"] != "player"}
+                self.assertEqual(genders, {other}, (player_gender, seed))
+        # A preference the player set comes first.
+        state, _ = build("daily", 3, player={"gender": "male"}, npc_gender_preference="male_only")
+        self.assertEqual({c["gender"] for c in state["characters"].values() if c["tier"] == "major" and c["id"] != "player"}, {"male"})
+        # No gender given: the player's character is still the other gender of the NPCs.
+        for seed in range(1, 15):
+            state, _ = build("daily", seed)
+            player = state["characters"]["player"]["gender"]
+            genders = {c["gender"] for c in state["characters"].values() if c["tier"] == "major" and c["id"] != "player"}
+            self.assertNotIn(player, genders, seed)
+
     def test_player_settings_are_respected(self):
         state, payload = build("daily", 4, player={"gender": "female", "age": 45, "identity_hint": "裁缝", "name": "罗秀英", "title": "罗师傅"})
         player = state["characters"]["player"]

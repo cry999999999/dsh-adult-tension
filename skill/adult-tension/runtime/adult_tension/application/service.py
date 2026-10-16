@@ -537,6 +537,7 @@ def _commit_turn(ctx, payload):
                 _at_turn(err, index)
                 raise
             results.append(result)
+        _engine_outcomes_last(results)
         turn.close_record(state, session["content"]["world"], results)
         repo.update_session(conn, state, now, turns_since_save=unsaved)
         if fault("kill_in_commit"):
@@ -622,6 +623,28 @@ def _turn_result(result):
         if result[key] is not None:
             out[key] = result[key]
     return out
+
+
+def _engine_outcomes_last(results):
+    """A turn whose outcome the engine decides (a roll, an accepted twist, an
+    event coming due) is recorded before its prose is written, so it can only
+    be the last turn of a record: a turn before it had its prose written
+    without the outcome (DATA_CONTRACTS 6.3)."""
+    problems = []
+    last = len(results) - 1
+    for index, result in enumerate(results[:last]):
+        decided = sorted({a["op"] for a in result["applied"] if a["op"] in ("roll", "twist_accept")})
+        if result["resolved_events"]:
+            decided.append("到期事件")
+        if decided:
+            problems.append(detail(
+                "$.turns[%d]" % index,
+                "第 %d 项有要由引擎决定结果的事（%s），它只能是记录的最后一项" % (index + 1, "、".join(decided)),
+                "这次只记录到第 %d 项，按返回的结果写它；后面的回合下一次再记" % (index + 1),
+                INVALID_INPUT,
+            ))
+    if problems:
+        raise AppError(INVALID_INPUT, problems[0]["reason"] if len(problems) == 1 else "记录有 %d 处问题" % len(problems), problems)
 
 
 def _at_turn(err, index):

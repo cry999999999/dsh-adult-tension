@@ -7,6 +7,8 @@ player, the player's facts, world rules, the location list, the latest
 chapter, every pending event and active leverage, and a name pool.
 """
 
+import json
+import os
 import unittest
 
 import _bootstrap  # noqa: F401
@@ -19,12 +21,24 @@ from adult_tension.projections import context as CX
 from helpers.domain import STORE
 from helpers.service import Ids, app, record, session
 
-TRIOS = sorted(
+
+
+def _cast_weight(pack, combo):
+    cards = {t["id"]: t for t in pack["character_templates"]}
+    return len(combo["slots"]), sum(len(json.dumps(cards[s], ensure_ascii=False)) for s in combo["slots"])
+
+
+# Every opening cast, the heaviest first (most people, then the longest cards).
+# Core plays the heaviest few; tools/context_sweep.py plays them all before a
+# release (ACCEPTANCE.md 4 keeps core under a minute).
+CASTS = [
     (pack["id"], combo["id"])
-    for pack in (STORE.world(entry["id"]) for entry in STORE.index()["worlds"])
-    for combo in pack["cast_combos"]
-    if len(combo["slots"]) >= 3
-)
+    for _, pack, combo in sorted(
+        ((_cast_weight(pack, combo), pack, combo) for pack in (STORE.world(entry["id"]) for entry in STORE.index()["worlds"]) for combo in pack["cast_combos"]),
+        key=lambda item: (-item[0][0], -item[0][1], item[1]["id"], item[2]["id"]),
+    )
+]
+SWEPT = CASTS if os.environ.get("AT_CONTEXT_SWEEP") == "all" else CASTS[:4]
 FILL = "灯火夜雨人声旧街长巷风里"
 
 
@@ -153,9 +167,8 @@ class FullContextBudgetTest(unittest.TestCase):
             self.assertTrue(any("pressure_responses" in c.get("decision", {}) and "boundaries" in c.get("intimacy", {}) for c in on_stage), label)
         return full
 
-    def test_three_person_combos_with_newcomers_stay_within_budget(self):
-        self.assertEqual(len(TRIOS), 92)
-        for world_id, combo_id in TRIOS:
+    def test_the_heaviest_casts_with_newcomers_stay_within_budget(self):
+        for world_id, combo_id in SWEPT:
             for mode in ("pressure", "daily"):
                 with app() as ctx:
                     game = Game(ctx, world_id, combo_id, mode)
@@ -169,7 +182,7 @@ class FullContextBudgetTest(unittest.TestCase):
                         self.check(game.state(), label + (turn,))
 
     def test_a_crowded_scene_of_long_cards_still_fits(self):
-        world_id, combo_id = TRIOS[0]
+        world_id, combo_id = CASTS[0]
         with app() as ctx:
             game = Game(ctx, world_id, combo_id)
             game.introduce(4, "major", True, 120, salt=5)
@@ -193,7 +206,7 @@ class FullContextBudgetTest(unittest.TestCase):
         # Long cards on stage: nearby, sample lines and edges between NPCs go
         # first; the people on stage are cut only after that.
         with app() as ctx:
-            game = Game(ctx, TRIOS[0][0], TRIOS[0][1])
+            game = Game(ctx, CASTS[0][0], CASTS[0][1])
             game.introduce(2, "major", True, 120, salt=7)
             info = game.state()
             state = info["state"]

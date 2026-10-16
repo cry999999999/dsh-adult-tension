@@ -12,3 +12,6 @@ reports/tmp/
 *.db-journal
 *.db-wal
 *.db-shm
+
+# Local working files (cast picker etc.), never committed
+work/

@@ -424,6 +424,30 @@ class NewGameCommandTest(unittest.TestCase):
                     service.new_game(ctx, dict({"request_id": "req_query_00003", "mode": "daily", "world_query": "港口"}, **extra))
                 self.assertEqual((caught.exception.code, caught.exception.details[-1]["path"]), ("INVALID_INPUT", "$.world_query"))
 
+    def test_the_world_list_gives_one_line_each_and_answers_a_theme(self):
+        released = {w["id"]: w for w in STORE.index()["worlds"] if w["status"] == "released"}
+        with app() as ctx:
+            listed = service.list_worlds(ctx, {})
+            self.assertEqual((listed["total"], len(listed["worlds"])), (len(released), len(released)))
+            for item in listed["worlds"]:
+                self.assertEqual(set(item), {"id", "title", "modes", "summary"})
+                # one line: the summary's first sentence, whole
+                self.assertTrue(released[item["id"]]["summary"].startswith(item["summary"]), item["id"])
+                self.assertIn(item["summary"].rstrip("”’」』）)")[-1], "。！？!?", item["id"])
+            self.assertLess(sum(len(w["summary"]) for w in listed["worlds"]) * 2, sum(len(w["summary"]) for w in released.values()))
+            # a theme lists only the worlds it matches, the named one first
+            harbor = service.list_worlds(ctx, {"query": "港口"})
+            self.assertTrue(0 < len(harbor["worlds"]) <= min(harbor["matched"], 20) and harbor["matched"] < harbor["total"])
+            for item in harbor["worlds"]:
+                entry = released[item["id"]]
+                self.assertIn("港口", entry["title"] + entry["era"] + entry["region"] + entry["summary"], item["id"])
+            self.assertEqual(service.list_worlds(ctx, {"query": "港口夜班"})["worlds"][0]["id"], "harbor_night_shift")
+            none = service.list_worlds(ctx, {"query": "修仙"})
+            self.assertEqual((none["worlds"], none["matched"]), ([], 0))
+            self.assertIn("自定义世界", none["hint"])
+            # under the development switch each world says whether it is released
+            self.assertTrue(all("status" in w for w in service.list_worlds(ctx, {"include_drafts": True})["worlds"]))
+
     def test_replay_restores_the_recorded_conditions(self):
         with app() as ctx:
             ids = Ids()

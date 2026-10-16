@@ -120,7 +120,7 @@ AT_JSON
 | 玩家说 | 你做 |
 |---|---|
 | 开局、新游戏、开局 日常 / 压力、开局 港口、重开 N 号、自定义世界 …… | 开局流程 |
-| 世界列表 | `list-worlds` |
+| 世界列表 [题材] | `list-worlds` [`query`] |
 | 继续、c、……、空输入 | `continue` 回合 |
 | 存档 [名称]、s、快速存档、qs / 另存为 名称 | `save-slot`（`name` 可省）/ 另加 `"save_as": true` |
 | 读档 [名称]、l | 有名称就直接 `load-slot` `{"request_id", "name"}`；没给名称才先 `list-slots`。回执后用 `resume` 写两三句前情，从未决动作的前一刻接着写，不重复开局 |

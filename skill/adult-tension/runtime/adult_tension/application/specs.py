@@ -155,7 +155,18 @@ IMPORT_SAVE = _obj(
     },
     "import-save",
 )
-LIST_WORLDS = _obj({"include_drafts": F(S.Bool(), required=False, default=False)}, "list-worlds")
+LIST_WORLDS = _obj(
+    {
+        "include_drafts": F(S.Bool(), required=False, default=False),
+        "query": F(
+            S.Nullable(S.Str(1, 40)),
+            required=False,
+            default=None,
+            desc="玩家问某类题材、时代、地方时的关键词（例如“港口”“民国”），与 new-game 的 world_query 同一套匹配；只列出对得上的世界，最相关的在前，最多 20 个",
+        ),
+    },
+    "list-worlds",
+)
 SMOKE = _obj({"seed": F(S.Int(1, 999999), required=False, default=42), "turns": F(S.Int(2, 60), required=False, default=8)}, "smoke")
 VERIFY_CONTENT = _obj(
     {

@@ -245,6 +245,16 @@ def seed_stream():
 
 QUERY_NOISE = re.compile(r"[\s，。、·:：;；!！?？\"'“”‘’()（）《》【】\[\]<>—\-_/|｜]+")
 QUERY_CANDIDATES = 5
+LIST_QUERY_LIMIT = 20
+FIRST_SENTENCE = re.compile(r"[^。！？!?]*[。！？!?]+[”’」』）)]*")
+
+
+def one_line(summary):
+    """A world's one-line introduction: the first sentence of its summary
+    (a summary runs to several sentences; whole ones for every world would
+    not fit a reply)."""
+    match = FIRST_SENTENCE.match(summary)
+    return match.group(0) if match else summary
 
 
 def _norm_query(text):
@@ -300,7 +310,7 @@ def _match_world_query(ctx, query, drafts):
     if len(scored) == 1 or (not strong and best[0] >= 2 * scored[1][0]):
         return best[1]["id"]
     shown = scored[:QUERY_CANDIDATES]
-    candidates = [{"world_id": e["id"], "title": e["title"], "summary": e["summary"]} for _s, e in shown]
+    candidates = [{"world_id": e["id"], "title": e["title"], "summary": one_line(e["summary"])} for _s, e in shown]
     raise AppError(
         NO_MATCH,
         "“%s”对得上 %d 个世界" % (query, len(scored)),
@@ -984,14 +994,19 @@ def import_save(ctx, payload):
 def list_worlds(ctx, payload):
     payload = validate(specs.LIST_WORLDS, payload)
     index = ctx.content().index()
-    worlds = [w for w in index["worlds"] if include_drafts(ctx, payload) or w["status"] == "released"]
-    return {
-        "content_version": index["content_version"],
-        "worlds": [
-            {k: w[k] for k in ("id", "title", "era", "region", "summary", "modes", "status")}
-            for w in worlds
-        ],
-    }
+    drafts = include_drafts(ctx, payload)
+    worlds = [w for w in index["worlds"] if drafts or w["status"] == "released"]
+    out = {"content_version": index["content_version"], "total": len(worlds)}
+    if payload["query"] is not None:
+        # matched against the whole entry (title, era, place, full summary)
+        scored = world_query_matches(worlds, payload["query"])
+        out["matched"] = len(scored)
+        worlds = [entry for _score, entry in scored[:LIST_QUERY_LIMIT]]
+        if not scored:
+            out["hint"] = "没有对得上的世界：换个关键词，或不带 query 列出全部；都没有就提议最接近的世界或自定义世界，由玩家选"
+    keys = ("id", "title", "modes", "status") if drafts else ("id", "title", "modes")
+    out["worlds"] = [dict({k: w[k] for k in keys}, summary=one_line(w["summary"])) for w in worlds]
+    return out
 
 
 # ---------------------------------------------------------------------------

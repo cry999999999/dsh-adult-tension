@@ -139,17 +139,19 @@ def render_operations():
 
 
 def render_worlds():
+    from adult_tension.application.service import one_line
     from adult_tension.content.store import ContentStore
 
     index = ContentStore(os.path.join(_runtime.SKILL_ROOT, "content")).index()
     lines = [GENERATED_NOTE, "# 世界列表\n\n"]
-    lines.append("内容版本：`%s`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。\n\n" % index["content_version"])
-    lines.append("| 世界 | ID | 时代 | 地方 | 一句话 | 模式 | 状态 |\n|---|---|---|---|---|---|---|\n")
+    lines.append("内容版本：`%s`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。" % index["content_version"])
+    lines.append("玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。\n\n")
+    lines.append("| 世界 | ID | 一句话 | 模式 | 状态 |\n|---|---|---|---|---|\n")
     modes = {"daily": "日常", "pressure": "有压力"}
     for world in index["worlds"]:
         lines.append(
-            "| %s | `%s` | %s | %s | %s | %s | %s |\n"
-            % (world["title"], world["id"], world["era"], world["region"], _escape(world["summary"]), "、".join(modes[m] for m in world["modes"]), world["status"])
+            "| %s | `%s` | %s | %s | %s |\n"
+            % (world["title"], world["id"], _escape(one_line(world["summary"])), "、".join(modes[m] for m in world["modes"]), world["status"])
         )
     return "".join(lines)
 

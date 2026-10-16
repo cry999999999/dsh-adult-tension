@@ -9,6 +9,7 @@ __pycache__/
 
 # Scratch output from tools and tests
 reports/tmp/
+reports/check_all/
 *.db-journal
 *.db-wal
 *.db-shm

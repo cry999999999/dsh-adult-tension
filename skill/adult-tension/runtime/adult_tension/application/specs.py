@@ -171,6 +171,10 @@ LIST_WORLDS = _obj(
     },
     "list-worlds",
 )
+GUIDE = _obj(
+    {"session_id": F(S.Nullable(SESSION_ID), required=False, default=None, desc="正在玩的会话；不给时是还没开局的版本")},
+    "guide",
+)
 SMOKE = _obj({"seed": F(S.Int(1, 999999), required=False, default=42), "turns": F(S.Int(2, 60), required=False, default=8)}, "smoke")
 VERIFY_CONTENT = _obj(
     {

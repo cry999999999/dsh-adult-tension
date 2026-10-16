@@ -59,6 +59,7 @@ _register("import-save", APP + "service", "import_save", "required", "create", "
 _register("set-boundary", APP + "service", "set_boundary", "required", "session_write", "登记或撤销硬边界", spec="SET_BOUNDARY")
 _register("set-safety", APP + "service", "set_safety", "required", "session_write", "暂停、恢复、换个场景", spec="SET_SAFETY")
 _register("set-preferences", APP + "service", "set_preferences", "required", "session_write", "内心可见、叙事助手、离屏推演、语态、人称、配对偏好、节奏、尺度", spec="SET_PREFERENCES")
+_register("guide", APP + "guide", "run", "optional", "read", "新玩家的游玩指南（“怎么玩”）：固定文字，原样转述", spec="GUIDE")
 _register("status", APP + "service", "status", "required", "read", "状态：brief 六行 / detail 状态+ / debug 调试", spec="STATUS")
 _register(
     "verify-content",

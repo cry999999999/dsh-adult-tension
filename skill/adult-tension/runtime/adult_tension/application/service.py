@@ -57,6 +57,9 @@ def new_session_id(conn):
             return sid
 
 
+FIRST_GAME_TIP = "不知道怎么玩？说“怎么玩”。"
+
+
 def validate(spec, payload):
     normalized, errors = S.validate(spec, payload)
     if errors:
@@ -396,6 +399,9 @@ def new_game(ctx, payload):
         changed = restored is not None and restored["signature"] != planned[0]["signature"]
         if changed:
             opening_payload["footer"] += "（内容已更新，和之前的 %d 号开局不同）" % seed
+        if not repo.has_sessions(conn):
+            # the first game on this machine: one line pointing at the play guide
+            opening_payload["tip"] = FIRST_GAME_TIP
         state["session_id"] = new_session_id(conn)
         prefs = payload["preferences"]
         for key in ("inner_view", "assistant", "offscreen_simulation", "person", "pace", "explicitness"):

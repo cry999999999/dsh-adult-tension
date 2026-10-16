@@ -256,6 +256,21 @@ def session_exists(conn, session_id):
     return conn.execute("SELECT 1 FROM sessions WHERE session_id=?", (session_id,)).fetchone() is not None
 
 
+def has_sessions(conn):
+    return conn.execute("SELECT 1 FROM sessions LIMIT 1").fetchone() is not None
+
+
+def session_summary(conn, session_id):
+    row = conn.execute("SELECT world_title, turn FROM sessions WHERE session_id=?", (session_id,)).fetchone()
+    if row is None:
+        raise AppError(
+            NOT_FOUND,
+            "会话不存在：%s" % session_id,
+            [detail("$.session_id", "会话不存在：%s" % session_id, "用 list-sessions 列出实际存在的会话", NOT_FOUND)],
+        )
+    return {"world_title": row[0], "turn": row[1]}
+
+
 def list_sessions(conn, limit=10):
     """Most recently played first, with each one's per-turn state."""
     rows = conn.execute(

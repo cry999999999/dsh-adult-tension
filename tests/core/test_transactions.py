@@ -508,6 +508,37 @@ class NewGameCommandTest(unittest.TestCase):
             self.assertEqual([d["path"] for d in caught.exception.details], ["$.tags[0]", "$.exclude_tags[1]"])
             self.assertIn("supernatural（超自然）", caught.exception.details[0]["hint"])
 
+    def test_the_play_guide_fits_where_the_player_is(self):
+        from adult_tension.application import guide
+
+        with app() as ctx:
+            ids = Ids()
+            before = guide.run(ctx, {})
+            self.assertEqual(before["stage"], "start")
+            self.assertTrue(before["text"].startswith("怎么玩\n"))
+            self.assertIn("世界列表", before["text"])
+            self.assertNotIn("继续上次", before["text"])
+            # plain words: none of the engine's own terms reach a new player
+            for word in ("NPC", "回合", "session", "commit", "seed", "{"):
+                self.assertNotIn(word, before["text"])
+            # the first game on this machine points at the guide, later ones do not
+            first = open_game(ctx, ids, mode="daily", seed=31)
+            self.assertEqual(first["opening"]["tip"], service.FIRST_GAME_TIP)
+            self.assertNotIn("tip", open_game(ctx, ids, mode="daily", seed=32)["opening"])
+            self.assertIn("继续上次", guide.run(ctx, {})["text"])
+            playing = guide.run(ctx, {"session_id": first["session_id"]})
+            self.assertEqual(playing["stage"], "playing")
+            self.assertIn("《%s》" % first["context"]["world"]["title"], playing["text"])
+            for word in ("暂停", "换个场景", "边界", "存档", "撤销", "继续", "帮助"):
+                self.assertIn(word, playing["text"])
+            self.assertEqual(playing["text"], "\n".join(["怎么玩", ""] + playing["lines"]))
+            with self.assertRaises(AppError) as caught:
+                guide.run(ctx, {"session_id": "s_nothere"})
+            self.assertEqual(caught.exception.code, "NOT_FOUND")
+            with self.assertRaises(AppError) as caught:
+                guide.run(ctx, {"level": "full"})
+            self.assertEqual(caught.exception.code, "INVALID_INPUT")
+
     def test_replay_restores_the_recorded_conditions(self):
         with app() as ctx:
             ids = Ids()

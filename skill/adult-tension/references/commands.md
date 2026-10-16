@@ -21,6 +21,7 @@
 | `doctor` | diagnostic | 无 | 检查环境并完成首次初始化（幂等） | — |
 | `export-save` | read | 必填 | 把会话或存档导出为文件（带完整性校验值） | — |
 | `get-context` | read | 必填 | 当前上下文（brief / full）；可带快进预览 preview_time 与转折候选 want_twist | — |
+| `guide` | read | 可选 | 新玩家的游玩指南（“怎么玩”）：固定文字，原样转述 | — |
 | `import-save` | create | 必填 | 导入导出文件，得到一个新会话（可同时写入存档槽） | — |
 | `list-sessions` | read | 可选 | 最近的会话（续玩、恢复） | — |
 | `list-slots` | read | 无 | 存档列表 | — |
@@ -105,6 +106,12 @@
 | `minutes` | 整数 1..43200 | 否 |  |
 | `until` | 枚举：`morning` / `noon` / `evening` / `night` / `next_morning` | 否 |  |
 | `days` | 整数 1..30 | 否 |  |
+
+### `guide`
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `session_id` | 字符串，≤40 字，会话 ID，形如 s_1a2b3c4d 或 null | 否，默认 `null` | 正在玩的会话；不给时是还没开局的版本 |
 
 ### `import-save`
 

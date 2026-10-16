@@ -54,7 +54,7 @@ AT_JSON
 
         （正文，不加标题，约 300–700 字；压力模式写出眼前的压力与近期期限，远期只作伏笔；结尾停在 `hook` 描述的未决动作上，不替玩家接）
 
-        `opening.footer` 原样放在最后
+        `opening.footer` 原样放在最后；有 `opening.tip`（这台机器上第一局）就原样放在它下一行
 
 ## 每个回合
 
@@ -128,6 +128,7 @@ AT_JSON
 | 暂停、安全词、pause / 换个场景 | `set-safety` |
 | 内心可见 / 叙事助手 / 离屏推演 开关、语态 某人 表/里、人称、NPC 性别偏好、节奏、尺度 | `set-preferences`（`inner_view`、`assistant`、`offscreen_simulation`、`voice: {"npc_id", "voice"}`、`person`、`npc_gender_preference`、`pace`、`explicitness`） |
 | 撤销、刚才不算、其实……、快进到……、来点转折 | 见“时间、离屏、转折、撤销” |
+| 怎么玩、玩法、新手指南 | `guide`（开局后带 `session_id`），`text` 原样转述，不增删 |
 | 帮助、h、? | 列出上面的说法 |
 
 缺少对象时追问一次，不猜。存档冲突（`SLOT_CONFLICT`）、导入被拒：照 `references/troubleshooting.md` 的“存档冲突”。

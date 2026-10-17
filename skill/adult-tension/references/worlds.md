@@ -2,7 +2,7 @@
 
 # 世界列表
 
-内容版本：`2026.10.8`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。
+内容版本：`2026.10.9`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。
 
 | 内容标签 | ID | 已发布世界数 |
 |---|---|---|
@@ -28,7 +28,7 @@
 
 | 世界 | ID | 一句话 | 模式 | 状态 |
 |---|---|---|---|---|
-| 迷宫深层：坍塌安全区与溃灭远征队 | `abyss_collapsed_refuge` | 迷宫都市的深渊层，一支S级远征队在第二十三层的安全区石室里扎营，准备挑战深渊领主。 | 日常、有压力 | released |
+| 迷宫深层：坍塌安全区与溃灭远征队 | `abyss_collapsed_refuge` | 迷宫都市第二十三层，一处外廊塌了一半的古代安全区。 | 日常、有压力 | released |
 | 地下迷宫·败犬圣女·深渊99层钟乳石地下大空洞 | `abyss_dungeon_exiled_saintess` | 被教廷流放的高阶圣女，押解途中被安置在深渊九十九层的开采竖井营地。 | 日常、有压力 | released |
 | 深渊要塞地牢：女骑士长与大审判官 | `abyssal_dungeon_knightess_crest` | 低魔黑暗帝国的北境要塞，圣殿女骑士长与前廷大审判官曾并肩七年，如今一个守城墙、一个管地牢下面的断罪庭。 | 日常、有压力 | released |
 | 空天女飞官·商业航天测控中心模拟舱 | `aerospace_simulator_pod_gauge_release` | 商业航天测控基地的总装大厅里，全动模拟球舱一天要跑二十个小时。 | 日常、有压力 | released |

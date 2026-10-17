@@ -1344,7 +1344,7 @@
             "trust": 3,
             "tension": 5
           },
-          "reason": "那场私人晚宴上的赌约，是合伙人提的，遥控器是合伙人亲手交过来的。"
+          "reason": "那场私人晚宴上的赌约是合伙人自己提的，遥控器也是合伙人当着你的面亲手交过来的。"
         }
       ],
       "tags": [
@@ -1387,7 +1387,7 @@
             "trust": 4,
             "tension": 4
           },
-          "reason": "年会上打的赌，十年的同期，谁也不肯先认输。"
+          "reason": "同年升合伙人，斗了十年嘴；年会上合伙人当众跟你打赌，输的人要把遥控器交给赢家。"
         }
       ],
       "tags": [
@@ -1421,7 +1421,7 @@
         {
           "a": "player",
           "b": "investment_partner_shen_qing_yi",
-          "stage": "familiar",
+          "stage": "intimate",
           "a_to_b": {
             "trust": 4,
             "tension": 3
@@ -1430,7 +1430,7 @@
             "trust": 4,
             "tension": 4
           },
-          "reason": "跟了四年，赌约是合伙人醉后亲口许下的，醒来也没反悔。"
+          "reason": "跟了合伙人四年，去年庆功宴散场后在电梯里越过一次界，第二天两人照常开会，谁也没提。"
         }
       ],
       "tags": [
@@ -1464,7 +1464,7 @@
         {
           "a": "player",
           "b": "investment_partner_shen_qing_yi",
-          "stage": "flirting",
+          "stage": "intimate",
           "a_to_b": {
             "trust": 3,
             "tension": 4
@@ -1473,11 +1473,171 @@
             "trust": 3,
             "tension": 4
           },
-          "reason": "赌约有来有回：今天输的人，明天握遥控器。"
+          "reason": "上一局输的是你，合伙人握着遥控器让你在客户面前撑了一下午，散会后两人在车里吻了很久。"
         }
       ],
       "tags": [
         "intimate"
+      ]
+    },
+    {
+      "id": "combo_rival_partner_across_table",
+      "power_structure": "switchable",
+      "player_positions": [
+        "low",
+        "equal",
+        "high"
+      ],
+      "identity_ids": [],
+      "slots": [
+        "rival_partner_wen_ruo_lan"
+      ],
+      "tension_engine_ids": [
+        "eng_old_rivals",
+        "eng_table_drape"
+      ],
+      "chemistry": "{rival_partner_wen_ruo_lan.name}在七个项目上跟你隔桌对垒，赢了请你喝一杯，输了也请；今天这单，你们又坐在长桌两头。",
+      "stakes": {
+        "resource_gap": "对手手里有你们定价模型的一个漏洞，你手里有对手上一单的违规底稿。",
+        "limit_gap": "两人当着发行人不能露出交情，私下见面也不能被各自的团队撞见。",
+        "meeting_reason": "路演会上，对手行作为联席承销坐在长桌另一头。",
+        "irreplaceable_goal": "对手想知道，十年里那点没说破的心思，你到底有没有。"
+      },
+      "tags": [],
+      "relations": [
+        {
+          "a": "player",
+          "b": "rival_partner_wen_ruo_lan",
+          "stage": "flirting",
+          "a_to_b": {
+            "trust": 2,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 2,
+            "tension": 4
+          },
+          "reason": "十年里在七个项目上隔桌对垒，每次签约后都约对方喝一杯，那点心思谁也没说破。"
+        }
+      ]
+    },
+    {
+      "id": "combo_interpreter_booth_frankfurt",
+      "power_structure": "equal",
+      "player_positions": [
+        "equal"
+      ],
+      "identity_ids": [],
+      "slots": [
+        "simul_interpreter_jiang"
+      ],
+      "tension_engine_ids": [
+        "eng_hot_mic",
+        "eng_old_rivals"
+      ],
+      "chemistry": "{simul_interpreter_jiang.name}的手搭在推子上，一推就是全场的耳机；去年在法兰克福，这只手也搭过你的后颈。",
+      "stakes": {
+        "resource_gap": "同传管着关麦的推子和整场的译法，你管着这单对外的口径。",
+        "limit_gap": "同传不能擅自关麦太久，你不能让人看出两人在同传间里待得太久。",
+        "meeting_reason": "路演间隙，你借口核对术语走进同传间。",
+        "irreplaceable_goal": "同传想知道，法兰克福那一晚对你来说算不算数。"
+      },
+      "tags": [],
+      "relations": [
+        {
+          "a": "player",
+          "b": "simul_interpreter_jiang",
+          "stage": "intimate",
+          "a_to_b": {
+            "trust": 2,
+            "tension": 4
+          },
+          "b_to_a": {
+            "trust": 2,
+            "tension": 5
+          },
+          "reason": "去年在法兰克福路演，加班到半夜后两人在空无一人的展厅里吻过一次，回国后谁也没再提。"
+        }
+      ]
+    },
+    {
+      "id": "combo_assistant_unpaid_promise",
+      "power_structure": "player_high",
+      "player_positions": [
+        "high"
+      ],
+      "identity_ids": [],
+      "slots": [
+        "assistant_su_yu_qing"
+      ],
+      "tension_engine_ids": [
+        "eng_old_rivals",
+        "eng_table_drape"
+      ],
+      "chemistry": "{assistant_su_yu_qing.name}管着底稿室的门禁和所有人的日程，替你瞒过一次差点出大事的失误；今晚门一关，这笔账怎么算，助理在等你开口。",
+      "stakes": {
+        "resource_gap": "你握着助理调岗的推荐信，助理握着那份被悄悄改回来的底稿版本记录。",
+        "limit_gap": "助理不能越过上司的本分，你不能让旁人看出你欠下属一个人情。",
+        "meeting_reason": "加班改稿时，助理抱着文件推门进了底稿室。",
+        "irreplaceable_goal": "助理要你兑现半年前的承诺，又不想让这份承诺变成交易。"
+      },
+      "tags": [],
+      "relations": [
+        {
+          "a": "player",
+          "b": "assistant_su_yu_qing",
+          "stage": "committed",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 2,
+            "tension": 3
+          },
+          "reason": "半年前助理替你瞒下一次底稿外泄的失误，你答应帮助理调去前台业务，这个承诺还没兑现。"
+        }
+      ]
+    },
+    {
+      "id": "combo_cfo_hidden_guarantee",
+      "power_structure": "player_high",
+      "player_positions": [
+        "high"
+      ],
+      "identity_ids": [
+        "pi_unicorn_founder_ceo"
+      ],
+      "slots": [
+        "unicorn_cfo_gu_zhi_wei"
+      ],
+      "tension_engine_ids": [
+        "eng_old_rivals",
+        "eng_table_drape"
+      ],
+      "chemistry": "{unicorn_cfo_gu_zhi_wei.name}陪你从车库熬到路演，账上的每一个数字两人都背得出来；只有一笔账，从来没写进报表。",
+      "stakes": {
+        "resource_gap": "你是老板，握着财务官的期权；财务官握着那笔私人担保的全部底细。",
+        "limit_gap": "财务官当着董事不能替你说软话，你不能让董事看出两人之间不止上下级。",
+        "meeting_reason": "副主席追问关联交易，你和财务官凑在长桌一侧商量怎么答。",
+        "irreplaceable_goal": "财务官要等路演结束，听你亲口说那笔担保到底怎么还。"
+      },
+      "tags": [],
+      "relations": [
+        {
+          "a": "player",
+          "b": "unicorn_cfo_gu_zhi_wei",
+          "stage": "committed",
+          "a_to_b": {
+            "trust": 4,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 4,
+            "tension": 3
+          },
+          "reason": "创业第二年账上只剩三周现金，两人押上各自的房子做了担保，这件事董事会至今不知道。"
+        }
       ]
     },
     {
@@ -1516,12 +1676,12 @@
             "trust": 3,
             "tension": 4
           },
-          "reason": "赌约的赢家与输家，并排坐在副主席眼皮底下。"
+          "reason": "赌约的赢家与输家并排坐在副主席眼皮底下，遥控器就揣在你西装内袋里。"
         },
         {
           "a": "player",
           "b": "vice_chairman_huo_zhen_ting",
-          "stage": "acquainted",
+          "stage": "testing",
           "a_to_b": {
             "trust": 0,
             "tension": 3
@@ -1530,7 +1690,7 @@
             "trust": 1,
             "tension": 2
           },
-          "reason": "副主席把你当成合伙人的人，客气里带着打量。"
+          "reason": "去年竞购一家医药公司，副主席的报价被你截胡，酒会上举杯说过一句来日方长。"
         },
         {
           "a": "investment_partner_shen_qing_yi",
@@ -1545,283 +1705,6 @@
             "tension": 4
           },
           "reason": "三年前在酒会上当众拒绝过副主席，副主席一直记着。"
-        }
-      ],
-      "tags": []
-    },
-    {
-      "id": "combo_partner_interpreter_booth",
-      "power_structure": "equal",
-      "player_positions": [
-        "equal",
-        "low"
-      ],
-      "identity_ids": [],
-      "slots": [
-        "investment_partner_shen_qing_yi",
-        "simul_interpreter_jiang"
-      ],
-      "tension_engine_ids": [
-        "eng_hot_mic",
-        "eng_remote_in_pocket"
-      ],
-      "chemistry": "{simul_interpreter_jiang.name}的手搭在推子上，你的手搭在遥控器上，{investment_partner_shen_qing_yi.name}的呼吸夹在两只手中间。",
-      "stakes": {
-        "resource_gap": "同传管着关麦的推子，你管着档位，合伙人只能靠自己压住呼吸。",
-        "limit_gap": "同传不能擅自关麦太久，你不能让同传知道遥控器在哪。",
-        "meeting_reason": "合伙人借口核译法走进同传间，你跟了进来。",
-        "irreplaceable_goal": "合伙人要在同传面前保住最后一点体面。"
-      },
-      "relations": [
-        {
-          "a": "player",
-          "b": "investment_partner_shen_qing_yi",
-          "stage": "testing",
-          "a_to_b": {
-            "trust": 3,
-            "tension": 4
-          },
-          "b_to_a": {
-            "trust": 3,
-            "tension": 4
-          },
-          "reason": "合伙人进同传间之前看了你一眼，那一眼是警告，也是邀请。"
-        },
-        {
-          "a": "player",
-          "b": "simul_interpreter_jiang",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 2
-          },
-          "reason": "同传认得你，路演第一天对过术语表。"
-        },
-        {
-          "a": "investment_partner_shen_qing_yi",
-          "b": "simul_interpreter_jiang",
-          "stage": "familiar",
-          "a_to_b": {
-            "trust": 3,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 3,
-            "tension": 3
-          },
-          "reason": "合作过五场路演，同传听得出合伙人每一种呼吸。"
-        }
-      ],
-      "tags": []
-    },
-    {
-      "id": "combo_rival_partner_terrace",
-      "power_structure": "switchable",
-      "player_positions": [
-        "equal",
-        "high"
-      ],
-      "identity_ids": [],
-      "slots": [
-        "rival_partner_wen_ruo_lan",
-        "investment_partner_shen_qing_yi"
-      ],
-      "tension_engine_ids": [
-        "eng_old_rivals",
-        "eng_remote_in_pocket"
-      ],
-      "chemistry": "{rival_partner_wen_ruo_lan.name}端着奶茶凑过来，想看{investment_partner_shen_qing_yi.name}今天到底怎么了；你只要在口袋里动一下拇指，三个人的局面就会翻过来。",
-      "stakes": {
-        "resource_gap": "对手有十年攒下的眼力，你有遥控器，合伙人有暗号和面子。",
-        "limit_gap": "对手不能当着发行人下黑手，合伙人不能当着对手认输。",
-        "meeting_reason": "茶歇露台上，对手行的合伙人端着杯子走到你们中间。",
-        "irreplaceable_goal": "对手要弄明白，合伙人今天的破绽和你有没有关系。"
-      },
-      "relations": [
-        {
-          "a": "player",
-          "b": "rival_partner_wen_ruo_lan",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 3
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 3
-          },
-          "reason": "在几次路演上打过照面，彼此都知道对方是谁的人。"
-        },
-        {
-          "a": "player",
-          "b": "investment_partner_shen_qing_yi",
-          "stage": "flirting",
-          "a_to_b": {
-            "trust": 3,
-            "tension": 4
-          },
-          "b_to_a": {
-            "trust": 3,
-            "tension": 4
-          },
-          "reason": "赌约的两个人，站在露台上隔着半步。"
-        },
-        {
-          "a": "rival_partner_wen_ruo_lan",
-          "b": "investment_partner_shen_qing_yi",
-          "stage": "familiar",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 5
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 5
-          },
-          "reason": "斗了十年，最懂合伙人的人就是这个对手。"
-        }
-      ],
-      "tags": []
-    },
-    {
-      "id": "combo_assistant_covers_partner",
-      "power_structure": "npc_high",
-      "player_positions": [
-        "low",
-        "equal"
-      ],
-      "identity_ids": [],
-      "slots": [
-        "assistant_su_yu_qing",
-        "investment_partner_shen_qing_yi"
-      ],
-      "tension_engine_ids": [
-        "eng_remote_in_pocket",
-        "eng_old_rivals"
-      ],
-      "chemistry": "{assistant_su_yu_qing.name}早就看出了那场赌约，一边替{investment_partner_shen_qing_yi.name}挡人，一边盯着你放在口袋里的手。",
-      "stakes": {
-        "resource_gap": "助理管着门禁和座位表，你握着遥控器，合伙人握着你们两个的前程。",
-        "limit_gap": "助理不能说破，你不能让助理看见遥控器，合伙人不能让下属看出狼狈。",
-        "meeting_reason": "加班改稿时，助理抱着文件推门进了底稿室。",
-        "irreplaceable_goal": "助理要确认，握着遥控器的人不会害了合伙人。"
-      },
-      "relations": [
-        {
-          "a": "player",
-          "b": "assistant_su_yu_qing",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 2,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 3
-          },
-          "reason": "助理认得你，也知道你今天离合伙人太近。"
-        },
-        {
-          "a": "player",
-          "b": "investment_partner_shen_qing_yi",
-          "stage": "flirting",
-          "a_to_b": {
-            "trust": 3,
-            "tension": 4
-          },
-          "b_to_a": {
-            "trust": 3,
-            "tension": 4
-          },
-          "reason": "赌约的赢家和输家，被助理撞见坐在同一张沙发上。"
-        },
-        {
-          "a": "assistant_su_yu_qing",
-          "b": "investment_partner_shen_qing_yi",
-          "stage": "familiar",
-          "a_to_b": {
-            "trust": 5,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 4,
-            "tension": 1
-          },
-          "reason": "跟了合伙人三年，替合伙人签收过那只快递。"
-        }
-      ],
-      "tags": []
-    },
-    {
-      "id": "combo_cfo_founder_numbers",
-      "power_structure": "player_high",
-      "player_positions": [
-        "high"
-      ],
-      "identity_ids": [
-        "pi_unicorn_founder_ceo"
-      ],
-      "slots": [
-        "unicorn_cfo_gu_zhi_wei",
-        "investment_partner_shen_qing_yi"
-      ],
-      "tension_engine_ids": [
-        "eng_old_rivals",
-        "eng_table_drape"
-      ],
-      "chemistry": "{unicorn_cfo_gu_zhi_wei.name}知道那场赌约，因为当晚就在场；{investment_partner_shen_qing_yi.name}知道财务官知道，你知道两个人都在看你的手。",
-      "stakes": {
-        "resource_gap": "你是老板，财务官管着账，合伙人管着路演。",
-        "limit_gap": "财务官不能说破赌约，合伙人不能在财务官面前失态。",
-        "meeting_reason": "副主席追问关联交易，发行方三个人凑在长桌一侧商量怎么答。",
-        "irreplaceable_goal": "财务官要把那笔关联交易安全地讲过去。"
-      },
-      "relations": [
-        {
-          "a": "player",
-          "b": "unicorn_cfo_gu_zhi_wei",
-          "stage": "familiar",
-          "a_to_b": {
-            "trust": 4,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 4,
-            "tension": 2
-          },
-          "reason": "从创业第一年起，财务官就替你管账。"
-        },
-        {
-          "a": "player",
-          "b": "investment_partner_shen_qing_yi",
-          "stage": "flirting",
-          "a_to_b": {
-            "trust": 3,
-            "tension": 4
-          },
-          "b_to_a": {
-            "trust": 3,
-            "tension": 4
-          },
-          "reason": "赌约是在财务官家的晚宴上打的。"
-        },
-        {
-          "a": "unicorn_cfo_gu_zhi_wei",
-          "b": "investment_partner_shen_qing_yi",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 3,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 3,
-            "tension": 3
-          },
-          "reason": "晚宴那天起哄的就是财务官，现在有点后悔。"
         }
       ],
       "tags": []
@@ -2019,7 +1902,8 @@
       "leverage": null,
       "hook_ids": [
         "hook_partner_pen_on_contract",
-        "hook_vc_smiles_across_table"
+        "hook_vc_smiles_across_table",
+        "hook_cfo_slides_calculator"
       ],
       "start_minute": 600,
       "tags": []
@@ -2362,7 +2246,7 @@
       "location_ids": [
         "loc_tea_break_terrace"
       ],
-      "text": "{npc.name}把一块蛋挞放到合伙人手边，眼睛却看着你：你们俩今天，挺默契啊。"
+      "text": "{npc.name}把一块蛋挞放到你手边，自己端着咖啡靠上栏杆：这一单，又是你我隔桌。"
     },
     {
       "id": "hook_rival_at_glass",
@@ -2380,7 +2264,7 @@
       "location_ids": [
         "loc_roadshow_boardroom"
       ],
-      "text": "{npc.name}把计算器推到你面前，屏幕上是一个数字，旁边的便签写着：你的手，别乱动。"
+      "text": "{npc.name}把计算器推到你面前，屏幕上是一个数字，旁边的便签写着：担保那笔，今年到期。"
     },
     {
       "id": "hook_assistant_brings_files",
@@ -2389,7 +2273,7 @@
       "location_ids": [
         "loc_data_room"
       ],
-      "text": "{npc.name}抱着一摞文件推门进来，看了合伙人一眼，又看了你一眼，把门轻轻带上了。"
+      "text": "{npc.name}抱着一摞文件推门进来，把门轻轻带上，最上面那份是半年前的底稿版本记录。"
     }
   ],
   "twists": [
@@ -2471,5 +2355,5 @@
     "workplace_power",
     "workplace"
   ],
-  "notes": "2026-10-17 按用户提供的改造方案重写：保留世界 ID、女合伙人的人设与外貌、黑色蕾丝吊袜带，加一枚静音遥控跳蛋；去掉机械臂卡住吊袜带、翻页笔撬锁片的脱困套路，改成闭门路演会议桌下的遥控器博弈。赌约由合伙人自己提出，暗号“收盘”一说就停，所以遥控器不登记为把柄（把柄生效期间双方之间的亲密回合会被拒）；把柄只放在副主席对合伙人身上。新增四个只有合伙人一人在场的组合，覆盖四种权力结构。场景放在香港上市路演，不写并购，与陆家嘴天桥的女合伙人世界拉开。"
+  "notes": "2026-10-17 按用户提供的改造方案重写：保留世界 ID、女合伙人的人设与外貌、黑色蕾丝吊袜带，加一枚静音遥控跳蛋；去掉机械臂卡住吊袜带、翻页笔撬锁片的脱困套路，改成闭门路演会议桌下的遥控器博弈。赌约由合伙人自己提出，暗号“收盘”一说就停，所以遥控器不登记为把柄（把柄生效期间双方之间的亲密回合会被拒）；把柄只放在副主席对合伙人身上。新增四个只有合伙人一人在场的组合，覆盖四种权力结构。场景放在香港上市路演，不写并购，与陆家嘴天桥的女合伙人世界拉开。\n2026-10-18 按写作规则 v2 改造：组合改成 8 组单人加 1 组副主席同场；对手、同传、助理、财务官各有一段和你的旧账（隔桌暧昧、法兰克福一吻、没兑现的承诺、私人担保）。"
 }

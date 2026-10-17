@@ -122,7 +122,7 @@
       "tension": 5,
       "trust": 3
      },
-     "reason": "那晚在冷库门口撞见之后，店员红着脸求你别说出去，你答应了。",
+     "reason": "那晚在冷库门口撞见之后，店员红着脸求你别说出去，你答应了，从此每次查夜班都多留半小时。",
      "stage": "flirting"
     }
    ],
@@ -166,7 +166,7 @@
       "tension": 4,
       "trust": 4
      },
-     "reason": "撞破那晚，两个人在休息间门口对视了很久，最后一起笑出了声。",
+     "reason": "撞破那晚两人在休息间门口对视了很久，最后一起笑出声，从此谁也不肯先承认在意对方。",
      "stage": "testing"
     }
    ],
@@ -209,8 +209,8 @@
       "tension": 4,
       "trust": 4
      },
-     "reason": "那晚你弯腰捡硬币撞见了，第二天照常来买关东煮，什么也没说。",
-     "stage": "familiar"
+     "reason": "那晚你弯腰捡硬币撞见了，店员追出门塞给你一张写着号码的小票，那个周末两人第一次越了界。",
+     "stage": "intimate"
     }
    ],
    "slots": [
@@ -252,8 +252,8 @@
       "tension": 4,
       "trust": 3
      },
-     "reason": "店员说过：秘密是要交换的，你也得给我一个。",
-     "stage": "flirting"
+     "reason": "店员说秘密是要交换的；上个月在后仓，你把自己的秘密换给了店员，两人一直待到天亮交班。",
+     "stage": "intimate"
     }
    ],
    "slots": [
@@ -271,6 +271,166 @@
    "tension_engine_ids": [
     "eng_only_witness",
     "eng_spot_check_night"
+   ]
+  },
+  {
+   "chemistry": "{night_supervisor_jiang_lin_chuan.name}翻着交接本，问你为什么这几晚总挑同一个时段来店里；问得一本正经，耳根却先红了。",
+   "id": "combo_lead_same_hour",
+   "identity_ids": [],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "night_supervisor_jiang_lin_chuan",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 2
+     },
+     "reason": "这半个月你每晚都挑领班当班的时段来店里，领班把你常买的那款饮料一直留在冷柜最前排。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "night_supervisor_jiang_lin_chuan"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "领班想弄清楚，自己当班的那几个钟头，你是不是每晚都会来。",
+    "limit_gap": "领班要按规矩问话，你不能让领班知道你每晚来是为了谁。",
+    "meeting_reason": "领班巡店时在收银台翻交接本，你正好来结账。",
+    "resource_gap": "领班握着排班和监控回放，你握着领班替人顶班时打瞌睡的那几段录像。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_spot_check_night",
+    "eng_sweet_and_bold"
+   ]
+  },
+  {
+   "chemistry": "{cashier_wen_ruo_xi.name}在这家店站了八年柜台，见过形形色色的夜归人，只对你会多舀一勺汤。",
+   "id": "combo_cashier_extra_ladle",
+   "identity_ids": [],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "cashier_wen_ruo_xi",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 2
+     },
+     "reason": "资深店员每晚多给你舀一勺关东煮的汤，上个月下大雨时把自己的伞塞给你，自己淋着回了家。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "cashier_wen_ruo_xi"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "资深店员要确认，你对自己是真心的，不是看中了这份人缘。",
+    "limit_gap": "资深店员不能被人看出偏心，你不能让店里传出两人的闲话。",
+    "meeting_reason": "资深店员来顶夜班，你们挤在收银台后面对账。",
+    "resource_gap": "资深店员有八年的人缘和店长的信任，你手里有资深店员一直想要的那份转正推荐。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_sweet_and_bold",
+    "eng_glass_box_store"
+   ]
+  },
+  {
+   "chemistry": "{supervisor_xue_tian_cheng.name}每次突击查岗都点你的名，扣分从不手软，查完却总在门口多站一会儿。",
+   "id": "combo_inspector_old_complaint",
+   "identity_ids": [],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 5,
+      "trust": 0
+     },
+     "b": "supervisor_xue_tian_cheng",
+     "b_to_a": {
+      "tension": 5,
+      "trust": 1
+     },
+     "reason": "去年督导一口气扣了你半个月的考核分，你在片区群里当众顶了回去，两人从此见面就较劲。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "supervisor_xue_tian_cheng"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "督导要在这家店找出一个问题，也想找一个留下来的理由。",
+    "limit_gap": "督导要按规矩查，不能被人看出偏袒；你不能让督导知道你记得那张投诉单。",
+    "meeting_reason": "督导突击查岗，点名要你陪着清点临期货。",
+    "resource_gap": "督导握着考核分和整个片区的人事，你握着督导去年替你压下的那张投诉单。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_spot_check_night",
+    "eng_glass_box_store"
+   ]
+  },
+  {
+   "chemistry": "{mechanic_du_tie_jun.name}给这家店跑了好几年冷链，跟你之间有一笔谁都不提的账；冷库门一关，压缩机的嗡嗡声把什么都盖住了。",
+   "id": "combo_mechanic_shrink_slip",
+   "identity_ids": [
+    "pi_night_shift_supervisor"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "mechanic_du_tie_jun",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "去年冷库断电那晚，技师替你在损耗单上多报了几箱货，你替技师瞒下了无证上门的事。",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
+    "mechanic_du_tie_jun"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "技师想知道，这份同谋在你心里算交情还是算交易。",
+    "limit_gap": "技师不能多嘴，你不能让总部知道那张单子是怎么来的。",
+    "meeting_reason": "冷库例行巡检，你陪技师进了冷库。",
+    "resource_gap": "你是店长，握着冷链外包的合同；技师握着去年那张多报的损耗单。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_glass_box_store",
+    "eng_only_witness"
    ]
   },
   {
@@ -294,7 +454,7 @@
       "tension": 4,
       "trust": 3
      },
-     "reason": "撞破秘密的人和被撞破的人，站在同一边。",
+     "reason": "撞破秘密的人和被撞破的人站在同一边，店员只敢向你一个人求救。",
      "stage": "flirting"
     },
     {
@@ -308,8 +468,8 @@
       "tension": 2,
       "trust": 1
      },
-     "reason": "主播常在门口直播，你见过几次。",
-     "stage": "acquainted"
+     "reason": "去年主播拍了你骑车闯红灯的视频挂上热搜，你在评论区跟主播对骂了三天，从此见面就互呛。",
+     "stage": "testing"
     },
     {
      "a": "convenience_clerk_an_xiao_nian",
@@ -340,282 +500,6 @@
    "tension_engine_ids": [
     "eng_glass_box_store",
     "eng_only_witness"
-   ]
-  },
-  {
-   "chemistry": "{supervisor_xue_tian_cheng.name}要{convenience_clerk_an_xiao_nian.name}蹲下来一盒盒查临期，你是店里唯一知道店员为什么不敢蹲的人。",
-   "id": "combo_clerk_inspector_check",
-   "identity_ids": [],
-   "player_positions": [
-    "low",
-    "equal"
-   ],
-   "power_structure": "npc_high",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "supervisor_xue_tian_cheng",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "督导只当你是店里的一个人。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 3
-     },
-     "b": "convenience_clerk_an_xiao_nian",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 3
-     },
-     "reason": "督导一来，你们俩的默契就要经受考验。",
-     "stage": "flirting"
-    },
-    {
-     "a": "supervisor_xue_tian_cheng",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 2
-     },
-     "b": "convenience_clerk_an_xiao_nian",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 1
-     },
-     "reason": "督导查过几次这家店，对店员印象不错，但从不放水。",
-     "stage": "acquainted"
-    }
-   ],
-   "slots": [
-    "supervisor_xue_tian_cheng",
-    "convenience_clerk_an_xiao_nian"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "督导要在这家店找出一个问题。",
-    "limit_gap": "督导要按规矩查，店员不能露馅，你不能让督导看出你在替店员挡。",
-    "meeting_reason": "督导突击查岗，你正好在店里。",
-    "resource_gap": "督导握着考核和监控，你握着秘密，店员握着暗号。"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "eng_spot_check_night",
-    "eng_glass_box_store"
-   ]
-  },
-  {
-   "chemistry": "{cashier_wen_ruo_xi.name}看得出{convenience_clerk_an_xiao_nian.name}和你之间多了点什么，搅着关东煮的汤，一边替店员挡人，一边打量你。",
-   "id": "combo_clerk_coworker_cover",
-   "identity_ids": [],
-   "player_positions": [
-    "equal",
-    "high"
-   ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 2
-     },
-     "b": "cashier_wen_ruo_xi",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 1
-     },
-     "reason": "资深店员认得你，也看出了你和店员之间的不一样。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 3
-     },
-     "b": "convenience_clerk_an_xiao_nian",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 3
-     },
-     "reason": "秘密的两头，被大姐看在眼里。",
-     "stage": "flirting"
-    },
-    {
-     "a": "cashier_wen_ruo_xi",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 5
-     },
-     "b": "convenience_clerk_an_xiao_nian",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 4
-     },
-     "reason": "是资深店员带店员入的门，店员有什么心事都瞒不过。",
-     "stage": "familiar"
-    }
-   ],
-   "slots": [
-    "cashier_wen_ruo_xi",
-    "convenience_clerk_an_xiao_nian"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "资深店员要确认，你对店员是真心的。",
-    "limit_gap": "资深店员不能多问，店员不能在大姐面前露馅。",
-    "meeting_reason": "资深店员来顶班，三个人挤在收银台后面。",
-    "resource_gap": "资深店员有八年的人缘和店长的信任，你有秘密，店员有暗号。"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "eng_sweet_and_bold",
-    "eng_only_witness"
-   ]
-  },
-  {
-   "chemistry": "{mechanic_du_tie_jun.name}蹲在压缩机前修冷库，{convenience_clerk_an_xiao_nian.name}一箱箱往外搬牛奶，你站在冷库门口，三个人里有两个知道那条猫尾。",
-   "id": "combo_clerk_mechanic_cooler",
-   "identity_ids": [
-    "pi_night_shift_supervisor"
-   ],
-   "player_positions": [
-    "high"
-   ],
-   "power_structure": "player_high",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 3
-     },
-     "b": "mechanic_du_tie_jun",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 3
-     },
-     "reason": "技师修了这家店好几年的冷库，跟你很熟。",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 3
-     },
-     "b": "convenience_clerk_an_xiao_nian",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 3
-     },
-     "reason": "店员求你瞒着的事，技师好像也知道。",
-     "stage": "flirting"
-    },
-    {
-     "a": "mechanic_du_tie_jun",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "convenience_clerk_an_xiao_nian",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "技师见过那条白尾巴，一直没说。",
-     "stage": "acquainted"
-    }
-   ],
-   "slots": [
-    "mechanic_du_tie_jun",
-    "convenience_clerk_an_xiao_nian"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "技师要在天亮前把冷库修好。",
-    "limit_gap": "技师不能多嘴，店员不能在冷库里弯腰太久，你不能让技师看出你也知情。",
-    "meeting_reason": "冷库压缩机坏了，店长叫来了技师。",
-    "resource_gap": "你是店长，技师管着冷库，店员只能靠自己小心。"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "eng_glass_box_store",
-    "eng_only_witness"
-   ]
-  },
-  {
-   "chemistry": "{night_supervisor_jiang_lin_chuan.name}翻着交接本问{convenience_clerk_an_xiao_nian.name}为什么总去冷库，店员的眼睛一直往你这边飘。",
-   "id": "combo_clerk_lead_logbook",
-   "identity_ids": [],
-   "player_positions": [
-    "equal"
-   ],
-   "power_structure": "equal",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 2
-     },
-     "b": "night_supervisor_jiang_lin_chuan",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 2
-     },
-     "reason": "领班认得你，说话客气。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 3
-     },
-     "b": "convenience_clerk_an_xiao_nian",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 3
-     },
-     "reason": "交接本上那些“去冷库”，有一半是去找你。",
-     "stage": "flirting"
-    },
-    {
-     "a": "night_supervisor_jiang_lin_chuan",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "convenience_clerk_an_xiao_nian",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "领班带过店员的夜班，对店员不算坏。",
-     "stage": "familiar"
-    }
-   ],
-   "slots": [
-    "night_supervisor_jiang_lin_chuan",
-    "convenience_clerk_an_xiao_nian"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "领班要弄清楚交接本上那些“去冷库补货”是怎么回事。",
-    "limit_gap": "领班要按规矩问，店员不能撒太多谎，你不能让领班知道你在替店员圆。",
-    "meeting_reason": "领班巡店，在收银台翻交接本，你正好在旁边。",
-    "resource_gap": "领班握着排班和考核分，你握着秘密，店员握着暗号。"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "eng_spot_check_night",
-    "eng_sweet_and_bold"
    ]
   }
  ],
@@ -1694,7 +1578,7 @@
     "loc_convenience_cooler_aisle_center"
    ],
    "slot": "supervisor_xue_tian_cheng",
-   "text": "{npc.name}敲了敲冷柜最下层的玻璃，抬头看了店员一眼，又看了你一眼。"
+   "text": "{npc.name}敲了敲冷柜最下层的玻璃，抬头看了你一眼：这一排，你陪我一盒一盒数。"
   },
   {
    "id": "hook_vlogger_light_across",
@@ -1712,7 +1596,7 @@
     "loc_walk_in_cooler"
    ],
    "slot": "mechanic_du_tie_jun",
-   "text": "{npc.name}把一副厚手套扔给你，头也不抬：戴上。……那丫头冻得不行，你多搬几箱。"
+   "text": "{npc.name}把一副厚手套扔给你，头也不抬：戴上。去年那张单子的事，咱们进去说。"
   },
   {
    "id": "hook_coworker_extra_soup",
@@ -1721,7 +1605,7 @@
     "loc_cashier_counter_front_desk"
    ],
    "slot": "cashier_wen_ruo_xi",
-   "text": "{npc.name}给你多舀了一勺关东煮汤，压低声音说：那丫头这几天，是不是因为你？"
+   "text": "{npc.name}给你多舀了一勺关东煮汤，压低声音说：外面又下雨了，伞还是带我那把吧。"
   },
   {
    "id": "hook_lead_logbook_question",
@@ -1730,7 +1614,7 @@
     "loc_cashier_counter_front_desk"
    ],
    "slot": "night_supervisor_jiang_lin_chuan",
-   "text": "{npc.name}翻着交接本，抬头问你：这几天去冷库补货的，是不是都有你？"
+   "text": "{npc.name}翻着交接本，抬头问你：这几晚，你怎么都挑这个点来？"
   }
  ],
  "id": "convenience_clerk_cooler_tail_jam",
@@ -1776,9 +1660,9 @@
    "pressure_modifiers": {
     "press_compressor_failure": "压缩机停了，货要一箱箱往外搬，越搬越久"
    },
-   "privacy": "semi",
+   "privacy": "private",
    "tags": [],
-   "visibility": "门一关，外面只听得见压缩机的嗡嗡声；可门上的小窗，从冷柜那一侧能看见里面的人影。",
+   "visibility": "厚门一合，外面只听得见压缩机的嗡嗡声；门上的小窗结满了霜，从外面什么也看不清。",
    "witnesses": []
   },
   {
@@ -1936,7 +1820,7 @@
   ],
   "order": "family_first"
  },
- "notes": "2026-10-17 按用户提供的改造方案重写：保留世界 ID、纯欲夜班店员的人设与外貌、毛绒猫尾肛塞；去掉冷柜合页咬住猫尾、拆箱刮刀别卡爪和督导推门五步的脱困套路，改成“意外撞破与同谋掩护”。秘密是玩家意外撞破的，店员主动求玩家替自己瞒着，暗号“下班”一说就当没看见，所以秘密不登记为玩家手里的把柄；把柄只放在主播对店员身上。标题去掉具体时刻，背景和开局标签保留大学城商圈与期中考试周（用户 2026-10-17 确认校园字眼可以用）。新增四个只有店员一人在场的组合，覆盖四种权力结构；原来的冷柜合页死角换成步入式冷库。",
+ "notes": "2026-10-17 按用户提供的改造方案重写：保留世界 ID、纯欲夜班店员的人设与外貌、毛绒猫尾肛塞；去掉冷柜合页咬住猫尾、拆箱刮刀别卡爪和督导推门五步的脱困套路，改成“意外撞破与同谋掩护”。秘密是玩家意外撞破的，店员主动求玩家替自己瞒着，暗号“下班”一说就当没看见，所以秘密不登记为玩家手里的把柄；把柄只放在主播对店员身上。标题去掉具体时刻，背景和开局标签保留大学城商圈与期中考试周（用户 2026-10-17 确认校园字眼可以用）。新增四个只有店员一人在场的组合，覆盖四种权力结构；原来的冷柜合页死角换成步入式冷库。\n2026-10-18 按写作规则 v2 改造：组合改成 8 组单人加 1 组主播同场；领班、资深店员、督导、冷链技师各有一段和你的旧账（同一时段的常客、多舀的一勺汤、被压下的投诉单、多报的损耗单）；冷库改成可躲藏的私密空间。",
  "player_identities": [
   {
    "age_range": [
@@ -2316,7 +2200,8 @@
    ],
    "hook_ids": [
     "hook_clerk_logbook_cat",
-    "hook_clerk_counter_hand"
+    "hook_clerk_counter_hand",
+    "hook_lead_logbook_question"
    ],
    "id": "press_cash_short",
    "immediate": {

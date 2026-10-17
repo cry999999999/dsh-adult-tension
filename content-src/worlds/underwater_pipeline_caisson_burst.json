@@ -14,7 +14,7 @@
   ],
   "style_hint": "冷硬逼仄的深海重工硬核工笔，刻画海水喷涌撕裂隔舱的万钧水压轰鸣、钨钢棘轮扳手卡死涡轮齿纹时的刺耳金铁咬合、速干背心下被冰水浸透的躯体与滚烫喘息，台词充斥着严苛的水下沉管水压参数与生死决断。",
   "clock_start": {
-    "label": "深海基槽微滑移水击爆发，高压海水撕裂接缝倒灌",
+    "label": "沉管对接第十八节，五月",
     "minute": 1390
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}总工",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}潜水长",
-        "gender": "any"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

@@ -14,7 +14,7 @@
   ],
   "style_hint": "蜂蜡烛火在格栅上投下的细碎光影、圣袍金线摩擦的轻响、咒痕灼痛时压住的一口气、门外重铠铁靴踏过石板的回声；写信仰与真相的拉扯，写高高在上的人第一次求人。",
   "clock_start": {
-    "label": "终钟前一刻，距偏殿落栅还有两个时辰",
+    "label": "圣辉历三一二年，雨季",
     "minute": 1380
   },
   "clock_style": "hm",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "圣女{family}",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}阁下",
+        "pattern": "{given}",
         "gender": "any"
       },
       {
-        "pattern": "审判官{family}",
-        "gender": "any"
-      },
-      {
-        "pattern": "{given_last}修士",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}骑士长",
+        "pattern": "{family}",
         "gender": "any"
       }
     ],
@@ -469,7 +457,7 @@
           "绝不接受以封印或沉默为交换的亲近",
           "骑士在门外时不让人察觉任何异样"
         ],
-        "expression": "把圣冠摘下来放在对方膝上：“今夜，我只是尤菲。”",
+        "expression": "把圣冠摘下来放在对方膝上：“今夜，我只是{npc.given}。”",
         "desire_range": [
           2,
           4
@@ -746,7 +734,7 @@
       },
       "voices": {
         "surface": "“圣水送来了，顺便看看圣女阁下有没有被你这个异端吓到。”",
-        "inner": "“半年了，总算有人知道了……这次别让尤菲一个人扛。”"
+        "inner": "“半年了，总算有人知道了……这次别让圣女一个人扛。”"
       },
       "schedule": [
         {

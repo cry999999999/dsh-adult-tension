@@ -1137,7 +1137,7 @@
   }
  ],
  "clock_start": {
-  "label": "冰河夜巡",
+  "label": "一月，界河封冻期",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1600,8 +1600,8 @@
     "pattern": "老{family}"
    },
    {
-    "gender": "female",
-    "pattern": "{family}警官"
+    "gender": "any",
+    "pattern": "小{family}"
    }
   ],
   "order": "family_first"

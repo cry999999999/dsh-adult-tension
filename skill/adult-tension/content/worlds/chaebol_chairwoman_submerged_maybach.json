@@ -1101,7 +1101,7 @@
   }
  ],
  "clock_start": {
-  "label": "暗渠积水没顶，座舱残存空气倒计时",
+  "label": "七月，雨季",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1679,16 +1679,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "顾董"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}总"
-   },
-   {
     "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

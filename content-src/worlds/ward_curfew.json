@@ -14,7 +14,7 @@
  ],
  "style_hint": "写声音和光：街鼓、木栓落下的闷响、灯笼、琴声、算盘、火把；人说话含蓄，一句话里藏着另一句。",
  "clock_start": {
-  "label": "开元年间的一个暮春傍晚，街鼓敲到第五百九十声",
+  "label": "开元年间，暮春",
   "minute": 1110
  },
  "clock_style": "hm",
@@ -85,18 +85,14 @@
    "青"
   ],
   "nickname_patterns": [
-   {
-    "pattern": "阿{given}",
-    "gender": "any"
-   },
-   {
-    "pattern": "{family}娘子",
-    "gender": "female"
-   },
-   {
-    "pattern": "{family}郎",
-    "gender": "male"
-   }
+    {
+      "pattern": "阿{given}",
+      "gender": "any"
+    },
+    {
+      "pattern": "{family}郎",
+      "gender": "male"
+    }
   ]
  },
  "rules": [

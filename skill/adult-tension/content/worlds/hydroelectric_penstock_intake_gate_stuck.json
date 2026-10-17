@@ -1122,7 +1122,7 @@
   }
  ],
  "clock_start": {
-  "label": "拦污栅受万吨巨木压塌，快速启闭门液压卡死半空",
+  "label": "七月，主汛期",
   "minute": 1395
  },
  "clock_style": "hm",
@@ -1696,15 +1696,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}总工"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}班长"
-   },
-   {
-    "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

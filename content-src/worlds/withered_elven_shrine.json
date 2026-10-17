@@ -14,7 +14,7 @@
   ],
   "style_hint": "冷冽刺骨的枯枝苦味、白石地面上渗出的荧光苔藓、丝绸祭袍下发烫的皮肤、耳廓充血时的微弱喘息、银质长弓倒扣在石阶上的轻响。",
   "clock_start": {
-    "label": "月食前夕，枯萎高热发作前两小时",
+    "label": "迷雾纪元末叶，月食之月",
     "minute": 1260
   },
   "clock_style": "hm",
@@ -58,7 +58,7 @@
       "梅尔",
       "诺雅",
       "塞拉",
-      "琉璃",
+      "伊兰",
       "芙兰",
       "莉雅"
     ],
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}队长",
+        "pattern": "{given}",
         "gender": "any"
       },
       {
-        "pattern": "{family}祭司",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}大人",
-        "gender": "any"
-      },
-      {
-        "pattern": "白羽{family}",
-        "gender": "any"
-      },
-      {
-        "pattern": "学者{family}",
+        "pattern": "{family}",
         "gender": "any"
       }
     ],

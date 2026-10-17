@@ -14,7 +14,7 @@
   ],
   "style_hint": "帝国古典宫廷与高寒雪灾结合的严谨工笔，刻画暴雪封门下的绝对低温窒息危机、沉重铅包木暗门导轨受力变形咬死细节，典雅长皇女古典骑马服在近身施力发力时的紧绷身段与端庄面庞的冷汗娇喘，动作硬核写实充满古典骑士精神。",
   "clock_start": {
-    "label": "雪崩积雪封顶断电，暗门导轨受压咬死",
+    "label": "1867 年，隆冬",
     "minute": 1050
   },
   "clock_style": "hm",
@@ -77,7 +77,7 @@
       "利奥波德",
       "费迪南",
       "爱德华",
-      "卡尔",
+      "马克西",
       "恩斯特",
       "阿道夫",
       "尤利乌斯"
@@ -100,16 +100,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "殿下",
-        "gender": "female"
+        "pattern": "{given}",
+        "gender": "any"
       },
       {
-        "pattern": "{given}卿",
-        "gender": "male"
-      },
-      {
-        "pattern": "{given}长官",
-        "gender": "male"
+        "pattern": "{family}",
+        "gender": "any"
       }
     ]
   },

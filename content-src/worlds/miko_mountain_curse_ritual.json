@@ -15,7 +15,7 @@
   ],
   "style_hint": "以狂暴泥石流与悬空古建倾覆反差衬托白衣巫女出尘冷静，将古刹仪轨神圣美感与微观青铜杠杆破拆张力融于二十秒倒数。",
   "clock_start": {
-    "label": "泥石流冲断主梁青铜神龛滑移咬卡瞬间",
+    "label": "八月末，夏秋之交",
     "minute": 1320
   },
   "clock_style": "hm",
@@ -94,11 +94,11 @@
       "朝阳",
       "白夜",
       "深雪",
-      "秋水",
+      "澄",
       "风早",
-      "千早",
+      "千寻",
       "八云",
-      "神乐",
+      "遥",
       "弥生",
       "睦月",
       "如月",
@@ -108,28 +108,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}大巫女",
-        "gender": "female"
+        "pattern": "{family}",
+        "gender": "any"
       },
       {
-        "pattern": "{given}大人",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}权宫司",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}工长",
-        "gender": "male"
-      },
-      {
-        "pattern": "{given}记者",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}队长",
-        "gender": "male"
+        "pattern": "{given}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

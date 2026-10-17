@@ -1458,7 +1458,7 @@
   }
  ],
  "clock_start": {
-  "label": "暴风雨子夜零点整，将棋会馆遭遇雷击全面断网断电，终局第一日封手保管程序启动，距离",
+  "label": "名人战第七局第一天，七月",
   "minute": 0
  },
  "clock_style": "hm",
@@ -1954,7 +1954,7 @@
    "一条"
   ],
   "given_female": [
-   "棋圣",
+   "千夏",
    "诗织",
    "千鹤",
    "美月",
@@ -1998,23 +1998,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}棋圣"
+    "pattern": "{family}"
    },
    {
     "gender": "any",
-    "pattern": "{family}九段"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}立会"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}名手"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}理事"
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"
@@ -2055,7 +2043,7 @@
     20,
     22
    ],
-   "baseline": "年满二十周岁自野战流派杀入头衔循环赛的年轻七段高手，曾是女棋圣昔年道场同门师弟。",
+   "baseline": "年满二十周岁自野战流派杀入头衔循环赛的年轻七段高手，曾是女棋圣昔年道场同门后辈。",
    "gender": "any",
    "id": "renegade_prodigy_challenger_player",
    "reputation": "棋风凌厉天马行空，敢于在任何绝境下发起绝杀突击。",

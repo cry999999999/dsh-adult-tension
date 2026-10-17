@@ -1161,7 +1161,7 @@
   }
  ],
  "clock_start": {
-  "label": "暴雨冲刷山墙微沉降，悬空挂落自重持续加剧卡死",
+  "label": "六月，入梅",
   "minute": 1395
  },
  "clock_style": "hm",
@@ -1743,10 +1743,6 @@
    {
     "gender": "female",
     "pattern": "{family}先生"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}师傅"
    },
    {
     "gender": "any",

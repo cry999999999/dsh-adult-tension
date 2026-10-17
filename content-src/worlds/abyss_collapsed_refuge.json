@@ -14,7 +14,7 @@
   ],
   "style_hint": "忽明忽暗闪烁微光的古代魔石壁灯、凝固发黑的魔物脓血与汗水混合的刺鼻恶臭、靠在石壁上精疲力竭的沉重铠甲摩擦声、石门缝隙外隐约传来的鳞甲刮擦巨响，以及分食最后半块干面包时彼此刀刃半出鞘的冰冷戒备。",
   "clock_start": {
-    "label": "亥时一刻，安全区魔力结界仅剩三个时辰",
+    "label": "迷宫都市的远征季，霜月上旬",
     "minute": 1335
   },
   "clock_style": "hm",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "团长{family}",
+        "pattern": "{family}",
         "gender": "any"
       },
       {
-        "pattern": "大师{family}",
-        "gender": "any"
-      },
-      {
-        "pattern": "斥候{family}",
-        "gender": "any"
-      },
-      {
-        "pattern": "灰眼{family}",
-        "gender": "any"
-      },
-      {
-        "pattern": "断剑{family}",
+        "pattern": "{given}",
         "gender": "any"
       }
     ],

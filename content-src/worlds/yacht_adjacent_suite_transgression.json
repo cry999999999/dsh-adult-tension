@@ -14,7 +14,7 @@
   ],
   "style_hint": "豪门禁忌关系的隐秘与窒息：暴雨拍打落地窗的轰鸣、高级香氛混着海风的咸腥、真丝睡袍擦过肌肤的窸窣、磨砂移门锁扣转动的轻响、隔壁的鼾声与门外皮鞋踩过地毯的闷响。语言是上流社会的优雅辞令与法律条款的交锋，成年男女清醒自愿、平起平坐。",
   "clock_start": {
-    "label": "夜里十一点四十，公海十级风暴，卫星失联",
+    "label": "十月，热带风暴季",
     "minute": 1420
   },
   "clock_style": "hm",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "少夫人",
-        "gender": "female"
-      },
-      {
-        "pattern": "首席顾问",
+        "pattern": "小{family}",
         "gender": "any"
       },
       {
-        "pattern": "大少爷",
-        "gender": "male"
-      },
-      {
-        "pattern": "总管家",
-        "gender": "any"
-      },
-      {
-        "pattern": "保镖队长",
+        "pattern": "老{family}",
         "gender": "any"
       }
     ],
@@ -199,7 +187,7 @@
     },
     {
       "id": "pc_drunk_scion_husband",
-      "role": "昏睡隔壁的纨绔大少爷",
+      "role": "昏睡隔壁的纨绔继承人",
       "gender": "any",
       "title_patterns": [
         {
@@ -221,7 +209,7 @@
         "家族信托每年三成收益分红支配权与董事会公章",
         "底层私人金库与直升机起飞指令密码"
       ],
-      "reputation": "声名狼藉的草包阔少，挥金如土，视妻子为撑门面的花瓶。",
+      "reputation": "声名狼藉的草包阔少，挥金如土，视配偶为撑门面的花瓶。",
       "risks": [
         "酒醒撞破私会会引发癫狂的暴力与家族内战"
       ]

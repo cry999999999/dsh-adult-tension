@@ -1126,7 +1126,7 @@
   }
  ],
  "clock_start": {
-  "label": "溶洞探查",
+  "label": "圣历一二〇七年，雨季",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1574,8 +1574,8 @@
     "pattern": "老{family}"
    },
    {
-    "gender": "female",
-    "pattern": "{family}圣女"
+    "gender": "any",
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

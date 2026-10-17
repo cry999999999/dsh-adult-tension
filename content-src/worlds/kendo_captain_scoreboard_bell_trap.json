@@ -14,7 +14,7 @@
   ],
   "style_hint": "百年武道馆的木香与太鼓声里的屏息。写元气女主将婴儿肥两颊的红晕、滑落的道服下雪白香肩与真空胴甲里轻颤的乳铃、憋着不敢喘的气，动作落在竹剑销钉挑锁止簧片上。",
   "clock_start": {
-    "label": "决赛鸣哨前二十秒，大太鼓吊索咬住道服前襟",
+    "label": "锦标赛决赛日，八月",
     "minute": 1140
   },
   "clock_style": "hm",
@@ -108,28 +108,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}主将",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}裁判长",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}工",
-        "gender": "female"
-      },
-      {
         "pattern": "小{given}",
         "gender": "female"
       },
       {
-        "pattern": "{family}解说",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}总监",
-        "gender": "male"
+        "pattern": "小{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

@@ -14,7 +14,7 @@
   ],
   "style_hint": "十里洋场的繁华与地下的冷：外滩的钟声、饭店舞池、留声机里的爵士乐、旗袍与雪狐披风。写傲娇千金湿透旗袍下的喘息，动作落在弹匣底板别锁舌上。",
   "clock_start": {
-    "label": "外滩金库紧急落闸断电，天花板高压水管爆裂漫水",
+    "label": "民国二十五年，初夏",
     "minute": 960
   },
   "clock_style": "hm",
@@ -92,16 +92,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}大小姐",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}工程师",
+        "pattern": "小{family}",
         "gender": "any"
       },
       {
-        "pattern": "{family}总工",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ]
   },

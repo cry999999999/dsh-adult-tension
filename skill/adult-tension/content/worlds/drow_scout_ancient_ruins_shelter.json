@@ -1411,7 +1411,7 @@
   }
  ],
  "clock_start": {
-  "label": "大塌方子夜零点整，地脉魔力回路过载逆流爆发，距离前线突击队凿穿塌方石壁仅剩六小时",
+  "label": "裂隙开启后的第三个月",
   "minute": 0
  },
  "clock_style": "hm",
@@ -1900,7 +1900,7 @@
    "深渊"
   ],
   "given_female": [
-   "斥候",
+   "伊莎拉",
    "赛丽亚",
    "艾尔菲雅",
    "蕾娜",
@@ -1914,7 +1914,7 @@
    "蒂娜"
   ],
   "given_male": [
-   "罗兰",
+   "维兰",
    "卡尔",
    "加里克",
    "凯尔",
@@ -1944,23 +1944,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}斥候"
+    "pattern": "{family}"
    },
    {
     "gender": "any",
-    "pattern": "{family}法师"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}队长"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}游侠"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}工匠"
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

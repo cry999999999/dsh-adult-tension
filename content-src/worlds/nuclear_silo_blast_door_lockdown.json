@@ -14,7 +14,7 @@
   ],
   "style_hint": "冷酷森严的冷战硬核工笔，刻画重达百吨的碳化钨防爆门下沉轰鸣、特种铬钒钢把手卡紧时的极限扭矩形变、防化背心下剧烈起伏的身躯与滚烫汗珠，台词充斥着严苛的核战略术语与绝对威严。",
   "clock_start": {
-    "label": "电磁脉冲伪警报触发，百吨碳化钨防爆门切入重力闭死下沉",
+    "label": "1989 年，深秋",
     "minute": 1380
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}指挥官",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}士官长",
-        "gender": "any"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

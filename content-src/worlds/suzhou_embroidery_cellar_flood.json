@@ -14,7 +14,7 @@
   ],
   "style_hint": "江南水乡的古典工笔：梅雨、乌篷船、绣绷上的丝线、宗祠的雕花木窗。写温婉绣娘水润的面容、湿透真丝长衫下的曲线与喘息，动作落在剪刀双刃反插榫卯的巧劲上。",
   "clock_start": {
-    "label": "太湖倒灌洪峰冲毁外侧栈道，挑空大绣轩倾斜受困",
+    "label": "七月，太湖汛期",
     "minute": 900
   },
   "clock_style": "hm",
@@ -92,16 +92,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}掌门",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}工匠",
+        "pattern": "小{family}",
         "gender": "any"
       },
       {
-        "pattern": "{family}大工",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ]
   },

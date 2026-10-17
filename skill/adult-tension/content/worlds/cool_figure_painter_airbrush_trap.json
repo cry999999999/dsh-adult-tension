@@ -1320,7 +1320,7 @@
   }
  ],
  "clock_start": {
-  "label": "排风风机跳闸失压，气动滑门自锁抱死门轨",
+  "label": "展前一周，三月",
   "minute": 1260
  },
  "clock_style": "hm",
@@ -1888,7 +1888,7 @@
    "怀瑾",
    "天音",
    "嘉木",
-   "秋水",
+   "书禾",
    "霁林",
    "明远",
    "少煊",
@@ -1900,20 +1900,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}老师"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}工"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}调色师"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}督察"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

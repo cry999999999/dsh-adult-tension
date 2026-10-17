@@ -14,7 +14,7 @@
   ],
   "style_hint": "现代科技硬核工笔，刻画服务器冷通道狭窄死角内高压灭火气体弥漫的致命窒息、实心不锈钢裁纸尺在机械释放阀暗槽中的剧烈杠杆咬合、制服衬衫下被冷汗与体温浸透的起伏身躯，台词充满严苛的网络力学与机械死锁逻辑决断。",
   "clock_start": {
-    "label": "气体灭火喷射倒计时九十秒，防爆滑门断电闭锁",
+    "label": "一月，期末考试周",
     "minute": 1395
   },
   "clock_style": "hm",
@@ -100,15 +100,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}理事长",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}工",
-        "gender": "male"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

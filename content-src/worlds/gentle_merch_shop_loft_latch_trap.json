@@ -14,7 +14,7 @@
   ],
   "style_hint": "二次元的热闹与阁楼的闷：门外通宵排队的长龙、马口铁吧唧的反光、纸箱堆到房梁。写温柔店长软糯开衫下的身段、汗湿的鬓发与喘息，动作落在冲压钢杆撬配重锁舌上。",
   "clock_start": {
-    "label": "升降导轮滑脱，重力自锁防坠销舌咬死门框",
+    "label": "新品首发前一天，十月",
     "minute": 1260
   },
   "clock_style": "hm",
@@ -100,20 +100,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}店长",
-        "gender": "female"
+        "pattern": "小{family}",
+        "gender": "any"
       },
       {
-        "pattern": "{family}师傅",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}主管",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}队长",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

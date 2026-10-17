@@ -232,9 +232,14 @@ def render_custom_world():
     )
     lines.append(
         "- **称呼**：带性别的称呼（先生、小姐、少爷、哥、姐……）只给性别已定的人：这样的称呼与绰号模板要标上 `male` 或 `female`；"
-        "不限性别的玩家身份要同时有给男、女玩家的称呼；正文里不写“{player.name}先生”，用 `{player.title}` 或 `{player.call}`。\n"
+        "不限性别的玩家身份要同时有给男、女玩家的称呼；正文里不写“{player.name}先生”，用 `{player.title}` 或 `{player.call}`。"
+        "绰号模板会抽给本世界任何同性别的人，所以只写人人适用的叫法（小{family}、阿{given_last}、{given}），不写职务头衔。\n"
     )
-    tags = ContentStore(os.path.join(_runtime.SKILL_ROOT, "content")).tags()["tags"]
+    lines.append(
+        "- **人名**：人物的名字由引擎从名字池抽取，正文里不写名字池里的名字（两个字以上的名），用 `{npc.name}`、`{槽位.given}` 这类占位或身份称呼；"
+        "名字池里也不放会在正文里当普通词用的名（秋水、斥候），也不放背景人物已经用掉的名。\n"
+    )
+    tags =ContentStore(os.path.join(_runtime.SKILL_ROOT, "content")).tags()["tags"]
     lines.append("- **标签**：`content_tags` 与各处 `tags` 只能用内容标签表里的 ID：%s。\n\n" % "、".join("`%s` %s" % (t["id"], t["label"]) for t in tags))
     lines.append("## 字段\n\n")
     lines.append(render_spec(worldpack.WORLD, 2))

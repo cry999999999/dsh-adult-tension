@@ -1389,7 +1389,7 @@
   }
  ],
  "clock_start": {
-  "label": "亥时末，距离天明奴隶清算仅剩两个时辰",
+  "label": "拓荒历六十年，收税月",
   "minute": 1360
  },
  "clock_style": "hm",
@@ -1878,7 +1878,7 @@
    "凯恩",
    "维克托",
    "杰拉德",
-   "罗兰",
+   "洛伦",
    "戴蒙",
    "雷格",
    "巴恩",
@@ -1905,23 +1905,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "总管{family}"
-   },
-   {
-    "gender": "any",
-    "pattern": "执刑官{family}"
-   },
-   {
-    "gender": "any",
     "pattern": "老{family}"
    },
    {
     "gender": "any",
-    "pattern": "破烂{family}"
-   },
-   {
-    "gender": "any",
-    "pattern": "断刃{family}"
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

@@ -14,7 +14,7 @@
   ],
   "style_hint": "冷雨击打屋檐铜铃，线香青烟缭绕。白麻丧服下的体温克制隐忍，纸门外木屐踏水声步步紧逼，言语交锋如暗刃出鞘。",
   "clock_start": {
-    "label": "子夜零点，距拂晓出殡开棺还有四个时辰",
+    "label": "1991 年梅雨季，守灵之日",
     "minute": 0
   },
   "clock_style": "hm",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}少主",
-        "gender": "any"
-      },
-      {
         "pattern": "阿{given_last}",
         "gender": "any"
       },
       {
-        "pattern": "{family}家少夫人",
-        "gender": "female"
-      },
-      {
-        "pattern": "少当家",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}大人",
+        "pattern": "{family}",
         "gender": "any"
       }
     ],

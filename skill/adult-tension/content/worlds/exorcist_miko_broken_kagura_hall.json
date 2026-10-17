@@ -1121,7 +1121,7 @@
   }
  ],
  "clock_start": {
-  "label": "神乐夜祭",
+  "label": "夏日神乐祭当天",
   "minute": 480
  },
  "clock_style": "hm",
@@ -1499,7 +1499,7 @@
    "静香",
    "真由",
    "若晴",
-   "千早",
+   "千寻",
    "铃音",
    "初音",
    "小夜"
@@ -1538,8 +1538,8 @@
     "pattern": "老{family}"
    },
    {
-    "gender": "female",
-    "pattern": "{family}大人"
+    "gender": "any",
+    "pattern": "{family}"
    }
   ],
   "order": "family_first"

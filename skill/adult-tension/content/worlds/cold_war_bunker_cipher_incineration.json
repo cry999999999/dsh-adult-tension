@@ -1160,7 +1160,7 @@
   }
  ],
  "clock_start": {
-  "label": "通信暗堡",
+  "label": "1969 年，冬",
   "minute": 1340
  },
  "clock_style": "hm",
@@ -1628,8 +1628,8 @@
     "pattern": "老{family}"
    },
    {
-    "gender": "female",
-    "pattern": "{family}机要员"
+    "gender": "any",
+    "pattern": "小{family}"
    }
   ],
   "order": "family_first"

@@ -1122,7 +1122,7 @@
   }
  ],
  "clock_start": {
-  "label": "深海基槽微滑移水击爆发，高压海水撕裂接缝倒灌",
+  "label": "沉管对接第十八节，五月",
   "minute": 1390
  },
  "clock_style": "hm",
@@ -1674,15 +1674,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}总工"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}潜水长"
-   },
-   {
-    "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

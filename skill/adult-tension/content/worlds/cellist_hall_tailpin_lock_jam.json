@@ -1319,7 +1319,7 @@
   }
  ],
  "clock_start": {
-  "label": "起拍前十五秒，尾针咬进贞操带锁壳",
+  "label": "协奏曲首演日，五月",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1855,38 +1855,22 @@
    "沐风",
    "鸣谦",
    "秋白",
-   "微光",
+   "书禾",
    "书意",
    "景行",
    "玄同",
    "丹青",
    "天音",
-   "和鸣"
+   "景澄"
   ],
   "nickname_patterns": [
-   {
-    "gender": "female",
-    "pattern": "{family}老师"
-   },
    {
     "gender": "male",
     "pattern": "{family}先生"
    },
    {
-    "gender": "male",
-    "pattern": "{family}师傅"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}首席"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}大师"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}摄影"
+    "gender": "any",
+    "pattern": "小{family}"
    }
   ],
   "order": "family_first"

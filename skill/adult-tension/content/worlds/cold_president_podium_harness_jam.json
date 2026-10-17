@@ -1281,7 +1281,7 @@
   }
  ],
  "clock_start": {
-  "label": "讲台电机短路急升咬死外套崩飞纽扣，导播特写倒计时开始",
+  "label": "九月，迎新典礼当天",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1792,28 +1792,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}会长"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}副主席"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}导播"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}队长"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}工"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}老师"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

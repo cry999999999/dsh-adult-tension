@@ -1325,7 +1325,7 @@
   }
  ],
  "clock_start": {
-  "label": "盛典骚乱铁闸自锁，转台导轮咬死影后重工礼裙",
+  "label": "电影节闭幕日，四月",
   "minute": 1350
  },
  "clock_style": "hm",
@@ -1897,20 +1897,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}影后"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "female",
-    "pattern": "{family}老师"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}导"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}队长"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

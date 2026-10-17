@@ -1486,7 +1486,7 @@
   }
  ],
  "clock_start": {
-  "label": "夜里十点四十五，八级雷暴，八重结界已锁",
+  "label": "帝国历七一二年，雷暴季",
   "minute": 1365
  },
  "clock_style": "hm",
@@ -2062,23 +2062,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "首席学者"
+    "pattern": "{given}"
    },
    {
     "gender": "any",
-    "pattern": "卫队长"
-   },
-   {
-    "gender": "any",
-    "pattern": "浮空要塞总督"
-   },
-   {
-    "gender": "any",
-    "pattern": "禁术总监"
-   },
-   {
-    "gender": "any",
-    "pattern": "大炼金师"
+    "pattern": "{family}"
    }
   ],
   "order": "family_first"
@@ -2101,7 +2089,7 @@
    "risks": [
     "血脉事实一旦被结界外的审查官核实，会被剥夺爵位送上净化熔炉"
    ],
-   "role": "血脉觉醒仍死守自尊的女首席",
+   "role": "血脉觉醒仍死守自尊的首席",
    "social_position": "high",
    "title_patterns": [
     {

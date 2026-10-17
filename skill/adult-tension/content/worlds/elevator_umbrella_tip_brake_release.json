@@ -1162,7 +1162,7 @@
   }
  ],
  "clock_start": {
-  "label": "超强台风风暴潮过境，安全钳咬死轿厢偏斜悬停",
+  "label": "九月，台风季",
   "minute": 1280
  },
  "clock_style": "hm",
@@ -1692,7 +1692,7 @@
   "given_female": [
    "晚晴",
    "语柔",
-   "清雅",
+   "雅宁",
    "诗涵",
    "晓雨",
    "宛婷",
@@ -1741,10 +1741,6 @@
    {
     "gender": "female",
     "pattern": "{given}姐"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}师傅"
    },
    {
     "gender": "any",

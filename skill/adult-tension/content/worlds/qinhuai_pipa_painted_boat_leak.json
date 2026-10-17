@@ -1325,7 +1325,7 @@
   }
  ],
  "clock_start": {
-  "label": "漕船猛烈撞击游舫，沉香木屏风倾倒咬死行首裙摆",
+  "label": "崇祯末年，暮春",
   "minute": 1230
  },
  "clock_style": "hm",
@@ -1903,20 +1903,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}行首"
+    "gender": "any",
+    "pattern": "阿{given_last}"
    },
    {
-    "gender": "female",
-    "pattern": "{family}掌事"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}公子"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}捕头"
+    "gender": "any",
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

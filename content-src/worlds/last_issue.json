@@ -14,7 +14,7 @@
  ],
  "style_hint": "写纸和声音：印刷机的轰鸣、录音机的沙沙声、合订本翻页；人说话直，吵完还会一起去喝粥。",
  "clock_start": {
-  "label": "停刊前第十四天，晚上",
+  "label": "停刊前第十四天",
   "minute": 1260
  },
  "clock_style": "hm",
@@ -85,18 +85,14 @@
    "青山"
   ],
   "nickname_patterns": [
-   {
-    "pattern": "老{family}",
-    "gender": "any"
-   },
-   {
-    "pattern": "小{family}",
-    "gender": "any"
-   },
-   {
-    "pattern": "{family}老师",
-    "gender": "any"
-   }
+    {
+      "pattern": "老{family}",
+      "gender": "any"
+    },
+    {
+      "pattern": "小{family}",
+      "gender": "any"
+    }
   ]
  },
  "rules": [

@@ -1162,7 +1162,7 @@
   }
  ],
  "clock_start": {
-  "label": "超高音速黑障模拟过载，主气锁膨胀抱死升温",
+  "label": "十一月的一个周四，晴",
   "minute": 1250
  },
  "clock_style": "hm",
@@ -1741,16 +1741,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}少校"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}总师"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
     "gender": "any",
-    "pattern": "小{family}"
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

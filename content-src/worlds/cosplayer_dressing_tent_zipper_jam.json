@@ -14,7 +14,7 @@
   ],
   "style_hint": "漫展现场的热闹与高空的冷：舞台射灯、排长队的签售台、后台帐篷里的化妆灯。写傲娇千金滚烫的薄汗、贴身连体服下的喘息，动作落在螺栓公差与拆卸上。",
   "clock_start": {
-    "label": "主舞台开场倒计时启动，重型机甲胸甲受压抱死在马道护栏",
+    "label": "动漫盛会首日，八月",
     "minute": 840
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}大小姐",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}工",
+        "pattern": "小{family}",
         "gender": "any"
       },
       {
-        "pattern": "小{family}",
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

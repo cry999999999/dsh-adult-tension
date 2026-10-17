@@ -14,7 +14,7 @@
   ],
   "style_hint": "九十年代初东京湾黑市赌场崩塌时的野性与逼仄：海水拍击锈管的回响、手铐链条在铁栏上的铮鸣、真丝和服半褪露出滴血般若、雪茄硝烟与冷香交织。对白利落如刀，断指家法与高利贷的狠绝里，碰撞出成年男女自愿的暴烈较量。",
   "clock_start": {
-    "label": "夜里十一点，超级台风封湾，金库防爆门落锁",
+    "label": "1990 年，台风季",
     "minute": 1380
   },
   "clock_style": "hm",
@@ -94,23 +94,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}若头",
+        "pattern": "{family}",
         "gender": "any"
       },
       {
-        "pattern": "{family}老师",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}组长",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}课长",
-        "gender": "any"
-      },
-      {
-        "pattern": "老巡查",
+        "pattern": "{given}",
         "gender": "any"
       }
     ],
@@ -172,7 +160,7 @@
     },
     {
       "id": "pc_ruthless_yakuza_heiress_vice_boss",
-      "role": "背负整肃门户绝境之冷血极道女若头少主",
+      "role": "背负整肃门户绝境之冷血极道若头少主",
       "gender": "any",
       "title_patterns": [
         {

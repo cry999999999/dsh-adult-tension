@@ -5,11 +5,11 @@
   "extends": null,
   "era": "1998年夏末，八号台风登陆东京的那一夜",
   "region": "东京郊外老木造公寓枫叶庄：201室六叠单间、二楼外廊、隔壁202室与一楼洗衣棚",
-  "premise": "台风夜，变压器炸了，整栋枫叶庄一片漆黑。隔壁202室的结衣抱着湿透的被子敲开你的门——你们在同一条老街长大，去年结衣嫁给了常年在大阪出差的商社职员。202漏水漏得厉害，结衣怕打雷，更怕午夜那通准时打来的查岗电话。结衣的手提包里，装着一份只差对方盖章的离婚届。走廊上房东在巡查，对门的插画师在看热闹。这一夜，结衣要决定的是下一步往哪走。",
+  "premise": "台风夜，变压器炸了，整栋枫叶庄一片漆黑。隔壁202室的青梅抱着湿透的被子敲开你的门——你们在同一条老街长大，去年青梅嫁给了常年在大阪出差的商社职员。202漏水漏得厉害，青梅怕打雷，更怕午夜那通准时打来的查岗电话。青梅的手提包里，装着一份只差对方盖章的离婚届。走廊上房东在巡查，对门的插画师在看热闹。这一夜，青梅要决定的是下一步往哪走。",
   "tone": ["榻榻米烛光", "台风断电", "隔墙座机", "旧街往事"],
   "style_hint": "木地板踩上去的吱呀声、暴雨抽打铝窗的轰响、白蜡烛熔化的气味、隔墙座机刺耳的铃声；写两个从小一起长大的人隔着一段婚姻重新面对彼此，写犹豫，也写下定决心的那一刻。",
   "clock_start": {
-    "label": "子夜零点，全区断电，雨势正到最猛",
+    "label": "1998 年夏末，台风季",
     "minute": 0
   },
   "clock_style": "hm",
@@ -35,10 +35,8 @@
     "given_neutral": ["葵", "莲", "翼", "阳向", "真琴", "奏", "未来", "步", "零", "光", "晴", "薰"],
     "nickname_patterns": [
       {"pattern": "{given_last}", "gender": "any"},
-      {"pattern": "隔壁的{family}", "gender": "any"},
       {"pattern": "{family}桑", "gender": "any"},
-      {"pattern": "阿{given_last}", "gender": "any"},
-      {"pattern": "房东{family}", "gender": "any"}
+      {"pattern": "阿{given_last}", "gender": "any"}
     ],
     "order": "family_first"
   },
@@ -69,7 +67,7 @@
   "player_identities": [
     {
       "id": "childhood_friend_illustrator",
-      "role": "和结衣在同一条老街长大的自由插画师",
+      "role": "和青梅在同一条老街长大的自由插画师",
       "gender": "any",
       "title_patterns": [
         {"pattern": "{given_last}", "gender": "any"},
@@ -77,14 +75,14 @@
       ],
       "age_range": [26, 32],
       "social_position": "equal",
-      "baseline": "和结衣是从小一起长大的邻居，后来各自去了东京，又阴差阳错住进同一栋公寓。结衣结婚那天你没去，你一直没说为什么。",
+      "baseline": "和青梅是从小一起长大的邻居，后来各自去了东京，又阴差阳错住进同一栋公寓。青梅结婚那天你没去，你一直没说为什么。",
       "resources": [
         "屋里唯一一根防风白蜡烛和一床干燥的厚被",
-        "一本画满老街风景的旧速写本，最后一页是结衣十七岁的侧脸"
+        "一本画满老街风景的旧速写本，最后一页是青梅十七岁的侧脸"
       ],
       "reputation": "安静温和，在走廊碰见总是客气点头，眼神却藏不住",
       "risks": [
-        "被房东或结衣的丈夫撞见，会被说成破坏人家庭的人"
+        "被房东或青梅的丈夫撞见，会被说成破坏人家庭的人"
       ]
     },
     {
@@ -117,7 +115,7 @@
       ],
       "age_range": [26, 34],
       "social_position": "low",
-      "baseline": "在神社做修缮的木工，租住在二楼最里间。你和结衣也是老街出来的，小时候帮结衣修过木屐，今夜听见202漏水的声音，第一个拎着工具箱出了门。",
+      "baseline": "在神社做修缮的木工，租住在二楼最里间。你和青梅也是老街出来的，小时候帮青梅修过木屐，今夜听见202漏水的声音，第一个拎着工具箱出了门。",
       "resources": [
         "一整套木工工具和几卷防水油布",
         "一副能扛起整扇门板的好力气"
@@ -137,7 +135,7 @@
       ],
       "age_range": [25, 30],
       "social_position": "equal",
-      "baseline": "刚冒雨交了班回来，手里还拎着打折便当和热毛巾。结衣常在深夜来店里买东西，你记得结衣每次都只买一人份。",
+      "baseline": "刚冒雨交了班回来，手里还拎着打折便当和热毛巾。青梅常在深夜来店里买东西，你记得青梅每次都只买一人份。",
       "resources": [
         "几条干毛巾和两罐温热的乌龙茶",
         "一台随时能收听台风广播的便携收音机"
@@ -209,7 +207,7 @@
     {
       "id": "apartment_202_neighbor_room",
       "name": "隔壁202室",
-      "detail": "结衣和丈夫的住处，天花板正中漏着浑水，地上摆着两个接水的脸盆；床头柜上的结婚照蒙着一层灰，座机孤零零立在矮柜上。",
+      "detail": "青梅和丈夫的住处，天花板正中漏着浑水，地上摆着两个接水的脸盆；床头柜上的结婚照蒙着一层灰，座机孤零零立在矮柜上。",
       "privacy": "semi",
       "visibility": "没点蜡烛，只有闪电时亮时灭，屋里空得让人心里发冷。",
       "witnesses": ["bg_artist_across_hall"],
@@ -307,7 +305,7 @@
         "expression": "把离婚届折好放回包里，抬头看你：“……我想好了。所以，今晚不是因为害怕。”",
         "desire_range": [2, 4],
         "self_control_range": [2, 4],
-        "desired_position": "不是谁的太太，只是那个一起长大的结衣"
+        "desired_position": "不是谁的太太，只是那个一起长大的{npc.given}"
       },
       "voices": {
         "surface": "“对不起这么晚敲门……屋顶漏得厉害，打雷好吓人。能让我在你这儿坐一会儿吗？天亮我就走。”",
@@ -320,11 +318,11 @@
         {"from": 1081, "to": 1439, "location_id": "apartment_ground_laundry_shed"}
       ],
       "situation": {
-        "trigger": "全区断电，雷声炸响，结衣抱着湿被子敲开了你的门",
+        "trigger": "全区断电，雷声炸响，{npc.given}抱着湿被子敲开了你的门",
         "pressure": "午夜零点十分，202的座机会准时响起",
         "exits": [
-          {"option": "请结衣进来，先换上干衣服，等电话响了再说", "cost": "电话响时结衣不在202，丈夫会起疑"},
-          {"option": "陪结衣回202，帮忙接水，等那通电话", "cost": "结衣得独自面对那通电话，今晚想说的话可能又说不出口"}
+          {"option": "请{npc.given}进来，先换上干衣服，等电话响了再说", "cost": "电话响时{npc.given}不在202，丈夫会起疑"},
+          {"option": "陪{npc.given}回202，帮忙接水，等那通电话", "cost": "{npc.given}得独自面对那通电话，今晚想说的话可能又说不出口"}
         ]
       },
       "tags": ["intimate", "romance_light"]
@@ -358,7 +356,7 @@
         "core_value": "枫叶庄不能出丑事，谁坏了名声谁就搬走",
         "goal_options": [
           "逐户敲门检查漏水",
-          "弄清结衣今晚到底在哪间屋子",
+          "弄清青梅今晚到底在哪间屋子",
           "把202漏水的维修费算到住户头上"
         ],
         "pressure_responses": {
@@ -368,7 +366,7 @@
           "breaking": "看见违建图纸时脸色铁青，转身就走"
         },
         "withdrawal": "嘀咕着“晦气”，踩着雨靴下楼去洗衣棚避雨",
-        "relationship_stance": "对单身住户处处提防，对结衣既同情又想抓把柄",
+        "relationship_stance": "对单身住户处处提防，对青梅既同情又想抓把柄",
         "contrast": "收租时笑容满面，抓到别人的错处时眼神像刀",
         "prefers": ["光线暗、方便偷听的楼梯拐角"],
         "avoids": ["町内会会长", "深夜一个人去配电室"],
@@ -402,7 +400,7 @@
         "trigger": "房东的手电光卡在201的门缝底下，钥匙已经插进锁眼转了半圈",
         "pressure": "三分钟内不开门，房东就会自己开",
         "exits": [
-          {"option": "自己开门，坦白说结衣在这里避雨", "cost": "明天全町都会知道结衣在你屋里过了夜"},
+          {"option": "自己开门，坦白说青梅在这里避雨", "cost": "明天全町都会知道青梅在你屋里过了夜"},
           {"option": "隔门说自己在换衣服，请房东先查别的屋", "cost": "房东会在走廊尽头一直盯着这扇门"}
         ]
       },
@@ -413,17 +411,17 @@
       "gender": "any",
       "gender_reason": null,
       "age_range": [33, 40],
-      "adult_context": "结衣名义上的配偶，大阪商社的营业课长，常年出差，靠每晚一通查岗电话维持对这段婚姻的控制",
+      "adult_context": "青梅名义上的配偶，大阪商社的营业课长，常年出差，靠每晚一通查岗电话维持对这段婚姻的控制",
       "public_role": "商社大阪分社营业课长",
       "appearance_options": [
         "听筒里的声音带着酒气和大阪腔，背景是居酒屋的喧闹",
         "结婚照里西装笔挺，头发梳得油亮，金丝眼镜后的眼神很冷"
       ],
       "identity": {
-        "authority": "握着结衣娘家那笔债的展期，也握着这段婚姻的另一枚印章",
+        "authority": "握着青梅娘家那笔债的展期，也握着这段婚姻的另一枚印章",
         "resources": [
           "一份稳定的高薪和商社的人脉",
-          "结衣父母的电话号码"
+          "青梅父母的电话号码"
         ],
         "limits": [
           "新干线全线停运，今夜绝对回不了东京",
@@ -436,18 +434,18 @@
       "decision": {
         "core_value": "体面比什么都重要，婚姻也是体面的一部分",
         "goal_options": [
-          "打通电话，确认结衣在家",
-          "听出结衣声音不对时追问到底",
+          "打通电话，确认青梅在家",
+          "听出青梅声音不对时追问到底",
           "无论如何不在离婚届上盖章"
         ],
         "pressure_responses": {
-          "low": "在电话里吩咐结衣明天寄换洗衣服",
+          "low": "在电话里吩咐青梅明天寄换洗衣服",
           "mid": "提高嗓门问为什么这么久才接",
-          "high": "威胁要给结衣的父母打电话",
+          "high": "威胁要给青梅的父母打电话",
           "breaking": "听到“离婚届”三个字时沉默了很久，挂了电话"
         },
         "withdrawal": "在大阪的酒店里把电话线拔了",
-        "relationship_stance": "把结衣当成自己体面的一部分，对隔壁的人充满戒备",
+        "relationship_stance": "把青梅当成自己体面的一部分，对隔壁的人充满戒备",
         "contrast": "在客户面前点头哈腰，在电话里却说一不二",
         "prefers": ["隔着电话线说话，不用看对方的脸"],
         "avoids": ["当面谈离婚", "公司知道自己的家事"],
@@ -477,11 +475,11 @@
         {"from": 1201, "to": 1439, "location_id": "apartment_202_neighbor_room"}
       ],
       "situation": {
-        "trigger": "202的座机响了，三短两长，结衣的脸一下子白了",
+        "trigger": "202的座机响了，三短两长，青梅的脸一下子白了",
         "pressure": "铃声响满十声，丈夫就会打给房东让人去敲门",
         "exits": [
-          {"option": "陪结衣回202，站在一旁让结衣自己接", "cost": "结衣得在你面前听完那些难听的话"},
-          {"option": "让结衣接起电话，直接说出离婚届的事", "cost": "丈夫会立刻打给结衣的父母，今夜不会再平静"}
+          {"option": "陪青梅回202，站在一旁让青梅自己接", "cost": "青梅得在你面前听完那些难听的话"},
+          {"option": "让青梅接起电话，直接说出离婚届的事", "cost": "丈夫会立刻打给青梅的父母，今夜不会再平静"}
         ]
       },
       "tags": ["workplace_power", "coercion_theme"]
@@ -508,28 +506,28 @@
           "嘴上什么都敢说，真遇上事却最怕伤到别人"
         ],
         "obligations": ["台风过境前交出一组叫《雨夜》的人物速写"],
-        "exposure": "速写本里有好几张结衣在走廊上发呆的侧影",
-        "hidden": "早就看出结衣过得不好，也看出你看结衣的眼神；一直想帮忙，又怕多管闲事"
+        "exposure": "速写本里有好几张青梅在走廊上发呆的侧影",
+        "hidden": "早就看出青梅过得不好，也看出你看青梅的眼神；一直想帮忙，又怕多管闲事"
       },
       "decision": {
         "core_value": "人活着就该照自己的心意过，别让一张纸困住一辈子",
         "goal_options": [
-          "借火的名义敲开201的门，看看结衣还好不好",
+          "借火的名义敲开201的门，看看青梅还好不好",
           "在走廊大声说笑，替你们引开房东",
-          "请结衣当一次模特，画下今晚的样子"
+          "请青梅当一次模特，画下今晚的样子"
         ],
         "pressure_responses": {
           "low": "吹个泡泡，笑说今晚的雨真带劲",
           "mid": "探进半个身子，问需不需要帮忙",
           "high": "把相机塞回包里，认真地说自己什么都不会说出去",
-          "breaking": "把速写本里结衣的那几页撕下来，交给结衣本人"
+          "breaking": "把速写本里青梅的那几页撕下来，交给青梅本人"
         },
         "withdrawal": "回到203锁上门，对着画布画到天亮",
-        "relationship_stance": "把你和结衣当成这栋楼里最有故事的两个人，想帮又怕添乱",
+        "relationship_stance": "把你和青梅当成这栋楼里最有故事的两个人，想帮又怕添乱",
         "contrast": "看起来玩世不恭，真被人认真道谢时会耳根发红",
         "prefers": ["热闹、随性、不讲规矩的场合"],
         "avoids": ["说教", "町内会的晨会"],
-        "never": ["把结衣的事告诉那个丈夫"]
+        "never": ["把青梅的事告诉那个丈夫"]
       },
       "intimacy_tendency": {
         "attraction_sources": [
@@ -546,8 +544,8 @@
         "desired_position": "那个帮忙守着门、嘴上不饶人的朋友"
       },
       "voices": {
-        "surface": "“喂，201的，借个火呗。……哟，结衣姐也在啊，正好，我这有热咖啡。”",
-        "inner": "“结衣姐总算敲了别人的门……这次可别再缩回去了。”"
+        "surface": "“喂，201的，借个火呗。……哟，青梅也在啊，正好，我这有热咖啡。”",
+        "inner": "“青梅总算敲了别人的门……这次可别再缩回去了。”"
       },
       "schedule": [
         {"from": 0, "to": 360, "location_id": "apartment_second_floor_wooden_hallway"},
@@ -556,7 +554,7 @@
         {"from": 1141, "to": 1439, "location_id": "apartment_second_floor_wooden_hallway"}
       ],
       "situation": {
-        "trigger": "插画师拿着打火机靠在201门框上，看见了屋里的结衣",
+        "trigger": "插画师拿着打火机靠在201门框上，看见了屋里的青梅",
         "pressure": "房东四分钟后会巡到二楼",
         "exits": [
           {"option": "请插画师进屋，一起想办法应付房东", "cost": "屋里多了一个知情人"},
@@ -570,7 +568,7 @@
       "gender": "any",
       "gender_reason": null,
       "age_range": [64, 76],
-      "adult_context": "住在一楼的老榻榻米匠人，腰不好，看着结衣和你在老街长大，知道两家人当年的约定",
+      "adult_context": "住在一楼的老榻榻米匠人，腰不好，看着青梅和你在老街长大，知道两家人当年的约定",
       "public_role": "一楼住户，退休的榻榻米匠人",
       "appearance_options": [
         "穿着旧作务衣，坐在洗衣棚的小凳上敲木条，手背上全是老茧",
@@ -588,7 +586,7 @@
         ],
         "obligations": ["天亮前把洗衣棚的排水沟清通"],
         "exposure": "作务衣口袋里揣着那封信，信封已经发黄",
-        "hidden": "结衣出嫁那天，老人在楼下站了很久，一直后悔没有拦一下"
+        "hidden": "青梅出嫁那天，老人在楼下站了很久，一直后悔没有拦一下"
       },
       "decision": {
         "core_value": "日子是自己的，谁也替不了",
@@ -604,7 +602,7 @@
           "breaking": "把那封信拿出来，说早该给你们看"
         },
         "withdrawal": "回到一楼屋里，点上一根蜡烛坐着",
-        "relationship_stance": "把你和结衣都当成自家晚辈",
+        "relationship_stance": "把你和青梅都当成自家晚辈",
         "contrast": "平时一句话都不多说，说起老街的旧事能讲一夜",
         "prefers": ["安静的手艺活", "一杯热茶"],
         "avoids": ["吵架", "管别人家的闲事"],
@@ -634,10 +632,10 @@
         {"from": 1081, "to": 1439, "location_id": "apartment_ground_laundry_shed"}
       ],
       "situation": {
-        "trigger": "老人在洗衣棚叫住你，说有封信想交给你和结衣",
+        "trigger": "老人在洗衣棚叫住你，说有封信想交给你和青梅",
         "pressure": "洗衣棚的积水二十分钟内会淹过门槛",
         "exits": [
-          {"option": "接过信，带上楼和结衣一起看", "cost": "信里的事会让今夜变得更难平静"},
+          {"option": "接过信，带上楼和青梅一起看", "cost": "信里的事会让今夜变得更难平静"},
           {"option": "先帮老人把排水沟清通，信等天亮再说", "cost": "老人会以为你们还没准备好"}
         ]
       },
@@ -715,8 +713,8 @@
         "trigger": "消防团员在走廊上敲门，说202必须撤离",
         "pressure": "十分钟内202的人不撤出来，团员就要上报区役所",
         "exits": [
-          {"option": "说结衣今晚住在201", "cost": "登记表上会写着结衣在你屋里过夜"},
-          {"option": "陪结衣去公民馆避难", "cost": "一夜都在人群里，什么话都说不出口"}
+          {"option": "说青梅今晚住在201", "cost": "登记表上会写着青梅在你屋里过夜"},
+          {"option": "陪青梅去公民馆避难", "cost": "一夜都在人群里，什么话都说不出口"}
         ]
       },
       "tags": ["disaster", "workplace"]
@@ -821,7 +819,7 @@
     },
     {
       "id": "te_phone_line_shadow",
-      "text": "隔墙的座机每到整点就会响，远在大阪的那个人看不见这里，却还牵着结衣的每一根神经。"
+      "text": "隔墙的座机每到整点就会响，远在大阪的那个人看不见这里，却还牵着青梅的每一根神经。"
     },
     {
       "id": "te_hallway_siege",
@@ -836,17 +834,17 @@
       "identity_ids": ["junior_night_caretaker"],
       "slots": ["neighbor_yui", "artist_neighbor_sakura"],
       "tension_engine_ids": ["te_old_street_vs_marriage", "te_hallway_siege"],
-      "chemistry": "你握着全栋的钥匙，{neighbor_yui.name}抱着湿被子站在你面前，{artist_neighbor_sakura.name}从对门探出头来。你有权替任何人开任何一扇门，可今夜真正要紧的，是让结衣自己决定往哪扇门走。",
+      "chemistry": "你握着全栋的钥匙，{neighbor_yui.name}抱着湿被子站在你面前，{artist_neighbor_sakura.name}从对门探出头来。你有权替任何人开任何一扇门，可今夜真正要紧的，是让{neighbor_yui.given}自己决定往哪扇门走。",
       "stakes": {
-        "resource_gap": "你有钥匙和管理员的身份，结衣有一份离婚届，插画师有一本画满了结衣的速写本。",
-        "limit_gap": "你一旦偏袒就会丢掉工作，结衣一旦被房东撞见就会成为全町的谈资。",
-        "meeting_reason": "台风夜你挨家巡查，202漏水，结衣无处可去。",
-        "irreplaceable_goal": "给结衣一个能安心想清楚的地方，直到天亮。"
+        "resource_gap": "你有钥匙和管理员的身份，{neighbor_yui.given}有一份离婚届，插画师有一本画满了{neighbor_yui.given}的速写本。",
+        "limit_gap": "你一旦偏袒就会丢掉工作，{neighbor_yui.given}一旦被房东撞见就会成为全町的谈资。",
+        "meeting_reason": "台风夜你挨家巡查，202漏水，{neighbor_yui.given}无处可去。",
+        "irreplaceable_goal": "给{neighbor_yui.given}一个能安心想清楚的地方，直到天亮。"
       },
       "relations": [
-        {"a": "player", "b": "neighbor_yui", "stage": "acquainted", "a_to_b": {"trust": 2, "tension": 2}, "b_to_a": {"trust": 2, "tension": 2}, "reason": "你常帮202修水管，知道结衣过得不好"},
+        {"a": "player", "b": "neighbor_yui", "stage": "acquainted", "a_to_b": {"trust": 2, "tension": 2}, "b_to_a": {"trust": 2, "tension": 2}, "reason": "你常帮202修水管，知道{neighbor_yui.given}过得不好"},
         {"a": "player", "b": "artist_neighbor_sakura", "stage": "familiar", "a_to_b": {"trust": 2, "tension": 1}, "b_to_a": {"trust": 2, "tension": 1}, "reason": "插画师常拖欠房租，你常替插画师说好话"},
-        {"a": "neighbor_yui", "b": "artist_neighbor_sakura", "stage": "acquainted", "a_to_b": {"trust": 2, "tension": 1}, "b_to_a": {"trust": 2, "tension": 1}, "reason": "插画师偷偷画过结衣，结衣不知道"}
+        {"a": "neighbor_yui", "b": "artist_neighbor_sakura", "stage": "acquainted", "a_to_b": {"trust": 2, "tension": 1}, "b_to_a": {"trust": 2, "tension": 1}, "reason": "插画师偷偷画过{neighbor_yui.given}，{neighbor_yui.given}不知道"}
       ],
       "tags": ["romance_light", "workplace"]
     },
@@ -857,12 +855,12 @@
       "identity_ids": ["junior_night_caretaker", "childhood_friend_illustrator"],
       "slots": ["neighbor_yui", "absent_husband_ryo"],
       "tension_engine_ids": ["te_phone_line_shadow", "te_old_street_vs_marriage"],
-      "chemistry": "隔墙的座机响了，{absent_husband_ryo.name}在大阪等着有人接；{neighbor_yui.name}看着你，手里攥着那份离婚届。这一通电话，接与不接、说与不说，都是结衣自己的事——你能做的，是站在旁边。",
+      "chemistry": "隔墙的座机响了，{absent_husband_ryo.name}在大阪等着有人接；{neighbor_yui.name}看着你，手里攥着那份离婚届。这一通电话，接与不接、说与不说，都是{neighbor_yui.given}自己的事——你能做的，是站在旁边。",
       "stakes": {
-        "resource_gap": "丈夫有那笔债和另一枚印章，结衣有已经盖好章的离婚届，你有一间能让人躲雨的屋子。",
-        "limit_gap": "电话一露馅丈夫就会打给结衣的父母，结衣一退缩就又要再等一年。",
-        "meeting_reason": "午夜的查岗电话准时打来，结衣正在你屋里避雨。",
-        "irreplaceable_goal": "让结衣在这通电话里说出自己真正想说的话。"
+        "resource_gap": "丈夫有那笔债和另一枚印章，{neighbor_yui.given}有已经盖好章的离婚届，你有一间能让人躲雨的屋子。",
+        "limit_gap": "电话一露馅丈夫就会打给{neighbor_yui.given}的父母，{neighbor_yui.given}一退缩就又要再等一年。",
+        "meeting_reason": "午夜的查岗电话准时打来，{neighbor_yui.given}正在你屋里避雨。",
+        "irreplaceable_goal": "让{neighbor_yui.given}在这通电话里说出自己真正想说的话。"
       },
       "relations": [
         {"a": "player", "b": "neighbor_yui", "stage": "familiar", "a_to_b": {"trust": 3, "tension": 2}, "b_to_a": {"trust": 3, "tension": 2}, "reason": "从小一起长大，隔了一段婚姻重新坐在一起"},
@@ -880,15 +878,15 @@
       "tension_engine_ids": ["te_hallway_siege", "te_candle_countdown"],
       "chemistry": "{landlady_matsumoto.name}的钥匙已经插进锁眼，{neighbor_yui.name}缩在榻榻米角落。你是这栋楼里最不起眼的住户，房东一句话就能让你搬走，可今夜屋里的人只能靠你。",
       "stakes": {
-        "resource_gap": "房东有钥匙和町内会的嘴，结衣怕名声，你只有一个工具箱和一身力气。",
-        "limit_gap": "门一开结衣就会成为全町的谈资，你也会被赶出枫叶庄。",
-        "meeting_reason": "你帮202修屋顶时把结衣带回了自己屋里避雨，房东刚好巡上楼。",
-        "irreplaceable_goal": "不让房东拿结衣的事做文章，也不让自己丢掉住处。"
+        "resource_gap": "房东有钥匙和町内会的嘴，{neighbor_yui.given}怕名声，你只有一个工具箱和一身力气。",
+        "limit_gap": "门一开{neighbor_yui.given}就会成为全町的谈资，你也会被赶出枫叶庄。",
+        "meeting_reason": "你帮202修屋顶时把{neighbor_yui.given}带回了自己屋里避雨，房东刚好巡上楼。",
+        "irreplaceable_goal": "不让房东拿{neighbor_yui.given}的事做文章，也不让自己丢掉住处。"
       },
       "relations": [
-        {"a": "player", "b": "neighbor_yui", "stage": "acquainted", "a_to_b": {"trust": 2, "tension": 2}, "b_to_a": {"trust": 2, "tension": 1}, "reason": "老街出来的人，小时候你帮结衣修过木屐"},
+        {"a": "player", "b": "neighbor_yui", "stage": "acquainted", "a_to_b": {"trust": 2, "tension": 2}, "b_to_a": {"trust": 2, "tension": 1}, "reason": "老街出来的人，小时候你帮{neighbor_yui.given}修过木屐"},
         {"a": "player", "b": "landlady_matsumoto", "stage": "acquainted", "a_to_b": {"trust": 1, "tension": 3}, "b_to_a": {"trust": 1, "tension": 2}, "reason": "房东嫌你锯木头吵，早想让你搬走"},
-        {"a": "neighbor_yui", "b": "landlady_matsumoto", "stage": "familiar", "a_to_b": {"trust": 1, "tension": 3}, "b_to_a": {"trust": 1, "tension": 2}, "reason": "房东一直在打听结衣的婚姻"}
+        {"a": "neighbor_yui", "b": "landlady_matsumoto", "stage": "familiar", "a_to_b": {"trust": 1, "tension": 3}, "b_to_a": {"trust": 1, "tension": 2}, "reason": "房东一直在打听{neighbor_yui.given}的婚姻"}
       ],
       "tags": ["workplace_power", "workplace"]
     },
@@ -904,7 +902,7 @@
         "resource_gap": "插画师有速写本，老匠人有那封信，消防团员有登记表和区役所的门路。",
         "limit_gap": "谁先说出口，谁就成了掺和别人家事的人。",
         "meeting_reason": "台风眼快到了，所有人都躲到了一楼洗衣棚。",
-        "irreplaceable_goal": "让大家愿意帮结衣一把，而不是只在背后议论。"
+        "irreplaceable_goal": "让大家愿意帮青梅一把，而不是只在背后议论。"
       },
       "relations": [
         {"a": "player", "b": "artist_neighbor_sakura", "stage": "familiar", "a_to_b": {"trust": 2, "tension": 1}, "b_to_a": {"trust": 2, "tension": 1}, "reason": "常在楼梯口碰见，一起抽过一支烟"},
@@ -925,7 +923,7 @@
       "tension_engine_ids": ["te_old_street_vs_marriage", "te_candle_countdown"],
       "chemistry": "一根蜡烛、一张矮桌、三个人：{neighbor_yui.name}捧着热茶，{artist_neighbor_sakura.name}翻着你的旧速写本，指着最后一页问那是谁。你们谁也不欠谁，只是今夜都睡不着。",
       "stakes": {
-        "resource_gap": "结衣有离婚届，插画师有相机和画笔，你有那本画着老街的速写本。",
+        "resource_gap": "{neighbor_yui.given}有离婚届，插画师有相机和画笔，你有那本画着老街的速写本。",
         "limit_gap": "话说开了就收不回，不说开就要再等一年。",
         "meeting_reason": "插画师借火敲门，三个人在烛光下坐了下来。",
         "irreplaceable_goal": "在蜡烛燃尽前，把那句没说出口的话说出来。"
@@ -933,7 +931,7 @@
       "relations": [
         {"a": "player", "b": "neighbor_yui", "stage": "flirting", "a_to_b": {"trust": 3, "tension": 2}, "b_to_a": {"trust": 3, "tension": 2}, "reason": "彼此心意都懂，谁也没先开口"},
         {"a": "player", "b": "artist_neighbor_sakura", "stage": "familiar", "a_to_b": {"trust": 2, "tension": 1}, "b_to_a": {"trust": 2, "tension": 1}, "reason": "同行，常互相借画具"},
-        {"a": "neighbor_yui", "b": "artist_neighbor_sakura", "stage": "acquainted", "a_to_b": {"trust": 2, "tension": 1}, "b_to_a": {"trust": 2, "tension": 1}, "reason": "插画师一直想跟结衣交朋友，今晚总算有机会"}
+        {"a": "neighbor_yui", "b": "artist_neighbor_sakura", "stage": "acquainted", "a_to_b": {"trust": 2, "tension": 1}, "b_to_a": {"trust": 2, "tension": 1}, "reason": "插画师一直想跟{neighbor_yui.given}交朋友，今晚总算有机会"}
       ],
       "tags": ["romance_light", "intimate"]
     },
@@ -944,10 +942,10 @@
       "identity_ids": ["morning_paper_deliverer"],
       "slots": ["landlady_matsumoto", "fire_brigade_volunteer_hayashi"],
       "tension_engine_ids": ["te_hallway_siege", "te_old_street_vs_marriage"],
-      "chemistry": "{landlady_matsumoto.name}要把202漏水的账算到结衣头上，{fire_brigade_volunteer_hayashi.name}要先把人撤出来再说。两个人都转头看你——你是这栋楼里唯一知道结衣今晚在哪的人。",
+      "chemistry": "{landlady_matsumoto.name}要把202漏水的账算到青梅头上，{fire_brigade_volunteer_hayashi.name}要先把人撤出来再说。两个人都转头看你——你是这栋楼里唯一知道青梅今晚在哪的人。",
       "stakes": {
         "resource_gap": "房东有租约和钥匙，团员有登记表和撤离权，你只有一辆送报自行车和一张嘴。",
-        "limit_gap": "你说错一句，结衣的事就会传遍全町；你不说，202的人就可能出危险。",
+        "limit_gap": "你说错一句，青梅的事就会传遍全町；你不说，202的人就可能出危险。",
         "meeting_reason": "你因为台风停工，在楼梯口被房东和团员一起拦住。",
         "irreplaceable_goal": "既让团员知道人在哪里平安，又不让房东拿这件事做文章。"
       },
@@ -1010,7 +1008,7 @@
       "beats": [
         "漏水一滴一滴砸进塑料盆",
         "座机在黑暗里一声不响",
-        "结衣把离婚届放在电话旁边，又拿起来"
+        "青梅把离婚届放在电话旁边，又拿起来"
       ],
       "hook_ids": ["h_ryo_drunken_call", "h_yui_phone_courage"],
       "start_minute": 55,
@@ -1053,13 +1051,13 @@
       "flags": ["timed"],
       "location_ids": ["apartment_201_tatami_room", "apartment_202_neighbor_room"],
       "trigger": "202的座机准时响起三短两长；响满十声，丈夫就会打给房东让人去敲门。",
-      "objective": "让结衣自己决定怎么接这通电话，以及要不要提离婚届。",
-      "choice": "是陪结衣回去接电话，还是让结衣自己决定接不接。",
-      "immediate": {"text": "铃声穿过木墙一声接一声，结衣的手一下子攥紧了。", "minutes": 3},
+      "objective": "让青梅自己决定怎么接这通电话，以及要不要提离婚届。",
+      "choice": "是陪青梅回去接电话，还是让青梅自己决定接不接。",
+      "immediate": {"text": "铃声穿过木墙一声接一声，青梅的手一下子攥紧了。", "minutes": 3},
       "near": {"text": "响满十声，电话就会转去房东家。", "deadline_minutes": 8},
-      "far": {"trigger": "丈夫认定结衣有事瞒着自己", "consequence": "丈夫连夜给结衣的父母打电话，老家的人天一亮就会赶来东京。", "due_days": 1},
+      "far": {"trigger": "丈夫认定青梅有事瞒着自己", "consequence": "丈夫连夜给青梅的父母打电话，老家的人天一亮就会赶来东京。", "due_days": 1},
       "exits": [
-        {"option": "陪结衣回202，站在门口，让结衣自己接", "cost": "你会听到那些难听的话，却什么也不能说"},
+        {"option": "陪青梅回202，站在门口，让青梅自己接", "cost": "你会听到那些难听的话，却什么也不能说"},
         {"option": "不接，让电话转去房东家，天亮再说", "cost": "房东会立刻上楼，丈夫的疑心会更重"}
       ],
       "leverage": null,
@@ -1074,13 +1072,13 @@
       "flags": ["timed"],
       "location_ids": ["apartment_201_tatami_room", "apartment_second_floor_wooden_hallway"],
       "trigger": "房东看见201门缝里的烛光和门口的湿拖鞋，把备用钥匙插进了锁眼，要求一分钟内开门检查排水。",
-      "objective": "在不让结衣成为闲话的前提下应付房东。",
+      "objective": "在不让青梅成为闲话的前提下应付房东。",
       "choice": "是开门坦然说明，还是隔门拖延。",
       "immediate": {"text": "钥匙在锁眼里转动，铝门被拍得直颤。", "minutes": 2},
       "near": {"text": "门一开，手电光就会照进屋里。", "deadline_minutes": 6},
-      "far": {"trigger": "房东把今晚的事说给了町内会", "consequence": "结衣成了全町的谈资，老家的人也会听说。", "due_days": 1},
+      "far": {"trigger": "房东把今晚的事说给了町内会", "consequence": "青梅成了全町的谈资，老家的人也会听说。", "due_days": 1},
       "exits": [
-        {"option": "开门，说结衣家漏水，在这里避雨", "cost": "房东会记下这件事，随时可能拿出来说"},
+        {"option": "开门，说青梅家漏水，在这里避雨", "cost": "房东会记下这件事，随时可能拿出来说"},
         {"option": "隔门请房东先去检查202的漏水", "cost": "房东会在202看见空着的屋子，起更大的疑心"}
       ],
       "leverage": null,
@@ -1101,8 +1099,8 @@
       "near": {"text": "蜡烛一灭，屋里只剩雨声。", "deadline_minutes": 20},
       "far": {"trigger": "黑暗里有人碰翻了铁盘", "consequence": "蜡油烫坏了榻榻米，房东第二天要你照价赔偿。", "due_days": 1},
       "exits": [
-        {"option": "冒雨下楼向老匠人借蜡烛", "cost": "走廊上会撞见房东，屋里只剩结衣一个人"},
-        {"option": "吹灭残烛，坐在黑暗里听结衣说完", "cost": "看不见彼此的脸，有些话反而更难说"}
+        {"option": "冒雨下楼向老匠人借蜡烛", "cost": "走廊上会撞见房东，屋里只剩青梅一个人"},
+        {"option": "吹灭残烛，坐在黑暗里听青梅说完", "cost": "看不见彼此的脸，有些话反而更难说"}
       ],
       "leverage": null,
       "hook_ids": ["h_yui_divorce_paper"],
@@ -1116,14 +1114,14 @@
       "flags": ["timed"],
       "location_ids": ["apartment_202_neighbor_room", "apartment_201_tatami_room"],
       "trigger": "202的天花板鼓起一大块，泥水从裂缝里往下灌，随时可能整片塌下来。",
-      "objective": "在天花板塌下前，帮结衣抢出要紧的东西。",
-      "choice": "是冲进去抢东西，还是拉着结衣直接撤出来。",
+      "objective": "在天花板塌下前，帮青梅抢出要紧的东西。",
+      "choice": "是冲进去抢东西，还是拉着青梅直接撤出来。",
       "immediate": {"text": "头顶的木梁发出吱呀的断裂声。", "minutes": 8},
       "near": {"text": "天花板一塌，202就彻底没法住人了。", "deadline_minutes": 25},
       "far": {"trigger": "屋顶坍塌，雨水灌进配电线路", "consequence": "整栋楼被贴上危险建筑的封条，所有人都得搬去公民馆。", "due_days": 1},
       "exits": [
         {"option": "冲进202，抢出那只装着离婚届的手提包", "cost": "被掉下来的灰浆砸伤了肩膀"},
-        {"option": "拉着结衣退回201，什么都不拿", "cost": "结衣的衣服和照片都泡在了泥水里"}
+        {"option": "拉着青梅退回201，什么都不拿", "cost": "青梅的衣服和照片都泡在了泥水里"}
       ],
       "leverage": null,
       "hook_ids": ["h_yui_phone_courage"],
@@ -1136,12 +1134,12 @@
       "source": "person",
       "flags": ["timed"],
       "location_ids": ["apartment_201_tatami_room", "apartment_second_floor_wooden_hallway"],
-      "trigger": "对门的插画师拿着打火机敲门借火，看见了屋里的结衣，笑着说要不要进来坐坐。",
+      "trigger": "对门的插画师拿着打火机敲门借火，看见了屋里的青梅，笑着说要不要进来坐坐。",
       "objective": "决定要不要让插画师加入，以及插画师能帮上什么忙。",
       "choice": "是请插画师进来，还是请插画师替你们守住走廊。",
       "immediate": {"text": "打火机的砂轮咔哒咔哒地响。", "minutes": 4},
       "near": {"text": "插画师要是在走廊上大声说笑，整栋楼的门都会打开。", "deadline_minutes": 10},
-      "far": {"trigger": "插画师的速写在杂志上刊出", "consequence": "画里的人被街坊一眼认出，结衣成了闲话的主角。", "due_days": 1},
+      "far": {"trigger": "插画师的速写在杂志上刊出", "consequence": "画里的人被街坊一眼认出，青梅成了闲话的主角。", "due_days": 1},
       "exits": [
         {"option": "请插画师进屋，一起喝杯热茶", "cost": "屋里多了一个人，有些话就说不出口了"},
         {"option": "请插画师在走廊上帮忙看着房东", "cost": "插画师会要你欠一个人情"}
@@ -1158,14 +1156,14 @@
       "flags": ["timed"],
       "location_ids": ["apartment_201_tatami_room", "apartment_second_floor_wooden_hallway"],
       "trigger": "天快亮时台风骤然移走，新干线宣布提前恢复，丈夫发来传呼说已经上车，两小时后到东京。",
-      "objective": "在丈夫到之前，让结衣想清楚见面时要说什么。",
-      "choice": "是陪结衣等丈夫回来当面谈，还是送结衣先回老家。",
+      "objective": "在丈夫到之前，让青梅想清楚见面时要说什么。",
+      "choice": "是陪青梅等丈夫回来当面谈，还是送青梅先回老家。",
       "immediate": {"text": "传呼机在安静的清晨哔哔作响。", "minutes": 15},
       "near": {"text": "两小时后，丈夫的皮鞋声就会响在木楼梯上。", "deadline_minutes": 40},
-      "far": {"trigger": "丈夫回来时结衣还没想清楚", "consequence": "离婚届又被收回抽屉，一切回到原样。", "due_days": 1},
+      "far": {"trigger": "丈夫回来时青梅还没想清楚", "consequence": "离婚届又被收回抽屉，一切回到原样。", "due_days": 1},
       "exits": [
-        {"option": "陪结衣留下来，等丈夫回来当面递出离婚届", "cost": "你得站在门外，听两个人吵完"},
-        {"option": "送结衣去车站坐车回老家", "cost": "这件事被推迟了，丈夫回来会扑个空"}
+        {"option": "陪青梅留下来，等丈夫回来当面递出离婚届", "cost": "你得站在门外，听两个人吵完"},
+        {"option": "送青梅去车站坐车回老家", "cost": "这件事被推迟了，丈夫回来会扑个空"}
       ],
       "leverage": null,
       "hook_ids": ["h_yui_divorce_paper"],
@@ -1200,7 +1198,7 @@
       "kind": "approach",
       "slot": "artist_neighbor_sakura",
       "location_ids": ["apartment_201_tatami_room", "apartment_second_floor_wooden_hallway"],
-      "text": "{artist_neighbor_sakura.name}靠在门框上转着打火机：“借个火呗。……哟，结衣姐也在？那正好，我这儿有热咖啡，一起？”"
+      "text": "{artist_neighbor_sakura.name}靠在门框上转着打火机：“借个火呗。……哟，青梅也在？那正好，我这儿有热咖啡，一起？”"
     },
     {
       "id": "h_inoue_old_letter",
@@ -1235,7 +1233,7 @@
       "kind": "approach",
       "slot": "artist_neighbor_sakura",
       "location_ids": ["apartment_ground_laundry_shed"],
-      "text": "{artist_neighbor_sakura.name}坐在洗衣机上晃着腿：“说真的，你跟结衣姐，到底是怎么回事？”"
+      "text": "{artist_neighbor_sakura.name}坐在洗衣机上晃着腿：“说真的，你跟青梅，到底是怎么回事？”"
     },
     {
       "id": "h_hayashi_shed_count",
@@ -1315,7 +1313,7 @@
       "id": "t_parents_letter",
       "category": "关系",
       "requires": ["neighbor_yui"],
-      "text": "老匠人保管的那封信是两家父母当年写的：信里说，如果结衣将来过得不好，两家都会支持结衣回来，那笔债也早就有人替结衣家还清了。"
+      "text": "老匠人保管的那封信是两家父母当年写的：信里说，如果{neighbor_yui.given}将来过得不好，两家都会支持{neighbor_yui.given}回来，那笔债也早就有人替{neighbor_yui.given}家还清了。"
     },
     {
       "id": "t_phone_line_dead",

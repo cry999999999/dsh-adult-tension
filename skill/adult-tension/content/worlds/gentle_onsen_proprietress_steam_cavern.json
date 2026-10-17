@@ -1107,7 +1107,7 @@
   }
  ],
  "clock_start": {
-  "label": "溶洞气温升至极限引发严重烫伤与热休克倒计时",
+  "label": "十一月，红叶季",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1675,10 +1675,6 @@
    "炉"
   ],
   "nickname_patterns": [
-   {
-    "gender": "female",
-    "pattern": "{family}老板娘"
-   },
    {
     "gender": "male",
     "pattern": "{family}先生"

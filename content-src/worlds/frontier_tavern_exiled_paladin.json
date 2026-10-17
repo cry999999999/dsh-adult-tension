@@ -15,7 +15,7 @@
   ],
   "style_hint": "以风雪呼啸与金属绞紧压迫感衬托退役女统领高贵坚毅风骨，将冷兵器铠甲机械形变与微观杠杆力矩自救融为一体。",
   "clock_start": {
-    "label": "悬空石桥崩断生铁链咬死重甲瞬间",
+    "label": "极北的长冬，霜月",
     "minute": 1080
   },
   "clock_style": "hm",
@@ -55,8 +55,8 @@
     "given_female": [
       "艾莲娜",
       "西莉亚",
-      "艾格妮丝",
-      "玛尔塔",
+      "伊莎贝",
+      "罗莎琳",
       "薇薇安",
       "克洛伊",
       "菲奥娜",
@@ -73,10 +73,10 @@
     "given_male": [
       "加里克",
       "布莱斯",
-      "多尔顿",
-      "罗德里克",
-      "索林",
-      "霍夫曼",
+      "卢修斯",
+      "贝特朗",
+      "阿尔里克",
+      "奥斯温",
       "雷恩",
       "奥古斯特",
       "贝尔纳",
@@ -104,32 +104,16 @@
       "夜弦",
       "飞羽",
       "天堑",
-      "玄冰"
+      "霜歌"
     ],
     "nickname_patterns": [
       {
-        "pattern": "{given}统领",
-        "gender": "female"
+        "pattern": "{family}",
+        "gender": "any"
       },
       {
-        "pattern": "{family}要塞长",
-        "gender": "male"
-      },
-      {
-        "pattern": "{given}学者",
-        "gender": "male"
-      },
-      {
-        "pattern": "{given}侍从",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}工匠",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}修女",
-        "gender": "female"
+        "pattern": "{given}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

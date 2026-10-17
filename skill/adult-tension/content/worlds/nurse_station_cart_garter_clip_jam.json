@@ -1286,7 +1286,7 @@
   }
  ],
  "clock_start": {
-  "label": "早交班前八分钟，吊袜带夹咬进抢救车滑轨",
+  "label": "十一月的一个周一",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1834,28 +1834,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}护士"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}医生"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}师傅"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}护士长"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}药师"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}院长"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

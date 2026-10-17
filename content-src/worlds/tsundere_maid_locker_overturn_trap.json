@@ -14,7 +14,7 @@
   ],
   "style_hint": "散场后的二次元咖啡馆：彩灯还没关，地下通道只剩应急灯。写傲娇女仆蕾丝围裙下的身段、婴儿肥上没卸净的腮红与喘息，动作落在棘轮扳手撬柜角上。",
   "clock_start": {
-    "label": "周年庆舞会散场，音箱震落砸塌储物柜，铁柜卡死更衣门",
+    "label": "开店三周年纪念日，四月",
     "minute": 1360
   },
   "clock_style": "hm",
@@ -100,28 +100,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "夏语冰大人",
-        "gender": "female"
+        "pattern": "小{family}",
+        "gender": "any"
       },
       {
-        "pattern": "语冰大小姐",
-        "gender": "female"
-      },
-      {
-        "pattern": "蓝店长",
-        "gender": "male"
-      },
-      {
-        "pattern": "白领班",
-        "gender": "female"
-      },
-      {
-        "pattern": "安主管",
-        "gender": "male"
-      },
-      {
-        "pattern": "乔工师",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

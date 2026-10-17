@@ -14,7 +14,7 @@
   ],
   "style_hint": "烈日下的万人看台与转播特写。写初恋校花婴儿肥两颊的羞耻红晕、被扯起的纯白百褶裙与汗湿的喘息，动作落在不锈钢扁别针挑绳结上。",
   "clock_start": {
-    "label": "决胜盘局间休息，百褶裙挂死裁判椅倒钩",
+    "label": "大运会网球女单决赛日，八月",
     "minute": 1140
   },
   "clock_style": "hm",
@@ -108,28 +108,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}学姐",
-        "gender": "female"
+        "pattern": "小{family}",
+        "gender": "any"
       },
       {
-        "pattern": "{family}学长",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}裁判",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}学妹",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}师傅",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}少",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

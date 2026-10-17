@@ -14,7 +14,7 @@
   ],
   "style_hint": "低魔中世纪要塞的冷硬铁血与压抑张力：残破白银胸甲与生铁锁链的冰冷脆响、暗红魔纹在雪白肌肤上熔岩般蔓延时的战栗与喘息、秘银刻刀在烛火下的寒芒、石壁水滴落在滚烫锁骨上升起白雾。亲密只在锁链解开、魔纹平息之后，清醒自愿。",
   "clock_start": {
-    "label": "夜里十一点一刻，血月当空，暴雪封死要塞",
+    "label": "帝国历三一四年，隆冬",
     "minute": 1395
   },
   "clock_style": "hm",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "骑士长",
+        "pattern": "{given}",
         "gender": "any"
       },
       {
-        "pattern": "审判官",
-        "gender": "any"
-      },
-      {
-        "pattern": "异端大主教",
-        "gender": "any"
-      },
-      {
-        "pattern": "军团长",
-        "gender": "any"
-      },
-      {
-        "pattern": "异端炼金师",
+        "pattern": "{family}",
         "gender": "any"
       }
     ],
@@ -141,7 +129,7 @@
   "player_identities": [
     {
       "id": "pc_templar_knight_commander",
-      "role": "战败受缚仍不折的女骑士长",
+      "role": "战败受缚仍不折的骑士长",
       "gender": "any",
       "title_patterns": [
         {
@@ -163,7 +151,7 @@
         "潜伏在要塞外围三千精锐铁骑的联络密令与信鸽暗记",
         "体内代代相传的“圣耀之心”神圣魔力"
       ],
-      "reputation": "北疆无敌的女武神，曾以八百骑横扫兽人狂潮，孤高决绝、誓死不折。",
+      "reputation": "北疆无敌的战神，曾以八百骑横扫兽人狂潮，孤高决绝、誓死不折。",
       "risks": [
         "子夜钟响前驱不散魔纹，就会沦为火刑柱上的祭品"
       ]

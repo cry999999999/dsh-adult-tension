@@ -17,7 +17,7 @@
   ],
   "style_hint": "写琴弦、松香与冷库的寒气，写开演钟声一声声逼近；机巧要落在大提琴本身的部件上，人物都是成年人，体面与心事并重",
   "clock_start": {
-    "label": "调温金库",
+    "label": "1889 年，盛夏",
     "minute": 1165
   },
   "clock_style": "hm",
@@ -99,8 +99,8 @@
         "gender": "any"
       },
       {
-        "pattern": "{family}首席",
-        "gender": "female"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

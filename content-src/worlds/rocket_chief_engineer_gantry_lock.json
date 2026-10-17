@@ -14,7 +14,7 @@
   ],
   "style_hint": "海上航天的钢铁与浪：半潜平台、塔架、四面翻白的海。写傲娇女总师连体工装下的身段、被风吹红的面颊与喘息，动作落在不锈钢探针硬柄挑开棘爪上。",
   "clock_start": {
-    "label": "台风雷暴逼近平台，高空检修吊笼防坠棘爪卡死",
+    "label": "九月，发射窗口期",
     "minute": 1380
   },
   "clock_style": "hm",
@@ -100,20 +100,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}总师",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}工",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}主管",
+        "pattern": "小{family}",
         "gender": "any"
       },
       {
-        "pattern": "{family}台长",
-        "gender": "female"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

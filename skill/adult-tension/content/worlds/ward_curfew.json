@@ -1459,7 +1459,7 @@
   }
  ],
  "clock_start": {
-  "label": "开元年间的一个暮春傍晚，街鼓敲到第五百九十声",
+  "label": "开元年间，暮春",
   "minute": 1110
  },
  "clock_style": "hm",
@@ -1913,10 +1913,6 @@
    {
     "gender": "any",
     "pattern": "阿{given}"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}娘子"
    },
    {
     "gender": "male",

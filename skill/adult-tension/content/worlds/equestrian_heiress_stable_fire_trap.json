@@ -1102,7 +1102,7 @@
   }
  ],
  "clock_start": {
-  "label": "草料库火势逼近横梁，千斤吊闸卡死倒计时",
+  "label": "赛马季，六月",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1671,16 +1671,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}大小姐"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}医生"
-   },
-   {
     "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

@@ -1102,7 +1102,7 @@
   }
  ],
  "clock_start": {
-  "label": "尾部转向架受拉撕裂，半截车厢坠崖倒计时",
+  "label": "一月，雪季",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1655,7 +1655,7 @@
   ],
   "given_neutral": [
    "一冬",
-   "雪原",
+   "远舟",
    "白川",
    "霁月",
    "雾凇",
@@ -1671,16 +1671,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "乘务长"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}师傅"
-   },
-   {
     "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

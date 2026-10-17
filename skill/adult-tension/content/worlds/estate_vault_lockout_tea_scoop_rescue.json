@@ -1160,7 +1160,7 @@
   }
  ],
  "clock_start": {
-  "label": "雷击断电大门砸死，惰性气体充压倒计时五分钟",
+  "label": "七月，梅雨季末",
   "minute": 1395
  },
  "clock_style": "hm",
@@ -1785,16 +1785,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}少夫人"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}师傅"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
     "gender": "any",
-    "pattern": "小{family}"
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

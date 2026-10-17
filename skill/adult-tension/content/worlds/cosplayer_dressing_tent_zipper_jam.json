@@ -1122,7 +1122,7 @@
   }
  ],
  "clock_start": {
-  "label": "主舞台开场倒计时启动，重型机甲胸甲受压抱死在马道护栏",
+  "label": "动漫盛会首日，八月",
   "minute": 840
  },
  "clock_style": "hm",
@@ -1673,16 +1673,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}大小姐"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}工"
-   },
-   {
     "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

@@ -14,7 +14,7 @@
   ],
   "style_hint": "写打完仗以后的日常：麦酒、面包、修灯、排队还债；旧伤藏在围裙和袖口底下，一提当年，屋里就安静。",
   "clock_start": {
-    "label": "停战十周年前三天的傍晚",
+    "label": "停战十周年前三天",
     "minute": 1080
   },
   "clock_style": "hm",
@@ -90,15 +90,7 @@
         "gender": "any"
       },
       {
-        "pattern": "{given}大姐",
-        "gender": "female"
-      },
-      {
-        "pattern": "{given}老兄",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}家的",
+        "pattern": "{family}",
         "gender": "any"
       }
     ],

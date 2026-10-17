@@ -14,7 +14,7 @@
   ],
   "style_hint": "冷硬森严的水利重工硬核工笔，刻画水下百米深层混凝土廊道受万吨水压挤压的沉闷呻吟、特种合金加长摇把在偏心阀腔内旋转时的机械咬合、潜水背心下被冰水与热汗浸透的起伏躯体，台词充斥着严苛的水锤计算与决断。",
   "clock_start": {
-    "label": "拦污栅受万吨巨木压塌，快速启闭门液压卡死半空",
+    "label": "七月，主汛期",
     "minute": 1395
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}总工",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}班长",
-        "gender": "any"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

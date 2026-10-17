@@ -14,7 +14,7 @@
   ],
   "style_hint": "全景落地玻璃的暖光与窗外名媛的目光。写温柔院长婴儿肥两颊的潮红、撕开的浅粉刷手服下半露的雪白酥胸与被勾紧的白金项圈、低着头压住的喘息，动作落在圆头钢剪别液压挂钩上。",
   "clock_start": {
-    "label": "出浴前十五秒，机械臂勾住领口里的白金项圈",
+    "label": "五月的一个周六",
     "minute": 1140
   },
   "clock_style": "hm",
@@ -100,7 +100,7 @@
       "素风",
       "清欢",
       "景澄",
-      "秋水",
+      "书禾",
       "云帆",
       "微澜",
       "清和",
@@ -108,28 +108,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}院长",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}医生",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}工",
-        "gender": "male"
-      },
-      {
         "pattern": "小{given}",
         "gender": "female"
       },
       {
-        "pattern": "{family}夫人",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}摄影",
-        "gender": "male"
+        "pattern": "小{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

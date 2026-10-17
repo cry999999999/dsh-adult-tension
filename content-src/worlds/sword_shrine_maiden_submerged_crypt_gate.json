@@ -14,7 +14,7 @@
   ],
   "style_hint": "东方上古王陵的水墨笔法：白天写守陵村的炊烟、祠堂里的鼓声、陵前神道两旁长满青苔的石兽；夜里写暗河冰水一寸寸漫到咽喉、青铜门上蟠龙浮雕被浊浪拍打的冷。剑巫女清冷寡言，张力藏在冰水里贴紧时那一下没躲开的呼吸里。",
   "clock_start": {
-    "label": "冰冷暗河浊浪彻底漫顶灭顶倒计时",
+    "label": "春汛时节",
     "minute": 10
   },
   "clock_style": "hm",
@@ -99,10 +99,6 @@
       "湄"
     ],
     "nickname_patterns": [
-      {
-        "pattern": "{given}巫女",
-        "gender": "female"
-      },
       {
         "pattern": "{family}先生",
         "gender": "male"

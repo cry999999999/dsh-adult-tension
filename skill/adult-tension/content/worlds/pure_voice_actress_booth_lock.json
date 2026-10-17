@@ -1320,7 +1320,7 @@
   }
  ],
  "clock_start": {
-  "label": "终章告白录到第十一遍，排风机失控，气密门负压抱死",
+  "label": "资料片交付前一周，十一月",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1860,28 +1860,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "苏老师"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "female",
-    "pattern": "清菡同学"
-   },
-   {
-    "gender": "male",
-    "pattern": "程总监"
-   },
-   {
-    "gender": "female",
-    "pattern": "温指导"
-   },
-   {
-    "gender": "male",
-    "pattern": "叶工程师"
-   },
-   {
-    "gender": "male",
-    "pattern": "沈师傅"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

@@ -14,7 +14,7 @@
   ],
   "style_hint": "帷幕夹角的皮革与冷金属气味，外表狂野火辣、内心纯情。写金发辣妹婴儿肥两颊的羞耻红霞、没扣上的前襟与喘息，动作落在折叠钨钢刃割挂绳上。",
   "clock_start": {
-    "label": "开秀前三分钟，机能裙磁链卷进更衣柜合页",
+    "label": "时装周第三天，九月",
     "minute": 1140
   },
   "clock_style": "hm",
@@ -108,28 +108,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}设计师",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}总监",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}老师",
-        "gender": "female"
-      },
-      {
         "pattern": "{family}姐",
         "gender": "female"
       },
       {
-        "pattern": "{family}师傅",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}总",
-        "gender": "male"
+        "pattern": "小{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

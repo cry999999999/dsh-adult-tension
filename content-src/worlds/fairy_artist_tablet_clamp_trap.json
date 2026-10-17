@@ -14,7 +14,7 @@
   ],
   "style_hint": "挑空画室的落地窗与深夜灯影里的社死压迫。写仙女画家婴儿肥两靥的羞耻红霞、被热压板咬住的长裙，动作落在纯钛小刮刀挑阀与拔电源上。",
   "clock_start": {
-    "label": "裱画机压板爆裂咬裙，客厅大屏同步投屏同人稿",
+    "label": "毕业展前两周，五月",
     "minute": 1015
   },
   "clock_style": "hm",
@@ -100,28 +100,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "白师妹",
-        "gender": "female"
+        "pattern": "小{family}",
+        "gender": "any"
       },
       {
-        "pattern": "芷微仙子",
-        "gender": "female"
-      },
-      {
-        "pattern": "苏策展人",
-        "gender": "female"
-      },
-      {
-        "pattern": "江部长",
-        "gender": "male"
-      },
-      {
-        "pattern": "柳学妹",
-        "gender": "female"
-      },
-      {
-        "pattern": "陆工",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

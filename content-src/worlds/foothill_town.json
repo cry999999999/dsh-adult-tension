@@ -14,7 +14,7 @@
  ],
  "style_hint": "写手艺和器物：磨剑石、符纸、锁链、木匣、榜牌；山上的人说话讲山规，山下的人说话讲价钱。",
  "clock_start": {
-  "label": "收徒大典前三天的傍晚，镇上的客栈都挂上了“满”字牌",
+  "label": "收徒大典前三天，镇上客栈都挂了“满”字牌",
   "minute": 1050
  },
  "clock_style": "hm",
@@ -85,22 +85,18 @@
    "风"
   ],
   "nickname_patterns": [
-   {
-    "pattern": "阿{given}",
-    "gender": "any"
-   },
-   {
-    "pattern": "{given}姑娘",
-    "gender": "female"
-   },
-   {
-    "pattern": "{family}兄",
-    "gender": "male"
-   },
-   {
-    "pattern": "{family}道友",
-    "gender": "any"
-   }
+    {
+      "pattern": "阿{given}",
+      "gender": "any"
+    },
+    {
+      "pattern": "{given}姑娘",
+      "gender": "female"
+    },
+    {
+      "pattern": "{family}兄",
+      "gender": "male"
+    }
   ]
  },
  "rules": [

@@ -14,7 +14,7 @@
   ],
   "style_hint": "冷硬森严的重型矿山机械硬核工笔，刻画悬空六十米卷扬机房内万吨钢桁架受烈火烘烤与自重下坠撕扯的剧烈震颤、特种插销摇把在减速箱偏心齿圈内合力下压的沉重机械咬合、紧身阻燃防尘服下被高温汗水浸透的英武身躯，台词充斥着严苛的矿机力学计算与生死决断。",
   "clock_start": {
-    "label": "受料臂液压油爆燃，卷扬机制动闸抱死下坠",
+    "label": "一月，严冬",
     "minute": 1395
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}总指挥",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}工长",
-        "gender": "any"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

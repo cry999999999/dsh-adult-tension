@@ -14,7 +14,7 @@
   ],
   "style_hint": "演播厅舞台硬核机械工笔，刻画水幕暴走倾泻下的舞台积水危机、特种淬火纯钢腰包背夹在升降台重型安全棘轮内的剧烈杠杆撬动，清纯爱豆湿透打歌服紧贴曼妙身躯的视觉张力，台词坚韧克制充满默契协作。",
   "clock_start": {
-    "label": "水幕喷淋暴走积水漫溢，升降T台倾斜咬死舞鞋",
+    "label": "跨年晚会彩排日，十二月",
     "minute": 1330
   },
   "clock_style": "hm",
@@ -100,15 +100,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "C位",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}总监",
-        "gender": "male"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

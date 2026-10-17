@@ -14,7 +14,7 @@
   ],
   "style_hint": "万人荧光棒与全网推流的光海里，写舞见带婴儿肥的甜笑、蓬起的洛丽塔撑裙下勒进腿根的白丝吊袜带、咬住唇的喘息，动作落在钢发夹挑退锁舌上。",
   "clock_start": {
-    "label": "压轴谢幕，升降台下沉，胶条咬住吊袜带",
+    "label": "夏日嘉年华最后一天，八月",
     "minute": 1200
   },
   "clock_style": "hm",
@@ -111,24 +111,8 @@
         "gender": "female"
       },
       {
-        "pattern": "{family}队长",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}总工",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}导",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}摄",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}会长",
-        "gender": "male"
+        "pattern": "小{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

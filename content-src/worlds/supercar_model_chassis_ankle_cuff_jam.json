@@ -14,7 +14,7 @@
   ],
   "style_hint": "万人车展的长焦闪光灯与超跑底盘下的脚踝死锁。写清冷车模冷白长腿、微婴儿肥两颊的红晕与绷紧欲裂的高开叉裙摆，动作落在细高跟钛合金跟尖顶开卡簧上。",
   "clock_start": {
-    "label": "首发合影前三十秒，脚踝银链绞进导流板",
+    "label": "车展首日，四月",
     "minute": 1140
   },
   "clock_style": "hm",
@@ -92,7 +92,7 @@
       "星芒",
       "疾风",
       "烈焰",
-      "微光",
+      "小满",
       "清和",
       "子墨",
       "安然",
@@ -112,24 +112,8 @@
         "gender": "female"
       },
       {
-        "pattern": "{family}总监",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}工",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}模",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}督导",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}总",
-        "gender": "male"
+        "pattern": "小{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

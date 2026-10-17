@@ -14,7 +14,7 @@
   ],
   "style_hint": "首演前夕的歌剧院：白天写排练厅的谱架、指挥台上抬起的手、乐团调音时那一声长长的A；夜里写空荡荡的观众席、深井里的液压油雾和头顶吱呀作响的承重梁。指挥家在台上端庄得不可冒犯，张力藏在散场后只对一个人放下的那只手里。",
   "clock_start": {
-    "label": "上方舞台承重梁挤压开裂，乐池坍塌倒计时",
+    "label": "演出季开幕周，十月",
     "minute": 10
   },
   "clock_style": "hm",
@@ -100,15 +100,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}指挥",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}师傅",
+        "pattern": "小{family}",
         "gender": "any"
       },
       {
-        "pattern": "小{family}",
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

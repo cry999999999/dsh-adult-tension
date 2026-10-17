@@ -1121,7 +1121,7 @@
   }
  ],
  "clock_start": {
-  "label": "军阀开炮炸碎流沙瓮，玄武岩天平翻板自锁卡死倾斜",
+  "label": "民国十六年，深秋",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1688,15 +1688,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}当家"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}掌门"
-   },
-   {
-    "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

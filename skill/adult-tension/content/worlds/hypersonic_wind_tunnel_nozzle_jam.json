@@ -1122,7 +1122,7 @@
   }
  ],
  "clock_start": {
-  "label": "十马赫激波烧蚀，喷管喉道膨胀卡死抱死",
+  "label": "三月，风洞试验季",
   "minute": 1395
  },
  "clock_style": "hm",
@@ -1665,7 +1665,7 @@
    "凝"
   ],
   "given_male": [
-   "长空",
+   "凌川",
    "凌云",
    "铁锋",
    "山河",
@@ -1695,15 +1695,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}总师"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}工长"
-   },
-   {
-    "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

@@ -1120,7 +1120,7 @@
   }
  ],
  "clock_start": {
-  "label": "冷库主灯闪烁，铸铁转轮锁外侧卡死",
+  "label": "七月，盛夏",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1690,11 +1690,7 @@
    },
    {
     "gender": "any",
-    "pattern": "{family}师傅"
-   },
-   {
-    "gender": "any",
-    "pattern": "{given}警官"
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

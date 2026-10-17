@@ -14,7 +14,7 @@
   ],
   "style_hint": "冷酷严谨的末日硬核科幻工笔，着重刻画钛铝合金支架抵在铸钢齿槽间的剧烈金属形变声、防护服内急促升温的喘息气雾与辐射计数器令人发慌的蜂鸣，台词充满末世生存法则的冰冷与决绝。",
   "clock_start": {
-    "label": "外部辐射风暴抵达峰值，气动阀电磁离合抱死",
+    "label": "封闭第七年，尘暴季",
     "minute": 1380
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}工",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}队长",
-        "gender": "any"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

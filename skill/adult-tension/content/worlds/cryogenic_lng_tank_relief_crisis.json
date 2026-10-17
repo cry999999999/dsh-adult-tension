@@ -1122,7 +1122,7 @@
   }
  ],
  "clock_start": {
-  "label": "液货舱超压，安全阀结霜冰堵抱死",
+  "label": "远洋航程第十二天，冬季",
   "minute": 1395
  },
  "clock_style": "hm",
@@ -1695,15 +1695,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}老轨"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}大管"
-   },
-   {
-    "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

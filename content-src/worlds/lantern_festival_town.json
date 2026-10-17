@@ -8,7 +8,7 @@
  "premise": "灯会七夜，人与非人共用一条长街；规矩写在契约与称谓里，叫错一个名字就是大事。",
  "tone": ["纸灯", "香火", "水声", "温柔里带一点危险"],
  "style_hint": "多写灯火、香火、水声和夜里的气味；非人的东西只写一处异样，点到为止；对话里讲究称谓。",
- "clock_start": {"label": "灯会头一夜", "minute": 1110},
+ "clock_start": {"label": "灯会头一天", "minute": 1110},
  "clock_style": "shichen",
  "default_person": "second",
  "default_npc_gender_mix": {"female": 0.5, "male": 0.5, "nonbinary": 0.0},
@@ -17,12 +17,11 @@
   "family": ["柳", "苏", "温", "胡", "黎", "桑", "杜", "阮", "云", "花", "石", "江", "叶", "霍", "裴", "祝"],
   "given_female": ["春眠", "青禾", "素月", "晚棠", "采萍", "映雪", "流萤", "碧荷", "挽霜", "杏雨", "疏影", "月容", "芷兰", "听荷"],
   "given_male": ["长庚", "砚舟", "鹤归", "松年", "远山", "墨川", "青崖", "石安", "云起", "霁川", "怀山", "秋生", "野渡", "听松"],
-  "given_neutral": ["灯影", "夜阑", "无咎", "白露", "寒山", "清欢", "随风", "未晞", "如晦", "长宁", "暮雨", "知还"],
+  "given_neutral": ["停云", "夜阑", "无咎", "白露", "寒山", "清欢", "随风", "未晞", "如晦", "长宁", "暮雨", "知还"],
   "nickname_patterns": [
-   {"pattern": "阿{given_last}", "gender": "any"},
-   {"pattern": "{family}娘子", "gender": "female"},
-   {"pattern": "{family}郎", "gender": "male"},
-   {"pattern": "{given}", "gender": "any"}
+    {"pattern": "阿{given_last}", "gender": "any"},
+    {"pattern": "{family}郎", "gender": "male"},
+    {"pattern": "{given}", "gender": "any"}
   ]
  },
  "rules": [
@@ -67,12 +66,12 @@
   },
   {
    "id": "contract_scribe",
-   "role": "代写契约的先生",
+   "role": "代写契约的代笔人",
    "gender": "any",
    "title_patterns": [{"pattern": "{family}先生", "gender": "male"}, {"pattern": "{given}", "gender": "any"}],
    "age_range": [26, 50],
    "social_position": "equal",
-   "baseline": "镇上替人和非人代写契约的先生，朱砂和桑皮纸都是自己备的。",
+   "baseline": "镇上替人和非人代写契约的代笔人，朱砂和桑皮纸都是自己备的。",
    "resources": ["一手能让契约生效的字", "记得每一份契约的到期日"],
    "reputation": "字正，心也算正",
    "risks": ["写错过一份契约上的名字，那位客人至今还没来找麻烦"]

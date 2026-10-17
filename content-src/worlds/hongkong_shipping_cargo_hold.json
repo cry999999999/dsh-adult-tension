@@ -14,7 +14,7 @@
   ],
   "style_hint": "港岛豪门与船厂重工的反差：青衣的龙门吊、浮坞的压载泵、霓虹倒映的维港。写骄矜千金湿透工装下的曲线与喘息，动作落在六分仪扳手拧人孔螺母上。",
   "clock_start": {
-    "label": "十号风球挂出，风暴潮漫过坞墙",
+    "label": "八月，台风季",
     "minute": 1020
   },
   "clock_style": "hm",
@@ -92,16 +92,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "霍大小姐",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}水手",
+        "pattern": "小{family}",
         "gender": "any"
       },
       {
-        "pattern": "陆大副",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ]
   },

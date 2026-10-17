@@ -14,7 +14,7 @@
   ],
   "style_hint": "冷硬逼真的硬核深海工程工笔，着重刻画万米水压下钛合金机械爪与高碳钢阀槽咬合时的剧烈摩擦火星、零度海水浸泡下两人剧烈起伏的胸膛与防寒服包裹下极限制动，台词干脆果决充满深潜人员的冷峻克制。",
   "clock_start": {
-    "label": "深海断层强震冲击波抵达，水力平衡减压阀主轴过载抱死",
+    "label": "科考季第四十天",
     "minute": 1380
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}总师",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}领航",
-        "gender": "any"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

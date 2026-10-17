@@ -14,7 +14,7 @@
   ],
   "style_hint": "千人大礼堂的聚光灯下，高冷神格的崩解：西装崩扣、黑色鱼骨胸衣的金属扣反光。写冷面会长婴儿肥两颊的羞耻红霞与强压的喘息，动作落在翻页笔背夹挑卡簧上。",
   "clock_start": {
-    "label": "讲台电机短路急升咬死外套崩飞纽扣，导播特写倒计时开始",
+    "label": "九月，迎新典礼当天",
     "minute": 1140
   },
   "clock_style": "hm",
@@ -100,28 +100,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}会长",
-        "gender": "female"
+        "pattern": "小{family}",
+        "gender": "any"
       },
       {
-        "pattern": "{family}副主席",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}导播",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}队长",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}工",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}老师",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

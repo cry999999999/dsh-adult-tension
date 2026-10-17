@@ -17,7 +17,7 @@
   ],
   "style_hint": "极北重工业巨轮水下底舱抢险自救，纯正中文命名实体，全员具备法定成年资质",
   "clock_start": {
-    "label": "冰河夜巡",
+    "label": "一月，界河封冻期",
     "minute": 1380
   },
   "clock_style": "hm",
@@ -99,8 +99,8 @@
         "gender": "male"
       },
       {
-        "pattern": "{family}警官",
-        "gender": "female"
+        "pattern": "小{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

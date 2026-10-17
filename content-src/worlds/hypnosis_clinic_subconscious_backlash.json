@@ -14,7 +14,7 @@
  ],
  "style_hint": "聚焦隔音诊室里的微观感官：脑电屏上跳荡的红色波峰、水银沙漏的细响、天鹅绒门帘后交错的喘息、银怀表链划过皮肤的微凉，以及严谨学者清醒后的动摇。",
  "clock_start": {
-  "label": "零点十分，仪器反噬，距自动消磁还有四十分钟",
+  "label": "十月的一个周二",
   "minute": 10
  },
  "clock_style": "hm",
@@ -91,26 +91,14 @@
    "忍"
   ],
   "nickname_patterns": [
-   {
-    "pattern": "{family}研究员",
-    "gender": "any"
-   },
-   {
-    "pattern": "{family}副教授",
-    "gender": "any"
-   },
-   {
-    "pattern": "{family}医师",
-    "gender": "any"
-   },
-   {
-    "pattern": "受试者",
-    "gender": "any"
-   },
-   {
-    "pattern": "监察官",
-    "gender": "any"
-   }
+    {
+      "pattern": "{family}",
+      "gender": "any"
+    },
+    {
+      "pattern": "{given}",
+      "gender": "any"
+    }
   ],
   "order": "family_first"
  },
@@ -192,7 +180,7 @@
     "顶层实验设备的核心权限",
     "研究所全套脑科学算法源码的离线密匙"
    ],
-   "reputation": "言辞冰冷禁欲的学术才女，把研究生们批得不敢抬头。",
+   "reputation": "言辞冰冷禁欲的学术天才，把研究生们批得不敢抬头。",
    "risks": [
     "反噬一旦曝光，学术生涯就此终结。"
    ]

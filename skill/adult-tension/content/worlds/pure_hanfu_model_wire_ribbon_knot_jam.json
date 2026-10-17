@@ -1320,7 +1320,7 @@
   }
  ],
  "clock_start": {
-  "label": "影棚顶灯短路跳闸，威亚受阻绞死汉服暗系带",
+  "label": "大片开机第十天，春",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1872,7 +1872,7 @@
    "景和",
    "子昂",
    "绍辉",
-   "文博",
+   "文澈",
    "宏远",
    "冠霖",
    "崇武",
@@ -1897,20 +1897,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}老师"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}指导"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}导"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}总监"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

@@ -1107,7 +1107,7 @@
   }
  ],
  "clock_start": {
-  "label": "航煤油罐受电火花引燃与卷帘门导轨偏心咬死倒计时",
+  "label": "八月，雷雨季",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1674,10 +1674,6 @@
    "港"
   ],
   "nickname_patterns": [
-   {
-    "gender": "female",
-    "pattern": "{family}师傅"
-   },
    {
     "gender": "male",
     "pattern": "{family}君"

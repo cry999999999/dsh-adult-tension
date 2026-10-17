@@ -14,7 +14,7 @@
   ],
   "style_hint": "高山疗养院工程硬核工笔，刻画地热蒸汽泄漏死角内高温白雾扑面的窒息危机、实心不锈钢听诊器听头猛烈敲击微动开关的清脆咬合、粉色制服被汗水蒸汽浸透贴合起伏身躯的视觉张力，台词沉稳克制充满流体力学判断与生死信赖。",
   "clock_start": {
-    "label": "蒸汽压力急剧攀升，防灾卷门卡死阻断唯一排险通路",
+    "label": "十二月，温泉季",
     "minute": 1395
   },
   "clock_style": "hm",
@@ -100,15 +100,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}护士",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}师傅",
-        "gender": "male"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

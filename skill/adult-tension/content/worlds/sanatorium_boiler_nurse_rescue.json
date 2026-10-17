@@ -1161,7 +1161,7 @@
   }
  ],
  "clock_start": {
-  "label": "蒸汽压力急剧攀升，防灾卷门卡死阻断唯一排险通路",
+  "label": "十二月，温泉季",
   "minute": 1395
  },
  "clock_style": "hm",
@@ -1742,16 +1742,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}护士"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}师傅"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
     "gender": "any",
-    "pattern": "小{family}"
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

@@ -14,7 +14,7 @@
   ],
   "style_hint": "狂暴失重的深井硬工业硬核工笔，刻画十吨提升斗沿万米钢索失速狂坠的失重眩晕、钛合金扳手卡入导向轮抱闸槽时的耀眼火花与剧烈反冲、紧身工装背心下被冷汗浸透起伏的身躯，台词充斥着严苛的矿井卷扬机械力矩公差与生死相托。",
   "clock_start": {
-    "label": "卷扬机主齿轮崩碎打齿，十吨提升斗失控狂坠",
+    "label": "十月，开采旺季",
     "minute": 1395
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}工",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}班长",
-        "gender": "any"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

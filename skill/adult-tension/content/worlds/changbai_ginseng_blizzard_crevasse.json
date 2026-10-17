@@ -1264,7 +1264,7 @@
   }
  ],
  "clock_start": {
-  "label": "冰崩落石砸瘪登山锁扣，暴风雪封堵天坑底部退路",
+  "label": "宣统二年九月，山上已落初雪",
   "minute": 960
  },
  "clock_style": "hm",
@@ -1827,16 +1827,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}把头"
-   },
-   {
     "gender": "male",
     "pattern": "{family}先生"
    },
    {
     "gender": "any",
-    "pattern": "{family}把桩"
+    "pattern": "阿{given_last}"
    }
   ],
   "order": "family_first"
@@ -1851,7 +1847,7 @@
    "baseline": "负责长白山玄武岩地质构造测绘、冰川裂隙勘探与高山地质标本采集的学者。",
    "gender": "any",
    "id": "pi_geological_scholar_surveyor",
-   "reputation": "精通现代高山地质测绘与冰裂隙力学评估，被当地采参队尊称为通晓岩石脾性的洋先生。",
+   "reputation": "精通现代高山地质测绘与冰裂隙力学评估，被当地采参队尊称为通晓岩石脾性的洋专家。",
    "resources": [
     "一卷军用高强度登山主绳",
     "一台德国高倍率防雾双筒望远镜"
@@ -1908,7 +1904,7 @@
     21,
     24
    ],
-   "baseline": "负责背负地质铁镐、煤油炉与防寒营帐的成年健壮关东小伙。",
+   "baseline": "负责背负地质铁镐、煤油炉与防寒营帐的成年健壮关东青年。",
    "gender": "any",
    "id": "pi_expedition_young_porter_tracker",
    "reputation": "身强力壮耐严寒，性格踏实少言寡语，听从指挥但缺乏冰岩破拆专业技能。",

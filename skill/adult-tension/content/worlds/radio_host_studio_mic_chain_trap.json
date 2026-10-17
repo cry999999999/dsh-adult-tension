@@ -1286,7 +1286,7 @@
   }
  ],
  "clock_start": {
-  "label": "零点开播前十五秒，白金乳链卡进麦克风转轴",
+  "label": "十月的一个周一",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1835,28 +1835,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}主播"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}总监"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}师傅"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}导播"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}督导"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}总"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

@@ -17,7 +17,7 @@
   ],
   "style_hint": "强调水下密闭水力学高压破拆刚体物理机制与机要军人从容自律风骨，全员成年法定合规",
   "clock_start": {
-    "label": "通信暗堡",
+    "label": "1969 年，冬",
     "minute": 1340
   },
   "clock_style": "hm",
@@ -99,8 +99,8 @@
         "gender": "male"
       },
       {
-        "pattern": "{family}机要员",
-        "gender": "female"
+        "pattern": "小{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

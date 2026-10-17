@@ -14,7 +14,7 @@
   ],
   "style_hint": "极寒雪山神殿硬核工笔，刻画零下三十度暴雪扑面的致命失温危机、高刚性淬火短匕十字护手在石板支点凹槽中的剧烈杠杆咬合、素白织锦祭袍被风雪融水浸透贴合起伏身躯的视觉张力，台词沉稳克制充满重力平衡计算与生死信赖。",
   "clock_start": {
-    "label": "暴雪极寒低温逼近，巨石祭坛偏心加剧倾覆",
+    "label": "初冬，山上已经积雪",
     "minute": 1395
   },
   "clock_style": "hm",
@@ -71,7 +71,7 @@
       "罗曼",
       "亚瑟",
       "加文",
-      "埃里克",
+      "西蒙",
       "卢卡斯",
       "马库斯",
       "维克多",
@@ -100,16 +100,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "圣女大人",
-        "gender": "female"
+        "pattern": "{given}",
+        "gender": "any"
       },
       {
-        "pattern": "{given}殿下",
-        "gender": "female"
-      },
-      {
-        "pattern": "{given}师傅",
-        "gender": "male"
+        "pattern": "{family}",
+        "gender": "any"
       }
     ]
   },

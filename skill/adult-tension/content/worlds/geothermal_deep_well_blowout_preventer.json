@@ -1122,7 +1122,7 @@
   }
  ],
  "clock_start": {
-  "label": "深层超高压地热蒸汽突发井喷，防喷器液压刺漏抱死",
+  "label": "十二月，钻探第四十天",
   "minute": 1395
  },
  "clock_style": "hm",
@@ -1696,15 +1696,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}总工"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}班长"
-   },
-   {
-    "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

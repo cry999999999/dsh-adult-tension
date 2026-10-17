@@ -14,7 +14,7 @@
  ],
  "style_hint": "现代都市刑侦的冷硬质感与幽闭荷尔蒙：单向镜冰冷的水银光、测谎仪示波器的绿线在墙上狂跳、导电凝胶抹在颈动脉上的微凉战栗、包臀裙下黑丝摩擦的沙沙声、手铐撞击桌面的金属脆响。台词冷酷针锋相对；成年男女清醒自愿、互为猎人与猎物。",
  "clock_start": {
-  "label": "夜里十一点十分，台风断电，审讯室铅门反锁",
+  "label": "九月初，台风季",
   "minute": 1390
  },
  "clock_style": "hm",
@@ -92,26 +92,14 @@
    "步"
   ],
   "nickname_patterns": [
-   {
-    "pattern": "侧写官",
-    "gender": "any"
-   },
-   {
-    "pattern": "警备队长",
-    "gender": "any"
-   },
-   {
-    "pattern": "特别监察官",
-    "gender": "any"
-   },
-   {
-    "pattern": "刑辩律师",
-    "gender": "any"
-   },
-   {
-    "pattern": "科搜研主任",
-    "gender": "any"
-   }
+    {
+      "pattern": "{family}",
+      "gender": "any"
+    },
+    {
+      "pattern": "{given}",
+      "gender": "any"
+    }
   ],
   "order": "family_first"
  },

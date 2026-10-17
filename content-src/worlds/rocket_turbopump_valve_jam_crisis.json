@@ -14,7 +14,7 @@
   ],
   "style_hint": "冷硬森严的尖端商业航天硬核工笔，刻画发射台狭窄死角内极低温液氧白雾喷涌的致命窒息、特种钛合金扳手在微调销孔上合力下压的机械咬合、工装背心下被冷汗与气浪浸透的起伏躯体，台词充斥着严苛的火箭动力学计算与生死决断。",
   "clock_start": {
-    "label": "倒计时四十秒，主吹除电磁阀极冷卡死抱死",
+    "label": "十二月，发射任务密集期",
     "minute": 1395
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}总师",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}工长",
-        "gender": "any"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

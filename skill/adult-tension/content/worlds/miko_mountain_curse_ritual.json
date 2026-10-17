@@ -1260,7 +1260,7 @@
   }
  ],
  "clock_start": {
-  "label": "泥石流冲断主梁青铜神龛滑移咬卡瞬间",
+  "label": "八月末，夏秋之交",
   "minute": 1320
  },
  "clock_style": "hm",
@@ -1721,11 +1721,11 @@
    "朝阳",
    "白夜",
    "深雪",
-   "秋水",
+   "澄",
    "风早",
-   "千早",
+   "千寻",
    "八云",
-   "神乐",
+   "遥",
    "弥生",
    "睦月",
    "如月",
@@ -1735,28 +1735,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}大巫女"
+    "gender": "any",
+    "pattern": "{family}"
    },
    {
-    "gender": "female",
-    "pattern": "{given}大人"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}权宫司"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}工长"
-   },
-   {
-    "gender": "male",
-    "pattern": "{given}记者"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}队长"
+    "gender": "any",
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

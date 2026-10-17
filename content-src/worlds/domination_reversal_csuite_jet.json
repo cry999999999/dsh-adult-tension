@@ -14,7 +14,7 @@
   ],
   "style_hint": "聚焦机舱里的失重与声音：舷窗外的雷电、冰雹砸机翼、内脏悬空的下坠感、真丝领带勒在腕上的热度，以及刻薄女总裁在怀里压抑的喘息与抽泣。",
   "clock_start": {
-    "label": "零点十五分，二号引擎喘振，距双发停车滑翔还有三十分钟",
+    "label": "三月，季度末",
     "minute": 15
   },
   "clock_style": "hm",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}总裁",
+        "pattern": "{family}",
         "gender": "any"
       },
       {
-        "pattern": "{family}特助",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}机长",
-        "gender": "any"
-      },
-      {
-        "pattern": "首席特助",
-        "gender": "any"
-      },
-      {
-        "pattern": "乘务长",
+        "pattern": "{given}",
         "gender": "any"
       }
     ],
@@ -192,7 +180,7 @@
         "家族千亿资产的最终表决权",
         "瑞士银行无记名保险库的实物密钥卡"
       ],
-      "reputation": "商界铁娘子，踩着十厘米高跟鞋让上万员工噤若寒蝉。",
+      "reputation": "商界铁腕人物，踩着十厘米高跟鞋让上万员工噤若寒蝉。",
       "risks": [
         "一旦在下属面前失控，旁系叔伯会拿这段失态做文章逼宫。"
       ]

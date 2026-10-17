@@ -1161,7 +1161,7 @@
   }
  ],
  "clock_start": {
-  "label": "暴雪极寒低温逼近，巨石祭坛偏心加剧倾覆",
+  "label": "初冬，山上已经积雪",
   "minute": 1395
  },
  "clock_style": "hm",
@@ -1714,7 +1714,7 @@
    "罗曼",
    "亚瑟",
    "加文",
-   "埃里克",
+   "西蒙",
    "卢卡斯",
    "马库斯",
    "维克多",
@@ -1743,16 +1743,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "圣女大人"
+    "gender": "any",
+    "pattern": "{given}"
    },
    {
-    "gender": "female",
-    "pattern": "{given}殿下"
-   },
-   {
-    "gender": "male",
-    "pattern": "{given}师傅"
+    "gender": "any",
+    "pattern": "{family}"
    }
   ],
   "order": "family_first"

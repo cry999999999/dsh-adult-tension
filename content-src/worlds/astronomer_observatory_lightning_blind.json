@@ -14,7 +14,7 @@
   ],
   "style_hint": "盛唐钦天监的浪漫：漏刻滴水、更鼓一声声传遍坊墙、浑天仪上的星宿。写典雅女官被雨浇透的官袍曲线与喘息，动作落在量天尺侧棱别开齿轮上。",
   "clock_start": {
-    "label": "狂暴雷击轰入避雷铜柱，浑天仪齿轮主轴咬死朝服",
+    "label": "开元十二年，盛夏雷雨季",
     "minute": 1380
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}女史",
-        "gender": "female"
+        "pattern": "阿{given_last}",
+        "gender": "any"
       },
       {
-        "pattern": "{family}灵台",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}博士",
+        "pattern": "{given}",
         "gender": "any"
       }
     ]

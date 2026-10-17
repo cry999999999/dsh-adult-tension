@@ -1512,7 +1512,7 @@
   }
  ],
  "clock_start": {
-  "label": "晚上九点，暴雪压塌了出山吊桥",
+  "label": "1894 年，隆冬",
   "minute": 1260
  },
  "clock_style": "hm",
@@ -2083,24 +2083,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "male",
-    "pattern": "{family}少爷"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}女仆长"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}夫人"
+    "gender": "any",
+    "pattern": "{given}"
    },
    {
     "gender": "any",
-    "pattern": "{family}总管"
-   },
-   {
-    "gender": "any",
-    "pattern": "执事长官"
+    "pattern": "{family}"
    }
   ],
   "order": "family_first"
@@ -2181,7 +2169,7 @@
    "risks": [
     "若被揭穿勾结地方债阀伪造老公爵遗嘱之刑事伪造罪证，将面临被剥夺公爵遗孀年金并移送帝国特别法庭"
    ],
-   "role": "企图勾结债阀夺取领地之摄政遗孀公爵夫人",
+   "role": "企图勾结债阀夺取领地之丧偶的摄政公爵",
    "social_position": "high",
    "title_patterns": [
     {

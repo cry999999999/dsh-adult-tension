@@ -1320,7 +1320,7 @@
   }
  ],
  "clock_start": {
-  "label": "女一号刚出门，狂风震闭大殿重门，生铁门栓咬死",
+  "label": "古装巨制拍摄第四十天，深秋",
   "minute": 1290
  },
  "clock_style": "hm",
@@ -1857,28 +1857,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "楚老师"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "female",
-    "pattern": "凝霜阁主"
-   },
-   {
-    "gender": "male",
-    "pattern": "萧导"
-   },
-   {
-    "gender": "female",
-    "pattern": "薛总监"
-   },
-   {
-    "gender": "male",
-    "pattern": "沈队长"
-   },
-   {
-    "gender": "male",
-    "pattern": "陆工师"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

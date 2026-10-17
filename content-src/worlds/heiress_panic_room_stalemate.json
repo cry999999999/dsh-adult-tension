@@ -15,7 +15,7 @@
   ],
   "style_hint": "现代悬疑、微电机关、名门冷傲、死线逃生",
   "clock_start": {
-    "label": "死线破晓",
+    "label": "初夏的一个周六",
     "minute": 300
   },
   "clock_style": "hm",
@@ -97,8 +97,8 @@
         "gender": "female"
       },
       {
-        "pattern": "{family}队长",
-        "gender": "female"
+        "pattern": "小{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

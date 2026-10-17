@@ -1122,7 +1122,7 @@
   }
  ],
  "clock_start": {
-  "label": "主缆撕裂电涌熔断离合器，张紧悬臂切入不可逆失衡滑脱",
+  "label": "天梯建设第十二年，春",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1690,15 +1690,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}上尉"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}队长"
-   },
-   {
-    "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

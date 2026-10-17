@@ -14,7 +14,7 @@
   ],
   "style_hint": "定影液的酸涩味、暗房红灯下的阴影与汗水、留声机慵懒的爵士乐、走廊尽头巡捕皮靴的脚步声、丝绸与毛呢擦过的静电。",
   "clock_start": {
-    "label": "深秋夜，宵禁前两小时",
+    "label": "1940 年，深秋",
     "minute": 1260
   },
   "clock_style": "hm",
@@ -100,19 +100,11 @@
         "gender": "male"
       },
       {
-        "pattern": "{family}太太",
-        "gender": "female"
-      },
-      {
         "pattern": "{family}小姐",
         "gender": "female"
       },
       {
         "pattern": "小{family}",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}老板",
         "gender": "any"
       }
     ],

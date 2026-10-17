@@ -14,7 +14,7 @@
   ],
   "style_hint": "冷酷硬核的深空重工工笔，着重刻画三万米平流层边缘极寒风切变的狂暴撕扯、实心钛钽合金撬杠抵在数千吨张紧绞盘齿槽间的剧烈金属形变爆鸣、纳米紧身战斗服包裹下急促起伏的身躯与面罩内泛起的白霜汗气，台词充满军令如山与极限求生的冷峻决断。",
   "clock_start": {
-    "label": "主缆撕裂电涌熔断离合器，张紧悬臂切入不可逆失衡滑脱",
+    "label": "天梯建设第十二年，春",
     "minute": 1380
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}上尉",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}队长",
-        "gender": "any"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

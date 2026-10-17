@@ -14,7 +14,7 @@
   ],
   "style_hint": "厚重凌厉的古典机关探险硬核工笔，着重刻画重达数十吨的悬空玄武岩翻板在流沙偏载冲击下的失衡颤动、实心纯金降魔杵与铸铁暗槽咬死时的剧烈金属摩擦声、月白紧身短打下急促起伏的娇躯与滚烫汗珠，台词充斥着摸金秘传口诀与江湖儿女的决绝血性。",
   "clock_start": {
-    "label": "军阀开炮炸碎流沙瓮，玄武岩天平翻板自锁卡死倾斜",
+    "label": "民国十六年，深秋",
     "minute": 1380
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}当家",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}掌门",
-        "gender": "any"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

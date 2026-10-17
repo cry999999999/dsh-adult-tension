@@ -1280,7 +1280,7 @@
   }
  ],
  "clock_start": {
-  "label": "专场开演前四十分钟，项圈D型环咬死踏板曲柄，管家按响门铃",
+  "label": "独奏专场当天，十二月",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1787,28 +1787,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "皇甫大小姐"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "female",
-    "pattern": "玥千金"
-   },
-   {
-    "gender": "male",
-    "pattern": "钟管家"
-   },
-   {
-    "gender": "male",
-    "pattern": "楚首席"
-   },
-   {
-    "gender": "female",
-    "pattern": "林助手"
-   },
-   {
-    "gender": "male",
-    "pattern": "乔总监"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

@@ -14,7 +14,7 @@
   ],
   "style_hint": "昏黄闪烁的劣质魔石灯、浸染血渍的泛黄羊皮纸欠条、铜算盘珠子拨动时的刺耳脆响、阴暗石壁上残留的防抗魔拘束环，以及公会总管脸上褪去白日职业假笑后的冰冷审视。",
   "clock_start": {
-    "label": "亥时末，距离天明奴隶清算仅剩两个时辰",
+    "label": "拓荒历六十年，收税月",
     "minute": 1360
   },
   "clock_style": "hm",
@@ -66,7 +66,7 @@
       "凯恩",
       "维克托",
       "杰拉德",
-      "罗兰",
+      "洛伦",
       "戴蒙",
       "雷格",
       "巴恩",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "总管{family}",
-        "gender": "any"
-      },
-      {
-        "pattern": "执刑官{family}",
-        "gender": "any"
-      },
-      {
         "pattern": "老{family}",
         "gender": "any"
       },
       {
-        "pattern": "破烂{family}",
-        "gender": "any"
-      },
-      {
-        "pattern": "断刃{family}",
+        "pattern": "{given}",
         "gender": "any"
       }
     ],

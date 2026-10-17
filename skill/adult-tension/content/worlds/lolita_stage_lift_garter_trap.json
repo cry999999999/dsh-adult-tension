@@ -1268,7 +1268,7 @@
   }
  ],
  "clock_start": {
-  "label": "压轴谢幕，升降台下沉，胶条咬住吊袜带",
+  "label": "夏日嘉年华最后一天，八月",
   "minute": 1200
  },
  "clock_style": "hm",
@@ -1768,24 +1768,8 @@
     "pattern": "{given}酱"
    },
    {
-    "gender": "female",
-    "pattern": "{family}队长"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}总工"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}导"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}摄"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}会长"
+    "gender": "any",
+    "pattern": "小{family}"
    }
   ],
   "order": "family_first"

@@ -1303,7 +1303,7 @@
   }
  ],
  "clock_start": {
-  "label": "暴风雨子夜一点整，货轮倾斜三十度，通海阀破裂，距离隔舱彻底灭顶仅剩八十分钟",
+  "label": "十一月，北大西洋的风暴季",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1837,24 +1837,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}大小姐"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}少爷"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
     "gender": "any",
-    "pattern": "{family}管家"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}大副"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}工程师"
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"
@@ -1964,7 +1952,7 @@
    "risks": [
     "若在此地与千金一同溺毙将导致两大家族开战引爆国际海运大地震。"
    ],
-   "role": "对立航运巨头家族青年名门公子",
+   "role": "对立航运巨头家族青年名门子弟",
    "social_position": "high",
    "title_patterns": [
     {

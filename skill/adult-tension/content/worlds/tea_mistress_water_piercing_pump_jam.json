@@ -1287,7 +1287,7 @@
   }
  ],
  "clock_start": {
-  "label": "闭幕大典彩排，潜水泵倒吸卷住旗袍与金线",
+  "label": "非遗博览会闭幕日，十月",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1818,7 +1818,7 @@
    "之诺",
    "景天",
    "怀安",
-   "若水",
+   "清禾",
    "元化",
    "嘉言",
    "天瑞",
@@ -1829,28 +1829,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}若夫人"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}师兄"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}组长"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}师妹"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}班长"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}少东家"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

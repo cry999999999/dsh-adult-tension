@@ -1122,7 +1122,7 @@
   }
  ],
  "clock_start": {
-  "label": "太湖倒灌洪峰冲毁外侧栈道，挑空大绣轩倾斜受困",
+  "label": "七月，太湖汛期",
   "minute": 900
  },
  "clock_style": "hm",
@@ -1676,16 +1676,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}掌门"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
     "gender": "any",
-    "pattern": "{family}工匠"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}大工"
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

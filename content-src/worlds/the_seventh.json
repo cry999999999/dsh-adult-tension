@@ -14,7 +14,7 @@
  ],
  "style_hint": "写屏幕和声音：待机灯、弹幕、耳机里的回声；人前用皮套的语气，人后用哑掉的真声。",
  "clock_start": {
-  "label": "周年直播前一周，深夜下播后",
+  "label": "周年直播前一周",
   "minute": 1410
  },
  "clock_style": "hm",
@@ -84,18 +84,14 @@
    "鹿鸣"
   ],
   "nickname_patterns": [
-   {
-    "pattern": "小{family}",
-    "gender": "any"
-   },
-   {
-    "pattern": "{family}老师",
-    "gender": "any"
-   },
-   {
-    "pattern": "阿{given_last}",
-    "gender": "any"
-   }
+    {
+      "pattern": "小{family}",
+      "gender": "any"
+    },
+    {
+      "pattern": "阿{given_last}",
+      "gender": "any"
+    }
   ]
  },
  "rules": [

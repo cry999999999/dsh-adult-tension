@@ -14,7 +14,7 @@
   ],
   "style_hint": "古典世家典雅与现代地下建筑硬核工笔，刻画字画库昏暗幽深中特种卷帘门下砸咬死的沉重阻绝、紫铜茶则折沿在锁舌咬合处受力的微细金属悲鸣、真丝旗袍被薄汗浸透贴合起伏躯体的视觉张力，台词沉稳克制而情愫暗涌。",
   "clock_start": {
-    "label": "雷击断电大门砸死，惰性气体充压倒计时五分钟",
+    "label": "七月，梅雨季末",
     "minute": 1395
   },
   "clock_style": "hm",
@@ -100,15 +100,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}少夫人",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}师傅",
-        "gender": "male"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

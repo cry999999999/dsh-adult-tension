@@ -14,7 +14,7 @@
   ],
   "style_hint": "雪国列车的工笔：白天写展望车厢外的雪山、餐车的热红酒、长隧道里突然熄灭的灯；夜里写悬崖边摇晃的车厢、冻骨的风雪和贴身取暖。乘务长温柔得像一杯热饮，张力藏在每晚多分出去的那一条毛毯里。",
   "clock_start": {
-    "label": "尾部转向架受拉撕裂，半截车厢坠崖倒计时",
+    "label": "一月，雪季",
     "minute": 10
   },
   "clock_style": "hm",
@@ -84,7 +84,7 @@
     ],
     "given_neutral": [
       "一冬",
-      "雪原",
+      "远舟",
       "白川",
       "霁月",
       "雾凇",
@@ -100,15 +100,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "乘务长",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}师傅",
+        "pattern": "小{family}",
         "gender": "any"
       },
       {
-        "pattern": "小{family}",
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

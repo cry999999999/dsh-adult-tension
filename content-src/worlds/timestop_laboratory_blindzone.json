@@ -14,7 +14,7 @@
  ],
  "style_hint": "放大绝对寂静里的微观感官：凝固水滴、半空火花、雷鸣般心跳、丝袜擦过冰冷地面的沙沙声。硬核量子工程感与高冷女强人失控后的反差羞愤并行。",
  "clock_start": {
-  "label": "午夜前一秒，时钟定格，十二分钟后湮灭",
+  "label": "2061 年 12 月 31 日",
   "minute": 1439
  },
  "clock_style": "hm",
@@ -92,26 +92,14 @@
    "翼"
   ],
   "nickname_patterns": [
-   {
-    "pattern": "女皇总监",
-    "gender": "female"
-   },
-   {
-    "pattern": "首席",
-    "gender": "any"
-   },
-   {
-    "pattern": "安保主管",
-    "gender": "any"
-   },
-   {
-    "pattern": "总工",
-    "gender": "any"
-   },
-   {
-    "pattern": "特派员",
-    "gender": "any"
-   }
+    {
+      "pattern": "{family}",
+      "gender": "any"
+    },
+    {
+      "pattern": "{given}",
+      "gender": "any"
+    }
   ],
   "order": "family_first"
  },

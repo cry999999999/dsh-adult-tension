@@ -14,7 +14,7 @@
  ],
  "style_hint": "写布料和手：软尺、划粉、扣子、朱笔、门帘；人说话讲礼数，真话藏在尺寸和措辞里。",
  "clock_start": {
-  "label": "明治十四年初秋，一个起雾的下午",
+  "label": "明治十四年初秋，一个起雾的日子",
   "minute": 870
  },
  "clock_style": "hm",
@@ -43,7 +43,7 @@
    "长谷川"
   ],
   "given_female": [
-   "千鹤",
+   "千代",
    "菊",
    "梅",
    "雪",
@@ -85,18 +85,18 @@
    "晴"
   ],
   "nickname_patterns": [
-   {
-    "pattern": "阿{given}",
-    "gender": "female"
-   },
-   {
-    "pattern": "{family}君",
-    "gender": "male"
-   },
-   {
-    "pattern": "{given}",
-    "gender": "any"
-   }
+    {
+      "pattern": "阿{given}",
+      "gender": "female"
+    },
+    {
+      "pattern": "{family}君",
+      "gender": "male"
+    },
+    {
+      "pattern": "{given}",
+      "gender": "any"
+    }
   ]
  },
  "rules": [

@@ -14,7 +14,7 @@
   ],
   "style_hint": "全景玻璃中庭的冷光与几百双鉴赏的目光。写冷艳修复师婴儿肥两颊浮起的潮红、撕开的工装前襟下若隐若现的乳环金链与绷紧的酥胸、屏着的喘息，动作落在牛角起画刀割绞绳上。",
   "clock_start": {
-    "label": "揭幕前二十秒，升降罩导轨咬住乳环金链",
+    "label": "宋画特展开幕日，初春",
     "minute": 1140
   },
   "clock_style": "hm",
@@ -108,28 +108,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}老师",
-        "gender": "female"
+        "pattern": "小{family}",
+        "gender": "any"
       },
       {
-        "pattern": "{family}总",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}师傅",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}副手",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}记者",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}理事长",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

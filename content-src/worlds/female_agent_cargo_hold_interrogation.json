@@ -14,7 +14,7 @@
   ],
   "style_hint": "水下三层隔舱没有任何窗户，唯有厚重船壳钢板外深海巨浪猛烈拍击引发的轰鸣低频震颤。冰冷刺骨的海水顺着锈蚀通海阀汩汩喷涌，混杂着机油与铁锈的咸腥气味在封闭隔舱内弥漫。",
   "clock_start": {
-    "label": "暴风雨夜凌晨两点整，距离通海阀全开压载舱彻底灭顶仅剩一个半时辰",
+    "label": "2002 年，六月",
     "minute": 1320
   },
   "clock_style": "hm",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}少校",
+        "pattern": "小{family}",
         "gender": "any"
       },
       {
-        "pattern": "{family}长官",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}特派员",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}专员",
-        "gender": "any"
-      },
-      {
-        "pattern": "代号{family}",
+        "pattern": "老{family}",
         "gender": "any"
       }
     ],
@@ -767,7 +755,7 @@
       },
       "voices": {
         "surface": "楚少校！坚持住！海燕就在你们头顶上！别听那个审讯官放屁，备用通海旁路已经被我锁死了！坚持两分钟，我这就下来接你们！",
-        "inner": "长官……若冰姐，十年前在边境你救了我一命，今天就算是把这条命沉在东海，海燕也一定要送你平平安安回家！"
+        "inner": "长官……少校，十年前在边境你救了我一命，今天就算是把这条命沉在东海，海燕也一定要送你平平安安回家！"
       },
       "schedule": [
         {

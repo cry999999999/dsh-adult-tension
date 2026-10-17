@@ -1396,7 +1396,7 @@
   }
  ],
  "clock_start": {
-  "label": "子夜二十三分，距离雷达盲区结束还有三个时辰",
+  "label": "1991 年，十月",
   "minute": 1403
  },
  "clock_style": "hm",
@@ -1947,20 +1947,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}夫人"
-   },
-   {
     "gender": "male",
     "pattern": "{family}先生"
    },
    {
     "gender": "any",
-    "pattern": "代号{given_last}"
-   },
-   {
-    "gender": "any",
-    "pattern": "亲爱的"
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

@@ -1286,7 +1286,7 @@
   }
  ],
  "clock_start": {
-  "label": "揭幕前二十秒，升降罩导轨咬住乳环金链",
+  "label": "宋画特展开幕日，初春",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1835,28 +1835,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}老师"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}总"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}师傅"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}副手"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}记者"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}理事长"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

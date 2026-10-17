@@ -1122,7 +1122,7 @@
   }
  ],
  "clock_start": {
-  "label": "浅层气包刺漏，分流器大胶芯在超压下抱死",
+  "label": "十月，钻井第六十天",
   "minute": 1395
  },
  "clock_style": "hm",
@@ -1696,15 +1696,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}总监"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}工长"
-   },
-   {
-    "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

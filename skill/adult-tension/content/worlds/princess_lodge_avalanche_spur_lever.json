@@ -1163,7 +1163,7 @@
   }
  ],
  "clock_start": {
-  "label": "雪崩积雪封顶断电，暗门导轨受压咬死",
+  "label": "1867 年，隆冬",
   "minute": 1050
  },
  "clock_style": "hm",
@@ -1689,7 +1689,7 @@
    "利奥波德",
    "费迪南",
    "爱德华",
-   "卡尔",
+   "马克西",
    "恩斯特",
    "阿道夫",
    "尤利乌斯"
@@ -1712,16 +1712,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "殿下"
+    "gender": "any",
+    "pattern": "{given}"
    },
    {
-    "gender": "male",
-    "pattern": "{given}卿"
-   },
-   {
-    "gender": "male",
-    "pattern": "{given}长官"
+    "gender": "any",
+    "pattern": "{family}"
    }
   ],
   "order": "family_first"

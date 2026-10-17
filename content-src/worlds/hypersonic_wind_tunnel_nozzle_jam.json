@@ -14,7 +14,7 @@
   ],
   "style_hint": "冷硬森严的尖端航天重工硬核工笔，刻画十马赫风洞喷管内两千度极热激波辐射的毁灭窒息、特种钨钼合金扳手在微调螺栓上合力下压的机械咬合、阻燃背心下被热浪与热汗浸透的起伏躯体，台词充斥着严苛的热障流体力学计算与生死决断。",
   "clock_start": {
-    "label": "十马赫激波烧蚀，喷管喉道膨胀卡死抱死",
+    "label": "三月，风洞试验季",
     "minute": 1395
   },
   "clock_style": "hm",
@@ -63,7 +63,7 @@
       "凝"
     ],
     "given_male": [
-      "长空",
+      "凌川",
       "凌云",
       "铁锋",
       "山河",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}总师",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}工长",
-        "gender": "any"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

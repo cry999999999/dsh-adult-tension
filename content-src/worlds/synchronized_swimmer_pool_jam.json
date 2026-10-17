@@ -14,7 +14,7 @@
   ],
   "style_hint": "训练馆的清澈与井底的幽暗：清晨的哨子、池边的压腿、亚克力观察窗外的蓝光。写冰水里贴身泳衣下的喘息与心跳，动作落在挑卡簧和扳阀门上。",
   "clock_start": {
-    "label": "水循环主阀气蚀抱死，减压井池底水位以每分钟二十公分暴涨",
+    "label": "全运会前一个月，八月",
     "minute": 1140
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}冠军",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}工",
+        "pattern": "小{family}",
         "gender": "any"
       },
       {
-        "pattern": "小{family}",
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

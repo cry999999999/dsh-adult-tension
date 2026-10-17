@@ -14,7 +14,7 @@
   ],
   "style_hint": "精灵林城的清透笔法：白天写树冠之间的吊桥、苔藓上的晨露、集市里精灵卖的月光花蜜；夜里写树芯空洞里越来越稀的空气、铁线荆棘一寸寸收拢的沙沙声。游侠清冷寡言，张力藏在被一个人类护在怀里时那一下僵住又松开的肩膀上。",
   "clock_start": {
-    "label": "密闭树芯氧气耗尽及铁线荆棘绞杀收缩倒计时",
+    "label": "世界树结果的季节",
     "minute": 10
   },
   "clock_style": "hm",
@@ -99,10 +99,6 @@
       "橡"
     ],
     "nickname_patterns": [
-      {
-        "pattern": "{given}游侠",
-        "gender": "female"
-      },
       {
         "pattern": "{given}先生",
         "gender": "male"

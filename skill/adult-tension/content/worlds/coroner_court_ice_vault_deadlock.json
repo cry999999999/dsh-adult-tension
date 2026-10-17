@@ -1123,7 +1123,7 @@
   }
  ],
  "clock_start": {
-  "label": "盛夏的黄昏，死士锁死地锁，毒烟顺通风孔漫入冰鉴正厅",
+  "label": "贞观十二年，盛夏",
   "minute": 1260
  },
  "clock_style": "hm",
@@ -1672,16 +1672,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}女官"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}少卿"
+    "gender": "any",
+    "pattern": "阿{given_last}"
    },
    {
     "gender": "any",
-    "pattern": "{family}捕头"
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

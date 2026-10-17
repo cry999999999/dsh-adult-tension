@@ -1161,7 +1161,7 @@
   }
  ],
  "clock_start": {
-  "label": "气体灭火喷射倒计时九十秒，防爆滑门断电闭锁",
+  "label": "一月，期末考试周",
   "minute": 1395
  },
  "clock_style": "hm",
@@ -1755,16 +1755,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}理事长"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}工"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
     "gender": "any",
-    "pattern": "小{family}"
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

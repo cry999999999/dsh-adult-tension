@@ -1317,7 +1317,7 @@
   }
  ],
  "clock_start": {
-  "label": "亥时末，距离巨龙挣脱地锚重返苍穹仅剩一个半时辰",
+  "label": "弑神纪元元年，极北的冬季",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1818,23 +1818,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "统领{family}"
+    "pattern": "{family}"
    },
    {
     "gender": "any",
-    "pattern": "断角{family}"
-   },
-   {
-    "gender": "any",
-    "pattern": "破龙{family}"
-   },
-   {
-    "gender": "any",
-    "pattern": "锁链{family}"
-   },
-   {
-    "gender": "any",
-    "pattern": "圣剑{family}"
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

@@ -1286,7 +1286,7 @@
   }
  ],
  "clock_start": {
-  "label": "凌晨两点补货，猫尾底座卡进冷柜合页",
+  "label": "十一月，期中考试周",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1830,27 +1830,11 @@
   "nickname_patterns": [
    {
     "gender": "female",
-    "pattern": "{family}店员"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}领班"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}师傅"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}收银"
-   },
-   {
-    "gender": "female",
     "pattern": "小{given}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}督导"
+    "gender": "any",
+    "pattern": "小{family}"
    }
   ],
   "order": "family_first"

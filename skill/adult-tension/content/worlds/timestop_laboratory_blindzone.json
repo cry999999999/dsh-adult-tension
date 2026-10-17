@@ -1410,7 +1410,7 @@
   }
  ],
  "clock_start": {
-  "label": "午夜前一秒，时钟定格，十二分钟后湮灭",
+  "label": "2061 年 12 月 31 日",
   "minute": 1439
  },
  "clock_style": "hm",
@@ -1965,24 +1965,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "女皇总监"
+    "gender": "any",
+    "pattern": "{family}"
    },
    {
     "gender": "any",
-    "pattern": "首席"
-   },
-   {
-    "gender": "any",
-    "pattern": "安保主管"
-   },
-   {
-    "gender": "any",
-    "pattern": "总工"
-   },
-   {
-    "gender": "any",
-    "pattern": "特派员"
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

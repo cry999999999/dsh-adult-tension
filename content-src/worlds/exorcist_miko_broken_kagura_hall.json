@@ -15,7 +15,7 @@
   ],
   "style_hint": "神圣巫女仪式美学与重型古建青铜机械卡滞物理自救硬核张力交织",
   "clock_start": {
-    "label": "神乐夜祭",
+    "label": "夏日神乐祭当天",
     "minute": 480
   },
   "clock_style": "hm",
@@ -58,7 +58,7 @@
       "静香",
       "真由",
       "若晴",
-      "千早",
+      "千寻",
       "铃音",
       "初音",
       "小夜"
@@ -97,8 +97,8 @@
         "gender": "male"
       },
       {
-        "pattern": "{family}大人",
-        "gender": "female"
+        "pattern": "{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

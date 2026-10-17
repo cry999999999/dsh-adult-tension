@@ -14,7 +14,7 @@
   ],
   "style_hint": "千年书院的檀香与满堂观礼的目光。写端庄女讲师婴儿肥两颊的红晕、绷紧透光的天青旗袍下被吸得发颤的丰盈轮廓、维持微笑时咬住的喘息，动作落在沉香木尺斜插阻断磁力线上。",
   "clock_start": {
-    "label": "示范前二十五秒，讲案漏磁吸住钢珠乳夹",
+    "label": "成人礼大典当天，五月",
     "minute": 1140
   },
   "clock_style": "hm",
@@ -97,7 +97,7 @@
       "素风",
       "清欢",
       "景澄",
-      "秋水",
+      "叙安",
       "云帆",
       "微澜",
       "清和",
@@ -108,28 +108,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}老师",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}总",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}工",
-        "gender": "male"
-      },
-      {
         "pattern": "小{given}",
         "gender": "female"
       },
       {
-        "pattern": "{family}山长",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}摄影",
-        "gender": "male"
+        "pattern": "小{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

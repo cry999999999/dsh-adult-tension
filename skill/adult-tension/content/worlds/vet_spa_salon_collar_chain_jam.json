@@ -1289,7 +1289,7 @@
   }
  ],
  "clock_start": {
-  "label": "出浴前十五秒，机械臂勾住领口里的白金项圈",
+  "label": "五月的一个周六",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1877,7 +1877,7 @@
    "素风",
    "清欢",
    "景澄",
-   "秋水",
+   "书禾",
    "云帆",
    "微澜",
    "清和",
@@ -1886,27 +1886,11 @@
   "nickname_patterns": [
    {
     "gender": "female",
-    "pattern": "{family}院长"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}医生"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}工"
-   },
-   {
-    "gender": "female",
     "pattern": "小{given}"
    },
    {
-    "gender": "female",
-    "pattern": "{family}夫人"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}摄影"
+    "gender": "any",
+    "pattern": "小{family}"
    }
   ],
   "order": "family_first"

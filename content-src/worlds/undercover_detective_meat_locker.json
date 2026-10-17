@@ -14,7 +14,7 @@
   ],
   "style_hint": "冰冷压抑的现代刑侦写实工笔，着重刻画零下二十五度呼气成霜的细白冰晶、防暴手电钨钢攻击头啃咬铸铁合页的刺耳刮擦声，台词克制利落、字字如刀。",
   "clock_start": {
-    "label": "冷库主灯闪烁，铸铁转轮锁外侧卡死",
+    "label": "七月，盛夏",
     "minute": 1380
   },
   "clock_style": "hm",
@@ -96,11 +96,7 @@
         "gender": "any"
       },
       {
-        "pattern": "{family}师傅",
-        "gender": "any"
-      },
-      {
-        "pattern": "{given}警官",
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

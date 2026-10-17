@@ -14,7 +14,7 @@
   ],
   "style_hint": "漫展的喧嚣与散场后的静：签售台的长队、主舞台的追光、闭馆后空荡的展厅。写冷艳声优重工战袍下的身段、泪痣与喘息，动作落在快拆扳钳撬拉链铜齿上。",
   "clock_start": {
-    "label": "主展馆闭馆警报鸣响，防暴平移门电磁断电落锁",
+    "label": "博览会最后一天，七月",
     "minute": 1260
   },
   "clock_style": "hm",
@@ -96,24 +96,16 @@
       "知衡",
       "若谷",
       "楚寒",
-      "凌霜"
+      "清岚"
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}老师",
-        "gender": "female"
+        "pattern": "小{family}",
+        "gender": "any"
       },
       {
-        "pattern": "{family}总监",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}主管",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}队长",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

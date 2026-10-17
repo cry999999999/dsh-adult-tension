@@ -1482,7 +1482,7 @@
   }
  ],
  "clock_start": {
-  "label": "零点十分，仪器反噬，距自动消磁还有四十分钟",
+  "label": "十月的一个周二",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1982,23 +1982,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}研究员"
+    "pattern": "{family}"
    },
    {
     "gender": "any",
-    "pattern": "{family}副教授"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}医师"
-   },
-   {
-    "gender": "any",
-    "pattern": "受试者"
-   },
-   {
-    "gender": "any",
-    "pattern": "监察官"
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"
@@ -2042,7 +2030,7 @@
    "baseline": "年满二十二岁的天才临床心理学研究员，坚信一切情欲不过是神经电信号，今夜亲自主持违规的双向反馈实验。",
    "gender": "any",
    "id": "hypnosis_lead_researcher",
-   "reputation": "言辞冰冷禁欲的学术才女，把研究生们批得不敢抬头。",
+   "reputation": "言辞冰冷禁欲的学术天才，把研究生们批得不敢抬头。",
    "resources": [
     "顶层实验设备的核心权限",
     "研究所全套脑科学算法源码的离线密匙"

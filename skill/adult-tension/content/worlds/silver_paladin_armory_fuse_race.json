@@ -1107,7 +1107,7 @@
   }
  ],
  "clock_start": {
-  "label": "军械库引信走火，千斤防爆闸咬死倒计时",
+  "label": "王国历五〇二年，秋",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1685,16 +1685,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "骑士长"
+    "gender": "any",
+    "pattern": "{given}"
    },
    {
     "gender": "any",
-    "pattern": "{given}爵士"
-   },
-   {
-    "gender": "any",
-    "pattern": "工学官"
+    "pattern": "{family}"
    }
   ],
   "order": "family_first"

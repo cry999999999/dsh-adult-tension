@@ -14,7 +14,7 @@
   ],
   "style_hint": "开放厨房的暖黄灯光与二十位名流的审视。写冷艳女主厨婴儿肥两颊的潮红、崩开的双排扣厨师服下半露的酥胸与勒紧腰肢的蕾丝束身衣、咬牙压住的喘息，动作落在糖艺钛调刀撬卡榫上。",
   "clock_start": {
-    "label": "品鉴前二十五秒，烤箱门轴咬住束身衣骨扣",
+    "label": "米其林评审日，三月",
     "minute": 1140
   },
   "clock_style": "hm",
@@ -89,7 +89,7 @@
       "埃尔"
     ],
     "given_neutral": [
-      "微光",
+      "书禾",
       "书意",
       "景行",
       "玄同",
@@ -108,28 +108,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}主厨",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}副厨",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}工",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}助理",
-        "gender": "female"
-      },
-      {
         "pattern": "{family}先生",
         "gender": "male"
       },
       {
-        "pattern": "{family}摄影",
-        "gender": "male"
+        "pattern": "小{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

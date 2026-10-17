@@ -14,7 +14,7 @@
   ],
   "style_hint": "大漠丝路的雄浑与洞窟里的细：鸣沙山的落日、九层楼的铁马叮当、修复师笔尖的朱砂。写端庄面容下的薄汗与喘息，动作落在钛铲卡槽拧螺母上。",
   "clock_start": {
-    "label": "黑沙暴封死96窟底门，通顶脚手架受气流冲击侧倾",
+    "label": "四月，沙尘季",
     "minute": 960
   },
   "clock_style": "hm",
@@ -54,7 +54,7 @@
       "素心",
       "若雪",
       "佩兰",
-      "文静",
+      "文姝",
       "雅南",
       "梦秋",
       "秀英",
@@ -92,16 +92,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}老师",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}工",
+        "pattern": "小{family}",
         "gender": "any"
       },
       {
-        "pattern": "{family}高工",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ]
   },

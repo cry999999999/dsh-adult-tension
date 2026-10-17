@@ -1120,7 +1120,7 @@
   }
  ],
  "clock_start": {
-  "label": "外部辐射风暴抵达峰值，气动阀电磁离合抱死",
+  "label": "封闭第七年，尘暴季",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1688,15 +1688,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}工"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}队长"
-   },
-   {
-    "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

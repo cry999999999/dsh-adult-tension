@@ -15,7 +15,7 @@
   ],
   "style_hint": "古典废墟、精金力学、皇室威仪、逆风反转",
   "clock_start": {
-    "label": "死线破晓",
+    "label": "神魔旧纪元最后一年，深秋",
     "minute": 300
   },
   "clock_style": "hm",
@@ -93,12 +93,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}殿下",
-        "gender": "female"
+        "pattern": "{given}",
+        "gender": "any"
       },
       {
-        "pattern": "{family}骑士长",
-        "gender": "male"
+        "pattern": "{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

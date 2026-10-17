@@ -1107,7 +1107,7 @@
   }
  ],
  "clock_start": {
-  "label": "暴风雪冻僵肢体及天体仪齿轮彻底压垮露台倒计时",
+  "label": "皇历四百年，冬至前一天",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1675,16 +1675,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{given}大人"
-   },
-   {
-    "gender": "male",
-    "pattern": "{given}博士"
+    "gender": "any",
+    "pattern": "小{given}"
    },
    {
     "gender": "any",
-    "pattern": "小{given}"
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

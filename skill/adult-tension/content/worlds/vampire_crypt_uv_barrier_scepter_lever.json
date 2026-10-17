@@ -1162,7 +1162,7 @@
   }
  ],
  "clock_start": {
-  "label": "防盗紫外线电涌强行锁死，断龙石咬死通道",
+  "label": "1897 年，深秋",
   "minute": 1320
  },
  "clock_style": "hm",
@@ -1724,16 +1724,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "大小姐"
-   },
-   {
-    "gender": "male",
-    "pattern": "{given}学者"
+    "gender": "any",
+    "pattern": "{given}"
    },
    {
     "gender": "any",
-    "pattern": "猎魔人"
+    "pattern": "{family}"
    }
   ],
   "order": "family_first"

@@ -1107,7 +1107,7 @@
   }
  ],
  "clock_start": {
-  "label": "秘银花瓣合拢压上祭台倒计时",
+  "label": "月轮祭当日",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1674,10 +1674,6 @@
    "瑶"
   ],
   "nickname_patterns": [
-   {
-    "gender": "female",
-    "pattern": "{given}殿下"
-   },
    {
     "gender": "male",
     "pattern": "{given}先生"

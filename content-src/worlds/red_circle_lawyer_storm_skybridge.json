@@ -14,7 +14,7 @@
   ],
   "style_hint": "金融城的锋利与云端的晃：并购条款、签字笔、玻璃天桥外的黄浦江。写清冷女合伙人高定套裙下的身段与喘息，动作落在精钢笔夹顶开微动开关上。",
   "clock_start": {
-    "label": "超强台风骤袭天桥阻尼位移，防火重门变形夹死女律师套裙",
+    "label": "九月，并购谈判周",
     "minute": 1020
   },
   "clock_style": "hm",
@@ -100,20 +100,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}律师",
-        "gender": "female"
+        "pattern": "小{family}",
+        "gender": "any"
       },
       {
-        "pattern": "{family}合伙人",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}工",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}总监",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

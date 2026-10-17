@@ -14,7 +14,7 @@
   ],
   "style_hint": "哥特奇幻与现代机电防盗交织的工笔，刻画高能紫外线逼近血族娇嫩肌肤的焦灼绝境、纯银精钢权杖顶端淬火尖棱在闸刀偏心搭扣上的剧烈力矩，傲娇血族千金哥特蕾丝礼裙被汗水湿透勾勒身姿与娇喘，动作硬核写实充满协作张力。",
   "clock_start": {
-    "label": "防盗紫外线电涌强行锁死，断龙石咬死通道",
+    "label": "1897 年，深秋",
     "minute": 1320
   },
   "clock_style": "hm",
@@ -100,15 +100,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "大小姐",
-        "gender": "female"
+        "pattern": "{given}",
+        "gender": "any"
       },
       {
-        "pattern": "{given}学者",
-        "gender": "male"
-      },
-      {
-        "pattern": "猎魔人",
+        "pattern": "{family}",
         "gender": "any"
       }
     ]

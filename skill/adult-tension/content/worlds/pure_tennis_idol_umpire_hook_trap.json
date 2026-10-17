@@ -1287,7 +1287,7 @@
   }
  ],
  "clock_start": {
-  "label": "决胜盘局间休息，百褶裙挂死裁判椅倒钩",
+  "label": "大运会网球女单决赛日，八月",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1829,28 +1829,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}学姐"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}学长"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}裁判"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}学妹"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}师傅"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}少"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

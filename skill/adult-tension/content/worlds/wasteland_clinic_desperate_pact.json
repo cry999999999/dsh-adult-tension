@@ -1410,7 +1410,7 @@
   }
  ],
  "clock_start": {
-  "label": "夜里十点，酸雨锈死了重力铅门",
+  "label": "核冬天第十二年，酸雨季",
   "minute": 1320
  },
  "clock_style": "hm",
@@ -1983,23 +1983,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}医官长"
+    "pattern": "{given}"
    },
    {
     "gender": "any",
-    "pattern": "{family}队长"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}保卫长"
-   },
-   {
-    "gender": "any",
-    "pattern": "总管"
-   },
-   {
-    "gender": "any",
-    "pattern": "技术长"
+    "pattern": "{family}"
    }
   ],
   "order": "family_first"
@@ -2051,7 +2039,7 @@
    "risks": [
     "一旦避难所安全保卫部发动武装政变破门强占诊所，自身作为技术官员将被彻底架空沦为囚徒"
    ],
-   "role": "掌控血清与氧气开关的冷傲女医官长",
+   "role": "掌控血清与氧气开关的冷傲医官长",
    "social_position": "equal",
    "title_patterns": [
     {

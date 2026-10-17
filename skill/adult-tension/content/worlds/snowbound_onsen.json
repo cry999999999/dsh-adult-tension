@@ -1279,7 +1279,7 @@
   }
  ],
  "clock_start": {
-  "label": "第一天 22:30",
+  "label": "1988 年深冬，大雪封山第三天",
   "minute": 1350
  },
  "clock_style": "hm",
@@ -1696,10 +1696,6 @@
    {
     "gender": "male",
     "pattern": "{family}先生"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}夫人"
    },
    {
     "gender": "any",

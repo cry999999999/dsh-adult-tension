@@ -1096,7 +1096,7 @@
   }
  ],
  "clock_start": {
-  "label": "死线破晓",
+  "label": "神魔旧纪元最后一年，深秋",
   "minute": 300
  },
  "clock_style": "hm",
@@ -1535,12 +1535,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}殿下"
+    "gender": "any",
+    "pattern": "{given}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}骑士长"
+    "gender": "any",
+    "pattern": "{family}"
    }
   ],
   "order": "family_first"

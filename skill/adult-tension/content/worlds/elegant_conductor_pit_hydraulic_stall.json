@@ -1102,7 +1102,7 @@
   }
  ],
  "clock_start": {
-  "label": "上方舞台承重梁挤压开裂，乐池坍塌倒计时",
+  "label": "演出季开幕周，十月",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1671,16 +1671,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}指挥"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}师傅"
-   },
-   {
     "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

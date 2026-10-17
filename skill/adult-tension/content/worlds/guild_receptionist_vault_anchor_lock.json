@@ -1102,7 +1102,7 @@
   }
  ],
  "clock_start": {
-  "label": "悬空转台脱轨卡死，气流狂暴冲击倒计时",
+  "label": "公会的年度结算月",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1632,10 +1632,10 @@
   ],
   "given_female": [
    "赛尔菲娅",
-   "莉娜",
+   "琪拉",
    "艾拉",
    "米娅",
-   "诺拉",
+   "艾薇",
    "菲奥娜",
    "罗莎",
    "薇拉",
@@ -1651,16 +1651,16 @@
    "德里克",
    "埃利奥特",
    "芬恩",
-   "加文",
-   "哈罗德",
+   "罗南",
+   "威尔",
    "伊万",
    "杰克",
    "凯尔",
    "利亚姆",
    "马修",
    "奈杰尔",
-   "奥斯卡",
-   "布兰特"
+   "马尔科",
+   "斯坦"
   ],
   "given_neutral": [
    "艾登",
@@ -1681,15 +1681,11 @@
   "nickname_patterns": [
    {
     "gender": "female",
-    "pattern": "总务长"
-   },
-   {
-    "gender": "female",
     "pattern": "{given}小姐"
    },
    {
-    "gender": "male",
-    "pattern": "{given}师傅"
+    "gender": "any",
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

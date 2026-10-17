@@ -1440,7 +1440,7 @@
   }
  ],
  "clock_start": {
-  "label": "晚上九点半，八号风球，卷闸门半拉反锁",
+  "label": "1988 年 8 月，台风季",
   "minute": 1290
  },
  "clock_style": "hm",
@@ -2015,24 +2015,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "any",
-    "pattern": "{family}掌柜"
-   },
-   {
     "gender": "male",
     "pattern": "{family}哥"
    },
    {
     "gender": "any",
-    "pattern": "{family}督察"
-   },
-   {
-    "gender": "female",
-    "pattern": "阿嫂"
-   },
-   {
-    "gender": "any",
-    "pattern": "阿头"
+    "pattern": "小{family}"
    }
   ],
   "order": "family_first"
@@ -2080,7 +2068,7 @@
    "baseline": "身穿一袭素白宽袖中式斜襟盘扣布衫，青丝挽起斜插一根沉香木簪，冷艳面庞如寒潭秋水，掌法精湛力透指节，面对浑身是血破门而入的宿敌旧友，冷面执槌恪守医馆规矩拒绝低头。",
    "gender": "any",
    "id": "pc_resolute_female_bonesetter_head",
-   "reputation": "庙街远近闻名的冷面铁娘子，一手正骨绝技手到病除，黑白两道大佬登门亦不敢对其造次。",
+   "reputation": "庙街远近闻名的冷面铁腕，一手正骨绝技手到病除，黑白两道大佬登门亦不敢对其造次。",
    "resources": [
     "家传独门秘制三黄透骨活血散与续断接骨黑膏药之绝对调配秘方",
     "掌握保和堂后院通往油麻地果栏地下走私水道之生铁暗门钥匙"
@@ -2088,7 +2076,7 @@
    "risks": [
     "一旦公然收留洪门通缉逆徒被堂口查实，百年老字号招牌将被当场砸碎且医馆面临纵火焚毁"
    ],
-   "role": "执掌百年保和堂老字号之冷艳坐堂女堂主",
+   "role": "执掌百年保和堂老字号之冷艳坐堂堂主",
    "social_position": "equal",
    "title_patterns": [
     {

@@ -1483,7 +1483,7 @@
   }
  ],
  "clock_start": {
-  "label": "夜里十一点十分，台风断电，审讯室铅门反锁",
+  "label": "九月初，台风季",
   "minute": 1390
  },
  "clock_style": "hm",
@@ -2056,23 +2056,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "侧写官"
+    "pattern": "{family}"
    },
    {
     "gender": "any",
-    "pattern": "警备队长"
-   },
-   {
-    "gender": "any",
-    "pattern": "特别监察官"
-   },
-   {
-    "gender": "any",
-    "pattern": "刑辩律师"
-   },
-   {
-    "gender": "any",
-    "pattern": "科搜研主任"
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

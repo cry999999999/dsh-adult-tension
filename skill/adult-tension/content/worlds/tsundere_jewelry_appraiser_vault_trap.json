@@ -1320,7 +1320,7 @@
   }
  ],
  "clock_start": {
-  "label": "强震致主电源跳闸，矿洞防爆气密门机械自锁抱死",
+  "label": "二月，阿尔卑斯的雪季",
   "minute": 1260
  },
  "clock_style": "hm",
@@ -1855,7 +1855,7 @@
    "诗翠",
    "听兰",
    "艾琳",
-   "莫娜"
+   "曼琳"
   ],
   "given_male": [
    "景和",
@@ -1870,7 +1870,7 @@
    "瀚海",
    "绍辉",
    "明哲",
-   "汉斯",
+   "卢卡",
    "柯勒"
   ],
   "given_neutral": [
@@ -1892,19 +1892,11 @@
   "nickname_patterns": [
    {
     "gender": "female",
-    "pattern": "{family}首席"
-   },
-   {
-    "gender": "female",
     "pattern": "{family}小姐"
    },
    {
-    "gender": "male",
-    "pattern": "{family}工"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}指挥长"
+    "gender": "any",
+    "pattern": "小{family}"
    }
   ],
   "order": "family_first"
@@ -1946,7 +1938,7 @@
     21,
     21
    ],
-   "baseline": "鉴定师洛桑联邦理工同门学妹兼助手，熟悉宝石物理特性与显微光学仪器的机械构造，处事冷静细致。",
+   "baseline": "鉴定师洛桑联邦理工同门后辈兼助手，熟悉宝石物理特性与显微光学仪器的机械构造，处事冷静细致。",
    "gender": "any",
    "id": "pi_intern_gem_scholar_assistant",
    "reputation": "在微纳光学与矿物硬度测定领域功底扎实，深得鉴定师学术信任。",

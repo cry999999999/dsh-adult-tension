@@ -14,7 +14,7 @@
   ],
   "style_hint": "床头拾音器红光闪烁，巨浪拍打舷窗。两人在大理石浴室水声掩护下背靠背低语，指尖轻敲摩尔斯电码，心跳克制却如临大敌。",
   "clock_start": {
-    "label": "子夜二十三分，距离雷达盲区结束还有三个时辰",
+    "label": "1991 年，十月",
     "minute": 1403
   },
   "clock_style": "hm",
@@ -92,19 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}夫人",
-        "gender": "female"
-      },
-      {
         "pattern": "{family}先生",
         "gender": "male"
       },
       {
-        "pattern": "代号{given_last}",
-        "gender": "any"
-      },
-      {
-        "pattern": "亲爱的",
+        "pattern": "{given}",
         "gender": "any"
       }
     ],

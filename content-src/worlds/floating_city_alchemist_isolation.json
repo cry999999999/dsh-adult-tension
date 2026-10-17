@@ -14,7 +14,7 @@
   ],
   "style_hint": "魔导蒸汽朋克的冷硬机械感与血脉觉醒的炽热反差：冷凝管里药液咕嘟作响、撕裂的黑丝绒下滚烫的瓷白肌肤、手指在黄铜桌面抓出深痕、秘银项圈扣上颈项的清脆机括声、雷暴闪光照亮两人急促的喘息。台词兼具学术的严谨与傲慢，亲密只在高热退去之后。",
   "clock_start": {
-    "label": "夜里十点四十五，八级雷暴，八重结界已锁",
+    "label": "帝国历七一二年，雷暴季",
     "minute": 1365
   },
   "clock_style": "hm",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "首席学者",
+        "pattern": "{given}",
         "gender": "any"
       },
       {
-        "pattern": "卫队长",
-        "gender": "any"
-      },
-      {
-        "pattern": "浮空要塞总督",
-        "gender": "any"
-      },
-      {
-        "pattern": "禁术总监",
-        "gender": "any"
-      },
-      {
-        "pattern": "大炼金师",
+        "pattern": "{family}",
         "gender": "any"
       }
     ],
@@ -141,7 +129,7 @@
   "player_identities": [
     {
       "id": "pc_grand_alchemist_scholar",
-      "role": "血脉觉醒仍死守自尊的女首席",
+      "role": "血脉觉醒仍死守自尊的首席",
       "gender": "any",
       "title_patterns": [
         {

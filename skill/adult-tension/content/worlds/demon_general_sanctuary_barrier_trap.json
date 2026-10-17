@@ -1107,7 +1107,7 @@
   }
  ],
  "clock_start": {
-  "label": "重力翻到五倍压塌祭坛倒计时",
+  "label": "圣战第四年，夏至前后",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1676,16 +1676,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{given}将军"
-   },
-   {
-    "gender": "male",
-    "pattern": "{given}学士"
+    "gender": "any",
+    "pattern": "小{given}"
    },
    {
     "gender": "any",
-    "pattern": "小{given}"
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

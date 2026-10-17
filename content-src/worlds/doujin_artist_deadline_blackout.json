@@ -15,7 +15,7 @@
   ],
   "style_hint": "超人气天才同人画师傲娇心智与精密绘图悬臂机械卡死物理自救之极限拉扯",
   "clock_start": {
-    "label": "死线破晓",
+    "label": "漫展开展前一天，八月",
     "minute": 300
   },
   "clock_style": "hm",
@@ -97,8 +97,8 @@
         "gender": "male"
       },
       {
-        "pattern": "{family}老师",
-        "gender": "female"
+        "pattern": "{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

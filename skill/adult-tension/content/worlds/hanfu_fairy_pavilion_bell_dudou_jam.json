@@ -1286,7 +1286,7 @@
   }
  ],
  "clock_start": {
-  "label": "首演前十五秒，飞檐风铃绞死肚兜银链",
+  "label": "《洛神》首演日，初夏",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1829,28 +1829,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}舞者"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}总督导"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}师傅"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}编导"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}督导"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}总"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

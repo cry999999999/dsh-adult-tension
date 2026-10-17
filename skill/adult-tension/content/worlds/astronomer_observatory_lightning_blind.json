@@ -1193,7 +1193,7 @@
   }
  ],
  "clock_start": {
-  "label": "狂暴雷击轰入避雷铜柱，浑天仪齿轮主轴咬死朝服",
+  "label": "开元十二年，盛夏雷雨季",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1740,16 +1740,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}女史"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}灵台"
+    "gender": "any",
+    "pattern": "阿{given_last}"
    },
    {
     "gender": "any",
-    "pattern": "{family}博士"
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

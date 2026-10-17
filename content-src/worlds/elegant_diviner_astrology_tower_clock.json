@@ -14,7 +14,7 @@
   ],
   "style_hint": "古典宫廷的细腻笔法：白天写星象学院长长的拱廊、羊皮纸上密密麻麻的星图、宫廷早朝前钟楼的钟声；夜里写百米高空暴风雪刮在脸上的刀割感、黄铜重环一寸寸倾斜的吱嘎声。占星术士优雅从容，张力藏在吵了一整季之后、在风雪里第一次没有反驳对方的那一刻。",
   "clock_start": {
-    "label": "暴风雪冻僵肢体及天体仪齿轮彻底压垮露台倒计时",
+    "label": "皇历四百年，冬至前一天",
     "minute": 10
   },
   "clock_style": "hm",
@@ -100,15 +100,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{given}大人",
-        "gender": "female"
-      },
-      {
-        "pattern": "{given}博士",
-        "gender": "male"
-      },
-      {
         "pattern": "小{given}",
+        "gender": "any"
+      },
+      {
+        "pattern": "{given}",
         "gender": "any"
       }
     ]

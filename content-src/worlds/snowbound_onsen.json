@@ -14,7 +14,7 @@
   ],
   "style_hint": "着力描写湿冷单薄的棉织浴衣、桧木被硫磺水汽蒸透的酸涩木香、窗外暴雪砸在杉木板的闷响、水流从竹笕落入池底的空洞回音，以及冷得发抖的指尖贴上滚烫潮湿肌肤的战栗感。",
   "clock_start": {
-    "label": "第一天 22:30",
+    "label": "1988 年深冬，大雪封山第三天",
     "minute": 1350
   },
   "clock_style": "hm",
@@ -116,10 +116,6 @@
       {
         "pattern": "{family}先生",
         "gender": "male"
-      },
-      {
-        "pattern": "{family}夫人",
-        "gender": "female"
       },
       {
         "pattern": "阿{given_last}",

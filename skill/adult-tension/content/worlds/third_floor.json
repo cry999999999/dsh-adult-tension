@@ -1455,7 +1455,7 @@
   }
  ],
  "clock_start": {
-  "label": "梅雨季的一个周四傍晚",
+  "label": "梅雨季的一个周四",
   "minute": 1110
  },
  "clock_style": "hm",
@@ -1906,10 +1906,6 @@
    {
     "gender": "any",
     "pattern": "阿{given_last}"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}老师"
    },
    {
     "gender": "any",

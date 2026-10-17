@@ -72,7 +72,7 @@
       "新之助",
       "源次郎",
       "清兵卫",
-      "与一",
+      "甚八",
       "伊织",
       "直之进",
       "平八",
@@ -102,10 +102,6 @@
       {
         "pattern": "阿{given}",
         "gender": "female"
-      },
-      {
-        "pattern": "{family}大人",
-        "gender": "any"
       },
       {
         "pattern": "{family}兄",

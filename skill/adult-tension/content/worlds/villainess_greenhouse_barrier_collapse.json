@@ -1108,7 +1108,7 @@
   }
  ],
  "clock_start": {
-  "label": "晶石穹顶断裂坍塌，地热蒸汽泄漏倒计时",
+  "label": "王宫社交季，初夏",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1685,16 +1685,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "公爵千金"
+    "gender": "any",
+    "pattern": "{given}"
    },
    {
     "gender": "any",
-    "pattern": "{given}大人"
-   },
-   {
-    "gender": "any",
-    "pattern": "平民"
+    "pattern": "{family}"
    }
   ],
   "order": "family_first"
@@ -1799,16 +1795,16 @@
    "baseline": "掌管后宫礼仪与贵族小姐们的品行考评，一纸评语就能决定一位千金还嫁不嫁得出去。",
    "gender": "any",
    "id": "pi_queen_matron",
-   "reputation": "贵族小姐们见了女官长都要行屈膝礼。",
+   "reputation": "贵族小姐们见了总管都要行屈膝礼。",
    "resources": [
-    "一枚王太后亲赐的女官长徽章",
+    "一枚王太后亲赐的总管徽章",
     "贵族小姐们的品行档案",
     "出入王宫任何地方的权限"
    ],
    "risks": [
-    "下毒的流言要是查不清，女官长也要被王太后问责。"
+    "下毒的流言要是查不清，总管也要被王太后问责。"
    ],
-   "role": "王太后身边的宫廷女官长",
+   "role": "王太后身边的宫廷总管",
    "social_position": "high",
    "title_patterns": [
     {

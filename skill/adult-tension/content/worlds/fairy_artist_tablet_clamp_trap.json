@@ -1282,7 +1282,7 @@
   }
  ],
  "clock_start": {
-  "label": "裱画机压板爆裂咬裙，客厅大屏同步投屏同人稿",
+  "label": "毕业展前两周，五月",
   "minute": 1015
  },
  "clock_style": "hm",
@@ -1792,28 +1792,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "白师妹"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "female",
-    "pattern": "芷微仙子"
-   },
-   {
-    "gender": "female",
-    "pattern": "苏策展人"
-   },
-   {
-    "gender": "male",
-    "pattern": "江部长"
-   },
-   {
-    "gender": "female",
-    "pattern": "柳学妹"
-   },
-   {
-    "gender": "male",
-    "pattern": "陆工"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

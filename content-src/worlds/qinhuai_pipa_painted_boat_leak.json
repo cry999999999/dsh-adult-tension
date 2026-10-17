@@ -14,7 +14,7 @@
   ],
   "style_hint": "金陵秦淮的十里风月：桨声灯影、琵琶弦上的《十面埋伏》、复社名士的诗酒。写傲娇行首织金襦裙下的身段、微嗔的杏眼与喘息，动作落在银扳手撬脱屏风铜销上。",
   "clock_start": {
-    "label": "漕船猛烈撞击游舫，沉香木屏风倾倒咬死行首裙摆",
+    "label": "崇祯末年，暮春",
     "minute": 1230
   },
   "clock_style": "hm",
@@ -100,20 +100,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}行首",
-        "gender": "female"
+        "pattern": "阿{given_last}",
+        "gender": "any"
       },
       {
-        "pattern": "{family}掌事",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}公子",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}捕头",
-        "gender": "male"
+        "pattern": "{given}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

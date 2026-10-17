@@ -14,7 +14,7 @@
   ],
   "style_hint": "废土柴油朋克的粗粝密闭感：防化服拉链褪下时翻涌的体温、带血乳胶手套擦过喉结、盖革计数器贴近胸膛时的尖叫、强酸腐蚀钢板的嘶嘶白烟、生锈铁床在窒息边缘的震颤。台词简练如刀，直面资源的冷血配给；在毁灭边缘死守信义，自愿托付。",
   "clock_start": {
-    "label": "夜里十点，酸雨锈死了重力铅门",
+    "label": "核冬天第十二年，酸雨季",
     "minute": 1320
   },
   "clock_style": "hm",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}医官长",
+        "pattern": "{given}",
         "gender": "any"
       },
       {
-        "pattern": "{family}队长",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}保卫长",
-        "gender": "any"
-      },
-      {
-        "pattern": "总管",
-        "gender": "any"
-      },
-      {
-        "pattern": "技术长",
+        "pattern": "{family}",
         "gender": "any"
       }
     ],
@@ -170,7 +158,7 @@
     },
     {
       "id": "pc_austere_chief_medical_officer",
-      "role": "掌控血清与氧气开关的冷傲女医官长",
+      "role": "掌控血清与氧气开关的冷傲医官长",
       "gender": "any",
       "title_patterns": [
         {

@@ -1470,7 +1470,7 @@
   }
  ],
  "clock_start": {
-  "label": "停战十周年前三天的傍晚",
+  "label": "停战十周年前三天",
   "minute": 1080
  },
  "clock_style": "hm",
@@ -1968,16 +1968,8 @@
     "pattern": "{given}"
    },
    {
-    "gender": "female",
-    "pattern": "{given}大姐"
-   },
-   {
-    "gender": "male",
-    "pattern": "{given}老兄"
-   },
-   {
     "gender": "any",
-    "pattern": "{family}家的"
+    "pattern": "{family}"
    }
   ],
   "order": "given_first"

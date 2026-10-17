@@ -1464,7 +1464,7 @@
   }
  ],
  "clock_start": {
-  "label": "收徒大典前三天的傍晚，镇上的客栈都挂上了“满”字牌",
+  "label": "收徒大典前三天，镇上客栈都挂了“满”字牌",
   "minute": 1050
  },
  "clock_style": "hm",
@@ -1944,10 +1944,6 @@
    {
     "gender": "male",
     "pattern": "{family}兄"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}道友"
    }
   ],
   "order": "family_first"

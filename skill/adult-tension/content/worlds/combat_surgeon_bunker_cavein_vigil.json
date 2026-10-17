@@ -1102,7 +1102,7 @@
   }
  ],
  "clock_start": {
-  "label": "地堡次生余震逼近，横梁彻底压塌倒计时",
+  "label": "战事第二年，初春",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1669,10 +1669,6 @@
    "霜原"
   ],
   "nickname_patterns": [
-   {
-    "gender": "female",
-    "pattern": "{family}军医"
-   },
    {
     "gender": "any",
     "pattern": "老{family}"

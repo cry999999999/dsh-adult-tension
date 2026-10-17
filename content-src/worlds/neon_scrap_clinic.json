@@ -14,7 +14,7 @@
   ],
   "style_hint": "刺鼻的消毒水与机油焦味、头顶管道滴落的冷凝酸水、手术台冰冷的皮革、后颈接口过载的余温、暴风雨砸在铁甲板上的轰鸣。",
   "clock_start": {
-    "label": "暴风雨夜，辐射风暴倒计时两小时",
+    "label": "浩劫后第三十年，雨季",
     "minute": 1260
   },
   "clock_style": "hm",
@@ -96,23 +96,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}医生",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}队长",
-        "gender": "any"
-      },
-      {
         "pattern": "老{family}",
         "gender": "any"
       },
       {
-        "pattern": "{family}师傅",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}老板",
+        "pattern": "小{family}",
         "gender": "any"
       }
     ],

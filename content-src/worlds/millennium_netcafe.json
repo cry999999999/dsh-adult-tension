@@ -14,7 +14,7 @@
  ],
  "style_hint": "写声音和光：拨号上网的尖叫、键盘声、磁带的沙沙声、显示器的蓝光；人说话直，心事都打在聊天框里。",
  "clock_start": {
-  "label": "1999 年 8 月，一个闷热的周五晚上",
+  "label": "1999 年 8 月，一个闷热的周五",
   "minute": 1290
  },
  "clock_style": "hm",
@@ -85,18 +85,14 @@
    "明"
   ],
   "nickname_patterns": [
-   {
-    "pattern": "阿{given}",
-    "gender": "any"
-   },
-   {
-    "pattern": "小{given}",
-    "gender": "any"
-   },
-   {
-    "pattern": "{family}{given}",
-    "gender": "any"
-   }
+    {
+      "pattern": "阿{given}",
+      "gender": "any"
+    },
+    {
+      "pattern": "小{given}",
+      "gender": "any"
+    }
   ]
  },
  "rules": [

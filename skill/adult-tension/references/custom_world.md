@@ -39,7 +39,8 @@
 - **有内容**：不写空串、“待补”“TODO”“—”或与字段名相同的文字；同一包内不写重复的整句。地点至少一个 `public`、一个 `semi` 或 `private`，任意两个地点的 `privacy`、`visibility`、`affordances` 不能完全相同。
 - **压力**：五拍齐全，`near.deadline_minutes` 大于 `immediate.minutes`，出路至少两条且各有代价；带 `leverage` 标记的压力写明 `leverage` 的双方与依据，双方要同在某个人物组合里。
 - **篇幅**：一个人物模板的全部文字合计 ≤ 1800 字，一个压力 ≤ 450 字（不含 ID 与标签）——在场的人物卡与压力每回合都进上下文，太长会挤掉别人。
-- **称呼**：带性别的称呼（先生、小姐、少爷、哥、姐……）只给性别已定的人：这样的称呼与绰号模板要标上 `male` 或 `female`；不限性别的玩家身份要同时有给男、女玩家的称呼；正文里不写“{player.name}先生”，用 `{player.title}` 或 `{player.call}`。
+- **称呼**：带性别的称呼（先生、小姐、少爷、哥、姐……）只给性别已定的人：这样的称呼与绰号模板要标上 `male` 或 `female`；不限性别的玩家身份要同时有给男、女玩家的称呼；正文里不写“{player.name}先生”，用 `{player.title}` 或 `{player.call}`。绰号模板会抽给本世界任何同性别的人，所以只写人人适用的叫法（小{family}、阿{given_last}、{given}），不写职务头衔。
+- **人名**：人物的名字由引擎从名字池抽取，正文里不写名字池里的名字（两个字以上的名），用 `{npc.name}`、`{槽位.given}` 这类占位或身份称呼；名字池里也不放会在正文里当普通词用的名（秋水、斥候），也不放背景人物已经用掉的名。
 - **标签**：`content_tags` 与各处 `tags` 只能用内容标签表里的 ID：`romance_light` 轻度暧昧、`intimate` 亲密、`explicit` 直白的性描写、`violence` 暴力、`coercion_theme` 胁迫、`humiliation` 羞辱、`bodily_harm` 身体伤害、`substance` 酒精与药物、`pregnancy` 怀孕、`death` 死亡、`workplace_power` 职场权力关系、`infidelity` 出轨、`crime` 违法犯罪、`gambling` 赌博、`workplace` 职场、`nightlife` 夜生活、`supernatural` 超自然、`disaster` 灾难、`custom` 自定义。
 
 ## 字段
@@ -84,7 +85,7 @@
 
 | 字段 | 类型 | 必填 | 说明 |
 |---|---|---|---|
-| `label` | 字符串，≤40 字 或 null | 否，默认 `null` | 起始日的显示标签 |
+| `label` | 字符串，≤40 字 或 null | 否，默认 `null` | 起始日的显示标签：只写日期、季节或天气，不写钟点、时段和倒计时 |
 | `minute` | 整数 0..1439 | 是 | 开局时刻：从零点起的分钟（1140 即 19:00） |
 
 ### `default_npc_gender_mix` 的字段
@@ -115,7 +116,7 @@
 | `given_female` | 数组（字符串，≤4 字） | 是 |  |
 | `given_male` | 数组（字符串，≤4 字） | 是 |  |
 | `given_neutral` | 数组（字符串，≤4 字） | 是 |  |
-| `nickname_patterns` | 数组（对象（称呼模板）） | 是 | 昵称规则，例如 小{family} |
+| `nickname_patterns` | 数组（对象（称呼模板）） | 是 | 昵称规则，例如 小{family}；会抽给任何同性别的人，不写职务头衔 |
 | `order` | 枚举：`family_first` / `given_first` | 否，默认 `"family_first"` | family_first 姓在前（沈砚舟）；given_first 名在前、姓在后，用“·”连接（艾达·米勒） |
 
 ### `rules[]` 的字段

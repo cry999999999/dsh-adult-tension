@@ -282,7 +282,7 @@ WORLD = S.Obj(
         "clock_start": F(
             S.Obj(
                 {
-                    "label": F(S.Nullable(_str(1, 40)), required=False, default=None, desc="起始日的显示标签"),
+                    "label": F(S.Nullable(_str(1, 40)), required=False, default=None, desc="起始日的显示标签：只写日期、季节或天气，不写钟点、时段和倒计时"),
                     "minute": F(S.Int(0, 1439), desc="开局时刻：从零点起的分钟（1140 即 19:00）"),
                 }
             )
@@ -312,7 +312,7 @@ WORLD = S.Obj(
                     "given_female": F(S.List(_str(1, 4), unique=True)),
                     "given_male": F(S.List(_str(1, 4), unique=True)),
                     "given_neutral": F(S.List(_str(1, 4), unique=True)),
-                    "nickname_patterns": F(S.List(NAME_PATTERN), desc="昵称规则，例如 小{family}"),
+                    "nickname_patterns": F(S.List(NAME_PATTERN), desc="昵称规则，例如 小{family}；会抽给任何同性别的人，不写职务头衔"),
                     "order": F(S.Enum("family_first", "given_first"), required=False, default="family_first", desc="family_first 姓在前（沈砚舟）；given_first 名在前、姓在后，用“·”连接（艾达·米勒）"),
                 }
             )
@@ -493,6 +493,44 @@ def address_problems(pack, texts):
             for m in PLAYER_ADDRESSED.finditer(text):
                 problems.append(_problem(path, "把玩家写成了“%s”：%s" % (m.group(1), text[max(0, m.start() - 10) : m.end() + 6]), "玩家的性别由玩家定：用 {player.title} 或 {player.call}"))
     return problems
+
+
+def pool_name_problems(pack, texts):
+    """No text names a person with a name the runtime draws from the pool: the
+    character drawn may be called something else, and a pool name that is
+    also a word (秋水, 斥候) reads as a person's name in the narration. Only
+    given names of two or more characters count; one-character names are
+    too often part of ordinary words."""
+    pools = pack["name_pools"]
+    given = sorted({g for k in ("given_female", "given_male", "given_neutral") for g in pools[k] if len(g) >= 2}, key=len, reverse=True)
+    if not given:
+        return []
+    named = re.compile("|".join(map(re.escape, given)))
+    problems = []
+    for path, text in texts:
+        if path.startswith("$.name_pools"):
+            continue
+        for m in named.finditer(text):
+            problems.append(_problem(path, "写死了名字池里的名字“%s”：%s" % (m.group(0), text[max(0, m.start() - 10) : m.end() + 6]), "人物名由运行时从名字池抽取：写 {npc.name}、{槽位.given} 这类占位或身份称呼；若它是普通词，换掉名字池里的这个名字"))
+    return problems
+
+
+_CLOCK_LABEL_BAN = re.compile(
+    r"倒计时|倒数|仅剩|还剩|还有|时辰|[子丑寅卯辰巳午未申酉戌亥]时|\d+\s*[:：]\s*\d+"
+    r"|[零一二三四五六七八九十两百\d]+\s*(?:点|分钟|秒|小时)"
+    r"|清晨|早上|上午|中午|午后|下午|傍晚|黄昏|晚上|夜|凌晨|破晓|拂晓"
+)
+
+
+def clock_label_problems(pack):
+    """The start label names the day only: a date, a season, the weather.
+    Daily activities and pressures pick their own start minute, so a time
+    of day or a countdown in the label would contradict the clock."""
+    label = pack["clock_start"]["label"]
+    m = label and _CLOCK_LABEL_BAN.search(label)
+    if not m:
+        return []
+    return [_problem("$.clock_start.label", "起始日标签里有钟点、时段或倒计时“%s”：%s" % (m.group(0), label), "只写日期、季节或天气（例如：民国十五年，梅雨季）；钟点由开局时刻决定，险情写进压力")]
 
 
 def length_problems(pack):
@@ -969,6 +1007,8 @@ def _validate_world(raw, custom, tag_ids):
     checker.text_checks()
     checker.problems.extend(length_problems(pack))
     checker.problems.extend(address_problems(pack, checker.texts()))
+    checker.problems.extend(pool_name_problems(pack, checker.texts()))
+    checker.problems.extend(clock_label_problems(pack))
     checker.forbidden_terms()
     problems.extend(checker.problems)
     if tag_ids is not None:

@@ -14,7 +14,7 @@
   ],
   "style_hint": "滚烫逼仄的深地高压钻探硬核工笔，刻画三百度地热蒸汽在狭小管汇通道内呼啸撕扯的极热绝境、特种合金加长丝杠摇把合力旋转时的沉闷机械咬合、紧身阻燃背心下被热汗与泥浆浸透的起伏躯体，台词充斥着严苛的深井钻探压力参数与生死抉择。",
   "clock_start": {
-    "label": "深层超高压地热蒸汽突发井喷，防喷器液压刺漏抱死",
+    "label": "十二月，钻探第四十天",
     "minute": 1395
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}总工",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}班长",
-        "gender": "any"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

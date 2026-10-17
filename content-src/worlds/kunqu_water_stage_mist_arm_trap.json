@@ -14,7 +14,7 @@
   ],
   "style_hint": "水磨腔与园林月夜的典雅。写闺门旦婴儿肥两颊的娇羞、被扯紧的真丝前襟下雪白香肩与细银乳链勾出的酥胸轮廓、含在唇间的喘息，动作落在泥金折扇的包铜扇角别簧爪上。",
   "clock_start": {
-    "label": "谢幕前二十秒，喷雾连杆钩死领口里的乳链",
+    "label": "《牡丹亭》水上演出当天，暮春",
     "minute": 1140
   },
   "clock_style": "hm",
@@ -96,7 +96,7 @@
       "沐风",
       "鸣谦",
       "秋白",
-      "微光",
+      "书禾",
       "书意",
       "景行",
       "玄同",
@@ -108,28 +108,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}老师",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}小生",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}工",
-        "gender": "male"
-      },
-      {
         "pattern": "{family}姐",
         "gender": "female"
       },
       {
-        "pattern": "{family}理事长",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}摄影",
-        "gender": "male"
+        "pattern": "小{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"
@@ -248,7 +232,7 @@
     },
     {
       "id": "pi_garden_curator_zhao_yun_zhou",
-      "role": "园林里的摇橹船娘",
+      "role": "园林里的摇橹船家",
       "gender": "any",
       "title_patterns": [
         {
@@ -270,7 +254,7 @@
         "一条乌篷船和一支橹",
         "通往戏台后门的水路"
       ],
-      "reputation": "唱得一口好苏州小调的船娘",
+      "reputation": "唱得一口好苏州小调的船家",
       "risks": [
         "船上出了事，下季就摇不成船了"
       ]

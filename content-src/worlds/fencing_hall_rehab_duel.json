@@ -15,7 +15,7 @@
   ],
   "style_hint": "以断电黑暗与刺鼻酸液渗漏衬托孤傲女剑客坚韧自尊，将击剑竞技优雅力量与法式护手盘刚体机械破拆紧绷感融为一体。",
   "clock_start": {
-    "label": "主电闸短路计分屏砸落咬卡防刺护腿瞬间",
+    "label": "七月，台风季",
     "minute": 1260
   },
   "clock_style": "hm",
@@ -108,28 +108,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}冠军",
-        "gender": "female"
+        "pattern": "小{family}",
+        "gender": "any"
       },
       {
-        "pattern": "{given}队长",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}总教头",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}队医",
-        "gender": "male"
-      },
-      {
-        "pattern": "{given}记者",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}师傅",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

@@ -14,7 +14,7 @@
   ],
   "style_hint": "冷硬森严的石化重工硬核工笔，刻画加氢反应器底部逼仄隔热罩内百公斤级热氢刺漏的尖锐啸叫、特种超长棘轮扳手在主法兰对角螺母上合力下压的沉重机械咬合、紧身阻燃防静电工装下被高温与冷汗浸透的起伏身躯，台词充斥着严苛的氢脆压力计算与生死决断。",
   "clock_start": {
-    "label": "加氢反应器热胀冷缩，主法兰八角垫剧烈刺漏",
+    "label": "四月，检修季",
     "minute": 1395
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}总工",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}班长",
-        "gender": "any"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

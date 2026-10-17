@@ -1441,7 +1441,7 @@
   }
  ],
  "clock_start": {
-  "label": "戌时末，黑风暴吞没了玉门关外",
+  "label": "天宝元年春，沙暴季",
   "minute": 1305
  },
  "clock_style": "hm",
@@ -1977,8 +1977,8 @@
    "抱玉",
    "崇简",
    "定远",
-   "破虏",
-   "瀚海",
+   "嗣业",
+   "守义",
    "伏波",
    "铁勒",
    "威明",
@@ -1993,7 +1993,7 @@
    "思齐",
    "靖安",
    "怀德",
-   "万里",
+   "崇德",
    "秉节",
    "守道",
    "克己",
@@ -2002,23 +2002,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}都尉"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}将军"
-   },
-   {
-    "gender": "female",
-    "pattern": "长公主殿下"
-   },
-   {
-    "gender": "any",
     "pattern": "{family}公"
    },
    {
     "gender": "any",
-    "pattern": "烽帅"
+    "pattern": "阿{given_last}"
    }
   ],
   "order": "family_first"
@@ -2149,7 +2137,7 @@
    "baseline": "奉命随侍长公主远赴绝域，亲历伏击血战从死人堆里背出重伤侍卫，深知宫廷与边塞双重凶险。",
    "gender": "any",
    "id": "royal_entourage_physician_scribe",
-   "reputation": "沉静果敢、医术高明的宫中才女，在将士中极有威信。",
+   "reputation": "沉静果敢、医术高明的宫中奇才，在将士中极有威信。",
    "resources": [
     "一整套宫廷秘传治疗矢创伤刀的金创散、止血银针与烈火消毒铜盏",
     "掌握长公主贴身密匣全部文书誊写笔迹与御印暗记"
@@ -2157,7 +2145,7 @@
    "risks": [
     "掌握朝廷以假公主和亲的惊天宫闱秘闻，随时面临被护从将领灭口风险"
    ],
-   "role": "长公主和亲内侍省成年女史兼随行典药",
+   "role": "长公主和亲内侍省成年史官兼随行典药",
    "social_position": "low",
    "title_patterns": [
     {

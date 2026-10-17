@@ -1122,7 +1122,7 @@
   }
  ],
  "clock_start": {
-  "label": "受料臂液压油爆燃，卷扬机制动闸抱死下坠",
+  "label": "一月，严冬",
   "minute": 1395
  },
  "clock_style": "hm",
@@ -1676,15 +1676,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}总指挥"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}工长"
-   },
-   {
-    "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

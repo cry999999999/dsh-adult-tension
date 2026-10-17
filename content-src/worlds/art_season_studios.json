@@ -19,10 +19,9 @@
   "given_male": ["子轩", "浩然", "宇航", "俊杰", "博文", "一鸣", "皓轩", "子墨", "明哲", "天宇", "嘉树", "泽宇", "思源", "景行"],
   "given_neutral": ["一禾", "知夏", "南乔", "清野", "星河", "小满", "以安", "初见", "青屿", "默然", "桑榆", "听澜"],
   "nickname_patterns": [
-   {"pattern": "{family}老师", "gender": "any"},
-   {"pattern": "小{family}", "gender": "any"},
-   {"pattern": "阿{given_last}", "gender": "any"},
-   {"pattern": "{given}", "gender": "any"}
+    {"pattern": "小{family}", "gender": "any"},
+    {"pattern": "阿{given_last}", "gender": "any"},
+    {"pattern": "{given}", "gender": "any"}
   ]
  },
  "rules": [

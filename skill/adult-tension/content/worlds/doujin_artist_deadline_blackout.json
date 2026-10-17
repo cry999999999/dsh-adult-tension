@@ -1116,7 +1116,7 @@
   }
  ],
  "clock_start": {
-  "label": "死线破晓",
+  "label": "漫展开展前一天，八月",
   "minute": 300
  },
  "clock_style": "hm",
@@ -1585,8 +1585,8 @@
     "pattern": "老{family}"
    },
    {
-    "gender": "female",
-    "pattern": "{family}老师"
+    "gender": "any",
+    "pattern": "{family}"
    }
   ],
   "order": "family_first"

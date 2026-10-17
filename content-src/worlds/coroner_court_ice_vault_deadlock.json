@@ -14,7 +14,7 @@
   ],
   "style_hint": "盛唐刑名的森严与暑气里的一点凉：长安的蝉声、冰鉴的白雾、绯袍与素袍。写清冷女仵作被冰雾打湿的面容与喘息，动作落在精钢探针挑翻地锁卡舌上。",
   "clock_start": {
-    "label": "盛夏的黄昏，死士锁死地锁，毒烟顺通风孔漫入冰鉴正厅",
+    "label": "贞观十二年，盛夏",
     "minute": 1260
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}女官",
-        "gender": "female"
+        "pattern": "阿{given_last}",
+        "gender": "any"
       },
       {
-        "pattern": "{family}少卿",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}捕头",
+        "pattern": "{given}",
         "gender": "any"
       }
     ]

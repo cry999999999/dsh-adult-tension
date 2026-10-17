@@ -1120,7 +1120,7 @@
   }
  ],
  "clock_start": {
-  "label": "深海断层强震冲击波抵达，水力平衡减压阀主轴过载抱死",
+  "label": "科考季第四十天",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1688,15 +1688,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}总师"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}领航"
-   },
-   {
-    "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

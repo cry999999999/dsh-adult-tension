@@ -1107,7 +1107,7 @@
   }
  ],
  "clock_start": {
-  "label": "急流浑水漫顶灭顶及绞盘撕裂战甲倒计时",
+  "label": "河港的春汛季",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1676,16 +1676,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{given}统领"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}工程师"
+    "gender": "any",
+    "pattern": "老{given}"
    },
    {
     "gender": "any",
-    "pattern": "老{given}"
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

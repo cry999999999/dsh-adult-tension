@@ -1470,7 +1470,7 @@
   }
  ],
  "clock_start": {
-  "label": "停刊前第十四天，晚上",
+  "label": "停刊前第十四天",
   "minute": 1260
  },
  "clock_style": "hm",
@@ -1931,10 +1931,6 @@
    {
     "gender": "any",
     "pattern": "小{family}"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}老师"
    }
   ],
   "order": "family_first"

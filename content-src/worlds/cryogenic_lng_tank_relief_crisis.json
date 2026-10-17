@@ -14,7 +14,7 @@
   ],
   "style_hint": "冷硬森严的超低温远洋船舶硬核工笔，刻画液货舱圆顶盲区内绝冷氮气与刺骨白霜翻卷的绝望窒息、特种耐脆断扳手在偏心卡槽内破冰猛砸的沉重金属撞击、潜水服下被冰霜与热汗浸透的起伏躯体，台词充斥着严苛的热力学相变计算与生死决断。",
   "clock_start": {
-    "label": "液货舱超压，安全阀结霜冰堵抱死",
+    "label": "远洋航程第十二天，冬季",
     "minute": 1395
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}老轨",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}大管",
-        "gender": "any"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

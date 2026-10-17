@@ -17,7 +17,7 @@
   ],
   "style_hint": "京都传统千家茶道美学与木构物理杠杆微观脱困，零第三人称代词，全员成年法定合规",
   "clock_start": {
-    "label": "薄暮宗争",
+    "label": "十一月，红叶时节",
     "minute": 1020
   },
   "clock_style": "hm",
@@ -99,8 +99,8 @@
         "gender": "male"
       },
       {
-        "pattern": "{family}家元",
-        "gender": "female"
+        "pattern": "{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

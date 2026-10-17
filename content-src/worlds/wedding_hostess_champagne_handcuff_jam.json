@@ -14,7 +14,7 @@
   ],
   "style_hint": "水晶灯与香槟塔的金色反光，千人宴会厅的屏息。写名媛司仪婴儿肥两颊的羞耻红晕、绷紧的露背鱼尾裙与压住的喘息，动作落在珍珠发簪挑锁舌上。",
   "clock_start": {
-    "label": "开场倒数十秒，银手铐挂死香槟塔流苏",
+    "label": "世纪婚礼当天，五月",
     "minute": 1140
   },
   "clock_style": "hm",
@@ -89,10 +89,10 @@
       "修远"
     ],
     "given_neutral": [
-      "微光",
+      "亦舒",
       "清和",
       "子墨",
-      "安然",
+      "一诺",
       "星澜",
       "沐川",
       "凌霄",
@@ -108,28 +108,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}司仪",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}总监",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}主管",
-        "gender": "male"
-      },
-      {
         "pattern": "{family}小姐",
         "gender": "female"
       },
       {
-        "pattern": "{family}工",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}少",
-        "gender": "male"
+        "pattern": "小{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

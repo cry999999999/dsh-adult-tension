@@ -1122,7 +1122,7 @@
   }
  ],
  "clock_start": {
-  "label": "卷扬机主齿轮崩碎打齿，十吨提升斗失控狂坠",
+  "label": "十月，开采旺季",
   "minute": 1395
  },
  "clock_style": "hm",
@@ -1696,15 +1696,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}工"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}班长"
-   },
-   {
-    "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

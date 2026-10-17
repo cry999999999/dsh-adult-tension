@@ -1483,7 +1483,7 @@
   }
  ],
  "clock_start": {
-  "label": "雾最浓的傍晚",
+  "label": "雾季最浓的那几天",
   "minute": 1080
  },
  "clock_style": "hm",
@@ -1960,10 +1960,6 @@
    {
     "gender": "male",
     "pattern": "{given}先生"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}家的"
    }
   ],
   "order": "given_first"

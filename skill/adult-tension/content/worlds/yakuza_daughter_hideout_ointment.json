@@ -834,7 +834,7 @@
    ],
    "voices": {
     "inner": "屋里的杂种听着！老子知道你正在给大小姐拔弹头，动作麻利点！等老子冲进去，保准把你浑身骨头一寸寸敲碎喂狗！",
-    "surface": "大小姐！我是龙司！外面零下十五度，你何必为了一个快死的跟班冻死在荒山野岭？！出来喝杯热茶，咱们好好谈谈总堂的未来！"
+    "surface": "大小姐！我是{npc.given}！外面零下十五度，你何必为了一个快死的跟班冻死在荒山野岭？！出来喝杯热茶，咱们好好谈谈总堂的未来！"
    }
   },
   {
@@ -1111,7 +1111,7 @@
     "workplace_power"
    ],
    "voices": {
-    "inner": "别开枪！我是警视厅潜伏组黑木！底片在大小姐身上对吧？听着，外面有二十个枪手，我给你们争取十五分钟，赶紧给伤口上药然后撤向吊桥！",
+    "inner": "别开枪！我是警视厅潜伏组{npc.family}！底片在大小姐身上对吧？听着，外面有二十个枪手，我给你们争取十五分钟，赶紧给伤口上药然后撤向吊桥！",
     "surface": "队长！后山发现大量杂乱脚印，人很可能已经往吊桥跑了！咱们别在这烂木屋耽误时间了！"
    }
   },
@@ -1250,8 +1250,8 @@
     "workplace_power"
    ],
    "voices": {
-    "inner": "近卫大哥……求求您……一定要治好大小姐……大小姐最怕疼，刮骨的时候，您要是下不去手，就由千代来按住大小姐的手腕！",
-    "surface": "大小姐！千代把金疮药送来了！您坚持住！老堂主旧部的三十辆黑车已经在吊桥山下集结了！"
+    "inner": "近卫大哥……求求您……一定要治好大小姐……大小姐最怕疼，刮骨的时候，您要是下不去手，就由{npc.given}来按住大小姐的手腕！",
+    "surface": "大小姐！{npc.given}把金疮药送来了！您坚持住！老堂主旧部的三十辆黑车已经在吊桥山下集结了！"
    }
   },
   {
@@ -1395,7 +1395,7 @@
   }
  ],
  "clock_start": {
-  "label": "暴风雪深夜两点一刻，距离追兵猎犬合围木屋仅剩四十分钟",
+  "label": "1998 年 12 月",
   "minute": 1335
  },
  "clock_style": "hm",
@@ -1682,7 +1682,7 @@
     "cliffside_abandoned_rope_bridge"
    ],
    "slot": "undercover_special_investigator_kuroki",
-   "text": "{undercover_special_investigator_kuroki.name}伏在阁楼暗窗外侧用警用防暴战术刀把轻击窗框打出急促暗号，拉下面罩露出一双清澈沉着的双眼，隔窗递进无菌止血绷带急切低语：“我是潜伏组黑木！”"
+   "text": "{undercover_special_investigator_kuroki.name}伏在阁楼暗窗外侧用战术刀把轻击窗框打出急促暗号，拉下面罩露出沉着的双眼，隔窗递进无菌止血绷带急切低语：“我是潜伏组{npc.family}！”"
   },
   {
    "id": "h_chiyo_geisha_sachet_pass",
@@ -1692,7 +1692,7 @@
     "cliffside_abandoned_rope_bridge"
    ],
    "slot": "loyal_apprentice_geisha_informant_chiyo",
-   "text": "{loyal_apprentice_geisha_informant_chiyo.name}浑身沾满雪块跌进地炉石室，眼泛热泪颤声道：“大小姐！千代把救命药带来了！老堂主的旧部车队已经把吊桥对岸所有出口全盘封锁接应了！”"
+   "text": "{loyal_apprentice_geisha_informant_chiyo.name}浑身沾满雪块跌进地炉石室，眼泛热泪颤声道：“大小姐！{npc.given}把救命药带来了！老堂主的旧部车队已经把吊桥对岸所有出口全盘封锁接应了！”"
   },
   {
    "id": "h_tetsuo_hound_scratch_door_growl",
@@ -1944,24 +1944,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}大小姐"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}大哥"
-   },
-   {
     "gender": "any",
     "pattern": "小{family}"
    },
    {
     "gender": "any",
-    "pattern": "{family}若头"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}巡查"
+    "pattern": "{family}"
    }
   ],
   "order": "family_first"
@@ -2060,7 +2048,7 @@
     22,
     24
    ],
-   "baseline": "年满二十三周岁老组长麾下忠义堂口战死若头的独生子，与大小姐早年一同长大情同手足。",
+   "baseline": "年满二十三周岁老组长麾下忠义堂口战死若头的独苗，与大小姐早年一同长大情同手足。",
    "gender": "any",
    "id": "disgraced_underboss_scion",
    "reputation": "重情重义英气逼人，在残存忠义旧部中拥有极高声望与振臂一呼的号召力。",
@@ -2071,7 +2059,7 @@
    "risks": [
     "若在此地被叛徒全歼，老组长一脉血嗣与忠义香火将彻底断绝不复存在。"
    ],
-   "role": "忠义派结义遗孤义兄",
+   "role": "忠义派结义遗孤",
    "social_position": "high",
    "title_patterns": [
     {

@@ -14,7 +14,7 @@
   ],
   "style_hint": "幽深水牢内唯有水滴坠落与铁链摩擦的刺耳回音，四面是渗着寒霜的青黑花岗岩石壁。火把在潮湿过堂风中将两人的影子拉得极长，铁栏外的脚步声每一次逼近都伴随着皮靴踩碎冰渣的清脆声响。",
   "clock_start": {
-    "label": "子夜时分，距离破晓换岗与公开放血处决仅剩两个时辰",
+    "label": "王国历二八一年，初冬",
     "minute": 1410
   },
   "clock_style": "hm",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}骑士长",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}长官",
-        "gender": "any"
-      },
-      {
         "pattern": "小{family}",
         "gender": "any"
       },
       {
-        "pattern": "{family}审讯官",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}护卫",
+        "pattern": "{given}",
         "gender": "any"
       }
     ],
@@ -1025,7 +1013,7 @@
       },
       "voices": {
         "surface": "各位长官，医者眼中只有受造之物与生命，请准许我为这名重伤者履行最后的救护之责。",
-        "inner": "奥尔菲娅姐姐，撑住……我把大主教的印章带来了，哪怕拼上这条命，塞西莉亚也绝不让您死在这群恶狼手里！"
+        "inner": "奥尔菲娅姐姐，撑住……我把大主教的印章带来了，哪怕拼上这条命，{npc.given}也绝不让您死在这群恶狼手里！"
       },
       "schedule": [
         {

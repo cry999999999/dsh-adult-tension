@@ -1313,7 +1313,7 @@
   }
  ],
  "clock_start": {
-  "label": "亥时三刻，柴火将尽且悬索桥断裂",
+  "label": "天启六年，腊月",
   "minute": 1350
  },
  "clock_style": "hm",
@@ -1820,23 +1820,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}百户"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}镖头"
-   },
-   {
-    "gender": "any",
     "pattern": "老{family}"
    },
    {
     "gender": "male",
     "pattern": "{family}先生"
-   },
-   {
-    "gender": "any",
-    "pattern": "掌柜{family}"
    }
   ],
   "order": "family_first"

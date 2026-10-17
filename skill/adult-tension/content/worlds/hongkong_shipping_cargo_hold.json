@@ -1122,7 +1122,7 @@
   }
  ],
  "clock_start": {
-  "label": "十号风球挂出，风暴潮漫过坞墙",
+  "label": "八月，台风季",
   "minute": 1020
  },
  "clock_style": "hm",
@@ -1670,16 +1670,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "霍大小姐"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
     "gender": "any",
-    "pattern": "{family}水手"
-   },
-   {
-    "gender": "male",
-    "pattern": "陆大副"
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

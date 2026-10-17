@@ -14,7 +14,7 @@
   ],
   "style_hint": "边境河港的粗粝笔法：白天写码头上卸货的号子、税关前排队的商船、驻防营里马匹的响鼻；夜里写浑水一寸寸漫上来的冷、链轮反转时铁链抽打石壁的轰鸣。女统领干脆利落，张力藏在被卡在齿轮边动弹不得、只能把后背交给那个吵了一整个汛期的人的那一刻。",
   "clock_start": {
-    "label": "急流浑水漫顶灭顶及绞盘撕裂战甲倒计时",
+    "label": "河港的春汛季",
     "minute": 10
   },
   "clock_style": "hm",
@@ -100,15 +100,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{given}统领",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}工程师",
-        "gender": "male"
-      },
-      {
         "pattern": "老{given}",
+        "gender": "any"
+      },
+      {
+        "pattern": "{given}",
         "gender": "any"
       }
     ]

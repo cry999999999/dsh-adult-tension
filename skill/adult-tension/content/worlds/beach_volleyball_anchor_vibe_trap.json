@@ -1301,7 +1301,7 @@
   }
  ],
  "clock_start": {
-  "label": "决赛赛点，地锚钢钩绞住比基尼抽绳",
+  "label": "公开赛决赛日，一月，晴",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1841,28 +1841,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}主攻"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "female",
-    "pattern": "{family}副攻"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}指导"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}工"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}主裁"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}摄像"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

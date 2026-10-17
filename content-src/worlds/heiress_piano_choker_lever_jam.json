@@ -14,7 +14,7 @@
   ],
   "style_hint": "挑高琴房的幽暗聚光与九尺施坦威的黑漆反光。写恶役千金婴儿肥两靥的羞耻红霞、贴地俯身的屈辱与喘息，动作落在高碳钢谱夹撬曲柄卡榫上。",
   "clock_start": {
-    "label": "专场开演前四十分钟，项圈D型环咬死踏板曲柄，管家按响门铃",
+    "label": "独奏专场当天，十二月",
     "minute": 1140
   },
   "clock_style": "hm",
@@ -100,28 +100,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "皇甫大小姐",
-        "gender": "female"
+        "pattern": "小{family}",
+        "gender": "any"
       },
       {
-        "pattern": "玥千金",
-        "gender": "female"
-      },
-      {
-        "pattern": "钟管家",
-        "gender": "male"
-      },
-      {
-        "pattern": "楚首席",
-        "gender": "male"
-      },
-      {
-        "pattern": "林助手",
-        "gender": "female"
-      },
-      {
-        "pattern": "乔总监",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

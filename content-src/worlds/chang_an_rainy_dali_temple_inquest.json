@@ -14,7 +14,7 @@
   ],
   "style_hint": "唐代刑狱的官署质感：青石积水的闷响、苍术白芷的药气、银针遇毒的暗斑、刀锋划破衣帛的紧绷。对话典雅精炼、锋芒如刀，谨守唐律与洗冤法度；人物在强权前宁折不弯，克制疏离里涌动着清醒的生死信任。",
   "clock_start": {
-    "label": "夜半子时前，大理寺已落铜闸",
+    "label": "天复元年，秋雨时节",
     "minute": 1410
   },
   "clock_style": "hm",
@@ -53,17 +53,17 @@
       "疏影",
       "清漪",
       "若华",
-      "凝霜",
+      "婉卿",
       "婉竹",
       "明瑟",
       "玉筝",
       "素商",
-      "秋水",
+      "采蘩",
       "静和",
       "雪见"
     ],
     "given_male": [
-      "廷臣",
+      "延嗣",
       "元礼",
       "行知",
       "季鹰",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}司刑",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}评事",
-        "gender": "any"
-      },
-      {
-        "pattern": "推官",
-        "gender": "any"
-      },
-      {
         "pattern": "{family}公",
         "gender": "any"
       },
       {
-        "pattern": "大理寺卿",
+        "pattern": "阿{given_last}",
         "gender": "any"
       }
     ],

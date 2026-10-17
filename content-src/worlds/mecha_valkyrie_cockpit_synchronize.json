@@ -17,7 +17,7 @@
   ],
   "style_hint": "未来战术机甲整备机械工程技术，无第三人称单数代词，全员成年合法自立",
   "clock_start": {
-    "label": "战巡整备",
+    "label": "战巡整备期第三周",
     "minute": 1380
   },
   "clock_style": "hm",
@@ -55,7 +55,7 @@
       "希尔",
       "克洛",
       "维娅",
-      "傲雪",
+      "以棠",
       "以宁",
       "清璇",
       "冰岚",
@@ -99,8 +99,8 @@
         "gender": "male"
       },
       {
-        "pattern": "{family}少校",
-        "gender": "female"
+        "pattern": "{given}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

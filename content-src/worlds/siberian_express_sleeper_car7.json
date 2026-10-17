@@ -14,7 +14,7 @@
   ],
   "style_hint": "严寒与密闭的物理触感：呼气凝成白雾、双层车窗的冰花、铸铁暖气管胀缩的呻吟、酒精灯蓝焰映在解剖刀上的寒光。对话干练沉稳，满是铁道条例与法医推演；成年人之间高度克制的智力交锋，在死线与极寒里露出骨气。",
   "clock_start": {
-    "label": "深夜十一点四十五分，专列停摆在断崖边",
+    "label": "1978 年，腊月",
     "minute": 1425
   },
   "clock_style": "hm",
@@ -92,19 +92,7 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}科长",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}法医",
-        "gender": "any"
-      },
-      {
         "pattern": "老{family}",
-        "gender": "any"
-      },
-      {
-        "pattern": "{given_last}同志",
         "gender": "any"
       },
       {

@@ -1107,7 +1107,7 @@
   }
  ],
  "clock_start": {
-  "label": "暴雨失温休克及顶层木质吊顶被狂风掀翻倒计时",
+  "label": "九月，开学第一周",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1677,10 +1677,6 @@
    {
     "gender": "any",
     "pattern": "{family}桑"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}前辈"
    },
    {
     "gender": "any",

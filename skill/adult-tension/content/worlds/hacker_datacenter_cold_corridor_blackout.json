@@ -1216,7 +1216,7 @@
   }
  ],
  "clock_start": {
-  "label": "高压市电切断初刻，UPS备用电源枯竭倒计时四十分钟",
+  "label": "二月，北欧的深冬",
   "minute": 0
  },
  "clock_style": "hm",
@@ -1694,7 +1694,7 @@
    "极光",
    "矩阵",
    "零点",
-   "深蓝",
+   "夜航",
    "寒芒",
    "断点",
    "天权",
@@ -1707,23 +1707,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}工"
+    "pattern": "小{family}"
    },
    {
     "gender": "any",
-    "pattern": "{family}首席"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}老师"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}总监"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}架构师"
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

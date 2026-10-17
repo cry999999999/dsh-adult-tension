@@ -14,7 +14,7 @@
   ],
   "style_hint": "防弹玻璃下粉钻的火彩与亿万藏家的审视。写高傲设计师婴儿肥两颊浮起的潮红、绷紧的高开叉礼裙下被纯金细链锁住的脚踝与雪白长腿、压着的喘息，动作落在放大镜钛手柄顶泄压开关上。",
   "clock_start": {
-    "label": "开拍前三十秒，展台胶条咬住脚踝金链",
+    "label": "香港秋拍首日，十一月",
     "minute": 1140
   },
   "clock_style": "hm",
@@ -108,28 +108,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}设计师",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}师兄",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}工",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}助理",
-        "gender": "female"
-      },
-      {
         "pattern": "{family}先生",
         "gender": "male"
       },
       {
-        "pattern": "{family}摄影",
-        "gender": "male"
+        "pattern": "小{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

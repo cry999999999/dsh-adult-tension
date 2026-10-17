@@ -1122,7 +1122,7 @@
   }
  ],
  "clock_start": {
-  "label": "倒计时四十秒，主吹除电磁阀极冷卡死抱死",
+  "label": "十二月，发射任务密集期",
   "minute": 1395
  },
  "clock_style": "hm",
@@ -1696,15 +1696,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}总师"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}工长"
-   },
-   {
-    "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

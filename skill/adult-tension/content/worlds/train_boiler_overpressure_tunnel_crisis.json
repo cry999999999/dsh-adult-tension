@@ -1121,7 +1121,7 @@
   }
  ],
  "clock_start": {
-  "label": "调速汽阀连杆脱销抱死，列车切入盲目暴冲直奔塌方体",
+  "label": "高原的十月",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1688,15 +1688,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}司机"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}师傅"
-   },
-   {
-    "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"
@@ -1708,7 +1704,7 @@
     26,
     40
    ],
-   "baseline": "负责万吨机车大火膛供煤与锅炉水位平衡的健壮汉子，练就了一副开山裂石般的铁臂膀。",
+   "baseline": "负责万吨机车大火膛供煤与锅炉水位平衡的健壮司炉，练就了一副开山裂石般的铁臂膀。",
    "gender": "any",
    "id": "pi_railway_head_stoker_fireman",
    "reputation": "脾气火爆但手艺过硬，在段里以能摇动任何生锈死闸而闻名。",

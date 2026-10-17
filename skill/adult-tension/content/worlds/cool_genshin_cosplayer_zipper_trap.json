@@ -1320,7 +1320,7 @@
   }
  ],
  "clock_start": {
-  "label": "主展馆闭馆警报鸣响，防暴平移门电磁断电落锁",
+  "label": "博览会最后一天，七月",
   "minute": 1260
  },
  "clock_style": "hm",
@@ -1925,24 +1925,16 @@
    "知衡",
    "若谷",
    "楚寒",
-   "凌霜"
+   "清岚"
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}老师"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}总监"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}主管"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}队长"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

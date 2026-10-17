@@ -14,7 +14,7 @@
  ],
  "style_hint": "写雾和热：煤烟、蒸汽、温热的铜号、湿透的大衣、钟表铺走快的钟；人人都只叫号码，名字压在舌头底下。",
  "clock_start": {
-  "label": "雾最浓的傍晚",
+  "label": "雾季最浓的那几天",
   "minute": 1080
  },
  "clock_style": "hm",
@@ -85,22 +85,18 @@
    "艾伦"
   ],
   "nickname_patterns": [
-   {
-    "pattern": "{given}",
-    "gender": "any"
-   },
-   {
-    "pattern": "{given}小姐",
-    "gender": "female"
-   },
-   {
-    "pattern": "{given}先生",
-    "gender": "male"
-   },
-   {
-    "pattern": "{family}家的",
-    "gender": "any"
-   }
+    {
+      "pattern": "{given}",
+      "gender": "any"
+    },
+    {
+      "pattern": "{given}小姐",
+      "gender": "female"
+    },
+    {
+      "pattern": "{given}先生",
+      "gender": "male"
+    }
   ],
   "order": "given_first"
  },

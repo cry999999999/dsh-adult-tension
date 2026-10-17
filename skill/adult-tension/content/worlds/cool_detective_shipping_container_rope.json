@@ -1107,7 +1107,7 @@
   }
  ],
  "clock_start": {
-  "label": "残存受损单侧钢缆彻底崩断坠海倒计时",
+  "label": "九月，台风季",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1674,16 +1674,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}警官"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}工"
+    "gender": "any",
+    "pattern": "老{family}"
    },
    {
     "gender": "any",
-    "pattern": "老{family}"
+    "pattern": "小{family}"
    }
   ],
   "order": "family_first"

@@ -1319,7 +1319,7 @@
   }
  ],
  "clock_start": {
-  "label": "谢幕前二十秒，喷雾连杆钩死领口里的乳链",
+  "label": "《牡丹亭》水上演出当天，暮春",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1853,7 +1853,7 @@
    "沐风",
    "鸣谦",
    "秋白",
-   "微光",
+   "书禾",
    "书意",
    "景行",
    "玄同",
@@ -1866,27 +1866,11 @@
   "nickname_patterns": [
    {
     "gender": "female",
-    "pattern": "{family}老师"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}小生"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}工"
-   },
-   {
-    "gender": "female",
     "pattern": "{family}姐"
    },
    {
-    "gender": "male",
-    "pattern": "{family}理事长"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}摄影"
+    "gender": "any",
+    "pattern": "小{family}"
    }
   ],
   "order": "family_first"
@@ -1988,7 +1972,7 @@
    "baseline": "旅游管理专业毕业，在园林摇了三年夜游船，散场后负责把外宾一船船送出水门。",
    "gender": "any",
    "id": "pi_garden_curator_zhao_yun_zhou",
-   "reputation": "唱得一口好苏州小调的船娘",
+   "reputation": "唱得一口好苏州小调的船家",
    "resources": [
     "一条乌篷船和一支橹",
     "通往戏台后门的水路"
@@ -1996,7 +1980,7 @@
    "risks": [
     "船上出了事，下季就摇不成船了"
    ],
-   "role": "园林里的摇橹船娘",
+   "role": "园林里的摇橹船家",
    "social_position": "low",
    "title_patterns": [
     {

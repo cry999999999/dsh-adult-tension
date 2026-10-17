@@ -1325,7 +1325,7 @@
   }
  ],
  "clock_start": {
-  "label": "超强台风骤袭天桥阻尼位移，防火重门变形夹死女律师套裙",
+  "label": "九月，并购谈判周",
   "minute": 1020
  },
  "clock_style": "hm",
@@ -1900,20 +1900,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}律师"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "female",
-    "pattern": "{family}合伙人"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}工"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}总监"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

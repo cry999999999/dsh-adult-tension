@@ -681,7 +681,7 @@
      "满口教义的伪善者",
      "拿秘密谈条件的人"
     ],
-    "expression": "把圣冠摘下来放在对方膝上：“今夜，我只是尤菲。”",
+    "expression": "把圣冠摘下来放在对方膝上：“今夜，我只是{npc.given}。”",
     "likes": [
      "被叫本名",
      "有人陪着坐到天亮"
@@ -1001,7 +1001,7 @@
     "romance_light"
    ],
    "voices": {
-    "inner": "“半年了，总算有人知道了……这次别让尤菲一个人扛。”",
+    "inner": "“半年了，总算有人知道了……这次别让圣女一个人扛。”",
     "surface": "“圣水送来了，顺便看看圣女阁下有没有被你这个异端吓到。”"
    }
   },
@@ -1396,7 +1396,7 @@
   }
  ],
  "clock_start": {
-  "label": "终钟前一刻，距偏殿落栅还有两个时辰",
+  "label": "圣辉历三一二年，雨季",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1884,24 +1884,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "圣女{family}"
+    "gender": "any",
+    "pattern": "{given}"
    },
    {
     "gender": "any",
-    "pattern": "{family}阁下"
-   },
-   {
-    "gender": "any",
-    "pattern": "审判官{family}"
-   },
-   {
-    "gender": "any",
-    "pattern": "{given_last}修士"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}骑士长"
+    "pattern": "{family}"
    }
   ],
   "order": "given_first"

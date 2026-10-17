@@ -1320,7 +1320,7 @@
   }
  ],
  "clock_start": {
-  "label": "升降导轮滑脱，重力自锁防坠销舌咬死门框",
+  "label": "新品首发前一天，十月",
   "minute": 1260
  },
  "clock_style": "hm",
@@ -1891,20 +1891,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}店长"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}师傅"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}主管"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}队长"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

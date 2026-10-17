@@ -1167,7 +1167,7 @@
   }
  ],
  "clock_start": {
-  "label": "黎明政变突发，配重重闸落锁",
+  "label": "王国历三百年，初春",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1735,20 +1735,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}大小姐"
-   },
-   {
-    "gender": "any",
-    "pattern": "{given}骑士"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}典狱官"
-   },
-   {
     "gender": "any",
     "pattern": "老{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "{family}"
    }
   ],
   "order": "family_first"

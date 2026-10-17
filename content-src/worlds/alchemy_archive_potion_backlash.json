@@ -14,7 +14,7 @@
   ],
   "style_hint": "渲染封闭炼药暗室的压迫：粉紫荧光在符文石壁上流转，琉璃碎裂的脆响，坩埚甜腻的热雾，金边制服与黑丝长袜的破损，冷傲前辈理智剥落后的动摇。",
   "clock_start": {
-    "label": "零点二十分，导管爆裂，距秘银水灌顶还有四十分钟",
+    "label": "帝国历九百年，学期末的考试周",
     "minute": 20
   },
   "clock_style": "hm",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}前辈",
+        "pattern": "{family}",
         "gender": "any"
       },
       {
-        "pattern": "{family}团长",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}讲师",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}工匠",
-        "gender": "any"
-      },
-      {
-        "pattern": "首席大人",
+        "pattern": "{given}",
         "gender": "any"
       }
     ],
@@ -187,7 +175,7 @@
         22
       ],
       "social_position": "high",
-      "baseline": "年满二十一岁、公爵家长女出身的首席魔导师，以刻薄冷傲著称，今夜违规炼制古代共鸣秘药。",
+      "baseline": "年满二十一岁、公爵家嫡系出身的首席魔导师，以刻薄冷傲著称，今夜违规炼制古代共鸣秘药。",
       "resources": [
         "禁书库三层高级借阅权",
         "刻有家徽的纯银导流法杖"

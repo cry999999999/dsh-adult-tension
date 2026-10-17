@@ -1287,7 +1287,7 @@
   }
  ],
  "clock_start": {
-  "label": "晨钟第三响落下，铸铜摇臂砸落咬住锁骨铃铛",
+  "label": "降临期的一个主日",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1827,27 +1827,11 @@
   "nickname_patterns": [
    {
     "gender": "female",
-    "pattern": "{family}领唱"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}大师"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}执事"
-   },
-   {
-    "gender": "female",
     "pattern": "{family}姐"
    },
    {
-    "gender": "male",
-    "pattern": "{family}师傅"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}理事"
+    "gender": "any",
+    "pattern": "小{family}"
    }
   ],
   "order": "family_first"

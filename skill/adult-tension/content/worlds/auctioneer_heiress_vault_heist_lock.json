@@ -750,7 +750,7 @@
    ],
    "voices": {
     "inner": "看了四十年画……今晚要是丢了这个丫头，我这双眼睛就白长了。",
-    "surface": "微澜丫头！画都还在吗？先顾人，画丢了老头子去找！"
+    "surface": "丫头！画都还在吗？先顾人，画丢了老头子去找！"
    }
   },
   {
@@ -1107,7 +1107,7 @@
   }
  ],
  "clock_start": {
-  "label": "卤代烷灭火气体浓度超标，窒息晕厥倒计时",
+  "label": "秋拍季，十月中旬",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1676,16 +1676,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}槌"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}工"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
     "gender": "any",
-    "pattern": "小{family}"
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

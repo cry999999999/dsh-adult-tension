@@ -14,7 +14,7 @@
   ],
   "style_hint": "高压蒸汽泄压阀尖锐刺耳的狂暴尖啸、重锤夯打滚烫装甲板的火星四溅、机油与冻结血浆混合在炽热排气管上的焦糊恶臭、机甲液压活塞全力冲压时的金属顿挫轰鸣，以及隔着覆铁面甲咆哮出膛的战吼豪情。",
   "clock_start": {
-    "label": "亥时二刻，距离主力封死关门仅剩三个小时",
+    "label": "蒸汽历九十年，初冬",
     "minute": 1350
   },
   "clock_style": "hm",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "队长{family}",
+        "pattern": "{family}",
         "gender": "any"
       },
       {
-        "pattern": "铁锤{family}",
-        "gender": "any"
-      },
-      {
-        "pattern": "扳手{family}",
-        "gender": "any"
-      },
-      {
-        "pattern": "哑炮{family}",
-        "gender": "any"
-      },
-      {
-        "pattern": "瘸狼{family}",
+        "pattern": "{given}",
         "gender": "any"
       }
     ],

@@ -1482,7 +1482,7 @@
   }
  ],
  "clock_start": {
-  "label": "零点二十分，导管爆裂，距秘银水灌顶还有四十分钟",
+  "label": "帝国历九百年，学期末的考试周",
   "minute": 20
  },
  "clock_style": "hm",
@@ -2036,23 +2036,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}前辈"
+    "pattern": "{family}"
    },
    {
     "gender": "any",
-    "pattern": "{family}团长"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}讲师"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}工匠"
-   },
-   {
-    "gender": "any",
-    "pattern": "首席大人"
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"
@@ -2093,7 +2081,7 @@
     21,
     22
    ],
-   "baseline": "年满二十一岁、公爵家长女出身的首席魔导师，以刻薄冷傲著称，今夜违规炼制古代共鸣秘药。",
+   "baseline": "年满二十一岁、公爵家嫡系出身的首席魔导师，以刻薄冷傲著称，今夜违规炼制古代共鸣秘药。",
    "gender": "any",
    "id": "senior_alchemist_first_seat",
    "reputation": "院里的高岭之花，斥退过无数追求者。",

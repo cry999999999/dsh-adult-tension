@@ -12,7 +12,7 @@
  "skill": {
   "skill_root": null,
   "skill_version": null,
-  "content_version": "2026.10.4"
+  "content_version": "2026.10.5"
  },
  "turns": [
   {
@@ -2481,10 +2481,6 @@
        "听澜"
       ],
       "nickname_patterns": [
-       {
-        "gender": "any",
-        "pattern": "{family}老师"
-       },
        {
         "gender": "any",
         "pattern": "小{family}"

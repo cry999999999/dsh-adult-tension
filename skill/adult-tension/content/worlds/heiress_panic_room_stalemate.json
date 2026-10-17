@@ -1096,7 +1096,7 @@
   }
  ],
  "clock_start": {
-  "label": "死线破晓",
+  "label": "初夏的一个周六",
   "minute": 300
  },
  "clock_style": "hm",
@@ -1560,8 +1560,8 @@
     "pattern": "{family}小姐"
    },
    {
-    "gender": "female",
-    "pattern": "{family}队长"
+    "gender": "any",
+    "pattern": "小{family}"
    }
   ],
   "order": "family_first"

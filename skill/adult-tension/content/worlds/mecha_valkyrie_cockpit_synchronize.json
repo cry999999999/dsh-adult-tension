@@ -1126,7 +1126,7 @@
   }
  ],
  "clock_start": {
-  "label": "战巡整备",
+  "label": "战巡整备期第三周",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1552,7 +1552,7 @@
    "希尔",
    "克洛",
    "维娅",
-   "傲雪",
+   "以棠",
    "以宁",
    "清璇",
    "冰岚",
@@ -1596,8 +1596,8 @@
     "pattern": "老{family}"
    },
    {
-    "gender": "female",
-    "pattern": "{family}少校"
+    "gender": "any",
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

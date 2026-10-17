@@ -5,11 +5,11 @@
   "extends": null,
   "era": "当代，公海上一场热带气旋的深夜",
   "region": "私人游艇黑龙丸：底层防弹避难室、轮机走廊、主甲板套房与后甲板停机坪",
-  "premise": "热带气旋撕开公海的夜，游艇黑龙丸副机受损抛锚，船上的护卫若头带人叛变。龙神会第四代继承人九条明步左肩中弹，被贴身保镖护进底层防弹避难室。门外，叛徒在逐舱搜人，要的是瑞士账户的密钥；驾驶室里，老舵手腹部中枪还死死握着舵轮。失血让明步发起高烧，却仍用命令的口气说话。这一夜，主仆的规矩、活下去的办法、谁来接掌龙神会，都要在天亮前定下来。",
+  "premise": "热带气旋撕开公海的夜，游艇黑龙丸副机受损抛锚，船上的护卫若头带人叛变。龙神会第四代继承人大小姐左肩中弹，被贴身保镖护进底层防弹避难室。门外，叛徒在逐舱搜人，要的是瑞士账户的密钥；驾驶室里，老舵手腹部中枪还死死握着舵轮。失血让大小姐发起高烧，却仍用命令的口气说话。这一夜，主仆的规矩、活下去的办法、谁来接掌龙神会，都要在天亮前定下来。",
   "tone": ["怒海孤舟", "防弹暗室", "主仆之间", "叛乱之夜"],
   "style_hint": "巨浪砸在防弹舷窗上的闷响、船身倾斜时滚过地毯的酒瓶、应急红灯下渗血的纱布、门外军靴踩过积水的声音；写高位者在最狼狈时仍不肯低头，写守护者第一次越过规矩说出自己的想法。",
   "clock_start": {
-    "label": "子夜零点，副机停摆，甲板上的枪声暂时停了",
+    "label": "九月，热带气旋季",
     "minute": 0
   },
   "clock_style": "hm",
@@ -34,11 +34,8 @@
     "given_male": ["一马", "吾朗", "大河", "修平", "龙司", "慎吾", "健二", "隆史", "宗介", "大介", "胜弘", "孝之"],
     "given_neutral": ["司", "怜", "莲", "夜", "影", "刹那", "苍", "戒", "岚", "凛", "镜", "渚"],
     "nickname_patterns": [
-      {"pattern": "{family}大小姐", "gender": "female"},
-      {"pattern": "若头{family}", "gender": "any"},
-      {"pattern": "{given_last}头目", "gender": "any"},
-      {"pattern": "保镖{family}", "gender": "any"},
-      {"pattern": "阿{given_last}", "gender": "any"}
+      {"pattern": "阿{given_last}", "gender": "any"},
+      {"pattern": "{family}", "gender": "any"}
     ],
     "order": "family_first"
   },
@@ -137,7 +134,7 @@
       ],
       "age_range": [30, 42],
       "social_position": "high",
-      "baseline": "不属于任何组的雇佣剑客，只认契约和实力。今夜你的契约写的是“保九条明步平安到岸”，而整艘船上，只有你不必听任何人的命令。",
+      "baseline": "不属于任何组的雇佣剑客，只认契约和实力。今夜你的契约写的是“保大小姐平安到岸”，而整艘船上，只有你不必听任何人的命令。",
       "resources": [
         "一柄定制的太刀和一身古流剑术",
         "一张记着叛徒海外账户的软盘"
@@ -270,7 +267,7 @@
         "hidden": "从来没有选择过要不要当这个继承人；最怕的不是死，而是死的时候身边没有一个不是因为家规才留下的人"
       },
       "decision": {
-        "core_value": "我是九条家的明步，龙神会不能断在我手里",
+        "core_value": "我是九条家的{npc.given}，龙神会不能断在我手里",
         "goal_options": [
           "撑到天亮，亲自带人夺回驾驶室",
           "弄清这次叛乱背后是谁",
@@ -304,7 +301,7 @@
           "绝不在高烧或神志不清时有任何越界",
           "不接受因为救命之恩而来的亲近"
         ],
-        "expression": "摘下九曜戒指放进你掌心：“天亮之后我是当家。现在，我只是明步。”",
+        "expression": "摘下九曜戒指放进你掌心：“天亮之后我是当家。现在，我只是{npc.given}。”",
         "desire_range": [2, 4],
         "self_control_range": [3, 5],
         "desired_position": "不是被效忠的主人，而是被选择的人"
@@ -320,11 +317,11 @@
         {"from": 1081, "to": 1439, "location_id": "yacht_open_stern_helipad_deck"}
       ],
       "situation": {
-        "trigger": "明步跌坐在避难室的沙发上，左肩的血已经浸透了西装，门外传来军靴声",
+        "trigger": "{npc.given}跌坐在避难室的沙发上，左肩的血已经浸透了西装，门外传来军靴声",
         "pressure": "失血再不止住，十二分钟内就会休克",
         "exits": [
-          {"option": "剪开西装清创止血，按住伤口直到血止住", "cost": "明步疼得昏过去一阵，醒来时会记得是谁一直在旁边"},
-          {"option": "先用止血带勒住，再去走廊找医生", "cost": "明步要独自在避难室里待几分钟，门外随时可能有人来"}
+          {"option": "剪开西装清创止血，按住伤口直到血止住", "cost": "{npc.given}疼得昏过去一阵，醒来时会记得是谁一直在旁边"},
+          {"option": "先用止血带勒住，再去走廊找医生", "cost": "{npc.given}要独自在避难室里待几分钟，门外随时可能有人来"}
         ]
       },
       "tags": ["intimate", "workplace_power"]
@@ -389,7 +386,7 @@
         "desired_position": "门外那个拿着炸药的人，也是最后会被反将一军的叛徒"
       },
       "voices": {
-        "surface": "“明步！别躲了！把密钥交出来，我保你下船时还是个活人！”",
+        "surface": "“大小姐！别躲了！把密钥交出来，我保你下船时还是个活人！”",
         "inner": "“密钥要是跟着那丫头沉了海，这些年就全白费了。”"
       },
       "schedule": [
@@ -431,7 +428,7 @@
         ],
         "obligations": ["只要还有一口气，就不让船翻"],
         "exposure": "胸前口袋里有老当家托付的继承公证书副本",
-        "hidden": "看着明步长大，早就决定今夜要用这条命换明步上岸"
+        "hidden": "看着大小姐长大，早就决定今夜要用这条命换大小姐上岸"
       },
       "decision": {
         "core_value": "只要我还握着舵，九条家就不会沉",
@@ -447,7 +444,7 @@
           "breaking": "用最后的力气把舵轮锁死在顺风的方向"
         },
         "withdrawal": "靠着舵轮喘气，用带血的手擦老当家的照片",
-        "relationship_stance": "把明步当成自己的孩子，把保镖当成可以托付的人",
+        "relationship_stance": "把大小姐当成自己的孩子，把保镖当成可以托付的人",
         "contrast": "平时只会默默擦甲板，风暴里却像一尊不倒的石像",
         "prefers": ["风浪最大的舵轮前"],
         "avoids": ["丢下同伴自己逃"],
@@ -460,7 +457,7 @@
         ],
         "likes": ["烈酒", "听年轻人讲打赢的事"],
         "dislikes": ["背叛家门的人", "贪生怕死的人"],
-        "preconditions": ["对方先证明自己会护着明步"],
+        "preconditions": ["对方先证明自己会护着大小姐"],
         "boundaries": ["绝不让九条家断了根"],
         "expression": "在传声管里咳了两声：“小子，大小姐就交给你了。”",
         "desire_range": [1, 1],
@@ -813,11 +810,11 @@
   "tension_engines": [
     {
       "id": "te_rank_vs_trust",
-      "text": "家规要保镖服从，伤势要保镖做主；今夜谁听谁的，决定了明步能不能活到天亮。"
+      "text": "家规要保镖服从，伤势要保镖做主；今夜谁听谁的，决定了大小姐能不能活到天亮。"
     },
     {
       "id": "te_wound_and_fever",
-      "text": "失血和高烧让明步越来越难撑，可明步越难撑，越不肯示弱。"
+      "text": "失血和高烧让大小姐越来越难撑，可大小姐越难撑，越不肯示弱。"
     },
     {
       "id": "te_door_siege",
@@ -981,7 +978,7 @@
       "duration_minutes": 40,
       "beats": [
         "剪刀剪开浸透血的西装袖子",
-        "碘伏碰到伤口，明步咬住了嘴唇",
+        "碘伏碰到伤口，大小姐咬住了嘴唇",
         "纱布一圈一圈缠好，血终于不再往外渗"
       ],
       "hook_ids": ["h_akaho_wounded_command", "h_akaho_fever_name", "h_goro_tube_call"],
@@ -1049,7 +1046,7 @@
       "beats": [
         "风雨渐弱，天边泛起一线暗红",
         "九条家的直升机穿过云层，旋翼压平了浪花",
-        "明步披着保镖的外套站在停机坪上"
+        "大小姐披着保镖的外套站在停机坪上"
       ],
       "hook_ids": ["h_akaho_dawn_choice", "h_shibata_door_threat"],
       "start_minute": 110,
@@ -1063,12 +1060,12 @@
       "source": "nature",
       "flags": ["timed"],
       "location_ids": ["yacht_lower_armored_panic_room"],
-      "trigger": "明步左肩的伤口还在渗血，体温已经烧到三十九度半，手开始发抖，说话越来越慢。",
-      "objective": "止住血、压下烧，让明步清醒地撑到天亮。",
+      "trigger": "大小姐左肩的伤口还在渗血，体温已经烧到三十九度半，手开始发抖，说话越来越慢。",
+      "objective": "止住血、压下烧，让大小姐清醒地撑到天亮。",
       "choice": "是在避难室里尽力处理，还是冒险去主卧找医生和血浆。",
-      "immediate": {"text": "纱布又红了一圈，明步的额头烫得吓人。", "minutes": 8},
+      "immediate": {"text": "纱布又红了一圈，大小姐的额头烫得吓人。", "minutes": 8},
       "near": {"text": "再拖下去，伤口会感染，人会昏迷。", "deadline_minutes": 20},
-      "far": {"trigger": "明步在避难室里昏迷不醒", "consequence": "天亮时没有人能主持换代，龙神会陷入内斗。", "due_days": 1},
+      "far": {"trigger": "大小姐在避难室里昏迷不醒", "consequence": "天亮时没有人能主持换代，龙神会陷入内斗。", "due_days": 1},
       "exits": [
         {"option": "用急救箱里的东西清创缝合，整夜守着换药", "cost": "你一步也离不开避难室，走廊上的事只能交给别人"},
         {"option": "冒险去主卧接医生和血浆回来", "cost": "路上要穿过叛徒的巡逻线"}
@@ -1134,7 +1131,7 @@
       "far": {"trigger": "发电机短路引起油气爆炸", "consequence": "船尾起火，整艘船开始下沉。", "due_days": 1},
       "exits": [
         {"option": "跳进齐腰深的海水里拉下隔离闸", "cost": "手臂被电弧灼伤"},
-        {"option": "放弃电力，点起冷光棒，用手摇风箱通风", "cost": "避难室越来越闷，明步的烧更难退"}
+        {"option": "放弃电力，点起冷光棒，用手摇风箱通风", "cost": "避难室越来越闷，大小姐的烧更难退"}
       ],
       "leverage": null,
       "hook_ids": ["h_goro_tube_call"],
@@ -1197,7 +1194,7 @@
       "kind": "approach",
       "slot": "traitor_lieutenant_shibata",
       "location_ids": ["yacht_lower_armored_panic_room", "yacht_bilge_engineering_corridor", "yacht_open_stern_helipad_deck"],
-      "text": "门上的对讲机沙沙作响，{traitor_lieutenant_shibata.name}的声音带着笑：“明步，门外有四公斤炸药。密钥交出来，我保你活着下船。”"
+      "text": "门上的对讲机沙沙作响，{traitor_lieutenant_shibata.name}的声音带着笑：“大小姐，门外有四公斤炸药。密钥交出来，我保你活着下船。”"
     },
     {
       "id": "h_goro_tube_call",
@@ -1332,7 +1329,7 @@
       "id": "t_key_bound_to_two",
       "category": "信息",
       "requires": ["yakuza_heiress_akaho"],
-      "text": "瑞士账户的密钥其实需要两个人同时确认：继承人本人，和老当家指定的一名见证人——而那个见证人的名字，明步从没对任何人说过。"
+      "text": "瑞士账户的密钥其实需要两个人同时确认：继承人本人，和老当家指定的一名见证人——而那个见证人的名字，{yakuza_heiress_akaho.given}从没对任何人说过。"
     },
     {
       "id": "t_shibata_betrayed_too",
@@ -1350,7 +1347,7 @@
       "id": "t_succession_by_witness",
       "category": "制度",
       "requires": ["yakuza_heiress_akaho"],
-      "text": "老舵手和老医生都是直系老臣，按家规，只要两人亲口见证，明步今夜就能在船上完成换代，不必等回到东京。"
+      "text": "老舵手和老医生都是直系老臣，按家规，只要两人亲口见证，{yakuza_heiress_akaho.given}今夜就能在船上完成换代，不必等回到东京。"
     },
     {
       "id": "t_storm_eye_calm",
@@ -1362,7 +1359,7 @@
       "id": "t_old_promise_on_deck",
       "category": "关系",
       "requires": ["yakuza_heiress_akaho"],
-      "text": "明步护身符里夹着一张旧纸条，是老当家的字：“将来明步若要选一个人站在身边，让明步自己选，谁也不许拦。”"
+      "text": "{yakuza_heiress_akaho.given}护身符里夹着一张旧纸条，是老当家的字：“将来{yakuza_heiress_akaho.given}若要选一个人站在身边，让{yakuza_heiress_akaho.given}自己选，谁也不许拦。”"
     },
     {
       "id": "t_charges_cook_off",

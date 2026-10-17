@@ -14,7 +14,7 @@
   ],
   "style_hint": "名利场的光与暗：红毯的闪光灯、追光里的鱼尾礼裙、侧台的黑。写傲娇影后抹胸礼服下的身段、湿汗的锁骨与喘息，动作落在金属奖杯底角撬偏心轴上。",
   "clock_start": {
-    "label": "盛典骚乱铁闸自锁，转台导轮咬死影后重工礼裙",
+    "label": "电影节闭幕日，四月",
     "minute": 1350
   },
   "clock_style": "hm",
@@ -100,20 +100,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}影后",
-        "gender": "female"
+        "pattern": "小{family}",
+        "gender": "any"
       },
       {
-        "pattern": "{family}老师",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}导",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}队长",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

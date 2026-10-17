@@ -12,7 +12,7 @@
  "skill": {
   "skill_root": null,
   "skill_version": null,
-  "content_version": "2026.10.4"
+  "content_version": "2026.10.5"
  },
  "turns": [
   {
@@ -2013,7 +2013,7 @@
       }
      ],
      "clock_start": {
-      "label": "灯会头一夜",
+      "label": "灯会头一天",
       "minute": 1110
      },
      "clock_style": "shichen",
@@ -2534,7 +2534,7 @@
        "听松"
       ],
       "given_neutral": [
-       "灯影",
+       "停云",
        "夜阑",
        "无咎",
        "白露",
@@ -2551,10 +2551,6 @@
        {
         "gender": "any",
         "pattern": "阿{given_last}"
-       },
-       {
-        "gender": "female",
-        "pattern": "{family}娘子"
        },
        {
         "gender": "male",
@@ -2636,7 +2632,7 @@
         26,
         50
        ],
-       "baseline": "镇上替人和非人代写契约的先生，朱砂和桑皮纸都是自己备的。",
+       "baseline": "镇上替人和非人代写契约的代笔人，朱砂和桑皮纸都是自己备的。",
        "gender": "any",
        "id": "contract_scribe",
        "reputation": "字正，心也算正",
@@ -2647,7 +2643,7 @@
        "risks": [
         "写错过一份契约上的名字，那位客人至今还没来找麻烦"
        ],
-       "role": "代写契约的先生",
+       "role": "代写契约的代笔人",
        "social_position": "equal",
        "title_patterns": [
         {

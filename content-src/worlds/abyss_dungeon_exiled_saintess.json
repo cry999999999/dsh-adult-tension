@@ -17,7 +17,7 @@
   ],
   "style_hint": "奇幻深渊地下城重型机械开采工程，无第三人称单数代词，全员成年合法自立",
   "clock_start": {
-    "label": "溶洞探查",
+    "label": "圣历一二〇七年，雨季",
     "minute": 1380
   },
   "clock_style": "hm",
@@ -99,8 +99,8 @@
         "gender": "male"
       },
       {
-        "pattern": "{family}圣女",
-        "gender": "female"
+        "pattern": "{given}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

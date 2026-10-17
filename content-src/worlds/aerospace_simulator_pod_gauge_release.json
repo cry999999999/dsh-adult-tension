@@ -14,7 +14,7 @@
   ],
   "style_hint": "商业航天座舱硬核机械工笔，刻画超高音速模拟过载后的高温缺氧绝境、硬质钨钴合金航图测角规在气密偏心阀暗槽中的剧烈杠杆反扭力矩，傲娇女飞官抗荷服被汗水浸透勾勒身姿的视觉张力，台词干练果决充满默契协同。",
   "clock_start": {
-    "label": "超高音速黑障模拟过载，主气锁膨胀抱死升温",
+    "label": "十一月的一个周四，晴",
     "minute": 1250
   },
   "clock_style": "hm",
@@ -100,15 +100,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}少校",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}总师",
-        "gender": "male"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

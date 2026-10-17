@@ -15,7 +15,7 @@
   ],
   "style_hint": "湾岸改装工坊的硬朗笔法：白天写停车坪上的改装车、拆开的发动机、老摇滚和机油味；夜里写暴雨砸铁皮屋顶、电缆火花逼近油罐的红光。女机械师冷艳嘴硬，张力藏在趴在泥水里、整个人压在对方身上一起使劲时那一声没压住的喘息里。",
   "clock_start": {
-    "label": "航煤油罐受电火花引燃与卷帘门导轨偏心咬死倒计时",
+    "label": "八月，雷雨季",
     "minute": 10
   },
   "clock_style": "hm",
@@ -100,10 +100,6 @@
       "港"
     ],
     "nickname_patterns": [
-      {
-        "pattern": "{family}师傅",
-        "gender": "female"
-      },
       {
         "pattern": "{family}君",
         "gender": "male"

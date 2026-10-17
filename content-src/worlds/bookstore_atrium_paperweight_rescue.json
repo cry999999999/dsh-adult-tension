@@ -14,7 +14,7 @@
   ],
   "style_hint": "人文雅致与现代抗灾工程硬核工笔，刻画古书肆双层天井内骤雨暴灌的窒息压迫、实心黄铜镇纸在生锈调节铁脚螺母卡死凹槽中的剧烈杠杆咬合、棉麻长裙被雨水汗水浸透贴合起伏身躯的视觉张力，台词充满严密力学支点测算与生死相依的深沉信任。",
   "clock_start": {
-    "label": "暴雨倒灌天井水位上涨，书架自重持续压迫走道",
+    "label": "六月，江南梅雨季",
     "minute": 1395
   },
   "clock_style": "hm",
@@ -100,15 +100,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}老师",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}师傅",
-        "gender": "male"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

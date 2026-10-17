@@ -1299,7 +1299,7 @@
   }
  ],
  "clock_start": {
-  "label": "夜读会正酣，书梯滚轮咬住项圈胸链",
+  "label": "十月的一个周五，读书会当天",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1795,33 +1795,17 @@
    "丹青",
    "天音",
    "和鸣",
-   "连城",
-   "秋水"
+   "致和",
+   "叙安"
   ],
   "nickname_patterns": [
-   {
-    "gender": "female",
-    "pattern": "{family}馆员"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}师兄"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}师傅"
-   },
    {
     "gender": "female",
     "pattern": "小{given}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}馆长"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}博士"
+    "gender": "any",
+    "pattern": "小{family}"
    }
   ],
   "order": "family_first"

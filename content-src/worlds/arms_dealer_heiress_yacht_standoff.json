@@ -14,7 +14,7 @@
   ],
   "style_hint": "安全屋只剩血红的应急灯。千金的墨黑鱼尾晚礼服被弹片割裂，左臂缠着保镖的领带，脸上沾着火药灰，双手仍稳稳握着雕花消音手枪；保镖背抵着钛合金门，听着门外气割枪的尖啸一寸寸逼近。",
   "clock_start": {
-    "label": "游艇动力切断初刻，暗礁触礁倒计时三十五分钟",
+    "label": "南太平洋的台风季，九月",
     "minute": 0
   },
   "clock_style": "hm",
@@ -80,9 +80,9 @@
       "零号",
       "海燕",
       "逆潮",
-      "铁壁",
+      "灰隼",
       "暗芒",
-      "风暴",
+      "夜枭",
       "深渊",
       "青锋",
       "惊雷",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}董事长",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}总裁",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}队长",
-        "gender": "any"
-      },
-      {
         "pattern": "{family}小姐",
         "gender": "female"
       },
       {
-        "pattern": "{family}阁下",
+        "pattern": "{given}",
         "gender": "any"
       }
     ],
@@ -688,7 +676,7 @@
           "在船上只认航海规程",
           "从不过问东家的私事"
         ],
-        "expression": "解下胸前那枚纯银六分仪胸针递给青年，虚弱敬礼：罗兰队长，大小姐交给你了，我来守住这最后一里航向。",
+        "expression": "解下胸前那枚纯银六分仪胸针递给青年，虚弱敬礼：{player.name}队长，大小姐交给你了，我来守住这最后一里航向。",
         "desire_range": [
           2,
           3
@@ -2099,7 +2087,7 @@
         "panic_room_command_citadel_deck_three",
         "main_saloon_bullet_riddled_gallery"
       ],
-      "text": "{arms_dealer_heiress_kristina_vance.name}单手撑在安全屋冰冷的钛合金控制台侧，因失血与横摇脸色发白却傲气逼人：“罗兰！把门锁死！别管我手臂上的伤，去守住通风管！这群海盗杂碎以为炸断主缆就能让我屈服？”"
+      "text": "{arms_dealer_heiress_kristina_vance.name}撑在安全屋的钛合金控制台侧，失血脸色发白却傲气逼人：“{player.name}！把门锁死！别管我手臂上的伤，去守住通风管！炸断主缆就想让我屈服？”"
     },
     {
       "id": "h_kristina_chip_whisper",
@@ -2140,7 +2128,7 @@
         "main_saloon_bullet_riddled_gallery",
         "yacht_lower_bilge_engine_compartment"
       ],
-      "text": "{senior_yacht_captain_eriksen_loyal.name}捂着淌血的腹部靠在主舵轮上，抓起有线对讲机话筒咳着血沫急促大喊：“大小姐！罗兰队长！坚持住！黑鲨礁就在正前方五链！必须马上穿过沙龙大厅下机舱重启左舷主机！”"
+      "text": "{senior_yacht_captain_eriksen_loyal.name}捂着淌血的腹部靠在舵轮上，抓起对讲机咳着血沫大喊：“大小姐！{player.name}队长！坚持住！黑鲨礁就在前方！必须马上穿过沙龙大厅下机舱重启左舷主机！”"
     },
     {
       "id": "h_valentin_fleet_radio_boom",
@@ -2233,7 +2221,7 @@
       "location_ids": [
         "main_saloon_bullet_riddled_gallery"
       ],
-      "text": "{arms_dealer_heiress_kristina_vance.name}站在破晓金色阳光洒满之停机坪边缘，仰起清冷美眸凝视青年绝美浅笑：“握紧我的手……罗兰！从今往后，无论是公海风浪还是豪门血雨，你都休想再离开我身边半步！”"
+      "text": "{arms_dealer_heiress_kristina_vance.name}站在晨光洒满的停机坪边缘，仰起清冷美眸浅笑：“握紧我的手……{player.name}！从今往后，无论是公海风浪还是豪门血雨，你都休想再离开我身边半步！”"
     },
     {
       "id": "hd_arms_dealer_heiress_kristina_vance",

@@ -2136,7 +2136,7 @@
    "新之助",
    "源次郎",
    "清兵卫",
-   "与一",
+   "甚八",
    "伊织",
    "直之进",
    "平八",
@@ -2166,10 +2166,6 @@
    {
     "gender": "female",
     "pattern": "阿{given}"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}大人"
    },
    {
     "gender": "male",

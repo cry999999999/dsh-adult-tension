@@ -14,7 +14,7 @@
   ],
   "style_hint": "停战期圣殿的工笔：白天写谈判桌上互不相让的措辞、圣殿集市里飘着蜂蜜面包香的摊子、钟楼一天七次的钟声；夜里写三倍重力下骨头咯吱作响、石砖一块块龟裂下陷的沉重。女将军骄傲得像一团火，张力藏在每次斗嘴斗输了以后别过去的那张红脸上。",
   "clock_start": {
-    "label": "重力翻到五倍压塌祭坛倒计时",
+    "label": "圣战第四年，夏至前后",
     "minute": 10
   },
   "clock_style": "hm",
@@ -100,15 +100,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{given}将军",
-        "gender": "female"
-      },
-      {
-        "pattern": "{given}学士",
-        "gender": "male"
-      },
-      {
         "pattern": "小{given}",
+        "gender": "any"
+      },
+      {
+        "pattern": "{given}",
         "gender": "any"
       }
     ]

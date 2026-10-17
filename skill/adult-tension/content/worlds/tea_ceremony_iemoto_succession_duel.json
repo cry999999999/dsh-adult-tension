@@ -1135,7 +1135,7 @@
   }
  ],
  "clock_start": {
-  "label": "薄暮宗争",
+  "label": "十一月，红叶时节",
   "minute": 1020
  },
  "clock_style": "hm",
@@ -1548,8 +1548,8 @@
     "pattern": "老{family}"
    },
    {
-    "gender": "female",
-    "pattern": "{family}家元"
+    "gender": "any",
+    "pattern": "{family}"
    }
   ],
   "order": "family_first"

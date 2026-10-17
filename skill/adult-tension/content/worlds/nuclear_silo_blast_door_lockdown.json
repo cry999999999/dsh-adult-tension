@@ -1122,7 +1122,7 @@
   }
  ],
  "clock_start": {
-  "label": "电磁脉冲伪警报触发，百吨碳化钨防爆门切入重力闭死下沉",
+  "label": "1989 年，深秋",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1690,15 +1690,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "{family}指挥官"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}士官长"
-   },
-   {
-    "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

@@ -1122,7 +1122,7 @@
   }
  ],
  "clock_start": {
-  "label": "圣光屏障过载崩解，崩塌巨石死死卡入主防爆门导轨",
+  "label": "边境战争第三年，晚秋",
   "minute": 1020
  },
  "clock_style": "hm",
@@ -1673,16 +1673,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}神官长"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}骑士长"
+    "gender": "any",
+    "pattern": "小{given}"
    },
    {
     "gender": "any",
-    "pattern": "小{given}"
+    "pattern": "小{family}"
    }
   ],
   "order": "family_first"
@@ -1796,7 +1792,7 @@
     "力气孱弱无法协助重物撬动",
     "在漫天落石烟尘中极易迷失方向"
    ],
-   "role": "前线野战救护所随军青年随军修女",
+   "role": "前线野战救护所青年随军祈祷师",
    "social_position": "low",
    "title_patterns": [
     {

@@ -1455,7 +1455,7 @@
   }
  ],
  "clock_start": {
-  "label": "1999 年 8 月，一个闷热的周五晚上",
+  "label": "1999 年 8 月，一个闷热的周五",
   "minute": 1290
  },
  "clock_style": "hm",
@@ -1913,10 +1913,6 @@
    {
     "gender": "any",
     "pattern": "小{given}"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}{given}"
    }
   ],
   "order": "family_first"

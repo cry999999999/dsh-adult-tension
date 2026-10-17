@@ -14,7 +14,7 @@
   ],
   "style_hint": "阿尔卑斯的冷与宝石的光：雪山、木屋、矿洞岩壁上一簇簇的水晶、放大镜下的火彩。写傲娇鉴定师高定长裙下的身段、冻红的鼻尖与喘息，动作落在钨钢笔撬卡销上。",
   "clock_start": {
-    "label": "强震致主电源跳闸，矿洞防爆气密门机械自锁抱死",
+    "label": "二月，阿尔卑斯的雪季",
     "minute": 1260
   },
   "clock_style": "hm",
@@ -64,7 +64,7 @@
       "诗翠",
       "听兰",
       "艾琳",
-      "莫娜"
+      "曼琳"
     ],
     "given_male": [
       "景和",
@@ -79,7 +79,7 @@
       "瀚海",
       "绍辉",
       "明哲",
-      "汉斯",
+      "卢卡",
       "柯勒"
     ],
     "given_neutral": [
@@ -100,20 +100,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}首席",
-        "gender": "female"
-      },
-      {
         "pattern": "{family}小姐",
         "gender": "female"
       },
       {
-        "pattern": "{family}工",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}指挥长",
-        "gender": "male"
+        "pattern": "小{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"
@@ -192,7 +184,7 @@
         21
       ],
       "social_position": "low",
-      "baseline": "鉴定师洛桑联邦理工同门学妹兼助手，熟悉宝石物理特性与显微光学仪器的机械构造，处事冷静细致。",
+      "baseline": "鉴定师洛桑联邦理工同门后辈兼助手，熟悉宝石物理特性与显微光学仪器的机械构造，处事冷静细致。",
       "resources": [
         "一套宝石学莫氏硬度等级对照标准测试片",
         "一瓶高纯度金石双重折射率测试油"

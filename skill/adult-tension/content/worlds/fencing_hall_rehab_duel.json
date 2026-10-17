@@ -1257,7 +1257,7 @@
   }
  ],
  "clock_start": {
-  "label": "主电闸短路计分屏砸落咬卡防刺护腿瞬间",
+  "label": "七月，台风季",
   "minute": 1260
  },
  "clock_style": "hm",
@@ -1710,28 +1710,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}冠军"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "female",
-    "pattern": "{given}队长"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}总教头"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}队医"
-   },
-   {
-    "gender": "male",
-    "pattern": "{given}记者"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}师傅"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

@@ -235,6 +235,34 @@ class ValidationTest(unittest.TestCase):
         _pack, problems = worldpack.validate_world(world, custom=True, tag_ids=TAG_IDS)
         self.assertEqual(problems, [])
 
+    def test_a_text_may_not_name_someone_with_a_pool_name(self):
+        # The runtime draws each character's name, so a pool name written
+        # into a text may belong to nobody, or read as a name where it was
+        # meant as a word; one-character names are too often words to count.
+        world = example()
+        world["hooks"][0]["text"] = "{npc.name}说晚晴明早就到"
+        world["character_templates"][0]["voices"]["inner"] = "“许家的人都走了。”"
+        _pack, problems = worldpack.validate_world(world, custom=True, tag_ids=TAG_IDS)
+        reasons = {p["path"]: p["reason"] for p in problems}
+        self.assertEqual(set(reasons), {"$.hooks[0].text"})
+        self.assertIn("晚晴", reasons["$.hooks[0].text"])
+        world["hooks"][0]["text"] = "{npc.name}说{player.name}明早就到"
+        _pack, problems = worldpack.validate_world(world, custom=True, tag_ids=TAG_IDS)
+        self.assertEqual(problems, [])
+
+    def test_the_start_label_names_the_day_not_the_hour(self):
+        # Activities and pressures choose their own start minute, so a clock
+        # time or a countdown in the label would contradict the clock.
+        world = example()
+        for label in ("暴雨深夜十一点半", "子时初刻", "闭馆倒计时", "开播前十五秒", "第一天 22:30"):
+            world["clock_start"]["label"] = label
+            _pack, problems = worldpack.validate_world(world, custom=True, tag_ids=TAG_IDS)
+            self.assertEqual([p["path"] for p in problems], ["$.clock_start.label"], label)
+        for label in ("民国十五年，梅雨季", "1987 年 11 月，一个下着冷雨的星期三", None):
+            world["clock_start"]["label"] = label
+            _pack, problems = worldpack.validate_world(world, custom=True, tag_ids=TAG_IDS)
+            self.assertEqual(problems, [], label)
+
     def test_missing_ages_unknown_fields_and_bad_shapes_are_refused(self):
         world = example()
         del world["character_templates"][0]["age_range"]

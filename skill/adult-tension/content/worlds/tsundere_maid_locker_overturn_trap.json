@@ -1320,7 +1320,7 @@
   }
  ],
  "clock_start": {
-  "label": "周年庆舞会散场，音箱震落砸塌储物柜，铁柜卡死更衣门",
+  "label": "开店三周年纪念日，四月",
   "minute": 1360
  },
  "clock_style": "hm",
@@ -1860,28 +1860,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "夏语冰大人"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "female",
-    "pattern": "语冰大小姐"
-   },
-   {
-    "gender": "male",
-    "pattern": "蓝店长"
-   },
-   {
-    "gender": "female",
-    "pattern": "白领班"
-   },
-   {
-    "gender": "male",
-    "pattern": "安主管"
-   },
-   {
-    "gender": "male",
-    "pattern": "乔工师"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

@@ -14,7 +14,7 @@
   ],
   "style_hint": "远海缉私船的冷硬笔法：白天写几十天海上巡逻的日常，甲板上晒着的救生衣、雷达屏上一个个光点；夜里写风暴里倾斜箱顶上的风、脚下翻滚的黑浪、钢缆一丝丝崩断的脆响。女警官冷静果决，张力藏在悬在半空时那一下把整个后背交出去的信任里。",
   "clock_start": {
-    "label": "残存受损单侧钢缆彻底崩断坠海倒计时",
+    "label": "九月，台风季",
     "minute": 10
   },
   "clock_style": "hm",
@@ -100,15 +100,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}警官",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}工",
-        "gender": "male"
-      },
-      {
         "pattern": "老{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "小{family}",
         "gender": "any"
       }
     ]

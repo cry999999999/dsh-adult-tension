@@ -1107,7 +1107,7 @@
   }
  ],
  "clock_start": {
-  "label": "冰冷暗河浊浪彻底漫顶灭顶倒计时",
+  "label": "春汛时节",
   "minute": 10
  },
  "clock_style": "hm",
@@ -1674,10 +1674,6 @@
    "湄"
   ],
   "nickname_patterns": [
-   {
-    "gender": "female",
-    "pattern": "{given}巫女"
-   },
    {
     "gender": "male",
     "pattern": "{family}先生"

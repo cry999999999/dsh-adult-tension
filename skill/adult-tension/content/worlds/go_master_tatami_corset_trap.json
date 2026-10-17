@@ -1287,7 +1287,7 @@
   }
  ],
  "clock_start": {
-  "label": "读秒进入最后十秒，地热导轨膨胀咬死移门与皮衣搭扣",
+  "label": "擂台赛决胜局当日，十月",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1828,28 +1828,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}擂主"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}九段"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}裁判长"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}老师"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}工长"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}总"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

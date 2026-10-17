@@ -1442,7 +1442,7 @@
   }
  ],
  "clock_start": {
-  "label": "夜里十一点四十，公海十级风暴，卫星失联",
+  "label": "十月，热带风暴季",
   "minute": 1420
  },
  "clock_style": "hm",
@@ -1969,24 +1969,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "少夫人"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
     "gender": "any",
-    "pattern": "首席顾问"
-   },
-   {
-    "gender": "male",
-    "pattern": "大少爷"
-   },
-   {
-    "gender": "any",
-    "pattern": "总管家"
-   },
-   {
-    "gender": "any",
-    "pattern": "保镖队长"
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"
@@ -2059,7 +2047,7 @@
    "baseline": "松垮凌乱的丝绸睡袍，瘫在隔壁大床上满脸酒气潮红，床头散着空了的水晶酒瓶与安眠药盒，鼾声沉重，英俊的脸透着酒色过度的虚浮。",
    "gender": "any",
    "id": "pc_drunk_scion_husband",
-   "reputation": "声名狼藉的草包阔少，挥金如土，视妻子为撑门面的花瓶。",
+   "reputation": "声名狼藉的草包阔少，挥金如土，视配偶为撑门面的花瓶。",
    "resources": [
     "家族信托每年三成收益分红支配权与董事会公章",
     "底层私人金库与直升机起飞指令密码"
@@ -2067,7 +2055,7 @@
    "risks": [
     "酒醒撞破私会会引发癫狂的暴力与家族内战"
    ],
-   "role": "昏睡隔壁的纨绔大少爷",
+   "role": "昏睡隔壁的纨绔继承人",
    "social_position": "high",
    "title_patterns": [
     {

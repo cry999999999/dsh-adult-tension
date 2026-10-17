@@ -14,7 +14,7 @@
   ],
   "style_hint": "古典庄重的宫廷刑狱工笔，着重刻画重型水压滑轮配重尖啸、暗河涨水拍击铁栅声、精金印章与铸铁咬合的脆鸣，台词骄傲凛然，字字扣准帝国继承法典。",
   "clock_start": {
-    "label": "黎明政变突发，配重重闸落锁",
+    "label": "王国历三百年，初春",
     "minute": 1380
   },
   "clock_style": "hm",
@@ -98,19 +98,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}大小姐",
-        "gender": "female"
-      },
-      {
-        "pattern": "{given}骑士",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}典狱官",
-        "gender": "any"
-      },
-      {
         "pattern": "老{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "{family}",
         "gender": "any"
       }
     ]

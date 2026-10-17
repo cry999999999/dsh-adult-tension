@@ -1290,7 +1290,7 @@
   }
  ],
  "clock_start": {
-  "label": "示范前二十五秒，讲案漏磁吸住钢珠乳夹",
+  "label": "成人礼大典当天，五月",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1831,7 +1831,7 @@
    "素风",
    "清欢",
    "景澄",
-   "秋水",
+   "叙安",
    "云帆",
    "微澜",
    "清和",
@@ -1843,27 +1843,11 @@
   "nickname_patterns": [
    {
     "gender": "female",
-    "pattern": "{family}老师"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}总"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}工"
-   },
-   {
-    "gender": "female",
     "pattern": "小{given}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}山长"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}摄影"
+    "gender": "any",
+    "pattern": "小{family}"
    }
   ],
   "order": "family_first"

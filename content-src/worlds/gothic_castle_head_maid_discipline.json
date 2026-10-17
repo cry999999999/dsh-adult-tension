@@ -14,7 +14,7 @@
   ],
   "style_hint": "维多利亚末期哥特的严谨与凛冽官能：鲸骨束腰长裙、硬挺蕾丝围裙的折痕、腰间铁十字钥匙串的撞击声、被雪水浸透的天鹅绒燕尾服、炉火把两道身影投在石壁上。对话恪守主仆礼数却句句机锋；暗室镜前服从与支配的边界寸寸踩碎，归于两个成年人自愿的较劲。",
   "clock_start": {
-    "label": "晚上九点，暴雪压塌了出山吊桥",
+    "label": "1894 年，隆冬",
     "minute": 1260
   },
   "clock_style": "hm",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}少爷",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}女仆长",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}夫人",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}总管",
+        "pattern": "{given}",
         "gender": "any"
       },
       {
-        "pattern": "执事长官",
+        "pattern": "{family}",
         "gender": "any"
       }
     ],
@@ -199,7 +187,7 @@
     },
     {
       "id": "pc_ambitious_dowager_duchess_regent",
-      "role": "企图勾结债阀夺取领地之摄政遗孀公爵夫人",
+      "role": "企图勾结债阀夺取领地之丧偶的摄政公爵",
       "gender": "any",
       "title_patterns": [
         {

@@ -1286,7 +1286,7 @@
   }
  ],
  "clock_start": {
-  "label": "夺冠谢幕，耳机线回弹缠死项圈铃铛",
+  "label": "总决赛日，十一月",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1795,7 +1795,7 @@
    "清婉",
    "晴岚",
    "若溪",
-   "楚楚",
+   "甜甜",
    "映月",
    "凝霜",
    "语嫣",
@@ -1823,10 +1823,10 @@
    "星芒",
    "疾风",
    "烈焰",
-   "微光",
+   "小满",
    "清和",
    "子墨",
-   "安然",
+   "一诺",
    "星澜",
    "沐川",
    "凌霄",
@@ -1839,28 +1839,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}主播"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}队"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}工"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}解说"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}导"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}总"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

@@ -14,7 +14,7 @@
   ],
   "style_hint": "冷硬暴烈的近未来赛博重工工笔，着重刻画千米高空失重坠落的狂暴风压、铬钼合金扳手与轨道超硬齿槽咬合时迸射的蓝白电弧、机能风战术夹克下急速升温的剧烈喘息，台词充满底层街头反抗者的狠厉与冷静。",
   "clock_start": {
-    "label": "主缆索熔断报警触发，缆车切入三十度失速俯冲",
+    "label": "新历七十年，酸雨季",
     "minute": 1380
   },
   "clock_style": "hm",
@@ -92,15 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}工",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}队长",
-        "gender": "any"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]

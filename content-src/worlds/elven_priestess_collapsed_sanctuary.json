@@ -14,7 +14,7 @@
   ],
   "style_hint": "精灵圣女银发披散，右足踝扭伤红肿，祭司长袍被碎石撕裂，仍握着半截白银法杖昂着下巴；青年盾卫满身凹痕的重甲顶在神像基座后，两人背靠背守着三角空腔，熔岩的红光和毒瘴一起往里渗。",
   "clock_start": {
-    "label": "巨震坍塌闭锁初刻，地脉岩浆上涨倒计时四十分钟",
+    "label": "迷宫都市的远征季，初夏",
     "minute": 0
   },
   "clock_style": "hm",
@@ -80,7 +80,7 @@
       "阿莱克斯",
       "希尔",
       "风信",
-      "星见",
+      "希洛",
       "月读",
       "云涯",
       "凌羽",
@@ -92,23 +92,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}祭司长",
+        "pattern": "{family}",
         "gender": "any"
       },
       {
-        "pattern": "{family}殿下",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}骑士",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}大人",
-        "gender": "any"
-      },
-      {
-        "pattern": "{family}阁下",
+        "pattern": "{given}",
         "gender": "any"
       }
     ],
@@ -2131,7 +2119,7 @@
         "collapsed_moonlight_altar_triangular_voi",
         "abyssal_lava_chasm_fissure_ledge"
       ],
-      "text": "{paladin_commander_gawain_rescue_dawn.name}率领精锐圣白银骑士团以神圣破障战吼轰碎外层落石：“圣月王庭圣白银骑士团在此！宵小杂碎安敢伤我殿下分毫！罗兰兄弟！殿下！坚持住！高文已带主力杀到！”"
+      "text": "{paladin_commander_gawain_rescue_dawn.name}率领圣白银骑士团以战吼轰碎外层落石：“圣月王庭骑士团在此！宵小杂碎安敢伤我殿下分毫！{player.name}！殿下！坚持住！主力已经杀到！”"
     },
     {
       "id": "h_belial_crystal_trigger_screech",

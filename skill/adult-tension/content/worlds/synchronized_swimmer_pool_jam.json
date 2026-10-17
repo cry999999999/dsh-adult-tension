@@ -1122,7 +1122,7 @@
   }
  ],
  "clock_start": {
-  "label": "水循环主阀气蚀抱死，减压井池底水位以每分钟二十公分暴涨",
+  "label": "全运会前一个月，八月",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1668,16 +1668,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}冠军"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}工"
-   },
-   {
     "gender": "any",
     "pattern": "小{family}"
+   },
+   {
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

@@ -1314,7 +1314,7 @@
   }
  ],
  "clock_start": {
-  "label": "亥时一刻，安全区魔力结界仅剩三个时辰",
+  "label": "迷宫都市的远征季，霜月上旬",
   "minute": 1335
  },
  "clock_style": "hm",
@@ -1804,23 +1804,11 @@
   "nickname_patterns": [
    {
     "gender": "any",
-    "pattern": "团长{family}"
+    "pattern": "{family}"
    },
    {
     "gender": "any",
-    "pattern": "大师{family}"
-   },
-   {
-    "gender": "any",
-    "pattern": "斥候{family}"
-   },
-   {
-    "gender": "any",
-    "pattern": "灰眼{family}"
-   },
-   {
-    "gender": "any",
-    "pattern": "断剑{family}"
+    "pattern": "{given}"
    }
   ],
   "order": "family_first"

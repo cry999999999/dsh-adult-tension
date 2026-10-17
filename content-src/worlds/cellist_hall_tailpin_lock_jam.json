@@ -14,7 +14,7 @@
   ],
   "style_hint": "金色大厅的鎏金灯光与千名乐评的屏息。写清冷大提琴女神婴儿肥两颊的潮红、被扯紧的藏青真丝裙下钛合金贞操带勒出的腿根曲线、屏住的喘息，动作落在琴弓马尾扣调节柄挑簧片上。",
   "clock_start": {
-    "label": "起拍前十五秒，尾针咬进贞操带锁壳",
+    "label": "协奏曲首演日，五月",
     "minute": 1140
   },
   "clock_style": "hm",
@@ -98,38 +98,22 @@
       "沐风",
       "鸣谦",
       "秋白",
-      "微光",
+      "书禾",
       "书意",
       "景行",
       "玄同",
       "丹青",
       "天音",
-      "和鸣"
+      "景澄"
     ],
     "nickname_patterns": [
-      {
-        "pattern": "{family}老师",
-        "gender": "female"
-      },
       {
         "pattern": "{family}先生",
         "gender": "male"
       },
       {
-        "pattern": "{family}师傅",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}首席",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}大师",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}摄影",
-        "gender": "male"
+        "pattern": "小{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

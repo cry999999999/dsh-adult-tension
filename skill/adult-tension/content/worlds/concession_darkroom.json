@@ -1308,7 +1308,7 @@
   }
  ],
  "clock_start": {
-  "label": "深秋夜，宵禁前两小时",
+  "label": "1940 年，深秋",
   "minute": 1260
  },
  "clock_style": "hm",
@@ -1815,19 +1815,11 @@
    },
    {
     "gender": "female",
-    "pattern": "{family}太太"
-   },
-   {
-    "gender": "female",
     "pattern": "{family}小姐"
    },
    {
     "gender": "any",
     "pattern": "小{family}"
-   },
-   {
-    "gender": "any",
-    "pattern": "{family}老板"
    }
   ],
   "order": "family_first"

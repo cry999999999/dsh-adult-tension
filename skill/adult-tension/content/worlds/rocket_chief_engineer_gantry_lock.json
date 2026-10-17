@@ -1292,7 +1292,7 @@
   }
  ],
  "clock_start": {
-  "label": "台风雷暴逼近平台，高空检修吊笼防坠棘爪卡死",
+  "label": "九月，发射窗口期",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1876,20 +1876,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}总师"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}工"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
     "gender": "any",
-    "pattern": "{family}主管"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}台长"
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

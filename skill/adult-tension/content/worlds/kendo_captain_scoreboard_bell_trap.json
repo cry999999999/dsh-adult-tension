@@ -1286,7 +1286,7 @@
   }
  ],
  "clock_start": {
-  "label": "决赛鸣哨前二十秒，大太鼓吊索咬住道服前襟",
+  "label": "锦标赛决赛日，八月",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1845,27 +1845,11 @@
   "nickname_patterns": [
    {
     "gender": "female",
-    "pattern": "{family}主将"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}裁判长"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}工"
-   },
-   {
-    "gender": "female",
     "pattern": "小{given}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}解说"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}总监"
+    "gender": "any",
+    "pattern": "小{family}"
    }
   ],
   "order": "family_first"

@@ -1287,7 +1287,7 @@
   }
  ],
  "clock_start": {
-  "label": "晴空颠簸，冷藏抽屉弹开挂住乘务长的白金链",
+  "label": "跨洋航班上，十二月",
   "minute": 1140
  },
  "clock_style": "hm",
@@ -1831,28 +1831,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}乘务长"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
-    "gender": "male",
-    "pattern": "{family}师兄"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}总"
-   },
-   {
-    "gender": "female",
-    "pattern": "{family}师妹"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}警官"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}少"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

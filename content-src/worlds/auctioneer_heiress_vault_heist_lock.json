@@ -14,7 +14,7 @@
   ],
   "style_hint": "拍卖行的工笔：白天写大厅里的丝绒座椅、预展灯下的名画、拍卖师报价时不疾不徐的嗓音和落槌那一声脆响；夜里写金库里无色微甜的气体、氧气检测笔一跳一跳的红灯和铅闸落下后的死寂。拍卖师雍容得像一幅古画，张力藏在报价时望向某个人多停的那半秒。",
   "clock_start": {
-    "label": "卤代烷灭火气体浓度超标，窒息晕厥倒计时",
+    "label": "秋拍季，十月中旬",
     "minute": 10
   },
   "clock_style": "hm",
@@ -100,15 +100,11 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}槌",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}工",
-        "gender": "male"
-      },
-      {
         "pattern": "小{family}",
+        "gender": "any"
+      },
+      {
+        "pattern": "老{family}",
         "gender": "any"
       }
     ]
@@ -716,7 +712,7 @@
         "desired_position": "和鉴定部的老鉴定师并肩站着"
       },
       "voices": {
-        "surface": "微澜丫头！画都还在吗？先顾人，画丢了老头子去找！",
+        "surface": "丫头！画都还在吗？先顾人，画丢了老头子去找！",
         "inner": "看了四十年画……今晚要是丢了这个丫头，我这双眼睛就白长了。"
       },
       "schedule": [

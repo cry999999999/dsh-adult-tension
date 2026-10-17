@@ -14,7 +14,7 @@
   ],
   "style_hint": "吸音软包与冷调微光里的密闭负压：耳膜刺痛、呼吸发紧。写清纯声优水润的婴儿肥、汗湿的鬓角与压低的喘息，动作落在防震架扳手挑开气密阀上。",
   "clock_start": {
-    "label": "终章告白录到第十一遍，排风机失控，气密门负压抱死",
+    "label": "资料片交付前一周，十一月",
     "minute": 1380
   },
   "clock_style": "hm",
@@ -100,28 +100,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "苏老师",
-        "gender": "female"
+        "pattern": "小{family}",
+        "gender": "any"
       },
       {
-        "pattern": "清菡同学",
-        "gender": "female"
-      },
-      {
-        "pattern": "程总监",
-        "gender": "male"
-      },
-      {
-        "pattern": "温指导",
-        "gender": "female"
-      },
-      {
-        "pattern": "叶工程师",
-        "gender": "male"
-      },
-      {
-        "pattern": "沈师傅",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

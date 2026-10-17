@@ -15,7 +15,7 @@
   ],
   "style_hint": "古典哥特、精密力学、冷冽威仪、绝境反转",
   "clock_start": {
-    "label": "死线破晓",
+    "label": "圣历一四八七年，大斋期",
     "minute": 300
   },
   "clock_style": "hm",
@@ -93,12 +93,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}大人",
-        "gender": "male"
+        "pattern": "{given}",
+        "gender": "any"
       },
       {
-        "pattern": "{family}审判长",
-        "gender": "female"
+        "pattern": "{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

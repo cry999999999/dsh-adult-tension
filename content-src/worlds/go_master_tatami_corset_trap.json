@@ -14,7 +14,7 @@
   ],
   "style_hint": "全景玻璃对局室的刺眼聚光与读秒蜂鸣。写清冷女擂主婴儿肥两颊的羞耻红晕、汗透的素白和服与压住的喘息，动作落在玛瑙棋子割暗带上。",
   "clock_start": {
-    "label": "读秒进入最后十秒，地热导轨膨胀咬死移门与皮衣搭扣",
+    "label": "擂台赛决胜局当日，十月",
     "minute": 1140
   },
   "clock_style": "hm",
@@ -108,28 +108,12 @@
     ],
     "nickname_patterns": [
       {
-        "pattern": "{family}擂主",
-        "gender": "female"
+        "pattern": "小{family}",
+        "gender": "any"
       },
       {
-        "pattern": "{family}九段",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}裁判长",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}老师",
-        "gender": "female"
-      },
-      {
-        "pattern": "{family}工长",
-        "gender": "male"
-      },
-      {
-        "pattern": "{family}总",
-        "gender": "male"
+        "pattern": "老{family}",
+        "gender": "any"
       }
     ],
     "order": "family_first"

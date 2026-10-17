@@ -1161,7 +1161,7 @@
   }
  ],
  "clock_start": {
-  "label": "暴雨倒灌天井水位上涨，书架自重持续压迫走道",
+  "label": "六月，江南梅雨季",
   "minute": 1395
  },
  "clock_style": "hm",
@@ -1741,16 +1741,12 @@
   ],
   "nickname_patterns": [
    {
-    "gender": "female",
-    "pattern": "{family}老师"
-   },
-   {
-    "gender": "male",
-    "pattern": "{family}师傅"
+    "gender": "any",
+    "pattern": "小{family}"
    },
    {
     "gender": "any",
-    "pattern": "小{family}"
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

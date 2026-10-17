@@ -1152,7 +1152,7 @@
   }
  ],
  "clock_start": {
-  "label": "调温金库",
+  "label": "1889 年，盛夏",
   "minute": 1165
  },
  "clock_style": "hm",
@@ -1590,8 +1590,8 @@
     "pattern": "小{family}"
    },
    {
-    "gender": "female",
-    "pattern": "{family}首席"
+    "gender": "any",
+    "pattern": "老{family}"
    }
   ],
   "order": "family_first"

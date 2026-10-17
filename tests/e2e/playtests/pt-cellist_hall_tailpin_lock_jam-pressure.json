@@ -1,12 +1,12 @@
 {
  "id": "pt-cellist_hall_tailpin_lock_jam-pressure",
- "title": "试玩：清冷大提琴女神·金色大厅尾针咬死钛合金贞操带（有压力）",
+ "title": "试玩：清冷大提琴女神·独奏夜的锁匙与贴身禁锢（有压力）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "cellist_hall_tailpin_lock_jam",
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，清冷大提琴女神·金色大厅尾针咬死钛合金贞操带，要有压力的",
+   "say": "开一局，清冷大提琴女神·独奏夜的锁匙与贴身禁锢，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

@@ -1,113 +1,116 @@
 {
  "background_cast": [
   {
-   "adult_context": "视听机械控制总工程师年满二十五周岁，依法担任现场技术负责人。",
+   "adult_context": "基金的董事会秘书，管着路演会的议程和签到。",
    "age_range": [
-    25,
-    25
+    35,
+    45
    ],
    "function": "messenger",
-   "gender": "male",
-   "id": "bg_av_architect_lu_jing_xing",
-   "line": "伺服电机减速器已进入阻尼锁定状态，合伙人准备就位，激光投射校准进入倒数阶段！",
+   "gender": "any",
+   "id": "bg_board_secretary",
+   "line": "{npc.name}把一张字条放到合伙人手边：副主席请合伙人下一节到白板前讲。",
    "location_ids": [
-    "loc_roadshow_center_circular_stage"
+    "loc_roadshow_boardroom"
    ],
-   "name": "阿健",
-   "role": "视听系统值班工程师"
+   "name": null,
+   "role": "董事会秘书"
   },
   {
-   "adult_context": "金融分析毕业，年满三十二周岁，具备完整民事自立能力。",
+   "adult_context": "基石基金的年轻分析师，入职第二年。",
    "age_range": [
-    32,
-    32
-   ],
-   "function": "helper",
-   "gender": "female",
-   "id": "bg_assistant_su_yu_qing",
-   "line": "合伙人别慌，执行助理已将加厚文件夹架在身前构筑屏障，台下视线完全隔绝，请合伙人专心脱险！",
-   "location_ids": [
-    "loc_roadshow_center_circular_stage"
-   ],
-   "name": "安妮",
-   "role": "讲台物料核验专员"
-  },
-  {
-   "adult_context": "高精机械五金维保毕业，年满二十九周岁，持有特种机械维保执照。",
-   "age_range": [
-    29,
-    29
-   ],
-   "function": "helper",
-   "gender": "male",
-   "id": "bg_mechanic_han_tie_feng",
-   "line": "滑轨受力底座已经稳稳托住，合伙人用翻页笔电池盖挑断锁片的力矩极其精准！",
-   "location_ids": [
-    "loc_display_arm_damping_track_alcove"
-   ],
-   "name": "阿炳",
-   "role": "精密导轨应急巡检员"
-  },
-  {
-   "adult_context": "财经新闻毕业，年满二十五周岁，享有完整法定民事行为权利。",
-   "age_range": [
-    25,
-    25
+    24,
+    30
    ],
    "function": "witness",
-   "gender": "female",
-   "id": "bg_media_press_lin_wei_guang",
-   "line": "媒体席长焦光轴已经统一引导至面部特写，全场镜头严禁越界拍摄裙摆下装！",
+   "gender": "any",
+   "id": "bg_fund_analyst",
+   "line": "{npc.name}低头记笔记，偶尔抬眼看一下合伙人，又很快低下去。",
    "location_ids": [
-    "loc_media_camera_director_front_pit"
+    "loc_roadshow_boardroom",
+    "loc_tea_break_terrace"
    ],
-   "name": "小欣",
-   "role": "财经传媒见习联络员"
+   "name": null,
+   "role": "基金分析师"
   },
   {
-   "adult_context": "发布会安保协调主管年满三十七周岁，依法执行敲钟仪式安全规程。",
+   "adult_context": "在这层楼做了二十年茶歇的阿姐。",
    "age_range": [
-    37,
-    37
-   ],
-   "function": "obstacle",
-   "gender": "male",
-   "id": "bg_boardroom_security_director",
-   "line": "请各方贵宾退回第一排就座，讲台即将开启大屏激光演示，禁止擅自登台！",
-   "location_ids": [
-    "loc_boardroom_stairs_entrance"
-   ],
-   "name": "陈主管",
-   "role": "敲钟仪式安保协调主管"
-  },
-  {
-   "adult_context": "新任青年副主席年满二十七周岁整，具备完整法定侵权诉讼抗辩能力。",
-   "age_range": [
-    27,
-    27
+    50,
+    58
    ],
    "function": "rumor_source",
-   "gender": "male",
-   "id": "bg_vice_chairman_huo",
-   "line": "副主席说，合伙人站在大屏前那么僵，要先上去当面问清楚。",
+   "gender": "female",
+   "id": "bg_tea_lady",
+   "line": "{npc.name}一边添奶茶一边小声说：副主席今天问了两次合伙人坐哪儿。",
    "location_ids": [
-    "loc_boardroom_stairs_entrance"
+    "loc_tea_break_terrace"
    ],
-   "name": "马先生",
-   "role": "副主席的私人助理"
+   "name": "芳姐",
+   "role": "茶歇阿姐"
+  },
+  {
+   "adult_context": "投行合规部的专员，专查路演期间的门禁和录音。",
+   "age_range": [
+    30,
+    40
+   ],
+   "function": "obstacle",
+   "gender": "any",
+   "id": "bg_compliance_officer",
+   "line": "{npc.name}拿着平板站在底稿室门口：刷卡记录里，这个时间不该有人进来。",
+   "location_ids": [
+    "loc_data_room"
+   ],
+   "name": null,
+   "role": "合规专员"
+  },
+  {
+   "adult_context": "酒店派驻的会议技术员，管投影、话筒和同传设备。",
+   "age_range": [
+    26,
+    34
+   ],
+   "function": "helper",
+   "gender": "male",
+   "id": "bg_av_technician",
+   "line": "{npc.name}弯腰检查投影线，顺手把合伙人座位边的插线板挪开了一点。",
+   "location_ids": [
+    "loc_roadshow_boardroom",
+    "loc_interpreter_booth"
+   ],
+   "name": null,
+   "role": "会议室技术员"
+  },
+  {
+   "adult_context": "酒店顶层的私人管家，见过太多不该问的事。",
+   "age_range": [
+    30,
+    40
+   ],
+   "function": "helper",
+   "gender": "male",
+   "id": "bg_hotel_butler",
+   "line": "{npc.name}把冰桶放在吧台上，轻声说了一句“有需要请按铃”，退出去带上了门。",
+   "location_ids": [
+    "loc_partner_hotel_suite"
+   ],
+   "name": null,
+   "role": "套房管家"
   }
  ],
  "cast_combos": [
   {
-   "chemistry": "冷峻总工在耳麦里的每一声沉稳倒数，皆化作合伙人指尖翻页笔电池盖破拆的定海神针；合伙人后侧紧绷的每一下起伏，皆牵动着视听总工心头最深沉的守护涟漪。",
-   "id": "combo_partner_and_architect_trust",
-   "identity_ids": [],
-   "player_positions": [
-    "high",
-    "equal",
-    "low"
+   "chemistry": "{investment_partner_shen_qing_yi.name}替你守估值，你握着{investment_partner_shen_qing_yi.name}的档位；桌面上是乙方对甲方，桌底下谁求谁，还说不准。",
+   "id": "combo_partner_founder_remote",
+   "identity_ids": [
+    "pi_unicorn_founder_ceo",
+    "pi_fund_investment_director"
    ],
-   "power_structure": "switchable",
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
    "relations": [
     {
      "a": "player",
@@ -117,61 +120,36 @@
      },
      "b": "investment_partner_shen_qing_yi",
      "b_to_a": {
-      "tension": 4,
+      "tension": 5,
       "trust": 3
      },
-     "reason": "在总控台密切注视合伙人电池盖破拆进展并协同控制光晕掩护。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 4
-     },
-     "b": "av_architect_lu_jing_xing",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 4
-     },
-     "reason": "同为敲钟仪式核心技术骨干保持绝对的战术配合与信任。",
-     "stage": "familiar"
-    },
-    {
-     "a": "investment_partner_shen_qing_yi",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 4
-     },
-     "b": "av_architect_lu_jing_xing",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 4
-     },
-     "reason": "台前幕后生死相托的顶尖搭档，眼神呼应便明进退。",
-     "stage": "stranger"
+     "reason": "那场私人晚宴上的赌约，是合伙人提的，遥控器是合伙人亲手交过来的。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "investment_partner_shen_qing_yi",
-    "av_architect_lu_jing_xing"
+    "investment_partner_shen_qing_yi"
    ],
    "stakes": {
-    "irreplaceable_goal": "确保精密大屏系统完好无损且女合伙人完美惊艳从容破拆迎检。",
-    "limit_gap": "登台质询严苛读秒与双腿间金属钢夹咬死剧痛的极限拉锯",
-    "meeting_reason": "敲钟前二十秒，视听总工在后台调机械臂的大屏角度，耳机里提醒合伙人往左半步站进追光。",
-    "resource_gap": "总架构师对演播厅伺服动力与激光灯光的绝对调配权与大屏导轨两毫米微观物理自救空间的巨大反差"
+    "irreplaceable_goal": "合伙人要靠自己撑完这一场，证明赌约输了，人没输。",
+    "limit_gap": "合伙人当着董事不能失态，你当着董事不能被看出在桌下动手。",
+    "meeting_reason": "路演会上，发行方和保荐人按惯例并排坐在长桌同一侧。",
+    "resource_gap": "你握着遥控器和这单的拍板权，合伙人只握着暗号。"
    },
-   "tags": [],
+   "tags": [
+    "intimate"
+   ],
    "tension_engine_ids": [
-    "eng_display_arm_garter_clip_snag",
-    "eng_chairman_twenty_second_stairs_rush"
+    "eng_remote_in_pocket",
+    "eng_table_drape"
    ]
   },
   {
-   "chemistry": "助理大幅面企划夹板的大气阻隔与合伙人沉着自救的侧颜交织，空气中充斥着绝处逢生的师徒默契。",
-   "id": "combo_partner_and_assistant_shield",
-   "identity_ids": [],
+   "chemistry": "同年升合伙人，斗嘴斗了十年；这一局{investment_partner_shen_qing_yi.name}输给了你，下一局谁赢，看今天谁先撑不住。",
+   "id": "combo_partner_co_lead_wager",
+   "identity_ids": [
+    "pi_co_lead_partner"
+   ],
    "player_positions": [
     "equal"
    ],
@@ -181,69 +159,85 @@
      "a": "player",
      "a_to_b": {
       "tension": 4,
-      "trust": 3
+      "trust": 4
      },
      "b": "investment_partner_shen_qing_yi",
      "b_to_a": {
       "tension": 4,
-      "trust": 3
+      "trust": 4
      },
-     "reason": "协助掩护合伙人自救并严密监控石阶副主席动向。",
+     "reason": "年会上打的赌，十年的同期，谁也不肯先认输。",
      "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 4
-     },
-     "b": "assistant_su_yu_qing",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 4
-     },
-     "reason": "配合执行助理调整企划夹板角度掩盖讲台微弱金属别撬动静。",
-     "stage": "familiar"
-    },
-    {
-     "a": "investment_partner_shen_qing_yi",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "assistant_su_yu_qing",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "同门师徒的深厚情谊在突发危机考验下的绝对信任与生死依靠。",
-     "stage": "stranger"
     }
    ],
    "slots": [
-    "investment_partner_shen_qing_yi",
-    "assistant_su_yu_qing"
+    "investment_partner_shen_qing_yi"
    ],
    "stakes": {
-    "irreplaceable_goal": "在不惊动台下两百名投资巨鳄的前提下悄无声息消弭这场社死风暴。",
-    "limit_gap": "副主席登台的无情逼近与受困女总裁绝境中的超常冷静应变",
-    "meeting_reason": "执行助理捧着致辞稿跑上讲台，看见合伙人的裙摆被滑轨咬住，用整本文件夹挡住台下。",
-    "resource_gap": "企划案展板的正面拦截调动与翻页笔钛合金电池盖的微观力学破拆自救"
+    "irreplaceable_goal": "合伙人要赢回下一局赌约的主动权。",
+    "limit_gap": "两人坐在一起，谁的异样都会连累另一个。",
+    "meeting_reason": "联席保荐的两位合伙人，路演会上并肩坐在发行方旁边。",
+    "resource_gap": "你有遥控器和一半的定价权，合伙人有主讲的位子和暗号。"
    },
-   "tags": [],
+   "tags": [
+    "intimate"
+   ],
    "tension_engine_ids": [
-    "eng_pencil_skirt_split_tear_panic",
-    "eng_display_arm_garter_clip_snag"
+    "eng_remote_in_pocket",
+    "eng_hot_mic"
    ]
   },
   {
-   "chemistry": "维保技师在侧壁死角以手掌稳稳托住滑轨底板，合伙人手腕运力电池盖精准下压挑断锁片，两人形成严丝合缝的力学平衡默契。",
-   "id": "combo_mechanic_and_partner_support",
+   "chemistry": "白天{investment_partner_shen_qing_yi.name}一句话就能定你的前程，此刻那枚遥控器却在你掌心；越是上司，越不肯在下属面前先说暗号。",
+   "id": "combo_partner_director_trust",
+   "identity_ids": [
+    "pi_executive_director"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "investment_partner_shen_qing_yi",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "跟了四年，赌约是合伙人醉后亲口许下的，醒来也没反悔。",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
+    "investment_partner_shen_qing_yi"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "合伙人想知道，这个跟了四年的人握着遥控器时，到底会怎么做。",
+    "limit_gap": "你不能越过下属的本分，合伙人不能在下属面前失了威严。",
+    "meeting_reason": "执行董事照例坐在合伙人身后半步，负责递底稿。",
+    "resource_gap": "合伙人握着你的升职提名，你握着遥控器和整套底稿。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "eng_remote_in_pocket",
+    "eng_table_drape"
+   ]
+  },
+  {
+   "chemistry": "遥控器在你手里，暗号在{investment_partner_shen_qing_yi.name}嘴边；今天赢的人，明天就要把遥控器交回去。",
+   "id": "combo_partner_switch_game",
    "identity_ids": [],
    "player_positions": [
-    "high",
+    "low",
     "equal",
-    "low"
+    "high"
    ],
    "power_structure": "switchable",
    "relations": [
@@ -258,57 +252,30 @@
       "tension": 4,
       "trust": 3
      },
-     "reason": "在机械主管托住滑轨下协同合伙人完成微观力矩解脱。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 4
-     },
-     "b": "mechanic_han_tie_feng",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 4
-     },
-     "reason": "同为保障发布会机械平稳运行的技术骨干保持高度专业默契。",
-     "stage": "familiar"
-    },
-    {
-     "a": "investment_partner_shen_qing_yi",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "mechanic_han_tie_feng",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "对工程师关键时刻在暗处稳住导轨底板心怀深深谢意。",
-     "stage": "stranger"
+     "reason": "赌约有来有回：今天输的人，明天握遥控器。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "investment_partner_shen_qing_yi",
-    "mechanic_han_tie_feng"
+    "investment_partner_shen_qing_yi"
    ],
    "stakes": {
-    "irreplaceable_goal": "在导轨滑块发生结构卡脱前彻底切断束缚。",
-    "limit_gap": "导轨滑块八公斤抗剪极限与钛合金电池盖四牛顿微撬力的精密抗衡",
-    "meeting_reason": "机械臂维保技师在台侧巡检，听出伺服电机的声音不对，暗中托住滑轨底座。",
-    "resource_gap": "机械主管对重型大屏导轨受力的绝对把控与女合伙人后侧死锁的微观盲拆"
+    "irreplaceable_goal": "合伙人要在今天结束前，把遥控器赢回自己手里。",
+    "limit_gap": "你推得太狠，合伙人一句暗号就结束游戏；合伙人撑不住，就要认输。",
+    "meeting_reason": "路演会上并排坐着，赌约规定今天的胜负在桌下分。",
+    "resource_gap": "你握着档位，合伙人握着暗号和下一局的规矩。"
    },
-   "tags": [],
+   "tags": [
+    "intimate"
+   ],
    "tension_engine_ids": [
-    "eng_display_arm_garter_clip_snag",
-    "eng_pencil_skirt_split_tear_panic"
+    "eng_remote_in_pocket",
+    "eng_hot_mic"
    ]
   },
   {
-   "chemistry": "副主席每迈出一步发出的皮鞋踏毯声，都如同踏在合伙人命悬一线的神经末梢上，逼迫合伙人加快电池盖斜楔向上微挑的频率。",
-   "id": "combo_partner_and_chairman_intrusion",
+   "chemistry": "{vice_chairman_huo_zhen_ting.name}坐在主位盯着{investment_partner_shen_qing_yi.name}，你坐在合伙人身边握着遥控器；三个人，只有副主席不知道桌下在发生什么。",
+   "id": "combo_partner_vice_chairman_watch",
    "identity_ids": [],
    "player_positions": [
     "low",
@@ -327,36 +294,36 @@
       "tension": 4,
       "trust": 3
      },
-     "reason": "严密警戒副主席动线并配合媒体实施机位角度拦截。",
-     "stage": "testing"
+     "reason": "赌约的赢家与输家，并排坐在副主席眼皮底下。",
+     "stage": "flirting"
     },
     {
      "a": "player",
      "a_to_b": {
-      "tension": 4,
-      "trust": 2
+      "tension": 3,
+      "trust": 0
      },
      "b": "vice_chairman_huo_zhen_ting",
      "b_to_a": {
-      "tension": 4,
-      "trust": 2
+      "tension": 2,
+      "trust": 1
      },
-     "reason": "依规提醒领导注意安全红线防止外人违规擅闯演示核心区。",
-     "stage": "familiar"
+     "reason": "副主席把你当成合伙人的人，客气里带着打量。",
+     "stage": "acquainted"
     },
     {
      "a": "investment_partner_shen_qing_yi",
      "a_to_b": {
-      "tension": 5,
-      "trust": 1
+      "tension": 4,
+      "trust": -2
      },
      "b": "vice_chairman_huo_zhen_ting",
      "b_to_a": {
-      "tension": 5,
-      "trust": 1
+      "tension": 4,
+      "trust": 0
      },
-     "reason": "高度戒备厌恶，誓死捍卫职业尊严与商业形象不受冒犯。",
-     "stage": "stranger"
+     "reason": "三年前在酒会上当众拒绝过副主席，副主席一直记着。",
+     "stage": "acquainted"
     }
    ],
    "slots": [
@@ -364,21 +331,230 @@
     "vice_chairman_huo_zhen_ting"
    ],
    "stakes": {
-    "irreplaceable_goal": "在副主席完全踏上讲台前彻底切断吊袜带钢夹与机械臂导轨的咬合连接。",
-    "limit_gap": "大步逼近的脚步声与羊绒铅笔裙开叉缝濒临撕裂的极端社死风险",
-    "meeting_reason": "基金董事局副主席端着香槟走上台阶，要和合伙人一起敲钟、一起合影。",
-    "resource_gap": "董事局副主席肆无忌惮的巡查特权与女合伙人动弹不得的被动拘束绝境"
+    "irreplaceable_goal": "合伙人要在副主席面前撑住，不让三年前那一箭有机会被射回来。",
+    "limit_gap": "副主席不能明着刁难，合伙人不能露出破绽，你不能被看出手在口袋里。",
+    "meeting_reason": "副主席点名要合伙人亲自讲，你照例坐在合伙人身边。",
+    "resource_gap": "副主席握着认购的签字，你握着遥控器，合伙人只有暗号。"
    },
    "tags": [],
    "tension_engine_ids": [
-    "eng_media_long_lens_scrutiny_dread",
-    "eng_pencil_skirt_split_tear_panic"
+    "eng_old_rivals",
+    "eng_table_drape"
    ]
   },
   {
-   "chemistry": "西装革履的技术总工与傲慢资方新贵在狭窄石阶前形成的如冰对峙，以流程铁壁硬生生截断了窥探脚步。",
-   "id": "combo_chairman_vs_architect_clash",
+   "chemistry": "{simul_interpreter_jiang.name}的手搭在推子上，你的手搭在遥控器上，{investment_partner_shen_qing_yi.name}的呼吸夹在两只手中间。",
+   "id": "combo_partner_interpreter_booth",
    "identity_ids": [],
+   "player_positions": [
+    "equal",
+    "low"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "investment_partner_shen_qing_yi",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "合伙人进同传间之前看了你一眼，那一眼是警告，也是邀请。",
+     "stage": "testing"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 1,
+      "trust": 1
+     },
+     "b": "simul_interpreter_jiang",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 1
+     },
+     "reason": "同传认得你，路演第一天对过术语表。",
+     "stage": "acquainted"
+    },
+    {
+     "a": "investment_partner_shen_qing_yi",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 3
+     },
+     "b": "simul_interpreter_jiang",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "合作过五场路演，同传听得出合伙人每一种呼吸。",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
+    "investment_partner_shen_qing_yi",
+    "simul_interpreter_jiang"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "合伙人要在同传面前保住最后一点体面。",
+    "limit_gap": "同传不能擅自关麦太久，你不能让同传知道遥控器在哪。",
+    "meeting_reason": "合伙人借口核译法走进同传间，你跟了进来。",
+    "resource_gap": "同传管着关麦的推子，你管着档位，合伙人只能靠自己压住呼吸。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_hot_mic",
+    "eng_remote_in_pocket"
+   ]
+  },
+  {
+   "chemistry": "{rival_partner_wen_ruo_lan.name}端着奶茶凑过来，想看{investment_partner_shen_qing_yi.name}今天到底怎么了；你只要在口袋里动一下拇指，三个人的局面就会翻过来。",
+   "id": "combo_rival_partner_terrace",
+   "identity_ids": [],
+   "player_positions": [
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 1
+     },
+     "b": "rival_partner_wen_ruo_lan",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 1
+     },
+     "reason": "在几次路演上打过照面，彼此都知道对方是谁的人。",
+     "stage": "acquainted"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "investment_partner_shen_qing_yi",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "赌约的两个人，站在露台上隔着半步。",
+     "stage": "flirting"
+    },
+    {
+     "a": "rival_partner_wen_ruo_lan",
+     "a_to_b": {
+      "tension": 5,
+      "trust": 1
+     },
+     "b": "investment_partner_shen_qing_yi",
+     "b_to_a": {
+      "tension": 5,
+      "trust": 1
+     },
+     "reason": "斗了十年，最懂合伙人的人就是这个对手。",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
+    "rival_partner_wen_ruo_lan",
+    "investment_partner_shen_qing_yi"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "对手要弄明白，合伙人今天的破绽和你有没有关系。",
+    "limit_gap": "对手不能当着发行人下黑手，合伙人不能当着对手认输。",
+    "meeting_reason": "茶歇露台上，对手行的合伙人端着杯子走到你们中间。",
+    "resource_gap": "对手有十年攒下的眼力，你有遥控器，合伙人有暗号和面子。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_old_rivals",
+    "eng_remote_in_pocket"
+   ]
+  },
+  {
+   "chemistry": "{assistant_su_yu_qing.name}早就看出了那场赌约，一边替{investment_partner_shen_qing_yi.name}挡人，一边盯着你放在口袋里的手。",
+   "id": "combo_assistant_covers_partner",
+   "identity_ids": [],
+   "player_positions": [
+    "low",
+    "equal"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 2
+     },
+     "b": "assistant_su_yu_qing",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 1
+     },
+     "reason": "助理认得你，也知道你今天离合伙人太近。",
+     "stage": "acquainted"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "investment_partner_shen_qing_yi",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "赌约的赢家和输家，被助理撞见坐在同一张沙发上。",
+     "stage": "flirting"
+    },
+    {
+     "a": "assistant_su_yu_qing",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 5
+     },
+     "b": "investment_partner_shen_qing_yi",
+     "b_to_a": {
+      "tension": 1,
+      "trust": 4
+     },
+     "reason": "跟了合伙人三年，替合伙人签收过那只快递。",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
+    "assistant_su_yu_qing",
+    "investment_partner_shen_qing_yi"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "助理要确认，握着遥控器的人不会害了合伙人。",
+    "limit_gap": "助理不能说破，你不能让助理看见遥控器，合伙人不能让下属看出狼狈。",
+    "meeting_reason": "加班改稿时，助理抱着文件推门进了底稿室。",
+    "resource_gap": "助理管着门禁和座位表，你握着遥控器，合伙人握着你们两个的前程。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_remote_in_pocket",
+    "eng_old_rivals"
+   ]
+  },
+  {
+   "chemistry": "{unicorn_cfo_gu_zhi_wei.name}知道那场赌约，因为当晚就在场；{investment_partner_shen_qing_yi.name}知道财务官知道，你知道两个人都在看你的手。",
+   "id": "combo_cfo_founder_numbers",
+   "identity_ids": [
+    "pi_unicorn_founder_ceo"
+   ],
    "player_positions": [
     "high"
    ],
@@ -387,907 +563,873 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 5,
-      "trust": 1
-     },
-     "b": "vice_chairman_huo_zhen_ting",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 1
-     },
-     "reason": "配合总工果断对擅入者出示激光安全指令并呼叫保卫阻隔。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
       "tension": 2,
       "trust": 4
      },
-     "b": "av_architect_lu_jing_xing",
+     "b": "unicorn_cfo_gu_zhi_wei",
      "b_to_a": {
       "tension": 2,
       "trust": 4
      },
-     "reason": "坚决执行总工防线指令构筑坚不可摧的团队屏障。",
+     "reason": "从创业第一年起，财务官就替你管账。",
      "stage": "familiar"
     },
-    {
-     "a": "vice_chairman_huo_zhen_ting",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 1
-     },
-     "b": "av_architect_lu_jing_xing",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 1
-     },
-     "reason": "傲慢副主席遭遇冷面技术狂人铁腕后的羞怒与忌惮。",
-     "stage": "stranger"
-    }
-   ],
-   "slots": [
-    "vice_chairman_huo_zhen_ting",
-    "av_architect_lu_jing_xing"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "将副主席死死挡在台阶前为合伙人筑牢最后两米绝对体面防线。",
-    "limit_gap": "维护五十亿上市敲钟仪式发布严谨流程与抵御无关人员违规侵扰的严正交锋",
-    "meeting_reason": "视听总工把大屏切到公司宣传片，吸走全场目光，替合伙人争出十几秒。",
-    "resource_gap": "现场技术总控绝对安全控制权与出资副主席资本特权的正面碰撞"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "eng_media_long_lens_scrutiny_dread",
-    "eng_chairman_twenty_second_stairs_rush"
-   ]
-  },
-  {
-   "chemistry": "在敲钟仪式讲台方寸极限空间内，合伙人与技术团队呼吸相闻，以超越常理的沉稳机智共同谱写绝处逢生的破拆传奇。",
-   "id": "combo_partner_and_player_rescue",
-   "identity_ids": [],
-   "player_positions": [
-    "equal"
-   ],
-   "power_structure": "equal",
-   "relations": [
     {
      "a": "player",
      "a_to_b": {
       "tension": 4,
-      "trust": 4
+      "trust": 3
      },
      "b": "investment_partner_shen_qing_yi",
      "b_to_a": {
       "tension": 4,
-      "trust": 4
+      "trust": 3
      },
-     "reason": "在极度危机中以无声默契结下的患难真诚之约。",
-     "stage": "testing"
+     "reason": "赌约是在财务官家的晚宴上打的。",
+     "stage": "flirting"
+    },
+    {
+     "a": "unicorn_cfo_gu_zhi_wei",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 3
+     },
+     "b": "investment_partner_shen_qing_yi",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "晚宴那天起哄的就是财务官，现在有点后悔。",
+     "stage": "acquainted"
     }
    ],
    "slots": [
+    "unicorn_cfo_gu_zhi_wei",
     "investment_partner_shen_qing_yi"
    ],
    "stakes": {
-    "irreplaceable_goal": "在副主席完全登上讲台的刹那助合伙人重获自由从容完成终场定案。",
-    "limit_gap": "两百名投资巨鳄注视下的绝对隐秘自救要求不得产生半丝突兀动静",
-    "meeting_reason": "敲钟仪式后的深夜，视听总工和合伙人在空荡的上市大厅里，坐在台阶上分一瓶没开的香槟。",
-    "resource_gap": "合伙人受制于导轨死锁而现场团队拥有全套声光与企划物料遮掩资源"
+    "irreplaceable_goal": "财务官要把那笔关联交易安全地讲过去。",
+    "limit_gap": "财务官不能说破赌约，合伙人不能在财务官面前失态。",
+    "meeting_reason": "副主席追问关联交易，发行方三个人凑在长桌一侧商量怎么答。",
+    "resource_gap": "你是老板，财务官管着账，合伙人管着路演。"
    },
-   "tags": [
-    "intimate"
-   ],
+   "tags": [],
    "tension_engine_ids": [
-    "eng_display_arm_garter_clip_snag",
-    "eng_pencil_skirt_split_tear_panic"
+    "eng_old_rivals",
+    "eng_table_drape"
    ]
   }
  ],
  "channels": [
   {
-   "fidelity": "distorted",
-   "id": "ch_boardroom_surround_pa_system",
-   "reach": "覆盖两百名投资巨鳄与前排媒体长焦工作席，清晰还原讲台每分每秒从容发言",
-   "text": "敲钟仪式大厅全景高保真商务扩音同传系统"
+   "fidelity": "exact",
+   "id": "ch_simul_headsets",
+   "reach": "会议室里每个戴耳机的人，原样、即时",
+   "text": "同传耳机与领夹麦"
   },
   {
-   "fidelity": "exact",
-   "id": "ch_director_encrypted_talkback_network",
-   "reach": "总工程师视听总工手持台与主讲人合伙人耳麦之间的毫秒级私密指令链路",
-   "text": "敲钟仪式技术总指挥与首席合伙人专属加密微型专网"
+   "fidelity": "distorted",
+   "id": "ch_terrace_gossip",
+   "reach": "一个茶歇的工夫传遍整层，传到第三个人嘴里就变了样",
+   "text": "茶歇露台上的闲话"
   }
  ],
  "character_templates": [
   {
-   "adult_context": "金融学硕士毕业，国际投行最年轻的女合伙人，这单上市的首席保荐人，做什么项目、跟谁亲近都由本人拿主意。",
+   "adult_context": "金融学硕士毕业，投行最年轻的女合伙人，这单上市的首席保荐人，做什么项目、跟谁亲近都由本人拿主意。",
    "age_range": [
     29,
     32
    ],
    "appearance_options": [
-    "墨黑微卷长发挽成清冷干练低马尾，面容冷艳绝尘清丽若孤傲幽兰，两颊带有天然紧致微婴儿肥与饱满水润胶原蛋白的反差娇颜，身穿一袭极简剪裁墨黑高定重工暗纹羊绒铅笔裙配同色修身西装。",
-    "修身铅笔裙右侧带有四十厘米高开叉，裙摆内衬法国定制纯黑真丝蕾丝吊袜带；此时吊袜带纯钢扁平卡爪被多轴机械臂滑轨死死咬住导致裙摆撕开大半紧绷欲裂，单腿受拉却依然挺拔如松从容微笑。"
+    "墨黑长发挽成低马尾，冷艳的脸上带一点没褪干净的婴儿肥，墨黑羊绒铅笔裙配同色修身西装，高开叉里露出一线黑丝。",
+    "白衬衫领口扣到最上面一颗，铅笔裙下是黑色蕾丝吊袜带，坐下时双膝并得很紧，耳垂上一点细钻，越冷越亮。"
    ],
    "decision": {
     "avoids": [
-     "盲目蛮力扯烂羊绒裙摆",
-     "在讲台上发出失态呼救",
-     "被资方以此为借口剥夺主导权"
+     "当众求助",
+     "被人看出慌乱",
+     "欠人情不还"
     ],
-    "contrast": "平时以冷面雷厉风行的投行铁娘子著称，面对灭顶走光危机时指尖却展现出极其惊人的机械冷酷与微观撬锁魄力。",
-    "core_value": "誓死捍卫投行女领袖的尊严与名誉，绝不向任何人求援，纯靠过人商业定力与微观机械智慧自救脱困。",
+    "contrast": "谈判桌上寸步不让，桌下被推高一格就红到耳根。",
+    "core_value": "体面是自己给的，失控也要是自己选的。",
     "goal_options": [
-     "在副主席登台前用翻页笔电池仓盖斜楔挑断机械臂滑轨锁片脱钩并抚平裙摆",
-     "侧身挺拔站立维持从容微笑绝不让台下长焦镜头察觉后侧死锁"
+     "撑完今天的路演，一次暗号也不说，赢回下一局的主动权",
+     "找个没人的时候，亲口问清楚握着遥控器的人到底想要什么"
     ],
     "never": [
-     "放弃商界女合伙人傲骨妥协退让",
-     "让纯洁圣洁的名誉蒙受恶俗非议"
+     "拿项目去换私情",
+     "在副主席面前低头"
     ],
     "prefers": [
-     "绝对精密的微观物理自救",
-     "滴水不漏的商业掌控力",
-     "克制深沉的无声守护"
+     "说到做到的人",
+     "在人前替合伙人留足面子",
+     "私下里不装正经"
     ],
     "pressure_responses": {
-     "breaking": "在气阀泄压瞬间反向推脱横臂抱箍并接应宋婉儿递来的磁吸扣迅速扣好前襟",
-     "high": "在导播推流读秒长鸣刹那同搭档一同垂直下压背夹克服八百牛顶力",
-     "low": "双手死死按在讲台木质边缘以极低气声下达排障破拆指令掩饰内心惊涛骇浪",
-     "mid": "忍受胸衣金属骨架勒紧压迫紧贴讲台内侧配合搭档调整翻页笔背夹插入角度"
+     "breaking": "当着最近的那个人，咬着牙说出“收盘”两个字。",
+     "high": "把笔帽按三下，起身说要去同传间核一个译法。",
+     "low": "笔尖不停，声音更冷更稳，只在换页时轻轻吸一口气。",
+     "mid": "桌下的鞋尖去找对方的脚踝，像警告，也像求饶。"
     },
-    "relationship_stance": "在谈判桌上从不让步，只有在视听总工面前会松开一颗衬衫扣子，说一句今天好累。",
-    "withdrawal": "左手优雅下垂微按大屏边框借力稳住重心，侧颜对着台下款款而谈，右手借换手握笔之姿极自然地旋下翻页笔钛合金电池盖。"
+    "relationship_stance": "对谁都客气，对谁都不交底；遥控器交出去的那个人除外。",
+    "withdrawal": "整个人往椅背上一靠，双臂抱在胸前，眼神冷下来，一句话也不肯多说。"
    },
    "gender": "female",
-   "gender_reason": "国际投行最年轻的女合伙人，上市项目的首席保荐人。",
+   "gender_reason": "投行最年轻的女合伙人，这次上市的首席保荐人。",
    "id": "investment_partner_shen_qing_yi",
    "identity": {
-    "authority": "五十亿上市敲钟仪式方案最终阐述权与讲台演示节奏掌控权。",
-    "exposure": "私下穿着的蕾丝吊袜带一旦在商界巨头众目睽睽下撕裂曝光，职业声誉与商业帝国信誉将当场崩塌沦为恶俗谈资。",
-    "hidden": "手中握持的翻页笔电池仓盖采用两毫米加厚航空钛合金冷锻工艺，尾端带有微翘斜楔硬角，专为微观力学撬动锁片设计成自救利器。",
+    "authority": "路演怎么讲、价格怎么定，最后都是合伙人一句话。",
+    "exposure": "赌约和那枚跳蛋一旦被董事或对手知道，合伙人委员会会当场停职。",
+    "hidden": "赌约是合伙人自己提的。输的那一刻，心里第一个念头不是懊恼，是终于能把遥控器交给一个信得过的人。",
     "limits": [
-     "羊绒铅笔裙开叉缝被机械臂滑轨咬住无法迈步离开大屏",
-     "严禁在两百名投资巨鳄与全国财经直播前露出半分慌乱"
+     "当着董事不能失态半分",
+     "那枚跳蛋在路演结束前取不出来"
     ],
     "obligations": [
-     "维系投行最年轻女合伙人的无瑕商界声誉",
-     "二十秒内化解死锁完成完美终场陈述"
+     "替发行人守住估值",
+     "替投行守住名声"
     ],
     "resources": [
-     "特制加厚航空钛合金激光翻页笔",
-     "常年高压敲钟仪式淬炼出的非凡定力与微表情控制"
+     "整场路演的节奏",
+     "暗号“收盘”",
+     "董事们对合伙人十年的信任"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在危难之际以宽阔肩背恰到好处阻隔台阶视线的沉稳男子气概",
-     "彼此心照不宣的眼神默契"
+     "握着遥控器却从不乱来的分寸",
+     "在董事面前替合伙人挡下一个问题的那一下"
     ],
     "boundaries": [
-     "严禁外人触碰高定羊绒裙摆与私密贴身吊袜带衬底"
+     "暗号一出口立刻停，谁也不许追问",
+     "不在第三个人面前越过桌布"
     ],
     "desire_range": [
-     2,
-     4
+     3,
+     5
     ],
-    "desired_position": "成为华尔街与亚太商界无可撼动的无瑕顶尖女领袖。",
+    "desired_position": "白天并肩谈判，夜里只对一个人失控。",
     "dislikes": [
-     "借职务之便居心叵测挑刺的傲慢纨绔",
-     "恶俗无下限的猎奇窥探",
-     "轻浮自大之辈"
+     "拿赌约当把柄的人",
+     "当众的轻浮",
+     "得寸进尺"
     ],
-    "expression": "秀美唇角勾起一抹若有若无的自信浅笑，眼神清朗平视台下，右手食指与拇指娴熟反握钛合金电池盖向下探入导轨卡槽。",
+    "expression": "把签字笔按在合同封面上，鞋尖在桌下轻轻蹭过对方的裤管。",
     "likes": [
-     "沉稳可靠的幕后技术守护",
-     "懂分寸知轻重的绅士举动",
-     "纯粹坦荡的商业共鸣"
+     "被人记住暗号",
+     "只给一个人看的狼狈",
+     "事后一杯香槟"
     ],
     "preconditions": [
-     "机械臂死锁顺利化解且上市敲钟仪式全票通过",
-     "两人都清醒，心意出于自己，不是绝境里的依赖"
+     "路演那一关过了，人在关得上门的地方",
+     "两人都清醒，心意出于自己，不是赌约逼出来的"
     ],
     "self_control_range": [
      3,
      5
     ]
    },
-   "public_role": "国际投行高级合伙人",
+   "public_role": "投行高级合伙人、首席保荐人",
    "schedule": [
     {
-     "from": 120,
-     "location_id": "loc_roadshow_center_circular_stage",
-     "to": 130
+     "from": 540,
+     "location_id": "loc_roadshow_boardroom",
+     "to": 720
     },
     {
-     "from": 130,
-     "location_id": "loc_roadshow_center_circular_stage",
-     "to": 135
+     "from": 720,
+     "location_id": "loc_tea_break_terrace",
+     "to": 780
     },
     {
-     "from": 135,
-     "location_id": "loc_roadshow_center_circular_stage",
-     "to": 140
+     "from": 780,
+     "location_id": "loc_roadshow_boardroom",
+     "to": 1080
+    },
+    {
+     "from": 1080,
+     "location_id": "loc_data_room",
+     "to": 1260
+    },
+    {
+     "from": 1260,
+     "location_id": "loc_partner_hotel_suite",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "大腿外侧雪白肌肤被冷风吹拂微寒且单手盲操指骨酸胀。",
-      "option": "反握钛合金翻页笔电池盖斜楔以导轨边沿为支点施加四牛顿力矩挑断锁片自救脱钩。"
+      "cost": "整场路演都要分一半心神压住身体，讲错一个数字就前功尽弃。",
+      "option": "咬牙撑完，一次暗号也不说。"
      },
      {
-      "cost": "临时微调视听效果可能引来评委会关于演示技术规范的当场询问。",
-      "option": "向总工程师投去眼神示意借调控大屏光晕漫射遮蔽台下视线。"
+      "cost": "离席会被董事和对手看见，谈的条件也未必由自己定。",
+      "option": "茶歇时把握着遥控器的人叫进同传间，当面谈条件。"
      }
     ],
-    "pressure": "董事局副主席手持文件踏上石阶仅剩二十秒，铅笔裙受拉撕开大半，台下两百名董事目光聚焦。",
-    "trigger": "翻页侧身讲解时羊绒裙高开叉内衬吊袜带钢夹滑入机械臂阻尼导轨滑块自锁缝隙卡死。"
+    "pressure": "副主席今天特别爱点名，领夹麦一直开着，遥控器在别人手里。",
+    "trigger": "上周输了一场自己提的赌约，今天的路演要戴着那枚跳蛋讲完。"
    },
    "tags": [
     "intimate"
    ],
    "voices": {
-    "inner": "吊袜带钢夹被大屏机械臂导轨咬死了，副主席走上台阶了，翻页笔电池盖斜楔只要顶住卡簧向上发力一别就能脱钩！",
-    "surface": "各位董事请看大屏第三项估值模型，自由现金流年化复合增长率达百分之二十八，展现出无可置疑的兼并协同效应。"
+    "inner": "又推高了一格……{npc.name}不能抖，不能停，再撑三页，就三页。",
+    "surface": "自由现金流的年化复合增长百分之二十八，这个估值区间，我们不会再让。"
    }
   },
   {
-   "adult_context": "机电工程博士毕业，做了十年大型发布会的视听机械，交易所上市大厅的视听总工程师，具备完全民事行为能力。",
+   "adult_context": "家族资本出身，基石基金新任董事局副主席，这单路演的最大买家。",
    "age_range": [
-    32,
-    36
+    34,
+    40
    ],
    "appearance_options": [
-    "身穿极简深灰修身工装西装，佩戴单边专业技术降噪耳麦，身形高大挺拔，下颌如雕塑般冷峻坚毅，双眸沉静锐利如鹰隼。",
-    "手持机械臂控制平板，立于讲台侧方控制台前，目光专注深邃地注视着全场每一个微小参数变化，散发着掌控全盘的强悍气场。"
+    "暗格三件套、金丝眼镜、万年历金表，坐在长桌主位，嘴角挂着挑剔的笑。",
+    "西装外套搭在椅背上，袖口挽起一折，手指在桌面上一下一下地敲，眼睛总落在合伙人身上。"
    ],
    "decision": {
     "avoids": [
-     "任何粗暴失控的演出事故",
-     "轻浮纨绔对女性高管的恶意刁难",
-     "推诿扯皮"
+     "留下书面记录",
+     "和合规正面冲突"
     ],
-    "contrast": "平时看似沉迷算法的技术狂人，在合伙人遭遇危机时展现出的掩护策略却极尽深沉果决。",
-    "core_value": "以极致硬核的技术掌控捍卫系统尊严，誓死守护心中的商界女掌门免受半点侵害。",
+    "contrast": "人前斯文儒雅，人后什么都拿来做交易。",
+    "core_value": "想要的东西，总有一个价格。",
     "goal_options": [
-     "以汇报大屏激光追踪校准为由手持控制板横跨在石阶前阻断副主席登台脚步",
-     "巧妙微调讲台聚光灯照射焦点将合伙人后侧受拉区域置于柔和光晕暗角"
+     "抓住合伙人一个把柄，压低发行价",
+     "让合伙人当众出一次错，报三年前那一箭之仇"
     ],
     "never": [
-     "坐视心爱之人陷于险境受辱",
-     "对违规滥权的行径妥协退让"
+     "当着录音说出真实意图"
     ],
     "prefers": [
-     "分毫不差的工程精度",
-     "临危不乱的机械解构",
-     "克制深沉的深情守护"
+     "拿捏别人的软肋",
+     "让人当众低头"
     ],
     "pressure_responses": {
-     "breaking": "在顾冷霜清冷发声瞬间停住脚步退回侧幕维持同僚体面",
-     "high": "迈步登上红地毯台阶准备直接切入讲台中央核心演讲区",
-     "low": "在对讲机中平稳催促台前人员汇报讲台升降测试状态",
-     "mid": "迈步逼近侧翼台阶手持备用麦克风大声询问会长是否身体不适"
+     "breaking": "当着整桌人拍板说基石不跟了，起身离席。",
+     "high": "茶歇时把合伙人单独叫到露台栏杆边。",
+     "low": "笑着点名合伙人起身推演一页。",
+     "mid": "问题越问越细，眼睛盯着合伙人握笔的手。"
     },
-    "relationship_stance": "三年里给合伙人的每一场敲钟仪式调过大屏，从不提别的，只记得合伙人喜欢的屏幕亮度。",
-    "withdrawal": "单手插兜从容立于台阶侧翼，用极度冷峻威严的目光逼退台下躁动视线，掌控全场主动。"
+    "relationship_stance": "对有用的人客气，对拒绝过自己的人记仇。",
+    "withdrawal": "合上文件夹，看表，说今天先到这里。"
    },
-   "gender": "any",
-   "gender_reason": null,
-   "id": "av_architect_lu_jing_xing",
+   "gender": "male",
+   "gender_reason": "基石基金新任的董事局副主席，家族资本出身。",
+   "id": "vice_chairman_huo_zhen_ting",
    "identity": {
-    "authority": "机械臂伺服电机紧急闭锁权与讲台灯光聚焦点控权。",
-    "exposure": "若因视听机械事故导致敲钟仪式中止将面临行业委员会严重降级处分。",
-    "hidden": "早已在后台高精度应力传感器上察觉机械臂滑轨异常受载阻力，果断大步跨出以宽阔身躯挡在台阶前截停副主席。",
+    "authority": "基石认购的最后签字，路演会上点谁起身都由副主席说了算。",
+    "exposure": "副主席私下要求顾问让价换私人好处的事，要是传到家族那里，席位保不住。",
+    "hidden": "三年前追过合伙人，被当着整个酒会冷冷拒绝，一直记到今天。",
     "limits": [
-     "严禁在直播演示中无故全盘切断大屏动力源",
-     "不得擅自跨入主讲台干扰主讲人陈述"
+     "当着合规与录音不能明着刁难",
+     "家族长辈盯着这单的回报"
     ],
     "obligations": [
-     "确保价值数千万元精密伺服视听系统零差错运转",
-     "捍卫敲钟仪式现场全员绝对安全与演示尊严"
+     "向家族交一份漂亮的投资报告"
     ],
     "resources": [
-     "大屏驱动伺服驱动器微调旋钮",
-     "演播厅声光联动应急复位键"
+     "几十亿的认购额度",
+     "董事会里的家族席位"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "清冷外表下运用电池仓盖微观撬断锁片的极客反差魅力",
-     "坚毅清澈的目光"
+     "合伙人越冷越想征服的那张脸",
+     "求而不得的那口气"
     ],
     "boundaries": [
-     "严守职场边界，在非危急时刻保持克制得体的守护距离"
+     "不在录音和监控底下越线"
     ],
     "desire_range": [
      2,
      4
     ],
-    "desired_position": "成为合伙人身后最坚实可靠的硬核护航者。",
+    "desired_position": "让合伙人主动来找自己。",
     "dislikes": [
-     "狗仗人势的傲慢资方二世祖",
-     "借工作之名行骚扰之实的小人",
-     "自以为是的浮躁之辈"
+     "被人无视",
+     "比自己更沉得住气的人"
     ],
-    "expression": "在对讲机中沉稳下达伺服减速指令，同时向前迈出半步以高大身躯恰到好处挡住石阶上方视线：“霍副主席请稍候，激光校准进入最后十秒。”",
+    "expression": "把一杯奶茶推到对方面前，说一句“我们私下聊聊”。",
     "likes": [
-     "合伙人高冷出尘的女王气场",
-     "在危急时刻展现出的惊人自救智慧",
-     "心领神会的默契配合"
+     "别人有求于己",
+     "掌控感"
     ],
     "preconditions": [
-     "机械臂死锁彻底解除且上市敲钟顺利完成",
-     "对方点了头，出于本心"
+     "对方心甘情愿，而不是被拿捏"
     ],
     "self_control_range": [
-     3,
-     5
+     2,
+     4
     ]
    },
-   "public_role": "视听机械控制总工程师",
+   "public_role": "基石基金董事局副主席",
    "schedule": [
     {
-     "from": 120,
-     "location_id": "loc_roadshow_center_circular_stage",
-     "to": 130
+     "from": 540,
+     "location_id": "loc_roadshow_boardroom",
+     "to": 720
     },
     {
-     "from": 130,
-     "location_id": "loc_boardroom_stairs_entrance",
-     "to": 135
+     "from": 720,
+     "location_id": "loc_tea_break_terrace",
+     "to": 780
     },
     {
-     "from": 135,
-     "location_id": "loc_roadshow_center_circular_stage",
-     "to": 140
+     "from": 780,
+     "location_id": "loc_roadshow_boardroom",
+     "to": 1080
+    },
+    {
+     "from": 1080,
+     "location_id": "loc_tea_break_terrace",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "可能被副主席借题发挥批评阻挡领导质询进程。",
-      "option": "手持调试面板大步跨至石阶迎宾处以汇报激光校准为由阻断副主席登台脚步。"
+      "cost": "点得太多，合规和别的董事会起疑。",
+      "option": "一次次点名，等合伙人自己露出破绽。"
      },
      {
-      "cost": "轻微光影调整可能引来台下来宾关于灯光微弱波动的注意。",
-      "option": "通过智能控台调动大屏边沿光束形成一米宽朦胧光幕遮挡侧向机位。"
+      "cost": "套不出来，反倒暴露自己的心思。",
+      "option": "私下找握遥控器的人套话。"
      }
     ],
-    "pressure": "董事局副主席手持文件傲慢迈上第二级石阶仅剩两米，长焦镜头正死死锁定讲台近景。",
-    "trigger": "后台伺服传感器发出微阻尼过载预警，大屏后侧高精度监视器捕捉到合伙人下装受拉紧绷险境。"
+    "pressure": "家族要这单的回报，副主席需要一个压价的筹码。",
+    "trigger": "注意到合伙人今天每隔一阵就会轻轻握紧签字笔。"
    },
    "tags": [],
    "voices": {
-    "inner": "合伙人吊袜带卡进机械臂导轨了，副主席只差三级台阶，{npc.name}得用校准表挡在入口，帮合伙人争取二十秒！",
-    "surface": "机械臂伺服阻尼锁定在安全阈值，激光追踪校准完毕，主台演示状态良好。"
+    "inner": "今天的合伙人不对劲，坐得太直，呼吸太浅……{npc.name}倒要看看是什么。",
+    "surface": "合伙人这页的假设很漂亮，不如请到白板前，给大家脱稿推一遍？"
    }
   },
   {
-   "adult_context": "机电一体化学科毕业，年满三十二周岁整，持有特种设备操作资质，负责重型机械臂直线导轨五金保养。",
-   "age_range": [
-    32,
-    35
-   ],
-   "appearance_options": [
-    "身穿带有深灰防静电暗纹的工程连体服，体格精壮沉稳，腰间佩戴专业精密测量工具套，眼神坚毅如铁。",
-    "半蹲在机械臂基座侧后方阴影处，目光严密注视着直线导轨滚珠滑块的受力形变与锁片抗剪极限。"
-   ],
-   "decision": {
-    "avoids": [
-     "蛮力硬拉损坏精密导轨",
-     "设备失修引发安全事故",
-     "轻浮喧闹"
-    ],
-    "contrast": "外表粗犷沉稳，配合器械自救时的力道承托与卡爪间隙的微调却极尽大师级精微。",
-    "core_value": "机械臂上每一颗螺栓都要拧到扭矩表上的那个数，差一牛米都不行。",
-    "goal_options": [
-     "在机械臂基座侧后方隐蔽处用手掌暗中托住导轨底板分担下压破拆扭矩",
-     "借巡检大屏防倾减震构件为由半蹲在台阶侧向角度协助遮挡死锁细节"
-    ],
-    "never": [
-     "坐视构件损伤危及人员安全",
-     "在突发状况面前临阵退缩"
-    ],
-    "prefers": [
-     "分毫不差的机械结构",
-     "利落高效的自救破拆",
-     "专注沉稳的团队协作"
-    ],
-    "pressure_responses": {
-     "breaking": "看到顾冷霜完成暗扣闭合瞬间果断下推T杆完成神级切镜",
-     "high": "在团委催促推流指令下强行插入两秒礼堂全景空镜头过渡",
-     "low": "在耳麦中短促播报推流倒计时并督促台前清场",
-     "mid": "发现特写画面纽扣脱落异样时右手悬停在T型推杆上暂缓切镜"
-    },
-    "relationship_stance": "对合伙人娴熟沉稳的力学解构自救佩服得五体投地，对轻浮副主席充满戒备。",
-    "withdrawal": "双手握着无尘布立于大屏背部阴影处，神情冷峻高度专注配合合伙人发力。"
-   },
-   "gender": "male",
-   "gender_reason": "精密机械臂滑轨成年维保技师由年满三十二周岁成年男性担任",
-   "id": "mechanic_han_tie_feng",
-   "identity": {
-    "authority": "机械臂导轨机械构件紧急检修权与滑块锁紧扭矩调校权。",
-    "exposure": "若因五金卡阻导致主讲人受伤将面临维保公司通报除名。",
-    "hidden": "早已看出合伙人正运用翻页笔电池盖斜楔以杠杆原理自救，暗中借巡检侧壁之名用厚手套在暗处稳住滑轨底板防晃。",
-    "limits": [
-     "严禁在正式演讲发布阶段公然拆解机械臂承重主轴",
-     "不得发出剧烈金属敲击杂音"
-    ],
-    "obligations": [
-     "确保精密导轨滑块顺畅无卡死运转",
-     "杜绝滑块脱轨引发大屏倾覆重大安全事故"
-    ],
-    "resources": [
-     "重型机械臂专用防卡滞喷剂",
-     "扁平加厚硬质不锈钢微撬板"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "外表冷艳清绝却能以电池仓盖精准挑断锁片的极客反差魅力",
-     "坚毅从容的眼神"
-    ],
-    "boundaries": [
-     "恪守工程维保人员与台上高管之间的专业安全距离"
-    ],
-    "desire_range": [
-     1,
-     2
-    ],
-    "desired_position": "默默守护敲钟仪式机械架构万无一失的坚实工程基石。",
-    "dislikes": [
-     "毫无常识乱踢机械设备的门外汉",
-     "傲慢无礼的纨绔子弟",
-     "浮躁推诿之人"
-    ],
-    "expression": "从不说软话，只在合伙人路过总控台时把温好的咖啡往前推一寸。",
-    "likes": [
-     "临危不乱懂机械原理的聪慧女性",
-     "从容冷静的破拆自救",
-     "纯粹硬核的技术配合"
-    ],
-    "preconditions": [
-     "机械臂导轨卡死警报彻底解除"
-    ],
-    "self_control_range": [
-     4,
-     5
-    ]
-   },
-   "public_role": "高精机械臂五金维保主管",
-   "schedule": [
-    {
-     "from": 120,
-     "location_id": "loc_display_arm_damping_track_alcove",
-     "to": 130
-    },
-    {
-     "from": 130,
-     "location_id": "loc_display_arm_damping_track_alcove",
-     "to": 135
-    },
-    {
-     "from": 135,
-     "location_id": "loc_roadshow_center_circular_stage",
-     "to": 140
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "可能被台下长焦镜头抓拍到半蹲背景瑕疵。",
-      "option": "手持润滑喷雾半跪于阴影处假装巡检实则用手掌托住滑轨底座化解下压力矩。"
-     },
-     {
-      "cost": "可能遭受随行人员关于挡路的无礼呵斥。",
-      "option": "站在石阶斜角借维护之名用健硕身形阻挡副主席随从视线。"
-     }
-    ],
-    "pressure": "一旦滑块滚珠受力变形崩裂脱落，两百寸超重大屏可能发生倾斜失衡造成灾难性后果。",
-    "trigger": "悬挂阻尼应变片显示机械臂导轨滑块局部受拉应力达八公斤逼近卡簧剪切极限。"
-   },
-   "tags": [],
-   "voices": {
-    "inner": "导轨锁片被合伙人用电池盖斜楔精准卡住受力点了，{npc.name}在暗处托住滑轨底座防晃！",
-    "surface": "机械臂滑轨伺服阻尼处于标准弹性载荷区间，各机位请勿碰撞悬臂结构。"
-   }
-  },
-  {
-   "adult_context": "国际金融学系学年依法具备完全民事责任自立能力，常年跟进五十亿级并购重组全流程文档统筹。",
+   "adult_context": "国际金融硕士毕业，合伙人的执行助理，三年来管着合伙人的日程和每一份材料。",
    "age_range": [
     25,
     28
    ],
    "appearance_options": [
-    "身穿剪裁得体的藏青职业套裙，配精致细框眼镜，长发挽成温婉盘发，容貌清丽聪慧，双眸透着金融新秀特有的干练与敏锐。",
-    "并肩立于讲台侧前方备用台前，眼神敏锐察觉合伙人羊绒裙后摆紧绷与微倾站姿，立刻干练挪步举起并购企划案展板掩护。"
+    "藏青职业套裙，细框眼镜，长发盘得一丝不乱，怀里永远抱着一摞文件夹。",
+    "平底鞋走路没有声音，耳朵上挂着蓝牙耳机，合伙人一抬眼就知道要递什么。"
    ],
    "decision": {
     "avoids": [
-     "现场走光翻车沦为丑闻",
-     "敬仰的合伙人在狂妄二世祖前受辱",
-     "被恶意舆论大肆传播"
+     "被卷进合伙人的私事",
+     "当众出头"
     ],
-    "contrast": "平时看似文静秀气的年轻助理，面对突发危机时瞬间展现出极强的情商控场魄力与临场应变。",
-    "core_value": "誓死为合伙人总打好掩护，以高超职业素养与机敏反应为合伙人争取脱困黄金时间。",
+    "contrast": "看起来只会递文件，其实整层楼的消息都从助理这里过。",
+    "core_value": "合伙人的体面，就是自己的饭碗。",
     "goal_options": [
-     "以呈递最新补充财务附表为由快步上前用加厚企划夹板遮挡大屏侧向视线",
-     "双手高举夹板优雅踏步至合伙人身旁半个身位替总监分担身体受拉的视觉倾斜"
+     "今天无论如何替合伙人挡住副主席",
+     "弄清楚握遥控器的人靠不靠得住"
     ],
     "never": [
-     "在危机面前退缩自保",
-     "出卖团队利益与尊严"
+     "出卖合伙人"
     ],
     "prefers": [
-     "天衣无缝的团队配合",
-     "润物无声的巧妙解围",
-     "干练体面的商界风范"
+     "不声不响地解决问题",
+     "提前一步准备好退路"
     ],
     "pressure_responses": {
-     "breaking": "在讲台侧后方用红丝绒托盘斜立遮挡光线以极快手法递入暗扣",
-     "high": "迈开优雅端庄的礼仪步伐抢在陆晨舟之前从侧翼台阶移步登台",
-     "low": "在侧幕边缘端正托盘平稳呼吸密切注视讲台前襟状态",
-     "mid": "发现纽扣崩落瞬间悄悄从夹层扣出磁吸扣捏在掌心手汗中"
+     "breaking": "当着所有人打翻一杯奶茶，替合伙人争一个离席的理由。",
+     "high": "找理由把茶歇提前五分钟。",
+     "low": "把下一页的提示卡悄悄推到合伙人手边。",
+     "mid": "借口送材料，在副主席和合伙人之间站一会儿。"
     },
-    "relationship_stance": "对合伙人充满敬慕与师徒深情，对傲慢副主席充满戒备与周旋巧劲。",
-    "withdrawal": "挺拔腰身侧对迎宾台阶，将清冷从容的目光投向第一排评委，嘴角维持无可挑剔的职业礼貌微笑。"
+    "relationship_stance": "对合伙人死心塌地，对别人一律客气地挡回去。",
+    "withdrawal": "退到门边，低头看平板，假装什么也没看见。"
    },
    "gender": "female",
-   "gender_reason": "投行高级合伙人青年执行助理由年满二十五周岁女性担任",
+   "gender_reason": "合伙人亲自招进来的女助理，跟了合伙人三年。",
    "id": "assistant_su_yu_qing",
    "identity": {
-    "authority": "讲台物料呈递自主权与前排贵宾提问麦克风引导权。",
-    "exposure": "若敲钟仪式出现物料翻车或重大失误将面临投行管委会降职处分。",
-    "hidden": "正是自己刚才微调大屏位置时不慎碰动机械臂回弹开关，此时愧疚万分，正以极其大方的递送企划案动作替合伙人阻挡视线。",
+    "authority": "谁能进会议室、谁能见合伙人，都要过助理这一关。",
+    "exposure": "要是被人知道助理早就看出那场赌约，还替合伙人打掩护，饭碗不保。",
+    "hidden": "那枚跳蛋的包装盒，是助理替合伙人签收的快递。",
     "limits": [
-     "严禁在正式演讲中公然打断合伙人陈述节奏",
-     "不得与董事局评委发生正面争执"
+     "不能替合伙人做任何决定",
+     "不能进同传间"
     ],
     "obligations": [
-     "全力协助高级合伙人完成上市致辞",
-     "捍卫团队在商界领袖面前的绝对专业形象"
+     "守住合伙人的日程和秘密"
     ],
     "resources": [
-     "大幅面并购重组要点提示卡",
-     "现场贵宾席同声传译备用接收机"
+     "合伙人的门禁卡副卡",
+     "会议室的座位表"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "合伙人在绝境中单手盲操电池盖自救的非凡从容魄力",
-     "真挚信任的眼神"
+     "对合伙人真心好的人",
+     "说话算数"
     ],
     "boundaries": [
-     "誓死捍卫合伙人的职业尊严与体面不受侵害"
+     "不碰合伙人的人"
     ],
     "desire_range": [
      1,
      3
     ],
-    "desired_position": "成为合伙人身边最闪耀且坚实可靠的商业左膀右臂。",
+    "desired_position": "做合伙人最信得过的人。",
     "dislikes": [
-     "借职务之便揩油刁难的傲慢纨绔",
-     "钻营下三路的猎奇目光",
-     "挑拨离间之人"
+     "轻浮",
+     "拿合伙人开玩笑的人"
     ],
-    "expression": "端着厚重企划书大方迎上半步，递上一个心领神会的定心丸眼神：“合伙人，补充附表已经核对完毕，请您审阅。”",
+    "expression": "多给对方留一杯热奶茶。",
     "likes": [
-     "合伙人孤傲坚韧的女王风范",
-     "并肩奋战的互助默契",
-     "患难与共的真挚师徒战友情"
+     "被信任",
+     "被记住名字"
     ],
     "preconditions": [
-     "机械臂死锁顺利化解且敲钟仪式圆满收官"
+     "合伙人那边没有任何麻烦"
     ],
     "self_control_range": [
      3,
      5
     ]
    },
-   "public_role": "上市敲钟仪式首席助理",
+   "public_role": "合伙人的执行助理",
    "schedule": [
     {
-     "from": 120,
-     "location_id": "loc_roadshow_center_circular_stage",
-     "to": 130
+     "from": 540,
+     "location_id": "loc_roadshow_boardroom",
+     "to": 720
     },
     {
-     "from": 130,
-     "location_id": "loc_roadshow_center_circular_stage",
-     "to": 135
+     "from": 720,
+     "location_id": "loc_tea_break_terrace",
+     "to": 780
     },
     {
-     "from": 135,
-     "location_id": "loc_roadshow_center_circular_stage",
-     "to": 140
+     "from": 780,
+     "location_id": "loc_roadshow_boardroom",
+     "to": 1080
+    },
+    {
+     "from": 1080,
+     "location_id": "loc_data_room",
+     "to": 1260
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "突变走位可能引来评委关于呈递流程改动的微弱询问。",
-      "option": "优雅大跨步挥展加厚企划夹板严严实实遮挡合伙人侧后方死锁盲区。"
+      "cost": "改议程要跟董事会秘书解释，会留下记录。",
+      "option": "提前安排茶歇，给合伙人一个喘息。"
      },
      {
-      "cost": "消耗自身大量注意力且需要极强的控场声浪支撑。",
-      "option": "手持麦克风高声引导全场董事关注第三号财务模型转移全场聚焦。"
+      "cost": "等于承认自己知道赌约，以后就是共犯。",
+      "option": "去找握遥控器的人，请对方今天手下留情。"
      }
     ],
-    "pressure": "副主席登台仅剩十五秒，正面长焦镜头一旦抓拍到高开叉撕裂走光，团队形象将毁于一旦。",
-    "trigger": "递交讲义时敏锐察觉合伙人羊绒裙后摆开叉撕裂，前襟受拉紧绷欲裂动弹不得。"
+    "pressure": "副主席已经两次点名合伙人，下一次可能就是白板。",
+    "trigger": "看见合伙人换页时指尖发白，就猜到赌约开始了。"
    },
    "tags": [],
    "voices": {
-    "inner": "合伙人总别慌，{npc.name}把大幅面企划夹板全横过来了，台阶视线被{npc.name}全挡住了，快用电池盖把锁片挑断！",
-    "surface": "诸位董事请查阅各席位附表，最新补充审计报告已同步录入电子系统。"
+    "inner": "合伙人又握笔了……{npc.name}得把副主席的视线引开，快。",
+    "surface": "副主席，补充附表已经核对完毕，我替您翻到第四页。"
    }
   },
   {
-   "adult_context": "传媒经济学系毕业，年满二十八岁，享有法律赋予的独立舆论监督权益，负责现场官方速记。",
+   "adult_context": "会议传译硕士毕业，做了八年金融同传，这场路演的首席译员。",
    "age_range": [
     28,
-    31
+    36
    ],
    "appearance_options": [
-    "身穿利落的深蓝记者工装马甲配千鸟格铅笔裙，佩戴耳麦与速记手环，眼神英挺机敏，举止果断透着传媒学子的专业风度。",
-    "伫立在媒体摄影席最前沿隔离栏旁，目光严厉敏锐地巡视着数十名长焦摄影师的镜头仰角与推挤动向。"
+    "黑色高领毛衣，头上挂着一副监听耳机，手指在推子上轻轻搭着。",
+    "坐姿笔直，面前摊着术语表和一杯冷掉的咖啡，眼睛隔着单向玻璃一直看着会议桌。"
    ],
    "decision": {
     "avoids": [
-     "现场失控混乱骚动",
-     "低俗恶意的长焦窥探",
-     "虚伪浮夸的场面话"
+     "卷入别人的私事",
+     "被当成工具"
     ],
-    "contrast": "平时看似文静秀气的传媒后辈，维护现场规矩时气场全开丝毫不逊于资深安保总监。",
-    "core_value": "财经记者拍的是数字和人，不拍一个女人走光的那一秒。",
+    "contrast": "声音冷得像机器，听见一声轻喘会红半天的脸。",
+    "core_value": "耳机里听见的，到{npc.name}为止。",
     "goal_options": [
-     "以提醒闪光灯反光规范为由向前跨出一步用手持遮光挡板阻断低角度窥探长焦",
-     "向媒体区发出齐声记录重要上市结论口令引导全场机群镜头对准大屏标头"
+     "今天的录音干干净净，谁也挑不出毛病",
+     "弄明白合伙人为什么频频看向同传间"
     ],
     "never": [
-     "坐视女性在镜头前遭受屈辱窥拍",
-     "在外部压力面前临阵退缩"
+     "把录音交给不该拿的人"
     ],
     "prefers": [
-     "井然有序的拍摄环境",
-     "严谨体面的职业秩序",
-     "干脆高效的团队协同"
+     "干净的录音",
+     "说清楚的请求"
     ],
     "pressure_responses": {
-     "breaking": "在听到气压释放嘶鸣声后迅速闭合地槽动力断路器完成排障",
-     "high": "在耳麦中大声指挥台前人员借激光笔淬火背夹下压挑卡簧",
-     "low": "在耳麦中短促通报电机短路电磁阀烧结警报并要求台前切勿强拔",
-     "mid": "快速查阅管路图纸找出立柱内侧两毫米应急泄压孔确切方位"
+     "breaking": "当众说设备故障，请求暂停传译五分钟。",
+     "high": "把推子拉到底，让会场静音三秒。",
+     "low": "把合伙人那一路的增益悄悄调低一格。",
+     "mid": "在耳机里用很平的声音说“请主讲人稍慢”。"
     },
-    "relationship_stance": "对合伙人的商界从容深表钦佩呵护，对副主席的傲慢作风充满戒备。",
-    "withdrawal": "双手握紧速记平板立于警戒线前，用极度严厉果敢的目光震慑住个别刁钻机位。"
+    "relationship_stance": "对谁都礼貌疏离，只对守规矩的人多说两句。",
+    "withdrawal": "摘下耳机，把椅子转向墙，一言不发地翻术语表。"
+   },
+   "gender": "any",
+   "gender_reason": null,
+   "id": "simul_interpreter_jiang",
+   "identity": {
+    "authority": "所有人耳机里听到什么，由同传间的推子决定。",
+    "exposure": "要是被查出擅自剪过录音，执业资格立刻吊销。",
+    "hidden": "从监听耳机里，早就听出合伙人那几次换气不是因为紧张。",
+    "limits": [
+     "不能擅自关麦超过三十秒",
+     "录音要原样存档"
+    ],
+    "obligations": [
+     "一字不差地传译",
+     "守住同传间里听到的一切"
+    ],
+    "resources": [
+     "监听推子与录音备份",
+     "单向玻璃后的视野"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "说话好听的嗓音",
+     "在推子前替别人担责任的人"
+    ],
+    "boundaries": [
+     "不在工作时间越线"
+    ],
+    "desire_range": [
+     1,
+     3
+    ],
+    "desired_position": "做那个守住秘密的人。",
+    "dislikes": [
+     "拿录音威胁人",
+     "大声喧哗"
+    ],
+    "expression": "把自己那杯没喝的热水推过去。",
+    "likes": [
+     "安静",
+     "被尊重的专业"
+    ],
+    "preconditions": [
+     "同传间的门锁好了，录音是关着的"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "路演首席同传",
+   "schedule": [
+    {
+     "from": 540,
+     "location_id": "loc_interpreter_booth",
+     "to": 720
+    },
+    {
+     "from": 720,
+     "location_id": "loc_interpreter_booth",
+     "to": 780
+    },
+    {
+     "from": 780,
+     "location_id": "loc_interpreter_booth",
+     "to": 1080
+    },
+    {
+     "from": 1080,
+     "location_id": "loc_tea_break_terrace",
+     "to": 1200
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "录音和会场声音对不上，合规调听时说不清。",
+      "option": "悄悄压低增益，替合伙人遮过去。"
+     },
+     {
+      "cost": "合伙人那一声要是进了所有人的耳机，后果自己也脱不了干系。",
+      "option": "什么都不做，一字不差地传。"
+     }
+    ],
+    "pressure": "录音全程存档，合规随时可能调听。",
+    "trigger": "监听耳机里，合伙人的呼吸每隔一阵就乱一下。"
+   },
+   "tags": [],
+   "voices": {
+    "inner": "又是那一声……{npc.name}把增益再压一格，别让会场听见。",
+    "surface": "主讲人，请稍慢，传译跟不上第三张表的数字。"
+   }
+  },
+  {
+   "adult_context": "对手投行的女合伙人，这单的联席承销，和合伙人斗了十年。",
+   "age_range": [
+    30,
+    34
+   ],
+   "appearance_options": [
+    "一身酒红色西装裙，短发利落，笑起来眼尾上挑，手里转着一支钢笔。",
+    "坐在长桌另一头，双腿交叠，高跟鞋尖悬在半空，一下一下地点着。"
+   ],
+   "decision": {
+    "avoids": [
+     "背后下黑手",
+     "被人看出在意"
+    ],
+    "contrast": "嘴上处处抢，真看见合伙人难受又会先递一杯水。",
+    "core_value": "输给谁都行，不能输给合伙人。",
+    "goal_options": [
+     "找出合伙人今天不对劲的原因",
+     "在定价会上抢下首席的位子"
+    ],
+    "never": [
+     "把合伙人的私事捅给媒体"
+    ],
+    "prefers": [
+     "当面较劲",
+     "抓住破绽"
+    ],
+    "pressure_responses": {
+     "breaking": "当着发行人说合伙人身体不适，提议自己接手主讲。",
+     "high": "借口调阅材料，跟到底稿室门口。",
+     "low": "在桌那头笑着补一句合伙人漏掉的细节。",
+     "mid": "茶歇时端着杯子凑到合伙人身边。"
+    },
+    "relationship_stance": "对合伙人针锋相对，对别人笑脸相迎。",
+    "withdrawal": "钢笔一收，转身去跟副主席说笑。"
    },
    "gender": "female",
-   "gender_reason": "敲钟仪式官方见习记者兼速记督导由年满二十八周岁财经传媒女性担任",
-   "id": "media_press_lin_wei_guang",
+   "gender_reason": "对手投行的女合伙人，和合伙人同年入行、斗了十年。",
+   "id": "rival_partner_wen_ruo_lan",
    "identity": {
-    "authority": "前排拍摄秩序维持权与违规长焦机位现场劝阻驱离权。",
-    "exposure": "若现场出现恶意走光炒作或不当拍摄丑闻将遭受媒体公会吊销资格。",
-    "hidden": "早已察觉合伙人侧后方受困险境，果断将遮光挡板推至长焦机位前，用身体挡住侧翼低角度俯仰机位。",
+    "authority": "联席承销的一票，能让定价往下走一档。",
+    "exposure": "私下给副主席递过消息的事，要是被发行人知道，联席资格立刻取消。",
+    "hidden": "斗了十年，其实最想要的不是份额，是合伙人正眼看自己一次。",
     "limits": [
-     "不得无故阻拦持正规采访证件的主流财经媒体拍摄",
-     "严禁擅自触碰讲台机械设备"
+     "不是首席，主讲轮不到",
+     "抢得太明显会被发行人换掉"
     ],
     "obligations": [
-     "维系媒体前沿两米绝对安全线",
-     "杜绝任何低角度恶意窥探拍摄行为"
+     "替自家投行抢份额"
     ],
     "resources": [
-     "演播厅防逆光折叠柔光板",
-     "便携式超高清录音笔"
+     "对手行的销售网络",
+     "十年来攒下的、合伙人的小毛病"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在极端危机中依然挺拔自立的冷艳气场",
-     "女性相互扶持的坚韧力量"
+     "合伙人那股不肯低头的劲",
+     "能接住自己每一句刺的人"
     ],
     "boundaries": [
-     "严守媒体拍摄警戒线绝对物理红线"
+     "不在发行人面前失态"
     ],
     "desire_range": [
-     1,
-     2
+     2,
+     4
     ],
-    "desired_position": "成为敲钟仪式前沿最值得信赖的媒体铁壁防线。",
+    "desired_position": "做合伙人唯一承认的对手。",
     "dislikes": [
-     "专门钻营下三路偷拍的无良狗仔",
-     "自以为是的傲慢资本家",
-     "推诿耍赖之人"
+     "客套",
+     "被无视"
     ],
-    "expression": "举起速记牌大声引导外场机群：“各位媒体老师请保持长焦平视光轴，抓拍合伙人面部从容特写，记录签约历史瞬间！”",
+    "expression": "把自己那块蛋挞推过去，说一句“你今天脸色不好”。",
     "likes": [
-     "专业坚韧的职场女性榜样",
-     "临危不乱的商界女领袖",
-     "正直风度的绅士同仁"
+     "棋逢对手",
+     "被人看穿又不点破"
     ],
     "preconditions": [
-     "媒体秩序平稳且发布会圆满收官"
+     "生意上的账先算清楚"
     ],
     "self_control_range": [
-     4,
-     5
+     2,
+     4
     ]
    },
-   "public_role": "财经专场见习记者",
+   "public_role": "对手投行合伙人、联席承销",
    "schedule": [
     {
-     "from": 120,
-     "location_id": "loc_media_camera_director_front_pit",
-     "to": 130
+     "from": 540,
+     "location_id": "loc_roadshow_boardroom",
+     "to": 720
     },
     {
-     "from": 130,
-     "location_id": "loc_media_camera_director_front_pit",
-     "to": 135
+     "from": 720,
+     "location_id": "loc_tea_break_terrace",
+     "to": 780
     },
     {
-     "from": 135,
-     "location_id": "loc_roadshow_center_circular_stage",
-     "to": 140
+     "from": 780,
+     "location_id": "loc_roadshow_boardroom",
+     "to": 1080
+    },
+    {
+     "from": 1080,
+     "location_id": "loc_data_room",
+     "to": 1200
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "可能遭受个别受阻摄影师的言语抱怨抗议。",
-      "option": "果断将大号遮光挡板往前推移半米彻底阻断低角度窥视视线。"
+      "cost": "从此欠副主席一个人情，也再也赢不回合伙人的正眼。",
+      "option": "把发现告诉副主席，换一个首席的位子。"
      },
      {
-      "cost": "需要极强的控场魄力且声浪过大需要良好隔音支撑。",
-      "option": "用麦克风组织全场媒体准备提问环节引导机群将焦点投向大屏核心指标。"
+      "cost": "问出来的东西，说不定会让自己也脱不了身。",
+      "option": "私下去问握遥控器的人。"
      }
     ],
-    "pressure": "十五秒内若被拍到细链拉扯与吊袜带撕裂走光特写，将在几分钟内传遍金融圈沦为严重公关丑闻。",
-    "trigger": "监视器发现几名财经博主正试图压低镜头刁钻仰拍合伙人裙摆高开叉缝隙。"
+    "pressure": "定价会就在明天，首席的位子还有得争。",
+    "trigger": "注意到合伙人今天两次在换页时停顿，都不像忘词。"
    },
    "tags": [],
    "voices": {
-    "inner": "前面的几个偷拍长焦镜头压得太低了，记者得把遮光板横过来挡住机位，合伙人别怕，记者把视线全掐死！",
-    "surface": "各位长焦摄影老师请调高镜头光轴，注意舞台激光警戒线，请勿贴紧地毯仰拍！"
+    "inner": "那支笔握得那么紧……十年了，{npc.name}还是头一回见合伙人这样。",
+    "surface": "合伙人这个区间定得保守了，我们的投资人愿意再往上走一档。"
    }
   },
   {
-   "adult_context": "并购基金新任青年董事局副主席年满二十八周岁整，享有完全民事诉讼权利与全项目投资终审否决全权，主导五十亿级并购签字仪式。",
+   "adult_context": "注册会计师出身，独角兽的首席财务官，从创业第一年就管着公司的每一笔账。",
    "age_range": [
-    28,
-    31
+    33,
+    38
    ],
    "appearance_options": [
-    "身穿极尽奢华的暗格暗纹定制三件套西装，佩戴万年历金表与金丝眼镜，神态矜贵自负，嘴角挂着居高临下的挑剔冷笑。",
-    "缓步迈上铺毯迎宾石阶，手持质询案卷，双眼肆无忌惮地审视着讲台上合伙人宛若冰山雪莲般的冷艳身姿，眼神闪烁着探寻征服的傲然光芒。"
+    "灰色针织连衣裙，长发松松挽着，戴一副玳瑁眼镜，桌上的计算器从不离手。",
+    "说话温温柔柔，数字一出口却一个比一个硬，左手无名指上空着一道淡淡的戒痕。"
    ],
    "decision": {
     "avoids": [
-     "当众被反驳颜面扫地",
-     "陷入严重停演公关丑闻",
-     "被董事局撤职问责"
+     "临场发挥",
+     "被人追着问"
     ],
-    "contrast": "人前摆出年轻有为、斯文儒雅的新派金融领袖做派，背地里却习惯以投资资本压迫年轻女性顺从就范。",
-    "core_value": "享受资本带来的绝对支配感，习惯以居高临下的姿态审视并掌控绝色商界女精英。",
+    "contrast": "看起来温吞，算账时比谁都狠。",
+    "core_value": "数字不说谎，人才说谎。",
     "goal_options": [
-     "借当面质询现金流模型之名大步跨上主讲台近距离审视合伙人的挺拔身段",
-     "在遭遇总工阻拦后以资方权威冷言施压迫使技术团队退让"
+     "今天把那笔关联交易安全地讲过去",
+     "替合伙人把副主席的追问接过来"
     ],
     "never": [
-     "真正触犯重大商业违约红线",
-     "在全国财经直播镜头前公然失控动粗"
+     "做假账"
     ],
     "prefers": [
-     "万众瞩目的领导特权",
-     "征服商界女王的虚荣感",
-     "不可挑战的资方权威"
+     "把账讲清楚",
+     "提前准备好答案"
     ],
     "pressure_responses": {
-     "breaking": "在顾冷霜清冷庄重开口发声后满意点头向校领导躬身汇报",
-     "high": "在耳麦中严厉提醒导播台按预定时间点准点切屏不得延误",
-     "low": "在贵宾席前平稳确认领导座次并用手势示意各单位倒计时开场",
-     "mid": "察觉讲台略有偏高时抬眼注视台前要求副主席做好应急准备"
+     "breaking": "当众承认那笔交易处理不当，把火力全引到自己身上。",
+     "high": "说要回底稿室核一个原始凭证。",
+     "low": "推一推眼镜，把计算器上的数字转给对方看。",
+     "mid": "主动接过副主席的追问，替合伙人争一口气。"
     },
-    "relationship_stance": "将合伙人视作极具征服价值的商界尤物与猎物，对视听总工的技术傲骨充满排斥与忌惮。",
-    "withdrawal": "在长焦镜头与全场董事注视下悻悻然收敛轻佻，挂上无可挑剔的商业假笑合上案卷鼓掌致意。"
+    "relationship_stance": "对认真的人温柔，对糊弄的人一个字也不让。",
+    "withdrawal": "低头按计算器，按到数字清零又重来。"
    },
-   "gender": "male",
-   "gender_reason": "并购基金新任青年董事局副主席由年满二十八周岁青年男性高管担任",
-   "id": "vice_chairman_huo_zhen_ting",
+   "gender": "female",
+   "gender_reason": "发行人的女首席财务官，从创业第一年就管账。",
+   "id": "unicorn_cfo_gu_zhi_wei",
    "identity": {
-    "authority": "并购方案一票否决权与现场提问质询叫停权。",
-    "exposure": "若在敲钟仪式现场被曝光恶意刁难主讲人或骚扰高管的丑闻将被董事局严肃撤职。",
-    "hidden": "企图借登台当面质询之机，近距离逼视女合伙人的窘迫神态，在名流圈层炫耀资本征服力。",
+    "authority": "每一个财务数字的解释权，都在财务官手里。",
+    "exposure": "去年有一笔关联交易处理得太急，真被追问会很难看。",
+    "hidden": "知道合伙人那场赌约，因为赌约就是在财务官家的私人晚宴上打的。",
     "limits": [
-     "受制于全网全国财经直播与监管合规监督不敢公然造次",
-     "畏惧引发重大违约索赔公关海啸"
+     "对董事只能讲披露过的数字",
+     "定价没有决定权"
     ],
     "obligations": [
-     "按程序完成董事局代表致辞与提问",
-     "维系年轻商业巨擘的儒雅精英人设"
+     "替公司守住每一个数字"
     ],
     "resources": [
-     "掌握数十亿级产业并购基金实际出资审批权",
-     "在董事局内部深厚的资本支配影响力"
+     "公司的全部账目",
+     "创始人的信任"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "合伙人冷艳孤傲宛若天山雪莲般的绝美颜容",
-     "高定羊绒裙勾勒出的曼妙身姿"
+     "肯陪自己熬夜对账的人",
+     "说话算话"
     ],
     "boundaries": [
-     "不敢公然触犯商业合同与上市公司合规底线"
+     "不在公司里越线"
     ],
     "desire_range": [
      1,
-     2
+     3
     ],
-    "desired_position": "自诩为主宰全场并让冷艳女合伙人屈尊迎奉的顶级产业资本新贵。",
+    "desired_position": "做那个可以一起熬过难关的人。",
     "dislikes": [
-     "被人当众冷漠无视",
-     "桀骜不驯不肯低头的硬骨头",
-     "脱离掌控的意外事故"
+     "敷衍",
+     "夸夸其谈"
     ],
-    "expression": "抬手扶了扶金丝眼镜，嘴角噙着胜券在握的玩味冷笑迈完最后两级石阶：“合伙人这组现金流折现，本副主席需要当面核实。”",
+    "expression": "把一份对好的账递过去，上面贴一张写着“辛苦”的便签。",
     "likes": [
-     "商界女强人在受窘绝境下的无可奈何",
-     "高高在上的绝对掌控感",
-     "被属下敬畏迎奉的特权地位"
+     "整齐",
+     "被人记得生日"
     ],
     "preconditions": [
-     "自以为凭借并购基金副主席光环能够随意操纵女合伙人命运"
+     "上市这一关过了"
     ],
     "self_control_range": [
-     4,
+     3,
      5
     ]
    },
-   "public_role": "并购基金青年董事局副主席",
+   "public_role": "发行人首席财务官",
    "schedule": [
     {
-     "from": 120,
-     "location_id": "loc_boardroom_stairs_entrance",
-     "to": 130
+     "from": 540,
+     "location_id": "loc_roadshow_boardroom",
+     "to": 720
     },
     {
-     "from": 130,
-     "location_id": "loc_boardroom_stairs_entrance",
-     "to": 135
+     "from": 720,
+     "location_id": "loc_tea_break_terrace",
+     "to": 780
     },
     {
-     "from": 135,
-     "location_id": "loc_roadshow_center_circular_stage",
-     "to": 140
+     "from": 780,
+     "location_id": "loc_roadshow_boardroom",
+     "to": 1080
+    },
+    {
+     "from": 1080,
+     "location_id": "loc_data_room",
+     "to": 1320
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "被视听总工冰冷强悍的技术威压正面迫退自讨没趣。",
-      "option": "借着向总工询问大屏校准参数假意停下脚步隔着石阶冷言试探虚实。"
+      "cost": "讲多了，反而让副主席抓住更多细节。",
+      "option": "自己顶上去，一项项解释。"
      },
      {
-      "cost": "彻底错失近距离窥探女合伙人受困窘态的唯一机会。",
-      "option": "在终场掌声响起瞬间悻悻然维持商业假笑合上案卷站在主台边缘鼓掌致意。"
+      "cost": "合伙人今天状态不好，硬上可能出错。",
+      "option": "请合伙人出面圆过去。"
      }
     ],
-    "pressure": "视听总工高大挺拔的身躯横阻在石阶正前方，长焦镜头与两百名董事的目光连成白昼。",
-    "trigger": "手持质询案卷迈完迎宾台阶踏上讲台边缘，企图近距离走入演示核心区探寻异样。"
+    "pressure": "答不好，估值要往下打一档。",
+    "trigger": "副主席今天盯上了去年那笔关联交易。"
    },
    "tags": [],
    "voices": {
-    "inner": "这平时在董事会上高高在上的冰山美人站在大屏前那么僵硬，{npc.name}倒要走到跟前看看这女王神格会不会当场崩塌！",
-    "surface": "合伙人的测算逻辑十分精妙，本副主席亲自登台，与合伙人探讨核心风险敞口。"
+    "inner": "合伙人今天的手一直在抖……那场赌约，{npc.name}当时就不该笑着起哄。",
+    "surface": "这一笔的会计处理已经在附注三十七披露，我可以逐项说明。"
    }
   }
  ],
  "clock_start": {
-  "label": "上市敲钟当天，十一月",
-  "minute": 1140
+  "label": "路演周的星期四，十一月",
+  "minute": 540
  },
  "clock_style": "hm",
  "content_tags": [
@@ -1300,119 +1442,119 @@
  ],
  "custom": false,
  "customs": [
-  "顶级投资机构每逢半年度集中召开闭门重组敲钟仪式由首席合伙人主讲的规程",
-  "高冷女合伙人习惯随身携带特制加厚航空钛合金激光翻页笔操控大屏的风尚",
-  "技术总工程师在董事局高管步上台阶前十秒向演讲台发出声光安全确认信号的惯例",
-  "财经长焦摄影师守候在环形台前捕捉合伙人干练从容面部特写的固定发布会动线"
+  "路演会议桌铺着垂到地面的墨绿丝绒桌布，按惯例主讲人与顾问坐同一侧，膝盖离得很近。",
+  "茶歇只有十五分钟，露台上的港式奶茶与蛋挞是固定节目，谁先离席去同传间都会被人看见。",
+  "签字笔用投行定制的那款，笔帽一按三下，意思是“我需要五分钟”。",
+  "路演收官当晚，主承销团队在对面酒店顶层开庆功酒会，合伙人照例只喝一杯就走。"
  ],
  "daily_activities": [
   {
    "beats": [
-    "成年维保主管使用千分尺测量机械臂滑轨卡爪间隙",
-    "成年维保人员俯身调整阻尼缓冲弹簧滚珠滑块受力平整度"
+    "董事一个个举手提问，合伙人对答如流，桌布底下的双膝却并得越来越紧。",
+    "合伙人换页时把签字笔轻轻按在你的手背上，停了一秒才拿开。",
+    "董事会秘书在白板上记下待答问题，第三条写的是“合伙人的现金流假设”。"
+   ],
+   "duration_minutes": 90,
+   "hook_ids": [
+    "hook_partner_pen_on_contract",
+    "hook_partner_heel_under_table",
+    "hook_vc_smiles_across_table"
+   ],
+   "id": "act_morning_valuation_session",
+   "location_ids": [
+    "loc_roadshow_boardroom"
+   ],
+   "start_minute": 570,
+   "tags": [],
+   "title": "上午的估值问答"
+  },
+  {
+   "beats": [
+    "合伙人借口核一个术语的译法走进同传间，背靠着门站了好一会儿。",
+    "同传把监听耳机递过来，让合伙人听听刚才那一段自己的声音。"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [
+    "hook_partner_booth_door",
+    "hook_interpreter_offers_headset"
+   ],
+   "id": "act_booth_terminology_check",
+   "location_ids": [
+    "loc_interpreter_booth"
+   ],
+   "start_minute": 650,
+   "tags": [],
+   "title": "同传间核译法"
+  },
+  {
+   "beats": [
+    "海风把合伙人的裙摆吹得贴在腿上，合伙人端着奶茶，一口也没喝。",
+    "对手行的合伙人笑着走过来，说今天的合伙人脸色真好看。"
    ],
    "duration_minutes": 15,
-   "hook_ids": [],
-   "id": "act_roadshow_arm_track_pre_check",
-   "location_ids": [
-    "loc_roadshow_center_circular_stage"
-   ],
-   "start_minute": 120,
-   "tags": [],
-   "title": "两百寸大屏多轴机械臂阻尼导轨伺服校准"
-  },
-  {
-   "beats": [
-    "工程师在主控台测试激光追踪并向视听总工汇报环形台面照度参数",
-    "大屏光束以完美角度展开确保女合伙人干练气场分毫不差"
-   ],
-   "duration_minutes": 10,
-   "hook_ids": [],
-   "id": "act_roadshow_presentation_calibration",
-   "location_ids": [
-    "loc_roadshow_center_circular_stage"
-   ],
-   "start_minute": 125,
-   "tags": [],
-   "title": "五十亿并购估值模型大屏动态演播调试"
-  },
-  {
-   "beats": [
-    "视听总工在智能主控台精准校准全国直播主时钟倒数频段",
-    "提示屏实时显示董事局副主席登台提问进入最后二十秒紧张关口"
-   ],
-   "duration_minutes": 12,
-   "hook_ids": [],
-   "id": "act_countdown_twenty_second_sync",
-   "location_ids": [
-    "loc_boardroom_stairs_entrance"
-   ],
-   "start_minute": 128,
-   "tags": [],
-   "title": "上市敲钟仪式终场答辩倒数二十秒时钟同步"
-  },
-  {
-   "beats": [
-    "合伙人优雅侧身抬臂按动翻页笔微调演示大屏最佳角度",
-    "裙摆高开叉内衬吊袜带钢夹在身体微旋间不慎滑入机械臂导轨缝隙"
-   ],
-   "duration_minutes": 8,
-   "hook_ids": [],
-   "id": "act_partner_turn_pose_incident",
-   "location_ids": [
-    "loc_roadshow_center_circular_stage"
-   ],
-   "start_minute": 130,
-   "tags": [],
-   "title": "主讲人侧身翻页微调讲台站位身姿"
-  },
-  {
-   "beats": [
-    "上市前一天，合伙人在交易所的敲钟圆台上彩排致辞，大屏上滚动着公司的标志。",
-    "合伙人念到一半停下来，让工作人员把提词器的字号调大一号。",
-    "彩排结束，合伙人站在台上看着空荡荡的大厅，说明天这里会挤满人。"
-   ],
-   "duration_minutes": 5,
    "hook_ids": [
-    "hook_01_arm_garter_clip_snag_groan",
-    "hook_03_battery_cap_lever_extract",
-    "hook_04_architect_iron_standoff"
+    "hook_partner_terrace_jacket",
+    "hook_rival_brings_tart"
    ],
-   "id": "act_arm_garter_clip_snag_incident",
+   "id": "act_terrace_milk_tea_break",
    "location_ids": [
-    "loc_roadshow_center_circular_stage"
+    "loc_tea_break_terrace"
    ],
-   "start_minute": 900,
+   "start_minute": 720,
    "tags": [],
-   "title": "敲钟前的彩排"
+   "title": "露台上的奶茶"
   },
   {
    "beats": [
-    "青年副主席手持案卷大步迈上迎宾铺毯石阶",
-    "视听总工高大挺拔身形骤然跨出冷厉阻断副主席前行脚步"
+    "副主席要求逐档推演发行价，合伙人一页页翻，声音稳得像念稿。",
+    "财务官替合伙人接过一个关联交易的问题，手指在计算器上敲得很快。"
    ],
-   "duration_minutes": 10,
-   "hook_ids": [],
-   "id": "act_vice_chairman_stairs_approach",
+   "duration_minutes": 120,
+   "hook_ids": [
+    "hook_partner_whisper_ten_minutes",
+    "hook_cfo_slides_calculator",
+    "hook_vc_smiles_across_table"
+   ],
+   "id": "act_afternoon_pricing_drill",
    "location_ids": [
-    "loc_boardroom_stairs_entrance"
+    "loc_roadshow_boardroom"
    ],
-   "start_minute": 133,
+   "start_minute": 840,
    "tags": [],
-   "title": "董事局副主席持卷登石阶质询"
+   "title": "下午的定价推演"
   },
   {
    "beats": [
-    "敲钟之后，合伙人甩掉高跟鞋，赤脚踩在地毯上，倒了两杯香槟，一杯递给你。",
-    "合伙人碰了碰你的杯沿，眼睛没离开你：五十亿的单子签完了。……现在，我想要点别的奖励。"
+    "合伙人脱了高跟鞋，盘腿坐在长沙发上改明天的问答稿。",
+    "碎纸机响了一阵，合伙人抬头问你：今天那几下，是故意挑的时机吗？"
+   ],
+   "duration_minutes": 120,
+   "hook_ids": [
+    "hook_partner_sofa_pat",
+    "hook_assistant_brings_files"
+   ],
+   "id": "act_data_room_overtime",
+   "location_ids": [
+    "loc_data_room"
+   ],
+   "start_minute": 1110,
+   "tags": [],
+   "title": "底稿室加班"
+  },
+  {
+   "beats": [
+    "路演收官，合伙人甩掉高跟鞋，赤脚踩在地毯上，倒了两杯香槟，一杯递给你。",
+    "合伙人碰了碰你的杯沿：赌约今天到此为止。……接下来的，不算赌约。"
    ],
    "duration_minutes": 30,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_partner_suite_door"
+   ],
    "id": "act_suite_champagne",
    "location_ids": [
     "loc_partner_hotel_suite"
    ],
-   "start_minute": 1380,
+   "start_minute": 1320,
    "tags": [
     "intimate"
    ],
@@ -1420,45 +1562,32 @@
   },
   {
    "beats": [
-    "合伙人坐在沙发扶手上，把一条腿搭到你膝头，套裙滑上去，露出黑色蕾丝吊袜带。",
-    "合伙人用脚尖勾了勾你的手腕：解开。……别装正经，我清醒得很，就是想让你来。"
+    "合伙人坐在沙发扶手上，摊开掌心，等你把那枚磨砂遥控器放上去。",
+    "合伙人把遥控器在指间转了一圈，没有关掉，反而放回了你手里：这一回，是我自己想要。"
    ],
    "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_suite_garter",
+   "hook_ids": [
+    "hook_partner_suite_palm"
+   ],
+   "id": "act_suite_return_remote",
    "location_ids": [
     "loc_partner_hotel_suite"
    ],
-   "start_minute": 1410,
+   "start_minute": 1350,
    "tags": [
     "intimate"
    ],
-   "title": "解开那条蕾丝吊袜带"
-  },
-  {
-   "beats": [
-    "合伙人裹着浴袍叫了客房送餐，两碗云吞面，坐在落地窗边的地毯上吃。",
-    "合伙人吃到一半，用筷子夹了一只云吞喂你：在公司别告诉任何人，我也会这样。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_suite_room_service",
-   "location_ids": [
-    "loc_partner_hotel_suite"
-   ],
-   "start_minute": 1430,
-   "tags": [
-    "intimate"
-   ],
-   "title": "半夜叫一份客房送餐"
+   "title": "把遥控器还回去"
   },
   {
    "beats": [
     "天亮前，合伙人穿着你的衬衫靠在窗边，海面上第一艘渡轮拉响了汽笛。",
-    "合伙人回头勾住你的领口，把你拉近：九点开会。……还有两个小时，别浪费。"
+    "合伙人回头勾住你的领口：九点开会。……下一局，换我握遥控器。"
    ],
    "duration_minutes": 30,
-   "hook_ids": [],
+   "hook_ids": [
+    "hook_partner_suite_palm"
+   ],
    "id": "act_suite_harbor_dawn",
    "location_ids": [
     "loc_partner_hotel_suite"
@@ -1476,7 +1605,7 @@
   "nonbinary": 0.0
  },
  "default_person": "second",
- "era": "当代香港中环交易所上市大厅，敲钟仪式前二十秒",
+ "era": "当代香港中环，一家独角兽上市前的闭门路演周",
  "extends": null,
  "forbidden_terms": [
   "他",
@@ -1492,139 +1621,58 @@
  ],
  "hooks": [
   {
-   "id": "hook_01_arm_garter_clip_snag_groan",
+   "id": "hook_partner_pen_on_contract",
    "kind": "approach",
    "location_ids": [
-    "loc_roadshow_center_circular_stage"
+    "loc_roadshow_boardroom"
    ],
    "slot": "investment_partner_shen_qing_yi",
-   "text": "耳麦里传来视听总工低沉沉稳的倒数提醒，{investment_partner_shen_qing_yi.name}侧身按动翻页笔时后侧却被一股冰冷阻力反向拉扯，多轴机械臂随之发出轻微电机嗡鸣！"
+   "text": "{npc.name}把签字笔按在合同封面上，眼睛看着董事，只把笔帽轻轻往你那边推了一寸。"
   },
   {
-   "id": "hook_02_pencil_skirt_strain_jam",
+   "id": "hook_partner_heel_under_table",
    "kind": "approach",
    "location_ids": [
-    "loc_roadshow_center_circular_stage"
+    "loc_roadshow_boardroom"
    ],
    "slot": "investment_partner_shen_qing_yi",
-   "text": "{investment_partner_shen_qing_yi.name}微微敛下颌保持高冷从容微笑，羊绒铅笔裙高开叉内衬吊袜带钢夹不知何时深深绞入了机械臂导轨滑块夹缝，开叉缝线断裂后摆紧绷欲裂动弹不得！"
+   "text": "桌布底下，{npc.name}的高跟鞋尖轻轻蹭过你的裤管，停在你脚踝边，没有挪开。"
   },
   {
-   "id": "hook_03_battery_cap_lever_extract",
+   "id": "hook_partner_whisper_ten_minutes",
    "kind": "approach",
    "location_ids": [
-    "loc_roadshow_center_circular_stage"
+    "loc_roadshow_boardroom"
    ],
    "slot": "investment_partner_shen_qing_yi",
-   "text": "{investment_partner_shen_qing_yi.name}单手控场稳如磐石维持端庄侧颜，右手极度自然优雅地借换手之姿轻旋翻页笔尾部，两毫米加厚航空钛合金电池仓盖瞬间反握在指尖！"
+   "text": "{npc.name}借着翻页侧过身，声音压得极低：再撑十分钟……别停，也别再往上推。"
   },
   {
-   "id": "hook_04_architect_iron_standoff",
+   "id": "hook_partner_booth_door",
    "kind": "approach",
    "location_ids": [
-    "loc_roadshow_center_circular_stage"
-   ],
-   "slot": "av_architect_lu_jing_xing",
-   "text": "{av_architect_lu_jing_xing.name}手持控制平板高大身形一步跨至迎宾台阶正前方，如铁壁般横在入口处冷声向大步踏来的副主席汇报激光参数阻断逼近脚步！"
-  },
-  {
-   "id": "hook_05_assistant_folder_shield",
-   "kind": "approach",
-   "location_ids": [
-    "loc_roadshow_center_circular_stage"
-   ],
-   "slot": "assistant_su_yu_qing",
-   "text": "{assistant_su_yu_qing.name}站在讲台侧前方敏锐察觉异样，干练迈步将加厚并购企划夹板高高举起，严严实实挡住台下一切斜向窥探视线！"
-  },
-  {
-   "id": "hook_06_battery_cap_blade_into_rail_gap",
-   "kind": "approach",
-   "location_ids": [
-    "loc_roadshow_center_circular_stage"
+    "loc_interpreter_booth"
    ],
    "slot": "investment_partner_shen_qing_yi",
-   "text": "钛合金电池盖两毫米微翘斜楔顺着狭小导轨缝隙精准探入阻尼滑块自锁锁片下方，指尖清晰感知到弹簧受压卡紧的极大弹性阻尼刚性！"
+   "text": "同传间的门一关，{npc.name}背靠着门，眼尾泛红地朝你伸出手：把遥控器给我看看。"
   },
   {
-   "id": "hook_07_chairman_footsteps_stairs",
+   "id": "hook_partner_terrace_jacket",
    "kind": "approach",
    "location_ids": [
-    "loc_boardroom_stairs_entrance"
+    "loc_tea_break_terrace"
    ],
-   "slot": "vice_chairman_huo_zhen_ting",
-   "text": "青年副主席{vice_chairman_huo_zhen_ting.name}手持案卷傲慢逼近，皮鞋踏在讲台铺毯石阶上发出沉闷步声，距离受困大屏仅剩最后三步！"
+   "slot": "investment_partner_shen_qing_yi",
+   "text": "海风一吹，{npc.name}抱着胳膊往你身边站了半步，低声说：外套借我。"
   },
   {
-   "id": "hook_08_mechanic_supports_rail_bracket",
+   "id": "hook_partner_sofa_pat",
    "kind": "approach",
    "location_ids": [
-    "loc_display_arm_damping_track_alcove"
-   ],
-   "slot": "mechanic_han_tie_feng",
-   "text": "维保技师手持无尘布半掩在大屏阴影处假装巡检，暗中借厚手套替合伙人托住机械臂滑轨受力底座分担下压破拆负荷！"
-  },
-  {
-   "id": "hook_09_wrist_twist_battery_cap_pop",
-   "kind": "approach",
-   "location_ids": [
-    "loc_roadshow_center_circular_stage"
+    "loc_data_room"
    ],
    "slot": "investment_partner_shen_qing_yi",
-   "text": "{investment_partner_shen_qing_yi.name}美眸沉静秀唇微抿，单手运力稳如泰山，右手腕借大屏碳纤维边框作为支点向斜上方施加四牛顿强劲微挑力矩！"
-  },
-  {
-   "id": "hook_10_garter_clip_snaps_free",
-   "kind": "approach",
-   "location_ids": [
-    "loc_roadshow_center_circular_stage"
-   ],
-   "slot": "investment_partner_shen_qing_yi",
-   "text": "一声极细微的金属卡片弹开清脆轻响迸发，咬死的阻尼导轨锁片被精准挑断，纯钢扁平钢夹瞬间脱扣滑出，羊绒铅笔裙重获自由彻底解除死锁！"
-  },
-  {
-   "id": "hook_11_partner_stands_tall_and_free",
-   "kind": "accident",
-   "location_ids": [
-    "loc_roadshow_center_circular_stage"
-   ],
-   "slot": "investment_partner_shen_qing_yi",
-   "text": "解脱瞬间{investment_partner_shen_qing_yi.name}优雅直身顺手抚平羊绒铅笔裙开叉缝，迈步迎着登上讲台的副主席露出无可挑剔的冷艳从容微笑！"
-  },
-  {
-   "id": "hook_12_flawless_partner_poise_captured",
-   "kind": "observe",
-   "location_ids": [
-    "loc_roadshow_center_circular_stage"
-   ],
-   "slot": "av_architect_lu_jing_xing",
-   "text": "敲钟仪式灯光下的合伙人冷艳孤傲仪态万千宛若商界女王，清绝出尘的气场引得台下两百名投资巨鳄与长焦摄影师爆发出由衷赞叹！"
-  },
-  {
-   "id": "hook_13_grand_roadshow_standing_ovation",
-   "kind": "observe",
-   "location_ids": [
-    "loc_roadshow_center_circular_stage"
-   ],
-   "slot": "investment_partner_shen_qing_yi",
-   "text": "大屏上方核心指标定格为全票通过耀眼绿光，终场陈述落幕瞬间全场起立鼓掌，{investment_partner_shen_qing_yi.name}合上讲义定格下五十亿并购神级高光！"
-  },
-  {
-   "id": "hook_14_chairman_retreats_in_awe",
-   "kind": "request",
-   "location_ids": [
-    "loc_boardroom_stairs_entrance"
-   ],
-   "slot": "vice_chairman_huo_zhen_ting",
-   "text": "被总工冷峻气场正面迫退且被女合伙人无瑕商界风采震撼的副主席只得悻悻收起轻佻，规规矩矩合起案卷站在台阶边鼓掌致敬！"
-  },
-  {
-   "id": "hook_15_battery_cap_tucked_whisper_smile",
-   "kind": "request",
-   "location_ids": [
-    "loc_roadshow_center_circular_stage"
-   ],
-   "slot": "investment_partner_shen_qing_yi",
-   "text": "掌声雷动闪光灯闪耀间隙{investment_partner_shen_qing_yi.name}优雅将钛合金电池盖悄然旋回翻页笔，隔着讲台与视听总工清冷相视一笑尽显顶级默契的守护柔情！"
+   "text": "{npc.name}盘腿坐在长沙发上，拍了拍身边的位置：坐。今天那几下，我们算算账。"
   },
   {
    "id": "hook_partner_suite_door",
@@ -1634,120 +1682,186 @@
    ],
    "slot": "investment_partner_shen_qing_yi",
    "text": "{npc.name}倚在套房门口，手里拎着那双高跟鞋：庆功宴我不去了。……进来？"
+  },
+  {
+   "id": "hook_partner_suite_palm",
+   "kind": "request",
+   "location_ids": [
+    "loc_partner_hotel_suite"
+   ],
+   "slot": "investment_partner_shen_qing_yi",
+   "text": "{npc.name}坐在沙发扶手上，朝你摊开掌心：遥控器。今晚换个玩法。"
+  },
+  {
+   "id": "hook_vc_smiles_across_table",
+   "kind": "observe",
+   "location_ids": [
+    "loc_roadshow_boardroom"
+   ],
+   "slot": "vice_chairman_huo_zhen_ting",
+   "text": "{npc.name}隔着长桌朝合伙人笑了笑，手指在桌面上敲了三下，像在数什么。"
+  },
+  {
+   "id": "hook_vc_terrace_rail",
+   "kind": "request",
+   "location_ids": [
+    "loc_tea_break_terrace"
+   ],
+   "slot": "vice_chairman_huo_zhen_ting",
+   "text": "{npc.name}端着奶茶站在栏杆边，朝你抬了抬下巴：借一步说话。"
+  },
+  {
+   "id": "hook_interpreter_offers_headset",
+   "kind": "approach",
+   "location_ids": [
+    "loc_interpreter_booth"
+   ],
+   "slot": "simul_interpreter_jiang",
+   "text": "{npc.name}摘下一边监听耳机递过来，声音很平：你听听，刚才那一段。"
+  },
+  {
+   "id": "hook_rival_brings_tart",
+   "kind": "approach",
+   "location_ids": [
+    "loc_tea_break_terrace"
+   ],
+   "slot": "rival_partner_wen_ruo_lan",
+   "text": "{npc.name}把一块蛋挞放到合伙人手边，眼睛却看着你：你们俩今天，挺默契啊。"
+  },
+  {
+   "id": "hook_rival_at_glass",
+   "kind": "observe",
+   "location_ids": [
+    "loc_data_room"
+   ],
+   "slot": "rival_partner_wen_ruo_lan",
+   "text": "{npc.name}在底稿室门口那块小玻璃前停了一下，敲了敲门，笑着说来调份公开材料。"
+  },
+  {
+   "id": "hook_cfo_slides_calculator",
+   "kind": "approach",
+   "location_ids": [
+    "loc_roadshow_boardroom"
+   ],
+   "slot": "unicorn_cfo_gu_zhi_wei",
+   "text": "{npc.name}把计算器推到你面前，屏幕上是一个数字，旁边的便签写着：你的手，别乱动。"
+  },
+  {
+   "id": "hook_assistant_brings_files",
+   "kind": "approach",
+   "location_ids": [
+    "loc_data_room"
+   ],
+   "slot": "assistant_su_yu_qing",
+   "text": "{npc.name}抱着一摞文件推门进来，看了合伙人一眼，又看了你一眼，把门轻轻带上了。"
   }
  ],
  "id": "partner_boardroom_arm_lace_jam",
  "locations": [
   {
    "affordances": [
-    "以干练从容金融女掌门姿态正对台下保持单手翻页",
-    "借翻页笔钛合金电池仓盖微翘刃角探入导轨撬动自救"
+    "在桌下轻轻碰一下对方的膝盖",
+    "按三下笔帽要五分钟",
+    "替合伙人接住一个刁钻的问题"
    ],
-   "detail": "矗立在大厅中央的五米直径环形讲台，铺设静音深灰羊绒地毯，多轴机械臂悬吊两百寸曲面超清大屏环绕运行，台下两百名投资巨鳄与董事目光聚焦。",
+   "detail": "顶层的闭门会议室，一张十二米的胡桃木长桌，墨绿丝绒桌布垂到地面；落地玻璃外是维港，投影幕上停着估值曲线。",
    "exits": [
-    "loc_display_arm_damping_track_alcove",
-    "loc_boardroom_stairs_entrance",
-    "loc_media_camera_director_front_pit"
+    "loc_interpreter_booth",
+    "loc_tea_break_terrace",
+    "loc_data_room"
    ],
-   "id": "loc_roadshow_center_circular_stage",
-   "name": "敲钟圆台",
+   "id": "loc_roadshow_boardroom",
+   "name": "路演会议室",
    "pressure_modifiers": {
-    "press_chairman_twenty_second_stairs_rush": "副主席皮鞋踏上讲台台阶加剧二十秒逼近绝境",
-    "press_display_arm_garter_clip_pinch": "机械臂滑轨咬住吊袜带钢夹加剧铅笔裙受拉紧绷与撕裂恐慌"
+    "press_called_to_whiteboard": "起身走到白板前要经过整张长桌，桌布再也挡不住双腿",
+    "press_lapel_mic_breath": "领夹麦就别在合伙人锁骨上，一声轻喘会直接进同传耳机"
    },
    "privacy": "public",
    "tags": [],
-   "visibility": "台下两百名投资人与长焦机群无死角仰视，八组超清追光灯聚焦，身段与西装下摆分毫毕现。",
+   "visibility": "桌面上的每个表情都在董事眼里，桌布底下的膝盖、鞋尖和那一下轻颤，只有同一侧的人知道。",
    "witnesses": [
-    "bg_av_architect_lu_jing_xing",
-    "bg_assistant_su_yu_qing"
+    "bg_board_secretary",
+    "bg_fund_analyst"
    ]
   },
   {
    "affordances": [
-    "借大屏外沿碳纤维边框作为翻页笔杠杆支点",
-    "在滑轨死角内借呼吸起伏运力实施微观物理破拆"
+    "把监听推子拉到底",
+    "在窄台前替合伙人整理裙摆",
+    "隔着单向玻璃看会议桌"
    ],
-   "detail": "两百寸大屏碳纤维支架与伺服机械臂滑轨拐角处的狭小间隙，高载荷直线导轨滚珠滑块正死死夹住蕾丝吊袜带纯钢扁平卡爪。",
+   "detail": "会议室侧墙里嵌着的隔音同传间，两把椅子、一张窄台、一排推子，玻璃上贴了单向膜，只能从里往外看。",
    "exits": [
-    "loc_roadshow_center_circular_stage",
-    "loc_boardroom_stairs_entrance",
-    "loc_media_camera_director_front_pit"
+    "loc_roadshow_boardroom"
    ],
-   "id": "loc_display_arm_damping_track_alcove",
-   "name": "机械臂死角",
+   "id": "loc_interpreter_booth",
+   "name": "同传间",
    "pressure_modifiers": {
-    "press_battery_cap_lever_slip_risk": "钛合金电池盖在镀铬导轨曲面上打滑加剧撬断失败风险",
-    "press_media_long_lens_scrutiny_dread": "前排财经长焦大炮锁焦加剧贴身吊袜带曝光恐慌"
+    "press_lapel_mic_breath": "推子就在手边，关不关、什么时候关，都在这一推上"
+   },
+   "privacy": "private",
+   "tags": [],
+   "visibility": "门一关，外面只看得见单向玻璃里的一片黑；推子推上去，里面说的话会进所有人的耳机。",
+   "witnesses": []
+  },
+  {
+   "affordances": [
+    "递一杯奶茶过去",
+    "借着海风把外套披到合伙人肩上",
+    "在栏杆边低声说一句只有两人听得见的话"
+   ],
+   "detail": "顶层的半露天露台，摆着港式奶茶和蛋挞，海风从栏杆外灌进来，吹得人裙摆贴腿。",
+   "exits": [
+    "loc_roadshow_boardroom",
+    "loc_data_room"
+   ],
+   "id": "loc_tea_break_terrace",
+   "name": "茶歇露台",
+   "pressure_modifiers": {
+    "press_vice_chairman_private_word": "副主席端着杯子站在栏杆另一头，看得见两人站得多近"
    },
    "privacy": "semi",
    "tags": [],
-   "visibility": "大屏边框阻挡部分正面视线，但若从迎宾台阶走上，高开叉羊绒裙摆撕裂与贴身吊袜带一览无遗。",
+   "visibility": "董事和分析师端着杯子三三两两站着，谁和谁站得太近，转个身就看见。",
    "witnesses": [
-    "bg_mechanic_han_tie_feng",
-    "bg_media_press_lin_wei_guang"
+    "bg_tea_lady",
+    "bg_fund_analyst"
    ]
   },
   {
    "affordances": [
-    "以清冷严谨眼神凝视副主席迫使其步伐在质询礼仪下放缓",
-    "倾听皮鞋踏毯声响精确计算自救秒数"
+    "对着底稿核一遍条款",
+    "坐在长沙发上歇五分钟",
+    "把文件柜的钥匙交给对方"
    ],
-   "detail": "连通主讲台与第一排董事局贵宾席的宽阔石阶，并购基金青年副主席正手持质询文件昂首迈步拾级而上。",
+   "detail": "走廊尽头的资料室，没有窗，一排排文件柜锁着尽调底稿，只有一张长沙发和一台碎纸机。",
    "exits": [
-    "loc_roadshow_center_circular_stage",
-    "loc_display_arm_damping_track_alcove",
-    "loc_media_camera_director_front_pit"
-   ],
-   "id": "loc_boardroom_stairs_entrance",
-   "name": "贵宾席台阶",
-   "pressure_modifiers": {
-    "press_chairman_twenty_second_stairs_rush": "董事局高管登台迫近加剧商业形象崩塌与巨额赔偿危机",
-    "press_pencil_skirt_split_tear_panic": "牵拉导致高开叉缝线断裂微响加剧当众撕裂露底恐惧"
-   },
-   "privacy": "public",
-   "tags": [],
-   "visibility": "石阶正对演讲中心点，登台每一步皆将居高临下看清主讲人下装状态与双腿间隙。",
-   "witnesses": [
-    "bg_vice_chairman_huo",
-    "bg_av_architect_lu_jing_xing"
-   ]
-  },
-  {
-   "affordances": [
-    "观察镜头仰角避开裙摆开叉阴影盲区",
-    "借音响重低音翻页声掩盖翻页笔电池盖别断卡簧脆响"
-   ],
-   "detail": "正对讲台中央仅隔四米的媒体核心工作区，数十家长焦单反大炮与超清摄像机严阵以待捕捉女总裁表情。",
-   "exits": [
-    "loc_roadshow_center_circular_stage",
-    "loc_display_arm_damping_track_alcove",
-    "loc_boardroom_stairs_entrance",
+    "loc_roadshow_boardroom",
+    "loc_tea_break_terrace",
     "loc_partner_hotel_suite"
    ],
-   "id": "loc_media_camera_director_front_pit",
-   "name": "前排机位席",
+   "id": "loc_data_room",
+   "name": "底稿室",
    "pressure_modifiers": {
-    "press_battery_cap_lever_slip_risk": "上身维持单臂讲解侧立加剧单腿与后腰肌肉酸胀",
-    "press_media_long_lens_scrutiny_dread": "长焦大炮密集抓拍加剧西装撕裂沦为头条丑闻恐慌"
+    "press_overnight_model_revision": "通宵改模型只能在这里，碎纸机一响整层都听得见",
+    "press_rival_partner_suspects": "对手行的人借口调阅公开材料，在门口那块小玻璃前停了一下"
    },
    "privacy": "semi",
    "tags": [],
-   "visibility": "数十台高清取景器全时段锁定演讲台，任何西装破损或神色失态皆难逃光学变焦特写。",
+   "visibility": "门上有一块小玻璃，路过的人探个头就能看见；刷卡记录会留在系统里。",
    "witnesses": [
-    "bg_assistant_su_yu_qing",
-    "bg_media_press_lin_wei_guang"
+    "bg_compliance_officer"
    ]
   },
   {
    "affordances": [
     "陪合伙人喝完那瓶香槟",
-    "替合伙人解开蕾丝吊袜带",
+    "把遥控器放回合伙人掌心",
     "挂上请勿打扰的牌子"
    ],
-   "detail": "交易所对面酒店顶层的一间套房，落地窗外是维港夜景，吧台上开着一瓶庆功的香槟，沙发上随手扔着西装外套和一双高跟鞋。",
+   "detail": "对面酒店顶层的一间套房，落地窗外是维港夜景，吧台上开着一瓶庆功的香槟，沙发上随手扔着西装外套和一双高跟鞋。",
    "exits": [
-    "loc_media_camera_director_front_pit"
+    "loc_data_room"
    ],
    "id": "loc_partner_hotel_suite",
    "name": "酒店套房",
@@ -1845,59 +1959,31 @@
   ],
   "order": "family_first"
  },
- "notes": "按原稿加入，保留两百位投资人与董事注视的讲台、多轴阻尼机械臂大屏、高冷女合伙人讲解时机械臂滑轨咬住高开叉羊绒铅笔裙里的蕾丝吊袜带钢夹、裙摆被撕开大半、董事局副主席登台只剩二十秒、保持微笑单手控场、用激光翻页笔钛合金电池盖挑断锁片的骨架与禁欲又色气的味道。按用户确认的去重方案，场景从并购路演改成香港交易所上市大厅的敲钟仪式，与陆家嘴天桥的女合伙人拉开。原稿的时代、地点、开局时刻和基调是从学生会长世界复制的，已重写；背景人物里与主要角色同名的几位改成了独立的人。女主年龄拉开到二十九到三十二岁，视听总工程师三十二到三十六岁。用户已放开内容限制、色情尺度优先，只守红线；卡住的险情期间不写性互动。新增中环酒店的行政套房与四个亲密日常。",
+ "notes": "2026-10-17 按用户提供的改造方案重写：保留世界 ID、女合伙人的人设与外貌、黑色蕾丝吊袜带，加一枚静音遥控跳蛋；去掉机械臂卡住吊袜带、翻页笔撬锁片的脱困套路，改成闭门路演会议桌下的遥控器博弈。赌约由合伙人自己提出，暗号“收盘”一说就停，所以遥控器不登记为把柄（把柄生效期间双方之间的亲密回合会被拒）；把柄只放在副主席对合伙人身上。新增四个只有合伙人一人在场的组合，覆盖四种权力结构。场景放在香港上市路演，不写并购，与陆家嘴天桥的女合伙人世界拉开。",
  "player_identities": [
   {
    "age_range": [
-    37,
-    41
+    32,
+    40
    ],
-   "baseline": "计算机与智能工程系毕业，年满三十七周岁整，持有国家级伺服系统高级总监资质，全盘掌管敲钟仪式讲台多轴机械臂与激光追踪系统。",
+   "baseline": "这次上市的发行人，路演会上坐在合伙人旁边；上周那场赌约的赢家，遥控器就在西装内袋里。",
    "gender": "any",
-   "id": "pi_roadshow_av_chief_architect",
-   "reputation": "对大型演播机械阻尼毫秒级控制了如指掌的工科天才",
+   "id": "pi_unicorn_founder_ceo",
+   "reputation": "从车库做到估值百亿、脾气难缠的创始人",
    "resources": [
-    "机械臂伺服电机紧急闭锁手持面板",
-    "环形讲台中央灯光聚焦点控仪"
+    "发行人的最终拍板权",
+    "那枚磨砂遥控器",
+    "合伙人愿意听完的每一句话"
    ],
    "risks": [
-    "若大屏机械臂发生运行卡阻导致敲钟仪式中断将承担重大商业违约追责"
+    "路演砸了，估值腰斩、跟投的老员工全部套牢"
    ],
-   "role": "智能视听机械臂控制总架构师",
+   "role": "独角兽的创始人兼行政总裁",
    "social_position": "high",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}总工"
-    },
-    {
-     "gender": "any",
-     "pattern": "{given}工"
-    }
-   ]
-  },
-  {
-   "age_range": [
-    27,
-    31
-   ],
-   "baseline": "金融分析学科毕业，年满二十七周岁整，依法享有完全民事责任自立能力，负责讲台物料核验与台下贵宾动线引导协调。",
-   "gender": "any",
-   "id": "pi_partner_executive_assistant",
-   "reputation": "办事滴水不漏且忠诚干练的投行新秀",
-   "resources": [
-    "加厚硬质并购企划书翻页夹板",
-    "前台贵宾席调频无线呼叫手柄"
-   ],
-   "risks": [
-    "讲台资料脱节将面临合伙人委员会严厉扣罚"
-   ],
-   "role": "投行高级合伙人青年执行助理",
-   "social_position": "high",
-   "title_patterns": [
-    {
-     "gender": "any",
-     "pattern": "{family}助理"
+     "pattern": "{family}总"
     },
     {
      "gender": "any",
@@ -1907,428 +1993,485 @@
   },
   {
    "age_range": [
-    26,
-    30
+    31,
+    38
    ],
-   "baseline": "精密机械设计学科毕业达到法定成年标准，依法享有完全民事自立资格，负责机械臂阻尼铰链与导轨滑块日常校准。",
+   "baseline": "和合伙人同年升合伙人，这单联席保荐；赌约是两人在年会上打的，赢的人是自己。",
    "gender": "any",
-   "id": "pi_boardroom_mechanic_inspector",
-   "reputation": "专攻高载荷伺服导轨卡阻排障的五金大师",
+   "id": "pi_co_lead_partner",
+   "reputation": "唯一敢在委员会上跟合伙人对着拍桌子的同期",
    "resources": [
-    "高渗透无色工业阻尼润滑液",
-    "特制淬火硬质合金薄刃撬匙"
+    "一半的定价话语权",
+    "那枚磨砂遥控器",
+    "十年的同期情分"
    ],
    "risks": [
-    "导轨咬死引发停机将承担严重责任扣罚"
+    "联席里出了岔子，两人一起写检讨，合伙人委员会的位子也要让人"
    ],
-   "role": "精密机械臂滑轨成年维保技师",
+   "role": "同一家投行的联席保荐合伙人",
    "social_position": "equal",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}师傅"
+     "pattern": "{family}合伙人"
     },
     {
      "gender": "any",
-     "pattern": "{given}技师"
+     "pattern": "老{family}"
     }
    ]
   },
   {
    "age_range": [
-    33,
-    37
+    27,
+    32
    ],
-   "baseline": "财经新闻专业毕业，年满三十三周岁成年人，享有完整法定采访报道权利，负责现场两百家媒体长焦镜头动线规范。",
+   "baseline": "跟了合伙人四年，底稿是自己一页页做的；那场赌约是合伙人醉后亲口许下的，遥控器托付给了自己。",
    "gender": "any",
-   "id": "pi_financial_media_press_liaison",
-   "reputation": "在金融媒体圈拥有高度专业素养的见习记者",
+   "id": "pi_executive_director",
+   "reputation": "合伙人身边最能熬夜、嘴最严的人",
    "resources": [
-    "便携式大号防眩遮光挡板",
-    "全景速记无线转播云台"
+    "整套估值模型与底稿",
+    "那枚磨砂遥控器",
+    "合伙人的日程与门禁卡"
    ],
    "risks": [
-    "违规拍摄非公开商业演示细节将承担法律责任"
+    "升合伙人的提名要合伙人签字，出一点事就全完了"
    ],
-   "role": "敲钟仪式官方见习记者兼速记督导",
+   "role": "合伙人手下的执行董事",
    "social_position": "low",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}记者"
+     "pattern": "{family}董"
     },
     {
      "gender": "any",
-     "pattern": "小{given}"
+     "pattern": "小{family}"
+    }
+   ]
+  },
+  {
+   "age_range": [
+    30,
+    38
+   ],
+   "baseline": "基石基金派来坐在桌对面的人，投不投这一单要看自己的报告；赌约是和合伙人在私人晚宴上打的，赢了遥控器。",
+   "gender": "any",
+   "id": "pi_fund_investment_director",
+   "reputation": "问题刁钻、从不当场表态的买方",
+   "resources": [
+    "基石认购的推荐权",
+    "那枚磨砂遥控器",
+    "副主席不知道的那份尽调备忘录"
+   ],
+   "risks": [
+    "和发行方的顾问走太近，被合规查出来就是利益冲突"
+   ],
+   "role": "基石基金的投资总监",
+   "social_position": "high",
+   "title_patterns": [
+    {
+     "gender": "any",
+     "pattern": "{family}总监"
+    },
+    {
+     "gender": "any",
+     "pattern": "{given}"
     }
    ]
   }
  ],
- "premise": "香港中环交易所，一家独角兽公司的上市敲钟下周举行，作为保荐人的高冷女合伙人天天在上市大厅里彩排致辞，机械臂架构师、执行助理和维保技师陪着走位。合伙人高开叉铅笔裙里穿着蕾丝吊袜带；多轴阻尼机械臂的大屏滑轨收得太快，调了几次都不稳。",
+ "premise": "香港中环，一家独角兽上市前的闭门路演进入最后一周。冷艳的女合伙人白天在顶层会议室对着基金董事讲估值，夜里回对面酒店的套房改底稿。上周一场私下的赌约，合伙人输了：铅笔裙里黑色蕾丝吊袜带的下面多了一枚静音跳蛋，遥控器交给了赢家，暗号一说就停。基金的副主席最近总盯着合伙人看。",
  "pressures": [
   {
-   "choice": "选择借电池盖微翘斜楔杠杆下压撬开锁片，抑或盲目硬扯导致铅笔裙撕烂当众露底走光。",
+   "choice": "遥控器开着，起身就是十二米长桌；让档位停下，还是赌合伙人撑得住。",
    "exits": [
     {
-     "cost": "大腿后侧雪白肌肤被吊袜带勒出淡淡红印且单手盲操指骨酸胀。",
-     "option": "借助加厚航空钛合金激光翻页笔电池盖找准四牛顿力矩精准挑断锁片自救脱钩。"
+     "cost": "合伙人会知道你心软了，下一局的主动权就此让出去。",
+     "option": "在合伙人起身前，口袋里的拇指把档位推回零。"
     },
     {
-     "cost": "需要工程师承担未经报备介入演讲区的微弱违纪风险。",
-     "option": "由维保工程师维保技师在暗处用手掌稳住导轨底座分担下压破拆扭矩。"
+     "cost": "合伙人要是撑不住在白板前说出“收盘”，整个会场都会听见那两个字。",
+     "option": "什么也不动，等合伙人自己决定要不要说暗号。"
     }
    ],
    "far": {
-    "consequence": "造成灾难性商业信誉崩盘事故，高级合伙人执业生涯彻底终结遭行业除名。",
-    "due_days": 1,
-    "trigger": "女合伙人在两百名投资巨鳄前狼狈撕裙走光"
+    "consequence": "基石认购撤回，发行价下调一档，合伙人委员会要个解释。",
+    "due_days": 2,
+    "trigger": "合伙人在白板前失态"
    },
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
-   "id": "press_display_arm_garter_clip_pinch",
+   "hook_ids": [
+    "hook_partner_pen_on_contract",
+    "hook_vc_smiles_across_table"
+   ],
+   "id": "press_called_to_whiteboard",
    "immediate": {
-    "minutes": 1,
-    "text": "坚硬金属导轨死死卡住钢夹，裙摆后侧被反向拽翻，动弹不得。"
+    "minutes": 5,
+    "text": "合伙人放下笔站起来，桌布滑过小腿，高跟鞋踩出第一步。"
    },
    "leverage": null,
    "location_ids": [
-    "loc_roadshow_center_circular_stage"
+    "loc_roadshow_boardroom"
    ],
    "near": {
-    "deadline_minutes": 2,
-    "text": "若无法在二十秒内解除绞合，上身迈步将直接扯碎羊绒裙露出贴身春光引发全网轰动。"
+    "deadline_minutes": 30,
+    "text": "推演之后还有二十分钟的追问，副主席的问题一个比一个细。"
    },
-   "objective": "在羊绒铅笔裙彻底撕裂前用翻页笔钛合金电池盖斜楔挑断自锁锁片脱钩自救。",
-   "source": "accident",
-   "start_minute": 132,
-   "tags": [
-    "disaster"
-   ],
-   "title": "机械臂滑轨咬死吊袜带钢夹剧痛",
-   "trigger": "翻页侧身讲解动作导致吊袜带钢夹被导轨滚珠滑块死死卡在机械缝隙。"
-  },
-  {
-   "choice": "选择争分夺秒单手盲操翻页笔自救，抑或在对讲机中呼救引发全场敲钟仪式叫停大乱。",
-   "exits": [
-    {
-     "cost": "若最终仍未解脱将承担顶撞资方领导的当场问责处分。",
-     "option": "视听总工以汇报激光追踪校准为由挺身横阻在副主席身前争取时间。"
-    },
-    {
-     "cost": "承受超负荷心理紧绷与肌肉极度酸胀。",
-     "option": "合伙人指尖爆发极强稳定性在倒数第三秒挑落金属钢夹从容拉平裙摆。"
-    }
-   ],
-   "far": {
-    "consequence": "五十亿并购项目当场告吹，面临投资人巨额连带索赔追责。",
-    "due_days": 1,
-    "trigger": "全国财经直播曝光女合伙人受困受辱窘态"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_chairman_twenty_second_stairs_rush",
-   "immediate": {
-    "minutes": 1,
-    "text": "耳麦中二十秒倒数读秒清晰可闻，副主席傲慢挑剔的目光正隔着石阶扫视讲台。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_boardroom_stairs_entrance"
-   ],
-   "near": {
-    "deadline_minutes": 2,
-    "text": "倒数归零若合伙人呈现身体受拽下装撕裂姿态，登上石阶的视线将把受困丑态暴露无遗。"
-   },
-   "objective": "在副主席完全跨上讲台前解除束缚并抚平羊绒裙从容定案了结危机。",
+   "objective": "在五分钟里把推演讲完，不让任何人看出异样。",
    "source": "institution",
-   "start_minute": 133,
+   "start_minute": 600,
    "tags": [],
-   "title": "董事局副主席登台质询二十秒倒数",
-   "trigger": "视听总工在耳麦中确认副主席登台倒数，皮鞋踏毯步声正一步一步向讲台逼近。"
+   "title": "当众的白板推演",
+   "trigger": "副主席笑着点名，请合伙人起身到白板前，脱稿推演五分钟的现金流。"
   },
   {
-   "choice": "选择由执行助理高举企划展板阻挡，抑或任由长焦镜头抓拍到死锁细节沦为头条丑闻。",
+   "choice": "去同传间求人推下推子，就得解释为什么；不去，下一声可能进所有人的耳机。",
    "exits": [
     {
-     "cost": "可能遭受管委会关于站位偏离辅助席的批评。",
-     "option": "执行助理优雅大跨步挥展大幅面企划夹板遮挡合伙人侧后方死锁盲区。"
+     "cost": "同传会记住这个人情，也会记住你替合伙人求过情。",
+     "option": "你借口核数据走进同传间，请同传把那一路的增益压下去。"
     },
     {
-     "cost": "需要公关人员承担来自媒体同行的抱怨压力。",
-     "option": "见习记者财经记者果断推移防眩遮光挡板彻底阻断前沿低角度窥视视线。"
+     "cost": "全场都会看见合伙人离席，副主席会追问为什么。",
+     "option": "合伙人当众说一句“暂停传译”，自己去同传间。"
     }
    ],
    "far": {
-    "consequence": "投行首席女合伙人形象瞬间粉碎，遭遇全网恶俗网络暴力声讨。",
-    "due_days": 1,
-    "trigger": "私密吊袜带受困细节被财经媒体大肆散播"
+    "consequence": "合伙人要写一份说明，赌约可能瞒不住。",
+    "due_days": 3,
+    "trigger": "那一段录音被合规调出来"
    },
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
-   "id": "press_media_long_lens_scrutiny_dread",
+   "hook_ids": [
+    "hook_partner_booth_door",
+    "hook_interpreter_offers_headset",
+    "hook_partner_heel_under_table"
+   ],
+   "id": "press_lapel_mic_breath",
    "immediate": {
-    "minutes": 1,
-    "text": "单反快门声如雨点般传来，长焦镜头密集对准讲台，西装与裙摆细节无处遁形。"
+    "minutes": 10,
+    "text": "同传隔着单向玻璃看过来，手指在推子上停住了。"
    },
    "leverage": null,
    "location_ids": [
-    "loc_roadshow_center_circular_stage"
+    "loc_roadshow_boardroom",
+    "loc_interpreter_booth"
    ],
    "near": {
-    "deadline_minutes": 2,
-    "text": "摄影师镜头只要下移半寸即可看清合伙人吊袜带卡死在机械臂上的窘态并大声喧哗。"
+    "deadline_minutes": 30,
+    "text": "下一段问答二十分钟后开始，合规会调听今天的录音。"
    },
-   "objective": "在长焦镜头捕捉到吊袜带钢夹与高开叉撕裂前构筑防线或完成自救脱钩。",
+   "objective": "在下一段问答开始前，让那一路麦安静下来。",
+   "source": "accident",
+   "start_minute": 660,
+   "tags": [],
+   "title": "领夹麦里的那一声",
+   "trigger": "合伙人锁骨上的领夹麦还开着，刚才换气时那一声很轻的颤，进了同传的监听耳机。"
+  },
+  {
+   "choice": "认下来，就是把柄；否认，副主席手里的签收单会说话。",
+   "exits": [
+    {
+     "cost": "从此副主席盯上的是你，赌约的秘密你要一个人扛。",
+     "option": "你走过去插进话里，把包装盒说成是自己的。"
+    },
+    {
+     "cost": "副主席会在定价会上加倍刁难，合伙人得用一整天的状态去扛。",
+     "option": "合伙人冷着脸一口否认，转身就走。"
+    }
+   ],
+   "far": {
+    "consequence": "合伙人被停职调查，这一单换人主讲。",
+    "due_days": 5,
+    "trigger": "副主席拿签收单去找合伙人委员会"
+   },
+   "flags": [
+    "timed",
+    "leverage"
+   ],
+   "hook_ids": [
+    "hook_vc_terrace_rail",
+    "hook_partner_terrace_jacket"
+   ],
+   "id": "press_vice_chairman_private_word",
+   "immediate": {
+    "minutes": 15,
+    "text": "副主席把包装盒的照片在手机上亮了一下，又收回去。"
+   },
+   "leverage": {
+    "basis": "副主席手里有合伙人助理签收那只遥控器包装盒的照片。",
+    "holder": "vice_chairman_huo_zhen_ting",
+    "subject": "investment_partner_shen_qing_yi"
+   },
+   "location_ids": [
+    "loc_tea_break_terrace"
+   ],
+   "near": {
+    "deadline_minutes": 300,
+    "text": "下午的定价会上，副主席暗示要合伙人主动让一档价格。"
+   },
+   "objective": "在茶歇结束前，弄清楚副主席知道多少、想要什么。",
    "source": "person",
-   "start_minute": 133,
-   "tags": [],
-   "title": "敲钟仪式前排数十家长焦大炮长距离锁焦",
-   "trigger": "前排媒体席数十名长焦财经记者隔着四米连拍，长焦镜头死死锁定讲台下装细节。"
-  },
-  {
-   "choice": "选择调整呼吸沉稳发力微撬，抑或因电池盖打滑脱落彻底丧失唯一工具并划破羊绒裙摆。",
-   "exits": [
-    {
-     "cost": "消耗最后宝贵的两秒钟并加大指骨关节受压酸胀。",
-     "option": "手腕向内微旋用电池盖钛合金扁刃微翘硬角死死咬稳锁片凹槽下压微撬。"
-    },
-    {
-     "cost": "需要技师极度隐蔽配合防止引来副主席视线。",
-     "option": "维保技师在暗处用特制薄刃撬匙协助固定导轨防止电池盖滑动。"
-    }
-   ],
-   "far": {
-    "consequence": "只能任由两百名董事与长焦机群全景围观惨烈社死。",
-    "due_days": 1,
-    "trigger": "电池盖脱落或割破羊绒裙大面积走光"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_battery_cap_lever_slip_risk",
-   "immediate": {
-    "minutes": 1,
-    "text": "钛合金电池盖在光滑金属导轨上发出极轻微打滑微响，心跳几乎停滞。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_roadshow_center_circular_stage"
-   ],
-   "near": {
-    "deadline_minutes": 2,
-    "text": "若电池盖滑脱坠地，不仅无法撬开锁片更会导致身体受惯性反弹扯烂整件羊绒裙。"
-   },
-   "objective": "稳住指尖发力反手以电池盖平头硬角死死咬住锁片根部精准向上挑起。",
-   "source": "person",
-   "start_minute": 134,
-   "tags": [],
-   "title": "伺服导轨镀铬曲面翻页笔盖打滑风险",
-   "trigger": "紧张冷汗与镀铬导轨光滑圆弧表面导致钛合金电池盖斜楔在锁片卡槽边缘产生滑动。"
-  },
-  {
-   "choice": "选择忍受牵拉维持挺拔站姿，抑或动作变形导致裙摆撕开春光大泄。",
-   "exits": [
-    {
-     "cost": "撑着讲台的那条胳膊僵得发麻，西装袖口都被汗浸透。",
-     "option": "用左手自然按在大屏碳纤维外沿为身体平衡分担倾斜拉力。"
-    },
-    {
-     "cost": "双人贴身站位过紧可能略微影响主台全景展示。",
-     "option": "助理执行助理并肩侧立以自身藏青西装下摆恰到好处遮蔽合伙人侧翼。"
-    }
-   ],
-   "far": {
-    "consequence": "顶级投行高级合伙人资格当场暂停，身败名裂面临全球媒体恶俗头条。",
-    "due_days": 1,
-    "trigger": "女合伙人铅笔裙在众目睽睽下当场撕裂走光"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_pencil_skirt_split_tear_panic",
-   "immediate": {
-    "minutes": 1,
-    "text": "墨黑高定重工暗纹羊绒铅笔裙开叉极度紧绷，大腿受拉，内衬边缘岌岌可危。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_roadshow_center_circular_stage"
-   ],
-   "near": {
-    "deadline_minutes": 2,
-    "text": "缝线一旦彻底绷断整条铅笔裙将直接向后扯脱大面积暴露贴身春光。"
-   },
-   "objective": "在羊绒短裙彻底撕裂露底走光前完成脱扣并迅速拉拢裙摆恢复端庄仪态。",
-   "source": "nature",
-   "start_minute": 134,
+   "start_minute": 720,
    "tags": [
-    "disaster"
+    "coercion_theme"
    ],
-   "title": "高定墨黑羊绒铅笔裙开叉撕裂走光",
-   "trigger": "钢夹被死死扣住而身体受大屏移动牵引导致羊绒裙高开叉缝线发出紧绷脆响。"
+   "title": "副主席的私下约谈",
+   "trigger": "茶歇时副主席把合伙人叫到栏杆边，说在洗手间门口捡到一只遥控器的包装盒，上面有合伙人助理的签收单。"
   },
   {
-   "choice": "选择顶住开演重压完成硬核翻页笔自救，抑或被恐怖高压击垮彻底慌乱失措。",
+   "choice": "去找对手当面说清楚，就得给一个说法；放着不管，闲话会越传越像真的。",
    "exits": [
     {
-     "cost": "需要极强的专业心理素质瞬间切换神态展现顶级女合伙人风骨。",
-     "option": "挑断锁片瞬间以无瑕的冷艳出尘微笑展袖合上讲义迎接全场掌声。"
+     "cost": "一个谎要用十个谎去圆，对手迟早会来核实。",
+     "option": "你去找对手，说合伙人这几天在吃止痛药。"
     },
     {
-     "cost": "微调汇报节奏需要团队承担微弱程序瑕疵责任。",
-     "option": "由助理执行助理高声汇报第三项补充附表争取三秒缓冲。"
+     "cost": "两个斗了十年的人关起门来，谈出什么谁也说不准。",
+     "option": "让合伙人自己去找对手，单独聊五分钟。"
     }
    ],
    "far": {
-    "consequence": "投行品牌形象遭受毁灭性打击，当事团队遭受管委会严厉通报惩处。",
-    "due_days": 1,
-    "trigger": "五十亿上市敲钟仪式沦为恶俗女总裁走光翻车现场"
+    "consequence": "首席的位子被对手抢走，合伙人的名声蒙上一层灰。",
+    "due_days": 4,
+    "trigger": "闲话传进发行人和董事的耳朵"
    },
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
-   "id": "press_countdown_twenty_second_rush",
+   "hook_ids": [
+    "hook_rival_brings_tart",
+    "hook_rival_at_glass"
+   ],
+   "id": "press_rival_partner_suspects",
    "immediate": {
-    "minutes": 1,
-    "text": "环形台面红光提示闪烁，全景转播摄像机红点正徐徐对准讲台中央。"
+    "minutes": 15,
+    "text": "茶歇阿姐添奶茶时小声提了一句，眼睛往对手那边瞟。"
    },
    "leverage": null,
    "location_ids": [
-    "loc_roadshow_center_circular_stage"
+    "loc_tea_break_terrace",
+    "loc_data_room"
    ],
    "near": {
-    "deadline_minutes": 2,
-    "text": "若扫中合伙人受困拉扯僵硬的身影，万千投资人的期待将瞬间转化为全网舆论海啸风暴。"
+    "deadline_minutes": 120,
+    "text": "下午定价会前，对手可能把这话说给副主席听。"
    },
-   "objective": "在倒数计时的瞬间完美脱困端坐如松从容合上手册赢得全场起立鼓掌。",
-   "source": "person",
-   "start_minute": 135,
+   "objective": "在闲话传到发行人和副主席耳朵里之前，把它掐住。",
+   "source": "rumor",
+   "start_minute": 735,
    "tags": [],
-   "title": "上市敲钟仪式终场答辩倒数二十秒重压",
-   "trigger": "演播大屏上千万在线直播数字疯狂跳动，上市敲钟仪式终场陈述时钟已切入最后倒数。"
+   "title": "对手起了疑心",
+   "trigger": "对手行的合伙人在露台上跟人说，今天的合伙人“像是在忍着什么”，话已经传到第二个人嘴里。"
+  },
+  {
+   "choice": "继续用遥控器，投影随时会乱跳；收起来，赌约就算你自己认输。",
+   "exits": [
+    {
+     "cost": "调档要低头看口袋，副主席正好看着你。",
+     "option": "你把遥控器调到另一个档位，赌它不串频。"
+    },
+    {
+     "cost": "休会要董事会秘书点头，会议记录里会写上这一笔。",
+     "option": "合伙人顺势说投影有问题，提议休会十分钟。"
+    }
+   ],
+   "far": {
+    "consequence": "会议室的设备记录里会多出一条说不清的干扰源。",
+    "due_days": 2,
+    "trigger": "技术员拆开翻页器，发现了外来的信号"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_partner_heel_under_table",
+    "hook_partner_whisper_ten_minutes"
+   ],
+   "id": "press_remote_frequency_clash",
+   "immediate": {
+    "minutes": 5,
+    "text": "投影幕上的页码从十二跳到了十三，整桌人抬头看过来。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_roadshow_boardroom"
+   ],
+   "near": {
+    "deadline_minutes": 30,
+    "text": "技术员说半小时后再换一套翻页器，在那之前每一按都是冒险。"
+   },
+   "objective": "在下一次换页前，弄清楚哪个按钮会串频。",
+   "source": "accident",
+   "start_minute": 870,
+   "tags": [],
+   "title": "遥控器和翻页器串了频",
+   "trigger": "技术员刚换了会议室的无线翻页器，遥控器一按，投影幕上的估值曲线就跳一页。"
+  },
+  {
+   "choice": "通宵改稿，就得和合伙人在没窗的底稿室待一整夜；推给别人，合伙人不放心。",
+   "exits": [
+    {
+     "cost": "刷卡记录会显示两个人在底稿室待了一整夜。",
+     "option": "你留下来陪合伙人通宵，一人改模型一人改问答。"
+    },
+    {
+     "cost": "合伙人会觉得你在避嫌，也会多一个人知道今晚的事。",
+     "option": "把助理叫回来分担，你先送合伙人回套房休息。"
+    }
+   ],
+   "far": {
+    "consequence": "定价会上被当场抓住，发行价再降一档。",
+    "due_days": 1,
+    "trigger": "模型里有一个数字算错"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_partner_sofa_pat",
+    "hook_assistant_brings_files"
+   ],
+   "id": "press_overnight_model_revision",
+   "immediate": {
+    "minutes": 60,
+    "text": "合伙人把高跟鞋踢到沙发底下，打开电脑，看了你一眼。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_data_room"
+   ],
+   "near": {
+    "deadline_minutes": 840,
+    "text": "早上九点交稿，迟一分钟副主席就有理由压价。"
+   },
+   "objective": "在九点前把模型和问答稿改完，交到董事会秘书手里。",
+   "source": "institution",
+   "start_minute": 1140,
+   "tags": [],
+   "title": "一夜改完的模型",
+   "trigger": "副主席临走前丢下一句：明早九点前，要看到按下调一档重算的模型和问答稿。"
   }
  ],
- "region": "交易所上市大厅：敲钟讲台、机械臂大屏滑轨、贵宾席铺毯台阶与财经媒体席",
+ "region": "中环投行顶层：路演会议室、同传间、茶歇露台与维港酒店套房",
  "rules": [
   {
-   "id": "rule_boardroom_presentation_decorum",
-   "text": "国际投行五十亿级上市敲钟仪式仪态规范：演讲期间主讲人必须保持高定商务正装严整与绝对挺拔仪态，严禁下装破损或发出非职业慌乱。"
+   "id": "rule_closed_roadshow_no_devices",
+   "text": "闭门路演全程录音存档，与会者的手机一律交到门口的保管柜；手里能留着的，只有翻页器、笔和桌上的资料。"
   },
   {
-   "id": "rule_multi_axis_damping_arm_safety_code",
-   "text": "演播厅重型伺服机械臂滑动组件严禁蛮力死拽，防止破坏精密减速器编码器导致两吨重大屏失重倾覆砸伤人员。"
+   "id": "rule_lapel_mic_hot_by_default",
+   "text": "主讲人的领夹麦从进门起就是开着的，同传间实时收音；要关麦，得同传那边推下推子，或者主讲人当众说一句“暂停传译”。"
   },
   {
-   "id": "rule_circular_stage_modesty_strict",
-   "text": "全景无遮挡环形舞台区域要求极度严整防走光，严禁任何贴身敏感配饰外露暴露于长焦财经媒体镜头之下。"
+   "id": "rule_board_can_call_anyone_up",
+   "text": "基金董事有权随时点名任何一位顾问起身到白板前脱稿推演，点到的人不能推辞，只能说“给我两分钟”。"
   },
   {
-   "id": "rule_adult_partner_legal_code",
-   "text": "敲钟仪式核心团队均为年满二十周岁完全民事行为能力人，擅离职守或破坏敲钟仪式进程将依法承担巨额违约索赔与执业资格除名处罚。"
+   "id": "rule_wager_stops_on_codeword",
+   "text": "那场赌约是合伙人自己提的，规矩也是合伙人定的：只要说出暗号“收盘”，遥控器立刻关掉，今天的赌约就此作罢，谁也不许追问。"
   }
  ],
  "schema_version": 1,
  "stage_labels": {
-  "acquainted": "组织规约",
-  "committed": "金石同盟",
-  "familiar": "台容核检",
-  "flirting": "暗光对视",
-  "intimate": "俯仰共济",
-  "stranger": "初登讲台",
-  "testing": "执夹撬簧"
+  "acquainted": "交换名片",
+  "committed": "长期对赌",
+  "familiar": "同桌议价",
+  "flirting": "桌下试探",
+  "intimate": "套房交割",
+  "stranger": "隔桌相望",
+  "testing": "档位博弈"
  },
  "status": "released",
- "style_hint": "上市大厅的金色灯光与两百双资本的目光。写高冷女合伙人婴儿肥两颊压不住的潮红、撕开的铅笔裙下黑丝吊袜带勒着的大腿根、维持微笑时的细喘，动作落在翻页笔电池盖挑锁片上。",
+ "style_hint": "写会议桌上一丝不乱的冷艳和桌下藏不住的颤，句子短，落在呼吸、咬字、膝盖与鞋尖上，台词克制，心声直白。",
  "tension_engines": [
   {
-   "id": "eng_display_arm_garter_clip_snag",
-   "text": "高开叉羊绒铅笔裙内衬吊袜带钢夹卡入重型机械臂阻尼导轨咬合死角，稍有迈步即引发裙摆撕裂大面积走光与两吨重大屏偏载失衡之恐怖机械死锁威压。"
+   "id": "eng_remote_in_pocket",
+   "text": "遥控器在一个人口袋里，暗号在另一个人嘴边：谁先撑不住，谁就输了下一局。"
   },
   {
-   "id": "eng_chairman_twenty_second_stairs_rush",
-   "text": "董事局副主席迈步登台与演示终场二十秒倒计时无情流逝，与冷艳女合伙人反手持钛合金电池盖微翘斜楔微观杠杆下压撬开锁片自救形成的秒级生死时速对抗。"
+   "id": "eng_table_drape",
+   "text": "垂到地面的丝绒桌布，把桌面的冷艳和桌下的膝盖、鞋尖隔成两个世界。"
   },
   {
-   "id": "eng_media_long_lens_scrutiny_dread",
-   "text": "前排数十家长焦大炮密集锁焦，与受困女总裁贴身吊袜带体面濒临失守带来的极端商业名誉社死心理拉锯。"
+   "id": "eng_hot_mic",
+   "text": "领夹麦一直开着，一声轻喘就会进所有人的耳机，关麦的推子在别人手里。"
   },
   {
-   "id": "eng_pencil_skirt_split_tear_panic",
-   "text": "羊绒铅笔裙开叉缝线断裂受拉紧绷，成年顶级投行最年轻女合伙人以非凡坚韧与机械智慧捍卫尊严神格之绝境自救。"
+   "id": "eng_old_rivals",
+   "text": "斗了十年的同行和记仇三年的买家，都在等合伙人出一次错。"
   }
  ],
- "title": "高冷投行女合伙人·港交所敲钟台机械臂咬死蕾丝吊袜带",
+ "title": "高冷投行女合伙人·中环闭门路演与桌下静音遥控",
  "tone": [
-  "铅笔裙被撕开",
-  "吊袜带卡进滑轨",
-  "副主席登台二十秒",
-  "翻页笔挑断锁片"
+  "桌下的档位",
+  "冷艳的声线",
+  "丝绒垂布",
+  "暗号一说就停",
+  "维港夜色"
  ],
  "twists": [
   {
    "category": "信息",
-   "id": "tw_info_battery_cap_craft",
-   "requires": [
-    "investment_partner_shen_qing_yi"
-   ],
-   "text": "合伙人手中特制加厚航空钛合金激光翻页笔采用两毫米冷锻加厚工艺，硬度极高且电池仓盖尾部带有微翘斜楔硬角，专为微观杠杆破拆设计成自救利器。"
-  },
-  {
-   "category": "人事",
-   "id": "tw_spatial_display_arm_track_shadow",
-   "requires": [
-    "mechanic_han_tie_feng"
-   ],
-   "text": "讲台两百寸大屏碳纤维支架与立柱之间形成一处天然光影遮蔽盲区，为维保技师暗中托住导轨与合伙人下肢站立提供了物理隐蔽屏障。"
-  },
-  {
-   "category": "资源",
-   "id": "tw_chairman_exclusive_veto_ban",
-   "requires": [
-    "av_architect_lu_jing_xing"
-   ],
-   "text": "副主席企图借职务之便违规擅闯讲台核心演示区的行径被媒体与公证机构当场记录，现场取消其独家干预陈述程序的特权。"
-  },
-  {
-   "category": "制度",
-   "id": "tw_psychological_pure_partner_grit_burst",
-   "requires": [
-    "investment_partner_shen_qing_yi"
-   ],
-   "text": "看似高冷清绝孤傲的商界女合伙人在死锁与高管逼近绝境中迸发出惊人冷静意志，单手运刀微观撬断锁片展现出令人心折的极品坚韧。"
-  },
-  {
-   "category": "时限",
-   "id": "tw_director_water_curtain_buffer",
-   "requires": [
-    "av_architect_lu_jing_xing"
-   ],
-   "text": "视听总工在耳麦中果断下令大屏边框光束微调并挺身阻截副主席，为合伙人电池盖撬断导轨锁片争取到无价黄金时间窗。"
-  },
-  {
-   "category": "关系",
-   "id": "tw_social_mechanic_rail_bracket_brace",
-   "requires": [
-    "mechanic_han_tie_feng"
-   ],
-   "text": "看似少言寡语的精密机械臂维保主管借巡检为由用厚手套死死托住滑轨受力底板，以硬核职业操守构筑最稳固操作后盾。"
-  },
-  {
-   "category": "意外",
-   "id": "tw_anti_pinch_gear_spring_yield",
+   "id": "tw_info_receipt_signed_by_assistant",
    "requires": [
     "assistant_su_yu_qing"
    ],
-   "text": "机械臂导轨锁片在钛合金电池盖四牛顿垂直杠杆力矩下顺畅挑断弹开，吊袜带纯钢扁平卡爪顺势脱扣滑出化解羊绒铅笔裙撕裂危局。"
+   "text": "遥控器的快递是助理签收的，签收单上的名字和日期，正好落在赌约的第二天。"
+  },
+  {
+   "category": "人事",
+   "id": "tw_people_interpreter_kept_backup",
+   "requires": [
+    "simul_interpreter_jiang"
+   ],
+   "text": "同传私下留了一份没压过增益的原始录音，没告诉任何人，也没删。"
+  },
+  {
+   "category": "资源",
+   "id": "tw_resource_spare_remote",
+   "requires": [
+    "investment_partner_shen_qing_yi"
+   ],
+   "text": "合伙人的手袋夹层里，其实一直有第二只遥控器；赌约那天交出去的，只是其中一只。"
+  },
+  {
+   "category": "制度",
+   "id": "tw_rule_codeword_in_minutes",
+   "requires": [
+    "pressure"
+   ],
+   "text": "董事会秘书念会议纪要时，念到“本日交易收盘”，合伙人的笔尖在纸上顿了一下。"
+  },
+  {
+   "category": "时限",
+   "id": "tw_deadline_pricing_moved_up",
+   "requires": [
+    "vice_chairman_huo_zhen_ting"
+   ],
+   "text": "副主席临时把定价会提前到明天一早，今晚就是最后一个能改模型的晚上。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_relation_rival_wager_witness",
+   "requires": [
+    "rival_partner_wen_ruo_lan"
+   ],
+   "text": "对手行的合伙人也在那场晚宴上，赌约成立的那一刻，是对手第一个举杯。"
+  },
+  {
+   "category": "意外",
+   "id": "tw_accident_lift_stuck",
+   "requires": [
+    "daily"
+   ],
+   "text": "去酒店的私人电梯在半路停了三分钟，狭小的轿厢里只剩两个人和一只开着的遥控器。"
   }
  ]
 }

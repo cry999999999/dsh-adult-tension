@@ -2,7 +2,7 @@
 
 # 世界列表
 
-内容版本：`2026.10.6`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。
+内容版本：`2026.10.7`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。
 
 | 内容标签 | ID | 已发布世界数 |
 |---|---|---|
@@ -10,7 +10,7 @@
 | 亲密 | `intimate` | 199 |
 | 直白的性描写 | `explicit` | 11 |
 | 暴力 | `violence` | 94 |
-| 胁迫 | `coercion_theme` | 66 |
+| 胁迫 | `coercion_theme` | 67 |
 | 羞辱 | `humiliation` | 51 |
 | 身体伤害 | `bodily_harm` | 113 |
 | 酒精与药物 | `substance` | 53 |
@@ -46,7 +46,7 @@
 | 野性沙排女主攻·球网地锚钩死比基尼跳蛋尾线 | `beach_volleyball_anchor_vibe_trap` | 三亚海滨国际沙排公开赛进入最后三天，野性的女主攻每天在中央球场上训练、比赛，组委会的竞赛主任、国际排联的技术代表和司线员天天打照面。 | 日常、有压力 | released |
 | 文系研究生·临河古书肆挑空中庭 | `bookstore_atrium_paperweight_rescue` | 江南临河的百年旧书肆，梅雨下了整整一个月，书页都潮得发软。 | 日常、有压力 | released |
 | 月份牌 | `calendar_poster` | 一张脸可以卖三次：银幕一次，街墙一次，舞池一次；演员、画师、大班和侦探都在算这张脸到底归谁。 | 日常、有压力 | released |
-| 清冷大提琴女神·金色大厅尾针咬死钛合金贞操带 | `cellist_hall_tailpin_lock_jam` | 维也纳金色大厅的大提琴协奏曲首演前一周，清冷的大提琴女神每天在侧台调音廊里练到闭馆，乐团的人进进出出，都想多看一眼。 | 日常、有压力 | released |
+| 清冷大提琴女神·独奏夜的锁匙与贴身禁锢 | `cellist_hall_tailpin_lock_jam` | 维也纳金色大厅的大提琴协奏曲首演前一周，清冷的大提琴女神每天排练到闭馆。 | 日常、有压力 | released |
 | 千亿财阀女掌舵人·泄洪暗渠防弹座驾淹没 | `chaebol_chairwoman_submerged_maybach` | 父亲猝逝后，长女接下了千亿财阀，董事会里叔叔一派虎视眈眈，只等新任董事长出一次错。 | 日常、有压力 | released |
 | 财阀金库：千金与断电之夜 | `chaebol_heiress_vault_hostage` | 跨国控股权转让签署前一周，财阀第一继承人千金搬进江南区双子塔顶层办公，随行的青年法务秘书天天陪着核对条款到深夜。 | 日常、有压力 | released |
 | 长安暴雨洗冤局：提刑女官与戴罪推官 | `chang_an_rainy_dali_temple_inquest` | 唐末的长安，执掌三司重权的宰相嫡长子在平康坊离奇暴毙，案子落到大理寺。 | 日常、有压力 | released |
@@ -59,7 +59,7 @@
 | 冷战暗堡·电波监听·防空暗堡机要发报主机大厅防爆隔离水压门自锁 | `cold_war_bunker_cipher_incineration` | 冷战年代，华北要塞地下三十米的国防通信暗堡，首席女报务员在机要舱室里值了三年班；保密检查员、勘测技术员和炊事班长是这个月才调下来的。 | 日常、有压力 | released |
 | 清冷战地女军医·野战地堡坍塌药械箱卡阻 | `combat_surgeon_bunker_cavein_vigil` | 虚构前线后方的野战医院里，清冷寡言的女军医白天在帐篷里查房、分药、替伤员读家书，一年里只在停火的间隙喝一杯苦咖啡。 | 日常、有压力 | released |
 | 末代法租界的暗房与沙龙 | `concession_darkroom` | 1940 年的法租界，霞飞路深处一座老洋房，楼上是名流、遗老、走私商与各方线人交错的画廊沙龙，楼下是弥漫定影液酸涩气息的狭窄暗房。 | 日常、有压力 | released |
-| 纯欲夜班店员·冷柜合页咬死猫尾肛塞 | `convenience_clerk_cooler_tail_jam` | 大学城商圈的通宵便利店，全落地窗亮得像玻璃盒子，门外夜跑和宵夜的年轻人来来往往。 | 日常、有压力 | released |
+| 纯欲夜班店员·通宵便利店的百褶裙下秘密 | `convenience_clerk_cooler_tail_jam` | 杭州城西科技园的通宵便利店，落地窗亮得像玻璃盒子，加班的程序员和夜跑的人来来往往。 | 日常、有压力 | released |
 | 王牌缉私女警官·风暴货轮舷外倾斜集装箱 | `cool_detective_shipping_container_rope` | 海关缉私船在远海追一艘走私货轮已经三天，王牌女警官和随船机械工程师轮流值夜，吃住都挤在狭窄的舱室里，白天盯雷达、查舱单，夜里在甲板上复盘。 | 日常、有压力 | released |
 | 清冷精灵游侠·世界树根系空洞荆棘闭锁 | `cool_elven_ranger_tree_hollow_cage_lock` | 世界树下的精灵林城，第一次允许人类学者研究树的根系。 | 日常、有压力 | released |
 | 手办涂装师·专业级大型工业负压喷漆房 | `cool_figure_painter_airbrush_trap` | 文创园区的大型负压喷漆房里，独立手办涂装师在赶一尊限量重工GK的展前涂装，连着熬了五个通宵。 | 日常、有压力 | released |
@@ -155,7 +155,7 @@
 | 轨道电梯·对流层锚定断缆 | `orbital_elevator_cable_failure` | 三万米高空的轨道电梯锚定站，空天防卫军的冰山女上尉带着一个班驻守，白天巡检配重环和主缆，夜里在外露机库旁的舱室里轮流值班。 | 日常、有压力 | released |
 | 边境铁骑女统领·河港水门吊桥主绞盘室 | `paladin_commander_flooded_dungeon_armor` | 边境大河上的河港城，水门、吊桥和税关都归驻防的铁骑女统领管。 | 日常、有压力 | released |
 | 百乐门香闺：76号女处长与军统潜伏者 | `paramount_shanghai_secret_agent` | 1941 年深秋，上海成了孤岛，静安寺路上的百乐门照旧夜夜笙歌。 | 日常、有压力 | released |
-| 高冷投行女合伙人·港交所敲钟台机械臂咬死蕾丝吊袜带 | `partner_boardroom_arm_lace_jam` | 香港中环交易所，一家独角兽公司的上市敲钟下周举行，作为保荐人的高冷女合伙人天天在上市大厅里彩排致辞，机械臂架构师、执行助理和维保技师陪着走位。 | 日常、有压力 | released |
+| 高冷投行女合伙人·中环闭门路演与桌下静音遥控 | `partner_boardroom_arm_lace_jam` | 香港中环，一家独角兽上市前的闭门路演进入最后一周。 | 日常、有压力 | released |
 | 冷艳甜品女主厨·烤箱门轴咬死蕾丝束身衣 | `pastry_chef_oven_hinge_corset_jam` | 外滩的米其林三星法餐厅，冷艳的女主厨管着开放式甜品台，双排扣厨师服里面穿着一件蕾丝束身衣，每晚的现烤舒芙蕾是招牌。 | 日常、有压力 | released |
 | 强磁实验室：冰山女物理学家 | `physics_professor_magnetic_containment` | 国家深地科学研究中心的负七层，超导磁约束实验室一年到头不停机。 | 日常、有压力 | released |
 | 典雅评弹名伶·古戏楼百年老戏台 | `pingtan_diva_stage_wrench_rescue` | 江南老街上的百年书场，晚上七点开书，听客们泡一壶茶、抓一把瓜子，等女先生把昨天卖下的关子接着唱下去。 | 日常、有压力 | released |

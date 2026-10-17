@@ -256,12 +256,12 @@ class FullContextBudgetTest(unittest.TestCase):
             away = sorted(cid for cid in state["characters"] if cid not in state["scene"]["present"])
             # Like the game the fuzzer found: a dozen touching people on stage,
             # the rest held between people elsewhere (two over each pair).
-            pairs = ([(a, b) for a in here for b in away][:12] + [(a, b) for a in away for b in away if a != b] * 2)[:48]
+            pairs = ([(a, b) for a in here for b in away][:12] + [(a, b) for a in away for b in away if a != b] * 2)[:60]
             for start in range(0, len(pairs), 12):
                 ops = [{"op": "leverage_set", "holder": a, "subject": b, "basis_text": "%s欠着一笔说不得的账" % fill(6, start + i), "origin": "账本"} for i, (a, b) in enumerate(pairs[start : start + 12])]
                 game.commit(ops + [{"op": "npc_action", "npc_id": here[0], "action": "翻了一页账本"}])
             info = game.state()
-            self.assertGreaterEqual(len(SS.active_leverage(info["state"])), 48)
+            self.assertGreaterEqual(len(SS.active_leverage(info["state"])), 60)
             full = self.check(info, "leverage")
             self.assertGreater(full["leverage_omitted"]["count"], 0)
             brief = CX.brief(info["state"], info["content"])

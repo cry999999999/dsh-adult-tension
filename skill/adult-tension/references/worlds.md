@@ -2,7 +2,7 @@
 
 # 世界列表
 
-内容版本：`2026.10.7`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。
+内容版本：`2026.10.8`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。
 
 | 内容标签 | ID | 已发布世界数 |
 |---|---|---|
@@ -59,7 +59,7 @@
 | 冷战暗堡·电波监听·防空暗堡机要发报主机大厅防爆隔离水压门自锁 | `cold_war_bunker_cipher_incineration` | 冷战年代，华北要塞地下三十米的国防通信暗堡，首席女报务员在机要舱室里值了三年班；保密检查员、勘测技术员和炊事班长是这个月才调下来的。 | 日常、有压力 | released |
 | 清冷战地女军医·野战地堡坍塌药械箱卡阻 | `combat_surgeon_bunker_cavein_vigil` | 虚构前线后方的野战医院里，清冷寡言的女军医白天在帐篷里查房、分药、替伤员读家书，一年里只在停火的间隙喝一杯苦咖啡。 | 日常、有压力 | released |
 | 末代法租界的暗房与沙龙 | `concession_darkroom` | 1940 年的法租界，霞飞路深处一座老洋房，楼上是名流、遗老、走私商与各方线人交错的画廊沙龙，楼下是弥漫定影液酸涩气息的狭窄暗房。 | 日常、有压力 | released |
-| 纯欲夜班店员·通宵便利店的百褶裙下秘密 | `convenience_clerk_cooler_tail_jam` | 杭州城西科技园的通宵便利店，落地窗亮得像玻璃盒子，加班的程序员和夜跑的人来来往往。 | 日常、有压力 | released |
+| 纯欲夜班店员·通宵便利店的百褶裙下秘密 | `convenience_clerk_cooler_tail_jam` | 杭州大学城商圈的通宵便利店，落地窗亮得像玻璃盒子，夜跑和吃宵夜的年轻人来来往往。 | 日常、有压力 | released |
 | 王牌缉私女警官·风暴货轮舷外倾斜集装箱 | `cool_detective_shipping_container_rope` | 海关缉私船在远海追一艘走私货轮已经三天，王牌女警官和随船机械工程师轮流值夜，吃住都挤在狭窄的舱室里，白天盯雷达、查舱单，夜里在甲板上复盘。 | 日常、有压力 | released |
 | 清冷精灵游侠·世界树根系空洞荆棘闭锁 | `cool_elven_ranger_tree_hollow_cage_lock` | 世界树下的精灵林城，第一次允许人类学者研究树的根系。 | 日常、有压力 | released |
 | 手办涂装师·专业级大型工业负压喷漆房 | `cool_figure_painter_airbrush_trap` | 文创园区的大型负压喷漆房里，独立手办涂装师在赶一尊限量重工GK的展前涂装，连着熬了五个通宵。 | 日常、有压力 | released |

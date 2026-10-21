@@ -99,71 +99,130 @@
  ],
  "cast_combos": [
   {
-   "chemistry": "你手持法典与利息公证书据理力争，{troubled_neighbor_wife_yui.name}素衣微颤依门护住底线，{ruthless_debt_collector_goda.name}挥舞钢管堵在门口，法理契约与暴力逼债在逼仄木板墙前激烈碰撞。",
-   "id": "combo_neighbor_wall_guardian",
+   "chemistry": "一墙之隔住了半年，连呼吸声都瞒不过彼此；今夜阳台木窗半开，{troubled_neighbor_wife_yui.name}湿透的发梢还在滴水，把全副身家交到了你手里。",
+   "id": "combo_yui_wall_signal",
    "identity_ids": [
+    "struggling_salaryman_neighbor",
     "law_student_part_timer"
    ],
    "player_positions": [
     "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 4
+     },
+     "b": "troubled_neighbor_wife_yui",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "上月台风停电夜两人在窄阳台分食一碗热汤面，{troubled_neighbor_wife_yui.name}把刻着旧姓的木梳塞进你掌心，说万一出事就靠你作证",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "troubled_neighbor_wife_yui"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "天亮前核清伪造印鉴的证据，替{troubled_neighbor_wife_yui.ta}保住栖身之所与名声。",
+    "limit_gap": "木板墙外就是房东与催收人的脚步声，稍有响动便会暴露。",
+    "meeting_reason": "雨夜走廊传来催债脚步声，{troubled_neighbor_wife_yui.name}按约好的暗号轻叩三下木板墙，从连通阳台把装着假印鉴借据的铁盒递进你窗内。",
+    "resource_gap": "你有独居的 203 室和核验印鉴的本事，{troubled_neighbor_wife_yui.name}有丈夫伪造私章的底稿和三万日元应急款。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_thin_wall_vs_prying_eyes",
+    "te_decorum_boundary_vs_urgent_shelter"
+   ]
+  },
+  {
+   "chemistry": "{troubled_neighbor_wife_yui.name}平日待你客气周到，此刻却红着眼眶拉住你的雨衣下摆，求你别把催告信投进房东看得见的公共信箱。",
+   "id": "combo_yui_postman_letter",
+   "identity_ids": [
+    "district_postman_courier",
+    "foster_nephew_repairman"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "troubled_neighbor_wife_yui",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "梅雨季你替 202 修补漏雨窗框，{troubled_neighbor_wife_yui.name}用温毛巾替你擦干颈后的雨水，约好每晚留一盏阳台灯等你下班",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "troubled_neighbor_wife_yui"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "替{troubled_neighbor_wife_yui.ta}截下致命的催告回执，稳住 202 不被强制退租。",
+    "limit_gap": "挂号信不投是失职，投了就是把人往外推；房东随时会拿备用钥匙上楼查信。",
+    "meeting_reason": "你带着被退回的法院催告挂号信和修窗胶条敲开 202 后窗，{troubled_neighbor_wife_yui.name}正跪坐在烛光下核对丈夫失踪前留下的假账。",
+    "resource_gap": "{troubled_neighbor_wife_yui.name}握着 202 的承租契约和私房积蓄，你只有全町信箱钥匙和一卷修窗胶条。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_decorum_boundary_vs_urgent_shelter",
+    "te_storm_containment_vs_poverty_trap"
+   ]
+  },
+  {
+   "chemistry": "显影盘的红光映着狭窄的单人房，{troubled_neighbor_wife_yui.name}屏住呼吸贴在你肩后看底片显像，平日端庄的防线在暗室里一点点卸下。",
+   "id": "combo_yui_camera_witness",
+   "identity_ids": [
+    "freelance_photographer_scout"
+   ],
+   "player_positions": [
+    "high"
    ],
    "power_structure": "player_high",
    "relations": [
     {
      "a": "player",
      "a_to_b": {
-      "tension": 3,
+      "tension": 4,
       "trust": 4
      },
      "b": "troubled_neighbor_wife_yui",
      "b_to_a": {
-      "tension": 3,
+      "tension": 4,
       "trust": 4
      },
-     "reason": "同为下町挣扎的年轻租客，在朝夕隔墙相伴中滋生出深层怜惜护持之情。",
-     "stage": "flirting"
-    },
-    {
-     "a": "ruthless_debt_collector_goda",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "player",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "视作多管闲事不知死活的穷书生，恨不得立刻动用钢管开瓢。",
-     "stage": "stranger"
-    },
-    {
-     "a": "troubled_neighbor_wife_yui",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "ruthless_debt_collector_goda",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "砸门逼债的人与守门不开的人，没有任何商量余地。",
-     "stage": "stranger"
+     "reason": "上周债主第一次夜里泼漆，你把{troubled_neighbor_wife_yui.name}拉进 203 躲避，两人在黑灯的榻榻米上共用一条羊毛毯熬过整夜",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "troubled_neighbor_wife_yui",
-    "ruthless_debt_collector_goda"
+    "troubled_neighbor_wife_yui"
    ],
    "stakes": {
-    "irreplaceable_goal": "在恶徒砸烂门锁前出具法律声明，迫使其暂停暴力退出走廊。",
-    "limit_gap": "人妻坚守名分不敢越雷池，法学研究生必须近身取证确立庇护战线。",
-    "meeting_reason": "法学研究生听到隔壁敲门声异常，出门当场介入非法催收。",
-    "resource_gap": "法学研究生拥有全套抗辩法条与录音，恶徒拥有钢管与打手。"
+    "irreplaceable_goal": "洗出伪造印鉴的清晰底片，推翻那份非法连带担保。",
+    "limit_gap": "走廊外的催收随从正在找偷拍的人，快门一响就可能被听见。",
+    "meeting_reason": "你用微距镜头替{troubled_neighbor_wife_yui.name}翻拍借据上的伪造印泥，把{troubled_neighbor_wife_yui.ta}请进拉上黑布的 203 暗房显影。",
+    "resource_gap": "你有周刊的曝光渠道和微距镜头，{troubled_neighbor_wife_yui.name}有丈夫私刻假章的原件和人证线索。"
    },
    "tags": [
-    "workplace_power",
+    "intimate",
     "crime"
    ],
    "tension_engine_ids": [
@@ -172,83 +231,55 @@
    ]
   },
   {
-   "chemistry": "{parsimonious_landlady_matsuko.name}持备用钥匙在门前尖声催讨租金，{troubled_neighbor_wife_yui.name}受困内室走投无路，你在阳台推开防风板伸手将人接入自己房内，收租与私护在雨夜两室之间反转。",
-   "id": "combo_balcony_escape_pact",
+   "chemistry": "嘴上句句不离滞纳金和退租条款，可你一点破汇款单的邮戳日期，{parsimonious_landlady_matsuko.name}就反手锁上房门，压低嗓音问你要怎样才肯闭嘴。",
+   "id": "combo_matsuko_rent_ledger",
    "identity_ids": [
-    "struggling_salaryman_neighbor"
+    "struggling_salaryman_neighbor",
+    "law_student_part_timer"
    ],
    "player_positions": [
-    "equal",
-    "high"
+    "equal"
    ],
-   "power_structure": "switchable",
+   "power_structure": "equal",
    "relations": [
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 5
-     },
-     "b": "troubled_neighbor_wife_yui",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 5
-     },
-     "reason": "相隔薄墙数月的默契相守，在今夜跨越栏杆的救援中彻底心意相通。",
-     "stage": "intimate"
-    },
-    {
-     "a": "parsimonious_landlady_matsuko",
-     "a_to_b": {
       "tension": 4,
-      "trust": 2
-     },
-     "b": "player",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 2
-     },
-     "reason": "对其准时交租还算满意，但严密提防其在房间窝藏外人违约。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "troubled_neighbor_wife_yui",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 2
+      "trust": 3
      },
      "b": "parsimonious_landlady_matsuko",
      "b_to_a": {
-      "tension": 3,
-      "trust": 2
+      "tension": 4,
+      "trust": 4
      },
-     "reason": "房东嫌租客惹麻烦，租客怕房东一句话就把门封了。",
-     "stage": "acquainted"
+     "reason": "上月底核对水电公摊时你替房东挡下税务稽查的盘问，对方在管理员室留你喝完了半瓶梅子酒",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "troubled_neighbor_wife_yui",
     "parsimonious_landlady_matsuko"
    ],
    "stakes": {
-    "irreplaceable_goal": "在房东破门查房的一分钟内藏好人并制造空房假象。",
-    "limit_gap": "男女同处一室一旦被房东撞破将身败名裂，藏匿必须绝对静默。",
-    "meeting_reason": "借阳台擦玻璃之机将受困人妻拉入隔壁房间紧急避难。",
-    "resource_gap": "房东掌管全楼门户钥匙，工薪青年仅有单身居所与一把扳手。"
+    "irreplaceable_goal": "逼房东吐出私扣的汇款单，并站到租客这边顶住催收。",
+    "limit_gap": "门外的催收人正逼房东交出二楼备用钥匙，房东倒向哪边就在今夜。",
+    "meeting_reason": "{parsimonious_landlady_matsuko.name}摇着黄铜钥匙串借口查漏水闯进你屋里，其实是怕你把私扣十万日元汇款单的事捅给警察。",
+    "resource_gap": "你握着对方私收拆迁茶水费、扣留汇款单的把柄，{parsimonious_landlady_matsuko.name}掌着全楼钥匙和退租的生杀大权。"
    },
    "tags": [
     "intimate",
     "workplace_power"
    ],
    "tension_engine_ids": [
-    "te_decorum_boundary_vs_urgent_shelter",
-    "te_thin_wall_vs_prying_eyes"
+    "te_thin_wall_vs_prying_eyes",
+    "te_storm_containment_vs_poverty_trap"
    ]
   },
   {
-   "chemistry": "{ruthless_debt_collector_goda.name}提着钢管威胁砸毁楼层配电箱，{parsimonious_landlady_matsuko.name}撒泼护住总闸钥匙，你手持管钳在管道夹层死守阀门，暴徒凶焰对撞市井财奴的利益撕扯。",
-   "id": "combo_debt_collector_lockout",
+   "chemistry": "一贯使唤你的{parsimonious_landlady_matsuko.name}，在雷鸣的一瞬拽住你的工装袖子，既怕催收砸烂老楼，又舍不得松开账册。",
+   "id": "combo_matsuko_pipe_bargain",
    "identity_ids": [
+    "district_postman_courier",
     "foster_nephew_repairman"
    ],
    "player_positions": [
@@ -260,58 +291,28 @@
      "a": "player",
      "a_to_b": {
       "tension": 3,
-      "trust": 3
+      "trust": 2
      },
      "b": "parsimonious_landlady_matsuko",
      "b_to_a": {
       "tension": 3,
       "trust": 3
      },
-     "reason": "亲戚兼雇佣，虽嫌其刻薄吝啬但关键时刻不得不保其周全。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "ruthless_debt_collector_goda",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "player",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "视作随时可以一棍子撂倒的苦力。",
-     "stage": "stranger"
-    },
-    {
-     "a": "parsimonious_landlady_matsuko",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "ruthless_debt_collector_goda",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "毁坏自己房产的仇敌，又恨又怕。",
-     "stage": "stranger"
+     "reason": "你替管理员室修暗格时见过房东藏起的拆迁补偿草签合同，两人从此心照不宣地互相试探底线",
+     "stage": "testing"
     }
    ],
    "slots": [
-    "ruthless_debt_collector_goda",
     "parsimonious_landlady_matsuko"
    ],
    "stakes": {
-    "irreplaceable_goal": "在恶徒砸碎配电箱前切断楼梯照明，制造黑暗掩护撤离。",
-    "limit_gap": "恶徒要断电破门逼债，房东死保公寓资产不被损坏贬值。",
-    "meeting_reason": "二楼走廊总电闸前发生的强行断电纠纷。",
-    "resource_gap": "恶徒手握凶器人多势众，房东与水电工仅有闸刀和扳手。"
+    "irreplaceable_goal": "借检修电路稳住二楼门户，反手拿住房东的违规合同。",
+    "limit_gap": "顺从换锁会害惨 202，当面翻脸就会被立刻赶出公寓。",
+    "meeting_reason": "暴雨倒灌进二楼走廊，{parsimonious_landlady_matsuko.name}把你叫到配电箱旁，拿扣工钱和押金逼你去把 202 的门锁换掉。",
+    "resource_gap": "{parsimonious_landlady_matsuko.name}捏着你的押金和劳务结算单，你手里只有投递底单和水电总阀钥匙。"
    },
    "tags": [
-    "workplace_power",
-    "crime"
+    "workplace_power"
    ],
    "tension_engine_ids": [
     "te_storm_containment_vs_poverty_trap",
@@ -319,161 +320,230 @@
    ]
   },
   {
-   "chemistry": "{local_koban_officer_kenji.name}冒雨踏上二楼外廊拔出警棍挡在门前，{troubled_neighbor_wife_yui.name}开门见警泪水盈眶，你在暗处举起相机频频按动快门记录罪证，执法与闪光在雷雨中撕开黑暗。",
-   "id": "combo_koban_officer_intervention",
+   "chemistry": "雨水顺着{part_time_convenience_clerk_sakura.name}的发梢往下滴，{part_time_convenience_clerk_sakura.ta}把冻僵的手塞进你手心取暖，仰着脸等你拿主意怎么把 202 的同乡姐姐护出去。",
+   "id": "combo_sakura_balcony_coffee",
    "identity_ids": [
     "freelance_photographer_scout"
    ],
    "player_positions": [
-    "high",
-    "equal"
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "part_time_convenience_clerk_sakura",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "你常在凌晨去便利店买胶卷，顺路送店员回公寓，对方每次都把最热的一罐红豆汤留给你",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "part_time_convenience_clerk_sakura"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "把悔过信安全转存，并打通后巷的撤离路线。",
+    "limit_gap": "书包里的悔过信一被搜出，两个人都脱不了身。",
+    "meeting_reason": "{part_time_convenience_clerk_sakura.name}下夜班后不敢走被堵住的正门楼梯，顺后巷铁梯翻进你的阳台，怀里揣着热咖啡和一封求援信。",
+    "resource_gap": "你有记者证、相机和警署热线，{part_time_convenience_clerk_sakura.name}熟悉全町暗巷和巡警换岗的时间。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_thin_wall_vs_prying_eyes",
+    "te_loan_shark_siege_vs_dawn_deadline"
+   ]
+  },
+  {
+   "chemistry": "{local_koban_officer_kenji.name}把湿透的警帽压低，借核对报案人身份把你拉进门内半步，低声问你手里有没有能当场扣人的实锤。",
+   "id": "combo_kenji_raincoat_watch",
+   "identity_ids": [
+    "struggling_salaryman_neighbor",
+    "law_student_part_timer",
+    "freelance_photographer_scout"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
    ],
    "power_structure": "switchable",
    "relations": [
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 4
+      "tension": 4,
+      "trust": 5
      },
      "b": "local_koban_officer_kenji",
      "b_to_a": {
-      "tension": 2,
+      "tension": 4,
       "trust": 4
      },
-     "reason": "辖区内警民协作老搭档，共同追查地下钱庄暴力网络。",
-     "stage": "familiar"
-    },
-    {
-     "a": "local_koban_officer_kenji",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 5
-     },
-     "b": "troubled_neighbor_wife_yui",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 5
-     },
-     "reason": "受过其亡父恩惠，发誓在风雨中做其最坚实的执法之盾。",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 4
-     },
-     "b": "troubled_neighbor_wife_yui",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 4
-     },
-     "reason": "同情其遭遇，誓用手中镜头为受害者讨回公道。",
-     "stage": "acquainted"
+     "reason": "半年前下町纵火案中你冒死替巡查长保住现场底片与证人，两人此后把后背彻底交给对方",
+     "stage": "committed"
     }
    ],
    "slots": [
-    "troubled_neighbor_wife_yui",
     "local_koban_officer_kenji"
    ],
    "stakes": {
-    "irreplaceable_goal": "拍下恶徒持械违法的铁证，瓦解其合法讨债的伪装。",
-    "limit_gap": "巡警必须按程序查证，人妻害怕事情闹大名誉尽毁，求速决。",
-    "meeting_reason": "二楼外廊民警当场制止暴力侵入。",
-    "resource_gap": "巡警持有警械与公职威权，记者掌握定格罪证的镜头，人妻背负债务。"
+    "irreplaceable_goal": "拼齐诈骗证据链，让巡查长名正言顺地扣人。",
+    "limit_gap": "找不出伪造借据的铁证，巡查长就只能撤警，留你们独自面对报复。",
+    "meeting_reason": "你拨通交番内线后，{local_koban_officer_kenji.name}冒雨独自赶到二楼走廊，却被催收组长亮出的伪造公证书挡住了执法权限。",
+    "resource_gap": "你手里有邻里搜集的假章证据，{local_koban_officer_kenji.name}有合法盘查扣押权和警用对讲机。"
    },
    "tags": [
-    "workplace_power",
-    "crime"
+    "crime",
+    "workplace_power"
    ],
    "tension_engine_ids": [
-    "te_loan_shark_siege_vs_dawn_deadline",
-    "te_decorum_boundary_vs_urgent_shelter"
+    "te_decorum_boundary_vs_urgent_shelter",
+    "te_loan_shark_siege_vs_dawn_deadline"
    ]
   },
   {
-   "chemistry": "{part_time_convenience_clerk_sakura.name}冒雨翻上阳台递过滚烫的打折便当，{troubled_neighbor_wife_yui.name}眼含热泪分食饭团取暖，你送来失踪丈夫的潜逃地址密信，三人在漏雨屋檐下结成自救同盟。",
-   "id": "combo_sister_bento_solidarity",
+   "chemistry": "{runaway_husband_cousin_tetsuo.name}浑身湿透喘着粗气，自己也被高利贷逼得走投无路，却抓着你的手腕赌咒绝不让堂兄的烂账连累嫂子。",
+   "id": "combo_tetsuo_back_alley_pledge",
    "identity_ids": [
-    "district_postman_courier"
+    "district_postman_courier",
+    "foster_nephew_repairman",
+    "struggling_salaryman_neighbor"
    ],
    "player_positions": [
+    "low",
     "equal",
-    "low"
+    "high"
    ],
-   "power_structure": "equal",
+   "power_structure": "switchable",
    "relations": [
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
+      "tension": 4,
       "trust": 4
      },
-     "b": "troubled_neighbor_wife_yui",
+     "b": "runaway_husband_cousin_tetsuo",
      "b_to_a": {
-      "tension": 2,
+      "tension": 4,
       "trust": 4
      },
-     "reason": "同为下町漂泊人，愿冒被开除的风险私下传递救命信件。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "part_time_convenience_clerk_sakura",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 5
-     },
-     "b": "troubled_neighbor_wife_yui",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 5
-     },
-     "reason": "同乡姐妹情深，受过其大恩，视若亲姐姐般甘愿舍命相救。",
+     "reason": "去年寒冬修车厂起火，你把堂弟背出火场，在 203 照料了三天，对方把备用车钥匙留在你抽屉里",
      "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "runaway_husband_cousin_tetsuo"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "护住离婚协议和存折原件，斩断 202 的连带债务。",
+    "limit_gap": "牛皮纸袋一落进催收人手里，存折和撤诉证据全部泡汤。",
+    "meeting_reason": "{runaway_husband_cousin_tetsuo.name}甩掉巷口盯梢从阳台翻进 203，把沾着机油的牛皮纸袋按在你桌上，求你把离婚协议和存折转交 202。",
+    "resource_gap": "你熟悉公寓的内部通道和 202 的暗号，{runaway_husband_cousin_tetsuo.name}握着跑路丈夫签字的离婚书和修车厂存折。"
+   },
+   "tags": [
+    "intimate",
+    "crime"
+   ],
+   "tension_engine_ids": [
+    "te_loan_shark_siege_vs_dawn_deadline",
+    "te_storm_containment_vs_poverty_trap"
+   ]
+  },
+  {
+   "chemistry": "{troubled_neighbor_wife_yui.name}攥着借据坐在你身侧，{parsimonious_landlady_matsuko.name}按着腰间的钥匙串眼神闪烁；你每翻一页邮局投递记录，房东额头的冷汗就多一分。",
+   "id": "combo_room202_ledger_trap",
+   "identity_ids": [
+    "struggling_salaryman_neighbor",
+    "law_student_part_timer",
+    "freelance_photographer_scout"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "troubled_neighbor_wife_yui",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "前几天你替{troubled_neighbor_wife_yui.name}代收过一封催缴函，今夜对方第一次把盖着假章的借据交给你查验",
+     "stage": "testing"
     },
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
+      "tension": 2,
       "trust": 4
      },
-     "b": "part_time_convenience_clerk_sakura",
+     "b": "parsimonious_landlady_matsuko",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "你每月初替整层租客核算水电分摊，清楚房东账本里每一笔见不得光的拆迁回扣",
+     "stage": "familiar"
+    },
+    {
+     "a": "troubled_neighbor_wife_yui",
+     "a_to_b": {
+      "tension": 1,
+      "trust": 2
+     },
+     "b": "parsimonious_landlady_matsuko",
      "b_to_a": {
       "tension": 1,
-      "trust": 4
+      "trust": 2
      },
-     "reason": "同条街区早晚相逢的年轻打工人，有心照不宣的热血默契。",
-     "stage": "familiar"
+     "reason": "主妇查出房东扣下了丈夫寄回的十万日元汇款单，房东却还想逼主妇交双倍违约金",
+     "stage": "testing"
     }
    ],
    "slots": [
     "troubled_neighbor_wife_yui",
-    "part_time_convenience_clerk_sakura"
+    "parsimonious_landlady_matsuko"
    ],
    "stakes": {
-    "irreplaceable_goal": "在下半夜恶徒搜楼前定好翻越后巷铁梯的逃生方案。",
-    "limit_gap": "恶徒在楼下守株待兔，众人必须在两尺阳台上完成信件交接。",
-    "meeting_reason": "阳台铁栏旁借喂猫掩护传递逃生路线图与补给。",
-    "resource_gap": "店员有临期食物与电话卡，邮差有外围钥匙，人妻唯有一颗坚贞之心。"
+    "irreplaceable_goal": "逼房东交出汇款单，并反锁走廊铁门。",
+    "limit_gap": "房东狗急跳墙把备用钥匙交给门外的催收人，202 当场失守。",
+    "meeting_reason": "{troubled_neighbor_wife_yui.name}提前在阳台向你求援，你设局把{parsimonious_landlady_matsuko.name}请进 202，当面核对本月租金和那张失踪的十万日元汇款单。",
+    "resource_gap": "你握有邮局签收记录和法律条款，{troubled_neighbor_wife_yui.name}有承租原件，{parsimonious_landlady_matsuko.name}攥着私扣的汇款单和全楼钥匙。"
    },
    "tags": [
     "intimate",
     "workplace_power"
    ],
    "tension_engine_ids": [
-    "te_decorum_boundary_vs_urgent_shelter",
-    "te_storm_containment_vs_poverty_trap"
+    "te_thin_wall_vs_prying_eyes",
+    "te_decorum_boundary_vs_urgent_shelter"
    ]
   },
   {
-   "chemistry": "{runaway_husband_cousin_tetsuo.name}手持扳手在楼梯拐角拼死堵住{ruthless_debt_collector_goda.name}的去路，抛出堂兄罪证大喊快走，你在身后护着人妻飞奔下梯，同族反目与赎罪在雨夜后巷引爆。",
-   "id": "combo_cousin_confession_duel",
+   "chemistry": "{ruthless_debt_collector_goda.name}抖开盖着红印的五百万借条步步紧逼，{runaway_husband_cousin_tetsuo.name}死死护住身后的 202 门扉，两人都盯着你手里那份能推翻连带担保的实据。",
+   "id": "combo_hallway_foreclosure_standoff",
    "identity_ids": [
-    "struggling_salaryman_neighbor"
+    "district_postman_courier",
+    "foster_nephew_repairman"
    ],
    "player_positions": [
-    "equal"
+    "low"
    ],
    "power_structure": "npc_high",
    "relations": [
@@ -481,58 +551,58 @@
      "a": "player",
      "a_to_b": {
       "tension": 3,
-      "trust": 3
+      "trust": 2
      },
-     "b": "runaway_husband_cousin_tetsuo",
+     "b": "ruthless_debt_collector_goda",
      "b_to_a": {
       "tension": 3,
       "trust": 3
      },
-     "reason": "虽对其堂兄深恶痛绝，但此刻敬重其敢作敢当断后赎罪的血性。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "runaway_husband_cousin_tetsuo",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "ruthless_debt_collector_goda",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "搏命死敌，绝不让其再伤害嫂子半根毫毛。",
-     "stage": "stranger"
+     "reason": "前几晚催收组长在巷口堵人，你出面记下对方的车牌和放贷工号，对方一直想摸清你的底细",
+     "stage": "testing"
     },
     {
      "a": "player",
      "a_to_b": {
-      "tension": 5,
-      "trust": 0
+      "tension": 4,
+      "trust": 3
      },
-     "b": "ruthless_debt_collector_goda",
+     "b": "runaway_husband_cousin_tetsuo",
      "b_to_a": {
-      "tension": 5,
-      "trust": 0
+      "tension": 4,
+      "trust": 4
      },
-     "reason": "打破平静生活、欺压善良邻里的恶霸。",
-     "stage": "stranger"
+     "reason": "你每次去后巷车棚，堂弟都留一罐冰麦茶给你，手把手教你听发动机的异响",
+     "stage": "flirting"
+    },
+    {
+     "a": "ruthless_debt_collector_goda",
+     "a_to_b": {
+      "tension": 1,
+      "trust": 2
+     },
+     "b": "runaway_husband_cousin_tetsuo",
+     "b_to_a": {
+      "tension": 1,
+      "trust": 2
+     },
+     "reason": "催收组长握着堂弟替跑路堂兄担保修车厂设备的旧字据，逼其交出账本",
+     "stage": "testing"
     }
    ],
    "slots": [
-    "runaway_husband_cousin_tetsuo",
-    "ruthless_debt_collector_goda"
+    "ruthless_debt_collector_goda",
+    "runaway_husband_cousin_tetsuo"
    ],
    "stakes": {
-    "irreplaceable_goal": "死死拖住催收组长两分钟，掩护人妻脱离公寓小巷。",
-    "limit_gap": "楼梯口仅容一人错身，狭路相逢唯有硬拼。",
-    "meeting_reason": "后楼梯处阻击恶徒追捕的断后战。",
-    "resource_gap": "恶徒手握凶器人多势众，机修工仅有一柄扳手与一腔赎罪血性。"
+    "irreplaceable_goal": "当众拆穿假印鉴，撑到巡警介入。",
+    "limit_gap": "催收团伙一闯过走廊中段，202 和 203 都会被洗劫。",
+    "meeting_reason": "{runaway_husband_cousin_tetsuo.name}先一步从阳台把离婚协议托付给你，随后与你并肩站在二楼走廊，迎住带队上楼逼债的{ruthless_debt_collector_goda.name}。",
+    "resource_gap": "{ruthless_debt_collector_goda.name}人多势众，握着伪造公证书；你和{runaway_husband_cousin_tetsuo.name}只有真印鉴的比对底单和离婚析产协议。"
    },
    "tags": [
-    "workplace_power",
-    "crime"
+    "crime",
+    "violence"
    ],
    "tension_engine_ids": [
     "te_loan_shark_siege_vs_dawn_deadline",
@@ -680,23 +750,23 @@
    "situation": {
     "exits": [
      {
-      "cost": "将自身面临的暴力威胁直接引向隔壁邻居房内。",
-      "option": "从阳台铁栏翻入隔壁203室避险"
+      "cost": "深夜进邻居房里，一旦被巡楼的房东看见便百口莫辩",
+      "option": "从连通阳台借道 203 室暂避，并核对印鉴真伪"
      },
      {
-      "cost": "丧失手中最后的纪念物且无法从根本解决债务。",
-      "option": "隔着门链交出母亲遗留的旧金戒指拖延"
+      "cost": "交出最后的生活费，反让催收组长认定好欺负",
+      "option": "隔着门链拿出私房钱先买下那叠传单，拖到天亮"
      }
     ],
-    "pressure": "若不开门对方将强行踹门砸锁，若开门将面临人身安全威胁。",
-    "trigger": "债主在走廊用铁棍猛力敲打门板，限令十分钟内开门交钱。"
+    "pressure": "传单一贴出，工作难保，唯一栖身的 202 室也会被房东借口退租。",
+    "trigger": "催收组长把盖着红印的连带保证书塞进门缝，扬言天亮前不签字就把欠债传单贴满整条商店街。"
    },
    "tags": [
     "intimate",
     "workplace_power"
    ],
    "voices": {
-    "inner": "隔壁的先生……能听见吗？门锁快被踹开了……请帮帮我，哪怕替我报个警也好……",
+    "inner": "隔壁的……能听见吗？门锁快被踹开了……请帮帮我，哪怕替我报个警也好……",
     "surface": "各位请回吧，外子的下落我并不知情，再不走我就要按火警铃了！"
    }
   },
@@ -712,30 +782,30 @@
    ],
    "decision": {
     "avoids": [
-     "精通法律条款且随时录音存证的专业律师",
-     "持枪赶来的辖区巡警"
+     "精通法条、随时录音的律师",
+     "赶来的辖区巡警"
     ],
-    "contrast": "作风野蛮残忍毫无法纪，却对敢于豁出命来拼死互搏的硬汉带有一丝忌惮。",
-    "core_value": "欠债还钱天经地义，在金钱丛林里谁心软谁就得被吃干抹净。",
+    "contrast": "作风野蛮，却对肯拼命的硬骨头带着一丝忌惮。",
+    "core_value": "欠债还钱天经地义，谁心软谁被吃干抹净。",
     "goal_options": [
-     "在破晓前拿到人妻签下的房产抵押协议书",
-     "扫清公寓内一切敢于多管闲事的刺头",
-     "拿到高额回款提成向上头交差晋升"
+     "破晓前拿到主妇签的房产抵押书",
+     "扫清楼里多管闲事的刺头",
+     "拿到回款提成向上头交差"
     ],
     "never": [
-     "绝不空手而归承担被钱庄老大断指惩处的耻辱后果。"
+     "绝不空手回去受钱庄老大的断指之罚。"
     ],
     "prefers": [
      "被三言两语吓得乖乖掏钱签字的软蛋"
     ],
     "pressure_responses": {
-     "breaking": "被暗处扳手击中面门踉跄后退，满脸是血气急败坏拔出折叠刀。",
-     "high": "亲自抬脚猛踹门锁，喝令手下搬出铁撬棍准备破门。",
-     "low": "在门外用皮鞋跟用力跺响木板，吐出一口唾沫冷笑威胁。",
-     "mid": "挥动钢管砸烂门旁电表铁箱，火星四溅中破口大骂下最后通牒。"
+     "breaking": "被亮出的假印鉴底单震住，脸色铁青地后退半步按住怀里的账册。",
+     "high": "抬脚猛跺走廊木板，喝令手下把欠债传单贴满二楼门扉。",
+     "low": "在门外跺响木板，冷笑着威胁。",
+     "mid": "挥钢管砸烂门旁电表箱，下最后通牒。"
     },
-    "relationship_stance": "把一切人情视作可以用钞票计量的筹码，极度鄙夷毫无实力的穷酸文人。",
-    "withdrawal": "退至一楼楼梯口点燃香烟盯防，扬言天亮叫齐弟兄拆楼。"
+    "relationship_stance": "人情都能用钞票计价，最瞧不起没实力的穷酸文人。",
+    "withdrawal": "退到楼梯口点烟盯着。"
    },
    "gender": "any",
    "gender_reason": null,
@@ -753,12 +823,12 @@
     ],
     "resources": [
      "一辆停在巷口的黑色丰田面包车",
-     "三名手持撬棍的催收打手随从"
+     "三名守在楼梯口的催收随从"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "被逼至墙角依然目光倔强的硬骨头对手",
+     "被逼到墙角仍目光倔强的对手",
      "直视钢管也不退半步的烈性"
     ],
     "boundaries": [
@@ -774,14 +844,14 @@
      "满嘴法言法语的说教",
      "哭哭啼啼的懦弱哀嚎"
     ],
-    "expression": "收刀入怀擦去脸上雨水，将钢管重重插在门边承认对手硬气并退后半步。",
+    "expression": "擦去脸上雨水，把钢管插在门边，承认对手硬气，退后半步。",
     "likes": [
-     "用绝对力量压过对手那一瞬间的痛快",
-     "清点现金时钞票摩擦的沉闷声响"
+     "压过对手那一瞬的痛快",
+     "清点钞票的沉闷声响"
     ],
     "preconditions": [
-     "地下钱庄催收组长与对方都已完全清醒，眼前的危机已经解除",
-     "地下钱庄催收组长出于自愿与对等的敬意，不带任何交换或强求"
+     "双方完全清醒，眼前的危机已经解除",
+     "出于自愿与对等的敬意，不带交换或强求"
     ],
     "self_control_range": [
      2,
@@ -835,7 +905,7 @@
     "crime"
    ],
    "voices": {
-    "inner": "隔壁那小子，少在这英雄救美！这根钢管可不长眼睛，滚回你的狗窝去！",
+    "inner": "隔壁那个，少在这英雄救美！钢管可不长眼睛，滚回你屋里去！",
     "surface": "别装蒜！你男人借钱时拿你签了连带，今晚拿不出钱就跟我上车！"
    }
   },
@@ -1264,7 +1334,7 @@
    ],
    "appearance_options": [
     "身穿油迹斑斑的工装背带裤，里面是褪色灰T恤，手臂肌肉紧实带有烫伤痕迹，戴着歪斜的鸭舌帽。",
-    "眼神愧疚而机敏，腰间挂着内六角扳手组，背着一个沾满机油的旧帆布背包。"
+    "眼神愧疚而机敏，腰间挂着帆布工具袋，背着一个沾满机油的旧帆布背包。"
    ],
    "decision": {
     "avoids": [
@@ -1288,7 +1358,7 @@
      "breaking": "跪倒在地连连叩头，痛哭流涕替堂兄的不义罪行道歉。",
      "high": "甩出机油瓶砸向地面制造滑腻，掩护人妻从阳台翻出。",
      "low": "压低鸭舌帽檐紧靠墙角，机警扫视楼梯口动静。",
-     "mid": "抽出机修大号扳手横在胸前，咬紧牙关低声警告别靠近。"
+     "mid": "横跨一步挡在走廊窄口，咬紧牙关低声警告谁也别想往里闯。"
     },
     "relationship_stance": "对人妻怀着深沉愧疚，甘愿用自身代价为其赎还清白。",
     "withdrawal": "骑上越野摩托轰响油门冲出小巷，引开两辆尾随的债主面包车。"
@@ -1332,7 +1402,7 @@
     ],
     "expression": "双手将摩托车头盔恭敬奉上，深深鞠躬以沙哑嗓音发誓护送前往新生。",
     "likes": [
-     "雨夜修车时递过扳手的心照不宣",
+     "雨夜修车时递过干毛巾的心照不宣",
      "机油与雨水交融中毫无芥蒂的平视相待"
     ],
     "preconditions": [
@@ -1375,16 +1445,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "连人带车侧翻在水泥路面，多处骨折。",
-      "option": "猛轰油门撞翻债主面包车突围"
+      "cost": "手臂被铁栏锈刺划伤，车棚里的摩托车被债主扣下",
+      "option": "顺外挂铁梯翻上二楼阳台，把牛皮纸袋塞进 203 室"
      },
      {
-      "cost": "失去脱身筹码，被当场按倒在泥水里痛殴扣押。",
-      "option": "将文件用塑料袋包紧奋力抛上二楼阳台"
+      "cost": "自己被堵在死胡同里挨了一顿闷棍",
+      "option": "故意发动备用旧车引开巷口的盯梢随从"
      }
     ],
-    "pressure": "若文件被撕毁人妻将彻底丧失脱困的法律依据，必须在三十秒内夺回。",
-    "trigger": "债主在后巷截停摩托车，搜出其怀里的借款撤销公证文件。"
+    "pressure": "存折一被搜出，替嫂子赎回借据的救命钱就会被当场抢空。",
+    "trigger": "催收随从堵住后巷车棚，逼问跑路堂兄留下的修车厂存折。"
    },
    "tags": [
     "intimate",
@@ -1421,135 +1491,186 @@
  "daily_activities": [
   {
    "beats": [
-    "屋檐雨水如注砸在铁皮雨棚上，邻居下班归宿轻轻关上拉门。",
-    "指节在靠近地面的薄墙角轻叩三下，隔壁片刻后回叩两下报平安。",
-    "两人隔着木板低语交换楼下陌生车辆动向，声若游丝不敢声张。"
-   ],
-   "duration_minutes": 55,
-   "hook_ids": [
-    "h_yui_wall_knock_whisper",
-    "h_goda_door_smash_shout",
-    "h_matsuko_key_shake_curfew"
-   ],
-   "id": "a_thin_wall_night_knocking",
-   "location_ids": [
-    "apartment_room_203"
-   ],
-   "start_minute": 1355,
-   "tags": [
-    "intimate"
-   ],
-   "title": "薄木板壁轻叩暗号"
-  },
-  {
-   "beats": [
-    "夜雨漫过阳台铁皮水槽，人妻推开半扇窗板递过温热的漆盒筑前煮。",
-    "隔着防风板两人席地端坐，分吃热饭团借微弱蒸汽驱散寒气。",
-    "低声商讨破晓还款死线如何应对，雨幕将两张面庞映照得格外真切。"
-   ],
-   "duration_minutes": 50,
-   "hook_ids": [
-    "h_yui_bento_plate_pass",
-    "h_sakura_bento_leap_offer",
-    "h_tetsuo_wrench_guard"
-   ],
-   "id": "a_balcony_bento_sharing",
-   "location_ids": [
-    "narrow_kitchen_balcony"
-   ],
-   "start_minute": 1415,
-   "tags": [
-    "workplace"
-   ],
-   "title": "阳台檐下分食温饱"
-  },
-  {
-   "beats": [
-    "债主带打手大摇大摆登上二楼，皮鞋跟踏得整座走廊木板发出刺耳呻吟。",
-    "房东提着钥匙串快步赶来，尖声阻拦恶徒砸门破坏公物。",
-    "邻居们紧闭纸门在门缝后屏息窥视，全廊空气降至冰点一触即发。"
-   ],
-   "duration_minutes": 55,
-   "hook_ids": [
-    "h_goda_pipe_corridor_block",
-    "h_kenji_koban_whistle_step",
-    "h_matsuko_rent_demand_shout"
-   ],
-   "id": "a_hallway_creak_inquest",
-   "location_ids": [
-    "creaky_communal_hallway"
-   ],
-   "start_minute": 35,
-   "tags": [
-    "workplace_power"
-   ],
-   "title": "走廊木板声纹盘查"
-  },
-  {
-   "beats": [
-    "佛龛前点燃微弱烛光，人妻展开失踪丈夫留下的高利贷借据。",
-    "法学研究生拿出放大镜与利息法典，逐条指出借条中严重违法的勒索漏洞。",
-    "门外偶有脚步声经过，两人立刻屏息熄灭蜡烛化入阴影。"
-   ],
-   "duration_minutes": 45,
-   "hook_ids": [
-    "h_yui_debt_contract_trust",
-    "h_kenji_police_coat_offer",
-    "h_tetsuo_divorce_papers_drop"
-   ],
-   "id": "a_room_legal_counsel",
-   "location_ids": [
-    "neighbor_wife_room_202"
-   ],
-   "start_minute": 95,
-   "tags": [
-    "intimate"
-   ],
-   "title": "榻榻米前借据核验"
-  },
-  {
-   "beats": [
-    "狂风卷起雨帘拍打栏杆，邻居持伞站在铁隔板旁巡视小巷两端路口。",
-    "巷口便利店灯光下闪过巡警自行车的反光，众人心头升起希望。",
-    "人妻将泡好的热麦茶递过隔板，两只温热指尖在茶杯上极轻一触即分。"
+    "隔壁推开阳台木窗，隔着铁皮隔板递来一盒刚出锅的筑前煮",
+    "两人一左一右靠着栏杆分食，顺手把晾干的衬衫收进屋",
+    "聊起月底房东又要涨水电公摊，对方把多煮的味噌汤也端上了窗台"
    ],
    "duration_minutes": 40,
    "hook_ids": [
     "h_yui_bento_plate_pass",
     "h_sakura_bento_leap_offer",
-    "h_yui_candle_sewing_gaze"
+    "h_tetsuo_divorce_papers_drop"
    ],
-   "id": "a_balcony_rain_watch",
+   "id": "a_balcony_bento_share",
    "location_ids": [
-    "narrow_kitchen_balcony"
+    "narrow_kitchen_balcony",
+    "apartment_room_203"
    ],
-   "start_minute": 145,
+   "start_minute": 1350,
    "tags": [
-    "workplace"
+    "intimate"
    ],
-   "title": "阳台远眺警情守望"
+   "title": "窄阳台分食筑前煮"
   },
   {
    "beats": [
-    "东方天际泛起鱼肚白，下町夜雨渐止，屋檐铜铃发出清脆声响。",
-    "巡警与律师当众向恶徒出示扣押令，非法催收团伙仓皇上车。",
-    "人妻换上干爽青白单衣步出走廊，向隔壁邻居深深鞠躬迎向新生。"
+    "熄灯后，木板墙那边传来收拾针线筐、铺被褥的细碎声响",
+    "你用指节在墙上轻叩两下，片刻后那边也叩了两下",
+    "听着一墙之隔安稳的呼吸，白天的紧绷在雨夜里慢慢散去"
    ],
    "duration_minutes": 30,
    "hook_ids": [
     "h_yui_wall_knock_whisper",
-    "h_kenji_koban_whistle_step",
-    "h_goda_door_smash_shout"
+    "h_yui_candle_sewing_gaze",
+    "h_matsuko_key_shake_curfew"
    ],
-   "id": "a_dawn_eviction_resolution",
+   "id": "a_thin_wall_evening_knock",
    "location_ids": [
+    "apartment_room_203",
+    "neighbor_wife_room_202"
+   ],
+   "start_minute": 1365,
+   "tags": [
+    "intimate"
+   ],
+   "title": "隔墙轻叩道晚安"
+  },
+  {
+   "beats": [
+    "一楼信箱被雨潲湿，你把二楼几户的晚报和账单带上来擦干",
+    "对方推门倒水，看见自己的家信被你用干手帕垫着",
+    "两人站在屋檐下核对本月的燃气抄表数，提醒彼此锁好门链"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [
+    "h_matsuko_rent_demand_shout",
+    "h_kenji_koban_whistle_step",
+    "h_yui_wall_knock_whisper"
+   ],
+   "id": "a_hallway_mailbox_sorting",
+   "location_ids": [
+    "creaky_communal_hallway",
+    "apartment_room_203"
+   ],
+   "start_minute": 1375,
+   "tags": [
+    "workplace"
+   ],
+   "title": "外廊分拣淋湿的信件"
+  },
+  {
+   "beats": [
+    "秋雨吹破了 202 靠窗的一格障子纸，你带着浆糊和裁纸刀过去",
+    "对方跪坐在草席上替你按住纸边，屋里飘着淡淡的米浆香",
+    "糊好窗格，对方捧来一杯热焙茶，坚持要替你擦净袖口的浆糊"
+   ],
+   "duration_minutes": 40,
+   "hook_ids": [
+    "h_yui_debt_contract_trust",
+    "h_yui_candle_sewing_gaze",
+    "h_kenji_police_coat_offer"
+   ],
+   "id": "a_room202_window_paper_patch",
+   "location_ids": [
+    "neighbor_wife_room_202",
+    "narrow_kitchen_balcony"
+   ],
+   "start_minute": 1385,
+   "tags": [
+    "intimate"
+   ],
+   "title": "202 室修补障子纸"
+  },
+  {
+   "beats": [
+    "凌晨一点，带着热气的罐装咖啡和临期饭团被拎上二楼",
+    "两人在走廊尽头的避风处拉开拉环，把铝罐贴在冻僵的脸上",
+    "看着楼下积水映出的路灯，约好明早谁先醒就敲墙叫对方"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [
+    "h_sakura_koban_call_plea",
+    "h_sakura_bento_leap_offer",
+    "h_tetsuo_wrench_guard"
+   ],
+   "id": "a_late_night_canned_coffee",
+   "location_ids": [
+    "narrow_kitchen_balcony",
     "creaky_communal_hallway"
    ],
-   "start_minute": 185,
+   "start_minute": 1395,
    "tags": [
-    "workplace_power"
+    "intimate"
    ],
-   "title": "破晓晨光清算决断"
+   "title": "下夜班后的热罐装咖啡"
+  },
+  {
+   "beats": [
+    "窗帘拉得严严实实，暗房红灯把四叠半的屋子染成暖暗的颜色",
+    "两人并肩坐在矮桌前挑刚冲印的下町街景",
+    "挑出一张拍到二楼晾衣绳的底片，对方红着耳根问能不能洗一张留着"
+   ],
+   "duration_minutes": 40,
+   "hook_ids": [
+    "h_yui_bento_plate_pass",
+    "h_kenji_police_coat_offer",
+    "h_matsuko_key_shake_curfew"
+   ],
+   "id": "a_room203_darkroom_film",
+   "location_ids": [
+    "apartment_room_203"
+   ],
+   "start_minute": 1405,
+   "tags": [
+    "intimate"
+   ],
+   "title": "203 室红灯下挑旧胶片"
+  },
+  {
+   "beats": [
+    "借出去的长柄伞擦得干干净净，伞骨上系了一枚晴天棉线结",
+    "交还雨伞时，对方说起商店街萝卜降价的琐事，眉眼难得轻松",
+    "伞柄上还留着对方掌心的余温，直到各自关门都没散"
+   ],
+   "duration_minutes": 25,
+   "hook_ids": [
+    "h_matsuko_rent_demand_shout",
+    "h_kenji_koban_whistle_step",
+    "h_yui_wall_knock_whisper"
+   ],
+   "id": "a_umbrella_return",
+   "location_ids": [
+    "creaky_communal_hallway",
+    "neighbor_wife_room_202"
+   ],
+   "start_minute": 1415,
+   "tags": [
+    "workplace"
+   ],
+   "title": "外廊归还长柄伞"
+  },
+  {
+   "beats": [
+    "矮桌上点起一支白蜡烛，算盘珠子在静夜里拨出清脆的响",
+    "你帮着核对水电煤气和米店的赊账，把多算的滞纳金一笔笔勾掉",
+    "对方托着腮看你写字，把剥好的橘子分了一半放在你手边"
+   ],
+   "duration_minutes": 35,
+   "hook_ids": [
+    "h_yui_debt_contract_trust",
+    "h_yui_candle_sewing_gaze",
+    "h_tetsuo_divorce_papers_drop"
+   ],
+   "id": "a_candlelight_ledger_tea",
+   "location_ids": [
+    "neighbor_wife_room_202",
+    "apartment_room_203"
+   ],
+   "start_minute": 1425,
+   "tags": [
+    "intimate"
+   ],
+   "title": "停电夜烛光下记小账"
   }
  ],
  "default_npc_gender_mix": {
@@ -1665,7 +1786,7 @@
     "creaky_communal_hallway"
    ],
    "slot": "runaway_husband_cousin_tetsuo",
-   "text": "{runaway_husband_cousin_tetsuo.name}手持扳手从铁梯翻上来走向你，抹去脸上泥水：“兄弟，我堂兄犯下的浑蛋事我来扛，协议书在这，快带我嫂子走！”"
+   "text": "{runaway_husband_cousin_tetsuo.name}顺着铁梯翻上阳台走向你，抹去脸上雨水：“我堂兄犯下的混账事我来扛，离婚协议和存折都在这，快带我嫂子脱身！”"
   },
   {
    "id": "h_kenji_police_coat_offer",
@@ -1745,8 +1866,9 @@
    "id": "apartment_room_203",
    "name": "隔壁单人榻榻米房",
    "pressure_modifiers": {
-    "p_loan_shark_door_raid": "门外传来重重踢门声，挂锁铁链剧烈晃动。",
-    "p_thin_wall_whisper_leak": "隔壁压抑的低泣声清晰传过薄板让人心头揪紧。"
+    "p_matsuko_withheld_remittance": "隔着薄木板墙，房东钥匙串急促的铜响听得真真切切。",
+    "p_thin_wall_whisper_leak": "合板墙微微震颤，隔壁压抑的呼吸近得像贴着耳根。",
+    "p_water_leak_blackout_crisis": "断电后只剩一点烛光，两人的影子叠在薄薄的木板墙上。"
    },
    "privacy": "private",
    "tags": [
@@ -1772,8 +1894,10 @@
    "id": "neighbor_wife_room_202",
    "name": "新婚人妻起居房",
    "pressure_modifiers": {
-    "p_landlady_midnight_inspection": "房东持备用钥匙在锁孔处摸索转动。",
-    "p_loan_shark_door_raid": "门板被用油漆喷上血红大字，门把手被暴力拧动。"
+    "p_koban_jurisdiction_deadlock": "门链半挂，屋里的人正翻找印鉴卡，证明借据上的名章是伪造的。",
+    "p_landlady_midnight_inspection": "玄关摆着收拾了一半的包袱，门缝塞进来一张刺眼的黄色催租单。",
+    "p_matsuko_withheld_remittance": "台灯照着摊开的记账簿，邮局投递编码和房东的签收字迹一清二楚。",
+    "p_thin_wall_whisper_leak": "纸拉门映出外廊晃动的手电光斑，连针线穿布的声音都得压低。"
    },
    "privacy": "private",
    "tags": [
@@ -1799,8 +1923,9 @@
    "id": "creaky_communal_hallway",
    "name": "嘎吱作响公共外走廊",
    "pressure_modifiers": {
-    "p_loan_shark_door_raid": "走廊挤满三个穿湿透西装的刺青壮汉。",
-    "p_water_leak_blackout_crisis": "白炽灯泡剧烈闪烁伴随电火花发出滋滋青烟。"
+    "p_goda_garage_ledger_extortion": "外走廊木板在皮鞋重踏下吱呀乱响，雨水混着烟灰溅在门框上。",
+    "p_koban_jurisdiction_deadlock": "手电光柱照亮湿滑的木楼梯，警用雨衣和黑西装在窄道对峙。",
+    "p_landlady_midnight_inspection": "走廊灯泡忽明忽暗，房东的钥匙串撞出清脆的响声。"
    },
    "privacy": "public",
    "tags": [
@@ -1828,8 +1953,8 @@
    "id": "narrow_kitchen_balcony",
    "name": "两房连通狭窄铁栏阳台",
    "pressure_modifiers": {
-    "p_landlady_midnight_inspection": "暴风雨吹落晾衣绳上的白毛巾引起楼下警觉。",
-    "p_water_leak_blackout_crisis": "阳台铁皮排水槽堵塞，雨水开始倒灌室内。"
+    "p_goda_garage_ledger_extortion": "铁栏外就是后巷车棚，堂弟急促的喘息隔着雨幕传进窗内。",
+    "p_water_leak_blackout_crisis": "豆大的雨点砸在铁皮雨棚上，晾衣竹竿在黑夜里剧烈摇晃。"
    },
    "privacy": "semi",
    "tags": [
@@ -1916,7 +2041,7 @@
   ],
   "order": "family_first"
  },
- "notes": "基本保留原稿：一墙之隔的指节暗号、阳台分食、钢管砸门、房东查房、断电漏水、堂弟送来离婚协议与破晓警笛。改动：催收组长的亲密倾向降为宿敌（欲望 1–2），不写成对主妇的觊觎；房东、一楼租客原稿写成“老太太”“老头子”，与 23–26 岁的年龄不符，改为年轻房东和夜班工人；台词里写死的“结衣姐”改为“姐”；身份名去掉“年满二十”“成年”字样；“他们在踹锁了”等代词改掉；补齐两个组合缺的关系；主妇固定女性，其余不限。",
+ "notes": "基本保留原稿：一墙之隔的指节暗号、阳台分食、钢管砸门、房东查房、断电漏水、堂弟送来离婚协议与破晓警笛。改动：催收组长的亲密倾向降为宿敌（欲望 1–2），不写成对主妇的觊觎；房东、一楼租客原稿写成“老太太”“老头子”，与 23–26 岁的年龄不符，改为年轻房东和夜班工人；台词里写死的“结衣姐”改为“姐”；身份名去掉“年满二十”“成年”字样；“他们在踹锁了”等代词改掉；补齐两个组合缺的关系；主妇固定女性，其余不限。\n2026-10-18 按写作规则 v2 改造：人物组合改为 8 单人 + 2 双人；主妇握房东私扣汇款单、催收组长握堂弟担保字据两条把柄；清掉扳手、撬棍与读秒；日常补到八条。",
  "player_identities": [
   {
    "age_range": [
@@ -1929,7 +2054,7 @@
    "reputation": "老实本分早出晚归，从未拖欠过房租被邻里视作安分青年。",
    "resources": [
     "商社刚发的二十万日元现金薪酬袋",
-    "一把坚固的折叠式修车扳手"
+    "一只备用的黄铜门链与防风手电筒"
    ],
    "risks": [
     "若卷入隔壁债务纠纷可能被商社以影响信誉为由解雇。"
@@ -2044,7 +2169,7 @@
    "id": "foster_nephew_repairman",
    "reputation": "手艺扎实不爱多嘴，在逼仄楼道里来去自如。",
    "resources": [
-    "全套水管铁扳手与生料带",
+    "全套水电检修胶带与测电笔",
     "通往顶楼蓄水池与下水道阀门的专用钥匙"
    ],
    "risks": [
@@ -2067,286 +2192,302 @@
  "premise": "隔音极差的老旧木造公寓里，年轻新婚人妻受困于丈夫欠下高利贷失踪的讨债危机。一墙之隔的薄板传回每一声叹息与敲打。两人在暴雨夜轻敲墙板传递暗号，在房东查房与债主逼债的夹缝中守住底线。",
  "pressures": [
   {
-   "choice": "是隔门出具法律抗辩书驳斥非法高利贷，还是翻过阳台从隔壁邻居房内突围？",
+   "choice": "亮出投递底单逼房东交钱锁楼，还是留情面换对方出面挡债主？",
    "exits": [
     {
-     "cost": "自身暴露于钢管打击之下，承担手臂骨裂风险。",
-     "option": "推开门缝递出法典抗辩书警告录音存证"
+     "cost": "房东吐出了钱，对你恨得咬牙切齿",
+     "option": "亮出邮局签收编码，逼房东交出汇款单并反锁走廊铁门"
     },
     {
-     "cost": "将恶徒的仇恨与围攻引向隔壁单身房间。",
-     "option": "隔壁邻居猛推开房门大声喧哗引开注意力"
+     "cost": "把柄从此成了你们之间的交易",
+     "option": "答应替房东瞒下拆迁茶水费，换对方报警驱离催收"
     }
    ],
    "far": {
-    "consequence": "人妻失去住所与全部财产，被拖入地下钱庄的无底债务。",
+    "consequence": "房东签下 202 与 203 的违约腾退令，二楼失去合法承租权。",
     "due_days": 1,
-    "trigger": "恶徒完成暴力控制并逼签房产抵押文书。"
+    "trigger": "房东倒向拆迁队与催收组长"
    },
    "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "h_goda_door_smash_shout",
-    "h_yui_wall_knock_whisper"
-   ],
-   "id": "p_loan_shark_door_raid",
-   "immediate": {
-    "minutes": 15,
-    "text": "木质拉门在钢管猛砸下木屑飞溅，门锁舌剧烈变形，整座楼板如地震般颤抖。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "creaky_communal_hallway"
-   ],
-   "near": {
-    "deadline_minutes": 35,
-    "text": "门板破开后暴徒将闯入屋内打砸搜刮并强行带人。"
-   },
-   "objective": "在门板被砸碎之前，逼退或合法阻击暴徒的入室侵犯。",
-   "source": "person",
-   "start_minute": 1360,
-   "tags": [
-    "violence",
-    "bodily_harm"
-   ],
-   "title": "债主钢管暴力砸门",
-   "trigger": "午夜时分地下钱庄催收组长率打手堵死202室房门，用钢管疯狂敲击拉门索要五百万日元。"
-  },
-  {
-   "choice": "是打开收音机播放深夜棒球赛掩盖声响，还是隐蔽于壁橱棉被内？",
-   "exits": [
-    {
-     "cost": "引来整栋楼租客对噪音扰民的敲墙抗议。",
-     "option": "调大收音机解说声并佯装单人暴躁呼喝"
-    },
-    {
-     "cost": "在缺乏氧气的狭小暗室中承受闷热窒息煎熬。",
-     "option": "屏息躲入逼仄壁橱棉被缝隙内"
-    }
-   ],
-   "far": {
-    "consequence": "彻底丧失在下町安身立命之所。",
-    "due_days": 1,
-    "trigger": "人妻遭受整条町街长舌妇的道德审判与唾弃。"
-   },
-   "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [
     "h_matsuko_key_shake_curfew",
-    "h_yui_wall_knock_whisper"
+    "h_yui_debt_contract_trust"
    ],
-   "id": "p_thin_wall_whisper_leak",
+   "id": "p_matsuko_withheld_remittance",
    "immediate": {
-    "minutes": 10,
-    "text": "门外木板传来极轻的衣服摩擦声，钥匙串在门锁孔处轻轻转动试探。"
+    "minutes": 5,
+    "text": "房东的手已经摸向腰间那把 202 的黄铜备用钥匙。"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{troubled_neighbor_wife_yui.name}查出{parsimonious_landlady_matsuko.name}私扣了十万日元邮政汇款单，还收了拆迁公司的茶水费",
+    "holder": "troubled_neighbor_wife_yui",
+    "subject": "parsimonious_landlady_matsuko"
+   },
    "location_ids": [
+    "neighbor_wife_room_202",
     "apartment_room_203"
    ],
    "near": {
-    "deadline_minutes": 25,
-    "text": "若被查实男女同处一室，房东将当场没收押金并通报全街驱逐。"
+    "deadline_minutes": 15,
+    "text": "再拖下去，房东就要拉闸，把人困在黑屋里交给债主。"
    },
-   "objective": "维持绝对肃静，消除门外耳目的怀疑，避免引来破门查房。",
-   "source": "rumor",
-   "start_minute": 1420,
+   "objective": "压住房东不许开门放债主进楼，并逼其吐出汇款单。",
+   "source": "money",
+   "start_minute": 1360,
    "tags": [
     "workplace_power",
-    "violence"
+    "crime"
    ],
-   "title": "薄木板壁窃听危机",
-   "trigger": "暴躁邻居与苛刻房东贴在走廊外侧窃听203室动静，怀疑屋内私自收留了隔壁在逃人妻。"
+   "title": "私扣的十万日元汇款单",
+   "trigger": "主妇核对邮局回执，发现房东冒领了丈夫寄回的十万日元汇款。"
   },
   {
-   "choice": "是隔着防盗链出示租金补缴意向书，还是让邻居在走廊制造管道漏水转移视线？",
+   "choice": "帮堂弟指出字据已过追诉期，还是先拿现金换回纸袋？",
    "exits": [
     {
-     "cost": "承担被房东扣除本月全部修缮工钱的代价。",
-     "option": "水电工在走廊故意拧爆水龙头制造水漫金山"
+     "cost": "催收组长记恨在心，天亮就去砸后巷的修车厂",
+     "option": "当场点破字据上的伪造印泥与非法高息条款"
     },
     {
-     "cost": "邻居本月将身无分文，交不起饭钱。",
-     "option": "隔着门缝把刚发的工资袋当场奉上作押"
+     "cost": "保住了纸袋，走廊外的门板却被拍得震天响",
+     "option": "掩护堂弟从阳台退进 203，拉上防雨木窗"
     }
    ],
    "far": {
-    "consequence": "暴徒将接管空房在屋内守株待兔。",
+    "consequence": "202 背上五百万日元的连带黑债，堂弟被押上面包车。",
     "due_days": 1,
-    "trigger": "房屋租赁合同被单方面解除腾空。"
+    "trigger": "牛皮纸袋被夺走撕毁"
+   },
+   "flags": [
+    "timed",
+    "leverage"
+   ],
+   "hook_ids": [
+    "h_goda_pipe_corridor_block",
+    "h_tetsuo_divorce_papers_drop"
+   ],
+   "id": "p_goda_garage_ledger_extortion",
+   "immediate": {
+    "minutes": 5,
+    "text": "催收随从堵住楼梯口，伸手去拽堂弟怀里的背包。"
+   },
+   "leverage": {
+    "basis": "{ruthless_debt_collector_goda.name}握着{runaway_husband_cousin_tetsuo.name}替跑路堂兄担保修车厂设备的旧字据",
+    "holder": "ruthless_debt_collector_goda",
+    "subject": "runaway_husband_cousin_tetsuo"
+   },
+   "location_ids": [
+    "creaky_communal_hallway",
+    "narrow_kitchen_balcony"
+   ],
+   "near": {
+    "deadline_minutes": 15,
+    "text": "堂弟一改口，离婚析产协议当场作废。"
+   },
+   "objective": "稳住堂弟的证词，保住牛皮纸袋里的离婚协议和存折。",
+   "source": "person",
+   "start_minute": 1370,
+   "tags": [
+    "crime",
+    "violence"
+   ],
+   "title": "修车厂旧字据与连带逼签",
+   "trigger": "催收组长在走廊堵住堂弟，晃着修车厂抵押字据，逼其指认 202 共同负债。"
+  },
+  {
+   "choice": "吹熄蜡烛贴墙等门外的人离开，还是打开收音机掩护阳台传信？",
+   "exits": [
+    {
+     "cost": "广播声引来楼下住户敲墙抗议",
+     "option": "调高收音机的深夜广播，借雨声从阳台递过文件"
+    },
+    {
+     "cost": "核对借据的时间被压缩了半个时辰",
+     "option": "按三短一长的暗号示意暂停，各自装睡应付盘查"
+    }
+   ],
+   "far": {
+    "consequence": "闲话和催收一齐扑来，房东把两屋之间的阳台通道钉死。",
+    "due_days": 1,
+    "trigger": "两屋串联转移借据的事败露"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "h_yui_wall_knock_whisper",
+    "h_matsuko_key_shake_curfew"
+   ],
+   "id": "p_thin_wall_whisper_leak",
+   "immediate": {
+    "minutes": 5,
+    "text": "走廊的地板响到一扇门外就停了，有人屏着呼吸贴门偷听。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "apartment_room_203",
+    "neighbor_wife_room_202"
+   ],
+   "near": {
+    "deadline_minutes": 15,
+    "text": "门外的人开始试着拧门把，看屋里是不是藏了外人。"
+   },
+   "objective": "不惊动门外的耳目，完成隔墙传信和借据核验。",
+   "source": "rumor",
+   "start_minute": 1380,
+   "tags": [
+    "intimate",
+    "workplace"
+   ],
+   "title": "薄木板壁隔墙耳目",
+   "trigger": "二楼走廊有人贴着门缝走动，202 与 203 之间的轻声交谈随时会被听去。"
+  },
+  {
+   "choice": "拿出薪酬袋替隔壁做连带担保，还是用借地借家法驳回夜间驱逐？",
+   "exits": [
+    {
+     "cost": "房东退回一楼，却放话下个月一定涨租",
+     "option": "指出夜间驱逐违法，警告非法换锁要赔偿"
+    },
+    {
+     "cost": "保住了租约，手头的应急现金少了一半",
+     "option": "和便利店后辈一起签下邻里联保书，补交滞纳金"
+    }
+   ],
+   "far": {
+    "consequence": "主妇失去最后一层合法住处的保护，二楼再无人敢出面作证。",
+    "due_days": 1,
+    "trigger": "202 被强制换锁收回"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [
     "h_matsuko_rent_demand_shout",
-    "h_matsuko_key_shake_curfew"
+    "h_sakura_bento_leap_offer"
    ],
    "id": "p_landlady_midnight_inspection",
    "immediate": {
-    "minutes": 15,
-    "text": "黄铜钥匙已插进锁眼转动半圈，门缝被推开一指宽，手电筒光柱正往屋内乱晃。"
+    "minutes": 5,
+    "text": "房东把空白退租确认书拍在门板上，扬言不签就拉断二楼电闸。"
    },
    "leverage": null,
    "location_ids": [
-    "neighbor_wife_room_202"
+    "neighbor_wife_room_202",
+    "creaky_communal_hallway"
    ],
    "near": {
-    "deadline_minutes": 30,
-    "text": "房东一旦进屋发现借据与阳台暗通，将立刻换锁彻底封门驱逐。"
+    "deadline_minutes": 15,
+    "text": "房东开始清点走廊的雨伞鞋柜，要把屋里的东西当场清出去。"
    },
-   "objective": "在不开门放房东进屋的前提下，保全屋内藏匿的证据与避难者。",
+   "objective": "援引租约或补齐押金凭证，挡回房东的强制清退。",
    "source": "institution",
-   "start_minute": 40,
+   "start_minute": 1390,
    "tags": [
-    "workplace_power",
-    "crime"
+    "workplace_power"
    ],
-   "title": "房东午夜强行查房",
-   "trigger": "房东以排查漏水为名，手持大串备用钥匙要强行开锁巡视202室。"
+   "title": "房东午夜查租清退",
+   "trigger": "房东拿着租约违约通知书上楼，要借债务风波在今夜收回 202 的钥匙。"
   },
   {
-   "choice": "是点燃蜡烛坚守门后，还是借黑暗摸索攀爬阳台铁梯探查撤离？",
+   "choice": "当场呈交伪造印泥与高利贷底单请求扣押，还是请巡查长以治安巡查名义留守到天亮？",
    "exits": [
     {
-     "cost": "亮光在黑暗楼道中成为恶徒重点扑杀的靶子。",
-     "option": "点燃防风蜡烛分发给邻里组成防守互助圈"
+     "cost": "原件进了警署，民事诉讼要等很久才能拿回",
+     "option": "把印章比对底片和离婚协议一并交给巡查长拍照存证"
     },
     {
-     "cost": "极易导致慌乱撤离的邻居踩滑跌伤。",
-     "option": "在走廊湿滑木板上泼洒洗洁精设置防滑陷阱"
+     "cost": "巡查长留到破晓，假借据却还没销案",
+     "option": "以二楼电线漏电为由请巡查长封锁楼梯口"
     }
    ],
    "far": {
-    "consequence": "整栋公寓化作火海，无辜住户流离失所。",
+    "consequence": "二楼失去警方弹压，催收随从重新占住楼梯口与后巷。",
     "due_days": 1,
-    "trigger": "木造老建筑电路起火引发火灾。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "h_goda_pipe_corridor_block",
-    "h_sakura_bento_leap_offer"
-   ],
-   "id": "p_water_leak_blackout_crisis",
-   "immediate": {
-    "minutes": 20,
-    "text": "头顶白炽灯滋滋爆裂陷入黑暗，唯余窗外狂风暴雨轰鸣与天花板漏水滴答声。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "narrow_kitchen_balcony"
-   ],
-   "near": {
-    "deadline_minutes": 45,
-    "text": "恶徒将利用黑暗撬开走廊防盗门实施入室打劫。"
-   },
-   "objective": "在失去照明的暴雨混乱中，稳固阳台与房门防线，谨防恶徒摸黑强攻。",
-   "source": "nature",
-   "start_minute": 100,
-   "tags": [
-    "disaster",
-    "bodily_harm"
-   ],
-   "title": "暴雨漏水全楼断电",
-   "trigger": "暴风雨击垮屋顶铁皮排水槽，积水渗漏进二楼总配电盘引发短路，全楼陷入一片漆黑。"
-  },
-  {
-   "choice": "是用阳台晾衣竿打翻堵截者接引，还是跳下铁梯并肩杀出重围？",
-   "exits": [
-    {
-     "cost": "面临被判定防卫过当的民事赔偿责任。",
-     "option": "推下沉重竹晾衣竿砸倒后巷打手"
-    },
-    {
-     "cost": "面临重心失衡摔落楼下水泥地的骨折危险。",
-     "option": "探出阳台半截身子拉堂弟翻上铁栏"
-    }
-   ],
-   "far": {
-    "consequence": "失踪赌徒逃脱法网，人妻成为代罪羔羊。",
-    "due_days": 1,
-    "trigger": "唯一知情人被恶徒打残封死线索。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "h_tetsuo_wrench_guard",
-    "h_tetsuo_divorce_papers_drop"
-   ],
-   "id": "p_husband_cousin_betrayal_peril",
-   "immediate": {
-    "minutes": 15,
-    "text": "后巷传来摩托车引擎轰鸣与倒地摩擦火花声，堂弟满脸是血死死护住怀中背包。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "narrow_kitchen_balcony"
-   ],
-   "near": {
-    "deadline_minutes": 35,
-    "text": "堂弟被制服后关键文件将被当场焚毁，人妻将永远背负失踪丈夫的巨额债务。"
-   },
-   "objective": "从恶徒包围圈中接应堂弟，拿到洗清人妻冤屈的离婚析产文件。",
-   "source": "person",
-   "start_minute": 150,
-   "tags": [
-    "violence",
-    "bodily_harm"
-   ],
-   "title": "堂弟大义灭亲截杀",
-   "trigger": "失踪丈夫的堂弟携离婚协议书与摩托车潜入后巷，被尾随而来的打手围堵在铁梯口。"
-  },
-  {
-   "choice": "是主动走出走廊呈交录音存证与账目，还是留在房内等待警员入室核验？",
-   "exits": [
-    {
-     "cost": "需独自面对垂死挣扎的恶徒扔出的飞刀。",
-     "option": "高举装满证据的塑料袋迎向警官"
-    },
-    {
-     "cost": "房门将在强攻中被撞烂，需承担修缮费用。",
-     "option": "反锁房门等待防暴警察压制外廊"
-    }
-   ],
-   "far": {
-    "consequence": "地下钱庄主谋逃脱制裁改头换面卷土重来报复。",
-    "due_days": 1,
-    "trigger": "案件被定性为底层互殴含糊结案。"
+    "trigger": "巡查长被迫撤离"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [
     "h_kenji_koban_whistle_step",
-    "h_goda_door_smash_shout"
+    "h_kenji_police_coat_offer"
    ],
-   "id": "p_koban_siren_showdown",
+   "id": "p_koban_jurisdiction_deadlock",
    "immediate": {
-    "minutes": 10,
-    "text": "探照灯穿透走廊薄板缝隙，警靴蹬踏楼梯声如雷霆，恶徒纷纷拔刀困兽犹斗。"
+    "minutes": 5,
+    "text": "交番电台催巡查长回所，催收组长抱着双臂在走廊冷笑送客。"
    },
    "leverage": null,
    "location_ids": [
-    "creaky_communal_hallway"
+    "creaky_communal_hallway",
+    "neighbor_wife_room_202"
    ],
    "near": {
-    "deadline_minutes": 25,
-    "text": "若未能及时亮明受害人身份，在场人员将被当作聚众械斗现行犯一并带走。"
+    "deadline_minutes": 15,
+    "text": "催收团伙的法务顾问打电话向警署施压，要处分越权留守的巡查长。"
    },
-   "objective": "在警方清场混乱中出具完整证据链，确保恶徒伏法且无辜者不受冤枉羁押。",
+   "objective": "在巡查长撤离前找出假印鉴或超额高利的实据，把民事纠纷转成诈骗立案。",
    "source": "institution",
-   "start_minute": 190,
+   "start_minute": 1400,
    "tags": [
-    "workplace_power",
-    "crime"
+    "crime",
+    "workplace_power"
    ],
-   "title": "破晓警笛围堵决战",
-   "trigger": "本所署警车亮着红蓝警灯呼啸包围公寓小巷，高音喇叭责令所有持械人员原地蹲下。"
+   "title": "民事借贷与出警立案死结",
+   "trigger": "巡查长赶到二楼外廊，催收组长却亮出盖章的公证书，声称只是合法讨债。"
+  },
+  {
+   "choice": "冒雨去阳台清通排水槽拉上防雨布，还是先把人接进干燥的 203 共同避寒？",
+   "exits": [
+    {
+     "cost": "冒雨爬上窄阳台，手臂被铁皮割了一道口子",
+     "option": "两人合力用油布封住阳台风口，点蜡烛烘湿衣"
+    },
+    {
+     "cost": "202 的地面被雨水浸透，第二天要赔房东",
+     "option": "把 202 的要紧文件和被褥搬进 203，集中取暖"
+    }
+   ],
+   "far": {
+    "consequence": "纸袋里的证据字迹模糊，湿滑的阳台再也没法快速通行。",
+    "due_days": 1,
+    "trigger": "两间房整夜泡在冷雨里"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "h_yui_bento_plate_pass",
+    "h_sakura_koban_call_plea",
+    "h_tetsuo_divorce_papers_drop"
+   ],
+   "id": "p_water_leak_blackout_crisis",
+   "immediate": {
+    "minutes": 5,
+    "text": "冷雨顺着阳台窗缝灌进屋里，打湿了半边榻榻米。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "narrow_kitchen_balcony",
+    "apartment_room_203"
+   ],
+   "near": {
+    "deadline_minutes": 20,
+    "text": "积水漫过阳台排水口，火柴和记账本都快湿透了。"
+   },
+   "objective": "封住阳台漏雨的窗缝，点亮备用烛火，在黑暗与寒气里稳住两屋。",
+   "source": "nature",
+   "start_minute": 1410,
+   "tags": [
+    "disaster",
+    "intimate"
+   ],
+   "title": "暴雨倒灌与二楼断电寒夜",
+   "trigger": "暴雨冲裂屋檐排水槽，雨水灌进走廊配电箱，二楼全面跳闸断电。"
   }
  ],
  "region": "墨田区昭和老旧三层木造出租公寓二楼",
@@ -2379,7 +2520,7 @@
   "testing": "借条托付"
  },
  "status": "released",
- "style_hint": "雨滴砸在铁皮雨棚上，隔墙薄得能听见隔壁翻书声。指节在墙角轻叩三下传递戒备，玄关外的雨靴声步步紧逼，在窒息的生活里守住清白与温柔。",
+ "style_hint": "短句，多写雨声与隔墙的细响，对话压低音量，少写心理独白。",
  "tension_engines": [
   {
    "id": "te_thin_wall_vs_prying_eyes",
@@ -2398,7 +2539,7 @@
    "text": "连绵夜雨漏水停电的破败木造孤岛与下町底层贫穷困局带来的生存绝境共振。"
   }
  ],
- "title": "下町薄墙：隔壁新婚主妇",
+ "title": "下町公寓薄墙",
  "tone": [
   "薄木板壁",
   "连绵夜雨",
@@ -2422,7 +2563,7 @@
    "category": "资源",
    "id": "t_neighbor_3",
    "requires": [],
-   "text": "203室地板下的旧修缮暗格被扳手撬开，里面有备用干燥蜡烛、急救包，还有前任退休警官租客遗留的一盒防狼喷雾与报警拉环。"
+   "text": "203室榻榻米下的旧木盒被起开，里面有蜡烛、急救包，和前任警官租客留下的防狼喷雾与报警拉环。"
   },
   {
    "category": "制度",

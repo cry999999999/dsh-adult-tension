@@ -12,7 +12,7 @@
  "skill": {
   "skill_root": null,
   "skill_version": null,
-  "content_version": "2026.10.9"
+  "content_version": "2026.10.10"
  },
  "turns": [
   {
@@ -458,8 +458,8 @@
      ],
      "cast_combos": [
       {
-       "chemistry": "{boiler_lead.name}是你的组长，锅炉房的钥匙在{boiler_lead.ta}手里；{gate_captain.name}守着门厅，每晚都会绕到锅炉房来问一句火够不够。",
-       "id": "combo_boiler_night",
+       "chemistry": "零点换班后的锅炉房烘得人后背发烫，{boiler_lead.name}反手带上铁门，把烘热的厚军毯搭在你肩上。",
+       "id": "combo_boiler_solo",
        "identity_ids": [
         "boiler_crew"
        ],
@@ -471,135 +471,80 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 4,
+          "trust": 3
          },
          "b": "boiler_lead",
          "b_to_a": {
-          "tension": 0,
-          "trust": 1
+          "tension": 4,
+          "trust": 4
          },
-         "reason": "{boiler_lead.name}教过你看火候，也骂过你把煤添得太急",
-         "stage": "acquainted"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 0
-         },
-         "b": "gate_captain",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{gate_captain.name}记得你的名字，你却只知道{gate_captain.ta}少了两根手指",
-         "stage": "stranger"
-        },
-        {
-         "a": "boiler_lead",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "gate_captain",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "两个人是馆里最早的一批住户，谁欠谁一条命已经说不清",
-         "stage": "familiar"
+         "reason": "管理会查封私煤那夜，{boiler_lead.name}把你拉进煤仓暗格死死护在怀里，哨声擦着门缝过去，对方的心跳隔着棉袄撞得你发疼",
+         "stage": "intimate"
         }
        ],
        "slots": [
-        "boiler_lead",
-        "gate_captain"
+        "boiler_lead"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想在这个冬天结束前，搬回主地板上的一个格子",
-        "limit_gap": "你值夜再睡着一次就要被调去看台，{boiler_lead.name}的燃料只够撑到月底",
-        "meeting_reason": "你们三个每隔一晚都要在锅炉房和门厅之间熬到天亮",
-        "resource_gap": "{boiler_lead.name}有锅炉房和备用煤，{gate_captain.name}有门厅的钥匙，你只有一把铲子"
+        "irreplaceable_goal": "你想保住每晚留在锅炉房值夜的差事，也想和{boiler_lead.name}守住铁门后的方寸暖意",
+        "limit_gap": "凌晨四点交接班前必须把主管道的压力稳住",
+        "meeting_reason": "前半夜轮值散班后，{boiler_lead.name}把你单独留在锅炉后侧的值班铺位边",
+        "resource_gap": "{boiler_lead.name}握着锅炉房钥匙与夜班排班表，你只是跟着铲煤看表的轮值小工"
        },
        "tags": [],
        "tension_engine_ids": [
         "te_same_duty_group",
-        "te_secret_stash"
+        "te_shared_blanket"
        ]
       },
       {
-       "chemistry": "{council_chair.name}管着全馆的名册和格子，{ration_cook.name}管着全馆的锅；你的名字在名册上被划过一道，又被{ration_cook.name}用铅笔补了回去。",
-       "id": "combo_name_in_ledger",
-       "identity_ids": [],
+       "chemistry": "门厅背风的值班室里炭火正旺，{gate_captain.name}把登记簿合上，伸手替你拢好领口的围巾。",
+       "id": "combo_gate_solo",
+       "identity_ids": [
+        "newcomer"
+       ],
        "player_positions": [
-        "low",
-        "equal"
+        "low"
        ],
        "power_structure": "npc_high",
        "relations": [
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 0
+          "tension": 4,
+          "trust": 3
          },
-         "b": "council_chair",
+         "b": "gate_captain",
          "b_to_a": {
-          "tension": 1,
-          "trust": 0
+          "tension": 4,
+          "trust": 3
          },
-         "reason": "{council_chair.name}在会上念过你的名字，念完停了一下",
-         "stage": "acquainted"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 0,
-          "trust": 1
-         },
-         "b": "ration_cook",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{ration_cook.name}在你碗底藏过一块面饼，什么也没说",
-         "stage": "acquainted"
-        },
-        {
-         "a": "council_chair",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "ration_cook",
-         "b_to_a": {
-          "tension": 2,
-          "trust": 0
-         },
-         "reason": "{ration_cook.name}在会上反对过{council_chair.name}三次，三次都输了",
-         "stage": "familiar"
+         "reason": "{gate_captain.name}把门岗备用铜哨系在你的手腕内侧，压低声音说“夜里不管几点，只要吹一声我就给你开偏门”",
+         "stage": "flirting"
         }
        ],
        "slots": [
-        "council_chair",
-        "ration_cook"
+        "gate_captain"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想让自己的名字，在名册上不再被划掉",
-        "limit_gap": "你再出一次错就要被请出馆，{ration_cook.name}的面粉每天按数发",
-        "meeting_reason": "每天两次配给，三个人都在同一个窗口前",
-        "resource_gap": "{council_chair.name}有名册和话筒，{ration_cook.name}有锅和勺，你只有一个被划过的名字"
+        "irreplaceable_goal": "你想在主地板安稳落脚，又想回应{gate_captain.name}每晚为你留门的偏爱",
+        "limit_gap": "天亮换岗前要把今晚的门禁出入名册核对完毕",
+        "meeting_reason": "夜巡结束后你端着热水走过门厅，{gate_captain.name}招手叫你进值班室暖手",
+        "resource_gap": "{gate_captain.name}掌管出入大铁门与门岗值班室，你是刚进馆不久、还在等正式床位的新住户"
        },
        "tags": [],
        "tension_engine_ids": [
-        "te_ration_card",
-        "te_council_vote"
+        "te_adjacent_bunks",
+        "te_ration_card"
        ]
       },
       {
-       "chemistry": "{scavenge_captain.name}每次外出回来，第一个去找的是{shelter_doctor.name}；你在外出队和医务角之间来回最多，两边的事都知道一半。",
-       "id": "combo_scavenge_pair",
-       "identity_ids": [],
+       "chemistry": "仓库最里排货架挡住了外头的视线，{scavenge_captain.name}把私留的一罐果酒塞进你怀里，手背擦过你的腰带。",
+       "id": "combo_scavenge_solo",
+       "identity_ids": [
+        "scavenger"
+       ],
        "player_positions": [
         "equal"
        ],
@@ -608,70 +553,40 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 3,
+          "trust": 4
          },
          "b": "scavenge_captain",
          "b_to_a": {
-          "tension": 1,
-          "trust": 1
+          "tension": 4,
+          "trust": 4
          },
-         "reason": "你跟{scavenge_captain.name}出过四次门，有一次是{scavenge_captain.ta}把你从雪里拖回来的",
-         "stage": "familiar"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 0,
-          "trust": 1
-         },
-         "b": "shelter_doctor",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{shelter_doctor.name}替你包过冻伤的手，包得比谁都仔细",
-         "stage": "acquainted"
-        },
-        {
-         "a": "scavenge_captain",
-         "a_to_b": {
-          "tension": 2,
-          "trust": 1
-         },
-         "b": "shelter_doctor",
-         "b_to_a": {
-          "tension": 2,
-          "trust": 1
-         },
-         "reason": "外出回来的每一个伤员，都是{scavenge_captain.name}亲手交给{shelter_doctor.name}的",
-         "stage": "familiar"
+         "reason": "第一次进馆登记名册时，{scavenge_captain.name}当着委员的面在伴侣栏填上了你的名字，把两人的配给卡订在了一起",
+         "stage": "committed"
         }
        ],
        "slots": [
-        "scavenge_captain",
-        "shelter_doctor"
+        "scavenge_captain"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想让下一次外出的所有人都活着回来",
-        "limit_gap": "窗口不开谁也出不去，{shelter_doctor.name}的药只够三个星期",
-        "meeting_reason": "每次外出前后，三个人都在门厅碰头",
-        "resource_gap": "{scavenge_captain.name}有地图和补给点，{shelter_doctor.name}有最后的药，你有两边都信得过的名声"
+        "irreplaceable_goal": "你想和{scavenge_captain.name}安安稳稳跑完每一趟外勤，守住两人私攒的小金库",
+        "limit_gap": "明早天气窗口开启前要定下这趟外出的私密路线",
+        "meeting_reason": "晚间清点完装备后，你们照例留在仓库暗角核对只有两人懂的记号",
+        "resource_gap": "{scavenge_captain.name}熟记馆外每一条街巷的路线，你是每次出队替对方断后的老搭档"
        },
-       "tags": [
-        "disaster"
-       ],
+       "tags": [],
        "tension_engine_ids": [
         "te_scavenge_partner",
         "te_secret_stash"
        ]
       },
       {
-       "chemistry": "{radio_operator.name}每晚念失踪名单，念到某个名字总要停一下；{gate_captain.name}知道那个名字的人为什么没回来，你是唯一看见过两个人在广播台上说话的人。",
-       "id": "combo_broadcast_night",
-       "identity_ids": [],
+       "chemistry": "医务角的白布帘拉严之后只剩一盏酒精灯，{shelter_doctor.name}借着清点药箱俯身靠近你，目光落在你锁骨上。",
+       "id": "combo_doctor_solo",
+       "identity_ids": [
+        "medic"
+       ],
        "player_positions": [
-        "low",
         "equal"
        ],
        "power_structure": "equal",
@@ -679,65 +594,36 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 4,
+          "trust": 4
          },
-         "b": "radio_operator",
+         "b": "shelter_doctor",
          "b_to_a": {
-          "tension": 2,
-          "trust": 1
+          "tension": 4,
+          "trust": 4
          },
-         "reason": "{radio_operator.name}每晚下广播台都会经过你的格子，有时候停一下",
-         "stage": "acquainted"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 0,
-          "trust": 1
-         },
-         "b": "gate_captain",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{gate_captain.name}有一回在门厅把自己的火盆让给了你",
-         "stage": "acquainted"
-        },
-        {
-         "a": "radio_operator",
-         "a_to_b": {
-          "tension": 2,
-          "trust": 1
-         },
-         "b": "gate_captain",
-         "b_to_a": {
-          "tension": 2,
-          "trust": 1
-         },
-         "reason": "两个人都知道那个没回来的人的事，谁也不先开口",
-         "stage": "familiar"
+         "reason": "上回有人夜闯医务角抢药，你们合力抵住木门，人走后{shelter_doctor.name}拉下白布帘，把你按在药柜上吻了下去",
+         "stage": "intimate"
         }
        ],
        "slots": [
-        "radio_operator",
-        "gate_captain"
+        "shelter_doctor"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想知道那个名字的人，是不是还活着",
-        "limit_gap": "{radio_operator.name}的广播稿要管理会过目，{gate_captain.name}不能违抗管理会的命令",
-        "meeting_reason": "你的格子就在广播台下面，{radio_operator.name}每晚从你身边走过",
-        "resource_gap": "{radio_operator.name}有全馆唯一的收音机，{gate_captain.name}有门厅的本子，你有一个没人知道你看见了的晚上"
+        "irreplaceable_goal": "你想和{shelter_doctor.name}守住医务角这方安静天地，在帘后多留一刻独处",
+        "limit_gap": "熄灯钟敲响前要把这周的药品盘点表锁进铁柜",
+        "meeting_reason": "晚间门诊散场后，你和{shelter_doctor.name}留在布帘后核对最后一格药匣",
+        "resource_gap": "{shelter_doctor.name}掌着全馆紧俏的常备药箱，你是唯一能替对方搭手分担夜诊的护理搭档"
        },
        "tags": [],
        "tension_engine_ids": [
-        "te_adjacent_bunks",
-        "te_secret_stash"
+        "te_same_duty_group",
+        "te_adjacent_bunks"
        ]
       },
       {
-       "chemistry": "你是管理会的委员，{council_chair.name}需要你的一票，{boiler_lead.name}需要你替锅炉组去要燃料；两件事在同一个会上表决。",
-       "id": "combo_council_seat",
+       "chemistry": "晚间广播结束后的播音室安静又暖和，{radio_operator.name}关掉扩音推子，仰起脸等你签发今晚的值机日志。",
+       "id": "combo_radio_solo",
        "identity_ids": [
         "council_member"
        ],
@@ -749,67 +635,36 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 4,
+          "trust": 3
          },
-         "b": "council_chair",
+         "b": "radio_operator",
          "b_to_a": {
-          "tension": 1,
-          "trust": 1
+          "tension": 4,
+          "trust": 3
          },
-         "reason": "你和{council_chair.name}在管理会里一起熬过两次表决",
-         "stage": "familiar"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 0,
-          "trust": 1
-         },
-         "b": "boiler_lead",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{boiler_lead.name}每回来求燃料，都先给东区多送一个小时的暖气",
-         "stage": "acquainted"
-        },
-        {
-         "a": "council_chair",
-         "a_to_b": {
-          "tension": 2,
-          "trust": 0
-         },
-         "b": "boiler_lead",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{boiler_lead.name}从不在会上发言，却每次都投反对票",
-         "stage": "acquainted"
+         "reason": "每晚熄灯广播最后十秒的电流声里，{radio_operator.name}都会用指节轻敲话筒三下，那是只敲给你听的晚安暗号",
+         "stage": "flirting"
         }
        ],
        "slots": [
-        "council_chair",
-        "boiler_lead"
+        "radio_operator"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想让东区的人，这个冬天一个都不少",
-        "limit_gap": "你改过的那几笔账经不起查，{council_chair.name}每个月都要重新表决",
-        "meeting_reason": "管理会每周开会，三个人都坐在篮球架下",
-        "resource_gap": "你有一票和东区的配给簿，{council_chair.name}有话筒，{boiler_lead.name}有锅炉房的钥匙"
+        "irreplaceable_goal": "你想替{radio_operator.name}挡下管理会里的苛责，让这间播音室永远做你们两人的私密角落",
+        "limit_gap": "十点熄灯号吹响前要审完今晚的频道记录",
+        "meeting_reason": "你照例在晚间广播后独自走上二楼播音室，{radio_operator.name}反手替你带上了木门",
+        "resource_gap": "你是握有表决权的管理会委员，{radio_operator.name}是归管理会直辖的夜班广播员"
        },
-       "tags": [
-        "workplace_power"
-       ],
+       "tags": [],
        "tension_engine_ids": [
         "te_council_vote",
-        "te_same_duty_group"
+        "te_shared_blanket"
        ]
       },
       {
-       "chemistry": "仓库的两把锁，一把的钥匙在你手里；{ration_cook.name}每天来领面粉，{scavenge_captain.name}每次外出回来都要和你对账，两个人都觉得数目不对。",
-       "id": "combo_storeroom_keys",
+       "chemistry": "收窗后的配给灶间还留着麦香与热气，{ration_cook.name}盛出一碗浓稠的热麦粥递给你，手腕在碗沿与你相贴。",
+       "id": "combo_cook_solo",
        "identity_ids": [
         "quartermaster"
        ],
@@ -821,66 +676,41 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 4,
+          "trust": 3
          },
          "b": "ration_cook",
          "b_to_a": {
-          "tension": 1,
-          "trust": 1
+          "tension": 4,
+          "trust": 4
          },
-         "reason": "{ration_cook.name}每回领面粉，都要当着你的面再称一遍",
-         "stage": "acquainted"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "scavenge_captain",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{scavenge_captain.name}带回来的东西，你从来没少记过一样",
-         "stage": "acquainted"
-        },
-        {
-         "a": "ration_cook",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "scavenge_captain",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "外出队每次回来，{ration_cook.name}都会单独给他们熬一锅汤",
-         "stage": "familiar"
+         "reason": "暴风雪封门那夜两人在灶膛余温前脱了湿外衣相贴取暖，从那以后，后厨小铁柜的副钥就一直揣在你毛衣内袋里",
+         "stage": "intimate"
         }
        ],
        "slots": [
-        "ration_cook",
-        "scavenge_captain"
+        "ration_cook"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想在库存见底之前，找到一个不让全馆恐慌的办法",
-        "limit_gap": "真实库存比广播里念的少三成，你不能说，也瞒不了多久",
-        "meeting_reason": "每天领面粉、每次对账，三个人都在仓库门口",
-        "resource_gap": "你有仓库的钥匙和真实的库存数，{ration_cook.name}有锅，{scavenge_captain.name}有补给点"
+        "irreplaceable_goal": "你想在账目上护住{ration_cook.name}那点私心，也想每晚独享小灶边这份热乎气",
+        "limit_gap": "明早开伙前要把下一周的口粮配额核准入册",
+        "meeting_reason": "晚间配给发完后你去后厨核对空面袋，{ration_cook.name}正温着小灶等你过来",
+        "resource_gap": "你执掌仓库物资的出库大权，{ration_cook.name}每天下锅的米面油盐都要经你手批条"
        },
        "tags": [],
        "tension_engine_ids": [
-        "te_secret_stash",
-        "te_ration_card"
+        "te_ration_card",
+        "te_secret_stash"
        ]
       },
       {
-       "chemistry": "最冷的那一夜，你和{shelter_doctor.name}、{radio_operator.name}在看台上共用过一条毯子；那之后三个人有了一个约定，谁也没说破。",
-       "id": "combo_shared_blanket",
-       "identity_ids": [],
+       "chemistry": "议事散场后的看台高处只剩两盏蜡烛，{council_chair.name}揉了揉眉心靠向你肩侧，褪去了白日里主持大局的冷硬。",
+       "id": "combo_chair_solo",
+       "identity_ids": [
+        "council_member",
+        "medic",
+        "boiler_crew"
+       ],
        "player_positions": [
         "low",
         "equal",
@@ -891,66 +721,82 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 4,
+          "trust": 3
          },
-         "b": "shelter_doctor",
+         "b": "council_chair",
          "b_to_a": {
-          "tension": 2,
-          "trust": 1
+          "tension": 4,
+          "trust": 3
          },
-         "reason": "那一夜{shelter_doctor.name}一直握着你的手，说是在数你的脉搏",
-         "stage": "familiar"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "radio_operator",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{radio_operator.name}在你耳边小声念了一整晚的旧节目",
-         "stage": "familiar"
-        },
-        {
-         "a": "shelter_doctor",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "radio_operator",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "两个人以前只在医务角见过，那一夜才第一次说上话",
-         "stage": "acquainted"
+         "reason": "上回换格表决平票时，{council_chair.name}在桌下用靴尖轻轻抵住你的脚踝，散会后只留下一句“今晚我的选票写你的名字”",
+         "stage": "testing"
         }
        ],
        "slots": [
-        "shelter_doctor",
-        "radio_operator"
+        "council_chair"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想让那个约定，撑过这个冬天",
-        "limit_gap": "{shelter_doctor.name}自己在发烧，{radio_operator.name}的电池只够每天开两次",
-        "meeting_reason": "暖气最弱的那几夜，三个人又挤到了一起",
-        "resource_gap": "{shelter_doctor.name}有药，{radio_operator.name}有收音机，你有那条毯子"
+        "irreplaceable_goal": "你想帮{council_chair.name}稳住馆里的秩序，又想做对方卸下防备后唯一依靠的人",
+        "limit_gap": "明早九点议事会开场前要拿出一份两边都能服气的方案",
+        "meeting_reason": "众人散去后你留在看台最高一排帮着收拢会议记录，{council_chair.name}主动坐到了你身边",
+        "resource_gap": "{council_chair.name}能召集全馆议事定夺规矩，你手里握着基层轮值最真实的人心与口风"
        },
        "tags": [],
        "tension_engine_ids": [
-        "te_shared_blanket",
+        "te_council_vote",
         "te_adjacent_bunks"
        ]
       },
       {
-       "chemistry": "{gate_captain.name}藏着一个名册上没有的人，{ration_cook.name}往面粉里掺了东西，{boiler_lead.name}从仓库里挪过煤；三件事你都知道，而他们三个还不知道你知道。",
-       "id": "combo_three_secrets",
-       "identity_ids": [],
+       "chemistry": "你拿着备用燃料的批条走进锅炉房，{boiler_lead.name}擦掉额角的热汗迎上来，目光灼热地落在你唇边。",
+       "id": "combo_boiler_high_solo",
+       "identity_ids": [
+        "quartermaster"
+       ],
+       "player_positions": [
+        "high"
+       ],
+       "power_structure": "player_high",
+       "relations": [
+        {
+         "a": "player",
+         "a_to_b": {
+          "tension": 3,
+          "trust": 3
+         },
+         "b": "boiler_lead",
+         "b_to_a": {
+          "tension": 3,
+          "trust": 3
+         },
+         "reason": "进馆头一个月你俩轮流守下半夜的煤炉，{boiler_lead.name}至今还用着你送的那只砸瘪了角的军用水壶",
+         "stage": "familiar"
+        }
+       ],
+       "slots": [
+        "boiler_lead"
+       ],
+       "stakes": {
+        "irreplaceable_goal": "你想多批一成燃料让锅炉房彻夜暖和，顺理成章留在{boiler_lead.name}身边过夜",
+        "limit_gap": "午夜添煤前要签下这批精煤的领用单",
+        "meeting_reason": "你趁夜深亲自把燃料批条送进锅炉房，{boiler_lead.name}早把内侧木椅擦干净等你坐下",
+        "resource_gap": "你管着全馆燃料与备件的调拨签字，{boiler_lead.name}的锅炉房离了你的批条就转不动"
+       },
+       "tags": [],
+       "tension_engine_ids": [
+        "te_secret_stash",
+        "te_same_duty_group"
+       ]
+      },
+      {
+       "chemistry": "{radio_operator.name}昨夜已经先把那盘磁带塞进你手里求你拿主意，今晚你亲自把{scavenge_captain.name}约进反锁的播音室，让两人在你面前把账算清。",
+       "id": "combo_radio_scavenge_leverage",
+       "identity_ids": [
+        "council_member",
+        "scavenger",
+        "newcomer"
+       ],
        "player_positions": [
         "low",
         "equal",
@@ -961,103 +807,134 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 4,
+          "trust": 4
          },
-         "b": "gate_captain",
+         "b": "radio_operator",
          "b_to_a": {
-          "tension": 1,
-          "trust": 1
+          "tension": 4,
+          "trust": 4
          },
-         "reason": "{gate_captain.name}知道你夜里睡不着，常在门厅给你留一个位子",
-         "stage": "acquainted"
+         "reason": "暴风雪压塌天线塔那夜，你们顶着狂风拉回电缆，进门后裹进同一件防寒服，在播音台下吻到手指重新有了知觉",
+         "stage": "intimate"
         },
         {
          "a": "player",
          "a_to_b": {
-          "tension": 0,
-          "trust": 1
+          "tension": 3,
+          "trust": 3
          },
-         "b": "ration_cook",
+         "b": "scavenge_captain",
          "b_to_a": {
-          "tension": 1,
-          "trust": 1
+          "tension": 4,
+          "trust": 3
          },
-         "reason": "{ration_cook.name}总是最后一个吃饭，有两回是和你一起",
-         "stage": "acquainted"
+         "reason": "每次外出队从废墟回来，{scavenge_captain.name}都会背着众人往你口袋里塞一颗没上报的瑞士水果糖",
+         "stage": "flirting"
         },
         {
-         "a": "player",
+         "a": "radio_operator",
          "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 4,
+          "trust": 2
          },
-         "b": "boiler_lead",
+         "b": "scavenge_captain",
          "b_to_a": {
-          "tension": 0,
-          "trust": 1
+          "tension": 4,
+          "trust": 2
          },
-         "reason": "{boiler_lead.name}让你在锅炉房里坐过半个小时",
-         "stage": "acquainted"
-        },
-        {
-         "a": "gate_captain",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "ration_cook",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{gate_captain.name}每晚都从{ration_cook.name}那里多领一碗汤，说是给守门组的",
-         "stage": "familiar"
-        },
-        {
-         "a": "gate_captain",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "boiler_lead",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "锅炉房和门厅隔着一条走廊，两个人一起守了三个冬天",
-         "stage": "familiar"
-        },
-        {
-         "a": "ration_cook",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 0
-         },
-         "b": "boiler_lead",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{ration_cook.name}怀疑有人动过仓库，却从没怀疑过{boiler_lead.name}",
-         "stage": "acquainted"
+         "reason": "{radio_operator.name}录下了{scavenge_captain.name}隐瞒物资坐标的短波通话，两人彼此提防又投鼠忌器",
+         "stage": "testing"
         }
        ],
        "slots": [
-        "gate_captain",
-        "ration_cook",
-        "boiler_lead"
+        "radio_operator",
+        "scavenge_captain"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想在秘密炸开之前，替每个人找一条退路",
-        "limit_gap": "说出任何一个，管理会都会追查到底；{gate_captain.name}不能违抗命令，{ration_cook.name}的面粉每天按数发",
-        "meeting_reason": "每天夜里，三个人都会在锅炉房门口碰一次面",
-        "resource_gap": "三个人各有一个秘密，你握着三个"
+        "irreplaceable_goal": "你想保住{scavenge_captain.name}不被撤职，又要把{radio_operator.name}这份只信你一人的偏爱牢牢攥住",
+        "limit_gap": "明晚八点通讯简报归档前必须处置好这盘磁带",
+        "meeting_reason": "{radio_operator.name}截获信号后第一个私下找了你，你特意在熄灯后传话把{scavenge_captain.name}叫上播音室做个了断",
+        "resource_gap": "{radio_operator.name}手握短波录音磁带，{scavenge_captain.name}掌着馆外物资路线，而磁带此刻正揣在你的大衣内袋里"
        },
        "tags": [],
        "tension_engine_ids": [
-        "te_secret_stash",
-        "te_council_vote"
+        "te_scavenge_partner",
+        "te_secret_stash"
+       ]
+      },
+      {
+       "chemistry": "入冬那晚你们三人就私下定过调高西区夜暖的口头密约，如今巡检单被翻了出来，{council_chair.name}与{boiler_lead.name}按约定聚在锅炉房等你定夺谁来签字。",
+       "id": "combo_council_boiler_leverage",
+       "identity_ids": [
+        "quartermaster",
+        "medic",
+        "boiler_crew"
+       ],
+       "player_positions": [
+        "low",
+        "equal",
+        "high"
+       ],
+       "power_structure": "switchable",
+       "relations": [
+        {
+         "a": "player",
+         "a_to_b": {
+          "tension": 4,
+          "trust": 3
+         },
+         "b": "boiler_lead",
+         "b_to_a": {
+          "tension": 4,
+          "trust": 4
+         },
+         "reason": "{boiler_lead.name}在三号锅炉背面的铁皮上用粉笔划了道身高线，说“只要你半夜来烤火，这格铺位永远给你留一半”",
+         "stage": "flirting"
+        },
+        {
+         "a": "player",
+         "a_to_b": {
+          "tension": 3,
+          "trust": 3
+         },
+         "b": "council_chair",
+         "b_to_a": {
+          "tension": 4,
+          "trust": 3
+         },
+         "reason": "前几日核对开春账册时，{council_chair.name}把私人印章放在你手心里，问你“敢不敢替我盖一回越权的章”",
+         "stage": "testing"
+        },
+        {
+         "a": "council_chair",
+         "a_to_b": {
+          "tension": 4,
+          "trust": 2
+         },
+         "b": "boiler_lead",
+         "b_to_a": {
+          "tension": 4,
+          "trust": 2
+         },
+         "reason": "{council_chair.name}扣下了{boiler_lead.name}夜间私调阀门的巡检单，两人为了供暖分配一直在暗中较劲",
+         "stage": "testing"
+        }
+       ],
+       "slots": [
+        "council_chair",
+        "boiler_lead"
+       ],
+       "stakes": {
+        "irreplaceable_goal": "你想护住{boiler_lead.name}继续留在锅炉房，又要替{council_chair.name}保住管理会的体面",
+        "limit_gap": "中午十二点轮值名单贴出前必须把巡检单的事揭过去",
+        "meeting_reason": "早在一个月前你们三人就约好，一旦私调暖气的事露馅，零点换班时就在三号锅炉后头碰头善后",
+        "resource_gap": "{council_chair.name}握着管理会的纪律裁决权，{boiler_lead.name}掌着全馆过冬的供暖命脉，而当初牵头定下密约的人正是你"
+       },
+       "tags": [],
+       "tension_engine_ids": [
+        "te_council_vote",
+        "te_shared_blanket"
        ]
       }
      ],
@@ -1164,7 +1041,7 @@
          "炉膛里木头爆开的声音"
         ],
         "preconditions": [
-         "锅炉房的门关上，炉火稳当"
+         "锅炉房的门关上，炉火稳当，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          3,
@@ -1285,7 +1162,7 @@
          "天气窗口打开前的那一刻安静"
         ],
         "preconditions": [
-         "刚从外面活着回来"
+         "刚从外面活着回来，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          2,
@@ -1408,7 +1285,7 @@
          "凌晨没人喊{npc.ta}的那一个小时"
         ],
         "preconditions": [
-         "今晚没有病人告急"
+         "今晚没有病人告急，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          3,
@@ -1519,7 +1396,7 @@
          "广播关掉之后的安静"
         ],
         "preconditions": [
-         "确定不会被人说偏袒"
+         "确定不会被人说偏袒，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          4,
@@ -1640,7 +1517,7 @@
          "收音机里的沙沙声"
         ],
         "preconditions": [
-         "广播关了，电池省下来了"
+         "广播关了，电池省下来了，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          2,
@@ -1766,7 +1643,7 @@
          "雪停的那一刻"
         ],
         "preconditions": [
-         "换了班，门有人守着"
+         "换了班，门有人守着，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          4,
@@ -1887,7 +1764,7 @@
          "面团发起来的味道"
         ],
         "preconditions": [
-         "配给窗口关了"
+         "配给窗口关了，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          2,
@@ -2249,7 +2126,7 @@
        "id": "main_floor",
        "name": "场馆主地板",
        "pressure_modifiers": {
-        "p_bunk_reassign": "胶带划的格子上，已经有人用粉笔写上了新的名字。",
+        "p_bunk_reassign": "胶带划出的格子边，几名住户正指着暖气片议论昨晚哪一排更暖和。",
         "p_council_ruling": "管理会的七把椅子就摆在篮球架下，全馆的人围成了一圈。"
        },
        "privacy": "public",
@@ -2298,6 +2175,7 @@
        "id": "boiler_room",
        "name": "锅炉房",
        "pressure_modifiers": {
+        "p_bunk_reassign": "三号支管的阀门手轮上还缠着你和班长熟悉的防滑布条。",
         "p_heating_failure": "管道里的水在往外喷，锅炉房的地上已经结了一层冰。"
        },
        "privacy": "private",
@@ -2361,6 +2239,7 @@
        "id": "entrance_hall",
        "name": "门厅",
        "pressure_modifiers": {
+        "p_radio_secret": "外出队的防风大衣还挂在门厅架子上，口袋里揣着没上交的路线草图。",
         "p_team_missing": "门厅的门开着一条缝，风雪直往里灌，谁也不敢把门关死。"
        },
        "privacy": "semi",
@@ -2383,7 +2262,7 @@
        "id": "broadcast_booth",
        "name": "广播台",
        "pressure_modifiers": {
-        "p_radio_secret": "广播台的灯半夜还亮着，窗户上蒙着一层霜。"
+        "p_radio_secret": "那盘录着短波通话的磁带就压在调音台右手边的铁盒底下。"
        },
        "privacy": "semi",
        "tags": [],
@@ -2498,7 +2377,7 @@
       ],
       "order": "family_first"
      },
-     "notes": "首发六个世界之一。时代感接近当代之后，只写旧物与手工，不写高科技；性别按会话偏好生成（D15）。2026-09-29 转为 released：真实 Skill 试玩记录 reports/playtests/{opencode,pi}/*-pt-winter_shelter-{daily,pressure}-r*.json（第 1–3 轮 OpenCode 1.18.29，其余 pi 0.87.1；模型请求的是本地接口上的 gemini-3.8-flash-high，能查到的应答都来自 gemini-3.8-flash-exp-a），评审（gemini-3.8-flash，校准 12/12；用户确认 gemini-3.8-flash-exp-a 与它是同一个模型）在 reports/playtests/reviews-gemini/，汇总在 reports/playtests/playtests.md。",
+     "notes": "首发六个世界之一。时代感接近当代之后，只写旧物与手工，不写高科技；性别按会话偏好生成（D15）。2026-09-29 转为 released：真实 Skill 试玩记录 reports/playtests/{opencode,pi}/*-pt-winter_shelter-{daily,pressure}-r*.json（第 1–3 轮 OpenCode 1.18.29，其余 pi 0.87.1；模型请求的是本地接口上的 gemini-3.8-flash-high，能查到的应答都来自 gemini-3.8-flash-exp-a），评审（gemini-3.8-flash，校准 12/12；用户确认 gemini-3.8-flash-exp-a 与它是同一个模型）在 reports/playtests/reviews-gemini/，汇总在 reports/playtests/playtests.md。\n2026-10-18 按写作规则 v2 改造：按 Gemini 第六批方案：组合改成 8 组单人加 2 组双人局（播音室对磁带、三人供暖密约）；床位重排改成管理会主席握着锅炉班长私调暖气的巡检单，电台秘密改成广播员录下外出队长私瞒物资坐标。",
      "player_identities": [
       {
        "age_range": [
@@ -2920,71 +2799,70 @@
        "trigger": "管理会要裁决一桩换格的纠纷，你被叫去作证"
       },
       {
-       "choice": "为自己争，还是为身边的人争",
+       "choice": "劝{council_chair.name}把记录压进旧档，还是替{boiler_lead.name}分担私调暖气的责任",
        "exits": [
         {
-         "cost": "说情欠下的人情，要用轮值来还",
-         "option": "去找委员说情"
+         "cost": "你要连着替管理会多值十个夜班",
+         "option": "在巡检单上补签名字替{boiler_lead.name}分担"
         },
         {
-         "cost": "换了分，就得替对方多值十个夜班",
-         "option": "和隔壁格的人换分"
-        },
-        {
-         "cost": "你身边那个人，可能明晚就不在身边了",
-         "option": "什么都不做"
+         "cost": "下次管理会投票时你要站到对方那边",
+         "option": "求{council_chair.name}把巡检单锁进私档"
         }
        ],
        "far": {
-        "consequence": "这一回排到看台上的人，要在看台上住到开春",
-        "due_days": 20,
-        "trigger": "开春的第一次清点"
+        "consequence": "锅炉房班长要是换了生手，整座场馆夜班供暖都会出乱子",
+        "due_days": 10,
+        "trigger": "下一次大寒潮燃料清点"
        },
        "flags": [
-        "timed"
+        "timed",
+        "leverage"
        ],
        "hook_ids": [],
        "id": "p_bunk_reassign",
        "immediate": {
         "minutes": 25,
-        "text": "通知贴在广播台下面，每个人都在找自己的名字"
+        "text": "{council_chair.name}拿着巡检单站在锅炉房门外，等你出来核对签字"
        },
-       "leverage": null,
+       "leverage": {
+        "basis": "{council_chair.name}扣下了{boiler_lead.name}夜间私调支管供暖阀门的巡检单",
+        "holder": "council_chair",
+        "subject": "boiler_lead"
+       },
        "location_ids": [
-        "main_floor",
-        "bleachers"
+        "boiler_room",
+        "main_floor"
        ],
        "near": {
         "deadline_minutes": 1020,
-        "text": "明天中午按新名单换格"
+        "text": "中午十二点公布轮值名单，违规者要被调去看台吹冷风"
        },
-       "objective": "在重排之前保住你想保住的那一格",
-       "source": "institution",
+       "objective": "在中午床位重排前帮两边压下这张巡检单",
+       "source": "person",
        "start_minute": 1140,
-       "tags": [],
-       "title": "床位重排",
-       "trigger": "管理会贴出通知：明天全馆床位重排，按轮值出勤算分"
+       "tags": [
+        "coercion_theme"
+       ],
+       "title": "夜班阀门的巡检单",
+       "trigger": "{council_chair.name}核查燃料账时扣下一张巡检单，上面记着{boiler_lead.name}连着三晚私调支管阀门给角落多送暖气"
       },
       {
-       "choice": "让这件事留在广播台里，还是自己去管理会说清楚",
+       "choice": "劝{radio_operator.name}抹掉磁带，还是拉{scavenge_captain.name}上来当面说清",
        "exits": [
         {
-         "cost": "从此你欠{radio_operator.name}一个永远还不清的人情",
-         "option": "请{radio_operator.name}继续瞒着"
+         "cost": "你欠下对方一笔沉甸甸的私情",
+         "option": "劝{radio_operator.name}把那段磁带洗掉"
         },
         {
-         "cost": "你以前的事，全馆都会知道",
-         "option": "自己去管理会说"
-        },
-        {
-         "cost": "私下和外面联络，是管理会的禁令",
-         "option": "让{radio_operator.name}回一个信号"
+         "cost": "三个人一起担下先斩后奏的干系",
+         "option": "带{scavenge_captain.name}进广播台把物资变明账"
         }
        ],
        "far": {
-        "consequence": "外面找你的人，可能会跟着外出队的脚印找到门口",
+        "consequence": "私瞒坐标一旦捅破，外出队全员撤换",
         "due_days": 6,
-        "trigger": "下一次天气窗口"
+        "trigger": "下一次天气窗口开启"
        },
        "flags": [
         "timed",
@@ -2994,29 +2872,29 @@
        "id": "p_radio_secret",
        "immediate": {
         "minutes": 20,
-        "text": "广播员摘下耳机，说外面那个信号又出现了"
+        "text": "{radio_operator.name}摘下耳机把磁带盒按在桌上，示意你听完录音"
        },
        "leverage": {
-        "basis": "{radio_operator.name}在外面的频道里听到过你的名字，一直没报给管理会",
+        "basis": "{radio_operator.name}录下了{scavenge_captain.name}私自隐瞒馆外半车物资坐标的短波通话",
         "holder": "radio_operator",
-        "subject": "player"
+        "subject": "scavenge_captain"
        },
        "location_ids": [
         "broadcast_booth",
-        "bleachers"
+        "entrance_hall"
        ],
        "near": {
         "deadline_minutes": 1230,
-        "text": "明晚八点的广播，失踪名单要重新念一遍"
+        "text": "明晚八点管理会听取简报，所有录音都要归档备查"
        },
-       "objective": "在下一次晚间广播之前，弄清楚外面的人为什么在找你",
+       "objective": "在明晚广播点名前决定这盘磁带的去留",
        "source": "person",
        "start_minute": 1410,
        "tags": [
         "coercion_theme"
        ],
-       "title": "外面在找你",
-       "trigger": "广播台的灯半夜还亮着，有人叫你上去一趟"
+       "title": "短波里的物资坐标",
+       "trigger": "{radio_operator.name}深夜值机时录下一段短波通话，录到{scavenge_captain.name}替外头旧识瞒下半车物资的坐标"
       }
      ],
      "region": "旧体育馆改成的公共避难所",

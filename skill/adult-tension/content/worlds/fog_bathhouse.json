@@ -103,8 +103,8 @@
  ],
  "cast_combos": [
   {
-   "chemistry": "你和{fallen_heir.name}在同一个池子里搓背，你知道{fallen_heir.ta}白天是谁；{tag_keeper.name}叫你把嘴闭紧，说浴场里只有号码。",
-   "id": "k_attendant_heir",
+   "chemistry": "没落伯爵家的继承人{fallen_heir.name}白天衣冠楚楚，夜里换上灰布袍在池子里替人搓背还债；只有你认得{fallen_heir.ta}肩头的胎记，而今晚池子里来了{fallen_heir.ta}白天的世交。",
+   "id": "k_attendant_heir_towel",
    "identity_ids": [
     "bath_attendant"
    ],
@@ -116,58 +116,29 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 2
      },
      "b": "fallen_heir",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 2
      },
-     "reason": "{fallen_heir.name}的手法是你教的",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "tag_keeper",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{tag_keeper.name}每次发工钱都多看你一眼",
-     "stage": "acquainted"
-    },
-    {
-     "a": "fallen_heir",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "tag_keeper",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{fallen_heir.name}的大衣白天挂在{tag_keeper.name}的总板上",
-     "stage": "acquainted"
+     "reason": "对方第一晚来偷学搓背时手抖得拿不稳皂巾，是你在打烊后的温水池里贴着那片后背一寸寸教会的，水汽里早摸熟了彼此的骨相。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "fallen_heir",
-    "tag_keeper"
+    "fallen_heir"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想守住浴场的规矩，又不想看着一个人在你眼前被认出来",
-    "limit_gap": "今晚池子里来了白天的熟人",
-    "meeting_reason": "你在浴场上工这几年，两个人天天跟你打照面",
-    "resource_gap": "{fallen_heir.name}有一个还能唬人的姓氏，{tag_keeper.name}有总板，你只有一条热毛巾"
+    "irreplaceable_goal": "带{fallen_heir.name}避开熟人，躲进只属于你们两个的包时缸。",
+    "limit_gap": "包时缸换钟之前，那位世交随时会转过身来。",
+    "meeting_reason": "蒸汽池的角落里，{fallen_heir.name}浑身湿透地躲进你的隔间，求你拿热毛巾挡住{fallen_heir.ta}的脸。",
+    "resource_gap": "{fallen_heir.name}还顶着贵族的姓氏，你只是最底层的搓背工，可{fallen_heir.ta}夜里那枚灰布号牌一直挂在你的钩子上。"
    },
    "tags": [
-    "coercion_theme"
+    "romance_light"
    ],
    "tension_engine_ids": [
     "te_recognized",
@@ -175,8 +146,8 @@
    ]
   },
   {
-   "chemistry": "你在{coal_merchant.name}的煤栈卸煤，知道哪一垛是囤的；{outside_inspector.name}在雾里拦住过你，问你见没见过一个手腕上没号的人。",
-   "id": "k_dock_coal",
+   "chemistry": "外场警官{outside_inspector.name}在雾里追查一个没挂铜号的人，却不知道自己的号码钩底下已经挂了一件来路不明的大衣；包时缸里，{outside_inspector.ta}隔着水汽看着你。",
+   "id": "k_dock_inspector_scar",
    "identity_ids": [
     "dockhand"
    ],
@@ -188,67 +159,38 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "coal_merchant",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 0
-     },
-     "reason": "{coal_merchant.name}给的工钱从来不多不少",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
+      "tension": 3,
       "trust": 1
      },
      "b": "outside_inspector",
      "b_to_a": {
-      "tension": 1,
-      "trust": 0
+      "tension": 3,
+      "trust": 1
      },
-     "reason": "{outside_inspector.name}翻过你的手腕",
-     "stage": "stranger"
-    },
-    {
-     "a": "coal_merchant",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "outside_inspector",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{outside_inspector.name}在查的那个号码，{coal_merchant.name}也在找",
-     "stage": "stranger"
+     "reason": "上个月港务街的大雾里，你替迷路的对方指过一回路；后来在蒸汽池里，对方认出了你锁骨上的旧疤，却始终没有声张。",
+     "stage": "testing"
     }
    ],
    "slots": [
-    "coal_merchant",
     "outside_inspector"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想保住饭碗，又不想替囤煤的人瞒着",
-    "limit_gap": "港务局今晚要来查煤栈",
-    "meeting_reason": "你在港口扛了几年煤，两个人都在雾里叫住过你",
-    "resource_gap": "{coal_merchant.name}有煤栈和全城的煤价，{outside_inspector.name}有证章和搜查令，你只有一身力气"
+    "irreplaceable_goal": "在不被带走的前提下弄清那件大衣是谁挂的，也弄清警官那回为什么没声张。",
+    "limit_gap": "打烊钟响前，警官要带一个人回去交差。",
+    "meeting_reason": "{outside_inspector.name}顺着湿脚印找进十三号包时缸，在水雾里叫出了你的号码。",
+    "resource_gap": "{outside_inspector.name}有搜查令和手铐，你只有一身煤灰和一枚能开十九号衣柜的铜牌。"
    },
    "tags": [
     "coercion_theme"
    ],
    "tension_engine_ids": [
-    "te_coal_price",
-    "te_missing_tag"
+    "te_missing_tag",
+    "te_recognized"
    ]
   },
   {
-   "chemistry": "你替{tag_keeper.name}修过号房墙上的铜钟；{tailor.name}来你铺子里对表时说，有人偷了一本尺寸档案，凭它能在蒸汽里认人。",
-   "id": "k_watch_tailor",
+   "chemistry": "裁缝{tailor.name}闭着眼都能凭肩宽认出蒸汽里的每个体面人；那本失窃的尺寸档案里，恰好也记着你和{tailor.ta}自己的贴身尺寸。",
+   "id": "k_watch_tailor_tape",
    "identity_ids": [
     "watchmaker"
    ],
@@ -260,58 +202,29 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 1
+      "tension": 2,
+      "trust": 3
      },
      "b": "tailor",
      "b_to_a": {
       "tension": 2,
-      "trust": 1
+      "trust": 3
      },
-     "reason": "{tailor.name}给你做过一件马甲，没收钱",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "tag_keeper",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{tag_keeper.name}的怀表每个月来你这里调一次",
-     "stage": "acquainted"
-    },
-    {
-     "a": "tailor",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "tag_keeper",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{tailor.name}知道{tag_keeper.name}在池子里用的是几号",
-     "stage": "acquainted"
+     "reason": "二十年的老街坊，每年入冬对方都关上门替你量身做衣，软尺勒过胸口和腰际时呼吸总是烫的，那件马甲内衬还绣着你们的暗号。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "tailor",
-    "tag_keeper"
+    "tailor"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想让雾里的号码还是号码",
-    "limit_gap": "那本档案今晚就要在黑市上卖",
-    "meeting_reason": "你们三个都是港务街的老铺子",
-    "resource_gap": "{tag_keeper.name}有总板，{tailor.name}有一柜子档案，你有一间钟表铺和整条街的钟"
+    "irreplaceable_goal": "借铜钟报时的空当，和{tailor.name}一起在更衣大厅截回那本档案。",
+    "limit_gap": "那本档案今夜就要在黑市易手。",
+    "meeting_reason": "打烊前一个钟头，{tailor.name}借口给你量新马甲，把你拉进号房内间，软尺还缠在两人手腕之间。",
+    "resource_gap": "{tailor.name}熟知全城体面人的身材秘密，你管着浴场铜钟的报时。"
    },
    "tags": [
-    "coercion_theme"
+    "romance_light"
    ],
    "tension_engine_ids": [
     "te_measure_file",
@@ -319,8 +232,8 @@
    ]
   },
   {
-   "chemistry": "你是法庭的速记员，明早要记的那一页处方是{apothecary.name}的；{outside_inspector.name}私下问你，那一页上的号码会不会当庭念出名字。",
-   "id": "k_steno_court",
+   "chemistry": "法庭明早要调阅药剂师{apothecary.name}处方簿上被撕走的那一页，上面是体面人不敢声张的病；你是明早当庭记录的速记员。",
+   "id": "k_steno_apothecary_oil",
    "identity_ids": [
     "stenographer"
    ],
@@ -332,58 +245,29 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 1
+      "tension": 2,
+      "trust": 3
      },
      "b": "apothecary",
      "b_to_a": {
       "tension": 2,
-      "trust": 1
+      "trust": 3
      },
-     "reason": "{apothecary.name}给你开过一回止咳的药",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "outside_inspector",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{outside_inspector.name}看过你记的好几份口供",
-     "stage": "acquainted"
-    },
-    {
-     "a": "apothecary",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "outside_inspector",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{outside_inspector.name}来药铺问过那一页",
-     "stage": "stranger"
+     "reason": "你常年伏案速记落下了腕痛和失眠，每周三晚都是对方在药铺后屋用温热的药油替你揉开筋骨，两人早就是雾都夜里彼此唯一的伴。",
+     "stage": "committed"
     }
    ],
    "slots": [
-    "apothecary",
-    "outside_inspector"
+    "apothecary"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想把庭上的每一句话都记准，又不想亲手记下一个人的名字",
-    "limit_gap": "明早开庭",
-    "meeting_reason": "你在法庭和浴场都碰见过这两个人",
-    "resource_gap": "{apothecary.name}有处方簿，{outside_inspector.name}有案子和搜查令，你有一支速记笔"
+    "irreplaceable_goal": "和{apothecary.name}商定明早庭上怎么说，保住药铺，也保住两个人的日子。",
+    "limit_gap": "明早开庭，传票已经贴在药铺门板上。",
+    "meeting_reason": "{apothecary.name}买了两枚连号的包时铜牌，在冒着热气的木缸边等你下班。",
+    "resource_gap": "{apothecary.name}有那页处方的原件，你有明早呈给法官的速记底稿。"
    },
    "tags": [
-    "coercion_theme"
+    "romance_light"
    ],
    "tension_engine_ids": [
     "te_prescription",
@@ -391,8 +275,51 @@
    ]
   },
   {
-   "chemistry": "浴场欠着你的银行一笔钱，{tag_keeper.name}说总板就是浴场唯一值钱的东西；{coal_merchant.name}来找过你，说只要你催债，管事就会开板。",
-   "id": "k_banker_board",
+   "chemistry": "号房管事{tag_keeper.name}守着写满真名的总板，只有你知道{tag_keeper.ta}每周三也会摘下钥匙、挂一枚匿名铜牌泡进池子；今晚十九号铜牌丢了。",
+   "id": "k_watch_keeper_window",
+   "identity_ids": [
+    "watchmaker"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 2
+     },
+     "b": "tag_keeper",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 2
+     },
+     "reason": "每次你递铜牌进小窗，对方都借着接牌在暗影里摩挲你的指节；上回锅炉熄火停电，你们在号房内间的窄榻上挨着听了一夜雨。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "tag_keeper"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "不开总板也找回十九号，让{tag_keeper.name}的周三继续只是一个号码。",
+    "limit_gap": "打烊清点之前找不到十九号，就得惊动东家开总板。",
+    "meeting_reason": "小窗落下挡板，{tag_keeper.name}把那串从不离身的黄铜钥匙塞进你手心。",
+    "resource_gap": "{tag_keeper.name}有总板钥匙和开板的权，你知道{tag_keeper.ta}自己的那个匿名号码。"
+   },
+   "tags": [
+    "coercion_theme"
+   ],
+   "tension_engine_ids": [
+    "te_missing_tag",
+    "te_tub_noise"
+   ]
+  },
+  {
+   "chemistry": "浴场欠着你的银行一笔大债，能抵债的只有那块记着全城名流真名的总板；号房内间里，{tag_keeper.name}站在总板前，问你打算拿它怎么办。",
+   "id": "k_banker_keeper_board",
    "identity_ids": [
     "banker"
    ],
@@ -404,55 +331,26 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
+      "tension": 3,
       "trust": 1
      },
      "b": "tag_keeper",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 2
      },
-     "reason": "{tag_keeper.name}替你的号码挡过一回人",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "coal_merchant",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 0
-     },
-     "reason": "{coal_merchant.name}在包时缸里跟你谈过一回生意",
-     "stage": "acquainted"
-    },
-    {
-     "a": "tag_keeper",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "coal_merchant",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "浴场欠{coal_merchant.name}三个月的煤钱",
-     "stage": "acquainted"
+     "reason": "半年前你在包时缸里低血糖晕过去，是对方没叫外人、独自把你抱出水擦干穿衣，还替你守住了银行合伙人来这里的事。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "tag_keeper",
-    "coal_merchant"
+    "tag_keeper"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想把钱收回来，又不想自己的号码跟着总板一起见光",
-    "limit_gap": "锅炉的煤只够烧到半夜",
-    "meeting_reason": "你每周来泡一回，两个人都知道你的号码",
-    "resource_gap": "你有借据和银行，{tag_keeper.name}有总板，{coal_merchant.name}有全城的煤"
+    "irreplaceable_goal": "找出一条不开总板也能还债的路，让{tag_keeper.name}自己愿意站到你这边。",
+    "limit_gap": "今晚是最后的宽限，煤商还在门外等着逼浴场开板。",
+    "meeting_reason": "你用贵宾铜号走进号房内间查账，{tag_keeper.name}反手插上了门销。",
+    "resource_gap": "你握着到期的借据，{tag_keeper.name}守着那块连你的号码也记在上面的总板。"
    },
    "tags": [
     "coercion_theme"
@@ -463,10 +361,11 @@
    ]
   },
   {
-   "chemistry": "你在港务局查囤煤，{coal_merchant.name}一见你就请你去浴场泡一个钟头；{apothecary.name}的处方簿里，有一页写着你常用的那个号码。",
-   "id": "k_harbor_inspect",
+   "chemistry": "你在港务局查私囤的煤，煤商{coal_merchant.name}故意断煤逼浴场停炉散雾，想趁机看清池子里那些体面人的脸；今晚{coal_merchant.ta}包下特等浴缸，请你单独谈。",
+   "id": "k_harbor_coal_tub",
    "identity_ids": [
-    "harbor_official"
+    "harbor_official",
+    "banker"
    ],
    "player_positions": [
     "high"
@@ -476,55 +375,26 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 0
+      "tension": 3,
+      "trust": 1
      },
      "b": "coal_merchant",
      "b_to_a": {
-      "tension": 1,
-      "trust": 0
-     },
-     "reason": "{coal_merchant.name}请你泡的那一回，你没去",
-     "stage": "stranger"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
+      "tension": 3,
       "trust": 1
      },
-     "b": "apothecary",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{apothecary.name}从没问过你的名字",
-     "stage": "acquainted"
-    },
-    {
-     "a": "coal_merchant",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "apothecary",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{coal_merchant.name}打听过那一页处方",
-     "stage": "stranger"
+     "reason": "三个月前港务商会夜宴散场，两人挤在同一辆马车里一路唇枪舌剑，下车时对方替你理正了领口，说下回在浴场接着谈。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "coal_merchant",
-    "apothecary"
+    "coal_merchant"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想把囤煤的事办干净，又怕自己的号码先被人念出来",
-    "limit_gap": "明早法庭要调那一页",
-    "meeting_reason": "你来港务街这几年，两个人都在浴场跟你打过照面",
-    "resource_gap": "你有查办权，{coal_merchant.name}有煤栈，{apothecary.name}有那本处方簿"
+    "irreplaceable_goal": "让{coal_merchant.name}恢复平价供煤，也弄清马车上那句话是不是玩笑。",
+    "limit_gap": "锅炉房的余煤只够烧到半夜，蒸汽一散，整池人都要露脸。",
+    "meeting_reason": "{coal_merchant.name}在热气渐散的特等浴缸里等你，两人都没穿外衣。",
+    "resource_gap": "你有港务局的查封令和税单，{coal_merchant.name}有锅炉今晚急需的煤。"
    },
    "tags": [
     "coercion_theme"
@@ -535,9 +405,12 @@
    ]
   },
   {
-   "chemistry": "{fallen_heir.name}的大衣挂在{tag_keeper.name}的总板上，白天一个号，夜里换了灰袍又是一个号；{tag_keeper.name}说两个号码里，总有一个要被人认出来。",
-   "id": "k_board_and_heir",
-   "identity_ids": [],
+   "chemistry": "你在更衣室捡到{fallen_heir.name}大衣里掉出的当票，当的是伯爵府最后一件家传信物；此刻池子里有人认出了{fallen_heir.ta}。",
+   "id": "k_heir_pawn_ticket",
+   "identity_ids": [
+    "stenographer",
+    "banker"
+   ],
    "player_positions": [
     "low",
     "equal",
@@ -548,58 +421,29 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "tag_keeper",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{tag_keeper.name}给你的铜号，总是同一枚",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "fallen_heir",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{fallen_heir.name}替你搓过背，没收小费",
-     "stage": "acquainted"
-    },
-    {
-     "a": "tag_keeper",
-     "a_to_b": {
       "tension": 3,
-      "trust": 1
+      "trust": 2
      },
      "b": "fallen_heir",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 2
      },
-     "reason": "{tag_keeper.name}替{fallen_heir.name}藏着白天那个号",
-     "stage": "acquainted"
+     "reason": "你们多次隔着蒸汽池的雾一句话不说地依偎取暖，谁也没问过真名，直到今晚在窄小的木缸里四目相对，才认出彼此白天的身份。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "tag_keeper",
     "fallen_heir"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想让两个号码都平平安安过了今晚",
-    "limit_gap": "打烊前，管事要对一遍总板",
-    "meeting_reason": "你在号房窗口和池子里都碰见过这两个人",
-    "resource_gap": "{tag_keeper.name}有总板，{fallen_heir.name}有两个号码，你是两个人都肯说实话的人"
+    "irreplaceable_goal": "陪{fallen_heir.name}熬过门外的盘查，一起想办法赎回那件信物。",
+    "limit_gap": "门外的熟人还在更衣大厅徘徊，下一次钟响之前不能露面。",
+    "meeting_reason": "十三号包时缸的门被推开又合上，浑身湿透的{fallen_heir.name}跨进了你正泡着的木缸。",
+    "resource_gap": "你有那张当票和包时缸的门闩，{fallen_heir.name}有贵族圈子里的内幕和最后一点骄傲。"
    },
    "tags": [
-    "coercion_theme"
+    "romance_light"
    ],
    "tension_engine_ids": [
     "te_recognized",
@@ -607,7 +451,7 @@
    ]
   },
   {
-   "chemistry": "{outside_inspector.name}在追一个号码；{tailor.name}凭肩宽认出过那个人；{apothecary.name}的处方簿上，那个号码每周都来拿药。",
+   "chemistry": "{outside_inspector.name}拿着搜查令要查一个铜号，而那个铜号每周都在{apothecary.name}的处方簿上拿药；你站在号房窗口前，手里正捏着那枚被两边同时盯上的铜牌。",
    "id": "k_three_numbers",
    "identity_ids": [],
    "player_positions": [
@@ -620,105 +464,62 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 0
+      "tension": 2,
+      "trust": 1
      },
      "b": "outside_inspector",
      "b_to_a": {
-      "tension": 1,
+      "tension": 2,
       "trust": 1
      },
-     "reason": "{outside_inspector.name}在雾里替你指过一回路",
-     "stage": "acquainted"
+     "reason": "你夜归时在港务街被警官盘问过两回，对方记住了你袖口淡淡的药草味。",
+     "stage": "testing"
     },
     {
      "a": "player",
      "a_to_b": {
       "tension": 1,
-      "trust": 1
-     },
-     "b": "tailor",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{tailor.name}量过你的肩宽",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
+      "trust": 2
      },
      "b": "apothecary",
      "b_to_a": {
       "tension": 1,
-      "trust": 1
+      "trust": 2
      },
-     "reason": "{apothecary.name}给你配过一回安神的药",
-     "stage": "acquainted"
+     "reason": "你替药剂师送过几回不记名的药包，知道药铺后门三长一短的敲门规矩。",
+     "stage": "familiar"
     },
     {
      "a": "outside_inspector",
      "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "tailor",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{outside_inspector.name}上门借过档案，{tailor.name}没给",
-     "stage": "stranger"
-    },
-    {
-     "a": "outside_inspector",
-     "a_to_b": {
-      "tension": 2,
+      "tension": 3,
       "trust": 0
      },
      "b": "apothecary",
      "b_to_a": {
-      "tension": 2,
+      "tension": 3,
       "trust": 0
      },
-     "reason": "{apothecary.name}的处方簿，{outside_inspector.name}翻过一回",
-     "stage": "stranger"
-    },
-    {
-     "a": "tailor",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "apothecary",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "两个人在港务街做了二十年邻居",
-     "stage": "acquainted"
+     "reason": "警官白天刚去药铺翻过柜台，药剂师当着面烧掉了一张废方子。",
+     "stage": "testing"
     }
    ],
    "slots": [
     "outside_inspector",
-    "tailor",
     "apothecary"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想让那个号码在天亮前还只是一个号码",
-    "limit_gap": "天亮前警官要拿到名字",
-    "meeting_reason": "三个人你都在港务街和池子里碰见过",
-    "resource_gap": "{outside_inspector.name}有证章，{tailor.name}有档案，{apothecary.name}有处方簿，你是唯一一个不知道那个号码是谁的人"
+    "irreplaceable_goal": "让那枚铜牌在天亮前依然只是一个号码。",
+    "limit_gap": "天亮前警官要交人，药剂师要保住药铺的名声。",
+    "meeting_reason": "打烊前的浓雾里，三个人在号房窗口下撞了个正着。",
+    "resource_gap": "{outside_inspector.name}有警徽，{apothecary.name}有处方底根，你有那枚铜牌本身。"
    },
    "tags": [
     "coercion_theme"
    ],
    "tension_engine_ids": [
-    "te_measure_file",
-    "te_prescription"
+    "te_prescription",
+    "te_recognized"
    ]
   }
  ],
@@ -819,7 +620,7 @@
      "蒸汽里两个号码挨着坐"
     ],
     "preconditions": [
-     "号房还开着"
+     "号房还开着，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -942,7 +743,7 @@
      "蒸汽里一条热毛巾搭在肩上的分量"
     ],
     "preconditions": [
-     "还在上工"
+     "还在上工，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1065,7 +866,7 @@
      "雾里两个人站在同一盏煤气灯下"
     ],
     "preconditions": [
-     "证章还别在身上"
+     "证章还别在身上，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -1188,7 +989,7 @@
      "药铺后屋一壶薄荷茶"
     ],
     "preconditions": [
-     "药铺还开着"
+     "药铺还开着，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -1311,7 +1112,7 @@
      "热水里两个人都不说话"
     ],
     "preconditions": [
-     "账还没算完"
+     "账还没算完，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      1,
@@ -1434,7 +1235,7 @@
      "软尺绕在两个人中间"
     ],
     "preconditions": [
-     "铺子还开着"
+     "铺子还开着，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -1596,6 +1397,38 @@
    "start_minute": 1380,
    "tags": [],
    "title": "在号房里间坐一会儿"
+  },
+  {
+   "beats": [
+    "蒸汽厚得看不清对面的人",
+    "有人伸手来接毛巾，指尖碰了一下又缩回去",
+    "池子另一头传来压低的笑声"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "a_steam_towel",
+   "location_ids": [
+    "steam_pool"
+   ],
+   "start_minute": 1170,
+   "tags": [],
+   "title": "在蒸汽池边替人递热毛巾"
+  },
+  {
+   "beats": [
+    "雾里的煤气灯晕成一团黄",
+    "茶摊老板把碗推过来，热气扑在脸上",
+    "身后有人报出一个铜号，又很快走远"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [],
+   "id": "a_harbor_tea",
+   "location_ids": [
+    "harbor_street"
+   ],
+   "start_minute": 1080,
+   "tags": [],
+   "title": "在港务街口喝一碗热茶"
   }
  ],
  "default_npc_gender_mix": {
@@ -1964,7 +1797,7 @@
   ],
   "order": "given_first"
  },
- "notes": "第二批世界（用户 2026-10-03 素材库的改写，见 content-src/concepts/batch2-concepts.md 第 20 个）。号码与总板是胁迫题材的前提，按 C2 打 coercion_theme；亲密只来自人物本身。西式名，名在前。性别按会话偏好生成（D15）。",
+ "notes": "第二批世界（用户 2026-10-03 素材库的改写，见 content-src/concepts/batch2-concepts.md 第 20 个）。号码与总板是胁迫题材的前提，按 C2 打 coercion_theme；亲密只来自人物本身。西式名，名在前。性别按会话偏好生成（D15）。\n2026-10-18 按写作规则 v2 改造：组合改成 8 组单人加 1 组号房窗口对峙，张力来自夜里搓背的贵族、软尺缠腕的老街坊、药油揉腕的伴侣和号房窄榻上的雨夜；把柄改由药剂师握着警官的处方号码；补两个日常。",
  "player_identities": [
   {
    "age_range": [
@@ -2280,46 +2113,53 @@
    "trigger": "煤价一夜涨了三倍，锅炉房说今晚的煤只够烧到半夜，池子要降温"
   },
   {
-   "choice": "引开一个，还是装作没看见",
+   "choice": "陪{apothecary.name}去谈，还是劝{apothecary.ta}装作没认出来",
    "exits": [
     {
-     "cost": "被引开的那个人会问你凭什么",
-     "option": "把其中一个引开"
+     "cost": "从此药铺和警官互相攥着对方过日子",
+     "option": "让{apothecary.name}拿这件事换撤走搜查令"
     },
     {
-     "cost": "那两个人里，总有一个会来找你",
-     "option": "装作什么都没看见"
+     "cost": "明早的搜查照样会来",
+     "option": "劝{apothecary.name}当作什么都没看见"
     }
    ],
    "far": {
-    "consequence": "两家人的体面都保不住",
+    "consequence": "警官和药铺一起被全城议论",
     "due_days": 7,
-    "trigger": "认出来的事传出去"
+    "trigger": "处方簿上的号码被人对上"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [],
    "id": "p_recognized",
    "immediate": {
     "minutes": 5,
-    "text": "有人猛地站起来，水哗地溅了一地"
+    "text": "有人猛地从水里站起来，水哗地溅了一地"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{apothecary.name}的处方簿上记着{outside_inspector.name}挂匿名号码每周来拿不敢声张的药",
+    "holder": "apothecary",
+    "subject": "outside_inspector"
+   },
    "location_ids": [
     "steam_pool",
     "changing_hall"
    ],
    "near": {
     "deadline_minutes": 30,
-    "text": "两个人出池子"
+    "text": "警官出池子，搜查令就要落到药铺头上"
    },
-   "objective": "在两个人出池子之前，决定帮不帮",
+   "objective": "在警官出池子之前，弄清{apothecary.name}打算拿这件事做什么",
    "source": "person",
    "start_minute": 1260,
-   "tags": [],
+   "tags": [
+    "coercion_theme"
+   ],
    "title": "隔着蒸汽",
-   "trigger": "两个号码隔着蒸汽对上了眼，按礼法这两个人一辈子都不该见面，可两个人都认出了对方"
+   "trigger": "{apothecary.name}在蒸汽池里认出了{outside_inspector.name}：手腕上那个匿名号码，正是每周来药铺拿那种药的人"
   },
   {
    "choice": "去敲门，还是去叫管事",

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "cellist_hall_tailpin_lock_jam",
-  "title": "清冷大提琴女神·独奏夜的锁匙与贴身禁锢",
+  "title": "金色大厅的首演周",
   "extends": null,
   "era": "当代维也纳，金色大厅一场大提琴协奏曲首演前的排练周",
   "region": "金色大厅：独奏台、侧台调音廊、乐器整备室、独奏家休息室与对街的咖啡馆",
@@ -309,7 +309,8 @@
         "隔着垂幔低声说一句话"
       ],
       "pressure_modifiers": {
-        "press_metal_detector_gate": "探测门就装在调音廊出口，谁身上带着什么，一过门就知道"
+        "press_metal_detector_gate": "探测门就装在调音廊出口，谁身上带着什么，一过门就知道",
+        "press_cameraman_footage": "调音廊没有监控，谈价钱的话只有两人听得见"
       },
       "tags": []
     },
@@ -375,7 +376,8 @@
       ],
       "pressure_modifiers": {
         "press_section_rumor_key": "乐团的人就坐在隔壁卡座，一句话说重了就会传回排练厅",
-        "press_patron_dinner_seat": "赞助人的秘书就在柜台前订晚宴的位子"
+        "press_patron_dinner_seat": "赞助人的秘书就在柜台前订晚宴的位子",
+        "press_cameraman_footage": "摄像师坐在靠窗的位子，手机屏幕朝下扣在桌上"
       },
       "tags": []
     }
@@ -602,7 +604,7 @@
           "拿音乐开玩笑"
         ],
         "preconditions": [
-          "独奏家那边没有任何麻烦"
+          "独奏家那边没有任何麻烦，双方都清醒、出于自愿"
         ],
         "boundaries": [
           "不碰独奏家的私事"
@@ -731,7 +733,7 @@
           "催促"
         ],
         "preconditions": [
-          "琴先修好"
+          "琴先修好，双方都清醒、出于自愿"
         ],
         "boundaries": [
           "不在整备室里越线"
@@ -855,7 +857,7 @@
           "欺负朋友的人"
         ],
         "preconditions": [
-          "独奏家那边一切都好"
+          "独奏家那边一切都好，双方都清醒、出于自愿"
         ],
         "boundaries": [
           "不碰朋友的人"
@@ -983,7 +985,7 @@
           "迟到"
         ],
         "preconditions": [
-          "音乐先放在第一位"
+          "音乐先放在第一位，双方都清醒、出于自愿"
         ],
         "boundaries": [
           "不在乐团里有私情"
@@ -1107,7 +1109,7 @@
           "被无视"
         ],
         "preconditions": [
-          "对方心甘情愿，而不是被拿捏"
+          "对方心甘情愿，而不是被拿捏，双方都清醒、出于自愿"
         ],
         "boundaries": [
           "不在机位和导播面前越线"

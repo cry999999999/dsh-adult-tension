@@ -153,6 +153,15 @@
           - 大提琴世界把一个压力从 institution 改成 accident，让四个维度各 1~2 个。
         - 公共辅助模块：`work/v2-retrofit/scripts/_v2_helper.py`；子代理说明：`work/v2-retrofit/BRIEF.md`。两个目录都被 gitignore，不提交。
         - 内容版本改成 2026.10.9，未推送。4 个世界都通过 `--strict-v2`，编译通过，跨包相似度也过了。按用户要求没有跑全套检查。
+      - 2026-10-21 批量改造（用户与 Gemini 规划，我执行）：
+        - 58 个世界通过 `--strict-v2` 并随本次提交（`harbor_night_shift` 的改造会让 31 个引擎测试开不了局，保持 HEAD 版本，脚本留着不用；60 个试玩脚本里的旧标题换成新标题），每个世界一个脚本 `work/v2-retrofit/scripts/<id>.py`（从 HEAD 重建），之后依次跑 `apply_titles.py`（带“：”“·”的标题改短）和 `apply_review_fixes.py`。
+        - 回顾检查后的修补（`apply_review_fixes.py`）：
+          - 19 个世界的 `style_hint` 改成一句写法指令，两个世界的 `tone` 调整；
+          - 《六叠半》去掉“高中”回忆，百乐门“特务处女处长”改语序；
+          - 40 个世界、225 个人物的第一条亲密前提接上“双方都清醒、出于自愿”。
+        - 用户决定：年龄红线按规范 ≥18；遗留的枪械、围困、起火等险情不改。
+        - 《山宅守灵》按 Gemini 4 方案改成《白幡与冷菊》。
+        - 内容版本 2026.10.9 → 2026.10.10，`content.lock.json`、e2e 校准记录与 `references/worlds.md` 重新生成。
       - 下一步：按用户与 Gemini 的方案改造其余世界（`harbor_night_shift` 被引擎测试钉住，不动）。P18 剩下的部分（11 个只给男性玩家的世界要不要加女性身份）仍待用户决定。
 
 ## 待决事项（需要用户决定）

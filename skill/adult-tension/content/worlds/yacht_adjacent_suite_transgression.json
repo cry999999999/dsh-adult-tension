@@ -99,156 +99,8 @@
  ],
  "cast_combos": [
   {
-   "chemistry": "你握着三百亿做空凭证与公证底稿。隔壁是穿墨绿真丝睡袍、在冷暴力里傲骨不屈的长媳{eldest_daughter_in_law.name}；门外是持万能卡步步紧逼的总管家{family_chief_steward.name}。你要在风雨阳台前用法条与复仇大计剥开长媳的心防，让长媳在完全自愿中签下同盟；再在管家刷卡破门前护长媳化险为夷。",
-   "id": "combo_yt_counsel_lead",
-   "identity_ids": [
-    "pc_chief_legal_counsel"
-   ],
-   "player_positions": [
-    "equal",
-    "high"
-   ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 4
-     },
-     "b": "eldest_daughter_in_law",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 5
-     },
-     "reason": "隔室相对，十年防线一夜松动。",
-     "stage": "flirting"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "family_chief_steward",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "裴家的恶毒走狗。",
-     "stage": "stranger"
-    },
-    {
-     "a": "eldest_daughter_in_law",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "family_chief_steward",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "常年以家规侵犯隐私。",
-     "stage": "stranger"
-    }
-   ],
-   "slots": [
-    "eldest_daughter_in_law",
-    "family_chief_steward"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "破晓前拿到长媳的信托签字，在管家眼皮底下保全证据。",
-    "limit_gap": "顾问要为父母复仇、救长媳出牢笼，长媳要撕碎枷锁重获自由，管家要维系家规扫除异己。",
-    "meeting_reason": "顾问受邀登船主导重组，借风暴夜在阳台约见长媳。",
-    "resource_gap": "顾问握做空底稿与离岸诉讼渠道，长媳握内部资金底账与母族股权凭证，管家握房卡、监控与私兵。"
-   },
-   "tags": [
-    "workplace_power",
-    "crime"
-   ],
-   "tension_engine_ids": [
-    "te_heiress_flesh_vs_revenge_pact",
-    "te_drunk_husband_vs_forbidden_embrace"
-   ]
-  },
-  {
-   "chemistry": "你名分受缚，意志却在主导。面对踏上阳台的顾问{chief_legal_counsel.name}，你用傲岸的视线反过来审视对方的动机；隔壁醉酒的丈夫{drunk_scion_husband.name}翻身摔杯时，你把顾问拉进衣帽间深处，隔着屏风逼对方交出全部底牌，自己掌控整场复仇。",
-   "id": "combo_yt_heiress_lead",
-   "identity_ids": [
-    "pc_eldest_daughter_in_law"
-   ],
-   "player_positions": [
-    "high",
-    "equal"
-   ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 5
-     },
-     "b": "chief_legal_counsel",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 5
-     },
-     "reason": "生死相托中放下傲慢面具。",
-     "stage": "intimate"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "drunk_scion_husband",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "名存实亡的寄生虫。",
-     "stage": "stranger"
-    },
-    {
-     "a": "chief_legal_counsel",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "drunk_scion_husband",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "誓要送其上商业法庭。",
-     "stage": "testing"
-    }
-   ],
-   "slots": [
-    "chief_legal_counsel",
-    "drunk_scion_husband"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "丈夫酒醒前完成做空签字，让顾问把底牌全数摊开。",
-    "limit_gap": "长媳要斩断婚姻枷锁，顾问要颠覆裴家守护长媳，丈夫要继续纨绔放荡。",
-    "meeting_reason": "长媳在风雨夜主动旋开阳台门锁，引顾问详谈。",
-    "resource_gap": "长媳握资金权限与游艇钥匙，顾问握法律杀器与海外退路，丈夫握名义分红与手枪。"
-   },
-   "tags": [
-    "intimate",
-    "workplace_power"
-   ],
-   "tension_engine_ids": [
-    "te_heiress_flesh_vs_revenge_pact",
-    "te_drunk_husband_vs_forbidden_embrace"
-   ]
-  },
-  {
-   "chemistry": "你在走廊转角冒险切断监控，暗中掩护长媳{eldest_daughter_in_law.name}与顾问{chief_legal_counsel.name}的深夜密会。你要顶住管家的盘查，在游艇倾覆前引导两人穿过安保网、交出快艇钥匙，报答当年的救母之恩。",
-   "id": "combo_yt_bodyguard_lead",
+   "chemistry": "人前是名门长媳与特等舱安保队长，门一锁，是早已共享离岸金库密码、在暴风雨夜互托身家的同谋与枕边人。",
+   "id": "combo_heiress_boudoir_seal",
    "identity_ids": [
     "pc_loyal_bodyguard_captain"
    ],
@@ -260,59 +112,295 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 5
+      "tension": 4,
+      "trust": 4
      },
      "b": "eldest_daughter_in_law",
      "b_to_a": {
-      "tension": 1,
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "三年前对方替你母亲付清了瑞士疗养院的手术费，上月核对逃生航线时，亲手解下祖母绿胸针别进你内袋",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "eldest_daughter_in_law"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "替长媳守住私印与逃生航线，熬到船靠岸。",
+    "limit_gap": "主卧外就是总管家的巡夜路线，护卫在少奶奶内寝待得太久，第二天就会传遍全船。",
+    "meeting_reason": "午夜后{eldest_daughter_in_law.name}把你叫进主卧，屏退女佣，让你守着梳妆台暗格，等对方逐页盖完私印。",
+    "resource_gap": "{eldest_daughter_in_law.name}握着母族代持私印和整盘做空计划，你只有一把配枪和对方给的那枚胸针。"
+   },
+   "tags": [
+    "intimate",
+    "workplace_power"
+   ],
+   "tension_engine_ids": [
+    "te_heiress_flesh_vs_revenge_pact",
+    "te_patriarchy_vs_short_strike"
+   ]
+  },
+  {
+   "chemistry": "裴家二房千金与随船安保队长，心照不宣地拿巡逻盲区换家族内幕，谁也不肯先把底牌亮全。",
+   "id": "combo_second_heiress_deck_ledger",
+   "identity_ids": [
+    "pc_loyal_bodyguard_captain"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "second_branch_heiress",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "登船前夜在维多利亚港码头，二房千金借点烟把一张空白支票塞进你战术手套，笑问替大房守门值几个钱",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "second_branch_heiress"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "摸清二房今晚想买什么，再决定把哪道门留给对方。",
+    "limit_gap": "收了二房的钱就等于背着大房开门，被长媳知道，你在裴家就待不下去了。",
+    "meeting_reason": "{second_branch_heiress.name}在红毯回廊拦住巡夜的你，借点烟问你今晚长房套房里都有谁进出。",
+    "resource_gap": "{second_branch_heiress.name}有二房的钱和人脉，你只有顶层的巡逻排班和一双看得见各房动静的眼睛。"
+   },
+   "tags": [
+    "intimate",
+    "gambling"
+   ],
+   "tension_engine_ids": [
+    "te_patriarchy_vs_short_strike",
+    "te_typhoon_pitch_vs_ocean_abyss"
+   ]
+  },
+  {
+   "chemistry": "人前是受邀核账的顾问与随船同僚，私下是互通三百亿做空底牌、知道彼此每一道旧伤的同路人。",
+   "id": "combo_counsel_balcony_pact",
+   "identity_ids": [
+    "pc_family_chief_steward"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 4
+     },
+     "b": "chief_legal_counsel",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "顾问当年被裴家逐出律所那晚，你在雨夜的地下车库把原始审计底稿塞进对方风衣，两人约好三年后公海清算",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "chief_legal_counsel"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "核对清算底稿，定下明早开盘前各自的动作。",
+    "limit_gap": "两人一旦被看出交情，管家会立刻把顾问请下船。",
+    "meeting_reason": "宵禁后你借送明早议程敲开顾问书房，{chief_legal_counsel.name}拉开阳台移门，示意你到风里说话。",
+    "resource_gap": "{chief_legal_counsel.name}握着做空底稿和公证资格，你握着裴家内部的门禁与账目。"
+   },
+   "tags": [
+    "intimate",
+    "crime"
+   ],
+   "tension_engine_ids": [
+    "te_heiress_flesh_vs_revenge_pact",
+    "te_patriarchy_vs_short_strike"
+   ]
+  },
+  {
+   "chemistry": "隔着一道阳台移门，五年前没说完的旧情和复仇契约一起被推到台面上。",
+   "id": "combo_heiress_equal_trust",
+   "identity_ids": [
+    "pc_chief_legal_counsel",
+    "pc_family_chief_steward"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "eldest_daughter_in_law",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "五年前联姻前夕，长媳在旧书房把半枚私章留在你案头，从此再没提过",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "eldest_daughter_in_law"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "说清当年为什么分开，再决定今晚要不要一起动手。",
+    "limit_gap": "长媳的丈夫就睡在屏风后，任何一句话说重了都会把人吵醒。",
+    "meeting_reason": "{eldest_daughter_in_law.name}推开阳台移门，第一句话就问你还留没留着五年前那半枚私章。",
+    "resource_gap": "你握着客卿身份和半枚私章，{eldest_daughter_in_law.name}握着母族代持授权和整个长房的秘密。"
+   },
+   "tags": [
+    "intimate",
+    "workplace_power"
+   ],
+   "tension_engine_ids": [
+    "te_heiress_flesh_vs_revenge_pact",
+    "te_drunk_husband_vs_forbidden_embrace"
+   ]
+  },
+  {
+   "chemistry": "各司其职的随船重臣，彼此捏着一桩旧账，在家族倾覆前夜互相试探底线。",
+   "id": "combo_steward_corridor_watch",
+   "identity_ids": [
+    "pc_chief_legal_counsel"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "family_chief_steward",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "去年宗祠分红大会上你替老管家瞒下侄子挪用公款的亏空，对方今晚把顶层门禁记录调成了手动归档",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "family_chief_steward"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "弄清老管家今晚站哪边，换对方把门禁记录压到天亮。",
+    "limit_gap": "老管家两头下注，今晚说漏一句，就可能被拿去换赏钱。",
+    "meeting_reason": "{family_chief_steward.name}拄着银头手杖在红毯回廊拦住你，请你进茶水间喝杯参茶。",
+    "resource_gap": "{family_chief_steward.name}掌着全船门禁和巡夜记录，你握着对方侄子挪用公款的旧账。"
+   },
+   "tags": [
+    "workplace_power"
+   ],
+   "tension_engine_ids": [
+    "te_patriarchy_vs_short_strike",
+    "te_drunk_husband_vs_forbidden_embrace"
+   ]
+  },
+  {
+   "chemistry": "人前是主家继承人与随身安保队长，私下是无论内斗怎么收场都只听你一人私令的死士。",
+   "id": "combo_bodyguard_night_escort",
+   "identity_ids": [
+    "pc_eldest_daughter_in_law",
+    "pc_drunk_scion_husband"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
       "trust": 5
      },
-     "reason": "救母大恩重若泰山。",
-     "stage": "familiar"
-    },
+     "b": "loyal_bodyguard_captain",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "你当年绕过董事会保下了因公负伤的队长，登船前对方把三号快艇的机械钥匙交到你掌心",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
+    "loyal_bodyguard_captain"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "定下今晚谁守哪道门，以及万一要走，快艇几点放下。",
+    "limit_gap": "护卫越界一步就是叛主，队长守的规矩比命还硬。",
+    "meeting_reason": "风浪渐起，{loyal_bodyguard_captain.name}敲开你的房门，低声报告走廊换防的异常。",
+    "resource_gap": "你握着继承人的身份和对方的雇佣合同，{loyal_bodyguard_captain.name}握着三号舷侧快艇的唯一钥匙。"
+   },
+   "tags": [
+    "intimate",
+    "violence"
+   ],
+   "tension_engine_ids": [
+    "te_heiress_flesh_vs_revenge_pact",
+    "te_typhoon_pitch_vs_ocean_abyss"
+   ]
+  },
+  {
+   "chemistry": "同住顶层主卧的名义夫妻，靠一张赌债签单维持表面相安无事。",
+   "id": "combo_husband_sober_audit",
+   "identity_ids": [
+    "pc_eldest_daughter_in_law"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
     {
      "a": "player",
      "a_to_b": {
       "tension": 2,
       "trust": 4
      },
-     "b": "chief_legal_counsel",
+     "b": "drunk_scion_husband",
      "b_to_a": {
-      "tension": 1,
-      "trust": 4
-     },
-     "reason": "钦佩其担当。",
-     "stage": "familiar"
-    },
-    {
-     "a": "chief_legal_counsel",
-     "a_to_b": {
       "tension": 3,
-      "trust": 5
+      "trust": 3
      },
-     "b": "eldest_daughter_in_law",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 5
-     },
-     "reason": "战栗中紧紧相依。",
-     "stage": "committed"
+     "reason": "上月赌船寄来催缴函，是你替对方压下老会长的怒火，条件是这趟航程对方不准踏过主卧屏风半步",
+     "stage": "familiar"
     }
    ],
    "slots": [
-    "eldest_daughter_in_law",
-    "chief_legal_counsel"
+    "drunk_scion_husband"
    ],
    "stakes": {
-    "irreplaceable_goal": "拖住管家十分钟，确保两人完成上传并登艇脱困。",
-    "limit_gap": "队长要舍命报恩，长媳与顾问要摧毁裴家赢回自由。",
-    "meeting_reason": "队长执勤巡夜，用暗号替两人放哨。",
-    "resource_gap": "队长握监控盲区与快艇绞盘，长媳与顾问握巨资与门禁。"
+    "irreplaceable_goal": "逼对方在明早例会前交出信托投票权。",
+    "limit_gap": "大少爷醒着的每一分钟，都可能闹得全船皆知。",
+    "meeting_reason": "{drunk_scion_husband.name}半夜酒醒，提着醒酒器绕过屏风，要跟你谈谈明早例会上的事。",
+    "resource_gap": "你握着赌债签单和母族代持授权，{drunk_scion_husband.name}只剩名头和一身酒气。"
    },
    "tags": [
-    "workplace_power",
-    "crime"
+    "gambling",
+    "workplace_power"
    ],
    "tension_engine_ids": [
     "te_drunk_husband_vs_forbidden_embrace",
@@ -320,10 +408,54 @@
    ]
   },
   {
-   "chemistry": "你握着万能房卡与十二名保镖，隔着防盗门与纱帘逼近反锁在内的长媳{eldest_daughter_in_law.name}与顾问{chief_legal_counsel.name}；走廊另一头，收买你的二小姐{second_branch_heiress.name}正冷眼等你交货。你可以刷卡闯入抓现行；也可以在察觉裴氏即将暴雷、自己的受贿证据已被人拿捏时，为晚节与室内两人做一场冷血的交易。",
-   "id": "combo_yt_steward_lead",
+   "chemistry": "人前是长房主人与特聘顾问，私下是在公海风暴夜共用同一台解密终端的复仇共犯。",
+   "id": "combo_counsel_mirror_clause",
    "identity_ids": [
-    "pc_family_chief_steward"
+    "pc_eldest_daughter_in_law"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 4
+     },
+     "b": "chief_legal_counsel",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "三天前在苏黎世转机贵宾室，顾问替你扣好藏着微型密钥的袖扣，约好驶入公海盲区就在镜柜前交割",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "chief_legal_counsel"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "完成最后一次签章交割，并决定下船后两人怎么走。",
+    "limit_gap": "交割要在书房镜柜前做完，隔壁随时有人敲门。",
+    "meeting_reason": "游艇驶入公海盲区，{chief_legal_counsel.name}按约定在书房镜柜前等你，桌上摆好了最后一份交割文件。",
+    "resource_gap": "{chief_legal_counsel.name}握着藏在袖扣里的密钥和公证资格，你握着能让协议生效的签名。"
+   },
+   "tags": [
+    "intimate",
+    "crime"
+   ],
+   "tension_engine_ids": [
+    "te_heiress_flesh_vs_revenge_pact",
+    "te_drunk_husband_vs_forbidden_embrace"
+   ]
+  },
+  {
+   "chemistry": "由你亲手穿针引线，长媳与顾问在顶层连通套房里重逢，三人共谋掀翻裴家；每一句公事交割背后，都是压了五年的旧情。",
+   "id": "combo_boudoir_short_trio",
+   "identity_ids": [
+    "pc_loyal_bodyguard_captain"
    ],
    "player_positions": [
     "low",
@@ -335,234 +467,44 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 5,
-      "trust": 0
+      "tension": 4,
+      "trust": 4
      },
      "b": "eldest_daughter_in_law",
      "b_to_a": {
-      "tension": 5,
-      "trust": 0
+      "tension": 4,
+      "trust": 4
      },
-     "reason": "随时引火烧身的儿媳。",
-     "stage": "stranger"
+     "reason": "启航前夜长媳把主卧连通门的副卡交给你，约好由你今晚把顾问请进书房",
+     "stage": "intimate"
     },
     {
      "a": "player",
      "a_to_b": {
-      "tension": 5,
-      "trust": 1
+      "tension": 4,
+      "trust": 5
      },
      "b": "chief_legal_counsel",
      "b_to_a": {
-      "tension": 5,
-      "trust": 1
+      "tension": 4,
+      "trust": 4
      },
-     "reason": "对方握着自己的致命把柄。",
-     "stage": "testing"
-    },
-    {
-     "a": "chief_legal_counsel",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 5
-     },
-     "b": "eldest_daughter_in_law",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 5
-     },
-     "reason": "管家越逼，同盟越坚。",
+     "reason": "登船前顾问就通过加密频道和你对过三遍撤离时间表，只差今晚拿齐长房私印",
      "stage": "committed"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 2
-     },
-     "b": "second_branch_heiress",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 1
-     },
-     "reason": "收钱办事，彼此都留着后手。",
-     "stage": "testing"
     },
     {
      "a": "eldest_daughter_in_law",
      "a_to_b": {
       "tension": 4,
-      "trust": 2
+      "trust": 3
      },
-     "b": "second_branch_heiress",
+     "b": "chief_legal_counsel",
      "b_to_a": {
       "tension": 4,
-      "trust": 2
-     },
-     "reason": "妯娌之间棋逢对手，彼此欣赏又彼此提防。",
-     "stage": "testing"
-    },
-    {
-     "a": "chief_legal_counsel",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 1
-     },
-     "b": "second_branch_heiress",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "二小姐忌惮顾问的手段，顾问也在算二房的底牌。",
-     "stage": "acquainted"
-    }
-   ],
-   "slots": [
-    "eldest_daughter_in_law",
-    "chief_legal_counsel",
-    "second_branch_heiress"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "搜出做空协议或完成私下封口交易，全身而退。",
-    "limit_gap": "管家要安度晚年拿封口费，长媳与顾问要瓦解裴家，二小姐要长房的位子。",
-    "meeting_reason": "管家例行查房，察觉阳台异常执意登门。",
-    "resource_gap": "管家握房卡、武力与密报权，长媳握股权，顾问握做空杀器与管家的贪腐账目，二小姐握收买记录。"
-   },
-   "tags": [
-    "workplace_power",
-    "crime"
-   ],
-   "tension_engine_ids": [
-    "te_patriarchy_vs_short_strike",
-    "te_heiress_flesh_vs_revenge_pact"
-   ]
-  },
-  {
-   "chemistry": "你、顾问{chief_legal_counsel.name}与安保队长{loyal_bodyguard_captain.name}在风雨顶层打出默契的逃脱与反制：你以长媳身份正面震慑巡查，顾问在网络中枢完成致命做空，队长在暗处扫清障碍。三人打破尊卑界限，向破晓的海平线突围。",
-   "id": "combo_yt_escape_trio",
-   "identity_ids": [
-    "pc_eldest_daughter_in_law"
-   ],
-   "player_positions": [
-    "high",
-    "equal"
-   ],
-   "power_structure": "equal",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 5
-     },
-     "b": "chief_legal_counsel",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 5
-     },
-     "reason": "惊涛骇浪中确立生死契约。",
-     "stage": "committed"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
       "trust": 4
      },
-     "b": "loyal_bodyguard_captain",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 4
-     },
-     "reason": "感激其舍身相护。",
-     "stage": "familiar"
-    },
-    {
-     "a": "chief_legal_counsel",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 4
-     },
-     "b": "loyal_bodyguard_captain",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 4
-     },
-     "reason": "可以托付后背的袍泽。",
-     "stage": "familiar"
-    }
-   ],
-   "slots": [
-    "chief_legal_counsel",
-    "loyal_bodyguard_captain"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "管家调集全船保镖前登艇下水，驶向国际货轮。",
-    "limit_gap": "三人都为挣脱枷锁、平安脱离裴家而拼搏。",
-    "meeting_reason": "长媳暗中召集心腹，在顶层召开撤离协调会。",
-    "resource_gap": "长媳握内部指挥权与印章，顾问握诉讼与外部接应，队长握通道与快艇。"
-   },
-   "tags": [
-    "intimate",
-    "workplace_power"
-   ],
-   "tension_engine_ids": [
-    "te_drunk_husband_vs_forbidden_embrace",
-    "te_typhoon_pitch_vs_ocean_abyss"
-   ]
-  },
-  {
-   "chemistry": "你宿醉醒来察觉妻子异样，攥着手枪摇晃搜查，面对梳妆台前冷艳从容的妻子{eldest_daughter_in_law.name}与从阳台步入、气场凌厉的顾问{chief_legal_counsel.name}。你可以发狂扣动扳机鱼死网破；也可以在被甩到脸上的挪用公款、赌债与做空崩盘证据前崩溃妥协，签下自愿离婚协议。",
-   "id": "combo_yt_husband_lead",
-   "identity_ids": [
-    "pc_drunk_scion_husband"
-   ],
-   "player_positions": [
-    "high"
-   ],
-   "power_structure": "player_high",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "eldest_daughter_in_law",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "惊觉妻子早已在商业上将自己绞杀。",
-     "stage": "stranger"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "chief_legal_counsel",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "畏惧其雷霆手段。",
-     "stage": "stranger"
-    },
-    {
-     "a": "eldest_daughter_in_law",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 5
-     },
-     "b": "chief_legal_counsel",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 5
-     },
-     "reason": "并肩而立从容俯视。",
-     "stage": "committed"
+     "reason": "五年前两人因家族构陷被迫断联，今晚隔着连通阳台重逢，旧情一句也没冷",
+     "stage": "flirting"
     }
    ],
    "slots": [
@@ -570,18 +512,137 @@
     "chief_legal_counsel"
    ],
    "stakes": {
-    "irreplaceable_goal": "枪响之前被迫签下离婚与放弃信托声明。",
-    "limit_gap": "少爷要保住富贵免于牢狱，长媳与顾问要推翻裴家。",
-    "meeting_reason": "少爷酒醒不见妻子，循着风声撞破对峙。",
-    "resource_gap": "少爷握手枪与名义继承权，长媳与顾问握毁灭裴家的全部凭证。"
+    "irreplaceable_goal": "拿齐长房私印，让做空指令在明早开盘前生效。",
+    "limit_gap": "两人一见面就忘了时间，而开盘前每一分钟都要算准。",
+    "meeting_reason": "启航前{eldest_daughter_in_law.name}就把连通门副卡交给你保管；今晚十一点，你按约把{chief_legal_counsel.name}请进书房，三人当面核对离岸做空底稿。",
+    "resource_gap": "{eldest_daughter_in_law.name}握着长房私印，{chief_legal_counsel.name}握着做空底稿，你握着连通门的副卡和撤离时间表。"
    },
    "tags": [
-    "workplace_power",
+    "intimate",
     "crime"
    ],
    "tension_engine_ids": [
-    "te_drunk_husband_vs_forbidden_embrace",
+    "te_heiress_flesh_vs_revenge_pact",
     "te_patriarchy_vs_short_strike"
+   ]
+  },
+  {
+   "chemistry": "老管家看出大房将倾，向你递了投名状；二房想借你的手夺权；大少爷只想赎回那张签单。三方在红毯回廊当面对账。",
+   "id": "combo_corridor_voucher_trap",
+   "identity_ids": [
+    "pc_eldest_daughter_in_law",
+    "pc_chief_legal_counsel"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "family_chief_steward",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "晚宴散席时老管家主动在茶室向你透了口风，请你子夜来回廊坐镇",
+     "stage": "flirting"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "second_branch_heiress",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "半小时前二房千金把买通管家的流水抄本塞进你门缝，想借你的手逼大少爷让位",
+     "stage": "flirting"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "drunk_scion_husband",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "你手里扣着大少爷在澳门赌船签下的三百亿担保书影印件，对方今晚就是来赎它的",
+     "stage": "testing"
+    },
+    {
+     "a": "family_chief_steward",
+     "a_to_b": {
+      "tension": 1,
+      "trust": 2
+     },
+     "b": "drunk_scion_husband",
+     "b_to_a": {
+      "tension": 1,
+      "trust": 2
+     },
+     "reason": "老管家替大少爷压下了三次赌船催收电报，如今想拿这笔烂账换自己的退路",
+     "stage": "testing"
+    },
+    {
+     "a": "second_branch_heiress",
+     "a_to_b": {
+      "tension": 1,
+      "trust": 2
+     },
+     "b": "drunk_scion_husband",
+     "b_to_a": {
+      "tension": 1,
+      "trust": 2
+     },
+     "reason": "二房千金一直盯着大少爷的信托分红权，只等今晚抓到实据就在例会上发难",
+     "stage": "testing"
+    },
+    {
+     "a": "family_chief_steward",
+     "a_to_b": {
+      "tension": 1,
+      "trust": 2
+     },
+     "b": "second_branch_heiress",
+     "b_to_a": {
+      "tension": 1,
+      "trust": 2
+     },
+     "reason": "老管家收过二房的钱，也留着二房买通自己的流水，谁也不敢先翻脸",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "family_chief_steward",
+    "drunk_scion_husband",
+    "second_branch_heiress"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "逼大少爷签下放弃继承权的声明，又不让管家和二房独吞好处。",
+    "limit_gap": "这局是管家设的，你得防着谁都在拿你当刀。",
+    "meeting_reason": "晚宴散席时{family_chief_steward.name}在茶室请你子夜到红毯回廊坐镇，再把{drunk_scion_husband.name}和{second_branch_heiress.name}一并引来当面对账。",
+    "resource_gap": "{family_chief_steward.name}握着赌债签单原件，{second_branch_heiress.name}握着买通管家的流水，{drunk_scion_husband.name}握着继承人的名头，你握着坐镇的身份。"
+   },
+   "tags": [
+    "gambling",
+    "workplace_power"
+   ],
+   "tension_engine_ids": [
+    "te_patriarchy_vs_short_strike",
+    "te_drunk_husband_vs_forbidden_embrace"
    ]
   }
  ],
@@ -613,8 +674,8 @@
     35
    ],
    "appearance_options": [
-    "墨绿真丝开衩睡袍被夜风吹得紧贴修长丰盈的身体，乌发微湿散在肩头，赤足踩在深色地毯上，祖母绿吊坠在急促起伏的胸前摇曳，清冷的眼因背德的刺激泛起潮红，咬着唇压住呼吸",
-    "换上收腰立领黑丝绒夜礼服，外披白貂坎肩，踩着细高跟，端着红酒杯，眼神狠绝如复仇的黑天鹅"
+    "墨绿真丝开衩睡袍被夜风吹得紧贴身体，乌发微湿散在肩头，赤足踩在地毯上，祖母绿吊坠在胸前摇曳，咬着唇压住呼吸",
+    "收腰立领黑丝绒礼服外披白貂坎肩，端着红酒杯，眼神狠绝如复仇的黑天鹅"
    ],
    "decision": {
     "avoids": [
@@ -752,8 +813,8 @@
     38
    ],
    "appearance_options": [
-    "藏蓝定制西装，衬衫领口散开露出麦色锁骨与宽阔胸膛，银丝眼镜后眼神深沉冷冽，嘴角挂着看透豪门腌臜的讥诮，指间夹着未燃的雪茄，站在风雨飘摇的移门前像捕食者",
-    "脱了外套卷起衬衫袖子，小臂青筋微凸，俯身撑在长媳身侧的大理石台面上，眼神炽热如火"
+    "藏蓝定制西装，衬衫领口散开露出锁骨，银丝眼镜后眼神冷冽，指间夹着未燃的雪茄，站在风雨飘摇的移门前",
+    "脱了外套卷起袖子，小臂青筋微凸，俯身撑在大理石台面上，眼神炽热"
    ],
    "decision": {
     "avoids": [
@@ -864,16 +925,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "右肩脱臼，小臂被碎玻璃划开深可见骨的伤口",
-      "option": "顾问用双腿卡住门框，单臂拉住长媳的手腕拼死拖回"
+      "cost": "两人在阳台与内室停留太久，极易引起巡夜人员怀疑",
+      "option": "借连通阳台的视线盲区与当事人逐页核对私印，当场加密上传"
      },
      {
-      "cost": "双手掌心磨烂渗血，睡袍被海浪撕裂大半",
-      "option": "长媳扬手把真丝披肩缠上铁水管借力稳住身形"
+      "cost": "二房察觉被当成诱饵，后续谈判筹码收紧",
+      "option": "先抛出半份旧账引总管家去查二房，替顶层套房争取独处时间"
      }
     ],
-    "pressure": "离坠入怒海只剩一掌之遥。",
-    "trigger": "巨浪拍得船身右倾近四十度，阳台护栏被砸出蛛网裂纹，海水瀑布般灌入，长媳顺着湿滑甲板滑向断裂处。"
+    "pressure": "底稿在公证前被管家截获，三年的翻盘计划就前功尽弃。",
+    "trigger": "长房与二房都在追查那份离岸做空底稿的下落，卫星加密签署窗口只剩今晚。"
    },
    "tags": [
     "intimate",
@@ -891,8 +952,8 @@
     36
    ],
    "appearance_options": [
-    "敞着胸膛的名牌丝绸睡袍，满身宿醉的酸腐酒气，脸色蜡黄眼圈青黑，在大床上烦躁地踢蹬薄被，翻身打翻骨瓷水杯，透着被酒色掏空的虚浮与暴戾",
-    "摇晃着撑起身子，拎着半瓶洋酒，眼神涣散却满是猜忌，跌跌撞撞地满屋找人"
+    "敞着胸膛的丝绸睡袍，满身宿醉的酒气，眼圈青黑，在大床上烦躁地踢蹬薄被",
+    "拎着半瓶洋酒摇晃着撑起身子，眼神涣散却满是猜忌，满屋找人"
    ],
    "decision": {
     "avoids": [
@@ -1003,16 +1064,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "少爷反手一巴掌，长媳嘴角破裂红肿",
-      "option": "长媳抢先回到主卧，一杯冰水泼在少爷脸上厉声喝令回床"
+      "cost": "彻底撕破夫妻体面，反逼得长媳当场启动离婚与做空",
+      "option": "半夜闯进主卧翻保险柜密钥，逼问长媳私章下落"
      },
      {
-      "cost": "冰块崩碎了水晶摆件，巨响惊动走廊安保",
-      "option": "顾问掷出一块冰击中少爷膝盖，让其跪倒打滚昏睡过去"
+      "cost": "把自己的致命把柄彻底交到总管家手里",
+      "option": "私下向总管家低头，拿分红权换压下赌债签单"
      }
     ],
-    "pressure": "撞破就会挥瓶伤人，惊动全船保镖拔枪。",
-    "trigger": "少爷口渴爬起，攥着半截碎酒瓶推开通往阳台的薄纱窗帘，离发现阴影里的两人只剩三步。"
+    "pressure": "拿不到长媳手里的母族代持授权书填窟窿，明早就会被剥夺继承顺位。",
+    "trigger": "公海赌船的亏空明早就会在家族例会上被点名，大少爷借酒浇愁却睡不踏实，频频起夜找私章。"
    },
    "tags": [
     "workplace_power",
@@ -1030,8 +1091,8 @@
     58
    ],
    "appearance_options": [
-    "严丝合缝的英式燕尾服，雪白衬衫领口纤尘不染，花白头发一丝不乱，白手套垂在裤线两侧，左腕挂一柄纯银雕花手杖，脚步无声，像一尊巡视领地的黑曜石雕像",
-    "摘下白手套，枯瘦的手指夹着万能金卡，嘴角挂着看透一切肮脏的刻薄冷笑"
+    "严丝合缝的英式燕尾服，花白头发一丝不乱，白手套垂在裤线两侧，左腕挂一柄银雕花手杖，脚步无声",
+    "摘下白手套，枯瘦的手指夹着万能金卡，嘴角挂着刻薄的冷笑"
    ],
    "decision": {
     "avoids": [
@@ -1142,16 +1203,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "两根手指被三棱血槽割得皮开肉绽，但以诛心逼退管家",
-      "option": "顾问两指夹住剑刃别弯，当场挑明管家怀里的二房受贿密函"
+      "cost": "被长媳抓住越权查房的把柄，可能当场被喝退记过",
+      "option": "借送安神汤叩门试探，观察主卧与隔壁书房的动静"
      },
      {
-      "cost": "摔在玻璃渣上膝肘多处划伤，惊动全船医官上楼",
-      "option": "长媳假装胸口绞痛晕倒，砸翻梳妆台铜镜制造巨响"
+      "cost": "两边摇摆一旦暴露，无论谁胜出都会先清洗老管家",
+      "option": "暗中调阅走廊红外回放，捏住大房二房各自的私弊待价而沽"
      }
     ],
-    "pressure": "一刺下去便血溅衣帽间，私会与行刺双罪坐实。",
-    "trigger": "管家用手杖剑挑开衣帽间的貂皮大衣，剑尖离藏在后面的顾问胸膛只剩两指。"
+    "pressure": "既要查清长媳与顾问是否私下联手，又不能在证据确凿前得罪未来的掌权人。",
+    "trigger": "顶层连通阳台的门磁记录深夜两次异常开合，老会长的越洋问询电话黎明前就会打来。"
    },
    "tags": [
     "workplace_power",
@@ -1178,7 +1239,7 @@
      "背后捅刀的小人"
     ],
     "contrast": "冷面服从的机器保镖；内里重情重义、有恩必报。",
-    "core_value": "裴家的工资买我的技术，夫人那两百万买的是我一辈子。她一句话，我护她平安下船。",
+    "core_value": "裴家的工资买我的技术，夫人那两百万买的是我一辈子。夫人一句话，我护夫人平安下船。",
     "goal_options": [
      "为两人隔室私会制造监控盲区",
      "管家突查时以安保借口拖延",
@@ -1436,7 +1497,7 @@
     "workplace_power"
    ],
    "voices": {
-    "inner": "她手里一定有能掀翻大房的东西。先别急着站队，看她出几张牌。",
+    "inner": "大嫂手里一定有能掀翻大房的东西。先别急着站队，看大嫂出几张牌。",
     "surface": "“大嫂，这么晚还没睡？隔壁顾问的灯也亮着呢。放心，我不是管家，我只对生意感兴趣。”"
    }
   }
@@ -1470,134 +1531,182 @@
  "daily_activities": [
   {
    "beats": [
-    "海风呼啸，长媳推开磨砂移门，黑发在风中飞扬，赤足踩在湿润的木板上",
-    "顾问在隔壁阳台递上防水袋封装的审计底稿，两人贴面耳语条款",
-    "隔壁传来丈夫翻身的呓语，长媳心跳骤快，抓住顾问的衣襟闪进阴影"
+    "端着威士忌走到顶层观海阳台，看公海远处的闪电隐在云后",
+    "隔壁磨砂玻璃门映出暖黄灯光，海风送来淡淡的雪松香",
+    "借着递打火机的工夫，在栏杆分界线旁低声聊起明早例会的风向"
    ],
-   "duration_minutes": 60,
+   "duration_minutes": 30,
    "hook_ids": [
+    "hk_heiress_balcony_observe",
+    "hk_counsel_cigar_approach",
+    "hk_second_heiress_corridor_approach"
+   ],
+   "id": "a_balcony_night_breeze",
+   "location_ids": [
+    "connecting_balcony"
+   ],
+   "start_minute": 1420,
+   "tags": [
+    "intimate"
+   ],
+   "title": "观海阳台凭栏醒酒"
+  },
+  {
+   "beats": [
+    "胡桃木书桌上泡开一壶红茶，把历年离岸信托的变更底稿逐页摊开",
+    "游艇随长浪微微摇晃，并肩核对数字时肩头不经意相触",
+    "关掉主灯只留台灯，把真正想说的话摊在桌面上"
+   ],
+   "duration_minutes": 45,
+   "hook_ids": [
+    "hk_counsel_suit_observe",
     "hk_heiress_robe_approach",
-    "hk_counsel_cigar_approach",
-    "hk_heiress_balcony_observe"
+    "hk_heiress_whisper_request"
    ],
-   "id": "act_yt_balcony_encounter",
+   "id": "a_suite_contract_review",
    "location_ids": [
-    "connecting_balcony"
+    "counsel_executive_suite"
    ],
-   "start_minute": 1425,
+   "start_minute": 1430,
    "tags": [
     "workplace"
    ],
-   "title": "午夜阳台海风接头"
+   "title": "顾问书房夜审信托卷宗"
   },
   {
    "beats": [
-    "管家的脚步逼近，顾问把长媳拉到落地镜后，皮草大衣遮住两人",
-    "长媳的背贴着顾问的胸膛，在微光里借对方托稳的手盖下私章",
-    "顾问在长媳耳畔留下克制的吻，两人在共振的心跳里立下斩断家族的盟约"
-   ],
-   "duration_minutes": 65,
-   "hook_ids": [
-    "hk_heiress_whisper_request",
-    "hk_counsel_protect_approach",
-    "hk_counsel_suit_observe"
-   ],
-   "id": "act_yt_wardrobe_signing",
-   "location_ids": [
-    "daughter_in_law_boudoir"
-   ],
-   "start_minute": 50,
-   "tags": [
-    "workplace"
-   ],
-   "title": "衣帽间镜前股权签字"
-  },
-  {
-   "beats": [
-    "出海第一天的傍晚，长媳在顶层回廊里碰见管家，管家恭敬地问晚餐想吃什么。",
-    "长媳说随便，管家又问少爷今晚回不回主卧，长媳没有回答。",
-    "安保队长从走廊另一头走来，冲长媳点头致意，管家识趣地退下了。"
-   ],
-   "duration_minutes": 50,
-   "hook_ids": [
-    "hk_steward_knock_approach",
-    "hk_bodyguard_alert_approach",
-    "hk_steward_cane_observe"
-   ],
-   "id": "act_yt_corridor_standoff",
-   "location_ids": [
-    "vip_carpeted_corridor"
-   ],
-   "start_minute": 1080,
-   "tags": [
-    "workplace_power"
-   ],
-   "title": "走廊里遇见管家"
-  },
-  {
-   "beats": [
-    "风暴来临前的黄昏，海面平静得像一面镜子，长媳一个人站在共用阳台上。",
-    "隔壁的移门开了，顾问端着一杯咖啡走出来，看见长媳，愣了一下。",
-    "两人隔着阳台中间的花架站着，长媳先开口：好久不见。"
-   ],
-   "duration_minutes": 55,
-   "hook_ids": [
-    "hk_second_heiress_deal_approach",
-    "hk_counsel_protect_approach",
-    "hk_husband_drunken_observe"
-   ],
-   "id": "act_yt_storm_tilt_rescue",
-   "location_ids": [
-    "connecting_balcony"
-   ],
-   "start_minute": 1110,
-   "tags": [
-    "workplace"
-   ],
-   "title": "阳台上看海"
-  },
-  {
-   "beats": [
-    "清晨，长媳在主卧里醒来，丈夫的那半边床是空的，被子还是叠好的。",
-    "长媳拉开窗帘，海上的太阳刚刚升起来。",
-    "女佣送来早餐，说少爷昨晚在牌室睡的，长媳点点头，什么也没说。"
-   ],
-   "duration_minutes": 50,
-   "hook_ids": [
-    "hk_husband_stumble_approach",
-    "hk_counsel_cigar_approach",
-    "hk_bodyguard_stance_observe"
-   ],
-   "id": "act_yt_gunpoint_showdown",
-   "location_ids": [
-    "daughter_in_law_boudoir"
-   ],
-   "start_minute": 420,
-   "tags": [
-    "workplace"
-   ],
-   "title": "主卧里的早晨"
-  },
-  {
-   "beats": [
-    "风平浪静的早晨，长媳在共用阳台上吃早餐，海鸥绕着游艇飞。",
-    "顾问也出来吃早餐，两人隔着花架各坐一边，偶尔说一两句话。",
-    "长媳把一碟草莓推过花架：你小时候最爱吃这个。"
+    "拉好内室的丝绒隔音帘，在梳妆台前清点母族陪嫁的首饰与私章",
+    "替对方解下被海雾打湿的披肩，用热毛巾擦干微凉的手",
+    "在三面落地镜前低声商定下船后的去向"
    ],
    "duration_minutes": 40,
    "hook_ids": [
-    "hk_second_heiress_corridor_approach",
-    "hk_bodyguard_alert_approach"
+    "hk_heiress_whisper_request",
+    "hk_counsel_protect_approach",
+    "hk_bodyguard_stance_observe"
    ],
-   "id": "act_yt_dawn_speedboat",
+   "id": "a_boudoir_jewelry_sorting",
    "location_ids": [
-    "connecting_balcony"
+    "daughter_in_law_boudoir"
    ],
-   "start_minute": 480,
+   "start_minute": 10,
+   "tags": [
+    "intimate"
+   ],
+   "title": "主卧整理私印与首饰匣"
+  },
+  {
+   "beats": [
+    "沿着波斯红毯回廊缓步巡视，核对各舱房外的请勿打扰灯牌",
+    "在走廊拐角的油画下碰上守夜的人，借敬烟交换眼色",
+    "听着脚下低沉的轮机声，三言两语试探出今夜各房的动静"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [
+    "hk_steward_cane_observe",
+    "hk_bodyguard_alert_approach",
+    "hk_second_heiress_stairs_observe"
+   ],
+   "id": "a_corridor_late_patrol",
+   "location_ids": [
+    "vip_carpeted_corridor"
+   ],
+   "start_minute": 25,
    "tags": [
     "workplace"
    ],
-   "title": "阳台上的早餐"
+   "title": "红毯回廊夜巡寒暄"
+  },
+  {
+   "beats": [
+    "从吧台取出单一麦芽威士忌，往两只矮杯里各放一颗冰球",
+    "靠在沙发深处听渐起的风浪，聊起卷进豪门之前的旧事",
+    "杯沿一碰，话题转到今晚真正的约定"
+   ],
+   "duration_minutes": 40,
+   "hook_ids": [
+    "hk_counsel_cigar_approach",
+    "hk_heiress_balcony_observe",
+    "hk_second_heiress_deal_approach"
+   ],
+   "id": "a_suite_whisky_nightcap",
+   "location_ids": [
+    "counsel_executive_suite",
+    "connecting_balcony"
+   ],
+   "start_minute": 40,
+   "tags": [
+    "intimate"
+   ],
+   "title": "行政套房壁炉旁小酌"
+  },
+  {
+   "beats": [
+    "铜炉里燃起一篆沉水香，压下船舱的潮气",
+    "换下晚宴的拘谨礼服，只在真丝睡袍外拢一件羊绒披肩",
+    "坐在床尾长凳上听门外风声，等那个约好的人从连通门进来"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [
+    "hk_heiress_whisper_request",
+    "hk_husband_drunken_observe",
+    "hk_counsel_suit_observe"
+   ],
+   "id": "a_boudoir_incense_calm",
+   "location_ids": [
+    "daughter_in_law_boudoir"
+   ],
+   "start_minute": 55,
+   "tags": [
+    "intimate"
+   ],
+   "title": "内寝点香与换装"
+  },
+  {
+   "beats": [
+    "检查侍应送上顶层的参茶与宵夜托盘，确认瓷盅没被人动过",
+    "借送茶的几分钟，在半掩的门影里交接字条和房卡",
+    "瞥一眼走廊尽头探头的角度，替屋里的人留出半小时清静"
+   ],
+   "duration_minutes": 25,
+   "hook_ids": [
+    "hk_steward_knock_approach",
+    "hk_husband_stumble_approach",
+    "hk_second_heiress_stairs_observe"
+   ],
+   "id": "a_corridor_tea_tray_check",
+   "location_ids": [
+    "vip_carpeted_corridor",
+    "daughter_in_law_boudoir"
+   ],
+   "start_minute": 70,
+   "tags": [
+    "workplace"
+   ],
+   "title": "走廊宵夜点卯"
+  },
+  {
+   "beats": [
+    "赶在雷雨云压顶前收起遮阳篷，检查两间套房之间的移门滑轨",
+    "海风吹乱头发，退进落地窗内侧时近得听见彼此的呼吸",
+    "隔着玻璃看雨水砸在甲板上，灯光把两人的影子叠在一起"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [
+    "hk_heiress_robe_approach",
+    "hk_bodyguard_alert_approach",
+    "hk_counsel_protect_approach"
+   ],
+   "id": "a_balcony_storm_watch",
+   "location_ids": [
+    "connecting_balcony",
+    "counsel_executive_suite"
+   ],
+   "start_minute": 85,
+   "tags": [
+    "intimate"
+   ],
+   "title": "风暴前锁窗观浪"
   }
  ],
  "default_npc_gender_mix": {
@@ -1650,7 +1759,7 @@
     "connecting_balcony"
    ],
    "slot": "drunk_scion_husband",
-   "text": "{drunk_scion_husband.name}拎着半截碎酒瓶一把扯开纱帘，满眼血丝冲阴影里吼：“大半夜跑阳台上干什么？！隔壁那个讼棍是不是在这？！”"
+   "text": "{drunk_scion_husband.name}拎着醒酒器一把扯开纱帘，满眼血丝往阳台阴影里张望：“大半夜不睡跑阳台吹什么风？隔壁那个法务顾问还在熬夜审账吗？”"
   },
   {
    "id": "hk_steward_knock_approach",
@@ -1692,7 +1801,7 @@
     "connecting_balcony"
    ],
    "slot": "chief_legal_counsel",
-   "text": "碎玻璃飞溅的瞬间，{chief_legal_counsel.name}把你护进镜柜死角，另一只手抽出一叠盖满红章的禁制令：“靠着我。走出这艘船，没人再能动你一根手指。”"
+   "text": "游艇随涌浪轻晃，{chief_legal_counsel.name}扶住你的手臂把你带进镜柜内侧，抽出一叠盖满红章的离岸公证书：“站稳了。这份协议今晚落印，下船之后没人再能拿家法压你。”"
   },
   {
    "id": "hk_second_heiress_deal_approach",
@@ -1776,26 +1885,6 @@
    ],
    "slot": "second_branch_heiress",
    "text": "楼梯拐角，{second_branch_heiress.name}赤脚坐着抽烟，屏幕的光映着若有所思的脸，像在心里给每个人重新估价。"
-  },
-  {
-   "id": "hk_dressing_mirror_observe",
-   "kind": "observe",
-   "location_ids": [
-    "daughter_in_law_boudoir",
-    "counsel_executive_suite"
-   ],
-   "slot": "chief_legal_counsel",
-   "text": "三面落地镜前，皮草大衣在漏进来的风里轻晃，{chief_legal_counsel.name}与长媳的身影在镜中紧密交叠，一明一暗。"
-  },
-  {
-   "id": "hk_bodyguard_slipway_approach",
-   "kind": "approach",
-   "location_ids": [
-    "vip_carpeted_corridor",
-    "connecting_balcony"
-   ],
-   "slot": "loyal_bodyguard_captain",
-   "text": "{loyal_bodyguard_captain.name}守在快艇滑道前，马达在身后低吼，冲你伸出手：“夫人，上艇。追兵我来挡，您只管往前走。”"
   }
  ],
  "id": "yacht_adjacent_suite_transgression",
@@ -1806,7 +1895,7 @@
     "在雨丝飘洒的护栏前贴着长媳的背递交做空公证书",
     "隔壁翻身的响动传来时，两人相拥闪进遮阳立柱的阴影"
    ],
-   "detail": "悬在万吨巨轮第十层船尾的奢华阳台，外侧是齐胸高的无框钢化玻璃护栏，下方是翻滚如墨的十级怒浪。柚木地板已被雨水打湿大半，中央一扇带锁扣的磨砂移门，推开便能绕过走廊监控穿梭于两间套房。空气里是海盐、雨水与长媳身上栀子花香水的气味。",
+   "detail": "悬在第十层船尾的奢华阳台，外侧是无框钢化玻璃护栏，下面是翻滚如墨的怒浪。柚木地板湿了大半，中间一扇带锁扣的磨砂移门，推开就能绕过走廊监控穿梭于两间套房。",
    "exits": [
     "counsel_executive_suite",
     "daughter_in_law_boudoir"
@@ -1814,8 +1903,8 @@
    "id": "connecting_balcony",
    "name": "顶层共用露天观海阳台",
    "pressure_modifiers": {
-    "p_steward_keycard_patrol": "走廊门禁灯由蓝转红，管家的手杖声停在门外五米。",
-    "p_typhoon_hull_pitch": "游艇三十度侧倾，冰冷的海水漫过柚木地板浸湿裙摆。"
+    "p_corridor_inquest_whisper": "海雾在磨砂移门上凝成水珠，任何开合声都要借浪声掩护。",
+    "p_typhoon_swell_stabilizer": "咸湿浪花漫过柚木栏杆，每次横摇都让人不得不抓紧身旁的人。"
    },
    "privacy": "semi",
    "tags": [
@@ -1833,15 +1922,16 @@
     "游艇颠簸失衡时把长媳稳稳揽进沙发深处",
     "用解密终端展示当年父辈被迫害的原件"
    ],
-   "detail": "极简冷色调的行政套房，大理石茶几上摆着加密终端、翻开的离岸审计账本和半杯波本。左侧一整面通顶柚木衣帽间，移门拉上可完全隔音。落地窗外雷声阵阵，只亮着一盏黄铜台灯，厚地毯吞没一切脚步声。",
+   "detail": "冷色调的行政套房，大理石茶几上摆着加密终端、翻开的离岸审计账本和半杯波本。一整面通顶衣帽间，移门拉上可完全隔音。只亮一盏黄铜台灯，厚地毯吞没脚步声。",
    "exits": [
     "connecting_balcony"
    ],
    "id": "counsel_executive_suite",
    "name": "法务顾问行政套房与书房",
    "pressure_modifiers": {
-    "p_husband_sober_up": "隔壁传来重物砸地的闷响与寻找妻子的叫骂。",
-    "p_steward_keycard_patrol": "门铃沉闷一响，管家沉声询问顾问是否安歇。"
+    "p_offshore_margin_call": "加密终端的冷光映在胡桃木桌面上，交割倒计时正在跳。",
+    "p_satellite_relay_flicker": "雨声敲打舷窗，屏幕上的卫星信号格明暗不定。",
+    "p_typhoon_swell_stabilizer": "厚绒窗帘挡住了狂风，船身的摇晃让沙发与镜柜更显逼仄。"
    },
    "privacy": "private",
    "tags": [
@@ -1859,7 +1949,7 @@
     "在丈夫沉睡的隔壁给千亿股权转让书盖下私印",
     "任由顾问在梳妆台前替自己理顺被风吹乱的长发"
    ],
-   "detail": "檀木与栀子香氛的顶层主套房，超大欧式床铺着香槟色真丝床品，隔壁起居室就是醉酒少爷昏睡之处。步入式衣帽间三面落地镜，两侧挂满晚礼服与皮草。连通阳台的玻璃门挂着半透的薄纱窗帘，风一吹便如梦似幻地飘动。",
+   "detail": "檀木与栀子香氛的顶层主卧，香槟色真丝床品，隔壁起居室就是醉酒少爷昏睡之处。步入式衣帽间三面落地镜，挂满礼服与皮草；通阳台的玻璃门挂着薄纱帘。",
    "exits": [
     "connecting_balcony",
     "vip_carpeted_corridor"
@@ -1867,10 +1957,12 @@
    "id": "daughter_in_law_boudoir",
    "name": "长媳主卧",
    "pressure_modifiers": {
-    "p_husband_sober_up": "少爷剧烈翻身，床头的水晶酒瓶滚落摔碎。",
-    "p_steward_keycard_patrol": "金卡刷开起居室外门的提示音清晰可闻。"
+    "p_corridor_inquest_whisper": "衣帽间貂皮大衣后的暗角，是避开外门视线最稳的地方。",
+    "p_offshore_margin_call": "保险柜里的母族私印已经取出，只差最后一道双人签章。",
+    "p_second_branch_kickback": "梳妆台暗格里摊着二房私吞回扣的电汇底单。",
+    "p_steward_husband_casino_leverage": "屏风外还残留着酒气，一张赌债签单足以决定这间主卧明天归谁做主。"
    },
-   "privacy": "semi",
+   "privacy": "private",
    "tags": [
     "workplace",
     "crime"
@@ -1886,15 +1978,17 @@
     "以跳闸为由拉下应急电闸切断五分钟照明",
     "拿着伪造的巡视签字单在管家逼视下泰然周旋"
    ],
-   "detail": "三十米长、挂满名画的幽深走廊，三寸厚的酒红羊毛地毯让脚步鸦雀无声。每隔五米一处壁龛地灯与红外门禁探头，尽头是纯铜浮雕电梯与生铁防火门，空气里是雪茄与消毒水的气味。",
+   "detail": "挂满名画的长廊，酒红地毯让脚步无声。每隔五米一处壁灯与红外探头，尽头是铜浮雕电梯和防火门。",
    "exits": [
     "daughter_in_law_boudoir"
    ],
    "id": "vip_carpeted_corridor",
    "name": "顶层波斯红毯贵宾回廊",
    "pressure_modifiers": {
-    "p_steward_keycard_patrol": "管家带着两名保镖从东侧逐个刷卡核验。",
-    "p_typhoon_hull_pitch": "大理石雕像被颠簸砸倒，堵住半边走廊。"
+    "p_corridor_inquest_whisper": "头顶红外探头规律闪烁，巡夜的脚步踩在厚地毯上几乎听不见。",
+    "p_satellite_relay_flicker": "走廊暗门后的弱电配线箱指示灯频闪，直通驾驶台的备份卫通。",
+    "p_second_branch_kickback": "长廊壁灯昏黄，二房千金在名画下驻足，等着交换底牌。",
+    "p_steward_husband_casino_leverage": "总管家拄着银头手杖立在红毯尽头，公文夹里夹着那张赌船催缴函。"
    },
    "privacy": "public",
    "tags": [
@@ -1979,7 +2073,7 @@
   ],
   "order": "family_first"
  },
- "notes": "保留共用阳台移门夜会、衣帽间皮草后屏息签字、管家金卡巡夜、少爷醉醒摔瓶、巨浪侧倾舍命拉拽、持枪摊牌与破晓快艇脱险的主线。成年人的婚外背德照原稿保留。改动：六个角色固定性别；长媳“今晚无论你要什么我都给你，带我走”属以身体换脱身，改为“我想要自由，还有你，这两样我自己选”；顾问“今夜你就是我的”改为“由你决定”，亲密前提写明与协议、筹码、脱身无关；少爷“过来伺候老子睡觉、给老子生个儿子”属婚内胁迫，删去，其亲密倾向改为虚荣；管家以家规逼迫的亲密倾向改为规矩与审时度势；财阀改名裴家，去掉写死的人名沈庭深、沈清漪、齐管家、赵队长；内容标签去掉 coercion_theme；补一名二房千金凑足六个人物；转换为项目格式。",
+ "notes": "保留共用阳台移门夜会、衣帽间皮草后屏息签字、管家金卡巡夜、少爷醉醒摔瓶、巨浪侧倾舍命拉拽、持枪摊牌与破晓快艇脱险的主线。成年人的婚外背德照原稿保留。改动：六个角色固定性别；长媳“今晚无论你要什么我都给你，带我走”属以身体换脱身，改为“我想要自由，还有你，这两样我自己选”；顾问“今夜你就是我的”改为“由你决定”，亲密前提写明与协议、筹码、脱身无关；少爷“过来伺候老子睡觉、给老子生个儿子”属婚内胁迫，删去，其亲密倾向改为虚荣；管家以家规逼迫的亲密倾向改为规矩与审时度势；财阀改名裴家，去掉写死的人名沈庭深、沈清漪、齐管家、赵队长；内容标签去掉 coercion_theme；补一名二房千金凑足六个人物；转换为项目格式。\n2026-10-18 按写作规则 v2 改造：人物组合改为 8 单人 + 2 多人；总管家握大少爷赌债签单为把柄，二房回扣密账改为利益压力；主卧改为私密地点；删两个钩子；日常补到八条。",
  "player_identities": [
   {
    "age_range": [
@@ -2130,162 +2224,173 @@
  "premise": "财阀家族的超豪华私人游艇在公海上开一周的家族会议。长媳受够了豪门冷暴力，住在顶层套房，共用阳台另一侧住着相识多年、被家族构陷逐出的王牌法务顾问。丈夫每晚都醉在隔壁主卧，管家和保镖在走廊巡查。千亿对赌的清算日就在这周，热带风暴季的卫星信号时有时无。",
  "pressures": [
   {
-   "choice": "让安保队长制造跳闸拖延，还是长媳正面开门厉声喝退？",
+   "choice": "说服老管家交出签单扳倒大少爷，还是替大少爷压下签单换金库与直升机调度权？",
    "exits": [
     {
-     "cost": "公开触犯敬老家规面临宗族重罚，手掌被手杖磕伤",
-     "option": "长媳拉开门把一杯红酒泼在管家胸口，以擅闯内寝为名当场掌掴"
+     "cost": "得从离岸账户划出一笔养老信托封口",
+     "option": "许老管家重组后保留终身顾问厚禄，换对方当场交出原件"
     },
     {
-     "cost": "违规开火被当场解除职务扣押",
-     "option": "安保队长借口抓捕入侵者朝天花板鸣枪引开全楼层注意"
+     "cost": "老管家看出你在居中渔利，往后盯紧连通阳台",
+     "option": "替大少爷稳住老管家，逼大少爷交出金库密码和直升机调度权抵债"
     }
    ],
    "far": {
-    "consequence": "长媳被扣押搜身，协议被撕毁，母族企业遭全盘吞并。",
+    "consequence": "大少爷当场被剥夺继承权，长房的局面跟着大乱。",
     "due_days": 1,
-    "trigger": "当场搜出外人衣物与协议"
+    "trigger": "签单呈到了老会长面前"
+   },
+   "flags": [
+    "timed",
+    "leverage"
+   ],
+   "hook_ids": [
+    "hk_steward_cane_observe",
+    "hk_husband_drunken_observe"
+   ],
+   "id": "p_steward_husband_casino_leverage",
+   "immediate": {
+    "minutes": 5,
+    "text": "老管家抽出催缴函，大少爷脸色发白。"
+   },
+   "leverage": {
+    "basis": "{family_chief_steward.name}私下扣着{drunk_scion_husband.name}盗用家族公章签下的三百亿公海赌债担保原件",
+    "holder": "family_chief_steward",
+    "subject": "drunk_scion_husband"
+   },
+   "location_ids": [
+    "vip_carpeted_corridor",
+    "daughter_in_law_boudoir"
+   ],
+   "near": {
+    "deadline_minutes": 30,
+    "text": "老会长的越洋视频两小时后就接进会议室。"
+   },
+   "objective": "老会长连线前，决定签单落到谁手里。",
+   "source": "person",
+   "start_minute": 1430,
+   "tags": [
+    "gambling",
+    "workplace_power"
+   ],
+   "title": "公海赌船三百亿签单",
+   "trigger": "午夜巡查时，{family_chief_steward.name}带着盖有家族公章的赌债催缴函来到顶层走廊，要与{drunk_scion_husband.name}单独核对印鉴。"
+  },
+  {
+   "choice": "拿底单逼二房在罢免案上投赞成票，还是居中做保换二房交出管家受贿的流水？",
+   "exits": [
+    {
+     "cost": "二房记下这笔威逼，下船后联合旁系反扑",
+     "option": "压住原件，换二房签下支持重组董事会的书面连署"
+    },
+    {
+     "cost": "暂缓清算二房，天亮前要先摆平管家",
+     "option": "把底单封进中立加密终端，换二房交出管家受贿的暗账"
+    }
+   ],
+   "far": {
+    "consequence": "二房失去董事席位，旁系从此与长房不死不休。",
+    "due_days": 1,
+    "trigger": "底单在例会上公开"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hk_second_heiress_deal_approach",
+    "hk_heiress_whisper_request",
+    "hk_steward_knock_approach"
+   ],
+   "id": "p_second_branch_kickback",
+   "immediate": {
+    "minutes": 10,
+    "text": "二房千金在走廊外频频看表，等着赎回原件。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "daughter_in_law_boudoir",
+    "vip_carpeted_corridor"
+   ],
+   "near": {
+    "deadline_minutes": 30,
+    "text": "随船审计组已在核对开曼子公司的保费差额。"
+   },
+   "objective": "借这份底单在明早例会前改写二房的立场。",
+   "source": "money",
+   "start_minute": 5,
+   "tags": [
+    "workplace_power",
+    "crime"
+   ],
+   "title": "二房离岸回扣密账",
+   "trigger": "明早家族信托审计前，长媳把二房私吞船队保险回扣的电汇底单摊在梳妆台上，传话让二房过来对账。"
+  },
+  {
+   "choice": "抹去阳台痕迹各回各房装睡，还是以核对议程为由在书房正大光明摊开公文？",
+   "exits": [
+    {
+     "cost": "两人在衣帽间暗处屏息等查房过去",
+     "option": "擦净移门水迹锁好插销，借安保记录把门磁异动推给海风"
+    },
+    {
+     "cost": "桌上的做空底稿得先藏进暗格，耽误了上传",
+     "option": "敞开书房大门，摆出连夜审信托合同的架势迎接查访"
+    }
+   ],
+   "far": {
+    "consequence": "私会传闻天亮前传遍全船各房。",
+    "due_days": 1,
+    "trigger": "巡夜人员搜到了外人的东西"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [
     "hk_steward_knock_approach",
-    "hk_heiress_whisper_request"
+    "hk_bodyguard_alert_approach",
+    "hk_husband_stumble_approach"
    ],
-   "id": "p_steward_keycard_patrol",
+   "id": "p_corridor_inquest_whisper",
    "immediate": {
-    "minutes": 3,
-    "text": "门禁灯依次变红，手杖声逼近房门三米。"
+    "minutes": 5,
+    "text": "回廊尽头的电梯指示灯亮了，脚步声朝顶层逼近。"
    },
    "leverage": null,
    "location_ids": [
-    "vip_carpeted_corridor"
-   ],
-   "near": {
-    "deadline_minutes": 7,
-    "text": "两名保镖将用破拆工具强行破锁。"
-   },
-   "objective": "管家刷卡前让长媳回房，藏好顾问的全部文件与痕迹。",
-   "source": "person",
-   "start_minute": 30,
-   "tags": [
-    "violence",
-    "bodily_harm"
-   ],
-   "title": "管家金卡巡夜搜查",
-   "trigger": "零点四十分例行探访，管家八分钟后到门口；房门反锁不应或门内有外人声音，就会刷卡破门搜查。"
-  },
-  {
-   "choice": "长媳主动进主卧喂药，还是顾问在暗处一击击晕？",
-   "exits": [
-    {
-     "cost": "手臂被发狂的少爷咬出一圈深紫血痕",
-     "option": "长媳回到主卧把掺了镇定剂的温水灌给少爷，按回床上"
-    },
-    {
-     "cost": "少爷头磕在床头柜上破皮流血，留下明显外伤",
-     "option": "顾问从帘后一掌切在少爷后颈使其软倒"
-    }
-   ],
-   "far": {
-    "consequence": "套房爆发枪击命案，全船红色警报，所有人沦为牺牲品。",
-    "due_days": 1,
-    "trigger": "少爷当场开枪"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "hk_husband_stumble_approach",
-    "hk_counsel_protect_approach"
-   ],
-   "id": "p_husband_sober_up",
-   "immediate": {
-    "minutes": 2,
-    "text": "沉重混乱的脚步与叫骂已越过博古架。"
-   },
-   "leverage": null,
-   "location_ids": [
+    "connecting_balcony",
+    "vip_carpeted_corridor",
     "daughter_in_law_boudoir"
    ],
    "near": {
-    "deadline_minutes": 4,
-    "text": "阳台门一拉开就会引发枪击。"
+    "deadline_minutes": 15,
+    "text": "磨砂移门上还留着海雾凝成的掌印和半枚袖扣。"
    },
-   "objective": "少爷踏上阳台前把人隔在主卧里，让少爷继续昏睡。",
-   "source": "accident",
-   "start_minute": 80,
+   "objective": "不让巡夜的人在主卧或阳台找到不属于这间房的东西。",
+   "source": "rumor",
+   "start_minute": 1425,
    "tags": [
-    "disaster",
-    "bodily_harm"
+    "intimate",
+    "workplace_power"
    ],
-   "title": "醉酒少爷摔瓶逼门",
-   "trigger": "少爷胃痉挛从醉梦中摔下床，打碎酒瓶后推开通往阳台的纱门找人，五分钟内不引开就会撞见阴影里的两人。"
+   "title": "连通门磁异动传闻",
+   "trigger": "值班室传来风声：主卧与顾问套房之间的阳台移门深夜开过两次，管家正带人上来复查门锁。"
   },
   {
-   "choice": "用身体顶住水密门栓，还是涉险冲进漫水的阳台夺回硬盘？",
+   "choice": "锁死书房门一鼓作气做完视频公证，还是改走备用通道分批转移资产？",
    "exits": [
     {
-     "cost": "后背被漂浮的实木桌撞得骨裂吐血",
-     "option": "顾问扑进齐腰的洪流单手抓回防水公文包"
+     "cost": "大额交割触发裴氏财务预警，明早一开盘就全面摊牌",
+     "option": "在镜柜前并肩完成核验与双印签章，一次激活做空指令"
     },
     {
-     "cost": "长媳双手扭伤脱臼，阳台逃生通道被彻底切断",
-     "option": "长媳与队长合力扳下液压手柄放下水密钢门"
+     "cost": "收益大减，下船后还要打半年股权官司",
+     "option": "先转移母族名下的独立资产，把做空仓位缩一半"
     }
    ],
    "far": {
-    "consequence": "游艇翻滚沉入海沟，无一生还。",
+    "consequence": "翻盘计划泡汤，裴家借机追查资金来源。",
     "due_days": 1,
-    "trigger": "海水灌满顶层"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "hk_heiress_robe_approach",
-    "hk_bodyguard_alert_approach"
-   ],
-   "id": "p_typhoon_hull_pitch",
-   "immediate": {
-    "minutes": 3,
-    "text": "冰冷海水从脚踝涨到膝盖，家具随浪冲撞。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "connecting_balcony"
-   ],
-   "near": {
-    "deadline_minutes": 8,
-    "text": "海水压垮顶层龙骨，整层坍塌。"
-   },
-   "objective": "海水淹没前抢出做空终端并合力闭锁水密门。",
-   "source": "nature",
-   "start_minute": 150,
-   "tags": [
-    "disaster",
-    "bodily_harm"
-   ],
-   "title": "十米怒浪击碎护栏",
-   "trigger": "三道十米巨浪横拍船身，游艇右倾三十五度，阳台玻璃被拍碎，海水倒灌进套房。"
-  },
-  {
-   "choice": "冒险爬上雷达桅杆接线，还是借用长媳的外交级频段？",
-   "exits": [
-    {
-     "cost": "通信记录被裴氏法务捕获，坐实做空母集团的叛族罪名",
-     "option": "长媳输入基金会的外交级卫星频段代码强行借调信道"
-    },
-    {
-     "cost": "被静电击穿全身麻痹，从三米高跌落摔裂两根肋骨",
-     "option": "顾问爬上雷达天线杆，用手捏住断裂天线维持导电"
-    }
-   ],
-   "far": {
-    "consequence": "裴氏重组上市成功，长媳被软禁，顾问破产入狱。",
-    "due_days": 1,
-    "trigger": "窗口关闭"
+    "trigger": "二十亿保证金被强行平仓"
    },
    "flags": [
     "timed"
@@ -2294,122 +2399,125 @@
     "hk_counsel_cigar_approach",
     "hk_heiress_whisper_request"
    ],
-   "id": "p_short_sell_upload_window",
+   "id": "p_offshore_margin_call",
    "immediate": {
-    "minutes": 8,
-    "text": "进度条卡在百分之七十二，卫星信号极弱。"
+    "minutes": 10,
+    "text": "托管行风控官要求核对长媳本人的生物特征与私印。"
    },
    "leverage": null,
    "location_ids": [
-    "counsel_executive_suite"
-   ],
-   "near": {
-    "deadline_minutes": 18,
-    "text": "做空资金池将被多头绞杀。"
-   },
-   "objective": "三点半前调通卫星天线，完成加密数据上传。",
-   "source": "institution",
-   "start_minute": 180,
-   "tags": [
-    "workplace_power",
-    "crime"
-   ],
-   "title": "做空底稿上传死线",
-   "trigger": "海外交易所三点半开盘，带长媳私印的造假公证件若没传完，做空通道关闭，顾问团队面临两亿美元违约清算。"
-  },
-  {
-   "choice": "顾问正面攻心夺枪，还是队长从通风口索降狙击？",
-   "exits": [
-    {
-     "cost": "子弹擦过左臂带走一片皮肉，手掌被滚烫枪管烫伤",
-     "option": "顾问迎着枪口逼近攻破少爷心防，开枪瞬间徒手握住转轮卡死"
-    },
-    {
-     "cost": "被碎酒瓶划破颈侧，险些伤到动脉",
-     "option": "长媳用鞋跟狠踩少爷脚面，反手夺下打火机砸向其面门"
-    }
-   ],
-   "far": {
-    "consequence": "长媳惨死，顶层化为火海，玉石俱焚。",
-    "due_days": 1,
-    "trigger": "枪响或火海蔓延"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "hk_husband_stumble_approach",
-    "hk_counsel_protect_approach"
-   ],
-   "id": "p_husband_hostage_siege",
-   "immediate": {
-    "minutes": 2,
-    "text": "少爷的手指因狂怒颤抖，击锤已扳开半寸。"
-   },
-   "leverage": null,
-   "location_ids": [
+    "counsel_executive_suite",
     "daughter_in_law_boudoir"
    ],
    "near": {
-    "deadline_minutes": 5,
-    "text": "枪走火或烈火引燃窗帘。"
+    "deadline_minutes": 40,
+    "text": "交割窗口只剩不到一小时，错过就被强行平仓。"
    },
-   "objective": "少爷扣扳机或点火之前卸下枪支。",
-   "source": "accident",
-   "start_minute": 220,
+   "objective": "在窗口关闭前完成双人公证。",
+   "source": "money",
+   "start_minute": 20,
    "tags": [
-    "disaster",
-    "bodily_harm"
+    "crime",
+    "workplace"
    ],
-   "title": "发狂少爷持枪劫持",
-   "trigger": "少爷得知做空真相精神失常，把枪顶在长媳太阳穴上，反锁起居室浇满烈酒，扬言点火。"
+   "title": "苏黎世离岸交割死线",
+   "trigger": "书房加密终端亮起红灯：苏黎世托管行要求在欧洲盘收盘前完成母族代持凭证与法务公证书的双重签章。"
   },
   {
-   "choice": "立即弹射逃生，还是引爆主螺旋桨断绝追击？",
+   "choice": "顶着风雨加固移门和外挂锁扣，还是赶紧把人带进内室擦干？",
    "exits": [
     {
-     "cost": "龙骨断裂，队长被困底舱只能跳海游向货轮",
-     "option": "队长留在机房拉下锚机制动，把巨轮甩尾撞扁第一艘护卫艇"
+     "cost": "连通阳台封死两小时，只能走走廊正门",
+     "option": "合力拉上防风隔断落锁，退回书房壁炉旁擦干冷雨"
     },
     {
-     "cost": "演变为国际海事丑闻，两人须接受数月引渡调查",
-     "option": "长媳用基金会明码向国际海事搜救中心发出海盗劫持求救"
+     "cost": "在暴雨里折腾得浑身湿透，回房急需热水取暖",
+     "option": "由护卫固定外挂梯和排水口，保住阳台通道"
     }
    ],
    "far": {
-    "consequence": "所有人被灭口沉尸，真相埋进公海。",
+    "consequence": "两间套房之间的通道整夜暴露在走廊监控下。",
     "due_days": 1,
-    "trigger": "护卫艇登船屠杀"
+    "trigger": "移门被浪打坏"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [
-    "hk_bodyguard_alert_approach",
-    "hk_heiress_whisper_request"
+    "hk_heiress_robe_approach",
+    "hk_counsel_protect_approach",
+    "hk_bodyguard_alert_approach"
    ],
-   "id": "p_private_patrol_intercept",
+   "id": "p_typhoon_swell_stabilizer",
    "immediate": {
-    "minutes": 5,
-    "text": "海平面上探照灯光柱穿透风雨直射顶层。"
+    "minutes": 10,
+    "text": "浪夹着暴雨拍上阳台，湿滑的柚木地板随船身不断倾斜。"
    },
    "leverage": null,
    "location_ids": [
-    "connecting_balcony"
+    "connecting_balcony",
+    "counsel_executive_suite"
    ],
    "near": {
-    "deadline_minutes": 12,
-    "text": "重机枪火力封死救生艇滑道。"
+    "deadline_minutes": 25,
+    "text": "外挂检修梯在狂风里撞击船舷，随时会触发防盗警报。"
    },
-   "objective": "合围前弹射快艇，冲进国际商船航道。",
-   "source": "institution",
-   "start_minute": 255,
+   "objective": "在风浪变大前收拾好阳台，护住两间套房之间的通道。",
+   "source": "nature",
+   "start_minute": 40,
    "tags": [
-    "workplace_power",
-    "crime"
+    "disaster"
    ],
-   "title": "私兵快艇合围截杀",
-   "trigger": "老太爷从私人海岛调来两艘武装护卫艇全速截击，雷达显示只剩五海里，扬言登船格杀。"
+   "title": "热带低压强涌浪横摇",
+   "trigger": "外海涌浪突然加剧，减摇鳍发出低沉嗡鸣，驾驶台广播通知全船收回露台物品、锁闭外侧移门。"
+  },
+  {
+   "choice": "在配线箱手动切入应急窄带续传，还是拔掉网线把底稿存进冷存储芯片带下船？",
+   "exits": [
+    {
+     "cost": "通讯室留下一条匿名流量记录，天亮前要抹平",
+     "option": "在走廊配线暗格接入应急信道，守着终端传完最后一段"
+    },
+    {
+     "cost": "要等靠岸才能引爆舆论，今晚得守好那枚芯片",
+     "option": "拔掉网线销毁缓存，把底稿锁进贴身的加密芯片"
+    }
+   ],
+   "far": {
+    "consequence": "管家的人一早就能从书房电脑里调出底稿。",
+    "due_days": 1,
+    "trigger": "上传中断，本地缓存留在终端里"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hk_counsel_suit_observe",
+    "hk_second_heiress_corridor_approach",
+    "hk_bodyguard_stance_observe"
+   ],
+   "id": "p_satellite_relay_flicker",
+   "immediate": {
+    "minutes": 5,
+    "text": "内线分机跳出总管家的查岗占线提示。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "counsel_executive_suite",
+    "vip_carpeted_corridor"
+   ],
+   "near": {
+    "deadline_minutes": 20,
+    "text": "备用终端的电量和信号窗口都在快速消耗。"
+   },
+   "objective": "传完最后一段底稿，不在本地留下缓存痕迹。",
+   "source": "accident",
+   "start_minute": 60,
+   "tags": [
+    "workplace"
+   ],
+   "title": "卫星天线暴雨衰减",
+   "trigger": "暴雨云团掠过上空，卫星宽带信噪比骤降，套房的加密上传卡在百分之八十五，内线电话也冒出电流声。"
   }
  ],
  "region": "当代公海十级风暴中超豪华私人游艇顶层连通套房",
@@ -2442,7 +2550,7 @@
   "testing": "查房时同藏"
  },
  "status": "released",
- "style_hint": "豪门禁忌关系的隐秘与窒息：暴雨拍打落地窗的轰鸣、高级香氛混着海风的咸腥、真丝睡袍擦过肌肤的窸窣、磨砂移门锁扣转动的轻响、隔壁的鼾声与门外皮鞋踩过地毯的闷响。语言是上流社会的优雅辞令与法律条款的交锋，成年男女清醒自愿、平起平坐。",
+ "style_hint": "多写雨声、香氛与门锁细响，对白是上流辞令与法条交锋，优雅而带刺。",
  "tension_engines": [
   {
    "id": "te_heiress_flesh_vs_revenge_pact",
@@ -2461,7 +2569,7 @@
    "text": "以家法宗规吞并一切的腐朽门阀，对上携手做空引爆千亿帝国的现代复仇。"
   }
  ],
- "title": "暴风雨游艇：名门长媳与隔壁顾问",
+ "title": "公海游艇连通套房",
  "tone": [
   "隔室暗度",
   "名门禁忌",

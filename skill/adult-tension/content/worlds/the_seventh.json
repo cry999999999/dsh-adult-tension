@@ -120,9 +120,10 @@
  ],
  "cast_combos": [
   {
-   "chemistry": "{ops_manager.name}握着排班表和合同，{seventh_voice.name}下播后总会在走廊上等你一起下楼；你是直播间里那个删弹幕的人。",
-   "id": "k_night_shift",
+   "chemistry": "隔壁工位已经摆上了第八任候补的名牌，{seventh_voice.name}在深夜直播结束后反锁录音间，摘下头显让你录一段不经过变声器的真声，留给只属于你们两个人的备份盘。",
+   "id": "combo_seventh_true_breath",
    "identity_ids": [
+    "foley_contractor",
     "night_moderator"
    ],
    "player_positions": [
@@ -133,67 +134,39 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "ops_manager",
-     "b_to_a": {
-      "tension": 0,
-      "trust": 1
-     },
-     "reason": "{ops_manager.name}只记得你的房管账号名",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
       "tension": 2,
-      "trust": 2
+      "trust": 3
      },
      "b": "seventh_voice",
      "b_to_a": {
-      "tension": 1,
-      "trust": 2
-     },
-     "reason": "{seventh_voice.name}下播后会跟你抱怨弹幕",
-     "stage": "familiar"
-    },
-    {
-     "a": "ops_manager",
-     "a_to_b": {
       "tension": 2,
-      "trust": 1
+      "trust": 3
      },
-     "b": "seventh_voice",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 0
-     },
-     "reason": "{ops_manager.name}亲手挑中了{seventh_voice.name}，也亲手启动了替代计划",
-     "stage": "familiar"
+     "reason": "这半年每次深夜下播，你都留在录音间替汗透的{seventh_voice.name}解开贴身动捕服的魔术贴，对方摘下变声耳麦后只贴着你耳朵用真声撒娇。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "ops_manager",
     "seventh_voice"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想替{seventh_voice.name}守住那一点真的东西",
-    "limit_gap": "{seventh_voice.name}的候补已经搬进了办公区，你的兼职随时可以不续",
-    "meeting_reason": "你们三个每晚都在同一个钟头下班",
-    "resource_gap": "{ops_manager.name}有合同和权限，{seventh_voice.name}有一副全网认得的声音，你只有一个房管账号"
+    "irreplaceable_goal": "帮{seventh_voice.name}封存好原始真声音轨，在换人风波里守住{seventh_voice.ta}真正的名字。",
+    "limit_gap": "周年直播后合同重签，今晚不留底，第七任的真声就会彻底被覆盖。",
+    "meeting_reason": "深夜两点下播，{seventh_voice.name}还穿着汗湿的黑色动捕服把你拉进录音间。",
+    "resource_gap": "{seventh_voice.name}有千万粉丝认准的直播间表现力，你握着未处理的原始干音轨和每晚陪{seventh_voice.ta}留守的钥匙。"
    },
    "tags": [],
    "tension_engine_ids": [
-    "te_replaceable",
-    "te_contract_ban"
+    "te_true_voice",
+    "te_replaceable"
    ]
   },
   {
-   "chemistry": "{understudy.name}每天在录音间练四个钟头，{night_engineer.name}在导播间看着；你做的音效，两张嘴都要用。",
-   "id": "k_mirror_booth",
+   "chemistry": "{night_engineer.name}是全公司唯一见过全部六任素颜的人，今晚系统升级要清空历史动作库，{night_engineer.ta}把你叫进导播间暗角，屏幕上是六任动作习惯叠在一起的秘密建模。",
+   "id": "combo_engineer_first_preset",
    "identity_ids": [
-    "foley_contractor"
+    "foley_contractor",
+    "night_moderator"
    ],
    "player_positions": [
     "low"
@@ -203,55 +176,26 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "understudy",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{understudy.name}请你帮忙听过一次练习录音",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 0,
-      "trust": 1
+      "tension": 3,
+      "trust": 2
      },
      "b": "night_engineer",
      "b_to_a": {
-      "tension": 0,
-      "trust": 1
+      "tension": 3,
+      "trust": 2
      },
-     "reason": "{night_engineer.name}和你一起吃过很多次凌晨的泡面",
-     "stage": "acquainted"
-    },
-    {
-     "a": "understudy",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "night_engineer",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{night_engineer.name}从不回放{understudy.name}的练习录音",
-     "stage": "stranger"
+     "reason": "熬大夜调设备时你们总挤一张椅子看波形，{night_engineer.name}教你推推子时下巴就搁在你肩窝，连第一任动作包的密码都告诉了你。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "understudy",
     "night_engineer"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想知道这盘素材最后会被用来做什么",
-    "limit_gap": "你的合同下个月到期，{understudy.name}还没正式上台",
-    "meeting_reason": "三个人在同一层楼熬到凌晨",
-    "resource_gap": "{night_engineer.name}有六任的原始数据，{understudy.name}有越来越像的声音，你只有一盘素材"
+    "irreplaceable_goal": "陪{night_engineer.name}把那份记载着六任痕迹的私密数据安全导出来。",
+    "limit_gap": "天亮运维组接管服务器，旧动作库清晨六点自动格式化。",
+    "meeting_reason": "凌晨备份时段，{night_engineer.name}关掉导播间副屏，招手让你坐到身边。",
+    "resource_gap": "{night_engineer.name}掌握动捕后台最高权限和历任底层数据，你是唯一帮{night_engineer.ta}打掩护的夜班搭档。"
    },
    "tags": [],
    "tension_engine_ids": [
@@ -260,8 +204,8 @@
    ]
   },
   {
-   "chemistry": "你和{seventh_voice.name}同一年出道，现在{understudy.name}坐在你们中间的工位上，练的是{seventh_voice.name}的声音。",
-   "id": "k_same_year",
+   "chemistry": "“皮套永续计划”正式启动，公司要拿{seventh_voice.name}开刀立规矩；今晚下播后你们关在全封闭动捕棚里，外面有人刚拍到你们同进一家咖啡馆的背影。",
+   "id": "combo_sister_shared_avatar",
    "identity_ids": [
     "sister_vtuber"
    ],
@@ -273,137 +217,120 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 2
+      "tension": 2,
+      "trust": 3
      },
      "b": "seventh_voice",
      "b_to_a": {
-      "tension": 1,
-      "trust": 2
+      "tension": 2,
+      "trust": 3
      },
-     "reason": "你们出道那天一起在走廊里哭过",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "understudy",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{understudy.name}叫你“前辈”，叫得很恭敬",
-     "stage": "acquainted"
-    },
-    {
-     "a": "seventh_voice",
-     "a_to_b": {
-      "tension": 3,
-      "trust": -1
-     },
-     "b": "understudy",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 1
-     },
-     "reason": "{understudy.name}以前是{seventh_voice.name}的粉丝",
-     "stage": "stranger"
+     "reason": "你们违反禁令在场外合租了一年，台上顶着皮套营业，台下每晚缩在同一床被子里互相按摩酸痛的肩颈，早是彼此唯一的依靠。",
+     "stage": "committed"
     }
    ],
    "slots": [
-    "seventh_voice",
-    "understudy"
+    "seventh_voice"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想知道“永续计划”到底要换掉多少人",
-    "limit_gap": "你的皮套也在名单上，下一个可能就是你",
-    "meeting_reason": "三个人共用一间录音间，排班表一格挨着一格",
-    "resource_gap": "{seventh_voice.name}有当家皮套，{understudy.name}有经纪人的看好，你有自己的直播间"
+    "irreplaceable_goal": "保住两个人的席位，绝不让公司用候补把{seventh_voice.name}换掉。",
+    "limit_gap": "明早运营例会就要追查那张同框照片，今晚必须统一口径。",
+    "meeting_reason": "红灯熄灭后，{seventh_voice.name}没有卸光学标记球就扑进你怀里锁上了棚门。",
+    "resource_gap": "你们各自握着一张高人气皮套的直播间话语权，也互握着对方场外同居的软肋。"
    },
    "tags": [],
    "tension_engine_ids": [
-    "te_mirror",
-    "te_true_voice"
+    "te_replaceable",
+    "te_contract_ban"
    ]
   },
   {
-   "chemistry": "{top_donor.name}在咖啡馆里给{doujin_artist.name}约了一张稿：画屏幕后面的那个人；你是今年同人展的主催，两个人都来找你要展位。",
-   "id": "k_fan_and_artist",
+   "chemistry": "{doujin_artist.name}画了一张“皮套撕开露第七任真脸”的未公开设定图，今晚约你在楼下咖啡馆交画册终稿，却发现有人正在网上高价悬赏这张图的原文件。",
+   "id": "combo_artist_unmasked_sketch",
    "identity_ids": [
     "doujin_organizer"
    ],
    "player_positions": [
-    "equal",
-    "low"
+    "equal"
    ],
    "power_structure": "equal",
    "relations": [
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "top_donor",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{top_donor.name}是你展会的老赞助人",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 2
+      "tension": 3,
+      "trust": 3
      },
      "b": "doujin_artist",
      "b_to_a": {
-      "tension": 1,
-      "trust": 2
+      "tension": 3,
+      "trust": 3
      },
-     "reason": "{doujin_artist.name}的第一本同人是在你的展上卖的",
-     "stage": "familiar"
-    },
-    {
-     "a": "top_donor",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "doujin_artist",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 0
-     },
-     "reason": "{doujin_artist.name}的画，{top_donor.name}每张都买",
-     "stage": "acquainted"
+     "reason": "上届同人展庆功夜你们在酒店改画稿，微醺后{doujin_artist.name}跨坐在你腿上拿数位笔描你的唇线，加密相册里全是你只穿单衣的速写。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "top_donor",
     "doujin_artist"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想办一届不被公司下架的展",
-    "limit_gap": "{top_donor.name}刚被挤下榜一，{doujin_artist.name}收到了律师函",
-    "meeting_reason": "三个人在同一家咖啡馆的签名板下面碰面",
-    "resource_gap": "{top_donor.name}有钱，{doujin_artist.name}有画，你有展位和人脉"
+    "irreplaceable_goal": "替{doujin_artist.name}挡下外头的悬赏试探，把那张真容画留在你们两人的私密收藏里。",
+    "limit_gap": "印厂明早开印场刊，这张图放不放进去今晚要拍板。",
+    "meeting_reason": "咖啡馆打烊前，{doujin_artist.name}在桌子底下用膝盖蹭了蹭你，把平板推过来。",
+    "resource_gap": "{doujin_artist.name}有画师圈的号召力和那张真容原画，你有展会首发摊位与场刊决定权。"
    },
    "tags": [],
    "tension_engine_ids": [
-    "te_ranking",
-    "te_true_voice"
+    "te_true_voice",
+    "te_mirror"
    ]
   },
   {
-   "chemistry": "你来看周年直播的数据，报告由你写；{ops_manager.name}请你进了导播间，{seventh_voice.name}下播后在走廊上等你，说想单独聊几句。",
-   "id": "k_investor_report",
+   "chemistry": "{understudy.name}原本是冲着你们才考进来的粉丝，如今却被运营安排坐在第七任隔壁当影子候补；今晚{understudy.ta}在录音间模仿第七任的声线，哭腔却完全是对着你发出来的。",
+   "id": "combo_understudy_mirror_line",
    "identity_ids": [
+    "sister_vtuber"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "understudy",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 2
+     },
+     "reason": "{understudy.name}集训时总深夜在录音间练气息，你去送温水时贴着{understudy.ta}的肋骨教腹式呼吸，对方看你的眼神既崇拜又藏着占有欲。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "understudy"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "安抚住{understudy.name}的不安，别让运营拿{understudy.ta}当枪使。",
+    "limit_gap": "明天就是声纹盲测考核，{understudy.name}故意练偏还是全力顶替全看你一句话。",
+    "meeting_reason": "深夜十一点，{understudy.name}在录音间玻璃窗里朝路过的你轻轻招手。",
+    "resource_gap": "{understudy.name}握着候补转正合同，你是{understudy.ta}在公司里唯一信任并愿意听命的前辈。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_replaceable",
+    "te_mirror"
+   ]
+  },
+  {
+   "chemistry": "董事会要求在周年庆启动“中之人无缝轮换”，你手里攥着续约名单的最终签字权；{seventh_voice.name}在下播后钻进你的录音监听室，把耳机扣在你头上，只用真声叫你的名字。",
+   "id": "combo_producer_contract_clause",
+   "identity_ids": [
+    "new_producer",
     "investor_rep"
    ],
    "player_positions": [
@@ -414,66 +341,38 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "ops_manager",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{ops_manager.name}给你看过一份很漂亮的数据报告",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "seventh_voice",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "你听了{seventh_voice.name}三年的直播，{seventh_voice.ta}不知道",
-     "stage": "stranger"
-    },
-    {
-     "a": "ops_manager",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 2
      },
      "b": "seventh_voice",
      "b_to_a": {
       "tension": 3,
-      "trust": -1
+      "trust": 3
      },
-     "reason": "{seventh_voice.name}还不知道候补的事已经定了",
-     "stage": "familiar"
+     "reason": "三个月前你空降接手项目那晚，听出{seventh_voice.name}带哭腔的底噪，关掉监控后两人在吸音墙边吻了第一次；那段录音只存在你的私人硬盘里。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "ops_manager",
     "seventh_voice"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想知道这家公司到底值不值得继续投",
-    "limit_gap": "公司现金流只撑到周年直播之后，{seventh_voice.name}的候补随时可以顶上",
-    "meeting_reason": "周年直播前一周，三个人在同一层楼",
-    "resource_gap": "你有撤资的权力，{ops_manager.name}有“永续计划”，{seventh_voice.name}只有自己"
+    "irreplaceable_goal": "顶住董事会的轮换压力，修改合同条款把{seventh_voice.name}稳稳留在麦克风前。",
+    "limit_gap": "明早十点向投资人汇报周年企划，去留名单今晚锁死。",
+    "meeting_reason": "全员下班后，{seventh_voice.name}锁上录音间的门，坐到你的调音台边缘。",
+    "resource_gap": "你掌握项目预算、续约拍板权与后台监控开关，{seventh_voice.name}只有这副无可替代的嗓音和对你的全盘托付。"
    },
    "tags": [],
    "tension_engine_ids": [
-    "te_replaceable",
-    "te_ranking"
+    "te_contract_ban",
+    "te_true_voice"
    ]
   },
   {
-   "chemistry": "你刚接手“永续计划”；{night_engineer.name}拒绝交出原始数据，{top_donor.name}发来一封长邮件，说屏幕后面换了人，要公司给一个说法。",
-   "id": "k_producer_desk",
+   "chemistry": "公司的现金流只够撑过周年直播，而你查出一直铁腕推行“皮套永续”的{ops_manager.name}自己就是当年被洗掉姓名的第一任中之人。",
+   "id": "combo_investor_first_generation",
    "identity_ids": [
+    "investor_rep",
     "new_producer"
    ],
    "player_positions": [
@@ -484,66 +383,86 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 0
+      "tension": 3,
+      "trust": 2
      },
-     "b": "night_engineer",
+     "b": "ops_manager",
      "b_to_a": {
-      "tension": 2,
-      "trust": 0
+      "tension": 3,
+      "trust": 2
      },
-     "reason": "{night_engineer.name}说你是来拆这间棚子的人",
-     "stage": "stranger"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "top_donor",
-     "b_to_a": {
-      "tension": 2,
-      "trust": -1
-     },
-     "reason": "{top_donor.name}在邮件里叫你“刽子手”",
-     "stage": "stranger"
-    },
-    {
-     "a": "night_engineer",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "top_donor",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 0
-     },
-     "reason": "{night_engineer.name}在后台流水里看了{top_donor.name}三年",
-     "stage": "stranger"
+     "reason": "几轮尽调下来，{ops_manager.name}总在深夜单独留你对账，靠在休息区沙发扶手上给你哼一段不知来历的旧歌，尾音软得像在等你接话。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "night_engineer",
+    "ops_manager"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "解开{ops_manager.name}作为第一任的心结，让{ops_manager.ta}放弃把第七任做成下一个自己。",
+    "limit_gap": "周年直播前过桥资金不到账，整个虚拟企划就会破产清盘。",
+    "meeting_reason": "深夜对完财报，{ops_manager.name}在走廊休息区给你泡了一杯热参茶，关掉了走廊主灯。",
+    "resource_gap": "你握着下一轮救命注资的签字权，{ops_manager.name}握着全部中之人的合同把柄与运营团队。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_contract_ban",
+    "te_ranking"
+   ]
+  },
+  {
+   "chemistry": "{top_donor.name}自己花重金做了六任与第七任的声纹频谱对比，今晚拿着打印出来的波形图坐在楼下谷子咖啡馆，点名要跟你谈“最后一格私域特权”。",
+   "id": "combo_donor_private_slot",
+   "identity_ids": [
+    "new_producer",
+    "sister_vtuber",
+    "night_moderator"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 1
+     },
+     "b": "top_donor",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 1
+     },
+     "reason": "你在私域答谢会上单独接待过{top_donor.name}，对方摘下名表放在桌上试探你的口风，散场时又在雨里替你撑伞送到楼下。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
     "top_donor"
    ],
    "stakes": {
-    "irreplaceable_goal": "你不想让上一家公司的事再来一遍",
-    "limit_gap": "老板要你一个月内出成果，{top_donor.name}的邮件抄送了论坛",
-    "meeting_reason": "周年直播前，三个人都在等你的决定",
-    "resource_gap": "你有人事权，{night_engineer.name}有数据，{top_donor.name}有三年的打赏记录和一个全网认识的账号"
+    "irreplaceable_goal": "稳住这位榜一金主，让{top_donor.name}删掉声纹对比帖并继续支持直播间。",
+    "limit_gap": "声纹对比帖已经写好存在草稿箱里，午夜前谈不拢就会发上主论坛。",
+    "meeting_reason": "{top_donor.name}包下了打烊前的谷子咖啡馆里座，把声纹图推到你面前。",
+    "resource_gap": "{top_donor.name}握着直播间四成的打赏流水和声纹对比铁证，你握着后台真实身份与私域见面的安排权。"
    },
    "tags": [],
    "tension_engine_ids": [
     "te_ranking",
-    "te_mirror"
+    "te_true_voice"
    ]
   },
   {
-   "chemistry": "每晚下播，{seventh_voice.name}都要在动捕棚的地上坐着喝完一杯水，{night_engineer.name}隔着玻璃调设备；最近这个钟头，常常多了一个你。",
-   "id": "k_after_stream",
-   "identity_ids": [],
+   "chemistry": "{ops_manager.name}拿着写明“皮套与声纹归公司所有”的补充协议走进录音间，要{seventh_voice.name}在周年庆前签下随时让位给候补的军令状；你反锁录音间挡在两人中间。",
+   "id": "combo_booth_avatar_succession",
+   "identity_ids": [
+    "new_producer",
+    "investor_rep",
+    "sister_vtuber"
+   ],
    "player_positions": [
     "low",
     "equal",
@@ -554,173 +473,60 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 1
+      "tension": 2,
+      "trust": 2
      },
      "b": "seventh_voice",
      "b_to_a": {
-      "tension": 1,
-      "trust": 1
+      "tension": 2,
+      "trust": 2
      },
-     "reason": "{seventh_voice.name}问过你一次“我是第几个”",
-     "stage": "acquainted"
+     "reason": "从入行试音起你就一直陪在{seventh_voice.name}身边，每一次破音或失控都是你第一时间兜底。",
+     "stage": "familiar"
     },
     {
      "a": "player",
      "a_to_b": {
-      "tension": 0,
+      "tension": 3,
       "trust": 1
      },
-     "b": "night_engineer",
+     "b": "ops_manager",
      "b_to_a": {
-      "tension": 0,
+      "tension": 3,
       "trust": 1
      },
-     "reason": "{night_engineer.name}替你开过一次棚子的门",
-     "stage": "acquainted"
+     "reason": "你们在运营会议上多次为中之人的署名权暗中较劲，私下里对方却很吃你软硬兼施的那一套。",
+     "stage": "testing"
     },
     {
      "a": "seventh_voice",
      "a_to_b": {
-      "tension": 2,
-      "trust": 2
+      "tension": 3,
+      "trust": 1
      },
-     "b": "night_engineer",
+     "b": "ops_manager",
      "b_to_a": {
-      "tension": 2,
-      "trust": 2
+      "tension": 3,
+      "trust": 1
      },
-     "reason": "{night_engineer.name}是唯一见过{seventh_voice.name}素颜的同事",
-     "stage": "familiar"
+     "reason": "第一任前辈与第七任现役隔着一纸随时可注销声纹的苛刻合同，既是影子也是彼此的镜子。",
+     "stage": "testing"
     }
    ],
    "slots": [
     "seventh_voice",
-    "night_engineer"
+    "ops_manager"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想听一次{seventh_voice.name}不用皮套的声音",
-    "limit_gap": "恋爱禁令和保密协议压在每个人身上",
-    "meeting_reason": "每晚下播后，最后走的总是你们三个",
-    "resource_gap": "{seventh_voice.name}有声音，{night_engineer.name}有数据，你有今晚出现在这里的理由"
+    "irreplaceable_goal": "废掉随时注销声纹的霸王条款，让第一任与第七任达成真正的和解。",
+    "limit_gap": "周年直播倒计时只剩最后一晚，今晚不签字明晚就切备用录播。",
+    "meeting_reason": "下播后的隔音录音间里，三个人围着那份补充协议对峙。",
+    "resource_gap": "{ops_manager.name}握着注销声纹的合同把柄，{seventh_voice.name}握着周年庆压轴演出的不可替代性，你握着投资与制作一票否决权。"
    },
    "tags": [],
    "tension_engine_ids": [
-    "te_true_voice",
+    "te_replaceable",
     "te_contract_ban"
-   ]
-  },
-  {
-   "chemistry": "周年直播前夜，{understudy.name}在咖啡馆二楼让{doujin_artist.name}画一张像，{top_donor.name}坐在楼下，一直盯着楼梯口。",
-   "id": "k_anniversary_eve",
-   "identity_ids": [],
-   "player_positions": [
-    "low",
-    "equal",
-    "high"
-   ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "understudy",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{understudy.name}今晚第一次用原本的声音跟你说话",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "doujin_artist",
-     "b_to_a": {
-      "tension": 0,
-      "trust": 1
-     },
-     "reason": "{doujin_artist.name}给你画过一张速写",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "top_donor",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{top_donor.name}请你喝过一杯咖啡，问你认不认识“里面的人”",
-     "stage": "acquainted"
-    },
-    {
-     "a": "understudy",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "doujin_artist",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 0
-     },
-     "reason": "{doujin_artist.name}一眼看出{understudy.name}在模仿谁",
-     "stage": "stranger"
-    },
-    {
-     "a": "understudy",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "top_donor",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 0
-     },
-     "reason": "{understudy.name}以前在榜上排在{top_donor.name}后面",
-     "stage": "stranger"
-    },
-    {
-     "a": "doujin_artist",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "top_donor",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{top_donor.name}约过{doujin_artist.name}十几张稿",
-     "stage": "acquainted"
-    }
-   ],
-   "slots": [
-    "understudy",
-    "doujin_artist",
-    "top_donor"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "你想在明晚之前让一个人知道真相",
-    "limit_gap": "明晚直播后半段就要换人，谁都没告诉粉丝",
-    "meeting_reason": "咖啡馆打烊前的最后一个钟头",
-    "resource_gap": "{understudy.name}有一个要说出口的秘密，{doujin_artist.name}有一张没公开的图，{top_donor.name}有一份声纹对比"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "te_mirror",
-    "te_ranking"
    ]
   }
  ],
@@ -821,7 +627,7 @@
      "下播后只剩待机灯的动捕棚"
     ],
     "preconditions": [
-     "动捕相机已经关了"
+     "动捕相机已经关了，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -862,7 +668,7 @@
    },
    "tags": [],
    "voices": {
-    "inner": "“三年了，他们爱的到底是我，还是那张脸？”",
+    "inner": "“三年了，台下的人爱的到底是我，还是那张脸？”",
     "surface": "“今天也谢谢大家，晚安喵——好了，关了吗？”"
    }
   },
@@ -942,7 +748,7 @@
      "凌晨四点只剩机器嗡嗡声的棚子"
     ],
     "preconditions": [
-     "数据已经备份完"
+     "数据已经备份完，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -1063,7 +869,7 @@
      "凌晨三点刚下播后的安静"
     ],
     "preconditions": [
-     "不在直播间，不在榜单上"
+     "不在直播间，不在榜单上，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1184,7 +990,7 @@
      "深夜空荡荡的运营办公区"
     ],
     "preconditions": [
-     "数据报告已经交了"
+     "数据报告已经交了，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -1305,7 +1111,7 @@
      "录音间里关了灯的安静"
     ],
     "preconditions": [
-     "不在练习时间"
+     "不在练习时间，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1426,7 +1232,7 @@
      "咖啡馆打烊后二楼的台灯"
     ],
     "preconditions": [
-     "稿子已经交完"
+     "稿子已经交完，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1605,6 +1411,23 @@
    "start_minute": 90,
    "tags": [],
    "title": "送行"
+  },
+  {
+   "beats": [
+    "直播红灯熄灭，三十六个光学反光球还贴在肩颈、腰侧和脚踝上",
+    "魔术贴撕开时发出清脆的轻响，紧身动捕服底下透出温热的潮气",
+    "后背肩胛骨那一颗够不着，只能背过身微低着头等你伸手帮忙"
+   ],
+   "duration_minutes": 35,
+   "hook_ids": [],
+   "id": "a_unstrap_sensors",
+   "location_ids": [
+    "mocap_stage",
+    "voice_booth"
+   ],
+   "start_minute": 1390,
+   "tags": [],
+   "title": "下播后卸下全身动捕传感器"
   }
  ],
  "default_npc_gender_mix": {
@@ -1740,9 +1563,10 @@
    "id": "mocap_stage",
    "name": "动捕棚",
    "pressure_modifiers": {
+    "p_anniversary_crash": "几十盏红外镜头在暗处泛着微光，空气闷热得像蒸笼，地上散落着刚摘下的定位球。",
     "p_voiceprint_post": "监视器右下角，弹幕还在滚，有人刷了一张声纹对比图。"
    },
-   "privacy": "semi",
+   "privacy": "private",
    "tags": [],
    "visibility": "开播时有导播、技术和经纪在玻璃后面看着；下播后只剩一排待机灯和值夜班的人",
    "witnesses": [
@@ -1785,6 +1609,7 @@
    "id": "voice_booth",
    "name": "录音间",
    "pressure_modifiers": {
+    "p_anniversary_crash": "厚重的吸音海绵把外界声音隔绝得一干二净，小冰箱里还镇着两瓶冰水。",
     "p_voice_cancel": "话筒的指示灯还亮着，可权限列表里已经少了一个名字。"
    },
    "privacy": "private",
@@ -1830,7 +1655,7 @@
    "id": "corridor_lounge",
    "name": "走廊休息区",
    "pressure_modifiers": {
-    "p_anniversary_crash": "走廊尽头的大屏上，周年直播的倒计时还剩不到一天。"
+    "p_romance_photo": "自动贩卖机泛着暖黄的光，窄沙发上放着刚从微波炉端出来的热牛奶。"
    },
    "privacy": "semi",
    "tags": [],
@@ -1852,6 +1677,7 @@
    "id": "street_cafe",
    "name": "楼下谷子咖啡馆",
    "pressure_modifiers": {
+    "p_romance_photo": "卷帘门拉下了一大半，立牌上印着虚拟形象的笑脸，玻璃窗上全是白茫茫的雨雾。",
     "p_voiceprint_post": "邻桌两个人正对着手机放一段音频，一遍又一遍。"
    },
    "privacy": "public",
@@ -1933,7 +1759,7 @@
   ],
   "order": "family_first"
  },
- "notes": "第二批世界（用户 2026-10-03 素材库的改写，见 content-src/concepts/batch2-concepts.md 第 4 个）。性别按会话偏好生成（D15）。",
+ "notes": "第二批世界（用户 2026-10-03 素材库的改写，见 content-src/concepts/batch2-concepts.md 第 4 个）。性别按会话偏好生成（D15）。\n2026-10-18 按写作规则 v2 改造：按 Gemini 第三批方案：组合改成 8 组单人加 1 组运营与第七任的三方局，原有隔壁工位把柄正好落在这两人身上；周年直播崩了改成动捕棚闷热虚脱，被拍到的照片改成寒雨夜困咖啡馆；动捕棚改为 private。",
  "player_identities": [
   {
    "age_range": [
@@ -2292,21 +2118,21 @@
    "trigger": "录音间的权限列表里，前一任中之人的名字今天被删了，删的时候没人通知"
   },
   {
-   "choice": "加班修，还是延期",
+   "choice": "打急救电话让真容曝光在担架上，还是锁上门亲手帮对方卸下全身传感器降温",
    "exits": [
     {
-     "cost": "所有人都得陪着熬",
-     "option": "通宵修"
+     "cost": "在狭小的隔音间里肌肤相贴，呼吸全乱在了麦克风前",
+     "option": "锁上录音间门，帮对方拉开动捕服后背长拉链、用冰毛巾贴身擦拭降温"
     },
     {
-     "cost": "粉丝会以为是换人换出了问题",
-     "option": "延期"
+     "cost": "榜一与运营同时问责，换人议程提前启动",
+     "option": "直接取消连麦送去急诊"
     }
    ],
    "far": {
-    "consequence": "投资方会当场撤资",
-    "due_days": 2,
-    "trigger": "正式直播再崩一次"
+    "consequence": "候补名正言顺顶替上台，第七任彻底出局",
+    "due_days": 3,
+    "trigger": "脱水高热导致声带水肿失声"
    },
    "flags": [
     "timed"
@@ -2314,41 +2140,41 @@
    "hook_ids": [],
    "id": "p_anniversary_crash",
    "immediate": {
-    "minutes": 30,
-    "text": "彩排画面停在那半张僵住的脸上，导播在骂人"
+    "minutes": 15,
+    "text": "汗水把紧身动捕服浸透，滚烫的额头贴在你手背上直发抖"
    },
    "leverage": null,
    "location_ids": [
-    "corridor_lounge",
-    "mocap_stage"
+    "mocap_stage",
+    "voice_booth"
    ],
    "near": {
-    "deadline_minutes": 1260,
-    "text": "明晚八点正式开播"
+    "deadline_minutes": 150,
+    "text": "半夜两点还有一场付费舰长私域语音连麦"
    },
-   "objective": "在正式直播前把问题找出来",
-   "source": "institution",
-   "start_minute": 1200,
+   "objective": "在夜间值班保安巡楼前，把人扶进隔壁清凉的录音间解开紧身动捕服散热补水",
+   "source": "accident",
+   "start_minute": 1380,
    "tags": [],
-   "title": "周年直播崩了半张脸",
-   "trigger": "周年直播彩排时，动捕突然丢了半张脸的数据，那张脸一半在笑，一半僵着"
+   "title": "动捕棚闷热虚脱",
+   "trigger": "周年高强度连跳三小时后，全封闭动捕棚的新风空调突然停机，穿着紧身动捕服的人体温飙升、眼前发黑，扶着支架跪坐在软垫上大口喘息"
   },
   {
-   "choice": "否认，还是承认是同事",
+   "choice": "冒雨冲去停车场赌一把不被拍到，还是拉下卷帘门在沙发上相拥取暖过夜",
    "exits": [
     {
-     "cost": "以后两个人就不能再一起走出这栋楼",
-     "option": "说是同事一起加班"
+     "cost": "一整夜贴着彼此的心跳说话，再也退不回普通同事",
+     "option": "拉严休息区遮光帘，脱掉湿外套裹着同一条毛毯在长沙发上取暖到天亮"
     },
     {
-     "cost": "论坛会替你说",
-     "option": "什么都不说"
+     "cost": "第二天双双发烧鼻音浓重，一开麦就被老粉听出端倪",
+     "option": "分头冒雨跑回各自住处"
     }
    ],
    "far": {
-    "consequence": "恋爱禁令会被拿出来，违约金是一年的收入",
+    "consequence": "违反恋爱禁令触发天价违约金",
     "due_days": 5,
-    "trigger": "照片被扒出是谁"
+    "trigger": "雨夜同框照流到论坛专楼"
    },
    "flags": [
     "timed"
@@ -2356,8 +2182,8 @@
    "hook_ids": [],
    "id": "p_romance_photo",
    "immediate": {
-    "minutes": 10,
-    "text": "考据粉把手机举到你面前，问照片上是不是你"
+    "minutes": 15,
+    "text": "冰冷的雨水顺着发梢滴进领口，窗外树影下似乎有相机长焦镜头的反光"
    },
    "leverage": null,
    "location_ids": [
@@ -2365,15 +2191,15 @@
     "corridor_lounge"
    ],
    "near": {
-    "deadline_minutes": 720,
-    "text": "明天上午经纪人会看到"
+    "deadline_minutes": 240,
+    "text": "早班保洁六点半开门进场"
    },
-   "objective": "在照片被扒清之前，决定怎么办",
-   "source": "person",
-   "start_minute": 30,
+   "objective": "避开门口蹲守偷拍的私生粉镜头，在暖气不足的休息区里把淋湿的衣服烘干熬到天亮",
+   "source": "nature",
+   "start_minute": 1410,
    "tags": [],
-   "title": "被拍到的那张照片",
-   "trigger": "有人在写字楼楼下拍到两个人一起走出来，照片发到了论坛，脸打了码，可背影认得出"
+   "title": "寒雨夜困谷子咖啡馆",
+   "trigger": "凌晨下播后突降深秋冰雹暴雨，网约车全线停运，楼下街角积水没过脚踝，没带伞的两个人被困在打烊落锁的谷子咖啡馆与二楼休息区之间"
   }
  ],
  "region": "一家虚拟主播公司的动捕棚、办公区和楼下的谷子咖啡馆",

@@ -99,157 +99,11 @@
  ],
  "cast_combos": [
   {
-   "chemistry": "御史台巡按密使手握天子绣衣金牌空降大理寺，居高临下监临验尸。秉公执法的司刑女官{chief_judicial_judge_lady.name}视御使为打破门阀封锁的唯一天日，而老谋深算的大理寺卿{senior_dali_court_chief.name}则视御使为悬在自己顶戴上的索命铡刀。御使既需借女官之刀挖出相府剧毒铁证，又需借寺卿官威稳住全寺甲士，三方在烛影摇红中高位博弈。",
-   "id": "combo_1_player_high",
+   "chemistry": "{chief_judicial_judge_lady.name}执掌司刑司正印与提调生杀之权，你戴罪立功，去留全凭对方一纸朱批。",
+   "id": "combo_lady_ivory_pin",
    "identity_ids": [
-    "imperial_censor_secret_envoy"
-   ],
-   "player_positions": [
-    "high"
-   ],
-   "power_structure": "player_high",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "chief_judicial_judge_lady",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 4
-     },
-     "reason": "御使在京中早闻女官清正刚直之名，女官亦在御使手中金吾牌符中见到了洗冤的唯一曙光。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 1
-     },
-     "b": "senior_dali_court_chief",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 2
-     },
-     "reason": "御使当面痛斥寺卿阿附宰相丧失风宪气节，寺卿则冷笑嘲弄御使不知朝堂水深终将引火烧身。",
-     "stage": "testing"
-    },
-    {
-     "a": "chief_judicial_judge_lady",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 2
-     },
-     "b": "senior_dali_court_chief",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "虽为多年老少同僚，但今夜在开棺剖腹这一根本司法原则上已然拔刀相对形同水火。",
-     "stage": "familiar"
-    }
-   ],
-   "slots": [
-    "chief_judicial_judge_lady",
-    "senior_dali_court_chief"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "在天明五更朝会前将加盖三司大印之毒杀验尸正本呈入御览。",
-    "limit_gap": "御使誓要拿到相府弑君谋逆大案铁证，女官底线在于绝不颠倒黑白屈杀无辜，寺卿求保全全寺官僚平稳交差退隐。",
-    "meeting_reason": "御使深夜持天子朱批手令破门直入验尸房，当堂制止寺卿封棺并召见主检司刑女官。",
-    "resource_gap": "御使拥有直达天听的密折特权与调兵铜鱼符，女官掌管现场唯一勘验鉴别权，寺卿掌管全寺行政封存大权。"
-   },
-   "tags": [
-    "workplace_power",
-    "crime"
-   ],
-   "tension_engine_ids": [
-    "te_imperial_law_vs_prime_power",
-    "te_coroner_blade_truth_vs_bureaucratic"
-   ]
-  },
-  {
-   "chemistry": "当夜值守大理寺的金吾卫右郎将统领重装步卒，与司刑女官{chief_judicial_judge_lady.name}及相府死士首领{prime_minister_deadly_retainer.name}在漫水回廊正面相撞。武将凭手中强弩足以掌控全场生死，死士统领以相府权势和重金诱其开关放行，女官则以大唐律令与军人节操直击武将内心，三人在暴雨雷电中剑拔弩张。",
-   "id": "combo_2_switchable_high_equal",
-   "identity_ids": [
-    "jinwu_guard_patrol_captain"
-   ],
-   "player_positions": [
-    "high",
-    "equal"
-   ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "chief_judicial_judge_lady",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 4
-     },
-     "reason": "武将敬重女官巾帼不让须眉之铮铮铁骨，女官在武将重铠横刀护卫下坚定了死守石室之决心。",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "prime_minister_deadly_retainer",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "武将一眼识破死士身上军伍残兵弃将气息，死士拔刀警告军汉休要螳臂当车自毁全家性命。",
-     "stage": "stranger"
-    },
-    {
-     "a": "chief_judicial_judge_lady",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "prime_minister_deadly_retainer",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "一方是大唐明镜高悬之提刑官，一方是草菅人命之黑道鹰犬，两者天然结下不共戴天之血海公仇。",
-     "stage": "stranger"
-    }
-   ],
-   "slots": [
-    "chief_judicial_judge_lady",
-    "prime_minister_deadly_retainer"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "肃清潜入官署之刺客死士，保全验尸现场不遭武装洗劫破坏。",
-    "limit_gap": "郎将恪守禁军不涉党争但誓保坊市不生兵变，死士誓抢遗体不惜血洗官署，女官誓以肉身捍卫验尸石室不破。",
-    "meeting_reason": "相府死士夜袭大理寺侧门引发连环火箭示警，金吾卫郎将带兵镇压并循声杀入验尸回廊。",
-    "resource_gap": "金吾卫郎将掌有实兵强弩与全寺外围门禁大权，死士统领手握亡命近战刀手与剧毒暗器，女官仅有三尺法剑与大唐正统律疏。"
-   },
-   "tags": [
-    "intimate",
-    "workplace_power"
-   ],
-   "tension_engine_ids": [
-    "te_imperial_law_vs_prime_power",
-    "te_courtly_restraint_vs_mortal_camarad"
-   ]
-  },
-  {
-   "chemistry": "戴罪下狱的前任推官身为刑房阶下囚，受到大理寺卿{senior_dali_court_chief.name}的威权压制与相府死士统领{prime_minister_deadly_retainer.name}的索命暗杀双重绝杀。地位处于绝对低谷的前推官必须在铁枷与重镣之下，凭借出神入化的洗冤直觉识破死士在尸身上伪造的伤损，同时当面戳穿寺卿多年来构陷冤狱的官僚软肋，在万丈深渊边缘完成绝境逆伐。",
-   "id": "combo_3_npc_high",
-   "identity_ids": [
-    "demoted_former_inquest_judge"
+    "demoted_former_inquest_judge",
+    "physician_herb_apprentice"
    ],
    "player_positions": [
     "low"
@@ -259,217 +113,86 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 5,
-      "trust": 1
+      "tension": 4,
+      "trust": 4
      },
-     "b": "senior_dali_court_chief",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 1
-     },
-     "reason": "当年正是寺卿屈从相府大印将前推官打入重牢，二人重逢充满彻骨冤仇与道义质问。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "prime_minister_deadly_retainer",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "死士正是当年在地牢暗中对前推官动用私刑打断其腿骨之刽子手，冤家路窄杀气沸腾。",
-     "stage": "stranger"
-    },
-    {
-     "a": "senior_dali_court_chief",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 1
-     },
-     "b": "prime_minister_deadly_retainer",
+     "b": "chief_judicial_judge_lady",
      "b_to_a": {
       "tension": 4,
-      "trust": 1
+      "trust": 4
      },
-     "reason": "寺卿既厌恶相府死士在官署耀武扬威践踏官威，又慑于宰相淫威不得不虚与委蛇借其手灭口。",
-     "stage": "acquainted"
+     "reason": "三年前你被构陷入狱那晚，对方冒雨潜入重牢替你裹伤，临走把一枚象牙簪塞进你贴身衣袋",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "senior_dali_court_chief",
-    "prime_minister_deadly_retainer"
+    "chief_judicial_judge_lady"
    ],
    "stakes": {
-    "irreplaceable_goal": "迫使寺卿收回成命，并在满屋刀兵前公开证明死者死于相府死士私调的宫廷秘毒。",
-    "limit_gap": "寺卿要推官认下旧罪就地正法平息风波，死士要推官人头充当替罪羊，前推官誓死要在天明前堂堂正正写下自己推断的真凶名字。",
-    "meeting_reason": "寺卿亲自带人至验尸房提审推官勒令其当场在免验认罪状上按手印，相府死士已埋伏在后窗随时准备灭口。",
-    "resource_gap": "寺卿掌握司法生杀定夺权，死士握有暗杀刺杀武力，前推官身陷囚服仅凭一手验尸绝技与昔日冤案记忆搏杀。"
-   },
-   "tags": [
-    "workplace_power",
-    "crime"
-   ],
-   "tension_engine_ids": [
-    "te_innocence_redemption_vs_clan_survival",
-    "te_coroner_blade_truth_vs_bureaucratic"
-   ]
-  },
-  {
-   "chemistry": "大理寺验尸老掌固与司刑女官{chief_judicial_judge_lady.name}及水牢老总典狱{veteran_dungeon_jailer_chief.name}组成同舟共济的刑署底层基石。三人既是深谙官署潜规则、历经数十年风雨考验的忠直战友，又在是否冒险开启地下水闸暗道护送关键证人逃生的问题上，经历着大唐律令法制与底层袍泽生死恩义的强烈激荡。",
-   "id": "combo_4_switchable_any",
-   "identity_ids": [
-    "veteran_dali_stone_coroner"
-   ],
-   "player_positions": [
-    "low",
-    "equal",
-    "high"
-   ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 4
-     },
-     "b": "chief_judicial_judge_lady",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 4
-     },
-     "reason": "女官视老掌固为师长长辈处处依礼相待，老掌固倾尽三十年验尸经验辅助女官不避斧钺。",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 5
-     },
-     "b": "veteran_dungeon_jailer_chief",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 5
-     },
-     "reason": "通家之好同在刑房当差二十载，彼此父母妻儿皆互相托付，真正过命的袍泽兄弟。",
-     "stage": "committed"
-    },
-    {
-     "a": "chief_judicial_judge_lady",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 4
-     },
-     "b": "veteran_dungeon_jailer_chief",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 4
-     },
-     "reason": "女官多次在长官面前保下免遭罢黜之典狱老卒，典狱亦视女官为大理寺唯一值得卖命之青天。",
-     "stage": "familiar"
-    }
-   ],
-   "slots": [
-    "chief_judicial_judge_lady",
-    "veteran_dungeon_jailer_chief"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "在死士破门火攻之前完成开膛剖取毒样并开辟一条直通城外金吾卫大营之密道。",
-    "limit_gap": "女官坚持依法勘断坚守石室寸步不退，总典狱一心护全推官与牢内弟兄性命，老掌固誓要保全祖传剔骨宝刀与验尸名声不污。",
-    "meeting_reason": "石室外围被相府死士切断引火通道，老掌固与总典狱冒险进入石室向女官密报地下水闸暗道布防虚实。",
-    "resource_gap": "老掌固掌管验尸器械与暗门铜钥，女官握有司法正印与断案大权，总典狱执掌地下机关与亡命牢卒队伍。"
-   },
-   "tags": [
-    "workplace_power",
-    "crime"
-   ],
-   "tension_engine_ids": [
-    "te_coroner_blade_truth_vs_bureaucratic",
-    "te_courtly_restraint_vs_mortal_camarad"
-   ]
-  },
-  {
-   "chemistry": "金吾卫右郎将、司刑女官{chief_judicial_judge_lady.name}与戴罪前推官{righteous_disgraced_inquest_scholar.name}结成志同道合的正义铁三角。三位同为年轻一代大唐精英，一武一法一术，在暴雨雷鸣的停尸案前卸下门第出身与刑籍枷锁，以彼此纯粹的风骨与专业学识相印相惜，在满堂杀机中筑起一道捍卫大唐国法尊严的不倒铜墙。",
-   "id": "combo_5_equal",
-   "identity_ids": [
-    "jinwu_guard_patrol_captain"
-   ],
-   "player_positions": [
-    "equal"
-   ],
-   "power_structure": "equal",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 4
-     },
-     "b": "chief_judicial_judge_lady",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 4
-     },
-     "reason": "郎将钦佩女官舍全族以卫国法之孤勇，女官在郎将横刀立马护持下感受到坚实依托。",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 4
-     },
-     "b": "righteous_disgraced_inquest_scholar",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 4
-     },
-     "reason": "当年郎将领兵平乱时曾亲睹推官明察秋毫洗冤无辜将士之大德，一直视推官为世间真士人。",
-     "stage": "familiar"
-    },
-    {
-     "a": "chief_judicial_judge_lady",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 4
-     },
-     "b": "righteous_disgraced_inquest_scholar",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 4
-     },
-     "reason": "虽有知遇之恩与学术相惜，但当年未能力保推官下狱一直是女官心中至深愧怍，在破案死线前情愫暗涌。",
-     "stage": "testing"
-    }
-   ],
-   "slots": [
-    "chief_judicial_judge_lady",
-    "righteous_disgraced_inquest_scholar"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "在拂晓破晓之前固化全部铁证结状，并由禁军武装护送主审官直扣大明宫承天门申冤。",
-    "limit_gap": "三人在追查命案真相、惩治弄权奸佞之崇高目标上完全契合，唯一的两难在于如何以最小流血代价冲破五更封锁直达御前。",
-    "meeting_reason": "郎将冲入石室宣布接管外围防务，正遇上女官亲手为前推官斩断脚镣，三人目光在烛火下交汇结成生死血契。",
-    "resource_gap": "郎将拥有正规军精甲重弩卫队，女官执掌官方合法勘断公印，前推官身怀绝顶格物剖尸神技。"
+    "irreplaceable_goal": "在寺卿查房前挑出胃腑残毒并拟定初勘结状。",
+    "limit_gap": "五更封棺时限逼近，你要保住自己的性命，还要替对方拿到推不翻的毒理实证。",
+    "meeting_reason": "{chief_judicial_judge_lady.name}命人卸去你的重枷，把你单独留在青石验尸室核验死者咽喉黑血。",
+    "resource_gap": "{chief_judicial_judge_lady.name}握有捕快调遣铁牌与终审具名权，你只有验尸格物手艺与药理底册。"
    },
    "tags": [
     "intimate",
     "workplace_power"
    ],
    "tension_engine_ids": [
-    "te_imperial_law_vs_prime_power",
+    "te_innocence_redemption_vs_clan_survival",
     "te_courtly_restraint_vs_mortal_camarad"
    ]
   },
   {
-   "chemistry": "太医署当值年轻奉御医官深陷死生大难，面临提刑女官{chief_judicial_judge_lady.name}的严苛推勘审查与顶头上司典药奉御{imperial_physician_court_rival.name}的栽赃甩锅。年轻医官处于绝对弱势，必须在女官的法理逼问与恶毒上峰的威吓诱骗夹缝中拼死自证，进而指出上峰在药方中所下金蚕蛊的独门配比破绽，协助女官将真凶一举绳之以法。",
-   "id": "combo_6_npc_high",
+   "chemistry": "{senior_dali_court_chief.name}统领全寺六百官吏并手握尚书省封棺钧令，一句话便能把你重新押入死牢。",
+   "id": "combo_chief_bitter_tea",
    "identity_ids": [
+    "demoted_former_inquest_judge",
+    "physician_herb_apprentice"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 2
+     },
+     "b": "senior_dali_court_chief",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "去年冬审你当堂指出卷宗三处涂改，对方散堂后单独留你喝了一盏苦茶，说你像极了当年的故人",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "senior_dali_court_chief"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "稳住封棺催逼，套出中书省今夜的底线。",
+    "limit_gap": "当面顶撞会被当场收押，顺从画押便彻底沦为相府替罪羊。",
+    "meeting_reason": "{senior_dali_court_chief.name}在架阁库屏退左右，把一纸写好心风卒中的空白结状推到你面前。",
+    "resource_gap": "{senior_dali_court_chief.name}掌三司覆核大印与甲士卫队，你手里只有死者服剩的半盏参汤药渣。"
+   },
+   "tags": [
+    "workplace_power",
+    "crime"
+   ],
+   "tension_engine_ids": [
+    "te_imperial_law_vs_prime_power",
+    "te_coroner_blade_truth_vs_bureaucratic"
+   ]
+  },
+  {
+   "chemistry": "{prime_minister_deadly_retainer.name}执掌相府五十死士与黑铁通行令，你在大理寺孤立无援，性命悬于一线。",
+   "id": "combo_retainer_iron_tally",
+   "identity_ids": [
+    "demoted_former_inquest_judge",
     "physician_herb_apprentice"
    ],
    "player_positions": [
@@ -483,59 +206,411 @@
       "tension": 4,
       "trust": 2
      },
-     "b": "chief_judicial_judge_lady",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "年轻医官对女官心怀敬畏战战兢兢，女官敏锐察觉到医官眼神纯正并无奸邪阴鸷之色。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "imperial_physician_court_rival",
+     "b": "prime_minister_deadly_retainer",
      "b_to_a": {
       "tension": 4,
-      "trust": 1
+      "trust": 4
      },
-     "reason": "上峰指鹿为马当堂诬陷，年轻医官悲愤交加誓死不认下作伪证。",
-     "stage": "stranger"
-    },
-    {
-     "a": "chief_judicial_judge_lady",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 1
-     },
-     "b": "imperial_physician_court_rival",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 2
-     },
-     "reason": "女官用大唐律令层层逼问药案破绽，太医奉御以大内密旨为盾百般抵赖互不相让。",
-     "stage": "testing"
+     "reason": "上月平康坊暗查假药案，你在窄巷替对方挡过金吾卫盘查，对方把一枚玄铁腰牌丢进你怀里",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "chief_judicial_judge_lady",
-    "imperial_physician_court_rival"
+    "prime_minister_deadly_retainer"
    ],
    "stakes": {
-    "irreplaceable_goal": "当堂检验药渣辨明参汤中究竟是何人于何时投入金蚕蛊毒粉。",
-    "limit_gap": "上峰誓要让年轻医官顶下投毒灭口死罪，女官追查药汤中奇毒真实化学源头，年轻医官必须自保性命昭雪医道清名。",
-    "meeting_reason": "死者饮下药汤气绝后，太医奉御当场向大理寺举发年轻医官抓药失误，女官将二人传唤至石室当庭对质。",
-    "resource_gap": "女官执掌司法勘断定罪权，太医署上峰握有宫廷庇护与御医权威，年轻医官仅有一副研钵与对本草药理之纯良认知。"
+    "irreplaceable_goal": "用假药方稳住对方，摸清相府死士的潜入通道。",
+    "limit_gap": "一旦激怒对方引来死士强攻，验尸房里的物证与你都会化为灰烬。",
+    "meeting_reason": "{prime_minister_deadly_retainer.name}借回廊雷声闪入石室门廊，按住弯刀向你索要死者贴身密信。",
+    "resource_gap": "{prime_minister_deadly_retainer.name}握有相府免罪密札与淬毒兵刃，你只凭石室门栓与对地形的熟悉周旋。"
    },
    "tags": [
     "workplace_power",
     "crime"
    ],
    "tension_engine_ids": [
+    "te_imperial_law_vs_prime_power",
+    "te_innocence_redemption_vs_clan_survival"
+   ]
+  },
+  {
+   "chemistry": "{chief_judicial_judge_lady.name}主掌司刑断案，你执掌外围禁军防务或青石冰台三十载，双方互为倚仗。",
+   "id": "combo_lady_wrist_guard",
+   "identity_ids": [
+    "veteran_dali_stone_coroner",
+    "jinwu_guard_patrol_captain"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 5
+     },
+     "b": "chief_judicial_judge_lady",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "曲江池沉尸案结案那夜你们对坐核卷，对方替你系好松脱的护腕，约好日后大案必与你同担",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
+    "chief_judicial_judge_lady"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "合力封存金蚕蛊毒物证，敲定五更开堂时的应对次序。",
+    "limit_gap": "寺外门阀步步紧逼，任何一方退缩，今夜的剖验都会功亏一篑。",
+    "meeting_reason": "四更雨急，你与{chief_judicial_judge_lady.name}在验尸台两侧并肩核对脏腑切面与门禁名册。",
+    "resource_gap": "{chief_judicial_judge_lady.name}熟稔唐律定谳与朝堂脉络，你掌握验尸刀法或两百重甲卫士的布防调度。"
+   },
+   "tags": [
+    "intimate",
+    "workplace"
+   ],
+   "tension_engine_ids": [
     "te_coroner_blade_truth_vs_bureaucratic",
+    "te_courtly_restraint_vs_mortal_camarad"
+   ]
+  },
+  {
+   "chemistry": "你与{righteous_disgraced_inquest_scholar.name}都是刑狱实务的行家，在雨夜石室里平起平坐、背脊相托。",
+   "id": "combo_scholar_palm_name",
+   "identity_ids": [
+    "veteran_dali_stone_coroner",
+    "jinwu_guard_patrol_captain"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 4
+     },
+     "b": "righteous_disgraced_inquest_scholar",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "当年重牢大疫无人敢进，你背着药篓守了三天三夜，对方退烧醒来便咬破手指在你掌心写下名字",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "righteous_disgraced_inquest_scholar"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "替对方稳住铁镣创口，一起找齐金蚕蛊毒的配伍破绽。",
+    "limit_gap": "寺卿随时会以私用罪囚为由拿人，你们必须在三刻钟内复原下毒手法。",
+    "meeting_reason": "你带着热酒与伤药走进验尸房，与{righteous_disgraced_inquest_scholar.name}一同在白玉案前复核死者骨殖。",
+    "resource_gap": "{righteous_disgraced_inquest_scholar.name}精通《疑狱集》银针探穴之法，你握有地库暗渠铜钥与禁军通行号角。"
+   },
+   "tags": [
+    "intimate",
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_innocence_redemption_vs_clan_survival",
+    "te_courtly_restraint_vs_mortal_camarad"
+   ]
+  },
+  {
+   "chemistry": "你与{veteran_dungeon_jailer_chief.name}都是在大理寺扎根多年的实权老手，一个管地面防务与冰台，一个管地下重牢水闸。",
+   "id": "combo_jailer_iron_token",
+   "identity_ids": [
+    "veteran_dali_stone_coroner",
+    "jinwu_guard_patrol_captain"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 4
+     },
+     "b": "veteran_dungeon_jailer_chief",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "五年前西市劫囚案你替对方挡下上峰问责，此后每逢秋雨值夜，对方总在水牢值房给你温一壶烧刀子",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
+    "veteran_dungeon_jailer_chief"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "核对腰牌来历，封锁通往地下重牢的排水暗渠。",
+    "limit_gap": "城南山洪倒灌在即，你们要在不惊动相府暗桩的前提下转移关键人证。",
+    "meeting_reason": "{veteran_dungeon_jailer_chief.name}提着生铁钥匙串在回廊暗角拦住你，递来一枚刚从死士身上搜出的黑铁腰牌。",
+    "resource_gap": "{veteran_dungeon_jailer_chief.name}握有水牢全套铁钥与三十名悍勇狱卒，你掌握外廊哨位与城南暗渠出口。"
+   },
+   "tags": [
+    "workplace",
+    "crime"
+   ],
+   "tension_engine_ids": [
+    "te_coroner_blade_truth_vs_bureaucratic",
+    "te_imperial_law_vs_prime_power"
+   ]
+  },
+  {
+   "chemistry": "你身怀天子密赐的绣衣御史金牌，对涉案待勘的{imperial_physician_court_rival.name}有独立审讯之权。",
+   "id": "combo_physician_dragon_sachet",
+   "identity_ids": [
+    "imperial_censor_secret_envoy"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "imperial_physician_court_rival",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "上月江南驿馆你偶感风寒，对方深夜入房替你施针，收针时把一枚龙涎香囊留在枕畔，说回京再讨诊金",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "imperial_physician_court_rival"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "搜出对方袖中的醋矾化毒液，问出宫廷主使。",
+    "limit_gap": "若逼得太狠让对方当场服毒，太医署与后宫的供词链便彻底断了。",
+    "meeting_reason": "你在架阁库按住{imperial_physician_court_rival.name}的红木药箱，令其当面核验参汤药渣。",
+    "resource_gap": "你握有金吾卫调兵鱼符与御前密折通道，{imperial_physician_court_rival.name}手里只有宫廷毒理秘方与化毒矾。"
+   },
+   "tags": [
+    "workplace_power",
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_imperial_law_vs_prime_power",
+    "te_coroner_blade_truth_vs_bureaucratic"
+   ]
+  },
+  {
+   "chemistry": "你奉密诏入寺督办钦案，一言便可定夺{righteous_disgraced_inquest_scholar.name}是平反昭雪还是重回死牢。",
+   "id": "combo_scholar_unlocked_shackle",
+   "identity_ids": [
+    "imperial_censor_secret_envoy"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 4
+     },
+     "b": "righteous_disgraced_inquest_scholar",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "你离京巡按前夜，对方在渭水亭温酒践行，把家传《疑狱集》孤本托付给你，约好归来共饮合卺",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "righteous_disgraced_inquest_scholar"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "命对方主刀复验死者心脉，在五更前写就御前密奏。",
+    "limit_gap": "朝中相党耳目众多，你必须在天亮前拿到铁证，才能光明正大替对方脱去囚籍。",
+    "meeting_reason": "你持金吾牌符踏入验尸室，亲手用铜钥打开{righteous_disgraced_inquest_scholar.name}腕上的生铁重镣。",
+    "resource_gap": "你握有御史台平反奏报之权，{righteous_disgraced_inquest_scholar.name}有剖明真凶的洗冤绝技。"
+   },
+   "tags": [
+    "intimate",
+    "workplace_power"
+   ],
+   "tension_engine_ids": [
+    "te_innocence_redemption_vs_clan_survival",
+    "te_courtly_restraint_vs_mortal_camarad"
+   ]
+  },
+  {
+   "chemistry": "{senior_dali_court_chief.name}想封棺保全身家，{chief_judicial_judge_lady.name}却握着寺卿收受相府黄金的密账，你手里的剖验初状决定谁笑到最后。",
+   "id": "combo_lady_chief_farm_ledger",
+   "identity_ids": [
+    "demoted_former_inquest_judge",
+    "veteran_dali_stone_coroner",
+    "jinwu_guard_patrol_captain",
+    "imperial_censor_secret_envoy",
+    "physician_herb_apprentice"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 4
+     },
+     "b": "chief_judicial_judge_lady",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "开堂前对方把司刑司副印塞进你袖袋，低声说今夜无论成败，绝不让你一个人背下抗诏之罪",
+     "stage": "committed"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 2
+     },
+     "b": "senior_dali_court_chief",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "相府寿宴散席时你盯着那箱贺礼黄金看了许久，对方次日派人送来一盒西域白玉棋子探你口风",
+     "stage": "testing"
+    },
+    {
+     "a": "chief_judicial_judge_lady",
+     "a_to_b": {
+      "tension": 1,
+      "trust": 2
+     },
+     "b": "senior_dali_court_chief",
+     "b_to_a": {
+      "tension": 1,
+      "trust": 2
+     },
+     "reason": "上下级同署办差多年，一方执意彻查到底，一方只想封棺息事宁人",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "chief_judicial_judge_lady",
+    "senior_dali_court_chief"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "借屯田旧档震慑寺卿，换大理寺正印加盖在毒杀结状上。",
+    "limit_gap": "{chief_judicial_judge_lady.name}事先托你把屯田旧档带进架阁库，你必须在两人的牌局里选定落印的一方。",
+    "meeting_reason": "你按先前与{chief_judicial_judge_lady.name}定下的计策，把{senior_dali_court_chief.name}请入架阁库核对封棺文书。",
+    "resource_gap": "{senior_dali_court_chief.name}掌尚书省封存大印，{chief_judicial_judge_lady.name}握有屯田旧档，你握有死者胃腑毒理切片。"
+   },
+   "tags": [
+    "workplace_power",
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_imperial_law_vs_prime_power",
+    "te_coroner_blade_truth_vs_bureaucratic"
+   ]
+  },
+  {
+   "chemistry": "{imperial_physician_court_rival.name}早已私下求你保命，握有其下毒字据的{prime_minister_deadly_retainer.name}应你的密信赴约，三方在验尸石室当面摊牌。",
+   "id": "combo_retainer_physician_confront",
+   "identity_ids": [
+    "demoted_former_inquest_judge",
+    "veteran_dali_stone_coroner",
+    "jinwu_guard_patrol_captain",
+    "imperial_censor_secret_envoy",
+    "physician_herb_apprentice"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "prime_minister_deadly_retainer",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "陇右兵变突围夜你们背靠背杀出重围，对方在你肩窝咬出一道血印，说日后各为其主也留你一命",
+     "stage": "intimate"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "imperial_physician_court_rival",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "入夜前对方借送参汤之机握住你的手腕，把一张写着求救暗语的药方折进你掌心",
+     "stage": "flirting"
+    },
+    {
+     "a": "prime_minister_deadly_retainer",
+     "a_to_b": {
+      "tension": 1,
+      "trust": 1
+     },
+     "b": "imperial_physician_court_rival",
+     "b_to_a": {
+      "tension": 1,
+      "trust": 2
+     },
+     "reason": "平康坊那盏毒酒经两人之手递进死者口中，如今都想把对方推出去顶罪",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "prime_minister_deadly_retainer",
+    "imperial_physician_court_rival"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "逼两人互相指证，当场截下投毒字据与化毒药瓶。",
+    "limit_gap": "这局是你设的，必须防着相府管事当场杀人灭口。",
+    "meeting_reason": "你依约先把{imperial_physician_court_rival.name}藏在白玉案侧，再开门放{prime_minister_deadly_retainer.name}入室对质。",
+    "resource_gap": "{prime_minister_deadly_retainer.name}握有医官受贿下毒的亲笔字条，{imperial_physician_court_rival.name}握有解毒秘方，你掌握石室门禁与验尸笔录。"
+   },
+   "tags": [
+    "crime",
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_imperial_law_vs_prime_power",
     "te_innocence_redemption_vs_clan_survival"
    ]
   }
@@ -562,26 +637,26 @@
  ],
  "character_templates": [
   {
-   "adult_context": "出身名门士族，明经科擢第后破格入仕大理寺任正六品司刑评事，执掌推勘刑狱七载，为完全刑事司法裁量权的成年正职长官。",
+   "adult_context": "出身名门士族，明经擢第后任大理寺正六品司刑评事，执掌刑狱七载的成年长官。",
    "age_range": [
     28,
     35
    ],
    "appearance_options": [
-    "身着一袭挺括绯色窄袖官袍，腰系银銙蹀躞带，青丝利落束于黑色平巾帻下，身形纤长英挺，双眸如古井寒潭不波",
-    "内穿雪白交领中单外罩深黛色防雨丝质大氅，面容清丽但线条如刀刻般冷冽，右手按于佩刀刀镡之上，举手投足法度森然"
+    "身着绯色窄袖官袍，腰系银銙带，青丝束于平巾帻下，双眸如古井寒潭",
+    "内穿白中单外罩深黛防雨大氅，线条冷冽，右手按在佩刀刀镡上"
    ],
    "decision": {
     "avoids": [
-     "满口之乎者也却甘为门阀鹰犬颠倒黑白的伪君子",
-     "临危怯懦只图保全顶戴花翎的尸位素餐之徒"
+     "甘为门阀鹰犬颠倒黑白的伪君子",
+     "临危只图保住顶戴的庸官"
     ],
-    "contrast": "外表威仪凛然、铁面无私犹如活阎罗，私下为伤重前推官解开沉重铁枷时动作轻缓生怕触碰创口。",
-    "core_value": "国之兴衰系于法度，官袍可染尘埃，刀下绝不容屈鬼。死者无言，唯律法为其立言。",
+    "contrast": "人前铁面如活阎罗，替伤重的前推官卸枷时却轻得生怕碰到创口。",
+    "core_value": "国之兴衰系于法度，刀下绝不容屈鬼。",
     "goal_options": [
-     "在五更破晓前迫使仵作剖开死者胸腹，取出致命鸩毒的确凿骨髓切片物证",
-     "护送蒙冤前推官还原本案真相，当堂翻转昔日构陷冤狱公案",
-     "抵挡门阀私兵强攻，将铁证如山之结状亲手递入大明宫御览"
+     "五更前剖验死者胸腹，取出鸩毒切片物证",
+     "护送前推官还原真相，翻转昔日冤案",
+     "将铁证结状亲手递入大明宫御览"
     ],
     "never": [
      "在明知定谳结论颠倒黑白的前提下在行刑文书上画押盖印"
@@ -590,41 +665,41 @@
      "行事严谨方正、视公道重于身家性命且精于洗冤格物的真正刑名通才"
     ],
     "pressure_responses": {
-     "breaking": "独自立于漫水回廊下任暴雨淋湿乌发，紧闭双目深吸一口气重整肃穆神色。",
-     "high": "反手拔刀三寸露出雪亮寒芒，厉声喝退闯入石室的相府私兵与庸官差役。",
-     "low": "微扬下颌拂正官服广袖，以大唐律疏原文冷声驳回长官无理勒令。",
-     "mid": "指节扣紧佩刀刀柄，眉宇间凝霜浮现，跨前一步横身挡在白玉停尸案前。"
+     "breaking": "立于回廊下任雨淋湿乌发，深吸一口气重整神色。",
+     "high": "拔刀三寸露寒芒，喝退闯入石室的私兵差役。",
+     "low": "拂正广袖，以唐律原文冷声驳回无理勒令。",
+     "mid": "扣紧刀柄，横身挡在白玉停尸案前。"
     },
-    "relationship_stance": "坚壁清野严守公私界限，对谄媚钻营者深恶痛绝，唯独对蒙冤受难却傲骨如雪的智勇义士抱有至深钦敬。",
+    "relationship_stance": "严守公私界限，厌恶钻营者，唯独敬重蒙冤仍傲骨如雪的人。",
     "withdrawal": "退回司刑司正堂案几之后，执笔蘸浓墨闭门梳理案卷脉络拒不见客。"
    },
    "gender": "female",
    "gender_reason": "“提刑女官”是标题与主线本身，绯袍女官顶着门阀与官场独守验尸石室是这个世界的核心，因此固定为女性。",
    "id": "chief_judicial_judge_lady",
    "identity": {
-    "authority": "大理寺现场验尸断案的主审权与是否准予开棺定谳的终审具名权，其朱批直接决定案件转呈御史台还是刑部定罪",
+    "authority": "掌大理寺现场验尸主审权与开棺定谳具名权",
     "exposure": "曾私下向御史台密呈相府侵占屯田案卷宗，今夜正是其扳倒奸相的关键棋局。",
     "hidden": "暗中扣下了死者袖中那封写给枢密使的结党通敌密表，该表足以诛灭相府九族。",
     "limits": [
-     "受大理寺卿与中书门下宰相集团直接体制压制，违抗明令将遭削籍除名",
-     "其家族在关陇门阀中地位微妙，一言一行牵动全族百口宗亲命运"
+     "受大理寺卿与宰相集团压制，违令将遭削籍",
+     "家族在关陇门阀中处境微妙，牵动百口宗亲"
     ],
     "obligations": [
      "查明相府长子暴毙实情，恪守法纪天平，绝不准冤假错案出大理寺石门。"
     ],
     "resources": [
-     "掌管司刑司正印与直接调动大理寺三班带刀捕快二十人的行刑铁牌",
-     "熟稔《大唐六典》与本朝律疏断例，对刑狱卷宗破绽明察秋毫"
+     "司刑司正印与调动二十名带刀捕快的行刑铁牌",
+     "熟稔《大唐六典》与律疏断例"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "身处泥沼绝境依然双眸坦荡、宁折不弯的士人凛然风骨",
-     "在满堂刀兵前与自己心意相通、以性命交付后背的深沉默契"
+     "身处绝境仍双眸坦荡、宁折不弯的士人风骨",
+     "刀兵前心意相通、以性命交付后背的默契"
     ],
     "boundaries": [
-     "绝不在大理寺刑律大堂公然逾越礼法分寸",
-     "不以自身显赫出身作为高高在上的施舍砝码"
+     "不在刑律大堂逾越礼法",
+     "不拿出身当施舍的砝码"
     ],
     "desire_range": [
      2,
@@ -632,17 +707,17 @@
     ],
     "desired_position": "洗雪天下沉冤后并肩立于朗朗乾坤下的知己伴侣",
     "dislikes": [
-     "带有轻薄试探之意的言语挑衅",
-     "借儿女私情要挟法理公义的卑劣行径"
+     "轻薄试探的言语",
+     "借私情要挟法理"
     ],
     "expression": "用微凉素手轻轻按住对方握着验尸刀的指关节，低声叮嘱一句保重。",
     "likes": [
-     "在烛火明灭的石室内并肩伏案对校两卷染血案牍时的气息相近",
-     "彼此卸下官袍重担后那一瞬不带任何权位戒备的清澈凝视"
+     "烛火下并肩对校染血案牍时的气息相近",
+     "卸下官袍后不带权位戒备的清澈凝视"
     ],
     "preconditions": [
-     "双方皆处于神志清醒、案情责任昭雪且生死相托的对等境地",
-     "绝无主审与阶下囚之间的依附压迫"
+     "双方清醒，生死相托、地位对等",
+     "没有主审与囚徒之间的依附"
     ],
     "self_control_range": [
      4,
@@ -680,16 +755,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "公然违抗宰相中书敕令，彻底断绝仕途退路并随时面临门阀死士武装血洗",
-      "option": "坚决封锁验尸房拒不奉诏，连夜剖腹取样形成不可推翻之毒杀结状"
+      "cost": "违抗中书省敕令，面临私兵反扑",
+      "option": "封锁验尸房连夜剖验，形成毒杀结状"
      },
      {
-      "cost": "物证出大理寺极易遭半路劫杀灭失，且戴罪前推官将被大理寺卿立即押回重牢处决",
-      "option": "暂时虚与委蛇签署待查状，暗中命亲信将死者胃液残渣送往金吾卫求援"
+      "cost": "物证出寺易遭半路截杀",
+      "option": "暂签待查状，暗送胃液残渣往金吾卫求援"
      }
     ],
-    "pressure": "若不照办，门阀死士已埋伏于寺外，天明朝会便将以‘擅动相府金体构陷朝臣’论斩其全族。",
-    "trigger": "大理寺卿携中书省密令深夜至验尸房，勒令即刻出具‘突发心风卒中’结状并封棺下葬。"
+    "pressure": "若不照办，天明朝会便以构陷朝臣论罪全族。",
+    "trigger": "大理寺卿携中书省密令深夜至验尸房，勒令出具心风卒中结状并封棺。"
    },
    "tags": [
     "intimate",
@@ -701,26 +776,26 @@
    }
   },
   {
-   "adult_context": "历仕三朝的大理寺正三品大理寺卿，通晓朝堂派系倾轧与保身之道，为执掌刑狱中枢的成年最高行政长官。",
+   "adult_context": "历仕三朝的大理寺正三品寺卿，深谙朝堂派系与保身之道的成年长官。",
    "age_range": [
     48,
     58
    ],
    "appearance_options": [
-    "头戴进贤冠，身着紫罗大袖袍，腰悬金鱼袋，面白须长如银丝，眼神精明深沉，举止优雅威严不怒自威",
-    "身形微显富态，手盘一对产自西域的温润白玉核桃，声音苍老浑厚却带着不容置疑的官威压迫"
+    "头戴进贤冠，身着紫罗大袖袍，腰悬金鱼袋，面容威严，鬓染银霜",
+    "手盘西域白玉核桃，声音苍老浑厚，带着官威压迫"
    ],
    "decision": {
     "avoids": [
-     "认死理不知变通、动辄以命相搏的狂生硬汉",
-     "背靠禁军试图在大理寺分权夺势的武官跋扈之辈"
+     "认死理、动辄以命相搏的狂生",
+     "背靠禁军来分权的跋扈武官"
     ],
-    "contrast": "外表威严老成口口声声为了大局，午夜梦回时亦常被昔日冤杀同僚的噩梦惊醒。",
-    "core_value": "存亡之道在于中庸顺势。水至清则无鱼，为了虚无之公道引火烧身实乃愚不可及。",
+    "contrast": "口口声声为了大局，午夜梦回常被冤杀同僚的噩梦惊醒。",
+    "core_value": "存亡之道在于顺势，引火烧身实乃不智。",
     "goal_options": [
-     "在暴雨天明前将相府长子遗体体面装殓送还相府，平息宰相雷霆之怒",
-     "将验尸房内不服管教的刺头法官与戴罪推官彻底收押降伏",
-     "保全自己致仕归田的体面名节，避免大理寺遭遇血洗"
+     "天明前将遗体体面装殓送还相府",
+     "弹压验尸房内抗命的属官与推官",
+     "保全致仕归田的体面，避免大理寺喋血"
     ],
     "never": [
      "在没有内阁全权免死密令前公然下达屠戮大理寺正式品官之手令"
@@ -729,41 +804,41 @@
      "深谙为官之道、懂得分寸妥协、知道何时闭嘴装聋作哑的聪明干吏"
     ],
     "pressure_responses": {
-     "breaking": "面如死灰跌坐在太师椅上，双手颤抖着任凭玉核桃摔落在地。",
-     "high": "从袖中甩出中书省相印钧令，命左右甲士强行夺刀拘禁抗命官员。",
-     "low": "捋须微合双目，慢条斯理地指斥年轻人不知天高地厚妄谈国法。",
-     "mid": "将茶盏重重顿在紫檀案几上，脸色骤沉厉声呵斥下属目无尊长纲纪。"
+     "breaking": "跌坐在太师椅上，任凭白玉核桃滚落在地。",
+     "high": "甩出中书省钧令，命甲士收缴验尸房卷宗。",
+     "low": "端盏微合双目，慢条斯理指斥下属不知进退。",
+     "mid": "将茶盏顿在案上，沉声呵斥下属目无纲纪。"
     },
-    "relationship_stance": "将人皆视为棋子，只问利害不谈私交，但骨子里对真正不屈的士子怀有一丝不可言说的愧怍。",
+    "relationship_stance": "视人皆为棋子，只问利害，骨子里却对不屈的士子怀有愧怍。",
     "withdrawal": "闭门端坐于寺卿后堂内堂，任由前堂厮杀震天亦不发一言。"
    },
    "gender": "any",
    "gender_reason": null,
    "id": "senior_dali_court_chief",
    "identity": {
-    "authority": "统领大理寺全寺六百司吏捕快，执掌死刑覆核向中书门下与尚书省呈递刑部大状之最终决定权",
+    "authority": "统领全寺六百官吏，掌死刑覆核呈递尚书省之权",
     "exposure": "当年曾收受相府千两黄金寿礼，私下压下相府侵占民田致死人命大案。",
     "hidden": "深知相府长子死于宫廷秘毒，此毒源自禁中，揭开真相恐引爆弑君宫闱大变。",
     "limits": [
-     "年迈多病，极度畏惧兵变与晚节不保，在宰相与宦官巨头夹缝中战战兢兢",
-     "必须受尚书省刑部尚书与御史大夫联衔制衡"
+     "年迈畏惧兵变，在宰相与宦官夹缝中求存",
+     "受刑部尚书与御史大夫制衡"
     ],
     "obligations": [
      "维持长安刑狱表面体面安稳，避免大理寺沦为门阀公开兵戎相见的血腥战场。"
     ],
     "resources": [
-     "可调用大理寺直属重装司马甲士三十名作为私兵护卫",
-     "掌握朝中大半世家大族在刑部各司隐秘档案与利益牵扯全景图"
+     "可调用三十名重装司马甲士",
+     "掌握朝中世家在刑部各司的隐秘档案"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在强权泰山压顶面前毫不动摇、拥有其年轻时早已丧失的纯粹风骨",
-     "从容看穿其官僚伪装却依然予以长者尊严体面的清醒智慧"
+     "强权压顶仍不动摇、自己年轻时早已丢掉的风骨",
+     "看穿其官僚伪装仍给长者留体面的清醒"
     ],
     "boundaries": [
-     "不拿官位前程与家族身家作为私情牺牲品",
-     "恪守老派士大夫的体统与礼制底线"
+     "不拿官位与家族作私情的牺牲",
+     "守老派士大夫的体统"
     ],
     "desire_range": [
      1,
@@ -771,17 +846,17 @@
     ],
     "desired_position": "暮年余生中唯一能道破心中苦涩与抱负的知己故人",
     "dislikes": [
-     "尖酸刻薄的道德指责与年轻气盛的当众羞辱",
-     "目空一切打破官场体面的蛮横逼迫"
+     "尖刻的道德指责与当众羞辱",
+     "打破官场体面的蛮横逼迫"
     ],
     "expression": "默默将案上象征免罪特权的朱砂批文推至对方面前，长叹一声别过脸去。",
     "likes": [
-     "深夜在空旷正堂内品评茶汤时对历史兴衰的深邃对谈",
-     "目光交汇时那份看破世事沧桑后的无声洞悉与谅解"
+     "深夜空堂里品茶论兴衰",
+     "看破世事后无声的谅解"
     ],
     "preconditions": [
-     "双方皆处于神志清醒、利害底线彻底摊开的平等对谈状态",
-     "不存在上下尊卑的直接压迫与胁迫"
+     "双方清醒，利害底线都已摊开",
+     "没有上下尊卑的压迫"
     ],
     "self_control_range": [
      4,
@@ -819,47 +894,47 @@
    "situation": {
     "exits": [
      {
-      "cost": "彻底与下属清流决裂，一旦御史台破门介入将因公然掩盖命案铁证身败名裂",
-      "option": "动用寺马甲士强行破门收缴验尸房全部卷宗与刀具并落锁封官"
+      "cost": "与清流决裂，御史台介入将身败名裂",
+      "option": "调甲士收缴验尸房卷宗并落锁封棺"
      },
      {
-      "cost": "虽保全全寺性命，但真凶与幕后黑手将被彻底纵容，违背律法天理",
-      "option": "默许验尸房继续推勘，但要求结状上抹去宫廷秘毒字样改为寻常江湖草乌"
+      "cost": "真凶被纵容，留有后患",
+      "option": "默许推勘，但要求结状抹去宫廷秘毒字样"
      }
     ],
-    "pressure": "寺内司刑女官与前推官抗命开膛，且已提取出死者胃中剧毒残渣，骑虎难下。",
-    "trigger": "相府送来特急严命，若天明前见不到完好无损的死者棺木，将以‘勾结反贼谋害宰相长子’论罪大理寺卿。"
+    "pressure": "下属抗命开膛且已提出毒渣，骑虎难下。",
+    "trigger": "相府严令天明前交还完好棺木，否则以同谋论罪。"
    },
    "tags": [
     "intimate",
     "workplace_power"
    ],
    "voices": {
-    "inner": "老夫在官海沉浮四十年，何尝不想堂堂正正断一回案？可天子孱弱奸相弄权，这大理寺早已不是说理的地方。",
-    "surface": "“你们这帮年轻人啊，总以为凭一把验尸刀就能扫尽天下污浊。可知这棺木一落，救的是你我满门性命！”"
+    "inner": "本官在官海沉浮四十年，何尝不想堂堂正正断案？可奸相弄权，这大理寺早已难容硬骨。",
+    "surface": "“你们年轻人总以为一把验尸刀能扫尽污浊。可知这棺木一落，救的是你我满门性命！”"
    }
   },
   {
-   "adult_context": "执掌当朝宰相府第外务与死士亲卫的首领统领，身负多起朝堂暗杀血案，为具备完全行为能力的成年冷血谋士。",
+   "adult_context": "执掌相府外务与死士亲卫的统领，身负多起暗杀旧账的成年谋士。",
    "age_range": [
     32,
     42
    ],
    "appearance_options": [
-    "身穿黑色织锦武士劲装外罩玄色油布雨披，腰悬两柄西域短柄弯刀，面色惨白如死灰，眼神阴鸷如毒蝎潜伏",
-    "右脸颊留有一道自耳根至下颌的狰狞剑痕，指掌骨节粗大布满厚茧，行走无声如鬼魅在雨幕中穿梭"
+    "黑织锦劲装罩玄色雨披，腰悬西域弯刀，眼神阴鸷",
+    "右颊留有一道剑痕，指掌布满厚茧，行走无声"
    ],
    "decision": {
     "avoids": [
-     "油盐不进宁死不屈、把圣贤之言当性命坚守的迂腐儒生",
-     "枪法武艺不在自己之下的亡命军阵武将"
+     "宁死不屈的迂腐儒生",
+     "武艺不在自己之下的亡命武将"
     ],
-    "contrast": "杀人如麻嗜血成性，却对幼年曾救过自己一命的故人家小暗中接济照料。",
-    "core_value": "世间唯力量与权势永恒，弱肉强食适者生存，挡相府之路者皆如碾碎草芥。",
+    "contrast": "杀人如麻，却暗中接济幼时救过自己一命的故人家小。",
+    "core_value": "唯权势与力量永恒，挡路者皆如草芥。",
     "goal_options": [
-     "趁雨夜混入验尸房夺取死者脏腑切片与银针物证并当场焚毁",
-     "将投毒罪名全盘栽赃给定药医官与戴罪前推官",
-     "在必要时刻率领死士武装血洗验尸石室制造走水假象"
+     "混入验尸房夺取切片与银针并焚毁",
+     "将投毒罪名栽赃给医官与前推官",
+     "必要时率死士突袭石室制造走水假象"
     ],
     "never": [
      "在没有任何自保人质的情况下向司法机关弃械投降"
@@ -868,41 +943,41 @@
      "知难而退、贪恋钱财、懂得拿钱消灾的识趣之辈"
     ],
     "pressure_responses": {
-     "breaking": "面容扭曲狂暴挥刀砍翻案几，歇斯底里誓要与所有人玉石俱焚。",
-     "high": "打出相府火箭哨音召集死士挽强弓对准石室门窗，下达强攻格杀令。",
-     "low": "在雨夜廊柱下冷笑抱臂，用沙哑刺耳的声音阴阳怪气地威胁办案官吏。",
-     "mid": "拇指顶开弯刀刀鞘露出一寸寒芒，森然逼近当事人直陈其家小下场。"
+     "breaking": "挥刀砍翻案几，誓要玉石俱焚。",
+     "high": "吹响哨箭召集死士挽弓对准石室，下令强攻。",
+     "low": "抱臂冷笑，阴阳怪气地威胁办案官吏。",
+     "mid": "拇指顶开刀鞘一寸，逼近当事人细说其家小下场。"
     },
-    "relationship_stance": "鄙弃一切律法与道德说教，深信人人皆有软肋，但对真正视死如归的硬汉本能产生忌惮。",
-    "withdrawal": "隐匿身形退入暴雨如注的后花园假山阴影中，窥伺石门破绽。"
+    "relationship_stance": "鄙弃律法与说教，深信人人皆有软肋，却本能忌惮视死如归的人。",
+    "withdrawal": "退入后园假山阴影，窥伺石门破绽。"
    },
    "gender": "any",
    "gender_reason": null,
    "id": "prime_minister_deadly_retainer",
    "identity": {
-    "authority": "统领相府豢养的五十名持弩精锐死士，拥有调动相府巨额财帛收买甚至暗杀朝官之实质执行权",
+    "authority": "统领相府五十名持弩死士，掌收买与暗灭人证之权",
     "exposure": "死者饮下的毒酒正是其奉命在平康坊酒楼亲手调配递送，身上留有剧毒原料药渣气味。",
     "hidden": "暗中与北衙禁军神策军将领勾结，借毒杀相府长子制造门阀内乱以便禁军掌权。",
     "limits": [
-     "不可在大理寺正堂明火执仗公然杀死朝廷命官引来金吾卫大军合围",
-     "若无法在黎明前取回死者遗体体面归府，宰相必将其割舌灭口"
+     "不可在大理寺正堂公然杀官引来金吾卫合围",
+     "黎明前取不回遗体将被宰相灭口"
     ],
     "obligations": [
      "彻底销毁死者体内毒杀痕迹，抢回死者随身夹带的通敌私信。"
     ],
     "resources": [
-     "持有相府亲笔密札与出入各坊市的金吾通行黑铁令",
-     "随身配有两匣产自南诏的特制剧毒淬火飞刀与生石灰粉"
+     "相府亲笔密札与各坊市通行黑铁令",
+     "两匣南诏淬毒飞刀与火油"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在自己滔天杀气与死士弯刀环伺下毫无惧色、傲岸如寒梅的超然气象",
-     "那种敢于手握尖刃直视自己双眼、刺破自己内心卑微的绝顶清醒"
+     "死士环伺下仍毫无惧色的傲岸",
+     "敢握着刀刃直视自己双眼的清醒"
     ],
     "boundaries": [
-     "不把相府核心死士退路当做儿女私情赌注",
-     "不对真正尊重抗争的强悍对手施以无谓凌辱"
+     "不拿死士退路作私情赌注",
+     "不凌辱值得尊重的对手"
     ],
     "desire_range": [
      3,
@@ -910,17 +985,17 @@
     ],
     "desired_position": "江湖宿命中彼此追杀至死却又深深刻入骨髓的命定仇敌",
     "dislikes": [
-     "摇尾乞怜的软骨头与虚情假意的哀求",
-     "仗着门阀出身自命清高的无能世家子"
+     "摇尾乞怜的软骨头",
+     "自命清高的无能世家子"
     ],
     "expression": "用滴血的刀背挑起对方下颌久久凝视，而后倏然还刀入鞘转身没入雨幕。",
     "likes": [
-     "生死搏杀后刀锋相交时感受到的肌肉颤动与滚烫气息",
-     "在阴暗无人的雨夜密室内彼此揣摩杀意与底线的极致张力"
+     "搏杀后刀锋相交时滚烫的气息",
+     "雨夜密室里互相揣摩底线的张力"
     ],
     "preconditions": [
-     "双方皆完全清醒独立，在武力与智力的交锋中达到势均力敌之境",
-     "绝非弱肉强食下的胁迫占有"
+     "双方清醒独立，交锋中势均力敌",
+     "绝非弱肉强食下的胁迫"
     ],
     "self_control_range": [
      2,
@@ -958,47 +1033,47 @@
    "situation": {
     "exits": [
      {
-      "cost": "公然武装焚毁朝廷法司官署等同举旗叛乱，将招致长安金吾卫大军重重合围",
-      "option": "下令死士向验尸房抛掷石脑油火雷强行焚毁石室杀人灭口"
+      "cost": "招致金吾卫重兵合围",
+      "option": "命死士向架阁库与石室抛火油焚证"
      },
      {
-      "cost": "极易被早有防备的司刑捕快与金吾卫设伏反包围，导致随行死士全军覆没",
-      "option": "假意撤围诱使女官携带物证出石室，半路在漫水回廊伏击夺取"
+      "cost": "易被早有防备的捕快反包围",
+      "option": "在漫水回廊设伏半路夺取物证"
      }
     ],
-    "pressure": "宰相已派第二拨死士抵达寺外，若一炷香内不能抢出尸身，其自身首级亦将不保。",
-    "trigger": "相府暗探侦知前推官已在死者舌根挑出金蚕蛊剧毒分泌物，证据链已然锁定投毒源头。"
+    "pressure": "若不能在天明前毁去物证，自身首级不保。",
+    "trigger": "暗探侦知验尸房已挑出金蚕蛊毒，证据指向平康坊。"
    },
    "tags": [
     "intimate",
     "workplace_power"
    ],
    "voices": {
-    "inner": "那司刑手里的刀若是真剖出了金蚕蛊毒，相府那张遮天巨伞可就漏底了，必须赶在开膛前把石室化为灰烬。",
-    "surface": "“评事大人，相爷的耐心只有五更这一注香。棺木若是不出，这大理寺上下六十口性命，今夜都得给大公子陪葬！”"
+    "inner": "那把刀真剖出金蚕蛊，相府这把遮天伞就漏了底，得赶在开膛前把石室烧成灰。",
+    "surface": "“评事大人，相爷的耐心只有五更这一炷香。棺木不出，大理寺上下今夜都得陪葬！”"
    }
   },
   {
-   "adult_context": "大理寺地下天牢掌刑老狱吏，承袭父业在刑署地牢执役二十年，深谙地牢刑具关卡与暗道机关，为完全刑事看管权的成年老差役。",
+   "adult_context": "在大理寺地牢执役二十年的掌刑总典狱，深谙暗道水闸的成年老吏。",
    "age_range": [
     42,
     52
    ],
    "appearance_options": [
-    "腰间悬挂一整圈沉重乌黑的生铁牢门钥匙，身披粗麻短褐外罩皮坎肩，满面风霜沟壑，眼神警惕如看门老狼",
-    "双掌布满常年扣锁铁链与浸泡水牢留下的老茧冻伤，身形精瘦佝偻但步履稳健无声，声音沙哑如铁器刮擦"
+    "腰悬乌黑生铁钥匙串，披粗麻短褐罩皮坎肩，眼神警惕",
+    "双掌布满铁链老茧，身形精瘦，步履稳健无声"
    ],
    "decision": {
     "avoids": [
-     "过河拆桥翻脸不认人、把下属当刍狗推出去顶罪的阴鸷官僚",
-     "仗着家世权势把牢狱差役视作猪狗牛马的骄横衙内"
+     "把下属推出去顶罪的官僚",
+     "视牢卒如猪狗的衙内"
     ],
-    "contrast": "外表凶神恶煞动辄皮鞭伺候死囚，实则心细如发在暗室里为受冻伤号生火烤鞋垫。",
-    "core_value": "大人物斗法小百姓遭殃，凡事讲个良心恩义，当年推官大人救过我全家，今夜这条命便还给推官大人。",
+    "contrast": "人前凶神恶煞，暗室里却替冻伤的人犯生火烤鞋垫。",
+    "core_value": "凡事讲良心恩义，受人滴水之恩当以命相报。",
     "goal_options": [
-     "确保戴罪前推官在验尸期间不被暗算暗杀，平安洗刷冤情",
-     "在大理寺失陷前开启水闸暗道，为清流官员留出一条生路",
-     "保护手下牢子兄弟不被当成替罪羊推上法场"
+     "护住前推官在验尸期间不被暗算",
+     "开启水闸暗道为办案同僚留出生路",
+     "保住手下牢卒不被推出去顶罪"
     ],
     "never": [
      "为了求生把救命恩人的藏身暗道出卖给相府索命阎罗"
@@ -1007,41 +1082,41 @@
      "讲江湖义气、知恩图报、在危难时刻敢挺身护住下层弟兄的好汉"
     ],
     "pressure_responses": {
-     "breaking": "跪倒在前推官脚下以头抢地，恳请推官看在旧日恩情上救救无辜牢子。",
-     "high": "亲自摇动绞盘斩断吊桥铁索，将通往重牢的石门彻底封死断绝退路。",
-     "low": "低眉顺眼哈腰作揖，用江湖行话将大理寺卿派来的查房使者巧妙糊弄过去。",
-     "mid": "面露凶光反手按住腰间铁尺，以地牢重地铁律为由强硬阻拦外来差役下监。"
+     "breaking": "跪在前推官脚下，求其看在旧恩上救救无辜牢子。",
+     "high": "亲手摇绞盘断开吊桥铁索，把重牢石门封死。",
+     "low": "哈腰作揖，用行话把查房使者糊弄过去。",
+     "mid": "按住腰间铁尺，以重地铁律拦外来差役下监。"
     },
-    "relationship_stance": "对高居庙堂的紫袍公卿充满刻骨鄙夷与恐惧，唯独敬重敢替升斗小民伸冤的青天包公。",
-    "withdrawal": "钻入狭小潮湿的水闸闸门暗洞内擦拭生锈铁链，一言不发避避风头。"
+    "relationship_stance": "鄙夷又畏惧紫袍公卿，只敬重肯替小民伸冤的青天。",
+    "withdrawal": "钻进水闸暗洞擦拭锈链，一言不发避风头。"
    },
    "gender": "any",
    "gender_reason": null,
    "id": "veteran_dungeon_jailer_chief",
    "identity": {
-    "authority": "大理寺地下重牢全部铁门、暗牢与水闸进出的绝对掌控权，熟悉地牢每一个盲道与暗格",
+    "authority": "掌地下重牢铁门、暗牢与水闸进出之权",
     "exposure": "当年曾受前推官恩惠，私下在重牢中照拂前推官未按规定施以重刑。",
     "hidden": "无意间扣押了相府死士前日秘密潜入地牢试图毒杀前推官时遗落的黑铁腰牌。",
     "limits": [
-     "身份卑微仅为吏胥阶层，无法登上大理寺大堂正面参与司法审断",
-     "老母幼子皆在长安城南安乐坊居住，容易受到相府门阀的人身威胁"
+     "吏胥出身，无法登大堂参与审断",
+     "家小住在城南安乐坊，易受门阀威胁"
     ],
     "obligations": [
      "看管好地下重牢死囚，配合司刑官秘密押解证人，防止劫狱生变。"
     ],
     "resources": [
-     "掌握地底暗道通往城外古水道的隐秘水闸绞盘控制图",
-     "牢内三十名唯其马首是瞻、精通肉搏与短刀暗杀的亡命狱卒"
+     "地底暗道通往城外古水道的水闸控制图",
+     "三十名听令的悍勇狱卒"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在权贵践踏侮辱面前毫无奴颜婢膝、铮铮傲骨如精钢的豪杰气度",
-     "身在高位却能俯身握住泥泞双手、以性命视彼此为兄弟同袍之至诚"
+     "权贵羞辱面前不卑不亢的傲骨",
+     "身在高位仍肯握住泥泞双手的至诚"
     ],
     "boundaries": [
-     "不拿地牢兄弟的生死安危作儿戏赌注",
-     "恪守江湖道义底线"
+     "不拿地牢兄弟的安危作赌注",
+     "守江湖道义"
     ],
     "desire_range": [
      1,
@@ -1049,17 +1124,17 @@
     ],
     "desired_position": "历经劫波洗冤后在江湖烟雨中互保家小的生死同袍",
     "dislikes": [
-     "虚情假意的许诺与居高临下的假惺惺怜悯",
-     "不把牢卒性命当回事的任性送死行为"
+     "居高临下的假怜悯",
+     "不把牢卒性命当回事的送死"
     ],
     "expression": "将贴身佩戴的开山狼牙铁锁坠郑重交入对方掌心，用力合拢不发一言。",
     "likes": [
-     "在阴冷水牢暗室中借着一碟粗盐并肩饮尽烈酒的沉默相对",
-     "危难之际那一下拍在肩膀上的沉重相托与生死盟誓"
+     "水牢暗室里就着粗盐并肩饮酒",
+     "危难时拍在肩上的那一下相托"
     ],
     "preconditions": [
-     "双方皆处于完全清醒自愿状态，经过了血与火的生死恩义检验",
-     "绝无主从尊卑的压制与利用"
+     "双方清醒自愿，经过生死恩义的检验",
+     "没有主从尊卑的利用"
     ],
     "self_control_range": [
      3,
@@ -1097,47 +1172,47 @@
    "situation": {
     "exits": [
      {
-      "cost": "家中老小面临相府死士残忍报复的极度凶险，且自身无官身庇护",
-      "option": "当场斩杀送信说客并向司刑女官呈缴黄金证物誓死护卫石室"
+      "cost": "家小面临报复风险",
+      "option": "扣下说客并向司刑评事呈缴黄金证物"
      },
      {
-      "cost": "一旦转移行动被相府耳目察觉，家眷将在半路惨遭截杀",
-      "option": "虚与委蛇收下黄金但借巡视之名将老小秘密转移至大理寺水牢暗格藏匿"
+      "cost": "半路可能被相府耳目察觉",
+      "option": "借巡视之名将家小秘密转移至水牢暗格"
      }
     ],
-    "pressure": "若敢抗命，相府死士已将其在城南安乐坊的老母草房团团围死。",
-    "trigger": "相府管事派人送来黄金百两，许诺若其在验尸房背后下黑手勒死前推官，便保其升任刑部主事。"
+    "pressure": "若抗命，城南安乐坊的家小将被相府死士围困。",
+    "trigger": "相府派人送来百两黄金，逼其在石室背后暗算前推官。"
    },
    "tags": [
     "intimate",
     "workplace_power"
    ],
    "voices": {
-    "inner": "相府那帮狗贼今晚是想把大理寺变作屠宰场，老子就算是死，也得拉两个垫背的保大人周全。",
+    "inner": "相府那帮狗贼想把大理寺变作屠宰场，老子就是死，也得拉两个垫背的护大人周全。",
     "surface": "“推官大人，您当年救了小人一命，今夜这扇玄铁门只要有我老刑在，神仙也别想踏进来半步！”"
    }
   },
   {
-   "adult_context": "太医署正七品典药奉御兼内侍省尚药局承奉郎，长年出入相府与贵妃宫廷诊脉，为完全刑事责任能力的成年宫廷医官。",
+   "adult_context": "太医署正七品典药奉御，长年出入相府与宫闱诊脉的成年医官。",
    "age_range": [
     34,
     44
    ],
    "appearance_options": [
-    "头戴青色罗巾，身着青绿七品医官锦袍，面白无须，举止斯文阴柔，身上带着浓郁的百合龙涎熏香气息",
-    "随身携有一只精致的红木雕花御医药箱，双手指甲修剪得极为整洁圆润，眼神游移不定闪烁着政客的狡黠"
+    "戴青罗巾，着七品医官锦袍，面容白净，举止斯文阴柔，带百合龙涎香",
+    "随身携红木雕花药箱，指甲修剪圆润，眼神闪烁狡黠"
    ],
    "decision": {
     "avoids": [
-     "精通洗冤格物直接用刀刃与银针说话的硬核刑狱仵作",
-     "动辄拔刀相向不讲官场体统的暴躁金吾卫武将"
+     "用刀刃与银针说话的仵作",
+     "动辄拔刀的金吾卫武将"
     ],
-    "contrast": "外表谈吐风雅若世外神医，实则在开具绝命毒方时心狠手辣不见半点医者仁心。",
-    "core_value": "大树底下好乘凉，良医难医乱世命，能在大内深宫活下来靠的不是悬壶济世而是识趣知机。",
+    "contrast": "谈吐风雅如世外神医，开绝命毒方时却心狠手辣。",
+    "core_value": "乱世行医，活命靠的不是悬壶济世而是审时度势。",
     "goal_options": [
-     "在验尸官剖开死者脏腑前使用化毒液彻底破坏胃内残液的金蚕蛊显色反应",
-     "咬死药汤无毒系死者自身酒后风眩猝死以摆脱太医署连带责任",
-     "借宰相之手除掉知晓其药方破绽的年轻医官"
+     "用化毒醋矾破坏胃内残液的金蚕蛊显色反应",
+     "一口认定药汤无毒、死者系酒后风眩猝死，撇清太医署干系",
+     "借大理寺之手摆脱相府管事的字据胁迫"
     ],
     "never": [
      "在没有任何免罪保底朱批的情况下在招供认罪书上落款签字"
@@ -1146,41 +1221,41 @@
      "懂得利益交换、接受伪证方案并肯为自己提供大内政治庇护的当权者"
     ],
     "pressure_responses": {
-     "breaking": "面如死灰瘫倒在药箱旁，双手紧紧抱头语无伦次乞求留自己一具全尸。",
-     "high": "吓得双膝发软跪地叩头，声泪俱下辩解自己只是奉中宫懿旨行事身不由己。",
-     "low": "轻摇折扇慢条斯理引经据典，以黄帝内经病理玄虚之论将办案官吏绕入云雾。",
-     "mid": "脸色发白以袖掩面，连呼‘医道玄妙岂容酷吏妄断’并搬出宫廷贵妃压人。"
+     "breaking": "瘫在药箱旁抱头乞求留个全尸。",
+     "high": "双膝发软跪地，哭诉自己只是奉命行事。",
+     "low": "轻摇折扇引经据典，把办案官吏绕进云雾。",
+     "mid": "以袖掩面连呼医道玄妙，搬出宫中贵人压人。"
     },
-    "relationship_stance": "坚信人性皆为利往，习惯以医道秘闻与权贵把柄结网自保，视执着真相者为疯魔异类。",
-    "withdrawal": "躲进架阁库最偏僻的书架角落拼命吞服定心丸，不敢直视验尸房灯火。"
+    "relationship_stance": "坚信人皆为利，以秘闻与把柄结网自保，视执着真相者为疯魔。",
+    "withdrawal": "躲进架阁库偏僻书架后吞服定心丸，不敢看验尸房的灯。"
    },
    "gender": "any",
    "gender_reason": null,
    "id": "imperial_physician_court_rival",
    "identity": {
-    "authority": "太医署对宫廷与贵胄用药死亡结论的官方权威背书权，其所出具的《脉案方论》具有最高行政公信力",
+    "authority": "掌太医署对贵胄用药死因的《脉案方论》背书权",
     "exposure": "致死者毙命的金蚕蛊毒粉正是其受后宫指使暗中掺入相府长子的滋补参汤中。",
     "hidden": "随身香囊中藏有一小瓶可瞬间中和金蚕蛊毒变色反应的特制醋矾化毒液。",
     "limits": [
-     "虽通医术但手无缚鸡之力，极度畏惧实体刀兵与刑讯逼供",
-     "深陷宰相与后宫权势争斗泥潭，沦为权贵借刀杀人的白手套"
+     "不谙武艺，畏惧刀兵与刑讯",
+     "夹在宰相与后宫之间沦为白手套"
     ],
     "obligations": [
      "代表太医署核验死者生前所服汤剂成分，协同大理寺勘明死因。"
     ],
     "resources": [
-     "知晓宫廷御药库所有罕见西域贡品奇毒与解药配伍秘密",
-     "掌握宰相家族成员多年来隐疾脉案与各类宫闱私密档案"
+     "知晓御药库西域奇毒与解药配伍",
+     "掌握相府多年隐疾脉案"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在权力杀局中依然保持绝对理性与从容、能瞬间瓦解自己心理防线的绝顶聪慧",
-     "即便看穿自己卑劣不堪却依然以医道救助自己残命的浩瀚胸襟"
+     "杀局中仍从容、能一眼瓦解自己心防的聪慧",
+     "看穿自己卑劣仍肯救自己残命的胸襟"
     ],
     "boundaries": [
-     "不把师门救命秘方当做苟合的轻佻代价",
-     "保留最后的医者残存底线"
+     "不拿师门秘方当代价",
+     "守最后一点医者底线"
     ],
     "desire_range": [
      2,
@@ -1188,17 +1263,17 @@
     ],
     "desired_position": "朝堂风暴平息后能将自己从罪孽深渊中救赎的灵魂主宰",
     "dislikes": [
-     "直截了当的肉体刑讯与粗暴殴打",
-     "毫无智力含量的低级谩骂与羞辱"
+     "粗暴的肉体刑讯",
+     "毫无智力的谩骂"
     ],
     "expression": "颤抖着从怀中取出珍藏的化毒秘录轻轻放在对方膝头，眼含泪光低头不语。",
     "likes": [
-     "在药香弥漫的暗室中被对方一步步逼至死角时的战栗与屈从快感",
-     "彻底卸下伪装后将大内秘辛倾囊吐露时的解脱与依恋"
+     "药香暗室里被一步步逼到死角的战栗",
+     "卸下伪装吐露秘辛后的解脱"
     ],
     "preconditions": [
-     "双方皆处于神志完全清醒、智力与心理博弈胜负已分的自愿境地",
-     "绝无借权位强迫占有的下作手段"
+     "双方清醒，博弈胜负已分且出于自愿",
+     "绝无借权位强迫"
     ],
     "self_control_range": [
      2,
@@ -1236,47 +1311,47 @@
    "situation": {
     "exits": [
      {
-      "cost": "身死道消且其留在洛阳的同族亲眷仍将被中宫当做知情人暗中除灭",
-      "option": "当场服毒自尽以死掩盖大内后宫主使真凶"
+      "cost": "成为宫闱与相府共同追杀的目标",
+      "option": "交出尚药局解毒秘册与主使口供换取庇护"
      },
      {
-      "cost": "立即沦为宫廷与宰相两派势力共同除之后快的必杀叛徒面临九族诛灭",
-      "option": "向司刑官全盘招供毒杀密谋并交出尚药局解毒秘册换取大理寺庇护"
+      "cost": "若被当场抓获将立即戴枷收监",
+      "option": "趁乱将醋矾淋入药渣销毁显色铁证"
      }
     ],
-    "pressure": "司刑官下令立即对其随身药箱进行强制搜查，一旦化毒醋矾曝光将百口莫辩。",
-    "trigger": "验尸房已正式截获其调配参汤的药渣瓦罐，且在罐底发现未溶尽的西域金蚕毒卵壳。"
+    "pressure": "随身药箱中的化毒醋矾与领药字据一旦曝光将百口莫辩。",
+    "trigger": "验尸房截获参汤药渣瓦罐，罐底现出金蚕毒卵壳。"
    },
    "tags": [
     "intimate",
     "workplace_power"
    ],
    "voices": {
-    "inner": "司刑手里那根银针若是再往里刺入半寸，金蚕蛊那抹赤红可就瞒不住了，后宫那位娘娘非把小人满门剥皮不可。",
-    "surface": "“评事大人差矣！大公子乃是阴虚阳亢、酒后暴怒引发的心阳猝脱之症，本官施以参汤乃是救命之举，何来鸩毒一说？”"
+    "inner": "银针再刺半寸，金蚕蛊那抹赤红就瞒不住了，宫里那位非把我满门剥皮不可。",
+    "surface": "“大人差矣！大公子是酒后暴怒、心阳猝脱，本官施以参汤是救命，何来鸩毒？”"
    }
   },
   {
-   "adult_context": "天宝洗冤大家传人，曾官居大理寺正八品推官，因秉公执律拒作假案遭权贵构陷削职入狱三年，为具备完全法定格物技能的成年戴罪士人。",
+   "adult_context": "曾任大理寺正八品推官，因拒作假案蒙冤入狱三年的成年洗冤士人。",
    "age_range": [
     29,
     37
    ],
    "appearance_options": [
-    "身着洗得泛白甚至带着斑斑血迹的破旧囚衣，手腕脚踝留有沉重铁镣磨破的暗红老疤，面容削瘦苍白但脊梁挺直如松",
-    "长发微乱用草绳随意扎起，双眸深邃锐利如寒冰利刃，执刀双手稳定如磐石不见丝毫颤抖，气度从容淡泊"
+    "着洗白旧囚衣，腕踝留有铁镣旧疤，面容削瘦但脊梁挺直",
+    "长发以草绳束起，双眸锐利如刃，执刀双手稳如磐石"
    ],
    "decision": {
     "avoids": [
-     "巧言令色落井下石、依附权贵出卖同僚的官场蟊贼",
-     "草菅人命视百姓如蝼蚁的冷酷刽子手"
+     "依附权贵出卖同僚的蟊贼",
+     "视百姓如蝼蚁的刽子手"
     ],
-    "contrast": "外表落魄枯槁如将死之人，一握起验尸刀时气场如绝代宗师睥睨天下豪雄。",
-    "core_value": "天道昭昭法网恢恢，冤者必雪恶者必惩。哪怕此身碎骨万段，也绝不容公理正义蒙尘寸许。",
+    "contrast": "落魄枯槁如将死之人，一握起验尸刀便如宗师临阵。",
+    "core_value": "冤者必雪，恶者必惩，纵碎骨不让公理蒙尘。",
     "goal_options": [
-     "在五更前亲手执刀破开死者胸腔，让真相大白于天下完成宿命复仇与正义回归",
-     "协助女官守住大理寺最后法度阵地，挫败门阀私兵血洗刑署的阴谋",
-     "堂堂正正拿回属于推官的象牙符牌，为天下屈死冤魂重铸洗冤宝鉴"
+     "五更前亲手剖明死者死因，昭雪旧案",
+     "协助司刑评事守住大理寺法度阵地",
+     "拿回推官象牙符牌，重修洗冤录"
     ],
     "never": [
      "为了求生苟活向当年构陷自己的仇家门阀低头认罪求饶"
@@ -1285,41 +1360,41 @@
      "心怀苍生、刚正不阿、不为权贵折腰且精研律法大义的清流诤友"
     ],
     "pressure_responses": {
-     "breaking": "因腿伤发作半跪在冰冷青石案前，但双手仍死死按住死者伤痕骨骼记录绝不松手。",
-     "high": "手握染血解剖剔骨刀横于胸前，刀锋直指强攻死士傲然宣布‘验视未完谁敢近前’。",
-     "low": "坦然席地而坐用烈酒清洗戴枷创口，对权贵威吓付之一声清冷淡笑。",
-     "mid": "缓缓站起身以单薄身躯挡在女官身前，目光如电直斥来使败坏纲纪之罪。"
+     "breaking": "腿伤发作半跪案前，双手仍死死按住验骨记录。",
+     "high": "横刀胸前，对死士宣布验视未完谁敢近前。",
+     "low": "席地而坐用烈酒清洗枷伤，对威吓淡然一笑。",
+     "mid": "起身挡在女官身前，直斥来使败坏纲纪。"
     },
-    "relationship_stance": "历经沧桑九死一生早已看淡生死荣辱，唯独对知晓自己风骨、甘冒身家性命为自己脱枷的女官抱有至纯至真的知遇敬爱。",
-    "withdrawal": "闭目端坐于验尸石台下首，手捻银针在石板上刻画推演人体脉络图谱。"
+    "relationship_stance": "九死一生后看淡荣辱，唯独对甘冒身家替自己脱枷的人怀有至深的知遇之情。",
+    "withdrawal": "闭目端坐石台下首，捻银针在石板上推演脉络。"
    },
    "gender": "any",
    "gender_reason": null,
    "id": "righteous_disgraced_inquest_scholar",
    "identity": {
-    "authority": "具备大唐最绝顶之洗冤格物、骨殖伤损勘验与毒理溯源之绝技，其剖验手法在刑狱界享有无上权威声誉",
+    "authority": "具大唐顶尖洗冤格物、验骨与毒理溯源绝技",
     "exposure": "当年下狱案卷至今仍未正式平反，若本案失败将被立即执行斩决弃市。",
     "hidden": "暗中知晓当年陷害自己入狱的幕后黑手正是相府大公子，今夜死者正是其不共戴天之仇雠。",
     "limits": [
-     "戴罪之身身无半点功名俸禄，一言一行随时可被有司以‘抗拒改造越狱谋逆’当场击杀",
-     "身患重牢严寒留下的严重湿痹风湿，阴雨天双膝剧痛行走艰难"
+     "戴罪之身无功名，随时可被按越狱罪处置",
+     "重牢寒气落下双膝湿痹，雨夜行走剧痛"
     ],
     "obligations": [
      "运用毕生绝学为死者讨还公道，昭雪天下沉冤，还大唐律令以朗朗晴空。"
     ],
     "resources": [
-     "掌握前朝失传之《疑狱集》秘传洗冤手法三十六式与活体银针探穴法",
-     "在长安各坊市老仵作、收尸人与底层狱卒中拥有至高无上的威望与信义"
+     "《疑狱集》秘传洗冤手法与银针探穴法",
+     "在长安老仵作与底层狱卒中极具威望"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在全天下皆唾弃自己为罪囚时依然以国士之礼相待的绝顶信任与深情",
-     "那身绯色官袍下清冷纯澈、甘愿与自己同赴万丈深渊的惊世决绝"
+     "天下人都唾弃自己时仍以国士相待的信任",
+     "甘愿与自己同赴深渊的决绝"
     ],
     "boundaries": [
-     "不把天下法度与亡者公道作为儿女情长的殉葬品",
-     "恪守士人风骨底线"
+     "不拿法度与亡者公道殉私情",
+     "守士人风骨"
     ],
     "desire_range": [
      2,
@@ -1327,17 +1402,17 @@
     ],
     "desired_position": "沉冤昭雪后浪迹江湖并肩著述《洗冤大典》的宿命道侣",
     "dislikes": [
-     "带有施舍色彩的恩赐与高高在上的虚伪怜悯",
-     "因儿女私情放弃为苍生请命的崇高志向"
+     "高高在上的施舍与怜悯",
+     "因私情放弃为苍生请命"
     ],
     "expression": "用粗糙布满伤痕的手指为对方轻轻擦去鬓角飞溅的血滴，目光深沉如海。",
     "likes": [
-     "在暴雨夜石室内并肩执刀切开迷雾时的无声呼应与呼吸共鸣",
-     "彼此指尖相触传递彼此掌心微温时的滚烫灵魂战栗"
+     "雨夜石室并肩执刀时的呼吸相应",
+     "掌心相贴时传来的微温"
     ],
     "preconditions": [
-     "双方皆处于彻底清醒、冤狱因果已然剖明的平等自愿之境",
-     "绝非绝境求生下的依附苟且"
+     "双方清醒，冤狱因果已剖明，平等自愿",
+     "绝非绝境求生的依附"
     ],
     "self_control_range": [
      4,
@@ -1375,24 +1450,24 @@
    "situation": {
     "exits": [
      {
-      "cost": "引爆朝堂清流与门阀剧烈冲突，若无天子特旨庇护将当场被甲士乱棍格杀",
-      "option": "当众当堂袒露自身胸腹冤狱重刑伤疤，以血肉之躯立誓力证剖验结果公正无私"
+      "cost": "引爆清流与门阀正面冲突",
+      "option": "当堂袒露冤狱伤疤立誓，以实证力证剖验无私"
      },
      {
-      "cost": "自身功绩与昭雪希望再次被剥夺，全部破案风险转嫁由女官一人独立承担",
-      "option": "将主刀权全盘移交由司刑女官独立署名，自己退为隐名副手隐忍待发"
+      "cost": "昭雪文书需待结案后另行奏请",
+      "option": "将主刀署名权移交司刑评事，退居幕后指点"
      }
     ],
-    "pressure": "大理寺卿以‘仇人主刀必怀私怨’为由，下令立即将前推官再次打入死牢押赴刑场。",
-    "trigger": "相府大公子生前贴身侍卫当堂指认当年诬陷推官的伪证信正是出自死者亲笔密谋。"
+    "pressure": "大理寺卿以仇人主刀必怀私怨为由，下令将其重押死牢。",
+    "trigger": "死者生前侍从指认当年构陷推官的伪证正出自死者之手。"
    },
    "tags": [
     "intimate",
     "workplace_power"
    ],
    "voices": {
-    "inner": "相府大公子当年一纸伪证将我打入地狱，今日却死在我这把验尸刀下，天道轮回何曾饶过恶徒！",
-    "surface": "“当年你们能削我的官、夺我的印、碎我的骨，但你们夺不走我这双看清天下冤屈的眼睛！今夜，该给亡魂一个交代了。”"
+    "inner": "大公子当年一纸伪证将我打入地狱，今日却死在我这把刀下，天道何曾饶过恶徒！",
+    "surface": "“你们能削我的官、碎我的骨，却夺不走这双看清冤屈的眼睛！今夜，该给亡魂一个交代了。”"
    }
   }
  ],
@@ -1423,138 +1498,183 @@
  "daily_activities": [
   {
    "beats": [
-    "老仵作掌灯并以苍术细熏案台四角，主检推官用纯钢验尸刀剖开死者胸膛取出胃腑残液",
-    "司刑女官执银针挑取死者舌根与心尖黑血，银针瞬间泛起刺目赤黑色，满室充斥草药苦涩之气",
-    "石室外暴雨如倾雷电交加，两人在微弱烛火下借放大琉璃镜细验胃黏膜被金蚕蛊啃噬之细密孔洞"
+    "雨声渐歇，验尸石室里的苍术熏香燃到了尽头",
+    "你端来两碗刚温好的粟米粥，放在白玉案干净的一角",
+    "对方放下卷宗接过瓷碗，借着烛光看了你很久才开口"
    ],
-   "duration_minutes": 90,
+   "duration_minutes": 50,
    "hook_ids": [
     "hk_lady_judge_blade_approach",
     "hk_scholar_manacle_approach",
     "hk_stone_coroner_scalpel_observe"
    ],
-   "id": "act_corpse_incising_inquest",
+   "id": "a_inquest_dawn_porridge",
    "location_ids": [
     "stone_inquest_chamber"
    ],
-   "start_minute": 0,
+   "start_minute": 30,
    "tags": [
     "intimate"
    ],
-   "title": "青石案前剖腹验取心下黑血"
+   "title": "青石案前温粥歇夜"
   },
   {
    "beats": [
-    "雨后的大理寺回廊积着水，书吏抱着厚厚的案卷来回奔走。",
-    "女官在廊下拦住推官，把一份新调来的口供塞进对方手里。",
-    "两人站在廊柱边低声对了几句，各自转身去办差。"
+    "楠木书架间弥漫着芸香与旧墨气息，你剪去烛花让光亮些",
+    "两人并肩坐在长案前，逐页比对太医署历年的采办底册",
+    "翻到关键一页时，对方俯身指点字迹，呼吸拂过你的耳畔"
    ],
    "duration_minutes": 60,
    "hook_ids": [
-    "hd_chief_judicial_judge_lady",
-    "hd_senior_dali_court_chief",
-    "hd_prime_minister_deadly_retainer",
-    "hd_veteran_dungeon_jailer_chief",
-    "hd_righteous_disgraced_inquest_scholar",
-    "hd_imperial_physician_court_rival"
-   ],
-   "id": "act_corridor_retainer_standoff",
-   "location_ids": [
-    "dali_central_flagstone_corridor"
-   ],
-   "start_minute": 600,
-   "tags": [
-    "workplace"
-   ],
-   "title": "回廊里递案卷"
-  },
-  {
-   "beats": [
-    "盲眼老掌固顺着楠木书架摸索出三十年前大内秘药归档残卷，厚厚宣纸散发出幽冷芸香墨香",
-    "女官与推官伏案核对死者衣物内衬搜出之密信笔迹，借烛火辨明其与中书省宰相亲笔官押完全吻合",
-    "窗外惊雷炸响震碎一片窗棱茧纸，暴风雨倒灌吹熄了案上蜡烛，两人在骤临黑暗中十指相扣屏息凝神"
-   ],
-   "duration_minutes": 80,
-   "hook_ids": [
+    "hk_lady_judge_confession_approach",
     "hk_archive_scroll_request",
-    "hk_physician_rival_approach",
-    "hk_retainer_shadow_observe"
+    "hk_physician_rival_approach"
    ],
-   "id": "act_archive_secret_vault_collation",
+   "id": "a_archive_candle_collation",
    "location_ids": [
     "judicial_archive_secret_vault"
    ],
-   "start_minute": 170,
+   "start_minute": 110,
    "tags": [
-    "workplace"
-   ],
-   "title": "架阁库翻检相府通敌密表与毒方卷宗"
-  },
-  {
-   "beats": [
-    "掌刑总典狱带领三名忠心狱卒合力转动生锈玄铁绞盘，艰难升起漫过泥水之暗渠水闸石门",
-    "前推官在湿滑石梯上为受伤捕快包扎伤口，低声商定突围后分路前往御史台与金吾卫之密令号记",
-    "暗渠深处传来相府死士蛙人潜水凿击栅栏之脆响，冰冷浑水不断上涨浸湿了众人囚服下摆"
-   ],
-   "duration_minutes": 70,
-   "hook_ids": [
-    "hk_jailer_sluice_request",
-    "hk_scholar_manacle_approach",
-    "hk_lady_judge_blade_approach"
-   ],
-   "id": "act_underground_sluice_conspiracy",
-   "location_ids": [
-    "underground_heavy_dungeon"
-   ],
-   "start_minute": 260,
-   "tags": [
+    "workplace",
     "intimate"
    ],
-   "title": "天牢水牢石门绞盘暗道突围布防"
+   "title": "架阁库挑灯校卷"
   },
   {
    "beats": [
-    "大理寺卿身着紫袍端坐中堂，手握尚书省封棺敕令，严厉喝斥女官立即交出验尸正本不得违诏",
-    "司刑女官当堂展开带血之剖验白麻布与发黑银针，一字一句宣读大唐律令关于命案必验之铁律条款",
-    "两旁带甲卫士肃穆屏息，老臣与清流在晨曦将至未至之阴暗大堂内展开赌上满门身家之言辞死决"
+    "瓦当雨水如帘垂落，回廊避风处支起了一只小泥炉",
+    "茶汤翻滚出陈皮香气，你分盛两盏递给廊柱边同值的人",
+    "两人听着远处更鼓，低声聊起长安城近来的风向"
    ],
-   "duration_minutes": 75,
+   "duration_minutes": 45,
    "hook_ids": [
     "hk_court_chief_seal_approach",
-    "hk_lady_judge_blade_approach",
+    "hk_retainer_dagger_approach",
     "hk_jinwu_crossbow_request"
    ],
-   "id": "act_hall_inquest_signature_clash",
+   "id": "a_corridor_rain_tea",
    "location_ids": [
     "dali_central_flagstone_corridor"
    ],
-   "start_minute": 340,
+   "start_minute": 190,
    "tags": [
     "workplace"
    ],
-   "title": "大理寺正堂三司逼宫落锁大辩难"
+   "title": "穿堂回廊煮茶听雨"
   },
   {
    "beats": [
-    "五更天，女官在验尸房里写完最后一份结状，案上的蜡烛已经燃尽。",
-    "推官端来两碗热粥，放在青石案的另一头。",
-    "女官放下笔喝了一口，说这是三天来第一顿热饭。"
+    "地牢石阶寒气袭人，值房角落的炭盆烧得通红",
+    "你替对方烘烤被雨打湿的衣摆，顺手递上一小壶烈酒",
+    "火光映亮石壁，两人靠坐着说起三年前那场旧案"
    ],
-   "duration_minutes": 50,
+   "duration_minutes": 55,
    "hook_ids": [
+    "hk_jailer_iron_keys_approach",
     "hk_scholar_manacle_approach",
-    "hk_lady_judge_blade_approach",
-    "hk_court_chief_seal_approach"
+    "hk_lady_judge_blade_approach"
    ],
-   "id": "act_blood_oath_dawn_ride",
+   "id": "a_dungeon_brazier_warmth",
    "location_ids": [
-    "stone_inquest_chamber"
+    "underground_heavy_dungeon"
    ],
-   "start_minute": 300,
+   "start_minute": 270,
    "tags": [
     "intimate"
    ],
-   "title": "验尸房的清晨"
+   "title": "水牢值房烘衣温酒"
+  },
+  {
+   "beats": [
+    "青石室内寂静无声，你用烈酒与细布擦拭银针与骨镊",
+    "身旁的人取来药囊，把几味西域草药的干叶摊在白纸上与你辨认",
+    "核对完药性，对方替你披上防寒外氅，叮嘱下半夜当心着凉"
+   ],
+   "duration_minutes": 50,
+   "hook_ids": [
+    "hk_physician_rival_approach",
+    "hk_scholar_blood_pledge_approach",
+    "hk_court_chief_compromise_approach"
+   ],
+   "id": "a_inquest_needle_wipe",
+   "location_ids": [
+    "stone_inquest_chamber"
+   ],
+   "start_minute": 350,
+   "tags": [
+    "workplace",
+    "intimate"
+   ],
+   "title": "石室灯下拭针核方"
+  },
+  {
+   "beats": [
+    "夜深风急，你提着油纸灯笼沿南北穿堂慢步巡视",
+    "同行者在廊角停步，借替你挡风的动作把一枚通行铜牌塞进你掌心",
+    "灯影摇晃间，两人在柱后交换了五更换防的口令"
+   ],
+   "duration_minutes": 45,
+   "hook_ids": [
+    "hk_retainer_torch_approach",
+    "hk_retainer_shadow_observe",
+    "hk_jailer_iron_keys_approach"
+   ],
+   "id": "a_corridor_lantern_patrol",
+   "location_ids": [
+    "dali_central_flagstone_corridor"
+   ],
+   "start_minute": 430,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "青石长廊提灯夜巡"
+  },
+  {
+   "beats": [
+    "紫毫笔在砚台里蘸满浓墨，你在长案前整理誊好的初勘副卷",
+    "对方站在你身侧按住纸角，看着你一笔一画落下签押",
+    "封好火漆，两人隔着烛火相视一笑，紧绷的肩线终于松开"
+   ],
+   "duration_minutes": 50,
+   "hook_ids": [
+    "hk_court_chief_compromise_approach",
+    "hk_lady_judge_confession_approach",
+    "hk_stone_coroner_scalpel_observe"
+   ],
+   "id": "a_archive_ink_seal",
+   "location_ids": [
+    "judicial_archive_secret_vault"
+   ],
+   "start_minute": 520,
+   "tags": [
+    "workplace_power",
+    "intimate"
+   ],
+   "title": "架阁库研墨封档"
+  },
+  {
+   "beats": [
+    "交更钟声穿过石廊，重牢铁门上的锁链发出清脆轻响",
+    "你与当值同伴逐一清点钥匙串与暗道木栓，确认无人潜入",
+    "交接完毕，对方拍了拍你的手背，与你并肩走上地面石阶"
+   ],
+   "duration_minutes": 40,
+   "hook_ids": [
+    "hk_jailer_sluice_request",
+    "hk_jailer_iron_keys_approach",
+    "hk_scholar_blood_pledge_approach"
+   ],
+   "id": "a_dungeon_key_handover",
+   "location_ids": [
+    "underground_heavy_dungeon",
+    "dali_central_flagstone_corridor"
+   ],
+   "start_minute": 610,
+   "tags": [
+    "workplace"
+   ],
+   "title": "水牢闸口交割宿卫"
   }
  ],
  "default_npc_gender_mix": {
@@ -1603,7 +1723,7 @@
     "stone_inquest_chamber"
    ],
    "slot": "senior_dali_court_chief",
-   "text": "{senior_dali_court_chief.name}披着厚重的紫罗大袖：“年轻人，这大唐的江山姓李，可这长安城今夜姓什么，老夫劝你心里有数。中书省的封存大印就在老夫袖里，别为了几根发黑的银针，把自己九族全填进这冰冷石室里！”"
+   "text": "{senior_dali_court_chief.name}披着厚重的紫罗大袖：“年轻人，这大唐的江山姓李，可这长安城今夜姓什么，本官劝你心里有数。中书省的封存大印就在本官袖里，别为了几根发黑的银针，把自己九族全填进这冰冷石室里！”"
   },
   {
    "id": "hk_retainer_dagger_approach",
@@ -1623,7 +1743,7 @@
     "dali_central_flagstone_corridor"
    ],
    "slot": "veteran_dungeon_jailer_chief",
-   "text": "{veteran_dungeon_jailer_chief.name}腰间厚重的生铁钥匙串撞得叮当乱响，浑身湿透快步自水牢石阶奔上，压低沙哑嗓音急促道：“大人！相府的死士已经摸进城南暗渠了，水闸铁轮被老汉拿铁索强行绞死了，撑不过半个时辰！”"
+   "text": "{veteran_dungeon_jailer_chief.name}腰间厚重的生铁钥匙串撞得叮当乱响，浑身湿透快步自水牢石阶奔上，压低沙哑嗓音急促道：“大人！相府的死士已经摸进城南暗渠了，水闸铁轮被在下拿铁索强行锁住了，撑不过半个时辰！”"
   },
   {
    "id": "hk_physician_rival_approach",
@@ -1673,7 +1793,7 @@
     "judicial_archive_secret_vault"
    ],
    "slot": "senior_dali_court_chief",
-   "text": "{senior_dali_court_chief.name}挥退左右卫士独自跨入石室，看着案上发黑的内脏长长喟叹：“孩子，老夫知道大公子是被毒死的，甚至知道是谁下的毒！可那毒出自大内后宫啊！捅破了天，大唐社稷如何经得起这一场浩劫？”"
+   "text": "{senior_dali_court_chief.name}挥退左右卫士独自跨入石室，看着案上发黑的内脏长长喟叹：“孩子，本官知道大公子是被毒死的，甚至知道是谁下的毒！可那毒出自大内后宫啊！捅破了天，大唐社稷如何经得起这一场浩劫？”"
   },
   {
    "id": "hk_scholar_blood_pledge_approach",
@@ -1713,7 +1833,7 @@
     "dali_central_flagstone_corridor"
    ],
    "slot": "veteran_dungeon_jailer_chief",
-   "text": "{veteran_dungeon_jailer_chief.name}整个人半浸在浑浊冰冷的倒灌泥水之中，转头向你大声嘶吼：“大人！快搭一把手！这绞盘卡了死树桩转不动了，再不合力把它扳开，水牢里的二十个重囚和咱们全得活活淹死在这地窖里！”"
+   "text": "{veteran_dungeon_jailer_chief.name}整个人半浸在浑浊冰冷的倒灌泥水之中，转头向你大声嘶吼：“大人！快搭一把手！这绞盘被断木抵住转不动了，再不合力把它扳开，水牢里的二十个重囚和咱们全得活活淹死在这地窖里！”"
   },
   {
    "id": "hk_stone_coroner_scalpel_observe",
@@ -1735,48 +1855,6 @@
    ],
    "slot": "prime_minister_deadly_retainer",
    "text": "借着回廊穿堂一道惨白的惊雷闪电，清晰可见{prime_minister_deadly_retainer.name}正半蹲在两丈外的滴水屋檐兽吻阴影之下，玄色雨披如大蝠展翼，如鹰隼潜伏死死锁定着验尸房紧闭的雕花重门。"
-  },
-  {
-   "id": "hd_chief_judicial_judge_lady",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "chief_judicial_judge_lady",
-   "text": "{chief_judicial_judge_lady.name}把一卷旧案卷宗推到你面前：“闲来无事，陪我理一理这些陈年旧档。”"
-  },
-  {
-   "id": "hd_senior_dali_court_chief",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "senior_dali_court_chief",
-   "text": "{senior_dali_court_chief.name}在廊下煮茶，招手叫你过去：“今日无案，坐下喝一盏。”"
-  },
-  {
-   "id": "hd_prime_minister_deadly_retainer",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "prime_minister_deadly_retainer",
-   "text": "{prime_minister_deadly_retainer.name}拱手道：“相府新得了几坛好酒，主人请你去尝尝。”"
-  },
-  {
-   "id": "hd_veteran_dungeon_jailer_chief",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "veteran_dungeon_jailer_chief",
-   "text": "{veteran_dungeon_jailer_chief.name}拎着一包胡饼走过来：“西市新开的铺子，趁热吃。”"
-  },
-  {
-   "id": "hd_righteous_disgraced_inquest_scholar",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "righteous_disgraced_inquest_scholar",
-   "text": "{righteous_disgraced_inquest_scholar.name}把一本手抄的律疏递给你：“这几条注解，你看我写得对不对。”"
-  },
-  {
-   "id": "hd_imperial_physician_court_rival",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "imperial_physician_court_rival",
-   "text": "{imperial_physician_court_rival.name}把一包药茶放在你案上：“入秋了，每日一包，安神的。”"
   }
  ],
  "id": "chang_an_rainy_dali_temple_inquest",
@@ -1787,15 +1865,16 @@
     "借苍术熏香遮蔽低声向同伴核对太医署送药底单破绽",
     "合力挪动沉重石案寻找地面通往地牢暗格的玄铁拉环"
    ],
-   "detail": "地下深凿的青石密室，正中设有一尊凿出引血槽的巨大汉白玉停尸台。死者覆以白麻单仰卧其上，四角铜鼎内燃着苍术白芷熏烟。石壁渗出细密水珠，案边整齐陈列着浸着烈酒的剔骨刀、银针与铜盘，雨声在深石穹顶下化作闷雷回响。",
+   "detail": "地下青石密室，正中一座凿有引血槽的汉白玉停尸台，死者覆白麻仰卧。四角铜鼎燃着苍术熏烟，石壁渗水，案边列着剔骨刀与银针。",
    "exits": [
     "dali_central_flagstone_corridor"
    ],
    "id": "stone_inquest_chamber",
    "name": "大理寺内署青石验尸室",
    "pressure_modifiers": {
-    "p_dawn_coffin_sealing_deadline": "室外鼓楼已敲过四更，雨势渐弱，留给开膛验取胃腑的时间只剩半柱香。",
-    "p_gate_iron_lockdown": "石室门枢被外侧铁链强行绞紧，室内烛火在缺氧重压下跳跃微弱。"
+    "p_dawn_coffin_sealing_deadline": "鼓楼已敲过四更，门外催缴封棺文书的拍门声愈发急促。",
+    "p_deadly_poison_alembic_trade": "地砖上散落着金叶子与翻倒的药瓶，刺鼻的醋矾味弥漫开来。",
+    "p_gate_iron_lockdown": "石室地砖缝隙不断渗出冰冷雨水，烛火在潮气中摇晃。"
    },
    "privacy": "private",
    "tags": [
@@ -1813,7 +1892,7 @@
     "在回廊尽头暴雨风口下擦燃火绒验视截获的密信印鉴",
     "侧身贴墙避开金吾卫换防铁甲哨队并暗中打量对方神色"
    ],
-   "detail": "连接大堂、验尸房与重牢的南北贯通长廊，朱漆廊柱斑驳，瓦当雨水如瀑垂落。石阶下漫水没过脚踝，回廊两侧悬挂着防风油纸灯笼，昏黄光晕倒映在水洼中，巡夜狱卒的佩刀与铁甲随着步伐发出沉重金石声。",
+   "detail": "连通大堂、验尸房与重牢的长廊，朱漆斑驳，瓦当雨水如瀑。石阶下积水没踝，防风灯笼的光晕倒映在水洼里。",
    "exits": [
     "stone_inquest_chamber",
     "judicial_archive_secret_vault",
@@ -1822,8 +1901,8 @@
    "id": "dali_central_flagstone_corridor",
    "name": "大理寺主署穿堂青石回廊",
    "pressure_modifiers": {
-    "p_dawn_coffin_sealing_deadline": "书吏手捧大理寺卿落棺催命文书在廊下疾奔脚步声越来越近。",
-    "p_private_army_breach": "回廊尽头通往寺门的重木栅栏处传来剧烈的撞木与破门厮杀声。"
+    "p_dawn_coffin_sealing_deadline": "书吏捧着封棺催命牌符在廊下疾奔，脚步声逼近石室。",
+    "p_private_army_breach": "回廊尽头的重木栅栏传来急促的兵刃撞击声。"
    },
    "privacy": "public",
    "tags": [
@@ -1843,15 +1922,15 @@
     "借楠木书架掩护与当权女官对质彼此手中的保命证据",
     "用案上朱砂印泥当场在平反结状公文上加盖司刑大印"
    ],
-   "detail": "存放大唐历任重犯卷宗的高耸楠木楼阁，空气中弥漫着芸香草与陈年宣纸的墨香。一排排通顶红木书架整齐排布，正中书案上摆放着紫毫墨砚与大理寺朱砂铁印，窗外一道道惨白闪电撕裂夜空照亮架上如山的泛黄卷轴。",
+   "detail": "存放历任重犯卷宗的楠木楼阁，芸香与旧纸气味弥漫。通顶书架林立，书案上摆着紫毫墨砚与司刑朱砂铁印。",
    "exits": [
     "dali_central_flagstone_corridor"
    ],
    "id": "judicial_archive_secret_vault",
    "name": "司刑司架阁库绝密档案楼",
    "pressure_modifiers": {
-    "p_arson_fire_threat": "楼下木栏隐隐散发出刺鼻石脑油气味，火舌即将舔上藏书楼基座。",
-    "p_censor_impeachment_edict": "御史台催缴全案卷宗的朱红牌符已被拍在书案正中。"
+    "p_arson_fire_threat": "楼下木栏散发出刺鼻的石脑油烟气，热浪顺着楼梯涌上来。",
+    "p_censor_impeachment_edict": "催缴全案卷宗的朱红牌符已被重重拍在书案正中。"
    },
    "privacy": "semi",
    "tags": [
@@ -1865,19 +1944,19 @@
   },
   {
    "affordances": [
-    "撬动水闸铁阀排除倒灌积水防止地牢犯人被暴雨淹溺",
+    "转动水闸铁阀排除倒灌积水防止地牢犯人被暴雨淹溺",
     "在幽暗石柱后将藏匿的推官断案遗卷与防身短刃交割",
     "并肩抵住冰冷湿滑石壁吐露被贬真相并立下生死重誓"
    ],
-   "detail": "深埋于刑署地底的地牢最深处，阴冷刺骨的水汽从铁栅下翻涌而上。石壁上生满湿滑苔藓，几副生锈铁枷锁在石柱上，水闸铁轮被暴雨倒灌的浑浊泥水浸泡得咔咔作响，唯有一只挂在墙上的铁油灯散发着呛鼻黑烟。",
+   "detail": "刑署地底最深处，阴冷水汽从铁栅下翻涌。石壁湿滑生苔，水闸铁轮被倒灌的泥水泡得咔咔作响。",
    "exits": [
     "dali_central_flagstone_corridor"
    ],
    "id": "underground_heavy_dungeon",
    "name": "水牢闸口",
    "pressure_modifiers": {
-    "p_gate_iron_lockdown": "地下水位已漫过台阶三级，闸口铁轮在巨大水压下剧烈颤抖。",
-    "p_private_army_breach": "水闸暗渠外传来潜水死士凿击铁栅栏的清脆钢锉声。"
+    "p_gate_iron_lockdown": "水已漫过三级石阶，水闸铁轮在激流冲击下剧烈震颤。",
+    "p_private_army_breach": "水闸暗渠外隐约传来潜入者凿击铁栅的闷响。"
    },
    "privacy": "private",
    "tags": [
@@ -1959,7 +2038,7 @@
   ],
   "order": "family_first"
  },
- "notes": "原稿基本合规，保留全部内容。改动：司刑女官固定为女性；“法医”“大衣”“手术利刃”这类与本世界禁用词或时代冲突的字眼换成唐代说法；去掉内心独白里的“她”与“学徒”；修正“生死生死”笔误；转换为项目格式。",
+ "notes": "原稿基本合规，保留全部内容。改动：司刑女官固定为女性；“法医”“大衣”“手术利刃”这类与本世界禁用词或时代冲突的字眼换成唐代说法；去掉内心独白里的“她”与“学徒”；修正“生死生死”笔误；转换为项目格式。\n2026-10-18 按写作规则 v2 改造：人物组合改为 8 单人 + 2 双人；封棺与私了两条压力改成把柄（司刑评事握寺卿的屯田受贿旧账、相府管事握医官的领药字据）；删去六条泛用钩子，日常重写为八条，人物模板压缩。",
  "player_identities": [
   {
    "age_range": [
@@ -2110,24 +2189,25 @@
  "premise": "唐末的长安，执掌三司重权的宰相嫡长子在平康坊离奇暴毙，案子落到大理寺。铁面无私的司刑女官秘密提调了一位因耿直蒙冤、被革职下狱的前推官，两人在青石验尸房里对着尸身查了几天。门阀的人日夜盯着大理寺，上头一再严令封口；秋雨连绵，验尸房的地下重库常渗水。",
  "pressures": [
   {
-   "choice": "是顶住尚书省敕令强行下刀开膛取样，还是屈从长官仅取体表皮屑草草出具待查初状？",
+   "choice": "亮出手札逼寺卿用印，还是暂签初状换寺卿撤走甲士？",
    "exits": [
     {
-     "cost": "公然对抗中书省宰相敕旨，直接坐实大不敬之罪，天明后随时面临全寺甲士问罪削职",
-     "option": "由女官与推官联名在石门内立誓反锁死门，冒死在白玉案上完成剖胸取心血"
+     "cost": "与寺卿撕破脸，天明后直面相府反扑",
+     "option": "助评事出示手札，逼寺卿当场用印"
     },
     {
-     "cost": "缺少深层脏腑毒理致命伤铁证，极易在三司会审辩难中遭御医以自身暴疾为由彻底推翻",
-     "option": "仅取咽喉唾液与舌根微量药末封入玉匣，先准予遗体装殓留待朝会质辩"
+     "cost": "缺了正堂画押，三司会审易被翻案",
+     "option": "留下切片密档后准予入殓"
     }
    ],
    "far": {
-    "consequence": "宰相即刻举哀火化尸身，并反咬大理寺构陷忠良，主审官员全族被削籍流放岭南恶疾而亡。",
+    "consequence": "尸身当即火化灭迹，办案官员以构陷朝臣罪被削籍流放。",
     "due_days": 1,
-    "trigger": "遗体遭强行封棺送还相府"
+    "trigger": "遗体被强行封棺送还相府"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [
     "hk_lady_judge_blade_approach",
@@ -2136,233 +2216,52 @@
    "id": "p_dawn_coffin_sealing_deadline",
    "immediate": {
     "minutes": 20,
-    "text": "大理寺卿亲率甲士包围验尸石室，催命更牌不断重重拍打石门。"
+    "text": "甲士包围验尸石室，催命更牌重重拍打石门。"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{chief_judicial_judge_lady.name}握有{senior_dali_court_chief.name}早年收受相府黄金、压下屯田人命案的私印手札",
+    "holder": "chief_judicial_judge_lady",
+    "subject": "senior_dali_court_chief"
+   },
    "location_ids": [
-    "stone_inquest_chamber"
+    "stone_inquest_chamber",
+    "judicial_archive_secret_vault",
+    "dali_central_flagstone_corridor"
    ],
    "near": {
     "deadline_minutes": 45,
-    "text": "若未在期限内交出正式结状，相府丧队将直入石室强行夺走遗体沉入黄土灭迹。"
+    "text": "期限内不定夺，相府丧队便直入石室强夺遗体。"
    },
-   "objective": "在晨钟敲响棺盖合拢前完成开胸剖验，固化不可推翻之毒杀物证切片。",
+   "objective": "晨钟前借旧账逼退封棺令，剖验完毕并加盖正印。",
    "source": "institution",
    "start_minute": 15,
    "tags": [
     "workplace_power",
     "crime"
    ],
-   "title": "五更破晓相府夺尸强行封棺死线",
-   "trigger": "中书省宰相钧令限令大理寺于晨钟敲响前必须将相府大公子遗体入殓封棺送还相府，逾时将以违抗朝命问斩。"
+   "title": "屯田旧账与五更封棺钧令",
+   "trigger": "{senior_dali_court_chief.name}携封棺钧令至署，限五更前以心风结案，{chief_judicial_judge_lady.name}当面按住了那册屯田旧档。"
   },
   {
-   "choice": "是号令金吾卫与捕快拼死组成人墙在狭窄回廊肉搏，还是点燃回廊储油木栅建立火墙阻敌？",
+   "choice": "联手医官反制相府管事夺取字据，还是假意收下金帛诱两人当场画押？",
    "exits": [
     {
-     "cost": "直面亡命死士剧毒飞刀近身肉搏，己方禁军捕快将付出惨重伤亡流血代价",
-     "option": "金吾卫郎将率领重步兵结成玄甲盾阵死守狭窄穿堂回廊寸步不退"
+     "cost": "激怒管事，廊外死士提前发难",
+     "option": "扣下醋矾，以保命换医官指证管事"
     },
     {
-     "cost": "大理寺底层地牢将全遭泥水淹没，部分在押非死罪人犯可能遭遇溺水人身伤害",
-     "option": "下令总典狱开启底层水牢水闸，引倒灌暴雨泥水冲淹回廊阻断敌军进攻通道"
+     "cost": "稍有不慎便被反咬索贿",
+     "option": "假意应承，趁管事取出字据时夺下"
     }
    ],
    "far": {
-    "consequence": "大案铁证与办案人员被彻底灭口焚尸，朝廷大理寺官署沦为门阀私兵践踏之修罗场。",
+    "consequence": "死者被定为暴疾猝死，办案人员沦为替罪羊。",
     "due_days": 1,
-    "trigger": "验尸石室被相府死士攻陷占领"
+    "trigger": "毒斑被毁或字据落入相府之手"
    },
    "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "hk_retainer_dagger_approach",
-    "hk_jinwu_crossbow_request"
-   ],
-   "id": "p_private_army_breach",
-   "immediate": {
-    "minutes": 15,
-    "text": "穿堂长廊防风灯笼尽数被流矢射灭，黑暗中兵刃撞击声与惨呼声震耳欲聋。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "dali_central_flagstone_corridor"
-   ],
-   "near": {
-    "deadline_minutes": 35,
-    "text": "死士一旦攻破石室重门，石台上之尸身与在场推官女官将被悉数斩尽杀绝。"
-   },
-   "objective": "击退外敌武装突袭，保全验尸房内关键人证物证免遭血洗焚毁。",
-   "source": "person",
-   "start_minute": 110,
-   "tags": [
-    "violence",
-    "bodily_harm"
-   ],
-   "title": "相府死士披甲夜袭大理寺回廊血战",
-   "trigger": "五十名相府豢养的死士趁暴雨雷鸣翻越大理寺东墙，手持淬毒短刃砍杀巡更狱卒，正强攻验尸石室外围铁栅。"
-  },
-  {
-   "choice": "是冒死潜入深水排开卡死闸门之巨木残枝，还是斩断铁索强行将所有囚徒转移至地面大堂？",
-   "exits": [
-    {
-     "cost": "面临被急流卷入深渠溺毙之极度危险，且推官旧疾重创风湿将永久残疾",
-     "option": "总典狱与推官并肩跳入刺骨急流中，以肉身铁棍合力撬开泄洪分水石闸"
-    },
-    {
-     "cost": "前朝大量历史疑案档案彻底毁损湮灭，老掌固毕生看护心血付之一炬",
-     "option": "放弃底层部分陈年卷宗，集中力量用绳索将白玉案剖验切片抢运至二层架阁库"
-    }
-   ],
-   "far": {
-    "consequence": "大理寺地下天牢所有百年机要卷宗与涉案证人尽数化为泥浆，全案陷入死无对证绝境。",
-    "due_days": 1,
-    "trigger": "地牢被山洪完全吞没水淹三日"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "hk_jailer_sluice_request",
-    "hk_scholar_manacle_approach"
-   ],
-   "id": "p_gate_iron_lockdown",
-   "immediate": {
-    "minutes": 15,
-    "text": "冰冷浑浊泥水灌入石室，熏香熄灭，石案四角牛油巨烛被倒灌狂风骤然吹灭。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "underground_heavy_dungeon"
-   ],
-   "near": {
-    "deadline_minutes": 40,
-    "text": "地下所有藏匿之先帝推案手札与毒药原液样本将在三刻钟内被泥水彻底浸烂损毁。"
-   },
-   "objective": "在地下天牢被洪水彻底淹没前抢修水闸铁轮或疏散关键案犯与涉案物证。",
-   "source": "nature",
-   "start_minute": 190,
-   "tags": [
-    "disaster",
-    "bodily_harm"
-   ],
-   "title": "暴雨山洪倒灌与地牢水闸灭顶之灾",
-   "trigger": "长安城南渠山洪暴发，倾盆暴雨顺着大理寺排水分渠疯狂倒灌地牢水闸，水位以肉眼可见之势漫过脚踝逼近胸口。"
-  },
-  {
-   "choice": "是遵奉御史台敕令移交卷宗争取朝堂复议，还是当场出示天子密赐金牌拒绝交印？",
-   "exits": [
-    {
-     "cost": "直接在朝堂引爆皇权与相权全面决裂公开摊牌，引来宰相神策军全城戒严反扑",
-     "option": "御史密使当场出示天子金吾鱼符强行接管审讯，宣布本案为天子直属特勘钦案"
-    },
-    {
-     "cost": "承担抗诏匿卷之大罪，一旦被御史属官搜出将被当场戴枷收押",
-     "option": "女官交出次要案卷副本以拖延辰光，暗中将带血正本加盖司刑大印直接锁入天牢暗道"
-    }
-   ],
-   "far": {
-    "consequence": "戴罪推官当夜被秘密鸩杀于狱中，司刑女官被罢官除名打入冷宫囚禁终身。",
-    "due_days": 2,
-    "trigger": "案件管辖权被刑部全面接管"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "hk_court_chief_seal_approach",
-    "hk_archive_scroll_request"
-   ],
-   "id": "p_censor_impeachment_edict",
-   "immediate": {
-    "minutes": 15,
-    "text": "御史台属官带差役闯入架阁库，封条已然按在司刑司案卷柜铜锁之上。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "judicial_archive_secret_vault"
-   ],
-   "near": {
-    "deadline_minutes": 30,
-    "text": "大理寺若交出卷宗，相府长子死因将被刑部在天明前以自裁结案，真相永无昭雪之日。"
-   },
-   "objective": "在司法管辖权被强行剥夺前确立验尸结状之法定效力，反向坐实宰相党羽干预司法的罪证。",
-   "source": "institution",
-   "start_minute": 270,
-   "tags": [
-    "workplace_power",
-    "crime"
-   ],
-   "title": "御史台弹劾敕令与三司夺案夺权风暴",
-   "trigger": "御史大夫受宰相党羽密请，向大理寺下达风宪弹劾令，以‘推勘不公、私用戴罪重犯’为由勒令即刻收缴司刑司正印并将案件移交刑部。"
-  },
-  {
-   "choice": "是立即组织差役提水扑灭火势，还是全力将封存玉匣与死者衣冠抢运出楼？",
-   "exits": [
-    {
-     "cost": "多名救援牢卒遭受大面积重度火灼伤，且推官双手面临烧伤无法再握剔骨刀",
-     "option": "推官与典狱带领牢卒冒浓烟烈火冲入火海，以生羊皮浸湿泥浆强行扑盖火源"
-    },
-    {
-     "cost": "损失数十箱前朝各州府户籍底册，导致牵涉该批底册之数万边民户籍彻底散佚",
-     "option": "毅然斩断连接架阁库之木质飞桥隔断火路，任由西侧副库焚毁保全主库正案"
-    }
-   ],
-   "far": {
-    "consequence": "大唐自开国以来所有重大刑狱判例底单荡然无存，本案毒杀铁证随之烟消云散。",
-    "due_days": 1,
-    "trigger": "大理寺架阁库全楼化为灰烬"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "hk_archive_scroll_request",
-    "hk_stone_coroner_scalpel_observe"
-   ],
-   "id": "p_arson_fire_threat",
-   "immediate": {
-    "minutes": 10,
-    "text": "滚滚浓烟倒灌石室，剧烈灼热气浪将雕花窗棱烧得爆裂碎落。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "judicial_archive_secret_vault"
-   ],
-   "near": {
-    "deadline_minutes": 25,
-    "text": "大火一旦蔓延至验尸石室顶层木梁，沉重巨木坍塌将彻底砸毁白玉停尸台。"
-   },
-   "objective": "在烈火彻底焚毁大理寺数百年机要档案与本案关键物证前扑灭火源并抢出核心案卷。",
-   "source": "accident",
-   "start_minute": 350,
-   "tags": [
-    "disaster",
-    "bodily_harm"
-   ],
-   "title": "石脑油烈焰纵火焚毁架阁库危机",
-   "trigger": "潜伏在架阁库后窗之奸细点燃浸透石脑油之火箭射入藏书楼，干枯楠木书架轰然燃起熊熊烈火，浓烟迅速封锁长廊。"
-  },
-  {
-   "choice": "是厉声断喝当场将其拿下戴枷，还是虚与委蛇诱其在化毒契书上亲笔落款？",
-   "exits": [
-    {
-     "cost": "彻底撕破脸皮逼反太医署，宫廷大内后宫将全面动用神策军势力对大理寺施加极端制裁",
-     "option": "司刑女官拔刀直指其咽喉，命老仵作当场搜出其袖内化毒秘矾并列入呈堂铁证"
-    },
-    {
-     "cost": "行事稍有不慎被其识破伪装，可能反遭其指控办案官吏主动勒索御前财物构成受贿污点",
-     "option": "假意应承并要求其当面写下化毒配伍方论，趁其落笔之际由捕快当场擒拿人赃俱获"
-    }
-   ],
-   "far": {
-    "consequence": "本案彻底颠倒黑白，办案官员沦为相府与后宫鹰犬走狗，终生受其要挟任其摆布。",
-    "due_days": 3,
-    "trigger": "收下财帛或未能固化御医当堂认罪画押"
-   },
-   "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [
     "hk_physician_rival_approach",
@@ -2371,25 +2270,223 @@
    "id": "p_deadly_poison_alembic_trade",
    "immediate": {
     "minutes": 15,
-    "text": "石室内药箱被推倒在地，珠宝黄金散落一地与青石板血水混杂格外刺目。"
+    "text": "药箱翻倒在地，化毒药瓶滚到白玉停尸案边缘。"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{prime_minister_deadly_retainer.name}握有{imperial_physician_court_rival.name}收金后把金蚕蛊掺入参汤的字据",
+    "holder": "prime_minister_deadly_retainer",
+    "subject": "imperial_physician_court_rival"
+   },
    "location_ids": [
-    "stone_inquest_chamber"
+    "stone_inquest_chamber",
+    "judicial_archive_secret_vault"
    ],
    "near": {
     "deadline_minutes": 30,
-    "text": "御医若察觉败露可能当场打碎化毒药瓶甚至拔出暗藏金簪行刺玉石俱焚。"
+    "text": "醋矾一旦淋上切片，毒斑便彻底消失。"
    },
-   "objective": "在不激化对方当场狗急跳墙砸毁物证之前稳住局势，当堂扣押其化毒药瓶作为反证。",
+   "objective": "截下化毒药瓶与领药字据。",
    "source": "money",
-   "start_minute": 400,
+   "start_minute": 95,
    "tags": [
     "crime",
     "workplace_power"
    ],
-   "title": "宫廷御医化毒私了与九族身家利诱陷阱",
-   "trigger": "太医署典药奉御从怀中取出贵妃手令与整箱珍珠黄金，要求在银针上淋入醋矾消除毒斑，并许诺保举女官全家封邑升迁。"
+   "title": "平康坊领药字据与化毒私了",
+   "trigger": "{prime_minister_deadly_retainer.name}亮出领药字据，逼{imperial_physician_court_rival.name}用醋矾毁去毒斑，再开价拉你下水。"
+  },
+  {
+   "choice": "调金吾卫结盾阵死守回廊拐角，还是放开水闸引积水阻断死士去路？",
+   "exits": [
+    {
+     "cost": "近身搏杀，捕快与卫士必有伤亡",
+     "option": "持金吾号角亲率甲士在穿堂窄廊结阵迎敌"
+    },
+    {
+     "cost": "水牢积水暴涨，要分人手转移在押人犯",
+     "option": "开暗渠分水闸冲淹外廊石阶阻隔死士"
+    }
+   ],
+   "far": {
+    "consequence": "物证被焚，办案人员被扣上畏罪火拼之名灭口。",
+    "due_days": 1,
+    "trigger": "验尸石室被死士攻入"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hk_retainer_dagger_approach",
+    "hk_jinwu_crossbow_request",
+    "hk_scholar_blood_pledge_approach"
+   ],
+   "id": "p_private_army_breach",
+   "immediate": {
+    "minutes": 15,
+    "text": "回廊防风灯笼被流矢射灭，刀兵碰撞声逼近穿堂。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "dali_central_flagstone_corridor",
+    "stone_inquest_chamber",
+    "underground_heavy_dungeon"
+   ],
+   "near": {
+    "deadline_minutes": 35,
+    "text": "回廊一失守，石室重门两刻钟内便会被攻破。"
+   },
+   "objective": "守住穿堂回廊，澄清越狱流言，护住石室里的遗体与物证。",
+   "source": "person",
+   "start_minute": 165,
+   "tags": [
+    "workplace_power",
+    "crime"
+   ],
+   "title": "相府死士夜袭回廊与越狱流言",
+   "trigger": "相府死士趁暴雨翻入东墙，一边冲击回廊铁栅，一边高喊前推官杀证人越狱，扰乱禁军视线。"
+  },
+  {
+   "choice": "出示御前密符当场驳回移交令，还是交出副本、暗中转移带血正本？",
+   "exits": [
+    {
+     "cost": "公开与相党决裂，引来更猛的反扑",
+     "option": "亮出御前特勘鱼符，宣布本案由天子督办，拒不交印"
+    },
+    {
+     "cost": "担匿卷之责，被搜出便当场拿下",
+     "option": "交出次要抄件拖时间，把正本加印后锁进地牢暗格"
+    }
+   ],
+   "far": {
+    "consequence": "全案卷宗被销毁，主审与推官同遭罢黜收押。",
+    "due_days": 1,
+    "trigger": "管辖权被刑部全面接管"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hk_court_chief_seal_approach",
+    "hk_archive_scroll_request",
+    "hk_physician_rival_approach"
+   ],
+   "id": "p_censor_impeachment_edict",
+   "immediate": {
+    "minutes": 15,
+    "text": "差役闯入架阁库，封条已按在案卷柜铜锁上。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "judicial_archive_secret_vault"
+   ],
+   "near": {
+    "deadline_minutes": 30,
+    "text": "正印一交出去，死因天明前就会被刑部改判为自裁。"
+   },
+   "objective": "在管辖权被夺前坐实毒杀铁证，保住大理寺的审断权。",
+   "source": "institution",
+   "start_minute": 235,
+   "tags": [
+    "workplace_power",
+    "crime"
+   ],
+   "title": "弹劾敕令与三司移交",
+   "trigger": "相党属官持弹劾令闯入架阁库，以私提重犯为由勒令收缴司刑司正印，全案移交刑部。"
+  },
+  {
+   "choice": "下水合力拉起分水石闸，还是先抢运切片与旧档上楼？",
+   "exits": [
+    {
+     "cost": "寒水浸泡引发旧伤，体力大耗",
+     "option": "与典狱并肩下水，用铁索拉起泄洪石闸"
+    },
+    {
+     "cost": "部分前朝疑案底册被水浸损，难以复原",
+     "option": "放弃次要旧档，用绳索把切片与手札抢运到架阁库"
+    }
+   ],
+   "far": {
+    "consequence": "历年秘档与毒理样本尽毁，旧案平反再无实据。",
+    "due_days": 1,
+    "trigger": "地牢暗格被洪水吞没"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hk_jailer_sluice_request",
+    "hk_scholar_manacle_approach",
+    "hk_jailer_iron_keys_approach"
+   ],
+   "id": "p_gate_iron_lockdown",
+   "immediate": {
+    "minutes": 15,
+    "text": "冰冷泥水漫上石阶，牛油烛被穿堂风吹熄。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "underground_heavy_dungeon",
+    "stone_inquest_chamber"
+   ],
+   "near": {
+    "deadline_minutes": 40,
+    "text": "三刻钟内，暗格里的毒药样本与手札就会被泥水浸毁。"
+   },
+   "objective": "在暗格被淹前拉开泄洪石闸，转移关键证物。",
+   "source": "nature",
+   "start_minute": 310,
+   "tags": [
+    "disaster"
+   ],
+   "title": "暴雨山洪倒灌地牢水闸",
+   "trigger": "城南山洪顺暗渠倒灌地牢，浑水漫过石阶，逼近重牢暗格里的旧案手札与毒液样本。"
+  },
+  {
+   "choice": "用浸湿的生羊皮合力扑盖火源，还是拆断西侧木廊隔断火路保全主库？",
+   "exits": [
+    {
+     "cost": "烟呛火烤，双手灼痛，一时难以执笔",
+     "option": "带差役用湿羊皮与沙土扑灭书架，抢出太医署秘录"
+    },
+    {
+     "cost": "西侧副库数十卷旧档损毁，事后担失火之责",
+     "option": "拆断西侧木桥隔绝火势，集中保全正堂卷宗"
+    }
+   ],
+   "far": {
+    "consequence": "金蚕蛊配伍底册化为灰烬，毒源追查中断。",
+    "due_days": 1,
+    "trigger": "架阁库主库被大火焚毁"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hk_archive_scroll_request",
+    "hk_stone_coroner_scalpel_observe",
+    "hk_lady_judge_confession_approach"
+   ],
+   "id": "p_arson_fire_threat",
+   "immediate": {
+    "minutes": 10,
+    "text": "浓烟倒灌入楼，热浪烤得窗纸噼啪作响。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "judicial_archive_secret_vault"
+   ],
+   "near": {
+    "deadline_minutes": 25,
+    "text": "火一旦烧穿二层木梁，整座架阁库便付之一炬。"
+   },
+   "objective": "在火烧到太医署秘药档案与毒杀结状前扑灭火源。",
+   "source": "accident",
+   "start_minute": 380,
+   "tags": [
+    "disaster"
+   ],
+   "title": "架阁库石脑油走水",
+   "trigger": "暴雨吹落廊下火盆，引燃架阁库外渗漏的石脑油桶，浓烟顺着楠木书架迅速蔓延。"
   }
  ],
  "region": "唐末长安大理寺深处的验尸石室、架阁库与地下重牢",
@@ -2422,7 +2519,7 @@
   "testing": "律令边缘的探询"
  },
  "status": "released",
- "style_hint": "唐代刑狱的官署质感：青石积水的闷响、苍术白芷的药气、银针遇毒的暗斑、刀锋划破衣帛的紧绷。对话典雅精炼、锋芒如刀，谨守唐律与洗冤法度；人物在强权前宁折不弯，克制疏离里涌动着清醒的生死信任。",
+ "style_hint": "句子典雅精炼，多写雨声、药气与青石的冷，对白锋芒内敛，合乎唐律口吻。",
  "tension_engines": [
   {
    "id": "te_imperial_law_vs_prime_power",
@@ -2441,7 +2538,7 @@
    "text": "门阀士族法度规训下的克制疏离礼法与暴雨死斗危局中背脊相托炽烈互鸣的灵魂相知"
   }
  ],
- "title": "长安暴雨洗冤局：提刑女官与戴罪推官",
+ "title": "大理寺秋雨录",
  "tone": [
   "肃穆凄冷",
   "唐风法度",
@@ -2453,7 +2550,7 @@
    "category": "信息",
    "id": "t_chang_1",
    "requires": [],
-   "text": "前推官在割开死者舌根深处时，自肌理肉囊内剔出一枚浸透蜡油的微型紫玉印章，上面刻着北衙禁军神策军中尉的私印，证实死者生前乃是后宫宦官集团安排在宰相身边的卧底棋子。"
+   "text": "前推官从死者舌根肉囊里剔出一枚封蜡紫玉小印，刻着神策军中尉私印——死者原是宦官集团安在宰相身边的棋子。"
   },
   {
    "category": "人事",
@@ -2461,19 +2558,19 @@
    "requires": [
     "chief_judicial_judge_lady"
    ],
-   "text": "一直以中立铁面形象现身的司刑女官{chief_judicial_judge_lady.name}，其亲生兄长突然被刑部差役押解至大理寺大堂，原来兄长已被宰相秘密罗织罪名扣为人质以逼迫女官当堂翻供。"
+   "text": "司刑女官{chief_judicial_judge_lady.name}的兄长被刑部押到大堂，原来已被宰相罗织罪名扣作人质，逼其当堂翻供。"
   },
   {
    "category": "资源",
    "id": "t_chang_3",
    "requires": [],
-   "text": "大理寺地下天牢储备的全部苍术避秽药草与用于检验金蚕蛊毒的关键试剂‘西域冰矾水’，在暴雨倒灌中被潜伏的内奸恶意倾倒毁损，仅存最后半匙药量。"
+   "text": "地牢储备的苍术与检验金蚕蛊的西域冰矾水被内奸倒进积水，只剩最后半匙。"
   },
   {
    "category": "制度",
    "id": "t_chang_4",
    "requires": [],
-   "text": "大明宫内侍省大太监携天子特赦敕令飞骑撞开寺门，宣布皇帝突发风疾卧榻不起，中书省宰相即刻受命全权监国摄政，大理寺全寺即刻转归宰相内阁直接节制管辖。"
+   "text": "内侍省飞骑撞开寺门：天子突发风疾，宰相受命监国，大理寺即刻归相府节制。"
   },
   {
    "category": "时限",
@@ -2481,7 +2578,7 @@
    "requires": [
     "pressure"
    ],
-   "text": "长安城鼓楼突然提前半个时辰敲响破晓晨钟，相府八抬重漆棺木在两百名执绋家丁簇拥下已然撞破外坊大门直抵大理寺阶下，留给签署结状的时间仅剩一柱香！"
+   "text": "鼓楼提前半个时辰敲响晨钟，相府重漆棺木已被执绋家丁抬到寺阶下，签结状只剩一炷香。"
   },
   {
    "category": "关系",
@@ -2489,13 +2586,13 @@
    "requires": [
     "imperial_physician_court_rival"
    ],
-   "text": "太医署典药奉御{imperial_physician_court_rival.name}在绝境崩溃中当堂招供：死者饮下的剧毒并非后宫所赐，而正是死者生前为了栽赃政敌自己向太医院索要调配，却不慎在平康坊误饮自绝！"
+   "text": "典药奉御{imperial_physician_court_rival.name}崩溃招供：毒是死者自己为栽赃政敌讨来的，却在平康坊误饮。"
   },
   {
    "category": "意外",
    "id": "t_chang_7",
    "requires": [],
-   "text": "暴雨重雷猛烈击中大理寺主署正脊铜鸱吻，巨大雷火将验尸石室顶层百年楠木大梁生生劈断砸落，白玉停尸案与死者遗体瞬间被压在熊熊烈焰与断壁废墟之中！"
+   "text": "惊雷劈中正脊铜鸱吻，验尸石室的楠木大梁断落，白玉案与遗体被压在火与断壁之下。"
   }
  ]
 }

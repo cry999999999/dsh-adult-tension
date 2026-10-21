@@ -425,7 +425,7 @@ class NewGameCommandTest(unittest.TestCase):
                 ("《港口夜班》那个世界", "harbor_night_shift"),  # the title inside the player's words
                 ("凡尔赛", "versailles_corset_wardrobe_secret"),  # part of one title
                 ("harbor_night_shift", "harbor_night_shift"),  # the ID
-                ("长安洗冤局", "chang_an_rainy_dali_temple_inquest"),  # pieces of one title, clearly ahead
+                ("秋雨录大理寺", "chang_an_rainy_dali_temple_inquest"),  # pieces of one title, clearly ahead
             ):
                 opened = service.new_game(ctx, {"request_id": ids(), "mode": "daily", "world_query": query})
                 self.assertEqual(world_of(opened), world_id, query)

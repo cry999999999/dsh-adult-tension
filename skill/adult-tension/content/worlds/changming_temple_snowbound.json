@@ -99,8 +99,8 @@
  ],
  "cast_combos": [
   {
-   "chemistry": "{emaciated_officer.name}手按绣春刀咬定你就是名册上的钦犯同党，而{veteran_caravan_head.name}为了保全整队镖车极力主张顺水推舟将你交出抵罪；你在石柱铁锁前被两道杀机笼罩，唯有挑拨双方利益方能换取活命生机。",
-   "id": "combo_inquisition_siege",
+   "chemistry": "大殿火堆旁的盘查刚告一段落，{emaciated_officer.name}屏退旁人，亲手解开你腕上的铁锁，把你带上藏经破楼偏阁，卸下玄色披风让你替{emaciated_officer.ta}重新包扎肩头崩裂的箭伤。",
+   "id": "combo_officer_felon",
    "identity_ids": [
     "manacled_felon"
    ],
@@ -113,69 +113,118 @@
      "a": "player",
      "a_to_b": {
       "tension": 3,
-      "trust": 0
+      "trust": 4
      },
      "b": "emaciated_officer",
      "b_to_a": {
       "tension": 3,
-      "trust": 0
+      "trust": 4
      },
-     "reason": "被对方亲自押解进山戴上沉重铁枷，视对方为残暴索命修罗",
-     "stage": "stranger"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "veteran_caravan_head",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "曾暗中撞见对方在雪地掩埋黑色火药碎屑，互知对方隐秘软肋",
-     "stage": "acquainted"
-    },
-    {
-     "a": "emaciated_officer",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "veteran_caravan_head",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "官差疑心镖队暗藏违禁军械，镖头极力行贿斡旋虚与委蛇",
-     "stage": "testing"
+     "reason": "去年雁门关夜战你替{emaciated_officer.name}挡下一记冷箭，对方把贴身象牙腰牌塞进你怀里保你脱身",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "emaciated_officer",
+    "emaciated_officer"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想让{emaciated_officer.name}信你不是钦犯同党，也想让对方今夜别再一个人硬扛毒伤",
+    "limit_gap": "名册上的体貌字迹已洇花，{emaciated_officer.name}今夜必须交出一个钦犯",
+    "meeting_reason": "{emaciated_officer.name}借提审之名把你单独带上偏阁",
+    "resource_gap": "{emaciated_officer.name}握着生杀勘合与名册，你腕上还扣着对方亲手上的铁锁"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_soaked_warrant_purge",
+    "te_poison_well_panic"
+   ]
+  },
+  {
+   "chemistry": "山门风雪正紧，{veteran_caravan_head.name}打发走守车的趟子手，提着一壶温好的烈酒在镖车旁等你，见你拖着铁链过来，便掀开半幅羊皮褥子示意你坐近避寒。",
+   "id": "combo_caravan_felon",
+   "identity_ids": [
+    "manacled_felon"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "veteran_caravan_head",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "出关前在保定府客栈你替{veteran_caravan_head.name}惊退过夜盗，对方便执意雇你随车，一路夜夜留你喝酒说话",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
     "veteran_caravan_head"
    ],
    "stakes": {
-    "irreplaceable_goal": "在绣春刀劈下前挑明老镖头的走私破绽迫使双方互相牵制保全残躯。",
-    "limit_gap": "百户伤重咳血急于结案灭口，而老镖头亦深恐火药私镖暴露急欲息事宁人。",
-    "meeting_reason": "锦衣卫召集荒刹全员当众审讯戴枷囚犯核验通缉特征。",
-    "resource_gap": "{emaciated_officer.name}掌握先斩后奏生杀牙牌，{veteran_caravan_head.name}手握重金与镖局武力，你双手受制唯有口舌与开锁钢针。"
+    "irreplaceable_goal": "你想求{veteran_caravan_head.name}在缇骑面前替你说一句话，也想知道这些年对方为何总护着你",
+    "limit_gap": "那口渗出硝石碎屑的镖箱今夜绝不能被人碰",
+    "meeting_reason": "{veteran_caravan_head.name}托巡夜的僧人把你领到镖车旁",
+    "resource_gap": "{veteran_caravan_head.name}手里有车队、银两和四个趟子手，你只有腕上一副铁锁"
    },
-   "tags": [
-    "workplace",
-    "crime"
-   ],
+   "tags": [],
    "tension_engine_ids": [
-    "te_soaked_warrant_purge",
+    "te_powder_keg_crossfire",
     "te_firewood_countdown"
    ]
   },
   {
-   "chemistry": "{mute_itinerant_scholar.name}暗藏机弩急于复仇，而{blind_guqin_mistress.name}凭过人耳力听出了其袖底异动；你在二者之间周旋，既要借助书生的情报查明老僧死因，又要依靠琴师的软剑抵御官差杀伐。",
-   "id": "combo_scholar_blade_pact",
+   "chemistry": "香积厨房里油灯摇曳，{exiled_temple_monk.name}刚盖好井台石板，转头看见拖着铁链进来烘湿衣的你，便丢过一条干净粗布巾，低声问你今夜打算站在哪一边。",
+   "id": "combo_monk_felon",
    "identity_ids": [
-    "traveling_apothecary",
+    "manacled_felon"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 2
+     },
+     "b": "exiled_temple_monk",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 2
+     },
+     "reason": "你入寺第一眼便认出{exiled_temple_monk.name}使的是当年名震京畿的禁军棍法，对方也看穿了你的师承",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "exiled_temple_monk"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想弄清{exiled_temple_monk.name}和老僧之死的关系，也想让这双手替你挡一回刀",
+    "limit_gap": "{exiled_temple_monk.name}恪守戒律不肯动手，天明前还得守着亡僧法体",
+    "meeting_reason": "你被押来灶间烘衣，{exiled_temple_monk.name}正守在井边",
+    "resource_gap": "{exiled_temple_monk.name}掌着禅房钥匙和地窖配给，你连靠火都要看人脸色"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_poison_well_panic",
+    "te_avalanche_isolation"
+   ]
+  },
+  {
+   "chemistry": "悬钟绝顶望台狂风呼啸，{clandestine_courier.name}借生铁梵钟挡住风雪，把一只刚温过的烧刀子酒囊塞到你手里，又拉你蹲下，替自己看看小腿绷带下的旧伤。",
+   "id": "combo_courier_blade",
+   "identity_ids": [
     "lone_blade_nomad"
    ],
    "player_positions": [
@@ -186,67 +235,77 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 1
+      "tension": 3,
+      "trust": 4
      },
-     "b": "mute_itinerant_scholar",
+     "b": "clandestine_courier",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 4
      },
-     "reason": "曾在藏经楼为其包扎过冻伤手指，知晓其并非真哑巴",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 2
-     },
-     "b": "blind_guqin_mistress",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 2
-     },
-     "reason": "相伴避雪于荒庙数日，多次以平稳呼吸与步态博得对方信任",
-     "stage": "familiar"
-    },
-    {
-     "a": "mute_itinerant_scholar",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "blind_guqin_mistress",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "二人皆怀有师门隐秘，在琴音与指尖比划间互相探寻虚实",
-     "stage": "testing"
+     "reason": "三日前太行陉道山洪暴发，你把{clandestine_courier.name}拉上孤岩，两人在岩洞里共盖一件羊皮袄熬过寒夜",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "mute_itinerant_scholar",
+    "clandestine_courier"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想陪{clandestine_courier.name}闯出这座山，也想听对方说出关外的老地方在哪",
+    "limit_gap": "密报辰时前必须送到真定府，{clandestine_courier.name}等不起",
+    "meeting_reason": "两人约好每个时辰在钟楼碰一次头",
+    "resource_gap": "{clandestine_courier.name}知道后山的采药险道，你有一身攀崖的轻功和一把长刀"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_avalanche_isolation",
+    "te_firewood_countdown"
+   ]
+  },
+  {
+   "chemistry": "藏经偏阁里雪沫敲窗，{blind_guqin_mistress.name}听出你上楼的步子，立刻停下调弦向你伸出手，让你坐到身侧一起听辨楼下禅房传来的细碎响动。",
+   "id": "combo_guqin_apothecary",
+   "identity_ids": [
+    "traveling_apothecary"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 5
+     },
+     "b": "blind_guqin_mistress",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 5
+     },
+     "reason": "半年来你一路随行替{blind_guqin_mistress.name}调理眼疾，两人早在江南渡口换过定情玉佩",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
     "blind_guqin_mistress"
    ],
    "stakes": {
-    "irreplaceable_goal": "在锦衣卫大开杀戒前勘破凶案锁定制衡全局的免死底牌。",
-    "limit_gap": "书生无法开口说话容易引发误判，盲琴师目盲难视极度受制于暗室偷袭。",
-    "meeting_reason": "在后殿禅房前共同查验老僧尸身探寻投毒真凶。",
-    "resource_gap": "{mute_itinerant_scholar.name}掌握弹劾血书真相，{blind_guqin_mistress.name}掌握全场听风动向，你拥有验毒医术或强绝刀法。"
+    "irreplaceable_goal": "你们想熬过这一夜，开春一起回江南",
+    "limit_gap": "琴匣暗格里的蜡丸不能见光，你的验尸结论也不能乱说",
+    "meeting_reason": "你上楼送药，{blind_guqin_mistress.name}照例在偏阁等你",
+    "resource_gap": "你会验毒用药，{blind_guqin_mistress.name}凭耳力听得出全庙每个人的心跳"
    },
-   "tags": [
-    "crime"
-   ],
+   "tags": [],
    "tension_engine_ids": [
     "te_poison_well_panic",
     "te_firewood_countdown"
    ]
   },
   {
-   "chemistry": "你怀揣都察院内阁双鱼牙牌拥有正统官威，{exiled_temple_monk.name}为护全庙性命不得不向你合十求助，而{clandestine_courier.name}为了换取边关通关文牒正急迫地恳求你赐下按察使保书。",
-   "id": "combo_patron_iron_censor",
+   "chemistry": "你借口提审嫌犯支开旁人，将{mute_itinerant_scholar.name}带进藏经偏阁；木门刚掩上，对方就拉起你的手，在你掌心一笔一划写下当年旧案的名字。",
+   "id": "combo_scholar_censor",
    "identity_ids": [
     "undercover_censor"
    ],
@@ -258,67 +317,80 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 2
+      "tension": 3,
+      "trust": 4
      },
-     "b": "exiled_temple_monk",
+     "b": "mute_itinerant_scholar",
      "b_to_a": {
-      "tension": 1,
-      "trust": 2
+      "tension": 3,
+      "trust": 4
      },
-     "reason": "认出其曾为边关忠勇前锋教头，深敬其出家护道之大义",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "clandestine_courier",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "审查其靴底军情蜡丸真伪，对其草莽杀伐之气存有防备",
-     "stage": "testing"
-    },
-    {
-     "a": "exiled_temple_monk",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "clandestine_courier",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "僧人曾为斥候的冻僵坐骑熬制过疗伤草药，有同行之义",
-     "stage": "acquainted"
+     "reason": "当年京城抄家夜你冒险从火场救出{mute_itinerant_scholar.name}，此番微服北上正是为了护其翻案",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "exiled_temple_monk",
-    "clandestine_courier"
+    "mute_itinerant_scholar"
    ],
    "stakes": {
-    "irreplaceable_goal": "在身份被发狂的锦衣卫识破灭口前整编荒刹义士掌控局面。",
-    "limit_gap": "你的文官身份手无缚鸡之力易遭暗算，而二人若无朝廷赦书皆将在天亮后沦为通缉叛军。",
-    "meeting_reason": "在钟楼偏阁密议借朝廷正统大义平息缇骑杀机并开通下山退路。",
-    "resource_gap": "你握有直达天听的朝廷按察大权，{exiled_temple_monk.name}拥有镔铁棍伏魔武力，{clandestine_courier.name}拥有雪地健马与绝壁退路。"
+    "irreplaceable_goal": "你想护着{mute_itinerant_scholar.name}把血书带出山，也想听对方开口叫一次你的名字",
+    "limit_gap": "牙牌一亮，你在荒山里就成了靶子",
+    "meeting_reason": "你以提审为名把{mute_itinerant_scholar.name}带上偏阁",
+    "resource_gap": "你的牙牌能掣肘缇骑，{mute_itinerant_scholar.name}只能装哑，连自辩都开不了口"
    },
-   "tags": [
-    "workplace"
-   ],
+   "tags": [],
    "tension_engine_ids": [
+    "te_soaked_warrant_purge",
+    "te_poison_well_panic"
+   ]
+  },
+  {
+   "chemistry": "中庭镖车的油布篷下，{veteran_caravan_head.name}借口请你核验镖箱封条，把一卷关系全镖局身家的暗账递到你手里，挨在你身侧低声商量今夜的退路。",
+   "id": "combo_caravan_censor",
+   "identity_ids": [
+    "undercover_censor"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "veteran_caravan_head",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "三年前太原府劫镖夜你亮出官身替{veteran_caravan_head.name}解了围，对方当夜把镖局私印交给你保管",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "veteran_caravan_head"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想查清这批火药运往哪里，又不想亲手把{veteran_caravan_head.name}送进诏狱",
+    "limit_gap": "那口渗火药的镖箱要是被缇骑摸到，谁也保不住",
+    "meeting_reason": "{veteran_caravan_head.name}请你去镖车篷下核验封条",
+    "resource_gap": "你的牙牌一句话就能放行或扣下车队，{veteran_caravan_head.name}背后是三十余口老小的生计"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_powder_keg_crossfire",
     "te_avalanche_isolation"
    ]
   },
   {
-   "chemistry": "{emaciated_officer.name}即将拔刀强行劈开受潮镖箱搜检，{veteran_caravan_head.name}麾下镖师已暗扣短刀列阵以待，而急欲夺路突围的{clandestine_courier.name}正紧握短刺伏于马棚伺机发难；三方稍有一人动手，中庭立时沦为血腥修罗场。",
-   "id": "combo_crossfire_breach",
-   "identity_ids": [],
+   "chemistry": "断缆悬索石坪上风雪扑面，{emaciated_officer.name}借查勘断桥铁索的名义把你约出山门，确认四下无人后，伸手探向你怀里那面都察院牙牌。",
+   "id": "combo_officer_censor",
+   "identity_ids": [
+    "undercover_censor"
+   ],
    "player_positions": [
     "low",
     "equal",
@@ -329,178 +401,173 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 3,
-      "trust": 0
+      "tension": 4,
+      "trust": 3
      },
      "b": "emaciated_officer",
      "b_to_a": {
-      "tension": 3,
-      "trust": 0
+      "tension": 4,
+      "trust": 3
      },
-     "reason": "在火堆旁多次阻拦其拔刀盘查，已被其列入怀疑灭口名单",
-     "stage": "testing"
+     "reason": "上月在京畿同办诏狱旧案时你替{emaciated_officer.name}挡下一道弹劾，对方临行前约你雪后同饮",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "emaciated_officer"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想知道{emaciated_officer.name}的名册是不是真的，也想赴那场雪后的约",
+    "limit_gap": "两人谁先亮明身份，谁就把把柄交到对方手里",
+    "meeting_reason": "{emaciated_officer.name}约你去断桥查看铁索",
+    "resource_gap": "你的牙牌能革{emaciated_officer.name}的职，对方的绣春刀也能让你今夜走不出山门"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_soaked_warrant_purge",
+    "te_avalanche_isolation"
+   ]
+  },
+  {
+   "chemistry": "一个时辰前{veteran_caravan_head.name}已私下求过你出面周旋，此刻你主动把对方和{emaciated_officer.name}一起请上藏经偏阁，赶在大殿众人察觉前把那份密报摊在书架上。",
+   "id": "combo_officer_caravan_deal",
+   "identity_ids": [
+    "lone_blade_nomad"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "emaciated_officer",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "你与{emaciated_officer.name}在北直隶三度联手缉盗，对方曾把随身飞抓留给你做过半月信物",
+     "stage": "flirting"
     },
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 4
      },
      "b": "veteran_caravan_head",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 4
      },
-     "reason": "曾协助其用油布遮盖受潮镖车，知晓其火药底细",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "clandestine_courier",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "在马厩借火抽烟时交换过彼此关于后山绝壁悬崖的观察",
-     "stage": "acquainted"
+     "reason": "出城那晚{veteran_caravan_head.name}在车篷里握着你的手说，这趟镖走完就跟你去江南置一处宅子",
+     "stage": "intimate"
     },
     {
      "a": "emaciated_officer",
      "a_to_b": {
-      "tension": 3,
-      "trust": 0
+      "tension": 4,
+      "trust": 2
      },
      "b": "veteran_caravan_head",
      "b_to_a": {
-      "tension": 3,
-      "trust": 0
+      "tension": 4,
+      "trust": 2
      },
-     "reason": "官差要立威搜检，老镖头要死保镖银，双方剑拔弩张",
+     "reason": "{emaciated_officer.name}截获了镖箱夹带火药的密报，{veteran_caravan_head.name}知道一开箱全局老小都要搭进去",
      "stage": "testing"
-    },
-    {
-     "a": "emaciated_officer",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "clandestine_courier",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "百户嫌疑其形迹鬼祟，斥候痛恨官差阻绝下山通途",
-     "stage": "stranger"
-    },
-    {
-     "a": "veteran_caravan_head",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "clandestine_courier",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "同为走塞北官道的江湖行路客，深通关外行规彼此心照不宣",
-     "stage": "familiar"
     }
    ],
    "slots": [
     "emaciated_officer",
-    "veteran_caravan_head",
-    "clandestine_courier"
+    "veteran_caravan_head"
    ],
    "stakes": {
-    "irreplaceable_goal": "在火星引燃引线前迫使三方达成临时的停火平衡以求共度雪夜。",
-    "limit_gap": "三人只要有一人做出过激举动，火药一旦殉爆整座古刹大殿将被瞬间夷为平地。",
-    "meeting_reason": "在积雪中庭围绕镖箱搜检与放行权展开最后摊牌对峙。",
-    "resource_gap": "{emaciated_officer.name}有朝廷绣春刀，{veteran_caravan_head.name}有满车硝石火药与硬手，{clandestine_courier.name}有快马与绝杀短刺。"
+    "irreplaceable_goal": "你想让两人都活着下山，不让任何一个死在对方手里",
+    "limit_gap": "子时前密报若还在{emaciated_officer.name}手里，车队就要当众开箱",
+    "meeting_reason": "你应{veteran_caravan_head.name}所托，把两人约到偏阁",
+    "resource_gap": "{emaciated_officer.name}有勘合与密报，{veteran_caravan_head.name}有车队和银两，你只有一把刀和两边的交情"
    },
-   "tags": [
-    "crime",
-    "violence"
-   ],
+   "tags": [],
    "tension_engine_ids": [
     "te_powder_keg_crossfire",
     "te_soaked_warrant_purge"
    ]
   },
   {
-   "chemistry": "{exiled_temple_monk.name}受锦衣卫所托看管你铁枷的钥匙，{blind_guqin_mistress.name}则在夜里听出了你撬锁的细响；两人都握着能把你交出去的把柄，却都还没开口。",
-   "id": "combo_locked_witness",
+   "chemistry": "你与{exiled_temple_monk.name}原就约好在香积厨复验古井水质，你特意把刚上过药的{mute_itinerant_scholar.name}也带进灶间，想看看两人在灯下碰面时各是什么神色。",
+   "id": "combo_scholar_monk_past",
    "identity_ids": [
-    "manacled_felon"
+    "traveling_apothecary"
    ],
    "player_positions": [
-    "low"
+    "equal"
    ],
-   "power_structure": "npc_high",
+   "power_structure": "equal",
    "relations": [
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 1
+      "tension": 4,
+      "trust": 3
      },
-     "b": "exiled_temple_monk",
+     "b": "mute_itinerant_scholar",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 4,
+      "trust": 3
      },
-     "reason": "对方每隔一个时辰来查一次铁枷，却总多给你半碗热汤",
-     "stage": "acquainted"
+     "reason": "一路上你借行医之便替{mute_itinerant_scholar.name}敷过几回伤，对方每次都会往你药囊里塞一朵干梅",
+     "stage": "flirting"
     },
     {
      "a": "player",
      "a_to_b": {
       "tension": 2,
-      "trust": 0
+      "trust": 3
      },
-     "b": "blind_guqin_mistress",
+     "b": "exiled_temple_monk",
      "b_to_a": {
-      "tension": 2,
-      "trust": 0
+      "tension": 4,
+      "trust": 2
      },
-     "reason": "对方说听见了你夜里的撬锁声，却没告诉任何人",
-     "stage": "stranger"
+     "reason": "你与{exiled_temple_monk.name}曾在太行山瘟疫时一同施药救人，彼此都认得对方救急的手法与脾性",
+     "stage": "familiar"
     },
     {
-     "a": "exiled_temple_monk",
+     "a": "mute_itinerant_scholar",
      "a_to_b": {
-      "tension": 1,
+      "tension": 4,
       "trust": 2
      },
-     "b": "blind_guqin_mistress",
+     "b": "exiled_temple_monk",
      "b_to_a": {
-      "tension": 1,
+      "tension": 4,
       "trust": 2
      },
-     "reason": "二人借宿多日，常在钟楼对坐听风",
-     "stage": "familiar"
+     "reason": "{mute_itinerant_scholar.name}总觉得{exiled_temple_monk.name}的棍法眼熟，僧人也常偷看文士腕上的旧疤",
+     "stage": "testing"
     }
    ],
    "slots": [
-    "exiled_temple_monk",
-    "blind_guqin_mistress"
+    "mute_itinerant_scholar",
+    "exiled_temple_monk"
    ],
    "stakes": {
-    "irreplaceable_goal": "在天亮前说服两人相信你与投毒无关，换回双手自由。",
-    "limit_gap": "僧人不愿见血却受人之托，琴师目盲难辨真凶，都怕放错了人。",
-    "meeting_reason": "老僧遗体旁守夜，三人被分在同一盏油灯下。",
-    "resource_gap": "{exiled_temple_monk.name}握着铁枷钥匙与镔铁棍，{blind_guqin_mistress.name}握着你撬锁的证词，你只有一根顶针和一张嘴。"
+    "irreplaceable_goal": "你想在再出人命前弄清老僧为何而死",
+    "limit_gap": "{mute_itinerant_scholar.name}不能开口，{exiled_temple_monk.name}不肯破戒",
+    "meeting_reason": "你和{exiled_temple_monk.name}约好复验井水，顺路带上了{mute_itinerant_scholar.name}",
+    "resource_gap": "你会验毒，{exiled_temple_monk.name}掌着地窖与禅房，{mute_itinerant_scholar.name}怀里揣着血书"
    },
-   "tags": [
-    "crime"
-   ],
+   "tags": [],
    "tension_engine_ids": [
     "te_poison_well_panic",
-    "te_firewood_countdown"
+    "te_soaked_warrant_purge"
    ]
   }
  ],
@@ -520,14 +587,14 @@
  ],
  "character_templates": [
   {
-   "adult_context": "奉旨缉捕朝廷要犯的负伤锦衣百户，身中淬毒箭伤且名册被浸湿，行事极端猜忌狠辣",
+   "adult_context": "奉旨缉拿要犯的负伤锦衣百户，中了毒箭，名册又被雪水泡花，猜忌狠辣",
    "age_range": [
     28,
     48
    ],
    "appearance_options": [
-    "身穿被血迹与泥浆浸污的玄色飞鱼服，腰悬嵌银绣春刀，面色惨白如纸，唇角泛着黑血，眼神阴鸷宛如负伤独狼",
-    "外罩油布防雪斗篷，左肩缠着厚厚渗血白布，右手虎口常年紧扣刀镡机簧，咳嗽时胸腔发出拉风箱般的沉闷哮鸣"
+    "玄色飞鱼服浸着血迹与泥浆，腰悬嵌银绣春刀，面色惨白，眼神阴鸷如负伤的狼",
+    "外罩油布斗篷，左肩缠着渗血白布，右手虎口总扣在刀镡上，咳起来胸口闷响"
    ],
    "decision": {
     "avoids": [
@@ -537,9 +604,9 @@
     "contrast": "审讯盘查时手段残暴不留余地，但在独自面对暴毙袍泽腰牌时会默默垂泪阖眼",
     "core_value": "在皇权铁律与自身残命之间，宁可错杀满庙无辜绝不放走一人",
     "goal_options": [
-     "在天亮前从庙中借宿客人口中逼问出后殿老僧暴毙的真正凶手",
-     "迫使在场懂药理之人为自己拔除左肩淬毒箭镞保全性命",
-     "将庙内所有可能通晓前朝绝密的人证扣上叛逆罪名一网打尽"
+     "天亮前从借宿客口中逼问出老僧暴毙的凶手",
+     "逼懂药理的人替自己拔出左肩毒箭",
+     "把可能知晓前朝密事的人证都扣上叛逆罪名"
     ],
     "never": [
      "在钦犯验明正身前将绣春刀彻底收入鞘中"
@@ -548,10 +615,10 @@
      "在火堆跳荡、刀光晃眼的空旷石殿中央对质逼供"
     ],
     "pressure_responses": {
-     "breaking": "因箭毒攻心呕出大口黑血，单膝跪地狂乱挥刀逼迫所有人后退",
-     "high": "反手掷出淬火飞抓扣住对方琵琶骨，拉扯铁链逼其下跪招认口供",
-     "low": "大拇指轻顶刀镡弹出一寸秋水刀刃，阴冷冷笑着扫视全场逼问籍贯",
-     "mid": "绣春刀骤然出鞘横劈断半截木柴，刀尖直抵对方喉头冷酷下达搜身号令"
+     "breaking": "箭毒攻心呕出黑血，单膝跪地挥刀逼众人后退",
+     "high": "掷出飞抓扣住对方肩头，扯着铁链逼其跪下招认",
+     "low": "拇指顶开刀镡弹出一寸刀光，冷笑着挨个逼问籍贯",
+     "mid": "绣春刀出鞘劈断半截木柴，刀尖抵住对方喉头下令搜身"
     },
     "relationship_stance": "将庙内所有人皆视作心怀叵测的潜在反贼与刺客，绝不付出半分信任",
     "withdrawal": "背靠大殿弥勒佛像底座石台，紧闭双目单手握刀调整紊乱内息"
@@ -577,8 +644,8 @@
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在自己伤重垂危、满殿皆敌的绝境中，对方敢于正面直视自己刀口而不露怯意的沉稳气魄",
-     "对方展现出能替自己拔除箭毒、保住这条残命的精湛绝伦医术手段"
+     "满殿皆敌时，敢正面直视自己刀口而不露怯的沉稳",
+     "能替自己拔除箭毒、保住这条命的医术"
     ],
     "boundaries": [
      "不许出言打探密旨名册内页所记之朝堂阁老姓名"
@@ -631,16 +698,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "真气大损导致半边身子暂时麻痹丧失重劈刀力",
-      "option": "强行以内力逼出剧毒割开腐肉以烈酒浇淋创口"
+      "cost": "真气大损，半边身子麻痹提不起刀",
+      "option": "以内力逼毒，割开腐肉用烈酒浇洗"
      },
      {
-      "cost": "彻底将官方执法底牌授人以柄受制于江湖游医",
-      "option": "向行脚铃医交出腰间象牙勘合以求换得一枚九转还魂丹"
+      "cost": "执法底牌落进江湖游医手里",
+      "option": "向铃医交出象牙勘合换一枚九转还魂丹"
      }
     ],
-    "pressure": "离剧毒走遍十二经脉彻底气绝只剩下不到半个时辰",
-    "trigger": "左肩箭伤毒素发作引发剧烈体温反噬，眼前阵阵发黑，而名册失落的一角残页被发现在大殿角落"
+    "pressure": "毒走全身之前只剩不到半个时辰",
+    "trigger": "左肩箭毒发作，眼前阵阵发黑，偏偏名册失落的一角残页在大殿角落被人发现"
    },
    "tags": [
     "workplace",
@@ -652,14 +719,14 @@
    }
   },
   {
-   "adult_context": "走南闯北三十年的关东老镖头，八面玲珑老成持重，但车队暗镖中藏有见不得光的军火重器",
+   "adult_context": "走南闯北三十年的关东老镖头，八面玲珑，暗镖里藏着见不得光的火药",
    "age_range": [
     35,
     58
    ],
    "appearance_options": [
-    "身穿厚实油光发亮的灰羊皮坎肩，饱经风霜的铜色脸膛满是褶皱，络腮短须如钢针，腰间系着老牛皮宽带插着一柄短把护手钩",
-    "体格粗壮敦实如磐石，笑声洪亮爽朗，双手满是握缰绳与拉硬弓留下的黑茧，眼神在迎人时极富市井精明"
+    "灰羊皮坎肩油光发亮，铜色脸膛满是褶子，络腮短须如钢针，腰间插一柄护手钩",
+    "体格敦实如磐石，笑声洪亮，双手满是缰绳与硬弓磨出的黑茧，迎人时眼神精明"
    ],
    "decision": {
     "avoids": [
@@ -669,9 +736,9 @@
     "contrast": "表面粗豪随和宛如寻常庄稼汉，在暗中切削喂毒暗器时手法却狠辣干脆至极",
     "core_value": "保全镖银与自家弟兄性命，逢场作戏宁退一步不结死仇",
     "goal_options": [
-     "用银两与和事佬姿态抚平锦衣卫的杀机安然熬过风雪夜",
-     "在破庙内找出投毒真凶确保水井与干粮安全防止车队全军覆没",
-     "若身份彻底暴露则点燃火药箱与官差同归于尽保全镖局家小"
+     "用银两和圆场熬过锦衣卫的杀机",
+     "找出投毒真凶，保住水井与干粮",
+     "身份败露就点燃火药与官差同归于尽，保全镖局家小"
     ],
     "never": [
      "在货主出示勘合信物前当众开箱验看镖货"
@@ -680,10 +747,10 @@
      "在众人围坐烤火、人声喧杂的正殿外圈谈论交易"
     ],
     "pressure_responses": {
-     "breaking": "从靴中摸出引火火折子作势要吹亮，厉声警告休要逼人太甚玉石俱焚",
-     "high": "反手拔出腰后短刀抵在身旁石案上，喝令麾下趟子手列出梅花铁壁阵对峙",
-     "low": "呵呵一笑从怀里掏出鼻烟壶递过去，好言好语打圆场劝和",
-     "mid": "脸色一沉将护手钩重重顿在青砖上，抱拳朗声搬出江湖成名宿老名号施压"
+     "breaking": "摸出火折子作势要吹亮，厉声说再逼就玉石俱焚",
+     "high": "拔出短刀抵在石案上，喝令趟子手列阵对峙",
+     "low": "呵呵一笑递上鼻烟壶，好言好语打圆场",
+     "mid": "护手钩重重顿在青砖上，抱拳搬出江湖名号施压"
     },
     "relationship_stance": "信奉财通万物与和气生财，对官府缇骑心存敬畏却处处提防戒备",
     "withdrawal": "独自坐在香积厨灶台旁，就着冷风一口一口闷抽旱烟袋"
@@ -709,8 +776,8 @@
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在风雪绝境中同样经历过江湖风浪、懂得适时收手不把人往绝路上逼的练达沉稳",
-     "能看破自己八面玲珑伪装下的疲惫重负、在暗处递来一壶烈酒的默契知己"
+     "同样经过风浪、懂得适时收手不把人往绝路上逼的练达",
+     "看破自己八面玲珑下的疲惫、在暗处递来一壶烈酒的知己"
     ],
     "boundaries": [
      "绝不许外人插手过问车队账簿与阵亡弟兄抚恤名册"
@@ -730,7 +797,7 @@
      "面对生死关头彼此背靠背握紧兵刃的沉雄信任"
     ],
     "preconditions": [
-     "对方已在关帝神位或火堆前与自己分饮过半碗烈酒立下平分风险盟誓"
+     "对方已在关帝神位或火堆前与自己分饮过半碗烈酒立下平分风险盟誓，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -763,16 +830,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "双手在极寒严霜中遭受深度冻伤导致无法拉开强弓",
-      "option": "冒险冒雪冲出大殿将引线割断并用冰雪强行糊死箱缝"
+      "cost": "双手冻伤，再拉不开硬弓",
+      "option": "冒雪冲出去割断引线，用冰雪糊住箱缝"
      },
      {
-      "cost": "从此将身家性命的大把柄彻底交在不知底细的亡命徒手中",
-      "option": "向独行刀客奉上百两白银重金雇其在门廊处横刀阻拦搜查"
+      "cost": "身家性命的把柄交到了来历不明的人手里",
+      "option": "出百两白银雇独行客在门廊横刀拦查"
      }
     ],
-    "pressure": "离巡逻缇骑校尉折返中庭搜检只剩下不到一刻钟",
-    "trigger": "殿外大雪将停放镖车的油布压塌，渗漏的雨雪将一截火药引线从箱缝中冲刷出来暴露在火光下"
+    "pressure": "巡逻缇骑一刻钟内就会折返中庭搜检",
+    "trigger": "大雪压塌镖车油布，雪水把一截火药引线从箱缝里冲了出来"
    },
    "tags": [
     "workplace",
@@ -784,14 +851,14 @@
    }
   },
   {
-   "adult_context": "伪装成落第哑巴书生的前朝阁老亲信遗孤，身怀绝命血书，身手矫健且善用机弩暗杀",
+   "adult_context": "装作落第哑文士的前朝阁老亲信遗孤，身怀血书，善用机弩",
    "age_range": [
     22,
     36
    ],
    "appearance_options": [
-    "身穿浆洗得发白的单薄青布儒衫，身形消瘦修长，面色冻得青紫发白，怀中死死抱着一口旧柳条书箱，不能言语只以手势比划",
-    "五官清秀儒雅但眉宇间蓄满化不开的冷郁仇火，右手食指与拇指内侧生有一层常年扣动强弩扳机留下的坚硬硬茧"
+    "青布儒衫洗得发白，身形消瘦，面色冻得青紫，怀里死死抱着旧柳条书箱，只以手势比划",
+    "眉眼清秀，眉宇间却蓄着化不开的冷郁，右手指侧有一层常年扣弩磨出的硬茧"
    ],
    "decision": {
     "avoids": [
@@ -801,9 +868,9 @@
     "contrast": "日常比划手势时神态温良儒雅与世无争，在机弩瞄准射杀目标时眼神却死寂如古井",
     "core_value": "哪怕自身粉身碎骨化作飞灰，亦要护全绝命血书送抵边关昭雪天下",
     "goal_options": [
-     "在天亮前利用暗弩神不知鬼不觉除掉负伤的锦衣卫百户以绝后患",
-     "从老镖头处弄到一匹快马与下山的干粮以备栈桥修复后夺路突围",
-     "查出老僧体内所中鹤顶红来源，确认借宿客中是否潜伏着阉党死士"
+     "天亮前用暗弩除掉负伤的锦衣卫百户",
+     "从老镖头那里弄到快马与干粮，等栈桥修好夺路下山",
+     "查出老僧所中之毒的来源，看借宿客里有没有阉党死士"
     ],
     "never": [
      "在仇敌首级落地前将绝命血书交给未经考验之人"
@@ -812,10 +879,10 @@
      "在风雨穿堂、有梁木阻隔视线的阁楼高处进行无声手势交流"
     ],
     "pressure_responses": {
-     "breaking": "从怀中掏出血书作势要扔入熊熊大火，以同归于尽之态逼退众人",
-     "high": "短匕滑入掌心反握，身形如狸猫般贴地暴起刺向对手膝弯软肋",
-     "low": "低眉顺眼垂首退至石柱阴影深处，连连摆手鞠躬以示卑微胆怯",
-     "mid": "袖中手弩机簧悄然扣死半寸，隔着布料笔直瞄准逼近之人的心坎要害"
+     "breaking": "掏出血书作势要扔进火堆，以同归于尽逼退众人",
+     "high": "短匕滑入掌心反握，贴地暴起刺向对手膝弯",
+     "low": "低眉退到石柱阴影里，连连摆手鞠躬装作胆怯",
+     "mid": "袖中手弩悄悄上弦，隔着布料对准逼近之人"
     },
     "relationship_stance": "将一切官吏与豪客视作戕害家门的爪牙，心门封死如深渊寒冰",
     "withdrawal": "独自蜷缩在藏经破楼最高处的阴暗书架后，用布条仔细擦拭机弩零件"
@@ -841,8 +908,8 @@
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在满庙猜忌厮杀中，看穿自己假扮哑巴的破绽后不仅未去告发、反倒用身形替自己遮挡视线的深厚侠义",
-     "对方身上背负着同样深仇大恨、在暗夜中无声相视便能明悟彼此痛楚的共鸣"
+     "看穿自己装哑却没告发、反倒用身形替自己挡住视线的侠义",
+     "背着同样深仇、暗夜里对视一眼便懂彼此的人"
     ],
     "boundaries": [
      "绝不许旁人逼问自己真正族谱本名与生母下落"
@@ -862,14 +929,14 @@
      "在绝壁风雪中并肩潜行时对方递来的坚实依托"
     ],
     "preconditions": [
-     "对方已亲口立下血誓绝不向东厂缇骑泄露血书只字片语"
+     "对方已亲口立下血誓绝不向东厂缇骑泄露血书只字片语，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
      5
     ]
    },
-   "public_role": "落第避雪哑巴书生",
+   "public_role": "落第避雪哑巴文士",
    "schedule": [
     {
      "from": 0,
@@ -895,16 +962,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "彻底引爆全殿正面大械斗沦为全庙官差通缉围攻焦点",
-      "option": "袖底按动扳机抢先一弩射穿锦衣卫百户握刀的手腕"
+      "cost": "全殿械斗爆发，自己成了众矢之的",
+      "option": "抢先一弩射穿百户握刀的手腕"
      },
      {
-      "cost": "书箱内血书边角被火舌燎毁受损且自身双手被严重烧伤",
-      "option": "故意在跨步时将书箱跌入熊熊大火借烈火阻拦搜查"
+      "cost": "血书边角被燎毁，双手也被烧伤",
+      "option": "故意把书箱跌进火堆借火拦住搜查"
      }
     ],
-    "pressure": "离绣春刀强行劈开书箱锁扣只剩下最后半盏茶时间",
-    "trigger": "锦衣卫百户怀疑书生行囊有异，拔刀喝令其立刻将柳条书箱当众倒扣在青砖地上受检"
+    "pressure": "绣春刀劈开箱锁只在半盏茶之间",
+    "trigger": "百户怀疑文士行囊有异，喝令把书箱当众倒扣在地上受检"
    },
    "tags": [
     "crime",
@@ -916,14 +983,14 @@
    }
   },
   {
-   "adult_context": "风尘卖艺的盲目盲琴师，实为江湖隐秘听风楼暗桩，以过人耳力洞察全场心跳呼吸与机簧异响",
+   "adult_context": "卖艺的盲琴师，实为听风楼暗桩，耳力能听出全场心跳与机簧声",
    "age_range": [
     26,
     46
    ],
    "appearance_options": [
-    "双目蒙着一条素净的青麻布条，身着厚实淡紫棉布夹袄，怀抱一张斑驳旧焦尾古琴，端坐于大殿石柱阴影处宛如静止石雕",
-    "神情淡泊清冷，耳廓极其灵巧，对周遭一切动静反应敏锐至极，十指纤长柔韧且常年覆有紧绷的拨弦皮护套"
+    "双目蒙着青麻布条，淡紫棉夹袄，怀抱一张旧焦尾琴，静坐在大殿石柱阴影里",
+    "神情清冷，耳力极灵，十指纤长，常年套着拨弦皮护套"
    ],
    "decision": {
     "avoids": [
@@ -933,9 +1000,9 @@
     "contrast": "日常弹琴时清冷孤高宛如广寒仙客，在暴起拔剑刺杀时出手之阴狠毒辣绝不逊于职业死士",
     "core_value": "在各方势力刀光剑影的狭缝中搜集真相并全躯而退",
     "goal_options": [
-     "利用琴弦暗剑协助盟友除掉投毒害死老僧的幕后真凶报恩",
-     "借助大殿火堆混乱挑动官差与镖局火并坐收渔翁之利",
-     "保全自身离开荒刹将边关危机情报以暗桩渠道送往中原"
+     "用琴中暗剑帮盟友除掉害死老僧的真凶",
+     "趁火堆边的混乱挑动官差与镖局火并",
+     "平安离开荒刹，把边关情报从暗桩送回中原"
     ],
     "never": [
      "在恩师大仇未报前将焦尾古琴转手赠与旁人"
@@ -944,10 +1011,10 @@
      "在风雨呼啸、四壁有回声可供听音辨位的空旷殿宇内低语"
     ],
     "pressure_responses": {
-     "breaking": "十指齐拨扯断琴弦借淬毒钢丝崩飞全场形成乱射屏障防守",
-     "high": "反手推开琴板暗纽弹出三尺青锋软剑，剑尖无声平刺直指咽喉",
-     "low": "素手轻抚琴弦发出一声悠扬清音，不动声色地点破逼近者的轻功底细",
-     "mid": "琴拨陡然一挑弹出一道凌厉气刃割断身前地面木柴，出言冷斥警告止步"
+     "breaking": "十指扯断琴弦，毒钢丝崩飞成一道乱射屏障",
+     "high": "推开琴板暗纽弹出软剑，剑尖平指咽喉",
+     "low": "轻抚琴弦一声清音，不动声色点破来人的轻功底细",
+     "mid": "琴拨一挑，气刃割断身前木柴，冷声喝令止步"
     },
     "relationship_stance": "将红尘众生视作琴弦上弹奏的过客，冷眼静观生死却暗怀恩义",
     "withdrawal": "独自端坐于大殿西南角弥勒佛阴影下，双手抚膝低垂头颅专注听风"
@@ -973,8 +1040,8 @@
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在自己眼盲不可视物的黑暗世界中，对方走路坦荡、呼吸沉稳不带半分偷袭杀机的正大光明之气",
-     "在全庙恶战爆发时毫不犹豫挡在自己身前、为自己抵挡漫天飞溅暗器的刚勇护持"
+     "自己眼盲时，对方走路坦荡、呼吸里不带杀机的正气",
+     "恶战爆发时毫不犹豫挡在自己身前的胆量"
     ],
     "boundaries": [
      "绝不许外人出言追问自己昔年双目致盲的师门血案隐情"
@@ -994,7 +1061,7 @@
      "在幽暗静室中二人靠背而坐低语推演敌情局势"
     ],
     "preconditions": [
-     "对方已证明其与害死老僧的凶徒绝非一党且当面折断一支暗器箭杆"
+     "对方已证明其与害死老僧的凶徒绝非一党且当面折断一支暗器箭杆，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      4,
@@ -1027,16 +1094,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "焦尾宝琴彻底损毁且双手手掌被紧绷钢丝勒出血痕重伤",
-      "option": "十指崩断琴弦以淬毒钢丝激射屋梁强行击落刺客"
+      "cost": "焦尾琴毁了，双手被钢丝勒出血痕",
+      "option": "崩断琴弦以钢丝射落梁上的刺客"
      },
      {
-      "cost": "后背被梁上射落的碎瓦重重砸中留下大面积内伤瘀血",
-      "option": "飞身扑倒身旁的同伴一同翻滚至供桌石台下方避祸"
+      "cost": "后背被落瓦砸中，留下一片瘀伤",
+      "option": "扑倒身旁的人一同滚到供桌下避祸"
      }
     ],
-    "pressure": "离暗弩射出取人性命只剩下不到三个呼吸的心跳空当",
-    "trigger": "听出大殿横梁上有死士悄然拉开钢弩机簧的微弱机括声，而弩口瞄准的正是在场关键人证"
+    "pressure": "暗弩离射出只剩三个呼吸",
+    "trigger": "听出大殿横梁上有人悄悄拉开钢弩，弩口对准在场的关键人证"
    },
    "tags": [
     "workplace",
@@ -1048,14 +1115,14 @@
    }
   },
   {
-   "adult_context": "挂单长明寺的游方行脚僧，实为早年被黜落禁军前锋教头，通晓兵法拳械，死守戒律却身怀杀伐武功",
+   "adult_context": "挂单长明寺的行脚僧，实为被黜的禁军教头，守戒却身怀武功",
    "age_range": [
     30,
     56
    ],
    "appearance_options": [
-    "身披粗麻补丁纳衣，外罩暗黄木棉袈裟，身材魁梧高大如罗汉，面容沉凝如古铜雕塑，双手布满老茧，手腕常缠一串沉重铁菩提念珠",
-    "步履沉雄落地无声，眼神平静祥和但开阖之间隐现霹雳精光，言谈举止谨守佛门规矩"
+    "粗麻纳衣外罩暗黄袈裟，身形高大如罗汉，面容沉凝，腕上缠一串沉重铁菩提念珠",
+    "步履沉稳落地无声，眼神平和却偶现精光，举止谨守佛门规矩"
    ],
    "decision": {
     "avoids": [
@@ -1065,9 +1132,9 @@
     "contrast": "日常垂眉合十温良谦让至极，但在金刚伏魔棍法施展之际却有横扫千军之赫赫威势",
     "core_value": "在乱世修罗场中死守佛门最后的慈悲戒线化解流血惨剧",
     "goal_options": [
-     "在锦衣卫大开杀戒前勘破老僧死因度化凶手阻止全殿血案",
-     "用自身深厚内力护持住重伤濒死之人熬过绝壁漫长寒夜",
-     "销毁禅房地窖密室内残留的军饷旧卷以断绝权贵贪婪追索"
+     "在锦衣卫开杀前勘破老僧死因、劝住凶手",
+     "用内力护住重伤的人熬过寒夜",
+     "销毁禅房地窖里残存的军饷旧卷"
     ],
     "never": [
      "在恶徒放下屠刀前坐视无辜良善在自己眼前横遭戮杀"
@@ -1076,10 +1143,10 @@
      "在佛前青灯、檀香轻缭的肃穆禅堂内说法止戈"
     ],
     "pressure_responses": {
-     "breaking": "为护无辜生灵以肉身硬抗利刃重击，血染袈裟仍合十诵经不退",
-     "high": "长棍顿地崩碎三尺青砖，面现怒目金刚相厉声断喝止戈",
-     "low": "低眉合十道一句阿弥陀佛，手转铁念珠以洪钟佛号震慑躁动众人",
-     "mid": "横跨一步挡在弱者身前，单手托起镔铁长棍横拦如铁壁岳立"
+     "breaking": "以肉身硬扛刀刃护住无辜，血染袈裟仍合十不退",
+     "high": "长棍顿地崩碎青砖，怒目断喝止戈",
+     "low": "合十道一声佛号，转着铁念珠镇住躁动的人",
+     "mid": "横跨一步挡在弱者身前，单手托棍拦如铁壁"
     },
     "relationship_stance": "视庙中争斗凡人为苦海执迷之徒，心怀怜悯却不怒自威",
     "withdrawal": "独自盘坐于后殿老僧遗体旁，就着昏暗酥油灯闭目敲击木鱼诵念往生经咒"
@@ -1105,8 +1172,8 @@
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在浊世血海争斗中，对方依然保有的一缕不愿伤及无辜妇孺的赤子慈悲之心",
-     "面对强权暴虐屠刀敢于挺身卫道、九死不悔的浩然侠骨"
+     "浊世争斗里仍不肯伤及无辜的慈悲",
+     "面对屠刀敢挺身卫道的骨气"
     ],
     "boundaries": [
      "绝不许外人侮慢亵渎殿堂佛像与暴毙亡僧法体"
@@ -1126,7 +1193,7 @@
      "并肩御敌时性命相托而不涉私欲的至纯义气"
     ],
     "preconditions": [
-     "对方已当面指天立誓绝不在荒庙之内挑起无端仇杀害人性命"
+     "对方已当面指天立誓绝不在荒庙之内挑起无端仇杀害人性命，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      4,
@@ -1159,16 +1226,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "真力骤耗导致胸口旧伤迸裂大口呕血跌倒在地",
-      "option": "持镔铁长棍横身切入两军阵中以金刚伏魔棍强行震飞双方兵刃"
+      "cost": "真力骤耗，旧伤迸裂呕血倒地",
+      "option": "持棍切入两方之间震飞双方兵刃"
      },
      {
-      "cost": "彻底暴露自己朝廷逃犯身份引来官司直接就地拘押",
-      "option": "当众揭开自身僧袍露出禁军刺字挑明过往官身威压全场"
+      "cost": "逃籍身份暴露，可能被当场拘押",
+      "option": "当众露出禁军刺字，亮明过往官身压住全场"
      }
     ],
-    "pressure": "离双方刀刃交锋血溅三尺只剩下最后十个弹指瞬间",
-    "trigger": "狂怒的缇骑与持械镖师即将在大殿火堆前拔刀展开血腥对决"
+    "pressure": "双方刀刃交锋只在弹指之间",
+    "trigger": "缇骑与持械镖师就要在大殿火堆前拔刀相向"
    },
    "tags": [
     "workplace",
@@ -1180,14 +1247,14 @@
    }
   },
   {
-   "adult_context": "伪装成运送皮货行商的边关急递飞骑，靴底缝有边塞三城兵变告急密报，机警敏捷且行事不择手段",
+   "adult_context": "扮作皮货商的边关急递飞骑，靴底缝着三城兵变的告急密报",
    "age_range": [
     24,
     44
    ],
    "appearance_options": [
-    "头戴厚重雪狐皮帽，身穿双层油布羊皮袄，风尘仆仆，腰挎一把轻便短马刀，靴筒内暗插两柄放血短刺",
-    "身手精悍矫健，眼神灵动锐利如林中灰狐，双唇冻裂，说话带有地道塞北粗粝口音"
+    "头戴雪狐皮帽，身穿油布羊皮袄，腰挎短马刀，靴筒里暗插两柄短刺",
+    "身手精悍，眼神灵动如灰狐，双唇冻裂，一口塞北口音"
    ],
    "decision": {
     "avoids": [
@@ -1197,9 +1264,9 @@
     "contrast": "外表粗俗邋遢言辞市侩，在清点马具与密报蜡丸时动作却精细利落如最高明细作",
     "core_value": "哪怕拿满庙之人的性命铺路，亦要将绝密军报按期送抵边关大营",
     "goal_options": [
-     "在天亮前利用独行刀客的飞爪百炼钢索冒险攀爬绝壁强行下山",
-     "用手中掌握的凶杀线索挑动各方内讧趁乱牵马脱身",
-     "查探出破庙地窖通往后山悬崖的隐秘采药暗道抢先突围"
+     "天亮前借独行客的飞爪钢索攀绝壁下山",
+     "用手里的凶案线索挑动各方内讧，趁乱牵马脱身",
+     "找出地窖通往后山的采药暗道抢先突围"
     ],
     "never": [
      "在抵达真定府总兵大营前让靴底密报离开自身贴肉之处"
@@ -1208,10 +1275,10 @@
      "在风雪灌顶、视野开阔易于翻墙逃窜的山门中庭商谈"
     ],
     "pressure_responses": {
-     "breaking": "引燃马厩草料制造冲天大火引发混乱，拼死翻墙涉险跳崖",
-     "high": "反手拔出放血短刺顶住对方咽喉软肋，厉声逼问下山捷径所在",
-     "low": "在靴底磕了磕烟袋嘴，操着塞北方言大声笑骂老天爷风雪不开眼",
-     "mid": "身形悄然挪向山门马厩方向，手掌按在靴筒短刺手柄上目光阴冷游移"
+     "breaking": "点燃马厩草料制造混乱，拼死翻墙往崖边去",
+     "high": "拔出短刺顶住对方咽喉，逼问下山捷径",
+     "low": "在靴底磕磕烟袋，操着塞北话笑骂老天不开眼",
+     "mid": "悄悄挪向马厩，手按靴筒短刺，目光游移"
     },
     "relationship_stance": "将所有人视为阻碍自己送信的绊脚石，除完成使命外不谈半分私情",
     "withdrawal": "独自蹲守在山门风口的马厩木桩旁，一边喂马干草一边神经质地搓手张望"
@@ -1237,8 +1304,8 @@
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "同样肩负千钧重负、在绝境中行动果决毫不拖泥带水的干练同道",
-     "敢于同自己一同涉险在万丈绝壁飞索攀爬、将性命系于同一根绳索的亡命豪气"
+     "同样肩负重担、绝境里行事果决的同道",
+     "敢与自己把性命系在同一根绳上攀崖的豪气"
     ],
     "boundaries": [
      "绝不许外人碰触自己的马鞍夹层与随身靴子"
@@ -1258,7 +1325,7 @@
      "在狂风呼啸中并肩策马或攀岩时的生死托付"
     ],
     "preconditions": [
-     "对方已展现出高绝的绝壁攀岩轻功或熟悉下山隐秘采药栈道"
+     "对方已展现出高绝的绝壁攀岩轻功或熟悉下山隐秘采药栈道，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -1291,16 +1358,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "唯一代步良驹被烈火烧死且失去全部御寒皮货辎重",
-      "option": "纵火点燃马厩草料借大火混乱掩护翻越山门逃向断桥"
+      "cost": "坐骑烧死，御寒皮货尽失",
+      "option": "纵火烧马厩，借乱翻出山门奔向断桥"
      },
      {
-      "cost": "卷入东厂与兵部边关派系的内部党争随时面临被就地灭口",
-      "option": "主动向锦衣卫百户亮明兵部急递飞骑身份要求其让道放行"
+      "cost": "卷进东厂与兵部的党争，随时可能被灭口",
+      "option": "向百户亮明兵部急递身份要求放行"
      }
     ],
-    "pressure": "离缇骑上前严加搜检只剩下不到一刻钟时间",
-    "trigger": "挂在马鞍上的皮货袋被大风刮落，兵部专用的加急白牛皮带被滚落的火炭烫出焦痕引起锦衣卫警觉"
+    "pressure": "缇骑一刻钟内就会上前搜检",
+    "trigger": "皮货袋被风刮落，兵部专用的白牛皮带被火炭烫出焦痕，引起锦衣卫警觉"
    },
    "tags": [
     "workplace",
@@ -1318,6 +1385,7 @@
  },
  "clock_style": "hm",
  "content_tags": [
+  "intimate",
   "violence",
   "coercion_theme",
   "bodily_harm",
@@ -1460,6 +1528,43 @@
    "start_minute": 1435,
    "tags": [],
    "title": "中庭积雪巡查警备"
+  },
+  {
+   "beats": [
+    "提着防风油纸灯笼走进积雪中庭，用竹帚扫开石阶与镖车车轮旁的浮雪",
+    "俯身比对雪地上还没被新雪盖住的靴印深浅，与身侧的人低声推敲各路人马的来历",
+    "在回廊背风处抖落斗篷上的雪沫，趁四下无人把刚探得的动静悄悄告诉对方"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [
+    "h_caravan_hook_slam",
+    "h_courier_spur_lean"
+   ],
+   "id": "a_courtyard_tracks",
+   "location_ids": [
+    "monastery_courtyard"
+   ],
+   "start_minute": 1330,
+   "tags": [],
+   "title": "中庭扫雪辨迹"
+  },
+  {
+   "beats": [
+    "手执蜡烛跨进贴了封条的后殿禅房，把散落在蒲团四周的旧经卷逐一拾起",
+    "在昏黄烛光下并肩翻检经卷空白处的陈年批注，指尖不时在同一页纸上相触",
+    "确认门外走廊无人经过后，把夹在经书里的关键纸页收进贴身衣袋"
+   ],
+   "duration_minutes": 35,
+   "hook_ids": [
+    "h_monk_autopsy_sigh"
+   ],
+   "id": "a_cell_seal_check",
+   "location_ids": [
+    "monk_cell_crime_scene"
+   ],
+   "start_minute": 1345,
+   "tags": [],
+   "title": "后殿禅房整理旧卷"
   }
  ],
  "default_npc_gender_mix": {
@@ -1590,7 +1695,7 @@
     "将带鞘长刀平放膝头按紧刀柄",
     "借低头喝茶余光审视围坐众人的靴履泥痕"
    ],
-   "detail": "古刹正殿中央，残缺金漆的大肚弥勒佛像俯瞰尘寰，青砖地面上燃着一堆忽明忽暗的干湿柴火，浓烟顺着房顶破漏瓦片倒卷翻滚。",
+   "detail": "古刹正殿，残缺金漆的弥勒佛像俯瞰下来，青砖地上燃着一堆忽明忽暗的柴火，浓烟从破瓦间倒卷。",
    "exits": [
     "monk_cell_crime_scene",
     "bell_tower_loft",
@@ -1599,14 +1704,15 @@
    "id": "grand_buddha_hall",
    "name": "长明大殿火堆旁",
    "pressure_modifiers": {
-    "p_charred_wood_exhaustion": "大殿中央是全庙唯一的取暖光源，火堆一旦熄灭众人将被黑暗冻气吞噬。",
-    "p_officer_paranoia_purge": "公差盘查的所有杀伐对质皆在此当众爆发。"
+    "p_charred_wood_exhaustion": "大殿中央的火堆缩了小半圈，干松木燃尽后只剩湿柴噼啪轻响。",
+    "p_corpse_poison_panic": "火堆旁的借宿客各自按紧刀柄，稍有风吹草动便警惕地打量邻座。",
+    "p_officer_paranoia_purge": "大殿内侧站着按刀值守的校尉，火堆旁码放着刚收缴核验的路引文书。"
    },
    "privacy": "public",
    "tags": [
     "workplace"
    ],
-   "visibility": "中央火圈照亮方圆一丈之地，殿角巨木圆柱后深陷在浓重黑暗中，稍有异动火光下拉长的影子便会晃动。",
+   "visibility": "火圈只照亮一丈方圆，殿角圆柱后一片漆黑，稍有异动影子便会晃动。",
    "witnesses": [
     "bg_patrol_guard"
    ]
@@ -1617,7 +1723,7 @@
     "翻动蒲团下压着的带血旧经卷",
     "反插禅房雕花木门门栓隔绝外人"
    ],
-   "detail": "长明寺老僧生前起居的狭窄禅室，粗麻蒲团上横躺着一具已然僵硬的面色青紫尸身，青铜油灯翻扣在泥地上，满室弥漫着苦杏仁味的异香。",
+   "detail": "老僧生前的狭窄禅室，蒲团上横着已僵硬的尸身，青铜油灯翻扣在地，满室苦杏仁味。",
    "exits": [
     "grand_buddha_hall",
     "scripture_attic",
@@ -1626,14 +1732,14 @@
    "id": "monk_cell_crime_scene",
    "name": "后殿暴毙僧房",
    "pressure_modifiers": {
-    "p_corpse_poison_panic": "此地是老僧中毒暴毙第一现场，残留着行凶暗器的致命痕迹。"
+    "p_corpse_poison_panic": "禅房泥地上翻扣着青铜油灯，蒲团边缘残留着一抹极淡的苦杏仁气味。"
    },
    "privacy": "private",
    "tags": [
     "crime",
     "bodily_harm"
    ],
-   "visibility": "仅靠手执火把或纸灯笼照亮一隅，门窗紧闭，任何人在尸体旁翻找皆不易被大殿察觉。",
+   "visibility": "只靠火把或灯笼照亮一隅，门窗紧闭，在里面翻找大殿那头不易察觉。",
    "witnesses": []
   },
   {
@@ -1642,7 +1748,7 @@
     "翻检朽木暗格中藏匿的生铁暗弩",
     "透过地板缝隙俯窥下方禅房动静"
    ],
-   "detail": "位于后殿二层的逼仄木构阁楼，书架倾颓，残破经卷堆叠如山，窗棂糊纸已被狂风撕碎，雪沫不时打在朽烂木地板上发出沙沙声。",
+   "detail": "后殿二层的逼仄阁楼，书架倾颓，残经堆叠，窗纸被风撕碎，雪沫打在朽木地板上沙沙作响。",
    "exits": [
     "monk_cell_crime_scene",
     "bell_tower_loft"
@@ -1650,11 +1756,12 @@
    "id": "scripture_attic",
    "name": "藏经破楼偏阁",
    "pressure_modifiers": {
-    "p_manifesto_leak_clash": "阁楼曾是老僧私藏前朝遗信之地，极易搜出翻案铁证。"
+    "p_manifesto_leak_clash": "残破经卷散落一地，朽木暗格里还留着半截褪色的火漆封泥。",
+    "p_powder_crate_leverage": "经架上摊着盖红印的密报，纸角被风掀动。"
    },
    "privacy": "semi",
    "tags": [],
-   "visibility": "极其昏暗，梁柱蛛网密布，脚踩木板极易发出嘎吱断裂声，只容两人侧身错步对谈。",
+   "visibility": "昏暗，蛛网密布，木板一踩就嘎吱作响，只容两人侧身对谈。",
    "witnesses": [
     "bg_hiding_monk"
    ]
@@ -1665,7 +1772,7 @@
     "翻捡灶下残存未受潮的干燥松塔引火",
     "在水缸后暗扣飞刀戒备来者"
    ],
-   "detail": "古刹灶间，一口被青石板半遮的水井坐落院角，铁锅内残留着冻结的稀粥，柴垛已被雪水浸透大半，空气中泛着柴烟与馊败气息。",
+   "detail": "古刹灶间，院角一口被青石板半遮的水井，锅里稀粥冻住，柴垛被雪水浸透大半。",
    "exits": [
     "monk_cell_crime_scene",
     "monastery_courtyard"
@@ -1673,13 +1780,14 @@
    "id": "ancient_well_kitchen",
    "name": "古井香积厨房",
    "pressure_modifiers": {
-    "p_well_water_poison_strike": "古井是全庙唯一的饮水生路，已被毒素污染疑云笼罩。"
+    "p_charred_wood_exhaustion": "灶间角落的柴垛被雪水浸透大半，只剩灶膛下拢着一小堆余烬。",
+    "p_well_water_poison_strike": "井口压着沉重的青石板，井台边缘还留着半圈未扫净的白色药末。"
    },
    "privacy": "semi",
    "tags": [
     "crime"
    ],
-   "visibility": "灶膛火星早已熄灭，唯有一盏油纸风灯挂在檐下晃荡，井台湿滑极易失足滑落。",
+   "visibility": "灶火早熄，只一盏风灯在檐下晃荡，井台湿滑。",
    "witnesses": [
     "bg_kitchen_helper"
    ]
@@ -1690,7 +1798,7 @@
     "凝视绝壁栈道断口判断雪崩移势",
     "撞击铁钟借沉闷钟鸣掩盖殿内搏杀声"
    ],
-   "detail": "古寺角楼最高处，悬着一口巨大的斑驳生铁梵钟，四周无壁仅有红漆木栏，狂风卷着雪片如刀割面，俯瞰下山悬索断桥。",
+   "detail": "角楼最高处悬着一口斑驳铁钟，四面只有红漆木栏，风雪割面，俯瞰下山的断桥。",
    "exits": [
     "grand_buddha_hall",
     "scripture_attic"
@@ -1698,13 +1806,13 @@
    "id": "bell_tower_loft",
    "name": "悬钟绝顶望台",
    "pressure_modifiers": {
-    "p_avalanche_isolation_surge": "高台风力最烈，可最先察觉后山雪崩山体开裂征兆。"
+    "p_avalanche_isolation_surge": "斑驳生铁梵钟在狂风中低沉嗡鸣，木栏外已是白茫茫一片雪海。"
    },
    "privacy": "semi",
    "tags": [
     "disaster"
    ],
-   "visibility": "风雪极大导致数步外难辨人影，但居高临下能将整座荒庙院落出入口尽收眼底。",
+   "visibility": "风雪大得数步外难辨人影，却能俯瞰全寺出入口。",
    "witnesses": [
     "bg_sentry_lookout"
    ]
@@ -1715,7 +1823,7 @@
     "踩着齐膝深雪快步抢占大门侧翼石阶",
     "在风雪呼啸中拔刀格挡突如其来的暗器"
    ],
-   "detail": "大殿与山门之间的开阔石庭，积雪已深达膝盖，两座石灯笼已被积雪埋没大半，凛冽穿堂风在此打着旋，雪面上留有杂乱带血脚印。",
+   "detail": "大殿与山门间的石庭，积雪没膝，石灯笼埋了大半，雪面留着杂乱带血的脚印。",
    "exits": [
     "grand_buddha_hall",
     "ancient_well_kitchen",
@@ -1724,11 +1832,12 @@
    "id": "monastery_courtyard",
    "name": "积雪山门中庭",
    "pressure_modifiers": {
-    "p_avalanche_isolation_surge": "中庭直对后山风口，积雪下压随时可能冲垮山门。"
+    "p_avalanche_isolation_surge": "山门中庭的积雪深及膝盖，早先的杂乱脚印正被新雪迅速掩平。",
+    "p_powder_crate_leverage": "积雪中庭里，停放红漆镖箱的大车四周多了一圈杂乱的官靴脚印。"
    },
    "privacy": "public",
    "tags": [],
-   "visibility": "雪地反光惨白刺目，空旷无遮挡，任何人在此拔刀皆会落入大殿与山门两侧视线中。",
+   "visibility": "雪地反光刺目，空旷无遮，在此拔刀躲不开大殿与山门两侧的视线。",
    "witnesses": [
     "bg_frozen_traveler"
    ]
@@ -1739,20 +1848,20 @@
     "向深渊下投掷火把查探绝壁攀爬借力点",
     "在崖边巨石阴影处将同伴推入死角逼问口供"
    ],
-   "detail": "下山唯一通道的起点，两根粗壮的铁索已从中崩断垂挂在万丈深渊绝壁上，木板散落悬崖，狂风自深谷咆哮灌上令人目眩头晕。",
+   "detail": "下山通道的起点，两根铁索从中崩断垂在绝壁上，木板散落，狂风从深谷灌上来。",
    "exits": [
     "monastery_courtyard"
    ],
    "id": "broken_suspension_bridge",
    "name": "断缆悬索石坪",
    "pressure_modifiers": {
-    "p_avalanche_isolation_surge": "断桥是全场绝境的根源，断绝了一切和平脱身的幻想。"
+    "p_avalanche_isolation_surge": "断崖边的铁索挂满冰凌，深谷灌上来的狂风卷着雪沫扑打石坪。"
    },
    "privacy": "private",
    "tags": [
     "disaster"
    ],
-   "visibility": "风雪迷漫视线不足三尺，深渊黑不见底，稍有不慎失足便坠入万劫不复之境。",
+   "visibility": "风雪里看不出三尺远，深渊黑不见底，一失足便坠下去。",
    "witnesses": []
   }
  ],
@@ -1829,7 +1938,7 @@
   ],
   "order": "family_first"
  },
- "notes": "长明古刹：雪夜借宿与钦犯名册完整中式冷硬武侠悬疑题材世界包。彻底抽离成人情欲描写，专注于暴风雪山庄、身份谍战、信物博弈与生死智斗。全维度严格遵循 DATA_CONTRACTS 与 CONTENT_BIBLE 规范：包含 7 个具备双向出入口的古寺风格地点、6 位设定严密且无敏感词汇的成年江湖客角色模板、6 位背景人物、5 个核心悬疑张力引擎、4 组全覆盖权力结构的组合配置、6 项日常互动与 6 项高压事件、10 个规范钩子与 7 类核心转折。内容标签全数遵循系统受控词表。",
+ "notes": "长明古刹：雪夜借宿与钦犯名册完整中式冷硬武侠悬疑题材世界包。彻底抽离成人情欲描写，专注于暴风雪山庄、身份谍战、信物博弈与生死智斗。全维度严格遵循 DATA_CONTRACTS 与 CONTENT_BIBLE 规范：包含 7 个具备双向出入口的古寺风格地点、6 位设定严密且无敏感词汇的成年江湖客角色模板、6 位背景人物、5 个核心悬疑张力引擎、4 组全覆盖权力结构的组合配置、6 项日常互动与 6 项高压事件、10 个规范钩子与 7 类核心转折。内容标签全数遵循系统受控词表。\n2026-10-18 按写作规则 v2 改造：人物组合改为 8 单人 + 2 双人；新增镖箱火药把柄（百户握老镖头）；压力四维各 1~2；补两条日常；补 intimate 标签。",
  "player_identities": [
   {
    "age_range": [
@@ -1951,118 +2060,74 @@
  "premise": "明末天启年间，太行绝顶的半废石寺是官道上唯一的落脚处，冬天总有几个借宿的人：押解钦犯的锦衣卫百户、行脚铃医、不肯报名号的独行客。白天劈柴、煮粥，夜里围着火盆各说各的来历。寺里的老僧神神秘秘；下山的悬索栈桥年久失修，大雪一来就过不去。",
  "pressures": [
   {
-   "choice": "是冒险踏入风雪深处劈砍易遭暗算的高处梁木，还是强行拆解关东车队的红漆镖箱取木引火。",
+   "choice": "替哪一方压下密报",
    "exits": [
     {
-     "cost": "脚踝被折断朽木狠狠刺穿受重创留下大面积伤口",
-     "option": "冒着坍塌风险攀上藏经楼拆卸朽烂窗棂木板抱回大殿"
+     "cost": "车队底细落进{emaciated_officer.name}手里",
+     "option": "居中担保，让{veteran_caravan_head.name}交出名册"
     },
     {
-     "cost": "彻底引爆镖局上下敌意埋下生死仇隙导致内讧",
-     "option": "拔刀逼迫关东老镖头交出两口空置大木箱劈碎添入火堆"
+     "cost": "出了事追责会写上你的名字",
+     "option": "劝{emaciated_officer.name}暂不开箱"
     }
    ],
    "far": {
-    "consequence": "重伤者与体虚者集体失温休克死亡，全殿防线彻底瓦解。",
-    "due_days": 1,
-    "trigger": "全寺陷入绝对黑暗与严寒冻结"
+    "consequence": "护院与缇骑在中庭各自按刀对峙",
+    "due_days": 2,
+    "trigger": "火药的风声漏到大殿"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [
-    "h_officer_blade_tap",
-    "h_caravan_hook_slam",
-    "h_courier_spur_lean"
+    "h_parchment_glance",
+    "h_caravan_hook_slam"
    ],
-   "id": "p_charred_wood_exhaustion",
+   "id": "p_powder_crate_leverage",
    "immediate": {
-    "minutes": 15,
-    "text": "青砖地上的火光已缩至一尺方圆，呼出的白气在睫毛上凝结成白霜，寒风穿堂吹得众人牙关格格作响。"
+    "minutes": 20,
+    "text": "{emaciated_officer.name}手按绣春刀逼近一步，{veteran_caravan_head.name}攥着暗账退到窗边"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{emaciated_officer.name}握有{veteran_caravan_head.name}在镖箱夹层私运关外违禁火药的密报底单",
+    "holder": "emaciated_officer",
+    "subject": "veteran_caravan_head"
+   },
    "location_ids": [
-    "grand_buddha_hall",
+    "scripture_attic",
     "monastery_courtyard"
    ],
    "near": {
-    "deadline_minutes": 45,
-    "text": "夜半子时山顶气温将降至滴水成冰，断火之地生机断绝。"
+    "deadline_minutes": 90,
+    "text": "子时一到，镖箱就要当众开箱验看"
    },
-   "objective": "在火堆彻底熄灭前从后殿或破楼寻得足够燃烧的干燥木柴，或合力拆毁残破佛像木格。",
-   "source": "nature",
-   "start_minute": 1350,
-   "tags": [
-    "disaster"
-   ],
-   "title": "大殿烤火湿柴即将耗尽",
-   "trigger": "大殿中央长明火堆的干松柴已只剩最后两根残段，火苗暗淡，刺骨冻气正自殿角大面积蔓延，半个时辰内若无新柴补充，殿内众人将被活活冻僵休克。"
-  },
-  {
-   "choice": "是冒险亮出隐藏的官方勘合以官阶压制，还是暗扣飞刃先发制人将其重创夺刀。",
-   "exits": [
-    {
-     "cost": "彻底将自身绝密微服身份曝光于江湖人眼底招致祸患",
-     "option": "当众出示随身隐秘勘合信物以身家性命力保全场良善"
-    },
-    {
-     "cost": "背负袭击朝廷钦差大罪一旦走漏风声即满门抄斩",
-     "option": "借近身倒茶间隙突施擒拿点中百户要穴将其制服缴械"
-    }
-   ],
-   "far": {
-    "consequence": "山下增援缇骑封锁全山将全刹留宿者尽数灭口屠戮。",
-    "due_days": 1,
-    "trigger": "北镇抚司暗记信号弹升空"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "h_officer_blade_tap",
-    "h_caravan_hook_slam",
-    "h_courier_horse_request"
-   ],
-   "id": "p_officer_paranoia_purge",
-   "immediate": {
-    "minutes": 10,
-    "text": "带鞘绣春刀已然出鞘，雪亮刀光在火堆前划出一道冷芒，两名校尉已端起神机弩对准人群。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "grand_buddha_hall",
-    "monk_cell_crime_scene"
-   ],
-   "near": {
-    "deadline_minutes": 30,
-    "text": "百户毒发彻底失去理智后将展开无差别连坐屠杀。"
-   },
-   "objective": "在缇骑下达就地处决号令前，用铁证自清身份、缴除其刀刃，或合力将其制服。",
-   "source": "institution",
-   "start_minute": 1360,
+   "objective": "子时前替这份密报找个去处",
+   "source": "person",
+   "start_minute": 1340,
    "tags": [
     "crime",
     "coercion_theme"
    ],
-   "title": "锦衣卫百户疑心大起清剿全场",
-   "trigger": "锦衣卫百户因肩头淬毒伤势急剧恶化，疑心全庙之人皆为东厂死士或钦犯同党，拔刀下令全员反剪双手靠墙跪伏受审，违者以叛逆论斩。"
+   "title": "镖箱夹层的火药密报",
+   "trigger": "{emaciated_officer.name}亮出密报，勒令{veteran_caravan_head.name}子时前交出车队名册"
   },
   {
-   "choice": "是在全殿当众宣布验尸结论逼真凶自乱阵脚，还是暗中串联可信武者设局诱捕。",
+   "choice": "去后殿禅房复验尸身，还是先在大殿稳住身边的人",
    "exits": [
     {
-     "cost": "自身立刻成为凶手接下来的第一绝杀刺杀目标",
-     "option": "在火堆旁当众亮出带血蒺藜指名道姓喝破凶手暗器特征"
+     "cost": "你成了下一个被怀疑的人",
+     "option": "出面替身边的人作证圆场"
     },
     {
-     "cost": "丧失了主动勘破悬案的第一话语权与筹码控制权",
-     "option": "暗中将验尸结论写在手帕上悄悄塞入行脚僧人怀中托庇"
+     "cost": "大殿那头的局面没人替你看着",
+     "option": "顺着脚印追去藏经偏阁"
     }
    ],
    "far": {
-    "consequence": "投毒悬案彻底沦为死无对证的罗生门，全员陷入自相残杀。",
+    "consequence": "借宿各派互相提防，没人敢再独自去后殿",
     "due_days": 2,
-    "trigger": "寺内主要人证全数被暗害毙命"
+    "trigger": "流言越传越凶"
    },
    "flags": [
     "timed"
@@ -2075,7 +2140,7 @@
    "id": "p_corpse_poison_panic",
    "immediate": {
     "minutes": 20,
-    "text": "禅房油灯被穿堂阴风骤然吹灭，黑暗中大殿那头传来一声极其轻微的金属扣簧上弦声。"
+    "text": "盲琴师在火堆旁拨弦示警，说方才有人趁风声从后殿窗外翻进了偏阁"
    },
    "leverage": null,
    "location_ids": [
@@ -2083,34 +2148,176 @@
     "grand_buddha_hall"
    ],
    "near": {
-    "deadline_minutes": 50,
-    "text": "真凶为求自保将在子时前逐一暗算刺杀知晓验尸结果的人证。"
+    "deadline_minutes": 60,
+    "text": "大殿众人约定，离席超过一刻钟的人都要当众翻验药囊与袖口"
    },
-   "objective": "在凶手施放下一枚暗器灭口前锁定真凶行藏，或逼其当众露出马脚。",
-   "source": "person",
+   "objective": "在众人互相指认前弄清老僧的死因",
+   "source": "rumor",
    "start_minute": 1370,
    "tags": [
     "crime"
    ],
-   "title": "老僧暴毙真凶隐匿暗算危机",
-   "trigger": "验尸查明老僧所中见血封喉乃江湖剧毒子母透骨蒺藜，行凶机簧射程不足三步，证实投毒杀人凶手此时此刻就围坐在大殿火堆人群之中。"
+   "title": "老僧暴毙的投毒流言",
+   "trigger": "大殿火堆旁有人低声传言，说后殿老僧死于子母蒺藜之毒，凶手就混在今晚入寺的几拨人里"
   },
   {
-   "choice": "是收集屋檐悬冰融水以解燃眉之急，还是冒险深入后山冰瀑凿取深层净冰。",
+   "choice": "帮哑文士先收起手书，还是促成两人交换各自的军情",
    "exits": [
     {
-     "cost": "半个身子悬空险些坠崖导致十指遭受极重冻伤血肉模糊",
-     "option": "冒险冒雪翻出山门在绝壁悬崖边缘凿取洁净冰棱回殿"
+     "cost": "书架一响，三个人都会被堵在阁里",
+     "option": "吹灭风灯，带人躲到倾塌书架后"
     },
     {
-     "cost": "付出身边仅存的贵重金银细软乃至祖传信物作为交换",
-     "option": "高价向老镖头求购车队仅存的两囊关东烈酒融雪解渴"
+     "cost": "你得编一个说得过去的来由",
+     "option": "下楼在半途拦住巡查的人"
     }
    ],
    "far": {
-    "consequence": "在绝境干渴下众人互相争夺私藏水囊爆发血腥火并。",
+    "consequence": "各方开始连夜暗中搜寻正本下落",
+    "due_days": 3,
+    "trigger": "手书封皮遗落在楼梯转角"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "h_scholar_cross_bow_touch",
+    "h_courier_spur_lean"
+   ],
+   "id": "p_manifesto_leak_clash",
+   "immediate": {
+    "minutes": 10,
+    "text": "楼梯口传来缇骑上楼巡查的脚步声"
+   },
+   "leverage": null,
+   "location_ids": [
+    "scripture_attic"
+   ],
+   "near": {
+    "deadline_minutes": 40,
+    "text": "手书上的旧将名讳一旦曝光，至少有两人走不出山门"
+   },
+   "objective": "在巡查的缇骑上楼前把手书收好",
+   "source": "person",
+   "start_minute": 1400,
+   "tags": [
+    "crime"
+   ],
+   "title": "血书与边关急报撞在一处",
+   "trigger": "哑文士在偏阁经卷夹层里翻出当年军饷旧案的联名手书，皮货客恰在此时进阁核对边关密信"
+  },
+  {
+   "choice": "凭官面身份或旧交情先行过堂，还是替身份存疑的同伴改换路引",
+   "exits": [
+    {
+     "cost": "你要在名册上挂名做担保人",
+     "option": "单独向百户进言保下同伴"
+    },
+    {
+     "cost": "一旦被撞见，就坐实了心虚",
+     "option": "带人从后殿偏阁绕开盘查线"
+    }
+   ],
+   "far": {
+    "consequence": "今夜任何跨院走动都要担保人同行签押",
     "due_days": 2,
-    "trigger": "全员极度脱水引发心智失常狂躁"
+    "trigger": "全寺出入名册由缇骑统一收管"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "h_officer_blade_tap",
+    "h_caravan_hook_slam",
+    "h_courier_horse_request"
+   ],
+   "id": "p_officer_paranoia_purge",
+   "immediate": {
+    "minutes": 20,
+    "text": "路引字迹模糊或私藏短刃的人，被暂时扣在大殿东侧石柱下候审"
+   },
+   "leverage": null,
+   "location_ids": [
+    "grand_buddha_hall"
+   ],
+   "near": {
+    "deadline_minutes": 60,
+    "text": "盘查推进到后殿走廊，偏阁与禅房也要搜"
+   },
+   "objective": "在盘查轮到你和同伴前把身份理清",
+   "source": "institution",
+   "start_minute": 1360,
+   "tags": [
+    "crime",
+    "coercion_theme"
+   ],
+   "title": "封门勘合与逐一盘查",
+   "trigger": "百户依北镇抚司密旨封住大殿与山门，宣布亥时三刻起逐一核验路引与随身兵刃"
+  },
+  {
+   "choice": "用银两或干粮向车队换私藏白炭，还是去灶间找挂单僧商议",
+   "exits": [
+    {
+     "cost": "护院们会记恨你偏袒",
+     "option": "出面压下争抢，重新划分炭火"
+    },
+    {
+     "cost": "大殿那边的动静就顾不上了",
+     "option": "带着手炉和同伴退进避风的偏阁"
+    }
+   ],
+   "far": {
+    "consequence": "全寺只剩大殿火堆和一两间紧闭门窗的偏室尚有暖意",
+    "due_days": 1,
+    "trigger": "散落各处的炭盆相继熄灭"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "h_officer_blade_tap",
+    "h_caravan_hook_slam",
+    "h_courier_spur_lean"
+   ],
+   "id": "p_charred_wood_exhaustion",
+   "immediate": {
+    "minutes": 15,
+    "text": "几名护院与行脚客为争最后半筐干炭在廊下起哄"
+   },
+   "leverage": null,
+   "location_ids": [
+    "grand_buddha_hall",
+    "ancient_well_kitchen"
+   ],
+   "near": {
+    "deadline_minutes": 45,
+    "text": "偏阁与禅房一刻钟内就会冷到滴水成冰"
+   },
+   "objective": "在炭火停供前替自己和同伴争到一处暖地",
+   "source": "money",
+   "start_minute": 1350,
+   "tags": [
+    "disaster"
+   ],
+   "title": "干柴见底与炭火份额",
+   "trigger": "挂单僧清点完柴垛，宣布干松木只够大殿火堆烧到丑时，偏房炭盆一律停供"
+  },
+  {
+   "choice": "用银针亲自复验井水真伪，还是先收拢各队随身水囊",
+   "exits": [
+    {
+     "cost": "来回一趟要在齐膝深的雪里走上半刻",
+     "option": "去中庭取干净檐雪化水"
+    },
+    {
+     "cost": "你欠下对方一个人情",
+     "option": "与手握私酒的人合用"
+    }
+   ],
+   "far": {
+    "consequence": "净水与酒囊成了今夜最紧俏的东西",
+    "due_days": 1,
+    "trigger": "古井在天亮查明前彻底禁用"
    },
    "flags": [
     "timed"
@@ -2122,43 +2329,42 @@
    ],
    "id": "p_well_water_poison_strike",
    "immediate": {
-    "minutes": 25,
-    "text": "铁锅内泛起一层油腻的墨绿泡沫，水井井栏上被石灰重重画上血红的封井死叉。"
+    "minutes": 20,
+    "text": "各路人马的随身净水所剩无几，清洗伤口与熬药都得动用封存的茶酒"
    },
    "leverage": null,
    "location_ids": [
-    "ancient_well_kitchen",
-    "grand_buddha_hall"
+    "ancient_well_kitchen"
    ],
    "near": {
     "deadline_minutes": 60,
-    "text": "重伤者无水服药将在数个时辰内高热昏厥内脏衰竭。"
+    "text": "伤员一个时辰内再不服药就要高热昏厥"
    },
-   "objective": "在脱水虚脱与热毒攻心前找到安全的水源替代物，或用古法蒸馏净水。",
+   "objective": "在伤员断药前找到能入口的净水",
    "source": "accident",
    "start_minute": 1380,
    "tags": [
     "bodily_harm"
    ],
-   "title": "古井香积厨饮水封绝绝境",
-   "trigger": "香积厨水缸底部的冻死老鼠被捞出，证实古井水脉已被残存毒素浸染，全寺唯一可饮水源彻底断绝，众人口干舌燥且伤员急需净水送服丹药。"
+   "title": "古井封条与净水短缺",
+   "trigger": "有人在古井边发现残留的药粉痕迹，挂单僧当即用青石板封住井口，全寺饮水断绝"
   },
   {
-   "choice": "是用关东大车套绳与粗铁锁强行拼接出一条飞索栈道，还是躲入深山巨石石窟听天由命。",
+   "choice": "登望台查看风向与后山地形，还是在寺内先排好今夜的值守",
    "exits": [
     {
-     "cost": "身体多处遭悬崖锐石严重刮伤肋骨断裂受极重内伤",
-     "option": "孤身腰系麻绳攀下断崖绝壁将两截断裂铁索强行合拢咬扣"
+     "cost": "顾不上去盯寺里其余人的动静",
+     "option": "加固偏阁与禅房门窗，安顿身边的人"
     },
     {
-     "cost": "车队全军覆没且下山物资彻底断绝面临漫长围困绝境",
-     "option": "退守钟楼将铁门落栓封死放弃庭院中镖车与坐骑"
+     "cost": "整夜站在风口，手脚冻得发僵",
+     "option": "独自守住山门要道"
     }
    ],
    "far": {
-    "consequence": "整座唐代石寺被夷为平地，所有人皆长眠雪海万劫不复。",
+    "consequence": "一切恩怨都得在明晨开道前有个了断",
     "due_days": 1,
-    "trigger": "雪崩狂潮彻底吞没长明古刹全境"
+    "trigger": "古寺与山下彻底隔绝"
    },
    "flags": [
     "timed"
@@ -2171,73 +2377,26 @@
    "id": "p_avalanche_isolation_surge",
    "immediate": {
     "minutes": 20,
-    "text": "悬索石柱上崩落的碎石如雨点般砸入万丈深渊，深谷中传来狂风回荡的凄厉啸叫声。"
+    "text": "后山传来沉闷的积雪滑落声，震得偏阁木梁簌簌落灰"
    },
    "leverage": null,
    "location_ids": [
-    "broken_suspension_bridge",
-    "bell_tower_loft"
+    "bell_tower_loft",
+    "monastery_courtyard",
+    "broken_suspension_bridge"
    ],
    "near": {
-    "deadline_minutes": 60,
-    "text": "雪崩一旦全面爆发，古刹正殿正面将被万顷冰雪彻底冲垮掩埋。"
+    "deadline_minutes": 120,
+    "text": "下半夜风雪最盛，院落之间的路会被新雪埋住"
    },
-   "objective": "在雪崩彻底倾泻封堵下山退路前，抢修出一道临时攀崖飞索，或抢占地势最高的钟楼避难。",
+   "objective": "在下半夜风雪最盛前安顿好歇宿与值守",
    "source": "nature",
    "start_minute": 1390,
    "tags": [
     "disaster"
    ],
-   "title": "绝顶雪崩山体开裂断路危局",
-   "trigger": "太行绝顶山峰在狂风肆虐下发出沉闷山鸣，后山万吨积雪已出现数丈宽的恐怖裂缝，断桥两端石柱在剧烈震颤中开始松动剥落。"
-  },
-  {
-   "choice": "是纵身飞跃梁木冒着暗箭强夺卷轴，还是以身躯挡在落难书生身前阻截缇骑杀戮。",
-   "exits": [
-    {
-     "cost": "后背遭弩矢穿透重伤咳血且陷入全场高手合围死局",
-     "option": "飞身跃起以长刀挑下血书塞入怀中硬抗背后两支飞弩射击"
-    },
-    {
-     "cost": "大殿梁柱大面积坍塌将自身与众人砸入重围险境",
-     "option": "挥刀劈倒殿前弥勒佛像木台制造烟尘巨响掩护书生带卷突围"
-    }
-   ],
-   "far": {
-    "consequence": "所有知晓血书存在之人皆在血泊中自相残杀至全员毙命。",
-    "due_days": 3,
-    "trigger": "各派势力在大殿爆发全面灭口混战"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "h_scholar_cross_bow_touch",
-    "h_courier_spur_lean"
-   ],
-   "id": "p_manifesto_leak_clash",
-   "immediate": {
-    "minutes": 15,
-    "text": "朱红色的血书绢帛在火光反衬下显得刺目惊心，数柄兵刃已齐刷刷对准梁柱方向。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "scripture_attic",
-    "grand_buddha_hall"
-   ],
-   "near": {
-    "deadline_minutes": 40,
-    "text": "血书一旦被锦衣卫投入火堆烧毁，朝中冤案将永无昭雪之日。"
-   },
-   "objective": "在血书落入野心家或被烈火焚毁前夺取真本，或保全护书遗孤性命。",
-   "source": "money",
-   "start_minute": 1400,
-   "tags": [
-    "crime",
-    "violence"
-   ],
-   "title": "前朝绝命血书现世抢夺血战",
-   "trigger": "藏经破楼暗格被强风吹坍，那卷记载有前朝重臣弹劾阉党死罪名录的绝命血书掉落在大殿横梁之上，各方势力按刀而起抢夺一触即发。"
+   "title": "风雪封山与栈道断绝",
+   "trigger": "守钟的人传下话来，山门外积雪已没过石灯笼，下山栈道明晨辰时前无法通行"
   }
  ],
  "region": "太行绝顶与官道交界处的半废弃唐代石寺大殿与后山禅房",
@@ -2297,7 +2456,7 @@
    "text": "走私的一口镖箱已被飞溅的火星燎着引线青烟直冒，两人在千钧一发之际在箱体两端按刀争夺扑火权。"
   }
  ],
- "title": "长明古刹：雪夜借宿与钦犯名册",
+ "title": "风雪长明寺",
  "tone": [
   "青砖冷灰",
   "刀镡机簧",
@@ -2311,7 +2470,7 @@
    "requires": [
     "emaciated_officer"
    ],
-   "text": "{emaciated_officer.name}怀中所藏钦犯通缉名册所盖关防大印竟是私刻伪印，其并非奉天差办案，而是受东厂某权宦私下雇佣前来截杀灭口的假缇骑死士。"
+   "text": "{emaciated_officer.name}名册上的关防大印是私刻的：对方并非奉旨办案，而是受东厂权宦私雇前来灭口。"
   },
   {
    "category": "人事",
@@ -2319,19 +2478,19 @@
    "requires": [
     "clandestine_courier"
    ],
-   "text": "塞外边关三城大营早于三日前被叛军攻陷破城，总兵总督尽皆殉难，{clandestine_courier.name}靴底军情急报中呼叫增援的大营已彻底沦为敌国陷阱。"
+   "text": "塞外三城大营三日前已被叛军攻破，{clandestine_courier.name}靴底急报要去求援的大营早成了陷阱。"
   },
   {
    "category": "资源",
    "id": "t_powder_cart_ignited",
    "requires": [],
-   "text": "中庭车队藏匿的一口受潮火药镖箱被飞溅火星彻底引燃，剧烈硝烟与烈火吞噬了马厩，通往山门的退路被熊熊大火与连环爆炸完全封死。"
+   "text": "中庭一口受潮的火药镖箱被火星引燃，烟火吞没马厩，通往山门的路被大火封住。"
   },
   {
    "category": "制度",
    "id": "t_total_siege_decree",
    "requires": [],
-   "text": "山下增援的真定府卫所铁甲精骑已奉严令封锁整座太行山口，宣布古刹全员涉嫌逆案，下达不论官民尽皆合围聚歼格杀的铁血封山令。"
+   "text": "山下真定府卫所铁骑奉令封锁山口，宣布古刹全员涉嫌逆案，不论官民一律合围。"
   },
   {
    "category": "时限",
@@ -2339,7 +2498,7 @@
    "requires": [
     "pressure"
    ],
-   "text": "后山万顷积雪受连环巨震催动发生恐怖的大规模断层滑坡，大雪淹没大殿的倒计时被强行压缩整整三刻钟。"
+   "text": "后山积雪连环滑坡，大雪压到大殿的时限一下子提前了三刻钟。"
   },
   {
    "category": "关系",
@@ -2348,13 +2507,13 @@
     "mute_itinerant_scholar",
     "exiled_temple_monk"
    ],
-   "text": "{mute_itinerant_scholar.name}赫然发现当年在京城军饷大案中领兵查抄斩杀自己全家的禁军宿卫头目，正是眼前这位出家披剃多年的{exiled_temple_monk.name}。"
+   "text": "{mute_itinerant_scholar.name}认出：当年领兵查抄自己全家的禁军头目，正是出家多年的{exiled_temple_monk.name}。"
   },
   {
    "category": "意外",
    "id": "t_temple_roof_collapse",
    "requires": [],
-   "text": "大殿正上方支撑穹顶的百年主梁在暴雪狂风与火势烘烤下发出恐怖脆响轰然断裂，万斤巨木青瓦倾泻砸下将正殿火堆与佛台彻底砸塌粉碎。"
+   "text": "大殿主梁在风雪与火烤下轰然断裂，巨木青瓦砸塌了正殿火堆与佛台。"
   }
  ]
 }

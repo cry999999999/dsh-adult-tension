@@ -1,12 +1,12 @@
 {
  "id": "pt-hypnosis_clinic_subconscious_backlash-daily",
- "title": "试玩：午夜催眠诊室：研究员的反噬与日记（日常）",
+ "title": "试玩：顶层催眠诊疗室（日常）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "hypnosis_clinic_subconscious_backlash",
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，午夜催眠诊室：研究员的反噬与日记，日常",
+   "say": "开一局，顶层催眠诊疗室，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

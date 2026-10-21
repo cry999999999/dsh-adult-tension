@@ -12,7 +12,7 @@
     "窒息封闭",
     "阶层瓦解"
   ],
-  "style_hint": "着力描写湿冷单薄的棉织浴衣、桧木被硫磺水汽蒸透的酸涩木香、窗外暴雪砸在杉木板的闷响、水流从竹笕落入池底的空洞回音，以及冷得发抖的指尖贴上滚烫潮湿肌肤的战栗感。",
+  "style_hint": "多写湿冷浴衣、硫磺水汽与暴雪声，着力冷暖反差的触感，少写心理独白。",
   "clock_start": {
     "label": "1988 年深冬，大雪封山第三天",
     "minute": 1350
@@ -54,7 +54,7 @@
     "全球定位"
   ],
   "status": "released",
-  "notes": "1980年代末深山老铺在极端严寒与停电下的封闭群像。C2：寒冷与压力只逼出处境和选择，亲密只来自角色本身；失能状态不进入任何亲密描写，出路代价均为社交、资源或信息代价。",
+  "notes": "1980年代末深山老铺在极端严寒与停电下的封闭群像。C2：寒冷与压力只逼出处境和选择，亲密只来自角色本身；失能状态不进入任何亲密描写，出路代价均为社交、资源或信息代价。\n2026-10-18 按写作规则 v2 改造：按 Gemini 第七批方案：组合改成 8 组单人加 2 组双人局（椿之室设局买底片、三人柴油换药密约）；发电机停机改成女将握着医生私换柴油的字据，账本烧毁改成摄影师拍下富商家眷烧金条清单；失窃调查改为流言；加烘浴衣、温梅酒两项日常；撬开改撑开，他人改旁人。",
   "name_pools": {
     "family": [
       "白石",
@@ -217,7 +217,7 @@
         32
       ],
       "social_position": "low",
-      "baseline": "底层摸爬滚打，习惯低眉顺眼，善于在暗中观察并利用他人软肋。",
+      "baseline": "底层摸爬滚打，习惯低眉顺眼，善于在暗中观察并拿捏旁人软肋。",
       "resources": [
         "缝在内衣夹层的微型磁带录音机",
         "一根开锁细铁丝与小刮刀",
@@ -277,8 +277,8 @@
         "在铁壶沸腾的嘶嘶声中低声交谈"
       ],
       "pressure_modifiers": {
-        "p_generator_shutdown": "火苗被穿堂风吹得忽明忽暗，每个人都在火光里偷看别人藏油的那只手。",
-        "p_ledger_burn": "火盆周围弥漫着焦糊味，所有人都紧盯着那团逐渐发红的纸角。"
+        "p_generator_shutdown": "地炉边的盘点木牌还没挂出来，若女将正盯着后库方向。",
+        "p_ledger_burn": "炭火盆里还留着半角没烧尽的宣纸金箔灰烬。"
       },
       "tags": []
     },
@@ -324,7 +324,7 @@
         "撬动麻袋上的铅封"
       ],
       "pressure_modifiers": {
-        "p_generator_shutdown": "油桶底部只剩薄薄一层黑油，金属量勺刮擦出刺耳噪音。"
+        "p_generator_shutdown": "角落的备用柴油桶空了两个，封条压在米缸底下。"
       },
       "tags": []
     },
@@ -411,7 +411,8 @@
         "用冻僵的指节检查藏在被褥夹层的行李"
       ],
       "pressure_modifiers": {
-        "p_hypothermia_room": "呼出的白气在棉被边缘结成薄霜，手脚逐渐失去知觉。"
+        "p_hypothermia_room": "呼出的白气在棉被边缘结成薄霜，手脚逐渐失去知觉。",
+        "p_ledger_burn": "被炉桌面上摆着便携显影暗袋，窗栓已经从里面扣上。"
       },
       "tags": []
     }
@@ -473,7 +474,7 @@
           "无担保的口头承诺"
         ],
         "never": [
-          "在他人注视下交出账房钥匙"
+          "在旁人注视下交出账房钥匙"
         ]
       },
       "intimacy_tendency": {
@@ -490,7 +491,7 @@
           "居高临下的施舍态度"
         ],
         "preconditions": [
-          "确信对方没有把自己的秘密向第三人告发",
+          "确信对方没有把自己的秘密向第三人告发，双方都清醒、出于自愿",
           "室内环境有门栓保护"
         ],
         "boundaries": [
@@ -540,7 +541,7 @@
         "exits": [
           {
             "option": "提供一间生有私炭的暖阁换取凭证交还",
-            "cost": "消耗宝贵的取暖炭，且面临被其他冻馁住客围攻的风险"
+            "cost": "消耗宝贵的取暖炭，且面临被其余冻馁住客围攻的风险"
           },
           {
             "option": "让杂役强行搜查并扣押可疑行李",
@@ -623,7 +624,7 @@
           "以施舍者自居的上位者做派"
         ],
         "preconditions": [
-          "双方都已放下随身的刀具与器材",
+          "双方都已放下随身的刀具与器材，双方都清醒、出于自愿",
           "已建立初步的情报交换"
         ],
         "boundaries": [
@@ -733,7 +734,7 @@
           "breaking": "歇斯底里地将钞票扔向火盆，尖叫着质问所有人到底要从自己身上榨取什么"
         },
         "withdrawal": "将椿之客房拉门从内死死顶住，用所有棉被将自己裹成一团",
-        "relationship_stance": "渴望获得强有力的庇护，又深恐再次落入他人的利用圈套",
+        "relationship_stance": "渴望获得强有力的庇护，又深恐再次落入旁人的利用圈套",
         "contrast": "外表是娇贵不耐风霜的弱者，骨子里却有背叛豪门的孤注一掷狠劲",
         "prefers": [
           "温暖封闭的私密室内",
@@ -761,7 +762,7 @@
           "借机勒索敲诈的威胁口吻"
         ],
         "preconditions": [
-          "对方先做出排除外界危险的防护举措",
+          "对方先做出排除外界危险的防护举措，双方都清醒、出于自愿",
           "双方都在温暖的掩体之内"
         ],
         "boundaries": [
@@ -866,7 +867,7 @@
           "breaking": "自己将半支镇痛剂推入静脉，在半昏沉中冷眼旁观局势崩塌"
         },
         "withdrawal": "反锁在后库隔间清点药品，不理会走廊的喧闹",
-        "relationship_stance": "习惯把他人看作需要诊断的身体，以此保持距离",
+        "relationship_stance": "习惯把旁人看作需要诊断的身体，以此保持距离",
         "contrast": "解剖刀般冷硬的言辞下，藏着对活人体温近乎固执的珍惜",
         "prefers": [
           "安静无杂音的处置环境",
@@ -877,7 +878,7 @@
           "未经消毒的蛮横拉扯"
         ],
         "never": [
-          "在他人逼迫下交出全部镇痛针剂"
+          "在旁人逼迫下交出全部镇痛针剂"
         ]
       },
       "intimacy_tendency": {
@@ -948,7 +949,7 @@
           },
           {
             "option": "公开注射半支镇痛针剂迅速止痛",
-            "cost": "稀缺药物存量减少，且引发其他人对止痛药的争抢"
+            "cost": "稀缺药物存量减少，且引发其余人对止痛药的争抢"
           }
         ]
       },
@@ -1027,7 +1028,7 @@
           "自恃高贵的呼来喝去"
         ],
         "preconditions": [
-          "对方已亲眼见过自己的凶狠手段却并未选择出卖",
+          "对方已亲眼见过自己的凶狠手段却并未选择出卖，双方都清醒、出于自愿",
           "离开了旁人的视线"
         ],
         "boundaries": [
@@ -1353,80 +1354,92 @@
   ],
   "cast_combos": [
     {
-      "id": "combo_mist_bargain",
+      "id": "combo_keeper_roten_solo",
       "power_structure": "npc_high",
       "player_positions": [
         "low"
       ],
       "identity_ids": [
-        "undercover_stringer"
+        "undercover_stringer",
+        "retired_mechanic"
       ],
       "slots": [
-        "keeper_chizuru",
-        "fugitive_sosuke"
+        "keeper_chizuru"
       ],
       "tension_engine_ids": [
         "te_thermal_hunger",
-        "te_predator_prey"
+        "te_semi_nude_exposure"
       ],
-      "chemistry": "{keeper_chizuru.name}站在账房门槛边，手里的铜钥匙串叮当作响；身后的{fugitive_sosuke.name}抱着臂堵住楼梯退路。两人一文一武，把你堵在过道死角，要你交出偷录的磁带，换今晚唯一一床厚棉被。",
+      "chemistry": "午夜换栓后的露天风吕蒸腾着滚烫白雾，{keeper_chizuru.name}把木门栓挂上，湿透的浴衣下摆贴在你小腿边。",
       "stakes": {
-        "resource_gap": "{keeper_chizuru.name}握有取暖钥匙，{fugitive_sosuke.name}有压倒性的体力，而你只有冻僵的手指和一盒磁带",
-        "limit_gap": "你若高声呼救将引来全员围观导致身份曝光，而对方动粗同样害怕惊动别人",
-        "meeting_reason": "后半夜熄灯后，全馆只剩地炉微温，三人在走廊转角狭路相逢",
-        "irreplaceable_goal": "在不交出磁带的前提下，换得一处可以避风过夜的暖阁"
+        "resource_gap": "{keeper_chizuru.name}掌着全馆客房钥匙与炭火配额，你只是付不出全额房费、靠帮工抵账的滞留住客",
+        "limit_gap": "凌晨一点前必须赶在巡夜老仆经过前离开风吕",
+        "meeting_reason": "清池落锁后你帮着去露天风吕收木桶，{keeper_chizuru.name}却反手扣上了木廊门栓",
+        "irreplaceable_goal": "你想求{keeper_chizuru.name}往你房里多拨一篓红炭，更想在雾气散尽前抱紧这具温热身体"
       },
       "relations": [
         {
           "a": "player",
           "b": "keeper_chizuru",
-          "stage": "stranger",
+          "stage": "intimate",
           "a_to_b": {
-            "trust": 0,
-            "tension": 2
+            "trust": 3,
+            "tension": 4
           },
           "b_to_a": {
-            "trust": 0,
-            "tension": 2
+            "trust": 4,
+            "tension": 4
           },
-          "reason": "{keeper_chizuru.name}怀疑你住通铺是为了偷看客簿和账目"
-        },
+          "reason": "上回债主带人深夜砸门讨债，你帮{keeper_chizuru.name}顶住后门木栓，脱险后两人在账房暗格的被褥里紧紧相拥亲吻"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "combo_fugitive_snow_solo",
+      "power_structure": "npc_high",
+      "player_positions": [
+        "low"
+      ],
+      "identity_ids": [
+        "undercover_stringer",
+        "retired_mechanic"
+      ],
+      "slots": [
+        "fugitive_sosuke"
+      ],
+      "tension_engine_ids": [
+        "te_fuel_strife",
+        "te_predator_prey"
+      ],
+      "chemistry": "后库冷藏间内侧堆着厚麻袋，{fugitive_sosuke.name}用身体挡住风口，把唯一一只怀炉塞进你冻僵的衣襟里。",
+      "stakes": {
+        "resource_gap": "{fugitive_sosuke.name}熟知整条后山盲道与藏匿的干粮，你只是手无寸铁、随时会被清出主屋的底层住客",
+        "limit_gap": "下半夜暴风雪压顶前必须决定跟不跟对方转移藏身处",
+        "meeting_reason": "你半夜去后库找热水，{fugitive_sosuke.name}从货架暗影里伸手把你拉进了内侧隔间",
+        "irreplaceable_goal": "你想拿到后山出逃的路线图，又舍不得推开{fugitive_sosuke.name}滚烫的胸膛"
+      },
+      "relations": [
         {
           "a": "player",
           "b": "fugitive_sosuke",
-          "stage": "stranger",
+          "stage": "flirting",
           "a_to_b": {
-            "trust": 0,
-            "tension": 3
+            "trust": 3,
+            "tension": 4
           },
           "b_to_a": {
-            "trust": 0,
-            "tension": 3
+            "trust": 3,
+            "tension": 4
           },
-          "reason": "{fugitive_sosuke.name}察觉到你在暗处偷看{fugitive_sosuke.ta}靴筒里藏的刀"
-        },
-        {
-          "a": "keeper_chizuru",
-          "b": "fugitive_sosuke",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 2
-          },
-          "reason": "两人私下有约：{fugitive_sosuke.name}替{keeper_chizuru.name}震慑不守规矩的住客，换一间不登记的单间与热食"
+          "reason": "{fugitive_sosuke.name}把登山冰镐的皮腕带系在你手腕上，低声说“要是山道封了，我背也把你背过岭去”"
         }
       ],
-      "tags": [
-        "workplace_power"
-      ]
+      "tags": []
     },
     {
-      "id": "combo_steamy_blackmail",
-      "power_structure": "switchable",
+      "id": "combo_photographer_solo",
+      "power_structure": "equal",
       "player_positions": [
         "equal"
       ],
@@ -1434,71 +1447,81 @@
         "runaway_lover"
       ],
       "slots": [
-        "photographer_ritsu",
-        "lady_maya"
+        "photographer_ritsu"
       ],
       "tension_engine_ids": [
         "te_semi_nude_exposure",
-        "te_thermal_hunger"
+        "te_predator_prey"
       ],
-      "chemistry": "更衣室里水汽滚烫，{photographer_ritsu.name}用擦头发的毛巾遮着手里的相机，镜头正对着{lady_maya.name}的手提箱扣锁。{lady_maya.name}发丝湿透地挡在皮箱前，惊恐与羞愤交加，而你恰好掀开麻帘走进来。",
+      "chemistry": "二楼走廊尽头的暗角里，{photographer_ritsu.name}举起未装胶卷的取景框对准你，呼吸隔着相机金属机身贴近你的唇角。",
       "stakes": {
-        "resource_gap": "{lady_maya.name}有巨额现金，{photographer_ritsu.name}有能曝光丑闻的相机，你有一箱价值连城的首饰",
-        "limit_gap": "谁也不能在更衣室大声喧哗，否则引来老仆清场，所有人的秘密都会被摆上台面",
-        "meeting_reason": "午夜换帘前最后一批进汤擦洗身子",
-        "irreplaceable_goal": "在彼此都抓着对方把柄的尴尬里，谈出一个三方都能接受的平衡"
+        "resource_gap": "{photographer_ritsu.name}手里握着进山以来的全套街拍底片，你知道对方冒用记者证混进别馆的底细",
+        "limit_gap": "熄灯钟敲响前要把洗好的相纸从更衣室水槽里收走",
+        "meeting_reason": "你借口借用火柴在二楼走廊尽头停步，{photographer_ritsu.name}正靠在窗框边等你",
+        "irreplaceable_goal": "你想让{photographer_ritsu.name}把拍到你的那张底片单独留给你，顺便把人拉进客房被炉里"
       },
       "relations": [
         {
           "a": "player",
           "b": "photographer_ritsu",
-          "stage": "acquainted",
+          "stage": "flirting",
           "a_to_b": {
-            "trust": 1,
-            "tension": 1
+            "trust": 3,
+            "tension": 4
           },
           "b_to_a": {
-            "trust": 1,
-            "tension": 2
+            "trust": 3,
+            "tension": 4
           },
-          "reason": "同在时尚圈边缘混过，知道对方不是安分守己的人"
-        },
-        {
-          "a": "player",
-          "b": "lady_maya",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 0,
-            "tension": 2
-          },
-          "reason": "{lady_maya.name}看出你随身的首饰并非凡品，担心你是商社派来的眼线"
-        },
-        {
-          "a": "photographer_ritsu",
-          "b": "lady_maya",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 0,
-            "tension": 3
-          },
-          "b_to_a": {
-            "trust": 0,
-            "tension": 3
-          },
-          "reason": "{photographer_ritsu.name}手里捏着{lady_maya.name}出逃前夜的偷拍底片"
+          "reason": "入冬头一场雪那晚，{photographer_ritsu.name}把镜头盖扣在你手心里，说“这卷胶片最后一格只留给你一个人”"
         }
       ],
-      "tags": [
-        "infidelity"
-      ]
+      "tags": []
     },
     {
-      "id": "combo_cold_embrace",
+      "id": "combo_doctor_solo",
       "power_structure": "equal",
+      "player_positions": [
+        "equal"
+      ],
+      "identity_ids": [
+        "runaway_lover"
+      ],
+      "slots": [
+        "doctor_shinsuke"
+      ],
+      "tension_engine_ids": [
+        "te_thermal_hunger",
+        "te_fuel_strife"
+      ],
+      "chemistry": "椿之室的被炉掀开一角，{doctor_shinsuke.name}用温过药酒的手掌贴上你冰凉的后腰，屋里弥漫着苦艾与梅酒的香气。",
+      "stakes": {
+        "resource_gap": "{doctor_shinsuke.name}随身带着全馆仅有的镇痛药箱，你替对方保管着那本不能见光的旧病历",
+        "limit_gap": "半夜寒潮最冷的两个钟头里必须守着这一炉炭火",
+        "meeting_reason": "围炉散场后，{doctor_shinsuke.name}拎着药箱随你走进二楼椿之室",
+        "irreplaceable_goal": "你想替{doctor_shinsuke.name}守住旧病历的秘密，也想在被炉里独享这份久违的安稳"
+      },
+      "relations": [
+        {
+          "a": "player",
+          "b": "doctor_shinsuke",
+          "stage": "committed",
+          "a_to_b": {
+            "trust": 4,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 4,
+            "tension": 4
+          },
+          "reason": "乘末班巴士逃进深山那天，{doctor_shinsuke.name}把两人的车票折进同一只旧怀表壳里，说好不到开春绝不分开"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "combo_lady_solo",
+      "power_structure": "player_high",
       "player_positions": [
         "high"
       ],
@@ -1506,75 +1529,249 @@
         "stranded_auditor"
       ],
       "slots": [
-        "lady_maya",
-        "singer_ayane"
+        "lady_maya"
       ],
       "tension_engine_ids": [
-        "te_thermal_hunger",
+        "te_predator_prey",
         "te_semi_nude_exposure"
       ],
-      "chemistry": "二楼椿之室的水管彻底冻裂，室温逼近零下，{lady_maya.name}与{singer_ayane.name}冻得受不了，裹着单衣敲响了你那间唯一还有一盆暗炭的客房。三人在狭小和室里各裹一床被子挤坐，谁也说不清黑暗里那些试探是为了取暖，还是为了摸清彼此的底细。",
+      "chemistry": "桧木更衣室的竹帘拉下之后，{lady_maya.name}拢着松散的丝绸内衬坐在妆台边，仰头看你手里的资产清册。",
       "stakes": {
-        "resource_gap": "你有全馆最暖和的一盆暗炭与干净被褥，两人只有单薄的浴衣和各自的秘密",
-        "limit_gap": "若任由人在门外冻出好歹，清算会变成人命官司；若开门纳人，公文包里的账本就藏不住了",
-        "meeting_reason": "深夜全馆断电断暖，严寒逼着落单的人寻找热源",
-        "irreplaceable_goal": "熬过这一夜，同时守住公文包里的秘密"
+        "resource_gap": "你是握着破产追索签字权的信贷审查员，{lady_maya.name}是背着私逃账目躲进深山的富商家眷",
+        "limit_gap": "明早电话线抢通前必须定下审查报告的措辞",
+        "meeting_reason": "晚间清池换帘前，你拿着清册在更衣室隔间拦住了正要宽衣的{lady_maya.name}",
+        "irreplaceable_goal": "你想在报告里替{lady_maya.name}隐去那箱私房细软，让对方心甘情愿留在你房里避风头"
       },
       "relations": [
         {
           "a": "player",
           "b": "lady_maya",
-          "stage": "stranger",
+          "stage": "intimate",
           "a_to_b": {
-            "trust": 0,
-            "tension": 2
+            "trust": 3,
+            "tension": 4
           },
           "b_to_a": {
-            "trust": 0,
-            "tension": 3
+            "trust": 4,
+            "tension": 4
           },
-          "reason": "{lady_maya.name}随身带着的商社印鉴，正是你这次进山要追查的资产"
-        },
+          "reason": "上个月查封东京本宅那晚，你在衣帽间暗门后替{lady_maya.name}瞒过了搜查队，脚步走远后两人贴在丝绒帘后失控热吻"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "combo_singer_solo",
+      "power_structure": "player_high",
+      "player_positions": [
+        "high"
+      ],
+      "identity_ids": [
+        "stranded_auditor"
+      ],
+      "slots": [
+        "singer_ayane"
+      ],
+      "tension_engine_ids": [
+        "te_thermal_hunger",
+        "te_fuel_strife"
+      ],
+      "chemistry": "一楼围炉间的炭火映红了半边榻榻米，{singer_ayane.name}把温好的清酒盏递到你唇边，膝头紧挨着你的西装裤管。",
+      "stakes": {
+        "resource_gap": "你住着全馆唯一不断炭的二楼上房，{singer_ayane.name}只是因雪灾滞留、挤在通铺角落的驻唱歌手",
+        "limit_gap": "十一点地炉封炭前要决定带不带对方回二楼过夜",
+        "meeting_reason": "众人回房后你独自留在围炉间烤火，{singer_ayane.name}抱着吉他坐到了你身旁",
+        "irreplaceable_goal": "你想把{singer_ayane.name}带回暖和的椿之室过夜，听对方只为你一个人哼那首老歌"
+      },
+      "relations": [
         {
           "a": "player",
           "b": "singer_ayane",
-          "stage": "acquainted",
+          "stage": "flirting",
           "a_to_b": {
-            "trust": 1,
-            "tension": 1
+            "trust": 3,
+            "tension": 4
           },
           "b_to_a": {
-            "trust": 1,
-            "tension": 2
+            "trust": 3,
+            "tension": 4
           },
-          "reason": "{singer_ayane.name}曾在你经手审查的一家歌厅驻唱，知道你私生活里的一些软肋"
-        },
-        {
-          "a": "lady_maya",
-          "b": "singer_ayane",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 0,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 1
-          },
-          "reason": "{lady_maya.name}看不起{singer_ayane.name}的轻浮作风，{singer_ayane.name}则暗讽对方豪门失宠的狼狈"
+          "reason": "前天夜里停电，{singer_ayane.name}摸黑把一枚拨片塞进你西装口袋，说“二楼要是太冷，随时叫我上来暖炉子”"
         }
       ],
-      "tags": [
-        "coercion_theme"
-      ]
+      "tags": []
     },
     {
-      "id": "combo_life_or_honor",
+      "id": "combo_keeper_high_solo",
       "power_structure": "player_high",
       "player_positions": [
-        "low"
+        "high"
       ],
       "identity_ids": [
+        "stranded_auditor"
+      ],
+      "slots": [
+        "keeper_chizuru"
+      ],
+      "tension_engine_ids": [
+        "te_fuel_strife",
+        "te_predator_prey"
+      ],
+      "chemistry": "{keeper_chizuru.name}跪坐在椿之室的被炉对面替你斟茶，原本盘得一丝不苟的发髻在热气里松散下来。",
+      "stakes": {
+        "resource_gap": "你手里握着整座别馆抵押展期的签批权，{keeper_chizuru.name}正为亡夫留下的三千万日元烂账焦头烂额",
+        "limit_gap": "大雪封山结束前必须签下展期协定，否则别馆开春就要易主",
+        "meeting_reason": "夜深后{keeper_chizuru.name}亲自端着宵夜与旧账册走进你的椿之室请求展期",
+        "irreplaceable_goal": "你想帮{keeper_chizuru.name}保住这座祖传别馆，也想让这位强撑门面的若女将在你怀里卸下防备"
+      },
+      "relations": [
+        {
+          "a": "player",
+          "b": "keeper_chizuru",
+          "stage": "familiar",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 3
+          },
+          "reason": "连续三年冬天你都来这家别馆核账小住，{keeper_chizuru.name}记得你泡汤后只喝焙茶，连木屐都替你单独收在暖阁"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "combo_singer_switch_solo",
+      "power_structure": "switchable",
+      "player_positions": [
+        "low",
+        "equal",
+        "high"
+      ],
+      "identity_ids": [
+        "stranded_auditor",
+        "runaway_lover",
+        "undercover_stringer"
+      ],
+      "slots": [
+        "singer_ayane"
+      ],
+      "tension_engine_ids": [
+        "te_semi_nude_exposure",
+        "te_thermal_hunger"
+      ],
+      "chemistry": "露天风吕边的水雾模糊了竹篱，{singer_ayane.name}趴在池沿微仰着湿漉漉的脖颈，似笑非笑地问你敢不敢过来同泡。",
+      "stakes": {
+        "resource_gap": "{singer_ayane.name}认识城里半数名流酒客的底细，你手里有下山后能帮对方洗清违约官司的门路",
+        "limit_gap": "午夜换帘前只剩最后二十分钟独处时间",
+        "meeting_reason": "你趁风雪稍歇去露天风吕泡汤，发现{singer_ayane.name}正独自一人浸在热泉里",
+        "irreplaceable_goal": "你想探出{singer_ayane.name}藏在歌谱夹层里的秘密，又想在这池热汤里试探对方的真心"
+      },
+      "relations": [
+        {
+          "a": "player",
+          "b": "singer_ayane",
+          "stage": "testing",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 4
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 4
+          },
+          "reason": "昨晚打牌散局时，{singer_ayane.name}把一张红桃皇后反扣在你手背下，笑着问“今晚去露天池，你敢不敢赴约”"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "combo_onsen_photo_leverage",
+      "power_structure": "switchable",
+      "player_positions": [
+        "low",
+        "equal",
+        "high"
+      ],
+      "identity_ids": [
+        "stranded_auditor",
+        "runaway_lover",
+        "undercover_stringer"
+      ],
+      "slots": [
+        "photographer_ritsu",
+        "lady_maya"
+      ],
+      "tension_engine_ids": [
+        "te_predator_prey",
+        "te_semi_nude_exposure"
+      ],
+      "chemistry": "{lady_maya.name}前半夜已经先躲进你房里哭求你出面保命，你干脆反锁了椿之室的拉门，把{photographer_ritsu.name}叫进被炉前当面开价。",
+      "stakes": {
+        "resource_gap": "{photographer_ritsu.name}握着拍下烧毁金条清单的未洗胶卷，{lady_maya.name}带着私逃的细软，而房门钥匙与最终裁夺权都在你手里",
+        "limit_gap": "明早八点显影罐开封前必须定下这卷底片的归属",
+        "meeting_reason": "{lady_maya.name}被拍下把柄后第一时间跑来投奔你，你设局将{photographer_ritsu.name}约进椿之室三方摊牌",
+        "irreplaceable_goal": "你想替{lady_maya.name}截下那卷要命的胶卷，又要把{photographer_ritsu.name}也拉进你们的同盟里"
+      },
+      "relations": [
+        {
+          "a": "player",
+          "b": "lady_maya",
+          "stage": "intimate",
+          "a_to_b": {
+            "trust": 4,
+            "tension": 4
+          },
+          "b_to_a": {
+            "trust": 4,
+            "tension": 4
+          },
+          "reason": "昨晚走廊突然断电，追查的杂役提棍经过门外时，你在黑暗里把{lady_maya.name}抱进壁橱深处，两人屏息紧贴着吻在一起"
+        },
+        {
+          "a": "player",
+          "b": "photographer_ritsu",
+          "stage": "flirting",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 4
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 4
+          },
+          "reason": "{photographer_ritsu.name}冲印雪景时挑出一张你在廊下回眸的偷拍照夹进你书页里，背面写着“底片归我，人归你”"
+        },
+        {
+          "a": "photographer_ritsu",
+          "b": "lady_maya",
+          "stage": "testing",
+          "a_to_b": {
+            "trust": 2,
+            "tension": 4
+          },
+          "b_to_a": {
+            "trust": 2,
+            "tension": 4
+          },
+          "reason": "{photographer_ritsu.name}拍下了{lady_maya.name}往炭盆里塞私逃金条清单的底片，两人彼此试探谁也不肯先退让"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "combo_onsen_medicine_leverage",
+      "power_structure": "switchable",
+      "player_positions": [
+        "low",
+        "equal",
+        "high"
+      ],
+      "identity_ids": [
+        "stranded_auditor",
+        "runaway_lover",
         "retired_mechanic"
       ],
       "slots": [
@@ -1583,134 +1780,60 @@
       ],
       "tension_engine_ids": [
         "te_fuel_strife",
-        "te_predator_prey"
+        "te_thermal_hunger"
       ],
-      "chemistry": "发电机气缸爆燃彻底停摆，冰霜迅速在走廊蔓延。{keeper_chizuru.name}和{doctor_shinsuke.name}打着手电筒跌跌撞撞奔进后库。{keeper_chizuru.name}手里攥着私汤的木栓钥匙，{doctor_shinsuke.name}手里托着一支镇痛针剂，两人围在满手油污的你身旁，各自开价。",
+      "chemistry": "大雪封山第一晚你们三人就私下立过互换柴油与药品的密约，如今后库油桶见底，{keeper_chizuru.name}与{doctor_shinsuke.name}按约定聚在更衣室等你拿主意。",
       "stakes": {
-        "resource_gap": "发电机能不能重启，只看你手里的管钳和手艺；两人只有拿来交换的特权物件",
-        "limit_gap": "机组受损严重，剩下的燃油只够低速运转三小时，满足不了暖气泵和药品保温箱两头",
-        "meeting_reason": "深夜断电引发失温恐慌，发电机告急",
-        "irreplaceable_goal": "用自己无可替代的手艺，为自己在别馆争到最核心的生存保障"
+        "resource_gap": "{keeper_chizuru.name}扣着私换柴油的亲笔字据，{doctor_shinsuke.name}掌着全馆救命的镇痛药箱，而当初做保牵线的人正是你",
+        "limit_gap": "晚十点围炉盘点前必须把后库少掉的两桶油平上账",
+        "meeting_reason": "按你们三人封山初夜定下的规矩，一旦后库账面瞒不住，就在晚间清池前到更衣室暗角秘密碰头",
+        "irreplaceable_goal": "你想护住{doctor_shinsuke.name}的药箱不被充公，又要替{keeper_chizuru.name}稳住别馆住客的人心"
       },
       "relations": [
         {
           "a": "player",
           "b": "keeper_chizuru",
-          "stage": "acquainted",
+          "stage": "intimate",
           "a_to_b": {
-            "trust": 0,
-            "tension": 2
+            "trust": 4,
+            "tension": 4
           },
           "b_to_a": {
-            "trust": 1,
-            "tension": 2
+            "trust": 4,
+            "tension": 4
           },
-          "reason": "{keeper_chizuru.name}拖欠了你上个季度的抢修工钱，此刻却不得不低头求你"
+          "reason": "前夜后山冰瀑震裂窗纸时，你在停电的账房里把受惊的{keeper_chizuru.name}揽进怀中，两人在余震里吻得难分难解"
         },
         {
           "a": "player",
           "b": "doctor_shinsuke",
-          "stage": "stranger",
+          "stage": "testing",
           "a_to_b": {
-            "trust": 0,
-            "tension": 1
+            "trust": 3,
+            "tension": 3
           },
           "b_to_a": {
-            "trust": 1,
-            "tension": 2
+            "trust": 3,
+            "tension": 4
           },
-          "reason": "{doctor_shinsuke.name}的药品要靠电力保温，对你的进度寸步不离"
+          "reason": "上次你在雪地里扭伤脚踝，{doctor_shinsuke.name}揉药酒时握住你的脚腕没放，低声问“开春下山后，你还记不记得我”"
         },
         {
           "a": "keeper_chizuru",
           "b": "doctor_shinsuke",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 0,
-            "tension": 2
-          },
-          "reason": "{keeper_chizuru.name}在{doctor_shinsuke.name}进馆时扣下了两支针剂作为押金"
-        }
-      ],
-      "tags": [
-        "workplace_power"
-      ]
-    },
-    {
-      "id": "combo_fugitive_conspiracy",
-      "power_structure": "equal",
-      "player_positions": [
-        "equal"
-      ],
-      "identity_ids": [
-        "runaway_lover"
-      ],
-      "slots": [
-        "lady_maya",
-        "fugitive_sosuke"
-      ],
-      "tension_engine_ids": [
-        "te_thermal_hunger",
-        "te_predator_prey"
-      ],
-      "chemistry": "{lady_maya.name}在后库角落拦住了{fugitive_sosuke.name}，一个手里攥着钞票，一个背包里压着金条，低语声在冷气里凝成白雾。你端着空米桶推门进来，两人同时住了口。",
-      "stakes": {
-        "resource_gap": "{lady_maya.name}有出逃的钱，{fugitive_sosuke.name}有破雪开路的力气和刀",
-        "limit_gap": "两人都不敢让别馆其他人知道这个联手出逃的计划",
-        "meeting_reason": "暗中商量合力破开山道的脱身方案时被你撞见",
-        "irreplaceable_goal": "在两人互相猜忌的缝隙里，为自己挣到一个下山的位置"
-      },
-      "relations": [
-        {
-          "a": "player",
-          "b": "lady_maya",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 1
-          },
-          "reason": "你给{lady_maya.name}改过礼服，知道对方在豪门里的真实处境"
-        },
-        {
-          "a": "player",
-          "b": "fugitive_sosuke",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 0,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 0,
-            "tension": 2
-          },
-          "reason": "{fugitive_sosuke.name}冷眼警告过你不要多管闲事"
-        },
-        {
-          "a": "lady_maya",
-          "b": "fugitive_sosuke",
           "stage": "testing",
           "a_to_b": {
-            "trust": 1,
-            "tension": 2
+            "trust": 2,
+            "tension": 4
           },
           "b_to_a": {
-            "trust": 1,
-            "tension": 2
+            "trust": 2,
+            "tension": 4
           },
-          "reason": "两人在山下早有勾连，正互相试探对方是否留了后手"
+          "reason": "{keeper_chizuru.name}握着{doctor_shinsuke.name}用备用柴油私抵镇痛剂的字据，两人在燃料与药品上互相拿捏"
         }
       ],
-      "tags": [
-        "crime"
-      ]
+      "tags": []
     }
   ],
   "daily_activities": [
@@ -1812,54 +1935,92 @@
       "hook_ids": [],
       "start_minute": 720,
       "tags": []
+    },
+    {
+      "id": "act_yukata_drying",
+      "title": "更衣室烘烤半湿浴衣",
+      "location_ids": [
+        "onsen_changing"
+      ],
+      "duration_minutes": 45,
+      "start_minute": 1290,
+      "tags": [],
+      "hook_ids": [],
+      "beats": [
+        "竹编烘笼下炭火微红，半湿的棉麻浴衣烤出淡淡的皂角与硫磺味",
+        "两人隔着雾气氤氲的竹帘并排坐着，替对方理顺衣领后背的褶皱",
+        "走廊外风雪拍打木格窗，烘暖的腰带在指间一圈圈卷紧"
+      ]
+    },
+    {
+      "id": "act_plum_wine_warming",
+      "title": "二楼客房温酒夜话",
+      "location_ids": [
+        "annex_guestroom"
+      ],
+      "duration_minutes": 60,
+      "start_minute": 1350,
+      "tags": [],
+      "hook_ids": [],
+      "beats": [
+        "椿之室的被炉盖毯下暖意融融，小铜壶里的陈年梅酒冒起细碎热泡",
+        "两双赤足在被炉深处不经意相触，谁都没有往回缩",
+        "窗外杉树枝头的积雪轰然滑落，屋里只剩浅浅的斟酒声"
+      ]
     }
   ],
   "pressures": [
     {
       "id": "p_generator_shutdown",
-      "title": "柴油见底",
-      "source": "nature",
+      "title": "镇痛剂的私账",
+      "source": "person",
       "flags": [
-        "timed"
+        "timed",
+        "leverage"
       ],
       "location_ids": [
-        "hearth_lounge",
-        "kitchen_storage"
+        "kitchen_storage",
+        "hearth_lounge"
       ],
-      "trigger": "发电机的油只够撑最后半小时，全馆即将失去照明与水泵供水。",
-      "objective": "在全馆陷入冰窖之前，决定剩下的燃油给谁用。",
-      "choice": "把燃油集中维持公共地炉与温泉循环，还是配给重症客房做电热取暖？",
+      "trigger": "{keeper_chizuru.name}盘点后库时翻出{doctor_shinsuke.name}用两桶备用柴油私抵镇痛剂的签名字据",
+      "objective": "在晚间围炉查账前压下这张字据",
+      "choice": "劝{keeper_chizuru.name}锁回字据，还是替{doctor_shinsuke.name}补上柴油亏空",
       "immediate": {
-        "text": "发电机气缸发出剧烈爆鸣，照明灯泡开始泛红闪烁。",
-        "minutes": 15
+        "text": "{keeper_chizuru.name}捏着字据站在后库门内叫你进去",
+        "minutes": 25
       },
       "near": {
-        "text": "水泵停转，露天风吕水温开始每十分钟下滑一度。",
-        "deadline_minutes": 60
+        "text": "晚十点围炉对账，少两桶油就要全馆彻查",
+        "deadline_minutes": 180
       },
       "far": {
-        "trigger": "午夜气温跌破零下十五度",
-        "consequence": "全馆管道冻结爆裂，彻底失去内部热源。",
-        "due_days": 1
+        "trigger": "开春山道解封清算",
+        "consequence": "私换管制药剂曝光，旧案被翻出",
+        "due_days": 7
       },
       "exits": [
         {
-          "option": "拿出私藏的高标号柴油换全员供暖一小时",
-          "cost": "交出自己最后的逃生底牌，并被全员怀疑还藏着更多"
+          "option": "签字替{doctor_shinsuke.name}担下耗油",
+          "cost": "你的房费押金全数扣作燃料赔付"
         },
         {
-          "option": "支持关闭客房供电，全员搬到地炉边打地铺",
-          "cost": "失去私密空间，随身行李暴露在所有人眼皮底下"
-        },
-        {
-          "option": "放任断电，各自裹着棉被硬扛",
-          "cost": "体弱的人会迅速失温，天亮时可能出现伤亡"
+          "option": "求{keeper_chizuru.name}把字据收进暗格",
+          "cost": "你要连着三晚替别馆守后半夜地炉"
         }
       ],
-      "leverage": null,
-      "hook_ids": [],
-      "start_minute": 1365,
-      "tags": []
+      "leverage": {
+        "holder": "keeper_chizuru",
+        "subject": "doctor_shinsuke",
+        "basis": "{keeper_chizuru.name}握着{doctor_shinsuke.name}用备用柴油私抵镇痛剂的签名字据"
+      },
+      "hook_ids": [
+        "h_wet_yukata",
+        "h_hearth_seat"
+      ],
+      "start_minute": 1260,
+      "tags": [
+        "coercion_theme"
+      ]
     },
     {
       "id": "p_onsen_midnight_lock",
@@ -1909,48 +2070,55 @@
     },
     {
       "id": "p_ledger_burn",
-      "title": "火盆里的账本",
+      "title": "火盆边的暗袋底片",
       "source": "person",
       "flags": [
-        "timed"
+        "timed",
+        "leverage"
       ],
       "location_ids": [
-        "hearth_lounge"
+        "hearth_lounge",
+        "annex_guestroom"
       ],
-      "trigger": "借着围炉添炭的混乱，有人正把抵押卷宗的一角缓缓探向通红的炭火。",
-      "objective": "在关键的抵押单据化为灰烬之前拦下来，或者谈出一个妥协。",
-      "choice": "当场喝止夺回账本，还是借机向对方要一笔更大的让步？",
+      "trigger": "{photographer_ritsu.name}拍下了{lady_maya.name}趁人不备往地炉炭火里塞私逃金条清单的一幕",
+      "objective": "在明早底片显影前把那卷胶卷截下来",
+      "choice": "劝{photographer_ritsu.name}交出胶卷，还是带{lady_maya.name}去椿之室当面买断底片",
       "immediate": {
-        "text": "纸张边缘已经发黄卷曲，焦糊味在围炉间弥漫开来。",
-        "minutes": 5
+        "text": "{photographer_ritsu.name}晃了晃手里的暗盒往二楼走去",
+        "minutes": 20
       },
       "near": {
-        "text": "整份抵押存根即将烧穿盖着印鉴的那一页。",
-        "deadline_minutes": 15
+        "text": "明早八点显影罐开封，底片洗出就再难收场",
+        "deadline_minutes": 600
       },
       "far": {
-        "trigger": "天亮后山下的清算程序启动",
-        "consequence": "缺了原始凭证，借据彻底失效，别馆产权成了一笔无头死账。",
-        "due_days": 2
+        "trigger": "山道通车后周刊发稿",
+        "consequence": "私藏金条照片见报，债主找上门",
+        "due_days": 5
       },
       "exits": [
         {
-          "option": "赤手冲上前把纸页从火里拍打抢出",
-          "cost": "手掌烫伤，且当众和女将撕破脸"
+          "option": "替{lady_maya.name}出面赎回那卷未洗胶卷",
+          "cost": "你得把自己的独家内幕让给对方"
         },
         {
-          "option": "压低声音提出用沉默换私藏物资与暖房",
-          "cost": "成了渎职的共谋，留下一个永远会被拿来要挟的把柄"
-        },
-        {
-          "option": "任由其烧毁，暗中用录音机录下对方焚证时的自白",
-          "cost": "失去纸质原件，日后举证要花上加倍的代价"
+          "option": "把两人约进椿之室当面立下封口字据",
+          "cost": "三个人从此被同一桩丑闻绑在一处"
         }
       ],
-      "leverage": null,
-      "hook_ids": [],
-      "start_minute": 1410,
-      "tags": []
+      "leverage": {
+        "holder": "photographer_ritsu",
+        "subject": "lady_maya",
+        "basis": "{photographer_ritsu.name}拍下了{lady_maya.name}往炭火里销毁金条清单的底片"
+      },
+      "hook_ids": [
+        "h_darkroom_request",
+        "h_steam_accident"
+      ],
+      "start_minute": 1380,
+      "tags": [
+        "coercion_theme"
+      ]
     },
     {
       "id": "p_hypothermia_room",
@@ -2001,7 +2169,7 @@
     {
       "id": "p_theft_investigation",
       "title": "首饰失窃",
-      "source": "money",
+      "source": "rumor",
       "flags": [
         "timed"
       ],
@@ -2011,7 +2179,7 @@
       ],
       "trigger": "一枚贵重胸针不翼而飞，巡道杂役手持铁棍堵死大门，宣布封馆清查。",
       "objective": "在清查演变成流血冲突前找到去向，或化解对峙。",
-      "choice": "接受当众翻检行李，还是联合其他被怀疑的人硬顶回去？",
+      "choice": "接受当众翻检行李，还是联合其余被怀疑的人硬顶回去？",
       "immediate": {
         "text": "杂役已经开始粗暴地翻倒通铺客人的行囊，嚷着要所有人把包打开。",
         "minutes": 15
@@ -2072,7 +2240,7 @@
       },
       "exits": [
         {
-          "option": "合力用粗木枝撬开一条仅容一人侧身钻出的石缝",
+          "option": "合力用粗木枝撑开一条仅容一人侧身钻出的石缝",
           "cost": "被碎冰和岩石划得满身是伤，湿衣冻在身上，回到主楼时已冻得说不出话"
         },
         {

@@ -73,7 +73,7 @@
    "function": "rumor_source",
    "gender": "any",
    "id": "bg_hiding_steward",
-   "line": "{npc.name}缩在碎酒桶堆里发抖，说若头开火前跟关西通过电话，说只要大小姐一死，关东就归他们。",
+   "line": "{npc.name}缩在碎酒桶堆里发抖，说若头开火前跟关西通过电话，说一旦大小姐在公海出事，关东航线就改姓关西了。",
    "location_ids": [
     "yacht_main_deck_owners_stateroom"
    ],
@@ -99,8 +99,231 @@
  ],
  "cast_combos": [
   {
-   "chemistry": "你的契约只写了一句话：保{yakuza_heiress_akaho.name}平安到岸。整艘船上只有你不必听任何人的命令，{family_doctor_morita.name}却在等你一句话，决定先救谁。",
-   "id": "combo_ronin_contract",
+   "chemistry": "人前是第四代继承人与随时准备断指尽忠的下属；锁上门，你是唯一敢直呼其名、替对方宽衣包扎的人。",
+   "id": "combo_akaho_stateroom_oath",
+   "identity_ids": [
+    "sworn_bodyguard"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 4
+     },
+     "b": "yakuza_heiress_akaho",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "去年新宿总部遇袭，你替大小姐挡下暗器，在安全屋独处一宿，对方用黑色甲油在你肋侧旧疤上画了道记号，说这条命归你管",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "yakuza_heiress_akaho"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "替大小姐包好伤，守住今晚谁也不能知道的事。",
+    "limit_gap": "家规压在头上，保镖越界一步，天亮后就要断指谢罪。",
+    "meeting_reason": "换防的哨声过后，{yakuza_heiress_akaho.name}让你锁上避难室的门，把急救箱推到你脚边。",
+    "resource_gap": "{yakuza_heiress_akaho.name}握着整个龙神会和你的去留，你只有一把枪和对方许给你的那句话。"
+   },
+   "tags": [
+    "intimate",
+    "violence"
+   ],
+   "tension_engine_ids": [
+    "te_rank_vs_trust",
+    "te_wound_and_fever"
+   ]
+  },
+  {
+   "chemistry": "安保若头与船上的基层随员，彼此心知今晚船上要变天，正互相试探筹码。",
+   "id": "combo_shibata_corridor_probe",
+   "identity_ids": [
+    "sworn_bodyguard",
+    "ship_galley_cook"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "traitor_lieutenant_shibata",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "出航前在横滨船坞点货，你无意间替若头压下了一箱没登记的军火单据，对方今晚想用一笔巨款买你装聋作哑",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "traitor_lieutenant_shibata"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "摸清若头的同党和动手时间，又不让对方看出你的立场。",
+    "limit_gap": "收了若头的钱就是背叛九条家，不收就可能活不到天亮。",
+    "meeting_reason": "{traitor_lieutenant_shibata.name}在轮机走廊拦住你，递过一支烟，问你今晚想不想换个东家。",
+    "resource_gap": "{traitor_lieutenant_shibata.name}握着半船安保和关西的钱，你只握着那箱没登记的军火单据。"
+   },
+   "tags": [
+    "crime",
+    "violence"
+   ],
+   "tension_engine_ids": [
+    "te_rank_vs_trust",
+    "te_door_siege"
+   ]
+  },
+  {
+   "chemistry": "白天在谈判桌上替大小姐执刀，入夜在当家套房里平分天下的秘密同盟。",
+   "id": "combo_akaho_equal_ledger",
+   "identity_ids": [
+    "tactical_navigator",
+    "undercover_secretary"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 4
+     },
+     "b": "yakuza_heiress_akaho",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "上月在热海别庄核对走私航线，大小姐屏退左右留你对饮，把家徽戒指套上你尾指，说整个本家只有你敢跟自己平起平坐",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "yakuza_heiress_akaho"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "一起定下清理若头的办法，再决定两人之间那句没说破的话。",
+    "limit_gap": "平起平坐只在这间屋里算数，出了门对方还是当家。",
+    "meeting_reason": "风浪渐起，{yakuza_heiress_akaho.name}在套房温好一壶酒，屏退左右，留你一个人对账。",
+    "resource_gap": "你握着关西航线的全部底牌，{yakuza_heiress_akaho.name}握着龙神会的金印。"
+   },
+   "tags": [
+    "intimate",
+    "workplace_power"
+   ],
+   "tension_engine_ids": [
+    "te_rank_vs_trust",
+    "te_storm_capsize"
+   ]
+  },
+  {
+   "chemistry": "同船值夜的幕僚与通讯长，共享加密频率和整船的监听底牌。",
+   "id": "combo_mashima_radio_cipher",
+   "identity_ids": [
+    "tactical_navigator",
+    "undercover_secretary"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "radio_officer_mashima",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "半个月来你每晚都去机房陪通讯长监听短波，昨晚对方把录着若头通敌的微型磁带塞进你烟盒，约好今晚交割",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "radio_officer_mashima"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "安全拿到磁带，并护住通讯长不被灭口。",
+    "limit_gap": "磁带离开机房的每一分钟，都可能被若头的人截住。",
+    "meeting_reason": "子夜过后，{radio_officer_mashima.name}用内线敲了三下，约你去机房门口交接。",
+    "resource_gap": "{radio_officer_mashima.name}握着若头私通外敌的录音，你握着能把录音送到大小姐面前的路。"
+   },
+   "tags": [
+    "intimate",
+    "crime"
+   ],
+   "tension_engine_ids": [
+    "te_door_siege",
+    "te_storm_capsize"
+   ]
+  },
+  {
+   "chemistry": "九条家老臣与随船幕僚，共同守着老当家死因的铁证，在船上彼此照应。",
+   "id": "combo_morita_cabin_remedy",
+   "identity_ids": [
+    "tactical_navigator",
+    "undercover_secretary"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 5
+     },
+     "b": "family_doctor_morita",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "两年前老当家暴毙那晚，你帮医生把毒理化验单藏进瑞士保险箱，两人立字据：继承人掌权前绝不启封",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
+    "family_doctor_morita"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "定下病历何时启封，交到谁手里。",
+    "limit_gap": "继承人还没掌稳权，病历现在启封，等于把医生推到若头枪口下。",
+    "meeting_reason": "{family_doctor_morita.name}提着药箱来套房换药，借关门的工夫低声叫住你。",
+    "resource_gap": "{family_doctor_morita.name}握着老当家的真实病历，你握着瑞士保险箱的钥匙和两人当年的字据。"
+   },
+   "tags": [
+    "crime"
+   ],
+   "tension_engine_ids": [
+    "te_wound_and_fever",
+    "te_rank_vs_trust"
+   ]
+  },
+  {
+   "chemistry": "重金礼聘的客卿剑客与三代老臣舵手，老人把船的航向和继承人的安危都托付在你刀下。",
+   "id": "combo_goro_wheelhouse_sakazuki",
    "identity_ids": [
     "hired_ronin_swordsman"
    ],
@@ -113,133 +336,71 @@
      "a": "player",
      "a_to_b": {
       "tension": 2,
-      "trust": 2
+      "trust": 4
      },
-     "b": "yakuza_heiress_akaho",
+     "b": "loyal_helmsman_goro",
      "b_to_a": {
       "tension": 3,
-      "trust": 1
-     },
-     "reason": "大小姐花钱雇你，却从不信你",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 2
-     },
-     "b": "family_doctor_morita",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 2
-     },
-     "reason": "医生替你缝过一次刀伤",
-     "stage": "acquainted"
-    },
-    {
-     "a": "yakuza_heiress_akaho",
-     "a_to_b": {
-      "tension": 1,
       "trust": 3
      },
-     "b": "family_doctor_morita",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "医生看着大小姐长大，大小姐只在医生面前不逞强",
+     "reason": "十年前北九州港口械斗，你一刀救下老舵手的命，这次正是对方力荐九条家重金请你登船",
      "stage": "familiar"
     }
    ],
    "slots": [
-    "yakuza_heiress_akaho",
-    "family_doctor_morita"
+    "loyal_helmsman_goro"
    ],
    "stakes": {
-    "irreplaceable_goal": "让大小姐活着上岸，而且是作为当家上岸。",
-    "limit_gap": "你一旦插手九条家的事就不再是局外人，大小姐一旦倒下龙神会就散了。",
-    "meeting_reason": "叛乱爆发时你正在主卧护卫，医生和大小姐都在身边。",
-    "resource_gap": "你有刀和契约，大小姐有密钥和戒指，医生有血浆和那份病历。"
+    "irreplaceable_goal": "接下老舵手的托付，定好今晚驾驶台和避难室怎么联络。",
+    "limit_gap": "老舵手只认九条家，你一句话下错，老人宁可撞礁也不听。",
+    "meeting_reason": "{loyal_helmsman_goro.name}从驾驶台递下话来，请你上去喝一杯敬酒。",
+    "resource_gap": "你握着契约和一把刀，{loyal_helmsman_goro.name}握着舵轮和九条家三代的规矩。"
    },
    "tags": [
-    "workplace_power",
-    "romance_light"
+    "workplace"
    ],
    "tension_engine_ids": [
-    "te_rank_vs_trust",
-    "te_wound_and_fever"
+    "te_storm_capsize",
+    "te_rank_vs_trust"
    ]
   },
   {
-   "chemistry": "{hammer_enforcer_goda.name}在门外一锤一锤地砸，{yakuza_heiress_akaho.name}靠在沙发上，命令你守住门。可门守不住了——你得决定是听命令守在这里，还是自己做主冲出去。",
-   "id": "combo_corridor_breakthrough",
+   "chemistry": "客卿剑客与安保冲锋队长：对方早被你的刀和气场折服，只要你一句话就能临阵倒戈。",
+   "id": "combo_goda_deck_standoff",
    "identity_ids": [
-    "hired_ronin_swordsman",
-    "tactical_navigator"
+    "hired_ronin_swordsman"
    ],
    "player_positions": [
-    "high",
-    "equal"
+    "high"
    ],
-   "power_structure": "switchable",
+   "power_structure": "player_high",
    "relations": [
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 2
-     },
-     "b": "yakuza_heiress_akaho",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 2
-     },
-     "reason": "共事多年，今夜第一次需要彼此",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 0
+      "tension": 4,
+      "trust": 3
      },
      "b": "hammer_enforcer_goda",
      "b_to_a": {
-      "tension": 3,
-      "trust": 0
+      "tension": 4,
+      "trust": 4
      },
-     "reason": "门两边的对手",
-     "stage": "stranger"
-    },
-    {
-     "a": "yakuza_heiress_akaho",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 0
-     },
-     "b": "hammer_enforcer_goda",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 0
-     },
-     "reason": "大小姐曾当众罚过巨汉",
-     "stage": "acquainted"
+     "reason": "登船头一天在后甲板比试，你三招挑飞冲锋队长的铁锤却留了对方体面，当晚对方拎着两瓶烈酒来赔罪",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "yakuza_heiress_akaho",
     "hammer_enforcer_goda"
    ],
    "stakes": {
-    "irreplaceable_goal": "在门倒下之前，把走廊变成自己的地盘。",
-    "limit_gap": "门一倒巨汉就会冲进来，你一出去避难室就没人守。",
-    "meeting_reason": "叛徒找到了避难室，派出了最能砸的人。",
-    "resource_gap": "巨汉有破拆锤和防弹背心，大小姐有命令权，你有刀或整艘船的蓝图。"
+    "irreplaceable_goal": "让冲锋队长今晚放下锤子，替你守住水密门。",
+    "limit_gap": "冲锋队长一倒戈，若头就知道你在船上收人。",
+    "meeting_reason": "{hammer_enforcer_goda.name}冒雨在后甲板等你，手里拎着两瓶烈酒。",
+    "resource_gap": "你握着契约和对方的敬服，{hammer_enforcer_goda.name}握着重锤和若头的命令。"
    },
    "tags": [
-    "violence",
-    "bodily_harm"
+    "violence"
    ],
    "tension_engine_ids": [
     "te_door_siege",
@@ -247,83 +408,10 @@
    ]
   },
   {
-   "chemistry": "{traitor_lieutenant_shibata.name}在门外倒数，{yakuza_heiress_akaho.name}在门内发着烧，还在用命令的口气说话。你是船上身份最低的人，可这一夜，门里门外两个人的命，都在你手上。",
-   "id": "combo_bodyguard_and_traitor",
+   "chemistry": "表面上各自值勤，私下是在电波暗流里互许退路的秘密恋人。",
+   "id": "combo_mashima_secret_tape",
    "identity_ids": [
-    "sworn_bodyguard"
-   ],
-   "player_positions": [
-    "low"
-   ],
-   "power_structure": "npc_high",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "yakuza_heiress_akaho",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "跟了这么多年，彼此都知道对方没说出口的话",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 0
-     },
-     "b": "traitor_lieutenant_shibata",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 0
-     },
-     "reason": "若头当年亲手教过你用刀",
-     "stage": "acquainted"
-    },
-    {
-     "a": "yakuza_heiress_akaho",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 0
-     },
-     "b": "traitor_lieutenant_shibata",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 0
-     },
-     "reason": "从小叫“叔叔”的人，今夜要自己的命",
-     "stage": "familiar"
-    }
-   ],
-   "slots": [
-    "yakuza_heiress_akaho",
-    "traitor_lieutenant_shibata"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "先让大小姐活下来，再让叛徒付出代价。",
-    "limit_gap": "门被炸开大小姐会被抓走，你违抗命令天亮后要按家规谢罪。",
-    "meeting_reason": "伏击之后，你把中弹的大小姐背进了避难室。",
-    "resource_gap": "若头有三十名枪手和炸药，大小姐有密钥，你只有一把匕首和一只急救箱。"
-   },
-   "tags": [
-    "violence",
-    "workplace_power"
-   ],
-   "tension_engine_ids": [
-    "te_door_siege",
-    "te_wound_and_fever"
-   ]
-  },
-  {
-   "chemistry": "船要翻了：{loyal_helmsman_goro.name}在驾驶室流血，{family_doctor_morita.name}在主卧缝针，{radio_officer_mashima.name}被锁在通讯室里。三个人各握着一样救命的东西，你得在天亮前把它们连起来。",
-   "id": "combo_crew_three_hands",
-   "identity_ids": [
-    "ship_galley_cook",
+    "sworn_bodyguard",
     "undercover_secretary",
     "hired_ronin_swordsman"
    ],
@@ -337,72 +425,182 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 3
+      "tension": 4,
+      "trust": 4
      },
-     "b": "loyal_helmsman_goro",
+     "b": "radio_officer_mashima",
      "b_to_a": {
-      "tension": 1,
-      "trust": 2
+      "tension": 4,
+      "trust": 4
      },
-     "reason": "老舵手常来厨房要一碗热汤",
-     "stage": "familiar"
+     "reason": "前天夜里你替通讯长修好天线接地，两人在隔音舱里共用一副耳机，对方把备用机房钥匙挂上你的颈链",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "radio_officer_mashima"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "完成磁带交割，并说好下船以后的事。",
+    "limit_gap": "无论哪边赢，两人都约好一起下船，可今晚得先活下来。",
+    "meeting_reason": "{radio_officer_mashima.name}抱着备用耳机盒来到套房暗格旁，把门在身后带上。",
+    "resource_gap": "{radio_officer_mashima.name}握着全船的通讯和那盘磁带，你握着对方挂在你颈链上的机房钥匙。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_rank_vs_trust",
+    "te_door_siege"
+   ]
+  },
+  {
+   "chemistry": "大小姐早与你在屏风后定好生杀，若头却把你当成内应；你锁死退路，三人在当家套房当面清算旧账。",
+   "id": "combo_stateroom_purge_trio",
+   "identity_ids": [
+    "sworn_bodyguard",
+    "undercover_secretary",
+    "hired_ronin_swordsman"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 4
+     },
+     "b": "yakuza_heiress_akaho",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "半小时前大小姐在内室与你对好暗号，由你暗中锁死退路，把若头请进套房当面清算",
+     "stage": "intimate"
     },
     {
      "a": "player",
      "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "traitor_lieutenant_shibata",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "若头傍晚在甲板递给你一张关西的空白支票，以为你今晚会替其打开主卧的内门",
+     "stage": "flirting"
+    },
+    {
+     "a": "yakuza_heiress_akaho",
+     "a_to_b": {
       "tension": 1,
       "trust": 2
      },
-     "b": "family_doctor_morita",
+     "b": "traitor_lieutenant_shibata",
      "b_to_a": {
       "tension": 1,
       "trust": 2
      },
-     "reason": "医生替你处理过烫伤",
-     "stage": "acquainted"
+     "reason": "继承人早已截获若头私通关西近江会的分账电文，今晚特意备好清酒等若头上门",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "yakuza_heiress_akaho",
+    "traitor_lieutenant_shibata"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "逼若头交出同党名单，不让走廊里的安保跟着反。",
+    "limit_gap": "若头狗急跳墙，门外半船安保都会跟着乱。",
+    "meeting_reason": "半小时前{yakuza_heiress_akaho.name}在内室与你对好暗号；现在你按约把{traitor_lieutenant_shibata.name}请进当家套房，门在身后落了锁。",
+    "resource_gap": "{yakuza_heiress_akaho.name}握着若头通敌的密电，{traitor_lieutenant_shibata.name}握着半船安保，你握着套房的门。"
+   },
+   "tags": [
+    "crime",
+    "violence"
+   ],
+   "tension_engine_ids": [
+    "te_rank_vs_trust",
+    "te_door_siege"
+   ]
+  },
+  {
+   "chemistry": "通讯长事先托你压阵，把冲锋队长和家庭医生约到轮机走廊交底；一张赌场烂账，决定守门的猛将站哪边。",
+   "id": "combo_bilge_payroll_trio",
+   "identity_ids": [
+    "tactical_navigator",
+    "undercover_secretary",
+    "hired_ronin_swordsman"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "radio_officer_mashima",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "通讯长十分钟前请你到轮机走廊接应，事先把冲锋队长私吞赌场保护费的汇款单交到了你手里",
+     "stage": "flirting"
     },
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
+      "tension": 3,
       "trust": 2
      },
-     "b": "radio_officer_mashima",
+     "b": "hammer_enforcer_goda",
      "b_to_a": {
-      "tension": 1,
-      "trust": 2
+      "tension": 3,
+      "trust": 3
      },
-     "reason": "通讯长总在深夜来找吃的",
-     "stage": "familiar"
+     "reason": "你只要亮出那张横滨赌场的亏空底单，就能让这员猛将当场放下大锤",
+     "stage": "testing"
     },
     {
-     "a": "loyal_helmsman_goro",
+     "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 3
+      "tension": 4,
+      "trust": 5
      },
      "b": "family_doctor_morita",
      "b_to_a": {
-      "tension": 1,
-      "trust": 3
+      "tension": 4,
+      "trust": 4
      },
-     "reason": "两个老臣，一起送走了老当家",
-     "stage": "familiar"
+     "reason": "医生早与你约好在水密门后会合，策反了守门的人，就由你护送医生进内室",
+     "stage": "committed"
     },
     {
-     "a": "loyal_helmsman_goro",
+     "a": "radio_officer_mashima",
      "a_to_b": {
       "tension": 1,
       "trust": 2
      },
-     "b": "radio_officer_mashima",
+     "b": "hammer_enforcer_goda",
      "b_to_a": {
       "tension": 1,
       "trust": 2
      },
-     "reason": "一个掌舵一个通讯，天天对讲",
-     "stage": "acquainted"
+     "reason": "通讯长经手过冲锋队长私汇地下钱庄的电报底单，是冲锋队长最忌惮的人",
+     "stage": "testing"
     },
     {
      "a": "family_doctor_morita",
@@ -410,179 +608,47 @@
       "tension": 1,
       "trust": 2
      },
-     "b": "radio_officer_mashima",
+     "b": "hammer_enforcer_goda",
      "b_to_a": {
       "tension": 1,
       "trust": 2
      },
-     "reason": "医生给通讯长开过安眠药",
-     "stage": "acquainted"
-    }
-   ],
-   "slots": [
-    "loyal_helmsman_goro",
-    "family_doctor_morita",
-    "radio_officer_mashima"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "让船不翻、让伤员活着、让岸上的人知道这里发生了什么。",
-    "limit_gap": "三个人被困在三个地方，你一次只能去一处。",
-    "meeting_reason": "叛乱把船切成了几块，你是少数还能走动的人。",
-    "resource_gap": "舵手有航向，医生有血浆，通讯长有无线电和录音。"
-   },
-   "tags": [
-    "disaster",
-    "workplace"
-   ],
-   "tension_engine_ids": [
-    "te_storm_capsize",
-    "te_rank_vs_trust"
-   ]
-  },
-  {
-   "chemistry": "传声管里，{loyal_helmsman_goro.name}的声音越来越弱；沙发上，{yakuza_heiress_akaho.name}发着烧，坚持要亲自上驾驶室。你不是龙神会的人，只是唯一知道怎么让这艘船活下来的人。",
-   "id": "combo_navigator_equal_watch",
-   "identity_ids": [
-    "tactical_navigator"
-   ],
-   "player_positions": [
-    "equal"
-   ],
-   "power_structure": "equal",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 2
-     },
-     "b": "yakuza_heiress_akaho",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 2
-     },
-     "reason": "大小姐敬你是专业的，却不习惯听外人的话",
-     "stage": "acquainted"
+     "reason": "医生替冲锋队长缝过三次刀伤，知道对方是被若头拿烂账逼上船的",
+     "stage": "testing"
     },
     {
-     "a": "player",
+     "a": "radio_officer_mashima",
      "a_to_b": {
-      "tension": 1,
-      "trust": 3
+      "tension": 2,
+      "trust": 4
      },
-     "b": "loyal_helmsman_goro",
+     "b": "family_doctor_morita",
      "b_to_a": {
-      "tension": 1,
+      "tension": 3,
       "trust": 3
      },
-     "reason": "一起跑过十几趟远洋",
-     "stage": "familiar"
-    },
-    {
-     "a": "yakuza_heiress_akaho",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 3
-     },
-     "b": "loyal_helmsman_goro",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 3
-     },
-     "reason": "老舵手看着大小姐长大",
+     "reason": "两人同船多年，一个守电台一个守药箱，夜里常在餐厅分一壶茶",
      "stage": "familiar"
     }
    ],
    "slots": [
-    "yakuza_heiress_akaho",
-    "loyal_helmsman_goro"
+    "radio_officer_mashima",
+    "hammer_enforcer_goda",
+    "family_doctor_morita"
    ],
    "stakes": {
-    "irreplaceable_goal": "在船翻之前修好副机，并劝住大小姐别拿命去冒险。",
-    "limit_gap": "舵手随时会昏过去，大小姐的伤经不起再折腾。",
-    "meeting_reason": "大小姐要上驾驶室，你得告诉大小姐那条路能不能走。",
-    "resource_gap": "舵手有航向和传声管，大小姐有命令权，你有蓝图和主钥匙。"
+    "irreplaceable_goal": "策反冲锋队长，护送医生带着药箱和病历直入内室。",
+    "limit_gap": "上层甲板随时换岗，走廊里的私下交易只有十分钟。",
+    "meeting_reason": "十分钟前{radio_officer_mashima.name}通过内线请你到轮机走廊暗门接应；你按约把{hammer_enforcer_goda.name}叫到僻静处，{family_doctor_morita.name}已等在水密门后。",
+    "resource_gap": "{radio_officer_mashima.name}握着亏空底单，{hammer_enforcer_goda.name}握着重锤和水密门，{family_doctor_morita.name}握着旧病历，你负责压阵。"
    },
    "tags": [
-    "disaster",
-    "romance_light"
-   ],
-   "tension_engine_ids": [
-    "te_storm_capsize",
-    "te_wound_and_fever"
-   ]
-  },
-  {
-   "chemistry": "{traitor_lieutenant_shibata.name}让你去给通讯室送饭，顺便看看{radio_officer_mashima.name}还老不老实。你托盘底下压着一张纸条，若头不知道，通讯长也还不知道。",
-   "id": "combo_galley_overheard",
-   "identity_ids": [
-    "ship_galley_cook"
-   ],
-   "player_positions": [
-    "low"
-   ],
-   "power_structure": "npc_high",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 0
-     },
-     "b": "traitor_lieutenant_shibata",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "若头以为你只是个厨子",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 2
-     },
-     "b": "radio_officer_mashima",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 2
-     },
-     "reason": "你常给通讯长留夜宵",
-     "stage": "familiar"
-    },
-    {
-     "a": "traitor_lieutenant_shibata",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 0
-     },
-     "b": "radio_officer_mashima",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 0
-     },
-     "reason": "若头锁了通讯长，通讯长录了若头的话",
-     "stage": "acquainted"
-    }
-   ],
-   "slots": [
-    "traitor_lieutenant_shibata",
-    "radio_officer_mashima"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "把录音送到能用它的人手里，同时别让若头起疑。",
-    "limit_gap": "纸条一旦被发现你就没命，不递出去岸上就永远不知道。",
-    "meeting_reason": "叛徒需要有人做饭，你被从冷库里拎了出来。",
-    "resource_gap": "若头有枪和人，通讯长有无线电和录音，你只有一个托盘和一张纸条。"
-   },
-   "tags": [
-    "violence",
-    "workplace_power"
+    "crime",
+    "violence"
    ],
    "tension_engine_ids": [
     "te_door_siege",
-    "te_rank_vs_trust"
+    "te_wound_and_fever"
    ]
   }
  ],
@@ -608,7 +674,7 @@
  ],
  "character_templates": [
   {
-   "adult_context": "关东龙神会第四代唯一继承人，从小被当成接班人养大，杀伐决断、从不示弱；今夜被亲信伏击，左肩中弹，失血发烧，仍坚持亲自指挥",
+   "adult_context": "关东龙神会第四代唯一继承人，从小被当成接班人养大，杀伐决断、从不示弱；今夜在公海游艇上弹压若头异心，只许最信任的人替自己包扎、靠近内寝",
    "age_range": [
     27,
     34
@@ -644,16 +710,16 @@
     "relationship_stance": "把保镖当成最后一道墙，也当成这些年唯一一个从没骗过自己的人",
     "withdrawal": "裹紧西装缩在沙发角落，盯着门一言不发"
    },
-   "gender": "any",
-   "gender_reason": null,
+   "gender": "female",
+   "gender_reason": "标题人物“极道千金”，固定性别不改变成年、自愿与清醒的亲密前提",
    "id": "yakuza_heiress_akaho",
    "identity": {
     "authority": "对龙神会三万组员与四百家关联企业拥有最终决定权",
     "exposure": "公文夹里有一份老当家病危时写给自己的遗嘱原件",
     "hidden": "从来没有选择过要不要当这个继承人；最怕的不是死，而是死的时候身边没有一个不是因为家规才留下的人",
     "limits": [
-     "失血和高烧让手越来越抖，枪都快握不住了",
-     "从不在属下面前示弱，宁可昏过去也不喊疼"
+     "小臂被流弹擦伤刚包扎好，握重物时指节还会微微发颤",
+     "从不在属下面前示弱，宁可咬牙也不喊疼"
     ],
     "obligations": [
      "天亮前夺回黑龙丸，主持换代"
@@ -669,7 +735,7 @@
      "敢在自己面前说“不”、却从不越过自己意愿的人"
     ],
     "boundaries": [
-     "绝不在高烧或神志不清时有任何越界",
+     "绝不在伤痛未平或神志不清时有任何越界",
      "不接受因为救命之恩而来的亲近"
     ],
     "desire_range": [
@@ -721,16 +787,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "{npc.given}疼得昏过去一阵，醒来时会记得是谁一直在旁边",
-      "option": "剪开西装清创止血，按住伤口直到血止住"
+      "cost": "两人在窄沙发上贴着包扎了很久，主仆的界限悄悄松动",
+      "option": "反锁内门替{npc.given}剪开袖口清创包扎，再用干净外套拢住肩头掩住血迹"
      },
      {
-      "cost": "{npc.given}要独自在避难室里待几分钟，门外随时可能有人来",
-      "option": "先用止血带勒住，再去走廊找医生"
+      "cost": "多了一个知道伤情的外人，得额外封口",
+      "option": "先请家庭医生从暗梯下来缝合，自己守在监控屏前盯住走廊"
      }
     ],
-    "pressure": "失血再不止住，十二分钟内就会休克",
-    "trigger": "{npc.given}跌坐在避难室的沙发上，左肩的血已经浸透了西装，门外传来军靴声"
+    "pressure": "让若头看出继承人今晚受了伤，摇摆的船员就会倒向关西。",
+    "trigger": "{npc.given}坐在避难室的真皮沙发上，左小臂一道刚擦伤的血口，门外传来安保组换防的脚步声。"
    },
    "tags": [
     "intimate",
@@ -758,9 +824,9 @@
     "contrast": "在老当家灵前哭得最响，拔枪时却最狠",
     "core_value": "九条家的时代该结束了",
     "goal_options": [
-     "炸开避难室的门",
+     "逼大小姐在航线让渡书上盖章",
      "用广播逼大小姐交出密钥",
-     "抓住保镖，用来要挟大小姐"
+     "拉拢保镖，用来要挟大小姐"
     ],
     "never": [
      "拿到密钥之前放弃"
@@ -770,9 +836,9 @@
     ],
     "pressure_responses": {
      "breaking": "被枪口顶住时腿一软，开始求饶",
-     "high": "手下死伤惨重，端起机枪对着走廊乱扫",
-     "low": "用枪托砸门，在门外喊话",
-     "mid": "下令装炸药，开始倒数"
+     "high": "手下接连倒戈，亲自带人堵在套房门口",
+     "low": "在门外对讲机里软硬兼施地喊话",
+     "mid": "调人把守各道水密门，切断内室和驾驶台的联络"
     },
     "relationship_stance": "把大小姐当成换钱的筹码，把保镖当成必须除掉的障碍",
     "withdrawal": "带着残部退回驾驶室，拼命呼叫关西支援"
@@ -792,7 +858,7 @@
      "清晨五点前控制全船，等关西的船来接应"
     ],
     "resources": [
-     "定向爆破炸药和气割焊枪",
+     "收买半数随船安保的私账与甲板门禁副卡",
      "游艇武器库的全部存货"
     ]
    },
@@ -808,7 +874,7 @@
      1,
      1
     ],
-    "desired_position": "门外那个拿着炸药的人，也是最后会被反将一军的叛徒",
+    "desired_position": "门外那个握着半船安保的人，也是最后会被反将一军的叛徒",
     "dislikes": [
      "被人轻蔑地笑",
      "手下办事拖沓"
@@ -819,7 +885,7 @@
      "听手下叫自己“头目”"
     ],
     "preconditions": [
-     "对方先被缴了械"
+     "对方先被缴了械，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -852,16 +918,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "你会受伤，而避难室里只剩大小姐一个人",
-      "option": "从通风管道绕出去，在走廊里夺下起爆器"
+      "cost": "孤身进内室，随时可能被贴身护卫当场制住",
+      "option": "借口汇报风暴防务敲开当家套房，试探继承人的底牌"
      },
      {
-      "cost": "水密门变形，再也打不开，只能从别的路杀出去",
-      "option": "接通门上的高压电网，让炸药提前引爆"
+      "cost": "行迹败露，被通讯室录下现行",
+      "option": "在轮机走廊拉拢中间派船员，想切断顶层卫星通讯逼宫"
      }
     ],
-    "pressure": "五分钟后炸药起爆",
-    "trigger": "若头的人在避难室门外装好了炸药，引信开始倒数"
+    "pressure": "拖到天明保安厅巡逻艇靠近，私通外敌的罪名就坐实了。",
+    "trigger": "关西近江会的接应船因风暴延误，若头必须在天亮前逼继承人签下港口航线转让书。"
    },
    "tags": [
     "violence",
@@ -916,7 +982,7 @@
     "exposure": "胸前口袋里有老当家托付的继承公证书副本",
     "hidden": "看着大小姐长大，早就决定今夜要用这条命换大小姐上岸",
     "limits": [
-     "失血太多，随时可能昏过去",
+     "年过六十，连熬整夜手脚发僵",
      "一个人守着驾驶室，下不去底层"
     ],
     "obligations": [
@@ -950,7 +1016,7 @@
      "听年轻人讲打赢的事"
     ],
     "preconditions": [
-     "对方先证明自己会护着大小姐"
+     "对方先证明自己会护着大小姐，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      5,
@@ -978,16 +1044,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "船能撑住，但老舵手就再也离不开舵轮了",
-      "option": "通过传声管教老舵手用铁链把舵锁死"
+      "cost": "老舵手要独自在驾驶室连熬四个钟头顶住横浪",
+      "option": "从内侧落锁驾驶台切入手动舵，只听主卧与避难室的专线指令"
      },
      {
-      "cost": "避难室只剩大小姐一个人",
-      "option": "冲上驾驶室替老舵手掌舵"
+      "cost": "下层避难室少了一个强援",
+      "option": "请大副或剑客上驾驶台协防，自己腾手核对备用海图"
      }
     ],
-    "pressure": "八分钟后老舵手可能昏过去，船会横着吃浪",
-    "trigger": "传声管里传来老舵手的咳嗽声，说自己快撑不住了"
+    "pressure": "驾驶室一旦被若头的人接管，黑龙丸就会被直接开往关西私港。",
+    "trigger": "外海风浪加急，老舵手一边稳住航向，一边通过铜传声管向内室通报甲板换防的异常。"
    },
    "tags": [
     "disaster",
@@ -1076,7 +1142,7 @@
      "砸东西"
     ],
     "preconditions": [
-     "对方先在力气上赢过自己"
+     "对方先在力气上赢过自己，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      1,
@@ -1109,16 +1175,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "你会挂彩，但能把巨汉挡在门外",
-      "option": "在门缝打开的一瞬间冲出去，先下手"
+      "cost": "被若头察觉首鼠两端，立刻遭猜忌",
+      "option": "借口检查门锁和门内的人暗中搭话，给自己留条反正的退路"
      },
      {
-      "cost": "走廊被浓烟封死，接下来只能摸黑打",
-      "option": "引爆门后的灭火器气罐，把门外的人掀翻"
+      "cost": "走廊的气氛绷到极点，两边都把手指扣上了扳机",
+      "option": "虚张声势敲击走廊铁管制造威慑，实则按兵不动拖时间"
      }
     ],
-    "pressure": "四分钟后铰链断裂，门会整个倒下",
-    "trigger": "巨汉一锤砸在水密门铰链上，两颗螺栓崩飞"
+    "pressure": "横滨赌场的烂账捏在别人手里，真对当家动手就是不死不休的叛族死罪。",
+    "trigger": "冲锋队长奉若头之命守在轮机走廊的水密门外，拎着重锤犹豫要不要彻底撕破脸。"
    },
    "tags": [
     "violence",
@@ -1206,7 +1272,7 @@
      "病人醒过来的那一刻"
     ],
     "preconditions": [
-     "对方先把伤养好"
+     "对方先把伤养好，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      5,
@@ -1234,16 +1300,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "路上会撞上巡逻的叛徒",
-      "option": "背着医生和血浆冲回避难室"
+      "cost": "把自己的身家性命和继承人一方绑死",
+      "option": "借替继承人换药，把病历夹层交给最可信的人保管"
      },
      {
-      "cost": "医生会被叛徒发现",
-      "option": "只拿血浆回去，让医生留在原地"
+      "cost": "两边都想撬开医生的嘴，处境越发微妙",
+      "option": "守住医务中立，只谈伤情，绝口不提老当家旧案"
      }
     ],
-    "pressure": "走廊上的叛徒十分钟后会搜到主卧",
-    "trigger": "老医生在主卧沙发后面招手，说有血浆，但一个人送不下去"
+    "pressure": "那份病历记着老当家遇害的真相，继承人和若头都盯着这只药箱。",
+    "trigger": "家庭医生带着急救药箱和两年前老当家的真实病历，守在主甲板套房内侧。"
    },
    "tags": [
     "workplace",
@@ -1331,7 +1397,7 @@
      "一杯热咖啡"
     ],
     "preconditions": [
-     "先活着下船"
+     "先活着下船，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      4,
@@ -1359,16 +1425,16 @@
    "situation": {
     "exits": [
      {
-      "cost": "动静太大，会引来走廊上的叛徒",
-      "option": "撬开通讯室的门，把人带走"
+      "cost": "离开通讯室的十分钟里电台无人值守",
+      "option": "把磁带藏进备用耳机盒，约你在套房暗格旁当面交割"
      },
      {
-      "cost": "通讯长会被叛徒抓住",
-      "option": "让通讯长把录音从通风口递出来，人先留在里面"
+      "cost": "线路切换会亮起后台指示灯，引来若头耳目",
+      "option": "用内线广播把录音直接切进避难室专线"
      }
     ],
-    "pressure": "叛徒十五分钟后会来砸通讯室的门",
-    "trigger": "通讯长从门缝里塞出一张纸条：我有录音，救我出去"
+    "pressure": "若头的人正在排查电台日志，搜出磁带就会当场封口。",
+    "trigger": "通讯长在机房截获了若头与关西私通的录音磁带，正等可信的人来主甲板交接。"
    },
    "tags": [
     "disaster",
@@ -1404,136 +1470,182 @@
  "daily_activities": [
   {
    "beats": [
-    "齿轮咬合声一道接一道响起",
-    "应急红灯亮起，整间屋子染成暗红",
-    "外面的风浪和枪声隔着钢板变成闷响"
-   ],
-   "duration_minutes": 25,
-   "hook_ids": [
-    "h_akaho_wounded_command",
-    "h_shibata_door_threat",
-    "h_goda_hammer_smash"
-   ],
-   "id": "a_panic_room_lockdown",
-   "location_ids": [
-    "yacht_lower_armored_panic_room"
-   ],
-   "start_minute": 5,
-   "tags": [
-    "workplace_power"
-   ],
-   "title": "避难室的六道锁舌"
-  },
-  {
-   "beats": [
-    "剪刀剪开浸透血的西装袖子",
-    "碘伏碰到伤口，大小姐咬住了嘴唇",
-    "纱布一圈一圈缠好，血终于不再往外渗"
+    "在榻榻米矮几上温好一壶大吟酿，拉下防弹百叶帘",
+    "白天不苟言笑的当家卸下护肩，把酒盅推到你手边",
+    "听着舷窗外的浪声，在不讲尊卑的夜里聊起靠岸后的私事"
    ],
    "duration_minutes": 40,
    "hook_ids": [
-    "h_akaho_wounded_command",
-    "h_akaho_fever_name",
-    "h_goro_tube_call"
-   ],
-   "id": "a_wound_cleaning",
-   "location_ids": [
-    "yacht_lower_armored_panic_room"
-   ],
-   "start_minute": 20,
-   "tags": [
-    "romance_light"
-   ],
-   "title": "红灯下清创包扎"
-  },
-  {
-   "beats": [
-    "铜管里传来驾驶室的风暴声",
-    "老舵手沙哑的声音一句一句报着浪高",
-    "船身转过一个角度，倾斜暂时缓下来"
-   ],
-   "duration_minutes": 20,
-   "hook_ids": [
-    "h_goro_tube_call",
-    "h_akaho_fever_name"
-   ],
-   "id": "a_speaking_tube_report",
-   "location_ids": [
-    "yacht_lower_armored_panic_room"
-   ],
-   "start_minute": 45,
-   "tags": [
-    "disaster"
-   ],
-   "title": "传声管里的海况"
-  },
-  {
-   "beats": [
-    "出海的第二天，保镖去底层轮机走廊给轮机长送午饭，铁格栅被踩得叮当响。",
-    "轮机长接过饭盒，说当家的千金是第一次上这条船吧。",
-    "保镖点点头，轮机长说那就让大小姐多去甲板上晒晒太阳，船上的日子闷。"
-   ],
-   "duration_minutes": 35,
-   "hook_ids": [
-    "hd_yakuza_heiress_akaho",
-    "hd_family_doctor_morita",
-    "hd_hammer_enforcer_goda",
-    "hd_traitor_lieutenant_shibata",
-    "hd_loyal_helmsman_goro",
-    "hd_radio_officer_mashima"
-   ],
-   "id": "a_corridor_skirmish",
-   "location_ids": [
-    "yacht_bilge_engineering_corridor"
-   ],
-   "start_minute": 720,
-   "tags": [
-    "violence"
-   ],
-   "title": "轮机走廊里送饭"
-  },
-  {
-   "beats": [
-    "家传的太刀从倒下的刀架上被拾起",
-    "卫星终端连通，屏幕上跳出东京总部的回应",
-    "闪电照亮舷窗外的黑浪"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [
+    "h_akaho_dawn_choice",
     "h_morita_plasma",
-    "h_mashima_note",
-    "h_goro_tube_call"
+    "h_mashima_frequency"
    ],
-   "id": "a_stateroom_blade_and_radio",
+   "id": "a_stateroom_sake_nightcap",
    "location_ids": [
     "yacht_main_deck_owners_stateroom"
    ],
-   "start_minute": 85,
+   "start_minute": 0,
    "tags": [
-    "workplace_power"
+    "intimate"
    ],
-   "title": "套房里取刀与发报"
+   "title": "当家套房温酒夜话"
   },
   {
    "beats": [
-    "风雨渐弱，天边泛起一线暗红",
-    "九条家的直升机穿过云层，旋翼压平了浪花",
-    "大小姐披着保镖的外套站在停机坪上"
+    "反锁水密门，打开药箱取出碘伏棉球与纱布",
+    "托住对方微凉的小臂清理擦伤，轻轻缠好绷带",
+    "包扎完没有立刻松手，顺势替对方披好外套，在沙发上并肩小憩"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [
+    "h_akaho_wounded_command",
+    "h_akaho_fever_name",
+    "h_morita_old_secret"
+   ],
+   "id": "a_panic_room_wound_dressing",
+   "location_ids": [
+    "yacht_lower_armored_panic_room"
+   ],
+   "start_minute": 10,
+   "tags": [
+    "intimate"
+   ],
+   "title": "避难室清创换药"
+  },
+  {
+   "beats": [
+    "走到停机坪栏杆旁吹带咸味的海风，看海平线上的夜航灯",
+    "替迎风走来的人拢住打火机的火苗",
+    "在收不进监控原声的甲板边缘，三言两语交换对各方人马的判断"
    ],
    "duration_minutes": 25,
    "hook_ids": [
     "h_akaho_dawn_choice",
-    "h_shibata_door_threat"
+    "h_shibata_door_threat",
+    "h_goda_corridor_roar"
    ],
-   "id": "a_dawn_helipad",
+   "id": "a_deck_night_watch_smoke",
    "location_ids": [
     "yacht_open_stern_helipad_deck"
    ],
-   "start_minute": 110,
+   "start_minute": 25,
    "tags": [
-    "workplace_power"
+    "intimate"
    ],
-   "title": "破晓时的后甲板"
+   "title": "后甲板吹风守夜"
+  },
+  {
+   "beats": [
+    "拿着工程钥匙沿走廊检查各道水密门和排水泵读数",
+    "在窄通道里和迎面巡夜的人错身，借递手电低声对表",
+    "在通往内室的暗梯口留下一道只有自己人懂的记号"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [
+    "h_shibata_offer",
+    "h_goda_corridor_roar",
+    "h_mashima_note"
+   ],
+   "id": "a_bilge_corridor_rounds",
+   "location_ids": [
+    "yacht_bilge_engineering_corridor"
+   ],
+   "start_minute": 40,
+   "tags": [
+    "workplace"
+   ],
+   "title": "轮机走廊夜巡查锁"
+  },
+  {
+   "beats": [
+    "灯下铺开白绸与丁子油，擦拭刀架上的铭刀",
+    "另一人在旁核对本季海上货运账册，不时抬头看一眼刀光",
+    "收刀入鞘的一声轻响后，两人隔着矮几交换一个眼神"
+   ],
+   "duration_minutes": 35,
+   "hook_ids": [
+    "h_goro_tube_call",
+    "h_goro_last_order",
+    "h_morita_plasma"
+   ],
+   "id": "a_stateroom_blade_maintenance",
+   "location_ids": [
+    "yacht_main_deck_owners_stateroom"
+   ],
+   "start_minute": 55,
+   "tags": [
+    "workplace"
+   ],
+   "title": "套房拭刀核账"
+  },
+  {
+   "beats": [
+    "调准波段，耳机里除了气象通播还飘出一段昭和老歌",
+    "把另一侧耳机分给身旁的人，两人在仪表绿光下靠得很近",
+    "趁曲调舒缓，把今晚截获的异常通话抄在手心"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [
+    "h_mashima_frequency",
+    "h_mashima_note",
+    "h_goro_tube_call"
+   ],
+   "id": "a_radio_room_old_song",
+   "location_ids": [
+    "yacht_main_deck_owners_stateroom",
+    "yacht_bilge_engineering_corridor"
+   ],
+   "start_minute": 70,
+   "tags": [
+    "intimate"
+   ],
+   "title": "电台监听与夜曲"
+  },
+  {
+   "beats": [
+    "从船厨端来刚温好的茶泡饭和热焙茶，送进下层避难室",
+    "督促熬了半宿的人先把饭吃下，递上温热的湿手帕",
+    "热气驱散了底舱的寒意，紧绷了一天的眉眼在茶香里柔和下来"
+   ],
+   "duration_minutes": 25,
+   "hook_ids": [
+    "h_akaho_dont_go",
+    "h_akaho_gun_down",
+    "h_goda_hammer_smash"
+   ],
+   "id": "a_panic_room_late_supper",
+   "location_ids": [
+    "yacht_lower_armored_panic_room",
+    "yacht_bilge_engineering_corridor"
+   ],
+   "start_minute": 85,
+   "tags": [
+    "intimate"
+   ],
+   "title": "密室宵夜热茶"
+  },
+  {
+   "beats": [
+    "通过传声管与驾驶室核对黎明前的风向与靠岸航速",
+    "推开后甲板舱门，天边透出第一缕光，风浪渐渐平息",
+    "并肩扶着湿栏杆认准东京湾的方向，约好上岸后先喝一杯"
+   ],
+   "duration_minutes": 25,
+   "hook_ids": [
+    "h_akaho_dawn_choice",
+    "h_goro_last_order",
+    "h_mashima_frequency"
+   ],
+   "id": "a_deck_sunrise_course_check",
+   "location_ids": [
+    "yacht_main_deck_owners_stateroom",
+    "yacht_open_stern_helipad_deck"
+   ],
+   "start_minute": 100,
+   "tags": [
+    "intimate"
+   ],
+   "title": "破晓前对航向"
   }
  ],
  "default_npc_gender_mix": {
@@ -1569,7 +1681,7 @@
     "yacht_lower_armored_panic_room"
    ],
    "slot": "yakuza_heiress_akaho",
-   "text": "{yakuza_heiress_akaho.name}跌坐在黑色皮沙发上，左肩的血已经浸透了西装，右手还握着枪：“锁门。急救箱拿过来，替我把衣服剪开——手别抖。”"
+   "text": "{yakuza_heiress_akaho.name}坐在避难室的黑色真皮沙发上，左袖挽起，露出一道浅浅的血痕，指尖夹着烟看向你：“把门反锁。急救箱在脚边，过来替我包上——手别抖。”"
   },
   {
    "id": "h_shibata_door_threat",
@@ -1580,7 +1692,7 @@
     "yacht_open_stern_helipad_deck"
    ],
    "slot": "traitor_lieutenant_shibata",
-   "text": "门上的对讲机沙沙作响，{traitor_lieutenant_shibata.name}的声音带着笑：“大小姐，门外有四公斤炸药。密钥交出来，我保你活着下船。”"
+   "text": "门外对讲机沙沙作响，{traitor_lieutenant_shibata.name}的声音压得很低：“大小姐，关西的船就在二十海里外。今晚在航线让渡书上盖个章，大家都能体面靠岸。”"
   },
   {
    "id": "h_goro_tube_call",
@@ -1590,7 +1702,7 @@
     "yacht_main_deck_owners_stateroom"
    ],
    "slot": "loyal_helmsman_goro",
-   "text": "墙上的铜管里传来{loyal_helmsman_goro.name}的咳嗽声：“听得见吗？！老夫中了三枪，快撑不住了……右边有大浪，抓稳！”"
+   "text": "墙上的铜传声管里传来{loyal_helmsman_goro.name}沉稳的嗓音：“听得见吗？驾驶台我已经从里头落锁了，外海浪大，你们在下面抓稳扶手！”"
   },
   {
    "id": "h_goda_hammer_smash",
@@ -1600,7 +1712,7 @@
     "yacht_bilge_engineering_corridor"
    ],
    "slot": "hammer_enforcer_goda",
-   "text": "轰的一声，水密门的铰链凹进来一块，{hammer_enforcer_goda.name}在门外吼：“再三锤！这门就废了！”"
+   "text": "水密门外传来重锤顿地的闷响，{hammer_enforcer_goda.name}隔着钢板瓮声喊：“里头的人听着，若头只给半个钟头考虑，别逼兄弟们动粗！”"
   },
   {
    "id": "h_morita_plasma",
@@ -1609,7 +1721,7 @@
     "yacht_main_deck_owners_stateroom"
    ],
    "slot": "family_doctor_morita",
-   "text": "{family_doctor_morita.name}从沙发后面探出头，举起两袋血浆：“我有这个，可我一个人送不下去。大小姐的伤，到底怎么样了？”"
+   "text": "{family_doctor_morita.name}提着牛皮医药箱从套房屏风后探出头：“消炎针和干净纱布我都备齐了，老当家当年的病历底稿也在箱底，现在带我去见大小姐吗？”"
   },
   {
    "id": "h_mashima_note",
@@ -1628,7 +1740,7 @@
     "yacht_lower_armored_panic_room"
    ],
    "slot": "yakuza_heiress_akaho",
-   "text": "烧得迷迷糊糊的{yakuza_heiress_akaho.name}忽然抓住你的手腕：“别叫大小姐……叫我名字。就一次。”"
+   "text": "夜航灯影里，刚包扎完伤口的{yakuza_heiress_akaho.name}忽然扣住你的手腕，抬眼直视你：“这间屋里没外人。别叫大小姐……叫我名字。”"
   },
   {
    "id": "h_akaho_dawn_choice",
@@ -1702,57 +1814,15 @@
    ],
    "slot": "hammer_enforcer_goda",
    "text": "红灯下，{hammer_enforcer_goda.name}把一整瓶伏特加浇在自己头上，提着锤子一步一个水花地走过来。"
-  },
-  {
-   "id": "hd_yakuza_heiress_akaho",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "yakuza_heiress_akaho",
-   "text": "{yakuza_heiress_akaho.name}晃着一杯清酒，冲你扬了扬下巴：“今晚没事。坐下，陪我喝。”"
-  },
-  {
-   "id": "hd_family_doctor_morita",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "family_doctor_morita",
-   "text": "{family_doctor_morita.name}递给你一片晕船药：“海上第一天，备着总没错。”"
-  },
-  {
-   "id": "hd_hammer_enforcer_goda",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "hammer_enforcer_goda",
-   "text": "{hammer_enforcer_goda.name}在甲板上钓着鱼，冲你招手：“来，帮我看着竿。”"
-  },
-  {
-   "id": "hd_traitor_lieutenant_shibata",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "traitor_lieutenant_shibata",
-   "text": "{traitor_lieutenant_shibata.name}把一份航程表递给你：“明天的安排，你也过一遍。”"
-  },
-  {
-   "id": "hd_loyal_helmsman_goro",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "loyal_helmsman_goro",
-   "text": "{loyal_helmsman_goro.name}握着舵冲你笑：“风平浪静，来试试掌舵？”"
-  },
-  {
-   "id": "hd_radio_officer_mashima",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "radio_officer_mashima",
-   "text": "{radio_officer_mashima.name}摘下一边耳机：“收到一个放老歌的电台，你也听听。”"
   }
  ],
  "id": "yakuza_princess_stormy_yacht",
  "locations": [
   {
    "affordances": [
-    "从里面转动六道锁舌，锁死水密门",
-    "打开急救箱，清创、止血、换纱布",
-    "让发着烧的人靠在自己肩上，听船身的动静"
+    "从内侧转动六道锁舌，锁闭防弹水密门",
+    "打开急救箱，用碘伏和绷带处理手臂的擦伤",
+    "在真皮沙发上并肩核对九条家的海外金库密钥"
    ],
    "detail": "水线以下的避难室，四壁是十公分厚的复合装甲，正中一张固定在甲板上的黑色皮沙发，角落里有急救箱和一只雪茄柜；应急红灯把整间屋子染成暗红。",
    "exits": [
@@ -1761,8 +1831,10 @@
    "id": "yacht_lower_armored_panic_room",
    "name": "底层防弹避难室",
    "pressure_modifiers": {
-    "p_hatch_breach_charge": "门外传来金属切割和安装炸药的声音。",
-    "p_wound_fever_spike": "红灯下，伤口的纱布又渗出了一圈血。"
+    "p_akaho_shibata_kansai_leverage": "水密门隔绝了窥探，茶几上的密电就是今晚定生死的铁证。",
+    "p_bilge_mutiny_whisper": "监控分屏上看得清走廊换防人员的眼神，广播麦克风就在手边。",
+    "p_generator_bus_trip": "应急红光映在真皮沙发上，新风一停，连呼吸声都听得清。",
+    "p_kansai_charter_ultimatum": "角落有直通东京本家的海事应急专线。"
    },
    "privacy": "private",
    "tags": [
@@ -1776,9 +1848,9 @@
   },
   {
    "affordances": [
-    "拧开泄压阀，用蒸汽挡住追兵",
-    "躲在管线的阴影里等巡逻的人走过去",
-    "拉下手动排水阀，把积水排出船外"
+    "关掉分区照明，隐进管线阴影观察动静",
+    "用工程主钥匙反锁通往下层甲板的水密隔门",
+    "启动底舱排水泵，稳住船身吃水线"
    ],
    "detail": "充满机油蒸汽的底层通道，管道在颠簸中嘶嘶漏气，铁格栅地面下积着随船身左右晃荡的海水，红色故障灯一闪一闪。",
    "exits": [
@@ -1788,9 +1860,11 @@
    "id": "yacht_bilge_engineering_corridor",
    "name": "轮机走廊",
    "pressure_modifiers": {
-    "p_mutineer_sweep": "叛徒的枪灯正顺着走廊一间一间往这边照。"
+    "p_bilge_mutiny_whisper": "铸铁走道回音明显，耳语顺着管壁传得很远。",
+    "p_generator_bus_trip": "主配电切换开关嵌在走廊中段的防水壁柜里。",
+    "p_mashima_goda_casino_leverage": "蒸汽管道的低鸣掩去了谈话声，一张底单足以让守门的猛将易帜。"
    },
-   "privacy": "public",
+   "privacy": "semi",
    "tags": [
     "violence",
     "disaster"
@@ -1802,9 +1876,9 @@
   },
   {
    "affordances": [
-    "从刀架上取下家传的太刀",
-    "在酒柜暗格里打开卫星通讯终端",
-    "隔着监控分屏看驾驶室里的老舵手"
+    "从黑木刀架上取下九条家的家传铭刀",
+    "在酒柜暗格里打开海事卫星加密终端",
+    "拉上防弹百叶窗，在榻榻米内室单独召见亲信"
    ],
    "detail": "两百平米的海景套房，两面防弹舷窗外是翻滚的黑浪，真皮大床、翻倒的水晶杯、散落一地的账册，墙上挂着九条家历代家主传下来的太刀。",
    "exits": [
@@ -1814,9 +1888,12 @@
    "id": "yacht_main_deck_owners_stateroom",
    "name": "主甲板当家套房",
    "pressure_modifiers": {
-    "p_engine_room_flooding": "右舷配电室的海水正往套房下面的电缆井里灌。"
+    "p_akaho_shibata_kansai_leverage": "黑木刀架与榻榻米内室肃穆，把叛徒叫进这间屋子，本身就是压制。",
+    "p_cyclone_cross_wave": "防弹舷窗外海浪翻涌，屋里的热清酒与厚地毯隔出一方安静。",
+    "p_kansai_charter_ultimatum": "加密传真机与家纹金印都锁在酒柜暗格里。",
+    "p_mashima_goda_casino_leverage": "酒柜暗格旁的碎纸机随时待命。"
    },
-   "privacy": "semi",
+   "privacy": "private",
    "tags": [
     "workplace_power",
     "romance_light"
@@ -1839,7 +1916,8 @@
    "id": "yacht_open_stern_helipad_deck",
    "name": "后甲板停机坪",
    "pressure_modifiers": {
-    "p_freighter_collision_course": "雷达上，一艘失控的散货轮正顺着洋流朝这边漂来。"
+    "p_bilge_mutiny_whisper": "海风卷走说话声，停机坪边缘的盲区最适合单独约见动摇的护卫。",
+    "p_cyclone_cross_wave": "狂风夹着咸雨扑面而来，直升机系留索绷得笔直。"
    },
    "privacy": "public",
    "tags": [
@@ -1921,14 +1999,14 @@
   ],
   "order": "family_first"
  },
- "notes": "暴风雨中的黑龙丸：当代极道动作戏。原稿以“神经毒素致千金高烧神志迷离、保镖以推拿吸吮排毒为名在沙发上占有”为核心，属于非清醒状态下的亲密；叛徒台词中还有大量性暴力威胁，已整体重写：毒素改为枪伤失血引起的高烧，救治就是清创包扎，与亲密无关；亲密只在烧退、伤口处理好、明步完全清醒并主动开口时发生。删去叛徒与打手的性化威胁台词，暴力保留在动作戏层面。补足 6 个模板（新增家庭医生与通讯长）、低位身份、6 组组合、会走样的传话渠道与多数 approach 钩子。",
+ "notes": "暴风雨中的黑龙丸：当代极道动作戏。原稿以“神经毒素致千金高烧神志迷离、保镖以推拿吸吮排毒为名在沙发上占有”为核心，属于非清醒状态下的亲密；叛徒台词中还有大量性暴力威胁，已整体重写：毒素改为枪伤失血引起的高烧，救治就是清创包扎，与亲密无关；亲密只在烧退、伤口处理好、明步完全清醒并主动开口时发生。删去叛徒与打手的性化威胁台词，暴力保留在动作戏层面。补足 6 个模板（新增家庭医生与通讯长）、低位身份、6 组组合、会走样的传话渠道与多数 approach 钩子。\n2026-10-18 按写作规则 v2 改造：人物组合改为 8 单人 + 2 多人；大小姐握若头通敌密电、通讯长握冲锋队长赌场亏空两条把柄；大小姐固定女性；伤情改为擦伤，保留“伤痛未平或神志不清时不越界”的界线；删六条泛用钩子；日常补到八条。",
  "player_identities": [
   {
    "age_range": [
     26,
     34
    ],
-   "baseline": "年满十八那年进了九条家，从那以后只做一件事：站在大小姐身后。今夜你把中弹的大小姐背进了避难室，第一次发现自己守护的这个人，也会害怕。",
+   "baseline": "年满十八那年进了九条家，从那以后只做一件事：站在大小姐身后。这趟公海巡航暗流汹涌，今夜你守在主卧与避难室门内，第一次看清这位年轻当家冷硬背后的孤注一掷。",
    "gender": "any",
    "id": "sworn_bodyguard",
    "reputation": "冷静、寡言，在关东黑道里出了名的不怕死",
@@ -2030,8 +2108,8 @@
    "social_position": "high",
    "title_patterns": [
     {
-     "gender": "male",
-     "pattern": "{family}先生"
+     "gender": "any",
+     "pattern": "{family}阁下"
     },
     {
      "gender": "any",
@@ -2053,7 +2131,7 @@
     "整艘船的储粮和淡水存量"
    ],
    "risks": [
-    "被叛徒发现偷听过他们的计划，就会被灭口"
+    "被叛乱同伙发现你听见过底舱密谋，会遭到追杀灭口"
    ],
    "role": "黑龙丸的船厨",
    "social_position": "low",
@@ -2072,219 +2150,238 @@
  "premise": "龙神会第四代继承人大小姐，带着贴身保镖、机要秘书和老舵手，乘私人游艇黑龙丸在公海上巡视家族的海上生意，一走就是半个月。白天开会、见客，夜里在甲板上喝酒。护卫若头一直对继承顺位不满，秘书其实是关西派来的卧底；热带气旋的季节到了。",
  "pressures": [
   {
-   "choice": "是在避难室里尽力处理，还是冒险去主卧找医生和血浆。",
+   "choice": "当场缴械，还是留若头体面、逼其向关西发假信标？",
    "exits": [
     {
-     "cost": "你一步也离不开避难室，走廊上的事只能交给别人",
-     "option": "用急救箱里的东西清创缝合，整夜守着换药"
+     "cost": "走廊里不明真相的手下开始躁动",
+     "option": "卸下若头的配枪和主卡，画押后锁进隔间"
     },
     {
-     "cost": "路上要穿过叛徒的巡逻线",
-     "option": "冒险去主卧接医生和血浆回来"
+     "cost": "整晚得贴身看着若头，防对方借发报耍花招",
+     "option": "先不发回东京，押着若头向关西接应船发错误坐标"
     }
    ],
    "far": {
-    "consequence": "天亮时没有人能主持换代，龙神会陷入内斗。",
+    "consequence": "若头在关东再无立足之地，门外半船安保跟着倒戈。",
     "due_days": 1,
-    "trigger": "大小姐在避难室里昏迷不醒"
+    "trigger": "底单发回东京元老会"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [
     "h_akaho_wounded_command",
-    "h_akaho_fever_name"
+    "h_shibata_door_threat"
    ],
-   "id": "p_wound_fever_spike",
+   "id": "p_akaho_shibata_kansai_leverage",
    "immediate": {
-    "minutes": 8,
-    "text": "纱布又红了一圈，大小姐的额头烫得吓人。"
+    "minutes": 5,
+    "text": "若头额角渗汗，手按在腰间，不知是磕头还是拔枪。"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{yakuza_heiress_akaho.name}握着{traitor_lieutenant_shibata.name}收下关西近江会五亿日元定金、出卖本家航线的加密电文底单",
+    "holder": "yakuza_heiress_akaho",
+    "subject": "traitor_lieutenant_shibata"
+   },
    "location_ids": [
+    "yacht_main_deck_owners_stateroom",
     "yacht_lower_armored_panic_room"
    ],
    "near": {
-    "deadline_minutes": 20,
-    "text": "再拖下去，伤口会感染，人会昏迷。"
+    "deadline_minutes": 30,
+    "text": "本家元老会的卫星点名半小时后接通。"
    },
-   "objective": "止住血、压下烧，让大小姐清醒地撑到天亮。",
-   "source": "nature",
+   "objective": "在本家点名前，逼若头吐出同党名单。",
+   "source": "person",
    "start_minute": 5,
    "tags": [
-    "bodily_harm",
-    "romance_light"
+    "crime",
+    "violence"
    ],
-   "title": "失血与高烧",
-   "trigger": "大小姐左肩的伤口还在渗血，体温已经烧到三十九度半，手开始发抖，说话越来越慢。"
+   "title": "关西近江会分账密电",
+   "trigger": "夜审前，{yakuza_heiress_akaho.name}把关西五亿日元定金的电文底单拍在茶几上，勒令若头交代同党。"
   },
   {
-   "choice": "是出去拆，还是留在里面挡。",
+   "choice": "许诺销毁底单换对方守门，还是扣下底单命其去绑二心分子？",
    "exits": [
     {
-     "cost": "背上被破片划伤",
-     "option": "从通风管绕出去，在走廊里夺下起爆器"
+     "cost": "你替对方担下三千万，靠岸后要摆平财务堂口",
+     "option": "在底单背面签下保条，命对方守住水密门"
     },
     {
-     "cost": "冲击波震得你吐了血",
-     "option": "把沙发垫叠起来，用身体护住大小姐"
+     "cost": "甲板上一阵扭打，全船立刻进入戒备",
+     "option": "扣住原件，命冲锋队长去后甲板缴下其余枪手的械"
     }
    ],
    "far": {
-    "consequence": "海水灌进避难室，屋里的人被困在水下。",
+    "consequence": "冲锋队长被逼着亲手砸门，水密门撑不过半个钟头。",
     "due_days": 1,
-    "trigger": "炸药炸穿了底层隔舱"
+    "trigger": "冲锋队长被若头察觉动摇"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [
-    "h_shibata_door_threat"
+    "h_mashima_note",
+    "h_goda_hammer_smash"
    ],
-   "id": "p_hatch_breach_charge",
+   "id": "p_mashima_goda_casino_leverage",
    "immediate": {
-    "minutes": 2,
-    "text": "引信的蜂鸣透过钢板一声接一声。"
+    "minutes": 5,
+    "text": "冲锋队长攥紧大锤僵在原地，只求有人替自己讨一道免罪符。"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{radio_officer_mashima.name}握着{hammer_enforcer_goda.name}私吞横滨赌场三千万保护费、转进地下钱庄的电报底单",
+    "holder": "radio_officer_mashima",
+    "subject": "hammer_enforcer_goda"
+   },
    "location_ids": [
-    "yacht_lower_armored_panic_room",
-    "yacht_bilge_engineering_corridor"
+    "yacht_bilge_engineering_corridor",
+    "yacht_main_deck_owners_stateroom"
    ],
    "near": {
-    "deadline_minutes": 5,
-    "text": "起爆的冲击波足以震伤屋里所有人。"
+    "deadline_minutes": 10,
+    "text": "上层甲板传来换岗哨声，私下交易只剩不到十分钟。"
    },
-   "objective": "在起爆前阻止爆炸，或者护住大小姐挨过冲击。",
+   "objective": "让冲锋队长当场倒戈，替你们守门。",
    "source": "person",
    "start_minute": 20,
    "tags": [
-    "violence",
-    "bodily_harm"
+    "crime",
+    "violence"
    ],
-   "title": "门外的炸药",
-   "trigger": "若头的人在水密门外装了四联定向炸药，引信一秒一响，五分钟后起爆。"
+   "title": "横滨赌场亏空底单",
+   "trigger": "在轮机走廊水密门前，{radio_officer_mashima.name}亮出横滨赌场三千万亏空的电报底单，点破冲锋队长被胁迫上船的软肋。"
   },
   {
-   "choice": "是躲在暗处一个一个对付，还是放蒸汽封住走廊。",
+   "choice": "替继承人包扎妥当、扶其在广播里冷声训话，还是由你提刀走出走廊立威？",
    "exits": [
     {
-     "cost": "剩下的人会慌乱开枪，流弹四飞",
-     "option": "躲进蒸汽管道，悄悄放倒走在最前面的人"
+     "cost": "关掉麦克风后，对方靠在你肩头长舒一口气",
+     "option": "替对方换上深色西装遮住绷带，接通全船广播点名各岗报到"
     },
     {
-     "cost": "你们自己的退路也被封了",
-     "option": "拉下高压蒸汽阀，把整条走廊封住"
+     "cost": "镇住了走廊，你也成了二心分子的头号眼中钉",
+     "option": "把内室交给心腹，自己走出走廊当众缴下造谣者的械"
     }
    ],
    "far": {
-    "consequence": "他们往通风口里灌烟，逼屋里的人开门。",
+    "consequence": "中立的船员为了自保，成批倒向若头一边。",
     "due_days": 1,
-    "trigger": "叛徒找到避难室的通风口"
+    "trigger": "负伤示弱的传闻坐实"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [
-    "h_goda_hammer_smash"
+    "h_shibata_offer",
+    "h_goda_corridor_roar",
+    "h_akaho_gun_down"
    ],
-   "id": "p_mutineer_sweep",
-   "immediate": {
-    "minutes": 6,
-    "text": "军靴踩水的声音一步步逼近。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "yacht_bilge_engineering_corridor"
-   ],
-   "near": {
-    "deadline_minutes": 15,
-    "text": "他们在门口集结后，就能用火力压住整条走廊。"
-   },
-   "objective": "在他们合围之前打乱他们的节奏。",
-   "source": "person",
-   "start_minute": 30,
-   "tags": [
-    "violence",
-    "bodily_harm"
-   ],
-   "title": "叛徒逐舱搜查",
-   "trigger": "十二名枪手顺着轮机走廊一间一间踹门，枪灯距离避难室只剩二十米。"
-  },
-  {
-   "choice": "是下水去拉隔离闸，还是放弃电力改用手动通风。",
-   "exits": [
-    {
-     "cost": "手臂被电弧灼伤",
-     "option": "跳进齐腰深的海水里拉下隔离闸"
-    },
-    {
-     "cost": "避难室越来越闷，大小姐的烧更难退",
-     "option": "放弃电力，点起冷光棒，用手摇风箱通风"
-    }
-   ],
-   "far": {
-    "consequence": "船尾起火，整艘船开始下沉。",
-    "due_days": 1,
-    "trigger": "发电机短路引起油气爆炸"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "h_goro_tube_call"
-   ],
-   "id": "p_engine_room_flooding",
+   "id": "p_bilge_mutiny_whisper",
    "immediate": {
     "minutes": 5,
-    "text": "红灯开始乱闪，空气里全是电缆烧焦的味道。"
+    "text": "两名外围护卫借口查岗，凑近避难室的通风口偷听。"
    },
    "leverage": null,
    "location_ids": [
     "yacht_bilge_engineering_corridor",
-    "yacht_lower_armored_panic_room"
+    "yacht_lower_armored_panic_room",
+    "yacht_open_stern_helipad_deck"
    ],
    "near": {
-    "deadline_minutes": 15,
-    "text": "主电网短路后，避难室的电动门会锁死。"
+    "deadline_minutes": 20,
+    "text": "后甲板警戒哨出现十分钟的空档。"
    },
-   "objective": "保住避难室的独立供电。",
-   "source": "nature",
-   "start_minute": 40,
+   "objective": "在流言坐实前压住它。",
+   "source": "rumor",
+   "start_minute": 15,
    "tags": [
-    "disaster"
+    "violence",
+    "workplace_power"
    ],
-   "title": "配电室进水",
-   "trigger": "右舷水密门被浪打裂，海水灌进主配电室，备用发电机冒着白烟，十五分钟后全船断电。"
+   "title": "当家负伤的流言",
+   "trigger": "后甲板与轮机走廊传开风声：继承人在内室受了伤迟迟不露面，几个摇摆的护卫在拐角窃窃私语。"
   },
   {
-   "choice": "是上甲板发射信号弹，还是配合老舵手砍断锚链滑开。",
+   "choice": "护着继承人回套房暗格完成正式验印，还是走避难室应急专线直接向本家揭发内鬼？",
    "exits": [
     {
-     "cost": "差点被巨浪卷下海",
-     "option": "冲上后甲板，朝货轮驾驶室打出信号弹"
+     "cost": "终端的高功率信号暴露了你们就在套房里",
+     "option": "拉下防弹帘，两人合对口令与金印，保住航线大权"
     },
     {
-     "cost": "船身猛地倾斜，套房里的东西砸了一地",
-     "option": "配合老舵手砍断锚链，让船顺浪滑开"
+     "cost": "断了叛乱者的退路，天亮前要死守最后几小时",
+     "option": "动用避难室专线向本家提交清党名单，申请靠岸后开家法大会"
     }
    ],
    "far": {
-    "consequence": "游艇断成两截，所有秘密一起沉进海底。",
+    "consequence": "本家顺水推舟，把航线交给关西代管。",
     "due_days": 1,
-    "trigger": "散货轮拦腰撞上黑龙丸"
+    "trigger": "黑龙丸被判定失联"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [
-    "h_goro_tube_call",
-    "h_mashima_note"
+    "h_mashima_frequency",
+    "h_morita_old_secret",
+    "h_goro_tube_call"
    ],
-   "id": "p_freighter_collision_course",
+   "id": "p_kansai_charter_ultimatum",
    "immediate": {
-    "minutes": 7,
-    "text": "雷达屏上那团红色的回波越来越大。"
+    "minutes": 10,
+    "text": "家纹金印锁在酒柜暗格里，备用卫星密钥由亲信分持。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "yacht_main_deck_owners_stateroom",
+    "yacht_lower_armored_panic_room"
+   ],
+   "near": {
+    "deadline_minutes": 25,
+    "text": "验印窗口只剩二十五分钟。"
+   },
+   "objective": "按时回传双人核验口令，保住东海航线。",
+   "source": "institution",
+   "start_minute": 40,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "本家子夜验印",
+   "trigger": "套房的加密传真机吐出本家急电：元老会要在子夜前核验第四代继承人的家纹金印与安全口令。"
+  },
+  {
+   "choice": "冒雨去停机坪加固直升机系留索，还是退回内室用热毛巾驱散满身寒气？",
+   "exits": [
+    {
+     "cost": "回来时全身湿透，得立刻在内室换衣取暖",
+     "option": "顶着暴雨把四根系留钢索重新加固"
+    },
+    {
+     "cost": "放弃今夜起飞，只能靠黑龙丸自己顶过风暴",
+     "option": "锁闭外甲板的防风门，在榻榻米内室倒上热清酒替对方暖手"
+    }
+   ],
+   "far": {
+    "consequence": "直升机滑进海里，天亮后只剩黑龙丸这一条路。",
+    "due_days": 1,
+    "trigger": "系留索被浪扯断"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "h_akaho_dawn_choice",
+    "h_goro_last_order",
+    "h_morita_plasma"
+   ],
+   "id": "p_cyclone_cross_wave",
+   "immediate": {
+    "minutes": 10,
+    "text": "船身大幅摇摆，系留索绷得咯吱作响，酒柜里的水晶瓶撞出声来。"
    },
    "leverage": null,
    "location_ids": [
@@ -2292,64 +2389,65 @@
     "yacht_main_deck_owners_stateroom"
    ],
    "near": {
-    "deadline_minutes": 15,
-    "text": "两船相撞，没有人能活下来。"
+    "deadline_minutes": 25,
+    "text": "室外风速逼近直升机起降的临界值。"
    },
-   "objective": "在撞上之前避开，或者让对方看见自己。",
+   "objective": "守住直升机这条撤离通道，也守住船舱里的人。",
    "source": "nature",
-   "start_minute": 55,
+   "start_minute": 60,
    "tags": [
     "disaster"
    ],
-   "title": "漂来的散货轮",
-   "trigger": "一艘失去动力的十万吨散货轮顺着洋流朝黑龙丸漂来，距离不到三海里，十五分钟后就会撞上。"
+   "title": "热带气旋横浪",
+   "trigger": "黑龙丸驶入气旋外围风圈，黑浪接连拍上后甲板停机坪，传声管提醒全船固定器物、远离外舷。"
   },
   {
-   "choice": "是带着大小姐去驾驶室和若头做个了断，还是叫直升机来接人撤离。",
+   "choice": "去轮机走廊配电箱手动并网，还是趁全船昏暗转移账册和密钥？",
    "exits": [
     {
-     "cost": "大小姐带着伤去拼命，你得一直挡在前面",
-     "option": "陪大小姐去驾驶室，当面和若头了结"
+     "cost": "配电箱的声响在底舱格外清楚，得提防暗处的视线",
+     "option": "在配电柜切入一号主机并网，让新风与监控重新亮起"
     },
     {
-     "cost": "游艇被引爆自沉，船上的账册全部沉海",
-     "option": "叫直升机来接人，放弃黑龙丸"
+     "cost": "避难室半小时只靠机械锁舌把守，屋里闷热",
+     "option": "借应急红光掩护，从暗梯悄悄转移全部账册与密钥"
     }
    ],
    "far": {
-    "consequence": "九条家在关东的地盘被一夜吞并。",
+    "consequence": "避难室的门只剩机械锁舌，外头的人只要找对了工具就能进来。",
     "due_days": 1,
-    "trigger": "关西的人登上黑龙丸"
+    "trigger": "水密门转为纯手动"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [
-    "h_akaho_dawn_choice"
+    "h_goda_hammer_smash",
+    "h_akaho_dont_go",
+    "h_shibata_door_threat"
    ],
-   "id": "p_dawn_rival_ship",
+   "id": "p_generator_bus_trip",
    "immediate": {
-    "minutes": 10,
-    "text": "海平面上已经能看见探照灯的光。"
+    "minutes": 5,
+    "text": "避难室的新风与电子门禁切进蓄电池倒计时。"
    },
    "leverage": null,
    "location_ids": [
-    "yacht_main_deck_owners_stateroom",
-    "yacht_open_stern_helipad_deck"
+    "yacht_bilge_engineering_corridor",
+    "yacht_lower_armored_panic_room"
    ],
    "near": {
-    "deadline_minutes": 25,
-    "text": "关西的船一靠上来，船上的人就都没救了。"
+    "deadline_minutes": 40,
+    "text": "蓄电池只够监控分屏再撑四十分钟。"
    },
-   "objective": "在关西的船到之前，夺回驾驶室或者撤离。",
-   "source": "institution",
-   "start_minute": 75,
+   "objective": "在蓄电池耗尽前，恢复避难室的供电。",
+   "source": "accident",
+   "start_minute": 80,
    "tags": [
-    "workplace_power",
-    "violence"
+    "disaster"
    ],
-   "title": "破晓前的关西船",
-   "trigger": "关西的接应船已经进入二十海里范围，天亮时就会靠上来；在那之前不夺回黑龙丸，就再没有机会。"
+   "title": "副发电机过载跳闸",
+   "trigger": "大浪让底舱冷却泵进气，二号副发电机过载跳闸，全船主照明熄灭，只剩暗红的应急壁灯。"
   }
  ],
  "region": "私人游艇黑龙丸：底层防弹避难室、轮机走廊、主甲板套房与后甲板停机坪",
@@ -2382,26 +2480,26 @@
   "testing": "越过规矩"
  },
  "status": "released",
- "style_hint": "巨浪砸在防弹舷窗上的闷响、船身倾斜时滚过地毯的酒瓶、应急红灯下渗血的纱布、门外军靴踩过积水的声音；写高位者在最狼狈时仍不肯低头，写守护者第一次越过规矩说出自己的想法。",
+ "style_hint": "多写浪声、船身倾斜与应急红光，对白短而硬，把软处藏在动作里。",
  "tension_engines": [
   {
    "id": "te_rank_vs_trust",
-   "text": "家规要保镖服从，伤势要保镖做主；今夜谁听谁的，决定了大小姐能不能活到天亮。"
+   "text": "家规要保镖服从，人情要保镖做主；今夜谁听谁的，决定了大小姐能不能坐稳当家的位子。"
   },
   {
    "id": "te_wound_and_fever",
-   "text": "失血和高烧让大小姐越来越难撑，可大小姐越难撑，越不肯示弱。"
+   "text": "手臂旧伤与整夜未眠让大小姐指尖发凉，可越是四面楚歌，当家人越不肯在外人面前露出一丝软弱。"
   },
   {
    "id": "te_door_siege",
-   "text": "门外有炸药、有铁锤、有枪，门里只有一个急救箱和两个人。"
+   "text": "门外是若头的人、冲锋队长的铁锤和半船摇摆的安保，门里只有一个急救箱和两个人。"
   },
   {
    "id": "te_storm_capsize",
-   "text": "热带气旋还在加强，老舵手在流血，船身倾斜一次比一次接近翻船的角度。"
+   "text": "热带气旋还在加强，老舵手独自守着驾驶台，船身一次比一次斜得厉害。"
   }
  ],
- "title": "暴风雨中的黑龙丸：极道千金与贴身保镖",
+ "title": "黑龙丸风暴夜航",
  "tone": [
   "怒海孤舟",
   "防弹暗室",
@@ -2459,7 +2557,7 @@
    "category": "意外",
    "id": "t_charges_cook_off",
    "requires": [],
-   "text": "漏电引爆了叛徒堆在走廊里的备用炸药，外面的通道整个塌了，避难室反而被彻底封成了一座孤岛。"
+   "text": "漏电烧断了轮机走廊的门禁总线，若头的人被关在下层甲板，避难室反而成了全船最安静的地方。"
   }
  ]
 }

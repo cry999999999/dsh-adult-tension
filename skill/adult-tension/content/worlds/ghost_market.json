@@ -105,8 +105,8 @@
  ],
  "cast_combos": [
   {
-   "chemistry": "你牵的那支驼队，就是上个月黑夜丢下{left_interpreter.name}的那一支；{raid_chief.name}找你打听过驼队几时出窟、值钱的货在哪几峰骆驼背上。",
-   "id": "k_puller_raid",
+   "chemistry": "你牵的这支驼队今夜一过沙梁就要被截，而领头的{raid_chief.name}把你拉进背风处，塞给你一枚能保命的骨哨。",
+   "id": "k_puller_raid_solo",
    "identity_ids": [
     "camel_puller"
    ],
@@ -118,55 +118,26 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 0
+      "tension": 4,
+      "trust": 3
      },
      "b": "raid_chief",
      "b_to_a": {
-      "tension": 1,
-      "trust": 0
+      "tension": 4,
+      "trust": 3
      },
-     "reason": "{raid_chief.name}请你喝过一碗酒，问的都是驼队的事",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "left_interpreter",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "驼队丢下{left_interpreter.name}那晚，是你把缰绳牵走的",
-     "stage": "acquainted"
-    },
-    {
-     "a": "raid_chief",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "left_interpreter",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 0
-     },
-     "reason": "{raid_chief.name}想知道{left_interpreter.name}记得的那笔账",
-     "stage": "stranger"
+     "reason": "去年沙暴把你们困在同一顶帐里三天，{raid_chief.name}把最后一口水喂进你嘴里，顺势吻住了你没说完的话",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "raid_chief",
-    "left_interpreter"
+    "raid_chief"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想保住自己的命，又不想替一笔脏账卖命",
-    "limit_gap": "灯灭前驼队就要出窟",
-    "meeting_reason": "上个月黑夜你们三个在窟口碰过面",
-    "resource_gap": "{raid_chief.name}有刀客和骆驼，{left_interpreter.name}记得驼队账簿上的那笔账，你只有一根缰绳"
+    "irreplaceable_goal": "你想保住自己和同队驼夫的性命，又想把{raid_chief.name}从这趟亡命买卖里劝住",
+    "limit_gap": "驼队二更前就要拔营出窟",
+    "meeting_reason": "你在沙梁边喂骆驼时，{raid_chief.name}独自翻下驼背走到了你身后",
+    "resource_gap": "{raid_chief.name}手下有二十名带刀骑手，你只有一根牵驼绳和一身力气"
    },
    "tags": [
     "violence"
@@ -177,8 +148,8 @@
    ]
   },
   {
-   "chemistry": "泉眼干了以后，{oil_seller.name}说要拿灯油换你最后几囊水；{tavern_keeper.name}听说了，托人带话让你先把水卖给酒肆，价钱好商量。",
-   "id": "k_water_oil",
+   "chemistry": "老泉眼干了以后，你挑着最后两囊水站在琉璃酒肆后门；{tavern_keeper.name}没有压你的价，反而拉你进内帷倒了一碗葡萄美酒。",
+   "id": "k_peddler_tavern_solo",
    "identity_ids": [
     "water_peddler"
    ],
@@ -190,55 +161,26 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "oil_seller",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{oil_seller.name}买过你的水，从不讨价",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
+      "tension": 3,
+      "trust": 3
      },
      "b": "tavern_keeper",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 3
      },
-     "reason": "{tavern_keeper.name}给你留过一碗酒",
-     "stage": "acquainted"
-    },
-    {
-     "a": "oil_seller",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "tavern_keeper",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "酒肆的灯油都是{oil_seller.name}熬的",
-     "stage": "acquainted"
+     "reason": "你交水时{tavern_keeper.name}总多付一枚铜钱，说是买你多留一盏茶的工夫，上回还当众替你擦掉唇上的酒渍",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "oil_seller",
     "tavern_keeper"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想把水卖个好价，又想知道谁真的渴",
-    "limit_gap": "灯油见底，水也快见底",
-    "meeting_reason": "你们三个平常在鬼市里低头不见抬头见",
-    "resource_gap": "{oil_seller.name}有满窟的灯油，{tavern_keeper.name}有酒肆和熟客，你只有几囊水"
+    "irreplaceable_goal": "你想借酒肆的庇护安稳熬过今夜抢水风波，也想陪{tavern_keeper.name}走完打烊后的路",
+    "limit_gap": "二更灯灭前，各家商队都会来抢最后的水源",
+    "meeting_reason": "每次开市你都给琉璃酒肆送第一担水，{tavern_keeper.name}总给你留着后门",
+    "resource_gap": "{tavern_keeper.name}坐拥一窖美酒与半座鬼市的人情账，你只有扁担上最后两囊清水"
    },
    "tags": [],
    "tension_engine_ids": [
@@ -247,7 +189,257 @@
    ]
   },
   {
-   "chemistry": "你补壁画时发现一尊佛像的蒙布底下画着一条路，和{map_maker.name}那张从不卖的图一模一样；{oil_seller.name}说那尊佛是{oil_seller.ta}蒙上的，不许你揭。",
+   "chemistry": "你白天在千佛窟修补壁画，夜里给{map_maker.name}研朱砂画路图；你一眼就看出{map_maker.name}今晚卖给大商队的那张图故意画偏了半道沙梁。",
+   "id": "k_painter_map_solo",
+   "identity_ids": [
+    "mural_painter"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "map_maker",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "你替{map_maker.name}在路图背面画过一幅不许外人看的小像，那晚对方把画按在胸口，拉你倒进侧窟的毡毯里",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "map_maker"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想护住{map_maker.name}不被买图的人寻仇，一起按那张真图走出沙海",
+    "limit_gap": "二更灯油烧尽前，买图的人就会回来核对",
+    "meeting_reason": "你的画具就寄放在{map_maker.name}的侧窟里，每逢月黑夜两人都共用一盏灯",
+    "resource_gap": "{map_maker.name}记得整片瀚海的活路，你认得壁画底下前人留下的暗记"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_wrong_map",
+    "te_lamp_out"
+   ]
+  },
+  {
+   "chemistry": "{water_finder.name}知道新泉眼在哪，却只肯雇你一个人贴身护送；窟外好几拨刀客都在盯你们的驼铃，{water_finder.name}把水囊系在了你的腰带上。",
+   "id": "k_blade_finder_solo",
+   "identity_ids": [
+    "hired_blade"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "water_finder",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "你们携手走过三趟瀚海商路，每次平安归来都在沙海边城的客舍里同榻而眠",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
+    "water_finder"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想平平安安护着{water_finder.name}找到新水，不让任何一伙沙匪碰对方一根手指",
+    "limit_gap": "明晚驼队断水前必须摸清那处新泉眼",
+    "meeting_reason": "{water_finder.name}在第一重窟挑中了你的刀，点名要你今夜寸步不离",
+    "resource_gap": "{water_finder.name}有探沙寻泉的绝活，你有护人出沙梁的快刀"
+   },
+   "tags": [
+    "violence"
+   ],
+   "tension_engine_ids": [
+    "te_water_shift",
+    "te_cargo_raid"
+   ]
+  },
+  {
+   "chemistry": "上个月风沙突起时商队走散，你找了整整一个月才在鬼市重逢{left_interpreter.name}；对方手里还贴身收着替你管的那半部密语账簿。",
+   "id": "k_sabao_interpreter_solo",
+   "identity_ids": [
+    "caravan_master"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "left_interpreter",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 2
+     },
+     "reason": "出塞前在关城驿馆的庆功夜，{left_interpreter.name}坐在你膝头一字一句教你念西域情诗，吻得难舍难分",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "left_interpreter"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想解开上个月走散的误会，把{left_interpreter.name}稳稳当当地带回自己身边",
+    "limit_gap": "二更灯灭前必须把{left_interpreter.name}重新带回商队名册",
+    "meeting_reason": "你一进主窟就越过人群，在侧窟帘外抓住了{left_interpreter.name}的手腕",
+    "resource_gap": "你掌管三十峰骆驼的商队与通关过所，{left_interpreter.name}通晓五国商路暗语与你的旧账"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_nowhere",
+    "te_wrong_map"
+   ]
+  },
+  {
+   "chemistry": "你是都护府派来的察访使，{sand_captain.name}带着骑兵在沙梁外听你号令，今夜又换了便服偷偷进窟护在你三步之内。",
+   "id": "k_inspector_captain_solo",
+   "identity_ids": [
+    "inspector"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "sand_captain",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "你们在边城同历三年风霜，每次休沐回府都关起门来同饮一壶热酒、共拥一床锦被",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
+    "sand_captain"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想查明死人手印的悬案，又不让{sand_captain.name}因为私放鬼市而被兵曹问罪",
+    "limit_gap": "第三声号角响起前，你得决定今夜是封窟还是放人一马",
+    "meeting_reason": "你微服进窟查案，{sand_captain.name}放心不下，亲自卸甲跟在你身边",
+    "resource_gap": "你有都护府的密奏实权，{sand_captain.name}有巡沙骑兵与吹响号角的决断权"
+   },
+   "tags": [
+    "violence"
+   ],
+   "tension_engine_ids": [
+    "te_horn",
+    "te_lamp_out"
+   ]
+  },
+  {
+   "chemistry": "你在窟里办事要借长明灯的光，{oil_seller.name}每次巡窟都会往你身边的灯盏里多添一勺羊脂油；后窟那尊蒙布佛像的秘密，只有你们两个人知道。",
+   "id": "k_painter_oil_solo",
+   "identity_ids": [],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "oil_seller",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "白日散市后{oil_seller.name}替你拂去虎口烟灰，温热的掌心顺着你手背慢慢拢紧",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "oil_seller"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想帮{oil_seller.name}把后窟的旧账遮过去，留住这盏每天为你多亮一刻的灯",
+    "limit_gap": "今夜长明灯提前一个时辰见底，后窟的蒙布快瞒不住了",
+    "meeting_reason": "每次{oil_seller.name}去后窟熬油，都会先停在你常待的石壁旁",
+    "resource_gap": "{oil_seller.name}管着全窟灯火的寿数，你握着能帮{oil_seller.name}遮掩后窟旧账的门路"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_lamp_out",
+    "te_wrong_map"
+   ]
+  },
+  {
+   "chemistry": "{map_maker.name}卖给别人的路图全都故意留了一处错，唯独塞进你怀里的那卷小羊皮，一笔一划标着能活着回城的正路。",
+   "id": "k_switch_map_solo",
+   "identity_ids": [],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "map_maker",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "每次在侧窟交接路图时，{map_maker.name}都会用毛笔尾端轻轻扫过你的掌心留下一点朱砂",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "map_maker"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想带{map_maker.name}平安走出这片改道的沙海，不再让对方独自留在暗窟画图",
+    "limit_gap": "后半夜沙梁塌陷前必须定下出窟路线",
+    "meeting_reason": "每次灯油快尽时，你都会去侧窟帮{map_maker.name}收摊",
+    "resource_gap": "{map_maker.name}握着出沙海的唯一真图，你握着带{map_maker.name}离开鬼市的通关门路"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_wrong_map",
+    "te_nowhere"
+   ]
+  },
+  {
+   "chemistry": "{oil_seller.name}昨夜先找到你，求你在佛像暗格前替自己作证；你没答应，反倒把{map_maker.name}也约来侧窟，三个人第一次把那张死人货契摊在同一盏灯下。",
    "id": "k_painter_map",
    "identity_ids": [
     "mural_painter"
@@ -260,44 +452,44 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 1
+      "tension": 3,
+      "trust": 3
      },
      "b": "map_maker",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 3
      },
-     "reason": "{map_maker.name}跟你借过朱砂",
-     "stage": "acquainted"
+     "reason": "{map_maker.name}借你的画笔改图，改完从不还笔，说笔杆上沾着你的味道，夜里握着才睡得着",
+     "stage": "flirting"
     },
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 0
+      "tension": 3,
+      "trust": 2
      },
      "b": "oil_seller",
      "b_to_a": {
-      "tension": 1,
-      "trust": 1
+      "tension": 3,
+      "trust": 2
      },
-     "reason": "{oil_seller.name}每夜给你的画架边添一盏灯",
-     "stage": "acquainted"
+     "reason": "{oil_seller.name}替你添灯油时故意握住你的手腕，低声问你有没有掀开过佛像的蒙布",
+     "stage": "testing"
     },
     {
      "a": "map_maker",
      "a_to_b": {
-      "tension": 2,
-      "trust": 0
+      "tension": 3,
+      "trust": 1
      },
      "b": "oil_seller",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 0
      },
-     "reason": "{map_maker.name}画的那条路，{oil_seller.name}好像走过",
-     "stage": "stranger"
+     "reason": "{map_maker.name}认出了死人货契上的假路标，正拿这桩旧账拿捏{oil_seller.name}",
+     "stage": "testing"
     }
    ],
    "slots": [
@@ -305,10 +497,10 @@
     "oil_seller"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想知道那条画在佛像底下的路通向哪里",
-    "limit_gap": "灯一灭，窟里就什么也看不清了",
-    "meeting_reason": "你在窟里补画的那几个月，两个人都常来看你干活",
-    "resource_gap": "{map_maker.name}有满地的路图，{oil_seller.name}有满窟的灯，你有一箱颜料和一双见过壁画的眼睛"
+    "irreplaceable_goal": "你想按住这桩死人手印的旧案，保住侧窟的灯火与出窟的活路",
+    "limit_gap": "二更灯灭前流言就会炸开，去留今夜见分晓",
+    "meeting_reason": "是你亲手把两人约到侧窟与后窟相连的石缝边",
+    "resource_gap": "{map_maker.name}握着笔迹铁证，{oil_seller.name}握着全窟的灯油，你守着那尊藏有暗记的佛像壁画"
    },
    "tags": [],
    "tension_engine_ids": [
@@ -317,79 +509,7 @@
    ]
   },
   {
-   "chemistry": "{water_finder.name}雇你护送去新泉眼；{raid_chief.name}私下找过你，出三倍的价，要你把{water_finder.ta}带到自己的驼队里。",
-   "id": "k_blade_water",
-   "identity_ids": [
-    "hired_blade"
-   ],
-   "player_positions": [
-    "equal"
-   ],
-   "power_structure": "equal",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "water_finder",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{water_finder.name}给你的驼队找过一回井",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "raid_chief",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 0
-     },
-     "reason": "你押的上一趟货，有人说是{raid_chief.name}截的",
-     "stage": "acquainted"
-    },
-    {
-     "a": "water_finder",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "raid_chief",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{raid_chief.name}的驼队已经三天没喝到井水",
-     "stage": "stranger"
-    }
-   ],
-   "slots": [
-    "water_finder",
-    "raid_chief"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "你想守住走镖的规矩，又不想看着一条商路渴死",
-    "limit_gap": "驼队都在等水，灯灭前就得出发",
-    "meeting_reason": "你押货时跟这两个人都打过交道",
-    "resource_gap": "{water_finder.name}知道水在哪，{raid_chief.name}有刀客和骆驼，你有一把刀"
-   },
-   "tags": [
-    "violence"
-   ],
-   "tension_engine_ids": [
-    "te_water_shift",
-    "te_cargo_raid"
-   ]
-  },
-  {
-   "chemistry": "{left_interpreter.name}是你上个月黑夜丢在鬼市的译员，翻出过你账簿上的一笔账；{sand_captain.name}说只要你交出一个盗贼，那笔账就没人查。",
+   "chemistry": "三年前你、{left_interpreter.name}和{sand_captain.name}在烽燧下歃过酒，约定谁落难另两人必救；今夜第一声巡沙号角响起，这个约第一次要兑现，而两人要救的东西并不一样。",
    "id": "k_sabao_interpreter",
    "identity_ids": [
     "caravan_master"
@@ -403,43 +523,43 @@
      "a": "player",
      "a_to_b": {
       "tension": 3,
-      "trust": 1
+      "trust": 2
      },
      "b": "left_interpreter",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 2
      },
-     "reason": "你丢下{left_interpreter.name}那晚，没有回头",
-     "stage": "acquainted"
+     "reason": "{left_interpreter.name}把账簿贴在胸口看着你，问你今夜出窟的驼背上有没有留出位置",
+     "stage": "testing"
     },
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 0
+      "tension": 2,
+      "trust": 3
      },
      "b": "sand_captain",
      "b_to_a": {
       "tension": 2,
-      "trust": 0
+      "trust": 3
      },
-     "reason": "{sand_captain.name}每年都收你一份过路钱",
-     "stage": "acquainted"
+     "reason": "每次商队入关你都与{sand_captain.name}在烽燧下对酒核验过所，彼此知根知底",
+     "stage": "familiar"
     },
     {
      "a": "left_interpreter",
      "a_to_b": {
-      "tension": 2,
-      "trust": 0
+      "tension": 3,
+      "trust": 1
      },
      "b": "sand_captain",
      "b_to_a": {
-      "tension": 2,
-      "trust": 0
+      "tension": 3,
+      "trust": 1
      },
-     "reason": "{sand_captain.name}问过{left_interpreter.name}有没有过所",
-     "stage": "stranger"
+     "reason": "{sand_captain.name}想从{left_interpreter.name}嘴里套出鬼市暗语，两人在相互试探底线",
+     "stage": "testing"
     }
    ],
    "slots": [
@@ -447,271 +567,14 @@
     "sand_captain"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想把这一页翻过去，又说不清自己欠了谁",
-    "limit_gap": "号角随时会响，那笔账随时会被翻出来",
-    "meeting_reason": "{left_interpreter.name}给你的商队翻了三年货契，{sand_captain.name}收过你商队的过路钱",
-    "resource_gap": "你有商队和金饼，{sand_captain.name}有号角和骑兵，{left_interpreter.name}只有一张会说五种话的嘴"
+    "irreplaceable_goal": "你想带着整支商队和{left_interpreter.name}全身而退，也想让{sand_captain.name}平安交差",
+    "limit_gap": "第三声号角响起前必须决定带谁出窟、替谁封口",
+    "meeting_reason": "按当年的约定，号角一响三人就在第一重窟的石佛脚下碰头",
+    "resource_gap": "你有商队和财货，{left_interpreter.name}握着你的旧账本，{sand_captain.name}握着封窟的缉盗文书"
    },
-   "tags": [
-    "violence"
-   ],
+   "tags": [],
    "tension_engine_ids": [
     "te_nowhere",
-    "te_horn"
-   ]
-  },
-  {
-   "chemistry": "你奉都护府的命来查鬼市，{sand_captain.name}陪着你装糊涂；{tavern_keeper.name}的灯油账上，每个月都记着骑兵的一份。",
-   "id": "k_inspector_lamp",
-   "identity_ids": [
-    "inspector"
-   ],
-   "player_positions": [
-    "high"
-   ],
-   "power_structure": "player_high",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "sand_captain",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{sand_captain.name}亲自给你牵过马",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "tavern_keeper",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{tavern_keeper.name}给你斟酒时，说你不像商人",
-     "stage": "stranger"
-    },
-    {
-     "a": "sand_captain",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "tavern_keeper",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{sand_captain.name}每个月黑夜都在酒肆坐到灯灭",
-     "stage": "acquainted"
-    }
-   ],
-   "slots": [
-    "sand_captain",
-    "tavern_keeper"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "你想把差事办完，又越来越不想把人交出去",
-    "limit_gap": "密令限你三天回报，灯油今夜就见底",
-    "meeting_reason": "你扮成商人进窟那天，两个人都多看了你一眼",
-    "resource_gap": "你有鱼符和密令，{sand_captain.name}有号角，{tavern_keeper.name}有那本灯油账"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "te_horn",
-    "te_lamp_out"
-   ]
-  },
-  {
-   "chemistry": "{tavern_keeper.name}关门以后要走的那条路，画在{map_maker.name}一张从不卖的图上；{map_maker.name}托你问一句，{tavern_keeper.name}到底要不要那张图。",
-   "id": "k_map_and_wine",
-   "identity_ids": [],
-   "player_positions": [
-    "low",
-    "equal",
-    "high"
-   ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "map_maker",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{map_maker.name}卖给你的图，错的那一处你找到过",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "tavern_keeper",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{tavern_keeper.name}记得你喝第一碗时洒在地上的那一滴",
-     "stage": "acquainted"
-    },
-    {
-     "a": "map_maker",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 1
-     },
-     "b": "tavern_keeper",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{map_maker.name}从不进酒肆，却知道{tavern_keeper.name}爱听哪支曲子",
-     "stage": "acquainted"
-    }
-   ],
-   "slots": [
-    "map_maker",
-    "tavern_keeper"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "你想让该走的人走得成",
-    "limit_gap": "灯油见底那天，酒肆就关门",
-    "meeting_reason": "这两个人你都常在鬼市里碰见",
-    "resource_gap": "{map_maker.name}有那张图，{tavern_keeper.name}有最后一缸灯油，你是唯一能在两边传话的人"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "te_wrong_map",
-    "te_lamp_out"
-   ]
-  },
-  {
-   "chemistry": "{water_finder.name}找到的新泉眼挨着一座废烽燧；{sand_captain.name}说那座烽燧里藏着沙匪；{left_interpreter.name}听得懂里面那些人说的话，说那只是一群没有过所的人。",
-   "id": "k_three_roads",
-   "identity_ids": [],
-   "player_positions": [
-    "low",
-    "equal",
-    "high"
-   ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "water_finder",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{water_finder.name}分过你一口水",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "sand_captain",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{sand_captain.name}在号角响之前提醒过你一回",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "left_interpreter",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{left_interpreter.name}替你翻过一张货契",
-     "stage": "acquainted"
-    },
-    {
-     "a": "water_finder",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "sand_captain",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{sand_captain.name}一直想知道新泉眼在哪",
-     "stage": "stranger"
-    },
-    {
-     "a": "water_finder",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "left_interpreter",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{left_interpreter.name}跟{water_finder.name}打听过废烽燧",
-     "stage": "stranger"
-    },
-    {
-     "a": "sand_captain",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 0
-     },
-     "b": "left_interpreter",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{left_interpreter.name}没有过所，{sand_captain.name}一直没抓",
-     "stage": "stranger"
-    }
-   ],
-   "slots": [
-    "water_finder",
-    "sand_captain",
-    "left_interpreter"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "你想让水和人都保住，又不想让沙梁上见血",
-    "limit_gap": "驼队等着水，校尉等着交差",
-    "meeting_reason": "这三个人你都在不同的月黑夜里碰见过",
-    "resource_gap": "{water_finder.name}知道泉眼，{sand_captain.name}有号角和骑兵，{left_interpreter.name}听得懂废烽燧里的话，你是唯一一个跟三个人都说得上话的"
-   },
-   "tags": [
-    "violence"
-   ],
-   "tension_engine_ids": [
-    "te_water_shift",
     "te_horn"
    ]
   }
@@ -813,7 +676,7 @@
      "灯下两个人的手指沿着同一条路线走"
     ],
     "preconditions": [
-     "图已经卖完"
+     "图已经卖完，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -934,7 +797,7 @@
      "灯快灭时琉璃碗里晃着的最后一点光"
     ],
     "preconditions": [
-     "灯已经熄了"
+     "灯已经熄了，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1055,7 +918,7 @@
      "用一种只有两个人懂的话说悄悄话"
     ],
     "preconditions": [
-     "已经找到了驼队"
+     "已经找到了驼队，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1178,7 +1041,7 @@
      "沙梁上并排坐着等天亮"
     ],
     "preconditions": [
-     "刀已经收起来了"
+     "刀已经收起来了，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      1,
@@ -1301,7 +1164,7 @@
      "号角收起来以后的一段安静"
     ],
     "preconditions": [
-     "号角已经挂回腰上"
+     "号角已经挂回腰上，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1424,7 +1287,7 @@
      "熬好的油在锅里慢慢凝住的那一刻"
     ],
     "preconditions": [
-     "灯都添完了"
+     "灯都添完了，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -1545,7 +1408,7 @@
      "分同一只水囊里的最后一口水"
     ],
     "preconditions": [
-     "水囊已经灌满"
+     "水囊已经灌满，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1723,6 +1586,23 @@
    "start_minute": 1350,
    "tags": [],
    "title": "去契人那里按手印"
+  },
+  {
+   "beats": [
+    "烧热的蜂蜡沿着驼皮接缝一点点抹平",
+    "对方托住你的手腕对准油灯，替你吹开指节上的沙粒",
+    "帘外主窟的驼铃声隔着石壁传进来，显得格外遥远"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "a_mend_waterskin",
+   "location_ids": [
+    "map_stall",
+    "back_cave"
+   ],
+   "start_minute": 1365,
+   "tags": [],
+   "title": "在侧窟灯下修补驼皮水囊"
   }
  ],
  "default_npc_gender_mix": {
@@ -1940,7 +1820,7 @@
    "id": "glass_tavern",
    "name": "琉璃酒肆",
    "pressure_modifiers": {
-    "p_forged_seal": "邻桌有人压低声音说起一张按了死人手印的货契。",
+    "p_forged_seal": "酒肆角落的胡床边，几名商客正围着那张旧货契低声议论手印的来历。",
     "p_lamp_oil": "门口那缸灯油已经见了底，跑堂拿勺子刮着缸壁。"
    },
    "privacy": "semi",
@@ -1963,9 +1843,9 @@
    "id": "map_stall",
    "name": "绘图人的侧窟",
    "pressure_modifiers": {
-    "p_forged_seal": "一张路图被人翻过，压在最上面，笔迹和地上其他的都不太一样。"
+    "p_forged_seal": "侧窟案头摊着那张盖了死人手印的货契，红泥印子在油灯下泛着暗光。"
    },
-   "privacy": "semi",
+   "privacy": "private",
    "tags": [],
    "visibility": "只有来买图的人才会钻进来；帘子一放，主窟的吵嚷就隔远了",
    "witnesses": []
@@ -2095,7 +1975,7 @@
   ],
   "order": "family_first"
  },
- "notes": "第二批世界（用户 2026-10-03 素材库的改写，见 content-src/concepts/batch2-concepts.md 第 13 个）。鬼市是人做的暗市，不写鬼怪；一个时空，不串别的朝代地名。性别按会话偏好生成（D15）。",
+ "notes": "第二批世界（用户 2026-10-03 素材库的改写，见 content-src/concepts/batch2-concepts.md 第 13 个）。鬼市是人做的暗市，不写鬼怪；一个时空，不串别的朝代地名。性别按会话偏好生成（D15）。\n2026-10-18 按写作规则 v2 改造：按 Gemini 第五批方案：组合改成 8 组单人加 2 组双人局（侧窟对质死人货契、萨保被拦在第一重窟）；死人的手印改成绘图人握着卖油人伪造底契的把柄；加修补驼皮水囊一项日常；绘图人的侧窟改为 private。",
  "player_identities": [
   {
    "age_range": [
@@ -2449,46 +2329,51 @@
    "trigger": "窟外传来一声号角，巡沙骑兵到了，谁也不知道这一回是来走过场还是真要封窟"
   },
   {
-   "choice": "查，还是躲开",
+   "choice": "替两边压下旧契，还是逼一方交底",
    "exits": [
     {
-     "cost": "绘图人会认出是谁仿的",
-     "option": "把货契拿给绘图人认笔迹"
+     "cost": "你要替这笔死人账担下担保名头",
+     "option": "出面替两人把旧契赎回烧毁"
     },
     {
-     "cost": "按印的人就永远说不清了",
-     "option": "把货契烧了"
+     "cost": "后窟藏着的路图与旧账同时曝光",
+     "option": "逼两人当面揭开佛像蒙布对质"
     }
    ],
    "far": {
-    "consequence": "每个按过印的人都会被怀疑，下个月黑夜没人敢做买卖",
-    "due_days": 30,
-    "trigger": "没人查清"
+    "consequence": "卖油人被各商队围堵，整座鬼市断油封路",
+    "due_days": 7,
+    "trigger": "假印底契在主窟传开"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [],
    "id": "p_forged_seal",
    "immediate": {
     "minutes": 10,
-    "text": "掮客把一张货契拍在桌上，指着手印：“你们看看，这是不是死人的？”"
+    "text": "{map_maker.name}按住货契对{oil_seller.name}低语：“这枚指印的主人，还在后窟佛像底下吧？”"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{map_maker.name}认出死人货契上的路标笔迹，知晓{oil_seller.name}私吞过遇难商队的货",
+    "holder": "map_maker",
+    "subject": "oil_seller"
+   },
    "location_ids": [
     "glass_tavern",
     "map_stall"
    ],
    "near": {
     "deadline_minutes": 150,
-    "text": "灯灭前流言传遍鬼市"
+    "text": "二更灯灭前流言传遍主窟"
    },
-   "objective": "在流言传遍鬼市之前，弄清那张货契是谁的",
+   "objective": "灯灭前，帮{oil_seller.name}买回底契还是助{map_maker.name}揭开蒙布",
    "source": "rumor",
    "start_minute": 1330,
    "tags": [],
-   "title": "死人的手印",
-   "trigger": "酒肆里有人传，说今夜有一张货契上按的手印是死人的，按印的人上个月就死在沙里了"
+   "title": "旧契手印与封佛布",
+   "trigger": "酒肆传出一张按着死人手印的旧货契，{map_maker.name}认出那是{oil_seller.name}私吞遇难驼队羊脂时伪造的底契"
   },
   {
    "choice": "信谁的图",

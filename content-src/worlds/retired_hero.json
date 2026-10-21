@@ -322,8 +322,8 @@
         "听老兵们讲当年"
       ],
       "pressure_modifiers": {
-        "p_contract_due": "吧台后面贴着一张契约厅的催缴单，被酒渍泡皱了。",
-        "p_village_rumor": "角落那桌的人压低声音，不停地往门口看。"
+        "p_village_rumor": "角落那桌的人压低声音，不停地往门口看。",
+        "p_contract_due": "吧台后面贴着一张契约厅的催缴单，被酒渍泡皱了。"
       },
       "tags": []
     },
@@ -392,8 +392,8 @@
         "翻一翻柜台上公开的旧契抄本"
       ],
       "pressure_modifiers": {
-        "p_contract_due": "门口钉着一排到期的旧契，最上面那份的抵押物写着一家酒馆的地契。",
-        "p_vote": "执掌人的门关着，里面有人在大声争吵。"
+        "p_vote": "执掌人的门关着，里面有人在大声争吵。",
+        "p_contract_due": "门口钉着一排到期的旧契，最上面那份的抵押物写着一家酒馆的地契。"
       },
       "tags": []
     },
@@ -460,8 +460,8 @@
         "靠着岩壁坐下歇口气"
       ],
       "pressure_modifiers": {
-        "p_glove_found": "碎石堆里露出一截烧焦的皮子。",
-        "p_dungeon_collapse": "矿道顶上簌簌地往下掉土。"
+        "p_dungeon_collapse": "矿道顶上簌簌地往下掉土。",
+        "p_glove_found": "碎石堆里露出一截烧焦的皮子。"
       },
       "tags": []
     }
@@ -535,7 +535,7 @@
           "被当成一块招牌"
         ],
         "preconditions": [
-          "酒馆已经打烊"
+          "酒馆已经打烊，双方都清醒、出于自愿"
         ],
         "boundaries": [
           "楼下没有客人"
@@ -658,7 +658,7 @@
           "被当成一个阴谋"
         ],
         "preconditions": [
-          "今天的调解已经结束"
+          "今天的调解已经结束，双方都清醒、出于自愿"
         ],
         "boundaries": [
           "没有人认出{npc.ta}的地方"
@@ -779,7 +779,7 @@
           "被当成一本账"
         ],
         "preconditions": [
-          "契约厅还开着门"
+          "契约厅还开着门，双方都清醒、出于自愿"
         ],
         "boundaries": [
           "没有欠{npc.ta}钱的人在场"
@@ -902,7 +902,7 @@
           "被当成一个来讨债的"
         ],
         "preconditions": [
-          "印信已经收起来了"
+          "印信已经收起来了，双方都清醒、出于自愿"
         ],
         "boundaries": [
           "客房的门关着"
@@ -1023,7 +1023,7 @@
           "被当成一个看门的"
         ],
         "preconditions": [
-          "营地里还有人醒着"
+          "营地里还有人醒着，双方都清醒、出于自愿"
         ],
         "boundaries": [
           "营火只剩炭了"
@@ -1146,7 +1146,7 @@
           "被当成一个过气的"
         ],
         "preconditions": [
-          "铺子里还有客人"
+          "铺子里还有客人，双方都清醒、出于自愿"
         ],
         "boundaries": [
           "灯都熄了"
@@ -1351,6 +1351,48 @@
   ],
   "cast_combos": [
     {
+      "id": "k_vet_tavern_upstairs",
+      "power_structure": "npc_high",
+      "player_positions": [
+        "low"
+      ],
+      "identity_ids": [
+        "indebted_vet",
+        "camp_porter"
+      ],
+      "slots": [
+        "retired_warrior"
+      ],
+      "tension_engine_ids": [
+        "te_hero_ledger",
+        "te_old_contract"
+      ],
+      "chemistry": "酒馆打烊后木门落了闩，{retired_warrior.name}旧伤在阴雨夜犯得厉害，把你叫上二楼客房替{retired_warrior.ta}换药，桌上还摊着契约厅明天要来催的旧契。",
+      "stakes": {
+        "resource_gap": "{retired_warrior.name}守着断剑酒馆的房契和当年全队活命的真相，你手里有止痛的药膏和替{retired_warrior.ta}分担账目的私房银币。",
+        "limit_gap": "天亮后契约厅的铜钟敲响，第一笔展期金必须交出去。",
+        "meeting_reason": "打烊落闩后，{retired_warrior.name}在二楼客房解开肩背的旧绷带等你上楼。",
+        "irreplaceable_goal": "替{retired_warrior.name}敷好阴雨天发疼的旧疤，商量怎么保住楼下那间断剑酒馆。"
+      },
+      "tags": [],
+      "relations": [
+        {
+          "a": "player",
+          "b": "retired_warrior",
+          "stage": "intimate",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 2
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 2
+          },
+          "reason": "每逢阴雨夜打烊，你都留在二楼替{retired_warrior.name}敷旧伤，窄榻边借着麦酒余温相拥接吻，早越过了战友的界限。"
+        }
+      ]
+    },
+    {
       "id": "k_porter_glove",
       "power_structure": "npc_high",
       "player_positions": [
@@ -1367,58 +1409,58 @@
         "te_old_glove",
         "te_dungeon"
       ],
-      "chemistry": "你在矿道里替{camp_master.name}搬过一箱旧战具，箱底少了一只手套；{retired_warrior.name}听说以后请你喝了三晚的酒，每晚都问那箱东西是从哪挖出来的。",
+      "chemistry": "你在矿道里捡到了一只带徽记的旧手套；{camp_master.name}让你别声张，{retired_warrior.name}听说矿道出了旧物，亲自下到安全层营地来问。",
       "stakes": {
-        "resource_gap": "{camp_master.name}有营地和铺位钥匙，{retired_warrior.name}有酒馆和全城老兵的面子，你只有一副肩膀",
-        "limit_gap": "停战日前，那只手套要么挂出去，要么永远藏着",
-        "meeting_reason": "你替营地扛了三年货，这两个人你都常打交道",
-        "irreplaceable_goal": "你想保住饭碗，又想知道那只手套是谁的"
+        "resource_gap": "你手里攥着那只带徽记的旧手套，{camp_master.name}管着安全层的铺位和你的饭碗，{retired_warrior.name}认得手套主人的名字。",
+        "limit_gap": "天亮前营地要清点矿道出土的旧战具挂牌认领。",
+        "meeting_reason": "三个人在安全层营地的篝火旁围着那只裹在粗布里的旧手套对坐。",
+        "irreplaceable_goal": "在不丢掉营地差事的前提下，决定把旧手套交给谁、替谁瞒下当年的逃兵旧账。"
       },
+      "tags": [],
       "relations": [
         {
           "a": "player",
           "b": "camp_master",
-          "stage": "acquainted",
+          "stage": "flirting",
           "a_to_b": {
-            "trust": 1,
-            "tension": 1
+            "trust": 2,
+            "tension": 3
           },
           "b_to_a": {
-            "trust": 1,
-            "tension": 2
+            "trust": 2,
+            "tension": 3
           },
-          "reason": "{camp_master.name}给你的工钱从没少过"
+          "reason": "你在安全层背了两年矿石，每回矿道掉石头都是{camp_master.name}把你拽进掩体，夜里分你半碗热汤时总挨着你坐。"
         },
         {
           "a": "player",
           "b": "retired_warrior",
-          "stage": "acquainted",
+          "stage": "testing",
           "a_to_b": {
             "trust": 1,
             "tension": 1
           },
           "b_to_a": {
             "trust": 1,
-            "tension": 1
+            "tension": 2
           },
-          "reason": "{retired_warrior.name}请你喝过三晚的酒"
+          "reason": "你休沐回城常去断剑酒馆喝最便宜的麦酒，{retired_warrior.name}给你添汤时总多看你手上的矿灰两眼。"
         },
         {
           "a": "camp_master",
           "b": "retired_warrior",
-          "stage": "acquainted",
+          "stage": "testing",
           "a_to_b": {
-            "trust": 0,
-            "tension": 2
+            "trust": 1,
+            "tension": 3
           },
           "b_to_a": {
             "trust": 1,
             "tension": 2
           },
-          "reason": "{retired_warrior.name}从不下地下城，却总问营地的事"
+          "reason": "{camp_master.name}一直怕{retired_warrior.name}来认人，十年里每次酒馆送货下营地都刻意避开照面。"
         }
-      ],
-      "tags": []
+      ]
     },
     {
       "id": "k_vet_debt",
@@ -1430,66 +1472,35 @@
         "indebted_vet"
       ],
       "slots": [
-        "contract_keeper",
         "retired_warrior"
       ],
       "tension_engine_ids": [
         "te_old_contract",
         "te_hero_ledger"
       ],
-      "chemistry": "你战时签的那份旧契，欠额滚了十年，{contract_keeper.name}每个季度给你寄一回通知；{retired_warrior.name}当年是你的队长，说这笔账{retired_warrior.ta}替你扛一半。",
+      "chemistry": "你的旧契下个月到期，契约厅的执掌人拿着总簿来对账；{retired_warrior.name}把酒杯往柜台上一放，说当年的债算在酒馆头上。",
       "stakes": {
-        "resource_gap": "{contract_keeper.name}有总簿和契印，{retired_warrior.name}有一间押在契约厅的酒馆，你只有一枚勋章",
-        "limit_gap": "旧契三天后到期",
-        "meeting_reason": "你和{retired_warrior.name}一起打过六年仗，{contract_keeper.name}的通知一封没落下",
-        "irreplaceable_goal": "你想还清这笔账，又不想让老队长替你扛"
+        "resource_gap": "契约厅握着旧契展期与催缴的印信，{retired_warrior.name}押上了断剑酒馆的地契，你手里有当年战场上那份旧契的副页。",
+        "limit_gap": "契约厅今晚落锁前要把展期或查封的红印盖下去。",
+        "meeting_reason": "执掌人带着账簿坐进靠里的卡座，你和{retired_warrior.name}隔着吧台核对当年的签名。",
+        "irreplaceable_goal": "弄清总簿被撕掉的那一页究竟免了谁的债，别让{retired_warrior.name}替你把酒馆赔进去。"
       },
+      "tags": [],
       "relations": [
         {
           "a": "player",
-          "b": "contract_keeper",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 0,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 0,
-            "tension": 2
-          },
-          "reason": "{contract_keeper.name}的通知你一封都没拆"
-        },
-        {
-          "a": "player",
           "b": "retired_warrior",
-          "stage": "acquainted",
+          "stage": "flirting",
           "a_to_b": {
-            "trust": 2,
+            "trust": 3,
             "tension": 2
           },
           "b_to_a": {
-            "trust": 2,
-            "tension": 3
-          },
-          "reason": "{retired_warrior.name}当年把你从死人堆里拖出来"
-        },
-        {
-          "a": "contract_keeper",
-          "b": "retired_warrior",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 0,
+            "trust": 3,
             "tension": 2
           },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 2
-          },
-          "reason": "酒馆的地契押在{contract_keeper.name}的柜子里"
+          "reason": "你们在同一个战壕里滚过泥，你的名字在赊账木牌上挂了三年，{retired_warrior.name}从没催过，只在打烊后留你喝最后一杯。"
         }
-      ],
-      "tags": [
-        "coercion_theme"
       ]
     },
     {
@@ -1499,68 +1510,40 @@
         "equal"
       ],
       "identity_ids": [
-        "workshop_smith"
+        "workshop_smith",
+        "city_healer"
       ],
       "slots": [
-        "demon_mediator",
-        "deposed_noble"
+        "demon_mediator"
       ],
       "tension_engine_ids": [
         "te_demon_neighbor",
         "te_noble_return"
       ],
-      "chemistry": "{demon_mediator.name}找你打过一对角上的铜环；{deposed_noble.name}拿着家族的旧印信来请你熔了重铸，印信背面刻着一个魔族的名字。",
+      "chemistry": "一个旧贵族带着旧家徽进城，头一件事是找你打一把配得上家徽的剑；{demon_mediator.name}就坐在你铺子门口的条凳上喝药茶，看着那枚家徽不说话。",
       "stakes": {
-        "resource_gap": "{demon_mediator.name}有角街的人心，{deposed_noble.name}有旧印信和一箱借据，你有一座熔炉",
-        "limit_gap": "停战日前，印信要么熔掉，要么交出去",
-        "meeting_reason": "这两个人都在你的铁匠铺里坐过",
-        "irreplaceable_goal": "你想把活干好，又想知道印信背面那个名字是谁"
+        "resource_gap": "旧贵族握着封地旧印信与定金，{demon_mediator.name}知道那份魔族债主旧契的底细，你守着城里唯一能熔铸旧徽记的铁炉。",
+        "limit_gap": "停战十周年庆典前，那枚旧家徽要么熔进新剑、要么交去契约厅抵债。",
+        "meeting_reason": "旧贵族走后，{demon_mediator.name}还坐在你铁匠铺的屋檐下，炉火正烧得通红。",
+        "irreplaceable_goal": "从{demon_mediator.name}嘴里问出家徽背后的旧账，别让旧封地的事在停战日前烧成角街的冲突。"
       },
+      "tags": [],
       "relations": [
         {
           "a": "player",
           "b": "demon_mediator",
-          "stage": "acquainted",
+          "stage": "flirting",
           "a_to_b": {
-            "trust": 1,
-            "tension": 1
+            "trust": 2,
+            "tension": 3
           },
           "b_to_a": {
-            "trust": 1,
-            "tension": 2
+            "trust": 2,
+            "tension": 3
           },
-          "reason": "{demon_mediator.name}夸过你打的铜环"
-        },
-        {
-          "a": "player",
-          "b": "deposed_noble",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 0,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 1
-          },
-          "reason": "{deposed_noble.name}给的定金是平时的三倍"
-        },
-        {
-          "a": "demon_mediator",
-          "b": "deposed_noble",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 0,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 0,
-            "tension": 2
-          },
-          "reason": "印信背面那个名字，{demon_mediator.name}好像认得"
+          "reason": "{demon_mediator.name}常在收工后坐你炉边烤火，天冷时你替{demon_mediator.ta}打过暖手铜炉，手指交接时总慢半拍。"
         }
-      ],
-      "tags": []
+      ]
     },
     {
       "id": "k_healer_mage",
@@ -1569,68 +1552,40 @@
         "equal"
       ],
       "identity_ids": [
-        "city_healer"
+        "city_healer",
+        "workshop_smith"
       ],
       "slots": [
-        "fading_mage",
-        "camp_master"
+        "fading_mage"
       ],
       "tension_engine_ids": [
-        "te_dungeon",
-        "te_hero_ledger"
+        "te_old_contract",
+        "te_dungeon"
       ],
-      "chemistry": "{fading_mage.name}的法力一年年衰退，每个月都来你这里看一回；{camp_master.name}从地下城抬上来的伤员都是你治的，{camp_master.ta}却从不让你看自己身上的旧伤。",
+      "chemistry": "{fading_mage.name}的手抖得连灯芯都捏不住，找你配稳神的药；营头也来拿治旧伤的药膏，两人在药柜前认出了对方战时的番号。",
       "stakes": {
-        "resource_gap": "{fading_mage.name}有修灯铺和快用尽的法术，{camp_master.name}有营地，你有一间诊所",
-        "limit_gap": "安全层下面有塌方的声音，城门口的魔灯也快灭了",
-        "meeting_reason": "这两个人都是你诊所的常客",
-        "irreplaceable_goal": "你想治好两个人身上的病，也想知道两个人当年是什么关系"
+        "resource_gap": "你握着病历与镇痛药方，{fading_mage.name}管着全城与营地通道的魔灯，也知道营头隐姓埋名的底细。",
+        "limit_gap": "入夜巡灯前若不稳住{fading_mage.name}的法力反噬，通往安全层的灯道就会熄灭。",
+        "meeting_reason": "傍晚下起冷雨，{fading_mage.name}挤在你的药房里等一锅药草煎好。",
+        "irreplaceable_goal": "压住{fading_mage.name}身上旧契抽走法力的反噬，问清{fading_mage.ta}在药柜前认出了谁。"
       },
+      "tags": [],
       "relations": [
         {
           "a": "player",
           "b": "fading_mage",
-          "stage": "acquainted",
+          "stage": "committed",
           "a_to_b": {
-            "trust": 1,
+            "trust": 3,
             "tension": 2
           },
           "b_to_a": {
-            "trust": 1,
+            "trust": 3,
             "tension": 2
           },
-          "reason": "{fading_mage.name}给你的诊所修过一盏灯，没收钱"
-        },
-        {
-          "a": "player",
-          "b": "camp_master",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 1
-          },
-          "reason": "{camp_master.name}每次抬人上来都说一句“交给你了”"
-        },
-        {
-          "a": "fading_mage",
-          "b": "camp_master",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 2
-          },
-          "reason": "{fading_mage.name}看{camp_master.name}的眼神，像认得一个旧人"
+          "reason": "这两年每逢月末旧契反噬，都是你把发冷的{fading_mage.name}抱上药榻，握着{fading_mage.ta}的手熬过最冷的那半夜。"
         }
-      ],
-      "tags": []
+      ]
     },
     {
       "id": "k_council_vote",
@@ -1639,69 +1594,39 @@
         "high"
       ],
       "identity_ids": [
-        "council_member"
+        "council_member",
+        "guild_master"
       ],
       "slots": [
-        "contract_keeper",
-        "demon_mediator"
+        "contract_keeper"
       ],
       "tension_engine_ids": [
-        "te_old_contract",
-        "te_demon_neighbor"
+        "te_demon_neighbor",
+        "te_old_contract"
       ],
-      "chemistry": "明天的城务会，你手里有一票：{contract_keeper.name}要你投票保住旧契，{demon_mediator.name}要你投票保住角街的居民身份，两份提案被绑在了一起。",
+      "chemistry": "明早城务会要表决魔族居民身份复核，你手里是关键的一票；{contract_keeper.name}在夜里敲开了契约厅偏厅的门，怀里抱着议员们战时借贷的旧契底账。",
       "stakes": {
-        "resource_gap": "你有一票，{contract_keeper.name}有半座城的旧债，{demon_mediator.name}有角街的人心",
-        "limit_gap": "明早表决",
-        "meeting_reason": "你当议员这几年，两个人都在城务会上跟你交过手",
-        "irreplaceable_goal": "你想投一票对得起自己的，又知道哪一票都会让人恨你"
+        "resource_gap": "你握着决定表决胜负的议员席位，{contract_keeper.name}握着议员们战时借贷的旧契底账，也知道总簿缺的那一页在哪。",
+        "limit_gap": "明早城务会铜钟敲响前，你必须定下这一票投向哪一边。",
+        "meeting_reason": "表决前夜，你和{contract_keeper.name}在契约厅闭门后的偏厅里核对角街户籍与旧契名册。",
+        "irreplaceable_goal": "在不让角街流血的前提下，拿你手里的选票换出总簿缺页的实话。"
       },
+      "tags": [],
       "relations": [
         {
           "a": "player",
           "b": "contract_keeper",
-          "stage": "acquainted",
+          "stage": "flirting",
           "a_to_b": {
-            "trust": 0,
-            "tension": 1
+            "trust": 2,
+            "tension": 3
           },
           "b_to_a": {
-            "trust": 1,
-            "tension": 2
+            "trust": 2,
+            "tension": 3
           },
-          "reason": "你的议员位子，跟{contract_keeper.name}的总簿有点关系"
-        },
-        {
-          "a": "player",
-          "b": "demon_mediator",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 1
-          },
-          "reason": "{demon_mediator.name}替你调解过一桩纠纷"
-        },
-        {
-          "a": "contract_keeper",
-          "b": "demon_mediator",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 0,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 2
-          },
-          "reason": "两个人在城务会上吵了十年"
+          "reason": "你和{contract_keeper.name}在偏厅核过无数次夜账，烛火将尽时谁也不先起身，散场后还并肩走过半条委托街。"
         }
-      ],
-      "tags": [
-        "coercion_theme"
       ]
     },
     {
@@ -1711,69 +1636,39 @@
         "high"
       ],
       "identity_ids": [
-        "guild_master"
+        "guild_master",
+        "council_member"
       ],
       "slots": [
-        "camp_master",
-        "fading_mage"
+        "camp_master"
       ],
       "tension_engine_ids": [
         "te_dungeon",
         "te_old_glove"
       ],
-      "chemistry": "公会派下去的一队人没上来，{camp_master.name}说是塌方；{fading_mage.name}说塌方那一层，就是当年小队砍下魔王的地方。",
+      "chemistry": "旧矿道塌开一角，城务会催着把安全层营地收归官营；你下到营地巡查，{camp_master.name}压着刚挖出的旧手套，修灯法师守着闪烁的魔灯等你拍板。",
       "stakes": {
-        "resource_gap": "你有公会和几十个冒险者，{camp_master.name}有营地，{fading_mage.name}记得当年的事",
-        "limit_gap": "下面的人撑不了几天",
-        "meeting_reason": "公会的委托都要经{camp_master.name}的营地，{fading_mage.name}替公会修过灯",
-        "irreplaceable_goal": "你想把人救上来，又怕挖出当年的事"
+        "resource_gap": "你握着公会封停或保住营地的签字权，{camp_master.name}握着矿道塌方处的旧战具和营地上下几十口人的生计。",
+        "limit_gap": "天亮前公会巡查报告要交上城务会，决定安全层是由公会自管还是官营接管。",
+        "meeting_reason": "你带着巡查簿下到安全层营地，{camp_master.name}在矿道入口的魔灯下等你。",
+        "irreplaceable_goal": "保住安全层营地这群老兵和闲散人的栖身处，同时把矿道里露出来的旧事压稳。"
       },
+      "tags": [],
       "relations": [
         {
           "a": "player",
           "b": "camp_master",
-          "stage": "acquainted",
+          "stage": "intimate",
           "a_to_b": {
-            "trust": 0,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 1
-          },
-          "reason": "{camp_master.name}从不跟你多说一句"
-        },
-        {
-          "a": "player",
-          "b": "fading_mage",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 1
-          },
-          "reason": "{fading_mage.name}给公会写过一份地下城的旧图"
-        },
-        {
-          "a": "camp_master",
-          "b": "fading_mage",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 3
-          },
-          "b_to_a": {
-            "trust": 0,
+            "trust": 3,
             "tension": 2
           },
-          "reason": "{camp_master.name}一见{fading_mage.name}就转身走"
+          "b_to_a": {
+            "trust": 3,
+            "tension": 2
+          },
+          "reason": "当年是你默许{camp_master.name}在安全层搭起营地，此后每回下去巡查，你都留宿在{camp_master.ta}帐篷里。"
         }
-      ],
-      "tags": [
-        "violence"
       ]
     },
     {
@@ -1784,77 +1679,53 @@
         "equal",
         "high"
       ],
-      "identity_ids": [],
+      "identity_ids": [
+        "indebted_vet",
+        "city_healer",
+        "council_member"
+      ],
       "slots": [
-        "retired_warrior",
         "demon_mediator"
       ],
       "tension_engine_ids": [
         "te_hero_ledger",
         "te_demon_neighbor"
       ],
-      "chemistry": "{demon_mediator.name}每个月来酒馆一回，坐在离那把剑最远的一桌；{retired_warrior.name}说当年在战场上见过这对角，两个人谁也不先开口。",
+      "chemistry": "停战十周年前夜，有人在传角街住着当年烧村的魔族军师；酒馆老板守在前门擦杯子，{demon_mediator.name}从后门走进来，在你身边坐下。",
       "stakes": {
-        "resource_gap": "{retired_warrior.name}有酒馆和墙上那把剑，{demon_mediator.name}有角街和当年的记忆，你是两个人都肯跟着说话的人",
-        "limit_gap": "停战日就要到了",
-        "meeting_reason": "你在酒馆里见过这两个人隔着整间屋子不说话",
-        "irreplaceable_goal": "你想知道那一仗里两个人到底欠了彼此什么"
+        "resource_gap": "酒馆老板压得住躁动的老兵，{demon_mediator.name}知道魔王死那夜的真相与角街名单，你握着两边都肯听一句的分量。",
+        "limit_gap": "酒馆外头串联的老兵半夜就要往角街去，必须在打烊前把话挑明。",
+        "meeting_reason": "你和{demon_mediator.name}在断剑酒馆半掩的后门边对坐，外头大堂还在吵嚷。",
+        "irreplaceable_goal": "摁住今晚要往角街动手的苗头，守住这座城十年没破的停战规矩。"
       },
+      "tags": [],
       "relations": [
         {
           "a": "player",
-          "b": "retired_warrior",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 2
-          },
-          "reason": "{retired_warrior.name}给你留过剑底下那张桌子"
-        },
-        {
-          "a": "player",
           "b": "demon_mediator",
-          "stage": "acquainted",
+          "stage": "intimate",
           "a_to_b": {
-            "trust": 1,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 1
-          },
-          "reason": "{demon_mediator.name}请你替{demon_mediator.ta}点过一杯酒"
-        },
-        {
-          "a": "retired_warrior",
-          "b": "demon_mediator",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 1,
+            "trust": 3,
             "tension": 3
           },
           "b_to_a": {
-            "trust": 1,
+            "trust": 3,
             "tension": 3
           },
-          "reason": "战场上，两个人隔着一条河对望过三天"
+          "reason": "角街与委托街的纠纷常找你调停；去年停战日，{demon_mediator.name}把自己断下的那截角尖送给你，当晚两人在角街小屋里没再谈公事。"
         }
-      ],
-      "tags": []
+      ]
     },
     {
       "id": "k_noble_debt",
-      "power_structure": "switchable",
+      "power_structure": "equal",
       "player_positions": [
-        "low",
-        "equal",
-        "high"
+        "equal"
       ],
-      "identity_ids": [],
+      "identity_ids": [
+        "workshop_smith",
+        "city_healer"
+      ],
       "slots": [
         "deposed_noble",
         "contract_keeper",
@@ -1864,18 +1735,19 @@
         "te_noble_return",
         "te_old_contract"
       ],
-      "chemistry": "{deposed_noble.name}回城那天拿出一张旧契，债主一栏写着契约厅；{contract_keeper.name}说那份契的抵押物，是{retired_warrior.name}酒馆的地契。",
+      "chemistry": "{deposed_noble.name}要赎回家族战时押在契约厅的旧契，{contract_keeper.name}翻开总簿说债主另有其人，而{retired_warrior.name}认出那份旧契正连着当年酒馆的欠账。",
       "stakes": {
-        "resource_gap": "{deposed_noble.name}有旧契和印信，{contract_keeper.name}有总簿，{retired_warrior.name}有一间快保不住的酒馆，你是唯一一个不欠谁的",
-        "limit_gap": "停战日一过，旧契就要交割",
-        "meeting_reason": "三个人你都在酒馆里碰见过",
-        "irreplaceable_goal": "你想让这笔账算清楚，又不想看着酒馆关门"
+        "resource_gap": "{deposed_noble.name}握着旧封地印信，{contract_keeper.name}握着被撕过一页的总簿，{retired_warrior.name}守着老兵们的联保旧契，你握着见证人与调停权。",
+        "limit_gap": "停战十周年钟声敲响前，旧契上的抵押与封地归属必须落定。",
+        "meeting_reason": "四个人在契约厅内堂围着那本摊开的羊皮总簿对质。",
+        "irreplaceable_goal": "拆解旧贵族、契约厅与酒馆三方缠在一起的陈年债，不让老兵和角街成为牺牲品。"
       },
+      "tags": [],
       "relations": [
         {
           "a": "player",
           "b": "deposed_noble",
-          "stage": "stranger",
+          "stage": "testing",
           "a_to_b": {
             "trust": 0,
             "tension": 1
@@ -1884,81 +1756,123 @@
             "trust": 1,
             "tension": 1
           },
-          "reason": "{deposed_noble.name}请你替{deposed_noble.ta}带过一回路"
+          "reason": "{deposed_noble.name}刚进城就点名请你到场做见证，你猜不透一个外乡人怎么会知道你的名字。"
         },
         {
           "a": "player",
           "b": "contract_keeper",
-          "stage": "acquainted",
+          "stage": "testing",
           "a_to_b": {
-            "trust": 0,
-            "tension": 1
+            "trust": 1,
+            "tension": 2
           },
           "b_to_a": {
             "trust": 1,
-            "tension": 1
+            "tension": 2
           },
-          "reason": "{contract_keeper.name}跟你喝过一回茶"
+          "reason": "你清楚{contract_keeper.name}算盘打得精，每次进契约厅按手印都得留个心眼。"
         },
         {
           "a": "player",
           "b": "retired_warrior",
-          "stage": "acquainted",
+          "stage": "familiar",
           "a_to_b": {
-            "trust": 1,
+            "trust": 3,
             "tension": 1
           },
           "b_to_a": {
-            "trust": 1,
-            "tension": 2
+            "trust": 3,
+            "tension": 1
           },
-          "reason": "{retired_warrior.name}给你赊过账"
+          "reason": "你和{retired_warrior.name}是过命的交情，酒馆的事就是你的事。"
         },
         {
           "a": "deposed_noble",
           "b": "contract_keeper",
-          "stage": "stranger",
+          "stage": "testing",
           "a_to_b": {
             "trust": 0,
-            "tension": 2
+            "tension": 3
           },
           "b_to_a": {
             "trust": 1,
             "tension": 2
           },
-          "reason": "{deposed_noble.name}的家族当年是契约厅的大主顾"
+          "reason": "{deposed_noble.name}家的封地当年就是折在契约厅这本总簿里的。"
         },
         {
           "a": "deposed_noble",
           "b": "retired_warrior",
-          "stage": "stranger",
+          "stage": "acquainted",
           "a_to_b": {
             "trust": 1,
             "tension": 2
           },
           "b_to_a": {
-            "trust": 1,
+            "trust": 0,
             "tension": 2
           },
-          "reason": "{retired_warrior.name}当年替{deposed_noble.name}家挡过一刀"
+          "reason": "战时{retired_warrior.name}的小队曾替{deposed_noble.name}的家族守过一段城墙。"
         },
         {
           "a": "contract_keeper",
           "b": "retired_warrior",
-          "stage": "acquainted",
+          "stage": "familiar",
           "a_to_b": {
-            "trust": 0,
+            "trust": 2,
             "tension": 2
           },
           "b_to_a": {
             "trust": 1,
             "tension": 2
           },
-          "reason": "{contract_keeper.name}催过{retired_warrior.name}九回账"
+          "reason": "酒馆的房契在契约厅押了十年，两人每季都要对一次账。"
         }
+      ]
+    },
+    {
+      "id": "k_tunnel_lamp_secret",
+      "power_structure": "switchable",
+      "player_positions": [
+        "low",
+        "equal",
+        "high"
       ],
-      "tags": [
-        "coercion_theme"
+      "identity_ids": [
+        "camp_porter",
+        "city_healer",
+        "guild_master"
+      ],
+      "slots": [
+        "fading_mage"
+      ],
+      "tension_engine_ids": [
+        "te_old_glove",
+        "te_dungeon"
+      ],
+      "chemistry": "旧矿道塌开的地方除了那只带徽记的手套，还露出半截魔族文字的石碑；营头想立刻封洞，{fading_mage.name}却认出碑上的契文跟抽走自己法力的是同一种。",
+      "stakes": {
+        "resource_gap": "营头管着矿道封路权，{fading_mage.name}识得契文阵法，你握着是否上报公会与城务会的决定权。",
+        "limit_gap": "下一波矿道余震到来前，必须决定拓下碑文还是把洞口彻底封死。",
+        "meeting_reason": "你和{fading_mage.name}提着魔灯站在旧矿道塌开的石壁前。",
+        "irreplaceable_goal": "在不惊动城务会的前提下，陪{fading_mage.name}查清石碑上的旧契与抽走{fading_mage.ta}法力的是不是同一个人。"
+      },
+      "tags": [],
+      "relations": [
+        {
+          "a": "player",
+          "b": "fading_mage",
+          "stage": "flirting",
+          "a_to_b": {
+            "trust": 2,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 2,
+            "tension": 3
+          },
+          "reason": "你常扶梯子帮手抖的{fading_mage.name}换灯芯，知道{fading_mage.ta}身上每一道旧伤，扶腰的手总忘了收回。"
+        }
       ]
     }
   ],
@@ -2074,6 +1988,40 @@
       "hook_ids": [],
       "start_minute": 1380,
       "tags": []
+    },
+    {
+      "id": "a_upstairs_salve",
+      "title": "在酒馆二楼翻晒旧毯与草药",
+      "location_ids": [
+        "tavern_room",
+        "tavern"
+      ],
+      "duration_minutes": 45,
+      "beats": [
+        "午后的日头斜照进二楼客房的木窗，把晒在窗台上的止痛药草烘出一股微苦的清香",
+        "两个人一人扯着羊毛旧毯的两角抖开浮尘，叠好后顺手搁在靠墙的木榻边",
+        "楼下酒馆还没上客，借着窗边的日光挨坐着把温热的药膏分装进小陶罐里"
+      ],
+      "hook_ids": [],
+      "start_minute": 840,
+      "tags": []
+    },
+    {
+      "id": "a_street_whetstone",
+      "title": "在委托街屋檐下磨一把钝了的旧刀",
+      "location_ids": [
+        "commission_street",
+        "demon_quarter"
+      ],
+      "duration_minutes": 40,
+      "beats": [
+        "木桶里的清水舀在青石磨刀石上，刀刃贴着石面一推一收，发出均匀的沙沙声",
+        "路过的街坊隔着石板路打了个招呼，顺手递过来两个刚出炉的麦饼",
+        "拿拇指轻轻试过磨亮的刃口，用干净的油布一层层裹好收进木匣"
+      ],
+      "hook_ids": [],
+      "start_minute": 960,
+      "tags": []
     }
   ],
   "pressures": [
@@ -2082,39 +2030,44 @@
       "title": "旧契到期",
       "source": "money",
       "flags": [
-        "timed"
+        "timed",
+        "leverage"
       ],
       "location_ids": [
         "contract_hall",
         "tavern"
       ],
-      "trigger": "契约厅门口钉出了一排到期的旧契，最上面那份的抵押物，是全城最老的那家酒馆",
-      "objective": "在钟敲第七下之前，决定替不替人出这笔钱",
-      "choice": "出钱，还是去找执掌人谈",
+      "trigger": "契约厅门口钉出了一排到期的旧契，最上面那份的抵押物，是全城最老的那家断剑酒馆",
+      "objective": "在契约厅铜钟敲第七下之前，决定替不替酒馆接下这笔旧账",
+      "choice": "凑钱展期，还是拿总簿缺页的事去跟执掌人谈",
       "immediate": {
-        "text": "契约厅的铜钟敲了五下，催缴单上又多了一行名字",
+        "text": "契约厅的铜钟敲了五下，{contract_keeper.name}把盖着红印的催缴单推上酒馆吧台",
         "minutes": 10
       },
       "near": {
-        "text": "钟敲七下",
+        "text": "契约厅铜钟敲第七下",
         "deadline_minutes": 120
       },
       "far": {
-        "trigger": "没人还上",
-        "consequence": "酒馆归了契约厅，老兵们没地方去了",
+        "trigger": "没人把旧契接过去",
+        "consequence": "断剑酒馆的房契归了契约厅，满城退役的老兵再没落脚的地方",
         "due_days": 3
       },
       "exits": [
         {
-          "option": "替人还一部分",
-          "cost": "钱一花出去，契约厅就知道你有钱"
+          "option": "替{retired_warrior.name}先垫上展期金",
+          "cost": "钱一交出去，契约厅就盯上你的家底了"
         },
         {
-          "option": "去找执掌人谈",
-          "cost": "执掌人会要你拿别的东西换"
+          "option": "进契约厅偏厅和{contract_keeper.name}单独谈条件",
+          "cost": "{contract_keeper.name}会要你替契约厅办一件得罪老兵的事"
         }
       ],
-      "leverage": null,
+      "leverage": {
+        "holder": "contract_keeper",
+        "subject": "retired_warrior",
+        "basis": "{contract_keeper.name}压着{retired_warrior.name}战时为救全队签下的原始血契，当众翻开，酒馆连同老兵的抚恤金都会被立刻抵扣"
+      },
       "hook_ids": [],
       "start_minute": 1020,
       "tags": [
@@ -2298,39 +2251,44 @@
       "title": "矿道里的手套",
       "source": "accident",
       "flags": [
-        "timed"
+        "timed",
+        "leverage"
       ],
       "location_ids": [
         "mine_tunnel",
         "dungeon_camp"
       ],
-      "trigger": "矿道塌开的一角露出一只烧焦的旧手套，指节上嵌着勇者小队的徽记",
-      "objective": "在挂出去认领之前，决定这只手套交给谁",
-      "choice": "收着，还是交出去",
+      "trigger": "矿道塌开的一角露出一只烧焦的旧手套，指节上嵌着当年勇者小队的徽记与逃兵编号",
+      "objective": "在旧战具挂上营地木牌认领之前，决定这只手套交给谁",
+      "choice": "替营头压下来，还是交出去对质",
       "immediate": {
-        "text": "手套从碎石里滑出来，落在你脚边",
+        "text": "手套从碎石里滑出来落在脚边，{camp_master.name}盯着上面的编号变了脸色",
         "minutes": 5
       },
       "near": {
-        "text": "挂出去认领之前",
+        "text": "营地清点挂牌认领之前",
         "deadline_minutes": 240
       },
       "far": {
-        "trigger": "手套被挂到城门口",
-        "consequence": "全城都会来认，当年的事瞒不住了",
+        "trigger": "手套被挂到委托街口认领",
+        "consequence": "当年丢下小队逃进地下城的旧账被翻出来，安全层营地会被公会立刻撤换",
         "due_days": 3
       },
       "exits": [
         {
-          "option": "自己收着",
-          "cost": "按规矩捡到旧战具要挂出去"
+          "option": "把旧手套私下压进自己的行囊",
+          "cost": "按公会规矩，瞒报出土战具要受重罚"
         },
         {
-          "option": "交给营头",
-          "cost": "营头的脸色一下子变了"
+          "option": "带{camp_master.name}去见{retired_warrior.name}把话摊开",
+          "cost": "十年前那场死里逃生的旧伤疤会被当面揭开"
         }
       ],
-      "leverage": null,
+      "leverage": {
+        "holder": "retired_warrior",
+        "subject": "camp_master",
+        "basis": "{retired_warrior.name}认得手套上的编号，知道{camp_master.name}就是当年被丢在地下城的逃兵，一句话就能让公会撤掉{camp_master.ta}的营头之位"
+      },
       "hook_ids": [],
       "start_minute": 600,
       "tags": []
@@ -2522,5 +2480,5 @@
     "supernatural"
   ],
   "status": "released",
-  "notes": "第二批世界（用户 2026-10-03 素材库的改写，见 content-src/concepts/batch2-concepts.md 第 14 个）。旧契线是胁迫题材，按 C2 打 coercion_theme；亲密只来自人物本身。西式名，名在前。性别按会话偏好生成（D15）。"
+  "notes": "第二批世界（用户 2026-10-03 素材库的改写，见 content-src/concepts/batch2-concepts.md 第 14 个）。旧契线是胁迫题材，按 C2 打 coercion_theme；亲密只来自人物本身。西式名，名在前。性别按会话偏好生成（D15）。\n2026-10-18 按写作规则 v2 改造：按 Gemini 第四批方案：组合改成 8 组单人加 2 组多人局（营头与酒馆老板、旧贵族三方局）；旧契到期改成契约厅执掌人握着酒馆老板的战时血契，矿道里的手套改成酒馆老板认出营头的逃兵编号；加二楼晒药、檐下磨刀两项日常。"
 }

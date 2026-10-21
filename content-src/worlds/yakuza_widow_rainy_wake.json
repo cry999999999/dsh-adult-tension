@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "yakuza_widow_rainy_wake",
-  "title": "雨夜守灵：少夫人与黑金印",
+  "title": "关东本家守灵夜",
   "extends": null,
   "era": "1990年代初关东旧派极道名门暴雨守灵夜",
   "region": "东京近郊千坪数寄屋造古宅与佛堂内院",
@@ -12,7 +12,7 @@
     "刀出半鞘",
     "隐忍对峙"
   ],
-  "style_hint": "冷雨击打屋檐铜铃，线香青烟缭绕。白麻丧服下的体温克制隐忍，纸门外木屐踏水声步步紧逼，言语交锋如暗刃出鞘。",
+  "style_hint": "多写冷雨、铜铃与线香，对白隐忍克制，言语交锋如暗刃，不把话说破。",
   "clock_start": {
     "label": "1991 年梅雨季，守灵之日",
     "minute": 0
@@ -295,7 +295,8 @@
       ],
       "pressure_modifiers": {
         "p_gold_seal_ultimatum": "若头在佛堂众目睽睽下按刀发难，逼迫交出印信。",
-        "p_thunderstorm_blackout_raid": "佛堂长明灯芯猛烈摇曳，阴影中暗刃逼近。"
+        "p_thunderstorm_blackout_raid": "佛堂长明灯芯猛烈摇曳，阴影中暗刃逼近。",
+        "p_geisha_tape_leak": "席间和服广袖微动，一盘录有港口分赃原声的微型磁带让搜查队僵在原地。"
       },
       "tags": [
         "workplace_power",
@@ -377,7 +378,8 @@
       ],
       "pressure_modifiers": {
         "p_gold_seal_ultimatum": "地榻下暗格机关启动声引起门外巡哨警觉。",
-        "p_police_siege_approach": "后山逃生竹林的栈桥已被倒塌松树阻断。"
+        "p_police_siege_approach": "后山逃生竹林的栈桥已被倒塌松树阻断。",
+        "p_dawn_coffin_deadline": "地炉火光映照着那页私拟的第二份继承底稿，老执事额角的冷汗滴在榻榻米上。"
       },
       "tags": [
         "intimate",
@@ -1329,268 +1331,507 @@
   ],
   "cast_combos": [
     {
-      "id": "combo_widow_guardian_pact",
-      "power_structure": "player_high",
+      "id": "combo_widow_screen_notary",
+      "power_structure": "npc_high",
       "player_positions": [
-        "high"
+        "low"
       ],
       "identity_ids": [
-        "rebellious_foster_heir"
+        "young_family_lawyer",
+        "secret_police_infiltrator"
       ],
       "slots": [
-        "mourning_widow_chiyoko",
-        "loyal_swordsman_shinji"
+        "mourning_widow_chiyoko"
       ],
       "tension_engine_ids": [
         "te_seal_vs_blade_deadlock",
         "te_mourning_etiquette_vs_urgency"
       ],
-      "chemistry": "你持先代亲授长刀横立于内室门前，{mourning_widow_chiyoko.name}素衣微颤退无可退，{loyal_swordsman_shinji.name}长刀出鞘半寸护持左右，名分尊卑与雨夜守护意志激烈碰撞。",
+      "chemistry": "{mourning_widow_chiyoko.name}身披素白丧服执掌宗家第一继承权，你跪坐在内室屏风后替{mourning_widow_chiyoko.name}核对遗嘱印鉴，炭盆火光映着两人克制的呼吸。",
       "stakes": {
-        "resource_gap": "你掌控巡逻卫队，{mourning_widow_chiyoko.name}仅有金印一枚。",
-        "limit_gap": "少夫人严守守灵避嫌礼制，少当家急于近身勘破安危阻隔。",
-        "meeting_reason": "少当家亲赴内室核实先代私库账本封条。",
-        "irreplaceable_goal": "在若头破门前确立宗家联合战线并稳住印信保管权。"
+        "resource_gap": "{mourning_widow_chiyoko.name}握有私库黑金印与宗家名分，你只有公证文书副本与一枚蜡封印泥。",
+        "limit_gap": "守灵夜门外百名若众虎视眈眈，内室任何逾矩声响都会被当成废黜少夫人的口实。",
+        "meeting_reason": "{mourning_widow_chiyoko.name}以核对先代私产名册为由，传你独自进入起居内室。",
+        "irreplaceable_goal": "在子夜若头逼宫前办妥秘密继承公证副件。"
       },
-      "relations": [
-        {
-          "a": "player",
-          "b": "mourning_widow_chiyoko",
-          "stage": "flirting",
-          "a_to_b": {
-            "trust": 4,
-            "tension": 3
-          },
-          "b_to_a": {
-            "trust": 3,
-            "tension": 4
-          },
-          "reason": "虽有名义上的名分鸿沟，但在危难中同气连枝誓保宗家血脉。"
-        },
-        {
-          "a": "mourning_widow_chiyoko",
-          "b": "loyal_swordsman_shinji",
-          "stage": "familiar",
-          "a_to_b": {
-            "trust": 5,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 5,
-            "tension": 1
-          },
-          "reason": "知晓近卫剑客忠贞无二，视作风雨中不可动摇的门神屏障。"
-        },
-        {
-          "a": "player",
-          "b": "loyal_swordsman_shinji",
-          "stage": "familiar",
-          "a_to_b": {
-            "trust": 4,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 4,
-            "tension": 2
-          },
-          "reason": "同守一道门的少当家与近卫，彼此认得对方的刀，也认得对方护的是谁。"
-        }
-      ],
       "tags": [
-        "workplace_power",
-        "crime"
-      ]
-    },
-    {
-      "id": "combo_lieutenant_standoff_raid",
-      "power_structure": "switchable",
-      "player_positions": [
-        "equal",
-        "high"
+        "intimate",
+        "workplace_power"
       ],
-      "identity_ids": [
-        "personal_bodyguard_aide"
-      ],
-      "slots": [
-        "mourning_widow_chiyoko",
-        "ambitious_lieutenant_ryuji"
-      ],
-      "tension_engine_ids": [
-        "te_seal_vs_blade_deadlock",
-        "te_rainstorm_siege_isolation"
-      ],
-      "chemistry": "{ambitious_lieutenant_ryuji.name}步步紧逼撞开障子门槛，{mourning_widow_chiyoko.name}端坐席上面含严霜直斥叛逆，你的短刀抵住若头肋下三寸，胜负攻守在瞬息之间反转。",
-      "stakes": {
-        "resource_gap": "若头手握百名武斗锐卒，内室近卫唯有防身寸铁与一腔热血。",
-        "limit_gap": "若头欲夺印行凶，近卫死守三步之内不得犯上的死命令。",
-        "meeting_reason": "若头借奉茶进言为名强闯起居内室逼宫。",
-        "irreplaceable_goal": "挫败若头的武力威吓并迫使其退出起居内室防线。"
-      },
       "relations": [
         {
           "a": "player",
           "b": "mourning_widow_chiyoko",
           "stage": "intimate",
           "a_to_b": {
-            "trust": 5,
-            "tension": 2
+            "trust": 4,
+            "tension": 4
           },
           "b_to_a": {
-            "trust": 5,
-            "tension": 2
+            "trust": 4,
+            "tension": 4
           },
-          "reason": "多年贴身宿卫形成的绝对默契与超越生死的护持眷恋。"
-        },
-        {
-          "a": "mourning_widow_chiyoko",
-          "b": "ambitious_lieutenant_ryuji",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 0,
-            "tension": 5
-          },
-          "b_to_a": {
-            "trust": 0,
-            "tension": 5
-          },
-          "reason": "杀夫嫌疑凶徒与篡位叛逆，不共戴天的死敌派系。"
-        },
-        {
-          "a": "ambitious_lieutenant_ryuji",
-          "b": "player",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 0,
-            "tension": 5
-          },
-          "b_to_a": {
-            "trust": 0,
-            "tension": 5
-          },
-          "reason": "视其为挡路的眼中钉，拔除而后快的忠犬。"
+          "reason": "去年箱根山庄遭敌对组夜袭封山，你在密室里替高烧的少夫人守了整夜，两人裹着同一袭羽织熬到天亮"
         }
-      ],
-      "tags": [
-        "intimate",
-        "workplace_power"
       ]
     },
     {
-      "id": "combo_lawyer_inquest_peril",
+      "id": "combo_ryuji_corridor_smoke",
       "power_structure": "npc_high",
       "player_positions": [
         "low"
       ],
       "identity_ids": [
+        "secret_police_infiltrator",
         "young_family_lawyer"
       ],
       "slots": [
-        "ambitious_lieutenant_ryuji",
+        "ambitious_lieutenant_ryuji"
+      ],
+      "tension_engine_ids": [
+        "te_seal_vs_blade_deadlock",
+        "te_rainstorm_siege_isolation"
+      ],
+      "chemistry": "{ambitious_lieutenant_ryuji.name}统领两百持械武斗派在回廊把你截住，却没有搜你的公文包，反而递来一支烟试探你的立场。",
+      "stakes": {
+        "resource_gap": "{ambitious_lieutenant_ryuji.name}掌控前门通行管制与武斗组刀手，你只有底层通行牌与随身相机。",
+        "limit_gap": "若不假意顺从其拉拢，你今晚连后院茶室的门都靠近不了。",
+        "meeting_reason": "{ambitious_lieutenant_ryuji.name}在回游式外廊避雨处将你单独叫出队列问话。",
+        "irreplaceable_goal": "稳住对方的疑心，并套出武斗派子夜换防口令。"
+      },
+      "tags": [
+        "workplace_power",
+        "crime"
+      ],
+      "relations": [
+        {
+          "a": "player",
+          "b": "ambitious_lieutenant_ryuji",
+          "stage": "testing",
+          "a_to_b": {
+            "trust": 2,
+            "tension": 4
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 4
+          },
+          "reason": "上月横滨码头火拼时你替对方格开了一记暗算的铁棍，对方把一枚染血的纯金组徽丢给你，说欠你一条命"
+        }
+      ]
+    },
+    {
+      "id": "combo_widow_blade_vow",
+      "power_structure": "equal",
+      "player_positions": [
+        "equal"
+      ],
+      "identity_ids": [
+        "personal_bodyguard_aide"
+      ],
+      "slots": [
+        "mourning_widow_chiyoko"
+      ],
+      "tension_engine_ids": [
+        "te_mourning_etiquette_vs_urgency",
+        "te_seal_vs_blade_deadlock"
+      ],
+      "chemistry": "你按先代遗命持短刀守在{mourning_widow_chiyoko.name}内室屏风内侧，主仆名分之下是两人早已生死相托的默契。",
+      "stakes": {
+        "resource_gap": "{mourning_widow_chiyoko.name}掌有黑金印信，你握有后院逃生暗道木栓钥匙与防身短刀。",
+        "limit_gap": "一旦外廊刀手破门，你们唯有同进同退才能保住印信不落旁人手。",
+        "meeting_reason": "你在守灵夜下半场退入起居内室，替{mourning_widow_chiyoko.name}更换炭盆并核查后院暗道。",
+        "irreplaceable_goal": "在拂晓启棺前将真金印封入贴身暗袋。"
+      },
+      "tags": [
+        "intimate",
+        "workplace_power"
+      ],
+      "relations": [
+        {
+          "a": "player",
+          "b": "mourning_widow_chiyoko",
+          "stage": "committed",
+          "a_to_b": {
+            "trust": 5,
+            "tension": 4
+          },
+          "b_to_a": {
+            "trust": 5,
+            "tension": 4
+          },
+          "reason": "三年前祇园祭遇刺那晚你替少夫人挡下左肩一刀，对方在神社后殿剪下一缕黑发系在你刀柄上立誓同归"
+        }
+      ]
+    },
+    {
+      "id": "combo_shinji_shared_umbrella",
+      "power_structure": "equal",
+      "player_positions": [
+        "equal"
+      ],
+      "identity_ids": [
+        "personal_bodyguard_aide"
+      ],
+      "slots": [
+        "loyal_swordsman_shinji"
+      ],
+      "tension_engine_ids": [
+        "te_rainstorm_siege_isolation",
+        "te_seal_vs_blade_deadlock"
+      ],
+      "chemistry": "你与{loyal_swordsman_shinji.name}同守内进十二道门户，在暴雨轰鸣的桧木回廊上共撑一把油纸伞交替巡视。",
+      "stakes": {
+        "resource_gap": "{loyal_swordsman_shinji.name}掌管宿卫调派口令，你握有悬泉暗道钥匙与内室出入权。",
+        "limit_gap": "若头派系的暗哨就在假山后窥探，你们必须在巡廊错身时完成布防交接。",
+        "meeting_reason": "子夜换岗时你与{loyal_swordsman_shinji.name}在回游式雨夜外廊拐角汇合核对暗哨。",
+        "irreplaceable_goal": "在雷暴断电前锁死通往少夫人内室的三处侧门。"
+      },
+      "tags": [
+        "intimate",
+        "workplace"
+      ],
+      "relations": [
+        {
+          "a": "player",
+          "b": "loyal_swordsman_shinji",
+          "stage": "intimate",
+          "a_to_b": {
+            "trust": 4,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 5,
+            "tension": 3
+          },
+          "reason": "前年冬夜追剿叛徒被困秩父山废炭窑，你们分饮一壶烈酒抵御失温，在刀伤未愈的喘息间紧紧相拥"
+        }
+      ]
+    },
+    {
+      "id": "combo_geisha_tabi_handoff",
+      "power_structure": "equal",
+      "player_positions": [
+        "equal"
+      ],
+      "identity_ids": [
+        "personal_bodyguard_aide"
+      ],
+      "slots": [
+        "shrewd_geisha_informant"
+      ],
+      "tension_engine_ids": [
+        "te_mourning_etiquette_vs_urgency",
+        "te_poison_truth_vs_silence"
+      ],
+      "chemistry": "{shrewd_geisha_informant.name}借奉茶吊唁之机退入内室屏风后，将藏在和服带缔里的微型磁带交到你手中。",
+      "stakes": {
+        "resource_gap": "{shrewd_geisha_informant.name}握有若头勾结外帮的录音磁带，你掌握内室防线与暗道退路。",
+        "limit_gap": "前庭搜查队正在逐个翻检宾客手包，磁带一旦留在对方身上必死无疑。",
+        "meeting_reason": "{shrewd_geisha_informant.name}以更换打湿的足袋为名避入内室偏间与你私下交接。",
+        "irreplaceable_goal": "在若头心腹搜到内室廊前之前将磁带藏进炭盆底座。"
+      },
+      "tags": [
+        "intimate",
+        "crime"
+      ],
+      "relations": [
+        {
+          "a": "player",
+          "b": "shrewd_geisha_informant",
+          "stage": "flirting",
+          "a_to_b": {
+            "trust": 4,
+            "tension": 4
+          },
+          "b_to_a": {
+            "trust": 4,
+            "tension": 4
+          },
+          "reason": "上月赤坂料亭散席后你撑伞送对方回置屋，对方把一枚染着白梅香的玳瑁发簪别进你内袋，说下次拿命来换"
+        }
+      ]
+    },
+    {
+      "id": "combo_kuroda_silver_cup",
+      "power_structure": "player_high",
+      "player_positions": [
+        "high"
+      ],
+      "identity_ids": [
+        "rebellious_foster_heir",
+        "neutral_branch_leader"
+      ],
+      "slots": [
         "veteran_advisor_kuroda"
       ],
       "tension_engine_ids": [
         "te_poison_truth_vs_silence",
         "te_seal_vs_blade_deadlock"
       ],
-      "chemistry": "{ambitious_lieutenant_ryuji.name}将钢刀重重拍在公文案几上，{veteran_advisor_kuroda.name}冷面翻查旧例抵死不退，你在逼视下护住公证印泥，法理契约直面暴力屠刀的绝对压制。",
+      "chemistry": "你以宗家少当家或分家家主的高位在悬泉茶室召见{veteran_advisor_kuroda.name}，对方捧出先代暴毙当夜的发黑银杯听候你的裁决。",
       "stakes": {
-        "resource_gap": "若头掌控全宅生杀大权，法务助理唯有单薄法律文本。",
-        "limit_gap": "若头强令立刻签署伪造遗嘱，法务人员坚守职业底线。",
-        "meeting_reason": "文书房内强制召开家督继承文书闭门签署会。",
-        "irreplaceable_goal": "在刀锋威胁下设法拖延时间直至破晓警方或外援介入。"
+        "resource_gap": "你握有能动用的家族资金与外院三十名锐卒，{veteran_advisor_kuroda.name}保管着宗族盟约原本与毒杯证物。",
+        "limit_gap": "{veteran_advisor_kuroda.name}曾私拟两份继承底稿，唯有你出面担保才肯当众指证若头。",
+        "meeting_reason": "你屏退左右随从，传唤{veteran_advisor_kuroda.name}携带私库账册入后院茶室对账。",
+        "irreplaceable_goal": "收缴另一份伪造的继承公证书底稿并封存毒酒银杯。"
       },
+      "tags": [
+        "workplace_power",
+        "intimate"
+      ],
       "relations": [
         {
           "a": "player",
           "b": "veteran_advisor_kuroda",
-          "stage": "acquainted",
+          "stage": "flirting",
           "a_to_b": {
             "trust": 4,
-            "tension": 2
+            "tension": 3
           },
           "b_to_a": {
             "trust": 4,
-            "tension": 2
+            "tension": 3
           },
-          "reason": "同为体制与文书捍卫者，在此绝境中结成背靠背攻守同盟。"
-        },
-        {
-          "a": "ambitious_lieutenant_ryuji",
-          "b": "player",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 0,
-            "tension": 5
-          },
-          "b_to_a": {
-            "trust": 0,
-            "tension": 5
-          },
-          "reason": "视作随时可以碾碎的微不足道书生。"
-        },
-        {
-          "a": "veteran_advisor_kuroda",
-          "b": "ambitious_lieutenant_ryuji",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 5
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 5
-          },
-          "reason": "彼此心知肚明撕破脸皮只是早晚问题的死斗对手。"
+          "reason": "春分家宴散后你在藏书阁替对方瞒下了私调备用金的亏空，对方捧茶敬你时低声说这条老命往后归你调遣"
         }
-      ],
-      "tags": [
-        "workplace_power",
-        "crime"
       ]
     },
     {
-      "id": "combo_detective_inquest_night",
-      "power_structure": "switchable",
+      "id": "combo_sato_half_hour",
+      "power_structure": "player_high",
       "player_positions": [
-        "low",
-        "equal"
+        "high"
       ],
       "identity_ids": [
-        "secret_police_infiltrator"
+        "neutral_branch_leader",
+        "rebellious_foster_heir"
       ],
       "slots": [
-        "mourning_widow_chiyoko",
         "disillusioned_detective_sato"
       ],
       "tension_engine_ids": [
         "te_poison_truth_vs_silence",
         "te_rainstorm_siege_isolation"
       ],
-      "chemistry": "{disillusioned_detective_sato.name}在茶室地炉前亮出带血验尸报告，{mourning_widow_chiyoko.name}眸光微震紧攥素袖，你暗中按住对讲机隐蔽戒备，黑白两道在暴雨长夜中达成破案默契。",
+      "chemistry": "你坐在茶室廊檐下，用分家的合法账目与{disillusioned_detective_sato.name}交换警视厅暂缓破门的半小时窗口。",
       "stakes": {
-        "resource_gap": "刑警代表国家司法暴力，少夫人背负家族存亡重负。",
-        "limit_gap": "刑警要求扣押凶案物证，少夫人要求保全出殡大局。",
-        "meeting_reason": "借送驱寒姜汤名义在后院茶室秘密核验毒理样本。",
-        "irreplaceable_goal": "在若头灭口之前锁定毒杀先代的决定性物理证据链。"
+        "resource_gap": "你掌控家族七成合法实业与外院防线，{disillusioned_detective_sato.name}孤身留在宅内且面临上司停职压力。",
+        "limit_gap": "门外机动队装甲车已就位，你们必须在五十分钟内拿到若头随身药瓶样本。",
+        "meeting_reason": "你在后院茶室单独接见留守现场的{disillusioned_detective_sato.name}，商议内部平叛与司法交接边界。",
+        "irreplaceable_goal": "用若头走私码头的行贿底单换取对方压下强攻令。"
       },
+      "tags": [
+        "workplace_power",
+        "crime"
+      ],
       "relations": [
         {
           "a": "player",
           "b": "disillusioned_detective_sato",
-          "stage": "familiar",
+          "stage": "flirting",
+          "a_to_b": {
+            "trust": 4,
+            "tension": 4
+          },
+          "b_to_a": {
+            "trust": 4,
+            "tension": 4
+          },
+          "reason": "半年前新宿地下赌场被查时你留下后门钥匙放走了被围的对方，对方把警徽压在你酒杯下，说下次换其善后"
+        }
+      ]
+    },
+    {
+      "id": "combo_geisha_lacquer_box",
+      "power_structure": "switchable",
+      "player_positions": [
+        "low",
+        "equal",
+        "high"
+      ],
+      "identity_ids": [
+        "personal_bodyguard_aide",
+        "young_family_lawyer",
+        "rebellious_foster_heir",
+        "secret_police_infiltrator",
+        "neutral_branch_leader"
+      ],
+      "slots": [
+        "shrewd_geisha_informant"
+      ],
+      "tension_engine_ids": [
+        "te_mourning_etiquette_vs_urgency",
+        "te_rainstorm_siege_isolation"
+      ],
+      "chemistry": "在山溪水声轰鸣的悬泉茶室里，{shrewd_geisha_informant.name}卸下待客假笑，与你围着地炉余温清点政商暗桩名单。",
+      "stakes": {
+        "resource_gap": "{shrewd_geisha_informant.name}手握赤坂高官把柄与录音带，你握有离宅座驾与暗道通行权。",
+        "limit_gap": "一旦天明前无法扳倒若头，你们两人都将成为新家督清洗名册上的头号猎物。",
+        "meeting_reason": "你在茶室煮水声掩护下与{shrewd_geisha_informant.name}核对拂晓发难时的证人出场次序。",
+        "irreplaceable_goal": "将录音磁带与毒杯证物封入同一只防水漆盒。"
+      },
+      "tags": [
+        "intimate",
+        "workplace_power"
+      ],
+      "relations": [
+        {
+          "a": "player",
+          "b": "shrewd_geisha_informant",
+          "stage": "intimate",
+          "a_to_b": {
+            "trust": 4,
+            "tension": 4
+          },
+          "b_to_a": {
+            "trust": 4,
+            "tension": 4
+          },
+          "reason": "台风夜隅田川游船倾覆，你跳进急流把对方救上废栈桥，两人在漏雨的船舱里相拥取暖捱过了那一劫"
+        }
+      ]
+    },
+    {
+      "id": "combo_geisha_ryuji_tea_table",
+      "power_structure": "npc_high",
+      "player_positions": [
+        "low"
+      ],
+      "identity_ids": [
+        "young_family_lawyer",
+        "secret_police_infiltrator"
+      ],
+      "slots": [
+        "shrewd_geisha_informant",
+        "ambitious_lieutenant_ryuji"
+      ],
+      "tension_engine_ids": [
+        "te_seal_vs_blade_deadlock",
+        "te_poison_truth_vs_silence"
+      ],
+      "chemistry": "你主动以清点先代遗物账目为名将{shrewd_geisha_informant.name}与{ambitious_lieutenant_ryuji.name}先后请到本堂偏席，用名伶袖中的分赃录音锁死若头的搜身企图。",
+      "stakes": {
+        "resource_gap": "{shrewd_geisha_informant.name}握有私分港口录音，{ambitious_lieutenant_ryuji.name}统领堂外刀手，你掌握遗嘱公证程序。",
+        "limit_gap": "你必须在两人唇枪舌剑的对峙中把录音带原件换进公证文件袋。",
+        "meeting_reason": "你借宣读吊唁礼单的规程，主动设局将两人安排在同一张茶案前对质。",
+        "irreplaceable_goal": "迫使若头当场撤回前庭翻包搜查令。"
+      },
+      "tags": [
+        "workplace_power",
+        "crime"
+      ],
+      "relations": [
+        {
+          "a": "player",
+          "b": "shrewd_geisha_informant",
+          "stage": "flirting",
+          "a_to_b": {
+            "trust": 4,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 4,
+            "tension": 4
+          },
+          "reason": "入席前对方借递热手巾在你掌心写了茶室二字，还把半块带着体温的沉香木牌塞进了你袖口"
+        },
+        {
+          "a": "player",
+          "b": "ambitious_lieutenant_ryuji",
+          "stage": "testing",
+          "a_to_b": {
+            "trust": 2,
+            "tension": 4
+          },
+          "b_to_a": {
+            "trust": 2,
+            "tension": 4
+          },
+          "reason": "灵前点香时对方按住你的手腕看了眼虎口的老茧，低声说办完今晚的差事带你去银座领赏"
+        },
+        {
+          "a": "shrewd_geisha_informant",
+          "b": "ambitious_lieutenant_ryuji",
+          "stage": "testing",
+          "a_to_b": {
+            "trust": 1,
+            "tension": 5
+          },
+          "b_to_a": {
+            "trust": 1,
+            "tension": 5
+          },
+          "reason": "{shrewd_geisha_informant.name}录下了{ambitious_lieutenant_ryuji.name}密会关西敌对组私分港口的原声"
+        }
+      ]
+    },
+    {
+      "id": "combo_widow_kuroda_hearth",
+      "power_structure": "switchable",
+      "player_positions": [
+        "low",
+        "equal",
+        "high"
+      ],
+      "identity_ids": [
+        "personal_bodyguard_aide",
+        "young_family_lawyer",
+        "rebellious_foster_heir",
+        "secret_police_infiltrator",
+        "neutral_branch_leader"
+      ],
+      "slots": [
+        "mourning_widow_chiyoko",
+        "veteran_advisor_kuroda"
+      ],
+      "tension_engine_ids": [
+        "te_seal_vs_blade_deadlock",
+        "te_poison_truth_vs_silence"
+      ],
+      "chemistry": "{mourning_widow_chiyoko.name}在头七前夜便先私下求过你，今夜三人按约定在悬泉茶室地炉旁汇合，用黑金印与那两份继承底稿定下破晓翻盘之局。",
+      "stakes": {
+        "resource_gap": "{mourning_widow_chiyoko.name}执掌黑金印，{veteran_advisor_kuroda.name}握有宗族盟约与毒杯，你掌握外援通道与护卫武力。",
+        "limit_gap": "距离拂晓启棺只剩两个时辰，三人必须先一步统一口供并销毁倾向若头的那份废稿。",
+        "meeting_reason": "按少夫人昨日差人送来的白檀香笺之约，三人在三更准时入后院茶室密议。",
+        "irreplaceable_goal": "当场加盖初代黑金印，锁死拂晓本堂宣读的唯一合法遗诏。"
+      },
+      "tags": [
+        "intimate",
+        "workplace_power"
+      ],
+      "relations": [
+        {
+          "a": "player",
+          "b": "mourning_widow_chiyoko",
+          "stage": "committed",
           "a_to_b": {
             "trust": 5,
-            "tension": 1
+            "tension": 3
           },
           "b_to_a": {
             "trust": 5,
-            "tension": 1
+            "tension": 3
           },
-          "reason": "体制内上下级生死暗桩，拥有不可替代的同生共死信任。"
+          "reason": "老会长病重立约那晚，少夫人在佛堂后廊把私库金印的副钥挂在你颈间，与你定下事成后共掌家业的盟约"
+        },
+        {
+          "a": "player",
+          "b": "veteran_advisor_kuroda",
+          "stage": "familiar",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 4,
+            "tension": 3
+          },
+          "reason": "你刚入本家那年是对方手把手教你辨认关东各组家纹，逢年过节总会温一壶新酒在账房等你"
         },
         {
           "a": "mourning_widow_chiyoko",
-          "b": "disillusioned_detective_sato",
+          "b": "veteran_advisor_kuroda",
           "stage": "testing",
           "a_to_b": {
             "trust": 3,
@@ -1600,188 +1841,23 @@
             "trust": 3,
             "tension": 4
           },
-          "reason": "既渴望借助警方力量伸冤，又恐惧家族因此彻底瓦解。"
-        },
-        {
-          "a": "player",
-          "b": "mourning_widow_chiyoko",
-          "stage": "flirting",
-          "a_to_b": {
-            "trust": 4,
-            "tension": 3
-          },
-          "b_to_a": {
-            "trust": 4,
-            "tension": 3
-          },
-          "reason": "在多日近身卧底中对其高洁傲骨产生了超越立场的暗生情愫。"
+          "reason": "{mourning_widow_chiyoko.name}握着{veteran_advisor_kuroda.name}替若头草拟第二份废立公证书的亲笔废稿"
         }
-      ],
-      "tags": [
-        "workplace_power",
-        "crime"
-      ]
-    },
-    {
-      "id": "combo_geisha_tape_conspiracy",
-      "power_structure": "equal",
-      "player_positions": [
-        "high",
-        "equal"
-      ],
-      "identity_ids": [
-        "neutral_branch_leader"
-      ],
-      "slots": [
-        "mourning_widow_chiyoko",
-        "shrewd_geisha_informant"
-      ],
-      "tension_engine_ids": [
-        "te_mourning_etiquette_vs_urgency",
-        "te_seal_vs_blade_deadlock"
-      ],
-      "chemistry": "{shrewd_geisha_informant.name}借奉茶之机将私藏磁带滑过草席，{mourning_widow_chiyoko.name}低眉受纳轻声许诺，你拨动念珠以商界期票作保，名伶与少夫人结成跨越身份的生死同盟。",
-      "stakes": {
-        "resource_gap": "掌柜手握巨额资金，名伶手握绝命密录，少夫人手握印信大义。",
-        "limit_gap": "名伶身份不得进入内阁，少夫人依礼破格赐坐引来侧目。",
-        "meeting_reason": "佛堂长廊角落借奉香之名低语转交致命情报。",
-        "irreplaceable_goal": "合力破译若头与外部黑帮的密谋交易合同。"
-      },
-      "relations": [
-        {
-          "a": "player",
-          "b": "mourning_widow_chiyoko",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 4,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 4,
-            "tension": 2
-          },
-          "reason": "商界利益捆绑者，笃定只有少夫人正统继位才能保全商业版图。"
-        },
-        {
-          "a": "shrewd_geisha_informant",
-          "b": "mourning_widow_chiyoko",
-          "stage": "familiar",
-          "a_to_b": {
-            "trust": 4,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 4,
-            "tension": 2
-          },
-          "reason": "受过宗家大恩，愿在狂风暴雨中押上身家性命报恩护持。"
-        },
-        {
-          "a": "player",
-          "b": "shrewd_geisha_informant",
-          "stage": "familiar",
-          "a_to_b": {
-            "trust": 3,
-            "tension": 3
-          },
-          "b_to_a": {
-            "trust": 3,
-            "tension": 3
-          },
-          "reason": "银座名利场中的多年老相识，深谙彼此手腕与情报成色。"
-        }
-      ],
-      "tags": [
-        "intimate",
-        "workplace_power"
-      ]
-    },
-    {
-      "id": "combo_altar_midnight_purge",
-      "power_structure": "npc_high",
-      "player_positions": [
-        "low"
-      ],
-      "identity_ids": [
-        "secret_police_infiltrator"
-      ],
-      "slots": [
-        "ambitious_lieutenant_ryuji",
-        "loyal_swordsman_shinji"
-      ],
-      "tension_engine_ids": [
-        "te_seal_vs_blade_deadlock",
-        "te_rainstorm_siege_isolation"
-      ],
-      "chemistry": "{ambitious_lieutenant_ryuji.name}率众拔枪强闯佛堂台阶，{loyal_swordsman_shinji.name}横刀断喝杀气贯穿雨夜，你在廊柱后子弹上膛等待破晓决战，剑道与枪火一触即发。",
-      "stakes": {
-        "resource_gap": "武斗派人数占绝对优势，近卫剑客占尽回廊易守难攻地利。",
-        "limit_gap": "佛堂严禁见血古规与夺权者狗急跳墙的杀意碰撞。",
-        "meeting_reason": "若头彻底撕破脸皮发动武装强攻突入佛堂。",
-        "irreplaceable_goal": "死守本堂入口拖延时间直至破晓钟声敲响。"
-      },
-      "relations": [
-        {
-          "a": "player",
-          "b": "loyal_swordsman_shinji",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 3,
-            "tension": 3
-          },
-          "b_to_a": {
-            "trust": 3,
-            "tension": 3
-          },
-          "reason": "虽立场一明一暗，但皆以性命护卫内室无辜免遭屠戮。"
-        },
-        {
-          "a": "ambitious_lieutenant_ryuji",
-          "b": "loyal_swordsman_shinji",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 0,
-            "tension": 5
-          },
-          "b_to_a": {
-            "trust": 0,
-            "tension": 5
-          },
-          "reason": "势同水火无法调和的武力死敌。"
-        },
-        {
-          "a": "ambitious_lieutenant_ryuji",
-          "b": "player",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 4
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 4
-          },
-          "reason": "将其视作随时可以指挥冲锋当肉盾的底层若众。"
-        }
-      ],
-      "tags": [
-        "workplace_power",
-        "crime"
       ]
     }
   ],
   "daily_activities": [
     {
       "id": "a_altar_incense_vigil",
-      "title": "佛前奉香彻夜守灵",
+      "title": "本堂佛前添香守夜",
       "location_ids": [
         "altar_main_sanctuary"
       ],
       "duration_minutes": 60,
       "beats": [
-        "少夫人素服跪坐添香，青烟缭绕中神情肃穆低诵经文。",
-        "各路组长分列两侧各怀鬼胎，木屐踏水声不绝于耳。",
-        "雷声划破夜空照亮灵位，门外肃立宿卫按刀微动。"
+        "本堂白幡低垂，少夫人素服跪坐佛前，将一束细线香分了一半递给你",
+        "两人并肩在铜炉前续香，借着低眉垂目的礼数用极轻的声音核对宾客动向",
+        "香灰落入炉盘，对方用微凉的指尖轻轻碰了碰你的袖口示意安心"
       ],
       "hook_ids": [
         "h_widow_incense_bow",
@@ -1795,15 +1871,15 @@
     },
     {
       "id": "a_inner_tea_tending",
-      "title": "内室烹茶低语安魂",
+      "title": "起居内室炭盆焙茶",
       "location_ids": [
         "inner_living_chamber"
       ],
       "duration_minutes": 50,
       "beats": [
-        "侍女退至障子门外，内室炭火轻响水汽氤氲。",
-        "少夫人捧起粗陶茶盏，指尖微颤借热气驱散寒意。",
-        "隔着屏风商讨若头异动，烛影在纸门上拉出纤长影子。"
+        "侍女退到障子门外，内室白檀炭盆噼啪轻响，驱散了雨夜的寒气",
+        "少夫人亲手温好两盏粗陶煎茶，递茶时替你拂去肩头沾上的细碎雨珠",
+        "素绢屏风后烛影摇晃，两人膝头相抵，低声敲定拂晓开堂时的先后次序"
       ],
       "hook_ids": [
         "h_widow_tea_cup_pass",
@@ -1817,15 +1893,15 @@
     },
     {
       "id": "a_veranda_rain_patrol",
-      "title": "雨夜外廊带刀巡视",
+      "title": "枯山水外廊共伞巡夜",
       "location_ids": [
         "rainy_zen_garden_corridor"
       ],
       "duration_minutes": 55,
       "beats": [
-        "近卫剑客持伞走过桧木长廊，雨链飞溅浸湿裤脚。",
-        "黑衣若众手电筒光柱扫过庭院假山与漆黑松林。",
-        "暗角处短促交换巡哨口令，火光映亮出鞘半寸的寒刃。"
+        "雨水顺着铜雨链串串滑落，两人共撑一把油纸伞慢步走过桧木回廊",
+        "走到假山背风处，同行者停下脚步替你紧了紧被风吹开的领口",
+        "借着檐下灯笼昏黄的光晕，你们交换了后院暗道木栓的开启暗号"
       ],
       "hook_ids": [
         "h_shinji_rain_warning",
@@ -1839,15 +1915,15 @@
     },
     {
       "id": "a_tea_room_secret_council",
-      "title": "悬泉茶室地炉密议",
+      "title": "悬泉茶室地炉温酒",
       "location_ids": [
         "secret_tea_pavilion"
       ],
       "duration_minutes": 45,
       "beats": [
-        "山溪瀑布水声如雷鸣，掩盖茶室内微弱的交谈声。",
-        "铁壶咕嘟翻滚白汽，地榻暗格被无声掀开一角。",
-        "众人围坐地炉取暖，借跳动火光传阅盖印密约原件。"
+        "山溪水声隔绝了前庭喧嚣，四叠半茶室的地炉里温着一小壶清酒",
+        "两人隔着铁壶升腾的白汽对坐，将先代留下的私库折子逐页核对清楚",
+        "临起身前，对方为你满上最后一浅杯热酒，轻声约定天亮后再真正庆功"
       ],
       "hook_ids": [
         "h_kuroda_poison_proof",
@@ -1861,15 +1937,15 @@
     },
     {
       "id": "a_altar_scroll_audit",
-      "title": "本堂灵前文书对验",
+      "title": "偏殿案前核对吊唁名录",
       "location_ids": [
         "altar_main_sanctuary"
       ],
       "duration_minutes": 40,
       "beats": [
-        "铜磬长鸣震颤梁柱，文书执事展开历代家规图谱。",
-        "若头大步踏上榻榻米厉声质询继承条款合法性。",
-        "少夫人挺身而起据理力争，全堂气氛降至冰点。"
+        "本堂侧席铺开宣纸礼单，执事研好墨与你一同勾画各分家到场名册",
+        "每念到一个分家字号，对方就在纸角用朱砂笔点出该家今夜的倾向",
+        "礼单合上时，一张写着私库金印存放处的字条已被悄然夹进你的折扇"
       ],
       "hook_ids": [
         "h_widow_incense_bow",
@@ -1883,15 +1959,16 @@
     },
     {
       "id": "a_dawn_coffin_vigil",
-      "title": "拂晓启棺开道大礼",
+      "title": "破晓廊下听雨收伞",
       "location_ids": [
-        "altar_main_sanctuary"
+        "altar_main_sanctuary",
+        "rainy_zen_garden_corridor"
       ],
       "duration_minutes": 30,
       "beats": [
-        "晨光微熹穿透白幡，暴雨逐渐化作檐下细碎滴水。",
-        "黑衣宿卫排列整齐肃立躬身，灵车鸣笛响彻山谷。",
-        "少夫人执掌印信踏出正门，尘埃落定重整家族乾坤。"
+        "五更将尽，庭院里的暴雨渐歇，只剩檐角水珠滴落在青石台阶上",
+        "两人并肩立在廊柱边看着天际泛白，少夫人轻轻吐出一口长气",
+        "对方让你摸了一遍那枚温在袖中的黑金印信的棱角，随即整衣迈向正堂"
       ],
       "hook_ids": [
         "h_widow_seal_trust",
@@ -1901,6 +1978,50 @@
       "start_minute": 230,
       "tags": [
         "workplace_power"
+      ]
+    },
+    {
+      "id": "a_inner_obi_dressing",
+      "title": "屏风后整理丧服带缔",
+      "location_ids": [
+        "inner_living_chamber"
+      ],
+      "duration_minutes": 40,
+      "beats": [
+        "下半夜换香前，屏风后摆开黑漆衣桁，名伶轻步走近替你烘烤微潮的外褂",
+        "整理带缔时，对方指尖拂过你的腰侧，把一枚微型磁带顺势滑入内衬",
+        "烛芯挑亮一寸，两人在镜前对视一笑，谁也没有多说半句"
+      ],
+      "hook_ids": [
+        "h_geisha_tape_slide",
+        "h_widow_candle_gaze",
+        "h_widow_tea_cup_pass"
+      ],
+      "start_minute": 95,
+      "tags": [
+        "intimate"
+      ]
+    },
+    {
+      "id": "a_corridor_smoke_parley",
+      "title": "回廊尽头借火夜谈",
+      "location_ids": [
+        "rainy_zen_garden_corridor"
+      ],
+      "duration_minutes": 35,
+      "beats": [
+        "外廊尽头的避风角里，便衣刑警靠着朱漆立柱擦燃火柴点烟",
+        "你递过去一条干毛巾，两人听着院墙外的雨声聊起十年前的旧案",
+        "烟头在铜缸里摁灭时，对方把今夜外围警车的撤离时刻表塞进了你手里"
+      ],
+      "hook_ids": [
+        "h_detective_coat_shelter",
+        "h_shinji_blade_inspect",
+        "h_lieutenant_corridor_block"
+      ],
+      "start_minute": 155,
+      "tags": [
+        "intimate"
       ]
     }
   ],
@@ -1991,7 +2112,8 @@
       "leverage": null,
       "hook_ids": [
         "h_kuroda_poison_proof",
-        "h_detective_badge_reveal"
+        "h_detective_badge_reveal",
+        "h_geisha_whisper_plan"
       ],
       "start_minute": 70,
       "tags": [
@@ -2048,50 +2170,55 @@
     },
     {
       "id": "p_geisha_tape_leak",
-      "title": "通敌密录搜查危机",
+      "title": "关西通敌磁带与搜身反制",
       "source": "person",
       "flags": [
-        "timed"
+        "timed",
+        "leverage"
       ],
       "location_ids": [
         "altar_main_sanctuary"
       ],
-      "trigger": "若头察觉名伶举止反常，下令心腹在前庭对所有吊唁宾客翻包搜查。",
-      "objective": "在严密搜查网合围之前将关键录音带安全转移至内室。",
-      "choice": "是制造争端声东击西，还是借衣袍掩护接力传递？",
+      "trigger": "{ambitious_lieutenant_ryuji.name}下令前庭翻包搜查，{shrewd_geisha_informant.name}亮出了录有其与关西敌对组私分港口的磁带。",
+      "objective": "借这盘磁带逼若头当场喝退搜查队。",
+      "choice": "在灵前放三秒录音震慑若头，还是扣住母带逼其让出内室廊道。",
       "immediate": {
-        "text": "黑衣若众手持手电逼近宾客席位，名伶按住和服束带额角渗汗。",
+        "text": "黑衣若众逼近席位，名伶轻按袖口的录音机，若头脸色骤变。",
         "minutes": 10
       },
       "near": {
-        "text": "录音带一旦被搜出，名伶将被当场秘密勒杀于后院柴房。",
+        "text": "再震不住场面，若头就会把名伶押往柴房灭口。",
         "deadline_minutes": 25
       },
       "far": {
-        "trigger": "外部通敌关键证据彻底断裂销毁。",
-        "consequence": "无法在拂晓大典上当众揭穿若头勾结外帮的卖宗罪行。",
+        "trigger": "磁带被搜走销毁，证人遭软禁",
+        "consequence": "拂晓大典失去揭穿若头卖宗求荣的铁证。",
         "due_days": 1
       },
       "exits": [
         {
-          "option": "故意撞翻香炉制造烟雾混乱",
-          "cost": "面临被以大不敬罪名押往偏殿问责的风险。"
+          "option": "替名伶保管母带，逼若头撤走前庭搜查哨",
+          "cost": "若头的暗杀目标转向你与内室守卫"
         },
         {
-          "option": "在错身掩护下塞入玩家袖管",
-          "cost": "将致命搜身风险直接引向玩家自身。"
+          "option": "让名伶交出空白副带稳住若头",
+          "cost": "半小时内就会露馅，必须立刻转移到后院茶室"
         }
       ],
-      "leverage": null,
       "hook_ids": [
         "h_geisha_tape_slide",
         "h_geisha_whisper_plan"
       ],
       "start_minute": 160,
       "tags": [
-        "violence",
-        "bodily_harm"
-      ]
+        "workplace_power",
+        "crime"
+      ],
+      "leverage": {
+        "holder": "shrewd_geisha_informant",
+        "subject": "ambitious_lieutenant_ryuji",
+        "basis": "{shrewd_geisha_informant.name}握有{ambitious_lieutenant_ryuji.name}与关西敌对组密谋瓜分横滨港口的原声磁带"
+      }
     },
     {
       "id": "p_police_siege_approach",
@@ -2142,50 +2269,56 @@
     },
     {
       "id": "p_dawn_coffin_deadline",
-      "title": "拂晓启棺终局对决",
+      "title": "继承底稿旧账与启棺定局",
       "source": "institution",
       "flags": [
-        "timed"
+        "timed",
+        "leverage"
       ],
       "location_ids": [
-        "altar_main_sanctuary"
+        "altar_main_sanctuary",
+        "secret_tea_pavilion"
       ],
-      "trigger": "晨光微露，第一声出殡铜钟敲响，全家族直系元老齐聚灵堂等待宣布最终家督人选。",
-      "objective": "在全员见证下出示金印与毒杀真相，彻底定乾坤诛除首恶。",
-      "choice": "是公开展示证据令若头伏法，还是以雷霆武力就地平叛？",
+      "trigger": "出殡晨钟敲响，{mourning_widow_chiyoko.name}亮出{veteran_advisor_kuroda.name}替若头草拟的第二份废立底稿。",
+      "objective": "借这页底稿逼老执事在元老面前呈上真遗诏与毒杯。",
+      "choice": "当着老执事的面把废稿投进地炉以示恩威，还是扣作把柄逼其当堂指证。",
       "immediate": {
-        "text": "本堂大门隆隆洞开，日光驱散阴霾，白幡猎猎作响，最后决断在此一举。",
+        "text": "本堂铜磬长鸣，老执事看着少夫人指间的废稿，冷汗涔涔而下。",
         "minutes": 15
       },
       "near": {
-        "text": "若未能拿出决定性证据或印信，若头将强行扶棺登位宣告大局已定。",
+        "text": "老执事若临阵首鼠两端，元老会将默认武斗派掌权。",
         "deadline_minutes": 30
       },
       "far": {
-        "trigger": "家督之位尘埃落定正统被逆夺。",
-        "consequence": "宗家一派彻底被抹杀难逃惨遭清洗宿命。",
+        "trigger": "真遗诏没能当堂宣读，印信被夺",
+        "consequence": "宗家正统被抹杀，少夫人与旧部遭到清洗。",
         "due_days": 1
       },
       "exits": [
         {
-          "option": "少夫人高举初代金印立诏宣判",
-          "cost": "需独自面对若头穷途末路的最后拼死反扑。"
+          "option": "少夫人当场焚毁废稿，换老执事捧毒杯上堂死谏",
+          "cost": "拿捏老执事的凭据没了，日后只能靠信义维系"
         },
         {
-          "option": "指派近卫与其进行灵前堂堂正正决斗",
-          "cost": "承担近卫重伤甚至殉职的惨烈血色代价。"
+          "option": "扣留废稿，逼老执事独力承担伪造文书的罪责",
+          "cost": "宗家老臣寒心，分家元老对新家督生出忌惮"
         }
       ],
-      "leverage": null,
       "hook_ids": [
         "h_widow_incense_bow",
-        "h_shinji_blade_guard"
+        "h_kuroda_scroll_whisper"
       ],
       "start_minute": 225,
       "tags": [
         "workplace_power",
         "crime"
-      ]
+      ],
+      "leverage": {
+        "holder": "mourning_widow_chiyoko",
+        "subject": "veteran_advisor_kuroda",
+        "basis": "{mourning_widow_chiyoko.name}握有{veteran_advisor_kuroda.name}替若头草拟的废立底稿"
+      }
     }
   ],
   "hooks": [
@@ -2414,5 +2547,5 @@
     "disaster"
   ],
   "status": "released",
-  "notes": "基本保留原稿：暴雨守灵、黑金印、毒杀银杯、名伶磁带、刑警抗命、近卫横刀与拂晓开棺。改动：若头的亲密倾向降为对等宿敌（欲望 1–3），不写成对少夫人的觊觎；身份名“年满十八法务助理”改为“事务局法务助理”，id 去掉 apprentice；剑客“幼年受恩”改为“早年流落街头受收留”；钩子与私语里的 {player.name} 改成“你”；补少当家与近卫之间的关系；少夫人、名伶、若头固定性别，其余不限。"
+  "notes": "基本保留原稿：暴雨守灵、黑金印、毒杀银杯、名伶磁带、刑警抗命、近卫横刀与拂晓开棺。改动：若头的亲密倾向降为对等宿敌（欲望 1–3），不写成对少夫人的觊觎；身份名“年满十八法务助理”改为“事务局法务助理”，id 去掉 apprentice；剑客“幼年受恩”改为“早年流落街头受收留”；钩子与私语里的 {player.name} 改成“你”；补少当家与近卫之间的关系；少夫人、名伶、若头固定性别，其余不限。\n2026-10-18 按写作规则 v2 改造：人物组合改为 8 单人 + 2 双人；磁带搜查与启棺两条压力改成把柄（名伶握若头的通敌磁带、少夫人握老执事的废立底稿）；日常重写为八条。"
 }

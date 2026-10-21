@@ -103,79 +103,10 @@
  ],
  "cast_combos": [
   {
-   "chemistry": "你的名籍是{ledger_clerk.name}替你补的，按印的不是你；{patrol_captain.name}今夜说，要把坊里名籍有毛病的人一个个叫出来问。",
-   "id": "k_lantern_ledger",
+   "chemistry": "搜坊令今夜下来，{ledger_clerk.name}把你拉进名籍房内室，核对那枚替你按下的假印。",
+   "id": "combo_ledger_seal_night",
    "identity_ids": [
-    "lantern_hand"
-   ],
-   "player_positions": [
-    "low"
-   ],
-   "power_structure": "npc_high",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "ledger_clerk",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{ledger_clerk.name}替你按过印，从没跟你提过代价",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "patrol_captain",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 0
-     },
-     "reason": "{patrol_captain.name}犯夜时放过你一次",
-     "stage": "acquainted"
-    },
-    {
-     "a": "ledger_clerk",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "patrol_captain",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "两个人都知道对方的名字有毛病，谁也不说",
-     "stage": "acquainted"
-    }
-   ],
-   "slots": [
-    "ledger_clerk",
-    "patrol_captain"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "你想在名籍重造之前，让自己的名字变成真的",
-    "limit_gap": "名籍要重造，{patrol_captain.name}自己的名字也不干净",
-    "meeting_reason": "每夜挂灯收灯，你都要从名籍房门前和坊门下走过",
-    "resource_gap": "{ledger_clerk.name}有你的名籍，{patrol_captain.name}有坊门钥匙和六个武侯，你只有一副灯架"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "te_name_seal",
-    "te_locked_in"
-   ]
-  },
-  {
-   "chemistry": "你欠{creditor.name}的钱这个月还不上；{qin_player.name}买过你的几首诗谱成曲子，{creditor.name}说，只要你把那些诗的名字改成{creditor.ta}的，账就一笔勾销。",
-   "id": "k_debt_poems",
-   "identity_ids": [
+    "lantern_hand",
     "failed_candidate"
    ],
    "player_positions": [
@@ -187,54 +118,66 @@
      "a": "player",
      "a_to_b": {
       "tension": 2,
-      "trust": 0
+      "trust": 3
      },
-     "b": "creditor",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{creditor.name}借钱给你时一句难听话都没说",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 2
-     },
-     "b": "qin_player",
+     "b": "ledger_clerk",
      "b_to_a": {
       "tension": 2,
-      "trust": 1
+      "trust": 3
      },
-     "reason": "{qin_player.name}弹你的诗，从不提作者",
-     "stage": "acquainted"
-    },
-    {
-     "a": "creditor",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "qin_player",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{creditor.name}年轻时听过{qin_player.name}师父弹的一支曲子",
-     "stage": "acquainted"
+     "reason": "你刚流落长安时是对方私下替你补了怀远坊的名籍，寒夜里你在名籍房替对方研墨烘手，两人在案几后的软榻上早有过肌肤之亲。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "creditor",
-    "qin_player"
+    "ledger_clerk"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想还清账，又不想把诗卖掉",
-    "limit_gap": "租契快到期，{qin_player.name}也被人逼着卖名字",
-    "meeting_reason": "{qin_player.name}弹的是你的诗，{creditor.name}每夜坐在楼下听",
-    "resource_gap": "{creditor.name}有你的借据，{qin_player.name}有你的诗和一座琴房，你只有一手字"
+    "irreplaceable_goal": "让自己的名字变成真的，又不把{ledger_clerk.name}拖下水。",
+    "limit_gap": "晨鼓一响就要重造名籍，假印藏不过今夜。",
+    "meeting_reason": "街鼓敲尽，名籍房的门从里面落了栓。",
+    "resource_gap": "{ledger_clerk.name}握着全坊的名籍，你只有一个借来的名字。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_name_seal",
+    "te_locked_in"
+   ]
+  },
+  {
+   "chemistry": "三更就要清账，{creditor.name}却遣走了账房，留你在内堂独处对饮。",
+   "id": "combo_creditor_poem_pledge",
+   "identity_ids": [
+    "failed_candidate"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "creditor",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 2
+     },
+     "reason": "你欠下的房钱酒资全押在对方匣子里，对方从不催逼；你每逢弦月夜自己去内堂抄诗侍酒，对方微醺时用折扇挑起过你的下颌。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "creditor"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "弄清{creditor.name}要的是钱还是你的诗，再决定今夜怎么了结这笔账。",
+    "limit_gap": "租契和借据同一夜到期，{creditor.name}背后的东家也在催。",
+    "meeting_reason": "内堂的灯只点了一盏，{creditor.name}替你斟满了酒。",
+    "resource_gap": "{creditor.name}有柜坊和满匣子的借据，你只有几篇被人传抄的诗。"
    },
    "tags": [],
    "tension_engine_ids": [
@@ -243,79 +186,10 @@
    ]
   },
   {
-   "chemistry": "{hu_heir.name}欠你半年的酒钱，今夜三更还欠{creditor.name}一笔大的；两个人约好今夜当着你的面把话说开，谁也没先开口。",
-   "id": "k_tavern_debt",
+   "chemistry": "有人拿着抄本要当众揭穿顶名旧案，{ledger_clerk.name}抢先一步敲响了你的门。",
+   "id": "combo_ledger_shared_secret",
    "identity_ids": [
-    "tavern_keeper"
-   ],
-   "player_positions": [
-    "equal"
-   ],
-   "power_structure": "equal",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 2
-     },
-     "b": "hu_heir",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 2
-     },
-     "reason": "{hu_heir.name}的父亲在你的酒肆里喝过最后一顿酒",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "creditor",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{creditor.name}每月来你的酒肆坐一回，酒钱从不拖",
-     "stage": "acquainted"
-    },
-    {
-     "a": "hu_heir",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "creditor",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{hu_heir.name}认定借据是假的",
-     "stage": "acquainted"
-    }
-   ],
-   "slots": [
-    "hu_heir",
-    "creditor"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "你想收回酒钱，又不想看着货栈落进{creditor.name}手里",
-    "limit_gap": "坊门锁了，三更一到，账就要了",
-    "meeting_reason": "两个人都是你的熟客，今夜都要你做个见证",
-    "resource_gap": "{hu_heir.name}有一院子货，{creditor.name}有借据和武侯铺的交情，你有一间酒肆和半年的酒账"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "te_debt_midnight",
-    "te_locked_in"
-   ]
-  },
-  {
-   "chemistry": "{wanderer.name}今夜带着一袖子血找上了你，说血不是{wanderer.ta}的；前后不到半个时辰，{patrol_captain.name}也找到你，问你今夜见没见过一个带刀的人。",
-   "id": "k_wound_search",
-   "identity_ids": [
+    "tavern_keeper",
     "ward_physician"
    ],
    "player_positions": [
@@ -327,54 +201,107 @@
      "a": "player",
      "a_to_b": {
       "tension": 2,
-      "trust": 1
+      "trust": 3
+     },
+     "b": "ledger_clerk",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 3
+     },
+     "reason": "三年来每逢街鼓敲毕，对方都从名籍房后窗翻进你的院子喝一碗热汤，两人在长夜里互知底细、同榻而眠。",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
+    "ledger_clerk"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "陪{ledger_clerk.name}熬过晨鼓，也守住你们俩这三年。",
+    "limit_gap": "晨鼓一响坊正就要问话，抄本已经传到十字街。",
+    "meeting_reason": "后窗又被推开了，这一回{ledger_clerk.name}没带热汤，带着一身寒气。",
+    "resource_gap": "{ledger_clerk.name}有名籍房的钥匙，你有一间铺子和全坊的人缘。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_name_seal",
+    "te_dawn_drum"
+   ]
+  },
+  {
+   "chemistry": "有豪客要买断{qin_player.name}的名字收进私籍，{qin_player.ta}抱着琴坐在暗处等你。",
+   "id": "combo_qin_first_tune",
+   "identity_ids": [
+    "tavern_keeper"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 3
+     },
+     "b": "qin_player",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 3
+     },
+     "reason": "对方每夜第一支曲子都是弹给你听的，散场后你常留在落栓的琴阁替对方解下发簪、热帕敷指，在锦被间低语到五更。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "qin_player"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "让{qin_player.name}的名字留在{qin_player.ta}自己手里。",
+    "limit_gap": "豪客的银子已经放在案上，天亮前要一个答复。",
+    "meeting_reason": "琴阁落了栓，最后一支曲子还没弹完。",
+    "resource_gap": "{qin_player.name}有一手好琴和一个被人惦记的名字，你有一间酒肆和全坊的耳朵。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_bought_name",
+    "te_dawn_drum"
+   ]
+  },
+  {
+   "chemistry": "{wanderer.name}赶在街鼓落锁前闯进坊门，带着未干的血迹和一封遗书，又翻进了你的窗。",
+   "id": "combo_wanderer_balm_night",
+   "identity_ids": [
+    "ward_physician"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
      },
      "b": "wanderer",
      "b_to_a": {
       "tension": 2,
       "trust": 2
      },
-     "reason": "{wanderer.name}说是坊门口的老卒指的路",
-     "stage": "stranger"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "patrol_captain",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "你给{patrol_captain.name}治过一次旧伤",
-     "stage": "acquainted"
-    },
-    {
-     "a": "wanderer",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "patrol_captain",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{patrol_captain.name}今夜亲手放{wanderer.name}进的坊门",
-     "stage": "acquainted"
+     "reason": "上月对方夜探怀远坊受了风寒刀伤，是你藏在井巷私室里贴身替对方解衣敷药、喂热汤熬过三宿。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "wanderer",
-    "patrol_captain"
+    "wanderer"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想把人救下来，又不想把自己搭进去",
-    "limit_gap": "上头要搜坊，你替人治伤没报",
-    "meeting_reason": "两个人今夜都来找你，前后只差半个时辰",
-    "resource_gap": "{wanderer.name}有一把刀和一封要送的信，{patrol_captain.name}有火把和武侯铺，你有一手治刀伤的本事"
+    "irreplaceable_goal": "保住{wanderer.name}的命，也弄清那封遗书是写给谁的。",
+    "limit_gap": "武侯今夜搜坊，血迹藏不到天亮。",
+    "meeting_reason": "井巷私室的窗被推开，{wanderer.name}靠在窗框上，衣襟湿了一片。",
+    "resource_gap": "{wanderer.name}有一把刀和一封遗书，你有一铺子药和不问来路的规矩。"
    },
    "tags": [],
    "tension_engine_ids": [
@@ -383,8 +310,8 @@
    ]
   },
   {
-   "chemistry": "你是县尉，被锁在了坊里；{ledger_clerk.name}说今夜刚有人来名籍房查一个名字，那个名字和你案卷上的逃犯一样，而{wanderer.name}正坐在你对面喝酒。",
-   "id": "k_officer_locked",
+   "chemistry": "你带队被锁在坊中，{ledger_clerk.name}捧着总册来找你，私下勾兑名单。",
+   "id": "combo_officer_ledger_inquest",
    "identity_ids": [
     "county_officer"
    ],
@@ -396,65 +323,36 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 1
+      "tension": 3,
+      "trust": 2
      },
      "b": "ledger_clerk",
      "b_to_a": {
-      "tension": 1,
-      "trust": 1
+      "tension": 3,
+      "trust": 3
      },
-     "reason": "{ledger_clerk.name}给你送过三年的名籍抄本",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "wanderer",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{wanderer.name}敬了你一碗酒，你没喝",
-     "stage": "stranger"
-    },
-    {
-     "a": "ledger_clerk",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "wanderer",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 0
-     },
-     "reason": "{ledger_clerk.name}认得{wanderer.name}要找的那个名字",
-     "stage": "stranger"
+     "reason": "去年万年县彻查户籍时你帮对方压下过一桩旧卷，那夜在坊正署内室对方主动解开衣带，让你看肩头的旧烙印。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "ledger_clerk",
-    "wanderer"
+    "ledger_clerk"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想破案，又隐约觉得案卷上写的不是真的",
-    "limit_gap": "天亮前要给上头交代，坊里没有你的人",
-    "meeting_reason": "坊门落锁，你们三个都出不去",
-    "resource_gap": "你有官身和案卷，{ledger_clerk.name}有名籍，{wanderer.name}有一把刀和一个真相"
+    "irreplaceable_goal": "交一份过得去的名单，又不把{ledger_clerk.name}交出去。",
+    "limit_gap": "天亮要把名单呈上县衙，名单上少一个人就是你的失职。",
+    "meeting_reason": "坊门落锁后，{ledger_clerk.name}敲开了你借宿的那间屋。",
+    "resource_gap": "你有县衙的公文和查籍的权，{ledger_clerk.name}有全坊的名籍和你压下过的那桩旧卷。"
    },
    "tags": [],
    "tension_engine_ids": [
-    "te_blood_blade",
-    "te_name_seal"
+    "te_name_seal",
+    "te_locked_in"
    ]
   },
   {
-   "chemistry": "你今夜来怀远坊谈的买卖，是买下{hu_heir.name}的货栈；{qin_player.name}在楼上弹琴，你点了三支曲子，{qin_player.name}一支也没弹。",
-   "id": "k_caravan_deal",
+   "chemistry": "三更货栈大账到期，{hu_heir.name}带你钻进井巷的暗洞，看那箱瞒着全坊藏起的龙脑香。",
+   "id": "combo_caravan_spice_vault",
    "identity_ids": [
     "caravan_master"
    ],
@@ -466,66 +364,40 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 0
+      "tension": 3,
+      "trust": 2
      },
      "b": "hu_heir",
      "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "你和{hu_heir.name}的父亲做过十年生意",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "qin_player",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{qin_player.name}说认得你，你不记得在哪里见过",
-     "stage": "stranger"
-    },
-    {
-     "a": "hu_heir",
-     "a_to_b": {
-      "tension": 1,
+      "tension": 3,
       "trust": 2
      },
-     "b": "qin_player",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 2
-     },
-     "reason": "{hu_heir.name}每月替{qin_player.name}付一半琴房的租",
-     "stage": "familiar"
+     "reason": "你在西市几次替对方压下胡商行会的闲话，对方曾在酒后把你拉进胡旋舞的帷幔后面偷吻过你。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "hu_heir",
-    "qin_player"
+    "hu_heir"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想要货栈，也想知道{qin_player.name}为什么不弹",
-    "limit_gap": "坊门锁了，你和他们一样出不去",
-    "meeting_reason": "你被锁在坊里，琴房和货栈只隔一条街",
-    "resource_gap": "你有钱和驼队，{hu_heir.name}有一院子货和一笔今夜到期的账，{qin_player.name}有一张不肯为你弹的琴"
+    "irreplaceable_goal": "决定替不替{hu_heir.name}吞下这箱货，保住{hu_heir.ta}的货栈。",
+    "limit_gap": "三更一到，柜坊就要来封货栈。",
+    "meeting_reason": "暗洞里只容得下两个人，{hu_heir.name}举着油灯走在前面。",
+    "resource_gap": "你有驼队和行会的话语权，{hu_heir.name}有货栈和那箱龙脑香。"
    },
    "tags": [],
    "tension_engine_ids": [
     "te_debt_midnight",
-    "te_bought_name"
+    "te_locked_in"
    ]
   },
   {
-   "chemistry": "{qin_player.name}的真名在名籍上被人顶认过，替人按印的是{ledger_clerk.name}；今夜有人要连{qin_player.name}的名字一起买走，{ledger_clerk.name}说只有你能替{qin_player.ta}作证。",
-   "id": "k_name_and_qin",
-   "identity_ids": [],
+   "chemistry": "搜坊在即，{patrol_captain.name}把你堵在井巷拐角，要和你对口供。",
+   "id": "combo_patrol_false_tag",
+   "identity_ids": [
+    "county_officer",
+    "ward_physician"
+   ],
    "player_positions": [
     "low",
     "equal",
@@ -533,6 +405,65 @@
    ],
    "power_structure": "switchable",
    "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 1
+     },
+     "b": "patrol_captain",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 1
+     },
+     "reason": "你知道对方腰牌上的名字是顶替阵亡同袍的，对方也在夜巡时多次放你超时出入，两人在坊墙暗影里试探交锋过好几回。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "patrol_captain"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "对好口供，也弄清{patrol_captain.name}这些年为什么一直放过你。",
+    "limit_gap": "天亮前搜坊结束，口供对不上，两个人都要出事。",
+    "meeting_reason": "火把照不到的井巷拐角，{patrol_captain.name}按住了你的肩。",
+    "resource_gap": "{patrol_captain.name}有坊门钥匙和六个武侯，你有{patrol_captain.ta}腰牌的秘密。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_locked_in",
+    "te_blood_blade"
+   ]
+  },
+  {
+   "chemistry": "{qin_player.name}当年被人顶认的真名就记在{ledger_clerk.name}锁着的旧册里；今夜买名的人和查册的人同时逼上门，三个人在落栓的琴房里对峙。",
+   "id": "combo_name_and_qin_duet",
+   "identity_ids": [
+    "county_officer",
+    "caravan_master",
+    "failed_candidate"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 2
+     },
+     "b": "ledger_clerk",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 2
+     },
+     "reason": "你们在坊里做了几年邻居，你按过的每一个印都经过对方的手。",
+     "stage": "familiar"
+    },
     {
      "a": "player",
      "a_to_b": {
@@ -544,167 +475,38 @@
       "tension": 2,
       "trust": 1
      },
-     "reason": "{qin_player.name}只对你说过一次真名",
-     "stage": "acquainted"
+     "reason": "对方弹琴时只看你一眼，散场后却从不和你多说一句。",
+     "stage": "testing"
     },
     {
-     "a": "player",
+     "a": "ledger_clerk",
      "a_to_b": {
-      "tension": 1,
+      "tension": 3,
       "trust": 1
      },
-     "b": "ledger_clerk",
+     "b": "qin_player",
      "b_to_a": {
-      "tension": 1,
+      "tension": 3,
       "trust": 1
      },
-     "reason": "{ledger_clerk.name}知道你见过那个名字",
-     "stage": "acquainted"
-    },
-    {
-     "a": "qin_player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "ledger_clerk",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{ledger_clerk.name}欠{qin_player.name}一句对不住",
-     "stage": "acquainted"
+     "reason": "一个的真名锁在另一个的樟木匣里，两人见面时谁都不提。",
+     "stage": "testing"
     }
    ],
    "slots": [
-    "qin_player",
-    "ledger_clerk"
+    "ledger_clerk",
+    "qin_player"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想让{qin_player.name}把自己的名字拿回来",
-    "limit_gap": "天亮之前，买名字的人就要去坊正署按印",
-    "meeting_reason": "坊门落锁，三个人都在这一坊里",
-    "resource_gap": "{qin_player.name}有一张琴，{ledger_clerk.name}有名籍和一笔旧账，你见过{qin_player.name}本来的名字"
+    "irreplaceable_goal": "让旧册上的名字各归其主，不让任何一个人被押出坊门。",
+    "limit_gap": "晨鼓之前旧册要交，买名的银子也只等今夜。",
+    "meeting_reason": "琴房的门从里面落了栓，琴案上压着一卷旧册。",
+    "resource_gap": "你有官职、驼队或一手好字，{ledger_clerk.name}握着旧册，{qin_player.name}握着买名人出的银子。"
    },
    "tags": [],
    "tension_engine_ids": [
-    "te_bought_name",
-    "te_name_seal"
-   ]
-  },
-  {
-   "chemistry": "{wanderer.name}带着一封遗书跑进坊门，要交给{hu_heir.name}；{creditor.name}说那封信是假的，三更一到，货栈就归{creditor.ta}。",
-   "id": "k_letter_debt",
-   "identity_ids": [],
-   "player_positions": [
-    "low",
-    "equal",
-    "high"
-   ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "wanderer",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{wanderer.name}在灯下拉住你问路",
-     "stage": "stranger"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "hu_heir",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{hu_heir.name}请你喝过葡萄酒",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "creditor",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 0
-     },
-     "reason": "{creditor.name}对你一向客气",
-     "stage": "acquainted"
-    },
-    {
-     "a": "wanderer",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "hu_heir",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{wanderer.name}说是{hu_heir.name}父亲托付的",
-     "stage": "stranger"
-    },
-    {
-     "a": "wanderer",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "creditor",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{creditor.name}一看见那把刀，脸色就变了",
-     "stage": "stranger"
-    },
-    {
-     "a": "hu_heir",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "creditor",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "借据上的字，{hu_heir.name}一个都不信",
-     "stage": "acquainted"
-    }
-   ],
-   "slots": [
-    "wanderer",
-    "hu_heir",
-    "creditor"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "你想在三更之前知道那封遗书上写的是什么",
-    "limit_gap": "三更账到期，武侯在搜坊",
-    "meeting_reason": "坊门一锁，三个人和你都在这一坊里",
-    "resource_gap": "{wanderer.name}有遗书和一把刀，{hu_heir.name}有一院子货，{creditor.name}有借据，你是三个人都肯说一句话的人"
-   },
-   "tags": [
-    "violence"
-   ],
-   "tension_engine_ids": [
-    "te_blood_blade",
-    "te_debt_midnight"
+    "te_name_seal",
+    "te_bought_name"
    ]
   }
  ],
@@ -805,7 +607,7 @@
      "深夜灯下墨还没干的那一刻"
     ],
     "preconditions": [
-     "名籍房的门已经落锁"
+     "名籍房的门已经落锁，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -926,7 +728,7 @@
      "三更后楼上的静"
     ],
     "preconditions": [
-     "楼下的客人已经散尽"
+     "楼下的客人已经散尽，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1047,7 +849,7 @@
      "香料堆里闷热的气味"
     ],
     "preconditions": [
-     "账已经对完"
+     "账已经对完，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1168,7 +970,7 @@
      "算盘停下来以后的那一阵静"
     ],
     "preconditions": [
-     "柜坊的门已经上了板"
+     "柜坊的门已经上了板，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -1289,7 +1091,7 @@
      "三更以后坊里的寂静"
     ],
     "preconditions": [
-     "第三遍已经巡完"
+     "第三遍已经巡完，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -1410,7 +1212,7 @@
      "井水洗过伤口的凉"
     ],
     "preconditions": [
-     "刀已经入鞘"
+     "刀已经入鞘，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1588,6 +1390,23 @@
    "start_minute": 1140,
    "tags": [],
    "title": "去名籍房按一个印"
+  },
+  {
+   "beats": [
+    "香炉里的灰拨开，埋进一块新炭",
+    "沉香的烟顺着琴案慢慢爬上去",
+    "有人把冻僵的手拢在香炉上方，半天没说话"
+   ],
+   "duration_minutes": 25,
+   "hook_ids": [],
+   "id": "a_qin_incense",
+   "location_ids": [
+    "qin_house",
+    "ledger_office"
+   ],
+   "start_minute": 1170,
+   "tags": [],
+   "title": "在琴房添香温手"
   }
  ],
  "default_npc_gender_mix": {
@@ -1724,9 +1543,7 @@
    ],
    "id": "ward_gate",
    "name": "坊门",
-   "pressure_modifiers": {
-    "p_drum_end": "木栓已经落下一半，老卒的手搭在上面。"
-   },
+   "pressure_modifiers": {},
    "privacy": "public",
    "tags": [],
    "visibility": "守门的老卒和巡夜的武侯都在门边；鼓响的时候，谁在门里谁在门外，一目了然",
@@ -1796,9 +1613,10 @@
    "id": "qin_house",
    "name": "琴房",
    "pressure_modifiers": {
-    "p_buy_name": "楼下有个客人把一锭银子放在案上，说不要曲子。"
+    "p_buy_name": "楼下有个客人把一锭银子放在案上，说不要曲子。",
+    "p_drum_end": "窗外雪落无声压弯了竹枝，琴旁放着一只刻花铜手炉。"
    },
-   "privacy": "semi",
+   "privacy": "private",
    "tags": [],
    "visibility": "楼下的客人听得见琴，看不见楼上；楼上的人隔着窗纸看得见整条街",
    "witnesses": [
@@ -1842,7 +1660,8 @@
    "id": "well_lane",
    "name": "坊墙下的井巷",
    "pressure_modifiers": {
-    "p_blood_blade": "井台的石头上，有一道没擦干净的暗红。"
+    "p_blood_blade": "井台的石头上，有一道没擦干净的暗红。",
+    "p_drum_end": "青砖小院积了寸许白雪，门栓落死，里屋床帐低垂、瑞脑香袅袅。"
    },
    "privacy": "private",
    "tags": [],
@@ -1921,7 +1740,7 @@
   ],
   "order": "family_first"
  },
- "notes": "第二批世界（用户 2026-10-03 素材库的改写，见 content-src/concepts/batch2-concepts.md 第 9 个）。只写人，不写精怪。性别按会话偏好生成（D15）。",
+ "notes": "第二批世界（用户 2026-10-03 素材库的改写，见 content-src/concepts/batch2-concepts.md 第 9 个）。只写人，不写精怪。性别按会话偏好生成（D15）。\n2026-10-18 按写作规则 v2 改造：组合改成 8 组单人加 1 组书吏与琴师的三方局；把柄改由坊正书吏握着琴师更改名籍的红契；鼓声将尽改成寒雨夜禁与炭火见底；琴房改为 private。\n2026-10-18 按写作规则 v2 改造：去套路化补丁：寒雨夜禁改成长安初雪与熏笼余烬。",
  "player_identities": [
   {
    "age_range": [
@@ -2105,21 +1924,21 @@
  "premise": "坊门一关，这一坊就是一座孤岛，夜里的规矩由谁来定？",
  "pressures": [
   {
-   "choice": "认下，还是不认",
+   "choice": "各自披着薄袄在案前硬捱，还是把熏笼烘进同一床锦被里贴身相拥取暖",
    "exits": [
     {
-     "cost": "那人今夜做的事，有一半要算在你头上",
-     "option": "按印担保"
+     "cost": "瑞脑香与滚烫的体温裹在一床锦被里，礼法与坊墙一道在雪夜里融化",
+     "option": "吹熄银烛，将熏笼置入锦衾深处，解去外袍与对方肌肤相贴、足心相抵共度雪夜"
     },
     {
-     "cost": "那人看你的眼神，你会记很久",
-     "option": "说不认得"
+     "cost": "满屋烟气呛人，到天亮手脚依旧冰凉",
+     "option": "烧掉旧竹简与废纸勉强取暖"
     }
    ],
    "far": {
-    "consequence": "那人要在门外的大街上过一夜，被巡街的金吾抓去",
-    "due_days": 1,
-    "trigger": "门关上了"
+    "consequence": "明日官署点卯或献曲当场失仪获罪",
+    "due_days": 5,
+    "trigger": "感染风寒高热不起"
    },
    "flags": [
     "timed"
@@ -2127,51 +1946,57 @@
    "hook_ids": [],
    "id": "p_drum_end",
    "immediate": {
-    "minutes": 3,
-    "text": "第五百九十七声鼓，门外的人离门还有三十步"
+    "minutes": 15,
+    "text": "抚琴或执笔的指尖冻得通红僵硬，哈出一口白气久久不散"
    },
    "leverage": null,
    "location_ids": [
-    "ward_gate"
+    "qin_house",
+    "well_lane"
    ],
    "near": {
-    "deadline_minutes": 10,
-    "text": "鼓声敲完"
+    "deadline_minutes": 240,
+    "text": "三更雪势最紧，炭火若灭屋里便如冰窖"
    },
-   "objective": "在鼓声停下之前，决定认不认这个人",
-   "source": "institution",
-   "start_minute": 1108,
+   "objective": "在五更开坊前，把最后半篓银炭拢进铜熏笼，塞进锦衾与对方同榻抵御寒夜",
+   "source": "nature",
+   "start_minute": 1140,
    "tags": [],
-   "title": "鼓声将尽",
-   "trigger": "街鼓快敲完了，一个人从朱雀街那边一路跑来，要进坊门；守门的老卒说，得有人替这人按印担保"
+   "title": "长安初雪与熏笼余烬",
+   "trigger": "暮鼓敲毕后长安落了入冬第一场大雪，坊门落锁，北风刮得窗纸作响，琴房与井巷私室的银炭只剩最后半篓，水盂里都结了薄冰"
   },
   {
-   "choice": "替人遮掩，还是让名字回到原主手里",
+   "choice": "帮{ledger_clerk.name}拿底册换条件，还是劝{ledger_clerk.ta}把红契毁掉",
    "exits": [
     {
-     "cost": "你就成了改籍的同谋",
-     "option": "去找书吏改一笔"
+     "cost": "两人从此一个握着另一个的命",
+     "option": "让{qin_player.name}答应{ledger_clerk.name}的条件"
     },
     {
-     "cost": "两个人里总有一个要恨你",
-     "option": "当众作证"
+     "cost": "私毁籍册的罪名要你们一起担",
+     "option": "把红契投进火盆"
     }
    ],
    "far": {
-    "consequence": "被顶认的人和顶认的人，有一个要从这一坊搬走",
+    "consequence": "{qin_player.name}被当作脱籍流民收押，琴房也要被封",
     "due_days": 3,
-    "trigger": "当众改正"
+    "trigger": "底册呈到县衙"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [],
    "id": "p_name_claimed",
    "immediate": {
     "minutes": 10,
-    "text": "一个人举着名籍抄本，指着一个名字大声念了出来"
+    "text": "樟木匣开着，红契上的指印和名籍册上的对不上"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{ledger_clerk.name}锁在樟木匣里的旧籍底册记着{qin_player.name}当年更改名籍的红契，一旦呈交县衙核验，{qin_player.ta}便会被视作脱籍流民当场收押",
+    "holder": "ledger_clerk",
+    "subject": "qin_player"
+   },
    "location_ids": [
     "ledger_office",
     "cross_street"
@@ -2180,12 +2005,12 @@
     "deadline_minutes": 600,
     "text": "晨鼓一响坊正就问话"
    },
-   "objective": "在坊正问话之前，弄清名籍上那个指印是谁按的",
+   "objective": "在坊正问话之前，决定这册底册交不交出去",
    "source": "person",
    "start_minute": 1200,
    "tags": [],
    "title": "顶认",
-   "trigger": "有人拿着名籍抄本，说一个坊里的人顶认了别人的名字，要当众改正"
+   "trigger": "{ledger_clerk.name}的樟木匣里锁着一册旧籍底册，上面有{qin_player.name}当年更改名籍的红契"
   },
   {
    "choice": "帮着还，还是帮着查",

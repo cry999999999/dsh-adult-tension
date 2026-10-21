@@ -103,8 +103,8 @@
  ],
  "cast_combos": [
   {
-   "chemistry": "{second_owner.name}是你的老板，今天取下了一只杯子却不说是谁的；{bandai_keeper.name}说那只杯子的主人，昨晚还在松之汤泡过澡。",
-   "id": "k_counter_help",
+   "chemistry": "地产公司的人刚走，{second_owner.name}把转让书拍在吧台上，拉着你上了二楼；那只被取下的杯子还裹着报纸放在纸箱里。",
+   "id": "combo_hakuba_after_hours",
    "identity_ids": [
     "part_timer"
    ],
@@ -116,55 +116,26 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 2
+      "tension": 2,
+      "trust": 3
      },
      "b": "second_owner",
      "b_to_a": {
-      "tension": 1,
-      "trust": 2
-     },
-     "reason": "{second_owner.name}手把手教你煮虹吸咖啡",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "bandai_keeper",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{bandai_keeper.name}说你擦杯子的样子像白桦的老店主",
-     "stage": "acquainted"
-    },
-    {
-     "a": "second_owner",
-     "a_to_b": {
       "tension": 2,
-      "trust": 1
+      "trust": 3
      },
-     "b": "bandai_keeper",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 2
-     },
-     "reason": "{bandai_keeper.name}看着{second_owner.name}长大，有一件事一直没告诉{second_owner.ta}",
-     "stage": "familiar"
+     "reason": "打烊后你在吧台里替对方烘豆擦杯，好几个雨夜两人在白桦二楼的旧沙发上越了界，谁也没对外说过。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "second_owner",
-    "bandai_keeper"
+    "second_owner"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想在店卖掉之前，弄清那只杯子为什么被取下",
-    "limit_gap": "店要卖了，你的工作跟着没了",
-    "meeting_reason": "你每天收工都去松之汤，{bandai_keeper.name}总给你留着最后一池水",
-    "resource_gap": "{second_owner.name}有一间店和十四个杯子，{bandai_keeper.name}有三十年的眼睛，你只会煮咖啡"
+    "irreplaceable_goal": "陪{second_owner.name}决定签不签转让书，也问清自己在这家店里算什么。",
+    "limit_gap": "转让书月底前要回复，店一卖，你的工作和二楼那张旧沙发一起没了。",
+    "meeting_reason": "打烊落锁后，{second_owner.name}关掉楼下的灯，只留二楼一盏台灯等你上去。",
+    "resource_gap": "{second_owner.name}有白桦的店契和十四只杯子，你只有吧台后面的位置和一双会煮虹吸的手。"
    },
    "tags": [],
    "tension_engine_ids": [
@@ -173,8 +144,8 @@
    ]
   },
   {
-   "chemistry": "你住在{bandai_keeper.name}的钱汤二楼，房租靠烧锅炉抵；{night_waiter.name}每天早上交了班来泡第一池水，总要问你一句昨晚谁来过。",
-   "id": "k_boiler_room",
+   "chemistry": "今晚收池后，{bandai_keeper.name}打开账匣底层，把一封三十年前没寄出的旧信放到你手里。",
+   "id": "combo_sento_boiler_steam",
    "identity_ids": [
     "sento_lodger"
    ],
@@ -186,55 +157,26 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 2
+      "tension": 2,
+      "trust": 3
      },
      "b": "bandai_keeper",
      "b_to_a": {
-      "tension": 1,
+      "tension": 3,
       "trust": 2
      },
-     "reason": "{bandai_keeper.name}收留了刚上京的你",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "night_waiter",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{night_waiter.name}在你烧锅炉的时候哼过一首歌",
-     "stage": "acquainted"
-    },
-    {
-     "a": "bandai_keeper",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "night_waiter",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{bandai_keeper.name}知道{night_waiter.name}那只杯子的事",
-     "stage": "acquainted"
+     "reason": "你借住松之汤二楼烧锅炉抵房租，收池后对方总留你在热气未散的更衣室喝冰牛奶、替对方揉开酸痛的肩背，早就不止于此。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "bandai_keeper",
-    "night_waiter"
+    "bandai_keeper"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想留在这条街，也想知道{night_waiter.name}每天问的那个人是谁",
-    "limit_gap": "锅炉快坏了，钱汤关门你就没地方住",
-    "meeting_reason": "钱汤一开门三个人就碰面",
-    "resource_gap": "{bandai_keeper.name}有钱汤和你的住处，{night_waiter.name}有夜鹰的钥匙，你只有锅炉房的钥匙"
+    "irreplaceable_goal": "弄清那封旧信写给谁，再决定要不要陪{bandai_keeper.ta}把信送出去。",
+    "limit_gap": "钱汤下个月可能关门，你的住处和那封信里的人都等不了太久。",
+    "meeting_reason": "最后一池水放干，更衣室的热气还没散，{bandai_keeper.name}没让你走。",
+    "resource_gap": "{bandai_keeper.name}有番台、钱汤和整条街三十年的秘密，你只有锅炉房的钥匙和借住的一张铺。"
    },
    "tags": [],
    "tension_engine_ids": [
@@ -243,8 +185,8 @@
    ]
   },
   {
-   "chemistry": "你的杯子在白桦挂了八年；{photographer.name}每周三都拍你常坐的那个位子，说你不在的时候它最好看；{second_owner.name}今天把你的杯子取下来擦了很久。",
-   "id": "k_eight_years",
+   "chemistry": "挂了八年的那只杯子今天被{second_owner.name}取下来，收进了二楼卧室；{second_owner.ta}一整晚都没解释。",
+   "id": "combo_hakuba_eighth_year_cup",
    "identity_ids": [
     "regular_commuter"
    ],
@@ -256,55 +198,26 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 2
+      "tension": 2,
+      "trust": 3
      },
      "b": "second_owner",
      "b_to_a": {
-      "tension": 1,
-      "trust": 2
-     },
-     "reason": "{second_owner.name}记得你八年来每一次点的东西",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
       "tension": 2,
-      "trust": 1
+      "trust": 3
      },
-     "b": "photographer",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{photographer.name}拍过你的背影，没问过你",
-     "stage": "acquainted"
-    },
-    {
-     "a": "second_owner",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "photographer",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{photographer.name}每周三的咖啡只喝一半，{second_owner.name}从不收全价",
-     "stage": "acquainted"
+     "reason": "你每晚坐末班车回来在白桦喝最后一杯，八年里从常客变成对方默认留门、留钥匙、留在二楼过夜的人。",
+     "stage": "committed"
     }
    ],
    "slots": [
-    "second_owner",
-    "photographer"
+    "second_owner"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想知道走了以后，那个位子会不会还有人留着",
-    "limit_gap": "你明年可能调去大阪，店可能今年就卖",
-    "meeting_reason": "每周三三个人都在白桦",
-    "resource_gap": "{second_owner.name}有店，{photographer.name}有底片，你有一只挂了八年的杯子"
+    "irreplaceable_goal": "问清那只杯子为什么被收进卧室，也决定你们俩明年还在不在同一条街。",
+    "limit_gap": "公司说明年要调你去大阪，转让书也不等人。",
+    "meeting_reason": "末班车进站后你推开白桦的门，吧台上空着一个挂钩。",
+    "resource_gap": "{second_owner.name}有店和一份转让书，你有一把二楼的钥匙和东京公司的调令。"
    },
    "tags": [],
    "tension_engine_ids": [
@@ -313,9 +226,10 @@
    ]
   },
   {
-   "chemistry": "振兴会的签字你有一票；{land_agent.name}来找过你三次，{jazz_owner.name}说只要你不签，那本欠账簿就不会落到地产公司手里。",
-   "id": "k_vote",
+   "chemistry": "{photographer.name}把“空座”影展的第一张原片塞进你手心，照片里那个座位上坐的人是你。",
+   "id": "combo_photo_dark_booth",
    "identity_ids": [
+    "regular_commuter",
     "bookshop_keeper"
    ],
    "player_positions": [
@@ -326,65 +240,78 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
+      "tension": 2,
       "trust": 2
      },
-     "b": "jazz_owner",
+     "b": "photographer",
      "b_to_a": {
-      "tension": 1,
+      "tension": 3,
       "trust": 2
      },
-     "reason": "你和{jazz_owner.name}做了十几年邻居，借过彼此的书和唱片",
-     "stage": "familiar"
-    },
+     "reason": "连着三个周三闭店后对方借你的座位试光，快门声里越靠越近，冲出来的试片全是你低头时的侧脸。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "photographer"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "让{photographer.name}说清这些照片拍的到底是空座，还是你。",
+    "limit_gap": "影展下周开幕，照片挂不挂出去今晚要定。",
+    "meeting_reason": "白桦闭店后只剩一盏灯，{photographer.name}在你常坐的位子上架好了相机。",
+    "resource_gap": "{photographer.name}有一卷底片和影展的名额，你有那个座位和照片里的那张脸。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_cup_gone",
+    "te_last_train"
+   ]
+  },
+  {
+   "chemistry": "唱片公司的人今晚找到了夜鹰，{night_waiter.name}捏着名片问你：要是自己去东京，你会不会跟去。",
+   "id": "combo_yotaka_dawn_counter",
+   "identity_ids": [
+    "regular_commuter",
+    "bookshop_keeper"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
     {
      "a": "player",
      "a_to_b": {
       "tension": 2,
-      "trust": 0
+      "trust": 2
      },
-     "b": "land_agent",
+     "b": "night_waiter",
      "b_to_a": {
       "tension": 2,
-      "trust": 0
+      "trust": 2
      },
-     "reason": "{land_agent.name}小时候在你的店里蹭过书看",
-     "stage": "acquainted"
-    },
-    {
-     "a": "jazz_owner",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "land_agent",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{jazz_owner.name}记得那家豆腐店是怎么关的",
-     "stage": "acquainted"
+     "reason": "你每次深夜睡不着就去夜鹰坐到天亮，对方总给你留最里侧的卡座和热汤，递杯子前总先替你吹凉一口。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "jazz_owner",
-    "land_agent"
+    "night_waiter"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想守住这条街，也不想当最后一个不签的人",
-    "limit_gap": "年底前过半数就签了，你的价钱最高",
-    "meeting_reason": "你们三个人的店在同一条拱廊下，抬头就看见",
-    "resource_gap": "{land_agent.name}有收购的钱和一沓意向书，{jazz_owner.name}有一本两家合用的欠账簿，你有一票"
+    "irreplaceable_goal": "在天亮之前，回答{night_waiter.name}那个问题。",
+    "limit_gap": "唱片公司只等到这个周末，夜鹰的夜班也没人顶。",
+    "meeting_reason": "凌晨两点，夜鹰里只剩你和{night_waiter.name}，唱机放到最后一首。",
+    "resource_gap": "{night_waiter.name}有一副好嗓子和一张东京的名片，你有这条街的日子和一个要不要开口的答案。"
    },
    "tags": [],
    "tension_engine_ids": [
-    "te_merged_tab",
-    "te_transfer"
+    "te_last_train",
+    "te_old_flame"
    ]
   },
   {
-   "chemistry": "白桦的地契有一半押在你的柜子里；{second_owner.name}来求你宽限三个月，{jazz_owner.name}说那本欠账簿上的钱其实是{jazz_owner.ta}欠的。",
-   "id": "k_loan_file",
+   "chemistry": "{second_owner.name}带着押在你柜子里的那半张地契副本来找你，求你再宽限三个月。",
+   "id": "combo_bank_deed_reprieve",
    "identity_ids": [
     "bank_officer"
    ],
@@ -396,55 +323,26 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 2
      },
      "b": "second_owner",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{second_owner.name}每次来金库都穿最好的衣服",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "jazz_owner",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{jazz_owner.name}请你听过一整面唱片，一句话没说",
-     "stage": "acquainted"
-    },
-    {
-     "a": "second_owner",
-     "a_to_b": {
-      "tension": 1,
+      "tension": 3,
       "trust": 2
      },
-     "b": "jazz_owner",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{second_owner.name}不知道{jazz_owner.name}欠了多少",
-     "stage": "familiar"
+     "reason": "去年对方为保住白桦第一次找你办展期，那晚在白桦二楼对完账喝多了酒，有过一回谁也没对外提起的留宿。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "second_owner",
-    "jazz_owner"
+    "second_owner"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想把账收回来，又不想做那个拆掉白桦的人",
-    "limit_gap": "上面催你年底前收回，你的上司和地产公司有来往",
-    "meeting_reason": "你来商店街查账，这两个人你都得见",
-    "resource_gap": "你有整条街的贷款和催收的权力，{second_owner.name}有一间店，{jazz_owner.name}有一本账簿"
+    "irreplaceable_goal": "既不违规放款，又让{second_owner.name}的店撑过这个冬天。",
+    "limit_gap": "后天总行来查账，展期批不批就看今晚的报告。",
+    "meeting_reason": "信用金库下班后，{second_owner.name}在门口等你，手里拿着地契副本。",
+    "resource_gap": "你握着信用金库的展期审批，{second_owner.name}只有那半张地契和白桦的流水。"
    },
    "tags": [],
    "tension_engine_ids": [
@@ -453,8 +351,8 @@
    ]
   },
   {
-   "chemistry": "你的图纸上，松之汤的烟囱是第一个要拆的；{land_agent.name}是你派来的人，却迟迟收不下这条街；{bandai_keeper.name}说认得你，三十年前你在这条街坐过一整年。",
-   "id": "k_station_tower",
+   "chemistry": "你今晚查账发现，{land_agent.name}偷偷把白桦的估价压低了一半，摆明了要让店主拒签。",
+   "id": "combo_developer_old_street",
    "identity_ids": [
     "developer_boss"
    ],
@@ -466,55 +364,26 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
+      "tension": 3,
       "trust": 1
      },
      "b": "land_agent",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{land_agent.name}是你亲手提拔的",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "bandai_keeper",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{bandai_keeper.name}一眼就认出了你",
-     "stage": "stranger"
-    },
-    {
-     "a": "land_agent",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "bandai_keeper",
-     "b_to_a": {
-      "tension": 1,
+      "tension": 3,
       "trust": 2
      },
-     "reason": "{land_agent.name}小时候每天来松之汤，{bandai_keeper.name}给过{land_agent.ta}咖啡牛奶",
-     "stage": "familiar"
+     "reason": "对方是你派来收这条街的先遣，上回来东京述职时在你办公室留到半夜、替你挡过一轮酒。",
+     "stage": "testing"
     }
    ],
    "slots": [
-    "land_agent",
-    "bandai_keeper"
+    "land_agent"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想盖起大楼，也想知道{bandai_keeper.name}记得的是哪一年的你",
-    "limit_gap": "年底前要动工，{land_agent.name}在暗地里拖你的进度",
-    "meeting_reason": "你亲自来商店街看一眼，这两个人你都躲不开",
-    "resource_gap": "你有图纸和钱，{land_agent.name}有一沓意向书，{bandai_keeper.name}有一座钱汤和三十年的记性"
+    "irreplaceable_goal": "问清{land_agent.name}为什么护着这家店，也决定还要不要把这条街收下来。",
+    "limit_gap": "董事会月底要看收购进度，这条街再拖就要换人来收。",
+    "meeting_reason": "你连夜赶到商店街，在拱廊下堵住了刚从白桦出来的{land_agent.name}。",
+    "resource_gap": "你有开发预算和{land_agent.name}的饭碗，{land_agent.name}有整条街的人情和这张被改过的估价单。"
    },
    "tags": [],
    "tension_engine_ids": [
@@ -523,9 +392,12 @@
    ]
   },
   {
-   "chemistry": "{photographer.name}的“空座”影展第一张照片里有你的背影；{night_waiter.name}认得那张照片拍的位子，说那原本是{night_waiter.ta}的位子。",
-   "id": "k_empty_seat",
-   "identity_ids": [],
+   "chemistry": "寄存了十年的那箱唱片今晚要开封，{jazz_owner.name}锁上地下室的门，只留你一个人听。",
+   "id": "combo_jazz_cellar_records",
+   "identity_ids": [
+    "bookshop_keeper",
+    "bank_officer"
+   ],
    "player_positions": [
     "low",
     "equal",
@@ -537,172 +409,103 @@
      "a": "player",
      "a_to_b": {
       "tension": 2,
-      "trust": 1
-     },
-     "b": "photographer",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{photographer.name}拍了你的背影，你最近才知道",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "night_waiter",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "你错过末班车那晚，{night_waiter.name}请了你第一杯咖啡",
-     "stage": "acquainted"
-    },
-    {
-     "a": "photographer",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "night_waiter",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{photographer.name}在夜鹰翻底片，{night_waiter.name}每次都替{photographer.ta}续杯",
-     "stage": "acquainted"
-    }
-   ],
-   "slots": [
-    "photographer",
-    "night_waiter"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "你想知道那张照片里，自己坐的是谁的位子",
-    "limit_gap": "影展下个月开幕，{night_waiter.name}下周要去新宿试唱",
-    "meeting_reason": "三个人都常在末班车前后出现在这条街",
-    "resource_gap": "{photographer.name}有底片和一个影展，{night_waiter.name}有末班车后唯一的灯，你有一个被拍下来的背影"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "te_last_train",
-    "te_cup_gone"
-   ]
-  },
-  {
-   "chemistry": "一箱寄存了十年的唱片没人认领；{jazz_owner.name}说主人是白桦老店主的旧情人，{second_owner.name}想在卖店之前弄清楚，{photographer.name}说自己有一张那个人的照片。",
-   "id": "k_deposit_box",
-   "identity_ids": [],
-   "player_positions": [
-    "low",
-    "equal",
-    "high"
-   ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
+      "trust": 2
      },
      "b": "jazz_owner",
      "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{jazz_owner.name}让你听过那箱唱片里的一首",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "second_owner",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{second_owner.name}跟你提过那只没名字的杯子",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "photographer",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{photographer.name}给你看过那张旧照片的一角",
-     "stage": "acquainted"
-    },
-    {
-     "a": "jazz_owner",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "second_owner",
-     "b_to_a": {
-      "tension": 1,
+      "tension": 3,
       "trust": 2
      },
-     "reason": "两家店合用一本账簿，账上的事谁也不提",
-     "stage": "familiar"
-    },
-    {
-     "a": "jazz_owner",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "photographer",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{photographer.name}拍过蓝调的空座位",
-     "stage": "acquainted"
-    },
-    {
-     "a": "second_owner",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "photographer",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{photographer.name}每周三都来白桦",
-     "stage": "acquainted"
+     "reason": "你常在打烊后下到蓝调听对方放绝版黑胶，两人挤在窄小的调音台后分喝同一杯威士忌，肩膀一直挨着。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "jazz_owner",
-    "second_owner",
-    "photographer"
+    "jazz_owner"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想把唱片交到该收的人手里",
-    "limit_gap": "满一年没人认领，唱片就归店里处置；白桦也快卖了",
-    "meeting_reason": "三个人都想先打开那箱唱片",
-    "resource_gap": "{jazz_owner.name}有那箱唱片，{second_owner.name}有父亲留下的一只没名字的杯子，{photographer.name}有一张旧照片，你有一个他们都没有的线索"
+    "irreplaceable_goal": "陪{jazz_owner.name}听完那箱唱片，弄清寄存的人和{jazz_owner.ta}是什么关系。",
+    "limit_gap": "寄存期满，唱片的主人再不来认领，{jazz_owner.name}就得自己处置。",
+    "meeting_reason": "地下室的隔音门落了锁，唱针落下去之前，{jazz_owner.name}关掉了顶灯。",
+    "resource_gap": "{jazz_owner.name}有那箱唱片和地下室的钥匙，你有振兴会的门路和一张能替蓝调说话的嘴。"
    },
    "tags": [],
    "tension_engine_ids": [
     "te_deposit",
-    "te_old_flame"
+    "te_merged_tab"
+   ]
+  },
+  {
+   "chemistry": "白桦和蓝调合用了十年的欠账簿今晚在二楼清账，账面差额和卖店意向书同时摊在桌上，你坐在两家店主中间主持公道。",
+   "id": "combo_merged_tab_triangle",
+   "identity_ids": [
+    "bank_officer",
+    "bookshop_keeper"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 2
+     },
+     "b": "second_owner",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 2
+     },
+     "reason": "你和对方做了十几年邻居，振兴会每次投票都坐在一起，彼此的底细知道一大半。",
+     "stage": "familiar"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 1
+     },
+     "b": "jazz_owner",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 1
+     },
+     "reason": "对方总在你面前替蓝调哭穷，可你见过地下室那箱从没报过账的唱片。",
+     "stage": "testing"
+    },
+    {
+     "a": "second_owner",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 1
+     },
+     "b": "jazz_owner",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 1
+     },
+     "reason": "合账十年，两人都觉得自己替对方填了更多的窟窿。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "second_owner",
+    "jazz_owner"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "把十年的账算清，又不让两家店在地产公司面前先散了。",
+    "limit_gap": "后天信用金库来查账，账对不上两家都保不住。",
+    "meeting_reason": "打烊后三个人上了白桦二楼，账簿和意向书并排摊开。",
+    "resource_gap": "你有信用金库或振兴会的一票，{second_owner.name}握着账簿原件，{jazz_owner.name}握着地下室的十年人情。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_merged_tab",
+    "te_transfer"
    ]
   }
  ],
@@ -741,7 +544,7 @@
     "avoids": [
      "被人说守着一间死店"
     ],
-    "contrast": "替整条街的人守着他们的习惯，自己的心事从来没摆上过吧台",
+    "contrast": "替整条街的人守着各自的习惯，自己的心事从来没摆上过吧台",
     "core_value": "店在，人就在",
     "goal_options": [
      "把店卖个好价钱，去东京",
@@ -775,7 +578,7 @@
      "一个人守店，病一天就关一天门"
     ],
     "obligations": [
-     "每天早上七点开门，给常客留着他们的位子"
+     "每天早上七点开门，给常客留着各自的位子"
     ],
     "resources": [
      "一间开了三十年的喫茶店和十四个常客的杯子",
@@ -803,7 +606,7 @@
      "打烊后虹吸壶里剩下的最后一点咖啡"
     ],
     "preconditions": [
-     "店门已经挂上“准备中”的牌子"
+     "店门已经挂上“准备中”的牌子，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -924,7 +727,7 @@
      "最后一池水冒起来的热气"
     ],
     "preconditions": [
-     "钱汤已经打烊"
+     "钱汤已经打烊，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -1040,7 +843,7 @@
      "暗房红灯下照片慢慢显出来的那一刻"
     ],
     "preconditions": [
-     "相机已经收进包里"
+     "相机已经收进包里，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1161,7 +964,7 @@
      "唱针落下之前那一声轻响"
     ],
     "preconditions": [
-     "唱片已经放完"
+     "唱片已经放完，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1282,7 +1085,7 @@
      "松之汤里和从前一样的水温"
     ],
     "preconditions": [
-     "西装已经脱下"
+     "西装已经脱下，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      1,
@@ -1403,7 +1206,7 @@
      "天快亮时窗外发白的那一刻"
     ],
     "preconditions": [
-     "首班车已经开过"
+     "首班车已经开过，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1578,6 +1381,23 @@
    "start_minute": 1200,
    "tags": [],
    "title": "商店街打烊拉卷帘门"
+  },
+  {
+   "beats": [
+    "纸箱里塞满了常客寄存的旧物，每件都贴着名字",
+    "有一只箱子的名字被划掉了，封条还没拆",
+    "楼下的唱机停了，二楼只剩翻纸箱的声音"
+   ],
+   "duration_minutes": 40,
+   "hook_ids": [],
+   "id": "a_upstairs_inventory",
+   "location_ids": [
+    "upstairs",
+    "hakuba"
+   ],
+   "start_minute": 1290,
+   "tags": [],
+   "title": "上白桦二楼清点寄存物"
   }
  ],
  "default_npc_gender_mix": {
@@ -1758,7 +1578,8 @@
    "id": "upstairs",
    "name": "白桦二楼",
    "pressure_modifiers": {
-    "p_cup_down": "纸箱里有一只没写名字的杯子，用报纸包了三层。"
+    "p_cup_down": "纸箱里有一只没写名字的杯子，用报纸包了三层。",
+    "p_last_train": "煤油炉还剩小半罐油，窗外的雨声盖住了一切。"
    },
    "privacy": "private",
    "tags": [],
@@ -1829,7 +1650,7 @@
    "pressure_modifiers": {
     "p_merged_tab": "唱机旁边摊着一本旧账簿，两家店的字迹混在同一页上。"
    },
-   "privacy": "semi",
+   "privacy": "private",
    "tags": [],
    "visibility": "客人都背对着门坐，盯着音箱；说话的人会被店主看一眼",
    "witnesses": []
@@ -1847,9 +1668,7 @@
    ],
    "id": "yotaka",
    "name": "通宵喫茶「夜鹰」",
-   "pressure_modifiers": {
-    "p_last_train": "墙上的钟停在十一点三十八分，指针走得很慢。"
-   },
+   "pressure_modifiers": {},
    "privacy": "public",
    "tags": [],
    "visibility": "错过末班车的人、睡不着的人，谁在谁对面坐到天亮，夜班店员都记得",
@@ -1871,7 +1690,7 @@
    "id": "station",
    "name": "私铁站台",
    "pressure_modifiers": {
-    "p_last_train": "站务员举起了哨子。"
+    "p_last_train": "雨水漫上月台，站务员在拉警戒绳。"
    },
    "privacy": "public",
    "tags": [],
@@ -1956,7 +1775,7 @@
   ],
   "order": "family_first"
  },
- "notes": "第二批世界（用户 2026-10-03 素材库的改写，见 content-src/concepts/batch2-concepts.md 第 8 个）。性别按会话偏好生成（D15）。",
+ "notes": "第二批世界（用户 2026-10-03 素材库的改写，见 content-src/concepts/batch2-concepts.md 第 8 个）。性别按会话偏好生成（D15）。\n2026-10-18 按写作规则 v2 改造：组合改成 8 组单人加 1 组合账三方局；把柄改由白桦店主握着蓝调店主挪用贴息的账簿原件；末班车改成梅雨停驶夜；删掉没人认领的唱片；蓝调地下室改为 private。",
  "player_identities": [
   {
    "age_range": [
@@ -2265,32 +2084,37 @@
    "trigger": "有人当着一屋子街坊，提起了三十年前白桦老店主的那段旧情，还说那人就在这条街上"
   },
   {
-   "choice": "把账算清，还是替人瞒下",
+   "choice": "帮{second_owner.name}拿账簿换条件，还是劝{second_owner.ta}把原件烧掉",
    "exits": [
     {
-     "cost": "两个做了十年邻居的人可能就此翻脸",
-     "option": "当面对账"
+     "cost": "做了十年邻居的两家店可能就此翻脸",
+     "option": "让{jazz_owner.name}签字认账，分期补上"
     },
     {
      "cost": "这笔钱要从你自己口袋里出",
-     "option": "替人把差额补上"
+     "option": "替{jazz_owner.name}把差额补上"
     }
    ],
    "far": {
-    "consequence": "两家店都会被逼着签字",
+    "consequence": "两家店一起被逼着签字，挪用的事也传遍整条街",
     "due_days": 10,
-    "trigger": "账簿落到地产公司手里"
+    "trigger": "账簿原件落到地产公司手里"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [],
    "id": "p_merged_tab",
    "immediate": {
     "minutes": 15,
-    "text": "账簿摊开在桌上，两家店的字迹挤在同一页，有一行被墨水涂掉了"
+    "text": "账簿摊在桌上，{jazz_owner.name}盯着那一页，手按在杯沿上没动"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{second_owner.name}手里握着那本十年欠账簿的原件，上面记着{jazz_owner.name}私下挪用振兴会贴息填店租的每一笔实账",
+    "holder": "second_owner",
+    "subject": "jazz_owner"
+   },
    "location_ids": [
     "basement_jazz",
     "hakuba"
@@ -2299,70 +2123,29 @@
     "deadline_minutes": 2880,
     "text": "后天信用金库来查账"
    },
-   "objective": "在地产公司拿到这本账簿之前，把数对清",
+   "objective": "在信用金库查账之前，让两家店把这笔账私下了结",
    "source": "money",
    "start_minute": 1260,
    "tags": [],
    "title": "一本账簿",
-   "trigger": "白桦和蓝调合用了十年的欠账簿要清账了，账上的数对不上，差的那一半一直有人在悄悄填"
+   "trigger": "白桦和蓝调合用了十年的欠账簿要清账，{second_owner.name}手里的原件记着{jazz_owner.name}挪用振兴会贴息填店租的每一笔"
   },
   {
-   "choice": "找主人，还是替主人留着",
+   "choice": "冒雨走回去，还是留在白桦二楼烘干衣服等天亮",
    "exits": [
     {
-     "cost": "整条街都会开始猜那人是谁",
-     "option": "在每家店贴一张认领的告示"
+     "cost": "两个人裹着一条毯子熬到天亮，什么话都藏不住",
+     "option": "上二楼点煤油炉，脱下湿衣服烘干"
     },
     {
-     "cost": "你会看到一些不该看的东西",
-     "option": "打开箱子找线索"
+     "cost": "浑身湿透发起烧，第二天谁也起不来",
+     "option": "蹚水去车站等临时巴士"
     }
    ],
    "far": {
-    "consequence": "那箱唱片里夹着的东西，再也回不到主人手里",
-    "due_days": 7,
-    "trigger": "唱片被卖给东京的收藏家"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_unclaimed_records",
-   "immediate": {
-    "minutes": 10,
-    "text": "店主把那箱唱片从架子顶上搬下来，箱子上的名字被潮气洇开了"
-   },
-   "leverage": null,
-   "location_ids": [
-    "basement_jazz"
-   ],
-   "near": {
-    "deadline_minutes": 4200,
-    "text": "三天后的周六"
-   },
-   "objective": "在下周之前找到唱片的主人",
-   "source": "person",
-   "start_minute": 1230,
-   "tags": [],
-   "title": "没人认领的唱片",
-   "trigger": "寄存在蓝调的那箱唱片满十年了，主人一直没来，店主说下周就要处置"
-  },
-  {
-   "choice": "让对方上车，还是开口留",
-   "exits": [
-    {
-     "cost": "对方可能为你错过的不只是一班车",
-     "option": "开口留"
-    },
-    {
-     "cost": "你会在夜鹰坐到天亮，一个人",
-     "option": "什么都不说"
-    }
-   ],
-   "far": {
-    "consequence": "那个人搬去了东京，杯子留在吧台上没人取",
+    "consequence": "整条街的生意停摆，地产公司趁机挨家挨户上门谈价",
     "due_days": 3,
-    "trigger": "末班车开走"
+    "trigger": "铁路停驶三天"
    },
    "flags": [
     "timed"
@@ -2370,23 +2153,24 @@
    "hook_ids": [],
    "id": "p_last_train",
    "immediate": {
-    "minutes": 5,
-    "text": "站台广播响了：末班车即将进站"
+    "minutes": 10,
+    "text": "站台广播说末班车停驶，雨水已经漫过了月台边缘"
    },
    "leverage": null,
    "location_ids": [
-    "station"
+    "station",
+    "upstairs"
    ],
    "near": {
-    "deadline_minutes": 20,
-    "text": "23:40 发车"
+    "deadline_minutes": 120,
+    "text": "积水漫进白桦一楼，店里的电闸跳了"
    },
-   "objective": "在车门关上之前，决定说不说那句话",
-   "source": "person",
+   "objective": "在天亮通车之前，熬过这一夜的湿冷",
+   "source": "nature",
    "start_minute": 1400,
    "tags": [],
-   "title": "末班车",
-   "trigger": "有人要坐末班车走，说这一走就不回这条街了；你是唯一知道的人"
+   "title": "梅雨停驶夜",
+   "trigger": "梅雨季的特大暴雨冲断了私铁道口，末班车停驶，整条商店街积水断电，浑身湿透的人只能退回白桦二楼"
   },
   {
    "choice": "去查，还是先把门擦干净",

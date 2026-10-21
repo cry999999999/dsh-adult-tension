@@ -99,8 +99,8 @@
  ],
  "cast_combos": [
   {
-   "chemistry": "{blind_archpriest.name}握着决定你是否被送上祭坛的神谕，{frontier_marshall.name}率领重甲铁卫守住所有退路；你站在祭坛前接受两人的审视，必须证明自己这个守夜人比一份生祭更有用。",
-   "id": "combo_sanctum_dominion",
+   "chemistry": "月食前的换防钟声刚落，{elven_ranger.name}便把你叫进灵息休歇石室，反手落了雕花木栓，将沾满寒霜的银色披风解在一旁，让你替{elven_ranger.ta}查看肩甲下的旧伤。",
+   "id": "combo_ranger_warden",
    "identity_ids": [
     "human_night_warden"
    ],
@@ -112,71 +112,161 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 4
      },
-     "b": "blind_archpriest",
+     "b": "elven_ranger",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 4
      },
-     "reason": "多次在帷幔外为对方守夜，知道对方怕黑",
-     "stage": "familiar"
-    },
+     "reason": "上月在迷雾林断崖为你挡下毒矢后，{elven_ranger.name}把备用银徽塞进你掌心，说这条命以后归你管",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "elven_ranger"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想趁今夜替{elven_ranger.name}把旧伤料理妥当，也想听对方亲口说一句别走",
+    "limit_gap": "月食警钟敲响前，{elven_ranger.name}必须重新披甲上闸",
+    "meeting_reason": "换防钟声一落，{elven_ranger.name}点名叫你进休歇石室",
+    "resource_gap": "{elven_ranger.name}握着外围布防与射杀可疑者的军职，你只是靠一份神露酬劳入殿的人类守夜人"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_last_warmstone",
+    "te_eclipse_lockdown"
+   ]
+  },
+  {
+   "chemistry": "内殿侍从刚退下，{blind_archpriest.name}便在白石祭坛后叫住了准备吹灯的你，示意你坐到银织帷幔内侧，替{blind_archpriest.ta}念一段连长老会都未曾见过的古石板铭文。",
+   "id": "combo_archpriest_warden",
+   "identity_ids": [
+    "human_night_warden"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
     {
      "a": "player",
      "a_to_b": {
-      "tension": 3,
-      "trust": 0
+      "tension": 4,
+      "trust": 3
      },
-     "b": "frontier_marshall",
+     "b": "blind_archpriest",
      "b_to_a": {
-      "tension": 2,
-      "trust": 0
+      "tension": 4,
+      "trust": 3
      },
-     "reason": "入殿那天被对方拔剑搜身，对其铁血手段满怀戒备",
-     "stage": "stranger"
-    },
+     "reason": "每次你入内殿添灯油，{blind_archpriest.name}都会准确叫出你的名字，还总留一盏温着的蜜草茶等你",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "blind_archpriest"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想做那个每夜在帷幔外出声的人，让{blind_archpriest.name}不再怕黑",
+    "limit_gap": "月食大典前，{blind_archpriest.name}不能让长老会知道自己夜里留人",
+    "meeting_reason": "你按例入内殿添灯油，被{blind_archpriest.name}叫住留下",
+    "resource_gap": "{blind_archpriest.name}以神谕裁定神露份额与生祭名录，你的酬劳也在那支法杖底下"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_altar_hostage",
+    "te_eclipse_lockdown"
+   ]
+  },
+  {
+   "chemistry": "白石长廊尽头的巡逻卫士刚转过拐角，{silver_weaver.name}便用折叠银剪轻轻拦住你的去路，把一枚刚缝好暗袋的内殿通行牌递到你面前，低声问你今夜究竟想去哪间石室。",
+   "id": "combo_weaver_warden",
+   "identity_ids": [
+    "human_night_warden"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
     {
-     "a": "blind_archpriest",
+     "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 1
+      "tension": 4,
+      "trust": 2
      },
-     "b": "frontier_marshall",
+     "b": "silver_weaver",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 4,
+      "trust": 2
      },
-     "reason": "内廷神权与外廷军权长期在戒严与祭品分配上暗流涌动",
+     "reason": "三次夜巡越界都被{silver_weaver.name}撞见，对方每回都替你瞒下记录，只罚你替其扶一整夜绣架",
      "stage": "testing"
     }
    ],
    "slots": [
-    "blind_archpriest",
-    "frontier_marshall"
+    "silver_weaver"
    ],
    "stakes": {
-    "irreplaceable_goal": "在月食钟声敲响前让其中一人签下免祭令，保住性命。",
-    "limit_gap": "你腕上的常春藤印记让你走不出神殿百步，而两人也离不开守夜人在大典前稳住全殿的高热。",
-    "meeting_reason": "大祭司亲自召见人类守夜人，查验今夜的暖石库存。",
-    "resource_gap": "{blind_archpriest.name}掌控神露配给，{frontier_marshall.name}掌控石闸兵权，你只有一把藏在靴筒里的短刃和一手调暖石的本事。"
+    "irreplaceable_goal": "你想弄清{silver_weaver.name}为何一再替你遮掩，也想要一件能挡毒雾的斗篷",
+    "limit_gap": "帷幔要在月食大典前缝好，{silver_weaver.name}今夜离不开绣架太久",
+    "meeting_reason": "你夜巡又走到不该走的长廊，被{silver_weaver.name}拦了下来",
+    "resource_gap": "{silver_weaver.name}垄断全殿帷幔与通行牌的缝制，你的夜巡路线全在对方眼里"
    },
-   "tags": [
-    "workplace",
-    "coercion_theme"
-   ],
+   "tags": [],
    "tension_engine_ids": [
-    "te_altar_hostage",
-    "te_sacred_dew_blackmail"
+    "te_eclipse_lockdown",
+    "te_miasma_antidote"
    ]
   },
   {
-   "chemistry": "{elven_ranger.name}的高热濒临失控，{apostate_alchemist.name}摆弄着止痛酊剂开出天价；你在两人之间斡旋，既要借游侠统领的长弓防身，又要借药剂师的门路脱身。",
-   "id": "combo_ranger_entanglement",
+   "chemistry": "草药蒸馏偏殿里水汽氤氲，{apostate_alchemist.name}刚支走烧火杂役，便把一只倒扣的空银杯推到你手边，示意你进桌台后的内间一起封存今晚截留的纯露。",
+   "id": "combo_alchemist_apothecary",
    "identity_ids": [
-    "herbal_apothecary",
-    "border_envoy"
+    "herbal_apothecary"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "apostate_alchemist",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "那场实验事故炸碎烧瓶时你扑过去护住{apostate_alchemist.name}，此后偏殿内间的钥匙便只交给你保管",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "apostate_alchemist"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想劝{apostate_alchemist.name}戒掉试药的瘾，一起把偏殿撑到开春",
+    "limit_gap": "清晨前二十瓶安神熏香要交到前殿，内间不能锁太久",
+    "meeting_reason": "{apostate_alchemist.name}支走烧火杂役，示意你进内间封存纯露",
+    "resource_gap": "你握着暖石药浴与安神药膏的配方，{apostate_alchemist.name}握着偏殿的蒸馏器与止痛酊剂"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_sacred_dew_blackmail",
+    "te_miasma_antidote"
+   ]
+  },
+  {
+   "chemistry": "休歇石室的木桶里刚浸入煨热的暖石，{elven_ranger.name}解下长弓靠在石壁边，隔着防风薄纱向正在试水温的你伸出手，让你一并核对今夜撤离外廷的路线。",
+   "id": "combo_ranger_apothecary",
+   "identity_ids": [
+    "herbal_apothecary"
    ],
    "player_positions": [
     "equal"
@@ -187,66 +277,35 @@
      "a": "player",
      "a_to_b": {
       "tension": 2,
-      "trust": 1
+      "trust": 5
      },
      "b": "elven_ranger",
      "b_to_a": {
       "tension": 2,
-      "trust": 1
+      "trust": 5
      },
-     "reason": "曾在密林中为对方包扎过毒箭伤口，对方欠你一份人情",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 2
-     },
-     "b": "apostate_alchemist",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 2
-     },
-     "reason": "常在药台旁一起熬通宵试药，斗嘴斗出了几分默契",
-     "stage": "flirting"
-    },
-    {
-     "a": "elven_ranger",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 0
-     },
-     "b": "apostate_alchemist",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "统领鄙夷半精灵的轻浮，却又每夜离不开对方的止痛药",
-     "stage": "testing"
+     "reason": "三年来{elven_ranger.name}每次从迷雾林负伤归来都只进你的配药室，你们早已私下定下同离神殿的归期",
+     "stage": "committed"
     }
    ],
    "slots": [
-    "elven_ranger",
-    "apostate_alchemist"
+    "elven_ranger"
    ],
    "stakes": {
-    "irreplaceable_goal": "在月食前敲定出逃盟约，拿到通行全殿的免检令。",
-    "limit_gap": "{elven_ranger.name}的高热随时会失控，{apostate_alchemist.name}一旦失去庇护就会被纯血卫兵清洗。",
-    "meeting_reason": "在偏殿借调药掩护，商讨今夜突围与止痛药剂的交付。",
-    "resource_gap": "{elven_ranger.name}手握防区通关符节，{apostate_alchemist.name}掌握止痛药与逃生毒剂，你有调配暖石药浴的手艺或谈判的信物。"
+    "irreplaceable_goal": "你们想在神殿沉沦前一起出闸，去过没有高热的日子",
+    "limit_gap": "暖石只剩一块，药浴今夜只够一个人用",
+    "meeting_reason": "按约定，你每夜这个时辰到石室替{elven_ranger.name}备药浴",
+    "resource_gap": "你会调压住高热的暖石药浴，{elven_ranger.name}握着外廷的布防与出闸路线"
    },
-   "tags": [
-    "workplace"
-   ],
+   "tags": [],
    "tension_engine_ids": [
     "te_last_warmstone",
-    "te_sacred_dew_blackmail"
+    "te_altar_hostage"
    ]
   },
   {
-   "chemistry": "你体内流淌着能唤醒母树的古老血脉，{silver_weaver.name}为了保住结界不得不来找你，落魄的{fallen_scion.name}则攥着你的衣袖，求你带{fallen_scion.ta}逃离生祭。",
-   "id": "combo_royal_patronage",
+   "chemistry": "根系密藏秘室里冷光幽暗，{fallen_scion.name}早已按昨日的暗记等在石板架最深处，见你进来便立刻拉住你的衣袖，低声问你名录上到底有没有自己的名字。",
+   "id": "combo_scion_highblood",
    "identity_ids": [
     "fallen_high_blood"
    ],
@@ -258,65 +317,80 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "silver_weaver",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 2
-     },
-     "reason": "对方曾为你绣制过王族礼袍，熟知你的喜好",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 2
+      "tension": 3,
+      "trust": 4
      },
      "b": "fallen_scion",
      "b_to_a": {
-      "tension": 2,
-      "trust": 2
+      "tension": 3,
+      "trust": 4
      },
-     "reason": "同为落难宗亲，在幽暗的秘室里互相说过真话",
-     "stage": "flirting"
-    },
-    {
-     "a": "silver_weaver",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "fallen_scion",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "侍从官曾暗中替落魄王族缝补过撕破的家徽长袍",
-     "stage": "acquainted"
+     "reason": "王庭哗变那夜你用家族马车把{fallen_scion.name}藏出重围，对方在车厢里咬破手指，在你掌心按下一枚血印",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "silver_weaver",
     "fallen_scion"
    ],
    "stakes": {
-    "irreplaceable_goal": "在生祭开始前夺下神殿核心的控制权，洗清家族冤屈。",
-    "limit_gap": "你的血脉一旦被大祭司察觉便会被抽取，两人若没有你撑腰，都会在大典上沦为弃子。",
-    "meeting_reason": "在秘室深处商讨借血脉唤醒古树守卫。",
-    "resource_gap": "你握有全神殿唯一的古王族号召力，{silver_weaver.name}掌握结界缝隙，{fallen_scion.name}掌握古代图腾密钥。"
+    "irreplaceable_goal": "你想让{fallen_scion.name}在月食大典前从生祭名录上消失，也想让对方别再怕被当成筹码",
+    "limit_gap": "卫队每两刻钟巡一次秘室，{fallen_scion.name}不能离开外廷",
+    "meeting_reason": "{fallen_scion.name}照昨日的暗记把你约进秘室",
+    "resource_gap": "你的旁支血脉仍受长老会礼遇，{fallen_scion.name}却只剩一半配给与全天监视"
    },
    "tags": [],
    "tension_engine_ids": [
-    "te_altar_hostage"
+    "te_altar_hostage",
+    "te_eclipse_lockdown"
    ]
   },
   {
-   "chemistry": "{frontier_marshall.name}即将锁死荆棘石闸，高热发作的{elven_ranger.name}急需药剂，{apostate_alchemist.name}带着唯一一瓶提纯药剂被堵在长廊上；三人一旦拔刀相向，外层结界就会瞬间坍塌。",
-   "id": "combo_twilight_breach",
-   "identity_ids": [],
+   "chemistry": "警钟石台寒风呼啸，{frontier_marshall.name}屏退了守钟随从，借核对换防文书的名义把你拉到白银古钟背风的一侧，顺手解下厚毛呢披风披在你肩上。",
+   "id": "combo_marshall_highblood",
+   "identity_ids": [
+    "fallen_high_blood"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "frontier_marshall",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "上回勘界你替{frontier_marshall.name}压下铁卫私放人类粮草的旧账，对方临别把剑穗解下来塞给了你",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "frontier_marshall"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想做那个让{frontier_marshall.name}肯在面前卸甲的人",
+    "limit_gap": "{frontier_marshall.name}当值时不能卸甲，戒严令也不能私下松口",
+    "meeting_reason": "{frontier_marshall.name}借核对换防文书把你请上钟台",
+    "resource_gap": "你的纯血身份能在长老会说上话，{frontier_marshall.name}的军费全捏在大祭司的库房里"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_sacred_dew_blackmail",
+    "te_eclipse_lockdown"
+   ]
+  },
+  {
+   "chemistry": "休歇石室门外挂起了暖石灯，{fallen_scion.name}正跪坐在炭盆旁翻看一卷从秘室偷抄出来的旧名录，见你推门进来，立刻拍了拍身侧烘暖的兽皮软垫。",
+   "id": "combo_scion_warden",
+   "identity_ids": [
+    "human_night_warden"
+   ],
    "player_positions": [
     "low",
     "equal",
@@ -327,176 +401,172 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 1
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "fallen_scion",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "同遭神殿白眼时你常把分到的暖石多留一块给{fallen_scion.name}，对方嘴上嫌弃却每次都贴身收好",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "fallen_scion"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你想知道那卷偷抄的名录上写了什么，也想让{fallen_scion.name}肯靠过来",
+    "limit_gap": "{fallen_scion.name}受卫队监视，你的酬劳一旦被扣就得离殿",
+    "meeting_reason": "你守夜巡到休歇石室，{fallen_scion.name}给你留了门",
+    "resource_gap": "{fallen_scion.name}有王族血脉与图腾，你有人类的炭火手艺和出入各殿的守夜腰牌"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_altar_hostage",
+    "te_last_warmstone"
+   ]
+  },
+  {
+   "chemistry": "今夜月食封闸前，是你主动以调配暖石药浴为由，把{elven_ranger.name}与{fallen_scion.name}一并约进了灵息休歇石室，要在长老会清查名录前替三人定下今夜的去留。",
+   "id": "combo_ranger_scion_pact",
+   "identity_ids": [
+    "herbal_apothecary"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
      },
      "b": "elven_ranger",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 4
      },
-     "reason": "曾在石室为对方守过一夜炭火，知道对方最隐秘的软肋",
-     "stage": "familiar"
+     "reason": "上回在石室替{elven_ranger.name}拔除毒刺时，对方紧攥着你的手腕，直到天快亮才肯松开",
+     "stage": "intimate"
     },
     {
      "a": "player",
      "a_to_b": {
-      "tension": 3,
-      "trust": 0
+      "tension": 4,
+      "trust": 3
      },
-     "b": "frontier_marshall",
+     "b": "fallen_scion",
      "b_to_a": {
-      "tension": 3,
-      "trust": 0
+      "tension": 4,
+      "trust": 3
      },
-     "reason": "多次违反戒严令，随时可能被对方当场拿下",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 2
-     },
-     "b": "apostate_alchemist",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "曾帮对方藏过违禁蒸馏设备",
-     "stage": "acquainted"
+     "reason": "你曾替{fallen_scion.name}开具需静养的假药方躲过议会传唤，对方自此总在配药室留一枚白银书签",
+     "stage": "flirting"
     },
     {
      "a": "elven_ranger",
      "a_to_b": {
-      "tension": 1,
+      "tension": 4,
       "trust": 2
      },
-     "b": "frontier_marshall",
+     "b": "fallen_scion",
      "b_to_a": {
-      "tension": 1,
+      "tension": 4,
       "trust": 2
      },
-     "reason": "并肩作战多年，深知彼此的伤痛与重负",
-     "stage": "familiar"
-    },
-    {
-     "a": "elven_ranger",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 0
-     },
-     "b": "apostate_alchemist",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 0
-     },
-     "reason": "统领痛恨对方坐地起价，却又离不开对方的药",
-     "stage": "testing"
-    },
-    {
-     "a": "frontier_marshall",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 0
-     },
-     "b": "apostate_alchemist",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 0
-     },
-     "reason": "执盾官多次搜查偏殿没收毒药，两人见面就是硝烟",
+     "reason": "{elven_ranger.name}察觉{fallen_scion.name}私抄秘室古卷却没上报，两人都不知道长老会施压时对方会保谁",
      "stage": "testing"
     }
    ],
    "slots": [
     "elven_ranger",
-    "frontier_marshall",
-    "apostate_alchemist"
+    "fallen_scion"
    ],
    "stakes": {
-    "irreplaceable_goal": "在月食钟声敲响前逼防务高层让步，打开逃生暗道。",
-    "limit_gap": "三人只要有一人高热暴走，神殿的防御就会从内部撕裂。",
-    "meeting_reason": "在长廊立柱旁争夺最后一瓶能撑到天亮的止痛酊剂。",
-    "resource_gap": "{frontier_marshall.name}有重剑与石闸总钥匙，{elven_ranger.name}有神射长弓，{apostate_alchemist.name}有救命的提纯药。"
+    "irreplaceable_goal": "你想在长老会清查名录前替三人定下今夜的去留",
+    "limit_gap": "月食封闸前三人必须各回各处，否则卫队会起疑",
+    "meeting_reason": "是你以调药浴为由把两人约进石室",
+    "resource_gap": "你有药浴和假药方，{elven_ranger.name}有兵权，{fallen_scion.name}有能引动母树的源血"
    },
-   "tags": [
-    "workplace",
-    "crime"
-   ],
+   "tags": [],
    "tension_engine_ids": [
-    "te_eclipse_lockdown",
-    "te_last_warmstone"
+    "te_last_warmstone",
+    "te_altar_hostage"
    ]
   },
   {
-   "chemistry": "内殿帷幔裂了，{frontier_marshall.name}下令封锁石室，限{silver_weaver.name}半个时辰内补好，而你被指派在一旁举灯打下手；补不好，三个人都得留在毒雾里。",
-   "id": "combo_torn_veil",
-   "identity_ids": [],
+   "chemistry": "半个时辰前{frontier_marshall.name}已私下求过你出面做保，此刻你领着对方推开草药蒸馏偏殿的侧门，与早已守在银烧瓶旁的{apostate_alchemist.name}当面摊开那份神露底单。",
+   "id": "combo_alchemist_marshall_ledger",
+   "identity_ids": [
+    "border_envoy"
+   ],
    "player_positions": [
-    "low",
     "equal"
    ],
-   "power_structure": "npc_high",
+   "power_structure": "equal",
    "relations": [
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 0
+      "tension": 4,
+      "trust": 3
      },
-     "b": "frontier_marshall",
+     "b": "apostate_alchemist",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 4,
+      "trust": 3
      },
-     "reason": "上次兽潮时你替哨塔送过箭，对方记住了你",
-     "stage": "acquainted"
+     "reason": "你曾帮{apostate_alchemist.name}从边境黑市带回违禁的古炼金手稿，对方在扉页写下你的名字作谢",
+     "stage": "flirting"
     },
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
+      "tension": 2,
+      "trust": 3
+     },
+     "b": "frontier_marshall",
+     "b_to_a": {
+      "tension": 4,
       "trust": 2
      },
-     "b": "silver_weaver",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "常在石室里替对方穿针，聊过不少闲话",
+     "reason": "你与{frontier_marshall.name}在三次边境军需交割中互留过体面，彼此都清楚对方手里的底牌与难处",
      "stage": "familiar"
     },
     {
-     "a": "frontier_marshall",
+     "a": "apostate_alchemist",
      "a_to_b": {
-      "tension": 2,
-      "trust": 0
+      "tension": 4,
+      "trust": 2
      },
-     "b": "silver_weaver",
+     "b": "frontier_marshall",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 4,
+      "trust": 2
      },
-     "reason": "执盾官怀疑侍从官替叛逃祭司缝过斗篷",
+     "reason": "{apostate_alchemist.name}手里压着{frontier_marshall.name}用稀释废液顶替前线神露的验单，随时能拿捏对方",
      "stage": "testing"
     }
    ],
    "slots": [
-    "frontier_marshall",
-    "silver_weaver"
+    "apostate_alchemist",
+    "frontier_marshall"
    ],
    "stakes": {
-    "irreplaceable_goal": "在毒雾沉降前补好帷幔，或者找到另一条活路。",
-    "limit_gap": "{frontier_marshall.name}的暗伤随时会发作，{silver_weaver.name}的指尖已经开始发麻。",
-    "meeting_reason": "毒雾从帷幔裂缝渗进来，执盾官亲自押着侍从官来抢修。",
-    "resource_gap": "{frontier_marshall.name}有兵权和封锁令，{silver_weaver.name}有秘银丝线和手艺，你只有一盏灯和一双还算稳的手。"
+    "irreplaceable_goal": "你想把这份底单变成和谈的筹码，而不是两人翻脸的引线",
+    "limit_gap": "换防前底单必须有个去处，偏殿外随时有杂役添炭",
+    "meeting_reason": "{frontier_marshall.name}先求你做保，你才领着人来偏殿",
+    "resource_gap": "你怀里有人类三王国的盟约底稿，两人一个握着验单，一个握着石闸"
    },
-   "tags": [
-    "workplace"
-   ],
+   "tags": [],
    "tension_engine_ids": [
-    "te_miasma_antidote",
+    "te_sacred_dew_blackmail",
     "te_eclipse_lockdown"
    ]
   }
@@ -636,7 +706,7 @@
       "option": "割破掌心借剧痛强撑着站起来受检"
      }
     ],
-    "pressure": "外廊上正传来其他哨卫逼近的巡查脚步声",
+    "pressure": "外廊上正传来其余哨卫逼近的巡查脚步声",
     "trigger": "巡逻归来途中高热提前两刻钟爆发，四肢脱力跌倒在寝室石阶前"
    },
    "tags": [
@@ -727,7 +797,7 @@
      "听对方描述今晚的月亮"
     ],
     "preconditions": [
-     "对方不在任何生祭名单上，也没有向{npc.ta}求过神露"
+     "对方不在任何生祭名单上，也没有向{npc.ta}求过神露，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -925,7 +995,7 @@
    "decision": {
     "avoids": [
      "踏入满是香气的休歇石室",
-     "在他人面前卸下胸甲"
+     "在旁人面前卸下胸甲"
     ],
     "contrast": "作战时冷酷如铁，给阵亡部下擦拭铭牌时却会沉默凝视良久",
     "core_value": "以铁血纪律守护长生种最后的据点",
@@ -991,7 +1061,7 @@
      "被对方骂一句逞强"
     ],
     "preconditions": [
-     "戒严解除、{npc.ta}不在当值，对方也不在{npc.ta}的盘查名单上"
+     "戒严解除、{npc.ta}不在当值，对方也不在{npc.ta}的盘查名单上，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      1,
@@ -1123,7 +1193,7 @@
      "对方穿上{npc.ta}缝的衣服时那一下愣神"
     ],
     "preconditions": [
-     "量体已经结束，对方既不是{npc.ta}的主顾也不欠{npc.ta}的工钱"
+     "量体已经结束，对方既不是{npc.ta}的主顾也不欠{npc.ta}的工钱，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -1254,7 +1324,7 @@
      "额头相抵时笨拙而认真的吻"
     ],
     "preconditions": [
-     "{npc.ta}已经冷静下来，且不是在用自己换庇护"
+     "{npc.ta}已经冷静下来，且不是在用自己换庇护，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      1,
@@ -1297,7 +1367,7 @@
     "crime"
    ],
    "voices": {
-    "inner": "“他们要把我送上祭坛……我不想死……谁来告诉我该怎么办……”",
+    "inner": "“长老院要把我送上祭坛……我不想死……谁来告诉我该怎么办……”",
     "surface": "“我乃塞兰王族的直系正统！收起你那放肆的眼神。”"
    }
   }
@@ -1458,6 +1528,44 @@
    "start_minute": 1300,
    "tags": [],
    "title": "钟台夜间瞭望"
+  },
+  {
+   "beats": [
+    "借着穿透石壁的冰蓝细根荧光，用软刷扫去古精灵纪年石板上的浮尘",
+    "把微湿的薄羊皮纸铺在刻痕上，一人按住纸角、一人用银炭条轻轻拓印",
+    "在只容侧身错步的书架间收好拓片，听着彼此近在咫尺的呼吸核对古语"
+   ],
+   "duration_minutes": 35,
+   "hook_ids": [
+    "h_scion_tearful_lean",
+    "h_scion_ring_offer"
+   ],
+   "id": "a_vault_rubbing",
+   "location_ids": [
+    "archive_vault"
+   ],
+   "start_minute": 1340,
+   "tags": [],
+   "title": "秘室碑文拓印"
+  },
+  {
+   "beats": [
+    "提着长柄银壶走过列王浮雕的廊柱，逐一替冷色水晶灯添入灯油",
+    "穿堂夜风吹起披风下摆时停在转角凹槽处，借立柱阴影与迎面遇上的人低声交谈",
+    "核对完长廊尽头的守夜签牌，在清脆回音里并肩走回内殿石室"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [
+    "h_fever_ear_tremble",
+    "h_marshall_sword_slam"
+   ],
+   "id": "a_corridor_watch",
+   "location_ids": [
+    "white_stone_corridor"
+   ],
+   "start_minute": 1310,
+   "tags": [],
+   "title": "白石长廊巡灯"
   }
  ],
  "default_npc_gender_mix": {
@@ -1567,7 +1675,7 @@
     "archive_vault"
    ],
    "slot": "fallen_scion",
-   "text": "{fallen_scion.name}把祖传的祖母绿戒指塞进你掌心，指尖冰凉：“拿着它当信物。帮我把闸门侧面的秘道门栓撬开，出去以后，我会让家族记住你的名字。”"
+   "text": "{fallen_scion.name}把祖传的祖母绿戒指塞进你掌心，指尖冰凉：“拿着它当信物。帮我把闸门侧面的秘道门栓拔开，出去以后，我会让家族记住你的名字。”"
   },
   {
    "id": "h_potion_vial_request",
@@ -1614,8 +1722,9 @@
    "id": "withered_inner_sanctum",
    "name": "母树枯萎核心内殿",
    "pressure_modifiers": {
-    "p_miasma_breach": "穹顶裂隙直接承受外层毒瘴下压，一旦破损便无处可逃。",
-    "p_wither_fever_peak": "内殿是灵流紊乱的震中，身处此地发热发作速度倍增。"
+    "p_blood_sacrifice_decree": "白石祭坛前的铜盘里放着刚加盖完大祭司印信的调令文书。",
+    "p_miasma_breach": "穹顶裂隙漏下的夜风带着林海深处的苦涩寒意，吹得银色帷幔猎猎作响。",
+    "p_wither_fever_peak": "枯裂主根渗出的微弱荧光照亮了祭坛台阶上未干的冷汗水渍。"
    },
    "privacy": "private",
    "tags": [
@@ -1641,7 +1750,8 @@
    "id": "white_stone_corridor",
    "name": "回音白石长廊",
    "pressure_modifiers": {
-    "p_thorn_gate_lock": "长廊是连接内殿与外围闸门的必经干道，一旦封锁便插翅难飞。"
+    "p_blood_pact_rumor": "长廊立柱的阴影里，两名巡防哨兵正压低嗓音比对出入腰牌的刻痕。",
+    "p_thorn_gate_lock": "长廊两端的冷色水晶灯全部点亮，巡逻卫士已按闭门规制在拱门下设卡。"
    },
    "privacy": "semi",
    "tags": [],
@@ -1664,7 +1774,7 @@
    "id": "sacred_repose_chamber",
    "name": "灵息休歇石室",
    "pressure_modifiers": {
-    "p_wither_fever_peak": "石室里备着全殿最后几块暖石，是压住高热的地方。"
+    "p_wither_fever_peak": "石盆里的暖石正泛着温热白汽，屏风上挂着统帅刚解下的银色肩甲。"
    },
    "privacy": "private",
    "tags": [],
@@ -1686,7 +1796,8 @@
    "id": "herbal_distillery",
    "name": "草药蒸馏偏殿",
    "pressure_modifiers": {
-    "p_dew_monopoly": "此处藏有神殿仅存的未稀释神露备用试剂。"
+    "p_dew_ledger_blackmail": "酒精灯焰映着按有红泥指印的底单。",
+    "p_dew_monopoly": "配药台上的银制滴管已经收起，只剩几只贴着封条的深色药瓶锁在柜后。"
    },
    "privacy": "semi",
    "tags": [
@@ -1711,7 +1822,8 @@
    "id": "archive_vault",
    "name": "根系密藏秘室",
    "pressure_modifiers": {
-    "p_blood_sacrifice_decree": "秘室内藏有议会签发的生祭候选名单羊皮卷。"
+    "p_blood_pact_rumor": "秘室最底层石板架上留着一道刚被指尖抹去浮灰的清晰空缺。",
+    "p_blood_sacrifice_decree": "冰蓝细根的荧光下，一卷摊开的羊皮名录上还留着未干的银墨批注。"
    },
    "privacy": "private",
    "tags": [],
@@ -1733,7 +1845,7 @@
    "id": "outer_thorn_gate",
    "name": "外廷荆棘石闸",
    "pressure_modifiers": {
-    "p_thorn_gate_lock": "石闸是离开神殿的唯一陆路，锁死后外侧机关会升起毒刺。"
+    "p_thorn_gate_lock": "重型石门已被铁色荆棘缠紧，哨塔上的火把将门前石坪照得通明。"
    },
    "privacy": "public",
    "tags": [],
@@ -1756,7 +1868,8 @@
    "id": "bell_tower_landing",
    "name": "警钟石台高层",
    "pressure_modifiers": {
-    "p_miasma_breach": "高台能最早看见林海毒瘴翻涌而来的浪头。"
+    "p_dew_ledger_blackmail": "高台上看得见执盾官的亲信在石闸下徘徊。",
+    "p_miasma_breach": "惨白浓雾已经漫过石台栏杆底部，白银古钟表面凝起了一层薄霜。"
    },
    "privacy": "semi",
    "tags": [],
@@ -1835,7 +1948,7 @@
   ],
   "order": "family_first"
  },
- "notes": "黑暗奇幻枯枝神殿。高热靠人类调制的暖石药浴与守夜缓解，不靠身体接触；守夜人可随时辞约。亲密一律要求高热已退、神志清醒、与神露和庇护无关。待真实试玩后再转 released。",
+ "notes": "黑暗奇幻枯枝神殿。高热靠人类调制的暖石药浴与守夜缓解，不靠身体接触；守夜人可随时辞约。亲密一律要求高热已退、神志清醒、与神露和庇护无关。待真实试玩后再转 released。\n2026-10-18 按写作规则 v2 改造：人物组合改为 8 单人 + 2 双人；新增神露底单把柄（药剂师握执盾官）；压力四维各 1~2；补两条日常。",
  "player_identities": [
   {
    "age_range": [
@@ -1957,21 +2070,74 @@
  "premise": "庇佑长生种千年的精灵母树正逐渐枯死，瘴气日夜侵蚀结界。长生种开始发作骨髓高热，神露越来越少，唯有短生种人类调制的暖石药浴和守夜的炭火能压住反噬。平日视人类为蝼蚁的高傲生灵，如今不得不在白石神殿的帷幔与祭坛前，向人类开口求助。",
  "pressures": [
   {
-   "choice": "是放下尊严去求人类守夜人调药浴，还是吞下副作用极强的禁药硬撑。",
+   "choice": "替哪一方压下底单、换今夜外廷的通行主动权",
    "exits": [
     {
-     "cost": "欠下人类一个人情，虚弱也被对方看在眼里",
-     "option": "开口请人类守夜人调一桶暖石药浴，并在门外守着"
+     "cost": "你替{frontier_marshall.name}担下下批配给签押",
+     "option": "居中做保，让{apostate_alchemist.name}收起底单"
     },
     {
-     "cost": "神经灼伤，三日内幻觉与呕血不断",
-     "option": "饮尽一整瓶未稀释的禁忌枯萎酊剂"
+     "cost": "石闸多了一把不受军令管的钥匙",
+     "option": "劝{frontier_marshall.name}把副钥交出来"
     }
    ],
    "far": {
-    "consequence": "神殿内的长生种神智崩解，彼此厮杀。",
-    "due_days": 1,
-    "trigger": "母树主灵脉爆裂"
+    "consequence": "外廷军需账目被封存彻查",
+    "due_days": 3,
+    "trigger": "底单副本落到巡防哨兵手里"
+   },
+   "flags": [
+    "timed",
+    "leverage"
+   ],
+   "hook_ids": [
+    "h_potion_spoon_feed",
+    "h_bell_wind"
+   ],
+   "id": "p_dew_ledger_blackmail",
+   "immediate": {
+    "minutes": 20,
+    "text": "{frontier_marshall.name}按剑逼近，{apostate_alchemist.name}把底单举到灯焰上方"
+   },
+   "leverage": {
+    "basis": "{apostate_alchemist.name}握有{frontier_marshall.name}以稀释废液顶替纯神露倒卖的签收底单",
+    "holder": "apostate_alchemist",
+    "subject": "frontier_marshall"
+   },
+   "location_ids": [
+    "herbal_distillery",
+    "bell_tower_landing"
+   ],
+   "near": {
+    "deadline_minutes": 120,
+    "text": "换防钟响后副钥要交回库房"
+   },
+   "objective": "换防前替底单找个去处",
+   "source": "person",
+   "start_minute": 1320,
+   "tags": [
+    "coercion_theme",
+    "substance"
+   ],
+   "title": "稀释神露的化验底单",
+   "trigger": "{apostate_alchemist.name}把按着红泥指印的化验底单摊在蒸馏台边，要{frontier_marshall.name}交出石闸副钥"
+  },
+  {
+   "choice": "劝巡防统领回休歇石室泡药浴，还是替其代巡长廊",
+   "exits": [
+    {
+     "cost": "最后一块暖石用掉，旁人今夜没得用",
+     "option": "落下门栓，留在石室里调暖石药浴"
+    },
+    {
+     "cost": "你的守夜腰牌会被记上一笔",
+     "option": "去门外拦下来探视的眼线"
+    }
+   ],
+   "far": {
+    "consequence": "长老会眼线借探视之名接管内殿指挥",
+    "due_days": 2,
+    "trigger": "统帅抱恙的风声传到外廷哨塔"
    },
    "flags": [
     "timed"
@@ -1984,7 +2150,7 @@
    "id": "p_wither_fever_peak",
    "immediate": {
     "minutes": 15,
-    "text": "发热者的耳廓与眼眶泛出滚烫的猩红，视线重影，四肢发软。"
+    "text": "巡防统领在石室门边扶住门框，指节因用力而发白"
    },
    "leverage": null,
    "location_ids": [
@@ -1992,34 +2158,34 @@
     "withered_inner_sanctum"
    ],
    "near": {
-    "deadline_minutes": 60,
-    "text": "月食初亏时全殿灵流将陷入真空，没压住高热的长生种会集体狂乱。"
+    "deadline_minutes": 30,
+    "text": "换岗卫士半个时辰后巡到石室门外，统帅抱恙的事瞒不了多久"
    },
-   "objective": "在灵流逆行前用暖石药浴压住高热，或找到别的办法。",
-   "source": "nature",
+   "objective": "在巡逻卫士察觉前让巡防统领回石室熬过这一阵",
+   "source": "person",
    "start_minute": 1260,
    "tags": [
     "bodily_harm"
    ],
-   "title": "骨髓高热全面反噬",
-   "trigger": "母树核心脉冲骤然紊乱，神殿内所有长生种的骨髓高热提前爆发，暖石却只剩最后几块。"
+   "title": "月食夜的旧伤复发",
+   "trigger": "月食阴影爬上穹顶，巡防统领肩甲下的高热提前发作，却仍强撑着要在换岗前走完白石长廊"
   },
   {
-   "choice": "是用珍藏的神露买通守卫放行，还是从钟台绑绳索滑下外山。",
+   "choice": "去长廊查清风声源头，还是先回秘室抹平拓片痕迹",
    "exits": [
     {
-     "cost": "出闸后一无所有，只能在毒瘴荒林里自生自灭",
-     "option": "交出私藏的全部神露与通行符节买通射手"
+     "cost": "从此欠下执盾官一个人情",
+     "option": "请执盾官高抬贵手放你过去"
     },
     {
-     "cost": "后背与双腿被毒荆棘划开几道深口",
-     "option": "趁荆棘闭合瞬间飞身扑出门缝"
+     "cost": "名册经手的人都可能被牵连",
+     "option": "把拓片塞进核查名册的夹层"
     }
    ],
    "far": {
-    "consequence": "滞留门外的人无一幸存。",
-    "due_days": 1,
-    "trigger": "毒瘴淹没神殿外坪"
+    "consequence": "私通外廷的罪名落到你头上",
+    "due_days": 3,
+    "trigger": "流言传进大祭司耳中"
    },
    "flags": [
     "timed"
@@ -2028,43 +2194,45 @@
     "h_marshall_sword_slam",
     "h_scion_tearful_lean"
    ],
-   "id": "p_thorn_gate_lock",
+   "id": "p_blood_pact_rumor",
    "immediate": {
-    "minutes": 15,
-    "text": "门缝只剩两人并肩的宽度，带刺荆棘从石槽中弹起，寒风倒灌入廊。"
+    "minutes": 20,
+    "text": "执盾官带着巡逻队停在长廊中段，挨个核验出入腰牌"
    },
    "leverage": null,
    "location_ids": [
-    "outer_thorn_gate",
-    "white_stone_corridor"
+    "white_stone_corridor",
+    "archive_vault"
    ],
    "near": {
-    "deadline_minutes": 45,
-    "text": "石闸锁死后，神殿与外界彻底断绝往来。"
+    "deadline_minutes": 90,
+    "text": "钟响前所有守夜人都要当众核验腕间常春藤印记"
    },
-   "objective": "在石闸咬死前出闸，或夺下手轮的控制权。",
-   "source": "institution",
-   "start_minute": 1380,
-   "tags": [],
-   "title": "荆棘石闸提前锁死",
-   "trigger": "执盾统帅以兽潮迫近为由，提前转动黄铜总手轮，荆棘石闸正以肉眼可见的速度合拢。"
+   "objective": "在钟响核验前把拓片的去向理清",
+   "source": "rumor",
+   "start_minute": 1360,
+   "tags": [
+    "crime"
+   ],
+   "title": "私取血契拓片的风声",
+   "trigger": "白石长廊的换岗卫士低声议论，说有人私取了秘室的旧血契拓片，矛头隐隐指向你的住处"
   },
   {
-   "choice": "是潜入内殿私库偷取备用试剂，还是拿使节的盟约草案去跟大祭司谈条件。",
+   "choice": "动用私交从偏殿内间锁定份额，还是拿通行权去换备用纯露",
    "exits": [
     {
-     "cost": "人类城邦在谈判桌上失去最重要的筹码",
-     "option": "把盟约草案中的一条边界让步透露给大祭司换神露"
+     "cost": "你得替偏殿顶下一笔亏空",
+     "option": "留下来与药剂师商量私下分润"
     },
     {
-     "cost": "毒素入腑，从此落下咳血与眩晕的病根",
-     "option": "破开偏殿暗格，生饮未提纯的野性树汁"
+     "cost": "偏殿从此把你当成驻军的人",
+     "option": "联合外廷驻军施压开柜"
     }
    ],
    "far": {
-    "consequence": "神殿在内战中化作火海。",
-    "due_days": 3,
-    "trigger": "外廷驻军哗变"
+    "consequence": "没领到神露的人破晓前只能高价求购或辞约离殿",
+    "due_days": 2,
+    "trigger": "常规配给彻底断供"
    },
    "flags": [
     "timed"
@@ -2076,90 +2244,90 @@
    ],
    "id": "p_dew_monopoly",
    "immediate": {
-    "minutes": 30,
-    "text": "药台前的银分配盏已经干涸，偏殿门外的武官们眼神开始发红。"
+    "minutes": 20,
+    "text": "几名守夜人聚在配药台前争执，药剂师锁上了存放原液的银柜"
    },
    "leverage": null,
    "location_ids": [
-    "herbal_distillery",
-    "withered_inner_sanctum"
+    "herbal_distillery"
    ],
    "near": {
-    "deadline_minutes": 90,
-    "text": "断药超过两个时辰，多名防务骨干将拉不开弓、举不起盾。"
+    "deadline_minutes": 120,
+    "text": "除非拿到长老会特批，银柜今夜一滴也不外放"
    },
-   "objective": "在断药引发全面虚脱前弄到足够的神露。",
+   "objective": "在配给断供前替自己和同伴留下够用的份额",
    "source": "money",
    "start_minute": 1300,
    "tags": [
     "workplace"
    ],
-   "title": "神露配给断绝",
-   "trigger": "大祭司下达神谕：母树产露见底，即刻起停发外廷驻军与杂役的神露，剩余存量全数收归内殿。"
+   "title": "神露配给减半",
+   "trigger": "偏殿公布今夜纯神露配给削减五成，外廷黑市的价格翻了三倍"
   },
   {
-   "choice": "是向执盾统帅交出大祭司私吞神露的证据换庇护，还是冒险偷改名单。",
+   "choice": "去内殿探听初拟名单，还是去秘室查原始底档",
    "exits": [
     {
-     "cost": "从此卷进军方与神权的内斗，再也脱不了身",
-     "option": "把大祭司的私账交给执盾统帅，换铁卫当场护送"
+     "cost": "一旦败露，你的名字也会被写进去",
+     "option": "帮失势王裔找出旧诏改写名录"
     },
     {
-     "cost": "背上一条人命，心底留下永远的阴影",
-     "option": "把名单上的名字悄悄换成另一个人"
+     "cost": "对方从此放弃王族头衔",
+     "option": "劝失势王裔随你一同离殿"
     }
    ],
    "far": {
-    "consequence": "名单上的人全数被献给母树。",
+    "consequence": "内殿通行权全面收紧，名单外的人天亮离殿",
     "due_days": 1,
-    "trigger": "生祭仪式强行启动"
+    "trigger": "最终名录生效"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [
-    "h_scion_tearful_lean"
+    "h_scion_tearful_lean",
+    "h_altar_lamp_glance"
    ],
    "id": "p_blood_sacrifice_decree",
    "immediate": {
-    "minutes": 20,
-    "text": "长廊上传来秘银镣铐的拖曳声与侍卫甲胄的撞击声，正朝秘室逼近。"
+    "minutes": 25,
+    "text": "失势王裔发现自己的名字排在遣散名录首位，正在秘室书架间翻找先王旧诏"
    },
    "leverage": null,
    "location_ids": [
-    "withered_inner_sanctum",
-    "archive_vault"
+    "archive_vault",
+    "withered_inner_sanctum"
    ],
    "near": {
-    "deadline_minutes": 50,
-    "text": "一旦被押上祭坛，祭品的血会在半个时辰内被巨根吸干。"
+    "deadline_minutes": 150,
+    "text": "名录加盖银印后就会张贴在长廊入口"
    },
-   "objective": "在锁链扣上前篡改名单、找到证据推翻它，或逃出去。",
+   "objective": "在名录加印前保住你在乎的人",
    "source": "institution",
    "start_minute": 1340,
    "tags": [
     "crime",
     "coercion_theme"
    ],
-   "title": "生祭名单圈定",
-   "trigger": "大典执事公布了第一批生祭名单，失势王族与几名人类赫然在列，二十分钟后侍卫就要前来锁拿。"
+   "title": "长老会重审留任名录",
+   "trigger": "大祭司收到长老会密令，要在月食全亏前圈定今夜留守内殿的人选，未被圈中者天亮即被驱离"
   },
   {
-   "choice": "是爬上穹顶梁木抢修符文，还是冲进石室抢一个能闩门的位置。",
+   "choice": "趁哨兵内撤的空当去石闸交接信物，还是先回休歇石室添炭备药",
    "exits": [
     {
-     "cost": "胸膛与双肩被毒雾灼伤，留下大片疤痕",
-     "option": "脱下秘银辟魔外袍裹在同伴身上"
+     "cost": "你得分出自己那份暖石",
+     "option": "与身边的人退进石室共度寒潮"
     },
     {
-     "cost": "背负门外同僚的哭喊，沦为神殿公敌",
-     "option": "闩死石室木门，把门外的人挡在外面"
+     "cost": "雾里迷路的风险全由你担",
+     "option": "借浓雾掩护穿过长廊"
     }
    ],
    "far": {
-    "consequence": "整座神殿被迷雾吞没，沦为魔兽巢穴。",
-    "due_days": 3,
-    "trigger": "神殿结界全面坍塌"
+    "consequence": "天亮前不带暖石与神露的人寸步难行",
+    "due_days": 1,
+    "trigger": "寒雾在殿门外结成厚霜"
    },
    "flags": [
     "timed"
@@ -2172,72 +2340,70 @@
    "id": "p_miasma_breach",
    "immediate": {
     "minutes": 20,
-    "text": "刺鼻的硫磺与腐臭从穹顶倾泻而下，白石地砖被酸雾蚀得嘶嘶作响。"
+    "text": "浓雾吞没外廷视野，三步之外难辨人影"
    },
    "leverage": null,
    "location_ids": [
-    "withered_inner_sanctum",
-    "bell_tower_landing"
+    "bell_tower_landing",
+    "withered_inner_sanctum"
    ],
    "near": {
-    "deadline_minutes": 60,
-    "text": "毒雾灌满全殿后，没有护体法衣的人撑不过几刻钟。"
+    "deadline_minutes": 30,
+    "text": "长廊与偏殿的通风口要在半个时辰内用浸药帷幔封堵"
    },
-   "objective": "在毒雾沉降前修复结界，或抢到地下的防毒位置。",
+   "objective": "在寒潮高峰前找到一处能挡雾的地方",
    "source": "nature",
    "start_minute": 1350,
    "tags": [
     "bodily_harm"
    ],
-   "title": "毒瘴撕裂穹顶",
-   "trigger": "积聚数月的毒瘴被狂风卷成黑紫色浊浪，把神殿穹顶薄弱的法阵撕开一道数米宽的豁口。"
+   "title": "林海寒雾夜潮",
+   "trigger": "林海白雾比往常提前一个时辰漫上石阶，露天平台气温骤降，外围哨兵开始往长廊内撤"
   },
   {
-   "choice": "是当众喝下药剂自证，还是把配药暗账交给执盾统帅让铁卫弹压。",
+   "choice": "去石闸找执盾官核对开闸口令，还是留在内圈趁乱行事",
    "exits": [
     {
-     "cost": "食道灼伤，当场呕血昏迷",
-     "option": "当众喝下一大碗浓缩药汤担保清白"
+     "cost": "信物的来历会被执盾官记下",
+     "option": "亮出内殿信物穿过盘查线"
     },
     {
-     "cost": "成为长弓武官们切齿痛恨的走狗",
-     "option": "向执盾统帅告密，让铁卫镇压带头者"
+     "cost": "秘室的暗门从此不再是秘密",
+     "option": "从根系秘室绕行"
     }
    ],
    "far": {
-    "consequence": "各派自相残杀，防线彻底沦陷。",
-    "due_days": 5,
-    "trigger": "神殿爆发全面械斗"
+    "consequence": "今夜所有人只能在各自石室熬到天亮",
+    "due_days": 1,
+    "trigger": "石闸要到破晓月食退去才重开"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [
-    "h_potion_spoon_feed",
-    "h_weaver_needle"
+    "h_marshall_sword_slam",
+    "h_scion_tearful_lean"
    ],
-   "id": "p_poison_water_rumor",
+   "id": "p_thorn_gate_lock",
    "immediate": {
-    "minutes": 25,
-    "text": "长廊那头传来剑鞘撞墙的尖响与怒骂，带头将领的剑已拔出半截。"
+    "minutes": 15,
+    "text": "滞留的流民与随从骚动起来，执盾官下令分段盘查长廊"
    },
    "leverage": null,
    "location_ids": [
-    "white_stone_corridor",
-    "herbal_distillery"
+    "outer_thorn_gate",
+    "white_stone_corridor"
    ],
    "near": {
-    "deadline_minutes": 70,
-    "text": "骚乱一旦蔓延，神殿残存的指挥会彻底瘫痪。"
+    "deadline_minutes": 30,
+    "text": "无牌人员不得跨区走动，盘查线半个时辰后封到内殿"
    },
-   "objective": "在武官血洗偏殿前自证清白、平息骚乱，或从暗道脱身。",
-   "source": "rumor",
-   "start_minute": 1360,
-   "tags": [
-    "crime"
-   ],
-   "title": "神露掺毒流言",
-   "trigger": "长廊里抬出一具七窍流黑血的游侠尸体，流言说偏殿的神露被掺了致疯毒，几十名武官正持剑逼向药房。"
+   "objective": "在石闸重开前安顿好今夜的去处",
+   "source": "accident",
+   "start_minute": 1380,
+   "tags": [],
+   "title": "荆棘石闸提前落锁",
+   "trigger": "守钟人误判月影，提前敲响闭门钟，外廷荆棘石闸轰然落下"
   }
  ],
  "region": "永夜迷雾森林深处，母树巨根盘踞而成的半倒塌古代白石神殿",

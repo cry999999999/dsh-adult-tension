@@ -548,7 +548,7 @@
      "守夜时肩并肩，谁都不说话"
     ],
     "preconditions": [
-     "确定对方靠近不是为了功绩簿上的名字"
+     "确定对方靠近不是为了功绩簿上的名字，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -676,7 +676,7 @@
      "水汽里有人替自己擦干头发"
     ],
     "preconditions": [
-     "伤口不疼、神志清楚的时候"
+     "伤口不疼、神志清楚的时候，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -920,7 +920,7 @@
      "守夜时听对方讲地面上的小事"
     ],
     "preconditions": [
-     "先给王都写一封说清心意的信"
+     "先给王都写一封说清心意的信，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -1041,7 +1041,7 @@
      "只有两个人懂的暗号"
     ],
     "preconditions": [
-     "先说好暗号，一说就停"
+     "先说好暗号，一说就停，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1162,7 +1162,7 @@
      "泉边摊开地图，两个人头碰着头看"
     ],
     "preconditions": [
-     "生意上的事先说清，再谈别的"
+     "生意上的事先说清，再谈别的，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1447,7 +1447,9 @@
    ],
    "id": "sanctuary_obelisk_hall",
    "name": "方尖碑石室",
-   "pressure_modifiers": {},
+   "pressure_modifiers": {
+    "p_rout_order_page": "问询就在碑下开，交不交那页纸，所有人都看着"
+   },
    "privacy": "public",
    "tags": [
     "workplace"
@@ -1471,7 +1473,9 @@
    ],
    "id": "sealed_granite_gate",
    "name": "石门守夜哨",
-   "pressure_modifiers": {},
+   "pressure_modifiers": {
+    "p_rout_order_page": "守夜哨只有火盆，一页纸烧掉也就一口气的事"
+   },
    "privacy": "semi",
    "tags": [],
    "visibility": "只有守夜的两个人和门缝里透进来的红光，换班的脚步声老远就听得见。",
@@ -2020,7 +2024,7 @@
    "text": "守夜两人一班，温泉室一次只容两人，独处的机会是排出来的，也是抢出来的。"
   }
  ],
- "title": "迷宫深层：坍塌安全区与溃灭远征队",
+ "title": "深渊第七层安全区",
  "tone": [
   "结界微光",
   "血污重铠",

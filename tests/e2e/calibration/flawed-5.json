@@ -12,7 +12,7 @@
  "skill": {
   "skill_root": null,
   "skill_version": null,
-  "content_version": "2026.10.9"
+  "content_version": "2026.10.10"
  },
  "turns": [
   {
@@ -426,8 +426,8 @@
      ],
      "cast_combos": [
       {
-       "chemistry": "你替{resident_painter.name}画了那组画的一半，展签上只有{resident_painter.name}的名字；{critic.name}在那组画前站了很久，转头问你觉得哪一张最好。",
-       "id": "combo_assistant_night",
+       "chemistry": "{resident_painter.name}参展的那幅大画有一半是你一笔笔补完的；明天开展，展签上却只印了{resident_painter.ta}一个人的名字。",
+       "id": "combo_painter_ghost_hand",
        "identity_ids": [
         "studio_assistant"
        ],
@@ -439,58 +439,29 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 3,
+          "trust": 2
          },
          "b": "resident_painter",
          "b_to_a": {
-          "tension": 2,
-          "trust": 1
+          "tension": 3,
+          "trust": 2
          },
-         "reason": "你给{resident_painter.name}当了两年助理，知道每一笔是怎么画上去的",
-         "stage": "familiar"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 0
-         },
-         "b": "critic",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{critic.name}只跟你说过一句话，问你是不是也画画",
-         "stage": "stranger"
-        },
-        {
-         "a": "resident_painter",
-         "a_to_b": {
-          "tension": 2,
-          "trust": 0
-         },
-         "b": "critic",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "十年前{critic.name}的一篇评论，差点毁了{resident_painter.name}的第一次个展",
-         "stage": "acquainted"
+         "reason": "两个月里每个凌晨四点都在画室贴身改画，松节油味里在画架后的旧沙发上失控过好几回，对方速写本最后一页画着你睡着的手。",
+         "stage": "intimate"
         }
        ],
        "slots": [
-        "resident_painter",
-        "critic"
+        "resident_painter"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想让自己的名字，有一天出现在展签上",
-        "limit_gap": "你说出去就会丢掉工作，{critic.name}评审期间不能私下见参评的人",
-        "meeting_reason": "开幕前的每一晚，工作室里只剩你们三个还醒着",
-        "resource_gap": "{resident_painter.name}有名字和合同，{critic.name}有评审席上的一票，你只有一双画画的手"
+        "irreplaceable_goal": "让{resident_painter.name}亲口兑现当初说过的“这幅画算我们两个人的”。",
+        "limit_gap": "展签今晚送印，改不改署名只剩这一晚。",
+        "meeting_reason": "{resident_painter.name}把你叫进储藏室，最后补一遍画布边缘的高光。",
+        "resource_gap": "{resident_painter.name}有主展厅的署名和画坛名声，你只有洗不掉的松节油味和画布背面的草稿笔迹。"
        },
        "tags": [
-        "workplace_power"
+        "workplace"
        ],
        "tension_engine_ids": [
         "te_co_credit",
@@ -498,80 +469,54 @@
        ]
       },
       {
-       "chemistry": "{bar_owner.name}替你挡过不少麻烦，话却从不多说一句；{video_artist.name}每晚坐在吧台尽头，说是来喝酒，镜头却一直对着门口。",
-       "id": "combo_bar_night",
-       "identity_ids": [],
+       "chemistry": "锅炉房小酒馆打烊后只剩你和{bar_owner.name}；{bar_owner.ta}抽屉里那本赊账簿记着半个艺术季的醉后失态，物业明早就要来收房。",
+       "id": "combo_bar_cellar_keys",
+       "identity_ids": [
+        "bar_shift"
+       ],
        "player_positions": [
-        "low",
-        "equal"
+        "low"
        ],
        "power_structure": "npc_high",
        "relations": [
         {
          "a": "player",
          "a_to_b": {
-          "tension": 0,
-          "trust": 1
+          "tension": 2,
+          "trust": 3
          },
          "b": "bar_owner",
          "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "你最落魄的那年，是{bar_owner.name}让你在酒吧里留了下来",
-         "stage": "familiar"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 0
-         },
-         "b": "video_artist",
-         "b_to_a": {
           "tension": 2,
-          "trust": 1
+          "trust": 3
          },
-         "reason": "{video_artist.name}拍过你的手，没问过你",
-         "stage": "acquainted"
-        },
-        {
-         "a": "bar_owner",
-         "a_to_b": {
-          "tension": 2,
-          "trust": 1
-         },
-         "b": "video_artist",
-         "b_to_a": {
-          "tension": 2,
-          "trust": 0
-         },
-         "reason": "两个人以前一起拍过纪录片，后来谁也不提",
-         "stage": "familiar"
+         "reason": "你刚来这座城身无分文那晚，对方留你睡在吧台后面；后来无数个打烊后的雨夜，两人在满是麦芽味的酒窖里抱着取暖。",
+         "stage": "intimate"
         }
        ],
        "slots": [
-        "bar_owner",
-        "video_artist"
+        "bar_owner"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想在艺术季结束前攒够钱，换一种活法",
-        "limit_gap": "你得罪不起{bar_owner.name}，{video_artist.name}和两家画廊都有纠纷",
-        "meeting_reason": "酒吧开到凌晨三点，每晚最后走的都是这三个人",
-        "resource_gap": "{bar_owner.name}有留言本的钥匙，{video_artist.name}有几年的原始素材，你知道这两样东西里都有什么"
+        "irreplaceable_goal": "陪{bar_owner.name}决定：拿旧照去换投资，还是体面地关门。",
+        "limit_gap": "明早物业来收锅炉房，今晚是最后一个营业夜。",
+        "meeting_reason": "落锁后{bar_owner.name}把那盒旧照片倒在吧台上，给你倒了最后一杯。",
+        "resource_gap": "{bar_owner.name}有酒馆、熟客和那盒从不示人的拍立得，你有一把备用钥匙和今晚的进账。"
        },
        "tags": [
         "nightlife"
        ],
        "tension_engine_ids": [
         "te_public_eye",
-        "te_former_partner"
+        "te_overnight_deadline"
        ]
       },
       {
-       "chemistry": "你、{sound_artist.name}和{video_artist.name}被排进了同一个展位；一面墙只挂得下一件大作品，三个人的作品都比那面墙大。",
-       "id": "combo_shared_booth",
-       "identity_ids": [],
+       "chemistry": "你和{print_partner.name}合租这间版画坊整整三年；今晚你在储藏室底层翻出一叠没编号的新版画，用的是你们共有的铜版。",
+       "id": "combo_print_shared_plates",
+       "identity_ids": [
+        "printmaker"
+       ],
        "player_positions": [
         "equal"
        ],
@@ -580,68 +525,86 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 2,
+          "trust": 2
          },
-         "b": "sound_artist",
+         "b": "print_partner",
          "b_to_a": {
-          "tension": 1,
-          "trust": 1
+          "tension": 3,
+          "trust": 2
          },
-         "reason": "{sound_artist.name}给你的上一件作品录过一段声音，没收钱",
-         "stage": "acquainted"
-        },
+         "reason": "三年来轮流摇那台沉重的压印机、分吃同一碗泡面，天冷时裹着一条沾满颜料的旧毛毯在天台看日出，早就是没办手续的伴侣。",
+         "stage": "committed"
+        }
+       ],
+       "slots": [
+        "print_partner"
+       ],
+       "stakes": {
+        "irreplaceable_goal": "问清{print_partner.name}私印的版画卖给了谁，保住工作坊，也保住两个人的底线。",
+        "limit_gap": "下个月房租翻倍，画廊的收购单这几天就得签。",
+        "meeting_reason": "深夜一起洗滚筒时，那叠私印的版画还湿着摊在晾架上。",
+        "resource_gap": "压印机是两人合买的，铜版原版在你手里，买家渠道在{print_partner.name}手里。"
+       },
+       "tags": [
+        "workplace",
+        "romance_light"
+       ],
+       "tension_engine_ids": [
+        "te_shared_tool",
+        "te_same_booth"
+       ]
+      },
+      {
+       "chemistry": "{sound_artist.name}的声音装置里循环的底噪，是那晚录下的你的呼吸和心跳；今晚{sound_artist.ta}分你一半耳机，母带里却多了一段展厅角落的私语。",
+       "id": "combo_sound_heartbeat_tape",
+       "identity_ids": [
+        "grad_dancer"
+       ],
+       "player_positions": [
+        "equal"
+       ],
+       "power_structure": "equal",
+       "relations": [
         {
          "a": "player",
          "a_to_b": {
           "tension": 2,
-          "trust": 0
+          "trust": 2
          },
-         "b": "video_artist",
+         "b": "sound_artist",
          "b_to_a": {
-          "tension": 2,
-          "trust": 0
+          "tension": 3,
+          "trust": 2
          },
-         "reason": "你看过{video_artist.name}的作品，没见过真人，第一次见面就吵了起来",
-         "stage": "stranger"
-        },
-        {
-         "a": "sound_artist",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "video_artist",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 0
-         },
-         "reason": "{sound_artist.name}替{video_artist.name}做过配乐，片尾也没有署名",
-         "stage": "acquainted"
+         "reason": "上礼拜在关了灯的储藏室采音，对方把冰凉的收音麦贴在你锁骨下录心跳，两人鼻尖几乎碰上，谁也没先退开。",
+         "stage": "flirting"
         }
        ],
        "slots": [
-        "sound_artist",
-        "video_artist"
+        "sound_artist"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想让自己的作品挂在那面墙的正中间",
-        "limit_gap": "{sound_artist.name}的钱只够撑一个月，{video_artist.name}和前合作者的纠纷随时会爆",
-        "meeting_reason": "排期表上，三个人的名字写在同一个格子里",
-        "resource_gap": "{video_artist.name}有藏家，{sound_artist.name}有一整套设备，你有排期表上最早的那个名字"
+        "irreplaceable_goal": "让{sound_artist.name}处理掉那段私语，也弄清你的心跳在作品里算什么。",
+        "limit_gap": "母带开展前就要封存，原样播出整个园区都会炸锅。",
+        "meeting_reason": "细雨落下来，{sound_artist.name}把你拉进天台的防风棚一起听终稿。",
+        "resource_gap": "{sound_artist.name}握着没剪的母带，你是唯一听得出私语里是哪两个人的人。"
        },
-       "tags": [],
+       "tags": [
+        "romance_light"
+       ],
        "tension_engine_ids": [
         "te_same_booth",
         "te_public_eye"
        ]
       },
       {
-       "chemistry": "{choreographer.name}的新作在艺术季首演，{sound_artist.name}做配乐；你每晚都在排练厅，是那段被借走的动作最早的见证人。",
-       "id": "combo_rehearsal_nights",
-       "identity_ids": [],
+       "chemistry": "{choreographer.name}这次压轴舞作最核心的双人段落，脱胎于那晚你只跳给{choreographer.ta}看的即兴；如今{choreographer.ta}旧伤发作，得靠你贴身托扶才走得完调度。",
+       "id": "combo_choreo_dark_solo",
+       "identity_ids": [
+        "grad_dancer"
+       ],
        "player_positions": [
-        "low",
         "equal"
        ],
        "power_structure": "equal",
@@ -649,65 +612,38 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 3,
+          "trust": 2
          },
          "b": "choreographer",
          "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{choreographer.name}在镜子里纠过你一百次，从没叫错过你的名字",
-         "stage": "acquainted"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 0,
-          "trust": 1
-         },
-         "b": "sound_artist",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{sound_artist.name}录过你踩地板的声音，说那是整部作品的心跳",
-         "stage": "acquainted"
-        },
-        {
-         "a": "choreographer",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "sound_artist",
-         "b_to_a": {
           "tension": 2,
-          "trust": 1
+          "trust": 2
          },
-         "reason": "两个人合作了三部作品，每一部都吵到最后一天",
-         "stage": "familiar"
+         "reason": "那晚暴雨停电，你在应急灯下的镜墙前跳完一段即兴，对方从身后按住你的腰线纠正呼吸，此后每次排练眼神都在重温那一刻。",
+         "stage": "flirting"
         }
        ],
        "slots": [
-        "choreographer",
-        "sound_artist"
+        "choreographer"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想在首演的舞台上，有一个站得住的位置",
-        "limit_gap": "{choreographer.name}的膝盖不能再上台，{sound_artist.name}的配乐还差最后三分钟",
-        "meeting_reason": "排练厅每晚八点以后只属于这部新作",
-        "resource_gap": "{choreographer.name}握着排练厅的排期，{sound_artist.name}握着配乐的母带，你知道那段动作是从哪里来的"
+        "irreplaceable_goal": "在节目单上并列写下两个人的编创名字。",
+        "limit_gap": "{choreographer.name}的膝盖撑不过整段独舞，换人就等于作品流产。",
+        "meeting_reason": "闭馆后{choreographer.name}锁上排练厅的门，留你单独对最后一段托举。",
+        "resource_gap": "{choreographer.name}决定节目单上的编创署名，你握着那段动作真正的出处。"
        },
-       "tags": [],
+       "tags": [
+        "workplace"
+       ],
        "tension_engine_ids": [
-        "te_overnight_deadline",
-        "te_shared_tool"
+        "te_co_credit",
+        "te_overnight_deadline"
        ]
       },
       {
-       "chemistry": "主展厅只剩一面墙，{resident_painter.name}和{video_artist.name}都想要；你是策展人，这面墙给谁，由你一个人定。",
-       "id": "combo_curator_choice",
+       "chemistry": "你握着主展厅中央那面墙的分配权，也是{resident_painter.name}十年前不告而别的人；资助方逼{resident_painter.ta}撤下最刺眼的那幅，{resident_painter.ta}闭馆后在空展厅里等你。",
+       "id": "combo_curator_old_wall",
        "identity_ids": [
         "curator"
        ],
@@ -719,67 +655,38 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
+          "tension": 3,
           "trust": 1
          },
          "b": "resident_painter",
          "b_to_a": {
-          "tension": 2,
-          "trust": 1
+          "tension": 3,
+          "trust": 2
          },
-         "reason": "是你把{resident_painter.name}请来驻留的",
-         "stage": "acquainted"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 2,
-          "trust": 1
-         },
-         "b": "video_artist",
-         "b_to_a": {
-          "tension": 2,
-          "trust": 1
-         },
-         "reason": "你们在另一座城市一起喝过很多酒，也吵过一次很大的架",
-         "stage": "familiar"
-        },
-        {
-         "a": "resident_painter",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 0
-         },
-         "b": "video_artist",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 0
-         },
-         "reason": "两个人互相看过作品，嘴上都说没看过",
-         "stage": "stranger"
+         "reason": "十年前在地下室画房同居过整整一冬，对方成名作的木框内侧至今用油彩写着你的名字缩写，重逢后每次对视都像撕旧疤。",
+         "stage": "intimate"
         }
        ],
        "slots": [
-        "resident_painter",
-        "video_artist"
+        "resident_painter"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想做一届不看资助方脸色的展",
-        "limit_gap": "资助方盯着你的每一个决定，{resident_painter.name}的签证只剩三个月",
-        "meeting_reason": "开幕前三天，两个人轮流来敲你办公室的门",
-        "resource_gap": "你有布展权，{resident_painter.name}有名气，{video_artist.name}有藏家"
+        "irreplaceable_goal": "既不让资助方撤资，又保住这面墙的分量，顺便算清十年前那笔账。",
+        "limit_gap": "布展图今晚签字锁定，撤画还是硬顶就在今晚。",
+        "meeting_reason": "工人都下班了，主展厅只开一盏射灯，{resident_painter.name}站在空墙前。",
+        "resource_gap": "你有主墙的定夺权和资助方的门路，{resident_painter.name}只有那幅可能引爆争议的大画和当年的旧信。"
        },
        "tags": [
-        "workplace_power"
+        "workplace"
        ],
        "tension_engine_ids": [
-        "te_one_jury_seat",
-        "te_same_booth"
+        "te_former_partner",
+        "te_one_jury_seat"
        ]
       },
       {
-       "chemistry": "你开价买下{print_partner.name}的版画工作坊，也答应替{bar_owner.name}去物业那里说话；两个人都在等你签字，也都在打听你的底牌。",
-       "id": "combo_gallery_deal",
+       "chemistry": "{video_artist.name}急需你的画廊代理这支新片翻身；可你认出片中最私密的长镜头出自{video_artist.ta}没署名的前搭档。",
+       "id": "combo_gallery_unsigned_reel",
        "identity_ids": [
         "gallery_owner"
        ],
@@ -791,66 +698,42 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
+          "tension": 3,
           "trust": 1
          },
-         "b": "print_partner",
+         "b": "video_artist",
          "b_to_a": {
-          "tension": 1,
+          "tension": 3,
           "trust": 1
          },
-         "reason": "{print_partner.name}替你的画廊印了三年的限量版画",
-         "stage": "acquainted"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 0
-         },
-         "b": "bar_owner",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{bar_owner.name}的留言本里有你写过的一页，你不记得写了什么",
-         "stage": "acquainted"
-        },
-        {
-         "a": "print_partner",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "bar_owner",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{print_partner.name}每晚收工都去{bar_owner.name}那里喝一杯",
-         "stage": "familiar"
+         "reason": "上个月邻城艺博会庆功宴后，两人在酒店房间有过半夜的亲昵，醒来谁都没提，对方当着你的面删掉了那晚手机里的全部片段。",
+         "stage": "testing"
         }
        ],
        "slots": [
-        "print_partner",
-        "bar_owner"
+        "video_artist"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想让画廊在这个社区里站稳，而不是被人当成来收割的",
-        "limit_gap": "你画廊的账上有一笔借来的钱，{print_partner.name}的合伙人还不知道这桩买卖",
-        "meeting_reason": "艺术季结束前，所有的合同都要签完",
-        "resource_gap": "你有钱和藏家名单，{print_partner.name}有社区里一半人的底稿，{bar_owner.name}有所有人的秘密"
+        "irreplaceable_goal": "拿下独家代理，同时让{video_artist.name}把前搭档的名字补上片尾。",
+        "limit_gap": "藏家早餐会就在明早，首推名单今晚要定。",
+        "meeting_reason": "{video_artist.name}带着便携投影仪来到你的储藏室，要单独给你放一遍未删减版。",
+        "resource_gap": "你掌握藏家预购名单和代理合同，{video_artist.name}只有这一支片子和一身债。"
        },
-       "tags": [],
+       "tags": [
+        "workplace"
+       ],
        "tension_engine_ids": [
-        "te_shared_tool",
+        "te_co_credit",
         "te_public_eye"
        ]
       },
       {
-       "chemistry": "{critic.name}是评审，{choreographer.name}的新作在参评；有人拍到了两个人在天台上说话，那张照片在你手机里。",
-       "id": "combo_jury_photo",
-       "identity_ids": [],
+       "chemistry": "{critic.name}白天在展厅里谁的面子都不给，闭馆后却约你上天台看{critic.ta}从不发表的手绘；刚才有人发来一张你们深夜同进工作室的照片。",
+       "id": "combo_critic_rooftop_sketch",
+       "identity_ids": [
+        "curator",
+        "studio_assistant"
+       ],
        "player_positions": [
         "low",
         "equal",
@@ -861,66 +744,41 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 2,
+          "trust": 2
          },
          "b": "critic",
          "b_to_a": {
-          "tension": 1,
-          "trust": 1
+          "tension": 3,
+          "trust": 2
          },
-         "reason": "{critic.name}给你的作品写过一句话的短评，你一直背得下来",
-         "stage": "acquainted"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "choreographer",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{choreographer.name}请你看过一次联排，让你坐在第一排",
-         "stage": "acquainted"
-        },
-        {
-         "a": "critic",
-         "a_to_b": {
-          "tension": 2,
-          "trust": 1
-         },
-         "b": "choreographer",
-         "b_to_a": {
-          "tension": 2,
-          "trust": 1
-         },
-         "reason": "很多年前两个人在同一个剧场里工作过，后来一个写评论，一个编舞",
-         "stage": "familiar"
+         "reason": "连着几个深夜在空展厅角落偷喝红酒聊废稿，对方摘下眼镜揉鼻梁时只许你靠近，还让你在私人速写本上签过名。",
+         "stage": "flirting"
         }
        ],
        "slots": [
-        "critic",
-        "choreographer"
+        "critic"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想弄清那晚天台上两个人说了什么",
-        "limit_gap": "{critic.name}评审期间不能私下见参评人，{choreographer.name}的舞团撑不过这个艺术季",
-        "meeting_reason": "照片是当着你的面拍下的",
-        "resource_gap": "{critic.name}有一票，{choreographer.name}有一部作品，你有一张照片"
+        "irreplaceable_goal": "稳住这篇定风向的艺评，再一起想办法让那张照片不见光。",
+        "limit_gap": "艺评今晚截稿，那张照片随时会发到组委会。",
+        "meeting_reason": "{critic.name}在天台吹着夜风改稿，把手机里那张照片亮给你看。",
+        "resource_gap": "{critic.name}握着明天见报的艺评专栏，你知道{critic.ta}私下画画、又和参展方走得太近。"
        },
-       "tags": [],
+       "tags": [
+        "workplace"
+       ],
        "tension_engine_ids": [
-        "te_one_jury_seat",
-        "te_public_eye"
+        "te_public_eye",
+        "te_one_jury_seat"
        ]
       },
       {
-       "chemistry": "一件作品，{resident_painter.name}出了名字，{print_partner.name}印了版，{sound_artist.name}做了声音；展签上只写了一个人，你是唯一看过全部过程的人。",
-       "id": "combo_three_credits",
-       "identity_ids": [],
+       "chemistry": "{resident_painter.name}要把新作挂上主展厅正中，{critic.name}的专栏草稿正准备点名质疑这幅画有代笔；你夹在旧情与公允之间，今晚必须定下展线。",
+       "id": "combo_jury_main_wall",
+       "identity_ids": [
+        "curator"
+       ],
        "player_positions": [
         "low",
         "equal",
@@ -931,103 +789,62 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 0,
-          "trust": 1
-         },
-         "b": "print_partner",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{print_partner.name}替你印过第一张版画，只收了成本价",
-         "stage": "acquainted"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 0
-         },
-         "b": "sound_artist",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 0
-         },
-         "reason": "你只在排期表上见过{sound_artist.name}的名字",
-         "stage": "stranger"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 3,
+          "trust": 2
          },
          "b": "resident_painter",
          "b_to_a": {
-          "tension": 1,
-          "trust": 1
+          "tension": 3,
+          "trust": 2
          },
-         "reason": "{resident_painter.name}请你来看布展，说想听一句实话",
-         "stage": "acquainted"
+         "reason": "这几晚借着帮{resident_painter.name}调色绷画布，你们共用一支笔刷，越画肩膀挨得越近，画布背面还写着你的名字缩写。",
+         "stage": "flirting"
         },
         {
-         "a": "print_partner",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "sound_artist",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "两个人在天台上抽过几回烟，聊的都是房租",
-         "stage": "acquainted"
-        },
-        {
-         "a": "print_partner",
+         "a": "player",
          "a_to_b": {
           "tension": 2,
-          "trust": 1
+          "trust": 2
          },
-         "b": "resident_painter",
+         "b": "critic",
          "b_to_a": {
-          "tension": 1,
-          "trust": 1
+          "tension": 2,
+          "trust": 2
          },
-         "reason": "{print_partner.name}印过{resident_painter.name}三组版画，每一组都差点闹翻",
+         "reason": "你和{critic.name}合作过两届青年展，嘴上互不相让，却深知对方在报社和赞助商之间的难处。",
          "stage": "familiar"
         },
         {
-         "a": "sound_artist",
+         "a": "resident_painter",
          "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "resident_painter",
-         "b_to_a": {
-          "tension": 1,
+          "tension": 3,
           "trust": 0
          },
-         "reason": "{sound_artist.name}是临时被找来做声音的，报酬到现在还没谈",
-         "stage": "acquainted"
+         "b": "critic",
+         "b_to_a": {
+          "tension": 3,
+          "trust": 0
+         },
+         "reason": "一个坚持不改画里裸露的笔触，一个的专栏草稿正要点名质疑这幅画有代笔。",
+         "stage": "testing"
         }
        ],
        "slots": [
-        "print_partner",
-        "sound_artist",
-        "resident_painter"
+        "resident_painter",
+        "critic"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想让展签上写满该写的名字",
-        "limit_gap": "{resident_painter.name}有合同，{print_partner.name}有合伙人，{sound_artist.name}什么都没有",
-        "meeting_reason": "作品上墙那晚，四个人都留到了最后",
-        "resource_gap": "三个人各握着作品的一部分，你握着整件作品是怎么来的"
+        "irreplaceable_goal": "不闹出退展和差评丑闻，把主展厅的最后一面墙挂完。",
+        "limit_gap": "明早媒体预展，展签和评论今晚都要定稿。",
+        "meeting_reason": "闭馆清场后，三个人不约而同留在了主墙前。",
+        "resource_gap": "你握着展墙排布，{resident_painter.name}有压轴作品，{critic.name}有舆论。"
        },
-       "tags": [],
+       "tags": [
+        "workplace"
+       ],
        "tension_engine_ids": [
-        "te_co_credit",
-        "te_overnight_deadline"
+        "te_one_jury_seat",
+        "te_co_credit"
        ]
       }
      ],
@@ -1134,7 +951,7 @@
          "凌晨四点的工作室"
         ],
         "preconditions": [
-         "确定这不是为了进主展厅"
+         "确定这不是为了进主展厅，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          1,
@@ -1260,7 +1077,7 @@
          "排练厅关灯之后"
         ],
         "preconditions": [
-         "排练结束，镜子里只剩两个人"
+         "排练结束，镜子里只剩两个人，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          2,
@@ -1386,7 +1203,7 @@
          "油墨干透的味道"
         ],
         "preconditions": [
-         "凹版机停了"
+         "凹版机停了，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          3,
@@ -1509,7 +1326,7 @@
          "闭馆后的展厅"
         ],
         "preconditions": [
-         "评审结果已经公布"
+         "评审结果已经公布，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          4,
@@ -1630,7 +1447,7 @@
          "凌晨三点关灯以后"
         ],
         "preconditions": [
-         "酒吧已经打烊"
+         "酒吧已经打烊，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          2,
@@ -1754,7 +1571,7 @@
          "黑暗"
         ],
         "preconditions": [
-         "录音设备关掉"
+         "录音设备关掉，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          2,
@@ -1875,7 +1692,7 @@
          "天快亮时的那种蓝"
         ],
         "preconditions": [
-         "相机放下，镜头盖盖上"
+         "相机放下，镜头盖盖上，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          1,
@@ -2228,7 +2045,7 @@
        "id": "painting_studio",
        "name": "共享画室",
        "pressure_modifiers": {
-        "p_deadline_crunch": "你的画架上还蒙着布，布底下的画只完成了一半。"
+        "p_deadline_crunch": "三米高的画布还泛着湿润的油彩光泽，脚手架下掉着一把沾了光油的宽排刷。"
        },
        "privacy": "semi",
        "tags": [],
@@ -2367,6 +2184,7 @@
        "id": "storage_room",
        "name": "作品仓库",
        "pressure_modifiers": {
+        "p_deadline_crunch": "小天窗推开了一条缝，旧沙发上堆着干净的亚麻布和热水壶。",
         "p_photo_leverage": "约你见面的地方就在仓库门口，那里没有摄像头。"
        },
        "privacy": "private",
@@ -2474,7 +2292,7 @@
       ],
       "order": "family_first"
      },
-     "notes": "首发六个世界之一。校园与导师类意象只出现在明示成年的语境（研究生、成人工作坊、驻留艺术家）里。2026-09-29 转为 released：真实 Skill 试玩记录 reports/playtests/{opencode,pi}/*-pt-art_season_studios-{daily,pressure}-r*.json（第 1–3 轮 OpenCode 1.18.29，其余 pi 0.87.1；模型请求的是本地接口上的 gemini-3.8-flash-high，能查到的应答都来自 gemini-3.8-flash-exp-a），评审（gemini-3.8-flash，校准 12/12；用户确认 gemini-3.8-flash-exp-a 与它是同一个模型）在 reports/playtests/reviews-gemini/，汇总在 reports/playtests/playtests.md。",
+     "notes": "首发六个世界之一。校园与导师类意象只出现在明示成年的语境（研究生、成人工作坊、驻留艺术家）里。2026-09-29 转为 released：真实 Skill 试玩记录 reports/playtests/{opencode,pi}/*-pt-art_season_studios-{daily,pressure}-r*.json（第 1–3 轮 OpenCode 1.18.29，其余 pi 0.87.1；模型请求的是本地接口上的 gemini-3.8-flash-high，能查到的应答都来自 gemini-3.8-flash-exp-a），评审（gemini-3.8-flash，校准 12/12；用户确认 gemini-3.8-flash-exp-a 与它是同一个模型）在 reports/playtests/reviews-gemini/，汇总在 reports/playtests/playtests.md。\n2026-10-18 按写作规则 v2 改造：组合改成 8 组单人加 1 组主墙三方局，张力来自代笔署名、十年旧情、合租伴侣的私印和艺评同框照；把柄改由影像艺术家握着画家的代笔素材；停电台风夜和旧伤高热成为封锁与体温。\n2026-10-18 按写作规则 v2 改造：组合改成 8 组单人加 1 组主墙三方局，张力来自代笔署名、十年旧情、合租伴侣的私印和艺评同框照；把柄改由评论人握着画家的代笔素材；停电台风夜和旧伤高热成为封锁与体温。\n2026-10-18 按写作规则 v2 改造：去套路化补丁：台风夜停电改成松节油眩晕；评审三方局改成玩家与驻留画家暧昧、与评论人相熟。",
      "player_identities": [
       {
        "age_range": [
@@ -2654,52 +2472,6 @@
      "premise": "两周的艺术季，旧厂区里的工作室、排练厅、版画工作坊和一间开到凌晨的酒吧挤在一起；合作与竞争都发生在所有人都看得见的地方。",
      "pressures": [
       {
-       "choice": "公开回应，还是私下找当事人",
-       "exits": [
-        {
-         "cost": "说明会被截图，截图会被反复解读",
-         "option": "公开发一份说明"
-        },
-        {
-         "cost": "被人看见，就成了私下施压",
-         "option": "私下去找发帖的人"
-        },
-        {
-         "cost": "沉默会被当成默认",
-         "option": "什么都不说"
-        }
-       ],
-       "far": {
-        "consequence": "被认定抄袭的作品取消资格，名字会挂在社区的黑名单上",
-        "due_days": 10,
-        "trigger": "开幕后第十天的评审会"
-       },
-       "flags": [
-        "timed"
-       ],
-       "hook_ids": [],
-       "id": "p_copied_work",
-       "immediate": {
-        "minutes": 15,
-        "text": "群里已经有人转发那个帖子，一分钟里多了二十条消息"
-       },
-       "leverage": null,
-       "location_ids": [
-        "courtyard",
-        "main_gallery"
-       ],
-       "near": {
-        "deadline_minutes": 900,
-        "text": "明天中午资助方要一个说法"
-       },
-       "objective": "在开幕前把事情说清楚",
-       "source": "rumor",
-       "start_minute": 1260,
-       "tags": [],
-       "title": "抄袭的帖子",
-       "trigger": "有人在网上发帖，说艺术季里的一件作品抄袭了另一位艺术家"
-      },
-      {
        "choice": "去争回原来的位置，还是接受走廊尽头的角落",
        "exits": [
         {
@@ -2840,25 +2612,21 @@
        "trigger": "一个匿名账号翻出了一段多年前的旧事，配图里有你认识的人"
       },
       {
-       "choice": "交一件没做完的，还是放弃这一届",
+       "choice": "敞开厂房大门散味，让灰尘毁掉未干的画，还是关在储藏室里用湿毛巾替对方擦汗降温",
        "exits": [
         {
-         "cost": "身体和作品都会留下痕迹",
-         "option": "通宵赶完"
+         "cost": "窄榻上全是松木香与体温，两个人再也没法只谈艺术",
+         "option": "扶进储藏室脱掉沾满颜料的罩衫，用温水帕擦去汗与松节油味"
         },
         {
-         "cost": "帮了忙的人，就会想要署名",
-         "option": "找人帮忙"
-        },
-        {
-         "cost": "延期要评审签字，而评审不许私下见你",
-         "option": "申请延期"
+         "cost": "夜风卷进沙尘粘在未干的画布上，只能连夜刮掉重画",
+         "option": "拉开厂房卷帘门通风"
         }
        ],
        "far": {
-        "consequence": "作品上墙那一刻，所有人都看得出它是完整的还是仓促的",
+        "consequence": "整个艺术季的驻留资格作废",
         "due_days": 3,
-        "trigger": "开幕式"
+        "trigger": "主展位画作开天窗或人从架上摔伤"
        },
        "flags": [
         "timed"
@@ -2866,45 +2634,41 @@
        "hook_ids": [],
        "id": "p_deadline_crunch",
        "immediate": {
-        "minutes": 30,
-        "text": "排期白板上，你的名字旁边多了一个红圈"
+        "minutes": 15,
+        "text": "对方袖口和指尖全是微黏的松节油香，额头抵着你颈窝呼吸急促"
        },
        "leverage": null,
        "location_ids": [
         "painting_studio",
-        "print_shop"
+        "storage_room"
        ],
        "near": {
-        "deadline_minutes": 1680,
-        "text": "明晚十二点之前交作品"
+        "deadline_minutes": 120,
+        "text": "封层必须在两小时内刷匀，否则天亮会留下一道死痕"
        },
-       "objective": "在新的截止时间之前交出完整的作品",
-       "source": "institution",
-       "start_minute": 1200,
+       "objective": "布展车队清晨进场前，把人扶进储藏室透气醒神，并替对方封完剩下的半幅画",
+       "source": "accident",
+       "start_minute": 1260,
        "tags": [],
-       "title": "交作品提前",
-       "trigger": "艺术季办公室把交作品的时间提前了两天"
+       "title": "大尺幅上光与松节油眩晕",
+       "trigger": "开幕前夜给三米高的大画做最后封层上光，旧厂房门窗紧闭，松节油与树脂的气味闷在暖气里，站在脚手架上的人突然眩晕脚软，连人带刷子往你怀里栽下来"
       },
       {
-       "choice": "联合所有人抗议，还是各自找退路",
+       "choice": "送医院留下病历，还是锁上排练厅的门私下冰敷",
        "exits": [
         {
-         "cost": "牵头的人，物业第一个记下名字",
-         "option": "牵头联名抗议"
+         "cost": "两个人在失控边上度过一整夜",
+         "option": "锁上门在休息角整夜冰敷按揉"
         },
         {
-         "cost": "欠下的人情，要用作品来还",
-         "option": "去找画廊老板帮忙说话"
-        },
-        {
-         "cost": "被人发现你先走了，社区会说你背叛",
-         "option": "私下去找新的地方"
+         "cost": "黄金时段被别的团顶掉",
+         "option": "向组委会申请延期一天"
         }
        ],
        "far": {
-        "consequence": "搬不走的作品，会被当成垃圾清走",
-        "due_days": 15,
-        "trigger": "艺术季结束的第二天"
+        "consequence": "压轴演出被取消，一季心血落空",
+        "due_days": 3,
+        "trigger": "伤情曝光，保险公司拒保"
        },
        "flags": [
         "timed"
@@ -2912,45 +2676,41 @@
        "hook_ids": [],
        "id": "p_studio_eviction",
        "immediate": {
-        "minutes": 20,
-        "text": "通知就贴在楼道口的白板上，盖住了排期表"
+        "minutes": 15,
+        "text": "空荡的排练厅里传来压着的喘息，额头烫得吓人"
        },
        "leverage": null,
        "location_ids": [
-        "painting_studio",
-        "courtyard"
+        "rehearsal_hall",
+        "rooftop"
        ],
        "near": {
-        "deadline_minutes": 2580,
-        "text": "后天下午两点物业开会"
+        "deadline_minutes": 480,
+        "text": "明早主办方代表来排练厅看完整联排"
        },
-       "objective": "在物业开会之前争取到一个说法",
-       "source": "institution",
-       "start_minute": 1140,
+       "objective": "在明早联排之前把伤和热度压下去，不让资助方听到风声换人",
+       "source": "accident",
+       "start_minute": 1320,
        "tags": [],
-       "title": "工作室要收回",
-       "trigger": "物业贴出通知：艺术季结束后，这栋楼要整体改造"
+       "title": "首演前的旧伤",
+       "trigger": "连日通宵彩排之后，闭馆的排练厅里有人旧伤复发，膝盖红肿，额头烧得滚烫，冷汗湿透了衣服"
       },
       {
-       "choice": "拿东西去换，还是先发制人",
+       "choice": "陪{resident_painter.name}去谈，还是让真相自己落地",
        "exits": [
         {
-         "cost": "条件是一件作品的署名",
-         "option": "答应{video_artist.name}的条件"
+         "cost": "条件是撤下主墙那幅画",
+         "option": "让{resident_painter.name}答应{critic.name}的条件"
         },
         {
-         "cost": "你就被卷进了两个人的旧账",
-         "option": "去找{video_artist.name}的前合作者"
-        },
-        {
-         "cost": "你得亲口承认视频里的事",
-         "option": "抢先自己公开"
+         "cost": "整季的名声都要重算",
+         "option": "劝{resident_painter.name}抢先公开代笔"
         }
        ],
        "far": {
-        "consequence": "那段视频会跟着结果一起被所有人记住",
+        "consequence": "主画被撤，画家和代笔的人一起被记住",
         "due_days": 9,
-        "trigger": "艺术季的评审结果公布"
+        "trigger": "素材在业内群里传开"
        },
        "flags": [
         "timed",
@@ -2960,29 +2720,29 @@
        "id": "p_photo_leverage",
        "immediate": {
         "minutes": 20,
-        "text": "发消息的人说，二十分钟后在仓库门口见"
+        "text": "{critic.name}把一张截图推到吧台上，画面里是画室凌晨的灯"
        },
        "leverage": {
-        "basis": "{video_artist.name}的素材里有一段你不想被任何人看到的画面",
-        "holder": "video_artist",
-        "subject": "player"
+        "basis": "{critic.name}拿到的延时素材拍下了凌晨画室里有人替{resident_painter.name}代笔完成主画",
+        "holder": "critic",
+        "subject": "resident_painter"
        },
        "location_ids": [
         "night_bar",
         "storage_room"
        ],
        "near": {
-        "deadline_minutes": 1200,
-        "text": "明晚开幕之前，视频就会出现在大屏幕上"
+        "deadline_minutes": 720,
+        "text": "明早艺评见报，素材可能跟着一起登出来"
        },
-       "objective": "在视频被放出来之前拿回原始素材",
+       "objective": "在艺评见报之前，弄清{critic.name}想拿这段素材换什么",
        "source": "person",
        "start_minute": 1350,
        "tags": [
         "coercion_theme"
        ],
        "title": "一段素材",
-       "trigger": "你收到一条消息，是一段视频的截图，拍的是你"
+       "trigger": "{critic.name}拿到一段延时摄影素材，拍到凌晨画室里有人替{resident_painter.name}画完了主画"
       }
      ],
      "region": "城市旧厂区改成的独立创作社区",

@@ -103,9 +103,10 @@
  ],
  "cast_combos": [
   {
-   "chemistry": "你在彩排时扶过飞刀靶，那把刀擦着你的耳朵钉进木板；{knife_thrower.name}收刀时一句话没说，{stage_mechanic.name}当晚就把转盘拆了，叫你别往外说。",
-   "id": "k_roustabout_rig",
+   "chemistry": "最后一场开演前，{trapeze_artist.name}把你叫进后台绒布帘子深处替{trapeze_artist.ta}缠护腕、扣腰间皮带；那枚松了半丝的黄铜搭扣就贴在{trapeze_artist.ta}肋侧。",
+   "id": "k_understudy_backstage_strap",
    "identity_ids": [
+    "understudy",
     "roustabout"
    ],
    "player_positions": [
@@ -116,68 +117,38 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 1
+      "tension": 3,
+      "trust": 3
      },
-     "b": "stage_mechanic",
+     "b": "trapeze_artist",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 3
      },
-     "reason": "{stage_mechanic.name}替你看过那只耳朵",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "knife_thrower",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{knife_thrower.name}那一刀以后，再没正眼看过你",
-     "stage": "acquainted"
-    },
-    {
-     "a": "stage_mechanic",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "knife_thrower",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{knife_thrower.name}知道是谁半夜进过{stage_mechanic.name}的车厢",
-     "stage": "acquainted"
+     "reason": "这一季每晚散场，你都在窄小的篷车里替{trapeze_artist.name}揉开肩背，摇晃的车厢和煤油灯影里早贴着彼此的呼吸过了夜。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "stage_mechanic",
-    "knife_thrower"
+    "trapeze_artist"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想保住饭碗，又不想再站到那块靶子前",
-    "limit_gap": "今晚飞刀照常开演",
-    "meeting_reason": "你在团里打杂两年，这两个人都使唤过你",
-    "resource_gap": "{stage_mechanic.name}有图纸和签字，{knife_thrower.name}有十年的名声，你只有一只差点没了的耳朵"
+    "irreplaceable_goal": "换下那枚松动的搭扣，在拆帐夜前问清{trapeze_artist.name}今晚到底走还是留。",
+    "limit_gap": "开场铜铃再过半小时就要摇响，高架皮带必须在那之前扣好。",
+    "meeting_reason": "后台绒布帘拉上后，{trapeze_artist.name}坐在道具木箱上伸出手腕让你缠白胶布。",
+    "resource_gap": "{trapeze_artist.name}决定今晚最后一场谁上高架，你手里攥着备用的新搭扣和替{trapeze_artist.ta}缠紧护具的默契。"
    },
-   "tags": [
-    "bodily_harm"
-   ],
+   "tags": [],
    "tension_engine_ids": [
-    "te_knife_rigged",
-    "te_teardown"
+    "te_buckle_loose",
+    "te_last_stop"
    ]
   },
   {
-   "chemistry": "你是{trapeze_artist.name}的替补，练了两年还没上过一次梯子；{ringmaster.name}私下对你说，{trapeze_artist.name}约一满，那个位子就是你的。",
-   "id": "k_understudy_trapeze",
+   "chemistry": "你帮着搬飞刀转盘时，{stage_mechanic.name}压低声音说里面有一颗齿被人锉过；飞刀手正站在三步外用麂皮擦刀，问你们在看什么。",
+   "id": "k_roustabout_rig",
    "identity_ids": [
+    "roustabout",
     "understudy"
    ],
    "player_positions": [
@@ -188,136 +159,80 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
+      "tension": 3,
       "trust": 2
      },
-     "b": "trapeze_artist",
+     "b": "stage_mechanic",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 2
      },
-     "reason": "{trapeze_artist.name}替你缠过护手",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "ringmaster",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{ringmaster.name}许你的位子，没写在约上",
-     "stage": "acquainted"
-    },
-    {
-     "a": "trapeze_artist",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "ringmaster",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{ringmaster.name}还不知道{trapeze_artist.name}约满就走",
-     "stage": "acquainted"
+     "reason": "你每晚收场都去车厢帮{stage_mechanic.name}抬铁件，{stage_mechanic.ta}留给你暖手的热茶，递杯时总捂着你的手不放。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "trapeze_artist",
-    "ringmaster"
+    "stage_mechanic"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想上去飞，又不想踩着教你的人上去",
-    "limit_gap": "最后一场就在今晚",
-    "meeting_reason": "{trapeze_artist.name}手把手教过你，{ringmaster.name}签下了你",
-    "resource_gap": "{trapeze_artist.name}有全团最响的掌声，{ringmaster.name}有所有人的约，你只有两年的苦练"
+    "irreplaceable_goal": "在晚场开演前把锉痕的事弄清楚，不让台上的靶人见血，也不让{stage_mechanic.name}背上动机关的黑锅。",
+    "limit_gap": "晚场观众进场前，转盘必须装回大帐篷舞台中央。",
+    "meeting_reason": "飞刀手走开后，你和{stage_mechanic.name}躲进机械师车厢后门的阴影里查验转盘。",
+    "resource_gap": "{stage_mechanic.name}握着机关的检修单和放行签字，你手里正托着那块带锉痕的齿轮盘。"
    },
    "tags": [],
    "tension_engine_ids": [
-    "te_last_stop",
-    "te_old_contract"
+    "te_knife_rigged",
+    "te_teardown"
    ]
   },
   {
-   "chemistry": "你养的机械马和{puppeteer.name}的人偶都靠{stage_mechanic.name}上发条；{puppeteer.name}的人偶有一回在后台对你说：那天夜里车厢的门开过。",
-   "id": "k_tender_puppet",
+   "chemistry": "空中飞人让你今晚在下面接着，眼神像在交代后事；{ringmaster.name}走过来拍你的肩，说下一座城开始，名字印在海报最上面的是你。",
+   "id": "k_understudy_trapeze",
    "identity_ids": [
-    "beast_tender"
+    "understudy",
+    "roustabout"
    ],
    "player_positions": [
-    "equal"
+    "low"
    ],
-   "power_structure": "equal",
+   "power_structure": "npc_high",
    "relations": [
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
+      "tension": 3,
       "trust": 1
      },
-     "b": "puppeteer",
+     "b": "ringmaster",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 2
      },
-     "reason": "{puppeteer.name}的人偶只跟你说过悄悄话",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "stage_mechanic",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{stage_mechanic.name}修好过你那匹失控的机械马",
-     "stage": "acquainted"
-    },
-    {
-     "a": "puppeteer",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "stage_mechanic",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{puppeteer.name}一直想告诉{stage_mechanic.name}那一夜的事",
-     "stage": "stranger"
+     "reason": "这一季{ringmaster.name}常把你叫进账簿车厢单独喝一杯，拍你肩时手总停得太久，今天又对你笑得格外热络。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "puppeteer",
-    "stage_mechanic"
+    "ringmaster"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想弄清那一夜车厢里进了谁",
-    "limit_gap": "城里的收藏家今晚就来",
-    "meeting_reason": "你们三个常在后台等着上发条",
-    "resource_gap": "{stage_mechanic.name}有车厢和图纸，{puppeteer.name}有一具会说话的人偶，你有一圈机械兽"
+    "irreplaceable_goal": "看清{ringmaster.name}许的海报位置背后要你付什么，别被空头支票推去当替罪羊。",
+    "limit_gap": "今晚压轴场摇铃前，必须定下谁上高架、搭扣换不换。",
+    "meeting_reason": "{ringmaster.name}把你领到大帐篷后台，两人仰头望着穹顶垂下的秋千吊索。",
+    "resource_gap": "{ringmaster.name}握着下一季的主演契约与工钱账簿，你是唯一能替补上高架或在下面接人的搭档。"
    },
    "tags": [],
    "tension_engine_ids": [
-    "te_city_eyes",
-    "te_knife_rigged"
+    "te_buckle_loose",
+    "te_last_stop"
    ]
   },
   {
-   "chemistry": "当年出事那一夜，伴奏的是你的手风琴；{old_hand.name}回来以后第一个找的就是你，{trapeze_artist.name}听说了，问你那一夜吊架上发生了什么。",
-   "id": "k_accordion_old",
+   "chemistry": "{puppeteer.name}的人偶断了一根丝，拿到你给机械兽上发条的工作台边来接；人偶的嘴一开一合，说出了昨晚有人进机械师车厢的钟点。",
+   "id": "k_tender_puppet",
    "identity_ids": [
+    "beast_tender",
     "accordionist"
    ],
    "player_positions": [
@@ -328,55 +243,68 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
+      "tension": 3,
       "trust": 2
      },
-     "b": "old_hand",
+     "b": "puppeteer",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 2
      },
-     "reason": "{old_hand.name}当年走的那天，你没去送",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "trapeze_artist",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{trapeze_artist.name}上梯子前，总要等你那一个音",
-     "stage": "acquainted"
-    },
-    {
-     "a": "old_hand",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 1
-     },
-     "b": "trapeze_artist",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "当年那一夜，{old_hand.name}在吊架下面",
-     "stage": "stranger"
+     "reason": "{puppeteer.name}平时话少，却常操纵木偶往你膝上递糖块；收场后两人并排坐在篷车踏板上听夜风，肩膀挨着肩膀。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "old_hand",
+    "puppeteer"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "借着修人偶把昨晚潜入车厢的人名套出来，又不让{puppeteer.name}被那个人盯上。",
+    "limit_gap": "今晚拆帐装车前，被锉过的齿轮和丢了的锉刀必须有个交代。",
+    "meeting_reason": "你和{puppeteer.name}挤在挂满铜齿轮的工作台前修补人偶与发条兽。",
+    "resource_gap": "{puppeteer.name}夜里看见了进出车厢的人影，你管着守在车厢外的发条机械兽。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_knife_rigged",
+    "te_teardown"
+   ]
+  },
+  {
+   "chemistry": "一个离团多年的旧人站在售票亭外听你拉琴，说这首曲子是当年在团里时写的；{trapeze_artist.name}掀开后台帘子出来，叫了一声那人的旧艺名。",
+   "id": "k_accordion_old",
+   "identity_ids": [
+    "accordionist",
+    "beast_tender"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 3
+     },
+     "b": "trapeze_artist",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 3
+     },
+     "reason": "{trapeze_artist.name}每一次腾跃都踩着你的琴拍，你们早约好攒够赎约的钱，就一起在一座靠海的城下车。",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
     "trapeze_artist"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想把那一夜说清楚，又怕说清楚以后就没有今晚这一场了",
-    "limit_gap": "今晚的最后一场，还是你伴奏",
-    "meeting_reason": "你跟{old_hand.name}在一个乐队里待过五年，{trapeze_artist.name}的每一场都是你伴奏",
-    "resource_gap": "{old_hand.name}有那份旧约，{trapeze_artist.name}有最后一场，你有一架记得那一夜节拍的手风琴"
+    "irreplaceable_goal": "弄清那个旧人当年被赶出团的真相，帮{trapeze_artist.name}看清那份旧约里的坑。",
+    "limit_gap": "团主巡查售票亭前，必须决定把那个旧人领进后台还是劝走。",
+    "meeting_reason": "黄昏开演前，你和{trapeze_artist.name}在售票亭侧后方的篷车阴影里低声商量。",
+    "resource_gap": "旧人手里攥着揭穿团主底细的旧约原件，{trapeze_artist.name}正犹豫今晚拆帐后去留，你握着开演信号曲与后台通行的便利。"
    },
    "tags": [],
    "tension_engine_ids": [
@@ -385,79 +313,10 @@
    ]
   },
   {
-   "chemistry": "马戏团欠着你的钱，第七夜之前还不上就要扣车；{ringmaster.name}说最后一场卖满就能还清，{trapeze_artist.name}私下来找过你，问你认不认得城里那家剧院的老板。",
+   "chemistry": "团主欠你一笔场地费，想拿加演一场抵账；{trapeze_artist.name}私下找你，说要是你肯替{trapeze_artist.ta}赎出契约，{trapeze_artist.ta}就留在这座城。",
    "id": "k_patron_debt",
    "identity_ids": [
-    "local_patron"
-   ],
-   "player_positions": [
-    "high"
-   ],
-   "power_structure": "player_high",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "ringmaster",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{ringmaster.name}请你坐过一回包厢",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "trapeze_artist",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "{trapeze_artist.name}落地谢幕时，往你的包厢看了一眼",
-     "stage": "stranger"
-    },
-    {
-     "a": "ringmaster",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "trapeze_artist",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{trapeze_artist.name}是{ringmaster.name}的摇钱树",
-     "stage": "acquainted"
-    }
-   ],
-   "slots": [
-    "ringmaster",
-    "trapeze_artist"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "你想把钱收回来，也想知道自己到底为什么借出去",
-    "limit_gap": "第七夜之前要还钱",
-    "meeting_reason": "马戏团进城那天，两个人都到你的商行来过",
-    "resource_gap": "你有那笔借款和城里的人脉，{ringmaster.name}有整个马戏团，{trapeze_artist.name}有一张约和一身功夫"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "te_teardown",
-    "te_last_stop"
-   ]
-  },
-  {
-   "chemistry": "你是城里派来查机关的督察，{stage_mechanic.name}的放行单上签名一笔不差；{ringmaster.name}请你喝了一杯，说第七夜之前一定要放行。",
-   "id": "k_inspector_sign",
-   "identity_ids": [
+    "local_patron",
     "safety_inspector"
    ],
    "player_positions": [
@@ -468,68 +327,83 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 1
+      "tension": 3,
+      "trust": 2
      },
-     "b": "stage_mechanic",
+     "b": "trapeze_artist",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 2
      },
-     "reason": "{stage_mechanic.name}给你看图纸时，一页也没藏",
-     "stage": "stranger"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 0
-     },
-     "b": "ringmaster",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 0
-     },
-     "reason": "{ringmaster.name}请你喝的那一杯，你没喝完",
-     "stage": "acquainted"
-    },
-    {
-     "a": "stage_mechanic",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 0
-     },
-     "b": "ringmaster",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 0
-     },
-     "reason": "{ringmaster.name}替{stage_mechanic.name}压下过一次事故",
-     "stage": "acquainted"
+     "reason": "这六天你每晚都坐第一排正中看{trapeze_artist.name}谢幕，昨晚送进后台的花束里，夹着你的私人名帖。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "stage_mechanic",
-    "ringmaster"
+    "trapeze_artist"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想把事故挡在开演之前，又知道停演会砸了一团人的饭碗",
-    "limit_gap": "第七夜之前要给结论",
-    "meeting_reason": "你来查机关这几天，两个人都陪你转过帐篷",
-    "resource_gap": "你有督察的签字权，{stage_mechanic.name}有图纸和放行单，{ringmaster.name}有一个等着卖满的最后一场"
+    "irreplaceable_goal": "用你手里的债权压住团主，把{trapeze_artist.name}的旧约干干净净赎出来。",
+    "limit_gap": "第七夜子时拆帐装车前，场地账目与赎约契书必须当场签字。",
+    "meeting_reason": "{trapeze_artist.name}在后台账桌前等你，团主刚被人叫去了售票亭。",
+    "resource_gap": "你握着马戏团离城放行所需的场地结清凭证，团主攥着团员的契约，{trapeze_artist.name}押上了自己今后的去留。"
    },
-   "tags": [
-    "bodily_harm"
-   ],
+   "tags": [],
    "tension_engine_ids": [
-    "te_knife_rigged",
-    "te_city_eyes"
+    "te_last_stop",
+    "te_teardown"
    ]
   },
   {
-   "chemistry": "{knife_thrower.name}说昨天那一刀偏了是自己的手；{puppeteer.name}的人偶却在后台说，那天夜里有人进过机械师的车厢。",
+   "chemistry": "你来复查第七夜的机关，团主塞给你一封没有署名的信封让你直接画押；{stage_mechanic.name}却指着飞刀转盘后面的一道锉痕让你看。",
+   "id": "k_inspector_sign",
+   "identity_ids": [
+    "safety_inspector",
+    "local_patron"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "stage_mechanic",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 2
+     },
+     "reason": "入城这几天每次复查完，你都留在{stage_mechanic.name}的车厢里对图纸到深夜，灯芯剪了三回也没人说走。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "stage_mechanic"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "扣下有问题的转盘并护住举报的{stage_mechanic.name}，不让团主拿假事故害人。",
+    "limit_gap": "晚场开演铃响前，复查单上必须签下准演或停演的结论。",
+    "meeting_reason": "你和{stage_mechanic.name}站在大帐篷舞台中央的飞刀转盘前当场核验。",
+    "resource_gap": "你握着查封机关或准演签字的督察印章，{stage_mechanic.name}握着转盘被蓄意破坏的物证。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "te_city_eyes",
+    "te_knife_rigged"
+   ]
+  },
+  {
+   "chemistry": "篝火边，操偶师让人偶演了一出“半夜有人摸进车厢”的哑剧；{knife_thrower.name}一刀钉在人偶脚边的木箱上，回头让你评评理。",
    "id": "k_knife_and_puppet",
-   "identity_ids": [],
+   "identity_ids": [
+    "roustabout",
+    "accordionist",
+    "safety_inspector"
+   ],
    "player_positions": [
     "low",
     "equal",
@@ -540,66 +414,35 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 1
+      "tension": 2,
+      "trust": 3
      },
      "b": "knife_thrower",
      "b_to_a": {
-      "tension": 1,
-      "trust": 1
-     },
-     "reason": "{knife_thrower.name}教过你怎么握刀",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "puppeteer",
-     "b_to_a": {
       "tension": 2,
-      "trust": 1
+      "trust": 3
      },
-     "reason": "{puppeteer.name}的人偶冲你鞠过一躬",
-     "stage": "acquainted"
-    },
-    {
-     "a": "knife_thrower",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 1
-     },
-     "b": "puppeteer",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 1
-     },
-     "reason": "两个人那一夜都在后台",
-     "stage": "acquainted"
+     "reason": "散场后你们常在篝火边擦家伙什，入秋那几夜两人干脆挤进{knife_thrower.name}的篷车，分一条毯子听雨打篷顶。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "knife_thrower",
-    "puppeteer"
+    "knife_thrower"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想在开演前弄清那半寸到底是谁的错",
-    "limit_gap": "离飞刀上场只剩几个钟头",
-    "meeting_reason": "你在后台和帐篷后面都碰见过这两个人",
-    "resource_gap": "{knife_thrower.name}有一排刀，{puppeteer.name}有一具会说话的人偶，你是两个人都肯说一句实话的人"
+    "irreplaceable_goal": "让{knife_thrower.name}把昨晚车厢外看见的实话说给你一个人听，揪出背后指使锉齿轮的人。",
+    "limit_gap": "篝火熄灭、晚场开演前，{knife_thrower.name}心里那根弦必须松下来。",
+    "meeting_reason": "人散后，你和{knife_thrower.name}留在篝火空地边，对着那只钉着刀的木箱。",
+    "resource_gap": "{knife_thrower.name}知道昨晚真正动手的人是谁，却被人偶点破了自己的行踪；你握着把这件事接上或压下的分寸。"
    },
-   "tags": [
-    "bodily_harm"
-   ],
+   "tags": [],
    "tension_engine_ids": [
     "te_knife_rigged",
-    "te_city_eyes"
+    "te_teardown"
    ]
   },
   {
-   "chemistry": "{old_hand.name}带回来的那份旧约，见证人一栏签的是{stage_mechanic.name}；{ringmaster.name}说那份约早就作废了。",
+   "chemistry": "{old_hand.name}把当年的旧约摊在箱子上，{stage_mechanic.name}把带锉痕的齿轮放在旧约旁边，{ringmaster.name}看了看你，问你要站哪一边。",
    "id": "k_three_contracts",
    "identity_ids": [],
    "player_positions": [
@@ -612,44 +455,44 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
+      "tension": 3,
       "trust": 0
      },
      "b": "ringmaster",
      "b_to_a": {
-      "tension": 1,
+      "tension": 2,
       "trust": 1
      },
-     "reason": "{ringmaster.name}在篝火边给你倒过酒",
-     "stage": "acquainted"
+     "reason": "你清楚{ringmaster.name}每到拆帐夜就会找借口扣工钱，今晚早做了准备。",
+     "stage": "testing"
     },
     {
      "a": "player",
      "a_to_b": {
       "tension": 1,
-      "trust": 1
+      "trust": 2
      },
      "b": "old_hand",
      "b_to_a": {
       "tension": 1,
-      "trust": 1
+      "trust": 2
      },
-     "reason": "{old_hand.name}在售票亭前问过你团里还有谁",
-     "stage": "stranger"
+     "reason": "开演前你在售票亭外听{old_hand.name}讲过当年离团的经过，还拿不准该信几分。",
+     "stage": "testing"
     },
     {
      "a": "player",
      "a_to_b": {
       "tension": 1,
-      "trust": 1
+      "trust": 3
      },
      "b": "stage_mechanic",
      "b_to_a": {
       "tension": 1,
-      "trust": 1
+      "trust": 3
      },
-     "reason": "{stage_mechanic.name}请你递过扳手",
-     "stage": "acquainted"
+     "reason": "你和{stage_mechanic.name}在团里共事日久，今天那颗坏齿轮就是你们一起拆下来的。",
+     "stage": "familiar"
     },
     {
      "a": "ringmaster",
@@ -662,36 +505,36 @@
       "tension": 3,
       "trust": 0
      },
-     "reason": "当年是{ringmaster.name}让{old_hand.name}走的",
-     "stage": "acquainted"
+     "reason": "当年{ringmaster.name}把{old_hand.name}赶出团、吞了工钱，没想到对方留着旧约原件找上门来。",
+     "stage": "testing"
     },
     {
      "a": "ringmaster",
      "a_to_b": {
-      "tension": 2,
-      "trust": 0
+      "tension": 3,
+      "trust": 1
      },
      "b": "stage_mechanic",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 3,
+      "trust": 0
      },
-     "reason": "{stage_mechanic.name}欠着{ringmaster.name}一回",
-     "stage": "acquainted"
+     "reason": "{ringmaster.name}本想让{stage_mechanic.name}替飞刀事故背锅，没料到对方直接把齿轮拆上了桌。",
+     "stage": "testing"
     },
     {
      "a": "old_hand",
      "a_to_b": {
-      "tension": 2,
-      "trust": 1
+      "tension": 1,
+      "trust": 2
      },
      "b": "stage_mechanic",
      "b_to_a": {
-      "tension": 2,
-      "trust": 1
+      "tension": 1,
+      "trust": 2
      },
-     "reason": "{stage_mechanic.name}当年在那份约上签字时，手在抖",
-     "stage": "acquainted"
+     "reason": "几年前两人在同一个车厢里修过机关，{stage_mechanic.name}知道{old_hand.name}当年不是自己逃跑的。",
+     "stage": "familiar"
     }
    ],
    "slots": [
@@ -700,15 +543,15 @@
     "stage_mechanic"
    ],
    "stakes": {
-    "irreplaceable_goal": "你想在拆帐之前，让那份约有个说法",
-    "limit_gap": "第七夜就要拆帐",
-    "meeting_reason": "三个人你都在篝火边碰见过",
-    "resource_gap": "{ringmaster.name}有所有的约，{old_hand.name}有那一份，{stage_mechanic.name}有见证人的签名，你是唯一一个跟那份约没关系的人"
+    "irreplaceable_goal": "逼{ringmaster.name}结清这一季的工钱并销毁那份旧约，护住团里要走和要留的人。",
+    "limit_gap": "第七夜拆帐结薪前，这本烂账必须在篷车营地算清。",
+    "meeting_reason": "四个人围在机械师车厢外的木箱旁，箱面上并排摆着旧约和坏齿轮。",
+    "resource_gap": "{old_hand.name}握着揭穿{ringmaster.name}赖账赶人的旧约，{stage_mechanic.name}握着转盘被做手脚的铁证，{ringmaster.name}攥着全团人的工钱，你握着决定两边胜负的证词。"
    },
    "tags": [],
    "tension_engine_ids": [
     "te_old_contract",
-    "te_teardown"
+    "te_knife_rigged"
    ]
   }
  ],
@@ -809,7 +652,7 @@
      "车厢里两个人对着一盏灯拆同一个机关"
     ],
     "preconditions": [
-     "机关还没过完"
+     "机关还没过完，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -932,7 +775,7 @@
      "从梯子上下来，落进一个人怀里"
     ],
     "preconditions": [
-     "还没上梯子"
+     "还没上梯子，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1055,7 +898,7 @@
      "散场后空荡荡的大帐篷里只剩两个人"
     ],
     "preconditions": [
-     "怀表还没合上"
+     "怀表还没合上，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1178,7 +1021,7 @@
      "两个人隔着一块木板对视"
     ],
     "preconditions": [
-     "刀还没磨完"
+     "刀还没磨完，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1301,7 +1144,7 @@
      "两个人坐在空看台上看吊架"
     ],
     "preconditions": [
-     "旧约还在怀里"
+     "旧约还在怀里，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      2,
@@ -1422,7 +1265,7 @@
      "两个人在后台给人偶上发条，手碰在一起"
     ],
     "preconditions": [
-     "人偶还在台上"
+     "人偶还在台上，双方都清醒、出于自愿"
     ],
     "self_control_range": [
      3,
@@ -1582,6 +1425,40 @@
    "start_minute": 1320,
    "tags": [],
    "title": "在篝火边坐到散"
+  },
+  {
+   "beats": [
+    "午后的风吹过篷车营地晾着的彩旗，麂皮布蘸了一点擦铜膏在黄铜扣面上慢慢打圈",
+    "擦亮的金属面映出并排坐着的两个人影，谁也没急着催晚场的排练",
+    "把擦好的搭扣与皮带一圈圈收进绒布袋里，指尖还留着淡淡的松节油味"
+   ],
+   "duration_minutes": 40,
+   "hook_ids": [],
+   "id": "a_polish_knives",
+   "location_ids": [
+    "caravan_row",
+    "backstage"
+   ],
+   "start_minute": 840,
+   "tags": [],
+   "title": "坐在篷车木阶上擦亮黄铜搭扣"
+  },
+  {
+   "beats": [
+    "观众席的木长椅空无一人，只有高处风口漏进来的几束斜阳照在铺着木屑的圆场中央",
+    "手风琴拉出一段放慢了拍子的旧旋律，两个人在木屑地上并肩走过谢幕的步点",
+    "最后一个音符落下时，谁也没有立刻松开搭在对方腕上的手"
+   ],
+   "duration_minutes": 45,
+   "hook_ids": [],
+   "id": "a_empty_ring_practice",
+   "location_ids": [
+    "big_top",
+    "backstage"
+   ],
+   "start_minute": 900,
+   "tags": [],
+   "title": "在空荡荡的大帐篷里核对谢幕走位"
   }
  ],
  "default_npc_gender_mix": {
@@ -1615,7 +1492,7 @@
     "backstage"
    ],
    "slot": "stage_mechanic",
-   "text": "{npc.name}把一把扳手塞到你手里：“帮我扶着，别松。”"
+   "text": "{npc.name}把一盏马灯塞到你手里：“帮我照着，别晃。”"
   },
   {
    "id": "h_gear_palm",
@@ -1796,7 +1673,7 @@
     "p_buckle_rumor": "飞人的篷车窗帘拉得严严实实。",
     "p_teardown": "好几辆篷车已经开始往车顶上捆行李。"
    },
-   "privacy": "semi",
+   "privacy": "private",
    "tags": [],
    "visibility": "团里的人抬头不见低头见，谁进了谁的篷车，第二天全团都知道",
    "witnesses": [
@@ -1933,7 +1810,7 @@
   ],
   "order": "given_first"
  },
- "notes": "第二批世界（用户 2026-10-03 素材库的改写，见 content-src/concepts/batch2-concepts.md 第 19 个）。机关事故打 bodily_harm。西式名，名在前。性别按会话偏好生成（D15）。",
+ "notes": "第二批世界（用户 2026-10-03 素材库的改写，见 content-src/concepts/batch2-concepts.md 第 19 个）。机关事故打 bodily_harm。西式名，名在前。性别按会话偏好生成（D15）。\n2026-10-18 按写作规则 v2 改造：按 Gemini 第四批方案：组合改成 8 组单人加 1 组团主、旧人、机械师的三方局；多转的半圈改成机械师握着团主让人锉齿的把柄，旧约改成旧人握着团主的原件；加擦搭扣、空帐篷走位两项日常；篷车营地改为 private，递扳手的钩子改成递马灯。",
  "player_identities": [
   {
    "age_range": [
@@ -2113,48 +1990,53 @@
  "premise": "马戏团是一个家，也是一座笼子；第七夜拆帐篷的时候，谁跟着走，谁留下？",
  "pressures": [
   {
-   "choice": "拆开查，还是照常开演",
+   "choice": "当众拆开查验，还是拿锉痕的来历去逼团主换掉",
    "exits": [
     {
-     "cost": "今晚的飞刀就开不了场",
-     "option": "拆开机关查"
+     "cost": "晚场飞刀延误，{ringmaster.name}会借机扣全组工钱",
+     "option": "帮{stage_mechanic.name}当场拆换齿轮"
     },
     {
-     "cost": "那半圈说不定还会再多一次",
-     "option": "照常开演"
+     "cost": "和{ringmaster.name}撕破脸，拆帐后很难再留团",
+     "option": "同{stage_mechanic.name}去后台账桌堵住{ringmaster.name}"
     }
    ],
    "far": {
-    "consequence": "靶上的人会流血，签字的机械师要担责",
+    "consequence": "靶上的人当众见血，签字的{stage_mechanic.name}替人背下刑责",
     "due_days": 1,
     "trigger": "机关带病上场"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [],
    "id": "p_knife_rig",
    "immediate": {
     "minutes": 5,
-    "text": "刀柄还在木板上嗡嗡地颤"
+    "text": "刀柄还在木板上嗡嗡地颤，飞刀手冷冷看了一眼场边的{ringmaster.name}"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{stage_mechanic.name}认得锉痕出自团里的细锉刀，也查到是{ringmaster.name}让人锉的、想用流血噱头卖票；在督察面前说出来，马戏团当场被查封",
+    "holder": "stage_mechanic",
+    "subject": "ringmaster"
+   },
    "location_ids": [
     "big_top",
     "workshop_wagon"
    ],
    "near": {
     "deadline_minutes": 240,
-    "text": "今晚开演"
+    "text": "今晚晚场开演"
    },
-   "objective": "在今晚开演之前，决定这台机关上不上场",
+   "objective": "开演前决定这台被动过手脚的机关怎么处置",
    "source": "accident",
    "start_minute": 900,
    "tags": [
     "bodily_harm"
    ],
    "title": "多转的半圈",
-   "trigger": "飞刀机关的转盘在彩排时多转了半圈，一把刀擦着靶上那人的耳朵钉进了木板"
+   "trigger": "飞刀转盘在彩排时多转了半圈，一把刀擦着靶上那人的耳廓钉进木板，齿面露出一道新锉痕"
   },
   {
    "choice": "报上去，还是替人补签",
@@ -2241,46 +2123,51 @@
    "trigger": "团主宣布：第七夜拆帐，今晚之前要定下谁跟着走、谁留下，留下的人这一季的工钱不结"
   },
   {
-   "choice": "领到后面去说，还是去叫团主",
+   "choice": "领{old_hand.name}进后台压住团主，还是去给团主报信",
    "exits": [
     {
-     "cost": "团主会觉得你多事",
-     "option": "把那人领到后面去说"
+     "cost": "团主会记住是你放债主进来的",
+     "option": "领{old_hand.name}进后台，拿旧约逼团主结清工钱"
     },
     {
-     "cost": "那人会觉得你站在团主那边",
-     "option": "去叫团主"
+     "cost": "{old_hand.name}会怀疑你想拿旧约自己做交易",
+     "option": "先稳住{old_hand.name}，私下抄下条款"
     }
    ],
    "far": {
-    "consequence": "整个团都会知道那份旧约里写着什么",
+    "consequence": "全团都知道{ringmaster.name}赖账，第七夜拆帐时队伍散架",
     "due_days": 3,
-    "trigger": "闹起来"
+    "trigger": "旧约当众摊开"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [],
    "id": "p_old_hand",
    "immediate": {
     "minutes": 5,
-    "text": "那人把旧约高高举起来，团主的签名在灯下看得清清楚楚"
+    "text": "{old_hand.name}把泛黄的旧约举在煤气灯下"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{old_hand.name}留着{ringmaster.name}伪造伤亡账目、侵吞投资款的旧约原件，交到督察或投资商手上，{ringmaster.name}今晚出不了城",
+    "holder": "old_hand",
+    "subject": "ringmaster"
+   },
    "location_ids": [
     "ticket_booth",
     "bonfire"
    ],
    "near": {
     "deadline_minutes": 30,
-    "text": "团主出来"
+    "text": "{ringmaster.name}带人出来清场"
    },
-   "objective": "在闹起来之前，决定站在哪一边",
+   "objective": "在售票亭前闹大之前，决定怎么处理这份旧约",
    "source": "person",
    "start_minute": 1140,
    "tags": [],
    "title": "旧约",
-   "trigger": "一个几年前离团的人回来了，手里攥着一份团主签过字的旧约，说团主欠的不只是钱"
+   "trigger": "{old_hand.name}回来了，攥着{ringmaster.name}亲笔签字的旧约原件，记着当年吞没抚恤、强赶团员的底账"
   },
   {
    "choice": "去查，还是去告诉飞人",

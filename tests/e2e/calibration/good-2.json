@@ -12,7 +12,7 @@
  "skill": {
   "skill_root": null,
   "skill_version": null,
-  "content_version": "2026.10.9"
+  "content_version": "2026.10.10"
  },
  "turns": [
   {
@@ -510,7 +510,7 @@
        "role": "馄饨担子"
       },
       {
-       "adult_context": "行会雇的账房先生",
+       "adult_context": "行会雇的账房主事",
        "age_range": [
         40,
         66
@@ -540,13 +540,13 @@
         "teahouse"
        ],
        "name": null,
-       "role": "说书先生"
+       "role": "说书艺人"
       }
      ],
      "cast_combos": [
       {
-       "chemistry": "{chief_typesetter.name}管着排字房，你的每一张校样都要从{chief_typesetter.ta}手里过；{column_writer.name}的稿子总是最后一个到，到了就要你陪着校到上机。",
-       "id": "combo_press_night",
+       "chemistry": "付印落锁后的排字房只剩油墨与铅字余温，{chief_typesetter.name}在字架间拦住你，把未拆的活字版压在掌下。",
+       "id": "combo_typesetter_solo",
        "identity_ids": [
         "proofreader"
        ],
@@ -558,206 +558,81 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 4,
+          "trust": 3
          },
          "b": "chief_typesetter",
          "b_to_a": {
-          "tension": 1,
-          "trust": 0
+          "tension": 4,
+          "trust": 4
          },
-         "reason": "{chief_typesetter.name}骂过你三回字迹潦草，却从没扣过你的钱",
-         "stage": "acquainted"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 0
-         },
-         "b": "column_writer",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "你校了{column_writer.name}两年的稿子，还没见过真人",
-         "stage": "stranger"
-        },
-        {
-         "a": "chief_typesetter",
-         "a_to_b": {
-          "tension": 2,
-          "trust": 0
-         },
-         "b": "column_writer",
-         "b_to_a": {
-          "tension": 2,
-          "trust": 1
-         },
-         "reason": "拖稿拖了三年，两个人在排字房吵过不止一回",
-         "stage": "familiar"
+         "reason": "上月巡捕夜搜报馆，门外靴声逼近时{chief_typesetter.name}把你拉进字架死角捂住呼吸，滚烫的汗水与急促喘息全烙在彼此颈窝里",
+         "stage": "intimate"
         }
        ],
        "slots": [
-        "chief_typesetter",
-        "column_writer"
+        "chief_typesetter"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想在年底前升成编辑，在那之前不能出一个错字",
-        "limit_gap": "你错一个字扣半天工钱，{column_writer.name}拖稿却没人敢说",
-        "meeting_reason": "三个人每晚都被同一个截稿时刻拴在排字房",
-        "resource_gap": "{chief_typesetter.name}握着所有铅字柜的钥匙，你只有一支红笔"
+        "irreplaceable_goal": "你想替那篇压轴稿保住版面，又想在收工后留住{chief_typesetter.name}独处片刻",
+        "limit_gap": "十一点截稿钟响之前必须定下最后一版铅字",
+        "meeting_reason": "你拿着刚改过的校样进排字房核对，{chief_typesetter.name}正独自守在字盘前",
+        "resource_gap": "{chief_typesetter.name}掌管整间排字房的字架与大样钥匙，你只是夜班核字的一名校对"
        },
-       "tags": [
-        "workplace_power"
-       ],
+       "tags": [],
        "tension_engine_ids": [
         "te_deadline_hour",
         "te_shared_byline"
        ]
       },
       {
-       "chemistry": "{pawn_clerk.name}的柜上押着你最要紧的一样东西，当期只剩七天；{teahouse_keeper.name}知道这件事，也知道你还欠着茶楼的挂账。",
-       "id": "combo_pawned_ticket",
-       "identity_ids": [],
+       "chemistry": "裁缝铺落下门板后，{tailor_master.name}将软尺绕过你的腰侧，屏风后的炭盆把人影烘得贴在一起。",
+       "id": "combo_tailor_solo",
+       "identity_ids": [
+        "seamstress_hand"
+       ],
        "player_positions": [
-        "low",
-        "equal"
+        "low"
        ],
        "power_structure": "npc_high",
        "relations": [
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 0
-         },
-         "b": "pawn_clerk",
-         "b_to_a": {
-          "tension": 0,
-          "trust": 1
-         },
-         "reason": "你在柜上当过三回东西，{pawn_clerk.name}每回都多给了两枚铜元",
-         "stage": "acquainted"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 0,
-          "trust": 1
-         },
-         "b": "teahouse_keeper",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "你在茶楼挂了两个月的账，{teahouse_keeper.name}一次也没催过",
-         "stage": "familiar"
-        },
-        {
-         "a": "pawn_clerk",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "teahouse_keeper",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "两家后门对着后门，打烊后常凑在一起对账",
-         "stage": "familiar"
-        }
-       ],
-       "slots": [
-        "pawn_clerk",
-        "teahouse_keeper"
-       ],
-       "stakes": {
-        "irreplaceable_goal": "你想在当期到之前把东西赎回来，那是家里留下的唯一一件",
-        "limit_gap": "你凑不出赎当的钱，{pawn_clerk.name}不能违了东家的规矩",
-        "meeting_reason": "你每晚去茶楼找活计，当铺的后门就对着茶楼的后门",
-        "resource_gap": "{pawn_clerk.name}握着当票的存根，你只有一张当票"
-       },
-       "tags": [],
-       "tension_engine_ids": [
-        "te_pledge_ticket"
-       ]
-      },
-      {
-       "chemistry": "{tailor_master.name}的裁缝铺和{studio_photographer.name}的照相馆共用一面墙，一边橱窗挂新式样，一边橱窗挂新人照；你替报馆来写这条街，两边都想上报。",
-       "id": "combo_rival_windows",
-       "identity_ids": [],
-       "player_positions": [
-        "equal"
-       ],
-       "power_structure": "equal",
-       "relations": [
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 0
+          "tension": 3,
+          "trust": 4
          },
          "b": "tailor_master",
          "b_to_a": {
-          "tension": 1,
-          "trust": 0
+          "tension": 4,
+          "trust": 4
          },
-         "reason": "你头一回上门采访，{tailor_master.name}先量了你的肩宽",
-         "stage": "stranger"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "studio_photographer",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{studio_photographer.name}替报馆拍过你写的两条新闻",
-         "stage": "acquainted"
-        },
-        {
-         "a": "tailor_master",
-         "a_to_b": {
-          "tension": 2,
-          "trust": 0
-         },
-         "b": "studio_photographer",
-         "b_to_a": {
-          "tension": 2,
-          "trust": 0
-         },
-         "reason": "隔着一面墙做了五年邻居，为了橱窗的灯吵过无数回",
-         "stage": "familiar"
+         "reason": "去年除夕封剪刀那晚，{tailor_master.name}把祖传的铜顶针套在你无名指上，低声说“往后这间内室的钥匙只归你管”",
+         "stage": "committed"
         }
        ],
        "slots": [
-        "tailor_master",
-        "studio_photographer"
+        "tailor_master"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想让这期专版署上你的真名",
-        "limit_gap": "你的稿子要主笔点头才登，两家都等不起节前的生意",
-        "meeting_reason": "报馆要出一期手艺街的专版",
-        "resource_gap": "{tailor_master.name}有半条街的主顾，{studio_photographer.name}有全城最好的相机，你有一块版面"
+        "irreplaceable_goal": "你想帮{tailor_master.name}守住老铺字号，也想名正言顺留在内室过夜",
+        "limit_gap": "明早主顾登门取衣前必须改完这件新样",
+        "meeting_reason": "打烊后众人散尽，{tailor_master.name}把你单独叫进内室试穿新裁的里衣",
+        "resource_gap": "{tailor_master.name}执掌铺子字号与内室账册，你是在案板前赶活的缝工"
        },
        "tags": [],
        "tension_engine_ids": [
         "te_facing_shops",
-        "te_owed_ad"
+        "te_pledge_ticket"
        ]
       },
       {
-       "chemistry": "{column_writer.name}每天下午坐在{teahouse_keeper.name}的二楼写连载，写的全是茶客的闲话；你也是那张桌子的常客，最近却在连载里读到了自己。",
-       "id": "combo_teahouse_serial",
-       "identity_ids": [],
+       "chemistry": "打烊后的编辑部只亮着一盏绿罩台灯，{column_writer.name}把未署名的手稿推到你手边，笔尖在稿纸边缘顿住。",
+       "id": "combo_writer_solo",
+       "identity_ids": [
+        "reporter"
+       ],
        "player_positions": [
-        "low",
         "equal"
        ],
        "power_structure": "equal",
@@ -765,65 +640,77 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 0,
-          "trust": 1
-         },
-         "b": "teahouse_keeper",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{teahouse_keeper.name}记得你的茶要泡到第二道",
-         "stage": "acquainted"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 4,
+          "trust": 3
          },
          "b": "column_writer",
          "b_to_a": {
-          "tension": 2,
-          "trust": 0
+          "tension": 4,
+          "trust": 3
          },
-         "reason": "你们拼过几回桌，{column_writer.name}总在偷看你",
-         "stage": "acquainted"
-        },
-        {
-         "a": "teahouse_keeper",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 2
-         },
-         "b": "column_writer",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{column_writer.name}的茶钱挂了一年，拿连载的剪报抵账",
-         "stage": "familiar"
+         "reason": "{column_writer.name}在最新一回连载原稿的页边用红墨水批了一行小字：“第七段写的那个人，抬头看看就知道是谁”",
+         "stage": "flirting"
         }
        ],
        "slots": [
-        "teahouse_keeper",
         "column_writer"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想弄清连载里那个和你一模一样的人物，是谁的主意",
-        "limit_gap": "{column_writer.name}不能写真名，{teahouse_keeper.name}不能得罪茶客，你不能再欠茶钱",
-        "meeting_reason": "二楼靠窗那张桌子只有三个座位",
-        "resource_gap": "{teahouse_keeper.name}知道全街的事，{column_writer.name}会把它们写成故事，你只知道自己的事"
+        "irreplaceable_goal": "你想和{column_writer.name}把这篇连载安稳写完，再带对方回阁楼喝杯热黄酒",
+        "limit_gap": "今晚十一点前要把合写的下一回送进排字房",
+        "meeting_reason": "你们共用一个笔名连载专栏，每逢截稿夜都要在编辑部对坐改稿",
+        "resource_gap": "你手里有跑街访来的实情，{column_writer.name}笔下有轰动全城的连载专栏"
        },
        "tags": [],
        "tension_engine_ids": [
         "te_shared_byline",
-        "te_two_faces"
+        "te_curfew_bridge"
        ]
       },
       {
-       "chemistry": "你家的字号在行会里说话算数；{tailor_master.name}要你在评理会上替{tailor_master.ta}作证，{pawn_clerk.name}想借你家的招牌开一间古玩铺。",
-       "id": "combo_guild_vote",
+       "chemistry": "暗房红灯映着显影盆里的水波，{studio_photographer.name}站在你身后按住显影夹，呼吸落在你颈后。",
+       "id": "combo_photographer_solo",
+       "identity_ids": [
+        "ad_agent"
+       ],
+       "player_positions": [
+        "equal"
+       ],
+       "power_structure": "equal",
+       "relations": [
+        {
+         "a": "player",
+         "a_to_b": {
+          "tension": 4,
+          "trust": 3
+         },
+         "b": "studio_photographer",
+         "b_to_a": {
+          "tension": 4,
+          "trust": 4
+         },
+         "reason": "暗房铁盒最底层锁着一张从未洗印的玻璃干板，那是上回戒严封街之夜{studio_photographer.name}拉你在红灯下贴身拍下的私照",
+         "stage": "intimate"
+        }
+       ],
+       "slots": [
+        "studio_photographer"
+       ],
+       "stakes": {
+        "irreplaceable_goal": "你想把那张惹祸的底片留在暗房里，顺便和{studio_photographer.name}重温红灯下的旧梦",
+        "limit_gap": "显影液里的相纸再过一刻钟就要定影晾干",
+        "meeting_reason": "你趁夜来暗房取下期画刊的样片，{studio_photographer.name}反手插上了暗房门闩",
+        "resource_gap": "你掌握报馆画刊的版面招徕，{studio_photographer.name}握着整条街主顾的底片"
+       },
+       "tags": [],
+       "tension_engine_ids": [
+        "te_one_negative",
+        "te_curfew_bridge"
+       ]
+      },
+      {
+       "chemistry": "望江茶楼散客后的二楼雅座，{teahouse_keeper.name}掩上雕花木窗，亲手替你续上一盏温热的雨前茶。",
+       "id": "combo_teahouse_solo",
        "identity_ids": [
         "shop_heir"
        ],
@@ -835,65 +722,36 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 0,
-          "trust": 1
+          "tension": 3,
+          "trust": 3
          },
-         "b": "tailor_master",
+         "b": "teahouse_keeper",
          "b_to_a": {
-          "tension": 1,
-          "trust": 2
+          "tension": 4,
+          "trust": 3
          },
-         "reason": "{tailor_master.name}给你家做了十年衣裳，从前只跟你父亲说话",
-         "stage": "acquainted"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 0
-         },
-         "b": "pawn_clerk",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{pawn_clerk.name}托了三个人才约到你喝一回茶",
-         "stage": "stranger"
-        },
-        {
-         "a": "tailor_master",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 0
-         },
-         "b": "pawn_clerk",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 0
-         },
-         "reason": "{tailor_master.name}当过一台缝纫机，是{pawn_clerk.name}经的手",
-         "stage": "acquainted"
+         "reason": "每回你去望江茶楼，{teahouse_keeper.name}端来的盖碗底下都压着一张折成方胜的洒金笺，写着打烊后留门的暗记",
+         "stage": "flirting"
         }
        ],
        "slots": [
-        "tailor_master",
-        "pawn_clerk"
+        "teahouse_keeper"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想在父亲病好之前，证明自己撑得起这个字号",
-        "limit_gap": "你每做一个决定都要瞒着族里的长辈，{tailor_master.name}的铺面租期只剩半年",
-        "meeting_reason": "初一的评理会前，两个人先后登门拜访",
-        "resource_gap": "你有行会的一票和整条街都认的印章，两个人都没有"
+        "irreplaceable_goal": "你想替{teahouse_keeper.name}免掉这季的旧欠，让二楼雅座永远只为你留门",
+        "limit_gap": "初一评理会之前要定下茶楼明年的租约",
+        "meeting_reason": "夜场说书散座后，你独自留在二楼雅座等{teahouse_keeper.name}上来对账",
+        "resource_gap": "你是手艺街老字号的少东家，{teahouse_keeper.name}的茶楼还欠着你家半年的铺租与茶引"
        },
        "tags": [],
        "tension_engine_ids": [
-        "te_facing_shops",
-        "te_pledge_ticket"
+        "te_owed_ad",
+        "te_facing_shops"
        ]
       },
       {
-       "chemistry": "{column_writer.name}压着一篇没署名的稿子，{studio_photographer.name}收着一张配得上它的相片，两样东西见不见报，只等你一句话。",
-       "id": "combo_editor_desk",
+       "chemistry": "当铺上板后的高柜台内侧，{pawn_clerk.name}拨开算盘珠子，把一张未入公账的信物轻轻推回你掌心。",
+       "id": "combo_pawn_solo",
        "identity_ids": [
         "sub_editor"
        ],
@@ -905,68 +763,41 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 3,
+          "trust": 3
          },
-         "b": "column_writer",
+         "b": "pawn_clerk",
          "b_to_a": {
-          "tension": 2,
-          "trust": 1
+          "tension": 4,
+          "trust": 3
          },
-         "reason": "你改了{column_writer.name}三年的稿子，两个人为一个字吵到过天亮",
-         "stage": "familiar"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 0,
-          "trust": 1
-         },
-         "b": "studio_photographer",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{studio_photographer.name}替报馆拍了两年新闻相片，稿费单都是你签的字",
-         "stage": "acquainted"
-        },
-        {
-         "a": "column_writer",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 0
-         },
-         "b": "studio_photographer",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 0
-         },
-         "reason": "两个人今晚头一回见面，却像早就认得彼此的作品",
-         "stage": "stranger"
+         "reason": "上个月你拿旧怀表去试探典当，{pawn_clerk.name}没写当票却把自己的贴身银锁塞进你袖袋，说“拿这个抵你的表”",
+         "stage": "flirting"
         }
        ],
        "slots": [
-        "column_writer",
-        "studio_photographer"
+        "pawn_clerk"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想做一回不看股东脸色的头版",
-        "limit_gap": "你上头还有主笔和股东，{column_writer.name}等不起稿费",
-        "meeting_reason": "头版空出一块的那几天，两个人天天等在你的桌前",
-        "resource_gap": "你有版面，{column_writer.name}有文章，{studio_photographer.name}有相片，登不登只有你说了算"
+        "irreplaceable_goal": "你想把那件私密当物赎回，又想看清{pawn_clerk.name}冷淡算盘声下的真心",
+        "limit_gap": "当铺打烊落锁前要把那笔死当账抹平",
+        "meeting_reason": "你在上板前最后一刻跨进当铺门槛，{pawn_clerk.name}迎出来引你进了内堂",
+        "resource_gap": "你握着报馆社会版的发稿大权，{pawn_clerk.name}只是当铺柜台后听东家吩咐的朝奉"
        },
-       "tags": [
-        "workplace_power"
-       ],
+       "tags": [],
        "tension_engine_ids": [
-        "te_deadline_hour",
-        "te_one_negative"
+        "te_pledge_ticket",
+        "te_owed_ad"
        ]
       },
       {
-       "chemistry": "{police_interpreter.name}白天在租界、夜里回华界，只有{teahouse_keeper.name}知道{police_interpreter.ta}替巡捕房做过什么；上个月你在桥洞底下撞见过两个人说话，三个人谁都没提。",
-       "id": "combo_bridge_night",
-       "identity_ids": [],
+       "chemistry": "河浜石桥的雾气漫过石栏，{police_interpreter.name}摘下公事礼帽挡住街灯，低声问你今晚去哪落脚。",
+       "id": "combo_interpreter_solo",
+       "identity_ids": [
+        "sub_editor",
+        "reporter",
+        "proofreader"
+       ],
        "player_positions": [
         "low",
         "equal",
@@ -977,55 +808,26 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 2,
-          "trust": 0
+          "tension": 4,
+          "trust": 2
          },
          "b": "police_interpreter",
          "b_to_a": {
-          "tension": 2,
-          "trust": 0
+          "tension": 4,
+          "trust": 3
          },
-         "reason": "你只在报上见过{police_interpreter.name}的名字，今晚才对上了脸",
-         "stage": "stranger"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 0,
-          "trust": 1
-         },
-         "b": "teahouse_keeper",
-         "b_to_a": {
-          "tension": 0,
-          "trust": 1
-         },
-         "reason": "你是茶楼的常客，{teahouse_keeper.name}记得你爱坐哪张桌",
-         "stage": "acquainted"
-        },
-        {
-         "a": "police_interpreter",
-         "a_to_b": {
-          "tension": 2,
-          "trust": 1
-         },
-         "b": "teahouse_keeper",
-         "b_to_a": {
-          "tension": 2,
-          "trust": 1
-         },
-         "reason": "两个人在同一条巷子里长大，如今一个在租界、一个在华界",
-         "stage": "familiar"
+         "reason": "上次桥头宵禁盘查，{police_interpreter.name}当着巡长面抽走你包里的禁稿塞进自己大衣内袋，回头只问一句“拿什么谢我”",
+         "stage": "testing"
         }
        ],
        "slots": [
-        "police_interpreter",
-        "teahouse_keeper"
+        "police_interpreter"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想弄清上个月被放走的那个人是谁",
-        "limit_gap": "过了十二点你就过不了桥，{police_interpreter.name}不能让洋人知道{police_interpreter.ta}夜里去了哪",
-        "meeting_reason": "三个人都要赶在宵禁前过桥",
-        "resource_gap": "{police_interpreter.name}有一张通行证，{teahouse_keeper.name}有一本挂账簿，你有一个亲眼看见的秘密"
+        "irreplaceable_goal": "你想在不惊动巡捕房的前提下把人保下来，也想试探{police_interpreter.name}究竟偏心哪一边",
+        "limit_gap": "宵禁拉栅前必须决定过不过桥",
+        "meeting_reason": "你在石桥头等最后一班渡船，{police_interpreter.name}打着伞从租界那一侧向你走来",
+        "resource_gap": "{police_interpreter.name}能在巡捕房里一句话替人解围，你手里握着能在一夜间传遍全城的报馆铅字"
        },
        "tags": [],
        "tension_engine_ids": [
@@ -1034,9 +836,54 @@
        ]
       },
       {
-       "chemistry": "一张底片、一张当票、一块被换过的铅版，分别在{studio_photographer.name}、{pawn_clerk.name}和{chief_typesetter.name}手里；三样东西合起来，才说得清上礼拜那晚的事，而你是第四个知道的人。",
-       "id": "combo_darkroom_three",
-       "identity_ids": [],
+       "chemistry": "你拿着红笔站在排字台前，{chief_typesetter.name}仰头看你改定标题，沾着油墨的手背轻轻碰了碰你的袖口。",
+       "id": "combo_typesetter_high_solo",
+       "identity_ids": [
+        "sub_editor"
+       ],
+       "player_positions": [
+        "high"
+       ],
+       "power_structure": "player_high",
+       "relations": [
+        {
+         "a": "player",
+         "a_to_b": {
+          "tension": 3,
+          "trust": 3
+         },
+         "b": "chief_typesetter",
+         "b_to_a": {
+          "tension": 3,
+          "trust": 3
+         },
+         "reason": "春刊改版那周你们连着七晚分吃同一锅生煎馒头，{chief_typesetter.name}连家里老母亲寄来的家书都拿给你念",
+         "stage": "familiar"
+        }
+       ],
+       "slots": [
+        "chief_typesetter"
+       ],
+       "stakes": {
+        "irreplaceable_goal": "你想保住报馆明日的头条，也想在开机声响起后带{chief_typesetter.name}回值班室歇息",
+        "limit_gap": "开印前最后半小时，版面留撤全凭你一句话",
+        "meeting_reason": "夜深人静时你亲自下到排字房盯大样，{chief_typesetter.name}早为你温好了茶",
+        "resource_gap": "你是拍板定稿的副主笔，{chief_typesetter.name}是替你守着活字版面的排字领班"
+       },
+       "tags": [],
+       "tension_engine_ids": [
+        "te_deadline_hour",
+        "te_owed_ad"
+       ]
+      },
+      {
+       "chemistry": "你亲手反锁了暗房木门做局，把{column_writer.name}和{studio_photographer.name}聚在同一盏红灯下，绳上那张湿底片谁也别想独自带走。",
+       "id": "combo_darkroom_leverage",
+       "identity_ids": [
+        "sub_editor",
+        "reporter",
+        "proofreader"
+       ],
        "player_positions": [
         "low",
         "equal",
@@ -1047,103 +894,134 @@
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 1
+          "tension": 4,
+          "trust": 3
          },
          "b": "studio_photographer",
          "b_to_a": {
-          "tension": 1,
-          "trust": 1
+          "tension": 4,
+          "trust": 4
          },
-         "reason": "你在照相馆拍过一张证件相，{studio_photographer.name}多洗了一张没给你",
-         "stage": "acquainted"
+         "reason": "上回巡警砸门搜查暗房时，{studio_photographer.name}把你按在遮光黑布后咬住你的衣领，等靴声走远，两人才吻得喘不过气",
+         "stage": "intimate"
         },
         {
          "a": "player",
          "a_to_b": {
-          "tension": 1,
-          "trust": 0
+          "tension": 3,
+          "trust": 3
          },
-         "b": "pawn_clerk",
+         "b": "column_writer",
          "b_to_a": {
-          "tension": 1,
-          "trust": 0
+          "tension": 4,
+          "trust": 3
          },
-         "reason": "你只隔着柜台的木栅见过{pawn_clerk.name}的一双眼睛",
-         "stage": "stranger"
-        },
-        {
-         "a": "player",
-         "a_to_b": {
-          "tension": 0,
-          "trust": 1
-         },
-         "b": "chief_typesetter",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "{chief_typesetter.name}排过你写的一条短讯，一个字没改",
-         "stage": "acquainted"
+         "reason": "{column_writer.name}把那支常年贴身用的金尖钢笔塞进你胸前口袋，对你说“除了你，没人配改我的稿子”",
+         "stage": "flirting"
         },
         {
          "a": "studio_photographer",
          "a_to_b": {
-          "tension": 1,
-          "trust": 0
+          "tension": 4,
+          "trust": 2
          },
-         "b": "pawn_clerk",
+         "b": "column_writer",
          "b_to_a": {
-          "tension": 1,
-          "trust": 0
+          "tension": 4,
+          "trust": 2
          },
-         "reason": "那台德国相机当过一回，是{pawn_clerk.name}经的手",
-         "stage": "acquainted"
-        },
-        {
-         "a": "studio_photographer",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 1
-         },
-         "b": "chief_typesetter",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 1
-         },
-         "reason": "每晚相片制版都要过{chief_typesetter.name}的手",
-         "stage": "familiar"
-        },
-        {
-         "a": "pawn_clerk",
-         "a_to_b": {
-          "tension": 1,
-          "trust": 0
-         },
-         "b": "chief_typesetter",
-         "b_to_a": {
-          "tension": 1,
-          "trust": 0
-         },
-         "reason": "两个人从没说过话，那晚却都去过后弄",
-         "stage": "stranger"
+         "reason": "{studio_photographer.name}洗出了{column_writer.name}深夜出入禁书印局的底片，两人一直在暗中试探底线",
+         "stage": "testing"
         }
        ],
        "slots": [
         "studio_photographer",
-        "pawn_clerk",
-        "chief_typesetter"
+        "column_writer"
        ],
        "stakes": {
-        "irreplaceable_goal": "你想在事情见报之前，先弄明白真相",
-        "limit_gap": "你说出去就成了证人，{chief_typesetter.name}说出去就丢了饭碗",
-        "meeting_reason": "三个人不约而同地找上了你",
-        "resource_gap": "三个人各握着一件物证，你握着把它们连起来的那句话"
+        "irreplaceable_goal": "你想替{column_writer.name}保住笔名平安，又要把{studio_photographer.name}连人带底片留在自己掌控里",
+        "limit_gap": "明晚十点画刊选片截稿前必须定下这张底片的去留",
+        "meeting_reason": "{column_writer.name}天黑前已经先来求过你救命，你干脆设局把{studio_photographer.name}也约进暗房当面摊牌",
+        "resource_gap": "{studio_photographer.name}握着禁书印局门口的实拍底片，{column_writer.name}有满城追捧的连载笔名，而这间暗房的钥匙此刻攥在你手里"
        },
        "tags": [],
        "tension_engine_ids": [
         "te_one_negative",
-        "te_pledge_ticket"
+        "te_shared_byline"
+       ]
+      },
+      {
+       "chemistry": "你们三人早在开春就私下立过互保的契约，如今那批贡缎的死当票摆在裁缝铺内室桌上，{pawn_clerk.name}与{tailor_master.name}都在等你按最初的约定拍板。",
+       "id": "combo_shop_leverage",
+       "identity_ids": [
+        "shop_heir",
+        "ad_agent",
+        "seamstress_hand"
+       ],
+       "player_positions": [
+        "low",
+        "equal",
+        "high"
+       ],
+       "power_structure": "switchable",
+       "relations": [
+        {
+         "a": "player",
+         "a_to_b": {
+          "tension": 4,
+          "trust": 4
+         },
+         "b": "tailor_master",
+         "b_to_a": {
+          "tension": 4,
+          "trust": 4
+         },
+         "reason": "钱庄打手堵在门板外叫骂那晚，你在屏风后捂住{tailor_master.name}发抖的嘴，等砸门声停了，两人抱在一起很久没松手",
+         "stage": "intimate"
+        },
+        {
+         "a": "player",
+         "a_to_b": {
+          "tension": 3,
+          "trust": 3
+         },
+         "b": "pawn_clerk",
+         "b_to_a": {
+          "tension": 4,
+          "trust": 3
+         },
+         "reason": "上月核对私账时，{pawn_clerk.name}故意把算盘推到你手边，低声问“要是东家查起来，你带不带我一起走”",
+         "stage": "testing"
+        },
+        {
+         "a": "pawn_clerk",
+         "a_to_b": {
+          "tension": 4,
+          "trust": 2
+         },
+         "b": "tailor_master",
+         "b_to_a": {
+          "tension": 4,
+          "trust": 2
+         },
+         "reason": "{pawn_clerk.name}握着{tailor_master.name}私押行会贡缎的死当票，两人明面上客气却暗里紧绷",
+         "stage": "testing"
+        }
+       ],
+       "slots": [
+        "pawn_clerk",
+        "tailor_master"
+       ],
+       "stakes": {
+        "irreplaceable_goal": "你想护住{tailor_master.name}的字号不被摘牌，又想稳住替你们瞒下账目的{pawn_clerk.name}",
+        "limit_gap": "午时三刻行会查验贡缎之前必须平息这桩死当",
+        "meeting_reason": "按你们三人月初定下的老规矩，每逢行会查账前夜都要在裁缝铺内室秘密碰头对账",
+        "resource_gap": "{pawn_clerk.name}掌着到期死当票的处置权，{tailor_master.name}守着行会评理的看板衣样，而三方私契的底单一直收在你怀里"
+       },
+       "tags": [],
+       "tension_engine_ids": [
+        "te_pledge_ticket",
+        "te_facing_shops"
        ]
       }
      ],
@@ -1251,7 +1129,7 @@
          "天快亮时的安静"
         ],
         "preconditions": [
-         "确定这事不会传进排字房"
+         "确定这事不会传进排字房，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          3,
@@ -1376,7 +1254,7 @@
          "被人等"
         ],
         "preconditions": [
-         "对方先把一件心事交出来"
+         "对方先把一件心事交出来，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          1,
@@ -1503,7 +1381,7 @@
          "灯下的慢活"
         ],
         "preconditions": [
-         "铺门关了，街上没人"
+         "铺门关了，街上没人，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          2,
@@ -1624,7 +1502,7 @@
          "红灯下的安静"
         ],
         "preconditions": [
-         "相机收起来之后"
+         "相机收起来之后，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          2,
@@ -1717,7 +1595,7 @@
          "不能明着站在任何一边"
         ],
         "obligations": [
-         "每晚要给说书先生结一次钱"
+         "每晚要给说书艺人结一次钱"
         ],
         "resources": [
          "整条街的闲话",
@@ -1745,7 +1623,7 @@
          "打烊后的一壶冷茶"
         ],
         "preconditions": [
-         "茶客都散了"
+         "茶客都散了，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          3,
@@ -1866,7 +1744,7 @@
          "过桥时的那阵风"
         ],
         "preconditions": [
-         "离开巡捕房的视线"
+         "离开巡捕房的视线，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          2,
@@ -1987,7 +1865,7 @@
          "打烊后擦拭当物"
         ],
         "preconditions": [
-         "两个人之间没有一张未结的当票"
+         "两个人之间没有一张未结的当票，双方都清醒、出于自愿"
         ],
         "self_control_range": [
          4,
@@ -2368,7 +2246,8 @@
        "id": "newsroom",
        "name": "编辑部",
        "pressure_modifiers": {
-        "p_name_list": "来稿箱就放在门边，谁都能塞一封信进去。"
+        "p_name_list": "来稿箱就放在门边，谁都能塞一封信进去。",
+        "p_negative_price": "社会专刊的选片框还空着一格，主笔正在等暗房送片过来。"
        },
        "privacy": "semi",
        "tags": [
@@ -2396,7 +2275,7 @@
        "id": "teahouse",
        "name": "望江茶楼",
        "pressure_modifiers": {
-        "p_guild_ruling": "评理会就开在二楼，会首坐在正中那张八仙桌。"
+        "p_guild_ruling": "二楼雅座外头就是行会茶客，隔着屏风说话得压低嗓子。"
        },
        "privacy": "public",
        "tags": [],
@@ -2421,9 +2300,11 @@
        "id": "tailor_shop",
        "name": "裁缝铺",
        "pressure_modifiers": {
-        "p_creditor_door": "门板上贴着钱庄的条子，路过的人都看得见。"
+        "p_creditor_door": "门板上贴着钱庄的条子，路过的人都看得见。",
+        "p_guild_ruling": "内室樟木箱里空了一层，原本装贡缎的锦盒还摆在案底。",
+        "p_police_night": "门板外头雨声如注，内室炭盆烘着刚脱下的湿外衫。"
        },
-       "privacy": "semi",
+       "privacy": "private",
        "tags": [],
        "visibility": "临街的橱窗看得见柜台，试衣间的布帘后面只有裁缝进得去",
        "witnesses": []
@@ -2442,7 +2323,7 @@
        "id": "darkroom",
        "name": "照相馆暗房",
        "pressure_modifiers": {
-        "p_negative_price": "那张底片就夹在晾相片的绳子最里头。"
+        "p_negative_price": "那张拍到禁书印局门口的底片就夹在晾相片的绳子最里头。"
        },
        "privacy": "private",
        "tags": [],
@@ -2464,7 +2345,9 @@
        ],
        "id": "back_alley",
        "name": "后弄",
-       "pressure_modifiers": {},
+       "pressure_modifiers": {
+        "p_police_night": "青石板积水没过鞋面，只有裁缝铺后门还透出一线暖光。"
+       },
        "privacy": "semi",
        "tags": [],
        "visibility": "只有各家伙计抄近路，楼上的窗户随时会推开",
@@ -2486,7 +2369,7 @@
        "id": "bridge",
        "name": "河浜石桥",
        "pressure_modifiers": {
-        "p_police_night": "岗亭里的登记簿上，已经写了你的名字。"
+        "p_police_night": "河水已经漫上桥阶，铁栅栏在风雨里哐当作响。"
        },
        "privacy": "public",
        "tags": [],
@@ -2508,7 +2391,9 @@
        ],
        "id": "pawnshop",
        "name": "当铺",
-       "pressure_modifiers": {},
+       "pressure_modifiers": {
+        "p_guild_ruling": "那张死当票就锁在后堂高柜的暗格里。"
+       },
        "privacy": "semi",
        "tags": [],
        "visibility": "柜台外面的人看不见里面，柜台里的人却把门口看得一清二楚",
@@ -2602,7 +2487,7 @@
       ],
       "order": "family_first"
      },
-     "notes": "首发六个世界之一。2026-09-29 转为 released：真实 Skill 试玩记录 reports/playtests/{opencode,pi}/*-pt-republic_press_street-{daily,pressure}-r*.json（第 1–3 轮 OpenCode 1.18.29，其余 pi 0.87.1；模型请求的是本地接口上的 gemini-3.8-flash-high，能查到的应答都来自 gemini-3.8-flash-exp-a），评审（gemini-3.8-flash，校准 12/12；用户确认 gemini-3.8-flash-exp-a 与它是同一个模型）在 reports/playtests/reviews-gemini/，汇总在 reports/playtests/playtests.md。",
+     "notes": "首发六个世界之一。2026-09-29 转为 released：真实 Skill 试玩记录 reports/playtests/{opencode,pi}/*-pt-republic_press_street-{daily,pressure}-r*.json（第 1–3 轮 OpenCode 1.18.29，其余 pi 0.87.1；模型请求的是本地接口上的 gemini-3.8-flash-high，能查到的应答都来自 gemini-3.8-flash-exp-a），评审（gemini-3.8-flash，校准 12/12；用户确认 gemini-3.8-flash-exp-a 与它是同一个模型）在 reports/playtests/reviews-gemini/，汇总在 reports/playtests/playtests.md。\n2026-10-18 按写作规则 v2 改造：按 Gemini 第六批方案：组合改成 8 组单人加 2 组双人局（暗房设局、三方互保私契）；行会评理改成当铺朝奉握着裁缝师傅的死当票，警察夜巡改成梅雨涨潮封桥；裁缝铺改为 private；称呼与背景人物去掉先生。",
      "player_identities": [
       {
        "age_range": [
@@ -2820,7 +2705,7 @@
         "deadline_minutes": 630,
         "text": "明早九点主笔要去巡捕房说明原委"
        },
-       "objective": "在他们翻出那篇稿子之前，决定它的去留",
+       "objective": "在巡捕翻出那篇稿子之前，决定它的去留",
        "source": "institution",
        "start_minute": 1350,
        "tags": [],
@@ -2920,70 +2805,71 @@
        "trigger": "钱庄的伙计带着两个人堵在铺子门口，手里扬着一张借据"
       },
       {
-       "choice": "拿出底稿证明清白，还是保住画在底稿上的那个人",
+       "choice": "劝{pawn_clerk.name}暗中展期，还是替{tailor_master.name}赎回贡缎",
        "exits": [
         {
-         "cost": "底稿上画着一位不愿露面的主顾",
-         "option": "当众拿出底稿"
+         "cost": "你的私章盖在了展期单背面",
+         "option": "作保让{pawn_clerk.name}暗中展期"
         },
         {
-         "cost": "新式样从此归了对门",
-         "option": "私下认输"
-        },
-        {
-         "cost": "行会最恨有人拿报纸压人",
-         "option": "请报馆登一篇评论造势"
+         "cost": "两人在内室通宵赶工，瞒不过街坊耳目",
+         "option": "陪{tailor_master.name}连夜赶制替补缎面"
         }
        ],
        "far": {
-        "consequence": "输的那家要摘下字号，三年不许在这条街开铺",
-        "due_days": 10,
-        "trigger": "裁决贴到行会门口的第十天"
+        "consequence": "私押贡缎一旦传开，老铺招牌就要易主",
+        "due_days": 7,
+        "trigger": "月底行会清盘大账"
        },
        "flags": [
-        "timed"
+        "timed",
+        "leverage"
        ],
        "hook_ids": [],
        "id": "p_guild_ruling",
        "immediate": {
-        "minutes": 45,
-        "text": "评理会已经开始，会首让两家各派一个人说话"
+        "minutes": 30,
+        "text": "{pawn_clerk.name}把当票压在算盘底下，请你去后堂看一眼印鉴"
        },
-       "leverage": null,
+       "leverage": {
+        "basis": "{pawn_clerk.name}握着{tailor_master.name}私押行会贡缎的死当票",
+        "holder": "pawn_clerk",
+        "subject": "tailor_master"
+       },
        "location_ids": [
+        "pawnshop",
+        "tailor_shop",
         "teahouse"
        ],
        "near": {
-        "deadline_minutes": 105,
-        "text": "午时三刻，会首要落槌"
+        "deadline_minutes": 180,
+        "text": "午时三刻行会查验贡缎，拿不出实物就要受罚"
        },
-       "objective": "在午时三刻会首落槌之前，拿出服人的证据",
-       "source": "institution",
+       "objective": "在评理会开场前帮两边压下这张死当票",
+       "source": "person",
        "start_minute": 600,
-       "tags": [],
-       "title": "行会评理",
-       "trigger": "对门字号告到行会，说新式样是被人偷画去的"
+       "tags": [
+        "coercion_theme"
+       ],
+       "title": "贡缎的死当票",
+       "trigger": "{pawn_clerk.name}盘库时翻出一张到期死当票，当物竟是{tailor_master.name}私押的行会贡缎"
       },
       {
-       "choice": "说出那晚看见的人，还是替对方瞒下去",
+       "choice": "留在北岸的报馆暗房，还是退回南岸的裁缝铺内室",
        "exits": [
         {
-         "cost": "那个人会知道是你说的",
-         "option": "说出那晚看见的人"
+         "cost": "炭盆整夜不灭，两个人共处一室",
+         "option": "退回裁缝铺内室避雨过夜"
         },
         {
-         "cost": "翻译会记着这笔人情",
-         "option": "请翻译作保，先回去"
-        },
-        {
-         "cost": "今晚要在巡捕房的长凳上过夜",
-         "option": "一个字也不说"
+         "cost": "暗房狭窄闷热，转身都要贴着衣角",
+         "option": "转去照相馆暗房借宿"
         }
        ],
        "far": {
-        "consequence": "证词上写了谁，谁的名字就会登上报纸",
-        "due_days": 7,
-        "trigger": "一周后案子开审"
+        "consequence": "同困一室过夜的动静，天亮后免不了被街坊打趣",
+        "due_days": 3,
+        "trigger": "连阴雨持续三天"
        },
        "flags": [
         "timed"
@@ -2992,25 +2878,26 @@
        "id": "p_police_night",
        "immediate": {
         "minutes": 20,
-        "text": "巡警要你跟着去一趟巡捕房，翻译二十分钟后到"
+        "text": "雨点砸在伞面上震耳欲聋，桥头铁栅已经拉上一半"
        },
        "leverage": null,
        "location_ids": [
         "bridge",
-        "back_alley"
+        "back_alley",
+        "tailor_shop"
        ],
        "near": {
-        "deadline_minutes": 390,
-        "text": "天亮前巡捕房要一个名字"
+        "deadline_minutes": 360,
+        "text": "半小时后潮水漫过桥墩，两岸直到明早才能通行"
        },
-       "objective": "天亮之前让巡捕房相信你只是个路人",
-       "source": "institution",
+       "objective": "在桥面彻底封闭前找到过夜落脚的地方",
+       "source": "nature",
        "start_minute": 1410,
        "tags": [
-        "crime"
+        "disaster"
        ],
-       "title": "桥头问话",
-       "trigger": "一个巡警拦住你，说有人指认你那晚在后弄见过一个逃走的人"
+       "title": "梅雨夜涨潮封桥",
+       "trigger": "入夜暴雨倾盆，河水漫过石桥台阶，巡捕房顺势拉起铁栅封了过河桥面"
       },
       {
        "choice": "先保住版面，还是先抓出内鬼",
@@ -3065,25 +2952,21 @@
        "trigger": "对面的《江潮日报》晚刊上，登着明天才该见报的那一回连载"
       },
       {
-       "choice": "拿钱去赎，还是拿另一个秘密去换",
+       "choice": "劝{studio_photographer.name}销毁原片，还是替{column_writer.name}买下底片",
        "exits": [
         {
-         "cost": "钱是向当铺借的，当期只有一个月",
-         "option": "凑钱赎回底片"
+         "cost": "欠下对方一笔随时要还的私情",
+         "option": "替{column_writer.name}出面赎回底片"
         },
         {
-         "cost": "从此两个人都握着对方的把柄",
-         "option": "拿{studio_photographer.name}自己的秘密去换"
-        },
-        {
-         "cost": "你在这条街上的名声就毁了",
-         "option": "干脆让它见报"
+         "cost": "三个人从此绑在同一条船上",
+         "option": "约两人在暗房当面把话挑明"
         }
        ],
        "far": {
-        "consequence": "专刊上登了谁的脸，谁就再也躲不开街坊的眼睛",
+        "consequence": "照片一旦登出，巡捕就会顺着笔名查到报馆",
         "due_days": 6,
-        "trigger": "月初报馆要出一期社会相片专刊"
+        "trigger": "月初社会相片专刊见报"
        },
        "flags": [
         "timed",
@@ -3093,30 +2976,29 @@
        "id": "p_negative_price",
        "immediate": {
         "minutes": 20,
-        "text": "暗房的红灯亮着，门虚掩，里面的人在等你开口"
+        "text": "暗房红灯亮着，{studio_photographer.name}指着绳上的底片等你过目"
        },
        "leverage": {
-        "basis": "{studio_photographer.name}的暗房里有一张你站在租界旅馆门口的底片",
+        "basis": "{studio_photographer.name}洗出了{column_writer.name}深夜出入禁书印局的底片",
         "holder": "studio_photographer",
-        "subject": "player"
+        "subject": "column_writer"
        },
        "location_ids": [
         "darkroom",
-        "tailor_shop"
+        "newsroom"
        ],
        "near": {
         "deadline_minutes": 1440,
-        "text": "明晚十点之前不赎，底片就送去报馆"
+        "text": "明晚十点专刊选片截稿，桌面底片都会送去制版"
        },
-       "objective": "在底片被送去报馆之前把它拿回来",
+       "objective": "在专刊付印前把这张底片留在暗房里",
        "source": "person",
        "start_minute": 1320,
        "tags": [
-        "coercion_theme",
-        "crime"
+        "coercion_theme"
        ],
        "title": "底片的价钱",
-       "trigger": "有人把一张相片的边角塞进你的门缝，背面写着暗房的地址"
+       "trigger": "{studio_photographer.name}洗出一张街拍底片，角落印着{column_writer.name}深夜出入禁书印局的侧影"
       }
      ],
      "region": "通商口岸城市的报馆与手艺街",
@@ -3157,7 +3039,7 @@
       "testing": "试探"
      },
      "status": "released",
-     "style_hint": "句子带一点文白夹杂，多写油墨、雨声和铅字的手感；称呼用先生、小姐、老板、掌柜。",
+     "style_hint": "句子带一点文白夹杂，多写油墨、雨声和铅字的手感；称呼用老板、掌柜、师傅、主笔。",
      "tension_engines": [
       {
        "id": "te_deadline_hour",

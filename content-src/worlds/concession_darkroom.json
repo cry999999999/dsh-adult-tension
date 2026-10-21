@@ -515,7 +515,7 @@
           "拿钱或把柄来换温存的人"
         ],
         "preconditions": [
-          "房门反锁、窗帘拉严，且是双方都没有生意要谈的时候"
+          "房门反锁、窗帘拉严，且是双方都没有生意要谈的时候，双方都清醒、出于自愿"
         ],
         "boundaries": [
           "绝不在沙龙公共大厅发生越界举动"
@@ -646,7 +646,7 @@
           "带着巡捕房烟味的靠近"
         ],
         "preconditions": [
-          "今晚的底片都已定影上架，双方都不急着走"
+          "今晚的底片都已定影上架，双方都不急着走，双方都清醒、出于自愿"
         ],
         "boundaries": [
           "不许拉开暗房通气口的百叶窗"
@@ -777,7 +777,7 @@
           "拿身体来压票价的人"
         ],
         "preconditions": [
-          "这一晚双方之间没有任何未结的票款或交易"
+          "这一晚双方之间没有任何未结的票款或交易，双方都清醒、出于自愿"
         ],
         "boundaries": [
           "生意和私情两本账，绝不混着算"
@@ -1042,7 +1042,7 @@
           "把{npc.ta}当作炫耀战利品的言语"
         ],
         "preconditions": [
-          "对方从没向{npc.ta}开过价，也没拿船票许过诺"
+          "对方从没向{npc.ta}开过价，也没拿船票许过诺，双方都清醒、出于自愿"
         ],
         "boundaries": [
           "不许在有外人窥探的门缝或窗前发生实质亲密"
@@ -1173,7 +1173,7 @@
           "被当作无足轻重的炮灰推到前线"
         ],
         "preconditions": [
-          "对方没有在今晚的生意里替{npc.ta}出过钱或出过面"
+          "对方没有在今晚的生意里替{npc.ta}出过钱或出过面，双方都清醒、出于自愿"
         ],
         "boundaries": [
           "不许毁坏随身携带的传家装裱工具"
@@ -1371,7 +1371,7 @@
   ],
   "cast_combos": [
     {
-      "id": "combo_darkroom_leverage",
+      "id": "combo_photographer_vest",
       "power_structure": "npc_high",
       "player_positions": [
         "low"
@@ -1380,70 +1380,172 @@
         "darkroom_assistant"
       ],
       "slots": [
-        "master_photographer",
-        "police_inspector"
+        "master_photographer"
       ],
       "tension_engine_ids": [
         "te_single_negative",
         "te_curfew_iron_gate"
       ],
-      "chemistry": "{master_photographer.name}手里捏着那卷致命的名册底片，{police_inspector.name}带着搜查令堵在暗房门外；你在水槽边经手这卷胶片，稍有迟疑就会成为双方的替罪羊。",
+      "chemistry": "你在地下暗房跟了{master_photographer.name}整整三年，只有你知道那卷撤退名册的微缩底片缝在{master_photographer.ta}贴身棉背心的内衬里；今晚巡捕堵门，{master_photographer.ta}在红灯下解开外衫扣子，让你亲手取出来。",
       "stakes": {
-        "resource_gap": "{master_photographer.name}掌握底片藏匿点，{police_inspector.name}手握拘捕权，你手里只有一瓶快要用完的定影液。",
-        "limit_gap": "你一旦被搜出身带底片便难逃重罪，而{police_inspector.name}在公馆内也不敢公然违抗公董局中立禁令。",
-        "meeting_reason": "督察限令在暗房显影完成前交出底片。",
-        "irreplaceable_goal": "在暗房被查抄前完成底片洗印并保全性命。"
+        "resource_gap": "{master_photographer.name}掌着全租界大人物的底档和洗印秘方，你只是个连船票都买不起的暗房帮工。",
+        "limit_gap": "巡捕就要下地窖搜身，底片在谁身上搜出来都是重罪。",
+        "meeting_reason": "楼上传来马靴声，{master_photographer.name}反锁暗房门，把你拉到水槽后的阴影里。",
+        "irreplaceable_goal": "把底片安全送出去，让{master_photographer.name}带你一起上离港的船。"
       },
+      "tags": [
+        "crime"
+      ],
       "relations": [
         {
           "a": "player",
           "b": "master_photographer",
-          "stage": "familiar",
+          "stage": "intimate",
           "a_to_b": {
+            "trust": 3,
+            "tension": 2
+          },
+          "b_to_a": {
             "trust": 2,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 2
-          },
-          "reason": "多年在暗房共同洗印秘密照片，彼此熟知对方藏私货的手法"
-        },
-        {
-          "a": "player",
-          "b": "police_inspector",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 0,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 0,
-            "tension": 2
-          },
-          "reason": "只在门缝外见过对方腰间晃动的枪套"
-        },
-        {
-          "a": "master_photographer",
-          "b": "police_inspector",
-          "stage": "testing",
-          "a_to_b": {
-            "trust": 0,
             "tension": 3
           },
-          "b_to_a": {
-            "trust": 0,
-            "tension": 3
-          },
-          "reason": "对方手里的搜查令正是冲着这卷底片而来"
+          "reason": "三年来对方握着你的手在药水池里教你看显影；去年戒严夜两人挤在暗房行军床上，听着窗外的皮靴声，一夜没松开手。"
         }
-      ],
-      "tags": [
-        "workplace"
       ]
     },
     {
-      "id": "combo_ticket_bargain",
+      "id": "combo_inspector_alley_hat",
+      "power_structure": "npc_high",
+      "player_positions": [
+        "low"
+      ],
+      "identity_ids": [
+        "darkroom_assistant"
+      ],
+      "slots": [
+        "police_inspector"
+      ],
+      "tension_engine_ids": [
+        "te_blackmail_portrait",
+        "te_curfew_iron_gate"
+      ],
+      "chemistry": "特别督察{police_inspector.name}带着搜查令封了洋房，名义上查地下党，实则要找一张底片：上面是{police_inspector.ta}签发假放行条的那一幕，而冲洗它的人正是你。",
+      "stakes": {
+        "resource_gap": "{police_inspector.name}腰里有枪、手里有特别通行证，你只有礼帽夹层里的一张副件。",
+        "limit_gap": "宵禁铁闸落下之后，没有督察签字谁也出不了这条弄堂。",
+        "meeting_reason": "{police_inspector.name}屏退巡警，独自在二楼吸烟室的丝绒帷幔后等你。",
+        "irreplaceable_goal": "用那张副件换一张真钢印的通行证，再弄清{police_inspector.name}那晚为什么放过你。"
+      },
+      "tags": [
+        "crime"
+      ],
+      "relations": [
+        {
+          "a": "player",
+          "b": "police_inspector",
+          "stage": "testing",
+          "a_to_b": {
+            "trust": 1,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 1,
+            "tension": 3
+          },
+          "reason": "上个月在霞飞路暗巷，对方替你赶走了抢相机的流氓，借着路灯看了一眼你帽檐里露出的片盒，什么都没问就放你走了。"
+        }
+      ]
+    },
+    {
+      "id": "combo_singer_jewel_box",
+      "power_structure": "equal",
+      "player_positions": [
+        "equal"
+      ],
+      "identity_ids": [
+        "salon_broker",
+        "society_reporter"
+      ],
+      "slots": [
+        "cabinet_singer"
+      ],
+      "tension_engine_ids": [
+        "te_last_ticket",
+        "te_single_negative"
+      ],
+      "chemistry": "驻唱名角{cabinet_singer.name}的首饰盒夹层里藏着受贿名册的副页；你们早就约好，只要今晚拿到翻拍底片，就一起登船去南洋。",
+      "stakes": {
+        "resource_gap": "{cabinet_singer.name}有一盒珠宝和名册副页，你有暗房门路和弄堂撤离路线。",
+        "limit_gap": "末班客轮今夜起锚，中场休息是唯一能上楼收拾细软的空当。",
+        "meeting_reason": "第一支香颂唱罢，{cabinet_singer.name}借口补妆，把你拉进三楼套房的衣帽间。",
+        "irreplaceable_goal": "带{cabinet_singer.name}脱身，兑现一起去马尼拉的约定。"
+      },
+      "tags": [
+        "nightlife"
+      ],
+      "relations": [
+        {
+          "a": "player",
+          "b": "cabinet_singer",
+          "stage": "committed",
+          "a_to_b": {
+            "trust": 3,
+            "tension": 2
+          },
+          "b_to_a": {
+            "trust": 3,
+            "tension": 2
+          },
+          "reason": "半年前你在后台替对方挡下醉酒军官，此后每周三沙龙散场，你都从暗门溜进三楼套房，陪对方听留声机到破晓。"
+        }
+      ]
+    },
+    {
+      "id": "combo_broker_two_tickets",
+      "power_structure": "equal",
+      "player_positions": [
+        "equal"
+      ],
+      "identity_ids": [
+        "salon_broker"
+      ],
+      "slots": [
+        "customs_broker"
+      ],
+      "tension_engine_ids": [
+        "te_last_ticket",
+        "te_double_agent_wire"
+      ],
+      "chemistry": "掮客{customs_broker.name}大衣里揣着今晚最后两张去马尼拉的头等舱票，你看得出其中一张是假钢印；露台吧台边，{customs_broker.ta}往你杯里加了块冰，问你想选哪一张。",
+      "stakes": {
+        "resource_gap": "{customs_broker.name}有海关内线和真票，你有一面能辨钢印的放大镜和买家的信任。",
+        "limit_gap": "买家带着金条就要来交割。",
+        "meeting_reason": "夜雾漫上露台，{customs_broker.name}把两张一模一样的船票背面朝上扣在你们之间。",
+        "irreplaceable_goal": "从{customs_broker.name}手里拿到那张真票，也弄清那半张床是不是玩笑。"
+      },
+      "tags": [
+        "nightlife",
+        "crime"
+      ],
+      "relations": [
+        {
+          "a": "player",
+          "b": "customs_broker",
+          "stage": "flirting",
+          "a_to_b": {
+            "trust": 1,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 2,
+            "tension": 3
+          },
+          "reason": "你们联手做过三桩见不得光的字画和路条买卖，每次分完账都在露台吹江风喝同一瓶朗姆，对方总说船上要给你留半张床。"
+        }
+      ]
+    },
+    {
+      "id": "combo_runner_hidden_scroll",
       "power_structure": "equal",
       "player_positions": [
         "equal"
@@ -1453,69 +1555,41 @@
         "salon_broker"
       ],
       "slots": [
-        "customs_broker",
-        "cabinet_singer"
+        "antiquarian_runner"
       ],
       "tension_engine_ids": [
-        "te_last_ticket"
+        "te_blackmail_portrait",
+        "te_single_negative"
       ],
-      "chemistry": "{customs_broker.name}怀里的最后一张船票开出了天价，{cabinet_singer.name}急于逃离公馆，愿押上全部珠宝；你在吧台角落居中牵线，稍不留神就会被两方同时赖账。",
+      "chemistry": "装裱师{antiquarian_runner.name}抱着今晚义卖的古画，绫绢夹层里是你们昨晚合力封进去的底片；可{antiquarian_runner.ta}的指尖在发抖，因为{antiquarian_runner.ta}还私下仿刻了你的私章。",
       "stakes": {
-        "resource_gap": "{customs_broker.name}捏着出境船票，{cabinet_singer.name}怀揣名贵珠宝，你只有一张能让消息传开或压下的嘴。",
-        "limit_gap": "{customs_broker.name}怕假票被当场识破，{cabinet_singer.name}不敢让金主和巡捕发现自己要走。",
-        "meeting_reason": "在吧台借调酒掩护完成末班船票与珠宝对验。",
-        "irreplaceable_goal": "在午夜前敲定这桩交易并抽得自己的出境路费。"
+        "resource_gap": "{antiquarian_runner.name}有一手瞒得过行家的揭裱绝活，你有一盏照得出药水痕迹的紫外灯。",
+        "limit_gap": "义卖就要落槌，画落进错的人手里，两个人都得陪葬。",
+        "meeting_reason": "回廊拐角的阴影里，{antiquarian_runner.name}趁侍应生端酒走过，一把攥住你的袖口。",
+        "irreplaceable_goal": "让画落进约好的买家手里，再问清那枚私章是为谁刻的。"
       },
+      "tags": [
+        "crime"
+      ],
       "relations": [
         {
           "a": "player",
-          "b": "customs_broker",
-          "stage": "acquainted",
+          "b": "antiquarian_runner",
+          "stage": "intimate",
           "a_to_b": {
-            "trust": 1,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 1
-          },
-          "reason": "曾帮对方在报纸副刊登过一则寻找海外旧友的联络暗号"
-        },
-        {
-          "a": "player",
-          "b": "cabinet_singer",
-          "stage": "flirting",
-          "a_to_b": {
-            "trust": 1,
+            "trust": 2,
             "tension": 2
           },
           "b_to_a": {
             "trust": 2,
-            "tension": 1
+            "tension": 3
           },
-          "reason": "在后台化妆间曾帮对方藏过一盒未申报的首饰，没要任何回报"
-        },
-        {
-          "a": "customs_broker",
-          "b": "cabinet_singer",
-          "stage": "testing",
-          "a_to_b": {
-            "trust": 0,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 0,
-            "tension": 2
-          },
-          "reason": "为了一张未记名船票在桌底互相开价施压"
+          "reason": "为了把底片裱进古画天头，你们关在闷热的装裱房里熬了两宿，浆糊和檀香味里，对方贴着你的耳根发誓绝不独活。"
         }
-      ],
-      "tags": [
-        "nightlife"
       ]
     },
     {
-      "id": "combo_patron_mastery",
+      "id": "combo_patron_salon_deed",
       "power_structure": "player_high",
       "player_positions": [
         "high"
@@ -1524,69 +1598,131 @@
         "exiled_patron"
       ],
       "slots": [
-        "salon_owner",
-        "antiquarian_runner"
+        "salon_owner"
       ],
       "tension_engine_ids": [
-        "te_blackmail_portrait"
+        "te_blackmail_portrait",
+        "te_last_ticket"
       ],
-      "chemistry": "你包下了公馆顶层套房并握着大笔黄金，{salon_owner.name}急需你的资金维持公馆周转，而{antiquarian_runner.name}正抱着锦盒来求你资助夹带字画出关。",
+      "chemistry": "你包下了公馆顶层、箱底压着整排金条，沙龙主人{salon_owner.name}却要在破晓前还清银行的抵押款；深夜{salon_owner.ta}亲手端来醒好的红酒，请你看一份过户契约。",
       "stakes": {
-        "resource_gap": "你握有公馆急需的大黄鱼金条，{salon_owner.name}握有套房钥匙，{antiquarian_runner.name}只有一箱藏着密件的摹本。",
-        "limit_gap": "你的黄金一旦被捕房冻结就一文不值，{salon_owner.name}必须在破晓前向银行偿还抵押欠款。",
-        "meeting_reason": "在吸烟室密谈字画转手资金。",
-        "irreplaceable_goal": "在资产被全面查封前把房契地契换成能带走的东西。"
+        "resource_gap": "你有能救急的现金，{salon_owner.name}有公馆产权、暗道钥匙和明早船长的交情。",
+        "limit_gap": "天亮前银行和巡捕房就要来查封公馆。",
+        "meeting_reason": "宾客散去一半，{salon_owner.name}用备用钥匙打开了你套房的内门。",
+        "irreplaceable_goal": "用最小的代价换下暗道和船位，让高傲的{salon_owner.name}自己选择和你同路。"
       },
+      "tags": [
+        "nightlife"
+      ],
       "relations": [
         {
           "a": "player",
           "b": "salon_owner",
-          "stage": "familiar",
+          "stage": "flirting",
           "a_to_b": {
-            "trust": 1,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 2
-          },
-          "reason": "你是公馆包月套房的贵客，按期支付高昂的租金"
-        },
-        {
-          "a": "player",
-          "b": "antiquarian_runner",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 0
-          },
-          "b_to_a": {
             "trust": 2,
-            "tension": 1
-          },
-          "reason": "曾买下过对方揭裱的一副旧对联，知道对方手艺精湛"
-        },
-        {
-          "a": "salon_owner",
-          "b": "antiquarian_runner",
-          "stage": "testing",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 0,
             "tension": 2
           },
-          "reason": "大厅挂着对方修缮的字画，但在抽成比例上争执不下"
+          "b_to_a": {
+            "trust": 1,
+            "tension": 3
+          },
+          "reason": "住进顶层这三个月，每逢雷雨夜对方都上楼陪你下棋小酌，丝绸披肩滑落在你脚边，对方从没弯腰捡过。"
         }
-      ],
-      "tags": [
-        "nightlife"
       ]
     },
     {
-      "id": "combo_concession_undercurrent",
+      "id": "combo_patron_singer_curtain",
+      "power_structure": "player_high",
+      "player_positions": [
+        "high"
+      ],
+      "identity_ids": [
+        "exiled_patron"
+      ],
+      "slots": [
+        "cabinet_singer"
+      ],
+      "tension_engine_ids": [
+        "te_last_ticket",
+        "te_curfew_iron_gate"
+      ],
+      "chemistry": "你是沙龙里出手最阔绰的顶层贵客；为躲督察的盘查，{cabinet_singer.name}深夜抱着首饰盒逃进你的套房，求你用家族的门路护{cabinet_singer.ta}出关。",
+      "stakes": {
+        "resource_gap": "你有领事馆的庇护牌和黄金，{cabinet_singer.name}有能让半个租界高官睡不着的名册副页。",
+        "limit_gap": "巡警正在二楼逐间查房，很快就会敲到顶层。",
+        "meeting_reason": "{cabinet_singer.name}赤着脚踩过走廊地毯，闪身躲进你套房的丝绒窗帘后。",
+        "irreplaceable_goal": "护{cabinet_singer.name}熬过今晚的搜查，再一起决定那份名册怎么用。"
+      },
+      "tags": [
+        "nightlife"
+      ],
+      "relations": [
+        {
+          "a": "player",
+          "b": "cabinet_singer",
+          "stage": "flirting",
+          "a_to_b": {
+            "trust": 2,
+            "tension": 2
+          },
+          "b_to_a": {
+            "trust": 2,
+            "tension": 3
+          },
+          "reason": "你连着一个月给对方送花篮却从不要求陪酒，上周对方嗓子哑了，是你托人从香港捎来润喉药，亲手送进了后台。"
+        }
+      ]
+    },
+    {
+      "id": "combo_owner_wardrobe_sirens",
+      "power_structure": "switchable",
+      "player_positions": [
+        "low",
+        "equal",
+        "high"
+      ],
+      "identity_ids": [
+        "salon_broker",
+        "society_reporter"
+      ],
+      "slots": [
+        "salon_owner"
+      ],
+      "tension_engine_ids": [
+        "te_double_agent_wire",
+        "te_curfew_iron_gate"
+      ],
+      "chemistry": "{salon_owner.name}曾把三楼借给秘密特使落脚，那页签名底单是{salon_owner.ta}亲手交给你藏的；今晚宵禁提前，{salon_owner.ta}准备破晓前登船，却没告诉你。",
+      "stakes": {
+        "resource_gap": "{salon_owner.name}有买通船长的登船牌，你有那页底单和整张人脉网。",
+        "limit_gap": "引水船凌晨靠岸，走还是留、带不带你，今晚要摊牌。",
+        "meeting_reason": "后巷铁闸锁死后，你在暗房通往后门的密道口截住了正在收拾细软的{salon_owner.name}。",
+        "irreplaceable_goal": "让{salon_owner.name}亲口说出那第二张登船牌是给谁的。"
+      },
+      "tags": [
+        "nightlife",
+        "crime"
+      ],
+      "relations": [
+        {
+          "a": "player",
+          "b": "salon_owner",
+          "stage": "intimate",
+          "a_to_b": {
+            "trust": 2,
+            "tension": 3
+          },
+          "b_to_a": {
+            "trust": 2,
+            "tension": 3
+          },
+          "reason": "公馆开张三年，所有见不得光的客人都是你引见的；好几次险些露馅的深夜，两人在锁死的衣帽间里贴着彼此听外面的警笛。"
+        }
+      ]
+    },
+    {
+      "id": "combo_staircase_standoff",
       "power_structure": "switchable",
       "player_positions": [
         "low",
@@ -1596,52 +1732,27 @@
       "identity_ids": [],
       "slots": [
         "salon_owner",
-        "police_inspector",
-        "cabinet_singer"
+        "police_inspector"
       ],
       "tension_engine_ids": [
         "te_curfew_iron_gate",
         "te_double_agent_wire"
       ],
-      "chemistry": "{police_inspector.name}既是沙龙名义上的保护伞也是暗中勒索者，{salon_owner.name}以美酒与分红将其套牢，而受庇护的{cabinet_singer.name}暗中记着两人私相授受的密账。",
+      "chemistry": "{police_inspector.name}带着搜查令要封公馆，{salon_owner.name}端着香槟拿分红旧账软硬兼施；你站在暗房楼梯口，手里捏着双方都在找的那卷底片。",
       "stakes": {
-        "resource_gap": "{police_inspector.name}有枪和拘捕令，{salon_owner.name}有公馆与暗室，{cabinet_singer.name}有一副歌喉与随身暗账。",
-        "limit_gap": "三人只要有一人向公董局告密，公馆的平静假象便会顷刻瓦解。",
-        "meeting_reason": "在大厅舞会包厢核对今晚巡捕放行名单。",
-        "irreplaceable_goal": "在宵禁铁闸落下前迫使对方做出不可撤销的让步。"
+        "resource_gap": "{police_inspector.name}有枪和封条，{salon_owner.name}有公馆和金条，你知道底片真正藏在哪。",
+        "limit_gap": "午夜钟一响，外面的巡捕就要破门。",
+        "meeting_reason": "大厅通往暗房的旋转梯口，三个人同时停下了脚步。",
+        "irreplaceable_goal": "在双方撕破脸之前，用底片换到最大的安全。"
       },
+      "tags": [
+        "nightlife",
+        "crime"
+      ],
       "relations": [
         {
           "a": "player",
           "b": "salon_owner",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 1
-          },
-          "reason": "在洋房宴会上有过数面之缘，保持着礼貌而疏离的交际"
-        },
-        {
-          "a": "player",
-          "b": "police_inspector",
-          "stage": "stranger",
-          "a_to_b": {
-            "trust": 0,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 0,
-            "tension": 2
-          },
-          "reason": "警靴声在大厅回荡，每次靠近都带来盘查的威胁"
-        },
-        {
-          "a": "player",
-          "b": "cabinet_singer",
           "stage": "familiar",
           "a_to_b": {
             "trust": 2,
@@ -1651,7 +1762,21 @@
             "trust": 2,
             "tension": 1
           },
-          "reason": "曾在回廊角落替对方捡起过掉落的登船指南小册子"
+          "reason": "你是公馆沙龙最得力的常客，替主人摆平过两次小报偷拍的风波。"
+        },
+        {
+          "a": "player",
+          "b": "police_inspector",
+          "stage": "testing",
+          "a_to_b": {
+            "trust": 0,
+            "tension": 2
+          },
+          "b_to_a": {
+            "trust": 0,
+            "tension": 2
+          },
+          "reason": "你在霞飞路关卡见过督察带队抄家，那双冷眼让你记到现在，对方也记住了你的相机。"
         },
         {
           "a": "salon_owner",
@@ -1659,117 +1784,14 @@
           "stage": "testing",
           "a_to_b": {
             "trust": 1,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 2
-          },
-          "reason": "每月例规钱从不拖欠，但搜查令进门时依然互不相让"
-        },
-        {
-          "a": "salon_owner",
-          "b": "cabinet_singer",
-          "stage": "familiar",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 2
-          },
-          "reason": "公馆提供庇护套房，也靠{cabinet_singer.name}的名气吸引豪客"
-        },
-        {
-          "a": "police_inspector",
-          "b": "cabinet_singer",
-          "stage": "testing",
-          "a_to_b": {
-            "trust": 0,
             "tension": 3
           },
           "b_to_a": {
-            "trust": 0,
+            "trust": 1,
             "tension": 3
           },
-          "reason": "督察借盘查之名反复上门施压，名角虚与委蛇借机探听口风"
+          "reason": "每月例规银子从不拖欠，可两人都清楚对方手里攥着能送自己上法庭的东西。"
         }
-      ],
-      "tags": [
-        "nightlife",
-        "crime"
-      ]
-    },
-    {
-      "id": "combo_scroll_inspection",
-      "power_structure": "npc_high",
-      "player_positions": [
-        "low",
-        "equal"
-      ],
-      "identity_ids": [],
-      "slots": [
-        "police_inspector",
-        "antiquarian_runner"
-      ],
-      "tension_engine_ids": [
-        "te_blackmail_portrait",
-        "te_curfew_iron_gate"
-      ],
-      "chemistry": "{police_inspector.name}在画廊逐幅查验义卖字画，{antiquarian_runner.name}抱着那轴藏了底片的山水摹本站在你身后发抖；督察的手已经伸向了锦盒。",
-      "stakes": {
-        "resource_gap": "{police_inspector.name}有搜查令和一队巡捕，{antiquarian_runner.name}有一门揭裱手艺，你只有站在画廊里的这个位置。",
-        "limit_gap": "{police_inspector.name}不能在名流面前毁画，{antiquarian_runner.name}一旦被拆穿全家都要受牵连。",
-        "meeting_reason": "义卖前的例行核验恰好轮到这轴画。",
-        "irreplaceable_goal": "让这轴画在今晚不被拆开，或者至少不让自己被拖下水。"
-      },
-      "relations": [
-        {
-          "a": "player",
-          "b": "police_inspector",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 0,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 1,
-            "tension": 1
-          },
-          "reason": "上个月在沙龙门口被对方盘问过一次，对方记住了你的脸"
-        },
-        {
-          "a": "player",
-          "b": "antiquarian_runner",
-          "stage": "familiar",
-          "a_to_b": {
-            "trust": 1,
-            "tension": 1
-          },
-          "b_to_a": {
-            "trust": 2,
-            "tension": 1
-          },
-          "reason": "常在画廊碰面，对方曾替你补过一张撕破的旧照片"
-        },
-        {
-          "a": "police_inspector",
-          "b": "antiquarian_runner",
-          "stage": "testing",
-          "a_to_b": {
-            "trust": 0,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 0,
-            "tension": 3
-          },
-          "reason": "督察早就怀疑这位装裱师替人夹带东西"
-        }
-      ],
-      "tags": [
-        "crime"
       ]
     }
   ],
@@ -1889,6 +1911,38 @@
       ],
       "start_minute": 1420,
       "tags": []
+    },
+    {
+      "id": "a_suite_gramophone",
+      "title": "在三楼套房听一张唱片",
+      "location_ids": [
+        "private_suite"
+      ],
+      "duration_minutes": 45,
+      "beats": [
+        "留声机的针落下，屋里只剩一盏台灯",
+        "有人把披肩搭在椅背上，倒了两杯酒",
+        "窗外的弄堂静下来，唱片转到第二面"
+      ],
+      "hook_ids": [],
+      "start_minute": 1410,
+      "tags": []
+    },
+    {
+      "id": "a_gallery_framing",
+      "title": "在画廊回廊看人装裱",
+      "location_ids": [
+        "gallery_corridor"
+      ],
+      "duration_minutes": 30,
+      "beats": [
+        "浆糊和檀香的味道从回廊尽头飘过来",
+        "装裱师把一张旧画平铺在长案上",
+        "有人凑近看绫绢的接缝，袖口擦过你的手"
+      ],
+      "hook_ids": [],
+      "start_minute": 1140,
+      "tags": []
     }
   ],
   "pressures": [
@@ -1945,45 +1999,43 @@
     },
     {
       "id": "p_curfew_countdown",
-      "title": "后巷铁闸宵禁锁门",
-      "source": "institution",
+      "title": "台风封江",
+      "source": "nature",
       "flags": [
         "timed"
       ],
       "location_ids": [
-        "iron_gate",
-        "veranda_bar"
+        "private_suite",
+        "iron_gate"
       ],
-      "trigger": "后巷传来沉重的铁链拖地声，巡警开始给铁闸挂锁，宣布今晚提前关闸。",
-      "objective": "在铁锁扣死之前拿到通行路条或完成撤离。",
-      "choice": "是拿出金条买通守门巡警，还是冒险从暗房通风井翻越铁丝网。",
+      "trigger": "台风提前登陆，黄浦江封航，弄堂铁闸被狂风刮得哐哐作响，巡捕房干脆提早落了闸，整栋公馆的人都出不去",
+      "objective": "在风雨里熬过这一夜，护住要带走的东西和要带走的人",
+      "choice": "冒雨去码头赌一班不开的船，还是关紧套房的窗守到风停",
       "immediate": {
-        "text": "守门巡警的铜哨已经含在嘴里，铁闸只留下一人宽的缝隙，二十分钟后就要合拢。",
-        "minutes": 20
+        "text": "窗框被风撞得发抖，套房里的煤气灯一明一暗",
+        "minutes": 15
       },
       "near": {
-        "text": "十一点宵禁哨音吹响后，后巷所有无路条者当场关押。",
-        "deadline_minutes": 80
+        "text": "江面风浪越来越高，所有船期都在往后推",
+        "deadline_minutes": 240
       },
       "far": {
-        "trigger": "界河铁桥换防重兵把守",
-        "consequence": "法租界与外界水陆通道彻底断绝，城内搜捕拉网展开。",
-        "due_days": 1
+        "trigger": "台风过后巡捕房挨户清点",
+        "consequence": "今晚留在公馆的人都要登记在册",
+        "due_days": 2
       },
       "exits": [
         {
-          "option": "将一根金条塞入巡警大衣口袋",
-          "cost": "失去到达对岸后唯一的安家本钱"
+          "option": "关紧套房的门窗，守着壁炉等风停",
+          "cost": "一夜漫长，两个人什么都瞒不住"
         },
         {
-          "option": "借黄包车翻倒挡住巡警视线强行冲关",
-          "cost": "后背被警棍重重砸中留下伤"
+          "option": "冒雨去码头打听船期",
+          "cost": "浑身湿透，还在铁闸前被巡警记住了脸"
         }
       ],
       "leverage": null,
-      "hook_ids": [
-        "h_rickshaw_signal"
-      ],
+      "hook_ids": [],
       "start_minute": 1380,
       "tags": []
     },
@@ -2034,46 +2086,48 @@
     },
     {
       "id": "p_microfilm_bargain",
-      "title": "水槽底片当面对质",
+      "title": "例规银子的底片",
       "source": "person",
       "flags": [
-        "timed"
+        "timed",
+        "leverage"
       ],
       "location_ids": [
         "darkroom_cellar",
-        "gallery_corridor"
+        "smoking_room"
       ],
-      "trigger": "两方买家同时出现在暗房红灯前，一人拔出了手枪，另一人拿出了汇票，都要独占刚冲洗出的微缩胶卷。",
-      "objective": "在火拼之前平息争端并保全底片原件。",
-      "choice": "是将底片当场剪为两段各执一半，还是借关灯黑暗制造混乱脱身。",
+      "trigger": "{salon_owner.name}从保险柜里取出一张旧底片：{police_inspector.name}在后巷收金条、签假放行条的那一夜",
+      "objective": "在搜查令落下之前，弄清{salon_owner.name}想拿这张底片换什么",
+      "choice": "陪{salon_owner.name}去谈，还是劝{salon_owner.ta}把底片沉进江里",
       "immediate": {
-        "text": "击锤已经扳开，枪油味混着定影液酸气在狭窄暗室弥漫。",
+        "text": "吸烟室的烟灰缸里，那张底片在灯下泛着冷光",
         "minutes": 15
       },
       "near": {
-        "text": "枪声一旦响起，门外护院与巡捕将在三分钟内包围暗房。",
-        "deadline_minutes": 45
+        "text": "天亮前督察要么撤走搜查令，要么封门",
+        "deadline_minutes": 300
       },
       "far": {
-        "trigger": "黑帮与巡捕在租界全面开战",
-        "consequence": "暗房作为事发源头被双方派人纵火烧毁。",
+        "trigger": "底片落到领事馆手里",
+        "consequence": "督察倒台，公馆和沙龙一起被清算",
         "due_days": 5
       },
       "exits": [
         {
-          "option": "当场熄灭红灯将所有人推入绝对黑暗",
-          "cost": "在摸索中被碎玻璃划伤并遗落随身钥匙"
+          "option": "让{salon_owner.name}拿底片换撤走搜查令",
+          "cost": "从此和督察互相攥着把柄过日子"
         },
         {
-          "option": "当众将胶卷剪成两截各给一份",
-          "cost": "两份残卷信息皆残缺，大幅贬值且得罪双方"
+          "option": "劝{salon_owner.name}当面烧掉底片",
+          "cost": "公馆失去最后的护身符"
         }
       ],
-      "leverage": null,
-      "hook_ids": [
-        "h_wet_negative",
-        "h_darkroom_whisper"
-      ],
+      "leverage": {
+        "holder": "salon_owner",
+        "subject": "police_inspector",
+        "basis": "{salon_owner.name}留着{police_inspector.name}在后巷收受金条、签发假放行条的底片"
+      },
+      "hook_ids": [],
       "start_minute": 1300,
       "tags": [
         "crime"
@@ -2352,5 +2406,5 @@
     "nightlife"
   ],
   "status": "released",
-  "notes": "末代法租界暗房与沙龙。亲密倾向一律与票、钱、职权、庇护脱钩；督察与掮客的亲密前提要求双方无交易、无职权关系。待真实试玩后再转 released。"
+  "notes": "末代法租界暗房与沙龙。亲密倾向一律与票、钱、职权、庇护脱钩；督察与掮客的亲密前提要求双方无交易、无职权关系。待真实试玩后再转 released。\n2026-10-18 按写作规则 v2 改造：组合改成 8 组单人加 1 组旋转梯口对峙，张力来自暗房里缝进背心的底片、每周三的留声机、半张床位的玩笑和衣帽间里的警笛；把柄改由沙龙主人握着督察的例规底片；宵禁改成台风封江的封锁；补两个日常。"
 }

@@ -17,7 +17,7 @@ Thousands of story materials ｜ Zero-drift SQLite state machine<br>
 
 <br>
 
-[So many worlds](#worlds) · [A slice of play](#proof) · [How to start](#start) · [Install](#install)
+[So many worlds](#worlds) · [A slice of play](#proof) · [How to start](#start) · [Install](#install) · [Support & Sponsor](#support)
 
 </div>
 
@@ -444,9 +444,22 @@ Adding a world: following `spec/CONTENT_BIBLE.md`, draft it with `tools/new_worl
   <img src=".github/readme-lofi/architecture.svg" width="100%" alt="Skill architecture: nothing to manage, just use it like any other skill. The player talks to the Agent host, which calls the local runtime with JSON as SKILL.md describes; the runtime has six layers (adapters/cli, application, content, projections, persistence, domain), saves go to SQLite in the user's data folder, and world sources are compiled by tools into read-only world packs.">
 </p>
 
-<div align="center">
+<br>
+
+<a id="support"></a>
+### ☕ Support & Sponsor
+
+If Adult Tension brought you excitement, inspiration, or fun, feel free to buy the author a coffee. Thank you for your support!
+
+<p align="center">
+  <img src="assets/alipay-qr.jpg" width="280" alt="Alipay Sponsor QR Code">
+  <br>
+  <sub>Scan with Alipay · Thank you for supporting open source creation</sub>
+</p>
 
 <br>
+
+<div align="center">
 
 <sub>Rebuilt from scratch by Claude Opus 5.5. Adults only; all characters and events are fictional.</sub>
 

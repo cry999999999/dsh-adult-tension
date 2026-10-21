@@ -17,7 +17,7 @@
 
 <br>
 
-[超多世界](#世界) · [体验切片](#实录) · [怎么开始](#开始) · [安装](#安装)
+[超多世界](#世界) · [体验切片](#实录) · [怎么开始](#开始) · [安装](#安装) · [支持与赞助](#支持与赞助)
 
 </div>
 
@@ -438,9 +438,22 @@ python tools/validate_skill.py skill/adult-tension
   <img src=".github/readme-lofi/architecture.svg" width="100%" alt="SKILL 架构：无需理会，当正常 SKILL 使用就行。玩家对 Agent 宿主说话，宿主按 SKILL.md 用 JSON 调用本地运行时；运行时分 adapters/cli、application、content、projections、persistence、domain 六层，存档写进用户数据目录里的 SQLite；世界源文件由 tools 编译成只读世界包。">
 </p>
 
-<div align="center">
+<br>
+
+<a id="支持与赞助"></a>
+### ☕ 支持与赞助
+
+如果 Adult Tension 为你带来了乐趣、灵感或良好的互动体验，欢迎请作者喝杯咖啡或投喂罐头，感谢每一份支持与鼓励！
+
+<p align="center">
+  <img src="assets/alipay-qr.jpg" width="280" alt="支付宝收款码 - 南瓜他爹大哈">
+  <br>
+  <sub>打开支付宝 [扫一扫] · 感谢对开源与独立创作的支持与认可</sub>
+</p>
 
 <br>
+
+<div align="center">
 
 <sub>由 Claude Opus 5.5 从零重构。仅限成年人，所有人物与情节均为虚构。</sub>
 

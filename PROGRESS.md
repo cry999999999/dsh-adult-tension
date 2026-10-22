@@ -179,6 +179,14 @@
         - `guide` 新增 `topic: "custom_world"`：固定文字的灵感清单（时代地方、你是谁、想遇见的人、拉扯、日常/压力、不想要的，附一句示例）。
         - 开局提示：第一局的 `tip`、“怎么玩”的开局部分和 SKILL.md 开局第 1 步都提到“自定义世界”；开局正文后提示可以“保存世界”。
         - 验证：`test_custom_world` 新增 4 个用例（保存、列出、重开、删除；同名冲突与覆盖；现成世界拒绝；未知名字与混用拒绝；灵感清单）。
+      - 2026-10-22 全项目检查维护（用户：“检查维护一遍整个项目”）：
+        - `check_all` 全部 9 步通过：core 229、content 23、integration 40、e2e 67、validate_skill、gen_references、compile_content、benchmark、reverse_checks；另跑 fuzz 通过。
+        - 补上 schema 3 的迁移样本：上一提交把数据库升到 4 时没有按惯例先冻结旧版本。用 `git archive 2835343` 导出旧代码到临时目录跑 `make_db_fixture.py`，得到 `tests/fixtures/db_v3/`，新增 `MigrationFromV3Test`（3 → 4 迁移、`my-worlds` 为空、旧存档读档后能继续玩）。
+        - 删掉 4 处没用的导入（`launcher.py` 的 `os`、`ops_people.py` 的 `_basis`、`worldpack.py` 的 `PLACEHOLDER_RE`、`projections/context.py` 的 `ST`）。
+        - `RELEASE_NOTES.md` 过时的地方：数据库格式 3 → 4，“六个世界”改为 211 个，自定义世界补上“保存世界”；`custom_world.md` 的“只存在于这一局”改为可以另存。
+        - 内容：211 个世界全部 `released`；按 v2 规则 `--strict-v2` 通过 62 个，其余 149 个还没改造（就是下一步的工作）。
+        - `reports/reverse/` 两份反向检查报告随这次检查刷新（测试数 221 → 229）。
+        - 没改、交给用户：README 的命令表还写自定义世界“只属于这一局”，没有“保存世界 / 我的世界”（README 文字归用户）。
       - 下一步：按用户与 Gemini 的方案改造其余世界（`harbor_night_shift` 被引擎测试钉住，不动）。P18 剩下的部分（11 个只给男性玩家的世界要不要加女性身份）仍待用户决定。
 
 ## 待决事项（需要用户决定）

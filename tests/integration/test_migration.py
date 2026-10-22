@@ -5,6 +5,8 @@ the Skill (tools/make_db_fixture.py): one session at turn 7 and a slot.
 tests/fixtures/db_v2/adult_tension.db was produced by the schema-2 version
 (stage 3): one session at turn 27 with undo points, a fact journal, archived
 turns and events, and a slot holding its facts inside the slot blob.
+tests/fixtures/db_v3/adult_tension.db was produced by the schema-3 version
+(commit 2835343): one session at turn 7 and a slot, before saved worlds.
 """
 
 import json
@@ -23,7 +25,8 @@ from helpers.fs import temp_dir
 
 FIXTURE = os.path.join(REPO_ROOT, "tests", "fixtures", "db_v1", "adult_tension.db")
 FIXTURE_V2 = os.path.join(REPO_ROOT, "tests", "fixtures", "db_v2", "adult_tension.db")
-FIXTURES = (FIXTURE, FIXTURE_V2)
+FIXTURE_V3 = os.path.join(REPO_ROOT, "tests", "fixtures", "db_v3", "adult_tension.db")
+FIXTURES = (FIXTURE, FIXTURE_V2, FIXTURE_V3)
 ENV = clean_env(ADULT_TENSION_INCLUDE_DRAFTS="1")
 SLOT = "旧版本的存档"
 
@@ -73,6 +76,29 @@ def slot_blobs(path):
         return json.loads(zlib.decompress(state)), json.loads(zlib.decompress(archive))
     finally:
         conn.close()
+
+
+class MigrationFromV3Test(unittest.TestCase):
+    def test_fixture_is_a_real_v3_database(self):
+        self.assertEqual(schema(FIXTURE_V3), 3)
+        self.assertNotIn("my_worlds", tables(FIXTURE_V3))
+
+    def test_saved_worlds_arrive_and_the_old_slot_still_plays(self):
+        with temp_dir() as tmp:
+            data_dir = old_data_dir(tmp, FIXTURE_V3)
+            code, env, _raw = run_cli(["doctor"], data_dir)
+            self.assertEqual(code, 0, env)
+            migrations = next(c for c in env["data"]["checks"] if c["id"] == "migrations")
+            self.assertIn("从 schema 3 迁移到 %d" % DB_SCHEMA_VERSION, migrations["message"])
+            self.assertIn("my_worlds", tables(os.path.join(data_dir, "adult_tension.db")))
+            code, env, _raw = run_cli(["my-worlds"], data_dir)
+            self.assertEqual((code, env["data"]["worlds"]), (0, []))
+            code, env, _raw = run_cli(["load-slot"], data_dir, payload={"request_id": "req_load_after_v4", "name": SLOT}, env=ENV)
+            self.assertEqual(code, 0, env)
+            loaded = env["data"]
+            npc = next(c for c in loaded["context"]["scene"]["present"] if c != "player")
+            code, env, _raw = run_cli(["commit-turn"], data_dir, payload=continue_commit(loaded["session_id"], "req_turn_after_v4", loaded["revision"], npc), env=ENV)
+            self.assertEqual(code, 0, env)
 
 
 class MigrationFromV2Test(unittest.TestCase):

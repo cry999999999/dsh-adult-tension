@@ -18,7 +18,6 @@ from ..domain import clock as CL
 from ..domain import facts as FA
 from ..domain import simulation
 from ..domain import state as SS
-from ..domain import structure as ST
 from ..domain.turn import chapter_start
 
 BRIEF_LIMIT = 6 * 1024

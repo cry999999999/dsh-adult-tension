@@ -5,7 +5,6 @@ the data directory can be located (and is outside the Skill directory), the
 cache is redirected there so later cold starts stay fast.
 """
 
-import os
 import sys
 
 from . import paths

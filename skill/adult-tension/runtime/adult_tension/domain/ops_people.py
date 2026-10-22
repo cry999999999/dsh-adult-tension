@@ -11,7 +11,7 @@ from . import cards as C
 from . import facts as FA
 from . import state as SS
 from . import structure as ST
-from .ops import FACT_KEY, _basis, _flush, _need_character, register
+from .ops import FACT_KEY, _flush, _need_character, register
 from .text import split_name
 
 F = S.Field

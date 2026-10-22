@@ -10,7 +10,7 @@ import re
 from .. import schema as S
 from ..errors import CONTENT_ERROR, detail
 from . import structure as ST
-from .text import FEMALE_ADDRESS, MALE_ADDRESS, PLACEHOLDER_RE, address_gender, gendered_pronoun_positions, placeholders, stray_braces
+from .text import FEMALE_ADDRESS, MALE_ADDRESS, address_gender, gendered_pronoun_positions, placeholders, stray_braces
 
 F = S.Field
 

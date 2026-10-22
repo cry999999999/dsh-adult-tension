@@ -57,7 +57,7 @@ def new_session_id(conn):
             return sid
 
 
-FIRST_GAME_TIP = "不知道怎么玩？说“怎么玩”。"
+FIRST_GAME_TIP = "第一次来？随时说“怎么玩”带你上手；想自己定故事，说“自定义世界”。"
 
 
 def validate(spec, payload):
@@ -345,6 +345,11 @@ def new_game(ctx, payload):
     if payload["mode"] is None and not payload["replay"]:
         problems.append(detail("$.mode", "缺少模式", "先问玩家“1 日常 / 2 有压力”；玩家说“随便”才用 random", INVALID_INPUT))
     custom = None
+    if payload["my_world"] is not None:
+        if payload["custom_world"] is not None:
+            problems.append(detail("$.my_world", "my_world 不和 custom_world 同用", "开保存过的世界只给 my_world", INVALID_INPUT))
+        else:
+            payload["custom_world"] = _my_world_pack(ctx, payload["my_world"])
     if payload["custom_world"] is not None:
         if payload["replay"]:
             problems.append(detail("$.replay", "自定义世界没有开局记录，不能“重开 N 号”", "带同一个 custom_world 与 seed 重新开局即可复现", INVALID_INPUT))
@@ -352,7 +357,7 @@ def new_game(ctx, payload):
             problems.append(detail("$.locks.world_id", "自定义世界不和现有世界一起锁定或排除", "去掉 world_id 的锁定与排除", INVALID_INPUT))
     problems.extend(_unknown_excluded_tags(ctx, payload["excludes"].get("content_tags") or []))
     if payload["world_query"] is not None:
-        clash = [name for name, given in (("locks.world_id", payload["locks"].get("world_id")), ("custom_world", payload["custom_world"] is not None), ("replay", payload["replay"])) if given]
+        clash = [name for name, given in (("locks.world_id", payload["locks"].get("world_id")), ("custom_world / my_world", payload["custom_world"] is not None), ("replay", payload["replay"])) if given]
         if clash:
             problems.append(detail("$.world_query", "world_query 不和 %s 同用" % "、".join(clash), "已知世界 ID 时只用 locks.world_id", INVALID_INPUT))
     if problems:
@@ -722,21 +727,21 @@ def undo_turn(ctx, payload):
 # save / load / list
 
 
-def normalize_slot_name(raw, path="$.name"):
+def normalize_slot_name(raw, path="$.name", label="存档名"):
     name = re.sub(r"\s+", "-", raw.strip())
     problems = []
     if not name:
-        problems.append("存档名不能为空")
+        problems.append(label + "不能为空")
     if len(name) > 40:
-        problems.append("存档名最长 40 个字符")
+        problems.append(label + "最长 40 个字符")
     if re.search(r"[\\/:*?\"<>|]", name):
-        problems.append("存档名不能含路径分隔符或 \\ / : * ? \" < > |")
+        problems.append(label + "不能含路径分隔符或 \\ / : * ? \" < > |")
     if any(ord(ch) < 32 or ord(ch) == 127 for ch in name):
-        problems.append("存档名不能含控制字符")
+        problems.append(label + "不能含控制字符")
     if name.strip(".") == "" or name.endswith("."):
-        problems.append("存档名不能只由点组成或以点结尾")
+        problems.append(label + "不能只由点组成或以点结尾")
     if name.split(".")[0].lower() in RESERVED_SLOT_NAMES:
-        problems.append("存档名是系统保留名：%s" % name)
+        problems.append(label + "是系统保留名：%s" % name)
     if problems:
         raise AppError(INVALID_INPUT, problems[0], [detail(path, p, "换一个名字（可以用中文）", INVALID_INPUT) for p in problems])
     return name
@@ -1034,6 +1039,90 @@ def list_worlds(ctx, payload):
     keys = ("id", "title", "modes", "status") if drafts else ("id", "title", "modes")
     out["worlds"] = [dict({k: w[k] for k in keys}, summary=one_line(w["summary"])) for w in worlds]
     return out
+
+
+# ---------------------------------------------------------------------------
+# my worlds: custom worlds the player keeps ("保存世界", "我的世界")
+
+
+def _my_world_names(conn):
+    return [w["name"] for w in repo.list_my_worlds(conn)]
+
+
+def _no_my_world(conn, name, path="$.name"):
+    names = _my_world_names(conn)
+    return AppError(
+        NOT_FOUND,
+        "没有名为「%s」的世界" % name,
+        [detail(path, "保存的世界里没有这个名字", "我的世界：%s" % ("、".join(names[:20]) or "（无）"), NOT_FOUND)],
+        available=names[:20],
+    )
+
+
+def _my_world_pack(ctx, raw_name):
+    name = normalize_slot_name(raw_name, "$.my_world", "世界名")
+    found = repo.get_my_world(ctx.db(), name, with_world=True)
+    if found is None:
+        raise _no_my_world(ctx.db(), name, "$.my_world")
+    return found["world"]
+
+
+def save_world(ctx, payload):
+    """Keep the custom world of a game under a name, to open it again later."""
+    payload = validate(specs.SAVE_WORLD, payload)
+    name = normalize_slot_name(payload["name"], label="世界名")
+
+    def handler(conn, now):
+        session = repo.load_session(conn, payload["session_id"])
+        world = session["content"]["world"]
+        if not world.get("custom"):
+            raise AppError(
+                INVALID_INPUT,
+                "只有自定义世界能保存",
+                [detail("$.session_id", "这一局用的是现成的世界《%s》" % world["title"], "现成的世界随时能开：开局时说出它的名字", INVALID_INPUT)],
+            )
+        existing = repo.get_my_world(conn, name)
+        if existing is not None and not payload["overwrite"]:
+            raise AppError(
+                SLOT_CONFLICT,
+                "「%s」已存在" % name,
+                [detail("$.name", "世界名已被占用（《%s》）" % existing["title"], "问玩家是否覆盖；确认后带 overwrite: true 重交，或换个名字", SLOT_CONFLICT)],
+                world={k: existing[k] for k in ("name", "title", "saved_at")},
+            )
+        repo.put_my_world(conn, name, world, now)
+        return {
+            "world": {"name": name, "title": world["title"], "saved_at": now},
+            "receipt": "已保存世界「%s」（《%s》）。以后说“我的世界”查看，说“开局 我的世界 %s”再玩。" % (name, world["title"], name),
+        }
+
+    return create_write(ctx, "save-world", payload, handler)
+
+
+def my_worlds(ctx, payload):
+    worlds = repo.list_my_worlds(ctx.db())
+    out = {"worlds": [dict(w, summary=one_line(w["summary"])) for w in worlds]}
+    if not worlds:
+        out["hint"] = "还没有保存的世界：用自定义世界开一局，再说“保存世界 名字”"
+    return out
+
+
+def delete_world(ctx, payload):
+    payload = validate(specs.DELETE_WORLD, payload)
+    name = normalize_slot_name(payload["name"], label="世界名")
+    if not payload["confirm"]:
+        raise AppError(
+            INVALID_INPUT,
+            "删除世界需要玩家确认",
+            [detail("$.confirm", "玩家还没有确认", "先问“确定删除世界「%s」吗？”，确认后带 confirm: true 重交" % name, INVALID_INPUT)],
+        )
+
+    def handler(conn, now):
+        if repo.get_my_world(conn, name) is None:
+            raise _no_my_world(conn, name)
+        repo.delete_my_world(conn, name)
+        return {"deleted": name, "receipt": "已删除世界「%s」（用它玩过的存档不受影响）" % name}
+
+    return create_write(ctx, "delete-world", payload, handler)
 
 
 # ---------------------------------------------------------------------------

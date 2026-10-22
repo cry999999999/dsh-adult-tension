@@ -341,5 +341,69 @@ class PlayTest(unittest.TestCase):
             self.assertEqual(out["twist_candidates"], [])
 
 
+class MyWorldsTest(unittest.TestCase):
+    """“保存世界 / 我的世界”: a custom world kept under a name opens again later."""
+
+    def test_a_saved_world_lists_reopens_and_deletes(self):
+        with app() as ctx:
+            ids = Ids()
+            first = new_custom(ctx, ids, example(), mode="daily", seed=5)
+            saved = service.save_world(ctx, {"request_id": ids(), "session_id": first["session_id"], "name": "淡季 民宿"})
+            self.assertEqual(saved["world"]["name"], "淡季-民宿")
+            listed = service.my_worlds(ctx, {})["worlds"]
+            self.assertEqual([(w["name"], w["world_id"]) for w in listed], [("淡季-民宿", example()["id"])])
+            self.assertTrue(listed[0]["summary"])
+            again = service.new_game(ctx, {"request_id": ids(), "mode": "daily", "seed": 5, "my_world": "淡季-民宿"})
+            self.assertEqual(session(ctx, again["session_id"])["content"]["world"], session(ctx, first["session_id"])["content"]["world"])
+            self.assertEqual(again["opening"]["footer"].split("｜")[:2], first["opening"]["footer"].split("｜")[:2])
+            self.assertEqual(repo.opening_history(ctx.db()), [])
+            with self.assertRaises(AppError) as caught:
+                service.delete_world(ctx, {"request_id": ids(), "name": "淡季-民宿"})
+            self.assertEqual(caught.exception.code, "INVALID_INPUT")
+            service.delete_world(ctx, {"request_id": ids(), "name": "淡季-民宿", "confirm": True})
+            self.assertEqual(service.my_worlds(ctx, {})["worlds"], [])
+            # games played in it keep their world
+            self.assertTrue(session(ctx, again["session_id"])["content"]["world"]["custom"])
+
+    def test_a_taken_name_needs_overwrite_and_a_ready_made_world_cannot_be_saved(self):
+        with app() as ctx:
+            ids = Ids()
+            sid = new_custom(ctx, ids, example())["session_id"]
+            service.save_world(ctx, {"request_id": ids(), "session_id": sid, "name": "民宿"})
+            with self.assertRaises(AppError) as caught:
+                service.save_world(ctx, {"request_id": ids(), "session_id": sid, "name": "民宿"})
+            self.assertEqual(caught.exception.code, "SLOT_CONFLICT")
+            service.save_world(ctx, {"request_id": ids(), "session_id": sid, "name": "民宿", "overwrite": True})
+            ready = open_game(ctx, ids)["session_id"]
+            with self.assertRaises(AppError) as caught:
+                service.save_world(ctx, {"request_id": ids(), "session_id": ready, "name": "港口"})
+            self.assertEqual(caught.exception.code, "INVALID_INPUT")
+            self.assertEqual(len(service.my_worlds(ctx, {})["worlds"]), 1)
+
+    def test_unknown_names_and_mixed_inputs_are_refused(self):
+        with app() as ctx:
+            ids = Ids()
+            with self.assertRaises(AppError) as caught:
+                service.new_game(ctx, {"request_id": ids(), "mode": "daily", "my_world": "没有"})
+            self.assertEqual(caught.exception.code, "NOT_FOUND")
+            sid = new_custom(ctx, ids, example())["session_id"]
+            service.save_world(ctx, {"request_id": ids(), "session_id": sid, "name": "民宿"})
+            with self.assertRaises(AppError) as caught:
+                service.new_game(ctx, {"request_id": ids(), "mode": "daily", "my_world": "民宿", "custom_world": example()})
+            self.assertEqual(caught.exception.code, "INVALID_INPUT")
+            with self.assertRaises(AppError) as caught:
+                service.new_game(ctx, {"request_id": ids(), "mode": "daily", "my_world": "民宿", "replay": True, "seed": 3})
+            self.assertEqual(caught.exception.code, "INVALID_INPUT")
+
+    def test_the_inspiration_list_is_fixed_text(self):
+        from adult_tension.application import guide
+
+        with app() as ctx:
+            out = guide.run(ctx, {"topic": "custom_world"})
+            self.assertEqual(out["stage"], "custom_world")
+            self.assertIn("保存世界", out["text"])
+            self.assertIn("自定义世界", "\n".join(guide.run(ctx, {})["lines"]))
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -18,6 +18,7 @@
 |---|---|---|---|---|
 | `commit-turn` | session_write | 必填 | 叙事回合：提交操作，返回结果与下一回合上下文 | — |
 | `delete-slot` | session_write | 必填 | 删除存档（需要 confirm: true） | — |
+| `delete-world` | create | 必填 | 删除保存的世界（需要 confirm: true） | — |
 | `doctor` | diagnostic | 无 | 检查环境并完成首次初始化（幂等） | — |
 | `export-save` | read | 必填 | 把会话或存档导出为文件（带完整性校验值） | — |
 | `get-context` | read | 必填 | 当前上下文（brief / full）；可带快进预览 preview_time 与转折候选 want_twist | — |
@@ -27,8 +28,10 @@
 | `list-slots` | read | 无 | 存档列表 | — |
 | `list-worlds` | read | 可选 | 世界列表、一句话介绍、支持的模式 | `--include-drafts` |
 | `load-slot` | create | 必填 | 读档：创建新的会话副本，原存档不变 | — |
+| `my-worlds` | read | 无 | 玩家保存的自定义世界 | — |
 | `new-game` | create | 必填 | 开局 | `--include-drafts` |
 | `save-slot` | session_write | 必填 | 存档（省略名字时存到当前槽或自动命名） | — |
+| `save-world` | create | 必填 | 保存这一局的自定义世界，以后用 new-game 的 my_world 再开 | — |
 | `set-boundary` | session_write | 必填 | 登记或撤销硬边界 | — |
 | `set-preferences` | session_write | 必填 | 内心可见、叙事助手、离屏推演、语态、人称、配对偏好、节奏、尺度 | — |
 | `set-safety` | session_write | 必填 | 暂停、恢复、换个场景 | — |
@@ -81,6 +84,14 @@
 | `name` | 字符串，≤60 字 | 是 |  |
 | `confirm` | 布尔 | 否，默认 `false` | 玩家确认删除后才为 true |
 
+### `delete-world`
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `request_id` | 字符串，≤64 字，8–64 位 [A-Za-z0-9_-]；直接用上一次返回的 next_request_id | 是 |  |
+| `name` | 字符串，≤60 字 | 是 |  |
+| `confirm` | 布尔 | 否，默认 `false` | 玩家确认删除后才为 true |
+
 ### `export-save`
 
 | 字段 | 类型 | 必填 | 说明 |
@@ -112,6 +123,7 @@
 | 字段 | 类型 | 必填 | 说明 |
 |---|---|---|---|
 | `session_id` | 字符串，≤40 字，会话 ID，形如 s_1a2b3c4d 或 null | 否，默认 `null` | 正在玩的会话；不给时是还没开局的版本 |
+| `topic` | 枚举：`play` / `custom_world` | 否，默认 `"play"` | play 怎么玩 / custom_world 自定义世界的灵感清单 |
 
 ### `import-save`
 
@@ -159,6 +171,7 @@
 | `player` | 对象（玩家设定） | 否，默认 `{}` |  |
 | `npc_gender_preference` | 枚举：`any` / `mostly_female` / `mostly_male` / `female_only` / `male_only` / `mixed` | 否，默认 `"any"` |  |
 | `custom_world` | 自定义世界包 或 null | 否，默认 `null` |  |
+| `my_world` | 字符串，≤60 字 或 null | 否，默认 `null` | 玩家保存过的世界名（my-worlds 列出），不与 custom_world 同用 |
 | `preferences` | 对象（偏好） | 否，默认 `{}` |  |
 | `include_drafts` | 布尔 | 否，默认 `false` |  |
 
@@ -215,6 +228,15 @@
 | `name` | 字符串，≤60 字 或 null | 否，默认 `null` |  |
 | `overwrite` | 布尔 | 否，默认 `false` |  |
 | `save_as` | 布尔 | 否，默认 `false` |  |
+
+### `save-world`
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `request_id` | 字符串，≤64 字，8–64 位 [A-Za-z0-9_-]；直接用上一次返回的 next_request_id | 是 |  |
+| `session_id` | 字符串，≤40 字，会话 ID，形如 s_1a2b3c4d | 是 | 用自定义世界开的这一局 |
+| `name` | 字符串，≤60 字 | 是 | 玩家起的名字 |
+| `overwrite` | 布尔 | 否，默认 `false` | 玩家确认覆盖同名世界后才为 true |
 
 ### `set-boundary`
 

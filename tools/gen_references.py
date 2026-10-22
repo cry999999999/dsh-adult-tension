@@ -184,7 +184,8 @@ def render_custom_world():
     lines.append("1. 先和玩家确认：时代与地方、日常还是有压力、想见到的两三个人。玩家没说的，按时代常识补齐，不要追问细节。\n")
     lines.append("2. 从文末的示例改起，写一个 JSON 对象：`\"custom\": true`，`id` 用 `custom_` 开头的小写字母、数字、下划线，不写 `extends`。\n")
     lines.append("3. 直接调用 `new-game`（不先用 `verify-content` 预检，它是开发工具），输入 `{\"request_id\", \"mode\", \"custom_world\": {...}}`；可带 `seed`、`player`、`npc_gender_preference`、`excludes.content_tags`，不带 `locks.world_id`、`excludes.world_ids`、`replay`。\n")
-    lines.append("4. 返回 `CONTENT_ERROR` 时，`details` 一次列出全部问题，路径以 `$.custom_world` 开头；逐条改好，换新的 `request_id` 重交。只有需要玩家补设定时才把问题讲给玩家。\n\n")
+    lines.append("4. 返回 `CONTENT_ERROR` 时，`details` 一次列出全部问题，路径以 `$.custom_world` 开头；逐条改好，换新的 `request_id` 重交。只有需要玩家补设定时才把问题讲给玩家。\n")
+    lines.append("5. 开局后玩家说“保存世界 名字”：`save-world` 存下这一局的世界包；以后 `new-game` 带 `\"my_world\": \"名字\"`（不写 `custom_world`）再开，运行时按同样的规则重新校验。`my-worlds` 列出，`delete-world` 删除。\n\n")
     lines.append("## 数量下限\n\n| 项 | 下限 |\n|---|---|\n")
     rows = [
         ("世界规则 `rules`", m["rules"]),

@@ -280,7 +280,24 @@ def _migrate_to_3(conn):
         conn.execute("UPDATE sessions SET activity=? WHERE session_id=?", (position, session_id))
 
 
-MIGRATIONS = {1: _migrate_to_1, 2: _migrate_to_2, 3: _migrate_to_3}
+def _migrate_to_4(conn):
+    # v4: custom worlds the player saved ("保存世界") to open again later.
+    _exec_script(
+        conn,
+        """
+        CREATE TABLE my_worlds (
+            name TEXT PRIMARY KEY,
+            world_id TEXT NOT NULL,
+            title TEXT NOT NULL,
+            summary TEXT NOT NULL,
+            world BLOB NOT NULL,
+            saved_at TEXT NOT NULL
+        );
+        """,
+    )
+
+
+MIGRATIONS = {1: _migrate_to_1, 2: _migrate_to_2, 3: _migrate_to_3, 4: _migrate_to_4}
 
 
 def _now_stamp():

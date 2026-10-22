@@ -85,6 +85,7 @@ NEW_GAME = _obj(
         "player": F(PLAYER, required=False, default={}),
         "npc_gender_preference": F(S.Enum(*ST.NPC_GENDER_PREFERENCES), required=False, default="any"),
         "custom_world": F(S.Nullable(S.Any("自定义世界包")), required=False, default=None),
+        "my_world": F(S.Nullable(S.Str(1, 60)), required=False, default=None, desc="玩家保存过的世界名（my-worlds 列出），不与 custom_world 同用"),
         "preferences": F(PREFERENCES, required=False, default={}),
         "include_drafts": F(S.Bool(), required=False, default=False),
     },
@@ -137,6 +138,23 @@ DELETE_SLOT = _obj(
     ),
     "delete-slot",
 )
+SAVE_WORLD = _obj(
+    {
+        "request_id": F(S.RequestId()),
+        "session_id": F(SESSION_ID, desc="用自定义世界开的这一局"),
+        "name": F(S.Str(1, 60), desc="玩家起的名字"),
+        "overwrite": F(S.Bool(), required=False, default=False, desc="玩家确认覆盖同名世界后才为 true"),
+    },
+    "save-world",
+)
+DELETE_WORLD = _obj(
+    {
+        "request_id": F(S.RequestId()),
+        "name": F(S.Str(1, 60)),
+        "confirm": F(S.Bool(), required=False, default=False, desc="玩家确认删除后才为 true"),
+    },
+    "delete-world",
+)
 LIST_SESSIONS = _obj({"limit": F(S.Int(1, 20), required=False, default=10)}, "list-sessions")
 EXPORT_SAVE = _obj(
     {
@@ -172,7 +190,10 @@ LIST_WORLDS = _obj(
     "list-worlds",
 )
 GUIDE = _obj(
-    {"session_id": F(S.Nullable(SESSION_ID), required=False, default=None, desc="正在玩的会话；不给时是还没开局的版本")},
+    {
+        "session_id": F(S.Nullable(SESSION_ID), required=False, default=None, desc="正在玩的会话；不给时是还没开局的版本"),
+        "topic": F(S.Enum("play", "custom_world"), required=False, default="play", desc="play 怎么玩 / custom_world 自定义世界的灵感清单"),
+    },
     "guide",
 )
 SMOKE = _obj({"seed": F(S.Int(1, 999999), required=False, default=42), "turns": F(S.Int(2, 60), required=False, default=8)}, "smoke")

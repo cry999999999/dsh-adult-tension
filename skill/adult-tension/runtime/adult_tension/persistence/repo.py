@@ -566,3 +566,35 @@ def opening_for_seed(conn, seed):
     """The latest opening this machine made from `seed`: its conditions and signature."""
     row = conn.execute("SELECT conditions, signature FROM opening_history WHERE seed=? ORDER BY id DESC LIMIT 1", (seed,)).fetchone()
     return {"conditions": json.loads(row[0]), "signature": row[1]} if row else None
+
+
+# -- my worlds ------------------------------------------------------------------
+
+MY_WORLD_COLUMNS = ("name", "world_id", "title", "summary", "saved_at")
+
+
+def get_my_world(conn, name, with_world=False):
+    columns = ", ".join(MY_WORLD_COLUMNS) + (", world" if with_world else "")
+    row = conn.execute("SELECT %s FROM my_worlds WHERE name=?" % columns, (name,)).fetchone()
+    if row is None:
+        return None
+    info = dict(zip(MY_WORLD_COLUMNS, row[: len(MY_WORLD_COLUMNS)]))
+    if with_world:
+        info["world"] = unpack(row[len(MY_WORLD_COLUMNS)])
+    return info
+
+
+def put_my_world(conn, name, world, now):
+    conn.execute(
+        "INSERT OR REPLACE INTO my_worlds(name, world_id, title, summary, world, saved_at) VALUES(?,?,?,?,?,?)",
+        (name, world["id"], world["title"], "%s·%s：%s" % (world["era"], world["region"], world["premise"]), pack(world), now),
+    )
+
+
+def list_my_worlds(conn):
+    rows = conn.execute("SELECT %s FROM my_worlds ORDER BY saved_at DESC, name" % ", ".join(MY_WORLD_COLUMNS)).fetchall()
+    return [dict(zip(MY_WORLD_COLUMNS, row)) for row in rows]
+
+
+def delete_my_world(conn, name):
+    conn.execute("DELETE FROM my_worlds WHERE name=?", (name,))

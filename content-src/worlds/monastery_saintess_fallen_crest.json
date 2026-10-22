@@ -389,8 +389,8 @@
   "character_templates": [
     {
       "id": "saintess_euphilia",
-      "gender": "any",
-      "gender_reason": null,
+      "gender": "female",
+      "gender_reason": "圣辉教会的圣女之位只由女性承袭，前提与大典都围绕“大圣女”展开。",
       "age_range": [
         26,
         33
@@ -655,8 +655,8 @@
     },
     {
       "id": "attendant_sister_cecilia",
-      "gender": "any",
-      "gender_reason": null,
+      "gender": "female",
+      "gender_reason": "圣女行宫只许修女侍奉，修士不得入内。",
       "age_range": [
         26,
         34
@@ -2179,7 +2179,7 @@
       ],
       "trigger": "侍奉修女端着圣水敲门，说枢机的执事正在石廊里打听圣女今夜在哪。",
       "objective": "弄清修女站在哪一边，以及修女知道多少。",
-      "choice": "请修女进来坦白，还是请修女出去替你们挡人？",
+      "choice": "让修女把执事引去地下圣水池拖一阵，还是让修女进来，把那本止痛草小账当面对清？",
       "immediate": {
         "text": "门外银壶轻碰托盘，一句压低的“是我”。",
         "minutes": 5
@@ -2195,11 +2195,11 @@
       },
       "exits": [
         {
-          "option": "请修女进来，把那本止痛草小账也带来",
+          "option": "让修女进来，三个人把止痛草小账一笔笔对清",
           "cost": "行宫无人值守，执事会起疑"
         },
         {
-          "option": "请修女回行宫，替圣女应付执事的盘问",
+          "option": "让修女把执事引到地下圣水池，替你们拖一刻钟",
           "cost": "修女要撒一个可能被拆穿的谎"
         }
       ],
@@ -2280,7 +2280,7 @@
       ],
       "trigger": "一道雷劈中尖塔十字架，偏殿上方的彩绘玻璃整片碎落，暴雨裹着碎玻璃灌进来。",
       "objective": "护住所有人退到地下圣水池，并保住古咒卷轴。",
-      "choice": "先护人，还是先抢卷轴？",
+      "choice": "从碎玻璃里抢出古咒卷轴，还是用身体挡着圣女冲过石廊？",
       "immediate": {
         "text": "彩窗炸开的脆响和暴雨一起砸进来，烛火全灭了。",
         "minutes": 10
@@ -2296,11 +2296,11 @@
       },
       "exits": [
         {
-          "option": "先护着圣女退到圣水池，再回来抢卷轴",
+          "option": "扯下祭坛布裹住圣女，顶着碎玻璃冲进石廊",
           "cost": "卷轴有几页被雨水泡花了"
         },
         {
-          "option": "先抢卷轴，再去找人",
+          "option": "扑到经台前把卷轴压在身下，等这一阵碎玻璃落完",
           "cost": "圣女被碎玻璃划伤了手臂"
         }
       ],
@@ -2346,7 +2346,7 @@
         "cathedral_grand_nave_corridor",
         "sacred_baptismal_crypt_pool"
       ],
-      "text": "{attendant_sister_cecilia.name}端着圣水倚在门框上，目光扫过圣女按着的肩膀，笑意淡了：“圣水送来了。顺便问一句——你是来救人的，还是来审人的？”"
+      "text": "{attendant_sister_cecilia.name}把圣水盆往桌上一放，水洒出来半盆：“石廊里全是枢机的人。你们俩谁先编好说辞，我好去应付。”"
     },
     {
       "id": "h_ignis_staff_raid",
@@ -2356,7 +2356,7 @@
         "cathedral_grand_nave_corridor",
         "confessional_inner_sanctum"
       ],
-      "text": "{cardinal_ignis.name}的法杖在门外顿了三下：“圣女殿下，老朽接到密报，说这里有人在施深渊邪术。请开门。”"
+      "text": "门外传来金十字法杖拖过石板的声音，停在门口，{cardinal_ignis.name}却没敲门，只是轻轻咳嗽了一声。"
     },
     {
       "id": "h_roland_gate_count",
@@ -2365,7 +2365,7 @@
       "location_ids": [
         "cathedral_grand_nave_corridor"
       ],
-      "text": "{templar_commander_roland.name}站在铁栅下，手按绞盘：“一刻钟后落栅。走不走，你们自己定。”"
+      "text": "{templar_commander_roland.name}解下腰间的钥匙环，挑出一把递过来：“偏殿侧门的。落栅之后，我什么都没看见。”"
     },
     {
       "id": "h_aldric_summons",
@@ -2392,7 +2392,7 @@
       "location_ids": [
         "confessional_inner_sanctum"
       ],
-      "text": "{inquisitor_valeria.name}在格栅另一侧坐下，把罗盘放在膝上：“好，我听。但听完之后该怎么判，我还是会怎么判。”"
+      "text": "{inquisitor_valeria.name}把罗盘倒扣在格栅上，指针朝下：“我数到一百。数完之前，这东西什么也没测到。”"
     },
     {
       "id": "h_cecilia_ledger_slip",
@@ -2401,7 +2401,7 @@
       "location_ids": [
         "cathedral_grand_nave_corridor"
       ],
-      "text": "{attendant_sister_cecilia.name}在石廊尽头拦住你，塞过来一本小账：“半年了，止痛草一天比一天多。今晚要是没人开口，我就去找大主教。”"
+      "text": "{attendant_sister_cecilia.name}把一本油渍斑斑的小账塞进你袖子里：“止痛草，半年，一天比一天多。我不识几个字，可数我是会数的。”"
     },
     {
       "id": "h_roland_old_wound",
@@ -2419,7 +2419,7 @@
       "location_ids": [
         "confessional_inner_sanctum"
       ],
-      "text": "{saintess_euphilia.name}站起来，第一次没有用圣女的口气：“给我一夜。大典之后，我自己去向大主教坦白。如果我食言，你再说出去。”"
+      "text": "{saintess_euphilia.name}把圣冠摘下来放在膝上，盯着上面的裂纹：“大典之后我会去见大主教。在那之前，这扇门能不能替我守住？”"
     },
     {
       "id": "h_ignis_side_deal",
@@ -2428,7 +2428,7 @@
       "location_ids": [
         "cathedral_grand_nave_corridor"
       ],
-      "text": "{cardinal_ignis.name}在石廊阴影里压低声音：“学者，把那卷古咒交给老朽，你的异端罪名明天就能赦免。这对谁都好。”"
+      "text": "{cardinal_ignis.name}在石廊阴影里把一卷赦免状展开一半：“异端，你的名字我已经写上了。缺的只是那卷古咒。”"
     },
     {
       "id": "h_aldric_seal_offer",
@@ -2446,7 +2446,7 @@
       "location_ids": [
         "saintess_private_chapel_balcony"
       ],
-      "text": "{saintess_euphilia.name}一个人站在圣母像下，背挺得笔直，左手却一直按着右肩，按得指节发白。"
+      "text": "{saintess_euphilia.name}跪在圣母像前祷告，念到一半停了下来，把额头抵在冰冷的栏杆上，很久没有动。"
     },
     {
       "id": "h_valeria_notes_pause",
@@ -2455,7 +2455,7 @@
       "location_ids": [
         "cathedral_grand_nave_corridor"
       ],
-      "text": "{inquisitor_valeria.name}站在彩窗下，把调查笔记里那张速写翻过来看了很久，又夹了回去。"
+      "text": "{inquisitor_valeria.name}坐在彩窗下擦拭罗盘，擦了一遍又一遍，镜面早就亮得照得见人了。"
     }
   ],
   "twists": [
@@ -2473,19 +2473,19 @@
       "requires": [
         "inquisitor_valeria"
       ],
-      "text": "副审判官半年前就已秘密申请封存深渊战役的全部卷宗；审判官早在查这件事，只是一直在等圣女自己开口。"
+      "text": "副审判官的罗盘被人动过手脚：指针的校准刻度偏了半格，照谁都会多出三分魔瘴；动手的人能进裁判所的器械房。"
     },
     {
       "id": "t_original_scroll_found",
       "category": "资源",
       "requires": [],
-      "text": "秘阁深处找到了封印古咒的原本，按原本施咒只需要半个时辰，而且不再需要没药墨水。"
+      "text": "秘阁深处找到古咒的原本，可原本上写着：封印要以施咒者自己的一部分圣光为代价，从此再也不能主持任何圣礼。"
     },
     {
       "id": "t_confession_amnesty",
       "category": "制度",
       "requires": [],
-      "text": "圣座今年颁布了自陈宽宥令：神职人员在被揭发前主动坦白身上的深渊伤痕，可免于火刑——期限正是今日黎明。"
+      "text": "圣座颁下新规：大典主礼者须在前夜接受裁判所的罗盘复检，复检由副审判长亲自主持，结果当场宣读。"
     },
     {
       "id": "t_gate_drops_early",
@@ -2502,13 +2502,13 @@
         "saintess_euphilia",
         "attendant_sister_cecilia"
       ],
-      "text": "修女说出了孤儿院的旧事：被选进大圣堂那天，圣女对修女说过，“要是有一天我做错了，你要第一个告诉我。”"
+      "text": "修女说出实情：止痛草不是修女自己去买的，是枢机的执事每月送来，修女一直以为那是大主教的意思。"
     },
     {
       "id": "t_gate_winch_snaps",
       "category": "意外",
       "requires": [],
-      "text": "雷击劈断了绞盘钢索，铁栅楔紧在地槽里，偏殿里外都出不去，只能等清晨的工匠来拆。"
+      "text": "雷击劈断了钟楼的绳索，终钟停在半声；石廊里的执事以为落栅取消了，开始挨个房间敲门。"
     }
   ],
   "forbidden_terms": [

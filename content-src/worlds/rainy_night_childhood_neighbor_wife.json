@@ -392,8 +392,8 @@
   "character_templates": [
     {
       "id": "neighbor_yui",
-      "gender": "any",
-      "gender_reason": null,
+      "gender": "female",
+      "gender_reason": "标题和前提都是 1998 年日本的“人妻”：青梅嫁给了商社职员，当时的婚姻只在男女之间成立。",
       "age_range": [
         26,
         31
@@ -2487,7 +2487,7 @@
       "requires": [
         "neighbor_yui"
       ],
-      "text": "老匠人保管的那封信是两家父母当年写的：信里说，如果{neighbor_yui.given}将来过得不好，两家都会支持{neighbor_yui.given}回来，那笔债也早就有人替{neighbor_yui.given}家还清了。"
+      "text": "老匠人保管的那封信是两家父母当年写的：信里只有一句：如果{neighbor_yui.given}将来过得不好，就回老街来。信封上没写收件人，也没贴邮票。"
     },
     {
       "id": "t_phone_line_dead",

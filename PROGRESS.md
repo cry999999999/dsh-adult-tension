@@ -190,6 +190,18 @@
           - README 中英两版的命令表补上“自定义世界”灵感清单、“开局 我的世界 名字”“保存世界 名字 · 我的世界”，去掉“只属于这一局”。
           - SKILL.md 命令表：还没开局时的空输入改走开局流程（以前写的是 `continue`，没有会话可推进）。
           - 149 个世界的 v2 改造照旧等用户与 Gemini 的方案，不在这次维护里做。
+      - 2026-10-22 已改造世界的审查与修复（用户：“扫描已改造世界，检查存在的问题”，随后“全部修复吧”）：
+        - 审查对象是通过 `--strict-v2` 的 62 个世界，报告与逐世界记录在 `work/review/`（gitignore，不提交）。修复每个世界一个脚本 `work/review/patches/<id>.py`，`run.sh` 先从 HEAD 取回再打补丁，41 个世界有改动。
+        - 前提与危机错位（B）：fallen_knight、abyssal、chaebol、yakuza_* 等把开场危机写进前提或玩家身份的，改成常态处境；changming、siberian 反过来补上“老僧暴毙”“要犯暴毙”这一常设处境；neighbor_wife 前提改回平常日子，讨债危机留给处境。
+        - 年龄（D）：职位、履历与年龄不符的拉开（九段名人 30–36、监查长 45–58、巡查长 30–40、安保总长 40–50、随车老医生 52–62 等），倒推出未成年时间点的履历改掉（domination 实习、yakuza_widow 警校、shogi 香囊）；玩家身份开头的“年满 X 岁”去掉（tatami、shogi、cruise、neighbor_wife 等）。
+        - 玩家身份写成外貌或性化描写的（E：tokyo、yacht、abyssal、defeated_shrine、floating_city、snowbound_onsen）改成处境；性别不限却写了女性称呼的（H）：calendar“舞女”→“伴舞”，alchemy“女学者”→“学者”，changming“盲琴女”→“盲琴师”，monastery 的圣女与修女、rainy_night 的青梅改为固定女性并写明理由。
+        - 转折（26 个世界共 124 条）：天降神器、遗孤身世、替玩家定过去的转折改写为有代价的变化（例如密令只给到天亮、药剂只够一人、能走的路只剩一条）；monastery 与 midnight_penthouse 的同模板压力、钩子、转折在 monastery 一侧重写；calendar、republic、the_seventh 与隐秘重复的转折换掉。
+        - 事实与逻辑：paramount“太平洋开战那天”→“淞沪会战那年”；izu“千万”→“三千万”；abyss_collapsed 区域改为第七层与标题一致；bakumatsu“箭镞”→“铅弹”；gothic 的“冰晶纯露”“符文印章”换成时代内的东西；siberian 四个 NPC 各握凶手答案改为只有客商知情，其余是零散线索。
+        - 引导不就医的压力：last_issue（胃痉挛，原选项是锁门热敷还是叫救护车）改为两个出口都送医；the_seventh（中暑）降温出口加上“十分钟不见好转就叫急救”；yosai_machi（烫伤）先凉水敷十分钟；third_floor 天台落锁的选项与处境对不上，改为“回天台抢收麻绳还是留在教室”。
+        - 文风：style_hint 是名词串的 7 个世界改成写法指令；几处空喊台词改平；withered_elven 玩家“纯血旁支”与 NPC 遗孤撞位，玩家改为看管遗孤的旁支家主。
+        - 不改的：A 类“贴身照料”压力是 v2 规则要求的，只改上面四条有害的；tokyo、yacht、abyssal 让玩家扮演配角之一是设计，同场撞人已由组合的 `identity_ids` 排除；九条这个姓在几个世界重复不算缺陷（yakuza_widow 的姓氏池里换成久我，避免与本家重名）。
+        - 62 个世界全部通过 `--strict-v2`；内容版本 2026.10.11 → 2026.10.12（`RELEASE_NOTES.md` 同步），`content.lock.json` 与 `references/worlds.md` 重新生成。
+        - 校准记录（`tests/e2e/calibration/build.py`）随内容版本重新生成。
       - 下一步：按用户与 Gemini 的方案改造其余世界（`harbor_night_shift` 被引擎测试钉住，不动）。P18 剩下的部分（11 个只给男性玩家的世界要不要加女性身份）仍待用户决定。
 
 ## 待决事项（需要用户决定）

@@ -1086,8 +1086,8 @@
         20,
         30
       ],
-      "adult_context": "百乐舞厅的签约舞女，成年人，入行第三年",
-      "public_role": "舞女",
+      "adult_context": "百乐舞厅的签约伴舞，成年人，入行第三年",
+      "public_role": "伴舞",
       "appearance_options": [
         "舞鞋的后跟磨歪了，走路一边轻一边重",
         "头发烫成波浪，耳朵上一对不值钱的珍珠耳环"
@@ -2280,7 +2280,7 @@
         "rising_actress",
         "taxi_dancer"
       ],
-      "text": "{rising_actress.name}和{taxi_dancer.name}是同一个乡下出来的，有人在小报上登了两个人小时候的合影。"
+      "text": "有人看见{rising_actress.name}和{taxi_dancer.name}深夜一起从锅炉房后门出去，第二天小报就编出了一段两人的私情。"
     },
     {
       "id": "t_chief_debt",

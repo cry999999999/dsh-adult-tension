@@ -12,7 +12,7 @@
  "skill": {
   "skill_root": null,
   "skill_version": null,
-  "content_version": "2026.10.11"
+  "content_version": "2026.10.12"
  },
  "turns": [
   {
@@ -459,7 +459,7 @@
           "tension": 2,
           "trust": 3
          },
-         "reason": "上个月雨夜对方浑身是血翻墙回来，是你在柴房熬夜挑出箭镞、用体温捂热那具冰凉的身子，此后每回夜里竹刀相抵，呼吸都烫人。",
+         "reason": "上个月雨夜对方浑身是血翻墙回来，是你在柴房熬夜挑出嵌在肩头的铅弹、用体温捂热那具冰凉的身子，此后每回夜里竹刀相抵，呼吸都烫人。",
          "stage": "intimate"
         }
        ],

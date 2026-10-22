@@ -99,7 +99,7 @@
  ],
  "cast_combos": [
   {
-   "chemistry": "{tsundere_campus_queen_mao.name}裹着你那件洗得发白的灰运动服坐在被褥一角，钥匙扣上还挂着高三站台那枚咖啡拉环，嘴上嫌屋子寒酸，人却没往外挪。",
+   "chemistry": "{tsundere_campus_queen_mao.name}裹着你那件洗得发白的灰运动服坐在被褥一角，钥匙扣上还挂着当年老站台那枚咖啡拉环，嘴上嫌屋子寒酸，人却没往外挪。",
    "id": "combo_mao_futon_raincoat",
    "identity_ids": [
     "struggling_college_prep_student",
@@ -1995,7 +1995,7 @@
     20,
     23
    ],
-   "baseline": "年满二十周岁自乡下赴东京求学的重考生，在便利店通宵打工维系六叠榻榻米微薄房租。",
+   "baseline": "自乡下赴东京求学的重考生，在便利店通宵打工维系六叠榻榻米微薄房租。",
    "gender": "any",
    "id": "struggling_college_prep_student",
    "reputation": "老实本分，在乡邻长辈眼中是个规矩端方但略显木讷的踏实青年。",
@@ -2024,7 +2024,7 @@
     21,
     24
    ],
-   "baseline": "年满二十一周岁就读于工科大学的兼职软件工程师，在狭小单间内搭建旧式台式机承接外包。",
+   "baseline": "就读于工科大学的兼职软件工程师，在狭小单间内搭建旧式台式机承接外包。",
    "gender": "any",
    "id": "freelance_indie_game_coder",
    "reputation": "昼伏夜出极少社交，对电路布线与微弱声学震动有着近乎强迫症的敏锐感知。",
@@ -2053,7 +2053,7 @@
     22,
     24
    ],
-   "baseline": "年满二十二岁刚入职涩谷贸易商社的新人推销员，整日穿廉价西装承受部长严酷训斥。",
+   "baseline": "刚入职涩谷贸易商社的新人推销员，整日穿廉价西装承受部长严酷训斥。",
    "gender": "any",
    "id": "junior_salaryman_freshman",
    "reputation": "待人接物小心翼翼如履薄冰，极度渴望在东京扎下根来赢得尊重。",
@@ -2082,7 +2082,7 @@
     21,
     24
    ],
-   "baseline": "年满二十一周岁依靠全额奖学金在东京学琴的年轻演奏员，房间角落立着视若生命的琴盒。",
+   "baseline": "依靠全额奖学金在东京学琴的年轻演奏员，房间角落立着视若生命的琴盒。",
    "gender": "any",
    "id": "campus_orchestra_violinist",
    "reputation": "清高孤傲不苟言笑，对生活品质极端苛求却受窘于赤贫的物质现实。",
@@ -2111,7 +2111,7 @@
     20,
     23
    ],
-   "baseline": "年满二十周岁在公寓街角罗森便利店上大夜班的年轻打工仔，熟稔街区全部人事动态。",
+   "baseline": "在公寓街角罗森便利店上大夜班的年轻打工仔，熟稔街区全部人事动态。",
    "gender": "any",
    "id": "convenience_store_night_clerk",
    "reputation": "热心仗义市井经验丰富，对老旧木造公寓的各种规矩漏洞了如指掌。",

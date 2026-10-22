@@ -1169,7 +1169,7 @@
    }
   },
   {
-   "adult_context": "百乐舞厅的签约舞女，成年人，入行第三年",
+   "adult_context": "百乐舞厅的签约伴舞，成年人，入行第三年",
    "age_range": [
     20,
     30
@@ -1251,7 +1251,7 @@
      4
     ]
    },
-   "public_role": "舞女",
+   "public_role": "伴舞",
    "schedule": [
     {
      "from": 1140,
@@ -2304,7 +2304,7 @@
     "rising_actress",
     "taxi_dancer"
    ],
-   "text": "{rising_actress.name}和{taxi_dancer.name}是同一个乡下出来的，有人在小报上登了两个人小时候的合影。"
+   "text": "有人看见{rising_actress.name}和{taxi_dancer.name}深夜一起从锅炉房后门出去，第二天小报就编出了一段两人的私情。"
   },
   {
    "category": "资源",

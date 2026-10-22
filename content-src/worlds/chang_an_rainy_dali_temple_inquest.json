@@ -5,7 +5,7 @@
   "extends": null,
   "era": "唐末昭宗年间长安城",
   "region": "唐末长安大理寺深处的验尸石室、架阁库与地下重牢",
-  "premise": "唐末的长安，执掌三司重权的宰相嫡长子在平康坊离奇暴毙，案子落到大理寺。铁面无私的司刑女官秘密提调了一位因耿直蒙冤、被革职下狱的前推官，两人在青石验尸房里对着尸身查了几天。门阀的人日夜盯着大理寺，上头一再严令封口；秋雨连绵，验尸房的地下重库常渗水。",
+  "premise": "唐末的长安，执掌三司重权的宰相嫡长子在平康坊离奇暴毙，案子落到大理寺。铁面无私的司刑女官秘密提调一位蒙冤下狱的前推官，在青石验尸房里对着尸身查了几天。相府要五更封棺、以心风结案，门阀的人日夜盯着大理寺；秋雨连绵，验尸房的地下重库常渗水。",
   "tone": [
     "肃穆凄冷",
     "唐风法度",
@@ -245,7 +245,7 @@
     },
     {
       "id": "physician_herb_apprentice",
-      "role": "太医署典药局当值成年奉御医官",
+      "role": "太医署送药的医官",
       "gender": "any",
       "title_patterns": [
         {
@@ -262,7 +262,7 @@
         33
       ],
       "social_position": "low",
-      "baseline": "奉太医署之命送呈解毒参汤给死者，亲眼见证死者饮下药汤后倒地气绝，因而被大理寺扣留于石室内待审。",
+      "baseline": "太医署的医官，替典药奉御跑腿送药；那晚的参汤经过你的手，你因此被大理寺扣在石室里待审。",
       "resources": [
         "熟知太医院内库御药采办底册与尚药局历任御医保密处方",
         "随身携有一囊可催吐解毒的金石秘药与银质捣药研钵"
@@ -1509,7 +1509,7 @@
         "te_coroner_blade_truth_vs_bureaucratic",
         "te_courtly_restraint_vs_mortal_camarad"
       ],
-      "chemistry": "{chief_judicial_judge_lady.name}主掌司刑断案，你执掌外围禁军防务或青石冰台三十载，双方互为倚仗。",
+      "chemistry": "{chief_judicial_judge_lady.name}主掌司刑断案，你一个守着寺外防务，一个守着青石冰台，彼此互为倚仗。",
       "stakes": {
         "resource_gap": "{chief_judicial_judge_lady.name}熟稔唐律定谳与朝堂脉络，你掌握验尸刀法或两百重甲卫士的布防调度。",
         "limit_gap": "寺外门阀步步紧逼，任何一方退缩，今夜的剖验都会功亏一篑。",
@@ -1806,8 +1806,7 @@
         "demoted_former_inquest_judge",
         "veteran_dali_stone_coroner",
         "jinwu_guard_patrol_captain",
-        "imperial_censor_secret_envoy",
-        "physician_herb_apprentice"
+        "imperial_censor_secret_envoy"
       ],
       "slots": [
         "prime_minister_deadly_retainer",

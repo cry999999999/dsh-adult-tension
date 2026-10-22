@@ -12,7 +12,7 @@
  "skill": {
   "skill_root": null,
   "skill_version": null,
-  "content_version": "2026.10.11"
+  "content_version": "2026.10.12"
  },
  "turns": [
   {
@@ -3040,7 +3040,7 @@
        "requires": [
         "pawn_clerk"
        ],
-       "text": "当铺柜上那只一直没人赎的怀表，当主的名字是{pawn_clerk.name}自己"
+       "text": "{pawn_clerk.name}柜上那只一直没人赎的怀表，今早有人拿着当票来赎，报的是报馆总编的名字。"
       }
      ]
     }

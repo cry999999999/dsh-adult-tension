@@ -428,132 +428,179 @@ def v_install(cv, rnd):      # an opened parcel with the skill inside
 
 # ================================================================ world wall
 REGIONS = [
-    ("历史风云", "#8c7a9e", [
-        "坊门落锁后", "幕末纸门内", "横滨量体馆", "截稿前一小时", "钦犯在册", "古刹长明灯", "霞飞路暗房", "女仆长的辞呈", "长安洗冤局", "孤烽避风暴",
-        "紫禁封宫夜", "孤岛香闺", "凡尔赛密约", "别庄旧债", "灵堂百日祭", "城堡更衣室", "破庙拔毒夜", "极寒猎屋", "隔窗告解", "洋馆清算夜",
-        "歌剧院飞桥", "琴库气密门", "皇陵流沙殿", "行宫密室雪", "战地救护所", "金库落闸时", "大理寺冰窖", "摘星楼齿轮", "天坑绝壁", "画舫撞船夜"
+    ("宫廷与江湖", "#8c7a9e", [
+        "深巷闭户俏寡妇", "古刹借宿女香客", "大理寺提刑女官", "紫禁封宫夜", "孤烽避风女将军", "破庙拔毒女刺客", "雪夜行宫掌印官", "冰窖验骨女仵作", "摘星楼观星女官", "画舫暗舱罪臣女"
     ]),
-    ("都市暗流", "#9a7394", [
-        "招贴画女郎", "摘牌马车", "第七个替身", "三楼暗室", "封山私汤", "八十八层封楼夜", "游艇暴雨夜", "女社长更衣室", "金库锁手铐", "若头逼宫夜",
-        "雪屋取弹夜", "八号风球医馆", "特搜断电夜", "女总裁的领带", "假面蜜月", "压载舱密审", "七号车厢要犯", "假扮新婚", "暗堡进水时", "破冰船底舱",
-        "气割枪逼近时", "零下二十五度", "没顶座驾", "铅闸坠落时", "舷外集装箱", "十号风球船坞"
+    ("仙侠与志怪", "#768a9e", [
+        "未摘狐面的妖女", "鬼市掌灯引路娘", "仙山客栈老板娘", "走火入魔女剑仙", "寒潭褪衣女散修"
     ]),
-    ("当代市井", "#6f78a0", [
-        "吧台后的旧情", "更衣室十分钟", "隔壁包厢消息", "拆迁墙根下", "停刊号天窗", "厂区创作夜", "停电夜的离婚届", "移门后的长媳", "六叠合租",
-        "下町薄墙", "断桥守灵夜", "名人战封手夜", "进水的压载舱", "会长的发带", "金库氧气倒计时", "门外的长老", "悬空车门边", "悬停的三十层", "悬崖尾厢",
-        "草料库起火时"
+    ("和风与神社", "#9e6b78", [
+        "幕末微醺的艺伎", "横滨量体华族妻", "退魔巫女破戒夜", "守至破晓女剑士", "破产名门女家督", "素白未亡人", "受困神龛大巫女", "藏入木柜的千金", "伏魔殿退魔巫女"
     ]),
-    ("职场百态", "#7d7f9a", [
-        "暗示反噬后", "负压室九十分钟", "地下解剖台", "严寒同一领大衣", "漫向孤本的水", "门外考评专家", "六月六开库", "零点开闸前", "编目员的阁楼",
-        "泵房爆裂夜", "八米悬空吊笼", "沸泉倒灌溶洞", "逃生门受阻", "离地四十公分", "绣轩黄杨架", "沙暴封窟夜", "六十二层天桥", "负压喷漆房",
-        "烟晶评级日", "通宵长队前夜", "大殿暖阁上妆", "头等舱配餐间", "查房八米外", "五步之遥", "揭幕倒计时", "贵妇推门前", "评委倒数时", "老馆长的脚步"
+    ("清末民国", "#8a7a62", [
+        "报馆截稿女主编", "名册除名落魄女", "百乐门旗袍女特工", "霞飞路暗房女谍", "76号冷艳女处长", "流沙殿摸金女魁", "落闸金库大小姐", "天坑绝壁女向导"
     ]),
-    ("聚光灯下", "#a07090", [
-        "一剑之外", "登场前二十秒", "楼下的快递铃", "开书留扣夜", "打歌前夜水幕", "悬停的乐池", "登台前六分钟", "深潜井检修灯", "鱼尾裙与奖杯",
-        "悬空的威亚", "闭馆前红外线", "第十一次告白", "更衣通道移门", "百寸大屏之前", "独奏会侧台", "讲台急升之后", "秀场倒柜背后", "管风琴琴台",
-        "水景若夫人", "中日擂台封盘", "决赛局间休息", "倒数十秒的香槟", "夺冠特写二十秒", "展台阴影处", "开播倒数十五秒", "九曲桥来人时", "敲钟台台阶前",
-        "大太鼓吊索", "正冠之前", "首演前十五秒", "捧花登台之前", "赛点二十秒", "登台倒数三十秒", "全网注视之下"
+    ("欧陆古典", "#7e6f8e", [
+        "雾夜马车俏贵妇", "发条身躯歌剧伶", "递辞呈的女仆长", "摄政掌权女仆长", "公爵夫人更衣室", "告解窗前小修女", "失态的首席舞姬"
     ]),
-    ("科幻与极限", "#8579b0", [
-        "改写故障日志", "隔离第二十天", "枕下的旧恨", "极寒避难所", "手术台的筹码", "定格十二分钟", "最后三支血清", "断后至拂晓", "敢死第零队",
-        "首席觉醒之夜", "发条身体的秘密", "负七层超导失超", "四立方米救生舱", "极夜冷通道", "防弹密室对峙", "悬空的双人座舱", "千米滑坠缆车", "皇家飞艇泄压",
-        "万米过渡舱", "酸雨滤网破损时", "三万米高空主缆", "失控的重载列车", "百吨防爆门下沉", "氦气变调时", "失速提升斗", "高原野温泉井喷", "洪峰第十九天",
-        "刺漏的加氢塔", "极寒受料臂", "月池分流器", "零下一百六十二度", "十马赫喉道", "倒计时四十秒", "失控模拟舱", "临射雷暴半潜台"
+    ("邻里与屋檐下", "#8c7d70", [
+        "深夜吧台女调酒", "打暗号的便利店妹", "封山私汤老板娘", "藏离婚书的人妻", "六叠合租俏青梅", "独守空房邻家妻", "断桥守灵未亡人", "出阁前夜待嫁女", "三楼暗室女摄手", "窄巷避雨烟嗓女", "末班电车短裙妹", "悬停电梯女白领", "汤屋解衣避雪女", "寒夜共衣旧邻女", "更衣室隔板后的她", "木屋同宿世仇女"
     ]),
-    ("异界幻想", "#76708e", [
-        "鬼市买路皮", "狐面未摘前", "仙山客栈", "勇者退休以后", "偏厅除籍夜", "圣女的灼痛", "枯木暖石药浴", "压在黑账下的委托", "魔石灯将熄", "弑神血旗",
-        "断罪地牢子夜", "水牢对赌", "秘药高热四十分", "暴走女斥候", "帷幔后的神乐铃", "破晓残灯", "塔底十指相扣", "碎裂圣坛正骨", "火刑前挑颈圈",
-        "山崩神龛前", "重甲卡石缝", "九十九层吊篮", "伏魔殿华盖倾坠", "水银漫灌时", "受降通牒最后一句", "黎明断头台之前", "禁触的圣女", "紫外线灯网之下",
-        "悬空底舱慢半拍", "公爵千金的药圃", "火药坑道封锁", "战矛撬阵盘", "齐胸冰水里", "逆行齿轮的雪夜", "世界树铁木重门", "水门链轮咬锁甲",
-        "秘银花瓣合拢时", "十字手杖撬铁门"
+    ("百工与夜铺", "#6d8478", [
+        "雕塑工坊裸模女", "抢救孤本掌卷女", "长老门外守阁女", "赶稿暗室女画师", "深夜当铺女掌柜", "悬梁借力女杂技", "旗袍屏风俏绣娘", "敦煌残窟女学者", "喷漆面罩涂鸦女", "高倍镜前女鉴师", "熄屏展厅女主持", "揭幕前夕女策展", "藏起图纸女评委", "帷幕系扣女舞者"
+    ]),
+    ("学府与书斋", "#6f78a0", [
+        "被绑发带女会长", "被窥破的催眠师", "超导室冷面女博", "泄密暗渠女学姐", "藏书阁反锁女博", "悬空吊笼女博导", "隔离室清冷学姐", "讲台藏身女助教", "对镜正冠女师尊", "古籍深架女馆长"
+    ]),
+    ("黑道与豪门", "#9a7394", [
+        "握黑账的女社长", "暴雨游艇极道女", "金库受困大小姐", "傲慢女社长", "捏造底片女社长", "夜半移门名门媳", "雪屋取弹黑道女", "铐精算师女若头", "按刀逼宫女若头", "黑街诊所女掌柜", "走私船女军火商", "焊花门内大小姐", "老金库分赃女盗", "伊豆债契大小姐", "暴雨没顶女副总", "废库避火黑道妻", "风球船坞大小姐"
+    ]),
+    ("职场与律政", "#6a7f90", [
+        "停刊前夜女主编", "防护服裂女主刀", "脱轨专列女上司", "考评门前年轻女医", "夜班泵房女技师", "半悬车厢女部长", "风暴天桥女合伙人", "配餐间失衡空姐", "夜班隔帘女医生", "螺旋梯对质女总监", "更衣室密约贵妇"
+    ]),
+    ("谍战与战地", "#6f7f96", [
+        "假面蜜月女卧底", "隔铁栅串供女谍", "七号车厢女要犯", "审讯室反锁女警", "演假新婚女随员", "解剖台清冷法医", "暗堡进水女报务", "破冰底舱女缉私", "走私冷库女探员", "集装箱外女特工", "战壕拂晓女军医", "弹尽粮绝女少校", "战地救护女军医"
+    ]),
+    ("舞台与镜头", "#9e6f86", [
+        "签卖身契女替身", "反锁礼服大提琴", "红毯夹裙女明星", "收山留扣女评书", "湿透舞台女团C位", "升降台下女指挥", "镜前补妆俏花旦", "裂鱼尾裙女影后", "高空威亚女武替", "穿线盗宝女策展", "十一次告白女优", "大殿上妆女名伶", "登台揉腕女钢琴", "秀场狭缝女超模", "管风琴前女乐圣", "水景阁继室夫人", "庆功反锁女主角", "镜头外喘息女冠", "幕布后高定车模", "直播盲区女主播", "九曲桥借伞故人", "大幕系带女首席", "捧花登台女首席", "全网注视女偶像"
+    ]),
+    ("赛场与博弈", "#8a7068", [
+        "九段女棋圣封手夜", "摘下面罩花剑女", "深潜井女检修师", "擂台封盘女棋手", "同披毛巾女泳将", "祭典太鼓后幽会", "赛点喘息女冠军"
+    ]),
+    ("绝境与重工", "#8a6f78", [
+        "极夜通道女技师", "失控列车女机师", "万米深海女潜员", "防爆门内女总工", "减压舱失温女潜", "盲降铁斗女工程", "野温泉受困女官", "洪峰水坝女调度", "微压舱褪衣女医", "冰原塔台女长官", "潜水钟相依女博", "液氮室回温女博", "十马赫风洞女总师", "握起爆匙女专家", "失重模拟女王牌", "倾斜舰桥女舰长"
+    ]),
+    ("科幻与末世", "#688288", [
+        "改叛逃档女领航", "隔离二十天女医", "偏厅受审除籍女", "押上自身女荷官", "定格十二分钟", "救生舱共氧女兵", "悬空的双人座舱", "千米滑坠缆车", "皇家飞艇泄压", "高空风暴女上尉", "极寒避难所", "枕下的旧恨", "最后三支血清", "海水及胸大小姐"
+    ]),
+    ("圣堂与魔裔", "#7c6f9a", [
+        "魔石灯熄小修女", "藏起堕纹的圣女", "受审的高傲女骑士", "水牢对赌女将军", "单膝正骨女祭司", "火刑颈圈小魔女", "卡住神袍放逐女", "被扯法袍女审判", "王座受降魔皇女", "断头台前恶千金", "跌落神坛禁触女", "灯网之下的魔女", "圣堂铁门大修女"
+    ]),
+    ("王都与剑魔", "#76708e", [
+        "同居魔族女勇者", "神殿药浴女祭司", "背负黑账看板娘", "弑神血旗女团长", "秘药高热女首席", "血脉暴走女导师", "暴走暗精灵", "冰衣傲皇女", "卸甲女统领", "悬空女匠师", "夜闯药圃公爵千金", "火药坑道女死士", "崩解阵心女统帅", "钟楼私誓女占星", "铁木重门精灵使", "水牢卸甲女先锋", "秘银花开女精灵"
     ]),
 ]
+BANDS = [("Ⅰ 东方与古典", 4), ("Ⅱ 西式与年代", 4), ("Ⅲ 都市与暗线", 4), ("Ⅳ 幻想与绝境", 5)]   # rows of the board, left to right
+STARS = {"大理寺提刑女官", "紫禁封宫夜", "独守空房邻家妻", "递辞呈的女仆长", "傲慢女社长", "握黑账的女社长", "跌落神坛禁触女", "同居魔族女勇者"}   # gold-pinned picks, two a row
 NWORLDS = sum(len(w) for _, _, w in REGIONS)
-WALL_DESC = (f"{NWORLDS} 个内置世界钉在一块软木板上，分为{'、'.join(r for r, _, _ in REGIONS)}{'一二三四五六七八九'[len(REGIONS) - 1]}栏，"
+WALL_DESC = (f"{NWORLDS} 盒录像带平放叠在一家深夜租碟店的胡桃木货架上，侧脊朝外印着世界名，按题材分为{'、'.join(r for r, _, _ in REGIONS)}共 {len(REGIONS)} 栏，排成四层（{'、'.join(b[2:] for b, _ in BANDS)}），每层一块货架、一枚铜铭牌，几盒推荐片被抽出半截，"
              "每栏标着世界数，全部已开放，可直接开局。")
 
 
 def worlds():
-    ROWS = max(len(w) for _, _, w in REGIONS)
-    STEP = 14                                                     # one-line name cards, one per row
-    BY1 = max(210, 66 + ROWS * STEP + 6)
+    STEP = 12                                                     # tapes lie flat, spine out, stacked one on another
+    HEAD = 24                                                     # plaque and section sign above each shelf
+    EGGS = [None, ("poster", 40), ("standee", 34), ("card", 16)]  # something propped on the shortest stack of shelves II-IV
+    bands, k = [], 0
+    for _, n in BANDS:
+        bands.append(REGIONS[k:k + n])
+        k += n
+    assert k == len(REGIONS)
+    tops, slots, shelves, y = [], [], [], 54
+    for b, band in enumerate(bands):
+        tops.append(y)
+        rows = max(len(w) for _, _, w in band)
+        sc = min(range(len(band)), key=lambda i: len(band[i][2]))
+        slots.append(sc)
+        if EGGS[b]:
+            rows = max(rows, len(band[sc][2]) + (EGGS[b][1] + 4) / STEP)
+        shelves.append(y + HEAD + int(rows * STEP + 0.999) + 2)
+        y = shelves[-1] + 12
+    BY1 = y - 4
     GW, GH = 300, BY1 + 12
     rnd = random.Random(31)
     cv = pk.Canvas(GW, GH)
     BX0, BY0 = 8, 48
     BX1 = 292
-    cv.rect(BX0 - 3, BY0 - 3, BX1 + 3, BY1 + 3, "#4a2e26")         # frame
-    cv.rect(BX0 - 3, BY0 - 3, BX1 + 3, BY0 - 2, "#8a5c44")
-    cv.rect(BX0 - 1, BY0 - 1, BX1 + 1, BY0, "#2a1a16")
-    cv.rect(BX0, BY0, BX1, BY1, "#9a6b45")
-    for _ in range(int(2600 * (BY1 - BY0) / 480)):               # cork grain
+    cv.rect(BX0 - 3, BY0 - 3, BX1 + 3, BY1 + 3, "#140c10")         # the cabinet's outer edge
+    cv.rect(BX0 - 3, BY0 - 3, BX1 + 3, BY0 - 2, "#5a3a2c")
+    cv.rect(BX0, BY0, BX1, BY1, "#2c1d1a")                          # walnut back panel
+    for x in range(BX0 + 23, BX1, 24):                              # plank seams
+        cv.rect(x, BY0, x, BY1, "#22161a")
+    for _ in range(int(1800 * (BY1 - BY0) / 480)):                  # grain
         x, y = rnd.randrange(BX0, BX1), rnd.randrange(BY0, BY1)
-        cv.put(x, y, rnd.choice(["#875c3a", "#ab7a50", "#8f6240"]))
-    cv.rect(BX0, BY0, BX1, BY0 + 2, "#6a4630")                     # shadow under the top frame
-    cv.rect(BX0, BY0, BX0 + 2, BY1, "#7a5236")
+        cv.put(x, y, rnd.choice(["#33221e", "#281a18", "#3a2722"]))
+    cv.rect(BX0, BY0, BX1, BY0 + 2, "#1a1012")
     over = []
-    pins = []
-    NCOL = len(REGIONS)
-    colw = (BX1 - BX0 - 8) / NCOL
-    for i, (region, rc, worlds_) in enumerate(REGIONS):
-        cx0 = BX0 + 4 + i * colw
-        tx0, tx1 = int(cx0 + 2), int(cx0 + colw - 2)
-        cv.rect(tx0 + 1, 53, tx1 + 1, 61, "#5a3a26")                # tape shadow
-        cv.rect(tx0, 52, tx1, 60, rc)
-        cv.rect(tx0, 52, tx1, 53, "#ffffff")
-        cv.rect(tx0, 53, tx1, 54, rc)
-        for y in range(52, 60, 2):                                  # torn tape ends
-            cv.put(tx0, y, "#9a6b45")
-            cv.put(tx1 - 1, y + 1, "#9a6b45")
-        over.append(text((tx0 + tx1) / 2 * C, 58.4 * C, f"{region} {len(worlds_)}", 16, "#ffffff", 800, "middle", 1, SANS, 'stroke="#2a1a24" stroke-width="3" paint-order="stroke"'))
-        for j, name in enumerate(worlds_):
-            y0 = 66 + j * STEP
-            x0 = int(cx0 + 3 + rnd.choice([-1, 0, 1]))
-            x1 = x0 + int(colw) - 6
-            y1 = y0 + 11
-            cv.rect(x0 + 1, y0 + 1, x1 + 1, y1 + 1, "#5a3a26")
-            cv.rect(x0, y0, x1, y1, "#f6eedd")
-            cv.rect(x0, y0, x1, y0 + 1, "#fffaf0")
-            cv.rect(x0, y0, x0 + 2, y1, rc)
-            cv.rect(x1 - 2, y1 - 2, x1, y1, "#e6dcc8")              # dog-ear
-            cv.put(x1 - 2, y1 - 2, "#5a3a26")
-            pins.append((x1 - 5, y0 + 1, True))
-            size = min(16.5, (x1 - x0 - 6) * C / len(name))
-            over.append(text((x0 + 4) * C, (y0 + 8) * C, name, round(size, 1), "#2a1e2e", 800, "start", 0))
-    # a polaroid of the lantern festival, a ticket stub, a note
-    SC = min(range(NCOL), key=lambda i: len(REGIONS[i][2]))       # under the shortest column
-    SHORT = 66 + len(REGIONS[SC][2]) * STEP + 6
-    PX0, PY0 = int(BX0 + 4 + SC * colw + 3), SHORT + 38
-    cv.rect(PX0 + 1, PY0 + 1, PX0 + 35, PY0 + 37, "#5a3a26")
-    cv.rect(PX0, PY0, PX0 + 34, PY0 + 36, "#f6f2ea")
-    cv.vgrad(PX0 + 3, PY0 + 3, PX0 + 31, PY0 + 27, ["#1d2350", "#3a2a66", "#6a3778", "#a2477e"])
-    cv.line(PX0 + 3, PY0 + 8, PX0 + 31, PY0 + 6, "#2a1e3a")
-    for k in range(4):
-        lx, ly = PX0 + 6 + k * 7, PY0 + 9 - k * 0.5
-        cv.ellipse(lx, ly + 3, 2.4, 3, lambda x, y, lx=lx: "#ffcf6a" if x == int(lx) else "#e0402f")
-    cv.poly([(PX0 + 3, PY0 + 22), (PX0 + 9, PY0 + 17), (PX0 + 15, PY0 + 21), (PX0 + 22, PY0 + 16), (PX0 + 31, PY0 + 21), (PX0 + 31, PY0 + 27), (PX0 + 3, PY0 + 27)], "#1a1228")
-    pins.append((PX0 + 17, PY0 + 1, False))
-    NX0, NY0 = int(BX0 + 4 + SC * colw + 2), SHORT
-    cv.rect(NX0 + 1, NY0 + 1, NX0 + int(colw) - 3, NY0 + 31, "#5a3a26")
-    cv.rect(NX0, NY0, NX0 + int(colw) - 4, NY0 + 30, "#ffe9a0")
-    cv.rect(NX0, NY0, NX0 + int(colw) - 4, NY0 + 2, "#f2d880")
-    pins.append((NX0 + int(colw) // 2 - 4, NY0 + 1, False))
-    for k, line in enumerate(["想去的地方", "不在板上？", "说“自定义世界”"]):
-        over.append(text((NX0 + 4) * C, (NY0 + 10 + k * 7) * C, line, 16, "#5a3a20", 800, "start", 1, SANS))
-    TX0, TY0 = int(BX0 + 4 + SC * colw + 4), SHORT + 82
-    cv.rect(TX0 + 1, TY0 + 1, TX0 + 43, TY0 + 13, "#5a3a26")
-    cv.rect(TX0, TY0, TX0 + 42, TY0 + 12, "#d85a8e")
-    for y in range(TY0, TY0 + 12, 2):
-        cv.put(TX0 + 35, y, "#f6eedd")
-    cv.text("ADMIT", TX0 + 3, TY0 + 3, "#ffe3f0")
-    cv.text("1", TX0 + 37, TY0 + 3, "#ffe3f0")
-    for px, py, open_ in pins:
-        cv.rect(px - 1, py - 1, px + 2, py + 2, "#ff6fae" if open_ else "#8a8094")
-        cv.put(px - 1, py - 1, "#ffd6e8" if open_ else "#c0b8c8")
-        cv.put(px + 1, py + 2, "#5a3a26")
-    pin_glow = "".join(f'<circle cx="{(px + 0.5) * C}" cy="{(py + 0.5) * C}" r="12" fill="#ff6fae" fill-opacity="0.5" filter="url(#g6)">'
-                       f'<animate attributeName="fill-opacity" values="0.6;0.2;0.6" dur="{rnd.uniform(2, 3.5):.1f}s" begin="-{rnd.uniform(0, 2):.1f}s" repeatCount="indefinite"/></circle>'
-                       for k, (px, py, o) in enumerate(pins) if o and k % 3 == 0)
+    lights = []
+    colw = (BX1 - BX0 - 8) / 5                                    # one width for every shelf, so every spine gets the same type size
+    TAPE, LABEL = "#1c1820", "#efe6d2"
+    for b, band in enumerate(bands):
+        TY, SY = tops[b], shelves[b]
+        x_off = (5 - len(band)) * colw / 2                          # shelves of four sit centred
+        cv.rect(BX0, SY, BX1, SY + 4, "#6a4430")                    # the shelf board
+        cv.rect(BX0, SY, BX1, SY, "#9a6a48")
+        cv.rect(BX0, SY + 5, BX1, SY + 6, "#140c10")
+        PW = 48                                                     # brass section plaque
+        px0 = (BX0 + BX1) // 2 - PW // 2
+        cv.rect(px0 + 1, TY - 2, px0 + PW + 1, TY + 7, "#0e080a")
+        cv.rect(px0, TY - 3, px0 + PW, TY + 6, "#c9a24a")
+        cv.rect(px0, TY - 3, px0 + PW, TY - 3, "#f0d488")
+        cv.rect(px0, TY + 6, px0 + PW, TY + 6, "#8a6a28")
+        for sx in (px0 + 2, px0 + PW - 2):
+            cv.put(sx, TY + 1, "#7a5a20")
+        over.append(text((px0 + PW / 2) * C, (TY + 3.8) * C, BANDS[b][0], 15, "#4a3410", 900, "middle", 2, SANS))
+        LY = TY + 10
+        for i, (region, rc, worlds_) in enumerate(band):
+            cx0 = BX0 + 4 + x_off + i * colw
+            tx0, tx1 = int(cx0 + 2), int(cx0 + colw - 2)
+            cv.rect(tx0 + 1, LY + 1, tx1 + 1, LY + 9, "#0e080a")       # genre sign
+            cv.rect(tx0, LY, tx1, LY + 8, rc)
+            cv.rect(tx0, LY, tx1, LY, "#ffffff")
+            cv.rect(tx0, LY + 8, tx1, LY + 8, "#2a1a24")
+            over.append(text((tx0 + tx1) / 2 * C, (LY + 6.4) * C, f"{region} {len(worlds_)}", 16, "#ffffff", 800, "middle", 1, SANS, 'stroke="#2a1a24" stroke-width="3" paint-order="stroke"'))
+            n = len(worlds_)
+            for j, name in enumerate(worlds_):                       # first title on top, the stack resting on the shelf
+                star = name in STARS
+                y0 = SY - (n - j) * STEP
+                x0 = int(cx0 + 3 + rnd.choice([-1, 0, 0, 1])) + (5 if star else 0)
+                x1 = x0 + int(colw) - 6
+                y1 = y0 + STEP - 1
+                if star:                                            # pulled half out: the sleeve art shows behind the spine
+                    cv.vgrad(x0 - 5, y0 + 1, x0, y1 - 1, ["#ff6fae", "#a2477e", "#3a2a66"])
+                cv.rect(x0, y0, x1, y1, TAPE)
+                cv.rect(x0, y0, x1, y0, "#3a3440")
+                cv.rect(x0 + 2, y0 + 2, x1 - 3, y1 - 2, "#ffe0bc" if star else LABEL)
+                cv.rect(x0 + 2, y0 + 2, x0 + 4, y1 - 2, rc)            # genre colour band on the label
+                cv.rect(x1 - 2, y0 + 3, x1 - 1, y1 - 3, "#3a3440")      # the tape window edge
+                size = min(14.5, (x1 - x0 - 10) * C / len(name))
+                over.append(text((x0 + 6) * C, (y0 + 7.3) * C, name, round(size, 1), "#221a24", 800, "start", 0))
+                if star:
+                    cv.rect(x1 - 6, y0 + 1, x1 - 4, y0 + 3, "#ffc94a")
+                    lights.append((x1 - 5, y0 + 2))
+        if not EGGS[b]:
+            continue
+        kind, h = EGGS[b]
+        sc = slots[b]
+        ex = int(BX0 + 4 + x_off + sc * colw)
+        top = SY - len(band[sc][2]) * STEP                           # it leans on top of the short stack
+        if kind == "poster":                                        # a hand-drawn new-arrivals poster
+            PX0, PY0 = ex + int(colw / 2) - 17, top - 38
+            cv.rect(PX0 + 1, PY0 + 1, PX0 + 35, PY0 + 37, "#0e080a")
+            cv.rect(PX0, PY0, PX0 + 34, PY0 + 36, "#f6ecd6")
+            cv.vgrad(PX0 + 3, PY0 + 12, PX0 + 31, PY0 + 33, ["#1d2350", "#3a2a66", "#6a3778", "#a2477e"])
+            for kk in range(4):
+                lx, ly = PX0 + 7 + kk * 7, PY0 + 18 - kk * 0.5
+                cv.ellipse(lx, ly + 3, 2.4, 3, lambda x, y, lx=lx: "#ffcf6a" if x == int(lx) else "#e0402f")
+            cv.poly([(PX0 + 3, PY0 + 30), (PX0 + 10, PY0 + 26), (PX0 + 17, PY0 + 29), (PX0 + 24, PY0 + 25), (PX0 + 31, PY0 + 29), (PX0 + 31, PY0 + 33), (PX0 + 3, PY0 + 33)], "#1a1228")
+            over.append(text((PX0 + 17) * C, (PY0 + 9) * C, "新片到货", 17, "#d0304a", 900, "middle", 2, SANS))
+        elif kind == "standee":                                     # a little counter sign
+            NX0, NY0 = ex + 2, top - 32
+            cv.rect(NX0 + 1, NY0 + 1, NX0 + int(colw) - 3, NY0 + 31, "#0e080a")
+            cv.rect(NX0, NY0, NX0 + int(colw) - 4, NY0 + 30, "#241a2e")
+            cv.rect(NX0, NY0, NX0 + int(colw) - 4, NY0, "#ff6fae")
+            cv.rect(NX0, NY0 + 30, NX0 + int(colw) - 4, NY0 + 30, "#ff6fae")
+            for kk, line in enumerate(["想租的片", "不在架上？", "说“自定义世界”"]):
+                over.append(text((NX0 + 4) * C, (NY0 + 10 + kk * 7) * C, line, 16, "#ffd6e8", 800, "start", 1, SANS))
+        else:                                                       # a member card
+            TX0, TY0 = ex + int(colw / 2) - 21, top - 14
+            cv.rect(TX0 + 1, TY0 + 1, TX0 + 43, TY0 + 13, "#0e080a")
+            cv.rect(TX0, TY0, TX0 + 42, TY0 + 12, "#d85a8e")
+            cv.rect(TX0 + 32, TY0 + 3, TX0 + 39, TY0 + 8, "#ffcf6a")     # chip
+            cv.text("CLUB", TX0 + 3, TY0 + 3, "#ffe3f0")
+    pin_glow = "".join(f'<circle cx="{(px + 0.5) * C}" cy="{(py + 0.5) * C}" r="14" fill="#ffc94a" fill-opacity="0.7" filter="url(#g6)">'
+                       f'<animate attributeName="fill-opacity" values="0.8;0.3;0.8" dur="2.4s" begin="-{rnd.uniform(0, 2):.1f}s" repeatCount="indefinite"/></circle>'
+                       for px, py in lights)
     # legend pins
     cv.rect(124, 37, 127, 40, "#ff6fae")
     cv.put(124, 37, "#ffd6e8")

@@ -1,5 +1,5 @@
 {
- "content_version": "2026.10.10",
+ "content_version": "2026.10.11",
  "schema_version": 1,
  "worlds": [
   {
@@ -448,9 +448,6 @@
   {
    "content_tags": [
     "intimate",
-    "violence",
-    "coercion_theme",
-    "bodily_harm",
     "workplace_power",
     "crime",
     "workplace",
@@ -464,10 +461,10 @@
     "pressure"
    ],
    "region": "首尔江南区顶奢财阀双子塔大厦地下五层核心安防重型保险库与通风夹层",
-   "sha256": "e8f6560ee4c3d8209f60e60ed0a2733c385f239f58c4e9229887db11f9149d26",
+   "sha256": "9d670bf5f89dc2ab7536d11c3b25ea4b6ee21eb2f971bc3d45d7309202b8bfdb",
    "status": "released",
    "summary": "跨国控股权转让签署前一周，财阀第一继承人千金搬进江南区双子塔顶层办公，随行的青年法务秘书天天陪着核对条款到深夜。对立财阀的人四处打听交割日期；大楼地下五层有一座钛合金安防金库，备用电源上次演练时没能撑满规定时长。",
-   "title": "财阀金库：千金与断电之夜"
+   "title": "江南雨夜的钛金账册"
   },
   {
    "content_tags": [
@@ -1001,13 +998,9 @@
   {
    "content_tags": [
     "intimate",
-    "violence",
-    "bodily_harm",
-    "workplace_power",
-    "crime",
     "workplace",
-    "supernatural",
-    "disaster"
+    "workplace_power",
+    "coercion_theme"
    ],
    "default_person": "second",
    "era": "明治三十年代初秋暴风雨之夜（山岳荒废古神社神乐殿回廊）",
@@ -1017,10 +1010,10 @@
     "pressure"
    ],
    "region": "深山古道之巅荒废三百年的一宫神社神乐殿与后方闭锁结界内殿",
-   "sha256": "a8c79c6328b92202014872c0dad953608ca08b277f5f0a19972708622d7fc86d",
+   "sha256": "1d3d8b631266cde686f1e485dbf7a3cd28b6be820a4b3dde58954f6ed2293a5a",
    "status": "released",
    "summary": "明治三十年代的初秋，名门退魔女剑士奉命进山清剿妖魔，借住在一座荒废三百年的古神社里，与驻守的青年巫祝一起修补结界、熬药、守夜。山道年久失修，秋雨一来常塌方；前些日子斩妖时留下的瘴毒伤还没好透。",
-   "title": "神乐殿夜祓：斩鬼巫女"
+   "title": "朱漆廊的断刀"
   },
   {
    "content_tags": [
@@ -1352,15 +1345,9 @@
   {
    "content_tags": [
     "intimate",
-    "violence",
-    "coercion_theme",
-    "bodily_harm",
-    "substance",
-    "death",
-    "workplace_power",
-    "crime",
     "workplace",
-    "disaster"
+    "workplace_power",
+    "coercion_theme"
    ],
    "default_person": "second",
    "era": "中世纪剑与魔法衰退期（北方边境要塞沦陷之夜）",
@@ -1370,10 +1357,10 @@
     "pressure"
    ],
    "region": "北方黑石要塞地下三层积水重装石牢与排污暗渠水牢",
-   "sha256": "e61126a3f1528e6503805c7c45ba8014c491d574a88a55052f3e13f5568374e2",
+   "sha256": "4c5c9296d160736ef7cac8802e3eb8ced194f2f10e144cb132ddef7fe899dca9",
    "status": "released",
    "summary": "北方边境的黑石要塞被围了一个冬天，圣王国第一近卫女骑士长守着最后一道城门，白天带人修城墙，夜里亲自查地牢的哨。地牢里关着几个敌军的俘虏，敌军随军的反战书记官就在其中；值班狱卒和见习扈从都知道，要塞的粮只够撑到开春。",
-   "title": "地牢夜盟：落难女骑士"
+   "title": "铁栏与旧圣印"
   },
   {
    "content_tags": [
@@ -3104,10 +3091,7 @@
   {
    "content_tags": [
     "intimate",
-    "violence",
-    "bodily_harm",
     "substance",
-    "death",
     "workplace_power",
     "crime",
     "workplace",
@@ -3121,10 +3105,10 @@
     "pressure"
    ],
    "region": "北方暴雪绝岛私人神经与感染医学疗养院地下二层负压隔离监护病区与病理试剂冷库",
-   "sha256": "c2b5371664e303e3669759cfaccbefe67e7b86b94ff35a45a54eb67568152499",
+   "sha256": "c44dccd5e700dc0709cbf410eb5c376a713e7190cf3566fdea2c6e404690f9f7",
    "status": "released",
-   "summary": "北方海岛上的私人神经与感染医学疗养院，冷面天才女外科主任管着地下二层的负压隔离病区，青年研究员、重症住院医和厚生省的督察官都住在岛上。白天查房、做实验，夜里听海风。病区里关着一株高危毒株，冬天的暴雪常切断渡轮与电网。",
-   "title": "隔离病栋：冷面女主刀"
+   "summary": "北方海岛上的私人神经与感染医学疗养院，冷面女外科主任执掌地下二层的负压隔离病区，青年研究员、重症住院医和厚生省督察官都驻守岛上。白天查房配药，夜里听海风拍岸。病区深处封存着零号临床病历与原始毒株，冬夜暴雪切断了渡轮与外电网。",
+   "title": "海岛负压区的零号病历"
   },
   {
    "content_tags": [

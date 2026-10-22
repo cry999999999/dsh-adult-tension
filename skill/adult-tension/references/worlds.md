@@ -2,28 +2,28 @@
 
 # 世界列表
 
-内容版本：`2026.10.10`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。
+内容版本：`2026.10.11`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。
 
 | 内容标签 | ID | 已发布世界数 |
 |---|---|---|
 | 轻度暧昧 | `romance_light` | 31 |
 | 亲密 | `intimate` | 200 |
 | 直白的性描写 | `explicit` | 11 |
-| 暴力 | `violence` | 89 |
+| 暴力 | `violence` | 85 |
 | 胁迫 | `coercion_theme` | 66 |
 | 羞辱 | `humiliation` | 51 |
-| 身体伤害 | `bodily_harm` | 108 |
-| 酒精与药物 | `substance` | 53 |
+| 身体伤害 | `bodily_harm` | 104 |
+| 酒精与药物 | `substance` | 52 |
 | 怀孕 | `pregnancy` | 0 |
-| 死亡 | `death` | 50 |
+| 死亡 | `death` | 48 |
 | 职场权力关系 | `workplace_power` | 131 |
 | 出轨 | `infidelity` | 2 |
-| 违法犯罪 | `crime` | 117 |
+| 违法犯罪 | `crime` | 115 |
 | 赌博 | `gambling` | 6 |
 | 职场 | `workplace` | 161 |
 | 夜生活 | `nightlife` | 11 |
-| 超自然 | `supernatural` | 28 |
-| 灾难 | `disaster` | 155 |
+| 超自然 | `supernatural` | 27 |
+| 灾难 | `disaster` | 153 |
 | 自定义 | `custom` | 0 |
 
 | 世界 | ID | 一句话 | 模式 | 状态 |
@@ -48,7 +48,7 @@
 | 月份牌 | `calendar_poster` | 一张脸可以卖三次：银幕一次，街墙一次，舞池一次；演员、画师、大班和侦探都在算这张脸到底归谁。 | 日常、有压力 | released |
 | 金色大厅的首演周 | `cellist_hall_tailpin_lock_jam` | 维也纳金色大厅的大提琴协奏曲首演前一周，清冷的大提琴女神每天排练到闭馆。 | 日常、有压力 | released |
 | 千亿财阀女掌舵人·泄洪暗渠防弹座驾淹没 | `chaebol_chairwoman_submerged_maybach` | 父亲猝逝后，长女接下了千亿财阀，董事会里叔叔一派虎视眈眈，只等新任董事长出一次错。 | 日常、有压力 | released |
-| 财阀金库：千金与断电之夜 | `chaebol_heiress_vault_hostage` | 跨国控股权转让签署前一周，财阀第一继承人千金搬进江南区双子塔顶层办公，随行的青年法务秘书天天陪着核对条款到深夜。 | 日常、有压力 | released |
+| 江南雨夜的钛金账册 | `chaebol_heiress_vault_hostage` | 跨国控股权转让签署前一周，财阀第一继承人千金搬进江南区双子塔顶层办公，随行的青年法务秘书天天陪着核对条款到深夜。 | 日常、有压力 | released |
 | 大理寺秋雨录 | `chang_an_rainy_dali_temple_inquest` | 唐末的长安，执掌三司重权的宰相嫡长子在平康坊离奇暴毙，案子落到大理寺。 | 日常、有压力 | released |
 | 长白山采参女把头·万年冰川开阔天坑冰壁 | `changbai_ginseng_blizzard_crevasse` | 清末民初，长白山采参世家的新任女把头接下一桩怪活：给关东地质考察队带路上天池。 | 日常、有压力 | released |
 | 风雪长明寺 | `changming_temple_snowbound` | 明末天启年间，太行绝顶的半废石寺是官道上唯一的落脚处，冬天总有几个借宿的人：押解钦犯的锦衣卫百户、行脚铃医、不肯报名号的独行客。 | 日常、有压力 | released |
@@ -73,7 +73,7 @@
 | 深坑矿井·提升斗刹车失灵 | `deep_pit_quarry_hoist_brake_failure` | 井口灯房的挂牌板上，每个下井的人都挂着一块铜牌，升井才摘。 | 日常、有压力 | released |
 | 后山稻荷旧社 | `defeated_shrine_broken_barrier` | 深山里一座半废的稻荷神社，冷艳的名门巫女长奉命驻守后山结界，寄宿的剑士替神社劈柴挑水，阴阳巡捕奉密令也住了进来。 | 日常、有压力 | released |
 | 傲娇魔族女将军·圣殿结界闭锁重力祭坛 | `demon_general_sanctuary_barrier_trap` | 圣战打了十年，魔军与圣殿第一次谈停战。 | 日常、有压力 | released |
-| 神乐殿夜祓：斩鬼巫女 | `demon_slayer_kagura_hall_purification` | 明治三十年代的初秋，名门退魔女剑士奉命进山清剿妖魔，借住在一座荒废三百年的古神社里，与驻守的青年巫祝一起修补结界、熬药、守夜。 | 日常、有压力 | released |
+| 朱漆廊的断刀 | `demon_slayer_kagura_hall_purification` | 明治三十年代的初秋，名门退魔女剑士奉命进山清剿妖魔，借住在一座荒废三百年的古神社里，与驻守的青年巫祝一起修补结界、熬药、守夜。 | 日常、有压力 | released |
 | 万米高空的湾流客舱 | `domination_reversal_csuite_jet` | 财阀的冷傲女总裁这一个月都在天上：横跨太平洋的湾流公务机就是移动办公室。 | 日常、有压力 | released |
 | 同人画师·漫展前夜死线·手绘台多轴升降悬臂卡死真丝吊带睡裙 | `doujin_artist_deadline_blackout` | 漫展开展前一周，神级同人女画师在创意园区的复式画室里赶新刊，执委会的场务总监、合志的客座画师和楼下的音乐人邻居轮流上来探班送吃的。 | 日常、有压力 | released |
 | 巨龙坠落之堑：屠龙血旗与断角决死阵 | `dragonsfall_blood_banner` | 凡人弑神的年代，第七军团在极北冻原的断角大峡谷扎营，三十六道伏龙钢缆锚着一头坠落的神话古龙，等王都派来的祭司决定是杀是囚。 | 日常、有压力 | released |
@@ -89,7 +89,7 @@
 | 退魔巫女·残破神乐·伏魔殿八角祭台青铜华盖断裂咬死白丝千早 | `exorcist_miko_broken_kagura_hall` | 深山古社的大巫女主持伏魔殿的神乐祭，本厅派来的监事、研究山岳信仰的民俗学者和参道茶屋的店员都住在社务所，白天排练神乐、接待参拜，夜里巡一遍结界。 | 日常、有压力 | released |
 | 国风仙女画师·裱画机咬裙与十八禁投屏社死 | `fairy_artist_tablet_clamp_trap` | 美院的挑空画室里，以工笔仙女闻名的青年国画家和室友合租，画案旁有一台装裱用的热压裱画机，玄关客厅挂着一块能投屏的百寸大屏。 | 日常、有压力 | released |
 | 败北魔王·契约倒错·残破神殿精金王座扶手形变夹死暗红礼服裙摆 | `fallen_demon_empress_throne_pact` | 神魔旧纪元的末期，纯血魔王的千金皇女住在一座悬空的石砌神殿里。 | 日常、有压力 | released |
-| 地牢夜盟：落难女骑士 | `fallen_knight_dungeon_pact` | 北方边境的黑石要塞被围了一个冬天，圣王国第一近卫女骑士长守着最后一道城门，白天带人修城墙，夜里亲自查地牢的哨。 | 日常、有压力 | released |
+| 铁栏与旧圣印 | `fallen_knight_dungeon_pact` | 北方边境的黑石要塞被围了一个冬天，圣王国第一近卫女骑士长守着最后一道城门，白天带人修城墙，夜里亲自查地牢的哨。 | 日常、有压力 | released |
 | 货舱密审：女特工与冰海 | `female_agent_cargo_hold_interrogation` | 东海公海上有一艘伪装成万吨散货轮的间谍母船。 | 日常、有压力 | released |
 | 傲娇花剑女冠军·断电剑道计分悬挂屏砸落咬死防刺服护腿 | `fencing_hall_rehab_duel` | 省击剑训练中心地下二层的剑馆里，全国青年锦标赛连冠的女剑客伤愈复出。 | 日常、有压力 | released |
 | 三金影后·大剧院巨型旋转舞台幕后通廊 | `film_queen_awards_stage_vault_lock` | 国际电影节颁奖盛典彩排了两周，三金影后天天在侧台走位，灯光总设计天天为影后封后那一刻的追光调到深夜。 | 日常、有压力 | released |
@@ -169,7 +169,7 @@
 | 傲娇头等舱乘务长·万米吧台抽屉挂死白金链 | `purser_airbar_choker_drawer_jam` | 外资航空的传奇乘务长，飞跨洋夜航的波音777头等舱已经第八年，跃层环形吧台是乘务长的地盘，制服领口内侧总贴着一条白金饰链。 | 日常、有压力 | released |
 | 秦淮琵琶行首·画舫双层开敞式雕花顶楼 | `qinhuai_pipa_painted_boat_leak` | 明末清初的秦淮河，教坊司的首席琵琶行首每夜在一艘双层雕花画舫上献艺，复社名士、巡江官差、盐商贵戚都是座上客，修船匠隔几天就来补一次船底。 | 日常、有压力 | released |
 | 检疫环 | `quarantine_ring` | 二十一天里谁也不能离站；数据比人先到，可数据也会说谎。 | 日常、有压力 | released |
-| 隔离病栋：冷面女主刀 | `quarantine_ward_scalpel_isolation` | 北方海岛上的私人神经与感染医学疗养院，冷面天才女外科主任管着地下二层的负压隔离病区，青年研究员、重症住院医和厚生省的督察官都住在岛上。 | 日常、有压力 | released |
+| 海岛负压区的零号病历 | `quarantine_ward_scalpel_isolation` | 北方海岛上的私人神经与感染医学疗养院，冷面女外科主任执掌地下二层的负压隔离病区，青年研究员、重症住院医和厚生省督察官都驻守岛上。 | 日常、有压力 | released |
 | 知性深夜电台女主播·临街直播间麦克风咬死白金乳链 | `radio_host_studio_mic_chain_trap` | 临街电台的落地玻璃直播间，治愈系深夜电台的知性女主播每晚零点开播，窗外总有几个粉丝举着长焦贴着玻璃。 | 日常、有压力 | released |
 | 古籍揭裱·世家密卷·文渊藏书楼底层字画架区重型紫檀雕花折页屏风倾倒卡死 | `rainy_archive_manuscript_authentication` | 江南水乡的古典藏书楼，女掌卷人在底层通廊的字画架区守了五年，进修的古籍修复师、报社的文化记者和守夜人都是这里的常客。 | 日常、有压力 | released |
 | 八号台风的停电夜 | `rainy_night_childhood_neighbor_wife` | 1998 年夏末的东京郊外，老木造公寓枫叶庄里住着一对在同一条老街长大的青梅竹马。 | 日常、有压力 | released |

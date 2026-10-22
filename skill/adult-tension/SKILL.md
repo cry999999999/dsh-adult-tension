@@ -120,7 +120,7 @@ AT_JSON
 |---|---|
 | 开局、新游戏、开局 日常 / 压力、开局 港口、重开 N 号、自定义世界 …… | 开局流程 |
 | 世界列表 [题材 / 有…的 / 不要…的] | `list-worlds` [`query`、`tags`、`exclude_tags`（内容标签 ID）] |
-| 继续、c、……、空输入 | `continue` 回合 |
+| 继续、c、……、空输入 | `continue` 回合（未开局就走开局） |
 | 存档 [名称]、s、快速存档、qs / 另存为 名称 | `save-slot`（`name` 可省）/ 另加 `"save_as": true` |
 | 读档 [名称]、l / 继续上次、恢复 | 有名称就 `load-slot`，没有先 `list-slots` / `list-sessions`；接续写法见 `references/flows.md` §4 |
 | 存档列表 / 删除存档 名称 | `list-slots` / 问“确定删除「名称」吗？”，确认后 `delete-slot` 带 `"confirm": true` |
@@ -131,7 +131,7 @@ AT_JSON
 | 内心可见 / 叙事助手 / 离屏推演 开关、语态 某人 表/里、人称、NPC 性别偏好、节奏、尺度 | `set-preferences`（`inner_view`、`assistant`、`offscreen_simulation`、`voice: {"npc_id", "voice"}`、`person`、`npc_gender_preference`、`pace`、`explicitness`） |
 | 撤销、刚才不算、其实……、快进到……、来点转折 | 见“时间、离屏、转折、撤销” |
 | 自定义世界 | 见开局第 3 步 |
-| 保存世界 名称 / 我的世界 / 删除世界 名称 | `save-world`（同名问是否覆盖，确认后 `overwrite: true`）/ `my-worlds` / 问“确定删除世界「名称」吗？”，确认后 `delete-world` 带 `"confirm": true` |
+| 保存世界 名称 / 我的世界 / 删除世界 名称 | `save-world`（同名先问，确认后 `overwrite: true`）/ `my-worlds` / 问“确定删除世界「名称」吗？”，确认后 `delete-world` 带 `"confirm": true` |
 | 怎么玩、玩法、新手指南 | `guide`（开局后带 `session_id`），`text` 原样转述，不增删 |
 | 帮助、h、? | 列出上面的说法 |
 

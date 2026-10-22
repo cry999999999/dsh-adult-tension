@@ -320,7 +320,9 @@ Three more details: names fit the era and region, so nothing breaks immersion; n
 | `开局，港口夜班` (start, Harbor Night Shift) | Pick a world |
 | `开局，不要职场` (start, no workplace) | Exclude a theme |
 | `开局，我是三十岁的女摄影师` (start, I'm a 30-year-old woman photographer) | Set up who you are |
-| `自定义世界，民国的一座山城……` (custom world, a mountain town in the Republic era…) | The model writes a world on the spot, just for this game |
+| `自定义世界` (custom world) | Not sure yet? You get a list of ideas first |
+| `自定义世界，民国的一座山城……` (custom world, a mountain town in the Republic era…) | The model writes a world on the spot |
+| `开局 我的世界 名字` (start my world name) | Start a new game in a world you saved |
 | `重开 42 号` (restart number 42) | Same seed, replayed exactly |
 
 **Move the story**
@@ -343,6 +345,7 @@ A new game gives you "the world", "the characters" and the opening scene, which 
 | `存档` · `qs` (save) | Saves to the current slot |
 | `另存为 名字` · `读档 名字` (save as name · load name) | Save a separate branch, or pick up from that moment |
 | `存档列表` (save list) | All saves |
+| `保存世界 名字` · `我的世界` (save world name · my worlds) | Keep a custom world; list the worlds you kept |
 | `导出` · `导入` (export · import) | Export a save file, carry on from another computer |
 | `刚才不算` (that didn't count) | Undo or rewrite the last turn |
 | `内心可见 开` · `暂停` · `边界：不要 X` (inner voice on · pause · limit: no X) | See what goes unsaid; stop at once; draw a line the engine holds for you |

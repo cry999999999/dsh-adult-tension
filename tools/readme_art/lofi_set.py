@@ -1042,7 +1042,7 @@ def cover_art(cv, genre, ax0, at, ax1, ab, rnd, glow):
 
 
 GENRES_DESC = ("世界分类展示：{} 盒录像带封面朝外排成两排，一类一盒：{}；每盒顶上写着这一类有几个世界，"
-               "封面是这一类的小夜景，底下贴着分类名。全部世界已开放，每一类的完整名单在 README 的全部世界速览里。")
+               "封面是这一类的小夜景，底下贴着分类名。全部世界已开放，整面录像带墙在 README 下方的折叠区里。")
 
 
 def genres():
@@ -1092,7 +1092,7 @@ def genres():
     body = f'''    <g shape-rendering="crispEdges">{cv.emit(C)}</g>
     {"".join(glow)}
     {"".join(over)}
-    {text(X0 * C, (BOT + 11) * C, f"全部 {NWORLDS} 个世界已开放，每一类的完整名单在下方“全部世界速览”里", 18, SUBT, 600, "start", 1.5)}'''
+    {text(X0 * C, (BOT + 11) * C, f"全部 {NWORLDS} 个世界已开放，下方点开就是整面录像带墙", 18, SUBT, 600, "start", 1.5)}'''
     doc("genres.svg", GW * C, GH * C, "世界分类", GENRES_DESC.format(len(REGIONS), "、".join(r for r, _, _ in REGIONS)), "", body)
 
 
@@ -1109,7 +1109,7 @@ inventory()
 def library():
     """The world-library banner, the genre shelves and the cassette shelf stacked into one seamless picture: one wall, one frame,
     one vignette; the banner's picture crop also melts into the wall at its bottom edge. The full tape wall (worlds.svg)
-    sits on its own inside the README's fold-out list."""
+    sits on its own inside the README's fold-out below it."""
     names = ["section-worlds.svg", "genres.svg", "inventory.svg"]
     W = PARTS[names[0]][0]
     H = sum(PARTS[n][1] for n in names)

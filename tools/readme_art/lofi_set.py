@@ -1041,19 +1041,19 @@ def cover_art(cv, genre, ax0, at, ax1, ab, rnd, glow):
         glow.append(f'<rect x="{cx * C}" y="{(ab - 20) * C}" width="{2 * C}" height="{14 * C}" fill="#c8d8ff" filter="url(#g6)" opacity="0.7"/>')
 
 
-GENRES_DESC = ("世界分类展示：{} 盒录像带封面朝外立在一个两层的木柜里，射灯照着，一类一盒：{}；每盒顶上写着这一类有几个世界，"
+GENRES_DESC = ("世界分类展示：{} 盒录像带封面朝外排成两排，一类一盒：{}；每盒顶上写着这一类有几个世界，"
                "封面是这一类的小夜景，底下贴着分类名。全部世界已开放，每一类的完整名单在 README 的全部世界速览里。")
 
 
 def genres():
-    """The short version for the top of the README: one face-out sleeve per genre in a lit two-tier cabinet, in wall order."""
+    """The short version for the top of the README: one face-out sleeve per genre, two rows on the wall above one board, in wall order."""
     assert set(COVERS) == {r for r, _, _ in REGIONS}
     rows, k = [], 0
     for half in (BANDS[:2], BANDS[2:]):                             # shelves I+II on top, III+IV below
         n = sum(c for _, c in half)
         rows.append(REGIONS[k:k + n])
         k += n
-    GW, GH = 300, 151
+    GW, GH = 300, 143
     rnd = random.Random(53)
     cv = pk.Canvas(GW, GH)
     over, glow = [], []
@@ -1069,28 +1069,16 @@ def genres():
     over.append(text((px0 + PW / 2) * C, 11.6 * C, f"世界分类 · {len(REGIONS)} 类", 17, "#4a3410", 900, "middle", 2, SANS))
     pitch = (X1 - X0) / max(len(r) for r in rows)
     size = min(16, (pitch - 8) * C / max(len(r) for r, _, _ in REGIONS))   # one type size on every sleeve
-    TOP, ROWH = 17, 56                                              # one cabinet: top board, then two tiers of ROWH each
-    BOT = TOP + 2 + len(rows) * ROWH - 3                            # the bottom board
-    cv.rect(X0 - 2, TOP + 2, X1 + 2, BOT, "#1e1520")                  # back panel shared by both tiers
-    for ux in (X0 - 5, X1 + 2):                                     # side posts
-        cv.rect(ux, TOP - 1, ux + 3, BOT + 4, "#6a4430")
-        cv.rect(ux, TOP - 1, ux + 1, BOT + 4, "#9a6a48")
-    cv.rect(X0 - 5, TOP - 1, X1 + 5, TOP + 2, "#6a4430")            # top board
-    cv.rect(X0 - 5, TOP - 1, X1 + 5, TOP, "#9a6a48")
+    TOP, SLEEVE, GAP = 20, 48, 5                                    # two rows of sleeves straight on the wall, no frame between them
+    BOT = TOP + len(rows) * (SLEEVE + GAP) - GAP                    # the one board everything stands above
     for ri, row in enumerate(rows):
-        RT = TOP + 2 + ri * ROWH                                    # the lamps hang from the board above
-        SY = RT + 53                                                # the board this tier stands on
+        y0 = TOP + ri * (SLEEVE + GAP)
+        y1 = y0 + SLEEVE
         x_off = (len(rows[1]) - len(row)) * pitch / 2 if len(row) < max(len(r) for r in rows) else 0
         for i, (genre, rc, worlds_) in enumerate(row):
             x0 = int(X0 + x_off + i * pitch + 2)
             x1 = int(X0 + x_off + (i + 1) * pitch - 2)
-            y0, y1 = RT + 5, SY
-            lx = (x0 + x1) // 2
-            cv.rect(lx - 2, RT + 1, lx + 2, RT + 4, "#4a4058")
-            cv.rect(lx - 1, RT + 4, lx + 1, RT + 5, "#ffe9a8")
-            glow.append(f'<polygon points="{(lx - 1) * C},{(RT + 5) * C} {(lx + 1) * C},{(RT + 5) * C} {(x1 + 2) * C},{y1 * C} {(x0 - 2) * C},{y1 * C}" '
-                        f'fill="#ffe9c0" fill-opacity="0.07"/>')
-            cv.rect(x0 + 2, y0 + 2, x1 + 2, y1, "#0b070c")            # drop shadow on the back wall
+            cv.rect(x0 + 2, y0 + 2, x1 + 2, y1 + 2, "#0b070c")        # drop shadow on the wall
             cv.rect(x0, y0, x1, y1, "#1c1820")                      # the sleeve
             cv.rect(x0, y0, x1, y0 + 1, "#4a4454")
             cv.rect(x0 + 1, y0 + 1, x1 - 1, y0 + 7, rc)             # genre band with the world count
@@ -1101,15 +1089,11 @@ def genres():
             over.append(text((x0 + x1) / 2 * C, (y0 + 5.6) * C, f"{len(worlds_)} 个世界", 13, "#ffffff", 800, "middle", 1, SANS,
                              'stroke="#2a1a24" stroke-width="2.5" paint-order="stroke"'))
             over.append(text((x0 + x1 + 2) / 2 * C, (y0 + 40.8) * C, genre, round(size, 1), "#221a24", 900, "middle", 0, SANS))
-        if ri < len(rows) - 1:                                      # a thin middle shelf, part of the same cabinet
-            cv.rect(X0 - 2, SY, X1 + 2, SY + 3, "#6a4430")
-            cv.rect(X0 - 2, SY, X1 + 2, SY + 1, "#9a6a48")
-        else:                                                       # the bottom board on its brackets
-            cv.rect(X0 - 5, SY, X1 + 5, SY + 4, "#6a4430")
-            cv.rect(X0 - 5, SY, X1 + 5, SY + 1, "#9a6a48")
-            cv.rect(X0 - 5, SY + 5, X1 + 5, SY + 6, "#140c10")
-            for bx in (X0 + 10, (X0 + X1) // 2, X1 - 16):
-                cv.poly([(bx, SY + 5), (bx + 7, SY + 5), (bx, SY + 12)], "#3a3440")
+    cv.rect(X0 - 2, BOT, X1 + 2, BOT + 4, "#6a4430")                # the bottom board on its brackets
+    cv.rect(X0 - 2, BOT, X1 + 2, BOT + 1, "#9a6a48")
+    cv.rect(X0 - 2, BOT + 5, X1 + 2, BOT + 6, "#140c10")
+    for bx in (X0 + 10, (X0 + X1) // 2, X1 - 16):
+        cv.poly([(bx, BOT + 5), (bx + 7, BOT + 5), (bx, BOT + 12)], "#3a3440")
     body = f'''    <g shape-rendering="crispEdges">{cv.emit(C)}</g>
     {"".join(glow)}
     {"".join(over)}

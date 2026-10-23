@@ -29,7 +29,7 @@ Thousands of story materials ｜ Zero-drift SQLite state machine<br>
 
 <a id="worlds"></a>
 <p align="center">
-  <img src=".github/readme-lofi/world-library.svg?v=221" width="100%" alt="Built-in world library: standalone world frames across eras and over fourteen thousand story materials. The genres: seventeen videotapes face-out in two rows, one per genre (courts and wanderers, immortals and spirits, Japan and its shrines, late Qing and Republic, classical Europe, neighbours under one roof, trades and night shops, campus and study, gangs and old money, office and law, spies and the front, stage and screen, arena and wagers, extreme engineering, sci-fi and the end, cathedrals and demonkin, kingdoms and blades), each with its world count on top, a small night scene for the genre and the genre name below; all 211 worlds are open, and the whole tape wall opens just below. A cassette rack below lists over fourteen thousand materials: 970+ places, 1270+ NPCs, 940+ player identities, 1120+ character pairings, 910+ tension engines, 1770+ daily activities, 1270+ pressure events, 3330+ opening hooks, 1460+ mid-story turns, 1740+ rules and customs.">
+  <img src=".github/readme-lofi/world-library.svg?v=222" width="100%" alt="Built-in world library: standalone world frames across eras and over fourteen thousand story materials. The genres: seventeen videotapes face-out in two rows, one per genre (courts and wanderers, immortals and spirits, Japan and its shrines, late Qing and Republic, classical Europe, neighbours under one roof, trades and night shops, campus and study, gangs and old money, office and law, spies and the front, stage and screen, arena and wagers, extreme engineering, sci-fi and the end, cathedrals and demonkin, kingdoms and blades), each with its world count on top, a small night scene for the genre and the genre name below; all 211 worlds are open, and the whole tape wall is just below. A cassette rack below lists over fourteen thousand materials: 970+ places, 1270+ NPCs, 940+ player identities, 1120+ character pairings, 910+ tension engines, 1770+ daily activities, 1270+ pressure events, 3330+ opening hooks, 1460+ mid-story turns, 1740+ rules and customs.">
 </p>
 
 <br>
@@ -39,17 +39,9 @@ Thousands of story materials ｜ Zero-drift SQLite state machine<br>
 Every world is open. Pick one and play.  
 Don't see what you want? Just say "custom world" (`自定义世界`), name the year and the place, and one is made for you on the spot.
 
-<div align="center">
-<details>
-<summary><b>📼 Open the whole tape wall</b>&nbsp;&nbsp;<sub>211 worlds · 17 genres · all open</sub></summary>
-<br>
-
 <p align="center">
   <img src=".github/readme-lofi/worlds.svg" width="100%" alt="The tape wall: 211 videotapes lying flat on the walnut shelves of a late-night rental store, spines out with the world names, in seventeen genre columns on four shelves, each shelf with a brass plaque: East and old times (courts and wanderers, immortals and spirits, Japan and its shrines, late Qing and Republic), West and the decades (classical Europe, neighbours under one roof, trades and night shops, campus and study), the city's dark side (gangs and old money, office and law, spies and the front, stage and screen), fantasy and the edge (arena and wagers, extreme engineering, sci-fi and the end, cathedrals and demonkin, kingdoms and blades); each column labelled with its world count, eight staff picks pulled halfway out under a small gold light; all open, ready to start.">
 </p>
-
-</details>
-</div>
 
 <br>
 

@@ -1,12 +1,12 @@
 {
  "id": "pt-taisho_mansion_insolvency_night-pressure",
- "title": "试玩：大正浪漫·破产华族千金·暴雨洋馆倾斜樟木书柜咬死和服振袖（有压力）",
+ "title": "试玩：华族洋馆清算夜（有压力）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "taisho_mansion_insolvency_night",
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，大正浪漫·破产华族千金·暴雨洋馆倾斜樟木书柜咬死和服振袖，要有压力的",
+   "say": "开一局，华族洋馆清算夜，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

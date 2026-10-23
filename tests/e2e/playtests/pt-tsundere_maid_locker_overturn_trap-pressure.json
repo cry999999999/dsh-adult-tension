@@ -1,12 +1,12 @@
 {
  "id": "pt-tsundere_maid_locker_overturn_trap-pressure",
- "title": "试玩：傲娇台柱女仆·周年庆后更衣通道铁柜倾覆（有压力）",
+ "title": "试玩：女仆咖啡的台柱（有压力）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "tsundere_maid_locker_overturn_trap",
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，傲娇台柱女仆·周年庆后更衣通道铁柜倾覆，要有压力的",
+   "say": "开一局，女仆咖啡的台柱，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "astronomer_observatory_lightning_blind",
-  "title": "钦天监女官·观象台摘星楼开敞式露天浑天台",
+  "title": "摘星楼漏刻女官",
   "extends": null,
   "era": "大唐盛世开元年间国家皇家天文台与观象授时巅峰期",
   "region": "长安城南郊皇室观象台摘星楼三十丈高空开敞式露天浑天台",
@@ -2060,7 +2060,11 @@
         }
       ],
       "leverage": null,
-      "hook_ids": ["hook_zhaohua_water_clock", "hook_cang_star_chart", "hook_zhaohua_clock_room"],
+      "hook_ids": [
+        "hook_zhaohua_water_clock",
+        "hook_cang_star_chart",
+        "hook_zhaohua_clock_room"
+      ],
       "start_minute": 300,
       "tags": [
         "workplace_power"

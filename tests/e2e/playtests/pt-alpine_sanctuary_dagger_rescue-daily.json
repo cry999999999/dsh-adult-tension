@@ -1,12 +1,12 @@
 {
  "id": "pt-alpine_sanctuary_dagger_rescue-daily",
- "title": "试玩：圣山雪线圣女·绝顶露天残破神殿（日常）",
+ "title": "试玩：禁触的雪线圣女（日常）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "alpine_sanctuary_dagger_rescue",
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，圣山雪线圣女·绝顶露天残破神殿，日常",
+   "say": "开一局，禁触的雪线圣女，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

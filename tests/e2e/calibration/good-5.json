@@ -12,7 +12,7 @@
  "skill": {
   "skill_root": null,
   "skill_version": null,
-  "content_version": "2026.10.12"
+  "content_version": "2026.10.13"
  },
  "turns": [
   {
@@ -2828,7 +2828,7 @@
        "text": "整个社区只有一台大凹版机、一间排练厅，排期表上两个人的名字挨在一起"
       }
      ],
-     "title": "成年创作者与艺术季",
+     "title": "艺术季的酒局",
      "tone": [
       "松节油",
       "咖啡",

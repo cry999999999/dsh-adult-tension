@@ -1,12 +1,12 @@
 {
  "id": "pt-sword_fairy_demon_pagoda_seal-pressure",
- "title": "试玩：锁妖塔底：素衣女剑仙（有压力）",
+ "title": "试玩：走火入魔女剑仙（有压力）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "sword_fairy_demon_pagoda_seal",
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，锁妖塔底：素衣女剑仙，要有压力的",
+   "say": "开一局，走火入魔女剑仙，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

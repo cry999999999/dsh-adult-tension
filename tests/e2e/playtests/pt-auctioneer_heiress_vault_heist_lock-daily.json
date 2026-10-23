@@ -1,12 +1,12 @@
 {
  "id": "pt-auctioneer_heiress_vault_heist_lock-daily",
- "title": "试玩：首席女拍卖师·地下保险库劫案铅闸卡死（日常）",
+ "title": "试玩：落槌后的女拍卖师（日常）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "auctioneer_heiress_vault_heist_lock",
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，首席女拍卖师·地下保险库劫案铅闸卡死，日常",
+   "say": "开一局，落槌后的女拍卖师，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

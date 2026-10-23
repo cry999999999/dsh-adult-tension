@@ -12,7 +12,7 @@
  "skill": {
   "skill_root": null,
   "skill_version": null,
-  "content_version": "2026.10.12"
+  "content_version": "2026.10.13"
  },
  "turns": [
   {
@@ -3023,7 +3023,7 @@
        "text": "长老会空出一个座位，两个人都有资格，也都有理由不要"
       }
      ],
-     "title": "旧町神怪与灯会",
+     "title": "未摘狐面的妖女",
      "tone": [
       "纸灯",
       "香火",

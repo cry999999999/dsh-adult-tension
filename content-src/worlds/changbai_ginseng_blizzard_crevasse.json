@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "changbai_ginseng_blizzard_crevasse",
-  "title": "长白山采参女把头·万年冰川开阔天坑冰壁",
+  "title": "天池采参女把头",
   "extends": null,
   "era": "清末民初关东长白山老林放山采参与高山冰川科考探险期",
   "region": "长白山天池万年冰川海拔两千米开阔天然大天坑底部石缝裂隙区",
@@ -2124,7 +2124,12 @@
         }
       ],
       "leverage": null,
-      "hook_ids": ["hook_xueyuan_roe_deer", "hook_xueyuan_red_rope", "hook_hanzhou_sketch", "hook_xueyuan_dugout_curtain"],
+      "hook_ids": [
+        "hook_xueyuan_roe_deer",
+        "hook_xueyuan_red_rope",
+        "hook_hanzhou_sketch",
+        "hook_xueyuan_dugout_curtain"
+      ],
       "start_minute": 720,
       "tags": []
     },

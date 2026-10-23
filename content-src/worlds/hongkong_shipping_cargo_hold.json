@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "hongkong_shipping_cargo_hold",
-  "title": "港岛船王千金·浮坞货轮深舱",
+  "title": "十号风球船坞",
   "extends": null,
   "era": "当代香港船王家族与青衣船厂的十号风球风暴潮之夜",
   "region": "香港青衣霍家船厂浮船坞里进坞大修的三万吨级散货轮二十米深主货舱底板区",
@@ -1985,7 +1985,10 @@
         }
       ],
       "leverage": null,
-      "hook_ids": ["hook_mingchu_winter_melon", "hook_yuan_rope_knot"],
+      "hook_ids": [
+        "hook_mingchu_winter_melon",
+        "hook_yuan_rope_knot"
+      ],
       "start_minute": 540,
       "tags": [
         "workplace_power"

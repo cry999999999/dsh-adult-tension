@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "nuclear_silo_blast_door_lockdown",
-  "title": "废弃核井·防爆闸门死锁",
+  "title": "核井防爆门下沉",
   "extends": null,
   "era": "冷战末期地下战略核工程与废弃核井封存期",
   "region": "地下百米核发射井超重型碳化钨防爆闸门大厅",

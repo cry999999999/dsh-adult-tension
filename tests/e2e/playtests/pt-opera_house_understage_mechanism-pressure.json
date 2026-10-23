@@ -1,12 +1,12 @@
 {
  "id": "pt-opera_house_understage_mechanism-pressure",
- "title": "试玩：古典戏剧·巴黎魅影·大剧院升降乐池机械飞桥卡滞（有压力）",
+ "title": "试玩：失态的首席舞姬（有压力）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "opera_house_understage_mechanism",
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，古典戏剧·巴黎魅影·大剧院升降乐池机械飞桥卡滞，要有压力的",
+   "say": "开一局，失态的首席舞姬，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

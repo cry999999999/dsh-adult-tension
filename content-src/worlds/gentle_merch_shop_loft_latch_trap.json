@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "gentle_merch_shop_loft_latch_trap",
-  "title": "温柔谷子店女老板·动漫衍生品仓库阁楼升降吊门自锁",
+  "title": "首发前夜女店长",
   "extends": null,
   "era": "当代大型动漫文化街区独栋周边集合店首发通宵理货上架阶段",
   "region": "动漫街区旗舰店二层钢结构周边仓储阁楼与货运升降吊门通道",
@@ -2157,7 +2157,10 @@
       "flags": [
         "timed"
       ],
-      "location_ids": ["loc_loft_little_bedroom", "loc_anime_merch_loft_storage_floor"],
+      "location_ids": [
+        "loc_loft_little_bedroom",
+        "loc_anime_merch_loft_storage_floor"
+      ],
       "trigger": "早上八点，排队群里有人贴出一张阁楼货架的照片，说限量款早被店里留给了黄牛，门外的队伍开始骚动",
       "objective": "在十点开门之前，让门外的长队相信每一枚都在这里",
       "choice": "把阁楼上的货当众搬下来点数，还是先查出照片是谁拍的",
@@ -2185,7 +2188,11 @@
         }
       ],
       "leverage": null,
-      "hook_ids": ["hook_wanqing_warm_tea", "hook_wanqing_hidden_badge", "hook_wanqing_loft_curtain"],
+      "hook_ids": [
+        "hook_wanqing_warm_tea",
+        "hook_wanqing_hidden_badge",
+        "hook_wanqing_loft_curtain"
+      ],
       "start_minute": 480,
       "tags": []
     },

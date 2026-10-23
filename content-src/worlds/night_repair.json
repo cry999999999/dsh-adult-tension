@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "night_repair",
-  "title": "夜班修理局",
+  "title": "改写故障日志",
   "extends": null,
   "era": "近未来",
   "region": "一座巨型城市的修理局，地面是全息广告，地下是管廊",

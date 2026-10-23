@@ -12,7 +12,7 @@
  "skill": {
   "skill_root": null,
   "skill_version": null,
-  "content_version": "2026.10.12"
+  "content_version": "2026.10.13"
  },
  "turns": [
   {
@@ -3074,7 +3074,7 @@
        "text": "宵禁前最后一刻过桥的，总是那几张脸"
       }
      ],
-     "title": "民国报馆与手艺街",
+     "title": "报馆截稿女主编",
      "tone": [
       "油墨",
       "雨棚",

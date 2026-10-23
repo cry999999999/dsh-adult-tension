@@ -12,7 +12,7 @@
  "skill": {
   "skill_root": null,
   "skill_version": null,
-  "content_version": "2026.10.12"
+  "content_version": "2026.10.13"
  },
  "turns": [
   {
@@ -2845,7 +2845,7 @@
        "text": "巡逻队每晚走同一条路，一个人知道路线，另一个人需要它"
       }
      ],
-     "title": "幕末町屋与道场",
+     "title": "幕末微醺的艺伎",
      "tone": [
       "纸门",
       "木屐",

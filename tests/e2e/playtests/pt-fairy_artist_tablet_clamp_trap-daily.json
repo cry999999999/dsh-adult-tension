@@ -1,12 +1,12 @@
 {
  "id": "pt-fairy_artist_tablet_clamp_trap-daily",
- "title": "试玩：国风仙女画师·裱画机咬裙与十八禁投屏社死（日常）",
+ "title": "试玩：大屏前的仙女画师（日常）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "fairy_artist_tablet_clamp_trap",
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，国风仙女画师·裱画机咬裙与十八禁投屏社死，日常",
+   "say": "开一局，大屏前的仙女画师，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

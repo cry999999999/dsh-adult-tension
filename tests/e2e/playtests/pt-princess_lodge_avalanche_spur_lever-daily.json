@@ -1,12 +1,12 @@
 {
  "id": "pt-princess_lodge_avalanche_spur_lever-daily",
- "title": "试玩：帝国长皇女·雪崩行宫古董收藏室暗门（日常）",
+ "title": "试玩：雪封行宫长皇女（日常）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "princess_lodge_avalanche_spur_lever",
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，帝国长皇女·雪崩行宫古董收藏室暗门，日常",
+   "say": "开一局，雪封行宫长皇女，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

@@ -1,12 +1,12 @@
 {
  "id": "pt-hypersonic_wind_tunnel_nozzle_jam-pressure",
- "title": "试玩：超高声速风洞·喷管喉道调节偏心卡死（有压力）",
+ "title": "试玩：十马赫风洞女总师（有压力）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "hypersonic_wind_tunnel_nozzle_jam",
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，超高声速风洞·喷管喉道调节偏心卡死，要有压力的",
+   "say": "开一局，十马赫风洞女总师，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

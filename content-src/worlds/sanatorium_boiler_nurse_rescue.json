@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "sanatorium_boiler_nurse_rescue",
-  "title": "疗养院护士·地热供暖总泵房",
+  "title": "泵房爆裂夜",
   "extends": null,
   "era": "高山温泉度假疗养院地下动力中心",
   "region": "疗养院地下大型地热循环泵房回廊与防灾电动卷门死角",

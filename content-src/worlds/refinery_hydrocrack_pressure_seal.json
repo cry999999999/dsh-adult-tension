@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "refinery_hydrocrack_pressure_seal",
-  "title": "炼油化工厂·加氢裂化反应器高压密封面泄漏",
+  "title": "加氢塔下的检修季",
   "extends": null,
   "era": "千万吨级炼化一体化加氢裂化装置高压运行期",
   "region": "四百度加氢反应器底部八角垫检修隔热罩通道",

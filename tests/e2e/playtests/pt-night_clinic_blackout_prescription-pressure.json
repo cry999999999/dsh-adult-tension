@@ -1,12 +1,12 @@
 {
  "id": "pt-night_clinic_blackout_prescription-pressure",
- "title": "试玩：夜勤医务·暗黑诊疗·综合负压配药大厅机械气闸锁舌咬死真丝长袍（有压力）",
+ "title": "试玩：考评门外女主任（有压力）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "night_clinic_blackout_prescription",
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，夜勤医务·暗黑诊疗·综合负压配药大厅机械气闸锁舌咬死真丝长袍，要有压力的",
+   "say": "开一局，考评门外女主任，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

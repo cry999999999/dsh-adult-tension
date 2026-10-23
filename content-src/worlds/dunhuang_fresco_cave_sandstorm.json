@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "dunhuang_fresco_cave_sandstorm",
-  "title": "敦煌壁画女修复师·莫高窟第96窟通顶大佛阁",
+  "title": "沙暴封窟夜",
   "extends": null,
   "era": "当代丝绸之路世界文化遗产保护与莫高窟崖体综合治理期",
   "region": "敦煌莫高窟第96窟九层楼三十三米通顶大佛阁与挑空钢管脚手架区",
@@ -1984,7 +1984,11 @@
         }
       ],
       "leverage": null,
-      "hook_ids": ["hook_qingxian_cinnabar", "hook_tianyu_sand_jujube", "hook_qingxian_dorm_curtain"],
+      "hook_ids": [
+        "hook_qingxian_cinnabar",
+        "hook_tianyu_sand_jujube",
+        "hook_qingxian_dorm_curtain"
+      ],
       "start_minute": 540,
       "tags": [
         "workplace_power"

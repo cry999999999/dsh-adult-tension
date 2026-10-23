@@ -1,12 +1,12 @@
 {
  "id": "pt-chaebol_chairwoman_submerged_maybach-daily",
- "title": "试玩：千亿财阀女掌舵人·泄洪暗渠防弹座驾淹没（日常）",
+ "title": "试玩：暗渠里的女董事长（日常）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "chaebol_chairwoman_submerged_maybach",
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，千亿财阀女掌舵人·泄洪暗渠防弹座驾淹没，日常",
+   "say": "开一局，暗渠里的女董事长，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

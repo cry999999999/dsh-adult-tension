@@ -1,12 +1,12 @@
 {
  "id": "pt-silver_paladin_armory_fuse_race-daily",
- "title": "试玩：清冷银铠女骑士·要塞地下军械密库引信赛跑（日常）",
+ "title": "试玩：围城四十天骑士长（日常）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "silver_paladin_armory_fuse_race",
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，清冷银铠女骑士·要塞地下军械密库引信赛跑，日常",
+   "say": "开一局，围城四十天骑士长，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

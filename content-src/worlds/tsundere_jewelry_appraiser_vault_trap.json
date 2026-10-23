@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "tsundere_jewelry_appraiser_vault_trap",
-  "title": "顶级珠宝鉴定师·阿尔卑斯水晶矿洞气密门",
+  "title": "矿洞里的鉴定师",
   "extends": null,
   "era": "当代瑞士阿尔卑斯百年水晶矿洞的孤品原石评级阶段",
   "region": "瑞士阿尔卑斯山腹两百米深的百年水晶矿洞、宝石切磨工坊与鉴证舱",
@@ -2189,7 +2189,11 @@
         }
       ],
       "leverage": null,
-      "hook_ids": ["hook_manning_mulled_wine", "hook_manning_crystal_gift", "hook_manning_chalet_door"],
+      "hook_ids": [
+        "hook_manning_mulled_wine",
+        "hook_manning_crystal_gift",
+        "hook_manning_chalet_door"
+      ],
       "start_minute": 600,
       "tags": [
         "workplace_power"

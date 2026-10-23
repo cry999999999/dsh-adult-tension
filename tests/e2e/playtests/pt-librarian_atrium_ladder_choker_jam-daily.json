@@ -1,12 +1,12 @@
 {
  "id": "pt-librarian_atrium_ladder_choker_jam-daily",
- "title": "试玩：清冷古籍馆员·藏书楼铜书梯咬死素银项圈胸链（日常）",
+ "title": "试玩：铜书梯上的馆员（日常）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "librarian_atrium_ladder_choker_jam",
  "mode": "daily",
  "steps": [
   {
-   "say": "开一局，清冷古籍馆员·藏书楼铜书梯咬死素银项圈胸链，日常",
+   "say": "开一局，铜书梯上的馆员，日常",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

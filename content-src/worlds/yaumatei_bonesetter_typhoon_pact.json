@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "yaumatei_bonesetter_typhoon_pact",
-  "title": "油麻地跌打医馆：冷艳女堂主与断臂红棍",
+  "title": "风球夜跌打医馆",
   "extends": null,
   "era": "1980年代末香港油麻地老街八号风球暴雨封街江湖动荡时期",
   "region": "1980年代末香港油麻地庙街尽头保和堂跌打医馆",
@@ -141,7 +141,11 @@
         {
           "pattern": "阿哥",
           "gender": "male"
-        }, {"pattern": "{family}姐", "gender": "female"}
+        },
+        {
+          "pattern": "{family}姐",
+          "gender": "female"
+        }
       ],
       "age_range": [
         28,
@@ -257,7 +261,11 @@
         {
           "pattern": "{family}伯",
           "gender": "male"
-        }, {"pattern": "七姑", "gender": "female"}
+        },
+        {
+          "pattern": "七姑",
+          "gender": "female"
+        }
       ],
       "age_range": [
         48,

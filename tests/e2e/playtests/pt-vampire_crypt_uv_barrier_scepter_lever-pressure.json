@@ -1,12 +1,12 @@
 {
  "id": "pt-vampire_crypt_uv_barrier_scepter_lever-pressure",
- "title": "试玩：吸血鬼真祖千金·地宫紫外线熔断绝境（有压力）",
+ "title": "试玩：末代血族千金（有压力）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "vampire_crypt_uv_barrier_scepter_lever",
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，吸血鬼真祖千金·地宫紫外线熔断绝境，要有压力的",
+   "say": "开一局，末代血族千金，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

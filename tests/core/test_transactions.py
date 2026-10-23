@@ -440,7 +440,7 @@ class NewGameCommandTest(unittest.TestCase):
                 service.new_game(ctx, {"request_id": "req_query_00001", "mode": "daily", "world_query": "雪山"})
             err = caught.exception
             self.assertEqual((err.code, err.details[0]["path"]), ("NO_MATCH", "$.world_query"))
-            self.assertEqual({c["world_id"] for c in err.extra["candidates"]}, {"imperial_princess_cabin_warmth", "yakuza_daughter_hideout_ointment"})
+            self.assertEqual({c["world_id"] for c in err.extra["candidates"]}, {"alpine_sanctuary_dagger_rescue", "snow_train_conductor_cliff_peril"})
             self.assertTrue(all(c["title"] and c["summary"] for c in err.extra["candidates"]))
             with self.assertRaises(AppError) as caught:
                 service.new_game(ctx, {"request_id": "req_query_00002", "mode": "daily", "world_query": "修仙"})

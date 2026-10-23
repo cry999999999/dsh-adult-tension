@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "cool_figure_painter_airbrush_trap",
-  "title": "手办涂装师·专业级大型工业负压喷漆房",
+  "title": "赶工GK的涂装师",
   "extends": null,
   "era": "当代顶级GK手办模玩工作室高定展品终期涂装封釉阶段",
   "region": "国家级数字文创园区大型不锈钢防爆双工位负压喷涂车间与风淋风道区",
@@ -2166,7 +2166,9 @@
       "flags": [
         "timed"
       ],
-      "location_ids": ["loc_studio_loft_bedroom"],
+      "location_ids": [
+        "loc_studio_loft_bedroom"
+      ],
       "trigger": "展前一天上午，版权方的郑监修发来一页意见：配色和官方设定差了两个色号，不改就不给授权编号，尾款也一起压着",
       "objective": "在展会锁定展品名单之前，让这尊手办拿到授权编号",
       "choice": "按官方设定连夜重喷，还是拿着配色稿去跟版权方硬谈",
@@ -2194,7 +2196,11 @@
         }
       ],
       "leverage": null,
-      "hook_ids": ["hook_lingxi_mask_mark", "hook_lingxi_figure_face", "hook_lingxi_loft_curtain"],
+      "hook_ids": [
+        "hook_lingxi_mask_mark",
+        "hook_lingxi_figure_face",
+        "hook_lingxi_loft_curtain"
+      ],
       "start_minute": 600,
       "tags": [
         "workplace_power"

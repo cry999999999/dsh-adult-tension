@@ -1,12 +1,12 @@
 {
  "id": "pt-frontier_tavern_exiled_paladin-pressure",
- "title": "试玩：暗黑奇幻·退队女骑士·雪峰要塞悬桥断裂重甲咬死石缝（有压力）",
+ "title": "试玩：退队的重甲统领（有压力）",
  "focus": "CONTENT_BIBLE.md 8.2 第 6 步：真实 Skill 下的试玩，每个种子一次运行（种子由引擎随机抽，记录在开局页脚）；开局、5 个回合（含“继续”、一次作用于 NPC 的尝试、一次等待）、存档、新对话读档后再推进 1 回合",
  "world": "frontier_tavern_exiled_paladin",
  "mode": "pressure",
  "steps": [
   {
-   "say": "开一局，暗黑奇幻·退队女骑士·雪峰要塞悬桥断裂重甲咬死石缝，要有压力的",
+   "say": "开一局，退队的重甲统领，要有压力的",
    "expect": {
     "kind": "opening",
     "calls_max": 2,

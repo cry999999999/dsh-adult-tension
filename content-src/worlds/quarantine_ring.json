@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "quarantine_ring",
-  "title": "检疫环",
+  "title": "隔离第二十天",
   "extends": null,
   "era": "远未来",
   "region": "银河边境的一座环形空间站，检疫期还剩二十一天",

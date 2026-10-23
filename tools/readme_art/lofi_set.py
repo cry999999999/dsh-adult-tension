@@ -1041,19 +1041,19 @@ def cover_art(cv, genre, ax0, at, ax1, ab, rnd, glow):
         glow.append(f'<rect x="{cx * C}" y="{(ab - 20) * C}" width="{2 * C}" height="{14 * C}" fill="#c8d8ff" filter="url(#g6)" opacity="0.7"/>')
 
 
-GENRES_DESC = ("世界分类展示：{} 盒录像带封面朝外立在两层小货架上，射灯照着，一类一盒：{}；每盒顶上写着这一类有几个世界，"
+GENRES_DESC = ("世界分类展示：{} 盒录像带封面朝外立在一个两层的木柜里，射灯照着，一类一盒：{}；每盒顶上写着这一类有几个世界，"
                "封面是这一类的小夜景，底下贴着分类名。全部世界已开放，每一类的完整名单在 README 的全部世界速览里。")
 
 
 def genres():
-    """The short version for the top of the README: one face-out sleeve per genre on two lit counter shelves, in wall order."""
+    """The short version for the top of the README: one face-out sleeve per genre in a lit two-tier cabinet, in wall order."""
     assert set(COVERS) == {r for r, _, _ in REGIONS}
     rows, k = [], 0
     for half in (BANDS[:2], BANDS[2:]):                             # shelves I+II on top, III+IV below
         n = sum(c for _, c in half)
         rows.append(REGIONS[k:k + n])
         k += n
-    GW, GH = 300, 158
+    GW, GH = 300, 151
     rnd = random.Random(53)
     cv = pk.Canvas(GW, GH)
     over, glow = [], []
@@ -1069,11 +1069,18 @@ def genres():
     over.append(text((px0 + PW / 2) * C, 11.6 * C, f"世界分类 · {len(REGIONS)} 类", 17, "#4a3410", 900, "middle", 2, SANS))
     pitch = (X1 - X0) / max(len(r) for r in rows)
     size = min(16, (pitch - 8) * C / max(len(r) for r, _, _ in REGIONS))   # one type size on every sleeve
+    TOP, ROWH = 17, 56                                              # one cabinet: top board, then two tiers of ROWH each
+    BOT = TOP + 2 + len(rows) * ROWH - 3                            # the bottom board
+    cv.rect(X0 - 2, TOP + 2, X1 + 2, BOT, "#1e1520")                  # back panel shared by both tiers
+    for ux in (X0 - 5, X1 + 2):                                     # side posts
+        cv.rect(ux, TOP - 1, ux + 3, BOT + 4, "#6a4430")
+        cv.rect(ux, TOP - 1, ux + 1, BOT + 4, "#9a6a48")
+    cv.rect(X0 - 5, TOP - 1, X1 + 5, TOP + 2, "#6a4430")            # top board
+    cv.rect(X0 - 5, TOP - 1, X1 + 5, TOP, "#9a6a48")
     for ri, row in enumerate(rows):
-        RT = 17 + ri * 67                                           # the spotlight track of this shelf
-        SY = RT + 53                                                # the shelf board
+        RT = TOP + 2 + ri * ROWH                                    # the lamps hang from the board above
+        SY = RT + 53                                                # the board this tier stands on
         x_off = (len(rows[1]) - len(row)) * pitch / 2 if len(row) < max(len(r) for r in rows) else 0
-        cv.rect(X0, RT, X1, RT + 1, "#2a2230")
         for i, (genre, rc, worlds_) in enumerate(row):
             x0 = int(X0 + x_off + i * pitch + 2)
             x1 = int(X0 + x_off + (i + 1) * pitch - 2)
@@ -1094,15 +1101,19 @@ def genres():
             over.append(text((x0 + x1) / 2 * C, (y0 + 5.6) * C, f"{len(worlds_)} 个世界", 13, "#ffffff", 800, "middle", 1, SANS,
                              'stroke="#2a1a24" stroke-width="2.5" paint-order="stroke"'))
             over.append(text((x0 + x1 + 2) / 2 * C, (y0 + 40.8) * C, genre, round(size, 1), "#221a24", 900, "middle", 0, SANS))
-        cv.rect(X0 - 2, SY, X1 + 2, SY + 4, "#6a4430")              # the counter shelf
-        cv.rect(X0 - 2, SY, X1 + 2, SY + 1, "#9a6a48")
-        cv.rect(X0 - 2, SY + 5, X1 + 2, SY + 6, "#140c10")
-        for bx in (X0 + 10, (X0 + X1) // 2, X1 - 16):
-            cv.poly([(bx, SY + 5), (bx + 7, SY + 5), (bx, SY + 12)], "#3a3440")
+        if ri < len(rows) - 1:                                      # a thin middle shelf, part of the same cabinet
+            cv.rect(X0 - 2, SY, X1 + 2, SY + 3, "#6a4430")
+            cv.rect(X0 - 2, SY, X1 + 2, SY + 1, "#9a6a48")
+        else:                                                       # the bottom board on its brackets
+            cv.rect(X0 - 5, SY, X1 + 5, SY + 4, "#6a4430")
+            cv.rect(X0 - 5, SY, X1 + 5, SY + 1, "#9a6a48")
+            cv.rect(X0 - 5, SY + 5, X1 + 5, SY + 6, "#140c10")
+            for bx in (X0 + 10, (X0 + X1) // 2, X1 - 16):
+                cv.poly([(bx, SY + 5), (bx + 7, SY + 5), (bx, SY + 12)], "#3a3440")
     body = f'''    <g shape-rendering="crispEdges">{cv.emit(C)}</g>
     {"".join(glow)}
     {"".join(over)}
-    {text(X0 * C, 155 * C, f"全部 {NWORLDS} 个世界已开放，每一类的完整名单在下方“全部世界速览”里", 18, SUBT, 600, "start", 1.5)}'''
+    {text(X0 * C, (BOT + 19) * C, f"全部 {NWORLDS} 个世界已开放，每一类的完整名单在下方“全部世界速览”里", 18, SUBT, 600, "start", 1.5)}'''
     doc("genres.svg", GW * C, GH * C, "世界分类", GENRES_DESC.format(len(REGIONS), "、".join(r for r, _, _ in REGIONS)), "", body)
 
 

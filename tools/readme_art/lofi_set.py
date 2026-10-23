@@ -1046,14 +1046,14 @@ GENRES_DESC = ("世界分类展示：{} 盒录像带封面朝外排成两排，�
 
 
 def genres():
-    """The short version for the top of the README: one face-out sleeve per genre, two rows on the wall above one board, in wall order."""
+    """The short version for the top of the README: one face-out sleeve per genre, two rows straight on the wall, in wall order."""
     assert set(COVERS) == {r for r, _, _ in REGIONS}
     rows, k = [], 0
     for half in (BANDS[:2], BANDS[2:]):                             # shelves I+II on top, III+IV below
         n = sum(c for _, c in half)
         rows.append(REGIONS[k:k + n])
         k += n
-    GW, GH = 300, 143
+    GW, GH = 300, 135
     rnd = random.Random(53)
     cv = pk.Canvas(GW, GH)
     over, glow = [], []
@@ -1070,7 +1070,7 @@ def genres():
     pitch = (X1 - X0) / max(len(r) for r in rows)
     size = min(16, (pitch - 8) * C / max(len(r) for r, _, _ in REGIONS))   # one type size on every sleeve
     TOP, SLEEVE, GAP = 20, 48, 5                                    # two rows of sleeves straight on the wall, no frame between them
-    BOT = TOP + len(rows) * (SLEEVE + GAP) - GAP                    # the one board everything stands above
+    BOT = TOP + len(rows) * (SLEEVE + GAP) - GAP                    # the foot of the lower row
     for ri, row in enumerate(rows):
         y0 = TOP + ri * (SLEEVE + GAP)
         y1 = y0 + SLEEVE
@@ -1089,15 +1089,10 @@ def genres():
             over.append(text((x0 + x1) / 2 * C, (y0 + 5.6) * C, f"{len(worlds_)} 个世界", 13, "#ffffff", 800, "middle", 1, SANS,
                              'stroke="#2a1a24" stroke-width="2.5" paint-order="stroke"'))
             over.append(text((x0 + x1 + 2) / 2 * C, (y0 + 40.8) * C, genre, round(size, 1), "#221a24", 900, "middle", 0, SANS))
-    cv.rect(X0 - 2, BOT, X1 + 2, BOT + 4, "#6a4430")                # the bottom board on its brackets
-    cv.rect(X0 - 2, BOT, X1 + 2, BOT + 1, "#9a6a48")
-    cv.rect(X0 - 2, BOT + 5, X1 + 2, BOT + 6, "#140c10")
-    for bx in (X0 + 10, (X0 + X1) // 2, X1 - 16):
-        cv.poly([(bx, BOT + 5), (bx + 7, BOT + 5), (bx, BOT + 12)], "#3a3440")
     body = f'''    <g shape-rendering="crispEdges">{cv.emit(C)}</g>
     {"".join(glow)}
     {"".join(over)}
-    {text(X0 * C, (BOT + 19) * C, f"全部 {NWORLDS} 个世界已开放，每一类的完整名单在下方“全部世界速览”里", 18, SUBT, 600, "start", 1.5)}'''
+    {text(X0 * C, (BOT + 11) * C, f"全部 {NWORLDS} 个世界已开放，每一类的完整名单在下方“全部世界速览”里", 18, SUBT, 600, "start", 1.5)}'''
     doc("genres.svg", GW * C, GH * C, "世界分类", GENRES_DESC.format(len(REGIONS), "、".join(r for r, _, _ in REGIONS)), "", body)
 
 

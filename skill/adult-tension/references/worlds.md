@@ -2,7 +2,7 @@
 
 # 世界列表
 
-内容版本：`2026.10.13`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。
+内容版本：`2026.10.24`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。
 
 | 内容标签 | ID | 已发布世界数 |
 |---|---|---|
@@ -34,7 +34,7 @@
 | 不肯签字的女飞官 | `aerospace_simulator_pod_gauge_release` | 商业航天测控基地的总装大厅里，全动模拟球舱一天要跑二十个小时。 | 日常、有压力 | released |
 | 被绑发带女会长 | `afterschool_cellar_president_confession` | 名门私立大学的旧校舍下个月就要拆，研究生会女会长带着人在地下钟楼的备品地窖里清查历年账目，一箱一箱翻到深夜，账目里有几笔怎么也对不上。 | 日常、有压力 | released |
 | 秘药高热女首席 | `alchemy_archive_potion_backlash` | 皇家魔导院地下的禁忌炼药暗室里，冷面首席魔导师带着后辈搭档复原一种古代共鸣秘药，已经熬了大半年：白天授课、审稿，夜里守着琉璃导管看药色。 | 日常、有压力 | released |
-| 禁触的雪线圣女 | `alpine_sanctuary_dagger_rescue` | 海拔四千米的雪线神殿，一年只在夏至前后开山，朝圣者踩着冰阶上来求一句祝福。 | 日常、有压力 | released |
+| 禁触的雪线圣女 | `alpine_sanctuary_dagger_rescue` | 海拔四千米的雪线神殿一年只在夏秋开山，朝圣者踏着冰阶上来求一句降福。 | 日常、有压力 | released |
 | 流沙殿摸金女魁 | `ancient_tomb_gravity_sand_spill` | 军阀混战的年头，发丘摸金世家的女掌门受雇带队探一座前朝皇陵，督军府派了工兵团跟着，名为护送，实为盯梢。 | 日常、有压力 | released |
 | 防弹密室女军火商 | `arms_dealer_heiress_yacht_standoff` | 军工联合体家族的冷艳掌舵千金，带着贴身保镖队长和见习大管轮，乘六十米长的私人防暴游艇在公海上谈一笔激光防空芯片的交易，一走就是十天。 | 日常、有压力 | released |
 | 揭幕前的修复师 | `art_restorer_roller_piercing_jam` | 国家博物馆的宋画特展下周揭幕，冷艳的古画修复师每天在悬空全景玻璃中庭里给国宝宋画补笔，环境控制总指挥、修复副手和升降罩技师寸步不离。 | 日常、有压力 | released |
@@ -96,7 +96,7 @@
 | 血脉觉醒的高热夜 | `floating_city_alchemist_isolation` | 三千米雷暴云海上的浮空城顶层实验室，帝国首席女炼金术士日夜解析一件禁物，贴身卫队长守在门外，多疑的总督每周来查一次进度。 | 日常、有压力 | released |
 | 雾夜马车俏贵妇 | `fog_bathhouse` | 雾里人人只是一个号码，号码和名字的对应只在一个人手里；那个人什么时候对、对给谁看？ | 日常、有压力 | released |
 | 仙山客栈老板娘 | `foothill_town` | 上不了山的人，在山下怎么活？ | 日常、有压力 | released |
-| 紫禁封宫夜 | `forbidden_city_snowbound_cabinet_secret` | 架空皇朝的深宫，太上皇病重，司礼监的女尚仪掌着天子六玺与一只朱批密匣，当朝军机首辅是十年的旧识，也是储位之争里最难缠的对手。 | 日常、有压力 | released |
+| 紫禁封宫夜 | `forbidden_city_snowbound_cabinet_secret` | 架空皇朝的紫禁深宫，太上皇久病卧榻。 | 日常、有压力 | released |
 | 台风夜解剖室 | `forensic_pathologist_autopsy_isolation` | 江海市国家司法鉴定中心地下二层的解剖中心，政法世家出身的天才首席女法医接手了一桩豪门连环谋杀案，遗体一具接一具送来。 | 日常、有压力 | released |
 | 退队的重甲统领 | `frontier_tavern_exiled_paladin` | 极北冰封断崖上的要塞，悬空八十米的黑曜石连桥是进堡的唯一通路。 | 日常、有压力 | released |
 | 破冰底舱女缉私 | `frozen_border_river_contraband_hold` | 极北界河上的万吨破冰船，一冬天都在国境关卡附近来回开道。 | 日常、有压力 | released |
@@ -120,7 +120,7 @@
 | 安全屋的财团千金 | `heiress_panic_room_stalemate` | 半山临海的独栋豪宅里，名门千金刚从父亲手里接过家族信托，世交财团的继承人、主家的信托律师和安全屋门锁工程师轮番上门。 | 日常、有压力 | released |
 | 首演前钢琴千金 | `heiress_piano_choker_lever_jam` | 财阀千金读完钢琴硕士，第一场个人独奏专场下周开演，每天在挑高独奏琴房里练到深夜，调律师、大提琴同侪和安保队长进进出出。 | 日常、有压力 | released |
 | 十号风球船坞 | `hongkong_shipping_cargo_hold` | 霍家旗舰三万吨散货轮进了青衣船厂的浮船坞大修，接班千金跟着甲板总水手长在船上验收了半个月，白天爬舱底、对图纸，夜里在船员餐厅吃宵夜。 | 日常、有压力 | released |
-| 洪峰水坝女调度 | `hydroelectric_penstock_intake_gate_stuck` | 峡谷里的特大水坝进入汛期，所有人吃住在坝上，库区移民村的灯一盏盏亮在半山腰。 | 日常、有压力 | released |
+| 洪峰水坝女调度 | `hydroelectric_penstock_intake_gate_stuck` | 峡谷里的特大型混凝土重力坝进入七月主汛期，全体水工与调度人员吃住在坝上，半山腰库区移民村的灯火夜夜倒映在江面上。 | 日常、有压力 | released |
 | 十马赫风洞女总师 | `hypersonic_wind_tunnel_nozzle_jam` | 西南山沟里的三线老基地，一次吹风要吃掉半座城的电，试验只能排在后半夜用电低谷，基地子弟是听着吹风的爆鸣长大的。 | 日常、有压力 | released |
 | 被窥破的催眠师 | `hypnosis_clinic_subconscious_backlash` | 海滨悬崖上的私立神经认知研究所，冷面的首席主试研究员带着一位自愿受试的博士生做双向脑电反馈的催眠实验，已经做了大半年。 | 日常、有压力 | released |
 | 政变雪夜的皇女 | `imperial_princess_cabin_warmth` | 帝国北境的拓荒地，皇帝的金发长女奉命巡视边陲，借住在黑松林边一间旧护林员的石木小屋，流放的巡林游侠被指派当向导。 | 日常、有压力 | released |
@@ -147,7 +147,7 @@
 | 改写故障日志 | `night_repair` | 城市的一切都有记录，只有夜班修理工知道哪些记录是假的。 | 日常、有压力 | released |
 | 核井防爆门下沉 | `nuclear_silo_blast_door_lockdown` | 冷战年代封存至今的废弃核导弹发射深井，退役的发射指挥女军官被请回来带队做封存评估，核防化士官长、督导监察官和见习技术员跟着下井。 | 日常、有压力 | released |
 | 告解窗前小修女 | `nun_confessional_snowbound_sanctuary` | 阿尔卑斯绝顶的黑石修道院，严守贞誓的见习修女在药剂房和告解室之间度过每一天。 | 日常、有压力 | released |
-| 规培护士查房夜 | `nurse_station_cart_garter_clip_jam` | 上海三甲医院的急诊大楼，规培第一年的纯欲小护士每天推着抢救车在玻璃护士站环岛里交接，裙底是白丝吊袜带，忙起来连水都顾不上喝。 | 日常、有压力 | released |
+| 规培护士查房夜 | `nurse_station_cart_garter_clip_jam` | 上海三甲医院的急诊大楼昼夜通明，规培满一年的年轻护士每天在全透明的玻璃护士站环岛核对医嘱、清点抢救车备品，忙起来连口温水都顾不上喝。 | 日常、有压力 | released |
 | 弹尽粮绝女少校 | `officer_trench_last_bullet_vow` | 帝国末年的北境防线，第七突出部第十四号掩体里，近卫装甲掷弹兵的青年女少校带着一个连守了一个冬天。 | 日常、有压力 | released |
 | 台风夜的月池 | `offshore_oil_platform_diverter` | 平台上的人二十八天一轮换，今天倒班直升机刚落，换班的人拎着行李走下停机坪。 | 日常、有压力 | released |
 | 斗轮机女总指挥 | `open_pit_coal_excavator_fire` | 草原深处的露天煤矿，冬天零下三十度，白毛风卷着雪粒和煤尘打在脸上，排土场外就是牧民的冬窝子。 | 日常、有压力 | released |

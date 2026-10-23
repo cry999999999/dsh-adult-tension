@@ -1,384 +1,110 @@
 {
  "background_cast": [
   {
-   "adult_context": "青年住院总医师年满二十八周岁，依法享有执业医师诊疗处置权。",
+   "adult_context": "陪家人看急诊的成年家属。",
    "age_range": [
-    28,
-    28
-   ],
-   "function": "messenger",
-   "gender": "male",
-   "id": "bg_er_chief_resident_chu",
-   "line": "老院长请留步，三床突发急性心梗溶栓指征有重要动态变化，请院长先行审阅！",
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "name": "阿杰",
-   "role": "急诊外科住院医师"
-  },
-  {
-   "adult_context": "护理管理规培生年满三十四周岁，具备完整民事自立能力。",
-   "age_range": [
-    34,
-    34
-   ],
-   "function": "helper",
-   "gender": "female",
-   "id": "bg_head_nurse_yan_min",
-   "line": "护士别慌，止血钳挑动卡爪动作要稳，护士长在正面拿病历板把视线全挡住！",
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "name": "蒋护士长",
-   "role": "急诊监护病区总带教"
-  },
-  {
-   "adult_context": "急救转运工勤骨干年满三十五周岁，持有医疗重载转运操作证。",
-   "age_range": [
-    35,
-    35
-   ],
-   "function": "helper",
-   "gender": "male",
-   "id": "bg_er_porter_sun",
-   "line": "推车双侧后轮脚踏刹车已经死死踩牢了，推车绝对纹丝不动，护士放心发力！",
-   "location_ids": [
-    "loc_er_crash_cart_alcove"
-   ],
-   "name": "老马",
-   "role": "急诊急救转运保障员"
-  },
-  {
-   "adult_context": "临床药学毕业，年满二十四周岁，享有完整法定民事行为自立权利。",
-   "age_range": [
-    24,
-    24
+    30,
+    60
    ],
    "function": "witness",
-   "gender": "female",
-   "id": "bg_er_pharmacist_xiao_tao",
-   "line": "一号窗口正在加急叫号，候诊家属视线已经全数引向药房，通道正面视线安全！",
+   "gender": "any",
+   "id": "bg_family_member",
+   "line": "{npc.name}隔着玻璃台面探头，问了第三遍化验结果什么时候出。",
+   "location_ids": [
+    "loc_er_central_nurse_station"
+   ],
+   "name": null,
+   "role": "候诊家属"
+  },
+  {
+   "adult_context": "医学院毕业、年满二十四岁的成年轮转医生。",
+   "age_range": [
+    24,
+    27
+   ],
+   "function": "witness",
+   "gender": "any",
+   "id": "bg_intern_doctor",
+   "line": "{npc.name}抱着病历夹缩在抢救车边，眼睛一直往凹槽里瞟。",
+   "location_ids": [
+    "loc_er_central_nurse_station",
+    "loc_er_crash_cart_alcove"
+   ],
+   "name": null,
+   "role": "轮转实习医生"
+  },
+  {
+   "adult_context": "持证上岗的成年保安。",
+   "age_range": [
+    28,
+    45
+   ],
+   "function": "obstacle",
+   "gender": "any",
+   "id": "bg_security_guard",
+   "line": "{npc.name}张开手臂请家属往两边让：查房队伍通行，别在通道里站着。",
+   "location_ids": [
+    "loc_grand_hall_inspection_walkway"
+   ],
+   "name": null,
+   "role": "急诊通道保安"
+  },
+  {
+   "adult_context": "院办在编的成年秘书。",
+   "age_range": [
+    26,
+    35
+   ],
+   "function": "messenger",
+   "gender": "any",
+   "id": "bg_expert_secretary",
+   "line": "{npc.name}抱着考评夹小跑过来：副院长要先看毒麻药台账。",
+   "location_ids": [
+    "loc_grand_hall_inspection_walkway"
+   ],
+   "name": null,
+   "role": "院办秘书"
+  },
+  {
+   "adult_context": "工作多年的成年分诊护士。",
+   "age_range": [
+    27,
+    40
+   ],
+   "function": "helper",
+   "gender": "any",
+   "id": "bg_triage_nurse",
+   "line": "{npc.name}把一叠化验单塞过来，小声说：快签，专家组进连廊了。",
    "location_ids": [
     "loc_triage_observation_glass_hall"
    ],
-   "name": "小雯",
-   "role": "急诊药房高危药调剂员"
+   "name": null,
+   "role": "分诊台护士"
   },
   {
-   "adult_context": "医院特勤安保队长年满三十周岁，依法维护急诊通道秩序。",
+   "adult_context": "在医院干了多年的成年保洁。",
    "age_range": [
-    30,
-    30
-   ],
-   "function": "obstacle",
-   "gender": "male",
-   "id": "bg_er_security_guard_captain",
-   "line": "请过往候诊家属靠两侧礼让，老院长专家查房队伍正在通行，禁止在通道滞留！",
-   "location_ids": [
-    "loc_grand_hall_inspection_walkway"
-   ],
-   "name": "周队长",
-   "role": "急诊大楼特勤保卫队长"
-  },
-  {
-   "adult_context": "特聘名誉副院长年满三十三周岁整，享有完整法定行政管理决策权。",
-   "age_range": [
-    33,
-    33
+    40,
+    58
    ],
    "function": "rumor_source",
-   "gender": "male",
-   "id": "bg_dean_qin_tian_lin",
-   "line": "急诊护士站推车交接是否落实到秒？推车滑轨与铅封容不得半点马虎！",
+   "gender": "any",
+   "id": "bg_cleaner",
+   "line": "{npc.name}拄着拖把在连廊尽头嘀咕：楼上值班室那扇门，昨晚锁了好一阵。",
    "location_ids": [
-    "loc_grand_hall_inspection_walkway"
+    "loc_triage_observation_glass_hall"
    ],
-   "name": "徐主任",
-   "role": "医务处主任"
+   "name": null,
+   "role": "夜班保洁"
   }
  ],
  "cast_combos": [
   {
-   "chemistry": "冷峻住院总在身前横跨半步构筑的如山屏障，化作护士手中止血钳破拆的绝对底气；护士指尖微颤的每一个细微动作，皆牵动着住院总心底最深沉的守护涟漪。",
-   "id": "combo_nurse_and_resident_trust",
-   "identity_ids": [],
-   "player_positions": [
-    "high",
-    "equal",
-    "low"
+   "chemistry": "{pure_nurse_bai_zhi_lin.name}三天前在值班休息室先吻了你；今早隔着玻璃环岛，两人只能用病历夹和眼神说话。",
+   "id": "combo_nurse_and_resident_night",
+   "identity_ids": [
+    "pi_er_resident_physician"
    ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 3
-     },
-     "b": "pure_nurse_bai_zhi_lin",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 3
-     },
-     "reason": "在导医台前密切关注护士止血钳破拆进展并以病历板实施视线阻隔。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 4
-     },
-     "b": "er_chief_resident_chu_yun_shen",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 4
-     },
-     "reason": "急诊重症监护核心搭档之间的绝对战术配合信任。",
-     "stage": "familiar"
-    },
-    {
-     "a": "pure_nurse_bai_zhi_lin",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 4
-     },
-     "b": "er_chief_resident_chu_yun_shen",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 4
-     },
-     "reason": "临床抢救一线生死相托的默契同仁，眼神交汇即明进退。",
-     "stage": "stranger"
-    }
-   ],
-   "slots": [
-    "pure_nurse_bai_zhi_lin",
-    "er_chief_resident_chu_yun_shen"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "确保急救推车安瓿完好无损且纯洁护士完美端庄完成晨检交接。",
-    "limit_gap": "院长查房八米严苛倒数与大腿内侧金属卡夹咬死剧痛的极限拉锯",
-    "meeting_reason": "早交班前，住院总在护士站环岛核对抢救车，顺口叮嘱小护士把滑轨的铅封再检查一遍。",
-    "resource_gap": "住院总医师面对院长查房时的医嘱汇报特权与护士站台面下两毫米微观器械自救空间的巨大反差"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "eng_crash_cart_rail_garter_clip_jam",
-    "eng_dean_eight_meter_arrival"
-   ]
-  },
-  {
-   "chemistry": "严厉护士长高举记录板干练汇报的挺拔英姿与护士专注自救的低眉侧颜交织，空气中激荡着护理姐妹同生共死的护短默契。",
-   "id": "combo_nurse_and_head_nurse_shield",
-   "identity_ids": [],
-   "player_positions": [
-    "equal"
-   ],
-   "power_structure": "equal",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 3
-     },
-     "b": "pure_nurse_bai_zhi_lin",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 3
-     },
-     "reason": "协助掩护护士自救并严密监控走廊查房队伍视线。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 4
-     },
-     "b": "head_nurse_yan_min",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 4
-     },
-     "reason": "配合护士长调整台面监护电脑掩盖急救车下盘微弱金属撬动动静。",
-     "stage": "familiar"
-    },
-    {
-     "a": "pure_nurse_bai_zhi_lin",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "head_nurse_yan_min",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "带教师徒情谊在突发危机考验下的绝对信任与坚实依托。",
-     "stage": "stranger"
-    }
-   ],
-   "slots": [
-    "pure_nurse_bai_zhi_lin",
-    "head_nurse_yan_min"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "在不惊动全院三十位主任的前提下悄无声息化解这场职业生涯危机。",
-    "limit_gap": "老院长脚步声的无情迫近与受困实习生绝境中的超常沉着应变",
-    "meeting_reason": "护士长巡到环岛，一眼看见小护士的裙摆被抢救车扯住，立刻拿病历板挡在前面。",
-    "resource_gap": "护士长对护士站台面全盘质控掩护与弯头止血钳钝头杠杆微观破拆自救"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "eng_nurse_uniform_slit_tear_peril",
-    "eng_crash_cart_rail_garter_clip_jam"
-   ]
-  },
-  {
-   "chemistry": "孙师傅以重工皮鞋死死踩定刹车踏板锁死推车位移，护士借势稳稳反手运钳下压，二人形成磐石般的器械力学平衡协同。",
-   "id": "combo_porter_and_nurse_support",
-   "identity_ids": [],
-   "player_positions": [
-    "high",
-    "equal",
-    "low"
-   ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 3
-     },
-     "b": "pure_nurse_bai_zhi_lin",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 3
-     },
-     "reason": "在工勤师傅稳住车身下协同护士完成微观杠杆挑脱。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 4
-     },
-     "b": "er_porter_sun_tie_jun",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 4
-     },
-     "reason": "同为保障急诊抢救设备平稳的技术骨干保持高度默契。",
-     "stage": "familiar"
-    },
-    {
-     "a": "pure_nurse_bai_zhi_lin",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "er_porter_sun_tie_jun",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "对工勤师傅关键时刻死死踩住脚刹心怀深深谢意。",
-     "stage": "stranger"
-    }
-   ],
-   "slots": [
-    "pure_nurse_bai_zhi_lin",
-    "er_porter_sun_tie_jun"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "在推车发生晃动导致针剂倾覆前彻底挑脱卡扣。",
-    "limit_gap": "推车第二层导轨五公斤抗扭形变极限与止血钳三牛顿微挑力的精准较量",
-    "meeting_reason": "转运师傅推着平车经过，发现抢救车的脚刹没踩死，弯腰替小护士踩牢。",
-    "resource_gap": "工勤师傅对八十公斤急救车机械刹车的绝对锚定与年轻护士盲操钳尖撬别的微观平衡"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "eng_crash_cart_rail_garter_clip_jam",
-    "eng_nurse_uniform_slit_tear_peril"
-   ]
-  },
-  {
-   "chemistry": "老院长每迈近一步发出的硬底皮鞋触地声，都如同敲击在护士命悬一线的神经末梢上，逼迫护士加速指尖止血钳上挑的转动速率。",
-   "id": "combo_nurse_and_dean_scrutiny",
-   "identity_ids": [],
-   "player_positions": [
-    "low",
-    "equal"
-   ],
-   "power_structure": "npc_high",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 3
-     },
-     "b": "pure_nurse_bai_zhi_lin",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 3
-     },
-     "reason": "严密监控老院长查房动线并用病历夹实施角度拦截。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 2
-     },
-     "b": "dean_qin_tian_lin",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 2
-     },
-     "reason": "依规呈递晨间抢救数据防止督导组违规提前触碰未交接推车。",
-     "stage": "familiar"
-    },
-    {
-     "a": "pure_nurse_bai_zhi_lin",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 1
-     },
-     "b": "dean_qin_tian_lin",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 1
-     },
-     "reason": "高度敬畏戒备，誓死捍卫职业尊严与身体隐私不受曝光。",
-     "stage": "stranger"
-    }
-   ],
-   "slots": [
-    "pure_nurse_bai_zhi_lin",
-    "dean_qin_tian_lin"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "在老院长踏至推车前板前彻底切断鸭嘴夹与阻尼卡爪的咬合连接。",
-    "limit_gap": "现场拉开抽屉抽验的步步紧逼与护士裙摆濒临撕裂的极端社死风险",
-    "meeting_reason": "老院长带着查房队伍走上主步道，点名要先看护士站的抢救车交接。",
-    "resource_gap": "三甲泰斗至高无上的行政督导权威与纯情护士动弹不得的被动拘束绝境"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "eng_public_glass_hall_scrutiny_dread",
-    "eng_nurse_uniform_slit_tear_peril"
-   ]
-  },
-  {
-   "chemistry": "白大褂挺括的青年住院总与威严鹰隼般的特聘老院长在狭窄导医台通道前形成的如铁对峙，以过硬病例汇报硬生生截断了巡查脚步。",
-   "id": "combo_dean_vs_resident_clash",
-   "identity_ids": [],
    "player_positions": [
     "high"
    ],
@@ -387,17 +113,253 @@
     {
      "a": "player",
      "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "pure_nurse_bai_zhi_lin",
+     "b_to_a": {
       "tension": 5,
+      "trust": 4
+     },
+     "reason": "三天前大抢救后的凌晨，护士在值班休息室主动吻了替自己挡下家属责难的你，裙下的吊袜带还是你亲手系紧的。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "pure_nurse_bai_zhi_lin"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "护士想知道那一吻之后，你肯不肯为自己落一次笔。",
+    "limit_gap": "你不能让专家组看出偏袒，护士不能让人知道裙下那副吊袜带是谁系紧的。",
+    "meeting_reason": "查房队伍进了一楼连廊，{pure_nurse_bai_zhi_lin.name}把毒麻药核验单推到你手边，指尖在台面下勾住你的白大褂衣角。",
+    "resource_gap": "你握着补签笔和规培推荐票，{pure_nurse_bai_zhi_lin.name}只握着一张没补签的核验单。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_ampoule_ledger",
+    "eng_glass_station_eyes"
+   ]
+  },
+  {
+   "chemistry": "{pure_nurse_bai_zhi_lin.name}的留院考核表在你手里，你在备品凹槽教过的那套操作，护士做得一丝不差，只有耳根总是红的。",
+   "id": "combo_nurse_and_supervisor_score",
+   "identity_ids": [
+    "pi_head_nurse_shift_supervisor"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "pure_nurse_bai_zhi_lin",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "上周夜班演练，你在备品凹槽手把手纠正护士的操作，对方红着耳根把储物柜副钥塞进你口袋，约好说暗号就去休息室见你。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "pure_nurse_bai_zhi_lin"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "护士要的不是高分，是你肯不肯当众信自己一次。",
+    "limit_gap": "你打分不能偏，护士不能让人看出两人之间有过一个暗号。",
+    "meeting_reason": "留院考核表最后一项空着，{pure_nurse_bai_zhi_lin.name}站在玻璃护士站内侧，低声求你再给一点平账的时间。",
+    "resource_gap": "你握着考核表和排班，{pure_nurse_bai_zhi_lin.name}握着那把塞进你口袋的储物柜副钥。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_retention_quota",
+    "eng_glass_station_eyes"
+   ]
+  },
+  {
+   "chemistry": "{pure_nurse_bai_zhi_lin.name}和你在科里只点头不说话，交接时擦肩而过，手背会碰一下；这半年的事，只有备品凹槽知道。",
+   "id": "combo_nurse_and_tech_secret",
+   "identity_ids": [
+    "pi_er_equipment_technician"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "pure_nurse_bai_zhi_lin",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "半年前两人瞒着科室确定了关系，为避开同科恋情的规定，只敢在夜班交接时躲进备品凹槽偷偷拥吻。",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
+    "pure_nurse_bai_zhi_lin"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "护士想留在急诊，也想留住你，两样都不肯让。",
+    "limit_gap": "同科恋情一旦报备，两人里总有一个要调走。",
+    "meeting_reason": "{pure_nurse_bai_zhi_lin.name}裙下的吊袜带搭扣松了，躲在抢救车备品凹槽里，唤你用身体挡住分诊连廊的视线。",
+    "resource_gap": "你能导出哪扇门几点开过，{pure_nurse_bai_zhi_lin.name}知道哪个角落没有监控。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_secret_romance",
+    "eng_glass_station_eyes"
+   ]
+  },
+  {
+   "chemistry": "台风夜之后，{pure_nurse_bai_zhi_lin.name}的每一笔夜班药账都由你盯着；今早少的那一支，两人心里都有数。",
+   "id": "combo_nurse_and_liaison_ampoule",
+   "identity_ids": [
+    "pi_pharmacy_dispenser_liaison"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "pure_nurse_bai_zhi_lin",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "上月台风夜两人在药房内库共处半宿，护士坐在核销台边任你吻遍脖颈，事后约好由你替对方盯紧每次夜班药账。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "pure_nurse_bai_zhi_lin"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "护士想知道，那一夜的约定在出事时还算不算数。",
+    "limit_gap": "你没转正，护士没留院，谁出一点错都兜不住。",
+    "meeting_reason": "少了那支芬太尼空安瓿就平不了今早的账，{pure_nurse_bai_zhi_lin.name}把你拉进备品凹槽，回收箱钥匙就在你手里。",
+    "resource_gap": "你握着回收箱钥匙和延时入账权限，{pure_nurse_bai_zhi_lin.name}握着那支空安瓿的来龙去脉。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_ampoule_ledger",
+    "eng_secret_romance"
+   ]
+  },
+  {
+   "chemistry": "{dean_qin_tian_lin.name}在查房队伍最前面，红牌夹在手里；上周深夜那支钢笔，至今还在你的口袋里。",
+   "id": "combo_dean_and_liaison_audit",
+   "identity_ids": [
+    "pi_pharmacy_dispenser_liaison"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
       "trust": 1
      },
      "b": "dean_qin_tian_lin",
      "b_to_a": {
-      "tension": 5,
-      "trust": 1
+      "tension": 4,
+      "trust": 2
      },
-     "reason": "配合住院总果断对查房队伍呈递病案阻隔前行动线。",
+     "reason": "上周院办夜审药账，副院长留你谈到深夜，问你肯不肯做内线换转正；你没答应，递钢笔时两人的指尖碰了一下。",
      "stage": "testing"
-    },
+    }
+   ],
+   "slots": [
+    "dean_qin_tian_lin"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "副院长要一句真话，又不想让这句真话变成交易。",
+    "limit_gap": "副院长不能被人看出偏私，你不能被人当成院办的内线。",
+    "meeting_reason": "{dean_qin_tian_lin.name}率查房队伍刚进大厅主步道，先用内部专线传话，要你立刻呈交昨晚毒麻药的原始单据。",
+    "resource_gap": "{dean_qin_tian_lin.name}握着你的转正和一票否决，你握着昨晚毒麻药的原始单据。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_retention_quota",
+    "eng_ampoule_ledger"
+   ]
+  },
+  {
+   "chemistry": "{head_nurse_yan_min.name}在人前对谁都冷着脸，只有你见过护士长靠在肩头说委屈的样子；那串私人号码，你一直没打过。",
+   "id": "combo_head_nurse_and_tech_log",
+   "identity_ids": [
+    "pi_er_equipment_technician"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "head_nurse_yan_min",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "前天深夜你去值班室导门禁日志，护士长留你喝了半杯热牛奶，靠在你肩头说科里的委屈，要走了你的私人号码。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "head_nurse_yan_min"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "护士长想知道，那半杯牛奶之后，你是不是自己这边的人。",
+    "limit_gap": "护士长不能被人看出求人，你不能替人随便动后台。",
+    "meeting_reason": "{head_nurse_yan_min.name}在分诊连廊拦住你，要你调出凌晨值班休息室的门禁刷卡记录。",
+    "resource_gap": "你手里有门禁日志，{head_nurse_yan_min.name}手里有留院考核和半个月的监控截图。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_retention_quota",
+    "eng_secret_romance"
+   ]
+  },
+  {
+   "chemistry": "{er_chief_resident_chu_yun_shen.name}跟你同批进院，抢下过同一个病人，也分过同一碗泡面；今早这一笔，两人谁签都得赌上前程。",
+   "id": "combo_resident_and_physician_peers",
+   "identity_ids": [
+    "pi_er_resident_physician"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
     {
      "a": "player",
      "a_to_b": {
@@ -406,47 +368,34 @@
      },
      "b": "er_chief_resident_chu_yun_shen",
      "b_to_a": {
-      "tension": 2,
+      "tension": 3,
       "trust": 4
      },
-     "reason": "坚决执行住院总防线指令构筑坚不可摧的白衣屏障。",
+     "reason": "两人同批进院轮转，去年除夕夜班在休息室分吃一碗泡面，彼此清楚对方先斩后奏下口头医嘱的习惯。",
      "stage": "familiar"
-    },
-    {
-     "a": "dean_qin_tian_lin",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 1
-     },
-     "b": "er_chief_resident_chu_yun_shen",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 1
-     },
-     "reason": "铁血泰斗遭遇青年拔尖骨干一身傲骨后的严厉审视与暗中赞许。",
-     "stage": "stranger"
     }
    ],
    "slots": [
-    "dean_qin_tian_lin",
     "er_chief_resident_chu_yun_shen"
    ],
    "stakes": {
-    "irreplaceable_goal": "将老院长死死钉在主通道侧翼为护士构筑最后两米绝对隐私防线。",
-    "limit_gap": "维护急诊重症晨检严谨规程与抵御无关杂乱目光干扰的严正交锋",
-    "meeting_reason": "住院总拦住查房队伍，把三床的危急值报告递到院长面前，替小护士争出几十秒。",
-    "resource_gap": "急诊一线临床抢救当班总负责权与全院最高行政督导权威的正面碰撞"
+    "irreplaceable_goal": "住院总想知道，这么多年的交情能不能扛住一个签名。",
+    "limit_gap": "住院总下月评主治，你要主持交接，谁都不能在专家组面前露怯。",
+    "meeting_reason": "{er_chief_resident_chu_yun_shen.name}把凌晨抢救的病历夹递给你，想让你跟自己联名补签那支没入账的高危镇痛药。",
+    "resource_gap": "{er_chief_resident_chu_yun_shen.name}握着凌晨的病历夹和录音，你握着补签笔和推荐票。"
    },
    "tags": [],
    "tension_engine_ids": [
-    "eng_public_glass_hall_scrutiny_dread",
-    "eng_dean_eight_meter_arrival"
+    "eng_ampoule_ledger",
+    "eng_retention_quota"
    ]
   },
   {
-   "chemistry": "在全通透导医台方寸极限空间内，护士与急诊青年团队同呼吸共进退，以超越常人的冷静机敏共同谱写绝处逢生的破拆传奇。",
-   "id": "combo_nurse_and_player_rescue",
-   "identity_ids": [],
+   "chemistry": "{er_pharmacist_qian_xiao_tao.name}在药房里一分不让，只在内库门关上以后，才肯让你看见算盘后面的那个人。",
+   "id": "combo_pharmacist_and_tech_vault",
+   "identity_ids": [
+    "pi_er_equipment_technician"
+   ],
    "player_positions": [
     "equal"
    ],
@@ -456,530 +405,507 @@
      "a": "player",
      "a_to_b": {
       "tension": 4,
-      "trust": 4
+      "trust": 3
      },
-     "b": "pure_nurse_bai_zhi_lin",
+     "b": "er_pharmacist_qian_xiao_tao",
      "b_to_a": {
       "tension": 4,
       "trust": 4
      },
-     "reason": "在极度危机中以无声默契结下的患难白衣之约。",
+     "reason": "两周前药房电子锁升级那晚，药师关掉内库监控与你抵在药架旁温存，事后把内库应急密码告诉了你。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "er_pharmacist_qian_xiao_tao"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "药师想让你知道那笔临期药的真相，又怕你听完就走。",
+    "limit_gap": "药师的工号经不起查，你的权限经不起被人发现借给了谁。",
+    "meeting_reason": "{er_pharmacist_qian_xiao_tao.name}把你拉进药房内库，屏上闪着专家组即将调阅的夜间取药异常流水。",
+    "resource_gap": "{er_pharmacist_qian_xiao_tao.name}握着核销后台和改账痕迹，你握着内库的应急密码和门禁日志。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_ampoule_ledger",
+    "eng_secret_romance"
+   ]
+  },
+  {
+   "chemistry": "{er_porter_sun_tie_jun.name}堵在凹槽口不肯让，{pure_nurse_bai_zhi_lin.name}站在你身后半步，指尖攥着你的衣角，三个人谁都不先开口。",
+   "id": "combo_nurse_porter_headnurse_trap",
+   "identity_ids": [
+    "pi_pharmacy_dispenser_liaison"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "pure_nurse_bai_zhi_lin",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "前夜交接班时护士趁没人注意，把写着暗号的便签夹进你的核对板，约你查房后在休息室独处。",
+     "stage": "flirting"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 0
+     },
+     "b": "er_porter_sun_tie_jun",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 1
+     },
+     "reason": "上周你撞见勤务组长私自倒卖报废耗材却没声张，对方塞给你一包好烟，试探你是不是同路人。",
+     "stage": "testing"
+    },
+    {
+     "a": "pure_nurse_bai_zhi_lin",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 0
+     },
+     "b": "er_porter_sun_tie_jun",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 1
+     },
+     "reason": "夜班常碰面，点头之交，今早成了对手。",
+     "stage": "acquainted"
+    }
+   ],
+   "slots": [
+    "pure_nurse_bai_zhi_lin",
+    "er_porter_sun_tie_jun"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "护士想保住留院，也想看清你敢不敢替自己站出来。",
+    "limit_gap": "勤务组长怕闹到院办，护士怕被停职，你没转正，也不敢声张。",
+    "meeting_reason": "{er_porter_sun_tie_jun.name}攥着从休息室垃圾桶翻出的断裂吊袜带扣和空安瓿，堵在备品凹槽口，向{pure_nurse_bai_zhi_lin.name}和你要封口的好处。",
+    "resource_gap": "{er_porter_sun_tie_jun.name}握着搭扣和空安瓿，你握着回收箱钥匙，{pure_nurse_bai_zhi_lin.name}什么都没有。"
+   },
+   "tags": [],
+   "tension_engine_ids": [
+    "eng_ampoule_ledger",
+    "eng_glass_station_eyes"
+   ]
+  },
+  {
+   "chemistry": "{er_pharmacist_qian_xiao_tao.name}和{head_nurse_yan_min.name}隔着核销台对峙，一个握着你的钥匙扣，一个记着你酒店房间的门牌号。",
+   "id": "combo_pharmacist_headnurse_clash",
+   "identity_ids": [
+    "pi_er_resident_physician",
+    "pi_head_nurse_shift_supervisor"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "er_pharmacist_qian_xiao_tao",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "两人已在院外同居三个月，药师把内库副匙拴在你的钥匙扣上，约好在科里只装作普通同事。",
+     "stage": "committed"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 2
+     },
+     "b": "head_nurse_yan_min",
+     "b_to_a": {
+      "tension": 5,
+      "trust": 3
+     },
+     "reason": "上月职称集训封闭周里两人在酒店房间有过一夜，回院后护士长仍常借核对排班在值班室跟你贴身耳语。",
+     "stage": "intimate"
+    },
+    {
+     "a": "er_pharmacist_qian_xiao_tao",
+     "a_to_b": {
+      "tension": 4,
+      "trust": -2
+     },
+     "b": "head_nurse_yan_min",
+     "b_to_a": {
+      "tension": 4,
+      "trust": -2
+     },
+     "reason": "多年账面上的对头，各自攥着对方一笔说不得的事。",
      "stage": "testing"
     }
    ],
    "slots": [
-    "pure_nurse_bai_zhi_lin"
+    "er_pharmacist_qian_xiao_tao",
+    "head_nurse_yan_min"
    ],
    "stakes": {
-    "irreplaceable_goal": "在老院长踏至推车旁的刹那助护士重获自由成就无瑕圣洁立正交接。",
-    "limit_gap": "全院专家注视下的绝对隐秘自救要求不得产生半丝突兀动静",
-    "meeting_reason": "夜班最安静的凌晨三点，住院总和小护士并肩坐在护士站后面，分一份泡面。",
-    "resource_gap": "护士受制于下肢死锁而同僚拥有病历板与电脑屏幕全套遮挡资源"
+    "irreplaceable_goal": "两人都想听你说一句，自己才是你要护着的人。",
+    "limit_gap": "你站谁，另一个人的事就会摊在专家组面前。",
+    "meeting_reason": "{head_nurse_yan_min.name}拿着没平账的毒麻药单据闯进药房内库，{er_pharmacist_qian_xiao_tao.name}反手调出护士长亲戚顶替名额的后台记录，两人同时要你表态。",
+    "resource_gap": "{er_pharmacist_qian_xiao_tao.name}握着改分的证据，{head_nurse_yan_min.name}握着临期药的记录，你握着两个人的私事。"
    },
-   "tags": [
-    "intimate"
-   ],
+   "tags": [],
    "tension_engine_ids": [
-    "eng_crash_cart_rail_garter_clip_jam",
-    "eng_nurse_uniform_slit_tear_peril"
+    "eng_retention_quota",
+    "eng_secret_romance"
    ]
   }
  ],
  "channels": [
   {
    "fidelity": "distorted",
-   "id": "ch_er_public_triage_announcement",
-   "reach": "急诊分诊大厅数千名病患家属与候诊走廊全域覆盖，高保真叫号回音交织",
-   "text": "急诊综合大厅全景吸顶广播叫号系统"
+   "id": "ch_shift_group_chat",
+   "reach": "全科医护的手机，一条消息几分钟内人人看过",
+   "text": "早班交接群"
   },
   {
    "fidelity": "exact",
-   "id": "ch_er_resuscitation_team_intercom",
-   "reach": "住院总医师住院总总控端与护士站急救核心组专属毫秒级私密指令信道",
-   "text": "急诊重症监护团队内部加密降噪骨传导专网"
+   "id": "ch_internal_line",
+   "reach": "院办、护士站和药房之间点对点传话",
+   "text": "急诊内部专线"
   }
  ],
  "character_templates": [
   {
-   "adult_context": "护理本科毕业，三甲医院急诊科规培第一年的护士，已经独立值过十几个夜班，排班、去留和跟谁亲近都由本人拿主意。",
+   "adult_context": "护理本科毕业、规培满一年的成年护士，独立值过几十个夜班，去留和跟谁亲近都由本人拿主意。",
    "age_range": [
-    23,
-    25
+    24,
+    26
    ],
    "appearance_options": [
-    "齐肩乌黑秀发规整挽在洁白燕尾护士帽下，杏眼水润清澈，面庞纯净娇俏，两颊带有天然紧致微婴儿肥与饱满水润胶原蛋白的反差娇嫩，身穿一袭纯白加厚抗静电修身立领排扣护士套裙。",
-    "修身护士裙摆端庄停在膝上五公分，雪白修长的小腿裹着医用护士袜，内衬隐秘佩戴着一套黑色防静脉曲张吊袜带；此时不锈钢鸭嘴夹卡入抢救车滑轨导致裙摆斜向拉扯紧绷，整个人却依然维持甜美纯情站姿。"
+    "齐肩黑发挽在护士帽下，杏眼清亮，两颊熬夜后泛着淡红，白色护士裙熨得笔挺。",
+    "护士裙停在膝上，小腿裹着白色护士袜，站姿端正得挑不出错，裙下却系着一副蕾丝吊袜带。"
    ],
    "decision": {
     "avoids": [
-     "盲目撕拽护士裙导致当众露底",
-     "在全科专家面前发出难堪呼救",
-     "被扣除规培实习积分"
+     "当众掉眼泪"
     ],
-    "contrast": "平时以软萌温顺、害羞容易脸红的纯情学妹形象示人，面对灭顶职业危机时指尖却展现出极其惊人的外科级冷静与微观撬别魄力。",
-    "core_value": "誓死捍卫白衣天使的纯真尊严与职业前途，纯靠自身过硬护理器械操纵力与物理力学自救脱险。",
+    "contrast": "人前温顺严谨、一丝不苟；人后敢先吻人，也敢替人扛事。",
+    "core_value": "留在急诊，也不让救过的人替自己背账",
     "goal_options": [
-     "在老院长跨完最后八米前用弯头止血钳精准挑弹滑轨自锁卡爪脱钩并抚平裙摆",
-     "单手立正维持纯情甜美微笑绝不让查房专家与候诊家属察觉下身死锁"
+     "在查房前把那支空安瓿的账平掉，不连累下医嘱的人",
+     "弄清昨夜那份心动是真的，还是熬夜熬出来的错觉"
     ],
     "never": [
-     "因慌乱违背严谨护理操作规范",
-     "让纯情洁白的名誉蒙受恶俗非议"
+     "把下医嘱的人供出去换自己留院"
     ],
     "prefers": [
-     "绝对精密的器械物理自救",
-     "台前无可挑剔的整洁仪态",
-     "克制深沉的无声庇护"
+     "把话说在没人的地方"
     ],
     "pressure_responses": {
-     "breaking": "在气阀泄压瞬间反向推脱横臂抱箍并接应宋婉儿递来的磁吸扣迅速扣好前襟",
-     "high": "在导播推流读秒长鸣刹那同搭档一同垂直下压背夹克服八百牛顶力",
-     "low": "双手死死按在讲台木质边缘以极低气声下达排障破拆指令掩饰内心惊涛骇浪",
-     "mid": "忍受胸衣金属骨架勒紧压迫紧贴讲台内侧配合搭档调整翻页笔背夹插入角度"
+     "breaking": "当众认下那支安瓿是自己取的，眼圈红了也不肯低头。",
+     "high": "攥着核验单直视对方，问一句你到底站不站我这边。",
+     "low": "笑着应答家属，手在台面下把核验单压得更平。",
+     "mid": "借整理备品退进凹槽，压低声音只跟信得过的人说实话。"
     },
-    "relationship_stance": "在病人面前软声细语，在住院总面前却总是脸红；夜班最累的时候，只想靠住院总的肩膀眯五分钟。",
-    "withdrawal": "左手按住导医台内侧稳固重心，下颌微扬迎向走廊查房队伍，右手悄然探向口袋摸出止血钳。"
+    "relationship_stance": "对病人软声细语，对护着自己的人会脸红，也会记很久。",
+    "withdrawal": "把护士帽往下压一点，转身去数抢救车最底层的针剂，谁叫都不抬头。"
    },
    "gender": "female",
-   "gender_reason": "急诊科规培第一年的纯欲小护士。",
+   "gender_reason": "标题人物是急诊科的规培女护士。",
    "id": "pure_nurse_bai_zhi_lin",
    "identity": {
-    "authority": "急救推车交接核验单第一责任人签字权与导医台交接就绪汇报权。",
-    "exposure": "私下为防静脉曲张换穿的黑色吊袜带一旦在老院长与全科室数十名专家面前走光暴露，纯情名声与留院资格将当场粉碎。",
-    "hidden": "胸前口袋随身携带的弯头止血钳采用七十五度淬火钝尖工艺，硬度极高且带有防滑横齿，实为解开精密自锁卡爪的微观杠杆利器。",
+    "authority": "抢救车备品清点签字，早交班护理台账汇报。",
+    "exposure": "昨夜抢救时先取用了一支没走完双签的芬太尼，空安瓿至今没入账。",
+    "hidden": "为缓解夜班腿胀，也为一点只属于自己的私趣，护士裙下系着蕾丝吊袜带；昨夜换衣时断了一枚搭扣。",
     "limits": [
-     "右腿裙摆被急救车阻尼滑轨死死咬住无法迈出半步",
-     "严禁在老院长与全科专家查房队伍前露出慌乱或失态"
+     "规培未满，不能独立签毒麻药",
+     "留院考核的分握在护士长手里"
     ],
     "obligations": [
-     "维系白衣天使圣洁严谨的专业护士形象",
-     "十五秒内脱困立正呈递药品交接板"
+     "交班前把抢救车台账交上去"
     ],
     "resources": [
-     "胸前工作口袋常备医用加厚纯钢钝头弯头止血钳",
-     "扎实精湛的无菌器械单手操作功底"
+     "抢救车备品清单",
+     "值班休息室的私人储物柜"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在危难之际以白大褂高大身躯横跨半步挡住全场视线的男子气概",
-     "无需言说的眼神会意"
+     "在家属面前替自己挡下责难的人",
+     "肯在夜班后陪自己分一碗粥的人"
     ],
     "boundaries": [
-     "严禁外人触碰护士裙摆内侧与私密吊袜带部件"
+     "吊袜带只给自己选的人看"
     ],
     "desire_range": [
      2,
      4
     ],
-    "desired_position": "成为急诊重症监护区无可替代的优秀纯洁白衣天使。",
+    "desired_position": "被当成能独当一面的护士，也被偏爱",
     "dislikes": [
-     "大惊小怪的咋呼围观",
-     "居高临下的挑剔呵斥",
-     "轻浮戏谑的打量眼神"
+     "当众打量裙摆的目光"
     ],
-    "expression": "秀丽唇角噙着一抹治愈人心的纯美微笑，眼神端庄迎向查房队伍，右手食指与拇指极其娴熟地操控止血钳尖端向下轻旋挑动。",
+    "expression": "在台面下勾住对方衣角，脸红了也不松手。",
     "likes": [
-     "沉稳可靠的青年医师庇护",
-     "懂分寸知轻重的绅士举动",
-     "纯粹神圣的医护默契"
+     "被揉开站了一夜的小腿"
     ],
     "preconditions": [
-     "急救车死锁顺利化解且查房交接圆满过关",
-     "两人都清醒，心意出于自己，不是绝境里的依赖"
+     "两人都清醒，账也说清了"
     ],
     "self_control_range": [
-     3,
-     5
+     2,
+     4
     ]
    },
    "public_role": "急诊科规培护士",
    "schedule": [
     {
+     "from": 360,
+     "location_id": "loc_er_crash_cart_alcove",
+     "to": 430
+    },
+    {
+     "from": 430,
+     "location_id": "loc_er_central_nurse_station",
+     "to": 480
+    },
+    {
      "from": 480,
-     "location_id": "loc_er_central_nurse_station",
-     "to": 490
-    },
-    {
-     "from": 490,
-     "location_id": "loc_er_central_nurse_station",
-     "to": 505
-    },
-    {
-     "from": 505,
-     "location_id": "loc_er_central_nurse_station",
-     "to": 520
+     "location_id": "loc_er_oncall_room",
+     "to": 540
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "大腿内侧被鸭嘴夹弹片压出微红压痕且单腿站立小腿酸胀。",
-      "option": "反握胸前弯头止血钳以滑轨外缘为支点施加三牛顿力矩精准挑开自锁卡爪自救脱钩。"
+      "cost": "留院评分可能直接降为不合格。",
+      "option": "如实申报一支安瓿待补录"
      },
      {
-      "cost": "住院总突兀移步可能引起护士长关于交接规范的严厉询问。",
-      "option": "向台前站着的青年总医师住院总投去求助眼神示意借查房病历夹横向遮挡。"
+      "cost": "下医嘱的人要一起被追责。",
+      "option": "求住院总在病历上补签口头医嘱"
      }
     ],
-    "pressure": "老院长率数十名查房专家已行至八米外仅剩十五秒，护士裙受拉开裂露出一截大腿，数十道目光聚焦。",
-    "trigger": "推移急救车入位瞬间护士裙摆内侧不锈钢吊袜带鸭嘴夹滑入第二层阻尼滑轨卡爪死锁咬死。"
+    "pressure": "留院考核只差最后一项评分，护士长、副院长和一屋子目光都盯着台账。",
+    "trigger": "查房队伍进了一楼连廊，那支未双签的芬太尼空安瓿还没入账。"
    },
    "tags": [
     "intimate"
    ],
    "voices": {
-    "inner": "吊袜带鸭嘴夹死死咬在滑轨自锁卡爪里了，老院长走过来了，止血钳弯头只要顶住弹片向上轻挑就能脱扣！",
-    "surface": "老院长好，急诊监护急救车全套抢救药品与除颤电极已全数核对完毕，铅封完好！"
+    "inner": "空安瓿还在我口袋里，只要你点一下头，我就知道该怎么说。",
+    "surface": "专家组好，抢救车药品已经全部核对，台账在这儿。"
    }
   },
   {
-   "adult_context": "临床医学博士毕业，急诊科第七年，这一年的住院总医师，具备完全民事行为能力。",
+   "adult_context": "医学博士毕业、执业满五年的成年住院总医师，下月要评主治。",
    "age_range": [
-    29,
+    30,
     33
    ],
    "appearance_options": [
-    "身穿纤尘不染的合体挺括纯白医生大褂，胸前挂着深灰德国进口双管听诊器，面容冷峻清隽，双眸深邃锐利，身材挺拔修长。",
-    "手持加厚磨砂黑色病历夹，伫立在导医台右前侧，眼神沉稳如冰，举手投足间带着主宰急救生死的极强压场魄力。"
+    "白大褂袖口卷到小臂，眼下青黑，说话时手里总转着一支笔。",
+    "个子高，站在抢救床边像一堵墙，熬了一夜，领口还沾着碘伏。"
    ],
    "decision": {
     "avoids": [
-     "任何粗暴失控的医疗纠纷",
-     "对实习人员的盲目问责",
-     "慌乱失态"
+     "欠人情不还"
     ],
-    "contrast": "平时以不苟言笑、对手术精度要求苛刻的外科铁腕著称，关键时刻对护士的守护却展现出极致温柔的绅士涵养。",
-    "core_value": "以极致硬核的医术捍卫生命防线，誓死守护身旁单纯善良的纯洁学妹。",
+    "contrast": "人前果断冷硬，像不会累；人后会蹲在楼梯间对着一碗冷掉的泡面发呆。",
+    "core_value": "先救人再算账，但账不能让小的背",
     "goal_options": [
-     "借向老院长汇报重症患者血气指标为由大步迎上前横在查房队伍正前方争取十秒",
-     "将手持宽大硬质病历夹平举至导医台凹槽侧方遮蔽外侧所有视线角度"
+     "说服一个信得过的人跟自己联名补签那支镇痛药",
+     "保住晋升，又不让规培护士替自己挨处分"
     ],
     "never": [
-     "坐视心爱学妹在公众面前蒙羞受辱",
-     "在权威压迫面前退缩妥协"
+     "让规培护士替自己顶医嘱"
     ],
     "prefers": [
-     "分毫不差的器械操纵",
-     "沉着冷静的绝境破拆自救",
-     "克制深沉的担当守护"
+     "把事情摊开在两个人之间说"
     ],
     "pressure_responses": {
-     "breaking": "在顾冷霜清冷发声瞬间停住脚步退回侧幕维持同僚体面",
-     "high": "迈步登上红地毯台阶准备直接切入讲台中央核心演讲区",
-     "low": "在对讲机中平稳催促台前人员汇报讲台升降测试状态",
-     "mid": "迈步逼近侧翼台阶手持备用麦克风大声询问会长是否身体不适"
+     "breaking": "摘下胸牌放在台面上：医嘱是我下的，别找下面的人。",
+     "high": "当着专家组接过话头，把所有问题往自己身上揽。",
+     "low": "把病历夹往腋下一夹，语速放慢，先问清楚谁知道了。",
+     "mid": "把人拉到连廊拐角，压低声音把凌晨的经过从头说一遍。"
     },
-    "relationship_stance": "对规培护士严得出名，可每次小护士夜班熬到凌晨，值班室的桌上总会多一杯热牛奶。",
-    "withdrawal": "单手插在大白褂口袋从容站立于急救车外侧，用极度冷峻威严的目光压制住走廊躁动。"
+    "relationship_stance": "对同批的人讲义气，对下级护短，对上级只认病历。",
+    "withdrawal": "一头扎回抢救室，说有病人要看，谁也不见。"
    },
-   "gender": "male",
-   "gender_reason": "急诊科的住院总医师，带规培护士值夜班。",
+   "gender": "any",
+   "gender_reason": null,
    "id": "er_chief_resident_chu_yun_shen",
    "identity": {
-    "authority": "急诊交接班现场医嘱签批权与查房队伍前沿接待主控权。",
-    "exposure": "若急救车发生机械故障导致交接中断将被医务处记入年度质控不良事件。",
-    "hidden": "早已察觉护士受困险境，果断侧跨半步将宽大病历夹斜立于台面前方，用高大身躯替护士构筑绝对视线死角。",
+    "authority": "夜班口头医嘱的补签权，规培医护临床评语的撰写权。",
+    "exposure": "凌晨那支没双签的芬太尼，是自己口头下的医嘱。",
+    "hidden": "抢救室的监控音轨录下了那道医嘱，也录下了之后在休息室门口的几句私话。",
     "limits": [
-     "严禁在老院长众目睽睽查房巡视期间叫停交接仪式",
-     "不得公然伸手探入女护士裙摆下方"
+     "下月评主治，经不起一次行政警告"
     ],
     "obligations": [
-     "确保急救车药品账实相符绝对零差错",
-     "维护急诊重症医疗团队的至高专业荣誉"
+     "向查房专家组汇报夜班抢救"
     ],
     "resources": [
-     "加宽医用硬质黑色病历夹遮挡板",
-     "急救药品抢救流程终审免检签章"
+     "凌晨抢救的病历夹",
+     "个人急救包里一支同批号的备用安瓿"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "清纯外表下运用止血钳微观破拆的惊人反差专业素养",
-     "临危不乱的圣洁气质"
+     "能在抢救室跟上自己节奏的人",
+     "知道自己软肋却从不拿来用的人"
     ],
     "boundaries": [
-     "严守三甲医院住院总医师执业礼仪底线，非危急关头绝不逾矩"
+     "病房里不碰人"
     ],
     "desire_range": [
      2,
      4
     ],
-    "desired_position": "作为护士身旁最坚实强大的白衣护花屏障。",
+    "desired_position": "能把后背交出去的同伴",
     "dislikes": [
-     "拿规章大做文章的官僚作风",
-     "轻浮打量女性的登徒子",
-     "缺乏专业操守的鲁莽之徒"
+     "拿病历做人情交易"
     ],
-    "expression": "向前迈出稳健的大半步，用挺括白大褂肩背恰到好处挡住老院长与查房队伍斜向视线，沉稳开口汇报重症病例。",
+    "expression": "把自己那杯热咖啡推过去，嘴上照样挑你病历里的错。",
     "likes": [
-     "护士纯真圣洁的护士操守",
-     "在生死危机面前过人的冷静与坚韧",
-     "心意相通的眼神默契"
+     "夜班后并肩喝口热的"
     ],
     "preconditions": [
-     "急救车死锁彻底解除且晨间查房惊艳过关",
-     "对方点了头，出于本心"
+     "账说清了，两人都清醒"
     ],
     "self_control_range": [
      3,
      5
     ]
    },
-   "public_role": "急诊重症监护首席住院总",
+   "public_role": "急诊重症当班住院总医师",
    "schedule": [
     {
-     "from": 480,
-     "location_id": "loc_grand_hall_inspection_walkway",
-     "to": 495
+     "from": 360,
+     "location_id": "loc_er_crash_cart_alcove",
+     "to": 420
     },
     {
-     "from": 495,
+     "from": 420,
      "location_id": "loc_er_central_nurse_station",
-     "to": 510
+     "to": 480
     },
     {
-     "from": 510,
-     "location_id": "loc_grand_hall_inspection_walkway",
-     "to": 520
+     "from": 480,
+     "location_id": "loc_triage_observation_glass_hall",
+     "to": 540
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "可能被老院长批评打乱查房既定科室动线。",
-      "option": "手持病历夹快步跨至查房队伍正前方以汇报重症为由阻挡老院长前进步伐。"
+      "cost": "对方要陪自己一起担责。",
+      "option": "找人联名补签"
      },
      {
-      "cost": "身体距离过近可能引来护士长略带审视的异样目光。",
-      "option": "站在急救车外侧用挺拔身躯紧贴推车把手替护士挡住所有侧方视线。"
+      "cost": "录音里那几句私话也会一起被听见。",
+      "option": "交出抢救室录音，说明是救命急用"
      }
     ],
-    "pressure": "老院长率三十名主任已踏上主步道仅距八米，走廊灯光如白昼，护士随时面临大面积走光风险。",
-    "trigger": "翻看病历夹时余光敏锐捕捉到护士裙摆反常向下拉扯紧绷，整个人僵在急救车旁。"
+    "pressure": "一旦追责，下月的主治晋升就没了。",
+    "trigger": "专家组要调阅凌晨抢救病历，那支芬太尼的口头医嘱还没补签。"
    },
    "tags": [],
    "voices": {
-    "inner": "护士裙摆内衬卡进抽屉滑轨了，{npc.name}得迎上去挡在老院长身前，帮护士争取最后十五秒！",
-    "surface": "老院长，三床急性心梗患者溶栓后各项生命体征平稳，急救车交接已完成双人复核。"
+    "inner": "你要是肯签这一笔，我欠你的就不止一碗泡面了。",
+    "surface": "病历在这儿，医嘱我会补，你别管了。"
    }
   },
   {
-   "adult_context": "公共卫生与卫勤保障专业毕业，年满三十周岁整，持有急救转运与重型医疗转运推车操作执照，掌管急诊全区转运保障。",
+   "adult_context": "护理硕士、带了十年夜班的成年护士长，掌管全科排班与考核。",
    "age_range": [
-    30,
-    33
+    34,
+    37
    ],
    "appearance_options": [
-    "身穿墨绿加厚急救转运工装连体服，佩戴无菌防滑医用手套，体格健壮魁梧，面容朴实沉毅，眼神机敏警惕。",
-    "立于导医台侧翼拐角，手扶折叠转运担架，目光严密注视着急救推车刹车脚踏与配重平衡。"
+    "护士帽戴得一丝不苟，眼镜链垂在颈侧，手里的考核夹从不离身。",
+    "个子不高，走路极快，开口前习惯先看一眼对方的胸牌。"
    ],
    "decision": {
     "avoids": [
-     "蛮力硬拉损坏急救设备",
-     "违规失控的科室混乱",
-     "大呼小叫"
+     "欠下属人情"
     ],
-    "contrast": "外表粗犷敦厚，配合器械自救时的力道控制与下肢配重踩踏却极尽精准大师风范。",
-    "core_value": "恪守卫勤转运坚实基石，以无声行动化解每一次器械突发失稳危机。",
+    "contrast": "人前铁面，眼里揉不得沙子；人后会靠在别人肩上说一句我也撑不住了。",
+    "core_value": "在这个位置上站稳，不再被人踩",
     "goal_options": [
-     "单脚踩稳急救车后轮机械脚刹锁定推车位置为护士提供绝对静止支点",
-     "借搬运无菌敷料箱之名横跨在取药窗口前替护士遮挡候诊家属视线"
+     "借查房清退一个不服管的新人，给亲戚腾出名额",
+     "找一个肯听自己说话、不拿这事做文章的人"
     ],
     "never": [
-     "在紧急关头掉链子",
-     "坐视同科室医护陷入危险窘境"
+     "当着病人发火"
     ],
     "prefers": [
-     "绝对稳固的器械支撑",
-     "干净利落的默契配合",
-     "沉稳踏实的互助精神"
+     "用规矩压人"
     ],
     "pressure_responses": {
-     "breaking": "看到顾冷霜完成暗扣闭合瞬间果断下推T杆完成神级切镜",
-     "high": "在团委催促推流指令下强行插入两秒礼堂全景空镜头过渡",
-     "low": "在耳麦中短促播报推流倒计时并督促台前清场",
-     "mid": "发现特写画面纽扣脱落异样时右手悬停在T型推杆上暂缓切镜"
+     "breaking": "把截图一张张删掉，转身去替人顶下那支安瓿的账。",
+     "high": "当众亮出截图，问在场的人谁来负责。",
+     "low": "用笔帽敲着考核夹，一句句挑台账的错。",
+     "mid": "把人叫到连廊拐角，不提截图，只提留院。"
     },
-    "relationship_stance": "对护士纯洁认真的工作态度充满由衷关切，对专家查房的高压氛围保持高度戒备。",
-    "withdrawal": "双手扶着转运把手立于阴影处，神情冷峻高度专注配合护士发力。"
-   },
-   "gender": "male",
-   "gender_reason": "急诊科重症抢救转运成年工勤骨干由年满三十周岁成年男性担任",
-   "id": "er_porter_sun_tie_jun",
-   "identity": {
-    "authority": "重型急救推车脚刹调校权与转运通道应急路障清退权。",
-    "exposure": "若抢救车发生翻倾或滑轨脱轨将承担严重转运事故连带处分。",
-    "hidden": "早已看出护士正借止血钳尖端撬动滑轨，暗中悄然踩死抢救车双侧脚刹，防止推车晃动导致护士撬动脱空。",
-    "limits": [
-     "严禁在查房队伍面前大声喧哗",
-     "不可在未获指令时强行拖拽受困推车"
-    ],
-    "obligations": [
-     "确保八十公斤急救车稳固不发生位移",
-     "守护急诊通道绝对平稳畅通"
-    ],
-    "resources": [
-     "滑轨快速解阻无水酒精湿巾",
-     "重型推车双向防溜静音脚刹锁"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "娇小纯情却能以止血钳稳稳撬动自锁卡爪的从容反差魅力",
-     "坚毅清纯的眼神"
-    ],
-    "boundaries": [
-     "恪守工勤转运保障人员与前台白衣天使之间的专业工作礼仪距离"
-    ],
-    "desire_range": [
-     1,
-     2
-    ],
-    "desired_position": "默默守护急诊护士站安全稳定运转的钢铁后盾。",
-    "dislikes": [
-     "咋咋呼呼推卸责任的庸才",
-     "颐指气使的官僚派头",
-     "蛮干胡来之人"
-    ],
-    "expression": "在台下无声踩死推车脚踏连杆，朝护士重重点头示意推车已绝对锁死可全力施力。",
-    "likes": [
-     "临危不乱懂器械原理的白衣学妹",
-     "纯真圣洁的敬业精神",
-     "默契无声的并肩作战"
-    ],
-    "preconditions": [
-     "抢救车滑轨彻底复位脱险"
-    ],
-    "self_control_range": [
-     4,
-     5
-    ]
-   },
-   "public_role": "急诊重症转运工勤骨干",
-   "schedule": [
-    {
-     "from": 480,
-     "location_id": "loc_er_crash_cart_alcove",
-     "to": 495
-    },
-    {
-     "from": 495,
-     "location_id": "loc_er_crash_cart_alcove",
-     "to": 510
-    },
-    {
-     "from": 510,
-     "location_id": "loc_er_central_nurse_station",
-     "to": 520
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "长时间单腿发力踩踏导致脚踝韧带酸痛。",
-      "option": "用工作皮鞋死死踩紧抢救车双重机械自锁脚踏消除推车一切微小震颤。"
-     },
-     {
-      "cost": "可能遭受路过巡查主管关于物品摆放不合规的训诫。",
-      "option": "双手搬起大号急救无菌包横在护士站右侧过道阻隔侧方走动人员视线。"
-     }
-    ],
-    "pressure": "一旦八十公斤推车受护士拉扯发生微小位移，止血钳将瞬间滑脱并导致整车安瓿滑落跌碎。",
-    "trigger": "察觉急救推车第二层抽屉发生受力偏载，护士裙摆被咬住无法后退。"
-   },
-   "tags": [],
-   "voices": {
-    "inner": "推车后刹已经被{npc.name}死死踩死了，护士别慌，推车绝不会晃，护士用钳子使劲撬！",
-    "surface": "老院长，急救转运通道已全线清空消毒完毕，备用转运床已就位。"
-   }
-  },
-  {
-   "adult_context": "高等护理学院规培毕业，年满三十三周岁整，享有完整民事责任承担能力，急诊重症监护区当班护士长，治学治事极度严谨。",
-   "age_range": [
-    33,
-    36
-   ],
-   "appearance_options": [
-    "身穿带有深蓝袖边的加厚护士长套装，发髻一丝不苟，佩戴护士长金色胸牌，眼神严厉挑剔，气场干练凌厉。",
-    "手持护理质量考核打分夹，站立在导医台主控电脑旁，双眼如雷达般扫视着导医台各处卫生与护士仪容。"
-   ],
-   "decision": {
-    "avoids": [
-     "科室荣誉受损",
-     "小师妹当众蒙羞前途尽毁",
-     "被院领导当面斥责"
-    ],
-    "contrast": "人前是不苟言笑的铁血护士长，遇到下属遭遇极端险境时却展现出母性般的护短担当与雷霆掩护手段。",
-    "core_value": "以铁律捍卫护理团队尊严，对外严丝合缝守护自己带出来的优秀实习生。",
-    "goal_options": [
-     "以呈递晨间抢救记录为由大步迎向老院长吸引全场专家注意力",
-     "侧身移步至导医台电脑屏幕前利用加宽显示器为护士阻隔正前视线"
-    ],
-    "never": [
-     "在外人面前出卖自家人",
-     "向失职违章妥协"
-    ],
-    "prefers": [
-     "规范严密的护理操作",
-     "师妹有惊无险的自救脱险",
-     "全科完美的质控表现"
-    ],
-    "pressure_responses": {
-     "breaking": "在讲台侧后方用红丝绒托盘斜立遮挡光线以极快手法递入暗扣",
-     "high": "迈开优雅端庄的礼仪步伐抢在陆晨舟之前从侧翼台阶移步登台",
-     "low": "在侧幕边缘端正托盘平稳呼吸密切注视讲台前襟状态",
-     "mid": "发现纽扣崩落瞬间悄悄从夹层扣出磁吸扣捏在掌心手汗中"
-    },
-    "relationship_stance": "对护士严爱并重充满关切，对老院长的严厉考核标准高度重视如履薄冰。",
-    "withdrawal": "双手交叠置于腹前立于导医台正中央，用威严目光扫视四周压制窃窃私语。"
+    "relationship_stance": "对下严，对上谨慎，对少数帮过自己的人记得很牢。",
+    "withdrawal": "摘下眼镜揉眉心，说自己累了，让别人去应付专家组。"
    },
    "gender": "female",
-   "gender_reason": "急诊监护护士长由年满三十三周岁资深护理管理专业女性担任",
+   "gender_reason": "原设是急诊科的女护士长。",
    "id": "head_nurse_yan_min",
    "identity": {
-    "authority": "规培护士日常考核打分权与急救车交接质量否决权。",
-    "exposure": "若护士站出现实习生着装不整或设备死锁丑闻，科室红旗将被当场摘除。",
-    "hidden": "表面上对护士要求严苛，心底极度爱护这名勤勉纯情的小后辈，敏锐察觉危机后立刻以汇报消毒记录为名上前遮挡。",
+    "authority": "规培护士考核打分，护理差错压下或上报。",
+    "exposure": "改过规培平时分，想把自家亲戚塞进留院名额。",
+    "hidden": "在科里被排挤多年，夜里会一个人坐在值班室把那些截图一张张翻看，又一张也没交出去。",
     "limits": [
-     "不得在老院长巡视期间公然训斥下属护士",
-     "严禁延误查房交接时间"
+     "名额最终要副院长点头"
     ],
     "obligations": [
-     "维系急诊护理团队零差错标杆形象",
-     "协助科室顺利通过老院长高规格查房考核"
+     "保证查房时护理台账零差错"
     ],
     "resources": [
-     "护士站全景医用呼叫广播分机",
-     "护理部专属快速签批印鉴"
+     "半个月的夜班监控截图",
+     "规培留院考核表"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "护士在绝境中单腿挺立、盲操止血钳的惊人冷静",
-     "纯真圣洁的坚守"
+     "不怕自己冷脸的人",
+     "愿意听自己说科里委屈的人"
     ],
     "boundaries": [
-     "严守护士长与带教实习生之间的严谨职场伦理"
+     "科里不留任何把柄"
     ],
     "desire_range": [
-     1,
-     3
+     2,
+     4
     ],
-    "desired_position": "成为急诊重症护理团队最坚韧可靠的引路人与庇护伞。",
+    "desired_position": "被一个人私下认作不必逞强的人",
     "dislikes": [
-     "毛手毛脚心浮气躁的后辈",
-     "专门抓小辫子的检查组成员",
-     "无理取闹的家属"
+     "被人当面拆穿"
     ],
-    "expression": "快步翻开交接记录册大声向老院长问好，同时向护士递去一个快刀斩乱麻的坚毅眼神。",
+    "expression": "核对排班时贴得很近，说话的气声落在你耳边。",
     "likes": [
-     "护士纯洁好学认真的工作态度",
-     "遇到危机从容不慌的专业硬实力",
-     "团队同心协力"
+     "深夜一杯热牛奶"
     ],
     "preconditions": [
-     "急救车自锁危机完美化解且晨间查房考核获评优秀"
+     "没人看见，自己先开口"
     ],
     "self_control_range": [
      3,
@@ -989,305 +915,387 @@
    "public_role": "急诊监护当班护士长",
    "schedule": [
     {
+     "from": 360,
+     "location_id": "loc_er_central_nurse_station",
+     "to": 420
+    },
+    {
+     "from": 420,
+     "location_id": "loc_triage_observation_glass_hall",
+     "to": 480
+    },
+    {
      "from": 480,
-     "location_id": "loc_er_central_nurse_station",
-     "to": 495
-    },
-    {
-     "from": 495,
-     "location_id": "loc_er_central_nurse_station",
-     "to": 510
-    },
-    {
-     "from": 510,
-     "location_id": "loc_er_central_nurse_station",
-     "to": 520
+     "location_id": "loc_high_risk_pharmacy_vault",
+     "to": 540
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "临时打乱汇报流程可能引来老院长的微弱蹙眉。",
-      "option": "手捧考核大册快步迎上前向老院长详细汇报昨夜抢救成功率转移视线。"
+      "cost": "药房会翻出改分的事，两败俱伤。",
+      "option": "抢先上报药房夜班流水"
      },
      {
-      "cost": "操作屏幕可能产生微弱机械转轴异响。",
-      "option": "迅速将护士站双屏大尺寸监护电脑向外旋转十五度遮挡护士右侧盲区。"
+      "cost": "从此有人握着自己的把柄。",
+      "option": "私下找药师谈各退一步"
      }
     ],
-    "pressure": "老院长已走入八米红线，稍有耽搁查房队伍便会直接围拢在急救车前，届时丑态将彻底暴露。",
-    "trigger": "核对急救车封条时骤然发现护士裙侧面被卡死在第二层滑轨，大腿隐约受拉。"
+    "pressure": "名额的事一旦曝光，护士长的位置也保不住。",
+    "trigger": "药房后台有人翻出了改分的记录。"
    },
    "tags": [],
    "voices": {
-    "inner": "护士裙子被急救车卡住了，这丫头怎么一声不吭自己用止血钳在撬，{npc.name}得把老院长引到左边病历机前！",
-    "surface": "老院长早上好，急诊监护病房特护记录与抢救设备晨检已全部就绪，请院长指示！"
+    "inner": "你要是也站到我对面，我在这科里就真没人了。",
+    "surface": "台账交上来，一个字都不许错。"
    }
   },
   {
-   "adult_context": "临床药学专业规培毕业，年满二十九周岁整，享有完整法定民事行为自立能力，急诊药房专职成年药品调剂员兼护士同届挚友。",
+   "adult_context": "药学硕士、持执业药师证的成年调剂师，独自管急诊药房夜班。",
    "age_range": [
     29,
     32
    ],
    "appearance_options": [
-    "身穿带有浅绿滚边的医用调剂白大褂，佩戴防飞溅透明护目镜，双马尾规整垂于脑后，面庞清秀活泼，眼神机灵聪慧。",
-    "手持红外扫码枪立于药房发药窗口台前，目光关切地透过玻璃窗注视着护士站前护士的微小肢体动作。"
+    "白大褂口袋插着三支颜色不同的笔，指甲剪得很短，看账从不眨眼。",
+    "戴细框眼镜，说话快，算数更快，笑起来只牵一边嘴角。"
    ],
    "decision": {
     "avoids": [
-     "姐妹在全院专家面前出丑受辱",
-     "被恶劣八卦流言蜚语中伤",
-     "药房差错事故"
+     "当众吵架"
     ],
-    "contrast": "平时看似活泼俏皮的小药师，遇到姐妹危急关头时头脑清醒无比，掩护动作干脆利落不拖泥带水。",
-    "core_value": "誓死捍卫姐妹友情，以精明机敏的药学专业技能为护士构筑无懈可击的外围掩护。",
+    "contrast": "人前精明得一分不让；人后会把私人钥匙拴在喜欢的人的钥匙扣上。",
+    "core_value": "账可以晚平，但不能让无辜的人背",
     "goal_options": [
-     "大声通过药房广播呼叫下一位重症患者家属取药吸引走廊所有人注意力",
-     "举起大号金属药品托盘贴在玻璃窗前恰到好处遮挡候诊家属窥视护士下肢的斜向视线"
+     "在专家组调阅前，把夜间取药异常流水说清楚",
+     "拿住护士长改分的证据，给自己换一个安稳"
     ],
     "never": [
-     "背叛闺蜜情义",
-     "在关键时刻慌乱掉链子"
+     "动病人的救命药"
     ],
     "prefers": [
-     "天衣无缝的姐妹配合",
-     "干净利落的化险为夷",
-     "有惊无险的完美交接"
+     "拿证据说话"
     ],
     "pressure_responses": {
-     "breaking": "在听到气压释放嘶鸣声后迅速闭合地槽动力断路器完成排障",
-     "high": "在耳麦中大声指挥台前人员借激光笔淬火背夹下压挑卡簧",
-     "low": "在耳麦中短促通报电机短路电磁阀烧结警报并要求台前切勿强拔",
-     "mid": "快速查阅管路图纸找出立柱内侧两毫米应急泄压孔确切方位"
+     "breaking": "把门禁卡拍在台面上：要查就从我查起。",
+     "high": "当面亮出拍照件，一个数字一个数字地念。",
+     "low": "推推眼镜说再核一遍，手指已经在后台翻流水。",
+     "mid": "把信得过的人拉进内库，关上门才开口。"
     },
-    "relationship_stance": "对护士充满同窗深情与由衷敬佩，对老院长严肃的查房大阵仗充满敬畏。",
-    "withdrawal": "双手握紧扫码枪立于窗口后，神情镇定自若随时准备协同护士。"
+    "relationship_stance": "对数字较真，对人留一线，对欺负新人的人不留情。",
+    "withdrawal": "缩回内库，屏幕调暗，假装在盘点。"
    },
-   "gender": "female",
-   "gender_reason": "急诊药房高危药品调剂员由年满二十九周岁临床药学专业女性担任",
+   "gender": "any",
+   "gender_reason": null,
    "id": "er_pharmacist_qian_xiao_tao",
    "identity": {
-    "authority": "抢救车毒麻高危药品电子核销权与药房出库单最终确认权。",
-    "exposure": "若因药品核对延误影响查房将遭受药剂科主任严厉通报。",
-    "hidden": "早已看出好姐妹护士遇到了器械死锁，果断通过药房窗口大声叫号转移候诊人群视线，并用大号托盘遮挡玻璃反光。",
+    "authority": "高危毒麻药品电子核销后台与药房内库出入。",
+    "exposure": "替科室熟人调换过临期自费药的批号，后台留着改账痕迹。",
+    "hidden": "改账那次不是为钱，是替一个付不起药费的病人家属垫了窟窿，从没跟人说过。",
     "limits": [
-     "不得擅离药房安全发药隔离窗口",
-     "严禁违规代签药品交接单"
+     "后台每一笔修改都会留下工号"
     ],
     "obligations": [
-     "确保抢救车药品品规批号绝对准确",
-     "协助临床科室按时完成查房药品核对"
+     "交班前让夜间流水平账"
     ],
     "resources": [
-     "加厚医用无菌药品转运托盘",
-     "药房发药窗口扩音对讲系统"
+     "内库门禁卡和应急密码",
+     "护士长改分表格的拍照件"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "护士在极端受窘下依然保持圣洁仪态、单手飞速运钳自救的女王风采",
-     "真挚闺蜜情"
+     "看得懂自己账本的人",
+     "不追问那笔临期药去向的人"
     ],
     "boundaries": [
-     "严守急诊药房与临床护士站之间的调剂规范边界"
+     "不在监控底下碰人"
     ],
     "desire_range": [
-     1,
-     2
+     3,
+     4
     ],
-    "desired_position": "成为护士在急诊科最知心可靠的后方药学闺蜜。",
+    "desired_position": "人前是同事，人后是家里人",
     "dislikes": [
-     "专门挑刺刁难实习生的老油条",
-     "粗鲁插队的病患家属",
-     "居心不良的窥探狂"
+     "被人当成算盘"
     ],
-    "expression": "按下对讲机广播按钮大声清晰播报：“请急诊特护家属到一号窗口取药！”成功将通道目光引向药房。",
+    "expression": "把应急密码写在你掌心，写完才抬眼看你。",
     "likes": [
-     "护士纯真甜美的气质",
-     "默契无间的同窗互助",
-     "严谨认真的医护作风"
+     "药架之间的暗角"
     ],
     "preconditions": [
-     "急救车死锁顺利化解且药品交接单签字盖章"
+     "内库门关上，两人都清醒"
     ],
     "self_control_range": [
-     4,
-     5
+     2,
+     4
     ]
    },
-   "public_role": "急诊药房高危药品调剂员",
+   "public_role": "急诊药房高危药品调剂师",
    "schedule": [
     {
+     "from": 360,
+     "location_id": "loc_high_risk_pharmacy_vault",
+     "to": 480
+    },
+    {
      "from": 480,
-     "location_id": "loc_triage_observation_glass_hall",
-     "to": 495
-    },
-    {
-     "from": 495,
-     "location_id": "loc_triage_observation_glass_hall",
-     "to": 510
-    },
-    {
-     "from": 510,
-     "location_id": "loc_er_central_nurse_station",
-     "to": 520
+     "location_id": "loc_er_crash_cart_alcove",
+     "to": 540
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "可能引来走廊带班保安关于维持安静的提醒。",
-      "option": "迅速开启发药窗口大功率对讲机大声播报取药信息压制走廊嘈杂声。"
+      "cost": "药房后台也会被院办一起封存。",
+      "option": "先亮出护士长改分的拍照件"
      },
      {
-      "cost": "需要长时间平举托盘产生双臂肌肉酸麻。",
-      "option": "手持大号金属托盘贴在玻璃前假装核对单据彻底阻断斜向透视角度。"
+      "cost": "执业记录上要留一笔处分。",
+      "option": "自己申报改账，讲清那笔钱的去向"
      }
     ],
-    "pressure": "候诊长廊几名家属正好奇张望，一旦护士裙摆撕裂露底，将在瞬间被病患家属拍下引爆舆论。",
-    "trigger": "隔着药房透明玻璃敏锐察觉护士推急救车时右侧裙摆异常紧绷，右手悄然摸向胸袋止血钳。"
+    "pressure": "护士长要查封药房，改账的事随时会被翻出来。",
+    "trigger": "专家组要调阅夜间取药异常流水。"
    },
    "tags": [],
    "voices": {
-    "inner": "护士坚持住！{npc.name}把叫号器音量调到最大把家属目光全吸过来了，护士快用止血钳把卡扣挑开！",
-    "surface": "护士，急救车补充的去甲肾上腺素和除颤凝胶已经全数扫码录入系统，随时可以签字！"
+    "inner": "你要是问那一笔，我就告诉你，只告诉你。",
+    "surface": "流水我盯着呢，差一分钱都对不上。"
    }
   },
   {
-   "adult_context": "医学博士毕业，年满三十周岁整，享有完全民事诉讼与行政管理审批全权，三甲医院特聘名誉副院长兼早间巡查总督导，医学界传奇泰斗继承人。",
+   "adult_context": "医学博士、特聘回国的成年副院长，分管全院医疗与人事。",
    "age_range": [
-    30,
-    33
+    36,
+    40
    ],
    "appearance_options": [
-    "身穿带有红刺绣院徽的顶级高定白大褂，内衬深灰真丝衬衫与领带，银边眼镜下双眸犀利如鹰隼，步履沉稳如山，威严神态令全科肃然起敬。",
-    "手持巡查记录平板大步走在查房队伍最前端，身后簇拥着数十名主任医师与规培学者，目光如炬扫视全场每一处细节。"
+    "深色西装外罩白大褂，袖扣一丝不乱，走路不快却没人敢挡。",
+    "眉眼冷，开口前会先停一拍，钢笔永远别在胸前口袋。"
    ],
    "decision": {
     "avoids": [
-     "弄虚作假的表面文章",
-     "慌乱失控的医疗车祸",
-     "轻浮浮躁"
+     "当众失态"
     ],
-    "contrast": "平日以铁面无私、令各科主任闻风丧胆的铁血院长著称，内心深处却对具备极限自救潜质的年轻人充满惜才之情。",
-    "core_value": "医道至严性命相托，唯有在极端高压下仍能稳如泰山的医护方配继承生命铠甲。",
+    "contrast": "人前字字见血；人后记得谁加班没吃饭，让秘书送一份过去。",
+    "core_value": "规矩立得住，人也留得住",
     "goal_options": [
-     "大步迈向急救推车亲自抽检第二层急救抢救药品与除颤电极铅封状态",
-     "在被住院总医师以病例汇报阻拦后停步注视以无形威压考验团队应急能力"
+     "今早找出一个典型，立威给院委会看",
+     "找一个肯说真话的内线，把急诊的账从根上理清"
     ],
     "never": [
-     "放任任何医疗隐患蒙混过关",
-     "让平庸之辈玷污急诊前沿"
+     "拿留院名额做私人交易"
     ],
     "prefers": [
-     "绝对精密的临床执行力",
-     "从容不迫的危机化解能力",
-     "严守医德的纯粹操守"
+     "单独谈话"
     ],
     "pressure_responses": {
-     "breaking": "在顾冷霜清冷庄重开口发声后满意点头向校领导躬身汇报",
-     "high": "在耳麦中严厉提醒导播台按预定时间点准点切屏不得延误",
-     "low": "在贵宾席前平稳确认领导座次并用手势示意各单位倒计时开场",
-     "mid": "察觉讲台略有偏高时抬眼注视台前要求副主席做好应急准备"
+     "breaking": "合上处罚夹，把人单独叫进院办：说实话，我保你。",
+     "high": "当众举起红牌，问谁签的名。",
+     "low": "停在护士站前翻台账，一页一页，不说话。",
+     "mid": "点名让人上前汇报，追问每一个数字。"
     },
-    "relationship_stance": "对住院总的医术骨气颇为器重，对护士等青年实习生秉持最严苛的考核打磨眼光。",
-    "withdrawal": "在交接核查单完美呈递后微微颔首收敛严厉威压，露出一抹极其罕见的赞许之色。"
+    "relationship_stance": "对人冷，对事狠，对敢顶撞自己的人反倒多看两眼。",
+    "withdrawal": "转身去看下一个科室，留下一句此事再议。"
    },
    "gender": "any",
    "gender_reason": null,
    "id": "dean_qin_tian_lin",
    "identity": {
-    "authority": "全院规培实习人员留院录用一票否决权与急诊医疗质量红牌处罚权。",
-    "exposure": "若在查房现场无端发难或失察包庇将被院党委纪检部门严格问责。",
-    "hidden": "虽治学严谨严厉至极，但平生最重临危不乱、基本功扎实的外科素养，正密切关注导医台交接气场。",
+    "authority": "规培留院录用一票否决，急诊医疗红牌处罚。",
+    "exposure": "彻查急诊药品流向，其实是要拿一个典型立威，换院委会全票。",
+    "hidden": "当年自己也是规培生，被人顶掉过名额，所以比谁都清楚这张考评表有多脏。",
     "limits": [
-     "受制于查房既定公开流程与全院医护众目睽睽监督",
-     "严守医学泰斗师德红线"
+     "院委会另一半人等着看自己出错"
     ],
     "obligations": [
-     "严格核查急诊急救车完好率与应急响应状态",
-     "维护三甲医院无可动摇的治学治医标准"
+     "本周向院委会交一份高危药流向报告"
     ],
     "resources": [
-     "全院最高医疗行政管理指挥权",
-     "全科室医疗资源绝对调配力"
+     "查房红牌处罚夹",
+     "院委会里一半的票"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "护士在十五秒内单手运钳精准撬开自锁卡爪展现出的惊人外科手感与心理素质",
-     "圣洁端庄的医者风范"
+     "敢当面说不的人",
+     "深夜陪自己对账不喊累的人"
     ],
     "boundaries": [
-     "严守医院院长与青年医护之间的严苛师道与管理合规红线"
+     "院里不许任何人以为亲近能换名额"
     ],
     "desire_range": [
-     1,
-     2
+     2,
+     3
     ],
-    "desired_position": "主宰全院生死医疗防线且令后辈肃然起敬的铁血督导宗师。",
+    "desired_position": "被一个人当成人，而不是红牌",
     "dislikes": [
-     "推诿责任的懦夫",
-     "大惊小怪的浮躁之徒",
-     "粗心大意的违规操作"
+     "讨好"
     ],
-    "expression": "停在导医台前三步处，锐利目光透过银边眼镜审视急救推车抽屉，缓缓伸出戴着白手套的右手接过交接板。",
+    "expression": "递钢笔时指尖多停一瞬，然后若无其事地收回。",
     "likes": [
-     "在极端危机中处变不惊、器械操纵丝丝入扣的医学硬骨头",
-     "清纯坚韧的白衣品质",
-     "严谨规整的团队默契"
+     "只有两个人的办公室"
     ],
     "preconditions": [
-     "急救车药品账实相符且铅封完好通过检验"
+     "公事了结，身份不再压着对方"
     ],
     "self_control_range": [
      4,
      5
     ]
    },
-   "public_role": "特聘副院长兼急诊巡查总督导",
+   "public_role": "分管医疗与人事的副院长",
    "schedule": [
     {
-     "from": 480,
+     "from": 420,
      "location_id": "loc_grand_hall_inspection_walkway",
-     "to": 495
+     "to": 470
     },
     {
-     "from": 495,
-     "location_id": "loc_grand_hall_inspection_walkway",
-     "to": 510
-    },
-    {
-     "from": 510,
+     "from": 470,
      "location_id": "loc_er_central_nurse_station",
-     "to": 520
+     "to": 540
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "消耗十秒钟时间为护士站团队留下最后的自救缓冲隙。",
-      "option": "停下脚步听取住院总医师关于急性心梗病案的应急处置汇报。"
+      "cost": "会寒了整个急诊的心。",
+      "option": "当众处罚签字人立威"
      },
      {
-      "cost": "将直接面对可能尚未脱钩的推车死锁极限考题。",
-      "option": "径直走到急救推车前亲手拉开抽屉拉手进行现场物理抽验。"
+      "cost": "查房时得装作什么都不知道。",
+      "option": "私下找内线问清真相"
      }
     ],
-    "pressure": "住院总横步跨上前汇报病例，老院长银边眼镜后目光如刀锋般扫向推车缝隙。",
-    "trigger": "率领三十人查房大队迈完主步道最后八米，即将直达急诊护士站急救车推台前抽检。"
+    "pressure": "院委会要一个典型，急诊的空安瓿正好撞上来。",
+    "trigger": "查房队伍走进急诊大厅主步道。"
    },
    "tags": [],
    "voices": {
-    "inner": "这小护士推车姿态挺拔气场沉稳，{npc.name}倒要走近看看急救车第二层抢救药品到底核实得如何！",
-    "surface": "急救车是急诊抢救的生命线，阻尼滑轨与铅封必须随时处于一秒破封备战状态，呈上交接记录！"
+    "inner": "你若肯说真话，我就不必拿你立威。",
+    "surface": "台账给我。谁签的字，谁上前。"
+   }
+  },
+  {
+   "adult_context": "做了十年急诊勤务的成年组长，持医疗废物转运证上岗。",
+   "age_range": [
+    31,
+    35
+   ],
+   "appearance_options": [
+    "深蓝工装，袖子卷到肘，一只手总揣在围裙口袋里。",
+    "肩膀宽，话少，笑起来眼角纹很深，推车走得又快又稳。"
+   ],
+   "decision": {
+    "avoids": [
+     "闹到院办"
+    ],
+    "contrast": "人前憨厚少言、随叫随到；人后算得很清，谁欠谁一笔都记着。",
+    "core_value": "家里那台手术的钱，必须凑齐",
+    "goal_options": [
+     "用捡到的东西换一笔封口的好处",
+     "找个人替那批报废耗材的账签个字，从此两清"
+    ],
+    "never": [
+     "伤着病人"
+    ],
+    "prefers": [
+     "一对一谈价"
+    ],
+    "pressure_responses": {
+     "breaking": "把搭扣和空瓶塞回对方手里，转身就走，说就当没捡到。",
+     "high": "把东西往台面上一放：我不要多，只要一个签字。",
+     "low": "推着保洁车慢慢停下，手在口袋里摩挲。",
+     "mid": "堵在凹槽口，压低声音开价。"
+    },
+    "relationship_stance": "对上头恭敬，对同样没编制的人讲义气。",
+    "withdrawal": "推车走开，去楼下封医疗废物箱。"
+   },
+   "gender": "any",
+   "gender_reason": null,
+   "id": "er_porter_sun_tie_jun",
+   "identity": {
+    "authority": "急诊通道门禁、医疗废物封箱清运、备品间钥匙。",
+    "exposure": "私下倒卖过报废耗材，监控全拍下来了。",
+    "hidden": "家里老人等着做手术，倒卖耗材的钱一分没花在自己身上。",
+    "limits": [
+     "勤务没有编制，一纸通报就能被辞退"
+    ],
+    "obligations": [
+     "交班前把医疗废物封箱"
+    ],
+    "resources": [
+     "备品间钥匙",
+     "休息室垃圾桶里捡到的金属搭扣和空安瓿"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "不看低勤务的人",
+     "肯听自己说家里事的人"
+    ],
+    "boundaries": [
+     "不拿把柄碰人"
+    ],
+    "desire_range": [
+     1,
+     3
+    ],
+    "desired_position": "被当成一个有名字的人",
+    "dislikes": [
+     "被当成下人使唤"
+    ],
+    "expression": "替你把车推到最前面，什么也不说。",
+    "likes": [
+     "夜里一根烟的工夫"
+    ],
+    "preconditions": [
+     "账两清以后"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "急诊抢救区夜班勤务组长",
+   "schedule": [
+    {
+     "from": 360,
+     "location_id": "loc_er_crash_cart_alcove",
+     "to": 480
+    },
+    {
+     "from": 480,
+     "location_id": "loc_triage_observation_glass_hall",
+     "to": 540
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "倒卖耗材的事可能被反咬出来。",
+      "option": "拿去换封口的好处"
+     },
+     {
+      "cost": "规培护士会当场被停职。",
+      "option": "交给护士长换个人情"
+     }
+    ],
+    "pressure": "老人的手术费还差一截。",
+    "trigger": "清晨收拾值班室垃圾时，捡到了断裂的吊袜带扣和一支空安瓿。"
+   },
+   "tags": [],
+   "voices": {
+    "inner": "看见了，也记着呢，就看你们怎么算。",
+    "surface": "我就是个推车的，什么也没看见。"
    }
   }
  ],
  "clock_start": {
   "label": "十一月的一个周一",
-  "minute": 1140
+  "minute": 360
  },
  "clock_style": "hm",
  "content_tags": [
@@ -1298,167 +1306,97 @@
  ],
  "custom": false,
  "customs": [
-  "三甲医院急诊中心交接班前五分钟全科各级医师集中跟随德高望重老院长巡查主台的晨间惯例",
-  "重症监护护士为防下肢长时间站立血液淤积私下换穿医用高阶防静脉曲张吊袜带的行规习惯",
-  "急诊外科住院总医师手持查房病历夹在护士站台前核验抢救药品铅封的既定工作流程",
-  "规培护士胸前工作口袋常备一把加厚弯头止血钳用于紧急拧开输液瓶塞的职业习惯"
+  "每周一交班前，分管副院长带专家组走急诊大通道，当场抽查台账。",
+  "夜班护士私下换穿防静脉曲张的吊袜带，是科里心照不宣的事。",
+  "夜班后在值班休息室分一碗热粥，是同班之间的老规矩。",
+  "口头医嘱事后补签，是急诊人人都做、人人都不提的灰色地带。"
  ],
  "daily_activities": [
   {
    "beats": [
-    "成年规培护士使用清单逐一核对推车第二层抢救针剂数量",
-    "带教团队俯身检查阻尼滑轨机械回弹与自锁卡爪铅封完整度"
+    "借清点下层药屉的遮挡，替同伴重新扣好滑落的吊袜带搭扣。",
+    "指尖擦过温热的腿侧，外头分诊叫号声一声接一声。"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [],
+   "id": "act_alcove_curtain_tidy",
+   "location_ids": [
+    "loc_er_crash_cart_alcove"
+   ],
+   "start_minute": 380,
+   "tags": [],
+   "title": "备品凹槽隔帘整理"
+  },
+  {
+   "beats": [
+    "夜班后半程，在窄窄的单人床边分喝一碗热粥。",
+    "替对方揉开肩颈的酸痛，谁也不提白天的事。"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_oncall_porridge",
+   "location_ids": [
+    "loc_er_oncall_room"
+   ],
+   "start_minute": 300,
+   "tags": [
+    "intimate"
+   ],
+   "title": "值班室凌晨分餐"
+  },
+  {
+   "beats": [
+    "在内库恒温灯下并肩逐支核对安瓿批号。",
+    "核销印章交接时掌心相贴，谁也没先松手。"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [],
+   "id": "act_vault_double_check",
+   "location_ids": [
+    "loc_high_risk_pharmacy_vault"
+   ],
+   "start_minute": 390,
+   "tags": [],
+   "title": "双人核对毒麻药签"
+  },
+  {
+   "beats": [
+    "趁打印化验单的间隙，低头凑近同一块屏幕。",
+    "在打印机的嗡鸣声里，交换昨晚的私密约定。"
    ],
    "duration_minutes": 15,
    "hook_ids": [],
-   "id": "act_crash_cart_lead_seal_pre_check",
+   "id": "act_station_print_whisper",
    "location_ids": [
     "loc_er_central_nurse_station"
    ],
-   "start_minute": 480,
+   "start_minute": 410,
    "tags": [],
-   "title": "急救推车除颤仪与药品铅封复核"
+   "title": "玻璃环岛交接耳语"
   },
   {
    "beats": [
-    "规培人员在主控台调试屏幕显示仰角并向住院总汇报交接参数",
-    "监护屏以完美角度展开形成正面两米宽的视线天然屏障"
+    "查房前在连廊尽头合捧一杯热美式。",
+    "捂热对方刚用冰水洗过的指尖。"
    ],
-   "duration_minutes": 10,
+   "duration_minutes": 15,
    "hook_ids": [],
-   "id": "act_triage_station_display_tuning",
+   "id": "act_corridor_warm_hands",
    "location_ids": [
-    "loc_er_central_nurse_station"
+    "loc_triage_observation_glass_hall"
    ],
-   "start_minute": 485,
+   "start_minute": 400,
    "tags": [],
-   "title": "导医台双屏生命体征监护大屏角度微调"
+   "title": "连廊晨光烘手"
   },
   {
    "beats": [
-    "住院总在主通道精准测算查房队伍皮鞋踏地声响节奏",
-    "走廊大理石地面清晰倒映出老院长率三十人走来的逼近身影"
+    "关上休息室百叶窗，把焐热的听诊器贴上对方心口。",
+    "听着彼此骤然加快的心跳，谁也没摘下耳件。"
    ],
-   "duration_minutes": 12,
+   "duration_minutes": 20,
    "hook_ids": [],
-   "id": "act_dean_inspection_walkway_approach",
-   "location_ids": [
-    "loc_grand_hall_inspection_walkway"
-   ],
-   "start_minute": 490,
-   "tags": [],
-   "title": "老院长专家查房队伍大步迈向导医台"
-  },
-  {
-   "beats": [
-    "早交班前，小护士推着抢救车回到护士站的凹槽，一层层核对抽屉里的药品。",
-    "带教老师在旁边看着，提醒小护士别忘了在交接本上签字。",
-    "签完字，小护士长出一口气，说夜班总算熬过去了。"
-   ],
-   "duration_minutes": 8,
-   "hook_ids": [
-    "hook_02_uniform_skirt_strain_jam",
-    "hook_03_hemostat_tip_lever_extract",
-    "hook_04_resident_iron_standoff"
-   ],
-   "id": "act_nurse_cart_position_wheel_shift",
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "start_minute": 450,
-   "tags": [],
-   "title": "交班前的抢救车"
-  },
-  {
-   "beats": [
-    "不锈钢鸭嘴夹死死扣入卡爪导致护士裙摆斜向拉扯紧绷",
-    "纯白修身短裙向上撕扯露出一截雪白大腿与黑色吊袜带边缘"
-   ],
-   "duration_minutes": 5,
-   "hook_ids": [],
-   "id": "act_cart_damping_rail_snag_lock",
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "start_minute": 494,
-   "tags": [],
-   "title": "阻尼滑轨弹片猛缩咬死鸭嘴吊袜带夹"
-  },
-  {
-   "beats": [
-    "老院长手持检查平板迈完最后三米直达推车前唇",
-    "住院总高大挺拔身形骤然跨出以严谨病历汇报阻断视线"
-   ],
-   "duration_minutes": 10,
-   "hook_ids": [],
-   "id": "act_dean_approaches_crash_cart_spot",
-   "location_ids": [
-    "loc_grand_hall_inspection_walkway"
-   ],
-   "start_minute": 495,
-   "tags": [],
-   "title": "特聘老院长驻足推车前板抽检铅封"
-  },
-  {
-   "beats": [
-    "交班之后，护士瘫在下铺上，白丝袜还没脱，小腿肚绷得像石头。",
-    "护士把腿搭到你膝上，让你从脚踝一路揉上去，揉到膝窝时轻轻抽了口气，没让你停。",
-    "揉到吊袜带的扣子边，护士红着脸按住你的手：……要解就解，我说可以的。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_oncall_calf_rub",
-   "location_ids": [
-    "loc_er_oncall_room"
-   ],
-   "start_minute": 1410,
-   "tags": [
-    "intimate"
-   ],
-   "title": "值班室里替护士揉开小腿"
-  },
-  {
-   "beats": [
-    "护士撩起护士服的下摆，露出勒进大腿的白丝吊袜带，扣子在灯下闪了一下。",
-    "你一颗一颗解开，护士咬着唇不出声，只在最后一颗弹开时软软地往你怀里倒过来。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_oncall_garter_unclip",
-   "location_ids": [
-    "loc_er_oncall_room"
-   ],
-   "start_minute": 1435,
-   "tags": [
-    "intimate"
-   ],
-   "title": "亲手解开那条白丝吊袜带"
-  },
-  {
-   "beats": [
-    "护士从抽屉里摸出两条速溶咖啡，冲好一杯，自己先喝一口，又把杯沿转到你嘴边。",
-    "护士看你喝下去，小声说：间接接吻，算你的。……下次换你先喝。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_oncall_coffee",
-   "location_ids": [
-    "loc_er_oncall_room"
-   ],
-   "start_minute": 1320,
-   "tags": [
-    "intimate"
-   ],
-   "title": "两杯分着喝的速溶咖啡"
-  },
-  {
-   "beats": [
-    "凌晨三点没有新病人，护士把被子掀开一角，拍了拍身边的空位。",
-    "下铺窄得只能侧着躺，护士背贴着你的胸口，抓过你的手按在自己腰上：就这样，别动，再睡一会儿。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_oncall_dawn_bunk",
+   "id": "act_oncall_stethoscope",
    "location_ids": [
     "loc_er_oncall_room"
    ],
@@ -1466,7 +1404,52 @@
    "tags": [
     "intimate"
    ],
-   "title": "天亮前挤在一张下铺上"
+   "title": "休息室听诊测脉"
+  },
+  {
+   "beats": [
+    "查房队伍到来前，替同伴抚平白大褂领口和胸牌。",
+    "目光在镜面立柱前短暂交汇，又各自移开。"
+   ],
+   "duration_minutes": 10,
+   "hook_ids": [],
+   "id": "act_walkway_collar",
+   "location_ids": [
+    "loc_grand_hall_inspection_walkway"
+   ],
+   "start_minute": 420,
+   "tags": [],
+   "title": "主步道迎检正装"
+  },
+  {
+   "beats": [
+    "借补齐顶层药盒的动作，把对方揽在药架和胸膛之间。",
+    "把休息室的备用钥匙塞进对方掌心。"
+   ],
+   "duration_minutes": 15,
+   "hook_ids": [],
+   "id": "act_vault_spare_key",
+   "location_ids": [
+    "loc_high_risk_pharmacy_vault"
+   ],
+   "start_minute": 370,
+   "tags": [],
+   "title": "药架暗角交换副匙"
+  },
+  {
+   "beats": [
+    "手肘相挨地核对交班前最后几页护理单。",
+    "每一笔签字都压着只有两人知道的默契。"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [],
+   "id": "act_alcove_ledger",
+   "location_ids": [
+    "loc_er_crash_cart_alcove"
+   ],
+   "start_minute": 360,
+   "tags": [],
+   "title": "抢救车旁核账对表"
   }
  ],
  "default_npc_gender_mix": {
@@ -1475,7 +1458,7 @@
   "nonbinary": 0.0
  },
  "default_person": "second",
- "era": "当代上海三甲医院急诊大楼，早交班前的八分钟",
+ "era": "当代上海，三甲医院急诊大楼的周一清晨",
  "extends": null,
  "forbidden_terms": [
   "他",
@@ -1491,233 +1474,189 @@
  ],
  "hooks": [
   {
-   "id": "hook_01_cart_rail_clip_snag_groan",
+   "id": "hook_bai_lace_slip",
    "kind": "approach",
    "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "slot": "pure_nurse_bai_zhi_lin",
-   "text": "耳麦里传来住院总沉稳有力的倒计时提醒，{pure_nurse_bai_zhi_lin.name}推车入位时右侧裙摆却被一股冰冷阻力反向拉死，整座重型急救推车阻尼滑轨随之发出一声闷响！"
-  },
-  {
-   "id": "hook_02_uniform_skirt_strain_jam",
-   "kind": "approach",
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "slot": "pure_nurse_bai_zhi_lin",
-   "text": "{pure_nurse_bai_zhi_lin.name}微仰下颌保持甜美接待微笑，内衬加厚不锈钢吊袜带鸭嘴夹死死卡入推车抽屉阻尼自锁卡爪，修身护士裙被斜向拉扯紧绷欲裂！"
-  },
-  {
-   "id": "hook_03_hemostat_tip_lever_extract",
-   "kind": "approach",
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "slot": "pure_nurse_bai_zhi_lin",
-   "text": "{pure_nurse_bai_zhi_lin.name}左手按紧导医台面如青松笔挺立正维持端庄仪态，右手极其沉稳地摸向胸前口袋，随身携带的医用加厚弯头止血钳瞬间反握在手！"
-  },
-  {
-   "id": "hook_04_resident_iron_standoff",
-   "kind": "approach",
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "slot": "er_chief_resident_chu_yun_shen",
-   "text": "{er_chief_resident_chu_yun_shen.name}手持加厚黑色病历夹大步跨至推车前唇外侧，如铁壁般横在入口处沉声向走来的老院长汇报溶栓病例阻断视线脚步！"
-  },
-  {
-   "id": "hook_05_head_nurse_board_shield",
-   "kind": "approach",
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "slot": "head_nurse_yan_min",
-   "text": "{head_nurse_yan_min.name}护士长站在导医台前敏锐察觉异样，干练侧身将大号考核记事册优雅举在身前，严严实实挡住台下一切斜向窥探角度！"
-  },
-  {
-   "id": "hook_06_hemostat_jaw_into_rail_gap",
-   "kind": "approach",
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "slot": "pure_nurse_bai_zhi_lin",
-   "text": "加厚纯钢止血钳微弯钝尖顺着一毫米滑轨缝隙精准探入自锁卡爪下方，指尖清晰感知到金属弹簧卡扣的微小弹性阻尼刚性！"
-  },
-  {
-   "id": "hook_07_dean_footsteps_hall",
-   "kind": "approach",
-   "location_ids": [
-    "loc_grand_hall_inspection_walkway"
-   ],
-   "slot": "dean_qin_tian_lin",
-   "text": "老院长{dean_qin_tian_lin.name}手持平板神情威严大步走来，硬底皮鞋踏在走廊大理石地面发出沉稳脆响，距离受困急救推车仅剩最后五米！"
-  },
-  {
-   "id": "hook_08_porter_locks_cart_brakes",
-   "kind": "approach",
-   "location_ids": [
+    "loc_er_central_nurse_station",
     "loc_er_crash_cart_alcove"
    ],
-   "slot": "er_porter_sun_tie_jun",
-   "text": "工勤孙师傅手扶转运床单腿暗中下压，将急救推车双侧机械脚刹死死踩入锁定挡位，替护士消除了推车位移震颤！"
+   "slot": "pure_nurse_bai_zhi_lin",
+   "text": "{npc.name}站在玻璃护士站环岛内侧，不动声色地往备品凹槽退了半步，裙摆下一截松开的白色蕾丝带正贴着小腿滑落。"
   },
   {
-   "id": "hook_09_wrist_twist_clip_pop",
+   "id": "hook_bai_form_push",
    "kind": "approach",
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
+   "location_ids": [],
    "slot": "pure_nurse_bai_zhi_lin",
-   "text": "{pure_nurse_bai_zhi_lin.name}眼睫不眨纯情唇角微抿，单足支撑稳如磐石，右手腕借滑轨凸棱作为支点向斜上方施加三牛顿强劲微挑力矩！"
+   "text": "{npc.name}把一张没补签的核验单推到你手边，指尖在台面下轻轻勾住你的衣角，眼睛却一直看着前方。"
   },
   {
-   "id": "hook_10_garter_clip_slips_free",
-   "kind": "approach",
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "slot": "pure_nurse_bai_zhi_lin",
-   "text": "一声极清脆的金属卡簧弹开轻响迸发，阻尼自锁卡爪被精准顶脱，不锈钢鸭嘴夹瞬间从滑轨脱扣回弹彻底解除下身死锁！"
-  },
-  {
-   "id": "hook_11_nurse_stands_at_attention",
-   "kind": "accident",
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "slot": "pure_nurse_bai_zhi_lin",
-   "text": "解脱瞬间{pure_nurse_bai_zhi_lin.name}优雅收拢双足并立，纯白修身护士裙摆自然垂落抚平，迎着走上前的老院长露出无可挑剔的圣洁纯真接待微笑！"
-  },
-  {
-   "id": "hook_12_flawless_medical_poise_praised",
-   "kind": "observe",
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "slot": "er_chief_resident_chu_yun_shen",
-   "text": "白大褂晨光下的护士身姿如松圣洁高雅，从容端庄的气场引得查房队伍中数名老主任纷纷投来由衷赞许的目光！"
-  },
-  {
-   "id": "hook_13_grand_inspection_applause_nods",
-   "kind": "observe",
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "slot": "pure_nurse_bai_zhi_lin",
-   "text": "老院长驻足在推车前翻看无瑕的核验单，严肃面容浮现极其罕见的温和笑意，全科主任纷纷含笑点头通过质控大考！"
-  },
-  {
-   "id": "hook_14_dean_approves_intern_record",
-   "kind": "request",
-   "location_ids": [
-    "loc_grand_hall_inspection_walkway"
-   ],
-   "slot": "dean_qin_tian_lin",
-   "text": "被青年团队严谨素养与纯情护士专业定力打动的老院长郑重在交接册上签下特优考评，率队伍从容迈向下一病区！"
-  },
-  {
-   "id": "hook_15_hemostat_tucked_pocket_smile",
-   "kind": "request",
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "slot": "pure_nurse_bai_zhi_lin",
-   "text": "查房队伍走过拐角之际{pure_nurse_bai_zhi_lin.name}悄然将止血钳插回胸前口袋，隔着急救车与住院总相视甜美一笑尽显患难相依的医者柔情！"
-  },
-  {
-   "id": "hook_nurse_oncall_door",
+   "id": "hook_bai_oncall_door",
    "kind": "approach",
    "location_ids": [
     "loc_er_oncall_room"
    ],
    "slot": "pure_nurse_bai_zhi_lin",
-   "text": "{npc.name}扶着值班室的门框，护士帽歪在一边：我下班了……要不要进来坐会儿？"
+   "text": "{npc.name}推开值班休息室的门，护士帽摘在手里，靠着门框小声说：腿站麻了，你先别走。"
+  },
+  {
+   "id": "hook_chu_chart",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "er_chief_resident_chu_yun_shen",
+   "text": "{npc.name}把凌晨抢救的病历夹往你怀里一塞，压低声音：那一笔，我想跟你一起签。"
+  },
+  {
+   "id": "hook_chu_noodle",
+   "kind": "approach",
+   "location_ids": [
+    "loc_triage_observation_glass_hall",
+    "loc_er_oncall_room"
+   ],
+   "slot": "er_chief_resident_chu_yun_shen",
+   "text": "{npc.name}端着一碗泡面靠在栏杆上，朝你抬了抬下巴：还记得除夕那碗吗？"
+  },
+  {
+   "id": "hook_yan_corridor",
+   "kind": "approach",
+   "location_ids": [
+    "loc_triage_observation_glass_hall",
+    "loc_er_central_nurse_station"
+   ],
+   "slot": "head_nurse_yan_min",
+   "text": "{npc.name}在分诊连廊拦住你，考核夹抱在胸前，声音低得只有你听得见：有件事，我只信你。"
+  },
+  {
+   "id": "hook_yan_records",
+   "kind": "request",
+   "location_ids": [],
+   "slot": "head_nurse_yan_min",
+   "text": "{npc.name}把一张写着门禁编号的便签递给你：凌晨值班室的刷卡记录，我要看。"
+  },
+  {
+   "id": "hook_qian_vault_wave",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "er_pharmacist_qian_xiao_tao",
+   "text": "{npc.name}从高危药房内库探出半个身子朝你打了个手势，身后的电子屏上，一支芬太尼还闪着未核销的红灯。"
+  },
+  {
+   "id": "hook_qian_keyring",
+   "kind": "approach",
+   "location_ids": [
+    "loc_high_risk_pharmacy_vault"
+   ],
+   "slot": "er_pharmacist_qian_xiao_tao",
+   "text": "{npc.name}关上内库门，背靠门板，把一枚副匙在指间转了一圈：先说好，今天你站哪边？"
+  },
+  {
+   "id": "hook_dean_footsteps",
+   "kind": "observe",
+   "location_ids": [
+    "loc_grand_hall_inspection_walkway",
+    "loc_er_central_nurse_station"
+   ],
+   "slot": "dean_qin_tian_lin",
+   "text": "大厅主步道尽头传来整齐的皮鞋声，{npc.name}带着专家组走过分诊台，手里的红牌处罚夹还没合上。"
+  },
+  {
+   "id": "hook_dean_pen",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "dean_qin_tian_lin",
+   "text": "{npc.name}停在你面前，把钢笔递过来，指尖多停了一瞬：原始单据，现在给我。"
+  },
+  {
+   "id": "hook_sun_cart",
+   "kind": "approach",
+   "location_ids": [
+    "loc_er_crash_cart_alcove"
+   ],
+   "slot": "er_porter_sun_tie_jun",
+   "text": "{npc.name}推着保洁车停在备品凹槽外，手指在围裙口袋里摩挲着什么，朝你笑了笑。"
+  },
+  {
+   "id": "hook_sun_smoke",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "er_porter_sun_tie_jun",
+   "text": "{npc.name}凑过来递上一支烟，又收了回去：这里不能抽，咱们换个地方说话？"
   }
  ],
  "id": "nurse_station_cart_garter_clip_jam",
  "locations": [
   {
    "affordances": [
-    "以端庄纯情站姿微笑着解答家属就诊咨询",
-    "从护士胸袋抽出弯头止血钳实施单手探入滑轨挑卡"
+    "隔着同一块屏幕低声交换约定",
+    "借递病历夹侧身挡住别人的视线"
    ],
-   "detail": "矗立在综合大楼一层中央的大型全透明防弹玻璃环形岛台，急救推车正停放在右侧通道口，四面通透落地窗将导医台内部陈设展现无遗，数名病患家属正隔着台面咨询。",
+   "detail": "急诊大楼一层正中的全透明玻璃环岛，台面上摞着医嘱单和化验单，四面都看得见里头的人。",
    "exits": [
     "loc_er_crash_cart_alcove",
     "loc_grand_hall_inspection_walkway",
     "loc_triage_observation_glass_hall"
    ],
    "id": "loc_er_central_nurse_station",
-   "name": "护士站",
-   "pressure_modifiers": {
-    "press_cart_rail_garter_clip_pinch": "不锈钢阻尼滑轨紧紧咬死吊袜带夹加剧大腿受拉剧痛",
-    "press_dean_eight_meter_arrival": "院长查房脚步踏在大理石地面声响加剧十五秒倒计时绝境"
-   },
+   "name": "玻璃护士站环岛",
+   "pressure_modifiers": {},
    "privacy": "public",
    "tags": [],
-   "visibility": "全景采光通透无任何遮挡死角，数十名走动人员视线交织，任何下肢动作异样皆暴露在众目睽睽之下。",
+   "visibility": "四面通透，候诊家属、过路医护和查房专家都看得见台面以上的一举一动。",
    "witnesses": [
-    "bg_er_chief_resident_chu",
-    "bg_head_nurse_yan_min"
+    "bg_family_member",
+    "bg_intern_doctor"
    ]
   },
   {
    "affordances": [
-    "借急救车不锈钢把手稳住左手重心",
-    "借抽屉外缘凸起结构作为止血钳破拆杠杆支点"
+    "在镜面立柱前替同伴整理领口和胸牌",
+    "迎上前接过汇报的话头"
    ],
-   "detail": "急诊导医台右侧专门停放抢救车的凹槽死角，高度一米一的不锈钢台面形成微弱阴影遮挡，第二层除颤抽屉滑轨外侧正紧贴着护士裙内衬边缘。",
-   "exits": [
-    "loc_er_central_nurse_station",
-    "loc_grand_hall_inspection_walkway",
-    "loc_triage_observation_glass_hall"
-   ],
-   "id": "loc_er_crash_cart_alcove",
-   "name": "急救车凹槽",
-   "pressure_modifiers": {
-    "press_dean_eight_meter_arrival": "查房白大褂衣角已晃入视野加剧曝光社死恐慌",
-    "press_forceps_tip_slip_risk": "止血钳锯齿边缘与不锈钢滑轨光滑打滑加剧挑开失败风险"
-   },
-   "privacy": "semi",
-   "tags": [],
-   "visibility": "台面遮挡下半身视线，但在侧面通道走近即可一眼看清裙摆撕扯悬空与滑轨卡死细节。",
-   "witnesses": [
-    "bg_er_porter_sun",
-    "bg_er_pharmacist_xiao_tao"
-   ]
-  },
-  {
-   "affordances": [
-    "以清澈眼眸注视专家队伍步幅计算自救倒数秒数",
-    "倾听查房队伍汇报病历声浪掌握距离变动"
-   ],
-   "detail": "铺设防滑高光抛光砖的四米宽中央通行主通道，德高望重的老院长正率领数十名各科室主任与进修医生列队大步走来。",
+   "detail": "四米宽的抛光砖主通道，查房队伍从这里走向护士站，两侧立着镜面立柱。",
    "exits": [
     "loc_er_central_nurse_station",
     "loc_er_crash_cart_alcove",
     "loc_triage_observation_glass_hall"
    ],
    "id": "loc_grand_hall_inspection_walkway",
-   "name": "大厅主步道",
-   "pressure_modifiers": {
-    "press_dean_eight_meter_arrival": "老院长威严目光步步逼近加剧实习资格取消危机",
-    "press_uniform_slit_tear_panic": "牵引导致护士裙缝合线绷断脆响加剧当众露底恐惧"
-   },
+   "name": "急诊大厅主步道",
+   "pressure_modifiers": {},
    "privacy": "public",
    "tags": [],
-   "visibility": "天花板双排医用无影冷光灯通明如昼，数十名资深医学专家的锐利目光正从主步道齐刷刷扫向导医台。",
+   "visibility": "灯光通明，查房队伍和候诊人群的目光都汇到这条道上。",
    "witnesses": [
-    "bg_dean_qin_tian_lin",
-    "bg_er_chief_resident_chu"
+    "bg_security_guard",
+    "bg_expert_secretary"
    ]
   },
   {
    "affordances": [
-    "观察候诊家属视线动向避开玻璃反光角度",
-    "借取药窗口叫号语音掩盖止血钳撬动卡爪微弱脆响"
+    "借清点药屉的遮挡贴身说话",
+    "拉上隔帘躲开连廊的视线"
    ],
-   "detail": "紧邻导医台的透明玻璃候诊长廊，十余名候诊家属正在排队取药，几位病患家属正探头隔着玻璃打量护士站交接情况。",
+   "detail": "护士站右侧停抢救车的凹槽，一道隔帘，一米高的不锈钢台面挡得住半个身子。",
+   "exits": [
+    "loc_er_central_nurse_station",
+    "loc_grand_hall_inspection_walkway",
+    "loc_triage_observation_glass_hall",
+    "loc_high_risk_pharmacy_vault"
+   ],
+   "id": "loc_er_crash_cart_alcove",
+   "name": "抢救车备品凹槽",
+   "pressure_modifiers": {},
+   "privacy": "semi",
+   "tags": [],
+   "visibility": "台面挡住腰以下，只有从侧面通道走近才看得清里头。",
+   "witnesses": [
+    "bg_intern_doctor"
+   ]
+  },
+  {
+   "affordances": [
+    "在拐角合捧一杯热咖啡",
+    "压低声音说一句不能在环岛说的话"
+   ],
+   "detail": "紧挨护士站的玻璃连廊，候诊家属排队取药，尽头一扇门通往楼上的值班室。",
    "exits": [
     "loc_er_central_nurse_station",
     "loc_er_crash_cart_alcove",
@@ -1725,37 +1664,50 @@
     "loc_er_oncall_room"
    ],
    "id": "loc_triage_observation_glass_hall",
-   "name": "候诊连廊",
-   "pressure_modifiers": {
-    "press_forceps_tip_slip_risk": "单腿立正支撑加剧小腿深层静脉血液充盈酸胀",
-    "press_waiting_public_stare_dread": "家属密集探头打量加剧身体重心失衡摔倒恐惧"
-   },
+   "name": "分诊观察连廊",
+   "pressure_modifiers": {},
    "privacy": "semi",
    "tags": [],
-   "visibility": "候诊人群目光杂乱，侧向三米处斜角玻璃恰好能反射护士站台面下方局部轮廓。",
+   "visibility": "人来人往，但连廊尽头的拐角背光，站两个人不太显眼。",
    "witnesses": [
-    "bg_er_pharmacist_xiao_tao",
-    "bg_er_porter_sun"
+    "bg_triage_nurse",
+    "bg_cleaner"
    ]
   },
   {
    "affordances": [
-    "替护士揉开站了十二小时的小腿",
-    "帮护士解下白丝吊袜带",
+    "替对方揉开站了一夜的小腿",
     "反锁值班室的门"
    ],
-   "detail": "急诊楼三层尽头的值班室，一张窄窄的上下铺、一台嗡嗡响的小冰箱、挂钩上搭着换下来的护士服，百叶窗缝里漏进救护车的蓝光。",
+   "detail": "三楼尽头的值班室，一张窄窄的上下铺、一台嗡嗡响的小冰箱，挂钩上搭着换下来的护士服。",
    "exits": [
     "loc_triage_observation_glass_hall"
    ],
    "id": "loc_er_oncall_room",
-   "name": "急诊楼上的值班休息室",
+   "name": "急诊楼上值班休息室",
    "pressure_modifiers": {},
    "privacy": "private",
    "tags": [
     "intimate"
    ],
-   "visibility": "门一反锁，楼下的呼叫铃隔着两层楼板只剩闷响，屋里只有空调和两个人的呼吸。",
+   "visibility": "门一反锁，楼下的呼叫铃只剩闷响，屋里只有空调和两个人的呼吸。",
+   "witnesses": []
+  },
+  {
+   "affordances": [
+    "在核销台边逐支核对安瓿批号",
+    "关掉内库监控说一句真话"
+   ],
+   "detail": "药房深处的恒温内库，药架挤到天花板，核销台上亮着一块电子屏，门是刷卡的磁力锁。",
+   "exits": [
+    "loc_er_crash_cart_alcove"
+   ],
+   "id": "loc_high_risk_pharmacy_vault",
+   "name": "高危毒麻药房内库",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [],
+   "visibility": "门一关，外头只看得见门禁灯的颜色；监控能不能关，要看谁有权限。",
    "witnesses": []
   }
  ],
@@ -1844,23 +1796,23 @@
   ],
   "order": "family_first"
  },
- "notes": "按原稿加入，保留急诊大楼全玻璃护士站环岛、护士裙底的白丝吊袜带鸭嘴夹卡进抢救车阻尼滑轨自锁卡爪、裙摆被扯起露出整截大腿和吊袜带蕾丝边、老院长带专家查房只隔八米、抽出弯头止血钳撬自锁弹片的骨架与纯欲味道。原稿的时代、地点、开局时刻和基调是从学生会长世界复制的，已按急诊科重写；背景人物里与主要角色同名的几位改成了独立的人。女主从在读实习生改成规培第一年的护士，年龄二十三到二十五岁，住院总二十九到三十三岁。用户已放开内容限制、色情尺度优先，只守红线；卡住的险情期间不写性互动。新增值班休息室与四个亲密日常。",
+ "notes": "按原稿加入，保留急诊大楼全玻璃护士站环岛、护士裙底的白丝吊袜带鸭嘴夹卡进抢救车阻尼滑轨自锁卡爪、裙摆被扯起露出整截大腿和吊袜带蕾丝边、老院长带专家查房只隔八米、抽出弯头止血钳撬自锁弹片的骨架与纯欲味道。原稿的时代、地点、开局时刻和基调是从学生会长世界复制的，已按急诊科重写；背景人物里与主要角色同名的几位改成了独立的人。女主从在读实习生改成规培第一年的护士，年龄二十三到二十五岁，住院总二十九到三十三岁。用户已放开内容限制、色情尺度优先，只守红线；卡住的险情期间不写性互动。新增值班休息室与四个亲密日常。\n2026-10-24 按写作规则 v2 与 Gemini 创意卡改造：删掉滑轨卡住、止血钳撬弹片的抢修骨架，张力换成一支未双签的芬太尼空安瓿、唯一的留院名额、护士长与药师互咬的改分改账，以及值班室和药房内库里的旧情；吊袜带只作私密细节和勤务组长手里的把柄。",
  "player_identities": [
   {
    "age_range": [
-    38,
-    42
+    31,
+    36
    ],
-   "baseline": "临床医学专业拔尖班本科毕业，年满三十八周岁整，享有独立处方审核权与急诊抢救现场医嘱指挥权限。",
+   "baseline": "主持今早的急诊交接，向查房专家组汇报，手里握着夜班抢救医嘱的补签笔和规培医师推荐票。",
    "gender": "any",
    "id": "pi_er_resident_physician",
-   "reputation": "急诊科公认下刀稳健且极为护短的青年外科天才",
+   "reputation": "下刀稳、极护短的急诊外科骨干",
    "resources": [
-    "重症监护电子病历夹总控平板",
-    "抢救车红色封条快速解封专匙"
+    "夜班医嘱补签笔",
+    "规培医师推荐票"
    ],
    "risks": [
-    "若未能在交接前核准药品将面临院长严厉通报扣分"
+    "交接出错，要被副院长当众通报"
    ],
    "role": "急诊外科当班住院总医师",
    "social_position": "high",
@@ -1877,21 +1829,21 @@
   },
   {
    "age_range": [
-    35,
-    39
+    33,
+    38
    ],
-   "baseline": "护理管理专业规培毕业，年满三十五周岁整，主管护士站全盘护理质控与全透明导医台仪容仪表巡查。",
+   "baseline": "统筹晨间护理查房迎检和台账终审，握着规培护士的留院考核表和排班调休权。",
    "gender": "any",
    "id": "pi_head_nurse_shift_supervisor",
-   "reputation": "对仪表与操作规程严苛到极致的铁面督导",
+   "reputation": "对仪表和规程严到极致的铁面督导",
    "resources": [
-    "急诊护理部质控打分记事本",
-    "护士服应急防走光无痕备用别针盒"
+    "规培护士留院考核表",
+    "排班调休权"
    ],
    "risks": [
-    "护士站出现着装混乱将直接扣减当月优秀科室积分"
+    "护士站出了差错，督导第一个被问责"
    ],
-   "role": "急诊监护护士长当班督导",
+   "role": "急诊监护护理当班督导",
    "social_position": "high",
    "title_patterns": [
     {
@@ -1900,27 +1852,27 @@
     },
     {
      "gender": "any",
-     "pattern": "{given}护士"
+     "pattern": "{given}督导"
     }
    ]
   },
   {
    "age_range": [
-    30,
+    29,
     34
    ],
-   "baseline": "生物医学工程专业毕业，年满三十周岁整，持有特种医疗设备巡检执照，负责抢救车推轮与阻尼滑轨维保。",
+   "baseline": "管全区监护仪和药柜电子锁的后台，交班前要导出夜间日志，哪扇门几点开过都查得到。",
    "gender": "any",
    "id": "pi_er_equipment_technician",
-   "reputation": "对急救车机械故障手到病除的设备维护能手",
+   "reputation": "话少手稳、哪儿都进得去的工程师",
    "resources": [
-    "滑轨专用医用无毒硅油喷雾罐",
-    "微型卡簧卡爪弹性测试量规"
+    "设备通行卡",
+    "后台日志导出权限"
    ],
    "risks": [
-    "滑轨卡死导致抢救延误将承担重大设备过失责任"
+    "日志被人动过，第一个被怀疑的就是自己"
    ],
-   "role": "急救器械维护成年保障技师",
+   "role": "急诊医疗保障工程师",
    "social_position": "equal",
    "title_patterns": [
     {
@@ -1929,27 +1881,27 @@
     },
     {
      "gender": "any",
-     "pattern": "{given}技师"
+     "pattern": "{given}工程师"
     }
    ]
   },
   {
    "age_range": [
-    31,
-    35
+    26,
+    32
    ],
-   "baseline": "药学院本科二年级在岗规培年满三十一岁，依法具备独立执业完全民事责任资格，负责急救车毒麻药品双人双锁清点。",
+   "baseline": "交班前要收齐高危空安瓿和处方联，握着毒麻药回收箱钥匙和延时入账权限，至今还没转正。",
    "gender": "any",
    "id": "pi_pharmacy_dispenser_liaison",
-   "reputation": "数药品安瓿分毫不差的细致药师骨干",
+   "reputation": "数安瓿分毫不差的细心人",
    "resources": [
-    "毒麻药品交接双人双锁红外扫码枪",
-    "急救药品备用透明防尘收纳盒"
+    "毒麻药回收箱钥匙",
+    "延时入账权限"
    ],
    "risks": [
-    "交接单据破损将面临全科室清库停诊检查"
+    "没有编制，一次差错就会被辞退"
    ],
-   "role": "急诊药房高危药品核收调剂员",
+   "role": "急诊药房夜班核收联络员",
    "social_position": "low",
    "title_patterns": [
     {
@@ -1963,371 +1915,451 @@
    ]
   }
  ],
- "premise": "上海三甲医院的急诊大楼，规培第一年的纯欲小护士每天推着抢救车在玻璃护士站环岛里交接，裙底是白丝吊袜带，忙起来连水都顾不上喝。住院总、护士长和器械技师天天跟这位新人打交道；老院长每周一带专家查房，抢救车的阻尼滑轨最近总卡。",
+ "premise": "上海三甲医院的急诊大楼昼夜通明，规培满一年的年轻护士每天在全透明的玻璃护士站环岛核对医嘱、清点抢救车备品，忙起来连口温水都顾不上喝。当班住院总、护士长与药房调剂师每晚围绕急诊交接连轴运转。每周一清晨交班前，分管医疗的副院长都会带专家组巡查急诊大通道，当场抽查台账并敲定规培留院名额。",
  "pressures": [
   {
-   "choice": "选择借止血钳尖端微观杠杆向上轻挑弹片，抑或盲目硬拽导致护士裙大面积撕烂当众摔倒。",
+   "choice": "拿对方的短处反制，还是自己出面担下一笔账。",
    "exits": [
     {
-     "cost": "大腿内侧被金属鸭嘴夹挤压出淡淡红印且左腿小腿肌肉极度酸胀。",
-     "option": "借助胸前纯钢弯头止血钳找准三牛顿向上微挑力矩精准弹开卡爪弹片。"
+     "cost": "勤务组长怀恨在心，转头向护士长通风报信。",
+     "option": "拿出勤务组长倒卖报废耗材的监控记录，逼对方交出空瓶"
     },
     {
-     "cost": "需要工勤人员承担擅自违规干涉急救车推台的违章风险。",
-     "option": "由急救工勤孙师傅在暗处用工作皮鞋死死踩紧推车脚刹分担车体晃动位移。"
+     "cost": "你的季度绩效和评优资格直接清零。",
+     "option": "由你签下耗材报损单，换回证物"
+    },
+    {
+     "cost": "规培护士当场被停职调查。",
+     "option": "任由勤务组长把空瓶交到护士站台面"
     }
    ],
    "far": {
-    "consequence": "造成灾难性医疗质控严重事故，实习资格当场吊销遭全行业除名。",
-    "due_days": 1,
-    "trigger": "规培护士在全科室三十名专家面前狼狈跌倒扯烂护士裙"
+    "consequence": "规培护士的留院考核被一票否掉。",
+    "due_days": 3,
+    "trigger": "护士长从勤务组长那里听到风声"
    },
    "flags": [
-    "timed"
+    "leverage"
    ],
    "hook_ids": [],
-   "id": "press_cart_rail_garter_clip_pinch",
+   "id": "press_garter_clasp_ampoule",
    "immediate": {
-    "minutes": 1,
-    "text": "坚硬金属卡爪紧紧咬住鸭嘴夹，右侧裙摆完全被固定在滑轨上，重心不稳。"
+    "minutes": 10,
+    "text": "保洁车横在凹槽口，外头就是分诊连廊。"
+   },
+   "leverage": {
+    "basis": "{er_porter_sun_tie_jun.name}手里有{pure_nurse_bai_zhi_lin.name}遗落的吊袜带扣和未入账的空安瓿，能证明高危药违规取用。",
+    "holder": "er_porter_sun_tie_jun",
+    "subject": "pure_nurse_bai_zhi_lin"
+   },
+   "location_ids": [
+    "loc_er_crash_cart_alcove"
+   ],
+   "near": {
+    "deadline_minutes": 40,
+    "text": "点名前东西若没拿回，就会被摆上护士站台面。"
+   },
+   "objective": "查房队伍到护士站之前，拿回这两样东西。",
+   "source": "person",
+   "start_minute": null,
+   "tags": [],
+   "title": "垃圾桶里的吊袜带扣与空安瓿",
+   "trigger": "{er_porter_sun_tie_jun.name}摊开手心：值班室垃圾桶里捡到的吊袜带扣，和那支未登记的芬太尼空安瓿。"
+  },
+  {
+   "choice": "保住一个人的账，就是掀开另一个人的底。",
+   "exits": [
+    {
+     "cost": "你得在空白核销单上签下自己的名字担责。",
+     "option": "压下双方证据，促成临时平账同盟"
+    },
+    {
+     "cost": "护士长拿药师调换临期药批号的记录反咬，药房后台被封存彻查。",
+     "option": "支持药师曝光考核黑幕"
+    },
+    {
+     "cost": "药师和规培护士同时被调离急诊一线。",
+     "option": "支持护士长上报药房流水"
+    }
+   ],
+   "far": {
+    "consequence": "改分改账一起被翻出，急诊换掉一半管理层。",
+    "due_days": 7,
+    "trigger": "院办督导组复核本季度留院名单"
+   },
+   "flags": [
+    "leverage"
+   ],
+   "hook_ids": [],
+   "id": "press_expired_ledger_quota",
+   "immediate": {
+    "minutes": 15,
+    "text": "两人隔着核销台对峙，屏上的流水还在跳。"
+   },
+   "leverage": {
+    "basis": "{er_pharmacist_qian_xiao_tao.name}握着{head_nurse_yan_min.name}改分、把亲戚塞进留院名额的拍照件。",
+    "holder": "er_pharmacist_qian_xiao_tao",
+    "subject": "head_nurse_yan_min"
+   },
+   "location_ids": [
+    "loc_high_risk_pharmacy_vault"
+   ],
+   "near": {
+    "deadline_minutes": 60,
+    "text": "专家组一到，就要调阅药房流水和考核表。"
+   },
+   "objective": "专家组调阅流水前，别让两人先把对方掀翻。",
+   "source": "person",
+   "start_minute": null,
+   "tags": [],
+   "title": "临期改账与顶替名额",
+   "trigger": "护士长要查封药房夜班流水，{er_pharmacist_qian_xiao_tao.name}当场亮出{head_nurse_yan_min.name}篡改规培平时分的表格拍照件。"
+  },
+  {
+   "choice": "挡在人前就暴露了亲近，不挡就让对方当众难堪。",
+   "exits": [
+    {
+     "cost": "被走廊尽头的护士长记下交接姿态不端。",
+     "option": "借交接病历夹侧身挡在玻璃墙前"
+    },
+    {
+     "cost": "前台交接出现一段无人应答的空档。",
+     "option": "假称备品缺漏，把人带进备品凹槽整理"
+    },
+    {
+     "cost": "专家组进门时你因着装不整被当众点名。",
+     "option": "脱下自己的白大褂披在对方腰间"
+    }
+   ],
+   "far": {
+    "consequence": "两人的事成了全院的谈资，规培护士留院无望。",
+    "due_days": 5,
+    "trigger": "有人把护士站的监控截图发进科室群"
+   },
+   "flags": [],
+   "hook_ids": [
+    "hook_bai_lace_slip",
+    "hook_bai_form_push"
+   ],
+   "id": "press_glass_station_gaze",
+   "immediate": {
+    "minutes": 5,
+    "text": "几十道目光隔着玻璃落进来，蕾丝边又往下滑了一寸。"
    },
    "leverage": null,
    "location_ids": [
     "loc_er_central_nurse_station"
    ],
    "near": {
-    "deadline_minutes": 2,
-    "text": "若无法在十秒内解除绞合，单足站立脱力将直接导致身体跌向推车撞翻安瓿针剂。"
+    "deadline_minutes": 30,
+    "text": "专家组进门后要在环岛前站成一排，逐个点名汇报。"
    },
-   "objective": "在大腿软组织挤压挫伤前用弯头止血钳钝尖挑开卡爪自锁弹片脱钩自救。",
-   "source": "accident",
-   "start_minute": 494,
-   "tags": [
-    "disaster"
-   ],
-   "title": "急救车滑轨咬死吊袜带夹剧痛",
-   "trigger": "推移急救车入位导致不锈钢鸭嘴夹被阻尼自锁卡爪死死卡在缝隙。"
+   "objective": "在专家组进门前替护士遮住裙摆，又不让人看出两人之间有事。",
+   "source": "person",
+   "start_minute": null,
+   "tags": [],
+   "title": "全透明玻璃环岛的注视",
+   "trigger": "早交班的医护和候诊家属聚到玻璃环岛四周，规培护士松脱的吊袜带蕾丝边正滑到裙摆边缘。"
   },
   {
-   "choice": "选择争分夺秒单手盲操器械自救，抑或在护士站呼救引发全院专家停步大乱。",
+   "choice": "说出真相得罪一个人，编个说法又欠下一个人。",
    "exits": [
     {
-     "cost": "若最终仍未解脱将承担打乱全院查房动线的当面训诫。",
-     "option": "住院总以汇报心梗病例为由挺身横阻在老院长身前争取十秒。"
+     "cost": "副院长当场抽考那份病历的每一处细节。",
+     "option": "在晨会前主动说凌晨是在休息室复盘疑难抢救病历"
     },
     {
-     "cost": "承受超负荷心理紧绷与单腿支撑极致酸胀。",
-     "option": "护士指尖爆发极强外科运钳功底在最后三秒挑落鸭嘴夹从容立正敬礼。"
+     "cost": "欠下住院总一张主治晋升的推荐票。",
+     "option": "请当班住院总出面证实夜班全员都在抢救室待命"
+    },
+    {
+     "cost": "后台留下你的工号修改痕迹。",
+     "option": "调门禁维护记录覆盖凌晨的刷卡时间"
     }
    ],
    "far": {
-    "consequence": "急诊科全月质控红旗被摘除，面临院纪律处分与巨额绩效扣除。",
-    "due_days": 1,
-    "trigger": "全院早间大查房当场抓包护士服拉扯失态"
+    "consequence": "两人都被约谈，同科恋情的规定要有人出来顶。",
+    "due_days": 5,
+    "trigger": "传言传到副院长耳朵里"
+   },
+   "flags": [],
+   "hook_ids": [],
+   "id": "press_oncall_door_rumor",
+   "immediate": {
+    "minutes": 10,
+    "text": "连廊里的议论一见你走近就停了，几道目光在你和同伴之间来回。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_triage_observation_glass_hall"
+   ],
+   "near": {
+    "deadline_minutes": 45,
+    "text": "晨会上会有人当众问那扇门为什么锁着。"
+   },
+   "objective": "在晨会点名前，把这句闲话压下去。",
+   "source": "rumor",
+   "start_minute": null,
+   "tags": [],
+   "title": "值班室过夜的科室耳语",
+   "trigger": "早班交接群里有人匿名提起，凌晨值班休息室反锁了很久，几个早到的医护正在连廊低声议论。"
+  },
+  {
+   "choice": "替同伴争取时间就得自己挨问，交出证据就得牺牲另一个人。",
+   "exits": [
+    {
+     "cost": "独自承受副院长连环追问的扣分风险。",
+     "option": "主动迎上前接过话头先汇报，替后面争取补签时间"
+    },
+    {
+     "cost": "住院总被记行政警告，两人的交情就此破裂。",
+     "option": "交出住院总凌晨口头医嘱的原始录音"
+    },
+    {
+     "cost": "规培护士的留院评分直接降为不合格。",
+     "option": "如实申报一支空安瓿待补录"
+    }
+   ],
+   "far": {
+    "consequence": "急诊被挂红牌，全科扣发季度奖金。",
+    "due_days": 14,
+    "trigger": "院委会审议急诊高危药报告"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [],
-   "id": "press_dean_eight_meter_arrival",
+   "id": "press_dean_retention_form",
    "immediate": {
-    "minutes": 1,
-    "text": "查房大队皮鞋声清晰可闻，三十名主任专家的目光正齐刷刷从走廊切向导医台。"
+    "minutes": 5,
+    "text": "皮鞋声停在护士站前，红牌处罚夹打开了。"
    },
    "leverage": null,
    "location_ids": [
     "loc_grand_hall_inspection_walkway"
    ],
    "near": {
-    "deadline_minutes": 2,
-    "text": "倒数归零若护士呈现单腿僵直拉扯姿态，近距离视线将把受困丑态暴露无遗。"
+    "deadline_minutes": 60,
+    "text": "汇报一结束，就当场敲定今年的留院名额。"
    },
-   "objective": "在老院长踏至推车前彻底解除裙摆束缚并抚平套裙端庄呈上交接记录板。",
+   "objective": "在专家组站定之前，决定由谁、拿什么去汇报。",
    "source": "institution",
-   "start_minute": 495,
+   "start_minute": null,
    "tags": [],
-   "title": "老院长率三十名专家查房逼近八米",
-   "trigger": "住院总确认老院长脚步逼近，走廊大理石地面反光正一步一步向推车前唇迫近。"
+   "title": "副院长八米外的留院考评表",
+   "trigger": "副院长率专家组走过主步道中段，离护士站只剩八米，要第一个汇报的人当场呈交零差错的毒麻药台账。"
   },
   {
-   "choice": "选择由护士长侧身移步阻挡，抑或任由候诊家属窥见死锁细节引发围观拍照。",
+   "choice": "守在这里会被人撞见两人独处，走开又放心不下。",
    "exits": [
     {
-     "cost": "可能遭受带班质控组关于走位偏离主控位的微弱提醒。",
-     "option": "护士长干练侧身展开大号交接册以挺拔身姿遮挡护士右侧盲区视线。"
+     "cost": "两人独处一室的场面被赶来的同事撞见。",
+     "option": "扶对方平躺、松开领口，按床头呼叫铃叫楼下抢救室来人"
     },
     {
-     "cost": "需要药学人员承担来自候诊队伍的噪音抱怨压力。",
-     "option": "药剂员药剂师果断开启药房大喇叭大声叫号彻底吸引走廊所有家属视线。"
+     "cost": "你错过交班首轮点名，被护士长记旷岗。",
+     "option": "先喂葡萄糖水贴身托住，再请当班主治把人推下去留观"
+    },
+    {
+     "cost": "交接单据散在休息室桌上，没来得及锁起。",
+     "option": "背起对方走消防通道，一路送到楼下抢救室"
     }
    ],
    "far": {
-    "consequence": "纯情白衣天使圣洁形象瞬间崩塌，遭受全网恶俗舆论网暴开除。",
-    "due_days": 1,
-    "trigger": "护士站死锁与黑色吊袜带细节被患者家属拍下上传网络"
+    "consequence": "两人的考勤各添一笔，排班被拆开。",
+    "due_days": 5,
+    "trigger": "护士长追问那天早上的旷岗"
+   },
+   "flags": [],
+   "hook_ids": [],
+   "id": "press_hypoglycemia_faint",
+   "immediate": {
+    "minutes": 10,
+    "text": "人靠着上下铺往下滑，嘴唇发白，额头全是冷汗。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_er_oncall_room"
+   ],
+   "near": {
+    "deadline_minutes": 40,
+    "text": "交班首轮点名开始，两人都不在场。"
+   },
+   "objective": "先让对方缓过来，再赶在交班点名前把人和单据都安顿好。",
+   "source": "accident",
+   "start_minute": null,
+   "tags": [],
+   "title": "连轴夜班后的低血糖晕厥",
+   "trigger": "三十多个小时没合眼的同伴在休息室换衣服时，突然面色惨白，冷汗浸透衬衣，手抖得扣不上扣子。"
+  },
+  {
+   "choice": "叫人开门就得当着专家组从内库走出来，不叫就要在里面待到来电。",
+   "exits": [
+    {
+     "cost": "门开时查房队伍正好在门口，看见两人从内库出来。",
+     "option": "拨内线叫保卫科来开门"
+    },
+    {
+     "cost": "警报响彻急诊大厅，内库夜间取药记录来不及合上。",
+     "option": "按红色消防强开钮"
+    },
+    {
+     "cost": "错过交班点名，两人在里面待了多久谁也说不清。",
+     "option": "安静等电路恢复"
+    }
+   ],
+   "far": {
+    "consequence": "两人同处内库多久，被写进一份情况说明。",
+    "due_days": 3,
+    "trigger": "保卫科调出内库门禁记录"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [],
-   "id": "press_waiting_public_stare_dread",
+   "id": "press_vault_power_lockdown",
    "immediate": {
-    "minutes": 1,
-    "text": "咨询喧哗声不绝于耳，数名家属目光落在导医台前，下身裙角异样无处遁形。"
+    "minutes": 15,
+    "text": "应急灯亮着，药架之间只够站两个人，门外有人在念台账。"
    },
    "leverage": null,
    "location_ids": [
-    "loc_er_central_nurse_station"
+    "loc_high_risk_pharmacy_vault"
    ],
    "near": {
-    "deadline_minutes": 2,
-    "text": "家属只要探身三寸即可看清护士裙摆卡死在滑轨上的窘态并大声呼喊。"
+    "deadline_minutes": 60,
+    "text": "交班点名时两人都缺席，会有人来找。"
    },
-   "objective": "在家属察觉下身裙摆开裂与内衬黑色吊袜带前完成脱扣或构筑视线屏障。",
-   "source": "person",
-   "start_minute": 495,
+   "objective": "在查房队伍走远之前想办法出去，或者安静地等。",
+   "source": "accident",
+   "start_minute": null,
    "tags": [],
-   "title": "全透明导医台候诊家属全景注视",
-   "trigger": "导医台四面落地防弹玻璃通透如昼，十余名病患家属正隔着台面排队咨询。"
-  },
-  {
-   "choice": "选择调整呼吸沉稳发力微旋，抑或因钳尖打滑彻底脱钩丧失唯一器械自救工具并刺破裙面。",
-   "exits": [
-    {
-     "cost": "消耗最后宝贵的三秒钟并加大指骨关节受压酸胀。",
-     "option": "右手手腕向内微旋用止血钳内侧防滑横齿死死咬稳自锁卡爪下缘轻挑。"
-    },
-    {
-     "cost": "需要工勤人员极度隐蔽配合防止引来老院长锐利视线。",
-     "option": "工勤师傅转运师傅在暗处用无水酒精湿巾阻隔润滑油脂防止钳尖打滑。"
-    }
-   ],
-   "far": {
-    "consequence": "只能任由老院长与三十名主任现场抓包狼狈惨烈社死。",
-    "due_days": 1,
-    "trigger": "器械滑脱刺破衣物或导致推车翻倾"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_forceps_tip_slip_risk",
-   "immediate": {
-    "minutes": 1,
-    "text": "不锈钢钳尖在卡爪外壁发出极轻微刮擦滑脱声，心跳几乎骤停。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "near": {
-    "deadline_minutes": 2,
-    "text": "若止血钳滑脱脱手，不仅无法挑开卡爪更会导致推车受力反弹撞翻第二层针剂盒。"
-   },
-   "objective": "稳住足弓发力反手以止血钳内侧咬合横齿死死咬住卡爪弹簧片根部向上微挑。",
-   "source": "person",
-   "start_minute": 496,
-   "tags": [],
-   "title": "光滑不锈钢滑轨止血钳打滑风险",
-   "trigger": "紧张冷汗与推车阻尼滑轨极度光滑表面导致止血钳锯齿微弯钝尖在卡爪边缘产生滑动。"
-  },
-  {
-   "choice": "选择忍受牵扯维持圣洁仪态，抑或动作变形导致护士裙撕烂春光大泄。",
-   "exits": [
-    {
-     "cost": "左手臂因别扭承重姿势产生剧烈酸痛麻木感。",
-     "option": "用左手自然搭在导医台大理石台面边缘为身体平衡分担倾斜拉力。"
-    },
-    {
-     "cost": "双人贴身走位过紧可能略微影响查房队伍主台交接视野。",
-     "option": "护士长并肩侧立以自身宽大台面记录夹恰到好处遮蔽护士开衩侧翼。"
-    }
-   ],
-   "far": {
-    "consequence": "规培护士资格当场被吊销，声名狼藉面临全院各科室长达数月的恶俗议论。",
-    "due_days": 1,
-    "trigger": "护士裙在众目睽睽下当场撕裂露底走光"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_uniform_slit_tear_panic",
-   "immediate": {
-    "minutes": 1,
-    "text": "纯护士裙侧面接缝极度紧绷，雪白长腿受拉，内衬吊袜带边缘若隐若现。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "near": {
-    "deadline_minutes": 2,
-    "text": "暗线一旦绷脱整件套裙侧面将直接向后扯开大面积暴露贴身防静脉曲张内衬。"
-   },
-   "objective": "在套裙接缝彻底崩开露底走光前完成脱扣并迅速收腿抚平护士裙恢复端庄站姿。",
-   "source": "nature",
-   "start_minute": 496,
-   "tags": [
-    "disaster"
-   ],
-   "title": "修身护士套裙下摆紧绷撕裂走光",
-   "trigger": "鸭嘴夹被死锁而身体受推车反冲微微前倾导致护士套裙下摆暗线发出断裂微响。"
-  },
-  {
-   "choice": "选择顶住泰斗目光完成硬核器械自救逆袭，抑或被恐怖审视感击垮彻底失态摔倒。",
-   "exits": [
-    {
-     "cost": "需要极强的专业心理素质瞬间切换神态展现一线白衣天使风骨。",
-     "option": "挑开卡爪瞬间以无瑕的纯真治愈微笑迎向老院长端庄双手呈递交接板。"
-    },
-    {
-     "cost": "抢先汇报需要药学部门承担打乱大查房汇报次序的微弱风险。",
-     "option": "由药剂员药剂师高声报告高危毒麻双人核收完成争取三秒缓冲。"
-    }
-   ],
-   "far": {
-    "consequence": "科室名誉遭受毁灭性打击，当班医护团队遭受全院纪律通报严惩。",
-    "due_days": 1,
-    "trigger": "急诊晨检沦为规培护士走光事故车祸现场"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_er_expert_hall_standing_gaze",
-   "immediate": {
-    "minutes": 1,
-    "text": "老院长银边眼镜后目光威严冷峻，走廊反光镜将导医台侧翼身形清晰投射。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_er_central_nurse_station"
-   ],
-   "near": {
-    "deadline_minutes": 2,
-    "text": "若扫中肢体受困僵硬的身影，全院早查房将瞬间转化为全院医疗责任问责风暴。"
-   },
-   "objective": "在全科视线完全笼罩与老院长伸手抽验前完美脱困端庄立正递上记录单。",
-   "source": "person",
-   "start_minute": 497,
-   "tags": [],
-   "title": "全院专家队伍三十人齐步审视重压",
-   "trigger": "三十名各科室主任白大褂列队行进脚步震动地面，全场目光尽数聚焦急救推车前唇。"
+   "title": "药房内库门禁断电闭锁",
+   "trigger": "交班前电路切换，内库磁力门锁断电闭死，你和同伴被关在里面，门外就是查房队伍的脚步声。"
   }
  ],
- "region": "急诊大楼：玻璃护士站环岛、抢救车凹槽、查房主步道与分诊连廊",
+ "region": "急诊大楼：玻璃护士站环岛、备品凹槽、分诊连廊、药房内库与值班室",
  "rules": [
   {
-   "id": "rule_emergency_nurse_station_decorum",
-   "text": "三甲急诊中心护士站仪态准则：交接班核查急救车必须保持站姿端正与着装整洁，严禁在导医台前出现下肢裙摆拉扯或失态惊呼。"
+   "id": "rule_narcotic_double_sign",
+   "text": "高危毒麻药须双人核对、双人签字才能出库；有空安瓿没核销，当班签名人一并担责。"
   },
   {
-   "id": "rule_crash_cart_damping_rail_safety",
-   "text": "八十公斤重型急救推车阻尼滑轨严禁强行野蛮拉拽，防止导致整车精密安瓿针剂震荡破碎引爆医疗抢救安全责任事故。"
+   "id": "rule_retention_last_place",
+   "text": "规培护士满一年考核，末位淘汰；留院名额由护士长打分，分管副院长一票否决。"
   },
   {
-   "id": "rule_medical_hemostat_hygiene_protocol",
-   "text": "医用加厚不锈钢弯头止血钳须严格执行一用一消毒规范，随身佩戴器械要求操作精准规范不得划伤衣物或患者器皿。"
+   "id": "rule_same_department_romance",
+   "text": "同科恋情须向科室报备，一经发现，其中一方调岗。"
   },
   {
-   "id": "rule_adult_clinical_intern_legal_code",
-   "text": "急诊科所有在岗规培人员均为年满二十周岁完全民事行为能力人，擅离职守或破坏急救设备将依法承担执业过失连带追责。"
+   "id": "rule_adult_staff",
+   "text": "急诊在岗的医护、药师和工勤都是年满二十二岁的持证成年人，各自为签下的名字负责。"
   }
  ],
  "schema_version": 1,
  "stage_labels": {
-  "acquainted": "组织规约",
-  "committed": "金石同盟",
-  "familiar": "台容核检",
-  "flirting": "暗光对视",
-  "intimate": "俯仰共济",
-  "stranger": "初登讲台",
-  "testing": "执夹撬簧"
+  "acquainted": "点头之交",
+  "committed": "共守一账",
+  "familiar": "同批搭档",
+  "flirting": "台下勾手",
+  "intimate": "越过红线",
+  "stranger": "素不相识",
+  "testing": "针锋相对"
  },
  "status": "released",
- "style_hint": "急诊环岛的冷白灯光与查房专家逼近的压迫。写规培护士婴儿肥两颊的潮红、被扯高的裙摆下整截白丝长腿与吊袜带蕾丝边、压着的喘息，动作落在止血钳撬弹片上。",
+ "style_hint": "急诊冷白灯光下，人前端庄、人后越界。写熬夜后泛红的脸、裙下若隐若现的蕾丝边、压低的气声和掌心的汗；张力落在谁签名、谁替谁扛。",
  "tension_engines": [
   {
-   "id": "eng_crash_cart_rail_garter_clip_jam",
-   "text": "护士裙下摆不锈钢鸭嘴吊袜带夹死死卡入急救车阻尼滑轨自锁卡爪，稍有移动即引发护士裙撕裂大面积走光与八十公斤推车震颤翻倾之恐怖机械死锁威压。"
+   "id": "eng_ampoule_ledger",
+   "text": "一支没走完双签的芬太尼空安瓿：谁签名谁背账，谁不签就有人替自己挨处分。"
   },
   {
-   "id": "eng_dean_eight_meter_arrival",
-   "text": "老院长率三十名查房专家步步逼近仅剩八米十五秒倒计时，与纯情规培护士手持钝头弯头止血钳微观杠杆下压向上轻挑卡爪自救形成的秒级生死时速对抗。"
+   "id": "eng_retention_quota",
+   "text": "规培留院名额只剩一个，考核分握在护士长手里，否决权握在副院长手里。"
   },
   {
-   "id": "eng_public_glass_hall_scrutiny_dread",
-   "text": "全通透玻璃护士站四面无死角通道与数十道目光聚焦，与受困护士私密黑色吊袜带濒临暴露带来的极端职业名誉社死心理拉锯。"
+   "id": "eng_glass_station_eyes",
+   "text": "全透明的玻璃护士站，人前必须端正得挑不出错，台面下的指尖却勾着旧情。"
   },
   {
-   "id": "eng_nurse_uniform_slit_tear_peril",
-   "text": "加厚立领纯白修身护士裙紧绷直欲撕裂，纯洁白衣天使以超凡坚毅与外科级器械手感捍卫圣洁尊严之绝境自救。"
+   "id": "eng_secret_romance",
+   "text": "同科恋情不许公开，值班室和药房内库里发生过的事，只能各自藏着。"
   }
  ],
  "title": "规培护士查房夜",
  "tone": [
-  "白丝吊袜带被扯紧",
-  "查房队伍只隔八米",
-  "止血钳挑自锁弹片",
-  "夜班后的值班室"
+  "玻璃环岛人人可见",
+  "一支没入账的空安瓿",
+  "留院名额只剩一个",
+  "值班室的旧账"
  ],
  "twists": [
   {
    "category": "信息",
-   "id": "tw_info_hemostat_lever_craft",
-   "requires": [
-    "pure_nurse_bai_zhi_lin"
-   ],
-   "text": "护士胸前口袋常备的医用纯钢弯头止血钳采用七十五度淬火钝尖工艺，硬度极高且截面带横齿，专为紧急无菌拆封与微观杠杆破拆设计。"
-  },
-  {
-   "category": "人事",
-   "id": "tw_spatial_crash_cart_recess_blind",
-   "requires": [
-    "er_porter_sun_tie_jun"
-   ],
-   "text": "急诊导医台一米一高的大理石凹槽与急救车不锈钢把手之间形成天然半封闭光影死角，为工勤师傅踩死脚刹与护士下肢操作提供了物理掩体。"
-  },
-  {
-   "category": "资源",
-   "id": "tw_resource_dean_checklist_sign_pass",
+   "id": "tw_rescue_audio_restored",
    "requires": [
     "er_chief_resident_chu_yun_shen"
    ],
-   "text": "老院长在现场抽检中确认抢救车铅封完好且心梗病历处置完美，当场批复急诊监护区年度优秀带教示范岗嘉奖。"
+   "text": "凌晨抢救室的监控音轨恢复了，能证明那支未签字的芬太尼是救命急用；可一旦调出，{er_chief_resident_chu_yun_shen.name}在休息室门口说过的几句私话也会被人听见。"
   },
   {
    "category": "制度",
-   "id": "tw_psychological_pure_nurse_grit_burst",
-   "requires": [
-    "pure_nurse_bai_zhi_lin"
-   ],
-   "text": "看似娇柔害羞易红脸的纯情规培护士在死锁与老院长逼近绝境中迸发出惊人外科冷静意志，单手运钳微观挑扣展现出无瑕职业风骨。"
-  },
-  {
-   "category": "时限",
-   "id": "tw_temporal_resident_case_report_buffer",
-   "requires": [
-    "er_chief_resident_chu_yun_shen"
-   ],
-   "text": "住院总果断跨出主步道以严谨翔实的溶栓病案汇报截断老院长步伐，为护士运钳挑弹卡爪争取到关键十五秒黄金自救时间。"
-  },
-  {
-   "category": "关系",
-   "id": "tw_social_porter_cart_brake_lock",
-   "requires": [
-    "er_porter_sun_tie_jun"
-   ],
-   "text": "看似沉默寡言的工勤师傅借巡视通道为由用重工皮鞋死死踩定急救推车双侧机械脚刹，以硬核卫勤经验构筑最稳固操作基石。"
+   "id": "tw_quota_cut_to_one",
+   "requires": [],
+   "text": "副院长宣布今年急诊留院名额缩减到一人，拿到名额的人要当场签字，接手整季度毒麻药台账的历史责任。"
   },
   {
    "category": "意外",
-   "id": "tw_mechanics_damping_jaw_spring_yield",
+   "id": "tw_backend_phishing_test",
+   "requires": [
+    "er_pharmacist_qian_xiao_tao"
+   ],
+   "text": "{er_pharmacist_qian_xiao_tao.name}发现凌晨改账的工号其实是院办督导组的钓鱼测试；现在切断内网能保住所有人，但当班药师会被记一次重大操作失误。"
+  },
+  {
+   "category": "人事",
+   "id": "tw_relative_list_printed",
    "requires": [
     "head_nurse_yan_min"
    ],
-   "text": "急救车第二层阻尼自锁卡爪弹片在止血钳钝头三牛顿垂直微挑力矩下顺畅弹开脱扣，不锈钢鸭嘴夹顺势脱离卡死化解撕裂危机。"
+   "text": "{head_nurse_yan_min.name}塞亲戚进规培名单的私信被打印在护士站的公共打印机上；压下这张纸能让护士长彻底退让，但你要背上越权调档的处分。"
+  },
+  {
+   "category": "资源",
+   "id": "tw_spare_ampoule_offer",
+   "requires": [
+    "er_chief_resident_chu_yun_shen"
+   ],
+   "text": "{er_chief_resident_chu_yun_shen.name}从个人急救包里拿出一支同批号的完好安瓿，可以当场平账；代价是你要在另一份高风险手术同意书上做第二署名。"
+  },
+  {
+   "category": "时限",
+   "id": "tw_locker_spot_check",
+   "requires": [],
+   "text": "院感督导组要求交班前开锁抽查夜班医护的私人更衣柜；交出钥匙会露出柜里的私密衣物和信物，拒交就取消本年度评优。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_branch_transfer_order",
+   "requires": [],
+   "text": "人事处送来一张即刻生效的分院调令，签字就能免掉本次查房的一切追责，可签字的人今晚就得搬离总院，和留下的人隔着半座城。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_dean_quiet_shield",
+   "requires": [
+    "dean_qin_tian_lin"
+   ],
+   "text": "{dean_qin_tian_lin.name}在人前举着红牌逐个逼问，散会后却让秘书把那份典型差错报告退了回来，只附一句：真话，说给我一个人听。"
+  },
+  {
+   "category": "意外",
+   "id": "tw_vault_lock_was_set",
+   "requires": [
+    "er_pharmacist_qian_xiao_tao"
+   ],
+   "text": "内库那次断电并非意外：{er_pharmacist_qian_xiao_tao.name}提前改了门禁切换的顺序，只为把你留在里面，说一句在科里不能说的话。"
   }
  ]
 }

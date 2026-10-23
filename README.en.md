@@ -29,7 +29,7 @@ Thousands of story materials ｜ Zero-drift SQLite state machine<br>
 
 <a id="worlds"></a>
 <p align="center">
-  <img src=".github/readme-lofi/world-library.svg?v=215" width="100%" alt="Built-in world library: standalone world frames across eras and over fourteen thousand story materials. 211 videotapes lying flat on the walnut shelves of a late-night rental store, spines out with the world names, in seventeen genre columns on four shelves, each shelf with a brass plaque: East and old times (courts and wanderers, immortals and spirits, Japan and its shrines, late Qing and Republic), West and the decades (classical Europe, neighbours under one roof, trades and night shops, campus and study), the city's dark side (gangs and old money, office and law, spies and the front, stage and screen), fantasy and the edge (arena and wagers, extreme engineering, sci-fi and the end, cathedrals and demonkin, kingdoms and blades); each column labelled with its world count, eight staff picks pulled halfway out under a small gold light; all open, ready to start. A cassette rack below lists over fourteen thousand materials: 970+ places, 1270+ NPCs, 940+ player identities, 1120+ character pairings, 910+ tension engines, 1770+ daily activities, 1270+ pressure events, 3330+ opening hooks, 1460+ mid-story turns, 1740+ rules and customs.">
+  <img src=".github/readme-lofi/world-library.svg?v=216" width="100%" alt="Built-in world library: standalone world frames across eras and over fourteen thousand story materials. A lit counter shelf of staff picks: eight videotapes standing face-out under spotlights, genre on top and title below; all 211 worlds are open, and the full tape wall is in the fold-out list below. A cassette rack below lists over fourteen thousand materials: 970+ places, 1270+ NPCs, 940+ player identities, 1120+ character pairings, 910+ tension engines, 1770+ daily activities, 1270+ pressure events, 3330+ opening hooks, 1460+ mid-story turns, 1740+ rules and customs.">
 </p>
 
 <br>
@@ -42,6 +42,10 @@ Don't see what you want? Just say "custom world" (`自定义世界`), name the y
 <details>
 <summary><b>See all 211 worlds at a glance (click to open)</b></summary>
 <br>
+
+<p align="center">
+  <img src=".github/readme-lofi/worlds.svg" width="100%" alt="The tape wall: 211 videotapes lying flat on the walnut shelves of a late-night rental store, spines out with the world names, in seventeen genre columns on four shelves, each shelf with a brass plaque: East and old times (courts and wanderers, immortals and spirits, Japan and its shrines, late Qing and Republic), West and the decades (classical Europe, neighbours under one roof, trades and night shops, campus and study), the city's dark side (gangs and old money, office and law, spies and the front, stage and screen), fantasy and the edge (arena and wagers, extreme engineering, sci-fi and the end, cathedrals and demonkin, kingdoms and blades); each column labelled with its world count, eight staff picks pulled halfway out under a small gold light; all open, ready to start.">
+</p>
 
 | World | In one line |
 |---|---|

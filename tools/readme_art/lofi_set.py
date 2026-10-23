@@ -1,4 +1,4 @@
-"""Lo-fi pixel README set to match the bedroom hero: five section banners, the VHS tape wall, a staff-picks counter, a cassette shelf of materials.
+"""Lo-fi pixel README set to match the bedroom hero: five section banners, the VHS tape wall, a genre counter, a cassette shelf of materials.
 Writes into .github/readme-lofi/ next to hero.svg (made by readme_overlay.py). The banners and the shelf's window show crops of
 the user's own bedroom picture (cropped, never repainted), and everything shares the hero's violet-and-grey palette."""
 import base64
@@ -833,59 +833,130 @@ def inventory():
     doc("inventory.svg", GW * C, GH * C, MATERIAL, INV_DESC, "", body)
 
 
-COVERS = {   # cover art per pick: sky ramp top to bottom, motif
-    "大理寺提刑女官": (["#0e0b22", "#2a1a3a", "#5a2a3a"], "lantern"),
-    "紫禁封宫夜": (["#1a1e3a", "#3a4870", "#7a88b0"], "palace"),
-    "递辞呈的女仆长": (["#1a1438", "#3a2a66", "#8a5a8a"], "castle"),
-    "薄墙那头的主妇": (["#141a30", "#2a3050", "#4a4060"], "flats"),
-    "握黑账的女社长": (["#0a0e1a", "#14243a", "#2a4a5a"], "tower"),
-    "坠机边缘女总裁": (["#0c1418", "#2a4048", "#7a9090"], "plane"),
-    "禁触的雪线圣女": (["#1a2040", "#4a5a90", "#a0b0d8"], "peak"),
-    "同居魔族女勇者": (["#1a0e22", "#4a1e3a", "#a2477e"], "sword"),
+COVERS = {   # cover art per genre: sky ramp top to bottom, motif
+    "宫廷与江湖": (["#0e0b22", "#2a1a3a", "#5a2a3a"], "lantern"),
+    "仙侠与志怪": (["#101a2a", "#24405a", "#5a8a9a"], "immortal"),
+    "和风与神社": (["#1a0e22", "#3a1a3a", "#8a3a4a"], "torii"),
+    "清末民国": (["#1a1428", "#4a3a50", "#a07a5a"], "clocktower"),
+    "欧陆古典": (["#1a1438", "#3a2a66", "#8a5a8a"], "castle"),
+    "邻里与屋檐下": (["#141a30", "#2a3050", "#4a4060"], "flats"),
+    "百工与夜铺": (["#0e0b1a", "#22183a", "#4a2a4a"], "shop"),
+    "学府与书斋": (["#101428", "#24305a", "#4a5a8a"], "study"),
+    "黑道与豪门": (["#14080e", "#3a0e1a", "#7a1e2a"], "mansion"),
+    "职场与律政": (["#0a0e1a", "#14243a", "#2a4a5a"], "tower"),
+    "谍战与战地": (["#0c100c", "#1e2a1e", "#4a5a3a"], "front"),
+    "舞台与镜头": (["#1a0a1a", "#3a0e2a", "#6a1a3a"], "stage"),
+    "赛场与博弈": (["#0a1020", "#142a3a", "#1e4a3a"], "arena"),
+    "绝境与重工": (["#140c0a", "#3a1e14", "#8a4a1e"], "plant"),
+    "科幻与末世": (["#06061a", "#141a3a", "#2a1a5a"], "planet"),
+    "圣堂与魔裔": (["#120a1e", "#2a1440", "#5a2a6a"], "cathedral"),
+    "王都与剑魔": (["#1a0e22", "#4a1e3a", "#a2477e"], "sword"),
 }
 INK = "#100a18"
 
 
-def cover_art(cv, name, ax0, at, ax1, ab, rnd, glow):
-    """A tiny night scene for one pick's sleeve, inside the art box (ax0, at)-(ax1, ab)."""
-    sky, motif = COVERS[name]
+def cover_art(cv, genre, ax0, at, ax1, ab, rnd, glow):
+    """A tiny night scene for one genre's sleeve, inside the art box (ax0, at)-(ax1, ab)."""
+    sky, motif = COVERS[genre]
     cv.vgrad(ax0, at, ax1, ab, sky)
     cx = (ax0 + ax1) // 2
-    if motif not in ("tower", "plane", "palace"):
-        for _ in range(6):
+
+    def stars(n=6):
+        for _ in range(n):
             cv.put(rnd.randrange(ax0 + 1, ax1 - 1), rnd.randrange(at + 1, at + 12), rnd.choice(["#e9dcff", "#9fa8e0"]))
-    if motif == "lantern":                                          # a hall roof and a red lantern swinging under the eave
+
+    def moon(x, y, r=2.5, col="#fff3c8"):
+        cv.ellipse(x, y, r, r, col)
+
+    def halo(x, y, r, col, op=0.6):
+        glow.append(f'<circle cx="{x * C}" cy="{y * C}" r="{r}" fill="{col}" fill-opacity="{op}" filter="url(#g6)"/>')
+
+    if motif == "lantern":                                          # a hall roof and a red lantern under the eave
+        stars()
         cv.poly([(ax0, ab - 7), (ax0 + 5, ab - 12), (ax1 - 5, ab - 12), (ax1, ab - 7)], INK)
         cv.rect(ax0 + 3, ab - 7, ax1 - 3, ab, INK)
         cv.rect(cx - 2, ab - 5, cx + 2, ab, "#ffcf6a")
         cv.rect(ax0 + 7, at + 2, ax0 + 8, at + 8, "#3a2228")
         cv.ellipse(ax0 + 7.5, at + 11, 3, 3.6, lambda x, y: "#ffcf6a" if x == ax0 + 7 else "#e0402f")
-        glow.append(f'<circle cx="{(ax0 + 7.5) * C}" cy="{(at + 11) * C}" r="22" fill="#ff7a4a" fill-opacity="0.45" filter="url(#g6)"/>')
-    elif motif == "palace":                                         # double eaves under snow
-        for k, (y, inset) in enumerate([(ab - 13, 4), (ab - 8, 1)]):
-            cv.poly([(ax0 + inset, y + 3), (ax0 + inset + 4, y - 1), (ax1 - inset - 4, y - 1), (ax1 - inset, y + 3)], INK)
-            cv.rect(ax0 + inset + 4, y - 1, ax1 - inset - 4, y, "#f2f4ff")
-        cv.rect(ax0 + 4, ab - 6, ax1 - 4, ab, "#2a0e14")
-        cv.rect(cx - 2, ab - 5, cx + 2, ab, "#ffcf6a")
-        for _ in range(16):
-            cv.put(rnd.randrange(ax0, ax1), rnd.randrange(at, ab - 2), "#ffffff")
+        halo(ax0 + 7.5, at + 11, 22, "#ff7a4a", 0.45)
+    elif motif == "immortal":                                       # floating peaks in a cloud sea, a flying sword
+        for px_, top, w in [(ax0 + 5, at + 9, 5), (ax1 - 7, at + 6, 6)]:
+            cv.poly([(px_ - w, ab - 6), (px_, top), (px_ + w, ab - 6)], "#1a2a3a")
+            cv.poly([(px_ - 2, top + 4), (px_, top), (px_ + 2, top + 4)], "#cfe8f0")
+        cv.rect(ax0, ab - 5, ax1, ab, "#a8c8d8")
+        for xx in range(ax0, ax1, 3):
+            cv.rect(xx, ab - 6, xx + 2, ab - 5, "#a8c8d8")
+        cv.line(cx - 4, at + 5, cx + 3, at + 2, "#9fe9ff")
+        halo(cx, at + 3.5, 12, "#9fe9ff", 0.7)
+    elif motif == "torii":                                          # a torii gate under a big moon
+        moon(cx, at + 8, 6, "#ffd6c0")
+        cv.rect(ax0 + 3, at + 13, ax1 - 3, at + 15, "#c8303a")
+        cv.rect(ax0 + 2, at + 12, ax1 - 2, at + 13, "#e0404a")
+        cv.rect(ax0 + 5, at + 17, ax1 - 5, at + 18, "#c8303a")
+        for tx in (ax0 + 7, ax1 - 9):
+            cv.rect(tx, at + 13, tx + 2, ab, "#a82030")
+        cv.rect(ax0, ab - 2, ax1, ab, INK)
+        halo(cx, at + 8, 26, "#ffb0a0", 0.3)
+    elif motif == "clocktower":                                     # a customs-house clock tower and a street lamp
+        stars(4)
+        cv.rect(cx - 3, at + 7, cx + 3, ab, INK)
+        cv.poly([(cx - 3, at + 7), (cx, at + 2), (cx + 3, at + 7)], INK)
+        cv.ellipse(cx + 0.5, at + 10, 2, 2, "#ffe9a8")
+        cv.rect(ax0 + 1, ab - 8, cx - 3, ab, INK)
+        cv.rect(cx + 3, ab - 6, ax1 - 1, ab, INK)
+        cv.rect(ax1 - 5, ab - 14, ax1 - 4, ab - 6, "#2a2030")
+        cv.rect(ax1 - 6, ab - 15, ax1 - 3, ab - 14, "#ffcf6a")
+        halo(cx + 0.5, at + 10, 10, "#ffe9a8", 0.7)
+        halo(ax1 - 4.5, ab - 14.5, 12, "#ffcf6a", 0.6)
     elif motif == "castle":                                         # towers with one lit window
+        stars()
         for tx, th in [(ax0 + 3, 16), (cx - 3, 20), (ax1 - 8, 14)]:
             cv.rect(tx, ab - th, tx + 6, ab, INK)
             cv.poly([(tx - 1, ab - th), (tx + 3, ab - th - 5), (tx + 7, ab - th)], INK)
         cv.rect(ax0 + 1, ab - 8, ax1 - 1, ab, INK)
         cv.rect(cx - 1, ab - 15, cx + 1, ab - 12, "#ffd88a")
-        cv.ellipse(ax0 + 6, at + 5, 2.5, 2.5, "#fff3c8")
-        glow.append(f'<circle cx="{cx * C}" cy="{(ab - 13.5) * C}" r="12" fill="#ffd88a" fill-opacity="0.6" filter="url(#g6)"/>')
+        moon(ax0 + 6, at + 5)
+        halo(cx, ab - 13.5, 12, "#ffd88a")
     elif motif == "flats":                                          # an apartment block, one pink window
+        stars()
         cv.rect(ax0 + 2, ab - 18, ax1 - 2, ab, INK)
         for wy in range(ab - 16, ab - 1, 4):
             for wx in range(ax0 + 4, ax1 - 4, 4):
-                lit = (wx * 3 + wy) % 7 == 0
-                cv.rect(wx, wy, wx + 2, wy + 2, "#ffd88a" if lit else "#2a2440")
+                cv.rect(wx, wy, wx + 2, wy + 2, "#ffd88a" if (wx * 3 + wy) % 7 == 0 else "#2a2440")
         cv.rect(cx, ab - 12, cx + 2, ab - 10, "#ff8fc4")
-        cv.ellipse(ax0 + 5, at + 5, 2.5, 2.5, "#fff3c8")
-        glow.append(f'<circle cx="{(cx + 1) * C}" cy="{(ab - 11) * C}" r="10" fill="#ff8fc4" fill-opacity="0.7" filter="url(#g6)"/>')
+        moon(ax0 + 5, at + 5)
+        halo(cx + 1, ab - 11, 10, "#ff8fc4", 0.7)
+    elif motif == "shop":                                           # a night stall with a striped awning and a lit sign
+        stars(4)
+        cv.rect(ax0 + 2, ab - 14, ax1 - 2, ab, INK)
+        cv.rect(ax0 + 1, ab - 16, ax1 - 1, ab - 13, lambda x, y: "#e0402f" if (x // 2) % 2 else "#f6eedd")
+        cv.rect(ax0 + 4, ab - 11, ax1 - 4, ab - 3, "#ffcf8a")
+        cv.rect(ax0 + 4, ab - 4, ax1 - 4, ab - 3, "#a86a3a")
+        cv.rect(cx - 4, ab - 21, cx + 4, ab - 17, "#ff6fae")
+        halo(cx, ab - 7, 22, "#ffcf8a", 0.5)
+        halo(cx, ab - 19, 12, "#ff6fae", 0.6)
+    elif motif == "study":                                          # an arched library window and a desk lamp over books
+        cv.rect(cx - 7, at + 5, cx + 7, ab - 6, "#3a4a7a")
+        cv.ellipse(cx, at + 5, 7, 4, "#3a4a7a")
+        for gx in (cx - 3, cx + 2):
+            cv.rect(gx, at + 2, gx + 1, ab - 6, INK)
+        cv.rect(cx - 7, at + 12, cx + 7, at + 13, INK)
+        cv.rect(ax0, ab - 6, ax1, ab, INK)
+        for k, col in enumerate(["#c8423a", "#3f7fb0", "#e2a33b"]):
+            cv.rect(ax0 + 3, ab - 8 - k * 2, ax0 + 11 - k, ab - 6 - k * 2, col)
+        cv.rect(ax1 - 6, ab - 12, ax1 - 5, ab - 6, "#2a2030")
+        cv.poly([(ax1 - 9, ab - 12), (ax1 - 2, ab - 12), (ax1 - 4, ab - 15), (ax1 - 7, ab - 15)], "#3fa96a")
+        halo(ax1 - 5.5, ab - 10, 14, "#ffe9a8", 0.6)
+    elif motif == "mansion":                                        # a gated villa under a red moon
+        moon(ax1 - 6, at + 5, 3, "#ff6f7f")
+        cv.rect(ax0 + 3, ab - 15, ax1 - 3, ab, INK)
+        cv.poly([(ax0 + 1, ab - 15), (cx, ab - 21), (ax1 - 1, ab - 15)], INK)
+        for wx in range(ax0 + 6, ax1 - 6, 5):
+            cv.rect(wx, ab - 12, wx + 2, ab - 9, "#ffb84a")
+        for gx in range(ax0, ax1, 2):
+            cv.rect(gx, ab - 5, gx + 1, ab, "#2a1a20")
+        cv.rect(ax0, ab - 5, ax1, ab - 4, "#2a1a20")
+        halo(cx, ab - 10, 20, "#ffb84a", 0.4)
     elif motif == "tower":                                          # a skyscraper in the rain, the top floor lit
         cv.rect(cx - 5, at + 4, cx + 5, ab, INK)
         cv.rect(cx - 1, at + 1, cx, at + 4, INK)
@@ -899,25 +970,69 @@ def cover_art(cv, name, ax0, at, ax1, ab, rnd, glow):
             cv.put(rx, ry, "#6a8aa8")
             cv.put(rx + 1, ry + 1, "#4a6a88")
         glow.append(f'<rect x="{(cx - 4) * C}" y="{(at + 6) * C}" width="{8 * C}" height="{2 * C}" fill="#9fe9ff" filter="url(#g6)" opacity="0.9"/>')
-    elif motif == "plane":                                          # a jet dropping through a storm
-        for bx, by, r in [(ax0 + 5, at + 4, 5), (cx + 2, at + 3, 6), (ax1 - 5, at + 5, 5)]:
-            cv.ellipse(bx, by, r, 3, "#0e1418")
-        cv.line(cx + 4, at + 7, cx + 2, at + 11, "#ffe36a")
-        cv.line(cx + 2, at + 11, cx + 5, at + 12, "#ffe36a")
-        cv.line(cx + 5, at + 12, cx + 2, at + 17, "#ffe36a")
-        cv.poly([(ax0 + 4, ab - 12), (ax1 - 6, ab - 6), (ax1 - 4, ab - 4), (ax0 + 5, ab - 10)], INK)
-        cv.poly([(cx - 3, ab - 10), (cx + 3, ab - 5), (cx - 2, ab - 2)], INK)
-        cv.rect(ax0 + 1, ab - 2, ax1 - 1, ab, "#0a1014")
-        glow.append(f'<circle cx="{(cx + 3) * C}" cy="{(at + 12) * C}" r="20" fill="#ffe36a" fill-opacity="0.4" filter="url(#g6)">'
-                    '<animate attributeName="fill-opacity" values="0;0;0.7;0;0.5;0" keyTimes="0;0.8;0.83;0.86;0.9;1" dur="4s" repeatCount="indefinite"/></circle>')
-    elif motif == "peak":                                           # a snow peak with a shrine light on top
-        cv.poly([(ax0, ab), (cx, at + 6), (ax1, ab)], "#2a3050")
-        cv.poly([(cx - 5, at + 12), (cx, at + 6), (cx + 5, at + 12), (cx + 2, at + 11), (cx, at + 13), (cx - 2, at + 11)], "#f2f4ff")
-        cv.rect(cx - 1, at + 4, cx + 1, at + 6, "#ffd88a")
-        cv.poly([(ax0, ab), (ax0 + 8, ab - 7), (cx, ab)], INK)
-        glow.append(f'<circle cx="{cx * C}" cy="{(at + 5) * C}" r="12" fill="#ffe9a8" fill-opacity="0.8" filter="url(#g6)"/>')
+    elif motif == "front":                                          # crossing searchlights over barbed wire
+        for x0_, x1_ in [(ax0 + 4, cx + 6), (ax1 - 4, cx - 6)]:
+            glow.append(f'<polygon points="{x0_ * C},{(ab - 6) * C} {(x0_ + 1) * C},{(ab - 6) * C} {(x1_ + 3) * C},{at * C} {(x1_ - 3) * C},{at * C}" '
+                        f'fill="#f0f0c8" fill-opacity="0.22"/>')
+        cv.poly([(ax0, ab), (ax0, ab - 6), (ax0 + 6, ab - 9), (ax0 + 10, ab - 6), (cx + 4, ab - 7), (ax1, ab - 5), (ax1, ab)], INK)
+        for xx in range(ax0, ax1, 3):
+            cv.put(xx, ab - 11 + (xx % 2), "#8a8a7a")
+            cv.put(xx + 1, ab - 10, "#8a8a7a")
+        for px_ in (ax0 + 2, cx, ax1 - 3):
+            cv.rect(px_, ab - 12, px_ + 1, ab - 6, "#3a3a30")
+    elif motif == "stage":                                          # red curtains, a spotlight on an empty mic
+        cv.rect(ax0, at, ax1, at + 3, "#8a1e2a")
+        for xx in range(ax0, ax0 + 6):
+            cv.rect(xx, at, xx + 1, ab - 3 - (xx - ax0), "#a82838" if xx % 2 else "#7a1424")
+        for xx in range(ax1 - 6, ax1):
+            cv.rect(xx, at, xx + 1, ab - 3 - (ax1 - 1 - xx), "#a82838" if xx % 2 else "#7a1424")
+        glow.append(f'<polygon points="{(cx - 1) * C},{(at + 3) * C} {(cx + 1) * C},{(at + 3) * C} {(cx + 6) * C},{(ab - 3) * C} {(cx - 6) * C},{(ab - 3) * C}" '
+                    f'fill="#fff0c8" fill-opacity="0.3"/>')
+        cv.rect(ax0, ab - 3, ax1, ab, "#3a2418")
+        cv.rect(cx, ab - 12, cx + 1, ab - 3, "#c8c8d0")
+        cv.ellipse(cx + 0.5, ab - 13, 1.6, 2, "#e8e8f0")
+    elif motif == "arena":                                          # floodlights over a pitch
+        stars(3)
+        for fx in (ax0 + 3, ax1 - 4):
+            cv.rect(fx, at + 6, fx + 1, ab - 6, "#3a3a4a")
+            cv.rect(fx - 2, at + 4, fx + 3, at + 6, "#f0f0e0")
+            halo(fx + 0.5, at + 5, 16, "#f0f8ff", 0.7)
+        cv.poly([(ax0, ab), (ax0 + 4, ab - 7), (ax1 - 4, ab - 7), (ax1, ab)], "#2a6a3a")
+        cv.line(ax0 + 4, ab - 4, ax1 - 4, ab - 4, "#cfe8d0")
+        cv.line(cx, ab - 7, cx, ab - 1, "#cfe8d0")
+    elif motif == "plant":                                          # a crane and a chimney under a warning light
+        cv.rect(ax0 + 3, at + 6, ax0 + 6, ab, INK)
+        cv.rect(ax0 + 3, at + 6, ax1 - 2, at + 7, INK)
+        cv.line(ax1 - 4, at + 7, ax1 - 4, at + 14, "#2a2030")
+        cv.rect(ax1 - 6, at + 14, ax1 - 2, at + 16, "#e2a33b")
+        cv.rect(cx, ab - 14, cx + 4, ab, INK)
+        cv.rect(ax0 + 1, ab - 6, ax1 - 1, ab, INK)
+        cv.rect(ax0 + 4, at + 4, ax0 + 5, at + 5, "#ff3a3a")
+        glow.append(f'<circle cx="{(ax0 + 4.5) * C}" cy="{(at + 4.5) * C}" r="10" fill="#ff3a3a" fill-opacity="0.8" filter="url(#g6)">'
+                    '<animate attributeName="fill-opacity" values="0.9;0.1;0.9" dur="1.6s" repeatCount="indefinite"/></circle>')
+        for k in range(3):
+            cv.ellipse(cx + 2 + k, ab - 16 - k * 3, 2 + k * 0.5, 1.5, "#5a4a4a")
+    elif motif == "planet":                                         # a ringed planet and a rising rocket
+        stars(9)
+        cv.ellipse(ax0 + 9, at + 9, 5, 5, lambda x, y: "#c87ae0" if y < at + 9 else "#7a3a9a")
+        cv.line(ax0 + 1, at + 11, ax0 + 17, at + 7, "#ffd6a0")
+        cv.rect(ax1 - 6, ab - 15, ax1 - 3, ab - 6, "#e8e8f0")
+        cv.poly([(ax1 - 6, ab - 15), (ax1 - 4.5, ab - 19), (ax1 - 3, ab - 15)], "#e8e8f0")
+        cv.rect(ax1 - 6, ab - 6, ax1 - 3, ab - 4, "#ffcf6a")
+        halo(ax1 - 4.5, ab - 4, 12, "#ff9a4a", 0.8)
+        cv.rect(ax0, ab - 2, ax1, ab, INK)
+    elif motif == "cathedral":                                      # a gothic church with a glowing rose window
+        stars(4)
+        cv.rect(cx - 6, ab - 16, cx + 6, ab, INK)
+        cv.poly([(cx - 7, ab - 16), (cx, ab - 23), (cx + 7, ab - 16)], INK)
+        for sx in (ax0 + 1, ax1 - 5):
+            cv.rect(sx, ab - 20, sx + 4, ab, INK)
+            cv.poly([(sx, ab - 20), (sx + 2, ab - 25), (sx + 4, ab - 20)], INK)
+        cv.ellipse(cx + 0.5, ab - 13, 3, 3, lambda x, y: "#ff6fae" if (x + y) % 2 else "#a874ff")
+        cv.rect(cx - 1, ab - 6, cx + 2, ab, "#ffcf6a")
+        halo(cx + 0.5, ab - 13, 14, "#c874ff", 0.7)
     else:                                                           # a sword in the ground under a red moon
-        cv.ellipse(ax0 + 7, at + 6, 3.5, 3.5, "#ff6f7f")
+        moon(ax0 + 7, at + 6, 3.5, "#ff6f7f")
         cv.poly([(ax0, ab), (ax0, ab - 4), (cx, ab - 7), (ax1, ab - 3), (ax1, ab)], INK)
         cv.rect(cx, ab - 20, cx + 2, ab - 6, "#d8dcea")
         cv.rect(cx, ab - 20, cx + 1, ab - 6, "#ffffff")
@@ -926,20 +1041,24 @@ def cover_art(cv, name, ax0, at, ax1, ab, rnd, glow):
         glow.append(f'<rect x="{cx * C}" y="{(ab - 20) * C}" width="{2 * C}" height="{14 * C}" fill="#c8d8ff" filter="url(#g6)" opacity="0.7"/>')
 
 
-PICKS_DESC = "柜台上的店长推荐：{} 盒录像带封面朝外立在一块小货架上，每盒顶上标着题材、底下贴着片名，金色推荐贴纸，射灯照着；其余世界在 README 的全部世界速览里。"
+GENRES_DESC = ("世界分类展示：{} 盒录像带封面朝外立在两层小货架上，射灯照着，一类一盒：{}；每盒顶上写着这一类有几个世界，"
+               "封面是这一类的小夜景，底下贴着分类名。全部世界已开放，每一类的完整名单在 README 的全部世界速览里。")
 
 
-def picks():
-    """The short version for the top of the README: the gold-pinned tapes stood face-out on one lit counter shelf."""
-    region_of = {n: (r, c) for r, c, ws in REGIONS for n in ws}
-    chosen = [n for _, _, ws in REGIONS for n in ws if n in STARS]
-    assert len(chosen) == len(STARS)
-    GW, GH = 300, 90
+def genres():
+    """The short version for the top of the README: one face-out sleeve per genre on two lit counter shelves, in wall order."""
+    assert set(COVERS) == {r for r, _, _ in REGIONS}
+    rows, k = [], 0
+    for half in (BANDS[:2], BANDS[2:]):                             # shelves I+II on top, III+IV below
+        n = sum(c for _, c in half)
+        rows.append(REGIONS[k:k + n])
+        k += n
+    GW, GH = 300, 158
     rnd = random.Random(53)
     cv = pk.Canvas(GW, GH)
     over, glow = [], []
-    X0, X1, SY = 8, 292, 70                                         # counter shelf: left, right, board top
-    PW = 56                                                         # brass plaque
+    X0, X1 = 8, 292
+    PW = 60                                                         # brass plaque
     px0 = (X0 + X1) // 2 - PW // 2
     cv.rect(px0 + 1, 5, px0 + PW + 1, 15, "#0e080a")
     cv.rect(px0, 4, px0 + PW, 14, "#c9a24a")
@@ -947,46 +1066,44 @@ def picks():
     cv.rect(px0, 13, px0 + PW, 14, "#8a6a28")
     for sx in (px0 + 2, px0 + PW - 3):
         cv.put(sx, 9, "#7a5a20")
-    over.append(text((px0 + PW / 2) * C, 11.6 * C, f"店长推荐 · {len(chosen)} 盒", 17, "#4a3410", 900, "middle", 2, SANS))
-    cv.rect(X0, 17, X1, 18, "#2a2230")                              # the track the spotlights hang from
-    n = len(chosen)
-    pitch = (X1 - X0) / n
-    for i, name in enumerate(chosen):
-        region, rc = region_of[name]
-        x0 = int(X0 + i * pitch + 2)
-        x1 = int(X0 + (i + 1) * pitch - 2)
-        y0, y1 = 22, SY
-        lx = (x0 + x1) // 2                                         # a spotlight above each sleeve
-        cv.rect(lx - 2, 18, lx + 2, 21, "#4a4058")
-        cv.rect(lx - 1, 21, lx + 1, 22, "#ffe9a8")
-        glow.append(f'<polygon points="{(lx - 1) * C},{22 * C} {(lx + 1) * C},{22 * C} {(x1 + 2) * C},{y1 * C} {(x0 - 2) * C},{y1 * C}" '
-                    f'fill="#ffe9c0" fill-opacity="0.07"/>')
-        cv.rect(x0 + 2, y0 + 2, x1 + 2, y1, "#0b070c")                # drop shadow on the back wall
-        cv.rect(x0, y0, x1, y1, "#1c1820")                          # the sleeve
-        cv.rect(x0, y0, x1, y0 + 1, "#4a4454")
-        cv.rect(x0 + 1, y0 + 1, x1 - 1, y0 + 7, rc)                 # genre band on top
-        cover_art(cv, name, x0 + 1, y0 + 7, x1 - 1, y0 + 33, rnd, glow)
-        cv.rect(x0 + 1, y0 + 33, x1 - 1, y1 - 1, "#efe6d2")         # title label
-        cv.rect(x0 + 1, y0 + 33, x1 - 1, y0 + 34, "#ffffff")
-        cv.rect(x0 + 1, y0 + 34, x0 + 3, y1 - 1, rc)
-        cv.ellipse(x1 - 4, y0 + 10, 4.5, 4.5, "#ffc94a")            # gold sticker
-        cv.ellipse(x1 - 4, y0 + 10, 3.5, 3.5, "#ffd86a")
-        glow.append(f'<circle cx="{(x1 - 3.5) * C}" cy="{(y0 + 10.5) * C}" r="16" fill="#ffc94a" fill-opacity="0.6" filter="url(#g6)">'
-                    f'<animate attributeName="fill-opacity" values="0.7;0.25;0.7" dur="2.4s" begin="-{i * 0.3:.1f}s" repeatCount="indefinite"/></circle>')
-        over.append(text((x1 - 3.5) * C, (y0 + 12.3) * C, "荐", 13, "#7a4a10", 900, "middle", 0, SANS))
-        over.append(text((x0 + 2) * C, (y0 + 5.5) * C, region, 13, "#ffffff", 800, "start", 1, SANS, 'stroke="#2a1a24" stroke-width="2.5" paint-order="stroke"'))
-        size = min(15, (pitch - 10) * C / max(len(s) for s in chosen))  # one type size on every sleeve
-        over.append(text((x0 + x1 + 2) / 2 * C, (y0 + 40.6) * C, name, round(size, 1), "#221a24", 900, "middle", 0, SANS))
-    cv.rect(X0 - 2, SY, X1 + 2, SY + 4, "#6a4430")                  # the counter shelf
-    cv.rect(X0 - 2, SY, X1 + 2, SY + 1, "#9a6a48")
-    cv.rect(X0 - 2, SY + 5, X1 + 2, SY + 6, "#140c10")
-    for bx in (X0 + 10, (X0 + X1) // 2, X1 - 16):
-        cv.poly([(bx, SY + 5), (bx + 7, SY + 5), (bx, SY + 12)], "#3a3440")
+    over.append(text((px0 + PW / 2) * C, 11.6 * C, f"世界分类 · {len(REGIONS)} 类", 17, "#4a3410", 900, "middle", 2, SANS))
+    pitch = (X1 - X0) / max(len(r) for r in rows)
+    size = min(16, (pitch - 8) * C / max(len(r) for r, _, _ in REGIONS))   # one type size on every sleeve
+    for ri, row in enumerate(rows):
+        RT = 17 + ri * 67                                           # the spotlight track of this shelf
+        SY = RT + 53                                                # the shelf board
+        x_off = (len(rows[1]) - len(row)) * pitch / 2 if len(row) < max(len(r) for r in rows) else 0
+        cv.rect(X0, RT, X1, RT + 1, "#2a2230")
+        for i, (genre, rc, worlds_) in enumerate(row):
+            x0 = int(X0 + x_off + i * pitch + 2)
+            x1 = int(X0 + x_off + (i + 1) * pitch - 2)
+            y0, y1 = RT + 5, SY
+            lx = (x0 + x1) // 2
+            cv.rect(lx - 2, RT + 1, lx + 2, RT + 4, "#4a4058")
+            cv.rect(lx - 1, RT + 4, lx + 1, RT + 5, "#ffe9a8")
+            glow.append(f'<polygon points="{(lx - 1) * C},{(RT + 5) * C} {(lx + 1) * C},{(RT + 5) * C} {(x1 + 2) * C},{y1 * C} {(x0 - 2) * C},{y1 * C}" '
+                        f'fill="#ffe9c0" fill-opacity="0.07"/>')
+            cv.rect(x0 + 2, y0 + 2, x1 + 2, y1, "#0b070c")            # drop shadow on the back wall
+            cv.rect(x0, y0, x1, y1, "#1c1820")                      # the sleeve
+            cv.rect(x0, y0, x1, y0 + 1, "#4a4454")
+            cv.rect(x0 + 1, y0 + 1, x1 - 1, y0 + 7, rc)             # genre band with the world count
+            cover_art(cv, genre, x0 + 1, y0 + 7, x1 - 1, y0 + 33, rnd, glow)
+            cv.rect(x0 + 1, y0 + 33, x1 - 1, y1 - 1, "#efe6d2")     # genre label
+            cv.rect(x0 + 1, y0 + 33, x1 - 1, y0 + 34, "#ffffff")
+            cv.rect(x0 + 1, y0 + 34, x0 + 3, y1 - 1, rc)
+            over.append(text((x0 + x1) / 2 * C, (y0 + 5.6) * C, f"{len(worlds_)} 个世界", 13, "#ffffff", 800, "middle", 1, SANS,
+                             'stroke="#2a1a24" stroke-width="2.5" paint-order="stroke"'))
+            over.append(text((x0 + x1 + 2) / 2 * C, (y0 + 40.8) * C, genre, round(size, 1), "#221a24", 900, "middle", 0, SANS))
+        cv.rect(X0 - 2, SY, X1 + 2, SY + 4, "#6a4430")              # the counter shelf
+        cv.rect(X0 - 2, SY, X1 + 2, SY + 1, "#9a6a48")
+        cv.rect(X0 - 2, SY + 5, X1 + 2, SY + 6, "#140c10")
+        for bx in (X0 + 10, (X0 + X1) // 2, X1 - 16):
+            cv.poly([(bx, SY + 5), (bx + 7, SY + 5), (bx, SY + 12)], "#3a3440")
     body = f'''    <g shape-rendering="crispEdges">{cv.emit(C)}</g>
     {"".join(glow)}
     {"".join(over)}
-    {text(X0 * C, 87.5 * C, f"全部 {NWORLDS} 个世界已开放，完整的录像带墙在下方“全部世界速览”里", 18, SUBT, 600, "start", 1.5)}'''
-    doc("picks.svg", GW * C, GH * C, "店长推荐", PICKS_DESC.format(n), "", body)
+    {text(X0 * C, 155 * C, f"全部 {NWORLDS} 个世界已开放，每一类的完整名单在下方“全部世界速览”里", 18, SUBT, 600, "start", 1.5)}'''
+    doc("genres.svg", GW * C, GH * C, "世界分类", GENRES_DESC.format(len(REGIONS), "、".join(r for r, _, _ in REGIONS)), "", body)
 
 
 banner("section-proof.svg", "体验切片", "真实会话交付实录", 1, (1180, 222, 1490, 352), v_proof)          # the monitor
@@ -995,15 +1112,15 @@ banner("section-worlds.svg", "内置世界库", "跨时代独立世界框架和"
 banner("section-start.svg", "怎么开始", "不用记语法，直接说大白话", 4, (610, 190, 1050, 375), v_start)          # the guitar
 banner("section-install.svg", "安装", "只需交给 AI 操作，原生 SKILL", 5, (1440, 280, 1800, 431), v_install)           # the laptop
 worlds()
-picks()
+genres()
 inventory()
 
 
 def library():
-    """The world-library banner, the staff picks and the cassette shelf stacked into one seamless picture: one wall, one frame,
+    """The world-library banner, the genre shelves and the cassette shelf stacked into one seamless picture: one wall, one frame,
     one vignette; the banner's picture crop also melts into the wall at its bottom edge. The full tape wall (worlds.svg)
     sits on its own inside the README's fold-out list."""
-    names = ["section-worlds.svg", "picks.svg", "inventory.svg"]
+    names = ["section-worlds.svg", "genres.svg", "inventory.svg"]
     W = PARTS[names[0]][0]
     H = sum(PARTS[n][1] for n in names)
     BHPX = PARTS[names[0]][1]
@@ -1017,7 +1134,7 @@ def library():
         y += PARTS[n][1]
     parts.insert(1, f'    <g mask="url(#seam)">{background("world-library.svg", W, H)}</g>')
     doc("world-library.svg", W, H, "内置世界库",
-        f"内置世界库：跨时代独立世界框架和{MATERIAL}。{PICKS_DESC.format(len(STARS))}下方磁带架写着{MATERIAL}：{INV_DESC.split('：', 1)[1]}",
+        f"内置世界库：跨时代独立世界框架和{MATERIAL}。{GENRES_DESC.format(len(REGIONS), "、".join(r for r, _, _ in REGIONS))}下方磁带架写着{MATERIAL}：{INV_DESC.split('：', 1)[1]}",
         defs, "\n".join(parts))
 
 

@@ -41,7 +41,7 @@ Don't see what you want? Just say "custom world" (`自定义世界`), name the y
 
 <div align="center">
 <details>
-<summary><kbd>&nbsp;📼 Open the whole tape wall&nbsp;</kbd>&nbsp;&nbsp;<sub>211 worlds · 17 genres · all open</sub></summary>
+<summary><b>📼 Open the whole tape wall</b>&nbsp;&nbsp;<sub>211 worlds · 17 genres · all open</sub></summary>
 <br>
 
 <p align="center">

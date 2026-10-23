@@ -37,7 +37,7 @@
 
 <div align="center">
 <details>
-<summary><kbd>&nbsp;📼 点开整面录像带墙&nbsp;</kbd>&nbsp;&nbsp;<sub>211 个世界 · 17 类 · 全部已开放</sub></summary>
+<summary><b>📼 点开整面录像带墙</b>&nbsp;&nbsp;<sub>211 个世界 · 17 类 · 全部已开放</sub></summary>
 <br>
 
 <p align="center">

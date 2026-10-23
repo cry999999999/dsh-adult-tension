@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/readme-lofi/hero.svg?v=211" width="100%" alt="Adult Tension。像素风黄昏卧室：一个人坐在床边弹红色电吉他，窗外是霓虹城市，窗上写着 ADULT TENSION；人物左侧写着：专为高张力、强连续性成人互动叙事打造。18+，尺度全开，真实成人互动，Claude Opus 5.5 从零重构。下方三栏：活人感 NPC、数百个深度世界、自运行状态机。">
+  <img src=".github/readme-lofi/hero.svg?v=212" width="100%" alt="Adult Tension。像素风黄昏卧室：一个人坐在床边弹红色电吉他，窗外是霓虹城市，窗上写着 ADULT TENSION；她头边一个像素思考气泡，写着她的心里话：再弹一首……他该来敲门了吧。18+，尺度全开，真实成人互动，Claude Opus 5.5 从零重构。下方三栏：活人感 NPC、211 个深度世界、自运行状态机。">
 </p>
 
 <div align="center">

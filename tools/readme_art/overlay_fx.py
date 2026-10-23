@@ -175,12 +175,13 @@ class FX:
 
 
 def title_track(i):
-    """ADULT TENSION letter i: lights up in turn, holds, a couple of letters flicker, all go dark before the loop."""
+    """ADULT TENSION letter i: lights up in turn, holds, a couple of letters flicker, all dim before the loop. Dimmed is
+    still 0.6, so the name stays readable at every moment (and in a still frame)."""
     on = 0.3 + i * 0.09
-    pairs = [(0, 0.15), (on, 1)]
+    pairs = [(0, 0.6), (on, 1)]
     if i in (2, 9):
         pairs += [(9.0 + i * 0.01, 0.25), (9.12, 1), (9.3, 0.4), (9.36, 1)]
-    pairs.append((15.6, 0.15))
+    pairs.append((15.6, 0.6))
     return blink(T, pairs, attr="fill-opacity") + blink(T, pairs, attr="stroke-opacity")
 
 

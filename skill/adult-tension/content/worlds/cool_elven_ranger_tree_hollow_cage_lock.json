@@ -1,89 +1,72 @@
 {
  "background_cast": [
   {
-   "adult_context": "跟着巡林队守了几年根道的游侠。",
+   "adult_context": "年满二十一岁的巡林队正式队员。",
    "age_range": [
     21,
-    28
+    27
    ],
-   "function": "helper",
-   "gender": "male",
+   "function": "witness",
+   "gender": "any",
    "id": "bg_young_ranger",
-   "line": "队长！闸门外的根挖开了！里面的人一撬开就能出来！",
+   "line": "刚才藤桥上好像有人说起边境小径……我什么都没听见。",
    "location_ids": [
-    "loc_ironwood_gate_draft_gap",
-    "loc_elven_canopy_market"
+    "loc_root_wind_gallery"
    ],
-   "name": "游侠芬恩",
+   "name": null,
    "role": "巡林队的年轻游侠"
   },
   {
-   "adult_context": "在巡林队吹了几年号角的号手。",
+   "adult_context": "年满二十六岁的根道守卫队正式队员。",
    "age_range": [
-    22,
-    30
+    26,
+    38
    ],
-   "function": "messenger",
-   "gender": "female",
-   "id": "bg_horn_signaler",
-   "line": "号角我一直吹着！听得见就往号角那边走！",
+   "function": "obstacle",
+   "gender": "any",
+   "id": "bg_root_guard",
+   "line": "队长有令，今夜下根道的一律登记，木牌留下。",
    "location_ids": [
-    "loc_ironwood_gate_draft_gap",
-    "loc_elven_canopy_market"
+    "loc_root_warden_outpost"
    ],
-   "name": "号手莉丝",
-   "role": "巡林队的号手"
+   "name": null,
+   "role": "根道守卫"
   },
   {
-   "adult_context": "替长老会传令的精灵。",
+   "adult_context": "年满三十岁、替长老会传令的精灵。",
    "age_range": [
     30,
     45
    ],
-   "function": "obstacle",
-   "gender": "male",
+   "function": "messenger",
+   "gender": "any",
    "id": "bg_council_herald",
-   "line": "大长老有令，魔兽没压下去之前，谁也不许下根道！",
+   "line": "议事厅的灯还亮着，驱逐令的草稿已经拟好了。",
    "location_ids": [
-    "loc_ironwood_gate_draft_gap"
+    "loc_root_warden_outpost",
+    "loc_elven_canopy_market"
    ],
-   "name": "传令官阿伦",
+   "name": null,
    "role": "长老会的传令官"
   },
   {
-   "adult_context": "在集市上帮家里看摊的精灵。",
+   "adult_context": "年满四十岁、在集市摆了几十年摊的精灵。",
    "age_range": [
-    22,
-    30
+    40,
+    60
    ],
-   "function": "witness",
-   "gender": "female",
-   "id": "bg_honey_seller",
-   "line": "游侠每回来买蜜都买两罐，一罐自己的，一罐说是给那个人类的。",
+   "function": "rumor_source",
+   "gender": "any",
+   "id": "bg_market_stall_elf",
+   "line": "听说了吗？人类用秘法抽干了根脉，我的灵草可不卖给人类。",
    "location_ids": [
     "loc_elven_canopy_market"
    ],
-   "name": "卖蜜的伊芙",
-   "role": "集市上的小摊主"
+   "name": null,
+   "role": "集市上的草药摊主"
   },
   {
-   "adult_context": "在集市上编了几百年藤篮的老精灵。",
-   "age_range": [
-    55,
-    70
-   ],
-   "function": "witness",
-   "gender": "male",
-   "id": "bg_basket_weaver",
-   "line": "那个人类学者画标本的时候，眼睛老往游侠那边瞟。",
-   "location_ids": [
-    "loc_elven_canopy_market"
-   ],
-   "name": "编篮的老橡",
-   "role": "集市上编藤篮的"
-  },
-  {
-   "adult_context": "看守集市吊桥的精灵。",
+   "adult_context": "年满三十五岁、看守集市吊桥的精灵。",
    "age_range": [
     35,
     50
@@ -95,88 +78,76 @@
    "location_ids": [
     "loc_elven_canopy_market"
    ],
-   "name": "守桥人",
-   "role": "吊桥的看守"
+   "name": null,
+   "role": "吊桥看守"
+  },
+  {
+   "adult_context": "年满三十岁的人类商队车夫，持通商木契入城。",
+   "age_range": [
+    30,
+    45
+   ],
+   "function": "helper",
+   "gender": "any",
+   "id": "bg_caravan_driver",
+   "line": "车我套好了，走不走、带不带人，你们一句话。",
+   "location_ids": [
+    "loc_root_wind_gallery"
+   ],
+   "name": null,
+   "role": "人类商队的车夫"
   }
  ],
  "cast_combos": [
   {
-   "chemistry": "游侠与植物学者在树芯里胸腹相贴，四只手叠在刀柄上，一个数着呼吸一个跟着往下压。",
-   "id": "cc_ranger_botanist_switch",
-   "identity_ids": [],
+   "chemistry": "{elf_ranger_seranie.name}是你这一季的向导，也是上弦月夜在树屋露台吻过你的人；盟约今夜期满，树屋木案上的双人行囊已经收好。",
+   "id": "cc_ranger_and_porter_treehouse",
+   "identity_ids": [
+    "pi_root_porter"
+   ],
    "player_positions": [
-    "high",
-    "equal",
     "low"
    ],
-   "power_structure": "switchable",
+   "power_structure": "npc_high",
    "relations": [
     {
      "a": "player",
      "a_to_b": {
       "tension": 3,
-      "trust": 3
+      "trust": 4
      },
      "b": "elf_ranger_seranie",
      "b_to_a": {
-      "tension": 3,
-      "trust": 3
+      "tension": 4,
+      "trust": 4
      },
-     "reason": "一起被困在树芯里，彼此的命都攥在对方手里。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "paleobotanist",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "一个带路一个勘察，并肩走了一季的根道。",
-     "stage": "familiar"
-    },
-    {
-     "a": "elf_ranger_seranie",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "paleobotanist",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "一个话少一个嘴笨，一季里说过的话不多，句句都记得。",
-     "stage": "testing"
+     "reason": "上弦月夜两人在树屋露台听完林涛，情不自禁拥吻缠绵，游侠和你约好说暗号就停。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "elf_ranger_seranie",
-    "paleobotanist"
+    "elf_ranger_seranie"
    ],
    "stakes": {
-    "irreplaceable_goal": "撬断死卡骨销，撬开闸门，两人一起出去。",
-    "limit_gap": "游侠在缺氧时手脚发软，植物学者的标本夹被闸门压碎了。",
-    "meeting_reason": "防御机关触发前，游侠带着植物学者在树芯空洞里采样。",
-    "resource_gap": "游侠有那把秘银猎刀和对根道每一处的熟悉，植物学者有那本根系图册和对树木受力的了解。"
+    "irreplaceable_goal": "游侠问你，今晚是陪自己下树芯查清枯萎真相，还是天亮前直接走林间秘道出城。",
+    "limit_gap": "游侠擅离林城就是叛逃，你只是科考队雇来的助理，开口留人没有分量。",
+    "meeting_reason": "{elf_ranger_seranie.name}在树屋里把整理好的双人行囊推到你面前。",
+    "resource_gap": "游侠握着隐秘根道的引路权和出城秘道，你手里有树屋的备用木牌和下层根道的实测草图。"
    },
    "tags": [
-    "workplace",
-    "disaster"
+    "intimate"
    ],
    "tension_engine_ids": [
-    "te_air_running_thin",
-    "te_knife_chest_press"
+    "te_ranger_stay_or_go",
+    "te_pact_expiry"
    ]
   },
   {
-   "chemistry": "游侠与植物学者在闸门缝隙前四只手叠在一起，一边争该先撬木楔还是先砍荆棘，一边一下一下把骨销别开。",
-   "id": "cc_ranger_botanist_equal",
-   "identity_ids": [],
+   "chemistry": "你核录盟约，{elf_ranger_seranie.name}带路巡查，这一季两人早已私定终身；今夜木台的微光照着主根上一道发暗的割痕。",
+   "id": "cc_ranger_and_scribe_hollow",
+   "identity_ids": [
+    "pi_council_scribe"
+   ],
    "player_positions": [
     "equal"
    ],
@@ -186,68 +157,41 @@
      "a": "player",
      "a_to_b": {
       "tension": 2,
-      "trust": 3
+      "trust": 4
      },
      "b": "elf_ranger_seranie",
      "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "为一份样本争了一下午，谁都不肯先认输。",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "paleobotanist",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "一季里在集市上并肩吃过好多回花蜜。",
-     "stage": "familiar"
-    },
-    {
-     "a": "elf_ranger_seranie",
-     "a_to_b": {
       "tension": 3,
-      "trust": 3
+      "trust": 5
      },
-     "b": "paleobotanist",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "一个清冷一个木讷，谁都没说破。",
-     "stage": "testing"
+     "reason": "一起巡查根道这一季早已私定终身，游侠自愿把叶纹银扣交给你贴身佩戴，只等续约通过就向长老会公开。",
+     "stage": "committed"
     }
    ],
    "slots": [
-    "elf_ranger_seranie",
-    "paleobotanist"
+    "elf_ranger_seranie"
    ],
    "stakes": {
-    "irreplaceable_goal": "先撬开半尺缝隙，让风进来逼退荆棘。",
-    "limit_gap": "游侠不懂植物的受力，植物学者不懂精灵的机关。",
-    "meeting_reason": "两人为该不该取世界树的根芯样本，在集市上争了一下午，争到下根道都没分出胜负。",
-    "resource_gap": "游侠知道这座防御机关怎么落，植物学者知道铁木和荆棘怎么长。"
+    "irreplaceable_goal": "游侠要和你联手，在天亮前改写巡察报告，替人类科考队洗清罪名。",
+    "limit_gap": "游侠的话长老会未必信，你的报告一改，就要担徇私的嫌疑。",
+    "meeting_reason": "{elf_ranger_seranie.name}把你带到树芯木台，指着主根上残留的铁器割痕。",
+    "resource_gap": "游侠熟悉每一条根道，你握着盟约延期附议卷宗和根道出入的核查权。"
    },
    "tags": [
-    "workplace",
-    "crime"
+    "intimate",
+    "workplace"
    ],
    "tension_engine_ids": [
-    "te_bone_pin_jammed",
-    "te_thorns_close_in"
+    "te_root_scar_frame",
+    "te_pact_expiry"
    ]
   },
   {
-   "chemistry": "大长老在外面等着消息，游侠和植物学者一个压刀柄一个挡荆棘，谁也不肯在长老面前先喊难受。",
-   "id": "cc_ranger_botanist_elder",
-   "identity_ids": [],
+   "chemistry": "你是奉命裁定续约的大长老，{elf_ranger_seranie.name}是林城最年轻的游侠；半月前那次独处之后，两人在人前再没对视过。",
+   "id": "cc_envoy_and_ranger_pardon",
+   "identity_ids": [
+    "pi_elder_envoy"
+   ],
    "player_positions": [
     "high"
    ],
@@ -261,69 +205,43 @@
      },
      "b": "elf_ranger_seranie",
      "b_to_a": {
-      "tension": 3,
-      "trust": 3
+      "tension": 4,
+      "trust": 4
      },
-     "reason": "头一回在大长老面前把命交给一个人类。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "paleobotanist",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "奉命来看人类的勘察，早听说这个游侠和那个学者。",
-     "stage": "familiar"
-    },
-    {
-     "a": "elf_ranger_seranie",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "paleobotanist",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "在大长老面前不敢多看一眼，可每一声数数都只说给一个人听。",
-     "stage": "testing"
+     "reason": "半月前结实祭典夜，两人在树芯木台独处时相拥深吻，游侠向你吐露了对林城闭关自守的忧虑。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "elf_ranger_seranie",
-    "paleobotanist"
+    "elf_ranger_seranie"
    ],
    "stakes": {
-    "irreplaceable_goal": "让大长老亲眼看见，精灵和人类能一起把命捡回来。",
-    "limit_gap": "游侠不肯在大长老面前失了游侠的体面，植物学者不习惯被大人物盯着干活。",
-    "meeting_reason": "大长老要亲眼看看人类学者在根系里做什么，游侠带路，植物学者在旁边讲根系。",
-    "resource_gap": "游侠手里有猎刀和长弓，植物学者手里有图册和苔藓灯。"
+    "irreplaceable_goal": "游侠请你为人类科考队、也为自己主持公道。",
+    "limit_gap": "你当众偏袒游侠，保守派就会说大长老徇私；游侠也不肯开口求你。",
+    "meeting_reason": "守卫队长联名要撤去{elf_ranger_seranie.name}的向导职务，游侠在树屋里单膝向你呈上实测图谱。",
+    "resource_gap": "你握着林城最高的赦免叶印和边界通商终审权，游侠手里只有一份实测图谱。"
    },
    "tags": [
-    "workplace",
-    "disaster"
+    "intimate",
+    "workplace"
    ],
    "tension_engine_ids": [
-    "te_thorns_close_in",
-    "te_bone_pin_jammed"
+    "te_pact_expiry",
+    "te_ranger_stay_or_go"
    ]
   },
   {
-   "chemistry": "游侠一边别刀背一边轻声教新来的脚夫怎么躲刺，植物学者挡着荆棘，把三个人的力气拧成一股。",
-   "id": "cc_ranger_botanist_porter",
-   "identity_ids": [],
+   "chemistry": "你是持木契进城的草药商，和{elf_ranger_seranie.name}互不统属；前夜吊桥上那一握之后，游侠的树屋就为你留了门。",
+   "id": "cc_ranger_and_trader_canopy",
+   "identity_ids": [
+    "pi_herb_trader"
+   ],
    "player_positions": [
     "low",
-    "equal"
+    "equal",
+    "high"
    ],
-   "power_structure": "npc_high",
+   "power_structure": "switchable",
    "relations": [
     {
      "a": "player",
@@ -333,12 +251,85 @@
      },
      "b": "elf_ranger_seranie",
      "b_to_a": {
-      "tension": 3,
+      "tension": 4,
       "trust": 3
      },
-     "reason": "游侠嫌脚夫毛躁，今晚却要把命交到这双手上。",
-     "stage": "testing"
-    },
+     "reason": "前夜集市收摊后游侠护送你过夜雾吊桥，借着拂去你肩头落花握住你的手，默许你每晚去树屋歇脚。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "elf_ranger_seranie"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "游侠低声问，你的马车明天出城时，能不能多留一个没登记名字的座位。",
+    "limit_gap": "多带一个没登记的人出城，你的木契就保不住；游侠一走，巡林队就少了领路的人。",
+    "meeting_reason": "{elf_ranger_seranie.name}在根系风道回廊拦住正要装车的你。",
+    "resource_gap": "你有明天出城的商队马车席位和一笔现银，游侠有一条走不开的根道。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_ranger_stay_or_go",
+    "te_pact_expiry"
+   ]
+  },
+  {
+   "chemistry": "{canopy_healer.name}在林城里只对你借过古方；今晚集市角落里，医者手里那瓶伤流液比药香更让人心慌。",
+   "id": "cc_healer_and_trader_remedy",
+   "identity_ids": [
+    "pi_herb_trader"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "canopy_healer",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "上月在药草工坊熬凝露膏那晚，两人在满室药香里相拥亲吻，医者把不外传的古方手札借你抄了一份。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "canopy_healer"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "医者请你比对，黑市上最近流传的私采灵液是不是同一批。",
+    "limit_gap": "医者离不开工坊去黑市查货，你一个外来商人去打听，容易惹祸上身。",
+    "meeting_reason": "{canopy_healer.name}在树冠集市角落递给你一瓶刚收集的树芯伤流液样本。",
+    "resource_gap": "医者有化验的手艺和古方手札，你熟悉集市黑市上灵液的来路。"
+   },
+   "tags": [
+    "intimate",
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_root_scar_frame",
+    "te_living_branch"
+   ]
+  },
+  {
+   "chemistry": "{paleobotanist.name}是你在长老会藏书阁里最投契的人类；今晚在风道回廊，这位学者头一回急得抓住了你的手腕。",
+   "id": "cc_botanist_and_scribe_graft",
+   "identity_ids": [
+    "pi_council_scribe"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
     {
      "a": "player",
      "a_to_b": {
@@ -348,23 +339,167 @@
      "b": "paleobotanist",
      "b_to_a": {
       "tension": 2,
+      "trust": 4
+     },
+     "reason": "入城第一周两人在长老会藏书阁通宵核对古精灵语植物名录，天亮时并肩在露台看林海日出。",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
+    "paleobotanist"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "学者求你别让守卫队封了根道，好证明人类无辜。",
+    "limit_gap": "学者没有你的批准下不了根道，你放人下去，要在盟约纪要上签自己的名字。",
+    "meeting_reason": "{paleobotanist.name}在根系风道回廊拉住你，坦言只差最后一组树芯气根数据。",
+    "resource_gap": "学者握着根系共生图谱和最后一组数据的门路，你握着根道出入的核查权。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_root_scar_frame",
+    "te_living_branch"
+   ]
+  },
+  {
+   "chemistry": "{honey_keeper.name}对谁都聊三句家常，对你却多了一层试探；品蜜宴后那一勾，你到现在还记得。",
+   "id": "cc_envoy_and_honey_ledger",
+   "identity_ids": [
+    "pi_elder_envoy"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
       "trust": 3
      },
-     "reason": "第一次下根道就遇上了魔兽暴动。",
-     "stage": "familiar"
+     "b": "honey_keeper",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "上周品蜜宴后主理人单独留你在花廊尝陈年灵蜜，递杯时指尖勾过你掌心，笑问大长老偏爱甜蜜还是酿蜜的人。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "honey_keeper"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "主理人暗示，只要你批下明年的一等通商木契，就指认真正的盗采者。",
+    "limit_gap": "你批了木契，就像拿公器换证词；主理人交了账，自己也要受罚。",
+    "meeting_reason": "{honey_keeper.name}在集市雅间把一本私账翻开一角。",
+    "resource_gap": "你握着下季通商木契的终审权，主理人握着一本灵液出货的私账。"
+   },
+   "tags": [
+    "workplace",
+    "crime"
+   ],
+   "tension_engine_ids": [
+    "te_root_scar_frame",
+    "te_pact_expiry"
+   ]
+  },
+  {
+   "chemistry": "{old_ranger_mentor.name}从没给过你好脸色，却回回派你跟游侠走最远的根道；今晚哨所外，老人终于把话挑明了。",
+   "id": "cc_mentor_and_porter_patrol",
+   "identity_ids": [
+    "pi_root_porter"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "old_ranger_mentor",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 1
+     },
+     "reason": "前日巡检根道绳桥时，老巡林长见游侠把私人水囊递给你，故意放慢脚步考校你的辨路眼力，试探你有几分真心。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "old_ranger_mentor"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "老巡林长沉声问，你今晚下树芯是为了取科考样本，还是为了带游侠私奔。",
+    "limit_gap": "老巡林长不能明着放人，你在巡林长面前也没有说谎的余地。",
+    "meeting_reason": "{old_ranger_mentor.name}在根道守卫哨所外拦住你，把盖着巡林长印章的夜间通行木牌按在桌上。",
+    "resource_gap": "老巡林长握着夜间通行木牌和根道封禁的裁定权，你手里只有一副背架和一张实测草图。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_ranger_stay_or_go",
+    "te_pact_expiry"
+   ]
+  },
+  {
+   "chemistry": "{elf_ranger_seranie.name}和{paleobotanist.name}，一个在树屋壁炉旁吻过你，一个在木台上邀你同回王都；今晚两人隔着一段活体气根僵持，都看着你。",
+   "id": "cc_seranie_botanist_root_truth",
+   "identity_ids": [
+    "pi_root_porter"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "elf_ranger_seranie",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "三天前夜巡归来，两人在树屋壁炉旁相拥热吻，游侠自己把树屋暗格的木匙交给了你。",
+     "stage": "intimate"
     },
     {
-     "a": "elf_ranger_seranie",
+     "a": "player",
      "a_to_b": {
       "tension": 3,
       "trust": 3
      },
      "b": "paleobotanist",
      "b_to_a": {
-      "tension": 3,
+      "tension": 4,
       "trust": 3
      },
-     "reason": "游侠和植物学者一个眼神就知道对方要干什么，脚夫都看在眼里。",
+     "reason": "前夜在木台整理标本时，学者借着替你披外袍握住你的肩，低声邀你结实季后同回王都学院任职。",
+     "stage": "flirting"
+    },
+    {
+     "a": "elf_ranger_seranie",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 1
+     },
+     "b": "paleobotanist",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 2
+     },
+     "reason": "游侠撞见学者私藏灵根，学者怕这件事写进巡林日志。",
      "stage": "testing"
     }
    ],
@@ -373,121 +508,194 @@
     "paleobotanist"
    ],
    "stakes": {
-    "irreplaceable_goal": "带着脚夫一起平安出去，明天照常勘察。",
-    "limit_gap": "新来的脚夫什么都不懂，游侠得一边自救一边教。",
-    "meeting_reason": "脚夫第一次跟着下根道，植物学者正在讲世界树的根怎么长。",
-    "resource_gap": "游侠有猎刀和巡林的经验，植物学者有图册和那件帆布外套。"
+    "irreplaceable_goal": "游侠指出此刻剪气根正好坐实栽赃人类的罪名，两人争执不下，等你开口。",
+    "limit_gap": "游侠不能放人盗采，学者不甘空手而归，你谁也不想辜负。",
+    "meeting_reason": "树芯木台上，{paleobotanist.name}要趁封道前剪下一段活体气根，{elf_ranger_seranie.name}按住弓弦拦着。",
+    "resource_gap": "游侠握着巡林日志和弓，学者握着标本匣和最后的立项机会，你手里提着采样工具箱。"
    },
    "tags": [
-    "workplace",
+    "intimate",
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_living_branch",
+    "te_root_scar_frame"
+   ]
+  },
+  {
+   "chemistry": "{root_warden_captain.name}和{honey_keeper.name}曾经一个管道一个运货，如今在哨所里针锋相对；一个扣过你的木牌，一个吻过你，都等你开口。",
+   "id": "cc_warden_honey_smuggle_check",
+   "identity_ids": [
+    "pi_herb_trader",
+    "pi_elder_envoy"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "honey_keeper",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "五天前集市收摊后两人在花蜜库房内间拥吻温存，主理人把边境商队的暗语教给了你。",
+     "stage": "intimate"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 1
+     },
+     "b": "root_warden_captain",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 1
+     },
+     "reason": "昨晚哨所查验木牌时，队长故意扣了你半刻，话里话外试探你的马车有没有夹带树芯产物。",
+     "stage": "testing"
+    },
+    {
+     "a": "honey_keeper",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 0
+     },
+     "b": "root_warden_captain",
+     "b_to_a": {
+      "tension": 4,
+      "trust": -1
+     },
+     "reason": "主理人替队长往城外代运过灵液，私账上记着每一笔。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "root_warden_captain",
+    "honey_keeper"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "主理人倚着柜台冷笑，说车里装的可是队长托运的货；两人等你定夺怎么验货。",
+    "limit_gap": "队长不敢让人细查车里的货，主理人不敢先翻私账，你一开口就要得罪一边。",
+    "meeting_reason": "{root_warden_captain.name}以防范根脉失窃为名，要扣下{honey_keeper.name}明早出城的整队花蜜马车。",
+    "resource_gap": "队长握着扣车封道的权力，主理人握着私账，你有出城的木契或终审的叶印。"
+   },
+   "tags": [
+    "crime",
     "intimate"
    ],
    "tension_engine_ids": [
-    "te_air_running_thin",
-    "te_bone_pin_jammed"
+    "te_root_scar_frame",
+    "te_pact_expiry"
    ]
   }
  ],
  "channels": [
   {
    "fidelity": "exact",
-   "id": "ch_hollow_whisper",
-   "reach": "all",
-   "text": "树芯里贴着耳朵的低语和越来越浅的呼吸"
+   "id": "ch_council_proclamation",
+   "reach": "钉在议事厅和集市入口，一字不差",
+   "text": "长老会的叶印公告"
+  },
+  {
+   "fidelity": "exact",
+   "id": "ch_speaking_tube",
+   "reach": "从树芯直通上层哨所，原话照传",
+   "text": "根系风道里的传声木管"
   },
   {
    "fidelity": "distorted",
-   "id": "ch_ranger_horn",
-   "reach": "local",
-   "text": "巡林游侠的号角声，隔着厚厚的树根一阵阵传下来"
+   "id": "ch_market_gossip",
+   "reach": "一个傍晚传遍林城，越传越离谱",
+   "text": "树冠集市的闲话"
   }
  ],
  "character_templates": [
   {
-   "adult_context": "林城里最年轻的巡林队长，守了世界树的根道多年，这一季奉命给人类学者当向导，去留进退由本人拿主意。",
+   "adult_context": "年满二十四岁的林城巡林游侠，守了世界树根道多年，这一季奉命给人类科考队当向导。",
    "age_range": [
     24,
-    30
+    28
    ],
    "appearance_options": [
-    "一头如月光般纯净的银色直长发垂落腰际，尖翘精灵耳微动，身着贴身墨绿皮革巡林轻甲，将青年女性修长矫健、饱满紧致的身段勾勒得淋漓尽致，白玉般的清冷面颊线条秀致，淡金眼眸如寒潭般清澈，圣洁出尘中透着动人的生机反差。",
-    "银发微散紧贴在发白的面颊两侧，红唇因缺氧而微微发白，双手紧握沉重锋利的秘银短猎刀，毫无保留地靠入同伴怀中借力避刺，清冷孤傲中流露出将生命相托的纯真信赖。"
+    "月光般的银色直发垂到腰际，尖耳微动，一身贴身墨绿皮革轻甲，身段修长矫健，淡金眼眸清冷如寒潭。",
+    "背着长弓走在根道最前头，衣领内侧别着一枚叶纹银扣。"
    ],
    "decision": {
     "avoids": [
-     "乱砍树木的人",
      "看不起精灵的人"
     ],
-    "contrast": "在林城里清冷得像月光，跟谁都隔着三步；可困在树芯里时，却是游侠第一个把猎刀递过去，让一个人类握住自己的手。",
+    "contrast": "人前清冷得像月光，跟谁都隔着三步；被夸一句，尖耳朵就红透。",
     "core_value": "林子不说话，可林子什么都记得。",
     "goal_options": [
-     "把猎刀背脊锯齿卡进木楔，撬断死卡骨销",
-     "撬开半尺缝隙，和植物学者一起出去"
+     "在驱逐令落下之前查清主根割痕的真凶",
+     "等那个人亲口说一句，留下还是一起走"
     ],
     "never": [
      "丢下同伴自己逃"
     ],
     "prefers": [
-     "敬畏森林、说到做到的人",
-     "肯蹲下来看一株草的人"
+     "敬畏森林、说到做到的人"
     ],
     "pressure_responses": {
-     "breaking": "喘不上气也不松手，轻声数着呼吸往下压。",
-     "high": "割断被荆棘勾住的发梢，把全身重量压在刀柄上。",
-     "low": "先伏低身子收拢长发，摸清荆棘往哪边收。",
-     "mid": "把猎刀横过来，指给对方看木楔的死角。"
+     "breaking": "解下巡林徽章放进对方手心：去留你替我定。",
+     "high": "按住弓弦挡在人前，声音冷得像根道里的风。",
+     "low": "抱着弓站在三步外，只说根道上的事。",
+     "mid": "把实测图谱摊开，指着割痕问一句：你信不信我。"
     },
-    "relationship_stance": "人类学者在林城住的这一季，游侠每天带路，话说得不多，可哪天对方没来集市，傍晚总要绕到客居的树屋底下看一眼。",
-    "withdrawal": "脱险后头一件事是吹响号角报平安，确认外面的游侠都没事，才肯靠着树根坐下，大口吸外面的风。"
+    "relationship_stance": "话说得少，认定了谁就是一辈子。",
+    "withdrawal": "一个人坐到树屋露台的木栏边，听林涛听到天亮。"
    },
    "gender": "female",
-   "gender_reason": "精灵巡林游侠，按原稿写作女性。",
+   "gender_reason": "标题写明是精灵女游侠，按原稿固定为女性。",
    "id": "elf_ranger_seranie",
    "identity": {
-    "authority": "世界树的根道里哪条能走、哪条不能碰，游侠一句话就能定。",
-    "exposure": "喘不上气，皮甲贴在身上，只能整个人靠进对方怀里躲开毒刺。",
-    "hidden": "树屋窗台那排草药里，有一株是从人类学者的标本夹里偷偷移栽的，游侠谁也没说。",
+    "authority": "握着下层隐秘根道的引路权、巡林日志的签报权和活体枝条的采摘许可。",
+    "exposure": "树屋里备好了两份越界干粮，被巡林队知道，就是叛逃的嫌疑。",
+    "hidden": "这一季朝夕相处，早对你动了真心，犹豫盟约期满后要不要摘下巡林徽章，随你越过边界。",
     "limits": [
-     "缺氧时手脚发软",
-     "长发容易被荆棘勾住"
+     "没有长老会的准许，巡林游侠不能擅离林城"
     ],
     "obligations": [
-     "守住世界树的根道",
-     "把带进去的人平平安安带出来"
+     "把带进根道的人平平安安带出来"
     ],
     "resources": [
-     "一把淬火秘银短猎刀，刀背厚一点五公分带反向直角锯齿",
-     "一张长弓",
-     "巡林队上下的信任"
+     "一把淬火秘银短猎刀和一张长弓",
+     "一枚带着体温的叶纹银扣"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "树芯里把自己护在怀里、后背去挡荆棘的那个人",
-     "每天蹲在树根边画标本的那道背影"
+     "每天蹲在树根边画标本的那道背影",
+     "肯在根道上把后背交给自己的人"
     ],
     "boundaries": [
-     "人前守着巡林游侠的清冷，心意只给认定的人",
-     "每一步都要先问过，对方迟疑就停"
+     "说暗号就停"
     ],
     "desire_range": [
      2,
      4
     ],
-    "desired_position": "圆窗边靠在对方肩上听风的近身位",
+    "desired_position": "树屋露台上并肩听风的近身位",
     "dislikes": [
-     "被人当众议论",
-     "趁人之危的手"
+     "被人当众议论"
     ],
-    "expression": "把那株偷偷移栽的草药指给对方看，耳尖红透了，轻声说：精灵不说喜欢……只说，你愿不愿意留下来过夜。",
+    "expression": "把带着体温的叶纹银扣别在你内衬上，耳尖红透，只说是巡林队的护身符。",
     "likes": [
-     "被人用温水洗去发间的木屑",
-     "被人握着手，教人类的字",
-     "夜里在树屋里被人从身后抱着听风"
+     "夜里在树屋被人从身后抱着听风"
     ],
     "preconditions": [
-     "闸门撬开、两人都脱险之后",
-     "两人都清醒，心意出于自己，不是树芯里的依赖"
+     "两人清醒，心意出于自己",
+     "把去留说开以后"
     ],
     "self_control_range": [
      3,
@@ -497,462 +705,483 @@
    "public_role": "精灵林城巡林游侠",
    "schedule": [
     {
+     "from": 0,
+     "location_id": "loc_ranger_treehouse",
+     "to": 420
+    },
+    {
      "from": 420,
      "location_id": "loc_elven_canopy_market",
      "to": 1020
     },
     {
-     "from": 1080,
+     "from": 1020,
+     "location_id": "loc_heartwood_hollow_ledge",
+     "to": 1200
+    },
+    {
+     "from": 1200,
      "location_id": "loc_ranger_treehouse",
-     "to": 1380
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "刀背锯齿可能崩掉，手会被木楔震伤",
-      "option": "把猎刀背脊卡进木楔，和植物学者合力撬断骨销"
+      "cost": "错过天亮前出城的最后机会。",
+      "option": "陪人下树芯查清枯萎的真相"
      },
      {
-      "cost": "空气撑不到那时候",
-      "option": "缩在木台角落等外面的游侠挖进来"
+      "cost": "从此背上擅离林城的罪名，再也回不了根道。",
+      "option": "天亮前走林间秘道出城"
      }
     ],
-    "pressure": "空气越来越稀，荆棘越收越紧，必须撬开闸门引进外面的风。",
-    "trigger": "防御机关触发时，游侠正带着植物学者在树芯空洞里采根系的样本，铁木门在身后轰地落下。"
+    "pressure": "查清割痕就得留下，跟人走就得丢下巡林游侠的名分。",
+    "trigger": "盟约今夜期满，驱逐的号角天亮就要吹响，树屋里的双人行囊已经收好。"
    },
    "tags": [
     "workplace",
-    "disaster",
     "intimate"
    ],
    "voices": {
-    "inner": "喘不上气……背后这个人类的心跳倒还稳。守了这么多年根道，原来被人护着，是这种感觉。",
-    "surface": "别乱动，荆棘在你后面。把刀背卡进去——你压着我的手，我数到三。"
+    "inner": "盟约一过，你就要走了。你要是开口，我就跟你走。",
+    "surface": "根道我带你下去。别碰主根，跟紧我。"
    }
   },
   {
-   "adult_context": "三百岁的老精灵，带出了林城一半的游侠，游侠的弓就是这双手教的。",
+   "adult_context": "三百岁的老精灵，外貌年满六十二岁，林城巡林队的老巡林长，游侠的弓就是这双手教的。",
    "age_range": [
-    60,
-    80
+    62,
+    75
    ],
    "appearance_options": [
-    "一身褪色的墨绿斗篷，银发里夹着几缕灰，脸上的皱纹像老树皮，背上一张旧长弓。",
-    "坐在集市边的树根上，一边削箭杆一边看来往的人。"
+    "褪色的墨绿斗篷，银发里夹着几缕灰，脸上的皱纹像老树皮，背上一张旧长弓。",
+    "坐在哨所台阶上削箭杆，眼睛却一直盯着下根道的人。"
    ],
    "decision": {
     "avoids": [
-     "林城的老巡林长最烦临阵推诿"
+     "临阵推诿的人"
     ],
-    "contrast": "在长老会面前一句软话不说，私下却会给年轻游侠们留一罐花蜜。",
+    "contrast": "在长老会面前一句软话不说，私下给年轻游侠留一罐花蜜。",
     "core_value": "林子会记住每一个守过林子的人。",
     "goal_options": [
-     "先把人救出来",
-     "林城的老巡林长再追究是谁的错"
+     "弄清你对游侠到底有几分真心",
+     "在保守派面前替游侠留一条退路"
     ],
     "never": [
-     "林城的老巡林长不会丢下困在里面的人"
-    ],
-    "prefers": [
-     "林城的老巡林长看重说到做到的人"
-    ],
-    "pressure_responses": {
-     "breaking": "林城的老巡林长嗓子喊哑了也不肯走",
-     "high": "林城的老巡林长顶着危险往里递东西",
-     "low": "林城的老巡林长先稳住身边的人",
-     "mid": "林城的老巡林长四处找能用的工具"
-    },
-    "relationship_stance": "早看出游侠和那个人类之间有事，每回都故意派两人一起去最远的根道。",
-    "withdrawal": "事情过去后，林城的老巡林长一个人躲开抽根烟"
-   },
-   "gender": "male",
-   "gender_reason": "按设定是带出半座林城游侠的老巡林长；精灵寿命长，这里按人类外貌年龄填写。",
-   "id": "old_ranger_mentor",
-   "identity": {
-    "authority": "巡林队谁守哪条根道，老巡林长说了算。",
-    "exposure": "林城的老巡林长忙起来顾不上衣着体面",
-    "hidden": "做林城的老巡林长这些年，有件事没对旁人说过",
-    "limits": [
-     "林城的老巡林长不在死角里，只能在外面使劲"
-    ],
-    "obligations": [
-     "守住林城的老巡林长手上的那一摊事"
-    ],
-    "resources": [
-     "一张标满根道的老地图",
-     "林城的老巡林长随身的一盏提灯"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "林城的老巡林长欣赏做事干脆利落的人",
-     "林城的老巡林长记得危急时回头搭把手的人"
-    ],
-    "boundaries": [
-     "对方迟疑，林城的老巡林长就停"
-    ],
-    "desire_range": [
-     1,
-     3
-    ],
-    "desired_position": "和林城的老巡林长并肩站着",
-    "dislikes": [
-     "林城的老巡林长讨厌轻浮的手"
-    ],
-    "expression": "林城的老巡林长话不多，递东西时指尖会多停一下",
-    "likes": [
-     "林城的老巡林长收工后的一杯热饮"
-    ],
-    "preconditions": [
-     "林城的老巡林长要等危局过去、双方清醒自愿"
-    ],
-    "self_control_range": [
-     3,
-     5
-    ]
-   },
-   "public_role": "林城的老巡林长",
-   "schedule": [
-    {
-     "from": 420,
-     "location_id": "loc_elven_canopy_market",
-     "to": 1260
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "林城的老巡林长未必赶得上",
-      "option": "林城的老巡林长在外面调度接应"
-     },
-     {
-      "cost": "可能把林城的老巡林长自己也搭进去",
-      "option": "林城的老巡林长硬闯进去"
-     }
-    ],
-    "pressure": "里面的人出不来，林城的老巡林长进不去",
-    "trigger": "警报传到林城的老巡林长那里"
-   },
-   "tags": [
-    "workplace"
-   ],
-   "voices": {
-    "inner": "三百年了……今晚要是让这孩子折在树底下，老头子没脸再拉弓。",
-    "surface": "孩子！听得见号角就往号角那边别！外面的人在挖了！"
-   }
-  },
-  {
-   "adult_context": "四十岁模样，管着林城所有的草药和伤员，荆棘毒刺的解药只有这里有。",
-   "age_range": [
-    36,
-    48
-   ],
-   "appearance_options": [
-    "一身浅绿的医者长袍，银发编成一条长辫垂在胸前，腰间挂着一串小药瓶。",
-    "站在集市尽头的医馆门口，一边捣药一边看天色。"
-   ],
-   "decision": {
-    "avoids": [
-     "林城的女医者最烦临阵推诿"
-    ],
-    "contrast": "在长老面前温和得像一汪泉水，对不听话的伤员却凶得很。",
-    "core_value": "活着出来，什么伤都能治。",
-    "goal_options": [
-     "先把人救出来",
-     "林城的女医者再追究是谁的错"
-    ],
-    "never": [
-     "林城的女医者不会丢下困在里面的人"
-    ],
-    "prefers": [
-     "林城的女医者看重说到做到的人"
-    ],
-    "pressure_responses": {
-     "breaking": "林城的女医者嗓子喊哑了也不肯走",
-     "high": "林城的女医者顶着危险往里递东西",
-     "low": "林城的女医者先稳住身边的人",
-     "mid": "林城的女医者四处找能用的工具"
-    },
-    "relationship_stance": "跟游侠是多年的朋友，私下里总问那个人类学者到底怎么样。",
-    "withdrawal": "事情过去后，林城的女医者一个人躲开抽根烟"
-   },
-   "gender": "female",
-   "gender_reason": "按设定是林城的女医者；年龄按精灵的外貌折算。",
-   "id": "canopy_healer",
-   "identity": {
-    "authority": "林城里谁受了伤、用什么药，女医者说了算。",
-    "exposure": "林城的女医者忙起来顾不上衣着体面",
-    "hidden": "做林城的女医者这些年，有件事没对旁人说过",
-    "limits": [
-     "林城的女医者不在死角里，只能在外面使劲"
-    ],
-    "obligations": [
-     "守住林城的女医者手上的那一摊事"
-    ],
-    "resources": [
-     "一屋子草药和解毒剂",
-     "林城的女医者随身的一盏提灯"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "林城的女医者欣赏做事干脆利落的人",
-     "林城的女医者记得危急时回头搭把手的人"
-    ],
-    "boundaries": [
-     "对方迟疑，林城的女医者就停"
-    ],
-    "desire_range": [
-     1,
-     3
-    ],
-    "desired_position": "和林城的女医者并肩站着",
-    "dislikes": [
-     "林城的女医者讨厌轻浮的手"
-    ],
-    "expression": "林城的女医者话不多，递东西时指尖会多停一下",
-    "likes": [
-     "林城的女医者收工后的一杯热饮"
-    ],
-    "preconditions": [
-     "林城的女医者要等危局过去、双方清醒自愿"
-    ],
-    "self_control_range": [
-     3,
-     5
-    ]
-   },
-   "public_role": "林城的女医者",
-   "schedule": [
-    {
-     "from": 420,
-     "location_id": "loc_elven_canopy_market",
-     "to": 1260
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "林城的女医者未必赶得上",
-      "option": "林城的女医者在外面调度接应"
-     },
-     {
-      "cost": "可能把林城的女医者自己也搭进去",
-      "option": "林城的女医者硬闯进去"
-     }
-    ],
-    "pressure": "里面的人出不来，林城的女医者进不去",
-    "trigger": "警报传到林城的女医者那里"
-   },
-   "tags": [
-    "workplace"
-   ],
-   "voices": {
-    "inner": "这丫头……嘴上说只是向导，心里早就……今晚可千万要出来。",
-    "surface": "解毒的药我备好了！被刺到也别怕，出来就能治！"
-   }
-  },
-  {
-   "adult_context": "二十八岁，在人类王国的大学里研究古植物十年，是第一个被允许进世界树根系的人类，去留进退由本人拿主意。",
-   "age_range": [
-    26,
-    33
-   ],
-   "appearance_options": [
-    "一身沾满泥土的帆布外套，袖口卷到手肘，腰上挂着一只装满标本瓶和放大镜的皮囊，背上一只标本夹。",
-    "帆布外套被荆棘划破了几道口子，后背顶着坚硬的树壁，替游侠挡开垂下来的带刺藤蔓。"
-   ],
-   "decision": {
-    "avoids": [
-     "乱砍树木的人"
-    ],
-    "contrast": "在大学里能把一株苔藓讲一下午，被游侠看一眼，就忘了自己要说什么。",
-    "core_value": "每一株植物都知道风从哪里来。",
-    "goal_options": [
-     "用后背顶住树壁，替游侠挡住荆棘",
-     "把全身重量压在刀柄上"
-    ],
-    "never": [
-     "让游侠一个人留在树芯里"
+     "拿古训压一个真心想走的孩子"
     ],
     "prefers": [
      "说到做到的人"
     ],
     "pressure_responses": {
-     "breaking": "喘不上气也不松，跟着游侠的数数压到最后一下。",
-     "high": "后背顶着树壁，双手压在游侠的手上，和游侠一起压。",
-     "low": "一把将游侠拉到木台最里面的角落，自己背对着荆棘。",
-     "mid": "摸着树根的纹理，报出木楔的受力方向。"
+     "breaking": "解下自己的长弓：这个，替我交给那孩子。",
+     "high": "当众斥责游侠，转身把质询函塞进火盆。",
+     "low": "背着手站在台阶上，一句话不说地看人。",
+     "mid": "把通行木牌按在桌上，问你下根道图什么。"
     },
-    "relationship_stance": "每天跟着游侠走根道，画着画着，图册里画的就不只是植物了。",
-    "withdrawal": "确认闸门撬开、外面的游侠都没事，才靠在树根上，大口大口地吸着外面的风。"
+    "relationship_stance": "对人类始终存着戒心，看人却只看做的事。",
+    "withdrawal": "回哨所关上门，一个人擦那张旧长弓。"
    },
    "gender": "male",
-   "gender_reason": "来研究世界树的人类古植物学者，按原稿写作男性。",
-   "id": "paleobotanist",
+   "gender_reason": "带出半座林城游侠的老巡林长，按原稿固定为男性。",
+   "id": "old_ranger_mentor",
    "identity": {
-    "authority": "世界树的根系怎么长、哪里能动，植物学者心里有数。",
-    "exposure": "帆布外套挡在游侠背后，汗湿的衬衫贴着游侠的皮甲，两人在树芯里贴得严丝合缝。",
-    "hidden": "标本图册的最后一页夹着一片银色的叶子，是游侠第一天带路时随手递过来的，一直没舍得扔。",
+    "authority": "握着巡林队的换防调令、根道封禁的裁定权和呈给长老会的结实季巡林总报。",
+    "exposure": "替游侠压下了两封保守派长老的质询函，一旦被翻出来就是包庇。",
+    "hidden": "早看出游侠对你动了私情，嘴上斥责，心里盼着那孩子能过上自己当年没敢过的日子。",
     "limits": [
-     "缺氧时头晕眼花",
-     "标本夹被闸门压碎了"
+     "压得住巡林队，压不住长老会的保守派"
     ],
     "obligations": [
-     "护住游侠不被荆棘刺到",
-     "撬开闸门，两人一起出去"
+     "守住林城的古训"
     ],
     "resources": [
-     "一件厚帆布外套",
-     "一本根系标本图册",
-     "一盏苔藓灯"
+     "一张标满根道的老地图",
+     "盖着巡林长印章的夜间通行木牌"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "游侠在缺氧时还能数得那么稳的那份冷静",
-     "游侠被夸了一句就红透的耳尖"
+     "敢在老人面前把真话说完的人",
+     "肯陪老人巡一趟最远根道的人"
     ],
     "boundaries": [
-     "游侠没开口就不越一步",
-     "人前不让游侠难做"
+     "不拿长辈的照顾换什么"
+    ],
+    "desire_range": [
+     1,
+     2
+    ],
+    "desired_position": "哨所台阶上隔着一盏提灯对坐",
+    "dislikes": [
+     "油嘴滑舌的承诺"
+    ],
+    "expression": "把老地图上一条没标名字的小径指给你看，什么也不解释。",
+    "likes": [
+     "收队后一杯热花蜜水"
+    ],
+    "preconditions": [
+     "双方清醒，心甘情愿"
+    ],
+    "self_control_range": [
+     4,
+     5
+    ]
+   },
+   "public_role": "林城老巡林长",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_root_warden_outpost",
+     "to": 480
+    },
+    {
+     "from": 480,
+     "location_id": "loc_elven_canopy_market",
+     "to": 1080
+    },
+    {
+     "from": 1080,
+     "location_id": "loc_root_warden_outpost",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "保守派会把矛头转到老巡林长身上。",
+      "option": "把质询函压下，自己去长老会顶着"
+     },
+     {
+      "cost": "游侠的向导职务今晚就保不住。",
+      "option": "照章上报，让游侠自己去辩"
+     }
+    ],
+    "pressure": "保游侠就得担包庇的名声，不保就眼看那孩子被撤职。",
+    "trigger": "保守派长老联名质询游侠擅带人类进树芯，质询函送到了巡林长案头。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "voices": {
+    "inner": "那孩子的心思瞒不过我。你要是敢辜负，老头子这张弓还拉得开。",
+    "surface": "下根道可以，先回答我一个问题。"
+   }
+  },
+  {
+   "adult_context": "外貌年满三十六岁的精灵医者，管着林城的草药工坊和伤病人员。",
+   "age_range": [
+    36,
+    45
+   ],
+   "appearance_options": [
+    "浅绿医者长袍，银发编成一条长辫垂在胸前，腰间挂着一串小药瓶。",
+    "袖口挽起，手背上沾着凝露膏的清香，看人时目光温和得像山泉。"
+   ],
+   "decision": {
+    "avoids": [
+     "糟蹋草药的人"
+    ],
+    "contrast": "在长老面前温和如泉，对不听话的伤员凶得很。",
+    "core_value": "树会疼，只是不会喊。",
+    "goal_options": [
+     "找到铁证，在驱逐令前直谏长老会",
+     "把古方托付给一个信得过的人"
+    ],
+    "never": [
+     "拿病人的命做交易"
+    ],
+    "prefers": [
+     "肯为病人熬夜的人"
+    ],
+    "pressure_responses": {
+     "breaking": "把化验记录和古方一起交出去：拿去，替树说句话。",
+     "high": "挡在病人床前，谁来都不让带走。",
+     "low": "低头捣药，像什么都没听见。",
+     "mid": "把一瓶伤流液样本推过来，请人帮忙比对。"
+    },
+    "relationship_stance": "对谁都温和，交心却很慢。",
+    "withdrawal": "回药草工坊熬一夜凝露膏，谁敲门都不应。"
+   },
+   "gender": "female",
+   "gender_reason": "按原稿是林城的女医者，固定为女性。",
+   "id": "canopy_healer",
+   "identity": {
+    "authority": "掌管草药工坊的调配、树芯灵液的药用份额和伤病人员的留城批条。",
+    "exposure": "私下取过主根的伤流液做化验，没向长老会报备。",
+    "hidden": "已经查出根脉枯萎是有人用铁器割伤了主根导管，并非人类采样所致，正苦于没有铁证直谏。",
+    "limits": [
+     "没有铁证，医者的话进不了长老会"
+    ],
+    "obligations": [
+     "救治世界树和林城的每一个伤病"
+    ],
+    "resources": [
+     "一屋子草药和本季珍藏的凝露膏",
+     "林城不外传的古方手札"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "在满室药香里陪自己熬到天亮的人",
+     "认得出十种灵草的人"
+    ],
+    "boundaries": [
+     "工坊里有病人时不越界"
+    ],
+    "desire_range": [
+     2,
+     3
+    ],
+    "desired_position": "药香里隔着一口药锅对坐",
+    "dislikes": [
+     "被人催着下结论"
+    ],
+    "expression": "把一小罐亲手熬的凝露膏塞进你手里，说是给你抄古方磨破的指头用。",
+    "likes": [
+     "熬药时有人在身后添柴"
+    ],
+    "preconditions": [
+     "两人清醒，情投意合"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "林城树冠女医者",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_elven_canopy_market",
+     "to": 1080
+    },
+    {
+     "from": 1080,
+     "location_id": "loc_heartwood_hollow_ledge",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "真凶会抢先销毁物证。",
+      "option": "把化验结果当众摊开"
+     },
+     {
+      "cost": "驱逐令可能先一步落下。",
+      "option": "先暗中比对黑市灵液"
+     }
+    ],
+    "pressure": "公开说出割痕会打草惊蛇，不说，人类科考队就要背罪名。",
+    "trigger": "主根的伤流液越来越浑，集市黑市上却流出一批来路不明的灵液。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "voices": {
+    "inner": "割痕是铁器留下的。我只差一样能摆上长老会桌子的东西。",
+    "surface": "先坐，药还得再熬一会儿。"
+   }
+  },
+  {
+   "adult_context": "年满二十七岁的人类王都学院古植物学者，第一个获准进世界树根系的人类。",
+   "age_range": [
+    27,
+    32
+   ],
+   "appearance_options": [
+    "沾满泥土的帆布外套，袖口卷到手肘，腰上挂着装满标本瓶的皮囊。",
+    "三天没出树芯，眼下发青，说起根脉来眼睛却亮得吓人。"
+   ],
+   "decision": {
+    "avoids": [
+     "乱砍树木的人"
+    ],
+    "contrast": "讲一株苔藓能讲一下午，被人看一眼就忘了要说什么。",
+    "core_value": "每一株植物都知道风从哪里来。",
+    "goal_options": [
+     "拿到最后一组树芯气根数据，证明人类无辜",
+     "把活体样本带回王都，不白来这一季"
+    ],
+    "never": [
+     "篡改数据"
+    ],
+    "prefers": [
+     "肯蹲下来看一株草的人"
+    ],
+    "pressure_responses": {
+     "breaking": "把夹层里的灵根取出来摆在桌上：是我拿的，我认。",
+     "high": "护着标本匣不放，第一次跟精灵争得脸红。",
+     "low": "埋头画图，问什么都答得心不在焉。",
+     "mid": "拉住人的袖子，一口气讲完自己的推断。"
+    },
+    "relationship_stance": "对研究执着，对人笨拙得真诚。",
+    "withdrawal": "一个人钻回树芯，对着根脉画到天亮。"
+   },
+   "gender": "male",
+   "gender_reason": "来研究世界树的人类古植物学者，按原稿固定为男性。",
+   "id": "paleobotanist",
+   "identity": {
+    "authority": "握着世界树根系共生图谱的鉴定权、科考报告的署名权和人类学界的联合保荐信。",
+    "exposure": "标本匣夹层里藏着一段未经长老会批准、私自截取的次生灵根。",
+    "hidden": "为了带一株活体气根回学院立项，私下向卖蜜的精灵打听过不走哨卡的林间小径。",
+    "limits": [
+     "人类在林城里说话，没有精灵的分量"
+    ],
+    "obligations": [
+     "把手稿完整带回王都学院"
+    ],
+    "resources": [
+     "一本根系共生图谱手稿",
+     "一只带夹层的标本匣"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "陪自己通宵核对古精灵语名录的人",
+     "看得懂图谱上每一笔的人"
+    ],
+    "boundaries": [
+     "对方没开口就不越一步"
     ],
     "desire_range": [
      2,
      4
     ],
-    "desired_position": "圆窗边让游侠靠着肩膀的近身位",
+    "desired_position": "木台上并肩翻同一本图谱",
     "dislikes": [
-     "当众起哄",
-     "背后嚼舌根"
+     "当众起哄"
     ],
-    "expression": "被游侠留下过夜时愣了很久，最后翻开图册，把那片银叶子递过去：你给的第一样东西，我一直留着。",
+    "expression": "把图谱最后一页画的那张侧脸撕下来递给你，说是画坏的。",
     "likes": [
-     "游侠难得叫一次自己的名字",
-     "被游侠拉着手爬上树屋"
+     "被人披上外袍"
     ],
     "preconditions": [
-     "闸门撬开、两人都安全清醒之后",
-     "游侠点了头，出于本心"
+     "两人清醒，出于本心"
     ],
     "self_control_range": [
      2,
      4
     ]
    },
-   "public_role": "研究世界树根系的人类古植物学者",
+   "public_role": "人类古植物学者",
    "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_elven_canopy_market",
+     "to": 420
+    },
     {
      "from": 420,
      "location_id": "loc_heartwood_hollow_ledge",
-     "to": 1020
+     "to": 1200
     },
     {
-     "from": 1080,
-     "location_id": "loc_elven_canopy_market",
-     "to": 1320
+     "from": 1200,
+     "location_id": "loc_root_wind_gallery",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "后背会被毒刺扎伤，手臂可能脱力",
-      "option": "用后背挡住荆棘，和游侠合力压下刀柄"
+      "cost": "王都学院的立项多半批不下来。",
+      "option": "放弃活体样本，只带纸面图谱回去"
      },
      {
-      "cost": "根系太密，找到之前就没气了",
-      "option": "顺着树根找别的通风口"
+      "cost": "盗采的罪名就落到整个科考队头上。",
+      "option": "趁封道前剪下气根"
      }
     ],
-    "pressure": "空气越来越稀，再不撬开闸门，两人都撑不到外面的游侠挖进来。",
-    "trigger": "防御机关触发时，植物学者正蹲在树芯空洞里采样，回头就看见铁木门落了下来。"
+    "pressure": "封道前剪下气根，正好坐实栽赃人类的罪名。",
+    "trigger": "守卫队要封闭根道，最后一组气根数据还没采完。"
    },
    "tags": [
     "workplace",
-    "disaster",
     "intimate"
    ],
    "voices": {
-    "inner": "游侠整个人靠在我怀里，喘得厉害……别分神。研究了十年世界树，今晚得找到那一条风路。",
-    "surface": "过来，荆棘我挡着！刀背卡进去，我压着你的手——你数，我跟。"
+    "inner": "手稿带不回去，这一季就白来了。可要是带回去，我还算不算个守信的人？",
+    "surface": "再给我一组数据，就一组。"
    }
   },
   {
-   "adult_context": "一百五十岁的精灵，带着一队游侠守着世界树地下的根道，魔兽从哪里钻上来都归这里管。",
+   "adult_context": "一百五十岁的精灵，外貌年满三十三岁，带着一队守卫守世界树地下根道。",
    "age_range": [
-    32,
-    45
+    33,
+    42
    ],
    "appearance_options": [
-    "一身深褐色的皮甲，腰上挂着两把弯刀，脸上有一道魔兽留下的爪痕。",
-    "站在根道入口，手里攥着一支燃着冷光的苔藓火把。"
+    "深褐皮甲，腰间一柄长剑，脸上一道旧爪痕。",
+    "站在哨所门口清点出城木牌，指节上有一道新划的细口。"
    ],
    "decision": {
     "avoids": [
-     "根道守卫队长最烦临阵推诿"
+     "多管闲事的人类"
     ],
-    "contrast": "对魔兽下手狠得很，对林城的孩子却总揣着一把松果糖。",
-    "core_value": "根道守得住，人得上得来。",
+    "contrast": "人前铁面无私，口袋里总揣着一把分给林城孩子的松果糖。",
+    "core_value": "规矩是给守得住的人立的。",
     "goal_options": [
-     "先把人救出来",
-     "根道守卫队长再追究是谁的错"
+     "在盟约期满前把罪名钉在人类身上",
+     "从花蜜主理人手里拿回那本暗账"
     ],
     "never": [
-     "根道守卫队长不会丢下困在里面的人"
+     "当众认错"
     ],
     "prefers": [
-     "根道守卫队长看重说到做到的人"
+     "守口如瓶的人"
     ],
     "pressure_responses": {
-     "breaking": "根道守卫队长嗓子喊哑了也不肯走",
-     "high": "根道守卫队长顶着危险往里递东西",
-     "low": "根道守卫队长先稳住身边的人",
-     "mid": "根道守卫队长四处找能用的工具"
+     "breaking": "把剑解下放在桌上，第一次说出族亲的名字。",
+     "high": "以防范失窃为名，当场下令扣车封道。",
+     "low": "铁面公事，按着剑柄一张张验木牌。",
+     "mid": "话里话外试探，问人马车里夹带了什么。"
     },
-    "relationship_stance": "嘴上嫌人类碍事，可游侠每回带那个学者下根道，队长都在入口守着。",
-    "withdrawal": "事情过去后，根道守卫队长一个人躲开抽根烟"
+    "relationship_stance": "对谁都戒备，只信手里的剑。",
+    "withdrawal": "一个人下到最深的根道，对着割痕站很久。"
    },
    "gender": "male",
-   "gender_reason": "按设定是守根道的游侠队长，年龄按看上去的样子填。",
+   "gender_reason": "按原稿是守根道的精灵队长，固定为男性。",
    "id": "root_warden_captain",
    "identity": {
-    "authority": "根道里谁能下、谁能上，守卫队长说了算。",
-    "exposure": "根道守卫队长忙起来顾不上衣着体面",
-    "hidden": "做根道守卫队长这些年，有件事没对旁人说过",
+    "authority": "核发根道哨所的出入牌，握着下层根道夜间落闸和扣押违规人员的权力。",
+    "exposure": "半月来的夜班名册上，只有队长一个人下过下层根道。",
+    "hidden": "为替族亲还赌债，趁夜班用铁器私割树芯主根灵液外流，还想把根脉枯萎嫁祸给人类科考队。",
     "limits": [
-     "根道守卫队长不在死角里，只能在外面使劲"
+     "暗账在别人手里，一步也错不得"
     ],
     "obligations": [
-     "守住根道守卫队长手上的那一摊事"
+     "替族亲还清边境黑市的赌债"
     ],
     "resources": [
-     "一队根道守卫",
-     "根道守卫队长随身的一盏提灯"
+     "一队只听队长号令的根道守卫",
+     "半月来的夜班出入名册"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "根道守卫队长欣赏做事干脆利落的人",
-     "根道守卫队长记得危急时回头搭把手的人"
+     "看穿自己却没当场揭穿的人",
+     "敢跟自己对视不退的人"
     ],
     "boundaries": [
-     "对方迟疑，根道守卫队长就停"
+     "不在哨所里越界"
     ],
     "desire_range": [
      1,
      3
     ],
-    "desired_position": "和根道守卫队长并肩站着",
+    "desired_position": "铁火盆两边各占一角",
     "dislikes": [
-     "根道守卫队长讨厌轻浮的手"
+     "被人追问家事"
     ],
-    "expression": "根道守卫队长话不多，递东西时指尖会多停一下",
+    "expression": "扣下你的木牌半刻，还回来时多塞了一颗松果糖。",
     "likes": [
-     "根道守卫队长收工后的一杯热饮"
+     "夜班后一碗热汤"
     ],
     "preconditions": [
-     "根道守卫队长要等危局过去、双方清醒自愿"
+     "双方清醒，没有暗账横在中间"
     ],
     "self_control_range": [
      3,
@@ -962,340 +1191,334 @@
    "public_role": "根道守卫队长",
    "schedule": [
     {
-     "from": 1080,
-     "location_id": "loc_ironwood_gate_draft_gap",
-     "to": 1439
+     "from": 0,
+     "location_id": "loc_root_warden_outpost",
+     "to": 420
     },
     {
-     "from": 0,
-     "location_id": "loc_ironwood_gate_draft_gap",
-     "to": 420
+     "from": 420,
+     "location_id": "loc_root_wind_gallery",
+     "to": 1080
+    },
+    {
+     "from": 1080,
+     "location_id": "loc_root_warden_outpost",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "根道守卫队长未必赶得上",
-      "option": "根道守卫队长在外面调度接应"
+      "cost": "花蜜主理人当场把托运的事说出口。",
+      "option": "以防范失窃为名扣下整队马车"
      },
      {
-      "cost": "可能把根道守卫队长自己也搭进去",
-      "option": "根道守卫队长硬闯进去"
+      "cost": "下层根道的割痕迟早被医者查到。",
+      "option": "放车出城，赌暗账不会被翻开"
      }
     ],
-    "pressure": "里面的人出不来，根道守卫队长进不去",
-    "trigger": "警报传到根道守卫队长那里"
+    "pressure": "扣车会逼对方翻脸，放车就等于把把柄送出林城。",
+    "trigger": "花蜜主理人的马车要出城，车里装着队长托运的货，暗账也在主理人手里。"
    },
    "tags": [
-    "workplace"
+    "workplace",
+    "crime"
    ],
    "voices": {
-    "inner": "守了一百年根道，从没见魔兽这么凶……那两个人要是出不来，我这队长也别干了。",
-    "surface": "魔兽我们压着！你们撬开了就喊，我第一个下去拉人！"
+    "inner": "那本暗账要是摆上长老会的桌子，我和族亲都完了。",
+    "surface": "木牌交上来，车里的货一件件验。"
    }
   },
   {
-   "adult_context": "一百多岁的精灵，在树冠集市卖了几十年月光花蜜，林城里谁爱吃甜的都知道。",
+   "adult_context": "一百多岁的精灵，外貌年满三十八岁，树冠集市花蜜商会的主理人。",
    "age_range": [
     38,
-    55
+    48
    ],
    "appearance_options": [
-    "一身鹅黄色的长裙，系着一条沾着蜜渍的围裙，银发上别着一朵小白花。",
-    "坐在花蜜摊后面，一边装罐一边哼着精灵的歌。"
+    "鹅黄长裙外系着沾了蜜渍的围裙，银发上别一朵小白花，笑起来眼角弯弯。",
+    "倚在雅间柜台边，指尖在一本蜂纹封皮的私账上轻轻敲。"
    ],
    "decision": {
     "avoids": [
-     "集市上卖花蜜的精灵最烦临阵推诿"
+     "翻脸不认账的人"
     ],
-    "contrast": "嘴上嫌人类不懂规矩，私下却教那个学者怎么分辨花蜜的好坏。",
+    "contrast": "人前八面玲珑，库房里会对着一罐陈年灵蜜发呆。",
     "core_value": "甜的东西，能让人记住好日子。",
     "goal_options": [
-     "先把人救出来",
-     "集市上卖花蜜的精灵再追究是谁的错"
+     "保住明年的一等通商木契",
+     "把罪责推干净，又不把自己搭进去"
     ],
     "never": [
-     "集市上卖花蜜的精灵不会丢下困在里面的人"
+     "拿伙计的工钱填窟窿"
     ],
     "prefers": [
-     "集市上卖花蜜的精灵看重说到做到的人"
+     "爽快人"
     ],
     "pressure_responses": {
-     "breaking": "集市上卖花蜜的精灵嗓子喊哑了也不肯走",
-     "high": "集市上卖花蜜的精灵顶着危险往里递东西",
-     "low": "集市上卖花蜜的精灵先稳住身边的人",
-     "mid": "集市上卖花蜜的精灵四处找能用的工具"
+     "breaking": "把私账整本推出来：我认我经手的那份。",
+     "high": "当着守卫队长的面冷笑，点破车里是谁的货。",
+     "low": "笑着递蜜，三句家常把话岔开。",
+     "mid": "把私账翻开一角，等人先开价。"
     },
-    "relationship_stance": "每回游侠来买蜜都多送一小罐，说是给那个人类尝尝。",
-    "withdrawal": "事情过去后，集市上卖花蜜的精灵一个人躲开抽根烟"
+    "relationship_stance": "谁来都聊三句家常，真心只给不图自己账本的人。",
+    "withdrawal": "回花蜜库房，一罐一罐清点到天亮。"
    },
    "gender": "female",
-   "gender_reason": "按设定是集市上卖蜜的精灵，年龄取外表相当的人类岁数。",
+   "gender_reason": "按原稿是集市上卖花蜜的精灵女主理人，固定为女性。",
    "id": "honey_keeper",
    "identity": {
-    "authority": "集市上谁先拿蜜、谁赊了几罐，卖蜜的精灵心里有本账。",
-    "exposure": "集市上卖花蜜的精灵忙起来顾不上衣着体面",
-    "hidden": "做集市上卖花蜜的精灵这些年，有件事没对旁人说过",
+    "authority": "握着集市商队的通行契书、花蜜与灵脂的交易账册和边境马车的接应渠道。",
+    "exposure": "替守卫队长往城外代运过树芯灵液，私账上每一笔都有自己的手印。",
+    "hidden": "只想在盟约到期前把本季的百花蜜顺利运出林城变现，暗账是留给自己的退路。",
     "limits": [
-     "集市上卖花蜜的精灵不在死角里，只能在外面使劲"
+     "经手过代运，揭发别人自己也脱不了干系"
     ],
     "obligations": [
-     "守住集市上卖花蜜的精灵手上的那一摊事"
+     "让商会的伙计今冬都有饭吃"
     ],
     "resources": [
-     "一摊月光花蜜",
-     "集市上卖花蜜的精灵随身的一盏提灯"
+     "一整季囤下的百花蜜",
+     "一本记着灵液出货量的私账"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "集市上卖花蜜的精灵欣赏做事干脆利落的人",
-     "集市上卖花蜜的精灵记得危急时回头搭把手的人"
+     "不冲着自己账本来、敢跟自己斗嘴的人",
+     "收摊后肯留下帮着搬蜜罐的人"
     ],
     "boundaries": [
-     "对方迟疑，集市上卖花蜜的精灵就停"
+     "不拿生意当筹码"
     ],
     "desire_range": [
-     1,
-     3
+     2,
+     4
     ],
-    "desired_position": "和集市上卖花蜜的精灵并肩站着",
+    "desired_position": "花廊下共用一柄木勺",
     "dislikes": [
-     "集市上卖花蜜的精灵讨厌轻浮的手"
+     "被人当成奸商"
     ],
-    "expression": "集市上卖花蜜的精灵话不多，递东西时指尖会多停一下",
+    "expression": "多给你一罐陈年灵蜜，说是试吃的，罐底画着一朵小白花。",
     "likes": [
-     "集市上卖花蜜的精灵收工后的一杯热饮"
+     "收摊后有人陪着尝新蜜"
     ],
     "preconditions": [
-     "集市上卖花蜜的精灵要等危局过去、双方清醒自愿"
+     "两人清醒，你情我愿",
+     "不夹着契书和暗账"
     ],
     "self_control_range": [
-     3,
-     5
+     2,
+     4
     ]
    },
-   "public_role": "集市上卖花蜜的精灵",
+   "public_role": "树冠集市花蜜主理人",
    "schedule": [
     {
-     "from": 420,
+     "from": 0,
      "location_id": "loc_elven_canopy_market",
-     "to": 1260
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_root_wind_gallery",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "集市上卖花蜜的精灵未必赶得上",
-      "option": "集市上卖花蜜的精灵在外面调度接应"
+      "cost": "整季花蜜的利润要被罚掉一大块。",
+      "option": "把暗账交给长老会，主动认下代运"
      },
      {
-      "cost": "可能把集市上卖花蜜的精灵自己也搭进去",
-      "option": "集市上卖花蜜的精灵硬闯进去"
+      "cost": "从此跟一个盗采的人绑在一条船上。",
+      "option": "拿暗账跟守卫队长私下讲和"
      }
     ],
-    "pressure": "里面的人出不来，集市上卖花蜜的精灵进不去",
-    "trigger": "警报传到集市上卖花蜜的精灵那里"
+    "pressure": "交出暗账自己也要受罚，不交，整季的蜜就烂在林城。",
+    "trigger": "守卫队长要以防范失窃为名，扣下整队花蜜马车。"
    },
    "tags": [
-    "workplace"
+    "workplace",
+    "crime"
    ],
    "voices": {
-    "inner": "那孩子今早还在我这儿买了两罐蜜……可千万得出来。",
-    "surface": "游侠！学者先生！花蜜我留着呢，你们出来了就有得吃！"
+    "inner": "账本是我的护身符，也是我的催命符。今晚得找个靠得住的人。",
+    "surface": "尝尝，今年的蜜比去年甜。"
    }
   }
  ],
  "clock_start": {
-  "label": "世界树结果的季节",
-  "minute": 10
+  "label": "世界树结实季的尾声",
+  "minute": 1260
  },
  "clock_style": "hm",
  "content_tags": [
   "intimate",
   "crime",
   "workplace",
-  "supernatural",
-  "disaster"
+  "supernatural"
  ],
  "custom": false,
  "customs": [
-  "世界树万年铁化木质地坚如精钢且耐火耐腐，唯有通过撬动其根部关节处的反向偏心自锁木楔才能使重闸回退。",
-  "精灵巡林游侠配备的淬火秘银短猎刀，刀背厚达一点五公分带有加厚反向折沿直角锯齿，具有极强的抗剪抗弯性能。",
-  "地下千米树芯密闭空间氧气仅够两人维持十分钟呼吸，剧烈活动加速耗氧，两人必须胸腹相贴呼吸同频降低代谢。",
-  "铁线荆棘受铁木重闸气流感应生长，只要撬开半尺闸门缝隙引入外部清流，荆棘便会受风力刺激自行萎缩退让。"
+  "结实季最后几天，树冠会飘下发光的花絮，落在谁肩头，谁就要许一个愿。",
+  "巡林游侠把叶纹银扣交给谁，就是把后背交给了谁。",
+  "精灵不说喜欢，只问对方愿不愿意留下来听一夜林涛。",
+  "集市上的新蜜头一勺要给客人尝，尝过不买也不算失礼。"
  ],
  "daily_activities": [
   {
    "beats": [
-    "树冠集市的花蜜摊前，游侠拿起一罐月光花蜜对着阳光看，蜜色在叶缝漏下的光里泛着银。",
-    "游侠把蜜罐塞进人手里，别过脸：人类没吃过这个吧。……尝尝，不好吃就还给我。"
+    "夜风吹动世界树万千枝叶，两人并肩坐在树屋露台的木栏边",
+    "火绒灯微光下，十指悄悄扣在一起"
    ],
    "duration_minutes": 30,
    "hook_ids": [],
-   "id": "act_moonflower_honey",
+   "id": "act_treehouse_forest_wind",
    "location_ids": [
-    "loc_elven_canopy_market"
+    "loc_ranger_treehouse"
    ],
-   "start_minute": 600,
+   "start_minute": null,
    "tags": [
-    "workplace"
+    "intimate"
    ],
-   "title": "陪游侠买一罐月光花蜜"
+   "title": "树屋露台并肩听林涛"
   },
   {
    "beats": [
-    "傍晚的吊桥轻轻晃着，游侠倚在藤绳上，看着晚霞把整片树冠染成金红，银发被风吹起。",
-    "游侠轻声说：守了这么多年根道，很少上来看。……今天想看，你陪我。"
+    "对方解下衣领内侧还带着体温的叶纹银扣，别在你贴身的内衬上",
+    "贴着你耳边，一声声教你辨认巡林队的夜行哨音"
    ],
-   "duration_minutes": 30,
+   "duration_minutes": 20,
    "hook_ids": [],
-   "id": "act_canopy_sunset",
+   "id": "act_silver_leaf_clasp",
    "location_ids": [
-    "loc_elven_canopy_market"
+    "loc_ranger_treehouse"
    ],
-   "start_minute": 1050,
+   "start_minute": null,
    "tags": [
-    "workplace"
+    "intimate"
    ],
-   "title": "在吊桥上看树冠晚霞"
+   "title": "叶纹银扣贴身相赠"
   },
   {
    "beats": [
-    "清晨的巡林小径上，游侠走在前面，脚步轻得听不见，偶尔停下来拨开一丛蕨叶看地上的脚印。",
-    "游侠回头看了一眼：你踩断了三根枯枝。……跟紧我，踩我踩过的地方。"
-   ],
-   "duration_minutes": 60,
-   "hook_ids": [],
-   "id": "act_patrol_trail",
-   "location_ids": [
-    "loc_elven_canopy_market"
-   ],
-   "start_minute": 420,
-   "tags": [
-    "workplace"
-   ],
-   "title": "清晨跟着游侠认脚印"
-  },
-  {
-   "beats": [
-    "树芯空洞里，植物学者蹲在一截根须边，借着苔藓灯的光一笔笔画着，游侠抱着手臂靠在树壁上看。",
-    "游侠忽然开口：这一株，精灵叫这株月眠草。……你画错了一片叶子。"
-   ],
-   "duration_minutes": 60,
-   "hook_ids": [],
-   "id": "act_specimen_sketch",
-   "location_ids": [
-    "loc_heartwood_hollow_ledge"
-   ],
-   "start_minute": 840,
-   "tags": [
-    "workplace"
-   ],
-   "title": "陪植物学者画根系标本"
-  },
-  {
-   "beats": [
-    "天刚亮，集市边的空地上，游侠拉满长弓，一箭射穿了五十步外挂着的松果。",
-    "收弓时，游侠把弓递过来：试试。……手肘再抬高一点，别抖。"
+    "散着微光的木台上，你的手覆在对方握炭笔的手背上",
+    "一笔一笔拓下古老根脉的纹理"
    ],
    "duration_minutes": 40,
    "hook_ids": [],
-   "id": "act_bow_practice",
+   "id": "act_heartwood_rubbing",
+   "location_ids": [
+    "loc_heartwood_hollow_ledge"
+   ],
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "树芯木台共拓根脉"
+  },
+  {
+   "beats": [
+    "挂满藤灯的花廊下，刚开封的结实季百花蜜泛着金光",
+    "用同一柄木勺分尝，唇角都染上清甜"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_flower_honey_spoon",
    "location_ids": [
     "loc_elven_canopy_market"
    ],
-   "start_minute": 360,
-   "tags": [
-    "workplace"
-   ],
-   "title": "陪游侠练箭"
-  },
-  {
-   "beats": [
-    "树屋的圆窗边，游侠把一捆捆采来的草药摊开晒在窗台上，阳光照得满屋都是草香。",
-    "游侠拿起一株递过来：这个能治荆棘的毒。……记住这株草长什么样，以后你一个人下根道用得着。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_herb_sorting",
-   "location_ids": [
-    "loc_ranger_treehouse"
-   ],
-   "start_minute": 960,
-   "tags": [
-    "workplace"
-   ],
-   "title": "陪游侠晒草药"
-  },
-  {
-   "beats": [
-    "闸门撬开、外面的游侠吹响平安号角之后，游侠回到树屋，皮甲上全是木屑和荆棘的划痕，银发里夹着碎叶。",
-    "苔藓灯下，游侠背过身，让人一根根解开皮甲的系带，再用温水洗去发间的木屑，湿布擦过后颈时，游侠轻轻吸了口气，往后靠了过来。",
-    "游侠转过身，耳尖红透了，声音很轻：今夜……我不想一个人听风。你愿意留下吗？"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_treehouse_armor_laces",
-   "location_ids": [
-    "loc_ranger_treehouse"
-   ],
-   "start_minute": 1430,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "树屋里替游侠解开皮甲系带"
+   "title": "集市花廊分尝百花蜜"
   },
   {
    "beats": [
-    "树屋的圆窗外是满天星光，游侠只穿着一件宽松的亚麻长衫，赤脚盘坐在鹿皮矮床上，捧着一杯月光花蜜茶。",
-    "游侠拍了拍身边的鹿皮：坐过来。……教我写你们人类的字，先写我的名字。"
+    "从身后贴近，托住对方持弓的手肘",
+    "替长弓弦抹上防潮蜂蜡，呼吸拂过微尖的耳廓"
    ],
    "duration_minutes": 30,
    "hook_ids": [],
-   "id": "act_treehouse_honey_tea",
+   "id": "act_bowstring_wax",
    "location_ids": [
-    "loc_ranger_treehouse"
+    "loc_root_wind_gallery"
    ],
-   "start_minute": 1240,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "树屋里一起喝花蜜茶"
+   "title": "风道回廊调校弓弦"
   },
   {
    "beats": [
-    "勘察结束、人类学者要回王国的前一夜，游侠站在圆窗前，看着树冠间一盏盏亮起的苔藓灯，手里攥着那片银叶子的另一半。",
-    "游侠没回头：明天你就要走了。……今晚你要是留下，我就去长老会求一张让你回来的通行令。你说好，我才转身。"
+    "用加热过的世界树晨露帕子，替对方擦净攀根道留下的树脂和擦痕",
+    "指腹轻轻揉按对方的掌心"
    ],
-   "duration_minutes": 30,
+   "duration_minutes": 20,
    "hook_ids": [],
-   "id": "act_treehouse_survey_end",
+   "id": "act_dew_cloth_palms",
    "location_ids": [
     "loc_ranger_treehouse"
    ],
-   "start_minute": 1370,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "勘察结束的那一夜"
+   "title": "温热露水擦拭掌心"
   },
   {
    "beats": [
-    "天快亮的时候，树冠里的鸟一只只醒了，游侠在鹿皮矮床上醒来，银发铺了满枕，尖耳朵贴在人胸口。",
-    "游侠把脸埋进人怀里，闷声说：巡林……晚一刻再去。林子不会跑的。"
+    "地底寒气上涌，两人凑在哨所铁火盆边烘手",
+    "斗篷底下悄悄勾住彼此的小指"
    ],
-   "duration_minutes": 30,
+   "duration_minutes": 20,
    "hook_ids": [],
-   "id": "act_treehouse_dawn_birds",
+   "id": "act_outpost_brazier",
    "location_ids": [
-    "loc_ranger_treehouse"
+    "loc_root_warden_outpost"
    ],
-   "start_minute": 450,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "鸟鸣里醒来"
+   "title": "守卫哨所烤火暖手"
+  },
+  {
+   "beats": [
+    "一人捧着泛黄的古精灵语植物图谱",
+    "一人贴在耳畔逐字译读，温热的气息绕在颈间"
+   ],
+   "duration_minutes": 40,
+   "hook_ids": [],
+   "id": "act_ancient_herbal_reading",
+   "location_ids": [
+    "loc_heartwood_hollow_ledge"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "古语图谱贴耳低诵"
+  },
+  {
+   "beats": [
+    "夜雾漫过树冠吊桥，藤灯晕成一团团暖光",
+    "对方展开宽大的墨绿巡林斗篷，把你半拢在身侧并肩慢行"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [],
+   "id": "act_mist_bridge_cloak",
+   "location_ids": [
+    "loc_elven_canopy_market"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "藤桥夜雾同披斗篷"
   }
  ],
  "default_npc_gender_mix": {
@@ -1304,7 +1527,7 @@
   "nonbinary": 0.0
  },
  "default_person": "second",
- "era": "古典奇幻世界树远古自然秘境与铁化木机关文明时代",
+ "era": "世界树结实季尾声的精灵林城",
  "extends": null,
  "forbidden_terms": [
   "软色情",
@@ -1318,259 +1541,196 @@
  ],
  "hooks": [
   {
-   "id": "hk_uv_warning_thunder",
+   "id": "hook_seranie_two_rations",
+   "kind": "observe",
+   "location_ids": [
+    "loc_ranger_treehouse"
+   ],
+   "slot": "elf_ranger_seranie",
+   "text": "游侠的树屋木案上，{npc.name}正把两份烘好的行军干粮收进皮囊，窗外树冠飘落着结实季最后的发光花絮。"
+  },
+  {
+   "id": "hook_seranie_silver_leaf",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "elf_ranger_seranie",
+   "text": "{npc.name}从衣领内侧解下叶纹银扣，放进你掌心，又替你把手指合上：别问，先收着。"
+  },
+  {
+   "id": "hook_seranie_scar_lamp",
    "kind": "approach",
    "location_ids": [
     "loc_heartwood_hollow_ledge"
    ],
    "slot": "elf_ranger_seranie",
-   "text": "{elf_ranger_seranie.name}墨绿皮甲被荆棘划破衣角，带着一点血色的俏脸因缺氧泛着虚弱微红，果断递出加厚秘银短猎刀。"
+   "text": "{npc.name}举着苔藓灯照向主根，灯光停在一道发暗的割痕上：你看，这不是采样的骨刀留下的。"
   },
   {
-   "id": "hk_crypt_uv_roaring_rush",
+   "id": "hook_mentor_night_pass",
    "kind": "approach",
    "location_ids": [
-    "loc_heartwood_hollow_ledge"
+    "loc_root_warden_outpost"
    ],
-   "slot": "elf_ranger_seranie",
-   "text": "{elf_ranger_seranie.name}蜷缩在同伴胸前避开垂落的毒刺，银发如瀑散落，侧过尖俏耳廓聆听闸门滑槽内的咬合异响。"
+   "slot": "old_ranger_mentor",
+   "text": "{npc.name}把一块盖着巡林长印章的木牌拍在桌上，抬眼看你：说吧，今晚下去做什么。"
   },
   {
-   "id": "hk_crypt_breaker_groan_deadlock",
-   "kind": "approach",
-   "location_ids": [
-    "loc_ironwood_wedge_slot"
-   ],
-   "slot": "paleobotanist",
-   "text": "{paleobotanist.name}用加厚工装将游侠紧紧护在怀中，用体温与坚实胸膛替游侠挡下逼近的铁线荆棘。"
+   "id": "hook_mentor_inquiry_letter",
+   "kind": "request",
+   "location_ids": [],
+   "slot": "old_ranger_mentor",
+   "text": "{npc.name}把一封拆过的质询函递给你：这东西替我送进火盆，别让那孩子看见。"
   },
   {
-   "id": "hk_breaker_deformation_scrape",
-   "kind": "approach",
-   "location_ids": [
-    "loc_ironwood_wedge_slot"
-   ],
-   "slot": "paleobotanist",
-   "text": "{paleobotanist.name}握紧游侠因发凉而微颤的双手，合力将猎刀背脊坚硬锯齿准确推入木楔死角缝隙深处。"
-  },
-  {
-   "id": "hk_tight_breath_ear_brush",
-   "kind": "approach",
-   "location_ids": [
-    "loc_ironwood_wedge_slot"
-   ],
-   "slot": "elf_ranger_seranie",
-   "text": "{elf_ranger_seranie.name}面颊贴在同伴耳侧，微弱而平缓地呼出温热气息，轻声指点世界树木质纹理的最脆受力点。"
-  },
-  {
-   "id": "hk_lace_corset_heat_exchange",
-   "kind": "approach",
-   "location_ids": [
-    "loc_ironwood_wedge_slot"
-   ],
-   "slot": "elf_ranger_seranie",
-   "text": "{elf_ranger_seranie.name}身躯紧靠在同伴怀里，咬紧银牙忍耐胸口窒息沉闷，将全身施力重心完全交托给同伴手臂。"
-  },
-  {
-   "id": "hk_scepter_flange_notch_align",
-   "kind": "approach",
-   "location_ids": [
-    "loc_ironwood_wedge_slot"
-   ],
-   "slot": "elf_ranger_seranie",
-   "text": "{elf_ranger_seranie.name}展现出高等精灵的从容决断，借着缺氧昏迷前的最后清醒，清冷娇呼下达合力下撬号令。"
-  },
-  {
-   "id": "hk_rubber_hammer_chock_in",
-   "kind": "approach",
-   "location_ids": [
-    "loc_ironwood_wedge_slot"
-   ],
-   "slot": "paleobotanist",
-   "text": "{paleobotanist.name}在荆棘毒刺再次逼近的危急瞬间紧紧抱住游侠，两副年轻身躯在狭窄树洞内严丝合缝同命相连。"
-  },
-  {
-   "id": "hk_satin_ribbon_bind_grip",
-   "kind": "approach",
-   "location_ids": [
-    "loc_ironwood_wedge_slot"
-   ],
-   "slot": "elf_ranger_seranie",
-   "text": "{elf_ranger_seranie.name}将温软娇躯毫无保留倚向同伴，以心跳合拍之势协同发力，将全部下压重力轰入猎刀刀柄。"
-  },
-  {
-   "id": "hk_atrium_air_pressure_drop",
-   "kind": "approach",
-   "location_ids": [
-    "loc_heartwood_hollow_ledge"
-   ],
-   "slot": "elf_ranger_seranie",
-   "text": "{elf_ranger_seranie.name}细听铁木槽内纤维绷断的脆响，在骨销即将崩解的刹那催促同伴施加最后一记猛顿。"
-  },
-  {
-   "id": "hk_synchronized_grunt_heave",
-   "kind": "approach",
-   "location_ids": [
-    "loc_ironwood_wedge_slot"
-   ],
-   "slot": "paleobotanist",
-   "text": "{paleobotanist.name}与游侠一同暴发全力沉身下压，借杠杆之力将死卡骨销生生撬断，木门轰然向外弹开。"
-  },
-  {
-   "id": "hk_spring_latch_pop_rebound",
-   "kind": "approach",
-   "location_ids": [
-    "loc_ironwood_wedge_slot"
-   ],
-   "slot": "elf_ranger_seranie",
-   "text": "{elf_ranger_seranie.name}在清凉气流呼啸涌入的震撼中脱力扑入同伴怀中，大口呼吸新鲜空气，紧紧搂住同伴脖颈。"
-  },
-  {
-   "id": "hook_seranie_extra_honey",
+   "id": "hook_healer_sap_vial",
    "kind": "approach",
    "location_ids": [
     "loc_elven_canopy_market"
    ],
-   "slot": "elf_ranger_seranie",
-   "text": "{npc.name}把一小罐花蜜放在人手边，头也不抬：卖蜜的多给的。……我不爱吃甜。"
+   "slot": "canopy_healer",
+   "text": "{npc.name}提着药篮从吊桥那头匆匆走来，把一瓶伤流液塞进你手里：帮我看看，和黑市上的是不是一批。"
   },
   {
-   "id": "hook_seranie_where_botanist",
+   "id": "hook_healer_salve_finger",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "canopy_healer",
+   "text": "{npc.name}拉过你磨破的指头，抹上一层凝露膏：抄古方也不知道歇一歇。"
+  },
+  {
+   "id": "hook_botanist_dim_root",
+   "kind": "observe",
+   "location_ids": [
+    "loc_heartwood_hollow_ledge"
+   ],
+   "slot": "paleobotanist",
+   "text": "树芯木台的微光下，{npc.name}正俯身端详一段枯萎发暗的主根导管，手边的标本匣半掩着。"
+  },
+  {
+   "id": "hook_botanist_last_data",
+   "kind": "approach",
+   "location_ids": [
+    "loc_root_wind_gallery"
+   ],
+   "slot": "paleobotanist",
+   "text": "{npc.name}一把拉住你的袖子，手稿边角都攥皱了：就差最后一组数据，你帮我拖一拖封道。"
+  },
+  {
+   "id": "hook_warden_pass_check",
+   "kind": "approach",
+   "location_ids": [
+    "loc_root_warden_outpost"
+   ],
+   "slot": "root_warden_captain",
+   "text": "{npc.name}按着腰间长剑，把你的出城木牌扣在手里翻看：车里装的什么，自己说。"
+  },
+  {
+   "id": "hook_warden_pine_candy",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "root_warden_captain",
+   "text": "{npc.name}把一颗松果糖放在你手边，目光却落在你袖口的树液上：今晚别往下层根道去。"
+  },
+  {
+   "id": "hook_honey_ledger_spoon",
    "kind": "approach",
    "location_ids": [
     "loc_elven_canopy_market"
    ],
-   "slot": "elf_ranger_seranie",
-   "text": "{npc.name}在吊桥上站了一会儿，尖耳朵动了动，轻声问：那个人类……今天没来集市吗？"
+   "slot": "honey_keeper",
+   "text": "{npc.name}合上一本蜂纹封皮的私账，舀起一勺新蜜递到你唇边：尝尝，尝完再谈。"
   },
   {
-   "id": "hook_seranie_bow_offer",
-   "kind": "approach",
-   "location_ids": [
-    "loc_elven_canopy_market",
-    "loc_ranger_treehouse"
-   ],
-   "slot": "elf_ranger_seranie",
-   "text": "{npc.name}把长弓往人怀里一递，挑眉：射中那颗松果，就带你去看世界树开花。"
-  },
-  {
-   "id": "hook_seranie_treehouse_curtain",
-   "kind": "approach",
-   "location_ids": [
-    "loc_ranger_treehouse"
-   ],
-   "slot": "elf_ranger_seranie",
-   "text": "{npc.name}掀着树屋的藤帘，银发被风吹起：苔藓灯点好了。……进来坐。"
-  },
-  {
-   "id": "hook_botanist_silver_leaf",
-   "kind": "approach",
-   "location_ids": [
-    "loc_elven_canopy_market",
-    "loc_ranger_treehouse"
-   ],
-   "slot": "paleobotanist",
-   "text": "{npc.name}翻开图册又慌忙合上，一片银叶子露出一角：不是……是标本。"
-  },
-  {
-   "id": "hook_botanist_vent_note",
-   "kind": "approach",
-   "location_ids": [
-    "loc_elven_canopy_market",
-    "loc_heartwood_hollow_ledge"
-   ],
-   "slot": "paleobotanist",
-   "text": "{npc.name}在根系图上画了一道线：铁木门底下有一道风缝。……万一出事，你记住往这里撬。"
+   "id": "hook_honey_cart_favor",
+   "kind": "request",
+   "location_ids": [],
+   "slot": "honey_keeper",
+   "text": "{npc.name}压低声音：明早的马车要过哨所，你陪我走一趟，有人问起，就说蜜是你订的。"
   }
  ],
  "id": "cool_elven_ranger_tree_hollow_cage_lock",
  "locations": [
   {
    "affordances": [
-    "在荆棘毒刺包围中收拢身形伏在木台角落",
-    "将后背顶住坚硬树壁为同伴挡开下垂的带刺藤蔓",
-    "侧身摸索咬死在铁木闸门滑槽底部的偏心自锁木楔"
+    "借苔藓灯的微光拓下主根上的割痕",
+    "在狭窄木台上肩挨着肩避开滴落的树液",
+    "翻开标本匣的夹层"
    ],
-   "detail": "位于世界树地下千米深处的狭窄树芯空腔，万年铁化木巨门重重闭合咬死导轨，四周如钢铁般的活体铁线荆棘正缓缓蔓延收缩，空气已近乎窒息。",
+   "detail": "世界树地下的树芯空腔，一方天然木台嵌在泛着微光的主根之间；最近主根导管上多了几道发暗的割痕。",
    "exits": [
-    "loc_ironwood_wedge_slot",
-    "loc_ironwood_gate_draft_gap"
+    "loc_root_warden_outpost",
+    "loc_root_wind_gallery"
    ],
    "id": "loc_heartwood_hollow_ledge",
-   "name": "树芯木台",
-   "pressure_modifiers": {
-    "p_air_running_thin": "空气又稀了一分，胸口闷得发疼。",
-    "p_thorns_close_in": "荆棘又往里收了一寸，毒刺擦着衣角过去。"
-   },
-   "privacy": "private",
-   "tags": [
-    "workplace",
-    "disaster",
-    "intimate"
-   ],
-   "visibility": "苔藓灯幽绿的光照着木台，看得清对方发白的嘴唇，看不清荆棘丛后面有多深。",
-   "witnesses": []
-  },
-  {
-   "affordances": [
-    "将淬火秘银短猎刀背脊直角反向锯齿死死别入木楔缝隙",
-    "借助树根纹理突起作为杠杆下撬的坚固支点"
-   ],
-   "detail": "两扇铁木重闸交汇处的垂直凹槽，一根古代龙骨打磨的死锁骨销在落闸冲击下严重偏心卡死在木楔深处。",
-   "exits": [
-    "loc_heartwood_hollow_ledge"
-   ],
-   "id": "loc_ironwood_wedge_slot",
-   "name": "铁化木重闸偏心自锁滑槽",
-   "pressure_modifiers": {
-    "p_knife_chest_press": "游侠背贴在植物学者胸前，四只手叠在猎刀的刀柄上，皮甲贴着对方的衬衫。",
-    "p_knife_spine_bend": "刀背的锯齿被木楔压平了两颗，再硬别可能整排崩掉。"
-   },
+   "name": "树芯木台秘境",
+   "pressure_modifiers": {},
    "privacy": "private",
    "tags": [
     "workplace",
     "intimate"
    ],
-   "visibility": "铁木闸门交汇的凹槽里，骨销偏心卡在木楔深处，猎刀背脊别进去时，木屑簌簌往下掉。",
+   "visibility": "苔藓灯幽绿的光只照得见木台一角，两人得肩挨着肩才看得清同一道根纹。",
    "witnesses": []
   },
   {
    "affordances": [
-    "两人合抱刀柄将全部体重向下暴顿撬断骨销",
-    "感受闸门被撬开半尺后外界清凉气流呼啸灌入的震动"
+    "在铁火盆边借烤火悄悄勾住小指",
+    "翻看夜班出入名册",
+    "替对方系紧斗篷的领绳"
    ],
-   "detail": "铁木门底部与树芯地基之间的狭窄缝隙，承受着重闸数十吨下压静摩擦力。",
+   "detail": "铁木根道入口的守卫哨所，一只铁火盆、一架出入木牌和一张摊着夜班名册的长桌，往下就是通往树芯的古老根道。",
    "exits": [
     "loc_heartwood_hollow_ledge",
-    "loc_elven_canopy_market"
+    "loc_root_wind_gallery"
    ],
-   "id": "loc_ironwood_gate_draft_gap",
-   "name": "铁木闸门通风平压缝隙",
-   "pressure_modifiers": {
-    "p_beasts_above_roots": "头顶的根道里传来魔兽撞击树根的闷响，外面的游侠一边打一边挖。"
-   },
-   "privacy": "public",
+   "id": "loc_root_warden_outpost",
+   "name": "铁木根道守卫哨所",
+   "pressure_modifiers": {},
+   "privacy": "semi",
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "visibility": "铁木门底的缝隙通向外面的根道，巡林号角的声音顺着缝隙传进来，一阵比一阵急。",
+   "visibility": "守卫轮班进出，谁下过根道都记在名册上，火盆边的低语却只有凑近的人听得见。",
    "witnesses": [
-    "bg_young_ranger",
-    "bg_horn_signaler",
+    "bg_root_guard",
     "bg_council_herald"
    ]
   },
   {
    "affordances": [
-    "陪游侠在集市买一罐月光花蜜",
-    "在吊桥上看树冠间的晚霞",
-    "跟着游侠走一趟巡林小径"
+    "在背风处替对方给弓弦抹蜂蜡",
+    "在藤灯阴影里压低声音交换消息",
+    "贴着传声木管听上层哨所的动静"
    ],
-   "detail": "世界树最低一层枝干上搭起的集市，一座座树屋摊位用吊桥连着，精灵们卖月光花蜜、苔藓灯和手编的藤篮，阳光从叶缝里漏下来，在木板上晃成一片碎金。",
+   "detail": "主根与树干之间的一道回廊，地底的风从根系里穿过，吹得藤灯轻晃；装车的商队和下根道的人都从这里过。",
    "exits": [
-    "loc_ranger_treehouse",
-    "loc_ironwood_gate_draft_gap"
+    "loc_heartwood_hollow_ledge",
+    "loc_root_warden_outpost",
+    "loc_elven_canopy_market"
+   ],
+   "id": "loc_root_wind_gallery",
+   "name": "根系风道回廊",
+   "pressure_modifiers": {},
+   "privacy": "semi",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "藤灯晃得人影忽明忽暗，背风的角落里说话，过路的人只当是风声。",
+   "witnesses": [
+    "bg_young_ranger",
+    "bg_caravan_driver"
+   ]
+  },
+  {
+   "affordances": [
+    "用同一柄木勺分尝新开封的百花蜜",
+    "在花廊雅间翻开一本私账",
+    "替对方拂去肩头的发光花絮"
+   ],
+   "detail": "世界树最低一层枝干上搭起的集市，树屋摊位用吊桥连着，精灵们卖百花蜜、灵草和苔藓灯，花廊下挂满藤灯。",
+   "exits": [
+    "loc_root_wind_gallery",
+    "loc_ranger_treehouse"
    ],
    "id": "loc_elven_canopy_market",
    "name": "树冠集市",
@@ -1579,21 +1739,20 @@
    "tags": [
     "workplace"
    ],
-   "visibility": "精灵们耳朵尖，游侠跟那个人类多说一句话，不到傍晚整座林城都听说了。",
+   "visibility": "精灵们耳朵尖，游侠跟谁多说一句话，不到收摊整座林城都听说了。",
    "witnesses": [
-    "bg_young_ranger",
-    "bg_honey_seller",
-    "bg_horn_signaler",
+    "bg_market_stall_elf",
+    "bg_bridge_keeper",
     "bg_council_herald"
    ]
   },
   {
    "affordances": [
-    "坐在圆窗边陪游侠擦猎刀",
-    "替游侠解开皮甲的系带",
-    "把藤帘放下来"
+    "把藤帘放下来",
+    "替对方解开皮甲的系带",
+    "并肩坐在露台木栏边听林涛"
    ],
-   "detail": "世界树一根高枝上的小树屋，圆窗外就是整片树冠，屋里一张铺着鹿皮的矮床、一盏苔藓灯、墙上挂着长弓和箭袋，窗台上一排晒干的草药。",
+   "detail": "世界树高枝上的小树屋，圆窗外是整片树冠，屋里一张铺鹿皮的矮床、一盏苔藓灯，墙上挂着长弓，露台木栏外就是林涛。",
    "exits": [
     "loc_elven_canopy_market"
    ],
@@ -1685,26 +1844,25 @@
   ],
   "order": "family_first"
  },
- "notes": "按原稿加入。原稿除标题、简介、基调、精灵游侠外貌、世界规则风俗、三处脱困地点与转折外，人物、压力、日常与钩子大多照抄了吸血鬼地宫那一篇，这里按世界树森林的题材整篇重写：精灵林城的巡林游侠，奉命给一位来研究世界树根系的人类古植物学者当向导，白天在树冠集市、巡林小径、树屋之间来往，夜里是魔兽暴动触发世界树防御机关、铁木重闸落死、荆棘收拢、树芯缺氧。与精灵王女那篇拉开：这一篇在森林与树根里，那一篇在王宫。新增树冠集市与游侠的树屋两处日常地点；婴儿肥换成了其余外貌描写；亲密前提写明脱险之后、双方清醒自愿；新增树屋里的四个亲密日常。",
+ "notes": "按原稿加入。原稿除标题、简介、基调、精灵游侠外貌、世界规则风俗、三处脱困地点与转折外，人物、压力、日常与钩子大多照抄了吸血鬼地宫那一篇，这里按世界树森林的题材整篇重写：精灵林城的巡林游侠，奉命给一位来研究世界树根系的人类古植物学者当向导，白天在树冠集市、巡林小径、树屋之间来往，夜里是魔兽暴动触发世界树防御机关、铁木重闸落死、荆棘收拢、树芯缺氧。与精灵王女那篇拉开：这一篇在森林与树根里，那一篇在王宫。新增树冠集市与游侠的树屋两处日常地点；婴儿肥换成了其余外貌描写；亲密前提写明脱险之后、双方清醒自愿；新增树屋里的四个亲密日常。\n2026-10-24 按写作规则 v2 与 Gemini 创意卡改造：去掉树洞铁闸夹人、撬骨销缺氧的机关戏，张力换成一季盟约期满夜的驱逐令、守卫队长盗采主根灵液栽赃人类、活体枝条归属和游侠的去留。",
  "player_identities": [
   {
    "age_range": [
     22,
     30
    ],
-   "baseline": "被勘察队雇来背仪器的人类脚夫，第一次进精灵林城，看什么都新鲜，也什么都怕。",
+   "baseline": "你跟着人类科考队进城，负责背采样器皿、维护根道绳索，手里握着游侠树屋的备用木牌和下层根道的实测草图。",
    "gender": "any",
    "id": "pi_root_porter",
-   "reputation": "勘察队里最肯出力的一个。",
+   "reputation": "科考队里最肯出力、也最常跟着游侠的人。",
    "resources": [
-    "一副背架",
-    "一包干粮",
-    "一卷麻绳"
+    "游侠树屋的备用木牌",
+    "下层根道的实测草图"
    ],
    "risks": [
-    "勘察出了事，工钱就拿不到了。"
+    "驱逐令一下，你是第一批被送出林城的人。"
    ],
-   "role": "跟着勘察队来的人类脚夫",
+   "role": "随科考队入城的勘察助理",
    "social_position": "low",
    "title_patterns": [
     {
@@ -1722,19 +1880,18 @@
     25,
     40
    ],
-   "baseline": "在树冠集市上摆了几十年草药摊的精灵，见过的人类比大多数精灵都多。",
+   "baseline": "你持本季通商木契在林城收购珍稀灵草与花蜜，明天出城的商队马车上有你的席位，箱底还压着一笔现银定金。",
    "gender": "any",
    "id": "pi_herb_trader",
-   "reputation": "集市上消息最灵通的精灵之一。",
+   "reputation": "集市上出价公道、消息灵通的外来商人。",
    "resources": [
-    "一摊草药",
-    "一杆小秤",
-    "一肚子林城的闲话"
+    "出城商队马车的一个席位",
+    "一笔现银定金"
    ],
    "risks": [
-    "世界树出了事，草药摊就开不下去了。"
+    "多带一个没登记的人出城，木契就作废。"
    ],
-   "role": "集市上的草药商",
+   "role": "树冠集市特许草药商",
    "social_position": "equal",
    "title_patterns": [
     {
@@ -1752,19 +1909,18 @@
     26,
     40
    ],
-   "baseline": "长老会派来记录勘察的精灵记录官，人类学者在根系里做的每一件事都要写进卷轴。",
+   "baseline": "你负责核录本季人族与精灵通商科考的履约纪要，盟约延期的附议卷宗和根道出入的核查权都在你手里。",
    "gender": "any",
    "id": "pi_council_scribe",
-   "reputation": "以字迹秀丽出名的记录官。",
+   "reputation": "以字迹秀丽、笔下不偏不倚出名。",
    "resources": [
-    "一卷勘察卷轴",
-    "一枚长老会的叶形徽章",
-    "一张进出根道的通行令"
+    "盟约延期附议卷宗",
+    "根道出入核查权"
    ],
    "risks": [
-    "记录出了差错，人类就再也进不了林城。"
+    "纪要里一个字写偏，就要背徇私的名声。"
    ],
-   "role": "长老会的记录官",
+   "role": "长老会盟约记录官",
    "social_position": "equal",
    "title_patterns": [
     {
@@ -1782,19 +1938,18 @@
     34,
     55
    ],
-   "baseline": "长老会里最年长的大长老，人类能不能继续留在林城、根系还让不让研究，最后都落在这一句话上。",
+   "baseline": "你奉命在盟约期满之夜巡视世界树根系，裁定下季是否续约，林城最高的赦免叶印和边界通商终审权都在你手里。",
    "gender": "any",
    "id": "pi_elder_envoy",
-   "reputation": "整座林城都敬重这位大长老。",
+   "reputation": "整座林城都在等你一句话。",
    "resources": [
-    "一根世界树枝做的长老杖",
-    "一份林城与人类的盟约底稿",
-    "随时能叫停勘察的权限"
+    "林城最高赦免叶印",
+    "边界通商终审权"
    ],
    "risks": [
-    "勘察期间世界树出了事，盟约就要作废。"
+    "偏向哪一边，保守派和人类商队总有一方不服。"
    ],
-   "role": "长老会派来的大长老",
+   "role": "长老会特派巡察大长老",
    "social_position": "high",
    "title_patterns": [
     {
@@ -1808,335 +1963,361 @@
    ]
   }
  ],
- "premise": "世界树下的精灵林城，第一次允许人类学者研究树的根系。巡林游侠奉命当向导，带着一位人类古植物学者在林城里住了一季，白天下到根系空腔采样，夜里在树屋里争论分类。世界树古老的防御机关没人完全摸清，地下最近有魔兽躁动的痕迹。",
+ "premise": "世界树下的精灵林城，今年第一次依约允许人类学者与商人在结实季进入根系空腔考察。巡林游侠奉命担任向导，带着人类古植物学者在林城里住了一季，白天下到根系木台观测采样，夜里在树屋里整理图谱。树冠集市上花蜜与草药交易正旺，老巡林长与根道守卫队日夜巡视着通往地底的古老根道。",
  "pressures": [
   {
-   "choice": "是趁还有力气赶紧下撬，还是先放慢呼吸省一口气？",
+   "choice": "当众揭发，还是拿暗账逼队长收手？",
    "exits": [
     {
-     "cost": "使劲会加快耗气",
-     "option": "趁还有力气合力下撬"
+     "cost": "花蜜主理人经手代运，被罚没本季三成花蜜利润。",
+     "option": "把暗账和主根割痕拓片一起呈给长老会和老巡林长，当场撤换队长"
     },
     {
-     "cost": "空气只会越来越少",
-     "option": "先放慢呼吸省一口气"
+     "cost": "队长暗中销毁了树芯里的割痕物证。",
+     "option": "拿暗账逼队长撤回诬告，放开下层根道"
+    },
+    {
+     "cost": "今晚下层根道仍由队长的人把守。",
+     "option": "把暗账交给医者对照救治主根，暂缓抓人"
     }
    ],
    "far": {
-    "consequence": "两人在树芯里昏过去，等不到外面的人。",
-    "due_days": 1,
-    "trigger": "空气耗尽"
+    "consequence": "盗采的事若被别人先翻出来，经手代运的人一个也跑不了。",
+    "due_days": 20,
+    "trigger": "下季续约审议"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [],
-   "id": "p_air_running_thin",
+   "id": "p_root_sap_ledger",
    "immediate": {
-    "minutes": 2,
-    "text": "游侠一阵眩晕，整个人往后靠进植物学者怀里，猎刀差点脱手。"
+    "minutes": 10,
+    "text": "哨所火盆边，守卫队长的手按在剑柄上，眼睛盯着那本蜂纹私账。"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{honey_keeper.name}握着{root_warden_captain.name}私割主根灵液、托商队走私变现的暗账。",
+    "holder": "honey_keeper",
+    "subject": "root_warden_captain"
+   },
    "location_ids": [
-    "loc_heartwood_hollow_ledge",
-    "loc_ironwood_wedge_slot"
+    "loc_root_warden_outpost"
    ],
    "near": {
-    "deadline_minutes": 4,
-    "text": "空气又稀了一分，两人只能把呼吸压到最浅。"
+    "deadline_minutes": 180,
+    "text": "长老会议事一开，诬告人类的说法就要写进驱逐令。"
    },
-   "objective": "在空气耗尽之前撬断骨销。",
-   "source": "nature",
-   "start_minute": 10,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "树芯空洞空气将尽",
-   "trigger": "树芯空洞被铁木门封死，空气一口比一口稀，胸口闷得发疼，眼前一阵阵发黑。"
-  },
-  {
-   "choice": "是用猎刀背脊硬别，还是先顺着木纹找一个松动的地方？",
-   "exits": [
-    {
-     "cost": "找木纹要耗掉宝贵的时间",
-     "option": "先顺着木纹找松动的地方"
-    },
-    {
-     "cost": "锯齿可能先崩掉",
-     "option": "直接用刀背硬别"
-    }
-   ],
-   "far": {
-    "consequence": "木楔再也撬不动，闸门只能等外面的人砍开。",
-    "due_days": 1,
-    "trigger": "骨销彻底卡死"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_bone_pin_jammed",
-   "immediate": {
-    "minutes": 2,
-    "text": "刀背锯齿卡进去，木楔里传来一声闷响，骨销只退了半分。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_ironwood_wedge_slot"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "木楔被压得更紧了，骨销弯着卡在里面。"
-   },
-   "objective": "在骨销彻底卡死之前别断。",
-   "source": "accident",
-   "start_minute": 10,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "铁木木楔咬死骨销",
-   "trigger": "铁木重门的偏心木楔把骨销死死咬住，铁化木坚硬如钢，木楔纹丝不动。"
-  },
-  {
-   "choice": "是先用猎刀砍开逼近的荆棘，还是全力去撬骨销？",
-   "exits": [
-    {
-     "cost": "砍荆棘就没法去撬骨销",
-     "option": "用猎刀砍开逼近的荆棘"
-    },
-    {
-     "cost": "荆棘可能先缠上来",
-     "option": "全力去撬骨销"
-    }
-   ],
-   "far": {
-    "consequence": "两人被荆棘困死在木台上，动弹不得。",
-    "due_days": 1,
-    "trigger": "荆棘缠死木台"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_thorns_close_in",
-   "immediate": {
-    "minutes": 2,
-    "text": "一根荆棘擦着植物学者的手臂过去，划开一道细细的血口。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_ironwood_wedge_slot"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "荆棘收得更快了，木台上能站的地方越来越小。"
-   },
-   "objective": "在荆棘缠上来之前撬开缝隙，让风逼退荆棘。",
+   "objective": "在驱逐令落下之前，让这本暗账落到该落的地方。",
    "source": "person",
-   "start_minute": 10,
+   "start_minute": null,
+   "tags": [
+    "crime"
+   ],
+   "title": "私割主根灵液的走私暗账",
+   "trigger": "花蜜主理人查实，守卫队长为还边境赌债，连续半月趁夜班用铁器割取下层主根灵液，还想把根脉枯萎嫁祸给人类科考队。"
+  },
+  {
+   "choice": "替学者遮掩，还是按林城律法办？",
+   "exits": [
+    {
+     "cost": "学者回学院拿不出活体样本，只能发表纸面图谱。",
+     "option": "劝学者把灵根交给医者嫁接修复主根，换游侠不在巡林日志上记这次违规"
+    },
+    {
+     "cost": "你得留在林城担任双边监管人。",
+     "option": "由你出面申请，把灵根转为人族与林城共建苗圃的寄存样本"
+    },
+    {
+     "cost": "学者今晚就被提前礼送出境。",
+     "option": "依律由游侠没收样本，上报老巡林长"
+    }
+   ],
+   "far": {
+    "consequence": "样本来路说不清，整份报告都会被林城追责。",
+    "due_days": 30,
+    "trigger": "科考报告呈交王都学院时"
+   },
+   "flags": [
+    "timed",
+    "leverage"
+   ],
+   "hook_ids": [],
+   "id": "p_hidden_living_root",
+   "immediate": {
+    "minutes": 10,
+    "text": "标本匣半开着，灵根断口还在渗出微光的树液。"
+   },
+   "leverage": {
+    "basis": "{elf_ranger_seranie.name}握着{paleobotanist.name}违反科考盟约、私藏活体灵根样本的证据。",
+    "holder": "elf_ranger_seranie",
+    "subject": "paleobotanist"
+   },
+   "location_ids": [
+    "loc_heartwood_hollow_ledge"
+   ],
+   "near": {
+    "deadline_minutes": 120,
+    "text": "守卫队一下来搜查，这段灵根就成了人类盗采的铁证。"
+   },
+   "objective": "在守卫队下来搜查之前，定下这段灵根的去处。",
+   "source": "person",
+   "start_minute": null,
    "tags": [
     "workplace"
    ],
-   "title": "毒刺荆棘向木台收拢",
-   "trigger": "剧毒铁线荆棘一寸寸往木台收拢，毒刺离后背只剩一掌宽，被刺中会麻痹半边身子。"
+   "title": "标本匣夹层里的活体灵根",
+   "trigger": "游侠在树芯木台发现，人类古植物学者的标本匣夹层里藏着一段未经长老会批准、私自截取的世界树次生灵根。"
   },
   {
-   "choice": "是为了矜持拉开半寸距离，还是干脆贴紧了一起发力？",
+   "choice": "顺势遮掩，还是索性说开？",
    "exits": [
     {
-     "cost": "这一夜之后，游侠再也不是只远远看着对方了",
-     "option": "放下矜持贴紧对方，四只手一起压在刀柄上"
+     "cost": "老巡林长看出游侠去意已决，单独留游侠长谈。",
+     "option": "推窗把话题引向明早护送商队出境的巡逻路线，请老巡林长出面背书"
     },
     {
-     "cost": "力气使不到一处，别不断骨销",
-     "option": "各自侧身单手发力"
+     "cost": "游侠要交出树芯秘境的引路权。",
+     "option": "由游侠向同袍坦陈心迹，申请改调边境哨所"
+    },
+    {
+     "cost": "学者一眼看穿了你和游侠的私情。",
+     "option": "推说行囊是给古植物学者备的科考补给，连夜挪到集市马车上"
     }
    ],
    "far": {
-    "consequence": "刀背从木楔死角里滑出去，错过最后的脱扣窗口。",
-    "due_days": 1,
-    "trigger": "分心导致刀背滑脱"
+    "consequence": "游侠想走的念头会被当众问起。",
+    "due_days": 2,
+    "trigger": "下一次巡林队点卯"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [],
-   "id": "p_knife_chest_press",
-   "immediate": {
-    "minutes": 2,
-    "text": "游侠缺氧得娇喘细细，皮甲的系带被荆棘勾断，墨绿轻甲滑开半边，酥胸半露着贴在对方手臂上，银发散在两人之间。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_heartwood_hollow_ledge",
-    "loc_ironwood_wedge_slot"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "两人的心跳撞在一起，游侠的数数第一次乱了，谁都分不清是缺氧，还是别的什么。"
-   },
-   "objective": "贴得这么近的时候，还得把心思放在刀背的角度和数数上。",
-   "source": "nature",
-   "start_minute": 10,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "木台死角胸背相贴",
-   "trigger": "木台死角窄得转不开身，游侠只能背贴在植物学者胸前，四只手叠在刀柄上一起往下压。"
-  },
-  {
-   "choice": "是继续加力赌一把，还是退出来换个角度重新卡？",
-   "exits": [
-    {
-     "cost": "系带会被磨断",
-     "option": "用皮甲的系带缠住刀柄再压"
-    },
-    {
-     "cost": "换角度要重新找死角，空气可能等不及",
-     "option": "退出来换个角度"
-    }
-   ],
-   "far": {
-    "consequence": "刀背再也卡不住木楔，两人失去唯一的撬具。",
-    "due_days": 1,
-    "trigger": "锯齿崩光"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_knife_spine_bend",
-   "immediate": {
-    "minutes": 2,
-    "text": "刀背发出一声刺耳的刮响，握刀柄的指节被震得发麻。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_ironwood_wedge_slot"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "又一颗锯齿被压平，刀身也开始微微发弯。"
-   },
-   "objective": "得在锯齿崩掉之前找准最后一个受力点。",
-   "source": "nature",
-   "start_minute": 10,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "秘银猎刀锯齿崩平",
-   "trigger": "猎刀背脊的锯齿卡在木楔死角里，已经被压平了两颗，再硬别可能整排崩掉。"
-  },
-  {
-   "choice": "是先撬闸门，还是先敲树壁给外面的人报信？",
-   "exits": [
-    {
-     "cost": "敲树壁更耗力气",
-     "option": "先敲树壁报信"
-    },
-    {
-     "cost": "外面的人可能挖错方向",
-     "option": "先撬闸门自救"
-    }
-   ],
-   "far": {
-    "consequence": "魔兽冲进树芯空洞，外面的游侠再也挖不进来。",
-    "due_days": 1,
-    "trigger": "魔兽撞穿根道"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_beasts_above_roots",
-   "immediate": {
-    "minutes": 2,
-    "text": "头顶传来魔兽的嘶吼，号角一下子吹急了。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_heartwood_hollow_ledge",
-    "loc_ironwood_wedge_slot"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "魔兽撞得越来越凶，树根簌簌地往下掉土。"
-   },
-   "objective": "撬开闸门，让外面的人知道里面的人还活着。",
-   "source": "nature",
-   "start_minute": 10,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "魔兽撞击头顶根道",
-   "trigger": "头顶的根道里，暴动的魔兽一下下撞着树根，外面的游侠一边打一边挖，号角声一阵比一阵急。"
-  },
-  {
-   "choice": "把学者的根系笔记当众摊开，还是让游侠以巡林队的名义担保",
-   "exits": [
-    {
-     "cost": "笔记里也画着世界树防御机关的位置",
-     "option": "当众摊开根系笔记"
-    },
-    {
-     "cost": "往后学者在林城里出一点事，都算在游侠头上",
-     "option": "由游侠以巡林队的名义担保"
-    }
-   ],
-   "far": {
-    "consequence": "学者三日内离开林城，游侠被收回巡林的弓",
-    "due_days": 3,
-    "trigger": "长老会定下驱逐令"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "hook_seranie_extra_honey",
-    "hook_seranie_where_botanist",
-    "hook_seranie_bow_offer",
-    "hook_botanist_silver_leaf",
-    "hook_botanist_vent_note"
-   ],
-   "id": "p_human_scholar_rumor",
+   "id": "p_treehouse_overheard",
    "immediate": {
     "minutes": 5,
-    "text": "卖蜜的伊芙把摊子往后挪了一步，不肯再卖给人类"
+    "text": "藤桥上的脚步停了一下，又慢慢走远。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_ranger_treehouse"
+   ],
+   "near": {
+    "deadline_minutes": 90,
+    "text": "巡林队换班时，这句话就会传到老巡林长耳朵里。"
+   },
+   "objective": "在这句话传进巡林队之前，给它一个说法。",
+   "source": "person",
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "树屋行囊引来的巡林队低语",
+   "trigger": "你和游侠在树屋收拾越界干粮和双人行囊，窗外藤桥上经过的年轻巡林队员，听见了你们商量天亮后走哪条边境小径。"
+  },
+  {
+   "choice": "拿证据当众澄清，还是先稳住交易？",
+   "exits": [
+    {
+     "cost": "打草惊蛇，守卫队长提前退回哨所戒备。",
+     "option": "请医者和学者在集市中心当众展示割痕拓片与树液化验"
+    },
+    {
+     "cost": "天亮前拿不出真凶的证据，你就要担督察失职之责。",
+     "option": "由记录官或大长老当场加盖盟约公证叶印，担保本季交易照常结算"
+    },
+    {
+     "cost": "草药商得按溢价一成收下主理人的库存。",
+     "option": "请花蜜主理人带头照常向人类商队交蜜"
+    }
+   ],
+   "far": {
+    "consequence": "长老会以民怨为由，拒绝续约。",
+    "due_days": 1,
+    "trigger": "盟约期满的审议"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_market_drain_rumor",
+   "immediate": {
+    "minutes": 5,
+    "text": "草药摊主把秤往回一收，不肯再卖给人类。"
    },
    "leverage": null,
    "location_ids": [
     "loc_elven_canopy_market"
    ],
    "near": {
-    "deadline_minutes": 540,
-    "text": "日落时，长老会在大树下议事"
+    "deadline_minutes": 240,
+    "text": "集市收摊前不澄清，这句话就会写进长老会的议程。"
    },
-   "objective": "在长老会下驱逐令之前，让集市上的人听到另一种说法",
+   "objective": "在流言变成驱逐令的理由之前，稳住集市。",
    "source": "rumor",
-   "start_minute": 540,
-   "tags": [],
-   "title": "集市上的传言",
-   "trigger": "地下暴动平息后的第二天，树冠集市上传开了：魔兽是被人类学者在根系里刻的标记引出来的"
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "人类抽干树芯灵脉的流言",
+   "trigger": "树冠集市上传开了：人类科考队用秘法抽干了世界树根脉。精灵摊主纷纷拒绝向人类商队交割草药与花蜜，场面一度剑拔弩张。"
+  },
+  {
+   "choice": "保明年的路，还是保这一季的成果？",
+   "exits": [
+    {
+     "cost": "本季谁也不能带走世界树活体枝条。",
+     "option": "优先促成下季通商与科考续约"
+    },
+    {
+     "cost": "集市草药商明年的贸易利润大幅缩水。",
+     "option": "放弃明年的大宗通商配额，换长老会特批一株自然脱落的活体气根"
+    },
+    {
+     "cost": "你和学者得延期留城一个月完成嫁接。",
+     "option": "请医者和学者联名签《根脉共护契约》，以嫁接帮主根愈合，换来双边续约"
+    }
+   ],
+   "far": {
+    "consequence": "没选的那一样，十年内都不会再有机会。",
+    "due_days": 30,
+    "trigger": "下一个结实季"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_pact_renewal_branch",
+   "immediate": {
+    "minutes": 15,
+    "text": "风道回廊里，长老会的传令官把两份文书并排摊开。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_root_wind_gallery"
+   ],
+   "near": {
+    "deadline_minutes": 300,
+    "text": "审议一开，二选一的结果就写进盟约纪要。"
+   },
+   "objective": "在盟约期满之前，定下要续约还是要枝条。",
+   "source": "institution",
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "盟约续签与活体枝条名额",
+   "trigger": "一季通商科考盟约今夜期满，长老会只肯在续签下季通商木契和特批带走一株世界树愈合枝条之间，二选一放行。"
+  },
+  {
+   "choice": "安抚树脉等通道自开，还是另找出路？",
+   "exits": [
+    {
+     "cost": "用光了医者本季珍藏的全部凝露膏。",
+     "option": "请医者调来凝露膏涂在主根创口上，等气根自然舒展"
+    },
+    {
+     "cost": "沉重的科考器皿只能留在木台上。",
+     "option": "跟着游侠攀树芯上方的中空树洞绳梯，直通树屋后露台"
+    },
+    {
+     "cost": "你们深夜滞留树芯的事惊动了整个巡林队。",
+     "option": "用传声木管通知老巡林长，从上层哨所放下藤篮接应"
+    }
+   ],
+   "far": {
+    "consequence": "两人深夜同困树芯的事传遍林城。",
+    "due_days": 1,
+    "trigger": "巡林队清点人数"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_root_closure_sealed",
+   "immediate": {
+    "minutes": 10,
+    "text": "木台四周的气根缓缓合拢，苔藓灯的光暗了一层。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_heartwood_hollow_ledge"
+   ],
+   "near": {
+    "deadline_minutes": 240,
+    "text": "天亮前出不去，驱逐的号角就会在你们缺席时吹响。"
+   },
+   "objective": "在通道重新打开之前，熬过这一夜。",
+   "source": "nature",
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "气根闭合与哨所落闸",
+   "trigger": "主根伤口受了惊扰，下层气根在夜里自然收拢、封住主通道，哨所又提前落下夜间木闸，你和同伴被留在树芯木台上。"
+  },
+  {
+   "choice": "守在树屋照料，还是连夜送去医者那里？",
+   "exits": [
+    {
+     "cost": "你们没法亲自出席集市的盟约初审。",
+     "option": "披上厚绒斗篷扶人半靠在木榻上，喂温花蜜水，派人请女医者带平喘退热的草药来"
+    },
+    {
+     "cost": "留在树屋桌上的科考手稿暂时没人看管。",
+     "option": "用体温暖热对方的手，护送去药草工坊熏蒸调理"
+    },
+    {
+     "cost": "错过了和花蜜主理人核对出城马车的约定。",
+     "option": "请老巡林长调来巡林队的软轿，把人送到林城医馆，你彻夜陪护"
+    }
+   ],
+   "far": {
+    "consequence": "缺席的人在审议上说不上话。",
+    "due_days": 1,
+    "trigger": "盟约初审"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_pollen_chill_fever",
+   "immediate": {
+    "minutes": 5,
+    "text": "同伴喘得说不出话，裹着斗篷还在发抖。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_ranger_treehouse"
+   ],
+   "near": {
+    "deadline_minutes": 90,
+    "text": "热度再往上走，就得请医者连夜出诊。"
+   },
+   "objective": "今晚把人的呼吸和体温稳住。",
+   "source": "nature",
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "地底寒气与花粉低热",
+   "trigger": "树芯的寒湿之气加上结实季浓郁的灵木花粉，刚回到树屋的同伴突然过敏喘息、旧伤寒战低热，指尖冰凉地靠在木榻边。"
   }
  ],
- "region": "地下千米世界树根系空腔树芯密室木台与万年铁木重闸滑道",
+ "region": "世界树下的精灵林城：树冠集市、游侠树屋与地下根道",
  "rules": [
   {
    "id": "r_forest_rules",
-   "text": "林城的规矩：人类进世界树的根系，必须有巡林游侠带着，出了事游侠担责。"
+   "text": "人类进世界树的根系，必须有巡林游侠带路，出了事游侠担责。"
   },
   {
-   "id": "r_knife_spine_release",
-   "text": "万年铁木重闸因偏心木楔自锁咬死在树槽中，必须借实心秘银短猎刀加厚背脊直角锯齿别入齿缝合力撬断骨销自救。"
+   "id": "r_pact_season",
+   "text": "人族与林城的通商科考盟约一季一签，期满不续，人类须在黎明前离开林城。"
   },
   {
-   "id": "r_root_survey_season",
-   "text": "根系勘察只有一季，雪落之前要把勘察记录交给长老会。"
+   "id": "r_no_iron_on_roots",
+   "text": "世界树的根脉不许铁器碰触，采样只能用骨刀和木夹。"
   },
   {
    "id": "r_no_fire_under_tree",
@@ -2145,99 +2326,97 @@
  ],
  "schema_version": 1,
  "stage_labels": {
-  "acquainted": "并肩巡林",
-  "committed": "破开铁闸",
-  "familiar": "幽树相依",
-  "flirting": "贴身避刺",
-  "intimate": "同命下撬",
-  "stranger": "清冷警惕",
-  "testing": "共持刀背"
+  "acquainted": "吊桥点头",
+  "committed": "银叶相许",
+  "familiar": "并肩巡林",
+  "flirting": "花廊试探",
+  "intimate": "树屋私情",
+  "stranger": "林间陌路",
+  "testing": "根道对峙"
  },
  "status": "released",
- "style_hint": "精灵林城的清透笔法：白天写树冠之间的吊桥、苔藓上的晨露、集市里精灵卖的月光花蜜；夜里写树芯空洞里越来越稀的空气、铁线荆棘一寸寸收拢的沙沙声。游侠清冷寡言，张力藏在被一个人类护在怀里时那一下僵住又松开的肩膀上。",
+ "style_hint": "精灵林城的清透笔法：吊桥、藤灯、苔藓上的晨露、集市里的百花蜜。写人在去留与续约之间怎么拉扯，游侠清冷寡言，张力藏在耳尖一红、手指一勾里；亲密只在两人清醒之后。",
  "tension_engines": [
   {
-   "id": "te_air_running_thin",
-   "text": "空气越来越稀，每吸一口都像在吞棉絮。"
+   "id": "te_pact_expiry",
+   "text": "一季通商科考盟约今夜期满，驱逐令已经拟好，人类学者和商队随时会被请出林城。"
   },
   {
-   "id": "te_bone_pin_jammed",
-   "text": "铁木重门的偏心木楔把骨销死死咬住，单人别不动分毫。"
+   "id": "te_root_scar_frame",
+   "text": "主根上的铁器割痕和集市上的流言，正把盗采的罪名一寸寸推到人类头上。"
   },
   {
-   "id": "te_knife_chest_press",
-   "text": "木台死角窄得转不开身，两人只能胸腹相贴，躲开四周的毒刺。"
+   "id": "te_ranger_stay_or_go",
+   "text": "游侠树屋里备好了两份越界干粮，摘不摘下巡林徽章，只差一个人开口。"
   },
   {
-   "id": "te_thorns_close_in",
-   "text": "铁线荆棘一寸寸往里收，离后背只剩一掌宽。"
+   "id": "te_living_branch",
+   "text": "唯一一株世界树活体枝条，谁带走、谁留下、谁拿它换续约，各有各的算盘。"
   }
  ],
  "title": "巡林的精灵游侠",
  "tone": [
-  "万年铁木重闸",
-  "地下千米密闭",
-  "秘银猎刀背锯",
-  "荆棘收缩绝境"
+  "结实季最后的花絮",
+  "一季盟约今夜期满",
+  "树屋里的两份干粮",
+  "主根上的铁器割痕"
  ],
  "twists": [
   {
    "category": "信息",
-   "id": "tw_walkway_collapses",
+   "id": "tw_root_theft_exposed",
    "requires": [
-    "elf_ranger_seranie"
+    "root_warden_captain"
    ],
-   "text": "暴动魔兽踏碎了学者携带的合金开锁凿，游侠随身佩戴的秘银短猎刀加厚背锯成为树洞内唯一救命杠杆。"
-  },
-  {
-   "category": "人事",
-   "id": "tw_thorn_grazes_arm",
-   "requires": [
-    "elf_ranger_seranie"
-   ],
-   "text": "活体荆棘毒刺逼近游侠脸颊，学者果断伸手挡在刺前护住游侠，两人借势滚入木台最深处死角稳固身形。"
+   "text": "{root_warden_captain.name}私割主根灵液的暗账和铁器割痕当众对质属实，长老会撤销驱逐令、收押队长，但下层树芯得封闭养护半季。"
   },
   {
    "category": "资源",
-   "id": "tw_sap_on_cheek",
+   "id": "tw_dew_graft",
    "requires": [
     "paleobotanist"
    ],
-   "text": "游侠额头虚汗顺着略带面颊滑落，滴在同伴手背上，在幽暗树洞中激荡起震撼灵魂的羁绊。"
+   "text": "{paleobotanist.name}和女医者联手用活体气根嫁接修复了主根，赢得老巡林长的敬重；代价是学者亲手毁掉了原本要带回王都立项的私藏样本。"
+  },
+  {
+   "category": "人事",
+   "id": "tw_border_envoy",
+   "requires": [
+    "elf_ranger_seranie"
+   ],
+   "text": "长老会特批{elf_ranger_seranie.name}卸下内圈巡林职责，改任往返人族与林城的边境巡林使，从此能光明正大与你同行；代价是交出树芯世袭守卫的名分。"
   },
   {
    "category": "制度",
-   "id": "tw_bodies_on_knife",
+   "id": "tw_pact_extended",
    "requires": [
-    "elf_ranger_seranie",
-    "paleobotanist"
+    "pressure"
    ],
-   "text": "万年铁木自锁极紧单人绝难撬动，游侠与学者必须胸腹相贴呼吸同频，将两人体重全力砸向猎刀刀柄。"
-  },
-  {
-   "category": "时限",
-   "id": "tw_last_breath_rush",
-   "requires": [
-    "elf_ranger_seranie"
-   ],
-   "text": "树芯氧气仅剩最后两分钟，剧烈缺氧导致意识濒临模糊，两人被迫孤注一掷将生命完全托付于最后一撬。"
+   "text": "大长老与记录官签下《人族与林城续盟纪要》，花蜜与草药商队获准全年通商，每支商队须缴一成利润作世界树护林基金。"
   },
   {
    "category": "关系",
-   "id": "tw_back_to_bark",
+   "id": "tw_mentor_gives_bow",
    "requires": [
-    "elf_ranger_seranie",
-    "paleobotanist"
+    "old_ranger_mentor"
    ],
-   "text": "学者以后背顶住铁化木瘤化作力臂支座，游侠双臂合抱顺势猛压，秘银刀背终于将死卡骨销彻底别断。"
+   "text": "{old_ranger_mentor.name}在黎明前把自己的长弓赠给游侠，默许游侠随你的马车越过林城边界；人前斥责了一整季，最后独自扛下了保守派长老的问责。"
   },
   {
    "category": "意外",
-   "id": "tw_pin_snaps",
+   "id": "tw_honey_buys_route",
+   "requires": [
+    "honey_keeper"
+   ],
+   "text": "{honey_keeper.name}主动补交罚金，捐出本季灵脂协助医馆治树，换下季独家承运权；代价是把边境走私渠道全数交给巡林队监管。"
+  },
+  {
+   "category": "时限",
+   "id": "tw_dawn_bridge",
    "requires": [
     "elf_ranger_seranie"
    ],
-   "text": "死卡骨销断裂，重木大门弹开半尺空隙，外部清风涌入迫使毒刺荆棘退缩，两人携手脱离绝境自救成功。"
+   "text": "晨光穿透世界树冠，出城吊桥已经放下；你得决定是带{elf_ranger_seranie.name}踏过吊桥去人类世界，还是一起留在树屋守望下一季花开。"
   }
  ]
 }

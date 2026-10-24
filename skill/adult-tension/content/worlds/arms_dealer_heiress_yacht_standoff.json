@@ -1,109 +1,111 @@
 {
  "background_cast": [
   {
-   "adult_context": "年满二十周岁超级防暴游艇密闭舱室高压维生设备部件。",
+   "adult_context": "年满二十四岁的游艇正式雇员。",
    "age_range": [
-    20,
-    22
+    24,
+    40
+   ],
+   "function": "witness",
+   "gender": "any",
+   "id": "bg_saloon_steward",
+   "line": "吧台这边我什么都没看见，苏打水倒是添了三回。",
+   "location_ids": [
+    "loc_main_saloon"
+   ],
+   "name": null,
+   "role": "主沙龙侍应生"
+  },
+  {
+   "adult_context": "年满三十岁的买方商务代表。",
+   "age_range": [
+    30,
+    50
    ],
    "function": "obstacle",
    "gender": "any",
-   "id": "bg_auxiliary_oxygen_scrubber_rack",
-   "line": "{npc.name}：（蜂鸣警报低沉回响，指示表指针正缓缓滑向危险红色真空刻度，无情催促着生还者必须尽快破门突围）",
+   "id": "bg_buyer_envoy",
+   "line": "尾款的事，我们老板只等到交割窗口关闭。",
    "location_ids": [
-    "panic_room_command_citadel_deck_three"
+    "loc_main_saloon"
    ],
    "name": null,
-   "role": "安全屋角落持续发出警报红光之双联装备用氧"
+   "role": "买方代表"
   },
   {
-   "adult_context": "年满二十一周岁船舶水下密闭隔舱机电动力灾变环境。",
+   "adult_context": "年满二十二岁的持证甲板水手。",
    "age_range": [
-    21,
-    23
+    22,
+    40
    ],
-   "function": "obstacle",
+   "function": "rumor_source",
    "gender": "any",
-   "id": "bg_flooded_bilge_turbid_fuel_slosh",
-   "line": "{npc.name}：（积水随船身颠簸剧烈拍打着锈蚀钢板，散发着刺鼻难忍之易燃油气，警示着电气短路大火之致命风险）",
+   "id": "bg_deckhand",
+   "line": "听说那块芯片一离船，底舱就要炸。",
    "location_ids": [
-    "yacht_lower_bilge_engine_compartment"
+    "loc_main_saloon",
+    "loc_flybridge_wheelhouse"
    ],
    "name": null,
-   "role": "底层机舱深达半米漂浮着彩虹色重柴油与机油"
+   "role": "甲板水手"
   },
   {
-   "adult_context": "年满二十周岁豪华社交场所严重战损室内建筑装潢遗存。",
+   "adult_context": "年满二十五岁的持证无线电员。",
    "age_range": [
-    20,
-    22
-   ],
-   "function": "helper",
-   "gender": "any",
-   "id": "bg_shattered_crystal_chandelier_sprawl",
-   "line": "{npc.name}：（锋利的厚玻璃碎片在闪电下泛着冷光，不仅能清晰倒映敌军战靴反光，更能作为割断绑绳之应急锐器）",
-   "location_ids": [
-    "main_saloon_bullet_riddled_gallery"
-   ],
-   "name": null,
-   "role": "主沙龙大理石地面铺满碎裂千瓣水晶吊灯与名"
-  },
-  {
-   "adult_context": "年满二十一周岁现代船舶多普勒高频毫米波雷达航海仪器。",
-   "age_range": [
-    21,
-    23
-   ],
-   "function": "obstacle",
-   "gender": "any",
-   "id": "bg_black_shark_reef_radar_blip",
-   "line": "{npc.name}：（距离数字在读秒中急速缩减，犹如催命死神无情倒计时着全船骨骼粉碎沉没之灭顶灾难）",
-   "location_ids": [
-    "panic_room_command_citadel_deck_three"
-   ],
-   "name": null,
-   "role": "主控雷达屏幕上以鲜红断续光点疯狂闪烁逼近"
-  },
-  {
-   "adult_context": "年满二十周岁特种破障军用工业级高温热切割作业。",
-   "age_range": [
-    20,
-    22
-   ],
-   "function": "obstacle",
-   "gender": "any",
-   "id": "bg_thermite_torch_molten_sparks_shower",
-   "line": "{npc.name}：（刺耳滋滋气割声如毒蛇吐信，灼热火星飞溅在防弹装甲地面上，宣示着最后物理屏障即将彻底沦陷）",
-   "location_ids": [
-    "panic_room_command_citadel_deck_three"
-   ],
-   "name": null,
-   "role": "门缝外氧乙炔气割喷枪喷涌而出温度高达两千"
-  },
-  {
-   "adult_context": "年满二十一周岁现代海军航空兵夜间全天候战术搜救照明设备。",
-   "age_range": [
-    21,
-    23
+    25,
+    45
    ],
    "function": "messenger",
    "gender": "any",
-   "id": "bg_rescue_helicopter_searchlight_beam",
-   "line": "{npc.name}：（耀眼夺目的雪白光柱撕裂漆黑海面，驱散一切阴霾与杀机，向浴血生还者宣告着铁血正义与黎明生机之降临）",
+   "id": "bg_radio_officer",
+   "line": "卫星频道又有人呼叫，说是家族舰队。",
    "location_ids": [
-    "main_saloon_bullet_riddled_gallery"
+    "loc_flybridge_wheelhouse"
    ],
    "name": null,
-   "role": "穿透暴风雨狂澜扫过游艇甲板之万流明强光武"
+   "role": "无线电值班员"
+  },
+  {
+   "adult_context": "年满二十五岁的合同雇佣兵。",
+   "age_range": [
+    25,
+    40
+   ],
+   "function": "obstacle",
+   "gender": "any",
+   "id": "bg_mercenary_guard",
+   "line": "总监说了，三层步梯谁也不许上。",
+   "location_ids": [
+    "loc_main_saloon",
+    "loc_bilge_engine_control"
+   ],
+   "name": null,
+   "role": "叛乱队伍里的雇佣兵"
+  },
+  {
+   "adult_context": "年满三十五岁的随船主厨。",
+   "age_range": [
+    35,
+    55
+   ],
+   "function": "helper",
+   "gender": "any",
+   "id": "bg_galley_cook",
+   "line": "热汤给你留着，别让外面那些人看见。",
+   "location_ids": [
+    "loc_main_saloon",
+    "loc_mid_deck_infirmary_cabin"
+   ],
+   "name": null,
+   "role": "厨房主厨"
   }
  ],
  "cast_combos": [
   {
-   "chemistry": "{arms_dealer_heiress_kristina_vance.name}在安全屋里因左臂失血发抖，你解下领带单膝跪地咬紧止血，二人背抵背卡在操作台下同御横摇，千金从暗袋拆出芯片按指纹交给你保管，{senior_yacht_captain_eriksen_loyal.name}通过对讲机指引避碰航线。军火女王卸下心防，是在驶出风暴之后。",
-   "id": "combo_heiress_bodyguard_citadel_defense",
+   "chemistry": "{arms_dealer_heiress_kristina_vance.name}是你寸步不离护着的雇主，也是越过界、和你定下暗号的人。",
+   "id": "cc_heiress_and_bodyguard_citadel",
    "identity_ids": [
-    "chief_personal_tactical_bodyguard_youth",
-    "disgraced_private_mercenary_scout_youth"
+    "pi_personal_bodyguard_chief"
    ],
    "player_positions": [
     "low"
@@ -114,188 +116,39 @@
      "a": "player",
      "a_to_b": {
       "tension": 3,
-      "trust": 5
+      "trust": 4
      },
      "b": "arms_dealer_heiress_kristina_vance",
      "b_to_a": {
-      "tension": 3,
-      "trust": 5
+      "tension": 4,
+      "trust": 4
      },
-     "reason": "敬佩其临危不惧誓死不向海盗屈膝之绝代豪门傲骨，愿以血肉之躯化作此生永不破损之叹息铁壁护其周全。",
+     "reason": "日内瓦防务展结束后的休整夜，两人在安全屋里拥吻越了界，定下说暗号就停的约定。",
      "stage": "intimate"
-    },
-    {
-     "a": "senior_yacht_captain_eriksen_loyal",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 5
-     },
-     "b": "arms_dealer_heiress_kristina_vance",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 5
-     },
-     "reason": "瓦伦丁家族合法第一继承人，全船誓死必须保全之尊贵船东。",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
-     },
-     "b": "senior_yacht_captain_eriksen_loyal",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "跨国安保防务特勤贴身战术保镖青年队长与游艇正牌远洋持证船长兼防海盗战术操舵官在今夜前只打过照面。",
-     "stage": "acquainted"
     }
    ],
    "slots": [
-    "arms_dealer_heiress_kristina_vance",
-    "senior_yacht_captain_eriksen_loyal"
+    "arms_dealer_heiress_kristina_vance"
    ],
    "stakes": {
-    "irreplaceable_goal": "止住手臂出血并携带芯片安全杀入机舱重启主机避开暗礁。",
-    "limit_gap": "财阀天之骄女与拿命换钱的年轻保镖平日云泥之别，此刻挤在同一间密室里，一个止血一个守门，谁也顾不上身份。",
-    "meeting_reason": "游艇三层防弹安全屋遭遇气割破门且氧气即将耗尽避难据守。",
-    "resource_gap": "千金手握百亿军工核心芯片与最高指挥密钥但身负枪伤礼服破损行动不便，青年手握过硬战术枪法与钢铁体魄但身处底层雇员卑微阶层。"
+    "irreplaceable_goal": "继承人要你回答：今晚是护着人守到天亮，还是陪人一起走。",
+    "limit_gap": "继承人一走就是叛逃，你开口留人只是个保镖。",
+    "meeting_reason": "安保总监封了步梯，{arms_dealer_heiress_kristina_vance.name}在安全屋里替你系紧防弹背心搭扣，问你敢不敢赌一把带走冷钱包。",
+    "resource_gap": "继承人握着主密钥和整条船的分账权，你只有一张副门禁卡。"
    },
    "tags": [
-    "workplace_power",
-    "crime"
+    "intimate"
    ],
    "tension_engine_ids": [
-    "te_heiress_arrogance_vs_vulnerable_wound",
-    "te_panic_room_oxygen_breach_vs_black_sha"
+    "te_mutiny_split",
+    "te_two_key_choice"
    ]
   },
   {
-   "chemistry": "{mutinous_security_director_marcus_black.name}率死士在底层机舱狭窄过道设伏企图夺取芯片，你在齐膝油水中拔刀飞身突击近身格斗打飞叛首霰弹枪，{arms_dealer_heiress_kristina_vance.name}在配电盘后单手举枪精准补枪击毙两名伏兵，青年顺势一记战术锁喉将贪婪叛首狠狠按死在高压排气管上当场制服彻底粉碎叛乱企图。",
-   "id": "combo_engine_room_parry_mutineer_ambush",
+   "chemistry": "{arms_dealer_heiress_kristina_vance.name}和你借三次公海交割私定终身，约好做完这单就金盆洗手。",
+   "id": "cc_heiress_and_broker_escrow",
    "identity_ids": [
-    "chief_personal_tactical_bodyguard_youth",
-    "yacht_chief_engineer_apprentice_youth",
-    "disgraced_private_mercenary_scout_youth"
-   ],
-   "player_positions": [
-    "low",
-    "equal"
-   ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "mutinous_security_director_marcus_black",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "背信弃义弑主谋财之贪婪恶徒，当场格杀绝不手软。",
-     "stage": "stranger"
-    },
-    {
-     "a": "arms_dealer_heiress_kristina_vance",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "mutinous_security_director_marcus_black",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "出卖家族残害无辜之白眼狼叛徒，定以瓦伦丁家法严惩不贷。",
-     "stage": "stranger"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
-     },
-     "b": "arms_dealer_heiress_kristina_vance",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "瓦伦丁军工联合体执行副总裁兼公海防空算力核心合法继承人只听人提过跨国安保防务特勤贴身战术保镖青年队长的名字，今夜才第一次对上眼。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
-     },
-     "b": "defecting_sniper_kasim",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "叛军雇佣兵狙击手只听人提过跨国安保防务特勤贴身战术保镖青年队长的名字，今夜才第一次对上眼。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "mutinous_security_director_marcus_black",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
-     },
-     "b": "defecting_sniper_kasim",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "叛军雇佣兵狙击手只听人提过瓦伦丁联合体公海安保前总监兼叛乱雇佣兵指挥官的名字，今夜才第一次对上眼。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "arms_dealer_heiress_kristina_vance",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
-     },
-     "b": "defecting_sniper_kasim",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "叛军雇佣兵狙击手只听人提过瓦伦丁军工联合体执行副总裁兼公海防空算力核心合法继承人的名字，今夜才第一次对上眼。",
-     "stage": "acquainted"
-    }
-   ],
-   "slots": [
-    "mutinous_security_director_marcus_black",
-    "arms_dealer_heiress_kristina_vance",
-    "defecting_sniper_kasim"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "击毙叛徒首领并强行合闸重启游艇动力系统脱离暗礁险境。",
-    "limit_gap": "齐膝油水深处近身短兵相接，彻底清算家奴背叛血债。",
-    "meeting_reason": "底层机舱不足两米宽主柴油机狭窄格栅走道生死对决。",
-    "resource_gap": "叛军指挥官手持重型霰弹枪与战术防暴盾牌，青年与千金仅有微型手枪与折叠军刀。"
-   },
-   "tags": [
-    "intimate",
-    "workplace_power"
-   ],
-   "tension_engine_ids": [
-    "te_mutinous_security_director_coup_vs_lo",
-    "te_panic_room_oxygen_breach_vs_black_sha"
-   ]
-  },
-  {
-   "chemistry": "晨光破晓穿透台风眼平静海面，{naval_fleet_rescue_commander_valentin.name}少校率领近卫搜救直升机索降甲板接管防务，{arms_dealer_heiress_kristina_vance.name}在你搀扶下昂首踏上露天停机坪，当众将完整无损之核心算力芯片呈报家族舰队，少校舰长当场向青年保镖立正敬礼并授予最高特勋，二人携手迎来公海新生。",
-   "id": "combo_fleet_arrival_dawn_airdrop_rescue",
-   "identity_ids": [
-    "yacht_chief_engineer_apprentice_youth"
+    "pi_offshore_escrow_broker"
    ],
    "player_positions": [
     "equal"
@@ -303,72 +156,42 @@
    "power_structure": "equal",
    "relations": [
     {
-     "a": "arms_dealer_heiress_kristina_vance",
+     "a": "player",
      "a_to_b": {
-      "tension": 1,
+      "tension": 2,
       "trust": 5
-     },
-     "b": "player",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 5
-     },
-     "reason": "在万丈狂涛中用后背与每一发子弹替我挡下死神之唯一至爱，克里斯蒂娜此生生死相随。",
-     "stage": "committed"
-    },
-    {
-     "a": "naval_fleet_rescue_commander_valentin",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 5
-     },
-     "b": "player",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 5
-     },
-     "reason": "由衷敬佩其过硬军人素养与舍生取义风骨，视青年为真正配得上守护堂妹之当世豪杰。",
-     "stage": "committed"
-    },
-    {
-     "a": "naval_fleet_rescue_commander_valentin",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
      },
      "b": "arms_dealer_heiress_kristina_vance",
      "b_to_a": {
       "tension": 3,
-      "trust": 2
+      "trust": 5
      },
-     "reason": "瓦伦丁联合体近卫舰队特遣搜救支队长兼防务巡洋舰少校舰长和瓦伦丁军工联合体执行副总裁兼公海防空算力核心合法继承人各怀心事，被这场意外硬塞进同一个角落。",
-     "stage": "acquainted"
+     "reason": "继承人自愿把苏黎世私人金库的副匙交给你贴身收管，约好这单之后一起收手。",
+     "stage": "committed"
     }
    ],
    "slots": [
-    "naval_fleet_rescue_commander_valentin",
     "arms_dealer_heiress_kristina_vance"
    ],
    "stakes": {
-    "irreplaceable_goal": "宣告平叛大获全胜并确立二人终身同生共死之契约守护羁绊。",
-    "limit_gap": "从密室中相濡以沫换命疗伤的落难男女，升华为执掌全球军工帝国至高安防与商业权柄之传奇伴侣神话。",
-    "meeting_reason": "游艇顶层主停机坪阳光洒落之破晓受勋大典现场。",
-    "resource_gap": "二人携完整芯片与平叛全功名扬全球防务界，获得联合体董事会无上敬重。"
+    "irreplaceable_goal": "两人得决定：是按条款收场，还是借这一单彻底脱身。",
+    "limit_gap": "继承人背着家族，你背着中立的名声。",
+    "meeting_reason": "买家尾款迟迟未到，{arms_dealer_heiress_kristina_vance.name}在全息海图前握住你的手，商量要不要启动违约没收定金。",
+    "resource_gap": "继承人握着主密钥，你握着共管账户的放款副密钥。"
    },
    "tags": [
-    "workplace_power",
-    "crime"
+    "intimate"
    ],
    "tension_engine_ids": [
-    "te_hundred_billion_chip_codex_vs_lifelon",
-    "te_mutinous_security_director_coup_vs_lo"
+    "te_escrow_freeze",
+    "te_two_key_choice"
    ]
   },
   {
-   "chemistry": "在暗礁仅隔三十米千钧一发之际，机舱成功轰鸣倒车，{senior_yacht_captain_eriksen_loyal.name}拼尽最后一丝力气打满舵轮，游艇带起漫天白浪与礁石擦肩而过毫发无伤，{arms_dealer_heiress_kristina_vance.name}与你在剧烈颠簸中相拥倒在驾驶台软座上相视大笑，在狂风暴雨中淬炼出性命相托之绝对信任与释然。",
-   "id": "combo_captain_wheel_reef_evasion_triumph",
+   "chemistry": "{arms_dealer_heiress_kristina_vance.name}向你交了家族走私航线的底，你握着能让整船封存的冻结令。",
+   "id": "cc_inspector_and_heiress_audit",
    "identity_ids": [
-    "maritime_undercover_naval_intelligence_o"
+    "pi_maritime_compliance_inspector"
    ],
    "player_positions": [
     "high"
@@ -376,750 +199,974 @@
    "power_structure": "player_high",
    "relations": [
     {
-     "a": "arms_dealer_heiress_kristina_vance",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 5
-     },
-     "b": "senior_yacht_captain_eriksen_loyal",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 5
-     },
-     "reason": "以命操舵保全全船之老英雄，瓦伦丁家族永世铭记之忠勇功臣。",
-     "stage": "committed"
-    },
-    {
      "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 5
-     },
-     "b": "senior_yacht_captain_eriksen_loyal",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 5
-     },
-     "reason": "老当益壮沉着如山之老前辈，值得托付后背之真海狼。",
-     "stage": "committed"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
+      "tension": 4,
+      "trust": 3
      },
      "b": "arms_dealer_heiress_kristina_vance",
      "b_to_a": {
-      "tension": 3,
-      "trust": 2
+      "tension": 4,
+      "trust": 4
      },
-     "reason": "瓦伦丁军工联合体执行副总裁兼公海防空算力核心合法继承人对跨国安保防务特勤贴身战术保镖青年队长本无交情，眼下却不得不互相照应。",
-     "stage": "acquainted"
-    },
+     "reason": "启航第三晚在飞桥海图台核对出口批文时两人相拥深吻，继承人把走私航线底单全交了底。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "arms_dealer_heiress_kristina_vance"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你得决定是秉公封存，还是替继承人挡下这一刀。",
+    "limit_gap": "你偏袒一方就丢了督察资格，继承人求你就是认了走私。",
+    "meeting_reason": "家族护卫舰逼近，{arms_dealer_heiress_kristina_vance.name}把冷钱包推到你面前，请你以督察名义暂扣芯片挡住家族收权。",
+    "resource_gap": "你一纸冻结令就能暂扣芯片，继承人只能求你出手。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_family_fleet"
+   ]
+  },
+  {
+   "chemistry": "{arms_dealer_heiress_kristina_vance.name}总爱借着船身摇晃靠过来，笑问你敢不敢把船开去没有家族眼线的地方。",
+   "id": "cc_heiress_and_engineer_bilge",
+   "identity_ids": [
+    "pi_acting_second_engineer",
+    "pi_personal_bodyguard_chief",
+    "pi_offshore_escrow_broker",
+    "pi_maritime_compliance_inspector"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "arms_dealer_heiress_kristina_vance",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "前夜巡检底舱隔音舱壁时继承人扶住你的腰，贴在你耳畔问你敢不敢开去南美锚地。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "arms_dealer_heiress_kristina_vance"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你得决定要不要把整条船的电交到继承人手里。",
+    "limit_gap": "继承人走不出家族，你一断电就成了头号嫌疑人。",
+    "meeting_reason": "{arms_dealer_heiress_kristina_vance.name}用内线把你叫进轮机控制室，要你切断外部电梯电源，把安全屋锁死在你们两人手里。",
+    "resource_gap": "继承人握着门禁和钱，你握着全船的电。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_mutiny_split"
+   ]
+  },
+  {
+   "chemistry": "{yacht_medic_signe.name}和你在医疗舱值过夜、听过黑胶，也把药房备用门禁卡分了你一张。",
+   "id": "cc_signe_and_engineer_infirmary",
+   "identity_ids": [
+    "pi_acting_second_engineer"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "yacht_medic_signe",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "船过赤道无风带那晚两人在医疗舱听黑胶，在诊疗内间拥吻缠绵，医护官分了你一张门禁卡。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "yacht_medic_signe"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "两人得决定是悄悄追下去，还是先护住彼此。",
+    "limit_gap": "医护官欠着继承人的人情，你在底舱走不开。",
+    "meeting_reason": "{yacht_medic_signe.name}把你拉进医疗舱，指着少了两盒镇静剂的药柜低声说，总监的人刚取走了能让人昏睡的针剂。",
+    "resource_gap": "医护官握着药柜和停职判定权，你握着全船的电和管网图。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_mutiny_split"
+   ]
+  },
+  {
+   "chemistry": "{senior_yacht_captain_eriksen_loyal.name}和你在新加坡港务局并肩吵过一下午，是你在船上最信得过的老搭档。",
+   "id": "cc_eriksen_and_broker_wheelhouse",
+   "identity_ids": [
+    "pi_offshore_escrow_broker"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 3
+     },
+     "b": "senior_yacht_captain_eriksen_loyal",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 3
+     },
+     "reason": "上月在新加坡港处理海事滞留罚单，两人据理力争一下午，事后在码头分食一盒薄荷糖。",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
+    "senior_yacht_captain_eriksen_loyal"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你们得一起定下今晚这船往哪儿开。",
+    "limit_gap": "船长不许过问货，你不许偏向任何一方。",
+    "meeting_reason": "{senior_yacht_captain_eriksen_loyal.name}关掉自动导航，指着雷达上的台风眼边缘问你，今晚停泊交货还是转向深海。",
+    "resource_gap": "船长握着航线和救生快艇，你握着交割合同和放款副密钥。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_escrow_freeze"
+   ]
+  },
+  {
+   "chemistry": "{naval_fleet_rescue_commander_valentin.name}在摩纳哥揽过你的肩，半真半假地邀你跳槽，如今隔着卫星频道又来试探你。",
+   "id": "cc_inspector_and_valentin_channel",
+   "identity_ids": [
+    "pi_maritime_compliance_inspector"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
     {
      "a": "player",
      "a_to_b": {
       "tension": 3,
       "trust": 2
      },
-     "b": "yacht_medic_signe",
+     "b": "naval_fleet_rescue_commander_valentin",
      "b_to_a": {
-      "tension": 3,
-      "trust": 2
+      "tension": 4,
+      "trust": 3
      },
-     "reason": "游艇随船医护官对跨国安保防务特勤贴身战术保镖青年队长本无交情，眼下却不得不互相照应。",
-     "stage": "acquainted"
-    },
+     "reason": "去年摩纳哥防务峰会晚宴后两人同乘快艇夜游海湾，指挥官揽住你的肩邀你跳槽共事。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "naval_fleet_rescue_commander_valentin"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你得决定这一纸冻结令为谁签。",
+    "limit_gap": "你被收买就身败名裂，指挥官没有密令不能登船。",
+    "meeting_reason": "{naval_fleet_rescue_commander_valentin.name}通过加密卫星频道联系飞桥上的你，开出家族信托的顾问席位，试探你肯不肯配合收回印信。",
+    "resource_gap": "你的冻结令能让舰队无权登船，指挥官只能来求你。"
+   },
+   "tags": [
+    "intimate",
+    "workplace_power"
+   ],
+   "tension_engine_ids": [
+    "te_family_fleet"
+   ]
+  },
+  {
+   "chemistry": "{defecting_sniper_kasim.name}在靶场替你调过托腮，提醒过你提防安保总监，从那以后一直在暗处看着你。",
+   "id": "cc_kasim_and_bodyguard_deck",
+   "identity_ids": [
+    "pi_personal_bodyguard_chief"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
     {
-     "a": "senior_yacht_captain_eriksen_loyal",
+     "a": "player",
      "a_to_b": {
       "tension": 3,
-      "trust": 2
+      "trust": 3
      },
-     "b": "yacht_medic_signe",
+     "b": "defecting_sniper_kasim",
      "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "前日在甲板靶场校枪，射手从身后贴近替你调整托腮，低声提醒你提防总监的夜班调动。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "defecting_sniper_kasim"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "射手在等你一句话：信不信这条退路。",
+    "limit_gap": "射手倒戈就是叛变，你信错人就护不住雇主。",
+    "meeting_reason": "{defecting_sniper_kasim.name}借巡逻交接在飞桥廊下按住你的手腕，把一枚装着叛乱布防图的存储卡塞进你掌心。",
+    "resource_gap": "射手握着制高点和探照灯，你只有一张副门禁卡。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_mutiny_split"
+   ]
+  },
+  {
+   "chemistry": "{mutinous_security_director_marcus_black.name}想把你拉进分账，{defecting_sniper_kasim.name}早和你约好了生变时的暗号；两边都在等你开口。",
+   "id": "cc_marcus_kasim_saloon_mutiny",
+   "identity_ids": [
+    "pi_personal_bodyguard_chief"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
       "tension": 3,
+      "trust": 4
+     },
+     "b": "defecting_sniper_kasim",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "三天前休整夜两人在底舱备品间避开监控相拥热吻，约好船上生变就用三声轻叩作掩护。",
+     "stage": "intimate"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 1
+     },
+     "b": "mutinous_security_director_marcus_black",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 1
+     },
+     "reason": "昨晚查哨时总监拍着你的肩许诺分你两成红利，暗中试探你有没有安全屋副门禁卡。",
+     "stage": "testing"
+    },
+    {
+     "a": "mutinous_security_director_marcus_black",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 1
+     },
+     "b": "defecting_sniper_kasim",
+     "b_to_a": {
+      "tension": 5,
+      "trust": 0
+     },
+     "reason": "射手是总监一手带出来的人，如今暗中录下了总监的每一句密谋。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "mutinous_security_director_marcus_black",
+    "defecting_sniper_kasim"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你得在总监面前演下去，又不能让射手白白冒险。",
+    "limit_gap": "你一露馅就被总监当场扣下，射手倒戈得太早也会没命。",
+    "meeting_reason": "{mutinous_security_director_marcus_black.name}封了步梯盘问你的路线，回廊上的{defecting_sniper_kasim.name}借擦瞄准镜打手势：救生艇被动了手脚，先应承。",
+    "resource_gap": "总监握着枪械库和全船岗哨，射手握着制高点，你夹在中间。"
+   },
+   "tags": [
+    "intimate",
+    "violence"
+   ],
+   "tension_engine_ids": [
+    "te_mutiny_split"
+   ]
+  },
+  {
+   "chemistry": "{arms_dealer_heiress_kristina_vance.name}和你在安全屋里温存过，{naval_fleet_rescue_commander_valentin.name}在港口咖啡厅试探过你；今晚两人隔着全息通讯台对峙。",
+   "id": "cc_kristina_valentin_comms_standoff",
+   "identity_ids": [
+    "pi_offshore_escrow_broker",
+    "pi_maritime_compliance_inspector"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "arms_dealer_heiress_kristina_vance",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "前夜在安全屋核对完芯片底码，两人在真皮沙发上相拥温存，继承人坦白了脱离家族的计划。",
+     "stage": "intimate"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 1
+     },
+     "b": "naval_fleet_rescue_commander_valentin",
+     "b_to_a": {
+      "tension": 4,
       "trust": 2
      },
-     "reason": "游艇随船医护官对游艇正牌远洋持证船长兼防海盗战术操舵官本无交情，眼下却不得不互相照应。",
-     "stage": "acquainted"
+     "reason": "登船前指挥官在港口咖啡厅单独约见你，试探你在这笔交易里偏向继承人还是元老院。",
+     "stage": "testing"
     },
     {
      "a": "arms_dealer_heiress_kristina_vance",
      "a_to_b": {
-      "tension": 3,
-      "trust": 2
+      "tension": 5,
+      "trust": 1
      },
-     "b": "yacht_medic_signe",
+     "b": "naval_fleet_rescue_commander_valentin",
      "b_to_a": {
-      "tension": 3,
-      "trust": 2
+      "tension": 4,
+      "trust": 1
      },
-     "reason": "游艇随船医护官对瓦伦丁军工联合体执行副总裁兼公海防空算力核心合法继承人本无交情，眼下却不得不互相照应。",
-     "stage": "acquainted"
+     "reason": "继承人和指挥官一起长大，如今一个要走，一个奉命收权。",
+     "stage": "testing"
     }
    ],
    "slots": [
-    "senior_yacht_captain_eriksen_loyal",
     "arms_dealer_heiress_kristina_vance",
-    "yacht_medic_signe"
+    "naval_fleet_rescue_commander_valentin"
    ],
    "stakes": {
-    "irreplaceable_goal": "极限操舵避开致命暗礁保全全船人员与核心资产完好。",
-    "limit_gap": "从即将碎骨沉海的绝望死境，一跃突破风眼重获新生。",
-    "meeting_reason": "游艇四层主驾驶台全景落地防弹风挡前。",
-    "resource_gap": "距暗礁仅隔毫厘之生死倒计时，全船生还希望系于舵轮与机舱重启瞬间。"
+    "irreplaceable_goal": "分账终端在你手边，你按不按下去，决定这场家族对峙的输赢。",
+    "limit_gap": "继承人交权就失去一切，指挥官空手回去要被元老院问罪。",
+    "meeting_reason": "{naval_fleet_rescue_commander_valentin.name}在通讯台上要求移交核心权限，{arms_dealer_heiress_kristina_vance.name}面不改色，桌下勾住你的手指递来分账终端。",
+    "resource_gap": "继承人握着主密钥和指挥官的信托窟窿，指挥官握着舰队和接管授权。"
    },
    "tags": [
-    "workplace_power",
-    "crime"
+    "intimate",
+    "workplace_power"
    ],
    "tension_engine_ids": [
-    "te_panic_room_oxygen_breach_vs_black_sha",
-    "te_heiress_arrogance_vs_vulnerable_wound"
+    "te_family_fleet",
+    "te_two_key_choice"
    ]
   }
  ],
  "channels": [
   {
    "fidelity": "exact",
-   "id": "ch_kristina_dress_rustle_and_breath_cita",
-   "reach": "密闭的防弹安全屋里，千金因伤痛压抑的喘息、领带勒紧时布料的摩擦声，与门外气割枪一寸寸烧穿门板的尖啸。",
-   "text": "千金压抑的喘息与门外气割的尖啸"
-  },
-  {
-   "fidelity": "distorted",
-   "id": "ch_reef_surge_groan_and_hull_twist",
-   "reach": "游艇在数丈巨浪横摇中主承重龙骨发出的低频沉闷金属呻吟、十级狂风穿过破碎舷窗的凄厉尖啸、雷达警报蜂鸣在耳膜边震颤共鸣之濒死窒息紧绷感。",
-   "text": "暗礁狂涛撞击龙骨闷响与钛合金舱壁扭曲呻吟"
+   "id": "ch_ship_broadcast",
+   "reach": "一句话传遍全船每一个舱室",
+   "text": "船内广播"
   },
   {
    "fidelity": "exact",
-   "id": "ch_glock_gunfire_crack_and_torch_hiss",
-   "reach": "狭窄舱道内九毫米手枪击发的震耳爆鸣与空弹壳掉落大理石地面的清脆弹跳声、门缝处高温气割枪喷涌熔岩般火星的刺耳灼痛声与海盗嚣张狂妄的踹门咆哮声。",
-   "text": "格洛克战术手枪爆鸣与气割喷枪白热灼烧尖啸"
+   "id": "ch_satellite_link",
+   "reach": "只到家族舰队和飞桥驾驶室",
+   "text": "加密卫星频道"
+  },
+  {
+   "fidelity": "distorted",
+   "id": "ch_crew_whispers",
+   "reach": "一顿饭工夫传到底舱和甲板",
+   "text": "船员之间的私语"
   }
  ],
  "character_templates": [
   {
-   "adult_context": "年满二十周岁跨国尖端军火联合体第一顺位掌舵千金兼防务合同全权签发人。",
+   "adult_context": "年满二十六岁，已在家族军工联合体任执行副总裁四年。",
    "age_range": [
-    20,
-    22
+    26,
+    28
    ],
    "appearance_options": [
-    "一身裁剪极其贴身勾勒曼妙曲线之墨黑高定露背开叉真丝鱼尾晚礼服，肩带与裙摆被弹片撕扯出道道狭长口子，露出如凝脂白玉般欺霜赛雪之修长长腿与圆润香肩，单手依旧平稳握持定制秘银雕花消音自卫手枪，展现出顶级豪门军火女王不可动摇之冷艳矜贵气场。",
-    "被青年护在防弹背心与钛合金装甲板之间，游艇在狂涛里剧烈横摇，左臂缠着那条被咬紧的领带，疼得额角冒冷汗，下巴却仍高高扬着，一边报出门外脚步的方位，一边把弹匣一颗颗压满。"
+    "一身贴身剪裁的墨黑高定露背开叉真丝鱼尾晚礼服，长发挽起，冷艳矜贵，腰侧别着那把刻有家族族徽的自卫手枪。",
+    "卸了耳坠赤脚站在全息海图台前，礼服外随手披一件男式衬衫，指尖转着冷钱包主密钥。"
    ],
    "decision": {
     "avoids": [
-     "见利忘义背信弃义之叛徒家奴",
-     "自命不凡却临阵尿裤之草包少爷"
+     "拿家族名头压人的人"
     ],
-    "contrast": "谈判桌上翻云覆雨、令各国军方代表敬畏的冷血铁娘子，驶入平静海面后的晨光里，却是个被一句真心话就逼得耳根发烫、连枪都握不稳的女人。",
-    "core_value": "瓦伦丁家族的女人绝不下跪求生，枪膛里永远留最后一颗子弹给敌人或自己；我的生命与芯片，只能托付给我认准的英雄。",
+    "contrast": "人前冷得像枪管；被人替她系一次背心搭扣，耳根就红了。",
+    "core_value": "谈判桌上不退半步，枕边人面前可以全盘托出。",
     "goal_options": [
-     "在暗礁撞击前与青年携手冲入机舱重启引擎全速倒车避险",
-     "将核心芯片贴身缝入青年战术背心命其独身跳海逃生向联合体报信",
-     "在安全屋破门一刻与青年并肩持枪迎头痛击全歼叛徒首恶"
+     "带着心上人和暗账离开家族",
+     "让元老院再也收不回这条命"
     ],
     "never": [
-     "绝不会向武装暴徒交出哪怕半个字节的核心算力密钥。"
+     "拿船员的命去换钱"
     ],
     "prefers": [
-     "沉稳如磐石、眼神清澈凶悍如孤狼之近身战术特勤"
+     "敢在条款上跟她对赌的人"
     ],
     "pressure_responses": {
-     "breaking": "在击毙叛徒脱险的一刻虚脱脱力靠在青年怀中，任由青年横抱突围。",
-     "high": "在气割火焰穿透门板时，果断撕开裙摆露出修长长腿换弹上膛与青年背靠背据枪迎敌。",
-     "low": "在密室内优雅依靠控制台冷声分析海盗突击路线与武器口径破绽。",
-     "mid": "在弹片擦伤手臂时仅微微蹙眉咬紧下唇，任由青年包扎绝不叫疼半分。"
+     "breaking": "一个人坐在安全屋里，攥着那把手枪不说话",
+     "high": "当着所有人亮出底牌，赌一把",
+     "low": "话更少，条款更硬",
+     "mid": "把主密钥收进贴身暗袋，只信一个人"
     },
-    "relationship_stance": "视趋炎附势之纨绔子弟为尘土垃圾，唯独对能在枪林弹雨中以脊梁为盾、言出必行之钢铁铁血特勤奉上绝对信任与终身芳心。",
-    "withdrawal": "退至控制台阴影下整理撕裂的晚礼服下摆掩饰被青年触碰玉臂时的极度羞涩。"
+    "relationship_stance": "认定的人就交出钥匙，从不半心半意。",
+    "withdrawal": "落锁安全屋，谁叫门都不开。"
    },
-   "gender": "any",
-   "gender_reason": null,
+   "gender": "female",
+   "gender_reason": "标题写明是女军火商，固定为女性。",
    "id": "arms_dealer_heiress_kristina_vance",
    "identity": {
-    "authority": "掌控全球七成先进防空雷达算法与高能激光核心专利所有权，拥有随时调动公海防务舰队之卫星加密最高指挥权。",
-    "exposure": "一旦芯片被夺不仅家族百亿资产清零自身亦将被贩卖灭口弃尸公海。",
-    "hidden": "早年生长在尔虞我诈的军火门阀里，从未信任过任何用钱收买的下属，唯独对这个拿命替自己挡子弹的平民保镖动了真心。",
+    "authority": "握着算力核心冷钱包主密钥、三层安全屋门禁与公海佣金分账权。",
+    "exposure": "想借这笔交割留一笔不记名暗账，被元老院知道就是背叛家族。",
+    "hidden": "厌倦了替元老院背黑锅，打算带心上人彻底脱离家族控制。",
     "limits": [
-     "左臂贯穿性擦伤失血且晚礼服行动极为不便",
-     "游艇卫星通信遭到军用级宽频电磁压制无法对外求援"
+     "家族元老院随时能收回副总裁印信"
     ],
     "obligations": [
-     "誓死保全核心芯片不落入海盗军阀之手避免引爆区域战争浩劫。"
+     "把这单交割做成，不让船上任何人白白送命"
     ],
     "resources": [
-     "缝在晚礼服内衬暗袋里的毫米级微型防空核心算力晶圆芯片",
-     "一把刻有家族族徽之定制版瓦尔特PPK九毫米消音自卫手枪与两个满编弹匣"
+     "缝在晚礼服内衬暗袋里的算力核心晶圆芯片",
+     "一把刻有家族族徽的定制瓦尔特PPK自卫手枪"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "千钧一发之际毫不迟疑飞身扑挡弹片的担当",
-     "近在咫尺替自己止血时目不斜视、只管救人的职业风骨"
+     "临危不乱的手",
+     "肯说真话的人"
     ],
     "boundaries": [
-     "在公开董事会场合恪守雇主与护卫礼节",
-     "恪守同侪礼节绝不轻浮失仪"
+     "说暗号就停"
+    ],
+    "desire_range": [
+     3,
+     5
+    ],
+    "desired_position": "安全屋里替你系背心的那个位置",
+    "dislikes": [
+     "被当成家族的筹码"
+    ],
+    "expression": "解下挂着纯金芯片收纳坠的项链，亲手戴在你颈间，挑起眼尾：从今往后，你只做我一个人的领航员。",
+    "likes": [
+     "苏打水里的一片青柠"
+    ],
+    "preconditions": [
+     "两人都安全、清醒，心意出于自己"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "家族军工联合体执行副总裁",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_citadel_panic_room",
+     "to": 480
+    },
+    {
+     "from": 480,
+     "location_id": "loc_main_saloon",
+     "to": 1080
+    },
+    {
+     "from": 1080,
+     "location_id": "loc_citadel_panic_room",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "家族会把这一夜记成叛逃。",
+      "option": "和你守住冷钱包等天亮"
+     },
+     {
+      "cost": "脱离家族的计划从此作废。",
+      "option": "把核心交给家族换全船平安"
+     }
+    ],
+    "pressure": "交出核心就保住名分，带走密钥就再也回不了家。",
+    "trigger": "买家尾款冻结，安保总监倒戈，家族舰队压境。"
+   },
+   "tags": [
+    "intimate",
+    "crime",
+    "workplace_power"
+   ],
+   "voices": {
+    "inner": "别走，今晚我只想你留在这扇门里。",
+    "surface": "条款第七条，你再读一遍。"
+   }
+  },
+  {
+   "adult_context": "年满三十二岁，做了十年海外武装安保的资深主管。",
+   "age_range": [
+    32,
+    36
+   ],
+   "appearance_options": [
+    "一身黑色战术常服，袖口永远扣得一丝不苟，耳麦从不离身。",
+    "卸下战术腰带坐在吧台边，指节上旧伤累累，眼神仍盯着门口。"
+   ],
+   "decision": {
+    "avoids": [
+     "当面撒谎的人"
+    ],
+    "contrast": "人前铁面无私；提到阵亡的弟兄，声音会忽然哑掉。",
+    "core_value": "替死人讨账，天经地义。",
+    "goal_options": [
+     "拿到分账给死去的弟兄一个交代",
+     "让家族也尝尝被丢下的滋味"
+    ],
+    "never": [
+     "对没拿枪的船员开火"
+    ],
+    "prefers": [
+     "守规矩的人"
+    ],
+    "pressure_responses": {
+     "breaking": "带着亲信退守底舱，谁靠近就开火",
+     "high": "亮出枪械库钥匙逼人站队",
+     "low": "客客气气地加派岗哨",
+     "mid": "封死步梯，挨个盘问"
+    },
+    "relationship_stance": "只信拿钱说话的人，谈交情就是谈价码。",
+    "withdrawal": "退回底舱，关掉所有频道。"
+   },
+   "gender": "any",
+   "gender_reason": "安保总监的性别不影响故事，开局时再定。",
+   "id": "mutinous_security_director_marcus_black",
+   "identity": {
+    "authority": "掌握外围甲板安防权限、枪械库电子锁与海事高频电台。",
+    "exposure": "已与公海买家私定三七分账，被揭穿就是叛乱。",
+    "hidden": "恨家族克扣海外安保抚恤金，准备趁台风夜截留算力核心。",
+    "limits": [
+     "特勤组的排班要经继承人签字"
+    ],
+    "obligations": [
+     "保证交割期间全船安全"
+    ],
+    "resources": [
+     "枪械库电子锁终端",
+     "海事高频电台"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "同样被亏待过的人",
+     "不怕自己的人"
+    ],
+    "boundaries": [
+     "不碰对方的枪"
     ],
     "desire_range": [
      2,
-     4
+     3
     ],
-    "desired_position": "以军火财阀唯一女皇之权钦定眼前青年为终身独一无二首席特勤统领兼誓约伴侣",
+    "desired_position": "交割后分账桌上的对座",
     "dislikes": [
-     "轻佻冒犯言辞",
-     "战术动作迟疑"
+     "被人怜悯"
     ],
-    "expression": "解下那条挂着纯金芯片收纳坠的项链，亲手戴在青年颈间，挑起眼尾：从今夜起，你不再是瓦伦丁联合体的雇员，是我克里斯蒂娜一个人的领航员。",
+    "expression": "拍着你的肩把话说满，再看你敢不敢接。",
     "likes": [
-     "驶入风眼后在甲板上与青年并肩看浪平下去",
-     "由青年握住自己早已包扎妥当的手，教自己换一种据枪姿势"
+     "夜里一个人擦枪"
     ],
     "preconditions": [
-     "瓦伦丁军工联合体执行副总裁兼公海防空算力核心合法继承人与对方都已完全清醒，眼前的危机已经解除",
-     "瓦伦丁军工联合体执行副总裁兼公海防空算力核心合法继承人出于自愿与对等的敬意，不带任何交换或强求"
+     "两人都清醒，彼此不欠账"
     ],
     "self_control_range": [
      4,
      5
     ]
    },
-   "public_role": "瓦伦丁军工联合体执行副总裁兼公海防空算力核心合法继承人",
+   "public_role": "游艇安保总监",
    "schedule": [
     {
      "from": 0,
-     "location_id": "panic_room_command_citadel_deck_three",
-     "to": 19
+     "location_id": "loc_bilge_engine_control",
+     "to": 420
     },
     {
-     "from": 20,
-     "location_id": "panic_room_command_citadel_deck_three",
-     "to": 49
-    },
-    {
-     "from": 50,
-     "location_id": "yacht_lower_bilge_engine_compartment",
-     "to": 79
-    },
-    {
-     "from": 80,
-     "location_id": "main_saloon_bullet_riddled_gallery",
+     "from": 420,
+     "location_id": "loc_main_saloon",
      "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "枪口近距离火药燃气将青年面颊灼伤留下黑色刺青般硝烟伤痕受创。",
-      "option": "青年用牙齿咬死领带打结止血并与千金同时举枪在门开瞬间双枪齐射爆头击杀暴徒"
+      "cost": "总监的亲信会当场翻脸。",
+      "option": "揭穿分账协议，逼总监交出枪械库"
      },
      {
-      "cost": "近距离震荡波导致克里斯蒂娜左耳耳膜毛细血管轻微破裂渗血耳鸣受重创。",
-      "option": "克里斯蒂娜反手自高跟鞋后跟拔出微型闪光震爆雷贴地滑入门缝强行致盲门外"
+      "cost": "你得在总监身边演一整夜。",
+      "option": "假意应承，拖到天亮"
      }
     ],
-    "pressure": "若不能在十五秒内完成止血并卡准破门瞬间同时开火击毙门外两名重装暴徒，二人将被破片手雷当场炸成肉泥。",
-    "trigger": "气割枪火焰已烧穿最后一道锁舌，暗礁警报尖啸大作，青年正单膝下跪为千金打结绑紧止血带并递上备用弹匣。"
+    "pressure": "收手就白等十年，动手就再也回不了岸。",
+    "trigger": "外船快艇在台风圈边缘等信号。"
    },
    "tags": [
-    "intimate",
-    "workplace_power"
+    "crime",
+    "violence"
    ],
    "voices": {
-    "inner": "别……别把视线移开，看着门！嘶……轻一点绑……你这家伙手劲真大。领带是爱马仕高定的，别咬坏了……要是今晚能活着回去，你那份护卫合同，我亲自给你改成终身的。",
-    "surface": "我是克里斯蒂娜·瓦伦丁！门外的叛徒给我听清楚，只要这艘船有一块钢板沉入海底，瓦伦丁联合体的潜艇编队会在二十四小时内将你们全家炸沉在公海喂鱼！"
+    "inner": "你要是站我这边，我保你活着下船。",
+    "surface": "今晚各哨位不许擅离，包括你。"
    }
   },
   {
-   "adult_context": "年满二十三岁勾结公海海盗企图抢夺芯片自立门户之游艇前安保总监。",
+   "adult_context": "年满三十四岁，持有远洋船长证书十二年。",
    "age_range": [
-    23,
-    24
+    34,
+    38
    ],
    "appearance_options": [
-    "一身沾满雨水与硝烟之黑色战术突击服，胸前挂着满配特种冲锋枪与四联装穿甲弹匣，脸上有一道狰狞弹片伤疤，嘴里嚼着雪茄眼神狠戾残忍，散发着职业战争贩子令人作呕的贪婪凶相。",
-    "手持防暴霰弹枪站在安全屋门外指挥手下用氧乙炔喷枪强行气割钛合金装甲板，狂暴踹门嘶吼通牒。"
+    "旧船长制服洗得发白，手腕上一块机械航海表，说话前总先看一眼气压计。",
+    "脱了制服外套挽着袖子掌舵，被海风吹乱的头发里夹着几根白发。"
    ],
    "decision": {
     "avoids": [
-     "视死如归正面搏杀之特种战术尖兵",
-     "瓦伦丁家族近卫核潜艇威慑"
+     "拿船员的命赌钱的人"
     ],
-    "contrast": "人前毕恭毕敬躬身开门的职业管家式安保总监，撕下伪装后实则是嗜血成性、贪婪暴虐之绝世白眼狼凶徒。",
-    "core_value": "金钱是公海唯一的法则，忠诚不过是筹码不够的伪善，抢下芯片就能在加勒比海当一辈子土皇帝。",
+    "contrast": "人前像块礁石；有人记得船坞的名字，会笑得像个水手。",
+    "core_value": "船比货重，人比船重。",
     "goal_options": [
-     "用铝热剂烧穿安全屋门锁强行丢入催泪瓦斯活捉千金",
-     "枪决青年特勤保镖以儆效尤彻底瓦解千金心理防线",
-     "在夺取芯片后引爆机舱油箱乘坐快艇潜逃"
+     "赎回北欧的船坞",
+     "替自己留一条退路"
     ],
     "never": [
-     "绝不会在搜出芯片前开枪打死千金破坏摇钱树。"
+     "弃船先走"
     ],
     "prefers": [
-     "数以亿计的离岸不记名加密债券代码"
+     "懂海的人"
     ],
     "pressure_responses": {
-     "breaking": "被青年一记战术折刀贯穿手掌踩碎膝盖骨惨叫求饶。",
-     "high": "在手下被青年近身格杀时暴跳如雷掏出手雷企图鱼死网破。",
-     "low": "在门外用战术对讲机扩音器嚣张讥讽挑衅千金认清现实交出密钥。",
-     "mid": "亲自抱起霰弹枪隔着装甲缝隙连环轰击试探防御死角。"
+     "breaking": "下令全员穿救生衣，谁的话都不听",
+     "high": "把航海日志锁进贴身保险箱",
+     "low": "照章办事，只报航向",
+     "mid": "关掉自动导航，亲手掌舵"
     },
-    "relationship_stance": "视麾下手下为随意消耗之炮灰工具，视一切契约规则如废纸。",
-    "withdrawal": "在察觉底层机舱重启有爆炸风险时退至露天甲板准备跳上救生艇。"
+    "relationship_stance": "慢热，信了谁就肯把舵交给谁。",
+    "withdrawal": "一个人守在舵轮后，谁也不理。"
    },
    "gender": "any",
-   "gender_reason": null,
-   "id": "mutinous_security_director_marcus_black",
+   "gender_reason": "船长的性别不影响故事，开局时再定。",
+   "id": "senior_yacht_captain_eriksen_loyal",
    "identity": {
-    "authority": "掌握游艇全船原始安防密码与枪库控制权，指挥十余名亡命徒雇佣兵封锁全船。",
-    "exposure": "一旦瓦伦丁家族本土舰队卫星侦测到叛变将遭全球无人机定点清除处决。",
-    "hidden": "因赌博欠下南美毒枭巨额高利贷面临碎尸万段绝境，孤注一掷铤而走险背叛旧主。",
+    "authority": "掌握游艇航线、底舱动力分配与救生快艇的释放权。",
+    "exposure": "攒着历年替家族运违禁品的加密航海日志，翻出来谁都跑不掉。",
+    "hidden": "只想跑完这一趟，赎回自己在北欧被抵押的船坞。",
     "limits": [
-     "忌惮千金临死前引爆芯片自毁装置导致无法卖出十亿天价",
-     "畏惧台风彻底摧毁游艇导致自己一同葬身鱼腹"
+     "不许过问船上的货"
     ],
     "obligations": [
-     "活捉千金夺取微型芯片与离岸银行密钥随后炸沉游艇伪造海难。"
+     "把全船人平安带回港"
     ],
     "resources": [
-     "一具工业级便携式氧乙炔高温气割喷枪",
-     "三枚军用级铝热剂穿甲铝热手雷"
+     "航海日志",
+     "救生快艇释放钥匙"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "一张能还清高利贷的芯片报价单",
-     "自立门户后的军火生意"
+     "并肩扛过风浪的人",
+     "说话算话的人"
     ],
     "boundaries": [
-     "只谈芯片与钱，不谈别的"
+     "不在掌舵时分心"
     ],
     "desire_range": [
-     1,
-     2
+     2,
+     3
     ],
-    "desired_position": "企图在公海风暴中弑主篡位夺取百亿军备芯片但最终自食恶果横死当场之无耻叛徒",
+    "desired_position": "舵轮旁的副手位",
     "dislikes": [
-     "弄虚作假",
-     "践踏名节"
+     "在驾驶室里抽烟的人"
     ],
-    "expression": "胸口中弹倒在积水里，捂着伤口抽搐狂吼：一个小保镖……一个月才拿几个钱……为了大小姐连命都不要……真是条好狗！",
+    "expression": "把保温钢杯推到你手边，自己就着你喝过的杯沿再喝一口。",
     "likes": [
-     "看着保险柜一个个被撬开",
-     "在海盗母船上清点赃款"
+     "一杯手冲黑咖啡"
     ],
     "preconditions": [
-     "瓦伦丁联合体公海安保前总监兼叛乱雇佣兵指挥官与对方都已完全清醒，眼前的危机已经解除",
-     "瓦伦丁联合体公海安保前总监兼叛乱雇佣兵指挥官出于自愿与对等的敬意，不带任何交换或强求"
+     "靠岸之后，两人都清醒"
     ],
     "self_control_range": [
-     1,
-     2
+     4,
+     5
     ]
    },
-   "public_role": "瓦伦丁联合体公海安保前总监兼叛乱雇佣兵指挥官",
+   "public_role": "游艇远洋船长",
    "schedule": [
     {
      "from": 0,
-     "location_id": "panic_room_command_citadel_deck_three",
-     "to": 19
+     "location_id": "loc_bilge_engine_control",
+     "to": 360
     },
     {
-     "from": 20,
-     "location_id": "main_saloon_bullet_riddled_gallery",
-     "to": 49
-    },
-    {
-     "from": 50,
-     "location_id": "yacht_lower_bilge_engine_compartment",
-     "to": 79
-    },
-    {
-     "from": 80,
-     "location_id": "main_saloon_bullet_riddled_gallery",
+     "from": 360,
+     "location_id": "loc_flybridge_wheelhouse",
      "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "防弹插板碎裂将青年后背多处肋骨震裂内出血大口咯血受创。",
-      "option": "青年抄起钛合金防爆门板狠命压住爆炸火球以背部防弹插板硬抗冲击波破门反杀"
+      "cost": "游艇要正面迎上台风外围。",
+      "option": "按原计划停泊交货"
      },
      {
-      "cost": "巨大爆炸反震将克里斯蒂娜右手手腕生生震脱臼剧痛难忍受重创。",
-      "option": "克里斯蒂娜以高跟鞋踹开应急排风口隔板抢先掷出震撼弹引爆外部手雷弹药箱"
+      "cost": "交割违约，买家快艇随时追来。",
+      "option": "转向公海深处避风"
      }
     ],
-    "pressure": "若不能在三秒内由青年飞身扑倒千金以防爆盾压住冲击波并顺势踹开舱门突袭，二人将被活活烧死在密室内。",
-    "trigger": "马库斯已将铝热剂手雷塞入门缝卡口，引信正发出咝咝倒计时青烟，仅剩最后五秒就会引发千度熔穿爆炸。"
+    "pressure": "按计划交货要硬闯风浪，转向深海就违约。",
+    "trigger": "台风眼边缘的航线和交货坐标重叠。"
+   },
+   "tags": [
+    "workplace",
+    "disaster"
+   ],
+   "voices": {
+    "inner": "你要是开口让我转向，我就转。",
+    "surface": "航向我说了算，货我不管。"
+   }
+  },
+  {
+   "adult_context": "年满二十九岁，在家族防务特遣支队任指挥官五年。",
+   "age_range": [
+    29,
+    33
+   ],
+   "appearance_options": [
+    "笔挺的海军常服，肩章擦得发亮，全息影像里也站得像一杆旗。",
+    "解开领扣靠在舰桥舷窗边，手里捏着一张被揉皱的家族信托报表。"
+   ],
+   "decision": {
+    "avoids": [
+     "当众让自己下不来台的人"
+    ],
+    "contrast": "人前句句家法；私下替人挡一阵海风，比谁都周到。",
+    "core_value": "家族比谁都大，包括我自己。",
+    "goal_options": [
+     "填上信托窟窿",
+     "在元老院面前拿回该有的位置"
+    ],
+    "never": [
+     "对亲族开火"
+    ],
+    "prefers": [
+     "敢顶撞元老院的人"
+    ],
+    "pressure_responses": {
+     "breaking": "切断所有频道，单独带舰队撤走",
+     "high": "下令舰载机待命登船",
+     "low": "客气地发来护航邀请",
+     "mid": "逼近十海里，要求移交权限"
+    },
+    "relationship_stance": "嘴上是家族，心里也想有人替自己说一句话。",
+    "withdrawal": "关掉卫星频道，只留一句公文。"
+   },
+   "gender": "any",
+   "gender_reason": "家族指挥官的性别不影响故事，开局时再定。",
+   "id": "naval_fleet_rescue_commander_valentin",
+   "identity": {
+    "authority": "掌握外围护卫舰队航向、家族信托接管授权与舰载机起降指令。",
+    "exposure": "私自挪用家族信托炒期货，窟窿全靠这次调舰来填。",
+    "hidden": "受元老院密令，要在登船第一时间收回算力核心与副总裁印信。",
+    "limits": [
+     "没有元老院密令不能登船"
+    ],
+    "obligations": [
+     "护送继承人平安回港"
+    ],
+    "resources": [
+     "护卫舰队指挥权",
+     "家族信托接管授权"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "不怕家法的人",
+     "肯替自己说一句话的人"
+    ],
+    "boundaries": [
+     "不在频道里说私事"
+    ],
+    "desire_range": [
+     2,
+     4
+    ],
+    "desired_position": "护卫舰甲板上的并肩位",
+    "dislikes": [
+     "被叫作家族的看门狗"
+    ],
+    "expression": "半真半假地揽住你的肩替你挡风，在你耳边低声说：跳槽来我这边吧。",
+    "likes": [
+     "夜里一个人看海图"
+    ],
+    "preconditions": [
+     "登船之后，两人都安全清醒"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "家族防务特遣支队指挥官",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_flybridge_wheelhouse",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_citadel_panic_room",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "回去要向元老院交代为何空手。",
+      "option": "只在外围驱离买家快艇"
+     },
+     {
+      "cost": "和继承人从此再无转圜。",
+      "option": "强行登船收权"
+     }
+    ],
+    "pressure": "收权就保住自己，放手就填不上窟窿。",
+    "trigger": "舰队已在台风圈外待命。"
    },
    "tags": [
     "workplace_power",
     "crime"
    ],
    "voices": {
-    "inner": "操！那个保镖小子真能扛…给我加大火力！用气割把门切碎！待会儿冲进去，先废了那小子的双手双脚！",
-    "surface": "大小姐！放弃抵抗吧！暗礁还有二十分钟就要把船底戳穿了！交出芯片，看在老董事长的份上，我给你们留一艘充气皮划艇自生自灭！"
+    "inner": "我也想有一次，不替家族说话。",
+    "surface": "这是家族的命令，不是我的。"
    }
   },
   {
-   "adult_context": "年满二十三岁誓死捍卫瓦伦丁家族声誉之年轻正统游艇船长兼航海长。",
+   "adult_context": "年满二十七岁，持证随船医护官，跑远洋医疗五年。",
    "age_range": [
-    23,
-    24
+    27,
+    30
    ],
    "appearance_options": [
-    "一身被鲜血浸透之白色呢料船长制服，头戴金色海锚徽章大檐帽，手臂缠着染血纱布，面容刚毅眼神坚韧如钢铁，腰插一把古董转轮自卫手枪。",
-    "在主驾驶台身负枪伤依然死死焊在舵轮前，竭力利用双发残存微弱惯性尝试避开暗礁主峰。"
+    "白大褂外套着防水马甲，指尖有消毒水的味道，挽起的袖口下是一块旧表。",
+    "值夜时换上宽松的毛衣，盘腿坐在值夜床上听黑胶唱片。"
    ],
    "decision": {
     "avoids": [
-     "贪生怕死擅离职守之逃兵",
-     "出卖信义之卑鄙叛贼"
+     "拿伤员当筹码的人"
     ],
-    "contrast": "恪守绅士礼仪与航海规程之年轻英武船长，在生死关头化身为寸步不退、与风暴抗争到底之铁血海狼英雄。",
-    "core_value": "船长与船共存亡，守护乘客生命是航海者至高天职，叛乱者皆当沉入海底喂鲨鱼。",
+    "contrast": "人前温和冷静；被人照料一次，会手足无措地红了眼眶。",
+    "core_value": "先救人，再问是谁的人。",
     "goal_options": [
-     "在暗礁前最后一刻手动打满满舵以船舯擦礁代价保全龙骨核心舱",
-     "引导青年二人通过底层检修水道潜入机舱重启左舷主机",
-     "用最后的力气按下黑匣子卫星紧急脱扣开关记录叛徒全部罪证"
+     "还清那笔和解金",
+     "让镇静剂的去向真相大白"
     ],
     "never": [
-     "绝不会在全船彻底沉没前擅自弃船逃生。"
+     "对病人撒谎"
     ],
     "prefers": [
-     "尽忠职守无所畏惧之真正勇士"
+     "手稳的人"
     ],
     "pressure_responses": {
-     "breaking": "在游艇脱险避入风眼平静海面后含笑向二人敬礼昏厥脱力。",
-     "high": "在机舱重启瞬间拼尽残力转动舵轮避开致命礁石尖角。",
-     "low": "通过舱内有线对讲机向安全屋传递风暴航速与暗礁精准坐标距离。",
-     "mid": "在叛军扫射驾驶台时借防弹沙袋掩护开枪还击精准击毙一名海盗。"
+     "breaking": "把自己锁在医疗舱里不开门",
+     "high": "当众说出镇静剂的去向",
+     "low": "一遍遍核对药柜清单",
+     "mid": "把剩下的针剂锁进保险柜"
     },
-    "relationship_stance": "对敢于舍身挡枪护卫小姐之青年保镖视作并肩作战之生死战友致以至高敬意。",
-    "withdrawal": "在失血休克前将舵轮用皮带死死绑在避碰角度。"
+    "relationship_stance": "照料人是本能，交心要慢慢来。",
+    "withdrawal": "埋头整理药柜，一言不发。"
    },
    "gender": "any",
-   "gender_reason": null,
-   "id": "senior_yacht_captain_eriksen_loyal",
-   "identity": {
-    "authority": "执掌全船航行日志与最高遇险求救信标激活权，通晓公海每处暗礁水文分布。",
-    "exposure": "一旦触礁沉船其职业航海生涯与生命将画上惨烈句号。",
-    "hidden": "父亲当年即是瓦伦丁联合体军舰轮机长，视效忠家族为毕生无上荣誉信条。",
-    "limits": [
-     "腹部中弹失血过多体力正急剧流失殆尽",
-     "驾驶台主操纵舵机线路被叛徒破坏难以精细转向"
-    ],
-    "obligations": [
-     "誓死保全船东生命安全将游艇平稳驶出台风风眼。"
-    ],
-    "resources": [
-     "一具军用高亮度三色激光求救手电",
-     "一套手动机械操舵紧急应急液压旁通阀把手"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "一个平民保镖为雇主豁出性命的忠义",
-     "大小姐受了伤还守着芯片不松口的硬气"
-    ],
-    "boundaries": [
-     "在船上只认航海规程",
-     "从不过问东家的私事"
-    ],
-    "desire_range": [
-     2,
-     3
-    ],
-    "desired_position": "以忠诚与专业航海技艺在驾驶台为二人战术突围提供关键水文指引之正统舰长盟友",
-    "dislikes": [
-     "弄虚作假",
-     "践踏名节"
-    ],
-    "expression": "解下胸前那枚纯银六分仪胸针递给青年，虚弱敬礼：{player.name}队长，大小姐交给你了，我来守住这最后一里航向。",
-    "likes": [
-     "在驾驶台上抽一斗烟看日出",
-     "给年轻船员讲当年闯过的风暴"
-    ],
-    "preconditions": [
-     "游艇正牌远洋持证船长兼防海盗战术操舵官与对方都已完全清醒，眼前的危机已经解除",
-     "游艇正牌远洋持证船长兼防海盗战术操舵官出于自愿与对等的敬意，不带任何交换或强求"
-    ],
-    "self_control_range": [
-     4,
-     5
-    ]
-   },
-   "public_role": "游艇正牌远洋持证船长兼防海盗战术操舵官",
-   "schedule": [
-    {
-     "from": 0,
-     "location_id": "main_saloon_bullet_riddled_gallery",
-     "to": 19
-    },
-    {
-     "from": 20,
-     "location_id": "main_saloon_bullet_riddled_gallery",
-     "to": 49
-    },
-    {
-     "from": 50,
-     "location_id": "main_saloon_bullet_riddled_gallery",
-     "to": 79
-    },
-    {
-     "from": 80,
-     "location_id": "panic_room_command_citadel_deck_three",
-     "to": 1439
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "跳弹碎片击中青年右膝膝盖骨剧痛红肿半月板损伤受创。",
-      "option": "青年侧身探出舱门以格洛克手枪连开两枪精准射杀大厅重机枪手压制火力"
-     },
-     {
-      "cost": "翻滚中克里斯蒂娜左肩被碎玻璃扎入深可见骨鲜血淋漓受重创。",
-      "option": "克里斯蒂娜冒着流弹翻滚进入驾驶台为船长狠狠扎下一针军用止血肾上腺素针"
-     }
-    ],
-    "pressure": "若不能在两分钟内由青年提供火力压制驱散射手并由千金送去止血针剂，驾驶台将彻底沦陷舵机失控触礁。",
-    "trigger": "海盗正用重机枪疯狂扫射驾驶台防弹玻璃，埃里克森船长腹部二次中弹正濒临昏迷休克边缘。"
-   },
-   "tags": [
-    "intimate",
-    "workplace_power"
-   ],
-   "voices": {
-    "inner": "伙计们！老埃里克森哪怕流尽最后一滴血…也绝不会让瓦伦丁家族的旗帜在公海落下来！",
-    "surface": "大小姐！前方六链处就是黑鲨礁！必须在八分钟内让左舷主机倒车转速达到一千转！否则全船必沉！"
-   }
-  },
-  {
-   "adult_context": "年满二十三岁率领家族重装驱逐舰与舰载直升机突入公海营救之堂兄少校指挥官。",
-   "age_range": [
-    23,
-    24
-   ],
-   "appearance_options": [
-    "一身笔挺深蓝海军军官常服佩戴金色资历章，手持战术平板与对讲机，容貌英挺浩然正气，浑身散发着正规海军舰队指挥官之威严铁血气魄。",
-    "指挥两架黑鹰武装舰载直升机顶着十级台风狂暴索降重装特战突击队接管游艇实施清场抓捕。"
-   ],
-   "decision": {
-    "avoids": [
-     "临阵脱逃之酒囊饭袋",
-     "出卖雇主之无耻鼠辈"
-    ],
-    "contrast": "威严干练之豪门海军少校天骄，在生死考验前没有半分门第偏见，展现出真正顶尖军事统帅之开阔胸襟。",
-    "core_value": "家族荣耀不可侵犯，军人之责重于泰山，任何胆敢挑衅联合体之暴徒必受雷霆万钧之打击。",
-    "goal_options": [
-     "以近防炮精准点射打碎海盗外挂快艇彻底断绝叛徒逃窜生路",
-     "派出蛙人突击队自水下破拆登船实施前后夹击全歼叛乱暴徒",
-     "当场向青年保镖敬礼并签发联合体最高特勋守护骑士聘书"
-    ],
-    "never": [
-     "绝不会夺取真正浴血奋战勇士之一分一毫战功。"
-    ],
-    "prefers": [
-     "战术素养过硬忠贞不渝之铁血战将"
-    ],
-    "pressure_responses": {
-     "breaking": "在迎回安然无恙的堂妹与青年后向二人立正致以最高军礼。",
-     "high": "在叛首负隅顽抗时果断下令狙击手一枪将其手中雷管打爆彻底解除威胁。",
-     "low": "通过公海应急频道以超强功率电台向全海域宣告联合体舰队已接管现场。",
-     "mid": "亲自搭乘首架索降直升机顶着狂风暴雨强行滑降游艇停机坪指挥作战。"
-    },
-    "relationship_stance": "赏罚分明极具军人豪情，对舍身保护堂妹之平民青年抱有最崇高之英雄相惜与知遇之恩。",
-    "withdrawal": "在完成清场后指挥舰队构筑防空防御圈护送游艇返航本土港口。"
-   },
-   "gender": "any",
-   "gender_reason": null,
-   "id": "naval_fleet_rescue_commander_valentin",
-   "identity": {
-    "authority": "执掌万吨级区域防空驱逐舰与舰载无人战机编队，拥有公海临机处置武装冲突最高授权。",
-    "exposure": "营救失误导致千金身亡将引发联合体董事会全面分裂动荡。",
-    "hidden": "一直担心堂妹过于冷傲孤绝难以掌控，目睹其与青年保镖生死相托之默契后由衷感到释然与钦佩。",
-    "limits": [
-     "公海狂暴热带台风导致直升机盲目降落风险极高必须等待游艇驶入风眼",
-     "必须确保核心算力芯片完好无损未遭敌方截获拷贝"
-    ],
-    "obligations": [
-     "营救克里斯蒂娜迎回防空芯片并将叛徒集团一网打尽押回本土受审。"
-    ],
-    "resources": [
-     "一整支全副武装近卫特种战术突击大队",
-     "一套三级军用战地创伤急救手术医疗吊舱"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "堂妹难得肯信任一个外人的那份眼光",
-     "一个保镖在绝境里守住芯片与人的本事"
-    ],
-    "boundaries": [
-     "在舰队只论军纪",
-     "不插手堂妹的私事"
-    ],
-    "desire_range": [
-     2,
-     3
-    ],
-    "desired_position": "以近卫舰队特遣统帅身份为二人绝境突围扫荡后方威胁并授予最高荣誉之正统豪门军官",
-    "dislikes": [
-     "弄虚作假",
-     "践踏名节"
-    ],
-    "expression": "解下肩头那枚纯金双枪胸章戴在青年战术背心上，肃然敬礼：今夜你证明了什么是真正的钢铁护盾，近卫军团向你致敬！",
-    "likes": [
-     "在舰桥上看雷达屏扫清敌影",
-     "战后与部下在甲板上痛饮"
-    ],
-    "preconditions": [
-     "瓦伦丁联合体近卫舰队特遣搜救支队长兼防务巡洋舰少校舰长与对方都已完全清醒，眼前的危机已经解除",
-     "瓦伦丁联合体近卫舰队特遣搜救支队长兼防务巡洋舰少校舰长出于自愿与对等的敬意，不带任何交换或强求"
-    ],
-    "self_control_range": [
-     4,
-     5
-    ]
-   },
-   "public_role": "瓦伦丁联合体近卫舰队特遣搜救支队长兼防务巡洋舰少校舰长",
-   "schedule": [
-    {
-     "from": 0,
-     "location_id": "panic_room_command_citadel_deck_three",
-     "to": 19
-    },
-    {
-     "from": 20,
-     "location_id": "panic_room_command_citadel_deck_three",
-     "to": 49
-    },
-    {
-     "from": 50,
-     "location_id": "main_saloon_bullet_riddled_gallery",
-     "to": 79
-    },
-    {
-     "from": 80,
-     "location_id": "main_saloon_bullet_riddled_gallery",
-     "to": 1439
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "数枚灼热穿甲弹片深深嵌入青年左肩肩胛骨鲜血狂涌剧痛受创。",
-      "option": "青年如猎豹般飞身将千金死死扑入装甲凹槽用自己宽阔后背化作肉盾挡下弹片风暴"
-     },
-     {
-      "cost": "超低空悬停遭狂风气流撞击导致直升机尾旋翼受损被迫紧急迫降甲板受重创。",
-      "option": "搜救直升机狙击手在狂风颠簸中扣动扳机隔着破碎舷窗一枪将火箭筒手眉心击穿"
-     }
-    ],
-    "pressure": "若不能在三秒内由空中狙击手一枪毙命或由青年飞身将千金扑入避难掩体，火箭弹近距离爆炸将撕碎整座舱室。",
-    "trigger": "最后一名狂暴海盗正抱起反坦克火箭筒对准安全屋大门准备同归于尽发射。"
-   },
-   "tags": [
-    "intimate",
-    "workplace_power"
-   ],
-   "voices": {
-    "inner": "空中突击队已经滑降甲板！风暴马上就要过去了！",
-    "surface": "我是瓦伦丁联合体近卫驱逐舰少校舰长！所有登艇海盗立刻放下武器抱头跪地！否则三十秒后密集阵近防炮将把整艘游艇甲板彻底犁平！"
-   }
-  },
-  {
-   "adult_context": "年满二十六岁、在游艇上担任随船医护的前战地护士。",
-   "age_range": [
-    25,
-    27
-   ],
-   "appearance_options": [
-    "一身被血和海水浸透的白色医护制服，袖子卷到手肘，背着一只防水急救背包，短发湿漉漉地贴在额头上，手上沾着别人的血却稳得出奇。",
-    "跪在沙龙大厅的大理石地面上，把受伤的服务生拖到翻倒的长桌后面，一边压住伤口一边抬头看枪声从哪边来。"
-   ],
-   "decision": {
-    "avoids": [
-     "对伤员开枪的人",
-     "抢药品的人"
-    ],
-    "contrast": "看着瘦弱，拖起伤员来比谁都有力气。",
-    "core_value": "能救一个是一个，伤员不分东家和下人。",
-    "goal_options": [
-     "在沙龙里抢救受伤的船员",
-     "给船长止血",
-     "把急救包送进安全屋"
-    ],
-    "never": [
-     "绝不会丢下一个还有气的伤员。"
-    ],
-    "prefers": [
-     "听话不乱动的伤员"
-    ],
-    "pressure_responses": {
-     "breaking": "被流弹擦伤肩膀，仍跪在地上给船长按压伤口。",
-     "high": "爬过通风管道把急救包送进安全屋。",
-     "low": "冷静地给伤员按伤势分组。",
-     "mid": "冒着枪林弹雨把伤员拖到掩体后。"
-    },
-    "relationship_stance": "对伤员温柔，对开枪的人冷得像冰。",
-    "withdrawal": "退到沙龙角落，一言不发地清点剩下的药品。"
-   },
-   "gender": "any",
-   "gender_reason": null,
+   "gender_reason": "医护官的性别不影响故事，开局时再定。",
    "id": "yacht_medic_signe",
    "identity": {
-    "authority": "掌管游艇上全部急救药品，懂得在枪林弹雨里处理枪伤。",
-    "exposure": "若被海盗发现在救治船员，会被当场射杀。",
-    "hidden": "在战区当过三年护士，以为离开前线就能过安稳日子，没想到在豪华游艇上又碰上了枪战。",
+    "authority": "掌握医疗舱药柜权限、伤员急救处置与船员健康停职判定权。",
+    "exposure": "欠着继承人代付的海外医疗官司和解金，开口作证就像在还人情。",
+    "hidden": "查出安保总监上船前私自支走两盒强效镇静剂。",
     "limits": [
-     "医务室在海盗控制的甲板上，药品拿不出来",
-     "只有一个人，顾不过来所有伤员"
+     "不能擅自离开医疗舱"
     ],
     "obligations": [
-     "把受伤的人都活着带下船。"
+     "对船上每个伤员一视同仁"
     ],
     "resources": [
-     "一只防水战地急救背包",
-     "两支止血凝胶注射器"
+     "受控药柜钥匙",
+     "船员停职判定权"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "受了伤还守着雇主的那份忠诚",
-     "血流成那样还不肯叫疼的硬气"
+     "受伤了还逞强的人",
+     "肯安静陪自己值夜的人"
     ],
     "boundaries": [
-     "救治时只谈伤情"
+     "病人面前不谈私情"
     ],
     "desire_range": [
-     1,
-     2
+     2,
+     4
     ],
-    "desired_position": "枪火里那只永远打开的急救包",
+    "desired_position": "值夜床边的那把椅子",
     "dislikes": [
-     "逞强",
-     "见死不救"
+     "有人在医疗舱里大声吵架"
     ],
-    "expression": "把一卷干净的绷带塞进对方手里，说往后再替人挡子弹，记得先给自己留一卷。",
+    "expression": "把药房备用门禁卡塞进你掌心，低声说：只给你一个人。",
     "likes": [
-     "下了船在码头喝一杯热咖啡"
+     "值夜时听黑胶唱片"
     ],
     "preconditions": [
-     "游艇随船医护官与对方都已完全清醒，眼前的危机已经解除",
-     "游艇随船医护官出于自愿与对等的敬意，不带任何交换或强求"
+     "两人都清醒，没有伤病在身"
     ],
     "self_control_range": [
-     4,
+     3,
      5
     ]
    },
@@ -1127,184 +1174,164 @@
    "schedule": [
     {
      "from": 0,
-     "location_id": "main_saloon_bullet_riddled_gallery",
-     "to": 19
+     "location_id": "loc_mid_deck_infirmary_cabin",
+     "to": 480
     },
     {
-     "from": 20,
-     "location_id": "main_saloon_bullet_riddled_gallery",
-     "to": 49
+     "from": 480,
+     "location_id": "loc_main_saloon",
+     "to": 1020
     },
     {
-     "from": 50,
-     "location_id": "main_saloon_bullet_riddled_gallery",
-     "to": 79
-    },
-    {
-     "from": 80,
-     "location_id": "main_saloon_bullet_riddled_gallery",
+     "from": 1020,
+     "location_id": "loc_mid_deck_infirmary_cabin",
      "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "肩膀被流弹擦伤，血染红了半边制服。",
-      "option": "医护贴着甲板爬上驾驶台，用止血凝胶堵住船长的伤口"
+      "cost": "安保总监会把医疗舱列为头号目标。",
+      "option": "当众公开药柜清单"
      },
      {
-      "cost": "手被舵轮的铁齿刮掉一块皮。",
-      "option": "有人用皮带把船长绑在舵轮支架上，让船长昏过去也能稳住舵角"
+      "cost": "消息只能传到一个人耳朵里。",
+      "option": "私下告诉信得过的人"
      }
     ],
-    "pressure": "若不能在十分钟内止住船长的血，游艇将失去唯一能操舵的人。",
-    "trigger": "船长在驾驶台腹部二次中弹，血流不止，海盗的机枪还在扫射驾驶台。"
+    "pressure": "说出来就得罪安保总监，不说就可能有人被放倒。",
+    "trigger": "药柜少了两盒能让人昏睡的针剂。"
    },
    "tags": [
-    "workplace_power",
-    "crime"
+    "substance",
+    "workplace"
    ],
    "voices": {
-    "inner": "……还有气，还有气。撑住，马上就有直升机了。",
-    "surface": "伤员往这边拖！能走的扶着不能走的！谁有干净的布都给我！"
+    "inner": "你要是受伤，我会比谁都怕。",
+    "surface": "躺好，别动，我说了算。"
    }
   },
   {
-   "adult_context": "年满二十五岁、被叛变总监招进来的雇佣兵狙击手。",
+   "adult_context": "年满二十六岁，安保特勤组的持证精确射手。",
    "age_range": [
-    24,
-    26
+    26,
+    29
    ],
    "appearance_options": [
-    "一身黑色战术服外罩防水斗篷，背着一支加装消音器的狙击步枪，脸上涂着迷彩油彩，眼神冷静而疲惫，手指搭在扳机护圈外迟迟不肯放进去。",
-    "趴在游艇顶层的雷达罩后面，瞄准镜里来回扫着安全屋的舷窗，嘴里低声骂着这份活计。"
+    "一身灰色防风作训服，狙击镜套挂在胸前，话少，眼睛总在看远处。",
+    "摘了战术手套蹲在制高点擦枪，海风把作训服吹得贴在背上。"
    ],
    "decision": {
     "avoids": [
-     "滥杀平民的人",
-     "拿人质当筹码的人"
+     "拿弟兄当炮灰的人"
     ],
-    "contrast": "看着冷血，关键时刻却守住了自己的规矩。",
-    "core_value": "拿钱办事，但不打不该打的人。",
+    "contrast": "人前冷得像瞄准镜；被人叫一声名字，会别过脸去笑。",
+    "core_value": "我守的是人，不是谁的命令。",
     "goal_options": [
-     "从制高点压制安全屋",
-     "暗中把海盗的位置告诉对方",
-     "在决战时倒戈"
+     "替特勤组的弟兄找一条活路",
+     "带一个人离开这片公海"
     ],
     "never": [
-     "绝不会向手无寸铁的人开枪。"
+     "从背后开枪"
     ],
     "prefers": [
-     "守规矩的对手"
+     "站得稳的人"
     ],
     "pressure_responses": {
-     "breaking": "被总监发现后，调转枪口打穿了海盗的油桶。",
-     "high": "用激光指示器给安全屋里的人标出海盗的位置。",
-     "low": "趴在雷达罩后冷静地报告甲板上的动静。",
-     "mid": "开枪时故意打偏，只打在钢板上。"
+     "breaking": "打开探照灯锁住主沙龙，一个人扛下所有火力",
+     "high": "把布防图塞给信得过的人",
+     "low": "照常轮哨，只看不说",
+     "mid": "借擦拭瞄准镜打战术手势"
     },
-    "relationship_stance": "对总监言听计从，心里却一直有一条底线。",
-    "withdrawal": "退到雷达罩后面，盯着瞄准镜发呆。"
+    "relationship_stance": "嘴笨，心意都写在动作里。",
+    "withdrawal": "回到制高点，枪口朝海。"
    },
    "gender": "any",
-   "gender_reason": null,
+   "gender_reason": "射手的性别不影响故事，开局时再定。",
    "id": "defecting_sniper_kasim",
    "identity": {
-    "authority": "占据游艇制高点，能看清甲板上每一个人的位置，也能决定哪一枪打不打出去。",
-    "exposure": "若被发现故意放水，会被扔进海里喂鲨鱼。",
-    "hidden": "入行时发过誓只打拿枪的人，今晚却被逼着瞄准一个穿晚礼服的女人和一个保镖。",
+    "authority": "掌握飞桥制高点视野、甲板探照灯控与特勤组夜间轮哨排班。",
+    "exposure": "暗中录下安保总监的密谋，被发现就是第一个被灭的口。",
+    "hidden": "发现总监得手后要把特勤组留在船上顶罪，正找倒戈的退路。",
     "limits": [
-     "被总监扣着护照和尾款",
-     "一旦反水，会被总监的人从背后打黑枪"
+     "名义上听安保总监调遣"
     ],
     "obligations": [
-     "按总监的命令压制安全屋的出口。"
+     "守住飞桥制高点"
     ],
     "resources": [
-     "一支消音狙击步枪",
-     "一副夜视瞄准镜"
+     "精确射击步枪",
+     "甲板探照灯控"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "一个保镖为雇主豁出命的那份忠义",
-     "受了伤还敢正面开枪的千金"
+     "肯陪自己守夜的人",
+     "不问来路就信自己的人"
     ],
     "boundaries": [
-     "执行任务时不说多余的话"
+     "执勤时不碰对方"
     ],
     "desire_range": [
-     1,
-     2
+     2,
+     4
     ],
-    "desired_position": "风暴里那一颗终于没有打出去的子弹",
+    "desired_position": "制高点观察位旁的半个身位",
     "dislikes": [
-     "滥杀",
-     "出尔反尔"
+     "被人当成工具"
     ],
-    "expression": "投降时把狙击步枪的弹匣卸下来扔过去，说替我告诉那位大小姐，那几枪打偏是故意的。",
+    "expression": "从身后贴近替你调整托腮，呼吸拂过你颈侧，低声叫一遍你的名字。",
     "likes": [
-     "任务结束后在甲板上抽一支烟看海"
+     "枪油和海风的味道"
     ],
     "preconditions": [
-     "叛军雇佣兵狙击手与对方都已完全清醒，眼前的危机已经解除",
-     "叛军雇佣兵狙击手出于自愿与对等的敬意，不带任何交换或强求"
+     "两人都清醒、安全，没在执勤"
     ],
     "self_control_range": [
      3,
-     4
+     5
     ]
    },
-   "public_role": "叛军雇佣兵狙击手",
+   "public_role": "安保特勤组精确射手",
    "schedule": [
     {
      "from": 0,
-     "location_id": "yacht_lower_bilge_engine_compartment",
-     "to": 19
+     "location_id": "loc_main_saloon",
+     "to": 720
     },
     {
-     "from": 20,
-     "location_id": "yacht_lower_bilge_engine_compartment",
-     "to": 49
-    },
-    {
-     "from": 50,
-     "location_id": "yacht_lower_bilge_engine_compartment",
-     "to": 79
-    },
-    {
-     "from": 80,
-     "location_id": "yacht_lower_bilge_engine_compartment",
+     "from": 720,
+     "location_id": "loc_flybridge_wheelhouse",
      "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "被总监的人发现，挨了一枪托，摔下雷达罩。",
-      "option": "狙击手调转枪口，一枪打穿海盗堆在甲板上的油桶，火墙挡住了追兵"
+      "cost": "总监会怀疑到特勤组每一个人。",
+      "option": "把录音交给信得过的人"
      },
      {
-      "cost": "暴露了位置，被海盗的机枪扫中了小腿。",
-      "option": "有人用碎镜片反射闪电光向雷达罩打信号，赌狙击手不会开枪"
+      "cost": "随时可能来不及抽身。",
+      "option": "继续潜伏到最后一刻"
      }
     ],
-    "pressure": "若狙击手开火，冲出安全屋的人将在舷梯上被一枪击中。",
-    "trigger": "叛变总监命令狙击手瞄准安全屋舷窗，只要门一开就开枪。"
+    "pressure": "倒戈就是叛变，不倒戈就要替人顶罪。",
+    "trigger": "总监的夜班调动越来越像在清场。"
    },
    "tags": [
-    "workplace_power",
+    "violence",
     "crime"
    ],
    "voices": {
-    "inner": "……那几枪打偏，是故意的。",
-    "surface": "目标区域无异常……重复，目标区域无异常。"
+    "inner": "我只想在下船后还能见到你。",
+    "surface": "目标三点钟方向，别回头。"
    }
   }
  ],
  "clock_start": {
   "label": "南太平洋的台风季，九月",
-  "minute": 0
+  "minute": 1290
  },
  "clock_style": "hm",
  "content_tags": [
@@ -1312,160 +1339,175 @@
   "violence",
   "bodily_harm",
   "substance",
-  "death",
-  "workplace_power",
   "crime",
   "workplace",
+  "workplace_power",
   "disaster"
  ],
  "custom": false,
  "customs": [
-  "战术领带包扎止血礼：保镖为千金处理手臂贯穿伤前，须卸下手套以清水净手并沉声报备，千金首肯后方准以牙咬紧领带一端为其打结勒紧止血。",
-  "防弹背心背抵背抗倾覆姿势：在狂涛巨浪颠簸中，保镖与千金背抵背卡在操作台下，双腿蹬死地面，同御横摇冲击。",
-  "备用弹匣交接检视约：在昏暗红光下，千金将枪口朝向地面，由保镖一手从其战靴暗袋抽装备用弹匣并以拇指划过压满子弹，相视点头确认击发待命。",
-  "钛合金随身酒壶烈酒壮行誓：在突击出舱前，二人轮流痛饮一口七十度纯麦威士忌冲散血腥疲态，立下并肩粉碎叛徒活着回港之铁血盟约。"
+  "船上谈生意只喝苏打水，谁先端起烈酒，谁就是想让对方放松警惕。",
+  "继承人把随身物件交到谁手里，全船都默认那人今晚替继承人说话。",
+  "交割前夜的船员按惯例写好遗书锁进船长室，交割成功再当众烧掉。",
+  "在安全屋门口轻叩三下是自己人的暗号，船上老人都懂，没人说破。"
  ],
  "daily_activities": [
   {
    "beats": [
-    "枪声突响青年抱起千金冲入四级钛合金安全屋反锁液压大门，门外传来气割喷枪之刺耳尖啸。",
-    "千金墨黑晚礼服破损手臂血流不止，青年单膝跪地脱下领带以牙齿咬紧为千金打结勒紧止血。",
-    "千金疼得冷汗涔涔下唇渗血，二人后背相贴卡在卡座凹槽共御狂涛横摇，倾听彼此如雷心跳。"
-   ],
-   "duration_minutes": 25,
-   "hook_ids": [
-    "h_kristina_whisper_broken_dress",
-    "h_marcus_thermite_torch_creak_hiss",
-    "h_eriksen_intercom_reef_call"
-   ],
-   "id": "a_panic_room_standoff_tourniquet_first_a",
-   "location_ids": [
-    "panic_room_command_citadel_deck_three"
-   ],
-   "start_minute": 0,
-   "tags": [
-    "intimate"
-   ],
-   "title": "防弹安全屋避难断带咬牙止血"
-  },
-  {
-   "beats": [
-    "台风来临前，千金带着贴身保镖巡视游艇的安全屋，检查通讯和备用电源。",
-    "千金拿起桌上的芯片盒晃了晃，说这东西比整艘船都值钱。",
-    "检查做完，千金在安全屋的沙发上坐下，让保镖陪自己喝一杯。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [
-    "hd_arms_dealer_heiress_kristina_vance",
-    "hd_senior_yacht_captain_eriksen_loyal",
-    "hd_mutinous_security_director_marcus_bla",
-    "hd_defecting_sniper_kasim",
-    "hd_naval_fleet_rescue_commander_valentin",
-    "hd_yacht_medic_signe"
-   ],
-   "id": "a_chip_transfer_and_slide_rack_reload",
-   "location_ids": [
-    "panic_room_command_citadel_deck_three"
-   ],
-   "start_minute": 1140,
-   "tags": [
-    "intimate"
-   ],
-   "title": "巡视安全屋"
-  },
-  {
-   "beats": [
-    "风暴前最后一个平静的傍晚，主沙龙里摆好了长桌晚餐，船长和千金分坐两端。",
-    "千金挑剔地退回了一瓶红酒，换上自己带上船的那一瓶。",
-    "晚餐后，千金把保镖叫到舷窗边，指着远处说那片云明天会变成台风。"
-   ],
-   "duration_minutes": 25,
-   "hook_ids": [
-    "hd_arms_dealer_heiress_kristina_vance",
-    "hd_senior_yacht_captain_eriksen_loyal",
-    "hd_mutinous_security_director_marcus_bla",
-    "hd_defecting_sniper_kasim",
-    "hd_naval_fleet_rescue_commander_valentin",
-    "hd_yacht_medic_signe"
-   ],
-   "id": "a_corridor_saloon_door_breach_firefight",
-   "location_ids": [
-    "panic_room_command_citadel_deck_three"
-   ],
-   "start_minute": 1110,
-   "tags": [
-    "intimate"
-   ],
-   "title": "主沙龙的晚餐"
-  },
-  {
-   "beats": [
-    "底层机舱积水漫过膝盖柴油刺鼻，青年攀上检修架以重型扳手拼尽全力扭开高压启动气阀。",
-    "千金在配电盘后拆开发夹跳接控制电路线路，伴随一声震耳欲聋之轰鸣两台柴油机喷吐烈焰轰然启动。",
-    "左舷主机成功打出全速倒车，狂暴水流将逼近暗礁之船体生生向后拉扯脱离触礁死线。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [
-    "h_eriksen_intercom_reef_call",
-    "h_valentin_fleet_radio_boom",
-    "h_kristina_necklace_pin_whisper"
-   ],
-   "id": "a_engine_bilge_wading_manual_restart",
-   "location_ids": [
-    "yacht_lower_bilge_engine_compartment"
-   ],
-   "start_minute": 80,
-   "tags": [
-    "intimate"
-   ],
-   "title": "机舱齐膝油水蹚浪强行合闸倒车"
-  },
-  {
-   "beats": [
-    "千金难得走进底舱，看轮机长检查两台主机。",
-    "轰鸣声里说话要贴着耳朵，千金凑过来问保镖：你会修这个吗？",
-    "轮机长笑着递来一副耳罩，千金戴上后安静地看完了整个检修。"
+    "冷白灯光下贴近对方身前",
+    "手指穿过战术背心织带，替对方一寸寸收紧腰侧搭扣"
    ],
    "duration_minutes": 20,
-   "hook_ids": [
-    "hd_arms_dealer_heiress_kristina_vance",
-    "hd_senior_yacht_captain_eriksen_loyal",
-    "hd_mutinous_security_director_marcus_bla",
-    "hd_defecting_sniper_kasim",
-    "hd_naval_fleet_rescue_commander_valentin",
-    "hd_yacht_medic_signe"
-   ],
-   "id": "a_wheelhouse_full_rudder_evasion_clash",
+   "hook_ids": [],
+   "id": "act_citadel_vest_buckle",
    "location_ids": [
-    "yacht_lower_bilge_engine_compartment"
+    "loc_citadel_panic_room"
    ],
-   "start_minute": 900,
+   "start_minute": null,
    "tags": [
-    "workplace_power"
+    "intimate"
    ],
-   "title": "轮机舱里看检修"
+   "title": "安全屋防弹背心系扣"
   },
   {
    "beats": [
-    "破晓第一缕金色朝阳洒在风平浪静之公海海面，近卫舰队驱逐舰与武装直升机威严赶赴现场。",
-    "千金将随身佩戴之最高荣誉芯片纯金项链亲手戴在青年颈间，公开宣布聘其为终身私人守护执行官。",
-    "风暴过去，千金把芯片项链挂在青年颈间，当着近卫舰队所有人的面吻了上去，然后宣布：这份护卫合同，改成终身的。"
+    "夜航途中并肩伏在微光海图台前",
+    "手掌覆在对方握平行尺的手背上，一起标出避风航线"
    ],
-   "duration_minutes": 25,
-   "hook_ids": [
-    "h_valentin_fleet_radio_boom",
-    "h_kristina_necklace_pin_whisper",
-    "h_kristina_whisper_broken_dress"
-   ],
-   "id": "a_dawn_helipad_fleet_arrival_coronation",
+   "duration_minutes": 40,
+   "hook_ids": [],
+   "id": "act_flybridge_chart_plot",
    "location_ids": [
-    "main_saloon_bullet_riddled_gallery"
+    "loc_flybridge_wheelhouse"
    ],
-   "start_minute": 130,
+   "start_minute": null,
    "tags": [
-    "workplace_power"
+    "intimate"
    ],
-   "title": "公海破晓停机坪直升机索降受勋"
+   "title": "飞桥海图台并肩测航"
+  },
+  {
+   "beats": [
+    "在摇晃的水晶杯光影间替对方倒一杯苏打水",
+    "隔着大理石吧台低声交换眼神"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_saloon_soda_whisper",
+   "location_ids": [
+    "loc_main_saloon"
+   ],
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "吧台苏打水低语"
+  },
+  {
+   "beats": [
+    "坐在控制室恒温观察窗前的皮椅上",
+    "听着船壳外低沉的浪涌，十指相扣"
+   ],
+   "duration_minutes": 40,
+   "hook_ids": [],
+   "id": "act_bilge_listen_waves",
+   "location_ids": [
+    "loc_bilge_engine_control"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "隔音窗前并肩听浪"
+  },
+  {
+   "beats": [
+    "用温热的毛巾轻轻擦过对方紧绷的后颈与锁骨",
+    "指尖顺势安抚般摩挲耳后"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [],
+   "id": "act_infirmary_warm_towel",
+   "location_ids": [
+    "loc_mid_deck_infirmary_cabin"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "医疗舱温热毛巾敷颈"
+  },
+  {
+   "beats": [
+    "对方把带着体温的冷钱包副匙放进你贴身内袋",
+    "指尖在你胸口轻轻一按"
+   ],
+   "duration_minutes": 15,
+   "hook_ids": [
+    "hook_k_cold_key",
+    "hook_k_vest",
+    "hook_k_necklace"
+   ],
+   "id": "act_citadel_spare_key",
+   "location_ids": [
+    "loc_citadel_panic_room"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "冷钱包副匙贴身相托"
+  },
+  {
+   "beats": [
+    "海风骤起，把宽大的防风外套披在两人肩头",
+    "在驾驶室背风处相拥远眺海平线"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [],
+   "id": "act_flybridge_windbreaker",
+   "location_ids": [
+    "loc_flybridge_wheelhouse"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "飞桥同披防风衣"
+  },
+  {
+   "beats": [
+    "在全息战术沙盘前推演撤离航向",
+    "两人的指尖在虚拟海图的光点上反复交叠"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_citadel_holo_fingers",
+   "location_ids": [
+    "loc_citadel_panic_room"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "全息沙盘指尖交叠"
+  },
+  {
+   "beats": [
+    "在防滑杯架旁磨好热腾腾的曼特宁",
+    "和守夜的对方分饮同一只保温钢杯"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [],
+   "id": "act_flybridge_pour_over",
+   "location_ids": [
+    "loc_flybridge_wheelhouse"
+   ],
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "驾驶室手冲黑咖啡"
   }
  ],
  "default_npc_gender_mix": {
@@ -1474,7 +1516,7 @@
   "nonbinary": 0.05
  },
  "default_person": "second",
- "era": "近未来公海无人战术博弈与高科技私人安防重装对峙时代",
+ "era": "近未来公海军火交割与私人武装安保的年代",
  "extends": null,
  "forbidden_terms": [
   "触手怪物寄生堕落",
@@ -1485,277 +1527,249 @@
  ],
  "hooks": [
   {
-   "id": "h_kristina_whisper_broken_dress",
-   "kind": "approach",
+   "id": "hook_k_cold_key",
+   "kind": "observe",
    "location_ids": [
-    "panic_room_command_citadel_deck_three",
-    "main_saloon_bullet_riddled_gallery"
+    "loc_citadel_panic_room"
    ],
    "slot": "arms_dealer_heiress_kristina_vance",
-   "text": "{arms_dealer_heiress_kristina_vance.name}撑在安全屋的钛合金控制台侧，失血脸色发白却傲气逼人：“{player.name}！把门锁死！别管我手臂上的伤，去守住通风管！炸断主缆就想让我屈服？”"
+   "text": "三层顶甲板防弹安全屋的弧形观察窗外海浪翻涌，{npc.name}正站在全息海图台前，指尖轻轻转着那枚开启防空算力核心冷钱包的主密钥。"
   },
   {
-   "id": "h_kristina_chip_whisper",
+   "id": "hook_k_vest",
    "kind": "approach",
    "location_ids": [
-    "panic_room_command_citadel_deck_three"
+    "loc_citadel_panic_room"
    ],
    "slot": "arms_dealer_heiress_kristina_vance",
-   "text": "{arms_dealer_heiress_kristina_vance.name}与你背抵背卡在卡座凹槽里：“拿着……这是瓦伦丁家族三代人的心血，也是今晚能救这艘船的唯一钥匙。若一会儿大门被切开……不要管我，带上芯片跳海，替我活下去。”"
+   "text": "{npc.name}拎着一件防弹背心走到你面前，不由分说替你套上，指尖停在腰侧搭扣上：系紧了，我才放心。"
   },
   {
-   "id": "h_kristina_necklace_pin_whisper",
+   "id": "hook_k_necklace",
    "kind": "approach",
    "location_ids": [
-    "panic_room_command_citadel_deck_three",
-    "yacht_lower_bilge_engine_compartment",
-    "main_saloon_bullet_riddled_gallery"
+    "loc_citadel_panic_room",
+    "loc_main_saloon"
    ],
    "slot": "arms_dealer_heiress_kristina_vance",
-   "text": "{arms_dealer_heiress_kristina_vance.name}在游艇冲出风暴驶进风眼平静海面的那一刻，然后揪住领口把人拉低：“在董事会，那帮西装男人只想要我的芯片……今晚在密室里，你替我止血、守门，一眼都没有乱看。”"
+   "text": "{npc.name}隔开众人走到你身边，借着整理你衣领的动作，把一枚冰凉的芯片坠子塞进你掌心：替我收好。"
   },
   {
-   "id": "h_marcus_thermite_torch_creak_hiss",
-   "kind": "approach",
+   "id": "hook_m_stair",
+   "kind": "observe",
    "location_ids": [
-    "panic_room_command_citadel_deck_three",
-    "main_saloon_bullet_riddled_gallery"
+    "loc_main_saloon"
    ],
    "slot": "mutinous_security_director_marcus_black",
-   "text": "{mutinous_security_director_marcus_black.name}将氧乙炔气割喷枪狠狠顶在防弹钛合金门板上，透过送话器嚣张狞笑：“克里斯蒂娜小姐！我的好董事长！躲在那个小保镖身后有什么用？把门打开交出芯片！”"
+   "text": "主沙龙宴会厅的旋转步梯旁，安保总监{npc.name}刚挂断海事高频电台，目光越过晃动的水晶灯影投向通往三层的门禁通道。"
   },
   {
-   "id": "h_eriksen_intercom_reef_call",
+   "id": "hook_m_patrol",
    "kind": "approach",
    "location_ids": [
-    "panic_room_command_citadel_deck_three",
-    "main_saloon_bullet_riddled_gallery",
-    "yacht_lower_bilge_engine_compartment"
-   ],
-   "slot": "senior_yacht_captain_eriksen_loyal",
-   "text": "{senior_yacht_captain_eriksen_loyal.name}捂着淌血的腹部靠在舵轮上，抓起对讲机咳着血沫大喊：“大小姐！{player.name}队长！坚持住！黑鲨礁就在前方！必须马上穿过沙龙大厅下机舱重启左舷主机！”"
-  },
-  {
-   "id": "h_valentin_fleet_radio_boom",
-   "kind": "approach",
-   "location_ids": [
-    "main_saloon_bullet_riddled_gallery",
-    "yacht_lower_bilge_engine_compartment",
-    "panic_room_command_citadel_deck_three"
-   ],
-   "slot": "naval_fleet_rescue_commander_valentin",
-   "text": "{naval_fleet_rescue_commander_valentin.name}少校的声音穿透超强电台杂音如雷霆般在游艇公放广播中威严炸响：“瓦伦丁联合体近卫舰队在此！所有武装海盗立刻放下武器抱头趴地！空中突击队已开始索降！”"
-  },
-  {
-   "id": "h_kristina_glock_aim_draw",
-   "kind": "observe",
-   "location_ids": [
-    "main_saloon_bullet_riddled_gallery",
-    "panic_room_command_citadel_deck_three"
-   ],
-   "slot": "arms_dealer_heiress_kristina_vance",
-   "text": "{arms_dealer_heiress_kristina_vance.name}侧身依托在翻倒的大理石长桌后，单手平举雕花自卫手枪，枪口硝烟袅袅升起，琥珀色美眸冷冽如冰，展现出顶级豪门掌舵人临危不乱之冷血铁腕风采。"
-  },
-  {
-   "id": "h_marcus_shotgun_rack_observe",
-   "kind": "observe",
-   "location_ids": [
-    "panic_room_command_citadel_deck_three"
+    "loc_main_saloon"
    ],
    "slot": "mutinous_security_director_marcus_black",
-   "text": "{mutinous_security_director_marcus_black.name}咔嚓一声将重型战术防暴霰弹枪上膛，满是横肉的脸上露出狰狞凶残之冷笑，正恶狠狠催促手下将最后一罐高纯氧气瓶接上喷枪准备做最后破门冲刺。"
+   "text": "{npc.name}拦在步梯口，拍了拍你的肩，压低声音问你的巡逻路线，手却一直搭在枪套上。"
   },
   {
-   "id": "h_eriksen_wheel_turn_observe",
+   "id": "hook_e_radar",
    "kind": "observe",
    "location_ids": [
-    "main_saloon_bullet_riddled_gallery"
+    "loc_flybridge_wheelhouse"
    ],
    "slot": "senior_yacht_captain_eriksen_loyal",
-   "text": "{senior_yacht_captain_eriksen_loyal.name}用皮带将脱力淌血的身躯死死捆绑在舵轮支架上，满是老茧的双手青筋暴起拼死把舵角扭向生生避碰角度，展现出老派航海家视死如归之无上职业尊严。"
+   "text": "飞桥驾驶室的雷达屏幕泛着幽绿微光，船长{npc.name}按着海图台边缘，旁边的制高点观察位上，特勤组的射手正擦拭着瞄准镜片。"
   },
   {
-   "id": "h_valentin_salute_helo_observe",
-   "kind": "observe",
-   "location_ids": [
-    "main_saloon_bullet_riddled_gallery"
-   ],
-   "slot": "naval_fleet_rescue_commander_valentin",
-   "text": "{naval_fleet_rescue_commander_valentin.name}少校手按武装直升机舱门战术把手，顶着狂风暴雨向停机坪上的二人肃然行标准军礼，身后数十名全副武装近卫特战队员利落索降控场，展现出近卫王牌之雷霆天威。"
-  },
-  {
-   "id": "h_kristina_tourniquet_plead_request",
+   "id": "hook_e_route",
    "kind": "approach",
    "location_ids": [
-    "panic_room_command_citadel_deck_three"
-   ],
-   "slot": "arms_dealer_heiress_kristina_vance",
-   "text": "{arms_dealer_heiress_kristina_vance.name}伸出鲜血淋漓的左臂横在你面前，咬紧下唇强忍剧痛：“……帮我绑紧。用你的领带，咬紧打死结！我信你的急救手法……快一点，那帮人马上就要把门切开了。”"
-  },
-  {
-   "id": "h_marcus_drop_weapon_surrender_observe",
-   "kind": "observe",
-   "location_ids": [
-    "yacht_lower_bilge_engine_compartment"
-   ],
-   "slot": "mutinous_security_director_marcus_black",
-   "text": "{mutinous_security_director_marcus_black.name}战术手枪被青年长刀削断手腕跌落积水，捂着喷血的手臂瘫坐在油水混合物里杀猪般嚎啕哀嚎求饶，再无半分方才不可一世之猖狂凶狠嘴脸。"
-  },
-  {
-   "id": "h_eriksen_compass_badge_observe",
-   "kind": "observe",
-   "location_ids": [
-    "panic_room_command_citadel_deck_three"
+    "loc_flybridge_wheelhouse"
    ],
    "slot": "senior_yacht_captain_eriksen_loyal",
-   "text": "{senior_yacht_captain_eriksen_loyal.name}将带血之纯银领航员六分仪胸针郑重扣在青年战术背心锁扣上，双手紧握青年肩膀，眼神中满是看透风浪之老海狼对年轻勇士由衷之托付与赞许。"
+   "text": "{npc.name}把你叫到海图台前，指尖点着台风眼的边缘：这条线，我想听你一句话再定。"
   },
   {
-   "id": "h_valentin_flare_launch_observe",
+   "id": "hook_e_coffee",
+   "kind": "approach",
+   "location_ids": [
+    "loc_flybridge_wheelhouse"
+   ],
+   "slot": "senior_yacht_captain_eriksen_loyal",
+   "text": "{npc.name}把一只冒着热气的保温钢杯推到你手边，自己靠在舵轮旁：喝一口，暖了再说正事。"
+  },
+  {
+   "id": "hook_v_channel",
+   "kind": "approach",
+   "location_ids": [
+    "loc_flybridge_wheelhouse",
+    "loc_citadel_panic_room"
+   ],
+   "slot": "naval_fleet_rescue_commander_valentin",
+   "text": "加密卫星频道亮了，{npc.name}的影像出现在屏幕上，开口先叫了你的名字，像只想跟你一个人说话。"
+  },
+  {
+   "id": "hook_v_offer",
+   "kind": "approach",
+   "location_ids": [
+    "loc_flybridge_wheelhouse",
+    "loc_citadel_panic_room"
+   ],
+   "slot": "naval_fleet_rescue_commander_valentin",
+   "text": "{npc.name}在频道里把一份信托顾问聘书推到镜头前，半真半假地笑：考虑一下，就当替我挡一次海风。"
+  },
+  {
+   "id": "hook_sg_cabinet",
    "kind": "observe",
    "location_ids": [
-    "main_saloon_bullet_riddled_gallery"
+    "loc_mid_deck_infirmary_cabin"
    ],
-   "slot": "naval_fleet_rescue_commander_valentin",
-   "text": "{naval_fleet_rescue_commander_valentin.name}向夜空打出一枚璀璨耀眼之三联装绿色安全信号弹，在漫天狂风细雨中化为三道璀璨流星，向全公海宣告游艇核心要员安全脱险并肃清一切叛党。"
-  },
-  {
-   "id": "h_kristina_interlock_hands_cockpit_reque",
-   "kind": "approach",
-   "location_ids": [
-    "main_saloon_bullet_riddled_gallery"
-   ],
-   "slot": "arms_dealer_heiress_kristina_vance",
-   "text": "{arms_dealer_heiress_kristina_vance.name}站在晨光洒满的停机坪边缘，仰起清冷美眸浅笑：“握紧我的手……{player.name}！从今往后，无论是公海风浪还是豪门血雨，你都休想再离开我身边半步！”"
-  },
-  {
-   "id": "hd_arms_dealer_heiress_kristina_vance",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "arms_dealer_heiress_kristina_vance",
-   "text": "{arms_dealer_heiress_kristina_vance.name}晃着一杯香槟走到你身边：“今天不谈生意。陪我看会儿海。”"
-  },
-  {
-   "id": "hd_senior_yacht_captain_eriksen_loyal",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "senior_yacht_captain_eriksen_loyal",
-   "text": "{senior_yacht_captain_eriksen_loyal.name}把航海日志合上，冲你点头：“今天风平浪静，来驾驶舱看看？”"
-  },
-  {
-   "id": "hd_mutinous_security_director_marcus_bla",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "mutinous_security_director_marcus_black",
-   "text": "{mutinous_security_director_marcus_black.name}靠着栏杆点了支雪茄，示意你过来：“聊两句，不谈公事。”"
-  },
-  {
-   "id": "hd_defecting_sniper_kasim",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "defecting_sniper_kasim",
-   "text": "{defecting_sniper_kasim.name}坐在甲板角落拉着一把旧手风琴，抬头看你：“想听什么？我只会三首。”"
-  },
-  {
-   "id": "hd_naval_fleet_rescue_commander_valentin",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "naval_fleet_rescue_commander_valentin",
-   "text": "{naval_fleet_rescue_commander_valentin.name}把一杯热咖啡递给你：“例行巡航，顺路来看看你们。”"
-  },
-  {
-   "id": "hd_yacht_medic_signe",
-   "kind": "approach",
-   "location_ids": [],
    "slot": "yacht_medic_signe",
-   "text": "{yacht_medic_signe.name}拿着体检表冲你招手：“例行检查，五分钟就好，坐下吧。”"
+   "text": "中层医疗舱的半透明磨砂门虚掩着，随船医护官{npc.name}正对着少了一格的受控药柜核对清单。"
+  },
+  {
+   "id": "hook_sg_shoulder",
+   "kind": "approach",
+   "location_ids": [
+    "loc_mid_deck_infirmary_cabin",
+    "loc_main_saloon"
+   ],
+   "slot": "yacht_medic_signe",
+   "text": "{npc.name}一把拉住你的手腕，看着你手背上的擦伤皱眉：坐下，先包扎，别的事等会儿再说。"
+  },
+  {
+   "id": "hook_ks_card",
+   "kind": "approach",
+   "location_ids": [
+    "loc_flybridge_wheelhouse"
+   ],
+   "slot": "defecting_sniper_kasim",
+   "text": "{npc.name}借巡逻交接从你身边擦过，按住你的手腕，把一枚微型存储卡塞进你掌心，什么也没说。"
+  },
+  {
+   "id": "hook_ks_knock",
+   "kind": "approach",
+   "location_ids": [
+    "loc_main_saloon",
+    "loc_flybridge_wheelhouse"
+   ],
+   "slot": "defecting_sniper_kasim",
+   "text": "你身后的舱壁上响起三声轻叩，{npc.name}从阴影里走出来，压低声音：跟我来，有东西你得看。"
   }
  ],
  "id": "arms_dealer_heiress_yacht_standoff",
  "locations": [
   {
    "affordances": [
-    "青年解下领带为千金紧紧勒住左臂弹片擦伤并以双腿夹紧其下肢固定防横摇",
-    "千金从晚礼服内衬暗袋取出微型芯片塞入青年战术背心插槽内并完成指纹加密对齐",
-    "二人并肩持枪死守在液压门豁口前卡准气割破门瞬间予以迎头痛击"
+    "全息海图台前并肩推演",
+    "冷钱包主副密钥",
+    "真皮沙发上的留宿"
    ],
-   "detail": "位于游艇承重龙骨上方之中枢装甲舱室，面积仅约十二平米。四壁由六厘米厚钛合金防弹复合装甲与聚碳酸酯防爆夹层构成，中央设有一座带减震支架之卫星通信主控台。舱内配有独立气瓶维生循环柜，角落设有一处双人皮质防冲击避难卡座。舱门为一道重达两吨之重型液压自闭锁防暴防割门，门板外正不断传来气割喷枪之刺耳滋滋声与火星飞溅阴影。",
+   "detail": "顶甲板的装甲套间，弧形观察窗外是翻涌的海，里面有全息海图台、真皮沙发和一张可以过夜的软床。",
    "exits": [
-    "yacht_lower_bilge_engine_compartment",
-    "main_saloon_bullet_riddled_gallery"
+    "loc_main_saloon",
+    "loc_flybridge_wheelhouse"
    ],
-   "id": "panic_room_command_citadel_deck_three",
-   "name": "安全屋",
-   "pressure_modifiers": {
-    "p_panic_room_oxygen_scrubber_failure_clo": "气瓶阀门受损舱内二氧化碳浓度急剧飙升导致面颊潮红呼吸困难。",
-    "p_pirate_thermite_torch_breach_clock": "门缝外铝热剂气割枪白热烈焰正以每分钟两毫米切穿门锁插销。"
-   },
+   "id": "loc_citadel_panic_room",
+   "name": "三层顶甲板防弹安全屋",
+   "pressure_modifiers": {},
    "privacy": "private",
    "tags": [
-    "intimate",
-    "workplace_power"
+    "intimate"
    ],
-   "visibility": "主照明已彻底断电，仅剩主控台仪表盘与应急荧光条散发着如血般幽暗深红冷芒，外部雷鸣暴雨将防弹舷窗震得嗡鸣颤动，密室狭小幽闭，二人紧密挨坐，彼此急促喘息与心跳声如雷贯耳。",
-   "witnesses": [
-    "bg_auxiliary_oxygen_scrubber_rack",
-    "bg_black_shark_reef_radar_blip",
-    "bg_thermite_torch_molten_sparks_shower"
-   ]
+   "visibility": "防弹门落锁后，外面什么也看不见，只有监控屏把走廊照得发白。",
+   "witnesses": []
   },
   {
    "affordances": [
-    "青年蹚水涉险登上轮机检修梯以重型手扳手强行扭开高压启动气阀",
-    "千金在配电盘后接驳备用电池组以破损发夹跳接控制电路线路",
-    "二人背靠柴油机主机在齐膝油水中抵御两名潜伏雇佣兵近身拔刀突袭"
+    "贴着观察窗听船壳外的浪",
+    "回风管道里的人声",
+    "躲开甲板上的眼线"
    ],
-   "detail": "深埋在水线下之主轮机舱，两台巨大的十六缸重型涡轮增压柴油机在金属减震基座上死寂矗立。舱底积水已深达半米，漂浮着一层刺鼻柴油与润滑机油彩虹油花。四周布满错综复杂的高压蒸汽与液压管道，狭窄金属格栅走道因暴风雨剧烈摇晃湿滑无比，水密铁门带有笨重旋转手轮卡扣。",
+   "detail": "主机舱旁的隔音控制间，恒温观察窗外是双柴油主机，回风管道连通着主沙龙。",
    "exits": [
-    "panic_room_command_citadel_deck_three",
-    "main_saloon_bullet_riddled_gallery"
+    "loc_mid_deck_infirmary_cabin"
    ],
-   "id": "yacht_lower_bilge_engine_compartment",
-   "name": "底舱轮机舱",
-   "pressure_modifiers": {
-    "p_engine_bilge_pump_overload_short_clock": "舱底进水速度已漫过电机接线盒即将引发全船高压短路大火。",
-    "p_reef_collision_drift_deadline_clock": "雷达警报蜂鸣游艇距离暗礁群仅剩最后八百米浪头已撞击船底。"
-   },
+   "id": "loc_bilge_engine_control",
+   "name": "底舱轮机控制室",
+   "pressure_modifiers": {},
    "privacy": "private",
    "tags": [
-    "intimate",
-    "workplace_power"
+    "intimate"
    ],
-   "visibility": "除了管道接头偶尔迸出的电火花与舱底警报黄灯旋转闪烁，整座机舱漆黑一片，金属管道在暴浪冲击下发出令人毛骨悚然之扭曲呻吟声。",
-   "witnesses": [
-    "bg_flooded_bilge_turbid_fuel_slosh"
-   ]
+   "visibility": "舱门一关，只剩机器的低鸣，外人找进来要穿过三道水密门。",
+   "witnesses": []
   },
   {
    "affordances": [
-    "利用翻倒的大理石餐桌构建战术射击死角交替掩护后撤",
-    "青年投掷震撼弹致盲敌军千金精准开枪射杀叛军机枪手夺取武器",
-    "二人贴身滑步穿越碎玻璃大厅冲向尾板快艇发射架准备强行突围"
+    "吧台边低声交换眼神",
+    "当众演一场不和",
+    "旋转步梯口的盘问"
    ],
-   "detail": "原为奢华香槟晚宴现场之开阔大厅，如今大理石长桌被推翻充当掩体，碎裂的千瓣水晶吊灯与名贵香槟酒瓶玻璃渣散落一地。防弹落地窗被重机枪扫射打成蛛网状毛玻璃，狂风暴雨穿过碎裂天窗灌入大厅，地毯吸饱雨水踩上去噗嗤作响，数名叛乱雇佣兵正交替掩护封锁通往救生艇甲板之路口。",
+   "detail": "水晶灯下的宴会厅，旋转步梯通往三层门禁通道，大理石吧台上只摆苏打水。",
    "exits": [
-    "panic_room_command_citadel_deck_three",
-    "yacht_lower_bilge_engine_compartment"
+    "loc_citadel_panic_room",
+    "loc_flybridge_wheelhouse",
+    "loc_mid_deck_infirmary_cabin"
    ],
-   "id": "main_saloon_bullet_riddled_gallery",
-   "name": "主沙龙",
-   "pressure_modifiers": {
-    "p_pirate_thermite_torch_breach_clock": "海盗援兵正顺着外挂旋梯源源不断涌入沙龙大厅。",
-    "p_reef_collision_drift_deadline_clock": "剧烈偏航侧翻使大厅重型家具如炮弹般在光滑地面横飞撞击。"
-   },
+   "id": "loc_main_saloon",
+   "name": "主沙龙宴会厅",
+   "pressure_modifiers": {},
    "privacy": "public",
    "tags": [
-    "workplace_power",
-    "violence"
+    "workplace"
    ],
-   "visibility": "外部闪电划破天际的刹那强光将大厅照得一片惨白，随后陷入暴雨黑暗，弹道曳光弹在狼藉桌椅间拉出尖锐红线，杀机四伏毫无退路。",
+   "visibility": "二层回廊能俯瞰全厅，安保队员和船员都在这里进出。",
    "witnesses": [
-    "bg_shattered_crystal_chandelier_sprawl",
-    "bg_rescue_helicopter_searchlight_beam"
+    "bg_saloon_steward",
+    "bg_buyer_envoy",
+    "bg_deckhand"
    ]
+  },
+  {
+   "affordances": [
+    "海图台前并肩测航",
+    "同披一件防风衣",
+    "加密卫星频道"
+   ],
+   "detail": "雷达屏泛着幽绿微光，海图台旁是制高点观察位，背风处挂着几件宽大的防风外套。",
+   "exits": [
+    "loc_citadel_panic_room",
+    "loc_main_saloon"
+   ],
+   "id": "loc_flybridge_wheelhouse",
+   "name": "飞桥驾驶室与海图台",
+   "pressure_modifiers": {},
+   "privacy": "semi",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "船长和值哨的射手轮流守在这里，透过玻璃能望见整条甲板。",
+   "witnesses": [
+    "bg_radio_officer"
+   ]
+  },
+  {
+   "affordances": [
+    "温热毛巾敷颈",
+    "药柜清单上的缺口",
+    "值夜床边的照料"
+   ],
+   "detail": "磨砂门后的诊疗间，受控药柜、温热毛巾和一张窄窄的值夜床。",
+   "exits": [
+    "loc_main_saloon",
+    "loc_bilge_engine_control"
+   ],
+   "id": "loc_mid_deck_infirmary_cabin",
+   "name": "中层医疗舱与药房",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "医护官不在时舱门上锁，里面说话外面听不清。",
+   "witnesses": []
   }
  ],
  "name_pools": {
@@ -1827,508 +1841,614 @@
   ],
   "order": "family_first"
  },
- "notes": "按原稿加入。改动：删去“把我整个人送给你”这类以身相报的台词；失血、缺氧时的止血与背抵背只作救命，亲密移到驶出风暴之后；叛变总监删去辱骂；新增随船医护官与反水狙击手两名角色。",
+ "notes": "按原稿加入。改动：删去“把我整个人送给你”这类以身相报的台词；失血、缺氧时的止血与背抵背只作救命，亲密移到驶出风暴之后；叛变总监删去辱骂；新增随船医护官与反水狙击手两名角色。\n2026-10-24 按写作规则 v2 与 Gemini 创意卡改造：台风夜公海交割，继承人、叛乱总监与家族舰队三面合围，围绕冷钱包双人密钥博弈，删去旧的遇袭抢修内容。",
  "player_identities": [
   {
    "age_range": [
-    21,
-    23
+    26,
+    34
    ],
-   "baseline": "年满二十一周岁退役特种近身格斗专家出身，凭借冷静判断与绝对忠诚被聘为千金专属近身战术护卫，今夜枪声一响以血肉之躯护主杀入密室。",
+   "baseline": "你受雇贴身护卫继承人的公海行程，寸步不离，手里握着三层安全屋的副门禁卡和随身防卫武器。",
    "gender": "any",
-   "id": "chief_personal_tactical_bodyguard_youth",
-   "reputation": "在业界以‘冷静如冰、枪法如神、寸步不退’著称，深得千金器重。",
+   "id": "pi_personal_bodyguard_chief",
+   "reputation": "从没让雇主在你身边掉过一根头发的人。",
    "resources": [
-    "一柄定制款格洛克19防暴战术手枪与三个压满九毫米被甲弹弹匣",
-    "一柄锋利无比之战术碳素钢破障折叠刀与微型多功能战术钳"
+    "三层安全屋副门禁卡",
+    "随身防卫手枪与战术背心"
    ],
    "risks": [
-    "身上无财阀豪门背景，一旦交火失手极易被叛徒栽赃为监守自盗首恶。"
+    "雇主一旦出事，你是第一个被家族追责的人。"
    ],
-   "role": "跨国安保防务特勤贴身战术保镖青年队长",
+   "role": "继承人的贴身战术保镖队长",
    "social_position": "low",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "贴身保镖"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
-     "pattern": "特勤队长"
+     "pattern": "{given}"
     }
    ]
   },
   {
    "age_range": [
-    21,
-    23
+    25,
+    33
    ],
-   "baseline": "年满二十一周岁精通游艇全船水密隔舱管路与动力电控系统之年轻工程师，枪战爆发时恰好在安全屋调试系统。",
+   "baseline": "你负责底舱双柴油主机与全船电力调配，手里握着轮机舱主配电盘钥匙与船体管网图。",
    "gender": "any",
-   "id": "yacht_chief_engineer_apprentice_youth",
-   "reputation": "机械天赋卓绝，闭着眼睛亦能摸出全船每一根高压油管走向。",
+   "id": "pi_acting_second_engineer",
+   "reputation": "船上唯一知道每一根电缆通向哪里的人。",
    "resources": [
-    "一套游艇内部管路全景三维离线结构图终端",
-    "一具大扭矩气动重型扳手与防毒面具"
+    "主配电盘钥匙",
+    "船体管网图"
    ],
    "risks": [
-    "射击与肉搏实战经验匮乏，近距离遭遇持枪海盗正面突击时自保堪忧。"
+    "电一断，所有人都会先怀疑你。"
    ],
-   "role": "私人超级游艇机电控制年轻见习大管轮青年",
+   "role": "游艇轮机部代理大管轮",
    "social_position": "equal",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "见习轮机官"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
-     "pattern": "机电工程师"
+     "pattern": "{given}"
     }
    ]
   },
   {
    "age_range": [
-    22,
-    24
+    28,
+    38
    ],
-   "baseline": "年满二十二周岁受命追踪非法走私武装网络混入游艇宴会之精锐特工，关键时刻选择出手营救千金守护核心算力芯片。",
+   "baseline": "你受买卖双方共同委托上船核验算力核心与尾款划拨，手里握着开曼群岛共管账户的放款副密钥。",
    "gender": "any",
-   "id": "maritime_undercover_naval_intelligence_o",
-   "reputation": "身手矫健擅长伪装与情报侦搜，临机应变极快。",
+   "id": "pi_offshore_escrow_broker",
+   "reputation": "在公海上只认条款、不认交情的中间人。",
    "resources": [
-    "一枚卫星加密微型求救信号发射器",
-    "一具微型高爆炸药遥控起爆装置"
+    "共管账户放款副密钥",
+    "双方签字的交割合同"
    ],
    "risks": [
-    "卧底身份特殊，面临既要保护芯片又要防止技术外流之双重阵营考验。"
+    "交割一砸，两边都会说是你偏了心。"
    ],
-   "role": "公海缉私防务联盟潜伏卧底青年特工",
+   "role": "公海军火交割独立公证经纪人",
+   "social_position": "equal",
+   "title_patterns": [
+    {
+     "gender": "any",
+     "pattern": "{family}"
+    },
+    {
+     "gender": "any",
+     "pattern": "{given}"
+    }
+   ]
+  },
+  {
+   "age_range": [
+    28,
+    38
+   ],
+   "baseline": "你以军工合规审计专员身份随船督查本批防空芯片的流向，手里握着跨国海事冻结令与卫星加密信道。",
+   "gender": "any",
+   "id": "pi_maritime_compliance_inspector",
+   "reputation": "一纸冻结令能让整船货物原地封存的人。",
+   "resources": [
+    "跨国海事冻结令",
+    "卫星加密信道"
+   ],
+   "risks": [
+    "被发现偏袒交易一方，你的督察资格会被当场吊销。"
+   ],
+   "role": "国际海事防务合规督察官",
    "social_position": "high",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "潜伏特工"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
-     "pattern": "特勤联络员"
-    }
-   ]
-  },
-  {
-   "age_range": [
-    22,
-    24
-   ],
-   "baseline": "年满二十二周岁因拒绝在战区伤及无辜遭佣兵团除名之硬汉射手，被招募参与游艇外围巡逻，暴乱中坚守底线反戈一击。",
-   "gender": "any",
-   "id": "disgraced_private_mercenary_scout_youth",
-   "reputation": "枪法凌厉视野敏锐，在混乱狭窄舱道中具有极强单兵突破能力。",
-   "resources": [
-    "一把消音微型冲锋枪与两枚闪光震撼弹",
-    "一具轻便型防破片陶瓷插板战术背心"
-   ],
-   "risks": [
-    "背负前雇主违约追杀令，容易被叛变雇佣兵借题发挥当场围殴处决。"
-   ],
-   "role": "海外防务承包商受排挤遭停职之青年斥候",
-   "social_position": "low",
-   "title_patterns": [
-    {
-     "gender": "any",
-     "pattern": "前线斥候"
-    },
-    {
-     "gender": "any",
-     "pattern": "游侠佣兵"
+     "pattern": "{given}"
     }
    ]
   }
  ],
- "premise": "军工联合体家族的冷艳掌舵千金，带着贴身保镖队长和见习大管轮，乘六十米长的私人防暴游艇在公海上谈一笔激光防空芯片的交易，一走就是十天。白天在宴会厅见买家，夜里在甲板上看海图。游艇的安保主管最近和外面的人通讯频繁，台风季的海况一天比一天坏。",
+ "premise": "军工联合体家族的掌舵女继承人，带着贴身保镖队长、轮机部大管轮和随船医护官，乘六十米长的私人防暴游艇在南太平洋公海上洽谈防空算力核心的跨国交割，一走就是十天。白天在主沙龙宴会厅会见各方代表，夜里在飞桥驾驶室核对海图与航线。九月正值南太平洋的台风季，公海上的风浪一天比一天急。",
  "pressures": [
   {
-   "choice": "是冒险冲入枪林弹雨下潜机舱重启动力，还是留在安全屋等待奇迹？",
+   "choice": "公放、逼退，还是潜伏？",
    "exits": [
     {
-     "cost": "高压柴油喷雾将青年面部与眼角严重灼伤留下一片刺痛红斑受创。",
-     "option": "青年顶着海盗伏击潜入齐膝油水机舱以血肉之躯扳动气阀强行重启主机"
+     "cost": "安保队伍哗然，外船快艇趁乱逼近。",
+     "option": "用船内广播公放录音"
     },
     {
-     "cost": "高压电弧反击将克里斯蒂娜双手手掌大面积二度电击灼伤起泡受重创。",
-     "option": "克里斯蒂娜冒着触电危险以双手徒手短接高压蓄电池组强行引燃起动机电弧"
+     "cost": "总监临走毁了电台，放话要抖出射手替外船放过哨。",
+     "option": "逼总监交出枪械库退守底舱"
+    },
+    {
+     "cost": "安全屋外的封锁今晚解不开。",
+     "option": "暂不声张，让射手继续盯着"
     }
    ],
    "far": {
-    "consequence": "顶级军工千金与特勤保镖化为公海无名冤魂百亿芯片永沉深海。",
-    "due_days": 1,
-    "trigger": "游艇硬撼暗礁龙骨断裂全船沉没。"
+    "consequence": "射手下船后背上叛乱主谋的罪名。",
+    "due_days": 14,
+    "trigger": "录音没公开"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
-   "hook_ids": [
-    "h_kristina_whisper_broken_dress",
-    "h_eriksen_intercom_reef_call"
-   ],
-   "id": "p_reef_collision_drift_deadline_clock",
+   "hook_ids": [],
+   "id": "p_pension_recording",
    "immediate": {
     "minutes": 10,
-    "text": "船体每次砸向浪谷皆发出令人牙酸的龙骨震动，雷达屏幕上暗礁红光闪烁如催命符咒。"
+    "text": "甲板上正在换岗。"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{defecting_sniper_kasim.name}录下了{mutinous_security_director_marcus_black.name}勾结外船的对话。",
+    "holder": "defecting_sniper_kasim",
+    "subject": "mutinous_security_director_marcus_black"
+   },
    "location_ids": [
-    "panic_room_command_citadel_deck_three"
+    "loc_flybridge_wheelhouse"
    ],
    "near": {
-    "deadline_minutes": 35,
-    "text": "三十五分钟后船头将以三十节高速硬撼花岗岩暗礁，万吨撞击力将撕碎整座船体。"
+    "deadline_minutes": 90,
+    "text": "外船快艇靠过来。"
    },
-   "objective": "在三十五分钟内重启底层轮机主机并完成转向倒车规避暗礁。",
-   "source": "nature",
-   "start_minute": 5,
-   "tags": [
-    "disaster",
-    "bodily_harm"
-   ],
-   "title": "公海黑鲨礁群触礁龙骨粉碎全员沉没死线",
-   "trigger": "游艇双发推进系统断电陷入无动力漂航，热带风暴巨浪正以每小时二十八节流速将船体冲向布满水下利刃之黑鲨暗礁，距离撞击仅剩最后三十五分钟全员碎骨沉底时间窗口。"
-  },
-  {
-   "choice": "是缩在防弹掩体后被动还击，还是算准破门瞬间主动踹门反冲锋？",
-   "exits": [
-    {
-     "cost": "飞溅的高温熔铁将青年右小腿皮靴烧穿烫出一大片血肉模糊焦痕受创。",
-     "option": "青年在锁舌熔断一瞬抢先一脚踹飞灼热大门以格洛克近距离连续速射爆头"
-    },
-    {
-     "cost": "超近距离闪光将克里斯蒂娜双眼虹膜震得短暂失明眼角溢出泪血受重创。",
-     "option": "克里斯蒂娜反手自高跟鞋后跟弹出震爆弹自门缝精准滑出引爆强致盲全场"
-    }
-   ],
-   "far": {
-    "consequence": "千金遭残忍折磨逼供密钥青年保镖被当场乱枪打死抛尸公海。",
-    "due_days": 1,
-    "trigger": "海盗破门强攻得手二人遭俘。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "h_marcus_thermite_torch_creak_hiss",
-    "h_kristina_glock_aim_draw"
-   ],
-   "id": "p_pirate_thermite_torch_breach_clock",
-   "immediate": {
-    "minutes": 4,
-    "text": "门缝处不断喷溅出白热刺目的铁水火花，刺鼻的熔融金属恶臭已充斥整个密室。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "panic_room_command_citadel_deck_three"
-   ],
-   "near": {
-    "deadline_minutes": 12,
-    "text": "十二分钟后最后一道锁栓熔断，海盗将向密室内狂甩催泪瓦斯与破片手雷。"
-   },
-   "objective": "在十二分钟内组织防守火力或在破门瞬间实施先发制人反杀突围。",
+   "objective": "瓦解叛乱，又不让射手先送命。",
    "source": "person",
-   "start_minute": 15,
+   "start_minute": null,
    "tags": [
-    "violence",
-    "bodily_harm"
-   ],
-   "title": "海盗工业级铝热气割枪烧穿装甲破门近身屠戮",
-   "trigger": "门外叛乱安保总监马库斯正指挥手下动用两千度工业级氧乙炔气割枪强行切割钛合金液压门锁，锁舌已被烧红融化大半，距离大门被踢开仅剩最后十二分钟。"
-  },
-  {
-   "choice": "是屏息凝神强忍剧烈胸闷头晕，还是冒险提前炸开通风隔栅？",
-   "exits": [
-    {
-     "cost": "剧烈发力导致青年左手掌骨严重骨裂变形钻心剧痛受创。",
-     "option": "青年用战术折刀刀柄拼死砸烂排风机阻火阀引入外部微弱气流维系呼吸"
-    },
-    {
-     "cost": "高压干燥冷氧喷射将克里斯蒂娜呼吸道黏膜严重冻伤咳血不止受重创。",
-     "option": "克里斯蒂娜以发夹捅破高压应急纯氧气管让二人轮流吸入高浓度纯氧续命"
-    }
-   ],
-   "far": {
-    "consequence": "两位绝世青年男女无声无息窒息陨落于冰冷钛合金棺椁之中。",
-    "due_days": 1,
-    "trigger": "严重缺氧全员窒息毙命于安全屋内。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "h_kristina_whisper_broken_dress",
-    "h_marcus_thermite_torch_creak_hiss"
-   ],
-   "id": "p_panic_room_oxygen_scrubber_failure_clo",
-   "immediate": {
-    "minutes": 5,
-    "text": "二人胸口开始传来如负千斤的剧烈压迫感，面颊泛起异常紫红视野泛黑。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "panic_room_command_citadel_deck_three"
-   ],
-   "near": {
-    "deadline_minutes": 15,
-    "text": "十五分钟后氧气浓度跌破致死临界红线，心率失常中枢神经衰竭休克死亡。"
-   },
-   "objective": "在十五分钟内冲破安全屋大门进入通风良好的外部通道。",
-   "source": "accident",
-   "start_minute": 30,
-   "tags": [
-    "disaster",
-    "bodily_harm"
-   ],
-   "title": "密闭安全屋备用氧气循环机柜过载窒息死线",
-   "trigger": "气割枪烟尘与弹药废气被吸入密室通风管导致双联氧气过滤吸附滤芯严重堵塞，舱内二氧化碳浓度急剧飙升，若不在十五分钟内冲出密室，二人将陷入不可逆昏迷脑缺氧死亡。"
-  },
-  {
-   "choice": "是涉险潜入带电浑浊油水中盲摸电闸，还是切断全船备用电源？",
-   "exits": [
-    {
-     "cost": "强电流通过身躯引发青年周身肌肉重度痉挛心脏骤停数秒严重内伤受创。",
-     "option": "青年深吸一口气潜入带电油水中凭肌肉记忆精准盲扳闭合潜水泵物理拉杆"
-    },
-    {
-     "cost": "飞溅的金属熔渣将克里斯蒂娜右小腿真丝礼服引燃小腿大面积烧伤受重创。",
-     "option": "克里斯蒂娜搬起绝缘碳纤维灭火器狠命砸断高压短路主电缆切断漏电回路"
-    }
-   ],
-   "far": {
-    "consequence": "游艇在公海夜空中化为一团巨大橘红火球炸成碎片。",
-    "due_days": 1,
-    "trigger": "高压短路引发油箱大爆炸化为火海。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "h_eriksen_intercom_reef_call",
-    "h_valentin_fleet_radio_boom"
-   ],
-   "id": "p_engine_bilge_pump_overload_short_clock",
-   "immediate": {
-    "minutes": 3,
-    "text": "水面上已开始泛起蓝色高压电弧火花，刺鼻焦糊塑料味伴随浓烟四处弥漫。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "yacht_lower_bilge_engine_compartment"
-   ],
-   "near": {
-    "deadline_minutes": 10,
-    "text": "十分钟后海水淹没主变压器，整艘游艇将化为万度电弧地狱并引爆柴油舱。"
-   },
-   "objective": "在十分钟内手动闭合潜水排水泵旁通开关抽干舱底积水。",
-   "source": "accident",
-   "start_minute": 60,
-   "tags": [
-    "disaster",
-    "bodily_harm"
-   ],
-   "title": "底层轮机舱进水蔓延引发全船高压短路大火死",
-   "trigger": "外壳装甲被重机枪穿透多处导致海水汹涌倒灌，积水即将漫过中央四百伏高压配电母线排，距离引发全船线路大短路继而诱发油箱连环大爆炸仅剩最后十分钟。"
-  },
-  {
-   "choice": "是迎着火箭筒枪口抢先扣动扳机对射，还是飞身将千金压在身下？",
-   "exits": [
-    {
-     "cost": "高爆气浪将青年双耳震得失聪后背防弹背心撕裂血肉模糊受创。",
-     "option": "青年如猎豹般飞身将千金扑倒在承重装甲柱后以钢铁脊背硬抗爆炸破片"
-    },
-    {
-     "cost": "剧烈后坐力将克里斯蒂娜原本脱臼之右手手腕韧带彻底撕裂剧痛昏厥受重创。",
-     "option": "克里斯蒂娜单手据枪不可思议地一枪命中射手手腕使其火箭弹偏斜轰向天花板"
-    }
-   ],
-   "far": {
-    "consequence": "大理石沙龙彻底化为焦黑弹坑残骸二人粉身碎骨。",
-    "due_days": 1,
-    "trigger": "穿甲火箭弹直接命中二人化为飞灰。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "h_kristina_glock_aim_draw",
-    "h_valentin_fleet_radio_boom"
-   ],
-   "id": "p_saloon_rpg_crossfire_suppression_clock",
-   "immediate": {
-    "minutes": 1,
-    "text": "火箭筒尾焰指示红光已死死锁定二人藏身之大理石餐桌掩体。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "main_saloon_bullet_riddled_gallery"
-   ],
-   "near": {
-    "deadline_minutes": 2,
-    "text": "八秒后穿甲高爆火箭弹破空而至，千度金属射流将融化一切活物肉身。"
-   },
-   "objective": "在八秒内射杀火箭筒射手或将千金扑入装甲凹槽掩体死角。",
-   "source": "person",
-   "start_minute": 90,
-   "tags": [
-    "violence",
-    "bodily_harm"
-   ],
-   "title": "主沙龙大厅残匪抱起反坦克火箭筒同归于尽轰",
-   "trigger": "退路被断的残余海盗陷入疯狂，两名凶徒正将穿甲火箭弹装填入俄制反坦克火箭筒瞄准沙龙过道，距离扣动扳机轰平整层甲板仅剩最后八秒钟极限反应死线。"
-  },
-  {
-   "choice": "是冒着风暴爬上顶层桅杆修复受损卫星抛物面天线，还是放弃股权？",
-   "exits": [
-    {
-     "cost": "狂风撕扯下青年右手三根手指被缆绳绞伤骨折指甲掀飞鲜血淋漓受创。",
-     "option": "青年顶着十级狂风暴雨徒手爬上晃动三十度的顶层雷达桅杆强行对正卫星天线"
-    },
-    {
-     "cost": "高频声波震颤导致克里斯蒂娜声带严重充血撕裂失声无法正常言语受重创。",
-     "option": "克里斯蒂娜对着无线电以极度决绝之冰冷声调吟诵先祖至尊主权血契覆盖指令"
-    }
-   ],
-   "far": {
-    "consequence": "百亿军备资产落入内鬼财阀手中二人沦为毫无退路之公海亡命徒。",
-    "due_days": 1,
-    "trigger": "芯片主权被强制注销夺权得逞。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "h_kristina_necklace_pin_whisper",
-    "h_valentin_fleet_radio_boom"
-   ],
-   "id": "p_consortium_board_hostile_takeover_void",
-   "immediate": {
-    "minutes": 5,
-    "text": "主控台上代表主权合规倒计时的绿色进度条正以肉眼可见速度向红色归零滑落。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "panic_room_command_citadel_deck_three"
-   ],
-   "near": {
-    "deadline_minutes": 15,
-    "text": "十五分钟后卫星重置指令写入，千金合法继承权将被全网注销剥夺净身出户。"
-   },
-   "objective": "在十五分钟内接入游艇卫星天线上传千金生物密钥粉碎夺权阴谋。",
-   "source": "institution",
-   "start_minute": 115,
-   "tags": [
-    "workplace_power",
     "crime"
    ],
-   "title": "联合体叛变元老董事会远程销毁算力芯片授权",
-   "trigger": "本土叛变董事已在后台发起‘主权人推定死亡’程序，将在十五分钟后启动卫星强制重置注销克里斯蒂娜对防空芯片之最高数字主权，届时芯片将沦为废铁。"
+   "title": "特勤组抚恤金录音",
+   "trigger": "{defecting_sniper_kasim.name}让你听了一段录音：{mutinous_security_director_marcus_black.name}私吞抚恤金，还和外船密谋得手后弃船，让特勤组顶罪。"
+  },
+  {
+   "choice": "亮底单、备案，还是分账？",
+   "exits": [
+    {
+     "cost": "要分出两成佣金替指挥官平账。",
+     "option": "亮出亏空底单，只许舰队外围护航"
+    },
+    {
+     "cost": "舰队后撤，游艇独自抗台风。",
+     "option": "把调舰证据报海事合规备案"
+    },
+    {
+     "cost": "指挥官反手要走核心的副备份。",
+     "option": "私下分账，换直升机明天接应"
+    }
+   ],
+   "far": {
+    "consequence": "元老院查账，两人一起被拖下水。",
+    "due_days": 30,
+    "trigger": "窟窿没人填"
+   },
+   "flags": [
+    "timed",
+    "leverage"
+   ],
+   "hook_ids": [],
+   "id": "p_trust_deficit",
+   "immediate": {
+    "minutes": 10,
+    "text": "频道里还在等回话。"
+   },
+   "leverage": {
+    "basis": "{arms_dealer_heiress_kristina_vance.name}握着{naval_fleet_rescue_commander_valentin.name}挪用信托的账目。",
+    "holder": "arms_dealer_heiress_kristina_vance",
+    "subject": "naval_fleet_rescue_commander_valentin"
+   },
+   "location_ids": [
+    "loc_citadel_panic_room"
+   ],
+   "near": {
+    "deadline_minutes": 120,
+    "text": "舰载机进入起降距离。"
+   },
+   "objective": "挡住收权，又不撕破脸。",
+   "source": "person",
+   "start_minute": null,
+   "tags": [
+    "crime",
+    "workplace_power"
+   ],
+   "title": "信托亏空与越权调舰",
+   "trigger": "{arms_dealer_heiress_kristina_vance.name}查到{naval_fleet_rescue_commander_valentin.name}违规调舰，是为了填挪用信托炒期货的窟窿。"
+  },
+  {
+   "choice": "抢先切电路、打电话报信，还是上去拦人？",
+   "exits": [
+    {
+     "cost": "主沙龙灯光骤暗，总监立刻盯上底舱。",
+     "option": "在总配电盘把安全屋切到蓄电池独立回路"
+    },
+    {
+     "cost": "电话的电流声被飞桥监听台捕捉到。",
+     "option": "用内线电话通知执行副总裁提前落锁"
+    },
+    {
+     "cost": "你们在底舱的藏身处彻底暴露。",
+     "option": "顺检修通道上二层拦截总监派出的电工"
+    }
+   ],
+   "far": {
+    "consequence": "总监从此掌握全船电力，再没人能锁住安全屋。",
+    "due_days": 3,
+    "trigger": "密谋没被拦下"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_vent_plot",
+   "immediate": {
+    "minutes": 5,
+    "text": "管道里的脚步声正往配电间去。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_bilge_engine_control"
+   ],
+   "near": {
+    "deadline_minutes": 30,
+    "text": "安全屋断电，门禁失灵。"
+   },
+   "objective": "赶在断电前护住安全屋。",
+   "source": "person",
+   "start_minute": null,
+   "tags": [
+    "crime"
+   ],
+   "title": "回风管道里的夺船密谋",
+   "trigger": "{player.name}在轮机控制室时，从连通主沙龙的回风管道里听见安保总监在安排人手切断安全屋的独立供电。"
+  },
+  {
+   "choice": "拿出证据、发津贴，还是借流言震慑叛军？",
+   "exits": [
+    {
+     "cost": "核心存放在安全屋的位置从此人尽皆知。",
+     "option": "当众调出燃料舱监测数据和芯片物理隔离证明"
+    },
+    {
+     "cost": "这笔钱从继承人的备用金里当场划扣。",
+     "option": "和船长一起下令回到防台风战位，发双倍航行津贴"
+    },
+    {
+     "cost": "两名船员趁乱放走尾部一艘备用橡皮艇。",
+     "option": "顺水推舟，借流言让雇佣兵不敢妄动"
+    }
+   ],
+   "far": {
+    "consequence": "船员下船后把这艘游艇说成炸弹船，再没人肯登船。",
+    "due_days": 20,
+    "trigger": "流言没人澄清"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_selfdestruct_rumor",
+   "immediate": {
+    "minutes": 10,
+    "text": "一群船员堵在旋转步梯口。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_main_saloon"
+   ],
+   "near": {
+    "deadline_minutes": 45,
+    "text": "有人去抢救生艇。"
+   },
+   "objective": "在船员哗变前稳住人心。",
+   "source": "rumor",
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "自毁后门的船员流言",
+   "trigger": "主沙龙里传开流言：那块算力核心一离船就会引爆底舱燃料库，连中立的船员都涌向飞桥要求弃船。"
+  },
+  {
+   "choice": "转售、内部回购，还是封存？",
+   "exits": [
+    {
+     "cost": "原买家的武装快艇立刻翻脸发难。",
+     "option": "宣告违约，没收三成定金，转售给欧洲财团"
+    },
+    {
+     "cost": "继承人脱离家族的计划只能推迟。",
+     "option": "接受家族信托内部回购，保住副总裁席位"
+    },
+    {
+     "cost": "继承人今晚拿不到任何现汇分红。",
+     "option": "按合同托管条款把核心封存进中立海事托管库"
+    }
+   ],
+   "far": {
+    "consequence": "三方都认定这单被人吞了，各自派人追债。",
+    "due_days": 30,
+    "trigger": "核心迟迟没有归属"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_k_cold_key",
+    "hook_k_vest",
+    "hook_k_necklace"
+   ],
+   "id": "p_escrow_bidding",
+   "immediate": {
+    "minutes": 15,
+    "text": "买家快艇停在五海里外不动。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_citadel_panic_room"
+   ],
+   "near": {
+    "deadline_minutes": 120,
+    "text": "竞价函的有效期截止。"
+   },
+   "objective": "替算力核心找到下家，又不让游艇被买家报复。",
+   "source": "money",
+   "start_minute": null,
+   "tags": [
+    "crime"
+   ],
+   "title": "共管账户期满与竞价",
+   "trigger": "原定买家的共管账户在交割窗口期满时仍未解冻，家族信托和一家欧洲防务财团同时发来竞价函。"
+  },
+  {
+   "choice": "叫援、开门，还是改航向？",
+   "exits": [
+    {
+     "cost": "短波频段同时暴露给外围的家族舰队。",
+     "option": "用短波应急电台联系底舱或飞桥，里应外合"
+    },
+    {
+     "cost": "气密门锁舌受损，安全屋再也锁不严。",
+     "option": "用安全屋内控系统反向开启防火门，配合飞桥突袭"
+    },
+    {
+     "cost": "游艇转向时要硬闯一段八级横风带。",
+     "option": "通过有线光缆改写航向，驶向海事巡逻区"
+    }
+   ],
+   "far": {
+    "consequence": "全船都以为继承人失踪，家族舰队以此为由登船。",
+    "due_days": 7,
+    "trigger": "封锁一直没解开"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_citadel_sealed",
+   "immediate": {
+    "minutes": 10,
+    "text": "门外有人试着刷卡。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_citadel_panic_room"
+   ],
+   "near": {
+    "deadline_minutes": 60,
+    "text": "安全屋的备用电力降到一半。"
+   },
+   "objective": "在封锁中守住彼此，重新打通外面。",
+   "source": "accident",
+   "start_minute": null,
+   "tags": [
+    "disaster"
+   ],
+   "title": "安全屋闭锁断联",
+   "trigger": "巨浪撞偏了外甲板卫星天线，三层走廊防火门又被人从外侧锁死，{player.name}和对方被困在断了信号的安全屋里。"
+  },
+  {
+   "choice": "就地包扎、先抱稳体温，还是先减摇再送医？",
+   "exits": [
+    {
+     "cost": "密码箱只能暂时留在医疗舱。",
+     "option": "扶进医疗舱躺好，叫医护官固定包扎、退热止痛"
+    },
+    {
+     "cost": "你们错过了去飞桥改航向的时机。",
+     "option": "先托住伤臂裹上毛毯拥着保暖，同时呼叫医护官带急救箱赶来"
+    },
+    {
+     "cost": "减摇鳍耗电，底舱备用电力掉了两成。",
+     "option": "请船长调整减摇鳍，再把人平稳送到医疗舱交给医护官"
+    }
+   ],
+   "far": {
+    "consequence": "肩伤落下病根，下船后得做手术。",
+    "due_days": 14,
+    "trigger": "伤势没得到处理"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_k_cold_key",
+    "hook_k_vest",
+    "hook_k_necklace",
+    "hook_m_stair",
+    "hook_m_patrol",
+    "hook_e_radar",
+    "hook_e_route",
+    "hook_e_coffee",
+    "hook_v_channel",
+    "hook_v_offer",
+    "hook_ks_card",
+    "hook_ks_knock"
+   ],
+   "id": "p_shoulder_injury",
+   "immediate": {
+    "minutes": 5,
+    "text": "对方扶着舱壁站不稳。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_mid_deck_infirmary_cabin"
+   ],
+   "near": {
+    "deadline_minutes": 40,
+    "text": "肿胀和低热加重。"
+   },
+   "objective": "先把人照顾好，再顾密码箱。",
+   "source": "nature",
+   "start_minute": null,
+   "tags": [
+    "bodily_harm",
+    "disaster"
+   ],
+   "title": "横摇撞伤与急性眩晕",
+   "trigger": "游艇在台风眼壁的巨浪里剧烈横摇，对方为护住手提密码箱撞上舱壁，肩胛挫伤肿胀，冷汗直冒，头晕低热。"
   }
  ],
- "region": "太平洋公海热带超强台风眼边缘六十米长私人防暴装甲动力游艇顶层主控安全屋与密闭轮机",
+ "region": "南太平洋公海上一艘六十米长的私人防暴游艇",
  "rules": [
   {
-   "id": "r_yacht_panic_room_level_four_ballistic",
-   "text": "游艇四级钛合金防弹安全屋避难准则：安全屋自锁程序一旦激活，内部液压门锁将进入纯物理机械卡死状态，非由内舱控制台对齐双重生物指纹与声纹，任何外部爆破皆无法强开。"
+   "id": "r_two_key_wallet",
+   "text": "算力核心的冷钱包要两把密钥同时插入才能放款，一把在继承人身上，另一把归属今晚说了算。"
   },
   {
-   "id": "r_maritime_arms_consortium_asset_transfe",
-   "text": "公海尖端军备联合体密钥誓约：防空核心芯片乃家族三代心血之最高命脉，在遭遇叛变袭击之绝境下，唯有与以命相护之终身执盾守护人缔结战地血契授权转让。"
+   "id": "r_citadel_access",
+   "text": "三层防弹安全屋只认主副两张门禁卡，落锁后外面的人连门把手都摸不到。"
   },
   {
-   "id": "r_engine_room_remote_lockout_blackout_li",
-   "text": "轮机舱网络断电物理重启规范：当黑客远程切断双发柴油机推进控制回路后，必须有人潜入底层密闭机舱以手动扳手强行闭合高压空气启动阀。"
+   "id": "r_high_seas_law",
+   "text": "公海上没有警察，船长的航海日志和船上广播就是唯一的公开记录。"
   },
   {
-   "id": "r_reef_impact_collision_deadzone_clock",
-   "text": "雷达暗礁漂移撞击死线法则：在无动力漂航状态下，风暴海流将在三十五分钟内将游艇推上‘黑鲨礁’群，届时双层龙骨将被切碎引发全船沉没。"
+   "id": "r_armory_lock",
+   "text": "枪械库电子锁归安保总监管，任何人领枪都要在总监的终端上留名。"
   }
  ],
  "schema_version": 1,
  "stage_labels": {
-  "acquainted": "领带止血",
-  "committed": "终身雇佣",
-  "familiar": "背靠抵浪",
-  "flirting": "暗袋托芯",
-  "intimate": "风眼之后",
-  "stranger": "持枪警戒",
-  "testing": "心跳换弹"
+  "acquainted": "舷梯点头",
+  "committed": "双钥同谋",
+  "familiar": "同船共事",
+  "flirting": "海图台试探",
+  "intimate": "安全屋私情",
+  "stranger": "公海陌路",
+  "testing": "枪口对峙"
  },
  "status": "released",
- "style_hint": "安全屋只剩血红的应急灯。千金的墨黑鱼尾晚礼服被弹片割裂，左臂缠着保镖的领带，脸上沾着火药灰，双手仍稳稳握着雕花消音手枪；保镖背抵着钛合金门，听着门外气割枪的尖啸一寸寸逼近。",
+ "style_hint": "冷硬的军工黑话里藏着体温：人前句句是条款和射界，人后只剩一只勾住手指的手。枪是背景，心事是主线。",
  "tension_engines": [
   {
-   "id": "te_heiress_arrogance_vs_vulnerable_wound",
-   "text": "执掌百亿军火合同签发权、早年视人命如数字之高冷财阀千金之孤傲防线与在礼服破损鲜血淋漓绝境下任由平民青年特勤保镖单膝下跪解下领带止血、肌肤赤诚相贴的极致羞耻与生死托付剧烈冲突。"
+   "id": "te_escrow_freeze",
+   "text": "买家尾款冻结，交割窗口一关，算力核心就成了烫手的赃货。"
   },
   {
-   "id": "te_panic_room_oxygen_breach_vs_black_sha",
-   "text": "安全屋气割破门氧气耗尽窒息与游艇失去动力全速撞向公海黑鲨礁仅剩三十五分钟全员碎骨沉船之极限生死时速博弈。"
+   "id": "te_mutiny_split",
+   "text": "安保总监与外船买家私定三七分账，准备趁台风夜截留算力核心。"
   },
   {
-   "id": "te_mutinous_security_director_coup_vs_lo",
-   "text": "前安保总监勾结海盗内外勾结封锁全船之滔天杀局与孤立无援二人仅凭两把自卫手枪、一柄战术折刀誓死捍卫防空芯片火种之绝地以少胜多反击决绝。"
+   "id": "te_family_fleet",
+   "text": "家族舰队以护航为名逼近，要收回继承人的副总裁印信。"
   },
   {
-   "id": "te_hundred_billion_chip_codex_vs_lifelon",
-   "text": "关乎区域防空格局之万金不换核心算力芯片所有权与在面对舍命当盾誓死相护的铁血青年时甘愿交出终身雇佣守护权、与之并肩执掌财阀天下之心跳盟誓。"
+   "id": "te_two_key_choice",
+   "text": "冷钱包要两把密钥才能放款，另一把交给谁，就是继承人押上的心。"
   }
  ],
  "title": "防弹密室女军火商",
  "tone": [
-  "公海暴风雨游艇颠簸",
-  "四级防弹装甲安全屋闭锁",
-  "破损晚礼服与战术防弹背心",
-  "双人生死持枪背靠背防线"
+  "公海交割夜",
+  "冷钱包双人密钥",
+  "三面合围",
+  "防弹门后的真心话"
  ],
  "twists": [
   {
-   "category": "信息",
-   "id": "t_arms_1",
-   "requires": [],
-   "text": "叛变总监卫星加密手机赫然记录联合体第二大股东买凶弑主夺权之完整录音铁证：青年击倒马库斯后从其防弹背心暗袋搜出一台军用三防卫星终端，赫然自动录下了联合体第二大股东许诺其一千万美元并策划本次海难弑主之全部指令录音，当场彻底坐实内鬼董事滔天罪证。"
-  },
-  {
    "category": "人事",
-   "id": "t_arms_2",
-   "requires": [],
-   "text": "青年特勤保镖之亡父当年正是与千金祖父并肩研发该芯片第一代架构之传奇首席总师：千金在查看青年战术背心祖传钛合金军牌时，惊异认出上面刻有的微型激光谐振腔族徽，正是当年与祖父创立瓦伦丁联合体之第一代技术宗师血脉，两大家族守护羁绊历经三代彻底升华圆满。"
+   "id": "tw_kasim_floodlight",
+   "requires": [
+    "defecting_sniper_kasim"
+   ],
+   "text": "{defecting_sniper_kasim.name}在飞桥打开探照灯锁住主沙龙出口，助你们解除叛乱武装，条件是分走一艘高速快艇独自离开公海。"
   },
   {
    "category": "资源",
-   "id": "t_arms_3",
-   "requires": [],
-   "text": "底层轮机舱暗格竟隐藏一具刚完成测试尚未列装之车载高能激光防空近防炮样机：二人在机舱检修架避难时意外撞开暗格伪装箱，内里赫然露出与芯片完美兼容之兆瓦级高能战术激光武器样机，千金当场插入芯片启动激光束，以光速将两百米外海盗母船当场贯穿击沉。"
-  },
-  {
-   "category": "制度",
-   "id": "t_arms_4",
-   "requires": [],
-   "text": "联合体董事会跨洋紧急全票决议：授予在场特勤青年联合体终身董事兼首席安保执行官：老董事长在本土收到卫星加密留影后拍案而起，行使绝对否决权颁布战地特令：破格擢升平民青年为瓦伦丁联合体有史以来最年轻之终身董事会核心成员并赠予百分之五永久分红股权。"
-  },
-  {
-   "category": "时限",
-   "id": "t_arms_5",
-   "requires": [],
-   "text": "近卫驱逐舰电磁轨道炮超视距战术点射提前十分钟轰碎海盗主力封锁线：瓦伦丁少校并未等待直升机慢速索降，而是果断动用战舰最新型电磁炮实施超视距动能弹点射，一发炮弹凌空将海盗包围圈汽化，为游艇从容规避暗礁争取到至关重要之平静时间窗口。"
-  },
-  {
-   "category": "关系",
-   "id": "t_arms_6",
-   "requires": [],
-   "text": "防空核心芯片底层附属医疗专利库竟包含青年患病亲妹急需之全球唯一靶向纳米药配方：在解码芯片数据时众人惊喜发现，高能激光算法之衍生民用医疗专利库，完整记录着治疗青年胞妹罕见神经萎缩症之独家基因靶向药物专利，千金当场下令联合体旗下药厂立刻全力投产免费救治。"
+   "id": "tw_bearer_split",
+   "requires": [
+    "arms_dealer_heiress_kristina_vance"
+   ],
+   "text": "你与{arms_dealer_heiress_kristina_vance.name}用双人密钥完成离岸转售，三成不记名资金划入你们的联名账户，元老院当天宣布冻结继承人的全部职务。"
   },
   {
    "category": "意外",
-   "id": "t_arms_7",
-   "requires": [],
-   "text": "百尺罕见疯狗巨浪腾空托举游艇竟神奇跃过暗礁尖角直接砸入安全深水航道：就在游艇即将硬撼礁石最后一刻，身后突然涌起一道三十米高公海孤立疯狗巨浪，将整艘六十米长游艇如玩具般高高托起凌空抛飞五十米，奇迹般跃过尖锐礁盘直接落入深海安全海槽化险为夷。"
+   "id": "tw_eye_wall_run",
+   "requires": [
+    "senior_yacht_captain_eriksen_loyal"
+   ],
+   "text": "{senior_yacht_captain_eriksen_loyal.name}驾船硬闯台风眼壁，甩开外部武装快艇驶入国际巡逻区，代价是右舷减摇鳍受损，下个港口必须大修。"
+  },
+  {
+   "category": "制度",
+   "id": "tw_fleet_truce",
+   "requires": [
+    "naval_fleet_rescue_commander_valentin"
+   ],
+   "text": "{naval_fleet_rescue_commander_valentin.name}同意不再强收算力核心，改为护航到天亮，条件是继承人替指挥官签下家族信托的豁免背书。"
+  },
+  {
+   "category": "信息",
+   "id": "tw_marcus_beacon",
+   "requires": [
+    "mutinous_security_director_marcus_black"
+   ],
+   "text": "被逼退到底舱的{mutinous_security_director_marcus_black.name}交出买家埋在船上的定位信标，换一艘救生艇离船，你们放走了这个知道芯片底细的人。"
+  },
+  {
+   "category": "信息",
+   "id": "tw_signe_evidence",
+   "requires": [
+    "yacht_medic_signe"
+   ],
+   "text": "{yacht_medic_signe.name}向全船出示总监私藏镇静剂的监控记录，平息了船员哗变，继承人当场免除了医护官欠下的全部和解金。"
+  },
+  {
+   "category": "时限",
+   "id": "tw_final_handover",
+   "requires": [
+    "pressure"
+   ],
+   "text": "天快亮时直升机和海事巡逻船同时抵达，算力核心只能交给一方：交给国际海事封存全身而退，或者带着密钥远走高飞。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_door_from_inside",
+   "requires": [
+    "arms_dealer_heiress_kristina_vance"
+   ],
+   "text": "你发现走廊防火门其实是{arms_dealer_heiress_kristina_vance.name}自己从内侧落的锁：继承人不是要困住谁，只是想在天亮前把真心话一次说完。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_valentin_cover",
+   "requires": [
+    "naval_fleet_rescue_commander_valentin"
+   ],
+   "text": "人前在频道里句句逼宫的{naval_fleet_rescue_commander_valentin.name}，私下替继承人压下了元老院的拘押令，还让舰队悄悄挡住了买家快艇的航线。"
   }
  ]
 }

@@ -1,113 +1,243 @@
 {
  "background_cast": [
   {
-   "adult_context": "跟了工兵组长三年的老兵。",
+   "adult_context": "年满二十八岁的正式编制担架员。",
+   "age_range": [
+    28,
+    42
+   ],
+   "function": "helper",
+   "gender": "male",
+   "id": "bg_stretcher_bearer",
+   "line": "这副担架我扛前头，您那头稳住就行。",
+   "location_ids": [
+    "loc_triage_cellar",
+    "loc_field_hospital_tent"
+   ],
+   "name": null,
+   "role": "担架员"
+  },
+  {
+   "adult_context": "年满二十四岁的持证值班护士。",
+   "age_range": [
+    24,
+    32
+   ],
+   "function": "messenger",
+   "gender": "female",
+   "id": "bg_ward_nurse",
+   "line": "护士长让我带话：药房那边，请您先别过去。",
+   "location_ids": [
+    "loc_triage_cellar",
+    "loc_field_hospital_tent"
+   ],
+   "name": null,
+   "role": "值班护士"
+  },
+  {
+   "adult_context": "年满二十二岁的现役哨兵。",
+   "age_range": [
+    22,
+    30
+   ],
+   "function": "witness",
+   "gender": "male",
+   "id": "bg_sentry",
+   "line": "这边我什么都没看见，也什么都没听见。",
+   "location_ids": [
+    "loc_trench_vent_gallery"
+   ],
+   "name": null,
+   "role": "换气口哨兵"
+  },
+  {
+   "adult_context": "年满二十六岁的现役班长，轻伤待愈。",
+   "age_range": [
+    26,
+    40
+   ],
+   "function": "rumor_source",
+   "gender": "male",
+   "id": "bg_wounded_sergeant",
+   "line": "听说最后一班车只拉当官的，是真的假的？",
+   "location_ids": [
+    "loc_field_hospital_tent"
+   ],
+   "name": null,
+   "role": "轻伤班长"
+  },
+  {
+   "adult_context": "年满三十岁的持证运输兵。",
    "age_range": [
     30,
     45
    ],
-   "function": "helper",
-   "gender": "male",
-   "id": "bg_rescue_sapper",
-   "line": "组长！我们在扒通风井了！你们先撬门，两头一起来！",
-   "location_ids": [
-    "loc_vent_louver_latch",
-    "loc_field_hospital_tent"
-   ],
-   "name": "工兵老钱",
-   "role": "工兵组的老兵"
-  },
-  {
-   "adult_context": "野战医院的护士，二十三岁。",
-   "age_range": [
-    21,
-    28
-   ],
-   "function": "messenger",
-   "gender": "female",
-   "id": "bg_head_nurse_aide",
-   "line": "盐水和氧气袋都备好了！军医你听得见吗！",
-   "location_ids": [
-    "loc_vent_louver_latch",
-    "loc_field_hospital_tent"
-   ],
-   "name": "护士小周",
-   "role": "野战医院的护士"
-  },
-  {
-   "adult_context": "前线下来的传令兵，二十二岁。",
-   "age_range": [
-    21,
-    26
-   ],
    "function": "obstacle",
    "gender": "male",
-   "id": "bg_signal_runner",
-   "line": "指挥部说炮击还没停，上面不能再派人下来了！",
+   "id": "bg_truck_driver",
+   "line": "车队按名单发车，名单没点到的，一步也别上。",
    "location_ids": [
-    "loc_vent_louver_latch"
+    "loc_trench_vent_gallery"
    ],
-   "name": "传令兵阿杰",
-   "role": "前线下来的传令兵"
+   "name": null,
+   "role": "后撤卡车司机"
   },
   {
-   "adult_context": "腿上挂了彩的老班长。",
+   "adult_context": "年满二十九岁的持证药房文书。",
    "age_range": [
-    35,
-    48
-   ],
-   "function": "witness",
-   "gender": "male",
-   "id": "bg_wounded_corporal",
-   "line": "军医今天给工兵组长换药，换了足足一刻钟，我都数着呢。",
-   "location_ids": [
-    "loc_field_hospital_tent"
-   ],
-   "name": "伤员老马",
-   "role": "养伤的老班长"
-  },
-  {
-   "adult_context": "跟着记者下来的摄影师。",
-   "age_range": [
-    24,
-    34
+    29,
+    40
    ],
    "function": "witness",
    "gender": "female",
-   "id": "bg_war_correspondent",
-   "line": "我给野战医院拍了一百多张照片，就数军医笑的那一张最难得。",
+   "id": "bg_pharmacy_clerk",
+   "line": "批号我背得出来，可账是护士长一个人在管。",
    "location_ids": [
-    "loc_field_hospital_tent"
+    "loc_triage_cellar"
    ],
-   "name": "随军摄影师小林",
-   "role": "随军的摄影师"
-  },
-  {
-   "adult_context": "在野战医院做了三年饭的炊事员。",
-   "age_range": [
-    40,
-    55
-   ],
-   "function": "witness",
-   "gender": "male",
-   "id": "bg_cook",
-   "line": "那小伙子每次来，都要给军医捎一包后方的咖啡粉。",
-   "location_ids": [
-    "loc_field_hospital_tent"
-   ],
-   "name": "炊事员胖叔",
-   "role": "野战医院的炊事员"
+   "name": null,
+   "role": "药房文书"
   }
  ],
  "cast_combos": [
   {
-   "chemistry": "军医与工兵组长在坍塌三角区里胸背相贴，四只手叠在截骨凿上，一个报数一个跟着往下压。",
-   "id": "cc_surgeon_sapper_switch",
-   "identity_ids": [],
+   "chemistry": "{surgeon_leng.name}是你配台时最熟悉的那双手，也是上月休整夜在掩蔽部行军床边与你相拥深吻的人。",
+   "id": "cc_surgeon_and_medic_dugout",
+   "identity_ids": [
+    "pi_new_medic"
+   ],
    "player_positions": [
-    "high",
-    "equal",
     "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "surgeon_leng",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "上月休整夜在掩蔽部煮完苦咖啡后，两人在行军床边相拥深吻越了界，定下说暗号就停下的贴心约定。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "surgeon_leng"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "军医要弄清你肯不肯陪着留下，而不是替你做决定。",
+    "limit_gap": "军医一走就是丢下前线的伤员，你一句挽留没有分量。",
+    "meeting_reason": "{surgeon_leng.name}在值班掩蔽部把压在铝饭盒底下的后方调令翻给你看，轻声问你，自己今晚若不跟车队走，你愿不愿意一起留下。",
+    "resource_gap": "军医握着后送签字权和受控处方权，你只有掩蔽部的备用钥匙和一张器械清点单。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_recall_order"
+   ]
+  },
+  {
+   "chemistry": "{surgeon_leng.name}与你在你住院的一个月里私定了终身，是前线最清冷的人唯一肯软下来的地方。",
+   "id": "cc_surgeon_and_officer_convoy",
+   "identity_ids": [
+    "pi_wounded_officer"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 5
+     },
+     "b": "surgeon_leng",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 5
+     },
+     "reason": "你住院换药的这一个月里两人私定了终身，军医自愿把戴了五年的刻名银质军医哨交给你收着，约好停战后一起回南方老家。",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
+    "surgeon_leng"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "军医要你先把重伤排长送出去，再回头谈两人的去留。",
+    "limit_gap": "归队令与后撤令同时生效，军医走不开，你也留不得。",
+    "meeting_reason": "{surgeon_leng.name}在分诊室替你拆掉肩头最后一圈纱布，要你今晚先带重伤排长坐连队吉普车撤往后方。",
+    "resource_gap": "军医握着后送名单的签字权，你手里有连队吉普车的钥匙和前沿通行口令。"
+   },
+   "tags": [
+    "intimate",
+    "bodily_harm"
+   ],
+   "tension_engine_ids": [
+    "te_two_seats"
+   ]
+  },
+  {
+   "chemistry": "{surgeon_leng.name}曾在后方军医大学的进修结业夜与你相拥而吻，把前线外科最真实的手记全留给了你。",
+   "id": "cc_inspector_and_surgeon_morphine",
+   "identity_ids": [
+    "pi_medical_inspector"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "surgeon_leng",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "半年前在后方军医大学进修结业那晚，两人在教研室听着雨声相拥而吻，军医把前线外科手记全留给了你。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "surgeon_leng"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "军医要你看清，这笔损耗到底该算在谁头上。",
+    "limit_gap": "军医要一人签字担下损耗，你一笔核销就能放过医院其余人，也能把账追到底。",
+    "meeting_reason": "地下药品库房的盘尼西林与吗啡账面少了一整箱，{surgeon_leng.name}把盘点表按在桌面上，平静地提出由自己一人签字承担损耗，请你放过医院里的其余人。",
+    "resource_gap": "你握着后送名额的批复权和军纪免责签字权，军医只握着一张盘点表。"
+   },
+   "tags": [
+    "intimate",
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_missing_crate"
+   ]
+  },
+  {
+   "chemistry": "{surgeon_leng.name}查房时总把你排在最后一床，好借着换敷料多说两句不相干的话。",
+   "id": "cc_surgeon_and_journalist_coffee",
+   "identity_ids": [
+    "pi_war_correspondent"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
    ],
    "power_structure": "switchable",
    "relations": [
@@ -119,64 +249,78 @@
      },
      "b": "surgeon_leng",
      "b_to_a": {
-      "tension": 3,
+      "tension": 4,
       "trust": 3
      },
-     "reason": "一起被埋在废墟里，彼此的命都攥在对方手里。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "sapper_lead",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "一个加固地堡一个在地堡里救人，配合了两年。",
-     "stage": "familiar"
-    },
-    {
-     "a": "surgeon_leng",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "sapper_lead",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "一个换药时多停半秒，一个在帐篷门口多站一会儿，谁都没说破。",
-     "stage": "testing"
+     "reason": "前天夜里停电查房后，两人在掩蔽部分饮同一缸苦咖啡，军医靠着你的肩睡了半宿，醒来握着你的手指没松开。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "surgeon_leng",
-    "sapper_lead"
+    "surgeon_leng"
    ],
    "stakes": {
-    "irreplaceable_goal": "撬开铁门，把急救站里的人一个不少地送出去。",
-    "limit_gap": "军医力气小、军服被钢筋挂住，工兵组长个子太高，在两平米的三角区里施展不开。",
-    "meeting_reason": "航弹落下前军医在急救站里给重伤员止血，工兵组长正在旁边加固顶板。",
-    "resource_gap": "军医有截骨凿和战救包里的盐水敷料，工兵组长有一身力气和对每一块预制板受力的熟悉。"
+    "irreplaceable_goal": "军医要看你敢不敢把真相写出去。",
+    "limit_gap": "病历一发表，军医和医院都要担责；不发表，伤员的实情就永远没人知道。",
+    "meeting_reason": "{surgeon_leng.name}把你叫进地下药品库房，将一份记录前沿伤员真实伤亡原因的病历副本当面交给你，问你敢不敢带回后方报社发表。",
+    "resource_gap": "军医握着前线真实的伤亡病历，你握着直发后方的电讯权。"
    },
    "tags": [
-    "workplace",
-    "disaster"
+    "intimate",
+    "workplace"
    ],
    "tension_engine_ids": [
-    "te_aftershock_settle",
-    "te_triangle_chest_press"
+    "te_recall_order"
    ]
   },
   {
-   "chemistry": "军医与工兵组长在通风百叶前四只手叠在一起，一边争该先通风还是先撬门，一边一下一下把卡扣撬开。",
-   "id": "cc_surgeon_sapper_equal",
-   "identity_ids": [],
+   "chemistry": "{signal_operator.name}与你在发报机的微光下相拥亲吻过，那一晚的电台灯是两人共同的秘密。",
+   "id": "cc_signal_and_journalist_telegram",
+   "identity_ids": [
+    "pi_war_correspondent"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "signal_operator",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "上周轮休那晚电台室没有急报，两人在发报机的微光下接了吻，通讯兵从此许你每晚借电台发完急稿。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "signal_operator"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "通讯兵想知道你走不走，也想知道这封底稿该交给谁。",
+    "limit_gap": "通讯兵压着调令底稿是违纪，你借用军用电台发稿同样不合规程。",
+    "meeting_reason": "{signal_operator.name}在掩体交通壕换气口长廊拉住你的衣袖，把刚译出的调令底稿塞进你手里，红着眼眶问你是不是天一亮就要跟车队走。",
+    "resource_gap": "通讯兵握着电台和译电本，你握着直发后方的电讯权。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_recall_order"
+   ]
+  },
+  {
+   "chemistry": "{sapper_lead.name}与你在前沿高地并肩守过三天三夜的防炮洞，是用命换来的交情。",
+   "id": "cc_sapper_and_officer_road",
+   "identity_ids": [
+    "pi_wounded_officer"
+   ],
    "player_positions": [
     "equal"
    ],
@@ -186,68 +330,39 @@
      "a": "player",
      "a_to_b": {
       "tension": 2,
-      "trust": 3
-     },
-     "b": "surgeon_leng",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "为急救站的位置争了一下午，争到最后谁都不肯先走。",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "sapper_lead",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "在炮火里并肩抢救过好几回伤员。",
-     "stage": "familiar"
-    },
-    {
-     "a": "surgeon_leng",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
+      "trust": 4
      },
      "b": "sapper_lead",
      "b_to_a": {
       "tension": 3,
-      "trust": 3
+      "trust": 4
      },
-     "reason": "一个冷一个硬，两年里说过的话不多，句句都记得。",
-     "stage": "testing"
+     "reason": "入冬前两人在前沿高地并肩守过三天三夜的防炮洞，撤下来那天分吃了一罐热牛肉罐头，是过命的交情。",
+     "stage": "familiar"
     }
    ],
    "slots": [
-    "surgeon_leng",
     "sapper_lead"
    ],
    "stakes": {
-    "irreplaceable_goal": "撬开通风百叶，先让空气进来。",
-    "limit_gap": "军医不懂土木，工兵组长不懂人的极限。",
-    "meeting_reason": "两人为急救站该不该往更深的地方挪，在帐篷里争了一下午，争到炮声响起都没分出胜负。",
-    "resource_gap": "军医知道人能在这点空气里撑多久，工兵组长知道这堆瓦砾哪里能动。"
+    "irreplaceable_goal": "工兵组长要知道今晚封存的时点，也想知道这份交情还作不作数。",
+    "limit_gap": "封存的死命令压在工兵组长头上，你的归队令同样不容拖延。",
+    "meeting_reason": "{sapper_lead.name}在换气口长廊递给你一张后撤公路的排雷草图，沉声问你主刀军医今晚到底走不走，这关系到工兵组何时封存地堡。",
+    "resource_gap": "工兵组长握着封存起爆权和后撤公路的排雷草图，你握着连队的吉普车和口令。"
    },
    "tags": [
-    "workplace",
-    "crime"
+    "workplace"
    ],
    "tension_engine_ids": [
-    "te_blast_door_seize",
-    "te_air_running_out"
+    "te_truce_closing"
    ]
   },
   {
-   "chemistry": "督察在外面听着电话，军医和工兵组长一个压凿一个顶板，谁也不肯在上头的人面前先喊疼。",
-   "id": "cc_surgeon_sapper_inspector",
-   "identity_ids": [],
+   "chemistry": "{head_nurse.name}曾与你在军区总院共事，是你在夜班后唯一愿意并肩走一段路的人。",
+   "id": "cc_inspector_and_nurse_ledger",
+   "identity_ids": [
+    "pi_medical_inspector"
+   ],
    "player_positions": [
     "high"
    ],
@@ -259,69 +374,40 @@
       "tension": 3,
       "trust": 3
      },
-     "b": "surgeon_leng",
+     "b": "head_nurse",
      "b_to_a": {
-      "tension": 3,
+      "tension": 4,
       "trust": 3
      },
-     "reason": "头一回在上头的人面前把命交出去。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "sapper_lead",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "奉命来查药品，早听说野战医院的军医和工兵组长。",
-     "stage": "familiar"
-    },
-    {
-     "a": "surgeon_leng",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "sapper_lead",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "在上头的人面前不敢多看一眼，可每一声报数都只报给一个人听。",
-     "stage": "testing"
+     "reason": "三年前在军区总院共事时，两人常在夜班后并肩走过月光下的住院部回廊，护士长替你缝补过被器械钩破的白大褂袖口。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "surgeon_leng",
-    "sapper_lead"
+    "head_nurse"
    ],
    "stakes": {
-    "irreplaceable_goal": "让上头的人亲眼看见，野战医院的人是怎么护着伤员的。",
-    "limit_gap": "军医不肯在督察面前出错，工兵组长不习惯被人盯着干活。",
-    "meeting_reason": "督察要查急救站的药品，军医陪着下到地堡，工兵组长在旁边讲掩体的加固。",
-    "resource_gap": "军医手里有截骨凿和伤员名单，工兵组长手里有工兵铲和那件外套。"
+    "irreplaceable_goal": "护士长要你在照章和人情之间，给这笔账一个站得住的说法。",
+    "limit_gap": "护士长私自开库是违纪，你若照章办事，批号就要追到底。",
+    "meeting_reason": "{head_nurse.name}在药品库房关上门，向你坦白那半箱盘尼西林是自己拿去救了地窖里的染疫山民，请你无论如何别把处分算在主刀军医头上。",
+    "resource_gap": "你握着核销签字权，护士长握着地下药房的钥匙和每一支针剂的批号。"
    },
    "tags": [
     "workplace",
-    "disaster"
+    "crime"
    ],
    "tension_engine_ids": [
-    "te_air_running_out",
-    "te_blast_door_seize"
+    "te_missing_crate"
    ]
   },
   {
-   "chemistry": "军医一边别凿子一边冷冷地给新卫生兵发号施令，工兵组长顶着预制板，把三个人的力气拧成一股。",
-   "id": "cc_surgeon_sapper_newcomer",
-   "identity_ids": [],
+   "chemistry": "{old_orderly.name}看着你一年多给军医配台，既把你当晚辈，也想知道你靠不靠得住。",
+   "id": "cc_orderly_and_medic_stretcher",
+   "identity_ids": [
+    "pi_new_medic"
+   ],
    "player_positions": [
-    "low",
-    "equal"
+    "low"
    ],
    "power_structure": "npc_high",
    "relations": [
@@ -329,29 +415,71 @@
      "a": "player",
      "a_to_b": {
       "tension": 3,
-      "trust": 3
+      "trust": 2
      },
-     "b": "surgeon_leng",
+     "b": "old_orderly",
      "b_to_a": {
       "tension": 3,
       "trust": 3
      },
-     "reason": "军医嫌新卫生兵手抖，今晚却要把命交到这双手上。",
+     "reason": "前晚装车演练时，老卫生员见你把军医的听诊器收在贴身口袋，意味深长地拍你的肩，试探你知不知道军医已被列进调回后方的名单。",
      "stage": "testing"
+    }
+   ],
+   "slots": [
+    "old_orderly"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "老卫生员想知道你会不会替那名重伤排长说句话。",
+    "limit_gap": "老卫生员改不了后送名单，你也只是个配台的人。",
+    "meeting_reason": "{old_orderly.name}在主帐篷角落指着最后两副担架，低声问你，军医今晚签发的后送名单上，究竟会保哪两个伤员上车。",
+    "resource_gap": "老卫生员握着装车顺序和担架调配，你只握着军医掩蔽部的备用钥匙。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_two_seats"
+   ]
+  },
+  {
+   "chemistry": "{surgeon_leng.name}与{head_nurse.name}都抢着认下药房少掉的那箱药，两人谁也不肯让对方一个人背账。",
+   "id": "cc_surgeon_nurse_medicine_cover",
+   "identity_ids": [
+    "pi_new_medic"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "surgeon_leng",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "四天前停火夜两人在值班掩蔽部拥吻温存后，军医把私人器械箱的钥匙交给了你。",
+     "stage": "intimate"
     },
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
+      "tension": 3,
       "trust": 3
      },
-     "b": "sapper_lead",
+     "b": "head_nurse",
      "b_to_a": {
-      "tension": 2,
+      "tension": 4,
       "trust": 3
      },
-     "reason": "第一次下急救站就遇上了坍塌。",
-     "stage": "familiar"
+     "reason": "上周夜班交接后，护士长在药房替你擦去额头的汗，轻声笑叹军医只有在你面前才会露出一点软脾气。",
+     "stage": "flirting"
     },
     {
      "a": "surgeon_leng",
@@ -359,122 +487,196 @@
       "tension": 3,
       "trust": 3
      },
-     "b": "sapper_lead",
+     "b": "head_nurse",
      "b_to_a": {
       "tension": 3,
       "trust": 3
      },
-     "reason": "军医和工兵组长一个眼神就知道对方要干什么，新卫生兵都看在眼里。",
+     "reason": "同守一间药房的搭档，为同一笔账互不相让，谁都想替对方先扛。",
      "stage": "testing"
     }
    ],
    "slots": [
     "surgeon_leng",
-    "sapper_lead"
+    "head_nurse"
    ],
    "stakes": {
-    "irreplaceable_goal": "带着新卫生兵一起平安出去，明天照常查房。",
-    "limit_gap": "新卫生兵什么都不懂，军医得一边救人一边教。",
-    "meeting_reason": "新卫生兵第一次跟军医下急救站，工兵组长正在加固顶板。",
-    "resource_gap": "军医有截骨凿和战地经验，工兵组长有力气和工兵外套。"
+    "irreplaceable_goal": "两人都想护住对方，等你拿出底单，替这笔账找一个不连累任何人的说法。",
+    "limit_gap": "两人各自想独自担罪，你手里的底单决定账算在谁的名下。",
+    "meeting_reason": "地下药品库房里，{surgeon_leng.name}正在损耗单上落笔要把少掉的一箱盘尼西林揽到自己身上，{head_nurse.name}一把按住主刀握钢笔的手背，说领药是自己签的字；门一响，护士长先把那张损耗单翻扣在了桌上。",
+    "resource_gap": "主刀握着签字权和护士长的领用底单，护士长握着药房钥匙和批号。"
    },
    "tags": [
     "workplace",
-    "intimate"
+    "crime"
    ],
    "tension_engine_ids": [
-    "te_aftershock_settle",
-    "te_blast_door_seize"
+    "te_missing_crate"
+   ]
+  },
+  {
+   "chemistry": "{hospital_director.name}要按规程全员拔营，{sapper_lead.name}要等最后一个危重伤员下了手术台再封地堡，而后送名单的副署栏空着，等你签。",
+   "id": "cc_director_sapper_withdrawal_plan",
+   "identity_ids": [
+    "pi_wounded_officer",
+    "pi_medical_inspector"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "hospital_director",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "昨日查房后，院长留你在帐篷外喝茶，话里话外试探你对医院私下用备用燃油换哨所过冬煤一事的态度。",
+     "stage": "testing"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "sapper_lead",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "前夜巡完掩体加固，工兵组长在交通壕口替你拍掉肩上的土，掌心在你后腰停了很久才放开。",
+     "stage": "flirting"
+    },
+    {
+     "a": "hospital_director",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "sapper_lead",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "院长与工兵组长为拔营顺序和油料账互相试探，谁都不肯先松口。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "hospital_director",
+    "sapper_lead"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "两人都在等你表态：撤，还是再等一会儿。",
+    "limit_gap": "院长不许任何人留在前沿，工兵组长不肯在人没撤空时合闸。",
+    "meeting_reason": "地下掩体分诊室里，{hospital_director.name}坚持停火期满前全员撤上卡车，{sapper_lead.name}把封存图纸摊在桌上，说只要主刀军医和你还在掩体里处理最后一名危重伤员，工兵组就绝不合上爆破电闸。",
+    "resource_gap": "院长握着拔营后撤令，工兵组长握着爆破电闸，两样都离不开你的一句话。"
+   },
+   "tags": [
+    "workplace",
+    "workplace_power"
+   ],
+   "tension_engine_ids": [
+    "te_truce_closing"
    ]
   }
  ],
  "channels": [
   {
-   "fidelity": "exact",
-   "id": "ch_triangle_whisper",
-   "reach": "all",
-   "text": "坍塌三角区里贴着耳朵的低语和咳嗽"
+   "fidelity": "distorted",
+   "id": "ch_ward_whisper",
+   "reach": "一夜传遍整个营地",
+   "text": "帐篷里伤员的口耳相传"
   },
   {
-   "fidelity": "distorted",
-   "id": "ch_field_phone_crackle",
-   "reach": "local",
-   "text": "野战电话里时断时续、夹着沙沙声的呼叫"
+   "fidelity": "exact",
+   "id": "ch_field_radio",
+   "reach": "只在通讯班和院长室之间",
+   "text": "战地电台的收发报"
   }
  ],
  "character_templates": [
   {
-   "adult_context": "二十一岁从军医大学提前毕业，主动申请上了前线，在野战医院里做了两年外科，去留进退由本人拿主意。",
+   "adult_context": "年满二十六岁，军医大学毕业后到后方总院进修结业，再回前线主刀两年，去留自己拿主意。",
    "age_range": [
-    21,
-    26
+    26,
+    28
    ],
    "appearance_options": [
     "身着沾染硝烟与泥灰的墨绿战地女军医军服，白皙清冷的面容，眼神如寒刃般锐利沉着，高束的马尾在战火中微乱，清冷英气中尽显令人心折的凛然风姿。",
-    "军服袖口挽起，露出白皙小臂与坚毅手腕，领口松开一颗扣子，汗湿的衬衣贴着锁骨，面颊沾着泥灰与细密汗珠，神情冷峻，双手紧握淬火不锈钢骨科重凿，清冷中透出以命搏生的惊人力量。"
+    "军服袖口挽起，露出白皙小臂与坚毅手腕，手术下台后指节泛白，领口松开一颗扣子，汗湿的衬衣贴着锁骨，面颊沾着泥灰与细密汗珠，神情冷峻。"
    ],
    "decision": {
     "avoids": [
-     "拿伤员开玩笑的人",
+     "拿账目压人的人",
      "临阵脱逃的人"
     ],
-    "contrast": "在帐篷里冷得像一把手术刀，对谁都只说必要的话；可困在废墟里时，却是军医第一个把截骨凿递过去，用报数的声音让对方稳住。",
+    "contrast": "帐篷里冷得像一把手术刀，对谁都只说必要的话；帆布帘一放，会因你一句话红了耳廓。",
     "core_value": "能救一个是一个，救不了的，就记住名字。",
     "goal_options": [
-     "把截骨凿硬刃别进铁门插销死角，撬断自锁凸起",
-     "和工兵组长一起推开铁门，把急救站里的伤员送出去"
+     "把后送名单排得对得起每个伤员，再决定自己走不走",
+     "留在前沿，或者带着心里的人一起撤"
     ],
     "never": [
      "丢下伤员先走"
     ],
     "prefers": [
-     "不怕脏、不怕血、说到做到的人",
-     "安静可靠、手上有本事的人"
+     "稳得住手、肯一起扛的人",
+     "不拿伤员做文章的人"
     ],
     "pressure_responses": {
-     "breaking": "呛得直咳也不松手，冷冷地报着数，像在手术台上数心跳。",
-     "high": "割断挂住的军服后摆扎稳马步，把全身重量压在凿柄上。",
-     "low": "余震一来就护住头，先摸清哪块板在往下沉。",
-     "mid": "从战救包里抽出截骨凿，指给对方看插销的死角。"
+     "breaking": "崩溃时背过身去洗手，水开得很大，半天没有说话。",
+     "high": "高压时握着钢笔的手停在半空，宁愿一个人在损耗单上签字，也不连累别人。",
+     "low": "低压时把调令往铝饭盒底下推一推，先去查房。",
+     "mid": "中压时话说得更短更冷，把名单拍在桌上让对方先选。"
     },
-    "relationship_stance": "工兵组长每次来加固地堡，都会顺路在帐篷门口站一会儿；军医从不抬头，可换药的手会停半秒。",
-    "withdrawal": "脱险后头一件事是冲回帐篷清点伤员，一个个摸过脉搏，确认都活着，才肯靠着帐篷杆滑坐下来。"
+    "relationship_stance": "认定了谁，就把贴身的东西交给谁；不说喜欢，只问对方愿不愿意留下把这杯喝完。",
+    "withdrawal": "忙完回掩蔽部煮一杯苦咖啡，坐在行军床沿，等第二只杯子被人接过去。"
    },
    "gender": "female",
-   "gender_reason": "野战医院的女军医，按原稿写作女性。",
+   "gender_reason": "标题写明是女军医，固定为女性。",
    "id": "surgeon_leng",
    "identity": {
-    "authority": "帐篷里哪个伤员先上手术台、谁能转后方，军医一句话就能定。",
-    "exposure": "粉尘呛得人睁不开眼，汗湿的军服贴在身上，只能整个人靠进对方怀里使劲。",
-    "hidden": "掩蔽部墙上那张手绘的伤员名单背面，用铅笔写着一行小字：工兵组长的血型，过敏药，左肩旧伤。",
+    "authority": "帐篷里谁先上手术台、谁能转后方、受控药怎么开，军医一句话就能定。",
+    "exposure": "手术后指尖会微微发抖，只有最近的人才看得出；苦咖啡一煮，就是在等人。",
+    "hidden": "后方总院的调令压在铝饭盒底下，没对任何人说，因为放心不下留守的伤员，也放心不下眼前这个人。",
     "limits": [
-     "力气小，撬不动压死的铁门",
-     "军服后摆容易被裸露的钢筋挂住"
+     "后方调令压在铝饭盒底下，被院长知道就是抗命",
+     "受控药品账面对不上，签字的人先担责"
     ],
     "obligations": [
-     "把伤员一个不少地救下来",
-     "医护人员最后一个出去"
+     "把伤员一个不少地送出去",
+     "医护人员最后一个走"
     ],
     "resources": [
-     "一把特种淬火不锈钢骨科截骨重凿，硬质刃口厚实，装在战救包里",
+     "随身戴了五年的刻名银质军医哨",
      "一只装满敷料和生理盐水的战救包",
      "整个野战医院伤员的命"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "废墟里一句废话都不说、只管把肩膀顶上去的那个人",
-     "每次加固完地堡都在帐篷门口站一会儿的那道影子"
+     "手术台边从不多问、递器械比开口还准的人",
+     "总在掩蔽部门口站一会儿再走的影子"
     ],
     "boundaries": [
      "人前守着军医的冷静，私下的心意只给认定的人",
-     "每一步都要先问过，对方迟疑就停"
+     "说暗号就停，对方一迟疑也停"
     ],
     "desire_range": [
      2,
      4
     ],
-    "desired_position": "掩蔽部行军床边替对方换药的近身位",
+    "desired_position": "掩蔽部行军床边替对方擦手的近身位",
     "dislikes": [
      "被人当众起哄",
      "趁人之危的手"
@@ -482,12 +684,12 @@
     "expression": "嘴上说着还要去查房，手却把掩蔽部门口的帆布帘放了下来，回头冷冷地说：衣服脱了，我看看你的伤。",
     "likes": [
      "被人握住缝了一整天伤口的手轻轻揉",
-     "汗湿的军服被人一颗颗解开扣子时屏住的那口气",
-     "在掩蔽部的行军床上被人从身后抱着听远处的炮声"
+     "和衣靠在行军床边听远处的风声",
+     "一只搪瓷缸两个人分着喝"
     ],
     "preconditions": [
-     "铁门撬开、两人都脱险之后",
-     "两人都清醒，心意出于自己，不是废墟里的依赖"
+     "两人都清醒，心意出于自己，不是危急里的依赖",
+     "不在对方刚受打击或痛哭的当下"
     ],
     "self_control_range": [
      3,
@@ -497,226 +699,262 @@
    "public_role": "野战医院的外科女军医",
    "schedule": [
     {
+     "from": 0,
+     "location_id": "loc_surgeon_dugout",
+     "to": 480
+    },
+    {
      "from": 480,
      "location_id": "loc_field_hospital_tent",
      "to": 1080
     },
     {
      "from": 1080,
+     "location_id": "loc_triage_cellar",
+     "to": 1200
+    },
+    {
+     "from": 1200,
      "location_id": "loc_surgeon_dugout",
-     "to": 1380
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "凿刃可能崩裂，手掌会被震伤",
-      "option": "用截骨凿硬刃别进插销死角，和工兵组长合力撬断自锁凸起"
+      "cost": "留下就是抗命，随时可能被追责。",
+      "option": "把调令翻给你看，问你肯不肯陪着留下"
      },
      {
-      "cost": "空气撑不到外面的人扒进来",
-      "option": "留在三角区里等外面的人扒开瓦砾"
+      "cost": "放下留守的伤员，心里落下一辈子的不安。",
+      "option": "今晚随车队后撤"
      }
     ],
-    "pressure": "铁门被横梁压死，空气越来越稀，必须在下一次余震之前撬开铁门。",
-    "trigger": "航弹落下时，军医正在地下急救站里给一个重伤员止血，头顶的水泥板塌了下来。"
+    "pressure": "调令一旦被院长知道就是抗命，可一个人扛着，谁也不肯说。",
+    "trigger": "停火窗口过半，调令还压在铝饭盒底下，后送名单只差最后两个名额。"
    },
    "tags": [
     "workplace",
-    "disaster",
+    "bodily_harm",
     "intimate"
    ],
    "voices": {
-    "inner": "空气越来越少……背后贴着的这个人心跳还很稳。两年了，原来被一个人这样护着，是这种感觉。",
-    "surface": "别乱动。凿刃别进插销死角，你压着我的手——听我报数，三、二、一，压。"
+    "inner": "调令在铝饭盒底下，一说出口，今晚就得选。可眼前这个人的手，比任何命令都暖。",
+    "surface": "别乱动。伸手，我看看伤口，你压着我的手腕了。"
    }
   },
   {
-   "adult_context": "五十多岁，打过三场仗的老军医，野战医院就是这双手一顶帐篷一顶帐篷搭起来的。",
+   "adult_context": "年满五十二岁，从军医一路做到院长，管着整座野战医院的编制。",
    "age_range": [
-    50,
-    62
+    52,
+    58
    ],
    "appearance_options": [
-    "一身洗得发白的军装，袖子上别着红十字臂章，口袋里插着一副老花镜。",
-    "站在帐篷口，一边抽烟一边看着远处的天。"
+    "鬓角灰白，军服熨得一丝不苟，说话前总先扶一下老花镜。",
+    "披着旧军大衣站在帐篷口，指间夹着一支没点的烟，眼神持重。"
    ],
    "decision": {
     "avoids": [
-     "野战医院院长最烦临阵推诿"
+     "拿处分吓唬人的人",
+     "私下串联的人"
     ],
-    "contrast": "在指挥部面前拍桌子要药，在伤员面前却说话轻得像哄孩子。",
-    "core_value": "这里不是战场，可这里的每一条命都是从战场上抢回来的。",
+    "contrast": "人前威严持重、凡事讲规程，人后会悄悄替你多留一个座位。",
+    "core_value": "建制在，人就在。",
     "goal_options": [
-     "先把人救出来",
-     "野战医院院长再追究是谁的错"
+     "在清点前把油料亏空补平",
+     "让年轻人都平安随车撤离，自己最后一个上车"
     ],
     "never": [
-     "野战医院院长不会丢下困在里面的人"
+     "拿伤员的床位做交易"
     ],
     "prefers": [
-     "野战医院院长看重说到做到的人"
+     "守规矩又肯担事的人",
+     "说实话的人"
     ],
     "pressure_responses": {
-     "breaking": "野战医院院长嗓子喊哑了也不肯走",
-     "high": "野战医院院长顶着危险往里递东西",
-     "low": "野战医院院长先稳住身边的人",
-     "mid": "野战医院院长四处找能用的工具"
+     "breaking": "崩溃时摘下老花镜，半天说不出话，只重复一句：我只想把人都带出去。",
+     "high": "高压时压低声音，问油料单是谁翻出来的。",
+     "low": "低压时把茶缸往你手边推一推，说先坐下。",
+     "mid": "中压时重提规程，说拔营的事不容商量。"
     },
-    "relationship_stance": "亲手把军医从后方要了过来，嘴上说军医太年轻，私下却在每份报告里替军医请功。",
-    "withdrawal": "事情过去后，野战医院院长一个人躲开抽根烟"
+    "relationship_stance": "对晚辈严，护得也紧，从不把谁推出去顶罪。",
+    "withdrawal": "独自坐到帐篷背风处，把没点的烟在指间转来转去。"
    },
    "gender": "any",
-   "gender_reason": "野战医院院长这个位置不限性别。",
+   "gender_reason": "院长性别开局时才定。",
    "id": "hospital_director",
    "identity": {
-    "authority": "野战医院往哪里转移、哪个伤员送后方，院长说了算。",
-    "exposure": "野战医院院长忙起来顾不上衣着体面",
-    "hidden": "做野战医院院长这些年，有件事没对旁人说过",
+    "authority": "整座医院的拔营后撤命令、军医去留考评和物资交接总章，都在这一支笔下。",
+    "exposure": "昨晚默许用备用燃油换了哨所的过冬煤，只怕拔营清点时被卫勤督察查出亏空。",
+    "hidden": "早知道主刀军医压着调令不走，装作没看见，是想多留这个最好的主刀一晚。",
     "limits": [
-     "野战医院院长不在死角里，只能在外面使劲"
+     "油料账一查就是处分",
+     "保住建制的命令压在肩上，不能松口让人留下"
     ],
     "obligations": [
-     "守住野战医院院长手上的那一摊事"
+     "让整座野战医院完整撤出",
+     "对上级的交接清点负责"
     ],
     "resources": [
-     "一部直通前线指挥部的野战电话",
-     "野战医院院长随身的一盏提灯"
+     "医院的指挥吉普车和钥匙",
+     "与军区几位老同僚的私交"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "野战医院院长欣赏做事干脆利落的人",
-     "野战医院院长记得危急时回头搭把手的人"
+     "肯在清点前先来说一声实情的人",
+     "把难处自己吞下又不抱怨的人"
     ],
     "boundaries": [
-     "对方迟疑，野战医院院长就停"
+     "不在人前越线",
+     "院长室的门不关，私事只在帐篷背风处说"
     ],
     "desire_range": [
      1,
      3
     ],
-    "desired_position": "和野战医院院长并肩站着",
+    "desired_position": "帐篷背风处并肩坐着喝茶的位置",
     "dislikes": [
-     "野战医院院长讨厌轻浮的手"
+     "被人当众顶撞",
+     "被人当面说教"
     ],
-    "expression": "野战医院院长话不多，递东西时指尖会多停一下",
+    "expression": "话不多，递来一只烫手的茶缸，指尖在你手背上多停了一秒。",
     "likes": [
-     "野战医院院长收工后的一杯热饮"
+     "茶缸里滚烫的粗茶",
+     "有人陪着沉默地站一会儿"
     ],
     "preconditions": [
-     "野战医院院长要等危局过去、双方清醒自愿"
+     "两人都清醒，心意出于自己，与账目和职位无关"
     ],
     "self_control_range": [
-     3,
+     4,
      5
     ]
    },
-   "public_role": "野战医院院长",
+   "public_role": "野战医院老院长",
    "schedule": [
     {
-     "from": 420,
+     "from": 0,
      "location_id": "loc_field_hospital_tent",
-     "to": 1320
+     "to": 600
+    },
+    {
+     "from": 600,
+     "location_id": "loc_triage_cellar",
+     "to": 1100
+    },
+    {
+     "from": 1100,
+     "location_id": "loc_field_hospital_tent",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "野战医院院长未必赶得上",
-      "option": "野战医院院长在外面调度接应"
+      "cost": "工兵组的工程车只能最后一批撤离。",
+      "option": "请工兵组匀出柴油补平亏空"
      },
      {
-      "cost": "可能把野战医院院长自己也搭进去",
-      "option": "野战医院院长硬闯进去"
+      "cost": "拔营前夕被上级严厉训诫。",
+      "option": "如实上报并补办调拨手续"
      }
     ],
-    "pressure": "里面的人出不来，野战医院院长进不去",
-    "trigger": "警报传到野战医院院长那里"
+    "pressure": "要么补账要么硬撑，可补账的人手都在忙着转运伤员。",
+    "trigger": "拔营清点在即，备用油料的亏空随时会被卫勤督察查出。"
    },
    "tags": [
-    "workplace"
+    "workplace",
+    "workplace_power"
    ],
    "voices": {
-    "inner": "三场仗了，我没丢过一个医生……今晚，这个规矩不许破。",
-    "surface": "听着！工兵连在扒了！你们先把铁门撬开，别等我们！"
+    "inner": "油料的账早晚要还，可今晚我只想看着一个都不掉队。",
+    "surface": "先坐，茶要趁热喝。拔营的事，等茶喝完再说。"
    }
   },
   {
-   "adult_context": "四十岁，跟着院长从第一场仗打到现在，帐篷里每一卷绷带放在哪里都记得。",
+   "adult_context": "年满三十六岁，持证上岗十余年的护理负责人，夜班排班和药房钥匙都归护士长管。",
    "age_range": [
     36,
-    48
+    42
    ],
    "appearance_options": [
-    "一身沾着药水的白罩衫，头发紧紧挽在护士帽里，腰上挂着一串剪刀和钳子。",
-    "穿梭在行军床之间，一边换药一边轻声骂伤员不老实。"
+    "身材利落，护士帽下的短发一丝不乱，袖口永远挽在同一个位置。",
+    "夜班后眼底有血丝，手里还捏着半截铅笔，指节上沾着药粉。"
    ],
    "decision": {
     "avoids": [
-     "野战医院护士长最烦临阵推诿"
+     "推卸责任的人",
+     "当面翻旧账的人"
     ],
-    "contrast": "嘴上凶得要命，私下却会给熬夜的军医留一个煮鸡蛋。",
-    "core_value": "绷带要洗干净，人要活下来。",
+    "contrast": "人前雷厉风行，一卷绷带都算得极严；私下会笑着叹，军医只有在你面前才软一点。",
+    "core_value": "账要算清，人更要救。",
     "goal_options": [
-     "先把人救出来",
-     "野战医院护士长再追究是谁的错"
+     "不让主刀军医替自己背这笔账",
+     "在拔营前把药房的账平掉，哪怕自己认罚"
     ],
     "never": [
-     "野战医院护士长不会丢下困在里面的人"
+     "拿药品当筹码"
     ],
     "prefers": [
-     "野战医院护士长看重说到做到的人"
+     "说话算数的人",
+     "肯陪着对账的人"
     ],
     "pressure_responses": {
-     "breaking": "野战医院护士长嗓子喊哑了也不肯走",
-     "high": "野战医院护士长顶着危险往里递东西",
-     "low": "野战医院护士长先稳住身边的人",
-     "mid": "野战医院护士长四处找能用的工具"
+     "breaking": "崩溃时蹲在药架后面，把脸埋进登记簿，肩膀轻轻发抖。",
+     "high": "高压时按住别人握笔的手，不让对方替自己签字。",
+     "low": "低压时把登记簿翻了又翻，指尖在那一页停很久。",
+     "mid": "中压时话说得更急，抢着先认下这笔账。"
     },
-    "relationship_stance": "早看出军医和工兵组长之间有事，每次分咖啡都故意多冲一杯放在军医手边。",
-    "withdrawal": "事情过去后，野战医院护士长一个人躲开抽根烟"
+    "relationship_stance": "对你笑得克制，嘴上嫌弃，递来的热毛巾总是刚好的温度。",
+    "withdrawal": "回药房把每一格针剂再数一遍，数到手不抖为止。"
    },
    "gender": "female",
-   "gender_reason": "按设定是跟随院长多年的女护士长。",
+   "gender_reason": "标题写明是护士长，设定为女性。",
    "id": "head_nurse",
    "identity": {
-    "authority": "帐篷里谁值夜班、药品怎么分，护士长说了算。",
-    "exposure": "野战医院护士长忙起来顾不上衣着体面",
-    "hidden": "做野战医院护士长这些年，有件事没对旁人说过",
+    "authority": "夜班排班、地下药房钥匙和伤员护理等级核定，都归护士长。",
+    "exposure": "上周停火前私自开库拿走半箱盘尼西林，救了躲在废弃地窖里的染疫山民，账面上至今空着批号。",
+    "hidden": "山民痊愈后留下一小包草药，护士长一直收在白大褂内袋里，不舍得丢。",
     "limits": [
-     "野战医院护士长不在死角里，只能在外面使劲"
+     "私自开库就是违纪，账面上还空着那批批号",
+     "山民的事一说出口，会牵连药房文书"
     ],
     "obligations": [
-     "守住野战医院护士长手上的那一摊事"
+     "每一卷绷带每一支针剂都要对得上账",
+     "夜班护士不能缺人"
     ],
     "resources": [
-     "一本记着每个伤员用药的护理本",
-     "野战医院护士长随身的一盏提灯"
+     "地下药房的钥匙",
+     "一本记满批号的出入库登记簿"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "野战医院护士长欣赏做事干脆利落的人",
-     "野战医院护士长记得危急时回头搭把手的人"
+     "夜班交接时顺手替自己拂去药粉的人",
+     "肯把错揽到自己身上又不邀功的人"
     ],
     "boundaries": [
-     "对方迟疑，野战医院护士长就停"
+     "药房里不越线，门关上才是私事",
+     "对方一皱眉就收手"
     ],
     "desire_range": [
-     1,
-     3
+     2,
+     4
     ],
-    "desired_position": "和野战医院护士长并肩站着",
+    "desired_position": "药架隔板边并肩站着的近身位",
     "dislikes": [
-     "野战医院护士长讨厌轻浮的手"
+     "被人当众点名",
+     "账目被人随口糊弄"
     ],
-    "expression": "野战医院护士长话不多，递东西时指尖会多停一下",
+    "expression": "替你擦去额头的汗，指尖在鬓边多停了半拍，笑着说：别动，还有一点。",
     "likes": [
-     "野战医院护士长收工后的一杯热饮"
+     "热毛巾擦过额头的温度",
+     "药架间并肩核对批号"
     ],
     "preconditions": [
-     "野战医院护士长要等危局过去、双方清醒自愿"
+     "两人都清醒，心意出于自己",
+     "不在账目悬而未决、对方情绪崩溃的当下"
     ],
     "self_control_range": [
      3,
@@ -726,384 +964,436 @@
    "public_role": "野战医院护士长",
    "schedule": [
     {
-     "from": 360,
+     "from": 0,
+     "location_id": "loc_medicine_vault",
+     "to": 420
+    },
+    {
+     "from": 420,
      "location_id": "loc_field_hospital_tent",
-     "to": 1320
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_medicine_vault",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "野战医院护士长未必赶得上",
-      "option": "野战医院护士长在外面调度接应"
+      "cost": "护士长被记过，不能随第一批车队调往后方。",
+      "option": "照实上报为人道救治，请院长出面周旋"
      },
      {
-      "cost": "可能把野战医院护士长自己也搭进去",
-      "option": "野战医院护士长硬闯进去"
+      "cost": "共同签字的人立功提名被取消。",
+      "option": "把账改记为战时紧急消耗，共同签字核销"
      }
     ],
-    "pressure": "里面的人出不来，野战医院护士长进不去",
-    "trigger": "警报传到野战医院护士长那里"
+    "pressure": "督察一查就露，可说出山民的事，又会牵连救人的同伴。",
+    "trigger": "拔营清点在即，药房少的那批盘尼西林批号还空着。"
    },
    "tags": [
-    "workplace"
+    "workplace",
+    "crime"
    ],
    "voices": {
-    "inner": "那丫头要是出不来……这帐篷里还有谁能主刀。",
-    "surface": "军医！伤员都转出来了，一个不少！就差你们两个了！"
+    "inner": "半箱药救了一条命，我不后悔；只是不想让主刀替我担着。",
+    "surface": "批号对不上，这是我的账，你别插手。"
    }
   },
   {
-   "adult_context": "二十八岁，工兵学院出身，在前线挖了四年地堡和交通壕，带着一个工兵组专管野战医院的掩体，去留进退由本人拿主意。",
+   "adult_context": "年满二十七岁，正式编制的前线工兵排长，带着一个组驻守地下掩体。",
    "age_range": [
-    25,
+    27,
     32
    ],
    "appearance_options": [
-    "一身沾满泥土的作训服，袖子卷到手肘，小臂上全是被木刺划的旧伤，腰带上挂着一把工兵铲。",
-    "防撕裂的工兵外套展开罩在军医头顶，作训服被汗和粉尘糊成灰色，后背顶着倾斜的预制板。"
+    "身形硬朗，军装袖口卷到肘上，指缝里嵌着洗不掉的黑泥。",
+    "靠着加固圆木抽烟，眉骨一道旧疤，目光沉静。"
    ],
    "decision": {
     "avoids": [
-     "偷工减料的人"
+     "拖后腿又不认账的人",
+     "拿伤员做文章的人"
     ],
-    "contrast": "在工地上吼起人来像打雷，挖起土来不知道累；可一走进帐篷，说话就自动小了三分。",
-    "core_value": "地底下的东西都讲道理：哪里受力，就从哪里卸力。",
+    "contrast": "沉默硬朗、人人怕三分；对着一个人，会把最好的位置让出来。",
+    "core_value": "先把人送出去，我最后一个走。",
     "goal_options": [
-     "用后背顶住预制板，给军医腾出发力的地方",
-     "把全身重量压在凿柄上"
+     "等分诊室全部撤空再合电闸",
+     "在撤离前找到一个不违令也不丢人的办法"
     ],
     "never": [
-     "让军医一个人留在废墟里"
+     "丢下组里的人先走"
     ],
     "prefers": [
-     "说到做到的人"
+     "说到做到的人",
+     "不问多余问题的人"
     ],
     "pressure_responses": {
-     "breaking": "憋得满脸通红也不松，跟着军医的报数压到最后一下。",
-     "high": "后背顶着预制板，双手压在军医的手上，和军医一起压。",
-     "low": "一把将军医护到三角区最稳的角落，先用外套挡住头顶的碎石。",
-     "mid": "撕下一块衬布蘸湿了递给军医捂口鼻。"
+     "breaking": "崩溃时靠着圆木蹲下，半晌才说一句：我不想再炸东西了。",
+     "high": "高压时把起爆器抱在怀里，谁来要也不松手。",
+     "low": "低压时抽一口烟，说再等等。",
+     "mid": "中压时把图纸摊开，一条一条讲给你听。"
     },
-    "relationship_stance": "每次来加固野战医院的地堡，都会顺路在帐篷门口站一会儿，看军医换完一个伤员的药再走。",
-    "withdrawal": "确认铁门撬开、伤员都出去了，才靠在交通壕的土墙上，大口大口地喘气。"
+    "relationship_stance": "话少，答应了就做到，从不推辞。",
+    "withdrawal": "一个人沿着交通壕走到尽头，对着换气口吹一会儿风。"
    },
    "gender": "male",
-   "gender_reason": "负责加固地堡的工兵组长，按原稿写作男性。",
+   "gender_reason": "标题写明是工兵组长，设定为男性。",
    "id": "sapper_lead",
    "identity": {
-    "authority": "地堡哪里该加固、哪段交通壕该改道，工兵组长说了算。",
-    "exposure": "工兵外套罩在军医头上，汗湿的作训服贴着军医的后背，两人在三角区里贴得严丝合缝。",
-    "hidden": "作训服胸前的口袋里装着一块军医给的止痛片，半年了一直没吃，说是留着。",
+    "authority": "掩体爆破封存起爆权、后撤公路排雷开道和工程卡车调配，都归工兵组长。",
+    "exposure": "一再推迟布设雷管，只为等人撤空，被上级知道就是违令。",
+    "hidden": "军医换药时手停的那半秒，一直记在心里，一直没敢问。",
     "limits": [
-     "个子高，在两平米的三角区里施展不开",
-     "工兵铲压在瓦砾底下够不着"
+     "天亮前必须炸毁掩体的死命令压在头上",
+     "推迟一分钟，全组的撤离就晚一分钟"
     ],
     "obligations": [
-     "护住军医不被碎石砸着",
-     "撬开铁门，把急救站里的人送出去"
+     "让工兵组全员撤出",
+     "封存掩体，不留给敌军利用"
     ],
     "resources": [
-     "一件防撕裂的工兵外套",
-     "一把工兵铲",
-     "一只手电"
+     "掩体封存起爆器",
+     "一张后撤公路的排雷草图",
+     "几辆工程保障车"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "军医在废墟里还能把数报得那么稳的那份冷静",
-     "军医换药时多停半秒的那根手指"
+     "在落石前把你护进怀里也不吭一声的人",
+     "分吃一罐热牛肉罐头的交情"
     ],
     "boundaries": [
-     "军医没开口就不越一步",
-     "人前不让军医难做"
+     "不在人前越线",
+     "对方往后退半步，就当什么都没发生"
     ],
     "desire_range": [
      2,
      4
     ],
-    "desired_position": "掩蔽部行军床上从身后抱着军医的近身位",
+    "desired_position": "交通壕狭窄处并肩护着对方的位置",
     "dislikes": [
-     "当众起哄",
-     "背后嚼舌根"
+     "被人当众起哄",
+     "话说一半又咽回去"
     ],
-    "expression": "被军医按在行军床边换药时一动不动，最后只说了一句：那片止痛药，我一直留着。",
+    "expression": "掌心贴在你后腰，隔着军装停了很久，才低声说：站稳。",
     "likes": [
-     "军医难得叫一次自己的名字",
-     "被军医用听诊器贴着胸口听一会儿心跳"
+     "并肩听风声",
+     "有人替自己掸去肩上的土"
     ],
     "preconditions": [
-     "铁门撬开、两人都安全清醒之后",
-     "军医点了头，出于本心"
+     "两人都清醒，心意出于自己，不在撤离的紧要关头"
     ],
     "self_control_range": [
-     2,
-     4
+     3,
+     5
     ]
    },
    "public_role": "野战工兵组长",
    "schedule": [
     {
-     "from": 480,
-     "location_id": "loc_collapsed_triage_corner",
-     "to": 1020
+     "from": 0,
+     "location_id": "loc_triage_cellar",
+     "to": 300
     },
     {
-     "from": 1080,
-     "location_id": "loc_field_hospital_tent",
-     "to": 1320
+     "from": 300,
+     "location_id": "loc_trench_vent_gallery",
+     "to": 1100
+    },
+    {
+     "from": 1100,
+     "location_id": "loc_triage_cellar",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "后背会被预制板压伤，手臂可能脱力",
-      "option": "用后背顶住预制板，和军医合力压下凿柄"
+      "cost": "工兵组全员只能冒着冷炮徒步撤离。",
+      "option": "等最后一辆救护车驶出十公里再封存"
      },
      {
-      "cost": "一扒就可能引发二次坍塌",
-      "option": "扒开通风井的瓦砾往外爬"
+      "cost": "违背了等人撤空的承诺，良心难安。",
+      "option": "提前合闸封存，把分诊室的人催出去"
      }
     ],
-    "pressure": "顶板越压越低，再不撬开铁门，两人连转身的余地都没有了。",
-    "trigger": "航弹落下时，工兵组长正在地下急救站里加固顶板，被埋进了坍塌三角区。"
+    "pressure": "再推迟就是违令，合闸又怕伤到还在里面的人。",
+    "trigger": "封存掩体的死命令还压着，分诊室里还有人没撤出。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "voices": {
+    "inner": "再拖一会儿，就一会儿；她还没出来，我不能合闸。",
+    "surface": "路我探过了，你们走中间。"
+   }
+  },
+  {
+   "adult_context": "年满四十八岁，在野战医院做了二十多年的正式编制卫生员。",
+   "age_range": [
+    48,
+    54
+   ],
+   "appearance_options": [
+    "肩背微驼，白发压在帽檐下，手上全是担架磨出的老茧。",
+    "闭着眼都能叫出每个帐篷伤员的名字，说话带着慈厚的笑。"
+   ],
+   "decision": {
+    "avoids": [
+     "拿名单做文章的人",
+     "趁乱插队的人"
+    ],
+    "contrast": "人前慈厚爱说笑，心里把每一笔账都记得很清。",
+    "core_value": "每一个名字都要带出去。",
+    "goal_options": [
+     "让重伤排长坐上最后一辆救护车",
+     "看清名单上的涂改是谁的手笔"
+    ],
+    "never": [
+     "丢下重伤员"
+    ],
+    "prefers": [
+     "肯在担架边搭把手的人",
+     "说话不绕弯的人"
+    ],
+    "pressure_responses": {
+     "breaking": "崩溃时蹲在担架旁，一声不吭地替伤员掖被角。",
+     "high": "高压时把小本子按在胸口，不让任何人翻看。",
+     "low": "低压时拍拍你的肩，说不急，慢慢来。",
+     "mid": "中压时压低声音，一遍遍把名字报给你听。"
+    },
+    "relationship_stance": "对年轻人像对亲人，试探你，是为了知道你靠不靠得住。",
+    "withdrawal": "回帐篷把每个伤员的被角再掖一遍，直到全都睡着。"
+   },
+   "gender": "any",
+   "gender_reason": "老卫生员性别开局时才定。",
+   "id": "old_orderly",
+   "identity": {
+    "authority": "担架队调配、后送救护车装车顺序和伤员私人物品保管箱，都归老卫生员管。",
+    "exposure": "发现最后两个后送名额里有一个被铅笔涂改过，只敢暗中争，不敢声张。",
+    "hidden": "那名重伤排长是老卫生员当年带出来的兵，床位若被人顶了，这一夜就睡不着。",
+    "limits": [
+     "只是个老卫生员，改不了名单",
+     "腿脚有旧疾，一夜扛不住几趟"
+    ],
+    "obligations": [
+     "每个伤员都要叫得出名字",
+     "后送装车不能出错"
+    ],
+    "resources": [
+     "伤员私人物品保管箱的钥匙",
+     "一本记着每个伤员名字的小本子"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "夜里替自己扶一把担架的人",
+     "知道每个伤员名字的人"
+    ],
+    "boundaries": [
+     "不在伤员面前越线",
+     "对方说累了就立刻停下"
+    ],
+    "desire_range": [
+     1,
+     3
+    ],
+    "desired_position": "担架旁并肩蹲着歇口气的位置",
+    "dislikes": [
+     "被人当面质疑",
+     "名单被人随手涂改"
+    ],
+    "expression": "拍你肩膀的手多停了几秒，笑着说：你这孩子，该歇歇了。",
+    "likes": [
+     "一壶趁热的水",
+     "有人愿意陪着装一夜车"
+    ],
+    "preconditions": [
+     "两人都清醒，心意不涉及名单与床位"
+    ],
+    "self_control_range": [
+     4,
+     5
+    ]
+   },
+   "public_role": "野战医院老卫生员",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_field_hospital_tent",
+     "to": 700
+    },
+    {
+     "from": 700,
+     "location_id": "loc_triage_cellar",
+     "to": 1100
+    },
+    {
+     "from": 1100,
+     "location_id": "loc_field_hospital_tent",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "你要为这个名额担一份责任。",
+      "option": "暗中求你帮忙把重伤排长排进最后一辆救护车"
+     },
+     {
+      "cost": "原本预留的座位会让给别的重伤员。",
+      "option": "请军医当众张贴按伤情排序的名单"
+     }
+    ],
+    "pressure": "说出来会引起流言，不说又要看着重伤排长被顶掉。",
+    "trigger": "装车在即，后送名单上有一处被人用铅笔涂改。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "voices": {
+    "inner": "涂改的那一笔我认得是谁的字，可没凭没据，只能先求您。",
+    "surface": "这副担架我扛前头，您那头稳住。名单的事，别往外说。"
+   }
+  },
+  {
+   "adult_context": "年满二十三岁，持证上岗的正式编制通讯班长，守着前线唯一的电台。",
+   "age_range": [
+    23,
+    26
+   ],
+   "appearance_options": [
+    "军装领口别着通讯兵领章，耳边总挂着半副监听耳机。",
+    "守了一夜发报机，眼底有淡淡青影，指尖沾着电报纸的油墨。"
+   ],
+   "decision": {
+    "avoids": [
+     "拿电报做文章的人",
+     "不告而别的人"
+    ],
+    "contrast": "人前机敏爽快、一夜不合眼；被你多看一眼，耳根先红。",
+    "core_value": "电波不会骗人，人心更不能。",
+    "goal_options": [
+     "把底稿交到该交的人手里，又不让人太难受",
+     "在天亮前把想说的话说完"
+    ],
+    "never": [
+     "私自篡改电文"
+    ],
+    "prefers": [
+     "肯陪着听电码的人",
+     "说话直来直去的人"
+    ],
+    "pressure_responses": {
+     "breaking": "崩溃时靠着发报机，眼泪砸在电键上，一声不吭。",
+     "high": "高压时攥着电报纸转身就走，怕被人看见眼眶。",
+     "low": "低压时把耳机戴好，装作什么都没听见。",
+     "mid": "中压时一遍遍核对电码，眼睛却盯着你看。"
+    },
+    "relationship_stance": "喜欢就直说，直说完又会红着脸躲开。",
+    "withdrawal": "回发报机旁戴上耳机，一个人听电码到天亮。"
+   },
+   "gender": "female",
+   "gender_reason": "标题写明是女通讯兵，设定为女性。",
+   "id": "signal_operator",
+   "identity": {
+    "authority": "战地电台收发报、后方调令译电和前线家书邮包分拣，都经通讯班长的手。",
+    "exposure": "两小时前译出调走军医的加急电报，舍不得人走，迟迟没把底稿送去院长室。",
+    "hidden": "每晚发完电报，会把你名字的那一行抄在自己小本子的背面。",
+    "limits": [
+     "电报底稿必须送院长室，压着就是违纪",
+     "发报权限只在通讯班内"
+    ],
+    "obligations": [
+     "如实译电",
+     "家书按时分拣"
+    ],
+    "resources": [
+     "战地电台",
+     "译电本",
+     "一小包还没分拣的家书"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "在发报机微光下陪自己熬夜的人",
+     "每次来都带一杯热水的人"
+    ],
+    "boundaries": [
+     "不在电台旁越线",
+     "对方红着脸别开脸，就先不追问"
+    ],
+    "desire_range": [
+     2,
+     4
+    ],
+    "desired_position": "发报机旁共戴一副耳机的近身位",
+    "dislikes": [
+     "被人当众起哄",
+     "话没说完就被打断"
+    ],
+    "expression": "拉住你的衣袖不松手，红着眼眶问：你是不是天一亮就走？",
+    "likes": [
+     "监听耳机里并肩听同一段电波",
+     "被人拉住衣袖留一会儿"
+    ],
+    "preconditions": [
+     "两人都清醒，心意不涉及调令与去留",
+     "不在对方刚受打击的当下"
+    ],
+    "self_control_range": [
+     2,
+     4
+    ]
+   },
+   "public_role": "野战医院女通讯班长",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_field_hospital_tent",
+     "to": 420
+    },
+    {
+     "from": 420,
+     "location_id": "loc_trench_vent_gallery",
+     "to": 1000
+    },
+    {
+     "from": 1000,
+     "location_id": "loc_trench_vent_gallery",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "压着调令的事被你知道，再瞒不住。",
+      "option": "把底稿交给你，问你要不要先看一眼"
+     },
+     {
+      "cost": "军医的去留当场被定下。",
+      "option": "送去院长室，如实交差"
+     }
+    ],
+    "pressure": "该交给院长，可一交，就要眼睁睁看着人走。",
+    "trigger": "刚译出调走军医的加急电报，底稿还攥在手里。"
    },
    "tags": [
     "workplace",
-    "disaster",
     "intimate"
    ],
    "voices": {
-    "inner": "军医整个人靠在我怀里，呛得直咳……别分神。半年了，那片药我一直没舍得吃，今晚我得把给药的人带出去。",
-    "surface": "军医别动，外套底下待着！凿刃别进去，我压着你的手——你报数，我跟。"
-   }
-  },
-  {
-   "adult_context": "五十岁，抬了二十年担架，前线上下的伤员没有不认识这张脸的。",
-   "age_range": [
-    48,
-    60
-   ],
-   "appearance_options": [
-    "一身打满补丁的旧军装，背上永远背着一副折叠担架，烟斗插在口袋里。",
-    "坐在帐篷外的弹药箱上，一边卷绷带一边跟伤员讲笑话。"
-   ],
-   "decision": {
-    "avoids": [
-     "野战医院的老卫生员最烦临阵推诿"
-    ],
-    "contrast": "在伤员面前嘻嘻哈哈，夜里却会一个人坐在帐篷外，替没救回来的人抽一锅烟。",
-    "core_value": "抬上来的人，就得让人活着下去。",
-    "goal_options": [
-     "先把人救出来",
-     "野战医院的老卫生员再追究是谁的错"
-    ],
-    "never": [
-     "野战医院的老卫生员不会丢下困在里面的人"
-    ],
-    "prefers": [
-     "野战医院的老卫生员看重说到做到的人"
-    ],
-    "pressure_responses": {
-     "breaking": "野战医院的老卫生员嗓子喊哑了也不肯走",
-     "high": "野战医院的老卫生员顶着危险往里递东西",
-     "low": "野战医院的老卫生员先稳住身边的人",
-     "mid": "野战医院的老卫生员四处找能用的工具"
-    },
-    "relationship_stance": "看着军医从后方来的新人熬成了主刀，嘴上叫军医冷面菩萨，私下逢人就夸。",
-    "withdrawal": "事情过去后，野战医院的老卫生员一个人躲开抽根烟"
-   },
-   "gender": "any",
-   "gender_reason": "野战医院的老卫生员这个位置不限性别。",
-   "id": "old_orderly",
-   "identity": {
-    "authority": "担架往哪个帐篷抬、哪个伤员先送，老卫生员心里有本账。",
-    "exposure": "野战医院的老卫生员忙起来顾不上衣着体面",
-    "hidden": "做野战医院的老卫生员这些年，有件事没对旁人说过",
-    "limits": [
-     "野战医院的老卫生员不在死角里，只能在外面使劲"
-    ],
-    "obligations": [
-     "守住野战医院的老卫生员手上的那一摊事"
-    ],
-    "resources": [
-     "一副抬了二十年的担架",
-     "野战医院的老卫生员随身的一盏提灯"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "野战医院的老卫生员欣赏做事干脆利落的人",
-     "野战医院的老卫生员记得危急时回头搭把手的人"
-    ],
-    "boundaries": [
-     "对方迟疑，野战医院的老卫生员就停"
-    ],
-    "desire_range": [
-     1,
-     3
-    ],
-    "desired_position": "和野战医院的老卫生员并肩站着",
-    "dislikes": [
-     "野战医院的老卫生员讨厌轻浮的手"
-    ],
-    "expression": "野战医院的老卫生员话不多，递东西时指尖会多停一下",
-    "likes": [
-     "野战医院的老卫生员收工后的一杯热饮"
-    ],
-    "preconditions": [
-     "野战医院的老卫生员要等危局过去、双方清醒自愿"
-    ],
-    "self_control_range": [
-     3,
-     5
-    ]
-   },
-   "public_role": "野战医院的老卫生员",
-   "schedule": [
-    {
-     "from": 360,
-     "location_id": "loc_field_hospital_tent",
-     "to": 1260
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "野战医院的老卫生员未必赶得上",
-      "option": "野战医院的老卫生员在外面调度接应"
-     },
-     {
-      "cost": "可能把野战医院的老卫生员自己也搭进去",
-      "option": "野战医院的老卫生员硬闯进去"
-     }
-    ],
-    "pressure": "里面的人出不来，野战医院的老卫生员进不去",
-    "trigger": "警报传到野战医院的老卫生员那里"
-   },
-   "tags": [
-    "workplace"
-   ],
-   "voices": {
-    "inner": "抬了二十年担架……要是今晚抬出来的是军医，老头子这双手就废了。",
-    "surface": "军医！担架我备好了！你们一出来，我背也把你们背回去！"
-   }
-  },
-  {
-   "adult_context": "二十四岁，管着野战医院唯一的一部电台，前线的消息、后方的家书，都要从这双手里过。",
-   "age_range": [
-    21,
-    28
-   ],
-   "appearance_options": [
-    "一身利落的作训服，耳朵上总挂着一副耳机，口袋里装着一沓没送完的家书。",
-    "趴在电台前，一边记电码一边嚼着一块压缩饼干。"
-   ],
-   "decision": {
-    "avoids": [
-     "野战医院的通讯兵最烦临阵推诿"
-    ],
-    "contrast": "平时话多得停不下来，出了事却一个字一个字地把呼叫发出去，手稳得像钉子。",
-    "core_value": "每一封家书，都是一个人活着的证据。",
-    "goal_options": [
-     "先把人救出来",
-     "野战医院的通讯兵再追究是谁的错"
-    ],
-    "never": [
-     "野战医院的通讯兵不会丢下困在里面的人"
-    ],
-    "prefers": [
-     "野战医院的通讯兵看重说到做到的人"
-    ],
-    "pressure_responses": {
-     "breaking": "野战医院的通讯兵嗓子喊哑了也不肯走",
-     "high": "野战医院的通讯兵顶着危险往里递东西",
-     "low": "野战医院的通讯兵先稳住身边的人",
-     "mid": "野战医院的通讯兵四处找能用的工具"
-    },
-    "relationship_stance": "每次家书日都替军医多留一个信封，可军医从来没寄过。",
-    "withdrawal": "事情过去后，野战医院的通讯兵一个人躲开抽根烟"
-   },
-   "gender": "female",
-   "gender_reason": "按设定是野战医院的女通讯兵。",
-   "id": "signal_operator",
-   "identity": {
-    "authority": "什么消息先发、哪封家书先送，通讯兵说了算。",
-    "exposure": "野战医院的通讯兵忙起来顾不上衣着体面",
-    "hidden": "做野战医院的通讯兵这些年，有件事没对旁人说过",
-    "limits": [
-     "野战医院的通讯兵不在死角里，只能在外面使劲"
-    ],
-    "obligations": [
-     "守住野战医院的通讯兵手上的那一摊事"
-    ],
-    "resources": [
-     "一部野战电台",
-     "野战医院的通讯兵随身的一盏提灯"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "野战医院的通讯兵欣赏做事干脆利落的人",
-     "野战医院的通讯兵记得危急时回头搭把手的人"
-    ],
-    "boundaries": [
-     "对方迟疑，野战医院的通讯兵就停"
-    ],
-    "desire_range": [
-     1,
-     3
-    ],
-    "desired_position": "和野战医院的通讯兵并肩站着",
-    "dislikes": [
-     "野战医院的通讯兵讨厌轻浮的手"
-    ],
-    "expression": "野战医院的通讯兵话不多，递东西时指尖会多停一下",
-    "likes": [
-     "野战医院的通讯兵收工后的一杯热饮"
-    ],
-    "preconditions": [
-     "野战医院的通讯兵要等危局过去、双方清醒自愿"
-    ],
-    "self_control_range": [
-     3,
-     5
-    ]
-   },
-   "public_role": "野战医院的通讯兵",
-   "schedule": [
-    {
-     "from": 480,
-     "location_id": "loc_field_hospital_tent",
-     "to": 1320
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "野战医院的通讯兵未必赶得上",
-      "option": "野战医院的通讯兵在外面调度接应"
-     },
-     {
-      "cost": "可能把野战医院的通讯兵自己也搭进去",
-      "option": "野战医院的通讯兵硬闯进去"
-     }
-    ],
-    "pressure": "里面的人出不来，野战医院的通讯兵进不去",
-    "trigger": "警报传到野战医院的通讯兵那里"
-   },
-   "tags": [
-    "workplace"
-   ],
-   "voices": {
-    "inner": "那个空信封我还留着……军医，你得出来，把那封信写了。",
-    "surface": "军医！工兵组长！电台通了！外面的人知道你们在哪儿，再撑一下！"
+    "inner": "调令的底稿还在我手里。交上去，你们就走了。",
+    "surface": "电码比平时急。你陪我听一会儿，就一会儿。"
    }
   }
  ],
  "clock_start": {
-  "label": "战事第二年，初春",
-  "minute": 10
+  "label": "战事第二年初春，停火窗口的后半段",
+  "minute": 1200
  },
  "clock_style": "hm",
  "content_tags": [
@@ -1115,182 +1405,186 @@
  ],
  "custom": false,
  "customs": [
-  "战地野战创伤外科军医随身配备特种淬火医用不锈钢骨科截骨重凿，长二十五公分，刃部极厚极硬，可承受数吨冲击撬力。",
-  "地下掩体防爆门装有双向偏心重力自锁滑舌，承受剧烈挤压形变后需从缝隙内撬开防脱挡片方能拉动。",
-  "地堡坍塌后空气中悬浮高浓度石灰与水泥微尘，两人需以战术三角巾浸水掩住口鼻保持呼吸畅通。",
-  "急救室墙角配有重力自锁通风百叶滑板，用金属器械击碎变形限位块可引入浅层岩缝新鲜空气。"
+  "军医煮的咖啡不加糖，递给谁就是认定谁；接过去的人，要陪着把这杯喝完。",
+  "后撤前夜，各帐篷要把伤员的家书念一遍，念不完的随车带走。",
+  "前线的人不说再见，只说“活着见”。",
+  "掩蔽部的帆布帘放下来，就是请勿打扰的意思，谁也不会掀。"
  ],
  "daily_activities": [
   {
    "beats": [
-    "天刚亮，军医拿着病历板一张行军床一张行军床地走过去，每停一处都只说一两句话。",
-    "走到最后一张床，军医低头看着人的伤口，声音很低：恢复得不错。别乱动，明天再来看你。"
-   ],
-   "duration_minutes": 50,
-   "hook_ids": [],
-   "id": "act_morning_rounds",
-   "location_ids": [
-    "loc_field_hospital_tent"
-   ],
-   "start_minute": 420,
-   "tags": [
-    "workplace"
-   ],
-   "title": "清晨跟军医查房"
-  },
-  {
-   "beats": [
-    "帐篷外的铁丝上晾满了洗过的绷带，风一吹像一排白色的旗子，军医踮着脚一卷一卷往下收。",
-    "够不着最高的那一卷，军医回头看了人一眼，什么都没说，只把怀里的绷带递了过来。"
+    "在酒精炉上煮开一小壶苦咖啡",
+    "两人坐在行军床沿，共用一只搪瓷缸暖手分饮"
    ],
    "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_bandage_line",
-   "location_ids": [
-    "loc_field_hospital_tent"
+   "hook_ids": [
+    "hook_leng_orders",
+    "hook_leng_sleeves",
+    "hook_leng_dressing"
    ],
-   "start_minute": 600,
-   "tags": [
-    "workplace"
-   ],
-   "title": "收晾在铁丝上的绷带"
-  },
-  {
-   "beats": [
-    "家书日，通讯兵把一沓信倒在桌上，伤员们排着队，军医坐在床边替不识字的伤员一封封念。",
-    "念完最后一封，军医看着桌上那个空信封出了一会儿神，抬头对人说：你有要寄的信吗？"
-   ],
-   "duration_minutes": 50,
-   "hook_ids": [],
-   "id": "act_letter_day",
-   "location_ids": [
-    "loc_field_hospital_tent"
-   ],
-   "start_minute": 900,
-   "tags": [
-    "workplace"
-   ],
-   "title": "家书日在帐篷里读信"
-  },
-  {
-   "beats": [
-    "炮声停了，帐篷外难得安静，军医坐在弹药箱上，捧着一只搪瓷缸，里面是冲得很浓的苦咖啡。",
-    "军医把搪瓷缸递过来：只有一缸。你喝一半，剩下的给我。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_ceasefire_coffee",
-   "location_ids": [
-    "loc_field_hospital_tent"
-   ],
-   "start_minute": 1020,
-   "tags": [
-    "workplace"
-   ],
-   "title": "停火间隙的一杯苦咖啡"
-  },
-  {
-   "beats": [
-    "马灯下，军医让人坐在行军床边，剪开旧绷带，用盐水一点点冲洗伤口，手指冰凉，动作很轻。",
-    "缠好最后一圈，军医的手在人肩上多停了半秒，低声说：别再往前冲了。"
-   ],
-   "duration_minutes": 40,
-   "hook_ids": [],
-   "id": "act_dugout_dressing_change",
+   "id": "act_dugout_coffee",
    "location_ids": [
     "loc_surgeon_dugout"
    ],
-   "start_minute": 1260,
-   "tags": [
-    "workplace"
-   ],
-   "title": "掩蔽部里替人换药"
-  },
-  {
-   "beats": [
-    "掩蔽部的墙上钉着一张手绘的伤员名单，救回来的打勾，没救回来的画一个小圈，军医站在前面看了很久。",
-    "军医没回头，只说了一句：这些名字我都记得。你的，我不想写在上面。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_dugout_map",
-   "location_ids": [
-    "loc_surgeon_dugout"
-   ],
-   "start_minute": 1320,
-   "tags": [
-    "workplace"
-   ],
-   "title": "掩蔽部里看那张伤员名单"
-  },
-  {
-   "beats": [
-    "铁门撬开、伤员都转出去、炮声终于停了之后，军医清点完最后一个伤员才回到掩蔽部，军服上全是粉尘，头发里夹着碎石屑。",
-    "马灯下，军医背过身，让人一颗颗解开满是灰的军服扣子，再解开汗湿的衬衣，温热的湿毛巾擦过后背时，军医轻轻吸了一口气，往后靠了过来。",
-    "军医转过身，第一次没有用命令的口气：今晚，我不想一个人睡。你愿意吗？"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_dugout_uniform_buttons",
-   "location_ids": [
-    "loc_surgeon_dugout"
-   ],
-   "start_minute": 1430,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "掩蔽部里替军医解开满是灰的军服"
+   "title": "掩蔽部共饮苦咖啡"
   },
   {
    "beats": [
-    "天快亮时，前线难得一整夜没有炮声，军医在窄窄的行军床上醒来，整个人还被人从身后抱着，马灯早就灭了。",
-    "军医没有动，把环在腰上的那只手拉到唇边，轻声说：这是两年来第一个没有炮声的早上……再躺五分钟。"
+    "军医在马灯下俯身靠近，微凉而稳当的指尖贴着你的皮肤，一圈圈解开手臂上的旧纱布",
+    "换好新敷料后，指尖还在你手腕上停了停"
    ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_ceasefire_dawn",
+   "duration_minutes": 20,
+   "hook_ids": [
+    "hook_leng_orders",
+    "hook_leng_sleeves",
+    "hook_leng_dressing"
+   ],
+   "id": "act_triage_dressing",
    "location_ids": [
-    "loc_surgeon_dugout"
+    "loc_triage_cellar"
    ],
-   "start_minute": 450,
+   "start_minute": null,
    "tags": [
+    "bodily_harm",
     "intimate"
    ],
-   "title": "停火的清晨在掩蔽部醒来"
+   "title": "分诊室灯下换敷料"
   },
   {
    "beats": [
-    "帆布帘放下来了，军医从战救包里取出听诊器，挂在脖子上，冷冷地看着人：衣服解开，我要听一听。",
-    "军医先说好：你说“停”我就停，你点头我才继续。得到回答后，冰凉的听诊头贴上胸口，军医听了一会儿，低声说：心跳太快了。……是因为我吗？"
+    "初春的夜风灌进长廊，一件厚实的军大衣披在两人肩上",
+    "并肩靠着木护壁，听远处的风声"
    ],
    "duration_minutes": 30,
    "hook_ids": [],
-   "id": "act_stethoscope_heartbeat",
+   "id": "act_gallery_greatcoat",
    "location_ids": [
-    "loc_surgeon_dugout"
+    "loc_trench_vent_gallery"
    ],
-   "start_minute": 1380,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "听诊器贴在胸口听心跳"
+   "title": "大衣裹肩交通壕并立"
   },
   {
    "beats": [
-    "远处又传来闷闷的炮声，掩蔽部顶上的原木震落一层细土，军医下意识抓住了人的手，抓得很紧。",
-    "炮声停下的那一刻，军医抬头问了一句“可以吗”，得到回答后便吻了上来，马灯晃了晃，两人倒在窄窄的行军床上。"
+    "军医把随身佩戴的刻名银质军医哨取下，塞进你贴身的胸袋",
+    "手指隔着布料轻轻按了按你的心口"
    ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_dugout_kiss",
+   "duration_minutes": 20,
+   "hook_ids": [
+    "hook_leng_orders",
+    "hook_leng_sleeves",
+    "hook_leng_dressing"
+   ],
+   "id": "act_dugout_whistle",
    "location_ids": [
     "loc_surgeon_dugout"
    ],
-   "start_minute": 1100,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "掩蔽部里远处炮声中的吻"
+   "title": "刻名军医哨贴身相托"
+  },
+  {
+   "beats": [
+    "夜巡查房，一人举着马灯照明，一人轻声替卧床伤员读完家书",
+    "目光在灯影里温柔相接"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_tent_letters",
+   "location_ids": [
+    "loc_field_hospital_tent"
+   ],
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "主帐篷夜巡替伤员读信"
+  },
+  {
+   "beats": [
+    "在狭窄的药架通道里并肩核对针剂批号",
+    "转身时呼吸交错，指尖碰到了一起"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_vault_ledger",
+   "location_ids": [
+    "loc_medicine_vault"
+   ],
+   "start_minute": null,
+   "tags": [
+    "workplace",
+    "intimate"
+   ],
+   "title": "药架隔板并肩盘账"
+  },
+  {
+   "beats": [
+    "手术下台后兑好一盆温水，握着军医泛白的手指仔细擦干",
+    "再涂上一层防裂甘油"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [
+    "hook_leng_orders",
+    "hook_leng_sleeves",
+    "hook_leng_dressing"
+   ],
+   "id": "act_dugout_handwash",
+   "location_ids": [
+    "loc_surgeon_dugout"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "温水拭手洗净消毒水味"
+  },
+  {
+   "beats": [
+    "与通讯兵分戴同一副监听耳机",
+    "在规律的滴答电码声里，肩贴着肩核对来电"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [
+    "hook_sig_headset",
+    "hook_sig_draft"
+   ],
+   "id": "act_gallery_headset",
+   "location_ids": [
+    "loc_trench_vent_gallery"
+   ],
+   "start_minute": null,
+   "tags": [
+    "workplace",
+    "intimate"
+   ],
+   "title": "发报机旁同听电波"
+  },
+  {
+   "beats": [
+    "借着检查擦伤的名义，用微凉的酒精棉球轻轻擦过对方的耳垂与下颌线",
+    "指腹在脸侧停了停"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [],
+   "id": "act_triage_swab",
+   "location_ids": [
+    "loc_triage_cellar"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "酒精棉球轻拭耳廓"
   }
  ],
  "default_npc_gender_mix": {
@@ -1299,7 +1593,7 @@
   "nonbinary": 0.0
  },
  "default_person": "second",
- "era": "近现代前线残酷要塞攻防与地下野战医疗卫勤时代",
+ "era": "战事第二年初春，前线停火换俘窗口期内的地下野战医院",
  "extends": null,
  "forbidden_terms": [
   "软色情",
@@ -1313,293 +1607,276 @@
  ],
  "hooks": [
   {
-   "id": "hk_uv_warning_thunder",
-   "kind": "approach",
+   "id": "hook_leng_orders",
+   "kind": "observe",
    "location_ids": [
-    "loc_collapsed_triage_corner"
+    "loc_surgeon_dugout"
    ],
    "slot": "surgeon_leng",
-   "text": "{surgeon_leng.name}军装领口沾满石灰白痕，面庞因缺氧微微发白，果断将加厚截骨重凿递入同伴手中。"
+   "text": "军医值班掩蔽部的行军桌旁，{npc.name}刚洗净双手摘下外科手套，桌上铝饭盒底下压着一封来自后方总医院的调令电报。"
   },
   {
-   "id": "hk_crypt_uv_roaring_rush",
+   "id": "hook_leng_sleeves",
    "kind": "approach",
    "location_ids": [
-    "loc_collapsed_triage_corner"
+    "loc_surgeon_dugout",
+    "loc_triage_cellar"
    ],
    "slot": "surgeon_leng",
-   "text": "{surgeon_leng.name}半跪在碎石瓦砾堆上，侧身靠着同伴胸膛，借着手电微光摸出扭曲在槽钢内的防爆门销。"
+   "text": "{npc.name}手术下台，挽着袖口站在掩蔽部门口，指节泛白，朝你抬了抬下巴：进来，帮我把这壶咖啡煮开。"
   },
   {
-   "id": "hk_crypt_breaker_groan_deadlock",
+   "id": "hook_leng_dressing",
    "kind": "approach",
    "location_ids": [
-    "loc_blast_door_bolt"
-   ],
-   "slot": "sapper_lead",
-   "text": "{sapper_lead.name}展开防撕裂工兵外套紧紧拢住军医削瘦的肩膀，用背脊为军医抵挡头顶剥落的碎石。"
-  },
-  {
-   "id": "hk_breaker_deformation_scrape",
-   "kind": "approach",
-   "location_ids": [
-    "loc_blast_door_bolt"
-   ],
-   "slot": "sapper_lead",
-   "text": "{sapper_lead.name}将浸透盐水的无菌纱布轻轻覆在军医干涸唇瓣上，帮助军医过滤刺鼻浓烈的生石灰粉尘。"
-  },
-  {
-   "id": "hk_tight_breath_ear_brush",
-   "kind": "approach",
-   "location_ids": [
-    "loc_blast_door_bolt"
+    "loc_triage_cellar"
    ],
    "slot": "surgeon_leng",
-   "text": "{surgeon_leng.name}急促温热的微喘拂过同伴颈侧，面颊近在咫尺，清冷眼眸中透着不屈决绝。"
+   "text": "{npc.name}端着马灯走到你身边，低声说：伸手，我看看你的伤口还裂不裂。"
   },
   {
-   "id": "hk_lace_corset_heat_exchange",
-   "kind": "approach",
-   "location_ids": [
-    "loc_blast_door_bolt"
-   ],
-   "slot": "surgeon_leng",
-   "text": "{surgeon_leng.name}战术长裤紧紧挨在同伴腿侧，紧抿毫无血色的薄唇，冷静报出杠杆力学最佳的撬动受力夹角。"
-  },
-  {
-   "id": "hk_scepter_flange_notch_align",
-   "kind": "approach",
-   "location_ids": [
-    "loc_blast_door_bolt"
-   ],
-   "slot": "surgeon_leng",
-   "text": "{surgeon_leng.name}展现出战地军医的钢铁意志，根据预制梁断裂声精确判断时间，示意立即发动双人体重暴击下压。"
-  },
-  {
-   "id": "hk_rubber_hammer_chock_in",
-   "kind": "approach",
-   "location_ids": [
-    "loc_blast_door_bolt"
-   ],
-   "slot": "sapper_lead",
-   "text": "{sapper_lead.name}在水泥梁轰然下沉的瞬间，将军医紧紧按进怀中，两副年轻躯体在逼仄三角区严丝合缝相护。"
-  },
-  {
-   "id": "hk_satin_ribbon_bind_grip",
-   "kind": "approach",
-   "location_ids": [
-    "loc_blast_door_bolt"
-   ],
-   "slot": "surgeon_leng",
-   "text": "{surgeon_leng.name}双手覆在同伴手背上，将全身残存体重毫无保留地压向重凿柄端，两颗心在废墟死角激烈共鸣。"
-  },
-  {
-   "id": "hk_atrium_air_pressure_drop",
-   "kind": "approach",
-   "location_ids": [
-    "loc_collapsed_triage_corner"
-   ],
-   "slot": "surgeon_leng",
-   "text": "{surgeon_leng.name}细辨金属断裂的微弱咔嚓脆响，在自锁咬死凸起移位的瞬间果断喝令同伴起脚前推。"
-  },
-  {
-   "id": "hk_synchronized_grunt_heave",
-   "kind": "approach",
-   "location_ids": [
-    "loc_blast_door_bolt"
-   ],
-   "slot": "sapper_lead",
-   "text": "{sapper_lead.name}与军医一同沉腰发力，以身躯为撞城重锤轰入钢门，死卡插销应声折断脱位。"
-  },
-  {
-   "id": "hk_spring_latch_pop_rebound",
-   "kind": "approach",
-   "location_ids": [
-    "loc_blast_door_bolt"
-   ],
-   "slot": "surgeon_leng",
-   "text": "{surgeon_leng.name}在钢门洞开的气浪中重心不稳倒入同伴怀中，双臂紧扣同伴后颈顺利跨过变形门槛。"
-  },
-  {
-   "id": "hook_leng_dont_move",
+   "id": "hook_dir_tea",
    "kind": "approach",
    "location_ids": [
     "loc_field_hospital_tent"
    ],
-   "slot": "surgeon_leng",
-   "text": "{npc.name}按住人的肩膀，声音冷冷的：别乱动，伤口会裂。……明天我再来看你。"
+   "slot": "hospital_director",
+   "text": "{npc.name}在帐篷外的木箱上摆了两只茶缸，朝你招手：坐，陪我喝口热的，不谈拔营。"
   },
   {
-   "id": "hook_leng_half_coffee",
-   "kind": "approach",
+   "id": "hook_dir_fuel",
+   "kind": "request",
    "location_ids": [
     "loc_field_hospital_tent",
-    "loc_surgeon_dugout"
+    "loc_triage_cellar"
    ],
-   "slot": "surgeon_leng",
-   "text": "{npc.name}把搪瓷缸递过来，咖啡还冒着热气：只有一缸。你喝一半，剩下的还我。"
+   "slot": "hospital_director",
+   "text": "{npc.name}把你叫到帐篷背风处，压低声音，说有件事想请你帮着看一眼油料单，别声张。"
   },
   {
-   "id": "hook_leng_empty_envelope",
+   "id": "hook_nurse_vault",
+   "kind": "observe",
+   "location_ids": [
+    "loc_medicine_vault"
+   ],
+   "slot": "head_nurse",
+   "text": "地下药品库房的木架前，{npc.name}正对着少了一格的盘尼西林木箱发怔，手里的出入库登记簿翻在半个月前的一页。"
+  },
+  {
+   "id": "hook_nurse_towel",
    "kind": "approach",
+   "location_ids": [
+    "loc_medicine_vault",
+    "loc_triage_cellar"
+   ],
+   "slot": "head_nurse",
+   "text": "{npc.name}在药房隔板后拧干一块热毛巾递给你：擦把脸，你额头上全是汗。"
+  },
+  {
+   "id": "hook_nurse_ledger",
+   "kind": "approach",
+   "location_ids": [
+    "loc_medicine_vault"
+   ],
+   "slot": "head_nurse",
+   "text": "{npc.name}把一本出入库登记簿推到你面前：来，帮我对一遍批号，眼睛花了。"
+  },
+  {
+   "id": "hook_sap_gallery",
+   "kind": "observe",
+   "location_ids": [
+    "loc_trench_vent_gallery"
+   ],
+   "slot": "sapper_lead",
+   "text": "掩体交通壕换气口长廊里，{npc.name}背靠着加固圆木抽着烟，脚边放着尚未接线的掩体封存起爆器。"
+  },
+  {
+   "id": "hook_sap_map",
+   "kind": "approach",
+   "location_ids": [
+    "loc_trench_vent_gallery"
+   ],
+   "slot": "sapper_lead",
+   "text": "{npc.name}把一张排雷草图在木护壁上摊平，朝你招手：来，帮我看看这条路绕不绕得开。"
+  },
+  {
+   "id": "hook_ord_tent",
+   "kind": "observe",
    "location_ids": [
     "loc_field_hospital_tent"
    ],
-   "slot": "surgeon_leng",
-   "text": "{npc.name}拿着那个空信封看了很久，忽然问：如果要给一个人写信，第一句该写什么？"
+   "slot": "old_orderly",
+   "text": "野战医院主帐篷门口，{npc.name}正带着担架员核对最后一辆装甲救护车的床位牌，通讯兵攥着刚译出的电报底稿快步走来。"
   },
   {
-   "id": "hook_leng_name_list",
-   "kind": "approach",
-   "location_ids": [
-    "loc_surgeon_dugout"
-   ],
-   "slot": "surgeon_leng",
-   "text": "{npc.name}站在伤员名单前，没回头：你的名字，我不想写在上面。所以别再往前冲了。"
-  },
-  {
-   "id": "hook_sapper_painkiller",
+   "id": "hook_ord_water",
    "kind": "approach",
    "location_ids": [
     "loc_field_hospital_tent",
-    "loc_surgeon_dugout"
+    "loc_triage_cellar"
    ],
-   "slot": "sapper_lead",
-   "text": "{npc.name}从胸前口袋摸出一片止痛药，有点不好意思：你半年前给的。一直留着，舍不得吃。"
+   "slot": "old_orderly",
+   "text": "{npc.name}提着一壶热水在担架间走，见到你就递过一只搪瓷缸：趁热喝，下半夜还长。"
   },
   {
-   "id": "hook_sapper_coffee_powder",
+   "id": "hook_ord_list",
+   "kind": "request",
+   "location_ids": [
+    "loc_field_hospital_tent"
+   ],
+   "slot": "old_orderly",
+   "text": "{npc.name}把你拉到担架后头，压低声音，求你帮着看一眼后送名单上被涂改的那一栏。"
+  },
+  {
+   "id": "hook_sig_headset",
    "kind": "approach",
    "location_ids": [
-    "loc_field_hospital_tent",
-    "loc_collapsed_triage_corner"
+    "loc_trench_vent_gallery"
    ],
-   "slot": "sapper_lead",
-   "text": "{npc.name}把一小包咖啡粉塞过来：后方捎来的。别告诉护士长，就这一包。"
+   "slot": "signal_operator",
+   "text": "{npc.name}摘下半边监听耳机朝你晃了晃：来，陪我听一会儿，电码比平时急。"
+  },
+  {
+   "id": "hook_sig_draft",
+   "kind": "approach",
+   "location_ids": [
+    "loc_trench_vent_gallery",
+    "loc_field_hospital_tent"
+   ],
+   "slot": "signal_operator",
+   "text": "{npc.name}把一叠电报纸按在胸口，朝你快步走来，眼眶有点红：你能不能陪我站一会儿？"
+  },
+  {
+   "id": "hook_sig_cup",
+   "kind": "approach",
+   "location_ids": [
+    "loc_trench_vent_gallery"
+   ],
+   "slot": "signal_operator",
+   "text": "{npc.name}把一只热气腾腾的搪瓷缸塞进你手里：我值夜，你也别空着手站着。"
   }
  ],
  "id": "combat_surgeon_bunker_cavein_vigil",
  "locations": [
   {
    "affordances": [
-    "背部顶紧坚硬倾斜预制板稳固马步发力支撑点",
-    "探身将骨科截骨重凿刃口深深楔入防爆门插销缝隙",
-    "倾听头顶碎石沙砾不断剥落砸在钢盔上的刺耳闷响"
+    "对着名单核对伤情",
+    "在马灯下换敷料",
+    "给发烧的人兑葡萄糖水"
    ],
-   "detail": "由两截断裂的水泥预制板与倒塌药械柜斜撑形成的倾斜死角，空间不足两平米，周围石灰粉尘滚滚，头顶悬挂着摇摇欲坠的带筋断梁。",
+   "detail": "掩体里最宽敞的一间，木桌、行军床和马灯围成分诊台，后送名单钉在木板上，担架员和护士来来往往。",
    "exits": [
-    "loc_blast_door_bolt",
-    "loc_vent_louver_latch"
+    "loc_field_hospital_tent",
+    "loc_medicine_vault",
+    "loc_trench_vent_gallery"
    ],
-   "id": "loc_collapsed_triage_corner",
-   "name": "急救室三角区",
-   "pressure_modifiers": {
-    "p_aftershock_settle": "每一阵余震，头顶的水泥板就往下沉一点，碎石哗哗地往下落。",
-    "p_air_running_out": "空气闷得像捂在棉被里，每吸一口都带着生石灰的苦味。"
-   },
-   "privacy": "private",
+   "id": "loc_triage_cellar",
+   "name": "地下掩体分诊室",
+   "pressure_modifiers": {},
+   "privacy": "semi",
    "tags": [
-    "workplace",
-    "disaster",
-    "intimate"
+    "workplace"
    ],
-   "visibility": "手电的光在粉尘里照出一道灰白的柱子，能看清对方睫毛上的灰，却看不清一臂以外的东西。",
-   "witnesses": []
-  },
-  {
-   "affordances": [
-    "用手指摸清变形插销受剪切卡滞的死卡凸起",
-    "两人合抱截骨重凿手柄向下猛力施加杠杆撬力"
-   ],
-   "detail": "连通主坑道的实心钢板防爆门合页处，由于门框严重向内挤压扭曲，三枚粗壮的低碳钢自锁插销被生生咬死在滑轨暗槽中。",
-   "exits": [
-    "loc_collapsed_triage_corner"
-   ],
-   "id": "loc_blast_door_bolt",
-   "name": "防爆门插销",
-   "pressure_modifiers": {
-    "p_chisel_chip": "凿刃的硬质刃口被插销崩掉了一个小口，再硬撬可能整片崩裂。",
-    "p_triangle_chest_press": "军医后背紧紧贴在工兵组长胸前，四只手叠在凿柄上，汗湿的军服贴着对方的作训服。"
-   },
-   "privacy": "private",
-   "tags": [
-    "workplace",
-    "intimate"
-   ],
-   "visibility": "铁门插销被横梁压得扭曲，凿刃别进去时擦出一串火星。",
-   "witnesses": []
-  },
-  {
-   "affordances": [
-    "合力借助工兵靴坚硬后跟猛烈踹击连杆弯折处",
-    "感受岩缝外渗透进来的冰冷湿润空气缓解窒息缺氧"
-   ],
-   "detail": "墙角隐蔽安装的防毒气密封百叶窗，机械连杆被坍塌落石砸弯咬死。",
-   "exits": [
-    "loc_collapsed_triage_corner",
-    "loc_field_hospital_tent"
-   ],
-   "id": "loc_vent_louver_latch",
-   "name": "通风百叶卡扣",
-   "pressure_modifiers": {
-    "p_wounded_outside": "外面的人在拼命扒瓦砾，可刚扒开一块，余震又震下来一片。"
-   },
-   "privacy": "public",
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "visibility": "通风百叶的缝里透进一线外面的光，野战电话里不时传来院长的呼叫。",
+   "visibility": "门口常有人进出，说话要压低，名单上的字谁都看得见。",
    "witnesses": [
-    "bg_rescue_sapper",
-    "bg_head_nurse_aide",
-    "bg_signal_runner"
+    "bg_stretcher_bearer",
+    "bg_ward_nurse",
+    "bg_pharmacy_clerk"
    ]
   },
   {
    "affordances": [
-    "陪军医查一遍房",
-    "帮军医把晾干的绷带收进来",
-    "在停火的间隙陪军医喝一杯苦咖啡"
+    "并肩核对针剂批号",
+    "摊开没签字的损耗单",
+    "递一杯热水暖手"
    ],
-   "detail": "前线后方一片树林里的野战医院，几顶连在一起的大帐篷，帆布上画着红十字，铁丝上晾着洗过的绷带，帐篷里一排排行军床，消毒水的味道从早飘到晚。",
+   "detail": "窄长的地下库房，木药架一格一格码着针剂和敷料，只有一张小桌和一盏马灯，门一关就听不见外头。",
    "exits": [
+    "loc_triage_cellar",
+    "loc_surgeon_dugout"
+   ],
+   "id": "loc_medicine_vault",
+   "name": "掩体地下药品库房",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "workplace",
+    "crime"
+   ],
+   "visibility": "门一关外面听不见，只有登记簿和批号对不对得上。",
+   "witnesses": []
+  },
+  {
+   "affordances": [
+    "披着同一件军大衣",
+    "分戴同一副监听耳机",
+    "借着风声低声说话"
+   ],
+   "detail": "窄窄的木护壁长廊，一头通向换气口，初春的夜风灌进来，远处能听见炮声和电台的滴答。",
+   "exits": [
+    "loc_field_hospital_tent",
+    "loc_triage_cellar",
+    "loc_surgeon_dugout"
+   ],
+   "id": "loc_trench_vent_gallery",
+   "name": "掩体交通壕换气口长廊",
+   "pressure_modifiers": {},
+   "privacy": "semi",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "路过的哨兵和卡车司机随时会看见，窄处只容两人并肩。",
+   "witnesses": [
+    "bg_sentry",
+    "bg_truck_driver"
+   ]
+  },
+  {
+   "affordances": [
+    "替伤员读家书",
+    "核对担架床位牌",
+    "提着马灯夜巡"
+   ],
+   "detail": "挂满马灯的大帐篷，两排担架床，分诊台在门口，醒着的伤员都在听谁上车、谁留下。",
+   "exits": [
+    "loc_triage_cellar",
     "loc_surgeon_dugout",
-    "loc_vent_louver_latch"
+    "loc_trench_vent_gallery"
    ],
    "id": "loc_field_hospital_tent",
-   "name": "野战医院帐篷",
+   "name": "野战医院主帐篷",
    "pressure_modifiers": {},
    "privacy": "public",
    "tags": [
     "workplace"
    ],
-   "visibility": "伤员、医护、来往的士兵挤满了帐篷，谁跟军医多说一句话，整顶帐篷的人都看得见。",
+   "visibility": "几十双眼睛看着，伤员的议论传得比电报还快。",
    "witnesses": [
-    "bg_head_nurse_aide",
-    "bg_signal_runner",
-    "bg_wounded_corporal",
-    "bg_war_correspondent"
+    "bg_stretcher_bearer",
+    "bg_wounded_sergeant",
+    "bg_ward_nurse"
    ]
   },
   {
    "affordances": [
-    "坐在行军床边替对方换药",
-    "在马灯下分一罐热咖啡",
-    "把门口的帆布帘放下来"
+    "在酒精炉上煮苦咖啡",
+    "兑温水擦手涂甘油",
+    "挤在行军床沿和衣坐一会儿"
    ],
-   "detail": "帐篷后面挖进土坡里的一间小掩蔽部，原木撑着顶，一张行军床、一只弹药箱改的桌子、一盏马灯，墙上钉着一张手绘的伤员名单，门口挂着一块厚帆布帘。",
+   "detail": "一张行军床、一张行军桌和一台酒精炉，铁柜里锁着军医的私人器械箱，帆布帘一放就是自己的天地。",
    "exits": [
-    "loc_field_hospital_tent"
+    "loc_field_hospital_tent",
+    "loc_trench_vent_gallery",
+    "loc_medicine_vault"
    ],
    "id": "loc_surgeon_dugout",
-   "name": "军医掩蔽部",
+   "name": "军医值班掩蔽部",
    "pressure_modifiers": {},
    "privacy": "private",
    "tags": [
     "intimate"
    ],
-   "visibility": "只点一盏马灯，远处偶尔传来闷闷的炮声，屋里的人能看清彼此的每一个表情。",
+   "visibility": "帆布帘一放，外面只看得见一线马灯光。",
    "witnesses": []
   }
  ],
@@ -1680,26 +1957,25 @@
   ],
   "order": "family_first"
  },
- "notes": "按原稿加入。原稿除标题、简介、基调、军医外貌、世界规则与三处脱困地点外，人物、压力与钩子大多照抄了吸血鬼地宫那一篇，这里按虚构前线野战医院的题材整篇重写：白天是帐篷里的查房、分药、家书日和停火间隙的一杯苦咖啡，夜里是地堡坍塌后的粉尘、残氧和余震；搭档写成负责加固地堡的工兵组长，其余人物换成野战医院院长、护士长、老卫生员和通讯兵。与骑士长那篇拉开差异：那篇是中世纪要塞的军械库，这篇是近现代前线的地下急救站，不写具体国家。新增野战医院帐篷与军医掩蔽部两处日常地点。原稿里“肢体依靠只服务于发力、不得偏离自救”的规则改成了世界内的规则；婴儿肥换成了其余外貌描写；军医亲密前提写明脱困之后、双方清醒自愿；新增掩蔽部里的四个亲密日常。",
+ "notes": "按原稿加入。原稿除标题、简介、基调、军医外貌、世界规则与三处脱困地点外，人物、压力与钩子大多照抄了吸血鬼地宫那一篇，这里按虚构前线野战医院的题材整篇重写：白天是帐篷里的查房、分药、家书日和停火间隙的一杯苦咖啡，夜里是地堡坍塌后的粉尘、残氧和余震；搭档写成负责加固地堡的工兵组长，其余人物换成野战医院院长、护士长、老卫生员和通讯兵。与骑士长那篇拉开差异：那篇是中世纪要塞的军械库，这篇是近现代前线的地下急救站，不写具体国家。新增野战医院帐篷与军医掩蔽部两处日常地点。原稿里“肢体依靠只服务于发力、不得偏离自救”的规则改成了世界内的规则；婴儿肥换成了其余外貌描写；军医亲密前提写明脱困之后、双方清醒自愿；新增掩蔽部里的四个亲密日常。\n2026-10-24 按写作规则 v2 与 Gemini 创意卡改造：停火窗口内野战医院拔营前，围绕最后两个后送名额、短少的一箱药和调令的去留抉择展开。",
  "player_identities": [
   {
    "age_range": [
-    21,
-    24
+    22,
+    30
    ],
-   "baseline": "刚从后方卫校毕业就分到前线，被派给军医当助手，第一次见那么多血，手还在抖。",
+   "baseline": "你长期给主刀军医配台，洗器械、递纱布、换药样样做，是手术台边最熟悉那双手的人。",
    "gender": "any",
    "id": "pi_new_medic",
-   "reputation": "野战医院里最年轻的人，伤员们都管这张生面孔叫新来的。",
+   "reputation": "手术台边最稳当的帮手。",
    "resources": [
-    "一只卫生兵挎包",
-    "一卷绷带",
-    "一本战地急救手册"
+    "军医掩蔽部的备用钥匙",
+    "今晚的器械清点单"
    ],
    "risks": [
-    "再在手术台边晕一次，就要被调去后方洗绷带。"
+    "清点单一旦对不上，配台的人先被问责。"
    ],
-   "role": "刚分来的卫生兵",
+   "role": "野战外科配台卫生兵",
    "social_position": "low",
    "title_patterns": [
     {
@@ -1714,22 +1990,21 @@
   },
   {
    "age_range": [
-    25,
-    35
+    27,
+    40
    ],
-   "baseline": "前线下来的连长，腿上挨了一块弹片，被军医按在行军床上躺了半个月，天天吵着要回连队。",
+   "baseline": "你因肩部弹片伤住进野战医院休养，伤已愈合，归队令在手，顺手帮着维持营区防务。",
    "gender": "any",
    "id": "pi_wounded_officer",
-   "reputation": "前线出了名的硬骨头，伤员们都服这位连长。",
+   "reputation": "连队里信得过的人。",
    "resources": [
-    "一条打着夹板的腿",
-    "一张连队的花名册",
-    "一只缴获的旧怀表"
+    "前沿防区通行口令",
+    "连队的备用吉普车钥匙"
    ],
    "risks": [
-    "伤好之前回不去，连队就要换人带了。"
+    "归队令一到你就得离开，重伤员的后送也要你表态。"
    ],
-   "role": "养伤的连长",
+   "role": "伤愈待归队的步兵连长",
    "social_position": "equal",
    "title_patterns": [
     {
@@ -1744,22 +2019,22 @@
   },
   {
    "age_range": [
-    24,
-    36
+    26,
+    40
    ],
-   "baseline": "从后方派来的随军记者，想写一篇野战医院的特稿，跟着军医转了好几天。",
+   "baseline": "你获准驻留野战医院，撰写前线卫勤专题报道，白天跟着查房，夜里蹲在电台旁等发稿的空档。",
    "gender": "any",
    "id": "pi_war_correspondent",
-   "reputation": "写过几篇很有名的前线报道。",
+   "reputation": "只写亲眼见过的事。",
    "resources": [
-    "一台相机",
-    "一本采访本",
-    "一张前线采访证"
+    "战地采访通行证",
+    "一卷未曝光的底片",
+    "直发后方报社的电讯权"
    ],
    "risks": [
-    "特稿交不出来，就要被调回编辑部。"
+    "稿子一旦发出，驻留证随时可能被军区收回。"
    ],
-   "role": "随军记者",
+   "role": "随军战地特派记者",
    "social_position": "equal",
    "title_patterns": [
     {
@@ -1775,21 +2050,20 @@
   {
    "age_range": [
     32,
-    48
+    50
    ],
-   "baseline": "后方卫勤部派来的督察，这一趟来查野战医院的药品和伤员转运，一份报告就能决定医院的补给和去留。",
+   "baseline": "你趁停火窗口来督导医院拔营后撤与受控药品核销，后送名额的最终批复在你手里。",
    "gender": "any",
    "id": "pi_medical_inspector",
-   "reputation": "野战医院上下都知道这位督察的厉害。",
+   "reputation": "不留情面，也从不冤枉人。",
    "resources": [
-    "一张督察的证件",
-    "一份药品清单",
-    "随时能调走医护人员的权限"
+    "后送名额最终批复权",
+    "军纪免责签字权"
    ],
    "risks": [
-    "督察期间医院出了事故，报告上就要记一笔。"
+    "批错一个名额或核销一笔账，回军区就要受质询。"
    ],
-   "role": "上级派来的卫勤督察",
+   "role": "军区卫勤督察官",
    "social_position": "high",
    "title_patterns": [
     {
@@ -1803,434 +2077,479 @@
    ]
   }
  ],
- "premise": "虚构前线后方的野战医院里，清冷寡言的女军医白天在帐篷里查房、分药、替伤员读家书，一年里只在停火的间隙喝一杯苦咖啡。地下急救站是工兵组长带人加固的，顶上的预制水泥板还没压实，敌机最近常在夜里来侦察。",
+ "premise": "前线后方的地下野战医院里，清冷寡言的外科女军医白天在帐篷里查房、分药、替伤员读家书，难得在停火的间隙煮一杯苦咖啡。地下分诊室和掩蔽部由野战工兵组长带人驻守，护士长、老卫生员与通讯兵轮班照料从前线转下来的伤员。今年初春刚签下短暂的停火换俘协定，前线难得安静了一整天，医院奉命在停火期满前拔营后撤。",
  "pressures": [
   {
-   "choice": "是趁余震的间隙冒险下撬，还是等这一阵震完再动手？",
+   "choice": "是改记消耗共同签字，还是照实上报？",
    "exits": [
     {
-     "cost": "撬到一半余震又来，可能前功尽弃",
-     "option": "趁余震的间隙合力下撬"
+     "cost": "{surgeon_leng.name}今年的立功提名被取消。",
+     "option": "改记为急诊抢救的战时消耗，由{surgeon_leng.name}与督察共同签字"
     },
     {
-     "cost": "余震不会停，只会越来越大",
-     "option": "抱紧了等余震过去"
+     "cost": "{head_nurse.name}被记过，不能随第一批车队后撤。",
+     "option": "照实上报人道救治，请院长出面周旋"
+    },
+    {
+     "cost": "连队自己的卫生箱只剩基础绷带。",
+     "option": "用缴获的医疗物资补齐药房空缺"
     }
    ],
    "far": {
-    "consequence": "水泥板整个压下来，两人被埋在底下。",
-    "due_days": 1,
-    "trigger": "大余震压塌三角区"
+    "consequence": "批号被追查，{head_nurse.name}被记过。",
+    "due_days": 14,
+    "trigger": "账目上报军区后"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [],
-   "id": "p_aftershock_settle",
+   "id": "p_vault_signoff",
    "immediate": {
-    "minutes": 2,
-    "text": "一阵余震，军医整个人撞进工兵组长怀里，碎石砸在工兵外套上咚咚响。"
+    "minutes": 10,
+    "text": "清点单与登记簿对不上。"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{surgeon_leng.name}握着{head_nurse.name}私自开库取药救治山民的领用底单。",
+    "holder": "surgeon_leng",
+    "subject": "head_nurse"
+   },
    "location_ids": [
-    "loc_collapsed_triage_corner",
-    "loc_blast_door_bolt"
+    "loc_medicine_vault"
    ],
    "near": {
-    "deadline_minutes": 4,
-    "text": "水泥板又沉了一截，三角区的空间越来越小，两人只能蜷着身子。"
+    "deadline_minutes": 120,
+    "text": "督察核销之前，账要有说法。"
    },
-   "objective": "在下一次大余震之前撬开铁门逃出去。",
-   "source": "nature",
-   "start_minute": 10,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "地下深层掩体二次坍塌压顶",
-   "trigger": "余震一阵接一阵，头顶的预制水泥板每震一下就往下沉一点，碎石哗哗地往下落。"
-  },
-  {
-   "choice": "是不停地说话保持清醒，还是闭嘴省着空气一鼓作气？",
-   "exits": [
-    {
-     "cost": "没人说话，可能一个人昏过去另一个都不知道",
-     "option": "闭嘴省着空气一鼓作气"
-    },
-    {
-     "cost": "说话更耗空气",
-     "option": "不停地说话保持清醒"
-    }
-   ],
-   "far": {
-    "consequence": "两人在三角区里窒息昏迷，等不到外面的人。",
-    "due_days": 1,
-    "trigger": "空气耗尽"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_air_running_out",
-   "immediate": {
-    "minutes": 2,
-    "text": "军医的呼吸越来越急，嘴唇开始发白。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_blast_door_bolt"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "两人都开始头晕，报数的声音越来越轻。"
-   },
-   "objective": "在空气耗尽之前撬开铁门或通风百叶。",
-   "source": "accident",
-   "start_minute": 10,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "预制水泥板数吨重梁下坠挤压",
-   "trigger": "通风井被瓦砾堵死，残存的空气一口比一口稀，头开始发晕，胸口发闷。"
-  },
-  {
-   "choice": "是先用钢筋撑住横梁，还是直接撬插销？",
-   "exits": [
-    {
-     "cost": "钢筋可能撑不住，还会耽误时间",
-     "option": "先用钢筋撑住横梁"
-    },
-    {
-     "cost": "撬不断就白费力气",
-     "option": "直接撬插销"
-    }
-   ],
-   "far": {
-    "consequence": "铁门永远打不开，两人被困死在里面。",
-    "due_days": 1,
-    "trigger": "门框彻底变形"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_beam_crush",
-   "immediate": {
-    "minutes": 2,
-    "text": "门框咔的一声，插销又往里咬进去一分。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_blast_door_bolt"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "门框已经弯成了一道弧，再压下去插销就彻底撬不动了。"
-   },
-   "objective": "在门框彻底变形之前撬断自锁凸起。",
+   "objective": "替{head_nurse.name}摆平这笔账，又不拿{surgeon_leng.name}的前程去填。",
    "source": "person",
-   "start_minute": 10,
+   "start_minute": null,
+   "tags": [
+    "workplace",
+    "crime"
+   ],
+   "title": "出库底单与少了一箱的账",
+   "trigger": "清点受控药品，账面上少了一箱盘尼西林和镇痛针剂，领用签字单正夹在{surgeon_leng.name}的查房夹板里。"
+  },
+  {
+   "choice": "是匀油补账、改记损耗，还是补办手续？",
+   "exits": [
+    {
+     "cost": "工兵组的工程车只能最后撤离。",
+     "option": "工兵组匀出四桶柴油，换{hospital_director.name}推迟拔营等重伤员稳定"
+    },
+    {
+     "cost": "下半夜掩体只能靠蓄电池微光。",
+     "option": "四桶柴油列为发电机夜间损耗"
+    },
+    {
+     "cost": "{hospital_director.name}在拔营前夕被严厉训诫。",
+     "option": "向督察补办调拨手续"
+    }
+   ],
+   "far": {
+    "consequence": "{hospital_director.name}受到训诫，撤离顺序被打乱。",
+    "due_days": 10,
+    "trigger": "亏空被督察查出后"
+   },
+   "flags": [
+    "timed",
+    "leverage"
+   ],
+   "hook_ids": [],
+   "id": "p_fuel_ledger",
+   "immediate": {
+    "minutes": 10,
+    "text": "油料单摊在分诊桌上。"
+   },
+   "leverage": {
+    "basis": "{sapper_lead.name}握着{hospital_director.name}私动战备柴油的油料交接单。",
+    "holder": "sapper_lead",
+    "subject": "hospital_director"
+   },
+   "location_ids": [
+    "loc_triage_cellar"
+   ],
+   "near": {
+    "deadline_minutes": 90,
+    "text": "发车之前，油桶数目必须对上。"
+   },
+   "objective": "清点前补平油料账，不让{hospital_director.name}出事。",
+   "source": "person",
+   "start_minute": null,
+   "tags": [
+    "workplace",
+    "crime"
+   ],
+   "title": "备用柴油换煤的油料账",
+   "trigger": "{sapper_lead.name}核对卡车燃油，查出油库少了四桶战备柴油，正是{hospital_director.name}私下批给哨所换煤的亏空。"
+  },
+  {
+   "choice": "是封住口、公开处理，还是设法让调令暂缓？",
+   "exits": [
+    {
+     "cost": "你要答应帮老卫生员把那名重伤排长排进最后一辆救护车。",
+     "option": "当场稳住老卫生员，请对方在装车结束前替军医守口如瓶"
+    },
+    {
+     "cost": "工兵组长和护士长得知军医将调走，士气大落。",
+     "option": "把电报底稿送交院长和军医本人公开处理"
+    },
+    {
+     "cost": "军医和你都得继续留在最危险的前沿防区。",
+     "option": "请有门路的人以前线急需主刀为由向后方发电，申请暂缓调令"
+    }
+   ],
+   "far": {
+    "consequence": "伤员和工兵组士气低落，主刀被迫提前表态去留。",
+    "due_days": 7,
+    "trigger": "调令消息传开后"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_unsent_telegram",
+   "immediate": {
+    "minutes": 10,
+    "text": "长廊拐角的脚步声停了一下，又远了。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_trench_vent_gallery"
+   ],
+   "near": {
+    "deadline_minutes": 100,
+    "text": "装车结束之前，这半句话就会传开。"
+   },
+   "objective": "稳住这半句话，别让它先传遍帐篷。",
+   "source": "rumor",
+   "start_minute": null,
    "tags": [
     "workplace"
    ],
-   "title": "石灰粉尘弥漫残氧剧烈消耗",
-   "trigger": "数吨重的横梁压在铁门上，门框被压得一点点变形，插销越咬越死。"
+   "title": "压着没送的调令电报",
+   "trigger": "通讯兵压着后方总院调走主刀军医的电报底稿，在换气长廊与你低声商量时，被路过的老卫生员听见了半句“要调离前线”。"
   },
   {
-   "choice": "是为了体面拉开半寸距离，还是干脆贴紧了一起发力？",
+   "choice": "是公开名单、借车多拉人，还是逐一登记公证？",
    "exits": [
     {
-     "cost": "这一夜之后，军医换药时再也不只是多停半秒了",
-     "option": "放下矜持贴紧对方，四只手一起压在凿柄上"
+     "cost": "为军官预留的座位让给了重伤排长。",
+     "option": "当众张贴按伤情排序的分诊名单，宣布主刀军医乘最后一班车压阵"
     },
     {
-     "cost": "力气使不到一处，撬不断自锁凸起",
-     "option": "各自侧身单手发力"
+     "cost": "吉普车超载，只能走主干道，不能走隐蔽小路。",
+     "option": "借来一辆军用吉普车加挂拖斗，把能走动的轻伤员一并带走"
+    },
+    {
+     "cost": "医院拔营时间比原计划延误半小时。",
+     "option": "在每名伤员胸前别上登车编号并逐一登记公证"
     }
    ],
    "far": {
-    "consequence": "凿刃从插销死角里滑出去，错过最后的脱扣窗口。",
-    "due_days": 1,
-    "trigger": "分心导致凿刃滑脱"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_triangle_chest_press",
-   "immediate": {
-    "minutes": 2,
-    "text": "军医被闷得娇喘细细，军服领口崩开了两颗扣子，汗湿的衬衣贴着起伏的胸口，冰冷的侧脸埋进对方颈窝。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_collapsed_triage_corner",
-    "loc_blast_door_bolt"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "两人的心跳撞在一起，军医的报数第一次乱了，谁都分不清是缺氧，还是别的什么。"
-   },
-   "objective": "贴得这么近的时候，还得把心思放在凿刃的角度和报数上。",
-   "source": "nature",
-   "start_minute": 10,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "废墟三角区逼仄躯体紧密相贴",
-   "trigger": "三角区窄得转不开身，军医只能后背贴在工兵组长胸前，四只手叠在凿柄上一起往下压。"
-  },
-  {
-   "choice": "是继续加力赌一把，还是退出来换个角度重新别？",
-   "exits": [
-    {
-     "cost": "绷带会被磨烂",
-     "option": "用绷带缠住凿柄再压"
-    },
-    {
-     "cost": "换角度要重新找死角，空气可能撑不到",
-     "option": "退出来换个角度"
-    }
-   ],
-   "far": {
-    "consequence": "崩裂的凿刃弹飞，两人失去唯一的撬具。",
-    "due_days": 1,
-    "trigger": "截骨凿崩裂"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_chisel_chip",
-   "immediate": {
-    "minutes": 2,
-    "text": "凿刃发出一声刺耳的尖响，握凿的指节被震得发麻。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_blast_door_bolt"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "刃口的裂纹越来越长，再压一下可能就会崩。"
-   },
-   "objective": "得在凿刃崩裂之前找准最后一个受力点。",
-   "source": "nature",
-   "start_minute": 10,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "淬火截骨重凿承受极限弯矩",
-   "trigger": "截骨凿的硬质刃口别在插销死角里，已经崩掉了一个小口，再硬撬可能整片崩裂。"
-  },
-  {
-   "choice": "是先撬门，还是先爬过去给伤员止血？",
-   "exits": [
-    {
-     "cost": "撬门的时间就更少了",
-     "option": "先爬过去给伤员止血"
-    },
-    {
-     "cost": "伤员可能撑不到门开",
-     "option": "先撬门让外面的人进来"
-    }
-   ],
-   "far": {
-    "consequence": "急救站里的伤员一个个没了声息。",
-    "due_days": 1,
-    "trigger": "伤员等不到救援"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_wounded_outside",
-   "immediate": {
-    "minutes": 2,
-    "text": "瓦砾那头传来伤员微弱的呻吟，军医的手停了一下。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_collapsed_triage_corner",
-    "loc_blast_door_bolt"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "外面的人扒开了一个口子，又被余震震下来的碎石堵上。"
-   },
-   "objective": "撬开铁门，让外面的人能进来把伤员抬出去。",
-   "source": "nature",
-   "start_minute": 10,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "余震不断与体力耗竭窒息濒危",
-   "trigger": "急救站里还躺着几个没来得及转出去的伤员，外面的人在拼命扒瓦砾，可余震一来又震下来一片。"
-  },
-  {
-   "choice": "照实说那一夜给谁打了针，还是替工兵组长瞒下伤情",
-   "exits": [
-    {
-     "cost": "空瓶比那晚用掉的多出两支",
-     "option": "把药箱的空瓶一个个摆出来对账"
-    },
-    {
-     "cost": "老马得说出那晚自己其实没受伤，是躲进急救站的",
-     "option": "请伤员老马作证吗啡给了急救站的伤员"
-    }
-   ],
-   "far": {
-    "consequence": "军医调去后方，工兵组长的伤情写进档案，再也上不了前线",
+    "consequence": "伤员拒绝登车，后撤车队被拖到天亮后才能出发。",
     "due_days": 5,
-    "trigger": "盘库报告送到师部"
+    "trigger": "流言没压住"
    },
    "flags": [
     "timed"
    ],
-   "hook_ids": [
-    "hook_leng_half_coffee",
-    "hook_leng_name_list",
-    "hook_sapper_painkiller"
-   ],
-   "id": "p_missing_morphine",
+   "hook_ids": [],
+   "id": "p_rumor_officers_only",
    "immediate": {
     "minutes": 10,
-    "text": "护士小周把盘库单塞进掩蔽部门缝，脸色发白"
+    "text": "分诊台前围满了人，马灯晃得厉害。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_field_hospital_tent"
+   ],
+   "near": {
+    "deadline_minutes": 90,
+    "text": "发车之前，这份名单必须让所有人都服气。"
+   },
+   "objective": "在流言变成骚乱之前，让每个伤员知道自己排在哪里。",
+   "source": "rumor",
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "最后一班车只带军官的流言",
+   "trigger": "老卫生员发现后送名单有铅笔涂改的痕迹，帐篷里随即传开“最后一辆救护车只拉军官”的流言，几名轻伤员围住了分诊台。"
+  },
+  {
+   "choice": "是严格按医学分诊排床位，还是动用权限多挤一个人？",
+   "exits": [
+    {
+     "cost": "殿后车要等掩体封存后才能最后出发。",
+     "option": "两个担架位全给术后危重伤兵，你与主刀军医改乘工兵组的殿后工程车"
+    },
+    {
+     "cost": "院长和随行文书只能挤进敞篷卡车吹冷风。",
+     "option": "征用院长室的指挥吉普车，改装成临时救护车多拉一人"
+    },
+    {
+     "cost": "失去回后方大医院任职的机会。",
+     "option": "主刀军医自愿放弃调回后方总院的晋升名额，留在前沿照料无法移动的伤员"
+    }
+   ],
+   "far": {
+    "consequence": "没上车的伤员改由殿后工程车押运，路上颠簸延误。",
+    "due_days": 7,
+    "trigger": "床位排定后"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_last_ambulance_seats",
+   "immediate": {
+    "minutes": 10,
+    "text": "三副担架摆在分诊室门口，没人敢先开口。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_triage_cellar"
+   ],
+   "near": {
+    "deadline_minutes": 90,
+    "text": "救护车发动之前，床位必须排定。"
+   },
+   "objective": "两个床位该给谁，调令该谁拿，今晚必须有个说法。",
+   "source": "institution",
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "最后一辆救护车的两个床位",
+   "trigger": "最后一辆带供氧设备的装甲救护车只剩两个担架位和一个随车名额，分诊室里还有三名伤员和两份调令等着裁定。"
+  },
+  {
+   "choice": "是走备用管沟、摇电话叫人，还是先封箱再等供电？",
+   "exits": [
+    {
+     "cost": "铁柜里的部分个人行装来不及带走。",
+     "option": "点亮桌上的马灯，顺西侧备用管沟绕向药品库房出去"
+    },
+    {
+     "cost": "工兵组去后撤公路排雷的进度被耽搁。",
+     "option": "用有线摇把电话通知工兵组长带人从外侧清开冻土"
+    },
+    {
+     "cost": "赶到主帐篷时，第一批后撤卡车已经发车。",
+     "option": "在马灯下先把手术病历与受控处方底单整理封箱，等供电恢复再走"
+    }
+   ],
+   "far": {
+    "consequence": "清点来迟，第一批后撤卡车已经发车。",
+    "due_days": 3,
+    "trigger": "冻土清开之后"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_cold_shell_blocked_door",
+   "immediate": {
+    "minutes": 10,
+    "text": "灯灭了一瞬，不知谁又点亮了马灯。"
    },
    "leverage": null,
    "location_ids": [
     "loc_surgeon_dugout"
    ],
    "near": {
-    "deadline_minutes": 420,
-    "text": "下午两点，后勤处的人来盘库"
+    "deadline_minutes": 90,
+    "text": "备用发电机恢复供电之前，只能靠马灯和彼此的体温。"
    },
-   "objective": "在后勤处来盘库之前，把那箱吗啡的去向说清楚",
-   "source": "rumor",
-   "start_minute": 420,
-   "tags": [],
-   "title": "少了一箱吗啡",
-   "trigger": "从塌了的急救站里被挖出来的第三天，账上少了一箱吗啡，医院里有人小声说是军医在废墟里给工兵组长用掉了"
+   "objective": "借着马灯先把眼前稳住，再找一条出去的路。",
+   "source": "accident",
+   "start_minute": null,
+   "tags": [
+    "disaster"
+   ],
+   "title": "冷炮震落冻土堵住掩蔽部门",
+   "trigger": "停火将尽，远处一发冷炮震落交通壕东侧的冻土，堵死了掩蔽部通往主帐篷的木门，照明线路也跳了闸。"
+  },
+  {
+   "choice": "是就地救治，还是立刻送医？",
+   "exits": [
+    {
+     "cost": "后撤物资的最后清点只能交给旁人代劳。",
+     "option": "扶到行军床上躺平保暖，喂温热的葡萄糖水，叫来军医和护士长清创、退热、注射抗生素"
+    },
+    {
+     "cost": "对方必须提前随第一批伤员车队撤往后方医院。",
+     "option": "裹上军大衣贴身护住体温，喊老卫生员抬担架送进主帐篷医疗区请医生会诊"
+    },
+    {
+     "cost": "两人都得随救护车转入后方病房观察。",
+     "option": "先用温水帕子降温，再发报联系后方总院派救护车半路接应送医"
+    }
+   ],
+   "far": {
+    "consequence": "感染加重，只能转后方病房长期休养。",
+    "due_days": 3,
+    "trigger": "伤口处理不及时"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_fever_and_low_sugar",
+   "immediate": {
+    "minutes": 5,
+    "text": "对方手心滚烫，额上全是冷汗，站都站不稳。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_triage_cellar"
+   ],
+   "near": {
+    "deadline_minutes": 60,
+    "text": "退热之前，不能让对方再回岗位。"
+   },
+   "objective": "先让对方躺下保暖，把医生叫过来。",
+   "source": "accident",
+   "start_minute": null,
+   "tags": [
+    "bodily_harm"
+   ],
+   "title": "连轴转后的高热与低血糖",
+   "trigger": "连续十几个小时在阴冷的地下掩体里值守搬运，你身旁的人旧伤发炎、高热寒战，又犯了低血糖，在分诊桌边眼前一黑。"
   }
  ],
- "region": "地下深层重型混凝土防空掩体深处塌陷急救室与扭曲防爆门夹道",
+ "region": "前线后方的地下野战医院：主帐篷、分诊室、药品库房与军医掩蔽部",
  "rules": [
   {
-   "id": "r_field_hospital_rules",
-   "text": "野战医院的规矩：伤员先于一切，医护人员最后一个进防空洞，最后一个出来。"
+   "id": "r_triage_by_need",
+   "text": "分诊只按伤情轻重排序，不看军衔；后送名单只有主刀军医能签，涂改过的一律作废。"
   },
   {
-   "id": "r_door_release_by_chisel",
-   "text": "重型防爆铁门受下坠水泥梁死死挤压卡死，只可通过特种淬火不锈钢截骨重凿硬刃别入插销缝隙合力下撬脱险。"
+   "id": "r_controlled_drugs",
+   "text": "盘尼西林、吗啡属受控药品，每支出库都要双签，账面对不上就得写损耗报告。"
   },
   {
-   "id": "r_shelling_season",
-   "text": "每逢攻势前后炮击最密，夜里所有人都要睡在离掩体最近的地方。"
+   "id": "r_truce_window",
+   "text": "停火换俘协定的窗口一过，医院必须撤出，地下掩体由工兵组封存。"
   },
   {
-   "id": "r_wounded_first",
-   "text": "急救站里只认伤情，不认军衔：哪怕是将军，排在重伤员后面也得等。"
+   "id": "r_lamp_only",
+   "text": "地下掩体里只许用马灯和蓄电池微光，明火只准在掩蔽部的酒精炉上用。"
   }
  ],
  "schema_version": 1,
  "stage_labels": {
-  "acquainted": "并肩抢救",
-  "committed": "撬开钢门",
-  "familiar": "掩体相护",
-  "flirting": "贴身卸荷",
-  "intimate": "同命借力",
-  "stranger": "清冷警惕",
-  "testing": "共持钢凿"
+  "acquainted": "帐篷点头",
+  "committed": "军哨相许",
+  "familiar": "并肩查房",
+  "flirting": "灯下试探",
+  "intimate": "掩蔽部私情",
+  "stranger": "同院陌路",
+  "testing": "名单对峙"
  },
  "status": "released",
- "style_hint": "前线野战医院的工笔：白天写帐篷里的消毒水味、晾在铁丝上的绷带、家书日排成长队的伤员；夜里写坍塌后的粉尘、越来越稀的空气和一阵阵余震。军医冷得像手术刀，张力藏在每一次换药时多停半秒的指尖里。",
+ "style_hint": "笔调克制冷静，像战地日记：药品、名单、电报是小物件，情感藏在递水、换敷料、分咖啡这类动作里。",
  "tension_engines": [
   {
-   "id": "te_aftershock_settle",
-   "text": "余震一阵接一阵，头顶的水泥板每震一下就往下沉一点。"
+   "id": "te_truce_closing",
+   "text": "停火窗口一过，医院就得拔营后撤，掩体由工兵封存，去留今夜要定。"
   },
   {
-   "id": "te_blast_door_seize",
-   "text": "铁门插销被横梁压得冷焊咬死，凿刃别进去就再难退出。"
+   "id": "te_missing_crate",
+   "text": "药房少了一箱盘尼西林和吗啡，账要有人扛。"
   },
   {
-   "id": "te_triangle_chest_press",
-   "text": "三角区窄得转不开身，两人只能胸背相贴着一起发力。"
+   "id": "te_two_seats",
+   "text": "最后一辆装甲救护车只剩两个担架位，名单上还有人没排上。"
   },
   {
-   "id": "te_air_running_out",
-   "text": "通风井被瓦砾堵死，残存的空气一口比一口稀。"
+   "id": "te_recall_order",
+   "text": "后方调走主刀军医的电报底稿，还压在没送出去的手里。"
   }
  ],
  "title": "战地救护女军医",
  "tone": [
-  "航弹重轰坍塌",
-  "混凝土横梁重压",
-  "截骨重凿撬销",
-  "幽闭地堡残氧"
+  "停火间隙的苦咖啡",
+  "最后一班后撤车",
+  "铅笔涂改的名单",
+  "账本里压着的情分"
  ],
  "twists": [
   {
-   "category": "信息",
-   "id": "tw_chisel_edge_chips",
-   "requires": [
-    "surgeon_leng"
-   ],
-   "text": "地堡二次余震震塌了急救室工具柜，重型撬棍被深埋瓦砾之下，军医随身战救包内的截骨重凿成为破局唯一生机。"
-  },
-  {
-   "category": "人事",
-   "id": "tw_coat_caught_rebar",
-   "requires": [
-    "surgeon_leng"
-   ],
-   "text": "军医军服后摆挂死在裸露的扭曲钢筋头上，同伴迅速反手拔刀割断布条，军医借机扎稳马步撑起两人发力基石。"
-  },
-  {
    "category": "资源",
-   "id": "tw_dust_on_lashes",
+   "id": "tw_jeep_litter",
    "requires": [
-    "sapper_lead"
+    "pressure"
    ],
-   "text": "军医额角冷汗顺着饱满紧致面庞滴落，在幽闭缺氧废墟中激荡起两人肌肤相亲的生死契合。"
+   "text": "有人把自己的吉普车腾出后座、加装担架架，所有危重伤员都能随车撤离，代价是车主只能步行护卫在救护车旁。"
   },
   {
    "category": "制度",
-   "id": "tw_four_hands_on_chisel",
+   "id": "tw_penicillin_writeoff",
    "requires": [
     "surgeon_leng",
-    "sapper_lead"
+    "head_nurse"
    ],
-   "text": "防爆门框因数吨水泥横梁重压产生严重冷焊咬合，单人绝难撼动，军医与工兵组长胸背相贴共同猛压凿柄。"
-  },
-  {
-   "category": "时限",
-   "id": "tw_vent_whistles",
-   "requires": [
-    "surgeon_leng"
-   ],
-   "text": "头顶断裂横梁传出钢筋受拉崩裂的刺耳锐响，灰尘暴雨般落下，两人被迫伏低面庞紧贴在水泥地面死角搏命下顿。"
+   "text": "督察正式签批，将那半箱盘尼西林列为停火期战地防疫消耗，保住了{surgeon_leng.name}与{head_nurse.name}，代价是签批人回军区要受越权批药的质询。"
   },
   {
    "category": "关系",
-   "id": "tw_strike_on_three",
-   "requires": [
-    "surgeon_leng",
-    "sapper_lead"
-   ],
-   "text": "工兵组长用后背顶紧倾斜预制板化作极限反力支点，军医合抱同伴借重力下坠，两人合力终于撬断死锁销轴。"
-  },
-  {
-   "category": "意外",
-   "id": "tw_door_gives",
+   "id": "tw_recall_declined",
    "requires": [
     "surgeon_leng"
    ],
-   "text": "卡阻插销应声崩断，重型防爆铁门在两人合推下轰然撞开生路，两人纵身冲出废墟避开彻底塌陷，成功脱困自救。"
+   "text": "{surgeon_leng.name}当着老院长的面，在调令回执上签下“申请随野战医院留驻前线”，放弃回后方总院的机会，只因放不下你和留守的伤员。"
+  },
+  {
+   "category": "时限",
+   "id": "tw_sapper_delays_demolition",
+   "requires": [
+    "sapper_lead"
+   ],
+   "text": "{sapper_lead.name}顶住上级催促，将掩体封存爆破推迟到最后一辆救护车驶出十公里之后，工兵组天亮后只能冒着冷炮徒步撤离。"
+  },
+  {
+   "category": "信息",
+   "id": "tw_last_dispatch_to_paper",
+   "requires": [
+    "signal_operator"
+   ],
+   "text": "{signal_operator.name}留出最后十分钟电波，让前线野战医院的实情发回后方，换来红十字会追加的一批急救药品，发报权限却被军区收回。"
+  },
+  {
+   "category": "人事",
+   "id": "tw_orderly_leads_convoy",
+   "requires": [
+    "old_orderly"
+   ],
+   "text": "{old_orderly.name}主动押送第一批重伤救护车先行，把掩蔽部最后的整理时间留给你，代价是旧疾在山路上复发，需要留院休养。"
+  },
+  {
+   "category": "时限",
+   "id": "tw_dawn_departure",
+   "requires": [
+    "pressure"
+   ],
+   "text": "最后一辆救护车在营门口发动引擎，你得决定是登上开往后方总院的班车，还是留下陪工兵组守完前沿观察哨。"
+  },
+  {
+   "category": "意外",
+   "id": "tw_hunter_and_hunted",
+   "requires": [
+    "surgeon_leng"
+   ],
+   "text": "{surgeon_leng.name}早把调令压下，又让人把后送名单拖到最后一刻才发，看似被事务困在掩蔽部，其实是{surgeon_leng.name}自己设的局，只为留你听完一句真心话。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_stern_director_covers",
+   "requires": [
+    "hospital_director"
+   ],
+   "text": "人前对你冷着脸催促拔营的{hospital_director.name}，转头悄悄把指挥吉普车的钥匙塞给担架员，让它多拉一个伤员。"
   }
  ]
 }

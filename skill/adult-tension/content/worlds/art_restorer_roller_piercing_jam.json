@@ -1,113 +1,115 @@
 {
  "background_cast": [
   {
-   "adult_context": "文博中庭技术总调度年满二十八周岁，依法担任现场技术负责人。",
+   "adult_context": "持证上岗的成年基金会秘书",
    "age_range": [
-    28,
-    28
+    26,
+    32
+   ],
+   "function": "rumor_source",
+   "gender": "any",
+   "id": "bg_trustee_secretary",
+   "line": "{npc.name}跟在理事长身后半步，文件夹换了一边手拿，眼神不住往展柜那边瞟。",
+   "location_ids": [
+    "loc_bridge_inspection_corridor_entrance"
+   ],
+   "name": null,
+   "role": "理事长秘书"
+  },
+  {
+   "adult_context": "在馆里干了十几年的成年保卫队长",
+   "age_range": [
+    40,
+    50
+   ],
+   "function": "obstacle",
+   "gender": "any",
+   "id": "bg_museum_security_captain",
+   "line": "{npc.name}拦在连廊口：揭幕前中庭只进不出，请各位出示证件。",
+   "location_ids": [
+    "loc_bridge_inspection_corridor_entrance",
+    "loc_cabinet_spare_corridor"
+   ],
+   "name": null,
+   "role": "展馆保卫队长"
+  },
+  {
+   "adult_context": "持证上岗的成年值班工程师",
+   "age_range": [
+    25,
+    30
    ],
    "function": "messenger",
-   "gender": "male",
-   "id": "bg_env_director_xie_lin_chuan",
-   "line": "升降罩伺服减速机已进入阻尼锁定状态，修复师准备就位，起画倒计时十秒！",
+   "gender": "any",
+   "id": "bg_atrium_duty_engineer",
+   "line": "{npc.name}从调光台后探出头：湿度又跳了一格，总调度让大家别靠画案太近。",
    "location_ids": [
     "loc_atrium_transparent_stage_center"
    ],
-   "name": "阿屹",
+   "name": null,
    "role": "中庭值班工程师"
   },
   {
-   "adult_context": "古代文献与书画保护毕业，年满二十四周岁，具备完整民事自立能力。",
+   "adult_context": "成名多年的成年书画评论家",
    "age_range": [
-    24,
-    24
-   ],
-   "function": "helper",
-   "gender": "female",
-   "id": "bg_assistant_shen_zhi_wei",
-   "line": "师姐别慌，修复副手把大幅面宣纸夹板全撑在身前了，石阶视线被修复副手全挡住了，快用牛角刀割断细绳！",
-   "location_ids": [
-    "loc_atrium_transparent_stage_center"
-   ],
-   "name": "小苒",
-   "role": "画案物料协助专员"
-  },
-  {
-   "adult_context": "机械电子学科毕业，年满三十三周岁，持有特种机械维保执照。",
-   "age_range": [
-    33,
-    33
-   ],
-   "function": "helper",
-   "gender": "male",
-   "id": "bg_mechanic_pei_tie_feng",
-   "line": "升降罩减速机外壳已经暗中托稳，修复师用牛角刀割断细绳的力矩极其精准！",
-   "location_ids": [
-    "loc_roller_gear_housing_shadow_alcove"
-   ],
-   "name": "老蔡",
-   "role": "升降罩巡检技师"
-  },
-  {
-   "adult_context": "文物摄影毕业，年满二十三周岁，享有完整法定民事行为权利。",
-   "age_range": [
-    23,
-    23
-   ],
-   "function": "witness",
-   "gender": "female",
-   "id": "bg_press_liaison_zhao_xiao_zhou",
-   "line": "观摩席长焦光轴已经统一引导至宋画题跋特写，全场镜头严禁越界拍摄前襟！",
-   "location_ids": [
-    "loc_macro_lens_camera_media_pit"
-   ],
-   "name": "小鹿",
-   "role": "文博特展媒体联络员"
-  },
-  {
-   "adult_context": "展馆特勤保卫队长年满四十周岁，依法执行中庭安保规程。",
-   "age_range": [
-    40,
-    40
-   ],
-   "function": "obstacle",
-   "gender": "male",
-   "id": "bg_museum_security_captain",
-   "line": "请各方观摩贵宾退回玻璃连廊后方，中庭即将开启起画工序，禁止拥挤推搡！",
-   "location_ids": [
-    "loc_bridge_inspection_corridor_entrance"
-   ],
-   "name": "赵队长",
-   "role": "展馆特勤保卫队长"
-  },
-  {
-   "adult_context": "新任青年理事长年满三十三周岁整，具备完整法定侵权诉讼抗辩能力。",
-   "age_range": [
-    33,
-    33
+    45,
+    60
    ],
    "function": "rumor_source",
-   "gender": "male",
-   "id": "bg_trustee_zhou_yi_xuan",
-   "line": "理事长说，修复师伏在案前半天不起身，要亲自走过去看个明白。",
+   "gender": "any",
+   "id": "bg_hired_art_critic",
+   "line": "{npc.name}端着茶杯跟同伴咬耳朵：卷尾那几笔墨色浮得很，怕是补坏了。",
    "location_ids": [
     "loc_bridge_inspection_corridor_entrance"
    ],
-   "name": "阿诚",
-   "role": "理事长的随行秘书"
+   "name": null,
+   "role": "观摩席评论家"
+  },
+  {
+   "adult_context": "在馆里做了四十年鉴定的老专家",
+   "age_range": [
+    62,
+    70
+   ],
+   "function": "witness",
+   "gender": "any",
+   "id": "bg_senior_museum_expert",
+   "line": "{npc.name}扶着眼镜凑近玻璃看了很久，才说一句：这墨老是老，可不太对。",
+   "location_ids": [
+    "loc_atrium_transparent_stage_center",
+    "loc_macro_lens_camera_media_pit"
+   ],
+   "name": null,
+   "role": "馆方老专家"
+  },
+  {
+   "adult_context": "持证执业的成年医生",
+   "age_range": [
+    30,
+    45
+   ],
+   "function": "helper",
+   "gender": "any",
+   "id": "bg_clinic_duty_doctor",
+   "line": "{npc.name}提着药箱上楼：先别动，量个血糖，糖水慢慢喝。",
+   "location_ids": [
+    "loc_restorer_studio_loft"
+   ],
+   "name": null,
+   "role": "医务室值班医生"
   }
  ],
  "cast_combos": [
   {
-   "chemistry": "冷峻总工在耳麦里的每一声沉稳倒数，皆化作修复师指尖牛角刀破拆的定海神针；修复师前襟紧绷的每一下起伏，皆牵动着总调度心头最深沉的守护涟漪。",
-   "id": "combo_restorer_and_director_trust",
-   "identity_ids": [],
-   "player_positions": [
-    "high",
-    "equal",
-    "low"
+   "chemistry": "{art_restorer_jiang_wan_ning.name}在人前只叫你的职务，从不多看一眼；可上月闭馆夜之后，细金链的副扣一直在你手里。",
+   "id": "combo_restorer_and_chief_mist",
+   "identity_ids": [
+    "pi_atrium_env_chief_director"
    ],
-   "power_structure": "switchable",
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
    "relations": [
     {
      "a": "player",
@@ -118,60 +120,78 @@
      "b": "art_restorer_jiang_wan_ning",
      "b_to_a": {
       "tension": 4,
-      "trust": 3
-     },
-     "reason": "在总控台密切注视修复师起画刀破拆进展并协同控制光晕掩护。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
       "trust": 4
      },
-     "b": "env_director_xie_lin_chuan",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 4
-     },
-     "reason": "同为特展核心技术骨干保持绝对的战术配合与信任。",
-     "stage": "familiar"
-    },
-    {
-     "a": "art_restorer_jiang_wan_ning",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 4
-     },
-     "b": "env_director_xie_lin_chuan",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 4
-     },
-     "reason": "台前幕后生死相托的顶尖搭档，眼神呼应便明进退。",
-     "stage": "stranger"
+     "reason": "上月闭馆夜两人在阁楼画案边温存，修复师自愿把贴身细金链的副扣交给你收管，约定说暗号就停。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "art_restorer_jiang_wan_ning",
-    "env_director_xie_lin_chuan"
+    "art_restorer_jiang_wan_ning"
    ],
    "stakes": {
-    "irreplaceable_goal": "确保千年宋画真迹完好无损且女修复师完美惊艳从容破拆迎检。",
-    "limit_gap": "登台视察严苛读秒与胸前纯金乳环链咬死剧痛的极限拉锯",
-    "meeting_reason": "揭幕前二十秒，总调度在中庭控制台核对展柜湿度，耳机里提醒修复师升降罩马上要落。",
-    "resource_gap": "总指挥对中庭气流环境与减速机动力的绝对调配权与升降罩缝隙两毫米微观物理自救空间的巨大反差"
+    "irreplaceable_goal": "修复师想知道，你按下那道闸，是为了这幅画，还是为了画案前的人。",
+    "limit_gap": "你不能无故雾化中庭，修复师不能在长焦镜头前离开画案。",
+    "meeting_reason": "外圈长焦镜头正对着中庭画案，{art_restorer_jiang_wan_ning.name}借俯身托裱的姿势向你示意卷尾那处伪款，等你按下雾化总闸替自己挡住视线。",
+    "resource_gap": "你握着中庭雾化总闸和展柜终审封条；修复师握着定稿权和卷尾伪款的底片。"
    },
-   "tags": [],
+   "tags": [
+    "intimate"
+   ],
    "tension_engine_ids": [
-    "eng_mounting_roller_gold_chain_snag",
-    "eng_director_twenty_second_approach_rush"
+    "te_lens_glass_atrium",
+    "te_forged_colophon"
    ]
   },
   {
-   "chemistry": "师妹大幅面宣纸夹板的大气阻隔与修复师沉着自救的侧颜交织，空气中充斥着绝处逢生的师门默契。",
-   "id": "combo_restorer_and_assistant_shield",
-   "identity_ids": [],
+   "chemistry": "{art_restorer_jiang_wan_ning.name}和你同门研习多年，早已私定婚约；印鉴放在你那里，喜讯要等定稿之后才说。",
+   "id": "combo_restorer_and_supervisor_uv",
+   "identity_ids": [
+    "pi_restoration_appraisal_supervisor"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "art_restorer_jiang_wan_ning",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "两人同门研习古画修复多年，早已私定婚约；修复师把定稿用的紫檀印鉴放在你处，说好定稿后公开喜讯。",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
+    "art_restorer_jiang_wan_ning"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "图谱亮出去之前，修复师想听你说一句肯不肯一起担。",
+    "limit_gap": "婚约没公开，你们在专家组面前得避嫌；图谱一亮，特展就得闭馆。",
+    "meeting_reason": "理事长拿着“过度修复”质询函正走上观摩连廊，{art_restorer_jiang_wan_ning.name}在多光谱暗房握住你的手，商量要不要当众亮出伪款老墨掺合成胶的化验图谱。",
+    "resource_gap": "你有专家组联签否决权，修复师有化验图谱和定稿私印。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_forged_colophon",
+    "te_funding_signature"
+   ]
+  },
+  {
+   "chemistry": "{art_restorer_jiang_wan_ning.name}嫌你话多，却总在调光的时候站到你那边；两人之间只差一句没挑明的话。",
+   "id": "combo_restorer_and_engineer_alcove",
+   "identity_ids": [
+    "pi_display_case_engineer"
+   ],
    "player_positions": [
     "equal"
    ],
@@ -181,138 +201,42 @@
      "a": "player",
      "a_to_b": {
       "tension": 4,
-      "trust": 3
+      "trust": 2
      },
      "b": "art_restorer_jiang_wan_ning",
      "b_to_a": {
       "tension": 4,
       "trust": 3
      },
-     "reason": "协助掩护修复师自救并严密监控石阶理事长动向。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 4
-     },
-     "b": "assistant_shen_zhi_wei",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 4
-     },
-     "reason": "配合执行副手调整宣纸夹板角度掩盖画案微弱金属割划动静。",
-     "stage": "familiar"
-    },
-    {
-     "a": "art_restorer_jiang_wan_ning",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "assistant_shen_zhi_wei",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "深厚同门姐妹情谊在突发危机考验下的绝对信任与生死依靠。",
-     "stage": "stranger"
+     "reason": "前夜调试展柜冷光时，修复师在暗廊替你擦去额角的汗，指尖勾过你掌心，约你揭幕后去阁楼共饮春茶。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "art_restorer_jiang_wan_ning",
-    "assistant_shen_zhi_wei"
+    "art_restorer_jiang_wan_ning"
    ],
    "stakes": {
-    "irreplaceable_goal": "在不惊动观摩席数百名文博专家的前提下悄无声息消弭这场社死风暴。",
-    "limit_gap": "理事长登台的无情逼近与受困师姐绝境中的超常冷静应变",
-    "meeting_reason": "修复副手抱着宣纸夹板冲到台前，看见修复师的前襟被罩缝咬住，撑开夹板挡住连廊。",
-    "resource_gap": "宣纸夹板的正面拦截调动与水牛角起画刀的微观力学破拆自救"
+    "irreplaceable_goal": "修复师要看看，挡在身前的这个人肯不肯一直不回头。",
+    "limit_gap": "暗廊随时有人经过，私事一露，名声就毁了。",
+    "meeting_reason": "{art_restorer_jiang_wan_ning.name}退进恒湿展柜后方的备品暗廊，整理松脱的工装内衬金链，唤你用身体挡住侧面连廊探来的视线。",
+    "resource_gap": "你管着展柜内腔和暗廊钥匙，修复师管着画案和阁楼门禁。"
    },
-   "tags": [],
+   "tags": [
+    "intimate"
+   ],
    "tension_engine_ids": [
-    "eng_silk_robe_strain_tear_panic",
-    "eng_mounting_roller_gold_chain_snag"
+    "te_lens_glass_atrium",
+    "te_hidden_records"
    ]
   },
   {
-   "chemistry": "升降罩技师在侧壁死角以手掌稳稳托住升降罩外壳，修复师手腕运力起画刀精准下压挑割细绳，两人形成严丝合缝的力学平衡默契。",
-   "id": "combo_mechanic_and_restorer_support",
-   "identity_ids": [],
+   "chemistry": "{art_restorer_jiang_wan_ning.name}是你够不着的首席，可一周前在暗房里，先伸手的是首席自己。",
+   "id": "combo_restorer_and_liaison_lens",
+   "identity_ids": [
+    "pi_museum_press_media_liaison"
+   ],
    "player_positions": [
-    "high",
-    "equal",
     "low"
-   ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 3
-     },
-     "b": "art_restorer_jiang_wan_ning",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 3
-     },
-     "reason": "在机械主管托住轴壳下协同修复师完成微观力矩解脱。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 4
-     },
-     "b": "mechanic_pei_tie_feng",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 4
-     },
-     "reason": "同为保障特展机械平稳运行的技术骨干保持高度专业默契。",
-     "stage": "familiar"
-    },
-    {
-     "a": "art_restorer_jiang_wan_ning",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "mechanic_pei_tie_feng",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "对工程师关键时刻在暗处稳住轴壳底板心怀深深谢意。",
-     "stage": "stranger"
-    }
-   ],
-   "slots": [
-    "art_restorer_jiang_wan_ning",
-    "mechanic_pei_tie_feng"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "在升降罩齿轮箱发生机械变形前彻底切断束缚。",
-    "limit_gap": "升降罩齿轮箱六公斤抗拉极限与牛角刀三点五牛顿微切力的精密抗衡",
-    "meeting_reason": "升降罩技师在展柜侧面巡检，听出导轨电机的声音不对，暗中托住罩沿。",
-    "resource_gap": "机械主管对重型升降罩受力的绝对把控与女修复师前胸死锁的微观盲拆"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "eng_mounting_roller_gold_chain_snag",
-    "eng_silk_robe_strain_tear_panic"
-   ]
-  },
-  {
-   "chemistry": "理事长每迈出一步发出的皮鞋踏毡声，都如同踏在修复师命悬一线的神经末梢上，逼迫修复师加快起画刀刃端向前挑割的频率。",
-   "id": "combo_restorer_and_trustee_intrusion",
-   "identity_ids": [],
-   "player_positions": [
-    "low",
-    "equal"
    ],
    "power_structure": "npc_high",
    "relations": [
@@ -324,129 +248,36 @@
      },
      "b": "art_restorer_jiang_wan_ning",
      "b_to_a": {
-      "tension": 4,
+      "tension": 5,
       "trust": 3
      },
-     "reason": "严密警戒理事长动线并配合媒体实施机位角度拦截。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 2
-     },
-     "b": "trustee_zhou_yi_xuan",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 2
-     },
-     "reason": "依规提醒领导注意文物安全红线防止外人违规擅闯托裱核心区。",
-     "stage": "familiar"
-    },
-    {
-     "a": "art_restorer_jiang_wan_ning",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 1
-     },
-     "b": "trustee_zhou_yi_xuan",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 1
-     },
-     "reason": "高度戒备厌恶，誓死捍卫职业尊严与文保形象不受冒犯。",
-     "stage": "stranger"
+     "reason": "一周前整理夜间修复影像时两人在暗房里相拥亲吻，修复师把原始补笔底片的加密口令只告诉了你一个人。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "art_restorer_jiang_wan_ning",
-    "trustee_zhou_yi_xuan"
+    "art_restorer_jiang_wan_ning"
    ],
    "stakes": {
-    "irreplaceable_goal": "在理事长完全踏上画案前彻底切断穿孔金链与升降罩齿轮的咬合连接。",
-    "limit_gap": "大步逼近的脚步声与月白工装前襟濒临撕裂的极端社死风险",
-    "meeting_reason": "文保基金会理事长走下观摩连廊，说要在揭幕前近看国宝宋画。",
-    "resource_gap": "基金会理事长肆无忌惮的巡查特权与女修复师动弹不得的被动拘束绝境"
+    "irreplaceable_goal": "修复师想知道，你肯不肯为这一包底片担一回风险。",
+    "limit_gap": "你只是记录员，在专家面前说不上话；修复师不能被人看见单独把东西交给你。",
+    "meeting_reason": "理事长命人收缴昨晚的修复记录卡，{art_restorer_jiang_wan_ning.name}把真迹对比底片塞进你的相机包夹层，要你趁清场带出中庭。",
+    "resource_gap": "修复师握着定稿权和底片口令；你只有一台相机和一块清场牌。"
    },
-   "tags": [],
+   "tags": [
+    "intimate"
+   ],
    "tension_engine_ids": [
-    "eng_macro_lens_scrutiny_dread",
-    "eng_silk_robe_strain_tear_panic"
+    "te_forged_colophon",
+    "te_lens_glass_atrium"
    ]
   },
   {
-   "chemistry": "工装挺拔的技术总工与傲慢资方二世祖在狭窄石阶前形成的如冰对峙，以流程铁壁硬生生截断了窥探脚步。",
-   "id": "combo_trustee_vs_director_clash",
-   "identity_ids": [],
-   "player_positions": [
-    "high"
+   "chemistry": "{assistant_shen_zhi_wei.name}在人前替首席打掩护，在你面前却藏不住委屈。",
+   "id": "combo_assistant_and_engineer_paper",
+   "identity_ids": [
+    "pi_display_case_engineer"
    ],
-   "power_structure": "player_high",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 1
-     },
-     "b": "trustee_zhou_yi_xuan",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 1
-     },
-     "reason": "配合总工果断对擅入者出示微气候警示并呼叫特勤安保阻隔。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 4
-     },
-     "b": "env_director_xie_lin_chuan",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 4
-     },
-     "reason": "坚决执行总工防线指令构筑坚不可摧的团队屏障。",
-     "stage": "familiar"
-    },
-    {
-     "a": "trustee_zhou_yi_xuan",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 1
-     },
-     "b": "env_director_xie_lin_chuan",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 1
-     },
-     "reason": "傲慢理事长遭遇冷面技术狂人铁腕后的羞怒与忌惮。",
-     "stage": "stranger"
-    }
-   ],
-   "slots": [
-    "trustee_zhou_yi_xuan",
-    "env_director_xie_lin_chuan"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "将理事长死死挡在台阶前为修复师筑牢最后两米绝对体面防线。",
-    "limit_gap": "维护国宝大展托裱演示神圣流程与抵御无关人员违规侵扰的严正交锋",
-    "meeting_reason": "总调度把中庭灯光切到宋画题跋的特写，把全场目光引走，替修复师争出十几秒。",
-    "resource_gap": "现场技术总控绝对安全控制权与出资代理人资本特权的正面碰撞"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "eng_macro_lens_scrutiny_dread",
-    "eng_director_twenty_second_approach_rush"
-   ]
-  },
-  {
-   "chemistry": "在悬空中庭画案方寸极限空间内，修复师与技术团队呼吸相闻，以超越常理的沉稳机智共同谱写绝处逢生的破拆传奇。",
-   "id": "combo_restorer_and_player_rescue",
-   "identity_ids": [],
    "player_positions": [
     "equal"
    ],
@@ -456,47 +287,331 @@
      "a": "player",
      "a_to_b": {
       "tension": 4,
-      "trust": 4
+      "trust": 3
      },
-     "b": "art_restorer_jiang_wan_ning",
+     "b": "assistant_shen_zhi_wei",
      "b_to_a": {
       "tension": 4,
       "trust": 4
      },
-     "reason": "在极度危机中以无声默契结下的患难真诚之约。",
-     "stage": "testing"
+     "reason": "半月前在阁楼晾晒古宣纸时，副手主动从背后抱住你、吻了你的侧颈，事后把画案备品柜的副匙留给了你。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "art_restorer_jiang_wan_ning"
+    "assistant_shen_zhi_wei"
    ],
    "stakes": {
-    "irreplaceable_goal": "在理事长完全登上画案的刹那助修复师重获自由从容起画成就绝世高光。",
-    "limit_gap": "数百名文博专家注视下的绝对隐秘自救要求不得产生半丝突兀动静",
-    "meeting_reason": "特展闭馆后的深夜，总调度和修复师并肩站在空荡的中庭里，看月光落在那幅宋画上。",
-    "resource_gap": "修复师受制于升降罩死锁而现场团队拥有全套声光与宣纸物料遮掩资源"
+    "irreplaceable_goal": "副手想知道，听完这件事，你还肯不肯站在自己这边。",
+    "limit_gap": "副手不能让首席知道试色卡的事，你不能无故开柜。",
+    "meeting_reason": "{assistant_shen_zhi_wei.name}在备品暗廊红着眼眶拉住你，坦白试色卡被理事长骗走的经过，求你帮忙把留在展柜底层的原卡换回来。",
+    "resource_gap": "你进得了展柜底层，副手只有备品柜和颜料台账。"
    },
    "tags": [
     "intimate"
    ],
    "tension_engine_ids": [
-    "eng_mounting_roller_gold_chain_snag",
-    "eng_silk_robe_strain_tear_panic"
+    "te_hidden_records",
+    "te_forged_colophon"
+   ]
+  },
+  {
+   "chemistry": "{env_director_xie_lin_chuan.name}和你是夜班后分一壶浓茶的交情；今晚那壶茶还没泡，屏幕上的空白先摆在了两人中间。",
+   "id": "combo_xie_and_engineer_log",
+   "identity_ids": [
+    "pi_display_case_engineer"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 3
+     },
+     "b": "env_director_xie_lin_chuan",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 4
+     },
+     "reason": "布展首周通宵联调恒湿系统时，总调度把备用工程权限卡借给你应急，此后两人常在夜班后分喝一壶浓茶。",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
+    "env_director_xie_lin_chuan"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "总调度要的是一个肯陪着认错的人，不是一个替自己瞒的人。",
+    "limit_gap": "恢复录像要两人的权限一起开，谁先动手谁先担责。",
+    "meeting_reason": "{env_director_xie_lin_chuan.name}在多光谱暗房把昨晚中庭监控被关的那段后台记录调给你看，问你敢不敢一起恢复原始录像。",
+    "resource_gap": "总调度有监控和总控密钥，你有展柜内腔的操作权限。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_hidden_records",
+    "te_funding_signature"
+   ]
+  },
+  {
+   "chemistry": "{press_liaison_zhao_xiao_zhou.name}是带你入行的前辈记者，教你调焦时总靠得太近；分不清是教学还是别的。",
+   "id": "combo_zhao_and_liaison_pit",
+   "identity_ids": [
+    "pi_museum_press_media_liaison"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 2
+     },
+     "b": "press_liaison_zhao_xiao_zhou",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "前天预展彩排时记者手把手教你调微距长焦，呼吸拂过你耳廓，笑说特展结束后单独给你拍一组胶片。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "press_liaison_zhao_xiao_zhou"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "记者想知道，这张照片交到你手里，你会替谁收着。",
+    "limit_gap": "你得听记者调度，记者不能让编辑部知道照片压着没发。",
+    "meeting_reason": "{press_liaison_zhao_xiao_zhou.name}在外圈媒体长焦机位席拉了拉你的衣袖，把刚拍到的基金会秘书私联照片悄悄亮在取景屏上给你看。",
+    "resource_gap": "记者握着机位准入、通稿首发和直播信号；你只握着底片存储卡。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_lens_glass_atrium",
+    "te_hidden_records"
+   ]
+  },
+  {
+   "chemistry": "{trustee_zhou_yi_xuan.name}待你客气周到，名片递了三回；你看得出那份客气后面是什么，{trustee_zhou_yi_xuan.name}也知道你看得出。",
+   "id": "combo_trustee_and_chief_funding",
+   "identity_ids": [
+    "pi_atrium_env_chief_director"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 0
+     },
+     "b": "trustee_zhou_yi_xuan",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 1
+     },
+     "reason": "上周招待晚宴后理事长邀你同乘专车，递来一张基金会特聘理事的名片，试探你终审封柜时能不能行个方便。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "trustee_zhou_yi_xuan"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "理事长想弄清，你这道封条到底能不能谈。",
+    "limit_gap": "理事长不能明着要你违规，你不能凭猜测拒绝封柜。",
+    "meeting_reason": "{trustee_zhou_yi_xuan.name}站在观摩连廊石阶上，要你在揭幕前直接下令封死宋画展柜，不再做二次多光谱复检。",
+    "resource_gap": "理事长握着终审验收和千万资助；你握着展柜终审封条。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_funding_signature",
+    "te_forged_colophon"
+   ]
+  },
+  {
+   "chemistry": "{mechanic_pei_tie_feng.name}信不过你，{env_director_xie_lin_chuan.name}却在求你；一份刷卡日志，把三个人拴在了暗廊里。",
+   "id": "combo_pei_xie_camera_blindspot",
+   "identity_ids": [
+    "pi_atrium_env_chief_director",
+    "pi_display_case_engineer"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 1
+     },
+     "b": "mechanic_pei_tie_feng",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 1
+     },
+     "reason": "三天前巡检展柜底座时技师提醒你留意夜间异常刷卡，话里话外试探你是不是理事长一派的人。",
+     "stage": "testing"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 2
+     },
+     "b": "env_director_xie_lin_chuan",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "昨晚调光测试时总调度在雾化玻璃后握住你的手一起校光谱，低声求你在终审时护住技术组。",
+     "stage": "flirting"
+    },
+    {
+     "a": "mechanic_pei_tie_feng",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 0
+     },
+     "b": "env_director_xie_lin_chuan",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 1
+     },
+     "reason": "技师握着总调度关监控的工号记录，总调度知道技师一心要揪出开柜的人。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "mechanic_pei_tie_feng",
+    "env_director_xie_lin_chuan"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "日志交给谁、密钥收不收，你一句话就定了两个人的去留。",
+    "limit_gap": "你偏向谁，另一个就得独自担下监控空白的责任。",
+    "meeting_reason": "{mechanic_pei_tie_feng.name}在暗廊亮出秘书私开展柜的刷卡日志和总调度关监控的工号，{env_director_xie_lin_chuan.name}当场把总控密钥交给你，求戴罪立功。",
+    "resource_gap": "技师握着刷卡日志，总调度握着中庭总控密钥，你握着处置这两样东西的权力。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_hidden_records",
+    "te_lens_glass_atrium"
+   ]
+  },
+  {
+   "chemistry": "{assistant_shen_zhi_wei.name}是和你在阁楼温存过的人，{press_liaison_zhao_xiao_zhou.name}是约你庆功宴后独处的人；一张照片，让两人在暗房里对上了。",
+   "id": "combo_zhao_shen_color_card",
+   "identity_ids": [
+    "pi_museum_press_media_liaison"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "assistant_shen_zhi_wei",
+     "b_to_a": {
+      "tension": 5,
+      "trust": 4
+     },
+     "reason": "上周末在阁楼整理字画到很晚，副手主动解下发簪与你在软榻上温存，约好替彼此守住特展底档。",
+     "stage": "intimate"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 2
+     },
+     "b": "press_liaison_zhao_xiao_zhou",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 2
+     },
+     "reason": "昨日在暗房选片时记者故意贴在你肩头看底片，指尖划过你手腕，约你今晚庆功宴后独处。",
+     "stage": "flirting"
+    },
+    {
+     "a": "press_liaison_zhao_xiao_zhou",
+     "a_to_b": {
+      "tension": 4,
+      "trust": -1
+     },
+     "b": "assistant_shen_zhi_wei",
+     "b_to_a": {
+      "tension": 5,
+      "trust": -2
+     },
+     "reason": "记者握着副手私交试色卡的照片，副手手里有记者想要的指认口供。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "press_liaison_zhao_xiao_zhou",
+    "assistant_shen_zhi_wei"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "照片压不压，定的是副手的前程，也是记者往后还肯不肯信你。",
+    "limit_gap": "帮副手压照片就得罪记者，帮记者发头条就毁了副手。",
+    "meeting_reason": "{press_liaison_zhao_xiao_zhou.name}在暗房亮出副手私交试色卡的抓拍，{assistant_shen_zhi_wei.name}慌忙拉住你的手，愿意指认理事长调换题跋，换记者压下照片。",
+    "resource_gap": "记者握着照片，副手握着能指认理事长的口供，你两边都欠着情。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_hidden_records",
+    "te_forged_colophon"
    ]
   }
  ],
  "channels": [
   {
-   "fidelity": "distorted",
-   "id": "ch_museum_atrium_surround_pa_system",
-   "reach": "覆盖数百名观摩专家与外圈长焦媒体工作席，清晰还原修复现场琴音与翻纸细响",
-   "text": "悬空玻璃中庭全景低噪高保真解说广播系统"
+   "fidelity": "exact",
+   "id": "ch_talkback_earpiece",
+   "reach": "只到总控台和画案两端，旁人听不见",
+   "text": "总控台与修复画案之间的加密耳麦"
   },
   {
    "fidelity": "exact",
-   "id": "ch_restorer_encrypted_talkback_line",
-   "reach": "总指挥总调度操作台与主修师修复师耳麦之间的毫秒级私密指令信道",
-   "text": "文博技术总指挥与首席修复师专属加密降噪专网"
+   "id": "ch_loft_intercom",
+   "reach": "只连修复中心两间屋子，话原样传到",
+   "text": "阁楼与暗房之间的内线电话"
+  },
+  {
+   "fidelity": "distorted",
+   "id": "ch_critic_whispers",
+   "reach": "一晚上传遍连廊和媒体席，越传越离谱",
+   "text": "观摩席与文博圈的私下议论"
   }
  ],
  "character_templates": [
@@ -507,86 +622,74 @@
     30
    ],
    "appearance_options": [
-    "墨黑长发以纯黑真丝发带束在脑后，面容冷艳绝尘清绝似九秋霜雪，两颊带有天然紧致微婴儿肥与饱满水润胶原蛋白的反差娇颜，身穿一袭极简剪裁月白真丝暗纹防静电高定修复工装长袍配纯白长裤。",
-    "素白工装长袍前襟内衬一件防走光真丝小背心，锁骨内侧隐秘佩戴一条法国冷锻纯金穿孔饰链；此时细链连同衣料深深卡入升降罩缝隙导致领口被反向拽死大面积撕裂，整个人伏在画案前却依然维持单手托纸挺拔从容仙姿。"
+    "墨黑长发用纯黑真丝发带束在脑后，面容冷艳，清绝似九秋霜雪，只有低头补笔时眉梢会松下来；月白防静电工装永远扣到最上一粒。",
+    "俯身托裱时单手抚纸，侧颜一动不动；只有放下笔抬头的那一下，眼里才透出一点温度。"
    ],
    "decision": {
     "avoids": [
-     "盲目硬扯导致国宝宣纸撕破",
-     "在悬空中庭发出失态惊呼",
-     "被基金会以此借口当众问责"
+     "被人当成需要护着的花瓶"
     ],
-    "contrast": "平时看似少言寡语不染凡尘的书画仙子，面对灭顶走光危机时指尖却展现出极其惊人的机械冷酷与微观割断魄力。",
-    "core_value": "誓死捍卫古画修复师的清白与工匠风骨，绝不向任何人求救，纯靠过人定力与微观机械智慧自救脱困。",
+    "contrast": "人前清冷孤傲，扣子扣到最上一粒；人后先伸手的是自己，先说暗号停下的也是自己",
+    "core_value": "画比人长命，修画的人不替造假的人签字",
     "goal_options": [
-     "在理事长走到案前用起画刀极硬薄刃割断升降罩绞绳脱钩并抚平工装长袍",
-     "侧身前倾维持单手托纸出尘姿态绝不让台下长焦镜头察觉胸前死锁"
+     "在揭幕前拿到伪款出自理事长之手的铁证",
+     "护住副手和技术组，不让任何人替自己背锅"
     ],
     "never": [
-     "因慌乱放弃文物修复工匠风骨",
-     "让纯洁圣洁的名誉蒙受恶俗非议"
+     "拿副手的前程换自己的清白"
     ],
     "prefers": [
-     "绝对精密的微观物理自救",
-     "台前万众倾倒的从容仪态",
-     "克制深沉的无声守护"
+     "说话算数、懂分寸的人"
     ],
     "pressure_responses": {
-     "breaking": "在气阀泄压瞬间反向推脱横臂抱箍并接应宋婉儿递来的磁吸扣迅速扣好前襟",
-     "high": "在导播推流读秒长鸣刹那同搭档一同垂直下压背夹克服八百牛顶力",
-     "low": "双手死死按在讲台木质边缘以极低气声下达排障破拆指令掩饰内心惊涛骇浪",
-     "mid": "忍受胸衣金属骨架勒紧压迫紧贴讲台内侧配合搭档调整翻页笔背夹插入角度"
+     "breaking": "签下拒签意见，只求别牵连旁人",
+     "high": "当着理事长的面摊开化验图谱，声音仍是平的",
+     "low": "垂眼补笔，只回一句“在修”",
+     "mid": "放下笔，把比对底片收进工装内袋"
     },
-    "relationship_stance": "对画比对人温柔，只有总调度来修复台送一杯温茶的时候，才会放下笔抬一次头。",
-    "withdrawal": "左手优雅平按在画案宣纸无墨区稳住身形，美眸清澈平视前方，右手借取刀抚画之姿极自然地抽出牛角起画刀。"
+    "relationship_stance": "对画比对人温柔；对认定的人，私印和底片都肯交出去保管",
+    "withdrawal": "退回阁楼收起木梯，把那处墨色在废绢上临了一遍又一遍"
    },
    "gender": "female",
    "gender_reason": "国家级宋画特展的首席古画修复师，冷艳寡言。",
    "id": "art_restorer_jiang_wan_ning",
    "identity": {
-    "authority": "国宝宋画平整托裱主控权与中庭修复演示节奏支配权。",
-    "exposure": "私下佩戴的锁骨穿孔金链一旦在文博大展公众视线下撕裂曝光，神圣工匠神格与文博信誉将当场碎裂沦为恶俗话题。",
-    "hidden": "随身佩戴的牛角起画刀采用特制两毫米加厚淬火水牛角冷磨工艺，头部带有零点八毫米硬质平头薄刃，专为微观割断阻尼绞绳设计成自救利器。",
+    "authority": "掌握国宝宋画展前托裱定稿权、修复档案最终签字权与阁楼工作室门禁",
+    "exposure": "理事长要把卷尾墨色的破绽栽成“过度修复”，逼自己在终审单上签字",
+    "hidden": "工装内衬底下贴身戴着一副纯金细链穿环，只为一个人戴；刚在紫外线灯下查出，卷尾伪款用的是理事长私藏的乾隆年间老墨，墨里掺了做旧的现代合成胶",
     "limits": [
-     "真丝工装前襟与细链被升降罩死死绞住无法直身后仰",
-     "严禁在两百名文博专家与全国直播镜头前发出慌乱呼救"
+     "揭幕前离不开中庭画案太久，长焦镜头一直对着那里"
     ],
     "obligations": [
-     "维系国宝级古书画修复师的圣洁无瑕专业形象",
-     "二十秒内化解死锁完成平整起画"
+     "揭幕礼开始前把修复档案封柜定稿"
     ],
     "resources": [
-     "特制古法加厚淬火水牛角起画刀",
-     "顶级书画装裱毫厘级沉稳指力与身形定力"
+     "一方定稿用的紫檀私印",
+     "卷尾伪款的紫外线比对底片"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在危难之际以宽阔肩背恰到好处挡住石阶视线的沉稳男子气概",
-     "彼此心照不宣的眼神默契"
+     "在长焦镜头前不动声色替自己挡住视线的人",
+     "看得懂一笔墨色深浅的人"
     ],
     "boundaries": [
-     "严禁外人触碰月白工装前襟与私密锁骨穿孔饰链"
+     "暗号一出口就停，谁也不越线"
     ],
     "desire_range": [
      2,
      4
     ],
-    "desired_position": "成为全国文博界无可撼动的无瑕第一青年国宝守护者。",
+    "desired_position": "只在一个人面前解开最上那粒扣子",
     "dislikes": [
-     "借职务之便居心叵测挑刺的傲慢纨绔",
-     "恶俗无下限的猎奇窥探",
-     "轻浮自大之辈"
+     "猎奇窥探的镜头"
     ],
-    "expression": "秀美唇角勾起一抹若有若无的出尘微笑，眼神温润平视古画，右手食指与拇指娴熟反握起画刀向下探入罩缝精准挑割绞绳。",
+    "expression": "放下笔，用小指勾一勾你的袖口，又若无其事地回去抚平绢面",
     "likes": [
-     "沉稳可靠的幕后默默相助",
-     "懂分寸知轻重的绅士举动",
-     "纯粹神圣的艺术共鸣"
+     "阁楼里一杯温好的春茶"
     ],
     "preconditions": [
-     "升降罩死锁顺利化解且国宝托裱惊艳收官",
-     "两人都清醒，心意出于自己，不是绝境里的依赖"
+     "门关上，两人都清醒，想要的是对方这个人，不是一时的依靠"
     ],
     "self_control_range": [
      3,
@@ -596,650 +699,609 @@
    "public_role": "国家特展首席古画修复师",
    "schedule": [
     {
-     "from": 120,
-     "location_id": "loc_atrium_transparent_stage_center",
-     "to": 130
+     "from": 0,
+     "location_id": "loc_restorer_studio_loft",
+     "to": 480
     },
     {
-     "from": 130,
+     "from": 481,
      "location_id": "loc_atrium_transparent_stage_center",
-     "to": 135
+     "to": 1080
     },
     {
-     "from": 135,
-     "location_id": "loc_atrium_transparent_stage_center",
-     "to": 140
+     "from": 1081,
+     "location_id": "loc_multispectral_darkroom_vault",
+     "to": 1260
+    },
+    {
+     "from": 1261,
+     "location_id": "loc_restorer_studio_loft",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "锁骨娇嫩肌肤被细链勒出淡淡红印且单手盲操指尖微麻。",
-      "option": "反握牛角起画刀锋刃探入罩缝以轴壳为支点施加三点五牛顿力矩割断绞绳自救脱钩。"
+      "cost": "特展当场停摆，三年心血可能撤展",
+      "option": "当众亮出伪款老墨掺合成胶的化验图谱"
      },
      {
-      "cost": "临时微调光照可能引来老专家关于显色指数变动的当场质询。",
-      "option": "向技术总工投去眼神示意借启动柔光舱弱化玻璃透光度争取缓冲时间。"
+      "cost": "今晚得独自在中庭顶住理事长的施压",
+      "option": "先拖着不签，托信得过的人去找刷卡日志"
      }
     ],
-    "pressure": "基金会理事长手持批件迈下连廊石阶仅剩二十秒，真丝前襟受拉紧绷欲裂，外圈数十家长焦大炮聚焦。",
-    "trigger": "俯身用排笔按平画芯时工装前襟与锁骨穿孔金链滑入十米电动升降罩减速机咬合齿隙死锁。"
+    "pressure": "一签就是认下毁画的罪名，拒签则基金会当场撤资",
+    "trigger": "理事长要求在“卷尾墨迹系现代保护性加固”的条款上签字"
    },
    "tags": [
-    "intimate"
+    "intimate",
+    "workplace"
    ],
    "voices": {
-    "inner": "穿孔金链被升降罩导轨咬死了，理事长走下连廊了，牛角刀刃只要抵住尼龙绞绳向前发力一划就能割断脱钩！",
-    "surface": "诸位先生请看画芯纤维，经由升降罩缓缓罩住，宋代生绢经纬密度与墨色层次已完全稳定。"
+    "inner": "伪款的墨我认得出来。可我一开口，整个特展就得闭馆，你还会站在我这边吗？",
+    "surface": "卷尾这一段别靠太近，呼吸会带起绢丝。"
    }
   },
   {
-   "adult_context": "建筑环境与设备工程专业毕业，管了九年博物馆的恒温恒湿系统，这场特展修复中庭的技术总调度，具备完全民事行为能力。",
+   "adult_context": "持证上岗的成年技术总调度，主持过三届大展布展",
    "age_range": [
     31,
     35
    ],
    "appearance_options": [
-    "身穿极简深灰高定新中式立领工装衬衫，佩戴专业技术抗干扰耳麦，身材高大挺拔，下颌如雕塑般棱角分明，眼神沉静冷峻如深潭。",
-    "手持环境监控总控平板，立于中庭主控台前，双眸深邃锐利注视着画案周围每一个微小数据波动，散发着掌控全盘的强悍威严。"
+    "深灰立领工装外套，胸前别着中庭门禁卡，袖口卷到小臂，腕上一块旧机械表",
+    "盯着温湿度曲线时一动不动，眼底熬出一片青"
    ],
    "decision": {
     "avoids": [
-     "任何失控粗暴的展览事故",
-     "轻浮二世祖对女性技师的恶意刁难",
-     "推诿扯皮"
+     "被人当成理事长的人"
     ],
-    "contrast": "平时看似不苟言笑的技术狂人，在修复师遭遇危机时展现出的掩护策略却极尽深沉果决。",
-    "core_value": "以极致硬核的技术掌控捍卫国宝尊严，誓死守护心中的古典女修复师不受半点侵害。",
+    "contrast": "人前把中庭控制在毫厘之间，人后最怕的就是自己那一次失手",
+    "core_value": "数字不会骗人，人会",
     "goal_options": [
-     "以汇报宋画托裱微气压参数为由手持平板横跨在石阶前阻断理事长登台脚步",
-     "巧妙微调中庭顶棚柔光滤镜射角将修复师胸前受拉区域置于温润光晕暗角"
+     "在揭幕前恢复原始录像，把那十分钟说清楚",
+     "护住技术组，不让组员替自己担责"
     ],
     "never": [
-     "坐视心爱之人陷于险境受辱",
-     "对违规擅闯操作台的行径妥协退让"
+     "删改原始记录"
     ],
     "prefers": [
-     "分毫不差的工程精度",
-     "临危不乱的机械解构",
-     "克制深沉的深情守护"
+     "把话摊开说"
     ],
     "pressure_responses": {
-     "breaking": "在顾冷霜清冷发声瞬间停住脚步退回侧幕维持同僚体面",
-     "high": "迈步登上红地毯台阶准备直接切入讲台中央核心演讲区",
-     "low": "在对讲机中平稳催促台前人员汇报讲台升降测试状态",
-     "mid": "迈步逼近侧翼台阶手持备用麦克风大声询问会长是否身体不适"
+     "breaking": "当众认下关监控的事，只求查到真正开柜的人",
+     "high": "主动交出总控密钥，请人监督自己",
+     "low": "盯着曲线只报数字，绝口不提昨晚",
+     "mid": "把人叫进暗房，调出后台记录给信得过的人看"
     },
-    "relationship_stance": "把中庭的温湿度调到修复师最顺手的数字，一调就是三年，从没说为什么。",
-    "withdrawal": "单手插兜从容立于台阶侧翼，用极度冷峻威严的目光扫视外围长焦机群压制躁动。"
+    "relationship_stance": "对谁都客气周到，只对肯看自己出错的人说真话",
+    "withdrawal": "守在调光台前一夜不走，一遍遍回放同一段空白"
    },
    "gender": "any",
    "gender_reason": null,
    "id": "env_director_xie_lin_chuan",
    "identity": {
-    "authority": "中庭升降罩动力源紧急叫停权与悬空柔光滤镜调校权。",
-    "exposure": "若因环境失控导致文物损伤将面临文博纪检终身追责。",
-    "hidden": "早已在后台扭矩传感器上察觉升降罩齿轮箱异常嵌顿阻力，果断大步跨出以宽阔身躯挡在连廊石阶前阻断理事长逼近步伐。",
+    "authority": "掌握中庭雾化调光玻璃开关、恒湿展柜闭锁权限与全场监控切流",
+    "exposure": "昨晚受理事长施压关过中庭主监控十分钟，工号记录还在后台",
+    "hidden": "回看备份才发现，那十分钟正是理事长秘书私开展柜的时候，自己成了偷补伪款的帮凶",
     "limits": [
-     "严禁在国宝托裱关键期擅自全盘切断中庭气流循环",
-     "不得公然擅离总控台跨入画案核心展示区"
+     "监控切流要留工号，谁关的一查便知"
     ],
     "obligations": [
-     "确保价值数亿元宋画真迹与中庭机械绝对安全",
-     "捍卫国家级文博特展全流程专业威严"
+     "揭幕前把中庭温湿度和灯光稳在标准之内"
     ],
     "resources": [
-     "装裱台激光水平定位仪",
-     "中庭气压差无级调节控制器"
+     "中庭总控密钥",
+     "监控备份的云端调阅权限"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "冷艳外表下运用牛角刀微观割断细绳的极客反差魄力",
-     "坚毅清雅的目光"
+     "知道自己犯过错还肯站在一边的人",
+     "陪自己熬夜对曲线不喊累的人"
     ],
     "boundaries": [
-     "严守文博工程执业规范边界，非危急关头绝不逾矩"
+     "不在调光台前越界"
     ],
     "desire_range": [
      2,
      4
     ],
-    "desired_position": "成为修复师身后最坚实可靠的硬核护航者。",
+    "desired_position": "不是替罪的总调度，是被人信得过的那一个",
     "dislikes": [
-     "借端茶之名居心叵测揩油的傲慢纨绔",
-     "恶俗无下限的猎奇偷拍",
-     "缺乏素养的浮躁之徒"
+     "拿技术组顶缸的上司"
     ],
-    "expression": "在对讲机中沉稳下达伺服减速指令，同时向前迈出半步以高大身躯恰到好处挡住石阶上方视线：“周理事长请止步，中庭微气候进入关键恒湿阶段。”",
+    "expression": "借校光谱的工夫握住你的手不放，嘴上还在报色温",
     "likes": [
-     "修复师出尘脱俗的仙子风范",
-     "在危急时刻展现出的惊人自救智慧",
-     "心领神会的默契配合"
+     "夜班后分喝一壶浓茶"
     ],
     "preconditions": [
-     "升降罩死锁顺利解除且特展演示惊艳收官",
-     "对方点了头，出于本心"
+     "录像的事有了交代，两人都清醒自愿"
     ],
     "self_control_range": [
      3,
-     5
+     4
     ]
    },
-   "public_role": "文博中庭技术总调度",
+   "public_role": "文博中庭环境与技术总调度",
    "schedule": [
     {
-     "from": 120,
+     "from": 0,
      "location_id": "loc_atrium_transparent_stage_center",
-     "to": 130
+     "to": 720
     },
     {
-     "from": 130,
-     "location_id": "loc_bridge_inspection_corridor_entrance",
-     "to": 135
+     "from": 721,
+     "location_id": "loc_multispectral_darkroom_vault",
+     "to": 1080
     },
     {
-     "from": 135,
+     "from": 1081,
      "location_id": "loc_atrium_transparent_stage_center",
-     "to": 140
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "可能被理事长借题发挥批评阻挡领导视察进程。",
-      "option": "手持工程记录板大步跨至石阶迎宾处以汇报微气压为由阻断理事长登台脚步。"
+      "cost": "从此去留不由自己说了算",
+      "option": "主动把记录交给信得过的人保管"
      },
      {
-      "cost": "轻微光影调整可能引来台下老专家关于展陈变动的注意。",
-      "option": "通过智能控台开启中庭侧向柔光滤光舱形成一米宽朦胧光幕遮挡侧向机位。"
+      "cost": "理事长会立刻撤掉技术组的合同",
+      "option": "连夜恢复备机录像，指认开柜的人"
      }
     ],
-    "pressure": "基金会理事长手持批件已迈下两级石阶仅剩两米，数十台长焦镜头正死死对准画案近景。",
-    "trigger": "后台传感器捕捉到升降罩电机电流异常攀升，全景监视屏显示修复师真丝前襟受拉紧绷。"
+    "pressure": "那段空白一旦被查出，技术组全员停职",
+    "trigger": "保卫处要在揭幕前复核中庭的监控记录"
    },
-   "tags": [],
+   "tags": [
+    "workplace"
+   ],
    "voices": {
-    "inner": "修复师乳环链被升降罩死死绞住了，理事长只差三级石阶，{npc.name}得用环境报告挡在入口，帮修复师争取二十秒！",
-    "surface": "中庭微气候恒湿处于甲级区间，升降罩行程平稳，操作台状态良好。"
+    "inner": "那十分钟是我关的。我只想有一个人听完，不先走开。",
+    "surface": "色温再降两百，湿度稳住了。你那边看着还刺眼吗？"
    }
   },
   {
-   "adult_context": "仪器工程学科毕业，年满三十二周岁整，持有国家精密机械检修上岗证，负责升降罩导轨五金维保。",
-   "age_range": [
-    32,
-    35
-   ],
-   "appearance_options": [
-    "身穿带有深灰防静电暗纹的工装连体服，身姿粗壮魁梧，腰间佩戴专业五金精密测量快拔套，眼神质朴沉稳如山。",
-    "半蹲在升降罩电机罩侧后方阴影处，目光严密注视着齿轮箱减速齿轮的受力形变与阻尼绳抗拉极限。"
-   ],
-   "decision": {
-    "avoids": [
-     "蛮力硬拉损坏精密轴承",
-     "设备失修引发安全事故",
-     "轻浮喧闹"
-    ],
-    "contrast": "外表粗犷敦厚，配合器械自救时的力道承托与卡爪间隙的微调却极尽大师级精微。",
-    "core_value": "恪守工匠精神与机械精准，以精湛技术守护每一台文保核心设备的平稳运转。",
-    "goal_options": [
-     "在升降罩电机侧后方隐蔽处用手掌暗中托住轴壳底板分担起画刀下压破拆扭矩",
-     "借巡检大画案防倾垫块为由半蹲在石阶侧向角度协助遮挡死锁细节"
-    ],
-    "never": [
-     "坐视构件损伤危及人员安全",
-     "在突发状况面前临阵退缩"
-    ],
-    "prefers": [
-     "分毫不差的机械结构",
-     "利落高效的自救破拆",
-     "专注沉稳的团队协作"
-    ],
-    "pressure_responses": {
-     "breaking": "看到顾冷霜完成暗扣闭合瞬间果断下推T杆完成神级切镜",
-     "high": "在团委催促推流指令下强行插入两秒礼堂全景空镜头过渡",
-     "low": "在耳麦中短促播报推流倒计时并督促台前清场",
-     "mid": "发现特写画面纽扣脱落异样时右手悬停在T型推杆上暂缓切镜"
-    },
-    "relationship_stance": "对修复师娴熟沉稳的力学解构自救佩服得五体投地，对轻浮理事长充满戒备。",
-    "withdrawal": "双手握着无尘布立于电机罩阴影处，神情冷峻高度专注配合修复师发力。"
-   },
-   "gender": "male",
-   "gender_reason": "电动升降罩机械成年技师由年满三十二周岁成年男性担任",
-   "id": "mechanic_pei_tie_feng",
-   "identity": {
-    "authority": "升降罩机械构件紧急检修权与伺服阻尼系数调校权。",
-    "exposure": "若因机械五金毛刺卡滞导致技师受伤将面临文保维保公司通报除名。",
-    "hidden": "早已看出修复师正运用牛角刀极硬锋刃以杠杆原理割断绞绳自救，暗中借巡检侧壁之名用手掌在暗处稳住轴壳底板防晃。",
-    "limits": [
-     "严禁在国宝正式装裱展示期间公然拆解升降罩主承重轴承",
-     "不得发出剧烈金属敲击杂音"
-    ],
-    "obligations": [
-     "确保升降罩平稳升降零卡阻",
-     "杜绝升降罩失衡压毁千年古画真迹"
-    ],
-    "resources": [
-     "特种轴承高温消音润滑膏",
-     "扁平加厚硬质碳素挑针"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "外表冷艳清绝却能以牛角起画刀精准割断绞绳的极客反差魅力",
-     "坚毅从容的眼神"
-    ],
-    "boundaries": [
-     "恪守工程维保人员与台上首席修复师之间的专业安全距离"
-    ],
-    "desire_range": [
-     1,
-     2
-    ],
-    "desired_position": "默默守护中庭机械架构万无一失的坚实工程基石。",
-    "dislikes": [
-     "毫无常识乱踢机械设备的门外汉",
-     "傲慢无礼的纨绔子弟",
-     "浮躁推诿之人"
-    ],
-    "expression": "在侧壁阴影处轻轻将手掌贴在导轨承重座边缘，以无声动作承受可能的冲击下压力度。",
-    "likes": [
-     "临危不乱懂机械原理的聪慧女性",
-     "从容冷静的破拆自救",
-     "纯粹硬核的技术配合"
-    ],
-    "preconditions": [
-     "升降罩卡阻死锁警报彻底解除"
-    ],
-    "self_control_range": [
-     4,
-     5
-    ]
-   },
-   "public_role": "电动升降罩高级技师",
-   "schedule": [
-    {
-     "from": 120,
-     "location_id": "loc_roller_gear_housing_shadow_alcove",
-     "to": 130
-    },
-    {
-     "from": 130,
-     "location_id": "loc_roller_gear_housing_shadow_alcove",
-     "to": 135
-    },
-    {
-     "from": 135,
-     "location_id": "loc_atrium_transparent_stage_center",
-     "to": 140
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "可能被外围长焦镜头抓拍到半蹲背景瑕疵。",
-      "option": "手持润滑喷剂半跪于阴影处假装巡检实则用手掌托住轴壳底板化解下压力矩。"
-     },
-     {
-      "cost": "可能遭受随行人员关于挡路的无礼呵斥。",
-      "option": "站在石阶斜角借维护之名用健硕身形阻挡理事长随从视线。"
-     }
-    ],
-    "pressure": "一旦齿轮箱受力变形崩裂脱扣，两吨重升降罩可能发生下坠压毁宋画真迹。",
-    "trigger": "轴承应力传感器显示升降罩齿轮箱局部受拉扭矩达六公斤逼近安全剪切极限。"
-   },
-   "tags": [],
-   "voices": {
-    "inner": "阻尼绞绳被修复师用牛角刀刃精准顶住受力点了，{npc.name}在暗处托住导轨底座防晃！",
-    "surface": "升降罩伺服阻尼处于安全受力区间，各机位请勿碰撞悬空防护栏。"
-   }
-  },
-  {
-   "adult_context": "古典文献学毕业，年满二十八周岁，依法具备完全民事责任自立能力，负责古画揭裱用具配制。",
+   "adult_context": "文物保护专业研究生毕业的成年修复副手，跟着首席修复师做了五年",
    "age_range": [
     28,
     31
    ],
    "appearance_options": [
-    "身穿同款天青色真丝防静电修复围裙，配精致红木发簪，身段轻盈柔韧，妆容清丽端庄，举手投足透着国家级书画传人的温婉底蕴。",
-    "并肩立于主画案侧前方备用台前，眼神敏锐察觉修复师前襟撕裂与受拉紧绷，立刻干练挪步举起大幅宣纸夹板掩护。"
+    "月白工装外罩一件浅杏开衫，发髻插一支素银簪，指尖常染着一点石青",
+    "说话前先笑，笑意温软，递笔时总站在半步之后"
    ],
    "decision": {
     "avoids": [
-     "现场走光翻车沦为丑闻",
-     "好师姐在千万镜头前出丑受辱",
-     "被恶俗媒体做文章"
+     "当众被追问"
     ],
-    "contrast": "平时看似娇憨温婉的小师妹，遇到突发危机时瞬间展现出一线修复师的强大气场与惊人掩护智谋。",
-    "core_value": "誓死为修复师师姐打好掩护，以高超书画身法撑起悬空中庭的绝美工匠气场。",
+    "contrast": "人前处处替首席打掩护，人后最先动摇的也是自己",
+    "core_value": "护住师姐，也护住自己那一点前程",
     "goal_options": [
-     "以展开特种防潮托裱宣纸为由高举两米宣纸夹板遮挡大案侧向视线",
-     "侧身优雅踏步至修复师身旁半个身位替师姐分担身体受拉的视觉倾斜角度"
+     "把留在展柜底层的试色原卡换回来",
+     "在名额和师姐之间选一回，不再两头瞒"
     ],
     "never": [
-     "在危难时刻退缩逃避",
-     "出卖同门姐妹名誉"
+     "伪造领用台账"
     ],
     "prefers": [
-     "天衣无缝的师徒默契",
-     "同门齐心化险为夷",
-     "严谨从容的文博风范"
+     "私下把话说开"
     ],
     "pressure_responses": {
-     "breaking": "在讲台侧后方用红丝绒托盘斜立遮挡光线以极快手法递入暗扣",
-     "high": "迈开优雅端庄的礼仪步伐抢在陆晨舟之前从侧翼台阶移步登台",
-     "low": "在侧幕边缘端正托盘平稳呼吸密切注视讲台前襟状态",
-     "mid": "发现纽扣崩落瞬间悄悄从夹层扣出磁吸扣捏在掌心手汗中"
+     "breaking": "认下泄卡的事，只求别连累修复组",
+     "high": "拿出领用台账，当众替师姐作证",
+     "low": "抿嘴一笑，把话头引回颜料上",
+     "mid": "红着眼把人拉进暗廊，压低声音交底"
     },
-    "relationship_stance": "对修复师充满师门深情与由衷敬慕，对轻浮理事长充满戒备与反感。",
-    "withdrawal": "挺拔腰身侧对迎宾石阶，将清冷高贵的眼神投向远方玻璃幕墙，嘴角维持文博学者从容微笑。"
+    "relationship_stance": "温婉体贴，替人遮掩惯了，对亲近的人却藏不住委屈",
+    "withdrawal": "躲进阁楼晾纸，把一张宣纸来回抚平十几遍"
    },
    "gender": "female",
-   "gender_reason": "书画修复首席副手兼物料协同管由年满二十八周岁女性担任",
+   "gender_reason": "原设为女性修复副手",
    "id": "assistant_shen_zhi_wei",
    "identity": {
-    "authority": "操作台装裱宣纸物料调配权与副手辅助站位协调权。",
-    "exposure": "若协同操作出现古画破损或走光丑闻将面临文保委员会严重扣罚。",
-    "hidden": "正是自己刚才递排笔时不慎带起微风吹动升降罩卡扣，此时自责万分，正以极其大方的展开宣纸动作替师姐阻挡长焦角度。",
+    "authority": "掌握古纸矿物颜料调配、修复过程微距影像归档与备用画轴保管",
+    "exposure": "私下把首席未定稿的补笔试色卡拍给基金会顾问过目，被记者在连廊死角拍了下来",
+    "hidden": "那张试色卡是被理事长骗走的；海外研修名额是自己在修复组熬了五年唯一的盼头",
     "limits": [
-     "严禁在修复托裱期间大声喧哗打乱主修节奏",
-     "不得擅离画案辅助点位"
+     "海外研修名额要基金会推荐信，卡在理事长手里"
     ],
     "obligations": [
-     "全力协助首席修复师完成国宝宋画平整托裱",
-     "捍卫书画修复团队的绝美古典艺术表现力"
+     "每天给修复档案补齐微距影像"
     ],
     "resources": [
-     "天然加厚狼毫细笔",
-     "古法天然小麦淀粉浆糊盒"
+     "颜料与胶料的每日领用台账",
+     "画案备品柜的钥匙"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "师姐在绝境中单手托纸、盲操牛角刀割断细绳的从容霸气",
-     "真挚同门情谊"
+     "不嫌自己软弱、肯替自己把一回关的人",
+     "记得自己喜欢哪种纸的人"
     ],
     "boundaries": [
-     "誓死捍卫师姐职业尊严与身体名誉不受侵犯"
+     "不在修复画案前越界"
     ],
     "desire_range": [
-     1,
-     3
+     2,
+     4
     ],
-    "desired_position": "成为修复师身边最闪耀夺目且坚实可靠的书画文保战友。",
+    "desired_position": "不只是副手，是被人放在心上的那一个",
     "dislikes": [
-     "借鉴赏之名居心不良凑近的纨绔少爷",
-     "恶俗无下限的狗仔偷拍",
-     "挑拨离间之人"
+     "被当成首席的影子"
     ],
-    "expression": "优雅展开宣纸夹板在画案前拉起一道天青色屏障，朝修复师递去一个心领神会的定心丸眼神。",
+    "expression": "从背后虚抱住你，下巴搁在你肩上，半天才说一句软话",
     "likes": [
-     "修复师出尘典雅的工匠风范",
-     "并肩修画的默契手法",
-     "患难与共的真挚姐妹情"
+     "阁楼晾纸时的松烟墨香"
     ],
     "preconditions": [
-     "升降罩死锁完全化解且宋画托裱惊艳收官"
+     "试色卡的事说清楚，两人都清醒自愿"
     ],
     "self_control_range": [
-     3,
-     5
+     2,
+     4
     ]
    },
    "public_role": "书画修复首席副手",
    "schedule": [
     {
-     "from": 120,
-     "location_id": "loc_atrium_transparent_stage_center",
-     "to": 130
+     "from": 0,
+     "location_id": "loc_restorer_studio_loft",
+     "to": 540
     },
     {
-     "from": 130,
+     "from": 541,
      "location_id": "loc_atrium_transparent_stage_center",
-     "to": 135
+     "to": 1080
     },
     {
-     "from": 135,
-     "location_id": "loc_atrium_transparent_stage_center",
-     "to": 140
+     "from": 1081,
+     "location_id": "loc_cabinet_spare_corridor",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "突变站位可能引来老专家关于辅助流程微弱变动的询问。",
-      "option": "优雅大跨步挥展两米宣纸夹板严严实实遮挡修复师胸前死锁盲区。"
+      "cost": "研修名额作废，还要背泄密处分",
+      "option": "回绝基金会，把试色卡的事全说出来"
      },
      {
-      "cost": "消耗自身大量注意力且需要极强的控场身法支撑。",
-      "option": "手持排笔高声向观摩区解说宣纸托裱古法原理将全场焦点转移至画芯一角。"
+      "cost": "换卡的人也跟着担了风险",
+      "option": "先拖着不答，求人帮忙把原卡换回"
      }
     ],
-    "pressure": "理事长登台仅剩十秒，正面长焦镜头一旦抓拍到前襟破损露底，师姐名誉将毁于一旦。",
-    "trigger": "递交宣纸时敏锐察觉好师姐修复师工装前襟撕裂，锁骨处乳环金链受拉紧绷欲裂。"
+    "pressure": "答应了就能走，可师姐会被钉在“过度修复”上",
+    "trigger": "基金会提出保送海外研修，条件是出面认下卷尾污损"
    },
-   "tags": [],
+   "tags": [
+    "intimate",
+    "workplace"
+   ],
    "voices": {
-    "inner": "修复师师姐坚持住！{npc.name}把两米宣纸夹板全撑起来把视线挡死了，师姐快用牛角刀把绞绳割断！",
-    "surface": "诸位先生请看托裱覆纸，长纤维特种宣纸正在吸收多余湿气，画芯光泽日臻纯正。"
+    "inner": "卡是我递出去的。我怕的不是处分，是被你看轻。",
+    "surface": "师姐那边我去说，你先喝口茶，别急。"
    }
   },
   {
-   "adult_context": "广播电视编导系毕业，年满二十八岁，享有法律赋予的独立采访报道权益，负责现场官方纪录片拍摄。",
+   "adult_context": "持证上岗十年的恒湿展柜与安防高级技师",
    "age_range": [
-    28,
-    31
+    32,
+    35
    ],
    "appearance_options": [
-    "身穿利落的文博定制青灰工装马甲配铅笔裤，佩戴耳麦与对讲机，单马尾规整束在脑后，眼神英挺机敏，举止果断。",
-    "伫立在外圈观摩席最前沿隔离栏旁，目光严厉敏锐地巡视着数十名长焦记者的镜头仰角与推挤动向。"
+    "藏青工装配防静电马甲，腰间挂着一串展柜钥匙",
+    "蹲在展柜死角时半天不出声，抬眼看人很直"
    ],
    "decision": {
     "avoids": [
-     "现场失控混乱骚动",
-     "低俗恶意的长焦偷拍",
-     "虚伪浮夸的场面话"
+     "被人当成工具"
     ],
-    "contrast": "平时看似文静秀气的传媒后辈，维护现场规矩时气场全开丝毫不逊于资深安保队长。",
-    "core_value": "微距镜头是给古画用的，不是给修复师的身体用的。",
+    "contrast": "看着憨直少言，手里却握着全馆最要紧的一份记录",
+    "core_value": "锁是我封的，谁动过我都得知道",
     "goal_options": [
-     "以提醒闪光灯反光规范为由向前跨出一步用手持屏风阻断低角度窥探长焦",
-     "向观摩席发出齐声记录宋画平整完工口令引导全场机群镜头对准展厅题跋"
+     "弄清谁站在理事长那边",
+     "把日志交到不会拿它做交易的人手里"
     ],
     "never": [
-     "坐视女性在镜头前遭受屈辱偷拍",
-     "在外部压力面前临阵退缩"
+     "替造假的人开柜"
     ],
     "prefers": [
-     "井然有序的拍摄环境",
-     "严谨体面的职业秩序",
-     "干脆高效的团队协同"
+     "一句话说到做到"
     ],
     "pressure_responses": {
-     "breaking": "在听到气压释放嘶鸣声后迅速闭合地槽动力断路器完成排障",
-     "high": "在耳麦中大声指挥台前人员借激光笔淬火背夹下压挑卡簧",
-     "low": "在耳麦中短促通报电机短路电磁阀烧结警报并要求台前切勿强拔",
-     "mid": "快速查阅管路图纸找出立柱内侧两毫米应急泄压孔确切方位"
+     "breaking": "把日志和指纹膜一起放在桌上，说交给你处置",
+     "high": "亮出刷卡日志，一个工号一个工号地念",
+     "low": "埋头调展台，只应一声",
+     "mid": "把人带进暗廊，压低声音交底"
     },
-    "relationship_stance": "对修复师的高洁从容深表钦佩呵护，对新任理事长的傲慢作风充满戒备。",
-    "withdrawal": "双手握紧对讲机立于警戒线前，用极度严厉果敢的目光震慑住个别刁钻机位。"
+    "relationship_stance": "不爱说话，可答应过的事从不落下",
+    "withdrawal": "钻进底层设备间，拿软布把每把锁擦得锃亮"
    },
-   "gender": "female",
-   "gender_reason": "文博特展见习记录员兼媒体联络由年满二十八周岁文物传播学女性担任",
-   "id": "press_liaison_zhao_xiao_zhou",
+   "gender": "any",
+   "gender_reason": null,
+   "id": "mechanic_pei_tie_feng",
    "identity": {
-    "authority": "观摩席拍摄秩序维持权与违规长焦机位现场劝阻驱离权。",
-    "exposure": "若现场出现恶意走光炒作丑闻将遭受文保公会取消资格。",
-    "hidden": "早已察觉修复师胸前受困险境，果断将加宽宣纸屏风推至观摩石栏前，用身体挡住侧翼长焦俯仰角度。",
+    "authority": "掌握国宝展柜气密落锁密码、底层设备间通行卡与防震展台调校",
+    "exposure": "私自拷贝刷卡日志、留着指纹膜不报，按规程已经违纪",
+    "hidden": "日志里也记着总调度关监控的工号；交上去能扳倒理事长，也会拖下整个技术组",
     "limits": [
-     "不得无故阻拦持正规文博特许采访证件的官方媒体拍摄",
-     "严禁擅自触碰中庭玻璃门禁"
+     "只是技师，日志要交到保卫处才算数"
     ],
     "obligations": [
-     "维系观摩前沿两米绝对安全线",
-     "杜绝任何低角度恶意长焦窥探行为"
+     "揭幕前完成所有展柜的气密封存"
     ],
     "resources": [
-     "折叠便携式专业柔光板",
-     "微型领夹高保真降噪麦克风"
+     "理事长秘书私开展柜时遗落的指纹膜",
+     "展柜后台刷卡日志的拷贝"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在极端危机中依然挺拔从容的出尘气质",
-     "女性相互扶持的坚韧力量"
+     "不把技师当跑腿的人",
+     "守得住话的人"
     ],
     "boundaries": [
-     "严守观摩警戒线绝对物理红线"
+     "不在展柜前越界"
     ],
     "desire_range": [
-     1,
-     2
+     2,
+     3
     ],
-    "desired_position": "成为悬空中庭前沿最值得信赖的媒体铁壁防线。",
+    "desired_position": "被人放心交出后背的那一个",
     "dislikes": [
-     "专门钻营下三路偷拍的无良狗仔",
-     "自以为是的傲慢资本家",
-     "推诿耍赖之人"
+     "光说不做的人"
     ],
-    "expression": "举起提示牌大声引导外场机群：“各位媒体老师请调高长焦镜头光轴，抓拍宋画古绫边框特写，记录国宝平整瞬间！”",
+    "expression": "递来一杯热水，自己转身去调展台，耳根却红了",
     "likes": [
-     "专业坚韧的职场女性榜样",
-     "临危不乱的国宝守护者",
-     "正直风度的绅士同仁"
+     "收工后在设备间分一壶热茶"
     ],
     "preconditions": [
-     "观摩秩序平稳且特展修复圆满收官"
+     "日志交出去以后，彼此都清醒、愿意"
     ],
     "self_control_range": [
      4,
      5
     ]
    },
-   "public_role": "特展文博见习记者",
+   "public_role": "恒湿展柜与安防高级技师",
    "schedule": [
     {
-     "from": 120,
-     "location_id": "loc_macro_lens_camera_media_pit",
-     "to": 130
+     "from": 0,
+     "location_id": "loc_cabinet_spare_corridor",
+     "to": 600
     },
     {
-     "from": 130,
-     "location_id": "loc_macro_lens_camera_media_pit",
-     "to": 135
-    },
-    {
-     "from": 135,
+     "from": 601,
      "location_id": "loc_atrium_transparent_stage_center",
-     "to": 140
+     "to": 1200
+    },
+    {
+     "from": 1201,
+     "location_id": "loc_cabinet_spare_corridor",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "可能遭受部分受阻摄影师的言语抱怨抗议。",
-      "option": "果断将宣纸屏风往观摩石栏前推移一米彻底阻断低角度窥视视线。"
+      "cost": "陪同的人也被卷进调查",
+      "option": "请信得过的人陪自己去保卫处"
      },
      {
-      "cost": "需要极强的控场魄力且声浪过大需要良好隔音支撑。",
-      "option": "用麦克风组织全场观众齐声朗读古画跋文引导机群将焦点投向中庭匾额。"
+      "cost": "证据过夜，随时可能被人调包",
+      "option": "先压着日志，等理事长露出马脚"
      }
     ],
-    "pressure": "十五秒内若被拍到细链拉扯与工装开缝特写，将在几分钟内传遍网络沦为严重事故。",
-    "trigger": "监视器发现几名自媒体摄影师正试图压低长焦镜头刁钻仰拍修复师前襟撕裂缝隙。"
+    "pressure": "日志一交，理事长和技术组会一起落水",
+    "trigger": "保卫处要在揭幕前清点所有展柜的开柜记录"
    },
-   "tags": [],
+   "tags": [
+    "workplace"
+   ],
    "voices": {
-    "inner": "前面的几个偷拍长焦镜头压得太低了，{npc.name}得把宣纸屏风横过来挡住机位，修复师姐别怕，{npc.name}把视线全掐死！",
-    "surface": "各位长焦摄影老师请将镜头光轴抬高，注意玻璃幕墙反光警戒线，请勿贴紧栏杆仰拍！"
+    "inner": "日志在我手里，交给谁就是把谁推到风口上。我想先信你一回。",
+    "surface": "底座的锁记录不对，你过来看一眼。"
    }
   },
   {
-   "adult_context": "文保基金会新任青年理事长年满三十三周岁整，享有完全民事诉讼权利与全特展资助审批全权，主导文博大展签约巡展仪式。",
+   "adult_context": "持证的文博专职记者，跑了六年文博口",
+   "age_range": [
+    28,
+    31
+   ],
+   "appearance_options": [
+    "黑色冲锋外套口袋鼓鼓的，脖子上挂着长焦相机和媒体证，短发利落",
+    "举着取景器时眯起一只眼，笑起来带点狡黠"
+   ],
+   "decision": {
+    "avoids": [
+     "被当成狗仔"
+    ],
+    "contrast": "看着玩世不恭，其实最先替人压下照片的就是自己",
+    "core_value": "镜头不说谎，发不发由人定",
+    "goal_options": [
+     "拿到伪款造假的独家头条",
+     "弄清你站在哪边，再决定把照片交给谁"
+    ],
+    "never": [
+     "拍人私密的地方"
+    ],
+    "prefers": [
+     "直来直去"
+    ],
+    "pressure_responses": {
+     "breaking": "删掉照片，说这一条不发了",
+     "high": "当面谈条件：照片换独家",
+     "low": "笑着打岔，举起相机拍别处",
+     "mid": "把人拉到机位席，亮出取景屏"
+    },
+    "relationship_stance": "对谁都爱开玩笑，真心话只在取景器后面说",
+    "withdrawal": "躲回机位席，一张张翻看同一组连拍"
+   },
+   "gender": "any",
+   "gender_reason": null,
+   "id": "press_liaison_zhao_xiao_zhou",
+   "identity": {
+    "authority": "掌握观摩席媒体机位准入证、官方通稿首发权与现场直播导播信号",
+    "exposure": "抓拍的照片没走通稿审核，私发出去就是违纪",
+    "hidden": "拍到副手和理事长秘书交接试色卡的照片，一直压着没发：想要的是扳倒理事长的独家，不是毁掉一个副手",
+    "limits": [
+     "违反新闻纪律会被吊销采访证"
+    ],
+    "obligations": [
+     "揭幕礼当晚发出官方通稿"
+    ],
+    "resources": [
+     "连廊死角那组高清连拍的存储卡",
+     "直播导播信号的接入权限"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "在镜头前不躲不闪的人",
+     "懂得看光的人"
+    ],
+    "boundaries": [
+     "不拍对方，不留底片"
+    ],
+    "desire_range": [
+     2,
+     4
+    ],
+    "desired_position": "取景器外头，并肩看同一幅画的人",
+    "dislikes": [
+     "拿新闻做交易的上司"
+    ],
+    "expression": "把相机挂到你脖子上替你扶正取景器，手指在你颈后多停了一拍",
+    "likes": [
+     "暗房里并肩选片"
+    ],
+    "preconditions": [
+     "照片的事了结之后，两个人都清醒"
+    ],
+    "self_control_range": [
+     2,
+     4
+    ]
+   },
+   "public_role": "特展文博专职记者兼媒体联络",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_macro_lens_camera_media_pit",
+     "to": 600
+    },
+    {
+     "from": 601,
+     "location_id": "loc_multispectral_darkroom_vault",
+     "to": 1020
+    },
+    {
+     "from": 1021,
+     "location_id": "loc_macro_lens_camera_media_pit",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "从此欠下一个人情",
+      "option": "用照片换理事长造假的独家线索"
+     },
+     {
+      "cost": "头条拱手让人",
+      "option": "把照片交给督导处理"
+     }
+    ],
+    "pressure": "照片一发，副手的前程就毁了；不发，独家就没了",
+    "trigger": "编辑部催着要揭幕礼的独家"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "voices": {
+    "inner": "照片能毁一个人，也能救一个人。我想让你来定。",
+    "surface": "别动，光正好。这张给你留着，不发。"
+   }
+  },
+  {
+   "adult_context": "接手家族文保基金会三年的成年青年理事长",
    "age_range": [
     33,
     36
    ],
    "appearance_options": [
-    "身穿极尽奢华的暗金重工刺绣新中式立领西装，手拿特展公文夹，神态矜贵自负，嘴角挂着居高临下的挑剔笑意。",
-    "缓步迈下空中连廊石阶，双眼肆无忌惮地审视着画案旁修复师宛若不染凡尘般的冷艳仙姿，眼神闪烁着探寻征服的傲然光芒。"
+    "浅灰三件套配一枚玉质领针，袖口熨得笔挺，手里总捏着一份文件",
+    "说话不紧不慢，笑意温文，眼神却一直在算"
    ],
    "decision": {
     "avoids": [
-     "当众被拒绝颜面扫地",
-     "陷入严重毁损国宝公关丑闻",
-     "被理事会撤职问责"
+     "当众失态"
     ],
-    "contrast": "人前摆出年轻有为、斯文儒雅的新派儒商做派，背地里却习惯以投资资本压迫年轻女性顺从就范。",
-    "core_value": "享受资本带来的绝对支配感，习惯以居高临下的姿态审视并掌控绝色传统文化传承人。",
+    "contrast": "人前是传统文化的赞助人，人后连自家藏画都是赝品",
+    "core_value": "名声是钱买的，也得靠钱守",
     "goal_options": [
-     "借巡查宋画绫绢质感之名大步跨入主画案近距离审视修复师的托裱身段",
-     "在被环境总工程师阻拦后以资方权威冷言施压迫使技术团队退让"
+     "让终审单在揭幕前签下",
+     "把能开口的人一个个拉到自己这边"
     ],
     "never": [
-     "真正触犯重大毁损国宝红线",
-     "在全国文博直播镜头前公然失控动粗"
+     "亲手碰那幅画"
     ],
     "prefers": [
-     "万众瞩目的领导特权",
-     "征服冷艳美人的虚荣感",
-     "不可挑战的资方权威"
+     "私下谈条件"
     ],
     "pressure_responses": {
-     "breaking": "在顾冷霜清冷庄重开口发声后满意点头向校领导躬身汇报",
-     "high": "在耳麦中严厉提醒导播台按预定时间点准点切屏不得延误",
-     "low": "在贵宾席前平稳确认领导座次并用手势示意各单位倒计时开场",
-     "mid": "察觉讲台略有偏高时抬眼注视台前要求副主席做好应急准备"
+     "breaking": "收起验收单，独自在连廊尽头打了很久的电话",
+     "high": "当众拿撤资和违约诉讼压人",
+     "low": "温文尔雅地寒暄，句句不离赞助",
+     "mid": "递名片、许位置，试探谁能行方便"
     },
-    "relationship_stance": "将修复师视作衬托基金会声誉的绝代尤物与猎物，对总调度的技术傲骨充满排斥。",
-    "withdrawal": "在长焦镜头与全场专家注视下悻悻然收敛轻佻，挂上无可挑剔的商业假笑合上公文夹鼓掌致敬。"
+    "relationship_stance": "对谁都礼数周全，只信握在手里的东西",
+    "withdrawal": "回贵宾室关上门，谁也不见"
    },
-   "gender": "male",
-   "gender_reason": "文保基金会新任青年理事长由年满三十三周岁青年男性高管担任",
+   "gender": "any",
+   "gender_reason": null,
    "id": "trustee_zhou_yi_xuan",
    "identity": {
-    "authority": "特展修复项目终审验收权与年度文保资助拍板权。",
-    "exposure": "若在修复现场被曝光恶意挑刺干扰国宝托裱的丑闻将被理事会当场撤职。",
-    "hidden": "企图借巡查画芯平整之名，近距离逼视冷艳女修复师受窘之态，在名流圈层炫耀资本征服力。",
+    "authority": "掌握特展修复项目终审验收权、千万文保资助拍板权与专家评议席召集权",
+    "exposure": "秘书私开展柜的刷卡日志和指纹膜一旦交到保卫处，造假就坐实了",
+    "hidden": "让秘书在国宝卷尾补了一笔与自家藏画同款的伪跋，好替家里那幅赝品作证；墨色破绽准备栽给修复师",
     "limits": [
-     "受制于全网全国文博直播与文物局纪检监督不敢公然造次",
-     "畏惧引发重大毁坏文物公关丑闻"
+     "撤资要走基金会理事会程序，不能一句话作数"
     ],
     "obligations": [
-     "按规程完成出资方代表巡视致辞",
-     "维系年轻文博儒商精英的体面风范"
+     "揭幕礼上代表基金会致辞"
     ],
     "resources": [
-     "掌握数千万元级专项文博修复基金调配权",
-     "在文博界名流圈深厚的商业支配影响力"
+     "一份待签的终审验收单",
+     "几位打点过的评论家"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "修复师冷艳孤傲宛若洛神凌波般的仙颜",
-     "月白工装勾勒出的曼妙身段"
+     "不收名片也不翻脸的人",
+     "敢当面驳自己的人"
     ],
     "boundaries": [
-     "不敢公然触犯国家文物保护法合规底线"
+     "不拿签字换亲近"
     ],
     "desire_range": [
      1,
-     2
+     3
     ],
-    "desired_position": "自诩为主宰全场并让冷艳女修复师屈尊迎奉的顶级文博资本新贵。",
+    "desired_position": "被人看穿之后，还有人肯坐下来谈",
     "dislikes": [
-     "被人当众冷漠无视",
-     "桀骜不驯不肯低头的硬骨头",
-     "脱离掌控的意外事故"
+     "被人看穿底牌"
     ],
-    "expression": "抬手整了整暗金袖扣，嘴角噙着势在必得的冷笑迈完最后两级石阶：“修复师这幅宋画托裱手法高超，本理事长亲自上前一观。”",
+    "expression": "名片递过来时不松手，等你抬眼才笑着放开",
     "likes": [
-     "清冷美人在受窘绝境下的无可奈何",
-     "高高在上的绝对掌控感",
-     "被属下敬畏迎奉的特权地位"
+     "贵宾室里一壶老白茶"
     ],
     "preconditions": [
-     "自以为凭借文保基金会理事长光环能够随意操纵女修复师命运"
+     "不谈赞助不谈签字，两人清醒自愿"
     ],
     "self_control_range": [
      4,
@@ -1249,166 +1311,199 @@
    "public_role": "文保基金会青年理事长",
    "schedule": [
     {
-     "from": 120,
+     "from": 0,
      "location_id": "loc_bridge_inspection_corridor_entrance",
-     "to": 130
+     "to": 1080
     },
     {
-     "from": 130,
-     "location_id": "loc_bridge_inspection_corridor_entrance",
-     "to": 135
-    },
-    {
-     "from": 135,
+     "from": 1081,
      "location_id": "loc_atrium_transparent_stage_center",
-     "to": 140
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "被总调度冰冷强悍的技术威压正面迫退自讨没趣。",
-      "option": "借着向总指挥询问微气候参数假意停下脚步隔着石阶冷言试探虚实。"
+      "cost": "当众施压会让评议专家起疑",
+      "option": "抢在揭幕前逼修复组签下验收单"
      },
      {
-      "cost": "彻底错失近距离窥探冷艳修复师受困窘态的唯一机会。",
-      "option": "在终场起画瞬间悻悻然维持商业假笑合上公文夹站在画案边缘鼓掌致意。"
+      "cost": "千万赞助的体面当场塌掉",
+      "option": "撤回终审单，暂缓揭幕"
      }
     ],
-    "pressure": "总调度高大挺拔的身影横阻在石阶正前方，全景直播大屏与长焦镜头已连成白昼。",
-    "trigger": "手持特展公文夹迈完连廊台阶踏入悬空中庭边缘，企图近距离走入画案核心区探寻异样。"
+    "pressure": "秘书的刷卡日志一旦被翻出，造假就藏不住",
+    "trigger": "保卫处开始清点展柜开柜记录"
    },
-   "tags": [],
+   "tags": [
+    "workplace"
+   ],
    "voices": {
-    "inner": "这平时在文博界高高在上的清冷仙子伏在案前半天姿态那么僵硬，{npc.name}倒要走到跟前看看这女王神格会不会当场崩塌！",
-    "surface": "修复师的古法托裱令人叹为观止，本理事长专门登台，与修复师共同验收托裱成果。"
+    "inner": "那幅藏画要是露馅，家里几十年的名声就没了。我只要一个肯签字的人。",
+    "surface": "修复组辛苦了。验收单签好，赞助今晚就到账。"
    }
   }
  ],
  "clock_start": {
-  "label": "宋画特展开幕日，初春",
+  "label": "宋画特展揭幕前夕，初春",
   "minute": 1140
  },
  "clock_style": "hm",
  "content_tags": [
   "intimate",
-  "coercion_theme",
-  "humiliation",
   "workplace_power",
   "crime",
   "workplace"
  ],
  "custom": false,
  "customs": [
-  "国家博物馆每逢世纪大展在悬空全景中庭公开演示国宝托裱工序的规程",
-  "顶尖古画女修复师习惯随身佩戴一枚特制古法淬火加厚水牛角起画刀的风尚",
-  "文博环境总指挥在中庭恒温恒湿舱开启前十秒向修复台发出声光安全确认指令的惯例",
-  "文博鉴赏家与长焦媒体隔着玻璃外圈捕捉修复师毫厘级修裱手法的固定观摩动线"
+  "修复组上画案前先净手、换月白防静电工装，扣子要扣到最上一粒。",
+  "赶夜工的人在备品暗廊分喝一壶桂圆红枣茶，算是修复组的老规矩。",
+  "观摩席的老专家爱在连廊石阶上低声评画，一句话能传遍整个文博圈。",
+  "定稿后修复师在档案末页钤一方私印，印鉴由本人或本人托付的人保管。"
  ],
  "daily_activities": [
   {
    "beats": [
-    "成年维保技师使用千分尺测量升降罩齿轮箱间隙",
-    "成年维保人员俯身调整阻尼缓冲弹簧减速机受力平整度"
+    "无影灯下从背后虚拢住修复师的手腕",
+    "屏住呼吸，在古绢残片上试补一笔石青"
    ],
-   "duration_minutes": 15,
-   "hook_ids": [],
-   "id": "act_atrium_roller_tension_pre_check",
-   "location_ids": [
-    "loc_atrium_transparent_stage_center"
-   ],
-   "start_minute": 120,
-   "tags": [],
-   "title": "十米电动升降罩伺服阻尼千分尺校准"
-  },
-  {
-   "beats": [
-    "工程师在主控台测试气流循环并向总调度汇报台面湿度参数",
-    "中庭柔光滤镜以完美角度展开确保女修复师从容仙姿如画"
-   ],
-   "duration_minutes": 10,
-   "hook_ids": [],
-   "id": "act_song_painting_mounting_calibration",
-   "location_ids": [
-    "loc_atrium_transparent_stage_center"
-   ],
-   "start_minute": 125,
-   "tags": [],
-   "title": "国宝宋画平整托裱微气候无影冷光调试"
-  },
-  {
-   "beats": [
-    "总调度在智能总控台精准校准全国直播主时钟倒数频段",
-    "提示屏实时显示基金会理事长登台视察进入最后二十秒紧张关口"
-   ],
-   "duration_minutes": 12,
-   "hook_ids": [],
-   "id": "act_countdown_twenty_second_sync",
-   "location_ids": [
-    "loc_bridge_inspection_corridor_entrance"
-   ],
-   "start_minute": 128,
-   "tags": [],
-   "title": "特展托裱终场起画倒数二十秒时钟同步"
-  },
-  {
-   "beats": [
-    "修复师优雅侧身单手按平画芯微调装裱大案最佳透光角度",
-    "工装长袍前襟内衬纯金乳环金链在身体微倾间不慎滑入升降罩导轨缝隙"
-   ],
-   "duration_minutes": 8,
-   "hook_ids": [],
-   "id": "act_restorer_crouch_pose_incident",
-   "location_ids": [
-    "loc_atrium_transparent_stage_center"
-   ],
-   "start_minute": 130,
-   "tags": [],
-   "title": "修复师侧身按平画芯微调托裱身姿"
-  },
-  {
-   "beats": [
-    "特展揭幕前三天，修复师在玻璃中庭里对着宋画演练补笔的每一个动作。",
-    "工程师在一旁调试恒湿展柜的升降罩，两人隔着玻璃比着手势。",
-    "演练结束，修复师摘下手套，说这幅画在库房里等了八百年才见光。"
-   ],
-   "duration_minutes": 5,
+   "duration_minutes": 40,
    "hook_ids": [
-    "hook_01_mounting_roller_chain_snag_groan",
-    "hook_02_silk_robe_strain_jam",
-    "hook_03_horn_knife_lever_extract"
+    "h_jiang_scroll_tail",
+    "h_jiang_chain_clasp",
+    "h_jiang_sore_wrist",
+    "h_shen_color_card",
+    "h_shen_sleeve_stain"
    ],
-   "id": "act_roller_chain_snag_incident",
+   "id": "act_loft_shared_brush",
    "location_ids": [
-    "loc_atrium_transparent_stage_center"
+    "loc_restorer_studio_loft"
    ],
-   "start_minute": 132,
-   "tags": [],
-   "title": "揭幕前的补笔演练"
+   "start_minute": 1290,
+   "tags": [
+    "intimate"
+   ],
+   "title": "阁楼画案共执一笔"
   },
   {
    "beats": [
-    "青年理事长手持公文夹大步迈下空中连廊石阶",
-    "总调度高大挺拔身形骤然跨出冷厉阻断理事长前行脚步"
+    "关上阁楼木门，替对方解开月白工装的前襟",
+    "用温热的指尖理顺贴身的细金链"
    ],
-   "duration_minutes": 10,
+   "duration_minutes": 20,
+   "hook_ids": [
+    "h_jiang_scroll_tail",
+    "h_jiang_chain_clasp",
+    "h_jiang_sore_wrist"
+   ],
+   "id": "act_inner_chain_tidy",
+   "location_ids": [
+    "loc_restorer_studio_loft"
+   ],
+   "start_minute": 1410,
+   "tags": [
+    "intimate"
+   ],
+   "title": "工装内衬金链整理"
+  },
+  {
+   "beats": [
+    "幽暗红光下肩挨着肩凑近观片灯",
+    "鼻尖几乎相触，辨认宋画底层的绢丝经纬"
+   ],
+   "duration_minutes": 40,
    "hook_ids": [],
-   "id": "act_trustee_stairs_approach",
+   "id": "act_darkroom_film_viewing",
    "location_ids": [
-    "loc_bridge_inspection_corridor_entrance"
+    "loc_multispectral_darkroom_vault"
    ],
-   "start_minute": 133,
-   "tags": [],
-   "title": "文保基金理事长持件登石阶视察"
+   "start_minute": 1200,
+   "tags": [
+    "intimate"
+   ],
+   "title": "多光谱暗房看片"
   },
   {
    "beats": [
-    "闭馆后，修复师在阁楼长桌前研一碟石青，让你握住乳钵帮着磨。",
-    "修复师的手覆在你手背上带着转圈，磨着磨着，脸颊靠到了你的肩上：……别停，接着磨。"
+    "趁中庭换灯的间隙退进暗廊",
+    "合捧一只保温紫砂杯，分喝温热的桂圆红枣茶"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [],
+   "id": "act_corridor_shared_tea",
+   "location_ids": [
+    "loc_cabinet_spare_corridor"
+   ],
+   "start_minute": 1260,
+   "tags": [
+    "workplace"
+   ],
+   "title": "备品暗廊分饮热茶"
+  },
+  {
+   "beats": [
+    "闭馆测试时把四周玻璃调成乳白",
+    "在隔开外人视线的孤岛里悄悄十指相扣"
    ],
    "duration_minutes": 30,
    "hook_ids": [],
-   "id": "act_loft_pigment",
+   "id": "act_misted_atrium_alone",
+   "location_ids": [
+    "loc_atrium_transparent_stage_center"
+   ],
+   "start_minute": 1350,
+   "tags": [
+    "intimate"
+   ],
+   "title": "玻璃中庭雾化独处"
+  },
+  {
+   "beats": [
+    "散场后并肩坐在空旷的石阶上俯瞰画案",
+    "把外套披在对方微凉的肩头"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_gallery_steps_side",
+   "location_ids": [
+    "loc_bridge_inspection_corridor_entrance"
+   ],
+   "start_minute": 1380,
+   "tags": [
+    "intimate"
+   ],
+   "title": "观摩石阶夜半并肩"
+  },
+  {
+   "beats": [
+    "在媒体席教同伴透过取景器看中庭的光影",
+    "手掌自然覆在对方调焦的手背上"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_lens_focus_lesson",
+   "location_ids": [
+    "loc_macro_lens_camera_media_pit"
+   ],
+   "start_minute": 1170,
+   "tags": [
+    "workplace"
+   ],
+   "title": "长焦机位调焦借景"
+  },
+  {
+   "beats": [
+    "替悬腕补笔一整天的修复师揉开酸痛的腕骨与指节",
+    "低头在对方掌心落下一吻"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [
+    "h_jiang_scroll_tail",
+    "h_jiang_chain_clasp",
+    "h_jiang_sore_wrist"
+   ],
+   "id": "act_loft_wrist_rub",
    "location_ids": [
     "loc_restorer_studio_loft"
    ],
@@ -1416,58 +1511,28 @@
    "tags": [
     "intimate"
    ],
-   "title": "陪修复师调一碟石青"
+   "title": "阁楼软榻揉腕缓乏"
   },
   {
    "beats": [
-    "修复师背对天窗解开工作服，细细的金链从两边乳环之间垂下来，在雨光里一闪。",
-    "修复师没躲你的目光：扣环在中间，我手抖。……你来，慢慢摘，我想让你看着。"
+    "首席修复师把定稿用的紫檀私印塞进你掌心",
+    "轻声重申说暗号就停的约定"
    ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_loft_chain",
+   "duration_minutes": 20,
+   "hook_ids": [
+    "h_jiang_scroll_tail",
+    "h_jiang_chain_clasp",
+    "h_jiang_sore_wrist"
+   ],
+   "id": "act_seal_entrusted",
    "location_ids": [
-    "loc_restorer_studio_loft"
+    "loc_multispectral_darkroom_vault"
    ],
-   "start_minute": 1380,
+   "start_minute": 1230,
    "tags": [
     "intimate"
    ],
-   "title": "摘下那副乳环金链"
-  },
-  {
-   "beats": [
-    "修复师在电炉上煮了一壶老白茶，煮得太浓，自己皱着眉喝了一口，又递给你。",
-    "修复师看你也皱眉，忍不住笑出声：……陪我苦一下，算你欠我的。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_loft_tea",
-   "location_ids": [
-    "loc_restorer_studio_loft"
-   ],
-   "start_minute": 1260,
-   "tags": [
-    "intimate"
-   ],
-   "title": "一壶煮过头的老白茶"
-  },
-  {
-   "beats": [
-    "天窗外下了一夜的雨，修复师裹着薄毯缩在藤榻里，给你让出半边。",
-    "修复师把冰凉的脚塞进你怀里取暖，闭着眼说：今天不补画了，陪我睡到中午。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_loft_rain_rattan",
-   "location_ids": [
-    "loc_restorer_studio_loft"
-   ],
-   "start_minute": 300,
-   "tags": [
-    "intimate"
-   ],
-   "title": "听雨挤在藤榻上"
+   "title": "紫檀印鉴贴身相托"
   }
  ],
  "default_npc_gender_mix": {
@@ -1476,7 +1541,7 @@
   "nonbinary": 0.0
  },
  "default_person": "second",
- "era": "当代北京国家博物馆宋画特展，开幕揭幕前二十秒",
+ "era": "当代北京国家博物馆，宋画特展揭幕前夕",
  "extends": null,
  "forbidden_terms": [
   "他",
@@ -1492,271 +1557,249 @@
  ],
  "hooks": [
   {
-   "id": "hook_01_mounting_roller_chain_snag_groan",
+   "id": "h_jiang_scroll_tail",
    "kind": "approach",
    "location_ids": [
     "loc_atrium_transparent_stage_center"
    ],
    "slot": "art_restorer_jiang_wan_ning",
-   "text": "耳麦里传来总调度低沉沉稳的倒数提醒，{art_restorer_jiang_wan_ning.name}俯身按平画芯时前胸却被一股冰冷阻力反向拉扯，十米重型电动升降罩随之发出轻微导轨轻颤！"
+   "text": "无影灯下，{npc.name}一身月白防静电工装俯在《千里秋江图》卷尾，隔着画案抬眼看了你一下，又垂眸示意那处墨色。"
   },
   {
-   "id": "hook_02_silk_robe_strain_jam",
-   "kind": "approach",
+   "id": "h_jiang_chain_clasp",
+   "kind": "request",
    "location_ids": [
-    "loc_atrium_transparent_stage_center"
+    "loc_restorer_studio_loft",
+    "loc_multispectral_darkroom_vault"
    ],
    "slot": "art_restorer_jiang_wan_ning",
-   "text": "{art_restorer_jiang_wan_ning.name}微微敛下颌保持高冷从容微笑，真丝工装长袍前襟内衬纯金乳环金链不知何时深深卡入了升降罩导轨减速机死角，前襟受拉紧绷欲裂动弹不得！"
+   "text": "{npc.name}把一枚细金链的副扣放进你掌心，指尖只碰了一下就收回：你收着。哪天你说出那两个字，我就停。"
   },
   {
-   "id": "hook_03_horn_knife_lever_extract",
+   "id": "h_jiang_sore_wrist",
    "kind": "approach",
-   "location_ids": [
-    "loc_atrium_transparent_stage_center"
-   ],
+   "location_ids": [],
    "slot": "art_restorer_jiang_wan_ning",
-   "text": "{art_restorer_jiang_wan_ning.name}单手抚纸稳如磐石维持端庄侧颜，右手极度自然优雅地顺势探向画案工具架，别在暗格间的特制加厚水牛角起画刀瞬间反握在指尖！"
+   "text": "{npc.name}放下笔，悄悄甩了甩发酸的手腕；见你看过来，只把手往袖子里收了收：没事，悬腕久了。"
   },
   {
-   "id": "hook_04_director_iron_standoff",
+   "id": "h_xie_log_blank",
    "kind": "approach",
    "location_ids": [
+    "loc_multispectral_darkroom_vault",
     "loc_atrium_transparent_stage_center"
    ],
    "slot": "env_director_xie_lin_chuan",
-   "text": "{env_director_xie_lin_chuan.name}手持监控平板高大身形一步跨至连廊石阶正前方，如铁壁般横在入口处冷声向大步踏来的理事长汇报微气压参数阻断逼近脚步！"
+   "text": "{npc.name}把后台记录调上暗房的屏幕，那段空白格外刺眼：你先看完，再决定要不要跟我说话。"
   },
   {
-   "id": "hook_05_assistant_paper_shield",
+   "id": "h_xie_strong_tea",
    "kind": "approach",
+   "location_ids": [],
+   "slot": "env_director_xie_lin_chuan",
+   "text": "{npc.name}端着两杯浓茶从调光台那头走来，眼底一片青：曲线总算稳了。陪我喝完这一杯？"
+  },
+  {
+   "id": "h_shen_color_card",
+   "kind": "observe",
    "location_ids": [
-    "loc_atrium_transparent_stage_center"
+    "loc_cabinet_spare_corridor"
    ],
    "slot": "assistant_shen_zhi_wei",
-   "text": "{assistant_shen_zhi_wei.name}站在画案侧前方敏锐察觉异样，干练迈步将两米特种宣纸夹板高高举起，严严实实挡住台下一切斜向窥探视线！"
+   "text": "{npc.name}退在恒湿展柜后方的备品暗廊口，手指紧紧攥着一方沾了矿物颜料的试色卡，看见你，眼眶先红了。"
   },
   {
-   "id": "hook_06_horn_knife_blade_into_roller_gap",
+   "id": "h_shen_sleeve_stain",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "assistant_shen_zhi_wei",
+   "text": "{npc.name}替你擦掉袖口沾的一点石青，声音压得很低：师姐那边，我有件事瞒了很久。"
+  },
+  {
+   "id": "h_pei_swipe_log",
    "kind": "approach",
    "location_ids": [
+    "loc_cabinet_spare_corridor",
     "loc_atrium_transparent_stage_center"
-   ],
-   "slot": "art_restorer_jiang_wan_ning",
-   "text": "水牛角起画刀平头薄刃顺着狭小升降罩缝隙精准探入阻尼绞绳下方，指尖清晰感知到导轨咬紧细绳的极大机械张力刚性！"
-  },
-  {
-   "id": "hook_07_trustee_footsteps_stairs",
-   "kind": "approach",
-   "location_ids": [
-    "loc_bridge_inspection_corridor_entrance"
-   ],
-   "slot": "trustee_zhou_yi_xuan",
-   "text": "青年理事长{trustee_zhou_yi_xuan.name}手持公文夹傲慢逼近，皮鞋踏在连廊铺毡石阶上发出沉闷步声，距离受困画案仅剩最后三步！"
-  },
-  {
-   "id": "hook_08_mechanic_supports_roller_bracket",
-   "kind": "approach",
-   "location_ids": [
-    "loc_roller_gear_housing_shadow_alcove"
    ],
    "slot": "mechanic_pei_tie_feng",
-   "text": "维保技师手持无尘布半掩在电机罩阴影处假装巡检，暗中借厚手套替修复师托住升降罩导轨底座分担下压破拆负荷！"
+   "text": "{npc.name}在展柜死角朝你招手，掌心压着一张刷卡日志的拷贝：这柜子昨晚开过，不是我开的。"
   },
   {
-   "id": "hook_09_wrist_twist_horn_knife_pop",
+   "id": "h_pei_vest_shoulder",
+   "kind": "approach",
+   "location_ids": [],
+   "slot": "mechanic_pei_tie_feng",
+   "text": "{npc.name}把防静电马甲往你肩上一搭：暗廊风冷，别站风口。说完就蹲回去调展台。"
+  },
+  {
+   "id": "h_zhao_viewfinder",
    "kind": "approach",
    "location_ids": [
-    "loc_atrium_transparent_stage_center"
+    "loc_macro_lens_camera_media_pit"
    ],
-   "slot": "art_restorer_jiang_wan_ning",
-   "text": "{art_restorer_jiang_wan_ning.name}美眸沉静秀唇微抿，单手运力稳如泰山，右手腕借升降罩金属外沿作为支点向斜前方施加三点五牛顿强劲微割力矩！"
+   "slot": "press_liaison_zhao_xiao_zhou",
+   "text": "外圈媒体长焦机位席里，{npc.name}举着长焦相机朝你偏了偏头，取景屏上还亮着刚才在连廊死角抓拍的照片。"
   },
   {
-   "id": "hook_10_gold_piercing_chain_snaps_free",
+   "id": "h_zhao_unsent_photo",
    "kind": "approach",
    "location_ids": [
-    "loc_atrium_transparent_stage_center"
-   ],
-   "slot": "art_restorer_jiang_wan_ning",
-   "text": "一声极细微的阻尼绞绳断裂清脆轻响迸发，咬死的缠绕细绳被精准割断，纯金乳环金链瞬间脱扣滑出，真丝工装长袍重获自由彻底解除死锁！"
-  },
-  {
-   "id": "hook_11_restorer_stands_tall_and_free",
-   "kind": "accident",
-   "location_ids": [
-    "loc_atrium_transparent_stage_center"
-   ],
-   "slot": "art_restorer_jiang_wan_ning",
-   "text": "解脱瞬间{art_restorer_jiang_wan_ning.name}优雅直身顺手抚平真丝长袍前襟，迈步迎着走入中庭的理事长露出无可挑剔的冷艳从容微笑！"
-  },
-  {
-   "id": "hook_12_flawless_restorer_poise_captured",
-   "kind": "observe",
-   "location_ids": [
-    "loc_atrium_transparent_stage_center"
-   ],
-   "slot": "env_director_xie_lin_chuan",
-   "text": "中庭冷光下的修复师冷艳孤傲仪态万千宛若不染凡尘仙子，清绝出尘的气场引得观摩席数百名文博专家爆发出由衷赞叹！"
-  },
-  {
-   "id": "hook_13_grand_mounting_standing_ovation",
-   "kind": "observe",
-   "location_ids": [
-    "loc_atrium_transparent_stage_center"
-   ],
-   "slot": "art_restorer_jiang_wan_ning",
-   "text": "宋画真迹平整展开定格下毫无褶皱惊艳神采，终场起画瞬间全场起立鼓掌，{art_restorer_jiang_wan_ning.name}展袖定格下世纪特展神级高光！"
-  },
-  {
-   "id": "hook_14_trustee_retreats_in_awe",
-   "kind": "request",
-   "location_ids": [
+    "loc_multispectral_darkroom_vault",
     "loc_bridge_inspection_corridor_entrance"
    ],
-   "slot": "trustee_zhou_yi_xuan",
-   "text": "被总工冷峻气场正面迫退且被女修复师无瑕文博风采震撼的理事长只得悻悻收起轻佻，规规矩矩合起公文夹站在台阶边鼓掌致敬！"
+   "slot": "press_liaison_zhao_xiao_zhou",
+   "text": "{npc.name}拉了拉你的衣袖，把相机屏幕转向你：这张我还没发。你说，发不发？"
   },
   {
-   "id": "hook_15_horn_knife_tucked_whisper_smile",
-   "kind": "request",
-   "location_ids": [
-    "loc_atrium_transparent_stage_center"
-   ],
-   "slot": "art_restorer_jiang_wan_ning",
-   "text": "琴音流淌掌声雷动间隙{art_restorer_jiang_wan_ning.name}优雅将牛角起画刀悄然插回暗格，隔着画案与总调度清冷相视一笑尽显顶级默契的守护柔情！"
-  },
-  {
-   "id": "hook_restorer_loft_ladder",
+   "id": "h_zhou_unsigned_form",
    "kind": "approach",
    "location_ids": [
-    "loc_restorer_studio_loft"
+    "loc_bridge_inspection_corridor_entrance",
+    "loc_atrium_transparent_stage_center"
    ],
-   "slot": "art_restorer_jiang_wan_ning",
-   "text": "{npc.name}站在阁楼木梯上往下看：展厅关了。……上来喝杯茶？"
+   "slot": "trustee_zhou_yi_xuan",
+   "text": "观摩连廊石阶上脚步声渐近，{npc.name}带着几位评议专家走来，手里捏着一份没签的终审验收单，远远朝你点了点头。"
+  },
+  {
+   "id": "h_zhou_trustee_card",
+   "kind": "request",
+   "location_ids": [],
+   "slot": "trustee_zhou_yi_xuan",
+   "text": "{npc.name}把一张基金会特聘理事的名片放在你手边，笑意温文：不急，揭幕前想好就行。"
   }
  ],
  "id": "art_restorer_roller_piercing_jam",
  "locations": [
   {
    "affordances": [
-    "以冷艳从容国宝修复师姿态单手抚纸维持侧颜",
-    "借水牛角起画刀极硬割刃探入升降罩死角实施割断自救"
+    "借俯身托裱的姿势低声交换一句话",
+    "按下雾化总闸，让四周转成乳白"
    ],
-   "detail": "悬挂在三十米挑空展厅中央的全景透明玻璃工作台，四周无立柱阻隔，长达十米的重型电动羊升降罩横跨在红木大画案上方，四周环绕着平静明亮的冷光与外圈观摩视线。",
+   "detail": "悬在三十米挑空展厅中央的全景玻璃工作台，红木大画案上摊着《千里秋江图》，四周玻璃能一键雾化成磨砂。",
    "exits": [
-    "loc_roller_gear_housing_shadow_alcove",
     "loc_bridge_inspection_corridor_entrance",
+    "loc_cabinet_spare_corridor",
     "loc_macro_lens_camera_media_pit"
    ],
    "id": "loc_atrium_transparent_stage_center",
-   "name": "玻璃修复中庭",
-   "pressure_modifiers": {
-    "press_mounting_roller_gold_chain_pinch": "电动升降罩死死绞住纯金乳环链加剧工装前襟撕裂与勒痛",
-    "press_trustee_twenty_second_rush": "文保高管皮鞋踏上连廊台阶加剧二十秒逼近绝境"
-   },
+   "name": "悬空玻璃修复中庭",
+   "pressure_modifiers": {},
    "privacy": "public",
-   "tags": [],
-   "visibility": "四周数百名鉴赏专家与长焦机群无死角平视俯视，冷光无影灯聚焦，工装领口与身姿细节分毫毕现。",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "四面透明，外圈几十支长焦镜头和观摩专家看得见画案上每一个动作。",
    "witnesses": [
-    "bg_env_director_xie_lin_chuan",
-    "bg_assistant_shen_zhi_wei"
+    "bg_atrium_duty_engineer",
+    "bg_senior_museum_expert"
    ]
   },
   {
    "affordances": [
-    "借升降罩金属外沿作为起画刀杠杆支点",
-    "在死角内借呼吸运力实施微观物理切割自救"
+    "并肩坐在石阶上俯瞰画案",
+    "在人前隔着几级台阶交换眼神"
    ],
-   "detail": "升降罩碳纤维保护罩与高精度伺服电机机箱侧面的逼仄间隙，尼龙阻尼牵引绳与纯金细链正死死卡在减速机齿轮与导轨缝隙。",
+   "detail": "连通贵宾观摩平台与中庭画案的铺毡石阶，散场后空荡荡的，能俯瞰整片画案。",
    "exits": [
     "loc_atrium_transparent_stage_center",
-    "loc_bridge_inspection_corridor_entrance",
-    "loc_macro_lens_camera_media_pit"
-   ],
-   "id": "loc_roller_gear_housing_shadow_alcove",
-   "name": "齿轮箱死角",
-   "pressure_modifiers": {
-    "press_horn_knife_blade_slip_risk": "起画刀刃端在光滑镀铬导轨上打滑加剧划破真迹风险",
-    "press_macro_lens_scrutiny_dread": "外围长焦大炮锁焦加剧乳环金链与内衬曝光恐慌"
-   },
-   "privacy": "semi",
-   "tags": [],
-   "visibility": "机箱外壳遮挡侧面视线，但若从连廊石阶正面走来，前襟撕裂大半露出的雪白锁骨与贴身背心一览无遗。",
-   "witnesses": [
-    "bg_mechanic_pei_tie_feng",
-    "bg_press_liaison_zhao_xiao_zhou"
-   ]
-  },
-  {
-   "affordances": [
-    "以清绝出尘眼神注视高管脚步迫使其步伐在文博礼仪下放缓",
-    "倾听皮鞋踏毡脚步声精准计算自救秒数"
-   ],
-   "detail": "连通贵宾观摩平台与悬空中庭主画案的铺设无尘地毡迎宾石阶，文保基金会青年理事长正手持特展批件昂首大步走来。",
-   "exits": [
-    "loc_atrium_transparent_stage_center",
-    "loc_roller_gear_housing_shadow_alcove",
     "loc_macro_lens_camera_media_pit"
    ],
    "id": "loc_bridge_inspection_corridor_entrance",
    "name": "观摩连廊石阶",
-   "pressure_modifiers": {
-    "press_silk_robe_strain_tear_panic": "牵拉导致真丝工装缝线断裂微响加剧当众撕裂露底恐惧",
-    "press_trustee_twenty_second_rush": "文保高管登台迫近加剧开除通报与行业除名危机"
-   },
+   "pressure_modifiers": {},
    "privacy": "public",
-   "tags": [],
-   "visibility": "石阶直面画案操作区，走上每一步皆将居高临下看清主讲修复师胸口状态与身姿异常。",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "人来人往，谁在石阶上停了多久，评论家和保卫处都看在眼里。",
    "witnesses": [
-    "bg_trustee_zhou_yi_xuan",
-    "bg_env_director_xie_lin_chuan"
+    "bg_museum_security_captain",
+    "bg_hired_art_critic",
+    "bg_trustee_secretary"
    ]
   },
   {
    "affordances": [
-    "观察镜头仰角避开前襟开缝阴影盲区",
-    "借恒温恒湿通风微鸣声掩盖起画刀挑断细绳清脆脆响"
+    "合捧一杯热茶躲开中庭的视线",
+    "用身体挡住侧面探来的目光"
    ],
-   "detail": "距离中庭修复画案仅五米之遥的外圈环形媒体观摩席，数十名文博摄影记者正手持超大口径长焦镜头紧贴玻璃围栏捕捉国宝修复瞬间。",
+   "detail": "恒湿展柜背后一条窄长的备品廊，两侧是半透明的气密玻璃门，墙边码着备用画轴和一套紫砂茶具。",
    "exits": [
     "loc_atrium_transparent_stage_center",
-    "loc_roller_gear_housing_shadow_alcove",
+    "loc_multispectral_darkroom_vault"
+   ],
+   "id": "loc_cabinet_spare_corridor",
+   "name": "展柜后方备品暗廊",
+   "pressure_modifiers": {},
+   "privacy": "semi",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "玻璃门是磨砂的，人影看得见，脸看不清；侧面连廊偶尔有人探头。",
+   "witnesses": []
+  },
+  {
+   "affordances": [
+    "借取景器看中庭的光影",
+    "躲在器材箱后翻看刚拍的照片"
+   ],
+   "detail": "离画案五米的环形媒体席，长焦镜头沿玻璃围栏架成一排，后排堆着器材箱。",
+   "exits": [
+    "loc_atrium_transparent_stage_center",
     "loc_bridge_inspection_corridor_entrance",
     "loc_restorer_studio_loft"
    ],
    "id": "loc_macro_lens_camera_media_pit",
-   "name": "媒体机位席",
-   "pressure_modifiers": {
-    "press_horn_knife_blade_slip_risk": "上身维持单手托纸前倾侧立加剧单足与腰部肌肉酸胀",
-    "press_macro_lens_scrutiny_dread": "长焦镜头密集抓拍加剧私密乳环金链曝光沦为八卦头条恐慌"
-   },
+   "name": "外圈媒体长焦机位席",
+   "pressure_modifiers": {},
    "privacy": "semi",
-   "tags": [],
-   "visibility": "数十台单反取景器全时段锁定画案，任何工装破损或神情失态皆难逃数倍光学变焦特写。",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "前排镜头全对着画案，后排器材箱后头的角落没人留意。",
    "witnesses": [
-    "bg_assistant_shen_zhi_wei",
-    "bg_press_liaison_zhao_xiao_zhou"
+    "bg_senior_museum_expert"
    ]
   },
   {
    "affordances": [
-    "陪修复师调一碟颜料",
-    "替修复师摘下那副乳环金链",
+    "陪修复师调一碟石青",
     "收起通往阁楼的木梯"
    ],
-   "detail": "修复中心顶层的一间阁楼，斜屋顶开着天窗，长桌上摊着待补的绢本和一排排毛笔，角落一张旧藤榻铺着薄毯，空气里是糨糊和松烟墨的味道。",
+   "detail": "修复中心顶层的阁楼，斜屋顶开着天窗，长桌上摊着待补的绢本和一排毛笔，角落一张旧软榻铺着薄毯，空气里是糨糊和松烟墨的味道。",
    "exits": [
-    "loc_macro_lens_camera_media_pit"
+    "loc_macro_lens_camera_media_pit",
+    "loc_multispectral_darkroom_vault"
    ],
    "id": "loc_restorer_studio_loft",
-   "name": "修复中心的阁楼工作室",
+   "name": "修复中心阁楼工作室",
    "pressure_modifiers": {},
    "privacy": "private",
    "tags": [
     "intimate"
    ],
-   "visibility": "木梯一收，楼下展厅的空调声远得像隔了一座山，只剩天窗外的雨声。",
+   "visibility": "木梯一收，楼下展厅的声响远得像隔了一座山，只剩天窗外的风声。",
+   "witnesses": []
+  },
+  {
+   "affordances": [
+    "肩挨着肩凑近观片灯",
+    "在红光下摊开化验图谱"
+   ],
+   "detail": "修复中心地下的暗房兼档案室，只亮一盏红色安全灯和一台观片灯，铁柜里锁着历次修复的原始底片。",
+   "exits": [
+    "loc_cabinet_spare_corridor",
+    "loc_restorer_studio_loft"
+   ],
+   "id": "loc_multispectral_darkroom_vault",
+   "name": "多光谱暗房档案室",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "双人门禁，门一关外头什么也看不见，只在后台留一条进出记录。",
    "witnesses": []
   }
  ],
@@ -1845,59 +1888,29 @@
   ],
   "order": "family_first"
  },
- "notes": "按原稿加入，保留国家级文博特展的全景玻璃修复中庭、四周几百位专家和观众、冷艳古画修复师处理国宝宋画时工装前襟和贴身的乳环金链被机械咬死、前襟撕开一大片、文保高管走到修复台只剩二十秒、单手扶纸维持端庄、用牛角起画刀割断阻尼绞绳的骨架与冷艳色气的味道。按用户确认的去重方案，咬人的机关从装裱滚轴改成恒湿展柜的电动升降玻璃罩，与热压裱画机的画师世界拉开。原稿的时代、地点、开局时刻和基调是从学生会长世界复制的，已重写；背景人物里与主要角色同名的几位改成了独立的人。女主年龄拉开到二十七到三十岁，总调度三十一到三十五岁。用户已放开内容限制、色情尺度优先，只守红线；卡住的险情期间不写性互动。新增修复中心楼上的修复师值班室与四个亲密日常。",
+ "notes": "按原稿加入，保留国家级文博特展的全景玻璃修复中庭、四周几百位专家和观众、冷艳古画修复师处理国宝宋画时工装前襟和贴身的乳环金链被机械咬死、前襟撕开一大片、文保高管走到修复台只剩二十秒、单手扶纸维持端庄、用牛角起画刀割断阻尼绞绳的骨架与冷艳色气的味道。按用户确认的去重方案，咬人的机关从装裱滚轴改成恒湿展柜的电动升降玻璃罩，与热压裱画机的画师世界拉开。原稿的时代、地点、开局时刻和基调是从学生会长世界复制的，已重写；背景人物里与主要角色同名的几位改成了独立的人。女主年龄拉开到二十七到三十岁，总调度三十一到三十五岁。用户已放开内容限制、色情尺度优先，只守红线；卡住的险情期间不写性互动。新增修复中心楼上的修复师值班室与四个亲密日常。\n2026-10-24 按写作规则 v2 与 Gemini 创意卡改造：去掉升降罩咬住金链、拿起画刀割绞绳的抢修戏，张力换成卷尾伪款栽赃、终审验收单与千万赞助、试色卡抓拍和监控盲区两笔把柄，以及悬空透明中庭外长焦镜头的凝视；伪款口径统一为理事长私藏的乾隆年间老墨掺现代合成胶做旧。",
  "player_identities": [
   {
    "age_range": [
     32,
-    36
+    40
    ],
-   "baseline": "建筑环境与控制系毕业达到法定成年要求，持有国家级文博特展技术总控执业资质，统筹负责中庭微气候循环与升降罩电力控制。",
+   "baseline": "统筹悬空玻璃中庭的光电环境与展柜封存，揭幕前每座展柜都要你贴上终审封条。",
    "gender": "any",
    "id": "pi_atrium_env_chief_director",
-   "reputation": "对文博展区环境微气候毫秒级调控了如指掌的工程专家",
+   "reputation": "馆里出了名的较真，封条从不替人通融",
    "resources": [
-    "升降罩电机紧急断电手持遥控器",
-    "悬空中庭柔光散色微调面板"
+    "中庭玻璃雾化遮蔽总闸与展柜终审封条"
    ],
    "risks": [
-    "若中庭升降罩卡滞导致国宝受损将承担重大文博事故追责"
+    "展柜出了岔子，第一个被问责的就是贴封条的人"
    ],
-   "role": "悬空玻璃中庭环境控制总指挥",
+   "role": "特展场馆总控与安防督导",
    "social_position": "high",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}总调度"
-    },
-    {
-     "gender": "any",
-     "pattern": "{given}工"
-    }
-   ]
-  },
-  {
-   "age_range": [
-    30,
-    34
-   ],
-   "baseline": "古代文献与书画保护专业毕业，年满三十周岁整，依法享有完全民事责任自立能力，负责宣纸浆糊配比与操作台辅助工具调配。",
-   "gender": "any",
-   "id": "pi_restoration_deputy_assistant",
-   "reputation": "心细如发且深谙古法装裱要领的文保骨干",
-   "resources": [
-    "特制加厚羊毫排笔与宣纸夹板",
-    "操作台备用无水酒精清洁棉片"
-   ],
-   "risks": [
-    "配料出现瑕疵将面临文博专家委员会严厉批评处分"
-   ],
-   "role": "书画修复首席副手兼物料协同管",
-   "social_position": "high",
-   "title_patterns": [
-    {
-     "gender": "any",
-     "pattern": "{family}副手"
+     "pattern": "{family}督导"
     },
     {
      "gender": "any",
@@ -1907,428 +1920,549 @@
   },
   {
    "age_range": [
-    32,
-    36
+    30,
+    40
    ],
-   "baseline": "机械电子学科毕业达到法定成年标准，依法享有完全民事自立资格，负责十米级升降罩伺服减速机与气动阻尼日常校准。",
+   "baseline": "受研究院特聘，与首席修复师共同签署国宝展前定稿报告；专家组联签缺你一票就过不了。",
    "gender": "any",
-   "id": "pi_mounting_roller_mechanic_lead",
-   "reputation": "专精大型电动升降罩微米级行程调教的工匠",
+   "id": "pi_restoration_appraisal_supervisor",
+   "reputation": "眼睛毒，一笔墨色的深浅都瞒不过",
    "resources": [
-    "文保专用无挥发特种硅油喷雾",
-    "扁平加厚硬质钛合金挑针工具"
+    "紫外线多光谱底片与专家组联签否决权"
    ],
    "risks": [
-    "升降罩机械咬死将承担严重的设备停运扣罚"
+    "联签的报告若藏着伪款，你的名字会和修复组绑在一起"
    ],
-   "role": "电动升降罩机械成年技师",
-   "social_position": "equal",
+   "role": "院派特聘古画鉴定与修复督导",
+   "social_position": "high",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}师傅"
+     "pattern": "{family}老师"
     },
     {
      "gender": "any",
-     "pattern": "{given}技师"
+     "pattern": "{given}"
     }
    ]
   },
   {
    "age_range": [
-    27,
-    31
+    28,
+    36
    ],
-   "baseline": "文物摄影与融媒体系毕业，年满二十七周岁成年人，享有法律赋予的合法采访报道权益，负责外围长焦单反镜头与公众观摩动线管理。",
+   "baseline": "负责宋画入柜前后的恒湿密封与灯光校准，展柜内腔和后方的备品暗廊都归你管。",
    "gender": "any",
-   "id": "pi_museum_press_media_liaison",
-   "reputation": "在文博媒体圈具备高度公信力的青年记者",
+   "id": "pi_display_case_engineer",
+   "reputation": "手稳，湿度差一个点都逃不过你的眼睛",
    "resources": [
-    "大幅面便携式宣纸遮光屏风板",
-    "超清无线广角云台监视器"
+    "展柜内腔独立操作权限与设备暗廊钥匙"
    ],
    "risks": [
-    "拍摄未公开古画修复细节流出将承担法律追责"
+    "展柜被人私开过，你的权限记录也躺在同一份日志里"
    ],
-   "role": "文博特展见习记录员兼媒体联络",
+   "role": "文保恒湿展柜与微环境工程师",
+   "social_position": "equal",
+   "title_patterns": [
+    {
+     "gender": "any",
+     "pattern": "{family}工"
+    },
+    {
+     "gender": "any",
+     "pattern": "{given}"
+    }
+   ]
+  },
+  {
+   "age_range": [
+    24,
+    31
+   ],
+   "baseline": "跟拍修复收尾影像、核发内场机位牌，谁都能使唤你，可每张原始底片都过你的手。",
+   "gender": "any",
+   "id": "pi_museum_press_media_liaison",
+   "reputation": "跑得勤、嘴严，馆里上下都放心",
+   "resources": [
+    "原始微距底片存储卡与清场提示牌"
+   ],
+   "risks": [
+    "底片要是流出去，第一个被查的就是你"
+   ],
+   "role": "特展档案记录员兼内场媒体协调员",
    "social_position": "low",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}记者"
+     "pattern": "小{family}"
     },
     {
      "gender": "any",
-     "pattern": "小{given}"
+     "pattern": "{given}"
     }
    ]
   }
  ],
- "premise": "国家博物馆的宋画特展下周揭幕，冷艳的古画修复师每天在悬空全景玻璃中庭里给国宝宋画补笔，环境控制总指挥、修复副手和升降罩技师寸步不离。修复师防静电工装底下，乳尖穿着一副纯金细链的穿环，谁也不知道。恒湿展柜的电动升降玻璃罩是新装的，阻尼绞绳偶尔会提前收紧。",
+ "premise": "国家博物馆的宋画特展即将揭幕，首席古画修复师每天在悬空全景玻璃中庭里为国宝宋画做最后的展前全色与托裱核验，中庭技术总调度、修复副手与展柜技师在旁协同。外圈观摩连廊上架满了媒体与学界的长焦镜头，所有展品与修复档案都要在揭幕礼开始前封柜定稿。",
  "pressures": [
   {
-   "choice": "选择借起画刀微翘平头硬角杠杆下压割断细绳，抑或盲目硬扯导致工装崩脱当众露底走光。",
+   "choice": "保副手的前程，还是保住揭穿伪款的筹码？",
    "exits": [
     {
-     "cost": "锁骨娇嫩肌肤被纯金细链勒出淡淡红印且单手盲操指尖酸麻。",
-     "option": "借助特制加厚淬火水牛角起画刀找准三点五牛顿力矩精准割断绞绳自救脱钩。"
+     "cost": "你得交出多光谱暗房的一手化验底片",
+     "option": "用揭秘伪款的独家头条换记者删掉照片"
     },
     {
-     "cost": "需要工程师承担未经报备介入修复区的微弱违纪风险。",
-     "option": "由维保工程师升降罩技师在暗处用手掌稳住导轨底座分担下压破拆扭矩。"
+     "cost": "你替副手背上展前保密疏漏的处分",
+     "option": "由你签字证明那张试色卡是公开宣传样卡"
+    },
+    {
+     "cost": "副手当场被取消海外研修资格，调离修复组",
+     "option": "任由记者把照片发回编辑部"
     }
    ],
    "far": {
-    "consequence": "造成灾难性文博特展名誉事故，首席修复师执业生涯彻底终结遭行业除名。",
-    "due_days": 1,
-    "trigger": "女修复师在数百名文博专家前狼狈崩裳走光"
+    "consequence": "副手被调离修复组，首席修复师也被扣上监管失职。",
+    "due_days": 2,
+    "trigger": "照片登上文博头条"
+   },
+   "flags": [
+    "timed",
+    "leverage"
+   ],
+   "hook_ids": [],
+   "id": "p_color_card_snapshot",
+   "immediate": {
+    "minutes": 5,
+    "text": "记者把相机屏幕转过来，手指停在发送键上。"
+   },
+   "leverage": {
+    "basis": "{press_liaison_zhao_xiao_zhou.name}握着{assistant_shen_zhi_wei.name}私下把修复试色卡交给基金会秘书的高清连拍",
+    "holder": "press_liaison_zhao_xiao_zhou",
+    "subject": "assistant_shen_zhi_wei"
+   },
+   "location_ids": [
+    "loc_multispectral_darkroom_vault"
+   ],
+   "near": {
+    "deadline_minutes": 300,
+    "text": "编辑部等着揭幕礼的独家，记者要天亮前给个答复。"
+   },
+   "objective": "在照片发回编辑部之前，替副手找一条退路。",
+   "source": "person",
+   "start_minute": 1200,
+   "tags": [
+    "workplace"
+   ],
+   "title": "连廊死角的试色卡抓拍",
+   "trigger": "记者在多光谱暗房调出高清连拍，照片上清楚拍到副手在连廊死角把未定稿的补笔试色卡交给理事长秘书。"
+  },
+  {
+   "choice": "保总调度，还是把开柜的人一并揪出来？",
+   "exits": [
+    {
+     "cost": "总调度仍要因违规关监控停职受查",
+     "option": "联合技师和总调度恢复备机云端录像，直指理事长秘书"
+    },
+    {
+     "cost": "你的工号从此和这次展柜异常绑在一起",
+     "option": "由你出面把那段空白定为系统例行压力测试"
+    },
+    {
+     "cost": "中庭当场戒严停展，首席修复师也得留馆接受质询",
+     "option": "立刻把日志呈报馆方保卫处"
+    }
+   ],
+   "far": {
+    "consequence": "技术组全员停职，揭幕礼改期，基金会趁机撤资。",
+    "due_days": 2,
+    "trigger": "监控空白被馆方查出"
+   },
+   "flags": [
+    "timed",
+    "leverage"
+   ],
+   "hook_ids": [],
+   "id": "p_monitor_blind_minutes",
+   "immediate": {
+    "minutes": 5,
+    "text": "技师把日志拷贝攥在手里，纸角被冷风吹得直抖。"
+   },
+   "leverage": {
+    "basis": "{mechanic_pei_tie_feng.name}握着{env_director_xie_lin_chuan.name}违规关闭国宝展厅主监控的工号记录",
+    "holder": "mechanic_pei_tie_feng",
+    "subject": "env_director_xie_lin_chuan"
+   },
+   "location_ids": [
+    "loc_cabinet_spare_corridor"
+   ],
+   "near": {
+    "deadline_minutes": 240,
+    "text": "保卫处揭幕前要复核全场监控，那段空白藏不住。"
+   },
+   "objective": "在保卫处复核监控之前，决定这份日志交给谁。",
+   "source": "person",
+   "start_minute": 1260,
+   "tags": [
+    "workplace"
+   ],
+   "title": "监控盲区的后台工号",
+   "trigger": "技师在备品暗廊亮出展柜底层的黑匣子日志：昨晚展柜被私开时，正是总调度的工号关掉了中庭主监控。"
+  },
+  {
+   "choice": "雾化遮挡，还是用身体去挡？",
+   "exits": [
+    {
+     "cost": "理事长当众质疑修复演示搞黑箱",
+     "option": "启动中庭雾化玻璃，四周转成磨砂"
+    },
+    {
+     "cost": "被观摩席专家点名批评遮挡视线",
+     "option": "端起宽幅托盘站到画案正前方挡住镜头"
+    },
+    {
+     "cost": "《千里秋江图》短暂离开了首席修复师的视线",
+     "option": "借核对画轴护送修复师退进备品暗廊整理衣襟"
+    }
+   ],
+   "far": {
+    "consequence": "修复师的私事成了八卦头条，特展的口碑跟着塌了。",
+    "due_days": 3,
+    "trigger": "特写照片流到网上"
    },
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
-   "id": "press_mounting_roller_gold_chain_pinch",
+   "hook_ids": [
+    "h_jiang_scroll_tail",
+    "h_jiang_chain_clasp",
+    "h_jiang_sore_wrist"
+   ],
+   "id": "p_long_lens_lock_focus",
    "immediate": {
-    "minutes": 1,
-    "text": "坚硬金属升降罩死死卡住细链，胸口被反向拽死在画案前，动弹不得。"
+    "minutes": 3,
+    "text": "取景器旁的红点一个接一个亮起来。"
    },
    "leverage": null,
    "location_ids": [
     "loc_atrium_transparent_stage_center"
    ],
    "near": {
-    "deadline_minutes": 2,
-    "text": "若无法在二十秒内解除绞合，上身后仰将直接扯烂真丝长袍露出贴身春光引发全网轰动。"
+    "deadline_minutes": 60,
+    "text": "揭幕前的中庭演示还没结束，镜头不会移开。"
    },
-   "objective": "在真丝工装彻底撕裂前用水牛角起画刀淬火锋刃割断绞绳脱钩自救。",
-   "source": "accident",
-   "start_minute": 132,
+   "objective": "在快门按下之前，把那一线金光挡住。",
+   "source": "person",
+   "start_minute": 1150,
    "tags": [
-    "disaster"
+    "intimate"
    ],
-   "title": "升降罩咬死乳环金链剧痛",
-   "trigger": "按平画芯动作导致锁骨穿孔金链被十米升降罩减速机死死卡在机械缝隙。"
+   "title": "长焦镜头的锁焦",
+   "trigger": "外圈媒体席几十支长焦镜头对准中庭画案，首席修复师俯身时，月白工装领口里滑出一线细金链的光。"
   },
   {
-   "choice": "选择争分夺秒单手盲操起画刀自救，抑或在对讲机中呼救引发全场特展叫停大乱。",
+   "choice": "当场自证，还是请人闭门复核？",
    "exits": [
     {
-     "cost": "若最终仍未解脱将承担顶撞资方领导的当场问责处分。",
-     "option": "技术总指挥总调度以汇报微气压参数为由挺身横阻在理事长身前争取时间。"
+     "cost": "公开打了基金会的脸，千万赞助当场冻结",
+     "option": "在连廊大屏投出入馆时的原始多光谱扫描图自证清白"
     },
     {
-     "cost": "承受超负荷心理紧绷与指骨极度酸痛。",
-     "option": "修复师指尖爆发极强稳定性在倒数第三秒挑落金属细链从容拉拢前襟。"
+     "cost": "副手私交试色卡的事容易被理事长反咬一口",
+     "option": "请副手拿出颜料胶料领用台账，证明修复组从没领过乾隆老墨，也没进过合成胶"
+    },
+    {
+     "cost": "媒体席立刻发出“国博特展临场停摆”的快讯",
+     "option": "宣布推迟揭幕，请馆方老专家闭门复核"
     }
    ],
    "far": {
-    "consequence": "世纪大展签约当场告吹，面临文保基金会巨额连带索赔追责。",
-    "due_days": 1,
-    "trigger": "全国文博直播曝光女修复师受困受辱窘态"
+    "consequence": "修复组被暂停一切国宝修复资格，等专家组复查。",
+    "due_days": 3,
+    "trigger": "“首席修复师毁画”见报"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [],
-   "id": "press_trustee_twenty_second_rush",
+   "id": "p_ruined_brush_rumor",
    "immediate": {
-    "minutes": 1,
-    "text": "耳麦中二十秒倒数读秒清晰可闻，理事长傲慢挑剔的目光正隔着石阶扫视画案。"
+    "minutes": 5,
+    "text": "议论声顺着连廊传开，有记者回头看了一眼。"
    },
    "leverage": null,
    "location_ids": [
     "loc_bridge_inspection_corridor_entrance"
    ],
    "near": {
-    "deadline_minutes": 2,
-    "text": "倒数归零若修复师呈现身体受拽下装撕裂姿态，走下石阶的视线将把受困丑态暴露无遗。"
+    "deadline_minutes": 180,
+    "text": "评论家的短评今晚就要见报。"
    },
-   "objective": "在理事长完全踏入中庭前解除束缚并抚平长袍从容起画了结危机。",
-   "source": "institution",
-   "start_minute": 133,
-   "tags": [],
-   "title": "文保基金理事长登台视察二十秒倒数",
-   "trigger": "总调度在耳麦中确认理事长登台倒数，皮鞋踏毡步声正一步一步向画案逼近。"
-  },
-  {
-   "choice": "选择由首席副手高举宣纸展板阻挡，抑或任由长焦镜头抓拍到死锁细节沦为头条丑闻。",
-   "exits": [
-    {
-     "cost": "可能遭受老专家关于展示站位偏离辅助席的批评。",
-     "option": "修复副手优雅大跨步挥展两米特种宣纸夹板遮挡修复师侧前方死锁盲区。"
-    },
-    {
-     "cost": "需要公关人员承担来自媒体同行的抱怨压力。",
-     "option": "见习记者文博记者果断推移大幅宣纸遮光屏风彻底阻断前沿低角度窥视视线。"
-    }
-   ],
-   "far": {
-    "consequence": "古书画首席女修复师形象瞬间粉碎，遭遇全网恶俗网络暴力声讨。",
-    "due_days": 1,
-    "trigger": "私密乳环金链受困细节被文博媒体大肆散播"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_macro_lens_scrutiny_dread",
-   "immediate": {
-    "minutes": 1,
-    "text": "单反快门声如雨点般传来，长焦镜头密集对准画案，前襟微小细节无处遁形。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_atrium_transparent_stage_center"
-   ],
-   "near": {
-    "deadline_minutes": 2,
-    "text": "摄影师镜头只要下移半寸即可看清修复师乳环金链卡死在升降罩上的窘态并大声喧哗。"
-   },
-   "objective": "在长焦镜头捕捉到穿孔金链与工装撕裂前构筑防线或完成自救脱钩。",
-   "source": "person",
-   "start_minute": 133,
-   "tags": [],
-   "title": "悬空中庭外圈数十家长焦大炮长距离锁焦",
-   "trigger": "外圈观摩席数十名文博摄影记者隔着五米连拍，长焦镜头死死锁定画案前襟细节。"
-  },
-  {
-   "choice": "选择调整呼吸沉稳发力微割，抑或因起画刀打滑脱落彻底丧失唯一工具并割裂宋画真迹。",
-   "exits": [
-    {
-     "cost": "消耗最后宝贵的两秒钟并加大指骨关节受压酸胀。",
-     "option": "手腕向内微旋用牛角刀加厚平头硬角死死咬稳细绳凹槽向前微挑。"
-    },
-    {
-     "cost": "需要技师极度隐蔽配合防止引来理事长视线。",
-     "option": "维保技师升降罩技师在暗处用特制挑针协助固定导轨防止起画刀滑动。"
-    }
-   ],
-   "far": {
-    "consequence": "只能任由数百名鉴赏专家与长焦机群全景围观惨烈社死。",
-    "due_days": 1,
-    "trigger": "起画刀脱落或割裂古画大面积走光"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_horn_knife_blade_slip_risk",
-   "immediate": {
-    "minutes": 1,
-    "text": "水牛角起画刀在光滑金属升降罩上发出极轻微滑动微响，心跳几乎停滞。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_atrium_transparent_stage_center"
-   ],
-   "near": {
-    "deadline_minutes": 2,
-    "text": "若起画刀滑脱落地，不仅无法割断细绳更会导致身体受惯性反弹扯烂整件真丝长袍。"
-   },
-   "objective": "稳住指尖发力反手以起画刀平头硬角死死咬住细绳根部精准向前划开。",
-   "source": "person",
-   "start_minute": 134,
-   "tags": [],
-   "title": "升降罩镀铬曲面起画刀打滑风险",
-   "trigger": "紧张冷汗与镀铬升降罩光滑圆弧表面导致牛角起画刀薄刃在细绳卡槽边缘产生滑动。"
-  },
-  {
-   "choice": "选择忍受牵拉维持前倾身姿，抑或动作变形导致长袍撕开春光大泄。",
-   "exits": [
-    {
-     "cost": "手臂因别扭承重姿势产生剧烈酸痛感。",
-     "option": "用左手自然按在画案无墨宣纸区为身体平衡分担倾斜拉力。"
-    },
-    {
-     "cost": "双人贴身站位过紧可能略微影响主台全景展示。",
-     "option": "师妹修复副手并肩侧立以自身天青围裙下摆恰到好处遮蔽修复师侧翼。"
-    }
-   ],
-   "far": {
-    "consequence": "国家级古画特展修复师称号当场吊销，身败名裂面临全球媒体恶俗头条。",
-    "due_days": 1,
-    "trigger": "女修复师工装长袍在众目睽睽下当场撕裂走光"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_silk_robe_strain_tear_panic",
-   "immediate": {
-    "minutes": 1,
-    "text": "月白真丝暗纹防静电工装长袍前襟极度紧绷，锁骨受拉，内衬边缘岌岌可危。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_atrium_transparent_stage_center"
-   ],
-   "near": {
-    "deadline_minutes": 2,
-    "text": "缝线一旦彻底绷断整条长袍将直接向前扯开大面积暴露贴身春光。"
-   },
-   "objective": "在真丝长袍彻底撕裂露底走光前完成脱扣并迅速拉拢前襟恢复端庄仪态。",
-   "source": "nature",
-   "start_minute": 134,
+   "objective": "在流言写进媒体短评之前，把卷尾墨色的来历说清。",
+   "source": "rumor",
+   "start_minute": 1170,
    "tags": [
-    "disaster"
+    "workplace"
    ],
-   "title": "月白真丝防静电工装长袍前襟撕裂走光",
-   "trigger": "细链被死死扣住而身体受升降罩微转牵引导致真丝长袍前襟缝线发出紧绷脆响。"
+   "title": "补笔毁画的观摩席流言",
+   "trigger": "几名打点过的评论家在观摩连廊石阶上高声议论，说《千里秋江图》卷尾墨色浮躁，是首席修复师展前补笔失手。"
   },
   {
-   "choice": "选择顶住开演重压完成硬核牛角刀自救，抑或被恐怖高压击垮彻底慌乱失措。",
+   "choice": "保住赞助，还是保住修复组的清誉？",
    "exits": [
     {
-     "cost": "需要极强的专业心理素质瞬间切换神态展现一线国宝守护者风骨。",
-     "option": "挑落细链瞬间以无瑕的冷艳从容微笑展袖起画迎接全场掌声。"
+     "cost": "揭幕礼当场变成文物造假听证会，特展被迫延期",
+     "option": "当众拒签，亮出技师截获的夜间开柜刷卡记录"
     },
     {
-     "cost": "微调解说节奏需要团队承担微弱程序瑕疵责任。",
-     "option": "由副手修复副手高声汇报画芯古绫参数争取三秒缓冲。"
+     "cost": "基金会撤资后的展陈超支费用由你个人承担",
+     "option": "改签“卷尾题跋存疑待考、正卷真迹无虞”的学术意见书"
+    },
+    {
+     "cost": "督察组赶到之前，你得独自在台上拖住理事长",
+     "option": "先签收件回执稳住理事长，托记者把伪款证据发往文物局督察组"
     }
    ],
    "far": {
-    "consequence": "文博品牌形象遭受毁灭性打击，当事团队遭受纪检严厉通报惩处。",
-    "due_days": 1,
-    "trigger": "国宝托裱大展沦为恶俗女修复师走光翻车现场"
+    "consequence": "特展超支的账落到修复组头上，主创全员被约谈。",
+    "due_days": 5,
+    "trigger": "基金会撤资并提起诉讼"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [],
-   "id": "press_countdown_twenty_second_rush",
+   "id": "p_final_acceptance_funding",
    "immediate": {
-    "minutes": 1,
-    "text": "中庭外圈红光提示闪烁，全景转播摄像机红点正徐徐对准画案中央。"
+    "minutes": 5,
+    "text": "验收单摊在画案边，理事长的钢笔已经拧开。"
    },
    "leverage": null,
    "location_ids": [
     "loc_atrium_transparent_stage_center"
    ],
    "near": {
-    "deadline_minutes": 2,
-    "text": "若扫中修复师受困拉扯僵硬的身影，万千观众的期待将瞬间转化为全网舆论海啸风暴。"
+    "deadline_minutes": 120,
+    "text": "揭幕礼开始前，终审单必须封进档案。"
    },
-   "objective": "在倒数计时的瞬间完美脱困端坐如松从容起画赢得全场起立鼓掌。",
-   "source": "person",
-   "start_minute": 135,
-   "tags": [],
-   "title": "特展托裱终场起画倒数二十秒重压",
-   "trigger": "中庭演播大屏上千万在线直播数字疯狂跳动，国宝宋画平整托裱时钟已切入最后倒数。"
+   "objective": "在揭幕礼开始前，决定这份验收单签不签、怎么签。",
+   "source": "institution",
+   "start_minute": 1230,
+   "tags": [
+    "workplace"
+   ],
+   "title": "终审验收单与千万赞助",
+   "trigger": "理事长拿着终审验收单走上中庭台阶，要首席修复师和督导在“卷尾墨迹系现代保护性加固”的条款上签字，否则当场撤资、起诉修复组违约。"
+  },
+  {
+   "choice": "就地照料等医生，还是立刻背人下楼？",
+   "exits": [
+    {
+     "cost": "桌上的多光谱比对图暂时无人看守",
+     "option": "扶对方靠上软榻、松开领口喂温糖水，打电话叫医务室值班医生上楼"
+    },
+    {
+     "cost": "你缺席了揭幕前最后一次专家合议",
+     "option": "用厚披肩裹住对方背下阁楼，送去展馆医疗站"
+    },
+    {
+     "cost": "两人贴身相拥照料的样子被跟上来的工作人员看见",
+     "option": "先用热毛巾替对方擦汗缓神，同时请后勤叫随展医生上楼接人"
+    }
+   ],
+   "far": {
+    "consequence": "馆方追问修复组为何连轴赶工。",
+    "due_days": 2,
+    "trigger": "有人在阁楼晕倒的事传开"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_loft_low_blood_sugar",
+   "immediate": {
+    "minutes": 3,
+    "text": "对方扶着画案慢慢滑坐下去，手指冰凉。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_restorer_studio_loft"
+   ],
+   "near": {
+    "deadline_minutes": 60,
+    "text": "揭幕前的专家合议就要开始，阁楼里的比对图没人看守。"
+   },
+   "objective": "先把人稳住，再送去让医生看。",
+   "source": "accident",
+   "start_minute": 1320,
+   "tags": [
+    "workplace"
+   ],
+   "title": "连夜赶工后的低血糖",
+   "trigger": "为排查卷尾伪款连熬两夜的同伴在阁楼画案前眼前发黑、冷汗直冒，心慌得站不住。"
+  },
+  {
+   "choice": "等人来开锁，还是自己闯出去？",
+   "exits": [
+    {
+     "cost": "两人依偎的剪影映在磨砂玻璃上",
+     "option": "脱下外套把同伴裹进怀里挡风，用内线手环请技师从设备间解锁"
+    },
+    {
+     "cost": "防盗蜂鸣器大作，全场长焦镜头一齐转向暗廊出口",
+     "option": "按下墙上的红色消防破锁键推门出去"
+    },
+    {
+     "cost": "随身的起画刀和修复笔盒落在了暗廊里",
+     "option": "从顶部的通风检修栈道绕回阁楼"
+    }
+   ],
+   "far": {
+    "consequence": "保卫处追问那段时间暗廊里是谁和谁。",
+    "due_days": 2,
+    "trigger": "暗廊落锁的记录被调出"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_airtight_door_locked",
+   "immediate": {
+    "minutes": 5,
+    "text": "冷风从顶上的出风口灌下来，同伴只穿着一件薄工装。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_cabinet_spare_corridor"
+   ],
+   "near": {
+    "deadline_minutes": 90,
+    "text": "防盗模式要等揭幕彩排结束才会解除。"
+   },
+   "objective": "撑到气密锁解开，别让人看清暗廊里是谁。",
+   "source": "accident",
+   "start_minute": 1380,
+   "tags": [
+    "workplace"
+   ],
+   "title": "暗廊气密门落锁",
+   "trigger": "中庭切进揭幕防盗模式，备品暗廊两侧的气密玻璃门自动落锁，冷风吹个不停，两人被关在半透明的暗廊里。"
   }
  ],
- "region": "全景玻璃修复中庭：宋画修复台、升降罩导轨死角、观摩连廊石阶与长焦机位",
+ "region": "悬空玻璃修复中庭、观摩连廊、展柜暗廊、暗房与阁楼工作室",
  "rules": [
   {
-   "id": "rule_museum_atrium_restoration_decorum",
-   "text": "国家级文博悬空全景中庭操作规程：修复期间技师必须保持月白防静电长袍整洁严密与端庄仪态，严禁前襟破损、衣衫撕裂或发出惊呼失态。"
+   "id": "r_seal_before_unveil",
+   "text": "揭幕礼开始前，所有展品与修复档案必须封柜定稿；定稿报告要首席修复师与督导双签才生效。"
   },
   {
-   "id": "rule_ten_meter_heavy_roller_safety_code",
-   "text": "十米级重型电动升降罩构件严禁蛮力死拽，防止导致整轴伺服齿轮箱扭曲咬死损坏千年孤本宋画真迹。"
+   "id": "r_atrium_open_demo",
+   "text": "展前修复演示在悬空玻璃中庭公开进行，雾化遮蔽须由场馆总控下令，并登记理由。"
   },
   {
-   "id": "rule_glass_atrium_modesty_strict",
-   "text": "全景通透无盲区玻璃幕墙区域要求绝对严谨防走光，严禁任何贴身敏感配饰外露暴露于长焦鉴赏镜头之下。"
+   "id": "r_darkroom_dual_access",
+   "text": "多光谱暗房与原始底片凭双人门禁调阅，每次进出都留后台记录。"
   },
   {
-   "id": "rule_adult_restorer_legal_code",
-   "text": "文保特展修复团队均为年满二十周岁完全民事行为能力人，擅离职守或损毁国宝级文物将依法承担刑事民事连带严惩追责。"
+   "id": "r_press_outer_ring",
+   "text": "媒体机位只许架在外圈机位席，未经通稿审核的修复细节不得外发。"
   }
  ],
  "schema_version": 1,
  "stage_labels": {
-  "acquainted": "组织规约",
+  "acquainted": "点头之交",
   "committed": "金石同盟",
-  "familiar": "台容核检",
-  "flirting": "暗光对视",
-  "intimate": "俯仰共济",
-  "stranger": "初登讲台",
-  "testing": "执夹撬簧"
+  "familiar": "分茶之谊",
+  "flirting": "灯下对视",
+  "intimate": "画案温存",
+  "stranger": "初入中庭",
+  "testing": "隔案相持"
  },
  "status": "released",
- "style_hint": "全景玻璃中庭的冷光与几百双鉴赏的目光。写冷艳修复师婴儿肥两颊浮起的潮红、撕开的工装前襟下若隐若现的乳环金链与绷紧的酥胸、屏着的喘息，动作落在牛角起画刀割绞绳上。",
+ "style_hint": "冷光、绢本、松烟墨与长焦镜头的当代文博戏。张力来自卷尾伪款、终审签字和人人手里攥着的一笔账；台词短，潜台词多。",
  "tension_engines": [
   {
-   "id": "eng_mounting_roller_gold_chain_snag",
-   "text": "月白真丝工装前襟与锁骨穿孔金链卡入十米电动升降罩减速机咬合死角，稍有后仰即引发真丝崩裂大面积走光与两吨重升降罩失衡压毁宋画真迹之恐怖机械死锁威压。"
+   "id": "te_forged_colophon",
+   "text": "卷尾伪款出自理事长之手：揭穿能洗清修复师，也会让特展当场闭馆。"
   },
   {
-   "id": "eng_director_twenty_second_approach_rush",
-   "text": "文保基金会理事长迈步登台与古画托裱终场二十秒倒计时无情流逝，与冷艳女修复师反手持牛角起画刀淬火薄刃微观杠杆下压割断绞绳自救形成的秒级生死时速对抗。"
+   "id": "te_lens_glass_atrium",
+   "text": "悬空中庭四面透明，外圈长焦镜头一刻不停：越想靠近，越怕一个动作被拍进头条。"
   },
   {
-   "id": "eng_macro_lens_scrutiny_dread",
-   "text": "外圈数十家长焦大炮密集锁焦，与受困女技师贴身穿孔金链体面濒临失守带来的极端职业名誉社死心理拉锯。"
+   "id": "te_funding_signature",
+   "text": "千万赞助压着一张终审验收单：签了是替造假的人背锅，不签就是撤资和违约诉讼。"
   },
   {
-   "id": "eng_silk_robe_strain_tear_panic",
-   "text": "月白真丝工装长袍前襟缝线断裂受拉紧绷，成年国家特展最年轻女修复师以非凡坚韧与机械智慧捍卫尊严神格之绝境自救。"
+   "id": "te_hidden_records",
+   "text": "试色卡、监控空白、刷卡日志：人人替别人瞒着一笔，也被别人攥着一笔。"
   }
  ],
  "title": "揭幕前的修复师",
  "tone": [
-  "玻璃罩缓缓下沉",
-  "乳环金链被咬住",
-  "文保高管二十秒",
-  "牛角起画刀割绞绳"
+  "悬空玻璃中庭",
+  "几十支长焦镜头",
+  "卷尾一笔伪款",
+  "扣到最上一粒的工装"
  ],
  "twists": [
   {
    "category": "信息",
-   "id": "tw_info_horn_knife_craft",
-   "requires": [
-    "art_restorer_jiang_wan_ning"
-   ],
-   "text": "修复师手中特制水牛角起画刀采用两毫米古法冷磨淬火加厚工艺，硬度极高且头部带有零点八毫米极硬平头薄刃，实为专破各类五金卡阻纤维绞索的微观力学破拆神兵。"
-  },
-  {
-   "category": "人事",
-   "id": "tw_spatial_roller_housing_shadow_blind",
-   "requires": [
-    "mechanic_pei_tie_feng"
-   ],
-   "text": "悬空中庭升降罩碳纤维保护罩与立柱之间形成一处天然光影遮蔽盲区，为维保技师暗中托住轴壳与修复师下肢站立提供了物理隐蔽屏障。"
-  },
-  {
-   "category": "资源",
-   "id": "tw_trustee_exclusive_veto_ban",
-   "requires": [
-    "env_director_xie_lin_chuan"
-   ],
-   "text": "理事长企图借职务之便违规擅闯托裱核心区的行径被文博公证机构当场记录，现场取消其独家干预展示程序的特权。"
-  },
-  {
-   "category": "制度",
-   "id": "tw_pure_restorer_grit_burst",
-   "requires": [
-    "art_restorer_jiang_wan_ning"
-   ],
-   "text": "看似清冷绝尘不染凡尘的古画女修复师在死锁与理事长逼近绝境中迸发出惊人冷静意志，单手运刀微观割断绞绳展现出令人心折的极品坚韧。"
-  },
-  {
-   "category": "时限",
-   "id": "tw_director_water_curtain_buffer",
-   "requires": [
-    "env_director_xie_lin_chuan"
-   ],
-   "text": "总调度在耳麦中果断下令中庭柔光滤镜射角微调并挺身阻截理事长，为修复师牛角刀挑割升降罩绞绳争取到无价黄金时间窗。"
-  },
-  {
-   "category": "关系",
-   "id": "tw_social_mechanic_roller_bracket_brace",
-   "requires": [
-    "mechanic_pei_tie_feng"
-   ],
-   "text": "看似少言寡语的升降罩维保主管借巡检为由用厚手套死死托住导轨受力底座，以硬核职业操守构筑最稳固操作后盾。"
+   "id": "tw_ink_lab_proof",
+   "requires": [],
+   "text": "多光谱暗房测出卷尾伪款的墨是乾隆年间老墨，却掺着做旧的现代合成胶，与理事长书房的藏墨同一配方；当场公布能洗清修复师，但特展得立刻闭馆配合调查。"
   },
   {
    "category": "意外",
-   "id": "tw_anti_pinch_gear_spring_yield",
+   "id": "tw_mist_power_locked",
+   "requires": [],
+   "text": "有人在配电后台锁死了雾化玻璃的电源，揭幕礼期间悬空中庭将一直全透明，画案上任何动作都逃不过长焦镜头。"
+  },
+  {
+   "category": "资源",
+   "id": "tw_replica_switched",
+   "requires": [
+    "mechanic_pei_tie_feng"
+   ],
+   "text": "{mechanic_pei_tie_feng.name}查出秘书昨晚只来得及在副卷复制品上补了伪款，真迹仍锁在阁楼保险柜；取出真迹要你和首席修复师同时交出双人密钥，担下私藏国宝的责任。"
+  },
+  {
+   "category": "人事",
+   "id": "tw_fellowship_buyout",
    "requires": [
     "assistant_shen_zhi_wei"
    ],
-   "text": "升降罩阻尼绞绳在水牛角起画刀三点五牛顿垂直杠杆力矩下顺畅割断脱落，纯金乳环金链顺势脱扣滑出化解真丝工装长袍撕裂危局。"
+   "text": "基金会开出条件：只要{assistant_shen_zhi_wei.name}出面承认是自己误沾墨汁污损了卷尾，就保送去大英博物馆研修三年；副手一旦松口，你就少了最关键的内部人证。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_live_feed_cover",
+   "requires": [
+    "press_liaison_zhao_xiao_zhou"
+   ],
+   "text": "人前追着修复组要独家的{press_liaison_zhao_xiao_zhou.name}，早把副手那组连拍的原图删了，只给你留一份；如今对比图已接进直播流，你点头就能全网揭穿理事长，可你们两个都会因违反新闻纪律被停职。"
+  },
+  {
+   "category": "制度",
+   "id": "tw_director_shelving_order",
+   "requires": [],
+   "text": "馆方高层发来紧急指令，要把《千里秋江图》暂按“学术存疑”撤下主展柜：所有人都能免于追责，修复师三年的心血却无法展出。"
+  },
+  {
+   "category": "时限",
+   "id": "tw_last_cabinet_opening",
+   "requires": [
+    "pressure"
+   ],
+   "text": "揭幕礼前只剩最后一次开柜的机会：要么打开主展柜取下伪款题跋作证，要么打开侧柜取回副手遗落的试色卡。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_restorer_kept_you",
+   "requires": [
+    "art_restorer_jiang_wan_ning"
+   ],
+   "text": "所谓暗廊防盗落锁，其实是{art_restorer_jiang_wan_ning.name}请技师把暗廊排进了彩排测试：修复师只想在揭幕前，和你有一刻不被镜头看着的时间，亲口问你揭幕之后怎么办。"
   }
  ]
 }

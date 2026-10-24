@@ -1,111 +1,243 @@
 {
  "background_cast": [
   {
-   "adult_context": "测控中心总指挥，在大厅地面焦急调度登高作业。",
+   "adult_context": "年满二十四岁、持证上岗的遥测台值班员。",
    "age_range": [
-    50,
-    60
+    24,
+    35
    ],
-   "function": "helper",
-   "gender": "male",
-   "id": "bg_command_chief_director_zhao",
-   "line": "女飞官和总师还在十米悬空的模拟球舱里！应急登高车抓紧靠上去，快啊！",
+   "function": "witness",
+   "gender": "any",
+   "id": "bg_telemetry_duty_officer",
+   "line": "今晚副屏上那条心率曲线，我就当没看见。",
+   "location_ids": [
+    "loc_telemetry_glass_gallery"
+   ],
+   "name": null,
+   "role": "遥测台值班员"
+  },
+  {
+   "adult_context": "年满二十二岁、刚转正的总装正式工。",
+   "age_range": [
+    22,
+    28
+   ],
+   "function": "rumor_source",
+   "gender": "any",
+   "id": "bg_young_technician",
+   "line": "听说首席不敢签字，是怕真上去？",
    "location_ids": [
     "loc_aerospace_assembly_hall_floor"
    ],
-   "name": "赵总指挥",
-   "role": "商业航天测控中心常务总指挥"
+   "name": null,
+   "role": "总装年轻技术员"
   },
   {
-   "adult_context": "通过应急无线对讲指导机械泄压技巧的老专家。",
+   "adult_context": "年满二十六岁、跟着融资副总跑了三年的正式雇员。",
    "age_range": [
-    55,
-    65
-   ],
-   "function": "helper",
-   "gender": "male",
-   "id": "bg_telemetry_operator_master_qian",
-   "line": "总师！偏心泄压阀是逆时针旋转卸压的，硬质合金测角规刚好能插进六角暗槽，反向旋松！",
-   "location_ids": [
-    "loc_aerospace_assembly_hall_floor"
-   ],
-   "name": "钱总工",
-   "role": "全动模拟飞行器驻场特级总工"
-  },
-  {
-   "adult_context": "严格执行防爆防泄漏条例的保卫主管，暂时阻拦了外部盲目接近。",
-   "age_range": [
-    35,
-    45
+    26,
+    34
    ],
    "function": "obstacle",
-   "gender": "male",
-   "id": "bg_security_officer_sun",
-   "line": "六自由度液压支柱高压管路出现异常油压，严禁无防护人员靠近平台下方危险区！",
+   "gender": "any",
+   "id": "bg_vp_assistant",
+   "line": "副总说了，今晚这份名单必须报上去。",
    "location_ids": [
+    "loc_telemetry_glass_gallery",
     "loc_aerospace_assembly_hall_floor"
    ],
-   "name": "孙队长",
-   "role": "总装大厅特勤安保主管"
+   "name": null,
+   "role": "副总助理"
   },
   {
-   "adult_context": "在地面急救台密切监测生理遥测指标的医生。",
+   "adult_context": "年满四十岁、在基地看了十年宿舍楼的值班员。",
    "age_range": [
-    21,
-    23
+    40,
+    55
+   ],
+   "function": "witness",
+   "gender": "any",
+   "id": "bg_dorm_keeper",
+   "line": "这么晚了还回宿舍，明早可别误了点名。",
+   "location_ids": [
+    "loc_pilot_base_quarters"
+   ],
+   "name": null,
+   "role": "宿舍楼值班员"
+  },
+  {
+   "adult_context": "年满二十五岁、持证的隔离区护士。",
+   "age_range": [
+    25,
+    35
+   ],
+   "function": "helper",
+   "gender": "any",
+   "id": "bg_isolation_nurse",
+   "line": "补液盐我放在软垫旁边了，记得慢慢喝。",
+   "location_ids": [
+    "loc_escort_monitor_booth"
+   ],
+   "name": null,
+   "role": "隔离区护士"
+  },
+  {
+   "adult_context": "年满三十八岁、对赌基金派驻基地的代表。",
+   "age_range": [
+    38,
+    50
    ],
    "function": "messenger",
-   "gender": "female",
-   "id": "bg_female_flight_doctor_lin",
-   "line": "女飞官！总师！遥测心率已经突破一百六了，舱温四十五度了，你们千万坚持住啊！",
+   "gender": "any",
+   "id": "bg_investor_rep",
+   "line": "我们周五等好消息，别让基金那边失望。",
    "location_ids": [
-    "loc_aerospace_assembly_hall_floor"
+    "loc_telemetry_glass_gallery"
    ],
-   "name": "林航医",
-   "role": "基地二十一岁的女航医"
-  },
-  {
-   "adult_context": "在平台基座检查伺服阀并向现场通报故障状态的老工人。",
-   "age_range": [
-    55,
-    65
-   ],
-   "function": "witness",
-   "gender": "male",
-   "id": "bg_hydraulics_master_lao_zhou",
-   "line": "全动平台液压锁已经机械挂死，外部电磁释放完全断电了，只能靠舱内手动泄压！",
-   "location_ids": [
-    "loc_aerospace_assembly_hall_floor"
-   ],
-   "name": "老周师傅",
-   "role": "六自由度液压伺服老技师"
-  },
-  {
-   "adult_context": "在控制台监控舱内通信与视频信号的助手。",
-   "age_range": [
-    21,
-    23
-   ],
-   "function": "witness",
-   "gender": "male",
-   "id": "bg_telemetry_apprentice_xiao_wu",
-   "line": "舱内有线监控花屏了，高温把同轴视频线缆烤熔了，只能听见两人急促的呼吸声！",
-   "location_ids": [
-    "loc_aerospace_assembly_hall_floor"
-   ],
-   "name": "小吴",
-   "role": "测控大厅二十一岁的遥测助理"
+   "name": null,
+   "role": "投资方观礼代表"
   }
  ],
  "cast_combos": [
   {
-   "chemistry": "首席女飞官与环控总师在过热的座舱里肩抵着肩、手叠着手，把硬质合金测角规卡进泄压阀暗槽，一格一格往回转。",
-   "id": "cc_pilot_and_engineer_leverage",
-   "identity_ids": [],
+   "chemistry": "{pilot_gu_tianjiao.name}是你的机长，也是唯一会在落地后跟你抢最后一口姜茶的人；人前叫你副驾，关上舱门才叫你名字。",
+   "id": "cc_pilot_and_copilot_cabin",
+   "identity_ids": [
+    "pi_flight_cadet_shen"
+   ],
    "player_positions": [
-    "high",
-    "equal",
     "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "pilot_gu_tianjiao",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "上月长航时模拟收工后，两人在宿舍暖灯下解开汗湿的领口，{pilot_gu_tianjiao.name}定下轻敲三下护目镜就停的约定。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "pilot_gu_tianjiao"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{pilot_gu_tianjiao.name}说要么今晚两人一起上首飞名单，要么绝不签字。",
+    "limit_gap": "首席不签就没有首飞，你开口争座位没有分量。",
+    "meeting_reason": "{pilot_gu_tianjiao.name}把你叫进模拟球舱关上舱门，把砍掉副驾席位的内部通知摊在仪表台上。",
+    "resource_gap": "首席握着签字权，你只有伴飞手册和一份手控记录。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_unsigned_release",
+    "te_single_seat_cut"
+   ]
+  },
+  {
+   "chemistry": "你和{pilot_gu_tianjiao.name}是私下订了婚的搭档，基地里只当你们是吵了两年的冤家。",
+   "id": "cc_pilot_and_lifesupport_pod",
+   "identity_ids": [
+    "pi_life_support_engineer_shen"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 5
+     },
+     "b": "pilot_gu_tianjiao",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 5
+     },
+     "reason": "首飞立项那年{pilot_gu_tianjiao.name}把首次单飞勋章改成金属铭牌交给你，约好落地就在发射场公开婚讯。",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
+    "pilot_gu_tianjiao"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{pilot_gu_tianjiao.name}要你调出黑障区那零点四秒延迟背后的真实生保功耗曲线。",
+    "limit_gap": "生保章盖错你要担责，首席签错要赔上乘组。",
+    "meeting_reason": "{pilot_gu_tianjiao.name}坐在主驾座椅上解开抗荷服领口，拉过你的手按在微烫的遥测面板上。",
+    "resource_gap": "首席握着签字权，你握着生保放行章和环控终端密钥。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_filtered_blackout",
+    "te_unsigned_release"
+   ]
+  },
+  {
+   "chemistry": "你是考核{pilot_gu_tianjiao.name}的副总指挥，对方是最不服你管的首席；白天在会上顶嘴，夜里只把隐忧说给你听。",
+   "id": "cc_director_and_pilot_quarters",
+   "identity_ids": [
+    "pi_flight_test_director_shen"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "pilot_gu_tianjiao",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "半月前{pilot_gu_tianjiao.name}拿着手册来宿舍找你对重入公式，对到窗外泛白，书案边那个吻谁也没提。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "pilot_gu_tianjiao"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "首席问你敢不敢压下董事会的催签函，陪着再测一轮真实参数。",
+    "limit_gap": "你压下催签函要担融资方的账，首席拒签要丢首飞资格。",
+    "meeting_reason": "商务副总正催指挥中心收回首席的首飞资格，{pilot_gu_tianjiao.name}在宿舍把写满批注的飞行手册递到你手里。",
+    "resource_gap": "你握着乘组名单终审否决权，首席握着签字权。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_unsigned_release",
+    "te_single_seat_cut"
+   ]
+  },
+  {
+   "chemistry": "{pilot_gu_tianjiao.name}只信你调的舱体，每次进舱前都要隔着栏杆朝你点一下头，这个习惯全大厅都看在眼里。",
+   "id": "cc_pilot_and_mechanic_catwalk",
+   "identity_ids": [
+    "pi_aerospace_mechanic_shen"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
    ],
    "power_structure": "switchable",
    "relations": [
@@ -117,64 +249,35 @@
      },
      "b": "pilot_gu_tianjiao",
      "b_to_a": {
-      "tension": 3,
+      "tension": 4,
       "trust": 3
      },
-     "reason": "模拟舱里一起扳着卡扣，生死只隔一块仪表盘，彼此性命相托。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "life_support_lead_shen",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "同为航天工程技术骨干，知晓彼此手上力道与工具用法。",
-     "stage": "familiar"
-    },
-    {
-     "a": "pilot_gu_tianjiao",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "life_support_lead_shen",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "傲娇飞官与沉毅工匠在灾厄中成为生死不离的脱困搭档。",
-     "stage": "testing"
+     "reason": "前夜你在廊桥上调试姿态平台，{pilot_gu_tianjiao.name}递毛巾时指尖划过你腕骨，笑说命只交给你调的舱体。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "pilot_gu_tianjiao",
-    "life_support_lead_shen"
+    "pilot_gu_tianjiao"
    ],
    "stakes": {
-    "irreplaceable_goal": "在窒息休克前合力旋松偏心泄压阀恢复内外气压平衡脱险。",
-    "limit_gap": "女飞官抗荷服湿透且体温燥热，总师身处逼仄死角后背承受剧烈晃动冲击。",
-    "meeting_reason": "女飞官第四次要求加跑黑障模拟，环控总师拗不过，陪着坐进了副驾驶位。",
-    "resource_gap": "女飞官拥有淬火高硬度钨钴合金航图测角规，总师掌握空天座舱偏心机械泄压拆解直觉。"
+    "irreplaceable_goal": "首席要原始数据，又不想你为这件事丢了饭碗。",
+    "limit_gap": "私拆硬盘按事故论处，首席找你帮忙就是把你拖下水。",
+    "meeting_reason": "{pilot_gu_tianjiao.name}在伴飞监控隔间拦住正要交班的你，请你趁航电主管去开会时把底层硬盘拆下来。",
+    "resource_gap": "你掌管廊桥和底层硬盘，首席能裁定座舱应急规程。"
    },
    "tags": [
-    "workplace",
-    "disaster"
+    "intimate"
    ],
    "tension_engine_ids": [
-    "te_cabin_overheat_hypoxia_surge",
-    "te_close_contact_body_heat"
+    "te_filtered_blackout"
    ]
   },
   {
-   "chemistry": "中队长与机械主管以精准机械原理拆解偏心暗槽咬合，严丝合缝操作工具突破阻滞。",
-   "id": "cc_commander_and_mechanic_equal",
-   "identity_ids": [],
+   "chemistry": "{flight_surgeon_su_wan.name}每天替你核对生保与心率曲线，两人一个管舱，一个管人，配合得像一个人。",
+   "id": "cc_surgeon_and_lifesupport_clinic",
+   "identity_ids": [
+    "pi_life_support_engineer_shen"
+   ],
    "player_positions": [
     "equal"
    ],
@@ -184,68 +287,81 @@
      "a": "player",
      "a_to_b": {
       "tension": 2,
-      "trust": 3
+      "trust": 4
      },
-     "b": "pilot_gu_tianjiao",
+     "b": "flight_surgeon_su_wan",
      "b_to_a": {
-      "tension": 2,
-      "trust": 3
+      "tension": 3,
+      "trust": 4
      },
-     "reason": "多年协同试飞积累深厚默契，对彼此专业定力深具信任。",
-     "stage": "familiar"
-    },
+     "reason": "上周联调血氧仪收工后，两人在航医值班室并肩看完流星雨，{flight_surgeon_su_wan.name}把备用钥匙放进你手心。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "flight_surgeon_su_wan"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "航医提醒你，替补今晚若强跑极限过载，很可能在舱内晕厥。",
+    "limit_gap": "航医泄露病历要担责，你瞒下风险也要担责。",
+    "meeting_reason": "{flight_surgeon_su_wan.name}在伴飞监控隔间把一份划了红圈的眼震底单悄悄推到你面前。",
+    "resource_gap": "航医握着生理合格证，你握着生保放行章。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_isolation_entry"
+   ]
+  },
+  {
+   "chemistry": "{avionics_lead_han_yu.name}是基地公认的算法大拿，和你一个管软件一个管硬件，互相不服又离不开。",
+   "id": "cc_avionics_and_mechanic_data",
+   "identity_ids": [
+    "pi_aerospace_mechanic_shen"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 3
+      "tension": 4,
+      "trust": 1
      },
-     "b": "life_support_lead_shen",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "同在航天工程部门共事，熟悉模拟器各处机械构造。",
-     "stage": "familiar"
-    },
-    {
-     "a": "pilot_gu_tianjiao",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "life_support_lead_shen",
+     "b": "avionics_lead_han_yu",
      "b_to_a": {
       "tension": 3,
-      "trust": 3
+      "trust": 2
      },
-     "reason": "在沉重机械死锁压迫下并肩伏卧发力，消除身份悬殊界限。",
+     "reason": "上周验收传感器后，{avionics_lead_han_yu.name}单独请你去咖啡吧，话里话外试探你有没有留未滤波的日志。",
      "stage": "testing"
     }
    ],
    "slots": [
-    "pilot_gu_tianjiao",
-    "life_support_lead_shen"
+    "avionics_lead_han_yu"
    ],
    "stakes": {
-    "irreplaceable_goal": "利用测角规精准卡死阀芯缺口并顺势撬动偏心销自救。",
-    "limit_gap": "悬空十米无法借助外援，必须在昏暗红光中凭手感盲操机械脱扣。",
-    "meeting_reason": "深夜的总装大厅只剩两盏灯，女飞官端着两杯速溶咖啡来找总师吵供氧曲线。",
-    "resource_gap": "中队长掌握座舱视景断电旁路位置，主管拥有高精度螺丝撬棒与防爆手电。"
+    "irreplaceable_goal": "对方要你把底层硬盘格式化成标准测试包，你要的是那份授意记录。",
+    "limit_gap": "滤波一曝光对方前途尽毁，你私藏硬盘也说不清。",
+    "meeting_reason": "{avionics_lead_han_yu.name}在二层遥测长廊叫住你，开口就是明年二期总装合同。",
+    "resource_gap": "航电主管握着滤波包和导出权，你握着未滤波的底层硬盘。"
    },
    "tags": [
-    "workplace",
-    "crime"
+    "workplace"
    ],
    "tension_engine_ids": [
-    "te_pneumatic_lock_expansion_deadlock",
-    "te_flight_simulator_blackout_rush"
+    "te_filtered_blackout"
    ]
   },
   {
-   "chemistry": "试飞总指挥以绝对权威统摄全局，女飞官依令协同配合，合力爆发千钧推力破死锁。",
-   "id": "cc_director_and_pilot_high",
-   "identity_ids": [],
+   "chemistry": "{pilot_lin_zhen.name}是首飞替补，也是唯一敢在集训会上抢你话头的人；你不点头，那份协议就是一张纸。",
+   "id": "cc_director_and_lin_zhen_seat",
+   "identity_ids": [
+    "pi_flight_test_director_shen"
+   ],
    "player_positions": [
     "high"
    ],
@@ -257,69 +373,81 @@
       "tension": 3,
       "trust": 3
      },
-     "b": "pilot_gu_tianjiao",
+     "b": "pilot_lin_zhen",
      "b_to_a": {
-      "tension": 3,
+      "tension": 4,
       "trust": 3
      },
-     "reason": "总指挥指导女飞官校准发力矢量，展现卓越技术领导力。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "life_support_lead_shen",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "工程部上下级，配合极为娴熟。",
-     "stage": "familiar"
-    },
-    {
-     "a": "pilot_gu_tianjiao",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "life_support_lead_shen",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "傲娇飞官与工程骨干共赴生死，结成无间同盟。",
-     "stage": "testing"
+     "reason": "上季集训庆功宴后两人沿戈壁跑道散步，{pilot_lin_zhen.name}挽住你的手臂，半真半假问你有没有看过第二名一眼。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "pilot_gu_tianjiao",
-    "life_support_lead_shen"
+    "pilot_lin_zhen"
    ],
    "stakes": {
-    "irreplaceable_goal": "以高刚性力矩反推破除偏心卡死完成无损自救脱困。",
-    "limit_gap": "全动液压平台处于临界偏载，任何蛮动都会引发晃动加剧。",
-    "meeting_reason": "集团派人来审下个月的载人试飞方案，女飞官被点名演示，总师在舱外盯着数据。",
-    "resource_gap": "总指挥掌握整座测控中心模拟器地下管网图谱，女飞官掌握全部高强度合金配件。"
+    "irreplaceable_goal": "{pilot_lin_zhen.name}问你，接下这个首飞席位，在你眼里算不算趁人之危。",
+    "limit_gap": "你偏袒替补会被说成趁乱换将，替补接协议会被说成趁人之危。",
+    "meeting_reason": "{pilot_lin_zhen.name}拿着商务副总塞来的替补协议走进二层玻璃长廊，咬着唇等你开口。",
+    "resource_gap": "你握着终审否决权，替补握着递补资格。"
    },
    "tags": [
-    "workplace",
-    "disaster"
+    "intimate"
    ],
    "tension_engine_ids": [
-    "te_flight_simulator_blackout_rush",
-    "te_pneumatic_lock_expansion_deadlock"
+    "te_single_seat_cut"
    ]
   },
   {
-   "chemistry": "女飞官以机长身份沉着鼓舞士气，青年领航员严谨配合测算每道力矩数值。",
-   "id": "cc_cadet_and_specialist_command",
-   "identity_ids": [],
+   "chemistry": "{crew_chief_lao_zhou.name}把你当自家晚辈，骂你最凶，夜里给你留姜茶的也是老班长。",
+   "id": "cc_zhou_and_copilot_bridge",
+   "identity_ids": [
+    "pi_flight_cadet_shen"
+   ],
    "player_positions": [
-    "low",
-    "equal"
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 1,
+      "trust": 4
+     },
+     "b": "crew_chief_lao_zhou",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 4
+     },
+     "reason": "去年编写协同手册，你和{crew_chief_lao_zhou.name}在大厅对照实机一条条核准口令，那本手册老班长至今揣在怀里。",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
+    "crew_chief_lao_zhou"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{crew_chief_lao_zhou.name}说有人想在第四轮考核里让首席生理超限出局，要你今晚盯紧舱里。",
+    "limit_gap": "老班长没有证据不能拿人，你一个副驾说话更没人听。",
+    "meeting_reason": "{crew_chief_lao_zhou.name}在廊桥下按住你的肩，指着被人调高过的增压表盘压低声音。",
+    "resource_gap": "老班长握着廊桥和照明总闸，你只有一份手控记录。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_unsigned_release"
+   ]
+  },
+  {
+   "chemistry": "首席和替补斗了三年，一个在主驾席上，一个在门口；你夹在中间，两边都欠着账。",
+   "id": "cc_gu_lin_cockpit_handover",
+   "identity_ids": [
+    "pi_flight_cadet_shen"
+   ],
+   "player_positions": [
+    "low"
    ],
    "power_structure": "npc_high",
    "relations": [
@@ -327,165 +455,239 @@
      "a": "player",
      "a_to_b": {
       "tension": 3,
-      "trust": 3
+      "trust": 4
      },
      "b": "pilot_gu_tianjiao",
      "b_to_a": {
-      "tension": 3,
-      "trust": 3
+      "tension": 4,
+      "trust": 4
      },
-     "reason": "同处绝境，上下级界限消融于贴身死斗协作中。",
-     "stage": "testing"
+     "reason": "三天前夜航模拟收工，{pilot_gu_tianjiao.name}在宿舍把首飞臂章的副章塞进你飞行服内袋，说先替首席收着。",
+     "stage": "intimate"
     },
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
+      "tension": 3,
       "trust": 3
      },
-     "b": "life_support_lead_shen",
+     "b": "pilot_lin_zhen",
      "b_to_a": {
-      "tension": 2,
+      "tension": 4,
       "trust": 3
      },
-     "reason": "同在试飞组共事，彼此熟稔信任。",
-     "stage": "familiar"
+     "reason": "前日合练出舱，{pilot_lin_zhen.name}故意贴近你耳畔摘下头盔，笑问跟替补搭档是不是比跟首席轻松。",
+     "stage": "flirting"
     },
     {
      "a": "pilot_gu_tianjiao",
      "a_to_b": {
-      "tension": 3,
-      "trust": 3
+      "tension": 4,
+      "trust": 1
      },
-     "b": "life_support_lead_shen",
+     "b": "pilot_lin_zhen",
      "b_to_a": {
-      "tension": 3,
-      "trust": 3
+      "tension": 4,
+      "trust": 2
      },
-     "reason": "女飞官全力依赖工匠臂膀发力破局。",
+     "reason": "三年里两人争了七次首飞顺位，每一次都只差零点几分。",
      "stage": "testing"
     }
    ],
    "slots": [
     "pilot_gu_tianjiao",
-    "life_support_lead_shen"
+    "pilot_lin_zhen"
    ],
    "stakes": {
-    "irreplaceable_goal": "确保偏心阀体免遭撕裂损毁，全员安全脱困。",
-    "limit_gap": "高温缺氧导致孤立无援，必须紧密依偎配合。",
-    "meeting_reason": "考核结束后，女飞官赖在模拟舱里不肯出来，说要看完最后一段星图回放，总师只好进去叫人。",
-    "resource_gap": "女飞官拥有坚忍不拔的心理素质，领航员精通偏心螺栓咬合解构。"
+    "irreplaceable_goal": "替补提议自己进舱跑一次极限偏航逼出延迟，首席和你在监控台截下铁证。",
+    "limit_gap": "首席举报替补就坐实自己在查底单，替补接舱就要踩着首席上天。",
+    "meeting_reason": "{pilot_lin_zhen.name}拿着替补接舱单走进伴飞隔间，却没坐主驾，把那页滤波异常曲线摊在{pilot_gu_tianjiao.name}和你面前。",
+    "resource_gap": "首席握着签字权和替补的体检底单，替补握着接舱单和那页异常曲线。"
    },
    "tags": [
-    "workplace",
     "intimate"
    ],
    "tension_engine_ids": [
-    "te_cabin_overheat_hypoxia_surge",
-    "te_pneumatic_lock_expansion_deadlock"
+    "te_filtered_blackout",
+    "te_single_seat_cut"
+   ]
+  },
+  {
+   "chemistry": "{vp_commercial_zhao_heng.name}和{avionics_lead_han_yu.name}是一条船上的人，一个要股价，一个要期权，船底已经漏了。",
+   "id": "cc_zhao_han_telemetry_cover",
+   "identity_ids": [
+    "pi_aerospace_mechanic_shen",
+    "pi_flight_test_director_shen"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "avionics_lead_han_yu",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "前夜加班核对轨道参数，{avionics_lead_han_yu.name}和你同看一块平板，下巴轻轻抵在你肩头叹气说身不由己。",
+     "stage": "flirting"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 0
+     },
+     "b": "vp_commercial_zhao_heng",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 1
+     },
+     "reason": "昨日路演彩排后，{vp_commercial_zhao_heng.name}拉你在贵宾室喝茶，开出双倍期权试探你能否促成放行书落地。",
+     "stage": "testing"
+    },
+    {
+     "a": "avionics_lead_han_yu",
+     "a_to_b": {
+      "tension": 4,
+      "trust": -1
+     },
+     "b": "vp_commercial_zhao_heng",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 1
+     },
+     "reason": "授意加滤波的那封邮件，航电主管一直没删，副总至今不知道。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "vp_commercial_zhao_heng",
+    "avionics_lead_han_yu"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你得在简报发出前拿到那份没被滤过的日志。",
+    "limit_gap": "简报一发就是公开造假，不发对赌就要违约。",
+    "meeting_reason": "{vp_commercial_zhao_heng.name}催{avionics_lead_han_yu.name}当场导出三次满分的公关简报，对方故意报错一组校验码，把带底层日志的终端递向刚进门的你。",
+    "resource_gap": "副总握着乘组报批权和奖金池，航电主管握着滤波包和那封授意邮件。"
+   },
+   "tags": [
+    "workplace",
+    "crime"
+   ],
+   "tension_engine_ids": [
+    "te_filtered_blackout",
+    "te_single_seat_cut"
    ]
   }
  ],
  "channels": [
   {
    "fidelity": "exact",
-   "id": "ch_pod_whisper_breath",
-   "reach": "all",
-   "text": "三十五公分球舱死角狭缝两人肌肤相贴急促滚烫的吐息与心跳共振"
+   "id": "ch_hall_broadcast",
+   "reach": "一句话立刻传遍全厅",
+   "text": "总装大厅广播和大屏"
+  },
+  {
+   "fidelity": "exact",
+   "id": "ch_telemetry_handover",
+   "reach": "下一班值班员和技术委员会都能调阅",
+   "text": "遥测台交接日志"
   },
   {
    "fidelity": "distorted",
-   "id": "ch_pod_alarm_static",
-   "reach": "local",
-   "text": "座舱应急警报红光闪烁与对讲耳机里断续的电流杂音回响"
+   "id": "ch_crew_gossip",
+   "reach": "一顿夜宵的工夫传到宿舍楼",
+   "text": "机务班组的闲话"
   }
  ],
  "character_templates": [
   {
-   "adult_context": "二十一岁，持有商业超高音速飞行资质与空天领航执照，平日英姿飒爽略带傲娇，遇险展现出异乎寻常的果敢信任。",
+   "adult_context": "年满二十六岁，持商业亚轨道飞行资质与空天领航执照，基地公认的首席女飞官。",
    "age_range": [
-    21,
-    21
+    26,
+    28
    ],
    "appearance_options": [
-    "身穿一套量身定制的深蓝修身耐高压抗荷服，外系银白航空轻量化卡扣装备带，短发利落中带着英气，容颜明艳娇美，两腮带着莹润的光泽，在高温座舱滚烫喘息中双颊泛起娇艳酡红与细腻冷汗，下颌挂着晶莹水滴。",
-    "抗荷服被汗水湿透紧紧贴合在修长健美起伏的身躯上，两腮面庞在仪表红光下透出如凝脂般的柔润光泽，双手全力按压硬质合金测角规毫不退缩，傲娇英气中透着令人心颤的铿锵反差。"
+    "深蓝修身的抗荷服外系银白卡扣装备带，短发利落带着英气，容颜明艳，两腮在仪表背光下透着莹润的光。",
+    "刚下舱时额角挂着细汗，抗荷服领口微敞，修长健美的身形站得笔直，眼神傲气又亮。"
    ],
    "decision": {
     "avoids": [
-     "慌乱啼哭的软弱作态",
-     "鲁莽盲动的粗暴蛮干"
+     "拿商业里程碑压人的人"
     ],
-    "contrast": "嘴上从来不饶人，考核满分了还要嫌模拟器不够真；舱温一路飙红时，女飞官却第一个松开安全带，把父亲留下的测角规拍进了人手里。",
-    "core_value": "哪怕平日在空天编队里心高气傲，生死关头也要成为能与总师并肩撕碎机械死锁的无畏战友。",
+    "contrast": "人前孤傲挑剔，被夸一句就别过脸去，耳根先红了。",
+    "core_value": "差零点一秒，也是差。",
     "goal_options": [
-     "将硬质合金测角规卡入泄压阀内六角槽撬脱偏心轴销",
-     "与总师双手重叠合力下压打破自锁推开主门"
+     "逼董事会恢复双人首飞",
+     "把零点四秒的延迟摆上桌面"
     ],
     "never": [
-     "在同伴脱困前独自退缩放弃"
+     "在明知有隐患的放行书上签字"
     ],
     "prefers": [
-     "沉稳专注且臂力强健的工科男子",
-     "细致严谨的硬核工匠手段"
+     "敢跟她对数据的人"
     ],
     "pressure_responses": {
-     "breaking": "哪怕双臂酸胀脱力、急促滚烫的吐息交织在总师耳侧，亦咬紧贝齿全力抵住力矩绝不松手。",
-     "high": "在三十五公分逼仄狭缝内整个人伏在总师胸前，双手覆在总师手背上倾注全身重量猛按测角规。",
-     "low": "在模拟舱过载报警瞬间冷静关闭次要航电，指出泄压阀在左下死角。",
-     "mid": "毫不犹豫脱卸受阻的外层头盔，俯身逼仄死角递出硬质合金测角规。"
+     "breaking": "一个人坐在主驾席上到天亮",
+     "high": "把放行书锁进抽屉谁也不见",
+     "low": "话更少，反复重跑同一个科目",
+     "mid": "当面顶撞催签的人"
     },
-    "relationship_stance": "跟环控总师吵了两年，从供氧曲线吵到座椅角度；可每次进舱前，女飞官都会先确认今晚值班的是不是那个人。",
-    "withdrawal": "安全脱险后脱力靠在总师肩头微喘，面庞埋在总师颈窝掩饰羞怯。"
+    "relationship_stance": "认准的搭档只有一个，嘴上不认，行动上寸步不让。",
+    "withdrawal": "关上舱门，在主驾席上一遍遍推演再入角。"
    },
    "gender": "female",
-   "gender_reason": "二十一岁的商业航天财阀空天女飞官，兼具英武傲娇与绝境中坚韧决绝的钢铁意志。",
+   "gender_reason": "标题写明是女飞官，固定为女性。",
    "id": "pilot_gu_tianjiao",
    "identity": {
-    "authority": "对模拟球舱内部领航仪器与随身飞行装备拥有最高应急调度处置权。",
-    "exposure": "贴身抗荷服被汗水浸透勾勒出窈窕起伏身姿，在逼仄死角近身发力时毫无保留地贴合在总师怀前。",
-    "hidden": "内袋贴身放着总师调校的领航数据卡",
+    "authority": "握着模拟球舱试飞科目指令权、《首飞放行确认书》首席签字权与座舱应急规程裁定权。",
+    "exposure": "她查出黑障滤波有问题却压着不报，被说成怯战只是时间问题。",
+    "hidden": "早就把心交给了身边那个人，不签字一半是为了真相，一半是不肯一个人上天。",
     "limits": [
-     "座舱高温导致心率逼近极限单人无法输出峰值反扭矩",
-     "逼仄死角使修长双腿难以施展全力"
+     "不签字就没有首飞",
+     "封闭隔离期间不能和外界联系"
     ],
     "obligations": [
-     "保护全动模拟球舱核心视景与航电芯片免遭爆燃",
-     "与总师同舟共济排除机械死锁安全脱险"
+     "对整个乘组的性命负责"
     ],
     "resources": [
-     "一枚专业特制硬质合金航图测角规（高纯度钨钴硬质合金一体线切割成型，长二十公分厚四毫米，直角硬刃抗扭刚性极高）",
-     "一双航空阻燃高摩擦羊皮飞行手套",
-     "一罐高压应急备用纯氧喷雾气罐"
+     "父亲飞了三十年留下的航图测角规",
+     "一双阻燃羊皮飞行手套",
+     "首飞臂章的副章"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "总师在球舱过载高温失衡瞬间以宽厚臂膀将{npc.name}护入怀中的无畏与可靠",
-     "在昏暗红光死角内总师沉着冷静排查机械故障的专注眼神"
+     "对方在黑障手控时稳得住的那双手",
+     "敢当面指出她算错一位小数的人"
     ],
     "boundaries": [
-     "恪守正派女飞官的端庄自尊底线",
-     "脱困自救纯靠硬核物理机械力矩绝不涉性"
+     "轻敲三下头盔护目镜就停"
     ],
     "desire_range": [
      2,
      4
     ],
-    "desired_position": "在气锁死角紧贴总师胸前，双手叠在总师手背上共同握紧测角规全力下扳。",
+    "desired_position": "双人座舱里并排的副驾位",
     "dislikes": [
-     "轻浮孟浪的越界举动",
-     "临阵推诿的自私行径"
+     "轻浮的越界"
     ],
-    "expression": "脱险后温柔地为总师擦去额头冷汗，偏过绯红面颊低声道‘总师……刚才表现还挺像样’。",
+    "expression": "下舱后替你擦去额角的汗，偏过绯红的脸低声说：“刚才……表现还挺像样。”",
     "likes": [
-     "在剧烈失重震颤中被有力大手紧扣住腰肢维持重心的踏实感",
-     "座舱里两人的手套叠在一起扳动时，隔着手套传来的掌心的热"
+     "隔着手套也能传过来的掌心温度"
     ],
     "preconditions": [
-     "偏心泄压阀成功逆向旋松脱扣",
-     "主气密舱门手动推开降温平压",
-     "两人都清醒，心意出于自己，不是过热座舱里的依赖"
+     "两人都清醒，心意出于自己",
+     "不在刚下舱、头还晕的时候"
     ],
     "self_control_range": [
      4,
@@ -495,876 +697,854 @@
    "public_role": "商业航天的首席女飞官",
    "schedule": [
     {
-     "from": 1250,
-     "location_id": "loc_flight_simulator_cabin",
-     "to": 1255
+     "from": 0,
+     "location_id": "loc_pilot_base_quarters",
+     "to": 420
     },
     {
-     "from": 1255,
-     "location_id": "loc_simulator_relief_valve_nook",
-     "to": 1285
+     "from": 420,
+     "location_id": "loc_flight_simulator_cabin",
+     "to": 1080
+    },
+    {
+     "from": 1080,
+     "location_id": "loc_escort_monitor_booth",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_flight_simulator_cabin",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "测角规刃口承受数百牛顿反力矩微磨损，两人手掌手臂被高温金属和门框边缘磨破烫红。",
-      "option": "用硬质合金测角规直角折沿切入偏心阀六角暗槽，两人身体紧贴合力向下施压扳转阀芯自救脱困。"
+      "cost": "首飞日期多半要往后推。",
+      "option": "拉着信得过的人一起拆穿滤波"
      },
      {
-      "cost": "数吨级耐压视窗非人力所能破坏，反冲力极易造成手骨严重粉碎性骨折。",
-      "option": "徒手用力砸击球舱复合材料密封视窗试图破窗呼救。"
+      "cost": "隔离区里能不能有你，要看董事会点不点头。",
+      "option": "带整改条件签字"
      }
     ],
-    "pressure": "内外压差与高温膨胀持续加剧，必须在十分钟氧气耗尽前手动旋转偏心泄压阀自救。",
-    "trigger": "超高音速再入黑障模拟过载，主气锁密封胶条热胀变形抱死，舱内高温飙升逼近窒息。"
+    "pressure": "董事会要砍掉副驾席位，替补已经在等她拒签。",
+    "trigger": "连跑三次黑障满分，却压着放行书不肯落笔。"
    },
    "tags": [
     "workplace",
-    "disaster",
     "intimate"
    ],
    "voices": {
-    "inner": "好热，快喘不上气了……可贴着总师的后背，心跳比过载时还快。真丢人，这种时候想的居然是这个。",
-    "surface": "愣着干什么？测角规是硬质合金的，比你那套扳手结实。角度你来算，力气我来出——别让本少校等。"
+    "inner": "我不签，是因为我不想一个人上去。",
+    "surface": "愣着干什么？角度你来算，操纵我来——别让本少校等。"
    }
   },
   {
-   "adult_context": "二十一岁，持有商业航天高难课目指挥资质，遇险沉着理智调度果决。",
+   "adult_context": "年满二十五岁，空天编队持证试飞员，首飞替补顺位第一。",
    "age_range": [
-    21,
-    21
+    25,
+    27
    ],
    "appearance_options": [
-    "深灰飞行皮夹克内搭高领紧身黑色抗荷背心，两腮线条饱满紧致带着柔和的轮廓，在高温座舱中神情冷峻坚毅。",
-    "短发微湿散在额前，面颊在警报红光下透着激动的酡红，修长双腿死死蹬住座舱地板卡槽，双手握紧测角规受力端。"
+    "飞行夹克敞着，马尾扎得高高的，笑起来露出一点虎牙，眼里全是不服输。",
+    "离心机训练后脸色略白，扶着栏杆时还在笑，像不肯让人看出一点不稳。"
    ],
    "decision": {
     "avoids": [
-     "慌乱盲动",
-     "怨天尤人"
+     "背后算计的人"
     ],
-    "contrast": "威严傲娇的飞行中队长，在沉重机械危机面前爆发出惊人的铿锵韧劲。",
-    "core_value": "一切气动自锁皆有力矩破绽，找准切向力矩，千斤阻尼亦能瓦解。",
+    "contrast": "人前爽朗好胜，人后对着那页曲线发呆，犹豫得不像她。",
+    "core_value": "要赢，就赢在天上。",
     "goal_options": [
-     "利用测角规构建刚性撬杠扭转偏心阀",
-     "协同总师顶正摇臂自救脱困"
+     "在实飞里证明自己不是第二名",
+     "不欠任何人地拿到首飞"
     ],
     "never": [
-     "临阵抛下同舱战友独自逃生"
+     "靠别人倒下拿到座位"
     ],
     "prefers": [
-     "沉稳专注的机电操作",
-     "毫不犹豫的协同发力"
+     "说话直接的人"
     ],
     "pressure_responses": {
-     "breaking": "银牙咬碎双手青筋微显，死死抵住杠杆直至机械锁脱开。",
-     "high": "以全身自重压向力臂末端，与总师紧密相依共同下扳。",
-     "low": "迅速判断出密封抱死在于偏心轴销过热卡位，明确杠杆支点位置。",
-     "mid": "果断将测角规硬刃卡入偏心暗孔，以手掌固定其切向夹角。"
+     "breaking": "躲到发射塔下吹一整夜风",
+     "high": "把替补协议捏皱了也不签",
+     "low": "笑着岔开话题",
+     "mid": "主动请缨跑最难的科目"
     },
-    "relationship_stance": "视总师为最可靠的硬核后盾，在灾厄中缔结生死不渝的深厚默契。",
-    "withdrawal": "在脱困后退至安全区域深呼吸平复心绪并整理衣服。"
+    "relationship_stance": "喜欢就直说，输了也要输得漂亮。",
+    "withdrawal": "一个人沿戈壁跑道跑圈，跑到喘不上气为止。"
    },
    "gender": "female",
-   "gender_reason": "飞行中队长指挥官态，具备极高的领航威权与战略果决度，傲娇中见担当。",
-   "id": "commander_gu_tianjiao",
+   "gender_reason": "替补女试飞员的角色设定，固定为女性。",
+   "id": "pilot_lin_zhen",
    "identity": {
-    "authority": "对座舱内全部乘员应急逃生规程拥有最终指挥决策权。",
-    "exposure": "单薄抗荷背心被冷汗浸透贴紧身姿，在逼仄空间展露无遗。",
-    "hidden": "随身携带基地应急停机坪通行钥匙卡",
+    "authority": "握着二号模拟座舱伴飞权、替补首飞递补资格与试飞日志副签权。",
+    "exposure": "她瞒下了上月离心机训练留下的前庭眩晕，体检底单一曝光，飞行评级就保不住。",
+    "hidden": "她想赢首席飞官，可从没想过用这种方式赢；那页曲线她一直没敢交出去。",
     "limits": [
-     "受困狭小球形空间缺乏长力臂撬棍",
-     "必须在十分钟内打破机械自锁"
+     "前庭眩晕没好透",
+     "替补协议要等首席拒签才生效"
     ],
     "obligations": [
-     "保护同舱总师人身安全",
-     "同总师紧密协作破除气锁"
+     "替补随时待命进舱"
     ],
     "resources": [
-     "硬质合金航图测角规",
-     "高压防静电绝缘手套"
+     "商务副总塞给她的替补协议",
+     "那页被修饰过的黑障滤波曲线"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "总师在危难中展现出的航天机电专业判断力与勇猛担当",
-     "近距离贴身支撑时对方如山岳般可靠的臂弯温度"
+     "对方眼里不把她当第二名",
+     "输给她也肯笑着再比一场的人"
     ],
     "boundaries": [
-     "严守飞行军官自尊底线",
-     "自救恪守硬核机械物理底线"
+     "她说停就停"
     ],
     "desire_range": [
-     1,
-     2
+     3,
+     4
     ],
-    "desired_position": "在阀体死角俯身相依，胸前紧贴总师臂膀共同握持工具完成绝地逆转。",
+    "desired_position": "比首席飞官更早被你看见的位置",
     "dislikes": [
-     "轻浮孟浪",
-     "退缩怯懦"
+     "被人同情"
     ],
-    "expression": "默默递上干燥纸巾为总师擦拭额头汗水，低声叮嘱总师调整呼吸。",
+    "expression": "摘下头盔贴近耳边，笑问一句“跟我搭档是不是轻松多了”。",
     "likes": [
-     "彼此心领神会的眼神对视",
-     "泄压阀清脆脱开瞬间的气流呼啸声"
+     "比赛似的并肩跑完一圈"
     ],
     "preconditions": [
-     "偏心泄压阀成功脱扣",
-     "人员全员脱险"
+     "眩晕彻底好了、人也清醒的时候",
+     "心意出于自己，不为抢座位"
     ],
     "self_control_range": [
-     4,
-     5
+     2,
+     4
     ]
    },
-   "public_role": "空天飞行中队长兼首席试飞员",
+   "public_role": "空天编队第一替补女试飞员",
    "schedule": [
     {
-     "from": 1250,
-     "location_id": "loc_flight_simulator_cabin",
-     "to": 1255
+     "from": 0,
+     "location_id": "loc_pilot_base_quarters",
+     "to": 420
     },
     {
-     "from": 1255,
-     "location_id": "loc_simulator_relief_valve_nook",
-     "to": 1285
+     "from": 420,
+     "location_id": "loc_aerospace_assembly_hall_floor",
+     "to": 900
+    },
+    {
+     "from": 900,
+     "location_id": "loc_escort_monitor_booth",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_telemetry_glass_gallery",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "施力人员手腕手掌承受强烈金属反冲压迫造成肌肉酸麻与红肿。",
-      "option": "以硬质合金测角规卡死偏心阀内六角槽，双手合力向下施压旋转顶出暗销脱扣自救。"
+      "cost": "替补协议当场作废。",
+      "option": "把曲线交给技术委员会"
      },
      {
-      "cost": "破坏仪表线束可能诱发电气短路引发舱内明火。",
-      "option": "盲目使用仪表台金属把手砸击舱壁螺栓。"
+      "cost": "两边都可能把她当叛徒。",
+      "option": "先接舱单再暗中帮首席取证"
      }
     ],
-    "pressure": "舱内氧气快速耗竭且电磁解锁烧损，必须在人员昏厥前手动旋转偏心阀泄压。",
-    "trigger": "全动模拟舱再入黑障模拟过载，主气锁热膨胀抱死，舱内温度达四十五度。"
+    "pressure": "接下协议就是踩着首席上天，不接就再等一年。",
+    "trigger": "商务副总许诺她顶替首飞，她却先看见了那页曲线。"
    },
    "tags": [
     "workplace",
-    "disaster",
     "intimate"
    ],
    "voices": {
-    "inner": "温度太高了……但总师一直用后背护着我。拼尽全力，我也一定要帮总师把这扇舱门撬开！",
-    "surface": "总师，看准偏心槽口！测角规刚好能卡死暗销，顺着逆时针方向一起往下压！"
+    "inner": "要是她真被换下来，我也飞不安心。",
+    "surface": "这个座位我是想要，可你说，我该这样拿吗？"
    }
   },
   {
-   "adult_context": "二十一岁，具备专业航电与飞行力学双重资质，遇险沉着机敏。",
+   "adult_context": "年满二十九岁，空天航电与遥测算法主管，持高级工程师证。",
    "age_range": [
-    21,
-    21
+    29,
+    33
    ],
    "appearance_options": [
-    "白T恤外搭浅蓝工装薄款飞行马甲，两腮线条饱满紧致带着柔和的轮廓，在高温座舱中目光冷静敏锐。",
-    "短发用飞行发网固定，面颊在仪表荧光下泛着坚毅的冷白，双手紧紧扣住测角规受力点。"
+    "白衬衫袖口挽到小臂，眼镜后面的目光总是在看曲线，指节上有键盘磨出的薄茧。",
+    "熬夜后眼下发青，仍把工牌和数据线收拾得一丝不乱。"
    ],
    "decision": {
     "avoids": [
-     "慌乱盲动",
-     "无端猜忌"
+     "只看结果的人"
     ],
-    "contrast": "温雅清丽的技术飞官，在沉重机械危机面前爆发出惊人的铿锵韧劲。",
-    "core_value": "一切自锁机构皆有力矩弱点，找准切向力矩，百钧死锁亦可瓦解。",
+    "contrast": "人前严谨沉稳，私下会把下巴抵在别人肩上叹气。",
+    "core_value": "数据不会撒谎，撒谎的是人。",
     "goal_options": [
-     "利用测角规直角折沿撬脱自锁偏心阀",
-     "协同总师顶正气闸门自救脱困"
+     "保住期权又不害死人",
+     "找个台阶把真相交出去"
     ],
     "never": [
-     "临阵退缩放弃同伴"
+     "亲手删掉原始日志"
     ],
     "prefers": [
-     "精准的力学配合",
-     "沉着果断的执行力"
+     "懂算法的人"
     ],
     "pressure_responses": {
-     "breaking": "紧咬银牙死死压住杠杆，直至机械阀产生脱开气鸣声。",
-     "high": "以全身重量紧贴总师臂膀向下施压消除打滑。",
-     "low": "迅速判断偏心阀卡死死点位于下部偏心卡爪。",
-     "mid": "果断将钨钴合金测角规以特定角度切入阀体槽孔。"
+     "breaking": "关掉所有屏幕一个人坐着",
+     "high": "把终端递给信得过的人",
+     "low": "说话更慢，句句带术语",
+     "mid": "故意报错校验码拖时间"
     },
-    "relationship_stance": "视总师为最可靠的工科后盾，在灾厄中缔结生死不渝的默契同盟。",
-    "withdrawal": "在脱困后退至安全区域深呼吸平复心绪并检查仪表。"
+    "relationship_stance": "试探着靠近，确认对方站在哪边才肯交底。",
+    "withdrawal": "躲进遥测台最里面的机柜后面，对着风扇声发呆。"
+   },
+   "gender": "any",
+   "gender_reason": "航电主管性别不影响剧情，开局再定。",
+   "id": "avionics_lead_han_yu",
+   "identity": {
+    "authority": "握着球舱遥测黑匣子原始数据导出权、黑障滤波包修改权限与地面遥测台席位。",
+    "exposure": "上周按商务副总授意给黑障遥测包加了平滑滤波，版本库里留着记录。",
+    "hidden": "一直留着授意邮件没删，心里盼着有人逼自己交出去。",
+    "limits": [
+     "期权要等首飞官宣才兑现",
+     "底层日志一拉出来就藏不住"
+    ],
+    "obligations": [
+     "对每一条遥测曲线签名负责"
+    ],
+    "resources": [
+     "遥测台后台版本库",
+     "商务副总授意加滤波的邮件记录"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "对方看穿了却不说破的眼神",
+     "肯陪着熬夜对一组参数的耐心"
+    ],
+    "boundaries": [
+     "对方不愿意就退回原位"
+    ],
+    "desire_range": [
+     2,
+     3
+    ],
+    "desired_position": "遥测台旁那把多出来的椅子",
+    "dislikes": [
+     "被当成工具"
+    ],
+    "expression": "把移动终端塞进对方手心，指尖停了一下才松开。",
+    "likes": [
+     "并肩看一块屏幕的安静"
+    ],
+    "preconditions": [
+     "确认对方站在同一边之后",
+     "两人清醒，各自愿意"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "空天航电与遥测算法主管",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_pilot_base_quarters",
+     "to": 480
+    },
+    {
+     "from": 480,
+     "location_id": "loc_telemetry_glass_gallery",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "期权冻结，职位难保。",
+      "option": "把原始日志交给技术委员会"
+     },
+     {
+      "cost": "商务副总很快会察觉。",
+      "option": "拖住简报等首席飞官取证"
+     }
+    ],
+    "pressure": "一发出去，滤波就成了公开的谎。",
+    "trigger": "商务副总要求当场导出三次满分的公关简报。"
+   },
+   "tags": [
+    "workplace",
+    "crime"
+   ],
+   "voices": {
+    "inner": "快来个人拦住我。",
+    "surface": "这组曲线我再核一遍，你先别急。"
+   }
+  },
+  {
+   "adult_context": "年满三十五岁，商业航天公司融资与发射排期副总，签过三轮融资。",
+   "age_range": [
+    35,
+    40
+   ],
+   "appearance_options": [
+    "定制西装配基地工牌，袖扣是火箭造型，张口就是里程碑。",
+    "在观礼席前笑得周到，转身看表时下颌绷得很紧。"
+   ],
+   "decision": {
+    "avoids": [
+     "空讲原则的人"
+    ],
+    "contrast": "人前八面玲珑，独处时会把领带扯松，盯着发射塔发呆。",
+    "core_value": "里程碑不等人。",
+    "goal_options": [
+     "周五前让首飞乘组官宣",
+     "让不肯签字的人换掉"
+    ],
+    "never": [
+     "在投资方面前认错"
+    ],
+    "prefers": [
+     "能谈条件的人"
+    ],
+    "pressure_responses": {
+     "breaking": "把催签函拍在桌上摔门",
+     "high": "当场收回首席飞行津贴",
+     "low": "笑着加码许诺",
+     "mid": "放风说首席怯战"
+    },
+    "relationship_stance": "先给好处，再看对方要什么。",
+    "withdrawal": "去贵宾室泡一壶茶，对着手机里的股价曲线坐着。"
+   },
+   "gender": "any",
+   "gender_reason": "融资副总性别不影响剧情，开局再定。",
+   "id": "vp_commercial_zhao_heng",
+   "identity": {
+    "authority": "握着首飞乘组名单报批权、投资人观礼席位分配与基地年度奖金池核发权。",
+    "exposure": "滤波是自己授意加的，一旦曝光就是瞒报飞行隐患。",
+    "hidden": "怕的不是失败，是对赌输了就再也回不了这个行业。",
+    "limits": [
+     "周五前必须官宣首飞乘组",
+     "技术委员会的否决绕不过去"
+    ],
+    "obligations": [
+     "对投资方交代进度"
+    ],
+    "resources": [
+     "对赌基金的补充协议",
+     "单人舱替补方案"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "对方不怕自己的那份从容",
+     "谈判桌上寸步不让的对手"
+    ],
+    "boundaries": [
+     "生意和感情分开算"
+    ],
+    "desire_range": [
+     2,
+     3
+    ],
+    "desired_position": "贵宾室里与对方平起平坐的那张沙发",
+    "dislikes": [
+     "被当众驳回"
+    ],
+    "expression": "递一杯茶过去，说“我们换个不谈工作的地方”。",
+    "likes": [
+     "对手也懂规矩"
+    ],
+    "preconditions": [
+     "离开谈判桌、双方清醒的时候",
+     "彼此不欠一笔账"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "商业航天融资与发射排期副总",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_pilot_base_quarters",
+     "to": 480
+    },
+    {
+     "from": 480,
+     "location_id": "loc_telemetry_glass_gallery",
+     "to": 1000
+    },
+    {
+     "from": 1000,
+     "location_id": "loc_aerospace_assembly_hall_floor",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_telemetry_glass_gallery",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "技术委员会可能当场否决。",
+      "option": "强推单人舱"
+     },
+     {
+      "cost": "对赌违约的风险落在自己头上。",
+      "option": "同意延期十天"
+     }
+    ],
+    "pressure": "首席再拒签，就立刻启用单人舱替补方案。",
+    "trigger": "对赌协议要求周五前官宣乘组。"
+   },
+   "tags": [
+    "workplace",
+    "crime"
+   ],
+   "voices": {
+    "inner": "要是真出了事，我承担得起吗？",
+    "surface": "首飞是全公司的事，不是一个人的脾气。"
+   }
+  },
+  {
+   "adult_context": "年满二十七岁，持执业医师证的航天医学专科医生，基地驻场首席航医。",
+   "age_range": [
+    27,
+    30
+   ],
+   "appearance_options": [
+    "白大褂下是基地蓝的工装，长发挽成低髻，听诊器挂在颈间，说话总带着笑。",
+    "盯着心电屏时眉心轻轻蹙起，笔尖在记录本上停得很稳。"
+   ],
+   "decision": {
+    "avoids": [
+     "拿身体逞强的人"
+    ],
+    "contrast": "人前温婉细致，私下会笑着要人请吃庆功宴。",
+    "core_value": "身体先于名单。",
+    "goal_options": [
+     "让带病的人别进舱",
+     "守住一个人不被看穿的心事"
+    ],
+    "never": [
+     "违心签发合格证"
+    ],
+    "prefers": [
+     "照顾自己身体的人"
+    ],
+    "pressure_responses": {
+     "breaking": "锁上航医室谁也不见",
+     "high": "把底单推到信得过的人面前",
+     "low": "笑着多问两句",
+     "mid": "暂缓签发合格证"
+    },
+    "relationship_stance": "温柔照顾每个人，只对一个人留了钥匙。",
+    "withdrawal": "回航医室泡一杯菊花茶，把病历一页页理整齐。"
    },
    "gender": "female",
-   "gender_reason": "空天遥测与航电系统试飞女飞官态，精通座舱气动管路与气密压差配平。",
-   "id": "telemetry_pilot_gu_tianjiao",
+   "gender_reason": "驻场女航医的角色设定，固定为女性。",
+   "id": "flight_surgeon_su_wan",
    "identity": {
-    "authority": "对座舱气动管路排布与偏心阀受力参数拥有精准专业计算。",
-    "exposure": "湿透的飞行马甲贴紧腰肢曲线，在逼仄空间完全展露青春女性罕见的柔韧体态。",
-    "hidden": "随身携带微型防磁六角调整螺丝刀",
+    "authority": "握着试飞员生理合格证签发权、抗荷服心率遥测监控与隔离放行权。",
+    "exposure": "她看得出首席飞官和某人之间不寻常的心率波动，却一直替人压着没记。",
+    "hidden": "手里那份底单，她不想用来毁掉谁，只想有人逼替补停下来。",
     "limits": [
-     "死角狭窄缺乏大型千斤顶支撑",
-     "必须在十分钟内排除机械阻尼"
+     "不能泄露病历",
+     "合格证一签就要担责"
     ],
     "obligations": [
-     "力保昂贵空天遥测芯片完好",
-     "与技术总师紧密协作逃生"
+     "对每一个进舱的人的身体负责"
     ],
     "resources": [
-     "加厚钨钴合金航图测角规",
-     "高抗拉阻燃绑带"
+     "替补飞官的真实体检底单",
+     "航医室的备用钥匙"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "总师在危急时刻硬扛高温热浪护住女飞官的男子汉气概",
-     "贴身施力时对方宽阔胸膛传来的雄浑力量与温热气息"
+     "对方深夜还记得给她带一杯热的",
+     "肯把身体不适老实说出口的人"
     ],
     "boundaries": [
-     "严守自尊自爱底线",
-     "出路纯靠机械杠杆自救"
+     "值班时不越界"
     ],
     "desire_range": [
-     1,
-     2
+     2,
+     4
     ],
-    "desired_position": "伏在总师怀侧死角，双手叠于总师手背合力下按测角规柄部。",
+    "desired_position": "航医值班室里并肩的那张长凳",
     "dislikes": [
-     "轻浮孟浪",
-     "迟疑推诿"
+     "被人当成挡箭牌"
     ],
-    "expression": "轻柔递上干纸巾为总师擦去额头冷汗，温言抚慰并察看对方手掌磨痕。",
+    "expression": "替对方理好领口，指尖在锁骨上方停住，笑说“心率又快了”。",
     "likes": [
-     "彼此心领神会的对视",
-     "偏心阀弹开瞬间的清脆金属鸣响"
+     "并肩看流星雨的安静"
     ],
     "preconditions": [
-     "座舱内外压差完全归零",
-     "全员安然脱困出险"
+     "对方身体无恙、神志清醒",
+     "心意出于两人自己"
     ],
     "self_control_range": [
-     4,
+     3,
      5
     ]
    },
-   "public_role": "空天航电技术试飞员",
+   "public_role": "基地驻场首席航医",
    "schedule": [
     {
-     "from": 1250,
-     "location_id": "loc_flight_simulator_cabin",
-     "to": 1255
+     "from": 0,
+     "location_id": "loc_pilot_base_quarters",
+     "to": 420
     },
     {
-     "from": 1255,
-     "location_id": "loc_simulator_relief_valve_nook",
-     "to": 1285
+     "from": 420,
+     "location_id": "loc_escort_monitor_booth",
+     "to": 1100
+    },
+    {
+     "from": 1100,
+     "location_id": "loc_aerospace_assembly_hall_floor",
+     "to": 1260
+    },
+    {
+     "from": 1260,
+     "location_id": "loc_escort_monitor_booth",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "施力人员前臂与手掌承受强烈反力矩压迫造成肌肉酸麻淤青。",
-      "option": "以特制钨钴合金测角规切入槽孔，双手合力向下施压旋转顶出偏心销脱扣自救。"
+      "cost": "替补今年的评级被降。",
+      "option": "以例行复核暂缓替补进舱"
      },
      {
-      "cost": "金属框架巨大的摩擦阻力非人力可动，极易拉伤腰肌挫伤手腕。",
-      "option": "强行用力推挤被热膨胀胶条咬死的主门扇。"
+      "cost": "她得陪着担泄密的风险。",
+      "option": "把底单交给信得过的人"
      }
     ],
-    "pressure": "内外气压差随着升温持续扩大，必须在阀芯彻底咬死前手动撬开泄压。",
-    "trigger": "超音速过载模拟导致气密密封件热膨胀变形，泄压阀抱死在闭合位。"
+    "pressure": "说出来是违反保密，不说是看着人出事。",
+    "trigger": "替补若顶替首席强跑极限过载，很可能在舱内晕厥。"
    },
    "tags": [
     "workplace",
-    "disaster",
     "intimate"
    ],
    "voices": {
-    "inner": "座舱温度快失控了……但总师一直在护着我。拼尽全力，我也一定要帮总师把这扇门撬开！",
-    "surface": "总师，受力点在第四个凹槽！测角规厚度刚好卡死，顺着切线压，我们一起下压！"
+    "inner": "我能替别人保密，替自己就不行了。",
+    "surface": "先量个血压，别跟我说没事。"
    }
   },
   {
-   "adult_context": "二十二岁的工程师，具备高等级载人航天环控设计资质，沉毅果敢担当可靠。",
+   "adult_context": "年满四十六岁，带过两代试飞员的总装测试大厅机务总班长，持特级机务证。",
    "age_range": [
-    22,
-    24
+    46,
+    52
    ],
    "appearance_options": [
-    "深灰航天工装连体服，身姿挺拔双臂结实，眼神沉静锐利，额角浸满汗水。",
-    "腰系轻量化多功能装备带，佩戴阻燃防割手套，在升温震颤的球舱死角稳如磐石护住女飞官。"
+    "灰蓝工装洗得发白，鬓角也白了，手电筒总别在腰间，说话嗓门大。",
+    "站在廊桥下仰头看球舱时眯着眼，皱纹里全是戈壁的风。"
    ],
    "decision": {
     "avoids": [
-     "推诿拖延",
-     "盲目冒进"
+     "偷奸耍滑的人"
     ],
-    "contrast": "平日沉稳寡言的工科青年，在生死一线时爆发出令人心折的刚毅与担当。",
-    "core_value": "机械自锁虽坚固，必有反向力矩解法；有我在，绝不会让女飞官受到半分伤害。",
+    "contrast": "人前吼得全厅都听得见，私下会偷偷给人留一碗热汤。",
+    "core_value": "人在舱里，地上的人就不能睡。",
     "goal_options": [
-     "以测角规精准插入泄压阀孔",
-     "全力下压杠杆扳转偏心轴销"
+     "揪出动表盘的人",
+     "让两代飞官平平安安"
     ],
     "never": [
-     "背弃女飞官的信任与托付"
+     "拿飞行员的命开玩笑"
     ],
     "prefers": [
-     "扎实的机械力学自救",
-     "毫无保留的生死信赖"
+     "做事踏实的人"
     ],
     "pressure_responses": {
-     "breaking": "双臂肌肉暴胀如铁，怒吼声中硬生生将咬死的偏心轴销扳转到位。",
-     "high": "双手包覆住女飞官双手，毫无保留爆发全身背阔肌与核心重量下按。",
-     "low": "在球舱断电报警瞬间一把将女飞官拉入怀中避开倒伏支架，低声安抚对方。",
-     "mid": "伏身狭缝死角指导女飞官调整握持手势，建立稳固反向力臂支点。"
+     "breaking": "一个人坐在工具房抽烟",
+     "high": "当众拍桌要查",
+     "low": "嘴上骂人手上不停",
+     "mid": "守在廊桥下不走"
     },
-    "relationship_stance": "在基地管了两年生命保障，被女飞官挑了两年的刺；女飞官每一次进舱的供氧曲线，总师都是亲手调的。",
-    "withdrawal": "确认气压彻底平衡女飞官脱困后方才脱力坐在地板上长舒一口气。"
+    "relationship_stance": "嘴硬心软，把人当自家晚辈护着。",
+    "withdrawal": "在廊桥下煮一锅姜茶，谁来都给一杯。"
    },
    "gender": "male",
-   "gender_reason": "青年航天环控总师，精通空天座舱气密锁死与热力学自救。",
-   "id": "life_support_lead_shen",
+   "gender_reason": "资深机务班长的角色设定，固定为男性。",
+   "id": "crew_chief_lao_zhou",
    "identity": {
-    "authority": "对模拟球舱内部环控管路、气锁机构与应急泄压拥有最高现场处置裁决权。",
-    "exposure": "工装连体服被热汗浸透勾勒出结实胸膛，在近身施力时阳刚气魄完全展现。",
-    "hidden": "随身携带一枚备用十字合金螺丝刀头",
+    "authority": "握着液压廊桥起降、大厅夜间照明总闸与地面机务班组调配。",
+    "exposure": "察觉有人私调了球舱增压阈值，想让首席飞官生理超标出局。",
+    "hidden": "当年没护住一个徒弟，这回谁动首席飞官，他就跟谁拼到底。",
     "limits": [
-     "身负护卫女飞官重任绝不退缩",
-     "检修死角逼仄难以伸展全身"
+     "没有证据不能拿人",
+     "管不到董事会"
     ],
     "obligations": [
-     "保护女飞官免受高温热浪灼伤",
-     "合力打破偏心泄压阀机械自锁"
+     "护着每一个进舱的人"
     ],
     "resources": [
-     "硬质合金航图测角规（女飞官提供）",
-     "高亮度防爆手电",
-     "阻燃防滑手套"
+     "大厅照明总闸钥匙",
+     "一只用了十年的保温杯"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "女飞官在突发危机前毫不娇气、毅然跪地与自己并肩拼命的坚韧勇气",
-     "紧贴施力时女飞官面颊透出的温润娇红与急促滚烫的吐息"
+     "对方记得他手册里的老口令",
+     "肯蹲下来陪他看一块表盘的人"
     ],
     "boundaries": [
-     "恪守规矩分寸",
-     "绝无轻慢之意"
+     "不碰正在值班的人"
     ],
     "desire_range": [
      1,
      2
     ],
-    "desired_position": "后背抵住球舱门框立柱，双手握住测角规长边，由女飞官伏于胸前合力下压。",
+    "desired_position": "廊桥下两把并排的折叠凳",
     "dislikes": [
-     "轻慢女性",
-     "言而无信"
+     "被当成看门的"
     ],
-    "expression": "脱险后默默将自身干燥毛巾递在女飞官微湿的肩头，紧紧握住女飞官双手以体温抚慰。",
+    "expression": "按住对方的肩，憋半天只说一句“回去睡觉”。",
     "likes": [
-     "彼此掌心交叠时的沉稳踏实",
-     "同声发力突破难关时的心意共鸣"
+     "一起熬夜对完一本手册"
     ],
     "preconditions": [
-     "全员脱困安全无虞",
-     "球舱平压开启"
+     "下了班、两人都清醒",
+     "对方真心愿意"
     ],
     "self_control_range": [
      4,
      5
     ]
    },
-   "public_role": "测控基地的环控总师",
+   "public_role": "总装测试大厅机务总班长",
    "schedule": [
     {
-     "from": 1250,
-     "location_id": "loc_flight_simulator_cabin",
-     "to": 1255
+     "from": 0,
+     "location_id": "loc_pilot_base_quarters",
+     "to": 360
     },
     {
-     "from": 1255,
-     "location_id": "loc_simulator_relief_valve_nook",
-     "to": 1285
+     "from": 360,
+     "location_id": "loc_aerospace_assembly_hall_floor",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "手掌虎口在剧烈金属反冲下产生剧烈震颤与轻度淤血。",
-      "option": "借硬质合金测角规折沿作为刚性力臂，双手叠合以全身重量下压扳动偏心销脱扣自救。"
+      "cost": "当晚得罪一大片人。",
+      "option": "守在廊桥下暗查到底"
      },
      {
-      "cost": "复合材料球舱蒙皮厚达数公分，徒劳消耗最后体力并加速窒息。",
-      "option": "用工具砸击仪表台试图砸穿舱壁金属蒙皮。"
+      "cost": "自己要担夜班失察的责任。",
+      "option": "把排查通报交给副总指挥"
      }
     ],
-    "pressure": "必须在有限时间内以爆发力矩撬开偏心阀，否则内外压差将彻底锁死逃生通道。",
-    "trigger": "超音速模拟过载致使密封气锁抱死，偏心泄压阀死卡，舱内温度飙升缺氧严重。"
+    "pressure": "查下去会得罪副总，不查首席今晚就可能出局。",
+    "trigger": "球舱增压表盘的铅封被人动过。"
    },
    "tags": [
-    "workplace",
-    "disaster",
-    "intimate"
+    "workplace"
    ],
    "voices": {
-    "inner": "少校的抗荷服都湿透了，还在嘴硬……别看了，看压力表。这一舱的空气是我管的，我得把人完整地带出去。",
-    "surface": "少校先别动，舱压我盯着！测角规插进泄压阀暗槽，逆时针，我数三下一起转。"
-   }
-  },
-  {
-   "adult_context": "二十二岁的工程师，具备大型公建特种设备应急抢险资质，冷静机敏。",
-   "age_range": [
-    22,
-    24
-   ],
-   "appearance_options": [
-    "深蓝连体防静电工装配工装靴，身姿矫健动作敏捷，目光从容镇定。",
-    "手持防爆强光手电，拉链半开露出坚实锁骨，在急迫险情下有条不紊精准指挥。"
-   ],
-   "decision": {
-    "avoids": [
-     "盲目冒险",
-     "违规操作"
-    ],
-    "contrast": "现代工程青年与傲娇空天女飞官在高温死角的硬核协作。",
-    "core_value": "任何机械自锁都有杠杆解法，力矩找对，千斤顶也不及合理支点。",
-    "goal_options": [
-     "利用测角规精准下压偏心泄压阀",
-     "协同顶起抱死锁扣安全脱困"
-    ],
-    "never": [
-     "在风险未清前让女飞官以身犯险"
-    ],
-    "prefers": [
-     "严谨精准的技术推演",
-     "临危不乱的执行力"
-    ],
-    "pressure_responses": {
-     "breaking": "毫不动摇维持发力姿势直至听见偏心销脱开的清脆回弹声。",
-     "high": "在极限死角内以身躯挡住女飞官防止晃动撞击，合力下按测角规。",
-     "low": "迅速判断密封抱死死点位于下部偏心销，明确逆向旋松方案。",
-     "mid": "用手电光束为女飞官精准标定测角规插入孔洞的角度与深度。"
-    },
-    "relationship_stance": "恪尽职守又深怀体贴，在危险中给予女飞官无可替代的坚实安全感。",
-    "withdrawal": "协助女飞官撤至安全平层后立即设立警示标识通知中控。"
-   },
-   "gender": "male",
-   "gender_reason": "商业航天地面总装技术主管，精通大跨度测试大厅高空升降平台应急维保。",
-   "id": "civil_aerospace_engineer_shen",
-   "identity": {
-    "authority": "掌控悬空模拟球舱液压姿态与受力点紧急破拆现场最终决断权。",
-    "exposure": "工装服被热汗浸透贴紧胸背，近距离伏卧时散发着阳刚利落的气息。",
-    "hidden": "熟悉总装大厅高空防坠安全网手动挂扣位置",
-    "limits": [
-     "悬空十米高空导致外部人员登高耗时长",
-     "必须依靠现有便携器材自救"
-    ],
-    "obligations": [
-     "排查消除球舱液压失稳倾覆风险",
-     "安全护送女飞官脱离死角绝境"
-    ],
-    "resources": [
-     "防爆工业强光手电",
-     "防爆特种数显力矩扳手头",
-     "加厚橡胶防滑手套"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "女飞官在危机中对力学原理解释的敏锐领悟与毫无迟疑的信赖配合",
-     "彼此贴身协作中女飞官身上淡淡馨香与急促呼吸形成的反差冲击"
-    ],
-    "boundaries": [
-     "严守专业工程师职业操守",
-     "规矩分明"
-    ],
-    "desire_range": [
-     1,
-     2
-    ],
-    "desired_position": "并肩伏卧于死角狭缝，单手撑地保持避险空隙，另一手与女飞官紧握测角规全力压制。",
-    "dislikes": [
-     "违规蛮干",
-     "自暴自弃"
-    ],
-    "expression": "护送女飞官至安全区域后，微笑着递上干燥纸巾，目光温和坚定。",
-    "likes": [
-     "默契的眼神确认",
-     "手把手校准器械时的体温传递"
-    ],
-    "preconditions": [
-     "完全排除座舱过热爆炸风险",
-     "人员无伤撤离"
-    ],
-    "self_control_range": [
-     4,
-     5
-    ]
-   },
-   "public_role": "地面总装特种设备技术员",
-   "schedule": [
-    {
-     "from": 1250,
-     "location_id": "loc_flight_simulator_cabin",
-     "to": 1255
-    },
-    {
-     "from": 1255,
-     "location_id": "loc_simulator_relief_valve_nook",
-     "to": 1285
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "测角规产生微小磨损，施力人员手臂承受剧烈肌肉酸胀。",
-      "option": "以测角规反撬偏心阀并借力矩压平自锁连杆，顺势松开气密门自救。"
-     },
-     {
-      "cost": "十米悬空跳跃非死即残，属于极度危险的绝路盲动。",
-      "option": "强行扒开舱门试图直接向外跳向十米半空地面。"
-     }
-    ],
-    "pressure": "升温持续逼近抗荷服材料极限，必须在结构损伤前手动松开偏心阀门自救。",
-    "trigger": "超音速模拟造成座舱过热抱死，偏心泄压阀卡死，球舱悬空十米半空。"
-   },
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "voices": {
-    "inner": "只要合金测角规不打滑，这个反力矩完全足够克服胶条阻尼……女飞官，抓紧我！",
-    "surface": "女飞官，阀芯就在暗孔内侧五公分！测角规刚好能卡进六角槽，听我数三二一，我们一起下压！"
-   }
-  },
-  {
-   "adult_context": "二十二岁的主管，体格健硕神情沉毅，熟悉全部商业航天试验规程。",
-   "age_range": [
-    22,
-    24
-   ],
-   "appearance_options": [
-    "深色工作T恤配耐磨工装长裤，双臂青筋隆起，神情沉静坚毅，眼神深邃可靠。",
-    "佩戴战术腰带与对讲机，在高温震颤的模拟球舱死角内从容沉着指挥脱困自救。"
-   ],
-   "decision": {
-    "avoids": [
-     "推诿扯皮",
-     "投机取巧"
-    ],
-    "contrast": "深沉强悍的机械总师与傲娇英气的空天女飞官，在机械死线前形成的强烈反差张力。",
-    "core_value": "飞行器的每一处结构都算过力，找准反支点，再死的卡扣也能松开。",
-    "goal_options": [
-     "利用测角规组装复合撬杠",
-     "合力扳动卡死的偏心泄压阀"
-    ],
-    "never": [
-     "在重门未开前抛下同伴"
-    ],
-    "prefers": [
-     "硬桥硬马的扎实手艺",
-     "毫无保留的生死协作"
-    ],
-    "pressure_responses": {
-     "breaking": "双臂肌肉暴胀如铁，怒吼声中硬生生将偏心销反向顶脱位。",
-     "high": "双手死死握住杠杆最外端，以千钧背肌全力向下猛按到底。",
-     "low": "冷静扫视死角结构，瞬间锁定受力最集中的偏心孔槽。",
-     "mid": "护住女飞官身躯，指导其将测角规紧紧卡入受力暗槽。"
-    },
-    "relationship_stance": "视女飞官为值得誓死守护的英武女子，危难中建立生死莫逆的赤诚信任。",
-    "withdrawal": "确认球舱平压女飞官脱困后，单臂护送女飞官安全撤至干燥控制台。"
-   },
-   "gender": "male",
-   "gender_reason": "特种航天机械总工艺师，对全动模拟器液压平衡与气动机械锁死拆解经验极深。",
-   "id": "master_mechanic_shen",
-   "identity": {
-    "authority": "掌控座舱气锁受力结构现场破拆与排障最高处置指挥权。",
-    "exposure": "黑色T恤被汗水湿透勾勒出雄健背脊，散发着沉稳刚烈的阳刚气概。",
-    "hidden": "掌握总装大厅地下消防主管道手动泄水闸确切位置",
-    "limits": [
-     "高温密闭切断外部机械援助通道",
-     "必须依靠现有便携器材完成力矩反推"
-    ],
-    "obligations": [
-     "保护同机飞官女飞官人身安全",
-     "确保球舱平稳释放气动自锁"
-    ],
-    "resources": [
-     "特种钨钼合金加力套筒接头",
-     "高强度应急手电",
-     "防割手套"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "女飞官在高温绝境中不失沉静果决的坚韧魄力",
-     "贴身施力时女飞官温润如玉的身段与柔韧坚毅的发力姿态"
-    ],
-    "boundaries": [
-     "严守专业分寸",
-     "严守自愿安全原则"
-    ],
-    "desire_range": [
-     1,
-     2
-    ],
-    "desired_position": "单臂护在女飞官身前构成安全空隙，另一手与女飞官共同紧握测角规全力下压。",
-    "dislikes": [
-     "轻浮傲慢",
-     "无端猜忌"
-    ],
-    "expression": "脱险后退后半步递上纸巾，沉声道一句‘女飞官受惊了，总师在，没事了’。",
-    "likes": [
-     "彼此心照不宣的眼神对碰",
-     "合力突破死锁瞬间的畅快淋漓"
-    ],
-    "preconditions": [
-     "偏心阀彻底松脱人员出险",
-     "球舱平稳降温"
-    ],
-    "self_control_range": [
-     4,
-     5
-    ]
-   },
-   "public_role": "特种航天机械综合总工",
-   "schedule": [
-    {
-     "from": 1250,
-     "location_id": "loc_flight_simulator_cabin",
-     "to": 1255
-    },
-    {
-     "from": 1255,
-     "location_id": "loc_simulator_relief_valve_nook",
-     "to": 1285
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "手臂与手掌肌肉极度酸痛，工具把手产生微量金属疲劳应力。",
-      "option": "以硬质合金测角规组装复合支点，合力向下猛压撬出偏心销脱扣自救。"
-     },
-     {
-      "cost": "耐压舱体自重极大极易造成肩关节脱臼骨折，成功率几乎为零。",
-      "option": "强行以身体肩膀向上托举座舱顶盖试图撑开缝隙。"
-     }
-    ],
-    "pressure": "必须在有限时间内以爆发力矩撬开暗槽死锁，否则座舱持续升温将引燃内部线缆。",
-    "trigger": "模拟器过载导致气锁热膨胀抱死，偏心阀死死咬死，高温险情迫在眉睫。"
-   },
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "voices": {
-    "inner": "女飞官的身子全靠着我……这股淡雅发香直往鼻尖里钻。拼了这条命，也绝不让阀门出意外！",
-    "surface": "女飞官莫慌！这阀体吃的是偏心阻滞！测角规咬准了槽口，我们合力管保将卡死处顶松！"
+    "inner": "我老了，可这座球舱我还看得住。",
+    "surface": "手电给我，你往后站。"
    }
   }
  ],
  "clock_start": {
-  "label": "十一月的一个周四，晴",
+  "label": "首飞定档前的周四，戈壁晴",
   "minute": 1250
  },
  "clock_style": "hm",
  "content_tags": [
   "intimate",
-  "bodily_harm",
-  "death",
+  "workplace",
   "workplace_power",
   "crime",
-  "workplace",
   "disaster"
  ],
  "custom": false,
  "customs": [
-  "商业航天超高音速领航员随身配备硬质钨钴合金高精度航图测角分度规。",
-  "六自由度飞行模拟球舱座舱侧壁配有应急手动气压平衡双向偏心螺栓插口。",
-  "航天环控工程师巡查全动座舱随身携带阻燃防割耐磨战术手套与测温仪。",
-  "抗荷服配有下肢高压充气囊带与高强度合金快速脱开锁扣用于维持血液循环。"
+  "进舱前，试飞员会把一样小东西交给留在地面的人保管，落地后再亲手要回来。",
+  "首飞乘组定下来那天，机务班组要在廊桥栏杆上系一条白绸带。",
+  "基地里没人说“祝你好运”，只说“晴空，见”。",
+  "谁在球舱里跑出满分，当晚的姜茶由机务班长亲手煮。"
  ],
  "daily_activities": [
   {
    "beats": [
-    "用丝绒布细致擦拭钨钴合金测角规直角硬刃表面油污",
-    "检查直角规分度刻线与防滑圆孔边缘有无微小毛刺",
-    "使用高精度测微仪校核测角规厚度与抗扭刚性指标"
-   ],
-   "duration_minutes": 20,
-   "hook_ids": [],
-   "id": "act_gauge_calibration_check",
-   "location_ids": [
-    "loc_flight_simulator_cabin"
-   ],
-   "start_minute": 1250,
-   "tags": [
-    "workplace"
-   ],
-   "title": "晨间硬质合金航图测角分度规校验"
-  },
-  {
-   "beats": [
-    "清理泄压阀内六角槽孔边缘残留的润滑油脂与粉尘",
-    "察看偏心轴销限位卡簧弹性阻尼与回位行程指标",
-    "确认阀体金属防护盖板锁扣开闭顺畅无卡滞"
-   ],
-   "duration_minutes": 15,
-   "hook_ids": [],
-   "id": "act_pod_relief_valve_routine_check",
-   "location_ids": [
-    "loc_simulator_relief_valve_nook"
-   ],
-   "start_minute": 1255,
-   "tags": [
-    "workplace"
-   ],
-   "title": "模拟球舱侧壁手动泄压阀密封巡检"
-  },
-  {
-   "beats": [
-    "察看高压纯氧减压阀输出端压力表指针稳压区间",
-    "检查氧气面罩快速接头单向活门密封状态",
-    "手动测试应急排气阀微动开关电信号响应灵敏度"
+    "座舱幽蓝的背光下，{player.name}把手掌覆在对方握侧杆的手背上",
+    "两人一起推演再入时的拉起角度，谁也没先松手"
    ],
    "duration_minutes": 30,
    "hook_ids": [],
-   "id": "act_life_support_oxygen_test",
+   "id": "act_cabin_hand_over_stick",
    "location_ids": [
     "loc_flight_simulator_cabin"
    ],
-   "start_minute": 1260,
+   "start_minute": null,
    "tags": [
-    "workplace"
+    "intimate"
    ],
-   "title": "座舱高压应急供氧回路气密性巡测"
+   "title": "球舱仪表台手背相覆"
   },
   {
    "beats": [
-    "检查六自由度液压支柱高压油管表面有无渗油龟裂",
-    "使用探照手电察看高空防坠安全钩锁定状态",
-    "核验地面主液压泵站电控截止阀紧急切断动作"
+    "收工回到宿舍，{player.name}替对方拉开汗湿紧绷的抗荷服领口",
+    "用温毛巾一点点擦净锁骨上的汗"
    ],
-   "duration_minutes": 25,
+   "duration_minutes": 30,
    "hook_ids": [],
-   "id": "act_assembly_hall_crane_patrol",
+   "id": "act_quarters_collar_towel",
    "location_ids": [
-    "loc_aerospace_assembly_hall_floor"
+    "loc_pilot_base_quarters"
    ],
-   "start_minute": 1265,
+   "start_minute": null,
    "tags": [
-    "workplace",
-    "disaster"
+    "intimate"
    ],
-   "title": "总装大厅高空升降平台应急导轨巡查"
+   "title": "宿舍暖灯下松领口"
   },
   {
    "beats": [
-    "上午九点，女飞官钻进模拟舱做每周例行的对接训练，舱外的屏幕跟着亮起来。",
-    "测控台的人在耳机里报数据，女飞官一边操纵一边回报，声音平稳得像在聊天。",
-    "训练结束，女飞官从舱里爬出来，摘下头盔甩了甩汗湿的头发：再来一遍。"
+    "首席飞官把绣着“苍穹七号”编号的副章塞进{player.name}的内袋",
+    "指尖在胸口轻轻点了两下，说落地再要回来"
    ],
    "duration_minutes": 20,
    "hook_ids": [
-    "hk_atrium_air_pressure_drop",
-    "hk_countdown_reading_rush",
-    "hk_end_relief_praise"
+    "hook_gu_unsigned_release",
+    "hook_gu_helmet_tap",
+    "hook_gu_sweat_collar"
    ],
-   "id": "act_pod_blackout_evac_drill",
+   "id": "act_patch_in_pocket",
+   "location_ids": [
+    "loc_pilot_base_quarters"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "首飞副章贴身相托"
+  },
+  {
+   "beats": [
+    "关掉顶灯，亚轨道星图投影在两人脸上流转",
+    "肩并肩挤在窄椅上，低声核对越顶的轨道"
+   ],
+   "duration_minutes": 40,
+   "hook_ids": [],
+   "id": "act_booth_star_chart",
+   "location_ids": [
+    "loc_escort_monitor_booth"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "伴飞隔间同看星图"
+  },
+  {
+   "beats": [
+    "隔着头盔面罩，首席飞官与{player.name}额头轻抵",
+    "指尖在护目镜边缘敲出只有两人懂的三声"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [
+    "hook_gu_unsigned_release",
+    "hook_gu_helmet_tap",
+    "hook_gu_sweat_collar"
+   ],
+   "id": "act_visor_three_taps",
    "location_ids": [
     "loc_flight_simulator_cabin"
    ],
-   "start_minute": 540,
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "护目镜边三声暗号"
+  },
+  {
+   "beats": [
+    "大厅寒气逼人时，在十二米高的廊桥栏杆边分一只钛合金保温杯",
+    "姜茶烫嘴，{player.name}先吹凉了才递过去"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [],
+   "id": "act_catwalk_ginger_tea",
+   "location_ids": [
+    "loc_aerospace_assembly_hall_floor"
+   ],
+   "start_minute": null,
    "tags": [
     "workplace"
    ],
-   "title": "模拟舱里的例行训练"
+   "title": "廊桥边分饮热姜茶"
   },
   {
    "beats": [
-    "女飞官亲自核验领航平显系统关机与数据备份",
-    "拉下模拟舱高压主断路器机械隔离手柄",
-    "确认六自由度平台机械防下沉安全插销就位挂锁"
+    "两人挤在一张椅子里核对重入倾角公式",
+    "呼吸交错间，对方的唇擦过{player.name}的耳廓"
    ],
-   "duration_minutes": 15,
+   "duration_minutes": 60,
    "hook_ids": [],
-   "id": "act_dusk_pod_main_switch_log",
-   "location_ids": [
-    "loc_flight_simulator_cabin"
-   ],
-   "start_minute": 1275,
-   "tags": [
-    "workplace",
-    "crime"
-   ],
-   "title": "日暮全动模拟器主电源归零锁定"
-  },
-  {
-   "beats": [
-    "泄压阀转开、舱压回零、气锁终于松脱之后，球舱慢慢冷却下来，女飞官瘫在座椅上，抗荷服被汗浸透，额前的碎发一绺绺贴在脸上。",
-    "舱里只剩一盏蓝色的应急灯，女飞官没让人走，抬起下巴示意领口：卡住了。对方替女飞官一点点拉开抗荷服的拉链，拿毛巾擦去锁骨上的汗，女飞官别过脸，耳朵红得发烫。",
-    "女飞官忽然抓住那只手，按在自己还跳得飞快的心口：听见了吧？跟过载没关系……这回，是你害的。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_cooled_pod_g_suit",
-   "location_ids": [
-    "loc_flight_simulator_cabin"
-   ],
-   "start_minute": 1430,
-   "tags": [
-    "intimate"
-   ],
-   "title": "冷却下来的模拟舱里替女飞官解开抗荷服"
-  },
-  {
-   "beats": [
-    "宿舍里，女飞官穿着宽大的飞行员T恤坐在床上，捧着一杯速溶咖啡，盯着墙上一排满分成绩单。",
-    "女飞官别过脸：三次满分，没一个人夸我。……你夸一句，说得好听的话，我就让你坐过来。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_quarters_coffee_scores",
+   "id": "act_desk_orbit_math",
    "location_ids": [
     "loc_pilot_base_quarters"
    ],
-   "start_minute": 1230,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "满分成绩单与咖啡"
+   "title": "宿舍书案并肩算轨"
   },
   {
    "beats": [
-    "女飞官把自己的飞行头盔扣到人头上，跨坐在床沿，隔着面罩敲了敲，笑得像赢了一场比赛。",
-    "女飞官说：现在你是我的僚机。……僚机要听长机的，但这一次，你说想要，我才俯冲。"
+    "大过载科目下舱后，让对方靠在隔间软垫上",
+    "{player.name}用温热的掌心一寸寸揉开被安全带勒酸的肩颈"
    ],
    "duration_minutes": 30,
    "hook_ids": [],
-   "id": "act_quarters_helmet_on",
+   "id": "act_booth_shoulder_rub",
    "location_ids": [
-    "loc_pilot_base_quarters"
+    "loc_escort_monitor_booth"
    ],
-   "start_minute": 1370,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "替人戴上飞行头盔"
+   "title": "下舱后揉开肩颈"
   },
   {
    "beats": [
-    "清晨，女飞官裹着被子靠在窗边，看总装大厅换班的人进进出出，回头把冰凉的脚伸到人腿上。",
-    "女飞官傲娇地说：今天模拟舱检修，我不用飞。……那你也别去上班，陪我。"
+    "并肩站在落地窗前，远眺戈壁上发射塔架的灯光",
+    "飞行夹克遮着，两人悄悄十指相扣"
    ],
    "duration_minutes": 30,
    "hook_ids": [],
-   "id": "act_quarters_hangar_dawn",
+   "id": "act_gallery_launch_tower",
    "location_ids": [
-    "loc_pilot_base_quarters"
+    "loc_telemetry_glass_gallery"
    ],
-   "start_minute": 440,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "总装大厅的清晨"
+   "title": "长廊夜眺发射塔"
   }
  ],
  "default_npc_gender_mix": {
@@ -1373,7 +1553,7 @@
   "nonbinary": 0.0
  },
  "default_person": "second",
- "era": "当代近未来商业航天超高音速测控基地",
+ "era": "当代近未来，商业航天亚轨道载人首飞定档前夜",
  "extends": null,
  "forbidden_terms": [
   "软色情",
@@ -1387,279 +1567,238 @@
  ],
  "hooks": [
   {
-   "id": "hk_rainstorm_warning_thunder",
-   "kind": "approach",
+   "id": "hook_gu_unsigned_release",
+   "kind": "observe",
    "location_ids": [
     "loc_flight_simulator_cabin"
    ],
    "slot": "pilot_gu_tianjiao",
-   "text": "{pilot_gu_tianjiao.name}按住胸口急促起伏的修身抗荷服，面颊在仪表红光下冷汗涔涔，毅然从领航图板抽出一柄特制钨钴合金航图测角规直指死角泄压阀。"
+   "text": "模拟球舱的舱门刚刚滑开一道缝，首席女飞官{npc.name}坐在泛着幽蓝微光的主驾席上没有起身，写字板上夹着一页没签字的《首飞放行确认书》。"
   },
   {
-   "id": "hk_countdown_reading_rush",
+   "id": "hook_gu_helmet_tap",
    "kind": "approach",
    "location_ids": [
-    "loc_flight_simulator_cabin"
+    "loc_flight_simulator_cabin",
+    "loc_escort_monitor_booth"
    ],
    "slot": "pilot_gu_tianjiao",
-   "text": "{pilot_gu_tianjiao.name}听到座舱低压警报尖锐啸叫，在滚烫急喘中咬紧银牙侧身跪倒在三十五公分死角直面咬死的气密阀。"
+   "text": "{npc.name}抱着两副头盔走过来，把其中一副扣到你怀里：“陪我再跑最后一次，就我们俩。”"
   },
   {
-   "id": "hk_bookshelf_groan_deadlock",
+   "id": "hook_gu_sweat_collar",
    "kind": "approach",
    "location_ids": [
-    "loc_simulator_relief_valve_nook"
-   ],
-   "slot": "life_support_lead_shen",
-   "text": "{life_support_lead_shen.name}双膝跪地紧贴冰冷地板，以坚实身躯硬生生护住身前女飞官免受悬空倾斜晃动撞击，大声提醒女飞官对准偏心泄压阀内六角槽孔！"
-  },
-  {
-   "id": "hk_rail_deformation_scrape",
-   "kind": "approach",
-   "location_ids": [
-    "loc_simulator_relief_valve_nook"
-   ],
-   "slot": "life_support_lead_shen",
-   "text": "{life_support_lead_shen.name}反手抽出战术手电垫入阀体底层，用粗糙手掌牢牢护住测角规直角硬刃末端防止滑动，大声喝道就是这个偏心自锁轴销！"
-  },
-  {
-   "id": "hk_tight_breath_ear_brush",
-   "kind": "approach",
-   "location_ids": [
-    "loc_simulator_relief_valve_nook"
-   ],
-   "slot": "pilot_gu_tianjiao",
-   "text": "{pilot_gu_tianjiao.name}整个人伏在总师怀前，面庞几乎贴上总师颈项，滚烫娇喘混合着淡雅馨香在狭小检修孔旁猛烈交融。"
-  },
-  {
-   "id": "hk_dress_sweat_heat_exchange",
-   "kind": "approach",
-   "location_ids": [
-    "loc_simulator_relief_valve_nook"
-   ],
-   "slot": "pilot_gu_tianjiao",
-   "text": "{pilot_gu_tianjiao.name}单薄抗荷服被热汗浸得半透紧贴背脊曲线，双手毅然越过总师手臂重叠紧握测角规把手，合力向下一寸寸猛压！"
-  },
-  {
-   "id": "hk_brass_paperweight_flange_align",
-   "kind": "approach",
-   "location_ids": [
-    "loc_simulator_relief_valve_nook"
-   ],
-   "slot": "pilot_gu_tianjiao",
-   "text": "{pilot_gu_tianjiao.name}以空天女飞官的绝对果决，将高纯度钨钴硬质合金打造的坚硬测角规，精准别入偏心泄压阀暗孔内六角的自锁死点。"
-  },
-  {
-   "id": "hk_rubber_hammer_chock_in",
-   "kind": "approach",
-   "location_ids": [
-    "loc_simulator_relief_valve_nook"
-   ],
-   "slot": "life_support_lead_shen",
-   "text": "{life_support_lead_shen.name}将随身防滑手套猛然卡入门框受力边缘，单臂如铜浇铁铸般撑开避险空隙，大吼道支点已成，女飞官尽管用力下压！"
-  },
-  {
-   "id": "hk_satin_ribbon_bind_grip",
-   "kind": "approach",
-   "location_ids": [
-    "loc_simulator_relief_valve_nook"
-   ],
-   "slot": "pilot_gu_tianjiao",
-   "text": "{pilot_gu_tianjiao.name}亲手解下随身阻燃防静电领巾，紧紧缠绕在两人满是冷汗的手背与测角规柄部，将两人的手臂力量彻底刚性绞合为一体！"
-  },
-  {
-   "id": "hk_simulator_overheat_roaring_rush",
-   "kind": "approach",
-   "location_ids": [
-    "loc_simulator_relief_valve_nook"
-   ],
-   "slot": "pilot_gu_tianjiao",
-   "text": "{pilot_gu_tianjiao.name}凝视控制台飙升的极端温度示数，面颊泛起不容动摇的绝决，誓死要在死角中同总师一起冲出重围！"
-  },
-  {
-   "id": "hk_atrium_air_pressure_drop",
-   "kind": "approach",
-   "location_ids": [
-    "loc_flight_simulator_cabin"
-   ],
-   "slot": "pilot_gu_tianjiao",
-   "text": "{pilot_gu_tianjiao.name}察觉座舱蓄电池蜂鸣声愈发凄厉，断然喊道电量要耗尽了，立刻随我全员趴下进行杠杆最终突压！"
-  },
-  {
-   "id": "hk_synchronized_grunt_heave",
-   "kind": "approach",
-   "location_ids": [
-    "loc_simulator_relief_valve_nook"
-   ],
-   "slot": "life_support_lead_shen",
-   "text": "{life_support_lead_shen.name}与女飞官齐声发力，后背肌肉如山丘般隆起，将整整两百斤体重与臂力完全倾注于挥动的测角规末端！"
-  },
-  {
-   "id": "hk_spring_latch_pop_rebound",
-   "kind": "approach",
-   "location_ids": [
-    "loc_simulator_relief_valve_nook"
-   ],
-   "slot": "pilot_gu_tianjiao",
-   "text": "{pilot_gu_tianjiao.name}手心感受到清脆至极的机械巨震，偏心轴销硬生生被测角规扳转到位，高压气流伴随震耳欲聋的喷气声骤然回退释压！"
-  },
-  {
-   "id": "hk_vault_escape_roll_fresh_air",
-   "kind": "approach",
-   "location_ids": [
-    "loc_flight_simulator_cabin"
-   ],
-   "slot": "pilot_gu_tianjiao",
-   "text": "{pilot_gu_tianjiao.name}顺势推开主气锁门扇，被总师单臂揽住纤腰抱出舱口，两人迎着总装大厅的清凉空气大口喘息，绝境脱困成功！"
-  },
-  {
-   "id": "hk_end_relief_praise",
-   "kind": "approach",
-   "location_ids": [
-    "loc_flight_simulator_cabin"
-   ],
-   "slot": "pilot_gu_tianjiao",
-   "text": "{pilot_gu_tianjiao.name}靠在登高车护栏旁微微喘息，面颊带着劫后余生的嫣红，侧过脸轻声对身侧总师道多亏总师勇敢护着我。"
-  },
-  {
-   "id": "hook_tianjiao_coffee",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "pilot_gu_tianjiao",
-   "text": "{npc.name}把一杯速溶咖啡重重放在人桌上，抱起胳膊：别误会，是买一送一。喝完了陪我去跑一遍黑障。"
-  },
-  {
-   "id": "hook_tianjiao_fathers_gauge",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "pilot_gu_tianjiao",
-   "text": "{npc.name}把一枚磨得发亮的测角规放在桌上，指尖点了点：我爸留下的，跟着飞了三十年。除了我，你是第一个碰这枚测角规的人。"
-  },
-  {
-   "id": "hook_tianjiao_hangar_roof",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "pilot_gu_tianjiao",
-   "text": "{npc.name}坐在机库顶上，冲下面的人招手：上来。今晚没云，能看见空间站过境——就四分钟，错过了别怪我。"
-  },
-  {
-   "id": "hook_tianjiao_zipper",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "pilot_gu_tianjiao",
-   "text": "{npc.name}背对着人，抗荷服的拉链拉到一半就卡住了，头也不回：还愣着？过来帮我拉一下。看什么看。"
-  },
-  {
-   "id": "hook_shen_oxygen_curve",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "life_support_lead_shen",
-   "text": "{npc.name}把一张打印出来的供氧曲线推过来，上面全是红笔圈：少校嫌上一版太闷，我改了七遍。你帮我看看，这回能不能过。"
-  },
-  {
-   "id": "hook_shen_ration",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "life_support_lead_shen",
-   "text": "{npc.name}把两份航天营养餐放进微波炉，回头说：少校又没吃晚饭。你帮我送进去，我送进去少校不吃。"
-  },
-  {
-   "id": "hook_tianjiao_quarters_door",
-   "kind": "approach",
-   "location_ids": [
+    "loc_escort_monitor_booth",
     "loc_pilot_base_quarters"
    ],
    "slot": "pilot_gu_tianjiao",
-   "text": "{npc.name}在宿舍门口把飞行头盔往人怀里一塞：今天又是满分。……进来，夸我。"
+   "text": "{npc.name}下舱后脚步有点飘，抗荷服领口勒得发红，却把手伸到你面前：“帮我解开，别声张。”"
+  },
+  {
+   "id": "hook_lin_handover_slip",
+   "kind": "observe",
+   "location_ids": [
+    "loc_escort_monitor_booth"
+   ],
+   "slot": "pilot_lin_zhen",
+   "text": "球舱伴飞监控隔间里，替补女试飞员{npc.name}手里捏着一份替补接舱通知单，驻场航医正拿着一份划了红圈的眼震报告走过来。"
+  },
+  {
+   "id": "hook_lin_dizzy_rail",
+   "kind": "approach",
+   "location_ids": [
+    "loc_aerospace_assembly_hall_floor"
+   ],
+   "slot": "pilot_lin_zhen",
+   "text": "{npc.name}扶着廊桥栏杆朝你笑，脸色却白得厉害：“别叫航医，扶我站一会儿就好。”"
+  },
+  {
+   "id": "hook_lin_curve_page",
+   "kind": "approach",
+   "location_ids": [
+    "loc_telemetry_glass_gallery",
+    "loc_escort_monitor_booth"
+   ],
+   "slot": "pilot_lin_zhen",
+   "text": "{npc.name}把一页折了两折的曲线塞进你手里，压低声音：“这东西，我只敢给你看。”"
+  },
+  {
+   "id": "hook_han_smoothed_curve",
+   "kind": "observe",
+   "location_ids": [
+    "loc_telemetry_glass_gallery"
+   ],
+   "slot": "avionics_lead_han_yu",
+   "text": "二层遥测玻璃长廊的显示屏前，航电主管{npc.name}正盯着黑障区那段被平滑过的曲线，融资副总抬腕看着手表站在身后。"
+  },
+  {
+   "id": "hook_han_terminal_pass",
+   "kind": "approach",
+   "location_ids": [
+    "loc_telemetry_glass_gallery"
+   ],
+   "slot": "avionics_lead_han_yu",
+   "text": "{npc.name}借着请教接口的名义侧身挡住副总的视线，把一台移动终端推到你手边。"
+  },
+  {
+   "id": "hook_han_coffee_ask",
+   "kind": "approach",
+   "location_ids": [
+    "loc_aerospace_assembly_hall_floor",
+    "loc_telemetry_glass_gallery"
+   ],
+   "slot": "avionics_lead_han_yu",
+   "text": "{npc.name}端着两杯咖啡走来，把一杯放在你面前：“底层日志，你手里还留着吗？”"
+  },
+  {
+   "id": "hook_zhao_invite_tea",
+   "kind": "approach",
+   "location_ids": [
+    "loc_telemetry_glass_gallery"
+   ],
+   "slot": "vp_commercial_zhao_heng",
+   "text": "{npc.name}笑着拦住你，朝贵宾室抬了抬下巴：“喝杯茶，只谈十分钟。”"
+  },
+  {
+   "id": "hook_zhao_crew_list",
+   "kind": "request",
+   "location_ids": [
+    "loc_aerospace_assembly_hall_floor",
+    "loc_telemetry_glass_gallery"
+   ],
+   "slot": "vp_commercial_zhao_heng",
+   "text": "{npc.name}把一份乘组名单草稿递给你，副驾那一栏是空的：“帮我劝劝首席，名单今晚得报。”"
+  },
+  {
+   "id": "hook_su_ecg_flag",
+   "kind": "approach",
+   "location_ids": [
+    "loc_escort_monitor_booth"
+   ],
+   "slot": "flight_surgeon_su_wan",
+   "text": "{npc.name}把心电记录翻到某一页，用笔尖点了点那段尖峰，笑着看你：“这是谁的心跳，要我帮你记成测试误差吗？”"
+  },
+  {
+   "id": "hook_su_spare_key",
+   "kind": "approach",
+   "location_ids": [
+    "loc_aerospace_assembly_hall_floor",
+    "loc_escort_monitor_booth"
+   ],
+   "slot": "flight_surgeon_su_wan",
+   "text": "{npc.name}从白大褂口袋里摸出那把备用钥匙晃了晃：“航医室没人，来帮我核一份底单。”"
+  },
+  {
+   "id": "hook_zhou_seal_check",
+   "kind": "observe",
+   "location_ids": [
+    "loc_aerospace_assembly_hall_floor"
+   ],
+   "slot": "crew_chief_lao_zhou",
+   "text": "总装测试大厅的悬空廊桥下，机务总班长{npc.name}正举着手电筒细看球舱外侧被人动过铅封的增压调压表盘。"
+  },
+  {
+   "id": "hook_zhou_ginger_tea",
+   "kind": "approach",
+   "location_ids": [
+    "loc_aerospace_assembly_hall_floor"
+   ],
+   "slot": "crew_chief_lao_zhou",
+   "text": "{npc.name}把保温杯往你手里一塞：“喝完再上去，舱里那位今晚也没吃饭。”"
+  },
+  {
+   "id": "hook_zhou_shoulder_grip",
+   "kind": "approach",
+   "location_ids": [
+    "loc_aerospace_assembly_hall_floor",
+    "loc_escort_monitor_booth"
+   ],
+   "slot": "crew_chief_lao_zhou",
+   "text": "{npc.name}按住你的肩把你拉到廊桥阴影里：“别出声，看那块表。”"
   }
  ],
  "id": "aerospace_simulator_pod_gauge_release",
  "locations": [
   {
    "affordances": [
-    "紧贴仪表控制台稳固两人重心维持施力体态",
-    "从领航图板卡槽抽出特制硬质合金航图测角规",
-    "合力跪伏在侧壁检修位察看主气锁密封摇臂状态"
+    "没签字的首飞放行确认书",
+    "还连着生物遥测贴片的抗荷服",
+    "并排的两副飞行头盔"
    ],
-   "detail": "悬挂在十米高空的双人碳纤维高压密封球形座舱，四周布满环形高亮度平显仪表与全景视景弧面。因超高音速再入模拟摩擦生热与电磁过载，座舱内部温度已飙升至四十五度，红光警报与低压警报交织狂响。",
+   "detail": "悬空的六自由度全动模拟球舱，双座并排，仪表台泛着幽蓝背光；舱门一关，外面只听得见液压的低鸣。",
    "exits": [
-    "loc_simulator_relief_valve_nook",
+    "loc_escort_monitor_booth",
     "loc_aerospace_assembly_hall_floor"
    ],
    "id": "loc_flight_simulator_cabin",
-   "name": "模拟球舱",
-   "pressure_modifiers": {
-    "p_cabin_overheat_hypoxia_surge": "座舱温度飙升且环控失效，氧气分压急剧暴跌，闷热窒息感疯狂侵袭人体神经。",
-    "p_pneumatic_lock_thermal_expansion_jam": "特种三元乙丙密封胶条因摩擦高热膨胀变形抱死，主门摇臂咬死在偏心锁止槽内无法电动弹开。"
-   },
+   "name": "模拟球舱内部",
+   "pressure_modifiers": {},
    "privacy": "private",
    "tags": [
-    "workplace",
-    "disaster",
-    "intimate"
+    "intimate",
+    "workplace"
    ],
-   "visibility": "应急红色荧光与仪表暗光将狭小座舱染成赤红，近身能看清彼此面庞上滑落的细腻汗珠、急促起伏的抗荷服胸甲。",
+   "visibility": "舱门关上后外面看不见里面，只有遥测台能收到座舱里的数据。",
    "witnesses": []
   },
   {
    "affordances": [
-    "将硬质合金航图测角规直角折沿切入偏心泄压阀内六角槽孔",
-    "双手重叠握住测角规长边以门框钢圈为支点全力向下猛按扳转阀芯",
-    "在气压骤然喷涌释压瞬间顺势合力推开主锁闭摇臂自救"
+    "划了红圈的眼震体检报告",
+    "亚轨道星图投影",
+    "备用的电解质补液盐"
    ],
-   "detail": "位于主出入气闸门框左下方的逼仄检修死角，空间不足三十五公分见方。内嵌一个直径四公分的不锈钢手动偏心泄压阀芯，侧面带有特制内六角长孔，被高温熔胀的密封胶边缘死死顶住。",
-   "exits": [
-    "loc_flight_simulator_cabin"
-   ],
-   "id": "loc_simulator_relief_valve_nook",
-   "name": "泄压阀死角",
-   "pressure_modifiers": {
-    "p_close_contact_body_heat_tension": "在三十五公分逼仄死角内两人身体彻底贴伏，女飞官急促滚烫的吐息拂过颈侧，湿透抗荷服传递着惊人的异性体温。",
-    "p_pneumatic_lock_thermal_expansion_jam": "内外压差持续累积导致偏心销咬合摩擦力倍增，杠杆反扭阻尼逼近极限。"
-   },
-   "privacy": "private",
-   "tags": [
-    "workplace",
-    "intimate"
-   ],
-   "visibility": "强光手电窄光束直射在布满反光耐高温涂层的阀体上，能清晰辨认偏心销受压变形痕迹。",
-   "witnesses": []
-  },
-  {
-   "affordances": [
-    "通过外置无线应急回路向舱内发送机械解锁参数指令",
-    "手动切断球舱外部液压泵源高压供油防止误动作摆动",
-    "调派高空登高作业车携带加压破拆管组向球舱靠拢"
-   ],
-   "detail": "挑高十五米的开阔现代化航天总装大厅，地面整齐排列着测试工装与供气管路。六自由度全动液压平台正将模拟球舱托举在十米半空，值班技术员正通过地面终端焦急呼叫舱内人员。",
+   "detail": "球舱旁的窄隔间，一排监控屏、一张窄椅和一块软垫；关掉顶灯，亚轨道星图投影会在墙上慢慢流转。",
    "exits": [
     "loc_flight_simulator_cabin",
-    "loc_pilot_base_quarters"
+    "loc_aerospace_assembly_hall_floor",
+    "loc_telemetry_glass_gallery"
    ],
-   "id": "loc_aerospace_assembly_hall_floor",
-   "name": "总装大厅",
-   "pressure_modifiers": {
-    "p_cabin_overheat_hypoxia_surge": "登高车升起需要八分钟，外部救援速度无法赶在舱内人员窒息前完成开启。"
-   },
-   "privacy": "public",
+   "id": "loc_escort_monitor_booth",
+   "name": "球舱伴飞监控隔间",
+   "pressure_modifiers": {},
+   "privacy": "semi",
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "visibility": "数十盏高杆LED工矿灯照亮开阔地面，大屏幕上显示着球舱内部急剧攀升的温湿度曲线。",
+   "visibility": "隔间玻璃朝大厅半开，经过的人能瞥见屏幕上的曲线，看不清人的表情。",
    "witnesses": [
-    "bg_command_chief_director_zhao",
-    "bg_telemetry_operator_master_qian",
-    "bg_security_officer_sun"
+    "bg_isolation_nurse"
    ]
   },
   {
    "affordances": [
-    "陪女飞官喝一杯速溶咖啡",
-    "替女飞官拉开抗荷服的拉链",
-    "锁上宿舍的门"
+    "廊桥栏杆边的钛合金保温杯",
+    "全厅大屏",
+    "被人动过铅封的增压表盘"
    ],
-   "detail": "测控基地宿舍楼顶层的一间单人宿舍，一张单人床、一只挂着飞行头盔的衣帽架、墙上贴满黑障模拟的满分成绩单。",
+   "detail": "挑高的总装大厅，球舱悬在十二米高的液压廊桥边；机务班组、技术员和观礼的投资方代表都在这里来回。",
+   "exits": [
+    "loc_flight_simulator_cabin",
+    "loc_escort_monitor_booth",
+    "loc_telemetry_glass_gallery",
+    "loc_pilot_base_quarters"
+   ],
+   "id": "loc_aerospace_assembly_hall_floor",
+   "name": "总装测试大厅",
+   "pressure_modifiers": {},
+   "privacy": "public",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "四面敞亮，大屏和广播把每个人的一举一动都放给全厅看。",
+   "witnesses": [
+    "bg_young_technician",
+    "bg_vp_assistant"
+   ]
+  },
+  {
+   "affordances": [
+    "写满批注的飞行手册",
+    "父亲留下的航图测角规",
+    "暖灯下的温毛巾"
+   ],
+   "detail": "白杨林步道尽头的单人宿舍，暖灯、窄书案和一张椅子，墙上钉着写满批注的飞行手册。",
    "exits": [
     "loc_aerospace_assembly_hall_floor"
    ],
@@ -1670,8 +1809,34 @@
    "tags": [
     "intimate"
    ],
-   "visibility": "窗外是总装大厅彻夜不灭的灯，屋里只开一盏床头灯，门一锁，模拟舱的轰鸣就只剩一点点。",
-   "witnesses": []
+   "visibility": "窗帘一拉就与外界隔开，只有楼下值班室知道谁进了这扇门。",
+   "witnesses": [
+    "bg_dorm_keeper"
+   ]
+  },
+  {
+   "affordances": [
+    "黑障区的遥测曲线",
+    "带底层日志的移动终端",
+    "窗外的发射塔灯光"
+   ],
+   "detail": "总装大厅二层的玻璃长廊，一侧是遥测台阵列，一侧落地窗正对戈壁上的发射塔架灯光。",
+   "exits": [
+    "loc_aerospace_assembly_hall_floor",
+    "loc_escort_monitor_booth"
+   ],
+   "id": "loc_telemetry_glass_gallery",
+   "name": "二层遥测指挥玻璃长廊",
+   "pressure_modifiers": {},
+   "privacy": "semi",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "楼下抬头就看得见长廊里的人影，屏幕内容却只有走近才看得清。",
+   "witnesses": [
+    "bg_telemetry_duty_officer",
+    "bg_investor_rep"
+   ]
   }
  ],
  "name_pools": {
@@ -1751,575 +1916,608 @@
   ],
   "order": "family_first"
  },
- "notes": "按原稿加入，保留商业航天测控中心黑障模拟过载、全动球舱气锁高温抱死与傲娇女飞官用硬质合金航图测角规旋转泄压阀的骨架。同一批有六个同模板的世界，与合租公寓、爱豆演播厅拉开：这里写成斗嘴两年的欢喜冤家——满分了还不肯签字收工的考核、买一送一的速溶咖啡、父亲飞了三十年的测角规、机库顶上看空间站过境、被改了七遍的供氧曲线，搭档写成环控总师。写死的人名改为身份称呼；婴儿肥大多换成了其余外貌描写；人物组合按权力结构放开玩家身份，压力与日常不再锁死钩子，并加了几个不限地点的靠近型钩子；女飞官亲密前提写明脱困之后、双方清醒自愿；新增一个冷却下来的模拟舱里替女飞官解开抗荷服的亲密日常。",
+ "notes": "按原稿加入，保留商业航天测控中心黑障模拟过载、全动球舱气锁高温抱死与傲娇女飞官用硬质合金航图测角规旋转泄压阀的骨架。同一批有六个同模板的世界，与合租公寓、爱豆演播厅拉开：这里写成斗嘴两年的欢喜冤家——满分了还不肯签字收工的考核、买一送一的速溶咖啡、父亲飞了三十年的测角规、机库顶上看空间站过境、被改了七遍的供氧曲线，搭档写成环控总师。写死的人名改为身份称呼；婴儿肥大多换成了其余外貌描写；人物组合按权力结构放开玩家身份，压力与日常不再锁死钩子，并加了几个不限地点的靠近型钩子；女飞官亲密前提写明脱困之后、双方清醒自愿；新增一个冷却下来的模拟舱里替女飞官解开抗荷服的亲密日常。\n2026-10-24 按写作规则 v2 与 Gemini 创意卡改造：删掉球舱高温抱死与撬气锁抢修，改成首飞前夜女飞官拒签放行书、黑障滤波造假与双人座舱存废之争。",
  "player_identities": [
   {
    "age_range": [
-    22,
-    24
+    24,
+    30
    ],
-   "baseline": "二十二岁的特种飞行器环境控制总设计师，精通空天座舱气密锁死与热力学膨胀自救，冷静刚毅。",
-   "gender": "male",
-   "id": "pi_life_support_engineer_shen",
-   "reputation": "多次处置载人模拟飞行极端气压卡阻险情，经验丰富，深得女飞官尊重与信赖。",
-   "resources": [
-    "一把航空级硬质合金航图测角规（高硬度钨钴合金材质，厚度四毫米直角结构具备极高抗扭强度）",
-    "一具高亮度防爆LED强光探照手电",
-    "一副加厚耐磨全指防滑防割阻燃航空手套"
-   ],
-   "risks": [
-    "若不能在座舱氧气浓度降至临界前开启泄压阀，高温缺氧将在十分钟内引发脑水肿昏迷。"
-   ],
-   "role": "商业航天生命保障与环控青年总师",
-   "social_position": "equal",
-   "title_patterns": [
-    {
-     "gender": "any",
-     "pattern": "{family}总师"
-    },
-    {
-     "gender": "any",
-     "pattern": "{family}工"
-    },
-    {
-     "gender": "any",
-     "pattern": "{family}总师"
-    }
-   ]
-  },
-  {
-   "age_range": [
-    22,
-    24
-   ],
-   "baseline": "二十二岁的机械工程青年骨干，熟悉球舱气动密封锁闭摇臂自锁传动机构与偏心回退轨迹。",
-   "gender": "male",
-   "id": "pi_aerospace_mechanic_shen",
-   "reputation": "对模拟器液压与机械咬合结构了如指掌，遇事沉着果决。",
-   "resources": [
-    "全套模拟球舱机械传动三维结构图谱终端",
-    "一支精密不锈钢多功能笔型螺丝撬棒",
-    "高等级阻燃防静电连体飞行工作服"
-   ],
-   "risks": [
-    "六自由度液压支架失压晃动可能拉裂外部供电电缆导致全面断电。"
-   ],
-   "role": "六自由度液压平台总装测试主管",
-   "social_position": "equal",
-   "title_patterns": [
-    {
-     "gender": "any",
-     "pattern": "{family}主管"
-    },
-    {
-     "gender": "any",
-     "pattern": "{given}"
-    },
-    {
-     "gender": "any",
-     "pattern": "{family}工程师"
-    }
-   ]
-  },
-  {
-   "age_range": [
-    22,
-    24
-   ],
-   "baseline": "二十二岁的试飞指挥技术掌舵人，统揽航天模拟大厅全部试验权限与应急处置决断权。",
-   "gender": "male",
-   "id": "pi_flight_test_director_shen",
-   "reputation": "年轻有为的技术领袖，处置重大航天地面模拟事故沉着从容。",
-   "resources": [
-    "硬质钨钴合金航图测角分度规",
-    "特种机电应急主控无线复位终端",
-    "高等级防割耐低温特种战术手套"
-   ],
-   "risks": [
-    "气压平衡失效可能导致舱门在内外压差下瞬间向外崩飞伤人。"
-   ],
-   "role": "商业航天试飞指挥中心副总指挥",
-   "social_position": "high",
-   "title_patterns": [
-    {
-     "gender": "any",
-     "pattern": "{family}指挥"
-    },
-    {
-     "gender": "any",
-     "pattern": "{family}工"
-    },
-    {
-     "gender": "any",
-     "pattern": "{family}指挥"
-    }
-   ]
-  },
-  {
-   "age_range": [
-    22,
-    24
-   ],
-   "baseline": "二十二岁青年领航员，具备出色的抗过载体能与高精度机械盲操感知力。",
-   "gender": "male",
+   "baseline": "你是原定与首席飞官同乘“苍穹七号”执行双人首飞的副驾试飞员，董事会一纸通知可能把你的座位改成一套自动模块。",
+   "gender": "any",
    "id": "pi_flight_cadet_shen",
-   "reputation": "与女飞官在双人空天机组中长期协同，默契极佳。",
+   "reputation": "全队手控改出最稳的副驾。",
    "resources": [
-    "高强度航空阻燃抗荷服",
-    "高硬度硬质合金测角规",
-    "一副高抓地力耐磨防滑手套"
+    "伴飞座舱操作手册",
+    "昨晚最后一轮黑障手控记录"
    ],
    "risks": [
-    "单人力量难以克服数百公斤密封胶条摩擦阻尼，必须完美协同发力。"
+    "单人舱方案一落地，你就从首飞乘组变成观礼席上的人。"
    ],
-   "role": "空天飞行协同领航青年试飞员",
+   "role": "双座舱伴飞试飞员",
    "social_position": "low",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{given}领航员"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
      "pattern": "{given}"
+    }
+   ]
+  },
+  {
+   "age_range": [
+    26,
+    34
+   ],
+   "baseline": "你负责模拟球舱和首飞座舱的供氧温控设计，每一条生保曲线都经过你的手。",
+   "gender": "any",
+   "id": "pi_life_support_engineer_shen",
+   "reputation": "年轻却说一不二的环控总师。",
+   "resources": [
+    "球舱环控主控终端密钥",
+    "生保系统放行章"
+   ],
+   "risks": [
+    "生保章一盖，出了事第一个被追责的就是你。"
+   ],
+   "role": "环控系统青年总师",
+   "social_position": "equal",
+   "title_patterns": [
+    {
+     "gender": "any",
+     "pattern": "{family}"
     },
     {
      "gender": "any",
-     "pattern": "{family}试飞员"
+     "pattern": "{given}"
+    }
+   ]
+  },
+  {
+   "age_range": [
+    27,
+    36
+   ],
+   "baseline": "你掌管模拟球舱的外部姿态动作和黑匣子物理接口，悬空廊桥升不升、硬盘拆不拆，都在你一句话。",
+   "gender": "any",
+   "id": "pi_aerospace_mechanic_shen",
+   "reputation": "总装大厅里最懂这座球舱的人。",
+   "resources": [
+    "悬空廊桥控制权",
+    "未滤波的底层传感器硬盘"
+   ],
+   "risks": [
+    "硬盘在你手里，想让它消失的人也会盯上你。"
+   ],
+   "role": "模拟平台总装测试主管",
+   "social_position": "equal",
+   "title_patterns": [
+    {
+     "gender": "any",
+     "pattern": "{family}"
+    },
+    {
+     "gender": "any",
+     "pattern": "{given}"
+    }
+   ]
+  },
+  {
+   "age_range": [
+    32,
+    42
+   ],
+   "baseline": "你代表技术委员会督导这次首飞定型考核，董事会的催签函要先过你这一关。",
+   "gender": "any",
+   "id": "pi_flight_test_director_shen",
+   "reputation": "出了名不给董事会面子的副总指挥。",
+   "resources": [
+    "首飞乘组名单终审否决权",
+    "延期试飞裁定书"
+   ],
+   "risks": [
+    "压下催签函，融资方会把首飞失败的账算到你头上。"
+   ],
+   "role": "试飞指挥中心常务副总指挥",
+   "social_position": "high",
+   "title_patterns": [
+    {
+     "gender": "any",
+     "pattern": "{family}"
+    },
+    {
+     "gender": "any",
+     "pattern": "{given}"
     }
    ]
   }
  ],
- "premise": "商业航天测控基地的总装大厅里，全动模拟球舱一天要跑二十个小时。傲娇的首席女飞官连着三次在黑障模拟里拿了满分，还是不肯签字收工，非要再跑一遍，环控总师只好陪着守到最后一班。球舱的主气锁去年改过设计，温控回路的报警阈值一直有人说定得太松。",
+ "premise": "商业航天测控基地的总装大厅里，悬空的全动模拟飞行球舱日夜运转。心高气傲的首席女飞官每次进舱，都要把再入大气层的黑障科目跑得滴水不漏；环控总师、总装测试主管、航电主管与替补试飞员常年围着这座球舱轮班。基地外是戈壁清冷的晴空，宿舍楼和总装大厅之间只隔一条白杨林步道。",
  "pressures": [
   {
-   "choice": "是冒险利用测角规强行撬动泄压阀，还是在高温座舱中等待外部救援登高？",
+   "choice": "保住航电主管的退路，还是一口气掀翻副总的催签。",
    "exits": [
     {
-     "cost": "测角规刃口受力微磨损，两人手掌手臂受金属高温烫伤。",
-     "option": "两人合力以合金测角规下扳偏心泄压阀旋转轴销自救复位。"
+     "cost": "周五股价承压，航电主管期权冻结。",
+     "option": "劝航电主管把原始日志和授意记录一并交给技术委员会"
     },
     {
-     "cost": "极其被动，外部升梯耗时过长将直接导致窒息死亡。",
-     "option": "伏于地面紧抱座椅被动等待登高车救援。"
+     "cost": "对外只说技术迭代，你和首席都得签保密承诺。",
+     "option": "拿滤波记录逼副总同意首飞顺延十天升级固件"
+    },
+    {
+     "cost": "姿态电机在超限测试里受损，球舱要停机大修。",
+     "option": "关掉滤波在球舱重跑一次真实黑障"
     }
    ],
    "far": {
-    "consequence": "受困人员因急性重度缺氧休克心脏骤停，在高温密闭球舱内双双殉职身亡。",
-    "due_days": 1,
-    "trigger": "极度缺氧诱发深度昏迷心脏停跳"
+    "consequence": "版本库被审出改动，首飞资格整体冻结。",
+    "due_days": 20,
+    "trigger": "技术委员会季度审计"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [],
-   "id": "p_cabin_overheat_hypoxia_surge",
+   "id": "p_filter_source_code",
    "immediate": {
-    "minutes": 2,
-    "text": "闷热窒息的热浪席卷全身，呼吸道如同被灼烧般刺痛，冷汗瞬间浸透衣衫。"
+    "minutes": 15,
+    "text": "副总助理在问版本库访问记录。"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{avionics_lead_han_yu.name}留着{vp_commercial_zhao_heng.name}授意改滤波参数的邮件。",
+    "holder": "avionics_lead_han_yu",
+    "subject": "vp_commercial_zhao_heng"
+   },
    "location_ids": [
-    "loc_flight_simulator_cabin",
-    "loc_simulator_relief_valve_nook"
+    "loc_telemetry_glass_gallery"
    ],
    "near": {
-    "deadline_minutes": 4,
-    "text": "氧气分压跌破安全线，女飞官嘴唇泛起淡紫，视线模糊，知觉逐渐迟钝。"
+    "deadline_minutes": 90,
+    "text": "简报一发出，滤波就成了公开的数据。"
    },
-   "objective": "必须在严重缺氧导致昏迷前，用合金测角规撬松偏心泄压阀推开主门自救。",
-   "source": "nature",
-   "start_minute": 1250,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "模拟球舱高温缺氧窒息危机",
-   "trigger": "超音速再入模拟摩擦生热导致舱温飙升至四十五度，氧气浓度剧降，极度闷热引发休克危局。"
-  },
-  {
-   "choice": "是单人使用随身钥匙尝试抠动，还是两人身体紧密相贴合力下压航图测角规？",
-   "exits": [
-    {
-     "cost": "工具把手产生微小塑性形变，施力人员手臂酸麻。",
-     "option": "以手电金属外壳护垫构成刚性防滑支点，叠合双手全力压紧测角规下扳。"
-    },
-    {
-     "cost": "金属敲击反冲破坏铰链暗槽，彻底堵死自救通道。",
-     "option": "用工具盲目敲打咬死的气锁摇臂。"
-    }
-   ],
-   "far": {
-    "consequence": "偏心轴销彻底折断滑丝，球舱成为永久无法开启的高空铁棺。",
-    "due_days": 1,
-    "trigger": "偏心阀芯受压彻底咬死无法回转"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_pneumatic_lock_thermal_expansion_jam",
-   "immediate": {
-    "minutes": 2,
-    "text": "膨胀胶条将门缝死死咬死，偏心阀芯在巨大压差下纹丝不动阻尼极沉。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_simulator_relief_valve_nook"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "座舱内外压差达到三个大气压，阀芯受压变形，手动解锁窗口极速关闭。"
-   },
-   "objective": "在金属完全受热冷焊抱死前，以硬质测角规撬动偏心泄压阀平衡内外压差自救。",
-   "source": "accident",
-   "start_minute": 1250,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "气锁密封胶条热胀变形抱死",
-   "trigger": "特种密封胶条高温受热膨胀变形，主气锁摇臂死死咬入偏心槽，电磁开启回路烧毁抱死。"
-  },
-  {
-   "choice": "是因男女礼法矜持拉开距离导致施力分散，还是坦然贴身相拥爆发出最大协同扭矩？",
-   "exits": [
-    {
-     "cost": "矜持心理防线被彻底打破，两人心灵产生不可磨灭的深厚依恋。",
-     "option": "抛弃一切杂念，女飞官伏于总师胸前双手重叠压紧把手一鼓作气突破自救。"
-    },
-    {
-     "cost": "力矩不足无法撼动偏心轴销，导致自救彻底失败。",
-     "option": "刻意保持距离单手侧向发力。"
-    }
-   ],
-   "far": {
-    "consequence": "测角规滑出暗槽，错过最后泄压自救时间窗导致座舱氧气彻底耗尽。",
-    "due_days": 1,
-    "trigger": "羞怯分心导致发力失衡工具脱落"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_close_contact_body_heat_tension",
-   "immediate": {
-    "minutes": 2,
-    "text": "女飞官单薄抗荷服温热柔润的触感传来，急促滚烫的吐息直接拂在耳侧颈项。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_simulator_relief_valve_nook"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "女飞官的头盔面罩上蒙了一层雾，急促的呼吸和心跳一起撞在耳边。"
-   },
-   "objective": "在极度贴近的肢体接触与异性荷尔蒙冲击下，克制心神专注机械对位发力。",
+   "objective": "让被滤掉的零点四秒重新摆上桌面。",
    "source": "person",
-   "start_minute": 1250,
+   "start_minute": null,
+   "tags": [
+    "workplace",
+    "crime"
+   ],
+   "title": "黑障滤波源码",
+   "trigger": "{avionics_lead_han_yu.name}按{vp_commercial_zhao_heng.name}授意写的黑障平滑滤波脚本还留在遥测台后台版本库里，一公开就坐实瞒报飞行隐患。"
+  },
+  {
+   "choice": "交给董事会、交还本人，还是另找一条路。",
+   "exits": [
+    {
+     "cost": "第四轮极限模拟只能由首席和你亲自进舱扛过载。",
+     "option": "首席把底单私下交还替补，邀对方改任地面领航"
+    },
+    {
+     "cost": "替补今年的飞行评级被降为地面待命。",
+     "option": "请航医以例行复核暂缓替补进舱"
+    },
+    {
+     "cost": "副总一抽查生理遥测就会露馅。",
+     "option": "只让替补飞前半程低过载段，你在监控台随时接管"
+    }
+   ],
+   "far": {
+    "consequence": "病史被查出，替补的飞行资格整体吊销。",
+    "due_days": 25,
+    "trigger": "下月实飞体检"
+   },
+   "flags": [
+    "timed",
+    "leverage"
+   ],
+   "hook_ids": [],
+   "id": "p_hidden_vertigo_record",
+   "immediate": {
+    "minutes": 10,
+    "text": "替补接舱单已经签发，进舱口令在等。"
+   },
+   "leverage": {
+    "basis": "{pilot_gu_tianjiao.name}看过{pilot_lin_zhen.name}那份异常眼震图的归档底单。",
+    "holder": "pilot_gu_tianjiao",
+    "subject": "pilot_lin_zhen"
+   },
+   "location_ids": [
+    "loc_escort_monitor_booth"
+   ],
+   "near": {
+    "deadline_minutes": 60,
+    "text": "替补一进舱跑极限过载，就可能在舱内晕厥。"
+   },
+   "objective": "别让带病的人进舱，也别让底单变成毁人的刀。",
+   "source": "person",
+   "start_minute": null,
    "tags": [
     "workplace"
    ],
-   "title": "座舱死角贴身相依滚烫喘息",
-   "trigger": "两人被迫同时趴在不足三十五公分的死角狭缝，湿透抗荷服与工装紧贴，体温与粗重喘息交叠。"
+   "title": "替补的眩晕底单",
+   "trigger": "{pilot_lin_zhen.name}瞒下离心机训练留下的前庭眩晕签了替补承诺书，{pilot_gu_tianjiao.name}已在航医归档夹里看到那份异常眼震图。"
   },
   {
-   "choice": "是关掉应急灯节省微弱电量摸黑操作，还是抓紧最后光亮全力以赴一搏？",
+   "choice": "改数据、找人帮忙，还是干脆断线。",
    "exits": [
     {
-     "cost": "全力投入泄压无暇顾及自身擦伤，承受巨大紧迫压力。",
-     "option": "争分夺秒就着最后光线扳动测角规旋松偏心泄压阀推开主门自救。"
+     "cost": "球舱温度真的被调高了五度。",
+     "option": "用环控终端把座舱标成高温高湿加测"
     },
     {
-     "cost": "摸黑盲操极易导致工具脱手，彻底丧失逃生机会。",
-     "option": "被动等待电量耗尽在黑暗中摸索。"
+     "cost": "航医事后笑着要一顿庆功宴，叮嘱发射前收敛点。",
+     "option": "请驻场航医把这段数据切进加密校准通道"
+    },
+    {
+     "cost": "长廊里的副总立刻起疑，派人下楼查看舱门。",
+     "option": "拔掉生物遥测插头改成离线记录"
     }
    ],
    "far": {
-    "consequence": "座舱彻底断电陷入黑暗，再也看不清仪表和卡扣的位置。",
-    "due_days": 1,
-    "trigger": "蓄电池彻底耗尽断电陷入死黑"
+    "consequence": "评估组翻出这段曲线，两人被要求分开编组。",
+    "due_days": 14,
+    "trigger": "首飞前心理评估"
    },
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
-   "id": "p_flight_simulator_power_drain",
+   "hook_ids": [
+    "hook_gu_unsigned_release",
+    "hook_gu_helmet_tap",
+    "hook_gu_sweat_collar"
+   ],
+   "id": "p_heart_rate_on_screen",
    "immediate": {
-    "minutes": 2,
-    "text": "仪表暗光剧烈抖动闪烁，控制台显示屏接连黑屏熄灭。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_flight_simulator_cabin",
-    "loc_simulator_relief_valve_nook"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "蓄电池低压警报尖叫不断，微弱光线仅能照亮指尖毫厘。"
-   },
-   "objective": "必须在照明彻底熄灭前完成测角规插入与偏心阀旋松操作。",
-   "source": "nature",
-   "start_minute": 1250,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "模拟球舱应急蓄电池电量枯竭",
-   "trigger": "座舱备用蓄电池因过载电涌电量暴跌，应急红光频繁闪烁，面临陷入绝对黑暗绝境。"
-  },
-  {
-   "choice": "是忍痛咬牙紧扣工具，还是分神活动肢体调整重心？",
-   "exits": [
-    {
-     "cost": "身体摩擦加剧，肌肤泛起大片淤青擦痕。",
-     "option": "女飞官与总师互相用双腿死死卡住彼此脚踝稳固重心合力下压自救。"
-    },
-    {
-     "cost": "偏心阀在气压下再度深陷变形咬死。",
-     "option": "暂停按压后撤舒展肢体。"
-    }
-   ],
-   "far": {
-    "consequence": "测角规被偏心反弹力强行震飞，彻底失去最后开启机会。",
-    "due_days": 1,
-    "trigger": "双腿打滑彻底失去反向支撑力矩"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_sweat_soaked_floor_slip_hazard",
-   "immediate": {
-    "minutes": 2,
-    "text": "光滑碳纤维地面摩擦系数急剧下降，膝盖发力时连连微滑。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_simulator_relief_valve_nook"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "持续静力发力使前臂与腿部肌肉发生剧烈震颤，下踩支撑力濒临极限。"
-   },
-   "objective": "穿着抗荷服在倾斜的座舱里稳住双腿，保持反向杠杆的发力姿势。",
-   "source": "nature",
-   "start_minute": 1250,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "座舱碳纤维地板热汗打滑失稳",
-   "trigger": "剧烈出汗导致碳纤维地板布满黏湿汗渍，两人半跪施力双腿极易打滑脱位。"
-  },
-  {
-   "choice": "是立即加大下压力度一鼓作气扳松测角规，还是等待晃动间歇再行操作？",
-   "exits": [
-    {
-     "cost": "身心极度疲惫，手臂肌肉严重拉伤酸痛。",
-     "option": "两人贴面眼神交汇瞬间爆发全身重量峰值力矩震松偏心轴销自救。"
-    },
-    {
-     "cost": "平台彻底失衡垮塌丧失全部物理生存可能。",
-     "option": "被动等待平台晃动减退。"
-    }
-   ],
-   "far": {
-    "consequence": "球舱从十米高空脱落坠毁地面，舱内人员遭受毁灭性冲击重伤殉难。",
-    "due_days": 1,
-    "trigger": "液压支柱彻底失压侧翻砸地"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_hydraulic_platform_pressure_drop",
-   "immediate": {
-    "minutes": 2,
-    "text": "球舱整体向外侧倾斜两度，悬空晃动带来剧烈失重眩晕。"
+    "minutes": 5,
+    "text": "遥测台值班员已经盯着副屏皱眉。"
    },
    "leverage": null,
    "location_ids": [
     "loc_flight_simulator_cabin"
    ],
    "near": {
-    "deadline_minutes": 4,
-    "text": "液压支柱发出沉重的机械喘息声，倾斜角度缓慢扩大。"
+    "deadline_minutes": 40,
+    "text": "曲线进了交接日志，就会被副总调阅。"
    },
-   "objective": "在平台彻底失压坠碰安全网前完成泄压，平层开启舱门撤离。",
-   "source": "nature",
-   "start_minute": 1250,
+   "objective": "在被人看懂之前把这段曲线遮过去。",
+   "source": "person",
+   "start_minute": null,
    "tags": [
-    "workplace",
-    "disaster"
+    "intimate"
    ],
-   "title": "六自由度液压平台支柱失压微晃",
-   "trigger": "悬空球舱外部液压伺服阀出现微渗，十米半空的球舱产生倾斜微小晃动。"
+   "title": "副屏上的心率曲线",
+   "trigger": "科目间隙你与首席飞官在舱里相拥亲吻，首席身上没拔的生物遥测贴片把飙升的心率实时传上了二层副屏。"
   },
   {
-   "choice": "说出是女飞官自己坚持再跑一遍，还是把加跑算在指挥中心的口头批准上",
+   "choice": "用实测说话、用证据说话，还是让人出面表态。",
    "exits": [
     {
-     "cost": "录音里有两个人最后十分钟的喘息和说话",
-     "option": "交出舱内录音"
+     "cost": "首席今晚要连续第四次扛高过载模拟。",
+     "option": "在大厅大屏投出首席申请的无滤波极限黑障加测任务单"
     },
     {
-     "cost": "赵总指挥要女飞官在全中队面前念检讨",
-     "option": "请赵总指挥补签加跑的批准单"
+     "cost": "大厅当晚进入全员安保协查。",
+     "option": "请机务总班长公布增压表盘被人私调的排查通报"
+    },
+    {
+     "cost": "副总当场恼火，威胁削减试飞大队下季经费。",
+     "option": "请副总指挥或替补在广播里表态支持技术复核"
     }
    ],
    "far": {
-    "consequence": "球舱停飞半年，女飞官的首席位置要让出来",
-    "due_days": 7,
-    "trigger": "拒赔函寄到集团"
+    "consequence": "首席被以心理状态为由移出名单。",
+    "due_days": 2,
+    "trigger": "周五乘组官宣"
    },
    "flags": [
     "timed"
    ],
-   "hook_ids": [
-    "hook_tianjiao_coffee",
-    "hook_tianjiao_fathers_gauge",
-    "hook_shen_oxygen_curve",
-    "hook_shen_ration"
-   ],
-   "id": "p_insurer_refuses_claim",
+   "hook_ids": [],
+   "id": "p_cowardice_rumor",
    "immediate": {
     "minutes": 10,
-    "text": "理赔员要调当晚的舱内录音"
+    "text": "几个年轻技术员看向球舱的眼神已经变了。"
    },
    "leverage": null,
    "location_ids": [
     "loc_aerospace_assembly_hall_floor"
    ],
    "near": {
-    "deadline_minutes": 480,
-    "text": "下午四点，理赔员的车开出基地"
+    "deadline_minutes": 120,
+    "text": "流言写进晨会纪要，董事会就有了换人的理由。"
    },
-   "objective": "在理赔员下午离开基地之前，证明那一遍加跑是批准过的",
-   "source": "money",
-   "start_minute": 480,
+   "objective": "在流言变成换人理由之前打碎它。",
+   "source": "rumor",
+   "start_minute": null,
    "tags": [
-    "workplace_power"
+    "workplace"
    ],
-   "title": "拒赔",
-   "trigger": "球舱出事后第二天早上八点，保险公司的理赔员拿着合同站在总装大厅：事故当晚加跑的那一遍模拟不在报备科目里，三千万的维修费一分不赔"
+   "title": "怯战拒签的流言",
+   "trigger": "融资副总向地面班组放风，说首席连跑三次满分却不敢签字是怕上真飞船，大厅里议论四起。"
+  },
+  {
+   "choice": "恢复编制、一起进隔离，还是冻结到下个窗口。",
+   "exits": [
+    {
+     "cost": "商业载荷仓位砍掉一半，首飞奖金缩水五成。",
+     "option": "用今晚实测证明自动模块应付不了黑障手动改出"
+    },
+    {
+     "cost": "接下来两周你们两人与外界彻底断联。",
+     "option": "首席带整改条件签字，并提名你作为隔离区驻场协同官"
+    },
+    {
+     "cost": "首席要让出今年商业航天形象大使的代言。",
+     "option": "首席拒签，把主驾席位连同整改清单冻结到下月窗口"
+    }
+   ],
+   "far": {
+    "consequence": "单人舱首飞成定局，副驾席位永久撤销。",
+    "due_days": 14,
+    "trigger": "十四天隔离期满"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_gu_unsigned_release",
+    "hook_gu_helmet_tap",
+    "hook_gu_sweat_collar"
+   ],
+   "id": "p_single_seat_contract",
+   "immediate": {
+    "minutes": 15,
+    "text": "单人舱方案已经摆在宿舍书案上。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_pilot_base_quarters"
+   ],
+   "near": {
+    "deadline_minutes": 180,
+    "text": "今晚不表态，名单就按单人舱报上去。"
+   },
+   "objective": "保住双人座舱，或者保住两人不被隔开。",
+   "source": "institution",
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "单人舱与封闭隔离",
+   "trigger": "改过的发射合同把首飞乘组从双人缩成单人主驾加一套自动伴飞模块，主驾一签字，次日就进十四天无通讯隔离。"
+  },
+  {
+   "choice": "保实测、保人暖，还是动用战备油料。",
+   "exits": [
+    {
+     "cost": "地面值守的人只能在零下的大厅里挨冻。",
+     "option": "切断大厅外围暖气，把电容并入球舱和核心遥测台"
+    },
+    {
+     "cost": "拿不到动态过载下的实机响应曲线。",
+     "option": "停掉液压摇摆，改在宿舍的便携工作站上做桌面推演"
+    },
+    {
+     "cost": "消耗了明天演练的定额油料，要在晨会上写书面说明。",
+     "option": "用副总指挥权限启动战备柴油发电机组"
+    }
+   ],
+   "far": {
+    "consequence": "演练因油料或数据缺口推迟。",
+    "due_days": 7,
+    "trigger": "寒潮过境后的综合演练"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_cold_snap_blackice",
+   "immediate": {
+    "minutes": 10,
+    "text": "大厅的照明已经暗了一半。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_aerospace_assembly_hall_floor"
+   ],
+   "near": {
+    "deadline_minutes": 60,
+    "text": "电容耗尽前不定，两边都会断电。"
+   },
+   "objective": "把有限的电用在最要紧的地方。",
+   "source": "nature",
+   "start_minute": null,
+   "tags": [
+    "disaster"
+   ],
+   "title": "寒潮限电与黑冰封路",
+   "trigger": "戈壁突袭强寒潮，出山公路结了黑冰全面封道，基地电网转入防冻限电，备用电容只够撑遥测阵列或球舱最后一次校准。"
+  },
+  {
+   "choice": "停科目、护送下桥，还是就近平卧观察。",
+   "exits": [
+    {
+     "cost": "今晚的加测科目就此中止。",
+     "option": "按下平飞锁定，松开抗荷服气囊喂补液盐，呼叫驻场航医带吸氧设备进舱"
+    },
+    {
+     "cost": "原始遥测硬盘只能先锁在舱内仪表柜里。",
+     "option": "湿毛巾敷额头稳住对方，请机务班长降下廊桥送去航医室输液观察"
+    },
+    {
+     "cost": "医生下令二十四小时内严禁再进舱。",
+     "option": "先在伴飞隔间让对方平卧吸氧，请航医做床旁心电监护"
+    }
+   ],
+   "far": {
+    "consequence": "人还没恢复，考核名单要重排。",
+    "due_days": 3,
+    "trigger": "下一轮考核"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_overload_dehydration",
+   "immediate": {
+    "minutes": 3,
+    "text": "同伴的手已经抓不稳扶手。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_flight_simulator_cabin"
+   ],
+   "near": {
+    "deadline_minutes": 30,
+    "text": "脱水再拖下去会晕厥。"
+   },
+   "objective": "先把人稳住，再送到医生手里。",
+   "source": "accident",
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "过载后的眩晕低热",
+   "trigger": "闷热的球舱里连跑四轮八倍重力改出后，刚解开安全带的同伴脸色煞白地滑坐在舱门边，额头滚烫，恶心眩晕。"
   }
  ],
- "region": "大跨度总装测试大厅悬空六自由度模拟飞行球舱内部",
+ "region": "戈壁商业航天测控基地：总装大厅、悬空模拟球舱与白杨林宿舍",
  "rules": [
   {
-   "id": "r_flight_simulator_pod_safety",
-   "text": "全动模拟飞行球舱悬空状态下严禁强行解锁外部液压六自由度支架。"
+   "id": "r_release_signature",
+   "text": "《首飞放行确认书》必须由首席飞官亲笔签字，任何人不能代签；首席不签，乘组名单就报不上去。"
   },
   {
-   "id": "r_pneumatic_seal_manual_relief",
-   "text": "气密主门热胀抱死后只能通过座舱侧壁机械泄压阀旋转偏心轴销释放锁闭压差。"
+   "id": "r_raw_telemetry_custody",
+   "text": "球舱原始遥测数据归技术委员会保管，导出、改写滤波包都要留痕，私自格式化底层硬盘按事故论处。"
   },
   {
-   "id": "r_hypervelocity_g_force_limit",
-   "text": "过载后座舱升温环境严禁盲目脱除具有阻燃防静电功能的内层抗荷服。"
+   "id": "r_isolation_entry",
+   "text": "主驾签字后次日一早进入十四天无通讯封闭隔离，同进隔离区的人必须提前列名报批。"
   },
   {
-   "id": "r_adult_mechanical_escape_standard",
-   "text": "绝境脱困依靠纯物理力矩与机械自救，一切互动严守成年自愿与安全防护原则。"
+   "id": "r_surgeon_veto",
+   "text": "驻场航医的生理合格证一票否决：心率、前庭、体温任一项不达标，当晚不许进舱。"
   }
  ],
  "schema_version": 1,
  "stage_labels": {
-  "acquainted": "共御过载",
-  "committed": "相守不离",
-  "familiar": "信赖相依",
-  "flirting": "贴身喘息",
-  "intimate": "患难真情",
-  "stranger": "座舱协同",
-  "testing": "生死相托"
+  "acquainted": "廊桥点头",
+  "committed": "铭牌相许",
+  "familiar": "同班协同",
+  "flirting": "舱内试探",
+  "intimate": "宿舍私情",
+  "stranger": "基地陌路",
+  "testing": "长廊对峙"
  },
  "status": "released",
- "style_hint": "商业航天座舱硬核机械工笔，刻画超高音速模拟过载后的高温缺氧绝境、硬质钨钴合金航图测角规在气密偏心阀暗槽中的剧烈杠杆反扭力矩，傲娇女飞官抗荷服被汗水浸透勾勒身姿的视觉张力，台词干练果决充满默契协同。",
+ "style_hint": "写航天人的克制与骄傲：数字、口令和仪表背光要准；情绪藏在递水、松领口、并肩看曲线这些小动作里。",
  "tension_engines": [
   {
-   "id": "te_cabin_overheat_hypoxia_surge",
-   "text": "座舱温度飙升突破四十五度，氧气浓度断崖式暴跌，极度闷热与窒息双重逼近。"
+   "id": "te_unsigned_release",
+   "text": "首席飞官连跑三次满分，却压着《首飞放行确认书》不肯落笔。"
   },
   {
-   "id": "te_pneumatic_lock_expansion_deadlock",
-   "text": "重型气密密封胶条因摩擦高热膨胀变形抱死，偏心泄压阀内外压差阻尼逼近极限。"
+   "id": "te_filtered_blackout",
+   "text": "黑障区零点四秒的姿态延迟被一层平滑滤波盖住，原始数据还在底层硬盘里。"
   },
   {
-   "id": "te_close_contact_body_heat",
-   "text": "在三十五公分逼仄死角两人完全贴伏，湿透抗荷服与工装体温催生极度异性张力。"
+   "id": "te_single_seat_cut",
+   "text": "对赌协议要求周五前官宣乘组，董事会正把双人伴飞座舱改成单人自动舱。"
   },
   {
-   "id": "te_flight_simulator_blackout_rush",
-   "text": "球舱应急电池与备用生保电量急剧耗尽，面临陷入绝对黑暗与永久封闭的高空铁棺死局。"
+   "id": "te_isolation_entry",
+   "text": "主驾一签字，次日就要进十四天无通讯封闭隔离，谁能一起进去还没定。"
   }
  ],
  "title": "不肯签字的女飞官",
  "tone": [
-  "连跑二十小时的模拟球舱",
-  "不肯签字收工的满分考核",
-  "黑障过载后抱死的气锁",
-  "座舱红光里湿透的抗荷服"
+  "满分了也不肯落笔",
+  "零点四秒的姿态延迟",
+  "双人座舱改单人舱",
+  "十四天封闭隔离",
+  "护目镜上的三声轻叩",
+  "戈壁晴空与发射塔灯"
  ],
  "twists": [
   {
    "category": "信息",
-   "id": "tw_valve_socket_slot_located",
+   "id": "tw_unfiltered_alarm",
    "requires": [
     "pilot_gu_tianjiao"
    ],
-   "text": "{pilot_gu_tianjiao.name}借战术手电强光，在漆黑的门框夹缝底层准确定位出咬死偏心泄压阀暗孔内六角的微小受力支点。"
-  },
-  {
-   "category": "人事",
-   "id": "tw_cabin_pressure_groan_alarm",
-   "requires": [
-    "pilot_gu_tianjiao"
-   ],
-   "text": "{pilot_gu_tianjiao.name}听到悬空球舱外壳发出刺耳的二次热胀金属呻吟，平台剧烈晃动，面庞上映出冷峻决意。"
-  },
-  {
-   "category": "资源",
-   "id": "tw_rubber_glove_chock_safety",
-   "requires": [
-    "life_support_lead_shen"
-   ],
-   "text": "{life_support_lead_shen.name}从口袋抽出防滑加厚手套，死死垫在门框边缘下方，彻底构筑起刚性防挤压安全作业间隙。"
+   "text": "你与{pilot_gu_tianjiao.name}关掉滤波跑完第四轮极限重入，当着全基地逼出零点四秒的延迟红灯，董事会撤回催签令，首飞延后半月。"
   },
   {
    "category": "制度",
-   "id": "tw_satin_scarf_bind_tight",
+   "id": "tw_two_seat_restored",
    "requires": [
-    "pilot_gu_tianjiao",
-    "life_support_lead_shen"
+    "pressure"
    ],
-   "text": "{pilot_gu_tianjiao.name}解下随身阻燃领巾，由{life_support_lead_shen.name}迅速将测角规把手与手背紧密捆扎，消除了手汗打滑隐患。"
+   "text": "技术委员会采纳实测报告，裁定首飞必须保留双人手控伴飞编制，副驾席位回来了，代价是两人次日就要一起进隔离。"
   },
   {
-   "category": "时限",
-   "id": "tw_hypoxia_alarm_final_minute_rush",
+   "category": "人事",
+   "id": "tw_han_hands_over",
    "requires": [
-    "pilot_gu_tianjiao"
+    "avionics_lead_han_yu",
+    "vp_commercial_zhao_heng"
    ],
-   "text": "座舱氧气分压表发出最后微弱的失氧长鸣，仪表灯光即将熄灭，生死死线已逼近绝对生理极限。"
+   "text": "{avionics_lead_han_yu.name}主动向技术委员会交出{vp_commercial_zhao_heng.name}授意加滤波的邮件，连夜重写控制律，保住总师职位，放弃了今年的上市期权。"
   },
   {
    "category": "关系",
-   "id": "tw_close_body_tight_bind_leverage",
+   "id": "tw_lin_ground_lead",
    "requires": [
-    "pilot_gu_tianjiao",
-    "life_support_lead_shen"
+    "pilot_lin_zhen"
    ],
-   "text": "{life_support_lead_shen.name}在座舱死角紧紧护住{pilot_gu_tianjiao.name}，两人滚烫手指紧握硬质合金规，急促滚烫的吐息与心跳在幽暗中彻底交叠。"
+   "text": "{pilot_lin_zhen.name}退回替补协议，在航医安排下调理前庭眩晕，出任首飞地面领航官，错过了今年的实飞履历。"
   },
   {
    "category": "意外",
-   "id": "tw_carbide_gauge_release_success",
+   "id": "tw_zhou_finds_tamperer",
+   "requires": [
+    "crew_chief_lao_zhou"
+   ],
+   "text": "{crew_chief_lao_zhou.name}查实是副总助理私调了增压表盘，当场把人清出大厅，自请扣罚一个月津贴担下夜班失察。"
+  },
+  {
+   "category": "人事",
+   "id": "tw_zhao_recalled",
+   "requires": [
+    "vp_commercial_zhao_heng"
+   ],
+   "text": "{vp_commercial_zhao_heng.name}没能在周五前强推带病放行书，对赌失利被调回总部闲职，基地二期冠名赞助款暂缓拨付。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_rerun_was_a_pretext",
    "requires": [
     "pilot_gu_tianjiao"
    ],
-   "text": "伴随一声清脆金属断扣声，硬质合金测角规成功扳转偏心泄压阀，高压气锁瞬间回退释压，两人合力推开主门顺利脱险自救。"
+   "text": "所谓“重跑最后一次模拟”根本不必跑：{pilot_gu_tianjiao.name}早算准这一轮要关舱四十分钟，只想把你留在舱里，把不签字的真正理由说出口。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_rival_covers_in_secret",
+   "requires": [
+    "pilot_lin_zhen",
+    "pilot_gu_tianjiao"
+   ],
+   "text": "{pilot_lin_zhen.name}在人前句句都在抢首飞，暗地里却早把那页异常曲线匿名寄给了技术委员会，替{pilot_gu_tianjiao.name}挡下了第一封催签函。"
+  },
+  {
+   "category": "时限",
+   "id": "tw_dawn_signature",
+   "requires": [
+    "pilot_gu_tianjiao"
+   ],
+   "text": "晨光漫过戈壁跑道，放行书和整改附件并排摆在案头：与{pilot_gu_tianjiao.name}并肩签字走进隔离楼，还是联名把飞船退回总装厂大改。"
   }
  ]
 }

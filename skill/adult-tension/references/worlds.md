@@ -2,7 +2,7 @@
 
 # 世界列表
 
-内容版本：`2026.10.25`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。
+内容版本：`2026.10.26`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。
 
 | 内容标签 | ID | 已发布世界数 |
 |---|---|---|
@@ -11,19 +11,19 @@
 | 直白的性描写 | `explicit` | 11 |
 | 暴力 | `violence` | 84 |
 | 胁迫 | `coercion_theme` | 65 |
-| 羞辱 | `humiliation` | 49 |
-| 身体伤害 | `bodily_harm` | 103 |
+| 羞辱 | `humiliation` | 48 |
+| 身体伤害 | `bodily_harm` | 101 |
 | 酒精与药物 | `substance` | 51 |
 | 怀孕 | `pregnancy` | 0 |
-| 死亡 | `death` | 47 |
+| 死亡 | `death` | 46 |
 | 职场权力关系 | `workplace_power` | 130 |
 | 出轨 | `infidelity` | 2 |
-| 违法犯罪 | `crime` | 114 |
+| 违法犯罪 | `crime` | 115 |
 | 赌博 | `gambling` | 6 |
 | 职场 | `workplace` | 162 |
 | 夜生活 | `nightlife` | 11 |
 | 超自然 | `supernatural` | 27 |
-| 灾难 | `disaster` | 150 |
+| 灾难 | `disaster` | 147 |
 | 自定义 | `custom` | 0 |
 
 | 世界 | ID | 一句话 | 模式 | 状态 |
@@ -31,7 +31,7 @@
 | 魔石灯下的远征队 | `abyss_collapsed_refuge` | 迷宫都市第七层，一处外廊塌了一半的古代安全区。 | 日常、有压力 | released |
 | 九十九层的吊篮 | `abyss_dungeon_exiled_saintess` | 被教廷流放的高阶圣女，押解途中被安置在深渊九十九层的开采竖井营地。 | 日常、有压力 | released |
 | 受审的高傲女骑士 | `abyssal_dungeon_knightess_crest` | 低魔黑暗帝国北境的黑曜石要塞。 | 日常、有压力 | released |
-| 不肯签字的女飞官 | `aerospace_simulator_pod_gauge_release` | 商业航天测控基地的总装大厅里，全动模拟球舱一天要跑二十个小时。 | 日常、有压力 | released |
+| 不肯签字的女飞官 | `aerospace_simulator_pod_gauge_release` | 商业航天测控基地的总装大厅里，悬空的全动模拟飞行球舱日夜运转。 | 日常、有压力 | released |
 | 被绑发带女会长 | `afterschool_cellar_president_confession` | 名门私立大学的旧校舍下个月就要拆，研究生会女会长带着人在地下钟楼的备品地窖里清查历年账目，一箱一箱翻到深夜，账目里有几笔怎么也对不上。 | 日常、有压力 | released |
 | 秘药高热女首席 | `alchemy_archive_potion_backlash` | 皇家魔导院地下的禁忌炼药暗室里，冷面首席魔导师带着后辈搭档复原一种古代共鸣秘药，已经熬了大半年：白天授课、审稿，夜里守着琉璃导管看药色。 | 日常、有压力 | released |
 | 禁触的雪线圣女 | `alpine_sanctuary_dagger_rescue` | 海拔四千米的雪线神殿一年只在夏秋开山，朝圣者踏着冰阶上来求一句降福。 | 日常、有压力 | released |
@@ -53,7 +53,7 @@
 | 天池采参女把头 | `changbai_ginseng_blizzard_crevasse` | 清末民初，长白山采参世家的新任女把头接下一桩怪活：给关东地质考察队带路上天池。 | 日常、有压力 | released |
 | 风雪古刹借宿夜 | `changming_temple_snowbound` | 明末天启年间，太行绝顶的半废石寺是官道上唯一的落脚处，冬天总有几个借宿的人：押解钦犯的锦衣卫百户、行脚铃医、不肯报名号的独行客。 | 日常、有压力 | released |
 | 六叠合租俏青梅 | `childhood_friend_tatami_roomshare` | 同乡的青梅竹马考进了东京的名门大学，常来高円寺这间六叠榻榻米的老公寓蹭饭、借书，嘴上毒舌，从不留宿。 | 日常、有压力 | released |
-| 地下救护所女牧师 | `cleric_bunker_sanctuary_overload` | 边境前线，一座钟楼被炮火打塌的村庄礼拜堂，地下墓室改成了野战救护所，白衣女牧师领着修女们守着几十张担架，重装骑士长带人守在地面。 | 日常、有压力 | released |
+| 地下救护所女牧师 | `cleric_bunker_sanctuary_overload` | 边境前线一座钟楼半塌的村庄礼拜堂，地下墓室改成了野战救护所。 | 日常、有压力 | released |
 | 发条马戏的伶人 | `clockwork_circus` | 马戏团是一个家，也是一座笼子；第七夜拆帐篷的时候，谁跟着走，谁留下？ | 日常、有压力 | released |
 | 讲台急升的主席 | `cold_president_podium_harness_jam` | 千人大礼堂的迎新典礼还有三天，清冷威严的研究生会主席每天站在主舞台中央排练致辞，舞台机电师和导播台的人被挑剔得团团转。 | 日常、有压力 | released |
 | 暗堡进水女报务 | `cold_war_bunker_cipher_incineration` | 冷战年代，华北要塞地下三十米的国防通信暗堡，首席女报务员在机要舱室里值了三年班；保密检查员、勘测技术员和炊事班长是这个月才调下来的。 | 日常、有压力 | released |
@@ -66,13 +66,13 @@
 | 签售会的游戏声优 | `cool_genshin_cosplayer_zipper_trap` | 国际动漫游戏博览会压轴日，特邀嘉宾声优穿着一身重工刺绣的角色战袍在主舞台与签售区之间连轴转，场馆里的应援欢呼声此起彼伏。 | 日常、有压力 | released |
 | 车行里的女机械师 | `cool_mechanic_storm_hangar_rollup_jam` | 海边一座废弃的老机库，被女机械师改成了机车改装工坊，和试车手合伙开店三年，为一台要参加赛季开幕赛的赛车调校数据吵了一整个夏天。 | 日常、有压力 | released |
 | 冰窖验骨女仵作 | `coroner_court_ice_vault_deadlock` | 贞观年间的盛夏，长安热得井水都发温，大理寺地下十丈的玄武岩冰鉴停尸大堂成了全城最凉的地方。 | 日常、有压力 | released |
-| 登台前的Coser | `cosplayer_dressing_tent_zipper_jam` | 十万人的国际漫展，压轴的是千金Coser自己画图、自己打印的整套钛铝合金机甲。 | 日常、有压力 | released |
+| 登台前的Coser | `cosplayer_dressing_tent_zipper_jam` | 十万人云集的国际动漫盛会首日，主舞台压轴是一位同人圈顶流千金Coser亲手画图、监制的钛铝合金可动翼甲大秀。 | 日常、有压力 | released |
 | 假面蜜月女卧底 | `cruise_spy_honeymoon_suite` | 公海豪华邮轮上，两名受训特工伪装成新婚蜜月夫妇潜入套房窃取微缩胶卷。 | 日常、有压力 | released |
 | 好望角的女轮机长 | `cryogenic_lng_tank_relief_crisis` | 十万吨级LNG运输船驶到好望角外海，海上的日子一晃就是四十七天。 | 日常、有压力 | released |
 | 千米滑坠缆车 | `cyberpunk_neon_elevator_cable_crisis` | 千米高空的跨城穿梭缆车是巨企穹顶集团的命脉。 | 日常、有压力 | released |
 | 深井提升斗女总工 | `deep_pit_quarry_hoist_brake_failure` | 井口灯房的挂牌板上，每个下井的人都挂着一块铜牌，升井才摘。 | 日常、有压力 | released |
 | 退魔巫女破戒夜 | `defeated_shrine_broken_barrier` | 深山里一座半废的稻荷神社，冷艳的名门巫女长奉命驻守后山结界，寄宿的剑士替神社劈柴挑水，阴阳巡捕奉密令也住了进来。 | 日常、有压力 | released |
-| 停战使节魔军统帅 | `demon_general_sanctuary_barrier_trap` | 圣战打了十年，魔军与圣殿第一次谈停战。 | 日常、有压力 | released |
+| 停战使节魔军统帅 | `demon_general_sanctuary_barrier_trap` | 圣战打到第四年，魔军与人类圣殿在夏至前后头一回停火议和。 | 日常、有压力 | released |
 | 守至破晓女剑士 | `demon_slayer_kagura_hall_purification` | 明治三十年代初秋，名门退魔女剑士奉命进山清剿大妖，御神刀在恶斗中断成两截，人也中了瘴毒，只好退守山顶一座荒废三百年的古神社。 | 日常、有压力 | released |
 | 坠机边缘女总裁 | `domination_reversal_csuite_jet` | 财阀的冷傲女总裁这一个月都在天上：横跨太平洋的湾流公务机就是移动办公室。 | 日常、有压力 | released |
 | 赶稿暗室女画师 | `doujin_artist_deadline_blackout` | 漫展开展前一周，神级同人女画师在创意园区的复式画室里赶新刊，执委会的场务总监、合志的客座画师和楼下的音乐人邻居轮流上来探班送吃的。 | 日常、有压力 | released |

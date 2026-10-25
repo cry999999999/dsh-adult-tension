@@ -1,321 +1,109 @@
 {
  "background_cast": [
   {
-   "adult_context": "年满五十岁，莫高窟文保老工匠，成年老工人。",
+   "adult_context": "年满二十八岁、在外事处值夜巡的职员。",
    "age_range": [
-    50,
-    56
+    28,
+    45
    ],
-   "function": "helper",
-   "gender": "male",
-   "id": "bg_veteran_rigger_old_ma",
-   "line": "先挑弹簧垫片！顾老师，用铲尖把垫片别平，螺母才能顺着牙退！",
+   "function": "obstacle",
+   "gender": "any",
+   "id": "bg_night_patrol",
+   "line": "闭窟了，谁还在上面？",
    "location_ids": [
     "loc_cave_96_giant_buddha_chamber"
    ],
-   "name": "老马头",
-   "role": "特级架子工老马头"
+   "name": null,
+   "role": "外事处巡夜员"
   },
   {
-   "adult_context": "年满四十岁，研究院安保处长，成年高级主管。",
+   "adult_context": "年满二十五岁、随海外借展团进院的翻译。",
    "age_range": [
-    40,
-    46
+    25,
+    35
+   ],
+   "function": "messenger",
+   "gender": "any",
+   "id": "bg_foreign_affairs_clerk",
+   "line": "策展人让我问一句，今晚的数据什么时候能交接。",
+   "location_ids": [
+    "loc_ninth_floor_observation_dormer"
+   ],
+   "name": null,
+   "role": "借展团翻译"
+  },
+  {
+   "adult_context": "年满五十五岁、在莫高窟干了一辈子的老文保员。",
+   "age_range": [
+    55,
+    65
+   ],
+   "function": "rumor_source",
+   "gender": "female",
+   "id": "bg_dorm_elder",
+   "line": "听说了没有，有人要跟着洋人去瑞士。",
+   "location_ids": [
+    "loc_staff_dormitory_room"
+   ],
+   "name": null,
+   "role": "老文保员"
+  },
+  {
+   "adult_context": "年满三十五岁、驻院医务室的值班医生。",
+   "age_range": [
+    35,
+    55
+   ],
+   "function": "helper",
+   "gender": "any",
+   "id": "bg_clinic_doctor",
+   "line": "咳成这样还熬夜？先躺下，我给你听听。",
+   "location_ids": [
+    "loc_staff_dormitory_room"
+   ],
+   "name": null,
+   "role": "院医务室医生"
+  },
+  {
+   "adult_context": "年满三十岁、在院气象站值班的观测员。",
+   "age_range": [
+    30,
+    45
    ],
    "function": "messenger",
    "gender": "male",
-   "id": "bg_safety_director_zhao",
-   "line": "探照灯打在佛耳扣件上了！天窗软梯放到底了，拧开螺母顺着架子爬上来！",
+   "id": "bg_weather_officer",
+   "line": "沙墙过了三危山了，赶紧落栓。",
    "location_ids": [
     "loc_ninth_floor_observation_dormer"
    ],
-   "name": "赵处长",
-   "role": "保卫处应急指挥长保卫处长"
+   "name": null,
+   "role": "气象值班员"
   },
   {
-   "adult_context": "年满三十四岁，防沙林场机械队长，成年硬汉。",
+   "adult_context": "年满二十五岁、跟着向导跑驼队的伙计。",
    "age_range": [
-    34,
+    25,
     40
    ],
-   "function": "helper",
-   "gender": "male",
-   "id": "bg_sand_captain_liu",
-   "line": "三台轮铲在掏底门积沙了！还有最后五分钟，上头抓紧卸架子撤人！",
-   "location_ids": [
-    "loc_ninth_floor_observation_dormer"
-   ],
-   "name": "刘队长",
-   "role": "防沙机械队长防沙队长"
-  },
-  {
-   "adult_context": "年满二十二岁，壁画修复见习生，成年见习员。",
-   "age_range": [
-    22,
-    24
-   ],
    "function": "witness",
-   "gender": "female",
-   "id": "bg_fresco_restorer_assistant_xiao_tang",
-   "line": "螺纹里的粗沙子刮干净了！顾老师、工程师，三二一用力，螺栓动了！",
-   "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
-   ],
-   "name": "小唐",
-   "role": "见习修复助理小唐"
-  },
-  {
-   "adult_context": "年满五十五岁，石窟常驻看门人，成年老人。",
-   "age_range": [
-    55,
-    60
-   ],
-   "function": "obstacle",
    "gender": "male",
-   "id": "bg_cave_security_guard_lao_zhang",
-   "line": "鸣沙山的沙子把一楼全灌满了！大佛阁出不去了！全被活埋在窟里了！",
+   "id": "bg_camel_hand",
+   "line": "车就停在侧门外，要走现在就走。",
    "location_ids": [
-    "loc_flooded_sand_gate_vestibule"
+    "loc_sand_gate_inner_corridor"
    ],
-   "name": "老张头",
-   "role": "石窟值班安保更夫老张"
-  },
-  {
-   "adult_context": "年满二十八岁，气象观测工程师，成年女性知识分子。",
-   "age_range": [
-    28,
-    32
-   ],
-   "function": "witness",
-   "gender": "female",
-   "id": "bg_meteorological_engineer_miss_bai",
-   "line": "黑风暴瞬时风速突破十二级了！窟顶负压还在上升，危险极度严重！",
-   "location_ids": [
-    "loc_ninth_floor_observation_dormer"
-   ],
-   "name": "白工",
-   "role": "敦煌戈壁气象监测站白工"
+   "name": null,
+   "role": "驼队伙计"
   }
  ],
  "cast_combos": [
   {
-   "chemistry": "典雅端庄的敦煌壁画女修复师与刚毅沉稳的岩土力学工程师在三十米高空危架上相依为命，两人在狂风呼啸中十指紧扣，借壁画修复纯钛合金平铲刀柄卡槽当扳手，合力拧开咬死扣件螺栓抽管脱险。",
-   "id": "cc_restorer_and_engineer_wrench_lever",
-   "identity_ids": [],
-   "player_positions": [
-    "high",
-    "equal",
-    "low"
+   "chemistry": "你和{restorer_gu_qingxian.name}隔着一堵薄墙住了两年，三声叩墙是只有你们懂的话。",
+   "id": "cc_restorer_equal_neighbor",
+   "identity_ids": [
+    "pi_cave_environment_engineer"
    ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "restorer_gu_qingxian",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "狂暴沙尘中共同紧握钛铲，结成托付生死的坚实同盟。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "engineer_shen_tianyu",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "莫高窟崖体工程并肩作战的过硬同伴。",
-     "stage": "familiar"
-    },
-    {
-     "a": "restorer_gu_qingxian",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "engineer_shen_tianyu",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "典雅画师与工程直男在三十米高空绝境中达成生死同心。",
-     "stage": "testing"
-    }
-   ],
-   "slots": [
-    "restorer_gu_qingxian",
-    "engineer_shen_tianyu"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "在通顶脚手架整体压屈垮塌前拧下直角扣件螺栓推开横梁打通悬梯生路。",
-    "limit_gap": "修复师身娇体弱在高空大风中体力迅速衰竭，工程师受困于缺乏大型机具且必须以肉身抗衡钢管变形反冲力矩。",
-    "meeting_reason": "黄昏收工，修复师从第96窟出来，岩土工程师刚从崖顶吊下来，两人在九层楼下碰见，为该不该在窟顶再打一排锚杆争了一路。",
-    "resource_gap": "修复师拥有航空钛合金特制平铲刀与壁画保护最高裁决权，工程师具备顶尖的高空脚手架受力拆解技能与雄厚体魄臂力。"
-   },
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "tension_engine_ids": [
-    "te_cave_sandstorm_vs_titanium_wrench",
-    "te_desert_gale_vs_suspended_hug"
-   ]
-  },
-  {
-   "chemistry": "焦急的安保指挥长在顶层天窗用千瓦探照灯穿透黄沙照亮螺栓受力点，典雅女修复师在高空沉着指挥排险化解大难。",
-   "id": "cc_restorer_and_director_spotlight",
-   "identity_ids": [],
-   "player_positions": [
-    "high"
-   ],
-   "power_structure": "player_high",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "restorer_gu_qingxian",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "密切关注女修复师人身安全与壁画完好。",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 3
-     },
-     "b": "director_zhao_kai_safety",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 3
-     },
-     "reason": "赞许安保处长临危不乱的强光调度。",
-     "stage": "familiar"
-    },
-    {
-     "a": "restorer_gu_qingxian",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 4
-     },
-     "b": "director_zhao_kai_safety",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 4
-     },
-     "reason": "莫高窟人守护国宝文脉的深厚公私默契。",
-     "stage": "intimate"
-    }
-   ],
-   "slots": [
-    "restorer_gu_qingxian",
-    "director_zhao_kai_safety"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "探照灯聚光照亮螺栓咬死死角协助平铲刀一举套死螺母退丝脱险。",
-    "limit_gap": "赵处长隔在天窗外无法亲自攀爬作业，女修复师独自在沙暴狂风中承受高空晕眩与失温痛苦。",
-    "meeting_reason": "保卫处长来洞窟巡查防沙预案，修复师领着进窟，指着佛衣上一块新起的酥碱说这个月不能再开放。",
-    "resource_gap": "赵处长掌握防爆探照灯与莫高窟特保调度权，女修复师身在险架一线掌控钛铲插入精度。"
-   },
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "tension_engine_ids": [
-    "te_scaffold_collapse_vs_fresco"
-   ]
-  },
-  {
-   "chemistry": "防沙机械队长建议铲车强行撞开底层门窗泄流，工程师据理力争以保护佛阁底层泥塑壁画为由坚守内部高空自救，展开激烈技术较量。",
-   "id": "cc_engineer_and_sand_captain_standoff",
-   "identity_ids": [],
-   "player_positions": [
-    "low",
-    "equal"
-   ],
-   "power_structure": "npc_high",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 3
-     },
-     "b": "engineer_shen_tianyu",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 3
-     },
-     "reason": "支持工程师守护大佛造像的担当。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "captain_liu_dahai_sand",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "对盲目铲撞古建筑可能引发塌方的方案极度警惕。",
-     "stage": "stranger"
-    },
-    {
-     "a": "engineer_shen_tianyu",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "captain_liu_dahai_sand",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "文保科学严谨与重装机械突击的一线碰撞。",
-     "stage": "testing"
-    }
-   ],
-   "slots": [
-    "engineer_shen_tianyu",
-    "captain_liu_dahai_sand"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "为内部高空拆解扣件移开钢管争取最后一百八十秒窗口。",
-    "limit_gap": "刘队长面临铲车被倒灌沙暴掩埋熄火危险，工程师受制于脚手架压屈倒计时。",
-    "meeting_reason": "沙暴预警发下来，工程师和防沙队长在大佛阁门口争要不要把重型机械开进前室。",
-    "resource_gap": "刘队长手握重型大功率装载机与大面积清沙能力，工程师拥有石窟崖体应力裁定权。"
-   },
-   "tags": [
-    "workplace_power",
-    "crime"
-   ],
-   "tension_engine_ids": [
-    "te_scaffold_collapse_vs_fresco"
-   ]
-  },
-  {
-   "chemistry": "老架子工口授挑平防退垫片核心绝学，典雅女修复师奉上钛合金平铲反向卡槽，里应外合击碎死扣。",
-   "id": "cc_restorer_and_rigger_synergy",
-   "identity_ids": [],
    "player_positions": [
     "equal"
    ],
@@ -324,30 +112,403 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "restorer_gu_qingxian",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "去年一个平常的冬夜，两人在宿舍分吃一锅羊肉面片，那晚你没回隔壁；后来约好想见就用画笔杆敲三下墙。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "restorer_gu_qingxian"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{restorer_gu_qingxian.ta}要你给一句准话：走，还是留。",
+    "limit_gap": "{restorer_gu_qingxian.ta}走了你守不住这个小院，你跟去了就丢下第96窟。",
+    "meeting_reason": "{restorer_gu_qingxian.name}在修缮平台上展开那封一直没拆的北京总院调令，在窟外的沙风声里低声问你，这次谁留下、谁跟着走。",
+    "resource_gap": "{restorer_gu_qingxian.ta}握着调令的去留，你握着留不留下来的那句话。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_beijing_transfer",
+    "te_black_sandstorm"
+   ]
+  },
+  {
+   "chemistry": "你签着今晚的验收单，{restorer_gu_qingxian.name}是唯一一个敢当面跟你讲条件的修复师。",
+   "id": "cc_restorer_player_high_director",
+   "identity_ids": [
+    "pi_dunhuang_academy_safety_director",
+    "pi_heritage_fund_supervisor"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
       "trust": 3
      },
      "b": "restorer_gu_qingxian",
      "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "上回陪外宾夜巡九层楼，暗梯上一脚踏空的人被你揽住腰，贴在木柱后避开众人；你借出的真丝护腕至今没还回来。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "restorer_gu_qingxian"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{restorer_gu_qingxian.ta}要你今晚替这窟底稿把一道门。",
+    "limit_gap": "你挡了就得罪海外赞助，{restorer_gu_qingxian.ta}开口求你就算越级。",
+    "meeting_reason": "{restorer_gu_qingxian.name}把第96窟底层飞天的手绘孤本交到你手里，请你在封窟验收单上挡下策展人索要原始扫描数据。",
+    "resource_gap": "你一支笔能挡下策展人，{restorer_gu_qingxian.ta}只有一册手绘孤本。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_scan_data_leak",
+    "te_beijing_transfer"
+   ]
+  },
+  {
+   "chemistry": "院里没人知道，闭窟锁门后{restorer_gu_qingxian.name}总在颜料室留一盏小灯等你。",
+   "id": "cc_restorer_npc_high_warden",
+   "identity_ids": [
+    "pi_night_cave_warden"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 5
+     },
+     "b": "restorer_gu_qingxian",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 5
+     },
+     "reason": "半年前你把中暑的人背回宿舍；养好后的第一晚，颜料室留了一盏小灯等你，两人就此定下心意。",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
+    "restorer_gu_qingxian"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{restorer_gu_qingxian.ta}要你陪{restorer_gu_qingxian.ta}想清楚，人事谈话上说走还是说留。",
+    "limit_gap": "{restorer_gu_qingxian.ta}的去留院里说了算，你连人事谈话的门都进不去。",
+    "meeting_reason": "{restorer_gu_qingxian.name}趁众人上顶层查风速，把你拉进防沙重门内的回廊，仰起脸让你替{restorer_gu_qingxian.ta}吹掉睫毛上的细沙，商量院里的人事谈话怎么应对。",
+    "resource_gap": "{restorer_gu_qingxian.ta}定得了壁画修复的方案，你只管得了木梯的锁。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_beijing_transfer",
+    "te_black_sandstorm"
+   ]
+  },
+  {
+   "chemistry": "{photographer_su_ya.name}嘴毒得全院出名，却只肯跟你说真话。",
+   "id": "cc_su_ya_hard_drive_secret",
+   "identity_ids": [
+    "pi_cave_environment_engineer"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "photographer_su_ya",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "上周在暗房冲多光谱胶片，红灯忽闪，{photographer_su_ya.ta}借着狭窄水槽擦过你的腰侧，笑说拍完这窟就给你拍一组肖像。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "photographer_su_ya"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{photographer_su_ya.ta}要你替{photographer_su_ya.ta}想一条两全的路。",
+    "limit_gap": "{photographer_su_ya.ta}交了硬盘就是卖国宝，你替{photographer_su_ya.ta}瞒着就是失职。",
+    "meeting_reason": "{photographer_su_ya.name}把存着未公开红外底图的加密硬盘塞进你外套口袋，红着眼眶承认自己收了策展人的定金，求你帮{photographer_su_ya.ta}找一个既能救母亲、又不卖国宝的法子。",
+    "resource_gap": "{photographer_su_ya.ta}握着原始数据硬盘，你握着防沙门和机房的巡检权。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_scan_data_leak"
+   ]
+  },
+  {
+   "chemistry": "{curator_lin_shu.name}每晚都在檐廊替你留一杯茶，谈的是公事，眼睛却总落在你身上。",
+   "id": "cc_curator_lin_sponsorship",
+   "identity_ids": [
+    "pi_dunhuang_academy_safety_director",
+    "pi_heritage_fund_supervisor"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 1
+     },
+     "b": "curator_lin_shu",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 2
+     },
+     "reason": "前晚接风茶叙，对方留到散场替你斟茶，指尖碰到你的杯沿停了一停，话里话外都在试你的底线。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "curator_lin_shu"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "对方要你今晚松一句口。",
+    "limit_gap": "你松口就对不起这窟壁画，对方空手回去就输了对赌。",
+    "meeting_reason": "{curator_lin_shu.name}站在顶层观景廊边亮出赞助意向书，提议只要今晚让拷一份未压缩的红外底图，就为你和修复师办一场苏黎世双人展。",
+    "resource_gap": "你握着验收和出境的签字，对方握着三百万的赞助。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_sponsorship_credit",
+    "te_scan_data_leak"
+   ]
+  },
+  {
+   "chemistry": "{assistant_fresco_restorer_xiao_tang.name}管着颜料库房和修复日志，每回见了你都先塞一把杏干。",
+   "id": "cc_xiao_tang_logbook_keep",
+   "identity_ids": [
+    "pi_night_cave_warden"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
       "tension": 2,
       "trust": 3
      },
-     "reason": "深信修复师心明眼亮指尖定力。",
-     "stage": "familiar"
-    },
+     "b": "assistant_fresco_restorer_xiao_tang",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "上月夜里库房钥匙忘带了，不敢惊动师父，你陪着翻遍值班室找到备用匙，换来一袋杏干和红透的耳根。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "assistant_fresco_restorer_xiao_tang"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{assistant_fresco_restorer_xiao_tang.ta}要你帮{assistant_fresco_restorer_xiao_tang.ta}拿个主意。",
+    "limit_gap": "{assistant_fresco_restorer_xiao_tang.ta}说出调令会伤了师父，你插手就越了本分。",
+    "meeting_reason": "{assistant_fresco_restorer_xiao_tang.name}抱着微环境记录本缩在颜料室门口，小声说看见策展人刚进过数据机房，问你要不要先告诉师父。",
+    "resource_gap": "{assistant_fresco_restorer_xiao_tang.ta}握着库房钥匙和修复日志，你只有夜班的门禁。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_scan_data_leak",
+    "te_beijing_transfer"
+   ]
+  },
+  {
+   "chemistry": "{engineer_shen_tianyu.name}是崖顶上跟你一起晒脱过皮的人，话直，心事却从不提。",
+   "id": "cc_shen_tianyu_cliff_watch",
+   "identity_ids": [
+    "pi_cave_environment_engineer",
+    "pi_dunhuang_academy_safety_director",
+    "pi_heritage_fund_supervisor",
+    "pi_night_cave_warden"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
     {
      "a": "player",
      "a_to_b": {
       "tension": 1,
-      "trust": 3
+      "trust": 4
      },
-     "b": "rigger_old_ma_scaffold",
+     "b": "engineer_shen_tianyu",
      "b_to_a": {
       "tension": 1,
+      "trust": 4
+     },
+     "reason": "前年两人在崖顶顶着烈日打了半个月锚杆，收工后常在戈壁滩上分喝一壶冰镇杏皮水。",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
+    "engineer_shen_tianyu"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{engineer_shen_tianyu.ta}要你信{engineer_shen_tianyu.ta}一回，今晚先停。",
+    "limit_gap": "{engineer_shen_tianyu.ta}劝停工会耽误扫描，你不停就怕出事。",
+    "meeting_reason": "{engineer_shen_tianyu.name}一身黄沙从崖顶下来，说防沙网风压超标，力劝你先封死九层楼所有气窗、停下今晚的作业。",
+    "resource_gap": "{engineer_shen_tianyu.ta}掌着崖体监测数据，你掌着窟里停不停工的那句话。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_black_sandstorm"
+   ]
+  },
+  {
+   "chemistry": "{herder_guide_ba_tu.name}是鸣沙山上谁都得给三分面子的守泉人，对院里的人从来留着一手。",
+   "id": "cc_ba_tu_old_records",
+   "identity_ids": [
+    "pi_cave_environment_engineer",
+    "pi_dunhuang_academy_safety_director",
+    "pi_heritage_fund_supervisor",
+    "pi_night_cave_warden"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 1
+     },
+     "b": "herder_guide_ba_tu",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 2
+     },
+     "reason": "上回你在沙山迷路，被守泉人骑骆驼捎回院里；临走拍着你的肩，问你识不识得老辈人留下的莫高窟旧契。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "herder_guide_ba_tu"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{herder_guide_ba_tu.ta}要你证明一回，你配接这册杂记。",
+    "limit_gap": "{herder_guide_ba_tu.ta}交出杂记就得谈老牧场，你答应了就得罪地方。",
+    "meeting_reason": "{herder_guide_ba_tu.name}赶在黑沙暴合围前送来那册记着盛唐底画流散线索的清代香火杂记，拍着防沙门问你识不识得上面的字。",
+    "resource_gap": "{herder_guide_ba_tu.ta}握着那册香火杂记，你握着研究院能不能答应{herder_guide_ba_tu.ta}的门路。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_black_sandstorm",
+    "te_scan_data_leak"
+   ]
+  },
+  {
+   "chemistry": "{curator_lin_shu.name}要拷原档，{photographer_su_ya.name}攥着硬盘，{restorer_gu_qingxian.name}按着画案寸步不让。",
+   "id": "cc_trio_fresco_copyright_night",
+   "identity_ids": [
+    "pi_cave_environment_engineer",
+    "pi_dunhuang_academy_safety_director",
+    "pi_heritage_fund_supervisor",
+    "pi_night_cave_warden"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "restorer_gu_qingxian",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "闭窟前在研磨室替你洗去指尖朱砂时两人十指相扣，{restorer_gu_qingxian.ta}发髻上簪着你削的那支胡杨木簪。",
+     "stage": "intimate"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
       "trust": 3
      },
-     "reason": "老架子工的经验指引令人拨云见日。",
-     "stage": "familiar"
+     "b": "photographer_su_ya",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "上周在脚手架暗处调镜头，{photographer_su_ya.ta}贴着你后背借力，低声说硬盘密码就用你的生日。",
+     "stage": "flirting"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 1
+     },
+     "b": "curator_lin_shu",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 1
+     },
+     "reason": "茶歇时对方在策展画册扉页写下私人房号递给你，你原样退回，对方笑着收下了这个回答。",
+     "stage": "testing"
     },
     {
      "a": "restorer_gu_qingxian",
@@ -355,769 +516,823 @@
       "tension": 2,
       "trust": 3
      },
-     "b": "rigger_old_ma_scaffold",
+     "b": "photographer_su_ya",
      "b_to_a": {
-      "tension": 2,
+      "tension": 3,
       "trust": 3
      },
-     "reason": "两代莫高窟建设者之间的默契互敬。",
+     "reason": "同组做了两年采集，修复师信摄影师的眼光，却不知道那份定金。",
+     "stage": "familiar"
+    },
+    {
+     "a": "restorer_gu_qingxian",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 1
+     },
+     "b": "curator_lin_shu",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 2
+     },
+     "reason": "策展人想要底稿，修复师一句好话都没给过。",
+     "stage": "testing"
+    },
+    {
+     "a": "photographer_su_ya",
+     "a_to_b": {
+      "tension": 5,
+      "trust": 1
+     },
+     "b": "curator_lin_shu",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 2
+     },
+     "reason": "策展人手里有摄影师签字的定金收据，两人说话句句带刺。",
      "stage": "testing"
     }
    ],
    "slots": [
     "restorer_gu_qingxian",
-    "rigger_old_ma_scaffold"
+    "photographer_su_ya",
+    "curator_lin_shu"
    ],
    "stakes": {
-    "irreplaceable_goal": "挑平弹簧垫片使扣件螺栓顺利旋动退牙脱险。",
-    "limit_gap": "老工匠严重腰痛在晃动跳板上难以持续负重，女修复师独自承受猛烈反向扭矩震颤。",
-    "meeting_reason": "老架子工来加固大佛阁的脚手架，修复师端着一壶砖茶在下面看，非要学怎么认扣件吃不吃劲。",
-    "resource_gap": "老工匠掌握三十年脚手架扣件防退机关经验，女修复师身在激流前线掌控高硬度钛铲精准套死螺母。"
+    "irreplaceable_goal": "三个人都看着你，这份原档的去处由你定。",
+    "limit_gap": "你帮哪一个，另外两个都会记住。",
+    "meeting_reason": "多光谱扫描刚跑完最后一帧，策展人拿出合同要当场拷走红外原档，{photographer_su_ya.name}握着硬盘手指发白，{restorer_gu_qingxian.name}按住画案不让。",
+    "resource_gap": "署名、硬盘、赞助各在一人手里，你站在画案中间。"
    },
    "tags": [
-    "workplace",
-    "crime"
+    "intimate"
    ],
    "tension_engine_ids": [
-    "te_cave_sandstorm_vs_titanium_wrench"
+    "te_scan_data_leak",
+    "te_sponsorship_credit"
    ]
   }
  ],
  "channels": [
   {
-   "fidelity": "distorted",
-   "id": "ch_dunhuang_sandstorm_wind_howl",
-   "reach": "all",
-   "text": "大佛窟顶三十米狂暴风沙呼啸与钢管架共振声"
+   "fidelity": "exact",
+   "id": "ch_academy_group",
+   "reach": "一条消息全院都能看到",
+   "text": "院务工作群"
   },
   {
    "fidelity": "exact",
-   "id": "ch_ninth_floor_dormer_walkie_talkie",
-   "reach": "local",
-   "text": "九层楼飞檐天窗防爆对讲电台与高音警报"
+   "id": "ch_weather_radio",
+   "reach": "九层楼上下每一层都听得见",
+   "text": "院气象站的对讲机"
+  },
+  {
+   "fidelity": "distorted",
+   "id": "ch_dorm_gossip",
+   "reach": "一顿晚饭的工夫传遍家属院",
+   "text": "宿舍区走廊的闲话"
   }
  ],
  "character_templates": [
   {
-   "adult_context": "美院文物修复专业硕士毕业，在敦煌研究院补了六年壁画，持有馆藏文物修复资格，去留进退由本人拿主意。",
+   "adult_context": "年满二十七岁、在莫高窟做了六年壁画修复的修复师。",
    "age_range": [
     27,
     31
    ],
    "appearance_options": [
-    "身穿带有敦煌院徽的深灰防静电工装连体服，身材高挑，面容典雅端庄，两腮带西北青年女性特有的健康紧致微婴儿肥与水润胶原蛋白，护目镜推在额前，两颊泛起娇艳红晕，微婴儿肥面颊坚毅，眼神兼具大漠画师的沉静气韵与傲骨。",
-    "乌黑长发在脑后编成利落的麻花长辫，发丝沾着微细朱砂红粉，双手死死攥着航空钛合金平铲刀，两腮微婴儿肥的面容在昏黄沙光映照下宛如盛唐壁画走出的菩萨，典雅中透着摧山裂石般的沉着。"
+    "深灰防静电工装连体服上绣着院徽，身材高挑，面容典雅端庄，护目镜推在额前，眼神沉静。",
+    "乌黑长发编成一条利落的麻花辫，发丝间沾着一点朱砂粉，像从盛唐壁画里走出来的人。"
    ],
    "decision": {
     "avoids": [
-     "野蛮粗暴的盲目乱砸",
-     "遇到险情就自顾逃生的背信弃义"
+     "拿文物谈价钱"
     ],
-    "contrast": "外表典雅温柔文静且两腮带着娇憨微婴儿肥，在百吨流沙封门与高架欲倒之际从容冷静胜过全场须眉。",
-    "core_value": "莫高窟的泥皮薄如蝉翼，人命的韧劲硬如钢铁，只要手里还有一把钛铲，绝不给老祖宗丢脸！",
+    "contrast": "人前沉静温雅得像佛前的灯；和你独处时，会突然孩子气地抢你的杏皮水。",
+    "core_value": "壁画等了一千年，人也该等得起。",
     "goal_options": [
-     "利用钛合金平铲刀柄卡槽拧开卡死扣件螺栓自救",
-     "协助工程师卸除佛耳处倾斜钢管剪切应力"
+     "决定调令去留",
+     "守住第96窟底稿不外流",
+     "听你亲口说一句跟不跟她走"
     ],
     "never": [
-     "在身旁同伴脱困前独自钻出天窗逃生"
+     "让底稿流出国门"
     ],
     "prefers": [
-     "严丝合缝的巧劲力学",
-     "对敦煌文物的绝对敬畏"
+     "敬重壁画的人"
     ],
     "pressure_responses": {
-     "breaking": "整个人紧贴工程师胸膛将全身自重悬挂在铲刀柄上猛力下扳",
-     "high": "将钛合金平铲刀柄端精准套住变形T型螺栓六角螺母",
-     "low": "在沙暴咆哮中迅速将加固药剂与精密毛笔收入抗震防尘密封箱",
-     "mid": "敏捷扣好防坠安全钩涉险爬向倾斜脚手架结合点"
+     "breaking": "崩溃时一个人坐在大佛膝前，对着飞天掉眼泪。",
+     "high": "高压时把调令拍在画案上，第一次问你要答案。",
+     "low": "低压时笑着岔开，手上的笔不停。",
+     "mid": "中压时把画筒抱得更紧，说再给她一夜。"
     },
-    "relationship_stance": "和隔壁的岩土工程师做了两年邻居，修复师嫌对方半夜打锚杆的数据吵，却每回从洞窟里出来，都先抬头看崖顶那盏头灯还亮不亮。",
-    "withdrawal": "退守在大佛头顶后方天然避风石龛凹槽内，双手按住安全绳闭目凝神。"
+    "relationship_stance": "慢热，认定了就是一辈子。",
+    "withdrawal": "回研磨室研一整夜颜料，研到手腕发酸。"
    },
    "gender": "female",
-   "gender_reason": "敦煌研究院壁画保护研究所青年骨干修复师",
+   "gender_reason": "标题人物是温婉坚韧的壁画女修复师，固定为女性。",
    "id": "restorer_gu_qingxian",
    "identity": {
-    "authority": "对大佛壁画表面颜料层固化、空鼓灌浆与高空脚手架搭设安全规范拥有第一专业裁定权。",
-    "exposure": "为了留住珍贵颜料层曾私下延误过一次崖体防风注浆加固工期",
-    "hidden": "工装贴身胸袋内妥帖收藏着工程师亲手绘制的大佛崖体应力地质剖面手绘图",
+    "authority": "手握第96窟盛唐底层壁画病害修复的定案权和全套手工还原色卡的署名权。",
+    "exposure": "北京总院的调令在她临摹画筒里藏了整整一周，没拆，也没报。",
+    "hidden": "她舍不得九层楼下的小院，更舍不得隔壁那个人；她怕一开口，就得逼对方选。",
     "limits": [
-     "长期高空伏案修复导致肩颈肌肉易痉挛疲惫",
-     "身娇体弱缺乏重型机械推拉爆发力难以徒手晃动卡死粗钢管"
+     "没有验收单不能动原壁一笔"
     ],
     "obligations": [
-     "誓死保全大佛面庞盛唐原层贴金颜料与佛耳周遭重层壁画毫发无损"
+     "守着第96窟做完最后一窟"
     ],
     "resources": [
-     "一柄专用于壁画脱盐修复的纯钛合金特制加厚平铲刀（厚度四毫米，航空钛合金冷锻极硬硬质，柄端开有十二毫米直角内六角卡槽）",
-     "一盒高纯度纳米级聚乙烯醇特种壁画加固回贴凝胶"
+     "一套修复用的细笔和竹刀",
+     "手绘的矿物色卡"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在天地昏黄山崩地裂中犹如定海神针般的宽阔臂弯",
-     "两人悬空十指交扣扳动钛合金铲刀时体温相濡以沫的生命震撼"
+     "你守着窟里每一寸温湿度的认真",
+     "你从不催她"
     ],
     "boundaries": [
-     "恪守敦煌莫高精神庄重分寸",
-     "不以私情废公门大义"
+     "她轻敲两下画案，就停下"
     ],
     "desire_range": [
      2,
      4
     ],
-    "desired_position": "被从身后环抱住纤腰固定在脚手架立柱上，四手相叠握住平铲刀长柄合力下压。",
+    "desired_position": "大佛膝前并肩看线稿的位置",
     "dislikes": [
-     "官僚的草率推诿",
-     "破坏壁画的粗暴行径"
+     "闪光灯"
     ],
-    "expression": "脱险后用温热的柔荑轻柔拂去工程师额前浓密的黄沙，眼中泛着动人水雾嫣然一笑。",
+    "expression": "亲近时先替你拂去额前的沙，再把额头抵过来。",
     "likes": [
-     "扣件螺母嘎哒一声拧松脱开时对方眼底绽放的精芒",
-     "被强健臂膀一把从悬空钢管拉回安全跳板时的滚烫拥抱"
+     "抢来的半壶杏皮水",
+     "研钵里化开的青金石"
     ],
     "preconditions": [
-     "倾斜卡死钢管成功卸除步梯畅通脱险",
-     "两人平安撤离至莫高窟应急指挥所完成复温",
-     "两人都清醒，心意出于自己，不是绝境里的依赖"
+     "两人都清醒，是她自己愿意",
+     "窟里的活收了尾之后"
     ],
     "self_control_range": [
      3,
      5
     ]
    },
-   "public_role": "敦煌壁画女修复师",
+   "public_role": "莫高窟壁画修复师",
    "schedule": [
     {
-     "from": 960,
-     "location_id": "loc_cave_96_giant_buddha_chamber",
-     "to": 975
+     "from": 0,
+     "location_id": "loc_staff_dormitory_room",
+     "to": 480
     },
     {
-     "from": 975,
+     "from": 480,
      "location_id": "loc_cave_96_giant_buddha_chamber",
-     "to": 990
+     "to": 1080
+    },
+    {
+     "from": 1080,
+     "location_id": "loc_fresco_pigment_studio",
+     "to": 1260
+    },
+    {
+     "from": 1260,
+     "location_id": "loc_staff_dormitory_room",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "钛合金平铲刀柄卡槽留下应力压痕，{npc.name}掌心被金属边缘硌破红肿渗血。",
-      "option": "用纯钛合金平铲刀柄卡槽套住螺母两人合力反向猛别拧松直角扣件自救。"
+      "cost": "第96窟的收尾交给别人，隔壁的灯从此不亮了。",
+      "option": "拆开调令，签下去北京"
      },
      {
-      "cost": "飞溅铁屑划伤工程师额头流血。",
-      "option": "工程师抡起铁锤暴力敲击扣件铸铁活节震断螺栓脱险。"
+      "cost": "编制顺延给竞争对手，她再没有第二次机会。",
+      "option": "把调令压到沙尘季过去"
      }
     ],
-    "pressure": "底层大门已被流沙彻底封死，窟内氧气急剧消耗，若不能在四分钟内拧开扣件移走钢管推开步梯，全员将在二十米高架窒息坠亡。",
-    "trigger": "黑沙暴气流掀翻防风棚，三十米脚手架倾斜侧扭，横向钢管直角扣件T型螺栓受偏心剪力咬死在卡槽内。"
+    "pressure": "去北京就离开莫高窟和你，留下就丢了学科带头人的编制。",
+    "trigger": "北京总院的调令到了回执期限。"
    },
    "tags": [
     "workplace",
-    "disaster",
     "intimate"
    ],
    "voices": {
-    "inner": "大佛看着我们呢……不怕，工程师在，这螺栓一定能拧开，千年的壁画我也一定要护好。",
-    "surface": "工程师！莫慌！我这柄脱盐平铲是航天纯钛锻造的！厚度四毫米，柄端刚好是十二毫米卡槽！当加长扳手使，把螺母给我拧下来！"
+    "inner": "我要是走了，隔壁那堵墙就再也没人敲了。",
+    "surface": "别急，这块颜色我再看一眼。"
    }
   },
   {
-   "adult_context": "年满二十五岁，同济大学岩土工程成年硕士毕业，敦煌研究院专职工程技术骨干，具备完全民事行为能力与现场工程抢险裁决权。",
+   "adult_context": "年满二十七岁、在莫高窟崖顶做岩体监测的工程师。",
    "age_range": [
-    25,
-    28
+    27,
+    30
    ],
    "appearance_options": [
-    "身穿带有高反光条的深蓝耐磨工装裤与加厚战术风衣，头戴工程安全帽，身材高大挺拔肌肉精壮，面容刚毅目光如炬。",
-    "脸上沾满莫高窟特有的青灰色崖土与黄沙，眼神在昏暗沙尘中冷静如磐石锁定钢管扣件变形角。"
+    "晒得黝黑，冲锋衣领口全是沙，笑起来露一口白牙。",
+    "手掌粗糙，背着一台微震监测仪，走路很快。"
    ],
    "decision": {
     "avoids": [
-     "自乱阵脚的慌张盲动",
-     "畏缩退避的懦夫心性"
+     "拐弯抹角"
     ],
-    "contrast": "平日少言寡语的纯粹工科直男，置身悬崖绝壁生死大绝境时爆发出泰山压顶不弯腰的雄浑爆发力。",
-    "core_value": "结构看的是受力轴线，只要找准螺母的逆牙死点，一把钛铲也能破千钧死扣！",
+    "contrast": "人前爽朗得像戈壁的太阳；说到她时，会忽然不说话。",
+    "core_value": "崖子不会骗人，人得对得起崖子。",
     "goal_options": [
-     "接下修复师钛铲精准咬合螺母反向破除死扣",
-     "用肩膀抗住倾斜横梁卸除直角扣件剪切压力"
+     "让修复师安心留下",
+     "把放弃访学的事瞒到底",
+     "跟你喝完那壶杏皮水再说真话"
     ],
     "never": [
-     "在修复师脱离危险前收手退后半步"
+     "拿监测数据做人情"
     ],
     "prefers": [
-     "分毫不差的公差力学",
-     "同生共死的血性担当"
+     "实在的人"
     ],
     "pressure_responses": {
-     "breaking": "双臂发力青筋暴起将修复师护在怀里咬牙死命下扳",
-     "high": "接过平铲刀利落卡入两毫米狭窄死缝",
-     "low": "迅速用激光测距仪测定脚手架倾斜角度与变形速率",
-     "mid": "飞身跨步上前用宽厚肩膀死死抵住倾斜钢管"
+     "breaking": "崩溃时独自上崖顶，在风里坐到天黑。",
+     "high": "高压时把放弃表摊开，说这事他认。",
+     "low": "低压时爽朗打岔，递你一壶水。",
+     "mid": "中压时闷头看监测曲线。"
     },
-    "relationship_stance": "在崖顶吊了两年，最常往下看的不是裂缝，是第96窟门口那个蹲着补颜色的身影；修复师窗台上那盆沙枣花，是工程师从戈壁上挖回来的。",
-    "withdrawal": "退守在钢管立杆与佛阁岩壁夹角处，双手死死攥住主横撑稳固身形。"
+    "relationship_stance": "朋友当兄弟，心事烂在肚子里。",
+    "withdrawal": "上崖顶查防沙网，一查就是半夜。"
    },
    "gender": "male",
-   "gender_reason": "石窟岩土力学与崖壁锚固特级总工",
+   "gender_reason": "和女修复师搭档驻守戈壁的青年男工程师，固定为男性。",
    "id": "engineer_shen_tianyu",
    "identity": {
-    "authority": "对全窟脚手架力学稳定性、崖壁锚固支撑点拆解与高空承重分配拥有现场最高技术判定权。",
-    "exposure": "为了抢工期曾私下推迟过脚手架外围加固横杆的螺栓例行扭矩复检",
-    "hidden": "安全帽内侧用铅笔工整写着修复师在鸣沙山月牙泉边写生的日期与经纬度坐标",
+    "authority": "掌握九层楼崖体微震监测数据，能建议夜间关闭防沙重门。",
+    "exposure": "他把省里批给自己的苏黎世访学名额，悄悄签成了放弃。",
+    "hidden": "他喜欢那位修复师很多年，只想她安心留在敦煌，哪怕她心里的人不是他。",
     "limits": [
-     "体能受狂暴沙尘阻滞加速衰竭",
-     "赤手空拳缺乏大扭矩气动扳手与切割机具"
+     "监测数据只能如实上报"
     ],
     "obligations": [
-     "誓死保全修复师人身安全与三十三米弥勒大佛造像无损"
+     "盯住崖顶的裂隙和防沙网"
     ],
     "resources": [
-     "一部数显高精度光电岩土微裂隙位移监测计",
-     "一整套高强度耐风化加厚芳纶纤维防坠安全绳索"
+     "崖体微震监测数据",
+     "一张没交的访学申请表"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "壁画女修复师骨子里的端庄高贵与坚韧灵气",
-     "两具身躯在三十米悬空绝壁中抵死相依的心跳共振"
+     "你肯陪他在崖顶顶着太阳干活",
+     "你不追问他的心事"
     ],
     "boundaries": [
-     "恪守正人君子之礼与同仁敬意",
-     "不以救人功德挟恩图报"
+     "对方摆手就停"
     ],
     "desire_range": [
-     2,
-     4
+     1,
+     3
     ],
-    "desired_position": "从身后将修复师牢牢拥入怀中固定在跳板上，大手包覆姑娘柔荑，借重力大力下压。",
+    "desired_position": "崖顶背风处并排坐的位置",
     "dislikes": [
-     "官僚的教条苛责",
-     "破坏文物的野蛮行径"
+     "坐办公室说空话"
     ],
-    "expression": "脱险后迅速解下自己干燥挡风的战术风衣严严实实裹住修复师瑟瑟发抖的肩头，低声抚慰。",
+    "expression": "表达得笨，拍一下肩、递一壶水，什么都在里头。",
     "likes": [
-     "扣件螺栓咔嗒一声彻底退扣时的金属轻响",
-     "修复师眼眸深处泛起的脉脉温情与踏实信任"
+     "冰镇杏皮水"
     ],
     "preconditions": [
-     "倾斜卡死钢管被成功撬脱步梯恢复畅通",
-     "全员平安脱困登上地面搜救车",
-     "对方点了头，出于本心"
+     "两人清醒，彼此都认了"
     ],
     "self_control_range": [
      3,
      5
     ]
    },
-   "public_role": "石窟岩土力学工程师",
+   "public_role": "石窟崖体监测工程师",
    "schedule": [
     {
-     "from": 960,
-     "location_id": "loc_cave_96_giant_buddha_chamber",
-     "to": 990
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "{npc.name}右臂肌肉严重拉伤酸痛。",
-      "option": "{npc.name}指导修复师将平铲刀柄卡槽顺牙纹反向深卡两人合力猛扳拧开螺栓自救。"
-     },
-     {
-      "cost": "钛合金撬具发生微细晶格扭曲。",
-      "option": "用钛合金撬杠强行撬裂扣件活节自锁爪脱险。"
-     }
-    ],
-    "pressure": "若不能在三分钟内借钛合金平铲刀扳松螺栓移开钢管，脚手架将发生连锁失稳将全员摔向深渊。",
-    "trigger": "直角扣件T型螺栓受钢管剧烈侧扭咬死在凹槽内无法退丝。"
-   },
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "voices": {
-    "inner": "就算这三十米大佛架真折了，我也绝不让修复师受半点伤。……给我拧开！",
-    "surface": "修复师！抓紧立杆！受力点在螺栓右侧下牙！铲刀卡槽套死螺母了，听我倒数三二一，我们合力往外扳，给我开！"
-   }
-  },
-  {
-   "adult_context": "年满四十岁，莫高窟安全生产与安防特保高级负责人，成年公职人员，具备完全民事行为能力与应急处置指挥权。",
-   "age_range": [
-    40,
-    46
-   ],
-   "appearance_options": [
-    "身穿带有安保臂章的厚重戈壁防风皮夹克与防风镜，面容刚毅饱经风霜，手里紧紧攥着大功率防爆对讲电台。",
-    "神情焦急万分，站在窟顶透光天窗外侧连连挥舞强光手电大声呼叫下方人员。"
-   ],
-   "decision": {
-    "avoids": [
-     "鲁莽盲目的野蛮破拆",
-     "推诿卸责的官僚作风"
-    ],
-    "contrast": "平日铁面严肃的安保处长，在青年专家命悬一线时流露出深沉的长辈护犊深情。",
-    "core_value": "大佛守了千年，人命大过天，只要通顶阁里还有呼吸，抢险队就死战到底！",
-    "goal_options": [
-     "组织地面铲车全力清掏底层木门积沙",
-     "用大功率探照灯锁定佛耳后方作业平台提供照明"
-    ],
-    "never": [
-     "在受困人员脱险前擅自撤离警戒哨位"
-    ],
-    "prefers": [
-     "科学严密的避险调度",
-     "临危不乱的工匠本色"
-    ],
-    "pressure_responses": {
-     "breaking": "解开安全带亲自爬上天窗木梁投送软梯",
-     "high": "严厉制止消防队盲目动用高压切割枪的危险提议",
-     "low": "在对讲机里连续复核受困人员意识清醒状态",
-     "mid": "大声向窟内喊出顶层天窗逃生路线坐标"
+     "from": 0,
+     "location_id": "loc_staff_dormitory_room",
+     "to": 420
     },
-    "relationship_stance": "将修复师与工程师视为敦煌文保事业的未来脊梁，危难之际倾尽一切后方资源拼死保全。",
-    "withdrawal": "退守在九层楼顶层坚固木构暗龛避风处，单手扶紧对讲中继天线。"
-   },
-   "gender": "male",
-   "gender_reason": "莫高窟全区保卫安防特派最高指挥长",
-   "id": "director_zhao_kai_safety",
-   "identity": {
-    "authority": "对莫高窟全区特级抢险方案、外围重型铲车调度与破拆许可拥有现场终极裁量权。",
-    "exposure": "曾因预算限制延期过大佛阁前室防沙隔断门的气动密封翻新工程",
-    "hidden": "暗中做好了在万不得已时动用直升机绳索强行吊运受困者的申请预案",
-    "limits": [
-     "受制于沙暴阻绝无法涉险下攀三十米悬空钢管作业",
-     "极度恐慌脚手架倾覆砸伤大佛盛唐贴金造像"
-    ],
-    "obligations": [
-     "在确保人命第一原则下誓死守卫莫高窟国宝文物建筑安全"
-    ],
-    "resources": [
-     "一部高增益北斗卫星应急短报文调度手持终端",
-     "一卷用牛皮筒妥善封存的大佛阁木构抗风修缮测绘蓝图"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "危难时刻对敦煌文化根脉的誓死坚守",
-     "临危不乱的精湛专业指挥"
-    ],
-    "boundaries": [
-     "严守安保干部公道廉洁底线",
-     "严守行政程序"
-    ],
-    "desire_range": [
-     0,
-     0
-    ],
-    "desired_position": "站在天窗木梁迎风处举起强光探照灯，向下方二十米作业平台精准照射螺栓投影。",
-    "dislikes": [
-     "天灾风沙对石窟文物的无情剥蚀",
-     "安全隐患未除的麻痹大意"
-    ],
-    "expression": "快步上前重重拍了拍工程师的肩头，眼含热泪向修复师深深鞠了一躬。",
-    "likes": [
-     "对讲机里传来青年专家平安脱险的呼吸声",
-     "大佛造像毫发无损的安检报告"
-    ],
-    "preconditions": [
-     "全员平安脱困上岸",
-     "第96窟造像结构安全排查完毕"
-    ],
-    "self_control_range": [
-     5,
-     5
-    ]
-   },
-   "public_role": "保卫处应急指挥长",
-   "schedule": [
     {
-     "from": 960,
+     "from": 420,
      "location_id": "loc_ninth_floor_observation_dormer",
-     "to": 990
+     "to": 1140
+    },
+    {
+     "from": 1140,
+     "location_id": "loc_cave_96_giant_buddha_chamber",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "探照灯镜头被飞沙打裂刮花。",
-      "option": "赵处长调动千瓦LED防爆探照灯穿透沙尘直射螺栓自救。"
+      "cost": "扫描收不了尾，修复师的心血卡在最后一步。",
+      "option": "如实上报风压，劝全员停工"
      },
      {
-      "cost": "对讲机扬声器进沙受损音量减小。",
-      "option": "通过对讲机口述螺母受力死角数据指引盲拧脱险。"
+      "cost": "万一出事，他这辈子都抬不起头。",
+      "option": "先压着数据，守在崖顶盯一夜"
      }
     ],
-    "pressure": "若无强光照射，钛铲卡槽将在光滑金属表面盲目空转打滑错失良机。",
-    "trigger": "窟内漫天黄沙蔽日导致肉眼无法看清深陷岩缝的螺栓螺牙位置。"
+    "pressure": "停工就耽误了最后一帧扫描，不停就怕出事。",
+    "trigger": "崖顶防沙网风压超标，他想劝人停工封窗。"
    },
    "tags": [
-    "workplace_power",
-    "crime"
+    "workplace"
    ],
    "voices": {
-    "inner": "就算挨处分也值了，敦煌不能没有这两个人！",
-    "surface": "修复师！工程师！探照灯给你们锁死在佛耳扣件上了！天窗软梯已经顺下去了！千万稳住心神，拧开螺母顺着架子爬上来！"
+    "inner": "她要是走了，我签那张放弃表就白签了。",
+    "surface": "崖上风大，你别上去，我去。"
    }
   },
   {
-   "adult_context": "年满三十四岁，防沙固沙工程特技机手，成年特种机械队长，具备完全民事行为能力与重型特种车驾驶权。",
+   "adult_context": "年满三十一岁、在欧洲做了八年丝路特展的独立策展人。",
    "age_range": [
-    34,
-    40
+    31,
+    35
    ],
    "appearance_options": [
-    "身穿沾满黄沙与柴油污迹的重型防护棉工装，身材魁梧满脸风沙，戴着防沙尘风镜，双手布满老茧稳稳推拉铲车操纵杆。",
-    "浑身散发着西北戈壁硬汉的粗犷与勇猛，大声在对讲机里吼叫汇报清沙进度。"
+    "驼色风衣，丝巾一丝不乱，钢笔别在胸前口袋。",
+    "谈吐儒雅，看壁画时眼神发亮，看人时却很冷静。"
    ],
    "decision": {
     "avoids": [
-     "拖泥带水的软弱退让",
-     "畏手畏脚的胆怯避难"
+     "被当成文物贩子"
     ],
-    "contrast": "平日豪爽粗犷的大西北卡车老把式，在古迹前驾驶数吨铲车时细腻精准如绣花。",
-    "core_value": "狂沙再狂也是土，我的铲斗是铁，只要机器不停，我就挖出一条生路！",
+    "contrast": "人前儒雅得滴水不漏；被你当面拆穿时，反倒松了口气。",
+    "core_value": "美的东西，不该只锁在洞里。",
     "goal_options": [
-     "顶住狂暴风沙连续清掏正门堆积流沙",
-     "用车载喇叭向窟内人员报出外围风暴衰减倒计时"
+     "拷走红外原档",
+     "探出你对数据开放的底线",
+     "体面地从对赌里脱身"
     ],
     "never": [
-     "在油箱燃尽前熄火放弃作业"
+     "亲手毁掉一件古物"
     ],
     "prefers": [
-     "硬碰硬的真刀真枪",
-     "说话算话的戈壁豪情"
+     "懂行的人"
     ],
     "pressure_responses": {
-     "breaking": "顶着沙暴跳出驾驶舱亲自用铁锹清理门缝泥沙",
-     "high": "拉响高音气笛为被困人员标定正门地平线方位",
-     "low": "在驾驶室全力稳住铲车油门保持车身抗风平衡",
-     "mid": "连续推拉大臂将堵门黄沙一斗斗向两侧扬开"
+     "breaking": "崩溃时独自站在檐廊边，对着沙山一言不发。",
+     "high": "高压时摘下丝巾，承认自己赌输不起。",
+     "low": "低压时谈艺术，笑意温文。",
+     "mid": "中压时把意向书往你面前推一寸。"
     },
-    "relationship_stance": "敬佩敦煌文保知识分子的傲骨与学识，愿用最粗犷硬核的机械蛮力为文化人拼死开路。",
-    "withdrawal": "将装载机停靠在九层楼北侧花岗岩防风挡土墙背风面，发动机怠速运转。"
+    "relationship_stance": "合作归合作，动心另算。",
+    "withdrawal": "回宾馆房间，把合同一页页重读。"
    },
    "gender": "any",
-   "gender_reason": null,
-   "id": "captain_liu_dahai_sand",
+   "gender_reason": "策展人与玩家只是利益交锋与暧昧试探，性别开局再定。",
+   "id": "curator_lin_shu",
    "identity": {
-    "authority": "对莫高窟九层楼前沿流沙清掏、重型铲车破障掘进航线拥有现场驾驶控制权。",
-    "exposure": "曾因盲目抢险冒进导致一台推土机在库木塔格沙漠边缘侧翻",
-    "hidden": "驾驶室后排始终备着一壶滚烫的生姜红糖枸杞御寒茶",
+    "authority": "手握海外博物馆的借展赞助拨付和巡展联合署名合同。",
+    "exposure": "背着拍卖行一桩古画真伪的对赌，急需第96窟底层飞天的红外原档。",
+    "hidden": "真心痴迷盛唐艺术，却已经被对赌逼到没有退路。",
     "limits": [
-     "黑风暴零能见度下操纵重型装载机极易误碰古建外墙构件",
-     "流沙倒灌速度极快极易造成铲斗抱死"
+     "赞助要董事会签字才算数"
     ],
     "obligations": [
-     "誓死在特大沙暴中挖开前室木门为内部人员开辟底层泄压口"
+     "把底稿带回去交差"
     ],
     "resources": [
-     "一辆重载履带式四驱防沙大马力推土铲车",
-     "两套特种防尘抗静电正压呼吸防护面罩"
+     "三百万的借展赞助意向书",
+     "巡展联合署名合同"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "顶天立地的大西北戈壁血性",
-     "在绝望黑风暴中破沙而来的重装安全感"
+     "你一眼看穿意向书的漏洞",
+     "你谈起壁画时的那份懂"
     ],
     "boundaries": [
-     "恪守林场机修人员本分规矩",
-     "不介入文保学术事务"
+     "对方说“到此为止”就停"
     ],
     "desire_range": [
-     0,
-     0
+     1,
+     3
     ],
-    "desired_position": "站在铲车高大轮胎上方挥舞红旗，大声向天窗方向报出底层清沙已见门框。",
+    "desired_position": "檐廊茶桌对面的座位",
     "dislikes": [
-     "天灾毁坏绿洲家园",
-     "自暴自弃的懦夫言论"
+     "粗鲁的场面"
     ],
-    "expression": "咧开嘴大笑着递上一大壶滚烫的红糖姜茶，用有力的大手拍了拍工程师的后背打气。",
+    "expression": "亲近时像在看一幅画，隔着半步端详你，迟迟不肯伸手。",
     "likes": [
-     "柴油发动机澎湃暴烈的轰鸣声",
-     "受困人员安全走出大门时的大口喝水声"
+     "一支好钢笔"
     ],
     "preconditions": [
-     "全员平安脱困登上防沙抢险救援车",
-     "大佛阁正门流沙彻底清除"
+     "两人都清醒，合同放在一边"
     ],
     "self_control_range": [
-     5,
+     3,
      5
     ]
    },
-   "public_role": "防沙重型机械队长",
+   "public_role": "海外丝路特展独立策展人",
    "schedule": [
     {
-     "from": 960,
+     "from": 0,
      "location_id": "loc_ninth_floor_observation_dormer",
-     "to": 990
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "铲斗油压软管在极寒与过载下发生渗油受损。",
-      "option": "刘队长操纵装载机大铲斗暴力掘开前室两吨堆沙打通底层泄压通道自救。"
-     },
-     {
-      "cost": "牵引钢丝绳崩裂两股毛刺割伤机械师手套。",
-      "option": "用钢丝绳挂在门框防沙翻板上协力向外牵引脱险。"
-     }
-    ],
-    "pressure": "若不及时清掏底层黄沙，内外气压差将击穿下层门窗引发窟内严重倒灌流沙。",
-    "trigger": "底层沙山压力持续挤压大佛阁承重木门框导致结构回音剧烈。"
-   },
-   "tags": [
-    "workplace",
-    "crime"
-   ],
-   "voices": {
-    "inner": "这风沙邪门得很，但我绝不能退，里面的娃娃们要是被沙闷死了，我{npc.name}没脸在敦煌混！",
-    "surface": "窟里的人挺住！我{npc.name}带了三台大轮铲在掏门了！还有五分钟把门拱开！你们在上头抓紧卸架子，底下有我们顶着！"
-   }
-  },
-  {
-   "adult_context": "年满五十岁，莫高窟文保资深特级高空架子工师傅，成年老工人，具备完全民事行为能力。",
-   "age_range": [
-    50,
-    56
-   ],
-   "appearance_options": [
-    "身穿油污破旧的加厚帆布工装长裤，腰间系着挂满扳手与安全绳的牛皮工具袋，头发花白面孔黧黑布满风沙刀刻印记，眼神老辣沉着。",
-    "双手满是厚茧与裂痕，在剧烈晃动的悬空跳板上稳步如履平地，伸手精准搭在卡死钢管根部。"
-   ],
-   "decision": {
-    "avoids": [
-     "投机取巧的违规蛮干",
-     "遇到大难就丢盔弃甲的懦夫"
-    ],
-    "contrast": "看似土气木讷的大西北老工匠，置身三十米凌空大绝境中展现出神入化的高空走钢丝绝艺。",
-    "core_value": "钢管是死的，人是活的，扣件咬得再死也是人拧上去的，老汉教你们顺着牙退！",
-    "goal_options": [
-     "口授修复师与工程师挑松防退自锁垫片口诀",
-     "递送滑石粉消除钛铲卡槽打滑摩擦"
-    ],
-    "never": [
-     "在关键工差公差判定上误导后辈"
-    ],
-    "prefers": [
-     "严丝合缝的力学规矩",
-     "尊师重道的后生骨气"
-    ],
-    "pressure_responses": {
-     "breaking": "用身躯抵住侧翼晃动爬梯为年轻人分担受力晃动",
-     "high": "冒着坠落危险踏上悬挑梁递送滑石粉协助防滑",
-     "low": "在晃动悬梯上用扳手轻敲钢管凭声音断定哪根钢管在吃重剪力",
-     "mid": "大声向两人喊出先挑垫片后逆向发力的关键口诀"
+     "to": 480
     },
-    "relationship_stance": "打心眼里疼爱敬佩修复师的大师风范与工程师的过硬技术，视二人如自家儿女般竭力护持。",
-    "withdrawal": "坐在大佛右膝后方天然平坦岩台干燥处，大口喘气平复心悸。"
-   },
-   "gender": "male",
-   "gender_reason": "大漠文保特种高空钢管脚手架架子工头领",
-   "id": "rigger_old_ma_scaffold",
-   "identity": {
-    "authority": "对大佛窟内全部直角扣件、旋转扣件自锁抱箍力学死角拥有三十年手感辨识直觉。",
-    "exposure": "年轻时曾违规在高空架子上抽烟被研究院安全科全院通报记过",
-    "hidden": "深知直角扣件T型螺栓只要先用钛铲尖在活节背面挑松防退垫片就能顺畅退丝",
-    "limits": [
-     "严重腰椎间盘突出在高空大风中行动受阻",
-     "体力不济难以独自承受数十公斤钢管反弹重荷"
-    ],
-    "obligations": [
-     "将石窟高空搭架拆解绝技毫无保留传授后生保全文保专家平安"
-    ],
-    "resources": [
-     "一把加长杆锻造高碳钢架子工双向快扳",
-     "一桶开封的特制高分子耐高温螺纹防锈润滑喷剂"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "对精湛手艺的崇敬与平等尊重",
-     "在狂沙乱舞生死大难面前长幼相依的患难真情"
-    ],
-    "boundaries": [
-     "恪守老长辈本分规矩长幼秩序",
-     "不掺和年轻男女私情"
-    ],
-    "desire_range": [
-     0,
-     0
-    ],
-    "desired_position": "半蹲在佛耳后方安全挂钩旁，用厚实的大手死死抵住卡槽外缘，为钛铲发力充当副支点。",
-    "dislikes": [
-     "轻视底层架子工经验的傲慢偏见",
-     "破坏石窟古迹的粗暴行径"
-    ],
-    "expression": "用沾满黄沙粗糙开裂的大手重重拍了拍工程师的胳膊，满脸欣慰踏实地笑了起来。",
-    "likes": [
-     "扣件螺栓咔哒一声松脱时的清脆声响",
-     "后生年轻人青出于蓝的过硬本领"
-    ],
-    "preconditions": [
-     "险情排除全员平安顺着天窗软梯登顶",
-     "工具包完好无损"
-    ],
-    "self_control_range": [
-     5,
-     5
-    ]
-   },
-   "public_role": "特级高空架子工头领",
-   "schedule": [
     {
-     "from": 960,
+     "from": 480,
+     "location_id": "loc_ninth_floor_observation_dormer",
+     "to": 1140
+    },
+    {
+     "from": 1140,
      "location_id": "loc_cave_96_giant_buddha_chamber",
-     "to": 990
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "平铲刀刃口出现微小挤压磨损痕迹。",
-      "option": "依老马头指点先用铲尖挑平防退垫片再合力拧松螺母脱险。"
+      "cost": "拍卖行追债，八年的名声一夜扫地。",
+      "option": "撤回对赌，空手回欧洲"
      },
      {
-      "cost": "老棘轮扳手棘齿断裂报废。",
-      "option": "用棘轮扳手强行别断垫片脱险。"
+      "cost": "事情一败露，从此再也进不了中国任何一座石窟。",
+      "option": "逼摄影师交出硬盘"
      }
     ],
-    "pressure": "若不先撬平垫片盲目施力，钛合金平铲刀卡槽将被剧烈扭矩崩缺豁口错过良机。",
-    "trigger": "扣件螺母下方卡着严重锈蚀变形的防退弹簧垫片导致螺纹卡死。"
+    "pressure": "拿到原档就成了窃贼，拿不到就输掉对赌。",
+    "trigger": "今晚封窟前是拷走原档的最后机会。"
    },
    "tags": [
     "workplace",
-    "crime"
+    "workplace_power"
    ],
    "voices": {
-    "inner": "好俊秀的一对金童玉女……老天爷保佑，咱们莫高窟两样顶尖的人才，可绝不能折在这三十米佛架上！",
-    "surface": "顾老师！工程师！听老马头的！那个直角扣件后面有一片防退弹簧垫片！先拿铲尖把垫片别平，螺母才能退得动！"
+    "inner": "要是这单赌输了，我连回去的路都没有。",
+    "surface": "这些画，该让全世界看见。"
    }
   },
   {
-   "adult_context": "年满二十二岁，文博学院文物修复系成年毕业生，敦煌研究院见习壁画修复员，具备完全民事行为能力。",
+   "adult_context": "年满二十六岁、持证上岗的文保数字化采集组首席摄影师。",
    "age_range": [
-    22,
-    24
+    26,
+    29
    ],
    "appearance_options": [
-    "身穿浅灰色防尘修复工作服，身形单薄神情高度紧绷，怀中死死抱着装有盛唐壁画颜料残片与显微照相机的特制抗震箱。",
-    "长发被黄沙染成土黄色，踩着摇晃的脚手板瑟瑟发抖，紧紧跟随在修复师身后。"
+    "短发利落，黑色冲锋衣，袖套上别着一枚银色硬盘钥匙扣。",
+    "眉眼冷艳，盯着取景器时嘴角抿成一条线。"
    ],
    "decision": {
     "avoids": [
-     "大漠风沙的无情肆虐",
-     "暴躁粗鲁的训斥打骂"
+     "被人可怜"
     ],
-    "contrast": "平日胆小害羞的小助理，在灭顶之灾面前能用身体为修复师挡风遮沙。",
-    "core_value": "誓死守护顾老师与国宝标本，顾老师在我就在！",
+    "contrast": "人前毒舌傲气；被你看穿时，会别过脸不让你看见她眼眶红。",
+    "core_value": "光线不够好，就别按快门。",
     "goal_options": [
-     "用美工刀协助剔除扣件螺丝缝隙泥沙",
-     "协助顾老师扶稳重心保持平衡"
+     "凑齐母亲的手术费",
+     "不让底稿真的流出去",
+     "看你肯不肯替她想办法"
     ],
     "never": [
-     "在修复师脱困前自顾自逃跑"
+     "真把国宝卖出去"
     ],
     "prefers": [
-     "细腻严谨的微观修复",
-     "温柔如玉的顾老师笑容"
+     "眼光准的人"
     ],
     "pressure_responses": {
-     "breaking": "哭着抱住修复师双腿协助稳固下盘支撑点",
-     "high": "用单薄身躯替顾老师挡住佛耳上方掉落的碎石灰",
-     "low": "在后方安全梯旁死死抱住标本箱瑟瑟发抖",
-     "mid": "鼓起勇气踏上悬空跳板递过美工刀清理螺纹沙土"
+     "breaking": "崩溃时躲进遮光幕布后，一遍遍删了又恢复。",
+     "high": "高压时红着眼眶承认收了定金。",
+     "low": "低压时毒舌挑剔光线。",
+     "mid": "中压时把硬盘攥在手心，指节发白。"
     },
-    "relationship_stance": "视修复师如亲姐如神明，在大难面前爆发出难以置信的忠诚护主本能。",
-    "withdrawal": "缩在立杆安全挂网内侧干燥脚手板拐角处，紧抱抗震箱抽泣。"
+    "relationship_stance": "嘴硬，喜欢一个人就爱逗对方。",
+    "withdrawal": "钻进遮光幕布下守着显影，谁叫都不出来。"
    },
    "gender": "female",
-   "gender_reason": "莫高窟壁画保护修复见习助理工匠",
-   "id": "assistant_fresco_restorer_xiao_tang",
+   "gender_reason": "干练冷艳的视觉艺术家形象，固定为女性。",
+   "id": "photographer_su_ya",
    "identity": {
-    "authority": "对现场修复材料出入库、微环境温湿度记录仪数据拥有保管与记录权。",
-    "exposure": "曾因配制试剂比例失误造成一小块仿制地仗层起皮返工",
-    "hidden": "暗自将修复师视作生命中唯一的艺术偶像与治学导师",
+    "authority": "掌握今晚多光谱扫描仪的后台管理员密钥和原始数据硬盘。",
+    "exposure": "母亲重病等着手术费，她收了策展人十万定金，在终端上留了一道导出后门。",
+    "hidden": "她嘴上毒，心里一直把你当成唯一能说真话的人。",
     "limits": [
-     "有轻微高空恐高症在三十米高架剧烈晃动下双腿发软几乎瘫坐",
-     "体力单薄无法参与重型金属推拉"
+     "数据出机房要外事处双签"
     ],
     "obligations": [
-     "誓死守护盛唐壁画原位剥落颜料标本不被狂风卷走损毁"
+     "今晚跑完最后一帧"
     ],
     "resources": [
-     "一盒特制高精度医用脱脂棉签与蒸馏水清洗胶囊",
-     "一把小巧便携式多功能美工修补刀"
+     "后台管理员密钥",
+     "原始数据硬盘"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "危难时刻顾老师犹如菩萨临凡般的从容定力",
-     "师门同仁相依为命的炽热羁绊"
+     "你肯在红灯下陪她等显影",
+     "你不嫌她嘴毒"
     ],
     "boundaries": [
-     "严守工坊本分规矩长幼秩序",
-     "不逾矩干涉顾老师私事"
+     "她说“收工”就停"
     ],
     "desire_range": [
-     0,
-     0
+     2,
+     4
     ],
-    "desired_position": "半蹲在悬空脚手架内侧跳板边缘，双手用力按住立杆，大声为顾老师与工程师加油鼓劲。",
+    "desired_position": "遮光幕布下挨着你的那一角",
     "dislikes": [
-     "无情黄沙的淹没摧毁",
-     "千年文物的损坏"
+     "敷衍的光线"
     ],
-    "expression": "眼含热泪扑入修复师怀中，小脸紧紧贴在修复师湿透的工装衣襟上喜极而泣。",
+    "expression": "亲近时先逗你，靠在你背上借力，再低声说真话。",
     "likes": [
-     "大门冲开时涌入的温暖天光",
-     "顾老师温柔擦拭自己额头沙尘的宽慰"
+     "暗房红灯的安静"
     ],
     "preconditions": [
-     "全员平安撤出大佛阁壁画标本完好无损",
-     "脱离沙暴险区安全复温"
+     "两人都清醒，她先开的口"
     ],
     "self_control_range": [
-     4,
+     2,
      4
     ]
    },
-   "public_role": "壁画见习助理员",
+   "public_role": "文保数字化采集组首席摄影师",
    "schedule": [
     {
-     "from": 960,
+     "from": 0,
+     "location_id": "loc_staff_dormitory_room",
+     "to": 480
+    },
+    {
+     "from": 480,
      "location_id": "loc_cave_96_giant_buddha_chamber",
-     "to": 990
+     "to": 1140
+    },
+    {
+     "from": 1140,
+     "location_id": "loc_cave_96_giant_buddha_chamber",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "美工刀刀片崩断割破小唐手背皮肉。",
-      "option": "小唐递上美工刀快速剔除螺纹缝隙泥沙让钛铲顺利旋动自救。"
+      "cost": "调离采集核心组，丢了首席的位子。",
+      "option": "向修复师坦白，封存硬盘"
      },
      {
-      "cost": "消耗尽随身备用珍稀脱盐清洗药剂。",
-      "option": "滴注清洗胶囊蒸馏水冲洗螺纹减小摩擦脱险。"
+      "cost": "对方验出数据不对，会在国际文保界发难。",
+      "option": "拷一份普通图应付策展人"
      }
     ],
-    "pressure": "若不及时清理螺丝缝隙泥沙，钛合金铲刀即使强行扳动也会因沙粒摩擦自锁而崩断。",
-    "trigger": "黑风暴将大量粗颗粒石英砂吹入螺栓间隙导致螺牙严重干涉咬死。"
+    "pressure": "交了就卖了国宝，不交母亲的手术费就没了。",
+    "trigger": "策展人逼她今晚交出红外原档。"
    },
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
    "voices": {
-    "inner": "顾老师千万别出事，只要顾老师能活着，我小唐以后天天给老师调胶研磨颜料都心甘情愿！",
-    "surface": "顾老师！工程师！我用美工刀把螺丝纹里的粗沙子刮干净了！滑石粉也涂上了！标本箱我绑在安全带上了，你们千万小心啊！"
+    "inner": "我留了后门，可我宁愿那道门永远没人用。",
+    "surface": "别挡光。往左一点，再一点。"
+   }
+  },
+  {
+   "adult_context": "年满三十六岁、世代守着月牙泉的驼队向导。",
+   "age_range": [
+    36,
+    42
+   ],
+   "appearance_options": [
+    "脸膛晒得黑红，羊皮坎肩，腰间别一把小刀和一只皮水囊。",
+    "笑声洪亮，大手一拍肩膀能把人拍个趔趄。"
+   ],
+   "decision": {
+    "avoids": [
+     "看不起牧人的人"
+    ],
+    "contrast": "人前粗犷得像沙山的风；说起祖上的事，声音会忽然放低。",
+    "core_value": "沙山记得每一个走过的人。",
+    "goal_options": [
+     "保住后山的老牧场",
+     "给杂记找个靠得住的人",
+     "试试你识不识得老辈的东西"
+    ],
+    "never": [
+     "卖了祖上的东西"
+    ],
+    "prefers": [
+     "识货又不贪的人"
+    ],
+    "pressure_responses": {
+     "breaking": "崩溃时骑着骆驼独自进沙山，一夜不回。",
+     "high": "高压时把杂记往怀里一揣，谁也不给看。",
+     "low": "低压时哈哈一笑，塞你一块瓜。",
+     "mid": "中压时拍着防沙门喊人快落栓。"
+    },
+    "relationship_stance": "豪爽，信了一个人就掏心掏肺。",
+    "withdrawal": "回驼队营地烧一壶奶茶，对着沙山唱老调子。"
+   },
+   "gender": "male",
+   "gender_reason": "西北沙山粗犷豪爽的守山向导，固定为男性。",
+   "id": "herder_guide_ba_tu",
+   "identity": {
+    "authority": "熟悉鸣沙山每条背风古河道和戈壁应急水源，掌管院外越野救援车队。",
+    "exposure": "他守着的那册香火杂记，记着第96窟底层壁画剥落真迹的流散线索。",
+    "hidden": "他想让后山老牧场留下来，又怕拿杂记去换会对不起祖上。",
+    "limits": [
+     "杂记不肯轻易给外人看"
+    ],
+    "obligations": [
+     "照应院里的人平安"
+    ],
+    "resources": [
+     "一册祖传的清代香火杂记",
+     "院外越野救援车队"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "你迷路时肯听他的话",
+     "你认得老辈的字"
+    ],
+    "boundaries": [
+     "他一摆手就退开"
+    ],
+    "desire_range": [
+     0,
+     1
+    ],
+    "desired_position": "驼队篝火边的位置",
+    "dislikes": [
+     "城里人的客套"
+    ],
+    "expression": "不谈情爱，信任就是一块哈密瓜、一句实话。",
+    "likes": [
+     "一壶热奶茶"
+    ],
+    "preconditions": [
+     "彼此清醒、信得过"
+    ],
+    "self_control_range": [
+     5,
+     5
+    ]
+   },
+   "public_role": "鸣沙山守泉人与驼队向导",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_fresco_pigment_studio",
+     "to": 600
+    },
+    {
+     "from": 600,
+     "location_id": "loc_sand_gate_inner_corridor",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_sand_gate_inner_corridor",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "后山老牧场划进旅游开发区，祖上的地保不住。",
+      "option": "把杂记交给研究院"
+     },
+     {
+      "cost": "壁画缺的那只飞天手印，再也补不上。",
+      "option": "揣着杂记回沙山"
+     }
+    ],
+    "pressure": "交出杂记能补全壁画，却要拿老牧场去谈。",
+    "trigger": "黑沙暴合围前，他送来了那册杂记。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "voices": {
+    "inner": "这册杂记交出去，祖上的话就有人听了；可交给谁，我还没想好。",
+    "surface": "快落栓！沙墙过来了！"
+   }
+  },
+  {
+   "adult_context": "年满二十三岁、已成年的修复组青年研究员，跟着修复师学了三年。",
+   "age_range": [
+    23,
+    26
+   ],
+   "appearance_options": [
+    "齐耳短发，圆脸笑眼，工装口袋里总揣着一袋杏干。",
+    "个子小，抱着记录本走路蹦蹦跳跳，说话很快。"
+   ],
+   "decision": {
+    "avoids": [
+     "被当成小孩"
+    ],
+    "contrast": "人前乖巧懂事；单独和你说话时，会突然大胆地看着你的眼睛。",
+    "core_value": "师父在哪，我就在哪。",
+    "goal_options": [
+     "留住师父",
+     "守好修复日志",
+     "让你多看她一眼"
+    ],
+    "never": [
+     "背着师父做事"
+    ],
+    "prefers": [
+     "待人和气的人"
+    ],
+    "pressure_responses": {
+     "breaking": "崩溃时躲进颜料库房，抱着师父的旧画笔哭。",
+     "high": "高压时红着眼说出调令的事。",
+     "low": "低压时乖巧应着，手脚勤快。",
+     "mid": "中压时抱着记录本缩在门口，欲言又止。"
+    },
+    "relationship_stance": "黏人，喜欢一个人就天天找借口说话。",
+    "withdrawal": "躲进颜料库房，把色卡按顺序排了又排。"
+   },
+   "gender": "female",
+   "gender_reason": "跟着修复师学了三年的年轻女研究员，固定为女性。",
+   "id": "assistant_fresco_restorer_xiao_tang",
+   "identity": {
+    "authority": "负责保管洞窟微环境记录仪、矿物颜料库房钥匙和修复日志。",
+    "exposure": "她无意中翻出了师父藏起来的北京调令。",
+    "hidden": "她怕师父一走，自己一个人撑不起九层楼；她也偷偷喜欢着你。",
+    "limits": [
+     "没有师父签字不能单独动壁画"
+    ],
+    "obligations": [
+     "跟着师父把第96窟做完"
+    ],
+    "resources": [
+     "颜料库房钥匙",
+     "修复日志"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "你陪她找钥匙的那个夜晚",
+     "你说话从不凶"
+    ],
+    "boundaries": [
+     "她说“不行”就停"
+    ],
+    "desire_range": [
+     1,
+     3
+    ],
+    "desired_position": "颜料室门口和你并排坐的台阶",
+    "dislikes": [
+     "被人呵斥"
+    ],
+    "expression": "亲近时红着脸，先拉你的袖子，再小声问一句。",
+    "likes": [
+     "手剥杏干"
+    ],
+    "preconditions": [
+     "两人都清醒，她鼓起勇气先说"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "壁画修复组青年研究员",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_staff_dormitory_room",
+     "to": 480
+    },
+    {
+     "from": 480,
+     "location_id": "loc_fresco_pigment_studio",
+     "to": 1140
+    },
+    {
+     "from": 1140,
+     "location_id": "loc_fresco_pigment_studio",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "师父被逼着当晚就和策展人翻脸。",
+      "option": "马上告诉师父"
+     },
+     {
+      "cost": "一个人守夜，吓得一晚上不敢合眼。",
+      "option": "先告诉你，自己守着机房门"
+     }
+    ],
+    "pressure": "告诉师父会添乱，不告诉怕底稿丢了。",
+    "trigger": "她看见策展人刚进过数据机房。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "voices": {
+    "inner": "师父要是走了，我连颜料都不知道该调哪一罐。",
+    "surface": "师父说过，颜色要一层一层上。"
    }
   }
  ],
@@ -1128,199 +1343,161 @@
  "clock_style": "hm",
  "content_tags": [
   "intimate",
-  "violence",
-  "bodily_harm",
   "workplace",
-  "disaster"
+  "disaster",
+  "bodily_harm"
  ],
  "custom": false,
  "customs": [
-  "壁画修复人员登临三十米大佛高架前习惯以软毛刷轻拂护目镜上浮尘。",
-  "莫高窟文物保护工程师在黑风暴来临前习惯紧闭窟顶高侧百叶导风窗。",
-  "敦煌老工匠高空拆装脚手架时习惯在腰间系挂两道防坠自锁安全绳母扣。",
-  "临摹画师调色前习惯用双指搓捻天然朱砂与青金石粉末检验颗粒细腻度。"
+  "宿舍区的老规矩：敲三下是找人，敲两下是报平安。",
+  "进窟前要在九层楼下站一会儿，等眼睛适应了暗再上梯。",
+  "守泉人进院必带哈密瓜，谁接了瓜，谁就得听守泉人讲一段老辈的事。",
+  "修复师之间送胡杨木簪，意思是这辈子不离开戈壁。"
  ],
  "daily_activities": [
   {
    "beats": [
-    "使用高精度数显扭矩扳手抽检佛耳平台立杆扣件",
-    "使用钛合金卡尺测量钢管壁厚与局部氧化红锈厚度",
-    "在莫高窟工程日常安检台账记录脚手架垂直度读数"
+    "用画笔杆在宿舍门框上轻轻敲三下",
+    "门里立刻传来三声回应，接着是拉开门闩的声音"
    ],
-   "duration_minutes": 25,
-   "hook_ids": [],
-   "id": "act_cave_96_scaffold_load_inspection",
+   "duration_minutes": 20,
+   "hook_ids": [
+    "hook_gu_unopened_letter",
+    "hook_gu_wristband",
+    "hook_gu_sand_lashes"
+   ],
+   "id": "act_doorframe_three_knocks",
    "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
+    "loc_staff_dormitory_room"
    ],
-   "start_minute": 960,
+   "start_minute": null,
    "tags": [
-    "workplace",
-    "disaster"
+    "intimate"
    ],
-   "title": "三十米通顶大佛脚手架直角扣件扭矩校准"
+   "title": "宿舍门框上的三声轻叩"
   },
   {
    "beats": [
-    "使用超声波风速仪记录三危山来风方向风压变化",
-    "清理天窗木质飞檐导流槽内积存的粗颗粒鸣沙细石",
-    "核准顶层救生应急频闪信号灯锂电池储能指示灯"
+    "在安静的研磨室里，握着修复师的手一起推动玛瑙研钵",
+    "看深蓝和绯红的粉末在温水里慢慢化开"
    ],
-   "duration_minutes": 20,
+   "duration_minutes": 40,
+   "hook_ids": [
+    "hook_gu_unopened_letter",
+    "hook_gu_wristband",
+    "hook_gu_sand_lashes"
+   ],
+   "id": "act_lapis_cinnabar_grinding",
+   "location_ids": [
+    "loc_fresco_pigment_studio"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "青金石与朱砂的夜研"
+  },
+  {
+   "beats": [
+    "三十米高的平台上，借一盏冷光阅读灯凑在同一张线稿前",
+    "比对唐代飞天的衣纹，肩膀挨着肩膀"
+   ],
+   "duration_minutes": 40,
    "hook_ids": [],
-   "id": "act_ninth_floor_dormer_vent_wind_test",
+   "id": "act_buddha_knee_linework",
+   "location_ids": [
+    "loc_cave_96_giant_buddha_chamber"
+   ],
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "大佛膝前的冷光并肩"
+  },
+  {
+   "beats": [
+    "从风沙里退进回廊，捧住对方的脸",
+    "低头轻轻吹走眼尾和睫毛上的细沙"
+   ],
+   "duration_minutes": 10,
+   "hook_ids": [],
+   "id": "act_lash_sand_blow",
+   "location_ids": [
+    "loc_sand_gate_inner_corridor"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "睫毛上的细沙轻吹"
+  },
+  {
+   "beats": [
+    "坐在顶层檐廊下听檐角铁马叮当",
+    "两人分喝一壶酸甜冰凉的杏皮水"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_eaves_apricot_drink",
    "location_ids": [
     "loc_ninth_floor_observation_dormer"
    ],
-   "start_minute": 965,
+   "start_minute": null,
    "tags": [
-    "workplace",
-    "disaster"
+    "intimate"
    ],
-   "title": "九层楼飞檐顶层第二十米透光天窗巡检"
+   "title": "檐下铁马声里的杏皮水"
   },
   {
    "beats": [
-    "使用高纯度无水乙醇擦拭钛合金平铲刀四毫米厚背",
-    "检查刀柄末端十二毫米直角内六角卡槽边缘磨损度",
-    "滴涂特种微量氟素防锈油润滑安全挂绳连接环"
+    "进窟前站到对方身后，替对方系好防尘袖套背后的系带",
+    "顺手把落下的一缕头发掖回去"
    ],
-   "duration_minutes": 15,
+   "duration_minutes": 10,
    "hook_ids": [],
-   "id": "act_fresco_desalination_spatula_honing",
+   "id": "act_dust_sleeve_ties",
+   "location_ids": [
+    "loc_fresco_pigment_studio"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "防尘袖套的系带"
+  },
+  {
+   "beats": [
+    "风沙夜里，在单人宿舍的小桌前煮一锅西北羊肉面片",
+    "额头抵着额头分着吃完"
+   ],
+   "duration_minutes": 40,
+   "hook_ids": [],
+   "id": "act_dorm_mutton_noodles",
+   "location_ids": [
+    "loc_staff_dormitory_room"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "小电锅里的羊肉面片"
+  },
+  {
+   "beats": [
+    "和身边的人钻进遮光幕布，等红外图像一寸寸浮出来",
+    "幽暗的红光里，指尖碰到对方微凉的指尖"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_infrared_developing",
    "location_ids": [
     "loc_cave_96_giant_buddha_chamber"
    ],
-   "start_minute": 970,
-   "tags": [
-    "workplace"
-   ],
-   "title": "壁画脱盐纯钛合金特制平铲刀刃面保养"
-  },
-  {
-   "beats": [
-    "使用便携式超声波无损探伤仪扫描佛耳地仗层间隙",
-    "用软毛羊毫笔轻刷大佛右颊沉积的微细石英沙粒",
-    "在壁画病害矢量图谱标注因风压震动新增的微细裂隙"
-   ],
-   "duration_minutes": 25,
-   "hook_ids": [],
-   "id": "act_tang_dynasty_gilding_fresco_log",
-   "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
-   ],
-   "start_minute": 975,
-   "tags": [
-    "workplace"
-   ],
-   "title": "盛唐大佛面庞贴金颜料层空鼓超声探测"
-  },
-  {
-   "beats": [
-    "使用黄油枪向闸门重力滑轮轴承注入特制低温润滑脂",
-    "清理钢丝绳导槽内积聚的风化红土粉尘与草根碎屑",
-    "测试手动应急快速脱扣落门手柄的自由行程间隙"
-   ],
-   "duration_minutes": 20,
-   "hook_ids": [],
-   "id": "act_sand_vestibule_pressure_gate_test",
-   "location_ids": [
-    "loc_flooded_sand_gate_vestibule"
-   ],
-   "start_minute": 980,
-   "tags": [
-    "workplace",
-    "crime"
-   ],
-   "title": "前室底层防沙重力翻板闸门配重缆绳巡检"
-  },
-  {
-   "beats": [
-    "检查大型铲车重型高压液压油缸管路接口密封圈",
-    "校准装载机前照高流明防雾氙气车灯照射角度",
-    "向莫高窟总调度室报备防沙机械应急编队待命坐标"
-   ],
-   "duration_minutes": 15,
-   "hook_ids": [],
-   "id": "act_emergency_sand_barrier_drill",
-   "location_ids": [
-    "loc_flooded_sand_gate_vestibule"
-   ],
-   "start_minute": 985,
-   "tags": [
-    "workplace_power",
-    "disaster"
-   ],
-   "title": "大泉河谷防沙挖掘装载车应急防撞测试"
-  },
-  {
-   "beats": [
-    "螺栓拧开、脚手架扶正、第96窟的壁画一块没伤之后，修复师回到宿舍，头发里、领口里全是黄沙，工装被汗和沙糊成了硬壳。",
-    "修复师背过身，让人解开工装的扣子，再用一盆温水和毛巾，一点点擦去后颈和肩背上的沙，毛巾擦到腰窝时，修复师咬着唇，往后靠了过来。",
-    "修复师转过身，把满是颜料痕的手按在对方胸口：今晚别回隔壁了。……你愿意，就留下。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_dorm_sand_wash",
-   "location_ids": [
-    "loc_staff_dormitory_room"
-   ],
-   "start_minute": 1430,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "宿舍里替修复师洗去满身黄沙"
-  },
-  {
-   "beats": [
-    "修复师盘腿坐在床上，面前摆着一碟朱砂、一碟石青，说盛唐的红要用胶一点点调开，急了就死。",
-    "修复师握着人的手，带着笔尖在纸上走：这一笔慢一点。……对，就这样，别松手。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_dorm_cinnabar_lesson",
-   "location_ids": [
-    "loc_staff_dormitory_room"
-   ],
-   "start_minute": 1300,
-   "tags": [
-    "intimate"
-   ],
-   "title": "教你调一碟朱砂"
-  },
-  {
-   "beats": [
-    "沙暴后的第三夜，戈壁上安静得能听见沙子在流，修复师把台灯拧到最暗，靠在窗边看着九层楼的影子。",
-    "修复师没回头：在洞窟里待了六年，第一次觉得外头比壁画好看。……你过来，我想抱着你。你说好，我才转身。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_dorm_sandstorm_night",
-   "location_ids": [
-    "loc_staff_dormitory_room"
-   ],
-   "start_minute": 1380,
-   "tags": [
-    "intimate"
-   ],
-   "title": "沙暴过后的那一夜"
-  },
-  {
-   "beats": [
-    "天还没亮，修复师把人从床上拽起来，裹着一条毯子爬上宿舍后头的沙脊，等鸣沙山的第一缕光。",
-    "太阳出来的时候，修复师把冻凉的脸贴在人颈侧：上班还有两个钟头。……再抱一会儿，大佛不会怪我们的。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_dorm_dawn_dune",
-   "location_ids": [
-    "loc_staff_dormitory_room"
-   ],
-   "start_minute": 360,
-   "tags": [
-    "intimate"
-   ],
-   "title": "鸣沙山的日出"
+   "title": "遮光幕布下的红外显影"
   }
  ],
  "default_npc_gender_mix": {
@@ -1329,7 +1506,7 @@
   "nonbinary": 0.0
  },
  "default_person": "second",
- "era": "当代丝绸之路世界文化遗产保护与莫高窟崖体综合治理期",
+ "era": "当代莫高窟，四月沙尘季封窟之前",
  "extends": null,
  "forbidden_terms": [
   "仙法",
@@ -1343,270 +1520,232 @@
  ],
  "hooks": [
   {
-   "id": "hook_sandstorm_roars_outside_cave",
+   "id": "hook_gu_unopened_letter",
    "kind": "approach",
    "location_ids": [
     "loc_cave_96_giant_buddha_chamber"
    ],
    "slot": "restorer_gu_qingxian",
-   "text": "{restorer_gu_qingxian.name}双手扶住倾斜的钢管立杆，满脸黄沙与薄汗：卡死了！把我这柄脱盐钛合金平铲的柄端卡槽套上去，跟我一起把这颗螺母拧下来！"
+   "text": "第96窟三十米高的大佛膝前平台上，冷光灯映着盛唐飞天斑驳的衣袂，{npc.name}捏着那封未拆的北京总院调令，轻轻侧过身朝你招了招手。"
   },
   {
-   "id": "hook_scaffold_creaks_in_sand_gale",
-   "kind": "approach",
-   "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
-   ],
-   "slot": "restorer_gu_qingxian",
-   "text": "{restorer_gu_qingxian.name}甩开被沙土打湿的长辫，两腮微婴儿肥的面颊紧绷，眼神透着大漠儿女的凛然沉着：脚手架往佛耳倾斜了！横管把悬梯死死别住了，工程师，顶住管子，钛铲卡槽咬死螺母了，用力扳！"
-  },
-  {
-   "id": "hook_coupler_bolt_galls_tight",
-   "kind": "approach",
-   "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
-   ],
-   "slot": "restorer_gu_qingxian",
-   "text": "{restorer_gu_qingxian.name}双手死死按在工程师宽阔结实的手背上，在剧烈晃动中将全身重力压在钛铲柄上：螺栓松动了！听老马头的口诀，顺着牙口朝左下猛挫，三、二、一，给我开！"
-  },
-  {
-   "id": "hook_shen_measures_scaffold_lean",
-   "kind": "approach",
-   "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
-   ],
-   "slot": "engineer_shen_tianyu",
-   "text": "{engineer_shen_tianyu.name}大步跨上悬挑脚手板，强壮的双臂从身后一把将修复师护在怀里：修复师站稳！钢管上千斤的剪切重力全交给我，钛铲卡进螺母死角了，听我倒数一起下扳！"
-  },
-  {
-   "id": "hook_old_ma_checks_rigger_belt",
-   "kind": "approach",
-   "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
-   ],
-   "slot": "rigger_old_ma_scaffold",
-   "text": "{rigger_old_ma_scaffold.name}抹了把脸上的冷沙大喊：顾老师手真稳！别直着撬，先用铲尖挑平防退垫片，把全身分量压下去，老汉保你一扳就退！"
-  },
-  {
-   "id": "hook_director_aims_spotlight_down",
-   "kind": "approach",
-   "location_ids": [
-    "loc_ninth_floor_observation_dormer"
-   ],
-   "slot": "director_zhao_kai_safety",
-   "text": "{director_zhao_kai_safety.name}在天窗大声举着对讲机咆哮：修复师！工程师！千瓦探照灯给你们照准扣件了！看准那个发亮的螺母，拧开螺栓推开管子，软梯在头顶接着你们！"
-  },
-  {
-   "id": "hook_liu_calls_from_loader_cabin",
-   "kind": "approach",
-   "location_ids": [
-    "loc_ninth_floor_observation_dormer"
-   ],
-   "slot": "captain_liu_dahai_sand",
-   "text": "{captain_liu_dahai_sand.name}在装载机大吼：窟里的人听着！大轮铲掏到底门过梁了！还有最后三分钟，你们在上头把管子拆掉爬上来！"
-  },
-  {
-   "id": "hook_cave_dust_suffocates_chamber",
-   "kind": "approach",
-   "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
-   ],
-   "slot": "engineer_shen_tianyu",
-   "text": "{engineer_shen_tianyu.name}胸膛紧贴着修复师被风沙吹透的后背，双臂宛如铁箍般抱紧姑娘柔荑：修复师，别怕！听赵处长探照灯就在头顶！咬紧牙关，我们把全身分量压下去！"
-  },
-  {
-   "id": "hook_gale_gust_rips_dormer_roof",
-   "kind": "request",
-   "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
-   ],
-   "slot": "restorer_gu_qingxian",
-   "text": "{restorer_gu_qingxian.name}深吸一口气，工装衣襟浸满黄沙，两腮微婴儿肥的面容毫无惧色：工程师！天窗瓦片被风卷飞了，用安全帽护住头，把你的力气全压在铲柄上，绝不能让大佛壁画受损！"
-  },
-  {
-   "id": "hook_titanium_blade_creaks_under_strain",
-   "kind": "request",
-   "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
-   ],
-   "slot": "engineer_shen_tianyu",
-   "text": "{engineer_shen_tianyu.name}浑身肌肉紧绷青筋暴起，手臂青筋鼓胀：修复师，钛铲受力到临界点了，最后一次发力机会！跟我数三二一，拼尽全力往下一挫！"
-  },
-  {
-   "id": "hook_qingxian_cleans_titanium_spatula",
-   "kind": "request",
-   "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
-   ],
-   "slot": "restorer_gu_qingxian",
-   "text": "{restorer_gu_qingxian.name}反手死死扣紧工程师满是沙土的大手，美眸中绽放出动人光芒：工程师，有你在{restorer_gu_qingxian.name}什么都不怕！莫高窟的神佛看着我们呢，给我开！"
-  },
-  {
-   "id": "hook_xiao_tang_hugs_specimen_case",
+   "id": "hook_gu_wristband",
    "kind": "observe",
-   "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
-   ],
-   "slot": "restorer_gu_qingxian",
-   "text": "见习助理小唐紧紧抱着标本箱缩在立柱边，泪眼模糊地看着高空跳板上两人紧密相拥、十指交扣合力扳动钛合金铲刀的决死身姿，被大家守护国宝的英勇气魄震撼得热泪长流。"
-  },
-  {
-   "id": "hook_observe_restorer_monumental_pose",
-   "kind": "observe",
-   "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
-   ],
-   "slot": "restorer_gu_qingxian",
-   "text": "{restorer_gu_qingxian.name}工装包裹下身姿优美挺拔，两腮微婴儿肥的面颊在昏黄沙光映衬下晶莹如玉，微婴儿肥的面容与手中寒光森森的钛合金铲刀形成极度典雅又刚烈的反差张力。"
-  },
-  {
-   "id": "hook_observe_scaffold_pipe_breaks_free",
-   "kind": "observe",
-   "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
-   ],
-   "slot": "restorer_gu_qingxian",
-   "text": "伴随着一声清脆震耳的金属崩退巨响，咬死的T型螺栓被钛合金平铲刀硬生生旋松退扣，卡死的四米横向钢管顺势推开移位，悬梯通道轰然畅通，两人相拥顺梯奔向天窗曙光。"
-  },
-  {
-   "id": "hook_qingxian_sunset_dune",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "restorer_gu_qingxian",
-   "text": "{npc.name}坐在鸣沙山的沙脊上，拍了拍身边的沙子：太阳还有十分钟落。……坐下，别说话。"
-  },
-  {
-   "id": "hook_qingxian_cinnabar",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "restorer_gu_qingxian",
-   "text": "{npc.name}指尖还沾着朱砂，往人手背上点了一下：盛唐的红，一千三百年了。……别擦，留着。"
-  },
-  {
-   "id": "hook_qingxian_night_market",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "restorer_gu_qingxian",
-   "text": "{npc.name}换下工装，围着一条红纱巾站在敦煌夜市的驴肉黄面摊前：今天补完了一尊菩萨的眉毛，你请我。"
-  },
-  {
-   "id": "hook_tianyu_sand_jujube",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "engineer_shen_tianyu",
-   "text": "{npc.name}把一盆沙枣花放在人的窗台上，挠了挠头：戈壁上挖的。……开花的时候，满院子都是香的。"
-  },
-  {
-   "id": "hook_qingxian_dorm_curtain",
-   "kind": "approach",
    "location_ids": [
     "loc_staff_dormitory_room"
    ],
    "slot": "restorer_gu_qingxian",
-   "text": "{npc.name}撩开宿舍的门帘，探出半个身子：沙枣花开了。……进来闻闻。"
+   "text": "隔壁宿舍那堵熟悉的薄墙，傍晚曾被画笔杆轻轻敲响三下；此刻{npc.name}手腕上戴着一条防沙真丝护腕，指尖一下下摩挲着它的边。"
+  },
+  {
+   "id": "hook_gu_sand_lashes",
+   "kind": "approach",
+   "location_ids": [
+    "loc_sand_gate_inner_corridor"
+   ],
+   "slot": "restorer_gu_qingxian",
+   "text": "{npc.name}从风沙里退进回廊，仰起脸闭上眼，让你替{npc.ta}吹掉睫毛上的细沙。"
+  },
+  {
+   "id": "hook_batu_bolt_now",
+   "kind": "approach",
+   "location_ids": [
+    "loc_sand_gate_inner_corridor"
+   ],
+   "slot": "herder_guide_ba_tu",
+   "text": "窟外鸣沙山方向腾起遮天蔽日的黑黄色沙墙，九层楼檐角的铜铃在狂风里急促作响，向导{npc.name}拍打着底层防沙重门喊你们快落栓。"
+  },
+  {
+   "id": "hook_batu_melon_book",
+   "kind": "approach",
+   "location_ids": [
+    "loc_fresco_pigment_studio"
+   ],
+   "slot": "herder_guide_ba_tu",
+   "text": "{npc.name}从驼包里掏出半个哈密瓜和一册泛黄的线装本，往你怀里一塞：先吃瓜，再看书。"
+  },
+  {
+   "id": "hook_suya_hidden_drive",
+   "kind": "observe",
+   "location_ids": [
+    "loc_cave_96_giant_buddha_chamber"
+   ],
+   "slot": "photographer_su_ya",
+   "text": "首席摄影师{npc.name}站在多光谱扫描终端前，趁策展人接电话转身的间隙，飞快地把一块银色加密硬盘藏进了自己的袖套。"
+  },
+  {
+   "id": "hook_suya_curtain_call",
+   "kind": "approach",
+   "location_ids": [
+    "loc_cave_96_giant_buddha_chamber"
+   ],
+   "slot": "photographer_su_ya",
+   "text": "{npc.name}在遮光幕布下冲你勾勾手指，让你过来看红外底片一寸寸浮出来。"
+  },
+  {
+   "id": "hook_lin_tea_under_cup",
+   "kind": "approach",
+   "location_ids": [
+    "loc_ninth_floor_observation_dormer"
+   ],
+   "slot": "curator_lin_shu",
+   "text": "{npc.name}在顶层观景廊边替你斟了一杯热茶，把一份意向书轻轻压在茶盏底下。"
+  },
+  {
+   "id": "hook_lin_room_number",
+   "kind": "approach",
+   "location_ids": [
+    "loc_ninth_floor_observation_dormer"
+   ],
+   "slot": "curator_lin_shu",
+   "text": "{npc.name}用钢笔在策展画册扉页写下一个房号，合上画册，推到你面前。"
+  },
+  {
+   "id": "hook_shen_apricot_jug",
+   "kind": "approach",
+   "location_ids": [
+    "loc_ninth_floor_observation_dormer"
+   ],
+   "slot": "engineer_shen_tianyu",
+   "text": "{npc.name}抱着微震监测仪从崖顶下来，一身黄沙，冲你扬了扬手里那壶杏皮水。"
+  },
+  {
+   "id": "hook_shen_waiver_form",
+   "kind": "request",
+   "location_ids": [
+    "loc_cave_96_giant_buddha_chamber"
+   ],
+   "slot": "engineer_shen_tianyu",
+   "text": "{npc.name}把一张填了“放弃”的访学申请表折成小块按在你掌心，说这事先别让任何人知道。"
+  },
+  {
+   "id": "hook_xiaotang_doorway",
+   "kind": "approach",
+   "location_ids": [
+    "loc_fresco_pigment_studio"
+   ],
+   "slot": "assistant_fresco_restorer_xiao_tang",
+   "text": "{npc.name}抱着微环境记录本缩在颜料室门口，见四下没人，踮起脚凑过来小声叫住你。"
+  },
+  {
+   "id": "hook_xiaotang_apricots",
+   "kind": "approach",
+   "location_ids": [
+    "loc_fresco_pigment_studio"
+   ],
+   "slot": "assistant_fresco_restorer_xiao_tang",
+   "text": "{npc.name}往你手心里倒了一把手剥杏干，红着脸说今晚要是有事，{npc.ta}陪你守着。"
   }
  ],
  "id": "dunhuang_fresco_cave_sandstorm",
  "locations": [
   {
    "affordances": [
-    "抓牢立杆安全绳锁扣稳住下盘抗衡风阻",
-    "拔出钛合金平铲刀卡入螺母凹槽",
-    "合力推开卡死在佛耳处的变形钢管"
+    "冷光灯下的飞天线稿",
+    "大佛背后的背光耳洞",
+    "一台刚跑完的多光谱扫描仪"
    ],
-   "detail": "莫高窟标志性依山开凿的通顶巨大石窟，三十三米高弥勒大佛依崖巍然而立，整座大窟内搭设着高达八层的扣件式重型钢管脚手架。此时外侧黑沙暴卷着怒嚎狂风从被撕裂的防风棚缝隙灌入，漫天昏黄沙尘激荡，脚手架整体侧倾，一根四米长横向承重钢管死死卡在大佛佛耳凹槽死角，锁闭了通往下层的唯一悬梯。",
+   "detail": "三十米高的大佛膝前搭着修缮平台，冷光灯照着盛唐飞天斑驳的衣袂，画案上摊着线稿，大佛背后有一处背光耳洞。",
    "exits": [
     "loc_ninth_floor_observation_dormer",
-    "loc_flooded_sand_gate_vestibule"
+    "loc_sand_gate_inner_corridor"
    ],
    "id": "loc_cave_96_giant_buddha_chamber",
-   "name": "大佛窟脚手架",
-   "pressure_modifiers": {
-    "p_sandstorm_inundation_seals_doors": "流沙以每分钟数吨顺着前室倒灌，底层木门已被沙山彻底顶死埋没。",
-    "p_scaffold_frame_torsional_collapse": "钢管脚手架受风压冲击发生两度扭转侧倾，斜支撑立杆承重逼近失稳压屈临界。"
-   },
+   "name": "第96窟大佛膝前修缮平台",
+   "pressure_modifiers": {},
    "privacy": "semi",
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "visibility": "dim",
+   "visibility": "灯只照得见画案一圈，木梯上来的人要走到平台边才看得清。",
    "witnesses": [
-    "bg_veteran_rigger_old_ma"
+    "bg_night_patrol"
    ]
   },
   {
    "affordances": [
-    "发射红色高空求救频闪信号弹",
-    "放下备用攀登软梯接应下层",
-    "观察沙暴过境峰值气压变化"
+    "檐角叮当的铁马",
+    "一壶冰凉的杏皮水",
+    "压在茶盏下的意向书"
    ],
-   "detail": "大佛头顶上方九层楼木构飞檐顶层的采光天窗平台，窗外狂暴的黑风暴将漫天黄沙裹挟成遮天蔽日的沙墙，木质窗棂在十级大风中剧烈颤动，隐约可见大泉河谷对面三危山的朦胧轮廓。",
+   "detail": "九层楼最高一层的檐廊，檐角挂着铁马，能望见整片鸣沙山；借展团常在这里喝茶谈事，院里的人也爱上来透气。",
    "exits": [
-    "loc_cave_96_giant_buddha_chamber",
-    "loc_flooded_sand_gate_vestibule",
-    "loc_staff_dormitory_room"
+    "loc_cave_96_giant_buddha_chamber"
    ],
    "id": "loc_ninth_floor_observation_dormer",
-   "name": "九层楼天窗",
-   "pressure_modifiers": {
-    "p_gale_gust_tearing_wind_screens": "气流倒灌在窟顶形成强力旋涡负压，随时可能吸翻顶层作业跳板坠落。"
-   },
+   "name": "九层楼顶层飞檐观景廊",
+   "pressure_modifiers": {},
    "privacy": "public",
    "tags": [
-    "workplace",
-    "crime"
+    "workplace"
    ],
-   "visibility": "clear",
+   "visibility": "四面敞开，院里抬头就看得见廊下的人影。",
    "witnesses": [
-    "bg_safety_director_zhao",
-    "bg_sand_captain_liu"
+    "bg_foreign_affairs_clerk"
    ]
   },
   {
    "affordances": [
-    "操作防沙翻板闸门减缓流沙涌入速度",
-    "搜寻被沙埋没的应急破拆铁镐",
-    "向外侧铲车敲击铁管传递摩斯密码"
+    "落栓的防沙重门",
+    "一盏昏黄的应急灯",
+    "墙根堆着的防尘毯"
    ],
-   "detail": "九层楼建筑一楼正门回廊，此时厚达两米五的黄沙已经如金色泥石流般完全封堵了正门，沙堆正顺着防沙栅栏缝隙持续向内溢流，退向室外的陆地通道彻底死绝。",
+   "detail": "九层楼底层厚重的防沙门里面一条窄回廊，墙上挂着应急灯，门一落栓就自成一间密室，侧门通向外院的颜料研磨室。",
    "exits": [
     "loc_cave_96_giant_buddha_chamber",
-    "loc_ninth_floor_observation_dormer"
+    "loc_fresco_pigment_studio"
    ],
-   "id": "loc_flooded_sand_gate_vestibule",
-   "name": "底层流沙回廊",
-   "pressure_modifiers": {
-    "p_cave_air_suffocation_threat": "底层门窗全闭导致三十米窟内空气含氧量急剧滑落，沙尘粉末令人剧烈呛咳窒息。"
-   },
-   "privacy": "private",
-   "tags": [
-    "workplace_power",
-    "disaster"
-   ],
-   "visibility": "dark",
-   "witnesses": [
-    "bg_fresco_restorer_assistant_xiao_tang"
-   ]
-  },
-  {
-   "affordances": [
-    "替修复师拍掉头发里的黄沙",
-    "陪修复师在窗边看月牙泉方向",
-    "放下宿舍的门帘"
-   ],
-   "detail": "研究院职工宿舍区的一间平房，一张铺着艾德莱斯绸床单的单人床、一张堆满颜料样本和临摹稿的书桌、窗台上一盆沙枣花，门外就是鸣沙山的沙脊。",
-   "exits": [
-    "loc_ninth_floor_observation_dormer"
-   ],
-   "id": "loc_staff_dormitory_room",
-   "name": "九层楼下的修复师宿舍",
+   "id": "loc_sand_gate_inner_corridor",
+   "name": "底层防沙重门内回廊",
    "pressure_modifiers": {},
    "privacy": "private",
    "tags": [
     "intimate"
    ],
-   "visibility": "门帘一放，院里的风沙声就隔成了沙沙的一层，只剩台灯的一圈暖光。",
+   "visibility": "落栓后外面的人进不来，只有应急灯一圈昏黄。",
+   "witnesses": []
+  },
+  {
+   "affordances": [
+    "只隔一堵的薄墙",
+    "咕嘟作响的小电锅",
+    "画筒里卷着的临摹稿"
+   ],
+   "detail": "九层楼下一排平房里的一间单人宿舍，一张床、一张画案、一只小电锅，和隔壁只隔一堵薄墙，窗外是戈壁的夜。",
+   "exits": [
+    "loc_fresco_pigment_studio"
+   ],
+   "id": "loc_staff_dormitory_room",
+   "name": "九层楼下的修复师单人宿舍",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "窗帘一拉，院里只看得见一点灯光。",
+   "witnesses": [
+    "bg_dorm_elder"
+   ]
+  },
+  {
+   "affordances": [
+    "玛瑙研钵",
+    "青金石与朱砂的粉末",
+    "一盏不熄的小台灯"
+   ],
+   "detail": "外院一间小研磨室，架上排着青金石、朱砂和石绿，案上一只玛瑙研钵，闭窟后常有人在这里留一盏小灯。",
+   "exits": [
+    "loc_sand_gate_inner_corridor",
+    "loc_staff_dormitory_room"
+   ],
+   "id": "loc_fresco_pigment_studio",
+   "name": "石窟外院矿物颜料研磨室",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "小窗朝着空院，夜里只有一盏台灯亮着。",
    "witnesses": []
   }
  ],
@@ -1679,604 +1818,601 @@
   ],
   "order": "family_first"
  },
- "notes": "按原稿加入，保留莫高窟第96窟九层楼通顶大佛阁、黑沙暴倒灌封门、三十米脚手架侧倾卡死、修复师用钛合金平铲刀柄卡槽当扳手拧螺栓的骨架与大漠味道。用户已放开内容限制，只守红线；原稿的外貌描写照留，只改写死的人名、代词、年龄分布这类技术项。开局写修复师在洞窟里一笔一笔补盛唐的颜色，岩土工程师在崖顶打锚杆，两人在九层楼下的职工宿舍区隔壁住了两年；新增修复师的宿舍与四个亲密日常。",
+ "notes": "按原稿加入，保留莫高窟第96窟九层楼通顶大佛阁、黑沙暴倒灌封门、三十米脚手架侧倾卡死、修复师用钛合金平铲刀柄卡槽当扳手拧螺栓的骨架与大漠味道。用户已放开内容限制，只守红线；原稿的外貌描写照留，只改写死的人名、代词、年龄分布这类技术项。开局写修复师在洞窟里一笔一笔补盛唐的颜色，岩土工程师在崖顶打锚杆，两人在九层楼下的职工宿舍区隔壁住了两年；新增修复师的宿舍与四个亲密日常。\n2026-10-24 按写作规则 v2 与 Gemini 创意卡改造：删掉平铲拧螺栓和脚手架解体，改成沙尘季封窟前的一夜，围绕北京调令去留和第96窟底稿会不会外流。",
  "player_identities": [
   {
    "age_range": [
-    25,
-    30
+    26,
+    34
    ],
-   "baseline": "负责莫高窟崖壁防沙固沙、九层楼大佛阁高空脚手架搭设与受力监测的青年工学硕士。",
+   "baseline": "你在九层楼下的职工宿舍住了两年，隔壁是一位壁画修复师；你管洞内温湿度、脚手架和防沙门的日常巡检，两间宿舍的钥匙常年混放。",
    "gender": "any",
-   "id": "pi_dunhuang_cave_geotechnical_engineer",
-   "reputation": "脚踏实地胆大心细，对第96窟全高三十三米钢管构架受力公差了如指掌。",
+   "id": "pi_cave_environment_engineer",
+   "reputation": "院里最熟悉每一层木梯的工程师。",
    "resources": [
-    "一柄特制多功能防爆磁吸激光测距仪",
-    "一套石窟高空作业全身防坠落双钩安全带"
+    "洞内温湿度巡检记录",
+    "防沙门和脚手架的巡检权"
    ],
    "risks": [
-    "直接暴露在沙暴狂风灌入的高空受剧烈失温侵袭",
-    "重型钢管回弹砸伤小腿骨折"
+    "巡检出一回岔子，特窟验收就要卡在你名下。"
    ],
-   "role": "莫高窟崖体加固与石窟工程青年工程师",
+   "role": "驻窟洞窟环境工程师",
    "social_position": "equal",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}工程师"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
-     "pattern": "{given}工"
+     "pattern": "{given}"
     }
    ]
   },
   {
    "age_range": [
-    38,
+    36,
     48
    ],
-   "baseline": "手握莫高窟全区防汛防沙机械铲车与应急救援人员调动权的高级安全主管。",
+   "baseline": "你统管第96窟的封窟修缮验收、海外联合策展审批和驻院人员的人事调派，今晚的验收单最后要你签字。",
    "gender": "any",
    "id": "pi_dunhuang_academy_safety_director",
-   "reputation": "雷厉风行铁面无私，极度恐慌国宝级造像发生任何擦伤或坍塌重大责任。",
+   "reputation": "院里说话最有分量的处长之一。",
    "resources": [
-    "一部军品级超短波中继防爆对讲电台",
-    "一份第96窟大佛阁内部逃生隐蔽通道结构红图"
+    "封窟验收单的签字权",
+    "驻院人员人事调派"
    ],
    "risks": [
-    "被窟底数十吨积沙阻隔无法亲率队员进入底层大厅",
-    "盲目破拆可能危及造像安全"
+    "海外借展一黄，院里和上面的压力都落在你身上。"
    ],
-   "role": "敦煌研究院保卫处特派应急抢险指挥长",
+   "role": "特窟保护与外事督导处长",
    "social_position": "high",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}处长"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
-     "pattern": "{given}队长"
+     "pattern": "{given}"
     }
    ]
   },
   {
    "age_range": [
-    32,
-    42
+    34,
+    46
    ],
-   "baseline": "驾驶大马力装载机在黑风暴中开辟生命通道、清除堵门沙丘的荒漠老将。",
+   "baseline": "你是上级派驻敦煌的首席监理，特窟数字化专项经费的拨付和海外借展数据出境的安全审查，都要过你这一关。",
    "gender": "any",
-   "id": "pi_sand_control_forestry_rescue_captain",
-   "reputation": "常年与风沙搏斗性格坚毅，曾多次在库木塔格沙漠中营救迷途考察队。",
+   "id": "pi_heritage_fund_supervisor",
+   "reputation": "铁面、谁都绕不过去的监理。",
    "resources": [
-    "一台大型柴油轮式装载铲车",
-    "两副大口径全防尘正压防毒防沙面罩"
+    "专项经费拨付权",
+    "数据出境一票否决权"
    ],
    "risks": [
-    "铲车铲斗被倒灌流沙深埋履带打滑熄火",
-    "特大沙暴零能见度下误撞古建飞檐"
+    "否决一出，二期经费和海外赞助一起断，你就成了众矢之的。"
    ],
-   "role": "鸣沙山防沙固沙林场重型机械抢险队长",
+   "role": "特窟专项经费监理代表",
    "social_position": "high",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}队长"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
-     "pattern": "{given}队长"
+     "pattern": "{given}"
     }
    ]
   },
   {
    "age_range": [
-    48,
-    56
+    22,
+    30
    ],
-   "baseline": "在莫高窟石窟搭了三十年保护维修脚手架的老工匠，闭着眼睛都能摸准每个直角扣件的松紧扣。",
+   "baseline": "你常年守着九层楼检票口和夜班门禁，管着各层木楼梯的锁具和夜间应急照明，闭窟后最后一个锁门的人就是你。",
    "gender": "any",
-   "id": "pi_dunhuang_veteran_scaffold_rigger",
-   "reputation": "手艺绝伦沉稳厚道，亲手搭设过数十个特大洞窟的飞天修复支架。",
+   "id": "pi_night_cave_warden",
+   "reputation": "人人都托你留一盏灯的值宿员。",
    "resources": [
-    "一把磨损锃亮的开字形架子工专用棘轮扳手",
-    "一袋特制防滑高纯度白云石滑石粉"
+    "各层木楼梯的钥匙",
+    "夜间应急照明的开关"
    ],
    "risks": [
-    "严重腰椎劳损在二十米高空剧烈发作行动受阻",
-    "高度老花在浑浊沙尘中视物昏花"
+    "门禁出一回事，你这份工作第一个保不住。"
    ],
-   "role": "莫高窟文保修缮特级架子工老领班",
+   "role": "石窟看护所夜班值宿员",
    "social_position": "low",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}师傅"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
-     "pattern": "{given}老将"
+     "pattern": "{given}"
     }
    ]
   }
  ],
- "premise": "莫高窟九层楼下的职工宿舍区，壁画修复师和岩土工程师隔壁住了两年：一个整天蹲在洞窟里，一笔一笔补盛唐的颜色，一个整天吊在崖顶，打锚杆、灌浆、量裂缝。鸣沙山每年春天都刮黑沙暴，第96窟的防沙重门是老物件，加固用的通顶脚手架已经搭了半年。",
+ "premise": "莫高窟九层楼下的职工宿舍区，壁画修复师和驻窟工程师隔壁住了两年：一个日夜待在洞窟脚手架上，一笔一笔为盛唐壁画做加固与临摹；一个常年巡看洞内温湿度和防沙门。四月鸣沙山风沙渐起，第96窟正做封窟前最后一次夜间高精数字化扫描，海外借展团的策展人这周也住进了院里。",
  "pressures": [
   {
-   "choice": "等待外侧铲车彻底挖通正门，还是修复师与工程师合力在高空用钛铲卸架自救。",
+   "choice": "是保住国宝，还是保住摄影师。",
    "exits": [
     {
-     "cost": "钛合金平铲刀柄卡槽留下应力压痕，两人掌心被金属毛刺勒破流血。",
-     "option": "两人将纯钛合金平铲刀卡槽套死扣件螺栓合力下扳拧松扣件推管脱险。"
+     "cost": "策展人撤回赞助，二期经费断流，手术费也没了着落。",
+     "option": "劝摄影师退回定金，当场拔掉导出网线"
     },
     {
-     "cost": "猛烈反震导致工程师右臂腕部韧带挫伤。",
-     "option": "工程师抡起铁锤猛砸立杆底座借震动松开扣件咬合面自救。"
+     "cost": "对方验出数据层级不对，会在国际文保界指责研究院违约。",
+     "option": "把公开发表过的普通高清图拷进硬盘应付策展人"
+    },
+    {
+     "cost": "摄影师被调离数字化采集核心组，丢了首席的资格。",
+     "option": "让摄影师向修复师坦白，封存硬盘"
     }
    ],
    "far": {
-    "consequence": "大佛阁化为巨大流沙古墓，被困高空的壁画修复人员全员缺氧窒息殉难。",
-    "due_days": 1,
-    "trigger": "黑风暴流沙彻底注满底层大厅并压塌通顶木阁"
+    "consequence": "原档流到海外拍卖行。",
+    "due_days": 30,
+    "trigger": "后门一直没堵上"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [],
-   "id": "p_sandstorm_inundation_seals_doors",
+   "id": "p_scanner_backdoor",
    "immediate": {
-    "minutes": 6,
-    "text": "窟底传来如千军万马奔腾般的沉闷流沙撞击声，黄色尘浪从缝隙疯狂倒灌，浓烈刺鼻的泥土气味迅速充斥整座大佛阁。"
+    "minutes": 10,
+    "text": "策展人把手机放在画案上，转账语音播到一半停住。"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{curator_lin_shu.name}手里有{photographer_su_ya.name}签字的私人数据顾问定金收据和一段电话录音。",
+    "holder": "curator_lin_shu",
+    "subject": "photographer_su_ya"
+   },
    "location_ids": [
     "loc_cave_96_giant_buddha_chamber"
    ],
    "near": {
-    "deadline_minutes": 9,
-    "text": "前室已被两层楼高的流沙完全注满，回声在三十米穹顶下剧烈衰减，空气浑浊不堪，胸口憋闷如同压着重石。"
+    "deadline_minutes": 60,
+    "text": "最后一帧扫完，后门就能拷走整份原档。"
    },
-   "objective": "在氧气耗尽前拧开高空扣件移开钢管顺着天窗步梯撤离。",
-   "source": "nature",
-   "start_minute": 960,
+   "objective": "封窟前把这道后门和这笔定金了结。",
+   "source": "person",
+   "start_minute": null,
    "tags": [
-    "disaster",
     "workplace"
    ],
-   "title": "鸣沙山特大黑沙暴倒灌封死底层前室大门",
-   "trigger": "黑风暴将大泉河谷数千吨黄沙以每分钟数十吨狂卷涌入第96窟底层，两米五厚坚固防沙木门被流沙自外向内死死封堵埋没，底层步道彻底断绝，大佛阁沦为封闭沙井，距离窟内空气稀薄仅剩最后四分钟。"
+   "title": "留了后门的采集硬盘",
+   "trigger": "{photographer_su_ya.name}为凑母亲的手术费收了{curator_lin_shu.name}十万定金，在扫描终端留了未加密的导出端口；对方录下了转账语音，催摄影师今晚交货。"
   },
   {
-   "choice": "留在原地等待风暴自然减弱，还是两人冒险踩上悬挑架发力拆卸。",
+   "choice": "让工程师说清，延期上报，还是今晚就签。",
    "exits": [
     {
-     "cost": "工程师后背被粗糙钢管生锈毛刺划出一道血口。",
-     "option": "工程师用宽阔肩膀顶住斜管修复师全神贯注以钛铲扳下螺母卸荷自救。"
+     "cost": "工程师多年的暗恋和越权阻拦一起曝光，同僚之间从此尴尬。",
+     "option": "请崖顶监测工程师把通话记录的原委当面说清"
     },
     {
-     "cost": "大绳受强力拉伸崩断两股纤维。",
-     "option": "老马头用防坠大绳绑住立管合力拉拽分担剪应力脱险。"
+     "cost": "总院保留的编制直接顺延给竞争对手。",
+     "option": "帮修复师把调令回执延到沙尘季结束再报"
+    },
+    {
+     "cost": "见习研究员当场崩溃，九层楼往后三年的修复没人领衔。",
+     "option": "劝修复师今晚就签下调令，你陪着做完最后一窟交接"
     }
    ],
    "far": {
-    "consequence": "数吨重钢管巨构轰然从三十米高空坠落砸毁大佛，悬挂其上的抢险人员粉身碎骨。",
-    "due_days": 1,
-    "trigger": "通顶脚手架发生多跨连锁屈曲粉碎性坍塌"
+    "consequence": "学科带头人的编制顺延给别人，修复师再没有第二次机会。",
+    "due_days": 14,
+    "trigger": "回执拖过期限"
    },
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
-   "id": "p_scaffold_frame_torsional_collapse",
+   "hook_ids": [
+    "hook_gu_unopened_letter",
+    "hook_gu_wristband",
+    "hook_gu_sand_lashes"
+   ],
+   "id": "p_hidden_transfer_waiver",
    "immediate": {
-    "minutes": 5,
-    "text": "高达三十米的庞大钢管丛林发出令人牙酸的嘎吱嘎吱扭曲声，佛头平台脚手板剧烈晃动，安全防护网绳根根紧绷颤动。"
+    "minutes": 10,
+    "text": "档案盒摊在研磨室的案上，调令信封还封着口。"
    },
    "leverage": null,
    "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
+    "loc_fresco_pigment_studio"
    ],
    "near": {
-    "deadline_minutes": 8,
-    "text": "立杆弯曲弧度扩大到五公分，扣件受剪力严重变形，一根横管已斜斜插进佛耳后方三公分，若再发生晃动将直接刮碎盛唐壁画。"
+    "deadline_minutes": 180,
+    "text": "总院再来一通电话，就当作本人放弃。"
    },
-   "objective": "卸下卡死在佛耳处的承重钢管恢复架构应力平衡。",
-   "source": "accident",
-   "start_minute": 962,
+   "objective": "在调令回执期限前，把这件事说开。",
+   "source": "institution",
+   "start_minute": null,
    "tags": [
-    "disaster",
     "workplace"
    ],
-   "title": "通顶三十米钢管脚手架受风压扭曲侧倾",
-   "trigger": "外层防风遮阳棚被十级大风撕裂，倒灌气流在佛阁内形成巨大气流剪切风阻，整座通顶脚手架向佛耳岩缝发生两度危险扭转侧倾，主立杆承受极限偏心轴力即将发生失稳暴弯。"
+   "title": "压着的调令与弃权表",
+   "trigger": "见习研究员整理档案盒时，同时翻出了修复师压着没报的北京调令，和崖顶监测工程师私自替修复师回绝总院催促电话的通话记录。"
   },
   {
-   "choice": "盲目加大蛮力赌一把，还是先由修复师用铲尖挑平防退垫片再顺牙借力。",
+   "choice": "躲进暗处，还是迎下去。",
    "exits": [
     {
-     "cost": "平铲刀柄卡槽边缘留下细微疲劳应力微纹。",
-     "option": "修复师与工程师四手叠握将钛合金平铲刀柄卡槽猛压到底反向挫开螺栓脱险。"
+     "cost": "画案上的北京调令信封被策展人的手电扫个正着。",
+     "option": "吹灭射灯，拉修复师退进大佛背后的背光耳洞屏住气"
     },
     {
-     "cost": "扳手头部棘轮机构崩碎报废。",
-     "option": "老工匠用棘轮扳手强行硬撬震松卡销脱险。"
+     "cost": "外事处借机要求全员撤窟，最后一块空鼓壁画今晚封护不完。",
+     "option": "你独自迎下去，把来人引到顶层去看风速记录"
+    },
+    {
+     "cost": "黑暗里修复师夹底稿的铜书签掉在平台木板上，被人捡个正着。",
+     "option": "让修复师带着底稿从窄梯先上顶层观景廊"
     }
    ],
    "far": {
-    "consequence": "步梯钢管焊死在通道上无法移开，逃生路径彻底断绝溺死沙尘。",
-    "due_days": 1,
-    "trigger": "直角扣件螺栓彻底咬死无法拆解"
+    "consequence": "调令和底稿的事一起摆上院务会。",
+    "due_days": 10,
+    "trigger": "画案上的东西被看见"
    },
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
-   "id": "p_coupler_t_bolt_galling_jam",
-   "immediate": {
-    "minutes": 4,
-    "text": "扣件螺母周围渗出金属碎末，T型螺栓头在铸铁盖板卡槽内被挤歪，整套扣件紧密贴合如焊死死球。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
+   "hook_ids": [
+    "hook_gu_unopened_letter",
+    "hook_gu_wristband",
+    "hook_gu_sand_lashes"
    ],
-   "near": {
-    "deadline_minutes": 7,
-    "text": "螺母边角已被磨损变圆，若再发生一次打滑脱扣，螺母将彻底滑丝无法受力。"
-   },
-   "objective": "在螺纹发生塑性剪断前用钛铲厚柄反向猛力扳松螺母。",
-   "source": "accident",
-   "start_minute": 964,
-   "tags": [
-    "disaster",
-    "workplace"
-   ],
-   "title": "直角扣件T型螺栓受偏心剪力咬死牙槽",
-   "trigger": "横向钢管被大佛岩壁死死顶住，数百公斤杠杆推力使得直角扣件螺栓与螺母接触面发生严重的金属冷焊咬死，普通工具根本无法撼动分毫。"
-  },
-  {
-   "choice": "退守在避风石龛减少耗氧，还是全员集中于高空步梯分秒必争撬锁推管。",
-   "exits": [
-    {
-     "cost": "工程师因吸入过量石英微尘气管剧烈受损干咳咯血数日。",
-     "option": "工程师用湿润的防尘口罩捂住修复师口鼻两人憋足最后一口气扳开螺栓自救。"
-    },
-    {
-     "cost": "消耗尽随身备用急救纯净水。",
-     "option": "小唐敲碎一瓶蒸馏水洒在衣襟上过滤空气维持意识脱险。"
-    }
-   ],
-   "far": {
-    "consequence": "人员在二十米高空跳板上晕厥坠落，落入沙海窒息死亡。",
-    "due_days": 1,
-    "trigger": "封闭石窟内极度缺氧与尘肺引发全员急性昏迷休克"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_cave_air_suffocation_threat",
-   "immediate": {
-    "minutes": 4,
-    "text": "黄色尘雾浓如棉絮，呼吸道如同被火灼烧般剧烈咳嗽，护目镜上覆满细沙，修复师两腮泛起因缺氧导致的高热艳红。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_flooded_sand_gate_vestibule"
-   ],
-   "near": {
-    "deadline_minutes": 7,
-    "text": "肺部针扎般剧痛，四肢动作因缺氧开始沉重麻木，小唐已瘫软在脚手板上几乎无法自主抓握。"
-   },
-   "objective": "打开顶层检修天窗呼吸新鲜气流并撤离。",
-   "source": "nature",
-   "start_minute": 966,
-   "tags": [
-    "disaster",
-    "workplace"
-   ],
-   "title": "莫高窟密闭石窟沙尘弥漫致高空急性窒息",
-   "trigger": "底层沙门堵死导致外界新鲜空气完全断绝，窟内弥漫着高浓度微细矿物粉尘与石灰，空气含氧量骤降，二十米高空作业人员开始剧烈呛咳视线模糊。"
-  },
-  {
-   "choice": "关闭天窗内侧木插销避风，还是冒着狂风将身体探出固定软梯。",
-   "exits": [
-    {
-     "cost": "赵处长右肩被飞石击伤大片青紫淤血。",
-     "option": "赵处长用全身重量死死压住天窗主梁投下高强度锦纶软梯接应脱险。"
-    },
-    {
-     "cost": "钢丝绳受极限制扭曲变形报废。",
-     "option": "用钢丝绳绑死木檩条阻断二次撕裂自救。"
-    }
-   ],
-   "far": {
-    "consequence": "高空逃生出口彻底崩塌，下落巨木砸塌整座脚手架全员殉难。",
-    "due_days": 1,
-    "trigger": "顶层天窗木结构被狂风彻底掀垮扯碎"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_gale_gust_tearing_wind_screens",
+   "id": "p_stair_flashlight",
    "immediate": {
     "minutes": 3,
-    "text": "狂风如鬼哭狼嚎般在佛头上方呼啸旋转，瓦当碎木横飞，大厅内气压瞬间剧降，人的耳膜鼓胀剧痛。"
+    "text": "手电光在平台边沿晃了一下。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_cave_96_giant_buddha_chamber"
+   ],
+   "near": {
+    "deadline_minutes": 20,
+    "text": "来人再上两级，就到画案前了。"
+   },
+   "objective": "不让来人看见画案上的东西。",
+   "source": "person",
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "木梯上的巡夜手电",
+   "trigger": "闭窟后{player.name}和修复师在大佛膝前并肩看最后一幅飞天底稿，下层木梯传来外事处巡夜员和策展人一级级上来的脚步声，手电光扫上了平台。"
+  },
+  {
+   "choice": "公证、澄清，还是关起门不理。",
+   "exits": [
+    {
+     "cost": "修复师筹备五年的专著，失去独家首配图权。",
+     "option": "把修复师三年来手绘的矿物色卡原件当众入库公证"
+    },
+    {
+     "cost": "修复师原本想瞒到封窟结束的离别消息，瞬间传遍全院。",
+     "option": "在院务群里澄清调令是北京总院的正常借调"
+    },
+    {
+     "cost": "院领导听信传闻，暂停了修复师今晚进第96窟核心区的门禁。",
+     "option": "不理流言，关起宿舍门陪修复师安静收拾画具"
+    }
+   ],
+   "far": {
+    "consequence": "修复师被暂停进入特窟的资格，查清之前不许入窟。",
+    "due_days": 7,
+    "trigger": "流言传到院领导耳朵里"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_gu_unopened_letter",
+    "hook_gu_wristband",
+    "hook_gu_sand_lashes"
+   ],
+   "id": "p_dorm_defection_rumor",
+   "immediate": {
+    "minutes": 10,
+    "text": "走廊里的议论声隔着薄墙都听得见。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_staff_dormitory_room"
+   ],
+   "near": {
+    "deadline_minutes": 60,
+    "text": "院务群里有人开始转发。"
+   },
+   "objective": "在流言传到院领导那里之前压住。",
+   "source": "rumor",
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "宿舍区的跳槽风言风语",
+   "trigger": "院里不知谁传出修复师要跟海外策展人去瑞士办展、带走第96窟独家色卡跳槽的流言，几位老文保员在宿舍区走廊议论纷纷。"
+  },
+  {
+   "choice": "保署名，还是保经费。",
+   "exits": [
+    {
+     "cost": "九层楼的恒温改造搁置，夏天雨季壁画还得靠人工除湿。",
+     "option": "拒绝让渡署名，保住修复师和课题组五年的心血"
+    },
+    {
+     "cost": "修复师从唯一第一作者降为共同通讯，评优资格受挫。",
+     "option": "签联合署名的折中方案，写明不得带走未压缩的原始数据"
+    },
+    {
+     "cost": "这个月里你得陪策展人深入戈壁复勘散落的遗迹。",
+     "option": "请守泉向导拿祖传杂记里的新线索，跟策展人另签一份外围合作"
+    }
+   ],
+   "far": {
+    "consequence": "课题组五年的心血写在别人名下，往后每一篇论文都要引对方。",
+    "due_days": 30,
+    "trigger": "署名让了出去"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_credit_for_sponsorship",
+   "immediate": {
+    "minutes": 15,
+    "text": "协议摊在檐廊茶桌上，策展人等着回话。"
    },
    "leverage": null,
    "location_ids": [
     "loc_ninth_floor_observation_dormer"
    ],
    "near": {
-    "deadline_minutes": 5,
-    "text": "天窗两根支撑木檩条发生断裂，狂暴沙石如子弹般砸在跳板上，顶层逃生通道随时面临坍塌截断。"
+    "deadline_minutes": 240,
+    "text": "不回复就视为拒绝，赞助转给别的石窟。"
    },
-   "objective": "在天窗解体前将软梯固定在主梁上完成人员交接。",
-   "source": "nature",
-   "start_minute": 968,
+   "objective": "在协议回复期限前定下署名的归属。",
+   "source": "money",
+   "start_minute": null,
    "tags": [
-    "disaster",
     "workplace"
    ],
-   "title": "十二级阵风掀翻九层楼顶层透光天窗",
-   "trigger": "黑风暴阵风风速突破每秒三十米，顶层天窗木质百叶窗被狂风连根拔起吹飞，狂暴风柱直接倒灌吹入大佛头顶，顶层跳板濒临被整体吸入河谷深渊。"
+   "title": "首发署名与三百万赞助",
+   "trigger": "海外借展方发来最终协议：研究院把第96窟盛唐底层复原图的首发学术署名让给策展团队，三百万恒温除湿改造款就即刻到账。"
   },
   {
-   "choice": "继续加大蛮力赌一把，还是收回半寸微调受力轴向巧力挫开螺牙。",
+   "choice": "谁留在窟里，谁先走。",
    "exits": [
     {
-     "cost": "钛合金平铲柄端留下永久性轻度弧形弯曲伤痕。",
-     "option": "修复师与工程师依老工匠口诀朝左下逆牙反挫一记震开螺栓自救。"
+     "cost": "窟里微尘悬浮、空气发闷，众人只能在回廊静坐省力熬过长夜。",
+     "option": "落栓封门、关停新风，和窟里的同伴留守到风过"
     },
     {
-     "cost": "高精度测距仪外壳被压扁仪器报废。",
-     "option": "垫入激光测距仪铝合金外壳分担剪应力完成撬动脱险。"
+     "cost": "你得一个人留在九层楼里，守着设备和壁画。",
+     "option": "趁侧门还没堵死，请守泉向导开越野车先送修复组的人回宿舍"
+    },
+    {
+     "cost": "耳室只容得下两三人，你得定下谁跟你进去、谁留在回廊。",
+     "option": "转进中层背风的木构耳室暂避"
     }
    ],
    "far": {
-    "consequence": "唯一救命高硬度扳手工具化为乌有，死锁钢管无法移开全员葬身佛窟。",
-    "due_days": 1,
-    "trigger": "钛合金平铲刀彻底断为两截解体"
+    "consequence": "积沙堵死侧门，窟里的人要等外面挖通才出得去。",
+    "due_days": 3,
+    "trigger": "风沙过后"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [],
-   "id": "p_titanium_spatula_bending_strain_limit",
-   "immediate": {
-    "minutes": 3,
-    "text": "钛合金刀柄处传来金属细微的紧绷哀鸣，四毫米厚钛板在两人重压下出现两毫米肉眼可见的弹性形变弧度，火星在螺母缝中激溅。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_cave_96_giant_buddha_chamber"
-   ],
-   "near": {
-    "deadline_minutes": 5,
-    "text": "卡槽边缘出现微小白亮金属应力疲劳白痕，若再发生一次盲目硬别，这柄国宝修复神铲将发生塑性断裂彻底报废。"
-   },
-   "objective": "依老工匠指点剔除垫片后再行下压一鼓作气旋脱螺母。",
-   "source": "accident",
-   "start_minute": 970,
-   "tags": [
-    "disaster",
-    "workplace"
-   ],
-   "title": "纯钛合金平铲刀在猛烈反扳中濒临屈服断裂",
-   "trigger": "T型螺栓极为坚硬，两人施加的全身反向力矩使得这柄四毫米厚特制钛合金平铲承受了超过七百兆帕的极限抗弯剪切力，钛合金刀身发出尖锐微鸣濒临产生不可逆塑性折弯。"
-  },
-  {
-   "choice": "照实说是自己坚持进窟，还是让签字的人自己去解释",
-   "exits": [
-    {
-     "cost": "本子上那天的出窟时间一栏是空的",
-     "option": "交出原始登记本"
-    },
-    {
-     "cost": "老马头得承认那次验收是在电话里答应的",
-     "option": "请老马头作证脚手架当天验收过"
-    }
-   ],
-   "far": {
-    "consequence": "九层楼的修复项目停一季，报告上写着谁的名字，谁就离开这个洞窟",
-    "due_days": 5,
-    "trigger": "说明会定责"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "hook_qingxian_cinnabar",
-    "hook_tianyu_sand_jujube",
-    "hook_qingxian_dorm_curtain"
-   ],
-   "id": "p_incident_hearing",
-   "immediate": {
-    "minutes": 10,
-    "text": "赵处长在宿舍楼下等着，要那天的进窟登记本"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_staff_dormitory_room"
-   ],
-   "near": {
-    "deadline_minutes": 360,
-    "text": "下午三点开说明会"
-   },
-   "objective": "在说明会开始之前，把那一夜进窟的签字理清楚",
-   "source": "institution",
-   "start_minute": 540,
-   "tags": [
-    "workplace_power"
-   ],
-   "title": "事故说明会",
-   "trigger": "沙暴过去第三天，研究院贴出通知召开事故说明会，要讲清两件事：当晚是谁批准进窟，脚手架的验收单是谁签的字"
-  },
-  {
-   "choice": "带记者进窟看，还是先在宿舍里把受损记录整理好交上去",
-   "exits": [
-    {
-     "cost": "镜头会拍到脚手架上那颗还没换的扣件",
-     "option": "带记者进窟拍"
-    },
-    {
-     "cost": "白工得承认沙暴预警晚发了一个钟头",
-     "option": "请白工拿出当夜的气象记录"
-    }
-   ],
-   "far": {
-    "consequence": "第96窟闭窟三年，修复师调离一线",
-    "due_days": 5,
-    "trigger": "研究院照着传言回应"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "hook_qingxian_sunset_dune",
-    "hook_qingxian_cinnabar",
-    "hook_qingxian_night_market",
-    "hook_tianyu_sand_jujube",
-    "hook_qingxian_dorm_curtain"
-   ],
-   "id": "p_fresco_ruined_rumor",
+   "id": "p_black_sandstorm_seal",
    "immediate": {
     "minutes": 5,
-    "text": "小唐敲门，举着手机，评论已经过了两万条"
+    "text": "沙子从门缝里一缕缕往里钻。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_sand_gate_inner_corridor"
+   ],
+   "near": {
+    "deadline_minutes": 30,
+    "text": "再不落栓，沙就灌进大佛窟了。"
+   },
+   "objective": "让窟里的人和壁画都熬过这场风。",
+   "source": "nature",
+   "start_minute": null,
+   "tags": [
+    "disaster"
+   ],
+   "title": "黑沙暴合围封窟",
+   "trigger": "十级黑沙暴扑向九层楼，狂沙漫过院墙积在防沙重门外；为了不让沙尘灌进窟里，必须从里面落栓封窟、切断新风。"
+  },
+  {
+   "choice": "就地看诊，还是马上送走。",
+   "exits": [
+    {
+     "cost": "修复师得停工卧床，第96窟的收尾验收交给别人代笔。",
+     "option": "马上打院医务室的值班电话请医生来听诊雾化，再联系市医院救护车，沙暴一歇就转诊"
+    },
+    {
+     "cost": "窟里没锁的修复日志和手绘色卡暂时没人看管。",
+     "option": "用守泉向导车上的应急氧气袋先帮修复师平复喘息，背回宿舍温水擦身，再请院医上门看诊"
+    },
+    {
+     "cost": "错过了沙暴夜守在修复师身边的那段独处。",
+     "option": "请见习研究员和摄影师先护送修复师去前院医务室输液观察，你留在窟里把最后半平米封边做完"
+    }
+   ],
+   "far": {
+    "consequence": "转成肺炎，整个沙尘季都进不了窟。",
+    "due_days": 10,
+    "trigger": "病一直拖着"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_gu_unopened_letter",
+    "hook_gu_wristband",
+    "hook_gu_sand_lashes"
+   ],
+   "id": "p_pigment_dust_fever",
+   "immediate": {
+    "minutes": 5,
+    "text": "修复师扶着画案咳得直不起腰。"
    },
    "leverage": null,
    "location_ids": [
     "loc_staff_dormitory_room"
    ],
    "near": {
-    "deadline_minutes": 750,
-    "text": "明早九点，研究院要回应媒体"
+    "deadline_minutes": 60,
+    "text": "再拖下去，喘息会越来越重。"
    },
-   "objective": "在研究院明早回应媒体之前，把壁画到底伤没伤说清楚",
-   "source": "rumor",
-   "start_minute": 1230,
-   "tags": [],
-   "title": "壁画被毁的视频",
-   "trigger": "沙暴过后第二天晚上，一条短视频在网上传开：第96窟的壁画被沙暴毁了，是修复师为了赶工擅自进的窟"
+   "objective": "把修复师交到医生手里。",
+   "source": "accident",
+   "start_minute": null,
+   "tags": [
+    "bodily_harm"
+   ],
+   "title": "矿物粉尘与夜里高热",
+   "trigger": "修复师连熬三夜赶壁画，在封窟断暖的寒气和细微矿物粉尘里突然发起高烧，咳得喘不上气，靠在画案边浑身发烫。"
   }
  ],
- "region": "敦煌莫高窟第96窟九层楼三十三米通顶大佛阁与挑空钢管脚手架区",
+ "region": "莫高窟九层楼：第96窟大佛平台、顶层檐廊、防沙门回廊与职工宿舍",
  "rules": [
   {
-   "id": "r_cave_96_air_pressure_balance_rule",
-   "text": "黑沙暴窟内负压超过五十帕前必须在八分钟内撤出通顶作业架。"
+   "id": "r_scan_data_seal",
+   "text": "特窟的多光谱原始数据只能存在院内封闭机房，任何拷贝出院都要外事处和监理双签。"
   },
   {
-   "id": "r_titanium_spatula_torque_limit_rule",
-   "text": "钛合金脱盐平铲刀柄充当扳手时扭矩不得偏离螺栓轴心两毫米。"
+   "id": "r_sand_gate_bolt",
+   "text": "沙暴预警一到，底层防沙重门必须从内落栓，落栓后不到风停不许开。"
   },
   {
-   "id": "r_scaffold_right_angle_coupler_load_rule",
-   "text": "直角扣件受剪变形超过三度时必须先敲松T型螺栓副才能抽管。"
+   "id": "r_transfer_report",
+   "text": "总院调令下达后，本人要在规定期限内回执上报，逾期视同放弃。"
   },
   {
-   "id": "r_sandstorm_escape_beacon_signal_rule",
-   "text": "底层沙门封死后必须在二十米检修天窗发射频闪救生定位信号。"
+   "id": "r_no_flash_in_cave",
+   "text": "洞窟里不许用闪光和明火，夜里只准开冷光灯。"
   }
  ],
  "schema_version": 1,
  "stage_labels": {
-  "acquainted": "钛铲验力",
-  "committed": "莫高同心",
-  "familiar": "悬梯共涉",
-  "flirting": "丹青相依",
-  "intimate": "破架相拥",
-  "stranger": "佛阁避险",
-  "testing": "借柄拧栓"
+  "acquainted": "院里点头",
+  "committed": "留窟相守",
+  "familiar": "隔墙邻居",
+  "flirting": "檐下试探",
+  "intimate": "灯下私情",
+  "stranger": "窟外陌路",
+  "testing": "封窟对峙"
  },
  "status": "released",
- "style_hint": "大漠丝路的雄浑与洞窟里的细：鸣沙山的落日、九层楼的铁马叮当、修复师笔尖的朱砂。写端庄面容下的薄汗与喘息，动作落在钛铲卡槽拧螺母上。",
+ "style_hint": "写戈壁的静和烈：窟里冷光灯照着千年衣袂，窟外沙墙压过来。人克制，话说得少，心意藏在一杯杏皮水、三声叩墙里。",
  "tension_engines": [
   {
-   "id": "te_cave_sandstorm_vs_titanium_wrench",
-   "text": "黑沙暴流沙封死莫高窟第96窟底门危机与用纯钛平铲刀柄卡槽拆卸扣件螺栓的硬核自救。"
+   "id": "te_beijing_transfer",
+   "text": "北京总院的调令到了回执期限，修复师走不走，决定隔壁那堵墙还有没有人敲。"
   },
   {
-   "id": "te_scaffold_collapse_vs_fresco",
-   "text": "三十米通顶脚手架受风压侧倾解体倒计时与誓死保全大佛盛唐原层壁画毫发无损的信念碰撞。"
+   "id": "te_scan_data_leak",
+   "text": "第96窟未公开的红外底稿只差最后一帧，海外策展人想在封窟前拷走原档。"
   },
   {
-   "id": "te_elegant_restorer_vs_geotech_engineer",
-   "text": "典雅温婉壁画女修复师从容定力与岩土力学工程师刚猛铁骨在西北绝壁大灾中的反差共鸣。"
+   "id": "te_black_sandstorm",
+   "text": "鸣沙山黑沙暴要来，防沙重门一落栓，窟里的人谁也出不去。"
   },
   {
-   "id": "te_desert_gale_vs_suspended_hug",
-   "text": "高空风暴寒流侵袭致肌体颤抖失温与两人在二十米悬空跳板前十指紧扣合力下压扳手柄的生死羁绊。"
+   "id": "te_sponsorship_credit",
+   "text": "三百万借展赞助摆在桌上，换的是盛唐复原图的首发署名。"
   }
  ],
  "title": "沙暴封窟夜",
  "tone": [
-  "三十米通顶大佛窟空旷肃穆",
-  "窟外黑沙暴拍击崖壁如雷鸣",
-  "钢管脚手架剧烈扭曲呻吟",
-  "钛铲扳动螺母金属尖啸"
+  "鸣沙山的风",
+  "九层楼的铁马声",
+  "一封没拆的调令",
+  "盛唐飞天的底稿",
+  "隔一堵墙的两年"
  ],
  "twists": [
   {
-   "category": "资源",
-   "id": "tw_titanium_spatula_aviation_alloy_spec",
+   "category": "信息",
+   "id": "tw_tang_donor_inscription",
    "requires": [
     "restorer_gu_qingxian"
    ],
-   "text": "{restorer_gu_qingxian.name}随身佩带的这柄壁画脱盐平铲刀系国家航天材料院特供高纯度冷锻钛合金制造，抗弯屈服强度超过九百兆帕，堪比专业高扭力锻造扳手。"
+   "text": "多光谱红外穿透表层清代重绘，照出盛唐画工留下的一行供养人墨书，正是{restorer_gu_qingxian.name}苦寻五年的孤证；可一公开，第96窟立刻列为特级封存，{restorer_gu_qingxian.ta}三年内都进不了窟。"
   },
   {
-   "category": "信息",
-   "id": "tw_rigger_washer_lever_notch_reveal",
+   "category": "人事",
+   "id": "tw_shen_waived_fellowship",
    "requires": [
-    "rigger_old_ma_scaffold"
+    "engineer_shen_tianyu"
    ],
-   "text": "{rigger_old_ma_scaffold.name}指出了该直角扣件T型螺栓后方暗藏一片防退弹簧垫片，指导先用铲尖挑平垫片彻底解除了螺纹死锁卡阻。"
+   "text": "你在外事处档案袋里发现，苏黎世访学的公派表原本批给{engineer_shen_tianyu.name}，{engineer_shen_tianyu.ta}为了让修复师安心留下才签了放弃；你若接下补录名额，{engineer_shen_tianyu.ta}就要被调去最偏远的榆林窟。"
   },
   {
    "category": "资源",
-   "id": "tw_assistant_chalk_powder_friction_boost",
+   "id": "tw_batu_sutra_fragment",
    "requires": [
-    "assistant_fresco_restorer_xiao_tang"
+    "herder_guide_ba_tu"
    ],
-   "text": "{assistant_fresco_restorer_xiao_tang.name}递送的特制白云石滑石粉撒在钛铲卡槽与螺母接触面，彻底消除了石英沙粒空转打滑并成倍提升了咬合抓力。"
+   "text": "{herder_guide_ba_tu.name}的香火杂记夹层里，竟夹着半页散落的唐代画样真迹，正好补全第96窟缺失的飞天手印；{herder_guide_ba_tu.ta}不要钱，只求研究院把月牙泉后山老牧场划出开发区。"
   },
   {
    "category": "信息",
-   "id": "tw_director_aims_high_power_searchlight",
+   "id": "tw_lin_auction_wager",
    "requires": [
-    "director_zhao_kai_safety"
+    "curator_lin_shu"
    ],
-   "text": "{director_zhao_kai_safety.name}调集的千瓦防爆探照灯强光穿透风沙尘暴，精准锁定了螺栓六角螺母受力死角，使两人在昏暗风沙中实现毫厘不差的准确定位。"
+   "text": "你查出{curator_lin_shu.name}并非单纯为海外博物馆借展，而是背着一桩古画真伪的对赌，急需第96窟底图做比对；揭穿对方能让借展方撤换代表，摄影师收定金的事也会一起败露。"
   },
   {
-   "category": "意外",
-   "id": "tw_sand_captain_drives_loader_excavator",
+   "category": "制度",
+   "id": "tw_letter_for_two",
    "requires": [
-    "captain_liu_dahai_sand"
+    "restorer_gu_qingxian"
    ],
-   "text": "{captain_liu_dahai_sand.name}驾驶大马力铲车在最后一分钟挖穿底层前室堆沙，打通了正门泄压口，大幅平衡了内外气压差化解了顶层天窗解体危机。"
+   "text": "{restorer_gu_qingxian.name}终于拆开调令，里面除了{restorer_gu_qingxian.ta}的聘书，还夹着一封{restorer_gu_qingxian.ta}半年前写给总院的私人信，请求带一位同去的人；可调动要求两人一起离任，莫高窟三年的加固工程就要半途易手。"
+  },
+  {
+   "category": "时限",
+   "id": "tw_buried_tang_drain",
+   "requires": [
+    "engineer_shen_tianyu"
+   ],
+   "text": "黑沙暴过后，{engineer_shen_tianyu.name}在崖壁北侧发现被吹开的唐代排水暗渠口，能根治底层返潮；可要抢在流沙回填前测完，今晚谁也别想回宿舍。"
   },
   {
    "category": "关系",
-   "id": "tw_engineer_shields_qingxian_pipe",
+   "id": "tw_locked_from_outside",
    "requires": [
-    "restorer_gu_qingxian",
-    "engineer_shen_tianyu"
+    "assistant_fresco_restorer_xiao_tang",
+    "restorer_gu_qingxian"
    ],
-   "text": "{engineer_shen_tianyu.name}在钢管弹开的一瞬挺身扑倒，用宽阔结实的后背替{restorer_gu_qingxian.name}硬生生抗下了头顶坠落的一截断裂木质脚手板冲击。"
+   "text": "回廊的门推不开，不是风沙堵的，是{assistant_fresco_restorer_xiao_tang.name}从外面悄悄落了锁，把师父和你留在里面，只想{restorer_gu_qingxian.name}走之前听你说一句真心话。"
   },
   {
-   "category": "意外",
-   "id": "tw_dunhuang_cave_96_rescue_triumph",
+   "category": "关系",
+   "id": "tw_suya_gave_credit",
    "requires": [
-    "restorer_gu_qingxian",
-    "engineer_shen_tianyu"
+    "photographer_su_ya",
+    "restorer_gu_qingxian"
    ],
-   "text": "扣件卸除后全员在两分钟内顺着天窗软梯平安撤至九层楼飞檐顶层，脚下黑风暴逐渐衰减退去，大漠朝霞如金光般洒在两人紧紧相拥的身躯上，定格成守护千年的莫高传奇。"
+   "text": "人前总嫌修复师手慢的{photographer_su_ya.name}，私下在扫描报告里把自己那份署名划掉，写上了{restorer_gu_qingxian.name}的名字。"
   }
  ]
 }

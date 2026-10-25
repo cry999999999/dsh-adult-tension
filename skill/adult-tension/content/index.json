@@ -1,5 +1,5 @@
 {
- "content_version": "2026.10.26",
+ "content_version": "2026.10.27",
  "schema_version": 1,
  "worlds": [
   {
@@ -97,25 +97,22 @@
   {
    "content_tags": [
     "intimate",
-    "violence",
-    "bodily_harm",
-    "death",
+    "workplace",
     "workplace_power",
     "crime",
-    "workplace",
-    "disaster"
+    "bodily_harm"
    ],
    "default_person": "second",
-   "era": "2000年代初秋末黄昏（名门私立大学废弃旧校舍地窖暗室）",
+   "era": "2002 年秋末，旧校舍拆除前夕",
    "id": "afterschool_cellar_president_confession",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "私立名门圣罗兰大学即将拆除的百年旧校舍地下钟楼备品地窖与防空档案室",
-   "sha256": "7100886c9b97444dd02fac765c8582a6c681822fe1db3ac760478c4f24801e77",
+   "region": "私立圣罗兰大学百年旧校舍：地窖档案室、钟楼配线回廊与顶层广播室",
+   "sha256": "d5dc2395195fcea51962a6a78714fab0c5f725b0fc86cd8a0265c381cba4ff68",
    "status": "released",
-   "summary": "名门私立大学的旧校舍下个月就要拆，研究生会女会长带着人在地下钟楼的备品地窖里清查历年账目，一箱一箱翻到深夜，账目里有几笔怎么也对不上。地窖的生铁门有点变形，配电箱是几十年前的老物件，市政工程队已经贴出了断水通知。",
+   "summary": "2002 年秋末，名门私立圣罗兰大学的百年西洋旧校舍即将拆除、改建新礼堂。研究生会女会长带着干事在地下钟楼的备品档案室里清查历年社团经费底册，一箱一箱核到黄昏，发现三年前有几笔专项拨款怎么也对不上。风纪委员会每晚按点巡楼落锁，校报的记者也常在旧校舍外围打转。",
    "title": "被绑发带女会长"
   },
   {
@@ -255,23 +252,20 @@
     "intimate",
     "violence",
     "bodily_harm",
-    "substance",
-    "workplace_power",
     "crime",
-    "workplace",
     "disaster"
    ],
    "default_person": "second",
-   "era": "明末江南梅雨连绵初夏之夜（东厂缇骑与江湖暗门决死追剿）",
+   "era": "天启末年梅雨初夏，东厂缇骑追剿江湖暗门",
    "id": "assassin_rainy_temple_ointment",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "浙闽交界万亩翠竹深山中被山洪断道的荒废兰若古刹断壁暖阁与后殿枯井密道",
-   "sha256": "dc2e66e6683758aed76a42da7f0f0079c95460a1d414ea73e552f9b5c9753428",
+   "region": "浙闽交界翠竹深山里被山洪断道的兰若古寺",
+   "sha256": "ec62382673dfcd5016bea2819eab50519e18ce88a3b1b61327af84447b7d619d",
    "status": "released",
-   "summary": "明末江南，浙闽交界的深山里有一座荒废的古庙。江南暗门的天字号女刺客刺杀贪官后藏身在这里养伤，落难的医家传人恰好也在庙里避祸，两人隔着一座佛龛住了半个月。白天采药、换药，夜里守着一盏油灯。梅雨季的山洪常冲断山道，东厂的缇骑还在附近的县城里搜人。",
+   "summary": "浙闽交界的翠竹深山里，一座荒废的兰若古寺立在悬崖断壁边。连绵半月的梅雨把山溪涨成山洪，冲垮了出山的石桥。江湖暗门的刺客、隐姓埋名的医家传人、巡按御史麾下的推官和守殿行者各怀心事，挤在古寺的残殿暖阁里，守着一盏如豆油灯，听殿外风雨。",
    "title": "破庙拔毒女刺客"
   },
   {
@@ -597,22 +591,20 @@
   {
    "content_tags": [
     "intimate",
-    "coercion_theme",
-    "humiliation",
     "workplace_power",
-    "disaster"
+    "crime"
    ],
    "default_person": "second",
-   "era": "当代顶尖高等学府千人迎新典礼开幕式致辞倒计时阶段",
+   "era": "当代顶尖高校的九月迎新典礼开幕日",
    "id": "cold_president_podium_harness_jam",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "宏伟礼堂主舞台中央升降讲台与音视频导播总控连通区域",
-   "sha256": "5b22b10c0c27da211c46686f320fba538a6391f76ff9e89f37c5d9dce2476d2b",
+   "region": "万人大礼堂：主舞台发言席、侧幕通道、导播总控与后台配电区",
+   "sha256": "3358f936ae96b3bb5484c1a6802ca363b0c76c70b954a846e5b882391777239c",
    "status": "released",
-   "summary": "千人大礼堂的迎新典礼还有三天，清冷威严的研究生会主席每天站在主舞台中央排练致辞，舞台机电师和导播台的人被挑剔得团团转。自动升降讲台是新装的，电机偶尔会抽一下；主席西装底下那件纯黑真皮鱼骨拘束胸衣，谁也不知道。",
+   "summary": "顶尖学府的万人大礼堂里，迎新典礼即将开幕，台下坐满成年新生与校领导。研究生会主席在侧幕默诵讲稿，副主席拿着对讲机指挥走位，导播室的推流监视器红绿闪烁。这篇致辞关系唯一的保荐名额，也关系校会大权落在谁手里。",
    "title": "讲台急升的主席"
   },
   {
@@ -745,21 +737,20 @@
   {
    "content_tags": [
     "intimate",
-    "bodily_harm",
     "workplace",
-    "disaster"
+    "bodily_harm"
    ],
    "default_person": "second",
-   "era": "当代顶级GK手办模玩工作室高定展品终期涂装封釉阶段",
+   "era": "当代国际模玩大展评审前的独立GK手办工作室",
    "id": "cool_figure_painter_airbrush_trap",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "国家级数字文创园区大型不锈钢防爆双工位负压喷涂车间与风淋风道区",
-   "sha256": "7fd02999bbbb0ad0c3d564462c115b91952298440c10d58a584a7fdb115d6355",
+   "region": "文创园区一栋三层小楼：喷涂车间、暗房、阁楼与顶层露台",
+   "sha256": "f15fddcf788f1d3126be015f98a8a63bd8e719449b6d96ae14626d4ecfec8c4c",
    "status": "released",
-   "summary": "文创园区的大型负压喷漆房里，独立手办涂装师在赶一尊限量重工GK的展前涂装，连着熬了五个通宵。园区的暖通总工被叫来修那台老是过热的排风机，一修就修了一礼拜。喷涂室的气动滑门是负压密封的，溶剂蒸汽的浓度表时准时不准。",
+   "summary": "文创园区一栋三层小楼里，防爆灯常年亮着，空气里是硝基漆和香蕉水的清苦味。涂装师、雕刻师和调色师从老牌模玩大厂出走，自立门户做孤品重工GK，在圈里刚闯出一点名声。工作室第一件独立作品要送上国际模玩大展的闭门评审，展会的人、物流商和老东家的人都盯着这扇门。",
    "title": "赶工GK的涂装师"
   },
   {
@@ -786,21 +777,20 @@
    "content_tags": [
     "intimate",
     "workplace_power",
-    "crime",
     "workplace",
     "disaster"
    ],
    "default_person": "second",
-   "era": "现代重型机车改装与工坊时代",
+   "era": "当代湾岸机车改装圈的盛夏赛季",
    "id": "cool_mechanic_storm_hangar_rollup_jam",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "老式机库改装车间主升降卷帘门与狭窄泄洪地槽",
-   "sha256": "886af3fb47a52a9740c90f94fd5bd6db1321bea5039e58e009500cd32fc5a516",
+   "region": "海边老机库改成的机车改装工坊、装卸平台与隔壁汽配街",
+   "sha256": "3217b255085349c47989a0497e334df8a25abbd1fc59c6c911e96c764571d057",
    "status": "released",
-   "summary": "海边一座废弃的老机库，被女机械师改成了机车改装工坊，和试车手合伙开店三年，为一台要参加赛季开幕赛的赛车调校数据吵了一整个夏天。机库外还留着一只航煤油罐没清走，一吨重的防风卷帘门在台风季总是卡。",
+   "summary": "海边一座废弃老机库改成了机车改装工坊，机油味和工具声响了三年。女机械师和合伙试车手把一台老款赛车调到了极致，开幕赛验车就在眼前。职业厂队的老板看中的却是女机械师自研的电控和这块地：开价买断整台车和电控，条件是摘掉工坊招牌、并入厂队。隔壁汽配店的房东、车友会和老师傅都冒雨聚到了这间亮着暖灯的机库里。",
    "title": "车行里的女机械师"
   },
   {
@@ -906,32 +896,30 @@
     "daily",
     "pressure"
    ],
-   "region": "千米高空跨城轨道重型悬挂穿梭缆车车厢",
-   "sha256": "621c8ccf72cc4e00172d59d7c5407b23c7d55afc840ceea201acbe548f964ccd",
+   "region": "千米高空的跨城天轨穿梭缆车与中转塔",
+   "sha256": "86fc4573b89fec40062c7c4f859248e1912754d5564199363d9b7befe2bdbee3",
    "status": "released",
-   "summary": "千米高空的跨城穿梭缆车是巨企穹顶集团的命脉。反抗军首席女黑客技师化名在缆车维修站上班，白天修车厢电路，夜里往集团系统里埋后门；退役佣兵、轨道巡查官和黑市机械师都是这条线上的熟面孔。主缆索的检修报告被集团压了半年。",
+   "summary": "跨城天轨缆车在酸雨云层间往返，车窗外是巨企核心区的霓虹全息广告，主缆维护预算一季比一季少。反抗军的黑客化名电工值守底盘机械舱，暗中护送底巢流民和一份数据出城。这一班车上，巨企公关总监、天轨监察总监、黑市货运商和独立主播都买了票。",
    "title": "千米滑坠缆车"
   },
   {
    "content_tags": [
     "intimate",
-    "bodily_harm",
-    "death",
     "crime",
     "workplace",
     "disaster"
    ],
    "default_person": "second",
-   "era": "重工业极盛期超深露天矿坑深井竖井开采施工期",
+   "era": "高寒矿山冬季封井停产的时节",
    "id": "deep_pit_quarry_hoist_brake_failure",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "地下三百米超深采矿竖井悬挂提升斗钢骨吊笼",
-   "sha256": "600d2f53565ae70c6c1ee03dd388f3e646e7b42ef5e541d82e71acdb169b4258",
+   "region": "深山超深矿坑：井口灯房、天轮台与地下三百米竖井",
+   "sha256": "c5d53e3efdd5f1470b2fc8d564974ebe551459091baebc5c74fd84dae0af0cce",
    "status": "released",
-   "summary": "井口灯房的挂牌板上，每个下井的人都挂着一块铜牌，升井才摘。傲娇的女总工管着三百米深井的提升系统，跟把钩工长为检修排班吵了一个季度。卷扬机的减速箱该大修了，上头催产量，一直拖着。",
+   "summary": "深山矿坑的井口灯房里，下井要在木板上挂铜牌，升井摘牌才算活着回来。开采旺季已过，暴风雪即将封住出山的路，三百米竖井要停产大修、采区封存。女总工整夜守在提升机房和天轮台，灯房外聚着讨要尾款的货主和等亲人升井的家属。",
    "title": "深井提升斗女总工"
   },
   {
@@ -1047,26 +1035,26 @@
   },
   {
    "content_tags": [
+    "intimate",
     "violence",
-    "coercion_theme",
     "bodily_harm",
-    "substance",
-    "workplace_power",
     "workplace",
+    "workplace_power",
+    "crime",
     "supernatural",
     "disaster"
    ],
    "default_person": "second",
-   "era": "神代黄昏凡人弑神史诗纪元",
+   "era": "神代黄昏，凡人弑神纪元",
    "id": "dragonsfall_blood_banner",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "极北冻原万仞断角大峡谷神明坠落玄冰祭坛与弑神阵线",
-   "sha256": "3874618a2065482772bfc602d9e458e36bbc6e92e3550c96d8e547e03556a18d",
+   "region": "极北冻原万仞断角大峡谷：第七军团围龙大营",
+   "sha256": "412ea9046115ca0c74f02bb3a9fbc982f3b60fb6902afb8d739f75153a6d1ba9",
    "status": "released",
-   "summary": "凡人弑神的年代，第七军团在极北冻原的断角大峡谷扎营，三十六道伏龙钢缆锚着一头坠落的神话古龙，等王都派来的祭司决定是杀是囚。白天检修弩车、换班守缆，夜里在营火边喝酒唱歌。古龙每晚都在挣动，钢缆一根根地磨。",
+   "summary": "极北冻原的断角大峡谷里终年风雪，暗蓝极光压着崖顶。第七军团在此扎营数月，三十六道玄铁重链楔进万载玄冰，把一头鳞甲染血的坠落古龙锁在深渊石柱上，崖顶巨弩环伺。王都派来的大祭司要活取龙血，女团长有旧恩未报，老兵等着安家饷，巫医和走私商各怀心思，营火的松明烟气里，人人都在等王都的终局圣裁。",
    "title": "弑神血旗女团长"
   },
   {
@@ -1096,44 +1084,42 @@
   {
    "content_tags": [
     "intimate",
-    "violence",
-    "bodily_harm",
     "workplace",
-    "disaster"
+    "disaster",
+    "bodily_harm"
    ],
    "default_person": "second",
-   "era": "当代丝绸之路世界文化遗产保护与莫高窟崖体综合治理期",
+   "era": "当代莫高窟，四月沙尘季封窟之前",
    "id": "dunhuang_fresco_cave_sandstorm",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "敦煌莫高窟第96窟九层楼三十三米通顶大佛阁与挑空钢管脚手架区",
-   "sha256": "e306142387d93f4adf3fef1311db7cb72a35603ddf1a7e72156a0baf94821d9f",
+   "region": "莫高窟九层楼：第96窟大佛平台、顶层檐廊、防沙门回廊与职工宿舍",
+   "sha256": "0134282156bf37587a10815c2067c1f9641950fd791f3988db10ddf9051e62aa",
    "status": "released",
-   "summary": "莫高窟九层楼下的职工宿舍区，壁画修复师和岩土工程师隔壁住了两年：一个整天蹲在洞窟里，一笔一笔补盛唐的颜色，一个整天吊在崖顶，打锚杆、灌浆、量裂缝。鸣沙山每年春天都刮黑沙暴，第96窟的防沙重门是老物件，加固用的通顶脚手架已经搭了半年。",
+   "summary": "莫高窟九层楼下的职工宿舍区，壁画修复师和驻窟工程师隔壁住了两年：一个日夜待在洞窟脚手架上，一笔一笔为盛唐壁画做加固与临摹；一个常年巡看洞内温湿度和防沙门。四月鸣沙山风沙渐起，第96窟正做封窟前最后一次夜间高精数字化扫描，海外借展团的策展人这周也住进了院里。",
    "title": "沙暴封窟夜"
   },
   {
    "content_tags": [
     "intimate",
-    "bodily_harm",
     "workplace_power",
-    "crime",
     "workplace",
+    "bodily_harm",
     "disaster"
    ],
    "default_person": "second",
-   "era": "近现代国家级宏伟歌剧院与重型机械化升降舞台时代",
+   "era": "当代百年国家大剧院的新制作演出季",
    "id": "elegant_conductor_pit_hydraulic_stall",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "百年歌剧院地下十米完全沉降液压乐池深井逼仄检修底坑与变形悬臂台",
-   "sha256": "179c5b60e19cd2ea066f5587f1fd2d6af71602f9c4d72dae01e3bf080170cafd",
+   "region": "百年国家大剧院：金色大厅、乐池、大幕侧翼与顶层排练厅",
+   "sha256": "922b7fe2548585498f0c65fd221f675cd608481cdf33413a1b949cbce2aa677e",
    "status": "released",
-   "summary": "百年国家歌剧院新制作的首演只剩最后三天。年轻的首席女指挥家每天站在指挥台上，一个手势就能让百人乐团同时噤声，舞台机械师天天被叫下乐池调升降。升降乐池的液压系统是二十年前装的，上周的检修报告还没人签字。",
+   "summary": "百年国家大剧院的金色大厅里，红丝绒座椅在水晶吊灯下静穆肃立。演出季最重的新歌剧首演只剩三天，百人乐团与合唱团在乐池和台上连轴排练。剧院第一位女性首席指挥站在指挥台上，要用先父留下的改编总谱开幕；首席小提琴、运营总监和客座独唱家在大幕两侧各怀心思。",
    "title": "升降台下女指挥"
   },
   {
@@ -1160,22 +1146,20 @@
   {
    "content_tags": [
     "intimate",
-    "bodily_harm",
     "crime",
-    "workplace",
     "disaster"
    ],
    "default_person": "second",
-   "era": "当代沿海特大城市高层商住综合体",
+   "era": "当代沿海特大城市的台风季",
    "id": "elevator_umbrella_tip_brake_release",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "外挂全景双层观光玻璃电梯轿厢与百米高空井道",
-   "sha256": "f04e05a1795e9873b92a1ee191def7575900bea1c22a5ac1f631e48121d57f04",
+   "region": "沿海高层商住楼：三十层合租公寓、候梯连廊与一楼中控大堂",
+   "sha256": "41afa5713d4f36707dc218dedc2f1f2e0b7381c9e6747e793ab76d5e83057b50",
    "status": "released",
-   "summary": "沿海大城市的高层公寓里，两人合租了三年，冰箱上还贴着轮流倒垃圾的值日表，下班后一起去楼下超市、一起搭外挂观光电梯回家。台风季到了，电梯的维保师傅这个月已经来了三趟，物业贴出了停电预警。",
+   "summary": "沿海特大城市三十层的高层公寓里，两人合租了三年，冰箱上贴着泛黄的值日表，玄关并排摆着两双拖鞋。台风季如期而至，三年的合租合同今夜到期，房东催着交房验房。窗外风雨渐起，客厅里堆着打包好的纸箱与换季衣物。",
    "title": "悬停电梯的室友"
   },
   {
@@ -1227,23 +1211,21 @@
   {
    "content_tags": [
     "intimate",
-    "bodily_harm",
     "workplace_power",
     "crime",
-    "workplace",
-    "disaster"
+    "workplace"
    ],
    "default_person": "second",
-   "era": "现代江南名门世家地下字画典藏库",
+   "era": "当代江南，太湖畔百年老宅的开库晒画日",
    "id": "estate_vault_lockout_tea_scoop_rescue",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "地下大跨度恒湿字画通堂外侧防尘气密卷帘门死角",
-   "sha256": "513c38b06401edd82d166add7c4a402490a75068b9ecf84fd1494f723381e1c6",
+   "region": "沈氏老宅：宗祠检视大堂、中庭水榭茶寮与地下字画大库",
+   "sha256": "0ddf5a614c76e970eeac62ae2b764e7e3659bca3f177114f40e23840e423d345",
    "status": "released",
-   "summary": "江南老宅每年六月初六开库晒画，宗亲们坐在中庭里喝茶看画，也盯着这份家产怎么分。当家少夫人从苏州请来了装裱师，在地下字画库里一住就是一个月。字画库的气密卷帘和惰性气体灭火系统是去年新装的，配电房却还是老的。",
+   "summary": "太湖之畔的百年深宅，每年六月初六启地库晒画。青砖地上积着散不去的梅雨潮气，茶烟里坐满各怀心思的沈氏族人。当家少夫人独掌地下书画大库与开库铜匙，核对历代宗谱卷轴；中庭茶寮琴声未断，族老、海外归来的堂兄和拍卖行的估价顾问早已按捺不住，都在等开库这一天把分家的话说出口。",
    "title": "开库日的少夫人"
   },
   {
@@ -1823,22 +1805,22 @@
   {
    "content_tags": [
     "intimate",
-    "humiliation",
-    "workplace_power",
     "workplace",
-    "disaster"
+    "workplace_power",
+    "disaster",
+    "bodily_harm"
    ],
    "default_person": "second",
-   "era": "现代都市",
+   "era": "现代滨海都市的冬天，冻雨季",
    "id": "gyaru_classmate_stranded_commuter",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "跨江八十米高空悬挂单轨电车故障车厢",
-   "sha256": "37c6737535e111451f266591f5c3771b2c0329f7745af5e99a93b4c1fddff128",
+   "region": "跨江八十米高空悬挂单轨：末班车尾厢、江心桥塔与桥南公寓",
+   "sha256": "fefeacb84b76a1db8b6a10d00d22049162bd21db3c27944ec6a6c2ed80c686b6",
    "status": "released",
-   "summary": "同班的时尚名模辣妹，每天下课都搭跨江的高空单轨电车去市中心拍片，晚上再搭末班车回来，常在车厢里和同学聊到下车。轨道公司的安全总监这阵子常来车上抽查，桥头便利店的夜班店员认得每一个晚归的人。单轨车厢是老型号，台风季停运过两次。",
+   "summary": "现代滨海都市的跨江八十米高空悬挂单轨，每晚末班车载着从市中心摄影棚收工的人过江。在时装学院成人夜校进修的辣妹模特，每天下课搭这班车去拍平面，收工后再搭末班车回桥南公寓。单轨公司的安全主管常在江心桥塔站巡线，随车摄影师和合租买手也常搭同一班车。",
    "title": "悬空单轨的辣妹"
   },
   {
@@ -2508,22 +2490,22 @@
   {
    "content_tags": [
     "intimate",
-    "humiliation",
-    "substance",
+    "romance_light",
     "workplace",
-    "disaster"
+    "workplace_power",
+    "crime"
    ],
    "default_person": "second",
-   "era": "现代都市",
+   "era": "当代都市，三甲医院重点专科复核考评期",
    "id": "night_clinic_blackout_prescription",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "综合医疗大楼四层负压无菌中心外廊",
-   "sha256": "5ed98b3108757cd3b4d4b3f57593369813c070adaaa1d4a1a53869127366ae2c",
+   "region": "综合医疗大楼四层：负压无菌配药中心与洁净区外廊",
+   "sha256": "0e9a14d87b6db4e757580644f1b9865a54add900eee128cbf22d9a5de3b22d5f",
    "status": "released",
-   "summary": "三甲医院四层的负压无菌配药中心，值班女主任管着全院最难配的药，白天带教、查房，夜里守着配药大厅签字。卫健委的飞行检查组这周驻院，医药公司的驻院代表和夜班保安也总在外廊打转。配药大厅的气动滑门遇到压差会自锁，雷雨季的电闸跳过一回。",
+   "summary": "综合医疗大楼四层的负压无菌配药中心，紫外灯在暗处泛着幽蓝的光，空气里是含氯消毒液和酒精的凉味。这里负责全院重症抢救特药和静脉营养液的配制，主任白天跑病房，夜里守在大厅把关处方签字。国家重点专科复核考评正在进行，卫健委专家组驻院彻查高值耗材和特药账目，医药代表、护士长、主任药师和夜班保卫各有心事，在外廊里来回穿行。",
    "title": "考评门外女主任"
   },
   {
@@ -2866,23 +2848,20 @@
    "content_tags": [
     "intimate",
     "violence",
-    "bodily_harm",
-    "substance",
     "crime",
-    "workplace",
     "disaster"
    ],
    "default_person": "second",
-   "era": "近代欧洲帝国风雪避难所",
+   "era": "帝国覆亡第三年的近代欧洲流亡岁月",
    "id": "princess_lodge_avalanche_spur_lever",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "阿尔卑斯雪峰行宫古董收藏室暗门铅铸夹层",
-   "sha256": "105edbf2742e015b0e70614d3aafa29541246fac7e36c11e3669c5d1bdc21cdf",
+   "region": "阿尔卑斯雪峰之巅的旧皇家猎苑行宫",
+   "sha256": "08869987786351099221159e15985bcc3eb2af2d4af5ed8640c4f423d7d0762a",
    "status": "released",
-   "summary": "帝国覆灭后的第三个冬天，流亡的长皇女带着最后一队近卫，躲在阿尔卑斯雪峰上的旧日行宫里，等一封复辟密信。白天清点古董收藏、给近卫训话，夜里在壁炉边读旧报纸。行宫的外廊年久失修，山上的积雪一天比一天厚。",
+   "summary": "阿尔卑斯雪峰之巅的旧皇家猎苑行宫里，暴风雪拍打着结冰的彩绘玻璃。帝国覆亡已有三年，长皇女带着最后一队效忠近卫在此避难，壁炉里的松木炭火彻夜不熄。下山的盘山道积雪渐深，摄政派特使、维也纳黑市画商和老守山人都聚在大沙龙里，等着开春前的去留决断。",
    "title": "雪封行宫长皇女"
   },
   {
@@ -3300,23 +3279,22 @@
   {
    "content_tags": [
     "intimate",
-    "bodily_harm",
-    "death",
-    "crime",
     "workplace",
+    "workplace_power",
+    "bodily_harm",
     "disaster"
    ],
    "default_person": "second",
-   "era": "高山温泉度假疗养院地下动力中心",
+   "era": "大雪封山的十二月，老温泉疗养院移交前夕",
    "id": "sanatorium_boiler_nurse_rescue",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "疗养院地下大型地热循环泵房回廊与防灾电动卷门死角",
-   "sha256": "e33828fa4dbf2c7a5e41a2e894043852c5fe7f36a2ea836145e991745430190f",
+   "region": "东北林区老温泉疗养院：地热泵房、管廊、理疗室与二楼阳光廊",
+   "sha256": "e585b64518ffcfe06624eb2e85cbaa4dfbf7236da4f01397662ac5b04016cd38",
    "status": "released",
-   "summary": "东北林区深处的老疗养院，大雪封山，邮车一周才上来两趟，整座院子的暖气全靠地下泵房的地热。夜班护士白天查房、陪老人下棋，夜里常去锅炉房给机工送宵夜。主蒸汽减压阀的法兰锈得厉害，泵房的防灾卷门好几年没试过。",
+   "summary": "东北林区深处的老温泉疗养院，十二月大雪封山，邮车一周进山两趟，整座院子的暖气和理疗池全靠地下泵房引出的天然地热。疗养院的夜班护士白天照看常年住山里的老林工，夜里常提着保温桶下泵房看水温。省城地产集团的收购评估团这周住进了前楼，院里都在议论开春关停改建。",
    "title": "泵房爆裂夜"
   },
   {

@@ -1,114 +1,113 @@
 {
  "background_cast": [
   {
-   "adult_context": "三甲医院二十年工龄老员工，依法承担洗消设备巡查勤务职责。",
+   "adult_context": "年满二十八岁、随专家组驻院的记录员。",
    "age_range": [
-    45,
-    49
-   ],
-   "function": "helper",
-   "gender": "male",
-   "id": "bg_orderly_wang",
-   "line": "报告主任，双向负压风淋缓冲门各项指标正常，随时可以开启外廊大门迎接考评。",
-   "location_ids": [
-    "loc_airlock_interlock_sliding_gate",
-    "loc_sterile_dispensing_hall"
-   ],
-   "name": "王姓洗消员",
-   "role": "负压配药大厅洗消巡视员"
-  },
-  {
-   "adult_context": "护理大专学历二十四岁职业护士，专责外勤巡视导诊工作。",
-   "age_range": [
-    22,
-    24
+    28,
+    45
    ],
    "function": "witness",
-   "gender": "female",
-   "id": "bg_apprentice_nurse_zheng",
-   "line": "考评专家团已经在风淋室外整队完毕，请各位老师做好亮牌展示准备。",
-   "location_ids": [
-    "loc_sterile_dispensing_hall"
-   ],
-   "name": "郑姓护士",
-   "role": "中心药房值班巡视女护士"
-  },
-  {
-   "adult_context": "医院保卫科聘用十年的成年保安",
-   "age_range": [
-    40,
-    50
-   ],
-   "function": "obstacle",
-   "gender": "male",
-   "id": "bg_security_liu",
-   "line": "刘保安拿着手电在外廊来回走，按规定谁也不许在停电时靠近洁净区。",
+   "gender": "any",
+   "id": "bg_inspection_clerk",
+   "line": "组长说了，今晚每一扇门开过几次都要记下来。",
    "location_ids": [
     "loc_hospital_rounds_corridor"
    ],
-   "name": "刘保安",
-   "role": "夜班保安"
-  },
-  {
-   "adult_context": "医学院毕业、年满二十六岁的成年规培医生",
-   "age_range": [
-    25,
-    28
-   ],
-   "function": "rumor_source",
-   "gender": "male",
-   "id": "bg_intern_xu",
-   "line": "小许抱着病历夹在护士站旁边打转，压低声音说配药厅里出了大事。",
-   "location_ids": [
-    "loc_hospital_rounds_corridor"
-   ],
-   "name": "小许",
-   "role": "规培医生"
-  },
-  {
-   "adult_context": "卫健委借调来的成年记录员",
-   "age_range": [
-    32,
-    40
-   ],
-   "function": "messenger",
-   "gender": "female",
-   "id": "bg_clerk_fang",
-   "line": "方姐夹着评分表跟在考评专家身后，隔几分钟就小跑着去前面报一声进度。",
-   "location_ids": [
-    "loc_hospital_rounds_corridor"
-   ],
-   "name": "方姐",
+   "name": null,
    "role": "考评组记录员"
   },
   {
-   "adult_context": "陪老伴住院的成年家属",
+   "adult_context": "年满二十四岁、持证上岗的配药护士。",
    "age_range": [
-    50,
+    24,
+    35
+   ],
+   "function": "helper",
+   "gender": "any",
+   "id": "bg_night_dispensing_nurse",
+   "line": "主任，这批营养液我先帮您核一遍，您喝口水。",
+   "location_ids": [
+    "loc_sterile_dispensing_hall"
+   ],
+   "name": null,
+   "role": "夜班配药护士"
+  },
+  {
+   "adult_context": "年满三十岁、守在ICU外的患者家属。",
+   "age_range": [
+    30,
     60
    ],
-   "function": "witness",
-   "gender": "male",
+   "function": "obstacle",
+   "gender": "any",
    "id": "bg_patient_family",
-   "line": "老周搬着折叠凳坐在走廊尽头，停电以后一直伸着脖子往配药厅那边看。",
+   "line": "药呢？人还在里面躺着，你们开会能比命要紧吗？",
    "location_ids": [
     "loc_hospital_rounds_corridor"
    ],
-   "name": "老周",
-   "role": "陪床家属"
+   "name": null,
+   "role": "重症患者家属"
+  },
+  {
+   "adult_context": "年满二十五岁、负责送药的正式工。",
+   "age_range": [
+    25,
+    50
+   ],
+   "function": "messenger",
+   "gender": "any",
+   "id": "bg_freight_porter",
+   "line": "ICU那边又催了一遍，我在货梯口等着，药一出来我就推上去。",
+   "location_ids": [
+    "loc_airlock_interlock_sliding_gate",
+    "loc_hospital_rounds_corridor"
+   ],
+   "name": null,
+   "role": "专用货梯运送工"
+  },
+  {
+   "adult_context": "年满四十岁、在这层楼做了多年的正式工。",
+   "age_range": [
+    40,
+    60
+   ],
+   "function": "rumor_source",
+   "gender": "any",
+   "id": "bg_night_cleaner",
+   "line": "值班室的灯亮了一宿，我拖地都不敢敲门。",
+   "location_ids": [
+    "loc_on_call_room",
+    "loc_hospital_rounds_corridor"
+   ],
+   "name": null,
+   "role": "夜班保洁"
+  },
+  {
+   "adult_context": "年满二十二岁、保卫部的正式雇员。",
+   "age_range": [
+    22,
+    40
+   ],
+   "function": "witness",
+   "gender": "any",
+   "id": "bg_patrol_guard",
+   "line": "分控室刚才进过人，门禁记录我拍下来了，要不要报？",
+   "location_ids": [
+    "loc_hvac_control_substation"
+   ],
+   "name": null,
+   "role": "巡逻保安"
   }
  ],
  "cast_combos": [
   {
-   "chemistry": "掌握全院评审大权之副院长率团亲临严苛审查，女主任于绝境中展现惊人外科心理定力与微观巧技，以端方体面从容破除考评杀机。",
-   "id": "combo_qingyi_and_jingming",
+   "chemistry": "{char_lu_qingyi_officer.name}是这层楼最难亲近的主任，却只在你夜巡经过时隔着玻璃抬一下手。两人的事谁也没说破，值班室的门每次都是你替对方带上的。",
+   "id": "cc_lu_and_guard_sterile",
    "identity_ids": [
-    "identity_chief_medical_officer"
+    "identity_security_supervisor"
    ],
    "player_positions": [
-    "low",
-    "equal",
-    "high"
+    "low"
    ],
    "power_structure": "npc_high",
    "relations": [
@@ -120,66 +119,38 @@
      },
      "b": "char_lu_qingyi_officer",
      "b_to_a": {
-      "tension": 3,
-      "trust": 4
-     },
-     "reason": "洁净大厅中共同捍卫科室崇高荣誉之深厚战友盟友",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 3
-     },
-     "b": "char_gu_jingming_director",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 3
-     },
-     "reason": "严苛管理考评大旗之下彼此审度对峙之后生与长者",
-     "stage": "testing"
-    },
-    {
-     "a": "char_lu_qingyi_officer",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 3
-     },
-     "b": "char_gu_jingming_director",
-     "b_to_a": {
       "tension": 4,
       "trust": 4
      },
-     "reason": "院长深沉期待考核与年轻主任傲骨凛然不卑不亢之高尚交锋",
-     "stage": "testing"
+     "reason": "去年除夕夜巡到配药中心，两人在值班室分吃一碗汤圆，你吻了{char_lu_qingyi_officer.name}；对方定下轻扣玻璃三下就停的约。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "char_lu_qingyi_officer",
-    "char_gu_jingming_director"
+    "char_lu_qingyi_officer"
    ],
    "stakes": {
-    "irreplaceable_goal": "在门扉启开刹那以无懈可击之圣洁端庄仪容引导专家团入内圆满通过考评。",
-    "limit_gap": "院长受制于需遵循公开透明之评审纪律，女主任受限于不可在全院同行前流露走光失态破绽。",
-    "meeting_reason": "三甲复核年度国家级无菌洁净配药中心夜巡现场验收考评。",
-    "resource_gap": "院长手握科室评级与全院通报生杀大权，女主任仅凭一把骨科截骨锤于门缝死角孤身应对死线危机。"
+    "irreplaceable_goal": "主任问你，查到的东西是交给考评组，还是先交到自己手里。",
+    "limit_gap": "主任今夜一步也离不开配药中心，你的职位不够在考评组面前替谁说话。",
+    "meeting_reason": "{char_lu_qingyi_officer.name}隔着无菌玻璃把急救处方递出来，眼底泛着红丝，低声请你调监控，看那位医药代表刚才进过哪几间屋。",
+    "resource_gap": "主任握着特药放行权和答辩权，你只有门禁卡和监控平板。"
    },
-   "tags": [],
+   "tags": [
+    "intimate",
+    "workplace"
+   ],
    "tension_engine_ids": [
-    "engine_director_inspection_approach",
-    "engine_airlock_door_jam"
+    "te_relief_ledger",
+    "te_inspection_door"
    ]
   },
   {
-   "chemistry": "首席女主任沉静发令指挥若定，护士长以纯白防化大氅与灵动机变筑起绝对视觉护盾，白衣双璧默契无间化解走光危厄。",
-   "id": "combo_qingyi_and_yuqin",
+   "chemistry": "你和{char_lu_qingyi_officer.name}是多年的同道，也是彼此认定的人，只是从没在人前承认过。今夜你坐在评议席上，对方站在被查的一边。",
+   "id": "cc_lu_and_inspector_audit",
    "identity_ids": [
-    "identity_head_nurse"
+    "identity_peer_reviewer"
    ],
    "player_positions": [
-    "low",
-    "equal",
     "high"
    ],
    "power_structure": "player_high",
@@ -192,139 +163,38 @@
      },
      "b": "char_lu_qingyi_officer",
      "b_to_a": {
-      "tension": 2,
+      "tension": 3,
       "trust": 5
      },
-     "reason": "经历无数生死急救淬炼之至高白衣同袍信赖",
-     "stage": "committed"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 5
-     },
-     "b": "char_he_yuqin_head_nurse",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 5
-     },
-     "reason": "彼此后背相依绝不相负之忠诚守护臂膀",
-     "stage": "intimate"
-    },
-    {
-     "a": "char_lu_qingyi_officer",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 5
-     },
-     "b": "char_he_yuqin_head_nurse",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 5
-     },
-     "reason": "相伴数载情深谊长坚如磐石之骨肉科室姐妹真情",
+     "reason": "当年在海外研修，暴风雪夜的图书馆里两人并肩读到天亮，{char_lu_qingyi_officer.name}把刻着希波克拉底誓词的银领夹送给了你。",
      "stage": "committed"
     }
    ],
    "slots": [
-    "char_lu_qingyi_officer",
-    "char_he_yuqin_head_nurse"
+    "char_lu_qingyi_officer"
    ],
    "stakes": {
-    "irreplaceable_goal": "确保女主任制服万全无损状态下从容抽身脱扣并迎接外客。",
-    "limit_gap": "女主任行动受死咬衣服所困，护士长则不能违规公然擅自离岗越权喧闹。",
-    "meeting_reason": "配药大厅风淋气闸夜巡质控与紧急应急演练执行。",
-    "resource_gap": "女主任执掌全科处方与抢险核心决断权，护士长备有应急防辐射大氅与贴身掩护手腕，无可替代相得益彰。"
+    "irreplaceable_goal": "主任要你一句实话：这本账交上去，你站在规矩那边，还是站在自己这边。",
+    "limit_gap": "你护短一次，评议资格就没了；主任认账，专科可能摘牌。",
+    "meeting_reason": "{char_lu_qingyi_officer.name}在无菌室里把封存完整的科室收支真账推到台前，等你拿出同行评议的处理意见。",
+    "resource_gap": "你有复核终审票和封存账目的权力，主任手里只有一本真账。"
    },
-   "tags": [],
+   "tags": [
+    "intimate",
+    "workplace_power"
+   ],
    "tension_engine_ids": [
-    "engine_modesty_tear_threat",
-    "engine_uv_sterilization_clock"
+    "te_relief_ledger"
    ]
   },
   {
-   "chemistry": "暖通总工深通气动压差自锁机械构造，女主任妙悟外科器械微观杠杆解剖，二人隔窗相视无声比划暗语默契解开工业死结。",
-   "id": "combo_qingyi_and_chengye",
+   "chemistry": "{char_lu_qingyi_officer.name}配的药，你在病床边用；你写的处方，对方连夜核。那次之后谁也没再提，可交药时手总要多停一下。",
+   "id": "cc_lu_and_icu_order",
    "identity_ids": [
-    "identity_hvac_engineer"
+    "identity_icu_attending"
    ],
    "player_positions": [
-    "low",
-    "equal",
-    "high"
-   ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 4
-     },
-     "b": "char_lu_qingyi_officer",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 4
-     },
-     "reason": "对女主任临危不乱过人胆识与慧根深感折服",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 4
-     },
-     "b": "char_lin_chengye_engineer",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 4
-     },
-     "reason": "以硬核技术实力相互支持之机电技术伙伴",
-     "stage": "familiar"
-    },
-    {
-     "a": "char_lu_qingyi_officer",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 4
-     },
-     "b": "char_lin_chengye_engineer",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 4
-     },
-     "reason": "尊重工程技术科学之名医与敬佩临床大家之工程师默契",
-     "stage": "familiar"
-    }
-   ],
-   "slots": [
-    "char_lu_qingyi_officer",
-    "char_lin_chengye_engineer"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "在紫外灯高压放电前挑开联锁滑块使气动门自然回弹滑开。",
-    "limit_gap": "工程师不可擅闯无菌大厅内部席位，女主任身在舱内无法直接触及外侧控制箱。",
-    "meeting_reason": "负压大厅断电应急旁路启动与设备现场抢修保障。",
-    "resource_gap": "工程师掌握全院管线与外侧泄压控制阀，女主任手握截骨锤平柄与现场自救决策权。"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "engine_airlock_door_jam",
-    "engine_uv_sterilization_clock"
-   ]
-  },
-  {
-   "chemistry": "骨科霸王花住院总精通器械刃角刚力，女主任沉稳操持截骨锤以巧破千斤，当代青年医学才女同心协力以精湛器械手腕斩断一切陈规枷锁。",
-   "id": "combo_qingyi_and_sihan",
-   "identity_ids": [
-    "identity_chief_medical_officer"
-   ],
-   "player_positions": [
-    "low",
-    "equal",
-    "high"
+    "equal"
    ],
    "power_structure": "equal",
    "relations": [
@@ -339,976 +209,1331 @@
       "tension": 3,
       "trust": 4
      },
-     "reason": "相知相惜之青年一代外科才女挚友同盟",
+     "reason": "半月前一台抢救结束，你和{char_lu_qingyi_officer.name}在更衣室累得靠在一起，额头相抵；对方把私人调剂台的密码告诉了你。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "char_lu_qingyi_officer"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "主任低声问你，送完药还回不回来，那笔账愿不愿意陪着对完。",
+    "limit_gap": "主任不能跳过复核，你不能越级调拨。",
+    "meeting_reason": "{char_lu_qingyi_officer.name}在风淋门口飞快复核完升压药，把药液交到你手里，叮嘱你立刻从专用货梯送进病房。",
+    "resource_gap": "主任握着放行签字，你握着三份病危处方和床旁领药牌。"
+   },
+   "tags": [
+    "intimate",
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_icu_drugs",
+    "te_relief_ledger"
+   ]
+  },
+  {
+   "chemistry": "你和{char_lu_qingyi_officer.name}为考评路线碰过好几次头，对方总在图纸前靠得比必要的近一点，又在你回头时退开半步。",
+   "id": "cc_lu_and_admin_liaison",
+   "identity_ids": [
+    "identity_admin_liaison"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "char_lu_qingyi_officer",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "三天前商定考评路线，{char_lu_qingyi_officer.name}借着指点图纸靠到你身前，发间一股柑橘香，轻声约你考评通过后一起吃晚饭。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "char_lu_qingyi_officer"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "主任问你，这份协议你是收下替科室挡一挡，还是原样退回去。",
+    "limit_gap": "主任不能让争议项目出现在汇报里，你不能替科室改考评流程。",
+    "meeting_reason": "{char_lu_qingyi_officer.name}在值班室把那份争议赠药协议交到你手里，低声问能不能在汇报时把这一项暂列为院级科研试点。",
+    "resource_gap": "主任握着专科答辩，你握着接待路线和绿色通道特批章。"
+   },
+   "tags": [
+    "romance_light",
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_inspection_door",
+    "te_relief_ledger"
+   ]
+  },
+  {
+   "chemistry": "{char_gu_jingming_director.name}和你在评审会上吵过不止一次，彼此都敬重，也都挑剔。今夜同坐一张评议桌，谁也不肯先松口。",
+   "id": "cc_gu_and_inspector_standard",
+   "identity_ids": [
+    "identity_peer_reviewer"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 2
+     },
+     "b": "char_gu_jingming_director",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "数年前国家课题评审会上，你和{char_gu_jingming_director.name}为抗生素分级管理争了整整一下午，散会后对方追出来说你讲得对。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "char_gu_jingming_director"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "组长要你当场表态：这笔账按规矩审，还是按人情审。",
+    "limit_gap": "组长不能私下说情，你不能把争议账目压下不报。",
+    "meeting_reason": "{char_gu_jingming_director.name}站在外廊上，评分表攥在手里，盯着风淋门问你：主任的台账，你是不是准备依规按章地审。",
+    "resource_gap": "你有复核否决票，组长有一票否决权和停职提请权。"
+   },
+   "tags": [
+    "workplace_power"
+   ],
+   "tension_engine_ids": [
+    "te_inspection_door",
+    "te_rep_forgery"
+   ]
+  },
+  {
+   "chemistry": "{char_he_yuqin_head_nurse.name}每逢夜班都给你留一份面包豆浆，两人在连廊上聊过全院的八卦，算得上这层楼里最熟的人。",
+   "id": "cc_he_and_guard_corridor",
+   "identity_ids": [
+    "identity_security_supervisor"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 1,
+      "trust": 4
+     },
+     "b": "char_he_yuqin_head_nurse",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 4
+     },
+     "reason": "两年来{char_he_yuqin_head_nurse.name}每个夜班都把多领的面包和热豆浆放在保卫值班室，有一回还替你挨了护理部的骂。",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
+    "char_he_yuqin_head_nurse"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "护士长只问你一句：带，还是不带。",
+    "limit_gap": "护士长不能把票据带出大楼，你不能在查账期间替谁运东西。",
+    "meeting_reason": "{char_he_yuqin_head_nurse.name}在风淋门外拉住你的袖口，把记着无名氏救助明细的手账本塞进你的大衣下摆，求你夜巡时带出大楼。",
+    "resource_gap": "护士长握着库房钥匙和那本手账，你握着门禁卡和夜巡的路线。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_relief_ledger",
+    "te_inspection_door"
+   ]
+  },
+  {
+   "chemistry": "{char_pharma_rep_song.name}常在ICU护士站转，见了你话就多，还提过能帮你争取海外进修名额，你没接这个话。你分不清对方的笑有几分是生意，对方似乎也分不清。",
+   "id": "cc_song_and_icu_supply",
+   "identity_ids": [
+    "identity_icu_attending"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "char_pharma_rep_song",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "前日在ICU护士站，{char_pharma_rep_song.name}递赠药目录时指尖擦过你的手背，两人都没缩手，对视了好一会儿。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "char_pharma_rep_song"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "医药代表问你，帮这一次，还是今晚就把话说清楚。",
+    "limit_gap": "医药代表不能碰病历，你不能替企业的试用药签字。",
+    "meeting_reason": "{char_pharma_rep_song.name}在分控室的阴影里截住取药回来的你，拿出一份签好免责条款的新药试用函，求你在病历上补一个签名。",
+    "resource_gap": "医药代表握着赠药指标和科研赞助，你握着处方和病历的签字权。"
+   },
+   "tags": [
+    "romance_light",
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_rep_forgery",
+    "te_icu_drugs"
+   ]
+  },
+  {
+   "chemistry": "你和{char_lin_chengye_engineer.name}在后勤系统共事多年，一个排路线一个看门禁，配合得不用多说话。最近对方看你的时间，比看压差屏还长。",
+   "id": "cc_lin_and_admin_power",
+   "identity_ids": [
+    "identity_admin_liaison"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 4
+     },
+     "b": "char_lin_chengye_engineer",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "上月一起排查全院氧气管道，在泵房轮班守了一整夜，天亮时{char_lin_chengye_engineer.name}把保温杯推给你，约好去老街吃早点。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "char_lin_chengye_engineer"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "总工问你，今晚替主任挡人算你一份，还是你装没看见。",
+    "limit_gap": "总工不能瞒报隐患，你不能改动专家组的日程。",
+    "meeting_reason": "{char_lin_chengye_engineer.name}在分控室把门禁记录屏转向你，说外廊西侧那段路可以借巡视的名义拦一拦，问你要不要替主任挡这一阵。",
+    "resource_gap": "暖通总工握着气闸联锁和门禁记录，你握着考评路线和特批章。"
+   },
+   "tags": [
+    "romance_light",
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_inspection_door",
+    "te_relief_ledger"
+   ]
+  },
+  {
+   "chemistry": "{char_gu_jingming_director.name}查返点查到了{char_pharma_rep_song.name}头上；你和组长在期刊上交过手，和医药代表有过一段没说破的旧情。",
+   "id": "cc_gu_song_kickback_clash",
+   "identity_ids": [
+    "identity_peer_reviewer"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 2
+     },
+     "b": "char_gu_jingming_director",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 2
+     },
+     "reason": "你和{char_gu_jingming_director.name}在期刊上就抗生素用药交锋过好几轮，各自的回应文章至今挂在学会网站上。",
+     "stage": "testing"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "char_pharma_rep_song",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "数月前研讨会散场后，你和{char_pharma_rep_song.name}在酒店露台长谈到深夜，吻别时对方把私人邮箱的密钥留给了你。",
      "stage": "intimate"
     },
+    {
+     "a": "char_gu_jingming_director",
+     "a_to_b": {
+      "tension": 4,
+      "trust": -2
+     },
+     "b": "char_pharma_rep_song",
+     "b_to_a": {
+      "tension": 5,
+      "trust": -1
+     },
+     "reason": "{char_gu_jingming_director.name}盯{char_pharma_rep_song.name}的账盯了一整个考评季。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "char_gu_jingming_director",
+    "char_pharma_rep_song"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "两人都在等你看那张凭证：认它是行贿，还是先听医药代表说完。",
+    "limit_gap": "组长不能私了，医药代表不能自证清白，你两头都不能偏。",
+    "meeting_reason": "更衣通道口，{char_gu_jingming_director.name}把一张异常返点凭证拍在{char_pharma_rep_song.name}胸前，对方辩称是科研公益资助；你一走近，组长把凭证递给你，医药代表别开了脸。",
+    "resource_gap": "组长握着异常返点凭证，医药代表握着历年往来的底册，你握着复核终审票。"
+   },
+   "tags": [
+    "intimate",
+    "crime"
+   ],
+   "tension_engine_ids": [
+    "te_rep_forgery",
+    "te_inspection_door"
+   ]
+  },
+  {
+   "chemistry": "{char_he_yuqin_head_nurse.name}和{char_jiang_jianping_pharmacist.name}为那本账在分控室里吵翻了；护士长是和你靠过肩的人，主任药师则是总找你开门、又总把责任往外推的老熟人。",
+   "id": "cc_he_jiang_ledger_secret",
+   "identity_ids": [
+    "identity_security_supervisor"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
     {
      "a": "player",
      "a_to_b": {
       "tension": 3,
       "trust": 4
      },
-     "b": "char_song_sihan_fellow",
+     "b": "char_he_yuqin_head_nurse",
      "b_to_a": {
       "tension": 3,
-      "trust": 4
+      "trust": 5
      },
-     "reason": "同气连枝刀法凌厉之同行至交骨干",
+     "reason": "两年前一个寻常夜班后，你和{char_he_yuqin_head_nurse.name}在保卫值班室的暖气边聊到天亮，对方把贴身的银十字项链放进了你的制服内袋。",
      "stage": "intimate"
     },
     {
-     "a": "char_lu_qingyi_officer",
+     "a": "player",
      "a_to_b": {
       "tension": 3,
-      "trust": 4
+      "trust": 1
      },
-     "b": "char_song_sihan_fellow",
+     "b": "char_jiang_jianping_pharmacist",
      "b_to_a": {
       "tension": 3,
-      "trust": 4
+      "trust": 1
      },
-     "reason": "彼此笃定信赖对方外科手腕之同龄青年名医知己之交",
-     "stage": "intimate"
+     "reason": "{char_jiang_jianping_pharmacist.name}每回忘带门禁卡都找你开门，可去年库房失窃，对方当着领导的面把责任推给了保卫部。",
+     "stage": "testing"
+    },
+    {
+     "a": "char_he_yuqin_head_nurse",
+     "a_to_b": {
+      "tension": 5,
+      "trust": -2
+     },
+     "b": "char_jiang_jianping_pharmacist",
+     "b_to_a": {
+      "tension": 4,
+      "trust": -1
+     },
+     "reason": "护士长和主任药师共事十年，今夜头一回撕破脸。",
+     "stage": "testing"
     }
    ],
    "slots": [
-    "char_lu_qingyi_officer",
-    "char_song_sihan_fellow"
+    "char_he_yuqin_head_nurse",
+    "char_jiang_jianping_pharmacist"
    ],
    "stakes": {
-    "irreplaceable_goal": "完好无损撬脱咬带并确保截骨锤与白袍毫发无伤。",
-    "limit_gap": "{char_song_sihan_fellow.given}需顾忌门外纪律不能喧哗，{char_lu_qingyi_officer.given}身在受困死角需全神贯注掌控力矩平衡。",
-    "meeting_reason": "急救特种手术器械紧急调配与夜巡质控会签现场。",
-    "resource_gap": "{char_song_sihan_fellow.given}身怀骨科特种剥离器与精悍外科手法，{char_lu_qingyi_officer.given}具备领军名医之从容气魄与主刀大度。"
+    "irreplaceable_goal": "护士长要你作证底单上有谁的名字，主任药师要你什么都没看见。",
+    "limit_gap": "护士长不能销毁票据，主任药师不能篡改底单，你不能替谁锁门。",
+    "meeting_reason": "分控室里，{char_jiang_jianping_pharmacist.name}把复印的底单摊在配电柜上，逼护士长在推责给主任的认定书上签字；护士长按住账本，把一张旧签字底单塞进你手里。",
+    "resource_gap": "主任药师握着复印的返点底单，护士长握着对方当年签字的证据，你握着分控室的门禁。"
    },
-   "tags": [],
+   "tags": [
+    "intimate",
+    "workplace"
+   ],
    "tension_engine_ids": [
-    "engine_modesty_tear_threat",
-    "engine_director_inspection_approach"
+    "te_relief_ledger",
+    "te_inspection_door"
    ]
   }
  ],
  "channels": [
   {
    "fidelity": "exact",
-   "id": "chan_intercom_airlock_buzz",
-   "reach": "负压配药大厅与气闸门内外三米区域",
-   "text": "负压大厅无菌双向对讲系统在断电时发出极低频脉冲震颤，能清晰传导门槽金属形变与卡扣崩弹轻响。"
+   "id": "ch_inspection_minutes",
+   "reach": "当夜汇总到专家组长手里",
+   "text": "考评组的现场记录"
+  },
+  {
+   "fidelity": "exact",
+   "id": "ch_access_log",
+   "reach": "调得出每扇门的进出时间",
+   "text": "保卫部的门禁和监控记录"
   },
   {
    "fidelity": "distorted",
-   "id": "chan_uv_countdown_horn",
-   "reach": "整栋住院楼，一个巡房的工夫就传遍，传到急诊科已经成了另一个故事",
-   "text": "夜班护士站里互相递的悄悄话"
+   "id": "ch_ward_gossip",
+   "reach": "一个夜班传遍全院",
+   "text": "护士站和保洁间的闲话"
   }
  ],
  "character_templates": [
   {
-   "adult_context": "国家首批拔尖医学创新班全科培养年届桃李二十一周岁，依法享有完备独立民事与医疗执业权能，纯情处女。",
+   "adult_context": "年满三十二岁、持证执业十年的临床药学博士，配药中心主任。",
    "age_range": [
-    21,
-    22
+    32,
+    35
    ],
    "appearance_options": [
-    "修长清冷知性丽人身姿，白瓷面庞微带一点血色与清冷双眸反差绝美；黑发盘于无菌帽，身着高定雪白立领长褂，内衬粉白细绢衬衣配浅灰铅笔裙，佩带纯银听诊器，圣洁出尘。",
-    "素白修身医师长袍勾勒出曼妙窈窕之典雅腰线，双颊如初雪凝脂般泛着健康微红，神态沉稳干练透着名医大家风范。"
+    "修长清冷，白瓷面庞微带血色，黑发盘进无菌帽，雪白立领长褂下是粉白细绢衬衣和浅灰铅笔裙，胸前挂着纯银听诊器。",
+    "素白修身长袍收出腰线，双颊像初雪泛着微红，神态沉稳干练。"
    ],
    "decision": {
     "avoids": [
-     "慌乱呼喊引来大批病患家属骚动聚集",
-     "蛮力强拽导致真丝铅笔裙侧拉链彻底崩坏"
+     "在人前被追问私事"
     ],
-    "contrast": "外表文静清冷之柔美名门女医，解构机械险情时手法如外科解剖般精准决绝",
-    "core_value": "医者仁心严谨自持，生死关头亦不损职业圣洁与高尚尊严",
+    "contrast": "人前是业务无可挑剔的学术带头人；值班室门一关，会脱了白大褂坐在床沿，说不想一个人待着。",
+    "core_value": "账可以错，药不能错，人更不能丢下。",
     "goal_options": [
-     "以骨科截骨锤平柄撬开联锁滑块抽身迎接评审团",
-     "在臭氧脉冲喷放前抚平白袍恢复端庄巡查仪态"
+     "在考评组进门前把暗账的来龙去脉理清",
+     "守住全科的名分和重点专科",
+     "让那个人知道自己不必一个人扛"
     ],
     "never": [
-     "在强权审视面前流露半分惊慌失措怯懦神情",
-     "抛弃无菌药剂配制原则造成医疗事故"
+     "在处方上做假"
     ],
     "prefers": [
-     "利用纯钢外科法具施展微观解剖级精密撬拨技巧",
-     "用防化防辐射纯白大氅封堵外廊投射视线"
+     "说真话的人"
     ],
     "pressure_responses": {
-     "breaking": "在卡舌弹开瞬间轻盈收拢裙摆，以沉静威严之姿拉开门扉迎客",
-     "high": "贝齿紧咬下唇忍受金属毛刺刮擦痛楚，手腕猛然下压四点二牛顿偏转力矩",
-     "low": "单足轻点地面稳住身形，冷静注视气压表指针回落幅度",
-     "mid": "左手借药台遮挡前胸衣领变形，右手反执截骨锤探入金属死角"
+     "breaking": "背对层流罩，肩头发抖，却仍把处方一张张签完。",
+     "high": "攥着私章站到风淋门口，准备一个人走出去认账。",
+     "low": "说话更慢，每张处方核对两遍。",
+     "mid": "拉下门帘，在无菌室里独自对账，谁敲门都只应一声。"
     },
-    "relationship_stance": "与护士长默契相照，对行政考评团不卑不亢从容自若",
-    "withdrawal": "在交班大厅从容签署无菌配药合格批件"
+    "relationship_stance": "不轻易靠近谁，认定了一个人，就把私章交到对方手里。",
+    "withdrawal": "回值班室把门反锁，对着那本收据坐到天亮。"
    },
    "gender": "female",
-   "gender_reason": "现代医学三甲医院清冷巡查首席女主任医官人设",
+   "gender_reason": "标题写明女主任，固定为女性。",
    "id": "char_lu_qingyi_officer",
    "identity": {
-    "authority": "对全院急诊配药无菌通道与夜巡应急事务拥有最高现场裁决权",
-    "exposure": "衣物撕裂将导致医德风评受损引来不良非议",
-    "hidden": "白大褂内侧暗袋配带一支高强度医用纯钛快速剪线钳",
+    "authority": "握着全院急救特药配制的终审放行权、重点专科现场答辩权和科室备用金的使用权。",
+    "exposure": "科室公账里有一笔盖着本科室私章的药代返点往来，查实就会被摘牌。",
+    "hidden": "早知道那笔钱救过几个无名氏的命，一直在犹豫要不要亲口认下；也一直在等某个人问一句累不累。",
     "limits": [
-     "严禁在考评专家团面前失态喧哗或露出衣衫不整走光",
-     "灭菌臭氧喷放前必须安全撤出无菌舱段免遭呼吸道化学灼伤"
+     "考评期间不能离开配药中心"
     ],
     "obligations": [
-     "确保全院夜间重症急救药品配制流程万无一失",
-     "在重大行政评审考评中捍卫医院示范无菌中心名誉"
+     "今晚把三份急救处方配完放行"
     ],
     "resources": [
-     "德国特制高硬度平头骨凿与外科测距仪",
+     "寿山石个人私章",
      "省卫生厅特聘专家顾问身份金卡"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "惊涛骇浪中心如止水之超凡定力",
-     "圣洁仁爱且傲骨凛然之学者品格"
+     "深夜还肯陪着核对处方的耐心",
+     "不怕跟自己一起担事的坦荡"
     ],
     "boundaries": [
-     "救险时的触碰只算救命，不算数",
-     "要等自己点头，衣扣才能解开"
+     "轻扣玻璃三下就停，这是自己定下的约"
     ],
     "desire_range": [
      2,
      4
     ],
-    "desired_position": "圣洁冷艳不可亵渎之现代医学女宗师",
+    "desired_position": "值班室床沿并肩坐着的那个位置",
     "dislikes": [
-     "轻浮市侩之徒",
-     "敷衍塞责之伪劣操作",
-     "污浊混乱之杂乱环境"
+     "拿病人做交易的人"
     ],
     "expression": "脱下白大褂搭在椅背上，坐在值班室的床沿，声音很轻：门锁上吧……今晚这一身冷汗，不想一个人待着。",
     "likes": [
-     "洁净如新之无菌器具",
-     "下夜班后有人陪着坐在值班室里，替自己把被钢槽咬歪的裙侧暗扣一枚枚扣好",
-     "淡雅消毒水与松木清香"
+     "保温盒里温热的饺子"
     ],
     "preconditions": [
-     "眼前的危局已经过去，双方都清醒、安全",
-     "出于本人的心意，不夹带报恩、交换或旁人的催促"
+     "两人都清醒，门外没有考评组"
     ],
     "self_control_range": [
      3,
      5
     ]
    },
-   "public_role": "三甲医院值班巡查首席主任医官",
+   "public_role": "负压无菌配药中心主任",
    "schedule": [
     {
-     "from": 1370,
+     "from": 0,
      "location_id": "loc_sterile_dispensing_hall",
-     "to": 1400
+     "to": 300
     },
     {
-     "from": 1401,
-     "location_id": "loc_airlock_interlock_sliding_gate",
-     "to": 1430
+     "from": 300,
+     "location_id": "loc_on_call_room",
+     "to": 480
+    },
+    {
+     "from": 480,
+     "location_id": "loc_sterile_dispensing_hall",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "白皙手腕被金属合页边缘刮蹭泛红生疼",
-      "option": "反持整骨器械硬把手对准间隙撬退卡扣，利用四点二牛顿力矩迫退簧片"
+      "cost": "自己背上财务不规范的诫勉谈话。",
+      "option": "把收据本亲手交给考评组长"
      },
      {
-      "cost": "大门开启略微延滞招致挑剔考评专家蹙眉打量",
-      "option": "示意护士长扬起防化披风阻挡外探目光协助后撤"
+      "cost": "考评组在门外越等越起疑。",
+      "option": "先把急救药配完放行，账留到天亮再说"
      }
     ],
-    "pressure": "脉冲消杀流程进入红区警报，走廊外评审专家皮鞋击地声仅余十步之遥",
-    "trigger": "内外压差骤升，重型双向气闭推拉门突发机械死锁，白大褂腰带与裙装扣件卡入缝隙"
+    "pressure": "认下暗账，重点专科可能摘牌；瞒下去，就违了自己的底线。",
+    "trigger": "考评组已到风淋门外，抽屉里那本收据证实返点全用在了无名氏的抢救费上。"
    },
    "tags": [
+    "workplace",
     "intimate"
    ],
    "voices": {
-    "inner": "截骨锤柄端已楔入门轨凹槽，顺时针方向下压两毫米，系带便可脱离死扣。",
-    "surface": "负压配药大厅风淋压差已重新平衡，请考评专家各位长官移步进内视察。"
+    "inner": "这笔账我一个人认得下，就不必拖累谁。",
+    "surface": "处方给我，签字我来。"
    }
   },
   {
-   "adult_context": "公立医学院校科班出身年届二十二岁成年护理主管，行使重症监护巡视权柄。",
+   "adult_context": "年满三十三岁、持证十二年的主管护师，配药中心当班护士长。",
    "age_range": [
-    22,
-    23
+    33,
+    36
    ],
    "appearance_options": [
-    "身穿浅粉色抗菌护士服配雪白防滑厚底鞋，头戴燕尾帽，身姿灵巧利落，眉宇间带着临床百炼之沉稳机智。",
-    "深蓝防尘外勤工作服整洁干练，青丝盘于防静电发网中，目光灵动警觉时刻守护四方。"
+    "短发利落，护士帽下一双眼睛很亮，袖口总挽到小臂，口袋里塞着记事本和两支笔。",
+    "身形结实，走路带风，制服内袋露出一截银链。"
    ],
    "decision": {
     "avoids": [
-     "门外专家目光扫视到女主任狼狈处",
-     "惊慌失措碰落器械盒"
+     "被人当面质疑护理质量"
     ],
-    "contrast": "外表温柔甜美之天使女护士，面对危机动作迅猛刚毅如特战队员",
-    "core_value": "女主任的体面与安全就是科室的生命线",
+    "contrast": "人前风风火火、嗓门大；只在那个人面前肯坐下来，说自己其实很怕。",
+    "core_value": "命救下来了，账我来想办法。",
     "goal_options": [
-     "展开纯白大氅严密遮蔽女主任裙袍受卡部位",
-     "以引导考评团按路线更衣为由拖延数秒生机"
+     "在考评组进门前把手账送出大楼",
+     "逼主任药师认下自己签过的字",
+     "护住主任不被一个人推出去"
     ],
     "never": [
-     "在盘诘面前背弃女主任主任",
-     "出卖科室名誉求荣"
+     "出卖手下的护士"
     ],
     "prefers": [
-     "防化大氅遮蔽视线盲区",
-     "用临床专业手语无声传递指令"
+     "肯搭把手的人"
     ],
     "pressure_responses": {
-     "breaking": "在长袍脱扣刹那麻利收拢披肩将主任周全护在身后",
-     "high": "单膝半蹲借递送换药弯盘掩护暗中伸手托扶受挤门沿",
-     "low": "在门旁端立手持护理日志，密切监控走廊外人员走向",
-     "mid": "机敏展开白色大氅假作遮风整理衣冠贴近玻璃门窗"
+     "breaking": "躲进库房抱着手账哭一场，擦干脸再出来。",
+     "high": "当着人摔下记事本，指名道姓骂人落井下石。",
+     "low": "话变多，手上不停。",
+     "mid": "把手账塞进大衣下摆，找最信得过的人。"
     },
-    "relationship_stance": "心有灵犀情同姐妹之至信左膀右臂",
-    "withdrawal": "跟随女主任步入交班室协助其换上备用洁净制服"
+    "relationship_stance": "护短，心软，对自己人掏心掏肺。",
+    "withdrawal": "去库房清点耗材，把门关上谁也不理。"
    },
    "gender": "female",
-   "gender_reason": "贴身护卫同袍女护士长人设",
+   "gender_reason": "按创意卡设定为女性护士长。",
    "id": "char_he_yuqin_head_nurse",
    "identity": {
-    "authority": "对大厅物料调度与人员消毒隔离具有现场监督权",
-    "exposure": "护卫不力致使主任受辱走光将引来全院严惩",
-    "hidden": "熟知负压大厅应急通风旁路手动机械手拉索位置",
+    "authority": "掌握无菌大厅的物料调度、感控消毒的执行监督和二级库房高危耗材的钥匙。",
+    "exposure": "那本手账一旦被查到，全科的救助都会被当成违规挪用。",
+    "hidden": "知道那笔返点是给无钱就医的无名氏设的救助池，也知道主任药师当年签过字。",
     "limits": [
-     "未经主任允许不得擅自调整大厅核心气阀控制箱"
+     "账目上没有签字权"
     ],
     "obligations": [
-     "誓死维护女主任主任之完美专业形象免遭半分损伤"
+     "护住手下的配药护士"
     ],
     "resources": [
-     "特制防尘抗静电双层防护长袍",
-     "随身备用加压氧气包与快速压脉带"
+     "二级库房钥匙",
+     "记着无名氏救助明细的手账本"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "女主任身上清冷卓越之医术风范",
-     "患难与共之深厚科室同袍情谊"
+     "夜巡时多看一眼库房门的细心",
+     "替别人保守秘密的嘴严"
     ],
     "boundaries": [
-     "严守下级护士长对主任医官之崇高礼敬分寸"
+     "有人在门外就停"
     ],
     "desire_range": [
-     1,
-     2
+     2,
+     4
     ],
-    "desired_position": "最信赖之贴身白衣守护者",
+    "desired_position": "保卫值班室里靠着暖气的那个位置",
     "dislikes": [
-     "官僚作风之挑剔考评官",
-     "粗制滥造之医疗耗材"
+     "推卸责任的人"
     ],
-    "expression": "以坚定敏锐之点头致意向女主任传递安心防线信号",
+    "expression": "把手账压在胸口，额头抵着对方肩窝，半天才说一句别走。",
     "likes": [
-     "摆放井然之无菌托盘",
-     "主任赞许信任之温和目光"
+     "热豆浆"
     ],
     "preconditions": [
-     "建立在互托安危之临床并肩作战信任基石上"
+     "夜班结束、两人都清醒"
     ],
     "self_control_range": [
-     4,
-     5
+     2,
+     4
     ]
    },
-   "public_role": "配药中心兼职护士长",
+   "public_role": "配药中心当班护士长",
    "schedule": [
     {
-     "from": 1375,
+     "from": 0,
      "location_id": "loc_sterile_dispensing_hall",
-     "to": 1405
+     "to": 360
     },
     {
-     "from": 1406,
-     "location_id": "loc_airlock_interlock_sliding_gate",
-     "to": 1435
+     "from": 360,
+     "location_id": "loc_hospital_rounds_corridor",
+     "to": 600
+    },
+    {
+     "from": 600,
+     "location_id": "loc_sterile_dispensing_hall",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "自己侧臂被门缝残留气流喷溅稍感冰凉",
-      "option": "跨前一步手展宽幅纯白大氅以优雅身姿封死所有外探视线"
+      "cost": "两人一起被考评组问话。",
+      "option": "拿出主任药师当年签过字的底单反制"
      },
      {
-      "cost": "事后恐被挑剔评委以操作失仪为由扣减科室细目分",
-      "option": "假装失手让推车上空托盘发出清脆撞击引开外廊注意三秒"
+      "cost": "违反查账期间不得销毁票据的规定。",
+      "option": "把手账托给信得过的人带出大楼"
      }
     ],
-    "pressure": "必须在六步之内借大氅封堵视线并协助主任脱险",
-    "trigger": "门外考评专家逼近观察窗，女主任长袍卡死无法转身"
+    "pressure": "签了就是出卖主任；不签，主任药师就把手账的事抖给考评组。",
+    "trigger": "主任药师拿着复印好的底单，逼护士长在推责给主任的认定书上签字。"
    },
-   "tags": [],
+   "tags": [
+    "workplace",
+    "intimate"
+   ],
    "voices": {
-    "inner": "大氅已拉成完整幕墙，专家脚步还剩六步，女主任快用力挑退簧片！",
-    "surface": "女主任，防尘大氅已拿取，请主任稍候片刻再启门迎接外客。"
+    "inner": "这本账要是落到考评组手里，那几条命就白救了。",
+    "surface": "面包豆浆给你留了，趁热。"
    }
   },
   {
-   "adult_context": "主管医疗业务之五十七岁副职院长，行使全院考评巡视大权。",
+   "adult_context": "年满五十二岁、执业三十年的主任医师，卫健委复审考评专家组长。",
    "age_range": [
-    55,
-    58
+    52,
+    56
    ],
    "appearance_options": [
-    "身穿笔挺深灰中山装式行政制服，银发梳理得一丝不苟，戴金丝半框眼镜，神情威严肃穆，手持红头考评文件夹目光犀利。",
-    "外罩深色双排扣羊毛大衣，神态不怒自威，步履沉稳如钟，透着深厚医学泰斗风度。"
+    "鬓发花白，金丝眼镜，深灰中山装熨得没有一道褶，手里总拿着评分表。",
+    "个子不高，站得笔直，说话前习惯先摘下眼镜擦一擦。"
    ],
    "decision": {
     "avoids": [
-     "慌张混乱之失态举止",
-     "弄虚作假之应付行为"
+     "被人拿旧情说事"
     ],
-    "contrast": "外表铁面无私不讲情面之冷面院长，危急时刻心如明镜护持青年栋梁",
-    "core_value": "制度严于生命安全大于天，唯有真正经得起极限考验方为国手",
+    "contrast": "人前铁面无私、眼里不揉沙子；人后会把自己的保温杯塞给值夜班的年轻人。",
+    "core_value": "规矩是给救命的人立的，不是给人藏身的。",
     "goal_options": [
-     "按严苛标准审查负压大厅在突发断电时之应急自救水准",
-     "在女主任从容开门后给予权威背书力排众议"
+     "查清返点的真实去向",
+     "确认当年带出来的人守住了医德底线",
+     "让伪造签名的人付出代价"
     ],
     "never": [
-     "公报私仇打压优秀苗子",
-     "对严重医疗违规网开一面"
+     "在考评结论上作假"
     ],
     "prefers": [
-     "处变不惊之大家风范",
-     "合乎医疗力学规范之规范自救"
+     "据理力争的人"
     ],
     "pressure_responses": {
-     "breaking": "在门启刹那凝视女主任威严端方之仪容暗暗点头嘉许",
-     "high": "抬手制止身后激进评审员强行推门免破坏无菌气闸防线",
-     "low": "手持打分夹沿走廊缓步前行，目光审视风淋室指示灯变幻",
-     "mid": "驻足观察窗前侧耳倾听滑门内微弱机械动静是否异常"
+     "breaking": "一个人站在窗台前很久，背影比平时佝偻。",
+     "high": "当众宣布暂停考评，要求封存全部账目。",
+     "low": "问话更细，一项项对着评分表。",
+     "mid": "摘下眼镜慢慢擦，盯着风淋门不说话。"
     },
-    "relationship_stance": "严苛考校中蕴藏深厚器重期望之长辈师长",
-    "withdrawal": "落座示教室听取女主任作临床质控汇报"
+    "relationship_stance": "敬重硬骨头，对谁都不肯先低头。",
+    "withdrawal": "回外廊长椅坐下，把评分表翻到空白页，一笔也不写。"
    },
    "gender": "male",
-   "gender_reason": "行政副院长兼考评组组长男性长者身份",
+   "gender_reason": "按创意卡设定为男性考评组长。",
    "id": "char_gu_jingming_director",
    "identity": {
-    "authority": "掌控医院年度示范科室评审生杀大权与人事推荐权",
-    "exposure": "科室重大事故未察将连带承担全院管理连带问责",
-    "hidden": "内心极为看好女主任并将女主任视为未来院长接班人选",
+    "authority": "握着国家重点专科的一票否决权、全院医疗质量考核评定权和违规医师停职处分的提请权。",
+    "exposure": "曾是配药中心主任的引路恩师，偏袒的话一旦传开，考评结论全部作废。",
+    "hidden": "手里早有那笔钱的去向，想亲眼看自己当年带出来的人会不会主动认账。",
     "limits": [
-     "在缺乏确凿违章证据前不得擅自破坏无菌大厅安全规程"
+     "不能私下替被查科室说情"
     ],
     "obligations": [
-     "严格按照国际标杆考核配药中心之无菌与应急防灾能力"
+     "按章给出考评结论"
     ],
     "resources": [
-     "评审团一票定乾坤之打分表",
-     "全院行政保卫调遣令印信"
+     "从药剂科抽调的异常返点凭证",
+     "考评评分表"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "年轻医官身上卓越不凡之技术定力",
-     "泰山压顶面不改色之凛然傲骨"
+     "敢当面顶撞的胆量",
+     "认了错就改的磊落"
     ],
     "boundaries": [
-     "严守院领导对年轻女主任医官之端庄距离界限"
+     "不在任何人面前失态"
     ],
     "desire_range": [
      1,
-     2
+     3
     ],
-    "desired_position": "医疗宗师之后盾长者与权威裁判",
+    "desired_position": "外廊窗台前并肩站着的位置",
     "dislikes": [
-     "谄媚逢迎之辈",
-     "遇到突发事件六神无主之草包"
+     "和稀泥的人"
     ],
-    "expression": "收起打分夹以深沉有力之肯定话语公开表扬科室应急能力",
+    "expression": "先摘下眼镜，再伸手，动作慢得像在等对方拒绝。",
     "likes": [
-     "规范严谨之质控表格",
-     "有胆有识之后起之秀"
+     "一杯浓茶"
     ],
     "preconditions": [
-     "恪守医疗伦理与学者尊严之崇高前辈与后起之秀相互敬重"
+     "考评结束，两人都清醒"
     ],
     "self_control_range": [
      4,
      5
     ]
    },
-   "public_role": "考评专家团首席组长",
+   "public_role": "卫健委复审考评专家组长",
    "schedule": [
     {
-     "from": 1385,
-     "location_id": "loc_airlock_interlock_sliding_gate",
-     "to": 1415
+     "from": 0,
+     "location_id": "loc_hospital_rounds_corridor",
+     "to": 420
     },
     {
-     "from": 1416,
-     "location_id": "loc_sterile_dispensing_hall",
-     "to": 1435
+     "from": 420,
+     "location_id": "loc_hvac_control_substation",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_hospital_rounds_corridor",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "引得身后急躁之同行专家低声窃窃非议",
-      "option": "以宣讲评审安全章程为由在门外停留十秒给予内席缓冲"
+      "cost": "整笔暗账随之曝光。",
+      "option": "当面质问医药代表，逼出伪造原件"
      },
      {
-      "cost": "彻底堵死女主任依靠自身力矩脱险之从容空间",
-      "option": "示意助理直接触碰应急电子开关强令开门"
+      "cost": "考评结论推迟，专科名分悬而未决。",
+      "option": "把凭证交给同行评议专家复核"
      }
     ],
-    "pressure": "若滑门抱死延误开启将按程序判定联锁系统失灵扣罚全分",
-    "trigger": "率领专家团抵近风淋气闸门口准备推门检查"
+    "pressure": "揭穿伪造，就得公开整笔暗账；压下来，就违了自己一辈子的规矩。",
+    "trigger": "医药代表的异常返点凭证落到了组长手里，签名笔迹和主任的对不上。"
    },
-   "tags": [],
+   "tags": [
+    "workplace",
+    "workplace_power"
+   ],
    "voices": {
-    "inner": "负压差引起的气动抱死难不住主任丫头，且看主任如何化解这最后十秒危局。",
-    "surface": "女主任，评审专家团已至洁净区门外，请汇报断电联锁自救测试结果。"
+    "inner": "当年教你的那些话，你还记得几句。",
+    "surface": "按章办事，不必看我的脸色。"
    }
   },
   {
-   "adult_context": "供职于后勤保障部之四十四岁高级机电主管，专职排查医院气闭门机电隐患。",
+   "adult_context": "年满二十八岁、入行六年的跨国药企大区医药代表。",
    "age_range": [
-    43,
-    46
+    28,
+    32
    ],
    "appearance_options": [
-    "身穿耐磨深蓝工程作训连体服，头戴安全帽，手提红外热像测温仪与特制纯钢气阀调节扳手，眉宇沉稳精明。",
-    "深灰防静电工装夹克整洁干练，腰间挂着多功能测压数显表，目光如炬透着工程师之严谨笃定。"
+    "西装剪裁合身，袖扣擦得发亮，笑起来眼角弯弯，身上一股很淡的雪松香。",
+    "手提包从不离身，说话时习惯微微前倾，像随时准备递上一张名片。"
    ],
    "decision": {
     "avoids": [
-     "粗暴用大锤砸坏气密滑轨",
-     "盲目慌乱乱按控制面板"
+     "被当众戳穿"
     ],
-    "contrast": "外表朴实无华之机电工程师，危难关头洞察秋毫手握破局密匙",
-    "core_value": "用机械逻辑排除一切技术隐患，确保白衣天使安全无虞",
+    "contrast": "人前周旋于各科主任之间滴水不漏；人后会把那个人随口提过的一句话记好几年。",
+    "core_value": "生意可以输，人情不能欠。",
     "goal_options": [
-     "在门外暗中比划手势指示滑门联锁卡销受力支点",
-     "手动摇动外侧泄压排气阀强行拉平大厅内外压差"
+     "收回主任桌上那份赠药协议",
+     "在考评组查到之前处理掉伪造的同意书",
+     "不想在那个人面前彻底失了体面"
     ],
     "never": [
-     "隐瞒设备严重结构隐患",
-     "坐视医护人员在负压事故中受创"
+     "拿病人的命冒险"
     ],
     "prefers": [
-     "机械原理巧劲破解",
-     "尊重工程规律之微观技术配合"
+     "给面子的人"
     ],
     "pressure_responses": {
-     "breaking": "在滑门脱扣刹那快速收好工具从容向院长汇报系统复位",
-     "high": "反手紧攥调节扳手随时准备扳动外侧泄压阀分担荷载",
-     "low": "凝神查看气压表红黑双针变动，快速计算压差阻力数值",
-     "mid": "隔着观察窗向女主任暗打三指上挑手语指示滑块受力死穴"
+     "breaking": "西装都顾不上理，坐在楼梯上把脸埋进手里。",
+     "high": "拦住最可能帮忙的人，压低声音开口求。",
+     "low": "笑得更周到，话里多绕两道弯。",
+     "mid": "躲进分控室翻手提包，把揉皱的纸往暗层里塞。"
     },
-    "relationship_stance": "佩服女主任过人胆识与机变，暗中以工匠巧技提供掩护",
-    "withdrawal": "返回机房监控发电机备用供电回路稳定"
+    "relationship_stance": "八面玲珑，真动心时反而笨嘴拙舌。",
+    "withdrawal": "去楼梯间站着，一根接一根地看手机却一条也不回。"
    },
-   "gender": "male",
-   "gender_reason": "医院机电暖通净化总工程师男性职能",
-   "id": "char_lin_chengye_engineer",
+   "gender": "any",
+   "gender_reason": "医药代表的性别不影响故事，开局再定。",
+   "id": "char_pharma_rep_song",
    "identity": {
-    "authority": "对医院气体管道压差与自动气密门联动有现场排险技术处置权",
-    "exposure": "设备抱死致伤人命将面临工程质量追责",
-    "hidden": "深知门下联锁滑块只要以尖锐硬物向左上角斜推两毫米便可解除死扣",
+    "authority": "握着特种靶向药的院内赠药申领指标、临床科研赞助额度和历年往来的底册。",
+    "exposure": "伪造的知情同意书一旦被考评组查实，就是行业终身禁入。",
+    "hidden": "那几份同意书是自己仿着主任的笔迹签的，公司根本不知道；夜里也会想，当初入行是为了让病人用上药。",
     "limits": [
-     "无菌大厅运作期间不得擅自开启排污旁路管"
+     "不得进入洁净区"
     ],
     "obligations": [
-     "在雷暴断电时确保负压系统不发生反向污染"
+     "替公司守住这家医院的合作"
     ],
     "resources": [
-     "全院洁净手术室气路图纸原本",
-     "加硬合金便携排气开槽起子"
+     "历年往来底册",
+     "私人商务邮箱"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "主任医官临危不乱且识得机械物性之高绝聪颖",
-     "从容不迫之高雅风采"
+     "说话直来直去、不吃客套那一套",
+     "肯听自己说真话的耐心"
     ],
     "boundaries": [
-     "后勤与临床的分寸人前照旧",
-     "对方先开口，才往前一步"
+     "对方说不就停"
+    ],
+    "desire_range": [
+     3,
+     5
+    ],
+    "desired_position": "研讨会散场后并肩走回酒店的那段路",
+    "dislikes": [
+     "被人看不起这一行"
+    ],
+    "expression": "松了领带，额头抵着对方的肩，很久才说一句我累了。",
+    "likes": [
+     "深夜的长谈"
+    ],
+    "preconditions": [
+     "两人清醒，与生意无关"
+    ],
+    "self_control_range": [
+     2,
+     4
+    ]
+   },
+   "public_role": "跨国药企驻院大区医药代表",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_hvac_control_substation",
+     "to": 480
+    },
+    {
+     "from": 480,
+     "location_id": "loc_hospital_rounds_corridor",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_hvac_control_substation",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "被药企解雇并接受调查。",
+      "option": "向纪检组交出伪造原件，写明是自己所为"
+     },
+     {
+      "cost": "把对方也拖进这桩违规里。",
+      "option": "求那个人帮忙把同意书带出去"
+     }
+    ],
+    "pressure": "自首就是终身禁入；不自首，被查出来的只会更多。",
+    "trigger": "考评组长手里有异常返点凭证，伪造的同意书还夹在自己的手提包里。"
+   },
+   "tags": [
+    "workplace",
+    "crime"
+   ],
+   "voices": {
+    "inner": "我要是把那几页纸交出去，这辈子就完了。",
+    "surface": "这事好商量，您开个口就行。"
+   }
+  },
+  {
+   "adult_context": "年满四十岁、持证执业二十年的机电暖通总工程师。",
+   "age_range": [
+    40,
+    44
+   ],
+   "appearance_options": [
+    "灰色工装洗得发白，胸袋插着点温计，手背上有几道旧烫疤。",
+    "个子很高，说话前先咳一声，看人时目光很稳。"
+   ],
+   "decision": {
+    "avoids": [
+     "被人当成只会修机器的"
+    ],
+    "contrast": "人前沉默得像机房里的一台机组；只在那个人面前会笑，会多说两句家常。",
+    "core_value": "人欠下的，迟早要还。",
+    "goal_options": [
+     "今夜替主任挡住不该进来的人",
+     "在那个人面前把憋了很久的话说出来",
+     "不让自己的分控室变成别人藏东西的地方"
+    ],
+    "never": [
+     "对安全隐患瞒而不报"
+    ],
+    "prefers": [
+     "实在的人"
+    ],
+    "pressure_responses": {
+     "breaking": "坐在机组旁一言不发，手里的点温计攥得发白。",
+     "high": "拦在外廊上，硬把人请回去。",
+     "low": "话更少，只在记录屏前站着。",
+     "mid": "把分控室的门关上，谁来都说正在巡视。"
+    },
+    "relationship_stance": "少言寡语，认定的人会一直站在背后。",
+    "withdrawal": "回分控室盯着压差屏，一坐就是一整夜。"
+   },
+   "gender": "any",
+   "gender_reason": "暖通总工的性别不影响故事，开局再定。",
+   "id": "char_lin_chengye_engineer",
+   "identity": {
+    "authority": "握着负压层流的监控指令、气闸联锁的应急切断权和配电箱主备回路的切换权。",
+    "exposure": "借着巡视的名义替配药中心挡住外围的人，一旦被考评组看出来，就是包庇。",
+    "hidden": "多年前一场急症，是主任连夜配的药把命救回来的，一直没机会还；也一直没对那个人说出口自己在等什么。",
+    "limits": [
+     "不能替任何科室隐瞒安全隐患"
+    ],
+    "obligations": [
+     "保住四层整夜的负压"
+    ],
+    "resources": [
+     "分控室的门禁记录屏",
+     "气闸应急钥匙"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "记得自己口味的细心",
+     "累了也不抱怨的硬气"
+    ],
+    "boundaries": [
+     "对方犹豫就停"
     ],
     "desire_range": [
      2,
      3
     ],
-    "desired_position": "隐于幕后之医疗工程护航铁卫",
+    "desired_position": "分控室压差屏前并肩站着的位置",
     "dislikes": [
-     "狂妄自大乱指挥的外行",
-     "违章盲目操作"
+     "说话绕弯子"
     ],
-    "expression": "摘下沾灰的手套，隔着门低声道：阀门修好了，往后主任夜班，这道门不会再咬人。",
+    "expression": "把工装外套脱下来披到对方肩上，然后才伸手。",
     "likes": [
-     "精密仪表自洽联动",
-     "检修完在机房门口并肩站一会儿，听对方讲暖通管道里的风声"
+     "老街的早点铺"
     ],
     "preconditions": [
-     "对方已经脱险、缓过神来",
-     "对方先开口，或清楚地回应了心意"
-    ],
-    "self_control_range": [
-     3,
-     5
-    ]
-   },
-   "public_role": "医院机电暖通总工",
-   "schedule": [
-    {
-     "from": 1380,
-     "location_id": "loc_airlock_interlock_sliding_gate",
-     "to": 1410
-    },
-    {
-     "from": 1411,
-     "location_id": "loc_sterile_dispensing_hall",
-     "to": 1435
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "动作过显引来副院长身侧秘书警觉注目",
-      "option": "隔空以手指比划四点二牛顿斜上挑手势指点女医官插撬方位"
-     },
-     {
-      "cost": "在众人注视下调整阀门需承担微量操作问责",
-      "option": "悄然旋松侧箱卸压螺栓协助减小门轨挤压力道"
-     }
-    ],
-    "pressure": "若不及时卸掉机械卡力，整扇玻璃门框将被两百帕压力焊死",
-    "trigger": "气动联锁滑门受内外压差硬性卡死在导轨中"
-   },
-   "tags": [],
-   "voices": {
-    "inner": "女主任手中骨科锤的角度切得分毫不差，正好顶在滑块卸力卡榫上，神准！",
-    "surface": "报告院长，压差平衡阀已手动就位，两百帕负压已自然释放完毕！"
-   }
-  },
-  {
-   "adult_context": "国家特级主任药师年届五十五岁成年名宿，对剧毒与无菌药品配制负全面审核责任。",
-   "age_range": [
-    53,
-    56
-   ],
-   "appearance_options": [
-    "身穿整洁白大褂内套深灰针织衫，戴金丝老花镜，须发微白神态慈和，指节修长白净，透着老一辈药学家之渊博雅量。",
-    "纯白长袍整肃无褶皱，手捧药案记录册步履安详，目光慈祥中透着学术之威严谨重。"
-   ],
-   "decision": {
-    "avoids": [
-     "慌乱打翻药剂瓶造成严重浪费",
-     "卷入无谓人事纠纷"
-    ],
-    "contrast": "看似只知埋首做学问之文弱老药师，临危关头沉着大度善解人意",
-    "core_value": "毫厘之间关乎性命，用精湛药理守护每一剂救命良药",
-    "goal_options": [
-     "以复核重症药剂配方为由吸引评审专家全场注意力",
-     "在台前悄然转动紫外线灭菌延时旋钮多争取十秒生机"
-    ],
-    "never": [
-     "放行有瑕疵药剂流入临床",
-     "在同行危难时袖手旁观"
-    ],
-    "prefers": [
-     "严谨精准之药品数据",
-     "用学术权威化解突发事态"
-    ],
-    "pressure_responses": {
-     "breaking": "在门启刹那朗声宣布全数药剂零污染合格打破全场死寂",
-     "high": "手扶药盘主动向门外专家展示刚配制完成之高难度药剂",
-     "low": "在超净工作台前专注核对药瓶标签，神情笃定安然",
-     "mid": "察觉滑门异常受卡却面不改色从容清点已配妥针剂"
-    },
-    "relationship_stance": "爱惜年轻医学天才之慈爱长者，全力以赴护持女主任",
-    "withdrawal": "在无菌室记录簿工整写下当班批号签名"
-   },
-   "gender": "male",
-   "gender_reason": "资深主任药剂师男性长者身份",
-   "id": "char_jiang_jianping_pharmacist",
-   "identity": {
-    "authority": "对全院特种药品无菌配制处方拥有最终药学审查权",
-    "exposure": "药剂受损将危及数十条垂危患者生命安全",
-    "hidden": "暗中准备了灭菌灯强制喷放手动超驰延时旋钮",
-    "limits": [
-     "不能违反无菌操作规范擅离配药隔离操作台"
-    ],
-    "obligations": [
-     "断电突发时刻严格把关抢救特药不受环境杂质侵染"
-    ],
-    "resources": [
-     "全套药品无菌操作留样封签",
-     "药学实验室高等级权限门禁卡"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "女主任对临床用药安全之极度敏锐与严苛负责品格",
-     "冰雪聪明之大医气度"
-    ],
-    "boundaries": [
-     "严守清高学者与名门千金女医之高尚学术长幼礼节"
-    ],
-    "desire_range": [
-     1,
-     2
-    ],
-    "desired_position": "照拂良玉之药学泰斗与定盘星",
-    "dislikes": [
-     "粗心大意之实习操作",
-     "弄虚作假之药品回扣"
-    ],
-    "expression": "以舒展释怀之赞许长笑肯定女主任处乱不惊之神采",
-    "likes": [
-     "纯净澄澈之药液",
-     "秉性高洁不染纤尘之年轻名医"
-    ],
-    "preconditions": [
-     "以严谨科学精神契合之长幼忘年相知相敬"
+     "两人清醒，分控室门关好"
     ],
     "self_control_range": [
      4,
      5
     ]
    },
-   "public_role": "配药中心主任药师",
+   "public_role": "综合大楼机电暖通总工",
    "schedule": [
     {
-     "from": 1370,
-     "location_id": "loc_sterile_dispensing_hall",
-     "to": 1400
+     "from": 0,
+     "location_id": "loc_hvac_control_substation",
+     "to": 360
     },
     {
-     "from": 1401,
-     "location_id": "loc_sterile_dispensing_hall",
-     "to": 1435
+     "from": 360,
+     "location_id": "loc_hospital_rounds_corridor",
+     "to": 720
+    },
+    {
+     "from": 720,
+     "location_id": "loc_hvac_control_substation",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "动作若被专家团摄像机录下需出具书面技术申辩",
-      "option": "冒操作违规风险探手拧动操作台下方紫外灯机械延时旋钮"
+      "cost": "被考评组记下一笔包庇嫌疑。",
+      "option": "在外廊以巡视为由挡住来人"
      },
      {
-      "cost": "高声报账稍损平时轻言细语之儒雅老药师作派",
-      "option": "大声向门外报出重症药剂配方数据转移全场目光聚焦"
+      "cost": "主任今夜再也没有独处的时间。",
+      "option": "如实把门禁记录交给考评组"
      }
     ],
-    "pressure": "若不手动延时，强氧化臭氧将直接喷向女主任后背造成严重烧灼",
-    "trigger": "紫外灭菌灯即将强制喷放，女主任仍在门缝受制无法抽身"
+    "pressure": "替主任挡人就是包庇；不挡，欠下的人情永远还不上。",
+    "trigger": "主任托人带话，想要一段没人打扰的对账时间。"
    },
-   "tags": [],
+   "tags": [
+    "workplace"
+   ],
    "voices": {
-    "inner": "紫外线延时旋钮已向右回拨十五秒，主任只管稳住心神脱扣即可。",
-    "surface": "副院长诸位领导请看，今夜雷暴特制之二十瓶重症救命针剂全部按时保质配制完成！"
+    "inner": "我替你挡这一夜，你要是肯留下来陪我看完这屏读数就好了。",
+    "surface": "这层楼今晚归我看，谁也别乱跑。"
    }
   },
   {
-   "adult_context": "三甲医院骨科优秀青年住院总医师年满二十二岁，具备完备执业医师资格与手术技能。",
+   "adult_context": "年满五十岁、执业近三十年的主任药师，返聘的首席审方专家。",
    "age_range": [
-    22,
-    23
+    50,
+    54
    ],
    "appearance_options": [
-    "身穿挺括深墨绿分体式外科洗手衣外套短款轻便白大褂，身材高挑匀称，英姿飒爽，手戴医用乳胶手套，眉宇间带着外科刀客之果决凌厉。",
-    "纯白医师短装外套下着深黑洗手裤，双眸锐利明亮透着傲然风骨，随身手提精致无菌器械钢匣。"
+    "头发稀疏，老花镜挂在胸前，白大褂口袋鼓鼓囊囊塞满处方笺。",
+    "身形微胖，笑起来一团和气，手指总在桌上轻轻敲。"
    ],
    "decision": {
     "avoids": [
-     "拖泥带水优柔寡断",
-     "当众宣扬突发丑事引来无妄之灾"
+     "当众认错"
     ],
-    "contrast": "看似雷厉风行豪迈不羁之外科霸王花，微观操作细腻如发丝般精准",
-    "core_value": "骨力千钧刀锋所向，外科医生的手永远沉着如山不可撼动",
+    "contrast": "人前随和圆滑；人后会悄悄把多年的处方笺按日期理得整整齐齐。",
+    "core_value": "先保住自己，才保得住别人。",
     "goal_options": [
-     "在侧廊暗中递送备用骨膜剥离器助女主任挑脱咬舌",
-     "在女主任脱身瞬间以身体和托盘协助遮挡视线盲区"
+     "让考评组相信责任不在自己",
+     "保住返聘资格",
+     "在被逼到绝路前找个台阶下"
     ],
     "never": [
-     "在同行陷入绝境时落井下石",
-     "违背对主任之守护盟誓"
+     "改动处方剂量"
     ],
     "prefers": [
-     "高强度医用合金精密微观杠杆",
-     "以快打慢一击制胜之外科气魄"
+     "给台阶的人"
     ],
     "pressure_responses": {
-     "breaking": "在卡簧弹开后熟练接过截骨锤放回器械盘不留丝毫痕迹",
-     "high": "反手将加硬骨科剥离器递入门缝协助女主任实施双点支撑撬拨",
-     "low": "手指把玩止血钳，凝神倾听门槽金属卡舌咬合之微观声响",
-     "mid": "借送还器械为名大步跨至滑门另一侧暗中卡住阻尼导轨"
+     "breaking": "一个人在药房里把复印件一张张撕碎，又一张张拼回去。",
+     "high": "逼着人签认定书，话越说越硬。",
+     "low": "笑得更多，什么都说好。",
+     "mid": "把复印件摊出来，劝人签字认责。"
     },
-    "relationship_stance": "与女主任惺惺相惜志同道合之青年一代外科女帅盟友",
-    "withdrawal": "返回骨科急诊手术室主持急救手术"
+    "relationship_stance": "老好人，遇事能推就推，真被人信任时会愣住。",
+    "withdrawal": "回中心药房关灯坐着，谁也不见。"
    },
-   "gender": "female",
-   "gender_reason": "同届青年骨科住院总女医师同行才女身份",
-   "id": "char_song_sihan_fellow",
+   "gender": "any",
+   "gender_reason": "主任药师的性别不影响故事，开局再定。",
+   "id": "char_jiang_jianping_pharmacist",
    "identity": {
-    "authority": "对骨科特种手术器械管理与急诊外科创伤救治有专业现场发言权",
-    "exposure": "器械在非手术场合折断受损将承担医疗设备违章责任",
-    "hidden": "亲手打磨过女主任手中截骨锤平柄末端之倒角角度",
+    "authority": "握着全院超剂量处方的双签审核权、抗肿瘤特药毒副反应的判定权和质控黑匣的密码。",
+    "exposure": "当年那笔救助自己也签过字，底单一旦公开，返聘资格保不住。",
+    "hidden": "早把底单复印留底，一直在看风向；心里也知道主任是这层楼里最干净的人。",
     "limits": [
-     "不能跨专业干涉内科与药学部内部质控规程"
+     "返聘合同一年一签"
     ],
     "obligations": [
-     "确保骨科特种器械在借调期间维持无菌功能无损"
+     "给每张超剂量处方签第二个字"
     ],
     "resources": [
-     "随身医用纯钛骨膜起子与血管钳",
-     "骨科专用快速冷敷喷雾"
+     "违规用药底单的复印件",
+     "质控黑匣密码"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "女主任清冷绝尘之中流砥柱英姿",
-     "同样追求医学极致之傲然心气"
+     "肯听一个老人家絮叨的耐心",
+     "不计较旧账的宽厚"
     ],
     "boundaries": [
-     "不在对方惊魂未定时越界",
-     "医院里照旧是同事，下了班才是自己人"
+     "对方不愿就停"
     ],
     "desire_range": [
-     2,
-     4
+     1,
+     3
     ],
-    "desired_position": "并肩傲立杏林峰顶之至交外科女帅",
+    "desired_position": "药房窗边那把旧藤椅旁边的位置",
     "dislikes": [
-     "婆婆妈妈优柔寡断之辈",
-     "官僚作威作福"
+     "当面翻旧账"
     ],
-    "expression": "扯下手术帽甩了甩头发，挑眉笑着凑近：刚才那一锤算你欠我的……今晚请我吃宵夜，顺便陪我。",
+    "expression": "摘下老花镜，握着对方的手很久，像怕一松开就再也不敢握。",
     "likes": [
-     "顶级冷轧不锈钢手术刀",
-     "下了手术台在更衣室并肩坐着，头靠着头一句话也不说"
+     "老家寄来的茶"
     ],
     "preconditions": [
-     "夜里的事故已经平息，两人都缓过了神",
-     "彼此都明白说出口的是心里话，不是一时激动"
+     "两人清醒，旧事说开"
     ],
     "self_control_range": [
      3,
      5
     ]
    },
-   "public_role": "骨科青年住院总医师",
+   "public_role": "中心药房首席审方主任药师",
    "schedule": [
     {
-     "from": 1375,
-     "location_id": "loc_airlock_interlock_sliding_gate",
-     "to": 1405
+     "from": 0,
+     "location_id": "loc_hvac_control_substation",
+     "to": 480
     },
     {
-     "from": 1406,
-     "location_id": "loc_airlock_interlock_sliding_gate",
-     "to": 1435
+     "from": 480,
+     "location_id": "loc_hospital_rounds_corridor",
+     "to": 1080
+    },
+    {
+     "from": 1080,
+     "location_id": "loc_hvac_control_substation",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "动作过大容易被门外副院长眼尖瞧出端倪",
-      "option": "将纯钛小起子探入缝隙当作第二支点"
+      "cost": "失去返聘资格。",
+      "option": "把复印件交给医务处，承认当年也签过字"
      },
      {
-      "cost": "需在众位考评专家眼皮底下冒触电风险盲操",
-      "option": "在门框外角暗中以手肘猛按滑轨外侧自锁微动应急回弹触点"
+      "cost": "和配药中心彻底撕破脸。",
+      "option": "继续逼护士长在认定书上签字"
      }
     ],
-    "pressure": "若五秒内不能完全挑开，滑门将在压力失衡下发生永久扭曲",
-    "trigger": "截骨锤单点受力略显生涩，滑门联锁咬舌死扣需第二支撑点辅助"
+    "pressure": "推责给主任就能保住自己；认下来，返聘和名声都没了。",
+    "trigger": "考评组盯上了返点账，护士长手里有自己当年签过字的底单。"
    },
-   "tags": [],
+   "tags": [
+    "workplace"
+   ],
    "voices": {
-    "inner": "那把截骨锤的柄口我亲手精磨过四毫米倒角，主任只管放心下压，簧片必退！",
-    "surface": "骨科急诊外伤清创手术器械已全数完成高温高压灭菌，请女主任过目！"
+    "inner": "那张底单上也有我的名字，我只是不想一个人沉下去。",
+    "surface": "大家都不容易，签个字就过去了。"
    }
   }
  ],
  "clock_start": {
-  "label": "十二月的一个周四",
+  "label": "十二月复核考评的那个周四",
   "minute": 1380
  },
  "clock_style": "hm",
  "content_tags": [
   "intimate",
-  "humiliation",
-  "substance",
+  "romance_light",
   "workplace",
-  "disaster"
+  "workplace_power",
+  "crime"
  ],
  "custom": true,
  "customs": [
-  "夜巡医官进负压配药大厅前必须在净化风淋室静立吹淋三十秒，核对压差表读数并在交接大屏录入电子指纹。",
-  "突发跳闸应急状态下，值班护士长需第一时间开启备用移动蓄电池照明而不得擅自拉响刺耳全区火警免生恐慌。",
-  "巡查主任在遭遇突发意外卡阻时严禁大声呼救，须保持沉着威严以医疗术语暗号引导同袍协助排险遮蔽。",
-  "手术抢险组常备高等级双层加厚纯白防化防辐射阻燃战术大氅，用于紧急救护期间严密遮蔽伤患与医护衣着破损。"
+  "配药中心的人把私章看得比工牌重，把私章交给谁保管，就是把身家托给谁。",
+  "夜班护士会多领一份面包豆浆，留给外廊上还在熬着的人。",
+  "隔着无菌玻璃说话靠口型和手势，轻扣玻璃是叫人回头。",
+  "考评季谁也不在外廊提私事，私事都留到值班室门关上之后。"
  ],
  "daily_activities": [
   {
    "beats": [
-    "手持微压差计核准气密门两端微观气流方向确保始终维持向内定向负压",
-    "用酒精棉球仔细清洁门缝磁吸防夹密封胶条消除积存微尘污渍"
-   ],
-   "duration_minutes": 40,
-   "hook_ids": [],
-   "id": "act_airlock_pressure_differential_check",
-   "location_ids": [
-    "loc_airlock_interlock_sliding_gate"
-   ],
-   "start_minute": 1350,
-   "tags": [],
-   "title": "负压大厅无菌净化风淋压差巡检"
-  },
-  {
-   "beats": [
-    "测试二级跳闸保护回路声光报警器二十秒倒数警报音量与频闪亮度",
-    "复核配药工作台下方臭氧发生器应急截止切断阀机械行程顺畅度"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_uv_ozone_timer_calibration",
-   "location_ids": [
-    "loc_sterile_dispensing_hall"
-   ],
-   "start_minute": 1365,
-   "tags": [],
-   "title": "高强度脉冲灭菌紫外系统倒数校核"
-  },
-  {
-   "beats": [
-    "在层流洁净台前借冷光源聚光灯逐一抽检静脉营养液澄明度与微粒指标",
-    "对危重症输液处方双人双签核实并在药房管理网络完成终审签批"
-   ],
-   "duration_minutes": 35,
-   "hook_ids": [],
-   "id": "act_sterile_dispensing_iv_inspection",
-   "location_ids": [
-    "loc_sterile_dispensing_hall"
-   ],
-   "start_minute": 1370,
-   "tags": [],
-   "title": "重症监护中心特殊针剂无菌复核"
-  },
-  {
-   "beats": [
-    "用外科无水润滑剂擦拭截骨锤平柄末端确保四毫米倒角硬棱无锈蚀生滞",
-    "以卡尺抽验手术器械托盘边缘抗扭曲平整度满足微观杠杆操作标准"
-   ],
-   "duration_minutes": 25,
-   "hook_ids": [],
-   "id": "act_surgical_tool_tray_sterilization",
-   "location_ids": [
-    "loc_airlock_interlock_sliding_gate"
-   ],
-   "start_minute": 1360,
-   "tags": [],
-   "title": "骨科截骨锤及外科法器消毒养护"
-  },
-  {
-   "beats": [
-    "演练两人配合于两秒内将加厚纯白大氅展开形成环形无缝遮蔽幕墙",
-    "确认大氅下摆防静电铅坠紧贴地面封堵外廊透视视线死角"
+    "两人并肩站在黑色背景灯下，手持输液袋轻轻转动，查看有没有微小的纤毛和结晶",
+    "额角几乎碰到一起，谁也没往后退"
    ],
    "duration_minutes": 20,
    "hook_ids": [],
-   "id": "act_radiation_cloak_rapid_shield_drill",
+   "id": "act_light_check",
    "location_ids": [
-    "loc_airlock_interlock_sliding_gate",
     "loc_sterile_dispensing_hall"
    ],
-   "start_minute": 1380,
-   "tags": [],
-   "title": "应急隔离白风衣战术展开演练"
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "超净台前对光看药液"
   },
   {
    "beats": [
-    "清理观察窗两侧备用更衣柜确保外廊通道无任何推车障碍物",
-    "由值班医护按考评名册就位站立维持肃穆整洁之专业工作状态"
+    "值班桌前并肩坐着，共用一双竹筷，轮流夹保温盒里的白菜猪肉水饺",
+    "最后一个推来推去，相视一笑"
    ],
-   "duration_minutes": 20,
+   "duration_minutes": 30,
    "hook_ids": [],
-   "id": "act_vip_rounds_reception_drill",
+   "id": "act_shared_dumplings",
+   "location_ids": [
+    "loc_on_call_room"
+   ],
+   "start_minute": null,
+   "tags": [
+    "romance_light"
+   ],
+   "title": "值班室分吃半盒饺子"
+  },
+  {
+   "beats": [
+    "强风喷嘴下，伸手替对方抚平后背的褶皱、拉严领口的密封条",
+    "指腹擦过微凉的后颈"
+   ],
+   "duration_minutes": 10,
+   "hook_ids": [],
+   "id": "act_gown_seal",
    "location_ids": [
     "loc_airlock_interlock_sliding_gate"
    ],
-   "start_minute": 1385,
-   "tags": [],
-   "title": "三甲复核考评团夜巡路线整肃迎宾"
-  },
-  {
-   "beats": [
-    "下夜班后外廊尽头的值班室只剩一盏床头灯，女主任脱了白大褂坐在床沿，铅笔裙侧边的暗扣还歪着两枚。",
-    "女主任侧过身，请人替自己把裙侧的暗扣一枚枚扣好，指尖每碰到腰侧一下，呼吸就轻一分。",
-    "最后一枚扣好时，女主任没有起身，只伸手把床头灯调暗了一档。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_on_call_room_after_shift",
-   "location_ids": [
-    "loc_on_call_room"
-   ],
-   "start_minute": 1410,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "下夜班值班室扣好暗扣"
+   "title": "风淋间整理防护服"
   },
   {
    "beats": [
-    "凌晨三点，值班室里只有咖啡机的咕噜声，女主任脱了高跟鞋，把穿着丝袜的脚蜷在椅子上看病历。",
-    "女主任头也不抬：呼叫器二十分钟没响了。……你要是想坐过来，现在可以。"
+    "你的手掌覆在对方握着红墨水钢笔的手背上",
+    "在危重处方的极量一栏稳稳划下两道红线，再落印"
    ],
-   "duration_minutes": 30,
+   "duration_minutes": 20,
    "hook_ids": [],
-   "id": "act_on_call_3am_coffee",
+   "id": "act_double_red_line",
    "location_ids": [
-    "loc_on_call_room"
+    "loc_sterile_dispensing_hall"
    ],
-   "start_minute": 180,
+   "start_minute": null,
    "tags": [
-    "intimate"
+    "workplace"
    ],
-   "title": "凌晨三点两次呼叫之间"
+   "title": "审方桌旁一起复核处方"
   },
   {
    "beats": [
-    "值班室的门锁上了，女主任靠在铁柜上，白大褂下是熨得笔挺的衬衫和铅笔裙，听诊器还挂在脖子上。",
-    "女主任把听诊器摘下来挂到人脖子上：先听听我的心跳，再决定要不要解扣子。……你来决定。"
+    "机组低鸣，两人同看微压计上的刻度",
+    "手臂贴着手臂，体温隔着薄工装传过来"
    ],
-   "duration_minutes": 30,
+   "duration_minutes": 15,
    "hook_ids": [],
-   "id": "act_on_call_stethoscope",
+   "id": "act_pressure_reading",
    "location_ids": [
-    "loc_on_call_room"
+    "loc_hvac_control_substation"
    ],
-   "start_minute": 1400,
+   "start_minute": null,
    "tags": [
-    "intimate"
+    "romance_light"
    ],
-   "title": "先听心跳再解扣子"
+   "title": "分控室并肩看压差读数"
   },
   {
    "beats": [
-    "交班前，值班室的窄床上，女主任在人怀里醒来，头发散在枕头上，眼镜不知道丢到了哪里。",
-    "女主任摸到眼镜戴上，看了一眼表：还有十分钟交班。……够了，过来。"
+    "趁外廊没人，拉过对方配药配到发僵的右手",
+    "一寸寸按揉合谷穴，把酸胀揉开"
    ],
-   "duration_minutes": 30,
+   "duration_minutes": 15,
    "hook_ids": [],
-   "id": "act_on_call_before_handover",
+   "id": "act_wrist_rub",
    "location_ids": [
-    "loc_on_call_room"
+    "loc_hospital_rounds_corridor"
    ],
-   "start_minute": 450,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "交班前的十分钟"
+   "title": "外廊长椅揉手腕"
+  },
+  {
+   "beats": [
+    "对方从白大褂内袋取出寿山石私章，放进你的手心",
+    "轻轻合拢你的五指，嘱咐你代为保管"
+   ],
+   "duration_minutes": 10,
+   "hook_ids": [
+    "hook_lu_kcl_stamp",
+    "hook_lu_icu_slips",
+    "hook_lu_cold_sweat"
+   ],
+   "id": "act_seal_entrusted",
+   "location_ids": [
+    "loc_on_call_room"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "私章相托"
+  },
+  {
+   "beats": [
+    "摘了无菌帽，发丝微乱，额头抵在你肩窝闭目歇一会儿",
+    "门外脚步声一近，立刻站直"
+   ],
+   "duration_minutes": 10,
+   "hook_ids": [],
+   "id": "act_locker_lean",
+   "location_ids": [
+    "loc_airlock_interlock_sliding_gate"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "更衣柜前互报平安"
+  },
+  {
+   "beats": [
+    "并肩靠在大理石窗台上看楼外的灯",
+    "袖口底下悄悄勾住了彼此的手指"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [],
+   "id": "act_window_lights",
+   "location_ids": [
+    "loc_hospital_rounds_corridor"
+   ],
+   "start_minute": null,
+   "tags": [
+    "romance_light"
+   ],
+   "title": "窗台前看楼外灯火"
   }
  ],
  "default_npc_gender_mix": {
@@ -1317,7 +1542,7 @@
   "nonbinary": 0.0
  },
  "default_person": "second",
- "era": "现代都市",
+ "era": "当代都市，三甲医院重点专科复核考评期",
  "extends": null,
  "forbidden_terms": [
   "他",
@@ -1337,170 +1562,247 @@
  ],
  "hooks": [
   {
-   "id": "hook_jingming_director_approach",
-   "kind": "approach",
+   "id": "hook_lu_kcl_stamp",
+   "kind": "observe",
    "location_ids": [
-    "loc_airlock_interlock_sliding_gate"
-   ],
-   "slot": "char_gu_jingming_director",
-   "text": "{npc.name}踏响皮鞋迈至风淋门前，威严犀利之目光透过铅玻璃直视内室门框方向。"
-  },
-  {
-   "id": "hook_yuqin_cloak_shield",
-   "kind": "approach",
-   "location_ids": [
-    "loc_airlock_interlock_sliding_gate",
     "loc_sterile_dispensing_hall"
    ],
-   "slot": "char_he_yuqin_head_nurse",
-   "text": "{npc.name}双手展开宽幅纯白防辐射战术大氅，以优雅干练之姿严密挡死观察窗外探视线。"
+   "slot": "char_lu_qingyi_officer",
+   "text": "负压无菌大厅的层流罩下，{npc.name}手握一支抽满高浓度氯化钾的无菌注射器，目光停在处方单右下角一枚陌生的印章上。"
   },
   {
-   "id": "hook_chengye_valve_signal",
+   "id": "hook_lu_icu_slips",
    "kind": "approach",
    "location_ids": [
-    "loc_airlock_interlock_sliding_gate"
+    "loc_hospital_rounds_corridor"
    ],
-   "slot": "char_lin_chengye_engineer",
-   "text": "{npc.name}隔着门窗向内席女主任暗打四点二牛顿上挑手语，准确指出滑块自锁卡槽死穴。"
+   "slot": "char_lu_qingyi_officer",
+   "text": "洁净区外廊的长椅旁，{npc.name}从传药窗探出半个身子，接过那三张染着碘伏印的病危领药单，抬眼叫住了你。"
   },
   {
-   "id": "hook_sihan_hammer_nod",
+   "id": "hook_lu_cold_sweat",
+   "kind": "approach",
+   "location_ids": [
+    "loc_sterile_dispensing_hall"
+   ],
+   "slot": "char_lu_qingyi_officer",
+   "text": "{npc.name}扶着超净台的边沿慢慢坐下，脸色发白，额上全是冷汗，隔着玻璃朝你招了招手。"
+  },
+  {
+   "id": "hook_gu_first_gate",
    "kind": "observe",
    "location_ids": [
     "loc_airlock_interlock_sliding_gate"
    ],
-   "slot": "char_song_sihan_fellow",
-   "text": "{npc.name}注目器械盘内不锈钢截骨锤平柄末端，以笃定眼神示意钝头棱角无坚不摧可全力施为。"
+   "slot": "char_gu_jingming_director",
+   "text": "风淋缓冲通道外，卫健委专家组长{npc.name}合上评分表，整了整中山装的领口，抬手推开了第一道平移门。"
   },
   {
-   "id": "hook_lu_on_call_coffee",
+   "id": "hook_gu_voucher",
    "kind": "approach",
    "location_ids": [
-    "loc_on_call_room"
+    "loc_hospital_rounds_corridor"
    ],
-   "slot": "char_lu_qingyi_officer",
-   "text": "{npc.name}从值班室里探出头，压着嗓子：今晚病房很安静。进来，我请你喝杯咖啡。"
+   "slot": "char_gu_jingming_director",
+   "text": "{npc.name}在外廊窗台前摘下眼镜擦了擦，示意你过去，把一张异常返点凭证推到你面前。"
+  },
+  {
+   "id": "hook_song_crumpled_consent",
+   "kind": "observe",
+   "location_ids": [
+    "loc_hvac_control_substation"
+   ],
+   "slot": "char_pharma_rep_song",
+   "text": "负压机电暖通分控室的阴影中，医药代表{npc.name}正神色慌张地把一份揉皱的赠药知情同意书硬塞进手提包的拉链暗层。"
+  },
+  {
+   "id": "hook_song_corner",
+   "kind": "approach",
+   "location_ids": [
+    "loc_hospital_rounds_corridor"
+   ],
+   "slot": "char_pharma_rep_song",
+   "text": "{npc.name}在外廊拐角拦住你，领带松着，压低声音说有件事只敢跟你一个人讲。"
+  },
+  {
+   "id": "hook_song_coffee",
+   "kind": "approach",
+   "location_ids": [
+    "loc_hospital_rounds_corridor"
+   ],
+   "slot": "char_pharma_rep_song",
+   "text": "{npc.name}把一杯热咖啡塞进你手里，笑得有点勉强，问你今晚能不能陪着说几句话。"
+  },
+  {
+   "id": "hook_he_ledger_sleeve",
+   "kind": "approach",
+   "location_ids": [
+    "loc_airlock_interlock_sliding_gate"
+   ],
+   "slot": "char_he_yuqin_head_nurse",
+   "text": "{npc.name}在风淋门外一把拉住你的袖口，回头看了一眼外廊，把一本手账往你怀里塞。"
+  },
+  {
+   "id": "hook_he_soy_milk",
+   "kind": "approach",
+   "location_ids": [
+    "loc_hospital_rounds_corridor"
+   ],
+   "slot": "char_he_yuqin_head_nurse",
+   "text": "{npc.name}端着两杯热豆浆从配药中心出来，把一杯递给你，眼圈是红的。"
+  },
+  {
+   "id": "hook_lin_access_screen",
+   "kind": "approach",
+   "location_ids": [
+    "loc_hvac_control_substation"
+   ],
+   "slot": "char_lin_chengye_engineer",
+   "text": "{npc.name}在分控室门口朝你点了点头，把门禁记录屏转过来给你看。"
+  },
+  {
+   "id": "hook_lin_west_corridor",
+   "kind": "observe",
+   "location_ids": [
+    "loc_hospital_rounds_corridor"
+   ],
+   "slot": "char_lin_chengye_engineer",
+   "text": "{npc.name}站在外廊西侧，借着巡视的名义，客客气气地把一位想往里走的人请了回去。"
+  },
+  {
+   "id": "hook_jiang_copies",
+   "kind": "approach",
+   "location_ids": [
+    "loc_hvac_control_substation"
+   ],
+   "slot": "char_jiang_jianping_pharmacist",
+   "text": "{npc.name}把一沓复印件压在配电柜上，看见你进门，笑着招手让你过来看看。"
+  },
+  {
+   "id": "hook_jiang_tea",
+   "kind": "request",
+   "location_ids": [
+    "loc_hospital_rounds_corridor"
+   ],
+   "slot": "char_jiang_jianping_pharmacist",
+   "text": "{npc.name}端着一杯老家寄来的茶坐在长椅上，叫住你，说想请你帮个小忙。"
   }
  ],
  "id": "night_clinic_blackout_prescription",
  "locations": [
   {
    "affordances": [
-    "反握不锈钢骨科截骨锤探向滑槽机械联锁卡销",
-    "借配药工作台厚实不锈钢边缘为反作用力支撑点实施杠杆挑撬",
-    "示意护士长展开双层防辐射大氅阻断观察窗视线"
+    "层流罩下没签完的处方",
+    "能拉下的遮光门帘",
+    "温着的葡萄糖水"
    ],
-   "detail": "达到百级层流无菌洁净标准之配药大厅，两排大型超净工作台闪烁冷光，正中设有特殊药剂配制恒温转盘，空气中流动着冷冽负压抽吸气流。",
+   "detail": "四层核心的负压无菌大厅，层流罩下一排超净台，紫外灯在暗处泛蓝，隔着整面无菌玻璃能看见风淋门。门帘一拉，外面什么也看不见。",
    "exits": [
-    "loc_airlock_interlock_sliding_gate",
-    "loc_hvac_control_substation"
+    "loc_airlock_interlock_sliding_gate"
    ],
    "id": "loc_sterile_dispensing_hall",
-   "name": "无菌配药大厅",
-   "pressure_modifiers": {
-    "press_airlock_interlock_trap": "舱内压差急剧攀升致使联锁棘爪紧紧咬死衣带"
-   },
+   "name": "负压无菌配药大厅",
+   "pressure_modifiers": {},
    "privacy": "private",
-   "tags": [],
-   "visibility": "双层铅玻璃透视窗阻隔声响，灭菌指示灯深红闪烁映照着女子端庄高挑之雪白背影。",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "外廊只能隔着玻璃看见人影，门帘拉下后完全遮住。",
    "witnesses": [
-    "bg_orderly_wang",
-    "bg_apprentice_nurse_zheng"
+    "bg_night_dispensing_nurse"
    ]
   },
   {
    "affordances": [
-    "观察外廊专家团步履踏响地砖之倒数节拍",
-    "由暖通工程师在门外指示联锁滑块之正确杠杆力矩方向",
-    "在门框角落暗处借大氅掩护迅速拉平制服下摆"
+    "抽屉深处的收据本",
+    "保温盒里的饺子",
+    "搭在椅背上的白大褂"
    ],
-   "detail": "连接外廊走廊与内席大厅之气动联锁气密通道，地面铺设防静电地坪，两米宽重型气密钢滑门此刻正紧扣在卡槽中。",
-   "exits": [
-    "loc_sterile_dispensing_hall",
-    "loc_hospital_rounds_corridor"
-   ],
-   "id": "loc_airlock_interlock_sliding_gate",
-   "name": "风淋缓冲气闸滑门通道",
-   "pressure_modifiers": {
-    "press_airlock_interlock_trap": "考评组皮鞋声步步紧逼构成心理极限重压"
-   },
-   "privacy": "public",
-   "tags": [],
-   "visibility": "外廊考评团脚步声由远及近，走廊应急白炽灯在不锈钢门框上映出晃动长影。",
-   "witnesses": [
-    "bg_orderly_wang",
-    "bg_apprentice_nurse_zheng"
-   ]
-  },
-  {
-   "affordances": [
-    "副院长驻足于通道指示牌前听取考评员汇报",
-    "主任药师以展示急救药品配方为由上前对话争取时间",
-    "巡视员递送备用白大褂与鞋套备作考评团进舱更衣"
-   ],
-   "detail": "连接行政主楼与无菌中心的明亮长廊，两侧挂满三甲质控规程图表，数十位身着正装之评审专家正缓步逼近门前。",
-   "exits": [
-    "loc_airlock_interlock_sliding_gate",
-    "loc_hvac_control_substation",
-    "loc_on_call_room"
-   ],
-   "id": "loc_hospital_rounds_corridor",
-   "name": "洁净区外廊考评通道",
-   "pressure_modifiers": {
-    "press_airlock_interlock_trap": "专家团手掌搭上门把手形成巨大礼法危机"
-   },
-   "privacy": "public",
-   "tags": [],
-   "visibility": "打分文件夹翻动沙沙作响，专家们审视严苛之目光穿透玻璃紧锁内舱大门。",
-   "witnesses": [
-    "bg_orderly_wang",
-    "bg_apprentice_nurse_zheng"
-   ]
-  },
-  {
-   "affordances": [
-    "手动扳动旁路泄压气阀机械手柄加速平衡负压差",
-    "调谐备用应急发电机供电频率避免发生二次跳闸",
-    "通过机房玻璃传呼窗口向内席打出手势确认安全"
-   ],
-   "detail": "位于洁净区侧后方之机电保障机房，安装全套空气负压变频离心风机与应急旁通气阀，仪表盘显示压差正逐步拉平。",
-   "exits": [
-    "loc_sterile_dispensing_hall",
-    "loc_hospital_rounds_corridor"
-   ],
-   "id": "loc_hvac_control_substation",
-   "name": "负压机电暖通分控室",
-   "pressure_modifiers": {
-    "press_airlock_interlock_trap": "泄压阀一旦卡死将导致负压差瞬间激增"
-   },
-   "privacy": "private",
-   "tags": [],
-   "visibility": "机房内只有监控仪表之绿光，巨型通风管道传来沉闷轰鸣。",
-   "witnesses": [
-    "bg_orderly_wang",
-    "bg_apprentice_nurse_zheng"
-   ]
-  },
-  {
-   "affordances": [
-    "陪女主任在值班室喝咖啡",
-    "替女主任把白大褂挂起来",
-    "把值班室的门锁上"
-   ],
-   "detail": "洁净区外廊尽头的一间值班室，一张窄床、一张堆满病历的桌子、一台咖啡机，门可以从里面锁上。",
+   "detail": "外廊尽头的小屋，一张单人床、一张值班桌、一盏台灯，抽屉深处压着前任主任的收据本。门能反锁。",
    "exits": [
     "loc_hospital_rounds_corridor"
    ],
    "id": "loc_on_call_room",
-   "name": "外廊尽头的值班室",
+   "name": "外廊尽头主任值班室",
    "pressure_modifiers": {},
    "privacy": "private",
    "tags": [
     "intimate"
    ],
-   "visibility": "只开一盏床头灯，呼叫器搁在枕边，走廊上的脚步声一近，屋里的人就屏住呼吸。",
-   "witnesses": []
+   "visibility": "门一关，外廊上只听得见台灯的电流声。",
+   "witnesses": [
+    "bg_night_cleaner"
+   ]
+  },
+  {
+   "affordances": [
+    "实时压差屏",
+    "门禁记录屏",
+    "别人遗落的文件夹"
+   ],
+   "detail": "外廊侧面的机房，机组低鸣，压差屏和门禁记录屏亮着，配电柜上常摊着别人顺手放下的文件。",
+   "exits": [
+    "loc_hospital_rounds_corridor"
+   ],
+   "id": "loc_hvac_control_substation",
+   "name": "负压机电暖通分控室",
+   "pressure_modifiers": {},
+   "privacy": "semi",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "门上有一块小窗，巡逻的人路过会往里看一眼。",
+   "witnesses": [
+    "bg_patrol_guard"
+   ]
+  },
+  {
+   "affordances": [
+    "更衣柜里的备用防护服",
+    "门边的对讲器",
+    "领口的密封条"
+   ],
+   "detail": "无菌大厅和外廊之间的窄通道，两道平移门、一排更衣柜、头顶是强风喷嘴，两个人站进去就得肩挨着肩。",
+   "exits": [
+    "loc_hospital_rounds_corridor",
+    "loc_sterile_dispensing_hall"
+   ],
+   "id": "loc_airlock_interlock_sliding_gate",
+   "name": "风淋缓冲更衣通道",
+   "pressure_modifiers": {},
+   "privacy": "semi",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "两道门都有小窗，外廊的人能看见里面的人影。",
+   "witnesses": [
+    "bg_freight_porter"
+   ]
+  },
+  {
+   "affordances": [
+    "考评评分表",
+    "长椅边的传药窗",
+    "窗外的楼群灯火"
+   ],
+   "detail": "四层洁净区外的长廊，大理石窗台、一排长椅，专家组在这里集结巡查，家属和送药的人也从这里经过。",
+   "exits": [
+    "loc_airlock_interlock_sliding_gate",
+    "loc_on_call_room",
+    "loc_hvac_control_substation"
+   ],
+   "id": "loc_hospital_rounds_corridor",
+   "name": "洁净区外廊考评通道",
+   "pressure_modifiers": {},
+   "privacy": "public",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "整条外廊一览无余，说话声能传到尽头。",
+   "witnesses": [
+    "bg_inspection_clerk",
+    "bg_patient_family"
+   ]
   }
  ],
  "name_pools": {
@@ -1572,88 +1874,30 @@
   ],
   "order": "family_first"
  },
- "notes": "按原稿加入，保留现代三甲医院夜班负压配药大厅的背景与人物设定。改动：四个玩家身份原本与人物模板是同一批人，改写为卫健委飞行检查员、医药公司驻院代表、夜班保安、麻醉科值班医生；第一个钩子写的是考评组长到门前，槽位从女主任改为考评组长；女主任、骨科住院总与暖通总工的倾向卡放宽到脱险后可心动，亲密前提写明危机解除、双方清醒自愿；新增一个下夜班后值班室的亲密日常；写死的人名改为身份称呼或占位。",
+ "notes": "按原稿加入，保留现代三甲医院夜班负压配药大厅的背景与人物设定。改动：四个玩家身份原本与人物模板是同一批人，改写为卫健委飞行检查员、医药公司驻院代表、夜班保安、麻醉科值班医生；第一个钩子写的是考评组长到门前，槽位从女主任改为考评组长；女主任、骨科住院总与暖通总工的倾向卡放宽到脱险后可心动，亲密前提写明危机解除、双方清醒自愿；新增一个下夜班后值班室的亲密日常；写死的人名改为身份称呼或占位。\n2026-10-24 按写作规则 v2 与 Gemini 创意卡改造：删掉停电气密门的机关，改成重点专科考评夜围绕一笔救过无名氏的违规暗账的抉择。",
  "player_identities": [
   {
    "age_range": [
-    32,
-    48
+    27,
+    40
    ],
-   "baseline": "不打招呼就来抽查夜班的检查员，正好赶上雷暴跳闸。",
+   "baseline": "你负责重点区域的门禁核验和夜巡登记，考评期间整层洁净区的进出都要从你手上过。职位不高，可每个人今夜去过哪间屋，你都看得见。",
    "gender": "any",
-   "id": "identity_chief_medical_officer",
-   "reputation": "铁面无私，院长们听见这个名字都要出一身汗。",
+   "id": "identity_security_supervisor",
+   "reputation": "夜巡从不漏一间屋，嘴也严。",
    "resources": [
-    "卫健委的检查令",
-    "一票否决的现场记录权"
+    "洁净区全套门禁钥匙卡",
+    "安保监控查阅平板"
    ],
    "risks": [
-    "检查中若出事故，检查员也要写说明"
+    "放错一个人进洁净区，考评组第一个追的就是保卫部。"
    ],
-   "role": "卫健委派来的成年飞行检查员",
-   "social_position": "high",
-   "title_patterns": [
-    {
-     "gender": "any",
-     "pattern": "{family}检查员"
-    },
-    {
-     "gender": "any",
-     "pattern": "{given}"
-    }
-   ]
-  },
-  {
-   "age_range": [
-    23,
-    30
-   ],
-   "baseline": "负责重症针剂供货的医药代表，夜里来送一批急用药，被困在了配药区外廊。",
-   "gender": "any",
-   "id": "identity_head_nurse",
-   "reputation": "八面玲珑，嘴严手快。",
-   "resources": [
-    "一箱急用的重症针剂",
-    "跟药剂科上上下下的交情"
-   ],
-   "risks": [
-    "被查到深夜出入洁净区，供货资格就悬了"
-   ],
-   "role": "医药公司的成年驻院代表",
-   "social_position": "equal",
-   "title_patterns": [
-    {
-     "gender": "any",
-     "pattern": "{family}代表"
-    },
-    {
-     "gender": "any",
-     "pattern": "{given}"
-    }
-   ]
-  },
-  {
-   "age_range": [
-    23,
-    30
-   ],
-   "baseline": "守四楼洁净区门禁的夜班保安，手里有全层的备用门卡。",
-   "gender": "any",
-   "id": "identity_director_inspector",
-   "reputation": "老实肯干，护士们都愿意找这位帮忙。",
-   "resources": [
-    "四楼全部门禁的备用卡",
-    "一支强光手电和一部对讲机"
-   ],
-   "risks": [
-    "门禁出了岔子，保安是第一个背锅的"
-   ],
-   "role": "医院的成年夜班保安",
+   "role": "保卫部夜班主管",
    "social_position": "low",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}师傅"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
@@ -1663,26 +1907,84 @@
   },
   {
    "age_range": [
-    23,
-    30
+    28,
+    38
    ],
-   "baseline": "今晚和女主任搭班的麻醉医生，刚下一台急诊手术，回来取药就撞上了停电。",
+   "baseline": "你代表院级管理层居中协调跨科抢救和考评接待，专家组的路线是你排的，各科主任见了你都得客气三分，可真出了事，你也是第一个被叫去问话的人。",
    "gender": "any",
-   "id": "identity_hvac_engineer",
-   "reputation": "冷静可靠，手术室里人人都信这位的判断。",
+   "id": "identity_admin_liaison",
+   "reputation": "会说话、会排路线，各科都欠你人情。",
    "resources": [
-    "麻醉科药柜钥匙",
-    "一身还没换下的手术服"
+    "急救绿色通道特批章",
+    "专家组日程表"
    ],
    "risks": [
-    "擅离岗位太久，急诊那边会出事"
+    "考评一旦出事，接待路线和特批章都会被翻出来逐条核对。"
    ],
-   "role": "麻醉科的成年值班医生",
+   "role": "医务处临床协调主任助理",
    "social_position": "equal",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}医生"
+     "pattern": "{family}"
+    },
+    {
+     "gender": "any",
+     "pattern": "{given}"
+    }
+   ]
+  },
+  {
+   "age_range": [
+    30,
+    40
+   ],
+   "baseline": "ICU里三个病危患者等着这批静脉营养液和升压药救命，你从病区赶到配药中心门外，手里的处方一张比一张急，考评流程却一步也不能少。",
+   "gender": "any",
+   "id": "identity_icu_attending",
+   "reputation": "抢救台上手稳心细，脾气急。",
+   "resources": [
+    "三份病危患者抢救处方单",
+    "床旁领药授权牌"
+   ],
+   "risks": [
+    "越级调拨被考评组记下，履历上就多一条流程瑕疵。"
+   ],
+   "role": "急诊ICU值班主治医师",
+   "social_position": "equal",
+   "title_patterns": [
+    {
+     "gender": "any",
+     "pattern": "{family}"
+    },
+    {
+     "gender": "any",
+     "pattern": "{given}"
+    }
+   ]
+  },
+  {
+   "age_range": [
+    38,
+    52
+   ],
+   "baseline": "你是与考评组长平级的外部监督专家，受邀来做同行评议兼督查，复核终审有你一票，封存争议账目也要你签字，外廊上每个人都在揣摩你的态度。",
+   "gender": "any",
+   "id": "identity_peer_reviewer",
+   "reputation": "业内出了名的公道，也出了名的难缠。",
+   "resources": [
+    "封存争议账目的公证书",
+    "复核终审表决票"
+   ],
+   "risks": [
+    "护短的名声一旦传开，你的评议资格和多年声望都会受质疑。"
+   ],
+   "role": "卫健委特邀同行评议专家",
+   "social_position": "high",
+   "title_patterns": [
+    {
+     "gender": "any",
+     "pattern": "{family}"
     },
     {
      "gender": "any",
@@ -1691,370 +1993,473 @@
    ]
   }
  ],
- "premise": "三甲医院四层的负压无菌配药中心，值班女主任管着全院最难配的药，白天带教、查房，夜里守着配药大厅签字。卫健委的飞行检查组这周驻院，医药公司的驻院代表和夜班保安也总在外廊打转。配药大厅的气动滑门遇到压差会自锁，雷雨季的电闸跳过一回。",
+ "premise": "综合医疗大楼四层的负压无菌配药中心，紫外灯在暗处泛着幽蓝的光，空气里是含氯消毒液和酒精的凉味。这里负责全院重症抢救特药和静脉营养液的配制，主任白天跑病房，夜里守在大厅把关处方签字。国家重点专科复核考评正在进行，卫健委专家组驻院彻查高值耗材和特药账目，医药代表、护士长、主任药师和夜班保卫各有心事，在外廊里来回穿行。",
  "pressures": [
   {
-   "choice": "是反握冷锻金属平柄施展四点二牛顿杠杆刚力挑开卡销，抑或呼唤护士长强拉门扇冒撕裂走光之险？",
+   "choice": "认账，全科跟着受处分；不认，护士长和主任药师谁先把对方推出去。",
    "exits": [
     {
-     "cost": "白皙皓腕被冰冷合金合页刮擦出道道红痕伴随刺骨钝痛",
-     "option": "反握冷轧整骨锤平把探入机械滑块以四点二牛顿刚力挑退自锁卡榫"
+     "cost": "科室补缴税费和罚金。",
+     "option": "护士长亮出主任药师的签字，两人一起向考评组说明"
     },
     {
-     "cost": "开门动作延滞数秒引来门外评审团长时间驻足狐疑打量",
-     "option": "示意护士长迅速拉平白色防护披肩掩盖门框空隙暗中用力"
+     "cost": "配药中心主任可能被全院通报、诫勉谈话。",
+     "option": "把收据本和手账交给考评组长当面讲清"
+    },
+    {
+     "cost": "要动用全院年度公益基金对冲。",
+     "option": "请医务处报院伦理委员会，出特别救助批件把暗账转正"
     }
    ],
    "far": {
-    "consequence": "女主任首席名医之崇高声誉彻底毁弃，科室面临降级通报批评",
-    "due_days": 1,
-    "trigger": "紫外高压放电若正式喷发将灼伤女主任裸露肩颈，门外考评专家拉开门窗将直击走光破败丑态"
+    "consequence": "专科名分和全科的处分一起落定。",
+    "due_days": 14,
+    "trigger": "考评结论下发"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [],
-   "id": "press_airlock_interlock_trap",
+   "id": "p_nameless_relief_ledger",
    "immediate": {
-    "minutes": 1,
-    "text": "滑门机械棘爪深嵌腰带丝带，真丝长袍紧绷勒紧香肩，紫外灭菌倒计时二十秒警报急促长鸣。"
+    "minutes": 10,
+    "text": "主任药师把认定书推到护士长面前，笔帽已经拧开。"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "护士长握着{char_jiang_jianping_pharmacist.name}当年参与审批、默许报销的签字底单。",
+    "holder": "char_he_yuqin_head_nurse",
+    "subject": "char_jiang_jianping_pharmacist"
+   },
    "location_ids": [
-    "loc_sterile_dispensing_hall",
-    "loc_airlock_interlock_sliding_gate"
+    "loc_on_call_room"
    ],
    "near": {
-    "deadline_minutes": 2,
-    "text": "副院长严厉靴声已踏上外廊最后数步，配药大厅紫外线与臭氧发生器指示灯转为深红警示。"
+    "deadline_minutes": 180,
+    "text": "交班前考评组就要调阅科室公账，暗账藏不住。"
    },
-   "objective": "在紫外脉冲喷放前二十秒内反握截骨锤撬退联锁滑块抽身，抚平白袍恢复冷艳端庄姿态迎客",
-   "source": "accident",
-   "start_minute": 1395,
-   "tags": [
-    "disaster"
-   ],
-   "title": "气动联锁滑门受压咬带危机",
-   "trigger": "突发跳闸内外压差暴涨至二百帕，气动联锁滑门自锁死死咬住女主任真丝长袍后腰带与铅笔裙侧暗扣"
-  },
-  {
-   "choice": "是由老药师以呈报危重配方引开评审视线，还是由暖通总工以调试旁通阀拖延时间？",
-   "exits": [
-    {
-     "cost": "老药师需在众位挑剔考评官面前独自承受长达数分钟严肃问询",
-     "option": "主任药师老药师主动隔窗向专家团展示重症急救药品配方表格引开视线"
-    },
-    {
-     "cost": "轻微违章操作需在考评后提交书面申辩报告",
-     "option": "暖通工程师暖通总工在外侧机箱轻拧泄压旋钮以平衡舱门气压"
-    }
-   ],
-   "far": {
-    "consequence": "全院本年度重大国家级专项拨款被全额撤销追责",
-    "due_days": 2,
-    "trigger": "考评组若目睹内部机械卡滞与医护失态将当场取消无菌中心示范单位评定"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_hospital_rounds_inspection",
-   "immediate": {
-    "minutes": 2,
-    "text": "专家团手持打分夹已驻足风淋室外玻璃窗前，深沉议论之声清晰传过对讲器。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_airlock_interlock_sliding_gate"
-   ],
-   "near": {
-    "deadline_minutes": 5,
-    "text": "考评组助理手掌已搭在风淋门把手上，若内门未能按时开启将直接记录设备故障。"
-   },
-   "objective": "在专家团推开气闸门前完成自救与仪容整肃，确保洁净大厅质控万全无虞",
-   "source": "institution",
-   "start_minute": 1390,
-   "tags": [],
-   "title": "三甲专家考评突击夜巡大检",
-   "trigger": "考评专家团在副院长率领下大步流星抵临负压配药大厅外廊准备推门验收"
-  },
-  {
-   "choice": "是硬拽白大褂冒险脱身，还是赌机电总工能及时断电？",
-   "exits": [
-    {
-     "cost": "露在外面的手腕和小腿会被灼红",
-     "option": "用白大褂下摆蒙住头脸，硬撑过照射"
-    },
-    {
-     "cost": "拉闸会连带负压系统一起停掉，配药厅要重新消毒",
-     "option": "请机电总工手动拉闸切断灭菌回路"
-    }
-   ],
-   "far": {
-    "consequence": "考评组会在报告里记下配药厅安全管理失职。",
-    "due_days": 2,
-    "trigger": "若被紫外灯照伤，女主任的眼睛要休养好几周，手术排班全乱。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_uv_sterilizer_countdown",
-   "immediate": {
-    "minutes": 1,
-    "text": "灭菌灯管开始发出嗡嗡声，头顶亮起一圈淡紫色的光。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_sterile_dispensing_hall"
-   ],
-   "near": {
-    "deadline_minutes": 3,
-    "text": "二十秒后紫外灯全功率照射，皮肤和眼睛都会灼伤。"
-   },
-   "objective": "在紫外灯亮起之前脱身，或者让机电总工手动切断灭菌回路。",
-   "source": "accident",
-   "start_minute": 1398,
-   "tags": [
-    "disaster"
-   ],
-   "title": "紫外灭菌倒计时",
-   "trigger": "断电后备用电源启动，配药厅的紫外灭菌灯进入倒计时，二十秒后就要全功率照射。"
-  },
-  {
-   "choice": "是先顾自己脱身，还是被卡着也要先把针剂从门缝递出去？",
-   "exits": [
-    {
-     "cost": "身子一扭，白大褂的腰带又被扯紧一截",
-     "option": "被卡着也要伸手从门缝把针剂递出去"
-    },
-    {
-     "cost": "传递窗也被断电锁死，要等机电总工去开",
-     "option": "让护士长从另一侧的传递窗取药"
-    }
-   ],
-   "far": {
-    "consequence": "医院要面对一场医疗纠纷，女主任作为当班负责人首当其冲。",
-    "due_days": 3,
-    "trigger": "若针剂送晚了，病人可能抢救不过来。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_emergency_prescription",
-   "immediate": {
-    "minutes": 1,
-    "text": "门外护士的哭腔隔着玻璃传进来。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_sterile_dispensing_hall",
-    "loc_hospital_rounds_corridor"
-   ],
-   "near": {
-    "deadline_minutes": 5,
-    "text": "急诊那边说病人的血压还在往下掉。"
-   },
-   "objective": "在病人撑不住之前把针剂递出去。",
+   "objective": "在考评组进门前决定，这笔救过命的违规账是公开认下，还是保住重点专科。",
    "source": "person",
-   "start_minute": 1402,
-   "tags": [],
-   "title": "急诊急等的处方药",
-   "trigger": "急诊送来一个过敏性休克的病人，急需配药厅里的一支特殊针剂，护士在门外急得直拍玻璃。"
+   "start_minute": null,
+   "tags": [
+    "workplace",
+    "crime"
+   ],
+   "title": "前任留下的救助暗账",
+   "trigger": "{char_he_yuqin_head_nurse.name}摊开救助手账：那笔药代返点全贴进了急诊无名氏的抢救费，审批栏里还有主任药师的签字。"
   },
   {
-   "choice": "是让护士长出去说明情况，还是让规培医生闭嘴？",
+   "choice": "当场揭穿，医药代表终身禁入；给一条路，医院和药企都要付出代价。",
    "exits": [
     {
-     "cost": "护士长一走，门口就没人挡视线",
-     "option": "让护士长出去说明是断电卡门"
+     "cost": "医院中止与该药企的全部科研合作。",
+     "option": "让医药代表当场写下撤回声明，交出全部伪造原件"
     },
     {
-     "cost": "越是严厉，越显得心虚",
-     "option": "把规培医生叫到一边严厉警告"
+     "cost": "下季度部分特药面临断货。",
+     "option": "移交卫健委飞检组，取消该药企在全省的中标资格"
+    },
+    {
+     "cost": "对该企业保留一年的试用观察期。",
+     "option": "准许药企以基金名义捐赠急需设备平账"
     }
    ],
    "far": {
-    "consequence": "医院上下都会以为女主任和考评组结了梁子。",
-    "due_days": 4,
-    "trigger": "若流言写进考评报告，女主任的晋升就要往后推一年。"
+    "consequence": "药企在全省公立医院的中标资格被重新审查。",
+    "due_days": 30,
+    "trigger": "纪检组立案"
+   },
+   "flags": [
+    "timed",
+    "leverage"
+   ],
+   "hook_ids": [],
+   "id": "p_forged_consent",
+   "immediate": {
+    "minutes": 5,
+    "text": "组长合上文件夹，叫住了正要离开的医药代表。"
+   },
+   "leverage": {
+    "basis": "组长握着{char_pharma_rep_song.name}仿签专家签名、套取赠药指标的同意书原件和返点凭证。",
+    "holder": "char_gu_jingming_director",
+    "subject": "char_pharma_rep_song"
+   },
+   "location_ids": [
+    "loc_hvac_control_substation"
+   ],
+   "near": {
+    "deadline_minutes": 120,
+    "text": "考评组汇总前，伪造原件必须有个去处。"
+   },
+   "objective": "查清伪造出自谁手，洗清配药中心的受贿嫌疑。",
+   "source": "person",
+   "start_minute": null,
+   "tags": [
+    "workplace",
+    "crime"
+   ],
+   "title": "仿签的知情同意书",
+   "trigger": "{char_gu_jingming_director.name}在分控室捡到医药代表遗落的文件夹，里面夹着几张仿主任笔迹签批的赠药知情同意书。"
+  },
+  {
+   "choice": "迎上去拖住专家，还是让主任自己走出来面对。",
+   "exits": [
+    {
+     "cost": "被专家当场批评打乱考评节奏。",
+     "option": "医务处的人迎上去，递上感控优秀案例汇编引开注意"
+    },
+    {
+     "cost": "毫无准备地接受现场抽查。",
+     "option": "配药中心主任穿戴整齐走出风淋间，当面汇报无菌质控流程"
+    },
+    {
+     "cost": "专家在门外等候，心生疑窦。",
+     "option": "护士长带人开紫外灯、拉门帘，进入无菌操作状态"
+    }
+   ],
+   "far": {
+    "consequence": "今夜每一处迟疑都会写进考评意见。",
+    "due_days": 7,
+    "trigger": "考评组的现场记录汇总"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [],
-   "id": "press_nurse_station_gossip",
+   "id": "p_inspectors_overheard",
    "immediate": {
-    "minutes": 2,
-    "text": "几个夜班护士凑在一起窃窃私语，看见人来就散开。"
+    "minutes": 5,
+    "text": "脚步声越来越近，玻璃那头的门帘还没拉下。"
    },
    "leverage": null,
    "location_ids": [
     "loc_hospital_rounds_corridor"
    ],
    "near": {
-    "deadline_minutes": 8,
-    "text": "考评组的记录员已经在本子上记了一笔。"
+    "deadline_minutes": 30,
+    "text": "专家组会在门前停下，要求进入大厅。"
    },
-   "objective": "在流言传到考评组之前把风声压下去。",
-   "source": "rumor",
-   "start_minute": 1405,
-   "tags": [],
-   "title": "护士站的悄悄话",
-   "trigger": "护士站里有人说女主任被关在配药厅里，话传到急诊科已经成了女主任跟考评专家吵翻了。"
-  },
-  {
-   "choice": "是让机电总工先恢复负压，还是先救人再说？",
-   "exits": [
-    {
-     "cost": "机组一启动，滑门的气压会把门咬得更紧",
-     "option": "让机电总工先恢复负压机组"
-    },
-    {
-     "cost": "院感科的封闭令一下，就很难撤回",
-     "option": "先救人，负压的事等会再说"
-    }
-   ],
-   "far": {
-    "consequence": "几十个等着化疗的病人要推迟治疗，院长要亲自出面解释。",
-    "due_days": 2,
-    "trigger": "若洁净区被封，第二天的化疗配药要全部停掉。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_negative_pressure_alarm",
-   "immediate": {
-    "minutes": 2,
-    "text": "压差表的指针一路往零滑，报警灯闪成一片红。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_hvac_control_substation",
-    "loc_sterile_dispensing_hall"
-   ],
-   "near": {
-    "deadline_minutes": 10,
-    "text": "十分钟一到，院感科就要下封闭令。"
-   },
-   "objective": "在院感规定的十分钟内恢复负压，免得整个洁净区被封。",
-   "source": "institution",
-   "start_minute": 1408,
+   "objective": "在专家走到风淋门前，把人引开，或把门里收拾妥当。",
+   "source": "person",
+   "start_minute": null,
    "tags": [
     "workplace"
    ],
-   "title": "负压系统报警",
-   "trigger": "负压机组断电停转，配药厅的压差报警响个不停，按院感规定压差失衡超过十分钟就得封闭整个洁净区。"
+   "title": "外廊上的考评谈话",
+   "trigger": "考评组长带着三名专家沿外廊慢慢走来，话说得很重：今夜若查实无菌配药账目不清，重点专科即刻摘牌。"
+  },
+  {
+   "choice": "让流程走完，还是破例先放药。",
+   "exits": [
+    {
+     "cost": "越级调拨被考评组记一条流程瑕疵。",
+     "option": "值班医生出示抢救处方，快步接应进病区并当众安抚"
+    },
+    {
+     "cost": "保卫岗短时间脱岗。",
+     "option": "保卫主管把家属引到等候室，倒上温水解释配药流程"
+    },
+    {
+     "cost": "担下打破气闸压差的感控风险。",
+     "option": "配药中心主任破例开紧急传药窗，核对无误后当面放药"
+    }
+   ],
+   "far": {
+    "consequence": "医院收到正式投诉，考评意见里多出一条。",
+    "due_days": 10,
+    "trigger": "家属投诉"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_family_outcry",
+   "immediate": {
+    "minutes": 5,
+    "text": "家属攥着护士的胳膊不放，记录员已经举起了笔。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_hospital_rounds_corridor"
+   ],
+   "near": {
+    "deadline_minutes": 40,
+    "text": "升压药再不到，病房那边就要加大剂量。"
+   },
+   "objective": "先安抚家属，把救命药送到床边。",
+   "source": "person",
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "家属在外廊的哭求",
+   "trigger": "ICU重症患者的家属在楼梯口拦住取药的护士哭求发药，声音传遍整条外廊，专家组全体侧目。"
+  },
+  {
+   "choice": "全交，暗账一起见光；拆开交，就要有人出来担保。",
+   "exits": [
+    {
+     "cost": "主任自愿退出今年的优秀专家评选。",
+     "option": "配药中心主任交出全部账目，附上自请处分申请书"
+    },
+    {
+     "cost": "基金暂缓拨付三个月。",
+     "option": "同行评议专家行使复核权，把争议账目和业务评审拆开立项"
+    },
+    {
+     "cost": "科室未来一年接受双月审计。",
+     "option": "院领导出面为配药中心出具担保函，由医务处承担整改"
+    }
+   ],
+   "far": {
+    "consequence": "拨付进度取决于今夜交出的账。",
+    "due_days": 30,
+    "trigger": "基金拨付"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_specialty_fund",
+   "immediate": {
+    "minutes": 10,
+    "text": "决议表摊在长椅上，组长的笔就搁在旁边。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_hospital_rounds_corridor"
+   ],
+   "near": {
+    "deadline_minutes": 240,
+    "text": "考评组要在交班前拿到账目。"
+   },
+   "objective": "决定账目怎么交，专科和基金能保住几分。",
+   "source": "institution",
+   "start_minute": null,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "专科复核与千万基金",
+   "trigger": "考评组长出示决议表：今夜签字通过，科室获一千万元专项发展基金，前提是立刻交出全部自制药品账目。"
+  },
+  {
+   "choice": "喊自己人悄悄开门，还是让考评组看见你们关在一起。",
+   "exits": [
+    {
+     "cost": "等候时两人只能贴着更衣柜站着，衣衫被冷风吹透。",
+     "option": "用对讲器喊暖通总工切换备用电源再开门"
+    },
+    {
+     "cost": "护士长看见你们关在一起，心里有了数。",
+     "option": "喊护士长拿应急钥匙从外侧开门"
+    },
+    {
+     "cost": "考评组亲眼看见你们关在一起，记进现场记录。",
+     "option": "按下呼叫铃，让外廊上的考评组派人来开门"
+    }
+   ],
+   "far": {
+    "consequence": "两人同时出现在风淋间的记录被翻出来。",
+    "due_days": 7,
+    "trigger": "考评组调阅门禁记录"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_airlock_power_trip",
+   "immediate": {
+    "minutes": 5,
+    "text": "备用照明亮起，通风骤冷，两人肩挨着肩站在更衣柜前。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_airlock_interlock_sliding_gate"
+   ],
+   "near": {
+    "deadline_minutes": 30,
+    "text": "负压恢复前，大厅里那批药液都要作废重配。"
+   },
+   "objective": "等人来开门之前照看好彼此，决定先喊谁来。",
+   "source": "accident",
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "雷雨跳闸关在风淋间",
+   "trigger": "雷暴让四层副配电箱跳闸，负压失守，风淋间两道平移门的电磁锁同时闭锁，{player.name}和对方被关在窄间里。"
+  },
+  {
+   "choice": "让主任躺下歇着，还是撑着去答辩。",
+   "exits": [
+    {
+     "cost": "主任至少要卧床静养半个钟头，赶不上答辩。",
+     "option": "扶进值班室躺平，喂温葡萄糖水、贴热水袋，叫急诊值班医生带药过来"
+    },
+    {
+     "cost": "动用了急救箱的应急储备。",
+     "option": "掌心覆在胃脘上轻轻按揉，请急救护士送来补液，再叫医生来看"
+    },
+    {
+     "cost": "主任强撑着去答辩，体力严重透支。",
+     "option": "喂口服葡萄糖、用毛毯裹好，叫急诊医生带救护组推轮椅在门外待命"
+    }
+   ],
+   "far": {
+    "consequence": "考评结束后主任得请病假休养。",
+    "due_days": 7,
+    "trigger": "身体透支"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_lu_cold_sweat"
+   ],
+   "id": "p_gastric_spasm",
+   "immediate": {
+    "minutes": 5,
+    "text": "对方攥着你的袖子，嘴唇发白，说不要声张。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_sterile_dispensing_hall"
+   ],
+   "near": {
+    "deadline_minutes": 60,
+    "text": "专家组的现场答辩就要开始。"
+   },
+   "objective": "先把人照看住、叫来医生，再说答辩。",
+   "source": "nature",
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "久站受寒的胃痉挛",
+   "trigger": "在低温负压大厅连站八个钟头核对处方，晚饭也没吃，对方突然胃痉挛、低血糖虚脱，冷汗淋漓地跌坐在配药椅上。"
   }
  ],
- "region": "综合医疗大楼四层负压无菌中心外廊",
+ "region": "综合医疗大楼四层：负压无菌配药中心与洁净区外廊",
  "rules": [
   {
-   "id": "rule_airlock_interlock_protocol",
-   "text": "负压洁净大厅双向气密滑门具备防回流安全自锁，内外压差超标时机械联锁销钉将硬性卡死滑槽防止交叉感染。"
+   "id": "r_double_sign",
+   "text": "超剂量和抗肿瘤特药处方必须双人签字，配药中心主任终审放行后才能出门。"
   },
   {
-   "id": "rule_uv_sterilization_countdown",
-   "text": "配药区一旦断电触发二级防护，高强度医用紫外灭菌与臭氧脉冲系统将在二十秒警报归零后全自动强制喷放。"
+   "id": "r_airlock_order",
+   "text": "进出无菌大厅必须经过风淋缓冲间，两道门不能同时打开，否则负压失守、整批药液作废。"
   },
   {
-   "id": "rule_surgical_hammer_handling",
-   "text": "骨科特种加厚冷轧不锈钢截骨锤属于一级消毒外科法器，平柄尾端倒角硬棱非主刀医官亲临严禁用于非标操作。"
+   "id": "r_inspection_access",
+   "text": "考评期间外廊归专家组调度，任何人进出洁净区都要在保卫部登记，查账时不得销毁任何票据。"
   },
   {
-   "id": "rule_hospital_accreditation_rounds",
-   "text": "卫生评审专家团巡查期间全院维持特级静音与严格着装规范，衣冠不整或仪器失控将当场判定一票否决严重事故。"
+   "id": "r_rep_boundary",
+   "text": "医药代表不得进入洁净区，不得接触处方和病历，赠药只能走院方伦理审批。"
   }
  ],
  "schema_version": 1,
  "stage_labels": {
-  "acquainted": "接诊",
-  "committed": "共济",
-  "familiar": "默契",
-  "flirting": "会意",
-  "intimate": "信托",
-  "stranger": "初见",
-  "testing": "试探"
+  "acquainted": "点头之交",
+  "committed": "誓词相托",
+  "familiar": "同楼夜班",
+  "flirting": "隔窗试探",
+  "intimate": "值班室私情",
+  "stranger": "外廊擦肩",
+  "testing": "台账交锋"
  },
  "status": "released",
- "style_hint": "现代大型综合医院风淋洁净工程技术，无第三人称单数代词，全员成年合法自立",
+ "style_hint": "写冷光、消毒水味和压低的说话声；人物克制，情绪藏在手上的动作和没说完的半句话里。医疗细节写准，不写血腥。",
  "tension_engines": [
   {
-   "id": "engine_airlock_door_jam",
-   "text": "二百帕内外压差使重型净化滑门形成巨大抽吸负压，联锁棘爪死死咬合真丝长袍腰带与铅笔裙侧拉链。"
+   "id": "te_relief_ledger",
+   "text": "那笔药代返点救过无名氏的命，账却是违规的：公开认下，还是保住重点专科。"
   },
   {
-   "id": "engine_uv_sterilization_clock",
-   "text": "紫外高强度脉冲与高浓度臭氧喷放二十秒倒计时无情倒数，若不解脱将面临强氧化气体灼伤之灭顶灾难。"
+   "id": "te_inspection_door",
+   "text": "考评组就在风淋门外，查账时不许销毁任何票据，谁进过哪扇门都有记录。"
   },
   {
-   "id": "engine_director_inspection_approach",
-   "text": "副院长率领三甲评审专家考评团正沿风淋室外廊步步逼近，皮鞋声与威严议论声唯余十五息便将抵临门前。"
+   "id": "te_icu_drugs",
+   "text": "ICU三个病危患者等着这批药，考评流程一步也不能省。"
   },
   {
-   "id": "engine_modesty_tear_threat",
-   "text": "真丝制服受双向机械拉力猛烈紧绷拉扯，稍有盲动整幅后腰带与衬衫前襟便将撕裂导致大面积走光失仪。"
+   "id": "te_rep_forgery",
+   "text": "医药代表伪造了专家签名的知情同意书，一旦查实就是终身禁入。"
   }
  ],
  "title": "考评门外女主任",
  "tone": [
-  "冷静",
-  "严谨",
-  "紧迫",
-  "典雅",
-  "纯粹",
-  "体面"
+  "考评组就在门外",
+  "一笔救过命的暗账",
+  "隔着无菌玻璃的叮嘱",
+  "值班室里的半盒饺子",
+  "职场里克制的心动"
  ],
  "twists": [
   {
-   "category": "信息",
-   "id": "twist_info_airlock_blueprint",
-   "requires": [
-    "char_lin_chengye_engineer"
-   ],
-   "text": "负压大厅气密滑门在门轨暗格内预留有一组单向泄压自锁滑块，只要用扁平硬柄向斜上方挑动两毫米即可让卡槽应声滑脱。"
-  },
-  {
-   "category": "人事",
-   "id": "twist_person_officer_surgical_mastery",
-   "requires": [
-    "char_lu_qingyi_officer"
-   ],
-   "text": "女主任早前曾主刀数百台高难度骨科截骨矫形手术，对手术器械之微观反作用力杠杆力矩具备举世无双之大师级精准掌控力。"
-  },
-  {
-   "category": "资源",
-   "id": "twist_resource_surgical_hammer_steel",
-   "requires": [
-    "char_song_sihan_fellow"
-   ],
-   "text": "女主任手持之冷轧高硬度外科整平锤乃特种钢材打造，平柄末端经过精密四毫米倒角淬火硬化坚韧不可摧折。"
-  },
-  {
    "category": "制度",
-   "id": "twist_institution_inspection_protocol",
+   "id": "tw_full_pass",
    "requires": [
     "char_gu_jingming_director"
    ],
-   "text": "国家三甲评审规程明文载明风淋隔离气闸在未达到终末平衡前严禁推门，为女主任利用门遮蔽自救争取了神圣合法之法理屏障。"
+   "text": "{char_gu_jingming_director.name}核实了救助的来龙去脉，在评审决议书上签下全优；专科挂牌国家级诊疗中心，全院为历史旧账设立规范的阳光救助基金。"
   },
   {
-   "category": "时限",
-   "id": "twist_deadline_uv_timer_lag",
+   "category": "人事",
+   "id": "tw_song_confession",
    "requires": [
-    "press_airlock_interlock_trap"
+    "char_pharma_rep_song"
    ],
-   "text": "老药师在操作台下方悄然回拨了紫外线发生器机械延时旋钮十秒，为女主任扳退卡销赢得了千金难买之转瞬生机。"
+   "text": "{char_pharma_rep_song.name}在伪造原件面前撑不住，向纪检组写下药企单方面违规的自白书；配药中心的受贿嫌疑洗清，对方被公司解雇、接受调查。"
   },
   {
-   "category": "关系",
-   "id": "twist_relation_nurse_shield_devotion",
+   "category": "资源",
+   "id": "tw_jiang_hands_over",
+   "requires": [
+    "char_jiang_jianping_pharmacist"
+   ],
+   "text": "{char_jiang_jianping_pharmacist.name}把私藏的底单复印件全数交给医务处，承认当初看错了风向，换来保留返聘的处理。"
+  },
+  {
+   "category": "制度",
+   "id": "tw_ethics_waiver",
    "requires": [
     "char_he_yuqin_head_nurse"
    ],
-   "text": "护士长在门扉崩脱刹那以纤瘦身躯和纯白大氅化作铜墙铁壁，为女主任抚平衣摆从容仪态立下了汗马功劳。"
+   "text": "伦理委员会连夜调阅{char_he_yuqin_head_nurse.name}的手账，认定无名氏救助符合人道主义救治原则，手账封存入档，不再追究。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_lu_takes_blame",
+   "requires": [
+    "char_lu_qingyi_officer"
+   ],
+   "text": "{char_lu_qingyi_officer.name}以第一责任人的身份认下管理不严，自请扣除半年绩效，保住了全科年轻骨干的晋升资格。"
+  },
+  {
+   "category": "意外",
+   "id": "tw_airlock_on_purpose",
+   "requires": [
+    "char_lu_qingyi_officer"
+   ],
+   "text": "风淋间那次断电是意外，可{char_lu_qingyi_officer.name}早从压差屏上看出气闸要锁，却故意没先出去，只为和你关在窄间里，把那笔账和不敢在人前说的话一口气说完；大厅那批药液早封进了层流罩，一支也没作废。"
+  },
+  {
+   "category": "信息",
+   "id": "tw_gu_backstop",
+   "requires": [
+    "char_gu_jingming_director"
+   ],
+   "text": "人前把配药中心问得抬不起头的{char_gu_jingming_director.name}，三天前就以个人名义给伦理委员会写了说明信，替那笔救助作保。"
+  },
+  {
+   "category": "时限",
+   "id": "tw_dawn_choice",
+   "requires": [
+    "char_lu_qingyi_officer"
+   ],
+   "text": "交班铃响，晨光照满四层外廊，{char_lu_qingyi_officer.name}解下听诊器转过身，问你是留在大院并肩撑起这摊事，还是周末脱下白大褂，一起去老街的诊所。"
   }
  ]
 }

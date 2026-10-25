@@ -1,251 +1,110 @@
 {
  "background_cast": [
   {
-   "adult_context": "在大桥干了十几年的成年巡线安全员",
+   "adult_context": "年满二十岁、在站内便利店值夜班的店员。",
    "age_range": [
-    35,
-    45
+    20,
+    28
    ],
    "function": "witness",
-   "gender": "male",
-   "id": "bg_ryo_rail_inspector",
-   "line": "小辽死死攥着栈道扶手，眼睛一刻不离那节越来越歪的车钩。",
+   "gender": "any",
+   "id": "bg_store_clerk",
+   "line": "热饮柜只剩三罐浓汤了，要就快。",
    "location_ids": [
-    "loc_highbridge_maintenance_walkway"
+    "loc_river_tower_concourse"
    ],
-   "name": "小辽",
-   "role": "桥面巡线安全员"
+   "name": null,
+   "role": "便利店夜班店员"
   },
   {
-   "adult_context": "随救护车出勤的成年护士长",
+   "adult_context": "年满二十岁、同车晚归的兼职平面模特。",
+   "age_range": [
+    20,
+    25
+   ],
+   "function": "rumor_source",
+   "gender": "female",
+   "id": "bg_part_time_model",
+   "line": "那个背影我认得，限量款的裙子全城就两条。",
+   "location_ids": [
+    "loc_monorail_suspended_car"
+   ],
+   "name": null,
+   "role": "兼职模特"
+  },
+  {
+   "adult_context": "年满三十五岁、开了多年工程轨道车的司机。",
+   "age_range": [
+    35,
+    50
+   ],
+   "function": "helper",
+   "gender": "male",
+   "id": "bg_rail_car_driver",
+   "line": "除冰车只能多载两个人，谁走赶紧定。",
+   "location_ids": [
+    "loc_river_tower_concourse",
+    "loc_skybridge_viewing_deck"
+   ],
+   "name": null,
+   "role": "工程车司机"
+  },
+  {
+   "adult_context": "年满二十六岁、在桥南急救中心值夜班的急救员。",
+   "age_range": [
+    26,
+    40
+   ],
+   "function": "helper",
+   "gender": "any",
+   "id": "bg_paramedic",
+   "line": "救护车在桥头等着，伤员抬下来就走。",
+   "location_ids": [
+    "loc_river_tower_concourse"
+   ],
+   "name": null,
+   "role": "桥头急救员"
+  },
+  {
+   "adult_context": "年满二十二岁、随摄制组跑现场的杂志社助理。",
    "age_range": [
     22,
     28
    ],
-   "function": "helper",
-   "gender": "female",
-   "id": "bg_emi_paramedic",
-   "line": "惠美抱着急救箱蹲在方舱口，一遍遍核对担架和氧气瓶的数目。",
+   "function": "messenger",
+   "gender": "any",
+   "id": "bg_magazine_assistant",
+   "line": "主编来电话，问封面今晚能不能定。",
    "location_ids": [
-    "loc_substation_refuge_cabin"
+    "loc_river_tower_concourse"
    ],
-   "name": "惠美",
-   "role": "急救随车护士长"
+   "name": null,
+   "role": "杂志社助理"
   },
   {
-   "adult_context": "在触网上干了二十多年的成年检修工",
+   "adult_context": "年满四十岁、在时装学院成人夜校任教的导师。",
    "age_range": [
     40,
-    50
+    55
    ],
    "function": "obstacle",
-   "gender": "male",
-   "id": "bg_daiki_lineman",
-   "line": "大树抡着扳手守在变电总闸前，扯着嗓子报触网的残余电压。",
+   "gender": "female",
+   "id": "bg_night_school_tutor",
+   "line": "入围名单只认原创，签了外地排他约就别来。",
    "location_ids": [
-    "loc_traction_substation_platform"
+    "loc_gyaru_apartment"
    ],
-   "name": "大树",
-   "role": "高空触网检修工"
-  },
-  {
-   "adult_context": "在大桥巡逻队服役的成年巡逻员",
-   "age_range": [
-    21,
-    25
-   ],
-   "function": "messenger",
-   "gender": "male",
-   "id": "bg_shota_patrol_officer",
-   "line": "翔太攥着对讲机在风雨里喊，报车底火警读秒，也报下游已经封路。",
-   "location_ids": [
-    "loc_monorail_suspended_car"
-   ],
-   "name": "翔太",
-   "role": "桥面交通巡逻员"
-  },
-  {
-   "adult_context": "轨道消防队的成年消防长",
-   "age_range": [
-    28,
-    35
-   ],
-   "function": "helper",
-   "gender": "male",
-   "id": "bg_kazuki_firefighter",
-   "line": "一树领着几个消防员拖来水带和鼓风机，在桥塔外头又拉起一道水幕。",
-   "location_ids": [
-    "loc_substation_refuge_cabin"
-   ],
-   "name": "一树",
-   "role": "轨道专业消防长"
-  },
-  {
-   "adult_context": "在大桥监控中心值夜班的成年调度员",
-   "age_range": [
-    30,
-    40
-   ],
-   "function": "rumor_source",
-   "gender": "male",
-   "id": "bg_jun_dispatcher",
-   "line": "润二趴在监控台前盯着桥墩的应变读数，压低声音报裂缝又长了几毫米。",
-   "location_ids": [
-    "loc_highbridge_maintenance_walkway"
-   ],
-   "name": "润二",
-   "role": "大桥监控调度员"
+   "name": null,
+   "role": "夜校导师"
   }
  ],
  "cast_combos": [
   {
-   "chemistry": "傲娇潮酷辣妹校花与老牌轨道抢险指挥官在安全条令与名媛声誉上的意志碰撞与技术默契。",
-   "id": "combo_mina_and_fujiwara",
+   "chemistry": "{char_mina_gyaru.name}是你夜校同组的搭档，压轴礼服的每一道线都是你们一起定的。",
+   "id": "combo_mina_equal_classmate",
    "identity_ids": [
-    "identity_commander_fujiwara",
-    "identity_technician_takuya"
-   ],
-   "player_positions": [
-    "low",
-    "equal"
-   ],
-   "power_structure": "npc_high",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 4
-     },
-     "b": "char_mina_gyaru",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 4
-     },
-     "reason": "悬空车厢内共同经历高空生死考验建立之信任",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 3
-     },
-     "b": "char_fujiwara_commander",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 3
-     },
-     "reason": "指挥官在对讲机里吼得最凶，可第一个想到要关手电的也是指挥官",
-     "stage": "testing"
-    },
-    {
-     "a": "char_mina_gyaru",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 3
-     },
-     "b": "char_fujiwara_commander",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 4
-     },
-     "reason": "老指挥官爱惜后辈，辣妹校花誓死捍卫体面名节之无声博弈",
-     "stage": "testing"
-    }
-   ],
-   "slots": [
-    "char_mina_gyaru",
-    "char_fujiwara_commander"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "确保年轻名媛完好无损体面如初在电池起火前从容脱离车厢。",
-    "limit_gap": "指挥官必须依章排除车辆险情，辣妹绝不可在工兵众目睽睽下短裙撕裂走光受辱失态。",
-    "meeting_reason": "跨江单轨电车脱轨悬空事故现场高空应急排险。",
-    "resource_gap": "指挥官总指挥执掌大桥全线断电总钥匙，辣妹仅凭手头全金属睫毛夹实施应急自救。"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "engine_monorail_door_jam",
-    "engine_beam_fracture_danger"
-   ]
-  },
-  {
-   "chemistry": "名模校花与合租闺蜜多年情同手足之绝对信托与生死默契，闺蜜舍身撑展大氅筑起无瑕阴影屏障。",
-   "id": "combo_mina_and_chiyo",
-   "identity_ids": [
-    "identity_gyaru_model_mina"
-   ],
-   "player_positions": [
-    "high"
-   ],
-   "power_structure": "player_high",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 5
-     },
-     "b": "char_mina_gyaru",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 5
-     },
-     "reason": "多年闺蜜合租情谊历经患难见真情之隐私相托",
-     "stage": "intimate"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 4
-     },
-     "b": "char_chiyo_roommate",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 4
-     },
-     "reason": "闺蜜撑着外套挡在门口，一句话都不用多说",
-     "stage": "familiar"
-    },
-    {
-     "a": "char_mina_gyaru",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 5
-     },
-     "b": "char_chiyo_roommate",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 5
-     },
-     "reason": "合租三年，吵过架也一起哭过",
-     "stage": "committed"
-    }
-   ],
-   "slots": [
-    "char_mina_gyaru",
-    "char_chiyo_roommate"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "确保两位年轻女性在电池浓烟倒数结束前完好撤离车厢。",
-    "limit_gap": "辣妹的裙扣随时会崩，闺蜜得在手电照过来之前把外套撑开。",
-    "meeting_reason": "晚归通勤搭乘跨江单轨遭遇特大台风脱轨事故。",
-    "resource_gap": "辣妹掌握金属工具微观力矩手感，闺蜜手持双层加厚纯黑大氅充当唯一移动视线掩体。"
-   },
-   "tags": [],
-   "tension_engine_ids": [
-    "engine_monorail_door_jam",
-    "engine_dignity_exposure_hazard"
-   ]
-  },
-  {
-   "chemistry": "傲娇潮酷时尚名媛与质朴沉稳重装电修工长在险情破拆中的恪守礼法与刚性援护。",
-   "id": "combo_mina_and_takuya",
-   "identity_ids": [
-    "identity_chiyo_roommate",
-    "identity_technician_takuya"
+    "identity_classmate_patternmaker",
+    "identity_magazine_stylist"
    ],
    "player_positions": [
     "equal"
@@ -263,62 +122,295 @@
       "tension": 3,
       "trust": 4
      },
-     "reason": "工长在车底按着卡爪，辣妹在车里压着锁舌，两人隔着地板对口令",
-     "stage": "familiar"
-    },
+     "reason": "上周在夜校裁剪室试穿毕业秀短裙，你半跪着把银链袜夹的松紧一格格调好，抬头时被{char_mina_gyaru.ta}吻住了。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "char_mina_gyaru"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{char_mina_gyaru.ta}要你说一句，这场毕业秀值不值得{char_mina_gyaru.ta}留下。",
+    "limit_gap": "{char_mina_gyaru.ta}签了就不能参展，你留{char_mina_gyaru.ta}就得陪{char_mina_gyaru.ta}赔场地费。",
+    "meeting_reason": "末班车因冻雨停在江心桥塔，{char_mina_gyaru.name}把东京独约摊在尾厢座椅上，红着眼圈问你要不要带{char_mina_gyaru.ta}躲掉那班航班。",
+    "resource_gap": "{char_mina_gyaru.ta}握着独约的落笔权，你握着毕业秀压轴礼服的版。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_tokyo_contract",
+    "te_graduation_show"
+   ]
+  },
+  {
+   "chemistry": "你是管着整条线的总监，{char_mina_gyaru.name}是你末班车上最难缠、也最常想起的乘客。",
+   "id": "combo_mina_player_high_director",
+   "identity_ids": [
+    "identity_night_safety_director"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "char_mina_gyaru",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "上个月有人赶末班车扭了脚，你走工作通道送过江、背上楼；第二天巡检袖标内侧多了一串手机号。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "char_mina_gyaru"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{char_mina_gyaru.ta}要你今晚替{char_mina_gyaru.ta}挡一回。",
+    "limit_gap": "你私送乘客就是违规，{char_mina_gyaru.ta}躲星探躲不过今晚。",
+    "meeting_reason": "{char_mina_gyaru.name}为了躲星探的纠缠溜进你的值班管控区，拽着你的袖口求你用内部接驳车单独送{char_mina_gyaru.ta}回桥南。",
+    "resource_gap": "你能调内部接驳车，{char_mina_gyaru.ta}只有一张末班车票。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_freezing_rain",
+    "te_tokyo_contract"
+   ]
+  },
+  {
+   "chemistry": "站里没人知道，{char_mina_gyaru.name}每回收工都摘下墨镜钻进你的值班室，把冰凉的手塞进你怀里。",
+   "id": "combo_mina_npc_high_clerk",
+   "identity_ids": [
+    "identity_station_trainee"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 5
+     },
+     "b": "char_mina_gyaru",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 5
+     },
+     "reason": "三个月前在末班车站台避雨，两人定下地下恋情；你那件站务外套的内袋，至今收着{char_mina_gyaru.ta}的一枚耳坠。",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
+    "char_mina_gyaru"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{char_mina_gyaru.ta}要你陪{char_mina_gyaru.ta}把今晚过完，再告诉{char_mina_gyaru.ta}走不走。",
+    "limit_gap": "{char_mina_gyaru.ta}一签字你们就得断，你一开口挽留就是耽误{char_mina_gyaru.ta}。",
+    "meeting_reason": "{char_mina_gyaru.name}盯着手机里经纪人催签无恋爱保证书的短信，在空荡的尾厢里抱住你的腰不肯撒手。",
+    "resource_gap": "{char_mina_gyaru.ta}手里有五年独约，你手里只有一杯热可可。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_tokyo_contract",
+    "te_freezing_rain"
+   ]
+  },
+  {
+   "chemistry": "{char_chiyo_roommate.name}是替闺蜜挡掉所有烂桃花的人，唯独没挡过你。",
+   "id": "combo_chiyo_studio_lease",
+   "identity_ids": [
+    "identity_classmate_patternmaker",
+    "identity_magazine_stylist"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "char_chiyo_roommate",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "前天在合租工作室通宵清点样衣，{char_chiyo_roommate.ta}靠在你肩上睡着，醒来把工作室的备用钥匙挂到了你的扣环上。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "char_chiyo_roommate"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{char_chiyo_roommate.ta}要你答应，今晚先替{char_chiyo_roommate.ta}守住这件事。",
+    "limit_gap": "{char_chiyo_roommate.ta}坦白就失去闺蜜，你替{char_chiyo_roommate.ta}瞒就对不起朋友。",
+    "meeting_reason": "{char_chiyo_roommate.name}在换乘大厅拦住你，神色挣扎地承认自己收了东京星探的居间费，求你今晚先别拦闺蜜。",
+    "resource_gap": "{char_chiyo_roommate.ta}握着合租工作室的租约，你握着{char_chiyo_roommate.ta}最怕被人知道的那件事的线头。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_tokyo_contract"
+   ]
+  },
+  {
+   "chemistry": "{char_mayu_doctor.name}和你之间有一个只有两人懂的暗号：车上偶遇，敲两下药箱。",
+   "id": "combo_mayu_ankle_secret",
+   "identity_ids": [
+    "identity_night_safety_director",
+    "identity_classmate_patternmaker",
+    "identity_magazine_stylist",
+    "identity_station_trainee"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 4
+     },
+     "b": "char_mayu_doctor",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "你手腕伤好后最后一次复诊，诊所关了门，{char_mayu_doctor.ta}替你摘下护腕吻在旧伤上，约好车上偶遇就敲两下药箱。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "char_mayu_doctor"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{char_mayu_doctor.ta}要你帮{char_mayu_doctor.ta}把病人留下来。",
+    "limit_gap": "{char_mayu_doctor.ta}拦人会丢执业资格，你插手就得罪东京那边。",
+    "meeting_reason": "{char_mayu_doctor.name}拿着模特的脚踝核磁片站在贵宾休息室门口，低声告诉你病人在吃止痛药硬撑，今晚必须拦下东京行程。",
+    "resource_gap": "{char_mayu_doctor.ta}有病人的核磁片，你有能让病人听进去话的分量。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_ankle_secret"
+   ]
+  },
+  {
+   "chemistry": "{agent_kuroda_scout.name}笑得滴水不漏，却只在你面前把合约夹放下过一次。",
+   "id": "combo_kuroda_contract_buyout",
+   "identity_ids": [
+    "identity_night_safety_director"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
     {
      "a": "player",
      "a_to_b": {
       "tension": 4,
-      "trust": 3
+      "trust": 1
      },
-     "b": "char_takuya_technician",
+     "b": "agent_kuroda_scout",
      "b_to_a": {
-      "tension": 4,
-      "trust": 3
+      "tension": 3,
+      "trust": 2
      },
-     "reason": "电修工长敬重名媛仪容并以绝对操守执行盲操支撑",
+     "reason": "两周前对方来申请车厢借拍许可，暗中塞给你一张高额公关礼券，被你当场退回，两人从此话里有话。",
      "stage": "testing"
-    },
+    }
+   ],
+   "slots": [
+    "agent_kuroda_scout"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "对方要你今晚别放人。",
+    "limit_gap": "你放人就得罪东京，对方空手回去就丢了晋升。",
+    "meeting_reason": "{agent_kuroda_scout.name}在观景栈道口拦住你，拿杂志封面联合署名和场地赞助费，想换你今晚别放模特提前下桥。",
+    "resource_gap": "你握着末班车的放行权，对方握着五百万的预付款。"
+   },
+   "tags": [
+    "workplace_power"
+   ],
+   "tension_engine_ids": [
+    "te_tokyo_contract"
+   ]
+  },
+  {
+   "chemistry": "{char_fujiwara_stationmaster.name}是带你入行的站长，话少，规矩多，热茶从没断过。",
+   "id": "combo_fujiwara_night_dispatch",
+   "identity_ids": [
+    "identity_station_trainee"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
     {
-     "a": "char_mina_gyaru",
+     "a": "player",
      "a_to_b": {
-      "tension": 2,
+      "tension": 1,
       "trust": 4
      },
-     "b": "char_takuya_technician",
+     "b": "char_fujiwara_stationmaster",
      "b_to_a": {
-      "tension": 2,
+      "tension": 1,
       "trust": 4
      },
-     "reason": "时尚名媛对厚重朴实技术尖兵之由衷嘉许与安全托付",
+     "reason": "入冬后每回你值后半夜，站长巡完桥面都给你留半壶热乌龙茶，顺手教你考正式调度员的规矩。",
      "stage": "familiar"
     }
    ],
    "slots": [
-    "char_mina_gyaru",
-    "char_takuya_technician"
+    "char_fujiwara_stationmaster"
    ],
    "stakes": {
-    "irreplaceable_goal": "阻止倾斜车厢坠入江心并彻底解除短裙金属扣链束缚。",
-    "limit_gap": "辣妹不许任何人靠近车门三米之内，工长只能在车底凭声音干活。",
-    "meeting_reason": "单轨悬空车厢摇摇欲坠现场抢险支护紧急排险。",
-    "resource_gap": "辣妹拥有灵巧微观力矩手感，工长拥有三十公斤刚性防滑抱卡强力支撑力道。"
+    "irreplaceable_goal": "{char_fujiwara_stationmaster.ta}要听你一句真话，再决定这车先给谁。",
+    "limit_gap": "{char_fujiwara_stationmaster.ta}发车要担责，你提建议也没人认。",
+    "meeting_reason": "{char_fujiwara_stationmaster.name}盯着电网覆冰警报，问你要不要现在启用唯一一台工程轨道车，先送滞留乘客过江。",
+    "resource_gap": "{char_fujiwara_stationmaster.ta}掌着工程车和休息室钥匙，你只有一张站务门卡。"
    },
-   "tags": [],
+   "tags": [
+    "workplace"
+   ],
    "tension_engine_ids": [
-    "engine_monorail_door_jam",
-    "engine_beam_fracture_danger"
+    "te_freezing_rain"
    ]
   },
   {
-   "chemistry": "嘴硬的辣妹在浓烟里只肯听医生一个人的话，医生的声音软得像在哄一只受惊的猫。",
-   "id": "combo_mina_and_mayu",
+   "chemistry": "{char_takuya_photographer.name}的相机里有一张不该有的照片，{char_chiyo_roommate.name}想花钱买下，{char_mina_gyaru.name}只想删掉。",
+   "id": "combo_trio_tailcar_photo_clash",
    "identity_ids": [
-    "identity_gyaru_model_mina",
-    "identity_chiyo_roommate",
-    "identity_commander_fujiwara",
-    "identity_technician_takuya"
+    "identity_night_safety_director",
+    "identity_classmate_patternmaker",
+    "identity_magazine_stylist",
+    "identity_station_trainee"
    ],
    "player_positions": [
     "low",
@@ -338,985 +430,1020 @@
       "tension": 3,
       "trust": 4
      },
-     "reason": "医生隔着车窗一句句数呼吸，辣妹一句句跟着",
-     "stage": "familiar"
+     "reason": "上回在尾厢试装，你替{char_mina_gyaru.ta}扣好滑落的银链袜夹，领带被勾着不放，那晚两人在车厢里吻了很久。",
+     "stage": "intimate"
     },
     {
      "a": "player",
      "a_to_b": {
       "tension": 3,
-      "trust": 4
+      "trust": 3
      },
-     "b": "char_mayu_doctor",
+     "b": "char_chiyo_roommate",
      "b_to_a": {
       "tension": 3,
-      "trust": 4
+      "trust": 3
      },
-     "reason": "女军医对受困名媛身心尊严之极致关切与庇护",
-     "stage": "familiar"
+     "reason": "那次在站台替你整理围巾，{char_chiyo_roommate.ta}贴着你耳畔说过，不管闺蜜去哪，{char_chiyo_roommate.ta}都留下来。",
+     "stage": "flirting"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "char_takuya_photographer",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 2
+     },
+     "reason": "收工对光时相机背带被绕上你的手腕，摄影师笑问你敢不敢看备用卡里的花絮，你没接这个茬。",
+     "stage": "testing"
     },
     {
      "a": "char_mina_gyaru",
      "a_to_b": {
       "tension": 2,
-      "trust": 5
+      "trust": 4
      },
-     "b": "char_mayu_doctor",
+     "b": "char_chiyo_roommate",
      "b_to_a": {
-      "tension": 2,
-      "trust": 5
+      "tension": 3,
+      "trust": 3
      },
-     "reason": "傲娇校花与知性女医之间如春风化雨般深厚信赖",
-     "stage": "intimate"
+     "reason": "合租三年的闺蜜，彼此的衣柜都翻得开，居间费的事却还瞒着。",
+     "stage": "familiar"
+    },
+    {
+     "a": "char_mina_gyaru",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "char_takuya_photographer",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 2
+     },
+     "reason": "拍了一年的搭档，模特早觉得摄影师今晚的镜头跟得太紧。",
+     "stage": "testing"
+    },
+    {
+     "a": "char_chiyo_roommate",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 1
+     },
+     "b": "char_takuya_photographer",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 2
+     },
+     "reason": "摄影师手里有买手收居间费的汇款底单，两人见面都绕着走。",
+     "stage": "testing"
     }
    ],
    "slots": [
     "char_mina_gyaru",
-    "char_mayu_doctor"
+    "char_chiyo_roommate",
+    "char_takuya_photographer"
    ],
    "stakes": {
-    "irreplaceable_goal": "在焦烟呛晕人之前撬开锁舌，裹着保温毯体体面面走上栈桥。",
-    "limit_gap": "主治医师依规必须检视乘客体征，辣妹坚守名节绝不愿在人前显露狼狈柔弱。",
-    "meeting_reason": "跨江大桥桥塔避难方舱前哨站紧急医疗生理干预。",
-    "resource_gap": "主治医师备有高纯度医用氧气袋与急救大氅，辣妹仅凭一口骄傲真气强撑意识清醒。"
+    "irreplaceable_goal": "三个人都看着你，这张卡的去处由你一句话定。",
+    "limit_gap": "你帮谁说话，另外两个都会记一笔。",
+    "meeting_reason": "摄影师拍到了尾厢里你替模特整理裙摆的原片，{char_chiyo_roommate.name}要买下存储卡保独约，{char_mina_gyaru.name}却要当场删片拒签。",
+    "resource_gap": "存储卡、居间费和独约各在一人手里，你站在三个人中间。"
    },
-   "tags": [],
+   "tags": [
+    "intimate"
+   ],
    "tension_engine_ids": [
-    "engine_battery_fire_countdown",
-    "engine_dignity_exposure_hazard"
+    "te_tokyo_contract",
+    "te_graduation_show"
    ]
   }
  ],
  "channels": [
   {
    "fidelity": "exact",
-   "id": "channel_monorail_intercom",
-   "reach": "悬空电车车厢内侧与高架检修桥面",
-   "text": "车厢应急广播线路在断电后发出微弱蜂鸣，抢修调度专线转入无线电低功耗对讲模式。"
+   "id": "ch_station_broadcast",
+   "reach": "整座桥塔立刻都听得见",
+   "text": "桥塔站内广播"
+  },
+  {
+   "fidelity": "exact",
+   "id": "ch_magazine_group",
+   "reach": "一条消息传到杂志社和东京",
+   "text": "摄制组的工作群"
   },
   {
    "fidelity": "distorted",
-   "id": "channel_commuter_telemetry",
-   "reach": "半个城市，十分钟就上了本地热搜，内容一张比一张离谱",
-   "text": "滞留乘客在社交软件群里刷屏的截图和猜测"
+   "id": "ch_fashion_forum",
+   "reach": "一夜之间全城的潮人都在猜",
+   "text": "时尚论坛上的匿名帖"
   }
  ],
  "character_templates": [
   {
-   "adult_context": "服装设计学院大四、年满二十一岁的成年学生，课余给杂志拍平面",
+   "adult_context": "年满二十一岁、在时装学院成人夜校进修的平面模特。",
    "age_range": [
     21,
-    22
+    23
    ],
    "appearance_options": [
-    "浅亚麻金微卷高马尾，明艳大眼顾盼生姿，傲娇自信，身材高挑健美蜂腰长腿，双颊天然微带娇软婴儿肥与潮酷辣妹妆容形成强烈绝美反差；身穿高定改良真丝露脐短夹克配高腰百褶短裙与超薄黑丝。",
-    "高马尾随风微扬，神态娇蛮冷傲，耳际悬挂细巧纯银圆环耳坠，白皙纤腰处金属双环链条在应急灯下折射寒芒。"
+    "浅亚麻金微卷高马尾，明艳大眼，潮酷辣妹妆，身材高挑长腿；露脐短夹克配高腰百褶短裙和超薄黑丝。",
+    "耳际悬着细巧的银圆环耳坠，腰间垂一条双环链，百褶裙摆下藏着一枚银链袜夹，走路时偶尔一闪。"
    ],
    "decision": {
     "avoids": [
-     "呼叫外侧粗鲁工兵动用消防斧强行劈砍车门划损裙布",
-     "在悬空车厢重心不稳时慌乱挣扎诱发轨道卡头彻底崩断"
+     "被当成摇钱树"
     ],
-    "contrast": "平时看似娇气蛮横爱漂亮，面临绝境时沉着坚毅爆发惊人理科反差手感。",
-    "core_value": "誓死捍卫时尚名媛之清白声誉与傲娇尊严",
+    "contrast": "人前张扬得像整条江的霓虹；被戳中心事，耳尖先红。",
+    "core_value": "我的路我自己走，谁也别替我选。",
     "goal_options": [
-     "利用睫毛夹合金转轴精准挑退门锁卡舌实现体面脱离",
-     "在闺蜜大氅严密遮蔽下从容抽身应对指挥官检视"
+     "决定签不签东京独约",
+     "保住和搭档的毕业大秀",
+     "让你亲口说一句留不留她"
     ],
     "never": [
-     "让人拿剪刀把裙子从身上剪开"
+     "拿别人的作品去换前途"
     ],
     "prefers": [
-     "用随身的睫毛夹和发卡自己撬，不麻烦别人",
-     "要求闺蜜撑开双层加厚大氅形成绝对阴影盲区"
+     "敢跟她顶嘴的人"
     ],
     "pressure_responses": {
-     "breaking": "若裙裾撕裂走光，宁可拉响车厢灭火干粉罐制造烟雾彻底封锁全域视线。",
-     "high": "咬着下唇把睫毛夹的金属柄塞进锁舌缝里，手腕一点点往下压",
-     "low": "单手扶稳扶手维持站立平衡，指尖细致探寻车门联动折臂咬合缝隙。",
-     "mid": "呼吸略促但美眸目光锐利如刀，左手抓紧防撞拉环右手运劲调整金属工具夹角。"
+     "breaking": "崩溃时缩在尾厢角落，抱着膝盖一句话也不说。",
+     "high": "高压时红着眼圈把合约摊开，问你要一个答案。",
+     "low": "低压时翻个白眼，嘴上不饶人。",
+     "mid": "中压时把墨镜推上头顶，盯着你不说话。"
     },
-    "relationship_stance": "对闺蜜绝对信赖相托背后隐私，对高架桥工兵严守三米禁入防线。",
-    "withdrawal": "脱险后神色傲然理好百褶裙摆，单手抱胸绝口不提适才惊魂走光危机。"
+    "relationship_stance": "嘴硬心软，喜欢了就黏人。",
+    "withdrawal": "戴上耳机靠着车窗，把音量开到最大。"
    },
    "gender": "female",
-   "gender_reason": "原稿设定为女大学生模特",
+   "gender_reason": "标题人物是鲜明的辣妹名模形象，固定为女性。",
    "id": "char_mina_gyaru",
    "identity": {
-    "authority": "个人肖像尊严防御与车厢遇险紧急物理破拆决断权柄",
-    "exposure": "高定真丝短裙若在拉扯中崩解撕裂，百万粉丝辣妹校花名节与清誉将当场荡然无存。",
-    "hidden": "短裙内层隐形防走光暗扣其实早被折臂挂死，一旦硬扯整条裙身便会当场崩脱。",
+    "authority": "手握东京潮流杂志五年独约的最终落笔权和个人社交账号的发布权。",
+    "exposure": "右脚踝韧带撕裂，一直靠止痛药硬撑着拍片。",
+    "hidden": "她接独约只为凑毕业秀的面料钱；裙下扣着银链袜夹，是她自己都不肯认的心事。",
     "limits": [
-     "车厢斜成这样，硬扯裙子只会连腰带一起撕开"
+     "独约一签，五年不准恋爱、不准私接个人秀"
     ],
     "obligations": [
-     "在浓烟蔓延前排除机械故障护卫自身与同伴安全脱困"
+     "凑齐毕业大秀的高定面料费"
     ],
     "resources": [
-     "化妆包常备高强度钛镍合金精工小起子",
-     "高定百褶短裙金属链带应急防脱搭扣"
+     "一枚银链袜夹",
+     "化妆包里的遮瑕膏和夜校学生证"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "对险境下沉着冷静展现机械杠杆巧思者暗生好感",
-     "帮了忙却自觉转过身去、一眼都不偷看的人"
+     "你看她作品时认真的眼神",
+     "你不怕她的坏脾气"
     ],
     "boundaries": [
-     "车厢里扶一把、托一下，都只是救急",
-     "裙扣什么时候解，由辣妹自己说了算"
+     "她拍两下你的手背，就停"
     ],
     "desire_range": [
-     2,
-     4
-    ],
-    "desired_position": "嘴上说了算、心里也认准了人的那一方",
-    "dislikes": [
-     "不问一声就上手扯东西的莽撞",
-     "肆无忌惮的不轨窥视"
-    ],
-    "expression": "裹着救援毯缩在方舱角落，耳尖还红着，嘴却不饶人：看什么看……门关上，今晚陪我，不许跟任何人说。",
-    "likes": [
-     "精密坚固之冷锻金属小件",
-     "脱险后有人陪着坐在避风方舱里，替自己把卡坏的腰链暗扣一节节拆下来"
-    ],
-    "preconditions": [
-     "人已经站在桥塔方舱里，台风声隔在门外",
-     "是自己想要，不是被救了以后觉得欠人情"
-    ],
-    "self_control_range": [
      3,
      5
+    ],
+    "desired_position": "尾厢靠窗、能把头靠在你肩上的座位",
+    "dislikes": [
+     "被人安排好的人生"
+    ],
+    "expression": "嘴不饶人：看什么看……耳尖却先红了，手指勾住你的袖口不放。",
+    "likes": [
+     "热玉米浓汤",
+     "同一首R&B"
+    ],
+    "preconditions": [
+     "两人都清醒，是她自己点头",
+     "脚伤处理妥当之后"
+    ],
+    "self_control_range": [
+     2,
+     4
     ]
    },
-   "public_role": "时尚辣妹名媛",
+   "public_role": "成人夜校同班的平面辣妹模特",
    "schedule": [
     {
-     "from": 1370,
-     "location_id": "loc_monorail_suspended_car",
-     "to": 1400
+     "from": 0,
+     "location_id": "loc_gyaru_apartment",
+     "to": 480
     },
     {
-     "from": 1401,
-     "location_id": "loc_highbridge_maintenance_walkway",
-     "to": 1430
+     "from": 480,
+     "location_id": "loc_river_tower_concourse",
+     "to": 1140
+    },
+    {
+     "from": 1140,
+     "location_id": "loc_monorail_suspended_car",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "纤细手腕被车门不锈钢边缘毛刺蹭出深红红痕隐隐作痛",
-      "option": "反握冷锻金属起子将转轴硬边探入锁舌狭缝施展四点二牛顿角向杠杆巧劲"
+      "cost": "东京出道的机会没了，面料尾款还得自己凑。",
+      "option": "撕掉附加条款，留下做毕业大秀"
      },
      {
-      "cost": "防风大衣外层被狂风卷动的暴雨淋湿留下深色水渍",
-      "option": "示意闺蜜迅速撑展双层厚毛呢大氅彻底遮蔽车窗外探探照灯束"
+      "cost": "五年里不能见光，裙下那枚袜夹也只能收进抽屉。",
+      "option": "签字去东京，把心事压下"
      }
     ],
-    "pressure": "底板电池仓短路起火二十秒排烟读秒与下身短裙崩脱走光双重险情",
-    "trigger": "电车脱轨悬空倾斜三十度且车门折叠铰链死死咬住百褶裙身"
+    "pressure": "签了就丢了毕业秀和你，不签就赔不起场地费。",
+    "trigger": "东京独约要她在登机前补签禁爱附加条款。"
    },
    "tags": [
     "intimate"
    ],
    "voices": {
-    "inner": "“电池排气还有二十秒就要喷出浓烟了，要是让外面的工兵看到裙子脱落受困的样子，本小姐以后还怎么在时尚圈混……必须亲自撬开这个锁舌！”",
-    "surface": "“闺蜜，别慌慌张张乱扯裙子，门轴折臂已经咬死挂链暗扣，抓稳大氅挡住外面手电筒！”"
+    "inner": "你要是开口让我留下，我就真不走了。",
+    "surface": "看什么看？过来，帮我拿着包。"
    }
   },
   {
-   "adult_context": "时尚买手专业毕业、年满二十二岁的成年女生，与辣妹合租三年，至今没谈过恋爱",
+   "adult_context": "年满二十二岁、自己开了一家买手店的潮流买手。",
    "age_range": [
     22,
-    23
+    25
    ],
    "appearance_options": [
-    "黑发波波头清秀可爱，圆圆杏眼充满关切，身穿米白工装衬衫配卡其色直筒裤，身手敏捷利落。",
-    "神态机警敏锐，身披深灰防水风衣，双手佩戴防滑皮质手套随时准备掩护好友。"
+    "短发染成雾蓝色，大框眼镜，羊绒披肩松松搭在肩上。",
+    "说话爽快，笑声大，手里总拎着一袋样衣。"
    ],
    "decision": {
     "avoids": [
-     "一慌就大喊大叫，把栈道上的人全招过来",
-     "在好友运劲关键节点盲目摇晃悬空车厢底板"
+     "被人看穿心事"
     ],
-    "contrast": "平时性格温顺随和，面对好友名节受威胁时凶悍如护崽雌豹。",
-    "core_value": "护卫辣妹之清白名誉高于自身安危",
+    "contrast": "人前大大咧咧替人出头；单独和你待着，会突然安静。",
+    "core_value": "朋友的事就是我的事。",
     "goal_options": [
-     "严密撑展避风大氅构筑完全阻光的阴影防线",
-     "用后背顶住歪斜的车门框，给辣妹腾出一点空隙"
+     "把居间费的事瞒过今晚",
+     "保住买手店和工作室",
+     "让你知道她心里的人是谁"
     ],
     "never": [
-     "让任何陌生人看见辣妹衣衫不整的样子"
+     "当面出卖朋友"
     ],
     "prefers": [
-     "用双臂死死撑开双层大氅遮断风雨与探照灯束",
-     "为好友提供三点八牛顿侧向阻尼支撑以平衡倾斜重力"
+     "讲义气的人"
     ],
     "pressure_responses": {
-     "breaking": "若狂风吹飞大氅，直接纵身扑向辣妹以自身身躯阻绝外探强光。",
-     "high": "整个人贴在车门框上用背顶着，咬牙不让门再往里收",
-     "low": "把外套两角抓在手里，一只脚蹬住座椅横杆稳住身子",
-     "mid": "朝车窗外喊了一嗓子：这边没人，别照了！"
+     "breaking": "崩溃时躲进贩卖机背面，哭得眼镜起雾。",
+     "high": "高压时拦住你，承认自己收了钱。",
+     "low": "低压时爽朗打岔，把话题扯开。",
+     "mid": "中压时把支票往口袋深处塞。"
     },
-    "relationship_stance": "对辣妹忠诚维护情同手足，对外部窥视者冷眉相对寸步不让。",
-    "withdrawal": "确认好友衣装整齐后默默收起大氅，机警环视四周阻挡闲杂目光。"
+    "relationship_stance": "护短，喜欢一个人就先替对方着想。",
+    "withdrawal": "回工作室通宵清点样衣，谁的电话都不接。"
    },
    "gender": "female",
-   "gender_reason": "原稿设定为同住的女同学",
+   "gender_reason": "合租闺蜜兼买手，固定为女性。",
    "id": "char_chiyo_roommate",
    "identity": {
-    "authority": "车厢内部应急防光遮蔽与突发险情紧急阻绝权",
-    "exposure": "掩护不力导致辣妹在全桥工兵众目睽睽下走光，闺蜜将终生内疚难安。",
-    "hidden": "常备两幅大号披肩，一旦大氅受损便立刻用自身身段筑成人墙。",
+    "authority": "掌握两人合租工作室的租约去留和私服联名款的打样底稿。",
+    "exposure": "她收了东京经纪公司五十万日元的居间费，答应劝闺蜜签约。",
+    "hidden": "她早就喜欢你，却一直把你让在闺蜜后面；收那笔钱，她自己也睡不着。",
     "limits": [
-     "严禁在辣妹脱困前擅自破窗跳出车厢抛弃好友"
+     "买手店资金链已经断了"
     ],
     "obligations": [
-     "在突发险情下誓死守护辣妹名媛仪容与生命安全"
+     "替闺蜜挡掉一切烂桃花"
     ],
     "resources": [
-     "时尚百搭高档纯黑双面加厚抗风披风",
-     "便携式不锈钢修眉折叠小刀"
+     "合租工作室的租约",
+     "联名款的打样底稿"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "被辣妹关键时刻之冷静决绝与反差智慧深深折服",
-     "合租三年，每天早上替辣妹抢到最后一块吐司"
+     "你肯听她把话说完",
+     "你身上好闻的布料味"
     ],
     "boundaries": [
-     "辣妹吓坏的时候，只抱着，不多做什么",
-     "人前照旧是斗嘴的闺蜜"
+     "她说“打住”就停"
     ],
     "desire_range": [
      2,
      4
     ],
-    "desired_position": "辣妹回头时总在那里的那个人",
+    "desired_position": "贩卖机旁和你共披一条披肩",
     "dislikes": [
-     "不分青红皂白就数落辣妹打扮的人",
-     "出了事第一个溜的人"
+     "欠人情"
     ],
-    "expression": "抱着辣妹的胳膊不撒手，眼眶红红的：吓死我了你知道吗……今晚不回合租屋了，就在这儿陪着。",
+    "expression": "亲近时先开玩笑，靠在你肩上装睡，等你先动。",
     "likes": [
-     "两个人窝在沙发上看综艺吃泡面",
-     "脱险后挤在一张救援毯里，替辣妹把湿透的头发一缕缕擦干"
+     "一条宽大的羊绒披肩"
     ],
     "preconditions": [
-     "台风已经过去，两人都缓过了神",
-     "两个人都确定这不是吓坏了之后的一时冲动"
+     "两人都清醒，她先靠过来"
     ],
     "self_control_range": [
      3,
      5
     ]
    },
-   "public_role": "合租闺蜜买手",
+   "public_role": "合租闺蜜兼潮流买手",
    "schedule": [
     {
-     "from": 1375,
-     "location_id": "loc_highbridge_maintenance_walkway",
-     "to": 1405
+     "from": 0,
+     "location_id": "loc_gyaru_apartment",
+     "to": 480
     },
     {
-     "from": 1406,
-     "location_id": "loc_traction_substation_platform",
-     "to": 1435
+     "from": 480,
+     "location_id": "loc_river_tower_concourse",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_river_tower_concourse",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "{npc.name}双手十指被粗糙毛呢勒出深红血痕隐隐生疼",
-      "option": "把自己的长外套撑开挂在车门框上，挡住栈道那边的手电光"
+      "cost": "合租的情分当场裂开，两人拆伙。",
+      "option": "自己向闺蜜坦白，退回支票"
      },
      {
-      "cost": "手腕被车厢内壁凸起螺栓擦破微量皮肤",
-      "option": "探身按压车厢侧壁应急断电手阀辅助主门泄压"
+      "cost": "从此每见闺蜜一面，心里就欠一回。",
+      "option": "咬牙瞒到登机"
      }
     ],
-    "pressure": "强光投射与车厢钢索下沉导致悬空车身重心失衡",
-    "trigger": "辣妹短裙受卡死且高架桥工兵大队手持强光探照灯狂奔逼近"
+    "pressure": "坦白就失去闺蜜，不坦白就得帮着把人送去东京。",
+    "trigger": "居间费的汇款底单落到了摄影师手里。"
    },
-   "tags": [],
+   "tags": [
+    "intimate"
+   ],
    "voices": {
-    "inner": "“电池起火的焦糊味越来越呛人了，辣妹的裙扣咬得太紧，必须赶快配合顶退自锁簧舌！”",
-    "surface": "辣妹，外面的手电我都挡住了，你慢慢撬，别急。"
+    "inner": "我收了那笔钱，她要是知道了，我就什么都没了。",
+    "surface": "怕什么，有我在呢。"
    }
   },
   {
-   "adult_context": "五十六岁城市轨道交通特级应急工程专家成年男性高级长官，负责跨江大桥全线抢修决断全权，治事极其严苛。",
+   "adult_context": "年满五十岁、在跨江单轨干了三十年的江心站值班站长。",
    "age_range": [
-    55,
-    58
+    50,
+    55
    ],
    "appearance_options": [
-    "两鬓微白目光锐利如鹰，身穿深蓝轨道抢险反光雨衣外套，头戴黄色工程安全帽，手握重型对讲机指挥若定。",
-    "身姿巍峨威严，面容风霜硬朗，手持特大功率探照灯站在检修栈桥前沿沉稳调度。"
+    "两鬓花白，制服熨得笔挺，帽檐上落着冻雨水珠。",
+    "说话慢，眼神稳，手里常拎着半壶热乌龙茶。"
    ],
    "decision": {
     "avoids": [
-     "批准未经乘客首肯之野蛮破拆器具靠近受损车体",
-     "电池一冒烟就乱了阵脚，丢下指挥的位置"
+     "拿乘客安全开玩笑"
     ],
-    "contrast": "平时调度严苛令人生畏，危难救人时细致入微充分照顾受困者体面。",
-    "core_value": "严谨求实之轨道安全条令与对遇险市民尊严名节之深沉呵护",
+    "contrast": "人前一板一眼，人后会把规矩里留的那条缝指给你看。",
+    "core_value": "规矩是护人的，不是困人的。",
     "goal_options": [
-     "通过广播线路向车厢内部口授折臂卡爪物理力学自脱参数",
-     "在控制箱果断拉闸切断牵引高压电缆防止起火蔓延"
+     "让滞留乘客平安过夜",
+     "决定交不交监控备份",
+     "把见习生带成正式调度员"
     ],
     "never": [
-     "宁可让车多悬一会儿，也不让电锯碰到有人的车门"
+     "拿监控去换好处"
     ],
     "prefers": [
-     "利用抢修线路向车内精确通报联动部件微观受力脱舌间隙",
-     "在轨道配电站果断下扳总刀闸切断主干线路防止火势扩大"
+     "守规矩又知道变通的人"
     ],
     "pressure_responses": {
-     "breaking": "若车厢坠落，舍身合力扑上牵引锁链以血肉之躯硬顶缓冲阻尼。",
-     "high": "单手奋力扳倒车体气动回油泄压阀，迫使车门挤压应力下降三成。",
-     "low": "手持望远镜仔细辨识悬空车厢倾斜角度，语调低沉发号施令。",
-     "mid": "朝身后的抢修队吼一声：全体关手电，转过去！"
+     "breaking": "崩溃时站在栈道护栏边，抽完一整根烟。",
+     "high": "高压时把监控带往桌上一放，让你拿主意。",
+     "low": "低压时照章办事，一句废话没有。",
+     "mid": "中压时多倒一杯茶，旁敲侧击。"
     },
-    "relationship_stance": "严谨自律之长辈威仪，以专业工程水准守护青年女性之声誉。",
-    "withdrawal": "抢险排除后背对车门默默清点器械，严厉训诫手下工兵对现场情状守口如瓶。"
+    "relationship_stance": "长辈待人，嘴严心热。",
+    "withdrawal": "回调度室盯着覆冰警报，谁叫都说在忙。"
    },
    "gender": "male",
-   "gender_reason": "原稿设定为年长的男性抢修总指挥",
-   "id": "char_fujiwara_commander",
+   "gender_reason": "沉稳长辈型的值班站长，固定为男性。",
+   "id": "char_fujiwara_stationmaster",
    "identity": {
-    "authority": "跨江单轨电车区间断电与高空车厢破障抢险全权",
-    "exposure": "若在指挥期间致使受困女青年发生走光受辱或坠桥伤亡，将被撤职送交法办。",
-    "hidden": "深知单轨车门联动折臂第三道防卡棘爪设计缺陷，知晓只需两毫米硬棱即可脱扣。",
+    "authority": "掌握末班车停运留宿调度、贵宾休息室钥匙和工程轨道车的发车。",
+    "exposure": "他认出模特是老友的女儿，手里压着今晚车厢拍到的违规跟拍画面。",
+    "hidden": "他想护着老友的女儿，又快退休了，不想晚节出事。",
     "limits": [
-     "严禁命令工兵动用重型液压剪强行剪破车门危及受困名媛安全"
+     "私拷监控就是违规"
     ],
     "obligations": [
-     "在超强台风灾害态势下确保受困乘客生命安好与机车财产完整"
+     "保证滞留乘客平安过夜"
     ],
     "resources": [
-     "轨道维保大跨度供电跳闸隔离切断钥匙",
-     "悬索牵引底座手动减荷微调黄铜扳把"
+     "贵宾休息室钥匙",
+     "今晚车厢的监控备份"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "车厢都斜成那样了，还能冷静报出锁舌位置的胆色",
-     "被困成那样也不肯哭着求人的骨气"
+     "你肯听他讲老规矩",
+     "你值夜从不偷懒"
     ],
     "boundaries": [
-     "车门没遮好之前，指挥官一步也不往车厢那边走",
-     "禁止手下年轻士兵私自拿出手机对准受困车窗拍摄"
+     "他摆手就退开"
     ],
     "desire_range": [
      0,
      1
     ],
-    "desired_position": "站在栈桥上替所有人扛下决定的那个人",
+    "desired_position": "调度室窗边对着桥面的位置",
     "dislikes": [
-     "站在旁边说风凉话的围观者",
-     "一出事就慌得没了章法的人"
+     "慌慌张张"
     ],
-    "expression": "以厚重嗓音沉稳报出车门折臂自锁逆转三十度施力点",
+    "expression": "不谈情爱，信任就是给你留半壶热茶。",
     "likes": [
-     "抢修队令行禁止的那股齐整劲儿",
-     "台风过后清早的江风"
+     "半壶热乌龙茶"
     ],
     "preconditions": [
-     "恪守社会公德与尊长互敬之文明规范",
-     "指挥调度严格遵从轨道抢修条令之严密工程规章"
+     "彼此清醒、信得过"
     ],
     "self_control_range": [
-     4,
+     5,
      5
     ]
    },
-   "public_role": "轨道抢险指挥官",
+   "public_role": "跨江单轨江心站值班站长",
    "schedule": [
     {
-     "from": 1385,
-     "location_id": "loc_traction_substation_platform",
-     "to": 1415
+     "from": 0,
+     "location_id": "loc_river_tower_concourse",
+     "to": 600
     },
     {
-     "from": 1416,
-     "location_id": "loc_substation_refuge_cabin",
-     "to": 1435
+     "from": 600,
+     "location_id": "loc_river_tower_concourse",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_skybridge_viewing_deck",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "整段跨江大桥检修照明瞬间熄灭转入昏暗应急模式",
-      "option": "拉下电闸箱主控制刀闸强行切断牵引母线排除短路"
+      "cost": "模特和摄制组只能在桥塔过夜。",
+      "option": "先送老弱乘客过江"
      },
      {
-      "cost": "{npc.name}顶风呼喊导致咽喉受台风冷雨呛咳沙哑生痛",
-      "option": "向对讲机大声播报车门联动折臂内部自锁卡齿偏转角度"
+      "cost": "其余乘客的投诉压到他退休前最后一个月。",
+      "option": "把车让给伤了脚的人"
      }
     ],
-    "pressure": "八十米高空强台风风偏与高压电池起火双重威胁",
-    "trigger": "悬挂单轨车钩断裂尾部车厢倾斜悬空警铃大作"
+    "pressure": "先送谁过江，留谁在桥塔，他都得担着。",
+    "trigger": "电网覆冰，只剩一台工程轨道车能过江。"
    },
-   "tags": [],
+   "tags": [
+    "workplace"
+   ],
    "voices": {
-    "inner": "辣妹那性子最要面子，要是让抢修队扯破了裙子，这辈子都抬不起头……只能让辣妹自己来。",
-    "surface": "“悬空尾梁承重已近极限，所有检修人员退至三十米外，{npc.name}在栈桥手动降压！”"
+    "inner": "这盘带子交出去，我三十年就白干了；不交，那丫头吃亏。",
+    "surface": "先把乘客安顿好，别的再说。"
    }
   },
   {
-   "adult_context": "单轨机车工程段干了二十多年、年满四十四岁的特级检修工长",
-   "age_range": [
-    43,
-    46
-   ],
-   "appearance_options": [
-    "留着寸头身形精壮，身穿橘红防风防水工程背带连体服，腰挂各类合金扳手，举止沉毅稳健。",
-    "体格高大结实，雨衣反光条在夜雨中熠熠生辉，手提重型千斤顶步履扎实。"
-   ],
-   "decision": {
-    "avoids": [
-     "抬头往车门那边多看一眼",
-     "锤子敲得太狠，把本来就裂了的车钩敲断"
-    ],
-    "contrast": "外表粗犷看似不拘小节，操作抱轨千斤顶却如微雕般精准无差。",
-    "core_value": "恪尽职守以工匠之躯筑牢抢险安全基石",
-    "goal_options": [
-     "在轨道断口迅速加塞三十公斤刚性止跌铁块分散剪切力",
-     "背对车门盲操紧固钢梁防滑定位抱卡"
-    ],
-    "never": [
-     "在辣妹没开口之前抬头"
-    ],
-    "prefers": [
-     "在轨道接缝缺口处打入三十公斤高强度止滑钢楔吸收偏转剪切应力",
-     "以盲操手法旋紧钢梁地锚双向螺纹以牢固底盘架构"
-    ],
-    "pressure_responses": {
-     "breaking": "若轨道彻底崩断，舍身用铁撬杠死卡道岔为车内争取脱离时间。",
-     "high": "整个人压在抱轨卡爪上当配重，一只手死死按住锚链扣",
-     "low": "扛着卡爪沿着栈道边一步步挪过去",
-     "mid": "双臂发力将三十公斤止跌块狠命楔入轨道咬合面固定。"
-    },
-    "relationship_stance": "对车里的姑娘只隔着车底说话，活干完了就走，不图一句谢",
-    "withdrawal": "加固完毕后迅速收手低头后撤至桥墩避风处，绝不多看半眼。"
-   },
-   "gender": "male",
-   "gender_reason": "原稿设定为中年男性检修工长",
-   "id": "char_takuya_technician",
-   "identity": {
-    "authority": "高空轨道机车防脱抱轨卡钳现场固定与支撑权",
-    "exposure": "因操作不当导致车体二次侧滑将面临开除受审严厉惩处。",
-    "hidden": "曾亲手调校过该款车门折臂，知晓只需两毫米硬物撬退簧舌便可顺畅脱扣。",
-    "limits": [
-     "严禁在女乘客避光大氅未完全拉严前擅自抬头注视车内"
-    ],
-    "obligations": [
-     "遵从指挥官指挥为倾斜车厢下方架设刚性防坠止跌抱卡"
-    ],
-    "resources": [
-     "轨道防滑脱重型合金抱轨锁止垫铁",
-     "高扭力绝缘包胶加硬双向梅花扳手"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "被辣妹临危沉着不乱方寸之反差傲骨深深折服",
-     "吓成那样还能跟工长一来一回对口令的那份硬气"
-    ],
-    "boundaries": [
-     "救援时一直背对车门，事后也一个字都不提",
-     "姑娘不先开口，工长就当什么都没发生"
-    ],
-    "desire_range": [
-     2,
-     3
-    ],
-    "desired_position": "车底下那个默默撑着的人",
-    "dislikes": [
-     "没干过活就乱指挥的人",
-     "图省事少拧一颗螺丝的同行"
-    ],
-    "expression": "背对着方舱门站得笔直，雨水顺着安全帽往下淌：我啥都没看见……姑娘要是冷，我这儿有件干外套。",
-    "likes": [
-     "一颗拧到位、怎么晃都不松的螺栓",
-     "收工后在桥塔下并肩站着，听对方讲爬了二十年高架的事"
-    ],
-    "preconditions": [
-     "姑娘已经平安进了方舱，喝上了热水",
-     "姑娘自己走过来道谢，还多说了一句"
-    ],
-    "self_control_range": [
-     3,
-     5
-    ]
-   },
-   "public_role": "重装电修工长",
-   "schedule": [
-    {
-     "from": 1380,
-     "location_id": "loc_substation_refuge_cabin",
-     "to": 1410
-    },
-    {
-     "from": 1411,
-     "location_id": "loc_monorail_suspended_car",
-     "to": 1435
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "{npc.name}双臂筋肉受剧烈风阻拉扯产生酸胀刺痛",
-      "option": "双手合力将重型刚性止滑抱卡狠狠推入轨道卡死滑移"
-     },
-     {
-      "cost": "帆布钢扣倒拉擦伤{npc.name}手掌边缘留下微量划痕",
-      "option": "背向车门迅速将厚重防风帆布挂在栏杆边缘构筑遮风隔光屏障"
-     }
-    ],
-    "pressure": "桥面狂风呼啸且电池过热焦味不断蔓延",
-    "trigger": "车厢悬挂滑靴受台风横推偏位五公分警报拉响"
-   },
-   "tags": [],
-   "voices": {
-    "inner": "这么好看的姑娘被卡在那儿，换谁都想瞧一眼……老子偏不，低头干活。",
-    "surface": "“下方防滑抱轨卡爪已咬死二号滑枕！支撑已稳，车内姑娘尽管发力开门！”"
-   }
-  },
-  {
-   "adult_context": "急诊医学硕士毕业、年满二十八岁的急救医生，台风夜随救护车守在桥塔方舱",
-   "age_range": [
-    27,
-    30
-   ],
-   "appearance_options": [
-    "戴着无框护目镜，秀发挽入医生帽，身穿荧光绿急救冲锋衣配白大褂，手持便携便携氧气袋神色温和从容。",
-    "容貌端庄清秀，防护服纤尘不染，手提急救箱眼神坚定专业充满仁爱。"
-   ],
-   "decision": {
-    "avoids": [
-     "在乘客施展巧劲关键瞬间盲目呼喊打乱其专注度",
-     "使用锋利医疗器械探入车门划损昂贵高定面料"
-    ],
-    "contrast": "平时巡诊言语柔和，面对安全规程违规时长官气场全开严肃认真。",
-    "core_value": "人先活着出来，体面也一样要护住",
-    "goal_options": [
-     "隔着车窗教辣妹放慢呼吸，别在浓烟里大口吸气",
-     "抱着保温毯守在车门外，门一开就把人裹住"
-    ],
-    "never": [
-     "绝不坐视受困人员在浓烟中强行闭气造成呼吸道急性损伤"
-    ],
-    "prefers": [
-     "指导遇险名媛进行规律腹式深长呼吸以防换气过度诱发窒息",
-     "双手稳固托举大号防风急救披毯在方舱门口严阵以待"
-    ],
-    "pressure_responses": {
-     "breaking": "若乘客缺氧昏厥，冒死顶着排气浓烟穿入车厢实施急救人工给氧。",
-     "high": "亲自攀上悬梯将微型纯氧呼吸嘴递至车窗缝隙供乘客含吸。",
-     "low": "盯着手里的血氧夹读数，语气放得又慢又软",
-     "mid": "踩着湿滑的栈道走到检修平台，把保温毯抖开"
-    },
-    "relationship_stance": "兼具医者仁心与沉着冷静，与受困人员形成生命信托默契。",
-    "withdrawal": "人一出来就用保温毯裹住，挡在前面一路护进方舱"
-   },
-   "gender": "female",
-   "gender_reason": "原稿设定为年轻的女急救医生",
-   "id": "char_mayu_doctor",
-   "identity": {
-    "authority": "高空遇险人员生理指标监护与紧急休克救治权",
-    "exposure": "救护处置失职致使受困女青年休克走光将承担严重行业问责处分。",
-    "hidden": "特备大号纯黑急救保暖大氅，只待辣妹跃入安全区瞬间一秒裹覆严防走光与风寒。",
-    "limits": [
-     "严禁在乘客自主脱险前盲动器械划破真丝高定服饰"
-    ],
-    "obligations": [
-     "监控辣妹心率呼吸，防止浓烟吸入引发急性喉头痉挛"
-    ],
-    "resources": [
-     "高压医用纯氧微型吸入罐",
-     "加厚纯棉无菌急救防风大号毯两套"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "对辣妹时尚外表下之如钢傲骨深为爱惜与赞佩",
-     "在浓烟里还肯听医生的话、慢慢吸气的那份信任"
-    ],
-    "boundaries": [
-     "恪守急救医德伦理，严禁非医务人员在创伤检视时窥视近旁",
-     "以绝对温柔专业之医道情怀抚慰受困女青年紧张心神"
-    ],
-    "desire_range": [
-     0,
-     1
-    ],
-    "desired_position": "方舱里替辣妹量体温、递热水的那个人",
-    "dislikes": [
-     "拿病人逞英雄的冒失",
-     "不把命当回事的硬撑"
-    ],
-    "expression": "隔着护目镜以温润清澈目光注视辣妹传递安心笃定力量",
-    "likes": [
-     "病人血氧一点点回升的那几秒",
-     "值完夜班喝一罐热咖啡"
-    ],
-    "preconditions": [
-     "辣妹的血氧和心率都回到正常，人也缓过来了",
-     "全程维护遇险女性之尊严与清名"
-    ],
-    "self_control_range": [
-     4,
-     5
-    ]
-   },
-   "public_role": "急救中心主治医师",
-   "schedule": [
-    {
-     "from": 1370,
-     "location_id": "loc_monorail_suspended_car",
-     "to": 1400
-    },
-    {
-     "from": 1401,
-     "location_id": "loc_highbridge_maintenance_walkway",
-     "to": 1435
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "氧气管被车门的卷边刮破一道口子",
-      "option": "将微型便携纯氧吸入管顺着车窗缝隙探入供辣妹含吸呼吸"
-     },
-     {
-      "cost": "急救风衣下摆被栈道油污蹭染出数处深色斑迹",
-      "option": "把保温毯展开挂在车门侧边，挡住栈道那头的视线"
-     }
-    ],
-    "pressure": "缺氧窒息风险与高空冷雨风寒失温双重威胁",
-    "trigger": "车底电池短路焦烟渗入车厢引发乘客心率骤升"
-   },
-   "tags": [],
-   "voices": {
-    "inner": "焦烟渗进来了，再被外力一扯，裙子就撑不住了……保温毯得先备好。",
-    "surface": "“辣妹，心率回落平稳，氧饱和度尚好，放缓呼气，切莫屏气硬拉！”"
-   }
-  },
-  {
-   "adult_context": "车辆制造专业出身、年满三十二岁的机车机械师，单轨车门折臂就是这一位装的",
+   "adult_context": "年满三十岁、拍了十年时装大片的杂志随行摄影师。",
    "age_range": [
     30,
     34
    ],
    "appearance_options": [
-    "戴着单筒精密测绘目镜，身穿黑色阻燃机械维修马甲，腰挎全套定制微型撬刀与测距卡尺，神色专注干练。",
-    "身姿精悍步态扎实，随身佩戴多用螺栓量规，举止沉稳老练。"
+    "黑色高领毛衣，相机背带斜挎，指节被冻得发红。",
+    "笑起来很绅士，看人时像在取景，眯着一只眼。"
    ],
    "decision": {
     "avoids": [
-     "在车厢浓烟未散前擅自接通外接辅助高压电源",
-     "从正面去看辣妹被扯紧的衣襟"
+     "被当成狗仔"
     ],
-    "contrast": "平时一句话都憋不出来，一说到车门折臂就停不下来",
-    "core_value": "车门是自己装的，就得自己负责到底",
+    "contrast": "人前绅士得体；被看穿时，会把镜头盖扣上，认真说话。",
+    "core_value": "光不会说谎，镜头会。",
     "goal_options": [
-     "用手电在车门折角上打一个光点，告诉辣妹往哪里使劲",
-     "从车门背面用长起子挑开备用的阻尼拉索"
+     "交差拿到尾款",
+     "把那卷胶卷留给懂的人",
+     "看你敢不敢看他的花絮"
     ],
     "never": [
-     "绝不容许带油污的粗糙工具触碰乘客昂贵裙裾"
+     "把底片卖给小报"
     ],
     "prefers": [
-     "利用测距光学目镜向折臂锁孔投射清晰之施力支点基准",
-     "从车门背面下手，不跟辣妹正面照面"
+     "懂光影的人"
     ],
     "pressure_responses": {
-     "breaking": "若折臂彻底崩断，舍身冲上用撬棍死死卡进门槽强行阻滞连环脱轨。",
-     "high": "单手高举碳纤维起子伸入车门死角充当副杠杆支点。",
-     "low": "拧紧两颗止动销，对着对讲机报锁孔的间隙",
-     "mid": "躲在桥架背风的地方，用手电光点给辣妹指位置"
+     "breaking": "崩溃时一个人在栈道上对着江面空按快门。",
+     "high": "高压时把存储卡拍在桌上，说你要就拿走。",
+     "low": "低压时调着快门开玩笑。",
+     "mid": "中压时把相机背带往你手腕上绕。"
     },
-    "relationship_stance": "话少、手稳，帮了忙也只报数据，不讨一句好",
-    "withdrawal": "确认乘客脱险后立刻卸下目镜肃立致礼，退避至掩体后侧绝不多看半眼。"
+    "relationship_stance": "爱玩，心里有一块谁也不给碰。",
+    "withdrawal": "回尾厢一张张删片，删到手指发僵。"
    },
    "gender": "male",
-   "gender_reason": "原稿设定为男性车辆机械师",
-   "id": "char_kenichi_mechanic",
+   "gender_reason": "业界老练的男摄影师，固定为男性。",
+   "id": "char_takuya_photographer",
    "identity": {
-    "authority": "车门防夹联动锁止机构技术解析与应急脱舌指引权",
-    "exposure": "因机械指导失当造成乘客脱困失败受辱将直接面临司法问责重罚。",
-    "hidden": "折臂锁舌的弹簧是自己亲手装的，知道往右下压三十度就能脱开",
+    "authority": "掌握今夜单轨主题大片的全部未修原片和封面选用建议。",
+    "exposure": "他受东京经纪公司委托，收工后跟车抓拍模特和同行者的亲密画面，用来压签约金。",
+    "hidden": "他接这单是为了还开独立影棚的债，真正想留下的是那卷胶卷里的素颜。",
     "limits": [
-     "严禁在车门机构承受拉伸应力时用重锤擅自敲打传动主齿"
+     "原片版权归杂志社"
     ],
     "obligations": [
-     "确保车门自锁卡扣处于可通过力矩回旋脱销之安全临界状态"
+     "交出一组能上封面的片子"
     ],
     "resources": [
-     "车门滑块手动强制脱扣细长淬火冲子",
-     "一把绝缘柄加长起子"
+     "今晚的未修原片存储卡",
+     "一卷没冲的手冲胶卷"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "一把睫毛夹就敢跟自己装的锁舌较劲的那股聪明",
-     "一点就通，说三十度就真压到三十度"
+     "你敢直视他的镜头",
+     "你对衣服和光的讲究"
     ],
     "boundaries": [
-     "工具递过去以后就退到车尾，不往前凑",
-     "辣妹没开口，机械师只谈车门"
+     "对方说“关机”就停"
     ],
     "desire_range": [
-     0,
-     1
+     2,
+     4
     ],
-    "desired_position": "辣妹需要的时候，递得上一件对的工具的人",
+    "desired_position": "取景器前额角贴着额角的位置",
     "dislikes": [
-     "以次充好的零件",
-     "拿锤子乱敲的维修工"
+     "急功近利的编辑"
     ],
-    "expression": "推了推眼镜，憋了半天才说：你那一下，压得比我自己还准。",
+    "expression": "亲近时先把相机收好，再慢慢靠近。",
     "likes": [
-     "一扇开关顺滑、没有一点杂音的车门",
-     "图纸上标得清清楚楚的公差"
+     "手冲胶卷的药水味"
     ],
     "preconditions": [
-     "向车厢传递任何破拆工具必须经过闺蜜小姐转手",
-     "辣妹先找机械师说话，而且不是为了道谢"
+     "两人都清醒，相机先放下"
     ],
     "self_control_range": [
-     4,
-     5
+     2,
+     4
     ]
    },
-   "public_role": "机车车体机械师",
+   "public_role": "时尚杂志随行摄影师",
    "schedule": [
     {
-     "from": 1375,
-     "location_id": "loc_highbridge_maintenance_walkway",
-     "to": 1405
+     "from": 0,
+     "location_id": "loc_gyaru_apartment",
+     "to": 480
     },
     {
-     "from": 1406,
-     "location_id": "loc_traction_substation_platform",
-     "to": 1435
+     "from": 480,
+     "location_id": "loc_river_tower_concourse",
+     "to": 1140
+    },
+    {
+     "from": 1140,
+     "location_id": "loc_monorail_suspended_car",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "起子头被压崩了一个口子",
-      "option": "把长起子插进折臂底座当支点，帮锁舌卸掉一半的力"
+      "cost": "东京那边的尾款一分拿不到，影棚的债还得背。",
+      "option": "当着人把存储卡格式化"
      },
      {
-      "cost": "合金销钉边缘倒刺划破{npc.name}手套边缘防护层",
-      "option": "拔掉车门的主传动销，让折臂整个松开"
+      "cost": "从此圈里再没人肯让他跟车。",
+      "option": "照约交片给经纪公司"
      }
     ],
-    "pressure": "联动折臂彻底咬碎与车门二次脱轨倾覆双重重压",
-    "trigger": "车门主销轴扭曲产生刺耳金属摩擦尖啸危及车内人员"
+    "pressure": "交片拿尾款，删片就违约。",
+    "trigger": "相机里拍到了尾厢里贴身整理裙摆的画面。"
    },
-   "tags": [],
+   "tags": [
+    "workplace"
+   ],
    "voices": {
-    "inner": "那锁舌是冷锻的，蛮力掰不动……就看那把睫毛夹能不能压准三十度。",
-    "surface": "“车门折臂反向卡爪已进入卸荷间隙，绝不会反弹咬紧，辣妹请放心下压！”"
+    "inner": "我拍了不该拍的东西，可那张真的好看。",
+    "surface": "别动，这个光刚好。"
+   }
+  },
+  {
+   "adult_context": "年满二十七岁、持证执业的运动康复诊所医师。",
+   "age_range": [
+    27,
+    31
+   ],
+   "appearance_options": [
+    "长发低挽，驼色大衣里是一件白衬衫，提着一只医药箱。",
+    "说话轻，眼神静，手很稳，指尖有消毒水的味道。"
+   ],
+   "decision": {
+    "avoids": [
+     "拿身体开玩笑"
+    ],
+    "contrast": "人前温柔冷静；和你独处时，会先摘下眼镜，叹一口长气。",
+    "core_value": "身体不会骗人。",
+    "goal_options": [
+     "拦下病人的东京行程",
+     "守住和你的约定",
+     "保住自己的执业资格"
+    ],
+    "never": [
+     "替人开假诊断"
+    ],
+    "prefers": [
+     "照顾别人也照顾自己的人"
+    ],
+    "pressure_responses": {
+     "breaking": "崩溃时坐在休息室沙发角，一遍遍整理药箱。",
+     "high": "高压时摘下手套，说这回她不让步。",
+     "low": "低压时温声劝人坐下。",
+     "mid": "中压时把核磁片举到灯下给你看。"
+    },
+    "relationship_stance": "冷静克制，认定了的人才肯露软处。",
+    "withdrawal": "回休息室把医药箱重新理一遍。"
+   },
+   "gender": "female",
+   "gender_reason": "知性都市女医师，固定为女性。",
+   "id": "char_mayu_doctor",
+   "identity": {
+    "authority": "掌握模特体态康复评估报告和桥塔站夜里突发伤病的现场处置。",
+    "exposure": "她是模特的私人主治，知道那只右脚踝根本撑不住东京的高强度走秀。",
+    "hidden": "她和你之间有个敲两下药箱的约定，她比谁都怕今晚被人看出来。",
+    "limits": [
+     "私开封闭止痛针违反执业规范"
+    ],
+    "obligations": [
+     "对病人的身体负责"
+    ],
+    "resources": [
+     "医药箱与冷敷袋",
+     "模特右脚踝的核磁片"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "你守约的样子",
+     "你手心的温度"
+    ],
+    "boundaries": [
+     "敲一下药箱就停"
+    ],
+    "desire_range": [
+     2,
+     4
+    ],
+    "desired_position": "休息室沙发上挨着你的一角",
+    "dislikes": [
+     "硬撑的病人"
+    ],
+    "expression": "亲近时手很轻，像在确认你哪里还疼。",
+    "likes": [
+     "一杯温热的白水"
+    ],
+    "preconditions": [
+     "两人都清醒，伤病都已处理妥当"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "运动康复诊所医师",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_gyaru_apartment",
+     "to": 480
+    },
+    {
+     "from": 480,
+     "location_id": "loc_river_tower_concourse",
+     "to": 1140
+    },
+    {
+     "from": 1140,
+     "location_id": "loc_tower_vip_lounge",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "病人今年的走秀邀约全被冻结。",
+      "option": "当面开出停工证明"
+     },
+     {
+      "cost": "伤情拖到东京才暴露，她的执业记录也要被翻。",
+      "option": "先替病人冷敷包扎，劝她自己开口"
+     }
+    ],
+    "pressure": "说出伤情就砸了病人的合约，不说就违了医德。",
+    "trigger": "病人在靠止痛药硬撑，明天就要登机。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "voices": {
+    "inner": "我要是今晚不拦她，就是害了她；拦了，她会恨我。",
+    "surface": "坐下，脚给我看看。"
+   }
+  },
+  {
+   "adult_context": "年满三十二岁、在东京经纪公司做了八年的星探总监。",
+   "age_range": [
+    32,
+    36
+   ],
+   "appearance_options": [
+    "深灰大衣，皮手套，合约夹在臂弯从不离身。",
+    "笑容标准得像量过，眼睛却一直在找人。"
+   ],
+   "decision": {
+    "avoids": [
+     "当众被拆台"
+    ],
+    "contrast": "人前笑里藏刀；被你当场退回礼券，反倒高看你一眼。",
+    "core_value": "星途要趁早，后悔是以后的事。",
+    "goal_options": [
+     "拿到签字原件",
+     "探出你的底线",
+     "保住晋升名额"
+    ],
+    "never": [
+     "在合约上作假"
+    ],
+    "prefers": [
+     "不收礼的人"
+    ],
+    "pressure_responses": {
+     "breaking": "崩溃时独自站在栈道口，给总部打一通没人接的电话。",
+     "high": "高压时收起笑，说总部会追偿。",
+     "low": "低压时满口星途璀璨。",
+     "mid": "中压时把支票往前推一寸。"
+    },
+    "relationship_stance": "生意就是生意，动心是另一回事。",
+    "withdrawal": "回换乘大厅的长椅上翻合约，一页页折角。"
+   },
+   "gender": "any",
+   "gender_reason": "星探与玩家只是利益交锋与试探，性别开局再定。",
+   "id": "agent_kuroda_scout",
+   "identity": {
+    "authority": "手握五百万日元的签约预付款支票和单身违约追偿条款的豁免权。",
+    "exposure": "急着拿回签字原件，是为了保住自己在总部的晋升名额。",
+    "hidden": "其实看过模特的毕业设计草图，心里清楚独约要的是那些版型。",
+    "limits": [
+     "总部要见签字原件"
+    ],
+    "obligations": [
+     "登机前把原件带回总部"
+    ],
+    "resources": [
+     "五百万日元预付款支票",
+     "单身违约条款的豁免权"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "你当场退回礼券的干脆",
+     "你看合约时挑出的漏洞"
+    ],
+    "boundaries": [
+     "对方说“到此为止”就停"
+    ],
+    "desire_range": [
+     1,
+     3
+    ],
+    "desired_position": "栈道口和你隔着一份合约的距离",
+    "dislikes": [
+     "拖延"
+    ],
+    "expression": "亲近时也像谈判，先递一支笔，再等你接。",
+    "likes": [
+     "一支好钢笔"
+    ],
+    "preconditions": [
+     "两人都清醒，合约放在一边"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "东京潮流经纪公司星探总监",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_river_tower_concourse",
+     "to": 480
+    },
+    {
+     "from": 480,
+     "location_id": "loc_river_tower_concourse",
+     "to": 1140
+    },
+    {
+     "from": 1140,
+     "location_id": "loc_skybridge_viewing_deck",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "总部记一笔，晋升名额让给别人。",
+      "option": "放宽禁爱条款换签字"
+     },
+     {
+      "cost": "八年攒下的位置被人顶掉。",
+      "option": "空手登机回东京"
+     }
+    ],
+    "pressure": "逼签成了就毁了一个设计者，放手就丢了晋升。",
+    "trigger": "登机前必须带回签字原件。"
+   },
+   "tags": [
+    "workplace",
+    "workplace_power"
+   ],
+   "voices": {
+    "inner": "要是这单黄了，我在总部也待不下去。",
+    "surface": "签了这份，星途就铺好了。"
    }
   }
  ],
  "clock_start": {
-  "label": "十二月的一个周五",
+  "label": "十二月，冻雨季的周五",
   "minute": 1380
  },
  "clock_style": "hm",
  "content_tags": [
   "intimate",
-  "humiliation",
-  "workplace_power",
   "workplace",
-  "disaster"
+  "workplace_power",
+  "disaster",
+  "bodily_harm"
  ],
  "custom": true,
  "customs": [
-  "晚间搭乘跨江高空单轨前乘客必须核对随身应急金属物件之机械规格，确认两毫米直角硬棱严丝合缝无晃动。",
-  "衣物受机械折臂挂死时同伴必须在三秒内升起防风厚毛呢大氅构筑视线屏障保障名媛仪容尊严。",
-  "跨江单轨的末班车上，熟客会把伞挂在同一根扶杆上，谁先下车谁就替后面的人把伞撑开。",
-  "台风天停运时，车站便利店会把关东煮免费分给滞留的乘客，店员只收一句谢谢。"
+  "末班车的常客彼此不问名字，只认座位：谁坐尾厢靠窗，谁就是那个人。",
+  "夜校同组的搭档，毕业前会互送一件亲手做的小配饰。",
+  "站务员给收工的熟客留一杯热可可，是桥塔站不成文的人情。",
+  "冻雨夜滞留桥塔的人，会在换乘大厅的贩卖机前请陌生人喝一罐热汤。"
  ],
  "daily_activities": [
   {
    "beats": [
-    "细致检查全金属睫毛夹加厚转轴硬棱是否平整无伤",
-    "测试折叠开合阻尼弹性确认反向回弹力道饱满",
-    "确认随身化妆包挂载于随手易取暗袋随时待命"
+    "单轨滑过江面霓虹，模特把一只无线耳机塞进{player.name}耳朵",
+    "歪头靠在肩上，晃着脚尖听同一首R&B"
    ],
    "duration_minutes": 25,
-   "hook_ids": [],
-   "id": "act_cosmetics_curler_calibration",
+   "hook_ids": [
+    "hook_mina_empty_seat",
+    "hook_mina_foot_on_knee",
+    "hook_mina_earbud"
+   ],
+   "id": "act_tailcar_shared_earbud",
    "location_ids": [
     "loc_monorail_suspended_car"
    ],
-   "start_minute": 1380,
-   "tags": [],
-   "title": "出发前金属睫毛夹转轴核验"
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "末班车尾厢的耳机分听"
   },
   {
    "beats": [
-    "手动扳动车厢尾部应急气动旋钮排尽管路积存气泡",
-    "用测绘卡尺精确记录受损门框折臂变形公差数值",
-    "核查悬索滑靴锁闭卡爪之稳固咬合深度"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_highbridge_walkway_pressure_drain",
-   "location_ids": [
-    "loc_highbridge_maintenance_walkway"
-   ],
-   "start_minute": 1405,
-   "tags": [],
-   "title": "悬空检修栈道气动旁通排查"
-  },
-  {
-   "beats": [
-    "台风还没来，桥塔下的救护方舱里，值班护士在整理药品柜。",
-    "辣妹是来做志愿者登记的，坐在折叠椅上刷手机，等着护士叫自己的名字。",
-    "护士叫到名字，辣妹抬头一笑，说自己其实是被朋友拉来的。"
-   ],
-   "duration_minutes": 20,
-   "hook_ids": [
-    "hook_all_clear_triumphant_salute",
-    "hook_chiyo_snack_share",
-    "hook_fujiwara_radio_pause"
-   ],
-   "id": "act_commuter_smartband_audit",
-   "location_ids": [
-    "loc_substation_refuge_cabin"
-   ],
-   "start_minute": 900,
-   "tags": [],
-   "title": "救护方舱里的值班"
-  },
-  {
-   "beats": [
-    "末班车开过之后，检修师傅登上停在高架上的尾部车厢，一扇扇检查车门。",
-    "师傅说这条线开了十二年，每晚都要有人这样走一遍。",
-    "检修做完，师傅坐在车厢座椅上歇了一会儿，看着江面上的灯一盏盏熄灭。"
+    "遮光帘拉下，模特红着耳根扶住{player.name}的肩",
+    "让{player.name}把滑松的银链袜夹调回舒服的那一格"
    ],
    "duration_minutes": 15,
    "hook_ids": [
-    "hook_chiyo_snack_share",
-    "hook_chiyo_tactical_shroud",
-    "hook_fujiwara_radio_pause"
+    "hook_mina_empty_seat",
+    "hook_mina_foot_on_knee",
+    "hook_mina_earbud"
    ],
-   "id": "act_mechanic_pawl_safing",
+   "id": "act_garter_refasten",
    "location_ids": [
     "loc_monorail_suspended_car"
    ],
-   "start_minute": 1410,
-   "tags": [],
-   "title": "末班车上的检修"
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "百褶裙下的银链重扣"
   },
   {
    "beats": [
-    "闺蜜把外套一抖，在车门边挡出一小块角落",
-    "辣妹借着外套挡着，飞快地补了口红、理了理裙摆",
-    "到站前两人对了个眼神，若无其事地下车"
+    "在换乘大厅买两罐滚烫的玉米浓汤，先贴上对方冻红的脸颊",
+    "再拉开拉环分着喝"
    ],
-   "duration_minutes": 20,
+   "duration_minutes": 15,
    "hook_ids": [],
-   "id": "act_emergency_shroud_drill",
+   "id": "act_corn_soup_vending",
    "location_ids": [
-    "loc_monorail_suspended_car"
+    "loc_river_tower_concourse"
    ],
-   "start_minute": 1420,
-   "tags": [],
-   "title": "下班高峰挤车互相挡着补妆"
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "贩卖机的热玉米浓汤"
   },
   {
    "beats": [
-    "测试救护方舱气密闸门之快速降落卡死阻绝速度",
-    "演练担架怎么从窄窄的栈道推进方舱",
-    "确认浓烟蔓延期间全域调度无线电通讯通畅"
+    "并肩趴在八十米高的护栏边，看脚下货轮的航标灯",
+    "替对方把被江风吹乱的头发别到耳后"
    ],
    "duration_minutes": 25,
    "hook_ids": [],
-   "id": "act_cabin_evacuation_drills",
+   "id": "act_skybridge_night_view",
    "location_ids": [
-    "loc_substation_refuge_cabin"
+    "loc_skybridge_viewing_deck"
    ],
-   "start_minute": 1430,
-   "tags": [],
-   "title": "桥塔方舱防风防毒气隔离推演"
-  },
-  {
-   "beats": [
-    "警报解除后的避风方舱只剩一盏应急灯，辣妹裹着救援毯坐在折叠床上，百褶短裙的腰链还挂着折臂咬出的断环。",
-    "辣妹背过身，让人替自己把卡坏的腰链暗扣一节节拆下来，指尖每碰到腰侧一下，毯子下的肩膀就缩一下。",
-    "最后一节拆下时，辣妹没有回头，只哼了一声，把毯子往旁边让出半边。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_refuge_cabin_skirt_change",
-   "location_ids": [
-    "loc_substation_refuge_cabin"
-   ],
-   "start_minute": 1400,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "避风方舱换下破裙"
+   "title": "高空栈道的跨江夜景"
   },
   {
    "beats": [
-    "公寓的地毯上散着一堆指甲油，辣妹穿着宽松的T恤和热裤，把一只脚搭在人膝上晃来晃去。",
-    "辣妹把一瓶亮粉色塞过来：涂歪了要罚。……罚什么？你先答应，答应了我再告诉你。"
+    "替脱下高跟鞋的人轻轻托住酸胀的足弓",
+    "用温毛巾一点点敷散寒气"
    ],
    "duration_minutes": 30,
    "hook_ids": [],
-   "id": "act_apartment_nail_polish",
+   "id": "act_lounge_arch_warmth",
+   "location_ids": [
+    "loc_tower_vip_lounge"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "休息室里的足弓热敷"
+  },
+  {
+   "beats": [
+    "凑在单反小小的显示屏前，一张张翻看今晚的抓拍",
+    "额角几乎贴着额角"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [],
+   "id": "act_viewfinder_review",
+   "location_ids": [
+    "loc_monorail_suspended_car"
+   ],
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "取景器里的回看"
+  },
+  {
+   "beats": [
+    "从毕业秀样衣袋里抽出一条宽大的羊绒披肩",
+    "把{player.name}和身旁的人裹进同一团织物里"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [],
+   "id": "act_cashmere_shawl_wrap",
+   "location_ids": [
+    "loc_river_tower_concourse"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "样衣袋里的羊绒披肩"
+  },
+  {
+   "beats": [
+    "回到堆满时装画册的小公寓，在吧台前煮一锅拉面",
+    "各卧一只半熟蛋，分着吃完"
+   ],
+   "duration_minutes": 40,
+   "hook_ids": [],
+   "id": "act_apartment_late_ramen",
    "location_ids": [
     "loc_gyaru_apartment"
    ],
-   "start_minute": 1250,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "替辣妹涂脚指甲"
-  },
-  {
-   "beats": [
-    "辣妹卸了浓妆，素着一张脸窝在沙发里，假睫毛扔在茶几上，看起来像把白天那层壳也一起卸了。",
-    "辣妹拽住人的袖子小声问：素颜也可以亲吗？……要说真话。听见回答，才红着脸凑了上去。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_apartment_bare_face",
-   "location_ids": [
-    "loc_gyaru_apartment"
-   ],
-   "start_minute": 1380,
-   "tags": [
-    "intimate"
-   ],
-   "title": "卸了妆的素颜"
-  },
-  {
-   "beats": [
-    "早上辣妹套着人的连帽衫从卧室出来，袖子长得盖住手，下摆底下露出两条光着的长腿。",
-    "辣妹把下巴搁在人肩上打了个哈欠：衣服我不还了。……还有，昨晚那样，今天还想再来一次吗？"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_apartment_borrowed_hoodie",
-   "location_ids": [
-    "loc_gyaru_apartment"
-   ],
-   "start_minute": 480,
-   "tags": [
-    "intimate"
-   ],
-   "title": "穿着人的连帽衫醒来"
+   "title": "桥南公寓的宵夜拉面"
   }
  ],
  "default_npc_gender_mix": {
@@ -1325,219 +1452,238 @@
   "nonbinary": 0.0
  },
  "default_person": "second",
- "era": "现代都市",
+ "era": "现代滨海都市的冬天，冻雨季",
  "extends": null,
  "forbidden_terms": [],
  "hooks": [
   {
-   "id": "hook_door_binding_peril",
+   "id": "hook_mina_empty_seat",
+   "kind": "approach",
+   "location_ids": [
+    "loc_monorail_suspended_car"
+   ],
+   "slot": "char_mina_gyaru",
+   "text": "跨江单轨末班车在江心桥塔站缓缓停稳，车厢顶灯切换成柔和的暗黄应急光，{npc.name}摘下墨镜，拍了拍身边的空座。"
+  },
+  {
+   "id": "hook_mina_foot_on_knee",
+   "kind": "approach",
+   "location_ids": [
+    "loc_tower_vip_lounge"
+   ],
+   "slot": "char_mina_gyaru",
+   "text": "{npc.name}踢掉一只高跟鞋，把右脚往你膝上一搁，别过脸说：别看了，帮我捂一会儿。"
+  },
+  {
+   "id": "hook_mina_earbud",
+   "kind": "approach",
+   "location_ids": [
+    "loc_monorail_suspended_car"
+   ],
+   "slot": "char_mina_gyaru",
+   "text": "{npc.name}把一只无线耳机塞进你耳朵，歪头靠过来，说这首听完再谈正事。"
+  },
+  {
+   "id": "hook_kuroda_connecting_door",
    "kind": "observe",
    "location_ids": [
     "loc_monorail_suspended_car"
    ],
-   "slot": "char_mina_gyaru",
-   "text": "{npc.name}身姿受阻于倾斜车门折臂死角，高定百褶短裙金属腰链被生铁卡舌紧紧扣咬，真丝布料受拉几近断开。"
+   "slot": "agent_kuroda_scout",
+   "text": "站台窗外冻雨敲打着八十米高空的防风玻璃，星探{npc.name}夹着那份东京五年独约推开连接门，目光在尾厢里搜寻模特的身影。"
   },
   {
-   "id": "hook_chiyo_tactical_shroud",
+   "id": "hook_kuroda_warm_can",
+   "kind": "approach",
+   "location_ids": [
+    "loc_skybridge_viewing_deck"
+   ],
+   "slot": "agent_kuroda_scout",
+   "text": "{npc.name}在观景栈道口递来一罐热浓汤，笑着说冻雨天谈生意，总得先暖暖手。"
+  },
+  {
+   "id": "hook_chiyo_cheque_pocket",
+   "kind": "observe",
+   "location_ids": [
+    "loc_river_tower_concourse"
+   ],
+   "slot": "char_chiyo_roommate",
+   "text": "合租买手{npc.name}抱着一大袋毕业秀高定样衣站在换乘大厅自动贩卖机旁，欲言又止地把一张支票往口袋深处塞了塞。"
+  },
+  {
+   "id": "hook_chiyo_shawl_pull",
+   "kind": "approach",
+   "location_ids": [
+    "loc_river_tower_concourse"
+   ],
+   "slot": "char_chiyo_roommate",
+   "text": "{npc.name}抽出一条羊绒披肩往你脖子上一绕，顺势把你拉到贩卖机背面，说有件事只能跟你讲。"
+  },
+  {
+   "id": "hook_mayu_ankle_sigh",
+   "kind": "observe",
+   "location_ids": [
+    "loc_monorail_suspended_car"
+   ],
+   "slot": "char_mayu_doctor",
+   "text": "随车女医师{npc.name}提着医药箱走过车厢过道，目光落在模特微微肿起的右脚踝与高跟鞋系带上，轻轻叹了口气。"
+  },
+  {
+   "id": "hook_mayu_two_knocks",
+   "kind": "approach",
+   "location_ids": [
+    "loc_tower_vip_lounge"
+   ],
+   "slot": "char_mayu_doctor",
+   "text": "{npc.name}在休息室门口屈指敲了两下药箱，看你一眼，侧身让出半扇门。"
+  },
+  {
+   "id": "hook_fuji_oolong",
+   "kind": "approach",
+   "location_ids": [
+    "loc_river_tower_concourse"
+   ],
+   "slot": "char_fujiwara_stationmaster",
+   "text": "{npc.name}拎着半壶热乌龙茶从调度室出来，冲你招招手：过来，有件事得你拿主意。"
+  },
+  {
+   "id": "hook_fuji_tape",
+   "kind": "request",
+   "location_ids": [
+    "loc_river_tower_concourse"
+   ],
+   "slot": "char_fujiwara_stationmaster",
+   "text": "{npc.name}把一盘监控备份带搁在你面前，压低声音说，这东西今晚你替{npc.ta}收着。"
+  },
+  {
+   "id": "hook_takuya_strap",
    "kind": "approach",
    "location_ids": [
     "loc_monorail_suspended_car"
    ],
-   "slot": "char_chiyo_roommate",
-   "text": "{npc.name}一手抓着车门边的扶杆，一手把长外套撑得老开，朝栈道那边喊：这里没人，别照了！"
+   "slot": "char_takuya_photographer",
+   "text": "{npc.name}把相机背带往你手腕上一绕，笑着问你敢不敢看{npc.ta}备用卡里的花絮。"
   },
   {
-   "id": "hook_battery_fire_countdown",
-   "kind": "accident",
-   "location_ids": [
-    "loc_highbridge_maintenance_walkway"
-   ],
-   "slot": "char_fujiwara_commander",
-   "text": "{npc.name}在栈桥控制柜前听闻车底排烟阀尖啸大作，二十秒窒息倒数在暴风雨呼啸中轰鸣回荡。"
-  },
-  {
-   "id": "hook_beam_fracture_threat",
+   "id": "hook_takuya_reflector",
    "kind": "approach",
    "location_ids": [
-    "loc_traction_substation_platform"
+    "loc_skybridge_viewing_deck"
    ],
-   "slot": "char_takuya_technician",
-   "text": "{npc.name}仰头目睹受损滑靴钢架爆开道道裂缝，倾斜车身悬挂半空面临跌落八十米深江之凶险。"
-  },
-  {
-   "id": "hook_mina_wrench_breakaway",
-   "kind": "approach",
-   "location_ids": [
-    "loc_monorail_suspended_car"
-   ],
-   "slot": "char_mina_gyaru",
-   "text": "{npc.name}反握金属长柄睫毛夹将淬火转轴硬棱探入锁孔咬隙内部，以冷轧平柄抵紧卡槽施展微观精密杠杆。"
-  },
-  {
-   "id": "hook_all_clear_triumphant_salute",
-   "kind": "approach",
-   "location_ids": [
-    "loc_substation_refuge_cabin"
-   ],
-   "slot": "char_mayu_doctor",
-   "text": "{npc.name}抱着保温毯沿着栈道走过来，在车窗外敲了敲玻璃：先别急着撬，深呼吸，跟着我数。"
-  },
-  {
-   "id": "hook_chiyo_snack_share",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "char_chiyo_roommate",
-   "text": "{npc.name}从包里摸出一包软糖，撕开口子递过来：吃一颗吧，等车的时候最无聊了。"
-  },
-  {
-   "id": "hook_fujiwara_radio_pause",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "char_fujiwara_commander",
-   "text": "{npc.name}关掉对讲机走过来，雨衣上还在滴水，开口第一句是问有没有人受伤。"
-  },
-  {
-   "id": "hook_takuya_glove_offer",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "char_takuya_technician",
-   "text": "{npc.name}摘下沾满油污的手套又戴上，挠了挠头，憋出一句：这边风大，往里站一点。"
-  },
-  {
-   "id": "hook_mayu_blanket_tuck",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "char_mayu_doctor",
-   "text": "{npc.name}抖开一条保温毯走过来，替人披在肩上，顺手掖好了领口。"
-  },
-  {
-   "id": "hook_mina_apartment_keys",
-   "kind": "approach",
-   "location_ids": [
-    "loc_gyaru_apartment"
-   ],
-   "slot": "char_mina_gyaru",
-   "text": "{npc.name}晃着钥匙站在公寓门口，嚼着口香糖：进不进来？我家的指甲油多得能开店。"
+   "slot": "char_takuya_photographer",
+   "text": "{npc.name}举着反光板站到你身边，替你挡掉头顶的应急灯，说你这张脸今晚该上封面。"
   }
  ],
  "id": "gyaru_classmate_stranded_commuter",
  "locations": [
   {
    "affordances": [
-    "倒握冷锻睫毛夹将转轴硬棱切入咬合狭缝实施微观物理杠杆破拆",
-    "借车门的不锈钢边框当支点，把锁舌往下压",
-    "示意同伴展开双层防风大氅彻底遮挡高架桥下方手电直射"
+    "可以拉下的遮光帘",
+    "窄得只容两人的备品隔间",
+    "座椅上摊开的合约"
    ],
-   "detail": "悬吊于跨江高架桥离水面八十米高空之单轨电车尾节车厢，三十度悬空脱轨倾侧，车门联动折臂咬死高定褶裙金属饰链受力紧绷。",
+   "detail": "停运的末班车最后一节车厢，座椅换成暗黄应急光，车尾有乘务员的窄小备品隔间，一道应急门直通桥塔观景栈道。",
    "exits": [
-    "loc_highbridge_maintenance_walkway",
-    "loc_substation_refuge_cabin"
+    "loc_river_tower_concourse",
+    "loc_skybridge_viewing_deck"
    ],
    "id": "loc_monorail_suspended_car",
-   "name": "悬空单轨尾部受损车厢",
-   "pressure_modifiers": {
-    "press_monorail_door_jam": "倾斜悬空自重致使折臂反向锁死百褶短裙金属链带"
-   },
-   "privacy": "private",
-   "tags": [],
-   "visibility": "车厢外侧受高架桥大功率抢险探照灯强烈照射，内侧幽暗仅由应急小灯微弱照亮，同伴大氅形成唯一正面视线遮挡屏障。",
-   "witnesses": [
-    "bg_ryo_rail_inspector",
-    "bg_shota_patrol_officer"
-   ]
-  },
-  {
-   "affordances": [
-    "架起探照灯，或者故意把灯转开",
-    "手持无线对讲机向车厢内部通报电池起火排气倒计时",
-    "拉起黄色反光警戒带勒令外围工兵后退三十米"
-   ],
-   "detail": "依附于跨江钢桁梁外侧之狭窄检修钢板步道，宽仅一米二，铺设镂空钢格栅，指挥官率领抢修小队在此建立指挥警戒线。",
-   "exits": [
-    "loc_monorail_suspended_car",
-    "loc_traction_substation_platform"
-   ],
-   "id": "loc_highbridge_maintenance_walkway",
-   "name": "跨江高架桥悬空检修栈道",
-   "pressure_modifiers": {
-    "press_battery_fire_countdown": "车底电池仓高压防爆阀持续喷出带刺鼻焦味的浓白烟气"
-   },
-   "privacy": "semi",
-   "tags": [],
-   "visibility": "高空风雨视野可俯瞰狂暴江面，受受损车体遮挡，仅能透过破碎车窗缝隙观测车内大致轮廓。",
-   "witnesses": [
-    "bg_ryo_rail_inspector",
-    "bg_daiki_lineman"
-   ]
-  },
-  {
-   "affordances": [
-    "扳动铸铁旁通断电总闸强制降低整段牵引滑触线负荷",
-    "合力将三十公斤精钢止滑卡块楔入轨道梁基底稳固底架",
-    "启动高压水雾喷淋装置稀释车底电池起火烟雾"
-   ],
-   "detail": "坐落于大桥主塔下方之轨道供电维护平台，数台重型变压开关柜轰鸣运转，地面积存一层受台风吹入的雨水与防锈矿物油污。",
-   "exits": [
-    "loc_highbridge_maintenance_walkway",
-    "loc_substation_refuge_cabin",
-    "loc_gyaru_apartment"
-   ],
-   "id": "loc_traction_substation_platform",
-   "name": "桥墩牵引变电大堂平台",
-   "pressure_modifiers": {
-    "press_beam_fracture_risk": "悬挂轨道接缝处受重拉出现微小裂痕伴随金属呻吟"
-   },
-   "privacy": "public",
-   "tags": [],
-   "visibility": "应急投光灯亮如白昼充斥水汽与风声，工长在此操作手动旁通泄压手轮与止滑卡爪。",
-   "witnesses": [
-    "bg_daiki_lineman",
-    "bg_kazuki_firefighter"
-   ]
-  },
-  {
-   "affordances": [
-    "在方舱门前展开大号纯黑急救大氅接应脱困名媛",
-    "调配高浓度医用纯氧为受困人员平复急促呼吸",
-    "扳动方舱气密闸门手动杠杆硬撑最后脱困安全门缝"
-   ],
-   "detail": "设置于跨江大桥主塔内部之防风应急避难救护舱，铺设平整防滑塑胶地板，配有两张急救折叠床与保温幕帘，主治医师在此待命接应。",
-   "exits": [
-    "loc_traction_substation_platform",
-    "loc_monorail_suspended_car"
-   ],
-   "id": "loc_substation_refuge_cabin",
-   "name": "桥塔抢险避风救护方舱",
-   "pressure_modifiers": {
-    "press_airlock_hatch_closing": "全封闭抢险方舱防风防爆气密门处于倒计时自动下沉闭锁状态"
-   },
-   "privacy": "private",
-   "tags": [],
-   "visibility": "冷光手术探照灯全开，环境洁净温暖，与外围狂风肆虐之风雨大桥形成鲜明反差。",
-   "witnesses": [
-    "bg_kazuki_firefighter",
-    "bg_emi_paramedic"
-   ]
-  },
-  {
-   "affordances": [
-    "坐在地毯上替辣妹涂指甲",
-    "陪辣妹在沙发上卸妆",
-    "拉上落地窗的窗帘"
-   ],
-   "detail": "江边一栋公寓的小一居，地毯上堆着时装杂志和指甲油，衣架上挂满亮片短裙，落地窗外是那条单轨线。",
-   "exits": [
-    "loc_traction_substation_platform"
-   ],
-   "id": "loc_gyaru_apartment",
-   "name": "辣妹的单身公寓",
+   "name": "悬空单轨末班车尾厢",
    "pressure_modifiers": {},
    "privacy": "private",
    "tags": [
     "intimate"
    ],
-   "visibility": "只开一盏粉色的落地灯，窗帘一拉，整间屋子只剩两个人和一屋子香水味。",
+   "visibility": "遮光帘一拉，前厢的人只看得见磨砂玻璃上的影子。",
+   "witnesses": [
+    "bg_part_time_model"
+   ]
+  },
+  {
+   "affordances": [
+    "护栏边的跨江夜景",
+    "被江风吹乱的长发",
+    "一只遗落的反光板"
+   ],
+   "detail": "桥塔外侧一条玻璃护栏的高空栈道，脚下八十米是江面和货轮的航标灯，一头连车尾应急门，一头通贵宾休息室。",
+   "exits": [
+    "loc_monorail_suspended_car",
+    "loc_tower_vip_lounge"
+   ],
+   "id": "loc_skybridge_viewing_deck",
+   "name": "跨江大桥高空观景栈道",
+   "pressure_modifiers": {},
+   "privacy": "semi",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "风大灯暗，站在护栏边的人从大厅只看得见背影。",
+   "witnesses": []
+  },
+  {
+   "affordances": [
+    "贩卖机里滚烫的玉米浓汤",
+    "毕业秀样衣袋",
+    "站务台上的放行登记簿"
+   ],
+   "detail": "桥塔中层的换乘大厅，自动贩卖机、站务台和一排长椅，滞留的乘客、摄制组和站务员都聚在这里等放行。",
+   "exits": [
+    "loc_monorail_suspended_car",
+    "loc_tower_vip_lounge",
+    "loc_gyaru_apartment"
+   ],
+   "id": "loc_river_tower_concourse",
+   "name": "江心桥塔换乘大厅",
+   "pressure_modifiers": {},
+   "privacy": "public",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "顶灯通明，站务台和监控探头对着每一张长椅。",
+   "witnesses": [
+    "bg_store_clerk",
+    "bg_magazine_assistant"
+   ]
+  },
+  {
+   "affordances": [
+    "独立电暖器",
+    "叠好的毛毯",
+    "医药箱里的冷敷袋"
+   ],
+   "detail": "桥塔顶层一间带独立电暖器的小休息室，一张长沙发、几条毛毯和一只医药箱，钥匙在值班站长手里，滞留的人可以在这里过夜。",
+   "exits": [
+    "loc_skybridge_viewing_deck",
+    "loc_river_tower_concourse"
+   ],
+   "id": "loc_tower_vip_lounge",
+   "name": "桥塔站夜间贵宾休息室",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "门一关，外面只听得见电暖器的嗡声。",
+   "witnesses": []
+  },
+  {
+   "affordances": [
+    "开放式吧台的小锅",
+    "满墙的拍立得",
+    "衣架上的毕业秀样衣"
+   ],
+   "detail": "桥南一间堆满时装画册和化妆品的小公寓，开放式吧台、一面贴满拍立得的墙，窗外看得见那座桥塔的灯。",
+   "exits": [
+    "loc_river_tower_concourse"
+   ],
+   "id": "loc_gyaru_apartment",
+   "name": "桥南辣妹的单身公寓",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "楼层高，窗帘拉上就谁也看不见。",
    "witnesses": []
   }
  ],
@@ -1610,30 +1756,30 @@
   ],
   "order": "family_first"
  },
- "notes": "按原稿加入，保留现代都市台风夜跨江单轨电车的背景。改动：三条规则原本是写作说明，改写为单轨与车厢的规矩；背景人物台词里的占位改为各自的名字，重复的几句换了说法；四个玩家身份原本与人物模板是同一批人，改写为轨道公司安全总监、同班的成年同学、便利店夜班店员、杂志社摄影师；辣妹名模、闺蜜买手与电修工长的倾向卡放宽到脱险后可心动，亲密前提写明危机解除、双方清醒自愿；新增一个避风方舱里换下破裙的亲密日常；写死的人名改为身份称呼或占位。另：按用户决定与机甲、深渊、巫女三个同族世界拉开差异，重写人物决策、亲密倾向、压力出口、日常与转折，口吻落回台风夜的城市单轨；原稿几处性别说明误写成医院角色，医生与机械师的性别、年龄与成年说明互相矛盾，统一改正。",
+ "notes": "按原稿加入，保留现代都市台风夜跨江单轨电车的背景。改动：三条规则原本是写作说明，改写为单轨与车厢的规矩；背景人物台词里的占位改为各自的名字，重复的几句换了说法；四个玩家身份原本与人物模板是同一批人，改写为轨道公司安全总监、同班的成年同学、便利店夜班店员、杂志社摄影师；辣妹名模、闺蜜买手与电修工长的倾向卡放宽到脱险后可心动，亲密前提写明危机解除、双方清醒自愿；新增一个避风方舱里换下破裙的亲密日常；写死的人名改为身份称呼或占位。另：按用户决定与机甲、深渊、巫女三个同族世界拉开差异，重写人物决策、亲密倾向、压力出口、日常与转折，口吻落回台风夜的城市单轨；原稿几处性别说明误写成医院角色，医生与机械师的性别、年龄与成年说明互相矛盾，统一改正。\n2026-10-24 按写作规则 v2 与 Gemini 创意卡改造：删掉车门折臂和电池起火，改成冻雨滞留江心桥塔的一夜，围绕东京独约、毕业大秀和闺蜜收的居间费。",
  "player_identities": [
   {
    "age_range": [
-    32,
-    48
+    30,
+    42
    ],
-   "baseline": "台风夜被紧急叫来坐镇的安全总监，一句话就能决定先救人还是先保车。",
+   "baseline": "你负责全线单轨的夜间运行督导和江心桥塔站的应急调度，末班车滞留怎么处置、车厢监控给不给看，最后都由你点头。",
    "gender": "any",
-   "id": "identity_gyaru_model_mina",
-   "reputation": "强硬果断，下属们都怕这位的眼神。",
+   "id": "identity_night_safety_director",
+   "reputation": "说话算数、谁都想先找的总监。",
    "resources": [
-    "全线的调度权与抢修指挥权",
-    "一张能调动大桥所有资源的批条"
+    "末班车滞留处置权",
+    "车厢监控的调阅权"
    ],
    "risks": [
-    "乘客若在这节车厢出事，总监要引咎辞职"
+    "处置一出错，滞留乘客的投诉和媒体追问都落到你头上。"
    ],
-   "role": "轨道公司的成年安全总监",
+   "role": "单轨夜间安全总监",
    "social_position": "high",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}总监"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
@@ -1644,25 +1790,25 @@
   {
    "age_range": [
     21,
-    24
+    28
    ],
-   "baseline": "跟辣妹同在服装表演系念大四的同学，放学搭同一班单轨回家，偏偏坐在尾厢。",
+   "baseline": "你是时装学院成人夜校的同班同学，和模特同组筹备毕业大秀，手里提着为压轴礼服量身打的版和半成品。",
    "gender": "any",
-   "id": "identity_chiyo_roommate",
-   "reputation": "平时被辣妹嫌土，关键时刻却最靠得住。",
+   "id": "identity_classmate_patternmaker",
+   "reputation": "夜校里手最巧、话最少的版师。",
    "resources": [
-    "一个装着针线包和备用外套的背包",
-    "跟辣妹斗嘴了四年的熟络"
+    "毕业大秀压轴礼服的版型",
+    "夜校裁剪室的钥匙"
    ],
    "risks": [
-    "被拍到跟名模挤在一起，会被同学们传得满天飞"
+    "模特一去东京，你们半年的毕业作品就要拆组重来。"
    ],
-   "role": "同班的成年同学",
+   "role": "成人夜校同班版师",
    "social_position": "equal",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}同学"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
@@ -1672,51 +1818,51 @@
   },
   {
    "age_range": [
-    23,
-    30
+    24,
+    34
    ],
-   "baseline": "桥头二十四小时便利店的夜班店员，停运后跑上栈道给抢修队送热饮和毛巾。",
+   "baseline": "你是今晚随摄制组上末班车跟拍收尾镜头的特约造型师，模特全套高定穿搭和贴身配饰都要经你手整理交接。",
    "gender": "any",
-   "id": "identity_commander_fujiwara",
-   "reputation": "热心肠，抢修队员都认得这张脸。",
+   "id": "identity_magazine_stylist",
+   "reputation": "圈里口碑好、嘴也严的造型师。",
    "resources": [
-    "一箱热饮和一摞干毛巾",
-    "便利店后门的钥匙"
+    "整套高定样衣的交接单",
+    "一只装满配饰的造型箱"
    ],
    "risks": [
-    "擅自上栈道会被当成闲杂人员拦下"
+    "配饰丢一件，杂志社的索赔就记在你名下。"
    ],
-   "role": "桥头便利店的成年夜班店员",
+   "role": "杂志特约造型师",
+   "social_position": "equal",
+   "title_patterns": [
+    {
+     "gender": "any",
+     "pattern": "{family}"
+    },
+    {
+     "gender": "any",
+     "pattern": "{given}"
+    }
+   ]
+  },
+  {
+   "age_range": [
+    20,
+    26
+   ],
+   "baseline": "你在江心桥塔站和站内便利店兼职值夜班，跟着站长学调度，每晚都给末班车收工的熟客留一杯热可可。",
+   "gender": "any",
+   "id": "identity_station_trainee",
+   "reputation": "站里人人使唤得动、也人人照应的见习生。",
+   "resources": [
+    "站务通道的门卡",
+    "便利店的热饮柜"
+   ],
+   "risks": [
+    "出一回违规，转正调度员的事就黄了。"
+   ],
+   "role": "桥塔站见习站务员",
    "social_position": "low",
-   "title_patterns": [
-    {
-     "gender": "any",
-     "pattern": "小{family}"
-    },
-    {
-     "gender": "any",
-     "pattern": "{given}"
-    }
-   ]
-  },
-  {
-   "age_range": [
-    23,
-    30
-   ],
-   "baseline": "刚给辣妹拍完封面的摄影师，送人回家时一起被困在了车上。",
-   "gender": "any",
-   "id": "identity_technician_takuya",
-   "reputation": "镜头毒辣，却从不拍模特不愿意被拍的样子。",
-   "resources": [
-    "一台相机和半卡没导出的样片",
-    "杂志社的工作证"
-   ],
-   "risks": [
-    "要是拍下走光的照片，这辈子别想再接名模的单"
-   ],
-   "role": "时尚杂志的成年摄影师",
-   "social_position": "equal",
    "title_patterns": [
     {
      "gender": "any",
@@ -1729,366 +1875,476 @@
    ]
   }
  ],
- "premise": "同班的时尚名模辣妹，每天下课都搭跨江的高空单轨电车去市中心拍片，晚上再搭末班车回来，常在车厢里和同学聊到下车。轨道公司的安全总监这阵子常来车上抽查，桥头便利店的夜班店员认得每一个晚归的人。单轨车厢是老型号，台风季停运过两次。",
+ "premise": "现代滨海都市的跨江八十米高空悬挂单轨，每晚末班车载着从市中心摄影棚收工的人过江。在时装学院成人夜校进修的辣妹模特，每天下课搭这班车去拍平面，收工后再搭末班车回桥南公寓。单轨公司的安全主管常在江心桥塔站巡线，随车摄影师和合租买手也常搭同一班车。",
  "pressures": [
   {
-   "choice": "是倒拿睫毛夹自己撬开锁舌，还是让闺蜜硬拽裙子、赌裙子不会撕？",
+   "choice": "是替买手瞒住，还是让买手自己去说。",
    "exits": [
     {
-     "cost": "手指被折臂的毛边划出几道红印",
-     "option": "反握全金属睫毛夹以合金转轴硬角顶入锁芯施加微观四点二牛顿脱扣力矩"
+     "cost": "买手店下个月进不了货。",
+     "option": "陪买手把店里的应急周转金拿出来，退回这笔居间费"
     },
     {
-     "cost": "外套被车窗外的风扯得几乎脱手",
-     "option": "示意闺蜜迅速撑开纯黑羊绒大氅下摆遮挡车窗直射强光暗中运劲"
+     "cost": "两人合租三年的情分当场裂开，就此拆伙。",
+     "option": "让买手自己向闺蜜坦白，退回支票"
+    },
+    {
+     "cost": "摄影师名正言顺留在尾厢，贴身跟拍一整晚。",
+     "option": "帮买手稳住摄影师，拿今晚的独家专访署名权换底单"
     }
    ],
    "far": {
-    "consequence": "辣妹衣衫不整的样子会被人拍下来传遍社交网络，辛苦攒下的粉丝和杂志约拍都会没了。",
-    "due_days": 1,
-    "trigger": "车门联动臂脆性断裂裙身撕开走光，在全桥数十名工兵众目睽睽下被吊出车窗彻底社死。"
+    "consequence": "买手店被经纪公司追债，合租的工作室也保不住。",
+    "due_days": 20,
+    "trigger": "居间费的事拖到模特签约之后"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [],
-   "id": "press_monorail_door_jam",
+   "id": "p_buyer_finder_fee",
    "immediate": {
-    "minutes": 1,
-    "text": "车门机械折臂咬入金属裙链，真丝面料受自重猛烈拉拽大面积紧绷濒临崩裂，电池火警急促长鸣。"
+    "minutes": 10,
+    "text": "摄影师把底单对着灯晃了晃，说杂志社的报销还没核完。"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{char_takuya_photographer.name}邮箱里有一份经纪公司财务发错的居间费转账水单。",
+    "holder": "char_takuya_photographer",
+    "subject": "char_chiyo_roommate"
+   },
    "location_ids": [
-    "loc_monorail_suspended_car",
-    "loc_highbridge_maintenance_walkway"
+    "loc_river_tower_concourse"
    ],
    "near": {
-    "deadline_minutes": 2,
-    "text": "大桥指挥官皮靴声正快步踏过检修钢栈道向车厢逼近，桥面抢险黄色警示灯血红闪烁。"
+    "deadline_minutes": 90,
+    "text": "底单一进工作群，闺蜜当场就会知道。"
    },
-   "objective": "在短裙被车门扯开之前撬开锁舌，体体面面地站起来。",
-   "source": "accident",
-   "start_minute": 1395,
+   "objective": "在模特签字前把这张底单的事摆平。",
+   "source": "person",
+   "start_minute": null,
    "tags": [
-    "disaster"
+    "workplace"
    ],
-   "title": "车门折臂自重咬死高定百褶短裙",
-   "trigger": "强风致使八吨车体脱轨倾侧悬空，变形联动折臂死死咬住辣妹高定短裙暗扣与细银饰链。"
+   "title": "买手店的居间回扣单",
+   "trigger": "{char_chiyo_roommate.name}收了东京星探五十万日元居间费、答应劝闺蜜放弃本地毕业秀，汇款底单落到了{char_takuya_photographer.name}手里。"
   },
   {
-   "choice": "是趁倒数过半拼着呛也要撬开锁舌，还是先含住闺蜜递来的氧气面罩？",
+   "choice": "认下脚伤，让医师改口，还是请星探出去。",
    "exits": [
     {
-     "cost": "金属夹柄硬棱在手心磨出微量灼痛水泡",
-     "option": "加快手腕回转节奏赶在第八秒彻底逆向挑开锁止自锁簧舌"
+     "cost": "医师违反执业规范，要停职调查。",
+     "option": "请随车医师改口，说处方是开给你的康复药"
     },
     {
-     "cost": "纯氧气流冲击咽喉黏膜激起轻微干咳",
-     "option": "接过闺蜜递来的便携氧气面罩，先吸几口稳住"
+     "cost": "五年合约的保底分成被砍去一半。",
+     "option": "模特自己认下脚伤，接受合约里的医疗降级条款"
+    },
+    {
+     "cost": "对方扬言要向时尚圈通报模特耍大牌违约。",
+     "option": "以夜里伤员要静养为由，请星探总监离开休息室"
     }
    ],
    "far": {
-    "consequence": "两位年轻名媛面临不可逆呼吸道灼伤重创，彻底断送往后模特演艺前途。",
-    "due_days": 1,
-    "trigger": "全域高浓度有毒烟气彻底灌满车厢，受困人员因剧烈神经中毒陷入深度昏迷。"
+    "consequence": "合约按欺瞒解约，模特还得倒赔。",
+    "due_days": 30,
+    "trigger": "脚伤瞒到东京才暴露"
    },
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
-   "id": "press_battery_fire_countdown",
+   "hook_ids": [
+    "hook_mina_empty_seat",
+    "hook_mina_foot_on_knee",
+    "hook_mina_earbud"
+   ],
+   "id": "p_painkiller_prescription",
    "immediate": {
-    "minutes": 1,
-    "text": "车底电池仓防爆阀持续喷出刺鼻白雾，距离二十秒全域排气强制窒息仅剩最后倒数，半开尾门即将灌满致命浓烟。"
+    "minutes": 10,
+    "text": "星探总监把处方笺压在休息室茶几上，等人开口。"
    },
    "leverage": null,
    "location_ids": [
-    "loc_highbridge_maintenance_walkway"
+    "loc_tower_vip_lounge"
    ],
    "near": {
-    "deadline_minutes": 2,
-    "text": "短路蜂鸣报警晶石红芒狂闪，高浓度刺激性焦烟正逐步蔓延至乘客脚下。"
+    "deadline_minutes": 120,
+    "text": "体检条款一启动，合约要重谈。"
    },
-   "objective": "在剧毒焦烟彻底封死车厢前脱离半开后门，避免急性窒息昏迷休克。",
+   "objective": "在合约体检条款生效前，把脚伤的事说清。",
    "source": "institution",
-   "start_minute": 1385,
-   "tags": [],
-   "title": "高压电池起火剧毒浓烟绝命倒数",
-   "trigger": "车底锂电池受挤压短路引燃外壳触发车辆自动灭火排烟程序。"
-  },
-  {
-   "choice": "是喝令工长在下方加塞三十公斤重型刚性止跌卡块固定道岔，抑或自行挑断短裙非核心链条轻身跳出？",
-   "exits": [
-    {
-     "cost": "车厢受卡紧猛烈震动震得辣妹心口一阵发闷",
-     "option": "让工长把抱轨卡爪推进滑靴的裂缝里卡住"
-    },
-    {
-     "cost": "高定设计师定制饰品彻底损毁需整件重配",
-     "option": "用睫毛夹尖端锋利边缘狠心撬断短裙外挂非核心装饰金属链条"
-    }
-   ],
-   "far": {
-    "consequence": "两位成年名媛沉入冰冷江底，酿成不可挽回之重大特大人身伤亡悲剧。",
-    "due_days": 1,
-    "trigger": "车钩整体断脱翻滚跌入奔腾江水，重型车厢受撞击瞬间四分五裂。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_beam_fracture_risk",
-   "immediate": {
-    "minutes": 2,
-    "text": "悬挂滑靴钢构在强风轰击下接连爆出金属撕裂脆响，悬空车厢随时面临滑落八十米波涛江心之灭顶惨祸。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_highbridge_maintenance_walkway"
-   ],
-   "near": {
-    "deadline_minutes": 3,
-    "text": "断口疲劳裂纹正以肉眼可见速度向主梁延伸，整节车厢承重极限急剧归零。"
-   },
-   "objective": "在受力承重滑靴完全撕裂脱钩前稳固车体支撑阻止车厢坠江粉碎。",
-   "source": "nature",
-   "start_minute": 1390,
+   "start_minute": null,
    "tags": [
-    "disaster"
+    "workplace"
    ],
-   "title": "高空悬索滑靴二次断裂坠江危机",
-   "trigger": "超强台风横向风压加剧导致悬挂轨道连接滑靴接连崩断固定螺栓。"
+   "title": "急救包里的止痛针处方",
+   "trigger": "星探总监在造型报销单里瞧见一张诊所处方笺，看出模特是靠封闭止痛针撑着拍片，搬出合约里的体检条款要说法。"
   },
   {
-   "choice": "是让闺蜜撑开外套挡住车门，还是让指挥官命令全员关手电转身？",
+   "choice": "躲进去，还是迎出去。",
    "exits": [
     {
-     "cost": "辣妹连声严厉呼喝使原本傲娇清脆之嗓音微显沙哑",
-     "option": "以名媛高贵威严厉声喝令桥面工兵向后转肃立不准直视车门半分"
+     "cost": "座椅上的合约原件被进门的星探总监拿走。",
+     "option": "拉下遮光帘，带模特退进窄小的备品隔间屏住气"
     },
     {
-     "cost": "大氅受狂风撕扯几乎从闺蜜手心脱手飞出",
-     "option": "示意闺蜜将双层纯黑羊绒大氅完全遮盖车门破损侧翼形成视线黑障"
+     "cost": "摄影师看出你神色不对，坚持要进尾厢取反光板。",
+     "option": "替模特披上你的外套，推门出去问摄影师前厢还有没有空座"
+    },
+    {
+     "cost": "栈道寒风刺骨，模特穿得单薄，脚踝旧伤被冻得发作。",
+     "option": "让模特从车尾应急门先去休息室"
     }
    ],
    "far": {
-    "consequence": "辣妹一生积攒之骄傲声誉化为乌有，将被经纪公司解约终生蒙受笑柄。",
-    "due_days": 1,
-    "trigger": "全网顶流傲娇名模在工兵围观下短裙撕破半褪受困失仪，成为全网头条风暴名节尽毁。"
+    "consequence": "东京那边以违约为由压价，毕业秀也被牵连。",
+    "due_days": 14,
+    "trigger": "尾厢的照片流出去"
    },
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
-   "id": "press_torch_searchlight_exposure",
+   "hook_ids": [
+    "hook_mina_empty_seat",
+    "hook_mina_foot_on_knee",
+    "hook_mina_earbud"
+   ],
+   "id": "p_tailcar_long_lens",
    "immediate": {
-    "minutes": 1,
-    "text": "检修栈道大门被强风冲开，数十名手提防爆手电的抢修工兵狂奔而来，刺目光柱直直扫向倾斜后门车窗。"
+    "minutes": 3,
+    "text": "连接门的把手动了一下。"
    },
    "leverage": null,
    "location_ids": [
     "loc_monorail_suspended_car"
    ],
    "near": {
-    "deadline_minutes": 2,
-    "text": "抢修队长靴声在栈道回荡，强光手电光斑正顺着破损门缝寸寸逼近短裙挂死位置。"
+    "deadline_minutes": 30,
+    "text": "门外的人要是进来，今晚的照片就有了下文。"
    },
-   "objective": "在工兵探照灯照亮车窗缝隙前阻绝所有窥探视线保全名媛清誉。",
+   "objective": "不让门外的人看见尾厢里这一幕。",
    "source": "person",
-   "start_minute": 1395,
-   "tags": [],
-   "title": "高架检修工兵强光手电直射之社死绝境",
-   "trigger": "检修风门弹开引来数十名手持耀眼强光手电之大桥抢险工兵搜寻。"
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "尾厢玻璃外的长焦",
+   "trigger": "模特侧身扶着座椅，让{player.name}替模特扣回松脱的银链袜夹，前厢连接门外响起调快门的咔嗒声，还有星探总监打电话找人的声音。"
   },
   {
-   "choice": "是倒执金属睫毛夹以绝缘手柄端头拨开搭铁电缆，抑或命令机械师以绝缘木杆挑落火线？",
+   "choice": "认领，删帖，还是让当事人自己出面。",
    "exits": [
     {
-     "cost": "睫毛夹的橡胶柄被电弧烧黑了一块",
-     "option": "倒执睫毛夹以绝缘包覆柄部精准将搭铁火线挑出车门缝隙使其悬空"
+     "cost": "买手借机在帖子里官宣模特要去东京长住，坐实离队传闻。",
+     "option": "请合租买手用闺蜜账号转发认领，说是两人一起去挑面料"
     },
     {
-     "cost": "灭火器的后坐力把闺蜜的手腕扭了一下",
-     "option": "闺蜜抓起随身便携车载灭火干粉罐对准火星狂喷白雾"
+     "cost": "引来一圈晚归乘客围观议论。",
+     "option": "请值班站长按规定要求乘客删掉涉及高空调度区的定位照片"
+    },
+    {
+     "cost": "星探总监立刻转发，单方面宣布模特已签入东京旗下。",
+     "option": "劝模特自己用大号发一张单人自拍辟谣"
     }
    ],
    "far": {
-    "consequence": "车尾化作熊熊火海，昂贵单轨机车全套精密设备尽数烧成废铁。",
-    "due_days": 1,
-    "trigger": "车门下方引发剧烈爆燃大火，将彻底烧死车门铰链与受困人员逃生退路。"
+    "consequence": "禁爱条款还没签，模特就先背上了恋情传闻。",
+    "due_days": 7,
+    "trigger": "帖子被大号转发"
    },
    "flags": [
     "timed"
    ],
-   "hook_ids": [],
-   "id": "press_spark_fuel_hazard",
+   "hook_ids": [
+    "hook_mina_empty_seat",
+    "hook_mina_foot_on_knee",
+    "hook_mina_earbud"
+   ],
+   "id": "p_forum_leak_post",
    "immediate": {
-    "minutes": 1,
-    "text": "门轴电缆持续窜出幽蓝电弧火星，逼近底板缝隙渗出的易燃润滑油，极小火花便能引发瞬间爆燃。"
+    "minutes": 10,
+    "text": "帖子底下的评论一分钟多出几十条。"
    },
    "leverage": null,
    "location_ids": [
-    "loc_traction_substation_platform"
+    "loc_skybridge_viewing_deck"
    ],
    "near": {
-    "deadline_minutes": 2,
-    "text": "可燃气体报警器的红灯越闪越快，车底的油雾快要浓到能点着了。"
+    "deadline_minutes": 60,
+    "text": "经纪公司看到帖子，打电话来追问。"
    },
-   "objective": "在飞溅电火花引燃车底渗漏的易燃润滑油料前切断辅助配电回路。",
-   "source": "money",
-   "start_minute": 1400,
-   "tags": [],
-   "title": "高压电缆打火飞溅逼近车底液压油管",
-   "trigger": "破损动力线缆与变形钢架剧烈摩擦飞溅连串幽蓝电弧火花。"
-  },
-  {
-   "choice": "是在锁舌脱扣瞬间拉起闺蜜飞身跃过防汛门槛，抑或留守车厢等待外界吊车切割？",
-   "exits": [
-    {
-     "cost": "两人的靴底在钢桥面上蹭得冒烟",
-     "option": "锁舌一松就拉着闺蜜一口气冲过正在落下的闸门"
-    },
-    {
-     "cost": "两根撬棍被闸门压得弯成了弓",
-     "option": "工长奋力将两根高强度钨钢橇棍卡入闸门导轨硬撑三秒"
-    }
-   ],
-   "far": {
-    "consequence": "台风持续数小时，高空失温与次生坠落风险将严重威胁受困人员生命。",
-    "due_days": 1,
-    "trigger": "全员被死死关在狂风暴雨的危险悬空栈道上，等待外界台风过境后救援。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_airlock_hatch_closing",
-   "immediate": {
-    "minutes": 1,
-    "text": "桥塔方舱的防风闸门开始往下落，只剩三十秒就要关死。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_substation_refuge_cabin"
-   ],
-   "near": {
-    "deadline_minutes": 2,
-    "text": "重型防暴闸门正以每秒十公分速度无情下坠，留给人员跨越撤退的门缝仅余半米。"
-   },
-   "objective": "在防风闸门落死之前，所有人都钻进方舱。",
+   "objective": "在帖子发酵之前把话头压住。",
    "source": "rumor",
-   "start_minute": 1410,
-   "tags": [],
-   "title": "桥塔抢险方舱防暴气密门自动下坠倒数",
-   "trigger": "大桥防汛抗台总控系统依章发出全线防风密闭指令启动气密门下沉。"
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "时尚论坛的爆料帖",
+   "trigger": "同车的兼职模特发了一张末班车滞留桥塔的背影照，评论区有人认出了那条限量款短裙，正在猜同行的人是谁。"
+  },
+  {
+   "choice": "东京，还是毕业秀和眼前的人。",
+   "exits": [
+    {
+     "cost": "模特失去东京出道的机会，毕业秀欠的高定面料尾款还得自己凑。",
+     "option": "撕掉附加条款，留下和你完成毕业大秀"
+    },
+    {
+     "cost": "只能在经纪公司眼皮底下维持一段地下关系。",
+     "option": "模特签下字，你们约好换一座城不见光地继续"
+    },
+    {
+     "cost": "整组原片的著作权被东京公司买断，摄影师白干一场。",
+     "option": "请摄影师拿今晚高空大片的海外版权，跟星探总监换掉禁爱条款"
+    }
+   ],
+   "far": {
+    "consequence": "五年里每一次见面都得躲着经纪公司。",
+    "due_days": 30,
+    "trigger": "附加条款签了"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_mina_empty_seat",
+    "hook_mina_foot_on_knee",
+    "hook_mina_earbud"
+   ],
+   "id": "p_no_romance_rider",
+   "immediate": {
+    "minutes": 15,
+    "text": "传真纸还带着热度，星探总监等在连接门外。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_monorail_suspended_car"
+   ],
+   "near": {
+    "deadline_minutes": 240,
+    "text": "不签的消息传回总部，机票当夜作废。"
+   },
+   "objective": "登机前定下签不签这份附加条款。",
+   "source": "institution",
+   "start_minute": null,
+   "tags": [
+    "workplace_power"
+   ],
+   "title": "单身保证附加约",
+   "trigger": "东京总部发来传真，要模特在登机前补签一份五年内严禁恋爱、不得私自参加非本公司时装秀的附加条款，不签则机票和五百万预付款一起作废。"
+  },
+  {
+   "choice": "暖先给谁，人留在哪。",
+   "exits": [
+    {
+     "cost": "休息室只有一间，合租买手和星探总监也挤进来盯着。",
+     "option": "向值班站长借贵宾休息室的电暖器和毛毯安置伤员"
+    },
+    {
+     "cost": "整夜困在高空车厢里，两人都冻得手脚冰凉。",
+     "option": "留在断电的尾厢里，用拍摄备用的羊绒大衣裹住彼此取暖"
+    },
+    {
+     "cost": "工程车只能多载两人，同伴得留在桥塔过夜。",
+     "option": "搭值班站长调来的除冰工程车先过江"
+    }
+   ],
+   "far": {
+    "consequence": "滞留乘客集体投诉，单轨公司被追责。",
+    "due_days": 5,
+    "trigger": "封桥拖过两天"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_freezing_rain_lockdown",
+   "immediate": {
+    "minutes": 5,
+    "text": "大厅的顶灯闪了两下，换成应急灯。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_river_tower_concourse"
+   ],
+   "near": {
+    "deadline_minutes": 120,
+    "text": "车厢里的温度降到零下。"
+   },
+   "objective": "让滞留的人熬过这一夜。",
+   "source": "nature",
+   "start_minute": null,
+   "tags": [
+    "disaster"
+   ],
+   "title": "冻雨覆冰与江心断航",
+   "trigger": "江面刮起八级冻雨寒潮，单轨接触网全面覆冰断电，末班车和江心桥塔站被迫封闭，车厢暖风一停，高空铁厢冷得像冰窖。"
+  },
+  {
+   "choice": "就地处置，还是连夜送走。",
+   "exits": [
+    {
+     "cost": "住院观察，模特会错过飞东京签约的那班航班。",
+     "option": "请随车医师在休息室冷敷包扎，再叫桥头救护车接模特送医"
+    },
+    {
+     "cost": "栈道上两人相依的一幕被摄影师的镜头拍了下来。",
+     "option": "你背着模特走完栈道搭工程车，直接送到随车医师的康复诊所夜诊"
+    },
+    {
+     "cost": "合约和去留的事只能先搁下，由你出面去跟星探总监周旋。",
+     "option": "请随车医师给模特服下消炎镇痛药、平卧监护，等天一亮送医复查"
+    }
+   ],
+   "far": {
+    "consequence": "韧带撕裂加重，整个走秀季都得停。",
+    "due_days": 14,
+    "trigger": "伤情一直拖着"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_mina_empty_seat",
+    "hook_mina_foot_on_knee",
+    "hook_mina_earbud"
+   ],
+   "id": "p_ankle_swelling_cold",
+   "immediate": {
+    "minutes": 5,
+    "text": "模特扶着门框，脸色发白。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_tower_vip_lounge"
+   ],
+   "near": {
+    "deadline_minutes": 60,
+    "text": "脚踝再肿下去，鞋都脱不下来。"
+   },
+   "objective": "把模特平安交到医生手里。",
+   "source": "accident",
+   "start_minute": null,
+   "tags": [
+    "bodily_harm"
+   ],
+   "title": "脚踝肿胀与失温",
+   "trigger": "模特穿着薄底高跟鞋在冰冷的车厢里拍了一整晚，右脚踝旧伤在低温下红肿发热，冒冷汗、头晕，几乎站不住。"
   }
  ],
- "region": "跨江八十米高空悬挂单轨电车故障车厢",
+ "region": "跨江八十米高空悬挂单轨：末班车尾厢、江心桥塔与桥南公寓",
  "rules": [
   {
-   "id": "rule_monorail_door_override",
-   "text": "单轨车厢悬空时车门自动锁死，外面的人不得撬门，只能等车内乘客从里侧退开锁舌。"
+   "id": "r_last_train_hold",
+   "text": "末班车遇冻雨覆冰必须就近停靠江心桥塔站，乘客由值班站长统一安置，未经放行不得自行走栈道。"
   },
   {
-   "id": "rule_fashion_model_modesty_law",
-   "text": "车厢电池起火后二十秒自动排烟，排烟期间乘客必须离开尾厢，否则会被浓烟呛倒。"
+   "id": "r_cctv_access",
+   "text": "车厢监控只有夜间安全总监和值班站长能调阅，私自拷贝按违规处分。"
   },
   {
-   "id": "rule_monorail_evacuation_protocol",
-   "text": "电池短路着火导致车厢全域排气二十秒读秒时，受困乘客依法享有依据紧急避险法实施自救之特许权。"
+   "id": "r_exclusive_contract",
+   "text": "东京经纪公司的独约生效后，模特五年内不得恋爱、不得私接非公司安排的时装秀。"
   },
   {
-   "id": "rule_adult_commuter_liability",
-   "text": "台风夜全线停运，抢修队登车前要逐一核对乘客身份，衣着破损者先进方舱处理再登记。"
+   "id": "r_night_school_show",
+   "text": "时装学院成人夜校的毕业大秀要求作品原创，参展期间不得签外地排他经纪约。"
   }
  ],
  "schema_version": 1,
  "stage_labels": {
-  "acquainted": "接诊",
-  "committed": "共济",
-  "familiar": "默契",
-  "flirting": "会意",
-  "intimate": "信托",
-  "stranger": "初见",
-  "testing": "试探"
+  "acquainted": "站台点头",
+  "committed": "地下相守",
+  "familiar": "末班同车",
+  "flirting": "耳机分听",
+  "intimate": "尾厢私情",
+  "stranger": "同车陌路",
+  "testing": "车厢交锋"
  },
  "status": "released",
- "style_hint": "现代城市轨道交通高空应急抢险技术，无第三人称单数代词，全员成年合法自立",
+ "style_hint": "写都市夜归的冷和亮：车窗外是江面霓虹，车厢里是一罐热浓汤、一只分享的耳机。人嘴硬，心软，话说一半留一半。",
  "tension_engines": [
   {
-   "id": "engine_monorail_door_jam",
-   "text": "车厢歪在半空，车门折臂咬着短裙的银链暗扣，一使蛮劲裙子就会从腰上撕开。"
+   "id": "te_tokyo_contract",
+   "text": "东京五年独约等着模特落笔，签了就五年不能恋爱、不能私接个人秀。"
   },
   {
-   "id": "engine_battery_fire_countdown",
-   "text": "车底的锂电池在冒烟，排烟风扇转得发疯，二十秒后焦烟就会灌满车厢。"
+   "id": "te_graduation_show",
+   "text": "夜校毕业大秀只差压轴礼服，作品原创，签外地排他约就不能参展。"
   },
   {
-   "id": "engine_beam_fracture_danger",
-   "text": "吊着车厢的滑靴在台风里一颗颗崩掉螺栓，整节车厢随时会朝江面再沉一截。"
+   "id": "te_freezing_rain",
+   "text": "冻雨覆冰，末班车停在江心桥塔，谁也走不了，谁也躲不开。"
   },
   {
-   "id": "engine_dignity_exposure_hazard",
-   "text": "抢修队打着强光手电顺着栈道一路照过来，谁先照到车门，辣妹的狼狈就会被几十双眼睛看见。"
+   "id": "te_ankle_secret",
+   "text": "模特右脚踝的伤靠止痛药撑着，一旦被看出来，合约和走秀都要重算。"
   }
  ],
  "title": "悬空单轨的辣妹",
  "tone": [
-  "潮酷",
-  "硬核",
-  "紧迫",
-  "反差",
-  "骄傲",
-  "体面"
+  "江面霓虹",
+  "冻雨敲着高空玻璃",
+  "东京五年独约",
+  "裙下的银链袜夹",
+  "末班车上的心事"
  ],
  "twists": [
   {
-   "category": "人事",
-   "id": "twist_hoist_pressure_backflow",
+   "category": "信息",
+   "id": "tw_shadow_design_clause",
    "requires": [
-    "press_monorail_door_jam"
+    "char_mina_gyaru"
    ],
-   "text": "手动泄压阀拧动刹那并未顺势卸荷，残存气压突发反向回弹导致车门折臂反咬更深一毫米，辣妹临危不乱改变施力角度成功破局。"
-  },
-  {
-   "category": "关系",
-   "id": "twist_chiyo_protective_cloak_deploy",
-   "requires": [
-    "press_torch_searchlight_exposure"
-   ],
-   "text": "手电光扫过来的那一刻，闺蜜把外套一扬，不但挡住了光，风兜进外套里还把歪斜的车厢往回推了一点。"
-  },
-  {
-   "category": "时限",
-   "id": "twist_battery_fuse_blown",
-   "requires": [
-    "press_battery_fire_countdown"
-   ],
-   "text": "倒计时跳入第十秒红区关头电车短路保险丝突然过载熔断，全域排烟喷射延时五秒启动，辣妹借这宝贵五秒彻底撬退受死锁舌。"
-  },
-  {
-   "category": "制度",
-   "id": "twist_takuya_block_brace",
-   "requires": [
-    "press_beam_fracture_risk"
-   ],
-   "text": "悬索滑靴主受力钢架彻底崩断刹那工长神勇推入三十公斤刚性卡块，车体下坠数寸即被死死止跌卡稳，避免了坠江惨烈灾难。"
+   "text": "你翻到合约细则：东京五年独约要{char_mina_gyaru.name}无偿交出夜校里设计的全部私服版型；可当场拒签，先前借用的杂志高定场地费要{char_mina_gyaru.ta}个人全额赔付。"
   },
   {
    "category": "资源",
-   "id": "twist_mina_reverse_torque_breakaway",
+   "id": "tw_station_cctv_backup",
    "requires": [
-    "press_monorail_door_jam"
+    "char_fujiwara_stationmaster"
    ],
-   "text": "睫毛夹压到三十度时咔嗒一声，锁舌退了回去，短裙从门缝里抽了出来，只在裙角留下一道浅浅的折痕。"
+   "text": "人前一板一眼的{char_fujiwara_stationmaster.name}，私下把今晚星探在站台逼签的监控拷给了你，足够让经纪公司撤回霸王条款；可动用内部监控，站长要背处分提前退休。"
   },
   {
-   "category": "信息",
-   "id": "twist_all_clear_heroic_salute",
+   "category": "资源",
+   "id": "tw_mortgaged_shop_lease",
    "requires": [
-    "press_airlock_hatch_closing"
+    "char_chiyo_roommate"
    ],
-   "text": "辣妹双足稳稳踏上安全地坪瞬间台风暴雨平息警报解除，全桥抢修人员目睹两位年轻女士衣冠整肃仪容明艳之飒爽英姿，欢呼喝彩响彻桥塔。"
+   "text": "{char_chiyo_roommate.name}哭着坦白，已经把两人合租买手店的租约抵押给了星探的公司；要赎回店铺，就得拿毕业大秀的成衣首发权去抵债。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_hidden_film_roll",
+   "requires": [
+    "char_takuya_photographer"
+   ],
+   "text": "{char_takuya_photographer.name}真正的王牌不在存储卡里，是一卷手冲胶卷，拍下了模特最动人的素颜；{char_takuya_photographer.ta}愿意把胶卷送给你参展，只想你下季度去{char_takuya_photographer.ta}的独立影棚搭档。"
+  },
+  {
+   "category": "制度",
+   "id": "tw_layoff_certificate",
+   "requires": [
+    "char_mayu_doctor"
+   ],
+   "text": "{char_mayu_doctor.name}写好了一份踝关节重度劳损停工证明，足以合法免掉东京合约的违约金；可证明一交，模特今年所有的走秀邀约都会被行业协会冻结。"
+  },
+  {
+   "category": "时限",
+   "id": "tw_fashion_week_entry",
+   "requires": [
+    "char_mina_gyaru"
+   ],
+   "text": "夜校导师发来邮件：{char_mina_gyaru.name}和你合做的毕业设计入围了本市时装周青年压轴单元；确认参展要在登机前交齐保证金，参展期间不得签外地排{char_mina_gyaru.ta}约。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_staged_stopover",
+   "requires": [
+    "char_mina_gyaru"
+   ],
+   "text": "末班车停在江心并不全因冻雨：是{char_mina_gyaru.name}托站里的熟人把停靠申请提早报了上去，只想在桥上多留一夜，把要不要去东京的话跟你说完。"
   }
  ]
 }

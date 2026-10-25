@@ -1,253 +1,154 @@
 {
  "background_cast": [
   {
-   "adult_context": "跟了老舞台监督八年的副手。",
+   "adult_context": "年满三十岁、在乐团任职多年的职业乐手。",
    "age_range": [
-    28,
-    40
+    30,
+    45
    ],
-   "function": "helper",
-   "gender": "male",
-   "id": "bg_assistant_stage_manager",
-   "line": "钢索吊上了！承重梁暂时塌不下来，你们快放油！",
+   "function": "witness",
+   "gender": "any",
+   "id": "bg_second_violin",
+   "line": "首席换把位的时候，我们后排的人只能跟着拖。",
    "location_ids": [
-    "loc_gravity_drain_lever",
-    "loc_rehearsal_hall"
+    "loc_orchestra_pit_podium"
    ],
-   "name": "副舞台监督小葛",
-   "role": "副舞台监督"
+   "name": null,
+   "role": "第二小提琴副首席"
   },
   {
-   "adult_context": "在剧院驻守了六年的消防员。",
+   "adult_context": "年满二十八岁的乐团正式雇员。",
+   "age_range": [
+    28,
+    50
+   ],
+   "function": "rumor_source",
+   "gender": "any",
+   "id": "bg_clarinet_pair",
+   "line": "听说新指挥是老总监一手捧上来的，耳朵未必有那么灵。",
+   "location_ids": [
+    "loc_orchestra_pit_podium"
+   ],
+   "name": null,
+   "role": "单簧管声部乐手"
+  },
+  {
+   "adult_context": "年满三十五岁、在剧院做了多年的服装师。",
+   "age_range": [
+    35,
+    55
+   ],
+   "function": "helper",
+   "gender": "any",
+   "id": "bg_dresser",
+   "line": "领结我备了三条，指挥每次上台前都要换一条新的。",
+   "location_ids": [
+    "loc_stage_wing_grand_curtain",
+    "loc_maestra_dressing_room"
+   ],
+   "name": null,
+   "role": "后台服装师"
+  },
+  {
+   "adult_context": "年满二十二岁的剧院正式工。",
+   "age_range": [
+    22,
+    40
+   ],
+   "function": "messenger",
+   "gender": "any",
+   "id": "bg_stage_hand",
+   "line": "监督让我传话：第三幕前所有人回到候场位。",
+   "location_ids": [
+    "loc_stage_wing_grand_curtain"
+   ],
+   "name": null,
+   "role": "侧幕检场"
+  },
+  {
+   "adult_context": "年满三十岁的剧院行政正式雇员。",
    "age_range": [
     30,
     45
    ],
    "function": "obstacle",
-   "gender": "male",
-   "id": "bg_fire_officer",
-   "line": "液压剪还在路上！底下全是油，谁也不许点火！",
+   "gender": "any",
+   "id": "bg_board_secretary",
+   "line": "曲目变更的提案，总监已经交到董事会了。",
    "location_ids": [
-    "loc_gravity_drain_lever"
+    "loc_grand_auditorium_orchestra"
    ],
-   "name": "驻场消防员",
-   "role": "剧院的驻场消防员"
+   "name": null,
+   "role": "董事会秘书"
   },
   {
-   "adult_context": "乐团的翻谱员，二十三岁。",
+   "adult_context": "年满二十四岁、持证上岗的文化记者。",
    "age_range": [
-    21,
-    28
+    24,
+    35
    ],
-   "function": "messenger",
-   "gender": "female",
-   "id": "bg_page_turner",
-   "line": "指挥！总谱我捡回来了！你们一定要上来！",
+   "function": "rumor_source",
+   "gender": "any",
+   "id": "bg_press_intern",
+   "line": "今晚彩排谁跟谁不对付，明早全城都会知道。",
    "location_ids": [
-    "loc_gravity_drain_lever",
-    "loc_rehearsal_hall"
+    "loc_grand_auditorium_orchestra"
    ],
-   "name": "翻谱员阿蔓",
-   "role": "乐团的翻谱员"
-  },
-  {
-   "adult_context": "在乐团吹了二十年双簧管的老乐手。",
-   "age_range": [
-    40,
-    55
-   ],
-   "function": "witness",
-   "gender": "male",
-   "id": "bg_oboist",
-   "line": "指挥家今天又停了三次，每次都是因为舞台机械师在后面站着。",
-   "location_ids": [
-    "loc_rehearsal_hall"
-   ],
-   "name": "双簧管乐手老温",
-   "role": "乐团的双簧管乐手"
-  },
-  {
-   "adult_context": "合唱团的女中音。",
-   "age_range": [
-    28,
-    45
-   ],
-   "function": "witness",
-   "gender": "female",
-   "id": "bg_chorus_alto",
-   "line": "我看那位舞台机械师，每次散场都等指挥家走了才关灯。",
-   "location_ids": [
-    "loc_rehearsal_hall"
-   ],
-   "name": "合唱团的女中音",
-   "role": "合唱团的女中音"
-  },
-  {
-   "adult_context": "观众席的领座员。",
-   "age_range": [
-    21,
-    30
-   ],
-   "function": "witness",
-   "gender": "female",
-   "id": "bg_usher",
-   "line": "首演票早就卖光了，连站票都没剩一张。",
-   "location_ids": [
-    "loc_rehearsal_hall"
-   ],
-   "name": "领座员莉莉",
-   "role": "观众席的领座员"
+   "name": null,
+   "role": "周刊随行记者"
   }
  ],
  "cast_combos": [
   {
-   "chemistry": "指挥家与舞台机械师在深井底坑里胸背相贴，四只手叠在指挥棒上，一个打拍子一个跟着往下压。",
-   "id": "cc_maestra_machinist_switch",
-   "identity_ids": [],
+   "chemistry": "{maestra_shen.name}是你随侍的指挥，也是和你在琴房地毯上一起睡着过的人，人前只叫你“翻谱的”。",
+   "id": "cc_shen_and_turner_pit",
+   "identity_ids": [
+    "pi_page_turner"
+   ],
    "player_positions": [
-    "high",
-    "equal",
     "low"
    ],
-   "power_structure": "switchable",
+   "power_structure": "npc_high",
    "relations": [
     {
      "a": "player",
      "a_to_b": {
       "tension": 3,
-      "trust": 3
+      "trust": 4
      },
      "b": "maestra_shen",
      "b_to_a": {
-      "tension": 3,
-      "trust": 3
+      "tension": 4,
+      "trust": 4
      },
-     "reason": "一起被困在十米深井里，彼此的命都攥在对方手里。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "stage_machinist",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "每晚一个在台上一个在台下，配合了无数次升降。",
-     "stage": "familiar"
-    },
-    {
-     "a": "maestra_shen",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "stage_machinist",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "一个落最后一拍，一个等最后一拍，谁都没说破。",
-     "stage": "testing"
+     "reason": "上月通宵对谱，两人靠着肩在琴房地毯上睡着，指挥醒来吻了你的鼻尖，说好敲两下谱架就停。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "maestra_shen",
-    "stage_machinist"
+    "maestra_shen"
    ],
    "stakes": {
-    "irreplaceable_goal": "让乐池平稳落底，首演照常开幕。",
-    "limit_gap": "指挥家力气小、燕尾被绞，机械师个子太高，在两平米的底坑里施展不开。",
-    "meeting_reason": "总彩排散场后指挥家下到乐池里找落下的总谱，机械师正在底坑里检修液压管路。",
-    "resource_gap": "指挥家有指挥棒和数得极准的拍子，机械师有一身力气和对每一根液压管的熟悉。"
+    "irreplaceable_goal": "指挥要的不是助理，是一个在全团背过身时还站在谱架边的人。",
+    "limit_gap": "指挥不能在乐手面前示弱，你没有资格替指挥说一句话。",
+    "meeting_reason": "{maestra_shen.name}在乐池台前攥紧指挥棒，指节发白，低声问你：要是今晚全团都不跟我的拍子，你还替我翻完最后一页吗。",
+    "resource_gap": "指挥握着整个乐团的拍点，你只握着下一页总谱。"
    },
    "tags": [
-    "workplace",
-    "disaster"
+    "intimate",
+    "workplace"
    ],
    "tension_engine_ids": [
-    "te_pit_lurch",
-    "te_pit_back_embrace"
+    "te_strings_slowdown",
+    "te_premiere_countdown"
    ]
   },
   {
-   "chemistry": "指挥家与舞台机械师在放油扳把前四只手叠在一起，一边争该先放哪一路油，一边一下一下把扳把往下压。",
-   "id": "cc_maestra_machinist_equal",
-   "identity_ids": [],
-   "player_positions": [
-    "equal"
+   "chemistry": "{maestra_shen.name}和你有一份没公开的终身之约，人前称你理事，人后只叫你的名字。",
+   "id": "cc_shen_and_patron_backing",
+   "identity_ids": [
+    "pi_opera_patron"
    ],
-   "power_structure": "equal",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "maestra_shen",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "为一个小节争了一下午，争到最后谁都不肯先走。",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "stage_machinist",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "在乐池上上下下配合过很多回。",
-     "stage": "familiar"
-    },
-    {
-     "a": "maestra_shen",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "stage_machinist",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "一个说话一个干活，五年里话不多，句句都记得。",
-     "stage": "testing"
-    }
-   ],
-   "slots": [
-    "maestra_shen",
-    "stage_machinist"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "扳下放油扳把，让乐池落底。",
-    "limit_gap": "指挥家不懂液压，机械师不懂怎么让慌乱的人稳下来。",
-    "meeting_reason": "两人为首演那晚乐池该在第几小节升起，在排练厅里争了一下午，争到总彩排开始都没分出胜负。",
-    "resource_gap": "指挥家记得乐池每一次升降的节奏，机械师认得每一个阀门的手感。"
-   },
-   "tags": [
-    "workplace",
-    "crime"
-   ],
-   "tension_engine_ids": [
-    "te_pawl_valve_seize",
-    "te_stage_beam_crack"
-   ]
-  },
-  {
-   "chemistry": "赞助人在上面听着对讲机，指挥家和机械师一个压棒一个顶墙，谁也不肯在外人面前先喊疼。",
-   "id": "cc_maestra_machinist_patron",
-   "identity_ids": [],
    "player_positions": [
     "high"
    ],
@@ -256,74 +157,219 @@
     {
      "a": "player",
      "a_to_b": {
-      "tension": 3,
-      "trust": 3
+      "tension": 2,
+      "trust": 5
      },
      "b": "maestra_shen",
      "b_to_a": {
       "tension": 3,
-      "trust": 3
+      "trust": 5
      },
-     "reason": "头一回在外人面前把命交出去。",
-     "stage": "testing"
-    },
+     "reason": "三年前维也纳的音乐会后在多瑙河边许下终身，指挥把先父那根指挥棒的檀木盒托给你保管。",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
+    "maestra_shen"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "指挥要你站在身边，又不想你替自己做这个决定。",
+    "limit_gap": "你一出手就会被说成用钱干预艺术，指挥也不愿被看成靠人撑腰。",
+    "meeting_reason": "面对总监的换曲通牒，{maestra_shen.name}退到你身侧，把停演整改的剧目授权书放进你手里，等你开口。",
+    "resource_gap": "你的支票本能保住整个演出季，指挥只有一根指挥棒和一份手稿。"
+   },
+   "tags": [
+    "intimate",
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_paris_contract",
+    "te_father_manuscript"
+   ]
+  },
+  {
+   "chemistry": "{maestra_shen.name}和你是协奏曲里互相追赶的两条声部，也是在双钢琴上心意相通过的人。",
+   "id": "cc_shen_and_soloist_duet",
+   "identity_ids": [
+    "pi_guest_soloist"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 3
+      "tension": 3,
+      "trust": 4
      },
-     "b": "stage_machinist",
+     "b": "maestra_shen",
      "b_to_a": {
-      "tension": 2,
-      "trust": 3
+      "tension": 3,
+      "trust": 4
      },
-     "reason": "来看总彩排，早听说剧院里新来的指挥家和舞台机械师。",
-     "stage": "familiar"
-    },
+     "reason": "半月前双钢琴合练肖邦，曲终两人的手停在同一个和弦上，指挥把休息室备用钥匙挂在你的谱包拉链上。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "maestra_shen"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "指挥要找回音乐的主导权，又怕你为此得罪整个弦乐部。",
+    "limit_gap": "指挥不能当众偏向独奏，你也不能抢走指挥的主导。",
+    "meeting_reason": "首席小提琴故意在协奏段落拖慢弓速，{maestra_shen.name}在排练厅侧过头，问你敢不敢用钢琴强行抢进领奏。",
+    "resource_gap": "指挥握着乐团，你握着钢琴；协奏段落里谁领谁跟，一直没说定。"
+   },
+   "tags": [
+    "intimate",
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_strings_slowdown"
+   ]
+  },
+  {
+   "chemistry": "{maestra_shen.name}对你笑得太得体，你对那几个拍子挑得太细，两人都知道对方在试探。",
+   "id": "cc_shen_and_critic_column",
+   "identity_ids": [
+    "pi_music_critic"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
     {
-     "a": "maestra_shen",
+     "a": "player",
      "a_to_b": {
-      "tension": 3,
-      "trust": 3
+      "tension": 4,
+      "trust": 2
      },
-     "b": "stage_machinist",
+     "b": "maestra_shen",
      "b_to_a": {
-      "tension": 3,
+      "tension": 4,
       "trust": 3
      },
-     "reason": "在外人面前不敢多看一眼，可每一拍都只数给一个人听。",
+     "reason": "前日剧院沙龙专访，指挥递乐谱时指尖碰了碰你的手腕，约你散场后去顶楼茶室喝一壶热普洱。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "maestra_shen"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "指挥要一个真正听懂这份手稿的人替它说话。",
+    "limit_gap": "乐评一出，谁求谁就翻过来；你不能偏袒，指挥不能讨好。",
+    "meeting_reason": "{maestra_shen.name}在休息室理着被汗浸湿的鬓发，抬眼直视你，问明早的头版是写这份革新，还是附和保守派。",
+    "resource_gap": "你握着明早的头版，指挥握着今晚整场彩排的成败。"
+   },
+   "tags": [
+    "intimate",
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_premiere_countdown",
+    "te_paris_contract"
+   ]
+  },
+  {
+   "chemistry": "{concertmaster.name}对你客气得过分，开口闭口叫你“评论家”，话里带刺。",
+   "id": "cc_guy_and_critic_fame",
+   "identity_ids": [
+    "pi_music_critic"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": -1
+     },
+     "b": "concertmaster",
+     "b_to_a": {
+      "tension": 4,
+      "trust": -2
+     },
+     "reason": "上季度首席托人送来一张首版黑胶探你的年度排名，被你原封退回，从此见面只点头。",
      "stage": "testing"
     }
    ],
    "slots": [
-    "maestra_shen",
-    "stage_machinist"
+    "concertmaster"
    ],
    "stakes": {
-    "irreplaceable_goal": "让外人亲眼看见，这座剧院的人是怎么护着首演的。",
-    "limit_gap": "指挥家不敢在赞助人面前出错，机械师不习惯被人盯着干活。",
-    "meeting_reason": "赞助人要看新乐池的升降，指挥家陪着下到乐池边，机械师在底下演示。",
-    "resource_gap": "指挥家手里有指挥棒和首演的名头，机械师手里有扳手和那件外套。"
+    "irreplaceable_goal": "首席想要一个体面的台阶，而不是一场输给年轻人的公开败仗。",
+    "limit_gap": "你不能收首席的人情，首席也不能明着拉拢媒体。",
+    "meeting_reason": "{concertmaster.name}在观众大厅后排堵住你，掏出乐手公会的联名信，问你愿不愿意写一篇批评女指挥冒进的文章。",
+    "resource_gap": "你一支笔能定首席晚年的名声，首席手里有整个弦乐部。"
    },
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
    "tension_engine_ids": [
-    "te_stage_beam_crack",
-    "te_pawl_valve_seize"
+    "te_strings_slowdown"
    ]
   },
   {
-   "chemistry": "指挥家一边别指挥棒一边轻声给新助理发号施令，机械师顶着井壁，把三个人的力气拧成一股。",
-   "id": "cc_maestra_machinist_newcomer",
-   "identity_ids": [],
+   "chemistry": "{prima_soprano.name}是剧院里最耀眼的明星，偏偏总在后台逗你这个翻谱的说话。",
+   "id": "cc_anna_and_turner_breath",
+   "identity_ids": [
+    "pi_page_turner"
+   ],
    "player_positions": [
-    "low",
-    "equal"
+    "low"
    ],
    "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "prima_soprano",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "女高音进剧院第一天被裙摆绊倒，你扶住那截细腰，对方笑着把带香水味的手帕塞进你胸前口袋。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "prima_soprano"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "女高音想要一个只为自己数拍子的人。",
+    "limit_gap": "女高音不能被人看见和助理走得太近，你也不能误了指挥的谱页。",
+    "meeting_reason": "{prima_soprano.name}在化妆间外拦住你，把第三幕的分谱塞进你怀里，要你标出每个换气点，再站到唱段里一抬眼就看得见的地方。",
+    "resource_gap": "女高音握着第三幕和整个包厢名单，你只握着谱夹。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_premiere_countdown"
+   ]
+  },
+  {
+   "chemistry": "{stage_designer_he.name}和你是合作多年的老搭档，只是这几次一起熬夜后，对视的时间越来越长。",
+   "id": "cc_he_and_soloist_rehearsal",
+   "identity_ids": [
+    "pi_guest_soloist"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
    "relations": [
     {
      "a": "player",
@@ -331,967 +377,1243 @@
       "tension": 3,
       "trust": 3
      },
-     "b": "maestra_shen",
+     "b": "stage_designer_he",
      "b_to_a": {
-      "tension": 3,
+      "tension": 4,
       "trust": 3
      },
-     "reason": "指挥家拿新助理当个小跟班，今晚却要把命交到这双生手里。",
+     "reason": "在维也纳合作先锋演出时，每场首演后都在后台分一壶热姜茶，聊到灯桥熄灯。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "stage_designer_he"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "想知道你在光里抬头那一刻，看的是不是自己。",
+    "limit_gap": "两人都得听指挥的拍子，谁也不能在台上私自加戏。",
+    "meeting_reason": "{stage_designer_he.name}在侧幕调着追光，低声说第三乐章的光已经校在你的琴键上，让你放心往前弹。",
+    "resource_gap": "你握着钢琴的每一个强音，{stage_designer_he.name}握着打在你身上的每一束光。"
+   },
+   "tags": [
+    "intimate",
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_premiere_countdown"
+   ]
+  },
+  {
+   "chemistry": "{opera_director.name}在董事会上和你针锋相对，散会后却总记得给你留一杯热红茶。",
+   "id": "cc_zhuang_and_patron_board",
+   "identity_ids": [
+    "pi_opera_patron"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 0
+     },
+     "b": "opera_director",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 1
+     },
+     "reason": "去年剧院引进商业音乐剧，对方想挪用基金会的排练专款，被你用理事否决权当场截停。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "opera_director"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "要你一句准话：剧院这一季，基金会到底押谁。",
+    "limit_gap": "{opera_director.name}不能得罪赞助人，你也不能让基金会替剧院的烂账兜底。",
+    "meeting_reason": "{opera_director.name}在贵宾包厢里把巴黎资方的撤资警告函推到你面前，问基金会肯不肯再追加两百万，保住商业改编版。",
+    "resource_gap": "你握着赞助金和复议权，{opera_director.name}握着档期和巴黎合同。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_paris_contract"
+   ]
+  },
+  {
+   "chemistry": "{stage_manager.name}和{concertmaster.name}同在剧院三十年，一个守后台，一个坐首席，今晚第一次在排练厅里翻了脸。",
+   "id": "cc_mo_guy_clipping_clash",
+   "identity_ids": [
+    "pi_opera_patron"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": -1
+     },
+     "b": "concertmaster",
+     "b_to_a": {
+      "tension": 4,
+      "trust": -1
+     },
+     "reason": "去年续约时首席拿独奏合约试探理事会偏向，被你一句“先听琴再谈钱”挡了回去。",
      "stage": "testing"
     },
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 3
+      "tension": 1,
+      "trust": 4
      },
-     "b": "stage_machinist",
+     "b": "stage_manager",
      "b_to_a": {
-      "tension": 2,
-      "trust": 3
+      "tension": 1,
+      "trust": 4
      },
-     "reason": "第一次跟大戏就遇上了事故。",
+     "reason": "你每次来看彩排，后台休息室的藤椅上总留着一份刚出炉的桂花糕。",
      "stage": "familiar"
     },
     {
-     "a": "maestra_shen",
+     "a": "stage_manager",
      "a_to_b": {
-      "tension": 3,
-      "trust": 3
+      "tension": 4,
+      "trust": -1
      },
-     "b": "stage_machinist",
+     "b": "concertmaster",
      "b_to_a": {
-      "tension": 3,
-      "trust": 3
+      "tension": 5,
+      "trust": 0
      },
-     "reason": "指挥家和机械师一个眼神就知道对方要干什么，新助理都看在眼里。",
+     "reason": "三十年前就知道那部成名作的来历，一直没说。",
      "stage": "testing"
     }
    ],
    "slots": [
-    "maestra_shen",
-    "stage_machinist"
+    "stage_manager",
+    "concertmaster"
    ],
    "stakes": {
-    "irreplaceable_goal": "带着新助理一起平安上去，三天后照常首演。",
-    "limit_gap": "新助理什么都不懂，指挥家得一边救人一边教。",
-    "meeting_reason": "新助理被派来给指挥家搬谱，跟着指挥家下乐池找总谱，机械师正在底下检修。",
-    "resource_gap": "指挥家有指挥棒和稳得住人的拍子，机械师有力气和工装外套。"
+    "irreplaceable_goal": "{stage_manager.name}要你帮忙把这件事压在剧院里，{concertmaster.name}要你在董事会上替弦乐部说话。",
+    "limit_gap": "旧报纸一见光就收不回，公会一罢排首演就开天窗。",
+    "meeting_reason": "{stage_manager.name}把三十年前的剪报摊在{concertmaster.name}的谱架上劝对方收手，{concertmaster.name}把琴弓往谱架上一搁，说公会的人明早就不来了，两人都等着你表态。",
+    "resource_gap": "{stage_manager.name}手里有一张旧报纸，{concertmaster.name}身后有整个乐手公会。"
    },
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "tension_engine_ids": [
-    "te_pit_lurch",
-    "te_pawl_valve_seize"
+    "te_strings_slowdown",
+    "te_father_manuscript"
+   ]
+  },
+  {
+   "chemistry": "{maestra_shen.name}和{prima_soprano.name}在台上配合得天衣无缝，台下却为一段录音第一次起了争执。",
+   "id": "cc_shen_anna_recording_choice",
+   "identity_ids": [
+    "pi_page_turner"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "maestra_shen",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 4
+     },
+     "reason": "三天前排练完下着大雨，指挥在休息室抱着你没说话，后来把父亲的绝笔手稿交你一人修补装订。",
+     "stage": "intimate"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 3
+     },
+     "b": "prima_soprano",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "女高音总在你翻谱的空当冲你眨眼，上周还把一张包厢票塞进你的总谱，背面写着“只给你”。",
+     "stage": "flirting"
+    },
+    {
+     "a": "maestra_shen",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 3
+     },
+     "b": "prima_soprano",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "合作过两部歌剧，彼此敬重对方的耳朵。",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
+    "maestra_shen",
+    "prima_soprano"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "两人都要你守住一样东西：一个要音乐干净，一个要公道。",
+    "limit_gap": "指挥不肯靠录音赢，女高音不愿白白冒险。",
+    "meeting_reason": "{prima_soprano.name}把录音放在休息室的总谱上，{maestra_shen.name}伸手把手机推回去，说不想用这种方法赢；{prima_soprano.name}转头问你，到底谁错了。",
+    "resource_gap": "{prima_soprano.name}握着一段录音，{maestra_shen.name}握着全乐团的拍点，你握着两个人都信得过的谱夹。"
+   },
+   "tags": [
+    "intimate",
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_strings_slowdown",
+    "te_father_manuscript"
    ]
   }
  ],
  "channels": [
   {
    "fidelity": "exact",
-   "id": "ch_pit_whisper",
-   "reach": "all",
-   "text": "乐池底坑里贴着耳朵的低语和喘息"
+   "id": "ch_stage_intercom",
+   "reach": "一句话传遍侧幕、乐池和化妆间",
+   "text": "舞台监督的后台对讲"
+  },
+  {
+   "fidelity": "exact",
+   "id": "ch_board_memo",
+   "reach": "送到每位董事和总监的案头",
+   "text": "董事会秘书处的书面通知"
   },
   {
    "fidelity": "distorted",
-   "id": "ch_stage_intercom",
-   "reach": "local",
-   "text": "舞台对讲机里时断时续的呼叫"
+   "id": "ch_pit_whisper",
+   "reach": "一个休息间隙传遍整个乐团",
+   "text": "乐池里乐手之间的耳语"
   }
  ],
  "character_templates": [
   {
-   "adult_context": "二十一岁从音乐学院指挥系毕业，在国际比赛上拿了头奖，被国家歌剧院破格聘为首席指挥，这是第一部由本人从头带到尾的新制作，去留进退由本人拿主意。",
+   "adult_context": "年满二十五岁、在国外音乐学院完成指挥硕士学业的职业指挥家。",
    "age_range": [
-    21,
-    26
+    25,
+    28
    ],
    "appearance_options": [
-    "身着贴身高定黑色修身指挥燕尾服套裙与挺括白衬衫，系着黑色真丝领结，优雅长发挽在脑后，白皙高贵的鹅蛋脸，凤眸微凝，端庄典雅中尽显令人心折的大家风范。",
-    "燕尾服外套沾染上斑驳黑色液压油渍，内衬衬衫因深井燥热而微透，面颊泛起娇美红晕，双手紧握实心钨钢配重指挥棒，典雅中透着无畏生死的惊人韧性。"
+    "贴身的黑色修身燕尾服套裙配挺括白衬衫，系黑色真丝领结，长发挽在脑后，凤眸微凝，端庄里带着锋芒。",
+    "卸了妆换上宽松的灰色毛衣，长发散下来，指节上贴着两块创可贴，台灯下抱着总谱发呆。"
    ],
    "decision": {
     "avoids": [
-     "排练时窃窃私语的人",
-     "拿首演当儿戏的人"
+     "拿资历压人的人",
+     "在乐手面前替她出头的人"
     ],
-    "contrast": "站在指挥台上端庄得不可冒犯，连剧院总监都不敢插一句嘴；困在深井里时，却是指挥家第一个把指挥棒递出来，用打拍子的声音让对方稳住。",
-    "core_value": "音乐要准，人更要准：一个拍子都不能乱，一个人都不能丢。",
+    "contrast": "台上锋利得像刀；只在一个人面前，会把额头抵在对方肩上说累。",
+    "core_value": "拍点不让，手稿不改。",
     "goal_options": [
-     "把指挥棒尾塞别进卸荷阀的暗缝，撬断死锁顶销",
-     "和舞台机械师一起扳下放油扳把，让乐池落底"
+     "让全团在第四乐章跟上她的起拍",
+     "守住先父改编手稿的原貌",
+     "找一个人，在她撑不住时替她翻完最后一页"
     ],
     "never": [
-     "在首演前丢下乐团"
+     "为了票房改先父的手稿"
     ],
     "prefers": [
-     "守时、守拍子的人",
-     "安静可靠、手上有本事的人"
+     "耳朵好、懂她拍点的人",
+     "说真话的人"
     ],
     "pressure_responses": {
-     "breaking": "被油雾呛得直咳也不松手，像在台上一样数清每一拍。",
-     "high": "割开绞住的燕尾后摆扎稳马步，把全身重量压在棒身上。",
-     "low": "乐池一顿就抓住栏杆，先听清承重梁在哪边响。",
-     "mid": "抽出指挥棒，指给对方看卸荷阀的暗缝。"
+     "breaking": "把指挥棒放在谱架上，低声说今天到这里，然后不肯见人。",
+     "high": "关上休息室的门，一个人对着手稿一页页数拍子。",
+     "low": "抬起指挥棒停住，用沉默逼全团重来一遍。",
+     "mid": "点名单独纠音，语气越来越冷。"
     },
-    "relationship_stance": "舞台机械师每晚试运行乐池时都会在底坑里等着，等指挥家在台上落下最后一个手势，才按下升降按钮。",
-    "withdrawal": "脱险后先挨个问了乐池里每个人的名字，确认一个都不少，才肯坐下来让人替自己擦脸上的油污。"
+    "relationship_stance": "信一个人很慢，可一旦交出手稿，就是交出了自己。",
+    "withdrawal": "一个人躲进休息室，把台灯调到最暗。"
    },
    "gender": "female",
-   "gender_reason": "歌剧院的首席指挥，按原稿写作女性。",
+   "gender_reason": "标题写明是女指挥，固定为女性。",
    "id": "maestra_shen",
    "identity": {
-    "authority": "排练厅里谁先进、谁停下、哪一段重来，指挥家抬一抬手就定了。",
-    "exposure": "油雾打湿了燕尾服，白衬衫被深井里的燥热浸得半透，只能整个人靠进对方怀里使劲。",
-    "hidden": "总谱的最后一页空白处，用铅笔写着一行小字：舞台机械师每晚试运行乐池时，会在底下等我的最后一个手势落下。",
+    "authority": "握着全乐团声部进出的拍点、首演总谱的终审权和排练的叫停权。",
+    "exposure": "她每晚在琴房练到十指发麻，被人看见就会被说成撑不住。",
+    "hidden": "她怕的不是乐团不跟拍，是自己其实配不上父亲的手稿。",
     "limits": [
-     "力气小，压不动卡死的阀门",
-     "燕尾服的丝绒后摆容易被铰链绞住"
+     "上任不到一年，资历总被说成“靠老总监提拔”",
+     "曲目变更要过董事会"
     ],
     "obligations": [
-     "让首演如期开幕",
-     "护住乐池里的每一个人"
+     "让首演按先父的改编总谱开幕",
+     "对半个音差也不放过"
     ],
     "resources": [
-     "一根钛合金指挥棒，尾端嵌着实心钨钢配重塞，直角折沿坚硬",
-     "一份画满记号的总谱",
-     "整个乐团的信服"
+     "先父留下的象牙白木指挥棒",
+     "一份画满铅笔批注的总谱",
+     "年轻乐手们的信服"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "深井里一句废话都不说、只管把肩膀顶上去的那个人",
-     "每晚在底坑里等自己最后一个手势落下的那道影子"
+     "对方听得懂她没说出口的那一拍",
+     "在乐池里也敢直视她的眼睛"
     ],
     "boundaries": [
-     "人前守着指挥台上的体面，私下的心意只给认定的人",
-     "每一步都要先问过，对方迟疑就停"
+     "她敲两下谱架就停",
+     "排练时间不越界"
     ],
     "desire_range": [
-     2,
-     4
+     3,
+     5
     ],
-    "desired_position": "休息室钢琴边被人从身后抱着的近身位",
+    "desired_position": "指挥台侧那个只有翻谱人才站得到的位置",
     "dislikes": [
-     "被人当众起哄",
-     "趁人之危的手"
+     "酒气",
+     "被当成花瓶夸"
     ],
     "expression": "嘴上说着还要改总谱，手却把休息室的门锁拧上了，转身对人抬了抬下巴：领结，替我解开。",
     "likes": [
-     "散场后被人替自己解开领结",
-     "被人握住打了一整天拍子的手腕轻轻揉",
-     "在休息室的钢琴边被人从身后抱着"
+     "散场后的琴房",
+     "温热的伯爵茶",
+     "被人从身后稳稳扶住手腕"
     ],
     "preconditions": [
-     "乐池落底、两人都脱险之后",
-     "两人都清醒，心意出于自己，不是深井里的依赖"
+     "两人都清醒，心意出于自己",
+     "门已经关好，没有乐手会闯进来"
     ],
     "self_control_range": [
      3,
      5
     ]
    },
-   "public_role": "国家歌剧院的首席女指挥",
+   "public_role": "国家大剧院首位青年首席女指挥",
    "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_maestra_dressing_room",
+     "to": 540
+    },
     {
      "from": 540,
      "location_id": "loc_rehearsal_hall",
-     "to": 1080
+     "to": 1140
     },
     {
-     "from": 1080,
+     "from": 1140,
+     "location_id": "loc_orchestra_pit_podium",
+     "to": 1320
+    },
+    {
+     "from": 1320,
      "location_id": "loc_maestra_dressing_room",
-     "to": 1380
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "棒身可能折断，手掌会被油烫伤",
-      "option": "用指挥棒尾塞别进卸荷阀，和机械师合力撬断死锁顶销"
+      "cost": "和首席小提琴、总监两边同时撕破脸。",
+      "option": "顶住压力按原谱排完今晚的彩排"
      },
      {
-      "cost": "承重梁撑不到消防队进来",
-      "option": "留在底坑里等消防队"
+      "cost": "被人说成年轻指挥压不住场面。",
+      "option": "向董事会提请复议，暂缓定下曲目"
      }
     ],
-    "pressure": "乐池斜挂在半空，头顶的承重梁吱吱作响，必须在梁塌下来之前让乐池落底。",
-    "trigger": "总彩排散场后，指挥家下到乐池里找落下的总谱，乐池的液压主回路突然爆管。"
+    "pressure": "让步就是背叛父亲的手稿，硬顶就可能让首演开天窗。",
+    "trigger": "首席小提琴串通弦乐部拖慢拍子，总监又拿巴黎合同逼她换曲。"
    },
    "tags": [
     "workplace",
-    "disaster",
     "intimate"
    ],
    "voices": {
-    "inner": "头顶的梁在响……背后贴着的这个人心跳得好稳。每晚在底下等我的最后一个手势，原来就是这个人。",
-    "surface": "别慌，听我的拍子。棒尾别进阀缝，你压着我的手——一、二、三，下。"
+    "inner": "要是今晚全团都不跟我，你还会站在这里吗。",
+    "surface": "第四乐章，从头。弦乐，看我的手，不是看首席。"
    }
   },
   {
-   "adult_context": "四十多岁，在乐团坐了二十年首席，送走过五任指挥，第一次给这么年轻的指挥家坐首席。",
+   "adult_context": "年满四十八岁、在乐团任首席三十年的职业小提琴家。",
    "age_range": [
-    40,
-    55
+    48,
+    52
    ],
    "appearance_options": [
-    "一身黑色的排练服，袖口别着一枚旧松香盒形状的袖扣，琴盒从不离手。",
-    "坐在第一把椅子上，一边擦琴弓一边冷眼打量指挥台。"
+    "银灰头发梳得一丝不苟，深色马甲配怀表链，琴弓永远横在膝头，眼皮半垂。",
+    "排练间隙摘了眼镜，揉着左肩，盯着墙上老照片里年轻时的自己。"
    ],
    "decision": {
     "avoids": [
-     "乐团首席小提琴最烦临阵推诿"
+     "被当众点名",
+     "有人翻旧账"
     ],
-    "contrast": "在排练厅里板着脸挑毛病，私下却会给指挥家递一块自己带的润喉糖。",
-    "core_value": "指挥可以换，音乐不能将就。",
+    "contrast": "人前倚老卖老；四下无人时，会替年轻乐手悄悄改好弓法。",
+    "core_value": "资历是用三十年琴弓磨出来的。",
     "goal_options": [
-     "先把人救出来",
-     "乐团首席小提琴再追究是谁的错"
+     "逼年轻指挥在董事会前低头",
+     "保住自己最后几年的首席位置",
+     "让旧事永远埋在档案室"
     ],
     "never": [
-     "乐团首席小提琴不会丢下困在里面的人"
+     "在首演当晚罢演"
     ],
     "prefers": [
-     "乐团首席小提琴看重说到做到的人"
+     "懂规矩的人",
+     "听得出老琴好坏的人"
     ],
     "pressure_responses": {
-     "breaking": "乐团首席小提琴嗓子喊哑了也不肯走",
-     "high": "乐团首席小提琴顶着危险往里递东西",
-     "low": "乐团首席小提琴先稳住身边的人",
-     "mid": "乐团首席小提琴四处找能用的工具"
+     "breaking": "放下琴弓，一言不发离开乐池。",
+     "high": "拿出公会联名信要求更换指挥。",
+     "low": "第四乐章换把位，拍子拖半拍。",
+     "mid": "当众说一句“年轻人火气大”。"
     },
-    "relationship_stance": "头一个月处处给年轻的指挥家使绊子，后来却是第一个在乐团面前起立鼓掌的人。",
-    "withdrawal": "事情过去后，乐团首席小提琴一个人躲开抽根烟"
+    "relationship_stance": "先看对方够不够分量，再决定给几分客气。",
+    "withdrawal": "回到排练厅角落，一个人拉一段没人听过的旧曲。"
    },
-   "gender": "any",
-   "gender_reason": "乐团首席小提琴这个位置不限性别。",
+   "gender": "male",
+   "gender_reason": "创意卡定为男性的乐团元老。",
    "id": "concertmaster",
    "identity": {
-    "authority": "乐团里谁该坐第几把、哪段弓法怎么拉，首席说了算。",
-    "exposure": "乐团首席小提琴忙起来顾不上衣着体面",
-    "hidden": "做乐团首席小提琴这些年，有件事没对旁人说过",
+    "authority": "握着弦乐声部的排位表、首场独奏华彩段的演奏权和乐手公会分会的发言权。",
+    "exposure": "年轻时那部成名作的配器，有一半来自恩师没发表的手稿。",
+    "hidden": "他真正怕的是被一个比自己小一半的人证明，他的耳朵已经老了。",
     "limits": [
-     "乐团首席小提琴不在死角里，只能在外面使劲"
+     "不能公开抗命，否则公会也保不住他",
+     "独奏华彩要指挥点头"
     ],
     "obligations": [
-     "守住乐团首席小提琴手上的那一摊事"
+     "替弦乐部的老乐手争排位",
+     "维护首席的体面"
     ],
     "resources": [
-     "一把跟了二十年的老琴",
-     "乐团首席小提琴随身的一盏提灯"
+     "一把百年老琴",
+     "弦乐部二十几位乐手的追随",
+     "乐手公会的联名信"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "乐团首席小提琴欣赏做事干脆利落的人",
-     "乐团首席小提琴记得危急时回头搭把手的人"
+     "对方敬他的琴，不敬他的位置",
+     "敢当面和他争一个音"
     ],
     "boundaries": [
-     "对方迟疑，乐团首席小提琴就停"
+     "不在乐团里传出去"
     ],
     "desire_range": [
      1,
      3
     ],
-    "desired_position": "和乐团首席小提琴并肩站着",
+    "desired_position": "被人当成前辈而不是绊脚石的位置",
     "dislikes": [
-     "乐团首席小提琴讨厌轻浮的手"
+     "被年轻人教训",
+     "媒体打探"
     ],
-    "expression": "乐团首席小提琴话不多，递东西时指尖会多停一下",
+    "expression": "嘴上仍端着首席的架子，却会把自己的松香推过去，说：你那把琴，该换弦了。",
     "likes": [
-     "乐团首席小提琴收工后的一杯热饮"
+     "老琴的松香味",
+     "有人陪他听旧唱片"
     ],
     "preconditions": [
-     "乐团首席小提琴要等危局过去、双方清醒自愿"
+     "两人清醒、单独相处",
+     "没有乐手在场"
     ],
     "self_control_range": [
      3,
      5
     ]
    },
-   "public_role": "乐团首席小提琴",
+   "public_role": "乐团元老级首席小提琴",
    "schedule": [
     {
-     "from": 540,
+     "from": 0,
      "location_id": "loc_rehearsal_hall",
-     "to": 1260
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "乐团首席小提琴未必赶得上",
-      "option": "乐团首席小提琴在外面调度接应"
-     },
-     {
-      "cost": "可能把乐团首席小提琴自己也搭进去",
-      "option": "乐团首席小提琴硬闯进去"
-     }
-    ],
-    "pressure": "里面的人出不来，乐团首席小提琴进不去",
-    "trigger": "警报传到乐团首席小提琴那里"
-   },
-   "tags": [
-    "workplace"
-   ],
-   "voices": {
-    "inner": "送走过五任指挥……这一任，我还没跟到首演，不许就这么没了。",
-    "surface": "指挥！乐团的人都撤出来了，就差你们两个！撑住！"
-   }
-  },
-  {
-   "adult_context": "五十多岁，执掌这座百年歌剧院十年，是亲手把年轻的指挥家破格请来的人。",
-   "age_range": [
-    50,
-    62
-   ],
-   "appearance_options": [
-    "一身深灰三件套西装，领口别着一枚剧院的徽章，手里总握着一副老花镜。",
-    "站在观众席最后一排，看着台上的总彩排一言不发。"
-   ],
-   "decision": {
-    "avoids": [
-     "歌剧院总监最烦临阵推诿"
-    ],
-    "contrast": "在董事会上强硬得吓人，私下却会在指挥家的休息室门口放一束白玫瑰。",
-    "core_value": "这座剧院一百年没开天窗，不能在我手里开。",
-    "goal_options": [
-     "先把人救出来",
-     "歌剧院总监再追究是谁的错"
-    ],
-    "never": [
-     "歌剧院总监不会丢下困在里面的人"
-    ],
-    "prefers": [
-     "歌剧院总监看重说到做到的人"
-    ],
-    "pressure_responses": {
-     "breaking": "歌剧院总监嗓子喊哑了也不肯走",
-     "high": "歌剧院总监顶着危险往里递东西",
-     "low": "歌剧院总监先稳住身边的人",
-     "mid": "歌剧院总监四处找能用的工具"
+     "to": 600
     },
-    "relationship_stance": "力排众议把这么年轻的指挥家请来，董事会上替指挥家顶了一整年的压力。",
-    "withdrawal": "事情过去后，歌剧院总监一个人躲开抽根烟"
-   },
-   "gender": "any",
-   "gender_reason": "歌剧院总监这个位置不限性别。",
-   "id": "opera_director",
-   "identity": {
-    "authority": "首演开不开、哪一场加演，总监说了算。",
-    "exposure": "歌剧院总监忙起来顾不上衣着体面",
-    "hidden": "做歌剧院总监这些年，有件事没对旁人说过",
-    "limits": [
-     "歌剧院总监不在死角里，只能在外面使劲"
-    ],
-    "obligations": [
-     "守住歌剧院总监手上的那一摊事"
-    ],
-    "resources": [
-     "一张能调动全剧院的总监通行证",
-     "歌剧院总监随身的一盏提灯"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "歌剧院总监欣赏做事干脆利落的人",
-     "歌剧院总监记得危急时回头搭把手的人"
-    ],
-    "boundaries": [
-     "对方迟疑，歌剧院总监就停"
-    ],
-    "desire_range": [
-     1,
-     3
-    ],
-    "desired_position": "和歌剧院总监并肩站着",
-    "dislikes": [
-     "歌剧院总监讨厌轻浮的手"
-    ],
-    "expression": "歌剧院总监话不多，递东西时指尖会多停一下",
-    "likes": [
-     "歌剧院总监收工后的一杯热饮"
-    ],
-    "preconditions": [
-     "歌剧院总监要等危局过去、双方清醒自愿"
-    ],
-    "self_control_range": [
-     3,
-     5
-    ]
-   },
-   "public_role": "歌剧院总监",
-   "schedule": [
     {
      "from": 600,
      "location_id": "loc_rehearsal_hall",
+     "to": 1140
+    },
+    {
+     "from": 1140,
+     "location_id": "loc_orchestra_pit_podium",
      "to": 1320
+    },
+    {
+     "from": 1320,
+     "location_id": "loc_grand_auditorium_orchestra",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "歌剧院总监未必赶得上",
-      "option": "歌剧院总监在外面调度接应"
+      "cost": "在老乐手面前失了首席的威信。",
+      "option": "带弦乐部照指挥的拍子排完今晚"
      },
      {
-      "cost": "可能把歌剧院总监自己也搭进去",
-      "option": "歌剧院总监硬闯进去"
+      "cost": "把整个乐团拖进首演前的内讧。",
+      "option": "拿联名信去董事会要求换指挥"
      }
     ],
-    "pressure": "里面的人出不来，歌剧院总监进不去",
-    "trigger": "警报传到歌剧院总监那里"
+    "pressure": "顺从就是承认自己老了，硬扛又怕旧事被人翻出来。",
+    "trigger": "年轻指挥要在首演用先父的改编谱，弦乐部的排位要跟着重排。"
    },
    "tags": [
     "workplace"
    ],
    "voices": {
-    "inner": "是我把这孩子请来的……要是首演前出了事，这一百年的剧院，我没脸再进。",
-    "surface": "指挥！消防队的液压剪还在路上，你们得先自己把乐池放下来！"
+    "inner": "要是她真是对的，我这三十年算什么。",
+    "surface": "指挥的手势很漂亮，可惜音乐不是只给眼睛看的。"
    }
   },
   {
-   "adult_context": "二十八岁，工科出身，在歌剧院管了五年舞台机械，台下的每一根液压管、台上的每一根吊杆都摸过，去留进退由本人拿主意。",
+   "adult_context": "年满四十八岁、在剧院做了二十年运营的职业经理人。",
    "age_range": [
-    25,
+    48,
+    53
+   ],
+   "appearance_options": [
+    "深灰西装熨得没有一丝褶，袖扣是小小的高音谱号，笑起来眼角很温和。",
+    "包厢里松了领口，手指在扶手上一下下叩着，手边一份全法文合同。"
+   ],
+   "decision": {
+    "avoids": [
+     "在公开场合摊牌",
+     "空谈艺术"
+    ],
+    "contrast": "满口上座率和产业化；没人时会把旧节目单一张张抚平收好。",
+    "core_value": "艺术要先活下来，才谈得上纯粹。",
+    "goal_options": [
+     "让指挥同意换上商业改编版",
+     "保住巴黎巡演",
+     "不当剧院倒闭前的最后一任总监"
+    ],
+    "never": [
+     "让剧院在自己手里关门"
+    ],
+    "prefers": [
+     "算得清账的人",
+     "肯坐下来谈的人"
+    ],
+    "pressure_responses": {
+     "breaking": "在董事会上当众摊牌，宣布暂停首演。",
+     "high": "拿档期撤销权压人。",
+     "low": "笑着递上一份新合同。",
+     "mid": "提醒每个人赞助商的耐心有限。"
+    },
+    "relationship_stance": "人人都是筹码，可筹码之间也能有交情。",
+    "withdrawal": "回到包厢，关上门一个人算账。"
+   },
+   "gender": "any",
+   "gender_reason": "创意卡未限定性别。",
+   "id": "opera_director",
+   "identity": {
+    "authority": "握着演出季档期的撤销权、巡演赞助款的划拨和首演票房的考核。",
+    "exposure": "巴黎资方的撤资函已经到了，剧院的账撑不过下个演出季。",
+    "hidden": "{npc.ta}其实爱这出戏，只是不敢再赌一次。",
+    "limits": [
+     "曲目变更要董事会过半",
+     "票房亏损由自己担责"
+    ],
+    "obligations": [
+     "让剧院活下去",
+     "给赞助商一个交代"
+    ],
+    "resources": [
+     "下赛季巴黎巡演合同",
+     "董事会里几张稳定的票"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "对方看得懂{npc.ta}的难处",
+     "谈判桌上不让步的人"
+    ],
+    "boundaries": [
+     "公事和私事分开谈"
+    ],
+    "desire_range": [
+     1,
+     3
+    ],
+    "desired_position": "能放下账本说真话的人身边",
+    "dislikes": [
+     "被当成只认钱的人",
+     "被逼表态"
+    ],
+    "expression": "把合同推到一边，替人倒了杯热茶：今晚不谈钱，谈谈你为什么还留在这里。",
+    "likes": [
+     "一杯热红茶",
+     "安静的包厢"
+    ],
+    "preconditions": [
+     "两人清醒，心意出于自己",
+     "不牵扯任何合同"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "歌剧院常务运营总监兼董事会代表",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_grand_auditorium_orchestra",
+     "to": 600
+    },
+    {
+     "from": 600,
+     "location_id": "loc_grand_auditorium_orchestra",
+     "to": 1140
+    },
+    {
+     "from": 1140,
+     "location_id": "loc_grand_auditorium_orchestra",
+     "to": 1320
+    },
+    {
+     "from": 1320,
+     "location_id": "loc_stage_wing_grand_curtain",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "两边都不满意，自己成了靶子。",
+      "option": "在董事会上提出折中方案"
+     },
+     {
+      "cost": "欠下一份日后要还的人情。",
+      "option": "私下劝赞助人追加资金"
+     }
+    ],
+    "pressure": "逼指挥换曲会失去艺术口碑，不换就可能失去整个巡演。",
+    "trigger": "巴黎资方发来撤资警告，要求压轴曲目换成商业改编版。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "voices": {
+    "inner": "要是这一次又赌输了，我就再也没脸进这个大厅。",
+    "surface": "我比谁都想让这出戏原样上演，可剧院付不起梦想的账单。"
+   }
+  },
+  {
+   "adult_context": "年满二十七岁、在欧洲各大歌剧院驻唱多年的职业女高音。",
+   "age_range": [
+    27,
+    31
+   ],
+   "appearance_options": [
+    "酒红色丝绒晚礼服，肩头搭一条白狐披肩，唇色鲜亮，笑起来眼尾上挑。",
+    "卸了礼服换上宽大的练功衫，脖子上围着丝巾护嗓，捧一杯蜂蜜水。"
+   ],
+   "decision": {
+    "avoids": [
+     "俗套的恭维",
+     "抢她戏份的人"
+    ],
+    "contrast": "人前娇笑得像一朵玫瑰；唱到动情处会突然红了眼眶。",
+    "core_value": "嗓子不骗人，耳朵也不。",
+    "goal_options": [
+     "让首演成为她的代表作",
+     "替指挥扳回一局又不脏了自己的手",
+     "找一个不看她名气的人"
+    ],
+    "never": [
+     "为了出风头毁掉别人的演出"
+    ],
+    "prefers": [
+     "听得出她换气的人",
+     "不怕她的人"
+    ],
+    "pressure_responses": {
+     "breaking": "称病不唱，让整个第三幕停摆。",
+     "high": "把录音拿出来，问人敢不敢用。",
+     "low": "用一句玩笑把话题岔开。",
+     "mid": "在咏叹调里放慢换气，暗暗配合指挥。"
+    },
+    "relationship_stance": "先撩拨，再看对方接不接得住。",
+    "withdrawal": "回到化妆间，对着镜子一遍遍练弱音。"
+   },
+   "gender": "female",
+   "gender_reason": "创意卡定为女高音，固定为女性。",
+   "id": "prima_soprano",
+   "identity": {
+    "authority": "握着第三幕咏叹调的换气速度、首发演员合约和贵宾包厢名单。",
+    "exposure": "她悄悄录下了首席小提琴鼓动弦乐部拖拍的话。",
+    "hidden": "风情万种是她的盔甲，她其实很久没为谁真心唱过一句。",
+    "limits": [
+     "合约写明不得卷入乐团内部纷争",
+     "嗓子是唯一的本钱"
+    ],
+    "obligations": [
+     "让第三幕咏叹调完美呈现",
+     "保护合作的指挥"
+    ],
+    "resources": [
+     "一支录过音的手机",
+     "欧洲剧院的人脉",
+     "包厢贵宾名单"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "对方记得她唱错的那一个音",
+     "在后台替她挡掉闲杂人"
+    ],
+    "boundaries": [
+     "她把丝巾系回颈上就停"
+    ],
+    "desire_range": [
+     3,
+     5
+    ],
+    "desired_position": "侧幕阴影里，唱完一曲第一个看见的人",
+    "dislikes": [
+     "烟味",
+     "被当成花瓶"
+    ],
+    "expression": "把手帕塞进人胸口的口袋，凑近耳边哼半句咏叹调：听出来了吗，这句是唱给你的。",
+    "likes": [
+     "温热的蜂蜜水",
+     "被人在侧幕等着"
+    ],
+    "preconditions": [
+     "两人清醒，又都想靠近对方",
+     "不在演出前耗嗓子"
+    ],
+    "self_control_range": [
+     2,
+     4
+    ]
+   },
+   "public_role": "首演特聘首席女高音",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_maestra_dressing_room",
+     "to": 600
+    },
+    {
+     "from": 600,
+     "location_id": "loc_stage_wing_grand_curtain",
+     "to": 1140
+    },
+    {
+     "from": 1140,
+     "location_id": "loc_stage_wing_grand_curtain",
+     "to": 1320
+    },
+    {
+     "from": 1320,
+     "location_id": "loc_grand_auditorium_orchestra",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "从此被首席小提琴记恨。",
+      "option": "把录音交给信得过的人决定"
+     },
+     {
+      "cost": "一个人撑不住整个弦乐部的拖拍。",
+      "option": "用咏叹调的速度暗中配合指挥"
+     }
+    ],
+    "pressure": "交出去就卷进乐团内斗，不交又眼看着指挥被人逼宫。",
+    "trigger": "她录下了首席小提琴鼓动拖拍的话，录音还在她的手机里。"
+   },
+   "tags": [
+    "workplace",
+    "intimate"
+   ],
+   "voices": {
+    "inner": "我手里的东西能救她，也能让我在这一行再也唱不下去。",
+    "surface": "亲爱的，别皱眉，皱眉会让高音发紧。"
+   }
+  },
+  {
+   "adult_context": "年满二十八岁、在柏林读完舞台设计硕士的职业灯光设计师。",
+   "age_range": [
+    28,
     32
    ],
    "appearance_options": [
-    "一身深灰的工装，袖子卷到手肘，小臂上沾着液压油，腰间挂着一串扳手和一只防爆头灯。",
-    "工装外套展开罩在指挥家头顶挡住滴落的热油，衬衫被汗和油雾浸透，肩背顶着井壁的工字钢。"
+    "一身黑工装，耳后夹着铅笔，脖子上挂着对讲机，眼睛在暗处亮得惊人。",
+    "坐在追光台后的高脚凳上，袖子卷到手肘，指尖沾着彩色胶片的碎屑。"
    ],
    "decision": {
     "avoids": [
-     "拿安全当儿戏的人"
+     "吵闹的场合",
+     "被当成工具人"
     ],
-    "contrast": "在台下话少得像一台机器，修起东西来一声不吭；可每次指挥家在台上落下最后一拍，机械师都会在底下轻轻鼓一下掌。",
-    "core_value": "机器不会说谎：哪里卡住了，就从哪里撬开。",
+    "contrast": "人前沉默得像影子；只在灯下，会笑着说出很长的一段话。",
+    "core_value": "光不说话，可光记得每个人站在哪里。",
     "goal_options": [
-     "用肩背顶住井壁，给指挥家腾出发力的地方",
-     "把全身重量压在指挥棒上"
+     "让指挥在终曲站进最好的那束光里",
+     "放下柏林那段旧事",
+     "遇见一个能在灯下看见自己的人"
     ],
     "never": [
-     "让指挥家一个人留在底坑"
+     "拿灯光故意让人出丑"
     ],
     "prefers": [
-     "守时的人"
+     "懂光影的人",
+     "不打探过去的人"
     ],
     "pressure_responses": {
-     "breaking": "手臂抖得厉害也不松，跟着指挥家的拍子压到最后一下。",
-     "high": "肩背顶着工字钢，双手压在指挥家的手上，和指挥家一起压。",
-     "low": "一把将指挥家护到井壁边，先用外套挡住滴下来的热油。",
-     "mid": "把手套摘下来套在指挥家手上，免得棒身打滑。"
+     "breaking": "摘下对讲机离开控制台。",
+     "high": "关掉追光，让整个舞台陷入半明半暗。",
+     "low": "一句话不说，把光位又改了一遍。",
+     "mid": "提醒人别站在暗处。"
     },
-    "relationship_stance": "排练时总站在侧台的阴影里不出声，散场后最后一个关灯，关灯前会把指挥台上的总谱合好、压上一块松香。",
-    "withdrawal": "确认乐池落底、人都出来了，才靠着井壁坐下，用衣角擦掉指挥家脸上的油污。"
+    "relationship_stance": "话少，可一旦信了谁，会把最好的光留给对方。",
+    "withdrawal": "坐在顶层灯桥上，一个人看空舞台。"
    },
-   "gender": "male",
-   "gender_reason": "管升降乐池与吊杆的舞台机械师，按原稿写作男性。",
-   "id": "stage_machinist",
+   "gender": "any",
+   "gender_reason": "灯光设计师的性别由开局决定。",
+   "id": "stage_designer_he",
    "identity": {
-    "authority": "乐池什么时候升、吊杆什么时候降，舞台机械师说了算。",
-    "exposure": "工装外套罩在指挥家头上，汗湿的衬衫贴着指挥家的后背，两人在底坑里贴得严丝合缝。",
-    "hidden": "工具柜的门背后贴着一张首演海报，海报上指挥家的名字被人用指尖摸得有点褪色。",
+    "authority": "握着主舞台转台的速度、开幕追光的落点和终场幕布的启闭。",
+    "exposure": "当年在柏林求学时和指挥有过一段没公开的感情，至今没人知道。",
+    "hidden": "{npc.ta}一直在暗处用光护着一个人，从没说出口。",
     "limits": [
-     "个子高，在两平米的底坑里施展不开",
-     "手边没有能撬动卸荷阀的撬棍"
+     "灯光要配合指挥的节拍",
+     "改光位要过舞台监督"
     ],
     "obligations": [
-     "护住指挥家不被热油烫伤",
-     "让乐池平稳落底"
+     "让每一束光都落在该落的地方",
+     "不让舞台出事"
     ],
     "resources": [
-     "一件厚实的工装外套",
-     "一副聚氨酯手套",
-     "一只防爆头灯"
+     "整个剧院的灯光控制台",
+     "一本写满光位的笔记"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "指挥家在深井里还能把拍子数得那么稳的那份定力",
-     "指挥家每晚落下最后一个手势前，总会往乐池底下看一眼"
+     "对方站在灯下也不躲",
+     "能安静陪着看光"
     ],
     "boundaries": [
-     "指挥家没开口就不越一步",
-     "人前不让指挥家难做"
+     "对讲机响了就停"
     ],
     "desire_range": [
      2,
      4
     ],
-    "desired_position": "休息室钢琴边从身后抱着指挥家的近身位",
+    "desired_position": "追光台后能看清整个舞台的那张高脚凳旁",
     "dislikes": [
-     "当众起哄",
-     "背后嚼舌根"
+     "被追问旧事",
+     "演出事故"
     ],
-    "expression": "替指挥家解开领结时手停了很久，最后只说了一句：你每晚落下最后一拍之前，都往底下看一眼。我一直知道。",
+    "expression": "把追光调到最柔的一档打在人脸上，低声说：别动，我想记住这个光位。",
     "likes": [
-     "指挥家难得叫一次自己的名字",
-     "被指挥家用指挥棒轻轻点一下胸口"
+     "热茶和彩色胶片",
+     "空舞台上的一束追光"
     ],
     "preconditions": [
-     "乐池落底、两人都安全清醒之后",
-     "指挥家点了头，出于本心"
+     "双方清醒自愿",
+     "控制台交给了副手"
     ],
     "self_control_range": [
-     2,
-     4
+     3,
+     5
     ]
    },
-   "public_role": "歌剧院的舞台机械师",
+   "public_role": "歌剧院先锋舞美灯光总设计",
    "schedule": [
     {
-     "from": 480,
-     "location_id": "loc_tilted_pit_floor",
-     "to": 1020
+     "from": 0,
+     "location_id": "loc_stage_wing_grand_curtain",
+     "to": 600
     },
     {
-     "from": 1080,
-     "location_id": "loc_rehearsal_hall",
+     "from": 600,
+     "location_id": "loc_stage_wing_grand_curtain",
+     "to": 1140
+    },
+    {
+     "from": 1140,
+     "location_id": "loc_stage_wing_grand_curtain",
      "to": 1320
+    },
+    {
+     "from": 1320,
+     "location_id": "loc_rehearsal_hall",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "肩背会被工字钢硌伤，手臂可能脱力",
-      "option": "用肩背顶住井壁，和指挥家合力压下指挥棒"
+      "cost": "被总监说成喧宾夺主。",
+      "option": "按自己心里的设计打完终曲的光"
      },
      {
-      "cost": "井壁上全是滑腻的液压油",
-      "option": "顺着井壁爬上去求救"
+      "cost": "从此和指挥再无话可说。",
+      "option": "照总监的商业版本改光位"
      }
     ],
-    "pressure": "乐池越来越斜，承重梁越压越响，必须在梁塌下来之前让乐池落底。",
-    "trigger": "总彩排散场后，舞台机械师正在乐池底坑里检修液压管路，爆管时被困在了底下。"
+    "pressure": "光打得太好会被人看出偏爱，打得平淡又对不起那份手稿。",
+    "trigger": "首演前要定下终曲的光位，指挥今晚第一次走进彩排的追光。"
    },
    "tags": [
     "workplace",
-    "disaster",
     "intimate"
    ],
    "voices": {
-    "inner": "指挥家整个人靠在我怀里，热油还在往下滴……别分神。五年了，我在底下等过无数次最后一拍，今晚我得把打拍子的人送上去。",
-    "surface": "指挥别动，外套底下待着！棒尾别进阀缝，我压着你的手——你打拍子，我跟。"
+    "inner": "我替指挥打了三年的光，却没站进过那束光里。",
+    "surface": "第三乐章的光已经校好了，放心往前走。"
    }
   },
   {
-   "adult_context": "三十岁，这部新制作的女主角，嗓子金贵得连空调都要单独调温度。",
+   "adult_context": "年满五十八岁、在剧院干了四十年的职业舞台监督。",
    "age_range": [
-    26,
-    36
+    58,
+    63
    ],
    "appearance_options": [
-    "一身丝绒的排练长裙，脖子上围着一条厚厚的羊绒围巾，手里端着一杯蜂蜜水。",
-    "站在排练厅中央，一边开嗓一边斜眼看着指挥台。"
+    "一件洗得发白的蓝布外套，腰间挂一大串铜钥匙，花白头发，眼神温厚。",
+    "坐在后台休息室的藤椅上，捧着一只搪瓷杯，脚边放着一盒桂花糕。"
    ],
    "decision": {
     "avoids": [
-     "女高音主演最烦临阵推诿"
+     "拿剧院当跳板的人",
+     "当众吵架"
     ],
-    "contrast": "在后台娇气得要命，出了事却第一个把自己的羊绒围巾扔下去给底下的人捂口鼻。",
-    "core_value": "台上只有一个主角，可乐池里那根指挥棒比主角还要紧。",
+    "contrast": "人前古道热肠、笑口常开；独处时会盯着墙上的老海报很久不说话。",
+    "core_value": "大幕准时拉开，就是对观众最大的尊重。",
     "goal_options": [
-     "先把人救出来",
-     "女高音主演再追究是谁的错"
+     "在关键时刻平息风波",
+     "替年轻人守住这座剧院",
+     "退休前看一场真正的好戏"
     ],
     "never": [
-     "女高音主演不会丢下困在里面的人"
+     "让剧院在首演当晚出丑"
     ],
     "prefers": [
-     "女高音主演看重说到做到的人"
+     "守规矩的人",
+     "爱这座剧院的人"
     ],
     "pressure_responses": {
-     "breaking": "女高音主演嗓子喊哑了也不肯走",
-     "high": "女高音主演顶着危险往里递东西",
-     "low": "女高音主演先稳住身边的人",
-     "mid": "女高音主演四处找能用的工具"
+     "breaking": "按响大幕铃，宣布今晚收工。",
+     "high": "把旧报纸摊到桌面上。",
+     "low": "笑呵呵地递上一块桂花糕。",
+     "mid": "敲着钥匙串提醒各方守规矩。"
     },
-    "relationship_stance": "跟指挥家为第二幕的速度吵了一整周，可首演前一晚，是女高音第一个跑到乐池边喊指挥家的名字。",
-    "withdrawal": "事情过去后，女高音主演一个人躲开抽根烟"
+    "relationship_stance": "把剧院里的人都当自家孩子看，可从不偏袒谁。",
+    "withdrawal": "回到后台休息室，一个人擦铜钥匙。"
    },
-   "gender": "female",
-   "gender_reason": "按设定是剧中的女主角，写作女性。",
-   "id": "prima_soprano",
+   "gender": "any",
+   "gender_reason": "老舞台监督的性别由开局决定。",
+   "id": "stage_manager",
    "identity": {
-    "authority": "第二幕的咏叹调唱多快，女高音能跟指挥家讨价还价。",
-    "exposure": "女高音主演忙起来顾不上衣着体面",
-    "hidden": "做女高音主演这些年，有件事没对旁人说过",
+    "authority": "握着后台所有人的候场出入令、大幕启闭铃和剧院的总钥匙串。",
+    "exposure": "手里藏着首席小提琴年轻时剽窃恩师手稿的旧报纸。",
+    "hidden": "最怕自己退休那天，剧院已经变得认不出来了。",
     "limits": [
-     "女高音主演不在死角里，只能在外面使劲"
+     "只管后台，不碰艺术决定",
+     "快退休了，说话分量在减"
     ],
     "obligations": [
-     "守住女高音主演手上的那一摊事"
+     "让每场演出准点开幕",
+     "守住剧院的名声"
     ],
     "resources": [
-     "一副被誉为剧院之宝的嗓子",
-     "女高音主演随身的一盏提灯"
+     "剧院总钥匙串",
+     "一张三十年前的旧报纸",
+     "后台上下的人情"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "女高音主演欣赏做事干脆利落的人",
-     "女高音主演记得危急时回头搭把手的人"
+     "对方肯听老故事",
+     "在后台搭把手"
     ],
     "boundaries": [
-     "对方迟疑，女高音主演就停"
+     "不牵扯后台的事"
     ],
     "desire_range": [
      1,
-     3
+     2
     ],
-    "desired_position": "和女高音主演并肩站着",
+    "desired_position": "后台藤椅边，能陪人说说老剧院的位置",
     "dislikes": [
-     "女高音主演讨厌轻浮的手"
+     "浮躁的年轻人",
+     "坏了规矩"
     ],
-    "expression": "女高音主演话不多，递东西时指尖会多停一下",
+    "expression": "把一块还温热的桂花糕塞进人手里：吃了再忙，大幕不会跑。",
     "likes": [
-     "女高音主演收工后的一杯热饮"
+     "刚出炉的桂花糕",
+     "空舞台上的工作灯"
     ],
     "preconditions": [
-     "女高音主演要等危局过去、双方清醒自愿"
+     "双方清醒，私下相处"
     ],
     "self_control_range": [
-     3,
+     4,
      5
     ]
    },
-   "public_role": "女高音主演",
+   "public_role": "剧院四十年工龄老舞台监督",
    "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_stage_wing_grand_curtain",
+     "to": 600
+    },
     {
      "from": 600,
      "location_id": "loc_rehearsal_hall",
-     "to": 1200
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "女高音主演未必赶得上",
-      "option": "女高音主演在外面调度接应"
-     },
-     {
-      "cost": "可能把女高音主演自己也搭进去",
-      "option": "女高音主演硬闯进去"
-     }
-    ],
-    "pressure": "里面的人出不来，女高音主演进不去",
-    "trigger": "警报传到女高音主演那里"
-   },
-   "tags": [
-    "workplace"
-   ],
-   "voices": {
-    "inner": "吵了一整周……要是首演那晚指挥台上换了人，这咏叹调我不唱了。",
-    "surface": "指挥！你可别出事！第二幕的速度我还没跟你吵完呢！"
-   }
-  },
-  {
-   "adult_context": "六十岁，在这座剧院当了三十年舞台监督，每一块台板响一声都知道是哪里松了。",
-   "age_range": [
-    55,
-    68
-   ],
-   "appearance_options": [
-    "一身黑衣，脖子上挂着对讲机和一支手电，口袋里插满了铅笔。",
-    "坐在侧台的监督台后面，盯着一排信号灯，手指在按钮上悬着。"
-   ],
-   "decision": {
-    "avoids": [
-     "老舞台监督最烦临阵推诿"
-    ],
-    "contrast": "在演出时严得像个暴君，散场后却会给全组的人买宵夜。",
-    "core_value": "台上出什么事都能救，就是不能慌。",
-    "goal_options": [
-     "先把人救出来",
-     "老舞台监督再追究是谁的错"
-    ],
-    "never": [
-     "老舞台监督不会丢下困在里面的人"
-    ],
-    "prefers": [
-     "老舞台监督看重说到做到的人"
-    ],
-    "pressure_responses": {
-     "breaking": "老舞台监督嗓子喊哑了也不肯走",
-     "high": "老舞台监督顶着危险往里递东西",
-     "low": "老舞台监督先稳住身边的人",
-     "mid": "老舞台监督四处找能用的工具"
+     "to": 1140
     },
-    "relationship_stance": "看着舞台机械师从二十出头的新手长成主管，私下早把机械师当自己的接班人。",
-    "withdrawal": "事情过去后，老舞台监督一个人躲开抽根烟"
-   },
-   "gender": "any",
-   "gender_reason": "老舞台监督这个位置不限性别。",
-   "id": "stage_manager",
-   "identity": {
-    "authority": "台上的灯什么时候亮、幕什么时候落，舞台监督说了算。",
-    "exposure": "老舞台监督忙起来顾不上衣着体面",
-    "hidden": "做老舞台监督这些年，有件事没对旁人说过",
-    "limits": [
-     "老舞台监督不在死角里，只能在外面使劲"
-    ],
-    "obligations": [
-     "守住老舞台监督手上的那一摊事"
-    ],
-    "resources": [
-     "一本三十年的演出提示本",
-     "老舞台监督随身的一盏提灯"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "老舞台监督欣赏做事干脆利落的人",
-     "老舞台监督记得危急时回头搭把手的人"
-    ],
-    "boundaries": [
-     "对方迟疑，老舞台监督就停"
-    ],
-    "desire_range": [
-     1,
-     3
-    ],
-    "desired_position": "和老舞台监督并肩站着",
-    "dislikes": [
-     "老舞台监督讨厌轻浮的手"
-    ],
-    "expression": "老舞台监督话不多，递东西时指尖会多停一下",
-    "likes": [
-     "老舞台监督收工后的一杯热饮"
-    ],
-    "preconditions": [
-     "老舞台监督要等危局过去、双方清醒自愿"
-    ],
-    "self_control_range": [
-     3,
-     5
-    ]
-   },
-   "public_role": "老舞台监督",
-   "schedule": [
     {
-     "from": 480,
-     "location_id": "loc_rehearsal_hall",
+     "from": 1140,
+     "location_id": "loc_stage_wing_grand_curtain",
      "to": 1320
+    },
+    {
+     "from": 1320,
+     "location_id": "loc_stage_wing_grand_curtain",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "老舞台监督未必赶得上",
-      "option": "老舞台监督在外面调度接应"
+      "cost": "从此和老同事反目。",
+      "option": "私下把旧报纸给首席小提琴看，劝首席收手"
      },
      {
-      "cost": "可能把老舞台监督自己也搭进去",
-      "option": "老舞台监督硬闯进去"
+      "cost": "眼看着年轻指挥一个人扛。",
+      "option": "把旧报纸锁回档案室，装作不知道"
      }
     ],
-    "pressure": "里面的人出不来，老舞台监督进不去",
-    "trigger": "警报传到老舞台监督那里"
+    "pressure": "拿出来会毁掉一个老同事，不拿出来又眼看着剧院内讧。",
+    "trigger": "首席小提琴逼宫换指挥，手里那张旧报纸到了该不该拿出来的时候。"
    },
    "tags": [
     "workplace"
    ],
    "voices": {
-    "inner": "三十年了，这座剧院的台底下没埋过人……今晚，老家伙不许这台底下开这个头。",
-    "surface": "底下的听着！我把上面的承重梁用钢索吊住了，你们一放油就往外爬！"
+    "inner": "这张旧报纸我压了三十年，再不用，就要带进棺材了。",
+    "surface": "孩子，后台的事有我，你只管把戏演好。"
    }
   }
  ],
  "clock_start": {
-  "label": "演出季开幕周，十月",
-  "minute": 10
+  "label": "新歌剧首演前三天的带妆彩排日",
+  "minute": 1170
  },
  "clock_style": "hm",
  "content_tags": [
   "intimate",
-  "bodily_harm",
   "workplace_power",
-  "crime",
   "workplace",
+  "bodily_harm",
   "disaster"
  ],
  "custom": false,
  "customs": [
-  "首席交响乐指挥家特制航空钛合金专业指挥棒，尾塞嵌有实心加重超硬钨钢配重块，抗剪切力强，可作应急防暴破拆撬杠。",
-  "国家歌剧院重型乐池设有纯机械重力防坠偏心棘爪与双向常闭排油安全阀，在液压爆裂时自动切断锁死。",
-  "舞台深井内充满高压液压油雾，视线模糊且金属构件极其湿滑，排障时需借助衣物擦拭防止脱手。",
-  "乐池底部设有重力缓冲弹簧支座，只要安全阀开启平稳排油，平台即可借重力平稳滑降触底。"
+  "乐手用琴弓轻敲谱架向指挥致意，敲得越轻越真心。",
+  "首演前三天，指挥会把一页手抄总谱送给最信任的人保管。",
+  "后台老规矩：谁在侧幕替指挥整理领结，谁就是指挥今晚的定心人。",
+  "散场后琴房里留一盏台灯，是告诉对方“我还在，你可以来”。"
  ],
  "daily_activities": [
   {
    "beats": [
-    "排练厅里百人乐团坐得满满当当，指挥家走上指挥台，抬起手，整个厅一下子安静下来。",
-    "合到第二幕，指挥家忽然停下，目光越过乐团落在后排：后面那位，站进来一点，听得清楚些。"
+    "九尺斯坦威前，一人坐在琴凳上，一人俯身从后面扶住对方的手腕",
+    "掌心覆在指背上纠正触键的力度，发丝擦过脸颊"
    ],
-   "duration_minutes": 60,
+   "duration_minutes": 30,
    "hook_ids": [],
-   "id": "act_dress_rehearsal",
+   "id": "act_rehearsal_arpeggio_fix",
    "location_ids": [
     "loc_rehearsal_hall"
    ],
-   "start_minute": 600,
+   "start_minute": null,
    "tags": [
-    "workplace"
+    "intimate"
    ],
-   "title": "首演前的总彩排"
+   "title": "琴房里纠正琶音"
   },
   {
    "beats": [
-    "双簧管吹出一声长长的A，满厅的琴弦跟着一点点对准，指挥家站在台边闭着眼听。",
-    "调音声停下，指挥家睁开眼，正好对上人的视线，嘴角弯了一下：来了？"
+    "空下来的乐池里，你从身后握住女指挥执棒的右手",
+    "在半空划出一道四四拍的弧线，两人的呼吸落在同一页总谱上"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [
+    "hook_shen_score_fourth",
+    "hook_shen_wrist_rub",
+    "hook_shen_tie_wing"
+   ],
+   "id": "act_pit_baton_arc",
+   "location_ids": [
+    "loc_orchestra_pit_podium"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate",
+    "workplace"
+   ],
+   "title": "指挥台前手把手划拍"
+  },
+  {
+   "beats": [
+    "散场后并肩窝在皮沙发里，共用一只薄瓷杯分喝温热的伯爵茶",
+    "羊绒毯下，十指悄悄扣在一起"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_dressing_earl_grey",
+   "location_ids": [
+    "loc_maestra_dressing_room"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "休息室分一壶伯爵茶"
+  },
+  {
+   "beats": [
+    "上台前站在女指挥面前，替对方系好白色真丝领结",
+    "指尖碰到微烫的耳垂，对方没有躲"
+   ],
+   "duration_minutes": 10,
+   "hook_ids": [
+    "hook_shen_score_fourth",
+    "hook_shen_wrist_rub",
+    "hook_shen_tie_wing"
+   ],
+   "id": "act_wing_white_tie",
+   "location_ids": [
+    "loc_stage_wing_grand_curtain"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "侧幕替人系领结"
+  },
+  {
+   "beats": [
+    "昏黄台灯下两颗脑袋凑在一起，逐行核对总谱上铅笔改过的铜管标记",
+    "肩膀抵着肩膀，谁也没出声"
+   ],
+   "duration_minutes": 40,
+   "hook_ids": [],
+   "id": "act_lamp_score_check",
+   "location_ids": [
+    "loc_maestra_dressing_room"
+   ],
+   "start_minute": null,
+   "tags": [
+    "workplace",
+    "intimate"
+   ],
+   "title": "台灯下校对配器手稿"
+  },
+  {
+   "beats": [
+    "空荡荡的大厅后排，两人并排陷进红丝绒座椅，听台上女高音试唱",
+    "暗处的扶手上，两只手碰到一起又没有分开"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_back_row_listening",
+   "location_ids": [
+    "loc_grand_auditorium_orchestra"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "观众席后排听试音"
+  },
+  {
+   "beats": [
+    "女指挥把一页被汗水洇花的总谱摊开，递来一支削好的铅笔",
+    "你一笔一笔誊写，对方在旁边轻声哼着每个声部"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [
+    "hook_shen_score_fourth",
+    "hook_shen_wrist_rub",
+    "hook_shen_tie_wing"
+   ],
+   "id": "act_pencil_page_copy",
+   "location_ids": [
+    "loc_maestra_dressing_room"
+   ],
+   "start_minute": null,
+   "tags": [
+    "workplace",
+    "intimate"
+   ],
+   "title": "替人誊抄一页总谱"
+  },
+  {
+   "beats": [
+    "彩排间隙，拉过对方举得发麻的右前臂",
+    "一寸寸推开紧绷的筋膜，引来一声轻轻的叹息"
+   ],
+   "duration_minutes": 15,
+   "hook_ids": [],
+   "id": "act_pit_wrist_massage",
+   "location_ids": [
+    "loc_orchestra_pit_podium"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "乐池台阶边揉手腕"
+  },
+  {
+   "beats": [
+    "躲开后台的人声，两人并肩坐在侧幕的道具箱上",
+    "追光台留着一束暖光，照着两人膝头的谱夹"
    ],
    "duration_minutes": 20,
    "hook_ids": [],
-   "id": "act_tuning_a",
+   "id": "act_wing_spotlight_rest",
    "location_ids": [
-    "loc_rehearsal_hall"
+    "loc_stage_wing_grand_curtain"
    ],
-   "start_minute": 540,
-   "tags": [
-    "workplace"
-   ],
-   "title": "乐团调音时的那一声A"
-  },
-  {
-   "beats": [
-    "总彩排散了，观众席只剩一盏工作灯，指挥家坐在第一排正中，脱了高跟鞋，把脚搭在前面的椅背上。",
-    "指挥家拍了拍旁边的座位：坐。三天后这里会坐满两千人，现在只有我们两个。"
-   ],
-   "duration_minutes": 40,
-   "hook_ids": [],
-   "id": "act_empty_auditorium",
-   "location_ids": [
-    "loc_rehearsal_hall"
-   ],
-   "start_minute": 1260,
-   "tags": [
-    "workplace"
-   ],
-   "title": "散场后空荡荡的观众席"
-  },
-  {
-   "beats": [
-    "深夜的剧院里，乐池缓缓升起又落下，指挥家站在台边，对着底下抬起手。",
-    "指挥家的手落下的那一刻，乐池稳稳停住，底下传来一声轻轻的掌声，指挥家低头笑了。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_pit_test_run",
-   "location_ids": [
-    "loc_rehearsal_hall"
-   ],
-   "start_minute": 1320,
-   "tags": [
-    "workplace"
-   ],
-   "title": "散场后试运行乐池"
-  },
-  {
-   "beats": [
-    "休息室里只开一盏镜前灯，指挥家坐在老立式钢琴前，随手弹起第二幕的那段咏叹调。",
-    "弹到一半，指挥家往旁边挪了挪：坐过来。左手这段太难，你替我按住低音。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_piano_bench",
-   "location_ids": [
-    "loc_maestra_dressing_room"
-   ],
-   "start_minute": 1100,
-   "tags": [
-    "workplace"
-   ],
-   "title": "休息室里听指挥家弹一段"
-  },
-  {
-   "beats": [
-    "指挥家盘腿坐在沙发上，总谱摊了一膝盖，铅笔咬在嘴里，衬衫的袖子卷到手肘。",
-    "指挥家把一页总谱递过来，指着一个小节：这里我改了速度，你听我唱一遍，告诉我对不对。"
-   ],
-   "duration_minutes": 40,
-   "hook_ids": [],
-   "id": "act_score_marks",
-   "location_ids": [
-    "loc_maestra_dressing_room"
-   ],
-   "start_minute": 1200,
-   "tags": [
-    "workplace"
-   ],
-   "title": "镜前灯下改总谱"
-  },
-  {
-   "beats": [
-    "乐池落底、人都爬出深井、消防队清完场之后，指挥家挨个确认完每个人的名字才回到休息室，燕尾服上全是油污，头发散了一半。",
-    "镜前灯下，指挥家仰起脸，让人一点点解开真丝领结，再解开油雾浸透的白衬衫，温热的毛巾贴上颈侧那块烫红的地方时，指挥家闭着眼轻轻吸了口气。",
-    "指挥家握住人的手腕，把那只手按在自己心口：听见了吗，拍子乱了。……你愿意的话，今晚别走。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_dressing_room_bow_tie",
-   "location_ids": [
-    "loc_maestra_dressing_room"
-   ],
-   "start_minute": 1430,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "休息室里替指挥家解开领结"
-  },
-  {
-   "beats": [
-    "首演当天的清晨，休息室的沙发窄窄的，指挥家在人怀里醒来，燕尾服还挂在衣架上，熨得笔挺。",
-    "指挥家没有动，手指在人的手背上轻轻打着拍子，小声说：今晚两千人看着我……可我只想知道，你在底下等不等最后一拍。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_premiere_morning",
-   "location_ids": [
-    "loc_maestra_dressing_room"
-   ],
-   "start_minute": 450,
-   "tags": [
-    "intimate"
-   ],
-   "title": "首演那天在休息室里醒来"
-  },
-  {
-   "beats": [
-    "休息室的门锁拧上了，指挥家拿起一根练习用的指挥棒，用棒尖轻轻点着人的胸口，眼里带着笑：台上我说了算，台下……你想不想让我也说了算？",
-    "指挥家先把规矩讲清楚：说“休止”就停，你点头我才开始。得到回答后，棒尖沿着锁骨慢慢往下划，指挥家贴着人的耳朵轻声数：一、二、三。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_baton_tempo",
-   "location_ids": [
-    "loc_maestra_dressing_room"
-   ],
-   "start_minute": 1380,
-   "tags": [
-    "intimate"
-   ],
-   "title": "指挥家用指挥棒定下的节拍"
-  },
-  {
-   "beats": [
-    "一段四手联弹弹到最后一个和弦，两人的手指压在同一组琴键上，谁都没先松开，余音在休息室里慢慢散了。",
-    "指挥家转过脸问了一句“可以吗”，得到回答后便吻了上来，琴凳被碰得往后一滑，指挥家顺势坐上了合起的琴盖，把人拉近。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_piano_lid_kiss",
-   "location_ids": [
-    "loc_maestra_dressing_room"
-   ],
-   "start_minute": 1150,
-   "tags": [
-    "intimate"
-   ],
-   "title": "钢琴边的吻"
+   "title": "侧幕追光下歇口气"
   }
  ],
  "default_npc_gender_mix": {
@@ -1300,7 +1622,7 @@
   "nonbinary": 0.0
  },
  "default_person": "second",
- "era": "近现代国家级宏伟歌剧院与重型机械化升降舞台时代",
+ "era": "当代百年国家大剧院的新制作演出季",
  "extends": null,
  "forbidden_terms": [
   "软色情",
@@ -1314,294 +1636,250 @@
  ],
  "hooks": [
   {
-   "id": "hk_uv_warning_thunder",
-   "kind": "approach",
+   "id": "hook_shen_score_fourth",
+   "kind": "observe",
    "location_ids": [
-    "loc_tilted_pit_floor"
+    "loc_orchestra_pit_podium"
    ],
    "slot": "maestra_shen",
-   "text": "{maestra_shen.name}指挥燕尾服沾满黑色机油，面庞因燥热泛着红晕，果断将实心钨钢指挥棒递到同伴掌心。"
+   "text": "乐池主指挥席的黑色谱架前，首席女指挥{npc.name}单手按住翻开的总谱第四乐章，长发微挽，白木指挥棒的尖端稳稳悬在半空。"
   },
   {
-   "id": "hk_crypt_uv_roaring_rush",
+   "id": "hook_shen_wrist_rub",
    "kind": "approach",
    "location_ids": [
-    "loc_tilted_pit_floor"
+    "loc_maestra_dressing_room"
    ],
    "slot": "maestra_shen",
-   "text": "{maestra_shen.name}半蹲在倾斜十五度的工字钢底梁上，侧身靠着同伴胸膛，借着头灯微光摸清咬死的安全阀销。"
+   "text": "{npc.name}关上休息室的门，把发颤的右手伸到你面前，声音很轻：别告诉任何人，帮我揉一揉。"
   },
   {
-   "id": "hk_crypt_breaker_groan_deadlock",
+   "id": "hook_shen_tie_wing",
    "kind": "approach",
    "location_ids": [
-    "loc_pawl_relief_valve"
-   ],
-   "slot": "stage_machinist",
-   "text": "{stage_machinist.name}展开厚实工装外套紧紧裹住指挥家削瘦的香肩，为指挥家阻挡上方滴落的滚烫液压油滴。"
-  },
-  {
-   "id": "hk_breaker_deformation_scrape",
-   "kind": "approach",
-   "location_ids": [
-    "loc_pawl_relief_valve"
-   ],
-   "slot": "stage_machinist",
-   "text": "{stage_machinist.name}用聚氨酯手套紧紧握住指挥家滑腻微凉的十指，帮助指挥家牢固锁定指挥棒握持受力点。"
-  },
-  {
-   "id": "hk_tight_breath_ear_brush",
-   "kind": "approach",
-   "location_ids": [
-    "loc_pawl_relief_valve"
+    "loc_stage_wing_grand_curtain"
    ],
    "slot": "maestra_shen",
-   "text": "{maestra_shen.name}微喘的热气拂过同伴颈侧，面庞近在咫尺，凤眸中闪烁着毫无保留的信赖。"
+   "text": "侧幕的阴影里，{npc.name}把一条白色真丝领结塞进你手里，仰起下巴：打紧一点，今晚不能散。"
   },
   {
-   "id": "hk_lace_corset_heat_exchange",
-   "kind": "approach",
+   "id": "hook_guy_bow_knee",
+   "kind": "observe",
    "location_ids": [
-    "loc_pawl_relief_valve"
+    "loc_orchestra_pit_podium"
    ],
-   "slot": "maestra_shen",
-   "text": "{maestra_shen.name}高定长裙紧紧贴在同伴大腿上，紧咬贝齿，冷静报出交响乐节拍般精准的下压倒数口令。"
+   "slot": "concertmaster",
+   "text": "乐池第一小提琴首席席位上，{npc.name}将琴弓横在膝头，微闭双眼，对台上投来的严厉起拍目光视若无睹。"
   },
   {
-   "id": "hk_scepter_flange_notch_align",
-   "kind": "approach",
-   "location_ids": [
-    "loc_pawl_relief_valve"
-   ],
-   "slot": "maestra_shen",
-   "text": "{maestra_shen.name}展现出首席指挥家的恢弘气魄，根据头顶木梁断裂声精确判断时间，示意立即发动双人体重下压。"
-  },
-  {
-   "id": "hk_rubber_hammer_chock_in",
-   "kind": "approach",
-   "location_ids": [
-    "loc_pawl_relief_valve"
-   ],
-   "slot": "stage_machinist",
-   "text": "{stage_machinist.name}在乐池再次下沉晃荡的瞬间，将指挥家紧紧搂在怀中，两副年轻身躯在狭窄底坑内严丝合缝相护。"
-  },
-  {
-   "id": "hk_satin_ribbon_bind_grip",
-   "kind": "approach",
-   "location_ids": [
-    "loc_pawl_relief_valve"
-   ],
-   "slot": "maestra_shen",
-   "text": "{maestra_shen.name}双手覆在同伴手背上，将全身重量毫无保留地压向钨钢棒柄，两颗心在深井死角同频狂跳。"
-  },
-  {
-   "id": "hk_atrium_air_pressure_drop",
-   "kind": "approach",
-   "location_ids": [
-    "loc_tilted_pit_floor"
-   ],
-   "slot": "maestra_shen",
-   "text": "{maestra_shen.name}细辨液压旁通管路气体排出的嗤嗤轻响，在卡销松脱的瞬间果断呼喊同伴稳住重心。"
-  },
-  {
-   "id": "hk_synchronized_grunt_heave",
-   "kind": "approach",
-   "location_ids": [
-    "loc_pawl_relief_valve"
-   ],
-   "slot": "stage_machinist",
-   "text": "{stage_machinist.name}与指挥家一同沉腰发力，以身躯为重锤轰入撬杠末端，死锁顶销咔哒一声崩脱折断。"
-  },
-  {
-   "id": "hk_spring_latch_pop_rebound",
-   "kind": "approach",
-   "location_ids": [
-    "loc_pawl_relief_valve"
-   ],
-   "slot": "maestra_shen",
-   "text": "{maestra_shen.name}在乐池平稳下降的失重中重心微晃，顺势跌在同伴怀里，紧搂同伴后颈顺利抵消颠簸冲击。"
-  },
-  {
-   "id": "hook_shen_stand_closer",
+   "id": "hook_guy_rosin_offer",
    "kind": "approach",
    "location_ids": [
     "loc_rehearsal_hall"
    ],
-   "slot": "maestra_shen",
-   "text": "{npc.name}在指挥台上停下，目光越过整个乐团落过来：后排那位，站近一点。这一段，我想让你听清楚。"
+   "slot": "concertmaster",
+   "text": "排练厅角落，{npc.name}把一块旧松香推到你面前，慢悠悠地说：坐下，听我拉一段，再告诉我谁的耳朵老了。"
   },
   {
-   "id": "hook_shen_empty_seats",
+   "id": "hook_zhuang_paris_contract",
+   "kind": "observe",
+   "location_ids": [
+    "loc_grand_auditorium_orchestra"
+   ],
+   "slot": "opera_director",
+   "text": "金色观众大厅第三排的阴影中，歌剧院{npc.name}翻看着一份全法文的巴黎商业演出合同，手指不耐烦地在扶手上轻轻叩击。"
+  },
+  {
+   "id": "hook_zhuang_box_tea",
+   "kind": "approach",
+   "location_ids": [
+    "loc_grand_auditorium_orchestra"
+   ],
+   "slot": "opera_director",
+   "text": "{npc.name}在贵宾包厢门口朝你招手，桌上已经倒好两杯热红茶：进来坐，今晚只有我们两个算得清这笔账。"
+  },
+  {
+   "id": "hook_anna_phone_purse",
+   "kind": "observe",
+   "location_ids": [
+    "loc_rehearsal_hall"
+   ],
+   "slot": "prima_soprano",
+   "text": "顶层红木独奏排练厅的转角处，首席女高音{npc.name}正把手机悄悄滑入晚礼服手包，门缝内传来老舞台监督翻动泛黄旧报纸的沙沙脆响。"
+  },
+  {
+   "id": "hook_anna_breath_mark",
+   "kind": "approach",
+   "location_ids": [
+    "loc_stage_wing_grand_curtain"
+   ],
+   "slot": "prima_soprano",
+   "text": "{npc.name}在侧幕拦住你，把第三幕分谱按在你胸前，眼尾一挑：替我标出换气点，标错一个，罚你听我唱一整遍。"
+  },
+  {
+   "id": "hook_anna_scarf_throat",
+   "kind": "approach",
+   "location_ids": [
+    "loc_maestra_dressing_room"
+   ],
+   "slot": "prima_soprano",
+   "text": "{npc.name}裹着丝巾靠在化妆间门边，嗓音有点哑，冲你晃了晃空杯子：帮我冲一杯蜂蜜水，要温的。"
+  },
+  {
+   "id": "hook_he_spotlight_test",
+   "kind": "approach",
+   "location_ids": [
+    "loc_stage_wing_grand_curtain"
+   ],
+   "slot": "stage_designer_he",
+   "text": "追光台后，{npc.name}朝你招手，把一束柔光打在你脚下：站进去，我想看看这个光位对不对。"
+  },
+  {
+   "id": "hook_he_gel_cut",
+   "kind": "approach",
+   "location_ids": [
+    "loc_stage_wing_grand_curtain"
+   ],
+   "slot": "stage_designer_he",
+   "text": "{npc.name}递给你一把剪刀和一张琥珀色胶片，低声说：帮我剪个圆，终曲那束光要用你剪的这一片。"
+  },
+  {
+   "id": "hook_mo_osmanthus",
+   "kind": "approach",
+   "location_ids": [
+    "loc_stage_wing_grand_curtain"
+   ],
+   "slot": "stage_manager",
+   "text": "{npc.name}从蓝布外套口袋里摸出一块用油纸包着的桂花糕，塞进你手里：先垫垫，今晚有得熬。"
+  },
+  {
+   "id": "hook_mo_keys_newspaper",
    "kind": "approach",
    "location_ids": [
     "loc_rehearsal_hall"
    ],
-   "slot": "maestra_shen",
-   "text": "{npc.name}坐在空荡荡的第一排，拍了拍旁边的座位：三天后这里会坐满。趁现在，陪我坐一会儿。"
-  },
-  {
-   "id": "hook_shen_bow_tie",
-   "kind": "approach",
-   "location_ids": [
-    "loc_maestra_dressing_room"
-   ],
-   "slot": "maestra_shen",
-   "text": "{npc.name}对着镜子扯了半天领结，回头对人抬了抬下巴：解不开。过来，替我。"
-  },
-  {
-   "id": "hook_shen_last_beat",
-   "kind": "approach",
-   "location_ids": [
-    "loc_rehearsal_hall",
-    "loc_maestra_dressing_room"
-   ],
-   "slot": "maestra_shen",
-   "text": "{npc.name}轻声问：每晚试运行乐池的时候，我落下最后一拍之前，你在底下看得见我吗？"
-  },
-  {
-   "id": "hook_machinist_poster",
-   "kind": "approach",
-   "location_ids": [
-    "loc_rehearsal_hall",
-    "loc_maestra_dressing_room"
-   ],
-   "slot": "stage_machinist",
-   "text": "{npc.name}从工具柜里取出一张首演海报，有点不好意思地递过来：能……替我在上面签个名吗？"
-  },
-  {
-   "id": "hook_machinist_applause",
-   "kind": "approach",
-   "location_ids": [
-    "loc_rehearsal_hall",
-    "loc_tilted_pit_floor"
-   ],
-   "slot": "stage_machinist",
-   "text": "{npc.name}从乐池底下探出头来：刚才最后那一拍，落得真好。我在底下，替你鼓过掌了。"
+   "slot": "stage_manager",
+   "text": "{npc.name}把排练厅的门掩上，钥匙串哗啦一响，从怀里掏出一张泛黄的旧报纸：有件事，我只想先给你一个人看。"
   }
  ],
  "id": "elegant_conductor_pit_hydraulic_stall",
  "locations": [
   {
    "affordances": [
-    "双手死死攀住剪刀撑工字钢横梁维系身体平衡",
-    "探身将钨钢指挥棒尾部直角卡头插入安全阀暗槽",
-    "仰望上方十米高空舞台木地板裂缝漏下的微弱观众厅光线"
+    "半壶温热的伯爵茶",
+    "皮沙发上的羊绒薄毯",
+    "先父的配器手稿",
+    "能反锁的门"
    ],
-   "detail": "位于乐池钢骨架下方不足两平米的狭窄底坑，平台整体倾斜十五度，液压爆管喷出的刺鼻油雾在头灯光束下弥漫，头顶传来木梁断裂的阵阵呻吟。",
+   "detail": "指挥专属的化妆休息室，一张能睡人的皮沙发、一盏昏黄台灯、一摞铅笔批注的总谱，门能从里面反锁。",
    "exits": [
-    "loc_pawl_relief_valve",
-    "loc_gravity_drain_lever"
+    "loc_stage_wing_grand_curtain"
    ],
-   "id": "loc_tilted_pit_floor",
-   "name": "液压乐池倾斜检修底坑",
-   "pressure_modifiers": {
-    "p_oil_mist_spray": "爆开的油管还在往下滴滚烫的液压油，空气里全是刺鼻的油雾。",
-    "p_pit_lurch": "乐池每往下一顿，底坑里的人就被甩得撞在一起。"
-   },
+   "id": "loc_maestra_dressing_room",
+   "name": "首席指挥休息室",
+   "pressure_modifiers": {},
    "privacy": "private",
    "tags": [
-    "workplace",
-    "disaster",
     "intimate"
    ],
-   "visibility": "防爆头灯的光在油雾里晕成一团，能看清对方脸上的油污和汗珠，再远就是漆黑的井壁。",
+   "visibility": "门一关，走廊只听得见隐约的调音声。",
    "witnesses": []
   },
   {
    "affordances": [
-    "用手套指尖摸清被油污浸润的偏心卡销倒角",
-    "两人四手握紧钛合金棒身向下猛力施加杠杆力矩"
+    "九尺斯坦威钢琴",
+    "丝绒窗帘后的储藏间",
+    "泛黄的旧报纸",
+    "双人琴凳"
    ],
-   "detail": "紧贴乐池承重钢梁侧面的重型铸钢安全阀块，由于偏心剧烈咬死，圆柱形应急手动泄荷顶销被生生卡在自锁凹槽深处。",
+   "detail": "顶层的红木排练厅，一架九尺斯坦威，厚丝绒窗帘后面是堆放谱架的小储藏间，脚步声一近就得躲。",
    "exits": [
-    "loc_tilted_pit_floor"
+    "loc_stage_wing_grand_curtain"
    ],
-   "id": "loc_pawl_relief_valve",
-   "name": "棘爪卸荷阀",
-   "pressure_modifiers": {
-    "p_baton_bend": "钛合金棒身被压得微微发颤，发出细细的嗡鸣。",
-    "p_pit_back_embrace": "指挥家脊背紧紧靠在机械师胸前，四只手叠在指挥棒上，油雾打湿的衬衫贴着对方的工装。"
-   },
+   "id": "loc_rehearsal_hall",
+   "name": "顶层红木独奏排练厅",
+   "pressure_modifiers": {},
    "privacy": "private",
    "tags": [
-    "workplace",
-    "intimate"
+    "intimate",
+    "workplace"
    ],
-   "visibility": "卸荷阀的暗缝只有一指宽，钨钢尾塞别进去时发出一声干涩的金属摩擦。",
+   "visibility": "窗帘拉上，外面只看得见门缝里的一线灯光。",
    "witnesses": []
   },
   {
    "affordances": [
-    "双人手掌重叠发力合抱扳动旁通旋钮",
-    "倾听液压油顺着回油管哗哗流出带来的平台下沉平稳震颤"
+    "黑色谱架上的总谱",
+    "指挥台边的一杯温水",
+    "乐手座位间的窄道"
    ],
-   "detail": "连通底坑回油箱的铜质手动旋转旁通开关，外壳因剧烈下坠冲击出现微小位移偏斜。",
+   "detail": "乐池中央的指挥台和黑色谱架，四周是一圈圈乐手的座位，台阶通向侧幕通道。",
    "exits": [
-    "loc_tilted_pit_floor",
-    "loc_rehearsal_hall"
+    "loc_grand_auditorium_orchestra",
+    "loc_stage_wing_grand_curtain"
    ],
-   "id": "loc_gravity_drain_lever",
-   "name": "放油扳把",
-   "pressure_modifiers": {
-    "p_stage_beam_crack": "上面的人想用千斤顶撑住承重梁，可液压一断，千斤顶也使不上劲。"
-   },
-   "privacy": "public",
+   "id": "loc_orchestra_pit_podium",
+   "name": "乐池指挥台前",
+   "pressure_modifiers": {},
+   "privacy": "semi",
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "visibility": "放油扳把的上方透进一线舞台的工作灯光，对讲机里不时传来舞台监督的呼叫。",
+   "visibility": "台上台下都看得见指挥台，可谱架后的低语传不出乐池。",
    "witnesses": [
-    "bg_assistant_stage_manager",
-    "bg_fire_officer",
-    "bg_page_turner"
+    "bg_second_violin",
+    "bg_clarinet_pair"
    ]
   },
   {
    "affordances": [
-    "站在排练厅后面听指挥家合乐",
-    "替指挥家把总谱搬上指挥台",
-    "在中场休息时给指挥家递一杯温水"
+    "厚重的大幕阴影",
+    "追光控制台",
+    "备用的白色真丝领结"
    ],
-   "detail": "歌剧院后台三楼的大排练厅，一整面墙的镜子，地板上摆满了谱架和椅子，正中是一座木头指挥台，首演前的每一天，百人乐团都在这里一遍遍地合。",
+   "detail": "大幕两侧的候场区，绳索与幕布垂下来，追光控制台亮着一排小灯，演员和乐手从这里进出。",
    "exits": [
+    "loc_orchestra_pit_podium",
     "loc_maestra_dressing_room",
-    "loc_gravity_drain_lever"
+    "loc_rehearsal_hall",
+    "loc_grand_auditorium_orchestra"
    ],
-   "id": "loc_rehearsal_hall",
-   "name": "排练厅",
+   "id": "loc_stage_wing_grand_curtain",
+   "name": "大幕侧翼候场区",
+   "pressure_modifiers": {},
+   "privacy": "semi",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "幕布的影子很深，两步之外就看不清谁和谁站在一起。",
+   "witnesses": [
+    "bg_dresser",
+    "bg_stage_hand"
+   ]
+  },
+  {
+   "affordances": [
+    "贵宾包厢",
+    "后排的红丝绒座椅",
+    "摊在扶手上的合同"
+   ],
+   "detail": "红丝绒座椅、水晶吊灯和三层包厢，彩排时只坐着董事、媒体和零星的工作人员。",
+   "exits": [
+    "loc_orchestra_pit_podium",
+    "loc_stage_wing_grand_curtain"
+   ],
+   "id": "loc_grand_auditorium_orchestra",
+   "name": "百年金色观众大厅",
    "pressure_modifiers": {},
    "privacy": "public",
    "tags": [
     "workplace"
    ],
-   "visibility": "乐手、歌手、舞台工作人员进进出出，谁在指挥台边多站一会儿，整个乐团都看得见。",
+   "visibility": "包厢里的人能看见池座的每一个动作。",
    "witnesses": [
-    "bg_page_turner",
-    "bg_assistant_stage_manager",
-    "bg_oboist",
-    "bg_chorus_alto"
+    "bg_board_secretary",
+    "bg_press_intern"
    ]
-  },
-  {
-   "affordances": [
-    "坐在钢琴凳上听指挥家弹一段",
-    "替指挥家解开领结",
-    "在镜前灯下陪指挥家改总谱"
-   ],
-   "detail": "后台走廊尽头的一间小休息室，一架老立式钢琴，一面化妆镜，衣架上挂着熨好的燕尾服，沙发上散着几本画满记号的总谱，门可以从里面锁上。",
-   "exits": [
-    "loc_rehearsal_hall"
-   ],
-   "id": "loc_maestra_dressing_room",
-   "name": "指挥休息室",
-   "pressure_modifiers": {},
-   "privacy": "private",
-   "tags": [
-    "intimate"
-   ],
-   "visibility": "只开一盏镜前灯，隔着墙能隐约听见舞台上的调音声，屋里的人能看清彼此的每一个表情。",
-   "witnesses": []
   }
  ],
  "name_pools": {
@@ -1681,26 +1959,25 @@
   ],
   "order": "family_first"
  },
- "notes": "按原稿加入。原稿除标题、简介、基调、指挥家外貌、世界规则与三处脱困地点外，人物、压力与钩子大多照抄了吸血鬼地宫那一篇，这里按国家歌剧院首演前夕的题材整篇重写：开局落在首演前最后几天，白天是排练厅里的总彩排、指挥台上的一个手势让百人乐团同时噤声，夜里是空荡荡的观众席；搭档写成管升降乐池与吊杆的舞台机械师，其余人物换成乐团首席、剧院总监、女高音主演和老舞台监督。和已有的巴黎歌剧院那篇拉开差异：那篇写的是幕后演出季，这篇写的是指挥台与乐池机械。新增排练厅与指挥休息室两处日常地点。原稿里“肢体相依只服务于发力、不得偏离自救”的规则改成了世界内的规则；婴儿肥换成了其余外貌描写；指挥家亲密前提写明脱困之后、双方清醒自愿；新增休息室里的四个亲密日常。",
+ "notes": "按原稿加入。原稿除标题、简介、基调、指挥家外貌、世界规则与三处脱困地点外，人物、压力与钩子大多照抄了吸血鬼地宫那一篇，这里按国家歌剧院首演前夕的题材整篇重写：开局落在首演前最后几天，白天是排练厅里的总彩排、指挥台上的一个手势让百人乐团同时噤声，夜里是空荡荡的观众席；搭档写成管升降乐池与吊杆的舞台机械师，其余人物换成乐团首席、剧院总监、女高音主演和老舞台监督。和已有的巴黎歌剧院那篇拉开差异：那篇写的是幕后演出季，这篇写的是指挥台与乐池机械。新增排练厅与指挥休息室两处日常地点。原稿里“肢体相依只服务于发力、不得偏离自救”的规则改成了世界内的规则；婴儿肥换成了其余外貌描写；指挥家亲密前提写明脱困之后、双方清醒自愿；新增休息室里的四个亲密日常。\n2026-10-24 按写作规则 v2 与 Gemini 创意卡改造：删去液压乐池卡死的抢修内容，改为首演前三天彩排里指挥权、换曲逼宫与先父遗谱的声部攻防。",
  "player_identities": [
   {
    "age_range": [
-    21,
-    25
+    22,
+    30
    ],
-   "baseline": "刚进歌剧院的乐团助理，负责给指挥家搬谱、翻谱、倒水，第一次跟一部大戏就赶上了首演。",
+   "baseline": "你随侍指挥台，核对整套总谱、递送指挥棒，排练间隙替指挥跑遍后台。手里握着总谱修改底稿和指挥休息室的门卡。",
    "gender": "any",
    "id": "pi_page_turner",
-   "reputation": "后台最年轻的人，乐手们还叫不出名字。",
+   "reputation": "乐团里翻页最准、嘴最严的助理。",
    "resources": [
-    "一本誊抄的分谱",
-    "一只保温杯",
-    "一张后台通行证"
+    "总谱修改底稿",
+    "指挥休息室门卡"
    ],
    "risks": [
-    "首演出一点差错，合同就不会续了。"
+    "翻错一页就是首演事故，背锅的永远是你。"
    ],
-   "role": "新来的乐团助理",
+   "role": "指挥台翻谱员兼排练助理",
    "social_position": "low",
    "title_patterns": [
     {
@@ -1715,22 +1992,21 @@
   },
   {
    "age_range": [
-    24,
+    26,
     36
    ],
-   "baseline": "受邀来跟歌剧院合作的客座独奏家，第二幕有一段独奏，跟指挥家在节奏上争了好几天。",
+   "baseline": "你受邀在第二乐章与乐团竞奏协奏曲，在剧院驻留到首演。手里握着独奏分谱和钢琴踏板的使用安排。",
    "gender": "any",
    "id": "pi_guest_soloist",
-   "reputation": "在国际比赛上拿过奖，乐团里有不少人认得这张脸。",
+   "reputation": "欧洲巡演过的独奏家，乐手们服你的耳朵。",
    "resources": [
-    "一把自己的琴",
-    "一份合作合同",
-    "一间客座演员休息室"
+    "独奏分谱",
+    "顶层排练厅的钢琴使用安排"
    ],
    "risks": [
-    "首演砸了，下一季的合约就没了。"
+    "协奏段落一乱，乐评只会写独奏家压不住乐团。"
    ],
-   "role": "客座独奏家",
+   "role": "特聘客座钢琴独奏家",
    "social_position": "equal",
    "title_patterns": [
     {
@@ -1745,22 +2021,21 @@
   },
   {
    "age_range": [
-    32,
-    50
+    30,
+    45
    ],
-   "baseline": "全国最有分量的乐评人，首演那晚的一篇评论就能决定这部新制作的命运，这几天被剧院请来看彩排。",
+   "baseline": "你受邀旁听彩排，首演之后的头版专栏由你定稿。手里握着乐评人评审席通票和一支从不留情的笔。",
    "gender": "any",
    "id": "pi_music_critic",
-   "reputation": "后台上下都知道这位乐评人的笔有多毒。",
+   "reputation": "一篇乐评能捧红一个指挥，也能让人一季翻不了身。",
    "resources": [
-    "一本写满批注的笔记本",
-    "一张首演夜的包厢票",
-    "一个读者很多的专栏"
+    "乐评人评审席通票",
+    "头版专栏的定稿权"
    ],
    "risks": [
-    "这部戏要是看走了眼，专栏的名声就毁了。"
+    "被人看出偏袒哪一方，你的公信力就到头了。"
    ],
-   "role": "首席乐评人",
+   "role": "权威音乐周刊特约首席乐评人",
    "social_position": "high",
    "title_patterns": [
     {
@@ -1778,19 +2053,18 @@
     35,
     55
    ],
-   "baseline": "这部新制作最大的赞助人，首演前来看总彩排，一句话就能决定下一季给不给钱。",
+   "baseline": "你掌着本演出季五百万特别赞助金的支票本，在董事会有一次提请复议的特权，今晚坐在包厢里看彩排。",
    "gender": "any",
    "id": "pi_opera_patron",
-   "reputation": "剧院上下都要看这位赞助人的脸色。",
+   "reputation": "剧院里人人都要给你留座的赞助人。",
    "resources": [
-    "一张赞助人的通行证",
-    "一份下一季的赞助意向书",
-    "随时能约见剧院总监的面子"
+    "五百万特别赞助金的支票本",
+    "董事会复议特权"
    ],
    "risks": [
-    "首演出了事故，赞助的名声就要跟着受累。"
+    "钱一旦押错了人，基金会和你的名声一起赔进去。"
    ],
-   "role": "剧院的大赞助人",
+   "role": "终身荣誉理事兼基金会首席赞助人",
    "social_position": "high",
    "title_patterns": [
     {
@@ -1804,436 +2078,487 @@
    ]
   }
  ],
- "premise": "百年国家歌剧院新制作的首演只剩最后三天。年轻的首席女指挥家每天站在指挥台上，一个手势就能让百人乐团同时噤声，舞台机械师天天被叫下乐池调升降。升降乐池的液压系统是二十年前装的，上周的检修报告还没人签字。",
+ "premise": "百年国家大剧院的金色大厅里，红丝绒座椅在水晶吊灯下静穆肃立。演出季最重的新歌剧首演只剩三天，百人乐团与合唱团在乐池和台上连轴排练。剧院第一位女性首席指挥站在指挥台上，要用先父留下的改编总谱开幕；首席小提琴、运营总监和客座独唱家在大幕两侧各怀心思。",
  "pressures": [
   {
-   "choice": "是趁乐池停稳的间隙下撬，还是等下一顿过去再动手？",
+   "choice": "剪报是私下摊开、送去见报，还是原样锁回档案室。",
    "exits": [
     {
-     "cost": "用力过猛可能把棘爪也撬松",
-     "option": "趁乐池停稳的间隙合力下撬"
+     "cost": "{concertmaster.name}反手让公会发声明，指老监督拿旧账要挟。",
+     "option": "请{stage_manager.name}私下给首席看剪报，换首席今晚跟拍"
     },
     {
-     "cost": "乐池不会停，只会越顿越狠",
-     "option": "抱紧栏杆等乐池停稳"
+     "cost": "首席的独奏生涯就此结束，乐团首演前骤缺首席。",
+     "option": "把剪报交给周刊记者见报"
+    },
+    {
+     "cost": "承诺没有凭据，首席随时可能反悔。",
+     "option": "劝{stage_manager.name}当面烧掉剪报，只换一句承诺"
     }
    ],
    "far": {
-    "consequence": "乐池整个砸进井底，两人被压在底下。",
-    "due_days": 1,
-    "trigger": "棘爪咬不住"
+    "consequence": "首席的名声一夜坍塌，乐团陷入舆论风暴。",
+    "due_days": 14,
+    "trigger": "剪报漏出排练厅"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [],
-   "id": "p_pit_lurch",
+   "id": "p_guy_plagiarism_clipping",
    "immediate": {
-    "minutes": 2,
-    "text": "乐池猛地一顿，指挥家整个人撞进机械师怀里，指挥棒差点脱手。"
+    "minutes": 10,
+    "text": "剪报摊在谱架上，屋里只剩翻纸声。"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{stage_manager.name}握着{concertmaster.name}成名作抄袭恩师手稿的旧报纸与退稿函原件。",
+    "holder": "stage_manager",
+    "subject": "concertmaster"
+   },
    "location_ids": [
-    "loc_tilted_pit_floor",
-    "loc_pawl_relief_valve"
+    "loc_rehearsal_hall"
    ],
    "near": {
-    "deadline_minutes": 4,
-    "text": "棘爪又滑了一齿，乐池倾斜得更厉害，底坑里的东西全往一边滑。"
+    "deadline_minutes": 180,
+    "text": "首席若不收手，明早公会的联名信就会送进董事会。"
    },
-   "objective": "在棘爪咬不住之前让乐池平稳落底。",
-   "source": "nature",
-   "start_minute": 10,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "十米舞台深井悬空剧烈倾斜",
-   "trigger": "万斤重的乐池斜挂在十米深井的半空，每过一会儿就往下一顿，防坠棘爪发出刺耳的咬合声。"
-  },
-  {
-   "choice": "是先用外套挡住油管，还是顶着油雾一鼓作气？",
-   "exits": [
-    {
-     "cost": "外套没了，人就没了遮挡",
-     "option": "脱下工装外套挡住油管"
-    },
-    {
-     "cost": "眼睛可能被油雾迷住",
-     "option": "顶着油雾一鼓作气撬阀"
-    }
-   ],
-   "far": {
-    "consequence": "两人被烫伤、滑倒，再也使不上劲。",
-    "due_days": 1,
-    "trigger": "热油淋满底坑"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_oil_mist_spray",
-   "immediate": {
-    "minutes": 2,
-    "text": "一滴热油落在指挥家颈侧，烫得指挥家倒吸一口凉气。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_pawl_relief_valve"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "底坑地面全是油，脚下滑得站不住。"
-   },
-   "objective": "在被热油和油雾逼得睁不开眼之前撬开卸荷阀。",
-   "source": "accident",
-   "start_minute": 10,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "高压液压回路爆裂油雾弥漫",
-   "trigger": "爆开的油管还在往下滴滚烫的液压油，油雾在头灯光里飘成一团，呛得人直咳。"
-  },
-  {
-   "choice": "是先撬卸荷阀，还是先让上面的人用钢索吊住承重梁？",
-   "exits": [
-    {
-     "cost": "吊梁要时间，乐池等不了",
-     "option": "先让上面的人吊住承重梁"
-    },
-    {
-     "cost": "撬不开就白费力气",
-     "option": "一鼓作气撬阀放油"
-    }
-   ],
-   "far": {
-    "consequence": "整座舞台砸进乐池，两人被埋在底下。",
-    "due_days": 1,
-    "trigger": "承重梁塌下"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_stage_beam_crack",
-   "immediate": {
-    "minutes": 2,
-    "text": "头顶咔的一声，一块碎木屑擦着指挥家的耳边落下来。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_pawl_relief_valve"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "承重梁的裂缝越来越大，舞台的台板开始往下凹。"
-   },
-   "objective": "在承重梁塌下来之前让乐池落底，卸掉梁上的力。",
+   "objective": "压下弦乐部的拖拍，又不毁掉剧院名声。",
    "source": "person",
-   "start_minute": 10,
+   "start_minute": null,
    "tags": [
     "workplace"
    ],
-   "title": "上方舞台承重木梁受压开裂",
-   "trigger": "头顶的舞台承重梁被倾斜的乐池顶得吱吱作响，裂缝里一阵阵往下掉灰。"
+   "title": "首席成名作的旧剪报",
+   "trigger": "{stage_manager.name}从档案室翻出三十年前的旧报纸，证明{concertmaster.name}的成名作抄了恩师的手稿。"
   },
   {
-   "choice": "是为了体面拉开半寸距离，还是干脆贴紧了一起发力？",
+   "choice": "放给指挥一个人、放给总监，还是让它从此不存在。",
    "exits": [
     {
-     "cost": "这一夜之后，指挥家落下最后一拍时，再也没法不往底下看了",
-     "option": "放下矜持贴紧对方，四只手一起压在指挥棒上"
+     "cost": "女高音觉得自己白冒了险，从此不再配合。",
+     "option": "只放给女指挥一个人听，由指挥决定怎么用"
     },
     {
-     "cost": "力气使不到一处，撬不断死锁顶销",
-     "option": "各自侧身单手发力"
+     "cost": "弦乐部要在两天内和副首席重新磨合。",
+     "option": "放给总监听，逼总监出面停首席的职"
+    },
+    {
+     "cost": "首席的拖拍还在，指挥只能硬扛到首演。",
+     "option": "当着女高音的面删掉录音"
     }
    ],
    "far": {
-    "consequence": "棒尾从阀缝里滑出去，错过最后的卸荷窗口。",
-    "due_days": 1,
-    "trigger": "分心导致棒尾滑脱"
+    "consequence": "乐团当场分裂成两派，首演前无人能收场。",
+    "due_days": 7,
+    "trigger": "录音被转到乐团群里"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [],
-   "id": "p_pit_back_embrace",
-   "immediate": {
-    "minutes": 2,
-    "text": "指挥家被深井里的燥热闷得娇喘微微，油雾浸透的白衬衫半透着贴在身上，酥胸随着每一次下压起伏，后背整个陷进对方怀里。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_tilted_pit_floor",
-    "loc_pawl_relief_valve"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "两人的心跳撞在一起，指挥家的呼吸乱了拍子，谁都分不清是闷的，还是别的什么。"
-   },
-   "objective": "贴得这么近的时候，还得把心思放在棒身的角度和拍子上。",
-   "source": "nature",
-   "start_minute": 10,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "底坑不足两平米身躯紧贴",
-   "trigger": "底坑不足两平米，指挥家只能脊背紧靠在机械师胸前，四只手叠在指挥棒上一起往下压。"
-  },
-  {
-   "choice": "是继续加力赌一把，还是退出来换个角度重新别？",
-   "exits": [
-    {
-     "cost": "领结会被阀缝绞烂",
-     "option": "用领结缠住棒身再压"
-    },
-    {
-     "cost": "扳手太粗，别不进暗缝",
-     "option": "退出来改用扳手"
-    }
-   ],
-   "far": {
-    "consequence": "断掉的棒身弹飞，两人失去唯一的撬具。",
-    "due_days": 1,
-    "trigger": "指挥棒折断"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_baton_bend",
-   "immediate": {
-    "minutes": 2,
-    "text": "棒身嗡的一声颤，握棒的指节被震得发麻。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_pawl_relief_valve"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "棒身弯出一道肉眼可见的弧，再压一下可能就会断。"
-   },
-   "objective": "得在指挥棒折断之前找准最后一个受力点。",
-   "source": "nature",
-   "start_minute": 10,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "钛合金指挥棒承受极限抗弯受力",
-   "trigger": "钛合金指挥棒别在卸荷阀的暗缝里，棒身被压得微微发颤，发出细细的嗡鸣。"
-  },
-  {
-   "choice": "是先用外套护住头顶，还是不管碎玻璃一鼓作气？",
-   "exits": [
-    {
-     "cost": "外套挡不住整盏吊灯",
-     "option": "用工装外套护住两人的头顶"
-    },
-    {
-     "cost": "可能被碎玻璃划伤",
-     "option": "不管碎玻璃一鼓作气撬阀"
-    }
-   ],
-   "far": {
-    "consequence": "吊灯砸进井口，碎片把底坑封死。",
-    "due_days": 1,
-    "trigger": "水晶吊灯砸落"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_chandelier_shards",
-   "immediate": {
-    "minutes": 2,
-    "text": "一片碎玻璃擦着机械师的手背落下，划出一道血痕。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_tilted_pit_floor",
-    "loc_pawl_relief_valve"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "吊灯的挂钩松了一节，整盏灯在井口上方摇摇欲坠。"
-   },
-   "objective": "在吊灯整个砸下来之前逃出去。",
-   "source": "nature",
-   "start_minute": 10,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "刺鼻化学油气窒息与体能急剧耗竭",
-   "trigger": "舞台上方的巨型水晶吊灯被震得剧烈晃动，碎玻璃一阵阵从井口洒下来。"
-  },
-  {
-   "choice": "改用不升降的平地乐池将就着演，还是逼着机械师两天里把液压查清",
-   "exits": [
-    {
-     "cost": "乐声出不来深坑的味道，乐评人会写得很难听",
-     "option": "改用平地乐池演"
-    },
-    {
-     "cost": "机械师要指挥家每晚陪在乐池底下递工具",
-     "option": "让机械师连轴两天查液压"
-    }
-   ],
-   "far": {
-    "consequence": "首席指挥的第一部新制作就此作废，乐团的合同季也跟着悬了",
-    "due_days": 2,
-    "trigger": "首演取消"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "hook_shen_bow_tie",
-    "hook_shen_last_beat",
-    "hook_machinist_poster"
-   ],
-   "id": "p_fire_department_notice",
+   "id": "p_anna_recording_wall",
    "immediate": {
     "minutes": 5,
-    "text": "副舞台监督小葛拿着通知书站在门口，说乐团的人都在走廊里等消息"
+    "text": "门外走廊有人经过，录音的声音必须压低。"
    },
    "leverage": null,
    "location_ids": [
     "loc_maestra_dressing_room"
    ],
    "near": {
-    "deadline_minutes": 1800,
-    "text": "明天下午，消防支队来复查"
+    "deadline_minutes": 120,
+    "text": "录音放给谁，谁就会在今晚的彩排上表态。"
    },
-   "objective": "在消防支队复查之前，让首演照常",
-   "source": "institution",
-   "start_minute": 600,
+   "objective": "决定这段录音放不放、放给谁听。",
+   "source": "person",
+   "start_minute": null,
    "tags": [
-    "workplace_power"
+    "workplace"
    ],
-   "title": "整改通知",
-   "trigger": "乐池出事后的第二天上午，消防支队下了整改通知：液压系统没查清之前，歌剧院不准开演，离首演只剩两天"
+   "title": "化妆间里放出的录音",
+   "trigger": "女高音把手机放在休息室的总谱上，录音里是首席鼓动二十名提琴手“指挥一起拍就拖一拍”的声音。"
+  },
+  {
+   "choice": "当众纠正、私下处理，还是装作没听见。",
+   "exits": [
+    {
+     "cost": "排练气氛降到冰点，乐手们噤若寒蝉。",
+     "option": "请指挥点名两位乐手单独盲听纠音"
+    },
+    {
+     "cost": "公会指责你越权干涉乐团内部事务。",
+     "option": "你拿出排练记录，指出两人今晚的错音"
+    },
+    {
+     "cost": "元老们抗议后台插手乐团事务。",
+     "option": "请老舞台监督以纪律为由让两人离席"
+    }
+   ],
+   "far": {
+    "consequence": "指挥的专业能力被公开质疑，董事会提请复议。",
+    "due_days": 10,
+    "trigger": "流言被周刊记者写进花絮"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_pit_rumor_mic",
+   "immediate": {
+    "minutes": 5,
+    "text": "大厅里一片死寂，所有人都看着指挥台。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_orchestra_pit_podium"
+   ],
+   "near": {
+    "deadline_minutes": 60,
+    "text": "流言会在一个休息间隙传遍整个乐团。"
+   },
+   "objective": "在全团面前把这句话压下去，又不让彩排崩掉。",
+   "source": "rumor",
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "扩音器里传出的闲话",
+   "trigger": "两名单簧管乐手在乐池通道嚼舌根，笑新指挥是老总监捧出来的花瓶，话顺着没关的话筒传遍大厅。"
+  },
+  {
+   "choice": "补钱、硬顶，还是另找出路。",
+   "exits": [
+    {
+     "cost": "欠下一份日后要用人情还的账。",
+     "option": "你出面表态，愿意牵线找新的赞助补上差额"
+    },
+    {
+     "cost": "剧院可能单方面中止和指挥的合约。",
+     "option": "请指挥当面告诉总监，宁可不去巴黎也不改谱"
+    },
+    {
+     "cost": "资方若听完仍不满意，再无回旋余地。",
+     "option": "请总监向资方要一份试听的机会"
+    }
+   ],
+   "far": {
+    "consequence": "巴黎巡演取消，剧院下个演出季的预算出现大窟窿。",
+    "due_days": 20,
+    "trigger": "书面答复期限过了"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_paris_sponsor_call",
+   "immediate": {
+    "minutes": 5,
+    "text": "电话还没挂，总监看见了站在幕布边的你。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_stage_wing_grand_curtain"
+   ],
+   "near": {
+    "deadline_minutes": 240,
+    "text": "资方要求明早给出书面答复。"
+   },
+   "objective": "保住巡演，又不逼指挥改掉先父的手稿。",
+   "source": "institution",
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "侧幕里的越洋撤资电话",
+   "trigger": "总监在侧幕和巴黎资方通电话时声音拔高：指挥若坚持先父的遗作，三百万巡演赞助就撤回。"
+  },
+  {
+   "choice": "签、不签，还是改条款。",
+   "exits": [
+    {
+     "cost": "巴黎客座指挥的机会就此断了。",
+     "option": "请指挥当众把版权捐给国家交响文献馆"
+    },
+    {
+     "cost": "赞助费削减三成，剧院预算更紧。",
+     "option": "改成只授权演出权、不得删改"
+    },
+    {
+     "cost": "得罪商业院线，日后合作处处碰壁。",
+     "option": "你写一份独立评估，证明原版的学术价值"
+    }
+   ],
+   "far": {
+    "consequence": "先父遗作被删改成商业串烧，再也收不回来。",
+    "due_days": 30,
+    "trigger": "版权在没有约束的条款下转让"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_adaptation_copyright",
+   "immediate": {
+    "minutes": 10,
+    "text": "合同就摊在扶手上，钢笔已经拧开。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_grand_auditorium_orchestra"
+   ],
+   "near": {
+    "deadline_minutes": 300,
+    "text": "董事会明天上午就要表决曲目。"
+   },
+   "objective": "让手稿保住原貌，也让剧院撑过这一季。",
+   "source": "money",
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "贵宾席上的改编版权合同",
+   "trigger": "总监把商业改编合同摊在贵宾席上：签字让出先父遗作的改编版权，就保送指挥下赛季去巴黎当常任客座。"
+  },
+  {
+   "choice": "先护谁出去、喊谁来、要不要让人看见你们挨在一起。",
+   "exits": [
+    {
+     "cost": "指挥的脚踝在台阶上磕青了，被乐手看见你们牵着手。",
+     "option": "扶着女指挥沿栏杆摸黑走出乐池"
+    },
+    {
+     "cost": "你们两人留在最后，被闲话传成彩排后的私会。",
+     "option": "对讲叫老舞台监督带工作灯下来，先护乐手离场"
+    },
+    {
+     "cost": "今晚的带妆彩排只能提前收场。",
+     "option": "让指挥先拿谱架的小灯安抚全团，你守在指挥台边"
+    }
+   ],
+   "far": {
+    "consequence": "首演被质疑安全隐患，董事会要求延期。",
+    "due_days": 5,
+    "trigger": "停电的消息传出剧院"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_shen_score_fourth",
+    "hook_shen_wrist_rub",
+    "hook_shen_tie_wing"
+   ],
+   "id": "p_pit_blackout",
+   "immediate": {
+    "minutes": 3,
+    "text": "黑暗里有人撞翻了谱架，乐手们开始慌乱。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_orchestra_pit_podium"
+   ],
+   "near": {
+    "deadline_minutes": 30,
+    "text": "应急灯亮起之前，乐池里不能乱。"
+   },
+   "objective": "在黑暗里护着人平安出去，不让乐手看出你们的关系。",
+   "source": "accident",
+   "start_minute": null,
+   "tags": [
+    "workplace",
+    "disaster"
+   ],
+   "title": "乐池里的一片漆黑",
+   "trigger": "全负荷彩排时总配电室跳闸，金色大厅陷入漆黑，你和女指挥被困在乐池台前的窄道里。"
+  },
+  {
+   "choice": "叫医生、推迟彩排，还是让对方咬牙上台。",
+   "exits": [
+    {
+     "cost": "下半场彩排只能推迟。",
+     "option": "扶对方躺到沙发上保暖，打电话叫驻场医生过来"
+    },
+    {
+     "cost": "对方体力透支，明天的排练也悬了。",
+     "option": "用温水和薄毯照顾对方，同时叫救护车在后门等着"
+    },
+    {
+     "cost": "右手可能留下慢性炎症的隐患。",
+     "option": "先用绷带固定手腕，排完后马上送医"
+    }
+   ],
+   "far": {
+    "consequence": "腕管落下慢性炎症，首演当晚可能握不住指挥棒。",
+    "due_days": 3,
+    "trigger": "硬撑着排完全程"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_shen_score_fourth",
+    "hook_shen_wrist_rub",
+    "hook_shen_tie_wing"
+   ],
+   "id": "p_wrist_fever",
+   "immediate": {
+    "minutes": 3,
+    "text": "对方手里的指挥棒掉在地毯上。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_maestra_dressing_room"
+   ],
+   "near": {
+    "deadline_minutes": 60,
+    "text": "下半场彩排能不能照常开，要马上定。"
+   },
+   "objective": "让对方的手撑到首演，先把病看好。",
+   "source": "accident",
+   "start_minute": null,
+   "tags": [
+    "bodily_harm"
+   ],
+   "title": "指挥的手腕和低烧",
+   "trigger": "连日熬夜改谱又受了乐池的湿冷，{player.title}看见对方右腕肿痛、指节发颤，还在发低烧，连指挥棒都握不稳。"
   }
  ],
- "region": "百年歌剧院地下十米完全沉降液压乐池深井逼仄检修底坑与变形悬臂台",
+ "region": "百年国家大剧院：金色大厅、乐池、大幕侧翼与顶层排练厅",
  "rules": [
   {
-   "id": "r_premiere_eve_rules",
-   "text": "首演前的规矩：彩排时指挥台上的人说停就停，哪怕是剧院总监也不能插话。"
+   "id": "r_baton_final_say",
+   "text": "排练中乐团的进出与速度只听指挥棒，首席可以提意见，不可以私自改拍。"
   },
   {
-   "id": "r_pit_release_by_baton",
-   "text": "万斤升降乐池受偏心棘爪死死咬死悬在半空，只可通过实心钨钢配重指挥棒尾塞折沿别入卸荷阀缝隙合力下撬脱险。"
+   "id": "r_score_lock",
+   "text": "首演总谱由指挥终审定稿，改动必须写在铅笔批注里并由指挥签名。"
   },
   {
-   "id": "r_pit_maintenance_season",
-   "text": "首演前一周是舞台机械的检修期，乐池和吊杆每晚散场后都要试运行一遍。"
+   "id": "r_board_veto",
+   "text": "演出季曲目变更须经董事会过半数同意，终身理事可以提请复议一次。"
   },
   {
-   "id": "r_podium_last_word",
-   "text": "演出中指挥家的最后一个手势落下之前，台上台下任何人都不许动。"
+   "id": "r_pit_silence",
+   "text": "彩排期间乐池与侧幕禁止交谈喧哗，传话一律走舞台监督的对讲。"
   }
  ],
  "schema_version": 1,
  "stage_labels": {
-  "acquainted": "勘井并肩",
-  "committed": "平稳落底",
-  "familiar": "井底相护",
-  "flirting": "贴身卸荷",
-  "intimate": "同命协同",
-  "stranger": "典雅肃穆",
-  "testing": "共执棒柄"
+  "acquainted": "点头之交",
+  "committed": "棒盒相托",
+  "familiar": "后台熟人",
+  "flirting": "谱页传情",
+  "intimate": "琴房私情",
+  "stranger": "台下陌路",
+  "testing": "声部对峙"
  },
  "status": "released",
- "style_hint": "首演前夕的歌剧院：白天写排练厅的谱架、指挥台上抬起的手、乐团调音时那一声长长的A；夜里写空荡荡的观众席、深井里的液压油雾和头顶吱呀作响的承重梁。指挥家在台上端庄得不可冒犯，张力藏在散场后只对一个人放下的那只手里。",
+ "style_hint": "华丽典雅、克制含蓄；用乐句、拍点、谱页和灯光写人心，情绪落在指尖和呼吸上，不写机械故障。",
  "tension_engines": [
   {
-   "id": "te_pit_lurch",
-   "text": "万斤重的乐池斜挂在半空，每过一会儿就往下一顿。"
+   "id": "te_premiere_countdown",
+   "text": "新歌剧首演只剩三天，今晚的带妆彩排决定开幕用哪一版总谱。"
   },
   {
-   "id": "te_pawl_valve_seize",
-   "text": "卸荷阀被偏心载荷冷焊咬死，指挥棒尾塞别进去就再难退出。"
+   "id": "te_strings_slowdown",
+   "text": "首席小提琴串通弦乐部在第四乐章拖拍，逼年轻指挥在董事会前低头。"
   },
   {
-   "id": "te_pit_back_embrace",
-   "text": "底坑不足两平米，两人只能胸背相贴着一起往下压。"
+   "id": "te_paris_contract",
+   "text": "巴黎资方以撤资施压，要求把压轴曲目换成商业改编版。"
   },
   {
-   "id": "te_stage_beam_crack",
-   "text": "头顶的舞台承重梁被压得吱吱作响，随时可能塌下来。"
+   "id": "te_father_manuscript",
+   "text": "先父未竟的改编手稿只有一份，改一个音都是对亡者的背叛。"
   }
  ],
  "title": "升降台下女指挥",
  "tone": [
-  "乐池千斤倾斜",
-  "液压高压油雾",
-  "钨钢棒柄撬销",
-  "十米深井悬挂"
+  "首演前三天",
+  "指挥棒下的拍点",
+  "大幕两侧的暗流",
+  "先父遗谱",
+  "琴房里的两杯热茶"
  ],
  "twists": [
   {
-   "category": "信息",
-   "id": "tw_baton_tip_slips",
-   "requires": [
-    "maestra_shen"
-   ],
-   "text": "舞台上方巨型水晶吊灯剧烈晃动砸下碎玻璃，切断了备用工具绳，指挥家手中的加重配重指挥棒成为唯一杠杆生机。"
-  },
-  {
    "category": "人事",
-   "id": "tw_tailcoat_caught_hinge",
-   "requires": [
-    "maestra_shen"
-   ],
-   "text": "指挥家燕尾服丝绒后摆卷入平台铰链齿缝，同伴迅速拔出工具刀划开裙边，指挥家迅速借力扎稳马步撑起两人发力点。"
-  },
-  {
-   "category": "资源",
-   "id": "tw_oil_on_cheek",
-   "requires": [
-    "stage_machinist"
-   ],
-   "text": "指挥家额角香汗混着油污滑过饱满紧致面颊，在幽暗深井中激荡起两人肌肤相亲的震撼羁绊。"
-  },
-  {
-   "category": "制度",
-   "id": "tw_four_hands_on_baton",
+   "id": "tw_fourth_movement_follows",
    "requires": [
     "maestra_shen",
-    "stage_machinist"
+    "concertmaster"
    ],
-   "text": "安全卸荷滑阀因偏心受载发生金属冷焊咬死，单人施力纹丝不动，指挥家与机械师胸背相拥共同下压钛合金棒身。"
-  },
-  {
-   "category": "时限",
-   "id": "tw_beam_dust_falls",
-   "requires": [
-    "maestra_shen"
-   ],
-   "text": "头顶舞台大梁再次传出断裂巨响，大量木屑倾泻而下，两人被迫伏低面庞紧贴在底坑角落拼死施加最后下顿。"
+   "text": "第四乐章再起时，{maestra_shen.name}的手势干净得没有一丝犹豫，弦乐部一个接一个跟上了拍子，{concertmaster.name}低下头，弓速也跟了上来。"
   },
   {
    "category": "关系",
-   "id": "tw_press_on_three",
+   "id": "tw_guy_bows_publicly",
    "requires": [
-    "maestra_shen",
-    "stage_machinist"
+    "concertmaster",
+    "maestra_shen"
    ],
-   "text": "机械师用肩背顶紧井壁工字钢化作极限反力杠杆，指挥家合抱同伴借重力下坠，两人合力终于将死锁顶销生生撬断。"
+   "text": "排练厅里，{concertmaster.name}当着众人起身，向{maestra_shen.name}躬身致意，承认自己先前看轻了年轻人。"
   },
   {
    "category": "意外",
-   "id": "tw_pit_settles_down",
+   "id": "tw_anna_breath_match",
+   "requires": [
+    "prima_soprano",
+    "maestra_shen"
+   ],
+   "text": "第三幕的弱音里，{prima_soprano.name}的换气恰好落在{maestra_shen.name}指挥棒一个极轻的颤动上，乐池和台上同时屏住了呼吸，随后是一片自发的掌声。"
+  },
+  {
+   "category": "资源",
+   "id": "tw_board_backs_original",
+   "requires": [
+    "opera_director"
+   ],
+   "text": "董事会秘书送来通知：基金会追加托底资金，以原版遗作启动欧洲巡演，{opera_director.name}手里的撤资函一下失了分量。"
+  },
+  {
+   "category": "信息",
+   "id": "tw_he_final_light",
+   "requires": [
+    "stage_designer_he",
+    "maestra_shen"
+   ],
+   "text": "终曲时，{stage_designer_he.name}把冷暖两束光交汇在指挥台上；{maestra_shen.name}抬头那一刻，你才看懂这束光是为谁设计了三年。"
+  },
+  {
+   "category": "制度",
+   "id": "tw_mo_burns_clipping",
+   "requires": [
+    "stage_manager",
+    "concertmaster"
+   ],
+   "text": "{stage_manager.name}把那张剪报投进后台的旧壁炉，对{concertmaster.name}只说了一句：剧院的事，到我这儿为止。"
+  },
+  {
+   "category": "时限",
+   "id": "tw_curtain_choice",
    "requires": [
     "maestra_shen"
    ],
-   "text": "自锁顶销应声崩脱，旁通放油阀顺畅开启，万斤重液压乐池在油液回流声中平稳降落底座，两人成功脱困自救。"
+   "text": "彩排大获全胜，空荡的大厅里余响未散，{maestra_shen.name}收起指挥棒走下谱台，问你是陪着去更大的舞台，还是留在这间琴房里。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_mo_locks_hall_on_purpose",
+   "requires": [
+    "stage_manager",
+    "maestra_shen"
+   ],
+   "text": "排练厅的门“意外”反锁了；门外，{stage_manager.name}把钥匙揣回兜里笑了笑：这两个人再不说清楚，首演都要被耽误。屋里的{maestra_shen.name}看着你，先开了口。"
+  },
+  {
+   "category": "信息",
+   "id": "tw_guy_secret_bowing",
+   "requires": [
+    "concertmaster"
+   ],
+   "text": "你在第二小提琴的分谱上看见一行熟悉的铅笔字：是{concertmaster.name}深夜替年轻乐手改好的弓法，人前却一句也没提。"
   }
  ]
 }

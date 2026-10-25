@@ -1,118 +1,164 @@
 {
  "background_cast": [
   {
-   "adult_context": "疗养院尽职尽责的老院长，在监控室焦急指挥抢险队伍排查断路器。",
+   "adult_context": "年满四十岁、在疗养院坐诊多年的主任医师。",
    "age_range": [
-    50,
-    60
-   ],
-   "function": "helper",
-   "gender": "male",
-   "id": "bg_sanatorium_director_song",
-   "line": "护士还在地下主泵房里头！快拿应急破拆液压钳去撬防爆卷门！快啊！",
-   "location_ids": [
-    "loc_geothermal_pump_hall"
-   ],
-   "name": "宋院长",
-   "role": "高山疗养院院长兼总指挥"
-  },
-  {
-   "adult_context": "何主任隔着门缝大声提醒内部被困医护注意防烫。",
-   "age_range": [
-    45,
+    40,
     55
    ],
-   "function": "witness",
-   "gender": "male",
-   "id": "bg_chief_doctor_he",
-   "line": "小林！蒸汽温度太高了，千万别徒手接近减压阀！用湿毛巾捂住口鼻啊！",
+   "function": "helper",
+   "gender": "any",
+   "id": "bg_duty_physician",
+   "line": "老人夜里一咳嗽，叫我比叫谁都快。",
    "location_ids": [
-    "loc_geothermal_pump_hall"
+    "loc_nurse_duty_room",
+    "loc_sanatorium_sunroom_lounge"
    ],
-   "name": "何主任医师",
-   "role": "疗养院特护病区主任医师"
+   "name": null,
+   "role": "值班主任医师"
   },
   {
-   "adult_context": "试图在外围切断蒸汽主阀却被滚烫白雾逼退的老机工。",
+   "adult_context": "年满四十五岁、管着院办公章的主任。",
    "age_range": [
-    50,
-    60
+    45,
+    58
    ],
    "function": "obstacle",
-   "gender": "male",
-   "id": "bg_boiler_attendant_lao_zhou",
-   "line": "总管路压力还在攀升，外围手动切断阀全被高热蒸汽封死了，根本靠近不了啊！",
+   "gender": "any",
+   "id": "bg_office_director",
+   "line": "交割会前谁也别给我添乱。",
    "location_ids": [
-    "loc_steam_damper_doorway"
+    "loc_sanatorium_sunroom_lounge"
    ],
-   "name": "司炉工周师傅",
-   "role": "地下锅炉房老司炉工"
+   "name": null,
+   "role": "院办主任"
   },
   {
-   "adult_context": "在安全通道外侧协助传递急救药品与救援消息的青年护士。",
+   "adult_context": "年满五十岁、烧了半辈子锅炉的老司炉。",
    "age_range": [
-    21,
-    23
-   ],
-   "function": "messenger",
-   "gender": "female",
-   "id": "bg_nurse_assistant_xiao_liu",
-   "line": "机工！护士姐！备用排风机已经强行启动了，你们快想办法把门打开啊！",
-   "location_ids": [
-    "loc_geothermal_pump_hall"
-   ],
-   "name": "护士小刘",
-   "role": "疗养院二十一岁青年护士干事"
-  },
-  {
-   "adult_context": "在防爆滑门外侧递送冷却喷雾与防滑垫料的热心安保队员。",
-   "age_range": [
-    22,
-    28
-   ],
-   "function": "helper",
-   "gender": "male",
-   "id": "bg_security_guard_xiao_zhang",
-   "line": "小方！用你们修管道的大扳手垫住门缝！千万别让卷帘门二度砸到底！",
-   "location_ids": [
-    "loc_steam_damper_doorway"
-   ],
-   "name": "保安小张",
-   "role": "疗养院安保巡查队员"
-  },
-  {
-   "adult_context": "向现场通报蒸汽泄漏扩散速度并确认控制盒受热风险的巡查主管。",
-   "age_range": [
-    35,
-    45
+    50,
+    62
    ],
    "function": "witness",
    "gender": "male",
-   "id": "bg_thermal_inspector_qian",
-   "line": "减压阀法兰彻底撕裂了，蒸汽顺着电缆桥架冲进来了，微动开关快被烤熔了！",
+   "id": "bg_coal_stoker",
+   "line": "煤还剩多少，账本说了不算，我说了算。",
    "location_ids": [
     "loc_geothermal_pump_hall"
    ],
-   "name": "巡检钱主管",
-   "role": "地热动力区值班巡查主管"
+   "name": null,
+   "role": "煤棚老司炉"
+  },
+  {
+   "adult_context": "年满四十岁、在特护病区做了多年的护工。",
+   "age_range": [
+    40,
+    52
+   ],
+   "function": "rumor_source",
+   "gender": "female",
+   "id": "bg_care_aide",
+   "line": "三楼那几位老爷子，这礼拜饭都吃不下。",
+   "location_ids": [
+    "loc_nurse_duty_room"
+   ],
+   "name": null,
+   "role": "护工大姐"
+  },
+  {
+   "adult_context": "年满二十四岁、随评估团进山的记录员。",
+   "age_range": [
+    24,
+    32
+   ],
+   "function": "messenger",
+   "gender": "any",
+   "id": "bg_appraisal_clerk",
+   "line": "代表让我问一句，今晚的抄表数什么时候给。",
+   "location_ids": [
+    "loc_geothermal_pump_hall",
+    "loc_sanatorium_sunroom_lounge"
+   ],
+   "name": null,
+   "role": "评估团记录员"
+  },
+  {
+   "adult_context": "年满三十五岁、跑林区邮路的司机。",
+   "age_range": [
+    35,
+    50
+   ],
+   "function": "messenger",
+   "gender": "male",
+   "id": "bg_mail_driver",
+   "line": "下一趟进山还得三天，有信赶紧给我。",
+   "location_ids": [
+    "loc_sanatorium_sunroom_lounge"
+   ],
+   "name": null,
+   "role": "邮车司机"
   }
  ],
  "cast_combos": [
   {
-   "chemistry": "夜班护士与锅炉房机工在卷门底下的白雾里背靠着控制盒、手叠着手，用听诊器的听头一下一下砸向卡死的触点。",
-   "id": "cc_nurse_and_mechanic_leverage",
-   "identity_ids": [],
-   "player_positions": [
-    "high",
-    "equal",
-    "low"
+   "chemistry": "{nurse_lin_xinyi.name}下夜班总先来泵房找你，两个人之间有一把铜钥匙和一个只有你们懂的敲法。",
+   "id": "cc_nurse_mechanic_night_soup",
+   "identity_ids": [
+    "pi_staff_liaison_officer",
+    "pi_logistics_chief"
    ],
-   "power_structure": "switchable",
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
    "relations": [
     {
      "a": "player",
      "a_to_b": {
+      "tension": 2,
+      "trust": 4
+     },
+     "b": "nurse_lin_xinyi",
+     "b_to_a": {
       "tension": 3,
+      "trust": 4
+     },
+     "reason": "上个月一个平常的夜班后，{nurse_lin_xinyi.ta}在值班间把私配的理疗室铜钥匙塞进你手心，说想独处就敲两下暖气管。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "nurse_lin_xinyi"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{nurse_lin_xinyi.ta}要你陪{nurse_lin_xinyi.ta}想一个法子，让三楼那几位老人开春还有地方住。",
+    "limit_gap": "{nurse_lin_xinyi.ta}清退不清退病人说了不算，你替老人争床位也会被院办记一笔。",
+    "meeting_reason": "{nurse_lin_xinyi.name}刚听说收购方要清空三楼欠费老林工的床位，端着热汤在值班间等你拿主意。",
+    "resource_gap": "{nurse_lin_xinyi.ta}握着三楼老人的巡诊记录，你握着床位和交割清册的门路。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_retiree_beds",
+    "te_handover_eve"
+   ]
+  },
+  {
+   "chemistry": "你是来复核交割的督导，{nurse_lin_xinyi.name}是唯一一个敢抱着档案来找你的护士。",
+   "id": "cc_nurse_chief_directive",
+   "identity_ids": [
+    "pi_asset_supervisor"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
       "trust": 3
      },
      "b": "nurse_lin_xinyi",
@@ -120,61 +166,119 @@
       "tension": 3,
       "trust": 3
      },
-     "reason": "在生死死线前紧密协作构建力矩反支点，彼此产生绝对性命相托。",
-     "stage": "testing"
-    },
+     "reason": "上周核账你发现有人拿夜班津贴替老病号垫药费，报告里没写；后来替你烘大衣时，那双手在你领口停了很久。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "nurse_lin_xinyi"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{nurse_lin_xinyi.ta}要你在交割会上替三楼的老人说一句话。",
+    "limit_gap": "你偏向谁都有人盯着，{nurse_lin_xinyi.ta}求情求过头就是越级。",
+    "meeting_reason": "{nurse_lin_xinyi.name}把一叠老林工的原始入院档案抱进值班间，轻声求你在交割会上保住几张特护床位。",
+    "resource_gap": "你一支笔能否掉安置条款，{nurse_lin_xinyi.ta}只有一叠老林工的入院档案。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_handover_eve",
+    "te_retiree_beds"
+   ]
+  },
+  {
+   "chemistry": "院里没人知道你们在一起，{nurse_lin_xinyi.name}查完房溜下泵房，是你一天里最盼的事。",
+   "id": "cc_nurse_junior_watch",
+   "identity_ids": [
+    "pi_night_duty_attendant"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
     {
      "a": "player",
      "a_to_b": {
       "tension": 2,
-      "trust": 3
+      "trust": 5
      },
-     "b": "apprentice_mechanic_fang_yuan",
+     "b": "nurse_lin_xinyi",
      "b_to_a": {
       "tension": 2,
-      "trust": 3
+      "trust": 5
      },
-     "reason": "同为动力区检修核心，知晓彼此手上力道与工具用法。",
-     "stage": "familiar"
-    },
-    {
-     "a": "nurse_lin_xinyi",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "apprentice_mechanic_fang_yuan",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "特护女护士与青年机工在灾厄中成为生死不离的脱困搭档。",
-     "stage": "testing"
+     "reason": "入冬前你们背着院里定下了关系；{nurse_lin_xinyi.ta}每次查完房都溜下泵房，在暖气管旁和你十指扣着歇一会儿。",
+     "stage": "committed"
     }
    ],
    "slots": [
-    "nurse_lin_xinyi",
-    "apprentice_mechanic_fang_yuan"
+    "nurse_lin_xinyi"
    ],
    "stakes": {
-    "irreplaceable_goal": "在蒸汽窒息来临前合力敲击复位微动开关升起大门脱险。",
-    "limit_gap": "护士服浸透且体温燥热，工匠受困于死角狭缝后背承受巨大金属卷门压迫。",
-    "meeting_reason": "雪夜查完房，夜班护士下到泵房，给锅炉房机工送冻疮膏。",
-    "resource_gap": "护士拥有重型加厚实心不锈钢听诊器听头，机工掌握卷门互锁电路与触点机械卡塞直觉。"
+    "irreplaceable_goal": "{nurse_lin_xinyi.ta}要你帮{nurse_lin_xinyi.ta}决定，台账上那个往下走的数字今晚报不报。",
+    "limit_gap": "{nurse_lin_xinyi.ta}一句话能定台账上的数，你连交割会的门都进不去。",
+    "meeting_reason": "{nurse_lin_xinyi.name}趁夜深没人，把水温台账摊在你面前，问你泉眼的实情该不该告诉买方。",
+    "resource_gap": "{nurse_lin_xinyi.ta}签着水温台账，你只有一本巡检记录。"
    },
    "tags": [
-    "workplace",
-    "disaster"
+    "intimate"
    ],
    "tension_engine_ids": [
-    "te_steam_purge_rush",
-    "te_close_contact_body_heat"
+    "te_spring_decline",
+    "te_snowbound"
    ]
   },
   {
-   "chemistry": "特护组长与安全巡查员以精准机械原理拆解触点卡塞，严丝合缝操作工具突破阻滞。",
-   "id": "cc_head_nurse_and_inspector_equal",
-   "identity_ids": [],
+   "chemistry": "{head_nurse_su_man.name}嘴上从不给你好脸色，排夜班却总把你排在{head_nurse_su_man.ta}当值的那一晚。",
+   "id": "cc_head_nurse_quota_deal",
+   "identity_ids": [
+    "pi_night_duty_attendant"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "head_nurse_su_man",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "上回巡检你撞见{head_nurse_su_man.ta}在理疗室对着改制名单抹眼泪，递了帕子，从没跟人提过；从那天起眼神就变了。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "head_nurse_su_man"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{head_nurse_su_man.ta}想知道你肯不肯站到{head_nurse_su_man.ta}这边。",
+    "limit_gap": "{head_nurse_su_man.ta}要你盯人，你答应了就得罪评估团，不答应就丢了随迁的机会。",
+    "meeting_reason": "{head_nurse_su_man.name}把随迁省城的最后一张后勤编制推荐表拍在值班桌上，问你愿不愿意替{head_nurse_su_man.ta}盯着收购代表。",
+    "resource_gap": "{head_nurse_su_man.ta}手里有随迁名单，你手里只有一本巡检记录。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_handover_eve"
+   ]
+  },
+  {
+   "chemistry": "{geologist_he_qian.name}只信曲线，却把实测手稿留在了你桌上。",
+   "id": "cc_geologist_spring_data",
+   "identity_ids": [
+    "pi_staff_liaison_officer",
+    "pi_logistics_chief"
+   ],
    "player_positions": [
     "equal"
    ],
@@ -186,66 +290,37 @@
       "tension": 2,
       "trust": 3
      },
-     "b": "nurse_lin_xinyi",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "多年协作维护疗养院安全，对彼此技术定力深具默契。",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "apprentice_mechanic_fang_yuan",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "工程安保部门同事，熟悉泵房各处控制开关结构。",
-     "stage": "familiar"
-    },
-    {
-     "a": "nurse_lin_xinyi",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "apprentice_mechanic_fang_yuan",
+     "b": "geologist_he_qian",
      "b_to_a": {
       "tension": 3,
       "trust": 3
      },
-     "reason": "在沉重铁门压迫下并肩伏卧发力，消除身份悬殊界限。",
-     "stage": "testing"
+     "reason": "前天一起下管廊测水温，对方踩着青苔滑进你怀里，扶稳后耳根通红，把实测手稿留在了你桌上。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "nurse_lin_xinyi",
-    "apprentice_mechanic_fang_yuan"
+    "geologist_he_qian"
    ],
    "stakes": {
-    "irreplaceable_goal": "利用听头实心边缘精准砸击微动开关盒缺口并顺势重启自救。",
-    "limit_gap": "门洞通道彻底卡死无法借助外援，必须在浓厚白雾中凭手感盲操机械脱扣。",
-    "meeting_reason": "三楼病区的暖气片不热了，护士下去找锅炉房机工，两人一起顺着管子往下查。",
-    "resource_gap": "组长掌握病区人员疏散应急线路，技术员拥有高精度金属卡尺与强光探照笔。"
+    "irreplaceable_goal": "对方要你说一句，这份数据亮出来值不值。",
+    "limit_gap": "对方报了数据会砸穿收购价，你替老人说话也得有凭据。",
+    "meeting_reason": "{geologist_he_qian.name}拿着刚测出的三号泉眼衰减曲线来找你，犹豫交割前要不要把数据亮出来。",
+    "resource_gap": "对方握着复核签章，你握着交割清册。"
    },
    "tags": [
-    "workplace",
-    "crime"
+    "intimate"
    ],
    "tension_engine_ids": [
-    "te_damper_door_deadweight_pinch",
-    "te_sanatorium_heating_ruin"
+    "te_spring_decline"
    ]
   },
   {
-   "chemistry": "暖通总工程师以绝对力学权威统摄全局，女护士遵从力学指挥，合力爆发千钧推力破死锁。",
-   "id": "cc_chief_engineer_and_nurse_high",
-   "identity_ids": [],
+   "chemistry": "{acquirer_rep_gu_ze.name}每天都在阳光廊等你喝茶，说是谈公事，眼睛却总落在你手腕上。",
+   "id": "cc_acquirer_valuation_game",
+   "identity_ids": [
+    "pi_asset_supervisor"
+   ],
    "player_positions": [
     "high"
    ],
@@ -255,908 +330,1008 @@
      "a": "player",
      "a_to_b": {
       "tension": 3,
-      "trust": 3
+      "trust": 1
      },
-     "b": "nurse_lin_xinyi",
+     "b": "acquirer_rep_gu_ze",
      "b_to_a": {
       "tension": 3,
-      "trust": 3
+      "trust": 2
      },
-     "reason": "总工程师指挥护士校准发力矢量，展现卓越技术领导力。",
-     "stage": "testing"
-    },
+     "reason": "进山第一晚，对方在走廊拦住你讨要内部评估底线，你半开玩笑按住对方手腕挡了回去，对方没抽手。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "acquirer_rep_gu_ze"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "对方要你在安置费上松一句口。",
+    "limit_gap": "你松口就对不起老职工，对方让步就交不了总部的差。",
+    "meeting_reason": "{acquirer_rep_gu_ze.name}在阳光廊备好热茶，探你对削减老职工安置费的口风，想拉你一起促成低价交割。",
+    "resource_gap": "你握着复核否决权，对方握着交割尾款。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_handover_eve",
+    "te_spring_decline"
+   ]
+  },
+  {
+   "chemistry": "{mechanic_fang_yuan.name}是泵房里唯一能跟你交底的人，话少，可每句都算数。",
+   "id": "cc_mechanic_coal_shed_talk",
+   "identity_ids": [
+    "pi_night_duty_attendant",
+    "pi_staff_liaison_officer",
+    "pi_logistics_chief",
+    "pi_asset_supervisor"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 1,
+      "trust": 4
+     },
+     "b": "mechanic_fang_yuan",
+     "b_to_a": {
+      "tension": 1,
+      "trust": 4
+     },
+     "reason": "去年寒潮夜里你陪{mechanic_fang_yuan.ta}在煤棚清了一宿炉灰，两人就着一壶热水说了半夜话，从那以后成了能交底的朋友。",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
+    "mechanic_fang_yuan"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "{mechanic_fang_yuan.ta}要你陪{mechanic_fang_yuan.ta}把今晚熬过去，再告诉{mechanic_fang_yuan.ta}该不该走。",
+    "limit_gap": "{mechanic_fang_yuan.ta}走了泵房没人顶，你留{mechanic_fang_yuan.ta}就得给{mechanic_fang_yuan.ta}一个理由。",
+    "meeting_reason": "{mechanic_fang_yuan.name}捏着省城热力公司的录用通知书站在主温度计前，说今晚要是关主泉眼复测，暖气就得靠你们俩烧辅炉顶上。",
+    "resource_gap": "{mechanic_fang_yuan.ta}掌着辅炉和总阀门，你掌着能不能停暖的那句话。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_snowbound",
+    "te_spring_decline"
+   ]
+  },
+  {
+   "chemistry": "{geologist_he_qian.name}要封井停暖，{head_nurse_su_man.name}要保签约，{nurse_lin_xinyi.name}只惦记三楼的老人。",
+   "id": "cc_trio_spring_audit_clash",
+   "identity_ids": [
+    "pi_night_duty_attendant",
+    "pi_staff_liaison_officer",
+    "pi_logistics_chief",
+    "pi_asset_supervisor"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
     {
      "a": "player",
      "a_to_b": {
       "tension": 2,
+      "trust": 4
+     },
+     "b": "nurse_lin_xinyi",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "上周夜里{nurse_lin_xinyi.ta}在理疗池边替你热敷冻僵的肩颈，两人吻在一起，白大褂口袋里至今揣着你送的护手霜。",
+     "stage": "intimate"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "head_nurse_su_man",
+     "b_to_a": {
+      "tension": 3,
       "trust": 3
      },
-     "b": "apprentice_mechanic_fang_yuan",
+     "reason": "前晚核对夜班考勤，{head_nurse_su_man.ta}故意留下陪你守夜，指尖划过你的手背，说下山后要把你调到护理部。",
+     "stage": "flirting"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "geologist_he_qian",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 2
+     },
+     "reason": "昨天在泵房借你的手电看流量计，两人凑得呼吸相闻，对方低声问你，疗养院要是黄了你去哪。",
+     "stage": "testing"
+    },
+    {
+     "a": "head_nurse_su_man",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 1
+     },
+     "b": "geologist_he_qian",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 1
+     },
+     "reason": "复核的人翻出了护理部截留附表的传真底单，两人从此见面不说话。",
+     "stage": "testing"
+    },
+    {
+     "a": "head_nurse_su_man",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "nurse_lin_xinyi",
      "b_to_a": {
       "tension": 2,
       "trust": 3
      },
-     "reason": "热力工程组上下级师徒，配合极为娴熟。",
+     "reason": "护士长一手带出来的护士，抽屉里压着什么，护士长心里有数。",
      "stage": "familiar"
     },
     {
      "a": "nurse_lin_xinyi",
      "a_to_b": {
-      "tension": 3,
-      "trust": 3
+      "tension": 1,
+      "trust": 2
      },
-     "b": "apprentice_mechanic_fang_yuan",
+     "b": "geologist_he_qian",
      "b_to_a": {
-      "tension": 3,
-      "trust": 3
+      "tension": 1,
+      "trust": 2
      },
-     "reason": "温柔女护士与技术工匠共赴生死，结成无间同盟。",
-     "stage": "testing"
+     "reason": "护士每天签的水温台账，复核的人一页页对过，两人只在数字上说过话。",
+     "stage": "acquainted"
     }
    ],
    "slots": [
     "nurse_lin_xinyi",
-    "apprentice_mechanic_fang_yuan"
+    "head_nurse_su_man",
+    "geologist_he_qian"
    ],
    "stakes": {
-    "irreplaceable_goal": "以高刚性力矩反推破除偏心卡死完成无损自救脱困。",
-    "limit_gap": "门洞导轨处于临界热膨胀形变状态，任何蛮动都会引发彻底冷焊抱死。",
-    "meeting_reason": "上头派人来检查冬季供暖，夜班护士陪着下泵房，锅炉房机工在前头打着手电。",
-    "resource_gap": "总工程师掌握整座动力中心管网图谱，女护士掌握全部随身应急医疗器具。"
+    "irreplaceable_goal": "三个人都在等你开口，封不封井由你这一句定。",
+    "limit_gap": "谁的话都有道理，你帮哪一个，另外两个都会记住。",
+    "meeting_reason": "{geologist_he_qian.name}测出主泉眼水温跌破红线要封井，{head_nurse_su_man.name}拦着不许动，{nurse_lin_xinyi.name}在管廊口急得眼眶发红。",
+    "resource_gap": "复核签章、随迁名单、巡诊记录各在一人手里，你夹在中间。"
    },
    "tags": [
-    "workplace",
-    "disaster"
+    "intimate"
    ],
    "tension_engine_ids": [
-    "te_sanatorium_heating_ruin",
-    "te_damper_door_deadweight_pinch"
+    "te_spring_decline",
+    "te_handover_eve"
    ]
   },
   {
-   "chemistry": "护士以特护负责人身份发布决死抢救指令，机电设备协调员严谨配合测算每道力矩数值。",
-   "id": "cc_facility_chief_and_nurse_command",
-   "identity_ids": [],
+   "chemistry": "{retiree_rep_lao_qiao.name}谁都信不过，院里的人在{retiree_rep_lao_qiao.ta}眼里不是要卖院的，就是帮着卖院的。",
+   "id": "cc_lao_qiao_receipts",
+   "identity_ids": [
+    "pi_night_duty_attendant"
+   ],
    "player_positions": [
-    "low",
-    "equal"
+    "low"
    ],
    "power_structure": "npc_high",
    "relations": [
     {
      "a": "player",
      "a_to_b": {
-      "tension": 3,
-      "trust": 3
+      "tension": 4,
+      "trust": 0
      },
-     "b": "nurse_lin_xinyi",
+     "b": "retiree_rep_lao_qiao",
      "b_to_a": {
       "tension": 3,
-      "trust": 3
+      "trust": 1
      },
-     "reason": "同处绝境，上下级界限消融于贴身死斗协作中。",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "apprentice_mechanic_fang_yuan",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 3
-     },
-     "reason": "同在动力维保组共事，彼此熟稔信任。",
-     "stage": "familiar"
-    },
-    {
-     "a": "nurse_lin_xinyi",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "apprentice_mechanic_fang_yuan",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "护士放下矜持全力依赖工匠臂膀发力破局。",
+     "reason": "上个月你半夜把咳醒的老伙计背去医务室，挨了句多管闲事；第二天，老人那份热水给你留着。",
      "stage": "testing"
     }
    ],
    "slots": [
-    "nurse_lin_xinyi",
-    "apprentice_mechanic_fang_yuan"
+    "retiree_rep_lao_qiao"
    ],
    "stakes": {
-    "irreplaceable_goal": "确保疗养院地热中枢免遭全毁，全员安全破门撤离。",
-    "limit_gap": "门前通路彻底堵死导致外援断绝，必须完全服从护士临危决断。",
-    "meeting_reason": "大雪封了山，邮车上不来，夜班护士拉着锅炉房机工去地下仓库清点还剩多少药和煤。",
-    "resource_gap": "护士拥有全院最高临床护理决断威信，协调员精通动力区备用回路位置。"
+    "irreplaceable_goal": "{retiree_rep_lao_qiao.ta}要你证明一回，你不是来卖院的。",
+    "limit_gap": "{retiree_rep_lao_qiao.ta}亮收据就断了院里的药款，你替{retiree_rep_lao_qiao.ta}跑腿也没人认你的份量。",
+    "meeting_reason": "{retiree_rep_lao_qiao.name}把你堵在阳光廊的残局前，问你是不是也拿了收购方的好处。",
+    "resource_gap": "{retiree_rep_lao_qiao.ta}攥着集资建院的联名收据，你只有一本巡检记录。"
    },
    "tags": [
-    "workplace",
-    "intimate"
+    "workplace"
    ],
    "tension_engine_ids": [
-    "te_steam_purge_rush",
-    "te_sanatorium_heating_ruin"
+    "te_retiree_beds",
+    "te_handover_eve"
    ]
   }
  ],
  "channels": [
   {
    "fidelity": "exact",
-   "id": "ch_nook_whisper_breath",
-   "reach": "all",
-   "text": "一米卷门死角狭缝两人肌肤紧贴急促滚烫的吐息与心跳共振"
+   "id": "ch_radio_station",
+   "reach": "当夜就能传到山下矿务局",
+   "text": "矿务局应急电台"
+  },
+  {
+   "fidelity": "exact",
+   "id": "ch_mail_truck",
+   "reach": "三天后送到省城",
+   "text": "一周两趟的邮车"
   },
   {
    "fidelity": "distorted",
-   "id": "ch_pump_hall_steam_echo",
-   "reach": "local",
-   "text": "高压减压阀尖锐嘶鸣与外侧抢险队伍隔门呼喊的沉闷回音"
+   "id": "ch_aide_gossip",
+   "reach": "一个早饭的工夫传遍三层楼",
+   "text": "护工大姐们的闲话"
   }
  ],
  "character_templates": [
   {
-   "adult_context": "已满二十一岁成年青年女性，持有高级特护资格认证，遇险展现出从容果决的救护者定力。",
+   "adult_context": "年满二十三岁、持证上岗第三年的疗养院夜班特护护士。",
    "age_range": [
-    21,
-    21
+    23,
+    26
    ],
    "appearance_options": [
-    "身着浅粉色修身透气医用护士制服套裙，外罩半敞开的纯白大褂，长发利落挽于护士帽内，容颜温润清丽娇俏可人，两腮带着莹润的光泽，在高温白雾剧烈喘息中双颊泛起娇艳酡红与晶莹热汗，下颌滑落汗滴。",
-    "护士服被蒸汽与香汗完全浸透紧紧贴覆在玲珑曼妙的身躯上，面庞在昏暗黄光下透出如凝脂般的柔嫩光泽，双手全力握紧实心不锈钢听诊器毫不犹豫对准开关猛烈敲击，温柔中透着令人心动的铿锵刚毅。"
+    "浅粉色护士制服套裙外罩半敞的白大褂，长发利落挽进护士帽里，容颜温润清丽，两腮被暖气烘出一点红。",
+    "白大褂口袋里总插着一支笔和一管护手霜，提着保温桶走路很轻，看人时眼睛先弯起来。"
    ],
    "decision": {
     "avoids": [
-     "慌乱啼哭的软弱作态",
-     "鲁莽盲动的粗暴蛮干"
+     "当着老人谈价钱的场合"
     ],
-    "contrast": "查房时轻声细语，连老疗养员打呼噜都舍不得叫醒；白雾灌进泵房时，却是夜班护士抓起听诊器，冲着卡死的开关一下一下往死里砸。",
-    "core_value": "医者仁心，临危不乱；在高温死线扑面时，凡所应变皆需果决，同心协力方能杀出重围。",
+    "contrast": "人前温顺得从不跟院办红脸；在你面前，她会揪着你袖口问到底。",
+    "core_value": "人老了，总得有个暖和地方落脚。",
     "goal_options": [
-     "以实心不锈钢听诊器金属听头猛烈敲击卡塞的微动开关复位触点",
-     "在蒸汽彻底窒息前协同机工重启电动卷门脱困自救"
+     "保住三楼老林工的床位",
+     "弄清泉眼的实情该不该告诉买方",
+     "听你亲口说开春留不留"
     ],
     "never": [
-     "在同伴脱困前独自抽身离去"
+     "把老人的病历拿去换好处"
     ],
     "prefers": [
-     "沉稳专注且体魄强健的担当男子",
-     "细致严谨的硬核工匠手段"
+     "肯为老人多走一趟的人"
     ],
     "pressure_responses": {
-     "breaking": "哪怕双臂酸麻颤抖、急促滚烫的吐息交织在机工耳畔，亦咬紧贝齿全力敲击直至触点回弹接通。",
-     "high": "在极限死角内整个人伏在机工胸膛前，双手紧紧握住听诊器金属听头，在机工引导下对准触点猛砸。",
-     "low": "在尖锐蒸汽啸叫中迅速镇定呼唤机工，敏锐指出大门停滞在于微动触点受震移位。",
-     "mid": "毫不犹豫解下外罩白大褂用冷凝水浸湿捂住口鼻，侧身挤入一米逼仄门洞死角狭缝。"
+     "breaking": "崩溃时躲进理疗室，一个人把整本台账重抄一遍。",
+     "high": "高压时抱着档案站到你面前，第一次把话说直。",
+     "low": "低压时笑着应下，转身记进自己的小本子。",
+     "mid": "中压时声音更轻，手上的活一下没停。"
     },
-    "relationship_stance": "锅炉房机工的手上总有冻疮和烫伤，护士每回巡到地下都会塞一管药膏；机工嘴上说不用，第二天值班室的暖气片就修好了。",
-    "withdrawal": "身体虚脱靠在机工肩头微喘平复剧烈心跳，面颊微侧避开机工目光掩饰羞怯。"
+    "relationship_stance": "不争不抢，认准了就一直守着。",
+    "withdrawal": "提着保温桶回值班间，把姜茶热了又热，等人来敲暖气管。"
    },
    "gender": "female",
-   "gender_reason": "高山疗养院二十一岁成年青年特护女护士，性格温柔体贴兼具临危不乱坚韧品格的女主。",
+   "gender_reason": "标题人物是贴身照料长住老人的温婉女护士，固定为女性。",
    "id": "nurse_lin_xinyi",
    "identity": {
-    "authority": "对疗养院患者病区供暖保障与地下理疗站紧急撤离拥有最高现场处置建议权。",
-    "exposure": "平日温柔文雅受人敬重的小护士，因施力紧贴在机工怀前，湿透薄衫贴身急促起伏的娇媚姿态被机工尽收眼底。",
-    "hidden": "白大褂内袋贴身收藏着一张地下动力区备用通风阀门分布示意图",
+    "authority": "长住疗养员夜间特护巡诊记录和理疗池每日水温实测台账，都要她签字。",
+    "exposure": "三名无儿女老林工的欠费催缴单全压在她抽屉里没交院办，药费是她拿夜班津贴垫的。",
+    "hidden": "她心里早认定了你，只是怕一开口，你就得陪她困在这座要卖掉的老院里。",
     "limits": [
-     "在防灾电动卷门未被敲击升起前无法抽身逃离蒸汽盲区",
-     "高温湿热环境使人体在十分钟内达到热衰竭耐受极限"
+     "没有护士长签字不能调动床位"
     ],
     "obligations": [
-     "确保病区供热稳定与自身安全撤离",
-     "与机工同舟共济排除机械死锁脱险"
+     "夜里每两个钟头巡一遍三楼老人"
     ],
     "resources": [
-     "一枚随身佩戴的医用特制加重双面纯不锈钢实心听诊器（听头重达一百八十克，实心高密度精铸不锈钢，边缘淬火极为坚硬抗敲击）",
-     "一包无菌医用防灼伤冷却凝胶敷料"
+     "一副随身的不锈钢听诊器",
+     "一包防灼伤冷却凝胶敷料",
+     "理疗室的钥匙"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "机工在管道破裂瞬间毫不犹豫以身躯遮挡飞溅蒸汽护住{npc.name}的勇毅担当",
-     "在逼仄死角内机工稳如磐石的强健臂膀与专注沉着的眼神"
+     "你夜里替她守着泵房的那份稳当",
+     "你记得每位老人的名字"
     ],
     "boundaries": [
-     "恪守正派医护人员的端庄自尊底线",
-     "脱困自救纯靠机械物理力矩绝不涉性"
+     "说一声“查房”，就松手停下"
     ],
     "desire_range": [
      2,
      4
     ],
-    "desired_position": "在卷门死角紧贴机工胸前，双手紧握听诊器听头由机工从后护持手臂合力猛砸触点。",
+    "desired_position": "值班床边并肩烘衣服的位置",
     "dislikes": [
-     "轻浮不庄重的孟浪举止",
-     "临阵推诿的自私行径"
+     "别人催她签字"
     ],
-    "expression": "脱险后在走廊轻柔取出医用敷料为机工处理被蒸汽灼红的手背，温声细语关切机工伤势，眼波流转满含感激深情。",
+    "expression": "亲近时先替你暖手，把额头抵在你肩上，很久才肯抬头。",
     "likes": [
-     "在剧烈机械震颤中被有力臂弯紧紧扣住腰肢维持重心的安稳踏实感",
-     "突破触点咬死瞬间机工贴在耳侧低沉温存的喘息安慰"
+     "一碗刚出锅的汤",
+     "下雪天的安静"
     ],
     "preconditions": [
-     "微动开关触点敲击复位回路成功通电",
-     "两人安全穿过卷门抵达常温干燥区域",
-     "两人都清醒，心意出于自己，不是白雾绝境里的依赖"
+     "两人都清醒，是她自己愿意",
+     "老人那边安顿妥当之后"
     ],
     "self_control_range": [
-     4,
+     3,
      5
     ]
    },
-   "public_role": "疗养院夜班护士",
+   "public_role": "疗养院夜班特护护士",
    "schedule": [
     {
-     "from": 1395,
-     "location_id": "loc_steam_damper_doorway",
-     "to": 1400
+     "from": 0,
+     "location_id": "loc_nurse_duty_room",
+     "to": 420
     },
     {
-     "from": 1400,
-     "location_id": "loc_door_jam_crawlspace_nook",
+     "from": 420,
+     "location_id": "loc_sanatorium_sunroom_lounge",
+     "to": 1080
+    },
+    {
+     "from": 1080,
+     "location_id": "loc_nurse_duty_room",
+     "to": 1320
+    },
+    {
+     "from": 1320,
+     "location_id": "loc_geothermal_pump_hall",
      "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "听头边缘产生微小磕碰磨损，两人手臂与手掌承受强烈撞击反震酸麻红肿。",
-      "option": "借不锈钢听诊器实心金属听头猛烈敲击受卡触点，利用金属撞击反弹力震松微动弹片恢复供电自救。"
+      "cost": "收购价一砍，院办会把停摆的账算到她头上。",
+      "option": "把泉眼衰减的实测数字交到交割会上"
      },
      {
-      "cost": "卷帘门偏心卡死自重远超人力极限，徒劳消耗体力导致急性热衰竭昏迷。",
-      "option": "徒手尝试向上托举重达数百公斤的金属隔断卷帘门。"
+      "cost": "瞒下的事迟早翻出来，她的签字第一个被追究。",
+      "option": "先压着数字，只替老人争床位"
      }
     ],
-    "pressure": "泵房内温度持续攀升缺氧加剧，必须在十分钟热衰竭来临前敲动微动开关复位升门脱困自救。",
-    "trigger": "地热主蒸汽减压阀法兰突发破裂，高温高压蒸汽喷涌弥漫，防灾卷帘门半落卡死阻断唯一出路。"
+    "pressure": "护住老人就得交底，交底就可能砸了全院的买卖。",
+    "trigger": "收购方要清空三楼欠费老林工的床位。"
    },
    "tags": [
     "workplace",
-    "disaster",
     "intimate"
    ],
    "voices": {
-    "inner": "白雾里什么都看不清，只听得见机工的心跳……比我听过的任何一个病人都快。不行，先出去，三楼还有人等着查房。",
-    "surface": "别慌，卷门是触点震偏了。听诊器的听头是实心的，你扶住我的手腕，对准弹片，一起砸。"
+    "inner": "要是院子卖了，你还会每晚等我敲两下暖气管吗。",
+    "surface": "你冷不冷？汤还热着，先喝一口。"
    }
   },
   {
-   "adult_context": "已满二十一岁成年青年女性，全面统揽急诊重症护理调度，遇险沉着理性指挥若定。",
+   "adult_context": "年满二十四岁、持证上岗的地下泵房值班机工。",
    "age_range": [
-    21,
-    21
+    24,
+    28
    ],
    "appearance_options": [
-    "内穿粉白相间修身护士衫，外套深蓝防静电医用工作罩衣，两腮线条饱满紧致带着莹润的光泽，在滚烫白雾重压下咬紧红唇全力施救。",
-    "秀发在防潮帽下微湿贴伏，面庞泛着激动的酡红，修长双腿半跪于水泥地板，双手青筋微显紧扣金属听头。"
+    "个子高，工装袖口挽到小臂，脸上常带一道擦不干净的煤灰。",
+    "话少，笑起来先低头，手掌宽厚，指节上有烫过的旧疤。"
    ],
    "decision": {
     "avoids": [
-     "慌乱盲动",
-     "怨天尤人"
+     "拿老人当筹码的人"
     ],
-    "contrast": "温柔知性的护士长，在沉重机械危机面前爆发出惊人的铿锵韧劲。",
-    "core_value": "物理撞击胜于徒手蛮推，只要震正微动开关触点，自控电机必能重新通电。",
+    "contrast": "看着闷，交底的时候比谁都敞亮。",
+    "core_value": "说好的事，就得做到。",
     "goal_options": [
-     "利用金属听头连续敲击震开卡阻簧片",
-     "协同机工拉紧复位弹簧脱困"
+     "想清楚该不该下山报到",
+     "替夜班护士守住泵房",
+     "让你说一句真话"
     ],
     "never": [
-     "背弃并肩战斗的伙伴"
+     "丢下没人管的炉子"
     ],
     "prefers": [
-     "严谨沉稳的机械操作",
-     "毫无迟疑的协同执行力"
+     "说话算数的人"
     ],
     "pressure_responses": {
-     "breaking": "紧咬银牙将全身气力倾注于金属听头，以极度坚韧的耐力死磕到底。",
-     "high": "俯身死角以自身重力协助机工压紧力臂末端连续砸击。",
-     "low": "严令机工保持呼吸平稳，仔细辨别触点内部机械卡塞声音。",
-     "mid": "果断将听头对准开关金属外壳凹槽建立敲击受力点。"
+     "breaking": "崩溃时一个人去煤棚抡锹到天亮。",
+     "high": "高压时站在主温度计前把话一口气说完。",
+     "low": "低压时闷头添煤，不接话。",
+     "mid": "中压时把录用通知书折得更小。"
     },
-    "relationship_stance": "视机工为最可靠的硬核工匠后盾，在灾厄中缔结生死不渝的深厚默契。",
-    "withdrawal": "在脱困后退至通风走廊深呼吸平复心绪。"
+    "relationship_stance": "朋友当兄弟，心上的人藏到最后。",
+    "withdrawal": "回煤棚坐在炉火前，抽一根烟不点。"
+   },
+   "gender": "male",
+   "gender_reason": "和女护士形成深夜送宵夜、擦煤灰的体力工种搭档反差，固定为男性。",
+   "id": "mechanic_fang_yuan",
+   "identity": {
+    "authority": "掌握地热总阀门调节和备用燃煤辅炉的启停。",
+    "exposure": "省城热力公司早就录用了他，他一直压着没去报到。",
+    "hidden": "他在等夜班护士一句话；等不到，他就打算跟你交底后一个人下山。",
+    "limits": [
+     "没有后勤主管签字不能动燃煤储备"
+    ],
+    "obligations": [
+     "守着辅炉，别让三楼断暖"
+    ],
+    "resources": [
+     "煤棚的钥匙",
+     "一张省城热力公司的技师证"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "你肯陪他在煤棚熬后半夜",
+     "你说话从不绕弯"
+    ],
+    "boundaries": [
+     "对方一摆手就停"
+    ],
+    "desire_range": [
+     1,
+     3
+    ],
+    "desired_position": "煤棚炉火前的长凳",
+    "dislikes": [
+     "西装革履的场面话"
+    ],
+    "expression": "表达得笨，递一碗汤、拍一下肩，什么都在里头。",
+    "likes": [
+     "烤得焦香的红薯"
+    ],
+    "preconditions": [
+     "两人清醒，他心里认了你"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "地下地热泵房值班机工",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_geothermal_pump_hall",
+     "to": 480
+    },
+    {
+     "from": 480,
+     "location_id": "loc_geothermal_pipe_corridor",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_geothermal_pump_hall",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "省城那份录用就此作废。",
+      "option": "留下烧炉，替全院顶过今晚"
+     },
+     {
+      "cost": "心里那句话再也没机会说出口。",
+      "option": "把辅炉交给你，自己连夜写信报到"
+     }
+    ],
+    "pressure": "顶一夜炉子，就赶不上省城报到的日子。",
+    "trigger": "今晚若关停主泉眼复测，全院暖气要靠辅炉顶上。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "voices": {
+    "inner": "我再不走，那张证就作废了；可我走了，谁替那位护士顶着。",
+    "surface": "炉子我看着，你上去歇会儿。"
+   }
+  },
+  {
+   "adult_context": "年满三十二岁、带了十年病区的特护病区护士长。",
+   "age_range": [
+    32,
+    38
+   ],
+   "appearance_options": [
+    "发髻一丝不乱，护士长帽檐压得低，白大褂扣到最上一颗。",
+    "眼角有细纹，眼神利，翻名单时指甲轻轻敲着纸边。"
+   ],
+   "decision": {
+    "avoids": [
+     "当众让她下不来台"
+    ],
+    "contrast": "人前严得吓人，人后会悄悄替值夜的人多盛一碗汤。",
+    "core_value": "护理部的人，一个都不能落下。",
+    "goal_options": [
+     "替护理部多争两个随迁编制",
+     "看清你到底站哪边",
+     "把护理部整体带去省城"
+    ],
+    "never": [
+     "把护理部的人丢在山里"
+    ],
+    "prefers": [
+     "做事有分寸的人"
+    ],
+    "pressure_responses": {
+     "breaking": "崩溃时一个人坐在理疗池边，把名单一张张撕了又拼。",
+     "high": "高压时摘下护士帽，第一次说自己也怕。",
+     "low": "低压时公事公办，催人签字。",
+     "mid": "中压时把名单压在玻璃板下，盯着你看。"
+    },
+    "relationship_stance": "先看你有没有用，再看你值不值得。",
+    "withdrawal": "回护理部办公室锁上门，把药柜重新点一遍。"
    },
    "gender": "female",
-   "gender_reason": "疗养院病区特护组长态，通晓医护防灾应急救援的干练女性。",
-   "id": "head_nurse_lin_xinyi",
+   "gender_reason": "统管全院护工的严厉前辈姐系角色，固定为女性。",
+   "id": "head_nurse_su_man",
    "identity": {
-    "authority": "对疗养区医疗设备应急断电与人员疏散拥有最高现场调度指挥权。",
-    "exposure": "干练温雅的女护士被汗水与蒸汽湿透制服，起伏的体态在逼仄空间完全展露。",
-    "hidden": "熟知地下动力区备用通风管道检修孔具体位置",
+    "authority": "并购后随迁省城新康复中心的四名护工推荐名单由她定。",
+    "exposure": "她私下截留了收购方给后勤老职工的安置补偿附表。",
+    "hidden": "她想拿那张附表替护理部多争两个编制，也想把你调到自己手下。",
     "limits": [
-     "受困于门洞下方狭缝缺乏重型破拆机具",
-     "必须在十分钟内排除机械死锁"
+     "名单要院办盖章才生效"
     ],
     "obligations": [
-     "保护病区抢救医疗物资完好",
-     "与机工安全撤离险境"
+     "护理部每个人的饭碗"
     ],
     "resources": [
-     "一柄高密度不锈钢双面听头听诊器",
-     "特制医用生理盐水降温喷雾"
+     "随迁推荐名单",
+     "护理部药柜盘点表"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "机工在危难中展现出的热力工程专业判断力与勇猛担当",
-     "近距离贴身支撑时对方如山岳般可靠的臂弯温度"
+     "你守口如瓶的那份可靠",
+     "你敢当面驳她"
     ],
     "boundaries": [
-     "严守医护人员端庄名誉",
-     "自救恪守硬核机械物理底线"
+     "她说“够了”就停"
     ],
     "desire_range": [
-     1,
-     2
+     2,
+     4
     ],
-    "desired_position": "在卷门死角俯身相依，胸前紧贴机工臂膀共同持握听头完成绝地逆转。",
+    "desired_position": "护理部办公桌对面的那把椅子",
     "dislikes": [
-     "犹豫退缩",
-     "轻浮孟浪"
+     "拖泥带水"
     ],
-    "expression": "默默递上干净干毛巾为机工擦拭脸上汗水，低声叮嘱机工注意补充电解质。",
+    "expression": "亲近时也要占先手，指尖划过你的手背，再等你回应。",
     "likes": [
-     "彼此心领神会的眼神对视",
-     "开关清脆弹开瞬间的机械复位声"
+     "整理得齐齐整整的名单"
     ],
     "preconditions": [
-     "卷门微动开关成功复位电机启动",
-     "人员全员脱险"
+     "两人清醒，她先点了头"
     ],
     "self_control_range": [
-     4,
+     3,
      5
     ]
    },
-   "public_role": "疗养院特护护理组长",
+   "public_role": "疗养院特护病区护士长",
    "schedule": [
     {
-     "from": 1395,
-     "location_id": "loc_steam_damper_doorway",
-     "to": 1400
+     "from": 0,
+     "location_id": "loc_sanatorium_sunroom_lounge",
+     "to": 420
     },
     {
-     "from": 1400,
-     "location_id": "loc_door_jam_crawlspace_nook",
+     "from": 420,
+     "location_id": "loc_nurse_duty_room",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_geothermal_pipe_corridor",
      "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "施力人员手掌受剧烈反震震颤酸麻，体力消耗达到临界生理极限。",
-      "option": "以不锈钢听头猛烈敲击微动开关金属罩，震正触点自救脱困。"
+      "cost": "护理部随迁名额被借机砍半，她声誉扫地。",
+      "option": "交出附表原件，公开补偿条款"
      },
      {
-      "cost": "耗时过长极易引发急性吸入性灼伤导致昏迷死亡。",
-      "option": "强行寻找电锯试图切开加厚镀锌金属门板。"
+      "cost": "后勤老职工的补偿款就此落空。",
+      "option": "继续压着附表，换两个编制"
      }
     ],
-    "pressure": "地下泵房高温高湿达到极限，必须立即排除卷帘门控制开关机械故障。",
-    "trigger": "主减压阀蒸汽法兰爆裂滚烫白雾弥漫，防灾卷门断电自锁卡死通道。"
+    "pressure": "保住护理部就得压下附表，压下附表就对不起后勤老职工。",
+    "trigger": "随迁名单只剩最后一张后勤编制。"
    },
    "tags": [
     "workplace",
-    "disaster",
-    "intimate"
+    "workplace_power"
    ],
    "voices": {
-    "inner": "热气越来越浓了……但只要有机工在身边，这受卡的开关必能被我们砸开！",
-    "surface": "触点卡死在右偏半毫米处！机工，按我指的位置，用听头连续砸那枚触点三次，用力！"
+    "inner": "我截了那张表，要是被翻出来，护理部谁也走不成。",
+    "surface": "这张表你签不签，给句痛快话。"
    }
   },
   {
-   "adult_context": "已满二十一岁成年女青年，具备医护与工程双重敏锐观察力，遇险沉着机敏。",
+   "adult_context": "年满二十九岁、在地产集团做了六年并购的驻场代表。",
    "age_range": [
-    21,
-    21
+    29,
+    34
    ],
    "appearance_options": [
-    "内穿浅粉色短袖修身医用工装，外系高腰白色围裙，两腮线条饱满紧致带着健康的红润，在滚烫白雾重压下咬紧红唇全力自救。",
-    "额前碎发被涔涔香汗浸湿，面颊在暴雨雷光下泛着清冷坚毅的酡红，修长双腿半跪于水泥地面，双手紧扣听诊器金属听头。"
+    "西装外套搭在臂弯，羊绒围巾一丝不苟，相机挂在胸前。",
+    "说话前先推一下眼镜，笑起来客气，眼睛却在算账。"
    ],
    "decision": {
     "avoids": [
-     "慌乱盲动",
-     "怨天尤人"
+     "空口的道德说教"
     ],
-    "contrast": "温雅沉静的医护女青年，在沉重机械危机面前爆发出惊人的铿锵韧劲。",
-    "core_value": "一切机械形变皆有物理反力点可破，以精准敲击胜盲目蛮干。",
+    "contrast": "人前精明得滴水不漏；被你按住手腕时，耳根会先红。",
+    "core_value": "数据不会骗人，人会。",
     "goal_options": [
-     "利用金属听头猛烈撞击微动开关触点复位",
-     "协同机工顶开卷帘门安全脱险"
+     "探出你对安置费的底线",
+     "按期签下交割",
+     "替私汤改建图找一个体面的说法"
     ],
     "never": [
-     "临阵弃械逃生"
+     "在合同上作假"
     ],
     "prefers": [
-     "精准的受力点分析",
-     "果断默契的力矩配合"
+     "能把账算明白的人"
     ],
     "pressure_responses": {
-     "breaking": "双手磨破红肿亦死死按住金属听头连续敲击，直至触点产生复位弹响。",
-     "high": "以自身全部自重从侧方压紧手臂，消除反震脱手滑脱。",
-     "low": "冷静扫视卷帘门卡死倾斜角度，瞬间锁定微动开关卡阻点。",
-     "mid": "果断将听诊器实心金属听头别入开关接缝建立坚固撞击点。"
+     "breaking": "崩溃时一个人在阳光廊把那张底图看到天亮。",
+     "high": "高压时摘下眼镜，承认自己也被总部逼着。",
+     "low": "低压时拿数据说话，笑意不减。",
+     "mid": "中压时把评估书往你面前推一寸。"
     },
-    "relationship_stance": "将机工视作并肩破除险局的生死搭档，在危机中萌生深厚笃定的信赖。",
-    "withdrawal": "在脱困后退至通风区域深呼吸平复心绪并整理制服。"
+    "relationship_stance": "合作就是合作，心动另算。",
+    "withdrawal": "回前楼客房，把热茶续满，不接任何电话。"
    },
-   "gender": "female",
-   "gender_reason": "高山疗养院二十一岁青年临床实习女护士态，通晓流体力学与热力学急救常识。",
-   "id": "medical_intern_lin_xinyi",
+   "gender": "any",
+   "gender_reason": "并购代表与玩家只是利益博弈与暧昧试探，性别开局再定。",
+   "id": "acquirer_rep_gu_ze",
    "identity": {
-    "authority": "对地下理疗水疗动力管网温度监控与应急生理指标拥有专业监测权。",
-    "exposure": "围裙被蒸汽汗水打湿贴合曼妙腰线，在逼仄空间完全展露知性女子罕见的柔韧体态。",
-    "hidden": "熟知回廊外侧备用机械排气连杆确切坐标",
+    "authority": "手握资产交割尾款放行权和地热采矿权溢价核算评估书。",
+    "exposure": "集团交割后要关停平民理疗区，改建高价私汤别墅，这张底牌一直瞒在公文包里。",
+    "hidden": "其实不想推平特护病房，只是没人给过别的选项。",
     "limits": [
-     "受困于死角缺乏重型液压破拆工具",
-     "必须在十分钟内排除机械抱死"
+     "集团总部定的价码改不了"
     ],
     "obligations": [
-     "力保疗养院核心理疗设备免遭高温破坏",
-     "与机工紧密协作逃生"
+     "按期把交割签下来"
     ],
     "resources": [
-     "一柄特种重型加厚不锈钢听头听诊器",
-     "特制医用降温凝胶贴片"
+     "交割尾款放行权",
+     "一部拍铭牌的相机"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "机工在危急关头以肉身抗衡滚烫蒸汽的勇毅担当",
-     "狭小死角内对方宽阔臂弯传来的沉厚力量感"
+     "讨价还价时你一步不让",
+     "你看穿了场面话也不点破"
     ],
     "boundaries": [
-     "严守医护自尊自爱底线",
-     "出路纯靠机械物理自救"
+     "对方一皱眉就收手"
     ],
     "desire_range": [
-     1,
-     2
+     2,
+     4
     ],
-    "desired_position": "伏在机工臂侧死角，双手叠于机工手背合力用金属听头敲击触点。",
+    "desired_position": "阳光廊棋桌对面的座位",
     "dislikes": [
-     "犹豫退缩",
-     "轻浮孟浪"
+     "被人当成拆迁的恶人"
     ],
-    "expression": "轻柔为机工擦去额头汗渍与水雾，温言抚慰并检查对方手腕伤痕。",
+    "expression": "亲近时先试探，靠近半步，等你不躲才再进一步。",
     "likes": [
-     "彼此眼神交汇瞬间的定力",
-     "开关触点严密复位瞬间的清脆金属咬合感"
+     "一壶好茶"
     ],
     "preconditions": [
-     "卷门微动触点成功复位电机升门",
-     "全员安然脱困出险"
+     "两人清醒，彼此都没拿交割当筹码"
     ],
     "self_control_range": [
-     4,
-     5
+     3,
+     4
     ]
    },
-   "public_role": "疗养院特护临床助理",
+   "public_role": "省城地产集团并购驻场代表",
    "schedule": [
     {
-     "from": 1395,
-     "location_id": "loc_steam_damper_doorway",
-     "to": 1400
+     "from": 0,
+     "location_id": "loc_sanatorium_sunroom_lounge",
+     "to": 480
     },
     {
-     "from": 1400,
-     "location_id": "loc_door_jam_crawlspace_nook",
+     "from": 480,
+     "location_id": "loc_geothermal_pump_hall",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_sanatorium_sunroom_lounge",
      "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "施力人员前臂与手掌承受强烈撞击反震造成肌肉酸麻淤青。",
-      "option": "以不锈钢听头连续撞击触点外壳，震脱卡滞卡爪使控制开关复位通电自救。"
+      "cost": "集团追究泄密，驻场代表的饭碗保不住。",
+      "option": "把私汤改建图摊给督导和院办"
      },
      {
-      "cost": "徒劳耗费宝贵体力极易导致缺氧昏迷断送生路。",
-      "option": "强行寻找铁镐砸击坚固的混凝土门垛。"
+      "cost": "开春推土机进山那天，驻场代表再没脸回山里。",
+      "option": "照总部的价码签下交割"
      }
     ],
-    "pressure": "泵房内温度极速升高氧气稀薄，必须在触点彻底烧死前手动敲击复位升门。",
-    "trigger": "高压减压阀爆开喷涌滚烫白雾，重型防火卷帘门落下一半卡死在导轨中。"
+    "pressure": "压价成了，就得亲手推平老人的病房。",
+    "trigger": "评估团要在交割前探清安置费的口风。"
    },
    "tags": [
     "workplace",
-    "disaster",
-    "intimate"
+    "workplace_power"
    ],
    "voices": {
-    "inner": "蒸汽越来越烫了……只要这枚听头不脱手，我们一定能把卷门复位升起来！",
-    "surface": "机工，看准微动开关右侧受力点！听诊器听头硬度极高，冲着接缝一起砸下去！"
+    "inner": "要是你开口让我留下这片理疗区，我说不定真会去跟总部吵。",
+    "surface": "安置费的事，咱们关起门来谈。"
    }
   },
   {
-   "adult_context": "已满二十二岁成年青年，精通水暖锅炉与电动卷门机械电气原理，身体健硕刚毅果敢。",
+   "adult_context": "年满二十七岁、在矿务局做了五年地热复核的工程师。",
    "age_range": [
-    21,
-    23
+    27,
+    32
    ],
    "appearance_options": [
-    "身穿深蓝耐磨纯棉短袖工装与加厚工装长裤，双臂肌肉结实紧绷，眼神坚毅沉稳，额前浸满用力迸发的汗珠与蒸汽水雾。",
-    "腰系多功能皮质工具包，双手佩戴防滑耐热手套，在滚烫白雾前宛若中流砥柱稳如磐石。"
+    "冲锋衣领口拉到下巴，眼镜片上常蒙一层白汽。",
+    "手指冻得发红，勘探记录本从不离手，边角写满小字。"
    ],
    "decision": {
     "avoids": [
-     "推诿拖延",
-     "弃弱自保"
+     "拿数据做人情"
     ],
-    "contrast": "平日沉稳寡言的厚重技术员，在生死一线时爆发出令人心折的刚毅与担当。",
-    "core_value": "机械故障终有破绽，只要找准受力卡点，实心铁器必能震开卡死触点。",
+    "contrast": "人前冷淡得只认曲线；扶稳了跌进怀里的人，耳根先红。",
+    "core_value": "曲线不会撒谎。",
     "goal_options": [
-     "以扳手护持听诊器听头防止打滑",
-     "全力挥动不锈钢听头猛砸微动开关触点"
+     "弄清衰减到底是天灾还是人为",
+     "决定交割前亮不亮数据",
+     "听你说一句该不该报"
     ],
     "never": [
-     "背叛护士的信任"
+     "在复核报告上签假字"
     ],
     "prefers": [
-     "稳扎稳打的物理自救",
-     "毫无保留的绝对信赖"
+     "讲证据的人"
     ],
     "pressure_responses": {
-     "breaking": "以肩膀死死顶住发热的卷门底沿，哪怕皮肉滚烫也要为护士挡住扑面热浪。",
-     "high": "双手完全包覆住护士双手，毫无保留爆发全身背肌与手臂力量连续猛砸。",
-     "low": "迅速跪地稳固门底狭缝空间，为两人争取刚性避险空隙。",
-     "mid": "伏身死角指引护士调整敲击角度，确保撞击力垂直导入触点中轴。"
+     "breaking": "崩溃时独自下管廊，一块表一块表地重抄。",
+     "high": "高压时摘下眼镜擦了又擦，问你要一句准话。",
+     "low": "低压时只报数字，不带语气。",
+     "mid": "中压时把曲线图摊开，指着红线不说话。"
     },
-    "relationship_stance": "在锅炉房一住就是好几个冬天，整座疗养院的暖气都靠这双手；夜班护士是唯一一个会下到泵房来、问一句冷不冷的人。",
-    "withdrawal": "确认护士安然无恙后方才脱力坐在通风口地面上喘息微笑。"
+    "relationship_stance": "慢热，认定了就把手稿都交给你。",
+    "withdrawal": "回管廊尽头抄表，抄到手冻僵也不上来。"
+   },
+   "gender": "any",
+   "gender_reason": "复核工程师与玩家是并肩查数据的暧昧搭档，性别开局再定。",
+   "id": "geologist_he_qian",
+   "identity": {
+    "authority": "对老疗养院温泉出水量和地热衰减率有官方复核签章权。",
+    "exposure": "三号泉眼因冻土位移已出现水温衰减，如实上报收购价要砍四成。",
+    "hidden": "上游分水井被人提前关过，这件事只记在记录本最后一页。",
+    "limits": [
+     "签章要如实，不能看人情"
+    ],
+    "obligations": [
+     "交割前报出复核结论"
+    ],
+    "resources": [
+     "三号泉眼的水温衰减曲线",
+     "矿务局复核签章"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "你肯陪着把每一块表抄完",
+     "你问的问题都问在点子上"
+    ],
+    "boundaries": [
+     "对方说“等等”就停"
+    ],
+    "desire_range": [
+     1,
+     3
+    ],
+    "desired_position": "管廊里并排抄表的身边",
+    "dislikes": [
+     "被人催着改结论"
+    ],
+    "expression": "亲近时很笨拙，先把眼镜摘下来，再问一句可不可以。",
+    "likes": [
+     "干燥的手套"
+    ],
+    "preconditions": [
+     "两人清醒，对方先摘下了眼镜"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "矿务局地热资源复核工程师",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_geothermal_pipe_corridor",
+     "to": 480
+    },
+    {
+     "from": 480,
+     "location_id": "loc_geothermal_pump_hall",
+     "to": 1080
+    },
+    {
+     "from": 1080,
+     "location_id": "loc_geothermal_pipe_corridor",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "收购搁浅，全院上下都会怪到复核的人头上。",
+      "option": "把衰减曲线和关井记录一起交上去"
+     },
+     {
+      "cost": "真正动手脚的人照样拿着收购款下山。",
+      "option": "只报衰减，压下关井记录"
+     }
+    ],
+    "pressure": "亮出数据就砸穿收购价，不亮就违了复核的本分。",
+    "trigger": "三号泉眼的出水温度跌破了红线。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "voices": {
+    "inner": "报了，这里的老人没地方去；不报，我这辈子签的字都不干净。",
+    "surface": "数据就是数据，我只负责报。"
+   }
+  },
+  {
+   "adult_context": "年满六十岁、在疗养院住了八年的退休老林工。",
+   "age_range": [
+    60,
+    66
+   ],
+   "appearance_options": [
+    "花白寸头，棉袄扣得严实，咳起来整个人往前弓。",
+    "手掌粗得像树皮，下棋时拿棋子的手抖，落子却很重。"
+   ],
+   "decision": {
+    "avoids": [
+     "穿西装的人"
+    ],
+    "contrast": "嘴上凶得能把人骂走；夜里会把自己那份热水先让给值夜的人。",
+    "core_value": "这院子是我们一锹一锹挖出来的。",
+    "goal_options": [
+     "保住老伙计们的床位",
+     "把收据托付给靠得住的人",
+     "看清你是不是来卖院的"
+    ],
+    "never": [
+     "卖了老伙计"
+    ],
+    "prefers": [
+     "说话算数的年轻人"
+    ],
+    "pressure_responses": {
+     "breaking": "崩溃时一个人坐在残局前，咳得说不出话。",
+     "high": "高压时攥着收据不撒手，谁劝都不听。",
+     "low": "低压时骂几句，照样下棋。",
+     "mid": "中压时拍着棋桌，嚷着要写信给省报。"
+    },
+    "relationship_stance": "谁都信不过，信了就是一辈子。",
+    "withdrawal": "回三楼病房，把收据塞进棉袄内兜，闭眼装睡。"
    },
    "gender": "male",
-   "gender_reason": "地下热力动力中心青年机工，肩负护卫泵房设备与受困人员之责。",
-   "id": "apprentice_mechanic_fang_yuan",
+   "gender_reason": "东北老林场退下来的老工长形象，固定为男性。",
+   "id": "retiree_rep_lao_qiao",
    "identity": {
-    "authority": "对现场蒸汽阀门紧急处置与防灾卷门手动复位拥有最高操作建议权。",
-    "exposure": "工装短袖被汗水蒸汽湿透贴紧胸膛，在近身施力时男子汉纯阳气魄完全展现。",
-    "hidden": "随身携带一枚高硬度淬火纯钢螺丝刀杆",
+    "authority": "代表十二名长住老林工，持有当年林场集资建院的原始联名收据。",
+    "exposure": "他的肺心病入冬重了，一直瞒着院里没上报。",
+    "hidden": "他怕自己走后没人再管这群老伙计，想把收据托付给一个靠得住的人。",
     "limits": [
-     "身负护卫护士重托绝不退后半分",
-     "死角逼仄难以施展全身力量"
+     "肺心病入冬加重，走不了远路"
     ],
     "obligations": [
-     "以身为盾护住护士免受高温蒸汽喷溅灼伤",
-     "合力敲击开关排除死锁"
+     "给老伙计们找个落脚处"
     ],
     "resources": [
-     "特制加长合金阀门钩扳手",
-     "耐高温石棉阻燃密封生料带",
-     "耐热橡胶工装手套"
+     "联名集资收据",
+     "老伙计们的信任"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "护士在千钧一发之际毫无娇贵做作、与自己并肩卧地拼命的坚韧气魄",
-     "紧贴近战时护士面颊透出的温润娇红与急促滚烫的吐息"
+     "你答应的事真做到了",
+     "你肯陪老人下完一盘棋"
     ],
     "boundaries": [
-     "恪守规矩分寸",
-     "绝无轻慢之意"
+     "他摆手说“走开”就退开"
     ],
     "desire_range": [
-     1,
-     2
+     0,
+     1
     ],
-    "desired_position": "后背抵住水泥墙垛，双手紧紧扣住不锈钢听头，由护士伏于怀侧合力向下敲击。",
+    "desired_position": "阳光廊残局对面的座位",
     "dislikes": [
-     "轻蔑工匠",
-     "言而无信"
+     "被人当成累赘"
     ],
-    "expression": "脱险后默默将自身干燥外衣披在护士微湿的护士制服肩头，退后半步恭敬守卫。",
+    "expression": "不谈情爱，只把信任交给认准的人。",
     "likes": [
-     "彼此掌心交叠时的沉稳踏实",
-     "同声发力突破难关时的心意共鸣"
+     "一盘没下完的棋"
     ],
     "preconditions": [
-     "全员脱困安全无虞",
-     "蒸汽管道成功切断"
+     "彼此清醒、信得过"
     ],
     "self_control_range": [
-     4,
+     5,
      5
     ]
    },
-   "public_role": "疗养院锅炉房机工",
+   "public_role": "常住老林工疗养员代表",
    "schedule": [
     {
-     "from": 1395,
-     "location_id": "loc_steam_damper_doorway",
-     "to": 1400
+     "from": 0,
+     "location_id": "loc_sanatorium_sunroom_lounge",
+     "to": 480
     },
     {
-     "from": 1400,
-     "location_id": "loc_door_jam_crawlspace_nook",
+     "from": 480,
+     "location_id": "loc_sanatorium_sunroom_lounge",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_sanatorium_sunroom_lounge",
      "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "手掌虎口在剧烈金属反冲下产生剧烈震颤与轻度淤血。",
-      "option": "借不锈钢听头与扳手组成复合敲击杠杆，以连续猛击震开卡滞簧片自救。"
+      "cost": "他得认下自己再也护不住老伙计。",
+      "option": "把收据交给你，托你去谈"
      },
      {
-      "cost": "可能导致门片变形彻底咬死在导轨中丧失全部开启可能。",
-      "option": "用扳手强行砸击坚固的卷门镀锌叶片。"
+      "cost": "病一发作，山路封着送不出去。",
+      "option": "自己攥着收据去堵评估团"
      }
     ],
-    "pressure": "高温热浪持续聚积，必须在触点彻底烧死前施加猛烈撞击力矩破锁恢复电机供电。",
-    "trigger": "蒸汽减压阀法兰爆裂白雾弥漫，防灾卷门半落卡死，一米死角为唯一逃生通道。"
+    "pressure": "亮出收据就断了院里的药款，不亮老伙计们就没了落脚处。",
+    "trigger": "听说收购方开春要拆老理疗楼。"
    },
    "tags": [
-    "workplace",
-    "disaster",
-    "intimate"
+    "workplace"
    ],
    "voices": {
-    "inner": "护士整个人缩在我怀里，护士服都被蒸汽打湿了……别慌，这泵房我比谁都熟，今晚一定把人带上去。",
-    "surface": "护士往里缩一点，别碰管子！我拿扳手垫住卷门底边，你看准触点，我数到三。"
-   }
-  },
-  {
-   "adult_context": "已满二十二岁成年青年工程师，具备全套高级热力司炉与电气应急抢险资质，冷静机敏。",
-   "age_range": [
-    21,
-    23
-   ],
-   "appearance_options": [
-    "身穿深蓝防静电耐高温连体工装，腰挂专业工具包，身形挺拔矫健，眼神沉静敏锐。",
-    "手持防爆探照灯，工装拉链微开露出结实锁骨，在急迫险情下有条不紊精准指挥。"
-   ],
-   "decision": {
-    "avoids": [
-     "盲目冒险",
-     "违规操作"
-    ],
-    "contrast": "现代热力专家与温柔女护士在逼仄蒸汽通道中的硬核化学反应。",
-    "core_value": "任何复杂的自动化死锁，本质上都有最原始的纯机械反力可以攻克。",
-    "goal_options": [
-     "利用不锈钢听头人工震正微动开关触点",
-     "协同抬升卷门安全出困"
-    ],
-    "never": [
-     "在风险未清前让护士以身犯险"
-    ],
-    "prefers": [
-     "严谨精准的技术推演",
-     "临危不乱的执行力"
-    ],
-    "pressure_responses": {
-     "breaking": "毫不动摇保持发力姿势直至听见微动开关完全复位的清脆回弹声响。",
-     "high": "在极限逼仄死角内以身体替护士挡住上方滴落的高温冷凝水，合力向下猛砸。",
-     "low": "迅速判断出大门停滞因配电箱继电器触点卡塞所致，指出微动开关为唯一突破口。",
-     "mid": "用强光探照笔为护士精准标定听头撞击的最佳接触角与着力面。"
-    },
-    "relationship_stance": "恪尽职守又深怀体贴，在危险中给予护士无可替代的坚实安全感。",
-    "withdrawal": "协助护士撤离至安全通风区后立即关闭管网主气阀。"
-   },
-   "gender": "male",
-   "gender_reason": "热力系统驻场工程师，精通大型锅炉减压系统与气动隔断门机械原理。",
-   "id": "boiler_technician_fang_yuan",
-   "identity": {
-    "authority": "掌控地下蒸汽管网应急旁通切断与防灾电动卷门现场处置指挥权。",
-    "exposure": "阻燃工装被热气蒸透，近距离伏卧时散发着阳刚利落的气息。",
-    "hidden": "知晓地下管廊备用重力排风百叶窗确切机械坐标",
-    "limits": [
-     "高温蒸汽隔断外侧大型破拆工具介入",
-     "必须依靠手工便携器具反向排除故障"
-    ],
-    "obligations": [
-     "排查消除锅炉房结构性爆炸隐患",
-     "安全引导林护士脱离险境"
-    ],
-    "resources": [
-     "防爆工业强光探照笔",
-     "精密不锈钢调缝卡尺",
-     "气密防热护目镜"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "护士在危机中对机械原理解释的敏锐领悟力与毫不犹豫的决断魄力",
-     "彼此贴身协作中年轻护士身上淡雅体香与急促呼吸形成的反差冲击"
-    ],
-    "boundaries": [
-     "严守专业工程师职业操守",
-     "规矩分明"
-    ],
-    "desire_range": [
-     1,
-     2
-    ],
-    "desired_position": "并肩伏卧于门缝死角，单手撑地保持避险空隙，另一手与护士紧握听头全力砸击。",
-    "dislikes": [
-     "违章蛮干",
-     "盲目自大"
-    ],
-    "expression": "护送护士至安全区域后，微笑着递上干净纸巾，目光温和坚定。",
-    "likes": [
-     "默契的眼神确认",
-     "手把手校准器械时的体温传递"
-    ],
-    "preconditions": [
-     "完全排除热力管道二次爆炸隐患",
-     "人员无伤撤离"
-    ],
-    "self_control_range": [
-     4,
-     5
-    ]
-   },
-   "public_role": "热力系统驻场工程师",
-   "schedule": [
-    {
-     "from": 1395,
-     "location_id": "loc_steam_damper_doorway",
-     "to": 1400
-    },
-    {
-     "from": 1400,
-     "location_id": "loc_door_jam_crawlspace_nook",
-     "to": 1439
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "工具把手产生微小磨损，施力人员手臂承受剧烈撞击酸胀。",
-      "option": "以不锈钢听头敲击触点外壳震开卡塞卡爪，顺势重启电机升门脱困。"
-     },
-     {
-      "cost": "螺栓受重热胀紧固无法在短时间内拧动，极度浪费宝贵逃生时间。",
-      "option": "强行拆卸导轨固定螺栓试图整体摇晃大门。"
-     }
-    ],
-    "pressure": "泵房将在几分钟内达到人体耐受极限，必须在触点彻底融化前手动敲击复位自救。",
-    "trigger": "减压阀爆开喷射高温高压白雾，防灾电动隔断金属卷门落下一半卡死在导轨中。"
-   },
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "voices": {
-    "inner": "只要听头咬准开关，这个冲击力足够震开机械卡阻……护士，跟紧我的节奏，三二一砸！",
-    "surface": "护士，触点卡在限位槽边缘！听诊器听头刚性完全足够，冲着外壳缝隙用力砸下去，就能震开簧片！"
-   }
-  },
-  {
-   "adult_context": "已满二十二岁成年青年学者，体格魁梧神情沉毅，精通大口径管网与电动卷门结构。",
-   "age_range": [
-    21,
-    23
-   ],
-   "appearance_options": [
-    "身穿黑色战术工装背心与耐磨工装长裤，双臂青筋虬结，神情沉静冷静，眼神深邃锐利，白大褂口袋里插着一支体温计。",
-    "腰系加厚多功能装备带，佩戴防割手套，在倾泻滚烫的蒸汽前稳如磐石从容自若。"
-   ],
-   "decision": {
-    "avoids": [
-     "推诿扯皮",
-     "投机取巧"
-    ],
-    "contrast": "深沉强悍的暖通专家与温柔体贴的年轻女护士，在机械死线前形成的强烈反差张力。",
-    "core_value": "一切结构皆有力学破绽，只要找准力矩反支点，千钧大木亦可扳正。",
-    "goal_options": [
-     "利用合金扳手与听头组装复合杠杆",
-     "合力砸动卡死微动触点"
-    ],
-    "never": [
-     "在重门未开前抛下同伴"
-    ],
-    "prefers": [
-     "硬桥硬马的扎实手艺",
-     "毫无保留的生死协作"
-    ],
-    "pressure_responses": {
-     "breaking": "双臂肌肉暴胀如铁，怒吼声中硬生生将触点震回原始电路。",
-     "high": "双手死死握住听头，以千钧双臂全力向下连续砸击触点。",
-     "low": "冷静扫视卷门倾斜夹角，瞬间锁定受力最集中的微动开关盒。",
-     "mid": "护住护士身躯，指导其将不锈钢听头卡入受力中心槽口。"
-    },
-    "relationship_stance": "视护士为值得誓死守护的知性女护士，危难中建立生死莫逆的赤诚信任。",
-    "withdrawal": "确认大门完全回正升起后，单臂护送护士安全撤至大堂。"
-   },
-   "gender": "male",
-   "gender_reason": "暖通总工程师，对深层地热管网流体动力学与自控机械卡阻经验极为丰富。",
-   "id": "hvac_architect_fang_yuan",
-   "identity": {
-    "authority": "掌控全疗养院地热中枢紧急安全泄压与破拆最终决断权。",
-    "exposure": "黑色工装被雨水汗水打湿勾勒出雄健背脊，散发着沉稳刚烈的阳刚气概。",
-    "hidden": "掌握地下泵房备用手动常闭旁通蝶阀确切坐标",
-    "limits": [
-     "受困于死角缺乏重型液压破拆机具",
-     "必须依靠现有便携器材完成力学反推"
-    ],
-    "obligations": [
-     "保护护士人身安全",
-     "确保疗养院核心温泉动力免遭全毁"
-    ],
-    "resources": [
-     "特种合金加力扳手",
-     "泵房三维管网矢量蓝图",
-     "高等级防割耐高温手套"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "护士在高温白雾绝境中不失医护大度的坚韧沉静",
-     "贴身施力时护士温润如玉的身段与柔韧坚毅的敲击姿态"
-    ],
-    "boundaries": [
-     "严守专业分寸",
-     "严守自愿安全原则"
-    ],
-    "desire_range": [
-     1,
-     2
-    ],
-    "desired_position": "单臂护在护士身前构成安全空隙，另一手与护士共同紧握听头全力下砸。",
-    "dislikes": [
-     "轻浮傲慢",
-     "无端猜忌"
-    ],
-    "expression": "脱险后退后三步站定敬礼，沉声道一句‘护士受惊了，工程技术部门幸不辱命’。",
-    "likes": [
-     "彼此心照不宣的眼神对碰",
-     "合力突破死锁瞬间的畅快淋漓"
-    ],
-    "preconditions": [
-     "卷门完全升起人员脱险",
-     "医疗物资完好"
-    ],
-    "self_control_range": [
-     4,
-     5
-    ]
-   },
-   "public_role": "疗养院机电设备总工程师",
-   "schedule": [
-    {
-     "from": 1395,
-     "location_id": "loc_steam_damper_doorway",
-     "to": 1400
-    },
-    {
-     "from": 1400,
-     "location_id": "loc_door_jam_crawlspace_nook",
-     "to": 1439
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "手臂与手掌肌肉极度酸痛，工具把手产生微量金属疲劳应力。",
-      "option": "以不锈钢听头连续砸击微动开关，合力震脱卡爪脱扣自救。"
-     },
-     {
-      "cost": "重达数百公斤的自重极易造成肩关节脱臼骨折，成功率几乎为零。",
-      "option": "强行以身体肩膀向上托举整面半悬挂金属卷帘门。"
-     }
-    ],
-    "pressure": "必须在有限时间内以连续猛击震开开关死锁，否则全员将窒息烫伤遇难。",
-    "trigger": "高温减压阀爆开喷涌白雾，卷门落下一半卡死在导轨中，险情迫在眉睫。"
-   },
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "voices": {
-    "inner": "护士冻得直哆嗦，还死死攥着听诊器……这套供暖是我一根管子一根管子排的，今晚绝不能让蒸汽烫着人。",
-    "surface": "护士莫慌！这自控开关吃的是偏心卡塞！听头砸准了接缝，我们合力管保把这东西震回位！"
+    "inner": "我要是熬不过这个冬天，这张收据得交到一个靠得住的人手里。",
+    "surface": "谁卖院，我就跟谁拼了这把老骨头。"
    }
   }
  ],
@@ -1167,202 +1342,162 @@
  "clock_style": "hm",
  "content_tags": [
   "intimate",
-  "bodily_harm",
-  "death",
-  "crime",
   "workplace",
+  "workplace_power",
+  "bodily_harm",
   "disaster"
  ],
  "custom": false,
  "customs": [
-  "疗养院特护人员入驻地下理疗供暖泵房巡视前需佩戴听诊器与耐高温防滑胶鞋。",
-  "护士平日在病区温柔细致端庄文雅，唯有突发高热死线压制下方能放下羞怯紧密贴身协作。",
-  "护士随身挂带特制加厚双面实心纯不锈钢听诊器，兼具心肺听诊与防身敲击刚性功能。",
-  "热力机工巡视主管道随身携带多功能阀门扳手与测温枪，器械按规程插挂于腰间工装袋。"
+  "夜里想找泵房的人，不用喊，敲两下暖气管，那头就知道有人等。",
+  "老林工过冬讲究一壶热水一盘棋，阳光廊的残局谁也不许收。",
+  "护士下夜班要给值守的人留一碗汤，这是老院传下来的规矩。",
+  "评估团进山那天起，院里人说话都先看一眼走廊的磨砂玻璃。"
  ],
  "daily_activities": [
   {
    "beats": [
-    "使用特制实心不锈钢听诊器贴住主管道外壁细听汽蚀微动声",
-    "在记录板上抄录高温地热循环水进水出水瞬时温差参数",
-    "检查管道支吊架弹簧热位移指示刻度处于标准范围"
+    "查完夜房的护士提着保温桶下到泵房",
+    "在轰鸣的循环管旁倒一杯滚烫的姜茶，递到{player.name}手里"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [
+    "hook_lin_pipe_knock",
+    "hook_lin_cold_hands",
+    "hook_lin_ledger_open"
+   ],
+   "id": "act_ginger_tea_thermos",
+   "location_ids": [
+    "loc_geothermal_pump_hall"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "保温桶里的红枣姜茶"
+  },
+  {
+   "beats": [
+    "熄灯后的理疗室白雾氤氲，两人坐在池沿把脚泡进温水",
+    "替彼此揉开巡了一晚冻僵的小腿"
+   ],
+   "duration_minutes": 40,
+   "hook_ids": [],
+   "id": "act_pool_ankle_soak",
+   "location_ids": [
+    "loc_mineral_spring_therapy_pool"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "理疗池边的脚踝热敷"
+  },
+  {
+   "beats": [
+    "沾满雪沫的外套搭上滚烫的铸铁暖气片",
+    "两人在值班床边肩并肩，听窗外林海的风声"
    ],
    "duration_minutes": 30,
    "hook_ids": [],
-   "id": "act_stethoscope_acoustic_routine_check",
+   "id": "act_radiator_coat_drying",
    "location_ids": [
-    "loc_geothermal_pump_hall"
+    "loc_nurse_duty_room"
    ],
-   "start_minute": 1395,
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "暖气片上的烘衣时刻"
+  },
+  {
+   "beats": [
+    "打着手电走进潮湿温热的管廊，一人报数一人记",
+    "过道窄，呼吸在白汽里交错"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_corridor_gauge_round",
+   "location_ids": [
+    "loc_geothermal_pipe_corridor"
+   ],
+   "start_minute": null,
    "tags": [
     "workplace"
    ],
-   "title": "晨间减压阀组流体听诊检视"
+   "title": "管廊压力表前并肩抄表"
   },
   {
    "beats": [
-    "使用合金扳手交叉紧固对角法兰高强度螺栓",
-    "使用红外测温枪排查法兰接缝有无微量高温过热汽化",
-    "用耐磨绒布擦除管道绝热铁皮表面冷凝水垢"
+    "老人们睡下后，在绿植间把没下完的象棋残局走完",
+    "顺手掰开一只烤得焦香的红薯分着吃"
    ],
-   "duration_minutes": 20,
+   "duration_minutes": 40,
    "hook_ids": [],
-   "id": "act_flange_gasket_tightening_log",
+   "id": "act_sunroom_endgame",
    "location_ids": [
-    "loc_geothermal_pump_hall"
+    "loc_sanatorium_sunroom_lounge"
    ],
-   "start_minute": 1400,
+   "start_minute": null,
    "tags": [
     "workplace"
    ],
-   "title": "高压法兰螺栓扭矩防松校验"
+   "title": "阳光廊下的残局收尾"
   },
   {
    "beats": [
-    "手动按下微动开关测试镀锌卷帘下落限位触点回弹力",
-    "清理导轨侧壁导向槽内部杂物并涂抹高温润滑脂",
-    "检查应急手动拉链链条传动箱卡位离合行程"
-   ],
-   "duration_minutes": 45,
-   "hook_ids": [],
-   "id": "act_damper_door_limit_switch_test",
-   "location_ids": [
-    "loc_steam_damper_doorway"
-   ],
-   "start_minute": 1405,
-   "tags": [
-    "workplace"
-   ],
-   "title": "防灾电动卷门行程开关测试"
-  },
-  {
-   "beats": [
-    "察看天花板高温排汽烟道重力平衡锤配重位置",
-    "使用探照灯检查防雨百叶窗有无落叶杂物堵塞风道",
-    "手动测试抗台风紧急排风阀气动执行器开合动作"
-   ],
-   "duration_minutes": 25,
-   "hook_ids": [],
-   "id": "act_steam_vent_damper_patrol",
-   "location_ids": [
-    "loc_geothermal_pump_hall"
-   ],
-   "start_minute": 1410,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "地下泵房重力排风百叶巡检"
-  },
-  {
-   "beats": [
-    "大雪封山的午后，锅炉师傅在泵房的蒸汽管边上烤了几个红薯。",
-    "夜班护士下来抄读数，闻到香味，站在门口不肯走了。",
-    "师傅掰了一半递过去，护士捧着烫手的红薯，说这比食堂的饭好吃多了。"
+    "护士拉过{player.name}被冷水和铁管磨糙的手掌",
+    "低着头一点点抹匀甘油护手霜，指腹温软"
    ],
    "duration_minutes": 15,
    "hook_ids": [
-    "hook_fangyuan_frozen_pear",
-    "hook_fangyuan_radiator",
-    "hook_xinyi_blood_pressure"
+    "hook_lin_pipe_knock",
+    "hook_lin_cold_hands",
+    "hook_lin_ledger_open"
    ],
-   "id": "act_thermal_burn_first_aid_drill",
+   "id": "act_hand_cream_pocket",
+   "location_ids": [
+    "loc_nurse_duty_room"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "白大褂口袋里的护手霜"
+  },
+  {
+   "beats": [
+    "借着配电柜的指示灯，和对方摊开泛黄的建院水文图纸",
+    "在纸页边缘交换一个心照不宣的眼神"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_hydrology_chart_check",
    "location_ids": [
     "loc_geothermal_pump_hall"
    ],
-   "start_minute": 900,
+   "start_minute": null,
    "tags": [
     "workplace"
    ],
-   "title": "泵房里烤红薯"
+   "title": "建院水文图纸的夜里核对"
   },
   {
    "beats": [
-    "护士亲自核验特护病区地热进水电子日志签名",
-    "关闭长廊全部辅助工作灯切入低功耗夜间安防巡查模式",
-    "确认外侧双层防火防蒸汽门行程开关正常就位"
+    "在辅炉红火的膛口边烤热两只冻梨和几个砂糖橘",
+    "剥开热气腾腾的果肉，递到对方嘴边"
    ],
-   "duration_minutes": 20,
+   "duration_minutes": 25,
    "hook_ids": [],
-   "id": "act_dusk_pump_station_lockdown_seal",
+   "id": "act_furnace_frozen_pear",
    "location_ids": [
-    "loc_steam_damper_doorway"
+    "loc_geothermal_pump_hall"
    ],
-   "start_minute": 1420,
-   "tags": [
-    "workplace",
-    "crime"
-   ],
-   "title": "日暮闭站供暖参数核验封缄"
-  },
-  {
-   "beats": [
-    "卷门升起、减压阀关死、三楼的暖气重新热起来之后，夜班护士被人从白雾里扶出来，护士服被蒸汽打得透湿，听诊器的听头砸瘪了一块。",
-    "泵房边的值班间里炉子烧得正旺，护士背过身，让人替自己解开湿透的护士服，拿干毛巾一点点擦去背上的水汽，毛巾擦到腰间，护士轻轻按住了那只手。",
-    "窗外的雪还在下，护士转过来，把听诊器挂到对方脖子上：你的心跳，我还没好好听过……今晚换班之前，让我听一会儿。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_pump_room_wet_uniform",
-   "location_ids": [
-    "loc_nurse_duty_room"
-   ],
-   "start_minute": 1430,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "泵房值班间里替护士换下湿透的护士服"
-  },
-  {
-   "beats": [
-    "值班间里，护士摘了护士帽，长发散下来，拉过人的手，用指腹把冻疮膏一点点揉进冻红的指节。",
-    "护士低着头揉：林区的冬天要冻掉人一层皮。……揉完了换你给我揉，我腿上也冻了，你别多想。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_duty_room_frostbite_cream",
-   "location_ids": [
-    "loc_nurse_duty_room"
-   ],
-   "start_minute": 1220,
-   "tags": [
-    "intimate"
-   ],
-   "title": "替人涂冻疮膏"
-  },
-  {
-   "beats": [
-    "护士把听诊器挂上耳朵，听头贴到人胸口，护士服的扣子开了两颗，自己的脸却先红了。",
-    "护士小声说：心跳一百二，不正常。……我的也是，你要不要听？听完了，你想怎样都先问我。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_duty_room_blood_pressure",
-   "location_ids": [
-    "loc_nurse_duty_room"
-   ],
-   "start_minute": 1350,
-   "tags": [
-    "intimate"
-   ],
-   "title": "量一次心跳"
-  },
-  {
-   "beats": [
-    "雪停的早晨，远处传来邮车的喇叭声，护士裹着人的棉袄趴在窗台上，看邮车在雪道上慢慢爬。",
-    "护士回头笑：邮车一周才来两趟，我等了三年的信都没你来得准时。……再陪我躺一会儿。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_duty_room_mail_truck",
-   "location_ids": [
-    "loc_nurse_duty_room"
-   ],
-   "start_minute": 450,
-   "tags": [
-    "intimate"
-   ],
-   "title": "邮车上山的早晨"
+   "title": "辅炉边的冻梨与砂糖橘"
   }
  ],
  "default_npc_gender_mix": {
@@ -1371,7 +1506,7 @@
   "nonbinary": 0.0
  },
  "default_person": "second",
- "era": "高山温泉度假疗养院地下动力中心",
+ "era": "大雪封山的十二月，老温泉疗养院移交前夕",
  "extends": null,
  "forbidden_terms": [
   "软色情",
@@ -1385,284 +1520,181 @@
  ],
  "hooks": [
   {
-   "id": "hk_rainstorm_warning_thunder",
+   "id": "hook_lin_pipe_knock",
    "kind": "approach",
    "location_ids": [
-    "loc_steam_damper_doorway"
+    "loc_geothermal_pump_hall"
    ],
    "slot": "nurse_lin_xinyi",
-   "text": "{nurse_lin_xinyi.name}按住胸口急促起伏的粉色医护制服，面颊在白雾蒸汽下热汗淋漓，毅然拔出随身实心加重不锈钢听诊器直指开关死角。"
+   "text": "地下泵房的铸铁暖气管传来两声轻轻的金属叩击，{npc.name}提着保温桶站在台阶下，白大褂领口还沾着未化的雪粒。"
   },
   {
-   "id": "hk_countdown_reading_rush",
-   "kind": "approach",
-   "location_ids": [
-    "loc_steam_damper_doorway"
-   ],
-   "slot": "nurse_lin_xinyi",
-   "text": "{nurse_lin_xinyi.name}听到泵房蒸汽凄厉呼啸，在滚烫急喘中咬紧银牙侧身挤入一米通道直面死锁的控制盒。"
-  },
-  {
-   "id": "hk_bookshelf_groan_deadlock",
-   "kind": "approach",
-   "location_ids": [
-    "loc_door_jam_crawlspace_nook"
-   ],
-   "slot": "apprentice_mechanic_fang_yuan",
-   "text": "{apprentice_mechanic_fang_yuan.name}双膝跪地紧贴湿热地面，以坚实身躯硬生生扛住金属卷门卡死震颤，大声提醒身前护士对准微动开关卡阻凹槽！"
-  },
-  {
-   "id": "hk_rail_deformation_scrape",
-   "kind": "approach",
-   "location_ids": [
-    "loc_door_jam_crawlspace_nook"
-   ],
-   "slot": "apprentice_mechanic_fang_yuan",
-   "text": "{apprentice_mechanic_fang_yuan.name}反手抽出阀门扳手垫入导轨底层，用粗糙手掌牢牢护住听诊器听头末端防止滑动，大声喝道就是这个金属触点卡齿！"
-  },
-  {
-   "id": "hk_tight_breath_ear_brush",
-   "kind": "approach",
-   "location_ids": [
-    "loc_door_jam_crawlspace_nook"
-   ],
-   "slot": "nurse_lin_xinyi",
-   "text": "{nurse_lin_xinyi.name}整个人伏在机工怀前，面庞几乎贴上机工颈项，滚烫娇喘混合着淡雅药香在狭窄狭缝内猛烈交融。"
-  },
-  {
-   "id": "hk_dress_sweat_heat_exchange",
-   "kind": "approach",
-   "location_ids": [
-    "loc_door_jam_crawlspace_nook"
-   ],
-   "slot": "nurse_lin_xinyi",
-   "text": "{nurse_lin_xinyi.name}粉色护士制服被蒸汽汗水浸得半透紧贴背脊曲线，双手毅然越过机工手臂重叠紧握实心不锈钢听头，合力向下一寸寸猛砸！"
-  },
-  {
-   "id": "hk_brass_paperweight_flange_align",
-   "kind": "approach",
-   "location_ids": [
-    "loc_door_jam_crawlspace_nook"
-   ],
-   "slot": "nurse_lin_xinyi",
-   "text": "{nurse_lin_xinyi.name}以医护特护的绝对果决，将听诊器淬火锻造的一百八十克加厚实心听头，精准卡入微动开关受卡金属壳体缺口。"
-  },
-  {
-   "id": "hk_rubber_hammer_chock_in",
-   "kind": "approach",
-   "location_ids": [
-    "loc_door_jam_crawlspace_nook"
-   ],
-   "slot": "apprentice_mechanic_fang_yuan",
-   "text": "{apprentice_mechanic_fang_yuan.name}将重型阀门扳手猛然卡入卷门底梁与地面之间，单臂如铜浇铁铸般撑开避险空隙，大吼道安全支点已成，护士尽管下砸！"
-  },
-  {
-   "id": "hk_satin_ribbon_bind_grip",
-   "kind": "approach",
-   "location_ids": [
-    "loc_door_jam_crawlspace_nook"
-   ],
-   "slot": "nurse_lin_xinyi",
-   "text": "{nurse_lin_xinyi.name}亲手解下白大褂腰间系带，紧紧缠绕在两人满是冷汗的手背与听诊器软管上，将两人的手臂力量彻底刚性绞合为一体！"
-  },
-  {
-   "id": "hk_auditorium_rainstorm_roaring",
-   "kind": "approach",
-   "location_ids": [
-    "loc_door_jam_crawlspace_nook"
-   ],
-   "slot": "nurse_lin_xinyi",
-   "text": "{nurse_lin_xinyi.name}凝视通道深处被蒸汽包围的重症温泉供热阀，面颊泛起不容动摇的绝决，誓死要在死角中为全体病患杀出生路！"
-  },
-  {
-   "id": "hk_atrium_air_pressure_drop",
-   "kind": "approach",
-   "location_ids": [
-    "loc_steam_damper_doorway"
-   ],
-   "slot": "nurse_lin_xinyi",
-   "text": "{nurse_lin_xinyi.name}察觉耳膜刺痛热气逼人，断然下令排气极限已近，立刻随我全员趴下进行杠杆最终突砸！"
-  },
-  {
-   "id": "hk_synchronized_grunt_heave",
-   "kind": "approach",
-   "location_ids": [
-    "loc_door_jam_crawlspace_nook"
-   ],
-   "slot": "apprentice_mechanic_fang_yuan",
-   "text": "{apprentice_mechanic_fang_yuan.name}与姑娘齐声发力，后背肌肉如山丘般隆起，将整整两百斤体重与臂力完全倾注于挥动的不锈钢听头末端！"
-  },
-  {
-   "id": "hk_spring_latch_pop_rebound",
-   "kind": "approach",
-   "location_ids": [
-    "loc_door_jam_crawlspace_nook"
-   ],
-   "slot": "nurse_lin_xinyi",
-   "text": "{nurse_lin_xinyi.name}手心感受到清脆至极的金属弹响，受卡微动开关被听头硬生生砸回原始闭合回路，电动卷帘伴随轰鸣向上骤然升起释压！"
-  },
-  {
-   "id": "hk_vault_escape_roll_fresh_air",
-   "kind": "approach",
-   "location_ids": [
-    "loc_steam_damper_doorway"
-   ],
-   "slot": "nurse_lin_xinyi",
-   "text": "{nurse_lin_xinyi.name}被机工单臂揽住纤腰顺势反推卷门门梁滚出死角，两人迎着外部走廊的新鲜清凉空气大口喘息，绝境脱困成功！"
-  },
-  {
-   "id": "hk_end_relief_praise",
-   "kind": "approach",
-   "location_ids": [
-    "loc_steam_damper_doorway"
-   ],
-   "slot": "nurse_lin_xinyi",
-   "text": "{nurse_lin_xinyi.name}靠在走廊洁白瓷砖墙壁边微微喘息，面颊带着劫后余生的绯红，侧过脸轻声对身侧机工道多亏机工勇敢。"
-  },
-  {
-   "id": "hook_xinyi_frostbite_cream",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "nurse_lin_xinyi",
-   "text": "{npc.name}从护士服口袋里掏出一管冻疮膏，拉过人的手就往指节上抹：手都裂成这样了，还说不疼。别动。"
-  },
-  {
-   "id": "hook_xinyi_blood_pressure",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "nurse_lin_xinyi",
-   "text": "{npc.name}把血压计的袖带缠上人的胳膊，盯着表针看了一会儿，抬眼一笑：心跳这么快，是楼梯爬急了，还是别的？"
-  },
-  {
-   "id": "hook_xinyi_mail_truck",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "nurse_lin_xinyi",
-   "text": "{npc.name}站在疗养院门口的雪地里，望着山下那条被雪埋了的路：邮车又上不来了。你有没有在等谁的信？"
-  },
-  {
-   "id": "hook_fangyuan_radiator",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "apprentice_mechanic_fang_yuan",
-   "text": "{npc.name}蹲在护士值班室的暖气片前，拿扳手敲了敲管子，回头说：放过气了，今晚就热。你值夜班，别冻着。"
-  },
-  {
-   "id": "hook_fangyuan_frozen_pear",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "apprentice_mechanic_fang_yuan",
-   "text": "{npc.name}从锅炉房的窗台上拿下两只冻梨，泡进一盆凉水里：等冰壳化开就能吃了。坐一会儿，泵房里暖和。"
-  },
-  {
-   "id": "hook_xinyi_night_round",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "nurse_lin_xinyi",
-   "text": "{npc.name}提着手电走在夜班的长走廊上，回头冲人招招手：陪我查一圈房吧，三楼那位老爷子总说半夜听见地底下有声音。"
-  },
-  {
-   "id": "hook_xinyi_duty_room_stove",
+   "id": "hook_lin_cold_hands",
    "kind": "approach",
    "location_ids": [
     "loc_nurse_duty_room"
    ],
    "slot": "nurse_lin_xinyi",
-   "text": "{npc.name}从值班间门口探出头：炉子烧旺了，外面零下三十度。……快进来暖暖。"
+   "text": "{npc.name}一把拉过你冻红的手，揣进自己白大褂口袋里捂着，说先暖一会儿再谈正事。"
+  },
+  {
+   "id": "hook_lin_ledger_open",
+   "kind": "request",
+   "location_ids": [
+    "loc_nurse_duty_room"
+   ],
+   "slot": "nurse_lin_xinyi",
+   "text": "{npc.name}把水温台账摊开，指着最近七天一路往下走的那一列数字，小声问你这一页该不该签。"
+  },
+  {
+   "id": "hook_he_spring_redline",
+   "kind": "observe",
+   "location_ids": [
+    "loc_geothermal_pump_hall"
+   ],
+   "slot": "geologist_he_qian",
+   "text": "三号地热泉眼的出水温度计指针缓缓滑过红线，矿务局工程师{npc.name}合上勘探记录本，把最后一页折起来塞进冲锋衣内兜。"
+  },
+  {
+   "id": "hook_he_moss_slip",
+   "kind": "approach",
+   "location_ids": [
+    "loc_geothermal_pipe_corridor"
+   ],
+   "slot": "geologist_he_qian",
+   "text": "管廊的青苔又湿又滑，{npc.name}抄表时脚下一空，抓住了你的袖子，站稳了也没松手。"
+  },
+  {
+   "id": "hook_su_red_stamp",
+   "kind": "approach",
+   "location_ids": [
+    "loc_nurse_duty_room"
+   ],
+   "slot": "head_nurse_su_man",
+   "text": "护士长{npc.name}把一份盖着省城康养中心红章的随迁推荐表压在值班室玻璃板下，低声问你交割会上到底站哪一边。"
+  },
+  {
+   "id": "hook_su_extra_soup",
+   "kind": "approach",
+   "location_ids": [
+    "loc_geothermal_pipe_corridor"
+   ],
+   "slot": "head_nurse_su_man",
+   "text": "{npc.name}在管廊口拦住你，把一碗盛得满满的汤塞过来，说是食堂多出来的，别让旁人看见。"
+  },
+  {
+   "id": "hook_gu_corridor_cough",
+   "kind": "observe",
+   "location_ids": [
+    "loc_sanatorium_sunroom_lounge"
+   ],
+   "slot": "acquirer_rep_gu_ze",
+   "text": "窗外林海狂风卷着鹅毛大雪拍打玻璃，二楼阳光廊里传来老林工剧烈的咳嗽声与并购代表{npc.name}不耐烦的催促声。"
+  },
+  {
+   "id": "hook_gu_tea_no_price",
+   "kind": "approach",
+   "location_ids": [
+    "loc_sanatorium_sunroom_lounge"
+   ],
+   "slot": "acquirer_rep_gu_ze",
+   "text": "{npc.name}在棋桌边给你斟了一杯热茶，把评估书反扣在桌面上，说今晚只喝茶，不谈价。"
+  },
+  {
+   "id": "hook_fang_offer_letter",
+   "kind": "approach",
+   "location_ids": [
+    "loc_geothermal_pump_hall"
+   ],
+   "slot": "mechanic_fang_yuan",
+   "text": "{npc.name}从工装兜里掏出一张折得发软的录用通知书，往你手里一塞，说你先替{npc.ta}看看。"
+  },
+  {
+   "id": "hook_fang_two_bowls",
+   "kind": "approach",
+   "location_ids": [
+    "loc_geothermal_pump_hall"
+   ],
+   "slot": "mechanic_fang_yuan",
+   "text": "{npc.name}端着两碗热汤从煤棚出来，脸上蹭着一道煤灰，冲你抬抬下巴，让你过去坐。"
+  },
+  {
+   "id": "hook_qiao_endgame",
+   "kind": "approach",
+   "location_ids": [
+    "loc_sanatorium_sunroom_lounge"
+   ],
+   "slot": "retiree_rep_lao_qiao",
+   "text": "{npc.name}把棋子往残局上一拍，冲你招手：坐下，陪我把这盘走完，有话问你。"
+  },
+  {
+   "id": "hook_qiao_inner_pocket",
+   "kind": "observe",
+   "location_ids": [
+    "loc_sanatorium_sunroom_lounge"
+   ],
+   "slot": "retiree_rep_lao_qiao",
+   "text": "{npc.name}咳得弯下腰，一只手却死死按着棉袄内兜，那里鼓着一个纸包的形状。"
   }
  ],
  "id": "sanatorium_boiler_nurse_rescue",
  "locations": [
   {
    "affordances": [
-    "查验主供水总回水压力表瞬时数值",
-    "搬运备用加厚耐高温石棉苫布覆盖阀口",
-    "隔着防灾铁门大声向控制室呼叫泄压"
+    "主温度计的红线刻度",
+    "辅炉膛口的红火",
+    "交接清册摊开的铁桌"
    ],
-   "detail": "地下开阔数百平米的中央供热动力大厅，多组巨型地热水泵与减压阀站错落排列。此刻主减压阀法兰垫片彻底爆开，刺耳啸叫中高达一百三十度的滚烫白雾如巨龙般喷薄翻涌，热浪逼人。",
+   "detail": "地下最大的一间屋子，循环泵和主温度计嗡嗡作响，墙角是通往煤棚的铁门，交接期间评估团、院办和值守员都要来这里抄数。",
    "exits": [
-    "loc_steam_damper_doorway",
+    "loc_geothermal_pipe_corridor",
     "loc_nurse_duty_room"
    ],
    "id": "loc_geothermal_pump_hall",
    "name": "地热泵房",
-   "pressure_modifiers": {
-    "p_steam_pressure_rupture_rush": "破裂法兰喷射的高温蒸汽流量以每秒十立方米剧增，室内环境温度极速逼近人体耐受极限。",
-    "p_thermal_blindness_whiteout": "高密度白雾吞没整条回廊，冷凝水沿金属管道暴雨般下落，视线严重受阻。"
-   },
+   "pressure_modifiers": {},
    "privacy": "public",
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "visibility": "大厅被浓厚白色蒸汽完全笼罩，应急黄色防爆雾灯在白雾深处闪烁着微弱光斑。",
+   "visibility": "顶灯通明，台阶上下的人一眼就能看见。",
    "witnesses": [
-    "bg_sanatorium_director_song",
-    "bg_chief_doctor_he",
-    "bg_nurse_assistant_xiao_liu"
+    "bg_coal_stoker",
+    "bg_appraisal_clerk"
    ]
   },
   {
    "affordances": [
-    "检查金属卷帘门双向导轨偏心卡滞受力面",
-    "排查控制盒内部双回路交流接触器跳闸状态",
-    "确认通向配电间旁通手动拉链绞盘位置"
+    "并排抄表的狭窄过道",
+    "管壁上烫手的白汽",
+    "压力表下的旧粉笔记号"
    ],
-   "detail": "通往外部逃生阶梯的坚固混凝土通道门洞，重型防火防蒸汽镀锌金属卷帘门在火警感应下骤然下落，因受热膨胀与机械导轨微震在距离地面一米处彻底卡死抱死。",
+   "detail": "泵房后面一条潮湿温热的长廊，管子沿墙走，青苔滑脚，每隔一段有一块压力表，尽头一道小门通理疗室，楼梯口上去是阳光廊。",
    "exits": [
     "loc_geothermal_pump_hall",
-    "loc_door_jam_crawlspace_nook"
+    "loc_mineral_spring_therapy_pool",
+    "loc_sanatorium_sunroom_lounge"
    ],
-   "id": "loc_steam_damper_doorway",
-   "name": "卷帘门通道口",
-   "pressure_modifiers": {
-    "p_damper_door_thermal_jam_pinch": "数百公斤金属卷门自重下压，导轨受热膨胀卡爪咬死使下坠停止亦无法依靠普通人力抬起。",
-    "p_steam_pressure_rupture_rush": "滚烫蒸汽受到半截卷门阻挡在门洞前形成强烈对流漩涡，空气灼痛呼吸道。"
-   },
+   "id": "loc_geothermal_pipe_corridor",
+   "name": "地热管廊巡检道",
+   "pressure_modifiers": {},
    "privacy": "semi",
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "visibility": "卷帘门微动开关控制盒位于门框右侧一米高处，盒盖在震颤中脱落露出内部金属触点。",
-   "witnesses": [
-    "bg_boiler_attendant_lao_zhou",
-    "bg_security_guard_xiao_zhang"
-   ]
-  },
-  {
-   "affordances": [
-    "近身挤入死角察看微动开关触点卡塞变形槽",
-    "以医用重型不锈钢听诊器实心金属听头连续猛烈敲击触点金属壳体",
-    "双手重叠合力扳动应急手动复位连杆重启升门自救"
-   ],
-   "detail": "卡在一米高度的卷帘门下沿与混凝土墙角构成的仅容两人侧身伏卧的逼仄死角，上方是滚烫下沉的金属刃口，身侧是不断喷射热气的管道。两人必须在急促贴紧中利用听头敲击微动开关。",
-   "exits": [
-    "loc_steam_damper_doorway"
-   ],
-   "id": "loc_door_jam_crawlspace_nook",
-   "name": "卷帘门下狭缝",
-   "pressure_modifiers": {
-    "p_close_contact_body_heat_tension": "在一米死角内护士与机工肌肤紧贴完全伏卧，湿透护士服薄汗与机工体温激烈对冲，滚烫急促的吐息拂过颈侧锁骨。",
-    "p_damper_door_thermal_jam_pinch": "金属卷门若受热进一步形变彻底咬死控制触点，自救回路将彻底丧失功能。"
-   },
-   "privacy": "private",
-   "tags": [
-    "workplace",
-    "intimate"
-   ],
-   "visibility": "仅靠强光探照笔窄光束照明，近距离能看清彼此面颊上滑落的细腻汗珠、湿透护士服起伏曲线与控制开关金属簧片。",
+   "visibility": "只有手电和压力表的小灯，迎面来人要侧身才过得去。",
    "witnesses": []
   },
   {
    "affordances": [
-    "陪夜班护士在炉边烤手",
-    "替夜班护士解开湿透的护士服",
-    "锁上值班间的门"
+    "暖气片上烘着的外套",
+    "抽屉里压着的单据",
+    "保温桶里温着的热汤"
    ],
-   "detail": "泵房楼梯口的一间值班间，一张铺着白床单的单人床、一只烧得正旺的铁炉、一张放着血压计的小桌，窗外是林海雪原。",
+   "detail": "泵房旁一间小屋，一张值班床、一个药柜、一排老式铸铁暖气片，内侧挂着更衣帘，侧门连着理疗室，护士下夜班常在这里歇到天亮。",
    "exits": [
-    "loc_geothermal_pump_hall"
+    "loc_geothermal_pump_hall",
+    "loc_mineral_spring_therapy_pool"
    ],
    "id": "loc_nurse_duty_room",
    "name": "泵房边的护士值班间",
@@ -1671,8 +1703,53 @@
    "tags": [
     "intimate"
    ],
-   "visibility": "炉火映着白墙，窗上结着冰花，门一锁，泵房的轰鸣就闷成了脚下一阵阵温热的震动。",
+   "visibility": "走廊一侧是磨砂玻璃窗，屋里亮灯外面只看得见人影。",
+   "witnesses": [
+    "bg_care_aide"
+   ]
+  },
+  {
+   "affordances": [
+    "池沿的热敷毛巾",
+    "门内一根老铜插销",
+    "冒着白气的温泉水"
+   ],
+   "detail": "熄灯后的温泉理疗室，白雾从池面升起，池沿铺着旧毛巾，墙角一道更衣帘，门内有一根插销，平时只有当班护士有钥匙。",
+   "exits": [
+    "loc_geothermal_pipe_corridor",
+    "loc_nurse_duty_room"
+   ],
+   "id": "loc_mineral_spring_therapy_pool",
+   "name": "地下温泉理疗室",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "雾气大，门一关，隔着两步就看不清人。",
    "witnesses": []
+  },
+  {
+   "affordances": [
+    "没下完的象棋残局",
+    "烤得焦香的红薯",
+    "评估团留下的热茶壶"
+   ],
+   "detail": "二楼朝南的玻璃长廊，摆满绿植和棋桌，白天老林工在这里晒太阳下棋，评估团借这里开小会，夜里只剩暖气片和一盘没下完的残局。",
+   "exits": [
+    "loc_geothermal_pipe_corridor"
+   ],
+   "id": "loc_sanatorium_sunroom_lounge",
+   "name": "二楼冬日阳光棋牌廊",
+   "pressure_modifiers": {},
+   "privacy": "semi",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "玻璃廊对着前楼，屋里谁在说话，前楼窗口都看得见。",
+   "witnesses": [
+    "bg_office_director"
+   ]
   }
  ],
  "name_pools": {
@@ -1752,577 +1829,587 @@
   ],
   "order": "family_first"
  },
- "notes": "按原稿加入，保留高山疗养院地热主蒸汽减压阀法兰爆裂、防灾卷门半落卡死与女护士用实心听诊器听头敲击微动开关复位的骨架。同一批里有五个同模板的世界，也与高原地热井、草原煤矿拉开：这里写成东北林区大雪封山的老疗养院——邮车一周上来两趟、暖气全靠地下泵房、夜班长走廊、老疗养员说半夜听见地底下有声音、冻疮膏和冻梨，搭档写成住在锅炉房的机工。写死的人名改为身份称呼；婴儿肥大多换成了其余外貌描写；人物组合按权力结构放开玩家身份，压力与日常不再锁死钩子，并加了几个不限地点的靠近型钩子；护士亲密前提写明脱困之后、双方清醒自愿；新增一个泵房值班间里替护士换下湿透护士服的亲密日常。",
+ "notes": "按原稿加入，保留高山疗养院地热主蒸汽减压阀法兰爆裂、防灾卷门半落卡死与女护士用实心听诊器听头敲击微动开关复位的骨架。同一批里有五个同模板的世界，也与高原地热井、草原煤矿拉开：这里写成东北林区大雪封山的老疗养院——邮车一周上来两趟、暖气全靠地下泵房、夜班长走廊、老疗养员说半夜听见地底下有声音、冻疮膏和冻梨，搭档写成住在锅炉房的机工。写死的人名改为身份称呼；婴儿肥大多换成了其余外貌描写；人物组合按权力结构放开玩家身份，压力与日常不再锁死钩子，并加了几个不限地点的靠近型钩子；护士亲密前提写明脱困之后、双方清醒自愿；新增一个泵房值班间里替护士换下湿透护士服的亲密日常。\n2026-10-24 按写作规则 v2 与 Gemini 创意卡改造：删掉蒸汽爆管与卷门抢修，改成大雪封山的疗养院移交夜，围绕泉眼衰减要不要交底、老林工床位保不保。",
  "player_identities": [
   {
    "age_range": [
-    21,
-    23
+    22,
+    30
    ],
-   "baseline": "二十二岁成年青年热力工程技术员，负责疗养院深层地热管网、减压阀组与防灾隔断门机械维保，身体强健沉着果敢。",
-   "gender": "male",
-   "id": "pi_thermal_boiler_mechanic_fang",
-   "reputation": "精通老式蒸汽减压阀结构与电动卷门双向互锁电路，多次排除供暖管爆裂危机。",
+   "baseline": "你在山里顶夜班已经第二个冬天，归工程部和护士站双重排班，手里只有泵房和煤棚的巡检记录本，夜里最熟的是那排暖气管。",
+   "gender": "any",
+   "id": "pi_night_duty_attendant",
+   "reputation": "夜里叫得应、手脚勤快的人。",
    "resources": [
-    "一把特制高硬度加长合金阀门钩扳手",
-    "一卷耐高温石棉阻燃密封生料带",
-    "高强度耐磨耐热加厚橡胶工装手套"
+    "泵房与煤棚的巡检记录本",
+    "护士站和泵房两把门钥匙"
    ],
    "risks": [
-    "若无法在蒸汽完全吞没泵房前升起大门，高温蒸汽将在几分钟内造成重度吸入性烫伤。"
+    "交割一完，你这份临时岗位是第一批被裁掉的。"
    ],
-   "role": "高山疗养院地热供暖成年兼职驻点机工",
+   "role": "地下动力区夜班值守员",
    "social_position": "low",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}工"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
-     "pattern": "{family}{given}"
-    },
-    {
-     "gender": "any",
-     "pattern": "{family}机工"
+     "pattern": "{given}"
     }
    ]
   },
   {
    "age_range": [
-    21,
-    23
+    25,
+    34
    ],
-   "baseline": "二十二岁成年安全工程技术员，专司疗养区高热蒸汽管线与紧急疏散通道巡检。",
-   "gender": "male",
-   "id": "pi_sanatorium_safety_officer_fang",
-   "reputation": "熟知地下动力中心全部回廊暗道与备用泄压排风阀坐标，应变迅速深受医护团队信任。",
+   "baseline": "你是院办派驻地下动力区和特护病区的联络干事，白天核对移交资产清册，夜里做安全巡查，老人们的去处都要从你手上过一遍。",
+   "gender": "any",
+   "id": "pi_staff_liaison_officer",
+   "reputation": "院办里难得肯听老人说话的干事。",
    "resources": [
-    "一柄防爆工业LED高流明强光探照笔",
-    "一套精密不锈钢调缝防割卡尺",
-    "两只高抗冲防雾气密护目镜"
+    "移交资产清册的核对权",
+    "特护病区的夜间巡查记录"
    ],
    "risks": [
-    "高热白雾导致能见度归零，极易踩空跌入乐池排水地沟造成骨折。"
+    "安置名单出了差错，院办第一个推出来顶的是你。"
    ],
-   "role": "疗养院地下动力区驻场安全巡查员",
+   "role": "职工安置与安全巡查干事",
    "social_position": "equal",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}主管"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
-     "pattern": "{family}{given}"
-    },
-    {
-     "gender": "any",
-     "pattern": "{family}巡查"
+     "pattern": "{given}"
     }
    ]
   },
   {
    "age_range": [
-    21,
-    23
+    28,
+    40
    ],
-   "baseline": "二十二岁成年机电工程师，全面统筹疗养院暖通动力中心与自动化防灾卷帘门电气控制。",
-   "gender": "male",
-   "id": "pi_facility_maintenance_chief_fang",
-   "reputation": "多次成功处置极端寒潮下管道超压险情，技术扎实，与护士配合默契。",
+   "baseline": "你统管全院地热供暖和后勤保障，今冬的燃煤储备调拨单和设备移交状态确认章都在你抽屉里。",
+   "gender": "any",
+   "id": "pi_logistics_chief",
+   "reputation": "说一不二、账目清楚的后勤主管。",
    "resources": [
-    "一台三防工业加固测温测压手持仪",
-    "一柄特种高碳钢绝缘防爆螺丝刀",
-    "防爆高等级阻燃橡胶防滑护膝"
+    "今冬燃煤储备调拨单",
+    "设备移交状态确认章"
    ],
    "risks": [
-    "微动开关触点若彻底熔焊抱死，将丧失全部电动回升可能。"
+    "移交状态一章盖错，你就要背上隐瞒资产瑕疵的责任。"
    ],
-   "role": "高山疗养院机电设备总协调员",
+   "role": "后勤与动力管网主管",
    "social_position": "equal",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}协调员"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
-     "pattern": "{family}工"
-    },
-    {
-     "gender": "any",
-     "pattern": "{family}总管"
+     "pattern": "{given}"
     }
    ]
   },
   {
    "age_range": [
-    21,
-    23
+    32,
+    45
    ],
-   "baseline": "二十二岁青年暖通学者，统揽高山疗养院地热综合供热中枢设计与最高安防指挥权。",
-   "gender": "male",
-   "id": "pi_chief_hvac_engineer_fang",
-   "reputation": "行业年轻专家，对地热蒸汽相变膨胀与自控机械卡阻有着绝对掌控力。",
+   "baseline": "你是上级主管单位派驻疗养院的资产清算总督导，收购协议里的职工安置条款和地热资产作价，最后要过你的复核。",
+   "gender": "any",
+   "id": "pi_asset_supervisor",
+   "reputation": "上面派来、谁都想先探口风的督导。",
    "resources": [
-    "一套特制加长反向力矩调压扳手",
-    "全套地下泵房流体管网受力三维蓝图",
-    "高等级防割耐高温战术工装手套"
+    "安置条款与地热作价的复核否决权",
+    "矿务局应急电台的调用权"
    ],
    "risks": [
-    "若发生不可逆管道大爆裂造成温泉洗浴区瘫痪，将承担巨额经济与名誉损失。"
+    "否决一签，收购方和院办都会把开春停摆的账记在你头上。"
    ],
-   "role": "地热动力综合管网总工程师",
+   "role": "矿务局资产交割督导专员",
    "social_position": "high",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}总工"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
-     "pattern": "{family}大师"
-    },
-    {
-     "gender": "any",
-     "pattern": "{family}总工程师"
+     "pattern": "{given}"
     }
    ]
   }
  ],
- "premise": "东北林区深处的老疗养院，大雪封山，邮车一周才上来两趟，整座院子的暖气全靠地下泵房的地热。夜班护士白天查房、陪老人下棋，夜里常去锅炉房给机工送宵夜。主蒸汽减压阀的法兰锈得厉害，泵房的防灾卷门好几年没试过。",
+ "premise": "东北林区深处的老温泉疗养院，十二月大雪封山，邮车一周进山两趟，整座院子的暖气和理疗池全靠地下泵房引出的天然地热。疗养院的夜班护士白天照看常年住山里的老林工，夜里常提着保温桶下泵房看水温。省城地产集团的收购评估团这周住进了前楼，院里都在议论开春关停改建。",
  "pressures": [
   {
-   "choice": "是冒险利用不锈钢听头强行敲击复位，还是在死角内等待外侧抢险队破拆？",
+   "choice": "是替护理部保住编制，还是把后勤老职工的补偿还回去。",
    "exits": [
     {
-     "cost": "听头受力微磨损，两人肌肉酸痛受震颤擦伤。",
-     "option": "两人合力以不锈钢听头连续敲击开关外壳震脱卡滞簧片复位升门自救。"
+     "cost": "后勤临时工的补偿款就此抹平。",
+     "option": "劝复核的人压下传真，换护士长支持如实披露泉眼数据"
     },
     {
-     "cost": "极其被动，若环境温度持续升高将直接烫伤死亡。",
-     "option": "伏于地面用毛巾被动阻挡蒸汽等待救援。"
+     "cost": "护理部随迁名额被借机砍半，护士长声誉扫地。",
+     "option": "让护士长交出附表原件，向全院公开"
+    },
+    {
+     "cost": "越权改签的行政追责要你一个人担。",
+     "option": "你出面把附表改成后勤和特护科联名的安置方案"
     }
    ],
    "far": {
-    "consequence": "受困人员在几分钟内因重度吸入性烫伤与严重缺氧窒息休克殉职。",
-    "due_days": 1,
-    "trigger": "蒸汽完全充斥地下动力大厅"
+    "consequence": "后勤老职工联名告到矿务局，护理部被查。",
+    "due_days": 14,
+    "trigger": "附表一直下落不明"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [],
-   "id": "p_steam_pressure_rupture_rush",
+   "id": "p_withheld_settlement_annex",
    "immediate": {
-    "minutes": 2,
-    "text": "破裂法兰处狂暴的高压蒸汽以刺耳尖鸣倾泻而出，大厅白雾如潮水翻滚。"
+    "minutes": 15,
+    "text": "复核的人把传真底单夹进档案袋，说要一并呈报。"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{geologist_he_qian.name}的档案袋里有一份盖着收购方原章的传真底单。",
+    "holder": "geologist_he_qian",
+    "subject": "head_nurse_su_man"
+   },
    "location_ids": [
-    "loc_geothermal_pump_hall",
-    "loc_steam_damper_doorway",
-    "loc_door_jam_crawlspace_nook"
+    "loc_geothermal_pipe_corridor"
    ],
    "near": {
-    "deadline_minutes": 4,
-    "text": "滚烫蒸汽漫延至卷帘门洞死角，冷凝水灼痛皮肤，逃生时间被急剧压缩。"
+    "deadline_minutes": 180,
+    "text": "附表的事一上会，护理部的随迁名单当场作废。"
    },
-   "objective": "必须在蒸汽完全吞噬死角导致热衰竭前，敲开微动开关升起卷门撤离至通风口。",
-   "source": "accident",
-   "start_minute": 1395,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "地热高压蒸汽破裂喷薄危急",
-   "trigger": "主减压阀法兰突发撕裂，一百三十度高温地热蒸汽咆哮喷出，室内急剧升温缺氧。"
-  },
-  {
-   "choice": "是单人使用工装工具试探拨动，还是两人身体紧密相贴合力猛砸听头？",
-   "exits": [
-    {
-     "cost": "工具把手产生微小塑性形变，施力人员手臂酸麻。",
-     "option": "以扳手护垫构成刚性防滑支点，叠合双手全力挥动听头猛砸微动盒。"
-    },
-    {
-     "cost": "金属敲击极易打烂门片导致永久咬死。",
-     "option": "用工具盲目敲击卷门门板试图砸松卡槽。"
-    }
-   ],
-   "far": {
-    "consequence": "金属大门彻底失去电动与手动提升可能，门洞变成永久封闭牢笼。",
-    "due_days": 1,
-    "trigger": "导轨金属完全热冷焊抱死"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_damper_door_thermal_jam_pinch",
-   "immediate": {
-    "minutes": 2,
-    "text": "金属卷门受热发出清脆的膨胀爆响，自重下坠咬死在距离地面一米处。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_door_jam_crawlspace_nook"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "高热导致导轨间隙完全收缩为零，摩擦咬合力倍增，敲击复位难度成倍上升。"
-   },
-   "objective": "在金属彻底热卡死抱死之前，以坚硬不锈钢听头敲击震开微动开关接通提升电机。",
-   "source": "nature",
-   "start_minute": 1395,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "防灾金属卷帘受热膨胀卡死",
-   "trigger": "数百公斤重型镀锌卷帘门在高温蒸汽烘烤下金属膨胀，偏心咬死在两侧钢导轨槽内。"
-  },
-  {
-   "choice": "是因礼法矜持保持距离导致施力分散，还是坦然贴身相拥爆发出最大协同扭矩？",
-   "exits": [
-    {
-     "cost": "矜持心理防线被彻底打破，两人心灵产生不可磨灭的依恋印记。",
-     "option": "抛弃一切世俗杂念，护士伏于机工胸前双手重叠压紧把手一鼓作气突破。"
-    },
-    {
-     "cost": "撞击力不足无法撼动触点，导致自救彻底失败。",
-     "option": "刻意拉开距离单手侧向发力。"
-    }
-   ],
-   "far": {
-    "consequence": "听诊器听头滑脱脱手，错过最后敲击脱扣时间窗导致高温蒸汽完全漫入。",
-    "due_days": 1,
-    "trigger": "羞怯分心导致发力失衡工具脱落"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_close_contact_body_heat_tension",
-   "immediate": {
-    "minutes": 2,
-    "text": "护士制服丝滑微凉的触感隔着单薄衣衫传来，随后被急促滚烫的体温迅速烘热。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_door_jam_crawlspace_nook"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "护士的呼吸乱了，口罩早扯到下巴，湿透的护士服贴出胸前的曲线，娇喘一阵阵扑在颈侧。"
-   },
-   "objective": "在极度贴近的肢体接触与异性荷尔蒙冲击下，克制心神专注机械对位发力。",
+   "objective": "交割会前定下附表的去处。",
    "source": "person",
-   "start_minute": 1395,
+   "start_minute": null,
    "tags": [
     "workplace"
    ],
-   "title": "门洞极限死角贴身呼吸滚烫",
-   "trigger": "两人被迫同时挤在一米卷门死角狭缝，湿透护士服与工装紧密相贴，体温与急促喘息交织。"
+   "title": "护士长截留的安置附表",
+   "trigger": "{geologist_he_qian.name}复核档案时，从备份传真里查出{head_nurse_su_man.name}藏起了后勤老职工的安置补偿附表。"
   },
   {
-   "choice": "是先冒烫伤风险尝试手动扳动备用小排气阀，还是全力以赴先撬开通道脱险？",
+   "choice": "是照规矩交上去清退老人，还是替护士把违纪的事兜住。",
    "exits": [
     {
-     "cost": "全力投入敲击无暇顾及自身擦伤，承受巨大心理压力。",
-     "option": "争分夺秒敲击听头升门撤出完成人网双全自救。"
+     "cost": "院办只肯缓一张，另外两张床位照清。",
+     "option": "陪护士把催缴单补交院办，同时替三位老人申请缓缴"
     },
     {
-     "cost": "耗尽最后逃生时间，双双受困于二次爆炸之下。",
-     "option": "折返深处用身体护住阀门。"
+     "cost": "护士长要{nurse_lin_xinyi.name}在交割会上对泉眼水温闭口不提。",
+     "option": "请护士长按特护科延期缓缴报上去"
+    },
+    {
+     "cost": "老林工们跟收购方谈留院的最大筹码没了。",
+     "option": "把老林工的联名收据拿去抵床位费"
     }
    ],
    "far": {
-    "consequence": "地下动力站彻底化为火海废墟，受困人员与核心设备全数遇难损毁。",
-    "due_days": 1,
-    "trigger": "管网整体爆炸引发地表蒸汽塌陷"
+    "consequence": "护士被记大过停职，三位老人照样要搬走。",
+    "due_days": 21,
+    "trigger": "催缴单压到交割之后"
    },
    "flags": [
-    "timed"
+    "timed",
+    "leverage"
    ],
    "hook_ids": [],
-   "id": "p_geothermal_system_thermal_shock",
+   "id": "p_drawer_overdue_notices",
    "immediate": {
-    "minutes": 2,
-    "text": "整排管道发出剧烈金属水锤撞击声，法兰接缝火星四溅。"
+    "minutes": 10,
+    "text": "护士长把三张单子拍在药柜上，问这半年的药费是谁垫的。"
    },
-   "leverage": null,
+   "leverage": {
+    "basis": "{head_nurse_su_man.name}手里有那三张没交院办、盖着院办日期戳的催缴单。",
+    "holder": "head_nurse_su_man",
+    "subject": "nurse_lin_xinyi"
+   },
    "location_ids": [
-    "loc_geothermal_pump_hall",
-    "loc_steam_damper_doorway"
+    "loc_nurse_duty_room"
    ],
    "near": {
-    "deadline_minutes": 4,
-    "text": "次级管道焊缝开始冒出高温白雾，全管网面临连环断裂危险。"
+    "deadline_minutes": 120,
+    "text": "院办清点床位对不上数，三位老人列进清退名单。"
    },
-   "objective": "必须在蒸汽管道整体爆裂前升起卷门撤离至主控室关闭总闸。",
-   "source": "accident",
-   "start_minute": 1395,
+   "objective": "在院办清点床位前，把这三张单子摆平。",
+   "source": "person",
+   "start_minute": null,
    "tags": [
-    "workplace",
-    "disaster"
+    "workplace"
    ],
-   "title": "深层地热管网连锁水锤过热",
-   "trigger": "主减压阀断开引起水锤效应激荡，地下高热管网震动加剧，面临二次大爆炸全毁绝境。"
+   "title": "抽屉里的三张催缴单",
+   "trigger": "{head_nurse_su_man.name}交接盘库时翻出{nurse_lin_xinyi.name}抽屉里压着三张老林工的欠费催缴单，一张都没交院办。"
   },
   {
-   "choice": "是忍痛咬牙紧扣工具，还是分神活动肢体调整重心？",
+   "choice": "躲，还是开门迎上去。",
    "exits": [
     {
-     "cost": "身体摩擦加剧，肌肤泛起大片淤青擦痕。",
-     "option": "护士与机工互相用双腿死死卡住彼此脚踝稳固重心合力下砸。"
+     "cost": "桌上的水温记录本被推门进来的人看个正着。",
+     "option": "吹熄台灯，拉护士退进更衣帘后屏住气"
     },
     {
-     "cost": "触点在自重下再度深陷变形咬死。",
-     "option": "暂停按压后撤舒展肢体。"
+     "cost": "对方起疑，要求明早先查封值班间的账册。",
+     "option": "你推门出去，问对方这么晚拍铭牌有没有院办的批条"
+    },
+    {
+     "cost": "护士落下了贴身的记事本，里面夹着你们的字条。",
+     "option": "让护士从侧门先去理疗室，你一个人留下应付"
     }
    ],
    "far": {
-    "consequence": "听头被开关外壳反弹力强行震飞，彻底失去最后开启机会。",
-    "due_days": 1,
-    "trigger": "双腿打滑彻底失去反向支撑力矩"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_slippery_hot_floor_trip_hazard",
-   "immediate": {
-    "minutes": 2,
-    "text": "温热积水透过衣料浸透膝盖手肘，刺骨酸麻侵袭关节。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_door_jam_crawlspace_nook"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "持续静力承重使前臂与小腿肌肉发生微小震颤，下踩支撑力濒临极限。"
-   },
-   "objective": "克服双腿打滑与膝盖剧烈酸痛，保持稳定反向杠杆平衡发力姿态。",
-   "source": "nature",
-   "start_minute": 1395,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "高温冷凝水漫地支撑打滑",
-   "trigger": "滚烫蒸汽冷凝水漫过泵房水泥地面导致地表极度湿滑，两人半跪施力支撑极易打滑失稳。"
-  },
-  {
-   "choice": "是立即凭借肌肉记忆连续下砸听头，还是等待白雾被排风扇微弱稀释？",
-   "exits": [
-    {
-     "cost": "身心极度疲惫，手臂肌肉严重拉伤酸痛。",
-     "option": "两人贴面以身体触碰校准方位盲操连续猛砸触点。"
-    },
-    {
-     "cost": "大门彻底断电丧失全部物理逃生可能。",
-     "option": "被动闭眼等待外力减退。"
-    }
-   ],
-   "far": {
-    "consequence": "错失最后逃生时间，全员在完全致盲中因热昏厥倒地遇难。",
-    "due_days": 1,
-    "trigger": "视线完全丧失导致操作完全落空"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "p_thermal_blindness_whiteout",
-   "immediate": {
-    "minutes": 2,
-    "text": "眼前白茫茫一片伸手不见五指，眼角膜受湿热蒸汽刺激酸涩流泪。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_steam_damper_doorway",
-    "loc_geothermal_pump_hall"
-   ],
-   "near": {
-    "deadline_minutes": 4,
-    "text": "蒸汽浓度进一步饱和，手指触感因滚烫冷凝水逐渐麻木迟钝。"
-   },
-   "objective": "在完全致盲状态下凭借触感盲操找准开关凹槽完成精准连续敲击。",
-   "source": "nature",
-   "start_minute": 1395,
-   "tags": [
-    "workplace",
-    "disaster"
-   ],
-   "title": "高热白雾完全致盲视线受阻",
-   "trigger": "浓厚白雾在密闭死角聚积导致能见度归零，强光手电光束被完全散射无法视物。"
-  },
-  {
-   "choice": "请司炉工周师傅出来作证，还是由护士自己去院长办公室说明",
-   "exits": [
-    {
-     "cost": "周师傅得承认那一夜自己喝了酒、没守在锅炉房",
-     "option": "请周师傅作证"
-    },
-    {
-     "cost": "就得讲清楚两个人在卷门下那几个钟头是怎么过的",
-     "option": "自己去说明"
-    }
-   ],
-   "far": {
-    "consequence": "护士被调去山下的分院，机工的合同到期不再续",
-    "due_days": 7,
-    "trigger": "闲话报到院长那里"
+    "consequence": "收购价被砍，三楼老人第一批被清退。",
+    "due_days": 10,
+    "trigger": "水温记录本落进评估团手里"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [
-    "hook_xinyi_frostbite_cream",
-    "hook_xinyi_blood_pressure",
-    "hook_xinyi_mail_truck",
-    "hook_fangyuan_radiator",
-    "hook_fangyuan_frozen_pear",
-    "hook_xinyi_night_round"
+    "hook_lin_pipe_knock",
+    "hook_lin_cold_hands",
+    "hook_lin_ledger_open"
    ],
-   "id": "p_patients_gossip",
+   "id": "p_duty_room_footsteps",
    "immediate": {
-    "minutes": 5,
-    "text": "护士小刘端着体温计进来，小声说三号楼的老太太在骂人"
+    "minutes": 3,
+    "text": "门把手又转了半圈，外面的人在等。"
    },
    "leverage": null,
    "location_ids": [
     "loc_nurse_duty_room"
    ],
    "near": {
-    "deadline_minutes": 360,
-    "text": "下午两点，何主任去见宋院长"
+    "deadline_minutes": 30,
+    "text": "并购代表要是看见记录本，评估团明早就压价。"
    },
-   "objective": "在何主任把这事报给宋院长之前，让大家知道那一夜泵房里到底出了什么事",
+   "objective": "不让并购代表看见桌上的水温记录本。",
+   "source": "person",
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "值班间窗外的脚步声",
+   "trigger": "{player.name}和护士在值班间贴着头商量留院名单，磨砂窗外映出并购代表举相机拍铭牌的影子，门把手被轻轻转了一下。"
+  },
+  {
+   "choice": "交底，还是先压下去。",
+   "exits": [
+    {
+     "cost": "交底的内容当晚就传进评估团耳朵里，买方压价。",
+     "option": "把实测水温和安置底案摊开给老人们看"
+    },
+    {
+     "cost": "老人们认定医护和地产商穿一条裤子，拒绝明早体检。",
+     "option": "请护士长拿夜间静养的规定劝散众人"
+    },
+    {
+     "cost": "你正面得罪了并购代表和院办高层。",
+     "option": "答应替老人们把联名信直接递到矿务局"
+    }
+   ],
+   "far": {
+    "consequence": "收购搁浅，院办把账算到所有交底的人头上。",
+    "due_days": 20,
+    "trigger": "联名信真的寄到省报"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_sunroom_sale_rumor",
+   "immediate": {
+    "minutes": 10,
+    "text": "老人们拍着棋桌，嚷声传到了前楼。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_sanatorium_sunroom_lounge"
+   ],
+   "near": {
+    "deadline_minutes": 90,
+    "text": "评估团听到风声，交割会上借机压价。"
+   },
+   "objective": "在评估团听见之前把老人们劝住。",
    "source": "rumor",
-   "start_minute": 480,
-   "tags": [],
-   "title": "疗养员们的闲话",
-   "trigger": "暖气恢复后的第二天早上，老疗养员们在走廊里嚼开了舌头：昨夜暖气停了六个钟头，是值夜班的护士丢下病房，溜去泵房找那个年轻机工"
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "阳光廊里的卖院传闻",
+   "trigger": "老林工们听说开春要拆老理疗楼改私人汤屋，几个人堵在二楼阳光廊，扬言今晚就把联名信寄给省报。"
+  },
+  {
+   "choice": "随迁进城，还是留下替泉眼的实情作证。",
+   "exits": [
+    {
+     "cost": "默许泉眼带病移交，山里的老人开春被清退。",
+     "option": "和护士一起签下随迁函"
+    },
+    {
+     "cost": "收购搁浅，留守的人整个冬天只拿最低生活费。",
+     "option": "退回随迁函，联合复核的人出具如实的实测报告"
+    },
+    {
+     "cost": "两人开春就要分在省城和深山两地。",
+     "option": "只让护士一人签随迁，你留下提移交异议"
+    }
+   ],
+   "far": {
+    "consequence": "开春评估复查翻出衰减，签过字的人一起被追责。",
+    "due_days": 30,
+    "trigger": "三号泉眼带病移交"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_relocation_letter",
+   "immediate": {
+    "minutes": 15,
+    "text": "确认函摊在铁桌上，评估团记录员等着收。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_geothermal_pump_hall"
+   ],
+   "near": {
+    "deadline_minutes": 240,
+    "text": "不签的人名单当夜就报到院办。"
+   },
+   "objective": "交割会前决定签不签这份确认函。",
+   "source": "institution",
+   "start_minute": null,
+   "tags": [
+    "workplace",
+    "workplace_power"
+   ],
+   "title": "省城随迁与留山待岗",
+   "trigger": "收购方送来最终版人事确认函：在交割会前签字配合三号泉眼正常移交的骨干，可转入省城康养中心；不签的留在老院待岗，开春只发基本工资。"
+  },
+  {
+   "choice": "暖先给谁，人守在哪。",
+   "exits": [
+    {
+     "cost": "你和同伴得在冰冷的泵房轮流添煤守炉，手脚冻得发麻。",
+     "option": "去煤棚把老式燃煤辅炉烧起来，顶住三楼的暖气"
+    },
+    {
+     "cost": "值班间彻底断暖，你们只能裹着毛毯挨在理疗池边取暖。",
+     "option": "关掉外围管网，把剩下的地热余温全供到三楼"
+    },
+    {
+     "cost": "柴油撑不过这一夜，交割会那天就彻底断了。",
+     "option": "开应急柴油发电机带循环泵"
+    }
+   ],
+   "far": {
+    "consequence": "老人只能分批撤下山，院子提前停摆。",
+    "due_days": 7,
+    "trigger": "封山断电拖过三天"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_blizzard_line_down",
+   "immediate": {
+    "minutes": 10,
+    "text": "理疗室的灯灭了，池面的白汽越来越薄。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_mineral_spring_therapy_pool"
+   ],
+   "near": {
+    "deadline_minutes": 120,
+    "text": "三楼病房的暖气片开始发凉。"
+   },
+   "objective": "让三楼的老人熬过这一夜。",
+   "source": "nature",
+   "start_minute": null,
+   "tags": [
+    "disaster"
+   ],
+   "title": "暴雪压断外线",
+   "trigger": "林区暴雪压断了下山的供电线，循环泵停转，三号泉眼出水温度骤降，理疗室和值班间的气温往冰点掉，只剩理疗池还冒着白气。"
+  },
+  {
+   "choice": "先救谁，交接的底册谁守。",
+   "exits": [
+    {
+     "cost": "今晚没人再守泵房的交接底册。",
+     "option": "叫醒值班主任医师，把老人和低烧的护士一起送进特护抢救室吸氧监护"
+    },
+    {
+     "cost": "老人的联名收据落在阳光廊，被并购代表顺手收走。",
+     "option": "请值班主任医师先给老人打强心针送医务室，你带护士回值班间热敷，再请医师来巡诊"
+    },
+    {
+     "cost": "惊动上级，院里压着危重病号没转院的事全面曝光。",
+     "option": "用矿务局应急电台叫林场的履带雪地车进山，连夜把老人送医"
+    }
+   ],
+   "far": {
+    "consequence": "老人落下重病，院里压着危重病号的事被翻出来。",
+    "due_days": 10,
+    "trigger": "病情拖着不转院"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_retiree_heart_failure",
+   "immediate": {
+    "minutes": 5,
+    "text": "老人靠在棋桌边，嘴唇发紫。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_sanatorium_sunroom_lounge"
+   ],
+   "near": {
+    "deadline_minutes": 60,
+    "text": "强心针再晚，老人就撑不住了。"
+   },
+   "objective": "把老人和护士都送到医生手里。",
+   "source": "accident",
+   "start_minute": null,
+   "tags": [
+    "bodily_harm"
+   ],
+   "title": "老林工夜里心衰发作",
+   "trigger": "老林工代表在阳光廊争执后突发心衰，喘不上气还发着高热；值班护士为了在冷风里护住老人，自己也起了低烧；山路被大雪封死，救护车进不来。"
   }
  ],
- "region": "疗养院地下大型地热循环泵房回廊与防灾电动卷门死角",
+ "region": "东北林区老温泉疗养院：地热泵房、管廊、理疗室与二楼阳光廊",
  "rules": [
   {
-   "id": "r_sanatorium_steam_evac_code",
-   "text": "高压地热蒸汽管道法兰破裂期间严禁徒手接近高热喷溅源以防严重烫伤。"
+   "id": "r_spring_log_signed",
+   "text": "理疗池每日水温实测台账由当班护士签字，签了字的数字就是移交依据，改一笔要院办和矿务局一起盖章。"
   },
   {
-   "id": "r_fire_damper_door_trip_rule",
-   "text": "防灾电动隔断金属卷门卡死后只能通过机械触点复位或手动微动开关重启回路。"
+   "id": "r_mail_twice_weekly",
+   "text": "大雪封山后邮车一周只进山两趟，急件只能走矿务局的应急电台。"
   },
   {
-   "id": "r_thermal_power_station_safety_code",
-   "text": "地下高热泵房内作业严禁触碰强电高压防爆配电柜以防蒸汽短路。"
+   "id": "r_retiree_beds",
+   "text": "长住老林工的床位按年续费，欠费满半年由院办发催缴单，三张催缴单不缴就得清退。"
   },
   {
-   "id": "r_adult_mechanical_escape_standard",
-   "text": "绝境脱困依靠纯物理力矩与机械自救，一切互动严守成年自愿与安全防护原则。"
+   "id": "r_handover_vote",
+   "text": "资产交割会上，职工安置条款要院办、矿务局督导和老职工代表三方签字才算数。"
   }
  ],
  "schema_version": 1,
  "stage_labels": {
-  "acquainted": "共御死线",
-  "committed": "死生相守",
-  "familiar": "身心交托",
-  "flirting": "贴身喘息",
-  "intimate": "患难同行",
-  "stranger": "初次协同",
-  "testing": "生死信赖"
+  "acquainted": "走廊点头",
+  "committed": "留山相守",
+  "familiar": "泵房搭伴",
+  "flirting": "姜茶试探",
+  "intimate": "池边私情",
+  "stranger": "雪地陌路",
+  "testing": "交割对峙"
  },
  "status": "released",
- "style_hint": "高山疗养院工程硬核工笔，刻画地热蒸汽泄漏死角内高温白雾扑面的窒息危机、实心不锈钢听诊器听头猛烈敲击微动开关的清脆咬合、粉色制服被汗水蒸汽浸透贴合起伏身躯的视觉张力，台词沉稳克制充满流体力学判断与生死信赖。",
+ "style_hint": "写北方林区的冷与暖：窗外雪压松枝，屋里铸铁暖气片烫手。人话少，账算得细，心事靠一杯热茶、一块热毛巾递出去。",
  "tension_engines": [
   {
-   "id": "te_steam_purge_rush",
-   "text": "一百三十度高压地热蒸汽持续喷涌逼近死角，室内环境温度直逼人体热衰竭死线。"
+   "id": "te_handover_eve",
+   "text": "疗养院整体移交前的最后几夜，交割会一开，安置条款就定死了。"
   },
   {
-   "id": "te_damper_door_deadweight_pinch",
-   "text": "数百公斤重型金属卷帘门热胀卡死导轨，微动开关受震颤位移断开供电回路。"
+   "id": "te_spring_decline",
+   "text": "三号泉眼水温在往下走，告不告诉买方，决定收购价和全院的去处。"
   },
   {
-   "id": "te_close_contact_body_heat",
-   "text": "在一米狭窄死角内两人紧密相贴，湿透护士服薄汗与青年工匠体温催生极度异性张力。"
+   "id": "te_retiree_beds",
+   "text": "无儿女的老林工欠着床位费，收购方要先清退欠费的人。"
   },
   {
-   "id": "te_sanatorium_heating_ruin",
-   "text": "疗养院核心温泉供热管网面临连锁爆管全毁厄运，护士背负医护责任爆发惊人毅力。"
+   "id": "te_snowbound",
+   "text": "大雪封山，邮车一周两趟，人走不出去，消息也慢。"
   }
  ],
  "title": "泵房爆裂夜",
  "tone": [
-  "大雪封山的老疗养院",
-  "夜班走廊上的暖气片",
-  "泵房里炸开的滚烫白雾",
-  "卷门死角里湿透的护士服"
+  "大雪封山的林区",
+  "移交前的最后几夜",
+  "保温桶里的姜茶",
+  "泉眼水温往下走",
+  "老林工的去处"
  ],
  "twists": [
   {
    "category": "信息",
-   "id": "tw_steam_valve_groove_located",
+   "id": "tw_upstream_well_closed",
    "requires": [
-    "nurse_lin_xinyi"
+    "geologist_he_qian"
    ],
-   "text": "{nurse_lin_xinyi.name}借便携强光手电光束，在滚烫白雾弥漫的控制盒内准确定位出卡死微动开关金属簧片的受力孔洞。"
-  },
-  {
-   "category": "人事",
-   "id": "tw_steam_rupture_warning_roar",
-   "requires": [
-    "nurse_lin_xinyi"
-   ],
-   "text": "{nurse_lin_xinyi.name}听到减压阀法兰发出刺耳的二次金属撕裂巨响，管道剧烈晃动，面庞上映出冷峻决意。"
+   "text": "{geologist_he_qian.name}复测发现三号泉眼并没有枯竭，是收购方雇的勘探队提前关了上游分水井，做出贬值的假象；关井记录就在{geologist_he_qian.name}手里，交出去，评估团和院办都要翻脸。"
   },
   {
    "category": "资源",
-   "id": "tw_valve_wrench_inserted_safety",
+   "id": "tw_founding_deed",
    "requires": [
-    "apprentice_mechanic_fang_yuan"
+    "retiree_rep_lao_qiao"
    ],
-   "text": "{apprentice_mechanic_fang_yuan.name}从工具袋抽出重型合金扳手，死死垫在金属卷门底沿下方，彻底构筑起刚性防砸落安全作业间隙。"
+   "text": "{retiree_rep_lao_qiao.name}从贴身棉袄里掏出当年十二名老林工集资打地热井的原始产权协议，泉眼四成产权归老职工；可底契一亮，院办账上下个月的药款立刻就断。"
   },
   {
-   "category": "制度",
-   "id": "tw_coat_strap_bind_tight",
+   "category": "信息",
+   "id": "tw_private_spa_plan",
    "requires": [
-    "nurse_lin_xinyi",
-    "apprentice_mechanic_fang_yuan"
+    "acquirer_rep_gu_ze"
    ],
-   "text": "{nurse_lin_xinyi.name}解下白大褂纯棉系带，由{apprentice_mechanic_fang_yuan.name}迅速将听诊器金属听头与手臂紧密捆扎，消除了手汗滑脱隐患。"
+   "text": "你在{acquirer_rep_gu_ze.name}落下的公文包里看到集团真正的施工图：特护病房开春推平改私人汤屋；公开图纸算商业违约，院里要赔一笔足以停摆的违约金。"
+  },
+  {
+   "category": "人事",
+   "id": "tw_su_list_swap",
+   "requires": [
+    "head_nurse_su_man",
+    "nurse_lin_xinyi"
+   ],
+   "text": "{head_nurse_su_man.name}承认截留补偿表，是为了换整个护理部打包随迁，名单第一行写的就是{nurse_lin_xinyi.name}；揭穿护士长，整个护理部都走不成。"
   },
   {
    "category": "时限",
-   "id": "tw_temperature_critical_final_minute",
+   "id": "tw_coal_half_short",
    "requires": [
-    "nurse_lin_xinyi"
+    "mechanic_fang_yuan"
    ],
-   "text": "地下泵房环境温度突破生理极限，空气灼痛呼吸道，生死死线已逼近绝对耐受边缘。"
+   "text": "{mechanic_fang_yuan.name}盘煤时发现煤棚实际存煤比账面少了一半，只够烧今晚和明晚；今晚开足辅炉保三楼，明晚全院就得撤下山。"
   },
   {
    "category": "关系",
-   "id": "tw_close_body_tight_hammer_leverage",
-   "requires": [
-    "nurse_lin_xinyi",
-    "apprentice_mechanic_fang_yuan"
-   ],
-   "text": "{apprentice_mechanic_fang_yuan.name}在狭窄死角紧紧护住{nurse_lin_xinyi.name}，两人滚烫手指紧握听头，急促滚烫的吐息与心跳在幽暗中彻底交叠。"
-  },
-  {
-   "category": "意外",
-   "id": "tw_stethoscope_hammer_release_success",
+   "id": "tw_bolt_from_inside",
    "requires": [
     "nurse_lin_xinyi"
    ],
-   "text": "伴随一声清脆金属弹动声，不锈钢听诊器实心金属听头成功砸回微动触点，卷门提升电机轰鸣启动升起，两人携手冲出死角顺利脱险自救。"
+   "text": "理疗室的门打不开，不是风雪冻住了，是{nurse_lin_xinyi.name}自己从里面扣上了铜插销，只想要一段没人敲门的工夫，把交底的话和心里的话一次说完。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_receipt_entrusted",
+   "requires": [
+    "retiree_rep_lao_qiao",
+    "nurse_lin_xinyi"
+   ],
+   "text": "人前把护士骂成卖院帮凶的{retiree_rep_lao_qiao.name}，夜里托护工大姐递来一个纸包：联名收据背面写着的托付人，是{nurse_lin_xinyi.name}。"
   }
  ]
 }

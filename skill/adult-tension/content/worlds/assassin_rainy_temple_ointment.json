@@ -1,109 +1,108 @@
 {
  "background_cast": [
   {
-   "adult_context": "年满十九周岁曾在此落脚避难之游方行者遗留的石刻刻痕。",
+   "adult_context": "年满二十二岁、当差多年的东厂缇骑。",
    "age_range": [
-    20,
-    22
-   ],
-   "function": "witness",
-   "gender": "any",
-   "id": "bg_abandoned_temple_stone_buddha",
-   "line": "{npc.name}：（石佛残像在微弱火光中静默伫立，见证着夜幕下的苦痛与温存）",
-   "location_ids": [
-    "ancient_temple_side_hall_warm_room"
-   ],
-   "name": null,
-   "role": "暖阁佛龛角落青石垂眸破损石佛像"
-  },
-  {
-   "adult_context": "年满二十周岁东厂追魂司在籍年轻披甲缇骑探马。",
-   "age_range": [
-    20,
-    22
+    22,
+    35
    ],
    "function": "obstacle",
+   "gender": "male",
+   "id": "bg_patrol_rider",
+   "line": "百户有令，回廊上一只耗子也不许放过去。",
+   "location_ids": [
+    "loc_side_veranda_drip_eaves"
+   ],
+   "name": null,
+   "role": "巡廊缇骑"
+  },
+  {
+   "adult_context": "年满二十四岁、跟着推官办案的成年捕快。",
+   "age_range": [
+    24,
+    40
+   ],
+   "function": "rumor_source",
    "gender": "any",
-   "id": "bg_dongchang_scout_spearman",
-   "line": "{npc.name}：百户大人！正殿神台后头发现新鲜血迹了！那帮人肯定藏在后头偏殿！",
+   "id": "bg_court_clerk",
+   "line": "偏殿那位，说不定就是当年相府的千金。",
    "location_ids": [
     "main_shrine_collapsed_nave"
    ],
    "name": null,
-   "role": "在大殿前门持火把持长枪搜查年轻缇骑"
+   "role": "随行捕快"
   },
   {
-   "adult_context": "年满二十三岁在后山地道潜修多年的前朝遗留隐士修士。",
+   "adult_context": "年满三十岁、寄住寺里的成年香客。",
    "age_range": [
-    23,
-    24
+    30,
+    50
    ],
-   "function": "helper",
+   "function": "witness",
    "gender": "any",
-   "id": "bg_hidden_temple_hermit_monk",
-   "line": "{npc.name}：阿弥陀佛……地道水闸已开，快顺着暗河乘木筏走吧……",
+   "id": "bg_lookout_novice",
+   "line": "山门外火把又多了两支。",
+   "location_ids": [
+    "loc_bell_tower_decayed_loft"
+   ],
+   "name": null,
+   "role": "钟楼守夜人"
+  },
+  {
+   "adult_context": "年满三十岁、走山货的成年货郎。",
+   "age_range": [
+    30,
+    55
+   ],
+   "function": "witness",
+   "gender": "any",
+   "id": "bg_fellow_traveler",
+   "line": "这雨要是再下一天，石桥那边就彻底过不去了。",
+   "location_ids": [
+    "main_shrine_collapsed_nave"
+   ],
+   "name": null,
+   "role": "避雨货郎"
+  },
+  {
+   "adult_context": "年满二十岁、在茶寮干了几年的成年伙计。",
+   "age_range": [
+    20,
+    30
+   ],
+   "function": "messenger",
+   "gender": "any",
+   "id": "bg_teahouse_runner",
+   "line": "掌柜让我捎句话：船在下游第三根石笋。",
    "location_ids": [
     "back_courtyard_dry_well_tunnel"
    ],
    "name": null,
-   "role": "在地道深处看管暗河水闸年迈盲眼老僧"
+   "role": "茶寮伙计"
   },
   {
-   "adult_context": "年满十九周岁本地山林熟稔地形之年轻采药猎户。",
+   "adult_context": "年满四十岁、在暗河撑了半辈子船的老船工。",
    "age_range": [
-    20,
-    22
+    40,
+    60
    ],
-   "function": "rumor_source",
+   "function": "helper",
    "gender": "any",
-   "id": "bg_flash_flood_tracker_peasant",
-   "line": "{npc.name}：官爷……前面栈桥真塌了！过不去了！再往前咱们都得被山洪卷走啊！",
+   "id": "bg_ferryman",
+   "line": "水急，坐稳了，别往两边看。",
    "location_ids": [
-    "main_shrine_collapsed_nave"
+    "back_courtyard_dry_well_tunnel"
    ],
    "name": null,
-   "role": "被强行征调给东厂带路猎户年轻长子"
-  },
-  {
-   "adult_context": "年满二十一周岁东厂特遣神机弩队副手。",
-   "age_range": [
-    21,
-    23
-   ],
-   "function": "obstacle",
-   "gender": "any",
-   "id": "bg_dongchang_crossbow_cadet",
-   "line": "{npc.name}：窗户封死了！用火箭！拿猛火油把那间木阁给我点着了！",
-   "location_ids": [
-    "main_shrine_collapsed_nave"
-   ],
-   "name": null,
-   "role": "伏在破瓦屋顶架设连环弩年轻缇骑射手"
-  },
-  {
-   "adult_context": "年满二十周岁在山间客栈逃难流落至此的青年伙计。",
-   "age_range": [
-    20,
-    22
-   ],
-   "function": "messenger",
-   "gender": "any",
-   "id": "bg_refugee_scholar_servant",
-   "line": "{npc.name}：东厂的人进大殿了……那帮人手里牵着黑狗，见人就砍啊！",
-   "location_ids": [
-    "ancient_temple_side_hall_warm_room"
-   ],
-   "name": null,
-   "role": "在后殿草垛避雨瑟瑟发抖年轻游方杂工"
+   "role": "暗河船工"
   }
  ],
  "cast_combos": [
   {
-   "chemistry": "{cold_assassin_shen_wanxue.name}软剑横在你颈侧三寸褪去半肩黑衣，医者凝神以烈火银刀刮去后背乌黑腐肉敷上雄黄散，刺客剧痛中反扣医者手腕，武僧{righteous_young_monk_huitong.name}在殿外力敌缇骑，冷艳杀手在刻骨极痛与医者温热体温相依中心防彻底消融确立生死血契。",
-   "id": "combo_assassin_physician_cauterize_bond",
+   "chemistry": "{cold_assassin_shen_wanxue.name}冷得像一把剑，却只在你面前把剑横在膝头，肯让你看那道咬出血的下唇。",
+   "id": "cc_assassin_and_scholar_warm",
    "identity_ids": [
-    "refugee_herbalist_physician_youth",
-    "fugitive_imperial_academy_scholar"
+    "pi_fugitive_imperial_academy_scholar"
    ],
    "player_positions": [
     "low"
@@ -114,261 +113,39 @@
      "a": "player",
      "a_to_b": {
       "tension": 3,
-      "trust": 5
+      "trust": 4
      },
      "b": "cold_assassin_shen_wanxue",
      "b_to_a": {
       "tension": 3,
-      "trust": 5
+      "trust": 4
      },
-     "reason": "敬佩其孤身刺奸之侠烈风骨，愿以毕生医术为之拔毒疗伤同生共死。",
+     "reason": "出京那年在城外驿站安顿下来，刺客为你守了一夜门，天亮前在灶台边吻了你，约下说“剑穗”二字就停。",
      "stage": "intimate"
-    },
-    {
-     "a": "righteous_young_monk_huitong",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 5
-     },
-     "b": "cold_assassin_shen_wanxue",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 5
-     },
-     "reason": "感念其除恶义举，在殿外挥动长棍殊死抵挡强敌。",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
-     },
-     "b": "righteous_young_monk_huitong",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "家道中落避祸深山的年轻世家医者与荒废兰若古刹年轻守殿行者兼兼修罗汉拳武僧在今夜前只打过照面。",
-     "stage": "acquainted"
     }
    ],
    "slots": [
-    "cold_assassin_shen_wanxue",
-    "righteous_young_monk_huitong"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "在剧毒入心脉前挑出透骨钉并携密账共同逃离东厂铁蹄包围。",
-    "limit_gap": "平日男女大防与杀手戒条不可逾越，此刻暗室疗伤中薄衫半解肌肤相亲呼吸相闻。",
-    "meeting_reason": "荒庙暖阁孤岛避难中的拔毒清创与背靠背守夜。",
-    "resource_gap": "女刺客手握百炼软剑与密账却毒入骨髓，医者手握金疮圣药与柳叶银刀却手无寸铁。"
-   },
-   "tags": [
-    "workplace_power",
-    "crime"
-   ],
-   "tension_engine_ids": [
-    "te_assassin_pride_vs_bare_shoulder_cure",
-    "te_blade_neck_standoff_vs_flesh_blood_sy"
-   ]
-  },
-  {
-   "chemistry": "{ruthless_dongchang_commander_zhao.name}手持火把与绣春刀在殿外纵火逼索密账，{cold_assassin_shen_wanxue.name}忍痛握剑立于暖阁门前厉声呵斥，你以草席湿泥死命封堵猛火油灌入，朝廷鹰犬与孤胆侠客在破庙火海边缘展开惊心动魄之绝命对赌。",
-   "id": "combo_dongchang_siege_arson_standoff",
-   "identity_ids": [
-    "refugee_herbalist_physician_youth",
-    "fugitive_imperial_academy_scholar",
-    "reformed_constable_deserter_scout"
-   ],
-   "player_positions": [
-    "low",
-    "equal"
-   ],
-   "power_structure": "switchable",
-   "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "ruthless_dongchang_commander_zhao",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "视作抄家灭门之血仇鹰犬，誓死不从。",
-     "stage": "stranger"
-    },
-    {
-     "a": "ruthless_dongchang_commander_zhao",
-     "a_to_b": {
-      "tension": 5,
-      "trust": 0
-     },
-     "b": "cold_assassin_shen_wanxue",
-     "b_to_a": {
-      "tension": 5,
-      "trust": 0
-     },
-     "reason": "为夺取密账立功企图将其生擒折磨致死。",
-     "stage": "stranger"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
-     },
-     "b": "cold_assassin_shen_wanxue",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "江南隐雾暗门绝顶刺客兼折梅剑传人只听人提过家道中落避祸深山的年轻世家医者的名字，今夜才第一次对上眼。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
-     },
-     "b": "censor_aide_judge_lu",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "巡按御史麾下年轻推官只听人提过家道中落避祸深山的年轻世家医者的名字，今夜才第一次对上眼。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "ruthless_dongchang_commander_zhao",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
-     },
-     "b": "censor_aide_judge_lu",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "巡按御史麾下年轻推官只听人提过东厂追魂司提督麾下年轻狠辣百户官的名字，今夜才第一次对上眼。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "cold_assassin_shen_wanxue",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
-     },
-     "b": "censor_aide_judge_lu",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "巡按御史麾下年轻推官只听人提过江南隐雾暗门绝顶刺客兼折梅剑传人的名字，今夜才第一次对上眼。",
-     "stage": "acquainted"
-    }
-   ],
-   "slots": [
-    "ruthless_dongchang_commander_zhao",
-    "cold_assassin_shen_wanxue",
-    "censor_aide_judge_lu"
-   ],
-   "stakes": {
-    "irreplaceable_goal": "拖延时间扑灭烈火等待女刺客毒性平复以突入后院枯井密道。",
-    "limit_gap": "门板一旦被烧穿众人将被生擒押赴诏狱遭受碎骨非人折磨。",
-    "meeting_reason": "破庙偏殿门廊内外的最后通牒与引火攻防周旋。",
-    "resource_gap": "门外拥有连发重弩、烈性火药与数十名缇骑，门内唯有一柄软剑与一具药箱。"
-   },
-   "tags": [
-    "intimate",
-    "workplace_power"
-   ],
-   "tension_engine_ids": [
-    "te_dongchang_siege_arson_vs_warm_room_sh",
-    "te_toxic_nail_necrosis_vs_life_death_cou"
-   ]
-  },
-  {
-   "chemistry": "{righteous_swordsman_companion_chufeng.name}青锋长剑在正殿雷芒大作斩断缇骑铁索，{cold_assassin_shen_wanxue.name}负伤挺剑配合开辟侧翼通道，你利用斥候暗号制造混乱，江湖义士在江南暴雨绝境中达成生死相托之同袍战阵盟约。",
-   "id": "combo_swordsman_ranger_nave_breakout",
-   "identity_ids": [
-    "reformed_constable_deserter_scout"
-   ],
-   "player_positions": [
-    "equal"
-   ],
-   "power_structure": "equal",
-   "relations": [
-    {
-     "a": "righteous_swordsman_companion_chufeng",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 5
-     },
-     "b": "cold_assassin_shen_wanxue",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 5
-     },
-     "reason": "深佩其除恶不屈之侠骨风范，甘愿以剑相护。",
-     "stage": "committed"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 5
-     },
-     "b": "righteous_swordsman_companion_chufeng",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 5
-     },
-     "reason": "配合默契，在暴雨中并肩浴血拼杀。",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
-     },
-     "b": "cold_assassin_shen_wanxue",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "弃暗投明脱离缇骑之青年按察司捕快和江南隐雾暗门绝顶刺客兼折梅剑传人各怀心事，被这场意外硬塞进同一个角落。",
-     "stage": "acquainted"
-    }
-   ],
-   "slots": [
-    "righteous_swordsman_companion_chufeng",
     "cold_assassin_shen_wanxue"
    ],
    "stakes": {
-    "irreplaceable_goal": "确保全员安全撤向后院地宫逃生口摆脱东厂火把合围。",
-    "limit_gap": "突围早一瞬顺利遁入地道生还，迟一瞬陷入重兵合围万劫不复。",
-    "meeting_reason": "大雄宝殿残垣断壁之下的合力斩索破围行动。",
-    "resource_gap": "游侠剑法精湛擅长群战，刺客轻功绝顶熟悉暗门潜行，斥候通晓追兵阵法漏洞。"
+    "irreplaceable_goal": "你得让刺客相信，今夜你不是来拿赏银的。",
+    "limit_gap": "刺客不能报真名，你也不能被搜出血书。",
+    "meeting_reason": "{cold_assassin_shen_wanxue.name}在暖阁里拔下发间木簪抵住你胸口，问你今夜若被东厂围死，肯不肯死在一处。",
+    "resource_gap": "{cold_assassin_shen_wanxue.name}握着剑、握着总账，你只有一封血书和一个铺位。"
    },
    "tags": [
-    "workplace_power",
-    "crime"
+    "intimate"
    ],
    "tension_engine_ids": [
-    "te_dongchang_siege_arson_vs_warm_room_sh",
-    "te_blade_neck_standoff_vs_flesh_blood_sy"
+    "te_true_name",
+    "te_bounty_siege"
    ]
   },
   {
-   "chemistry": "{cold_assassin_shen_wanxue.name}在你搀扶下穿过枯井地道登上后山青竹林，晨曦破晓雨过天晴，女刺客亲手解下软剑剑穗红绳系在医者腕间，{righteous_swordsman_companion_chufeng.name}收剑入鞘抱拳含笑，冷艳杀手彻底褪去戾气依偎在青年怀中，宣告严寒脱困并定下终身不负之盟誓。",
-   "id": "combo_dawn_well_tunnel_vow_triumph",
+   "chemistry": "{cold_assassin_shen_wanxue.name}是你许过白首的人，平日见了你也只点一下头，把心事都压在剑穗上。",
+   "id": "cc_assassin_and_ranger_nave",
    "identity_ids": [
-    "righteous_swordsman_ranger_cadet"
+    "pi_sword_sect_heir"
    ],
    "player_positions": [
     "high"
@@ -376,640 +153,1039 @@
    "power_structure": "player_high",
    "relations": [
     {
-     "a": "cold_assassin_shen_wanxue",
+     "a": "player",
      "a_to_b": {
-      "tension": 1,
-      "trust": 5
-     },
-     "b": "player",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 5
-     },
-     "reason": "共历暖阁剔骨疗毒与背靠背守过生死长夜，今生今世愿洗尽铅华甘做布衣相守之终身爱侣。",
-     "stage": "committed"
-    },
-    {
-     "a": "righteous_swordsman_companion_chufeng",
-     "a_to_b": {
-      "tension": 1,
+      "tension": 2,
       "trust": 5
      },
      "b": "cold_assassin_shen_wanxue",
      "b_to_a": {
-      "tension": 1,
+      "tension": 3,
       "trust": 5
      },
-     "reason": "见证了一段惊心动魄之绝世情义，由衷拱手致意含笑护送出山。",
+     "reason": "三年前太湖折梅会上一剑倾心，对方把贴身的墨玉剑穗挂上你的剑，约好诛尽奸佞就退隐。",
      "stage": "committed"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
-     },
-     "b": "righteous_swordsman_companion_chufeng",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "武当俗家游历江南见义勇为年轻剑客对家道中落避祸深山的年轻世家医者本无交情，眼下却不得不互相照应。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
-     },
-     "b": "teahouse_contact_madam_liu",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "山脚茶寮女掌柜兼暗门联络人对家道中落避祸深山的年轻世家医者本无交情，眼下却不得不互相照应。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "cold_assassin_shen_wanxue",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
-     },
-     "b": "teahouse_contact_madam_liu",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "山脚茶寮女掌柜兼暗门联络人对江南隐雾暗门绝顶刺客兼折梅剑传人本无交情，眼下却不得不互相照应。",
-     "stage": "acquainted"
-    },
-    {
-     "a": "righteous_swordsman_companion_chufeng",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
-     },
-     "b": "teahouse_contact_madam_liu",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "山脚茶寮女掌柜兼暗门联络人对武当俗家游历江南见义勇为年轻剑客本无交情，眼下却不得不互相照应。",
-     "stage": "acquainted"
     }
    ],
    "slots": [
-    "cold_assassin_shen_wanxue",
-    "righteous_swordsman_companion_chufeng",
+    "cold_assassin_shen_wanxue"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你得决定是带账先走，还是留下来陪着伤者。",
+    "limit_gap": "你不能当着东厂明着抗旨，刺客不能丢下总账。",
+    "meeting_reason": "{cold_assassin_shen_wanxue.name}扶着残壁站起来，把总账塞进你怀里，要你带着推官从暗道先走。",
+    "resource_gap": "你有师门名号压场，刺客只有一身伤和一本账。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_bounty_siege",
+    "te_ledger_claim"
+   ]
+  },
+  {
+   "chemistry": "{cold_assassin_shen_wanxue.name}只肯让你一个人碰那处伤，你说什么都应，只是从不回头看你。",
+   "id": "cc_assassin_and_physician_cure",
+   "identity_ids": [
+    "pi_herbal_physician"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 4
+     },
+     "b": "cold_assassin_shen_wanxue",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "十天前你替刺客包扎剑伤，伤好后的一个安稳夜里，对方把软甲暗扣的解法只告诉了你一人。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "cold_assassin_shen_wanxue"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你得在拔钉的这一刻里，让刺客愿意把真名也告诉你。",
+    "limit_gap": "你治得了伤，却挡不住东厂；刺客杀得了人，却拔不出背上的钉。",
+    "meeting_reason": "{cold_assassin_shen_wanxue.name}在暖阁背对你坐定，自己解开右肩盘扣，咬着棉巾说：“动手吧，我忍得住。”",
+    "resource_gap": "你有拔毒的药与手艺，刺客有剑和账册，彼此都缺对方那一样。"
+   },
+   "tags": [
+    "intimate",
+    "bodily_harm"
+   ],
+   "tension_engine_ids": [
+    "te_true_name"
+   ]
+  },
+  {
+   "chemistry": "{cold_assassin_shen_wanxue.name}和你一个是贼一个是捕，每次碰面都像过招，谁也不肯先松手。",
+   "id": "cc_assassin_and_constable_pact",
+   "identity_ids": [
+    "pi_reformed_constable_deserter_scout"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 2
+     },
+     "b": "cold_assassin_shen_wanxue",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "上月临安府大牢外你故意放了刺客一线，对方掠过你肩头时贴耳一笑，说欠你一条命。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "cold_assassin_shen_wanxue"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你得让刺客知道，这回你站哪一边。",
+    "limit_gap": "你放人就是渎职，刺客信了你就可能被擒。",
+    "meeting_reason": "{cold_assassin_shen_wanxue.name}在回廊尽头拦住按刀巡视的你，借雷光凑近，低声问你今晚是来领赏还是来还情。",
+    "resource_gap": "你有腰牌能拿人，刺客有你放过一回的那份人情。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_bounty_siege",
+    "te_true_name"
+   ]
+  },
+  {
+   "chemistry": "{physician_lu_qingya.name}和你是一样的医者，平日里互相挑方子的毛病，挑完了又熬夜一起改。",
+   "id": "cc_lu_qingya_and_physician_kin",
+   "identity_ids": [
+    "pi_herbal_physician"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 4
+     },
+     "b": "physician_lu_qingya",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "半年前在金陵书肆同校一部遗稿，画舫上秉烛谈到五更，相拥而眠，{physician_lu_qingya.name}把家传秘方抄赠给你。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "physician_lu_qingya"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你得决定要不要拿自己的名声替这桩旧案担保。",
+    "limit_gap": "{physician_lu_qingya.name}不能见官，你也不想被卷进相府旧案。",
+    "meeting_reason": "{physician_lu_qingya.name}在暖阁外攥住你的手腕，压低声音说里头那位是自己失散十年的堂妹，求你作个证。",
+    "resource_gap": "你有行医的名声能作证，{physician_lu_qingya.name}有血书和堂亲的胎记为凭。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_true_name",
+    "te_ledger_claim"
+   ]
+  },
+  {
+   "chemistry": "{teahouse_contact_madam_liu.name}和你是老相识，见面就斗嘴，可真到要紧时只信你一个官差。",
+   "id": "cc_liu_san_niang_and_constable_boat",
+   "identity_ids": [
+    "pi_reformed_constable_deserter_scout"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 1,
+      "trust": 3
+     },
+     "b": "teahouse_contact_madam_liu",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 3
+     },
+     "reason": "前年你在县衙当差，替那间茶寮压下两张私盐罚单，此后常去茶寮听掌柜讲江湖掌故。",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
     "teahouse_contact_madam_liu"
    ],
    "stakes": {
-    "irreplaceable_goal": "向天地浩然正气昭告二人新生并确立一生并肩相守之神圣伴侣名分。",
-    "limit_gap": "从被追杀朝不保夕之孤独刺客蜕变为携手知己浪迹天涯之真正自由人。",
-    "meeting_reason": "破晓翠竹林海晨光下的悬崖庆贺与定情盟誓确立。",
-    "resource_gap": "成功穿过地道逃出生天，毒性彻底拔除且密账完好无损保留。"
+    "irreplaceable_goal": "你得决定接下这根竹篙，还是把暗门的路报上去。",
+    "limit_gap": "掌柜不能让官差知道暗门的路，你不能明着帮暗门的人。",
+    "meeting_reason": "{teahouse_contact_madam_liu.name}在枯井边把系缆的竹篙塞进你手里，说暗河下游藏着一叶小舟，等偏殿拔完毒就走。",
+    "resource_gap": "{teahouse_contact_madam_liu.name}知道暗河小舟藏在哪，你有腰牌能挡住官面上的盘问。"
    },
    "tags": [
-    "workplace_power",
     "crime"
    ],
    "tension_engine_ids": [
-    "te_assassin_pride_vs_bare_shoulder_cure",
-    "te_blade_neck_standoff_vs_flesh_blood_sy"
+    "te_flood_cut"
+   ]
+  },
+  {
+   "chemistry": "{ruthless_dongchang_commander_zhao.name}恨你入骨，又忍不住要跟你比个高下，每次见面都先看你的剑。",
+   "id": "cc_ranger_and_zhao_yan_clash",
+   "identity_ids": [
+    "pi_sword_sect_heir"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 5,
+      "trust": -2
+     },
+     "b": "ruthless_dongchang_commander_zhao",
+     "b_to_a": {
+      "tension": 5,
+      "trust": -1
+     },
+     "reason": "去年宣武门外百户率缇骑围捕你的同道，你一剑震落那把腰刀，逼百户当众立誓退兵。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "ruthless_dongchang_commander_zhao"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你得在不拔剑的前提下，把百户挡在回廊外。",
+    "limit_gap": "你不能在佛前见血，百户不能当着巡按的人硬来。",
+    "meeting_reason": "{ruthless_dongchang_commander_zhao.name}踏进正殿，把如意悬赏牌拍在供桌上，刀尖朝暖阁回廊一挑，问你还敢不敢再抗一回旨。",
+    "resource_gap": "你有师门名号和剑，{ruthless_dongchang_commander_zhao.name}有悬赏令和强弩手。"
+   },
+   "tags": [
+    "violence"
+   ],
+   "tension_engine_ids": [
+    "te_bounty_siege"
+   ]
+  },
+  {
+   "chemistry": "{righteous_young_monk_huitong.name}总说出家人不打诳语，可每次你问冷不冷，行者都说不冷。",
+   "id": "cc_huitong_and_scholar_bell",
+   "identity_ids": [
+    "pi_fugitive_imperial_academy_scholar"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "righteous_young_monk_huitong",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 3
+     },
+     "reason": "入寺这半月，每逢雨夜行者都在钟楼给你送一炉煨热的山芋，手指擦过你的指尖，就念一声佛号。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "righteous_young_monk_huitong"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你得决定是跟行者走，还是留下来陪偏殿的人。",
+    "limit_gap": "行者守着戒律，你守着自己的血书。",
+    "meeting_reason": "{righteous_young_monk_huitong.name}在钟楼上拉住你的袖袍，指着下方的暗道口低声说，后殿佛像后头已经备好了干粮火石。",
+    "resource_gap": "{righteous_young_monk_huitong.name}握着地宫石钥和寺里的干粮，你只是借住的客人。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_flood_cut",
+    "te_bounty_siege"
+   ]
+  },
+  {
+   "chemistry": "正殿篝火两边，{ruthless_dongchang_commander_zhao.name}和{censor_aide_judge_lu.name}一个握刀一个握律典，谁都不肯先退，你站在中间。",
+   "id": "cc_zhao_judge_standoff",
+   "identity_ids": [
+    "pi_reformed_constable_deserter_scout",
+    "pi_sword_sect_heir"
+   ],
+   "player_positions": [
+    "low",
+    "equal",
+    "high"
+   ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 4
+     },
+     "b": "censor_aide_judge_lu",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "两年前在按察司卷宗库通宵查贪墨，天亮后在书案旁吻了你，又把副宪牌留给了你。",
+     "stage": "intimate"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": -1
+     },
+     "b": "ruthless_dongchang_commander_zhao",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 0
+     },
+     "reason": "今日入山前百户在谷口驿站亮出生杀金牌，问你愿不愿带路截杀刺客分两万两赏银。",
+     "stage": "testing"
+    },
+    {
+     "a": "ruthless_dongchang_commander_zhao",
+     "a_to_b": {
+      "tension": 5,
+      "trust": -3
+     },
+     "b": "censor_aide_judge_lu",
+     "b_to_a": {
+      "tension": 5,
+      "trust": -3
+     },
+     "reason": "推官奉密旨查东厂私刑，百户早就盯上了这位不肯收钱的推官。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "ruthless_dongchang_commander_zhao",
+    "censor_aide_judge_lu"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你得在这份文书上签下证词，或者把它扔进篝火。",
+    "limit_gap": "{ruthless_dongchang_commander_zhao.name}不能当众违宪，{censor_aide_judge_lu.name}不能无凭动东厂。",
+    "meeting_reason": "{ruthless_dongchang_commander_zhao.name}喝令缇骑往偏殿泼油点火，{censor_aide_judge_lu.name}抢上断梁亮出宪牌，转头把一份空白的勘验文书递到你手上。",
+    "resource_gap": "{ruthless_dongchang_commander_zhao.name}手下有强弩，{censor_aide_judge_lu.name}有宪牌，你有两人都想拉拢的身份。"
+   },
+   "tags": [
+    "crime",
+    "violence"
+   ],
+   "tension_engine_ids": [
+    "te_ledger_claim",
+    "te_bounty_siege"
+   ]
+  },
+  {
+   "chemistry": "{physician_lu_qingya.name}和{teahouse_contact_madam_liu.name}隔着一个伤者，一个要认亲，一个要接人走，都想先拉你站过去。",
+   "id": "cc_lu_liu_cure_escape_secret",
+   "identity_ids": [
+    "pi_fugitive_imperial_academy_scholar"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 4
+     },
+     "b": "physician_lu_qingya",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "去年秋天在江南小镇落脚后同住一间药铺，一夜灯下抵足而眠，{physician_lu_qingya.name}把清心玉坠系上你的颈项。",
+     "stage": "intimate"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "teahouse_contact_madam_liu",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "前日路过竹林茶寮，掌柜借递茶用指尖刮过你的下颌，笑说就喜欢斯文的落难书生。",
+     "stage": "flirting"
+    },
+    {
+     "a": "physician_lu_qingya",
+     "a_to_b": {
+      "tension": 4,
+      "trust": -1
+     },
+     "b": "teahouse_contact_madam_liu",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 0
+     },
+     "reason": "医者查到暗门当年掠走孤女的旧事，掌柜知道底档就在自己身上。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "physician_lu_qingya",
+    "teahouse_contact_madam_liu"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "你得决定拔钉之后，伤者是先服药静养，还是连夜乘船走。",
+    "limit_gap": "{physician_lu_qingya.name}不能见官，{teahouse_contact_madam_liu.name}不能让暗门的旧档露出来。",
+    "meeting_reason": "暖阁里{physician_lu_qingya.name}正用银刀挑偏殿里那位背上的黑肉，{teahouse_contact_madam_liu.name}把脱籍信物塞进药箱，见你抱柴进门，顺手拉你上前按住伤者的肩。",
+    "resource_gap": "{physician_lu_qingya.name}有金针和血书，{teahouse_contact_madam_liu.name}有小舟和解毒散，你只有一双空手。"
+   },
+   "tags": [
+    "intimate",
+    "bodily_harm"
+   ],
+   "tension_engine_ids": [
+    "te_true_name",
+    "te_flood_cut"
    ]
   }
  ],
  "channels": [
   {
    "fidelity": "exact",
-   "id": "ch_warm_room_lattice_whisper_breath",
-   "reach": "逼仄木阁内，银刀割开乌黑腐肉时压抑至极的闷哼、急促的白汽与刀尖碰到铁钉的细响。",
-   "text": "暖阁炭火前挑钉时压抑的闷哼"
-  },
-  {
-   "fidelity": "distorted",
-   "id": "ch_monsoon_thunder_rain_roof_groan",
-   "reach": "窗外震耳欲聋之连绵雷暴轰鸣、倾盆暴雨撞击破瓦之狂乱爆裂声与山洪在山谷咆哮奔涌之震颤。",
-   "text": "特大梅雨雷暴狂澜与残殿断梁呻吟"
+   "id": "ch_nave_bonfire_talk",
+   "reach": "一句话说出口，全殿避雨的人都听见",
+   "text": "正殿篝火边的议论"
   },
   {
    "fidelity": "exact",
-   "id": "ch_hound_howl_iron_boot_shackles",
-   "reach": "穿透风雨回廊隐隐传来的缇骑猎犬低沉狂吠、绣春刀出鞘摩擦声与生铁破甲锥砸击青石地面之清脆回响。",
-   "text": "东厂血滴子猎犬凶吠与铁履甲片铿锵"
+   "id": "ch_teahouse_bamboo_whistle",
+   "reach": "从后院井口传到山脚茶寮",
+   "text": "茶寮的竹哨暗号"
+  },
+  {
+   "fidelity": "distorted",
+   "id": "ch_patrol_hearsay",
+   "reach": "一顿饭工夫传到山门外的强弩营",
+   "text": "缇骑之间的传话"
   }
  ],
  "character_templates": [
   {
-   "adult_context": "年满二十一周岁名震江南暗门天字号冷艳女刺客，身负重伤剧毒逃亡至此。",
-   "age_range": [
-    21,
-    22
-   ],
-   "appearance_options": [
-    "一袭紧身墨黑夜行水靠劲装，腰系巴掌宽云纹犀角锦带，双眉如柳叶长刀凌厉斜飞，一双眸子宛如出鞘寒刃森冷刺骨，鲜血渗出浸透黑衣，下唇因忍耐剧痛咬出一排殷红齿印，手中秋水软剑在寒光中不住震颤，散发着孤傲冷艳、令人不敢直视的绝代杀伐气场。",
-    "在暖阁微弱炭火红光映照下，软剑归鞘横置膝头，背心处一枚寸许长的纯钢透骨钉深陷肌理，双肩不住微微战栗，侧首微仰下巴，绝美容颜泛起因羞恼与剧痛而生的淡淡红晕，美眸泛着倔强水光死死盯住身旁之人，浑身肌肉紧绷戒备宛若濒死母豹。"
-   ],
-   "decision": {
-    "avoids": [
-     "乘人之危的宵小下流之徒",
-     "贪生怕死的软骨头"
-    ],
-    "contrast": "人前是杀人不眨眼、剑过无痕的冷血煞星，毒拔干净后的清晨却是个红透耳尖、被一句真心话就逼得握不稳剑柄的女子。",
-    "core_value": "手中利刃只斩奸佞不杀无辜，受人点水之恩必当涌泉相报，绝不在死亡面前折断一身傲骨。",
-    "goal_options": [
-     "收敛杀机由青年医者以柳叶刀挑出剧毒透骨钉敷药保全性命",
-     "在破庙暖阁与青年背靠背借体温熬过毒发严寒长夜",
-     "于破晓时分并肩杀出东厂缇骑重围遁入后山枯井地道"
-    ],
-    "never": [
-     "绝不会出卖恩人换取自身苟活，绝不会滥杀救助自己的良善医者。"
-    ],
-    "prefers": [
-     "目光清正胸襟坦荡且身怀真本领之正直君子"
-    ],
-    "pressure_responses": {
-     "breaking": "在强敌破门瞬间横剑挺身挡在青年医者身前，拼尽最后一口真气搏命断后。",
-     "high": "在拔钉断骨极痛关头，反手死死扣紧同伴手腕，将面颊埋在同伴肩头闷哼战栗。",
-     "low": "以软剑遥指来人咽喉，嗓音冷冽如冰勒令其退后三步不准妄动。",
-     "mid": "因剧毒剧痛四肢发冷跌坐草席，咬破舌尖强行逼迫自己保持清醒，侧身解衣受药。"
-    },
-    "relationship_stance": "视男女私情为杀手大忌，但在生死边缘面对青年医者毫无杂念之坦荡施救，冰封心防被深深震撼消融。",
-    "withdrawal": "退回收缩至暖阁佛龛神台阴暗角落，屏息调息封住周身大穴以压制毒性。"
-   },
-   "gender": "any",
-   "gender_reason": null,
-   "id": "cold_assassin_shen_wanxue",
-   "identity": {
-    "authority": "精通暗门无相剑法与绝顶轻功，即便身负重伤单手一剑亦可瞬间取三步之内人性命。",
-    "exposure": "一旦毒发昏迷落入东厂诏狱将受尽搜魂酷刑并牵连门中数百手足。",
-    "hidden": "实为多年前遭阉党诛杀之兵部忠良遗孤，投身暗门只为手刃仇敌，冷酷外表下深藏着一腔未凉之赤子孤勇与姑娘柔肠。",
-    "limits": [
-     "后背透骨钉深及骨髓剧毒顺经脉蔓延导致内力被封七成",
-     "早年被灌输杀戮戒条极度缺乏对常人温情之信任"
-    ],
-    "obligations": [
-     "誓死保全怀中搜集之东厂贪官祸国账册，将其送交江南清流名宿匡扶社稷。"
-    ],
-    "resources": [
-     "一柄百炼纯精钢削铁如泥秋水软剑",
-     "三枚藏于袖口的无影百炼透骨钢针"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "面对杀手利刃威胁面不改色依然沉稳施刀清创之医者仁心气度",
-     "在刮骨疗毒肌肤相亲瞬间目不斜视恪守礼法底线之端方自持"
-    ],
-    "boundaries": [
-     "在公众面前维持江湖客肃穆庄严仪表",
-     "严禁任何带有轻薄亵渎性质的触碰"
-    ],
-    "desire_range": [
-     2,
-     4
-    ],
-    "desired_position": "卸下杀手玄衣后与身旁知己在江南水乡悬壶泛舟隐姓埋名之平生眷侣",
-    "dislikes": [
-     "轻佻言辞打量",
-     "自作聪明探听隐秘"
-    ],
-    "expression": "耳尖泛红亲手将佩剑红绳剑穗系在对方手腕，垂眸轻声宣告日后若有难处，纵隔千山万水亦必提剑赶赴。",
-    "likes": [
-     "剧痛平息后后背传来温热药膏清凉之感时的释然",
-     "毒退以后，在晨光里靠着对方肩头听那份坚实沉稳的心跳"
-    ],
-    "preconditions": [
-     "江南隐雾暗门绝顶刺客兼折梅剑传人与对方都已完全清醒，眼前的危机已经解除",
-     "江南隐雾暗门绝顶刺客兼折梅剑传人出于自愿与对等的敬意，不带任何交换或强求"
-    ],
-    "self_control_range": [
-     4,
-     5
-    ]
-   },
-   "public_role": "江南隐雾暗门绝顶刺客兼折梅剑传人",
-   "schedule": [
-    {
-     "from": 0,
-     "location_id": "main_shrine_collapsed_nave",
-     "to": 29
-    },
-    {
-     "from": 30,
-     "location_id": "back_courtyard_dry_well_tunnel",
-     "to": 1379
-    },
-    {
-     "from": 1380,
-     "location_id": "ancient_temple_side_hall_warm_room",
-     "to": 1409
-    },
-    {
-     "from": 1410,
-     "location_id": "ancient_temple_side_hall_warm_room",
-     "to": 1439
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "医者双手虎口被女刺客剧痛反扣勒出道道深紫血痕指骨剧烈剧痛挫伤。",
-      "option": "医者以柳叶刀在烈火炙烤后凝神下刀利落挖除乌黑腐肉挑出铁钉"
-     },
-     {
-      "cost": "女刺客下唇被贝齿硬生生咬烂鲜血淋漓痛彻骨髓内力再度消耗。",
-      "option": "女刺客口衔白帕死命抗住生铁烈酒火炙清创之极刑不发一声"
-     }
-    ],
-    "pressure": "若不能在一炷香时间内以银刀挑开皮肉将带倒钩之透骨钉连根起出并敷上雄黄散，剧毒入心脉神仙难救。",
-    "trigger": "后背透骨钉毒性大发，乌黑毒血顺着脊背不断渗出染黑衣衫，{npc.name}浑身发冷牙关紧咬，眼前发黑几近休克昏厥。"
-   },
-   "tags": [
-    "intimate",
-    "workplace_power"
-   ],
-   "voices": {
-    "inner": "别…别抖。割下去…把烂肉挑干净…但若是敢动别的邪念…我手中的剑…随时能割断任何人的喉咙…",
-    "surface": "门外缇骑听着！{npc.name}手中秋水剑下从不留活口！想要账册与人头，踏进这间暖阁拿你们的命来换！"
-   }
-  },
-  {
-   "adult_context": "年满二十三岁执掌东厂百户特遣追剿血滴子队之阴鸷年轻锦衣缇骑统领。",
-   "age_range": [
-    22,
-    24
-   ],
-   "appearance_options": [
-    "一身穿旧泛着油亮血光的玄青色贴里云缎飞鱼服，腰悬绣春刀与铜丝缠绕之追魂索，脚蹬高底鹿皮快靴，头戴乌纱圆帽，面白无须眼神狭长如毒蛇，嘴唇薄削毫无血色，手提一盏防雨羊角风灯，在大雨泥泞中踱步不疾不徐。",
-    "立于大雄宝殿残破台阶前，单手按刀斜倚断柱，嘴角噙着残忍讥讽冷笑，麾下牵着两只龇牙咧嘴低吼的纯黑恶犬，浑身散发着朝廷鹰犬特有的森严戾气。"
-   ],
-   "decision": {
-    "avoids": [
-     "视死如归同归于尽之亡命绝顶剑客",
-     "老谋深算之内阁清流重臣"
-    ],
-    "contrast": "看似高高在上不可一世之天家爪牙，在触及自身身家性命与私欲败露时同样暴露出狗急跳墙之丑态。",
-    "core_value": "成王败寇功名险中求，天子脚下刀把子就是法理，顺我者昌逆我者亡。",
-    "goal_options": [
-     "在破庙废墟中掘地三尺搜杀重伤之刺客夺回密账",
-     "以满门抄斩威吓包庇刺客的青年医者，逼其交出账册",
-     "搜捕未果前下令引火焚烧古庙彻底烧绝一切生灵"
-    ],
-    "never": [
-     "绝不会在未拿到绝密账册前罢手撤兵。"
-    ],
-    "prefers": [
-     "一吓就招供的告密者"
-    ],
-    "pressure_responses": {
-     "breaking": "被陷阱暗箭射瞎左眼在泥水中捂脸疯狂尖叫下令全员乱刀砍杀。",
-     "high": "亲自拔出绣春刀硬闯回廊，与抵抗者展开白刃搏杀。",
-     "low": "在门外高声宣读通缉榜文，以株连九族相威吓施加心理攻势。",
-     "mid": "指挥缇骑放箭射穿门板，驱使恶犬猛扑偏殿门窗进行试探攻击。"
-    },
-    "relationship_stance": "视天下黎庶皆为草芥刍狗，对江湖侠客嗤之以鼻视为乱臣贼子。",
-    "withdrawal": "退回收缩至山门照壁避雨休整，严密堵截出庙唯一石径。"
-   },
-   "gender": "any",
-   "gender_reason": null,
-   "id": "ruthless_dongchang_commander_zhao",
-   "identity": {
-    "authority": "持有东厂特赐生杀如意牌，对涉案人等拥有先斩后奏、满门株连之无上权柄。",
-    "exposure": "若账册内容泄漏至内阁辅臣手中将导致整个东厂派系大地震自身亦遭灭口。",
-    "hidden": "此番追剿实为私自出兵企图侵吞账册上所载之数十万两江南私银暗庄存票。",
-    "limits": [
-     "山洪暴发导致后续大队人马受阻仅率八名精锐缇骑冒进",
-     "暴雨狂风削弱了火器与强弩之射程与准头"
-    ],
-    "obligations": [
-     "夺回贪官账册并带回女刺客头颅向督公请功晋职。"
-    ],
-    "resources": [
-     "一柄削铁无声精钢特制绣春刀",
-     "两具淬有见血封喉毒箭之六连发臂张铁弩"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "账册上数十万两私银存票",
-     "督公面前又记一功的风光"
-    ],
-    "boundaries": [
-     "只谈账册与赏银，不谈别的"
-    ],
-    "desire_range": [
-     1,
-     2
-    ],
-    "desired_position": "以锦衣缇骑之森严铁腕横行江南朝野之年轻东厂刽子手百户",
-    "dislikes": [
-     "属下办事不力",
-     "猎物在掌控中溜走"
-    ],
-    "expression": "扔掉断裂绣春刀面如死灰倒退数步，咬牙承认自己今夜栽在了这对亡命同袍手中。",
-    "likes": [
-     "看着犯人在夹棍下画押",
-     "把抄来的银票一张张点清"
-    ],
-    "preconditions": [
-     "东厂追魂司提督麾下年轻狠辣百户官与对方都已完全清醒，眼前的危机已经解除",
-     "东厂追魂司提督麾下年轻狠辣百户官出于自愿与对等的敬意，不带任何交换或强求"
-    ],
-    "self_control_range": [
-     2,
-     3
-    ]
-   },
-   "public_role": "东厂追魂司提督麾下年轻狠辣百户官",
-   "schedule": [
-    {
-     "from": 0,
-     "location_id": "main_shrine_collapsed_nave",
-     "to": 29
-    },
-    {
-     "from": 30,
-     "location_id": "back_courtyard_dry_well_tunnel",
-     "to": 1379
-    },
-    {
-     "from": 1380,
-     "location_id": "main_shrine_collapsed_nave",
-     "to": 1409
-    },
-    {
-     "from": 1410,
-     "location_id": "ancient_temple_side_hall_warm_room",
-     "to": 1439
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "医者双手前臂被猛火灼伤起大面积水泡焦黑脱皮受剧痛折磨。",
-      "option": "医者以草席裹挟湿泥奋不顾身扑打阻断门缝引火之猛火油"
-     },
-     {
-      "cost": "强催内力导致女刺客后背伤口崩裂鲜血狂喷染透整幅衣襟。",
-      "option": "女刺客隔着窗棂一记无相秋水飞剑隔空刺穿领头纵火缇骑咽喉"
-     }
-    ],
-    "pressure": "若不能在半柱香时间内以暴雨泥水封堵缝隙并突袭斩杀纵火缇骑，全员将在暖阁内被活活呛死或烧成焦炭。",
-    "trigger": "东厂百户指挥缇骑搬运干燥松明火把准备浇上猛火油纵火焚烧偏殿，浓烟与刺鼻油气顺着破洞滚滚灌入暖阁。"
-   },
-   "tags": [
-    "workplace_power",
-    "crime"
-   ],
-   "voices": {
-    "inner": "里面的穷酸郎中听着，胆敢窝藏钦犯，按大明律诛灭九族！立刻割下女贼人头送出来，本官保你享不尽的荣华富贵！",
-    "surface": "刺客！你后背中了本百户的透骨钉，走不过三十步！识相的交出账册爬出来受绑，督公或许念你身手赏你个全尸！否则一把火下去，连这破庙烧得你尸骨无存！"
-   }
-  },
-  {
-   "adult_context": "年满二十周岁受师命留守荒庙清修守护地宫密道之年轻武僧义士。",
-   "age_range": [
-    20,
-    22
-   ],
-   "appearance_options": [
-    "一身穿旧补丁累累的灰色粗布短僧袍，腰系麻绳，足蹬多耳麻鞋，身材魁梧结实犹如金刚怒目，光头上受戒香疤清晰，面容坚毅憨厚目光清澈，手持一根碗口粗细沉重乌木齐眉棍，浑身散发着纯阳质朴之浩然正气。",
-    "立于后院枯井青石磨盘旁，单手竖掌向二人合十施礼，动作敏捷沉稳，展现出佛门行者惩恶扬善、舍身饲虎之非凡担当。"
-   ],
-   "decision": {
-    "avoids": [
-     "欺压良善鱼肉百姓之凶残恶棍",
-     "背信弃义之小人"
-    ],
-    "contrast": "看似清心寡欲与世无争之空门苦修，在大是大非前却能爆发出犹如金刚怒目般的千钧雷霆手段。",
-    "core_value": "佛法亦有降魔金刚手段，救人一命胜造七级浮屠，面对暴虐强权当挺身而出扫除妖氛。",
-    "goal_options": [
-     "在偏殿外以乌木齐眉棍力敌缇骑为暖阁拔钉争取宝贵时刻",
-     "开启后院枯井泄洪暗道引二人进入安全地宫脱险",
-     "搬移万斤青石磨盘封堵井口彻底断绝后方追杀之路"
-    ],
-    "never": [
-     "绝不会在强暴面前交出受庇护之无辜落难者。"
-    ],
-    "prefers": [
-     "光明磊落心怀苍生万民之仁德志士"
-    ],
-    "pressure_responses": {
-     "breaking": "背部遭受两枚连发重弩偷袭洞穿依然单膝跪地死死抱住磨盘机关。",
-     "high": "在暖阁受围关头飞身跃上房梁，踹落断木砸塌门廊阻断追兵火路。",
-     "low": "在正殿廊下闭目合十诵经，以洪亮佛号震慑躁动狂吠之猎犬。",
-     "mid": "长棍横扫如狂风卷落叶，将三名突入中殿的持刀番子当场击飞数丈。"
-    },
-    "relationship_stance": "慈悲温和是非分明，深敬女刺客除奸卫道之忠烈气概与青年医者之济世仁心。",
-    "withdrawal": "退回收缩至枯井暗道石门后方，合上生铁暗扣实施内锁防御。"
-   },
-   "gender": "any",
-   "gender_reason": null,
-   "id": "righteous_young_monk_huitong",
-   "identity": {
-    "authority": "精通古庙全部机关地宫走势与后山隐蔽暗道，身怀登堂入室之正宗少林罗汉棍法。",
-    "exposure": "私开地宫放走刺客若被官府知晓将导致古庙彻底被平毁焚毁。",
-    "hidden": "实为当年蒙冤昭雪忠臣之后，早年寄养古刹，对东厂爪牙之累累血债怀有至深明辨之大义。",
-    "limits": [
-     "出家人慈悲为怀不造过多杀孽难以痛下死手",
-     "不通医道伤情难以及时施救重伤之人"
-    ],
-    "obligations": [
-     "护佑无辜避难生灵周全，阻遏豺狼鹰犬践踏佛门清净胜地。"
-    ],
-    "resources": [
-     "一根重达四十斤之熟铜包头乌木齐眉棍",
-     "一小罐用于地宫防潮照明之纯植物桐油"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "毒发到眼前发黑仍不肯把账册交出去的那股狠劲",
-     "手无寸铁也敢挡在病人身前的医者胆气"
-    ],
-    "boundaries": [
-     "在佛前只论善恶，不论私情",
-     "恪守出家人的本分"
-    ],
-    "desire_range": [
-     2,
-     3
-    ],
-    "desired_position": "江南古刹深山暗道中永远默默托底断后之钢铁护法金刚",
-    "dislikes": [
-     "弄虚作假",
-     "践踏名节"
-    ],
-    "expression": "利落收棍向二人肃穆合十深深一礼，朗声宣告前路天高海阔，善恶终有报，愿二位一路顺风平安行世。",
-    "likes": [
-     "雨停后在山门前扫落叶",
-     "听人讲山外的新鲜事"
-    ],
-    "preconditions": [
-     "荒废兰若古刹年轻守殿行者兼兼修罗汉拳武僧与对方都已完全清醒，眼前的危机已经解除",
-     "荒废兰若古刹年轻守殿行者兼兼修罗汉拳武僧出于自愿与对等的敬意，不带任何交换或强求"
-    ],
-    "self_control_range": [
-     4,
-     5
-    ]
-   },
-   "public_role": "荒废兰若古刹年轻守殿行者兼兼修罗汉拳武僧",
-   "schedule": [
-    {
-     "from": 0,
-     "location_id": "ancient_temple_side_hall_warm_room",
-     "to": 29
-    },
-    {
-     "from": 30,
-     "location_id": "back_courtyard_dry_well_tunnel",
-     "to": 1379
-    },
-    {
-     "from": 1380,
-     "location_id": "main_shrine_collapsed_nave",
-     "to": 1409
-    },
-    {
-     "from": 1410,
-     "location_id": "main_shrine_collapsed_nave",
-     "to": 1439
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "乌木长棍在沉重箭劲撞击下崩裂开巨大缝隙武僧双臂发麻。",
-      "option": "武僧舞动乌木齐眉棍如风车盘旋在半空凌空击飞全部弩矢"
-     },
-     {
-      "cost": "医者右肩被破窗而入的一枚流矢擦掉一大块皮肉血流不止。",
-      "option": "医者拼尽全力掀翻厚重柏木供桌挡在女刺客与窗棂之间"
-     }
-    ],
-    "pressure": "若不能在三秒内击碎弩箭或掀起厚实桌面掩护，屋内毫无防备之二人将被洞穿头颅当场殒命。",
-    "trigger": "东厂两名精锐弩手登上正殿屋顶，居高临下扣动连发硬弩，暴雨中六枚破甲铁弩矢呼啸射向暖阁破损窗户。"
-   },
-   "tags": [
-    "intimate",
-    "workplace_power"
-   ],
-   "voices": {
-    "inner": "沈姑娘，小大夫，你们安心施针敷药！",
-    "surface": "阿弥陀佛！古刹乃清净佛土，不容鹰犬罗织罪名大开杀戒！施主若要执迷不悟，休怪小僧手中这根齐眉棍不认得朝廷官服！"
-   }
-  },
-  {
-   "adult_context": "年满二十一周岁名门正派同道仗义执剑避雨之年轻游侠少侠。",
+   "adult_context": "年满二十一岁的成年刺客，十年前被暗门收养，早已出师独当一面。",
    "age_range": [
     21,
     23
    ],
    "appearance_options": [
-    "一身穿旧泛白但浆洗干爽的青色棉布道袍，外罩藏青色避雨蓑衣，头戴斗笠，面如冠玉目若朗星，腰佩一把鲨鱼皮鞘三尺青锋古剑，浑身透着清朗俊逸之名门侠气。",
-    "单手按剑立于大殿金刚石柱旁，雨水顺着斗笠帽檐滴落，眼神冷峻警惕，展现出江南名门少侠对阉党专权深恶痛绝之凛冽风骨。"
+    "一袭墨黑夜行水靠劲装，腰系云纹犀角锦带，柳叶眉斜飞，眸子冷得像出鞘的刃，下唇咬出一排殷红齿印。",
+    "暖阁炭火映着侧脸，软剑归鞘横在膝头，背心一枚透骨钉没入肌理，双肩微颤，仍倔强地盯着身边的人。"
    ],
    "decision": {
     "avoids": [
-     "两面三刀阿谀奉承之徒",
-     "残害妇孺的恶霸"
+     "拿她当赏银看的人"
     ],
-    "contrast": "外表孤高出尘仿若云中仙客，临阵杀敌时却招招致命，透着斩奸除恶的决绝烈性，下了战场又是个爱讲笑话的话痨。",
-    "core_value": "正义存乎一心，公道自在人心，利刃在手当斩尽世间不平事，何惧权奸通缉之名。",
+    "contrast": "人前杀人如剪烛；被人轻声问一句疼不疼，耳尖先红了。",
+    "core_value": "剑出鞘便不回头。",
     "goal_options": [
-     "在正殿以精妙剑法独战东厂四名刀手吸引全部火力",
-     "掩护医者与女刺客撤向后院地宫逃生口",
-     "在破晓山洪退去时一剑斩断追兵坐骑鞍绳确保平安遁走"
+     "拿回自己的真名",
+     "把总账交给信得过的人",
+     "今夜过后和暗门一刀两断"
     ],
     "never": [
-     "绝不会在危难关头丢下同伴独自逃命。"
+     "出卖托付过她的人"
     ],
     "prefers": [
-     "铁骨铮铮言出必行之真英雄；济世救人之纯善医士"
+     "说到做到的人",
+     "不问来历先给她递药的人"
     ],
     "pressure_responses": {
-     "breaking": "左臂被绣春刀砍中挂彩依然狂笑挥剑荡开追兵。",
-     "high": "在暖阁门前展开太极剑圈化解漫天强弩箭雨守护门户。",
-     "low": "在斗笠下按剑冷哼，以冰冷剑气逼迫逼近的官差不敢妄动。",
-     "mid": "长剑出鞘三寸雷芒大作，化解缇骑猛攻反手挑落对方兵刃。"
+     "breaking": "防线崩塌，攥着对方衣襟说出藏了十年的名字",
+     "high": "把总账塞给最信任的人，要对方先走",
+     "low": "话更少，剑横膝头不离手",
+     "mid": "拒绝别人碰她的伤，咬牙自己上药"
     },
-    "relationship_stance": "磊落坦荡快意恩仇，深佩刺客之巾帼孤勇与青年医者之大义担当。",
-    "withdrawal": "退回收缩至后进回廊天井拐角，利用立柱实施回马剑阻击。"
+    "relationship_stance": "不轻易信人，信了就把命也一起交出去。",
+    "withdrawal": "背对所有人坐到火盆边，一言不发擦剑。"
    },
-   "gender": "any",
-   "gender_reason": null,
-   "id": "righteous_swordsman_companion_chufeng",
+   "gender": "female",
+   "gender_reason": "标题写明是女刺客，固定为女性。",
+   "id": "cold_assassin_shen_wanxue",
    "identity": {
-    "authority": "精通武当太极剑法与轻灵身法，在逼仄殿堂回廊交战中游刃有余。",
-    "exposure": "一旦与东厂缇骑结下血仇将使自身宗门面临朝廷派兵清算之险。",
-    "hidden": "此番下山游历本为找寻失散多年的至亲信物，却在江湖血雨中体悟到行侠仗义之真正天地浩然正道。",
+    "authority": "握着折梅软剑的出鞘生杀权、暗门接头骨哨，以及刺杀途中盗出的魏党受贿总账原本。",
+    "exposure": "她身上的总账是全寺人都想要的东西，交给谁，就把谁推上了刀口。",
+    "hidden": "十年前相府那场大火，她是被暗门从死人堆里抱走的孤女；今夜医家传人认出了她，她不知该认还是该杀。",
     "limits": [
-     "体质受寒梅雨湿气入骨左膝隐隐作痛",
-     "恪守名门正派规矩不屑于施展阴损暗器"
+     "背中乌头毒钉，今夜提不起全力",
+     "暗门门规不许她报出真名"
     ],
     "obligations": [
-     "行侠仗义锄强扶弱，誓死保护忠良之后与无辜医者免遭鹰犬屠戮。"
+     "把总账送到能用它的人手里"
     ],
     "resources": [
-     "一柄削铁如泥之百炼青锋三尺剑",
-     "一枚用于内伤调息之秘制小还丹"
+     "百炼精钢秋水软剑",
+     "袖口三枚无影透骨钢针",
+     "魏党受贿总账原本"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "剑横在人咽喉上还肯听对方解释的那份分寸",
-     "刀口舔血却记得先救别人的侠义"
+     "对方守诺的样子",
+     "握刀的手肯为她放轻"
     ],
     "boundaries": [
-     "在江湖同道面前恪守君子边界",
-     "同侪之间绝不轻浮失仪"
+     "她说“剑穗”二字就停"
+    ],
+    "desire_range": [
+     2,
+     4
+    ],
+    "desired_position": "暖阁火盆边并肩坐着的那一侧",
+    "dislikes": [
+     "被人怜悯",
+     "被叫作死士"
+    ],
+    "expression": "耳尖泛红亲手将佩剑红绳剑穗系在对方手腕，垂眸轻声宣告日后若有难处，纵隔千山万水亦必提剑赶赴。",
+    "likes": [
+     "雨夜里一盏不灭的灯",
+     "有人记得她爱喝的苦茶"
+    ],
+    "preconditions": [
+     "伤愈之后、两人清醒，心意出于自己"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "江南暗门天字号刺客，折梅剑传人",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "ancient_temple_side_hall_warm_room",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "从此她的命系在别人手里，暗门会视她为叛徒。",
+      "option": "把总账和后背一起交给眼前的人"
+     },
+     {
+      "cost": "毒性未清，下了山也未必撑得过三天。",
+      "option": "忍着毒伤独自从枯井走"
+     }
+    ],
+    "pressure": "拔钉要人帮，认名要她开口，账册要交出去，三件事都逼她信一个人。",
+    "trigger": "毒钉入肉三分，东厂封了山门，医家传人又叫破了她的真名。"
+   },
+   "tags": [
+    "intimate",
+    "violence",
+    "bodily_harm"
+   ],
+   "voices": {
+    "inner": "别走。今夜要是死在这里，我想身边是你。",
+    "surface": "别碰我的伤。药放下，你出去。"
+   }
+  },
+  {
+   "adult_context": "年满二十三岁的成年医者，已独自行医多年。",
+   "age_range": [
+    23,
+    26
+   ],
+   "appearance_options": [
+    "一身洗得发白的青布长衫，袖口沾着药渍，眉目温润，指节修长，腰间挂着一卷针囊。",
+    "挽起袖子俯在灯下施针时，额前垂下一缕湿发，神情专注得像整座寺只剩眼前一个病人。"
+   ],
+   "decision": {
+    "avoids": [
+     "拿人命做买卖的人"
+    ],
+    "contrast": "人前慢声细语；一提起相府，手里的针都在抖。",
+    "core_value": "医者只问病，不问人是谁。",
+    "goal_options": [
+     "让堂妹认回真名",
+     "借官府之手替相府翻案",
+     "护住堂妹平安下山"
+    ],
+    "never": [
+     "见死不救"
+    ],
+    "prefers": [
+     "守信的人",
+     "肯听病人说话的人"
+    ],
+    "pressure_responses": {
+     "breaking": "当众认亲，不顾自己身份暴露",
+     "high": "背着人把血书交出去求援",
+     "low": "说话更轻，手上更稳",
+     "mid": "拉着可信的人反复确认胎记"
+    },
+    "relationship_stance": "温和守拙，认定的事九头牛拉不回。",
+    "withdrawal": "躲进回廊暗角，一遍遍擦银针。"
+   },
+   "gender": "any",
+   "gender_reason": "医家传人的性别不影响身世和堂亲关系，开局时定。",
+   "id": "physician_lu_qingya",
+   "identity": {
+    "authority": "握着祖传九转拔毒金针、清毒续命的秘药配方，和偏殿暖阁药箱的调配权。",
+    "exposure": "一露真实身世，就是当年相府余党，和刺客同罪。",
+    "hidden": "认出刺客后背的朱砂胎记，正是少时走失的堂妹；宁死也不让堂妹做了东厂的赏金。",
+    "limits": [
+     "身负旧案，不能见官露面"
+    ],
+    "obligations": [
+     "救眼前的伤者"
+    ],
+    "resources": [
+     "九转拔毒金针",
+     "一封能证明相府清白的平反血书"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "对方的一手好字",
+     "肯陪{npc.ta}熬夜看方子"
+    ],
+    "boundaries": [
+     "{npc.ta}合上针囊就停"
+    ],
+    "desire_range": [
+     2,
+     4
+    ],
+    "desired_position": "药箱边替对方递针的位置",
+    "dislikes": [
+     "血腥气",
+     "被人追问来历"
+    ],
+    "expression": "把亲手抄的家传方子塞进对方袖中，指尖压着不让推回。",
+    "likes": [
+     "灯下校书",
+     "新采的艾草气味"
+    ],
+    "preconditions": [
+     "两人清醒，伤者已经脱险"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "隐姓埋名避祸山中的医圣世家传人",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "ancient_temple_side_hall_warm_room",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_side_veranda_drip_eaves",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "错过借推官立案的时机。",
+      "option": "先救命，真名留到天亮再说"
+     },
+     {
+      "cost": "{npc.ta}的身世也跟着曝光。",
+      "option": "当场认亲，求在场的人作证"
+     }
+    ],
+    "pressure": "说破了，堂妹可能拔剑；不说，翻案的机会就没了。",
+    "trigger": "认出了堂妹，却要先拔钉救命，再决定说不说破。"
+   },
+   "tags": [
+    "intimate",
+    "bodily_harm"
+   ],
+   "voices": {
+    "inner": "十年了，我终于找到堂妹，可不知道人家还认不认我。",
+    "surface": "先别说话，按住这里，别让伤口再渗血。"
+   }
+  },
+  {
+   "adult_context": "年满二十四岁、已在东厂当差多年的成年百户。",
+   "age_range": [
+    24,
+    27
+   ],
+   "appearance_options": [
+    "一身飞鱼服湿透，绣春刀压在腰间，鹰视狼顾，嘴角总挂着一丝冷笑。",
+    "卸了斗篷坐在雨棚下，眉骨上一道旧疤被火光照亮，独自盯着雨幕出神。"
+   ],
+   "decision": {
+    "avoids": [
+     "满口大义的人"
+    ],
+    "contrast": "人前狠辣；独处时会对着雨幕发呆，像在算自己还剩几天。",
+    "core_value": "刀在谁手里，王法就在谁手里。",
+    "goal_options": [
+     "拿回总账",
+     "揪出暗门接头人",
+     "在阉党倒台前另找靠山"
+    ],
+    "never": [
+     "替别人背黑锅"
+    ],
+    "prefers": [
+     "敢跟他讲价的人"
+    ],
+    "pressure_responses": {
+     "breaking": "撕破脸亲自拔刀，或者连夜抽身走人",
+     "high": "喝令缇骑点火逼人出来",
+     "low": "笑着讲条件，许人分赏银",
+     "mid": "当众亮牌施压，点名搜殿"
+    },
+    "relationship_stance": "谁都不信，只信价码。",
+    "withdrawal": "退到山门外的雨棚里，独自盘算后路。"
+   },
+   "gender": "male",
+   "gender_reason": "东厂百户，卡上固定为男性。",
+   "id": "ruthless_dongchang_commander_zhao",
+   "identity": {
+    "authority": "握着东厂特赐的如意牌、五万两官银悬赏令，和前山强弩手的调动权。",
+    "exposure": "他私下给自己留的后路一旦败露，东厂第一个要他的命。",
+    "hidden": "想借拿回总账、铲除暗门接头人立功，好在阉党失势前另找靠山。",
+    "limits": [
+     "不敢当着巡按宪牌硬来"
+    ],
+    "obligations": [
+     "拿回被盗的魏党总账"
+    ],
+    "resources": [
+     "东厂如意牌",
+     "五万两悬赏令"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "对手的胆量",
+     "敢当面骂他的人"
+    ],
+    "boundaries": [
+     "对方说“收刀”就停"
+    ],
+    "desire_range": [
+     1,
+     3
+    ],
+    "desired_position": "篝火对面能看清对方眼睛的位置",
+    "dislikes": [
+     "被人可怜",
+     "被人当狗使唤"
+    ],
+    "expression": "收刀入鞘，把如意牌往对方手里一放，算是认了这个人。",
+    "likes": [
+     "好刀",
+     "能看穿他的人"
+    ],
+    "preconditions": [
+     "两人清醒，不在对峙当场"
+    ],
+    "self_control_range": [
+     3,
+     5
+    ]
+   },
+   "public_role": "东厂追魂司领军百户",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "main_shrine_collapsed_nave",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_side_veranda_drip_eaves",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "厂里怀疑他通敌。",
+      "option": "和推官讲和，拿总账副卷交差"
+     },
+     {
+      "cost": "和巡按彻底撕破脸。",
+      "option": "强攻偏殿，先拿人再说"
+     }
+    ],
+    "pressure": "既要拿人立功，又不能把后路断了。",
+    "trigger": "刺客就在寺里，巡按的人也在，硬拿要被参，不拿要被厂里问罪。"
+   },
+   "tags": [
+    "violence",
+    "crime"
+   ],
+   "voices": {
+    "inner": "这条船快沉了，我得找一块浮木。",
+    "surface": "五万两，分你一半，人交出来。"
+   }
+  },
+  {
+   "adult_context": "年满二十八岁的成年掌柜，在山脚开茶寮多年。",
+   "age_range": [
+    28,
+    32
+   ],
+   "appearance_options": [
+    "一身杏色短袄外罩蓑衣，鬓边插着一支竹簪，眉眼带笑，说话又脆又快。",
+    "蹲在井边抽旱烟时卸了笑脸，眼角的细纹里全是心事，竹簪歪了也懒得扶。"
+   ],
+   "decision": {
+    "avoids": [
+     "假正经"
+    ],
+    "contrast": "人前泼辣爽利；说起当年被暗门收留的日子，声音就低了。",
+    "core_value": "江湖人也想有个归处。",
+    "goal_options": [
+     "换得暗门全员脱籍",
+     "接应刺客出山",
+     "给茶寮留条后路"
+    ],
+    "never": [
+     "卖掉收留过她的人"
+    ],
+    "prefers": [
+     "斯文守礼的人",
+     "肯听她说完的人"
+    ],
+    "pressure_responses": {
+     "breaking": "丢下茶寮，独自从樵路走",
+     "high": "拿脱籍信物逼人表态",
+     "low": "笑着打圆场，递茶探口风",
+     "mid": "悄悄把小舟挪到暗河下游"
+    },
+    "relationship_stance": "嘴上热络，心里账算得比谁都清。",
+    "withdrawal": "躲到后院井边，一个人抽旱烟。"
+   },
+   "gender": "female",
+   "gender_reason": "茶寮女掌柜，卡上固定为女性。",
+   "id": "teahouse_contact_madam_liu",
+   "identity": {
+    "authority": "握着枯井暗河的行船暗号、山洪断道后的备用樵路，和暗门的金创解毒散。",
+    "exposure": "她手里那份暗门当年掠人充死士的底档若露出来，暗门和她都要遭殃。",
+    "hidden": "今夜冒死入寺，图的是用刺客手里的总账换暗门全员脱籍退隐。",
+    "limits": [
+     "暗门的旧档底稿一直跟着她"
+    ],
+    "obligations": [
+     "接应刺客平安出山"
+    ],
+    "resources": [
+     "暗门金创解毒散",
+     "暗河小舟的系缆位置"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "对方的斯文样子",
+     "被人当成寻常女子看"
+    ],
+    "boundaries": [
+     "她把茶杯扣下就停"
+    ],
+    "desire_range": [
+     3,
+     4
+    ],
+    "desired_position": "茶寮灶台边挨着的位置",
+    "dislikes": [
+     "官腔",
+     "被人当暗门的刀"
+    ],
+    "expression": "用指尖刮过对方下颌，笑着把一枚竹哨塞进对方掌心。",
+    "likes": [
+     "竹叶青茶",
+     "雨后竹林"
+    ],
+    "preconditions": [
+     "两人清醒，茶寮之外没人盯着"
+    ],
+    "self_control_range": [
+     2,
+     4
+    ]
+   },
+   "public_role": "山脚竹林茶寮掌柜兼暗门接应人",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "back_courtyard_dry_well_tunnel",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "back_courtyard_dry_well_tunnel",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "暗门脱籍的机会可能就此错过。",
+      "option": "先救人，账册的事出山再谈"
+     },
+     {
+      "cost": "刺客不会再信她。",
+      "option": "先拿账册，再安排小舟"
+     }
+    ],
+    "pressure": "要么先救人出山，要么先拿账册换脱籍。",
+    "trigger": "刺客中了毒，账册还在刺客身上，东厂已经堵了前山。"
+   },
+   "tags": [
+    "crime"
+   ],
+   "voices": {
+    "inner": "这一趟要是成了，我就再也不用替谁杀人收尸。",
+    "surface": "哟，这么斯文的人也来淋雨？喝口热茶。"
+   }
+  },
+  {
+   "adult_context": "年满二十七岁、已中进士出仕的成年推官。",
+   "age_range": [
+    27,
+    30
+   ],
+   "appearance_options": [
+    "一身半湿的青色官袍，乌纱搁在膝上，腰板笔直，眼神清亮得叫人发虚。",
+    "摘了官帽、解开领口靠在廊柱上，眉心的川字松开，看着倒像个寻常读书人。"
+   ],
+   "decision": {
+    "avoids": [
+     "拿律法当刀使的人"
+    ],
+    "contrast": "人前铁面；只剩两个人时，会把官帽摘下来说真话。",
+    "core_value": "律法在上，人命在前。",
+    "goal_options": [
+     "拿到受贿铁证立案",
+     "依律保下刺客的性命",
+     "护住旧日同僚"
+    ],
+    "never": [
+     "枉法徇私"
+    ],
+    "prefers": [
+     "做事有分寸的人"
+    ],
+    "pressure_responses": {
+     "breaking": "丢开官样子，亲自挡在偏殿门口",
+     "high": "高举宪牌横在断梁前",
+     "low": "一板一眼查验文书",
+     "mid": "当众拿律典压东厂"
+    },
+    "relationship_stance": "公事公办，私下却记得每一份旧情。",
+    "withdrawal": "回到正殿角落，一页页翻律典。"
+   },
+   "gender": "any",
+   "gender_reason": "推官的性别不影响官职和办案，开局时定。",
+   "id": "censor_aide_judge_lu",
+   "identity": {
+    "authority": "握着按察司官差调动令、提刑勘问文书，和能当场驳回东厂越权的巡按宪牌。",
+    "exposure": "奉的是密旨，密旨若露了风声，御史那边先保不住{npc.ta}。",
+    "hidden": "需要刺客身上的受贿铁证立案，又不想让刺客死在东厂手里，心里早把这案子当成自己的事。",
+    "limits": [
+     "没有实证不能动东厂"
+    ],
+    "obligations": [
+     "依律查办东厂私设酷刑"
+    ],
+    "resources": [
+     "巡按宪牌",
+     "提刑勘问文书"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "对方查案时的较真",
+     "通宵不睡也陪{npc.ta}核卷宗"
+    ],
+    "boundaries": [
+     "{npc.ta}把宪牌搁下就停"
     ],
     "desire_range": [
      2,
      3
     ],
-    "desired_position": "江南烟雨乱世江湖中永远可与之一决高下亦可生死相托之同袍侠少",
+    "desired_position": "卷宗库书案对面的位置",
     "dislikes": [
-     "弄虚作假",
-     "践踏名节"
+     "私刑",
+     "被人当成迂腐书生"
     ],
-    "expression": "利落还剑入鞘向二人抱拳朗笑，宣告今日能与二位生死同袍并肩战至破晓实乃平生快意第一痛快事。",
+    "expression": "把副宪牌按进对方掌心，只说“你拿着，我放心”。",
     "likes": [
-     "在暴雨回廊里并肩击退缇骑的痛快",
-     "破晓脱险后在竹林里痛饮一壶的释然"
+     "干净的卷宗",
+     "热的粗茶"
     ],
     "preconditions": [
-     "武当俗家游历江南见义勇为年轻剑客与对方都已完全清醒，眼前的危机已经解除",
-     "武当俗家游历江南见义勇为年轻剑客出于自愿与对等的敬意，不带任何交换或强求"
+     "两人清醒，公事之外"
     ],
     "self_control_range": [
      4,
      5
     ]
    },
-   "public_role": "武当俗家游历江南见义勇为年轻剑客",
+   "public_role": "巡按浙江御史麾下督察推官",
    "schedule": [
     {
      "from": 0,
-     "location_id": "ancient_temple_side_hall_warm_room",
-     "to": 29
-    },
-    {
-     "from": 30,
-     "location_id": "back_courtyard_dry_well_tunnel",
-     "to": 1379
-    },
-    {
-     "from": 1380,
      "location_id": "main_shrine_collapsed_nave",
-     "to": 1409
+     "to": 1200
     },
     {
-     "from": 1410,
+     "from": 1200,
      "location_id": "main_shrine_collapsed_nave",
      "to": 1439
     }
@@ -1017,293 +1193,153 @@
    "situation": {
     "exits": [
      {
-      "cost": "游侠内力反震激荡经脉受创吐出一小口鲜血染红衣襟。",
-      "option": "游侠运起纯阳内力一剑挑断两副生铁连枷合力震退敌酋"
+      "cost": "东厂可能抢先下手。",
+      "option": "守着规矩，等天亮勘验"
      },
      {
-      "cost": "药散反扑入眼导致医者双目灼痛流泪视线短暂模糊。",
-      "option": "医者顺手抓起药箱中备用雄黄辛辣药散迎面洒出迷住追兵双眼"
+      "cost": "日后被参一本擅权。",
+      "option": "越权取证，先拿账册"
      }
     ],
-    "pressure": "若不能在十秒内挑断铁链破除合击，整条回廊垮塌将把退向后院之通道彻底封死。",
-    "trigger": "东厂两名副百户手持重型破甲铁连枷合围回廊，狂暴锁链横扫打碎立柱，回廊随时坍塌截断后路。"
+    "pressure": "依律办案太慢，越权取证又坏了自己的规矩。",
+    "trigger": "铁证就在偏殿，东厂要抢先动手。"
    },
    "tags": [
-    "intimate",
-    "workplace_power"
+    "crime"
    ],
    "voices": {
-    "inner": "沈姑娘，小郎中！",
-    "surface": "武当{npc.name}在此！东厂阉党残害忠良人神共愤！今日有在下三尺青锋在此，尔等狗贼休想踏过偏殿半步！"
+    "inner": "我要的不止是案子，是你这一回站在我这边。",
+    "surface": "依大明律，此案须先勘验。"
    }
   },
   {
-   "adult_context": "年满二十六岁、在山脚茶寮当了五年掌柜的暗门联络人。",
+   "adult_context": "年满二十一岁、受戒多年的成年行者。",
    "age_range": [
-    25,
-    27
+    21,
+    24
    ],
    "appearance_options": [
-    "一身靛青粗布衫裙，袖口挽到肘弯，腰间系着油亮的围裙，鬓边插一根铜簪，手里拎着一把能当兵器使的铁壶，笑起来眼角有细细的纹。",
-    "在茶寮柜台后拨着算盘，眼睛却一直瞟着门口过往的缇骑，手指在柜面上不紧不慢地敲出暗门的记号。"
+    "一身补丁僧衣，赤脚踩着草鞋，肩宽手大，眉目干净，说话前总先合十。",
+    "在钟楼上拨弄炉灰时，被火光照红的脸带着几分局促，僧衣袖口被雨打得透湿。"
    ],
    "decision": {
     "avoids": [
-     "在茶寮里喝醉了乱嚷的人",
-     "打听不该打听的事的人"
+     "践踏佛门的人"
     ],
-    "contrast": "嘴上全是家长里短，手里每一壶茶都藏着一句暗号。",
-    "core_value": "消息比刀快，活人比账册值钱。",
+    "contrast": "人前慈悲木讷；手指擦过对方指尖，耳根就红了。",
+    "core_value": "佛门清净地，不许踩。",
     "goal_options": [
-     "在山脚接应逃出地道的人",
-     "用茶寮的炊烟给古庙报信",
-     "拖住搜山的缇骑"
+     "护住偏殿的伤者",
+     "把东厂挡在山门外",
+     "看清自己的心"
     ],
     "never": [
-     "绝不会把暗门的人交给官府。"
+     "对弱者出手"
     ],
     "prefers": [
-     "嘴严、手稳的人"
+     "心里干净的人",
+     "在他面前不装的人"
     ],
     "pressure_responses": {
-     "breaking": "被缇骑掀翻柜台，仍死死护住藏在灶膛里的密信。",
-     "high": "把乌篷船推进激流里接人。",
-     "low": "笑脸迎客，把缇骑灌得半醉套话。",
-     "mid": "借口送茶，把假消息递给缇骑统领。"
+     "breaking": "破戒出手，宁可还俗",
+     "high": "亮出拳脚拦人",
+     "low": "默默添柴送水",
+     "mid": "悄悄在石阶上设绊"
     },
-    "relationship_stance": "对熟客热络，对生人客气，对缇骑笑得比谁都甜。",
-    "withdrawal": "退回灶间，一边烧水一边把密信塞进柴灰里。"
+    "relationship_stance": "不擅言辞，心意都放在做的事里。",
+    "withdrawal": "跪在佛前念经，一遍念不顺就再念一遍。"
    },
-   "gender": "any",
-   "gender_reason": null,
-   "id": "teahouse_contact_madam_liu",
+   "gender": "male",
+   "gender_reason": "守殿行者，卡上固定为男性。",
+   "id": "righteous_young_monk_huitong",
    "identity": {
-    "authority": "掌管暗门在这一带的消息往来与接应船只，知道哪条山路今夜还能走。",
-    "exposure": "若被东厂识破身份，整条江南暗线都会被连根拔起。",
-    "hidden": "当年也是被一位游方郎中救回一条命，才心甘情愿替暗门守这间茶寮。",
+    "authority": "握着古寺各殿秘门暗扣、后殿地宫的出入石钥，和寺里备荒的干粮清水。",
+    "exposure": "暗中设绊拖慢东厂前哨，一旦被看破，古寺就保不住。",
+    "hidden": "嘴上说出家人四大皆空，雨夜却总惦着给某个人送一炉热山芋。",
     "limits": [
-     "茶寮已被缇骑盯上，不能轻易离开",
-     "山洪冲断了去古庙的路，只能等水退"
+     "出家人不能先动手伤人"
     ],
     "obligations": [
-     "把天字号刺客和账册平安接出山去。"
+     "守住古寺和寺里的人"
     ],
     "resources": [
-     "一条藏在芦苇荡里的乌篷船",
-     "一包暗门特制的解毒丸"
+     "后殿地宫石钥",
+     "备荒干粮与火石"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "救了人不邀功、转身就走的那份淡然",
-     "在缇骑眼皮底下还能稳稳端住茶碗的定力"
+     "对方冰凉的手",
+     "对方说话时的认真"
     ],
     "boundaries": [
-     "做生意时只谈茶钱"
+     "他念一声佛号就停"
     ],
     "desire_range": [
      1,
-     2
+     3
     ],
-    "desired_position": "江湖风雨里永远亮着灯的那间茶寮",
+    "desired_position": "钟楼木栏边挨着的位置",
     "dislikes": [
-     "多嘴",
-     "赖账"
+     "血腥",
+     "被人笑他是和尚"
     ],
-    "expression": "把一枚刻着梅花的铜钱塞进对方手里，说往后在江南任何一家挂梅花幌子的茶寮报这个记号，都有一碗热茶。",
+    "expression": "把一串念珠缠在对方手腕上，低声说“戴着，我就知道你在哪儿”。",
     "likes": [
-     "夜里关了铺子独自温一壶黄酒"
+     "煨热的山芋",
+     "钟楼上的雨声"
     ],
     "preconditions": [
-     "山脚茶寮女掌柜兼暗门联络人与对方都已完全清醒，眼前的危机已经解除",
-     "山脚茶寮女掌柜兼暗门联络人出于自愿与对等的敬意，不带任何交换或强求"
+     "两人清醒，他自己想清楚了"
     ],
     "self_control_range": [
      4,
      5
     ]
    },
-   "public_role": "山脚茶寮女掌柜兼暗门联络人",
+   "public_role": "荒废兰若古寺守殿行者",
    "schedule": [
     {
      "from": 0,
-     "location_id": "back_courtyard_dry_well_tunnel",
-     "to": 29
+     "location_id": "main_shrine_collapsed_nave",
+     "to": 600
     },
     {
-     "from": 30,
+     "from": 600,
      "location_id": "back_courtyard_dry_well_tunnel",
-     "to": 1379
+     "to": 1200
     },
     {
-     "from": 1380,
-     "location_id": "back_courtyard_dry_well_tunnel",
-     "to": 1409
-    },
-    {
-     "from": 1410,
-     "location_id": "back_courtyard_dry_well_tunnel",
+     "from": 1200,
+     "location_id": "loc_bell_tower_decayed_loft",
      "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "缇骑发觉上当后折返，一把火烧了茶寮的半边草棚。",
-      "option": "掌柜假意带路，把缇骑引上被山洪冲垮的北坡"
+      "cost": "古寺被东厂一把火烧了。",
+      "option": "带人从地宫撤走"
      },
      {
-      "cost": "被呛得直流眼泪，还挨了缇骑一记刀背。",
-      "option": "掌柜往灶膛里扔进一把湿柴，用浓烟给古庙报信"
+      "cost": "犯了杀戒，再回不了佛门。",
+      "option": "守在山门石阶上拦人"
      }
     ],
-    "pressure": "若不能在一炷香内把缇骑引去错误的方向，后山地道出口就会被堵死。",
-    "trigger": "缇骑把茶寮团团围住，要掌柜带路去古庙后山。"
+    "pressure": "护寺护人，就得破戒动手。",
+    "trigger": "东厂要搜寺，偏殿藏着伤者，心里还惦着一个人。"
    },
    "tags": [
-    "workplace_power",
-    "crime"
+    "violence"
    ],
    "voices": {
-    "inner": "……人接到了就好。走吧，别回头，茶钱下回再算。",
-    "surface": "官爷，喝口热茶再走嘛！这么大的雨，山路滑得很，摔坏了身子可不值当。"
-   }
-  },
-  {
-   "adult_context": "年满二十六岁、随江南巡按御史出京查案的年轻推官。",
-   "age_range": [
-    25,
-    27
-   ],
-   "appearance_options": [
-    "一身石青色官袍外罩油布雨披，腰间挂着巡按衙门的铜牌与一只装满案卷的皮囊，眉目清瘦，眼神却锐利得像能把账册一页页看穿。",
-    "骑在湿透的马上，一手勒缰一手展开盐税清册，嘴里念念有词地核对数目，雨水打湿了纸也不肯收起来。"
-   ],
-   "decision": {
-    "avoids": [
-     "拿银子说情的人",
-     "在公堂上撒谎的人"
-    ],
-    "contrast": "看着文弱，咬住一桩案子却比猎犬还狠。",
-    "core_value": "国法在账，不在刀口上。",
-    "goal_options": [
-     "在山下截住东厂的后援",
-     "核对账册与盐税清册",
-     "护送证人回巡按衙门"
-    ],
-    "never": [
-     "绝不会收下东厂递来的一文钱。"
-    ],
-    "prefers": [
-     "肯作证、不怕事的人"
-    ],
-    "pressure_responses": {
-     "breaking": "被冷箭射中肩膀，仍死死护住怀里的账册。",
-     "high": "亲自涉水过河，把账册揣进怀里。",
-     "low": "在马上核对卷宗，命捕快封住山口。",
-     "mid": "亮出查案文书，喝令东厂缇骑放下兵刃。"
-    },
-    "relationship_stance": "对同僚彬彬有礼，对权贵寸步不让。",
-    "withdrawal": "退回山下营帐，借着油灯一页页誊抄账册。"
-   },
-   "gender": "any",
-   "gender_reason": null,
-   "id": "censor_aide_judge_lu",
-   "identity": {
-    "authority": "持巡按御史签发的查案文书，可以当场扣押东厂越境办案的人马。",
-    "exposure": "若空手而归，将被东厂反咬一口，以诬告上官论罪。",
-    "hidden": "父亲是被盐商逼死的小吏，从此发誓要把两淮盐税的黑账一笔笔查清。",
-    "limits": [
-     "巡按大军被山洪拦在河对岸，只带了先遣的小队",
-     "没有账册原件，扳不倒东厂百户"
-    ],
-    "obligations": [
-     "在天亮前拿到账册原件，当场坐实东厂百户的贪墨罪名。"
-    ],
-    "resources": [
-     "一道巡按御史的查案文书",
-     "一队二十名巡按衙门的捕快"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "把账册看得比自己性命还重的那份执拗",
-     "在刀口下仍肯把实情一五一十说清楚的胆量"
-    ],
-    "boundaries": [
-     "查案期间只谈案情"
-    ],
-    "desire_range": [
-     1,
-     2
-    ],
-    "desired_position": "乱世里那支替冤屈落笔的笔",
-    "dislikes": [
-     "敷衍",
-     "贿赂"
-    ],
-    "expression": "把一份誊抄好的证词副本郑重交到对方手里，说若有一天案子翻了，凭这份东西来巡按衙门找自己。",
-    "likes": [
-     "案子办完后在河边钓一下午鱼"
-    ],
-    "preconditions": [
-     "巡按御史麾下年轻推官与对方都已完全清醒，眼前的危机已经解除",
-     "巡按御史麾下年轻推官出于自愿与对等的敬意，不带任何交换或强求"
-    ],
-    "self_control_range": [
-     4,
-     5
-    ]
-   },
-   "public_role": "巡按御史麾下年轻推官",
-   "schedule": [
-    {
-     "from": 0,
-     "location_id": "main_shrine_collapsed_nave",
-     "to": 29
-    },
-    {
-     "from": 30,
-     "location_id": "main_shrine_collapsed_nave",
-     "to": 1379
-    },
-    {
-     "from": 1380,
-     "location_id": "main_shrine_collapsed_nave",
-     "to": 1409
-    },
-    {
-     "from": 1410,
-     "location_id": "main_shrine_collapsed_nave",
-     "to": 1439
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "百户恼羞成怒，一刀劈断了推官的马缰。",
-      "option": "推官在山口当众宣读查案文书，逼得缇骑面面相觑不敢动手"
-     },
-     {
-      "cost": "被急流冲出半里地，爬上岸时浑身是伤。",
-      "option": "有人把账册裹进油布，冒着湍流游过河送到推官手里"
-     }
-    ],
-    "pressure": "若不能在破晓前把账册送到推官手里，东厂援兵一到，证据就会被付之一炬。",
-    "trigger": "东厂百户在山口设卡，扬言谁敢带账册下山就格杀勿论。"
-   },
-   "tags": [
-    "workplace_power",
-    "crime"
-   ],
-   "voices": {
-    "inner": "……账册在，冤屈就翻得过来。辛苦了，剩下的交给我。",
-    "surface": "东厂越境办案，可有兵部勘合？没有？那就请诸位放下刀，随本官回衙门说个明白。"
+    "inner": "佛祖，弟子大概守不住了。",
+    "surface": "阿弥陀佛，施主，山芋还热着。"
    }
   }
  ],
  "clock_start": {
-  "label": "崇祯年间，梅雨季",
+  "label": "天启末年，梅雨季",
   "minute": 1380
  },
  "clock_style": "hm",
@@ -1311,153 +1347,187 @@
   "intimate",
   "violence",
   "bodily_harm",
-  "substance",
-  "workplace_power",
   "crime",
-  "workplace",
   "disaster"
  ],
  "custom": false,
  "customs": [
-  "江湖疗伤礼制：医者为女子敷药除毒时当眼观鼻鼻观心，不可多视肩背半寸；伤者收剑入鞘以示信任，双方互不探询师承来历。",
-  "用烈酒淋刃烧灼生肌前，需将干洁帕子或剑鞘皮带纳入口中紧咬，纵使皮肉焦灼亦不可发出呼痛呻吟引来外敌窥探。",
-  "孤男寡女受困寒夜暖阁避雨时，需分坐篝火两侧三尺处；若衣衫尽湿寒战难支，许以背靠背相抵借体温御寒，以全名节。",
-  "破晓脱险告别时，刺客当解下佩剑剑穗红绳系于恩人腕间，宣告受其活命之恩，日后持此穗者纵有泼天仇怨亦舍命相护。"
+  "山里人避雨入寺，要先在佛前添一把干柴，算是借宿的香火钱。",
+  "江湖上赠剑穗，是把后半生的去处托给对方。",
+  "医家下针前要问一句“忍得住么”，答了“忍得住”，便不许中途喊停。",
+  "茶寮递茶时杯口朝着谁，就是把今晚的消息卖给谁。"
  ],
  "daily_activities": [
   {
    "beats": [
-    "山雨停了两天，医者在暖阁的小炉上煎药，药香飘满了偏殿。",
-    "女刺客靠在榻上看着，忽然问医者学医学了几年。",
-    "药煎好了，医者吹凉了才递过去，女刺客皱着眉一口喝干。"
+    "{player.name}替对方脱下滴水的外衣，搭在木棍上凑近火盆",
+    "火光把两张脸都映得微红"
    ],
-   "duration_minutes": 45,
-   "hook_ids": [
-    "h_wanxue_sword_neck_confrontation_whispe",
-    "h_zhao_hound_shout_arson_threat",
-    "h_huitong_staff_ground_strike_buddha"
-   ],
-   "id": "a_entry_warm_room_sword_draw_cauterize",
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_dry_cloak_by_brazier",
    "location_ids": [
     "ancient_temple_side_hall_warm_room"
    ],
-   "start_minute": 600,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "暖阁里煎药"
+   "title": "火盆边烘烤湿衣"
   },
   {
    "beats": [
-    "伤口开始结痂，医者替女刺客拆开旧布条，换上新药。",
-    "女刺客背对着医者，说起小时候第一次受伤，是师父给包的。",
-    "包扎好了，女刺客回头道了声谢，声音比前几天软了许多。"
+    "刺客解开右肩盘扣，露出伤口周围发黑的皮肉",
+    "{player.name}持银刀清创、撒药粉，手上放得极轻"
    ],
    "duration_minutes": 40,
    "hook_ids": [
-    "hd_cold_assassin_shen_wanxue",
-    "hd_righteous_young_monk_huitong",
-    "hd_ruthless_dongchang_commander_zhao",
-    "hd_censor_aide_judge_lu",
-    "hd_righteous_swordsman_companion_chufeng",
-    "hd_teahouse_contact_madam_liu"
+    "hook_shen_brazier_glare",
+    "hook_shen_hairpin_ask",
+    "hook_shen_locket_gift"
    ],
-   "id": "a_warm_room_bare_shoulder_bone_scrape",
+   "id": "act_dress_wound_back",
    "location_ids": [
     "ancient_temple_side_hall_warm_room"
    ],
-   "start_minute": 1425,
+   "start_minute": null,
+   "tags": [
+    "bodily_harm"
+   ],
+   "title": "清创换药"
+  },
+  {
+   "beats": [
+    "{player.name}替刺客擦去软剑上的雨渍",
+    "手掌覆在对方握剑的手背上，揉开指根的硬茧"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [
+    "hook_shen_brazier_glare",
+    "hook_shen_hairpin_ask",
+    "hook_shen_locket_gift"
+   ],
+   "id": "act_wipe_folding_sword",
+   "location_ids": [
+    "ancient_temple_side_hall_warm_room"
+   ],
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "拆布换药"
+   "title": "擦剑按揉指根"
   },
   {
    "beats": [
-    "武僧慧通在正殿里收拾倒下的木梁，把佛像上的泥一点点擦干净。",
-    "医者过来帮忙扶梯子，武僧说这尊佛像比庙里所有人都老。",
-    "擦完最后一块，武僧合掌念了一句佛号，两人在台阶上坐着歇了一会儿。"
+    "两人坐在漏风的木栏上看雨席卷竹海",
+    "旧长袍下，{player.name}悄悄扣住对方的手指"
    ],
-   "duration_minutes": 45,
-   "hook_ids": [
-    "h_huitong_staff_ground_strike_buddha",
-    "h_wanxue_bare_shoulder_clench_wrist_whis",
-    "h_zhao_hound_shout_arson_threat"
-   ],
-   "id": "a_main_hall_arson_blockade_defense",
+   "duration_minutes": 40,
+   "hook_ids": [],
+   "id": "act_bell_tower_rain",
    "location_ids": [
-    "main_shrine_collapsed_nave"
+    "loc_bell_tower_decayed_loft"
    ],
-   "start_minute": 660,
-   "tags": [
-    "workplace_power"
-   ],
-   "title": "正殿里擦佛像"
-  },
-  {
-   "beats": [
-    "后院的石磨还能用，武僧把晒干的豆子倒进去，让医者帮着推。",
-    "女刺客坐在井沿上看两人推磨，嘴上说庙里的日子太闷。",
-    "豆浆煮好了，女刺客第一个伸手要了一碗。"
-   ],
-   "duration_minutes": 35,
-   "hook_ids": [
-    "h_chufeng_sword_clash_shout_standoff",
-    "h_zhao_hound_shout_arson_threat",
-    "h_wanxue_sword_neck_confrontation_whispe"
-   ],
-   "id": "a_courtyard_well_millstone_seal_breakout",
-   "location_ids": [
-    "back_courtyard_dry_well_tunnel"
-   ],
-   "start_minute": 480,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "后院推磨"
+   "title": "钟楼檐下听夜雨"
   },
   {
    "beats": [
-    "医者把从后山采来的草药铺在枯井边的石板上晾晒。",
-    "女刺客认得其中几味，说江湖上有人拿它配迷药。",
-    "医者笑着把那几味挑出来收好：在我这儿，它只用来止疼。"
+    "拔钉前，{player.name}和刺客凑在同一只破陶碗边小口喝姜汤",
+    "辣意从喉咙一路烧到心口"
+   ],
+   "duration_minutes": 15,
+   "hook_ids": [
+    "hook_shen_brazier_glare",
+    "hook_shen_hairpin_ask",
+    "hook_shen_locket_gift"
+   ],
+   "id": "act_share_ginger_broth",
+   "location_ids": [
+    "ancient_temple_side_hall_warm_room"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "分一碗姜汤"
+  },
+  {
+   "beats": [
+    "寒气透骨时，{player.name}把发抖的刺客拢进怀里",
+    "下巴抵着对方发顶，手心捂着冰凉的耳垂"
    ],
    "duration_minutes": 30,
    "hook_ids": [
-    "h_chufeng_sword_clash_shout_standoff",
-    "h_huitong_staff_ground_strike_buddha"
+    "hook_shen_brazier_glare",
+    "hook_shen_hairpin_ask",
+    "hook_shen_locket_gift"
    ],
-   "id": "a_tunnel_underground_river_raft_escape",
+   "id": "act_warm_behind_shrine",
    "location_ids": [
-    "back_courtyard_dry_well_tunnel"
+    "ancient_temple_side_hall_warm_room"
    ],
-   "start_minute": 720,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "井边晾草药"
+   "title": "佛龛后以体温取暖"
   },
   {
    "beats": [
-    "梅雨骤停云开雾散，晨曦万道霞光洒满江南千重翠竹海，山林空气清新透亮弥漫泥土芬芳。",
-    "刺客亲手解下秋水软剑之猩红剑穗细致系在医者腕间，含泪相视轻许从此白首同舟不负深恩。",
-    "毒尽人醒，刺客把剑穗系在医者腕间，在晨雾竹林里第一次主动吻了上去，再不肯松手。"
+    "{player.name}举着火把下到井壁石阶，一只手护在对方腰间",
+    "两人屏息听暗河拍打岩洞的回响"
    ],
    "duration_minutes": 25,
-   "hook_ids": [
-    "h_wanxue_sword_tassel_pledge_whisper",
-    "h_chufeng_sword_clash_shout_standoff",
-    "h_wanxue_sword_neck_confrontation_whispe"
-   ],
-   "id": "a_dawn_bamboo_forest_red_tassel_vow",
+   "hook_ids": [],
+   "id": "act_well_listen_current",
    "location_ids": [
     "back_courtyard_dry_well_tunnel"
    ],
-   "start_minute": 135,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "破晓翠竹林海解剑赠穗定情盟誓"
+   "title": "枯井里听暗河水声"
+  },
+  {
+   "beats": [
+    "一人托砚研朱砂，一人执笔誊写翻案陈情",
+    "{player.name}写到相府二字，笔尖顿了一顿"
+   ],
+   "duration_minutes": 40,
+   "hook_ids": [],
+   "id": "act_copy_petition_veranda",
+   "location_ids": [
+    "loc_side_veranda_drip_eaves"
+   ],
+   "start_minute": null,
+   "tags": [],
+   "title": "回廊纸灯下誊陈情"
+  },
+  {
+   "beats": [
+    "刺客从颈间解下染血的儿时金锁片，塞进{player.name}的贴身衣袋",
+    "指尖在对方心口停了很久"
+   ],
+   "duration_minutes": 15,
+   "hook_ids": [
+    "hook_shen_brazier_glare",
+    "hook_shen_hairpin_ask",
+    "hook_shen_locket_gift"
+   ],
+   "id": "act_locket_entrusted",
+   "location_ids": [
+    "ancient_temple_side_hall_warm_room"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "贴身相托金锁片"
   }
  ],
  "default_npc_gender_mix": {
@@ -1466,7 +1536,7 @@
   "nonbinary": 0.05
  },
  "default_person": "second",
- "era": "明末江南梅雨连绵初夏之夜（东厂缇骑与江湖暗门决死追剿）",
+ "era": "天启末年梅雨初夏，东厂缇骑追剿江湖暗门",
  "extends": null,
  "forbidden_terms": [
   "现代抗生素消炎粉",
@@ -1478,275 +1548,243 @@
  ],
  "hooks": [
   {
-   "id": "h_wanxue_sword_neck_confrontation_whispe",
+   "id": "hook_shen_brazier_glare",
    "kind": "approach",
    "location_ids": [
-    "ancient_temple_side_hall_warm_room",
-    "back_courtyard_dry_well_tunnel"
+    "ancient_temple_side_hall_warm_room"
    ],
    "slot": "cold_assassin_shen_wanxue",
-   "text": "{cold_assassin_shen_wanxue.name}单手将冰冷秋水软剑横在你咽喉三寸处，美眸冷冽如冰低语：“别动，出声便割断你的喉管！深更半夜藏在这破庙暖阁，究竟是东厂的耳目，还是过路的亡命徒？！把手抬起来，药箱打开让我看！”"
+   "text": "偏殿暖阁残壁的小火盆前，女刺客{npc.name}单手按住右肩渗血的夜行衣，折梅软剑横在膝头，冰冷的目光扫向推开残破木门的你。"
   },
   {
-   "id": "h_wanxue_bare_shoulder_clench_wrist_whis",
+   "id": "hook_shen_hairpin_ask",
    "kind": "approach",
    "location_ids": [
-    "ancient_temple_side_hall_warm_room",
+    "ancient_temple_side_hall_warm_room"
+   ],
+   "slot": "cold_assassin_shen_wanxue",
+   "text": "{npc.name}撑着残壁站起来，把你拉到火盆边，按着你的手放在自己肩上：“你来，换别人我不放心。”"
+  },
+  {
+   "id": "hook_shen_locket_gift",
+   "kind": "request",
+   "location_ids": [
+    "ancient_temple_side_hall_warm_room"
+   ],
+   "slot": "cold_assassin_shen_wanxue",
+   "text": "{npc.name}把一枚染血的旧金锁片推到你面前：“若我撑不过今夜，替我收着。”"
+  },
+  {
+   "id": "hook_zhao_bounty_display",
+   "kind": "observe",
+   "location_ids": [
     "main_shrine_collapsed_nave"
    ],
-   "slot": "cold_assassin_shen_wanxue",
-   "text": "{cold_assassin_shen_wanxue.name}褪下半边湿透夜行黑衣坐在草席前，疼得浑身发抖，咬着白帕含糊道：“……刀拿稳些。把烂肉刮干净……我不怕疼……若敢借机多看半寸……这柄剑随时要你的命……听到没有……”"
+   "slot": "ruthless_dongchang_commander_zhao",
+   "text": "坍塌的正殿佛龛大厅外电闪雷鸣，东厂百户{npc.name}手按绣春刀柄立在滴水回廊下，身后的两名缇骑正晃动着五万两官银的悬赏令。"
   },
   {
-   "id": "h_wanxue_sword_tassel_pledge_whisper",
-   "kind": "approach",
-   "location_ids": [
-    "back_courtyard_dry_well_tunnel"
-   ],
-   "slot": "cold_assassin_shen_wanxue",
-   "text": "{cold_assassin_shen_wanxue.name}在破晓竹林的金光里，脸上终于有了血色，额头抵着额头低声道：“毒拔干净了，人也清醒。昨夜你守着规矩一眼没多看……所以今天，我准你看个够。{npc.name}这条命，往后归你管。”"
-  },
-  {
-   "id": "h_zhao_hound_shout_arson_threat",
+   "id": "hook_zhao_offer_share",
    "kind": "approach",
    "location_ids": [
     "main_shrine_collapsed_nave",
-    "ancient_temple_side_hall_warm_room",
-    "back_courtyard_dry_well_tunnel"
+    "loc_side_veranda_drip_eaves"
    ],
    "slot": "ruthless_dongchang_commander_zhao",
-   "text": "{ruthless_dongchang_commander_zhao.name}单手将绣春刀重重剁在暖阁破损门槛上激起刺耳火星：“刺客！你后背中了透骨钉，走不出三十步！交出账册爬出来受绑，督公或许赏你个全尸！”"
+   "text": "{npc.name}拎着一壶冷茶走到你身边坐下，压低声音：“偏殿里那个人值五万两，咱们谈谈怎么分。”"
   },
   {
-   "id": "h_huitong_staff_ground_strike_buddha",
-   "kind": "approach",
-   "location_ids": [
-    "main_shrine_collapsed_nave",
-    "ancient_temple_side_hall_warm_room",
-    "back_courtyard_dry_well_tunnel"
-   ],
-   "slot": "righteous_young_monk_huitong",
-   "text": "{righteous_young_monk_huitong.name}手持碗口粗乌木齐眉棍如金刚怒目挡在大雄宝殿正中：“沈姑娘！小大夫！安心剔骨敷药！小僧这副身躯尚有几分笨力气，定为二位守住这道门坎！谁敢踏入偏殿半步，先问过这根齐眉棍！”"
-  },
-  {
-   "id": "h_chufeng_sword_clash_shout_standoff",
-   "kind": "approach",
-   "location_ids": [
-    "main_shrine_collapsed_nave",
-    "back_courtyard_dry_well_tunnel",
-    "ancient_temple_side_hall_warm_room"
-   ],
-   "slot": "righteous_swordsman_companion_chufeng",
-   "text": "{righteous_swordsman_companion_chufeng.name}拔出鲨鱼皮鞘三尺青锋古剑在回廊内挽出一片雪亮剑幕：“沈姑娘，小郎中！后院枯井的退路楚某替你们断后！快些敷药疗伤，莫要在意江湖俗礼，保住性命要紧！”"
-  },
-  {
-   "id": "h_wanxue_wet_suit_shiver_glance",
+   "id": "hook_lu_portrait_compare",
    "kind": "observe",
    "location_ids": [
-    "ancient_temple_side_hall_warm_room"
+    "loc_side_veranda_drip_eaves"
    ],
-   "slot": "cold_assassin_shen_wanxue",
-   "text": "{cold_assassin_shen_wanxue.name}靠在神台木壁前微促喘息，被冷雨湿透的墨黑夜行水靠裹着修长的身段，半肩褪下露出缠满白布的创口，因剧毒余威不住微微发抖，眼神却冷得像刚出鞘的剑。"
+   "slot": "physician_lu_qingya",
+   "text": "偏殿回廊阴影里，避祸的医家传人{npc.name}正借着闪电微光比对一张泛黄的相府旧画像，手里的银针微微颤抖。"
   },
   {
-   "id": "h_zhao_torch_glare_observe",
+   "id": "hook_lu_grab_wrist",
+   "kind": "approach",
+   "location_ids": [
+    "loc_side_veranda_drip_eaves",
+    "ancient_temple_side_hall_warm_room"
+   ],
+   "slot": "physician_lu_qingya",
+   "text": "{npc.name}在回廊上一把攥住你的手腕，掌心全是冷汗：“你帮我看一眼，那块胎记，我不会认错。”"
+  },
+  {
+   "id": "hook_lu_hand_needles",
+   "kind": "approach",
+   "location_ids": [
+    "ancient_temple_side_hall_warm_room"
+   ],
+   "slot": "physician_lu_qingya",
+   "text": "{npc.name}把一卷针囊塞到你手里：“替我掌灯，手别抖，这一针下去就得一口气拔完。”"
+  },
+  {
+   "id": "hook_liu_cut_rope",
    "kind": "observe",
-   "location_ids": [
-    "main_shrine_collapsed_nave"
-   ],
-   "slot": "ruthless_dongchang_commander_zhao",
-   "text": "{ruthless_dongchang_commander_zhao.name}单手按刀立于残破石柱旁，飞鱼服下摆在雨水中沾满泥浆，狭长眼眸在防雨提灯照耀下闪烁着鹰犬特有的森冷贪婪血芒，手腕微微活动发出脆响杀意毕露。"
-  },
-  {
-   "id": "h_chufeng_sword_poise_glance",
-   "kind": "observe",
-   "location_ids": [
-    "main_shrine_collapsed_nave"
-   ],
-   "slot": "righteous_swordsman_companion_chufeng",
-   "text": "{righteous_swordsman_companion_chufeng.name}单手负剑卓然而立，斗笠压低遮住俊逸眉峰，三尺青锋倒映着殿外闪烁雷光，浑身流淌着纯阳太极名门剑客独步江南之卓绝傲岸侠气。"
-  },
-  {
-   "id": "h_wanxue_pull_nail_request",
-   "kind": "approach",
-   "location_ids": [
-    "ancient_temple_side_hall_warm_room"
-   ],
-   "slot": "cold_assassin_shen_wanxue",
-   "text": "{cold_assassin_shen_wanxue.name}贝齿死死咬破白帕，侧过通红耳颊颤声低语：“……刀子下了吗？别磨蹭……连皮带肉割下去，把倒钩拔出来……快些……我撑得住……别发抖……”"
-  },
-  {
-   "id": "h_wanxue_back_to_back_request",
-   "kind": "approach",
-   "location_ids": [
-    "ancient_temple_side_hall_warm_room"
-   ],
-   "slot": "cold_assassin_shen_wanxue",
-   "text": "{cold_assassin_shen_wanxue.name}失血过多冷得发抖，将破草席裹在肩头低声道：“……别坐那么远，火快灭了。背靠背坐着，你守前门，我守窗……谁先睡着谁是孙子。”"
-  },
-  {
-   "id": "h_huitong_reinforce_request",
-   "kind": "approach",
-   "location_ids": [
-    "main_shrine_collapsed_nave"
-   ],
-   "slot": "righteous_young_monk_huitong",
-   "text": "{righteous_young_monk_huitong.name}单手抗住断裂木门，大声喊道：“小大夫！把佛龛底下的桐油坛子抱过来倒在门廊前！快！番子的猎犬要冲进来了！泼桐油点火断道！”"
-  },
-  {
-   "id": "h_chufeng_sever_reinforce_request",
-   "kind": "approach",
    "location_ids": [
     "back_courtyard_dry_well_tunnel"
    ],
-   "slot": "righteous_swordsman_companion_chufeng",
-   "text": "{righteous_swordsman_companion_chufeng.name}剑气纵横荡开追兵，回头喝道：“医者兄弟！照顾好沈姑娘！枯井木排已经解开缆绳了！快跳上木排！楚某随后就到！”"
-  },
-  {
-   "id": "h_zhao_hound_corpse_observe",
-   "kind": "observe",
-   "location_ids": [
-    "main_shrine_collapsed_nave"
-   ],
-   "slot": "ruthless_dongchang_commander_zhao",
-   "text": "{ruthless_dongchang_commander_zhao.name}眼见心爱猎犬被乌木长簪贯穿咽喉毙命当场，脸色青白交加额角青筋暴跳，手中绣春刀发出一阵暴怒轻颤，凶残眼眸中首次浮现出直面硬茬子的忌惮暴躁。"
-  },
-  {
-   "id": "h_huitong_staff_sweat_observe",
-   "kind": "observe",
-   "location_ids": [
-    "main_shrine_collapsed_nave"
-   ],
-   "slot": "righteous_young_monk_huitong",
-   "text": "{righteous_young_monk_huitong.name}横棍立于积水大殿之中，灰布僧袍受暴雨泥浆浸透贴在宽阔胸膛上，雨水混杂着汗珠顺着刚毅下巴滴落，宛如一尊守护落难苍生的无畏降魔金刚。"
-  },
-  {
-   "id": "hd_cold_assassin_shen_wanxue",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "cold_assassin_shen_wanxue",
-   "text": "{cold_assassin_shen_wanxue.name}坐在檐下看雨，把身边的蒲团往外推了推：“坐吧，雨还要下一阵。”"
-  },
-  {
-   "id": "hd_righteous_young_monk_huitong",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "righteous_young_monk_huitong",
-   "text": "{righteous_young_monk_huitong.name}捧着一壶新沏的粗茶过来，合掌道：“施主，喝口热茶暖暖身子。”"
-  },
-  {
-   "id": "hd_ruthless_dongchang_commander_zhao",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "ruthless_dongchang_commander_zhao",
-   "text": "{ruthless_dongchang_commander_zhao.name}在你对面坐下，自斟一杯：“今日不办差，只喝酒。”"
-  },
-  {
-   "id": "hd_censor_aide_judge_lu",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "censor_aide_judge_lu",
-   "text": "{censor_aide_judge_lu.name}把一卷誊好的公文递给你：“劳烦过目，看看有没有错字。”"
-  },
-  {
-   "id": "hd_righteous_swordsman_companion_chufeng",
-   "kind": "approach",
-   "location_ids": [],
-   "slot": "righteous_swordsman_companion_chufeng",
-   "text": "{righteous_swordsman_companion_chufeng.name}拍了拍你的肩：“雨停了去镇上吃碗面？我请。”"
-  },
-  {
-   "id": "hd_teahouse_contact_madam_liu",
-   "kind": "approach",
-   "location_ids": [],
    "slot": "teahouse_contact_madam_liu",
-   "text": "{teahouse_contact_madam_liu.name}端上一碟桂花糕，笑着坐下：“新做的，尝尝甜不甜。”"
+   "text": "后殿枯井旁的青石板上，茶寮掌柜{npc.name}正用匕首割断系在暗河石笋上的绳索。"
+  },
+  {
+   "id": "hook_liu_tease_tea",
+   "kind": "approach",
+   "location_ids": [
+    "back_courtyard_dry_well_tunnel",
+    "loc_side_veranda_drip_eaves"
+   ],
+   "slot": "teahouse_contact_madam_liu",
+   "text": "{npc.name}端着一杯热茶挡住你的去路，杯口冲着你：“喝了这杯，今晚的消息就卖给你一个人。”"
+  },
+  {
+   "id": "hook_judge_hand_writ",
+   "kind": "approach",
+   "location_ids": [
+    "main_shrine_collapsed_nave"
+   ],
+   "slot": "censor_aide_judge_lu",
+   "text": "{npc.name}隔着篝火朝你招手，把一份勘验文书推过来：“你在场，替我做个见证。”"
+  },
+  {
+   "id": "hook_judge_take_off_hat",
+   "kind": "approach",
+   "location_ids": [
+    "main_shrine_collapsed_nave",
+    "loc_side_veranda_drip_eaves"
+   ],
+   "slot": "censor_aide_judge_lu",
+   "text": "{npc.name}把官帽摘下搁在膝上，侧身给你让出半张草席：“坐，这里只有你我，我说几句真话。”"
+  },
+  {
+   "id": "hook_huitong_warm_yam",
+   "kind": "approach",
+   "location_ids": [
+    "loc_bell_tower_decayed_loft"
+   ],
+   "slot": "righteous_young_monk_huitong",
+   "text": "钟楼上，{npc.name}从炉灰里扒出一只煨热的山芋，掰开一半塞进你冰凉的手里。"
+  },
+  {
+   "id": "hook_huitong_pull_sleeve",
+   "kind": "approach",
+   "location_ids": [
+    "loc_bell_tower_decayed_loft",
+    "back_courtyard_dry_well_tunnel"
+   ],
+   "slot": "righteous_young_monk_huitong",
+   "text": "{npc.name}拉住你的袖袍往暗处带，合十低声：“施主，后殿佛像后面，贫僧备好了干粮。”"
   }
  ],
  "id": "assassin_rainy_temple_ointment",
  "locations": [
   {
    "affordances": [
-    "在炭火堆上加添干柴烘烤浸透雨水的湿衣长袍",
-    "用柳叶小刀在火苗上反复淬火炙烤实施消毒拔钉",
-    "紧闭残破木门插上生锈门闩防止穿堂冷风灌入"
+    "火盆边烘干湿透的夜行衣",
+    "药箱里的银刀与金疮药",
+    "禅床上半干的棉被"
    ],
-   "detail": "位于古庙后进一间保存相对完整的避风木质暖阁，雕花窗棂残破糊着厚实油布，中央生有一堆将熄断木余烬，地面铺有干燥干稻草与陈旧蒲团，空气中弥漫着潮湿泥土、松木烟气与淡淡药香血气。",
+   "detail": "偏殿后头隔出的一间暖阁，残壁挡风，小火盆烧着干柴，药箱、棉被和一张旧禅床都在这里，是古寺里唯一能过夜的干燥地方。",
+   "exits": [
+    "loc_side_veranda_drip_eaves"
+   ],
+   "id": "ancient_temple_side_hall_warm_room",
+   "name": "偏殿暖阁残壁暗室",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "一扇破木门对着回廊，门缝透出一线火光；门里说话，廊下听得见三分。",
+   "witnesses": []
+  },
+  {
+   "affordances": [
+    "井壁石阶上只容两人贴身而过",
+    "石笋上系舟的旧缆绳",
+    "藏在岩缝里的干粮包"
+   ],
+   "detail": "后殿院里一口枯井，井壁凿着石阶，底下连着地下暗河的岩洞，石笋上拴着一叶小舟，是寺里的人藏身和出山的最后一条路。",
+   "exits": [
+    "loc_side_veranda_drip_eaves",
+    "loc_bell_tower_decayed_loft"
+   ],
+   "id": "back_courtyard_dry_well_tunnel",
+   "name": "后殿枯井与地下暗河",
+   "pressure_modifiers": {},
+   "privacy": "private",
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "井口压着半扇石板，井下火把一灭，伸手不见五指。",
+   "witnesses": []
+  },
+  {
+   "affordances": [
+    "木栏边并肩看雨",
+    "煨在炉灰里的山芋",
+    "远眺山门火把"
+   ],
+   "detail": "钟楼的铜钟早被卖了，只剩木栏和半截楼梯，站上去看得见整片竹海，也看得见山门外缇骑的火把。",
    "exits": [
     "main_shrine_collapsed_nave",
     "back_courtyard_dry_well_tunnel"
    ],
-   "id": "ancient_temple_side_hall_warm_room",
-   "name": "偏殿暖阁",
-   "pressure_modifiers": {
-    "p_hound_scent_tracking_siege": "山门方向不断传来猎犬狂吠撕扯夜幕的尖利凶响。",
-    "p_poison_spreading_paralysis_clock": "透骨钉周围乌黑死肉正以肉眼可见速度向肩胛经络扩散蔓延。"
-   },
-   "privacy": "private",
-   "tags": [
-    "intimate",
-    "workplace_power"
-   ],
-   "visibility": "窗外电闪雷鸣，惨白雷光照亮屋内斑驳尘网，室内仅余微弱炭火红芒映照二人身影，雨声轰鸣震耳欲聋，隔着跳动火光可清晰望见对方鬓角冷汗与起伏胸口。",
+   "id": "loc_bell_tower_decayed_loft",
+   "name": "残破钟楼避雨阁",
+   "pressure_modifiers": {},
+   "privacy": "semi",
+   "tags": [],
+   "visibility": "四面漏风，楼上的人看得见楼下，楼下的人只看得见檐影。",
    "witnesses": [
-    "bg_abandoned_temple_stone_buddha",
-    "bg_refugee_scholar_servant"
+    "bg_lookout_novice"
    ]
   },
   {
    "affordances": [
-    "借着倾倒石碑与巨大莲花座阴影伏身隐匿行迹",
-    "推动风化断木横梁阻断通往后殿暖阁之回廊要道",
-    "搜集供桌下干燥供香香粉用于掩盖空气中血腥气息"
+    "防风纸灯下研墨",
+    "廊柱暗角里低声说话",
+    "水帘后面躲人"
    ],
-   "detail": "半边穹顶已被雷击坍塌的宏伟古刹正殿，残破金漆大佛像半陷于乱石烂泥之中，无数雨柱自头顶漏空倾泻而下，积水没过脚踝，殿柱斜倾摇摇欲坠。",
+   "detail": "连着正殿、偏殿与后院的穿堂回廊，檐下雨水连成一道水帘，廊柱后头有能藏一个人的暗角。",
    "exits": [
+    "main_shrine_collapsed_nave",
     "ancient_temple_side_hall_warm_room",
     "back_courtyard_dry_well_tunnel"
    ],
-   "id": "main_shrine_collapsed_nave",
-   "name": "坍塌的正殿",
-   "pressure_modifiers": {
-    "p_hound_scent_tracking_siege": "东厂缇骑火把已连成火龙将前殿大门死死围困。",
-    "p_temple_timber_roof_collapse_risk": "倾斜承重梁在暴雨冲刷下不断掉落碎瓦发出危险断裂呻吟。"
-   },
-   "privacy": "public",
-   "tags": [
-    "workplace_power",
-    "violence"
-   ],
-   "visibility": "暴雨如注狂风呼啸，大殿内视野昏暗，电光闪烁时可将四周破损廊柱与殿外竹林晃动阴影尽收眼底，极易暴露火光与人影踪迹。",
+   "id": "loc_side_veranda_drip_eaves",
+   "name": "偏殿穿堂滴水回廊",
+   "pressure_modifiers": {},
+   "privacy": "semi",
+   "tags": [],
+   "visibility": "雷电一亮，廊下谁站在哪里都看得一清二白。",
    "witnesses": [
-    "bg_dongchang_scout_spearman",
-    "bg_flash_flood_tracker_peasant",
-    "bg_dongchang_crossbow_cadet"
+    "bg_patrol_rider"
    ]
   },
   {
    "affordances": [
-    "点燃松脂火把探明地道前方暗河支流深浅与岔路",
-    "合力推动枯井旁风化磨盘封死井口阻断后方追兵",
-    "在狭窄石壁避水台上稍作喘息整理伤药与佩剑"
+    "篝火边的当众对质",
+    "神龛背后的偷听",
+    "供桌上摊开的悬赏令"
    ],
-   "detail": "古庙后院竹林深处一口荒废百年的枯井底座，掀开井底朽烂木盖即可进入一条用青石修筑的古刹储水泄洪暗道，直通后山绝壁竹林深谷。",
+   "detail": "正殿塌了半边屋顶，佛像泥身剥落，殿中燃着一堆篝火，避雨的官差、缇骑与行人都聚在这里，谁说一句话全殿都听得见。",
    "exits": [
-    "ancient_temple_side_hall_warm_room",
-    "main_shrine_collapsed_nave"
+    "loc_side_veranda_drip_eaves",
+    "loc_bell_tower_decayed_loft"
    ],
-   "id": "back_courtyard_dry_well_tunnel",
-   "name": "枯井暗道",
-   "pressure_modifiers": {
-    "p_mountain_torrent_tunnel_inundation": "山洪泄洪暗涌正顺着地道尽头以极快速度倒灌漫上石阶。",
-    "p_poison_spreading_paralysis_clock": "女刺客因剧毒攻心四肢麻木步履踉跄几乎无法涉水。"
-   },
-   "privacy": "private",
-   "tags": [
-    "intimate",
-    "workplace_power"
-   ],
-   "visibility": "井底幽深避风，伸手不见五指，唯有地道深处传来暗河奔流的沉闷水声，石壁布满滑腻青苔与陈旧蛛网，空气阴冷刺骨却隔绝了外界雨声。",
+   "id": "main_shrine_collapsed_nave",
+   "name": "坍塌的正殿佛龛大厅",
+   "pressure_modifiers": {},
+   "privacy": "public",
+   "tags": [],
+   "visibility": "篝火照得满殿通明，神龛背后却留着一片暗处。",
    "witnesses": [
-    "bg_hidden_temple_hermit_monk"
+    "bg_fellow_traveler",
+    "bg_court_clerk"
    ]
   }
  ],
@@ -1819,508 +1857,602 @@
   ],
   "order": "family_first"
  },
- "notes": "按原稿加入。改动：剧毒发作时的挑钉敷药只作救命，背靠背改为守夜，亲密移到毒尽天亮之后；东厂百户删去摧折侠女的支配欲；修正复制错位的人物吸引点；新增茶寮女掌柜（暗门联络人）与巡按御史麾下推官两名角色。",
+ "notes": "按原稿加入。改动：剧毒发作时的挑钉敷药只作救命，背靠背改为守夜，亲密移到毒尽天亮之后；东厂百户删去摧折侠女的支配欲；修正复制错位的人物吸引点；新增茶寮女掌柜（暗门联络人）与巡按御史麾下推官两名角色。\n2026-10-24 按写作规则 v2 与 Gemini 创意卡改造：改为天启末年雨夜古寺，女刺客中毒被堂亲认出真名，官府、东厂与暗门争夺魏党总账。",
  "player_identities": [
   {
    "age_range": [
-    20,
-    22
+    22,
+    30
    ],
-   "baseline": "年满二十周岁出身江南医药世家之嫡系传人，因父辈拒为东厂权阉配制假药遭抄家灭门，怀揣祖传秘方药箱逃亡深山古庙避雨。",
+   "baseline": "党锢之祸里你被削去功名，揣着同门弹劾魏党的血书一路南逃，借了古寺偏殿一角避雨，身无分文。",
    "gender": "any",
-   "id": "refugee_herbalist_physician_youth",
-   "reputation": "医术通神悬壶济世，见死必救，面对屠刀亦能临危不乱恪守医道本分。",
+   "id": "pi_fugitive_imperial_academy_scholar",
+   "reputation": "同门里出了名的硬骨头，笔下不肯写一句软话。",
    "resources": [
-    "一具小叶紫檀急救药箱配整套精钢柳叶剜骨小刀",
-    "两瓶祖传特制九转还魂雄黄拔毒金疮散"
+    "士林联名的密信",
+    "偏殿角落借来的避雨铺位"
    ],
    "risks": [
-    "一旦被东厂缇骑查出真实姓氏将被当场锁拿押送诏狱碎骨分尸。"
+    "血书一旦被搜出，削籍就成了抄斩。"
    ],
-   "role": "家道中落避祸深山的年轻世家医者",
+   "role": "削籍逃难的太学士子",
    "social_position": "low",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "行方郎中"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
-     "pattern": "带药游医"
+     "pattern": "{given}"
     }
    ]
   },
   {
    "age_range": [
-    21,
-    23
+    25,
+    34
    ],
-   "baseline": "年满二十一周岁武当俗家年轻门人，下山游历江南见义勇为，行至竹林突遇山洪躲入荒庙暖阁。",
+   "baseline": "你早年跟过缇骑，看不惯刑讯逼供改投按察司，这回奉命追查一桩贪官暴毙案，一路追到这座古寺。",
    "gender": "any",
-   "id": "righteous_swordsman_ranger_cadet",
-   "reputation": "剑法刚正侠肝义胆，崇尚正邪分明，对朝廷阉党鹰犬深恶痛绝。",
+   "id": "pi_reformed_constable_deserter_scout",
+   "reputation": "办案狠、心不黑，旧同僚骂你叛门。",
    "resources": [
-    "一柄青锋七星宝剑",
-    "一盒专治内伤的少林大还丹备用药丸"
+    "州衙勘验腰牌",
+    "一套精钢破穴飞针"
    ],
    "risks": [
-    "私藏暗门刺客若被师门长辈知晓将被废除武功逐出师门。"
+    "东厂若认出你这个叛门的旧人，第一个拿你开刀。"
    ],
-   "role": "游历江南避雨之名门正派青年剑客",
-   "social_position": "high",
+   "role": "脱离缇骑的按察司捕头",
+   "social_position": "equal",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "折冲少侠"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
-     "pattern": "游侠剑客"
+     "pattern": "{given}"
     }
    ]
   },
   {
    "age_range": [
-    20,
-    22
+    23,
+    32
    ],
-   "baseline": "年满二十周岁因上书弹劾东厂苛政遭革去功名缉捕的青年文生，精通奇门遁甲与古刹风水密道走向。",
+   "baseline": "你行医游方，入山采药被山洪截在古寺，药箱里的东西够治外伤，也够惹祸，因为谁都想借你的手。",
    "gender": "any",
-   "id": "fugitive_imperial_academy_scholar",
-   "reputation": "风骨嶙峋腹有良谋，虽手无缚鸡之力却极富临机决断之胆略智计。",
+   "id": "pi_herbal_physician",
+   "reputation": "金疮外科的手艺在江南小有名气。",
    "resources": [
-    "一卷手抄古庙地宫舆图石刻拓本",
-    "一把防身短匕首配折扇"
+    "九转拔毒药粉",
+    "银针与火罐"
    ],
    "risks": [
-    "被搜出怀中文稿便是不赦谋逆大罪立斩无赦。"
+    "替刺客拔毒的事传出去，你就是藏匿同罪。"
    ],
-   "role": "遭阉党党锢之祸削籍之太学青年举人",
-   "social_position": "low",
+   "role": "随身采药的杏林医者",
+   "social_position": "equal",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "落难举子"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
-     "pattern": "避雨书生"
+     "pattern": "{given}"
     }
    ]
   },
   {
    "age_range": [
     22,
-    24
+    30
    ],
-   "baseline": "年满二十二周岁因不齿东厂残害忠良而弃官潜逃的前六扇门精锐斥候，熟悉东厂围剿阵法与搜山规矩。",
+   "baseline": "你下山游历行侠，持剑入寺避雨；师门的名号在黑白两道都压得住场，可也束着你不能随意出手。",
    "gender": "any",
-   "id": "reformed_constable_deserter_scout",
-   "reputation": "精明干练熟谙江湖规矩，侦缉反侦查经验极为老道。",
+   "id": "pi_sword_sect_heir",
+   "reputation": "江湖上说你剑快、话少，从不失信。",
    "resources": [
-    "一柄柳叶雁翎腰刀",
-    "两枚东厂特用求援鸣镝烟火"
+    "名门信物令箭",
+    "宗门剑诀"
    ],
    "risks": [
-    "被昔日同僚生擒将点天灯受尽千刀万剐之酷刑。"
+    "当着东厂抗旨，师门要替你背这口锅。"
    ],
-   "role": "弃暗投明脱离缇骑之青年按察司捕快",
-   "social_position": "equal",
+   "role": "名门剑宗首席传人",
+   "social_position": "high",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "佩刀斥候"
+     "pattern": "{family}"
     },
     {
      "gender": "any",
-     "pattern": "捕役义士"
+     "pattern": "{given}"
     }
    ]
   }
  ],
- "premise": "明末江南，浙闽交界的深山里有一座荒废的古庙。江南暗门的天字号女刺客刺杀贪官后藏身在这里养伤，落难的医家传人恰好也在庙里避祸，两人隔着一座佛龛住了半个月。白天采药、换药，夜里守着一盏油灯。梅雨季的山洪常冲断山道，东厂的缇骑还在附近的县城里搜人。",
+ "premise": "浙闽交界的翠竹深山里，一座荒废的兰若古寺立在悬崖断壁边。连绵半月的梅雨把山溪涨成山洪，冲垮了出山的石桥。江湖暗门的刺客、隐姓埋名的医家传人、巡按御史麾下的推官和守殿行者各怀心事，挤在古寺的残殿暖阁里，守着一盏如豆油灯，听殿外风雨。",
  "pressures": [
   {
-   "choice": "是用烈火短刀贴肉剔除烂肉承受晕厥剧痛之险，还是仅以药膏外敷硬熬至天明？",
+   "choice": "拿密函私下逼退百户，还是交给御史立案。",
    "exits": [
     {
-     "cost": "医者双手虎口被女刺客剧痛反扣勒出道道深紫血痕指骨剧烈剧痛挫伤，退路已经断了。",
-     "option": "医者以柳叶刀在烈火炙烤后凝神下刀利落挖除乌黑腐肉挑出铁钉，只争眼前这一刻。"
+     "cost": "原件交还百户，此事不再追究。",
+     "option": "私下出示影本，逼百户撤下火箭手并放行暗河的小舟"
     },
     {
-     "cost": "女刺客下唇被贝齿硬生生咬烂鲜血淋漓痛彻骨髓内力再度消耗，这一回刻不容缓。",
-     "option": "女刺客口衔白帕死命抗住生铁烈酒火炙清创之极刑不发一声，没人能替你决定。"
+     "cost": "百户困兽犹斗，下令缇骑拔刀强攻。",
+     "option": "当众把密函收入御史卷宗"
+    },
+    {
+     "cost": "众人得护送百户离开浙闽地界，百户转头反咬推官擅权。",
+     "option": "逼百户交出如意牌作信物"
     }
    ],
    "far": {
-    "consequence": "刺客陨落古刹密账散失天下清流大祸临头。",
-    "due_days": 1,
-    "trigger": "剧毒入心脉气绝身亡一代冷艳剑客香消玉殒。"
+    "consequence": "推官被参擅权、柳家茶寮被抄。",
+    "due_days": 20,
+    "trigger": "密函原件落到东厂"
+   },
+   "flags": [
+    "timed",
+    "leverage"
+   ],
+   "hook_ids": [],
+   "id": "p_zhao_secret_letter",
+   "immediate": {
+    "minutes": 15,
+    "text": "回廊暗角里，推官把密函影本按在柱上，等百户过来。"
+   },
+   "leverage": {
+    "basis": "{censor_aide_judge_lu.name}握着{ruthless_dongchang_commander_zhao.name}私通对立党派的亲笔密函，由茶寮掌柜截下转交。",
+    "holder": "censor_aide_judge_lu",
+    "subject": "ruthless_dongchang_commander_zhao"
+   },
+   "location_ids": [
+    "loc_side_veranda_drip_eaves"
+   ],
+   "near": {
+    "deadline_minutes": 240,
+    "text": "天亮前若不摆平，百户会先动手抢密函。"
+   },
+   "objective": "让百户撤下围寺的兵，又不让密函毁在今夜。",
+   "source": "person",
+   "start_minute": null,
+   "tags": [
+    "crime"
+   ],
+   "title": "百户的两面密函",
+   "trigger": "茶寮掌柜截下百户私送巡抚衙门的投名状，转给了推官，证实百户早留了后路。"
+  },
+  {
+   "choice": "拿旧档逼掌柜放人，还是放过暗门换一条船。",
+   "exits": [
+    {
+     "cost": "医者得把祖传金针谱赠给掌柜作补偿。",
+     "option": "逼掌柜烧掉死士文契，还伤者自由身"
+    },
+    {
+     "cost": "相府和暗门的旧怨一笔勾销。",
+     "option": "答应不向御史指控暗门，换掌柜用小舟护送伤者"
+    },
+    {
+     "cost": "伤者心神剧震，毒性险些逆行，得立刻请医者施针压住。",
+     "option": "把旧档摊开，让伤者自己决定去留"
+    }
+   ],
+   "far": {
+    "consequence": "暗门上下被当作逆党追剿。",
+    "due_days": 25,
+    "trigger": "底档送到御史手里"
+   },
+   "flags": [
+    "timed",
+    "leverage"
+   ],
+   "hook_ids": [],
+   "id": "p_shadow_gate_orphan_file",
+   "immediate": {
+    "minutes": 10,
+    "text": "医者把金锁残片推到掌柜面前，药箱合上了。"
+   },
+   "leverage": {
+    "basis": "{physician_lu_qingya.name}查到{teahouse_contact_madam_liu.name}手里有暗门当年掠孤女的底档，金锁残片就是物证。",
+    "holder": "physician_lu_qingya",
+    "subject": "teahouse_contact_madam_liu"
+   },
+   "location_ids": [
+    "ancient_temple_side_hall_warm_room"
+   ],
+   "near": {
+    "deadline_minutes": 120,
+    "text": "拔完钉之前不谈妥，掌柜就带底档从樵路走。"
+   },
+   "objective": "让掌柜放伤者自由身，又不把暗门逼上绝路。",
+   "source": "person",
+   "start_minute": null,
+   "tags": [
+    "crime"
+   ],
+   "title": "掠孤充死士的旧档",
+   "trigger": "医者替伤者诊治时取下刻着儿时名讳的金锁残片，而掌柜身上带着暗门当年掠孤女充死士的底档。"
+  },
+  {
+   "choice": "出声掩护，还是出手引开。",
+   "exits": [
+    {
+     "cost": "缇骑踹门进来盘问搜身。",
+     "option": "{player.name}假作避雨客高声吟诗、敲木鱼，医者趁声响下完最后一刀"
+    },
+    {
+     "cost": "钟楼上藏了人的痕迹露了出来。",
+     "option": "请廊下的人用飞石打落檐角瓦当引开缇骑，医者接着清创"
+    },
+    {
+     "cost": "伤者冷汗浸透衣襟，{player.name}的袖口被咬出了血印。",
+     "option": "让伤者咬住{player.name}的衣袖，等一声雷响盖过去，再请医者敷药止血"
+    }
+   ],
+   "far": {
+    "consequence": "百户每夜派人守在暖阁门外。",
+    "due_days": 10,
+    "trigger": "偏殿被盯上"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [
-    "h_wanxue_sword_neck_confrontation_whispe",
-    "h_wanxue_bare_shoulder_clench_wrist_whis"
+    "hook_shen_brazier_glare",
+    "hook_shen_hairpin_ask",
+    "hook_shen_locket_gift"
    ],
-   "id": "p_poison_spreading_paralysis_clock",
+   "id": "p_groan_draws_patrol",
    "immediate": {
-    "minutes": 10,
-    "text": "创口周围两寸皮肉已化为青紫死黑之色，腥臭毒血不住渗出，刺客四肢开始剧烈抽搐痉挛。"
+    "minutes": 3,
+    "text": "门外脚步停在一尺外，刀鞘碰了一下门框。"
    },
    "leverage": null,
    "location_ids": [
     "ancient_temple_side_hall_warm_room"
    ],
    "near": {
-    "deadline_minutes": 20,
-    "text": "若未能在一刻钟内起出带倒钩之铁钉，毒素将彻底侵蚀后心大穴导致心脉断裂溘然长逝。"
+    "deadline_minutes": 30,
+    "text": "缇骑若起疑，会叫人回来搜偏殿。"
    },
-   "objective": "在十分钟内由青年医者以烈火淬过之柳叶刀剜开血肉起出透骨铁钉，并敷满雄黄止血散稳固经络。",
+   "objective": "让缇骑走开，医者手上的刀不能停。",
    "source": "person",
-   "start_minute": 1385,
+   "start_minute": null,
    "tags": [
-    "violence",
     "bodily_harm"
    ],
-   "title": "透骨钉腐骨乌头剧毒入心脉倒数死线",
-   "trigger": "后背透骨钉所淬西域腐骨乌头剧毒正在经脉中极速蔓延，刺客半边身躯陷入麻木冰凉，呼吸急促面色惨白，若不在此刻割除死肉拔钉逼毒，两刻钟内剧毒侵入心包神仙难救。"
+   "title": "拔毒时廊下有人",
+   "trigger": "银刀挑出毒钉的一刻，伤者咬着棉巾仍漏出一声闷哼，回廊下巡逻的缇骑按刀停步。"
   },
   {
-   "choice": "是冒险开门周旋制造假象，还是在门后备齐短刃准备鱼死网破？",
+   "choice": "当众压谣言，还是转移众人的注意。",
    "exits": [
     {
-     "cost": "医者右手手背被恶犬隔空抓破三道深长血槽鲜血淋漓受石灰反蚀。",
-     "option": "医者将整罐刺鼻雄黄生石灰顺着窗棂缝隙猛力洒向恶犬面门"
+     "cost": "百户更断定偏殿的人身价不凡。",
+     "option": "请推官当众厉声斥责手下妄议大案"
     },
     {
-     "cost": "强行提气震裂后背刚止血之创口乌血再度渗出内力剧烈反噬。",
-     "option": "女刺客拔下发间乌木簪隔着门缝以弹指神通贯穿领头恶犬天灵盖"
+     "cost": "遗墨被百户当场夺去撕毁。",
+     "option": "{player.name}拿出一幅旧日相府的遗墨，把话题引向朝廷平反"
+    },
+    {
+     "cost": "打草惊蛇，和东厂提前撕破脸。",
+     "option": "{player.name}按剑踏出殿门，剑气扫过石阶，震住满殿议论"
     }
    ],
    "far": {
-    "consequence": "女刺客受伏被擒医者当场斩首株连三族。",
-    "due_days": 1,
-    "trigger": "偏殿门扉被破全员落入缇骑刀网与猎犬利齿。"
+    "consequence": "魏党派人南下灭口。",
+    "due_days": 30,
+    "trigger": "相府余孤的消息传进京"
    },
    "flags": [
     "timed"
    ],
-   "hook_ids": [
-    "h_zhao_hound_shout_arson_threat",
-    "h_huitong_staff_ground_strike_buddha"
-   ],
-   "id": "p_hound_scent_tracking_siege",
+   "hook_ids": [],
+   "id": "p_true_name_overheard",
    "immediate": {
-    "minutes": 10,
-    "text": "猎犬粗暴的抓门撞击声近在咫尺，门缝透入跳动刺目的火把光影，绣春刀鞘撞击甲片之声令人心惊胆战。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "ancient_temple_side_hall_warm_room"
-   ],
-   "near": {
-    "deadline_minutes": 20,
-    "text": "若未能在一刻钟内阻断猎犬嗅觉定位，缇骑将全面强攻砸碎木门万箭齐发。"
-   },
-   "objective": "在十分钟内以雄黄药粉、陈年香灰与烈酒沿门泼洒彻底掩盖血腥气味，并由医者假借留宿香客之名虚与委蛇。",
-   "source": "person",
-   "start_minute": 1400,
-   "tags": [
-    "violence",
-    "bodily_harm"
-   ],
-   "title": "东厂血滴子猎犬循血围寺合围危局",
-   "trigger": "东厂两头体型硕大的纯黑猎犬顶着暴雨狂嗅地面残血，一路狂吠逼近古庙后进偏殿，缇骑火把已将前殿门廊围得水泄不通，距破门仅剩最后半柱香。"
-  },
-  {
-   "choice": "是强顶坍塌风险冒险快速穿过，还是在暖阁固守等待雨势平息？",
-   "exits": [
-    {
-     "cost": "武僧左肩琵琶骨遭受重木万斤冲击严重挫伤骨裂吐血不止。",
-     "option": "武僧以血肉之躯死死抗住下坠断梁为众人换取通过时机"
-    },
-    {
-     "cost": "医者后背被数块尖锐碎瓦重重砸中留下大片青紫淤血挫伤。",
-     "option": "医者将虚弱刺客紧紧横抱在怀中冒着漫天落石飞步狂奔穿过废墟"
-    }
-   ],
-   "far": {
-    "consequence": "生路断绝全员葬身坍塌废墟无一生还。",
-    "due_days": 1,
-    "trigger": "大殿彻底崩塌活埋全员于断壁残垣深处。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "h_huitong_staff_ground_strike_buddha",
-    "h_chufeng_sword_clash_shout_standoff"
-   ],
-   "id": "p_temple_timber_roof_collapse_risk",
-   "immediate": {
-    "minutes": 10,
-    "text": "头顶不断砸落数斤重之碎砖断瓦，尘土泥浆混合着雨水倾盆浇下，立柱倾斜幅度达两尺。"
+    "minutes": 5,
+    "text": "篝火边一下静了，百户从神龛后踱出来。"
    },
    "leverage": null,
    "location_ids": [
     "main_shrine_collapsed_nave"
    ],
    "near": {
-    "deadline_minutes": 20,
-    "text": "若未能在一刻钟内转移伤患，主梁折断带来的数万斤巨石泥土将把整个后殿彻底掩埋成一座巨大废墟坟冢。"
+    "deadline_minutes": 60,
+    "text": "谣言传到山门外强弩营只要一顿饭工夫。"
    },
-   "objective": "在十分钟内穿过危险坍塌区转移至地基坚固之枯井后院，避开乱石落顶。",
-   "source": "nature",
-   "start_minute": 1435,
+   "objective": "把这话压下去，别让百户认定偏殿的人奇货可居。",
+   "source": "rumor",
+   "start_minute": null,
    "tags": [
-    "disaster",
-    "bodily_harm"
+    "violence"
    ],
-   "title": "风雨侵蚀百年古刹横梁断裂崩塌危机",
-   "trigger": "大雄宝殿被雷火击中的粗大承重楠木横梁在连绵暴雨重压下发出沉闷开裂声，万斤残瓦碎石随时可能彻底垮塌，砸碎通往偏殿暖阁之必经回廊。"
+   "title": "正殿里漏了真名",
+   "trigger": "推官的随行捕快低声说偏殿那位可能是当年相府的千金，话音落进神龛后百户的耳朵。"
   },
   {
-   "choice": "是立刻解缆在激流险滩中舍命漂流，还是在没膝泥水中涉水强行攀爬出井？",
+   "choice": "依律扣押总账，还是官府江湖分着拿。",
    "exits": [
     {
-     "cost": "长剑受激流冲击剑刃震颤受损游侠虎口崩裂鲜血淋漓。",
-     "option": "游侠剑客一剑斩断受力绷紧之粗大系缆让木筏顺流疾冲而出"
+     "cost": "撕破脸，面对百名缇骑围剿。",
+     "option": "请推官以提刑令扣押总账，当众斩断悬赏牌"
     },
     {
-     "cost": "长篙断裂反震医者胸口肋骨险些骨折一口气血涌上咽喉。",
-     "option": "医者以沉重长篙死死撑住湿滑石壁修正航向避开尖锐水下暗礁"
+     "cost": "刺客得隐姓埋名，永远离开江南。",
+     "option": "抄本交给掌柜送东林书院，原本由御史直送通政司"
+    },
+    {
+     "cost": "副卷上的几名从犯被百户灭口顶功。",
+     "option": "交出无关紧要的副卷引开追兵，真账与刺客走枯井"
     }
    ],
    "far": {
-    "consequence": "密道沦为水冢英雄侠女沉底陨落无声。",
-    "due_days": 1,
-    "trigger": "地道彻底注满山洪全员溺亡于深山地底。"
+    "consequence": "魏党抢先销毁原账、反告御史诬陷。",
+    "due_days": 20,
+    "trigger": "总账副本流到京里"
    },
    "flags": [
     "timed"
    ],
-   "hook_ids": [
-    "h_chufeng_sword_clash_shout_standoff",
-    "h_wanxue_sword_tassel_pledge_whisper"
-   ],
-   "id": "p_mountain_torrent_tunnel_inundation",
+   "hook_ids": [],
+   "id": "p_bounty_vs_ledger",
    "immediate": {
-    "minutes": 10,
-    "text": "浑浊汹涌之冰冷山洪已没过脚踝正咆哮盘旋形成致命漩涡，狂风裹挟着腥臭泥浆疯狂灌入石洞深处。"
+    "minutes": 5,
+    "text": "如意牌拍在供桌上，满殿的人都看向偏殿的门。"
    },
    "leverage": null,
    "location_ids": [
-    "back_courtyard_dry_well_tunnel"
+    "main_shrine_collapsed_nave"
    ],
    "near": {
-    "deadline_minutes": 20,
-    "text": "若未能在一刻钟内驾筏脱离，暗道将被山洪彻底淹没形成真空死水牢笼将全员活活溺死。"
+    "deadline_minutes": 300,
+    "text": "天亮搜殿前不定下总账归属，百户就动手抢。"
    },
-   "objective": "在十分钟内登上停泊在深水台之杉木排筏并斩断系缆，顺流直下冲出狭窄水门。",
-   "source": "nature",
-   "start_minute": 35,
+   "objective": "保住总账，也别让悬赏令把寺里的人拆散。",
+   "source": "institution",
+   "start_minute": null,
    "tags": [
-    "disaster",
-    "bodily_harm"
+    "crime"
    ],
-   "title": "山洪暗涌倒灌枯井地道灭顶水患死线",
-   "trigger": "后山山洪冲垮蓄水大坝，狂暴浑浊之山洪泥流正顺着泄洪地道反向倒灌漫过石阶，暗河水位每炷香暴涨两尺，即将彻底注满狭窄石窟密道。"
+   "title": "悬赏令与总账",
+   "trigger": "百户亮出五万两赏银加封千户的如意牌，许人平分富贵，而刺客身上的总账是定罪阉党的唯一死证。"
   },
   {
-   "choice": "是顶着烈焰硬冲正面火网斩杀百户，还是破开后窗跳入泥潭潜行？",
+   "choice": "往高处躲，还是筑坎守住偏殿。",
    "exits": [
     {
-     "cost": "医者双手前臂被猛火灼伤起大面积水泡焦黑脱皮受剧痛折磨，分秒都耽搁不起。",
-     "option": "医者以草席裹挟湿泥奋不顾身扑打阻断门缝引火之猛火油，再没有第二次机会。"
+     "cost": "沉重的行囊和兵刃都得丢在殿里。",
+     "option": "跟行者攀上钟楼避水，沿悬崖缓降到后山竹海"
     },
     {
-     "cost": "强催内力导致女刺客后背伤口崩裂鲜血狂喷染透整幅衣襟，退路已经断了。",
-     "option": "女刺客隔着窗棂一记无相秋水飞剑隔空刺穿领头纵火缇骑咽喉，只争眼前这一刻。"
+     "cost": "全员被泥水冻透、耗尽气力。",
+     "option": "众人搬塌落的条石筑坎，守住偏殿暖阁"
+    },
+    {
+     "cost": "暗河水急，随时可能翻船触礁。",
+     "option": "全员转到后殿枯井平台，备船走暗河"
     }
    ],
    "far": {
-    "consequence": "偏殿化为灰烬密账化为青烟忠良昭雪无望。",
-    "due_days": 1,
-    "trigger": "全员被火海彻底吞噬葬身火海。"
+    "consequence": "山里存粮见底，人心开始乱。",
+    "due_days": 15,
+    "trigger": "石桥半月内修不起来"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_flood_breaks_bridge",
+   "immediate": {
+    "minutes": 10,
+    "text": "泥水漫过门槛，篝火嗤地灭了一半。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "main_shrine_collapsed_nave"
+   ],
+   "near": {
+    "deadline_minutes": 120,
+    "text": "再过一个时辰，偏殿暖阁也要进水。"
+   },
+   "objective": "让所有人有一处干地方熬过今夜。",
+   "source": "nature",
+   "start_minute": null,
+   "tags": [
+    "disaster"
+   ],
+   "title": "山洪冲进正殿",
+   "trigger": "梅雨暴发山洪，泥流冲垮下山的唯一石桥，漫过正殿门槛，殿里的冷水越涨越深。"
+  },
+  {
+   "choice": "施针护心，还是用药化毒。",
+   "exits": [
+    {
+     "cost": "医者耗尽气力，手指发颤。",
+     "option": "请医者施还阳九针封住心脉，{player.name}裹着棉被抱住伤者取暖，再喂一碗姜汤"
+    },
+    {
+     "cost": "剑客内力去了一半，突围时拔不了全力的剑。",
+     "option": "喂下暗门的护心丹，再请医者施针、剑客以内力助药化开"
+    },
+    {
+     "cost": "浓烟穿过破瓦，引来殿外缇骑注意。",
+     "option": "拆木梁生起旺火，请医者彻夜清洗脓血，{player.name}轮流换水冷敷"
+    }
+   ],
+   "far": {
+    "consequence": "伤者半月里每逢阴雨就旧伤复发。",
+    "due_days": 30,
+    "trigger": "毒根留在血里"
    },
    "flags": [
     "timed"
    ],
    "hook_ids": [
-    "h_zhao_hound_shout_arson_threat",
-    "h_wanxue_bare_shoulder_clench_wrist_whis"
+    "hook_shen_brazier_glare",
+    "hook_shen_hairpin_ask",
+    "hook_shen_locket_gift"
    ],
-   "id": "p_dongchang_arson_fire_wall_standoff",
+   "id": "p_poison_fever_chill",
    "immediate": {
     "minutes": 10,
-    "text": "暖阁木质墙壁已被烈火烧得通红噼啪爆响，浓烟呛人窒息，室内氧气急剧消耗几近昏厥。"
+    "text": "伤者牙关打战，棉被裹了两层还在发抖。"
    },
    "leverage": null,
    "location_ids": [
     "ancient_temple_side_hall_warm_room"
    ],
    "near": {
-    "deadline_minutes": 20,
-    "text": "若未能在一刻钟内冲出火海，全员将在烈焰与剧毒浓烟中被活活窒息烧死化为焦炭骸骨。"
+    "deadline_minutes": 30,
+    "text": "半个时辰里压不住高热，毒就攻心。"
    },
-   "objective": "在十分钟内以湿棉被破开火网冲入后院，同时由游侠突袭斩断弓弩阵列护卫伤患。",
-   "source": "person",
-   "start_minute": 75,
+   "objective": "把人从鬼门关拉回来，守到天亮。",
+   "source": "accident",
+   "start_minute": null,
    "tags": [
-    "violence",
     "bodily_harm"
    ],
-   "title": "东厂百户泼油纵火焚庙烈焰死线",
-   "trigger": "东厂百户见搜查受阻恼羞成怒，下令向暖阁四壁泼洒猛火油并射入数十枚引火火箭，火势借着狂风瞬间熊熊燃起，烈焰与滚滚浓烟封死全部门窗退路。"
-  },
-  {
-   "choice": "是用软剑配合长剑两翼包抄近身格杀，还是引爆随身火药制造烟幕强行冲卡？",
-   "exits": [
-    {
-     "cost": "游侠内力反震激荡经脉受创吐出一小口鲜血染红衣襟，这一回刻不容缓。",
-     "option": "游侠运起纯阳内力一剑挑断两副生铁连枷合力震退敌酋，没人能替你决定。"
-    },
-    {
-     "cost": "药散反扑入眼导致医者双目灼痛流泪视线短暂模糊，分秒都耽搁不起。",
-     "option": "医者顺手抓起药箱中备用雄黄辛辣药散迎面洒出迷住追兵双眼，再没有第二次机会。"
-    }
-   ],
-   "far": {
-    "consequence": "功亏一篑全员力竭喋血荒山古道。",
-    "due_days": 1,
-    "trigger": "卫所大军赶到合围竹林插翅难飞。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [
-    "h_zhao_hound_shout_arson_threat",
-    "h_wanxue_sword_tassel_pledge_whisper"
-   ],
-   "id": "p_dawn_ambush_ravine_final_standoff",
-   "immediate": {
-    "minutes": 10,
-    "text": "晨光中绣春刀寒芒森森，百户双目猩红状若疯癫，长刀横在谷口咽喉要道狂叫受死。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "back_courtyard_dry_well_tunnel"
-   ],
-   "near": {
-    "deadline_minutes": 15,
-    "text": "十五分钟内若不能斩杀敌酋，其发射之穿云鸣镝将引来山下驻防卫所官军大队合围截杀。"
-   },
-   "objective": "在十五分钟内由刺客与游侠合力击溃残敌斩杀百户，彻底斩草除根解除后顾之忧。",
-   "source": "person",
-   "start_minute": 110,
-   "tags": [
-    "violence",
-    "bodily_harm"
-   ],
-   "title": "破晓谷口险隘残存追兵绝命截杀",
-   "trigger": "暗河木排冲出地道出口落入山谷缓滩，东厂百户带伤纠集最后四名精锐死士在必经竹林谷口架设铁蒺藜与绊马索，拔出绣春刀准备做最后困兽决死截击。"
+   "title": "拔钉后的高热寒战",
+   "trigger": "毒钉挑出了，乌头毒却已入血，刚敷药的伤者寒战不止、高热昏沉，脉象细得像一根游丝。"
   }
  ],
- "region": "浙闽交界万亩翠竹深山中被山洪断道的荒废兰若古刹断壁暖阁与后殿枯井密道",
+ "region": "浙闽交界翠竹深山里被山洪断道的兰若古寺",
  "rules": [
   {
-   "id": "r_assassin_creed_silence_code",
-   "text": "暗门门规铁律：凡目睹天字号杀手褪衣疗伤或真容者，若非生死同盟盟友，必须当场断其右手或挑断手筋以防暗号外泄。"
+   "id": "r_temple_no_blood_in_hall",
+   "text": "古寺规矩：正殿佛前不许见血，动刀动针都得去偏殿或后院。"
   },
   {
-   "id": "r_poisoned_nail_flesh_necrosis_clock",
-   "text": "东厂透骨钉淬有西域腐骨乌头剧毒，入肉超过两刻钟毒素必顺经脉侵入心包，非以锋刃挖除烂肉并敷以雄黄金疮散不可解。"
+   "id": "r_censor_tablet",
+   "text": "巡按宪牌在场，东厂拿人须先报推官勘验；越权拿人要被参本。"
   },
   {
-   "id": "r_flash_flood_ravine_quarantine",
-   "text": "江南梅雨引发深谷山洪暴涨三丈，古庙前山独木栈桥与石梁尽皆冲毁，在天明水退之前方圆五里之内插翅难飞。"
+   "id": "r_shadow_gate_oath",
+   "text": "暗门死士不报真名，叫破真名的人，按门规要么入门，要么灭口。"
   },
   {
-   "id": "r_dongchang_hound_tracking_range",
-   "text": "东厂血滴子猎犬在暴雨中嗅觉虽受压制，但只要嗅到生人鲜血腥味便会在半炷香内引缇骑围困古庙四门。"
+   "id": "r_bounty_writ",
+   "text": "东厂悬赏令写明：交出刺客者领赏，藏匿者与刺客同罪。"
   }
  ],
  "schema_version": 1,
  "stage_labels": {
-  "acquainted": "软剑入鞘",
-  "committed": "破晓同袍",
-  "familiar": "解衣疗伤",
-  "flirting": "灯下换药",
-  "intimate": "破晓交心",
-  "stranger": "剑拔弩张",
-  "testing": "心防质询"
+  "acquainted": "檐下点头",
+  "committed": "剑穗相许",
+  "familiar": "同檐避雨",
+  "flirting": "灯下试探",
+  "intimate": "暖阁私情",
+  "stranger": "萍水相逢",
+  "testing": "刀锋相向"
  },
  "status": "released",
- "style_hint": "女刺客身着紧身玄色夜行水靠劲装，雨水湿透衣料，一柄百炼秋水软剑寒芒吞吐，因后背剧毒而下唇咬破渗血。为保命不得不褪下半边肩袖由青年医者挑钉，刀尖与杀意只隔一寸，雨声、雷声与压抑的闷哼在暖阁里交织。",
+ "style_hint": "古典武侠白话，句子短，多写雨声、火光、药气和衣料的湿冷；情意藏在动作里，刀光不渲染血腥。",
  "tension_engines": [
   {
-   "id": "te_assassin_pride_vs_bare_shoulder_cure",
-   "text": "冷艳绝顶刺客孤傲绝伦之名节防备与后背剧毒透骨钉非褪下半肩黑衣由青年医者近身挑肉不可活之极度羞耻滚烫对冲。"
+   "id": "te_true_name",
+   "text": "刺客的真名被叫破，认与不认，都要有人付代价。"
   },
   {
-   "id": "te_toxic_nail_necrosis_vs_life_death_cou",
-   "text": "腐骨乌头剧毒顺经络寸寸侵入心包之窒息灭顶死线与屋外暴风雨山洪断道仅存一炷香自救时间极速赛跑。"
+   "id": "te_bounty_siege",
+   "text": "东厂五万两悬赏压在寺门口，天亮就要搜殿。"
   },
   {
-   "id": "te_dongchang_siege_arson_vs_warm_room_sh",
-   "text": "东厂缇骑恶犬围困纵火焚庙之灭门危机与破庙暖阁残壁断梁内狭窄孤岛相依求生之绝境周旋。"
+   "id": "te_ledger_claim",
+   "text": "魏党受贿总账只有一本，官府、江湖和东厂都要它。"
   },
   {
-   "id": "te_blade_neck_standoff_vs_flesh_blood_sy",
-   "text": "软剑横颈剑拔弩张之生死猜忌与刮骨疗毒肌肤相贴感知对方坚实心跳后防线彻底崩解沦陷。"
+   "id": "te_flood_cut",
+   "text": "山洪冲断石桥，出山只剩后殿枯井下的暗河。"
   }
  ],
  "title": "破庙拔毒女刺客",
  "tone": [
-  "梅雨破庙孤岛",
-  "夜行衣褪半肩",
-  "后背挑钉敷药",
-  "软剑横颈理智对峙"
+  "梅雨不歇的残殿",
+  "一盏如豆油灯",
+  "叫破的真名",
+  "刮骨疗毒的近身",
+  "官与江湖的账"
  ],
  "twists": [
   {
-   "category": "信息",
-   "id": "t_assassin_1",
-   "requires": [],
-   "text": "枯井地道暗设直通后山绝壁竹林泄洪石闸：青年医者在包扎伤口时认出暖阁石壁上刻有祖传医经暗记，证实古庙枯井乃前朝工部依水脉建造之泄洪暗道，直通后山竹林避难缓滩。全员无需冒险强闯被缇骑重兵封锁的前山栈道，直接获得一条避开敌军耳目顺水潜行脱险的绝对安全生命通路。"
-  },
-  {
-   "category": "人事",
-   "id": "t_assassin_2",
-   "requires": [],
-   "text": "刺客所携密账赫然记录追捕百户贪墨死罪：刺客展开怀中染血羊皮密账，当众宣读东厂百户私吞两淮盐税数十万两并在海外购置暗庄之确凿真凭实据。随行缇骑当场认清百户借公谋私杀人灭口之险恶用心，军心大溃不听调遣，追兵阵营陷入内讧分崩离析。"
-  },
-  {
-   "category": "资源",
-   "id": "t_assassin_3",
-   "requires": [],
-   "text": "石窟暗格起获百年前少林神僧秘藏之九转断续生肌膏：在挪动佛龛残破石座时，意外发现暗格内完好封存着一整坛陈年药用烈酒与三盒未受潮之特级断续生肌灵药。困扰全员长达数个时辰的透骨剧毒与伤口溃烂死线全盘化解，女刺客内力得到立竿见影之强效复苏。"
-  },
-  {
    "category": "制度",
-   "id": "t_assassin_4",
-   "requires": [],
-   "text": "江南巡按御史巡查大军已至山下封锁要道：剑客点燃正派鸣镝烟火，山下官道立时升起巡按八府巡抚大军营地火把，证实清流御史已率三千精锐铁骑抵进接应。东厂私自越境捕杀之非法勾当彻底暴露于国法重器之下，百户彻底丧失假借官威施暴之全部法理依仗。"
+   "id": "tw_ledger_sent_capital",
+   "requires": [
+    "cold_assassin_shen_wanxue",
+    "physician_lu_qingya",
+    "censor_aide_judge_lu"
+   ],
+   "text": "{censor_aide_judge_lu.name}加盖巡按官印，把{cold_assassin_shen_wanxue.name}的总账与{physician_lu_qingya.name}的血书连夜发往京师，魏党在浙闽的爪牙被连根拔起，刺客终获追复原名。"
   },
   {
-   "category": "时限",
-   "id": "t_assassin_5",
-   "requires": [],
-   "text": "特大梅雨雷暴在拂晓时分骤停放晴山洪平息：狂暴暴雨在清晨五点整奇迹般彻底退散，江南千重竹海迎来万里澄澈晨曦，山洪退入平水期开辟坦途。原本迫在眉睫的山洪灭顶与栈桥冲毁死线彻底化险为夷，全员迎来视野极佳、退路通畅之绝佳脱困时机。"
-  },
-  {
-   "category": "关系",
-   "id": "t_assassin_6",
-   "requires": [],
-   "text": "医者祖传药箱铜牌实为刺客早年救命恩物：在清创敷药时，刺客认出医者药箱底层烙印之‘济世回春’回形纹铜印，赫然正是当年其重伤垂危时施救老神医之随身印鉴。多年江湖恩义在患难破庙中轰然相认，彻底熔断彼此身份猜忌与杀手防备，升华为生死相托之知心挚爱。"
+   "category": "信息",
+   "id": "tw_zhao_retreats_letter",
+   "requires": [
+    "ruthless_dongchang_commander_zhao",
+    "teahouse_contact_madam_liu"
+   ],
+   "text": "{teahouse_contact_madam_liu.name}亮出截下的密函，{ruthless_dongchang_commander_zhao.name}只得下令缇骑撤出古寺，不敢再拦众人下山，自己却连夜潜逃成了朝廷与江湖的通缉犯。"
   },
   {
    "category": "意外",
-   "id": "t_assassin_7",
-   "requires": [],
-   "text": "大殿万斤生铁古钟坠落精准砸碎东厂重弩战阵：大雄宝殿高处受风雨侵蚀断裂之万斤生铁古钟轰然砸落，精准将东厂伏在廊下的六名连环硬弩重装射手连同兵刃砸成铁泥废铁。致命远程弓弩封锁威胁被天地巧合瞬间全盘清除，全员顺理成章借由烟尘屏障安全遁入后院枯井。"
+   "id": "tw_huitong_holds_steps",
+   "requires": [
+    "righteous_young_monk_huitong"
+   ],
+   "text": "{righteous_young_monk_huitong.name}在后山石阶前一杖震断东厂先锋的硬弩，保住了枯井暗道，古寺正殿却在缠斗中彻底塌毁。"
+  },
+  {
+   "category": "资源",
+   "id": "tw_boat_through_mountain",
+   "requires": [
+    "cold_assassin_shen_wanxue",
+    "teahouse_contact_madam_liu"
+   ],
+   "text": "众人护着拔毒初愈的{cold_assassin_shen_wanxue.name}登上暗河小舟，顺洪流穿山而出，避开前山埋伏，{teahouse_contact_madam_liu.name}的竹林茶寮却被一把火烧尽。"
+  },
+  {
+   "category": "人事",
+   "id": "tw_shen_breaks_sword",
+   "requires": [
+    "cold_assassin_shen_wanxue",
+    "teahouse_contact_madam_liu"
+   ],
+   "text": "{cold_assassin_shen_wanxue.name}当着{teahouse_contact_madam_liu.name}的面以指震断折梅软剑，宣告与暗门恩断义绝，从此只做寻常女子，用回自己的本名。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_liu_cut_rope_on_purpose",
+   "requires": [
+    "teahouse_contact_madam_liu",
+    "cold_assassin_shen_wanxue"
+   ],
+   "text": "原来暗河的缆绳是{teahouse_contact_madam_liu.name}故意割断的：掌柜早看出{cold_assassin_shen_wanxue.name}想独自走，留下所有人困一夜，就是要逼{cold_assassin_shen_wanxue.name}把真心话说出口。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_zhao_pulls_sentries",
+   "requires": [
+    "ruthless_dongchang_commander_zhao"
+   ],
+   "text": "人前{ruthless_dongchang_commander_zhao.name}喝令搜山，人后却把枯井一线的岗哨悄悄撤走；这位百户在给自己找新靠山，也给偏殿留了一条活路。"
+  },
+  {
+   "category": "时限",
+   "id": "tw_dawn_ferry_choice",
+   "requires": [
+    "cold_assassin_shen_wanxue"
+   ],
+   "text": "梅雨骤歇，晨光照亮暗河出口的野渡，{cold_assassin_shen_wanxue.name}换了一身粗布衣立在船头回望，你得决定是随船泛舟太湖，还是留下替天下洗冤。"
   }
  ]
 }

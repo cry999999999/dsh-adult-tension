@@ -2,28 +2,28 @@
 
 # 世界列表
 
-内容版本：`2026.10.26`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。
+内容版本：`2026.10.27`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。
 
 | 内容标签 | ID | 已发布世界数 |
 |---|---|---|
-| 轻度暧昧 | `romance_light` | 31 |
-| 亲密 | `intimate` | 200 |
+| 轻度暧昧 | `romance_light` | 32 |
+| 亲密 | `intimate` | 201 |
 | 直白的性描写 | `explicit` | 11 |
-| 暴力 | `violence` | 84 |
-| 胁迫 | `coercion_theme` | 65 |
-| 羞辱 | `humiliation` | 48 |
-| 身体伤害 | `bodily_harm` | 101 |
-| 酒精与药物 | `substance` | 51 |
+| 暴力 | `violence` | 82 |
+| 胁迫 | `coercion_theme` | 63 |
+| 羞辱 | `humiliation` | 45 |
+| 身体伤害 | `bodily_harm` | 98 |
+| 酒精与药物 | `substance` | 47 |
 | 怀孕 | `pregnancy` | 0 |
-| 死亡 | `death` | 46 |
-| 职场权力关系 | `workplace_power` | 130 |
+| 死亡 | `death` | 43 |
+| 职场权力关系 | `workplace_power` | 131 |
 | 出轨 | `infidelity` | 2 |
 | 违法犯罪 | `crime` | 115 |
 | 赌博 | `gambling` | 6 |
-| 职场 | `workplace` | 162 |
+| 职场 | `workplace` | 159 |
 | 夜生活 | `nightlife` | 11 |
 | 超自然 | `supernatural` | 27 |
-| 灾难 | `disaster` | 147 |
+| 灾难 | `disaster` | 142 |
 | 自定义 | `custom` | 0 |
 
 | 世界 | ID | 一句话 | 模式 | 状态 |
@@ -32,14 +32,14 @@
 | 九十九层的吊篮 | `abyss_dungeon_exiled_saintess` | 被教廷流放的高阶圣女，押解途中被安置在深渊九十九层的开采竖井营地。 | 日常、有压力 | released |
 | 受审的高傲女骑士 | `abyssal_dungeon_knightess_crest` | 低魔黑暗帝国北境的黑曜石要塞。 | 日常、有压力 | released |
 | 不肯签字的女飞官 | `aerospace_simulator_pod_gauge_release` | 商业航天测控基地的总装大厅里，悬空的全动模拟飞行球舱日夜运转。 | 日常、有压力 | released |
-| 被绑发带女会长 | `afterschool_cellar_president_confession` | 名门私立大学的旧校舍下个月就要拆，研究生会女会长带着人在地下钟楼的备品地窖里清查历年账目，一箱一箱翻到深夜，账目里有几笔怎么也对不上。 | 日常、有压力 | released |
+| 被绑发带女会长 | `afterschool_cellar_president_confession` | 2002 年秋末，名门私立圣罗兰大学的百年西洋旧校舍即将拆除、改建新礼堂。 | 日常、有压力 | released |
 | 秘药高热女首席 | `alchemy_archive_potion_backlash` | 皇家魔导院地下的禁忌炼药暗室里，冷面首席魔导师带着后辈搭档复原一种古代共鸣秘药，已经熬了大半年：白天授课、审稿，夜里守着琉璃导管看药色。 | 日常、有压力 | released |
 | 禁触的雪线圣女 | `alpine_sanctuary_dagger_rescue` | 海拔四千米的雪线神殿一年只在夏秋开山，朝圣者踏着冰阶上来求一句降福。 | 日常、有压力 | released |
 | 流沙殿摸金女魁 | `ancient_tomb_gravity_sand_spill` | 军阀混战的年头，发丘摸金世家的女掌门受雇带队探一座前朝皇陵，督军府派了工兵团跟着，名为护送，实为盯梢。 | 日常、有压力 | released |
 | 防弹密室女军火商 | `arms_dealer_heiress_yacht_standoff` | 军工联合体家族的掌舵女继承人，带着贴身保镖队长、轮机部大管轮和随船医护官，乘六十米长的私人防暴游艇在南太平洋公海上洽谈防空算力核心的跨国交割，一走就是十天。 | 日常、有压力 | released |
 | 揭幕前的修复师 | `art_restorer_roller_piercing_jam` | 国家博物馆的宋画特展即将揭幕，首席古画修复师每天在悬空全景玻璃中庭里为国宝宋画做最后的展前全色与托裱核验，中庭技术总调度、修复副手与展柜技师在旁协同。 | 日常、有压力 | released |
 | 艺术季的酒局 | `art_season_studios` | 两周的艺术季，旧厂区里的工作室、排练厅、版画工作坊和一间开到凌晨的酒吧挤在一起；合作与竞争都发生在所有人都看得见的地方。 | 日常、有压力 | released |
-| 破庙拔毒女刺客 | `assassin_rainy_temple_ointment` | 明末江南，浙闽交界的深山里有一座荒废的古庙。 | 日常、有压力 | released |
+| 破庙拔毒女刺客 | `assassin_rainy_temple_ointment` | 浙闽交界的翠竹深山里，一座荒废的兰若古寺立在悬崖断壁边。 | 日常、有压力 | released |
 | 摘星楼漏刻女官 | `astronomer_observatory_lightning_blind` | 开元年间，钦天监的女官管漏刻，每夜从摘星楼报出时辰，长安一百零八坊的更鼓跟着响；灵台郎管浑天仪的水运机械，齿轮慢一刻，全城的时辰就错一刻。 | 日常、有压力 | released |
 | 落槌后的女拍卖师 | `auctioneer_heiress_vault_heist_lock` | 城中最古老的跨国艺术品拍卖行，正值一年一度最热闹的秋拍夜场。 | 日常、有压力 | released |
 | 幕末微醺的艺伎 | `bakumatsu_machiya` | 文久三年的京都，时局一夜三变；町人、浪士、藩士、艺人住在同一条町上，礼法之下各有去处。 | 日常、有压力 | released |
@@ -55,36 +55,36 @@
 | 六叠合租俏青梅 | `childhood_friend_tatami_roomshare` | 同乡的青梅竹马考进了东京的名门大学，常来高円寺这间六叠榻榻米的老公寓蹭饭、借书，嘴上毒舌，从不留宿。 | 日常、有压力 | released |
 | 地下救护所女牧师 | `cleric_bunker_sanctuary_overload` | 边境前线一座钟楼半塌的村庄礼拜堂，地下墓室改成了野战救护所。 | 日常、有压力 | released |
 | 发条马戏的伶人 | `clockwork_circus` | 马戏团是一个家，也是一座笼子；第七夜拆帐篷的时候，谁跟着走，谁留下？ | 日常、有压力 | released |
-| 讲台急升的主席 | `cold_president_podium_harness_jam` | 千人大礼堂的迎新典礼还有三天，清冷威严的研究生会主席每天站在主舞台中央排练致辞，舞台机电师和导播台的人被挑剔得团团转。 | 日常、有压力 | released |
+| 讲台急升的主席 | `cold_president_podium_harness_jam` | 顶尖学府的万人大礼堂里，迎新典礼即将开幕，台下坐满成年新生与校领导。 | 日常、有压力 | released |
 | 暗堡进水女报务 | `cold_war_bunker_cipher_incineration` | 冷战年代，华北要塞地下三十米的国防通信暗堡，首席女报务员在机要舱室里值了三年班；保密检查员、勘测技术员和炊事班长是这个月才调下来的。 | 日常、有压力 | released |
 | 战地救护女军医 | `combat_surgeon_bunker_cavein_vigil` | 前线后方的地下野战医院里，清冷寡言的外科女军医白天在帐篷里查房、分药、替伤员读家书，难得在停火的间隙煮一杯苦咖啡。 | 日常、有压力 | released |
 | 霞飞路暗房女谍 | `concession_darkroom` | 1940 年的法租界，霞飞路深处一座老洋房，楼上是名流、遗老、走私商与各方线人交错的画廊沙龙，楼下是弥漫定影液酸涩气息的狭窄暗房。 | 日常、有压力 | released |
 | 冷柜前夜班店员 | `convenience_clerk_cooler_tail_jam` | 杭州大学城商圈的通宵便利店，落地窗亮得像玻璃盒子，夜跑和吃宵夜的年轻人来来往往。 | 日常、有压力 | released |
 | 悬在舷外的女警官 | `cool_detective_shipping_container_rope` | 海关缉私船在远海追踪一艘重型走私货轮已经三天。 | 日常、有压力 | released |
 | 巡林的精灵游侠 | `cool_elven_ranger_tree_hollow_cage_lock` | 世界树下的精灵林城，今年第一次依约允许人类学者与商人在结实季进入根系空腔考察。 | 日常、有压力 | released |
-| 赶工GK的涂装师 | `cool_figure_painter_airbrush_trap` | 文创园区的大型负压喷漆房里，独立手办涂装师在赶一尊限量重工GK的展前涂装，连着熬了五个通宵。 | 日常、有压力 | released |
+| 赶工GK的涂装师 | `cool_figure_painter_airbrush_trap` | 文创园区一栋三层小楼里，防爆灯常年亮着，空气里是硝基漆和香蕉水的清苦味。 | 日常、有压力 | released |
 | 签售会的游戏声优 | `cool_genshin_cosplayer_zipper_trap` | 国际动漫游戏博览会压轴日，特邀嘉宾声优穿着一身重工刺绣的角色战袍在主舞台与签售区之间连轴转，场馆里的应援欢呼声此起彼伏。 | 日常、有压力 | released |
-| 车行里的女机械师 | `cool_mechanic_storm_hangar_rollup_jam` | 海边一座废弃的老机库，被女机械师改成了机车改装工坊，和试车手合伙开店三年，为一台要参加赛季开幕赛的赛车调校数据吵了一整个夏天。 | 日常、有压力 | released |
+| 车行里的女机械师 | `cool_mechanic_storm_hangar_rollup_jam` | 海边一座废弃老机库改成了机车改装工坊，机油味和工具声响了三年。 | 日常、有压力 | released |
 | 冰窖验骨女仵作 | `coroner_court_ice_vault_deadlock` | 贞观年间的盛夏，长安热得井水都发温，大理寺地下十丈的玄武岩冰鉴停尸大堂成了全城最凉的地方。 | 日常、有压力 | released |
 | 登台前的Coser | `cosplayer_dressing_tent_zipper_jam` | 十万人云集的国际动漫盛会首日，主舞台压轴是一位同人圈顶流千金Coser亲手画图、监制的钛铝合金可动翼甲大秀。 | 日常、有压力 | released |
 | 假面蜜月女卧底 | `cruise_spy_honeymoon_suite` | 公海豪华邮轮上，两名受训特工伪装成新婚蜜月夫妇潜入套房窃取微缩胶卷。 | 日常、有压力 | released |
 | 好望角的女轮机长 | `cryogenic_lng_tank_relief_crisis` | 十万吨级LNG运输船驶到好望角外海，海上的日子一晃就是四十七天。 | 日常、有压力 | released |
-| 千米滑坠缆车 | `cyberpunk_neon_elevator_cable_crisis` | 千米高空的跨城穿梭缆车是巨企穹顶集团的命脉。 | 日常、有压力 | released |
-| 深井提升斗女总工 | `deep_pit_quarry_hoist_brake_failure` | 井口灯房的挂牌板上，每个下井的人都挂着一块铜牌，升井才摘。 | 日常、有压力 | released |
+| 千米滑坠缆车 | `cyberpunk_neon_elevator_cable_crisis` | 跨城天轨缆车在酸雨云层间往返，车窗外是巨企核心区的霓虹全息广告，主缆维护预算一季比一季少。 | 日常、有压力 | released |
+| 深井提升斗女总工 | `deep_pit_quarry_hoist_brake_failure` | 深山矿坑的井口灯房里，下井要在木板上挂铜牌，升井摘牌才算活着回来。 | 日常、有压力 | released |
 | 退魔巫女破戒夜 | `defeated_shrine_broken_barrier` | 深山里一座半废的稻荷神社，冷艳的名门巫女长奉命驻守后山结界，寄宿的剑士替神社劈柴挑水，阴阳巡捕奉密令也住了进来。 | 日常、有压力 | released |
 | 停战使节魔军统帅 | `demon_general_sanctuary_barrier_trap` | 圣战打到第四年，魔军与人类圣殿在夏至前后头一回停火议和。 | 日常、有压力 | released |
 | 守至破晓女剑士 | `demon_slayer_kagura_hall_purification` | 明治三十年代初秋，名门退魔女剑士奉命进山清剿大妖，御神刀在恶斗中断成两截，人也中了瘴毒，只好退守山顶一座荒废三百年的古神社。 | 日常、有压力 | released |
 | 坠机边缘女总裁 | `domination_reversal_csuite_jet` | 财阀的冷傲女总裁这一个月都在天上：横跨太平洋的湾流公务机就是移动办公室。 | 日常、有压力 | released |
 | 赶稿暗室女画师 | `doujin_artist_deadline_blackout` | 漫展开展前一周，神级同人女画师在创意园区的复式画室里赶新刊，执委会的场务总监、合志的客座画师和楼下的音乐人邻居轮流上来探班送吃的。 | 日常、有压力 | released |
-| 弑神血旗女团长 | `dragonsfall_blood_banner` | 凡人弑神的年代，第七军团在极北冻原的断角大峡谷扎营，三十六道伏龙钢缆锚着一头坠落的神话古龙，等王都派来的祭司决定是杀是囚。 | 日常、有压力 | released |
+| 弑神血旗女团长 | `dragonsfall_blood_banner` | 极北冻原的断角大峡谷里终年风雪，暗蓝极光压着崖顶。 | 日常、有压力 | released |
 | 暴走的暗精灵斥候 | `drow_scout_ancient_ruins_shelter` | 王立遗迹调查团在地下大迷宫第十层扎营。 | 日常、有压力 | released |
-| 沙暴封窟夜 | `dunhuang_fresco_cave_sandstorm` | 莫高窟九层楼下的职工宿舍区，壁画修复师和岩土工程师隔壁住了两年：一个整天蹲在洞窟里，一笔一笔补盛唐的颜色，一个整天吊在崖顶，打锚杆、灌浆、量裂缝。 | 日常、有压力 | released |
-| 升降台下女指挥 | `elegant_conductor_pit_hydraulic_stall` | 百年国家歌剧院新制作的首演只剩最后三天。 | 日常、有压力 | released |
+| 沙暴封窟夜 | `dunhuang_fresco_cave_sandstorm` | 莫高窟九层楼下的职工宿舍区，壁画修复师和驻窟工程师隔壁住了两年：一个日夜待在洞窟脚手架上，一笔一笔为盛唐壁画做加固与临摹；一个常年巡看洞内温湿度和防沙门。 | 日常、有压力 | released |
+| 升降台下女指挥 | `elegant_conductor_pit_hydraulic_stall` | 百年国家大剧院的金色大厅里，红丝绒座椅在水晶吊灯下静穆肃立。 | 日常、有压力 | released |
 | 宫廷大占星术士 | `elegant_diviner_astrology_tower_clock` | 王都星象学院里有两派：宫廷大占星术士看星象断吉凶，新来的皇家天文学者拿望远镜和算盘算星轨，两人为一部新历法吵了一整季，每晚还得一起登上百米占星台观测。 | 日常、有压力 | released |
-| 悬停电梯的室友 | `elevator_umbrella_tip_brake_release` | 沿海大城市的高层公寓里，两人合租了三年，冰箱上还贴着轮流倒垃圾的值日表，下班后一起去楼下超市、一起搭外挂观光电梯回家。 | 日常、有压力 | released |
+| 悬停电梯的室友 | `elevator_umbrella_tip_brake_release` | 沿海特大城市三十层的高层公寓里，两人合租了三年，冰箱上贴着泛黄的值日表，玄关并排摆着两双拖鞋。 | 日常、有压力 | released |
 | 单膝正骨女祭司 | `elven_priestess_collapsed_sanctuary` | 迷宫都市地下三十三层有一座远古神明圣坛，圣月王庭出身的女祭司长奉命驻守，净化上古秽恶源核。 | 日常、有压力 | released |
 | 嘴硬的马术女骑手 | `equestrian_heiress_stable_fire_trap` | 欧式私人马术庄园里，骄傲又嘴硬的马术千金是俱乐部的头牌女骑手，白天在马场上跳障、喝下午茶，跟庄园的马术兽医斗了一整个夏天的嘴。 | 日常、有压力 | released |
-| 开库日的少夫人 | `estate_vault_lockout_tea_scoop_rescue` | 江南老宅每年六月初六开库晒画，宗亲们坐在中庭里喝茶看画，也盯着这份家产怎么分。 | 日常、有压力 | released |
+| 开库日的少夫人 | `estate_vault_lockout_tea_scoop_rescue` | 太湖之畔的百年深宅，每年六月初六启地库晒画。 | 日常、有压力 | released |
 | 成人礼的礼仪讲师 | `etiquette_podium_magnet_trap` | 千年古书院的明伦堂，一年一度的成人礼大典下周举行，端庄的国学女讲师每天在讲案前排练示范揖礼，副山长、赞礼官和古琴乐师都来看过。 | 日常、有压力 | released |
 | 华盖倾坠伏魔殿 | `exorcist_miko_broken_kagura_hall` | 深山古社的大巫女主持伏魔殿的神乐祭，本厅派来的监事、研究山岳信仰的民俗学者和参道茶屋的店员都住在社务所，白天排练神乐、接待参拜，夜里巡一遍结界。 | 日常、有压力 | released |
 | 大屏前的仙女画师 | `fairy_artist_tablet_clamp_trap` | 美院的挑空画室里，以工笔仙女闻名的青年国画家和室友合租，画案旁有一台装裱用的热压裱画机，玄关客厅挂着一块能投屏的百寸大屏。 | 日常、有压力 | released |
@@ -111,7 +111,7 @@
 | 递辞呈的女仆长 | `gothic_manor_maid_secret` | 孤岛悬崖上的黑石古堡，白日以戒尺与家规管教全府的女仆长，与古堡继承人之间压着多年未说出口的情意；主仆私情一经查实，仆役便要被逐出古堡。 | 日常、有压力 | released |
 | 背负黑账看板娘 | `guild_backroom_debt` | 边境拓荒重镇的冒险者公会，地底的石窖是追偿室。 | 日常、有压力 | released |
 | 慢半拍的总务长 | `guild_receptionist_vault_anchor_lock` | 边境的飞空要塞里，公会大厅从早到晚挤满冒险者，柜台后那位温婉的总务长，三年来给每一张公会卡盖过章，下班后还要去底舱机房核对锚定转台的检修账目。 | 日常、有压力 | released |
-| 悬空单轨的辣妹 | `gyaru_classmate_stranded_commuter` | 同班的时尚名模辣妹，每天下课都搭跨江的高空单轨电车去市中心拍片，晚上再搭末班车回来，常在车厢里和同学聊到下车。 | 日常、有压力 | released |
+| 悬空单轨的辣妹 | `gyaru_classmate_stranded_commuter` | 现代滨海都市的跨江八十米高空悬挂单轨，每晚末班车载着从市中心摄影棚收工的人过江。 | 日常、有压力 | released |
 | 极夜里的女极客 | `hacker_datacenter_cold_corridor_blackout` | 北欧花岗岩山体地下六十米，跨国清算银行的超算中心，受聘的首席全栈安全架构师白天做渗透演练，夜里在冷通道的隔离间里写补丁。 | 日常、有压力 | released |
 | 拆迁前的老街坊 | `half_street` | 拆迁公告贴出来了，签约越早补偿越多；在这条街上住了几十年的人，要在搬走之前把彼此的人情账算清。 | 日常、有压力 | released |
 | 水上洛神女舞者 | `hanfu_fairy_pavilion_bell_dudou_jam` | 江南古风影视城的露天水榭，古典舞《洛神》的水上首演下周开场，独舞演员每天在碧波主台上迎风试位，现场总督导、群舞编导和机械维保主管陪着排到天黑。 | 日常、有压力 | released |
@@ -143,7 +143,7 @@
 | 藏起堕纹的圣女 | `monastery_saintess_fallen_crest` | 讨伐深渊领主归来后，大圣女的左肩胛下多了一道暗紫色的咒痕，每到午夜就灼痛发作，圣光随之黯淡；一旦被裁判所的测魔罗盘照到，就是异端火刑。 | 日常、有压力 | released |
 | 薄墙那头的主妇 | `neighbor_wife_thin_wall` | 泡沫刚破的东京墨田区，一栋昭和年间的三层木造公寓，墙薄得能听见隔壁翻身。 | 日常、有压力 | released |
 | 神经诊所的筹码 | `neon_scrap_clinic` | 辐射酸雨日夜倾盆的海湾沉船城，搁浅战舰的锈蚀底舱里开着一家神经诊所。 | 日常、有压力 | released |
-| 考评门外女主任 | `night_clinic_blackout_prescription` | 三甲医院四层的负压无菌配药中心，值班女主任管着全院最难配的药，白天带教、查房，夜里守着配药大厅签字。 | 日常、有压力 | released |
+| 考评门外女主任 | `night_clinic_blackout_prescription` | 综合医疗大楼四层的负压无菌配药中心，紫外灯在暗处泛着幽蓝的光，空气里是含氯消毒液和酒精的凉味。 | 日常、有压力 | released |
 | 改写故障日志 | `night_repair` | 城市的一切都有记录，只有夜班修理工知道哪些记录是假的。 | 日常、有压力 | released |
 | 核井防爆门下沉 | `nuclear_silo_blast_door_lockdown` | 冷战年代封存至今的废弃核导弹发射深井，退役的发射指挥女军官被请回来带队做封存评估，核防化士官长、督导监察官和见习技术员跟着下井。 | 日常、有压力 | released |
 | 告解窗前小修女 | `nun_confessional_snowbound_sanctuary` | 阿尔卑斯绝顶的黑石修道院，严守贞誓的见习修女在药剂房和告解室之间度过每一天。 | 日常、有压力 | released |
@@ -159,7 +159,7 @@
 | 评委前的甜品主厨 | `pastry_chef_oven_hinge_corset_jam` | 外滩的米其林三星法餐厅，冷艳的女主厨管着开放式甜品台，双排扣厨师服里面穿着一件蕾丝束身衣，每晚的现烤舒芙蕾是招牌。 | 日常、有压力 | released |
 | 冰山女物理学家 | `physics_professor_magnetic_containment` | 国家深地科学研究中心的负七层，超导磁约束实验室一年到头不停机。 | 日常、有压力 | released |
 | 评弹女先生留扣 | `pingtan_diva_stage_wrench_rescue` | 江南老街上的百年书场，每逢开书，老听客泡一壶碧螺春、抓一把瓜子，等台上的评弹女先生把上一回留下的关子接着往下唱。 | 日常、有压力 | released |
-| 雪封行宫长皇女 | `princess_lodge_avalanche_spur_lever` | 帝国覆灭后的第三个冬天，流亡的长皇女带着最后一队近卫，躲在阿尔卑斯雪峰上的旧日行宫里，等一封复辟密信。 | 日常、有压力 | released |
+| 雪封行宫长皇女 | `princess_lodge_avalanche_spur_lever` | 阿尔卑斯雪峰之巅的旧皇家猎苑行宫里，暴风雪拍打着结冰的彩绘玻璃。 | 日常、有压力 | released |
 | 唱诗班的领唱 | `pure_choir_sister_organ_choker_jam` | 海港城市的百年大教堂，唱诗班的女高音领唱每个主日都要领唱大弥撒，平日在圣咏阁楼管风琴的低音风道后廊一个人校音。 | 日常、有压力 | released |
 | 吊威亚的汉服模特 | `pure_hanfu_model_wire_ribbon_knot_jam` | 国家级数字影视基地八号棚在拍一部敦煌飞天主题的国风大片，签约汉服模特吊了半个月威亚，武术指导天天在跳架上教模特走飞天身段、在半空回眸。 | 日常、有压力 | released |
 | 吊笼里的管理员 | `pure_librarian_shelving_lift_crisis` | 国家图书馆古籍部的借还台后面，那位戴金丝眼镜的管理员已经盖了三年日期章；有一本诗集，三年里总被同一个人借走。 | 日常、有压力 | released |
@@ -180,7 +180,7 @@
 | 同居魔族女勇者 | `retired_hero` | 仗打完了，英雄得学着过日子：当年的仇人成了邻居，当年的战友成了债主。 | 日常、有压力 | released |
 | 雷暴里的半潜台 | `rocket_chief_engineer_gantry_lock` | 南海上的一座半潜式发射平台，大推力火箭立在塔架里等了半个月的窗口。 | 日常、有压力 | released |
 | 发射前四十秒 | `rocket_turbopump_valve_jam_crisis` | 海边的商业发射场，发射前夜镇上的海鲜大排档坐满了来看火箭的游客，场里的人有个老规矩：进场之前谁也不说“完了”两个字。 | 日常、有压力 | released |
-| 泵房爆裂夜 | `sanatorium_boiler_nurse_rescue` | 东北林区深处的老疗养院，大雪封山，邮车一周才上来两趟，整座院子的暖气全靠地下泵房的地热。 | 日常、有压力 | released |
+| 泵房爆裂夜 | `sanatorium_boiler_nurse_rescue` | 东北林区深处的老温泉疗养院，十二月大雪封山，邮车一周进山两趟，整座院子的暖气和理疗池全靠地下泵房引出的天然地热。 | 日常、有压力 | released |
 | 零点放榜理事长 | `server_gas_lock_steel_ruler_rescue` | 顶尖公立大学的地下数据中心，七月的录取查询季，几十万考生和家长会在同一时刻涌进查询系统。 | 日常、有压力 | released |
 | 督军千金下金库 | `shanghai_bank_vault_trap` | 民国的上海外滩，督军府的千金每月都要来泰丰银行的地下金库，替父亲在军饷提存单上盖印，每回都点名要那位留洋回来的华人安防总工程师陪着下库。 | 日常、有压力 | released |
 | 九段女棋圣封手夜 | `shogi_master_sealed_move_night` | 盛夏的东京千駄谷，将棋名人头衔战打到终局，九段女棋圣与挑战者在会馆顶层的幽玄之室对局两天。 | 日常、有压力 | released |

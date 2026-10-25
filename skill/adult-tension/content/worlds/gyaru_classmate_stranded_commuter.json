@@ -404,8 +404,8 @@
    ]
   },
   {
-   "chemistry": "{char_takuya_photographer.name}的相机里有一张不该有的照片，{char_chiyo_roommate.name}想花钱买下，{char_mina_gyaru.name}只想删掉。",
-   "id": "combo_trio_tailcar_photo_clash",
+   "chemistry": "{char_takuya_photographer.name}的相机里有一张不该有的照片，{char_chiyo_roommate.name}想花钱买下，又怕被问起钱从哪来。",
+   "id": "combo_duo_tailcar_photo_clash",
    "identity_ids": [
     "identity_night_safety_director",
     "identity_classmate_patternmaker",
@@ -419,20 +419,6 @@
    ],
    "power_structure": "switchable",
    "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 4
-     },
-     "b": "char_mina_gyaru",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 4
-     },
-     "reason": "上回在尾厢试装，你替{char_mina_gyaru.ta}扣好滑落的银链袜夹，领带被勾着不放，那晚两人在车厢里吻了很久。",
-     "stage": "intimate"
-    },
     {
      "a": "player",
      "a_to_b": {
@@ -462,34 +448,6 @@
      "stage": "testing"
     },
     {
-     "a": "char_mina_gyaru",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 4
-     },
-     "b": "char_chiyo_roommate",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "合租三年的闺蜜，彼此的衣柜都翻得开，居间费的事却还瞒着。",
-     "stage": "familiar"
-    },
-    {
-     "a": "char_mina_gyaru",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 2
-     },
-     "b": "char_takuya_photographer",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "拍了一年的搭档，模特早觉得摄影师今晚的镜头跟得太紧。",
-     "stage": "testing"
-    },
-    {
      "a": "char_chiyo_roommate",
      "a_to_b": {
       "tension": 4,
@@ -505,15 +463,14 @@
     }
    ],
    "slots": [
-    "char_mina_gyaru",
     "char_chiyo_roommate",
     "char_takuya_photographer"
    ],
    "stakes": {
-    "irreplaceable_goal": "三个人都看着你，这张卡的去处由你一句话定。",
-    "limit_gap": "你帮谁说话，另外两个都会记一笔。",
-    "meeting_reason": "摄影师拍到了尾厢里你替模特整理裙摆的原片，{char_chiyo_roommate.name}要买下存储卡保独约，{char_mina_gyaru.name}却要当场删片拒签。",
-    "resource_gap": "存储卡、居间费和独约各在一人手里，你站在三个人中间。"
+    "irreplaceable_goal": "这张卡卖不卖、删不删，{char_takuya_photographer.name}说要先听你一句。",
+    "limit_gap": "买下卡就坐实了心虚；不买，模特的独约明早就会黄。",
+    "meeting_reason": "摄影师拍到了尾厢里你替模特整理裙摆的原片，{char_chiyo_roommate.name}拉着你堵在车厢连接处，要{char_takuya_photographer.name}开个价。",
+    "resource_gap": "存储卡和居间费的底单都在{char_takuya_photographer.ta}手里，{char_chiyo_roommate.ta}手里只有一份独约草案。"
    },
    "tags": [
     "intimate"

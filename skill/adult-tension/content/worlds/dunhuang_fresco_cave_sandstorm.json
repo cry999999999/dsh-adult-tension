@@ -453,8 +453,8 @@
    ]
   },
   {
-   "chemistry": "{curator_lin_shu.name}要拷原档，{photographer_su_ya.name}攥着硬盘，{restorer_gu_qingxian.name}按着画案寸步不让。",
-   "id": "cc_trio_fresco_copyright_night",
+   "chemistry": "{curator_lin_shu.name}要拷原档，{photographer_su_ya.name}攥着硬盘，两人话里话外都绕着那张定金收据。",
+   "id": "cc_duo_fresco_copyright_night",
    "identity_ids": [
     "pi_cave_environment_engineer",
     "pi_dunhuang_academy_safety_director",
@@ -474,27 +474,13 @@
       "tension": 3,
       "trust": 4
      },
-     "b": "restorer_gu_qingxian",
+     "b": "photographer_su_ya",
      "b_to_a": {
       "tension": 3,
       "trust": 4
      },
-     "reason": "闭窟前在研磨室替你洗去指尖朱砂时两人十指相扣，{restorer_gu_qingxian.ta}发髻上簪着你削的那支胡杨木簪。",
+     "reason": "上周收工后在脚手架下的暗处，{photographer_su_ya.ta}摘下相机先吻了你，说硬盘密码就用你的生日。",
      "stage": "intimate"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "photographer_su_ya",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "上周在脚手架暗处调镜头，{photographer_su_ya.ta}贴着你后背借力，低声说硬盘密码就用你的生日。",
-     "stage": "flirting"
     },
     {
      "a": "player",
@@ -508,34 +494,6 @@
       "trust": 1
      },
      "reason": "茶歇时对方在策展画册扉页写下私人房号递给你，你原样退回，对方笑着收下了这个回答。",
-     "stage": "testing"
-    },
-    {
-     "a": "restorer_gu_qingxian",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 3
-     },
-     "b": "photographer_su_ya",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "同组做了两年采集，修复师信摄影师的眼光，却不知道那份定金。",
-     "stage": "familiar"
-    },
-    {
-     "a": "restorer_gu_qingxian",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 1
-     },
-     "b": "curator_lin_shu",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 2
-     },
-     "reason": "策展人想要底稿，修复师一句好话都没给过。",
      "stage": "testing"
     },
     {
@@ -554,15 +512,14 @@
     }
    ],
    "slots": [
-    "restorer_gu_qingxian",
     "photographer_su_ya",
     "curator_lin_shu"
    ],
    "stakes": {
-    "irreplaceable_goal": "三个人都看着你，这份原档的去处由你定。",
-    "limit_gap": "你帮哪一个，另外两个都会记住。",
-    "meeting_reason": "多光谱扫描刚跑完最后一帧，策展人拿出合同要当场拷走红外原档，{photographer_su_ya.name}握着硬盘手指发白，{restorer_gu_qingxian.name}按住画案不让。",
-    "resource_gap": "署名、硬盘、赞助各在一人手里，你站在画案中间。"
+    "irreplaceable_goal": "原档拷不拷，两个人都等你这个在场的人表态。",
+    "limit_gap": "摄影师交出硬盘就破了研究院的规矩；不交，收据明天就会摆上院长的桌子。",
+    "meeting_reason": "多光谱扫描刚跑完最后一帧，{curator_lin_shu.name}拿出合同要当场拷走红外原档，{photographer_su_ya.name}握着硬盘手指发白，回头找你。",
+    "resource_gap": "硬盘在{photographer_su_ya.ta}手里，赞助合同和收据在{curator_lin_shu.ta}手里。"
    },
    "tags": [
     "intimate"

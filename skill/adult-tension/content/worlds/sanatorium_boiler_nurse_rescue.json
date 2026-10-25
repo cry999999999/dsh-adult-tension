@@ -407,8 +407,8 @@
    ]
   },
   {
-   "chemistry": "{geologist_he_qian.name}要封井停暖，{head_nurse_su_man.name}要保签约，{nurse_lin_xinyi.name}只惦记三楼的老人。",
-   "id": "cc_trio_spring_audit_clash",
+   "chemistry": "{geologist_he_qian.name}要封井停暖，{head_nurse_su_man.name}要保住签约，两人隔着一本水温台账谁也不让。",
+   "id": "cc_duo_spring_audit_clash",
    "identity_ids": [
     "pi_night_duty_attendant",
     "pi_staff_liaison_officer",
@@ -422,20 +422,6 @@
    ],
    "power_structure": "switchable",
    "relations": [
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 4
-     },
-     "b": "nurse_lin_xinyi",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 4
-     },
-     "reason": "上周夜里{nurse_lin_xinyi.ta}在理疗池边替你热敷冻僵的肩颈，两人吻在一起，白大褂口袋里至今揣着你送的护手霜。",
-     "stage": "intimate"
-    },
     {
      "a": "player",
      "a_to_b": {
@@ -477,6 +463,65 @@
      },
      "reason": "复核的人翻出了护理部截留附表的传真底单，两人从此见面不说话。",
      "stage": "testing"
+    }
+   ],
+   "slots": [
+    "head_nurse_su_man",
+    "geologist_he_qian"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "封不封井，两个人都要拿你那本值班记录作证。",
+    "limit_gap": "你帮护士长压下水温，复核的人会把你写进报告；你帮复核封井，随迁名单上就没有你。",
+    "meeting_reason": "{geologist_he_qian.name}测出主泉眼水温跌破红线要封井，{head_nurse_su_man.name}拦在管廊口不许动，转头问你昨夜的读数记了多少。",
+    "resource_gap": "复核签章在{geologist_he_qian.ta}手里，随迁名单在{head_nurse_su_man.ta}手里，你手里只有这几夜的值班记录。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_spring_decline",
+    "te_handover_eve"
+   ]
+  },
+  {
+   "chemistry": "{head_nurse_su_man.name}待{nurse_lin_xinyi.name}像待自家晚辈，可抽屉里那三张单子，护士长一直没提。",
+   "id": "cc_duo_drawer_notices",
+   "identity_ids": [
+    "pi_staff_liaison_officer",
+    "pi_logistics_chief"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 4
+     },
+     "b": "nurse_lin_xinyi",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "去年除夕夜班两人守着一锅饺子，{nurse_lin_xinyi.ta}靠在你肩上先吻了你，之后每个夜班都给你留一碗。",
+     "stage": "intimate"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 2
+     },
+     "b": "head_nurse_su_man",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 3
+     },
+     "reason": "护士长查夜总在你身后多站一会儿，替你把衣领翻正，说下山以后带你去城里吃顿好的。",
+     "stage": "flirting"
     },
     {
      "a": "head_nurse_su_man",
@@ -491,38 +536,23 @@
      },
      "reason": "护士长一手带出来的护士，抽屉里压着什么，护士长心里有数。",
      "stage": "familiar"
-    },
-    {
-     "a": "nurse_lin_xinyi",
-     "a_to_b": {
-      "tension": 1,
-      "trust": 2
-     },
-     "b": "geologist_he_qian",
-     "b_to_a": {
-      "tension": 1,
-      "trust": 2
-     },
-     "reason": "护士每天签的水温台账，复核的人一页页对过，两人只在数字上说过话。",
-     "stage": "acquainted"
     }
    ],
    "slots": [
-    "nurse_lin_xinyi",
     "head_nurse_su_man",
-    "geologist_he_qian"
+    "nurse_lin_xinyi"
    ],
    "stakes": {
-    "irreplaceable_goal": "三个人都在等你开口，封不封井由你这一句定。",
-    "limit_gap": "谁的话都有道理，你帮哪一个，另外两个都会记住。",
-    "meeting_reason": "{geologist_he_qian.name}测出主泉眼水温跌破红线要封井，{head_nurse_su_man.name}拦着不许动，{nurse_lin_xinyi.name}在管廊口急得眼眶发红。",
-    "resource_gap": "复核签章、随迁名单、巡诊记录各在一人手里，你夹在中间。"
+    "irreplaceable_goal": "护士长要你说一句公道话，护士只看着你，不肯先开口。",
+    "limit_gap": "护士长一交单子，护士就得停职；护士一松口，老人就得搬走。",
+    "meeting_reason": "{head_nurse_su_man.name}盘库时把{nurse_lin_xinyi.name}叫进值班间，桌上摊着三张没交院办的催缴单，你正好送台账过来。",
+    "resource_gap": "催缴单在{head_nurse_su_man.ta}手里，三楼老人的巡诊记录在{nurse_lin_xinyi.ta}手里。"
    },
    "tags": [
     "intimate"
    ],
    "tension_engine_ids": [
-    "te_spring_decline",
+    "te_retiree_beds",
     "te_handover_eve"
    ]
   },

@@ -276,7 +276,7 @@
    ]
   },
   {
-   "chemistry": "{half_sister.name}在酒会上总拿你开玩笑，说两家迟早要联姻，可惜不是和自己；笑完却记得你不喝甜酒。",
+   "chemistry": "{half_sister.name}在家族晚宴上总拿你开玩笑，说两家迟早要联姻，可惜不是和自己；笑完却记得你不吃甜。",
    "id": "cc_sister_and_heir_wine",
    "identity_ids": [
     "pi_rival_heir"
@@ -297,7 +297,7 @@
       "tension": 4,
       "trust": 3
      },
-     "reason": "上周慈善拍卖散场，{half_sister.name}在酒廊包厢先吻了你，然后把手里那百分之五股权真正想投给谁告诉了你。",
+     "reason": "上周慈善拍卖散场，{half_sister.name}在贵宾休息室先吻了你，然后把手里那百分之五股权真正想投给谁告诉了你。",
      "stage": "intimate"
     }
    ],

@@ -1421,7 +1421,7 @@
       ]
     },
     {
-      "id": "combo_trio_tailcar_photo_clash",
+      "id": "combo_duo_tailcar_photo_clash",
       "power_structure": "switchable",
       "player_positions": [
         "low",
@@ -1435,7 +1435,6 @@
         "identity_station_trainee"
       ],
       "slots": [
-        "char_mina_gyaru",
         "char_chiyo_roommate",
         "char_takuya_photographer"
       ],
@@ -1443,31 +1442,17 @@
         "te_tokyo_contract",
         "te_graduation_show"
       ],
-      "chemistry": "{char_takuya_photographer.name}的相机里有一张不该有的照片，{char_chiyo_roommate.name}想花钱买下，{char_mina_gyaru.name}只想删掉。",
+      "chemistry": "{char_takuya_photographer.name}的相机里有一张不该有的照片，{char_chiyo_roommate.name}想花钱买下，又怕被问起钱从哪来。",
       "stakes": {
-        "resource_gap": "存储卡、居间费和独约各在一人手里，你站在三个人中间。",
-        "limit_gap": "你帮谁说话，另外两个都会记一笔。",
-        "meeting_reason": "摄影师拍到了尾厢里你替模特整理裙摆的原片，{char_chiyo_roommate.name}要买下存储卡保独约，{char_mina_gyaru.name}却要当场删片拒签。",
-        "irreplaceable_goal": "三个人都看着你，这张卡的去处由你一句话定。"
+        "resource_gap": "存储卡和居间费的底单都在{char_takuya_photographer.ta}手里，{char_chiyo_roommate.ta}手里只有一份独约草案。",
+        "limit_gap": "买下卡就坐实了心虚；不买，模特的独约明早就会黄。",
+        "meeting_reason": "摄影师拍到了尾厢里你替模特整理裙摆的原片，{char_chiyo_roommate.name}拉着你堵在车厢连接处，要{char_takuya_photographer.name}开个价。",
+        "irreplaceable_goal": "这张卡卖不卖、删不删，{char_takuya_photographer.name}说要先听你一句。"
       },
       "tags": [
         "intimate"
       ],
       "relations": [
-        {
-          "a": "player",
-          "b": "char_mina_gyaru",
-          "stage": "intimate",
-          "a_to_b": {
-            "trust": 4,
-            "tension": 3
-          },
-          "b_to_a": {
-            "trust": 4,
-            "tension": 3
-          },
-          "reason": "上回在尾厢试装，你替{char_mina_gyaru.ta}扣好滑落的银链袜夹，领带被勾着不放，那晚两人在车厢里吻了很久。"
-        },
         {
           "a": "player",
           "b": "char_chiyo_roommate",
@@ -1495,34 +1480,6 @@
             "tension": 3
           },
           "reason": "收工对光时相机背带被绕上你的手腕，摄影师笑问你敢不敢看备用卡里的花絮，你没接这个茬。"
-        },
-        {
-          "a": "char_mina_gyaru",
-          "b": "char_chiyo_roommate",
-          "stage": "familiar",
-          "a_to_b": {
-            "trust": 4,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 3,
-            "tension": 3
-          },
-          "reason": "合租三年的闺蜜，彼此的衣柜都翻得开，居间费的事却还瞒着。"
-        },
-        {
-          "a": "char_mina_gyaru",
-          "b": "char_takuya_photographer",
-          "stage": "testing",
-          "a_to_b": {
-            "trust": 2,
-            "tension": 3
-          },
-          "b_to_a": {
-            "trust": 2,
-            "tension": 3
-          },
-          "reason": "拍了一年的搭档，模特早觉得摄影师今晚的镜头跟得太紧。"
         },
         {
           "a": "char_chiyo_roommate",

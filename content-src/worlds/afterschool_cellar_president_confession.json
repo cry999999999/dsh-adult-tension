@@ -1577,7 +1577,7 @@
       ]
     },
     {
-      "id": "combo_trio_archive_vault_night",
+      "id": "combo_duo_archive_vault_night",
       "power_structure": "switchable",
       "player_positions": [
         "low",
@@ -1591,7 +1591,6 @@
         "board_trustee_inspector"
       ],
       "slots": [
-        "proud_president_ayaka",
         "vice_president_yui",
         "discipline_chief_ren"
       ],
@@ -1599,12 +1598,12 @@
         "te_brother_ledger",
         "te_curfew_seal"
       ],
-      "chemistry": "{vice_president_yui.name}拿着收据要会长交账，{discipline_chief_ren.name}握着挂锁不肯落，{proud_president_ayaka.name}护着兄长的账寸步不让。",
+      "chemistry": "{vice_president_yui.name}拿着收据要会长交账，{discipline_chief_ren.name}握着挂锁不肯落，两人都没提那张化名领据。",
       "stakes": {
-        "resource_gap": "暗账、收据和挂锁各在一人手里，你站在三个人中间。",
-        "limit_gap": "你帮谁说话，另外两个都会记住。",
-        "meeting_reason": "{vice_president_yui.name}拿到了前任会长挪用公款资助特招生的原始收据，力劝会长交出账册平息追责；{discipline_chief_ren.name}站在铁门边握着挂锁，坦白自己就是受助名单上的第一个人。",
-        "irreplaceable_goal": "三个人都在等你开口，这箱账的去处由你定。"
+        "resource_gap": "收据和领据在{vice_president_yui.ta}手里，档案室的挂锁在{discipline_chief_ren.ta}手里。",
+        "limit_gap": "副会长一交收据，执纪长的名字就跟着见光；执纪长一落锁，这箱账就再没人能查。",
+        "meeting_reason": "{vice_president_yui.name}拿到了前任会长挪用公款资助特招生的原始收据，要你帮着劝会长交出账册；{discipline_chief_ren.name}站在铁门边握着挂锁，坦白自己就是受助名单上的第一个人。",
+        "irreplaceable_goal": "这箱账锁不锁、交不交，两个人都在等你开口。"
       },
       "tags": [
         "intimate"
@@ -1612,7 +1611,7 @@
       "relations": [
         {
           "a": "player",
-          "b": "proud_president_ayaka",
+          "b": "vice_president_yui",
           "stage": "intimate",
           "a_to_b": {
             "trust": 4,
@@ -1622,21 +1621,7 @@
             "trust": 4,
             "tension": 3
           },
-          "reason": "上周闭馆后在档案架间，{proud_president_ayaka.ta}紧贴着你胸口不肯松手，发带缠在你指间，你们在灯下吻了很久。"
-        },
-        {
-          "a": "player",
-          "b": "vice_president_yui",
-          "stage": "flirting",
-          "a_to_b": {
-            "trust": 3,
-            "tension": 3
-          },
-          "b_to_a": {
-            "trust": 3,
-            "tension": 3
-          },
-          "reason": "那天清点账箱，{vice_president_yui.ta}趁会长转身，指尖轻轻勾过你的掌心，要你别站错队。"
+          "reason": "那天清点完账箱，{vice_president_yui.ta}在空教室拉住你的手吻了你，要你别站错队。"
         },
         {
           "a": "player",
@@ -1651,34 +1636,6 @@
             "tension": 3
           },
           "reason": "巡楼进门前执纪长总会重重咳一声给你报信，目光却在你和会长交叠的衣角上停过一瞬。"
-        },
-        {
-          "a": "proud_president_ayaka",
-          "b": "vice_president_yui",
-          "stage": "familiar",
-          "a_to_b": {
-            "trust": 4,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 3,
-            "tension": 3
-          },
-          "reason": "十年的闺中密友，会长什么都跟副会长说，唯独没说暗账。"
-        },
-        {
-          "a": "proud_president_ayaka",
-          "b": "discipline_chief_ren",
-          "stage": "acquainted",
-          "a_to_b": {
-            "trust": 2,
-            "tension": 2
-          },
-          "b_to_a": {
-            "trust": 4,
-            "tension": 2
-          },
-          "reason": "会长只当执纪长是个铁面的同事，不知道对方受过兄长的恩。"
         },
         {
           "a": "vice_president_yui",

@@ -2,7 +2,7 @@
 
 # 世界列表
 
-内容版本：`2026.10.27`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。
+内容版本：`2026.10.28`。只有 `released` 的世界参与随机开局、出现在 `list-worlds` 里。玩家问某类题材时用 `list-worlds` 带 `query`，点名开局用 `new-game` 的 `world_query`，都按标题、时代、地方和完整介绍匹配。“有超自然的”“不要灾难的”这类按内容标签浏览：`list-worlds` 带 `tags` / `exclude_tags`。
 
 | 内容标签 | ID | 已发布世界数 |
 |---|---|---|
@@ -10,26 +10,26 @@
 | 亲密 | `intimate` | 201 |
 | 直白的性描写 | `explicit` | 11 |
 | 暴力 | `violence` | 82 |
-| 胁迫 | `coercion_theme` | 63 |
-| 羞辱 | `humiliation` | 45 |
-| 身体伤害 | `bodily_harm` | 98 |
-| 酒精与药物 | `substance` | 47 |
+| 胁迫 | `coercion_theme` | 62 |
+| 羞辱 | `humiliation` | 42 |
+| 身体伤害 | `bodily_harm` | 97 |
+| 酒精与药物 | `substance` | 46 |
 | 怀孕 | `pregnancy` | 0 |
 | 死亡 | `death` | 43 |
-| 职场权力关系 | `workplace_power` | 131 |
+| 职场权力关系 | `workplace_power` | 130 |
 | 出轨 | `infidelity` | 2 |
-| 违法犯罪 | `crime` | 115 |
+| 违法犯罪 | `crime` | 117 |
 | 赌博 | `gambling` | 6 |
 | 职场 | `workplace` | 159 |
 | 夜生活 | `nightlife` | 11 |
 | 超自然 | `supernatural` | 27 |
-| 灾难 | `disaster` | 142 |
+| 灾难 | `disaster` | 141 |
 | 自定义 | `custom` | 0 |
 
 | 世界 | ID | 一句话 | 模式 | 状态 |
 |---|---|---|---|---|
 | 魔石灯下的远征队 | `abyss_collapsed_refuge` | 迷宫都市第七层，一处外廊塌了一半的古代安全区。 | 日常、有压力 | released |
-| 九十九层的吊篮 | `abyss_dungeon_exiled_saintess` | 被教廷流放的高阶圣女，押解途中被安置在深渊九十九层的开采竖井营地。 | 日常、有压力 | released |
+| 九十九层的吊篮 | `abyss_dungeon_exiled_saintess` | 深渊九十九层的钟乳石大溶洞终年不见天日，只有连接上层矿道的悬空吊篮定时升降。 | 日常、有压力 | released |
 | 受审的高傲女骑士 | `abyssal_dungeon_knightess_crest` | 低魔黑暗帝国北境的黑曜石要塞。 | 日常、有压力 | released |
 | 不肯签字的女飞官 | `aerospace_simulator_pod_gauge_release` | 商业航天测控基地的总装大厅里，悬空的全动模拟飞行球舱日夜运转。 | 日常、有压力 | released |
 | 被绑发带女会长 | `afterschool_cellar_president_confession` | 2002 年秋末，名门私立圣罗兰大学的百年西洋旧校舍即将拆除、改建新礼堂。 | 日常、有压力 | released |
@@ -86,7 +86,7 @@
 | 嘴硬的马术女骑手 | `equestrian_heiress_stable_fire_trap` | 欧式私人马术庄园里，骄傲又嘴硬的马术千金是俱乐部的头牌女骑手，白天在马场上跳障、喝下午茶，跟庄园的马术兽医斗了一整个夏天的嘴。 | 日常、有压力 | released |
 | 开库日的少夫人 | `estate_vault_lockout_tea_scoop_rescue` | 太湖之畔的百年深宅，每年六月初六启地库晒画。 | 日常、有压力 | released |
 | 成人礼的礼仪讲师 | `etiquette_podium_magnet_trap` | 千年古书院的明伦堂，一年一度的成人礼大典下周举行，端庄的国学女讲师每天在讲案前排练示范揖礼，副山长、赞礼官和古琴乐师都来看过。 | 日常、有压力 | released |
-| 华盖倾坠伏魔殿 | `exorcist_miko_broken_kagura_hall` | 深山古社的大巫女主持伏魔殿的神乐祭，本厅派来的监事、研究山岳信仰的民俗学者和参道茶屋的店员都住在社务所，白天排练神乐、接待参拜，夜里巡一遍结界。 | 日常、有压力 | released |
+| 华盖倾坠伏魔殿 | `exorcist_miko_broken_kagura_hall` | 深山古社的伏魔殿隐在千年杉林深处，大殿正中悬着一顶八角鎏金青铜华盖。 | 日常、有压力 | released |
 | 大屏前的仙女画师 | `fairy_artist_tablet_clamp_trap` | 美院的挑空画室里，以工笔仙女闻名的青年国画家和室友合租，画案旁有一台装裱用的热压裱画机，玄关客厅挂着一块能投屏的百寸大屏。 | 日常、有压力 | released |
 | 王座受降魔皇女 | `fallen_demon_empress_throne_pact` | 神魔旧纪元的末期，纯血魔王的千金皇女住在一座悬空的石砌神殿里。 | 日常、有压力 | released |
 | 处决前两个时辰 | `fallen_knight_dungeon_pact` | 黑石要塞上月被征服军攻陷，圣王国第一近卫女骑士长断后力竭被俘，戴着秘银手枷关在地下三层的水牢。 | 日常、有压力 | released |
@@ -166,7 +166,7 @@
 | 老图书厅的硕士生 | `pure_literature_girl_attic_storm_shelter` | 大学里那栋百年旧教学楼要不要拆，学校吵了一整年。 | 日常、有压力 | released |
 | 大运会女单决赛 | `pure_tennis_idol_umpire_hook_trap` | 大运会的网球女单进入最后几轮，人称初恋校花的头号种子每天在万人中央球场上打球，穿线师、助理裁判和转播镜头总监都认得这位选手。 | 日常、有压力 | released |
 | 第十一次告白 | `pure_voice_actress_booth_lock` | 乙女游戏的年度资料片还有一周交付。 | 日常、有压力 | released |
-| 头等舱配餐间 | `purser_airbar_choker_drawer_jam` | 外资航空的传奇乘务长，飞跨洋夜航的波音777头等舱已经第八年，跃层环形吧台是乘务长的地盘，制服领口内侧总贴着一条白金饰链。 | 日常、有压力 | released |
+| 头等舱配餐间 | `purser_airbar_choker_drawer_jam` | 外资航空的波音777跨洋夜航穿行在平流层，头等舱跃层环形吧台亮着琥珀色壁灯。 | 日常、有压力 | released |
 | 画舫琵琶女行首 | `qinhuai_pipa_painted_boat_leak` | 明末清初的秦淮河，教坊司的首席琵琶行首每夜在一艘双层雕花画舫上献艺，复社名士、巡江官差、盐商贵戚都是座上客，修船匠隔几天就来补一次船底。 | 日常、有压力 | released |
 | 隔离第二十天 | `quarantine_ring` | 二十一天里谁也不能离站；数据比人先到，可数据也会说谎。 | 日常、有压力 | released |
 | 防护服裂女主刀 | `quarantine_ward_scalpel_isolation` | 北方海岛上的私人神经与感染医学疗养院，冷面女外科主任执掌地下二层的负压隔离病区。 | 日常、有压力 | released |
@@ -181,7 +181,7 @@
 | 雷暴里的半潜台 | `rocket_chief_engineer_gantry_lock` | 南海上的一座半潜式发射平台，大推力火箭立在塔架里等了半个月的窗口。 | 日常、有压力 | released |
 | 发射前四十秒 | `rocket_turbopump_valve_jam_crisis` | 海边的商业发射场，发射前夜镇上的海鲜大排档坐满了来看火箭的游客，场里的人有个老规矩：进场之前谁也不说“完了”两个字。 | 日常、有压力 | released |
 | 泵房爆裂夜 | `sanatorium_boiler_nurse_rescue` | 东北林区深处的老温泉疗养院，十二月大雪封山，邮车一周进山两趟，整座院子的暖气和理疗池全靠地下泵房引出的天然地热。 | 日常、有压力 | released |
-| 零点放榜理事长 | `server_gas_lock_steel_ruler_rescue` | 顶尖公立大学的地下数据中心，七月的录取查询季，几十万考生和家长会在同一时刻涌进查询系统。 | 日常、有压力 | released |
+| 零点放榜理事长 | `server_gas_lock_steel_ruler_rescue` | 顶尖公立大学的地下数据中心常年恒温十八度，冷通道两侧亮着成排的蓝色指示灯。 | 日常、有压力 | released |
 | 督军千金下金库 | `shanghai_bank_vault_trap` | 民国的上海外滩，督军府的千金每月都要来泰丰银行的地下金库，替父亲在军饷提存单上盖印，每回都点名要那位留洋回来的华人安防总工程师陪着下库。 | 日常、有压力 | released |
 | 九段女棋圣封手夜 | `shogi_master_sealed_move_night` | 盛夏的东京千駄谷，将棋名人头衔战打到终局，九段女棋圣与挑战者在会馆顶层的幽玄之室对局两天。 | 日常、有压力 | released |
 | 七号车厢女法医 | `siberian_express_sleeper_car7` | 1978 年深冬，一列国际联运快车在中苏边境的林海里穿行，七号软卧包厢押着一名关乎边境走私大案的受审要犯。 | 日常、有压力 | released |

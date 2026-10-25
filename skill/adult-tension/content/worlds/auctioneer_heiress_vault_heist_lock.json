@@ -276,7 +276,7 @@
    ]
   },
   {
-   "chemistry": "{phone_bidder_lead.name}是你最可靠的线人，也是春拍庆功宴后在酒店顶层酒廊与你热吻的人。",
+   "chemistry": "{phone_bidder_lead.name}是你最可靠的线人，也是春拍散场后在顶层露台与你热吻的人。",
    "id": "cc_phone_lead_and_journalist_tape",
    "identity_ids": [
     "pi_art_journalist"
@@ -297,7 +297,7 @@
       "tension": 4,
       "trust": 4
      },
-     "reason": "今年春拍庆功宴后两人在酒店顶层酒廊听着爵士乐相拥热吻，委托组长向你透露过几桩托价内幕。",
+     "reason": "今年春拍散场后两人在顶层露台听着爵士乐相拥热吻，委托组长向你透露过几桩托价内幕。",
      "stage": "intimate"
     }
    ],
@@ -506,7 +506,7 @@
    "stakes": {
     "irreplaceable_goal": "两人都在等你说一句：这一小时值不值得。",
     "limit_gap": "队长上报就毁了同事，架构师解锁就前功尽弃，你说的话两边都未必听。",
-    "meeting_reason": "{vault_guard_captain.name}捏着{vault_architect.name}私改延时锁的后台日志，按总裁的意思要求押运车到之前解锁，否则上报；{vault_architect.name}不肯，两人同时看向你。",
+    "meeting_reason": "{vault_guard_captain.name}捏着{vault_architect.name}私改延时锁的后台日志，按总裁的意思要求押运车到之前解锁，否则上报；{vault_architect.name}不肯，把日志的事推到你面前。",
     "resource_gap": "队长手里有私改延时锁的后台日志，架构师握着展柜解锁权，你手里有保留价原件信封。"
    },
    "tags": [
@@ -2458,7 +2458,7 @@
    "requires": [
     "auctioneer_lin"
    ],
-   "text": "零点钟声敲响，{auctioneer_lin.name}把那柄用满三年的紫檀银角拍卖槌放回丝绒托盘；你得决定是陪首席走出大门开启新事业，还是留下接管调整后的拍卖行核心席位。"
+   "text": "拍卖厅的灯一盏盏熄灭，{auctioneer_lin.name}把那柄用满三年的紫檀银角拍卖槌放回丝绒托盘；你得决定是陪首席走出大门开启新事业，还是留下接管调整后的拍卖行核心席位。"
   },
   {
    "category": "意外",

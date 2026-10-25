@@ -1,5 +1,5 @@
 {
- "content_version": "2026.10.28",
+ "content_version": "2026.10.29",
  "schema_version": 1,
  "worlds": [
   {
@@ -223,7 +223,7 @@
     "pressure"
    ],
    "region": "悬空玻璃修复中庭、观摩连廊、展柜暗廊、暗房与阁楼工作室",
-   "sha256": "fdec1284fb67db0dccba8ef8937d2a71923cfa5c6570c0ba22e8029b359ee995",
+   "sha256": "9fb225500c5ac5dfb97469bf0ebf43de394cd88f9b5b94652b61e25673342e78",
    "status": "released",
    "summary": "国家博物馆的宋画特展即将揭幕，首席古画修复师每天在悬空全景玻璃中庭里为国宝宋画做最后的展前全色与托裱核验，中庭技术总调度、修复副手与展柜技师在旁协同。外圈观摩连廊上架满了媒体与学界的长焦镜头，所有展品与修复档案都要在揭幕礼开始前封柜定稿。",
    "title": "揭幕前的修复师"
@@ -271,21 +271,20 @@
   {
    "content_tags": [
     "intimate",
-    "death",
     "workplace",
-    "disaster"
+    "crime"
    ],
    "default_person": "second",
-   "era": "大唐盛世开元年间国家皇家天文台与观象授时巅峰期",
+   "era": "开元十二年盛夏，长安城南郊的皇家摘星楼",
    "id": "astronomer_observatory_lightning_blind",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "长安城南郊皇室观象台摘星楼三十丈高空开敞式露天浑天台",
-   "sha256": "54b079e349ae6dbada90308578e33f765ed870a24a7e198f024183326f7f4698",
+   "region": "长安南郊的摘星楼：三十丈浑天台、观星回廊、浑仪暗室与漏刻值房",
+   "sha256": "e34405ed590c3f4bc9829fcf3214d60d0e46f34edf3234bd32f8c8b23fe8c968",
    "status": "released",
-   "summary": "开元年间，钦天监的女官管漏刻，每夜从摘星楼报出时辰，长安一百零八坊的更鼓跟着响；灵台郎管浑天仪的水运机械，齿轮慢一刻，全城的时辰就错一刻。两人一个看水一个看齿轮，在三十丈高台上搭档了三年。仲夏雷雨多，摘星楼的避雷铜缆该换了。",
+   "summary": "开元年间，长安城南郊的皇家摘星楼高三十丈。钦天监漏刻女官每夜在高台上报出时辰，全城一百零八坊的更鼓便跟着敲响。灵台郎掌管浑天仪的水运，两人一个看水、一个看星，在楼上搭档了三年。每逢盛夏雷雨夜，值守官吏与禁军便一同留在楼内核对星历，守着天亮那一通开城鼓。",
    "title": "摘星楼漏刻女官"
   },
   {
@@ -339,7 +338,7 @@
     "pressure"
    ],
    "region": "三亚海滨沙排中央球场：网前沙区、环形看台、遮阳棚、理疗室与运动员小木屋",
-   "sha256": "a2350e94ed4a0256bf5d4dc5f8af0cdbe19c22364e9fa83777eec3d86150033d",
+   "sha256": "301dd7e9268813c8b02e602b9f56dfc31f13b9c677f93a87f7f82dd8f4f3d858",
    "status": "released",
    "summary": "三亚海滨国际沙排公开赛进入女子决赛日。国家队的王牌主攻和副攻搭档每天在中央球场扣杀、拦网，组委会竞赛主任、国际排联技术代表、司线员和随队防护师在场边各司其职。海风裹着热浪吹过金色沙滩与环形看台，赛后就要公布新一届奥运周期的国家队双人组合名单。",
    "title": "救球扑地女主攻"
@@ -480,22 +479,21 @@
   {
    "content_tags": [
     "intimate",
-    "violence",
-    "bodily_harm",
+    "crime",
     "workplace",
     "disaster"
    ],
    "default_person": "second",
-   "era": "清末民初关东长白山老林放山采参与高山冰川科考探险期",
+   "era": "宣统二年九月，长白山初雪时节",
    "id": "changbai_ginseng_blizzard_crevasse",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "长白山天池万年冰川海拔两千米开阔天然大天坑底部石缝裂隙区",
-   "sha256": "c334d02465bca7b68cb2c2d79221a4467b850ee5d783208486536dc5ed26d070",
+   "region": "长白山天池：老林子地窨子、冰壁栈道、天坑石崖与温泉冰穴",
+   "sha256": "83f5f6cf2ae07afeaca60e96e2bf4f604393b3ee1e047eeac925cde4f3cd481e",
    "status": "released",
-   "summary": "清末民初，长白山采参世家的新任女把头接下一桩怪活：给关东地质考察队带路上天池。一个看参一个看石头，在老林子里走了一个月，白天翻山，夜里在窝棚里烤火对地图。天池一带的天说变就变，冰川上的天坑没人下去过。",
+   "summary": "宣统二年九月，长白山已落初雪。采参世家的新任女把头接下一桩差事，领着关东地质考察队与奉天参行掌柜进老林子上天池。一边寻祖传的参脉，一边勘火山岩层，一行人在林海雪原里走了一个月，白天踏雪翻岭，夜里在地窨子与冰穴里烤火核对路线。",
    "title": "天池采参女把头"
   },
   {
@@ -1582,20 +1580,19 @@
    "content_tags": [
     "intimate",
     "workplace_power",
-    "workplace",
-    "disaster"
+    "workplace"
    ],
    "default_person": "second",
-   "era": "当代大型动漫文化街区独栋周边集合店首发通宵理货上架阶段",
+   "era": "当代动漫文化街区的十月首发季",
    "id": "gentle_merch_shop_loft_latch_trap",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "动漫街区旗舰店二层钢结构周边仓储阁楼与货运升降吊门通道",
-   "sha256": "4bf0362dd4cdbafc393748dc543cf1a9cdb89d2ed27fa6778a977eea9582dc2d",
+   "region": "动漫文化街区独栋周边店：一层痛墙展厅、二层仓储阁楼与后巷钢梯",
+   "sha256": "34750dbc81d80c4d3216e28a260c4287e19d3fd802f63a59bb9789f8b07fc24a",
    "status": "released",
-   "summary": "动漫街区的一家独栋谷子店，周末有限量吧唧首发。温柔的女店长这几天都在二层仓储阁楼清点几千枚马口铁吧唧，街区的机电师傅被叫来修那台老是卡顿的货运升降机。首发那天的长队会从傍晚排到街角；升降机的防坠锁舌是老式的，阁楼只有一个出口。",
+   "summary": "十月的动漫文化街区，独栋周边集合店正为明早的周年限定马口铁吧唧首发通宵备货。温柔的女店长系着淡粉色吉祥物围裙，在二层钢结构阁楼里带着合伙人、打板师和店员清点几千枚流沙与镭射徽章；楼下街角已有漫迷带着折叠椅提前夜排，整条街都浸在首发前夜的热闹与暗流里。",
    "title": "首发前夜女店长"
   },
   {
@@ -1712,27 +1709,23 @@
   {
    "content_tags": [
     "intimate",
-    "violence",
-    "coercion_theme",
-    "bodily_harm",
-    "substance",
-    "death",
-    "workplace_power",
     "crime",
     "workplace",
-    "disaster"
+    "workplace_power",
+    "substance",
+    "bodily_harm"
    ],
    "default_person": "second",
-   "era": "十九世纪末欧陆边陲黑森林哥特断壁古堡暴雪封山时期",
+   "era": "1894 年隆冬，黑森林绝壁上的古堡",
    "id": "gothic_castle_head_maid_discipline",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "黑森林深处绝壁之上的霍恩洛厄孤悬古堡",
-   "sha256": "f42b55c6793abef66242640ac75f1a08ef9a8666c00cdddeae33fe4de6e26e21",
+   "region": "黑森林深处的孤悬古堡：壁炉大厅、更衣暗室、断桥回廊与地下酒窖",
+   "sha256": "cdf9af93001ec7637400e9286ac141c15f4160699a6ecdf174c489417c77c152",
    "status": "released",
-   "summary": "十九世纪末的黑森林，新任继承人从王都归来接手破败的领地，才发现古堡大权全在冷艳严苛的首席女仆长手里：全城堡的钥匙串、账本和百年家法都归女仆长管。丧偶的摄政公爵勾结地方债阀，想以继承税违约为由废黜新家主。冬天一到，出山的吊桥常被大雪压塌。",
+   "summary": "十九世纪末的黑森林深处，一座古堡孤悬在绝壁上。年轻的继承人从王都归来接手破败的领地，才发现内宅大权全在首席女仆长手里：三十六座库房的铁十字钥匙串、领地账本和百年家规都归女仆长执掌。丧偶的摄政公爵夫人带着王都猎兵与税务公证官同住堡中，大雪一下，出山的木吊桥便与世隔绝。",
    "title": "掌权的冷艳女管家"
   },
   {
@@ -2380,21 +2373,20 @@
   {
    "content_tags": [
     "intimate",
-    "humiliation",
-    "supernatural",
-    "disaster"
+    "crime",
+    "supernatural"
    ],
    "default_person": "third",
-   "era": "当代夏秋之交百年一遇特大山洪暴雨狂澜之夜",
+   "era": "当代日本，夏秋之交的深山古社",
    "id": "miko_mountain_curse_ritual",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "深山古社御神山主祭殿挑空十二米悬空神乐回廊",
-   "sha256": "f28bea7d659dfbf250df951e5615d53f712e865c0743cce4abc9fd3665081f28",
+   "region": "御神山半腰的千年古社：悬空神乐回廊、地宫净手泉与后山古道",
+   "sha256": "87ba68076456b1b9bbd087eeafd4b30db19159b61fb96931812452fc1f7f975d",
    "status": "released",
-   "summary": "深山千年古社的大巫女，每年夏秋之交主持镇山祈福古仪，要在主祭殿悬空十二米的神乐回廊上独舞。今年社里住进了神道考古研究生、文保结构工程师和山岳救援队的绳索技术员，白天测绘、修缮，夜里看排练。回廊的地基圆木年久失修，山上连日下雨。",
+   "summary": "御神山半腰有一座千年古社，主祭殿外挑出一段悬空十二米的木构神乐回廊。首席大巫女每年夏秋之交在回廊上主持镇山祈福古仪，侍从乐女在廊下吹龙笛伴奏。今年社里住进了神道考古研究生、银行派来的鉴定师和几位外客，白天各忙各的，夜里在观礼平台看排练。",
    "title": "受困神龛大巫女"
   },
   {
@@ -2670,22 +2662,20 @@
   {
    "content_tags": [
     "intimate",
-    "humiliation",
-    "substance",
     "workplace_power",
-    "disaster"
+    "crime"
    ],
    "default_person": "second",
-   "era": "十九世纪末巴黎大歌剧院繁盛时期",
+   "era": "1889 年巴黎大歌剧院的演出季开幕",
    "id": "opera_house_understage_mechanism",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "巴黎加尼叶歌剧院挑高主舞台与地下机械深井",
-   "sha256": "4d0eb692d418c9215af35dca9e2801b5ef171adca61c3c6270be88c3ea579100",
+   "region": "巴黎大歌剧院：飞桥舞台、镜廊、皇家包厢与地下深井",
+   "sha256": "54f62cf469502ad2377684e58793a30c4b7331dd248c776c90a511a951087b1a",
    "status": "released",
-   "summary": "巴黎歌剧院首演盛典之夜宾朋满座，浮华台面之下庞大蒸汽液压齿轨与二十米飞桥悬空运转，各方名流暗潮涌动。",
+   "summary": "1889 年的巴黎大歌剧院，水晶枝形吊灯照亮环形镜廊与天鹅绒包厢，名流贵胄齐聚，观赏演出季开幕首演《天鹅湖》。台上首席芭蕾舞姬领衔群舞，台下首席指挥、服装总监、驻场机械总师与董事会赞助男爵各司其职，在乐章与香槟背后角力新一季的名利归属。",
    "title": "失态的首席舞姬"
   },
   {
@@ -3474,24 +3464,21 @@
   {
    "content_tags": [
     "intimate",
-    "bodily_harm",
-    "death",
     "workplace_power",
-    "crime",
     "workplace",
-    "disaster"
+    "crime"
    ],
    "default_person": "second",
-   "era": "当代广电传媒中心特大型综艺演播大厅",
+   "era": "当代广电传媒中心的跨年晚会联排季",
    "id": "stage_mic_pack_clip_ratchet_release",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "万人演播大厅挑高舞台区与倾斜电动升降T台死角",
-   "sha256": "ffcc4753e6bb1f417ba339f401921d4cf21a751e5c2939492c87b8208169d539",
+   "region": "广电传媒中心一号演播大厅：水幕舞台、侧幕暗廊与总控室",
+   "sha256": "c9fa44717eefdecd1a140165d3f66f93c37ba837e2c2d78ecf9d5d9f559885ae",
    "status": "released",
-   "summary": "回归打歌舞台前一周，广电大厦一号演播厅天天在带妆彩排，台下只有经纪人和几块提前送到的应援灯牌，女团C位每晚练到最后一个离开。舞台机械总监和音频主管都被留到深夜。顶上的喷淋水幕和电动升降T台都是新装的，联调还没做完。",
+   "summary": "十二月的一号演播大厅，女团正为跨年晚会的回归舞台带妆联排。挑高舞台下堆着粉丝提前送来的应援灯牌，C位每晚都在水幕灯架下练到最晚；队长、声乐总监、执行经纪人和技术团队在后台与总控室之间来回奔忙，要定下直播夜最终的声光方案和站位。",
    "title": "湿透舞台女团C位"
   },
   {
@@ -4077,24 +4064,22 @@
   {
    "content_tags": [
     "intimate",
-    "bodily_harm",
-    "substance",
-    "death",
     "crime",
-    "workplace",
-    "disaster"
+    "supernatural",
+    "bodily_harm",
+    "workplace"
    ],
    "default_person": "second",
-   "era": "近现代哥特奇幻地下炼金避难所",
+   "era": "1897 年深秋，喀尔巴阡山麓的血族古堡",
    "id": "vampire_crypt_uv_barrier_scepter_lever",
    "modes": [
     "daily",
     "pressure"
    ],
-   "region": "古老哥特地宫大理石石室与高能紫外线回廊死角",
-   "sha256": "f827f8a9feec424d5e55e5ef29bf1520fe4bda4ee3cb5f5235e72349e099416e",
+   "region": "喀尔巴阡山麓的没落血族古堡：地宫棺室、圣物库与藏书回廊",
+   "sha256": "85835a03a43edcab5220bec5593954446474149d98e703bb65b35a72ea95a8bb",
    "status": "released",
-   "summary": "哥特古堡的地宫里，没落的血族名门只剩下最后一位真祖千金，靠变卖祖传藏品和一杯杯红酒熬过漫长的白昼。来地宫考察的猎魔人学者，本该是血族的宿敌，却在古堡里住了一个月。地宫的防盗机关是祖上装的紫外线灯网，电路早就老化了。",
+   "summary": "十九世纪末，喀尔巴阡山麓一座古堡的地宫里，没落血族名门只剩最后一位真祖千金，靠变卖祖传藏品撑着门面。本该是宿敌的猎魔人学者受雇来整理古籍，已在古堡同住了整整一个月。入秋后，老管家每晚点亮拱廊两侧的枝形烛台，石室里飘着旧羊皮卷和蜂蜡的气味。",
    "title": "末代血族千金"
   },
   {

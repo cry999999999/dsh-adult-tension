@@ -1,113 +1,235 @@
 {
  "background_cast": [
   {
-   "adult_context": "大剧院受聘四十年之资深成年老匠人，享有正式工民事签约地位",
+   "adult_context": "年满五十岁、执笔巴黎第一大报剧评栏三十年的剧评人。",
    "age_range": [
-    45,
+    50,
+    68
+   ],
+   "function": "rumor_source",
+   "gender": "any",
+   "id": "bg_critic",
+   "line": "明天的花边栏还缺一段，诸位谁愿意赏我一个故事？",
+   "location_ids": [
+    "loc_promenade_foyer"
+   ],
+   "name": null,
+   "role": "剧评泰斗"
+  },
+  {
+   "adult_context": "年满四十岁、奉帝国剧院之命来巴黎签人的代表。",
+   "age_range": [
+    40,
+    55
+   ],
+   "function": "messenger",
+   "gender": "any",
+   "id": "bg_petersburg_envoy",
+   "line": "终幕之前拿不到签字，聘书就送去给次席了。",
+   "location_ids": [
+    "loc_promenade_foyer",
+    "loc_ballerina_dressing_room"
+   ],
+   "name": null,
+   "role": "圣彼得堡帝国剧院代表"
+  },
+  {
+   "adult_context": "年满四十岁、歌剧院聘请的驻场外科医生。",
+   "age_range": [
+    40,
     60
    ],
    "function": "helper",
-   "gender": "male",
-   "id": "bg_stagehand_jean",
-   "line": "老场工让诺紧攥粗麻悬索在侧翼阴影里屏息凝视，随时准备遵照{npc.name}的手势拉动配重沙袋平衡台面。",
+   "gender": "any",
+   "id": "bg_surgeon",
+   "line": "再这么转下去，这只脚踝就别想再上台了。",
    "location_ids": [
-    "loc_main_stage_bridge",
-    "loc_promenade_foyer"
+    "loc_ballerina_dressing_room"
    ],
-   "name": "让诺",
-   "role": "舞台悬索老场工"
+   "name": null,
+   "role": "驻场外科医生"
   },
   {
-   "adult_context": "取得巴黎工业动力司炉成年执照之专业持证技术员",
+   "adult_context": "年满三十岁、在乐团做了五年副指挥的成年乐手。",
    "age_range": [
     30,
-    50
-   ],
-   "function": "obstacle",
-   "gender": "male",
-   "id": "bg_boiler_tender_pierre",
-   "line": "浑身油污的司炉工皮埃尔手持铁铲守在泄压阀前大声叫嚷，阻拦旁人靠近因高温过载剧烈颤抖之主气阀。",
-   "location_ids": [
-    "loc_understage_pit_vault"
-   ],
-   "name": "皮埃",
-   "role": "司炉检修工"
-  },
-  {
-   "adult_context": "享有法兰西国家新闻学会成年资深委员头衔之报界元老",
-   "age_range": [
-    40,
-    58
-   ],
-   "function": "witness",
-   "gender": "male",
-   "id": "bg_critic_albert",
-   "line": "费加罗报特约主笔夏尔端着折叠观剧镜平视台面，指尖铅笔在速记本上悬停不放过任何一处微观破绽。",
-   "location_ids": [
-    "loc_main_stage_bridge",
-    "loc_director_box_lounge"
-   ],
-   "name": "夏尔",
-   "role": "剧评泰斗记者"
-  },
-  {
-   "adult_context": "歌剧院正式录用之成年全职女管侍，享有独立民事法定身份",
-   "age_range": [
-    22,
-    30
-   ],
-   "function": "messenger",
-   "gender": "female",
-   "id": "bg_usher_claire",
-   "line": "身穿束腰长裙的引座员克莱尔手捧银制名帖在廊柱间快步穿梭，为包厢长官传递着幕间休息更替之密信。",
-   "location_ids": [
-    "loc_director_box_lounge",
-    "loc_promenade_foyer"
-   ],
-   "name": "克莱",
-   "role": "贵宾廊引座侍女"
-  },
-  {
-   "adult_context": "巴黎警察厅正式在编成年公职消防辅员",
-   "age_range": [
-    24,
-    38
-   ],
-   "function": "rumor_source",
-   "gender": "male",
-   "id": "bg_fire_marshal_luc",
-   "line": "手持水龙水带的消防辅员吕克神色慌张地向过往人员散播后厨锅炉房漏水之惊悚传言加剧骚乱。",
-   "location_ids": [
-    "loc_understage_pit_vault"
-   ],
-   "name": "吕克",
-   "role": "驻场消防辅警"
-  },
-  {
-   "adult_context": "歌剧院正式签约年满二十二周岁成年职业芭蕾独舞演员",
-   "age_range": [
-    22,
-    28
+    40
    ],
    "function": "helper",
-   "gender": "female",
-   "id": "bg_corps_dancer_emma",
-   "line": "身穿浅粉硬纱裙的伴舞领队卡蜜在侧幕排头肃立，单手稳稳拉住侧向幕帘为中央谢幕台面筑起第二道视线屏障。",
+   "gender": "any",
+   "id": "bg_deputy_conductor",
+   "line": "总谱我背得下来，就是没在两千人面前站过。",
    "location_ids": [
-    "loc_main_stage_bridge",
-    "loc_promenade_foyer"
+    "loc_main_stage_bridge"
    ],
-   "name": "卡蜜",
-   "role": "群舞领队伴舞女伶"
+   "name": null,
+   "role": "副指挥"
+  },
+  {
+   "adult_context": "年满二十四岁、带领群舞的资深舞者。",
+   "age_range": [
+    24,
+    32
+   ],
+   "function": "witness",
+   "gender": "female",
+   "id": "bg_corps_leader",
+   "line": "首席今晚转得太狠了，你们看见那只脚了吗？",
+   "location_ids": [
+    "loc_main_stage_bridge"
+   ],
+   "name": null,
+   "role": "群舞领队"
+  },
+  {
+   "adult_context": "年满二十五岁、在男爵府当差多年的侍从。",
+   "age_range": [
+    25,
+    45
+   ],
+   "function": "obstacle",
+   "gender": "any",
+   "id": "bg_box_footman",
+   "line": "男爵吩咐过，今晚包厢只进不出。",
+   "location_ids": [
+    "loc_director_box_lounge"
+   ],
+   "name": null,
+   "role": "包厢侍从"
   }
  ],
  "cast_combos": [
   {
-   "chemistry": "工长以严谨力学参数指引撬动角度，首席舞者借身形屈膝旋转发力，在生死关头达成绝对互信合作。",
-   "id": "combo_engineer_and_ballerina",
+   "chemistry": "{char_celeste_ballerina.name}只肯让你托举，台上台下，你们的默契连群舞都看在眼里。",
+   "id": "cc_celeste_partner_mirror",
    "identity_ids": [
-    "identity_chief_machinist",
-    "identity_ballet_costumer"
+    "identity_principal_partner"
+   ],
+   "player_positions": [
+    "equal"
+   ],
+   "power_structure": "equal",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 4
+     },
+     "b": "char_celeste_ballerina",
+     "b_to_a": {
+      "tension": 2,
+      "trust": 5
+     },
+     "reason": "终排那夜在落地铜镜前，首席任你从背后解开束腰丝带，红着脸让你亲手系上那枚调音叉坠饰。",
+     "stage": "intimate"
+    }
+   ],
+   "slots": [
+    "char_celeste_ballerina"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "首席要你今夜在走与留之间，替自己说一句真话。",
+    "limit_gap": "你护着首席会坐实流言，首席靠近你就会被男爵盯上。",
+    "meeting_reason": "第一幕刚落，{char_celeste_ballerina.name}退入化妆间反锁了门，把你的手按在胸口的坠饰上，说男爵刚派人送来了续约通牒。",
+    "resource_gap": "你握着压轴双人舞的编排，首席握着自己的去留。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_contract_expiry"
+   ]
+  },
+  {
+   "chemistry": "你们已经私定终身，可在镜廊里，{char_celeste_ballerina.name}仍要对你行足全套的屈膝礼。",
+   "id": "cc_celeste_noble_letter",
+   "identity_ids": [
+    "identity_noble_patron"
+   ],
+   "player_positions": [
+    "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 2,
+      "trust": 5
+     },
+     "b": "char_celeste_ballerina",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 5
+     },
+     "reason": "两个月前塞纳河畔的私宴后你们私定终身，首席把冠冕的备用发簪交给你保管。",
+     "stage": "committed"
+    }
+   ],
+   "slots": [
+    "char_celeste_ballerina"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "首席想知道，你是否还记得塞纳河畔说过的话。",
+    "limit_gap": "你偏袒首席会被董事会议论，首席走漏风声就会被男爵扣下。",
+    "meeting_reason": "幕间的镜廊旁，{char_celeste_ballerina.name}借着向你行屈膝礼，用只有你听得见的声音请你在第三幕前签好去圣彼得堡的通行函。",
+    "resource_gap": "你能签发巡演推荐函，首席手里只有一支冠冕发簪。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_petersburg_offer"
+   ]
+  },
+  {
+   "chemistry": "{char_celeste_ballerina.name}是台上的白天鹅，你是乐池里的一把琴，两人之间隔着一道栏杆和两千双眼睛。",
+   "id": "cc_celeste_violin_three_points",
+   "identity_ids": [
+    "identity_orchestra_violinist"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "char_celeste_ballerina",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "深夜排练后首席常留在台口听你拉慢板，还把贴身戴热的调音叉坠饰借给你校音。",
+     "stage": "flirting"
+    }
+   ],
+   "slots": [
+    "char_celeste_ballerina"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "首席想在走之前，再听你拉一遍那段慢板。",
+    "limit_gap": "首席身边围着男爵的人，你连上台口都得找由头。",
+    "meeting_reason": "谢幕时{char_celeste_ballerina.name}的目光越过观众落在乐池前排，足尖在台板上点了三下，示意你幕间去化妆间。",
+    "resource_gap": "首席一句话就能让你留在首席席位，你只有一段慢板。"
+   },
+   "tags": [
+    "intimate"
+   ],
+   "tension_engine_ids": [
+    "te_contract_expiry"
+   ]
+  },
+  {
+   "chemistry": "{char_mathilde_costumer.name}在后台对谁都凶，唯独见了你，会先替你拍掉肩上的灰。",
+   "id": "cc_mathilde_machinist_wardrobe",
+   "identity_ids": [
+    "identity_chief_machinist"
    ],
    "player_positions": [
     "low",
@@ -122,133 +244,190 @@
       "tension": 3,
       "trust": 4
      },
-     "b": "char_celeste_ballerina",
+     "b": "char_mathilde_costumer",
      "b_to_a": {
       "tension": 3,
       "trust": 4
      },
-     "reason": "舞台飞桥之上托付生死的默契搭档与艺术协作",
-     "stage": "familiar"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 4
-     },
-     "b": "char_gaston_engineer",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 4
-     },
-     "reason": "剧院重型机械抢险巡查中的患难工友",
-     "stage": "familiar"
-    },
-    {
-     "a": "char_celeste_ballerina",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 4
-     },
-     "b": "char_gaston_engineer",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 4
-     },
-     "reason": "台上台下以手势与眼神传递撬动角位读秒数据共历生死一线",
-     "stage": "familiar"
+     "reason": "那年大雪封门，你们在堆满天鹅绒剧服的衣帽间里过了一夜，你配的深井铜钥匙至今在总监衣袋里。",
+     "stage": "intimate"
     }
    ],
    "slots": [
-    "char_celeste_ballerina",
-    "char_gaston_engineer"
+    "char_mathilde_costumer"
    ],
    "stakes": {
-    "irreplaceable_goal": "赶在重型铁幕轰鸣坠死台口前挑脱棘轮恢复自由身并完成无瑕谢幕封神。",
-    "limit_gap": "工长受限于剧场操作规章不得硬断电源，名伶受限于古典艺术名声绝不可当场大声呼救。",
-    "meeting_reason": "舞台剪刀臂突发偏载卡滞将舞者足尖缎带与台板绞死在同一机械断裂交汇点。",
-    "resource_gap": "工长手握厚重工程器械却无法登台代劳，名伶身披昂贵轻纱手持单薄音叉却需亲手在众目睽睽下破拆。"
+    "irreplaceable_goal": "总监要一个答案，不是关于首席，是关于你们。",
+    "limit_gap": "你放首席走要担责任，总监送首席走就失去了最亲的人。",
+    "meeting_reason": "{char_mathilde_costumer.name}在后台走廊拦住你，把首席出逃的行李箱塞到你手里，贴近你耳畔问你今夜过后还留不留在歌剧院。",
+    "resource_gap": "你握着后台所有的钥匙，总监握着首席的车票和行李。"
    },
-   "tags": [],
+   "tags": [
+    "intimate"
+   ],
    "tension_engine_ids": [
-    "engine_shear_imbalance",
-    "engine_iron_curtain_countdown"
+    "te_petersburg_offer"
    ]
   },
   {
-   "chemistry": "指挥以狂暴交响乐浪掩盖台面金属撞击回声，首席舞者依循鼓点重音发力别撬，艺术与机巧浑然一体。",
-   "id": "combo_conductor_and_ballerina",
+   "chemistry": "{char_henri_conductor.name}敬畏你的耳朵，也提防你的记性，每次请示都要先看你的脸色。",
+   "id": "cc_henri_noble_score",
    "identity_ids": [
-    "identity_orchestra_violinist"
+    "identity_noble_patron"
    ],
    "player_positions": [
-    "low",
-    "equal",
     "high"
+   ],
+   "power_structure": "player_high",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 1
+     },
+     "b": "char_henri_conductor",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 2
+     },
+     "reason": "上月曲目审定会上，你点出间奏曲极似首席亡父的旧作，指挥当场打翻了咖啡杯。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "char_henri_conductor"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "指挥想知道，你打算什么时候开口。",
+    "limit_gap": "你揭穿旧案会让乐团群龙无首，指挥认错就一无所有。",
+    "meeting_reason": "{char_henri_conductor.name}捧着总谱走进皇家包厢请示下半场的节拍，眼神闪烁地试探你是否翻过乐谱库底层的封存手稿。",
+    "resource_gap": "你握着首席名额的否决权，指挥握着全场的节拍。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_stolen_score"
+   ]
+  },
+  {
+   "chemistry": "{char_gaston_engineer.name}是你在后台最信得过的搭档，你们之间的话从来不用说第二遍。",
+   "id": "cc_gaston_machinist_receipts",
+   "identity_ids": [
+    "identity_chief_machinist"
+   ],
+   "player_positions": [
+    "equal"
    ],
    "power_structure": "equal",
    "relations": [
     {
      "a": "player",
      "a_to_b": {
-      "tension": 3,
+      "tension": 1,
       "trust": 4
      },
-     "b": "char_celeste_ballerina",
+     "b": "char_gaston_engineer",
      "b_to_a": {
-      "tension": 3,
+      "tension": 1,
       "trust": 4
      },
-     "reason": "台前幕后心照不宣之首席艺术灵魂共鸣",
-     "stage": "intimate"
-    },
+     "reason": "五年前更换吊灯重链，你们在穹顶并肩干了三天三夜，从此是彼此最信得过的搭档。",
+     "stage": "familiar"
+    }
+   ],
+   "slots": [
+    "char_gaston_engineer"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "总师想和你一起决定，这叠收据交给谁。",
+    "limit_gap": "你插手账目会得罪董事会，总师交出收据就会丢掉饭碗。",
+    "meeting_reason": "{char_gaston_engineer.name}在深井的仪表盘前递给你一叠泛黄的收据，沉声说男爵挪用修缮款的事今晚瞒不住了。",
+    "resource_gap": "你握着后台的钥匙和调度，总师握着男爵挪用公款的收据。"
+   },
+   "tags": [
+    "workplace"
+   ],
+   "tension_engine_ids": [
+    "te_repair_fund"
+   ]
+  },
+  {
+   "chemistry": "{char_mathilde_costumer.name}把手稿藏了十年，{char_henri_conductor.name}找了十年；你夹在中间，两个人都信你。",
+   "id": "cc_mathilde_henri_manuscript",
+   "identity_ids": [
+    "identity_orchestra_violinist"
+   ],
+   "player_positions": [
+    "low"
+   ],
+   "power_structure": "npc_high",
+   "relations": [
     {
      "a": "player",
      "a_to_b": {
       "tension": 3,
       "trust": 3
      },
-     "b": "char_henri_conductor",
+     "b": "char_mathilde_costumer",
      "b_to_a": {
       "tension": 3,
       "trust": 3
      },
-     "reason": "严苛交响乐律统摄下的乐团指挥与首席协作",
-     "stage": "familiar"
+     "reason": "去年改演出服时，总监替你量袖长，软尺绕过你手腕停了很久，说下次给你做一件新的。",
+     "stage": "flirting"
     },
     {
-     "a": "char_celeste_ballerina",
+     "a": "player",
      "a_to_b": {
       "tension": 3,
-      "trust": 3
+      "trust": 2
      },
      "b": "char_henri_conductor",
      "b_to_a": {
-      "tension": 3,
-      "trust": 4
+      "tension": 4,
+      "trust": 3
      },
-     "reason": "以无形音律为掩护屏障建立起超越常人格局之艺术同盟信赖",
-     "stage": "intimate"
+     "reason": "去年冬天排练散场后，指挥留你在乐池合一段慢板，合完把指挥棒塞进你手里，没再收回去。",
+     "stage": "flirting"
+    },
+    {
+     "a": "char_mathilde_costumer",
+     "a_to_b": {
+      "tension": 5,
+      "trust": 0
+     },
+     "b": "char_henri_conductor",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 0
+     },
+     "reason": "总监握着指挥剽窃的手稿，指挥一直怀疑原件在后台。",
+     "stage": "testing"
     }
    ],
    "slots": [
-    "char_celeste_ballerina",
+    "char_mathilde_costumer",
     "char_henri_conductor"
    ],
    "stakes": {
-    "irreplaceable_goal": "在观众毫无察觉台底机械事故的前提下平稳收束全场音乐与舞蹈史诗。",
-    "limit_gap": "指挥不能移步离开乐池指挥台半寸，舞者无法开口言语唯能以身法姿态呼应律动。",
-    "meeting_reason": "天鹅湖终曲压轴华彩乐段需要音乐强合奏与舞者回旋起跳达到完美同拍契合。",
-    "resource_gap": "指挥坐拥整座交响乐团磅礴声浪调动权柄，舞者唯有自身轻盈躯干与足尖自救支点。"
+    "irreplaceable_goal": "你得决定，今晚是替手稿作证，还是替指挥留一条退路。",
+    "limit_gap": "你帮总监就会丢掉席位，帮指挥就是替剽窃者遮羞。",
+    "meeting_reason": "化妆间里，{char_mathilde_costumer.name}从裙撑暗袋里抽出泛黄的手稿摊在梳妆台上，{char_henri_conductor.name}的指挥棒停在半空，你抱着琴站在门边。",
+    "resource_gap": "总监握着手稿原件，指挥握着你在乐团的席位。"
    },
-   "tags": [],
+   "tags": [
+    "workplace"
+   ],
    "tension_engine_ids": [
-    "engine_public_gaze_scrutiny"
+    "te_stolen_score",
+    "te_contract_expiry"
    ]
   },
   {
-   "chemistry": "男爵居高临下以雄厚资本与权贵气场弹压外界闲言，首席舞者以绝世风骨令男爵折服甘愿倾囊相助。",
-   "id": "combo_patron_and_ballerina",
+   "chemistry": "{char_gaston_engineer.name}每次汇报都把怀表放在你案头，{char_philippe_patron.name}每次见你都想拉你联署动用储备金。",
+   "id": "cc_gaston_philippe_box_ledger",
    "identity_ids": [
     "identity_noble_patron"
    ],
@@ -257,1079 +436,1087 @@
     "equal",
     "high"
    ],
+   "power_structure": "switchable",
+   "relations": [
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 3,
+      "trust": 3
+     },
+     "b": "char_gaston_engineer",
+     "b_to_a": {
+      "tension": 3,
+      "trust": 4
+     },
+     "reason": "总师每次向董事会汇报工程，都把那块亲手打磨的黄铜怀表留在你案头，从没开口要回去。",
+     "stage": "flirting"
+    },
+    {
+     "a": "player",
+     "a_to_b": {
+      "tension": 4,
+      "trust": 1
+     },
+     "b": "char_philippe_patron",
+     "b_to_a": {
+      "tension": 4,
+      "trust": 1
+     },
+     "reason": "你们在董事会分属两派，男爵一直想拉你联署动用剧院储备金，被你挡回去三次。",
+     "stage": "testing"
+    },
+    {
+     "a": "char_gaston_engineer",
+     "a_to_b": {
+      "tension": 5,
+      "trust": -2
+     },
+     "b": "char_philippe_patron",
+     "b_to_a": {
+      "tension": 4,
+      "trust": -1
+     },
+     "reason": "总师握着男爵挪用公款的收据，男爵怀疑账目漏在深井。",
+     "stage": "testing"
+    }
+   ],
+   "slots": [
+    "char_gaston_engineer",
+    "char_philippe_patron"
+   ],
+   "stakes": {
+    "irreplaceable_goal": "今晚这扇门里说定的事，决定剧院下一季归谁。",
+    "limit_gap": "你站到哪一边，另一边都会跟你翻脸。",
+    "meeting_reason": "{char_gaston_engineer.name}攥着挪用修缮款的收据闯进包厢外厅，{char_philippe_patron.name}脸色铁青地让侍从关门，转身说要和你平分下一季的票房分成。",
+    "resource_gap": "你握着董事会的裁决票，总师握着收据，男爵握着首席的契约。"
+   },
+   "tags": [
+    "workplace",
+    "crime"
+   ],
+   "tension_engine_ids": [
+    "te_repair_fund",
+    "te_contract_expiry"
+   ]
+  },
+  {
+   "chemistry": "{char_philippe_patron.name}雇过你在私人沙龙伴奏，从那以后总在打听首席在后台和谁走得最近。",
+   "id": "cc_philippe_violin_necklace",
+   "identity_ids": [
+    "identity_orchestra_violinist"
+   ],
+   "player_positions": [
+    "low"
+   ],
    "power_structure": "npc_high",
    "relations": [
     {
      "a": "player",
      "a_to_b": {
       "tension": 4,
-      "trust": 3
-     },
-     "b": "char_celeste_ballerina",
-     "b_to_a": {
-      "tension": 4,
-      "trust": 3
-     },
-     "reason": "危机时刻给予尊严庇护与信任试探之羁绊",
-     "stage": "testing"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 3,
-      "trust": 3
-     },
-     "b": "char_philippe_patron",
-     "b_to_a": {
-      "tension": 3,
-      "trust": 3
-     },
-     "reason": "歌剧院理事会赞助权责监督与首演现场巡检",
-     "stage": "familiar"
-    },
-    {
-     "a": "char_celeste_ballerina",
-     "a_to_b": {
-      "tension": 4,
-      "trust": 2
+      "trust": 0
      },
      "b": "char_philippe_patron",
      "b_to_a": {
       "tension": 4,
-      "trust": 3
+      "trust": 1
      },
-     "reason": "权势资本与孤高艺术名角在危难关头的试探与无声护持博弈",
+     "reason": "你在男爵沙龙伴奏时，男爵三次旁敲侧击问首席和谁走得近，你三次都拉错了同一个音。",
      "stage": "testing"
     }
    ],
    "slots": [
-    "char_celeste_ballerina",
     "char_philippe_patron"
    ],
    "stakes": {
-    "irreplaceable_goal": "在保全名媛尊严与艺术清白的前提下确立彼此平等互敬之深层支持盟约。",
-    "limit_gap": "男爵必须维护法兰西世家大族端庄门楣体统，舞者誓死不作权势豪门之附庸丝雀。",
-    "meeting_reason": "男爵亲临皇家包厢视察巨额赞助首演成果却意外撞破名伶被困危局深渊。",
-    "resource_gap": "赞助男爵执掌剧院生杀大权与巨额财富，首席名伶仅凭一身傲骨与超绝舞技立身。"
+    "irreplaceable_goal": "男爵想从你的琴声里听出，坠饰到底是谁的。",
+    "limit_gap": "你开口就保不住席位，男爵发作就失了体面。",
+    "meeting_reason": "幕间{char_philippe_patron.name}命你在包厢里拉琴助兴，端着锦盒要首席当面摘下胸口那条来历不明的坠饰，换上钻石项链。",
+    "resource_gap": "男爵握着你在乐团的饭碗，你知道首席胸口那条坠饰是谁送的。"
    },
-   "tags": [],
+   "tags": [
+    "workplace"
+   ],
    "tension_engine_ids": [
-    "engine_public_gaze_scrutiny"
+    "te_contract_expiry"
    ]
   },
   {
-   "chemistry": "服装师在侧幕以宽幅大氅筑起防窥暗帘，首席舞者在脱钩瞬间顺势借力闪入怀中，姐妹同心天衣无缝。",
-   "id": "combo_costumer_and_ballerina",
+   "chemistry": "{char_lucas_inspector.name}在后台巡视时总会在你身边多停一步，问的都是公事，看的却不全是公事。",
+   "id": "cc_lucas_partner_witness",
    "identity_ids": [
-    "identity_ballet_costumer"
+    "identity_principal_partner"
    ],
    "player_positions": [
-    "low",
-    "equal",
-    "high"
+    "equal"
    ],
-   "power_structure": "player_high",
+   "power_structure": "equal",
    "relations": [
     {
      "a": "player",
      "a_to_b": {
-      "tension": 2,
-      "trust": 5
+      "tension": 3,
+      "trust": 2
      },
-     "b": "char_celeste_ballerina",
+     "b": "char_lucas_inspector",
      "b_to_a": {
-      "tension": 2,
-      "trust": 5
+      "tension": 3,
+      "trust": 3
      },
-     "reason": "守护白天鹅完美仪态与贴身衣物防线的至交",
-     "stage": "committed"
-    },
-    {
-     "a": "player",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 5
-     },
-     "b": "char_mathilde_costumer",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 5
-     },
-     "reason": "后台暗处联手织就防走光人墙屏障的密友",
-     "stage": "intimate"
-    },
-    {
-     "a": "char_celeste_ballerina",
-     "a_to_b": {
-      "tension": 2,
-      "trust": 5
-     },
-     "b": "char_mathilde_costumer",
-     "b_to_a": {
-      "tension": 2,
-      "trust": 5
-     },
-     "reason": "后台多年相濡以沫结下的金石莫逆姐妹真情与职业守护纽带",
-     "stage": "committed"
+     "reason": "上次临检后，督察在空荡的观众席陪你走了一圈，临别时把自己的斗篷披到你肩上。",
+     "stage": "flirting"
     }
    ],
    "slots": [
-    "char_celeste_ballerina",
-    "char_mathilde_costumer"
+    "char_lucas_inspector"
    ],
    "stakes": {
-    "irreplaceable_goal": "确保舞裙后腰搭扣哪怕崩断亦绝不在观众面前泄露半分肌肤破绽。",
-    "limit_gap": "舞者必须以完美身段完成最后定格大礼，裁造师需在毫秒之间抚平一切破绽丝缕。",
-    "meeting_reason": "演出服装定制与舞台机械受力直接维系着舞者生命安全与台上仪容尊严。",
-    "resource_gap": "首席女台柱身居全场瞩目焦点中心，服装监修深藏侧翼幕布幽微阴影之中。"
+    "irreplaceable_goal": "督察要的是一个证人，也想知道你是不是只把这当公事。",
+    "limit_gap": "你签字作证就站到男爵对面，督察没有证人就立不了案。",
+    "meeting_reason": "{char_lucas_inspector.name}在镜廊的柱子后拦下你，摘下一只手套，低声问你今晚愿不愿意签一个名字。",
+    "resource_gap": "督察握着查封令，你知道后台每一个人的底细。"
    },
-   "tags": [],
+   "tags": [
+    "intimate"
+   ],
    "tension_engine_ids": [
-    "engine_iron_curtain_countdown"
+    "te_repair_fund"
    ]
   }
  ],
  "channels": [
   {
    "fidelity": "exact",
-   "id": "chan_whisper_box",
-   "reach": "大剧院二层赞助人包厢圈，五分钟内传达",
-   "text": "贵宾包厢之间回旋铜管传声密语"
+   "id": "ch_box_footmen",
+   "reach": "一个幕间传遍所有包厢",
+   "text": "包厢侍从之间的传话"
+  },
+  {
+   "fidelity": "exact",
+   "id": "ch_backstage_bell",
+   "reach": "从化妆间直达乐池和深井",
+   "text": "后台的拉铃和递条"
   },
   {
    "fidelity": "distorted",
-   "id": "chan_backstage_gossip",
-   "reach": "全剧团演员与杂工圈层，十分钟内传遍",
-   "text": "后台更衣室与化妆镜前走样流言"
+   "id": "ch_gossip_column",
+   "reach": "第二天早上传遍巴黎",
+   "text": "剧评人的报刊花边栏"
   }
  ],
  "character_templates": [
   {
-   "adult_context": "巴黎国立音乐舞蹈学院全日制研修结业年满二十一周岁名媛首席，享有完全独立民事签约权柄",
+   "adult_context": "年满二十二岁、在巴黎大歌剧院跳了七年的首席芭蕾舞姬。",
    "age_range": [
-    21,
+    22,
     22
    ],
    "appearance_options": [
-    "高挑优美的白天鹅颈项泛着珍珠般温润微光，白瓷般晶莹的面颊天生微带淡淡的红晕，与舞台上孤高冷艳之艺术仪态形成动人反差，身着多层昂贵硬纱白天鹅高定芭蕾舞裙配雪白缎面软底足尖鞋，胸口贴身暗系两毫米不锈钢扁刃调音叉坠饰。",
-    "乌黑如墨的青丝紧挽成典雅发髻并缀以纯银月桂冠冕，眼波宛如春水却含清冷孤霜，双颊天然微显一点血色令神态兼具娇柔与高贵，身穿纯白真丝刺绣白天鹅紧身短裙，足尖系带缠裹纤细雪白脚踝尽显大师级风范。"
+    "高挑优美的白天鹅颈项泛着珍珠般温润微光，白瓷般的面颊天生微带红晕，身着多层硬纱白天鹅高定舞裙配雪白缎面足尖鞋，胸口贴身暗系两毫米不锈钢扁刃调音叉坠饰。",
+    "乌黑青丝紧挽成典雅发髻，缀以纯银月桂冠冕，眼波如春水却含清冷孤霜，身穿纯白真丝刺绣白天鹅紧身短裙，足尖系带缠裹纤细雪白的脚踝。"
    ],
    "decision": {
     "avoids": [
-     "发出恐慌尖叫引来全场观众骚动哗然",
-     "粗暴拉扯真丝舞衣导致前襟撕裂春光外泄"
+     "拿津贴和名额压人的人"
     ],
-    "contrast": "台前被捧为不可亵渎的古典冰山神女，暗地里具备极其沉着老练的机械自救魄力",
-    "core_value": "以绝对高雅从容之古典艺术姿态征服全场并保全名媛尊严",
+    "contrast": "台上孤高冷艳，卸了妆会把脸埋进对方的手心里笑。",
+    "core_value": "掌声是给舞的，不是给买下舞者的人。",
     "goal_options": [
-     "在防火铁幕完全闭合前的二十秒极限时限内优雅解脱机械绞锁",
-     "于数千名流注视下保持白天鹅完美仪态从容脱困并赢得全场赞誉"
+     "今夜之后做回自由身",
+     "让对方跟自己一起走",
+     "替亡父的乐谱讨回署名"
     ],
     "never": [
-     "在聚光灯聚焦之下跪地狼狈呼救放弃自尊",
-     "因险情临头而破坏芭蕾名伶严谨古典形体规范"
+     "在台上向男爵屈膝认输"
     ],
     "prefers": [
-     "借助舞台既定舞蹈动作掩盖机械破拆发力动作",
-     "依靠自身携带的加厚不锈钢扁刃音叉精准剔除卡榫"
+     "懂音乐也懂舞的人",
+     "不把首席当成藏品的人"
     ],
     "pressure_responses": {
-     "breaking": "紧咬银牙强忍脚踝拉扯痛楚，调动全身爆发力顺势挑退逆止卡齿",
-     "high": "单腿屈膝将重心稳稳压低，借谢幕掩护以角向力矩发力破拆",
-     "low": "身姿挺立微抬下颌，眼神专注审视台板夹缝微动间隙",
-     "mid": "深吸一口气维持唇角清冷微笑，指尖悄然探入暗袋紧握调音叉柄"
+     "breaking": "锁上化妆间的门，抱着膝坐在地毯上不出声",
+     "high": "当着男爵的面摘下冠冕",
+     "low": "微笑行礼，把脚踝的疼藏进足尖鞋",
+     "mid": "在台板上点三下足尖，找信得过的人"
     },
-    "relationship_stance": "外表清冷高贵矜持自守，唯对展现纯粹机械搭救诚意者流露眸中信任",
-    "withdrawal": "阖上双眸屏息凝神，以标准宫廷鞠躬掩饰身形侧向受力微颤"
+    "relationship_stance": "清冷难近，可一旦交出调音叉，就是交出了心。",
+    "withdrawal": "锁上化妆间，对着落地铜镜一圈圈解开足尖鞋的系带。"
    },
    "gender": "female",
-   "gender_reason": "加尼叶歌剧院法兰西芭蕾学派百年传统钦定天鹅湖主角领舞女性体魄",
+   "gender_reason": "芭蕾首席白天鹅女台柱固定为女性。",
    "id": "char_celeste_ballerina",
    "identity": {
-    "authority": "独揽剧院保留剧目双人舞与压轴单人回旋动作编排决策权",
-    "exposure": "贴身紧身舞衣内衬暗佩微观破拆硬质音叉之事若被剧评指摘将沦为风波",
-    "hidden": "暗中掌握舞台地下液压支架偏位异响规律并随时自救防身",
+    "authority": "握着保留剧目压轴独舞的编排权，下一季留在巴黎还是出走圣彼得堡，由自己决定。",
+    "exposure": "左脚踝旧伤一旦被男爵知道，续约就会变成一纸病退书。",
+    "hidden": "已经收下圣彼得堡帝国剧院的邀约，打算今夜谢幕后彻底脱离男爵的控制。",
     "limits": [
-     "严禁在舞台众目睽睽之下失态呼救破坏芭蕾圣洁声誉",
-     "不能在防火铁幕落锁前脱离规定谢幕立定点位"
+     "私属契约今夜才期满",
+     "谢幕必须亲自出面"
     ],
     "obligations": [
-     "向皇家赞助席理事履行无瑕谢幕典礼",
-     "庇护剧团年轻舞者免受后台苛刻罚扣"
+     "把首演跳到最后一个音符"
     ],
     "resources": [
-     "两毫米加厚不锈钢高硬度扁刃调音叉",
+     "两毫米加厚不锈钢高硬度扁刃调音叉坠饰",
      "国家最高芭蕾舞团特聘首席纯金荣誉勋扣",
      "防滑纯羊皮特制软底绑带足尖鞋"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "处变不惊并精通精密机械力学之沉静守护者",
-     "懂得尊重艺术尊严且在暗中提供掩护支点之成熟智者"
+     "对方记得每一处换气的节拍",
+     "对方托住腰时稳得像台板"
     ],
     "boundaries": [
-     "抢险时的触碰只算救命，不算数",
-     "要等自己点头，舞衣才能解开"
+     "首席轻点三下足尖就停",
+     "不在包厢和镜廊里"
     ],
     "desire_range": [
-     2,
-     4
+     3,
+     5
     ],
-    "desired_position": "舞台并肩相契之生死默契同伴",
+    "desired_position": "谢幕后只剩两个人的化妆间",
     "dislikes": [
-     "轻浮傲慢的贵胄权欲施舍",
-     "未核实险情机制便蛮横撕扯名贵舞裙之粗鲁行径"
+     "被当众估价",
+     "香槟和雪茄的气味"
     ],
     "expression": "卸下头冠倚在化妆镜前，镜里的目光不再清冷：门帘放下吧……今夜的掌声，想和你单独再听一遍。",
     "likes": [
-     "沉稳有力的力学指引手势",
-     "谢幕后有人留在更衣隔间，替自己一枚枚解开舞衣后腰的暗扣"
+     "被人跪着系好足尖鞋",
+     "在空荡的乐池听一段慢板"
     ],
     "preconditions": [
-     "眼前的危局已经过去，双方都清醒、安全",
-     "出于本人的心意，不夹带报恩、交换或旁人的催促"
+     "两人都清醒，脚踝的伤已经处理好",
+     "首席自己先摘下冠冕"
     ],
     "self_control_range": [
-     3,
-     5
+     2,
+     4
     ]
    },
    "public_role": "歌剧院首席特级芭蕾女台柱",
    "schedule": [
     {
-     "from": 1140,
+     "from": 0,
+     "location_id": "loc_ballerina_dressing_room",
+     "to": 600
+    },
+    {
+     "from": 600,
      "location_id": "loc_main_stage_bridge",
+     "to": 1140
+    },
+    {
+     "from": 1140,
+     "location_id": "loc_ballerina_dressing_room",
      "to": 1260
     },
     {
-     "from": 1261,
-     "location_id": "loc_promenade_foyer",
-     "to": 1380
+     "from": 1260,
+     "location_id": "loc_main_stage_bridge",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "需在众目睽睽之下维持单腿站立屈膝高难度舞姿消耗巨大体力",
-      "option": "倒执高硬度音叉扁刃施加偏转剪切巧劲别开自锁棘舌"
+      "cost": "冠冕和高定剧服都要留给巴黎抵违约金。",
+      "option": "今夜签下圣彼得堡的聘书"
      },
      {
-      "cost": "需欠身向乐池倾斜暴露出舞裙后背撕裂的一道细微缝隙",
-      "option": "借乐池指挥递送之备用琴弓硬木柄顶退自锁簧片"
+      "cost": "男爵会抢在谢幕前把续约摆到全场面前。",
+      "option": "先跳完首演再作打算"
      }
     ],
-    "pressure": "防火铁幕轰鸣下坠二十秒倒计时迫在眉睫，千名看客近在咫尺直视台面",
-    "trigger": "乐池剪刀臂重型滑轨断裂突发倾斜，钢索死死咬死后腰绸带与足尖鞋丝绳"
+    "pressure": "续签就再被拴三年，不签就得在今夜之内赔清违约金离开。",
+    "trigger": "男爵派人送来了三年续约的通牒。"
    },
    "tags": [
+    "workplace",
     "intimate"
    ],
    "voices": {
-    "inner": "倒计时唯余十八秒，必须借这记屈膝大跳的反冲力将音叉撬入槽舌！",
-    "surface": "工长，升降台左侧阻尼卡齿似有顿挫，请勿切断配重液压回路。"
+    "inner": "今夜之后，我只为自己跳。",
+    "surface": "下半场请照总谱的速度，一拍也别快。"
    }
   },
   {
-   "adult_context": "法兰西矿业大学工学硕士结业年满三十四周岁剧院机械主管，负有全权工程民事法定职责",
+   "adult_context": "年满四十二岁、承袭爵位的歌剧院董事会首席赞助人。",
    "age_range": [
-    34,
-    45
+    42,
+    44
    ],
    "appearance_options": [
-    "身着深蓝粗呢工装排扣马甲配卷袖白麻衬衫，腰束挂满青铜卡尺与润滑油壶的加厚牛皮带，面容轮廓刚毅如雕凿，深邃褐色眼眸洞察机械关节每寸受力偏差，双手覆着厚茧却灵巧无比。",
-    "神情冷峻沉毅，蓄着修剪齐整的法式络腮短须，灰色开领斜纹呢大衣内衬夹带各类高碳钢螺丝起子与微型撬棍，通体散发着严谨工程学大师与生俱来的压迫感与可靠感。"
+    "两鬓梳得一丝不乱，胸前别着家徽，手里那根象牙柄文明杖从不离身。",
+    "坐在皇家包厢正中央时腰背笔直，笑起来只动嘴角，眼睛一直落在台上。"
    ],
    "decision": {
     "avoids": [
-     "采取盲目蛮力硬拉造成钢索崩断切伤舞者肢体",
-     "向官僚理事会做毫无意义之拖延性汇报"
+     "当众让男爵难堪的人"
     ],
-    "contrast": "外表沉闷甚至被视作不解风情的工匠，内里却对剧场每寸光影与舞者安全怀有滚烫热忱",
-    "core_value": "用严密无误的精密物理力学守护剧院每一个生命与艺术奇迹",
+    "contrast": "人前挥金如土，私下连一张账单都要看三遍。",
+    "core_value": "体面是要用钱买的，买下了就该归我。",
     "goal_options": [
-     "在铁幕砸实前协助首席舞者解除足跟钢索束缚并重置平衡",
-     "阻断高压蒸汽管道连锁爆裂化解地底毁灭危机"
+     "今夜让首席续签",
+     "压住修缮基金的账",
+     "拉拢对方站到自己这一边"
     ],
     "never": [
-     "在机械失控事故中弃守总控阀门独自逃生",
-     "将重大设备隐患过失推诿于台上受困演员"
+     "在贵族面前承认自己破产"
     ],
     "prefers": [
-     "以严谨实测数据与杠杆支点指导现场自救破拆",
-     "在幕后暗处排除隐患不惊扰台前观众沉浸感"
+     "懂规矩、肯合作的人"
     ],
     "pressure_responses": {
-     "breaking": "不顾蒸汽烫伤风险飞身抱住主平衡阀死死抵住回弹",
-     "high": "仰头死死锁定飞桥倾斜角度，大声报出力矩支撑坐标",
-     "low": "手指叩击铜管听音辨位，沉着下达调压指令",
-     "mid": "快步跃入机械深井下层，亲手抢接备用分流软管"
+     "breaking": "独自坐在拉上帘的包厢里，盯着空掉的锦盒",
+     "high": "当众要首席摘下来历不明的坠饰",
+     "low": "慷慨地递上锦盒",
+     "mid": "用手杖轻叩栏杆，让侍从去请人"
     },
-    "relationship_stance": "敬佩首席舞者的傲骨与临危镇定，视其为必须誓死护卫之艺术明珠",
-    "withdrawal": "紧锁双眉咬紧牙关，在控压表盘前飞速验算第二备选受力支点"
+    "relationship_stance": "只信契约和价码，从不先开口求人。",
+    "withdrawal": "拉上包厢的半帘，把手杖横放在膝上。"
    },
    "gender": "male",
-   "gender_reason": "十九世纪末巴黎重型蒸汽机械行会常任注册总工程师法定任职资格",
-   "id": "char_gaston_engineer",
-   "identity": {
-    "authority": "全权执掌歌剧院地下锅炉泵站启闭与舞台升降事故紧急叫停权",
-    "exposure": "三日前曾私下向董事会书面预警剪刀臂铸件砂眼裂隙未获重视",
-    "hidden": "暗中掌握即便全院断电亦能手动排空乐池油缸之隐秘泄流阀",
-    "limits": [
-     "未经剧院理事会许可不可强行拉闸切断主演出照明",
-     "无法直接冲上舞台中央替代演员完成动作"
-    ],
-    "obligations": [
-     "确保舞台装置绝不发生致命人员倾覆悲剧",
-     "维系加尼叶歌剧院重型工业机械奇迹平稳运转"
-    ],
-    "resources": [
-     "淬火高碳钢双向精密棘轮扳手",
-     "大剧院地下管网全套羊皮设计手稿",
-     "黄铜手持气压监测探针"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "高贵清冷却通晓机械原理、遇危不乱之独立女性",
-     "能在生死绝境中以眼神交托性命之无言默契"
-    ],
-    "boundaries": [
-     "抢险救援中任何肢体接触纯属工程力学支撑需要",
-     "绝不以此挟恩图报干涉对方艺术职业自主抉择"
-    ],
-    "desire_range": [
-     1,
-     3
-    ],
-    "desired_position": "遮风挡雨之可靠技术后盾与暗中守护者",
-    "dislikes": [
-     "遇险只知哭喊撕扯之无措做作",
-     "将工匠心血视作玩物之纨绔贵胄"
-    ],
-    "expression": "深沉目光穿透飞桥烟雾坚定凝视，稳稳竖起大拇指指引撬动角度",
-    "likes": [
-     "精准无误的动作执行力",
-     "沉静专注不带娇矜之坚毅眼神"
-    ],
-    "preconditions": [
-     "双方面临重大危机共担机械风险",
-     "确认彼此均为心智成熟且享有自主民事意志之成年人"
-    ],
-    "self_control_range": [
-     4,
-     5
-    ]
-   },
-   "public_role": "巴黎歌剧院驻场首席机械总师",
-   "schedule": [
-    {
-     "from": 1100,
-     "location_id": "loc_understage_pit_vault",
-     "to": 1280
-    },
-    {
-     "from": 1281,
-     "location_id": "loc_main_stage_bridge",
-     "to": 1400
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "手臂与肩头将承受高温蒸汽熏烤留下轻微烫痕",
-      "option": "冒着灼烫风险亲身攀爬至断裂剪刀臂节点人工锁死保险卡销"
-     },
-     {
-      "cost": "将导致乐池下坠触底发出轰鸣破坏本场音乐会录音效果",
-      "option": "全力扳开备用回流阀强行泄放整个乐池液压油料"
-     }
-    ],
-    "pressure": "管道残压若在两分钟内未完全泄放将引发地下主蒸汽包物理炸裂",
-    "trigger": "主液压回路失压致使升降乐池单侧立柱抱死剧烈倾斜十五度"
-   },
-   "tags": [],
-   "voices": {
-    "inner": "坚持住……这一撬必定能挑开棘爪，绝不能让防火幕伤及白天鹅分毫！",
-    "surface": "首席舞者小姐，将撬片向逆时针旋转三十度，以左侧法兰盘为杠杆支点！"
-   }
-  },
-  {
-   "adult_context": "巴黎国立高等音乐学院作曲教授年满三十八周岁国家功勋艺术家，具备完全法定民事签约地位",
-   "age_range": [
-    38,
-    52
-   ],
-   "appearance_options": [
-    "身材颀长挺拔，身穿定制黑丝绒燕尾服配纯白硬领衬衫与真丝领结，银白短发打理得一丝不苟，手持两尺加长实心乌木指挥棒，目光冷冽而严苛，举手投足尽显老牌指挥大师之威严风范。",
-    "神情孤傲矜持，佩戴一副无框金丝单片眼镜，燕尾服胸袋插着纯白真丝方巾，右手长年挥动琴谱指骨修长有力，在乐池前沿宛如君王般掌控全场数百人管弦音浪起伏。"
-   ],
-   "decision": {
-    "avoids": [
-     "乐团因乐池倾斜出现错音跑调引发全场哄堂大乱",
-     "令台下评委察觉白天鹅受制于升降台之窘迫异样"
-    ],
-    "contrast": "平日以严酷刻薄著称的独裁总监，危难关头却展现出无懈可击之声乐护航默契",
-    "core_value": "捍卫交响音乐神圣殿堂不容瑕疵之最高艺术标准",
-    "goal_options": [
-     "以管弦乐高潮强音掩盖舞台下方机械脱钩发出的金属撞击声",
-     "在乐池平台微沉中引导弦乐声部从容过渡至终曲强奏"
-    ],
-    "never": [
-     "在乐曲未终之前扔下指挥棒狼狈退场",
-     "在艺术危机面前出卖台上搭档以保全个人名誉"
-    ],
-    "prefers": [
-     "以宏大激昂之管弦交响掩盖台板撬击之刺耳杂音",
-     "通过精确节拍提示给台面自救提供读秒时间坐标"
-    ],
-    "pressure_responses": {
-     "breaking": "双臂大开指挥全乐团爆发出雷霆万钧之全合奏震荡全场",
-     "high": "左手猛然扬起示意定音鼓连击轰鸣，掩护撬动金属破拆声响",
-     "low": "手腕轻抖划出优美弧线，示意圆号声部压低音量",
-     "mid": "余光扫过斜上方受困舞足，指挥棒节拍瞬间加重暗示节奏"
-    },
-    "relationship_stance": "将首席舞者视为毕生不可多得之艺术缪斯，愿以音乐巨浪为其作掩护屏障",
-    "withdrawal": "眼神冰冷凝视乐谱，面部肌肉紧绷不泄露半分慌乱神色"
-   },
-   "gender": "male",
-   "gender_reason": "法兰西交响乐团联合会章程指定之终身乐团总监兼首席指挥岗位",
-   "id": "char_henri_conductor",
-   "identity": {
-    "authority": "对全场演出乐章节拍快慢与乐池升降协同拥有绝对发号施令权",
-    "exposure": "曾与首席舞者私下达成演艺契约支持其跳出剧院自组巡演班子",
-    "hidden": "指挥台脚踏板下暗藏直连液压房之断电急停铜索拉环",
-    "limits": [
-     "严禁在观众席掌声止歇前擅自放下指挥棒中断乐团演奏",
-     "不能离开指挥台踏上演员表演区域"
-    ],
-    "obligations": [
-     "确保柴可夫斯基天鹅湖组曲演奏达到极致声学艺术造诣",
-     "协调乐池弦乐手在台面晃动异响中维持音准不散"
-    ],
-    "resources": [
-     "传世名匠订制加长乌木指挥手杖",
-     "乐团特许黄金怀表",
-     "全本天鹅湖绝版总谱手抄本"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "对节拍韵律具有非凡感知力且绝不折服之骄傲灵魂",
-     "在风暴中心依然能踩准音符重音之顶级艺术共鸣者"
-    ],
-    "boundaries": [
-     "互动止于精神灵魂共鸣与舞台乐声庇护",
-     "绝不越过师友与艺术搭档之端庄礼仪边界"
-    ],
-    "desire_range": [
-     1,
-     3
-    ],
-    "desired_position": "以音浪构筑无形堡垒之艺术引路人与守护同盟",
-    "dislikes": [
-     "因私心扰乱整体交响宏构之狭隘之举",
-     "对经典曲目缺乏敬畏之粗制滥造表演"
-    ],
-    "expression": "高举指挥棒在空中划过一道破空烈风，双眸绽放赞许与振奋之芒",
-    "likes": [
-     "严丝合缝的艺术配合度",
-     "面对严酷审视时毫不退缩之倔强神情"
-    ],
-    "preconditions": [
-     "彼此必须在艺术追求上处于平视与高度互信层级",
-     "双方皆拥有完备独立成年人法定身份与声誉底线"
-    ],
-    "self_control_range": [
-     4,
-     5
-    ]
-   },
-   "public_role": "巴黎歌剧院交响乐团常任首席指挥",
-   "schedule": [
-    {
-     "from": 1160,
-     "location_id": "loc_main_stage_bridge",
-     "to": 1270
-    },
-    {
-     "from": 1271,
-     "location_id": "loc_director_box_lounge",
-     "to": 1390
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "管乐手体力提前透支将在返场加演时难以维持最高音准",
-      "option": "示意全乐团开启狂暴全合奏用声浪完全吞没舞台异响"
-     },
-     {
-      "cost": "需分神单手指挥可能导致后排大提琴声部稍许节拍拖沓",
-      "option": "抽出身侧备用硬木指挥棒探向乐池立柱轻敲发力点指引"
-     }
-    ],
-    "pressure": "若中断挥棒全场乐团将陷入停顿，丑闻将瞬间传遍巴黎各大沙龙",
-    "trigger": "升降乐池底盘受侧向剪力倾斜，指挥台扶手金属锁扣变形紧咬总谱架"
-   },
-   "tags": [],
-   "voices": {
-    "inner": "首席舞者，听准这通鼓点，鼓落刹那便是撬下棘轮的最佳掩护！",
-    "surface": "各声部注意，跟随定音鼓强音行进，第三小节延长两拍！"
-   }
-  },
-  {
-   "adult_context": "巴黎银行公会理事年满三十六周岁世袭男爵，依法享有完全财产支配与民事法权",
-   "age_range": [
-    36,
-    48
-   ],
-   "appearance_options": [
-    "身着高定墨黑英国马海毛双排扣礼服大衣，内衬浅金刺绣西装马甲，金发修剪得体微现卷曲，指间佩戴家族纹章红宝石金戒，鼻梁高挺目光锐利深邃，带着久居上位者之从容威严与审度气度。",
-    "神情优雅从容，手持一柄镶嵌天然象牙雕花手柄之黑檀木手杖，领口别着内政部颁发之名誉军团纯金勋扣，单手插在西裤口袋内，俯瞰剧场之姿态宛若审视私人收藏珍宝。"
-   ],
-   "decision": {
-    "avoids": [
-     "令心仪名角在低俗公众舆论中遭受非议与戏谑侮辱",
-     "采取卑劣乘人之危手段强加不平等附属契约"
-    ],
-    "contrast": "外人眼中冷酷算计之资本金主，面对真正艺术风骨时却愿掷千金甘作有力台阶",
-    "core_value": "以无可挑剔的阶层体面与雄厚资本掌控艺术珍宝之归属与辉光",
-    "goal_options": [
-     "在全场惊觉前动用权势弹压事故舆论并促成首演封神传世",
-     "亲自见证首席舞者展现傲世风骨并借机确立更深厚庇护盟约"
-    ],
-    "never": [
-     "在名流名媛面前暴跳如雷有失世家大族风度",
-     "坐视自己庇护之剧院台柱在舞台上遭遇灭顶之灾"
-    ],
-    "prefers": [
-     "在关键时刻动用特权与披风屏障阻绝宵小窥探目光",
-     "以绝对理性与充沛资源为受困者兜底善后"
-    ],
-    "pressure_responses": {
-     "breaking": "扬手示意包厢侍从准备展开名贵羊毛披风随时离座入场遮掩",
-     "high": "亲自踏至包厢前沿以威严目光逼退邻座窃窃私语之八卦看客",
-     "low": "轻摇象牙手杖微微侧首，嘴角泛起意味深长之从容玩味",
-     "mid": "放下双筒望远镜低声吩咐近侍封锁贵宾回廊闲杂人等进出"
-    },
-    "relationship_stance": "将首席舞者视作绝不容许蒙尘折损之传世名钻，欣赏其傲骨多于娇柔",
-    "withdrawal": "倚靠雕花天鹅绒椅背，神色漠然宛如一切皆在既定筹谋预料之中"
-   },
-   "gender": "male",
-   "gender_reason": "法兰西第三共和国参议院贵族特许受托人名册法定男性头衔",
+   "gender_reason": "剧院赞助男爵的角色设定为男性。",
    "id": "char_philippe_patron",
    "identity": {
-    "authority": "掌控剧院首席演员下一年度五万法郎津贴赞助与全欧巡演路线拍板权",
-    "exposure": "为谋求首席舞者独家肖像权曾秘密向工务部门垫付大笔改装垫款",
-    "hidden": "包厢内暗设隐秘暗门可在三十秒内踏足舞台侧翼贵宾入口",
+    "authority": "握着首席演员五万法郎的年度津贴、全欧巡演路线的拍板权和贵族包厢的社交封杀权。",
+    "exposure": "殖民地债券暴跌的事一旦传开，男爵在董事会的席位就保不住。",
+    "hidden": "已经付不起下一年的津贴，正暗中挪用剧院修缮基金填补私人亏空。",
     "limits": [
-     "不能在公开场合做出有失贵族体面之粗俗失态举止",
-     "必须受剧院董事会公开财务审计规约制衡"
+     "津贴要董事会年度拨款"
     ],
     "obligations": [
-     "确保今夜国际外交使节观摩首演圆满功成",
-     "维系巴黎社交圈对大歌剧院艺术品味之狂热崇奉"
+     "维持家族在巴黎社交界的体面"
     ],
     "resources": [
-     "法兰西国家银行黄金兑换券本",
-     "参议院紧急通行授权印章",
-     "皇家包厢直通后台专用纯金钥匙"
+     "三年续约羊皮纸",
+     "装着钻石项链的丝绒锦盒"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "面对金钱与危难皆不折腰之高贵傲骨与出尘才华",
-     "深陷绝境仍能维持天鹅般完美体态之超凡意志"
+     "对方不卑不亢的分寸",
+     "对方看穿了却留着情面"
     ],
     "boundaries": [
-     "资助与心意分开，绝不拿合约换亲近",
-     "人前照旧以董事之礼相待"
+     "对方说一声“请回”就停"
     ],
     "desire_range": [
-     2,
-     4
+     1,
+     3
     ],
-    "desired_position": "遮蔽风雨之强大守护盟友与势均力敌之追求者",
+    "desired_position": "皇家包厢里与对方并肩的那把椅子",
     "dislikes": [
-     "唯唯诺诺之逢迎媚俗",
-     "贪婪索求却无才无德之庸脂俗粉"
+     "被人可怜"
     ],
-    "expression": "倚着包厢栏杆递来一杯香槟，声音压得很低：男爵的签单今夜作废，剩下的只是一个想留下来的男人。",
+    "expression": "把象牙手杖靠在墙边，摘下手套，用指背极轻地碰一下对方的手腕，像是在问能不能再近一点。",
     "likes": [
-     "自信从容之对视姿态",
-     "散场后在空荡的包厢里并肩坐着，听对方讲第一次站上台的样子"
+     "被人认真听完一句话"
     ],
     "preconditions": [
-     "对方已经脱险、缓过神来",
-     "对方先开口，或清楚地回应了心意"
+     "两人清醒，契约的事已经了结"
     ],
     "self_control_range": [
-     3,
+     4,
      5
     ]
    },
    "public_role": "歌剧院董事会首席赞助男爵",
    "schedule": [
     {
-     "from": 1180,
+     "from": 0,
      "location_id": "loc_director_box_lounge",
+     "to": 600
+    },
+    {
+     "from": 600,
+     "location_id": "loc_promenade_foyer",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_director_box_lounge",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "男爵在董事会从此再也说不上话。",
+      "option": "放首席走，换对方替自己压住账目"
+     },
+     {
+      "cost": "修缮基金的收据会被人拿到督察面前。",
+      "option": "在谢幕前当众逼首席续签"
+     }
+    ],
+    "pressure": "逼得太紧会被翻出老底，放手就什么都没了。",
+    "trigger": "首席的契约今夜期满，修缮基金的账也快瞒不住。"
+   },
+   "tags": [
+    "workplace",
+    "crime"
+   ],
+   "voices": {
+    "inner": "要是连这也留不住，我还剩下什么。",
+    "surface": "首席的去留，自然是董事会说了算。"
+   }
+  },
+  {
+   "adult_context": "年满四十六岁、执掌巴黎歌剧院交响乐团十年的常任首席指挥。",
+   "age_range": [
+    46,
+    48
+   ],
+   "appearance_options": [
+    "燕尾服笔挺，银灰的头发向后梳得服帖，指挥棒握在指间像一柄细剑。",
+    "听到错音时下颌会微微一抬，镜片后的眼睛冷得能把乐池冻住。"
+   ],
+   "decision": {
+    "avoids": [
+     "不守拍子的乐手"
+    ],
+    "contrast": "人前是音乐厅的暴君，独处时会为一段慢板红了眼眶。",
+    "core_value": "拍子错了可以改，名声错了改不回来。",
+    "goal_options": [
+     "保住首席指挥的位置",
+     "让手稿的事永远不见天日",
+     "在对方面前留住最后一点体面"
+    ],
+    "never": [
+     "在台上当众认错"
+    ],
+    "prefers": [
+     "耳朵比自己还准的人"
+    ],
+    "pressure_responses": {
+     "breaking": "一个人在乐谱库里对着暗格坐到天亮",
+     "high": "受男爵授意，扬言要加快挥鞭转的节拍",
+     "low": "对每一个声部挑错",
+     "mid": "捧着总谱来试探对方知道多少"
+    },
+    "relationship_stance": "敬畏比自己强的人，也提防比自己清楚的人。",
+    "withdrawal": "回到乐谱库，把暗格的锁摸一遍又一遍。"
+   },
+   "gender": "male",
+   "gender_reason": "首席指挥的角色设定为男性。",
+   "id": "char_henri_conductor",
+   "identity": {
+    "authority": "掌控全场乐章的节拍快慢，可以临时更改压轴的加演曲目。",
+    "exposure": "当年剽窃首席亡父芭蕾组曲手稿的事一旦公开，指挥的名声当场扫地。",
+    "hidden": "年轻时靠剽窃首席亡父的未发表组曲成名，原稿就锁在乐谱库的暗格里。",
+    "limits": [
+     "加演曲目要董事会点头"
+    ],
+    "obligations": [
+     "对乐团每一个声部负责"
+    ],
+    "resources": [
+     "全场总谱",
+     "乐团的人事推荐权"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "对方的琴声没有一丝多余",
+     "对方看穿了旧账却没拆穿"
+    ],
+    "boundaries": [
+     "对方合上总谱就停"
+    ],
+    "desire_range": [
+     1,
+     3
+    ],
+    "desired_position": "空荡乐池里只亮着一盏谱架灯的指挥台",
+    "dislikes": [
+     "被人怜悯"
+    ],
+    "expression": "把指挥棒放进对方掌心，手指覆上去一起打一小节慢拍，打到最后一拍就不肯松开。",
+    "likes": [
+     "深夜一起改一页总谱"
+    ],
+    "preconditions": [
+     "两人清醒，排练已经散场"
+    ],
+    "self_control_range": [
+     4,
+     5
+    ]
+   },
+   "public_role": "交响乐团常任首席指挥",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_director_box_lounge",
+     "to": 600
+    },
+    {
+     "from": 600,
+     "location_id": "loc_main_stage_bridge",
      "to": 1300
     },
     {
-     "from": 1301,
-     "location_id": "loc_promenade_foyer",
-     "to": 1420
+     "from": 1300,
+     "location_id": "loc_director_box_lounge",
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "需在协议上签字承担本场一切意外器械损坏之巨额连带赔偿",
-      "option": "亮出参议院特许令和私人支票当场压制监事会过激干涉"
+      "cost": "男爵会在董事会上提议更换指挥。",
+      "option": "顶着男爵照首席的呼吸放慢节拍"
      },
      {
-      "cost": "将引来明日子夜新闻报刊关于剧院黑幕之捕风捉影抨击",
-      "option": "亲率侍从封锁通往后台大理石旋转楼梯杜绝闲杂记者入内"
+      "cost": "首席在台上失态，指挥一辈子良心难安。",
+      "option": "照男爵的意思加快"
      }
     ],
-    "pressure": "若首演腰斩三百万法郎投资直接泡汤且男爵个人商业信誉受挫",
-    "trigger": "剧院监事会因机械巨震企图提前强行拉闸中止演出引发轰动"
+    "pressure": "照做就是亲手毁掉首席，不照做就得罪男爵。",
+    "trigger": "男爵要求下半场加快挥鞭转的节拍。"
    },
-   "tags": [],
+   "tags": [
+    "workplace"
+   ],
    "voices": {
-    "inner": "傲雪凌霜的白天鹅……我倒要看看你将如何用那柄小巧银刃书写属于你的传奇！",
-    "surface": "工长，不必惊慌，今夜大剧院无论产生何等机件损耗，全由本男爵签单！"
+    "inner": "那个旋律，我这辈子都写不出来。",
+    "surface": "第二小提琴，抢了半拍。"
    }
   },
   {
-   "adult_context": "巴黎服装设计公会认证工艺师年满二十八周岁独资工坊主，享有独立法定工商业民事资格",
-   "age_range": [
-    28,
-    36
-   ],
-   "appearance_options": [
-    "身穿剪裁利落的炭灰色真丝收腰长裙，腰间皮套别着各式纯铜软尺与加硬钢针，墨色长发编成整洁发辫垂于肩侧，手指修长敏捷带有常年握持织剪之薄茧，双眸敏锐如鹰隼，散发着精明干练之职业名媛魅力。",
-    "神情冷静专注，佩戴一副小巧复古折叠玳瑁老花镜，腕口套着吸附式纯磁珠别针护腕，腰悬一把厚两毫米冷锻纯钢平头剪刀，步伐轻盈无声，常年游走于后台侧翼幕帘阴影之中。"
-   ],
-   "decision": {
-    "avoids": [
-     "令昂贵高定舞裙在粗暴拉扯下拉扯变形身躯受辱",
-     "在名流权贵面前露出仓皇失措之露怯作态"
-    ],
-    "contrast": "看似谨小慎微之后台女裁缝，实则拥有临危果断拔刀剪断乱麻之非凡胆识",
-    "core_value": "用巧夺天工的针线技艺维护女性尊严与服饰无瑕防线",
-    "goal_options": [
-     "在舞裙完全撕裂脱线前递上应急支撑工具并提供视线遮蔽",
-     "协助首席舞者以最快速度抚平裙摆并掩盖后腰搭扣解脱痕迹"
-    ],
-    "never": [
-     "因惧怕担责而隐瞒舞服扣件机械受损事实",
-     "坐视台上受困姐妹在聚光灯下遭受恶意窥视"
-    ],
-    "prefers": [
-     "以巧妙折叠之宽幅大氅构筑严密防走光视觉屏障",
-     "利用预设之易脱线暗槽化解机械强拉死锁"
-    ],
-    "pressure_responses": {
-     "breaking": "在铁幕落锁瞬息飞身扑出展开大氅挡住所有窥探镜头",
-     "high": "半跪于侧幕地坪，借阴影遮蔽将平头剪刀柄朝外递出备用",
-     "low": "在侧幕阴影里单手轻理软尺，目光紧盯舞裙后腰受力丝线",
-     "mid": "迅速自腰间抽出备用大氅，侧身站立于侧翼灯光死角待命"
-    },
-    "relationship_stance": "与首席舞者情同姐妹休戚与共，视保护其清誉为最高职业使命",
-    "withdrawal": "迅速退入幕帘褶皱深处，屏息整理手中缝线不引人注目"
-   },
-   "gender": "female",
-   "gender_reason": "十九世纪巴黎高定成衣公会注册首席刺绣女工坊主传统身份",
-   "id": "char_mathilde_costumer",
-   "identity": {
-    "authority": "对演出服装面料安全承载力与紧急破拆剪断方式拥有最终裁决权",
-    "exposure": "在缝制舞裙时曾应首席舞者要求私自改装后腰搭扣为单向滑脱易解暗槽",
-    "hidden": "暗中携有一卷加厚深红提花羊毛绒大氅足以自头至足严密包裹住舞者",
-    "limits": [
-     "严禁在舞台前沿照明灯光直射区露面打扰演出",
-     "不可随意破坏造价昂贵的古董金银刺绣原样"
-    ],
-    "obligations": [
-     "力保首席舞者登台谢幕舞衣前襟后扣毫无破绽走光风险",
-     "在台角暗处随时准备展开备用防寒斗篷接应名角"
-    ],
-    "resources": [
-     "冷锻两毫米加硬平头织造特制剪刀",
-     "高抗拉韧度蚕丝应急备用锁线",
-     "快速除皱抚平熏香微型喷雾器"
-    ]
-   },
-   "intimacy_tendency": {
-    "attraction_sources": [
-     "懂得尊重匠人辛劳且心怀悲悯、患难相扶之坚韧女性",
-     "在危急关头能沉着信赖专业裁造建议之从容品格"
-    ],
-    "boundaries": [
-     "守望相助恪守闺中姐妹与艺术同袍纯净情谊",
-     "严禁任何背信弃义或将私密托付转手卖与小报之行为"
-    ],
-    "desire_range": [
-     1,
-     3
-    ],
-    "desired_position": "后台永不缺席之贴心姊妹与遮风挡雨之坚固屏障",
-    "dislikes": [
-     "践踏服饰心血之蛮横霸道者",
-     "居高临下蔑视女工劳动之傲慢狂徒"
-    ],
-    "expression": "快步上前单手轻拢大氅将首席舞者裹入怀中，轻抚其后背以示宽慰",
-    "likes": [
-     "对服饰细节之细致呵护",
-     "彼此眼神一动即可心领神会之默契配合"
-    ],
-    "preconditions": [
-     "经历过舞台后台重大险情考验建立牢固同盟",
-     "确认双方皆为具备独立民事法定人格之成年知己"
-    ],
-    "self_control_range": [
-     4,
-     5
-    ]
-   },
-   "public_role": "歌剧院首席服装总监修师",
-   "schedule": [
-    {
-     "from": 1120,
-     "location_id": "loc_main_stage_bridge",
-     "to": 1290
-    },
-    {
-     "from": 1291,
-     "location_id": "loc_promenade_foyer",
-     "to": 1410
-    }
-   ],
-   "situation": {
-    "exits": [
-     {
-      "cost": "将毁损造价数千法郎之古董刺绣并需连夜重新缝合",
-      "option": "反手递出平头加硬剪刀准备在万不得已时果断挑断后腰辅绳"
-     },
-     {
-      "cost": "自身身形将半暴露于侧面包厢贵宾视线中承受越界指责",
-      "option": "展开加厚提花深绯色防寒斗篷跨步挡在侧光盲区筑成人墙帘幕"
-     }
-    ],
-    "pressure": "倘若受力超过临界值整副胸衬将崩开，在两千双眼睛前彻底走光",
-    "trigger": "剪刀臂卡簧偏转强拉舞裙下摆，后腰双面暗扣正承受数十牛顿撕裂侧向力"
-   },
-   "tags": [],
-   "voices": {
-    "inner": "那根暗扣系线快被拉扯到极限了……别慌，我的大氅定能护你周全！",
-    "surface": "首席舞者小姐，大氅已就位，谢幕脱钩刹那请顺势向左侧幕撤步！"
-   }
-  },
-  {
-   "adult_context": "巴黎警察厅特派消防安全督察官年满三十二周岁公职警官，依法享有完备执法民事职权",
+   "adult_context": "年满三十二岁、在巴黎歌剧院后台做了十二年的首席服装总监。",
    "age_range": [
     32,
-    42
+    34
    ],
    "appearance_options": [
-    "身着深墨绿双排铜扣宪兵督察制服，佩戴黑皮武装带与白手套，脚蹬擦拭得锃亮的黑色高筒马靴，胸前悬挂黄铜秒表与铁幕紧急拉闸钥匙，面孔严峻冷硬，双目如电审视剧院各处火险死角。",
-    "神情刚正严肃，头戴镶嵌银边法兰西警徽大檐帽，手握牛皮包边巡检记事簿，腰间系挂铜笛与加厚耐高温手套，通体散发着一丝不苟、铁面无私之严苛法令威慑力。"
+    "手指上缠着一圈软尺，围裙口袋里插满珠针，栗色头发用一支银簪挽起。",
+    "眼神锐利，看人先看衣裳的针脚，看到首席时眉头才会松开一点。"
    ],
    "decision": {
     "avoids": [
-     "盲目蛮干延误消防安全闭锁引发全局大火蔓延",
-     "在没有确认生还可能前草率放弃被困人员"
+     "拿舞者当摆设的贵客"
     ],
-    "contrast": "看似墨守成规之冷血执法警官，实则骨子里不愿见任何优秀女性沦为牺牲品",
-    "core_value": "忠实履行公共消防法令并在此框架下力求拯救无辜生命",
+    "contrast": "后台最凶的总管，替人收紧束腰时手却轻得像羽毛。",
+    "core_value": "针脚骗不了人，人心也一样。",
     "goal_options": [
-     "在铁幕降死前的最后十秒倒计时内提供精准读秒口令",
-     "确认舞台人员全部撤离至安全防火线后锁死隔离闸门"
+     "送首席平安上车",
+     "让对方今夜过后留下来",
+     "替亡故的老作曲家讨个公道"
     ],
     "never": [
-     "收受贿赂隐瞒足以吞噬全剧院生命之重大安全隐患",
-     "在火势初起时擅离职守抛下受困市民逃之夭夭"
+     "出卖后台的人"
     ],
     "prefers": [
-     "以清晰洪亮之精准读秒声为现场自救提供决断时间参考",
-     "在铁幕触地瞬间迅速确认人员脱困状态无误"
+     "手稳心细的人",
+     "敢替弱者出头的人"
     ],
     "pressure_responses": {
-     "breaking": "单手死死握住释放手柄用自身体重延缓两秒坠落行程",
-     "high": "高举秒表大声报出铁幕下坠秒数，警告台面人员立即撤离",
-     "low": "手持秒表静立于主配电柜旁，拇指轻搭启动按钮",
-     "mid": "吹响短促警笛警示后台闲杂人等退入安全防线内侧"
+     "breaking": "关上衣帽间的门，坐在天鹅绒剧服堆里发呆",
+     "high": "从裙撑暗袋里取出手稿原件",
+     "low": "一边改裙子一边数落人",
+     "mid": "把车票塞到对方手里，要对方别多问"
     },
-    "relationship_stance": "敬佩舞台上临危不乱之英勇名伶，在法规许可底线内给予最大限度默契配合",
-    "withdrawal": "立正敬礼目视前方，冷峻面容不为私情所动坚守岗位职责"
+    "relationship_stance": "护短，嘴硬，一旦认准就守到底。",
+    "withdrawal": "回到衣帽间，把一件旧舞裙的针脚拆了又缝。"
    },
-   "gender": "male",
-   "gender_reason": "巴黎警察厅消防安全与危险特许规制署法定警官男性编制",
-   "id": "char_lucas_inspector",
+   "gender": "female",
+   "gender_reason": "服装总监的角色设定为女性。",
+   "id": "char_mathilde_costumer",
    "identity": {
-    "authority": "对突发火险时强制释放二十吨防火铁幕与疏散剧院拥有最终法权",
-    "exposure": "曾因包庇剧院轻微烟雾故障被媒体揭发险遭降职处分",
-    "hidden": "随身秒表精准校准至秒，深知铁幕坠地瞬间之机械行程速度",
+    "authority": "握着首席高定舞裙的穿戴核验、后台化妆间的门禁和演出服的紧急改制权。",
+    "exposure": "替名媛用剧院账目遮掩私定华服开销的事，一查就会丢掉总监的位置。",
+    "hidden": "裙撑暗袋里藏着指挥当年剽窃首席亡父手稿的原件。",
     "limits": [
-     "严禁因私情延误法定安全响应时限超过三十秒",
-     "不能在无明火警情下无端叫停具备合法许可之公演"
+     "剧服账目要按季向董事会报"
     ],
     "obligations": [
-     "防范剧院重蹈往昔剧场大火烧死数百人惨剧覆辙",
-     "确保演出区域消防通道在任何时刻保持畅通无阻"
+     "护着后台每一个舞者"
     ],
     "resources": [
-     "防火铁幕手动配重急释扳手钥匙",
-     "高音纯铜警笛",
-     "市政厅特派紧急疏散公文敕令"
+     "化妆间的门禁钥匙",
+     "替首席收着的车票和护照"
     ]
    },
    "intimacy_tendency": {
     "attraction_sources": [
-     "在死线倒计时逼近时依然保持超凡自控与优雅风度之非凡女子",
-     "恪守纪律且具备坚不可摧心智之坚毅灵魂"
+     "对方记得每一件剧服的来历",
+     "对方在雪夜陪着守过后台"
     ],
     "boundaries": [
-     "公职执法程序绝不容许私情徇私舞弊",
-     "救援协作止于敬重之端庄公职礼仪交往"
+     "总监把软尺缠回手指就停"
     ],
     "desire_range": [
-     1,
-     3
+     2,
+     4
     ],
-    "desired_position": "恪守法则底线之忠诚公职卫士与危急时刻之定海神针",
+    "desired_position": "衣帽间里堆满天鹅绒剧服的那个角落",
     "dislikes": [
-     "无视生命安全之骄奢放纵",
-     "企图借娇滴作态逃避法令追责之虚浮行径"
+     "被当成下人使唤"
     ],
-    "expression": "收起秒表抬手向首席舞者端正行以法兰西军礼，眼神饱含赞佩之色",
+    "expression": "把软尺绕过对方的腰量一圈，量完却不松手，额头抵在对方肩上，问一句“还和那年一样吗”。",
     "likes": [
-     "对时间与规则之高度敏感度",
-     "不推诿、不哀求、靠自身智慧迎击厄运之铮铮铁骨"
+     "被人帮着穿针引线"
     ],
     "preconditions": [
-     "在涉及生死公职救援中验证彼此品格诚信",
-     "双方均享有完备自主民事成年身份且秉公持重"
+     "两人清醒，后台已经熄灯"
+    ],
+    "self_control_range": [
+     3,
+     4
+    ]
+   },
+   "public_role": "歌剧院首席服装总监",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_ballerina_dressing_room",
+     "to": 600
+    },
+    {
+     "from": 600,
+     "location_id": "loc_main_stage_bridge",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_ballerina_dressing_room",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "后台从此少了总监最放心的那个舞者。",
+      "option": "把行李和车票交给信得过的人"
+     },
+     {
+      "cost": "剧院账目里的旧事也会被一起翻出来。",
+      "option": "拿出手稿原件逼指挥收手"
+     }
+    ],
+    "pressure": "送首席走会失去最亲近的人，不送就是看着首席被困三年。",
+    "trigger": "首席今夜要走，行李和车票都在总监手里。"
+   },
+   "tags": [
+    "workplace",
+    "intimate"
+   ],
+   "voices": {
+    "inner": "今夜过后，你还会不会留在这里。",
+    "surface": "别动，这一针歪了就得全拆。"
+   }
+  },
+  {
+   "adult_context": "年满三十八岁、在歌剧院地下深井守了十五年的驻场首席机械总师。",
+   "age_range": [
+    38,
+    40
+   ],
+   "appearance_options": [
+    "宽肩厚掌，指缝里留着洗不净的煤灰，工装背心外随手套着一件旧呢外套。",
+    "说话前先沉默一会儿，胸前口袋里揣着一块亲手打磨的黄铜怀表。"
+   ],
+   "decision": {
+    "avoids": [
+     "克扣工钱的贵族"
+    ],
+    "contrast": "满手煤灰的粗人，给对方打磨的怀表却连一道划痕都没有。",
+    "core_value": "砖石不会说谎，账本会。",
+    "goal_options": [
+     "让男爵挪用公款的事见光",
+     "把收据交到对的人手里",
+     "让对方知道这些年的怀表是为谁打磨的"
+    ],
+    "never": [
+     "把工人的命当成账上的数字"
+    ],
+    "prefers": [
+     "说话算数的人"
+    ],
+    "pressure_responses": {
+     "breaking": "回到深井值班室，把炉火拨旺，一夜不睡",
+     "high": "闯进包厢外厅当面对质",
+     "low": "一言不发地递上收据",
+     "mid": "把黄铜怀表放在对方案头"
+    },
+    "relationship_stance": "话少，信谁就把钥匙交给谁。",
+    "withdrawal": "回到深井值班室，一个人擦那块怀表。"
+   },
+   "gender": "male",
+   "gender_reason": "驻场机械总师的角色设定为男性。",
+   "id": "char_gaston_engineer",
+   "identity": {
+    "authority": "管着悬空飞桥的起降、地下蒸汽泵站和后台秘密货运通道的启闭。",
+    "exposure": "私藏董事会账目收据的事被男爵知道，总师会被当场解雇。",
+    "hidden": "手里握着男爵挪用十万法郎修缮基金的原始收据，一直在等一个能托付的人。",
+    "limits": [
+     "动用飞桥要舞台总监签字"
+    ],
+    "obligations": [
+     "保住深井里每个工人的饭碗"
+    ],
+    "resources": [
+     "男爵克扣修缮基金的全部账目收据",
+     "通往地下运河的暗门钥匙"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "对方肯下深井来看一眼",
+     "对方从不嫌煤灰"
+    ],
+    "boundaries": [
+     "对方合上怀表盖就停"
+    ],
+    "desire_range": [
+     2,
+     3
+    ],
+    "desired_position": "深井值班室炉火边的那张长凳",
+    "dislikes": [
+     "被人当成会动的机器"
+    ],
+    "expression": "把黄铜怀表放进对方掌心，粗糙的拇指在对方指节上来回摩挲，半天才说出一句话。",
+    "likes": [
+     "一起守着炉火喝热水"
+    ],
+    "preconditions": [
+     "两人清醒，深井里只剩两个人"
     ],
     "self_control_range": [
      4,
      5
     ]
    },
-   "public_role": "巴黎市政消防安全特派总督察",
+   "public_role": "歌剧院驻场首席机械总师",
    "schedule": [
     {
-     "from": 1150,
-     "location_id": "loc_main_stage_bridge",
-     "to": 1275
+     "from": 0,
+     "location_id": "loc_understage_pit_vault",
+     "to": 600
     },
     {
-     "from": 1276,
+     "from": 600,
+     "location_id": "loc_main_stage_bridge",
+     "to": 1200
+    },
+    {
+     "from": 1200,
      "location_id": "loc_understage_pit_vault",
-     "to": 1395
+     "to": 1439
     }
    ],
    "situation": {
     "exits": [
      {
-      "cost": "手臂筋膜承受拉扯剧痛且可能面临违反操作规程被上峰问责",
-      "option": "双手扳住应急平衡缆绳利用自重稍稍减缓铁幕最后三秒下坠"
+      "cost": "男爵会报复深井里的工人。",
+      "option": "把收据交给信得过的董事"
      },
      {
-      "cost": "将引发前排贵族观众轻度拥挤踩踏风险需事后承担安抚之责",
-      "option": "吹响刺耳紧急哨音强行引导全场视线转向疏散口为名伶打掩护"
+      "cost": "剧院会被市政厅托管，所有人的薪俸都要减半。",
+      "option": "直接把收据送到督察手里"
      }
     ],
-    "pressure": "防火铁幕下落重力势能达二十吨，三十秒内若无法闭合将触发全城消防警报",
-    "trigger": "舞台火警温感探头受液压管破裂白雾误触启动自动落闸程序"
+    "pressure": "交出收据会掀翻董事会，不交就是替男爵背锅。",
+    "trigger": "修缮基金被挪用的事今晚瞒不住了。"
    },
-   "tags": [],
+   "tags": [
+    "workplace",
+    "crime"
+   ],
    "voices": {
-    "inner": "还有最后五公分距离……快把卡扣挑开，首席舞者小姐，别让我亲手封死这道门！",
-    "surface": "铁幕下坠行程已过半，全场唯余最后十五秒，立即脱扣后撤！"
+    "inner": "这块表，我打磨了五年。",
+    "surface": "收据在这儿，你看着办。"
+   }
+  },
+  {
+   "adult_context": "年满三十六岁、奉财政部密令驻场的巴黎市政消防与治安特派总督察。",
+   "age_range": [
+    36,
+    38
+   ],
+   "appearance_options": [
+    "深色警用斗篷下是一身熨得平整的制服，帽檐压得很低，下颌线条冷硬。",
+    "在包厢和后台之间巡视时脚步极轻，手套从不摘下。"
+   ],
+   "decision": {
+    "avoids": [
+     "仗势欺人的人"
+    ],
+    "contrast": "人前铁面无私，私下会替后台的舞者把散落的花捡起来。",
+    "core_value": "规矩不分贵贱。",
+    "goal_options": [
+     "找到肯签字的证人",
+     "查清修缮基金的去向",
+     "让对方信任自己，不只是因为公事"
+    ],
+    "never": [
+     "收贿赂"
+    ],
+    "prefers": [
+     "敢说真话的人",
+     "不怕贵族的人"
+    ],
+    "pressure_responses": {
+     "breaking": "摘下手套坐在空荡的观众席里，一个人看着铁幕",
+     "high": "下令降下防火铁幕",
+     "low": "例行公事地查验每一张通行证",
+     "mid": "在镜廊里拦住对方，低声问一句话"
+    },
+    "relationship_stance": "不轻易许诺，许了就一定做到。",
+    "withdrawal": "回到观众席最后一排，把查封令折好收进斗篷。"
+   },
+   "gender": "male",
+   "gender_reason": "市政督察的角色设定为男性。",
+   "id": "char_lucas_inspector",
+   "identity": {
+    "authority": "可以在任何时刻做安全临检、降下二十吨防火铁幕中止演出，还能查封违规账目。",
+    "exposure": "暗查董事会的密令一旦走漏，督察会被调离巴黎。",
+    "hidden": "急需一名剧院内部证人签字指证董事会，已经暗中留意对方很久。",
+    "limits": [
+     "没有剧院内部证人签字就不能立案"
+    ],
+    "obligations": [
+     "保住两千名观众的安全"
+    ],
+    "resources": [
+     "财政部的密令",
+     "市政厅的查封令"
+    ]
+   },
+   "intimacy_tendency": {
+    "attraction_sources": [
+     "对方在包厢里不卑不亢",
+     "对方肯为不相干的人出头"
+    ],
+    "boundaries": [
+     "对方说“督察，到此为止”就停"
+    ],
+    "desire_range": [
+     1,
+     3
+    ],
+    "desired_position": "空荡观众席里与对方并肩的位置",
+    "dislikes": [
+     "被人当成男爵的鹰犬"
+    ],
+    "expression": "先摘下一只手套，用指尖去碰对方的指尖，见对方没躲，才把整只手覆上去。",
+    "likes": [
+     "深夜在空剧场里并肩走一圈"
+    ],
+    "preconditions": [
+     "两人清醒，公事已经交接"
+    ],
+    "self_control_range": [
+     4,
+     5
+    ]
+   },
+   "public_role": "巴黎市政消防与治安特派总督察",
+   "schedule": [
+    {
+     "from": 0,
+     "location_id": "loc_promenade_foyer",
+     "to": 600
+    },
+    {
+     "from": 600,
+     "location_id": "loc_director_box_lounge",
+     "to": 1200
+    },
+    {
+     "from": 1200,
+     "location_id": "loc_understage_pit_vault",
+     "to": 1439
+    }
+   ],
+   "situation": {
+    "exits": [
+     {
+      "cost": "对方会成为男爵报复的头一个人。",
+      "option": "请对方签字作证"
+     },
+     {
+      "cost": "男爵会趁机销毁账目。",
+      "option": "先按兵不动，等更确凿的证据"
+     }
+    ],
+    "pressure": "逼人签字会害了证人，不签就让男爵逍遥法外。",
+    "trigger": "立案只差一个内部证人的签字。"
+   },
+   "tags": [
+    "workplace",
+    "crime"
+   ],
+   "voices": {
+    "inner": "我想听你说，不是以证人的身份。",
+    "surface": "例行临检，请出示通行证。"
    }
   }
  ],
  "clock_start": {
-  "label": "1889 年，演出季开幕日",
+  "label": "1889 年，演出季开幕首演日",
   "minute": 1200
  },
  "clock_style": "hm",
  "content_tags": [
   "intimate",
-  "humiliation",
-  "substance",
   "workplace_power",
-  "disaster"
+  "crime"
  ],
  "custom": true,
  "customs": [
-  "首席女领舞登台前必在圣采琪利亚青铜神龛前点燃白烛，并将专属音叉挂坠贴身扣紧防割胸衬以祈求足弓平稳。",
-  "乐池首席指挥入座时全体伴奏弦乐手需单手抚胸颔首，唯有等候总指挥手杖敲击三响方可调音起谱拉弓。",
-  "后台管工与机关总匠交接班次时需共饮一杯烧酒，并以特制铅笔在纯铜压力总表封蜡处划下当日对准校核刻线。",
-  "大剧院名伶谢幕时行法式宫廷屈膝深揖大礼，无论身处何等险境双足足尖必须并拢立定展现古典高贵仪态。"
+  "赞助人往首席的化妆间送花，花束里夹着的卡片比花更要紧。",
+  "幕间休息时贵族在镜廊里交换的不是寒暄，是下一季的包厢与名额。",
+  "乐池首席提琴在开演前要向台上的首席点头，才算这一夜正式开始。",
+  "舞者谢幕时用足尖轻点台板，是只说给台下某一个人听的话。"
  ],
  "daily_activities": [
   {
    "beats": [
-    "用软布擦拭滑轨边缘遗留的石墨机油微痕",
-    "敲击乐池边缘活动接缝测试板材承重共振"
+    "首席轻轻拨开舞裙领口，取出贴身温热的扁刃调音叉坠饰",
+    "你敲响它，首席把它贴在你耳畔，一起听那一声标准的A音"
    ],
-   "duration_minutes": 35,
-   "hook_ids": [],
-   "id": "act_stage_floor_inspection",
+   "duration_minutes": 15,
+   "hook_ids": [
+    "hook_celeste_fork_breath"
+   ],
+   "id": "act_tuning_fork_a",
    "location_ids": [
-    "loc_main_stage_bridge"
+    "loc_ballerina_dressing_room"
    ],
-   "start_minute": 1140,
-   "tags": [],
-   "title": "主舞台柚木台板巡检"
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "听胸口的调音叉校音"
   },
   {
    "beats": [
-    "核验四组液压立柱主压力表水银柱刻度",
-    "轻转双联泄流旋钮排出积聚的饱和冷凝水"
+    "你单膝跪在波斯地毯上，首席坐在丝绒软凳上把脚递过来",
+    "白色真丝系带一圈圈缠过纤细的脚踝，你手指一顿，首席就低头看你"
    ],
-   "duration_minutes": 40,
-   "hook_ids": [],
-   "id": "act_steam_valve_blowoff",
+   "duration_minutes": 20,
+   "hook_ids": [
+    "hook_celeste_bridge_crown"
+   ],
+   "id": "act_tie_pointe_shoes",
    "location_ids": [
-    "loc_understage_pit_vault"
+    "loc_ballerina_dressing_room"
    ],
-   "start_minute": 1110,
-   "tags": [],
-   "title": "地底蒸汽管网巡压"
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "系紧雪白缎面足尖鞋"
   },
   {
    "beats": [
-    "大提琴与双簧管反复核准标准音阶频率",
-    "测试升降乐池完全升至台面时的声学回响"
+    "乐团走台时，你托住对方的腰把人稳稳举起",
+    "硬纱裙摆擦过你的脸颊，落地时对方的手还搭在你肩上"
    ],
    "duration_minutes": 30,
    "hook_ids": [],
-   "id": "act_orchestra_tuning_rehearsal",
+   "id": "act_bridge_lift",
    "location_ids": [
     "loc_main_stage_bridge"
    ],
-   "start_minute": 1150,
-   "tags": [],
-   "title": "乐池弦乐定音校调"
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "飞桥上的双人托举"
   },
   {
    "beats": [
-    "以蚕丝平针加固舞裙后腰防滑金属扣件",
-    "检查足尖鞋缎带在旋转发力时的延展韧度"
+    "拉上暗红天鹅绒半帘，两人捧着热茶俯瞰下方的乐池",
+    "对方压低声音说起今夜的打算，膝盖不经意碰到你的膝盖"
    ],
-   "duration_minutes": 25,
+   "duration_minutes": 30,
    "hook_ids": [],
-   "id": "act_costume_final_fitting",
-   "location_ids": [
-    "loc_promenade_foyer"
-   ],
-   "start_minute": 1130,
-   "tags": [],
-   "title": "天鹅高定舞衣试妆"
-  },
-  {
-   "beats": [
-    "向外事使节呈递本季歌剧演出排期名册",
-    "品鉴波尔多名庄红酒并探讨艺术基金捐赠"
-   ],
-   "duration_minutes": 45,
-   "hook_ids": [],
-   "id": "act_patron_salon_reception",
+   "id": "act_box_curtain_talk",
    "location_ids": [
     "loc_director_box_lounge"
    ],
-   "start_minute": 1170,
-   "tags": [],
-   "title": "皇家包厢名流茶叙"
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "包厢半帘后的低声密谈"
   },
   {
    "beats": [
-    "以秒表核测防火闸板下降三米之行程偏差",
-    "检查配重平衡钢缆导向滑轮黄铜油封状态"
+    "百面镀金大镜映着交错的舞步，你和对方在名流间周旋",
+    "转身的一瞬，一张折好的字条从对方的手帕滑进你的掌心"
    ],
    "duration_minutes": 20,
    "hook_ids": [],
-   "id": "act_fire_curtain_drill",
+   "id": "act_foyer_waltz_note",
    "location_ids": [
-    "loc_main_stage_bridge",
+    "loc_promenade_foyer"
+   ],
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "镜廊华尔兹交换字条"
+  },
+  {
+   "beats": [
+    "你站在落地铜镜后方，一寸寸收紧芭蕾胸衣的鱼骨绑带",
+    "镜中对方的脸颊慢慢泛红，叫你再紧一点，又说够了"
+   ],
+   "duration_minutes": 20,
+   "hook_ids": [],
+   "id": "act_lace_corset",
+   "location_ids": [
+    "loc_ballerina_dressing_room"
+   ],
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "铜镜前收拢束腰"
+  },
+  {
+   "beats": [
+    "深井值班室里炉火正旺，铁皮水壶咕嘟作响",
+    "两人捧着热水坐在长凳上，听头顶的掌声闷闷地传下来"
+   ],
+   "duration_minutes": 30,
+   "hook_ids": [],
+   "id": "act_pit_stove_tea",
+   "location_ids": [
     "loc_understage_pit_vault"
    ],
-   "start_minute": 1100,
-   "tags": [],
-   "title": "消防铁幕联动测试"
-  },
-  {
-   "beats": [
-    "散场后镜廊尽头的更衣隔间只剩一盏镜前灯，首席舞者裹着深红大氅坐在镜前，足尖鞋的缎带还缠在脚踝。",
-    "首席舞者背过身，请人替自己解开后腰那排被钢缆扯歪的暗扣，指尖每碰一下，镜里的人就屏一次气。",
-    "最后一枚暗扣松开时，首席舞者没有回头，只把门帘的绳子递了过来。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_dressing_room_unhook",
-   "location_ids": [
-    "loc_ballerina_dressing_room"
-   ],
-   "start_minute": 1290,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "镜廊更衣隔间解开暗扣"
+   "title": "深井值班室守炉火"
   },
   {
    "beats": [
-    "化妆间里，首席舞者坐在天鹅绒矮凳上，把一只脚搭在人膝头，足尖鞋的缎带在脚踝上缠了好几圈。",
-    "首席舞者低头看着人：跳了一整晚，脚趾都磨破了。……解缎带的时候，轻一点。"
+    "大幕拉开前，你在侧幕阴影里替首席把纯银月桂冠冕别进发髻",
+    "首席闭着眼让你调整角度，呼吸轻得几乎听不见"
    ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_dressing_pointe_ribbons",
+   "duration_minutes": 15,
+   "hook_ids": [
+    "hook_celeste_bridge_crown"
+   ],
+   "id": "act_crown_setting",
    "location_ids": [
-    "loc_ballerina_dressing_room"
+    "loc_main_stage_bridge"
    ],
-   "start_minute": 1200,
+   "start_minute": null,
    "tags": [
     "intimate"
    ],
-   "title": "替首席舞者解足尖鞋缎带"
-  },
-  {
-   "beats": [
-    "首演谢幕后，化妆间里堆满了花束，首席舞者还穿着纱裙，倒了两杯香槟，坐在镜前看着镜子里的人。",
-    "首席舞者举杯问：今晚满场的人都在看我，我只想要一个人的掌声。……你肯不肯关上门，再给我一次？"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_dressing_premiere_champagne",
-   "location_ids": [
-    "loc_ballerina_dressing_room"
-   ],
-   "start_minute": 1380,
-   "tags": [
-    "intimate"
-   ],
-   "title": "首演谢幕后的香槟"
-  },
-  {
-   "beats": [
-    "清晨的化妆间里，首席舞者扶着墙边的把杆压腿，紧身练功服勾出纤长的腰线，足尖绷得笔直。",
-    "首席舞者从镜子里看着人：过来，扶住我的腰。……手要稳，我说松开再松开。"
-   ],
-   "duration_minutes": 30,
-   "hook_ids": [],
-   "id": "act_dressing_morning_barre",
-   "location_ids": [
-    "loc_ballerina_dressing_room"
-   ],
-   "start_minute": 480,
-   "tags": [
-    "intimate"
-   ],
-   "title": "清晨扶把练功"
+   "title": "侧幕阴影里正冠"
   }
  ],
  "default_npc_gender_mix": {
@@ -1338,7 +1525,7 @@
   "nonbinary": 0.0
  },
  "default_person": "second",
- "era": "十九世纪末巴黎大歌剧院繁盛时期",
+ "era": "1889 年巴黎大歌剧院的演出季开幕",
  "extends": null,
  "forbidden_terms": [
   "他",
@@ -1358,164 +1545,257 @@
  ],
  "hooks": [
   {
-   "id": "hook_ballerina_gaze_approach",
-   "kind": "approach",
+   "id": "hook_celeste_bridge_crown",
+   "kind": "observe",
    "location_ids": [
     "loc_main_stage_bridge"
    ],
    "slot": "char_celeste_ballerina",
-   "text": "{npc.name}在白天鹅定格立定瞬间微微侧眸，透过升降台柚木裂隙向下方投去一道孤傲而决绝之求索目光。"
+   "text": "水晶大吊灯缓缓升向穹顶，首席芭蕾舞姬{npc.name}一袭纯白真丝刺绣白天鹅短裙立在悬空飞桥中央，乌黑发髻上的纯银月桂冠冕折射出冷冽微光。"
   },
   {
-   "id": "hook_engineer_signal_approach",
+   "id": "hook_celeste_fork_breath",
+   "kind": "observe",
+   "location_ids": [
+    "loc_main_stage_bridge"
+   ],
+   "slot": "char_celeste_ballerina",
+   "text": "连续三十二圈挥鞭转骤然收势，{npc.name}白瓷般的双颊泛起天然红晕，胸口舞裙内侧贴身暗系的扁刃调音叉坠饰正随呼吸轻轻起伏。"
+  },
+  {
+   "id": "hook_celeste_three_points",
+   "kind": "approach",
+   "location_ids": [
+    "loc_ballerina_dressing_room",
+    "loc_understage_pit_vault",
+    "loc_director_box_lounge"
+   ],
+   "slot": "char_celeste_ballerina",
+   "text": "化妆间的门开了一条缝，{npc.name}一手提着裙摆，一手朝你招了招：“进来，把门锁上。”"
+  },
+  {
+   "id": "hook_celeste_curtsy_whisper",
+   "kind": "approach",
+   "location_ids": [
+    "loc_promenade_foyer",
+    "loc_director_box_lounge"
+   ],
+   "slot": "char_celeste_ballerina",
+   "text": "{npc.name}向你行了一个标准的屈膝礼，起身时借着裙摆的遮掩，把一张折好的字条塞进你手里。"
+  },
+  {
+   "id": "hook_celeste_ankle_hold",
    "kind": "approach",
    "location_ids": [
     "loc_main_stage_bridge",
     "loc_understage_pit_vault"
    ],
-   "slot": "char_gaston_engineer",
-   "text": "{npc.name}自地下检修孔悄然探出沾满机油之手指，顺着地坪暗轨边缘向受困足尖递出一枚加硬扁刃不锈钢螺栓。"
+   "slot": "char_celeste_ballerina",
+   "text": "侧幕的柱子旁，{npc.name}扶着柱子朝你伸出手，声音压得极低：“别声张，扶我一下。”"
   },
   {
-   "id": "hook_costumer_cloak_approach",
-   "kind": "approach",
-   "location_ids": [
-    "loc_main_stage_bridge"
-   ],
-   "slot": "char_mathilde_costumer",
-   "text": "{npc.name}抱持着宽幅深红羊毛大氅贴近舞台侧幕边缘，神情紧绷地向受困名角做出随时迎身遮蔽之后撤手势。"
-  },
-  {
-   "id": "hook_patron_nod_observe",
+   "id": "hook_philippe_casket",
    "kind": "observe",
    "location_ids": [
     "loc_director_box_lounge"
    ],
    "slot": "char_philippe_patron",
-   "text": "{npc.name}在二层皇家包厢扶手前缓缓放下双筒观剧镜，沉静而深邃地凝视着舞台中央即将到来的惊世脱困一刻。"
+   "text": "皇家包厢里，首席赞助男爵{npc.name}用象牙手杖轻叩栏杆，身旁的侍从托着一只装有钻石项链与三年续约羊皮纸的丝绒锦盒。"
   },
   {
-   "id": "hook_celeste_dressing_flowers",
+   "id": "hook_philippe_invite",
    "kind": "approach",
    "location_ids": [
+    "loc_promenade_foyer",
+    "loc_director_box_lounge",
     "loc_ballerina_dressing_room"
    ],
-   "slot": "char_celeste_ballerina",
-   "text": "{npc.name}倚在化妆间门口，纱裙还没换：花太多了，屋里放不下。进来帮我挑一束最喜欢的。"
+   "slot": "char_philippe_patron",
+   "text": "{npc.name}端着香槟拦在你面前，手杖往地上一点：“陪我去包厢坐坐，有件小事想请教。”"
+  },
+  {
+   "id": "hook_mathilde_tickets",
+   "kind": "observe",
+   "location_ids": [
+    "loc_main_stage_bridge"
+   ],
+   "slot": "char_mathilde_costumer",
+   "text": "舞台侧幕的阴影里，服装总监{npc.name}捏着两张去圣彼得堡的车票，焦虑地看向首席微微发颤的左脚踝。"
+  },
+  {
+   "id": "hook_mathilde_measure",
+   "kind": "approach",
+   "location_ids": [
+    "loc_ballerina_dressing_room",
+    "loc_main_stage_bridge",
+    "loc_understage_pit_vault"
+   ],
+   "slot": "char_mathilde_costumer",
+   "text": "{npc.name}把软尺往你腰上一绕：“站好，别动。我有话问你，量完再说。”"
+  },
+  {
+   "id": "hook_henri_score",
+   "kind": "approach",
+   "location_ids": [
+    "loc_director_box_lounge",
+    "loc_promenade_foyer"
+   ],
+   "slot": "char_henri_conductor",
+   "text": "{npc.name}捧着总谱站在包厢门口，指节在封皮上敲了两下：“下半场的速度，我想先听听你的意思。”"
+  },
+  {
+   "id": "hook_henri_baton",
+   "kind": "approach",
+   "location_ids": [
+    "loc_main_stage_bridge",
+    "loc_ballerina_dressing_room"
+   ],
+   "slot": "char_henri_conductor",
+   "text": "乐池边，{npc.name}把指挥棒递到你面前：“你来打这一小节。我想知道你听到的，和我是不是一样。”"
+  },
+  {
+   "id": "hook_gaston_receipts",
+   "kind": "approach",
+   "location_ids": [
+    "loc_understage_pit_vault"
+   ],
+   "slot": "char_gaston_engineer",
+   "text": "深井的仪表盘前，{npc.name}把一叠泛黄的收据压在你手心，粗糙的拇指在纸角按了一下：“今晚瞒不住了。”"
+  },
+  {
+   "id": "hook_gaston_watch",
+   "kind": "approach",
+   "location_ids": [
+    "loc_main_stage_bridge",
+    "loc_director_box_lounge",
+    "loc_promenade_foyer"
+   ],
+   "slot": "char_gaston_engineer",
+   "text": "侧幕阴影里，{npc.name}把那块黄铜怀表塞进你手里：“走慢了两分，你帮我对一对。”"
+  },
+  {
+   "id": "hook_lucas_glove",
+   "kind": "approach",
+   "location_ids": [
+    "loc_promenade_foyer",
+    "loc_director_box_lounge"
+   ],
+   "slot": "char_lucas_inspector",
+   "text": "镜廊的柱子后，{npc.name}摘下一只手套：“借一步说话。不是临检。”"
+  },
+  {
+   "id": "hook_lucas_pass",
+   "kind": "approach",
+   "location_ids": [
+    "loc_understage_pit_vault",
+    "loc_main_stage_bridge",
+    "loc_ballerina_dressing_room"
+   ],
+   "slot": "char_lucas_inspector",
+   "text": "{npc.name}拦住你查验通行证，看完却没还给你：“今晚别离开后台太远。”"
   }
  ],
  "id": "opera_house_understage_mechanism",
  "locations": [
   {
    "affordances": [
-    "立于舞台中央行谢幕深揖礼",
-    "俯身探查台板防夹缝隙结构",
-    "向乐池角落手势传递暗号"
+    "侧幕阴影里的冠冕",
+    "台板上约好的足尖暗号",
+    "托举时擦过脸颊的裙摆"
    ],
-   "detail": "挑空二十米柚木主舞台中央，下方紧邻大型液压升降乐池剪刀臂架，头顶悬挂百盏重型煤气反光镜吊灯。",
+   "detail": "挑高的主舞台，中央架着一道悬空飞桥，侧幕阴影里堆着松香盘和备用的硬纱裙，两千名观众隔着乐池望上来。",
    "exits": [
     "loc_understage_pit_vault",
-    "loc_promenade_foyer",
-    "loc_director_box_lounge"
+    "loc_ballerina_dressing_room",
+    "loc_promenade_foyer"
    ],
    "id": "loc_main_stage_bridge",
-   "name": "悬空机械飞桥舞台",
-   "pressure_modifiers": {
-    "press_shear_arm_collapse": "倾斜角度持续扩大导致柚木地板接缝撕裂"
-   },
+   "name": "悬空飞桥舞台",
+   "pressure_modifiers": {},
    "privacy": "public",
-   "tags": [],
-   "visibility": "全场两千名观众席与各层包厢视线正焦点",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "灯一亮，台上每一个动作都落在两千双眼睛里。",
    "witnesses": [
-    "bg_stagehand_jean",
-    "bg_critic_albert"
+    "bg_corps_leader"
    ]
   },
   {
    "affordances": [
-    "扳动双联泄压安全阀手柄",
-    "以探针测算剪刀臂卡簧偏转度",
-    "向升降轴承缝隙注入石墨润滑脂"
+    "值班室里的炉火和铁皮水壶",
+    "通往运河的暗门",
+    "泛黄的工程收据"
    ],
-   "detail": "位于舞台垂直正下方十米深处，四根十二寸粗铸铁液压活塞缸纵横交错，高温饱和蒸汽沿管道泄压阀发出嘶鸣。",
+   "detail": "舞台下方的深井，黄铜管道温热潮湿，配重滑轮之间有一间值班小室，暗处还连着通往地下运河的运煤暗门。",
    "exits": [
-    "loc_main_stage_bridge",
-    "loc_director_box_lounge",
-    "loc_promenade_foyer"
+    "loc_main_stage_bridge"
    ],
    "id": "loc_understage_pit_vault",
    "name": "地下蒸汽机械深井",
-   "pressure_modifiers": {
-    "press_shear_arm_collapse": "破损高压蒸汽四溢使室内能见度骤降"
-   },
+   "pressure_modifiers": {},
    "privacy": "private",
-   "tags": [],
-   "visibility": "唯有常驻检修轮值管工可凭油灯微光探视",
-   "witnesses": [
-    "bg_boiler_tender_pierre",
-    "bg_fire_marshal_luc"
-   ]
+   "tags": [
+    "intimate"
+   ],
+   "visibility": "这里只有机械总师和舞台总监会下来，上面的掌声传到这里只剩闷响。",
+   "witnesses": []
   },
   {
    "affordances": [
-    "调整黄铜双筒高倍观剧镜焦距",
-    "按压应急通知传声筒铜铃按钮",
-    "审阅首席舞者年度续约赞助协议"
+    "拉得上的天鹅绒半帘",
+    "丝绒锦盒里的续约羊皮纸",
+    "象牙柄手杖"
    ],
-   "detail": "环绕深红天鹅绒帷幔与鎏金雕花立柱，内设雕花胡桃木长椅与纯银冷饮托盘，配有直通舞台监控的铜管传声筒。",
+   "detail": "镶着大理石的皇家包厢，暗红天鹅绒半帘可以拉上，外厅候着侍从，栏杆正对舞台中央。",
    "exits": [
-    "loc_main_stage_bridge",
-    "loc_understage_pit_vault",
     "loc_promenade_foyer"
    ],
    "id": "loc_director_box_lounge",
    "name": "大理石皇家贵宾包厢",
-   "pressure_modifiers": {
-    "press_shear_arm_collapse": "贵宾催促剧幕推进的声音顺传声筒传入"
-   },
+   "pressure_modifiers": {},
    "privacy": "semi",
-   "tags": [],
-   "visibility": "二层长廊巡查侍者与受邀权贵可侧身窥见室内陈设",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "帘子拉开时全场都能看见包厢里的人，拉上后只剩外厅的侍从。",
    "witnesses": [
-    "bg_usher_claire",
-    "bg_critic_albert"
+    "bg_box_footman"
    ]
   },
   {
    "affordances": [
-    "在巨幅水晶镜前规整披风仪容",
-    "截留急步穿梭之后台传令人员",
-    "探听贵胄圈内关于首演质评风向"
+    "镀金镜子里的倒影",
+    "手帕里藏的字条",
+    "华尔兹交错转身的一瞬"
    ],
-   "detail": "铺设意大利白花大理石拼花地砖，整面挑高水银镜折射数千朵波希米亚水晶吊灯辉芒，侧门连通舞台紧急疏散边梯。",
+   "detail": "幕间休息的环形镜廊，百面镀金大镜映着水晶灯，名流端着香槟交换消息，剧评人举着单筒望远镜四处打量。",
    "exits": [
     "loc_main_stage_bridge",
-    "loc_understage_pit_vault",
-    "loc_director_box_lounge",
-    "loc_ballerina_dressing_room"
+    "loc_director_box_lounge"
    ],
    "id": "loc_promenade_foyer",
    "name": "环形水晶镜廊休息厅",
-   "pressure_modifiers": {
-    "press_shear_arm_collapse": "焦躁的人群开始向侧门安全出口聚拢"
-   },
+   "pressure_modifiers": {},
    "privacy": "public",
-   "tags": [],
-   "visibility": "剧幕交替时数以百计正装名媛与绅士信步穿梭其中",
+   "tags": [
+    "workplace"
+   ],
+   "visibility": "镜子把每个人都照了好几遍，什么都藏不住。",
    "witnesses": [
-    "bg_usher_claire",
-    "bg_stagehand_jean"
+    "bg_critic",
+    "bg_petersburg_envoy"
    ]
   },
   {
    "affordances": [
-    "替首席舞者解足尖鞋的缎带",
-    "陪首席舞者在镜前卸妆",
-    "把化妆间的黄铜小锁扣上"
+    "落地铜镜和收紧的束腰",
+    "雪白缎面足尖鞋的系带",
+    "去圣彼得堡的车票"
    ],
-   "detail": "镜廊尽头的一间化妆间，一面嵌满灯泡的大镜子、一张天鹅绒矮凳、衣架上挂着天鹅舞裙，门上有一把黄铜小锁。",
+   "detail": "首席独用的化妆间，落地铜镜前铺着波斯地毯，丝绒软凳旁挂着白天鹅舞裙，门从里面能反锁。",
    "exits": [
-    "loc_promenade_foyer"
+    "loc_main_stage_bridge"
    ],
    "id": "loc_ballerina_dressing_room",
    "name": "首席舞者的化妆间",
@@ -1524,8 +1804,10 @@
    "tags": [
     "intimate"
    ],
-   "visibility": "镜前灯一圈暖黄，镜子把屋里的每个人都照了两遍，门外偶尔传来散场观众的笑语。",
-   "witnesses": []
+   "visibility": "门一锁，外面只听得见走廊里的脚步。",
+   "witnesses": [
+    "bg_surgeon"
+   ]
   }
  ],
  "name_pools": {
@@ -1597,494 +1879,549 @@
   ],
   "order": "family_first"
  },
- "notes": "按原稿加入。改动：首席芭蕾舞者与赞助男爵的倾向卡放宽到脱险后可心动，亲密前提写明危机解除、双方清醒自愿，抢险中的接触只为解扣救人；新增一个谢幕后化妆间卸妆的亲密日常；写死的人名改为身份称呼或占位。",
+ "notes": "按原稿加入。改动：首席芭蕾舞者与赞助男爵的倾向卡放宽到脱险后可心动，亲密前提写明危机解除、双方清醒自愿，抢险中的接触只为解扣救人；新增一个谢幕后化妆间卸妆的亲密日常；写死的人名改为身份称呼或占位。\n2026-10-24 按写作规则 v2 与 Gemini 创意卡改造：删去蒸汽剪刀臂卡绑带，改为首演夜契约期满、圣彼得堡聘书、亡父手稿旧案与修缮基金账目的博弈，组合扩为十组。",
  "player_identities": [
   {
    "age_range": [
     30,
-    56
+    45
    ],
-   "baseline": "负责整座歌剧院升降舞台与飞桥钢缆运转，手握所有应急气阀扳手与检修廊道青铜通行钥匙。",
+   "baseline": "你坐在董事会里最受尊重的那把椅子上，握着年度首席名额的一票否决权，还能签发去圣彼得堡帝国剧院的巡演推荐函。",
    "gender": "any",
-   "id": "identity_chief_machinist",
-   "reputation": "精通蒸汽齿轮传动原理的沉稳老手",
+   "id": "identity_noble_patron",
+   "reputation": "巴黎社交界都想请到的贵客。",
    "resources": [
-    "全套高硬度工具腰带",
-    "液压管网手绘蓝图",
-    "机械房应急备用轮轴"
+    "年度首席名额一票否决权",
+    "圣彼得堡巡演推荐函"
    ],
    "risks": [
-    "剧院机件重大损坏赔偿",
-    "停演事故连带责任"
+    "你在董事会站错一边，整个剧院的名利格局都会跟着翻转。"
    ],
-   "role": "舞台机械总工长",
-   "social_position": "equal",
+   "role": "歌剧院终身荣誉董事兼皇室特使",
+   "social_position": "high",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}工长"
+     "pattern": "{family}"
+    },
+    {
+     "gender": "any",
+     "pattern": "{given}"
     }
    ]
   },
   {
    "age_range": [
-    35,
-    58
+    28,
+    42
    ],
-   "baseline": "代表法兰西艺术基金会掌管年度巡演预算分配权，坐拥二层正中央大理石皇家包厢特权视界。",
+   "baseline": "你统管主舞台的悬空飞桥、大幕起落和后台每一道门的钥匙，演出夜所有人都得从你手边经过。",
    "gender": "any",
-   "id": "identity_noble_patron",
-   "reputation": "执掌剧院名角前程与演出排期之高傲决策人",
+   "id": "identity_chief_machinist",
+   "reputation": "后台最可靠的人，谁遇事都先来找你。",
    "resources": [
-    "帝国艺术理事会签署任命状",
-    "高额演艺赞助支票薄",
-    "内政部督察官巡检特许令"
+    "后台全部通道的钥匙",
+    "大幕起落的调度权"
    ],
    "risks": [
-    "投资项目失利丑闻",
-    "名流社交圈声誉受损"
+    "后台出了任何纰漏，男爵第一个拿你开刀。"
    ],
-   "role": "歌剧院董事赞助长官",
-   "social_position": "high",
+   "role": "歌剧院舞台总监兼机关调度长",
+   "social_position": "equal",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}理事"
+     "pattern": "{family}"
+    },
+    {
+     "gender": "any",
+     "pattern": "{given}"
     }
    ]
   },
   {
    "age_range": [
     24,
-    42
+    34
    ],
-   "baseline": "端坐于升降乐池首排正对主舞台中央缝隙，近距离观察舞者足尖起落与地面轨道微澜动向。",
+   "baseline": "你与首席同台托举共舞多年，是少数能自由进出首席化妆间的人，台上台下的默契都瞒不过群舞的眼睛。",
    "gender": "any",
-   "id": "identity_orchestra_violinist",
-   "reputation": "听觉敏锐且洞察秋毫之年轻独奏乐家",
+   "id": "identity_principal_partner",
+   "reputation": "巴黎最稳的一双托举的手。",
    "resources": [
-    "名家手工制实心红木琴弓",
-    "调音纯银定音哨",
-    "随身松香松木护箱"
+    "首席化妆间的通行权",
+    "压轴双人舞的编排话语权"
    ],
    "risks": [
-    "名琴被落石坠落砸损",
-    "错失乐团终身教职"
+    "和首席走得太近的流言一旦坐实，你的位置会第一个被换掉。"
    ],
-   "role": "乐池首席小提琴师",
-   "social_position": "low",
+   "role": "歌剧院首席驻团舞伴",
+   "social_position": "equal",
    "title_patterns": [
     {
-     "gender": "male",
-     "pattern": "{family}先生"
+     "gender": "any",
+     "pattern": "{family}"
     },
     {
-     "gender": "female",
-     "pattern": "{family}首席"
+     "gender": "any",
+     "pattern": "{given}"
     }
    ]
   },
   {
    "age_range": [
-    26,
-    48
+    22,
+    34
    ],
-   "baseline": "亲手编织首席女领舞昂贵芭蕾舞裙每一道丝绢暗线，洞悉舞台服饰暗扣与韧带系绳受力承受极值。",
+   "baseline": "你坐在乐池最前排、直面台口，负责白天鹅独舞乐段的领奏与定音，离台上的首席只隔着一道乐池栏杆。",
    "gender": "any",
-   "id": "identity_ballet_costumer",
-   "reputation": "被名媛与芭蕾首席争相聘请之高定服饰巧匠",
+   "id": "identity_orchestra_violinist",
+   "reputation": "乐团里琴声最干净的人。",
    "resources": [
-    "精钢硬化织造剪刀",
-    "加固蚕丝耐拉缝纫备线",
-    "舞台化妆急救百宝箱"
+    "白天鹅独舞乐段的领奏",
+    "一把老意大利小提琴"
    ],
    "risks": [
-    "高定服饰在聚光灯下崩脱走光",
-    "名流客户索赔纠纷"
+    "指挥一句话就能让你从首席席位换到最后一排。"
    ],
-   "role": "高定剧服总监修",
-   "social_position": "equal",
+   "role": "乐池首席小提琴独奏家",
+   "social_position": "low",
    "title_patterns": [
     {
      "gender": "any",
-     "pattern": "{family}裁造师"
+     "pattern": "{family}"
+    },
+    {
+     "gender": "any",
+     "pattern": "{given}"
     }
    ]
   }
  ],
- "premise": "巴黎歌剧院首演盛典之夜宾朋满座，浮华台面之下庞大蒸汽液压齿轨与二十米飞桥悬空运转，各方名流暗潮涌动。",
+ "premise": "1889 年的巴黎大歌剧院，水晶枝形吊灯照亮环形镜廊与天鹅绒包厢，名流贵胄齐聚，观赏演出季开幕首演《天鹅湖》。台上首席芭蕾舞姬领衔群舞，台下首席指挥、服装总监、驻场机械总师与董事会赞助男爵各司其职，在乐章与香槟背后角力新一季的名利归属。",
  "pressures": [
   {
-   "choice": "是冒险借单腿屈膝杠杆逆向别开卡簧，还是呼叫侧幕大氅强行遮蔽并受损撤退？",
+   "choice": "公开立案，还是私下逼男爵放人。",
    "exits": [
     {
-     "cost": "需承受脚踝韧带剧烈拉扯并在两千名流前保持面容古典绝美微笑",
-     "option": "反握不锈钢调音叉以角向力矩挑退卡轴自锁簧舌"
+     "cost": "男爵身败名裂，丑闻见报后下半季演出全部停摆。",
+     "option": "把收据转交市政督察立案"
     },
     {
-     "cost": "价值连城之高定舞裙将永久损伤且返场加演环节被迫宣告取消",
-     "option": "借侧幕展开之深红羊毛大氅遮掩顺势扯断后腰备用暗扣丝线"
+     "cost": "男爵在社交界散布首席忘恩负义的恶评。",
+     "option": "私下拿收据逼男爵注销首席的契约"
+    },
+    {
+     "cost": "机械总师认为你包庇贵族，从此疏远你。",
+     "option": "把收据封存进董事会保险箱，换男爵让出选角权"
     }
    ],
    "far": {
-    "consequence": "若未在三分钟内手动泄压，整个地下乐池升降系统将面临瘫痪报废风险。",
-    "due_days": 1,
-    "trigger": "高压蒸汽泄流声顺着地底通风回廊隐隐传来，地底主管道承载力濒临极值。"
+    "consequence": "男爵补上亏空，再也没人能动得了。",
+    "due_days": 14,
+    "trigger": "收据一直没有交出去"
    },
    "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_shear_arm_collapse",
-   "immediate": {
-    "minutes": 1,
-    "text": "倾斜台板缝隙正以毫秒级速度持续撕拽薄纱舞裙缎带，若不迅速脱扣衣物即将破裂。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_main_stage_bridge",
-    "loc_understage_pit_vault"
-   ],
-   "near": {
-    "deadline_minutes": 3,
-    "text": "二十吨铸铁防火幕已轰然启动下坠，距彻底封闭台口唯余最后二十秒倒计时。"
-   },
-   "objective": "在防火铁幕二十秒砸实闭合前解脱机械咬合，恢复身姿完成从容谢幕。",
-   "source": "accident",
-   "start_minute": 1205,
-   "tags": [
-    "disaster"
-   ],
-   "title": "乐池剪刀臂偏载绞扣",
-   "trigger": "升降乐池单侧油缸密封圈破裂致使台板骤倾十五度，回缩钢缆死死咬合白天鹅舞裙后腰缎带搭扣与足尖绑带。"
-  },
-  {
-   "choice": "是立即排尽蒸汽致使台上装置彻底失去动力停摆，还是冒着烫伤风险攀上阀座抢换铜销？",
-   "exits": [
-    {
-     "cost": "手臂与面部将被滚烫蒸汽热浪熏燎承受皮肤灼痛",
-     "option": "戴上加厚耐火皮手套强行拧开备用旁通排汽铜旋钮"
-    },
-    {
-     "cost": "骤冷效应将导致昂贵铸铁气缸内部产生永久性金相冷脆裂痕",
-     "option": "拉动紧急冷水注水闸切断蒸汽加热源快速降温降压"
-    }
-   ],
-   "far": {
-    "consequence": "全剧团数百名从业人员生计断绝，年度首演季全盘泡汤化为乌有。",
-    "due_days": 3,
-    "trigger": "若蒸汽管网发生实质性爆裂事故，大剧院将被巴黎市政工务署无限期封停修缮。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_steam_boiler_overpressure",
-   "immediate": {
-    "minutes": 2,
-    "text": "高温蒸汽弥漫深井通道，阻绝通往总控制室之常规巡查铁梯。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_understage_pit_vault"
-   ],
-   "near": {
-    "deadline_minutes": 5,
-    "text": "主储汽包外壳铆钉受内压剧烈形变发出密集金属呻吟声响。"
-   },
-   "objective": "在主安全阀冲顶爆裂前手动排空双联减压回路确保地底人员安全。",
-   "source": "nature",
-   "start_minute": 1210,
-   "tags": [
-    "disaster"
-   ],
-   "title": "地下动力总锅炉超压",
-   "trigger": "破裂液压油料引燃司炉房煤渣暗火，导致主蒸汽储气包压力表指针狂飙越过红色警界线。"
-  },
-  {
-   "choice": "是用公关赞助金封口平息事态，还是用纯粹超绝之神级谢幕震撼全场？",
-   "exits": [
-    {
-     "cost": "需在脱钩解困瞬间将肢体韧带舒展至物理极限强忍剧痛",
-     "option": "以完美的无瑕屈膝大礼与神级定格征服夏尔挑剔眼光"
-    },
-    {
-     "cost": "剧院艺术创作自主权将被迫向报界资本出让部分话语权",
-     "option": "由赞助男爵出面邀约夏尔进入贵宾沙龙奉上独家内幕专访权"
-    }
-   ],
-   "far": {
-    "consequence": "董事会必将推举平庸替代者取代当前主创团队领导地位。",
-    "due_days": 2,
-    "trigger": "若丑闻头条登报，大歌剧院将丧失下一年度国家艺术特别补贴资格。"
-   },
-   "flags": [
+    "timed",
     "leverage"
    ],
    "hook_ids": [],
-   "id": "press_critic_box_scrutiny",
+   "id": "p_repair_fund_receipts",
    "immediate": {
-    "minutes": 2,
-    "text": "夏尔正向身旁贵宾低声耳语，四周包厢看客目光开始泛起怀疑神色。"
+    "minutes": 10,
+    "text": "包厢外厅的门被侍从关上了。"
    },
    "leverage": {
-    "basis": "男爵掌握着剧评协会下年度广告赞助金调配权与首席名角续约背书",
-    "holder": "char_philippe_patron",
-    "subject": "char_celeste_ballerina"
+    "basis": "{char_gaston_engineer.name}握着{char_philippe_patron.name}挪用修缮公款填补债券亏空的原始收据。",
+    "holder": "char_gaston_engineer",
+    "subject": "char_philippe_patron"
    },
    "location_ids": [
-    "loc_director_box_lounge",
-    "loc_main_stage_bridge"
-   ],
-   "near": {
-    "deadline_minutes": 60,
-    "text": "子夜报刊排字工人已在印刷厂待命，只待剧评人电报传稿即刻开印。"
-   },
-   "objective": "以无可置疑之大师级谢幕艺术征服看客，迫使剧评人封笔改写盛赞颂词。",
-   "source": "person",
-   "start_minute": 1215,
-   "tags": [],
-   "title": "剧评泰斗包厢挑刺",
-   "trigger": "费加罗报总笔夏尔手持高倍观剧镜捕捉到台面倾斜异样，扬言将在明日头版刊发舞台塌陷丑闻。"
-  },
-  {
-   "choice": "是立即敲击谱架强行重启节拍，还是由总指挥单手引导弦乐即兴拖音铺垫？",
-   "exits": [
-    {
-     "cost": "音乐整体柔和度受损可能招致学院派老学究些许微词",
-     "option": "总指挥果断挥动手杖以定音鼓重击统摄全场回归主节拍"
-    },
-    {
-     "cost": "独奏者需承受孤注一掷之巨大心理负荷不可出现微瑕跑音",
-     "option": "首席小提琴师即兴起弓拉出一道华彩独奏填补乐声空隙"
-    }
-   ],
-   "far": {
-    "consequence": "首席指挥与乐团乐手荣誉声誉将蒙受不可逆之沉重打击。",
-    "due_days": 5,
-    "trigger": "重大音乐演出事故将令乐团失去全欧巡演承办资格录音合同。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_orchestra_score_divergence",
-   "immediate": {
-    "minutes": 1,
-    "text": "管弦乐旋律出现刹那间声部空隙，台板撬动摩擦声隐隐泄露。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_main_stage_bridge"
-   ],
-   "near": {
-    "deadline_minutes": 2,
-    "text": "若无法在四小节内归位，全乐团将滑入混乱脱节之惨烈境地。"
-   },
-   "objective": "在总合奏散架前重整节拍体系，为台面自救动作提供平稳声学掩护。",
-   "source": "accident",
-   "start_minute": 1208,
-   "tags": [
-    "disaster"
-   ],
-   "title": "交响乐声部节拍错位",
-   "trigger": "乐池平台倾斜致使大提琴声部谱架受撞滑脱，后排弦乐手错失第三乐段进点契机。"
-  },
-  {
-   "choice": "是借屈膝礼动作侧身遮挡，还是依靠侧幕暗投大氅飞速掩裹脱身？",
-   "exits": [
-    {
-     "cost": "腰部肌肉承受超负荷过度拉伸将在赛后需要静养三周",
-     "option": "以超绝柔韧性展臂侧仰将破绽完美遮蔽于真丝羽翼褶皱后"
-    },
-    {
-     "cost": "名角与服装师需在后台承受同僚严苛盘问与风言风语",
-     "option": "由服装师在铁幕落地瞬间跨步上前以大氅贴身裹紧全身"
-    }
-   ],
-   "far": {
-    "consequence": "首席舞者的名流声誉受损，可能被褫夺法兰西艺术院终身特许资格。",
-    "due_days": 4,
-    "trigger": "倘若走光画面流传于巴黎市井，首席名角将遭受宗教道德委员会苛责。"
-   },
-   "flags": [
-    "leverage"
-   ],
-   "hook_ids": [],
-   "id": "press_costume_seam_tear",
-   "immediate": {
-    "minutes": 1,
-    "text": "聚光灯正向主舞位移转，任何细微织物破裂皆将在全场展露无遗。"
-   },
-   "leverage": {
-    "basis": "服装师深谙舞裙暗扣受损破绽位置且唯一持有遮蔽大氅",
-    "holder": "char_mathilde_costumer",
-    "subject": "char_celeste_ballerina"
-   },
-   "location_ids": [
-    "loc_main_stage_bridge",
-    "loc_promenade_foyer"
-   ],
-   "near": {
-    "deadline_minutes": 2,
-    "text": "谢幕定格姿态需保持足足十秒，期间身体不可有任何慌乱扭动掩饰。"
-   },
-   "objective": "在强光灯移开前隐蔽复位裙摆，保全名媛无可瑕疵之玉洁仪容。",
-   "source": "institution",
-   "start_minute": 1212,
-   "tags": [],
-   "title": "高定舞裙后腰开裂走光",
-   "trigger": "钢缆拉力迫使紧身舞裙后腰防脱钩崩断两枚暗钉，纯白真丝内衬向外滑移两公分边缘微敞。"
-  },
-  {
-   "choice": "是亮出警官敕令封锁通道严加盘查，还是以华丽谢幕掌声将人潮引回席位？",
-   "exits": [
-    {
-     "cost": "剧场典雅浪漫之艺术氛围将被肃杀之公职戒备感无情冲淡",
-     "option": "消防督察官督察鸣响哨音并高呼安全口令有力维持分流"
-    },
-    {
-     "cost": "乐团全体乐手需克服手臂酸麻强行加演长达十分钟终曲",
-     "option": "交响乐团奏响法兰西凯旋之欢腾终章用雷鸣乐浪唤回观众心神"
-    }
-   ],
-   "far": {
-    "consequence": "剧院全体管理层面临改组撤换，全部演出许可证暂扣扣押查验。",
-    "due_days": 7,
-    "trigger": "大歌剧院将因公共安全秩序失控遭受议会公共事务委员会严厉质询。"
-   },
-   "flags": [
-    "timed"
-   ],
-   "hook_ids": [],
-   "id": "press_auditorium_panic_spark",
-   "immediate": {
-    "minutes": 3,
-    "text": "镜廊门口数位贵妇羽毛折扇被挤落，推搡喧哗之声正向内厅蔓延。"
-   },
-   "leverage": null,
-   "location_ids": [
-    "loc_promenade_foyer",
     "loc_director_box_lounge"
    ],
    "near": {
-    "deadline_minutes": 8,
-    "text": "若五分钟内骚乱未平，巴黎宪兵队将破门介入进行强制驱散戒严。"
+    "deadline_minutes": 120,
+    "text": "男爵要在终幕前拿到续约签字。"
    },
-   "objective": "在剧场爆发全面挤压踩踏悲剧前稳住人潮秩序恢复盛典体面。",
+   "objective": "在终幕前定下收据的去向。",
+   "source": "person",
+   "start_minute": null,
+   "tags": [
+    "workplace",
+    "crime"
+   ],
+   "title": "被挪用的修缮基金收据",
+   "trigger": "{char_philippe_patron.name}放话说首席不续签就冻结五万法郎津贴；{char_gaston_engineer.name}摊开男爵伪造签名、挪用十万法郎修缮基金的原始收据。"
+  },
+  {
+   "choice": "拿手稿震慑，还是公开旧案。",
+   "exits": [
+    {
+     "cost": "指挥首演后引咎辞职，乐团群龙无首。",
+     "option": "拿原件勒令指挥照首席的呼吸放慢节拍，谢幕时致敬原作者"
+    },
+    {
+     "cost": "指挥当晚名誉扫地，下半场只能由副指挥仓促顶替。",
+     "option": "把剽窃真相透露给包厢里的剧评泰斗"
+    },
+    {
+     "cost": "亡父的署名今夜仍无法昭雪。",
+     "option": "归还手稿，换指挥交出圣彼得堡巡演的随行名额"
+    }
+   ],
+   "far": {
+    "consequence": "指挥把节拍越逼越快，首席的脚踝撑不到季末。",
+    "due_days": 7,
+    "trigger": "手稿始终没有拿出来"
+   },
+   "flags": [
+    "timed",
+    "leverage"
+   ],
+   "hook_ids": [],
+   "id": "p_stolen_suite_manuscript",
+   "immediate": {
+    "minutes": 10,
+    "text": "化妆间里只剩翻动纸页的声音。"
+   },
+   "leverage": {
+    "basis": "{char_mathilde_costumer.name}握着{char_henri_conductor.name}剽窃首席亡父未发表组曲的手稿原件。",
+    "holder": "char_mathilde_costumer",
+    "subject": "char_henri_conductor"
+   },
+   "location_ids": [
+    "loc_ballerina_dressing_room"
+   ],
+   "near": {
+    "deadline_minutes": 30,
+    "text": "下半场的开演铃就要响了。"
+   },
+   "objective": "在下半场开演前让节拍回到首席的呼吸上。",
+   "source": "person",
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "亡父组曲的剽窃手稿",
+   "trigger": "{char_henri_conductor.name}受男爵授意，扬言下半场加快挥鞭转的节拍；{char_mathilde_costumer.name}从裙撑暗袋里取出了当年剽窃的手稿原件。"
+  },
+  {
+   "choice": "挡住，带走，还是编个说法。",
+   "exits": [
+    {
+     "cost": "剧评人明天会在花边栏调侃你们关系暧昧。",
+     "option": "借整理冠冕的动作挡住视线，帮对方把坠饰塞回领口"
+    },
+    {
+     "cost": "冷落了端杯等候的贵宾，引来一阵议论。",
+     "option": "请服装总监以修补蕾丝为由把对方带回化妆间"
+    },
+    {
+     "cost": "得当场敲响它演示校音，才圆得过去。",
+     "option": "大方说那是本剧特制的定音纪念徽章"
+    }
+   ],
+   "far": {
+    "consequence": "全巴黎都会猜那枚调音叉是谁送的。",
+    "due_days": 3,
+    "trigger": "坠饰被写进花边栏"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_critic_spyglass",
+   "immediate": {
+    "minutes": 5,
+    "text": "望远镜的镜片在灯下一闪。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_promenade_foyer"
+   ],
+   "near": {
+    "deadline_minutes": 60,
+    "text": "剧评人今夜就要交明天的花边稿。"
+   },
+   "objective": "在剧评人看清之前把坠饰藏好。",
    "source": "rumor",
-   "start_minute": 1218,
-   "tags": [],
-   "title": "观众席恐慌踩踏苗头",
-   "trigger": "地下白雾随通风井漫入镜廊，后排看客误信火警流言纷纷涌向大理石主门通道。"
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "镜廊里的单筒望远镜",
+   "trigger": "幕间酒会上，对方转得气息未平，舞裙领口滑出一截调音叉坠饰，剧评泰斗正举着单筒望远镜走过来。"
+  },
+  {
+   "choice": "签，还是留。",
+   "exits": [
+    {
+     "cost": "首席谢幕后只能穿着便装连夜登车。",
+     "option": "支持首席签下聘书，留下冠冕和高定剧服抵违约金"
+    },
+    {
+     "cost": "首席三年内每季都得回巴黎无偿演出十场。",
+     "option": "请圣彼得堡代表和董事会把赴俄定为两院官方艺术交换"
+    },
+    {
+     "cost": "首席错过成为全欧第一名伶的时机。",
+     "option": "劝首席拒绝聘书，留在巴黎"
+    }
+   ],
+   "far": {
+    "consequence": "首席再也等不到第二次出走的机会。",
+    "due_days": 20,
+    "trigger": "聘书送给了次席"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_petersburg_contract_ransom",
+   "immediate": {
+    "minutes": 10,
+    "text": "代表把聘书和钢笔摆在梳妆台上。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_ballerina_dressing_room"
+   ],
+   "near": {
+    "deadline_minutes": 150,
+    "text": "终幕一落，聘书就要送走。"
+   },
+   "objective": "在终幕前定下首席的去留。",
+   "source": "institution",
+   "start_minute": null,
+   "tags": [
+    "workplace"
+   ],
+   "title": "圣彼得堡聘书与违约赎金",
+   "trigger": "圣彼得堡代表要在终幕前拿到首席的亲笔签约，否则聘书顺延给次席；巴黎的契约规定提前离团须赔三万法郎。"
+  },
+  {
+   "choice": "叫停谢幕，还是撑到最后。",
+   "exits": [
+    {
+     "cost": "两千名观众会因首席没出面谢幕而哗然。",
+     "option": "立刻请驻场外科医生冰敷包扎，送医院诊治，谢幕交给群舞领队"
+    },
+    {
+     "cost": "这一幕会成为全巴黎茶余饭后的谈资。",
+     "option": "先扶对方进化妆间请医生冷敷固定，谢幕时由你搀着上台，随后送医"
+    },
+    {
+     "cost": "对方接下来一个月都得卧床休养。",
+     "option": "请医生先打一针局部镇痛、绑紧护踝，谢幕一结束就坐马车送医"
+    }
+   ],
+   "far": {
+    "consequence": "下一季开演前，对方再也穿不上足尖鞋。",
+    "due_days": 10,
+    "trigger": "伤没有好好治"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [
+    "hook_celeste_fork_breath",
+    "hook_celeste_ankle_hold"
+   ],
+   "id": "p_ankle_after_fouettes",
+   "immediate": {
+    "minutes": 5,
+    "text": "对方扶着侧幕的柱子，脸色发白。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_main_stage_bridge"
+   ],
+   "near": {
+    "deadline_minutes": 30,
+    "text": "终幕谢幕马上就要开始。"
+   },
+   "objective": "先保住对方的脚踝。",
+   "source": "accident",
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "挥鞭转后的左踝旧伤",
+   "trigger": "压轴独舞的三十二圈挥鞭转刚收势，对方退到侧幕，左踝旧伤发作，足尖鞋里渗出冷汗，几乎站不住。"
+  },
+  {
+   "choice": "走暗道，请人开幕，还是留下。",
+   "exits": [
+    {
+     "cost": "对方的私人行李全都留在了化妆间。",
+     "option": "请机械总师打开通往地下运河的运煤暗门，坐小船离开"
+    },
+    {
+     "cost": "男爵和记者会第一时间堵住出口。",
+     "option": "请督察核实没有火情，再下令升起铁幕"
+    },
+    {
+     "cost": "去圣彼得堡的早班火车只能改签到三天后。",
+     "option": "留在值班室里守着炉火，陪对方解下足尖鞋歇息"
+    }
+   ],
+   "far": {
+    "consequence": "花边栏会把这一夜写成好几个版本。",
+    "due_days": 5,
+    "trigger": "两人被困一夜的事传出去"
+   },
+   "flags": [
+    "timed"
+   ],
+   "hook_ids": [],
+   "id": "p_fire_curtain_sealed",
+   "immediate": {
+    "minutes": 5,
+    "text": "铁幕落地的闷响震得管道嗡嗡作响。"
+   },
+   "leverage": null,
+   "location_ids": [
+    "loc_understage_pit_vault"
+   ],
+   "near": {
+    "deadline_minutes": 60,
+    "text": "男爵和记者已经堵在前厅。"
+   },
+   "objective": "决定今夜怎么离开，或者要不要离开。",
+   "source": "accident",
+   "start_minute": null,
+   "tags": [
+    "intimate"
+   ],
+   "title": "防火铁幕落下",
+   "trigger": "终幕散场时后台传出火警，市政督察下令降下二十吨防火铁幕，你和对方被隔在舞台下方的深井这一侧。"
   }
  ],
- "region": "巴黎加尼叶歌剧院挑高主舞台与地下机械深井",
+ "region": "巴黎大歌剧院：飞桥舞台、镜廊、皇家包厢与地下深井",
  "rules": [
   {
-   "id": "rule_curtain_iron_drop",
-   "text": "剧院主舞台两侧重型铸铁防火阻隔幕一旦受温感释放，将在三十秒内垂直封闭台口且中途无法人工悬停。"
+   "id": "r_patron_contract",
+   "text": "首席演员与赞助人签的私属契约，未满期擅自离团须赔三万法郎，或留下全部高定剧服与冠冕。"
   },
   {
-   "id": "rule_orchestra_pit_hydraulic",
-   "text": "乐池升降平台依托双回路高压饱和蒸汽柱协同起降，单侧管线偏载超过五度自动触发棘爪机械强锁。"
+   "id": "r_dressing_room_keys",
+   "text": "首席化妆间的门禁归服装总监管，演出期间外人不得擅入。"
   },
   {
-   "id": "rule_gala_etiquette_protocol",
-   "text": "贵宾包厢看客与剧评泰斗在幕布未降全前维持绝对肃静注视，台上表演人员严禁发出非戏剧台词之杂音。"
+   "id": "r_fire_curtain",
+   "text": "市政督察有权在任何时刻降下防火铁幕、中止演出。"
   },
   {
-   "id": "rule_patron_access_authority",
-   "text": "持有终身黄金包厢钥匙的赞助贵族有权在幕间休息巡视后台机械总控区，巡查人员无权拒绝登临查验。"
+   "id": "r_curtain_call",
+   "text": "首席必须亲自出面谢幕，缺席要向董事会写明缘由。"
   }
  ],
  "schema_version": 1,
  "stage_labels": {
-  "acquainted": "行礼",
-  "committed": "同盟",
-  "familiar": "融洽",
-  "flirting": "暗涌",
-  "intimate": "知心",
-  "stranger": "生客",
-  "testing": "试探"
+  "acquainted": "镜廊点头",
+  "committed": "私定终身",
+  "familiar": "同台旧识",
+  "flirting": "幕间试探",
+  "intimate": "化妆间私情",
+  "stranger": "包厢远望",
+  "testing": "节拍角力"
  },
  "status": "released",
- "style_hint": "以浓郁法兰西古典剧场风韵铺陈场景，以硬核微观力学刻画悬空机械卡滞，展现名伶临危不乱的从容破拆。",
+ "style_hint": "十九世纪末的巴黎名利场：包厢里的扇子和手杖、后台的软尺和松香、乐池的节拍。写体面下的暗涌，用物件和手势说话。",
  "tension_engines": [
   {
-   "id": "engine_shear_imbalance",
-   "text": "剪刀臂单侧卡死导致挑空舞台倾斜度以每分钟一公分缓慢扩大，持续逼近真丝绑带承载极限。"
+   "id": "te_contract_expiry",
+   "text": "首席与男爵的三年私属契约今夜期满，男爵要借幕间休息逼首席续签。"
   },
   {
-   "id": "engine_iron_curtain_countdown",
-   "text": "防火铁幕配重盘以恒定秒速沉沉下落，冰冷机械读秒无情压缩现场任何自救动作之容错余量。"
+   "id": "te_petersburg_offer",
+   "text": "圣彼得堡帝国剧院的聘书要在终幕前签下，否则送给次席。"
   },
   {
-   "id": "engine_public_gaze_scrutiny",
-   "text": "两千双贵族看客与挑剔剧评泰斗目光如同探照灯聚焦于台前，逼迫名伶在剧痛与危机中恪守优雅仪态。"
+   "id": "te_repair_fund",
+   "text": "男爵挪用歌剧院修缮基金填补债券亏空，收据握在机械总师手里。"
   },
   {
-   "id": "engine_steam_valve_threat",
-   "text": "地下深井高压管道破裂嘶鸣持续加剧，若五分钟内未排空余压将诱发地底管网连锁爆裂。"
+   "id": "te_stolen_score",
+   "text": "首席指挥当年剽窃首席亡父的组曲手稿，原件就在后台。"
   }
  ],
  "title": "失态的首席舞姬",
  "tone": [
-  "华丽",
-  "机巧",
-  "紧绷",
-  "清冷",
-  "优雅",
-  "压迫"
+  "水晶吊灯下的白天鹅",
+  "三年契约今夜期满",
+  "胸口贴身的调音叉",
+  "乐池里约好的三下足尖"
  ],
  "twists": [
   {
-   "category": "信息",
-   "id": "twist_info_hydraulic_blueprint",
+   "category": "制度",
+   "id": "tw_lucas_seal_order",
    "requires": [
-    "char_gaston_engineer"
+    "char_lucas_inspector",
+    "char_philippe_patron"
    ],
-   "text": "地下机械深井墙板暗格内赫然发现加尼叶大师手绘遗稿，原来升降乐池底座暗设一套纯机械重力平衡复位拉环。"
-  },
-  {
-   "category": "人事",
-   "id": "twist_person_substitute_courage",
-   "requires": [
-    "char_celeste_ballerina"
-   ],
-   "text": "一直被视作竞争对手之二席伴舞卡蜜，在危急关头不仅未曾落井下石，反倒主动上前以裙摆遮挡刺目强光。"
+   "text": "收据交到{char_lucas_inspector.name}手里后，终幕一落便当众宣读市政厅查封令，接管董事会；{char_philippe_patron.name}彻底出局，剧院却要被托管三个月，所有演员津贴减半。"
   },
   {
    "category": "资源",
-   "id": "twist_resource_tuning_fork_steel",
+   "id": "tw_mathilde_sleeper_tickets",
    "requires": [
+    "char_mathilde_costumer",
     "char_celeste_ballerina"
    ],
-   "text": "首席舞者贴身佩戴之调音叉乃名家以极北特种合金冷锻精淬而成，其刚度与抗剪切强度远超常规舞台五金件。"
-  },
-  {
-   "category": "制度",
-   "id": "twist_institution_curtain_rule",
-   "requires": [
-    "char_lucas_inspector"
-   ],
-   "text": "巴黎警察厅特别条例明确载明：若主台面有法兰西功勋艺术家生命遇险，督察官有权破例延缓十秒下闸。"
-  },
-  {
-   "category": "时限",
-   "id": "twist_deadline_iron_slack",
-   "requires": [
-    "press_shear_arm_collapse"
-   ],
-   "text": "下坠铁幕由于导轨陈年润滑油黏滞在最后三米处出现微小顿挫，为首席舞者争取到宝贵之五秒黄金自救脱钩窗口。"
+   "text": "{char_mathilde_costumer.name}交出早就订好的东方快车双人软卧车票，你可以今夜带{char_celeste_ballerina.name}去圣彼得堡，代价是彻底放下在巴黎歌剧院的一切。"
   },
   {
    "category": "关系",
-   "id": "twist_relation_patron_pledge",
+   "id": "tw_henri_encore_tribute",
    "requires": [
+    "char_henri_conductor"
+   ],
+   "text": "{char_henri_conductor.name}答应在两千名观众面前宣布安可曲是首席亡父的遗作并亲自执棒，换来手稿不公开；首席家族的声誉重振，指挥也体面保住了位置。"
+  },
+  {
+   "category": "人事",
+   "id": "tw_gaston_bridge_hold",
+   "requires": [
+    "char_gaston_engineer",
     "char_philippe_patron"
    ],
-   "text": "赞助男爵当年曾受首席舞者亡父艺术熏陶，今夜出手相助绝非觊觎美色，纯为报偿两代世家之艺术知遇之恩。"
+   "text": "{char_gaston_engineer.name}在第三幕谢幕时把悬空飞桥停在半空，{char_philippe_patron.name}派上台献花逼宫的随从够不着首席；总师因违规操作被扣半年薪俸。"
+  },
+  {
+   "category": "资源",
+   "id": "tw_envoy_bank_draft",
+   "requires": [
+    "char_celeste_ballerina"
+   ],
+   "text": "圣彼得堡代表当众递上一张法兰西银行本票，替{char_celeste_ballerina.name}买断三年契约，让首席体面谢幕；代价是首席三年内不能回巴黎登台。"
+  },
+  {
+   "category": "意外",
+   "id": "tw_fork_cuts_seal",
+   "requires": [
+    "char_celeste_ballerina",
+    "char_philippe_patron"
+   ],
+   "text": "最后摊牌时，{char_celeste_ballerina.name}从胸口取出扁刃调音叉坠饰，当着{char_philippe_patron.name}的面划开未生效的续约火漆；男爵旗下三家报社明早将联手刊文批评首席。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_curtain_was_asked",
+   "requires": [
+    "char_gaston_engineer",
+    "char_celeste_ballerina"
+   ],
+   "text": "铁幕落下并非火警：{char_celeste_ballerina.name}托{char_gaston_engineer.name}把铁幕早放了一刻，只想留你在深井里，把一直没说出口的话说完。"
+  },
+  {
+   "category": "关系",
+   "id": "tw_lucas_back_stage",
+   "requires": [
+    "char_lucas_inspector"
+   ],
+   "text": "人前对后台寸步不让的{char_lucas_inspector.name}，其实早就替首席压下了男爵递来的伤病举报，还每晚派人守在化妆间门外。"
   }
  ]
 }
